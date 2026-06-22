@@ -459,6 +459,12 @@ body.show-rarity .mapState.rare:not(.hit) {
   border-color:var(--green);
 }
 
+
+#outOf {
+  font-size:22px;
+  color:var(--muted);
+  letter-spacing:0;
+}
 </style>
 </head>
 <body>
@@ -479,7 +485,7 @@ body.show-rarity .mapState.rare:not(.hit) {
     <div class="card">
       <div class="bigProgress">
         <div>
-          <div class="bigNum"><span id="collectedBig">0</span><span>/50</span></div>
+          <div class="bigNum"><span id="collectedBig">0</span><span id="outOf">/50</span></div>
           <div class="sub">states collected</div>
         </div>
         <div class="scoreMini"><strong id="score">0</strong> <span id="scoreLabel">pts</span><br><span id="percent">0%</span> complete</div>
@@ -832,31 +838,35 @@ function render() {
   if(c >= 50) unlockedBadges++;
 
   if (mode === "classic") {
-    document.getElementById("collectedBig").textContent = c + "/50";
+    document.getElementById("collectedBig").textContent = c;
+    document.getElementById("outOf").style.display = "inline";
     document.querySelector(".bigProgress .sub").textContent = "states collected";
-    document.getElementById("score").textContent = c;
-    document.getElementById("scoreLabel").textContent = "states";
+    document.getElementById("score").textContent = Math.max(0, 50 - c);
+    document.getElementById("scoreLabel").textContent = "states to go";
     document.querySelector(".bar").style.display = "block";
     document.getElementById("fill").style.width = pct + "%";
+    document.getElementById("percent").textContent = Math.max(0, 50 - c) + " states to go";
   }
 
   if (mode === "weighted") {
     document.getElementById("collectedBig").textContent = totalScore();
+    document.getElementById("outOf").style.display = "none";
     document.querySelector(".bigProgress .sub").textContent = "points";
     document.getElementById("score").textContent = c;
-    document.getElementById("scoreLabel").textContent = "states";
+    document.getElementById("scoreLabel").textContent = "states found";
     document.querySelector(".bar").style.display = "none";
+    document.getElementById("percent").textContent = c + " states found";
   }
 
   if (mode === "unlimited") {
     document.getElementById("collectedBig").textContent = totalScore();
+    document.getElementById("outOf").style.display = "none";
     document.querySelector(".bigProgress .sub").textContent = "points";
     document.getElementById("score").textContent = totalSightings;
     document.getElementById("scoreLabel").textContent = "sightings";
     document.querySelector(".bar").style.display = "none";
+    document.getElementById("percent").textContent = totalSightings + " sightings";
   }
-
-  document.getElementById("percent").textContent = pct + "%";
   if(c > bestTrip) bestTrip = c;
   document.getElementById("bestTrip").textContent = bestTrip;
   document.getElementById("tripCount").textContent = tripCount;
