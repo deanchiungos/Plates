@@ -204,6 +204,9 @@ button {
   border-color:var(--green);
 }
 .state.rare:not(.collected) {
+  border-color:#d8dde7;
+}
+body.show-rarity .state.rare:not(.collected) {
   border-color:var(--gold);
 }
 .state.celebrate {
@@ -410,7 +413,7 @@ button {
           <div class="bigNum"><span id="collectedBig">0</span><span>/50</span></div>
           <div class="sub">states collected</div>
         </div>
-        <div class="scoreMini"><strong id="score">0</strong> pts<br><span id="percent">0%</span> complete</div>
+        <div class="scoreMini"><strong id="score">0</strong> <span id="scoreLabel">pts</span><br><span id="percent">0%</span> complete</div>
       </div>
       <div class="bar"><div class="fill" id="fill"></div></div>
       <div class="quickStats">
@@ -724,6 +727,8 @@ function render() {
   document.querySelectorAll(".navInner button").forEach(function(b){ b.classList.remove("active"); });
   document.getElementById(view + "Nav").classList.add("active");
 
+  document.body.classList.toggle("show-rarity", mode !== "classic");
+
   ["classic","weighted","unlimited"].forEach(function(m){
     document.getElementById(m + "Btn").classList.toggle("active", mode === m);
   });
@@ -757,6 +762,7 @@ function render() {
 
   document.getElementById("collectedBig").textContent = c;
   document.getElementById("score").textContent = totalScore();
+  document.getElementById("scoreLabel").textContent = mode === "classic" ? "states" : "pts";
   document.getElementById("percent").textContent = pct + "%";
   document.getElementById("fill").style.width = pct + "%";
   document.getElementById("rareCount").textContent = rareCount();
@@ -770,7 +776,8 @@ function render() {
   document.getElementById("tripNameTop").textContent = tripName;
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
-    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">+' + x.points + '</div></div>';
+    var pts = mode === "classic" ? "" : "+" + x.points;
+    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">' + pts + '</div></div>';
   }).join("") : "No plates yet.";
 
   var badgeHtml = "";
