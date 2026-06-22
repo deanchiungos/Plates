@@ -12,6 +12,7 @@
   --blue:#1565c0;
   --green:#35a852;
   --yellow:#ffbd2e;
+  --orange:#ff8a00;
   --text:#082b5f;
   --muted:#6b7280;
   --line:rgba(8,43,95,.14);
@@ -45,39 +46,64 @@ button {
 }
 .logoRow {
   display:grid;
-  grid-template-columns:44px 1fr 44px;
+  grid-template-columns:48px 1fr 48px;
   gap:8px;
   align-items:center;
 }
-.logo {
+.logoWrap {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.logoPlate {
+  width:100%;
+  max-width:280px;
   background:#fff;
   border:4px solid var(--navy);
   border-radius:18px;
-  padding:7px 14px;
+  padding:9px 16px 8px;
   box-shadow:0 4px 0 rgba(7,55,99,.18);
   text-align:center;
+  position:relative;
+  overflow:hidden;
 }
-.logo h1 {
+.logoPlate:after {
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  width:54px;
+  height:28px;
+  background:var(--navy);
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+  opacity:.95;
+}
+.logoPlate h1 {
   margin:0;
   font-size:31px;
   letter-spacing:5px;
   color:var(--navy);
   line-height:.95;
+  position:relative;
+  z-index:1;
 }
-.logo .tag {
-  margin-top:4px;
+.logoPlate .tag {
+  margin-top:5px;
   font-size:9px;
   font-weight:900;
   letter-spacing:1.1px;
   color:var(--navy);
+  position:relative;
+  z-index:1;
 }
 .iconBtn {
-  width:44px;
-  height:44px;
+  width:48px;
+  height:48px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:12px;
+  font-size:22px;
   color:var(--navy);
   box-shadow:var(--shadow);
 }
@@ -86,7 +112,7 @@ button {
   background:rgba(255,255,255,.82);
   border:1px solid var(--line);
   border-radius:999px;
-  padding:9px 12px;
+  padding:10px 13px;
   font-weight:850;
   display:flex;
   justify-content:space-between;
@@ -219,6 +245,14 @@ button {
   color:#fff;
   border-color:rgba(53,168,82,.7);
 }
+.state.collected:after {
+  content:"â";
+  position:absolute;
+  top:4px;
+  right:6px;
+  font-size:12px;
+  font-weight:950;
+}
 .state.rare {
   border-color:rgba(255,189,46,.9);
 }
@@ -245,7 +279,93 @@ button {
 .grow { flex:1; }
 .title { font-weight:900;color:var(--navy); }
 .green { color:var(--green);font-weight:900; }
+.blue { color:var(--blue);font-weight:900; }
+.orange { color:var(--orange);font-weight:900; }
 .recent { display:grid; gap:8px; }
+.mapGrid {
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:5px;
+  overflow:auto;
+}
+.mapCell {
+  min-height:28px;
+  border-radius:8px;
+  background:#f0f5fb;
+  border:1px solid var(--line);
+  font-size:10px;
+  font-weight:900;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.mapCell.hit {
+  background:var(--green);
+  color:#fff;
+}
+.mapCell.blank {
+  opacity:0;
+  background:transparent;
+  border:0;
+}
+.badge {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:10px;
+  opacity:.52;
+}
+.badge.unlocked {
+  opacity:1;
+  background:#fff7dc;
+  border-color:rgba(255,189,46,.65);
+}
+.badgeIcon {
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  background:#eaf3ff;
+  color:var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+}
+.tripActions {
+  display:grid;
+  gap:10px;
+}
+.primary {
+  background:var(--yellow);
+  color:var(--navy);
+  padding:14px;
+}
+.secondary {
+  background:#fff;
+  border:1px solid var(--blue);
+  color:var(--blue);
+  padding:12px;
+}
+.rank {
+  width:20px;
+  font-weight:950;
+  color:var(--muted);
+}
+.avatar {
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  background:#eaf3ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+  color:var(--blue);
+}
 .bottomNav {
   position:fixed;
   left:0;
@@ -318,16 +438,18 @@ button {
 <main class="app">
   <section class="top">
     <div class="logoRow">
-      <button class="iconBtn" id="soundBtn">SND</button>
-      <div class="logo">
-        <h1>PLATES</h1>
-        <div class="tag">THE LICENSE PLATE GAME</div>
+      <button class="iconBtn" id="soundBtn" aria-label="Toggle sound">âª</button>
+      <div class="logoWrap">
+        <div class="logoPlate">
+          <h1>PLATES</h1>
+          <div class="tag">THE LICENSE PLATE GAME</div>
+        </div>
       </div>
-      <button class="iconBtn" id="shareBtn">SHR</button>
+      <button class="iconBtn" id="shareBtn" aria-label="Share">â</button>
     </div>
-    <div class="tripPill">
+    <div class="tripPill" id="tripPillBtn">
       <span id="tripNameTop">Summer Road Trip</span>
-      <span>MORE</span>
+      <span>âº</span>
     </div>
   </section>
 
@@ -418,8 +540,73 @@ button {
 
   <section id="mapScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Map</span><span id="mapCount">0/50</span></div>
-      <div class="sub">Map view coming next. The state list is live and working.</div>
+      <div class="panelTitle"><span>Collection Map</span><span id="mapCount">0/50</span></div>
+      <div class="mapGrid" id="mapGrid">
+<div class="mapCell blank"></div>
+<button class="mapCell" data-map-code="WA">WA</button>
+<button class="mapCell" data-map-code="MT">MT</button>
+<button class="mapCell" data-map-code="ND">ND</button>
+<button class="mapCell" data-map-code="MN">MN</button>
+<button class="mapCell" data-map-code="WI">WI</button>
+<button class="mapCell" data-map-code="MI">MI</button>
+<div class="mapCell blank"></div>
+<button class="mapCell" data-map-code="NY">NY</button>
+<button class="mapCell" data-map-code="VT">VT</button>
+<button class="mapCell" data-map-code="NH">NH</button>
+<button class="mapCell" data-map-code="ME">ME</button>
+<button class="mapCell" data-map-code="OR">OR</button>
+<button class="mapCell" data-map-code="ID">ID</button>
+<button class="mapCell" data-map-code="WY">WY</button>
+<button class="mapCell" data-map-code="SD">SD</button>
+<button class="mapCell" data-map-code="IA">IA</button>
+<button class="mapCell" data-map-code="IL">IL</button>
+<button class="mapCell" data-map-code="IN">IN</button>
+<button class="mapCell" data-map-code="OH">OH</button>
+<button class="mapCell" data-map-code="PA">PA</button>
+<button class="mapCell" data-map-code="NJ">NJ</button>
+<button class="mapCell" data-map-code="CT">CT</button>
+<button class="mapCell" data-map-code="MA">MA</button>
+<button class="mapCell" data-map-code="CA">CA</button>
+<button class="mapCell" data-map-code="NV">NV</button>
+<button class="mapCell" data-map-code="UT">UT</button>
+<button class="mapCell" data-map-code="CO">CO</button>
+<button class="mapCell" data-map-code="NE">NE</button>
+<button class="mapCell" data-map-code="MO">MO</button>
+<button class="mapCell" data-map-code="KY">KY</button>
+<button class="mapCell" data-map-code="WV">WV</button>
+<button class="mapCell" data-map-code="VA">VA</button>
+<button class="mapCell" data-map-code="MD">MD</button>
+<button class="mapCell" data-map-code="DE">DE</button>
+<button class="mapCell" data-map-code="RI">RI</button>
+<div class="mapCell blank"></div>
+<button class="mapCell" data-map-code="AZ">AZ</button>
+<button class="mapCell" data-map-code="NM">NM</button>
+<button class="mapCell" data-map-code="KS">KS</button>
+<button class="mapCell" data-map-code="OK">OK</button>
+<button class="mapCell" data-map-code="AR">AR</button>
+<button class="mapCell" data-map-code="TN">TN</button>
+<button class="mapCell" data-map-code="NC">NC</button>
+<button class="mapCell" data-map-code="SC">SC</button>
+<div class="mapCell blank"></div>
+<div class="mapCell blank"></div>
+<div class="mapCell blank"></div>
+<button class="mapCell" data-map-code="AK">AK</button>
+<div class="mapCell blank"></div>
+<div class="mapCell blank"></div>
+<button class="mapCell" data-map-code="TX">TX</button>
+<button class="mapCell" data-map-code="LA">LA</button>
+<button class="mapCell" data-map-code="MS">MS</button>
+<button class="mapCell" data-map-code="AL">AL</button>
+<button class="mapCell" data-map-code="GA">GA</button>
+<button class="mapCell" data-map-code="FL">FL</button>
+<div class="mapCell blank"></div>
+<button class="mapCell" data-map-code="HI">HI</button>
+<div class="mapCell blank"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="panelTitle"><span>Rarest plates spotted</span></div>
+      <div class="recent" id="rareList">Rare plates will appear here.</div>
     </div>
   </section>
 
@@ -435,13 +622,17 @@ button {
       <div class="panelTitle"><span>Trips</span><span id="tripStats">0 states</span></div>
       <div class="row"><div class="grow"><div class="title" id="tripName">Summer Road Trip</div><div class="sub">Progress saves on this device.</div></div></div>
       <br>
-      <button class="state" style="width:100%;min-height:48px" id="renameTripBtn">Rename Trip</button>
+      <div class="tripActions">
+        <button class="primary" id="renameTripBtn">Rename Trip</button>
+        <button class="secondary" id="newTripBtn">Start New Trip</button>
+        <button class="secondary" id="shareTripBtn">Share Trip Summary</button>
+      </div>
     </div>
   </section>
 
   <section id="familyScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Family</span><span>demo</span></div>
+      <div class="panelTitle"><span>Family Leaderboard</span><span>local demo</span></div>
       <div class="recent" id="familyBoard"></div>
     </div>
   </section>
@@ -574,6 +765,17 @@ function renameTrip() {
   }
 }
 
+function newTrip() {
+  if(confirm("Start a new trip? This resets collected states.")) {
+    counts = {};
+    log = [];
+    tripName = prompt("Trip name:","New Road Trip") || "New Road Trip";
+    save();
+    render();
+    toast("New trip started");
+  }
+}
+
 function shareSummary() {
   var text = "PLATES\n" + tripName + "\nStates: " + collectedCount() + "/50\nScore: " + totalScore();
   if(navigator.share) navigator.share({ text:text });
@@ -608,6 +810,11 @@ function render() {
     }
   });
 
+  document.querySelectorAll(".mapCell[data-map-code]").forEach(function(cell){
+    var code = cell.dataset.mapCode;
+    cell.classList.toggle("hit", counts[code] > 0);
+  });
+
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
   document.getElementById("collectedBig").textContent = c;
@@ -616,33 +823,50 @@ function render() {
   document.getElementById("fill").style.width = pct + "%";
   document.getElementById("rareCount").textContent = rareCount();
   document.getElementById("badgeMini").textContent = c >= 1 ? 1 : 0;
-  document.getElementById("streak").textContent = c >= 1 ? 1 : 0;
   document.getElementById("listCount").textContent = c + "/50";
   document.getElementById("mapCount").textContent = c + "/50";
   document.getElementById("badgeCount").textContent = (c >= 1 ? 1 : 0) + " unlocked";
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
-  document.getElementById("soundBtn").textContent = sound ? "SND" : "OFF";
+  document.getElementById("soundBtn").textContent = sound ? "âª" : "OFF";
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">+' + x.points + '</div></div>';
   }).join("") : "No plates yet.";
 
-  document.getElementById("badges").innerHTML = c >= 1 ? '<div class="row"><div class="grow"><div class="title">First Plate</div><div class="sub">Spot your first state.</div></div><div class="green">YES</div></div>' : "Collect your first state to unlock your first badge.";
+  document.getElementById("badges").innerHTML = c >= 1 ? '<div class="badge unlocked"><div class="badgeIcon">1</div><div class="grow"><div class="title">First Plate</div><div class="sub">Spot your first state.</div></div><div class="green">YES</div></div>' : "Collect your first state to unlock your first badge.";
 
   document.getElementById("familyBoard").innerHTML =
-    '<div class="row"><div class="grow"><div class="title">Dad</div></div><div class="green">' + c + '</div></div>' +
-    '<div class="row"><div class="grow"><div class="title">Hailey</div></div><div class="green">' + Math.max(0,c-4) + '</div></div>' +
-    '<div class="row"><div class="grow"><div class="title">Benji</div></div><div class="green">' + Math.max(0,c-7) + '</div></div>';
+    '<div class="row"><div class="rank">1</div><div class="avatar">D</div><div class="grow"><div class="title">Dad</div></div><div class="green">' + c + '</div></div>' +
+    '<div class="row"><div class="rank">2</div><div class="avatar">H</div><div class="grow"><div class="title">Hailey</div></div><div class="green">' + Math.max(0,c-4) + '</div></div>' +
+    '<div class="row"><div class="rank">3</div><div class="avatar">B</div><div class="grow"><div class="title">Benji</div></div><div class="green">' + Math.max(0,c-7) + '</div></div>';
+
+  var rare = [];
+  document.querySelectorAll(".state").forEach(function(btn){
+    var code = btn.dataset.code;
+    if(counts[code]) rare.push({code:code,name:btn.dataset.name,points:Number(btn.dataset.points)});
+  });
+  rare.sort(function(a,b){ return b.points - a.points; });
+  document.getElementById("rareList").innerHTML = rare.length ? rare.slice(0,5).map(function(x){
+    return '<div class="row"><div class="grow"><div class="title">' + x.name + ' (' + x.code + ')</div><div class="sub">Rarity ' + x.points + '/10</div></div><div class="green">' + x.points + ' pts</div></div>';
+  }).join("") : "Rare plates will appear here.";
 }
 
 document.querySelectorAll(".state").forEach(function(btn){ btn.addEventListener("click", function(){ tapState(btn); }); });
+document.querySelectorAll(".mapCell[data-map-code]").forEach(function(cell){ cell.addEventListener("click", function(){
+  var code = cell.dataset.mapCode;
+  var btn = document.querySelector('.state[data-code="' + code + '"]');
+  if(btn) tapState(btn);
+}); });
 document.querySelectorAll("[data-mode]").forEach(function(btn){ btn.addEventListener("click", function(){ setMode(btn.dataset.mode); }); });
 document.querySelectorAll("[data-view]").forEach(function(btn){ btn.addEventListener("click", function(){ setView(btn.dataset.view); }); });
+document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
 document.getElementById("soundBtn").addEventListener("click", function(){ sound = !sound; save(); render(); if(sound) ding(); });
 document.getElementById("shareBtn").addEventListener("click", shareSummary);
 document.getElementById("renameTripBtn").addEventListener("click", renameTrip);
+document.getElementById("newTripBtn").addEventListener("click", newTrip);
+document.getElementById("shareTripBtn").addEventListener("click", shareSummary);
 
 render();
 </script>
