@@ -425,6 +425,59 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
   background:var(--gold);
 }
 
+
+/* v33 realistic license plate header */
+.logo {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto 18px;
+  background: linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+  border: 4px solid var(--navy);
+  border-radius: 20px;
+  padding: 18px 20px;
+  box-shadow:
+    0 5px 0 rgba(7,55,99,.18),
+    0 12px 22px rgba(7,55,99,.12);
+  overflow: hidden;
+}
+
+.logo:before,
+.logo:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #dbeafe;
+  border: 2px solid rgba(7,55,99,.35);
+}
+
+.logo:before { left: 14px; }
+.logo:after  { right: 14px; }
+
+.logo h1 {
+  margin: 0;
+  text-align: center;
+  color: var(--navy);
+  font-size: 38px;
+  letter-spacing: 7px;
+  line-height: 1;
+}
+
+.logo .tagline {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.logo .tag,
+.logoPlateAccent,
+.logoPlateLine,
+.edition { display:none !important; }
+
 </style>
 </head>
 
@@ -434,13 +487,9 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 <main class="app">
   <section class="top">
     <div class="logo">
-      <h1>PLATES</h1>
-      <div class="tag">THE LICENSE PLATE GAME</div>
-      <div class="logoPlateAccent">
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+  <h1>PLATES</h1>
+  <div class="tagline">THE LICENSE PLATE GAME</div>
+</div>
   </section>
 
   <section id="gameScreen" class="screen">
