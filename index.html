@@ -748,16 +748,16 @@ html,body {
 }
 
 
-/* v38.1 safe visual U.S. map */
+/* v38.2 interactive SVG-style map */
 .mapCard {
-  padding:20px;
+  padding:18px;
 }
 
 .sectionHeader{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:16px;
+  margin-bottom:14px;
 }
 
 .sectionHeader h2{
@@ -772,19 +772,69 @@ html,body {
   font-weight:900;
 }
 
-.usaMapImage{
-  width:100%;
-  display:block;
+.interactiveMapWrap {
   background:#fff;
   border-radius:18px;
-  padding:14px;
+  padding:10px;
   box-shadow:0 4px 12px rgba(0,0,0,.06);
+  overflow:hidden;
+}
+
+.interactiveUSMap {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.mapOcean {
+  fill:#f8fbff;
+}
+
+.svgState {
+  fill:#d9dee7;
+  stroke:#fff;
+  stroke-width:2;
+  cursor:pointer;
+  transition:fill .18s ease, transform .18s ease;
+}
+
+.svgState.hit {
+  fill:#34C759;
+}
+
+.svgState.rare:not(.hit) {
+  fill:#d9dee7;
+}
+
+body.show-rarity .svgState.rare:not(.hit) {
+  fill:#F6C744;
+}
+
+.svgState:active {
+  transform:scale(.96);
+  transform-origin:center;
+}
+
+.svgLabel {
+  font-size:10px;
+  font-weight:900;
+  text-anchor:middle;
+  fill:#073763;
+  pointer-events:none;
+}
+
+.svgState.hit + .svgLabel {
+  fill:#fff;
+}
+
+body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
+  fill:#073763;
 }
 
 .mapLegend{
   display:flex;
   justify-content:space-around;
-  margin-top:16px;
+  margin-top:14px;
   font-size:13px;
   color:var(--muted);
   font-weight:800;
@@ -928,11 +978,111 @@ html,body {
         <span id="mapCount">0 / 50 found</span>
       </div>
 
-      <img
-        class="usaMapImage"
-        src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Blank_US_Map_%28states_only%29.svg"
-        alt="United States Map"
-      />
+      <div class="interactiveMapWrap">
+        <svg class="interactiveUSMap" viewBox="0 0 540 270" role="img" aria-label="Interactive United States map">
+          <rect class="mapOcean" x="0" y="0" width="540" height="270" rx="22"></rect>
+          <rect class="svgState" data-map-code="WA" x="12" y="20" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="28.0" y="36.0">WA</text>
+          <rect class="svgState" data-map-code="OR" x="10" y="55" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="26.0" y="71.0">OR</text>
+          <rect class="svgState" data-map-code="CA" x="12" y="95" width="38" height="28" rx="6"></rect>
+          <text class="svgLabel" x="31.0" y="113.0">CA</text>
+          <rect class="svgState" data-map-code="ID" x="52" y="45" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="68.0" y="61.0">ID</text>
+          <rect class="svgState" data-map-code="NV" x="48" y="85" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="64.0" y="101.0">NV</text>
+          <rect class="svgState" data-map-code="AZ" x="62" y="135" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="78.0" y="151.0">AZ</text>
+          <rect class="svgState" data-map-code="MT" x="92" y="22" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="108.0" y="38.0">MT</text>
+          <rect class="svgState" data-map-code="WY" x="102" y="62" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="118.0" y="78.0">WY</text>
+          <rect class="svgState" data-map-code="UT" x="95" y="102" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="111.0" y="118.0">UT</text>
+          <rect class="svgState" data-map-code="CO" x="145" y="105" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="161.0" y="121.0">CO</text>
+          <rect class="svgState" data-map-code="NM" x="132" y="145" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="148.0" y="161.0">NM</text>
+          <rect class="svgState" data-map-code="ND" x="172" y="25" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="188.0" y="41.0">ND</text>
+          <rect class="svgState" data-map-code="SD" x="173" y="62" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="189.0" y="78.0">SD</text>
+          <rect class="svgState" data-map-code="NE" x="183" y="97" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="199.0" y="113.0">NE</text>
+          <rect class="svgState" data-map-code="KS" x="193" y="132" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="209.0" y="148.0">KS</text>
+          <rect class="svgState" data-map-code="OK" x="205" y="165" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="221.0" y="181.0">OK</text>
+          <rect class="svgState" data-map-code="TX" x="200" y="205" width="38" height="28" rx="6"></rect>
+          <text class="svgLabel" x="219.0" y="223.0">TX</text>
+          <rect class="svgState" data-map-code="MN" x="230" y="38" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="246.0" y="54.0">MN</text>
+          <rect class="svgState" data-map-code="IA" x="232" y="83" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="248.0" y="99.0">IA</text>
+          <rect class="svgState" data-map-code="MO" x="238" y="122" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="254.0" y="138.0">MO</text>
+          <rect class="svgState" data-map-code="AR" x="248" y="162" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="264.0" y="178.0">AR</text>
+          <rect class="svgState" data-map-code="LA" x="258" y="205" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="274.0" y="221.0">LA</text>
+          <rect class="svgState" data-map-code="WI" x="272" y="54" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="288.0" y="70.0">WI</text>
+          <rect class="svgState" data-map-code="IL" x="274" y="100" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="290.0" y="116.0">IL</text>
+          <rect class="svgState" data-map-code="MS" x="282" y="188" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="298.0" y="204.0">MS</text>
+          <rect class="svgState" data-map-code="MI" x="318" y="60" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="334.0" y="76.0">MI</text>
+          <rect class="svgState" data-map-code="IN" x="315" y="104" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="331.0" y="120.0">IN</text>
+          <rect class="svgState" data-map-code="KY" x="323" y="136" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="339.0" y="152.0">KY</text>
+          <rect class="svgState" data-map-code="TN" x="318" y="164" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="334.0" y="180.0">TN</text>
+          <rect class="svgState" data-map-code="AL" x="318" y="198" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="334.0" y="214.0">AL</text>
+          <rect class="svgState" data-map-code="OH" x="356" y="103" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="372.0" y="119.0">OH</text>
+          <rect class="svgState" data-map-code="WV" x="372" y="133" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="388.0" y="149.0">WV</text>
+          <rect class="svgState" data-map-code="VA" x="392" y="145" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="408.0" y="161.0">VA</text>
+          <rect class="svgState" data-map-code="NC" x="404" y="170" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="420.0" y="186.0">NC</text>
+          <rect class="svgState" data-map-code="SC" x="410" y="198" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="426.0" y="214.0">SC</text>
+          <rect class="svgState" data-map-code="GA" x="362" y="202" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="378.0" y="218.0">GA</text>
+          <rect class="svgState" data-map-code="FL" x="400" y="230" width="38" height="28" rx="6"></rect>
+          <text class="svgLabel" x="419.0" y="248.0">FL</text>
+          <rect class="svgState" data-map-code="PA" x="398" y="88" width="38" height="28" rx="6"></rect>
+          <text class="svgLabel" x="417.0" y="106.0">PA</text>
+          <rect class="svgState" data-map-code="NY" x="423" y="53" width="38" height="28" rx="6"></rect>
+          <text class="svgLabel" x="442.0" y="71.0">NY</text>
+          <rect class="svgState" data-map-code="VT" x="456" y="30" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="467.0" y="43.0">VT</text>
+          <rect class="svgState" data-map-code="NH" x="478" y="34" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="489.0" y="47.0">NH</text>
+          <rect class="svgState" data-map-code="ME" x="500" y="18" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="516.0" y="34.0">ME</text>
+          <rect class="svgState" data-map-code="MA" x="474" y="61" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="485.0" y="74.0">MA</text>
+          <rect class="svgState" data-map-code="RI" x="497" y="75" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="508.0" y="88.0">RI</text>
+          <rect class="svgState" data-map-code="CT" x="459" y="76" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="470.0" y="89.0">CT</text>
+          <rect class="svgState" data-map-code="NJ" x="430" y="101" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="441.0" y="114.0">NJ</text>
+          <rect class="svgState" data-map-code="DE" x="445" y="127" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="456.0" y="140.0">DE</text>
+          <rect class="svgState" data-map-code="MD" x="417" y="126" width="22" height="18" rx="6"></rect>
+          <text class="svgLabel" x="428.0" y="139.0">MD</text>
+          <rect class="svgState" data-map-code="AK" x="35" y="222" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="51.0" y="238.0">AK</text>
+          <rect class="svgState" data-map-code="HI" x="102" y="238" width="32" height="24" rx="6"></rect>
+          <text class="svgLabel" x="118.0" y="254.0">HI</text>
+        </svg>
+      </div>
 
       <div class="mapLegend">
         <div><span class="legend found"></span> Found</div>
@@ -942,8 +1092,8 @@ html,body {
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>State Details</span><span>coming soon</span></div>
-      <div class="recent">Interactive state details will come in the next map version.</div>
+      <div class="panelTitle"><span>State Details</span><span id="selectedStateCode">Tap map</span></div>
+      <div class="recent" id="stateDetails">Tap any state on the map to see its details.</div>
     </div>
   </section>
 
@@ -1272,6 +1422,19 @@ function renderBadges(c) {
   }).join("");
 }
 
+
+function selectMapState(code) {
+  var btn = document.querySelector('.state[data-code="' + code + '"]');
+  if(!btn) return;
+  var name = btn.dataset.name;
+  var pts = btn.dataset.points;
+  var seen = counts[code] || 0;
+  document.getElementById("selectedStateCode").textContent = code;
+  document.getElementById("stateDetails").innerHTML =
+    '<div class="row"><div class="grow"><div class="title">' + name + '</div><div class="sub">Rarity value: ' + pts + '/10</div></div><div class="green">' + (seen ? "Found" : "Missing") + '</div></div>' +
+    '<div class="row"><div class="grow"><div class="title">Sightings</div><div class="sub">' + (seen || 0) + ' recorded on this trip</div></div></div>';
+}
+
 function render() {
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
@@ -1398,8 +1561,7 @@ function attachHandlers() {
       if(btn) tapState(btn);
     };
   });
-
-  document.querySelectorAll("[data-mode]").forEach(function(btn){
+document.querySelectorAll("[data-mode]").forEach(function(btn){
     btn.onclick = function(){ setMode(btn.dataset.mode); };
   });
 
