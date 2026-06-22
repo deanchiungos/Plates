@@ -390,6 +390,75 @@ body.show-rarity .state.rare:not(.collected) {
   40% { transform:scale(1.17); }
   100% { transform:scale(1); }
 }
+
+/* v15 real-map-style upgrade */
+.usMap {
+  background:#f8fbff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:12px;
+  overflow:hidden;
+}
+.mapCanvas {
+  position:relative;
+  width:100%;
+  height:245px;
+  background:linear-gradient(180deg,#eaf7ff,#f8fbff);
+  border-radius:18px;
+  border:1px solid var(--line);
+  overflow:hidden;
+}
+.mapState {
+  position:absolute;
+  width:34px;
+  height:25px;
+  border-radius:8px;
+  border:1px solid #d8dde7;
+  background:#fff;
+  color:var(--muted);
+  font-size:10px;
+  font-weight:900;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 2px 0 rgba(7,55,99,.08);
+}
+.mapState.hit {
+  background:var(--green);
+  color:#fff;
+  border-color:var(--green);
+}
+.mapState.rare:not(.hit) {
+  border-color:#d8dde7;
+}
+body.show-rarity .mapState.rare:not(.hit) {
+  border-color:var(--gold);
+}
+.mapState:active {
+  transform:scale(.95);
+}
+.mapLegend {
+  display:flex;
+  gap:12px;
+  margin-top:10px;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:800;
+}
+.legendBox {
+  width:14px;
+  height:14px;
+  display:inline-block;
+  border-radius:4px;
+  border:1px solid #d8dde7;
+  vertical-align:-2px;
+  margin-right:4px;
+}
+.legendBox.collected {
+  background:var(--green);
+  border-color:var(--green);
+}
+
 </style>
 </head>
 <body>
@@ -495,67 +564,57 @@ body.show-rarity .state.rare:not(.collected) {
     <div class="card">
       <div class="panelTitle"><span>Collection Map</span><span id="mapCount">0/50</span></div>
       <div class="usMap">
-        <div class="mapGrid" id="mapGrid">
-<div class="mapCell blank"></div>
-<button class="mapCell" data-map-code="WA">WA</button>
-<button class="mapCell" data-map-code="MT">MT</button>
-<button class="mapCell" data-map-code="ND">ND</button>
-<button class="mapCell" data-map-code="MN">MN</button>
-<button class="mapCell" data-map-code="WI">WI</button>
-<button class="mapCell" data-map-code="MI">MI</button>
-<div class="mapCell blank"></div>
-<button class="mapCell" data-map-code="NY">NY</button>
-<button class="mapCell" data-map-code="VT">VT</button>
-<button class="mapCell" data-map-code="NH">NH</button>
-<button class="mapCell" data-map-code="ME">ME</button>
-<button class="mapCell" data-map-code="OR">OR</button>
-<button class="mapCell" data-map-code="ID">ID</button>
-<button class="mapCell" data-map-code="WY">WY</button>
-<button class="mapCell" data-map-code="SD">SD</button>
-<button class="mapCell" data-map-code="IA">IA</button>
-<button class="mapCell" data-map-code="IL">IL</button>
-<button class="mapCell" data-map-code="IN">IN</button>
-<button class="mapCell" data-map-code="OH">OH</button>
-<button class="mapCell" data-map-code="PA">PA</button>
-<button class="mapCell" data-map-code="NJ">NJ</button>
-<button class="mapCell" data-map-code="CT">CT</button>
-<button class="mapCell" data-map-code="MA">MA</button>
-<button class="mapCell" data-map-code="CA">CA</button>
-<button class="mapCell" data-map-code="NV">NV</button>
-<button class="mapCell" data-map-code="UT">UT</button>
-<button class="mapCell" data-map-code="CO">CO</button>
-<button class="mapCell" data-map-code="NE">NE</button>
-<button class="mapCell" data-map-code="MO">MO</button>
-<button class="mapCell" data-map-code="KY">KY</button>
-<button class="mapCell" data-map-code="WV">WV</button>
-<button class="mapCell" data-map-code="VA">VA</button>
-<button class="mapCell" data-map-code="MD">MD</button>
-<button class="mapCell" data-map-code="DE">DE</button>
-<button class="mapCell" data-map-code="RI">RI</button>
-<div class="mapCell blank"></div>
-<button class="mapCell" data-map-code="AZ">AZ</button>
-<button class="mapCell" data-map-code="NM">NM</button>
-<button class="mapCell" data-map-code="KS">KS</button>
-<button class="mapCell" data-map-code="OK">OK</button>
-<button class="mapCell" data-map-code="AR">AR</button>
-<button class="mapCell" data-map-code="TN">TN</button>
-<button class="mapCell" data-map-code="NC">NC</button>
-<button class="mapCell" data-map-code="SC">SC</button>
-<div class="mapCell blank"></div>
-<div class="mapCell blank"></div>
-<div class="mapCell blank"></div>
-<button class="mapCell" data-map-code="AK">AK</button>
-<div class="mapCell blank"></div>
-<div class="mapCell blank"></div>
-<button class="mapCell" data-map-code="TX">TX</button>
-<button class="mapCell" data-map-code="LA">LA</button>
-<button class="mapCell" data-map-code="MS">MS</button>
-<button class="mapCell" data-map-code="AL">AL</button>
-<button class="mapCell" data-map-code="GA">GA</button>
-<button class="mapCell" data-map-code="FL">FL</button>
-<div class="mapCell blank"></div>
-<button class="mapCell" data-map-code="HI">HI</button>
-<div class="mapCell blank"></div>
+        <div class="mapCanvas" id="mapCanvas">
+          <button class="mapState" data-map-code="WA" style="left:6.2%;top:11.7%;">WA</button>
+          <button class="mapState" data-map-code="OR" style="left:4.4%;top:26.5%;">OR</button>
+          <button class="mapState" data-map-code="CA" style="left:5.3%;top:42.9%;">CA</button>
+          <button class="mapState" data-map-code="ID" style="left:14.1%;top:24.2%;">ID</button>
+          <button class="mapState" data-map-code="NV" style="left:13.2%;top:39.8%;">NV</button>
+          <button class="mapState" data-map-code="AZ" style="left:19.4%;top:56.2%;">AZ</button>
+          <button class="mapState" data-map-code="MT" style="left:22.0%;top:13.3%;">MT</button>
+          <button class="mapState" data-map-code="WY" style="left:25.5%;top:29.6%;">WY</button>
+          <button class="mapState" data-map-code="UT" style="left:23.8%;top:44.5%;">UT</button>
+          <button class="mapState" data-map-code="CO" style="left:33.4%;top:45.2%;">CO</button>
+          <button class="mapState" data-map-code="NM" style="left:29.9%;top:60.8%;">NM</button>
+          <button class="mapState" data-map-code="ND" style="left:37.8%;top:14.8%;">ND</button>
+          <button class="mapState" data-map-code="SD" style="left:37.8%;top:29.6%;">SD</button>
+          <button class="mapState" data-map-code="NE" style="left:41.4%;top:42.9%;">NE</button>
+          <button class="mapState" data-map-code="KS" style="left:44.0%;top:54.6%;">KS</button>
+          <button class="mapState" data-map-code="OK" style="left:46.6%;top:64.0%;">OK</button>
+          <button class="mapState" data-map-code="TX" style="left:45.8%;top:76.4%;">TX</button>
+          <button class="mapState" data-map-code="MN" style="left:48.4%;top:17.2%;">MN</button>
+          <button class="mapState" data-map-code="IA" style="left:50.2%;top:34.3%;">IA</button>
+          <button class="mapState" data-map-code="MO" style="left:52.8%;top:47.6%;">MO</button>
+          <button class="mapState" data-map-code="AR" style="left:54.6%;top:60.8%;">AR</button>
+          <button class="mapState" data-map-code="LA" style="left:57.2%;top:74.9%;">LA</button>
+          <button class="mapState" data-map-code="WI" style="left:56.3%;top:21.8%;">WI</button>
+          <button class="mapState" data-map-code="IL" style="left:58.1%;top:39.8%;">IL</button>
+          <button class="mapState" data-map-code="MS" style="left:60.7%;top:67.1%;">MS</button>
+          <button class="mapState" data-map-code="MI" style="left:65.1%;top:24.2%;">MI</button>
+          <button class="mapState" data-map-code="IN" style="left:63.4%;top:39.0%;">IN</button>
+          <button class="mapState" data-map-code="KY" style="left:65.1%;top:49.9%;">KY</button>
+          <button class="mapState" data-map-code="TN" style="left:63.4%;top:59.3%;">TN</button>
+          <button class="mapState" data-map-code="AL" style="left:66.0%;top:68.6%;">AL</button>
+          <button class="mapState" data-map-code="OH" style="left:70.4%;top:39.0%;">OH</button>
+          <button class="mapState" data-map-code="WV" style="left:72.2%;top:48.4%;">WV</button>
+          <button class="mapState" data-map-code="VA" style="left:75.7%;top:52.3%;">VA</button>
+          <button class="mapState" data-map-code="NC" style="left:77.4%;top:60.8%;">NC</button>
+          <button class="mapState" data-map-code="SC" style="left:77.4%;top:70.2%;">SC</button>
+          <button class="mapState" data-map-code="GA" style="left:71.3%;top:71.8%;">GA</button>
+          <button class="mapState" data-map-code="FL" style="left:77.4%;top:84.2%;">FL</button>
+          <button class="mapState" data-map-code="PA" style="left:76.6%;top:35.1%;">PA</button>
+          <button class="mapState" data-map-code="NY" style="left:80.1%;top:24.2%;">NY</button>
+          <button class="mapState" data-map-code="VT" style="left:84.5%;top:16.4%;">VT</button>
+          <button class="mapState" data-map-code="NH" style="left:88.9%;top:17.9%;">NH</button>
+          <button class="mapState" data-map-code="ME" style="left:90.0%;top:10.1%;">ME</button>
+          <button class="mapState" data-map-code="MA" style="left:88.9%;top:25.7%;">MA</button>
+          <button class="mapState" data-map-code="RI" style="left:90.0%;top:31.2%;">RI</button>
+          <button class="mapState" data-map-code="CT" style="left:88.9%;top:33.5%;">CT</button>
+          <button class="mapState" data-map-code="NJ" style="left:82.7%;top:39.8%;">NJ</button>
+          <button class="mapState" data-map-code="DE" style="left:84.5%;top:46.0%;">DE</button>
+          <button class="mapState" data-map-code="MD" style="left:80.1%;top:46.8%;">MD</button>
+          <button class="mapState" data-map-code="AK" style="left:7.0%;top:83.5%;">AK</button>
+          <button class="mapState" data-map-code="HI" style="left:21.1%;top:86.6%;">HI</button>
         </div>
         <div class="mapLegend">
           <span><span class="legendBox collected"></span>Collected</span>
@@ -753,9 +812,12 @@ function render() {
     }
   });
 
-  document.querySelectorAll(".mapCell[data-map-code]").forEach(function(cell){
+  document.querySelectorAll("[data-map-code]").forEach(function(cell){
     var code = cell.dataset.mapCode;
+    var stateButton = document.querySelector('.state[data-code="' + code + '"]');
+    var points = stateButton ? Number(stateButton.dataset.points) : 0;
     cell.classList.toggle("hit", counts[code] > 0);
+    cell.classList.toggle("rare", points >= 8);
   });
 
   var c = collectedCount();
@@ -837,7 +899,7 @@ function render() {
 }
 
 document.querySelectorAll(".state").forEach(function(btn){ btn.addEventListener("click", function(){ tapState(btn); }); });
-document.querySelectorAll(".mapCell[data-map-code]").forEach(function(cell){ cell.addEventListener("click", function(){
+document.querySelectorAll("[data-map-code]").forEach(function(cell){ cell.addEventListener("click", function(){
   var code = cell.dataset.mapCode;
   var btn = document.querySelector('.state[data-code="' + code + '"]');
   if(btn) tapState(btn);
