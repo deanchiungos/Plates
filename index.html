@@ -142,7 +142,6 @@ button {
   text-align:center;
 }
 .stat strong { display:block; font-size:20px; color:var(--navy); }
-.bestUnit { font-size:12px; color:var(--muted); font-weight:800; }
 .stat span { display:block; font-size:11px; color:#4b5565; font-weight:900; letter-spacing:.5px; }
 .modeStrip { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin:8px 0 10px; }
 .modeStrip button {
@@ -313,6 +312,32 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 .legacyPercent {
   display:none !important;
 }
+
+.currentTripHeader {
+  border:1px solid var(--line);
+  background:#f8fbff;
+  border-radius:18px;
+  padding:10px 12px;
+  margin-bottom:12px;
+  text-align:center;
+}
+.tripKicker {
+  display:block;
+  font-size:10px;
+  font-weight:900;
+  color:#4b5565;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+  margin-bottom:2px;
+}
+.tripNameInline {
+  display:block;
+  font-size:18px;
+  line-height:1.15;
+  font-weight:950;
+  color:var(--navy);
+}
+
 </style>
 </head>
 
@@ -325,13 +350,14 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <h1>PLATES</h1>
       <div class="tag">THE LICENSE PLATE GAME</div>
     </div>
-    <div class="tripPill" id="tripPillBtn">
-      <span id="tripNameTop">Summer Road Trip</span>
-    </div>
   </section>
 
   <section id="gameScreen" class="screen">
     <div class="card">
+      <div class="currentTripHeader" id="tripPillBtn">
+        <span class="tripKicker">Current Trip</span>
+        <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
+      </div>
       <div class="bigProgress">
         <div class="primaryStat">
           <div class="bigNum"><span id="primaryNumber">0</span><span id="outOf" class="outOf">/50</span></div>
@@ -344,8 +370,8 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
       <div class="quickStats">
         <div class="stat"><strong id="bestTrip">0</strong><span id="bestLabel">BEST</span></div>
-        <div class="stat"><strong id="tripCount">1</strong><span>TRIPS</span></div>
-        <div class="stat"><strong id="badgeMini">0</strong><span>BADGES</span></div>
+        <div class="stat"><strong id="tripCount">1</strong><span id="tripLabel">TRIPS</span></div>
+        <div class="stat"><strong id="badgeMini">0</strong><span id="badgeLabel">BADGES</span></div>
       </div>
     </div>
 
@@ -741,12 +767,10 @@ function render() {
   updateBestForCurrentMode();
 
   var bestValue = bestForCurrentMode();
-  if(mode === "classic") {
-    document.getElementById("bestTrip").innerHTML = bestValue + ' <span class="bestUnit">states</span>';
-  } else {
-    document.getElementById("bestTrip").innerHTML = bestValue + ' <span class="bestUnit">points</span>';
-  }
+  document.getElementById("bestTrip").textContent = bestValue;
   document.getElementById("bestLabel").textContent = "BEST";
+  if(document.getElementById("tripLabel")) document.getElementById("tripLabel").textContent = "TRIPS";
+  if(document.getElementById("badgeLabel")) document.getElementById("badgeLabel").textContent = "BADGES";
   document.getElementById("tripCount").textContent = tripCount;
   document.getElementById("badgeMini").textContent = unlockedBadges;
   document.getElementById("listCount").textContent = c + "/50";
