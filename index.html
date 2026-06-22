@@ -117,7 +117,8 @@ button {
   text-align:center;
 }
 .stat strong { display:block; font-size:20px; color:var(--navy); }
-.stat span { display:block; font-size:10px; color:var(--muted); font-weight:850; }
+.bestUnit { font-size:12px; color:var(--muted); font-weight:800; }
+.stat span { display:block; font-size:11px; color:#4b5565; font-weight:900; letter-spacing:.5px; }
 .modeStrip { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin:8px 0 10px; }
 .modeStrip button {
   min-height:44px;
@@ -711,9 +712,9 @@ function render() {
 
   var bestValue = bestForCurrentMode();
   if(mode === "classic") {
-    document.getElementById("bestTrip").textContent = bestValue + " states";
+    document.getElementById("bestTrip").innerHTML = bestValue + ' <span class="bestUnit">states</span>';
   } else {
-    document.getElementById("bestTrip").textContent = bestValue + " points";
+    document.getElementById("bestTrip").innerHTML = bestValue + ' <span class="bestUnit">points</span>';
   }
   document.getElementById("bestLabel").textContent = "BEST";
   document.getElementById("tripCount").textContent = tripCount;
