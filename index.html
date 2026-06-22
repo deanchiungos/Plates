@@ -958,29 +958,24 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
 
 
-/* v38.8 compact How to Play header chip */
-.rulesButton,
-.headerHelpBtn {
-  display:none !important;
-}
 
-.top {
-  position:relative;
-  padding-bottom:4px;
-}
+/* v38.9 integrated How to Play pill */
+.headerArea,.top{position:relative;}
 
-.headerHelpPill {
+.headerHelpPill{
   position:absolute;
-  right:18px;
-  bottom:0;
-  padding:6px 11px;
+  left:50%;
+  bottom:-18px;
+  transform:translateX(-50%);
+  padding:8px 18px;
   border-radius:999px;
-  background:rgba(255,255,255,.92);
-  border:1px solid rgba(21,119,210,.22);
-  color:var(--blue);
-  font-size:11px;
+  background:rgba(255,255,255,.96);
+  border:1px solid rgba(21,119,210,.18);
+  color:var(--navy);
+  font-size:13px;
   font-weight:900;
-  box-shadow:0 3px 8px rgba(7,55,99,.08);
+  box-shadow:0 4px 12px rgba(7,55,99,.08);
+  z-index:20;
 }
 
 </style>
@@ -1033,8 +1028,9 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
             <h1>PLATES</h1>
       <div class="tagline">THE LICENSE PLATE GAME</div>
     </div>
+  
   <button class="headerHelpPill" id="rulesButton" type="button">How to Play</button>
-  </section>
+</section>
 <section id="gameScreen" class="screen">
     <div class="card">
       <div class="currentTripHeader" id="tripPillBtn">
