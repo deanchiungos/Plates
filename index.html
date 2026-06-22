@@ -978,6 +978,77 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   z-index:20;
 }
 
+
+/* v38.10 left plate + right How to Play */
+.top {
+  position:relative;
+  margin-bottom:12px;
+}
+
+.headerRow {
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) auto;
+  align-items:center;
+  gap:10px;
+  padding:0 6px;
+}
+
+.headerRow .logo {
+  max-width:none;
+  width:100%;
+  margin:0;
+  padding:14px 14px 15px;
+  border-radius:18px;
+}
+
+.headerRow .logo h1 {
+  font-size:32px;
+  letter-spacing:5px;
+}
+
+.headerRow .logo .tagline {
+  font-size:9px;
+  letter-spacing:1.4px;
+  margin-top:8px;
+}
+
+.headerHelpPill {
+  min-width:84px;
+  padding:10px 10px;
+  border-radius:16px;
+  background:rgba(255,255,255,.96);
+  border:1px solid rgba(21,119,210,.22);
+  color:var(--navy);
+  font-size:12px;
+  line-height:1.1;
+  font-weight:950;
+  box-shadow:0 4px 12px rgba(7,55,99,.08);
+  text-align:center;
+}
+
+@media (max-width:380px) {
+  .headerRow {
+    gap:8px;
+    padding:0 3px;
+  }
+
+  .headerHelpPill {
+    min-width:76px;
+    font-size:11px;
+    padding:9px 8px;
+  }
+
+  .headerRow .logo h1 {
+    font-size:29px;
+    letter-spacing:4px;
+  }
+
+  .headerRow .logo .tagline {
+    font-size:8px;
+    letter-spacing:1.1px;
+  }
+}
+
 </style>
 </head>
 
@@ -1024,13 +1095,14 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
 <main class="app">
   <section class="top">
-    <div class="logo">
-            <h1>PLATES</h1>
-      <div class="tagline">THE LICENSE PLATE GAME</div>
+    <div class="headerRow">
+      <div class="logo">
+        <h1>PLATES</h1>
+        <div class="tagline">THE LICENSE PLATE GAME</div>
+      </div>
+      <button class="headerHelpPill" id="rulesButton" type="button">How to Play</button>
     </div>
-  
-  <button class="headerHelpPill" id="rulesButton" type="button">How to Play</button>
-</section>
+  </section>
 <section id="gameScreen" class="screen">
     <div class="card">
       <div class="currentTripHeader" id="tripPillBtn">
