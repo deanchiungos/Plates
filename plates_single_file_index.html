@@ -1,316 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PLATES: The License Plate Game</title>
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --muted: #94a3b8;
-      --text: #f8fafc;
-      --accent: #38bdf8;
-      --good: #22c55e;
-      --border: rgba(255,255,255,.12);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #1e293b, #020617);
-      color: var(--text);
-      min-height: 100vh;
-    }
-    .app {
-      max-width: 520px;
-      margin: 0 auto;
-      padding: 18px;
-    }
-    header {
-      text-align: center;
-      padding: 18px 0 10px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 38px;
-      letter-spacing: 2px;
-    }
-    .subtitle {
-      color: var(--muted);
-      margin-top: 4px;
-      font-size: 15px;
-    }
-    .panel {
-      background: rgba(15, 23, 42, .86);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      margin: 12px 0;
-      box-shadow: 0 16px 40px rgba(0,0,0,.22);
-    }
-    .modes {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
-    }
-    button {
-      border: 0;
-      border-radius: 14px;
-      padding: 12px;
-      font-weight: 800;
-      font-size: 15px;
-      color: var(--text);
-      background: #1e293b;
-      cursor: pointer;
-      touch-action: manipulation;
-    }
-    button.active {
-      background: var(--accent);
-      color: #00111c;
-    }
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      text-align: center;
-    }
-    .stat {
-      background: rgba(255,255,255,.06);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 10px 6px;
-    }
-    .stat strong {
-      display: block;
-      font-size: 24px;
-    }
-    .stat span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-    .controls {
-      display: flex;
-      gap: 8px;
-    }
-    .controls button {
-      flex: 1;
-      background: #334155;
-      font-size: 13px;
-      padding: 10px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
-    }
-    .state {
-      min-height: 54px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.07);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      user-select: none;
-      position: relative;
-      overflow: hidden;
-    }
-    .state.collected {
-      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(14,165,233,.8));
-      color: #001018;
-    }
-    .abbr {
-      font-size: 18px;
-      font-weight: 900;
-    }
-    .value {
-      font-size: 11px;
-      opacity: .82;
-      margin-top: 2px;
-    }
-    .count {
-      position: absolute;
-      top: 5px;
-      right: 7px;
-      font-size: 11px;
-      font-weight: 900;
-      background: rgba(0,0,0,.25);
-      border-radius: 999px;
-      padding: 2px 6px;
-    }
-    .log {
-      max-height: 150px;
-      overflow: auto;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.4;
-    }
-    .hint {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.35;
-    }
-    footer {
-      color: var(--muted);
-      text-align: center;
-      font-size: 12px;
-      padding: 14px 0 24px;
-    }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PLATES</title>
+<style>
+:root{--muted:#94a3b8;--text:#f8fafc;--accent:#38bdf8;--border:rgba(255,255,255,.12)}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:radial-gradient(circle at top,#1e293b,#020617);color:var(--text);min-height:100vh}
+.app{max-width:540px;margin:0 auto;padding:18px}
+header{text-align:center;padding:18px 0 10px}
+h1{margin:0;font-size:42px;letter-spacing:4px}.subtitle{color:var(--muted)}
+.panel{background:rgba(15,23,42,.86);border:1px solid var(--border);border-radius:18px;padding:14px;margin:12px 0;box-shadow:0 16px 40px rgba(0,0,0,.22)}
+button{border:0;border-radius:14px;padding:12px;font-weight:800;font-size:15px;color:var(--text);background:#1e293b;cursor:pointer;touch-action:manipulation}
+button.active{background:var(--accent);color:#00111c}
+.modes{display:grid;gap:8px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.stat{background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:14px;padding:10px 6px}.stat.bump{animation:bump .3s}.stat strong{display:block;font-size:26px}.stat span,.hint,footer{color:var(--muted);font-size:12px}
+.controls{display:flex;gap:8px;flex-wrap:wrap}.controls button{flex:1;background:#334155;font-size:13px;min-width:120px}
+.rule{display:inline-block;margin-top:10px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.28);color:#bae6fd;border-radius:999px;padding:7px 10px;font-weight:800;font-size:12px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.state{min-height:58px;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.07);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;transition:.15s}
+.state:active{transform:scale(.96)}.state.collected{background:linear-gradient(135deg,rgba(34,197,94,.95),rgba(14,165,233,.8));color:#001018}.state.celebrate{animation:pop .55s;box-shadow:0 0 28px rgba(250,204,21,.9)}
+.abbr{font-size:20px;font-weight:900}.value{font-size:11px;opacity:.8;margin-top:2px}.count{position:absolute;top:5px;right:7px;font-size:11px;font-weight:900;background:rgba(0,0,0,.25);border-radius:999px;padding:2px 6px}
+.toast{position:fixed;top:18px;left:50%;transform:translateX(-50%) translateY(-120px);z-index:50;background:rgba(15,23,42,.96);border:1px solid rgba(250,204,21,.55);box-shadow:0 18px 40px rgba(0,0,0,.35);border-radius:999px;padding:12px 16px;font-weight:900;transition:.25s}.toast.show{transform:translateX(-50%) translateY(0)}
+.log{max-height:150px;overflow:auto;color:var(--muted);font-size:13px;line-height:1.4}.log div:first-child{color:var(--text);font-weight:800}
+.map{display:grid;grid-template-columns:repeat(12,1fr);gap:5px;overflow:auto}.map-cell{min-width:30px;min-height:30px;border-radius:8px;border:1px solid var(--border);background:rgba(255,255,255,.06);font-size:11px;font-weight:900;color:var(--muted);display:flex;align-items:center;justify-content:center}.map-cell.hit{background:linear-gradient(135deg,rgba(34,197,94,.95),rgba(14,165,233,.8));color:#001018}.map-cell.blank{opacity:0;border:0}
+.map-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;color:#bae6fd;font-weight:900}.hidden{display:none}
+footer{text-align:center;padding:14px 0 24px}@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.16)}100%{transform:scale(1)}}@keyframes bump{50%{transform:scale(1.06)}}
+</style>
 </head>
 <body>
-  <main class="app">
-    <header>
-      <h1>PLATES</h1>
-      <div class="subtitle">The License Plate Game</div>
-    </header>
+<div class="toast" id="toast">Collected ð</div>
+<main class="app">
+<header><h1>PLATES</h1><div class="subtitle">The License Plate Game</div></header>
 
-    <section class="panel">
-      <div class="modes">
-        <button id="classicBtn" class="active" onclick="setMode('classic')">Classic: each state counts once</button>
-        <button id="weightedBtn" onclick="setMode('weighted')">Weighted: rare states worth more</button>
-        <button id="unlimitedBtn" onclick="setMode('unlimited')">Unlimited: every plate counts</button>
-      </div>
-    </section>
+<section class="panel"><div class="modes">
+<button id="classicBtn" onclick="setMode('classic')">Classic: each state counts once</button>
+<button id="weightedBtn" onclick="setMode('weighted')">Weighted: rare states worth more</button>
+<button id="unlimitedBtn" onclick="setMode('unlimited')">Unlimited: every plate counts</button>
+</div></section>
 
-    <section class="panel stats">
-      <div class="stat"><strong id="score">0</strong><span>Score</span></div>
-      <div class="stat"><strong id="collected">0</strong><span>States</span></div>
-      <div class="stat"><strong id="percent">0%</strong><span>Complete</span></div>
-    </section>
+<section class="panel stats">
+<div class="stat" id="scoreCard"><strong id="score">0</strong><span>Score</span></div>
+<div class="stat"><strong id="collected">0</strong><span>States</span></div>
+<div class="stat"><strong id="percent">0%</strong><span>Complete</span></div>
+</section>
 
-    <section class="panel">
-      <div class="controls">
-        <button onclick="resetGame()">Reset Game</button>
-        <button onclick="shareSummary()">Share Summary</button>
-      </div>
-      <p class="hint" id="modeHint">Tap each state once. Goal: collect all 50.</p>
-    </section>
+<section class="panel">
+<div class="controls"><button onclick="resetGame()">Reset Game</button><button onclick="shareSummary()">Share Summary</button><button id="soundBtn" onclick="toggleSound()">Sound: On</button></div>
+<div class="rule" id="rule"></div><p class="hint" id="hint"></p>
+</section>
 
-    <section class="panel">
-      <div class="grid" id="stateGrid"></div>
-    </section>
+<section class="panel"><div class="tabs"><button id="listTab" class="active" onclick="setView('list')">State List</button><button id="mapTab" onclick="setView('map')">Map View</button></div></section>
+<section class="panel" id="listPanel"><div class="grid" id="grid"></div></section>
+<section class="panel hidden" id="mapPanel"><div class="map-title"><span>Collection Map</span><span id="mapCount">0/50</span></div><div class="map" id="map"></div><p class="hint">Prototype map: collected states light up. Next step is true U.S. shapes.</p></section>
+<section class="panel"><strong>Recent sightings</strong><div class="log" id="log">No plates yet. Start spotting.</div></section>
+<footer>Built for road trips. Progress saves automatically. No plate numbers stored.</footer>
+</main>
 
-    <section class="panel">
-      <strong>Recent sightings</strong>
-      <div class="log" id="log">No plates yet. Start spotting.</div>
-    </section>
-
-    <footer>
-      Built for road trips. No plate numbers stored.
-    </footer>
-  </main>
-
-  <script>
-    const states = [
-      ["AL","Alabama",3],["AK","Alaska",10],["AZ","Arizona",4],["AR","Arkansas",5],["CA","California",2],
-      ["CO","Colorado",4],["CT","Connecticut",2],["DE","Delaware",6],["FL","Florida",2],["GA","Georgia",3],
-      ["HI","Hawaii",10],["ID","Idaho",8],["IL","Illinois",2],["IN","Indiana",3],["IA","Iowa",5],
-      ["KS","Kansas",6],["KY","Kentucky",4],["LA","Louisiana",5],["ME","Maine",6],["MD","Maryland",2],
-      ["MA","Massachusetts",2],["MI","Michigan",3],["MN","Minnesota",4],["MS","Mississippi",6],["MO","Missouri",4],
-      ["MT","Montana",8],["NE","Nebraska",7],["NV","Nevada",5],["NH","New Hampshire",5],["NJ","New Jersey",1],
-      ["NM","New Mexico",7],["NY","New York",1],["NC","North Carolina",3],["ND","North Dakota",9],["OH","Ohio",3],
-      ["OK","Oklahoma",5],["OR","Oregon",6],["PA","Pennsylvania",2],["RI","Rhode Island",5],["SC","South Carolina",4],
-      ["SD","South Dakota",9],["TN","Tennessee",4],["TX","Texas",2],["UT","Utah",6],["VT","Vermont",7],
-      ["VA","Virginia",2],["WA","Washington",5],["WV","West Virginia",7],["WI","Wisconsin",5],["WY","Wyoming",9]
-    ];
-
-    let mode = localStorage.getItem("platesMode") || "classic";
-    let counts = JSON.parse(localStorage.getItem("platesCounts") || "{}");
-    let log = JSON.parse(localStorage.getItem("platesLog") || "[]");
-
-    function save() {
-      localStorage.setItem("platesMode", mode);
-      localStorage.setItem("platesCounts", JSON.stringify(counts));
-      localStorage.setItem("platesLog", JSON.stringify(log));
-    }
-
-    function setMode(newMode) {
-      mode = newMode;
-      save();
-      render();
-    }
-
-    function tapState(abbr, name, value) {
-      if (mode === "classic" || mode === "weighted") {
-        counts[abbr] = counts[abbr] ? 0 : 1;
-        log.unshift(`${counts[abbr] ? "Collected" : "Removed"} ${name}`);
-      } else {
-        counts[abbr] = (counts[abbr] || 0) + 1;
-        log.unshift(`Spotted ${name} +${value}`);
-      }
-      log = log.slice(0, 30);
-      save();
-      render();
-    }
-
-    function calcScore() {
-      return states.reduce((total, [abbr, name, value]) => {
-        const c = counts[abbr] || 0;
-        if (mode === "classic") return total + (c > 0 ? 1 : 0);
-        if (mode === "weighted") return total + (c > 0 ? value : 0);
-        return total + (c * value);
-      }, 0);
-    }
-
-    function resetGame() {
-      if (!confirm("Reset your PLATES game?")) return;
-      counts = {};
-      log = [];
-      save();
-      render();
-    }
-
-    function shareSummary() {
-      const collected = states.filter(([abbr]) => (counts[abbr] || 0) > 0).length;
-      const text = `PLATES: The License Plate Game\nMode: ${mode}\nScore: ${calcScore()}\nStates collected: ${collected}/50`;
-      if (navigator.share) {
-        navigator.share({ text });
-      } else {
-        navigator.clipboard.writeText(text);
-        alert("Summary copied.");
-      }
-    }
-
-    function render() {
-      document.querySelectorAll(".modes button").forEach(b => b.classList.remove("active"));
-      document.getElementById(mode + "Btn").classList.add("active");
-
-      const collected = states.filter(([abbr]) => (counts[abbr] || 0) > 0).length;
-      document.getElementById("score").textContent = calcScore();
-      document.getElementById("collected").textContent = collected;
-      document.getElementById("percent").textContent = Math.round((collected / 50) * 100) + "%";
-
-      const hints = {
-        classic: "Tap each state once. Goal: collect all 50.",
-        weighted: "Each state counts once, but rarer states are worth more.",
-        unlimited: "Every sighting counts. Tap the same state again and again."
-      };
-      document.getElementById("modeHint").textContent = hints[mode];
-
-      const grid = document.getElementById("stateGrid");
-      grid.innerHTML = "";
-      states.forEach(([abbr, name, value]) => {
-        const c = counts[abbr] || 0;
-        const btn = document.createElement("button");
-        btn.className = "state" + (c ? " collected" : "");
-        btn.onclick = () => tapState(abbr, name, value);
-        btn.innerHTML = `
-          ${mode === "unlimited" && c ? `<div class="count">x${c}</div>` : ""}
-          <div class="abbr">${abbr}</div>
-          <div class="value">${mode === "classic" ? "1 pt" : value + " pts"}</div>
-        `;
-        grid.appendChild(btn);
-      });
-
-      const logEl = document.getElementById("log");
-      logEl.innerHTML = log.length ? log.map(item => `<div>${item}</div>`).join("") : "No plates yet. Start spotting.";
-    }
-
-    render();
-  </script>
-</body>
-</html>
+<script>
+const states=[["AL","Alabama",3],["AK","Alaska",10],["AZ","Arizona",4],["AR","Arkansas",5],["CA","California",2],["CO","Colorado",4],["CT","Connecticut",2],["DE","Delaware",6],["FL","Florida",2],["GA","Georgia",3],["HI","Hawaii",10],["ID","Idaho",8],["IL","Illinois",2],["IN","Indiana",3],["IA","Iowa",5],["KS","Kansas",6],["KY","Kentucky",4],["LA","Louisiana",5],["ME","Maine",6],["MD","Maryland",2],["MA","Massachusetts",2],["MI","Michigan",3],["MN","Minnesota",4],["MS","Mississippi",6],["MO","Missouri",4],["MT","Montana",8],["NE","Nebraska",7],["NV","Nevada",5],["NH","New Hampshire",5],["NJ","New Jersey",1],["NM","New Mexico",7],["NY","New York",1],["NC","North Carolina",3],["ND","North Dakota",9],["OH","Ohio",3],["OK","Oklahoma",5],["OR","Oregon",6],["PA","Pennsylvania",2],["RI","Rhode Island",5],["SC","South Carolina",4],["SD","South Dakota",9],["TN","Tennessee",4],["TX","Texas",2],["UT","Utah",6],["VT","Vermont",7],["VA","Virginia",2],["WA","Washington",5],["WV","West Virginia",7],["WI","Wisconsin",5],["WY","Wyoming",9]];
+const mapRows=[["","WA","MT","ND","MN","WI","MI","","NY","VT","NH","ME"],["OR","ID","WY","SD","IA","IL","IN","OH","PA","NJ","CT","MA"],["CA","NV","UT","CO","NE","MO","KY","WV","VA","MD","DE","RI"],["","AZ","NM","KS","OK","AR","TN","NC","SC","","",""],["AK","","","TX","LA","MS","AL","GA","FL","","HI",""]];
+let mode=localStorage.platesMode||"classic",view=localStorage.platesView||"list",counts=JSON.parse(localStorage.platesCounts||"{}"),log=JSON.parse(localStorage.platesLog||"[]"),sound=JSON.parse(localStorage.platesSound||"true");
+function save(){localStorage.platesMode=mode;localStorage.platesView=view;localStorage.platesCounts=JSON.stringify(counts);localStorage.platesLog=JSON.stringify(log);localStorage.platesSound=JSON.stringify(sound)}
+function setMode(m){mode=m;save();render()}function setView(v){view=v;save();render()}function toggleSound(){sound=!sound;save();render();if(sound)ding()}
+function ding(){if(!sound)return;try{let C=window.AudioContext||window.webkitAudioContext,c=new C(),n=c.currentTime;[523,659,784].forEach((f,i)=>{let o=c.createOscillator(),g=c.createGain();o.frequency.value=f;g.gain.setValueAtTime(.001,n+i*.08);g.gain.linearRampToValueAtTime(.12,n+i*.08+.02);g.gain.exponentialRampToValueAtTime(.001,n+i*.08+.22);o.connect(g);g.connect(c.destination);o.start(n+i*.08);o.stop(n+i*.08+.25)})}catch(e){}}
+function toast(t){let x=document.getElementById("toast");x.textContent=t;x.classList.add("show");clearTimeout(window.tt);window.tt=setTimeout(()=>x.classList.remove("show"),1300)}
+function score(){return states.reduce((a,[s,n,v])=>a+(mode=="classic"?(counts[s]?1:0):mode=="weighted"?(counts[s]?v:0):(counts[s]||0)*v),0)}
+function tap(s,n,v){let had=counts[s]>0,msg;if(mode=="classic"||mode=="weighted"){counts[s]=had?0:1;msg=counts[s]?(mode=="classic"?`Collected ${n} ð`:`Collected ${n} +${v} ð`):`Removed ${n}`}else{counts[s]=(counts[s]||0)+1;msg=`Spotted ${n} +${v} ð`}log.unshift(msg);log=log.slice(0,30);save();render();if(counts[s]){ding();toast(msg);let tile=document.querySelector(`[data-s="${s}"]`);if(tile){tile.classList.add("celebrate");setTimeout(()=>tile.classList.remove("celebrate"),600)}let sc=document.getElementById("scoreCard");sc.classList.add("bump");setTimeout(()=>sc.classList.remove("bump"),300)}}
+function resetGame(){if(confirm("Reset your PLATES game?")){counts={};log=[];save();render()}}function shareSummary(){let c=states.filter(([s])=>counts[s]>0).length,t=`PLATES\nMode: ${mode}\nScore: ${score()}\nStates: ${c}/50`;navigator.share?navigator.share({text:t}):(navigator.clipboard.writeText(t),alert("Summary copied"))}
+function render(){["classic","weighted","unlimited"].forEach(m=>document.getElementById(m+"Btn").classList.toggle("active",mode==m));["list","map"].forEach(v=>document.getElementById(v+"Tab").classList.toggle("active",view==v));document.getElementById("listPanel").classList.toggle("hidden",view!="list");document.getElementById("mapPanel").classList.toggle("hidden",view!="map");document.getElementById("soundBtn").textContent=sound?"Sound: On":"Sound: Off";let c=states.filter(([s])=>counts[s]>0).length;document.getElementById("score").textContent=score();document.getElementById("collected").textContent=c;document.getElementById("percent").textContent=Math.round(c/50*100)+"%";document.getElementById("rule").textContent={classic:"Classic Mode: each state counts once",weighted:"Weighted Mode: rare states are worth more",unlimited:"Unlimited Mode: every plate counts"}[mode];document.getElementById("hint").textContent={classic:"Tap a state when you spot it. Goal: collect all 50.",weighted:"Each state counts once, but rarer states are worth more.",unlimited:"Every sighting counts. Tap the same state again and again."}[mode];document.getElementById("grid").innerHTML=states.map(([s,n,v])=>`<button data-s="${s}" onclick="tap('${s}','${n}',${v})" class="state ${counts[s]?'collected':''}">${mode=="unlimited"&&counts[s]?`<div class="count">x${counts[s]}</div>`:""}<div class="abbr">${s}</div>${mode=="classic"?"":`<div class="value">${v} pts</div>`}</button>`).join("");document.getElementById("map").innerHTML=mapRows.flat().map(s=>s?`<button class="map-cell ${counts[s]?'hit':''}" onclick="tap('${s}','${states.find(x=>x[0]==s)[1]}',${states.find(x=>x[0]==s)[2]})">${s}</button>`:`<div class="map-cell blank"></div>`).join("");document.getElementById("mapCount").textContent=c+"/50";document.getElementById("log").innerHTML=log.length?log.map(x=>`<div>${x}</div>`).join(""):"No plates yet. Start spotting."}
+render();
+</script>
+</body></html>
