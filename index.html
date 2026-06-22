@@ -338,6 +338,41 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
   color:var(--navy);
 }
 
+
+.playerStrip {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+  margin:8px 0 10px;
+}
+.playerStrip button {
+  min-height:40px;
+  background:#fff;
+  border:1px solid var(--line);
+  font-size:12px;
+  box-shadow:0 3px 10px rgba(7,55,99,.08);
+}
+.playerStrip button.active {
+  background:#eaf3ff;
+  border-color:rgba(21,101,192,.35);
+  color:var(--blue);
+}
+.tripHistoryList {
+  display:grid;
+  gap:8px;
+  margin-top:10px;
+}
+.tripMeta {
+  font-size:12px;
+  color:var(--muted);
+  font-weight:750;
+}
+.tripScore {
+  text-align:right;
+  color:var(--green);
+  font-weight:950;
+}
+
 </style>
 </head>
 
@@ -379,6 +414,12 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <button id="classicBtn" class="active" data-mode="classic">Classic</button>
       <button id="weightedBtn" data-mode="weighted">Weighted</button>
       <button id="unlimitedBtn" data-mode="unlimited">Unlimited</button>
+    </div>
+
+    <div class="playerStrip">
+      <button id="playerDad" class="active" data-player="Dad">Dad</button>
+      <button id="playerHailey" data-player="Hailey">Hailey</button>
+      <button id="playerBenji" data-player="Benji">Benji</button>
     </div>
 
     <div class="card">
@@ -524,16 +565,22 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <div class="row"><div class="grow"><div class="title" id="tripName">Summer Road Trip</div><div class="sub" id="tripModeSummary">Classic mode</div></div></div>
       <br>
       <div class="tripActions">
-        <button class="primary" id="renameTripBtn">Rename Trip</button>
+        <button class="primary" id="endTripBtn">End + Save Current Trip</button>
+        <button class="secondary" id="renameTripBtn">Rename Trip</button>
         <button class="secondary" id="newTripBtn">Start New Trip</button>
         <button class="secondary" id="shareTripBtn">Share Trip Summary</button>
       </div>
+    </div>
+
+    <div class="card">
+      <div class="panelTitle"><span>Trip History</span><span id="historyCount">0 saved</span></div>
+      <div class="tripHistoryList" id="tripHistoryList">No saved trips yet.</div>
     </div>
   </section>
 
   <section id="familyScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Family Leaderboard</span><span>local demo</span></div>
+      <div class="panelTitle"><span>Family Leaderboard</span><span id="activePlayerLabel">Dad playing</span></div>
       <div class="recent" id="familyBoard"></div>
     </div>
   </section>
@@ -556,6 +603,9 @@ var counts = JSON.parse(localStorage.platesCounts || "{}");
 var log = JSON.parse(localStorage.platesLog || "[]");
 var tripName = localStorage.platesTripName || "Summer Road Trip";
 var tripCount = Number(localStorage.platesTripCount || 1);
+var savedTrips = JSON.parse(localStorage.platesSavedTrips || "[]");
+var activePlayer = localStorage.platesActivePlayer || "Dad";
+var players = JSON.parse(localStorage.platesPlayers || '{"Dad":0,"Hailey":0,"Benji":0}');
 var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBestTrip || 0);
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
@@ -567,6 +617,9 @@ function save() {
   localStorage.platesLog = JSON.stringify(log);
   localStorage.platesTripName = tripName;
   localStorage.platesTripCount = tripCount;
+  localStorage.platesSavedTrips = JSON.stringify(savedTrips);
+  localStorage.platesActivePlayer = activePlayer;
+  localStorage.platesPlayers = JSON.stringify(players);
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
@@ -600,6 +653,42 @@ function toast(text) {
   window.toastTimer = setTimeout(function(){ el.classList.remove("show"); }, 1300);
 }
 
+
+function currentTripSnapshot() {
+  return {
+    name: tripName,
+    mode: mode,
+    states: collectedCount(),
+    score: totalScore(),
+    sightings: totalSightings(),
+    date: new Date().toLocaleDateString()
+  };
+}
+
+function endCurrentTrip() {
+  if(collectedCount() === 0 && !confirm("Save this trip with 0 states?")) return;
+
+  savedTrips.unshift(currentTripSnapshot());
+  savedTrips = savedTrips.slice(0, 20);
+
+  updateBestForCurrentMode();
+  tripCount += 1;
+  counts = {};
+  log = [];
+  tripName = prompt("Name your next trip:", "New Road Trip") || "New Road Trip";
+
+  save();
+  render();
+  toast("Trip saved");
+}
+
+function setActivePlayer(player) {
+  activePlayer = player;
+  save();
+  render();
+  toast(player + " is spotting");
+}
+
 function tapState(btn) {
   var code = btn.dataset.code;
   var name = btn.dataset.name;
@@ -612,7 +701,8 @@ function tapState(btn) {
   }
 
   if(counts[code]) {
-    log.unshift({ code:code, name:name, points:points });
+    players[activePlayer] = (players[activePlayer] || 0) + 1;
+    log.unshift({ code:code, name:name, points:points, player:activePlayer });
     log = log.slice(0, 20);
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
@@ -714,6 +804,11 @@ function render() {
     document.getElementById(m + "Btn").classList.toggle("active", mode === m);
   });
 
+  document.querySelectorAll("[data-player]").forEach(function(btn){
+    btn.classList.toggle("active", btn.dataset.player === activePlayer);
+  });
+  document.getElementById("activePlayerLabel").textContent = activePlayer + " playing";
+
   document.querySelectorAll(".state").forEach(function(btn){
     var code = btn.dataset.code;
     btn.classList.toggle("collected", counts[code] > 0);
@@ -779,6 +874,11 @@ function render() {
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
+  document.getElementById("historyCount").textContent = savedTrips.length + " saved";
+  document.getElementById("tripHistoryList").innerHTML = savedTrips.length ? savedTrips.map(function(t){
+    var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
+    return '<div class="row"><div class="grow"><div class="title">' + t.name + '</div><div class="tripMeta">' + t.date + ' Â· ' + t.mode + ' Â· ' + t.states + '/50 states</div></div><div class="tripScore">' + label + '</div></div>';
+  }).join("") : "No saved trips yet.";
   document.getElementById("tripModeSummary").textContent =
     mode === "classic" ? c + "/50 states collected in Classic mode" :
     mode === "weighted" ? points + " points in Weighted mode" :
@@ -786,7 +886,7 @@ function render() {
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
-    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">' + pts + '</div></div>';
+    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">' + (x.player || "Family") + ' spotted this</div></div><div class="green">' + pts + '</div></div>';
   }).join("") : "No plates yet.";
 
   var badgeHtml = "";
@@ -796,10 +896,13 @@ function render() {
   badgeHtml += '<div class="badge '+(c>=50?'unlocked':'')+'"><div class="badgeIcon">50</div><div class="grow"><div class="title">Fifty Club</div><div class="sub">Collect all 50 states.</div></div><div class="green">'+(c>=50?'YES':'')+'</div></div>';
   document.getElementById("badges").innerHTML = badgeHtml;
 
-  document.getElementById("familyBoard").innerHTML =
-    '<div class="row"><div class="grow"><div class="title">Dad</div></div><div class="green">' + c + '</div></div>' +
-    '<div class="row"><div class="grow"><div class="title">Hailey</div></div><div class="green">' + Math.max(0,c-4) + '</div></div>' +
-    '<div class="row"><div class="grow"><div class="title">Benji</div></div><div class="green">' + Math.max(0,c-7) + '</div></div>';
+  var familyRows = Object.keys(players).map(function(name){
+    return { name:name, total:players[name] || 0 };
+  }).sort(function(a,b){ return b.total - a.total; });
+
+  document.getElementById("familyBoard").innerHTML = familyRows.map(function(p, i){
+    return '<div class="row"><div class="grow"><div class="title">' + (i+1) + '. ' + p.name + '</div><div class="sub">' + (p.name === activePlayer ? 'Currently spotting' : 'Family player') + '</div></div><div class="green">' + p.total + '</div></div>';
+  }).join("");
 
   var rare = [];
   document.querySelectorAll(".state").forEach(function(btn){
@@ -821,8 +924,10 @@ document.querySelectorAll("[data-map-code]").forEach(function(cell){ cell.addEve
   if(btn) tapState(btn);
 }); });
 document.querySelectorAll("[data-mode]").forEach(function(btn){ btn.addEventListener("click", function(){ setMode(btn.dataset.mode); }); });
+document.querySelectorAll("[data-player]").forEach(function(btn){ btn.addEventListener("click", function(){ setActivePlayer(btn.dataset.player); }); });
 document.querySelectorAll("[data-view]").forEach(function(btn){ btn.addEventListener("click", function(){ setView(btn.dataset.view); }); });
 document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
+document.getElementById("endTripBtn").addEventListener("click", endCurrentTrip);
 document.getElementById("renameTripBtn").addEventListener("click", renameTrip);
 document.getElementById("newTripBtn").addEventListener("click", newTrip);
 document.getElementById("shareTripBtn").addEventListener("click", shareSummary);
