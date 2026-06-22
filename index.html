@@ -339,6 +339,24 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 }
 
 
+.playerStrip {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+  margin:8px 0 10px;
+}
+.playerStrip button {
+  min-height:40px;
+  background:#fff;
+  border:1px solid var(--line);
+  font-size:12px;
+  box-shadow:0 3px 10px rgba(7,55,99,.08);
+}
+.playerStrip button.active {
+  background:#eaf3ff;
+  border-color:rgba(21,101,192,.35);
+  color:var(--blue);
+}
 .tripHistoryList {
   display:grid;
   gap:8px;
@@ -356,6 +374,10 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 }
 
 
+/* v28 safe cleanup */
+.playerStrip {
+  display:none !important;
+}
 .logo {
   position:relative;
   overflow:hidden;
@@ -442,7 +464,14 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <button id="weightedBtn" data-mode="weighted">Weighted</button>
       <button id="unlimitedBtn" data-mode="unlimited">Unlimited</button>
     </div>
-<div class="card">
+
+    <div class="playerStrip">
+      <button id="playerDad" class="active" data-player="Dad">Dad</button>
+      <button id="playerHailey" data-player="Hailey">Hailey</button>
+      <button id="playerBenji" data-player="Benji">Benji</button>
+    </div>
+
+    <div class="card">
       <div class="panelTitle"><span>Tap a state</span><span id="listCount">0/50</span></div>
       <div class="stateGrid" id="stateGrid">
 <button class="state" data-code="AL" data-name="Alabama" data-points="3">AL</button>
@@ -624,7 +653,8 @@ var log = JSON.parse(localStorage.platesLog || "[]");
 var tripName = localStorage.platesTripName || "Summer Road Trip";
 var tripCount = Number(localStorage.platesTripCount || 1);
 var savedTrips = JSON.parse(localStorage.platesSavedTrips || "[]");
-var familyPlayers = ["Dad","Hailey","Benji"];
+var activePlayer = localStorage.platesActivePlayer || "Dad";
+var players = JSON.parse(localStorage.platesPlayers || '{"Dad":0,"Hailey":0,"Benji":0}');
 var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBestTrip || 0);
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
@@ -637,7 +667,8 @@ function save() {
   localStorage.platesTripName = tripName;
   localStorage.platesTripCount = tripCount;
   localStorage.platesSavedTrips = JSON.stringify(savedTrips);
-  // Family profiles will sync here in a future version.
+  localStorage.platesActivePlayer = activePlayer;
+  localStorage.platesPlayers = JSON.stringify(players);
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
@@ -700,6 +731,13 @@ function endCurrentTrip() {
   toast("Trip saved");
 }
 
+function setActivePlayer(player) {
+  activePlayer = player;
+  save();
+  render();
+  toast(player + " is spotting");
+}
+
 function tapState(btn) {
   var code = btn.dataset.code;
   var name = btn.dataset.name;
@@ -712,7 +750,8 @@ function tapState(btn) {
   }
 
   if(counts[code]) {
-    log.unshift({ code:code, name:name, points:points });
+    players[activePlayer] = (players[activePlayer] || 0) + 1;
+    log.unshift({ code:code, name:name, points:points, player:activePlayer });
     log = log.slice(0, 20);
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
@@ -814,6 +853,11 @@ function render() {
     document.getElementById(m + "Btn").classList.toggle("active", mode === m);
   });
 
+  document.querySelectorAll("[data-player]").forEach(function(btn){
+    btn.classList.toggle("active", btn.dataset.player === activePlayer);
+  });
+  document.getElementById("activePlayerLabel").textContent = activePlayer + " playing";
+
   document.querySelectorAll(".state").forEach(function(btn){
     var code = btn.dataset.code;
     btn.classList.toggle("collected", counts[code] > 0);
@@ -901,11 +945,14 @@ function render() {
   badgeHtml += '<div class="badge '+(c>=50?'unlocked':'')+'"><div class="badgeIcon">50</div><div class="grow"><div class="title">Fifty Club</div><div class="sub">Collect all 50 states.</div></div><div class="green">'+(c>=50?'YES':'')+'</div></div>';
   document.getElementById("badges").innerHTML = badgeHtml;
 
+  var familyRows = Object.keys(players).map(function(name){
+    return { name:name, total:players[name] || 0 };
+  }).sort(function(a,b){ return b.total - a.total; });
+
   document.getElementById("familyBoard").innerHTML =
-    '<div class="row"><div class="grow"><div class="title">Family Mode</div><div class="sub">Coming soon: family profiles, shared trips, and leaderboards.</div></div></div>' +
+    '<div class="row"><div class="grow"><div class="title">Family Mode</div><div class="sub">Coming soon: synced family profiles, shared trips, and leaderboards.</div></div></div>' +
     '<div class="row"><div class="grow"><div class="title">Share Trips</div><div class="sub">For now, use Trip History and Share Trip Summary.</div></div></div>';
 
-  }).join("");
 
   var rare = [];
   document.querySelectorAll(".state").forEach(function(btn){
@@ -927,7 +974,7 @@ document.querySelectorAll("[data-map-code]").forEach(function(cell){ cell.addEve
   if(btn) tapState(btn);
 }); });
 document.querySelectorAll("[data-mode]").forEach(function(btn){ btn.addEventListener("click", function(){ setMode(btn.dataset.mode); }); });
-
+document.querySelectorAll("[data-player]").forEach(function(btn){ btn.addEventListener("click", function(){ setActivePlayer(btn.dataset.player); }); });
 document.querySelectorAll("[data-view]").forEach(function(btn){ btn.addEventListener("click", function(){ setView(btn.dataset.view); }); });
 document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
 document.getElementById("endTripBtn").addEventListener("click", endCurrentTrip);
