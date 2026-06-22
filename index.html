@@ -6,17 +6,17 @@
 <title>PLATES</title>
 <style>
 :root {
-  --sky:#b8ecff;
+  --sky:#c8f0ff;
   --cream:#fff8e6;
   --navy:#073763;
   --blue:#1565c0;
   --green:#35a852;
-  --yellow:#ffbd2e;
-  --orange:#ff8a00;
+  --lightgreen:#eaf7ec;
+  --gold:#f5c542;
   --text:#082b5f;
-  --muted:#6b7280;
+  --muted:#667085;
   --line:rgba(8,43,95,.14);
-  --shadow:0 8px 22px rgba(7,55,99,.14);
+  --shadow:0 8px 22px rgba(7,55,99,.12);
 }
 * { box-sizing:border-box; }
 html,body {
@@ -44,80 +44,38 @@ button {
 .top {
   padding:8px 0 6px;
 }
-.logoRow {
-  display:grid;
-  grid-template-columns:48px 1fr 48px;
-  gap:8px;
-  align-items:center;
-}
-.logoWrap {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.logoPlate {
+.logo {
   width:100%;
-  max-width:280px;
   background:#fff;
   border:4px solid var(--navy);
   border-radius:18px;
-  padding:9px 16px 8px;
-  box-shadow:0 4px 0 rgba(7,55,99,.18);
+  padding:10px 16px;
+  box-shadow:0 4px 0 rgba(7,55,99,.16);
   text-align:center;
-  position:relative;
-  overflow:hidden;
 }
-.logoPlate:after {
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:0;
-  transform:translateX(-50%);
-  width:54px;
-  height:28px;
-  background:var(--navy);
-  clip-path:polygon(50% 0,100% 100%,0 100%);
-  opacity:.95;
-}
-.logoPlate h1 {
+.logo h1 {
   margin:0;
-  font-size:31px;
+  font-size:32px;
   letter-spacing:5px;
   color:var(--navy);
   line-height:.95;
-  position:relative;
-  z-index:1;
 }
-.logoPlate .tag {
+.logo .tag {
   margin-top:5px;
-  font-size:9px;
+  font-size:10px;
   font-weight:900;
-  letter-spacing:1.1px;
+  letter-spacing:.9px;
   color:var(--navy);
-  position:relative;
-  z-index:1;
-}
-.iconBtn {
-  width:48px;
-  height:48px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:22px;
-  color:var(--navy);
-  box-shadow:var(--shadow);
 }
 .tripPill {
   margin-top:8px;
-  background:rgba(255,255,255,.82);
+  background:rgba(255,255,255,.86);
   border:1px solid var(--line);
   border-radius:999px;
   padding:10px 13px;
   font-weight:850;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
   box-shadow:0 4px 12px rgba(7,55,99,.08);
+  text-align:center;
 }
 .card {
   background:#fff;
@@ -168,7 +126,7 @@ button {
 .fill {
   height:100%;
   width:0%;
-  background:linear-gradient(90deg,var(--green),#70d66d,var(--yellow));
+  background:linear-gradient(90deg,var(--green),#70d66d,var(--gold));
   transition:width .25s ease;
 }
 .quickStats {
@@ -209,7 +167,7 @@ button {
   box-shadow:0 3px 10px rgba(7,55,99,.08);
 }
 .modeStrip button.active {
-  background:#eaf7ec;
+  background:var(--lightgreen);
   border-color:rgba(53,168,82,.45);
   color:var(--green);
 }
@@ -228,7 +186,7 @@ button {
 }
 .state {
   min-height:52px;
-  border:1px solid var(--line);
+  border:2px solid #d8dde7;
   background:#fff;
   border-radius:15px;
   display:flex;
@@ -241,24 +199,16 @@ button {
 }
 .state:active { transform:scale(.96); }
 .state.collected {
-  background:linear-gradient(135deg,var(--green),#69d66f);
+  background:var(--green);
   color:#fff;
-  border-color:rgba(53,168,82,.7);
+  border-color:var(--green);
 }
-.state.collected:after {
-  content:"â";
-  position:absolute;
-  top:4px;
-  right:6px;
-  font-size:12px;
-  font-weight:950;
-}
-.state.rare {
-  border-color:rgba(255,189,46,.9);
+.state.rare:not(.collected) {
+  border-color:var(--gold);
 }
 .state.celebrate {
   animation:pop .55s;
-  box-shadow:0 0 26px rgba(255,189,46,.95);
+  box-shadow:0 0 26px rgba(245,197,66,.95);
 }
 .value {
   position:absolute;
@@ -280,19 +230,23 @@ button {
 .title { font-weight:900;color:var(--navy); }
 .green { color:var(--green);font-weight:900; }
 .blue { color:var(--blue);font-weight:900; }
-.orange { color:var(--orange);font-weight:900; }
 .recent { display:grid; gap:8px; }
+.usMap {
+  background:#f8fbff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:12px;
+}
 .mapGrid {
   display:grid;
   grid-template-columns:repeat(12,1fr);
   gap:5px;
-  overflow:auto;
 }
 .mapCell {
   min-height:28px;
   border-radius:8px;
-  background:#f0f5fb;
-  border:1px solid var(--line);
+  background:#fff;
+  border:1px solid #d8dde7;
   font-size:10px;
   font-weight:900;
   color:var(--muted);
@@ -303,12 +257,31 @@ button {
 .mapCell.hit {
   background:var(--green);
   color:#fff;
+  border-color:var(--green);
 }
 .mapCell.blank {
   opacity:0;
   background:transparent;
   border:0;
 }
+.mapLegend {
+  display:flex;
+  gap:12px;
+  margin-top:10px;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:800;
+}
+.legendBox {
+  width:14px;
+  height:14px;
+  display:inline-block;
+  border-radius:4px;
+  border:1px solid #d8dde7;
+  vertical-align:-2px;
+  margin-right:4px;
+}
+.legendBox.collected { background:var(--green); border-color:var(--green); }
 .badge {
   display:flex;
   align-items:center;
@@ -322,7 +295,7 @@ button {
 .badge.unlocked {
   opacity:1;
   background:#fff7dc;
-  border-color:rgba(255,189,46,.65);
+  border-color:rgba(245,197,66,.65);
 }
 .badgeIcon {
   width:32px;
@@ -340,7 +313,7 @@ button {
   gap:10px;
 }
 .primary {
-  background:var(--yellow);
+  background:var(--gold);
   color:var(--navy);
   padding:14px;
 }
@@ -349,22 +322,6 @@ button {
   border:1px solid var(--blue);
   color:var(--blue);
   padding:12px;
-}
-.rank {
-  width:20px;
-  font-weight:950;
-  color:var(--muted);
-}
-.avatar {
-  width:34px;
-  height:34px;
-  border-radius:999px;
-  background:#eaf3ff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-  color:var(--blue);
 }
 .bottomNav {
   position:fixed;
@@ -414,7 +371,7 @@ button {
   transform:translateX(-50%) translateY(-110px);
   z-index:50;
   background:#fff;
-  border:2px solid var(--yellow);
+  border:2px solid var(--gold);
   box-shadow:var(--shadow);
   border-radius:999px;
   padding:12px 16px;
@@ -427,7 +384,7 @@ button {
 .toast.show { transform:translateX(-50%) translateY(0); }
 @keyframes pop {
   0% { transform:scale(1); }
-  40% { transform:scale(1.17) rotate(-1deg); }
+  40% { transform:scale(1.17); }
   100% { transform:scale(1); }
 }
 </style>
@@ -437,19 +394,12 @@ button {
 
 <main class="app">
   <section class="top">
-    <div class="logoRow">
-      <button class="iconBtn" id="soundBtn" aria-label="Toggle sound">âª</button>
-      <div class="logoWrap">
-        <div class="logoPlate">
-          <h1>PLATES</h1>
-          <div class="tag">THE LICENSE PLATE GAME</div>
-        </div>
-      </div>
-      <button class="iconBtn" id="shareBtn" aria-label="Share">â</button>
+    <div class="logo">
+      <h1>PLATES</h1>
+      <div class="tag">THE LICENSE PLATE GAME</div>
     </div>
     <div class="tripPill" id="tripPillBtn">
       <span id="tripNameTop">Summer Road Trip</span>
-      <span>âº</span>
     </div>
   </section>
 
@@ -541,7 +491,8 @@ button {
   <section id="mapScreen" class="screen hidden">
     <div class="card">
       <div class="panelTitle"><span>Collection Map</span><span id="mapCount">0/50</span></div>
-      <div class="mapGrid" id="mapGrid">
+      <div class="usMap">
+        <div class="mapGrid" id="mapGrid">
 <div class="mapCell blank"></div>
 <button class="mapCell" data-map-code="WA">WA</button>
 <button class="mapCell" data-map-code="MT">MT</button>
@@ -602,6 +553,11 @@ button {
 <div class="mapCell blank"></div>
 <button class="mapCell" data-map-code="HI">HI</button>
 <div class="mapCell blank"></div>
+        </div>
+        <div class="mapLegend">
+          <span><span class="legendBox collected"></span>Collected</span>
+          <span><span class="legendBox"></span>Missing</span>
+        </div>
       </div>
     </div>
     <div class="card">
@@ -653,7 +609,6 @@ var mode = localStorage.platesMode || "classic";
 var view = localStorage.platesView || "game";
 var counts = JSON.parse(localStorage.platesCounts || "{}");
 var log = JSON.parse(localStorage.platesLog || "[]");
-var sound = JSON.parse(localStorage.platesSound || "true");
 var tripName = localStorage.platesTripName || "Summer Road Trip";
 
 function save() {
@@ -661,7 +616,6 @@ function save() {
   localStorage.platesView = view;
   localStorage.platesCounts = JSON.stringify(counts);
   localStorage.platesLog = JSON.stringify(log);
-  localStorage.platesSound = JSON.stringify(sound);
   localStorage.platesTripName = tripName;
 }
 
@@ -697,27 +651,6 @@ function toast(text) {
   window.toastTimer = setTimeout(function(){ el.classList.remove("show"); }, 1300);
 }
 
-function ding() {
-  if(!sound) return;
-  try {
-    var C = window.AudioContext || window.webkitAudioContext;
-    var c = new C();
-    var now = c.currentTime;
-    [523,659,784].forEach(function(freq,i){
-      var o = c.createOscillator();
-      var g = c.createGain();
-      o.frequency.value = freq;
-      g.gain.setValueAtTime(.001, now + i*.08);
-      g.gain.linearRampToValueAtTime(.12, now + i*.08 + .02);
-      g.gain.exponentialRampToValueAtTime(.001, now + i*.08 + .22);
-      o.connect(g);
-      g.connect(c.destination);
-      o.start(now + i*.08);
-      o.stop(now + i*.08 + .25);
-    });
-  } catch(e) {}
-}
-
 function tapState(btn) {
   var code = btn.dataset.code;
   var name = btn.dataset.name;
@@ -735,7 +668,6 @@ function tapState(btn) {
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
     toast("Collected " + name);
-    ding();
   }
 
   save();
@@ -817,30 +749,41 @@ function render() {
 
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
+  var unlockedBadges = 0;
+  if(c >= 1) unlockedBadges++;
+  if(c >= 10) unlockedBadges++;
+  if(c >= 25) unlockedBadges++;
+  if(c >= 50) unlockedBadges++;
+
   document.getElementById("collectedBig").textContent = c;
   document.getElementById("score").textContent = totalScore();
   document.getElementById("percent").textContent = pct + "%";
   document.getElementById("fill").style.width = pct + "%";
   document.getElementById("rareCount").textContent = rareCount();
-  document.getElementById("badgeMini").textContent = c >= 1 ? 1 : 0;
+  document.getElementById("badgeMini").textContent = unlockedBadges;
+  document.getElementById("streak").textContent = c >= 1 ? 1 : 0;
   document.getElementById("listCount").textContent = c + "/50";
   document.getElementById("mapCount").textContent = c + "/50";
-  document.getElementById("badgeCount").textContent = (c >= 1 ? 1 : 0) + " unlocked";
+  document.getElementById("badgeCount").textContent = unlockedBadges + " unlocked";
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
-  document.getElementById("soundBtn").textContent = sound ? "âª" : "OFF";
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">+' + x.points + '</div></div>';
   }).join("") : "No plates yet.";
 
-  document.getElementById("badges").innerHTML = c >= 1 ? '<div class="badge unlocked"><div class="badgeIcon">1</div><div class="grow"><div class="title">First Plate</div><div class="sub">Spot your first state.</div></div><div class="green">YES</div></div>' : "Collect your first state to unlock your first badge.";
+  var badgeHtml = "";
+  badgeHtml += '<div class="badge '+(c>=1?'unlocked':'')+'"><div class="badgeIcon">1</div><div class="grow"><div class="title">First Plate</div><div class="sub">Spot your first state.</div></div><div class="green">'+(c>=1?'YES':'')+'</div></div>';
+  badgeHtml += '<div class="badge '+(c>=10?'unlocked':'')+'"><div class="badgeIcon">10</div><div class="grow"><div class="title">Road Warrior</div><div class="sub">Collect 10 states.</div></div><div class="green">'+(c>=10?'YES':'')+'</div></div>';
+  badgeHtml += '<div class="badge '+(c>=25?'unlocked':'')+'"><div class="badgeIcon">25</div><div class="grow"><div class="title">Halfway There</div><div class="sub">Collect 25 states.</div></div><div class="green">'+(c>=25?'YES':'')+'</div></div>';
+  badgeHtml += '<div class="badge '+(c>=50?'unlocked':'')+'"><div class="badgeIcon">50</div><div class="grow"><div class="title">Fifty Club</div><div class="sub">Collect all 50 states.</div></div><div class="green">'+(c>=50?'YES':'')+'</div></div>';
+  document.getElementById("badges").innerHTML = badgeHtml;
 
   document.getElementById("familyBoard").innerHTML =
-    '<div class="row"><div class="rank">1</div><div class="avatar">D</div><div class="grow"><div class="title">Dad</div></div><div class="green">' + c + '</div></div>' +
-    '<div class="row"><div class="rank">2</div><div class="avatar">H</div><div class="grow"><div class="title">Hailey</div></div><div class="green">' + Math.max(0,c-4) + '</div></div>' +
-    '<div class="row"><div class="rank">3</div><div class="avatar">B</div><div class="grow"><div class="title">Benji</div></div><div class="green">' + Math.max(0,c-7) + '</div></div>';
+    '<div class="row"><div class="grow"><div class="title">Dad</div></div><div class="green">' + c + '</div></div>' +
+    '<div class="row"><div class="grow"><div class="title">Hailey</div></div><div class="green">' + Math.max(0,c-4) + '</div></div>' +
+    '<div class="row"><div class="grow"><div class="title">Benji</div></div><div class="green">' + Math.max(0,c-7) + '</div></div>';
 
   var rare = [];
   document.querySelectorAll(".state").forEach(function(btn){
@@ -862,8 +805,6 @@ document.querySelectorAll(".mapCell[data-map-code]").forEach(function(cell){ cel
 document.querySelectorAll("[data-mode]").forEach(function(btn){ btn.addEventListener("click", function(){ setMode(btn.dataset.mode); }); });
 document.querySelectorAll("[data-view]").forEach(function(btn){ btn.addEventListener("click", function(){ setView(btn.dataset.view); }); });
 document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
-document.getElementById("soundBtn").addEventListener("click", function(){ sound = !sound; save(); render(); if(sound) ding(); });
-document.getElementById("shareBtn").addEventListener("click", shareSummary);
 document.getElementById("renameTripBtn").addEventListener("click", renameTrip);
 document.getElementById("newTripBtn").addEventListener("click", newTrip);
 document.getElementById("shareTripBtn").addEventListener("click", shareSummary);
