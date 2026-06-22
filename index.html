@@ -546,6 +546,143 @@ body.show-rarity .mapState.rare:not(.hit) {
   40% { transform:scale(1.17); }
   100% { transform:scale(1); }
 }
+
+/* v35 blue-green visual refresh */
+:root {
+  --sky:#bfeeff;
+  --cream:#f4fff5;
+  --navy:#05345f;
+  --blue:#1577d2;
+  --green:#26a957;
+  --gold:#f6c844;
+  --red:#b43b3b;
+  --text:#062f5f;
+  --muted:#667085;
+  --line:rgba(6,47,95,.14);
+  --shadow:0 10px 26px rgba(6,47,95,.14);
+}
+
+html,body {
+  background:
+    radial-gradient(circle at 50% 0%,rgba(255,255,255,.9),transparent 22%),
+    linear-gradient(180deg,#bdefff 0%,#dff8ff 45%,#f5fff3 100%);
+}
+
+.logo {
+  position:relative;
+  max-width:326px;
+  margin:0 auto 18px;
+  background:
+    radial-gradient(circle at 28% 18%,rgba(255,255,255,.95),transparent 22%),
+    linear-gradient(180deg,#ffffff 0%,#f4f9ff 48%,#eaf4ff 100%);
+  border:4px solid var(--navy);
+  border-radius:20px;
+  padding:17px 20px 18px;
+  box-shadow:
+    0 5px 0 rgba(6,47,95,.18),
+    0 14px 28px rgba(6,47,95,.16),
+    inset 0 0 0 2px rgba(6,47,95,.06);
+  overflow:hidden;
+}
+
+.logo:before,
+.logo:after {
+  content:"";
+  position:absolute;
+  top:12px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#dcecff;
+  border:2px solid rgba(6,47,95,.34);
+  box-shadow:inset 0 1px 2px rgba(6,47,95,.18);
+}
+
+.logo:before { left:14px; }
+.logo:after { right:14px; }
+
+.logo .usaMark {
+  position:absolute;
+  left:22px;
+  top:36px;
+  font-size:11px;
+  font-weight:950;
+  color:rgba(21,119,210,.34);
+  letter-spacing:.6px;
+  transform:rotate(-2deg);
+}
+
+.logo h1 {
+  margin:0;
+  text-align:center;
+  color:var(--navy);
+  font-size:39px;
+  letter-spacing:7px;
+  line-height:1;
+  text-shadow:0 1px 0 #fff, 0 2px 0 rgba(6,47,95,.08);
+}
+
+.logo .tagline {
+  margin-top:10px;
+  text-align:center;
+  color:var(--navy);
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:2px;
+}
+
+.card {
+  background:rgba(255,255,255,.94);
+  border:1px solid rgba(6,47,95,.12);
+  box-shadow:0 10px 26px rgba(6,47,95,.12);
+}
+
+.currentTripHeader,
+.stat,
+.usMap,
+.badge,
+.row {
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+}
+
+.state {
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+}
+
+.state.collected,
+.mapState.hit {
+  background:linear-gradient(180deg,#32b860 0%,#249d4e 100%);
+  color:#fff;
+  border-color:#249d4e;
+}
+
+.modeStrip button.active {
+  background:linear-gradient(180deg,#edfff1 0%,#e0f8e7 100%);
+  border-color:rgba(38,169,87,.45);
+  color:var(--green);
+}
+
+.badge.unlocked {
+  background:linear-gradient(180deg,#fff9dd 0%,#fffdf2 100%);
+}
+
+.shareCard {
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.72),rgba(255,255,255,.95)),
+    linear-gradient(135deg,#bfeeff,#e8fff0);
+}
+
+.primary {
+  background:linear-gradient(180deg,#35b964,#239d4f);
+  color:#fff;
+}
+
+.secondary {
+  background:#fff;
+  border:1px solid rgba(21,119,210,.3);
+  color:var(--blue);
+}
+
 </style>
 </head>
 
@@ -565,6 +702,7 @@ body.show-rarity .mapState.rare:not(.hit) {
 <main class="app">
   <section class="top">
     <div class="logo">
+      <div class="usaMark">USA</div>
       <h1>PLATES</h1>
       <div class="tagline">THE LICENSE PLATE GAME</div>
     </div>
