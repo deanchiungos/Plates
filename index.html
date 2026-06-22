@@ -956,6 +956,14 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   text-align:center;
 }
 
+
+.headerArea{position:relative;}
+.logo{max-width:290px;}
+.headerHelpBtn{
+position:absolute;top:24px;right:24px;width:42px;height:42px;border-radius:50%;
+border:1px solid rgba(21,119,210,.25);background:#fff;color:#05345f;
+font-size:24px;font-weight:900;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:5;
+}
 </style>
 </head>
 
@@ -1011,7 +1019,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   <section id="gameScreen" class="screen">
     <div class="card">
       <div class="currentTripHeader" id="tripPillBtn">
-        <button class="rulesButton" id="rulesButton" type="button">Rules</button>
+        
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
       </div>
