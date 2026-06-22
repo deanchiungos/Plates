@@ -315,7 +315,7 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       </div>
       <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
       <div class="quickStats">
-        <div class="stat"><strong id="bestTrip">0</strong><span>BEST</span></div>
+        <div class="stat"><strong id="bestTrip">0</strong><span id="bestLabel">BEST</span></div>
         <div class="stat"><strong id="tripCount">1</strong><span>TRIPS</span></div>
         <div class="stat"><strong id="badgeMini">0</strong><span>BADGES</span></div>
       </div>
@@ -502,7 +502,9 @@ var counts = JSON.parse(localStorage.platesCounts || "{}");
 var log = JSON.parse(localStorage.platesLog || "[]");
 var tripName = localStorage.platesTripName || "Summer Road Trip";
 var tripCount = Number(localStorage.platesTripCount || 1);
-var bestTrip = Number(localStorage.platesBestTrip || 0);
+var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBestTrip || 0);
+var bestWeighted = Number(localStorage.platesBestWeighted || 0);
+var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 
 function save() {
   localStorage.platesMode = mode;
@@ -511,7 +513,9 @@ function save() {
   localStorage.platesLog = JSON.stringify(log);
   localStorage.platesTripName = tripName;
   localStorage.platesTripCount = tripCount;
-  localStorage.platesBestTrip = bestTrip;
+  localStorage.platesBestClassic = bestClassic;
+  localStorage.platesBestWeighted = bestWeighted;
+  localStorage.platesBestUnlimited = bestUnlimited;
 }
 
 function collectedCount() {
@@ -590,7 +594,7 @@ function renameTrip() {
 
 function newTrip() {
   if(confirm("Start a new trip? This resets collected states.")) {
-    if(collectedCount() > bestTrip) bestTrip = collectedCount();
+    updateBestForCurrentMode();
     tripCount += 1;
     counts = {};
     log = [];
@@ -617,6 +621,23 @@ function badgeCount(c) {
   if(c >= 25) total++;
   if(c >= 50) total++;
   return total;
+}
+
+
+function updateBestForCurrentMode() {
+  var c = collectedCount();
+  var points = totalScore();
+
+  if(mode === "classic" && c > bestClassic) bestClassic = c;
+  if(mode === "weighted" && points > bestWeighted) bestWeighted = points;
+  if(mode === "unlimited" && points > bestUnlimited) bestUnlimited = points;
+}
+
+function bestForCurrentMode() {
+  if(mode === "classic") return bestClassic;
+  if(mode === "weighted") return bestWeighted;
+  if(mode === "unlimited") return bestUnlimited;
+  return bestClassic;
 }
 
 function render() {
@@ -686,9 +707,10 @@ function render() {
     document.getElementById("progressBar").style.display = "none";
   }
 
-  if(c > bestTrip) bestTrip = c;
+  updateBestForCurrentMode();
 
-  document.getElementById("bestTrip").textContent = bestTrip;
+  document.getElementById("bestTrip").textContent = bestForCurrentMode();
+  document.getElementById("bestLabel").textContent = mode === "classic" ? "BEST" : "BEST PTS";
   document.getElementById("tripCount").textContent = tripCount;
   document.getElementById("badgeMini").textContent = unlockedBadges;
   document.getElementById("listCount").textContent = c + "/50";
