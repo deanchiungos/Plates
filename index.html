@@ -356,76 +356,70 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 }
 
 
-/* v31 premium license plate header */
+/* v32 centered license plate header */
 .logo {
   position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 18% 18%,rgba(255,255,255,.95),transparent 18%),
-    linear-gradient(180deg,#ffffff 0%,#f5f9ff 52%,#edf5ff 100%);
+  max-width:320px;
+  margin:0 auto 16px;
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
   border:4px solid var(--navy);
-  border-radius:22px;
-  padding:13px 18px 14px;
+  border-radius:18px;
+  padding:14px 20px 16px;
   box-shadow:
     0 5px 0 rgba(7,55,99,.18),
-    0 12px 22px rgba(7,55,99,.12),
-    inset 0 0 0 2px rgba(7,55,99,.06);
+    0 12px 22px rgba(7,55,99,.12);
+  overflow:hidden;
 }
+
 .logo:before,
 .logo:after {
   content:"";
   position:absolute;
-  top:10px;
+  top:12px;
   width:10px;
   height:10px;
-  border-radius:999px;
+  border-radius:50%;
   background:#dbeafe;
-  border:2px solid rgba(7,55,99,.32);
-  box-shadow:inset 0 1px 2px rgba(7,55,99,.18);
+  border:2px solid rgba(7,55,99,.35);
 }
-.logo:before { left:13px; }
-.logo:after { right:13px; }
+
+.logo:before { left:12px; }
+.logo:after { right:12px; }
+
 .logo h1 {
   margin:0;
-  font-size:36px;
-  letter-spacing:7px;
+  font-size:34px;
+  letter-spacing:6px;
+  line-height:1;
   color:var(--navy);
-  line-height:.94;
-  text-shadow:
-    0 1px 0 #fff,
-    0 2px 0 rgba(7,55,99,.06);
+  text-align:center;
 }
+
 .logo .tag {
-  margin-top:7px;
+  margin-top:8px;
   display:inline-block;
-  background:#eaf3ff;
-  border:1px solid rgba(7,55,99,.14);
+  padding:4px 12px;
   border-radius:999px;
-  padding:3px 12px;
+  background:#eaf3ff;
+  border:1px solid rgba(7,55,99,.12);
+  color:var(--navy);
   font-size:10px;
   font-weight:900;
   letter-spacing:1px;
-  color:var(--navy);
 }
-.logo .edition {
-  margin-top:7px;
-  font-size:9px;
-  font-weight:950;
-  letter-spacing:1.8px;
-  color:rgba(7,55,99,.66);
-}
-.logo .plateLines {
+
+.logoPlateAccent {
   position:absolute;
-  left:15px;
-  right:15px;
-  bottom:9px;
+  left:24px;
+  right:24px;
+  bottom:10px;
   display:flex;
   justify-content:space-between;
-  opacity:.28;
   pointer-events:none;
 }
-.logo .plateLines span {
-  width:28%;
+
+.logoPlateAccent span {
+  width:42px;
   height:3px;
   border-radius:999px;
   background:var(--gold);
@@ -442,8 +436,10 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
     <div class="logo">
       <h1>PLATES</h1>
       <div class="tag">THE LICENSE PLATE GAME</div>
-      <div class="edition">ROAD TRIP EDITION</div>
-      <div class="plateLines"><span></span><span></span></div>
+      <div class="logoPlateAccent">
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </section>
 
