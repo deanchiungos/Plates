@@ -957,26 +957,26 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 
-.headerArea{position:relative;}
-.logo{max-width:290px;}
-.headerHelpBtn{
-position:absolute;top:24px;right:24px;width:42px;height:42px;border-radius:50%;
-border:1px solid rgba(21,119,210,.25);background:#fff;color:#05345f;
-font-size:24px;font-weight:900;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:5;
+/* v38.7 centered How to Play pill */
+.rulesButton,
+.headerHelpBtn {
+  display:none !important;
 }
 
-.headerHelpPill{
+.headerHelpPill {
+  display:block;
   width:fit-content;
-  margin:12px auto 8px;
+  margin:0 auto 10px;
   padding:10px 18px;
   border-radius:999px;
-  background:rgba(255,255,255,.92);
-  border:1px solid rgba(21,119,210,.20);
-  color:#05345f;
+  background:rgba(255,255,255,.94);
+  border:1px solid rgba(21,119,210,.22);
+  color:var(--navy);
   font-size:14px;
-  font-weight:800;
-  box-shadow:0 4px 12px rgba(0,0,0,.06);
+  font-weight:900;
+  box-shadow:0 4px 12px rgba(7,55,99,.08);
 }
+
 </style>
 </head>
 
@@ -1028,6 +1028,8 @@ font-size:24px;font-weight:900;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:5;
       <div class="tagline">THE LICENSE PLATE GAME</div>
     </div>
   </section>
+
+  <button class="headerHelpPill" id="rulesButton" type="button">? How to Play</button>
 
   <section id="gameScreen" class="screen">
     <div class="card">
@@ -1723,16 +1725,6 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   });
 
   document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
-  document.getElementById("rulesButton").onclick = function(e){
-    e.stopPropagation();
-    document.getElementById("rulesOverlay").classList.add("show");
-  };
-  document.getElementById("rulesClose").onclick = function(){
-    document.getElementById("rulesOverlay").classList.remove("show");
-  };
-  document.getElementById("rulesOverlay").onclick = function(e){
-    if(e.target.id === "rulesOverlay") document.getElementById("rulesOverlay").classList.remove("show");
-  };
   document.getElementById("endTripBtn").onclick = endCurrentTrip;
   document.getElementById("renameTripBtn").onclick = renameTrip;
   document.getElementById("newTripBtn").onclick = newTrip;
@@ -1744,6 +1736,29 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
     document.getElementById("celebrationOverlay").classList.remove("show");
     setView("share");
   };
+
+  var rulesBtn = document.getElementById("rulesButton");
+  var rulesOverlay = document.getElementById("rulesOverlay");
+  var rulesClose = document.getElementById("rulesClose");
+
+  if(rulesBtn && rulesOverlay) {
+    rulesBtn.onclick = function(e){
+      e.stopPropagation();
+      rulesOverlay.classList.add("show");
+    };
+  }
+
+  if(rulesClose && rulesOverlay) {
+    rulesClose.onclick = function(){
+      rulesOverlay.classList.remove("show");
+    };
+  }
+
+  if(rulesOverlay) {
+    rulesOverlay.onclick = function(e){
+      if(e.target.id === "rulesOverlay") rulesOverlay.classList.remove("show");
+    };
+  }
 }
 
 attachHandlers();
