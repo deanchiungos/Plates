@@ -12,6 +12,7 @@
   --blue:#1565c0;
   --green:#35a852;
   --gold:#f5c542;
+  --red:#b43b3b;
   --text:#082b5f;
   --muted:#667085;
   --line:rgba(8,43,95,.14);
@@ -23,52 +24,64 @@ html,body {
   min-height:100%;
   font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   color:var(--text);
-  background:linear-gradient(180deg,var(--sky) 0%,#eaf9ff 45%,var(--cream) 100%);
+  background:linear-gradient(180deg,var(--sky) 0%,#eaf9ff 48%,var(--cream) 100%);
 }
-body { padding-bottom:86px; }
-button {
+body { padding-bottom:92px; }
+button, select {
   font-family:inherit;
-  border:0;
-  border-radius:14px;
-  font-weight:800;
-  color:var(--text);
-  background:#fff;
   -webkit-tap-highlight-color:transparent;
 }
-.app { max-width:430px; margin:0 auto; padding:10px 12px 0; }
-.top { padding:8px 0 6px; }
-.logo {
-  width:100%;
+button {
+  border:0;
+  border-radius:14px;
+  font-weight:850;
+  color:var(--text);
   background:#fff;
-  border:4px solid var(--navy);
-  border-radius:18px;
-  padding:10px 16px;
-  box-shadow:0 4px 0 rgba(7,55,99,.16);
-  text-align:center;
 }
+.app {
+  max-width:430px;
+  margin:0 auto;
+  padding:14px 12px 0;
+}
+.logo {
+  position:relative;
+  max-width:320px;
+  margin:0 auto 18px;
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+  border:4px solid var(--navy);
+  border-radius:20px;
+  padding:18px 20px;
+  box-shadow:0 5px 0 rgba(7,55,99,.18), 0 12px 22px rgba(7,55,99,.12);
+  overflow:hidden;
+}
+.logo:before,
+.logo:after {
+  content:"";
+  position:absolute;
+  top:12px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#dbeafe;
+  border:2px solid rgba(7,55,99,.35);
+}
+.logo:before { left:14px; }
+.logo:after { right:14px; }
 .logo h1 {
   margin:0;
-  font-size:32px;
-  letter-spacing:5px;
-  color:var(--navy);
-  line-height:.95;
-}
-.logo .tag {
-  margin-top:5px;
-  font-size:10px;
-  font-weight:900;
-  letter-spacing:.9px;
-  color:var(--navy);
-}
-.tripPill {
-  margin-top:8px;
-  background:rgba(255,255,255,.86);
-  border:1px solid var(--line);
-  border-radius:999px;
-  padding:10px 13px;
-  font-weight:850;
-  box-shadow:0 4px 12px rgba(7,55,99,.08);
   text-align:center;
+  color:var(--navy);
+  font-size:38px;
+  letter-spacing:7px;
+  line-height:1;
+}
+.logo .tagline {
+  margin-top:10px;
+  text-align:center;
+  color:var(--navy);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2px;
 }
 .card {
   background:#fff;
@@ -78,16 +91,37 @@ button {
   margin:10px 0;
   box-shadow:var(--shadow);
 }
+.currentTripHeader {
+  border:1px solid var(--line);
+  background:#f8fbff;
+  border-radius:18px;
+  padding:10px 12px;
+  margin-bottom:12px;
+  text-align:center;
+}
+.tripKicker {
+  display:block;
+  font-size:10px;
+  font-weight:900;
+  color:#4b5565;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+  margin-bottom:2px;
+}
+.tripNameInline {
+  display:block;
+  font-size:18px;
+  line-height:1.15;
+  font-weight:950;
+  color:var(--navy);
+}
 .bigProgress {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:12px;
   align-items:end;
 }
-.primaryStat,
-.secondaryStat {
-  text-align:center;
-}
+.primaryStat,.secondaryStat { text-align:center; }
 .bigNum {
   font-size:50px;
   font-weight:950;
@@ -125,7 +159,7 @@ button {
   background:#e5eef7;
   border-radius:999px;
   overflow:hidden;
-  margin-top:10px;
+  margin-top:12px;
 }
 .fill {
   height:100%;
@@ -133,22 +167,44 @@ button {
   background:linear-gradient(90deg,var(--green),#70d66d,var(--gold));
   transition:width .25s ease;
 }
-.quickStats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px; }
+.quickStats {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-top:12px;
+}
 .stat {
   background:#f8fbff;
   border:1px solid var(--line);
   border-radius:15px;
-  padding:8px;
+  padding:9px 6px;
   text-align:center;
 }
-.stat strong { display:block; font-size:20px; color:var(--navy); }
-.stat span { display:block; font-size:11px; color:#4b5565; font-weight:900; letter-spacing:.5px; }
-.modeStrip { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin:8px 0 10px; }
+.stat strong {
+  display:block;
+  font-size:22px;
+  color:var(--navy);
+  line-height:1;
+}
+.stat span {
+  display:block;
+  font-size:11px;
+  color:#4b5565;
+  font-weight:900;
+  letter-spacing:.5px;
+  margin-top:6px;
+}
+.modeStrip {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:12px 0 10px;
+}
 .modeStrip button {
-  min-height:44px;
+  min-height:46px;
   background:#fff;
   border:1px solid var(--line);
-  font-size:12px;
+  font-size:13px;
   box-shadow:0 3px 10px rgba(7,55,99,.08);
 }
 .modeStrip button.active {
@@ -156,8 +212,23 @@ button {
   border-color:rgba(53,168,82,.45);
   color:var(--green);
 }
-.panelTitle { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; font-weight:900; color:var(--navy); }
-.stateGrid { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; }
+.panelTitle {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+  font-weight:950;
+  color:var(--navy);
+  font-size:20px;
+}
+.panelTitle span:last-child {
+  font-size:16px;
+}
+.stateGrid {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+}
 .state {
   min-height:52px;
   border:2px solid #d8dde7;
@@ -179,8 +250,17 @@ button {
 }
 .state.rare:not(.collected) { border-color:#d8dde7; }
 body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
-.state.celebrate { animation:pop .55s; box-shadow:0 0 26px rgba(245,197,66,.95); }
-.value { position:absolute; bottom:5px; font-size:9px; font-weight:900; opacity:.8; }
+.state.celebrate {
+  animation:pop .55s;
+  box-shadow:0 0 26px rgba(245,197,66,.95);
+}
+.value {
+  position:absolute;
+  bottom:5px;
+  font-size:9px;
+  font-weight:900;
+  opacity:.8;
+}
 .row {
   display:flex;
   align-items:center;
@@ -191,8 +271,9 @@ body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
   padding:10px;
 }
 .grow { flex:1; }
-.title { font-weight:900;color:var(--navy); }
-.green { color:var(--green);font-weight:900; }
+.title { font-weight:950;color:var(--navy); }
+.green { color:var(--green);font-weight:950; }
+.blue { color:var(--blue);font-weight:950; }
 .recent { display:grid; gap:8px; }
 .usMap {
   background:#f8fbff;
@@ -201,144 +282,111 @@ body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
   padding:12px;
   overflow:hidden;
 }
-.mapCanvas {
-  position:relative;
-  width:100%;
-  height:245px;
-  background:linear-gradient(180deg,#eaf7ff,#f8fbff);
-  border-radius:18px;
-  border:1px solid var(--line);
-  overflow:hidden;
+.mapGrid {
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:5px;
 }
 .mapState {
-  position:absolute;
-  width:34px;
-  height:25px;
+  min-height:28px;
   border-radius:8px;
   border:1px solid #d8dde7;
   background:#fff;
   color:var(--muted);
   font-size:10px;
   font-weight:900;
+}
+.mapState.hit {
+  background:var(--green);
+  color:#fff;
+  border-color:var(--green);
+}
+.mapState.rare:not(.hit) {
+  border-color:#d8dde7;
+}
+body.show-rarity .mapState.rare:not(.hit) {
+  border-color:var(--gold);
+}
+.mapBlank {
+  opacity:0;
+}
+.mapLegend {
   display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 2px 0 rgba(7,55,99,.08);
-}
-.mapState.hit { background:var(--green); color:#fff; border-color:var(--green); }
-.mapState.rare:not(.hit) { border-color:#d8dde7; }
-body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
-.mapLegend { display:flex; gap:12px; margin-top:10px; font-size:12px; color:var(--muted); font-weight:800; }
-.legendBox { width:14px; height:14px; display:inline-block; border-radius:4px; border:1px solid #d8dde7; vertical-align:-2px; margin-right:4px; }
-.legendBox.collected { background:var(--green); border-color:var(--green); }
-.badge {
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:15px;
-  padding:10px;
-  opacity:.52;
-}
-.badge.unlocked { opacity:1; background:#fff7dc; border-color:rgba(245,197,66,.65); }
-.badgeIcon {
-  width:32px;
-  height:32px;
-  border-radius:999px;
-  background:#eaf3ff;
-  color:var(--blue);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-}
-.tripActions { display:grid; gap:10px; }
-.primary { background:var(--gold); color:var(--navy); padding:14px; }
-.secondary { background:#fff; border:1px solid var(--blue); color:var(--blue); padding:12px; }
-.bottomNav {
-  position:fixed;
-  left:0;
-  right:0;
-  bottom:0;
-  z-index:30;
-  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
-  background:rgba(255,255,255,.94);
-  border-top:1px solid var(--line);
-  backdrop-filter:blur(14px);
-}
-.navInner { max-width:430px; margin:0 auto; display:grid; grid-template-columns:repeat(5,1fr); gap:4px; }
-.navInner button {
-  height:56px;
-  border-radius:15px;
-  background:transparent;
+  gap:12px;
+  margin-top:10px;
+  font-size:12px;
   color:var(--muted);
-  font-size:10px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:3px;
+  font-weight:800;
 }
-.navInner .navIcon { font-size:16px; font-weight:950; line-height:1; }
-.navInner button.active { background:#eaf3ff; color:var(--blue); }
-.screen { display:block; }
-.screen.hidden { display:none; }
-.toast {
-  position:fixed;
-  top:14px;
-  left:50%;
-  transform:translateX(-50%) translateY(-110px);
-  z-index:50;
-  background:#fff;
-  border:2px solid var(--gold);
-  box-shadow:var(--shadow);
-  border-radius:999px;
-  padding:12px 16px;
-  font-weight:950;
-  color:var(--navy);
-  transition:.25s;
-  max-width:92vw;
-  text-align:center;
+.legendBox {
+  width:14px;
+  height:14px;
+  display:inline-block;
+  border-radius:4px;
+  border:1px solid #d8dde7;
+  vertical-align:-2px;
+  margin-right:4px;
 }
-.toast.show { transform:translateX(-50%) translateY(0); }
-@keyframes pop {
-  0% { transform:scale(1); }
-  40% { transform:scale(1.17); }
-  100% { transform:scale(1); }
+.legendBox.collected { background:var(--green); border-color:var(--green); }
+.legendBox.rare { background:var(--gold); border-color:var(--gold); }
+.badgeGrid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
 }
-
-#percent,
-.legacyPercent {
-  display:none !important;
-}
-
-.currentTripHeader {
+.badge {
+  min-height:122px;
   border:1px solid var(--line);
   background:#f8fbff;
   border-radius:18px;
-  padding:10px 12px;
-  margin-bottom:12px;
+  padding:12px;
   text-align:center;
+  opacity:.48;
 }
-.tripKicker {
-  display:block;
-  font-size:10px;
-  font-weight:900;
-  color:#4b5565;
-  letter-spacing:.7px;
-  text-transform:uppercase;
-  margin-bottom:2px;
+.badge.unlocked {
+  opacity:1;
+  background:#fff7dc;
+  border-color:rgba(245,197,66,.65);
 }
-.tripNameInline {
-  display:block;
-  font-size:18px;
-  line-height:1.15;
+.badgeIcon {
+  width:42px;
+  height:42px;
+  margin:0 auto 8px;
+  border-radius:999px;
+  background:#eaf3ff;
+  border:2px solid rgba(7,55,99,.12);
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+}
+.badgeName {
+  font-size:13px;
   font-weight:950;
   color:var(--navy);
 }
-
-
+.badgeDesc {
+  margin-top:3px;
+  font-size:11px;
+  font-weight:750;
+  color:var(--muted);
+}
+.tripActions {
+  display:grid;
+  gap:10px;
+}
+.primary {
+  background:var(--gold);
+  color:var(--navy);
+  padding:14px;
+}
+.secondary {
+  background:#fff;
+  border:1px solid var(--blue);
+  color:var(--blue);
+  padding:12px;
+}
 .tripHistoryList {
   display:grid;
   gap:8px;
@@ -354,142 +402,172 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
   color:var(--green);
   font-weight:950;
 }
-
-
-/* v32 centered license plate header */
-.logo {
-  position:relative;
-  max-width:320px;
-  margin:0 auto 16px;
-  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
-  border:4px solid var(--navy);
-  border-radius:18px;
-  padding:14px 20px 16px;
-  box-shadow:
-    0 5px 0 rgba(7,55,99,.18),
-    0 12px 22px rgba(7,55,99,.12);
-  overflow:hidden;
-}
-
-.logo:before,
-.logo:after {
-  content:"";
-  position:absolute;
-  top:12px;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#dbeafe;
-  border:2px solid rgba(7,55,99,.35);
-}
-
-.logo:before { left:12px; }
-.logo:after { right:12px; }
-
-.logo h1 {
-  margin:0;
-  font-size:34px;
-  letter-spacing:6px;
-  line-height:1;
-  color:var(--navy);
+.shareCard {
+  background:linear-gradient(180deg,#eaf7ff,#fff);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:18px;
   text-align:center;
 }
-
-.logo .tag {
-  margin-top:8px;
-  display:inline-block;
-  padding:4px 12px;
-  border-radius:999px;
-  background:#eaf3ff;
-  border:1px solid rgba(7,55,99,.12);
+.sharePlate {
+  max-width:270px;
+  margin:0 auto 14px;
+  border:4px solid var(--navy);
+  border-radius:18px;
+  background:#fff;
+  padding:14px 12px;
   color:var(--navy);
+  box-shadow:0 5px 0 rgba(7,55,99,.14);
+}
+.sharePlate h2 {
+  margin:0;
+  font-size:32px;
+  letter-spacing:6px;
+}
+.sharePlate div {
+  margin-top:8px;
   font-size:10px;
   font-weight:900;
-  letter-spacing:1px;
+  letter-spacing:1.5px;
 }
-
-.logoPlateAccent {
-  position:absolute;
-  left:24px;
-  right:24px;
-  bottom:10px;
-  display:flex;
-  justify-content:space-between;
-  pointer-events:none;
+.shareStats {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:12px 0;
 }
-
-.logoPlateAccent span {
-  width:42px;
-  height:3px;
+.shareStats div {
+  border:1px solid var(--line);
+  border-radius:15px;
+  background:#fff;
+  padding:9px 5px;
+}
+.shareStats strong {
+  display:block;
+  color:var(--navy);
+  font-size:21px;
+}
+.shareStats span {
+  font-size:10px;
+  font-weight:900;
+  color:var(--muted);
+}
+.celebrationOverlay {
+  position:fixed;
+  inset:0;
+  z-index:80;
+  background:rgba(7,55,99,.68);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.celebrationOverlay.show { display:flex; }
+.celebrationBox {
+  width:100%;
+  max-width:360px;
+  background:#fff;
+  border-radius:28px;
+  padding:24px 18px;
+  text-align:center;
+  box-shadow:0 18px 60px rgba(0,0,0,.25);
+}
+.celebrationBox h2 {
+  margin:0 0 8px;
+  color:var(--navy);
+  font-size:28px;
+}
+.celebrationBox p {
+  margin:0 0 16px;
+  color:var(--muted);
+  font-weight:800;
+}
+.toast {
+  position:fixed;
+  top:14px;
+  left:50%;
+  transform:translateX(-50%) translateY(-110px);
+  z-index:90;
+  background:#fff;
+  border:2px solid var(--gold);
+  box-shadow:var(--shadow);
   border-radius:999px;
-  background:var(--gold);
+  padding:12px 16px;
+  font-weight:950;
+  color:var(--navy);
+  transition:.25s;
+  max-width:92vw;
+  text-align:center;
 }
-
-
-/* v33 realistic license plate header */
-.logo {
-  position: relative;
-  max-width: 320px;
-  margin: 0 auto 18px;
-  background: linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
-  border: 4px solid var(--navy);
-  border-radius: 20px;
-  padding: 18px 20px;
-  box-shadow:
-    0 5px 0 rgba(7,55,99,.18),
-    0 12px 22px rgba(7,55,99,.12);
-  overflow: hidden;
+.toast.show { transform:translateX(-50%) translateY(0); }
+.bottomNav {
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:30;
+  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.94);
+  border-top:1px solid var(--line);
+  backdrop-filter:blur(14px);
 }
-
-.logo:before,
-.logo:after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #dbeafe;
-  border: 2px solid rgba(7,55,99,.35);
+.navInner {
+  max-width:430px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:4px;
 }
-
-.logo:before { left: 14px; }
-.logo:after  { right: 14px; }
-
-.logo h1 {
-  margin: 0;
-  text-align: center;
-  color: var(--navy);
-  font-size: 38px;
-  letter-spacing: 7px;
-  line-height: 1;
+.navInner button {
+  height:56px;
+  border-radius:15px;
+  background:transparent;
+  color:var(--muted);
+  font-size:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
 }
-
-.logo .tagline {
-  margin-top: 10px;
-  text-align: center;
-  color: var(--navy);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 2px;
+.navInner .navIcon {
+  font-size:16px;
+  font-weight:950;
+  line-height:1;
 }
-.logo .tag,
-.logoPlateAccent,
-.logoPlateLine,
-.edition { display:none !important; }
-
+.navInner button.active {
+  background:#eaf3ff;
+  color:var(--blue);
+}
+.screen { display:block; }
+.screen.hidden { display:none; }
+@keyframes pop {
+  0% { transform:scale(1); }
+  40% { transform:scale(1.17); }
+  100% { transform:scale(1); }
+}
 </style>
 </head>
 
 <body>
 <div class="toast" id="toast">Collected</div>
 
+<div class="celebrationOverlay" id="celebrationOverlay">
+  <div class="celebrationBox">
+    <h2 id="celebrationTitle">Nice Find</h2>
+    <p id="celebrationText">You added a new plate.</p>
+    <button class="primary" id="celebrationShare">View Share Card</button>
+    <br><br>
+    <button class="secondary" id="celebrationClose">Keep Playing</button>
+  </div>
+</div>
+
 <main class="app">
   <section class="top">
     <div class="logo">
-  <h1>PLATES</h1>
-  <div class="tagline">THE LICENSE PLATE GAME</div>
-</div>
+      <h1>PLATES</h1>
+      <div class="tagline">THE LICENSE PLATE GAME</div>
+    </div>
   </section>
 
   <section id="gameScreen" class="screen">
@@ -497,7 +575,8 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <div class="currentTripHeader" id="tripPillBtn">
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
-</div>
+      </div>
+
       <div class="bigProgress">
         <div class="primaryStat">
           <div class="bigNum"><span id="primaryNumber">0</span><span id="outOf" class="outOf">/50</span></div>
@@ -507,7 +586,9 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
           <div class="scoreMini"><strong id="secondaryNumber">50</strong><br><span id="secondaryLabel">states to go</span></div>
         </div>
       </div>
+
       <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
+
       <div class="quickStats">
         <div class="stat"><strong id="bestTrip">0</strong><span id="bestLabel">BEST</span></div>
         <div class="stat"><strong id="tripCount">1</strong><span id="tripLabel">TRIPS</span></div>
@@ -520,7 +601,8 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <button id="weightedBtn" data-mode="weighted">Weighted</button>
       <button id="unlimitedBtn" data-mode="unlimited">Unlimited</button>
     </div>
-<div class="card">
+
+    <div class="card">
       <div class="panelTitle"><span>Tap a state</span><span id="listCount">0/50</span></div>
       <div class="stateGrid" id="stateGrid">
 <button class="state" data-code="AL" data-name="Alabama" data-points="3">AL</button>
@@ -577,7 +659,7 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>Recent sightings</span></div>
+      <div class="panelTitle"><span>Recent sightings</span><button class="secondary" id="viewShareSmall">Share</button></div>
       <div class="recent" id="recent">No plates yet.</div>
     </div>
   </section>
@@ -586,74 +668,86 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
     <div class="card">
       <div class="panelTitle"><span>Collection Map</span><span id="mapCount">0/50</span></div>
       <div class="usMap">
-        <div class="mapCanvas" id="mapCanvas">
-<button class="mapState" data-map-code="WA" style="left:5.3%;top:11.7%;">WA</button>
-<button class="mapState" data-map-code="OR" style="left:4.4%;top:25.7%;">OR</button>
-<button class="mapState" data-map-code="CA" style="left:5.3%;top:42.9%;">CA</button>
-<button class="mapState" data-map-code="ID" style="left:14.1%;top:24.2%;">ID</button>
-<button class="mapState" data-map-code="NV" style="left:13.2%;top:39.8%;">NV</button>
-<button class="mapState" data-map-code="AZ" style="left:19.4%;top:56.2%;">AZ</button>
-<button class="mapState" data-map-code="MT" style="left:22.0%;top:13.3%;">MT</button>
-<button class="mapState" data-map-code="WY" style="left:25.5%;top:29.6%;">WY</button>
-<button class="mapState" data-map-code="UT" style="left:23.8%;top:44.5%;">UT</button>
-<button class="mapState" data-map-code="CO" style="left:33.4%;top:45.2%;">CO</button>
-<button class="mapState" data-map-code="NM" style="left:29.9%;top:60.8%;">NM</button>
-<button class="mapState" data-map-code="ND" style="left:37.8%;top:14.8%;">ND</button>
-<button class="mapState" data-map-code="SD" style="left:37.8%;top:29.6%;">SD</button>
-<button class="mapState" data-map-code="NE" style="left:41.4%;top:42.9%;">NE</button>
-<button class="mapState" data-map-code="KS" style="left:44.0%;top:54.6%;">KS</button>
-<button class="mapState" data-map-code="OK" style="left:46.6%;top:64.0%;">OK</button>
-<button class="mapState" data-map-code="TX" style="left:45.8%;top:76.4%;">TX</button>
-<button class="mapState" data-map-code="MN" style="left:48.4%;top:17.2%;">MN</button>
-<button class="mapState" data-map-code="IA" style="left:50.2%;top:34.3%;">IA</button>
-<button class="mapState" data-map-code="MO" style="left:52.8%;top:47.6%;">MO</button>
-<button class="mapState" data-map-code="AR" style="left:54.6%;top:60.8%;">AR</button>
-<button class="mapState" data-map-code="LA" style="left:57.2%;top:74.9%;">LA</button>
-<button class="mapState" data-map-code="WI" style="left:56.3%;top:21.8%;">WI</button>
-<button class="mapState" data-map-code="IL" style="left:58.1%;top:39.8%;">IL</button>
-<button class="mapState" data-map-code="MS" style="left:60.7%;top:67.1%;">MS</button>
-<button class="mapState" data-map-code="MI" style="left:65.1%;top:24.2%;">MI</button>
-<button class="mapState" data-map-code="IN" style="left:63.4%;top:39.0%;">IN</button>
-<button class="mapState" data-map-code="KY" style="left:65.1%;top:49.9%;">KY</button>
-<button class="mapState" data-map-code="TN" style="left:63.4%;top:59.3%;">TN</button>
-<button class="mapState" data-map-code="AL" style="left:66.0%;top:68.6%;">AL</button>
-<button class="mapState" data-map-code="OH" style="left:70.4%;top:39.0%;">OH</button>
-<button class="mapState" data-map-code="WV" style="left:72.2%;top:48.4%;">WV</button>
-<button class="mapState" data-map-code="VA" style="left:75.7%;top:52.3%;">VA</button>
-<button class="mapState" data-map-code="NC" style="left:77.4%;top:60.8%;">NC</button>
-<button class="mapState" data-map-code="SC" style="left:77.4%;top:70.2%;">SC</button>
-<button class="mapState" data-map-code="GA" style="left:71.3%;top:71.8%;">GA</button>
-<button class="mapState" data-map-code="FL" style="left:77.4%;top:84.2%;">FL</button>
-<button class="mapState" data-map-code="PA" style="left:76.6%;top:35.1%;">PA</button>
-<button class="mapState" data-map-code="NY" style="left:80.1%;top:24.2%;">NY</button>
-<button class="mapState" data-map-code="VT" style="left:84.5%;top:16.4%;">VT</button>
-<button class="mapState" data-map-code="NH" style="left:88.9%;top:17.9%;">NH</button>
-<button class="mapState" data-map-code="ME" style="left:90.0%;top:10.1%;">ME</button>
-<button class="mapState" data-map-code="MA" style="left:88.9%;top:25.7%;">MA</button>
-<button class="mapState" data-map-code="RI" style="left:90.0%;top:31.2%;">RI</button>
-<button class="mapState" data-map-code="CT" style="left:88.9%;top:33.5%;">CT</button>
-<button class="mapState" data-map-code="NJ" style="left:82.7%;top:39.8%;">NJ</button>
-<button class="mapState" data-map-code="DE" style="left:84.5%;top:46.0%;">DE</button>
-<button class="mapState" data-map-code="MD" style="left:80.1%;top:46.8%;">MD</button>
-<button class="mapState" data-map-code="AK" style="left:7.0%;top:83.5%;">AK</button>
-<button class="mapState" data-map-code="HI" style="left:21.1%;top:86.6%;">HI</button>
+        <div class="mapGrid" id="mapGrid">
+<div class="mapBlank"></div>
+<button class="mapState" data-map-code="WA">WA</button>
+<button class="mapState" data-map-code="MT">MT</button>
+<button class="mapState" data-map-code="ND">ND</button>
+<button class="mapState" data-map-code="MN">MN</button>
+<button class="mapState" data-map-code="WI">WI</button>
+<button class="mapState" data-map-code="MI">MI</button>
+<div class="mapBlank"></div>
+<button class="mapState" data-map-code="NY">NY</button>
+<button class="mapState" data-map-code="VT">VT</button>
+<button class="mapState" data-map-code="NH">NH</button>
+<button class="mapState" data-map-code="ME">ME</button>
+<button class="mapState" data-map-code="OR">OR</button>
+<button class="mapState" data-map-code="ID">ID</button>
+<button class="mapState" data-map-code="WY">WY</button>
+<button class="mapState" data-map-code="SD">SD</button>
+<button class="mapState" data-map-code="IA">IA</button>
+<button class="mapState" data-map-code="IL">IL</button>
+<button class="mapState" data-map-code="IN">IN</button>
+<button class="mapState" data-map-code="OH">OH</button>
+<button class="mapState" data-map-code="PA">PA</button>
+<button class="mapState" data-map-code="NJ">NJ</button>
+<button class="mapState" data-map-code="CT">CT</button>
+<button class="mapState" data-map-code="MA">MA</button>
+<button class="mapState" data-map-code="CA">CA</button>
+<button class="mapState" data-map-code="NV">NV</button>
+<button class="mapState" data-map-code="UT">UT</button>
+<button class="mapState" data-map-code="CO">CO</button>
+<button class="mapState" data-map-code="NE">NE</button>
+<button class="mapState" data-map-code="MO">MO</button>
+<button class="mapState" data-map-code="KY">KY</button>
+<button class="mapState" data-map-code="WV">WV</button>
+<button class="mapState" data-map-code="VA">VA</button>
+<button class="mapState" data-map-code="MD">MD</button>
+<button class="mapState" data-map-code="DE">DE</button>
+<button class="mapState" data-map-code="RI">RI</button>
+<div class="mapBlank"></div>
+<button class="mapState" data-map-code="AZ">AZ</button>
+<button class="mapState" data-map-code="NM">NM</button>
+<button class="mapState" data-map-code="KS">KS</button>
+<button class="mapState" data-map-code="OK">OK</button>
+<button class="mapState" data-map-code="AR">AR</button>
+<button class="mapState" data-map-code="TN">TN</button>
+<button class="mapState" data-map-code="NC">NC</button>
+<button class="mapState" data-map-code="SC">SC</button>
+<div class="mapBlank"></div>
+<div class="mapBlank"></div>
+<div class="mapBlank"></div>
+<button class="mapState" data-map-code="AK">AK</button>
+<div class="mapBlank"></div>
+<div class="mapBlank"></div>
+<button class="mapState" data-map-code="TX">TX</button>
+<button class="mapState" data-map-code="LA">LA</button>
+<button class="mapState" data-map-code="MS">MS</button>
+<button class="mapState" data-map-code="AL">AL</button>
+<button class="mapState" data-map-code="GA">GA</button>
+<button class="mapState" data-map-code="FL">FL</button>
+<div class="mapBlank"></div>
+<button class="mapState" data-map-code="HI">HI</button>
+<div class="mapBlank"></div>
         </div>
         <div class="mapLegend">
-          <span><span class="legendBox collected"></span>Collected</span>
+          <span><span class="legendBox collected"></span>Found</span>
+          <span><span class="legendBox rare"></span>Rare</span>
           <span><span class="legendBox"></span>Missing</span>
         </div>
       </div>
     </div>
+
     <div class="card">
-      <div class="panelTitle"><span>Rarest plates spotted</span></div>
-      <div class="recent" id="rareList">Rare plates will appear here.</div>
+      <div class="panelTitle"><span>State Details</span><span id="selectedStateCode">Tap map</span></div>
+      <div class="recent" id="stateDetails">Tap any state on the map to see its details.</div>
     </div>
   </section>
 
   <section id="badgesScreen" class="screen hidden">
     <div class="card">
       <div class="panelTitle"><span>Badges</span><span id="badgeCount">0 unlocked</span></div>
-      <div class="recent" id="badges">Collect your first state to unlock your first badge.</div>
+      <div class="badgeGrid" id="badges"></div>
     </div>
   </section>
 
@@ -679,7 +773,37 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
   <section id="familyScreen" class="screen hidden">
     <div class="card">
       <div class="panelTitle"><span>Family</span><span>coming soon</span></div>
-      <div class="recent" id="familyBoard"></div>
+      <div class="recent">
+        <div class="row"><div class="grow"><div class="title">Family Profiles</div><div class="sub">Coming soon: synced family profiles, shared trips, and leaderboards.</div></div></div>
+        <div class="row"><div class="grow"><div class="title">Share Trips</div><div class="sub">For now, use Trip History and Share Trip Summary.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shareScreen" class="screen hidden">
+    <div class="card">
+      <div class="panelTitle"><span>Share Card</span><span id="shareModeLabel">Classic</span></div>
+      <div class="shareCard" id="shareCard">
+        <div class="sharePlate">
+          <h2>PLATES</h2>
+          <div>THE LICENSE PLATE GAME</div>
+        </div>
+        <h2 id="shareTripName">Summer Road Trip</h2>
+        <p class="sub" id="shareDate">Today</p>
+        <div class="shareStats">
+          <div><strong id="shareStates">0/50</strong><span>STATES</span></div>
+          <div><strong id="shareScore">0</strong><span>SCORE</span></div>
+          <div><strong id="shareBadges">0</strong><span>BADGES</span></div>
+        </div>
+        <div class="row">
+          <div class="grow">
+            <div class="title">Top Find</div>
+            <div class="sub" id="shareTopFind">No plates yet</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <button class="primary" id="copyShareBtn">Copy Share Text</button>
     </div>
   </section>
 </main>
@@ -702,12 +826,10 @@ var log = JSON.parse(localStorage.platesLog || "[]");
 var tripName = localStorage.platesTripName || "Summer Road Trip";
 var tripCount = Number(localStorage.platesTripCount || 1);
 var savedTrips = JSON.parse(localStorage.platesSavedTrips || "[]");
-var playerNames = JSON.parse(localStorage.platesPlayerNames || '["Dad","Hailey","Benji"]');
-var activePlayer = localStorage.platesActivePlayer || playerNames[0] || "Dad";
-var players = JSON.parse(localStorage.platesPlayers || '{"Dad":0,"Hailey":0,"Benji":0}');
 var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBestTrip || 0);
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
+var selectedState = "";
 
 function save() {
   localStorage.platesMode = mode;
@@ -717,9 +839,6 @@ function save() {
   localStorage.platesTripName = tripName;
   localStorage.platesTripCount = tripCount;
   localStorage.platesSavedTrips = JSON.stringify(savedTrips);
-  localStorage.platesPlayerNames = JSON.stringify(playerNames);
-  localStorage.platesActivePlayer = activePlayer;
-  localStorage.platesPlayers = JSON.stringify(players);
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
@@ -745,6 +864,21 @@ function totalScore() {
   return total;
 }
 
+function updateBestForCurrentMode() {
+  var c = collectedCount();
+  var points = totalScore();
+  if(mode === "classic" && c > bestClassic) bestClassic = c;
+  if(mode === "weighted" && points > bestWeighted) bestWeighted = points;
+  if(mode === "unlimited" && points > bestUnlimited) bestUnlimited = points;
+}
+
+function bestForCurrentMode() {
+  if(mode === "classic") return bestClassic;
+  if(mode === "weighted") return bestWeighted;
+  if(mode === "unlimited") return bestUnlimited;
+  return bestClassic;
+}
+
 function toast(text) {
   var el = document.getElementById("toast");
   el.textContent = text;
@@ -753,74 +887,43 @@ function toast(text) {
   window.toastTimer = setTimeout(function(){ el.classList.remove("show"); }, 1300);
 }
 
-
-function currentTripSnapshot() {
-  return {
-    name: tripName,
-    mode: mode,
-    states: collectedCount(),
-    score: totalScore(),
-    sightings: totalSightings(),
-    date: new Date().toLocaleDateString()
-  };
+function showCelebration(title, text) {
+  document.getElementById("celebrationTitle").textContent = title;
+  document.getElementById("celebrationText").textContent = text;
+  document.getElementById("celebrationOverlay").classList.add("show");
 }
 
-function endCurrentTrip() {
-  if(collectedCount() === 0 && !confirm("Save this trip with 0 states?")) return;
-
-  savedTrips.unshift(currentTripSnapshot());
-  savedTrips = savedTrips.slice(0, 20);
-
-  updateBestForCurrentMode();
-  tripCount += 1;
-  counts = {};
-  log = [];
-  tripName = prompt("Name your next trip:", "New Road Trip") || "New Road Trip";
-
-  save();
-  render();
-  toast("Trip saved");
+function badgeCount(c) {
+  var total = 0;
+  if(c >= 1) total++;
+  if(c >= 10) total++;
+  if(c >= 25) total++;
+  if(c >= 50) total++;
+  if(hasStates(["AK","HI"])) total++;
+  if(hasStates(["CA","OR","WA"])) total++;
+  if(rareCollectedCount() >= 5) total++;
+  if(totalSightings() >= 100) total++;
+  return total;
 }
 
-function setActivePlayer(player) {
-  activePlayer = player;
-  if(!players[activePlayer]) players[activePlayer] = 0;
-  save();
-  render();
-  toast(player + " is spotting");
+function hasStates(list) {
+  return list.every(function(c){ return counts[c] > 0; });
 }
 
-function managePlayers() {
-  var current = playerNames.join(", ");
-  var input = prompt("Edit family players. Separate names with commas:", current);
-  if(input === null) return;
-
-  var names = input.split(",").map(function(n){ return n.trim(); }).filter(Boolean);
-  if(!names.length) {
-    alert("Add at least one player.");
-    return;
-  }
-
-  playerNames = names;
-  playerNames.forEach(function(name){
-    if(players[name] === undefined) players[name] = 0;
+function rareCollectedCount() {
+  var total = 0;
+  document.querySelectorAll(".state").forEach(function(btn){
+    if(counts[btn.dataset.code] && Number(btn.dataset.points) >= 8) total++;
   });
-
-  Object.keys(players).forEach(function(name){
-    if(playerNames.indexOf(name) === -1) delete players[name];
-  });
-
-  if(playerNames.indexOf(activePlayer) === -1) activePlayer = playerNames[0];
-
-  save();
-  render();
-  toast("Players updated");
+  return total;
 }
 
 function tapState(btn) {
   var code = btn.dataset.code;
   var name = btn.dataset.name;
   var points = Number(btn.dataset.points);
+  var wasCollected = !!counts[code];
+  var before = collectedCount();
 
   if(mode === "classic" || mode === "weighted") {
     counts[code] = counts[code] ? 0 : 1;
@@ -829,21 +932,30 @@ function tapState(btn) {
   }
 
   if(counts[code]) {
-    if(!players[activePlayer]) players[activePlayer] = 0;
-    players[activePlayer] = players[activePlayer] + 1;
-    log.unshift({ code:code, name:name, points:points, player:activePlayer });
-    log = log.slice(0, 20);
+    log.unshift({ code:code, name:name, points:points, mode:mode });
+    log = log.slice(0, 30);
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
-    toast("Collected " + name);
+
+    if(!wasCollected) {
+      toast("Collected " + name);
+      var after = collectedCount();
+      if(after === 1) showCelebration("First Plate", "You started your collection with " + name + ".");
+      else if(after === 10) showCelebration("10 States", "You found 10 states on this trip.");
+      else if(after === 25) showCelebration("Halfway There", "25 states collected.");
+      else if(after === 50) showCelebration("All 50 States", "You completed the game.");
+      else if(after > bestForCurrentMode()) showCelebration("New Best", "This is your best trip yet.");
+    }
   }
 
+  updateBestForCurrentMode();
   save();
   render();
 }
 
 function setMode(newMode) {
   mode = newMode;
+  updateBestForCurrentMode();
   save();
   render();
 }
@@ -865,6 +977,32 @@ function renameTrip() {
   }
 }
 
+function currentTripSnapshot() {
+  return {
+    name: tripName,
+    mode: mode,
+    states: collectedCount(),
+    score: totalScore(),
+    sightings: totalSightings(),
+    badges: badgeCount(collectedCount()),
+    date: new Date().toLocaleDateString()
+  };
+}
+
+function endCurrentTrip() {
+  if(collectedCount() === 0 && !confirm("Save this trip with 0 states?")) return;
+  savedTrips.unshift(currentTripSnapshot());
+  savedTrips = savedTrips.slice(0, 20);
+  updateBestForCurrentMode();
+  tripCount += 1;
+  counts = {};
+  log = [];
+  tripName = prompt("Name your next trip:", "New Road Trip") || "New Road Trip";
+  save();
+  render();
+  toast("Trip saved");
+}
+
 function newTrip() {
   if(confirm("Start a new trip? This resets collected states.")) {
     updateBestForCurrentMode();
@@ -878,39 +1016,57 @@ function newTrip() {
   }
 }
 
+function shareText() {
+  return "PLATES\n" + tripName + "\n" +
+    "States: " + collectedCount() + "/50\n" +
+    "Score: " + totalScore() + "\n" +
+    "Badges: " + badgeCount(collectedCount());
+}
+
 function shareSummary() {
-  var text = "PLATES\n" + tripName + "\nStates: " + collectedCount() + "/50\nScore: " + totalScore();
-  if(navigator.share) navigator.share({ text:text });
+  if(navigator.share) navigator.share({ text:shareText() });
   else {
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(shareText());
     alert("Summary copied");
   }
 }
 
-function badgeCount(c) {
-  var total = 0;
-  if(c >= 1) total++;
-  if(c >= 10) total++;
-  if(c >= 25) total++;
-  if(c >= 50) total++;
-  return total;
+function copyShareText() {
+  navigator.clipboard.writeText(shareText());
+  toast("Share text copied");
 }
 
-
-function updateBestForCurrentMode() {
-  var c = collectedCount();
-  var points = totalScore();
-
-  if(mode === "classic" && c > bestClassic) bestClassic = c;
-  if(mode === "weighted" && points > bestWeighted) bestWeighted = points;
-  if(mode === "unlimited" && points > bestUnlimited) bestUnlimited = points;
+function selectMapState(code) {
+  selectedState = code;
+  var btn = document.querySelector('.state[data-code="' + code + '"]');
+  if(!btn) return;
+  var name = btn.dataset.name;
+  var pts = btn.dataset.points;
+  var seen = counts[code] || 0;
+  document.getElementById("selectedStateCode").textContent = code;
+  document.getElementById("stateDetails").innerHTML =
+    '<div class="row"><div class="grow"><div class="title">' + name + '</div><div class="sub">Rarity value: ' + pts + '/10</div></div><div class="green">' + (seen ? "Found" : "Missing") + '</div></div>' +
+    '<div class="row"><div class="grow"><div class="title">Sightings</div><div class="sub">' + (seen || 0) + ' recorded on this trip</div></div></div>';
 }
 
-function bestForCurrentMode() {
-  if(mode === "classic") return bestClassic;
-  if(mode === "weighted") return bestWeighted;
-  if(mode === "unlimited") return bestUnlimited;
-  return bestClassic;
+function renderBadges(c) {
+  var badges = [
+    ["1","First Plate","Spot your first state",c>=1],
+    ["10","10 States","Find 10 states",c>=10],
+    ["25","Halfway There","Find 25 states",c>=25],
+    ["50","All 50 States","Complete the map",c>=50],
+    ["AK","Alaska + Hawaii","Find Alaska and Hawaii",hasStates(["AK","HI"])],
+    ["WC","West Coast","Find CA, OR and WA",hasStates(["CA","OR","WA"])],
+    ["R5","Rare Hunter","Find 5 rare states",rareCollectedCount()>=5],
+    ["100","Road Warrior","Log 100 sightings",totalSightings()>=100]
+  ];
+  document.getElementById("badges").innerHTML = badges.map(function(b){
+    return '<div class="badge ' + (b[3] ? "unlocked" : "") + '">' +
+      '<div class="badgeIcon">' + b[0] + '</div>' +
+      '<div class="badgeName">' + b[1] + '</div>' +
+      '<div class="badgeDesc">' + b[2] + '</div>' +
+      '</div>';
+  }).join("");
 }
 
 function render() {
@@ -985,11 +1141,7 @@ function render() {
 
   updateBestForCurrentMode();
 
-  var bestValue = bestForCurrentMode();
-  document.getElementById("bestTrip").textContent = bestValue;
-  document.getElementById("bestLabel").textContent = "BEST";
-  if(document.getElementById("tripLabel")) document.getElementById("tripLabel").textContent = "TRIPS";
-  if(document.getElementById("badgeLabel")) document.getElementById("badgeLabel").textContent = "BADGES";
+  document.getElementById("bestTrip").textContent = bestForCurrentMode();
   document.getElementById("tripCount").textContent = tripCount;
   document.getElementById("badgeMini").textContent = unlockedBadges;
   document.getElementById("listCount").textContent = c + "/50";
@@ -998,76 +1150,75 @@ function render() {
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
-  document.getElementById("historyCount").textContent = savedTrips.length + " saved";
-  document.getElementById("tripHistoryList").innerHTML = savedTrips.length ? savedTrips.map(function(t){
-    var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
-    return '<div class="row"><div class="grow"><div class="title">' + t.name + '</div><div class="tripMeta">' + t.date + ' Â· ' + t.mode + ' Â· ' + t.states + '/50 states</div></div><div class="tripScore">' + label + '</div></div>';
-  }).join("") : "No saved trips yet.";
   document.getElementById("tripModeSummary").textContent =
     mode === "classic" ? c + "/50 states collected in Classic mode" :
     mode === "weighted" ? points + " points in Weighted mode" :
     points + " points across " + sightings + " sightings in Unlimited mode";
+
+  document.getElementById("historyCount").textContent = savedTrips.length + " saved";
+  document.getElementById("tripHistoryList").innerHTML = savedTrips.length ? savedTrips.map(function(t){
+    var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
+    return '<div class="row"><div class="grow"><div class="title">' + t.name + '</div><div class="tripMeta">' + t.date + ' - ' + t.mode + ' - ' + t.states + '/50 states</div></div><div class="tripScore">' + label + '</div></div>';
+  }).join("") : "No saved trips yet.";
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
     return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">' + pts + '</div></div>';
   }).join("") : "No plates yet.";
 
-  var badgeHtml = "";
-  badgeHtml += '<div class="badge '+(c>=1?'unlocked':'')+'"><div class="badgeIcon">1</div><div class="grow"><div class="title">First Plate</div><div class="sub">Spot your first state.</div></div><div class="green">'+(c>=1?'YES':'')+'</div></div>';
-  badgeHtml += '<div class="badge '+(c>=10?'unlocked':'')+'"><div class="badgeIcon">10</div><div class="grow"><div class="title">Road Warrior</div><div class="sub">Collect 10 states.</div></div><div class="green">'+(c>=10?'YES':'')+'</div></div>';
-  badgeHtml += '<div class="badge '+(c>=25?'unlocked':'')+'"><div class="badgeIcon">25</div><div class="grow"><div class="title">Halfway There</div><div class="sub">Collect 25 states.</div></div><div class="green">'+(c>=25?'YES':'')+'</div></div>';
-  badgeHtml += '<div class="badge '+(c>=50?'unlocked':'')+'"><div class="badgeIcon">50</div><div class="grow"><div class="title">Fifty Club</div><div class="sub">Collect all 50 states.</div></div><div class="green">'+(c>=50?'YES':'')+'</div></div>';
-  document.getElementById("badges").innerHTML = badgeHtml;
+  renderBadges(c);
 
-  var familyRows = playerNames.map(function(name){
-    return { name:name, total:players[name] || 0 };
-  }).sort(function(a,b){ return b.total - a.total; });
+  var top = log.slice().sort(function(a,b){ return b.points - a.points; })[0];
+  document.getElementById("shareTripName").textContent = tripName;
+  document.getElementById("shareDate").textContent = new Date().toLocaleDateString();
+  document.getElementById("shareModeLabel").textContent = mode;
+  document.getElementById("shareStates").textContent = c + "/50";
+  document.getElementById("shareScore").textContent = points;
+  document.getElementById("shareBadges").textContent = unlockedBadges;
+  document.getElementById("shareTopFind").textContent = top ? top.name + " (" + top.code + ") - " + top.points + " pts" : "No plates yet";
 
-  document.getElementById("familyBoard").innerHTML = familyRows.map(function(p, i){
-    return '<div class="row"><div class="grow"><div class="title">' + (i+1) + '. ' + p.name + '</div><div class="sub">' + (p.name === activePlayer ? 'Currently spotting' : 'Family player') + '</div></div><div class="green">' + p.total + '</div></div>';
-  }).join("");
-
-  var rare = [];
-  document.querySelectorAll(".state").forEach(function(btn){
-    var code = btn.dataset.code;
-    if(counts[code]) rare.push({code:code,name:btn.dataset.name,points:Number(btn.dataset.points)});
-  });
-  rare.sort(function(a,b){ return b.points - a.points; });
-  document.getElementById("rareList").innerHTML = rare.length ? rare.slice(0,5).map(function(x){
-    return '<div class="row"><div class="grow"><div class="title">' + x.name + ' (' + x.code + ')</div><div class="sub">Rarity ' + x.points + '/10</div></div><div class="green">' + x.points + ' pts</div></div>';
-  }).join("") : "Rare plates will appear here.";
+  if(selectedState) selectMapState(selectedState);
 
   save();
 }
 
-document.querySelectorAll("[data-mode]").forEach(function(btn){ btn.addEventListener("click", function(){ setMode(btn.dataset.mode); }); });
-document.querySelectorAll("[data-view]").forEach(function(btn){ btn.addEventListener("click", function(){ setView(btn.dataset.view); }); });
-if(document.getElementById("tripPillBtn")) document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
-if(document.getElementById("endTripBtn")) document.getElementById("endTripBtn").addEventListener("click", endCurrentTrip);
-if(document.getElementById("renameTripBtn")) document.getElementById("renameTripBtn").addEventListener("click", renameTrip);
-if(document.getElementById("newTripBtn")) document.getElementById("newTripBtn").addEventListener("click", newTrip);
-if(document.getElementById("shareTripBtn")) document.getElementById("shareTripBtn").addEventListener("click", shareSummary);
-
-
-function attachStateHandlers() {
+function attachHandlers() {
   document.querySelectorAll(".state").forEach(function(btn){
-    btn.onclick = function(){
-      tapState(btn);
-    };
+    btn.onclick = function(){ tapState(btn); };
   });
 
   document.querySelectorAll("[data-map-code]").forEach(function(cell){
     cell.onclick = function(){
       var code = cell.dataset.mapCode;
+      selectMapState(code);
       var btn = document.querySelector('.state[data-code="' + code + '"]');
       if(btn) tapState(btn);
     };
   });
+
+  document.querySelectorAll("[data-mode]").forEach(function(btn){
+    btn.onclick = function(){ setMode(btn.dataset.mode); };
+  });
+
+  document.querySelectorAll("[data-view]").forEach(function(btn){
+    btn.onclick = function(){ setView(btn.dataset.view); };
+  });
+
+  document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
+  document.getElementById("endTripBtn").onclick = endCurrentTrip;
+  document.getElementById("renameTripBtn").onclick = renameTrip;
+  document.getElementById("newTripBtn").onclick = newTrip;
+  document.getElementById("shareTripBtn").onclick = shareSummary;
+  document.getElementById("copyShareBtn").onclick = copyShareText;
+  document.getElementById("viewShareSmall").onclick = function(){ setView("share"); };
+  document.getElementById("celebrationClose").onclick = function(){ document.getElementById("celebrationOverlay").classList.remove("show"); };
+  document.getElementById("celebrationShare").onclick = function(){
+    document.getElementById("celebrationOverlay").classList.remove("show");
+    setView("share");
+  };
 }
 
-attachStateHandlers();
-
+attachHandlers();
 render();
 </script>
 </body>
