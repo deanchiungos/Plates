@@ -709,8 +709,13 @@ function render() {
 
   updateBestForCurrentMode();
 
-  document.getElementById("bestTrip").textContent = bestForCurrentMode();
-  document.getElementById("bestLabel").textContent = mode === "classic" ? "BEST" : "BEST PTS";
+  var bestValue = bestForCurrentMode();
+  if(mode === "classic") {
+    document.getElementById("bestTrip").textContent = bestValue + " states";
+  } else {
+    document.getElementById("bestTrip").textContent = bestValue + " points";
+  }
+  document.getElementById("bestLabel").textContent = "BEST";
   document.getElementById("tripCount").textContent = tripCount;
   document.getElementById("badgeMini").textContent = unlockedBadges;
   document.getElementById("listCount").textContent = c + "/50";
