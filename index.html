@@ -689,68 +689,15 @@ html,body {
   display:none !important;
 }
 
-.logo .mapMark {
-  position:absolute;
-  left:18px;
-  top:34px;
-  width:45px;
-  height:24px;
-  background:linear-gradient(180deg,#1f7bd4,#0d5fae);
-  color:transparent;
-  opacity:.82;
-  clip-path:polygon(
-    4% 48%, 12% 28%, 25% 34%, 33% 18%, 45% 27%, 58% 16%,
-    70% 28%, 83% 25%, 96% 46%, 84% 57%, 73% 52%, 62% 70%,
-    48% 61%, 36% 76%, 24% 62%, 12% 68%
-  );
-  filter:drop-shadow(0 2px 1px rgba(6,47,95,.16));
-}
 
-.logo .mapMark:after {
-  content:"";
-  position:absolute;
-  left:38px;
-  top:18px;
-  width:5px;
-  height:4px;
-  border-radius:50%;
-  background:#1f7bd4;
-}
 
-.logo .carMark {
-  position:absolute;
-  right:22px;
-  top:35px;
-  width:42px;
-  height:22px;
-  color:transparent;
-}
 
-.logo .carMark:before {
-  content:"";
-  position:absolute;
-  left:5px;
-  top:8px;
-  width:31px;
-  height:12px;
-  border-radius:7px 7px 4px 4px;
-  background:linear-gradient(180deg,#0b4f91,#073763);
-  box-shadow:0 2px 0 rgba(6,47,95,.14);
-}
 
-.logo .carMark:after {
-  content:"";
-  position:absolute;
-  left:11px;
-  top:5px;
-  width:19px;
-  height:8px;
-  border-radius:8px 8px 2px 2px;
-  background:#1577d2;
-  box-shadow:
-    -4px 14px 0 -1px #073763,
-    18px 14px 0 -1px #073763;
-}
+
+
+
+
+
 
 .logo h1 {
   font-size:38px;
@@ -792,13 +739,8 @@ html,body {
     min-height:22px;
     font-size:7px;
   }
-  .logo .mapMark {
-    left:16px;
-    width:40px;
-  }
-  .logo .carMark {
-    right:18px;
-  }
+  
+  
   .logo h1 {
     font-size:35px;
     letter-spacing:5px;
@@ -824,9 +766,7 @@ html,body {
 <main class="app">
   <section class="top">
     <div class="logo">
-      <div class="mapMark">USA</div>
-      <div class="carMark">â°</div>
-      <h1>PLATES</h1>
+            <h1>PLATES</h1>
       <div class="tagline">THE LICENSE PLATE GAME</div>
     </div>
   </section>
@@ -1484,3 +1424,5 @@ render();
 </script>
 </body>
 </html>
+
+<!-- v37: removed fake USA map and car icons from header -->
