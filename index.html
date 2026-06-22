@@ -1,134 +1,458 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>PLATES</title>
 <style>
 :root{
-  --sky:#aee6ff;
-  --cream:#fffaf0;
-  --road:#073763;
+  --sky:#b7e9ff;
+  --cream:#fff8e6;
+  --navy:#073763;
   --blue:#1565c0;
   --green:#35a852;
   --yellow:#ffbd2e;
   --orange:#ff8a00;
-  --red:#ef4444;
   --text:#082b5f;
   --muted:#6b7280;
   --line:rgba(8,43,95,.14);
-  --shadow:0 10px 28px rgba(7,55,99,.14);
-  --bottom-nav:78px;
+  --shadow:0 8px 22px rgba(7,55,99,.14);
+  --bottom-nav:72px;
 }
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%;font-family:"Avenir Next","Trebuchet MS",system-ui,-apple-system,sans-serif;color:var(--text);background:linear-gradient(180deg,var(--sky),#e9f8ff 45%,#fff8e3)}
+html,body{
+  margin:0;
+  min-height:100%;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,var(--sky) 0%,#eaf9ff 48%,var(--cream) 100%);
+}
 body{padding-bottom:calc(var(--bottom-nav) + env(safe-area-inset-bottom))}
 button,input{font-family:inherit}
-button{border:0;border-radius:16px;font-weight:900;color:var(--text);background:#fff;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.app{max-width:430px;margin:0 auto;padding:12px 12px 0}
+button{
+  border:0;
+  border-radius:14px;
+  font-weight:800;
+  color:var(--text);
+  background:#fff;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+.app{
+  max-width:430px;
+  margin:0 auto;
+  padding:10px 12px 0;
+}
 .top{
-  position:sticky;top:0;z-index:10;
-  background:linear-gradient(180deg,var(--sky),rgba(174,230,255,.92));
-  padding:10px 0 8px;
+  position:sticky;
+  top:0;
+  z-index:20;
+  padding:8px 0 8px;
+  background:linear-gradient(180deg,var(--sky) 0%,rgba(183,233,255,.92) 100%);
   backdrop-filter:blur(10px);
 }
-.logoRow{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.logo{
-  background:#fff;border:4px solid var(--road);border-radius:18px;padding:8px 20px;
-  box-shadow:0 5px 0 rgba(7,55,99,.18);line-height:1;text-align:center;flex:1
+.logoRow{
+  display:grid;
+  grid-template-columns:44px 1fr 44px;
+  gap:8px;
+  align-items:center;
 }
-.logo h1{margin:0;font-size:34px;letter-spacing:5px;color:var(--road)}
-.logo .tag{font-size:10px;font-weight:1000;letter-spacing:1.4px;color:var(--road);margin-top:5px}
-.iconBtn{width:52px;height:52px;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:var(--shadow)}
+.logo{
+  background:#fff;
+  border:4px solid var(--navy);
+  border-radius:18px;
+  padding:7px 14px;
+  box-shadow:0 4px 0 rgba(7,55,99,.18);
+  text-align:center;
+}
+.logo h1{
+  margin:0;
+  font-size:31px;
+  letter-spacing:5px;
+  color:var(--navy);
+  line-height:.95;
+}
+.logo .tag{
+  margin-top:4px;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1.1px;
+  color:var(--navy);
+}
+.iconBtn{
+  width:44px;
+  height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  color:var(--navy);
+  box-shadow:var(--shadow);
+}
 .tripPill{
-  margin-top:10px;background:rgba(255,255,255,.75);border:1px solid var(--line);
-  border-radius:999px;padding:9px 12px;font-weight:900;display:flex;justify-content:space-between;align-items:center
+  margin-top:8px;
+  background:rgba(255,255,255,.78);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:9px 12px;
+  font-weight:850;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(7,55,99,.08);
 }
 .progressCard{
-  background:#fff;border:1px solid var(--line);border-radius:24px;padding:14px;margin:12px 0;box-shadow:var(--shadow)
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:13px;
+  margin:10px 0;
+  box-shadow:var(--shadow);
 }
-.bigProgress{display:flex;align-items:flex-end;justify-content:space-between}
-.bigNum{font-size:46px;font-weight:1000;letter-spacing:-2px;color:var(--road)}
-.bigNum span{font-size:22px;color:var(--muted);letter-spacing:0}
-.scoreMini{font-size:13px;font-weight:1000;color:var(--muted);text-align:right}
-.bar{height:18px;background:#e5eef7;border-radius:999px;overflow:hidden;margin-top:10px}
-.fill{height:100%;width:0%;background:linear-gradient(90deg,var(--green),#74d66e,var(--yellow));border-radius:999px;transition:width .25s ease}
-.quickStats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-.stat{background:#f8fbff;border:1px solid var(--line);border-radius:16px;padding:9px;text-align:center}
-.stat strong{display:block;font-size:21px;color:var(--road)}
-.stat span{font-size:10px;color:var(--muted);font-weight:900}
-.modeStrip{display:flex;gap:7px;margin-bottom:12px}
-.modeStrip button{flex:1;padding:10px 6px;background:#fff;border:1px solid var(--line);font-size:12px;box-shadow:0 4px 12px rgba(7,55,99,.08)}
-.modeStrip button.active{background:#eaf7ec;border-color:rgba(53,168,82,.45);color:var(--green)}
+.bigProgress{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+}
+.bigNum{
+  font-size:44px;
+  font-weight:950;
+  letter-spacing:-2px;
+  color:var(--navy);
+  line-height:.95;
+}
+.bigNum span:last-child{
+  font-size:22px;
+  color:var(--muted);
+}
+.sub{
+  color:var(--muted);
+  font-size:12px;
+  font-weight:750;
+}
+.scoreMini{
+  text-align:right;
+  font-size:13px;
+  color:var(--muted);
+  font-weight:850;
+}
+.scoreMini strong{color:var(--navy);font-size:18px}
+.bar{
+  height:16px;
+  background:#e5eef7;
+  border-radius:999px;
+  overflow:hidden;
+  margin-top:10px;
+}
+.fill{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,var(--green),#70d66d,var(--yellow));
+  transition:width .25s ease;
+}
+.quickStats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-top:10px;
+}
+.stat{
+  background:#f8fbff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:8px;
+  text-align:center;
+}
+.stat strong{
+  display:block;
+  font-size:20px;
+  color:var(--navy);
+}
+.stat span{
+  display:block;
+  font-size:10px;
+  color:var(--muted);
+  font-weight:850;
+}
+.modeStrip{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+  margin:8px 0 10px;
+}
+.modeStrip button{
+  min-height:44px;
+  background:#fff;
+  border:1px solid var(--line);
+  font-size:12px;
+  box-shadow:0 3px 10px rgba(7,55,99,.08);
+}
+.modeStrip button.active{
+  background:#eaf7ec;
+  border-color:rgba(53,168,82,.45);
+  color:var(--green);
+}
 .panel{
-  background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:24px;
-  padding:14px;margin:12px 0;box-shadow:var(--shadow)
+  background:rgba(255,255,255,.94);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:13px;
+  margin:10px 0;
+  box-shadow:var(--shadow);
 }
-.panelTitle{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-weight:1000;color:var(--road)}
-.stateGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.panelTitle{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+  font-weight:900;
+  color:var(--navy);
+}
+.stateGrid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+}
 .state{
-  min-height:55px;border:1px solid var(--line);background:#fff;border-radius:16px;
-  display:flex;align-items:center;justify-content:center;position:relative;
-  box-shadow:0 3px 0 rgba(7,55,99,.08);font-size:20px;font-weight:1000
+  min-height:52px;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  box-shadow:0 3px 0 rgba(7,55,99,.08);
+  font-size:19px;
+  font-weight:950;
 }
 .state:active{transform:scale(.96)}
-.state.collected{background:linear-gradient(135deg,var(--green),#65d46e);color:#fff;border-color:rgba(53,168,82,.7)}
-.state.rare{border-color:rgba(255,189,46,.85)}
-.state.celebrate{animation:pop .55s;box-shadow:0 0 26px rgba(255,189,46,.95)}
-.value{position:absolute;bottom:5px;font-size:9px;font-weight:1000;opacity:.8}
-.count{position:absolute;top:4px;right:5px;background:rgba(0,0,0,.18);color:#fff;border-radius:999px;font-size:10px;padding:2px 5px}
-.mapGrid{display:grid;grid-template-columns:repeat(12,1fr);gap:5px;overflow:auto}
-.mapCell{min-height:27px;border-radius:8px;background:#f0f5fb;border:1px solid var(--line);font-size:10px;font-weight:1000;color:var(--muted);display:flex;align-items:center;justify-content:center}
-.mapCell.hit{background:var(--green);color:#fff}.mapCell.blank{opacity:0;background:transparent;border:0}
-.recent{display:grid;gap:8px}.row{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px}
-.grow{flex:1}.title{font-weight:1000;color:var(--road)}.sub{font-size:12px;color:var(--muted);font-weight:800}.green{color:var(--green);font-weight:1000}.orange{color:var(--orange);font-weight:1000}.blue{color:var(--blue);font-weight:1000}
-.badges{display:grid;gap:8px}.badge{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:11px;opacity:.52}.badge.unlocked{opacity:1;background:#fff7dc;border-color:rgba(255,189,46,.65)}.badgeIcon{font-size:25px}
-.tripActions{display:grid;gap:10px}.primary{background:var(--yellow);color:var(--road);padding:14px}.secondary{background:#fff;border:1px solid var(--blue);color:var(--blue);padding:14px}
-.familyList{display:grid;gap:8px}.avatar{font-size:25px;width:32px;text-align:center}.rank{font-weight:1000;color:var(--muted);width:18px}
-.bottomNav{
-  position:fixed;left:0;right:0;bottom:0;z-index:30;
-  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
-  background:rgba(255,255,255,.92);border-top:1px solid var(--line);backdrop-filter:blur(14px)
+.state.collected{
+  background:linear-gradient(135deg,var(--green),#69d66f);
+  color:#fff;
+  border-color:rgba(53,168,82,.7);
 }
-.navInner{max-width:430px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
-.navInner button{height:58px;border-radius:16px;background:transparent;color:var(--muted);font-size:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
-.navInner button .navIcon{font-size:22px}
-.navInner button.active{background:#eaf3ff;color:var(--blue)}
+.state.rare{
+  border-color:rgba(255,189,46,.9);
+}
+.state.celebrate{
+  animation:pop .55s;
+  box-shadow:0 0 26px rgba(255,189,46,.95);
+}
+.value{
+  position:absolute;
+  bottom:5px;
+  font-size:9px;
+  font-weight:900;
+  opacity:.8;
+}
+.count{
+  position:absolute;
+  top:4px;
+  right:5px;
+  background:rgba(0,0,0,.18);
+  color:#fff;
+  border-radius:999px;
+  font-size:10px;
+  padding:2px 5px;
+}
+.row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:10px;
+}
+.grow{flex:1}
+.title{font-weight:900;color:var(--navy)}
+.green{color:var(--green);font-weight:900}
+.blue{color:var(--blue);font-weight:900}
+.orange{color:var(--orange);font-weight:900}
+.recent,.badges,.familyList{display:grid;gap:8px}
+.mapGrid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:5px;
+  overflow:auto;
+}
+.mapCell{
+  min-height:27px;
+  border-radius:8px;
+  background:#f0f5fb;
+  border:1px solid var(--line);
+  font-size:10px;
+  font-weight:900;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.mapCell.hit{
+  background:var(--green);
+  color:#fff;
+}
+.mapCell.blank{
+  opacity:0;
+  background:transparent;
+  border:0;
+}
+.badge{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:10px;
+  opacity:.52;
+}
+.badge.unlocked{
+  opacity:1;
+  background:#fff7dc;
+  border-color:rgba(255,189,46,.65);
+}
+.badgeIcon{
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  background:#eaf3ff;
+  color:var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+}
+.tripActions{
+  display:grid;
+  gap:10px;
+}
+.primary{
+  background:var(--yellow);
+  color:var(--navy);
+  padding:14px;
+}
+.secondary{
+  background:#fff;
+  border:1px solid var(--blue);
+  color:var(--blue);
+  padding:12px;
+}
+.rank{
+  width:20px;
+  font-weight:950;
+  color:var(--muted);
+}
+.avatar{
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  background:#eaf3ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+  color:var(--blue);
+}
+.bottomNav{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:30;
+  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.94);
+  border-top:1px solid var(--line);
+  backdrop-filter:blur(14px);
+}
+.navInner{
+  max-width:430px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:4px;
+}
+.navInner button{
+  height:56px;
+  border-radius:15px;
+  background:transparent;
+  color:var(--muted);
+  font-size:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+}
+.navInner .navIcon{
+  font-size:16px;
+  font-weight:950;
+  line-height:1;
+}
+.navInner button.active{
+  background:#eaf3ff;
+  color:var(--blue);
+}
 .toast{
-  position:fixed;top:14px;left:50%;transform:translateX(-50%) translateY(-110px);z-index:50;
-  background:#fff;border:2px solid var(--yellow);box-shadow:var(--shadow);border-radius:999px;padding:12px 16px;
-  font-weight:1000;color:var(--road);transition:.25s;max-width:92vw;text-align:center
+  position:fixed;
+  top:14px;
+  left:50%;
+  transform:translateX(-50%) translateY(-110px);
+  z-index:50;
+  background:#fff;
+  border:2px solid var(--yellow);
+  box-shadow:var(--shadow);
+  border-radius:999px;
+  padding:12px 16px;
+  font-weight:950;
+  color:var(--navy);
+  transition:.25s;
+  max-width:92vw;
+  text-align:center;
 }
 .toast.show{transform:translateX(-50%) translateY(0)}
 .hidden{display:none}
-.smallNote{font-size:12px;color:var(--muted);font-weight:800;line-height:1.35}
-@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.17) rotate(-1deg)}100%{transform:scale(1)}}
-@media(min-width:700px){
-  .app,.top,.navInner{max-width:430px}
-  body{background:linear-gradient(180deg,#dff6ff,#fff8e3)}
+.smallNote{
+  font-size:12px;
+  color:var(--muted);
+  font-weight:750;
+  line-height:1.35;
+}
+@keyframes pop{
+  0%{transform:scale(1)}
+  40%{transform:scale(1.17) rotate(-1deg)}
+  100%{transform:scale(1)}
 }
 </style>
 </head>
+
 <body>
-<div class="toast" id="toast">Collected ð</div>
+<div class="toast" id="toast">Collected</div>
 
 <main class="app">
   <section class="top">
     <div class="logoRow">
-      <button class="iconBtn" onclick="toggleSound()" id="soundTop">ð</button>
-      <div class="logo"><h1>PLATES</h1><div class="tag">THE LICENSE PLATE GAME</div></div>
-      <button class="iconBtn" onclick="shareSummary()">â</button>
+      <button class="iconBtn" onclick="toggleSound()" id="soundTop">SND</button>
+      <div class="logo">
+        <h1>PLATES</h1>
+        <div class="tag">THE LICENSE PLATE GAME</div>
+      </div>
+      <button class="iconBtn" onclick="shareSummary()">SHR</button>
     </div>
     <div class="tripPill" onclick="setView('trips')">
-      <span id="tripPill">ð Summer Road Trip</span><span>âº</span>
+      <span id="tripPill">Summer Road Trip</span><span>MORE</span>
     </div>
   </section>
 
   <section id="gameScreen">
     <div class="progressCard">
       <div class="bigProgress">
-        <div><div class="bigNum"><span id="collectedBig">0</span><span>/50</span></div><div class="sub">states collected</div></div>
-        <div class="scoreMini"><span id="score">0</span> pts<br><span id="percent">0%</span> complete</div>
+        <div>
+          <div class="bigNum"><span id="collectedBig">0</span><span>/50</span></div>
+          <div class="sub">states collected</div>
+        </div>
+        <div class="scoreMini"><strong id="score">0</strong> pts<br><span id="percent">0%</span> complete</div>
       </div>
       <div class="bar"><div class="fill" id="fill"></div></div>
       <div class="quickStats">
@@ -177,7 +501,7 @@ button{border:0;border-radius:16px;font-weight:900;color:var(--text);background:
   <section id="tripsScreen" class="hidden">
     <div class="panel">
       <div class="panelTitle"><span>Current Trip</span><span id="tripStats">0 states</span></div>
-      <div class="row"><div class="avatar">ð</div><div class="grow"><div class="title" id="tripName">Summer Road Trip</div><div class="sub">Progress saves on this device</div></div></div>
+      <div class="row"><div class="avatar">T</div><div class="grow"><div class="title" id="tripName">Summer Road Trip</div><div class="sub">Progress saves on this device</div></div></div>
       <br>
       <div class="tripActions">
         <button class="primary" onclick="renameTrip()">Rename Trip</button>
@@ -192,18 +516,18 @@ button{border:0;border-radius:16px;font-weight:900;color:var(--text);background:
       <div class="panelTitle"><span>Family Leaderboard</span><span>local demo</span></div>
       <div class="familyList" id="leaderboard"></div>
       <br>
-      <button class="primary" onclick="toast('Real family accounts coming later ð¨âð©âð§âð¦')">Invite Family</button>
+      <button class="primary" onclick="toast('Real family accounts coming later')">Invite Family</button>
     </div>
   </section>
 </main>
 
 <nav class="bottomNav">
   <div class="navInner">
-    <button id="gameNav" onclick="setView('game')"><span class="navIcon">ð®</span>Game</button>
-    <button id="mapNav" onclick="setView('map')"><span class="navIcon">ðºï¸</span>Map</button>
-    <button id="badgesNav" onclick="setView('badges')"><span class="navIcon">ð</span>Badges</button>
-    <button id="tripsNav" onclick="setView('trips')"><span class="navIcon">ð§³</span>Trips</button>
-    <button id="familyNav" onclick="setView('family')"><span class="navIcon">ð¨âð©âð§âð¦</span>Family</button>
+    <button id="gameNav" onclick="setView('game')"><span class="navIcon">G</span>Game</button>
+    <button id="mapNav" onclick="setView('map')"><span class="navIcon">M</span>Map</button>
+    <button id="badgesNav" onclick="setView('badges')"><span class="navIcon">B</span>Badges</button>
+    <button id="tripsNav" onclick="setView('trips')"><span class="navIcon">T</span>Trips</button>
+    <button id="familyNav" onclick="setView('family')"><span class="navIcon">F</span>Family</button>
   </div>
 </nav>
 
@@ -211,13 +535,13 @@ button{border:0;border-radius:16px;font-weight:900;color:var(--text);background:
 const states=[["AL","Alabama",3],["AK","Alaska",10],["AZ","Arizona",4],["AR","Arkansas",5],["CA","California",2],["CO","Colorado",4],["CT","Connecticut",2],["DE","Delaware",6],["FL","Florida",2],["GA","Georgia",3],["HI","Hawaii",10],["ID","Idaho",8],["IL","Illinois",2],["IN","Indiana",3],["IA","Iowa",5],["KS","Kansas",6],["KY","Kentucky",4],["LA","Louisiana",5],["ME","Maine",6],["MD","Maryland",2],["MA","Massachusetts",2],["MI","Michigan",3],["MN","Minnesota",4],["MS","Mississippi",6],["MO","Missouri",4],["MT","Montana",8],["NE","Nebraska",7],["NV","Nevada",5],["NH","New Hampshire",5],["NJ","New Jersey",1],["NM","New Mexico",7],["NY","New York",1],["NC","North Carolina",3],["ND","North Dakota",9],["OH","Ohio",3],["OK","Oklahoma",5],["OR","Oregon",6],["PA","Pennsylvania",2],["RI","Rhode Island",5],["SC","South Carolina",4],["SD","South Dakota",9],["TN","Tennessee",4],["TX","Texas",2],["UT","Utah",6],["VT","Vermont",7],["VA","Virginia",2],["WA","Washington",5],["WV","West Virginia",7],["WI","Wisconsin",5],["WY","Wyoming",9]];
 const mapRows=[["","WA","MT","ND","MN","WI","MI","","NY","VT","NH","ME"],["OR","ID","WY","SD","IA","IL","IN","OH","PA","NJ","CT","MA"],["CA","NV","UT","CO","NE","MO","KY","WV","VA","MD","DE","RI"],["","AZ","NM","KS","OK","AR","TN","NC","SC","","",""],["AK","","","TX","LA","MS","AL","GA","FL","","HI",""]];
 const achievements=[
-["first","ð","First Plate","Spot your first state.",c=>c>=1],
-["ten","ð","Road Warrior","Collect 10 states.",c=>c>=10],
-["twentyfive","ðºï¸","Halfway There","Collect 25 states.",c=>c>=25],
-["rare","ð´","Rare Find","Spot Hawaii, Alaska or Wyoming.",c=>["HI","AK","WY"].some(s=>counts[s]>0)],
-["coast","ð","Coast to Coast","Collect CA and NY.",c=>counts.CA>0&&counts.NY>0],
-["newengland","ð","New England Sweep","Collect CT, RI, MA, VT, NH and ME.",c=>["CT","RI","MA","VT","NH","ME"].every(s=>counts[s]>0)],
-["fifty","ð","Fifty Club","Collect all 50 states.",c=>c>=50]
+["first","1","First Plate","Spot your first state.",c=>c>=1],
+["ten","10","Road Warrior","Collect 10 states.",c=>c>=10],
+["twentyfive","25","Halfway There","Collect 25 states.",c=>c>=25],
+["rare","R","Rare Find","Spot Hawaii, Alaska or Wyoming.",c=>["HI","AK","WY"].some(s=>counts[s]>0)],
+["coast","C","Coast to Coast","Collect CA and NY.",c=>counts.CA>0&&counts.NY>0],
+["newengland","NE","New England Sweep","Collect CT, RI, MA, VT, NH and ME.",c=>["CT","RI","MA","VT","NH","ME"].every(s=>counts[s]>0)],
+["fifty","50","Fifty Club","Collect all 50 states.",c=>c>=50]
 ];
 
 let mode=localStorage.platesMode||"classic",
@@ -230,9 +554,14 @@ unlocked=JSON.parse(localStorage.platesUnlocked||"{}"),
 streak=Number(localStorage.platesStreak||0);
 
 function save(){
-  localStorage.platesMode=mode;localStorage.platesView=view;localStorage.platesCounts=JSON.stringify(counts);
-  localStorage.platesLog=JSON.stringify(log);localStorage.platesSound=JSON.stringify(sound);
-  localStorage.platesTripName=tripName;localStorage.platesUnlocked=JSON.stringify(unlocked);localStorage.platesStreak=streak;
+  localStorage.platesMode=mode;
+  localStorage.platesView=view;
+  localStorage.platesCounts=JSON.stringify(counts);
+  localStorage.platesLog=JSON.stringify(log);
+  localStorage.platesSound=JSON.stringify(sound);
+  localStorage.platesTripName=tripName;
+  localStorage.platesUnlocked=JSON.stringify(unlocked);
+  localStorage.platesStreak=streak;
 }
 function setMode(m){mode=m;save();render()}
 function setView(v){view=v;save();render();window.scrollTo({top:0,behavior:"smooth"})}
@@ -241,21 +570,39 @@ function collectedCount(){return states.filter(([s])=>counts[s]>0).length}
 function score(){return states.reduce((a,[s,n,v])=>a+(mode=="classic"?(counts[s]?1:0):mode=="weighted"?(counts[s]?v:0):(counts[s]||0)*v),0)}
 function rareCount(){return states.filter(([s,n,v])=>counts[s]>0&&v>=8).length}
 function toast(t){let x=document.getElementById("toast");x.textContent=t;x.classList.add("show");clearTimeout(window.tt);window.tt=setTimeout(()=>x.classList.remove("show"),1400)}
-function ding(){if(!sound)return;try{let C=window.AudioContext||window.webkitAudioContext,c=new C(),n=c.currentTime;[523,659,784].forEach((f,i)=>{let o=c.createOscillator(),g=c.createGain();o.frequency.value=f;g.gain.setValueAtTime(.001,n+i*.08);g.gain.linearRampToValueAtTime(.12,n+i*.08+.02);g.gain.exponentialRampToValueAtTime(.001,n+i*.08+.22);o.connect(g);g.connect(c.destination);o.start(n+i*.08);o.stop(n+i*.08+.25)})}catch(e){}}
+function ding(){
+  if(!sound)return;
+  try{
+    let C=window.AudioContext||window.webkitAudioContext,c=new C(),n=c.currentTime;
+    [523,659,784].forEach((f,i)=>{
+      let o=c.createOscillator(),g=c.createGain();
+      o.frequency.value=f;
+      g.gain.setValueAtTime(.001,n+i*.08);
+      g.gain.linearRampToValueAtTime(.12,n+i*.08+.02);
+      g.gain.exponentialRampToValueAtTime(.001,n+i*.08+.22);
+      o.connect(g);g.connect(c.destination);
+      o.start(n+i*.08);o.stop(n+i*.08+.25);
+    });
+  }catch(e){}
+}
 function checkAchievements(){
   let c=collectedCount();
   achievements.forEach(([id,icon,title,desc,test])=>{
-    if(!unlocked[id]&&test(c)){unlocked[id]=true;toast(`${icon} ${title} unlocked!`);ding();}
+    if(!unlocked[id]&&test(c)){
+      unlocked[id]=true;
+      toast(title+" unlocked");
+      ding();
+    }
   });
 }
 function tap(s,n,v){
   let had=counts[s]>0,msg;
   if(mode=="classic"||mode=="weighted"){
     counts[s]=had?0:1;
-    msg=counts[s]?(mode=="classic"?`${n}`:`${n} +${v} pts`):`Removed ${n}`;
+    msg=counts[s]?(mode=="classic"?n:n+" +"+v+" pts"):"Removed "+n;
   }else{
     counts[s]=(counts[s]||0)+1;
-    msg=`${n} +${v} pts`;
+    msg=n+" +"+v+" pts";
   }
   if(counts[s]){
     log.unshift({s,n,msg,t:"Just now",v});
@@ -268,16 +615,30 @@ function tap(s,n,v){
   save();
   render();
   if(counts[s]){
-    ding();toast(`Collected ${n} ð`);
-    let tile=document.querySelector(`[data-s="${s}"]`);
+    ding();
+    toast("Collected "+n);
+    let tile=document.querySelector('[data-s="'+s+'"]');
     if(tile){tile.classList.add("celebrate");setTimeout(()=>tile.classList.remove("celebrate"),650)}
   }
 }
-function resetGame(){if(confirm("Reset your PLATES game?")){counts={};log=[];unlocked={};streak=0;save();render();toast("Game reset")}}
-function renameTrip(){let n=prompt("Trip name:",tripName);if(n&&n.trim()){tripName=n.trim();save();render();toast("Trip renamed ð")}}
-function newTrip(){if(confirm("Start a new trip? This resets collected states.")){counts={};log=[];unlocked={};streak=0;tripName=prompt("Trip name:","New Road Trip")||"New Road Trip";save();render();toast("New trip started ð")}}
+function resetGame(){
+  if(confirm("Reset your PLATES game?")){
+    counts={};log=[];unlocked={};streak=0;save();render();toast("Game reset");
+  }
+}
+function renameTrip(){
+  let n=prompt("Trip name:",tripName);
+  if(n&&n.trim()){tripName=n.trim();save();render();toast("Trip renamed")}
+}
+function newTrip(){
+  if(confirm("Start a new trip? This resets collected states.")){
+    counts={};log=[];unlocked={};streak=0;
+    tripName=prompt("Trip name:","New Road Trip")||"New Road Trip";
+    save();render();toast("New trip started");
+  }
+}
 function shareSummary(){
-  let c=collectedCount(),t=`PLATES\n${tripName}\nScore: ${score()}\nStates: ${c}/50\n${c>=50?"Fifty Club ð":"Keep collecting ð"}`;
+  let c=collectedCount(),t="PLATES\n"+tripName+"\nScore: "+score()+"\nStates: "+c+"/50\nKeep collecting";
   navigator.share?navigator.share({text:t}):(navigator.clipboard.writeText(t),alert("Summary copied"));
 }
 function render(){
@@ -286,7 +647,7 @@ function render(){
     document.getElementById(v+"Nav").classList.toggle("active",view===v);
   });
   ["classic","weighted","unlimited"].forEach(m=>document.getElementById(m+"Btn").classList.toggle("active",mode===m));
-  let c=collectedCount(), pct=Math.round(c/50*100), badgeUnlocked=achievements.filter(([id])=>unlocked[id]).length;
+  let c=collectedCount(),pct=Math.round(c/50*100),badgeUnlocked=achievements.filter(([id])=>unlocked[id]).length;
   document.getElementById("collectedBig").textContent=c;
   document.getElementById("score").textContent=score();
   document.getElementById("percent").textContent=pct+"%";
@@ -299,16 +660,16 @@ function render(){
   document.getElementById("badgeCount").textContent=badgeUnlocked+" unlocked";
   document.getElementById("tripName").textContent=tripName;
   document.getElementById("tripStats").textContent=c+" states";
-  document.getElementById("tripPill").textContent="ð "+tripName;
-  document.getElementById("soundTop").textContent=sound?"ð":"ð";
-  document.getElementById("grid").innerHTML=states.map(([s,n,v])=>`<button data-s="${s}" onclick="tap('${s}','${n}',${v})" class="state ${counts[s]?'collected':''} ${v>=8?'rare':''}">${mode=="unlimited"&&counts[s]?`<div class="count">x${counts[s]}</div>`:""}<span>${s}</span>${mode=="classic"?"":`<span class="value">${v} pts</span>`}</button>`).join("");
-  document.getElementById("recent").innerHTML=log.length?log.slice(0,4).map(x=>`<div class="row"><div class="grow"><div class="title">${x.n}</div><div class="sub">${x.t}</div></div><div class="green">${x.v?`+${x.v}`:""}</div></div>`).join(""):"No plates yet.";
-  document.getElementById("map").innerHTML=mapRows.flat().map(s=>s?`<button data-s="${s}" class="mapCell ${counts[s]?'hit':''}" onclick="tap('${s}','${states.find(x=>x[0]==s)[1]}',${states.find(x=>x[0]==s)[2]})">${s}</button>`:`<div class="mapCell blank"></div>`).join("");
-  document.getElementById("badges").innerHTML=achievements.map(([id,icon,title,desc])=>`<div class="badge ${unlocked[id]?'unlocked':''}"><div class="badgeIcon">${icon}</div><div class="grow"><div class="title">${title}</div><div class="sub">${desc}</div></div><div class="${unlocked[id]?'green':'blue'}">${unlocked[id]?'â':''}</div></div>`).join("");
-  let fam=[["ð¨","Dad",c],["ð§","Hailey",Math.max(0,c-4)],["ð¦","Benji",Math.max(0,c-7)],["ð©","Mom",Math.max(0,c-10)]];
-  document.getElementById("leaderboard").innerHTML=fam.map((p,i)=>`<div class="row"><div class="rank">${i+1}</div><div class="avatar">${p[0]}</div><div class="grow title">${p[1]}</div><div class="${i==0?'green':i==1?'blue':'orange'}">${p[2]}</div></div>`).join("");
+  document.getElementById("tripPill").textContent=tripName;
+  document.getElementById("soundTop").textContent=sound?"SND":"OFF";
+  document.getElementById("grid").innerHTML=states.map(([s,n,v])=>'<button data-s="'+s+'" onclick="tap(\''+s+'\',\''+n+'\','+v+')" class="state '+(counts[s]?'collected ':'')+(v>=8?'rare':'')+'">'+(mode=="unlimited"&&counts[s]?'<div class="count">x'+counts[s]+'</div>':'')+'<span>'+s+'</span>'+(mode=="classic"?'':'<span class="value">'+v+' pts</span>')+'</button>').join("");
+  document.getElementById("recent").innerHTML=log.length?log.slice(0,4).map(x=>'<div class="row"><div class="grow"><div class="title">'+x.n+'</div><div class="sub">'+x.t+'</div></div><div class="green">'+(x.v?'+'+x.v:'')+'</div></div>').join(""):"No plates yet.";
+  document.getElementById("map").innerHTML=mapRows.flat().map(s=>s?'<button data-s="'+s+'" class="mapCell '+(counts[s]?'hit':'')+'" onclick="tap(\''+s+'\',\''+states.find(x=>x[0]==s)[1]+'\','+states.find(x=>x[0]==s)[2]+')">'+s+'</button>':'<div class="mapCell blank"></div>').join("");
+  document.getElementById("badges").innerHTML=achievements.map(([id,icon,title,desc])=>'<div class="badge '+(unlocked[id]?'unlocked':'')+'"><div class="badgeIcon">'+icon+'</div><div class="grow"><div class="title">'+title+'</div><div class="sub">'+desc+'</div></div><div class="'+(unlocked[id]?'green':'blue')+'">'+(unlocked[id]?'YES':'')+'</div></div>').join("");
+  let fam=[["D","Dad",c],["H","Hailey",Math.max(0,c-4)],["B","Benji",Math.max(0,c-7)],["M","Mom",Math.max(0,c-10)]];
+  document.getElementById("leaderboard").innerHTML=fam.map((p,i)=>'<div class="row"><div class="rank">'+(i+1)+'</div><div class="avatar">'+p[0]+'</div><div class="grow title">'+p[1]+'</div><div class="'+(i==0?'green':i==1?'blue':'orange')+'">'+p[2]+'</div></div>').join("");
   let rare=states.filter(([s])=>counts[s]>0).sort((a,b)=>b[2]-a[2]).slice(0,5);
-  document.getElementById("rareList").innerHTML=rare.length?rare.map(([s,n,v])=>`<div class="row"><div class="grow"><div class="title">${n} (${s})</div><div class="sub">${"â".repeat(Math.min(5,Math.ceil(v/2)))}${"â".repeat(5-Math.min(5,Math.ceil(v/2)))}</div></div><div class="green">${v} pts</div></div>`).join(""):"Rare plates will appear here.";
+  document.getElementById("rareList").innerHTML=rare.length?rare.map(([s,n,v])=>'<div class="row"><div class="grow"><div class="title">'+n+' ('+s+')</div><div class="sub">Rarity '+v+'/10</div></div><div class="green">'+v+' pts</div></div>').join(""):"Rare plates will appear here.";
 }
 render();
 </script>
