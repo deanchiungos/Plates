@@ -11,7 +11,6 @@
   --navy:#073763;
   --blue:#1565c0;
   --green:#35a852;
-  --lightgreen:#eaf7ec;
   --gold:#f5c542;
   --text:#082b5f;
   --muted:#667085;
@@ -36,14 +35,8 @@ button {
   background:#fff;
   -webkit-tap-highlight-color:transparent;
 }
-.app {
-  max-width:430px;
-  margin:0 auto;
-  padding:10px 12px 0;
-}
-.top {
-  padding:8px 0 6px;
-}
+.app { max-width:430px; margin:0 auto; padding:10px 12px 0; }
+.top { padding:8px 0 6px; }
 .logo {
   width:100%;
   background:#fff;
@@ -85,11 +78,7 @@ button {
   margin:10px 0;
   box-shadow:var(--shadow);
 }
-.bigProgress {
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-between;
-}
+.bigProgress { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; }
 .bigNum {
   font-size:44px;
   font-weight:950;
@@ -97,25 +86,15 @@ button {
   color:var(--navy);
   line-height:.95;
 }
-.bigNum span:last-child {
-  font-size:22px;
-  color:var(--muted);
-}
-.sub {
-  color:var(--muted);
-  font-size:12px;
-  font-weight:750;
-}
+.sub { color:var(--muted); font-size:12px; font-weight:750; }
 .scoreMini {
   text-align:right;
   font-size:13px;
   color:var(--muted);
   font-weight:850;
+  min-width:112px;
 }
-.scoreMini strong {
-  color:var(--navy);
-  font-size:18px;
-}
+.scoreMini strong { color:var(--navy); font-size:18px; }
 .bar {
   height:16px;
   background:#e5eef7;
@@ -129,12 +108,7 @@ button {
   background:linear-gradient(90deg,var(--green),#70d66d,var(--gold));
   transition:width .25s ease;
 }
-.quickStats {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:8px;
-  margin-top:10px;
-}
+.quickStats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px; }
 .stat {
   background:#f8fbff;
   border:1px solid var(--line);
@@ -142,23 +116,9 @@ button {
   padding:8px;
   text-align:center;
 }
-.stat strong {
-  display:block;
-  font-size:20px;
-  color:var(--navy);
-}
-.stat span {
-  display:block;
-  font-size:10px;
-  color:var(--muted);
-  font-weight:850;
-}
-.modeStrip {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:7px;
-  margin:8px 0 10px;
-}
+.stat strong { display:block; font-size:20px; color:var(--navy); }
+.stat span { display:block; font-size:10px; color:var(--muted); font-weight:850; }
+.modeStrip { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin:8px 0 10px; }
 .modeStrip button {
   min-height:44px;
   background:#fff;
@@ -167,23 +127,12 @@ button {
   box-shadow:0 3px 10px rgba(7,55,99,.08);
 }
 .modeStrip button.active {
-  background:var(--lightgreen);
+  background:#eaf7ec;
   border-color:rgba(53,168,82,.45);
   color:var(--green);
 }
-.panelTitle {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:10px;
-  font-weight:900;
-  color:var(--navy);
-}
-.stateGrid {
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:8px;
-}
+.panelTitle { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; font-weight:900; color:var(--navy); }
+.stateGrid { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; }
 .state {
   min-height:52px;
   border:2px solid #d8dde7;
@@ -203,23 +152,10 @@ button {
   color:#fff;
   border-color:var(--green);
 }
-.state.rare:not(.collected) {
-  border-color:#d8dde7;
-}
-body.show-rarity .state.rare:not(.collected) {
-  border-color:var(--gold);
-}
-.state.celebrate {
-  animation:pop .55s;
-  box-shadow:0 0 26px rgba(245,197,66,.95);
-}
-.value {
-  position:absolute;
-  bottom:5px;
-  font-size:9px;
-  font-weight:900;
-  opacity:.8;
-}
+.state.rare:not(.collected) { border-color:#d8dde7; }
+body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
+.state.celebrate { animation:pop .55s; box-shadow:0 0 26px rgba(245,197,66,.95); }
+.value { position:absolute; bottom:5px; font-size:9px; font-weight:900; opacity:.8; }
 .row {
   display:flex;
   align-items:center;
@@ -232,166 +168,7 @@ body.show-rarity .state.rare:not(.collected) {
 .grow { flex:1; }
 .title { font-weight:900;color:var(--navy); }
 .green { color:var(--green);font-weight:900; }
-.blue { color:var(--blue);font-weight:900; }
 .recent { display:grid; gap:8px; }
-.usMap {
-  background:#f8fbff;
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:12px;
-}
-.mapGrid {
-  display:grid;
-  grid-template-columns:repeat(12,1fr);
-  gap:5px;
-}
-.mapCell {
-  min-height:28px;
-  border-radius:8px;
-  background:#fff;
-  border:1px solid #d8dde7;
-  font-size:10px;
-  font-weight:900;
-  color:var(--muted);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.mapCell.hit {
-  background:var(--green);
-  color:#fff;
-  border-color:var(--green);
-}
-.mapCell.blank {
-  opacity:0;
-  background:transparent;
-  border:0;
-}
-.mapLegend {
-  display:flex;
-  gap:12px;
-  margin-top:10px;
-  font-size:12px;
-  color:var(--muted);
-  font-weight:800;
-}
-.legendBox {
-  width:14px;
-  height:14px;
-  display:inline-block;
-  border-radius:4px;
-  border:1px solid #d8dde7;
-  vertical-align:-2px;
-  margin-right:4px;
-}
-.legendBox.collected { background:var(--green); border-color:var(--green); }
-.badge {
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:15px;
-  padding:10px;
-  opacity:.52;
-}
-.badge.unlocked {
-  opacity:1;
-  background:#fff7dc;
-  border-color:rgba(245,197,66,.65);
-}
-.badgeIcon {
-  width:32px;
-  height:32px;
-  border-radius:999px;
-  background:#eaf3ff;
-  color:var(--blue);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-}
-.tripActions {
-  display:grid;
-  gap:10px;
-}
-.primary {
-  background:var(--gold);
-  color:var(--navy);
-  padding:14px;
-}
-.secondary {
-  background:#fff;
-  border:1px solid var(--blue);
-  color:var(--blue);
-  padding:12px;
-}
-.bottomNav {
-  position:fixed;
-  left:0;
-  right:0;
-  bottom:0;
-  z-index:30;
-  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
-  background:rgba(255,255,255,.94);
-  border-top:1px solid var(--line);
-  backdrop-filter:blur(14px);
-}
-.navInner {
-  max-width:430px;
-  margin:0 auto;
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:4px;
-}
-.navInner button {
-  height:56px;
-  border-radius:15px;
-  background:transparent;
-  color:var(--muted);
-  font-size:10px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:3px;
-}
-.navInner .navIcon {
-  font-size:16px;
-  font-weight:950;
-  line-height:1;
-}
-.navInner button.active {
-  background:#eaf3ff;
-  color:var(--blue);
-}
-.screen { display:block; }
-.screen.hidden { display:none; }
-.toast {
-  position:fixed;
-  top:14px;
-  left:50%;
-  transform:translateX(-50%) translateY(-110px);
-  z-index:50;
-  background:#fff;
-  border:2px solid var(--gold);
-  box-shadow:var(--shadow);
-  border-radius:999px;
-  padding:12px 16px;
-  font-weight:950;
-  color:var(--navy);
-  transition:.25s;
-  max-width:92vw;
-  text-align:center;
-}
-.toast.show { transform:translateX(-50%) translateY(0); }
-@keyframes pop {
-  0% { transform:scale(1); }
-  40% { transform:scale(1.17); }
-  100% { transform:scale(1); }
-}
-
-/* v15 real-map-style upgrade */
 .usMap {
   background:#f8fbff;
   border:1px solid var(--line);
@@ -423,50 +200,96 @@ body.show-rarity .state.rare:not(.collected) {
   justify-content:center;
   box-shadow:0 2px 0 rgba(7,55,99,.08);
 }
-.mapState.hit {
-  background:var(--green);
-  color:#fff;
-  border-color:var(--green);
-}
-.mapState.rare:not(.hit) {
-  border-color:#d8dde7;
-}
-body.show-rarity .mapState.rare:not(.hit) {
-  border-color:var(--gold);
-}
-.mapState:active {
-  transform:scale(.95);
-}
-.mapLegend {
+.mapState.hit { background:var(--green); color:#fff; border-color:var(--green); }
+.mapState.rare:not(.hit) { border-color:#d8dde7; }
+body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
+.mapLegend { display:flex; gap:12px; margin-top:10px; font-size:12px; color:var(--muted); font-weight:800; }
+.legendBox { width:14px; height:14px; display:inline-block; border-radius:4px; border:1px solid #d8dde7; vertical-align:-2px; margin-right:4px; }
+.legendBox.collected { background:var(--green); border-color:var(--green); }
+.badge {
   display:flex;
-  gap:12px;
-  margin-top:10px;
-  font-size:12px;
+  align-items:center;
+  gap:10px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:10px;
+  opacity:.52;
+}
+.badge.unlocked { opacity:1; background:#fff7dc; border-color:rgba(245,197,66,.65); }
+.badgeIcon {
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  background:#eaf3ff;
+  color:var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+}
+.tripActions { display:grid; gap:10px; }
+.primary { background:var(--gold); color:var(--navy); padding:14px; }
+.secondary { background:#fff; border:1px solid var(--blue); color:var(--blue); padding:12px; }
+.bottomNav {
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:30;
+  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.94);
+  border-top:1px solid var(--line);
+  backdrop-filter:blur(14px);
+}
+.navInner { max-width:430px; margin:0 auto; display:grid; grid-template-columns:repeat(5,1fr); gap:4px; }
+.navInner button {
+  height:56px;
+  border-radius:15px;
+  background:transparent;
   color:var(--muted);
-  font-weight:800;
+  font-size:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
 }
-.legendBox {
-  width:14px;
-  height:14px;
-  display:inline-block;
-  border-radius:4px;
-  border:1px solid #d8dde7;
-  vertical-align:-2px;
-  margin-right:4px;
+.navInner .navIcon { font-size:16px; font-weight:950; line-height:1; }
+.navInner button.active { background:#eaf3ff; color:var(--blue); }
+.screen { display:block; }
+.screen.hidden { display:none; }
+.toast {
+  position:fixed;
+  top:14px;
+  left:50%;
+  transform:translateX(-50%) translateY(-110px);
+  z-index:50;
+  background:#fff;
+  border:2px solid var(--gold);
+  box-shadow:var(--shadow);
+  border-radius:999px;
+  padding:12px 16px;
+  font-weight:950;
+  color:var(--navy);
+  transition:.25s;
+  max-width:92vw;
+  text-align:center;
 }
-.legendBox.collected {
-  background:var(--green);
-  border-color:var(--green);
+.toast.show { transform:translateX(-50%) translateY(0); }
+@keyframes pop {
+  0% { transform:scale(1); }
+  40% { transform:scale(1.17); }
+  100% { transform:scale(1); }
 }
 
-
-#outOf {
-  font-size:22px;
-  color:var(--muted);
-  letter-spacing:0;
+#percent,
+.legacyPercent {
+  display:none !important;
 }
 </style>
 </head>
+
 <body>
 <div class="toast" id="toast">Collected</div>
 
@@ -485,12 +308,12 @@ body.show-rarity .mapState.rare:not(.hit) {
     <div class="card">
       <div class="bigProgress">
         <div>
-          <div class="bigNum"><span id="collectedBig">0</span><span id="outOf">/50</span></div>
-          <div class="sub">states collected</div>
+          <div class="bigNum" id="primaryNumber">0/50</div>
+          <div class="sub" id="primaryLabel">states collected</div>
         </div>
-        <div class="scoreMini"><strong id="score">0</strong> <span id="scoreLabel">pts</span><br><span id="percent">0%</span> complete</div>
+        <div class="scoreMini"><strong id="secondaryNumber">50</strong><br><span id="secondaryLabel">states to go</span></div>
       </div>
-      <div class="bar"><div class="fill" id="fill"></div></div>
+      <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
       <div class="quickStats">
         <div class="stat"><strong id="bestTrip">0</strong><span>BEST</span></div>
         <div class="stat"><strong id="tripCount">1</strong><span>TRIPS</span></div>
@@ -571,56 +394,56 @@ body.show-rarity .mapState.rare:not(.hit) {
       <div class="panelTitle"><span>Collection Map</span><span id="mapCount">0/50</span></div>
       <div class="usMap">
         <div class="mapCanvas" id="mapCanvas">
-          <button class="mapState" data-map-code="WA" style="left:6.2%;top:11.7%;">WA</button>
-          <button class="mapState" data-map-code="OR" style="left:4.4%;top:26.5%;">OR</button>
-          <button class="mapState" data-map-code="CA" style="left:5.3%;top:42.9%;">CA</button>
-          <button class="mapState" data-map-code="ID" style="left:14.1%;top:24.2%;">ID</button>
-          <button class="mapState" data-map-code="NV" style="left:13.2%;top:39.8%;">NV</button>
-          <button class="mapState" data-map-code="AZ" style="left:19.4%;top:56.2%;">AZ</button>
-          <button class="mapState" data-map-code="MT" style="left:22.0%;top:13.3%;">MT</button>
-          <button class="mapState" data-map-code="WY" style="left:25.5%;top:29.6%;">WY</button>
-          <button class="mapState" data-map-code="UT" style="left:23.8%;top:44.5%;">UT</button>
-          <button class="mapState" data-map-code="CO" style="left:33.4%;top:45.2%;">CO</button>
-          <button class="mapState" data-map-code="NM" style="left:29.9%;top:60.8%;">NM</button>
-          <button class="mapState" data-map-code="ND" style="left:37.8%;top:14.8%;">ND</button>
-          <button class="mapState" data-map-code="SD" style="left:37.8%;top:29.6%;">SD</button>
-          <button class="mapState" data-map-code="NE" style="left:41.4%;top:42.9%;">NE</button>
-          <button class="mapState" data-map-code="KS" style="left:44.0%;top:54.6%;">KS</button>
-          <button class="mapState" data-map-code="OK" style="left:46.6%;top:64.0%;">OK</button>
-          <button class="mapState" data-map-code="TX" style="left:45.8%;top:76.4%;">TX</button>
-          <button class="mapState" data-map-code="MN" style="left:48.4%;top:17.2%;">MN</button>
-          <button class="mapState" data-map-code="IA" style="left:50.2%;top:34.3%;">IA</button>
-          <button class="mapState" data-map-code="MO" style="left:52.8%;top:47.6%;">MO</button>
-          <button class="mapState" data-map-code="AR" style="left:54.6%;top:60.8%;">AR</button>
-          <button class="mapState" data-map-code="LA" style="left:57.2%;top:74.9%;">LA</button>
-          <button class="mapState" data-map-code="WI" style="left:56.3%;top:21.8%;">WI</button>
-          <button class="mapState" data-map-code="IL" style="left:58.1%;top:39.8%;">IL</button>
-          <button class="mapState" data-map-code="MS" style="left:60.7%;top:67.1%;">MS</button>
-          <button class="mapState" data-map-code="MI" style="left:65.1%;top:24.2%;">MI</button>
-          <button class="mapState" data-map-code="IN" style="left:63.4%;top:39.0%;">IN</button>
-          <button class="mapState" data-map-code="KY" style="left:65.1%;top:49.9%;">KY</button>
-          <button class="mapState" data-map-code="TN" style="left:63.4%;top:59.3%;">TN</button>
-          <button class="mapState" data-map-code="AL" style="left:66.0%;top:68.6%;">AL</button>
-          <button class="mapState" data-map-code="OH" style="left:70.4%;top:39.0%;">OH</button>
-          <button class="mapState" data-map-code="WV" style="left:72.2%;top:48.4%;">WV</button>
-          <button class="mapState" data-map-code="VA" style="left:75.7%;top:52.3%;">VA</button>
-          <button class="mapState" data-map-code="NC" style="left:77.4%;top:60.8%;">NC</button>
-          <button class="mapState" data-map-code="SC" style="left:77.4%;top:70.2%;">SC</button>
-          <button class="mapState" data-map-code="GA" style="left:71.3%;top:71.8%;">GA</button>
-          <button class="mapState" data-map-code="FL" style="left:77.4%;top:84.2%;">FL</button>
-          <button class="mapState" data-map-code="PA" style="left:76.6%;top:35.1%;">PA</button>
-          <button class="mapState" data-map-code="NY" style="left:80.1%;top:24.2%;">NY</button>
-          <button class="mapState" data-map-code="VT" style="left:84.5%;top:16.4%;">VT</button>
-          <button class="mapState" data-map-code="NH" style="left:88.9%;top:17.9%;">NH</button>
-          <button class="mapState" data-map-code="ME" style="left:90.0%;top:10.1%;">ME</button>
-          <button class="mapState" data-map-code="MA" style="left:88.9%;top:25.7%;">MA</button>
-          <button class="mapState" data-map-code="RI" style="left:90.0%;top:31.2%;">RI</button>
-          <button class="mapState" data-map-code="CT" style="left:88.9%;top:33.5%;">CT</button>
-          <button class="mapState" data-map-code="NJ" style="left:82.7%;top:39.8%;">NJ</button>
-          <button class="mapState" data-map-code="DE" style="left:84.5%;top:46.0%;">DE</button>
-          <button class="mapState" data-map-code="MD" style="left:80.1%;top:46.8%;">MD</button>
-          <button class="mapState" data-map-code="AK" style="left:7.0%;top:83.5%;">AK</button>
-          <button class="mapState" data-map-code="HI" style="left:21.1%;top:86.6%;">HI</button>
+<button class="mapState" data-map-code="WA" style="left:5.3%;top:11.7%;">WA</button>
+<button class="mapState" data-map-code="OR" style="left:4.4%;top:25.7%;">OR</button>
+<button class="mapState" data-map-code="CA" style="left:5.3%;top:42.9%;">CA</button>
+<button class="mapState" data-map-code="ID" style="left:14.1%;top:24.2%;">ID</button>
+<button class="mapState" data-map-code="NV" style="left:13.2%;top:39.8%;">NV</button>
+<button class="mapState" data-map-code="AZ" style="left:19.4%;top:56.2%;">AZ</button>
+<button class="mapState" data-map-code="MT" style="left:22.0%;top:13.3%;">MT</button>
+<button class="mapState" data-map-code="WY" style="left:25.5%;top:29.6%;">WY</button>
+<button class="mapState" data-map-code="UT" style="left:23.8%;top:44.5%;">UT</button>
+<button class="mapState" data-map-code="CO" style="left:33.4%;top:45.2%;">CO</button>
+<button class="mapState" data-map-code="NM" style="left:29.9%;top:60.8%;">NM</button>
+<button class="mapState" data-map-code="ND" style="left:37.8%;top:14.8%;">ND</button>
+<button class="mapState" data-map-code="SD" style="left:37.8%;top:29.6%;">SD</button>
+<button class="mapState" data-map-code="NE" style="left:41.4%;top:42.9%;">NE</button>
+<button class="mapState" data-map-code="KS" style="left:44.0%;top:54.6%;">KS</button>
+<button class="mapState" data-map-code="OK" style="left:46.6%;top:64.0%;">OK</button>
+<button class="mapState" data-map-code="TX" style="left:45.8%;top:76.4%;">TX</button>
+<button class="mapState" data-map-code="MN" style="left:48.4%;top:17.2%;">MN</button>
+<button class="mapState" data-map-code="IA" style="left:50.2%;top:34.3%;">IA</button>
+<button class="mapState" data-map-code="MO" style="left:52.8%;top:47.6%;">MO</button>
+<button class="mapState" data-map-code="AR" style="left:54.6%;top:60.8%;">AR</button>
+<button class="mapState" data-map-code="LA" style="left:57.2%;top:74.9%;">LA</button>
+<button class="mapState" data-map-code="WI" style="left:56.3%;top:21.8%;">WI</button>
+<button class="mapState" data-map-code="IL" style="left:58.1%;top:39.8%;">IL</button>
+<button class="mapState" data-map-code="MS" style="left:60.7%;top:67.1%;">MS</button>
+<button class="mapState" data-map-code="MI" style="left:65.1%;top:24.2%;">MI</button>
+<button class="mapState" data-map-code="IN" style="left:63.4%;top:39.0%;">IN</button>
+<button class="mapState" data-map-code="KY" style="left:65.1%;top:49.9%;">KY</button>
+<button class="mapState" data-map-code="TN" style="left:63.4%;top:59.3%;">TN</button>
+<button class="mapState" data-map-code="AL" style="left:66.0%;top:68.6%;">AL</button>
+<button class="mapState" data-map-code="OH" style="left:70.4%;top:39.0%;">OH</button>
+<button class="mapState" data-map-code="WV" style="left:72.2%;top:48.4%;">WV</button>
+<button class="mapState" data-map-code="VA" style="left:75.7%;top:52.3%;">VA</button>
+<button class="mapState" data-map-code="NC" style="left:77.4%;top:60.8%;">NC</button>
+<button class="mapState" data-map-code="SC" style="left:77.4%;top:70.2%;">SC</button>
+<button class="mapState" data-map-code="GA" style="left:71.3%;top:71.8%;">GA</button>
+<button class="mapState" data-map-code="FL" style="left:77.4%;top:84.2%;">FL</button>
+<button class="mapState" data-map-code="PA" style="left:76.6%;top:35.1%;">PA</button>
+<button class="mapState" data-map-code="NY" style="left:80.1%;top:24.2%;">NY</button>
+<button class="mapState" data-map-code="VT" style="left:84.5%;top:16.4%;">VT</button>
+<button class="mapState" data-map-code="NH" style="left:88.9%;top:17.9%;">NH</button>
+<button class="mapState" data-map-code="ME" style="left:90.0%;top:10.1%;">ME</button>
+<button class="mapState" data-map-code="MA" style="left:88.9%;top:25.7%;">MA</button>
+<button class="mapState" data-map-code="RI" style="left:90.0%;top:31.2%;">RI</button>
+<button class="mapState" data-map-code="CT" style="left:88.9%;top:33.5%;">CT</button>
+<button class="mapState" data-map-code="NJ" style="left:82.7%;top:39.8%;">NJ</button>
+<button class="mapState" data-map-code="DE" style="left:84.5%;top:46.0%;">DE</button>
+<button class="mapState" data-map-code="MD" style="left:80.1%;top:46.8%;">MD</button>
+<button class="mapState" data-map-code="AK" style="left:7.0%;top:83.5%;">AK</button>
+<button class="mapState" data-map-code="HI" style="left:21.1%;top:86.6%;">HI</button>
         </div>
         <div class="mapLegend">
           <span><span class="legendBox collected"></span>Collected</span>
@@ -695,6 +518,10 @@ function collectedCount() {
   return Object.keys(counts).filter(function(k){ return counts[k] > 0; }).length;
 }
 
+function totalSightings() {
+  return Object.values(counts).reduce(function(sum,n){ return sum + n; }, 0);
+}
+
 function totalScore() {
   var total = 0;
   document.querySelectorAll(".state").forEach(function(btn){
@@ -703,14 +530,6 @@ function totalScore() {
     if(mode === "classic") total += counts[c] ? 1 : 0;
     if(mode === "weighted") total += counts[c] ? p : 0;
     if(mode === "unlimited") total += (counts[c] || 0) * p;
-  });
-  return total;
-}
-
-function rareCount() {
-  var total = 0;
-  document.querySelectorAll(".state").forEach(function(btn){
-    if(counts[btn.dataset.code] && Number(btn.dataset.points) >= 8) total++;
   });
   return total;
 }
@@ -791,14 +610,30 @@ function shareSummary() {
   }
 }
 
+function badgeCount(c) {
+  var total = 0;
+  if(c >= 1) total++;
+  if(c >= 10) total++;
+  if(c >= 25) total++;
+  if(c >= 50) total++;
+  return total;
+}
+
 function render() {
+  var c = collectedCount();
+  var pct = Math.round(c / 50 * 100);
+  var points = totalScore();
+  var sightings = totalSightings();
+  var left = Math.max(0, 50 - c);
+  var unlockedBadges = badgeCount(c);
+
+  document.body.classList.toggle("show-rarity", mode !== "classic");
+
   document.querySelectorAll(".screen").forEach(function(s){ s.classList.add("hidden"); });
   document.getElementById(view + "Screen").classList.remove("hidden");
 
   document.querySelectorAll(".navInner button").forEach(function(b){ b.classList.remove("active"); });
   document.getElementById(view + "Nav").classList.add("active");
-
-  document.body.classList.toggle("show-rarity", mode !== "classic");
 
   ["classic","weighted","unlimited"].forEach(function(m){
     document.getElementById(m + "Btn").classList.toggle("active", mode === m);
@@ -821,53 +656,38 @@ function render() {
   document.querySelectorAll("[data-map-code]").forEach(function(cell){
     var code = cell.dataset.mapCode;
     var stateButton = document.querySelector('.state[data-code="' + code + '"]');
-    var points = stateButton ? Number(stateButton.dataset.points) : 0;
+    var pts = stateButton ? Number(stateButton.dataset.points) : 0;
     cell.classList.toggle("hit", counts[code] > 0);
-    cell.classList.toggle("rare", points >= 8);
+    cell.classList.toggle("rare", pts >= 8);
   });
 
-  var c = collectedCount();
-  var pct = Math.round(c / 50 * 100);
-  var totalSightings = Object.values(counts).reduce(function(sum, n){
-    return sum + n;
-  }, 0);
-  var unlockedBadges = 0;
-  if(c >= 1) unlockedBadges++;
-  if(c >= 10) unlockedBadges++;
-  if(c >= 25) unlockedBadges++;
-  if(c >= 50) unlockedBadges++;
-
-  if (mode === "classic") {
-    document.getElementById("collectedBig").textContent = c;
-    document.getElementById("outOf").style.display = "inline";
-    document.querySelector(".bigProgress .sub").textContent = "states collected";
-    document.getElementById("score").textContent = Math.max(0, 50 - c);
-    document.getElementById("scoreLabel").textContent = "states to go";
-    document.querySelector(".bar").style.display = "block";
+  if(mode === "classic") {
+    document.getElementById("primaryNumber").textContent = c + "/50";
+    document.getElementById("primaryLabel").textContent = "states collected";
+    document.getElementById("secondaryNumber").textContent = left;
+    document.getElementById("secondaryLabel").textContent = "states to go";
+    document.getElementById("progressBar").style.display = "block";
     document.getElementById("fill").style.width = pct + "%";
-    document.getElementById("percent").textContent = Math.max(0, 50 - c) + " states to go";
   }
 
-  if (mode === "weighted") {
-    document.getElementById("collectedBig").textContent = totalScore();
-    document.getElementById("outOf").style.display = "none";
-    document.querySelector(".bigProgress .sub").textContent = "points";
-    document.getElementById("score").textContent = c;
-    document.getElementById("scoreLabel").textContent = "states found";
-    document.querySelector(".bar").style.display = "none";
-    document.getElementById("percent").textContent = c + " states found";
+  if(mode === "weighted") {
+    document.getElementById("primaryNumber").textContent = points;
+    document.getElementById("primaryLabel").textContent = "points";
+    document.getElementById("secondaryNumber").textContent = c;
+    document.getElementById("secondaryLabel").textContent = "states found";
+    document.getElementById("progressBar").style.display = "none";
   }
 
-  if (mode === "unlimited") {
-    document.getElementById("collectedBig").textContent = totalScore();
-    document.getElementById("outOf").style.display = "none";
-    document.querySelector(".bigProgress .sub").textContent = "points";
-    document.getElementById("score").textContent = totalSightings;
-    document.getElementById("scoreLabel").textContent = "sightings";
-    document.querySelector(".bar").style.display = "none";
-    document.getElementById("percent").textContent = totalSightings + " sightings";
+  if(mode === "unlimited") {
+    document.getElementById("primaryNumber").textContent = points;
+    document.getElementById("primaryLabel").textContent = "points";
+    document.getElementById("secondaryNumber").textContent = sightings;
+    document.getElementById("secondaryLabel").textContent = "sightings";
+    document.getElementById("progressBar").style.display = "none";
   }
+
   if(c > bestTrip) bestTrip = c;
+
   document.getElementById("bestTrip").textContent = bestTrip;
   document.getElementById("tripCount").textContent = tripCount;
   document.getElementById("badgeMini").textContent = unlockedBadges;
@@ -890,8 +710,6 @@ function render() {
   badgeHtml += '<div class="badge '+(c>=50?'unlocked':'')+'"><div class="badgeIcon">50</div><div class="grow"><div class="title">Fifty Club</div><div class="sub">Collect all 50 states.</div></div><div class="green">'+(c>=50?'YES':'')+'</div></div>';
   document.getElementById("badges").innerHTML = badgeHtml;
 
-  save();
-
   document.getElementById("familyBoard").innerHTML =
     '<div class="row"><div class="grow"><div class="title">Dad</div></div><div class="green">' + c + '</div></div>' +
     '<div class="row"><div class="grow"><div class="title">Hailey</div></div><div class="green">' + Math.max(0,c-4) + '</div></div>' +
@@ -906,6 +724,8 @@ function render() {
   document.getElementById("rareList").innerHTML = rare.length ? rare.slice(0,5).map(function(x){
     return '<div class="row"><div class="grow"><div class="title">' + x.name + ' (' + x.code + ')</div><div class="sub">Rarity ' + x.points + '/10</div></div><div class="green">' + x.points + ' pts</div></div>';
   }).join("") : "Rare plates will appear here.";
+
+  save();
 }
 
 document.querySelectorAll(".state").forEach(function(btn){ btn.addEventListener("click", function(){ tapState(btn); }); });
