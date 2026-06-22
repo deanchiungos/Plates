@@ -339,23 +339,39 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 }
 
 
-.playerStrip {
+select {
+  font-family:inherit;
+}
+.spotterRow {
+  margin-top:10px;
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:7px;
-  margin:8px 0 10px;
+  grid-template-columns:auto 1fr auto;
+  gap:8px;
+  align-items:center;
 }
-.playerStrip button {
-  min-height:40px;
-  background:#fff;
+.spotterRow label {
+  font-size:11px;
+  font-weight:900;
+  color:#4b5565;
+  letter-spacing:.4px;
+}
+.spotterRow select {
+  width:100%;
   border:1px solid var(--line);
-  font-size:12px;
-  box-shadow:0 3px 10px rgba(7,55,99,.08);
+  border-radius:12px;
+  background:#fff;
+  color:var(--navy);
+  font-size:13px;
+  font-weight:850;
+  padding:8px 9px;
 }
-.playerStrip button.active {
-  background:#eaf3ff;
-  border-color:rgba(21,101,192,.35);
+.spotterRow button {
+  border:1px solid var(--blue);
   color:var(--blue);
+  background:#fff;
+  padding:8px 10px;
+  font-size:12px;
+  border-radius:12px;
 }
 .tripHistoryList {
   display:grid;
@@ -371,55 +387,6 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
   text-align:right;
   color:var(--green);
   font-weight:950;
-}
-
-
-/* v28 safe cleanup */
-.playerStrip {
-  display:none !important;
-}
-.logo {
-  position:relative;
-  overflow:hidden;
-  padding:12px 18px 14px;
-}
-.logo:before {
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:-2px;
-  transform:translateX(-50%);
-  width:86px;
-  height:31px;
-  background:var(--navy);
-  clip-path:polygon(50% 0,100% 100%,0 100%);
-  opacity:.96;
-}
-.logo:after {
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:1px;
-  transform:translateX(-50%);
-  width:4px;
-  height:21px;
-  background:#fff;
-  border-radius:999px;
-  opacity:.78;
-}
-.logo h1,
-.logo .tag {
-  position:relative;
-  z-index:1;
-}
-.logo h1 {
-  font-size:34px;
-}
-.logo .tag {
-  background:rgba(255,255,255,.82);
-  display:inline-block;
-  padding:2px 8px;
-  border-radius:999px;
 }
 
 </style>
@@ -441,6 +408,11 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <div class="currentTripHeader" id="tripPillBtn">
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
+        <div class="spotterRow" onclick="event.stopPropagation()">
+          <label for="activePlayerSelect">Spotter</label>
+          <select id="activePlayerSelect"></select>
+          <button id="managePlayersBtn" type="button">Edit</button>
+        </div>
       </div>
       <div class="bigProgress">
         <div class="primaryStat">
@@ -464,14 +436,7 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
       <button id="weightedBtn" data-mode="weighted">Weighted</button>
       <button id="unlimitedBtn" data-mode="unlimited">Unlimited</button>
     </div>
-
-    <div class="playerStrip">
-      <button id="playerDad" class="active" data-player="Dad">Dad</button>
-      <button id="playerHailey" data-player="Hailey">Hailey</button>
-      <button id="playerBenji" data-player="Benji">Benji</button>
-    </div>
-
-    <div class="card">
+<div class="card">
       <div class="panelTitle"><span>Tap a state</span><span id="listCount">0/50</span></div>
       <div class="stateGrid" id="stateGrid">
 <button class="state" data-code="AL" data-name="Alabama" data-points="3">AL</button>
@@ -629,7 +594,7 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 
   <section id="familyScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Family</span><span>coming soon</span></div>
+      <div class="panelTitle"><span>Family Leaderboard</span><span id="activePlayerLabel">Dad playing</span></div>
       <div class="recent" id="familyBoard"></div>
     </div>
   </section>
@@ -653,7 +618,8 @@ var log = JSON.parse(localStorage.platesLog || "[]");
 var tripName = localStorage.platesTripName || "Summer Road Trip";
 var tripCount = Number(localStorage.platesTripCount || 1);
 var savedTrips = JSON.parse(localStorage.platesSavedTrips || "[]");
-var activePlayer = localStorage.platesActivePlayer || "Dad";
+var playerNames = JSON.parse(localStorage.platesPlayerNames || '["Dad","Hailey","Benji"]');
+var activePlayer = localStorage.platesActivePlayer || playerNames[0] || "Dad";
 var players = JSON.parse(localStorage.platesPlayers || '{"Dad":0,"Hailey":0,"Benji":0}');
 var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBestTrip || 0);
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
@@ -667,6 +633,7 @@ function save() {
   localStorage.platesTripName = tripName;
   localStorage.platesTripCount = tripCount;
   localStorage.platesSavedTrips = JSON.stringify(savedTrips);
+  localStorage.platesPlayerNames = JSON.stringify(playerNames);
   localStorage.platesActivePlayer = activePlayer;
   localStorage.platesPlayers = JSON.stringify(players);
   localStorage.platesBestClassic = bestClassic;
@@ -733,9 +700,37 @@ function endCurrentTrip() {
 
 function setActivePlayer(player) {
   activePlayer = player;
+  if(!players[activePlayer]) players[activePlayer] = 0;
   save();
   render();
   toast(player + " is spotting");
+}
+
+function managePlayers() {
+  var current = playerNames.join(", ");
+  var input = prompt("Edit family players. Separate names with commas:", current);
+  if(input === null) return;
+
+  var names = input.split(",").map(function(n){ return n.trim(); }).filter(Boolean);
+  if(!names.length) {
+    alert("Add at least one player.");
+    return;
+  }
+
+  playerNames = names;
+  playerNames.forEach(function(name){
+    if(players[name] === undefined) players[name] = 0;
+  });
+
+  Object.keys(players).forEach(function(name){
+    if(playerNames.indexOf(name) === -1) delete players[name];
+  });
+
+  if(playerNames.indexOf(activePlayer) === -1) activePlayer = playerNames[0];
+
+  save();
+  render();
+  toast("Players updated");
 }
 
 function tapState(btn) {
@@ -750,7 +745,8 @@ function tapState(btn) {
   }
 
   if(counts[code]) {
-    players[activePlayer] = (players[activePlayer] || 0) + 1;
+    if(!players[activePlayer]) players[activePlayer] = 0;
+    players[activePlayer] = players[activePlayer] + 1;
     log.unshift({ code:code, name:name, points:points, player:activePlayer });
     log = log.slice(0, 20);
     btn.classList.add("celebrate");
@@ -852,10 +848,13 @@ function render() {
   ["classic","weighted","unlimited"].forEach(function(m){
     document.getElementById(m + "Btn").classList.toggle("active", mode === m);
   });
-
-  document.querySelectorAll("[data-player]").forEach(function(btn){
-    btn.classList.toggle("active", btn.dataset.player === activePlayer);
-  });
+  var select = document.getElementById("activePlayerSelect");
+  if(select) {
+    select.innerHTML = playerNames.map(function(name){
+      return '<option value="' + name + '">' + name + '</option>';
+    }).join("");
+    select.value = activePlayer;
+  }
   document.getElementById("activePlayerLabel").textContent = activePlayer + " playing";
 
   document.querySelectorAll(".state").forEach(function(btn){
@@ -935,7 +934,7 @@ function render() {
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
-    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">' + pts + '</div></div>';
+    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">' + (x.player || "Family") + ' spotted this</div></div><div class="green">' + pts + '</div></div>';
   }).join("") : "No plates yet.";
 
   var badgeHtml = "";
@@ -945,14 +944,13 @@ function render() {
   badgeHtml += '<div class="badge '+(c>=50?'unlocked':'')+'"><div class="badgeIcon">50</div><div class="grow"><div class="title">Fifty Club</div><div class="sub">Collect all 50 states.</div></div><div class="green">'+(c>=50?'YES':'')+'</div></div>';
   document.getElementById("badges").innerHTML = badgeHtml;
 
-  var familyRows = Object.keys(players).map(function(name){
+  var familyRows = playerNames.map(function(name){
     return { name:name, total:players[name] || 0 };
   }).sort(function(a,b){ return b.total - a.total; });
 
-  document.getElementById("familyBoard").innerHTML =
-    '<div class="row"><div class="grow"><div class="title">Family Mode</div><div class="sub">Coming soon: synced family profiles, shared trips, and leaderboards.</div></div></div>' +
-    '<div class="row"><div class="grow"><div class="title">Share Trips</div><div class="sub">For now, use Trip History and Share Trip Summary.</div></div></div>';
-
+  document.getElementById("familyBoard").innerHTML = familyRows.map(function(p, i){
+    return '<div class="row"><div class="grow"><div class="title">' + (i+1) + '. ' + p.name + '</div><div class="sub">' + (p.name === activePlayer ? 'Currently spotting' : 'Family player') + '</div></div><div class="green">' + p.total + '</div></div>';
+  }).join("");
 
   var rare = [];
   document.querySelectorAll(".state").forEach(function(btn){
@@ -974,7 +972,10 @@ document.querySelectorAll("[data-map-code]").forEach(function(cell){ cell.addEve
   if(btn) tapState(btn);
 }); });
 document.querySelectorAll("[data-mode]").forEach(function(btn){ btn.addEventListener("click", function(){ setMode(btn.dataset.mode); }); });
-document.querySelectorAll("[data-player]").forEach(function(btn){ btn.addEventListener("click", function(){ setActivePlayer(btn.dataset.player); }); });
+document.getElementById("activePlayerSelect").addEventListener("change", function(){
+  setActivePlayer(this.value);
+});
+document.getElementById("managePlayersBtn").addEventListener("click", managePlayers);
 document.querySelectorAll("[data-view]").forEach(function(btn){ btn.addEventListener("click", function(){ setView(btn.dataset.view); }); });
 document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
 document.getElementById("endTripBtn").addEventListener("click", endCurrentTrip);
