@@ -845,23 +845,6 @@ html,body {
   .mapState { min-height:22px; font-size:7px; }
 }
 
-
-/* v39 celebratory sound UI */
-.soundToggle {
-  margin-top:10px;
-  border:1px solid rgba(21,119,210,.28);
-  color:var(--blue);
-  background:#fff;
-  padding:7px 12px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:900;
-}
-.soundToggle.off {
-  color:var(--muted);
-  border-color:var(--line);
-}
-
 </style>
 </head>
 
@@ -891,7 +874,6 @@ html,body {
       <div class="currentTripHeader" id="tripPillBtn">
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
-        <button class="soundToggle" id="soundToggle" type="button">Sound On</button>
       </div>
 
       <div class="bigProgress">
@@ -1147,7 +1129,6 @@ var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBe
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
-var soundOn = JSON.parse(localStorage.platesSoundOn || "true");
 
 function save() {
   localStorage.platesMode = mode;
@@ -1160,7 +1141,6 @@ function save() {
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
-  localStorage.platesSoundOn = JSON.stringify(soundOn);
 }
 
 function collectedCount() {
@@ -1197,66 +1177,6 @@ function bestForCurrentMode() {
   if(mode === "unlimited") return bestUnlimited;
   return bestClassic;
 }
-
-
-function playTone(freq, start, duration, type, gainLevel) {
-  if(!soundOn) return;
-  try {
-    var AudioContext = window.AudioContext || window.webkitAudioContext;
-    if(!window.platesAudioCtx) window.platesAudioCtx = new AudioContext();
-    var ctx = window.platesAudioCtx;
-    var osc = ctx.createOscillator();
-    var gain = ctx.createGain();
-    osc.type = type || "sine";
-    osc.frequency.setValueAtTime(freq, ctx.currentTime + start);
-    gain.gain.setValueAtTime(0.001, ctx.currentTime + start);
-    gain.gain.linearRampToValueAtTime(gainLevel || 0.12, ctx.currentTime + start + 0.02);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + start + duration);
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start(ctx.currentTime + start);
-    osc.stop(ctx.currentTime + start + duration + 0.03);
-  } catch(e) {}
-}
-
-function playStateSound() {
-  if(!soundOn) return;
-  playTone(523.25, 0.00, 0.16, "sine", 0.10);
-  playTone(659.25, 0.08, 0.18, "sine", 0.11);
-  playTone(783.99, 0.16, 0.22, "sine", 0.12);
-}
-
-function playRareSound() {
-  if(!soundOn) return;
-  playTone(659.25, 0.00, 0.14, "triangle", 0.11);
-  playTone(783.99, 0.08, 0.16, "triangle", 0.12);
-  playTone(1046.50, 0.18, 0.28, "triangle", 0.12);
-}
-
-function playBadgeSound() {
-  if(!soundOn) return;
-  playTone(523.25, 0.00, 0.12, "sine", 0.10);
-  playTone(659.25, 0.07, 0.12, "sine", 0.10);
-  playTone(783.99, 0.14, 0.12, "sine", 0.11);
-  playTone(1046.50, 0.24, 0.24, "sine", 0.13);
-}
-
-function playCompleteSound() {
-  if(!soundOn) return;
-  playTone(392.00, 0.00, 0.14, "triangle", 0.11);
-  playTone(523.25, 0.10, 0.14, "triangle", 0.11);
-  playTone(659.25, 0.20, 0.14, "triangle", 0.12);
-  playTone(783.99, 0.30, 0.18, "triangle", 0.12);
-  playTone(1046.50, 0.44, 0.30, "triangle", 0.13);
-}
-
-function toggleSound() {
-  soundOn = !soundOn;
-  save();
-  render();
-  if(soundOn) playStateSound();
-}
-
 
 function toast(text) {
   var el = document.getElementById("toast");
@@ -1325,18 +1245,15 @@ function tapState(btn) {
       toast("Collected " + name);
       var after = collectedCount();
       var badgesAfter = badgeCount(after);
-      if(after === 1) { playBadgeSound(); showCelebration("First Plate", "You started your collection with " + name + "."); }
-      else if(after === 10) { playBadgeSound(); showCelebration("10 States", "You found 10 states on this trip."); }
-      else if(after === 25) { playBadgeSound(); showCelebration("Halfway There", "25 states collected."); }
-      else if(after === 50) { playCompleteSound(); showCelebration("All 50 States", "You completed the game."); }
-      else if(Number(points) >= 8) { playRareSound(); showCelebration("Rare Find", name + " is one of the tougher plates to spot."); }
-      else if(badgesAfter > badgesBefore) { playBadgeSound(); showCelebration("Badge Unlocked", "You earned a new badge."); }
-      else if(after > bestForCurrentMode()) { playBadgeSound(); showCelebration("New Best", "This is your best trip yet."); }
-      else { playStateSound(); }
+      if(after === 1) showCelebration("First Plate", "You started your collection with " + name + ".");
+      else if(after === 10) showCelebration("10 States", "You found 10 states on this trip.");
+      else if(after === 25) showCelebration("Halfway There", "25 states collected.");
+      else if(after === 50) showCelebration("All 50 States", "You completed the game.");
+      else if(Number(points) >= 8) showCelebration("Rare Find", name + " is one of the tougher plates to spot.");
+      else if(badgesAfter > badgesBefore) showCelebration("Badge Unlocked", "You earned a new badge.");
+      else if(after > bestForCurrentMode()) showCelebration("New Best", "This is your best trip yet.");
     }
   }
-
-  if(counts[code] && wasCollected && mode === "unlimited") playStateSound();
 
   updateBestForCurrentMode();
   save();
@@ -1551,10 +1468,6 @@ function render() {
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
-  if(document.getElementById("soundToggle")) {
-    document.getElementById("soundToggle").textContent = soundOn ? "Sound On" : "Sound Off";
-    document.getElementById("soundToggle").classList.toggle("off", !soundOn);
-  }
   document.getElementById("tripModeSummary").textContent =
     mode === "classic" ? c + "/50 states collected in Classic mode" :
     mode === "weighted" ? points + " points in Weighted mode" :
@@ -1610,7 +1523,6 @@ function attachHandlers() {
   });
 
   document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
-  document.getElementById("soundToggle").onclick = function(e){ e.stopPropagation(); toggleSound(); };
   document.getElementById("endTripBtn").onclick = endCurrentTrip;
   document.getElementById("renameTripBtn").onclick = renameTrip;
   document.getElementById("newTripBtn").onclick = newTrip;
