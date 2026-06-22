@@ -760,17 +760,41 @@ function render() {
 
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
+  var totalSightings = Object.values(counts).reduce(function(sum, n){
+    return sum + n;
+  }, 0);
   var unlockedBadges = 0;
   if(c >= 1) unlockedBadges++;
   if(c >= 10) unlockedBadges++;
   if(c >= 25) unlockedBadges++;
   if(c >= 50) unlockedBadges++;
 
-  document.getElementById("collectedBig").textContent = c;
-  document.getElementById("score").textContent = totalScore();
-  document.getElementById("scoreLabel").textContent = mode === "classic" ? "states" : "pts";
+  if (mode === "classic") {
+    document.getElementById("collectedBig").textContent = c + "/50";
+    document.querySelector(".bigProgress .sub").textContent = "states collected";
+    document.getElementById("score").textContent = c;
+    document.getElementById("scoreLabel").textContent = "states";
+    document.querySelector(".bar").style.display = "block";
+    document.getElementById("fill").style.width = pct + "%";
+  }
+
+  if (mode === "weighted") {
+    document.getElementById("collectedBig").textContent = totalScore();
+    document.querySelector(".bigProgress .sub").textContent = "points";
+    document.getElementById("score").textContent = c;
+    document.getElementById("scoreLabel").textContent = "states";
+    document.querySelector(".bar").style.display = "none";
+  }
+
+  if (mode === "unlimited") {
+    document.getElementById("collectedBig").textContent = totalScore();
+    document.querySelector(".bigProgress .sub").textContent = "points";
+    document.getElementById("score").textContent = totalSightings;
+    document.getElementById("scoreLabel").textContent = "sightings";
+    document.querySelector(".bar").style.display = "none";
+  }
+
   document.getElementById("percent").textContent = pct + "%";
-  document.getElementById("fill").style.width = pct + "%";
   if(c > bestTrip) bestTrip = c;
   document.getElementById("bestTrip").textContent = bestTrip;
   document.getElementById("tripCount").textContent = tripCount;
