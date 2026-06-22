@@ -78,23 +78,48 @@ button {
   margin:10px 0;
   box-shadow:var(--shadow);
 }
-.bigProgress { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; }
+.bigProgress {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  align-items:end;
+}
+.primaryStat,
+.secondaryStat {
+  text-align:center;
+}
 .bigNum {
-  font-size:44px;
+  font-size:50px;
   font-weight:950;
   letter-spacing:-2px;
   color:var(--navy);
-  line-height:.95;
+  line-height:.92;
 }
-.sub { color:var(--muted); font-size:12px; font-weight:750; }
+.outOf {
+  font-size:24px;
+  font-weight:850;
+  letter-spacing:-1px;
+  color:var(--muted);
+}
+.sub {
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+  text-align:center;
+  margin-top:4px;
+}
 .scoreMini {
-  text-align:right;
+  text-align:center;
   font-size:13px;
   color:var(--muted);
   font-weight:850;
   min-width:112px;
 }
-.scoreMini strong { color:var(--navy); font-size:18px; }
+.scoreMini strong {
+  color:var(--navy);
+  font-size:32px;
+  line-height:.95;
+}
 .bar {
   height:16px;
   background:#e5eef7;
@@ -308,11 +333,13 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
   <section id="gameScreen" class="screen">
     <div class="card">
       <div class="bigProgress">
-        <div>
-          <div class="bigNum" id="primaryNumber">0/50</div>
+        <div class="primaryStat">
+          <div class="bigNum"><span id="primaryNumber">0</span><span id="outOf" class="outOf">/50</span></div>
           <div class="sub" id="primaryLabel">states collected</div>
         </div>
-        <div class="scoreMini"><strong id="secondaryNumber">50</strong><br><span id="secondaryLabel">states to go</span></div>
+        <div class="secondaryStat">
+          <div class="scoreMini"><strong id="secondaryNumber">50</strong><br><span id="secondaryLabel">states to go</span></div>
+        </div>
       </div>
       <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
       <div class="quickStats">
@@ -467,8 +494,8 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 
   <section id="tripsScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Trips</span><span id="tripStats">0 states</span></div>
-      <div class="row"><div class="grow"><div class="title" id="tripName">Summer Road Trip</div><div class="sub">Progress saves on this device.</div></div></div>
+      <div class="panelTitle"><span>Current Trip</span><span id="tripStats">0 states</span></div>
+      <div class="row"><div class="grow"><div class="title" id="tripName">Summer Road Trip</div><div class="sub" id="tripModeSummary">Classic mode</div></div></div>
       <br>
       <div class="tripActions">
         <button class="primary" id="renameTripBtn">Rename Trip</button>
@@ -684,7 +711,8 @@ function render() {
   });
 
   if(mode === "classic") {
-    document.getElementById("primaryNumber").textContent = c + "/50";
+    document.getElementById("primaryNumber").textContent = c;
+    document.getElementById("outOf").style.display = "inline";
     document.getElementById("primaryLabel").textContent = "states collected";
     document.getElementById("secondaryNumber").textContent = left;
     document.getElementById("secondaryLabel").textContent = "states to go";
@@ -694,6 +722,7 @@ function render() {
 
   if(mode === "weighted") {
     document.getElementById("primaryNumber").textContent = points;
+    document.getElementById("outOf").style.display = "none";
     document.getElementById("primaryLabel").textContent = "points";
     document.getElementById("secondaryNumber").textContent = c;
     document.getElementById("secondaryLabel").textContent = "states found";
@@ -702,6 +731,7 @@ function render() {
 
   if(mode === "unlimited") {
     document.getElementById("primaryNumber").textContent = points;
+    document.getElementById("outOf").style.display = "none";
     document.getElementById("primaryLabel").textContent = "points";
     document.getElementById("secondaryNumber").textContent = sightings;
     document.getElementById("secondaryLabel").textContent = "sightings";
@@ -725,6 +755,10 @@ function render() {
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
+  document.getElementById("tripModeSummary").textContent =
+    mode === "classic" ? c + "/50 states collected in Classic mode" :
+    mode === "weighted" ? points + " points in Weighted mode" :
+    points + " points across " + sightings + " sightings in Unlimited mode";
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
