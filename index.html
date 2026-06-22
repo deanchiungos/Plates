@@ -853,11 +853,142 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 .legend.rare{ background:#F6C744; }
 .legend.missing{ background:#D9DEE7; }
 
+
+/* v38.4 compact rules modal */
+.currentTripHeader {
+  position:relative;
+}
+
+.rulesButton {
+  position:absolute;
+  right:10px;
+  top:10px;
+  border:1px solid rgba(21,119,210,.28);
+  color:var(--blue);
+  background:#fff;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:900;
+  z-index:2;
+}
+
+.rulesOverlay {
+  position:fixed;
+  inset:0;
+  z-index:100;
+  background:rgba(7,55,99,.38);
+  display:none;
+  align-items:flex-end;
+  justify-content:center;
+  padding:18px;
+}
+
+.rulesOverlay.show {
+  display:flex;
+}
+
+.rulesSheet {
+  width:100%;
+  max-width:430px;
+  background:#fff;
+  border-radius:24px;
+  padding:18px;
+  box-shadow:0 18px 60px rgba(0,0,0,.25);
+}
+
+.rulesTop {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+.rulesTop h2 {
+  margin:0;
+  color:var(--navy);
+  font-size:24px;
+}
+
+.rulesTop button {
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  background:#eef4fb;
+  color:var(--navy);
+  font-size:24px;
+  line-height:1;
+}
+
+.rulesIntro {
+  color:var(--muted);
+  font-weight:800;
+  margin-bottom:12px;
+}
+
+.rulesMode {
+  border:1px solid var(--line);
+  background:#f8fbff;
+  border-radius:16px;
+  padding:11px 12px;
+  margin-top:8px;
+}
+
+.rulesMode strong {
+  display:block;
+  color:var(--navy);
+  font-size:15px;
+  margin-bottom:3px;
+}
+
+.rulesMode span {
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:750;
+}
+
+.rulesFooter {
+  margin-top:12px;
+  color:var(--green);
+  font-weight:900;
+  font-size:13px;
+  text-align:center;
+}
+
 </style>
 </head>
 
 <body>
 <div class="toast" id="toast">Collected</div>
+
+<div class="rulesOverlay" id="rulesOverlay">
+  <div class="rulesSheet">
+    <div class="rulesTop">
+      <h2>How to Play</h2>
+      <button id="rulesClose" type="button">Ã</button>
+    </div>
+
+    <div class="rulesIntro">Spot license plates from different states while you're in the car.</div>
+
+    <div class="rulesMode">
+      <strong>Classic</strong>
+      <span>Each state counts once. Goal: collect all 50.</span>
+    </div>
+
+    <div class="rulesMode">
+      <strong>Weighted</strong>
+      <span>Rare states are worth more points. Highest score wins.</span>
+    </div>
+
+    <div class="rulesMode">
+      <strong>Unlimited</strong>
+      <span>Every plate counts, even repeats. Keep spotting.</span>
+    </div>
+
+    <div class="rulesFooter">Unlock badges, save road trips and earn bragging rights.</div>
+  </div>
+</div>
 
 <div class="celebrationOverlay" id="celebrationOverlay">
   <div class="celebrationBox">
@@ -880,6 +1011,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   <section id="gameScreen" class="screen">
     <div class="card">
       <div class="currentTripHeader" id="tripPillBtn">
+        <button class="rulesButton" id="rulesButton" type="button">Rules</button>
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
       </div>
@@ -1570,6 +1702,16 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   });
 
   document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
+  document.getElementById("rulesButton").onclick = function(e){
+    e.stopPropagation();
+    document.getElementById("rulesOverlay").classList.add("show");
+  };
+  document.getElementById("rulesClose").onclick = function(){
+    document.getElementById("rulesOverlay").classList.remove("show");
+  };
+  document.getElementById("rulesOverlay").onclick = function(e){
+    if(e.target.id === "rulesOverlay") document.getElementById("rulesOverlay").classList.remove("show");
+  };
   document.getElementById("endTripBtn").onclick = endCurrentTrip;
   document.getElementById("renameTripBtn").onclick = renameTrip;
   document.getElementById("newTripBtn").onclick = newTrip;
