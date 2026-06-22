@@ -747,6 +747,62 @@ html,body {
   }
 }
 
+
+/* v38.1 safe visual U.S. map */
+.mapCard {
+  padding:20px;
+}
+
+.sectionHeader{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:16px;
+}
+
+.sectionHeader h2{
+  margin:0;
+  color:var(--navy);
+  font-size:20px;
+}
+
+.sectionHeader span{
+  color:var(--muted);
+  font-size:13px;
+  font-weight:900;
+}
+
+.usaMapImage{
+  width:100%;
+  display:block;
+  background:#fff;
+  border-radius:18px;
+  padding:14px;
+  box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+
+.mapLegend{
+  display:flex;
+  justify-content:space-around;
+  margin-top:16px;
+  font-size:13px;
+  color:var(--muted);
+  font-weight:800;
+}
+
+.legend{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:6px;
+  vertical-align:-2px;
+}
+
+.legend.found{ background:#34C759; }
+.legend.rare{ background:#F6C744; }
+.legend.missing{ background:#D9DEE7; }
+
 </style>
 </head>
 
@@ -866,82 +922,28 @@ html,body {
   </section>
 
   <section id="mapScreen" class="screen hidden">
-    <div class="card">
-      <div class="panelTitle"><span>Collection Map</span><span id="mapCount">0/50</span></div>
-      <div class="usMap">
-        <div class="mapGrid" id="mapGrid">
-<div class="mapBlank"></div>
-<button class="mapState" data-map-code="WA">WA</button>
-<button class="mapState" data-map-code="MT">MT</button>
-<button class="mapState" data-map-code="ND">ND</button>
-<button class="mapState" data-map-code="MN">MN</button>
-<button class="mapState" data-map-code="WI">WI</button>
-<button class="mapState" data-map-code="MI">MI</button>
-<div class="mapBlank"></div>
-<button class="mapState" data-map-code="NY">NY</button>
-<button class="mapState" data-map-code="VT">VT</button>
-<button class="mapState" data-map-code="NH">NH</button>
-<button class="mapState" data-map-code="ME">ME</button>
-<button class="mapState" data-map-code="OR">OR</button>
-<button class="mapState" data-map-code="ID">ID</button>
-<button class="mapState" data-map-code="WY">WY</button>
-<button class="mapState" data-map-code="SD">SD</button>
-<button class="mapState" data-map-code="IA">IA</button>
-<button class="mapState" data-map-code="IL">IL</button>
-<button class="mapState" data-map-code="IN">IN</button>
-<button class="mapState" data-map-code="OH">OH</button>
-<button class="mapState" data-map-code="PA">PA</button>
-<button class="mapState" data-map-code="NJ">NJ</button>
-<button class="mapState" data-map-code="CT">CT</button>
-<button class="mapState" data-map-code="MA">MA</button>
-<button class="mapState" data-map-code="CA">CA</button>
-<button class="mapState" data-map-code="NV">NV</button>
-<button class="mapState" data-map-code="UT">UT</button>
-<button class="mapState" data-map-code="CO">CO</button>
-<button class="mapState" data-map-code="NE">NE</button>
-<button class="mapState" data-map-code="MO">MO</button>
-<button class="mapState" data-map-code="KY">KY</button>
-<button class="mapState" data-map-code="WV">WV</button>
-<button class="mapState" data-map-code="VA">VA</button>
-<button class="mapState" data-map-code="MD">MD</button>
-<button class="mapState" data-map-code="DE">DE</button>
-<button class="mapState" data-map-code="RI">RI</button>
-<div class="mapBlank"></div>
-<button class="mapState" data-map-code="AZ">AZ</button>
-<button class="mapState" data-map-code="NM">NM</button>
-<button class="mapState" data-map-code="KS">KS</button>
-<button class="mapState" data-map-code="OK">OK</button>
-<button class="mapState" data-map-code="AR">AR</button>
-<button class="mapState" data-map-code="TN">TN</button>
-<button class="mapState" data-map-code="NC">NC</button>
-<button class="mapState" data-map-code="SC">SC</button>
-<div class="mapBlank"></div>
-<div class="mapBlank"></div>
-<div class="mapBlank"></div>
-<button class="mapState" data-map-code="AK">AK</button>
-<div class="mapBlank"></div>
-<div class="mapBlank"></div>
-<button class="mapState" data-map-code="TX">TX</button>
-<button class="mapState" data-map-code="LA">LA</button>
-<button class="mapState" data-map-code="MS">MS</button>
-<button class="mapState" data-map-code="AL">AL</button>
-<button class="mapState" data-map-code="GA">GA</button>
-<button class="mapState" data-map-code="FL">FL</button>
-<div class="mapBlank"></div>
-<button class="mapState" data-map-code="HI">HI</button>
-<div class="mapBlank"></div>
-        </div>
-        <div class="mapLegend">
-          <span><span class="legendBox collected"></span>Found</span>
-          <span><span class="legendBox rare"></span>Rare</span>
-          <span><span class="legendBox"></span>Missing</span>
-        </div>
+    <div class="card mapCard">
+      <div class="sectionHeader">
+        <h2>United States Map</h2>
+        <span id="mapCount">0 / 50 found</span>
+      </div>
+
+      <img
+        class="usaMapImage"
+        src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Blank_US_Map_%28states_only%29.svg"
+        alt="United States Map"
+      />
+
+      <div class="mapLegend">
+        <div><span class="legend found"></span> Found</div>
+        <div><span class="legend rare"></span> Rare</div>
+        <div><span class="legend missing"></span> Not Found</div>
       </div>
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>State Details</span><span id="selectedStateCode">Tap map</span></div>
-      <div class="recent" id="stateDetails">Tap any state on the map to see its details.</div>
+      <div class="panelTitle"><span>State Details</span><span>coming soon</span></div>
+      <div class="recent">Interactive state details will come in the next map version.</div>
     </div>
   </section>
 
@@ -1346,7 +1348,7 @@ function render() {
   document.getElementById("tripCount").textContent = tripCount;
   document.getElementById("badgeMini").textContent = unlockedBadges;
   document.getElementById("listCount").textContent = c + "/50";
-  document.getElementById("mapCount").textContent = c + "/50";
+  document.getElementById("mapCount").textContent = c + " / 50 found";
   document.getElementById("badgeCount").textContent = unlockedBadges + " unlocked";
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
@@ -1424,5 +1426,3 @@ render();
 </script>
 </body>
 </html>
-
-<!-- v37: removed fake USA map and car icons from header -->
