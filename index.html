@@ -747,104 +747,6 @@ html,body {
   }
 }
 
-
-/* v38 feature sprint polish */
-.mapGrid {
-  width:100%;
-  grid-template-columns:repeat(12,minmax(0,1fr));
-  gap:3px;
-}
-.mapState {
-  min-width:0;
-  width:100%;
-  min-height:24px;
-  padding:0;
-  font-size:8px;
-  border-radius:6px;
-}
-.mapBlank { min-width:0; }
-
-.badgeGrid {
-  grid-template-columns:repeat(2,minmax(0,1fr));
-}
-.badge {
-  position:relative;
-  overflow:hidden;
-}
-.badge.unlocked:after {
-  content:"â";
-  position:absolute;
-  right:9px;
-  top:8px;
-  width:20px;
-  height:20px;
-  border-radius:999px;
-  background:var(--green);
-  color:#fff;
-  font-size:13px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-}
-.badgeIcon {
-  box-shadow:inset 0 0 0 2px rgba(255,255,255,.6), 0 4px 10px rgba(6,47,95,.12);
-}
-.badge.unlocked .badgeIcon {
-  background:linear-gradient(180deg,#eaffef,#d7f7df);
-  color:var(--green);
-}
-
-.celebrationBox {
-  position:relative;
-  overflow:hidden;
-}
-.celebrationBox:before {
-  content:"";
-  position:absolute;
-  inset:-30px;
-  background:
-    radial-gradient(circle at 15% 20%,#f6c844 0 4px,transparent 5px),
-    radial-gradient(circle at 80% 22%,#26a957 0 5px,transparent 6px),
-    radial-gradient(circle at 28% 72%,#1577d2 0 4px,transparent 5px),
-    radial-gradient(circle at 68% 78%,#f6c844 0 4px,transparent 5px);
-  opacity:.55;
-  pointer-events:none;
-}
-.celebrationBox > * {
-  position:relative;
-  z-index:1;
-}
-
-.shareCard {
-  background:
-    linear-gradient(180deg,rgba(255,255,255,.78),rgba(255,255,255,.96)),
-    linear-gradient(135deg,#bdefff 0%,#e7fff0 100%);
-}
-.sharePlate {
-  position:relative;
-  overflow:hidden;
-  background:linear-gradient(180deg,#fff,#f4f9ff);
-}
-.sharePlate:before,
-.sharePlate:after {
-  content:"";
-  position:absolute;
-  top:9px;
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:#dbeafe;
-  border:2px solid rgba(7,55,99,.28);
-}
-.sharePlate:before { left:10px; }
-.sharePlate:after { right:10px; }
-
-@media (max-width:390px) {
-  .mapGrid { gap:2px; }
-  .mapState { min-height:22px; font-size:7px; }
-}
-
 </style>
 </head>
 
@@ -1200,12 +1102,8 @@ function badgeCount(c) {
   if(c >= 50) total++;
   if(hasStates(["AK","HI"])) total++;
   if(hasStates(["CA","OR","WA"])) total++;
-  if(hasStates(["ME","NH","VT","MA","RI","CT"])) total++;
-  if(hasStates(["NY","NJ","PA","DE","MD","VA","NC","SC","GA"])) total++;
-  if(hasStates(["CA","FL"])) total++;
   if(rareCollectedCount() >= 5) total++;
   if(totalSightings() >= 100) total++;
-  if(savedTrips.length >= 3) total++;
   return total;
 }
 
@@ -1227,7 +1125,6 @@ function tapState(btn) {
   var points = Number(btn.dataset.points);
   var wasCollected = !!counts[code];
   var before = collectedCount();
-  var badgesBefore = badgeCount(before);
 
   if(mode === "classic" || mode === "weighted") {
     counts[code] = counts[code] ? 0 : 1;
@@ -1244,13 +1141,10 @@ function tapState(btn) {
     if(!wasCollected) {
       toast("Collected " + name);
       var after = collectedCount();
-      var badgesAfter = badgeCount(after);
       if(after === 1) showCelebration("First Plate", "You started your collection with " + name + ".");
       else if(after === 10) showCelebration("10 States", "You found 10 states on this trip.");
       else if(after === 25) showCelebration("Halfway There", "25 states collected.");
       else if(after === 50) showCelebration("All 50 States", "You completed the game.");
-      else if(Number(points) >= 8) showCelebration("Rare Find", name + " is one of the tougher plates to spot.");
-      else if(badgesAfter > badgesBefore) showCelebration("Badge Unlocked", "You earned a new badge.");
       else if(after > bestForCurrentMode()) showCelebration("New Best", "This is your best trip yet.");
     }
   }
@@ -1324,17 +1218,10 @@ function newTrip() {
 }
 
 function shareText() {
-  var top = log.slice().sort(function(a,b){ return b.points - a.points; })[0];
-  return "PLATES
-" + tripName + "
-" +
-    "States: " + collectedCount() + "/50
-" +
-    "Score: " + totalScore() + "
-" +
-    "Badges: " + badgeCount(collectedCount()) + "
-" +
-    "Top Find: " + (top ? top.name + " (" + top.code + ")" : "None yet");
+  return "PLATES\n" + tripName + "\n" +
+    "States: " + collectedCount() + "/50\n" +
+    "Score: " + totalScore() + "\n" +
+    "Badges: " + badgeCount(collectedCount());
 }
 
 function shareSummary() {
@@ -1371,12 +1258,8 @@ function renderBadges(c) {
     ["50","All 50 States","Complete the map",c>=50],
     ["AK","Alaska + Hawaii","Find Alaska and Hawaii",hasStates(["AK","HI"])],
     ["WC","West Coast","Find CA, OR and WA",hasStates(["CA","OR","WA"])],
-    ["NE","Northeast Complete","Find all New England states",hasStates(["ME","NH","VT","MA","RI","CT"])],
-    ["13","Original 13-ish","Collect the East Coast run",hasStates(["NY","NJ","PA","DE","MD","VA","NC","SC","GA"])],
-    ["CF","Coast to Coast","Find California and Florida",hasStates(["CA","FL"])],
     ["R5","Rare Hunter","Find 5 rare states",rareCollectedCount()>=5],
-    ["100","Road Warrior","Log 100 sightings",totalSightings()>=100],
-    ["3","Trip Keeper","Save 3 trips",savedTrips.length>=3]
+    ["100","Road Warrior","Log 100 sightings",totalSightings()>=100]
   ];
   document.getElementById("badges").innerHTML = badges.map(function(b){
     return '<div class="badge ' + (b[3] ? "unlocked" : "") + '">' +
