@@ -339,40 +339,6 @@ body.show-rarity .mapState.rare:not(.hit) { border-color:var(--gold); }
 }
 
 
-select {
-  font-family:inherit;
-}
-.spotterRow {
-  margin-top:10px;
-  display:grid;
-  grid-template-columns:auto 1fr auto;
-  gap:8px;
-  align-items:center;
-}
-.spotterRow label {
-  font-size:11px;
-  font-weight:900;
-  color:#4b5565;
-  letter-spacing:.4px;
-}
-.spotterRow select {
-  width:100%;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:#fff;
-  color:var(--navy);
-  font-size:13px;
-  font-weight:850;
-  padding:8px 9px;
-}
-.spotterRow button {
-  border:1px solid var(--blue);
-  color:var(--blue);
-  background:#fff;
-  padding:8px 10px;
-  font-size:12px;
-  border-radius:12px;
-}
 .tripHistoryList {
   display:grid;
   gap:8px;
@@ -408,12 +374,7 @@ select {
       <div class="currentTripHeader" id="tripPillBtn">
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
-        <div class="spotterRow" onclick="event.stopPropagation()">
-          <label for="activePlayerSelect">Spotter</label>
-          <select id="activePlayerSelect"></select>
-          <button id="managePlayersBtn" type="button">Edit</button>
-        </div>
-      </div>
+</div>
       <div class="bigProgress">
         <div class="primaryStat">
           <div class="bigNum"><span id="primaryNumber">0</span><span id="outOf" class="outOf">/50</span></div>
@@ -594,7 +555,7 @@ select {
 
   <section id="familyScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Family Leaderboard</span><span id="activePlayerLabel">Dad playing</span></div>
+      <div class="panelTitle"><span>Family</span><span>coming soon</span></div>
       <div class="recent" id="familyBoard"></div>
     </div>
   </section>
@@ -848,14 +809,6 @@ function render() {
   ["classic","weighted","unlimited"].forEach(function(m){
     document.getElementById(m + "Btn").classList.toggle("active", mode === m);
   });
-  var select = document.getElementById("activePlayerSelect");
-  if(select) {
-    select.innerHTML = playerNames.map(function(name){
-      return '<option value="' + name + '">' + name + '</option>';
-    }).join("");
-    select.value = activePlayer;
-  }
-  document.getElementById("activePlayerLabel").textContent = activePlayer + " playing";
 
   document.querySelectorAll(".state").forEach(function(btn){
     var code = btn.dataset.code;
@@ -934,7 +887,7 @@ function render() {
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
-    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">' + (x.player || "Family") + ' spotted this</div></div><div class="green">' + pts + '</div></div>';
+    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">' + pts + '</div></div>';
   }).join("") : "No plates yet.";
 
   var badgeHtml = "";
@@ -965,23 +918,32 @@ function render() {
   save();
 }
 
-document.querySelectorAll(".state").forEach(function(btn){ btn.addEventListener("click", function(){ tapState(btn); }); });
-document.querySelectorAll("[data-map-code]").forEach(function(cell){ cell.addEventListener("click", function(){
-  var code = cell.dataset.mapCode;
-  var btn = document.querySelector('.state[data-code="' + code + '"]');
-  if(btn) tapState(btn);
-}); });
 document.querySelectorAll("[data-mode]").forEach(function(btn){ btn.addEventListener("click", function(){ setMode(btn.dataset.mode); }); });
-document.getElementById("activePlayerSelect").addEventListener("change", function(){
-  setActivePlayer(this.value);
-});
-document.getElementById("managePlayersBtn").addEventListener("click", managePlayers);
 document.querySelectorAll("[data-view]").forEach(function(btn){ btn.addEventListener("click", function(){ setView(btn.dataset.view); }); });
-document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
-document.getElementById("endTripBtn").addEventListener("click", endCurrentTrip);
-document.getElementById("renameTripBtn").addEventListener("click", renameTrip);
-document.getElementById("newTripBtn").addEventListener("click", newTrip);
-document.getElementById("shareTripBtn").addEventListener("click", shareSummary);
+if(document.getElementById("tripPillBtn")) document.getElementById("tripPillBtn").addEventListener("click", function(){ setView("trips"); });
+if(document.getElementById("endTripBtn")) document.getElementById("endTripBtn").addEventListener("click", endCurrentTrip);
+if(document.getElementById("renameTripBtn")) document.getElementById("renameTripBtn").addEventListener("click", renameTrip);
+if(document.getElementById("newTripBtn")) document.getElementById("newTripBtn").addEventListener("click", newTrip);
+if(document.getElementById("shareTripBtn")) document.getElementById("shareTripBtn").addEventListener("click", shareSummary);
+
+
+function attachStateHandlers() {
+  document.querySelectorAll(".state").forEach(function(btn){
+    btn.onclick = function(){
+      tapState(btn);
+    };
+  });
+
+  document.querySelectorAll("[data-map-code]").forEach(function(cell){
+    cell.onclick = function(){
+      var code = cell.dataset.mapCode;
+      var btn = document.querySelector('.state[data-code="' + code + '"]');
+      if(btn) tapState(btn);
+    };
+  });
+}
+
+attachStateHandlers();
 
 render();
 </script>
