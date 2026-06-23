@@ -1981,7 +1981,7 @@ body {
 
   <section id="familyScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Team</span><span id="familyCount">1 team member</span></div>
+      <div class="panelTitle"><span>Team</span><span id="familyCount">1 Team Member</span></div>
       <div class="familyList" id="familyList"></div>
       <button class="primary familyAddBtn" id="addPlayerBtn" type="button">Add Team Member</button>
     </div>
@@ -1994,7 +1994,7 @@ body {
     <div class="card">
       <div class="panelTitle"><span>How Team Works</span></div>
       <div class="recent">
-        <div class="row familyInfoCard"><div class="grow"><div class="title">Choose Current Team Member</div><div class="sub">Use the team member picker before spotting plates</div></div></div>
+        <div class="row familyInfoCard"><div class="grow"><div class="title">Choose Current Team Member</div><div class="sub">Use the Team Member Picker before spotting plates</div></div></div>
         <div class="row familyInfoCard"><div class="grow"><div class="title">Shared Roadtrip</div><div class="sub">Play together on one shared roadtrip</div></div></div>
       </div>
     </div>
@@ -2586,7 +2586,7 @@ function currentPlayer() {
 }
 
 function addPlayer() {
-  var name = prompt("Team member name:", "");
+  var name = prompt("Team Member Name:", "");
   if(!name || !name.trim()) return;
 
   var player = {
@@ -2598,19 +2598,19 @@ function addPlayer() {
   currentPlayerId = player.id;
   save();
   render();
-  toast("Team member added");
+  toast("Team Member added");
 }
 
 function switchPlayer(id) {
   currentPlayerId = id;
   save();
   render();
-  toast("Current team member updated");
+  toast("Current Team Member updated");
 }
 
 function deletePlayer(id) {
   if(players.length <= 1) {
-    alert("Keep at least one team member");
+    alert("Keep at least 1 Team Member");
     return;
   }
 
@@ -2622,7 +2622,7 @@ function deletePlayer(id) {
     if(currentPlayerId === id && players.length) currentPlayerId = players[0].id;
     save();
     render();
-    toast("Team member deleted");
+    toast("Team Member deleted");
   }
 }
 
