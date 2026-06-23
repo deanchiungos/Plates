@@ -1458,7 +1458,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 
-/* v42 Family Profiles V1 */
+/* v42 Team Members V1 */
 .playerPickerCard {
   margin-top:10px;
 }
@@ -2525,7 +2525,7 @@ function currentPlayer() {
   var player = players.find(function(p){ return p.id === currentPlayerId; });
   if(!player && players.length) {
     currentPlayerId = players[0].id;
-    team member = players[0];
+    player = players[0];
   }
   return player || { id:"p1", name:"Dean" };
 }
@@ -2563,7 +2563,7 @@ function deletePlayer(id) {
   if(!player) return;
 
   if(confirm("Delete " + player.name + "?")) {
-    team members = players.filter(function(p){ return p.id !== id; });
+    players = players.filter(function(p){ return p.id !== id; });
     if(currentPlayerId === id && players.length) currentPlayerId = players[0].id;
     save();
     render();
@@ -2721,6 +2721,9 @@ function render() {
   }
   if(document.getElementById("shareTopFinds")) {
     document.getElementById("shareTopFinds").textContent = topFindsText();
+  }
+  if(document.getElementById("shareTopFind")) {
+    document.getElementById("shareTopFind").textContent = top ? top.name + " (" + top.code + ") - " + top.points + " pts" : "No plates yet";
   }
 
   document.querySelectorAll(".renameTripBtnSmall").forEach(function(btn){
