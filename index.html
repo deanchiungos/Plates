@@ -959,6 +959,130 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   text-align:center;
 }
 
+
+/* v40 State Details V1 */
+.stateDetailHero {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-radius:18px;
+  padding:14px;
+  background:linear-gradient(180deg,#f8fbff,#ffffff);
+  border:1px solid var(--line);
+  margin-bottom:10px;
+}
+
+.stateDetailHero.found {
+  background:linear-gradient(180deg,#eaffef,#ffffff);
+  border-color:rgba(53,168,82,.35);
+}
+
+.stateDetailHero.missing {
+  opacity:.85;
+}
+
+.stateDetailName {
+  font-size:24px;
+  font-weight:950;
+  color:var(--navy);
+  line-height:1.05;
+}
+
+.stateDetailSub {
+  margin-top:4px;
+  color:var(--green);
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:1px;
+}
+
+.stateDetailHero.missing .stateDetailSub {
+  color:var(--muted);
+}
+
+.stateDetailCode {
+  width:56px;
+  height:44px;
+  border-radius:12px;
+  background:#fff;
+  border:2px solid var(--line);
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:21px;
+  font-weight:950;
+  box-shadow:0 3px 0 rgba(7,55,99,.08);
+}
+
+.detailGrid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-bottom:10px;
+}
+
+.detailItem {
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:15px;
+  padding:11px 10px;
+  text-align:center;
+}
+
+.detailItem span {
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+}
+
+.detailItem strong {
+  display:block;
+  color:var(--navy);
+  font-size:24px;
+  line-height:1.1;
+  margin-top:3px;
+}
+
+.detailRows {
+  display:grid;
+  gap:7px;
+}
+
+.detailRow {
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px 11px;
+  background:#fff;
+}
+
+.detailRow span {
+  color:var(--muted);
+  font-size:12px;
+  font-weight:900;
+}
+
+.detailRow strong {
+  color:var(--navy);
+  font-size:12px;
+  font-weight:950;
+  text-align:right;
+}
+
+.notesPreview {
+  margin-top:10px;
+  border:1px dashed rgba(21,101,192,.32);
+  border-radius:15px;
+  padding:11px;
+  background:#f8fbff;
+}
+
 </style>
 </head>
 
@@ -1439,7 +1563,7 @@ function tapState(btn) {
   }
 
   if(counts[code]) {
-    log.unshift({ code:code, name:name, points:points, mode:mode });
+    log.unshift({ code:code, name:name, points:points, mode:mode, trip:tripName, ts:new Date().toISOString() });
     log = log.slice(0, 30);
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
@@ -1543,17 +1667,55 @@ function copyShareText() {
   toast("Share text copied");
 }
 
+
+function formatShortDate(iso) {
+  if(!iso) return "Not yet";
+  var d = new Date(iso);
+  if(isNaN(d.getTime())) return "Not yet";
+  return d.toLocaleDateString(undefined, { month:"short", day:"numeric", year:"numeric" });
+}
+
+function stateHistory(code) {
+  return log.filter(function(x){ return x.code === code; });
+}
+
 function selectMapState(code) {
-  selectedState = code;
   var btn = document.querySelector('.state[data-code="' + code + '"]');
   if(!btn) return;
+
   var name = btn.dataset.name;
-  var pts = btn.dataset.points;
+  var pts = Number(btn.dataset.points);
   var seen = counts[code] || 0;
+  var found = seen > 0;
+  var history = stateHistory(code);
+  var first = history.length ? history[history.length - 1] : null;
+  var last = history.length ? history[0] : null;
+
   document.getElementById("selectedStateCode").textContent = code;
+
   document.getElementById("stateDetails").innerHTML =
-    '<div class="row"><div class="grow"><div class="title">' + name + '</div><div class="sub">Rarity value: ' + pts + '/10</div></div><div class="green">' + (seen ? "Found" : "Missing") + '</div></div>' +
-    '<div class="row"><div class="grow"><div class="title">Sightings</div><div class="sub">' + (seen || 0) + ' recorded on this trip</div></div></div>';
+    '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
+      '<div><div class="stateDetailName">' + name + '</div>' +
+      '<div class="stateDetailSub">' + (found ? "FOUND" : "MISSING") + '</div></div>' +
+      '<div class="stateDetailCode">' + code + '</div>' +
+    '</div>' +
+
+    '<div class="detailGrid">' +
+      '<div class="detailItem"><span>Rarity</span><strong>' + pts + '/10</strong></div>' +
+      '<div class="detailItem"><span>Sightings</span><strong>' + seen + '</strong></div>' +
+    '</div>' +
+
+    '<div class="detailRows">' +
+      '<div class="detailRow"><span>First Seen</span><strong>' + (first ? formatShortDate(first.ts) : "Not yet") + '</strong></div>' +
+      '<div class="detailRow"><span>First Trip</span><strong>' + (first ? (first.trip || tripName) : "â") + '</strong></div>' +
+      '<div class="detailRow"><span>Last Seen</span><strong>' + (last ? formatShortDate(last.ts) : "Not yet") + '</strong></div>' +
+      '<div class="detailRow"><span>Last Trip</span><strong>' + (last ? (last.trip || tripName) : "â") + '</strong></div>' +
+    '</div>' +
+
+    '<div class="notesPreview">' +
+      '<div class="title">Notes</div>' +
+      '<div class="sub">Trip notes and photos coming soon.</div>' +
+    '</div>';
 }
 
 function renderBadges(c) {
@@ -1580,13 +1742,40 @@ function renderBadges(c) {
 function selectMapState(code) {
   var btn = document.querySelector('.state[data-code="' + code + '"]');
   if(!btn) return;
+
   var name = btn.dataset.name;
-  var pts = btn.dataset.points;
+  var pts = Number(btn.dataset.points);
   var seen = counts[code] || 0;
+  var found = seen > 0;
+  var history = stateHistory(code);
+  var first = history.length ? history[history.length - 1] : null;
+  var last = history.length ? history[0] : null;
+
   document.getElementById("selectedStateCode").textContent = code;
+
   document.getElementById("stateDetails").innerHTML =
-    '<div class="row"><div class="grow"><div class="title">' + name + '</div><div class="sub">Rarity value: ' + pts + '/10</div></div><div class="green">' + (seen ? "Found" : "Missing") + '</div></div>' +
-    '<div class="row"><div class="grow"><div class="title">Sightings</div><div class="sub">' + (seen || 0) + ' recorded on this trip</div></div></div>';
+    '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
+      '<div><div class="stateDetailName">' + name + '</div>' +
+      '<div class="stateDetailSub">' + (found ? "FOUND" : "MISSING") + '</div></div>' +
+      '<div class="stateDetailCode">' + code + '</div>' +
+    '</div>' +
+
+    '<div class="detailGrid">' +
+      '<div class="detailItem"><span>Rarity</span><strong>' + pts + '/10</strong></div>' +
+      '<div class="detailItem"><span>Sightings</span><strong>' + seen + '</strong></div>' +
+    '</div>' +
+
+    '<div class="detailRows">' +
+      '<div class="detailRow"><span>First Seen</span><strong>' + (first ? formatShortDate(first.ts) : "Not yet") + '</strong></div>' +
+      '<div class="detailRow"><span>First Trip</span><strong>' + (first ? (first.trip || tripName) : "â") + '</strong></div>' +
+      '<div class="detailRow"><span>Last Seen</span><strong>' + (last ? formatShortDate(last.ts) : "Not yet") + '</strong></div>' +
+      '<div class="detailRow"><span>Last Trip</span><strong>' + (last ? (last.trip || tripName) : "â") + '</strong></div>' +
+    '</div>' +
+
+    '<div class="notesPreview">' +
+      '<div class="title">Notes</div>' +
+      '<div class="sub">Trip notes and photos coming soon.</div>' +
+    '</div>';
 }
 
 function render() {
