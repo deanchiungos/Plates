@@ -854,79 +854,81 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 .legend.missing{ background:#D9DEE7; }
 
 
-/* v38.4 compact rules modal */
-.currentTripHeader {
-  position:relative;
+/* v39 first-launch onboarding, no permanent rules UI */
+.rulesButton,
+.headerHelpBtn,
+.headerHelpPill {
+  display:none !important;
 }
 
-.rulesButton {
-  position:absolute;
-  right:10px;
-  top:10px;
-  border:1px solid rgba(21,119,210,.28);
-  color:var(--blue);
-  background:#fff;
-  padding:6px 10px;
-  border-radius:999px;
-  font-size:11px;
-  font-weight:900;
-  z-index:2;
-}
-
-.rulesOverlay {
+.onboardingOverlay {
   position:fixed;
   inset:0;
-  z-index:100;
-  background:rgba(7,55,99,.38);
+  z-index:120;
+  background:rgba(7,55,99,.55);
   display:none;
   align-items:flex-end;
   justify-content:center;
   padding:18px;
 }
 
-.rulesOverlay.show {
+.onboardingOverlay.show {
   display:flex;
 }
 
-.rulesSheet {
+.onboardingSheet {
   width:100%;
   max-width:430px;
   background:#fff;
-  border-radius:24px;
-  padding:18px;
-  box-shadow:0 18px 60px rgba(0,0,0,.25);
+  border-radius:28px;
+  padding:20px 18px 18px;
+  box-shadow:0 18px 60px rgba(0,0,0,.28);
 }
 
-.rulesTop {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:8px;
+.onboardingPlate {
+  max-width:250px;
+  margin:0 auto 16px;
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+  border:3px solid var(--navy);
+  border-radius:18px;
+  padding:12px 14px;
+  text-align:center;
+  box-shadow:0 4px 0 rgba(7,55,99,.14);
 }
 
-.rulesTop h2 {
+.onboardingPlate h2 {
   margin:0;
   color:var(--navy);
-  font-size:24px;
-}
-
-.rulesTop button {
-  width:34px;
-  height:34px;
-  border-radius:999px;
-  background:#eef4fb;
-  color:var(--navy);
-  font-size:24px;
+  font-size:30px;
+  letter-spacing:6px;
   line-height:1;
 }
 
-.rulesIntro {
-  color:var(--muted);
-  font-weight:800;
-  margin-bottom:12px;
+.onboardingPlate div {
+  margin-top:7px;
+  color:#a52d2d;
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:1.4px;
 }
 
-.rulesMode {
+.onboardingSheet h1 {
+  margin:0;
+  color:var(--navy);
+  font-size:26px;
+  text-align:center;
+}
+
+.onboardingIntro {
+  margin:8px 0 14px;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:800;
+  text-align:center;
+  line-height:1.35;
+}
+
+.onboardingRule {
   border:1px solid var(--line);
   background:#f8fbff;
   border-radius:16px;
@@ -934,119 +936,27 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   margin-top:8px;
 }
 
-.rulesMode strong {
+.onboardingRule strong {
   display:block;
   color:var(--navy);
   font-size:15px;
   margin-bottom:3px;
 }
 
-.rulesMode span {
+.onboardingRule span {
   display:block;
   color:var(--muted);
   font-size:13px;
   font-weight:750;
+  line-height:1.3;
 }
 
-.rulesFooter {
-  margin-top:12px;
+.onboardingFooter {
+  margin:13px 0;
   color:var(--green);
   font-weight:900;
   font-size:13px;
   text-align:center;
-}
-
-
-
-
-/* v38.9 integrated How to Play pill */
-.headerArea,.top{position:relative;}
-
-.headerHelpPill{
-  position:absolute;
-  left:50%;
-  bottom:-18px;
-  transform:translateX(-50%);
-  padding:8px 18px;
-  border-radius:999px;
-  background:rgba(255,255,255,.96);
-  border:1px solid rgba(21,119,210,.18);
-  color:var(--navy);
-  font-size:13px;
-  font-weight:900;
-  box-shadow:0 4px 12px rgba(7,55,99,.08);
-  z-index:20;
-}
-
-
-/* v38.10 left plate + right How to Play */
-.top {
-  position:relative;
-  margin-bottom:12px;
-}
-
-.headerRow {
-  display:grid;
-  grid-template-columns:minmax(0, 1fr) auto;
-  align-items:center;
-  gap:10px;
-  padding:0 6px;
-}
-
-.headerRow .logo {
-  max-width:none;
-  width:100%;
-  margin:0;
-  padding:14px 14px 15px;
-  border-radius:18px;
-}
-
-.headerRow .logo h1 {
-  font-size:32px;
-  letter-spacing:5px;
-}
-
-.headerRow .logo .tagline {
-  font-size:9px;
-  letter-spacing:1.4px;
-  margin-top:8px;
-}
-
-.headerHelpPill {
-  min-width:84px;
-  padding:10px 10px;
-  border-radius:16px;
-  background:rgba(255,255,255,.96);
-  border:1px solid rgba(21,119,210,.22);
-  color:var(--navy);
-  font-size:12px;
-  line-height:1.1;
-  font-weight:950;
-  box-shadow:0 4px 12px rgba(7,55,99,.08);
-  text-align:center;
-}
-
-@media (max-width:380px) {
-  .headerRow {
-    gap:8px;
-    padding:0 3px;
-  }
-
-  .headerHelpPill {
-    min-width:76px;
-    font-size:11px;
-    padding:9px 8px;
-  }
-
-  .headerRow .logo h1 {
-    font-size:29px;
-    letter-spacing:4px;
-  }
-
-  .headerRow .logo .tagline {
-    font-size:8px;
-    letter-spacing:1.1px;
-  }
 }
 
 </style>
@@ -1055,31 +965,34 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 <body>
 <div class="toast" id="toast">Collected</div>
 
-<div class="rulesOverlay" id="rulesOverlay">
-  <div class="rulesSheet">
-    <div class="rulesTop">
-      <h2>How to Play</h2>
-      <button id="rulesClose" type="button">Ã</button>
+<div class="onboardingOverlay" id="onboardingOverlay">
+  <div class="onboardingSheet">
+    <div class="onboardingPlate">
+      <h2>PLATES</h2>
+      <div>THE LICENSE PLATE GAME</div>
     </div>
 
-    <div class="rulesIntro">Spot license plates from different states while you're in the car.</div>
+    <h1>Welcome to PLATES</h1>
+    <p class="onboardingIntro">Spot license plates from different states while you're in the car.</p>
 
-    <div class="rulesMode">
+    <div class="onboardingRule">
       <strong>Classic</strong>
-      <span>Each state counts once. Goal: collect all 50.</span>
+      <span>Collect all 50 states. Each state counts once.</span>
     </div>
 
-    <div class="rulesMode">
+    <div class="onboardingRule">
       <strong>Weighted</strong>
       <span>Rare states are worth more points. Highest score wins.</span>
     </div>
 
-    <div class="rulesMode">
+    <div class="onboardingRule">
       <strong>Unlimited</strong>
       <span>Every plate counts, even repeats. Keep spotting.</span>
     </div>
 
-    <div class="rulesFooter">Unlock badges, save road trips and earn bragging rights.</div>
+    <p class="onboardingFooter">Unlock badges, save road trips and earn bragging rights.</p>
+
+    <button class="primary" id="onboardingDone" type="button">Got It</button>
   </div>
 </div>
 
@@ -1095,18 +1008,15 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
 <main class="app">
   <section class="top">
-    <div class="headerRow">
-      <div class="logo">
-        <h1>PLATES</h1>
-        <div class="tagline">THE LICENSE PLATE GAME</div>
-      </div>
-      <button class="headerHelpPill" id="rulesButton" type="button">How to Play</button>
+    <div class="logo">
+            <h1>PLATES</h1>
+      <div class="tagline">THE LICENSE PLATE GAME</div>
     </div>
   </section>
-<section id="gameScreen" class="screen">
+
+  <section id="gameScreen" class="screen">
     <div class="card">
       <div class="currentTripHeader" id="tripPillBtn">
-        
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
       </div>
@@ -1410,6 +1320,23 @@ var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBe
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
+var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
+
+
+function showOnboardingIfNeeded() {
+  if(!hasSeenOnboarding) {
+    var overlay = document.getElementById("onboardingOverlay");
+    if(overlay) overlay.classList.add("show");
+  }
+}
+
+function dismissOnboarding() {
+  hasSeenOnboarding = true;
+  localStorage.platesSeenOnboarding = "true";
+  var overlay = document.getElementById("onboardingOverlay");
+  if(overlay) overlay.classList.remove("show");
+}
+
 
 function save() {
   localStorage.platesMode = mode;
@@ -1797,6 +1724,8 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   });
 
   document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
+  var onboardingDone = document.getElementById("onboardingDone");
+  if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
   document.getElementById("endTripBtn").onclick = endCurrentTrip;
   document.getElementById("renameTripBtn").onclick = renameTrip;
   document.getElementById("newTripBtn").onclick = newTrip;
@@ -1808,33 +1737,11 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
     document.getElementById("celebrationOverlay").classList.remove("show");
     setView("share");
   };
-
-  var rulesBtn = document.getElementById("rulesButton");
-  var rulesOverlay = document.getElementById("rulesOverlay");
-  var rulesClose = document.getElementById("rulesClose");
-
-  if(rulesBtn && rulesOverlay) {
-    rulesBtn.onclick = function(e){
-      e.stopPropagation();
-      rulesOverlay.classList.add("show");
-    };
-  }
-
-  if(rulesClose && rulesOverlay) {
-    rulesClose.onclick = function(){
-      rulesOverlay.classList.remove("show");
-    };
-  }
-
-  if(rulesOverlay) {
-    rulesOverlay.onclick = function(e){
-      if(e.target.id === "rulesOverlay") rulesOverlay.classList.remove("show");
-    };
-  }
 }
 
 attachHandlers();
 render();
+showOnboardingIfNeeded();
 </script>
 </body>
 </html>
