@@ -1575,6 +1575,17 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   margin-top:12px;
 }
 
+
+.familyEmpty {
+  border:1px dashed rgba(21,101,192,.28);
+  border-radius:18px;
+  padding:18px;
+  text-align:center;
+  color:var(--muted);
+  font-weight:850;
+  background:#f8fbff;
+}
+
 </style>
 </head>
 
@@ -1897,7 +1908,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
       <div class="panelTitle"><span>How Family Works</span><span>V1</span></div>
       <div class="recent">
         <div class="row"><div class="grow"><div class="title">Choose Current Player</div><div class="sub">Use the player picker on the Game screen before spotting plates</div></div></div>
-        <div class="row"><div class="grow"><div class="title">Shared Roadtrip</div><div class="sub">This version keeps one shared roadtrip while tracking who is currently playing</div></div></div>
+        <div class="row"><div class="grow"><div class="title">Shared Roadtrip</div><div class="sub">Track family members or friends on one shared roadtrip</div></div></div>
       </div>
     </div>
   </section>
@@ -1955,8 +1966,23 @@ var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBe
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
-var players = JSON.parse(localStorage.platesPlayers || '[{"id":"p1","name":"Dean"}]');
+var players;
+try {
+  players = JSON.parse(localStorage.platesPlayers || '[{"id":"p1","name":"Dean"}]');
+} catch(e) {
+  players = [{"id":"p1","name":"Dean"}];
+}
+if(!Array.isArray(players) || !players.length) {
+  players = [{"id":"p1","name":"Dean"}];
+}
+players = players.filter(function(p){ return p && p.id && p.name; });
+if(!players.length) {
+  players = [{"id":"p1","name":"Dean"}];
+}
 var currentPlayerId = localStorage.platesCurrentPlayerId || (players[0] && players[0].id) || "p1";
+if(!players.some(function(p){ return p.id === currentPlayerId; })) {
+  currentPlayerId = players[0].id;
+}
 var pendingPhotoStateCode = "";
 var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
@@ -2511,6 +2537,11 @@ function renderFamily(c, unlockedBadges) {
 
   var list = document.getElementById("familyList");
   if(list) {
+    if(!players.length) {
+      list.innerHTML = '<div class="familyEmpty">No players yet</div>';
+      return;
+    }
+
     list.innerHTML = players.map(function(p){
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
       return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
