@@ -794,7 +794,7 @@ html,body {
   fill:#d9dee7;
   stroke:#fff;
   stroke-width:2;
-  cursor:pointer;
+  
   transition:fill .18s ease, transform .18s ease;
 }
 
@@ -1102,7 +1102,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
 /* v40.5 trips polish */
 .statBtn {
-  cursor:pointer;
+  
   min-height:78px;
 }
 
@@ -1328,7 +1328,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
 /* v41.1 map is view-only */
 .svgState {
-  cursor:pointer;
+  
 }
 
 .mapViewNote {
@@ -1392,105 +1392,64 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 
-/* v41.4 current trip + badge polish */
+/* v41.5 simplified badges */
 #tripName,
-#tripModeSummary {
-  text-align:left;
-}
+#tripModeSummary { text-align:left; }
+#tripModeSummary { display:block; width:100%; }
 
-#tripModeSummary {
-  display:block;
-  width:100%;
-}
-
-.currentTripRow,
-#tripName,
-#tripModeSummary {
-  cursor:pointer;
-}
-
-.currentTripRow:active,
-#tripName:active {
-  transform:scale(.99);
-}
-
-/* badge tiles should feel like actual badges */
-.badgeGrid {
+.badgeGrid{
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:12px;
+  gap:14px;
 }
 
-.badge {
+.badge{
   position:relative;
-  min-height:142px;
-  border-radius:20px;
-  padding:14px 10px 12px;
-  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
-  border:1px solid rgba(7,55,99,.14);
-  box-shadow:0 5px 14px rgba(7,55,99,.08);
-  opacity:.48;
-  cursor:pointer;
+  min-height:110px;
+  padding:18px 16px;
+  border-radius:22px;
+  border:1px solid rgba(7,55,99,.12);
+  background:#f7f9fc;
+  opacity:.55;
+  box-shadow:0 2px 8px rgba(7,55,99,.05);
 }
 
-.badge.unlocked {
+.badge.unlocked{
   opacity:1;
-  background:linear-gradient(180deg,#fff8d9 0%,#ffffff 100%);
-  border-color:rgba(246,200,68,.72);
+  background:linear-gradient(180deg,#fffdf2 0%, #fff8d9 100%);
+  border-color:rgba(246,200,68,.55);
+  box-shadow:0 4px 12px rgba(246,200,68,.18);
 }
 
-.badge.unlocked:after {
+.badge.unlocked:after{
   content:"â";
   position:absolute;
-  right:10px;
-  top:10px;
-  width:22px;
-  height:22px;
-  border-radius:999px;
-  background:var(--green);
+  top:12px;
+  right:12px;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background:#34a853;
   color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+}
+
+.badgeIcon{ display:none; }
+
+.badgeName{
+  font-size:22px;
+  font-weight:900;
+  color:var(--navy);
+  margin-bottom:8px;
+}
+
+.badgeDesc{
   font-size:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-}
-
-.badgeIcon {
-  width:54px;
-  height:60px;
-  margin:0 auto 10px;
-  border-radius:16px 16px 22px 22px;
-  background:linear-gradient(180deg,#eaf3ff 0%,#ffffff 100%);
-  border:3px solid rgba(7,55,99,.18);
-  color:var(--navy);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-  font-size:17px;
-  clip-path:polygon(50% 0%,90% 12%,90% 58%,50% 100%,10% 58%,10% 12%);
-  box-shadow:inset 0 0 0 2px rgba(255,255,255,.65),0 5px 10px rgba(7,55,99,.10);
-}
-
-.badge.unlocked .badgeIcon {
-  background:linear-gradient(180deg,#35a852 0%,#1f8f43 100%);
-  color:#fff;
-  border-color:rgba(7,55,99,.28);
-}
-
-.badgeName {
-  font-size:13px;
-  font-weight:950;
-  color:var(--navy);
-  line-height:1.12;
-}
-
-.badgeDesc {
-  margin-top:4px;
-  font-size:11px;
-  font-weight:800;
+  line-height:1.3;
   color:var(--muted);
-  line-height:1.22;
+  font-weight:700;
 }
 
 .badgeModalOverlay {
@@ -1562,21 +1521,29 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   color:var(--muted);
 }
 
+
+/* v41.6 current trip click fix */
+.clickableTrip,
+.currentTripRow {
+  cursor:pointer;
+}
+
+.clickableTrip:active,
+.currentTripRow:active {
+  transform:scale(.99);
+}
+
+.currentTripRow {
+  transition:transform .12s ease;
+}
+
 </style>
 </head>
 
 <body>
 <div class="toast" id="toast">Collected</div>
 
-<div class="badgeModalOverlay" id="badgeModalOverlay">
-  <div class="badgeModal">
-    <div class="badgeModalIcon" id="badgeModalIcon">1</div>
-    <h2 id="badgeModalTitle">Badge</h2>
-    <p id="badgeModalDesc">Badge details</p>
-    <div class="badgeStatus" id="badgeModalStatus">Unlocked</div>
-    <button class="primary" id="badgeModalClose" type="button">Keep Playing</button>
-  </div>
-</div>
+
 <input id="memoryPhotoInput" type="file" accept="image/*" style="display:none">
 
 <div class="onboardingOverlay" id="onboardingOverlay">
@@ -1630,7 +1597,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
   <section id="gameScreen" class="screen">
     <div class="card">
-      <div class="currentTripHeader" id="tripPillBtn">
+      <div class="currentTripHeader clickableTrip" id="tripPillBtn">
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Roadtrip</span>
       </div>
@@ -2358,46 +2325,24 @@ function selectMapState(code) {
 
 
 
-function openBadgeModal(btn) {
-  var overlay = document.getElementById("badgeModalOverlay");
-  if(!overlay) return;
-
-  var icon = btn.dataset.badgeIcon || "";
-  var name = btn.dataset.badgeName || "Badge";
-  var desc = btn.dataset.badgeDesc || "";
-  var unlocked = btn.dataset.badgeUnlocked === "true";
-
-  document.getElementById("badgeModalIcon").textContent = icon;
-  document.getElementById("badgeModalTitle").textContent = name;
-  document.getElementById("badgeModalDesc").textContent = desc;
-  document.getElementById("badgeModalStatus").textContent = unlocked ? "Unlocked" : "Locked";
-  document.getElementById("badgeModalStatus").classList.toggle("locked", !unlocked);
-
-  overlay.classList.add("show");
-}
-
-function closeBadgeModal() {
-  var overlay = document.getElementById("badgeModalOverlay");
-  if(overlay) overlay.classList.remove("show");
-}
 
 function renderBadges(c) {
   var badges = [
-    ["1","First Plate","Spot your first state",c>=1],
-    ["10","10 States","Find 10 states",c>=10],
-    ["25","Halfway There","Find 25 states",c>=25],
-    ["50","All 50 States","Complete the map",c>=50],
-    ["AK","Alaska + Hawaii","Find Alaska and Hawaii",hasStates(["AK","HI"])],
-    ["WC","West Coast","Find CA, OR and WA",hasStates(["CA","OR","WA"])],
-    ["R5","Rare Hunter","Find 5 rare states",rareCollectedCount()>=5],
-    ["100","Road Warrior","Log 100 sightings",totalSightings()>=100]
+    ["First Plate","Spot your first state",c>=1],
+    ["10 States","Find 10 states",c>=10],
+    ["Halfway There","Find 25 states",c>=25],
+    ["All 50 States","Complete the map",c>=50],
+    ["Alaska + Hawaii","Find Alaska and Hawaii",hasStates(["AK","HI"])],
+    ["West Coast","Find CA, OR and WA",hasStates(["CA","OR","WA"])],
+    ["Rare Hunter","Find 5 rare states",rareCollectedCount()>=5],
+    ["Road Warrior","Log 100 sightings",totalSightings()>=100]
   ];
+
   document.getElementById("badges").innerHTML = badges.map(function(b){
-    return '<button class="badge ' + (b[3] ? "unlocked" : "") + '" data-badge-icon="' + b[0] + '" data-badge-name="' + b[1] + '" data-badge-desc="' + b[2] + '" data-badge-unlocked="' + (b[3] ? "true" : "false") + '" type="button">' +
-      '<div class="badgeIcon">' + b[0] + '</div>' +
-      '<div class="badgeName">' + b[1] + '</div>' +
-      '<div class="badgeDesc">' + b[2] + '</div>' +
-      '</button>';
+    return '<div class="badge ' + (b[2] ? "unlocked" : "") + '">' +
+      '<div class="badgeName">' + b[0] + '</div>' +
+      '<div class="badgeDesc">' + b[1] + '</div>' +
+      '</div>';
   }).join("");
 }
 
@@ -2516,7 +2461,7 @@ function render() {
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
   var currentTripHtml =
-    '<div class="row tripRow currentTripRow"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Current</div></div>';
+    '<div class="row tripRow currentTripRow" data-action="rename-current-trip"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Current</div></div>';
 
   var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
     var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
@@ -2547,12 +2492,7 @@ function render() {
       renameSavedTrip(Number(btn.dataset.tripIndex));
     };
   });
-
-  document.querySelectorAll(".currentTripRow").forEach(function(row){
-    row.onclick = function(){ renameTrip(); };
-  });
-
-  document.querySelectorAll(".deleteTripBtn").forEach(function(btn){
+document.querySelectorAll(".deleteTripBtn").forEach(function(btn){
     btn.onclick = function(e){
       e.stopPropagation();
       deleteSavedTrip(Number(btn.dataset.tripIndex));
@@ -2565,6 +2505,12 @@ function render() {
 }
 
 function attachHandlers() {
+  document.body.addEventListener("click", function(e){
+    if(e.target.closest && e.target.closest('[data-action="rename-current-trip"]')) {
+      renameTrip();
+      return;
+    }
+  });
   document.querySelectorAll(".state").forEach(function(btn){
     btn.onclick = function(){ tapState(btn); };
   });
@@ -2583,22 +2529,10 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
   });
 
-  document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
+  var tripPillBtn = document.getElementById("tripPillBtn");
+  if(tripPillBtn) tripPillBtn.onclick = function(){ setView("trips"); };
 
-  document.body.addEventListener("click", function(e){
-    if(e.target.closest && e.target.closest(".badge")) {
-      openBadgeModal(e.target.closest(".badge"));
-    }
-  });
-
-  var badgeModalClose = document.getElementById("badgeModalClose");
-  if(badgeModalClose) badgeModalClose.onclick = closeBadgeModal;
-
-  var badgeModalOverlay = document.getElementById("badgeModalOverlay");
-  if(badgeModalOverlay) {
-    badgeModalOverlay.onclick = function(e){
-      if(e.target.id === "badgeModalOverlay") closeBadgeModal();
-    };
+  ;
   }
 
   document.body.addEventListener("click", function(e){
