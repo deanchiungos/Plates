@@ -1353,7 +1353,8 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>State Details</span><span id="selectedStateCode">Tap map</span></div>
+      <div class="panelTitle"><span>State Details</span>
+</div>
       <div class="recent" id="stateDetails">Tap any state on the map to see its details.</div>
     </div>
   </section>
@@ -1691,7 +1692,6 @@ function selectMapState(code) {
   var first = history.length ? history[history.length - 1] : null;
   var last = history.length ? history[0] : null;
 
-  document.getElementById("selectedStateCode").textContent = code;
 
   document.getElementById("stateDetails").innerHTML =
     '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
@@ -1751,7 +1751,6 @@ function selectMapState(code) {
   var first = history.length ? history[history.length - 1] : null;
   var last = history.length ? history[0] : null;
 
-  document.getElementById("selectedStateCode").textContent = code;
 
   document.getElementById("stateDetails").innerHTML =
     '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
