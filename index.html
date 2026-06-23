@@ -2820,7 +2820,7 @@ function render() {
       '<button class="deleteTripBtn" data-trip-index="' + i + '" type="button">Delete</button>' +
     '</div>' +
   '</div>';
-}).join("") : '<div class="emptyHistory">No saved roadtrips yet.</div>';
+
   }).join("") : '<div class="emptyHistory">No saved roadtrips yet.</div>';
 
   document.getElementById("tripHistoryList").innerHTML = currentTripHtml + historyHtml;
