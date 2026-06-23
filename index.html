@@ -1658,6 +1658,16 @@ body {
   pointer-events:none;
 }
 
+
+/* v45.1 leaderboard emoji fix */
+#leaderboardList .title {
+  white-space:nowrap;
+}
+
+#leaderboardList .green {
+  white-space:nowrap;
+}
+
 </style>
 </head>
 
@@ -2655,7 +2665,7 @@ function renderFamily(c, unlockedBadges) {
     var standings = playerStats();
 
     board.innerHTML = standings.map(function(p,i){
-      var medal = i === 0 ? "ð¥" : i === 1 ? "ð¥" : i === 2 ? "ð¥" : "#" + (i + 1);
+      var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
 
       return '<div class="row"><div class="grow"><div class="title">' +
         medal + ' ' + p.name +
