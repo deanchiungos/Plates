@@ -1173,6 +1173,48 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:900;
 }
 
+
+/* v40.7 map border + recent sightings cleanup */
+.interactiveMapWrap,
+.usMap {
+  border:1px solid rgba(7,55,99,.14);
+  box-shadow:0 4px 12px rgba(7,55,99,.06);
+}
+
+.interactiveUSMap {
+  border-radius:16px;
+}
+
+.recentItem {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  padding:14px 16px;
+}
+
+.recentState {
+  color:var(--navy);
+  font-size:22px;
+  font-weight:950;
+  line-height:1;
+}
+
+.recentMeta {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.recentPts {
+  color:var(--green);
+  font-weight:950;
+}
+
 </style>
 </head>
 
@@ -1648,12 +1690,17 @@ function tapState(btn) {
   var before = collectedCount();
 
   if(mode === "classic" || mode === "weighted") {
-    counts[code] = counts[code] ? 0 : 1;
+    if(counts[code]) {
+      counts[code] = 0;
+      log = log.filter(function(item){ return item.code !== code; });
+    } else {
+      counts[code] = 1;
+    }
   } else {
     counts[code] = (counts[code] || 0) + 1;
   }
 
-  if(counts[code]) {
+  if(counts[code] && (!wasCollected || mode === "unlimited")) {
     log.unshift({ code:code, name:name, points:points, mode:mode, trip:tripName, ts:new Date().toISOString() });
     log = log.slice(0, 30);
     btn.classList.add("celebrate");
@@ -2003,7 +2050,7 @@ function render() {
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
-    return '<div class="row"><div class="grow"><div class="title">' + x.name + '</div><div class="sub">Just now</div></div><div class="green">' + pts + '</div></div>';
+    return '<div class="row recentItem"><div class="recentState">' + x.name + '</div><div class="recentMeta"><span class="recentTime">Just now</span><span class="recentPts">' + pts + '</span></div></div>';
   }).join("") : "No plates yet.";
 
   renderBadges(c);
