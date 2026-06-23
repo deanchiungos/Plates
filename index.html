@@ -1215,11 +1215,136 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:950;
 }
 
+
+/* v41 Trip Memories functional */
+.memoryActions{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin:12px 0;
+  flex-wrap:wrap;
+}
+
+.memoryBtn{
+  border:1px solid rgba(21,119,210,.22);
+  background:#fff;
+  color:var(--navy);
+  border-radius:999px;
+  padding:10px 14px;
+  font-size:13px;
+  font-weight:900;
+}
+
+.memoryBtn:active{
+  transform:scale(.98);
+}
+
+.memoryEmpty{
+  color:var(--muted);
+  font-size:14px;
+  font-weight:850;
+  text-align:center;
+  padding:8px 0 2px;
+}
+
+.memoryList{
+  display:grid;
+  gap:8px;
+  margin-top:10px;
+}
+
+.memoryItem{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:15px;
+  padding:10px;
+  text-align:left;
+}
+
+.memoryThumb{
+  width:48px;
+  height:48px;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid var(--line);
+  flex:0 0 auto;
+}
+
+.memoryNoteIcon{
+  width:48px;
+  height:48px;
+  border-radius:12px;
+  background:#eaf3ff;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  font-weight:950;
+  flex:0 0 auto;
+}
+
+.memoryText{
+  min-width:0;
+  flex:1;
+}
+
+.memoryTitle{
+  color:var(--navy);
+  font-size:14px;
+  font-weight:950;
+  line-height:1.1;
+}
+
+.memoryBody{
+  color:var(--muted);
+  font-size:12px;
+  font-weight:750;
+  line-height:1.25;
+  margin-top:3px;
+}
+
+.memoryDate{
+  color:var(--muted);
+  font-size:11px;
+  font-weight:800;
+  margin-top:4px;
+}
+
+.deleteMemoryBtn{
+  border:1px solid rgba(180,59,59,.22);
+  color:#b43b3b;
+  background:#fff;
+  border-radius:999px;
+  padding:7px 9px;
+  font-size:11px;
+  font-weight:900;
+  flex:0 0 auto;
+}
+
+
+/* v41.1 map is view-only */
+.svgState {
+  cursor:pointer;
+}
+
+.mapViewNote {
+  margin-top:10px;
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+}
+
 </style>
 </head>
 
 <body>
 <div class="toast" id="toast">Collected</div>
+<input id="memoryPhotoInput" type="file" accept="image/*" style="display:none">
 
 <div class="onboardingOverlay" id="onboardingOverlay">
   <div class="onboardingSheet">
@@ -1477,6 +1602,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
         </svg>
       </div>
 
+      <div class="mapViewNote">Tap a state to view details. Use Game to add or remove states.</div>
       <div class="mapLegend">
         <div><span class="legend found"></span> Found</div>
         <div><span class="legend rare"></span> Rare</div>
@@ -1573,10 +1699,12 @@ var log = JSON.parse(localStorage.platesLog || "[]");
 var tripName = localStorage.platesTripName || "Summer Roadtrip";
 var tripCount = Number(localStorage.platesTripCount || 1);
 var savedTrips = JSON.parse(localStorage.platesSavedTrips || "[]");
+var tripMemories = JSON.parse(localStorage.platesTripMemories || "[]");
 var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBestTrip || 0);
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
+var pendingPhotoStateCode = "";
 var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
 
@@ -1603,6 +1731,7 @@ function save() {
   localStorage.platesTripName = tripName;
   localStorage.platesTripCount = tripCount;
   localStorage.platesSavedTrips = JSON.stringify(savedTrips);
+  localStorage.platesTripMemories = JSON.stringify(tripMemories);
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
@@ -1739,7 +1868,11 @@ function setView(newView) {
 function renameTrip() {
   var n = prompt("Trip name:", tripName);
   if(n && n.trim()) {
+    var oldName = tripName;
     tripName = n.trim();
+    tripMemories.forEach(function(m){
+      if(m.trip === oldName) m.trip = tripName;
+    });
     save();
     render();
     toast("Trip renamed");
@@ -1754,6 +1887,7 @@ function currentTripSnapshot() {
     score: totalScore(),
     sightings: totalSightings(),
     badges: badgeCount(collectedCount()),
+    memories: tripMemories.filter(function(m){ return m.trip === tripName; }),
     date: new Date().toLocaleDateString()
   };
 }
@@ -1817,7 +1951,129 @@ function stateHistory(code) {
   return log.filter(function(x){ return x.code === code; });
 }
 
+
+function memoryDate(iso) {
+  return formatShortDate(iso);
+}
+
+function stateNameForCode(code) {
+  var btn = document.querySelector('.state[data-code="' + code + '"]');
+  return btn ? btn.dataset.name : code;
+}
+
+function memoriesForState(code) {
+  return tripMemories.filter(function(m){
+    return m.trip === tripName && m.stateCode === code;
+  });
+}
+
+function renderMemoryList(code) {
+  var items = memoriesForState(code);
+  if(!items.length) {
+    return '<div class="memoryEmpty">No memories saved yet</div>';
+  }
+
+  return '<div class="memoryList">' + items.map(function(m){
+    var media = m.type === "photo" && m.photo
+      ? '<img class="memoryThumb" src="' + m.photo + '" alt="Trip memory photo">'
+      : '<div class="memoryNoteIcon">Note</div>';
+
+    var body = m.type === "photo"
+      ? (m.caption || "Photo memory")
+      : (m.note || "");
+
+    return '<div class="memoryItem">' +
+      media +
+      '<div class="memoryText"><div class="memoryTitle">' + (m.title || "Trip memory") + '</div>' +
+      '<div class="memoryBody">' + body + '</div>' +
+      '<div class="memoryDate">' + memoryDate(m.ts) + '</div></div>' +
+      '<button class="deleteMemoryBtn" data-memory-id="' + m.id + '" type="button">Delete</button>' +
+    '</div>';
+  }).join("") + '</div>';
+}
+
+function addMemoryNote(code) {
+  var name = stateNameForCode(code);
+  var title = prompt("Memory title:", name + " sighting");
+  if(!title || !title.trim()) return;
+
+  var note = prompt("Add a note:", "");
+  if(note === null) return;
+
+  tripMemories.unshift({
+    id:"m" + Date.now() + Math.floor(Math.random() * 1000),
+    type:"note",
+    trip:tripName,
+    stateCode:code,
+    stateName:name,
+    title:title.trim(),
+    note:(note || "").trim(),
+    ts:new Date().toISOString()
+  });
+
+  save();
+  render();
+  selectMapState(code);
+  toast("Memory saved");
+}
+
+function addMemoryPhoto(code) {
+  pendingPhotoStateCode = code;
+  var input = document.getElementById("memoryPhotoInput");
+  if(input) {
+    input.value = "";
+    input.click();
+  }
+}
+
+function saveSelectedPhoto(file) {
+  if(!file || !pendingPhotoStateCode) return;
+
+  var code = pendingPhotoStateCode;
+  var name = stateNameForCode(code);
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    var caption = prompt("Photo caption:", name + " plate");
+    if(caption === null) caption = "";
+
+    tripMemories.unshift({
+      id:"m" + Date.now() + Math.floor(Math.random() * 1000),
+      type:"photo",
+      trip:tripName,
+      stateCode:code,
+      stateName:name,
+      title:caption.trim() || "Photo memory",
+      caption:caption.trim(),
+      photo:e.target.result,
+      ts:new Date().toISOString()
+    });
+
+    pendingPhotoStateCode = "";
+    save();
+    render();
+    selectMapState(code);
+    toast("Photo saved");
+  };
+
+  reader.readAsDataURL(file);
+}
+
+function deleteMemory(id) {
+  var item = tripMemories.find(function(m){ return m.id === id; });
+  if(!item) return;
+  if(confirm("Delete this memory?")) {
+    tripMemories = tripMemories.filter(function(m){ return m.id !== id; });
+    save();
+    render();
+    if(selectedState) selectMapState(selectedState);
+    toast("Memory deleted");
+  }
+}
+
 function selectMapState(code) {
+  selectedState = code;
+
   var btn = document.querySelector('.state[data-code="' + code + '"]');
   if(!btn) return;
 
@@ -1829,7 +2085,6 @@ function selectMapState(code) {
   var first = history.length ? history[history.length - 1] : null;
   var last = history.length ? history[0] : null;
 
-  // If a state was collected before timestamps existed, show Unknown instead of Not yet
   var firstSeen = first && first.ts ? formatShortDate(first.ts) : (found ? "Unknown" : "Not yet");
   var lastSeen = last && last.ts ? formatShortDate(last.ts) : (found ? "Unknown" : "Not yet");
   var firstTrip = first && first.trip ? first.trip : (found ? tripName : "Unknown");
@@ -1856,9 +2111,14 @@ function selectMapState(code) {
 
     '<div class="notesPreview">' +
       '<div class="title">Trip Memories</div>' +
-      '<div class="sub">Add notes, photos & memories</div>' +
+      '<div class="memoryActions">' +
+        '<button class="memoryBtn memoryBtnNote" data-state-code="' + code + '" type="button">Add Note</button>' +
+        '<button class="memoryBtn memoryBtnPhoto" data-state-code="' + code + '" type="button">Add Photo</button>' +
+      '</div>' +
+      renderMemoryList(code) +
     '</div>';
 }
+
 
 function renderBadges(c) {
   var badges = [
@@ -1878,50 +2138,6 @@ function renderBadges(c) {
       '<div class="badgeDesc">' + b[2] + '</div>' +
       '</div>';
   }).join("");
-}
-
-
-function selectMapState(code) {
-  var btn = document.querySelector('.state[data-code="' + code + '"]');
-  if(!btn) return;
-
-  var name = btn.dataset.name;
-  var pts = Number(btn.dataset.points);
-  var seen = counts[code] || 0;
-  var found = seen > 0;
-  var history = stateHistory(code);
-  var first = history.length ? history[history.length - 1] : null;
-  var last = history.length ? history[0] : null;
-
-  // If a state was collected before timestamps existed, show Unknown instead of Not yet
-  var firstSeen = first && first.ts ? formatShortDate(first.ts) : (found ? "Unknown" : "Not yet");
-  var lastSeen = last && last.ts ? formatShortDate(last.ts) : (found ? "Unknown" : "Not yet");
-  var firstTrip = first && first.trip ? first.trip : (found ? tripName : "Unknown");
-  var lastTrip = last && last.trip ? last.trip : (found ? tripName : "Unknown");
-
-  document.getElementById("stateDetails").innerHTML =
-    '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
-      '<div><div class="stateDetailName">' + name + '</div>' +
-      '<div class="stateDetailSub">' + (found ? "FOUND" : "MISSING") + '</div></div>' +
-      '<div class="stateDetailCode">' + code + '</div>' +
-    '</div>' +
-
-    '<div class="detailGrid">' +
-      '<div class="detailItem"><span>Rarity</span><strong>' + pts + '/10</strong></div>' +
-      '<div class="detailItem"><span>Sightings</span><strong>' + seen + '</strong></div>' +
-    '</div>' +
-
-    '<div class="detailRows">' +
-      '<div class="detailRow"><span>First Seen</span><strong>' + firstSeen + '</strong></div>' +
-      '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
-      '<div class="detailRow"><span>Last Seen</span><strong>' + lastSeen + '</strong></div>' +
-      '<div class="detailRow"><span>Last Roadtrip</span><strong>' + lastTrip + '</strong></div>' +
-    '</div>' +
-
-    '<div class="notesPreview">' +
-      '<div class="title">Trip Memories</div>' +
-      '<div class="sub">Add notes, photos & memories</div>' +
-    '</div>';
 }
 
 
@@ -2092,8 +2308,6 @@ function attachHandlers() {
     cell.onclick = function(){
       var code = cell.dataset.mapCode;
       selectMapState(code);
-      var btn = document.querySelector('.state[data-code="' + code + '"]');
-      if(btn) tapState(btn);
     };
   });
 document.querySelectorAll("[data-mode]").forEach(function(btn){
@@ -2105,6 +2319,25 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   });
 
   document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
+
+  document.body.addEventListener("click", function(e){
+    if(e.target.classList.contains("memoryBtnNote")) {
+      addMemoryNote(e.target.dataset.stateCode);
+    }
+    if(e.target.classList.contains("memoryBtnPhoto")) {
+      addMemoryPhoto(e.target.dataset.stateCode);
+    }
+    if(e.target.classList.contains("deleteMemoryBtn")) {
+      deleteMemory(e.target.dataset.memoryId);
+    }
+  });
+
+  var photoInput = document.getElementById("memoryPhotoInput");
+  if(photoInput) {
+    photoInput.onchange = function(){
+      if(photoInput.files && photoInput.files[0]) saveSelectedPhoto(photoInput.files[0]);
+    };
+  }
   var tripsStatBtn = document.getElementById("tripsStatBtn");
   var badgesStatBtn = document.getElementById("badgesStatBtn");
   var bestStatBtn = document.getElementById("bestStatBtn");
