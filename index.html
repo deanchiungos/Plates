@@ -1381,6 +1381,16 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   background:#f8fbff;
 }
 
+
+/* v41.3 badge celebration cleanup */
+.celebrationBox h2 {
+  color:var(--navy);
+}
+
+.celebrationBox .primary {
+  margin-top:4px;
+}
+
 </style>
 </head>
 
@@ -1423,7 +1433,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   <div class="celebrationBox">
     <h2 id="celebrationTitle">Nice Find</h2>
     <p id="celebrationText">You added a new plate.</p>
-    <button class="primary" id="celebrationShare">View Share Card</button>
+    <button class="primary" id="celebrationShare">Keep Playing</button>
     <br><br>
     <button class="secondary" id="celebrationClose">Keep Playing</button>
   </div>
@@ -1884,10 +1894,10 @@ function tapState(btn) {
     if(!wasCollected) {
       toast("Collected " + name);
       var after = collectedCount();
-      if(after === 1) showCelebration("First Plate", "You started your collection with " + name + ".");
-      else if(after === 10) showCelebration("10 States", "You found 10 states on this trip.");
-      else if(after === 25) showCelebration("Halfway There", "25 states collected.");
-      else if(after === 50) showCelebration("All 50 States", "You completed the game.");
+      if(after === 1) showCelebration("Badge Unlocked", "You earned First Plate by spotting " + name + ".");
+      else if(after === 10) showCelebration("Badge Unlocked", "You earned 10 States by finding 10 plates.");
+      else if(after === 25) showCelebration("Badge Unlocked", "You earned Halfway There by collecting 25 states.");
+      else if(after === 50) showCelebration("All 50 States", "You did it â every state is now on your plate.");
       
     }
   }
@@ -2402,7 +2412,6 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   document.getElementById("celebrationClose").onclick = function(){ document.getElementById("celebrationOverlay").classList.remove("show"); };
   document.getElementById("celebrationShare").onclick = function(){
     document.getElementById("celebrationOverlay").classList.remove("show");
-    setView("share");
   };
 }
 
