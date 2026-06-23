@@ -1635,6 +1635,15 @@ body {
   white-space:nowrap;
 }
 
+
+/* v44 team attribution */
+.recentFinder {
+  color:var(--muted);
+  font-size:12px;
+  font-weight:850;
+  margin-top:4px;
+}
+
 </style>
 </head>
 
@@ -2160,7 +2169,16 @@ function tapState(btn) {
   }
 
   if(counts[code] && (!wasCollected || mode === "unlimited")) {
-    log.unshift({ code:code, name:name, points:points, mode:mode, trip:tripName, ts:new Date().toISOString() });
+    log.unshift({
+      code:code,
+      name:name,
+      points:points,
+      mode:mode,
+      trip:tripName,
+      playerId:currentPlayerId,
+      playerName:currentPlayer().name,
+      ts:new Date().toISOString()
+    });
     log = log.slice(0, 30);
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
@@ -2280,6 +2298,13 @@ function formatShortDate(iso) {
 
 function stateHistory(code) {
   return log.filter(function(x){ return x.code === code; });
+}
+
+function firstFoundBy(code) {
+  var history = stateHistory(code);
+  if(!history.length) return "Not yet";
+  var first = history[history.length - 1];
+  return first.playerName || "Team";
 }
 
 
@@ -2435,6 +2460,7 @@ function selectMapState(code) {
 
     '<div class="detailRows">' +
       '<div class="detailRow"><span>First Seen</span><strong>' + firstSeen + '</strong></div>' +
+      '<div class="detailRow"><span>First Found By</span><strong>' + firstFoundBy(code) + '</strong></div>' +
       '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
       '<div class="detailRow"><span>Last Seen</span><strong>' + lastSeen + '</strong></div>' +
       '<div class="detailRow"><span>Last Roadtrip</span><strong>' + lastTrip + '</strong></div>' +
@@ -2704,7 +2730,8 @@ function render() {
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
-    return '<div class="row recentItem"><div class="recentState">' + x.name + '</div><div class="recentMeta"><span class="recentTime">Just now</span><span class="recentPts">' + pts + '</span></div></div>';
+    var finder = x.playerName || "Team";
+    return '<div class="row recentItem"><div><div class="recentState">' + x.name + '</div><div class="recentFinder">Found by ' + finder + '</div></div><div class="recentMeta"><span class="recentTime">Just now</span><span class="recentPts">' + pts + '</span></div></div>';
   }).join("") : "No plates yet";
 
   renderBadges(c);
