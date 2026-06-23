@@ -2803,7 +2803,11 @@ function render() {
 
   var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
     var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
-    return '<div class="row tripRow"><div class="grow"><div class="title">' + t.name + '</div><div class="tripMeta">' + t.date + ' - ' + t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + ' Mode' + ' - ' + t.states + '/50 states</div></div><div class="tripScore">' + label + '</div><div class="tripRowActions"><button class="renameTripBtnSmall" data-trip-index="' + i + '" type="button">Rename</button><button class="deleteTripBtn" data-trip-index="' + i + '" type="button">Delete</button></div></div>';
+    return '<div class="row tripRow"><div class="grow"><div class="title">' + t.name + '<div class="tripMeta">' +
+  t.date + '<br>' +
+  (t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + ' Mode') + '<br>' +
+  t.states + '/50 states' +
+'</div>'</div><div class="tripScore">' + label + '</div><div class="tripRowActions"><button class="renameTripBtnSmall" data-trip-index="' + i + '" type="button">Rename</button><button class="deleteTripBtn" data-trip-index="' + i + '" type="button">Delete</button></div></div>';
   }).join("") : '<div class="emptyHistory">No saved roadtrips yet.</div>';
 
   document.getElementById("tripHistoryList").innerHTML = currentTripHtml + historyHtml;
