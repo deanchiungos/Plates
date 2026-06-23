@@ -2693,7 +2693,7 @@ if(standingsModeLabel) {
   var list = document.getElementById("familyList");
   if(list) {
     if(!players.length) {
-      list.innerHTML = '<div class="familyEmpty">No team members yet</div>';
+      list.innerHTML = '<div class="familyEmpty">No Team Members yet</div>';
       return;
     }
 
@@ -2702,7 +2702,7 @@ if(standingsModeLabel) {
       return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
         '<div class="familyAvatar">' + initial + '</div>' +
         '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
-        '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Current team member' : 'Tap Set Current to play as ' + p.name) + '</div></div>' +
+        '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Picking Team Member' : 'Tap Set Picker to play as ' + p.name) + '</div></div>' +
         '<div class="familyActions">' +
           '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Set Current</button>' +
           '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>' +
