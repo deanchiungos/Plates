@@ -689,16 +689,6 @@ html,body {
   display:none !important;
 }
 
-
-
-
-
-
-
-
-
-
-
 .logo h1 {
   font-size:38px;
   letter-spacing:6px;
@@ -739,8 +729,8 @@ html,body {
     min-height:22px;
     font-size:7px;
   }
-  
-  
+
+
   .logo h1 {
     font-size:35px;
     letter-spacing:5px;
@@ -1586,6 +1576,26 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   background:#f8fbff;
 }
 
+/* v42.2 family info polish */
+.familyInfoCard {
+  text-align:left;
+  align-items:flex-start;
+}
+
+.familyInfoCard .grow {
+  width:100%;
+}
+
+.familyInfoCard .title {
+  text-align:left;
+}
+
+.familyInfoCard .sub {
+  text-align:left;
+  margin-top:8px;
+  line-height:1.3;
+}
+
 </style>
 </head>
 
@@ -1627,7 +1637,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 <div class="celebrationOverlay" id="celebrationOverlay">
   <div class="celebrationBox">
     <h2 id="celebrationTitle">Nice Find</h2>
-    <p id="celebrationText">You added a new plate.</p>
+    <p id="celebrationText">You added a new plate</p>
     <button class="primary" id="celebrationClose">Keep Playing</button>
   </div>
 </div>
@@ -1905,10 +1915,10 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>How Family Works</span><span>V1</span></div>
+      <div class="panelTitle"><span>How Family Works</span></div>
       <div class="recent">
-        <div class="row"><div class="grow"><div class="title">Choose Current Player</div><div class="sub">Use the player picker on the Game screen before spotting plates</div></div></div>
-        <div class="row"><div class="grow"><div class="title">Shared Roadtrip</div><div class="sub">Track family members or friends on one shared roadtrip</div></div></div>
+        <div class="row familyInfoCard"><div class="grow"><div class="title">Choose Current Player</div><div class="sub">Use the player picker on the Game screen before spotting plates</div></div></div>
+        <div class="row familyInfoCard"><div class="grow"><div class="title">Shared Roadtrip</div><div class="sub">Track family members or friends on one shared roadtrip</div></div></div>
       </div>
     </div>
   </section>
@@ -2123,7 +2133,7 @@ function tapState(btn) {
       else if(after === 10) showCelebration("10 States", "You found 10 states on this trip");
       else if(after === 25) showCelebration("Halfway There", "25 states collected");
       else if(after === 50) showCelebration("All 50 States", "You completed the game");
-      
+
     }
   }
 
