@@ -1977,6 +1977,11 @@ body {
     </div>
 
     <div class="card">
+      <div class="panelTitle"><span>Team Standings</span></div>
+      <div id="leaderboardList"></div>
+    </div>
+
+    <div class="card">
       <div class="panelTitle"><span>How Team Works</span></div>
       <div class="recent">
         <div class="row familyInfoCard"><div class="grow"><div class="title">Choose Current Team Member</div><div class="sub">Use the team member picker before spotting plates</div></div></div>
@@ -2611,6 +2616,27 @@ function deletePlayer(id) {
   }
 }
 
+function playerStats() {
+  var stats = {};
+
+  players.forEach(function(p){
+    stats[p.id] = {
+      name:p.name,
+      plates:0
+    };
+  });
+
+  log.forEach(function(item){
+    if(item.playerId && stats[item.playerId]) {
+      stats[item.playerId].plates++;
+    }
+  });
+
+  return Object.values(stats).sort(function(a,b){
+    return b.plates - a.plates;
+  });
+}
+
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
 
@@ -2623,6 +2649,20 @@ function renderFamily(c, unlockedBadges) {
 
   var familyCount = document.getElementById("familyCount");
   if(familyCount) familyCount.textContent = players.length + (players.length === 1 ? " team member" : " team members");
+
+  var board = document.getElementById("leaderboardList");
+  if(board) {
+    var standings = playerStats();
+
+    board.innerHTML = standings.map(function(p,i){
+      var medal = i === 0 ? "ð¥" : i === 1 ? "ð¥" : i === 2 ? "ð¥" : "#" + (i + 1);
+
+      return '<div class="row"><div class="grow"><div class="title">' +
+        medal + ' ' + p.name +
+        '</div></div><div class="green">' +
+        p.plates + ' plates</div></div>';
+    }).join("");
+  }
 
   var list = document.getElementById("familyList");
   if(list) {
