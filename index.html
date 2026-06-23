@@ -1076,6 +1076,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 
+
 .notesPreview {
   margin-top:10px;
   border:1px dashed rgba(21,101,192,.32);
@@ -1098,24 +1099,6 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:800;
   line-height:1.35;
 }
-
-.memoryActions{
-  display:flex;
-  gap:8px;
-  justify-content:center;
-  margin:12px 0;
-  flex-wrap:wrap;
-}
-.memoryBtn{
-  border:1px solid rgba(21,119,210,.22);
-  background:#fff;
-  color:var(--navy);
-  border-radius:999px;
-  padding:10px 14px;
-  font-size:13px;
-  font-weight:900;
-}
-
 </style>
 </head>
 
@@ -1703,9 +1686,9 @@ function copyShareText() {
 
 
 function formatShortDate(iso) {
-  if(!iso) return "Not yet";
+  if(!iso) return "Unknown";
   var d = new Date(iso);
-  if(isNaN(d.getTime())) return "Not yet";
+  if(isNaN(d.getTime())) return "Unknown";
   return d.toLocaleDateString(undefined, { month:"short", day:"numeric", year:"numeric" });
 }
 
@@ -1725,6 +1708,11 @@ function selectMapState(code) {
   var first = history.length ? history[history.length - 1] : null;
   var last = history.length ? history[0] : null;
 
+  // If a state was collected before timestamps existed, show Unknown instead of Not yet
+  var firstSeen = first && first.ts ? formatShortDate(first.ts) : (found ? "Unknown" : "Not yet");
+  var lastSeen = last && last.ts ? formatShortDate(last.ts) : (found ? "Unknown" : "Not yet");
+  var firstTrip = first && first.trip ? first.trip : (found ? tripName : "Unknown");
+  var lastTrip = last && last.trip ? last.trip : (found ? tripName : "Unknown");
 
   document.getElementById("stateDetails").innerHTML =
     '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
@@ -1739,15 +1727,15 @@ function selectMapState(code) {
     '</div>' +
 
     '<div class="detailRows">' +
-      '<div class="detailRow"><span>First Seen</span><strong>' + (first ? formatShortDate(first.ts) : "Not yet") + '</strong></div>' +
-      '<div class="detailRow"><span>First Trip</span><strong>' + (first ? (first.trip || tripName) : "â") + '</strong></div>' +
-      '<div class="detailRow"><span>Last Seen</span><strong>' + (last ? formatShortDate(last.ts) : "Not yet") + '</strong></div>' +
-      '<div class="detailRow"><span>Last Trip</span><strong>' + (last ? (last.trip || tripName) : "â") + '</strong></div>' +
+      '<div class="detailRow"><span>First Seen</span><strong>' + firstSeen + '</strong></div>' +
+      '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
+      '<div class="detailRow"><span>Last Seen</span><strong>' + lastSeen + '</strong></div>' +
+      '<div class="detailRow"><span>Last Roadtrip</span><strong>' + lastTrip + '</strong></div>' +
     '</div>' +
 
     '<div class="notesPreview">' +
       '<div class="title">Trip Memories</div>' +
-      '<div class="sub">Add notes, photos and memories from this trip.</div>' +
+      '<div class="sub">Add notes, photos & memories</div>' +
     '</div>';
 }
 
@@ -1784,6 +1772,11 @@ function selectMapState(code) {
   var first = history.length ? history[history.length - 1] : null;
   var last = history.length ? history[0] : null;
 
+  // If a state was collected before timestamps existed, show Unknown instead of Not yet
+  var firstSeen = first && first.ts ? formatShortDate(first.ts) : (found ? "Unknown" : "Not yet");
+  var lastSeen = last && last.ts ? formatShortDate(last.ts) : (found ? "Unknown" : "Not yet");
+  var firstTrip = first && first.trip ? first.trip : (found ? tripName : "Unknown");
+  var lastTrip = last && last.trip ? last.trip : (found ? tripName : "Unknown");
 
   document.getElementById("stateDetails").innerHTML =
     '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
@@ -1798,15 +1791,15 @@ function selectMapState(code) {
     '</div>' +
 
     '<div class="detailRows">' +
-      '<div class="detailRow"><span>First Seen</span><strong>' + (first ? formatShortDate(first.ts) : "Not yet") + '</strong></div>' +
-      '<div class="detailRow"><span>First Trip</span><strong>' + (first ? (first.trip || tripName) : "â") + '</strong></div>' +
-      '<div class="detailRow"><span>Last Seen</span><strong>' + (last ? formatShortDate(last.ts) : "Not yet") + '</strong></div>' +
-      '<div class="detailRow"><span>Last Trip</span><strong>' + (last ? (last.trip || tripName) : "â") + '</strong></div>' +
+      '<div class="detailRow"><span>First Seen</span><strong>' + firstSeen + '</strong></div>' +
+      '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
+      '<div class="detailRow"><span>Last Seen</span><strong>' + lastSeen + '</strong></div>' +
+      '<div class="detailRow"><span>Last Roadtrip</span><strong>' + lastTrip + '</strong></div>' +
     '</div>' +
 
     '<div class="notesPreview">' +
       '<div class="title">Trip Memories</div>' +
-      '<div class="sub">Add notes, photos and memories from this trip.</div>' +
+      '<div class="sub">Add notes, photos & memories</div>' +
     '</div>';
 }
 
