@@ -1458,7 +1458,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 
-/* v42 Team Members V1 */
+/* v42 Family Profiles V1 */
 .playerPickerCard {
   margin-top:10px;
 }
@@ -1956,7 +1956,7 @@ body {
     <div class="card">
       <div class="panelTitle"><span>How Team Works</span></div>
       <div class="recent">
-        <div class="row familyInfoCard"><div class="grow"><div class="title">Choose Team Member</div><div class="sub">Use the team member picker before spotting plates</div></div></div>
+        <div class="row familyInfoCard"><div class="grow"><div class="title">Choose Current Team Member</div><div class="sub">Use the team member picker before spotting plates</div></div></div>
         <div class="row familyInfoCard"><div class="grow"><div class="title">Shared Roadtrip</div><div class="sub">Play together on one shared roadtrip</div></div></div>
       </div>
     </div>
@@ -2015,22 +2015,22 @@ var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBe
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
-var team members;
+var players;
 try {
-  team members = JSON.parse(localStorage.platesPlayers || '[{"id":"p1","name":"Dean"}]');
+  players = JSON.parse(localStorage.platesPlayers || '[{"id":"p1","name":"Dean"}]');
 } catch(e) {
-  team members = [{"id":"p1","name":"Dean"}];
+  players = [{"id":"p1","name":"Dean"}];
 }
 if(!Array.isArray(players) || !players.length) {
-  team members = [{"id":"p1","name":"Dean"}];
+  players = [{"id":"p1","name":"Dean"}];
 }
-players = team members.filter(function(p){ return p && p.id && p.name; });
+players = players.filter(function(p){ return p && p.id && p.name; });
 if(!players.length) {
-  team members = [{"id":"p1","name":"Dean"}];
+  players = [{"id":"p1","name":"Dean"}];
 }
-var currentPlayerId = localStorage.platesCurrentPlayerId || (players[0] && team members[0].id) || "p1";
+var currentPlayerId = localStorage.platesCurrentPlayerId || (players[0] && players[0].id) || "p1";
 if(!players.some(function(p){ return p.id === currentPlayerId; })) {
-  currentPlayerId = team members[0].id;
+  currentPlayerId = players[0].id;
 }
 var pendingPhotoStateCode = "";
 var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
@@ -2522,25 +2522,25 @@ function topFindsText() {
 
 
 function currentPlayer() {
-  var team member = team members.find(function(p){ return p.id === currentPlayerId; });
-  if(!player && team members.length) {
-    currentPlayerId = team members[0].id;
-    team member = team members[0];
+  var player = players.find(function(p){ return p.id === currentPlayerId; });
+  if(!player && players.length) {
+    currentPlayerId = players[0].id;
+    team member = players[0];
   }
-  return team member || { id:"p1", name:"Dean" };
+  return player || { id:"p1", name:"Dean" };
 }
 
 function addPlayer() {
   var name = prompt("Team member name:", "");
   if(!name || !name.trim()) return;
 
-  var team member = {
+  var player = {
     id:"p" + Date.now() + Math.floor(Math.random() * 1000),
     name:name.trim()
   };
 
-  team members.push(player);
-  currentPlayerId = team member.id;
+  players.push(player);
+  currentPlayerId = player.id;
   save();
   render();
   toast("Team member added");
@@ -2559,12 +2559,12 @@ function deletePlayer(id) {
     return;
   }
 
-  var team member = team members.find(function(p){ return p.id === id; });
+  var player = players.find(function(p){ return p.id === id; });
   if(!player) return;
 
-  if(confirm("Delete " + team member.name + "?")) {
-    team members = team members.filter(function(p){ return p.id !== id; });
-    if(currentPlayerId === id && team members.length) currentPlayerId = team members[0].id;
+  if(confirm("Delete " + player.name + "?")) {
+    team members = players.filter(function(p){ return p.id !== id; });
+    if(currentPlayerId === id && players.length) currentPlayerId = players[0].id;
     save();
     render();
     toast("Team member deleted");
@@ -2572,17 +2572,17 @@ function deletePlayer(id) {
 }
 
 function renderFamily(c, unlockedBadges) {
-  var team member = currentPlayer();
+  var player = currentPlayer();
 
   var select = document.getElementById("currentPlayerSelect");
   if(select) {
-    select.innerHTML = team members.map(function(p){
+    select.innerHTML = players.map(function(p){
       return '<option value="' + p.id + '"' + (p.id === currentPlayerId ? " selected" : "") + '>' + p.name + '</option>';
     }).join("");
   }
 
   var familyCount = document.getElementById("familyCount");
-  if(familyCount) familyCount.textContent = team members.length + (players.length === 1 ? " team member" : " team members");
+  if(familyCount) familyCount.textContent = players.length + (players.length === 1 ? " team member" : " team members");
 
   var list = document.getElementById("familyList");
   if(list) {
@@ -2591,12 +2591,12 @@ function renderFamily(c, unlockedBadges) {
       return;
     }
 
-    list.innerHTML = team members.map(function(p){
+    list.innerHTML = players.map(function(p){
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
       return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
         '<div class="familyAvatar">' + initial + '</div>' +
         '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
-        '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Current team member' : 'Tap Set Current to use ' + p.name) + '</div></div>' +
+        '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Current team member' : 'Tap Set Current to play as ' + p.name) + '</div></div>' +
         '<div class="familyActions">' +
           '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Set Current</button>' +
           '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>' +
@@ -2743,9 +2743,9 @@ function render() {
 }
 
 function attachHandlers() {
-  var team memberSelect = document.getElementById("currentPlayerSelect");
+  var playerSelect = document.getElementById("currentPlayerSelect");
   if(playerSelect) {
-    team memberSelect.onchange = function(){ switchPlayer(playerSelect.value); };
+    playerSelect.onchange = function(){ switchPlayer(playerSelect.value); };
   }
 
   var addPlayerBtn = document.getElementById("addPlayerBtn");
