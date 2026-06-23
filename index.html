@@ -1467,6 +1467,114 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   min-width:260px;
 }
 
+
+/* v42 Family Profiles V1 */
+.playerPickerCard {
+  margin-top:10px;
+}
+
+.playerPickerLabel {
+  color:var(--muted);
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:.6px;
+  text-transform:uppercase;
+  text-align:center;
+  margin-bottom:6px;
+}
+
+.playerSelect {
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:12px;
+  background:#fff;
+  color:var(--navy);
+  font-size:15px;
+  font-weight:900;
+}
+
+.familyList {
+  display:grid;
+  gap:10px;
+}
+
+.familyRow {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  padding:12px;
+}
+
+.familyRow.active {
+  border-color:rgba(38,169,87,.45);
+  background:linear-gradient(180deg,#eaffef,#ffffff);
+}
+
+.familyAvatar {
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  background:#eaf3ff;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  font-weight:950;
+  flex:0 0 auto;
+}
+
+.familyInfo {
+  flex:1;
+  min-width:0;
+  text-align:left;
+}
+
+.familyName {
+  color:var(--navy);
+  font-size:16px;
+  font-weight:950;
+  line-height:1.1;
+}
+
+.familyMeta {
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+  margin-top:3px;
+}
+
+.familyActions {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.familySmallBtn {
+  border:1px solid rgba(21,119,210,.25);
+  color:var(--blue);
+  background:#fff;
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:11px;
+  font-weight:900;
+}
+
+.familyDeleteBtn {
+  border-color:rgba(180,59,59,.25);
+  color:#b43b3b;
+}
+
+.familyAddBtn {
+  width:100%;
+  margin-top:12px;
+}
+
 </style>
 </head>
 
@@ -1526,6 +1634,11 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
       <div class="currentTripHeader" id="tripPillBtn">
         <span class="tripKicker">Current Trip</span>
         <span class="tripNameInline" id="tripNameTop">Summer Roadtrip</span>
+      </div>
+
+      <div class="playerPickerCard">
+        <div class="playerPickerLabel">Current Player</div>
+        <select class="playerSelect" id="currentPlayerSelect"></select>
       </div>
 
       <div class="bigProgress">
@@ -1775,10 +1888,16 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
   <section id="familyScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Family</span><span>coming soon</span></div>
+      <div class="panelTitle"><span>Family</span><span id="familyCount">1 player</span></div>
+      <div class="familyList" id="familyList"></div>
+      <button class="primary familyAddBtn" id="addPlayerBtn" type="button">Add Player</button>
+    </div>
+
+    <div class="card">
+      <div class="panelTitle"><span>How Family Works</span><span>V1</span></div>
       <div class="recent">
-        <div class="row"><div class="grow"><div class="title">Family Profiles</div><div class="sub">Coming soon: synced family profiles, shared trips, and leaderboards.</div></div></div>
-        <div class="row"><div class="grow"><div class="title">Share Trips</div><div class="sub">For now, use Trip History and Share Trip Summary.</div></div></div>
+        <div class="row"><div class="grow"><div class="title">Choose Current Player</div><div class="sub">Use the player picker on the Game screen before spotting plates</div></div></div>
+        <div class="row"><div class="grow"><div class="title">Shared Roadtrip</div><div class="sub">This version keeps one shared roadtrip while tracking who is currently playing</div></div></div>
       </div>
     </div>
   </section>
@@ -1836,6 +1955,8 @@ var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBe
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
+var players = JSON.parse(localStorage.platesPlayers || '[{"id":"p1","name":"Dean"}]');
+var currentPlayerId = localStorage.platesCurrentPlayerId || (players[0] && players[0].id) || "p1";
 var pendingPhotoStateCode = "";
 var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
@@ -1867,6 +1988,8 @@ function save() {
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
+  localStorage.platesPlayers = JSON.stringify(players);
+  localStorage.platesCurrentPlayerId = currentPlayerId;
 }
 
 function collectedCount() {
@@ -1970,10 +2093,10 @@ function tapState(btn) {
     if(!wasCollected) {
       toast("Collected " + name);
       var after = collectedCount();
-      if(after === 1) showCelebration("First Plate", "You started your collection with " + name + ".");
-      else if(after === 10) showCelebration("10 States", "You found 10 states on this trip.");
-      else if(after === 25) showCelebration("Halfway There", "25 states collected.");
-      else if(after === 50) showCelebration("All 50 States", "You completed the game.");
+      if(after === 1) showCelebration("First Plate", "You started your collection with " + name);
+      else if(after === 10) showCelebration("10 States", "You found 10 states on this trip");
+      else if(after === 25) showCelebration("Halfway There", "25 states collected");
+      else if(after === 50) showCelebration("All 50 States", "You completed the game");
       
     }
   }
@@ -2052,7 +2175,7 @@ function newTrip() {
 }
 
 function shareText() {
-  return "PLATES\n" + tripName + "\n" +
+  return "PLATES\n" + currentPlayer().name + " â¢ " + tripName + "\n" +
     "I found " + collectedCount() + " of 50 states\n" +
     "Score: " + totalScore() + "\n" +
     "Badges: " + badgeCount(collectedCount()) + "\n" +
@@ -2322,6 +2445,88 @@ function topFindsText() {
   return seen.slice(0,3).map(function(x){ return x.name; }).join(" â¢ ");
 }
 
+
+function currentPlayer() {
+  var player = players.find(function(p){ return p.id === currentPlayerId; });
+  if(!player && players.length) {
+    currentPlayerId = players[0].id;
+    player = players[0];
+  }
+  return player || { id:"p1", name:"Dean" };
+}
+
+function addPlayer() {
+  var name = prompt("Player name:", "");
+  if(!name || !name.trim()) return;
+
+  var player = {
+    id:"p" + Date.now() + Math.floor(Math.random() * 1000),
+    name:name.trim()
+  };
+
+  players.push(player);
+  currentPlayerId = player.id;
+  save();
+  render();
+  toast("Player added");
+}
+
+function switchPlayer(id) {
+  currentPlayerId = id;
+  save();
+  render();
+  toast("Current player updated");
+}
+
+function deletePlayer(id) {
+  if(players.length <= 1) {
+    alert("Keep at least one player");
+    return;
+  }
+
+  var player = players.find(function(p){ return p.id === id; });
+  if(!player) return;
+
+  if(confirm("Delete " + player.name + "?")) {
+    players = players.filter(function(p){ return p.id !== id; });
+    if(currentPlayerId === id && players.length) currentPlayerId = players[0].id;
+    save();
+    render();
+    toast("Player deleted");
+  }
+}
+
+function renderFamily(c, unlockedBadges) {
+  var player = currentPlayer();
+
+  var select = document.getElementById("currentPlayerSelect");
+  if(select) {
+    select.innerHTML = players.map(function(p){
+      return '<option value="' + p.id + '"' + (p.id === currentPlayerId ? " selected" : "") + '>' + p.name + '</option>';
+    }).join("");
+  }
+
+  var familyCount = document.getElementById("familyCount");
+  if(familyCount) familyCount.textContent = players.length + (players.length === 1 ? " player" : " players");
+
+  var list = document.getElementById("familyList");
+  if(list) {
+    list.innerHTML = players.map(function(p){
+      var initial = (p.name || "?").trim().charAt(0).toUpperCase();
+      return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
+        '<div class="familyAvatar">' + initial + '</div>' +
+        '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
+        '<div class="familyMeta">' + (p.id === currentPlayerId ? c + ' states â¢ ' + unlockedBadges + ' badges â¢ current player' : 'Tap Set Current to play as ' + p.name) + '</div></div>' +
+        '<div class="familyActions">' +
+          '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Set Current</button>' +
+          '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>' +
+        '</div>' +
+      '</div>';
+    }).join("");
+  }
+}
+
+
 function render() {
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
@@ -2400,6 +2605,7 @@ function render() {
   document.getElementById("listCount").textContent = c + "/50";
   document.getElementById("mapCount").textContent = c + " / 50 found";
   document.getElementById("badgeCount").textContent = unlockedBadges + " unlocked";
+  renderFamily(c, unlockedBadges);
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
@@ -2457,6 +2663,24 @@ function render() {
 }
 
 function attachHandlers() {
+  var playerSelect = document.getElementById("currentPlayerSelect");
+  if(playerSelect) {
+    playerSelect.onchange = function(){ switchPlayer(playerSelect.value); };
+  }
+
+  var addPlayerBtn = document.getElementById("addPlayerBtn");
+  if(addPlayerBtn) addPlayerBtn.onclick = addPlayer;
+
+  document.body.addEventListener("click", function(e){
+    if(e.target.dataset && e.target.dataset.playerSwitch) {
+      switchPlayer(e.target.dataset.playerSwitch);
+    }
+    if(e.target.dataset && e.target.dataset.playerDelete) {
+      deletePlayer(e.target.dataset.playerDelete);
+    }
+  });
+
+
   document.querySelectorAll(".state").forEach(function(btn){
     btn.onclick = function(){ tapState(btn); };
   });
