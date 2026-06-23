@@ -1502,6 +1502,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 
     <div class="card">
       <div class="panelTitle"><span>Tap a state</span><span id="listCount">0/50</span></div>
+      <div class="sub" style="margin-top:-4px;margin-bottom:10px">Tap again to remove a mistaken state</div>
       <div class="stateGrid" id="stateGrid">
 <button class="state" data-code="AL" data-name="Alabama" data-points="3">AL</button>
 <button class="state" data-code="AK" data-name="Alaska" data-points="10">AK</button>
@@ -2421,4 +2422,21 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
   document.getElementById("endTripBtn").onclick = endCurrentTrip;
-  document.getElementById("renameTripBtn").onclick = rename
+  document.getElementById("renameTripBtn").onclick = renameTrip;
+  document.getElementById("newTripBtn").onclick = newTrip;
+  document.getElementById("shareTripBtn").onclick = shareSummary;
+  document.getElementById("copyShareBtn").onclick = copyShareText;
+  var shareRoadtripBtn = document.getElementById("shareRoadtripBtn");
+  if(shareRoadtripBtn) shareRoadtripBtn.onclick = function(){ setView("share"); };
+  document.getElementById("celebrationClose").onclick = function(){ document.getElementById("celebrationOverlay").classList.remove("show"); };
+  document.getElementById("celebrationShare").onclick = function(){
+    document.getElementById("celebrationOverlay").classList.remove("show");
+  };
+}
+
+attachHandlers();
+render();
+showOnboardingIfNeeded();
+</script>
+</body>
+</html>
