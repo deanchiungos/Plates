@@ -1596,6 +1596,60 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   line-height:1.3;
 }
 
+
+/* v42.3 mobile overflow + family row cleanup */
+html,
+body {
+  width:100%;
+  overflow-x:hidden;
+}
+
+.app {
+  width:100%;
+  max-width:430px;
+  overflow-x:hidden;
+}
+
+.logo {
+  max-width:min(326px, calc(100vw - 48px));
+}
+
+.familyRow {
+  width:100%;
+  min-width:0;
+  overflow:hidden;
+}
+
+.familyInfo {
+  min-width:0;
+}
+
+.familyName,
+.familyMeta {
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.familyMeta {
+  white-space:normal;
+  line-height:1.25;
+}
+
+.familyActions {
+  flex:0 0 auto;
+  max-width:96px;
+}
+
+.familySmallBtn {
+  white-space:nowrap;
+}
+
+.familySmallBtn.isCurrent {
+  color:var(--green);
+  border-color:rgba(38,169,87,.32);
+  background:#f0fff4;
+}
+
 </style>
 </head>
 
@@ -2211,7 +2265,7 @@ function newTrip() {
 }
 
 function shareText() {
-  return "PLATES\n" + currentPlayer().name + " â¢ " + tripName + "\n" +
+  return "PLATES\n" + currentPlayer().name + " - " + tripName + "\n" +
     "I found " + collectedCount() + " of 50 states\n" +
     "Score: " + totalScore() + "\n" +
     "Badges: " + badgeCount(collectedCount()) + "\n" +
@@ -2478,7 +2532,7 @@ function topFindsText() {
 
   seen.sort(function(a,b){ return b.points - a.points; });
   if(!seen.length) return "No plates yet";
-  return seen.slice(0,3).map(function(x){ return x.name; }).join(" â¢ ");
+  return seen.slice(0,3).map(function(x){ return x.name; }).join(" - ");
 }
 
 
@@ -2554,19 +2608,24 @@ function renderFamily(c, unlockedBadges) {
 
     list.innerHTML = players.map(function(p){
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
-      return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
+      var isCurrent = p.id === currentPlayerId;
+      var meta = isCurrent ? "Current player" : "Tap Set Current to play as " + p.name;
+      var action = isCurrent
+        ? '<button class="familySmallBtn isCurrent" type="button">Current</button>'
+        : '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Set Current</button>';
+
+      return '<div class="familyRow ' + (isCurrent ? "active" : "") + '">' +
         '<div class="familyAvatar">' + initial + '</div>' +
         '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
-        '<div class="familyMeta">' + (p.id === currentPlayerId ? c + ' states â¢ ' + unlockedBadges + ' badges â¢ current player' : 'Tap Set Current to play as ' + p.name) + '</div></div>' +
+        '<div class="familyMeta">' + meta + '</div></div>' +
         '<div class="familyActions">' +
-          '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Set Current</button>' +
+          action +
           '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>' +
         '</div>' +
       '</div>';
     }).join("");
   }
 }
-
 
 function render() {
   var c = collectedCount();
@@ -2683,6 +2742,9 @@ function render() {
   if(document.getElementById("shareTopFinds")) {
     document.getElementById("shareTopFinds").textContent = topFindsText();
   }
+  if(document.getElementById("shareTopFind")) {
+    document.getElementById("shareTopFind").textContent = top ? top.name + " (" + top.code + ") - " + top.points + " pts" : "No plates yet";
+  }
 
   document.querySelectorAll(".renameTripBtnSmall").forEach(function(btn){
     btn.onclick = function(e){
@@ -2729,59 +2791,4 @@ function attachHandlers() {
   document.querySelectorAll("[data-map-code]").forEach(function(cell){
     cell.onclick = function(){
       var code = cell.dataset.mapCode;
-      selectMapState(code);
-    };
-  });
-document.querySelectorAll("[data-mode]").forEach(function(btn){
-    btn.onclick = function(){ setMode(btn.dataset.mode); };
-  });
-
-  document.querySelectorAll("[data-view]").forEach(function(btn){
-    btn.onclick = function(){ setView(btn.dataset.view); };
-  });
-
-  document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
-
-  document.body.addEventListener("click", function(e){
-    if(e.target.classList.contains("memoryBtnNote")) {
-      addMemoryNote(e.target.dataset.stateCode);
-    }
-    if(e.target.classList.contains("memoryBtnPhoto")) {
-      addMemoryPhoto(e.target.dataset.stateCode);
-    }
-    if(e.target.classList.contains("deleteMemoryBtn")) {
-      deleteMemory(e.target.dataset.memoryId);
-    }
-  });
-
-  var photoInput = document.getElementById("memoryPhotoInput");
-  if(photoInput) {
-    photoInput.onchange = function(){
-      if(photoInput.files && photoInput.files[0]) saveSelectedPhoto(photoInput.files[0]);
-    };
-  }
-  var tripsStatBtn = document.getElementById("tripsStatBtn");
-  var badgesStatBtn = document.getElementById("badgesStatBtn");
-  var bestStatBtn = document.getElementById("bestStatBtn");
-  if(tripsStatBtn) tripsStatBtn.onclick = function(){ setView("trips"); };
-  if(badgesStatBtn) badgesStatBtn.onclick = function(){ setView("badges"); };
-  if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
-  var onboardingDone = document.getElementById("onboardingDone");
-  if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
-  document.getElementById("endTripBtn").onclick = endCurrentTrip;
-  document.getElementById("renameTripBtn").onclick = renameTrip;
-  document.getElementById("newTripBtn").onclick = newTrip;
-  document.getElementById("shareTripBtn").onclick = shareSummary;
-  document.getElementById("copyShareBtn").onclick = copyShareText;
-  var shareRoadtripBtn = document.getElementById("shareRoadtripBtn");
-  if(shareRoadtripBtn) shareRoadtripBtn.onclick = function(){ setView("share"); };
-  document.getElementById("celebrationClose").onclick = function(){ document.getElementById("celebrationOverlay").classList.remove("show"); };
-
-}
-
-attachHandlers();
-render();
-showOnboardingIfNeeded();
-</script>
-</body>
-</html>
+      selectMap
