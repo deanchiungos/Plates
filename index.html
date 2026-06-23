@@ -93,7 +93,9 @@ button {
 }
 .currentTripHeader {
   border:1px solid var(--line);
-  background:#f8fbff;
+  background:linear-gradient(180deg,#35b964,#239d4f);
+  border-color:#239d4f
+  color:#fff; 
   border-radius:18px;
   padding:10px 12px;
   margin-bottom:12px;
@@ -103,7 +105,7 @@ button {
   display:block;
   font-size:10px;
   font-weight:900;
-  color:#4b5565;
+  color:rgba(255,255,255,.85);
   letter-spacing:.7px;
   text-transform:uppercase;
   margin-bottom:2px;
@@ -113,7 +115,7 @@ button {
   font-size:18px;
   line-height:1.15;
   font-weight:950;
-  color:var(--navy);
+  color:#fff;
 }
 .bigProgress {
   display:grid;
@@ -1752,10 +1754,6 @@ body {
         <button class="stat statBtn" id="badgesStatBtn" type="button"><strong id="badgeMini">0</strong><span id="badgeLabel">BADGES</span></button>
       </div>
 
-      <div class="tripShareWrap">
-        <button id="shareRoadtripBtn" class="shareRoadtripBtn" type="button">Share Roadtrip</button>
-      </div>
-    </div>
 
     <div class="modeStrip">
       <button id="classicBtn" class="active" data-mode="classic">Classic</button>
