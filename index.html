@@ -1537,6 +1537,16 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   transition:transform .12s ease;
 }
 
+
+/* v41.7 state unclick support */
+.stateHint {
+  margin:-4px 0 10px;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+  text-align:center;
+}
+
 </style>
 </head>
 
@@ -1632,7 +1642,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>Tap a state</span><span id="listCount">0/50</span></div>
+      <div class="panelTitle"><span>Tap a state</span><span id="listCount">0/50</span></div><div class="stateHint">Tap again to remove a mistaken state</div>
       <div class="stateGrid" id="stateGrid">
 <button class="state" data-code="AL" data-name="Alabama" data-points="3">AL</button>
 <button class="state" data-code="AK" data-name="Alaska" data-points="10">AK</button>
@@ -2023,9 +2033,10 @@ function tapState(btn) {
   var before = collectedCount();
 
   if(mode === "classic" || mode === "weighted") {
-    if(counts[code]) {
+    if(wasCollected) {
       counts[code] = 0;
       log = log.filter(function(item){ return item.code !== code; });
+      toast("Removed " + name);
     } else {
       counts[code] = 1;
     }
@@ -2046,13 +2057,16 @@ function tapState(btn) {
       else if(after === 10) showCelebration("Badge Unlocked", "You earned 10 States by finding 10 plates.");
       else if(after === 25) showCelebration("Badge Unlocked", "You earned Halfway There by collecting 25 states.");
       else if(after === 50) showCelebration("All 50 States", "You did it â every state is now on your plate.");
-      
+      else if(Number(points) >= 8) showCelebration("Rare Find", "You spotted " + name + " â one of the tougher plates to find.");
+      else if(badgeCount(after) > badgeCount(before)) showCelebration("Badge Unlocked", "Nice work â a new badge has been added to your collection.");
     }
   }
 
   updateBestForCurrentMode();
   save();
   render();
+
+  if(selectedState === code) selectMapState(code);
 }
 
 function setMode(newMode) {
