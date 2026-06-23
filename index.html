@@ -1099,6 +1099,80 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:800;
   line-height:1.35;
 }
+
+/* v40.5 trips polish */
+.statBtn {
+  cursor:pointer;
+  min-height:78px;
+}
+
+.statBtn:active {
+  transform:scale(.98);
+}
+
+.tripRow {
+  align-items:center;
+}
+
+.currentTripRow {
+  border-color:rgba(53,168,82,.42);
+  background:linear-gradient(180deg,#eaffef,#ffffff);
+}
+
+.currentTripRow .title {
+  text-align:left;
+}
+
+.currentTripRow .tripMeta,
+.tripMeta {
+  text-align:left;
+  line-height:1.25;
+}
+
+.currentBadge {
+  background:var(--green);
+  color:#fff;
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:11px;
+  font-weight:950;
+}
+
+.deleteTripBtn {
+  background:#fff;
+  border:1px solid rgba(180,59,59,.25);
+  color:#b43b3b;
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:11px;
+  font-weight:900;
+}
+
+.emptyHistory {
+  color:var(--muted);
+  font-weight:800;
+  text-align:center;
+  padding:12px;
+}
+
+
+.tripRowActions {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  align-items:flex-end;
+}
+
+.renameTripBtnSmall {
+  background:#fff;
+  border:1px solid rgba(21,119,210,.25);
+  color:var(--blue);
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:11px;
+  font-weight:900;
+}
+
 </style>
 </head>
 
@@ -1174,9 +1248,9 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
       <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
 
       <div class="quickStats">
-        <div class="stat"><strong id="bestTrip">0</strong><span id="bestLabel">BEST</span></div>
-        <div class="stat"><strong id="tripCount">1</strong><span id="tripLabel">TRIPS</span></div>
-        <div class="stat"><strong id="badgeMini">0</strong><span id="badgeLabel">BADGES</span></div>
+        <button class="stat statBtn" id="bestStatBtn" type="button"><strong id="bestTrip">0</strong><span id="bestLabel">BEST</span></button>
+        <button class="stat statBtn" id="tripsStatBtn" type="button"><strong id="tripCount">1</strong><span id="tripLabel">TRIPS</span></button>
+        <button class="stat statBtn" id="badgesStatBtn" type="button"><strong id="badgeMini">0</strong><span id="badgeLabel">BADGES</span></button>
       </div>
     </div>
 
@@ -1803,6 +1877,36 @@ function selectMapState(code) {
     '</div>';
 }
 
+
+function tripModeSummaryText(c, points, sightings) {
+  if(mode === "classic") return c + "/50 states collected in Classic mode";
+  if(mode === "weighted") return points + " points in Weighted mode";
+  return points + " points across " + sightings + " sightings in Unlimited mode";
+}
+
+function deleteSavedTrip(index) {
+  if(index < 0 || index >= savedTrips.length) return;
+  var name = savedTrips[index].name || "this roadtrip";
+  if(confirm("Delete " + name + "?")) {
+    savedTrips.splice(index, 1);
+    save();
+    render();
+    toast("Roadtrip deleted");
+  }
+}
+
+function renameSavedTrip(index) {
+  if(index < 0 || index >= savedTrips.length) return;
+  var currentName = savedTrips[index].name || "Saved Roadtrip";
+  var newName = prompt("Rename roadtrip:", currentName);
+  if(newName && newName.trim()) {
+    savedTrips[index].name = newName.trim();
+    save();
+    render();
+    toast("Roadtrip renamed");
+  }
+}
+
 function render() {
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
@@ -1884,16 +1988,18 @@ function render() {
   document.getElementById("tripStats").textContent = c + " states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
-  document.getElementById("tripModeSummary").textContent =
-    mode === "classic" ? c + "/50 states collected in Classic mode" :
-    mode === "weighted" ? points + " points in Weighted mode" :
-    points + " points across " + sightings + " sightings in Unlimited mode";
+  document.getElementById("tripModeSummary").textContent = tripModeSummaryText(c, points, sightings);
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
-  document.getElementById("tripHistoryList").innerHTML = savedTrips.length ? savedTrips.map(function(t){
+  var currentTripHtml =
+    '<div class="row tripRow currentTripRow"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Current</div></div>';
+
+  var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
     var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
-    return '<div class="row"><div class="grow"><div class="title">' + t.name + '</div><div class="tripMeta">' + t.date + ' - ' + t.mode + ' - ' + t.states + '/50 states</div></div><div class="tripScore">' + label + '</div></div>';
-  }).join("") : "No saved trips yet.";
+    return '<div class="row tripRow"><div class="grow"><div class="title">' + t.name + '</div><div class="tripMeta">' + t.date + ' - ' + t.mode + ' - ' + t.states + '/50 states</div></div><div class="tripScore">' + label + '</div><div class="tripRowActions"><button class="renameTripBtnSmall" data-trip-index="' + i + '" type="button">Rename</button><button class="deleteTripBtn" data-trip-index="' + i + '" type="button">Delete</button></div></div>';
+  }).join("") : '<div class="emptyHistory">No saved roadtrips yet.</div>';
+
+  document.getElementById("tripHistoryList").innerHTML = currentTripHtml + historyHtml;
 
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
@@ -1910,6 +2016,20 @@ function render() {
   document.getElementById("shareScore").textContent = points;
   document.getElementById("shareBadges").textContent = unlockedBadges;
   document.getElementById("shareTopFind").textContent = top ? top.name + " (" + top.code + ") - " + top.points + " pts" : "No plates yet";
+
+  document.querySelectorAll(".renameTripBtnSmall").forEach(function(btn){
+    btn.onclick = function(e){
+      e.stopPropagation();
+      renameSavedTrip(Number(btn.dataset.tripIndex));
+    };
+  });
+
+  document.querySelectorAll(".deleteTripBtn").forEach(function(btn){
+    btn.onclick = function(e){
+      e.stopPropagation();
+      deleteSavedTrip(Number(btn.dataset.tripIndex));
+    };
+  });
 
   if(selectedState) selectMapState(selectedState);
 
@@ -1938,6 +2058,12 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   });
 
   document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
+  var tripsStatBtn = document.getElementById("tripsStatBtn");
+  var badgesStatBtn = document.getElementById("badgesStatBtn");
+  var bestStatBtn = document.getElementById("bestStatBtn");
+  if(tripsStatBtn) tripsStatBtn.onclick = function(){ setView("trips"); };
+  if(badgesStatBtn) badgesStatBtn.onclick = function(){ setView("badges"); };
+  if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
   document.getElementById("endTripBtn").onclick = endCurrentTrip;
