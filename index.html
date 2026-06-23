@@ -2468,12 +2468,11 @@ function selectMapState(code) {
   var found = seen > 0;
   var history = stateHistory(code);
   var first = history.length ? history[history.length - 1] : null;
-  var last = history.length ? history[0] : null;
+
 
   var firstSeen = first && first.ts ? formatShortDate(first.ts) : (found ? "Unknown" : "Not yet");
-  var lastSeen = last && last.ts ? formatShortDate(last.ts) : (found ? "Unknown" : "Not yet");
   var firstTrip = first && first.trip ? first.trip : (found ? tripName : "Unknown");
-  var lastTrip = last && last.trip ? last.trip : (found ? tripName : "Unknown");
+
 
   document.getElementById("stateDetails").innerHTML =
     '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
