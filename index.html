@@ -1987,7 +1987,7 @@ body {
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>Team Standings</span></div>
+     <div class="panelTitle"><span>Team Standings</span><span id="standingsModeLabel">Classic Mode</span></div>
       <div id="leaderboardList"></div>
     </div>
 
@@ -2528,9 +2528,9 @@ function renderBadges(c) {
 
 
 function tripModeSummaryText(c, points, sightings) {
-  if(mode === "classic") return c + "/50 states collected in Classic mode";
-  if(mode === "weighted") return points + " points in Weighted mode";
-  return points + " points across " + sightings + " sightings in Unlimited mode";
+  if(mode === "classic") return c + "/50 states collected in Classic Mode";
+  if(mode === "weighted") return points + " points in Weighted Mode";
+  return points + " points across " + sightings + " sightings in Unlimited Mode";
 }
 
 function deleteSavedTrip(index) {
@@ -2658,9 +2658,18 @@ function renderFamily(c, unlockedBadges) {
   }
 
   var familyCount = document.getElementById("familyCount");
-  if(familyCount) familyCount.textContent = players.length + (players.length === 1 ? " team member" : " team members");
-
+  if(familyCount) familyCount.textContent = players.length + (players.length === 1 ? " Team Member" : " Team Members");
+  
   var board = document.getElementById("leaderboardList");
+
+var standingsModeLabel = document.getElementById("standingsModeLabel");
+if(standingsModeLabel) {
+  standingsModeLabel.textContent =
+    mode === "classic" ? "Classic Mode" :
+    mode === "weighted" ? "Weighted Mode" :
+    "Unlimited Mode";
+}
+  
   if(board) {
     var standings = playerStats();
 
