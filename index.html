@@ -1075,14 +1075,29 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   text-align:right;
 }
 
+
 .notesPreview {
   margin-top:10px;
   border:1px dashed rgba(21,101,192,.32);
   border-radius:15px;
-  padding:11px;
+  padding:18px 12px;
   background:#f8fbff;
+  text-align:center;
 }
 
+.notesPreview .title {
+  color:var(--navy);
+  font-size:20px;
+  font-weight:950;
+  margin-bottom:8px;
+}
+
+.notesPreview .sub {
+  color:var(--muted);
+  font-size:14px;
+  font-weight:800;
+  line-height:1.35;
+}
 </style>
 </head>
 
@@ -1713,8 +1728,8 @@ function selectMapState(code) {
     '</div>' +
 
     '<div class="notesPreview">' +
-      '<div class="title">Notes</div>' +
-      '<div class="sub">Trip notes and photos coming soon.</div>' +
+      '<div class="title">Trip Memories</div>' +
+      '<div class="sub">Add notes, photos and memories from this trip.</div>' +
     '</div>';
 }
 
@@ -1772,8 +1787,8 @@ function selectMapState(code) {
     '</div>' +
 
     '<div class="notesPreview">' +
-      '<div class="title">Notes</div>' +
-      '<div class="sub">Trip notes and photos coming soon.</div>' +
+      '<div class="title">Trip Memories</div>' +
+      '<div class="sub">Add notes, photos and memories from this trip.</div>' +
     '</div>';
 }
 
