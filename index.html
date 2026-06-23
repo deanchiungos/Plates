@@ -2646,6 +2646,25 @@ function playerStats() {
     return b.plates - a.plates;
   });
 }
+  var stats = {};
+
+  players.forEach(function(p){
+    stats[p.id] = {
+      name:p.name,
+      plates:0
+    };
+  });
+
+  log.forEach(function(item){
+    if(item.playerId && stats[item.playerId]) {
+      stats[item.playerId].plates++;
+    }
+  });
+
+  return Object.values(stats).sort(function(a,b){
+    return b.plates - a.plates;
+  });
+}
 
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
@@ -2661,7 +2680,14 @@ function renderFamily(c, unlockedBadges) {
   if(familyCount) familyCount.textContent = players.length + (players.length === 1 ? " Team Member" : " Team Members");
   
   var board = document.getElementById("leaderboardList");
-
+var standingsTitle = document.getElementById("standingsTitle");
+if(standingsTitle) {
+  standingsTitle.textContent =
+    "Team Standings · " +
+    mode.charAt(0).toUpperCase() +
+    mode.slice(1) +
+    " Mode";
+}
 var standingsModeLabel = document.getElementById("standingsModeLabel");
 if(standingsModeLabel) {
   standingsModeLabel.textContent =
