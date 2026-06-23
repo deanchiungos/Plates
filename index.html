@@ -1098,6 +1098,24 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:800;
   line-height:1.35;
 }
+
+.memoryActions{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin:12px 0;
+  flex-wrap:wrap;
+}
+.memoryBtn{
+  border:1px solid rgba(21,119,210,.22);
+  background:#fff;
+  color:var(--navy);
+  border-radius:999px;
+  padding:10px 14px;
+  font-size:13px;
+  font-weight:900;
+}
+
 </style>
 </head>
 
@@ -1129,7 +1147,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
       <span>Every plate counts, even repeats. Keep spotting.</span>
     </div>
 
-    <p class="onboardingFooter">Unlock badges, save road trips and earn bragging rights.</p>
+    <p class="onboardingFooter">Unlock badges, save roadtrips and earn bragging rights.</p>
 
     <button class="primary" id="onboardingDone" type="button">Got It</button>
   </div>
@@ -1157,7 +1175,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
     <div class="card">
       <div class="currentTripHeader" id="tripPillBtn">
         <span class="tripKicker">Current Trip</span>
-        <span class="tripNameInline" id="tripNameTop">Summer Road Trip</span>
+        <span class="tripNameInline" id="tripNameTop">Summer Roadtrip</span>
       </div>
 
       <div class="bigProgress">
@@ -1384,7 +1402,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   <section id="tripsScreen" class="screen hidden">
     <div class="card">
       <div class="panelTitle"><span>Current Trip</span><span id="tripStats">0 states</span></div>
-      <div class="row"><div class="grow"><div class="title" id="tripName">Summer Road Trip</div><div class="sub" id="tripModeSummary">Classic mode</div></div></div>
+      <div class="row"><div class="grow"><div class="title" id="tripName">Summer Roadtrip</div><div class="sub" id="tripModeSummary">Classic mode</div></div></div>
       <br>
       <div class="tripActions">
         <button class="primary" id="endTripBtn">End + Save Current Trip</button>
@@ -1418,7 +1436,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
           <h2>PLATES</h2>
           <div>THE LICENSE PLATE GAME</div>
         </div>
-        <h2 id="shareTripName">Summer Road Trip</h2>
+        <h2 id="shareTripName">Summer Roadtrip</h2>
         <p class="sub" id="shareDate">Today</p>
         <div class="shareStats">
           <div><strong id="shareStates">0/50</strong><span>STATES</span></div>
@@ -1453,7 +1471,7 @@ var mode = localStorage.platesMode || "classic";
 var view = localStorage.platesView || "game";
 var counts = JSON.parse(localStorage.platesCounts || "{}");
 var log = JSON.parse(localStorage.platesLog || "[]");
-var tripName = localStorage.platesTripName || "Summer Road Trip";
+var tripName = localStorage.platesTripName || "Summer Roadtrip";
 var tripCount = Number(localStorage.platesTripCount || 1);
 var savedTrips = JSON.parse(localStorage.platesSavedTrips || "[]");
 var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBestTrip || 0);
@@ -1644,7 +1662,7 @@ function endCurrentTrip() {
   tripCount += 1;
   counts = {};
   log = [];
-  tripName = prompt("Name your next trip:", "New Road Trip") || "New Road Trip";
+  tripName = prompt("Name your next trip:", "New Roadtrip") || "New Roadtrip";
   save();
   render();
   toast("Trip saved");
@@ -1656,7 +1674,7 @@ function newTrip() {
     tripCount += 1;
     counts = {};
     log = [];
-    tripName = prompt("Trip name:","New Road Trip") || "New Road Trip";
+    tripName = prompt("Trip name:","New Roadtrip") || "New Roadtrip";
     save();
     render();
     toast("New trip started");
