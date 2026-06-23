@@ -1538,7 +1538,6 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 
-/* v41.7 state unclick support */
 .stateHint {
   margin:-4px 0 10px;
   color:var(--muted);
@@ -1546,7 +1545,6 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:800;
   text-align:center;
 }
-
 </style>
 </head>
 
@@ -2037,6 +2035,11 @@ function tapState(btn) {
       counts[code] = 0;
       log = log.filter(function(item){ return item.code !== code; });
       toast("Removed " + name);
+      updateBestForCurrentMode();
+      save();
+      render();
+      if(selectedState === code) selectMapState(code);
+      return;
     } else {
       counts[code] = 1;
     }
@@ -2065,7 +2068,6 @@ function tapState(btn) {
   updateBestForCurrentMode();
   save();
   render();
-
   if(selectedState === code) selectMapState(code);
 }
 
