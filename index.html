@@ -2606,7 +2606,12 @@ mode.slice(1) +
   return points + " points across " + sightings + " sightings in Unlimited Mode";
 }
 
-function deleteSavedTrip(index) {
+function tripModeSummaryText(c, points, sightings) {
+  if(mode === "classic") return "Classic Mode";
+  if(mode === "weighted") return "Weighted Mode";
+  return "Unlimited Mode";
+}
+  function deleteSavedTrip(index) {
   if(index < 0 || index >= savedTrips.length) return;
   var name = savedTrips[index].name || "this roadtrip";
   if(confirm("Delete " + name + "?")) {
