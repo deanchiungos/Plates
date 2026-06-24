@@ -223,7 +223,8 @@ button {
 }
 
 .latestTripInfo {
-  text-align: center;
+  text-align:center;
+  padding:24px 0 18px;
 }
 
  .latestTripLabel {
@@ -385,8 +386,10 @@ body.show-rarity .mapState.rare:not(.hit) {
   color:var(--muted);
 }
 .tripActions {
-  display:grid;
+  display:flex;
+  flex-direction:column;
   gap:10px;
+  align-items:center;
 }
 .primary {
   background:var(--gold);
@@ -1417,9 +1420,10 @@ font-size:26px;
   font-weight: 900;
   color: #073b63;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
+  
 #tripsScreen .row .grow {
   text-align:left;
 }
