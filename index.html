@@ -3006,7 +3006,8 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
   });
 
-  document.getElementById("tripPillBtn").onclick = function(){ setView("trips"); };
+var tripPillBtn = document.getElementById("tripPillBtn");
+if(tripPillBtn) tripPillBtn.onclick = function(){ setView("trips"); };
 
   document.body.addEventListener("click", function(e){
     if(e.target.classList.contains("memoryBtnNote")) {
