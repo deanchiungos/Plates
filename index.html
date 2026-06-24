@@ -2888,7 +2888,7 @@ function render() {
   document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
     var pts = mode === "classic" ? "" : "+" + x.points;
     var finder = x.playerName || "Team";
-    return '<div class="row recentItem"><div><div class="recentState">' + x.name + '</div><div class="recentFinder">Found by ' + finder + '</div></div><div class="recentMeta"><span class="recentTime">Just now</span><span class="recentPts">' + pts + '</span></div></div>';
+    return '<div class="row recentItem"><div><div class="recentState">' + x.name + '</div><div class="recentFinder">Found by ' + finder + '</div></div><div class="recentMeta"><span class="recentTime">' + timeAgo(x.ts) + '</span><span class="recentPts">' + pts + '</span></div></div>';
   }).join("") : "No plates yet";
 
   renderBadges(c);
