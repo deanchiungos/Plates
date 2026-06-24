@@ -2591,8 +2591,10 @@ function renderBadges(c) {
   }).join("");
 }
 
-
-function tripModeSummaryText(c, points, sightings) {
+c + "/50 states • " +
+mode.charAt(0).toUpperCase() +
+mode.slice(1) +
+" Mode" {
   if(mode === "classic") return c + "/50 states - Classic Mode";
   if(mode === "weighted") return points + " points in Weighted Mode";
   return points + " points across " + sightings + " sightings in Unlimited Mode";
