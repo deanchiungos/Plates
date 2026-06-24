@@ -2980,7 +2980,8 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   document.getElementById("endTripBtn").onclick = endCurrentTrip;
   document.getElementById("renameTripBtn").onclick = renameTrip;
   document.getElementById("newTripBtn").onclick = newTrip;
-  document.getElementById("shareTripBtn").onclick = shareSummary;
+ var shareTripBtn = document.getElementById("shareTripBtn");
+if(shareTripBtn) shareTripBtn.onclick = shareSummary;
   document.getElementById("copyShareBtn").onclick = copyShareText;
   var shareRoadtripBtn = document.getElementById("shareRoadtripBtn");
   if(shareRoadtripBtn) shareRoadtripBtn.onclick = function(){ setView("share"); };
