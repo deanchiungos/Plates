@@ -2597,14 +2597,7 @@ function renderBadges(c) {
   }).join("");
 }
 
-c + "/50 states • " +
-mode.charAt(0).toUpperCase() +
-mode.slice(1) +
-" Mode" {
-  if(mode === "classic") return c + "/50 states - Classic Mode";
-  if(mode === "weighted") return points + " points in Weighted Mode";
-  return points + " points across " + sightings + " sightings in Unlimited Mode";
-}
+
 
 function tripModeSummaryText(c, points, sightings) {
   if(mode === "classic") return "Classic Mode";
@@ -2895,7 +2888,7 @@ document.getElementById("tripStatesLine").textContent = c + "/50 states";
   var currentTripHtml =
     '<div class="row tripRow currentTripRow"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Current</div></div>';
 
- var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
+var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
   var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
   var modeLabel = t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + " Mode";
 
