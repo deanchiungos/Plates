@@ -2630,6 +2630,22 @@ function currentPlayer() {
   return player || { id:"p1", name:"Dean" };
 }
 
+function timeAgo(iso) {
+  var d = new Date(iso);
+  var seconds = Math.floor((new Date() - d) / 1000);
+
+  if(seconds < 60) return "Just now";
+
+  var minutes = Math.floor(seconds / 60);
+  if(minutes < 60) return minutes + "m ago";
+
+  var hours = Math.floor(minutes / 60);
+  if(hours < 24) return hours + "h ago";
+
+  var days = Math.floor(hours / 24);
+  return days + "d ago";
+}
+
 function addPlayer() {
   var name = prompt("Team Member Name:", "");
   if(!name || !name.trim()) return;
