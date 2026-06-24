@@ -2124,7 +2124,7 @@ function safeParse(value, fallback) {
 }
   var mode = localStorage.platesMode || "classic";
 var view = localStorage.platesView || "game";
-var counts = JSON.parse(localStorage.platesCounts || "{}");
+var counts = safeParse(localStorage.platesCounts, "{}");
 var log = safeParse(localStorage.platesLog, "[]");
 var tripName = localStorage.platesTripName || "Summer Roadtrip";
 var tripCount = Number(localStorage.platesTripCount || 1);
