@@ -1750,11 +1750,12 @@ body {
   </div>
 </div>
 
-<div class="celebrationOverlay" id="celebrationOverlay">
+<div class="celebrationOverlay" id="celebrationOverlay" onclick="this.classList.remove('show')">
   <div class="celebrationBox">
     <h2 id="celebrationTitle">Nice Find</h2>
     <p id="celebrationText">You added a new plate</p>
-<button class="primary celebrationBtn" id="celebrationClose" type="button" onclick="document.getElementById('celebrationOverlay').classList.remove('show')">Keep Playing</button>
+
+  <button class="primary celebrationBtn" id="celebrationClose" type="button">Keep Playing</button>
   </div>
 </div>
 
