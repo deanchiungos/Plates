@@ -2026,8 +2026,11 @@ body {
 
   <section id="tripsScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Latest Trip:</span><span id="tripStats">0 states</span></div>
-      <div class="row"><div class="grow"><div class="title" id="tripName">Summer Roadtrip</div><div class="sub" id="tripModeSummary">Classic mode</div></div></div>
+    <div class="panelTitle"><span>Latest Trip:</span></div>
+      <div class="row"><div class="grow"><div class="title" id="tripName">Summer Roadtrip</div>
+       <div class="sub" id="tripStatesLine">0/50 states</div>
+<div class="sub" id="tripModeSummary">Classic Mode</div>
+      </div></div>
       <br>
       <div class="tripActions">
         <button class="primary" id="endTripBtn">End + Save Current Trip</button>
@@ -2870,7 +2873,7 @@ function render() {
   document.getElementById("mapCount").textContent = c + " / 50 found";
   document.getElementById("badgeCount").textContent = unlockedBadges + " unlocked";
   renderFamily(c, unlockedBadges);
-  document.getElementById("tripStats").textContent = c + " states";
+document.getElementById("tripStatesLine").textContent = c + "/50 states";
   document.getElementById("tripName").textContent = tripName;
   document.getElementById("tripNameTop").textContent = tripName;
   document.getElementById("tripModeSummary").textContent = tripModeSummaryText(c, points, sightings);
