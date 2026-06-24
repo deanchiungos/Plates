@@ -1481,7 +1481,21 @@ font-size:26px;
 .playerPickerCard {
   margin-top:10px;
 }
+.inlinePicker {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
 
+.inlinePicker .playerPickerLabel {
+  margin:0;
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.inlinePicker .playerSelect {
+  flex:1;
+}
 .playerPickerLabel {
   color:var(--navy);
   font-size:18px;
@@ -1783,10 +1797,10 @@ body {
 <div class="tripNameInline" id="tripNameTop">Summer Roadtrip</div>
       </div>
 
-      <div class="playerPickerCard">
-        <div class="playerPickerLabel">Who's spotting?</div>
-        <select class="playerSelect" id="currentPlayerSelect"></select>
-      </div>
+  <div class="playerPickerCard inlinePicker">
+  <div class="playerPickerLabel">Who's spotting?</div>
+  <select class="playerSelect" id="currentPlayerSelect"></select>
+</div>
 
       <div class="bigProgress">
         <div class="primaryStat">
