@@ -2983,11 +2983,21 @@ document.querySelectorAll("[data-mode]").forEach(function(btn){
   document.getElementById("newTripBtn").onclick = newTrip;
  var shareTripBtn = document.getElementById("shareTripBtn");
 if(shareTripBtn) shareTripBtn.onclick = shareSummary;
-  document.getElementById("copyShareBtn").onclick = copyShareText;
-  var shareRoadtripBtn = document.getElementById("shareRoadtripBtn");
-  if(shareRoadtripBtn) shareRoadtripBtn.onclick = function(){ setView("share"); };
-  document.getElementById("celebrationClose").onclick = function(){ document.getElementById("celebrationOverlay").classList.remove("show"); };
 
+var copyShareBtn = document.getElementById("copyShareBtn");
+if(copyShareBtn) copyShareBtn.onclick = copyShareText;
+
+var shareRoadtripBtn = document.getElementById("shareRoadtripBtn");
+if(shareRoadtripBtn) shareRoadtripBtn.onclick = function(){ setView("share"); };
+
+var celebrationClose = document.getElementById("celebrationClose");
+if(celebrationClose) {
+  celebrationClose.addEventListener("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById("celebrationOverlay").classList.remove("show");
+  });
+}
 }
 
 attachHandlers();
