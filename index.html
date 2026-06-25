@@ -108,6 +108,49 @@ button {
   text-transform:none;
   margin-bottom:8px;
 }
+.completionOverlay {
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:20px;
+}
+
+.completionOverlay.hidden {
+  display:none;
+}
+
+.completionCard {
+  width:100%;
+  max-width:360px;
+  background:#fff;
+  border-radius:28px;
+  padding:32px 24px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.completionEmoji {
+  font-size:72px;
+}
+
+.completionTitle {
+  font-size:32px;
+  font-weight:950;
+  color:var(--navy);
+  margin-top:12px;
+}
+
+.completionSub {
+  font-size:18px;
+  color:var(--muted);
+  margin:14px 0 24px;
+  line-height:1.35;
+}
+  
 .tripNameInline {
   display:block;
   font-size:18px;
@@ -3211,5 +3254,22 @@ attachHandlers();
 render();
 showOnboardingIfNeeded();
 </script>
+<div class="completionOverlay hidden" id="completionOverlay">
+  <div class="completionCard">
+    <div class="completionEmoji">🎉</div>
+
+    <div class="completionTitle">
+      Roadtrip Complete!
+    </div>
+
+    <div class="completionSub">
+      You've collected all 50 states!
+    </div>
+
+    <button class="primary" id="closeCompletionBtn">
+      Awesome!
+    </button>
+  </div>
+</div>
 </body>
 </html>
