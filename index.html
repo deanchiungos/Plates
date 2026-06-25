@@ -2959,7 +2959,7 @@ document.getElementById("tripStatesLine").textContent = c + "/50 states";
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
   var currentTripHtml =
-    '<div class="row tripRow currentTripRow"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Current</div></div>';
+    '<div class="row tripRow currentTripRow"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Latest</div></div>';
 
 var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
   var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
