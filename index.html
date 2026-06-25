@@ -2279,7 +2279,13 @@ function showOnboardingIfNeeded() {
     if(overlay) overlay.classList.add("show");
   }
 }
-
+function getTripInviteCode() {
+  if(!tripInviteCode) {
+    tripInviteCode = "ROAD-" + Math.floor(1000 + Math.random() * 9000);
+    localStorage.platesInviteCode = tripInviteCode;
+  }
+  return tripInviteCode;
+}
 function dismissOnboarding() {
   hasSeenOnboarding = true;
   localStorage.platesSeenOnboarding = "true";
