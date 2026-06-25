@@ -2384,6 +2384,8 @@ function rareCollectedCount() {
   return total;
 }
 
+
+  
 function tapState(btn) {
   var code = btn.dataset.code;
   var name = btn.dataset.name;
@@ -2932,6 +2934,10 @@ if(standingsModeLabel) {
 
 
 function render() {
+  var inviteCodeEl = document.getElementById("tripInviteCode");
+  if(inviteCodeEl) {
+    inviteCodeEl.textContent = getTripInviteCode();
+  }
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
   var points = totalScore();
@@ -3099,6 +3105,16 @@ function attachHandlers() {
     playerSelect.onchange = function(){ switchPlayer(playerSelect.value); };
   }
 
+document.getElementById("copyInviteBtn").onclick = function() {
+  var code = getTripInviteCode();
+
+  navigator.clipboard.writeText(code).then(function() {
+    toast("Invite code copied");
+  }).catch(function() {
+    prompt("Copy this invite code:", code);
+  });
+};
+  
   var addPlayerBtn = document.getElementById("addPlayerBtn");
   if(addPlayerBtn) addPlayerBtn.onclick = addPlayer;
 
