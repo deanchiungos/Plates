@@ -1657,6 +1657,36 @@ font-size:26px;
   align-items:flex-start;
 }
 
+.inviteBox {
+  text-align:center;
+  padding:10px 4px 6px;
+}
+
+.inviteLabel {
+  color:var(--muted);
+  font-size:14px;
+  font-weight:850;
+  margin-bottom:10px;
+}
+
+.inviteCode {
+  display:inline-block;
+  background:#f8fbff;
+  border:2px dashed rgba(21,119,210,.35);
+  border-radius:18px;
+  padding:16px 24px;
+  color:var(--navy);
+  font-size:30px;
+  font-weight:950;
+  letter-spacing:2px;
+  margin-bottom:14px;
+}
+
+#copyInviteBtn {
+  width:100%;
+  max-width:260px;
+}
+
 .familyInfoCard .grow {
   width:100%;
 }
@@ -2132,6 +2162,18 @@ body {
       <div id="leaderboardList"></div>
     </div>
 
+<div class="card">
+  <div class="panelTitle">
+    <span>Trip Invite</span>
+  </div>
+
+  <div class="inviteBox">
+    <div class="inviteLabel">Share this code with your team</div>
+    <div class="inviteCode" id="tripInviteCode">ROAD-4832</div>
+    <button class="primary" id="copyInviteBtn" type="button">Copy Invite Code</button>
+  </div>
+</div>
+    
     <div class="card">
    <div class="panelTitle teamHelpTitle">
   <span>How Team Mode Works</span>
