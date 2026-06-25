@@ -1674,9 +1674,9 @@ font-size:26px;
   background:#f8fbff;
   border:2px dashed rgba(21,119,210,.35);
   border-radius:18px;
-  padding:16px 24px;
+  padding:14px 20px;
   color:var(--navy);
-  font-size:30px;
+  font-size:26px;
   font-weight:950;
   letter-spacing:2px;
   margin-bottom:14px;
@@ -2167,12 +2167,22 @@ body {
     <span>Roadtrip Invite</span>
   </div>
 
-  <div class="inviteBox">
-    <div class="inviteLabel">Share code to invite Teammates</div>
-    <div class="inviteCode" id="tripInviteCode">ROAD-4832</div>
-    <button class="primary" id="copyInviteBtn" type="button">Copy Invite Code</button>
+  
+
+<div class="inviteBox">
+  <div class="inviteLabel">Share this code to invite teammates</div>
+
+  <div class="inviteCode" id="tripInviteCode">
+    ROAD-4832
   </div>
-</div>
+
+  <button class="primary" id="copyInviteBtn" type="button">
+    Copy Invite Code
+  </button>
+
+  <button class="secondary" id="shareInviteBtn" type="button">
+    Share Invite
+  </button>
     
     <div class="card">
    <div class="panelTitle teamHelpTitle">
@@ -2227,7 +2237,7 @@ body {
 
     <button id="familyNav" data-view="family"><span class="navIcon">👥</span>Team</button>
 
-    <button id="shareNav" data-view="share"><span class="navIcon">↗️</span>Share</button>
+    <button id="shareNav" data-view="share"><span class="navIcon">📣</span>Share</button>
   </div>
 </nav>
 
