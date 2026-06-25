@@ -301,6 +301,9 @@ body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
   padding:12px;
   overflow:hidden;
 }
+  .tapStateTitle {
+  font-size:24px;
+}
 .mapGrid {
   display:grid;
   grid-template-columns:repeat(12,1fr);
@@ -1881,7 +1884,10 @@ body {
     </div>
 
     <div class="card">
-      <div class="panelTitle"><span>Tap a State</span><span id="listCount">0/50</span></div>
+      <div class="panelTitle tapStateTitle">
+  <span>Tap a State</span>
+  <span id="listCount">0/50</span>
+</div>
       <div class="stateGrid" id="stateGrid">
 <button class="state" data-code="AL" data-name="Alabama" data-points="3">AL</button>
 <button class="state" data-code="AK" data-name="Alaska" data-points="10">AK</button>
