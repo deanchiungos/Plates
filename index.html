@@ -2752,15 +2752,15 @@ function setMode(newMode) {
   mode = newMode;
 
   // Show player picker only in Roadtrip Mode
-  const picker = document.getElementById("playerPickerRow");
+const picker = document.getElementById("playerPickerRow");
 
-  if (picker) {
-    if (mode === "roadtrip") {
-      picker.style.display = "flex";
-    } else {
-      picker.style.display = "none";
-    }
+if (picker) {
+  if (mode === "classic") {
+    picker.style.display = "none";
+  } else {
+    picker.style.display = "flex";
   }
+}
 
   updateBestForCurrentMode();
   save();
