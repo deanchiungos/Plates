@@ -3298,6 +3298,9 @@ if (homeModePill) {
   var unlockedBadges = badgeCount(c);
 
   document.body.classList.toggle("show-rarity", mode !== "classic");
+  document.querySelectorAll(".modeExplainCard").forEach(function(card){
+  card.classList.toggle("active", card.dataset.explainMode === mode);
+});
 
   document.querySelectorAll(".screen").forEach(function(s){ s.classList.add("hidden"); });
   document.getElementById(view + "Screen").classList.remove("hidden");
