@@ -3225,9 +3225,12 @@ if (homeModePill) {
   document.querySelectorAll(".navInner button").forEach(function(b){ b.classList.remove("active"); });
   document.getElementById(view + "Nav").classList.add("active");
 
-  ["classic","weighted","unlimited"].forEach(function(m){
-    document.getElementById(m + "Btn").classList.toggle("active", mode === m);
-  });
+["classic","weighted","unlimited"].forEach(function(m){
+  var modeBtn = document.getElementById(m + "Btn");
+  if(modeBtn) {
+    modeBtn.classList.toggle("active", mode === m);
+  }
+});
 
   document.querySelectorAll(".state").forEach(function(btn){
     var code = btn.dataset.code;
