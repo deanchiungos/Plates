@@ -3316,6 +3316,14 @@ if (homeModePill) {
     mode === "weighted" ? "Weighted Mode" :
     "Unlimited Mode";
 }
+  var modeDropdownText = document.getElementById("modeDropdownText");
+
+if(modeDropdownText) {
+  modeDropdownText.textContent =
+    mode === "classic" ? "Classic Mode" :
+    mode === "weighted" ? "Weighted Mode" :
+    "Unlimited Mode";
+}
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
   var points = totalScore();
