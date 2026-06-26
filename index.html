@@ -3520,16 +3520,39 @@ document.getElementById("copyInviteBtn").onclick = function() {
     btn.onclick = function(){ tapState(btn); };
   });
 
+
+  
   document.querySelectorAll("[data-map-code]").forEach(function(cell){
     cell.onclick = function(){
       var code = cell.dataset.mapCode;
       selectMapState(code);
     };
   });
-document.querySelectorAll("[data-mode]").forEach(function(btn){
-    btn.onclick = function(){ setMode(btn.dataset.mode); };
-  });
 
+  
+var modeDropdownBtn = document.getElementById("modeDropdownBtn");
+var modeOverlay = document.getElementById("modeOverlay");
+var modeCloseBtn = document.getElementById("modeCloseBtn");
+
+if(modeDropdownBtn && modeOverlay) {
+  modeDropdownBtn.onclick = function() {
+    modeOverlay.classList.remove("hidden");
+  };
+}
+
+if(modeCloseBtn && modeOverlay) {
+  modeCloseBtn.onclick = function() {
+    modeOverlay.classList.add("hidden");
+  };
+}
+
+document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
+  btn.onclick = function() {
+    setMode(btn.dataset.modeChoice);
+    if(modeOverlay) modeOverlay.classList.add("hidden");
+  };
+});
+  
   document.querySelectorAll("[data-view]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
   });
