@@ -1980,6 +1980,30 @@ body {
   margin:0;
   text-align:left;
   line-height:1.2;
+}.modeCard {
+  display:grid;
+  grid-template-columns: 190px 1fr;
+  align-items:center;
+  column-gap:14px;
+  padding:7px 0;
+}
+
+.modeCard .title {
+  font-size:18px;
+  font-weight:950;
+  color:var(--navy);
+  margin:0;
+  text-align:left;
+  white-space:nowrap;
+}
+
+.modeCard .sub {
+  font-size:15px;
+  font-weight:800;
+  color:#667085;
+  margin:0;
+  text-align:left;
+  line-height:1.15;
 }
   .gameModesCard {
   padding:22px 28px;
@@ -2096,7 +2120,7 @@ body {
       </div>
 
 <div class="card gameModesCard">
-  <div class="panelTitle">Game Modes</div>
+
 
  <div class="modeCard">
   <div class="title">🗺️ Classic Mode</div>
