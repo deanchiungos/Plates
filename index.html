@@ -3307,7 +3307,17 @@ if(modeDropdownText) {
     mode === "weighted" ? "Battle Mode" :
     "Roadtrip Mode";
 }
-  var c = collectedCount();
+
+var tripModeTop = document.getElementById("tripModeTop");
+
+if(tripModeTop) {
+  tripModeTop.textContent =
+    mode === "classic" ? "Classic Mode" :
+    mode === "weighted" ? "Battle Mode" :
+    "Roadtrip Mode";
+}
+
+var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
   var points = totalScore();
   var sightings = totalSightings();
