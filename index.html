@@ -3306,6 +3306,11 @@ if (homeModePill) {
   document.querySelectorAll(".modeExplainCard").forEach(function(card){
   card.classList.toggle("active", card.dataset.explainMode === mode);
 });
+  document.querySelectorAll(".modeExplainCard").forEach(function(card){
+  card.onclick = function(){
+    setMode(card.dataset.explainMode);
+  };
+});
 
   document.querySelectorAll(".screen").forEach(function(s){ s.classList.add("hidden"); });
   document.getElementById(view + "Screen").classList.remove("hidden");
