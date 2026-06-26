@@ -3037,6 +3037,14 @@ function render() {
   if(inviteCodeEl) {
     inviteCodeEl.textContent = getTripInviteCode();
   }
+  var homeModePill = document.getElementById("homeModePill");
+
+if (homeModePill) {
+  homeModePill.textContent =
+    mode === "classic" ? "Classic Mode" :
+    mode === "weighted" ? "Weighted Mode" :
+    "Unlimited Mode";
+}
   var c = collectedCount();
   var pct = Math.round(c / 50 * 100);
   var points = totalScore();
