@@ -3308,14 +3308,9 @@ function render() {
   if(inviteCodeEl) {
     inviteCodeEl.textContent = getTripInviteCode();
   }
-  var homeModePill = document.getElementById("homeModePill");
 
-if (homeModePill) {
-  homeModePill.textContent =
-    mode === "classic" ? "Classic Mode" :
-    mode === "weighted" ? "Weighted Mode" :
-    "Unlimited Mode";
-}
+
+
   var modeDropdownText = document.getElementById("modeDropdownText");
 
 if(modeDropdownText) {
