@@ -2647,9 +2647,20 @@ function tapState(btn) {
   save();
   render();
 }
-
 function setMode(newMode) {
   mode = newMode;
+
+  // Show player picker only in Roadtrip Mode
+  const picker = document.getElementById("playerPickerRow");
+
+  if (picker) {
+    if (mode === "roadtrip") {
+      picker.style.display = "flex";
+    } else {
+      picker.style.display = "none";
+    }
+  }
+
   updateBestForCurrentMode();
   save();
   render();
@@ -3440,7 +3451,8 @@ if(celebrationClose) {
 }
 
 attachHandlers();
-render();
+setMode(mode);
+  render();
 showOnboardingIfNeeded();
 </script>
 <div class="completionOverlay hidden" id="completionOverlay">
