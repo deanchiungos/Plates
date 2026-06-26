@@ -2885,8 +2885,15 @@ function deleteMemory(id) {
     save();
     render();
     if(selectedState) selectMapState(selectedState);
-    toast("Memory deleted");
+
+  const picker = document.getElementById("playerPickerRow");
+
+  if (picker) {
+    picker.style.display = mode === "roadtrip" ? "flex" : "none";
   }
+
+  save();
+}
 }
 
 function selectMapState(code) {
