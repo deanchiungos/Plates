@@ -255,7 +255,22 @@ button {
   border-color:rgba(53,168,82,.45);
   color:var(--green);
 }
+  
+.modeExplainCard {
+  border:1px solid transparent;
+  border-radius:18px;
+  padding:12px 14px;
+}
 
+.modeExplainCard.active {
+  background:linear-gradient(180deg,#eaffef,#ffffff);
+  border-color:rgba(38,169,87,.65);
+}
+
+.modeExplainCard.active .title,
+.modeExplainCard.active .sub {
+  color:var(--green);
+}
   .homeModePill {
   display:block;
   width:max-content;
@@ -2119,17 +2134,17 @@ body {
 
 <div class="card gameModesCard">
 
-<div class="modeCard">
+<div class="modeCard modeExplainCard" data-explain-mode="classic">
   <div class="title">🗺️ Classic Mode</div>
   <div class="sub">Complete the map</div>
 </div>
 
-<div class="modeCard">
+<div class="modeCard modeExplainCard" data-explain-mode="weighted">
   <div class="title">⚔️ Battle Mode</div>
   <div class="sub">Compete against friends</div>
 </div>
 
-<div class="modeCard">
+<div class="modeCard modeExplainCard" data-explain-mode="unlimited">
   <div class="title">👥 Roadtrip Mode</div>
   <div class="sub">Team up & compete nationwide</div>
 </div>
