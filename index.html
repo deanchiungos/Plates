@@ -1487,7 +1487,94 @@ font-size:24px;
   background:#f8fbff;
 }
 
+.modeDropdownBtn {
+  width:100%;
+  margin:0 0 16px;
+  padding:13px 16px;
+  border-radius:999px;
+  background:#eaf3ff;
+  border:1px solid rgba(21,119,210,.25);
+  color:var(--navy);
+  font-size:16px;
+  font-weight:950;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
 
+.modeOverlay {
+  position:fixed;
+  inset:0;
+  z-index:130;
+  background:rgba(7,55,99,.55);
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:18px;
+}
+
+.modeOverlay.hidden {
+  display:none;
+}
+
+.modeSheet {
+  width:100%;
+  max-width:430px;
+  background:#fff;
+  border-radius:24px;
+  padding:20px 18px 18px;
+  box-shadow:0 18px 60px rgba(0,0,0,.28);
+}
+
+.modeSheetTitle {
+  color:var(--navy);
+  font-size:24px;
+  font-weight:950;
+  text-align:center;
+  margin-bottom:14px;
+}
+
+.modeOption {
+  width:100%;
+  text-align:left;
+  border:1px solid var(--line);
+  background:#f8fbff;
+  border-radius:16px;
+  padding:13px 14px;
+  margin-top:9px;
+}
+
+.modeOption strong {
+  display:block;
+  color:var(--navy);
+  font-size:17px;
+  font-weight:950;
+}
+
+.modeOption span {
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:800;
+  margin-top:4px;
+  line-height:1.3;
+}
+
+.modeOption.active {
+  background:#eaffef;
+  border-color:rgba(38,169,87,.45);
+}
+
+.modeOption.active strong:after {
+  content:" ✓";
+  color:var(--green);
+}
+
+.modeCloseBtn {
+  width:100%;
+  margin-top:14px;
+}
 /* v41.2a current trip summary + share button alignment */
 #tripModeSummary {
   color:#6b7280;
