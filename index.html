@@ -1930,7 +1930,32 @@ body {
     <button class="primary" id="onboardingDone" type="button">Got It</button>
   </div>
 </div>
+<div class="modeOverlay hidden" id="modeOverlay">
+  <div class="modeSheet">
 
+    <div class="modeSheetTitle">Game Modes</div>
+
+    <button class="modeOption" data-mode-choice="classic" type="button">
+      <strong>Classic</strong>
+      <span>Collect all 50 states Each state counts once</span>
+    </button>
+
+    <button class="modeOption" data-mode-choice="weighted" type="button">
+      <strong>Weighted</strong>
+      <span>Rare states are worth more points Highest score wins</span>
+    </button>
+
+    <button class="modeOption" data-mode-choice="unlimited" type="button">
+      <strong>Unlimited</strong>
+      <span>Every plate counts, even repeats Keep spotting</span>
+    </button>
+
+    <button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
+      Close
+    </button>
+
+  </div>
+</div>
 <div class="celebrationOverlay" id="celebrationOverlay" onclick="this.classList.remove('show')">
   <div class="celebrationBox">
     <h2 id="celebrationTitle">Nice Find</h2>
@@ -1982,11 +2007,10 @@ body {
         <button class="stat statBtn" id="badgesStatBtn" type="button"><strong id="badgeMini">0</strong><span id="badgeLabel">Badges</span></button>
       </div>
 
-    <div class="modeStrip">
-      <button id="classicBtn" class="active" data-mode="classic">Classic</button>
-      <button id="weightedBtn" data-mode="weighted">Weighted</button>
-      <button id="unlimitedBtn" data-mode="unlimited">Unlimited</button>
-    </div>
+  <button class="modeDropdownBtn" id="modeDropdownBtn" type="button">
+  <span id="modeDropdownText">Classic Mode</span>
+  <span>▼</span>
+</button>
 
     <div class="card">
       <div class="panelTitle tapStateTitle">
