@@ -1936,7 +1936,12 @@ body {
 .currentTripRow:active {
   transform:scale(.99);
 }
-
+.tripModeTop {
+  margin-top:8px;
+  color:rgba(255,255,255,.88);
+  font-size:16px;
+  font-weight:850;
+}
 .currentBadge {
   pointer-events:none;
 }
@@ -2149,8 +2154,8 @@ body {
 <div class="currentTripHeader" id="tripPillBtn">
   <div class="latestTripLabel">Latest Trip</div>
   <div class="tripNameInline" id="tripNameTop">Summer Roadtrip</div>
+  <div class="tripModeTop" id="tripModeTop">Roadtrip Mode</div>
 </div>
-
       <div id="playerPickerRow" class="playerPickerCard inlinePicker">
   <div class="playerPickerLabel">Who's the spotter?</div>
   <select class="playerSelect" id="currentPlayerSelect"></select>
