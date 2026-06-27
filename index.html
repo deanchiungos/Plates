@@ -2043,13 +2043,12 @@ body {
 }
 
 .modeMiniRow {
-  width:100%;
-  display:flex;
+  display:grid;
+  grid-template-columns:120px 1fr;
   align-items:center;
-  justify-content:space-between;
-  padding:12px 0;
+  gap:12px;
+  padding:18px 0;
   border-top:1px solid var(--line);
-  background:transparent;
 }
 
 .modeMiniRow:first-of-type {
@@ -2057,30 +2056,17 @@ body {
 }
 
 .modeMiniRow strong {
-  display:block;
   color:var(--navy);
   font-size:17px;
   font-weight:950;
-  text-align:center;
-}
-.modeMiniRow > div {
-  width:100%;
-  text-align:center;
-}
-.modeMiniRow span {
-  display:block;
-  color:var(--muted);
-  font-size:13px;
-  font-weight:800;
-  margin-top:2px;
-  text-align:center;
+  text-align:left;
 }
 
-.modeMiniRow em {
+.modeMiniRow span {
   color:var(--muted);
-  font-style:normal;
-  font-size:28px;
-  font-weight:700;
+  font-size:15px;
+  font-weight:800;
+  text-align:left;
 }
 #stateDetails {
   font-size: 16px;
@@ -2294,11 +2280,18 @@ body {
   </div>
 
 <div class="modeMiniRow">
-  <div>
-    <strong>Classic</strong>
-    <span>Collect all 50 states</span>
-  </div>
+  <strong>Classic</strong>
+  <span>Collect all 50 states</span>
+</div>
 
+<div class="modeMiniRow">
+  <strong>Battle</strong>
+  <span>Compete against friends & family</span>
+</div>
+
+<div class="modeMiniRow">
+  <strong>Roadtrip</strong>
+  <span>Team up with friends & family</span>
 </div>
 
 <div class="modeMiniRow">
