@@ -2826,10 +2826,10 @@ function setMode(newMode) {
 const picker = document.getElementById("playerPickerRow");
 
 if (picker) {
-  if (mode === "classic") {
-    picker.style.display = "none";
+  if (mode === "weighted") {
+    picker.style.display = "flex";   // Battle Mode only
   } else {
-    picker.style.display = "flex";
+    picker.style.display = "none";   // Classic + Roadtrip
   }
 }
 
