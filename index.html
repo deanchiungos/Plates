@@ -2507,9 +2507,9 @@ body {
 
   <section id="familyScreen" class="screen hidden">
     <div class="card">
-      <div class="panelTitle"><span>Battle Mode</span><span id="familyCount">1 Member</span></div>
+      <div class="panelTitle"><span>Battle Mode</span><span id="familyCount">1 Player</span></div>
       <div class="familyList" id="familyList"></div>
-      <button class="primary familyAddBtn" id="addPlayerBtn" type="button">Add Member</button>
+      <button class="primary familyAddBtn" id="addPlayerBtn" type="button">Add Player</button>
     </div>
 
 <div id="leaderboardList">
@@ -3211,7 +3211,7 @@ function timeAgo(iso) {
 }
 
 function addPlayer() {
-  var name = prompt("Team Member Name:", "");
+  var name = prompt("Player Name:", "");
   if(!name || !name.trim()) return;
 
   var player = {
@@ -3223,7 +3223,7 @@ function addPlayer() {
   currentPlayerId = player.id;
   save();
   render();
-  toast("Team Member added");
+  toast("Player added");
 }
 
 function switchPlayer(id) {
@@ -3247,7 +3247,7 @@ function deletePlayer(id) {
     if(currentPlayerId === id && players.length) currentPlayerId = players[0].id;
     save();
     render();
-    toast("Team Member deleted");
+    toast("Player deleted");
   }
 }
 
