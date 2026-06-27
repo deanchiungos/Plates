@@ -107,8 +107,7 @@ button {
 .currentTripHeader #tripModeSummary {
   color: var(--navy);
 }
-.latestTripInfo,
-.latestTripInfo * {
+.latestTripInfo {
   text-align:center !important;
 }
   
@@ -342,7 +341,14 @@ button {
   color:var(--green);
   margin:0 0 4px;
 }
-
+.latestTripLabel,
+.tripNameInline,
+#tripStatesLine,
+#tripModeSummary {
+  display:block;
+  width:100%;
+  text-align:center !important;
+}
 
 .panelTitle span:last-child {
   font-size:20px;
