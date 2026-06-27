@@ -3283,7 +3283,12 @@ function renderFamily(c, unlockedBadges) {
   }
 
   var familyCount = document.getElementById("familyCount");
-  if(familyCount) familyCount.textContent = players.length + (players.length === 1 ? " Team Member" : " Team Members");
+
+if(familyCount) {
+  familyCount.textContent =
+    players.length + " " +
+    (players.length === 1 ? "Player" : "Players");
+}
   
   var board = document.getElementById("leaderboardList");
 var standingsTitle = document.getElementById("standingsTitle");
