@@ -1340,7 +1340,15 @@ font-size:24px;
   font-weight:900;
   white-space:nowrap;
 }
+.inviteActions {
+  display:flex;
+  gap:12px;
+}
 
+.inviteActions button {
+  flex:1;
+  max-width:none !important;
+}
 .recentPts {
   color:var(--green);
   font-weight:950;
@@ -2551,6 +2559,7 @@ body {
     ROAD-4832
   </div>
 
+  <div class="inviteActions">
   <button class="secondary" id="copyInviteBtn" type="button">
     Copy Invite Code
   </button>
@@ -2558,6 +2567,7 @@ body {
   <button class="secondary" id="shareInviteBtn" type="button">
     Share Invite
   </button>
+</div>
     
 
 
