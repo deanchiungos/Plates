@@ -94,12 +94,18 @@ button {
   box-shadow:var(--shadow);
 }
 .currentTripHeader {
-  border:1px solid rgba(38,169,87,.45);
-  background:linear-gradient(180deg,#35b964,#239d4f);
-  border-radius:18px;
-    padding:20px 20px;
-  margin-bottom:14px;
-  text-align:center;
+  border:2px solid rgba(38,169,87,.20);
+  background:#fff;
+  border-radius:24px;
+  padding:20px;
+}
+  .currentTripHeader .title,
+.currentTripHeader .sub,
+.currentTripHeader .latestTripLabel,
+.currentTripHeader #tripName,
+.currentTripHeader #tripStatesLine,
+.currentTripHeader #tripModeSummary {
+  color: var(--navy);
 }
 .tripKicker {
   display:block;
