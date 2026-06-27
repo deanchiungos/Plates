@@ -3326,18 +3326,20 @@ if(standingsModeLabel) {
       list.innerHTML = '<div class="familyEmpty">No Members yet</div>';
       return;
     }
-
+    
     list.innerHTML = players.map(function(p){
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
-      return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
-        '<div class="familyAvatar">' + initial + '</div>' +
-        '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
-        '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Picking Team Member' : 'Tap Set Picker to play as ' + p.name) + '</div></div>' +
-        '<div class="familyActions">' +
-          '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Set Spotter</button>' +
-          '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>' +
-        '</div>' +
-      '</div>';
+return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
+  '<div class="familyAvatar">' + initial + '</div>' +
+  '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
+  '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Current Picker' : '') + '</div></div>' +
+  '<div class="familyActions">' +
+    (p.id === currentPlayerId
+      ? ''
+      : '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Make Picker</button>') +
+    '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>' +
+  '</div>' +
+'</div>';
     }).join("");
   }
 }
