@@ -2899,8 +2899,13 @@ function saveProfile() {
 
   localStorage.setItem("platesProfile", JSON.stringify(profile));
 
-  var saveBtn = document.getElementById("saveProfileBtn");
-  if(saveBtn) saveBtn.style.display = "none";
+var saveBtn = document.getElementById("saveProfileBtn");
+console.log("saveBtn =", saveBtn);
+
+if(saveBtn) {
+  saveBtn.style.display = "none";
+  console.log("button hidden");
+}
 
   toast("Profile saved");
 }
