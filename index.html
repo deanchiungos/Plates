@@ -1986,7 +1986,26 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   text-align:left;
   align-items:flex-start;
 }
+.avatarPicker {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
 
+.avatarBtn {
+  width:56px;
+  height:56px;
+  border:none;
+  border-radius:50%;
+  font-size:28px;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.avatarBtn.selected {
+  outline:3px solid #26a957;
+}
 .savedMsg {
   margin-top:14px;
   text-align:center;
