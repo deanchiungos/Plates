@@ -1996,7 +1996,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 .hidden {
-  display:none;
+  display:none !important;
 }
   
 .inviteBox {
@@ -2900,12 +2900,14 @@ function saveProfile() {
   localStorage.setItem("platesProfile", JSON.stringify(profile));
 
 var saveBtn = document.getElementById("saveProfileBtn");
-if(saveBtn) saveBtn.remove();
+
+if(saveBtn) {
+  saveBtn.classList.add("hidden");
   console.log("button hidden");
 }
 
-  toast("Profile saved");
-}
+toast("Profile saved");
+ } 
 function save() {
   localStorage.platesMode = mode;
   localStorage.platesView = view;
