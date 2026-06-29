@@ -3705,9 +3705,6 @@ return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '
   '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
   '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Current Player' : '') + '</div></div>' +
  '<div class="familyActions">' +
-(p.id === currentPlayerId
-? ''
-: '<button class="familySmallBtn" data-player-switch="' + p.id + '" type="button">Pick Player</button>') +
 
 (p.id === currentPlayerId
 ? ''
