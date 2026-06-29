@@ -3144,6 +3144,7 @@ function shareText() {
     "Top Finds: " + topFindsText();
 }
 var isSharing = false;
+  
 async function shareSummary() {
   if(navigator.share) navigator.share({ text:shareText() });
   else {
