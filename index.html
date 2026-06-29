@@ -2886,7 +2886,7 @@ var profile = safeParse(
   localStorage.getItem("platesProfile"),
   '{"name":"","email":""}'
 );
-
+profile.avatar = profile.avatar || "🚗";
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 var profile;
 
