@@ -3824,9 +3824,14 @@ if(tripPillBtn) tripPillBtn.onclick = function(){ setView("trips"); };
   if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
-  document.getElementById("endTripBtn").onclick = endCurrentTrip;
-  document.getElementById("renameTripBtn").onclick = renameTrip;
-  document.getElementById("newTripBtn").onclick = newTrip;
+var endTripBtn = document.getElementById("endTripBtn");
+if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
+
+var renameTripBtn = document.getElementById("renameTripBtn");
+if(renameTripBtn) renameTripBtn.onclick = renameTrip;
+
+var newTripBtn = document.getElementById("newTripBtn");
+if(newTripBtn) newTripBtn.onclick = newTrip;
  var shareTripBtn = document.getElementById("shareTripBtn");
 if(shareTripBtn) shareTripBtn.onclick = shareSummary;
 
