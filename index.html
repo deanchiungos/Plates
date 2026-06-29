@@ -691,7 +691,7 @@ body.show-rarity .mapState.rare:not(.hit) {
   max-width:430px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:repeat(5,1fr);
+  grid-template-columns:repeat(6,1fr);
   gap:4px;
 }
 .navInner button {
@@ -2661,7 +2661,27 @@ body {
 
     </div>
   </section>
+<section id="profileScreen" class="screen hidden">
+  <div class="card">
+    <div class="panelTitle">
+      <span>Profile</span>
+    </div>
 
+    <div class="formGroup">
+      <label>Name</label>
+      <input id="profileName" type="text" placeholder="Your name">
+    </div>
+
+    <div class="formGroup">
+      <label>Email</label>
+      <input id="profileEmail" type="email" placeholder="name@email.com">
+    </div>
+
+    <button class="secondary" id="saveProfileBtn" type="button">
+      Save Profile
+    </button>
+  </div>
+</section>
   <section id="shareScreen" class="screen hidden">
     <div class="card">
       <div class="panelTitle"><span>Share Card</span><span id="shareModeLabel">Classic</span></div>
@@ -2703,6 +2723,7 @@ body {
     <button id="tripsNav" data-view="trips"><span class="navIcon">🧳</span>Trips</button>
 
     <button id="familyNav" data-view="family"><span class="navIcon">👥</span>Team</button>
+    <button id="profileNav" data-view="profile"><span class="navIcon">👤</span>Profile</button>
 
   
   </div>
