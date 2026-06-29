@@ -132,24 +132,33 @@ button {
   align-items:center;
 }
 
-.tripLinks {
+.tripLinks{
   display:flex;
   justify-content:center;
-  gap:12px;
-  margin-top:18px;
-  flex-wrap:wrap;
+  gap:10px;
+  margin:12px 0 18px;
 }
 
-.textBtn {
+.textBtn{
+  flex:1;
+  max-width:120px;
   background:#fff;
   border:2px solid #dbe8f5;
   border-radius:999px;
   color:var(--blue);
   font-size:16px;
   font-weight:800;
-  padding:10px 18px;
-  min-width:110px;
+  padding:12px 0;
   box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.textBtn:active{
+  transform:scale(.98);
+}
+
+.dangerBtn{
+  border-color:#f3c4c4;
+  color:#c43d3d;
 }
 
 .textBtn:active {
@@ -2740,17 +2749,18 @@ Step 2 — Add the CSS
   </div>
 
 </div>
- <div class="tripActionsCompact">
-  <button class="primary" id="endTripBtn">
-    End + Save Current Trip
-  </button>
 
-  <div class="tripLinks">
-    <button class="textBtn" id="renameTripBtn">Rename</button>
-    <button class="textBtn" id="newTripBtn">New Trip</button>
-    <button class="textBtn" id="shareTripBtn">Share</button>
-  </div>
+
+<div class="tripLinks">
+  <button class="textBtn" id="renameTripBtn">Rename</button>
+  <button class="textBtn" id="newTripBtn">New Trip</button>
+  <button class="textBtn" id="shareTripBtn">Share</button>
 </div>
+
+<button class="secondary dangerBtn" id="endTripBtn">
+  End + Save Current Trip
+</button>
+    
     </div>
 
     <div class="card">
