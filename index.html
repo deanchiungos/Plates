@@ -3916,10 +3916,9 @@ var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
         t.states + '/50 states' +
       '</div>' +
     '</div>' +
-    '<div class="tripRowActions">' +
-      '<button class="renameTripBtnSmall" data-trip-index="' + i + '" type="button">Rename</button>' +
-      '<button class="deleteTripBtn" data-trip-index="' + i + '" type="button">Delete</button>' +
-    '</div>' +
+'<div class="tripRowActions">' +
+  '<button class="shareTripBtnSmall" data-trip-index="' + i + '" type="button">Share</button>' +
+'</div>' +
   '</div>';
 
   }).join("") : '<div class="emptyHistory">No saved roadtrips yet.</div>';
