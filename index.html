@@ -3695,7 +3695,7 @@ if(standingsModeLabel) {
     list.innerHTML = players.map(function(p){
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
 return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
-  '<div class="familyAvatar">' + initial + '</div>' +
+ '<div class="familyAvatar">' + (p.avatar || initial) + '</div>' +
   '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
   '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Current Player' : '') + '</div></div>' +
  '<div class="familyActions">' +
