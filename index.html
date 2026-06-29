@@ -4088,9 +4088,13 @@ if(tripPillBtn) tripPillBtn.onclick = function(){ setView("trips"); };
     if(e.target.classList.contains("memoryBtnPhoto")) {
       addMemoryPhoto(e.target.dataset.stateCode);
     }
-    if(e.target.classList.contains("deleteMemoryBtn")) {
-      deleteMemory(e.target.dataset.memoryId);
-    }
+ if(e.target.classList.contains("deleteMemoryBtn")) {
+  deleteMemory(e.target.dataset.memoryId);
+}
+
+if(e.target.classList.contains("shareTripBtnSmall")) {
+  shareSavedTrip(e.target.dataset.tripIndex);
+}
   });
 
   var photoInput = document.getElementById("memoryPhotoInput");
