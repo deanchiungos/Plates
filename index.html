@@ -3927,8 +3927,6 @@ document.getElementById("tripStatesLine").textContent = c + "/50 states";
   document.getElementById("tripModeSummary").textContent = tripModeSummaryText(c, points, sightings);
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
-  var currentTripHtml =
-    '<div class="row tripRow currentTripRow"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Latest</div></div>';
 
   savedTrips = savedTrips.slice(1);
   
@@ -3952,7 +3950,7 @@ var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
 
   }).join("") : '<div class="emptyHistory">No saved roadtrips yet.</div>';
 
-  document.getElementById("tripHistoryList").innerHTML = currentTripHtml + historyHtml;
+document.getElementById("tripHistoryList").innerHTML = historyHtml;
 
 document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
   var pts = mode === "classic" ? "" : "+" + x.points;
