@@ -2937,6 +2937,7 @@ var profile = safeParse(
 profile.avatar = profile.avatar || "🚗";
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
+  
 
 function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
@@ -2982,6 +2983,7 @@ function saveProfile() {
   profile.email = emailInput ? emailInput.value.trim() : "";
 
   localStorage.setItem("platesProfile", JSON.stringify(profile));
+  console.log("Saved profile:", profile);
   if(players && players.length) {
   players[0].name = profile.name || "Player";
   players[0].avatar = profile.avatar || "🚗";
@@ -3949,6 +3951,7 @@ if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
   btn.onclick = function() {
 
     profile.avatar = btn.dataset.avatar;
+    localStorage.setItem("platesProfile", JSON.stringify(profile));
     var preview = document.getElementById("avatarPreview");
 if(preview) preview.textContent = profile.avatar;
 
