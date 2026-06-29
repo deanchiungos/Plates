@@ -3988,10 +3988,20 @@ var shareTripBtn = document.getElementById("shareTripBtn");
 if(shareTripBtn) shareTripBtn.onclick = shareSummary;
 
 
-  
-
   var saveProfileBtn = document.getElementById("saveProfileBtn");
 if(saveProfileBtn) saveProfileBtn.onclick = function() {
+  document.querySelectorAll(".avatarBtn").forEach(function(btn) {
+  btn.onclick = function() {
+
+    profile.avatar = btn.dataset.avatar;
+
+    document.querySelectorAll(".avatarBtn").forEach(function(b){
+      b.classList.remove("selected");
+    });
+
+    btn.classList.add("selected");
+  };
+});
   profile.name = document.getElementById("profileName").value;
   profile.email = document.getElementById("profileEmail").value;
 
