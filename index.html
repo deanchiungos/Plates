@@ -2789,9 +2789,7 @@ Step 2 — Add the CSS
 
     <div class="formGroup">
 
-      <div id="avatarPreview" class="avatarPreview">
-  🚗
-</div>
+   
       <label>Name</label>
       <input id="profileName" type="text" placeholder="Your name">
     </div>
@@ -2987,6 +2985,11 @@ function saveProfile() {
   profile.email = emailInput ? emailInput.value.trim() : "";
 
   localStorage.setItem("platesProfile", JSON.stringify(profile));
+  if(players && players.length) {
+  players[0].name = profile.name || "Player";
+  players[0].avatar = profile.avatar || "🚗";
+  localStorage.platesPlayers = JSON.stringify(players);
+}
   console.log("Saved profile:", profile);
   if(players && players.length) {
   players[0].name = profile.name || "Player";
