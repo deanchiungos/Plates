@@ -2764,12 +2764,17 @@ body {
 <script>
 function safeParse(value, fallback) {
   try {
+    if (typeof value === "object" && value !== null) {
+      return value;
+    }
+
     if (!value || value === "undefined" || value === "[object Object]") {
       return JSON.parse(fallback);
     }
 
     return JSON.parse(value);
   } catch(e) {
+    console.log("Bad JSON:", value);
     return JSON.parse(fallback);
   }
 }
