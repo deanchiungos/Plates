@@ -2937,13 +2937,7 @@ var profile = safeParse(
 );
 profile.avatar = profile.avatar || "🚗";
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
-var profile;
 
-try {
-  profile = JSON.parse(localStorage.getItem("platesProfile") || '{"name":"","email":""}');
-} catch(e) {
-  profile = { name:"", email:"" };
-}
 
 function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
@@ -2981,6 +2975,11 @@ function saveProfile() {
   profile.email = emailInput ? emailInput.value.trim() : "";
 
   localStorage.setItem("platesProfile", JSON.stringify(profile));
+  if(players && players.length) {
+  players[0].name = profile.name || "Player";
+  players[0].avatar = profile.avatar || "🚗";
+  localStorage.platesPlayers = JSON.stringify(players);
+}
 
 var saveBtn = document.getElementById("saveProfileBtn");
 
