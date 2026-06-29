@@ -3651,12 +3651,7 @@ function playerStats() {
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
 
-  var select = document.getElementById("currentPlayerSelect");
-  if(select) {
-    select.innerHTML = players.map(function(p){
-      return '<option value="' + p.id + '"' + (p.id === currentPlayerId ? " selected" : "") + '>' + p.name + '</option>';
-    }).join("");
-  }
+
 
   var familyCount = document.getElementById("familyCount");
 
