@@ -2151,6 +2151,29 @@ body {
   padding:8px 13px;
   font-size:13px;
 }
+</div>
+Step 2 — Add the CSS
+.avatarPicker {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.avatarBtn {
+  width:56px;
+  height:56px;
+  border:none;
+  border-radius:50%;
+  font-size:28px;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.avatarBtn.selected {
+  outline:3px solid var(--green);
+}
+  
 .modeCard {
   display:grid;
   grid-template-columns: 170px 1fr;
