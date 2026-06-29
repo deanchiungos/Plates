@@ -2811,10 +2811,13 @@ if(!players.some(function(p){ return p.id === currentPlayerId; })) {
 }
 var pendingPhotoStateCode = "";
 var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
-var profile = safeParse(localStorage.getItem("platesProfile"), {
-  name:"",
-  email:""
-});
+var profile;
+
+try {
+  profile = JSON.parse(localStorage.getItem("platesProfile") || '{"name":"","email":""}');
+} catch(e) {
+  profile = { name:"", email:"" };
+}
 
 function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
