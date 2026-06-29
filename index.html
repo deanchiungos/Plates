@@ -2795,7 +2795,10 @@ if(!players.some(function(p){ return p.id === currentPlayerId; })) {
 }
 var pendingPhotoStateCode = "";
 var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
-
+var profile = safeParse(localStorage.getItem("platesProfile"), {
+  name:"",
+  email:""
+});
 
 function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
@@ -2817,7 +2820,25 @@ function dismissOnboarding() {
   if(overlay) overlay.classList.remove("show");
 }
 
+function loadProfile() {
+  var nameInput = document.getElementById("profileName");
+  var emailInput = document.getElementById("profileEmail");
 
+  if(nameInput) nameInput.value = profile.name || "";
+  if(emailInput) emailInput.value = profile.email || "";
+}
+
+function saveProfile() {
+  var nameInput = document.getElementById("profileName");
+  var emailInput = document.getElementById("profileEmail");
+
+  profile.name = nameInput ? nameInput.value.trim() : "";
+  profile.email = emailInput ? emailInput.value.trim() : "";
+
+  localStorage.setItem("platesProfile", JSON.stringify(profile));
+
+  toast("Profile saved");
+}
 function save() {
   localStorage.platesMode = mode;
   localStorage.platesView = view;
