@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  
 <head>
   
 <meta charset="utf-8">
@@ -2904,6 +2905,16 @@ var saveBtn = document.getElementById("saveProfileBtn");
 if(saveBtn) {
   saveBtn.classList.add("hidden");
   console.log("button hidden");
+}
+
+var saveBtn = document.getElementById("saveProfileBtn");
+
+if(saveBtn) {
+  saveBtn.textContent = "Saved ✓";
+
+  setTimeout(function() {
+    saveBtn.textContent = "Save Profile";
+  }, 2000);
 }
 
 toast("Profile saved");
