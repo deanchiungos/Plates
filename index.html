@@ -2963,8 +2963,11 @@ function loadProfile() {
   var nameInput = document.getElementById("profileName");
   var emailInput = document.getElementById("profileEmail");
 
-  if(nameInput) nameInput.value = profile.name || "";
-  if(emailInput) emailInput.value = profile.email || "";
+if(nameInput) nameInput.value = profile.name || "";
+
+console.log("Loaded avatar:", profile.avatar);
+
+if(emailInput) emailInput.value = profile.email || "";
 
   document.querySelectorAll(".avatarBtn").forEach(function(btn){
     if(btn.dataset.avatar === profile.avatar) {
