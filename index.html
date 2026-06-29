@@ -2925,6 +2925,12 @@ if(!Array.isArray(players) || !players.length) {
 }];
 }
 players = players.filter(function(p){ return p && p.id && p.name; });
+
+if(players.length) {
+  players[0].name = profile.name || players[0].name;
+  players[0].avatar = profile.avatar || players[0].avatar || "🚗";
+}
+  
 if(!players.length) {
   players = [{
   id:"p1",
@@ -2937,10 +2943,7 @@ if(!players.some(function(p){ return p.id === currentPlayerId; })) {
   currentPlayerId = players[0].id;
 }
 var pendingPhotoStateCode = "";
-var profile = safeParse(
-  localStorage.getItem("platesProfile"),
-  '{"name":"","email":""}'
-);
+
 profile.avatar = profile.avatar || "🚗";
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
