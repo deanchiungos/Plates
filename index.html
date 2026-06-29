@@ -3916,24 +3916,12 @@ if(renameTripBtn) renameTripBtn.onclick = renameTrip;
 
 var newTripBtn = document.getElementById("newTripBtn");
 if(newTripBtn) newTripBtn.onclick = newTrip;
-  var shareTripBtn = document.getElementById("shareTripBtn");
 
-if(shareTripBtn) shareTripBtn.onclick = function() {
 
-  var text =
-    currentTripName + "\n\n" +
-    statesSelected.length + "/50 States Collected\n\n" +
-    "Playing Plates: The License Plate Game 🚗🇺🇸";
 
-  if(navigator.share) {
-    navigator.share({
-      title: "My Plates Trip",
-      text: text
-    });
-  } else {
-    alert(text);
-  }
-};
+
+  
+
   var saveProfileBtn = document.getElementById("saveProfileBtn");
 if(saveProfileBtn) saveProfileBtn.onclick = function() {
   profile.name = document.getElementById("profileName").value;
