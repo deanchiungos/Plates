@@ -2900,10 +2900,7 @@ function saveProfile() {
   localStorage.setItem("platesProfile", JSON.stringify(profile));
 
 var saveBtn = document.getElementById("saveProfileBtn");
-console.log("saveBtn =", saveBtn);
-
-if(saveBtn) {
-  saveBtn.style.display = "none";
+if(saveBtn) saveBtn.remove();
   console.log("button hidden");
 }
 
