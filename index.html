@@ -3769,6 +3769,9 @@ var modeDropdownBtn = document.getElementById("modeDropdownBtn");
 var modeOverlay = document.getElementById("modeOverlay");
 var modeCloseBtn = document.getElementById("modeCloseBtn");
 
+var saveProfileBtn = document.getElementById("saveProfileBtn");
+if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
+  
 if(modeDropdownBtn && modeOverlay) {
   modeDropdownBtn.onclick = function() {
     modeOverlay.classList.remove("hidden");
@@ -3844,7 +3847,8 @@ if(celebrationClose) {
 }
 
 attachHandlers();
-render();
+loadProfile();
+  render();
 showOnboardingIfNeeded();
 </script>
 <div class="completionOverlay hidden" id="completionOverlay">
