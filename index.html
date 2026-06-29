@@ -2753,7 +2753,14 @@ body {
   
   </div>
 </nav>
-
+<div class="completionOverlay hidden" id="completionOverlay">
+  <div class="completionCard">
+    <div class="completionEmoji">🎉</div>
+    <div class="completionTitle">Roadtrip Complete!</div>
+    <div class="completionSub">You've collected all 50 states!</div>
+    <button class="primary" id="closeCompletionBtn" type="button">Awesome!</button>
+  </div>
+</div>
 <script>
 function safeParse(value, fallback) {
   try {
