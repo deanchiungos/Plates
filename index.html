@@ -2899,6 +2899,9 @@ function saveProfile() {
 
   localStorage.setItem("platesProfile", JSON.stringify(profile));
 
+  var saveBtn = document.getElementById("saveProfileBtn");
+  if(saveBtn) saveBtn.style.display = "none";
+
   toast("Profile saved");
 }
 function save() {
