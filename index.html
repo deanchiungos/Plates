@@ -3678,10 +3678,10 @@ if(standingsModeLabel) {
     board.innerHTML = standings.map(function(p,i){
       var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
 
-      return '<div class="row"><div class="grow"><div class="title">' +
-        medal + ' ' + p.name +
-        '</div></div><div class="green">' +
-        p.plates + ' plates</div></div>';
+   return '<div class="row"><div class="grow"><div class="title">' +
+  medal + ' ' + (p.avatar || "🚗") + ' ' + p.name +
+  '</div></div><div class="green">' +
+  p.plates + ' plates</div></div>';
     }).join("");
   }
 
