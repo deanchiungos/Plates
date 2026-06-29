@@ -2911,14 +2911,26 @@ var players;
 try {
   players = JSON.parse(localStorage.platesPlayers || '[{"id":"p1","name":"Dean"}]');
 } catch(e) {
-  players = [{"id":"p1","name":"Dean"}];
+  players = [{
+  id:"p1",
+  name: profile.name || "Player",
+  avatar: profile.avatar || "🚗"
+}];
 }
 if(!Array.isArray(players) || !players.length) {
-  players = [{"id":"p1","name":"Dean"}];
+  players = [{
+  id:"p1",
+  name: profile.name || "Player",
+  avatar: profile.avatar || "🚗"
+}];
 }
 players = players.filter(function(p){ return p && p.id && p.name; });
 if(!players.length) {
-  players = [{"id":"p1","name":"Dean"}];
+  players = [{
+  id:"p1",
+  name: profile.name || "Player",
+  avatar: profile.avatar || "🚗"
+}];
 }
 var currentPlayerId = localStorage.platesCurrentPlayerId || (players[0] && players[0].id) || "p1";
 if(!players.some(function(p){ return p.id === currentPlayerId; })) {
