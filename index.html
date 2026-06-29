@@ -2818,7 +2818,11 @@ if(!players.some(function(p){ return p.id === currentPlayerId; })) {
   currentPlayerId = players[0].id;
 }
 var pendingPhotoStateCode = "";
-var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
+var profile = safeParse(
+  localStorage.getItem("platesProfile"),
+  '{"name":"","email":""}'
+);
+  var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 var profile;
 
 try {
