@@ -141,13 +141,19 @@ button {
 }
 
 .textBtn {
-  border:none;
-  background:none;
+  background:#fff;
+  border:2px solid #dbe8f5;
+  border-radius:999px;
   color:var(--blue);
-  font-size:17px;
+  font-size:16px;
   font-weight:800;
-  padding:0;
-  cursor:pointer;
+  padding:10px 18px;
+  min-width:110px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.textBtn:active {
+  transform:scale(.98);
 }
 
 .textBtn:hover {
