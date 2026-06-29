@@ -2764,7 +2764,11 @@ body {
 <script>
 function safeParse(value, fallback) {
   try {
-    return JSON.parse(value || fallback);
+    if (!value || value === "undefined" || value === "[object Object]") {
+      return JSON.parse(fallback);
+    }
+
+    return JSON.parse(value);
   } catch(e) {
     return JSON.parse(fallback);
   }
