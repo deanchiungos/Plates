@@ -161,20 +161,6 @@ button {
   color:#c43d3d;
 }
 
-If the End button is still green after refreshing, that means your existing .primary CSS is overriding it.
-
-In that case, add this at the very bottom of your CSS:
-
-#endTripBtn{
-  background:#fff !important;
-  color:#c43d3d !important;
-  border:2px solid #f3c4c4 !important;
-}
-
-That will force it to become a white/red pill instead of green.
-
-Show me a screenshot after that because we're getting very close to having the Trips tab fully polished.
-
 .textBtn:active {
   transform:scale(.98);
 }
@@ -2363,7 +2349,11 @@ Step 2 — Add the CSS
   margin-top:12px;
 }
   
-
+#endTripBtn{
+  background:#fff !important;
+  color:#c43d3d !important;
+  border:2px solid #f3c4c4 !important;
+}
 #tripStatesLine {
   color:var(--navy);
   font-size:18px;
