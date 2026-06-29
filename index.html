@@ -2944,7 +2944,11 @@ if(!players.some(function(p){ return p.id === currentPlayerId; })) {
 }
 var pendingPhotoStateCode = "";
 
-profile.avatar = profile.avatar || "🚗";
+var profile = safeParse(
+  localStorage.getItem("platesProfile"),
+  '{"name":"","email":""}'
+);
+  profile.avatar = profile.avatar || "🚗";
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
   
