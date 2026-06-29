@@ -3312,7 +3312,26 @@ function endCurrentTrip() {
   render();
   toast("Trip saved");
 }
+function shareSavedTrip(index) {
+  var t = savedTrips[index];
+  if(!t) return;
 
+  var text =
+    t.name + "\n\n" +
+    t.date + "\n" +
+    t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + " Mode\n" +
+    t.states + "/50 States\n\n" +
+    "Playing Plates: The License Plate Game 🚗🇺🇸";
+
+  if(navigator.share) {
+    navigator.share({
+      title: "My Plates Trip",
+      text: text
+    });
+  } else {
+    alert(text);
+  }
+}
 function newTrip() {
   if(confirm("Start a new trip? This resets collected states.")) {
     updateBestForCurrentMode();
