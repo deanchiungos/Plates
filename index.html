@@ -1978,9 +1978,21 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 .savedMsg {
   margin-top:14px;
   text-align:center;
-  color:var(--navy);
-  font-size:18px;
-  font-weight:900;
+  color:#26a957;
+  font-size:16px;
+  font-weight:800;
+  animation:fadeIn .3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+    transform:translateY(6px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
 .hidden {
