@@ -2965,6 +2965,14 @@ function loadProfile() {
 
   if(nameInput) nameInput.value = profile.name || "";
   if(emailInput) emailInput.value = profile.email || "";
+
+  document.querySelectorAll(".avatarBtn").forEach(function(btn){
+    if(btn.dataset.avatar === profile.avatar) {
+      btn.classList.add("selected");
+    } else {
+      btn.classList.remove("selected");
+    }
+  });
 }
 
 function saveProfile() {
