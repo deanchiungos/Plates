@@ -3697,7 +3697,7 @@ medal + ' ' + ((players.find(function(x){ return x.name === p.name; }) || {}).av
 return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
  '<div class="familyAvatar">' + (p.avatar || initial) + '</div>' +
   '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
-  '<div class="familyMeta">' + (p.id === currentPlayerId ? 'Current Player' : '') + '</div></div>' +
+  '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div></div>' +
  '<div class="familyActions">' +
 
 (p.id === currentPlayerId
