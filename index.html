@@ -3143,7 +3143,7 @@ function shareText() {
     "Badges: " + badgeCount(collectedCount()) + "\n" +
     "Top Finds: " + topFindsText();
 }
-
+var isSharing = false;
 function shareSummary() {
   if(navigator.share) navigator.share({ text:shareText() });
   else {
