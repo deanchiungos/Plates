@@ -3937,10 +3937,7 @@ document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(fu
 }
 
 function attachHandlers() {
-  var playerSelect = document.getElementById("currentPlayerSelect");
-  if(playerSelect) {
-    playerSelect.onchange = function(){ switchPlayer(playerSelect.value); };
-  }
+
 
 var copyInviteBtn = document.getElementById("copyInviteBtn");
 
