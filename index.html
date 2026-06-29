@@ -2986,7 +2986,7 @@ function dismissOnboarding() {
 
   if(nameInput) nameInput.value = profile.name || "";
 
-  console.log("Loaded avatar:", profile.avatar);
+
 
   if(emailInput) emailInput.value = profile.email || "";
 
@@ -3983,7 +3983,7 @@ if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
   btn.onclick = function() {
 
     profile.avatar = btn.dataset.avatar;
-    alert("Saving avatar: " + profile.avatar);
+
     localStorage.setItem("platesProfile", JSON.stringify(profile));
     var preview = document.getElementById("avatarPreview");
 if(preview) preview.textContent = profile.avatar;
