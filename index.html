@@ -3932,7 +3932,9 @@ document.getElementById("tripStatesLine").textContent = c + "/50 states";
 
   savedTrips = savedTrips.slice(1);
   
-var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
+var historyTrips = savedTrips.slice(1);
+
+var historyHtml = historyTrips.length ? historyTrips.map(function(t, i){
   var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
   var modeLabel = t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + " Mode";
 
