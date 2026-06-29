@@ -3922,6 +3922,22 @@ var modeCloseBtn = document.getElementById("modeCloseBtn");
 
 var saveProfileBtn = document.getElementById("saveProfileBtn");
 if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
+  document.querySelectorAll(".avatarBtn").forEach(function(btn){
+
+  btn.onclick = function() {
+
+    profile.avatar = btn.dataset.avatar;
+
+    document.querySelectorAll(".avatarBtn").forEach(function(b){
+      b.classList.remove("selected");
+    });
+
+    btn.classList.add("selected");
+
+    toast("Avatar selected " + profile.avatar);
+  };
+
+});
   
 if(modeDropdownBtn && modeOverlay) {
   modeDropdownBtn.onclick = function() {
