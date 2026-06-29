@@ -3867,6 +3867,18 @@ if(renameTripBtn) renameTripBtn.onclick = renameTrip;
 
 var newTripBtn = document.getElementById("newTripBtn");
 if(newTripBtn) newTripBtn.onclick = newTrip;
+  var saveProfileBtn = document.getElementById("saveProfileBtn");
+if(saveProfileBtn) saveProfileBtn.onclick = function() {
+  profile.name = document.getElementById("profileName").value;
+  profile.email = document.getElementById("profileEmail").value;
+
+  localStorage.setItem(
+    "platesProfile",
+    JSON.stringify(profile)
+  );
+
+  alert("Profile saved!");
+};
  var shareTripBtn = document.getElementById("shareTripBtn");
 if(shareTripBtn) shareTripBtn.onclick = shareSummary;
 
