@@ -3895,7 +3895,12 @@ if(saveProfileBtn) saveProfileBtn.onclick = function() {
     JSON.stringify(profile)
   );
 
-  alert("Profile saved!");
+var profileSavedMsg = document.getElementById("profileSavedMsg");
+profileSavedMsg.classList.remove("hidden");
+
+setTimeout(function() {
+  profileSavedMsg.classList.add("hidden");
+}, 1800);
 };
  var shareTripBtn = document.getElementById("shareTripBtn");
 if(shareTripBtn) shareTripBtn.onclick = shareSummary;
