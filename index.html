@@ -2959,15 +2959,19 @@ function dismissOnboarding() {
   if(overlay) overlay.classList.remove("show");
 }
 
-function loadProfile() {
+
+  function loadProfile() {
   var nameInput = document.getElementById("profileName");
   var emailInput = document.getElementById("profileEmail");
 
-if(nameInput) nameInput.value = profile.name || "";
+  if(nameInput) nameInput.value = profile.name || "";
 
-console.log("Loaded avatar:", profile.avatar);
+  console.log("Loaded avatar:", profile.avatar);
 
-if(emailInput) emailInput.value = profile.email || "";
+  if(emailInput) emailInput.value = profile.email || "";
+
+  var preview = document.getElementById("avatarPreview");
+  if(preview) preview.textContent = profile.avatar || "🚗";
 
   document.querySelectorAll(".avatarBtn").forEach(function(btn){
     if(btn.dataset.avatar === profile.avatar) {
