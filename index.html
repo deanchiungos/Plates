@@ -126,7 +126,7 @@ button {
   color: var(--navy);
 }
 
-.tripActionsCompact {
+.tripActionsCompact{
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -136,19 +136,19 @@ button {
   display:flex;
   justify-content:center;
   gap:10px;
-  margin:12px 0 18px;
+  margin-top:14px;
+  width:100%;
 }
 
 .textBtn{
-  flex:1;
-  max-width:120px;
   background:#fff;
   border:2px solid #dbe8f5;
   border-radius:999px;
   color:var(--blue);
-  font-size:16px;
+  font-size:15px;
   font-weight:800;
-  padding:12px 0;
+  padding:12px 18px;
+  min-width:110px;
   box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
 
@@ -156,10 +156,7 @@ button {
   transform:scale(.98);
 }
 
-.dangerBtn{
-  border-color:#f3c4c4;
-  color:#c43d3d;
-}
+
 
 .textBtn:active {
   transform:scale(.98);
@@ -2348,11 +2345,9 @@ Step 2 — Add the CSS
   padding: 0 12px 6px;
   margin-top:12px;
 }
-  
 #endTripBtn{
-  background:#fff !important;
-  color:#c43d3d !important;
-  border:2px solid #f3c4c4 !important;
+  min-width:220px;
+  margin-bottom:4px;
 }
 #tripStatesLine {
   color:var(--navy);
