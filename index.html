@@ -3928,7 +3928,7 @@ document.getElementById("tripStatesLine").textContent = c + "/50 states";
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
 
-  savedTrips = savedTrips.slice(1);
+
   
 var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
   var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
