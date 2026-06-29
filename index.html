@@ -3930,6 +3930,8 @@ document.getElementById("tripStatesLine").textContent = c + "/50 states";
   var currentTripHtml =
     '<div class="row tripRow currentTripRow"><div class="grow"><div class="title">' + tripName + '</div><div class="tripMeta">' + tripModeSummaryText(c, points, sightings) + '</div></div><div class="currentBadge">Latest</div></div>';
 
+  savedTrips = savedTrips.slice(1);
+  
 var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
   var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
   var modeLabel = t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + " Mode";
