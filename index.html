@@ -3941,7 +3941,9 @@ document.getElementById("tripStatesLine").textContent = c + "/50 states";
 
   
 var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
-  var label = t.mode === "classic" ? t.states + " states" : t.score + " points";
+var label = t.mode === "classic"
+  ? t.states + "/50 states"
+  : t.states + "/50 states<br>" + t.score + " points";
   var modeLabel = t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + " Mode";
 
   return '<div class="row tripRow">' +
