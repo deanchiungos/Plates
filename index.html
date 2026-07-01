@@ -4057,15 +4057,15 @@ var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
       : t.score + " points";
 
   
-  return '<div class="row tripRow">' +
-    '<div class="grow">' +
-      '<div class="title tripHistoryTitle">' + t.name + '</div>' +
-      '<div class="tripMeta">' +
-        t.date + '<br>' +
-     (t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + " Mode") + '<br>' +
-        label +
-      '</div>' +
+return '<div class="row tripRow">' +
+  '<div class="grow">' +
+    '<div class="title tripHistoryTitle">' + t.name + '</div>' +
+    '<div class="tripMeta">' +
+      t.date + '<br><br>' +
+      (t.mode.charAt(0).toUpperCase() + t.mode.slice(1) + " Mode") + '<br><br>' +
+      label +
     '</div>' +
+  '</div>' +
 '<div class="tripRowActions">' +
   '<button class="shareTripBtnSmall" data-trip-index="' + i + '" type="button">Share</button>' +
 '</div>' +
