@@ -4163,16 +4163,22 @@ var c = collectedCount();
     cell.classList.toggle("rare", pts >= 8);
   });
 
-  if(mode === "classic") {
-    document.getElementById("primaryNumber").textContent = c;
-    document.getElementById("outOf").style.display = "inline";
-    document.getElementById("outOf").innerHTML = '<span class="found">/</span>50';
-    document.getElementById("primaryLabel").textContent = "states collected";
-    document.getElementById("secondaryNumber").textContent = left;
-    document.getElementById("secondaryLabel").textContent = "states to go";
-    document.getElementById("progressBar").style.display = "block";
-    document.getElementById("fill").style.width = pct + "%";
+if(mode === "classic") {
+  document.getElementById("primaryNumber").textContent = c;
+  document.getElementById("outOf").style.display = "inline";
+  document.getElementById("outOf").innerHTML = '<span class="found">/</span>50';
+
+  var listCountEl = document.getElementById("listCount");
+  if (listCountEl) {
+    listCountEl.innerHTML = '<span class="found">' + c + '/</span>50';
   }
+
+  document.getElementById("primaryLabel").textContent = "states collected";
+  document.getElementById("secondaryNumber").textContent = left;
+  document.getElementById("secondaryLabel").textContent = "states to go";
+  document.getElementById("progressBar").style.display = "block";
+  document.getElementById("fill").style.width = pct + "%";
+}
 
   if(mode === "weighted") {
     document.getElementById("primaryNumber").textContent = points;
