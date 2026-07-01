@@ -2723,11 +2723,7 @@ or
 
       <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
 
-      <div class="quickStats">
-        <button class="stat statBtn" id="bestStatBtn" type="button"><strong id="bestTrip">0</strong><span id="bestLabel">Best</span></button>
-        <button class="stat statBtn" id="tripsStatBtn" type="button"><strong id="tripCount">1</strong><span id="tripLabel">Trips</span></button>
-        <button class="stat statBtn" id="badgesStatBtn" type="button"><strong id="profileBadgeMini">0</strong><span id="badgeLabel">Badges</span></button>
-      </div>
+    
 
 <button class="modeDropdownBtn" id="modeDropdownBtn" type="button">
   <span id="modeDropdownText">Classic Mode</span>
@@ -2793,42 +2789,47 @@ or
       </div>
     </div>
 
+   <div class="card">
+  <div class="panelTitle">
+    <span>Recent Sightings</span>
+  </div>
 
-   
+  <div class="recent" id="recent">
+    <div class="memoryEmpty">
+      No plates yet<br><br>
+      Tap a state to start your roadtrip
+    </div>
+  </div>
+</div>
+
+<div class="quickStats">
+  <button class="stat statBtn" id="bestStatBtn" type="button"><strong id="bestTrip">0</strong><span id="bestLabel">Best</span></button>
+  <button class="stat statBtn" id="tripsStatBtn" type="button"><strong id="tripCount">1</strong><span id="tripLabel">Trips</span></button>
+  <button class="stat statBtn" id="badgesStatBtn" type="button"><strong id="profileBadgeMini">0</strong><span id="badgeLabel">Badges</span></button>
+</div>
+
 <div class="card gameModesMini">
   <div class="panelTitle">
     <span>Game Modes</span>
   </div>
 
-<div class="modeMiniRow">
-  <strong>Classic</strong>
-  <span>Collect all 50 states</span>
-</div>
+  <div class="modeMiniRow">
+    <strong>Classic</strong>
+    <span>Collect all 50 states</span>
+  </div>
 
-<div class="modeMiniRow">
-  <strong>Battle</strong>
-  <span>Compete against friends & family</span>
-</div>
+  <div class="modeMiniRow">
+    <strong>Battle</strong>
+    <span>Compete against friends & family</span>
+  </div>
 
-<div class="modeMiniRow">
-  <strong>Roadtrip</strong>
-  <span>Team up with friends & family</span>
-</div>
-
-</div>
-   </div>
-    <div class="card">
-<div class="panelTitle">
-  <span>Recent Sightings</span>
-</div>
- <div class="recent" id="recent">
-  <div class="memoryEmpty">
-    No plates yet<br><br>
-    Tap a state to start your roadtrip
+  <div class="modeMiniRow">
+    <strong>Roadtrip</strong>
+    <span>Team up with friends & family</span>
   </div>
 </div>
-    </div>
-  </section>
+
+</section>
 
 
   <section id="mapScreen" class="screen hidden">
