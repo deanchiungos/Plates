@@ -2575,16 +2575,25 @@ body {
   margin-top:10px;
 }
 .tripOptionsMenu button.tripMenuItem{
+  display:block !important;
   width:100% !important;
+
+  height:36px !important;
+  min-height:36px !important;
+
+  margin:0 !important;
+  padding:0 20px !important;
+
   border:none !important;
   border-radius:0 !important;
   box-shadow:none !important;
   background:#fff !important;
-  padding:8px 20px !important;
+
   text-align:left !important;
   font-size:17px !important;
   font-weight:850 !important;
-  line-height:1.15 !important;
+  line-height:36px !important;
+
   color:var(--blue) !important;
 }
 
@@ -2593,12 +2602,11 @@ body {
 }
 
 .tripOptionsMenu button.dangerItem{
-  border-top:1px solid rgba(21,101,192,.10) !important;
   margin-top:6px !important;
-  padding-top:14px !important;
+  padding-top:0 !important;
+  border-top:1px solid rgba(21,101,192,.10) !important;
   color:#b43b3b !important;
 }
-  
   
 </style>
 </head>
@@ -2994,29 +3002,13 @@ body {
     Latest Trip Options
   </button>
 </div>
-    <div class="tripOptionsMenu hidden" id="tripOptionsMenu">
-
-  <button class="tripMenuItem" id="endTripBtn">
-    Save Trip
-  </button>
-
-  <button class="tripMenuItem" id="renameTripBtn">
-    Rename Trip
-  </button>
-
-  <button class="tripMenuItem" id="changeModeBtn">
-    Change Mode
-  </button>
-      
-  <button class="tripMenuItem" id="shareTripBtn">
-    Share Trip
-  </button>
-
-  <button class="tripMenuItem dangerItem" id="clearTripBtn">
-    Clear Trip
-  </button>
-      
-
+  <div class="tripOptionsMenu hidden" id="tripOptionsMenu">
+  <button class="tripMenuItem" id="endTripBtn">Save Trip</button>
+  <button class="tripMenuItem" id="renameTripBtn">Rename Trip</button>
+  <button class="tripMenuItem" id="changeModeBtn">Change Mode</button>
+  <button class="tripMenuItem" id="shareTripBtn">Share Trip</button>
+  <button class="tripMenuItem dangerItem" id="clearTripBtn">Clear Trip</button>
+    
 </div>
     
     <button class="tripOptionsBtn" id="newTripBtn">
