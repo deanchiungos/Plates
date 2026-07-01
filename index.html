@@ -3228,7 +3228,10 @@ var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBe
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
-
+var listCountEl = document.getElementById("listCount");
+if (listCountEl) {
+  listCountEl.innerHTML = '<span class="found">' + c + '/</span>50';
+}
   var profile = safeParse(
   localStorage.getItem("platesProfile"),
   '{"name":"","email":""}'
