@@ -523,6 +523,7 @@ body.show-rarity .mapState.rare:not(.hit) {
 }
   .stateDetailsTitle {
   padding-left:12px;
+    
 }
 .badge{
   min-height:150px;
@@ -2998,7 +2999,7 @@ Replace that whole block with this:
       <div class="quickStats">
         <button class="stat statBtn" id="bestStatBtn" type="button"><strong id="bestTrip">0</strong><span id="bestLabel">Best</span></button>
         <button class="stat statBtn" id="tripsStatBtn" type="button"><strong id="tripCount">1</strong><span id="tripLabel">Trips</span></button>
-        <button class="stat statBtn" id="badgesStatBtn" type="button"><strong id="badgeMini">0</strong><span id="badgeLabel">Badges</span></button>
+        <button class="stat statBtn" id="badgesStatBtn" type="button"><strong id="profileBadgeMini">0</strong><span id="badgeLabel">Badges</span></button>
       </div>
 
 <button class="modeDropdownBtn" id="modeDropdownBtn" type="button">
@@ -4460,6 +4461,12 @@ var c = collectedCount();
   document.getElementById("listCount").textContent = c + "/50";
   document.getElementById("mapCount").textContent = c + " / 50 found";
 document.getElementById("badgeMini").textContent = unlockedBadges;
+
+var profileBadgeMini = document.getElementById("profileBadgeMini");
+if (profileBadgeMini) {
+  profileBadgeMini.textContent = unlockedBadges;
+}
+  
   renderFamily(c, unlockedBadges);
 document.getElementById("tripStatesLine").textContent = c + "/50 states";
   document.getElementById("tripName").textContent = tripName;
