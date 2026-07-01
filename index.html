@@ -3971,14 +3971,14 @@ var c = collectedCount();
 
   document.getElementById("bestTrip").textContent = bestForCurrentMode();
   document.getElementById("tripCount").textContent = tripCount;
-  document.getElementById("badgeMini").textContent = unlockedBadges;
   document.getElementById("listCount").textContent = c + "/50";
   document.getElementById("mapCount").textContent = c + " / 50 found";
 document.getElementById("badgeMini").textContent = unlockedBadges;
   renderFamily(c, unlockedBadges);
 document.getElementById("tripStatesLine").textContent = c + "/50 states";
   document.getElementById("tripName").textContent = tripName;
-  document.getElementById("tripNameTop").textContent = tripName;
+var tripNameTopEl = document.getElementById("tripNameTop");
+if (tripNameTopEl) tripNameTopEl.textContent = tripName;
   document.getElementById("tripModeSummary").textContent = tripModeSummaryText(c, points, sightings);
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
