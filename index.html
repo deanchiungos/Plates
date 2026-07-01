@@ -3511,7 +3511,13 @@ function setView(newView) {
   render();
   window.scrollTo(0,0);
 }
+function clearTrip() {
+  if (!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) {
+    return;
+  }
 
+  // We'll add the actual reset code here next
+}
 function renameTrip() {
   var n = prompt("Trip name:", tripName);
   if(n && n.trim()) {
