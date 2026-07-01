@@ -3350,6 +3350,7 @@ function bestForCurrentMode() {
   if(mode === "unlimited") return bestUnlimited;
   return bestClassic;
 }
+  
 
 function toast(text) {
   var el = document.getElementById("toast");
@@ -4342,7 +4343,14 @@ if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
 var renameTripBtn = document.getElementById("renameTripBtn");
 if(renameTripBtn) renameTripBtn.onclick = renameTrip;
 
-var newTripBtn = document.getElementById("newTripBtn");
+  var tripOptionsBtn = document.getElementById("tripOptionsBtn");
+if (tripOptionsBtn) {
+  tripOptionsBtn.onclick = function () {
+    document.getElementById("tripOptionsMenu").classList.toggle("hidden");
+  };
+}
+
+  var newTripBtn = document.getElementById("newTripBtn");
 if(newTripBtn) newTripBtn.onclick = newTrip;
 
 var shareTripBtn = document.getElementById("shareTripBtn");
