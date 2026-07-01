@@ -564,6 +564,23 @@ body.show-rarity .mapState.rare:not(.hit) {
   font-weight:750;
   color:var(--muted);
 }
+
+  .featuredBadgeIcon{
+  font-size:56px;
+  margin-bottom:10px;
+}
+
+.featuredBadgeTitle{
+  font-size:26px;
+  font-weight:950;
+  color:var(--navy);
+}
+
+.featuredBadgeText{
+  margin-top:6px;
+  color:#4b5563;
+  font-size:17px;
+}
 .tripActions {
   display:flex;
   flex-direction:column;
@@ -2739,12 +2756,20 @@ Step 2 — Add the CSS
 
   <section id="badgesScreen" class="screen hidden">
     <div class="card">
+
 <div class="badgesHeader">
   <div class="badgesTitle">🏆 Badges</div>
   <div class="badgesCounter">
     <span id="badgeMini">1</span> / 12
   </div>
 </div>
+
+<div id="featuredBadge" class="featuredBadge"></div>
+
+<div class="panelTitle">
+  <span>More Badges</span>
+</div>
+      
 <div class="badgesGrid" id="badges"></div>
     </div>
   </section>
