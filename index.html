@@ -4185,7 +4185,8 @@ var c = collectedCount();
 
   document.getElementById("bestTrip").textContent = bestForCurrentMode();
   document.getElementById("tripCount").textContent = tripCount;
-  document.getElementById("listCount").textContent = c + "/50";
+document.getElementById("tripStatesLine").innerHTML =
+  '<span class="found">' + c + '/50</span> States';
   document.getElementById("mapCount").textContent = c + " / 50 found";
 document.getElementById("badgeMini").textContent = unlockedBadges;
 
