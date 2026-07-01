@@ -4159,6 +4159,7 @@ var c = collectedCount();
   if(mode === "classic") {
     document.getElementById("primaryNumber").textContent = c;
     document.getElementById("outOf").style.display = "inline";
+    document.getElementById("outOf").innerHTML = '<span class="found">/</span>50';
     document.getElementById("primaryLabel").textContent = "states collected";
     document.getElementById("secondaryNumber").textContent = left;
     document.getElementById("secondaryLabel").textContent = "states to go";
