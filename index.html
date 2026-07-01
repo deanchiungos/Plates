@@ -3618,9 +3618,10 @@ function renderBadges(c) {
     ["100","Road Warrior","Log 100 sightings",totalSightings()>=100]
   ];
 document.getElementById("featuredBadge").innerHTML =
-  '<div class="featuredBadgeIcon">🏅</div>' +
-  '<div class="featuredBadgeTitle">FIRST PLATE</div>' +
-  '<div class="featuredBadgeText">Spot your first state</div>';
+  '<div class="latestBadgeLabel">Latest Badge</div>' +
+  '<div class="latestBadgeIcon">🥇</div>' +
+  '<div class="latestBadgeName">First Plate</div>' +
+  '<div class="latestBadgeDesc">Spot your first state</div>';
 
 document.getElementById("badges").innerHTML = badges.map(function(b){
   return '<div class="badge ' + (b[3] ? "unlocked" : "") + '">' +
