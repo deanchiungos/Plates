@@ -1852,14 +1852,19 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   line-height:1.15;
   color:var(--blue);
 }
-  #tripNameTop {
+#tripNameTop,
+#tripName{
   display:block;
   width:100%;
+  margin:0 auto 6px;
+
   text-align:center;
-  font-size:24px;
+
+  font-size:30px;
   font-weight:950;
+  line-height:1.05;
+
   color:var(--navy);
-  margin:0;
 }
   .tripHistoryList .tripHistoryTitle,
 .tripHistoryList .title{
@@ -1872,13 +1877,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:800;
   color:var(--muted);
 }
-#tripName {
-  font-size:24px;
-  font-weight:900;
-  color:#073b63;
-  text-align:center;
-  margin:0 0 6px;
-}
+
   
 #tripsScreen .row .grow {
   text-align:center;
