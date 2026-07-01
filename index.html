@@ -3621,14 +3621,18 @@ function renderBadges(c) {
     ["R5","Rare Hunter","Find 5 rare states",rareCollectedCount()>=5],
     ["100","Road Warrior","Log 100 sightings",totalSightings()>=100]
   ];
-  document.getElementById("badges").innerHTML = badges.map(function(b){
-    return '<div class="badge ' + (b[3] ? "unlocked" : "") + '">' +
-      '<div class="badgeIcon">' + b[0] + '</div>' +
-      '<div class="badgeName">' + b[1] + '</div>' +
-      '<div class="badgeDesc">' + b[2] + '</div>' +
-      '</div>';
-  }).join("");
-}
+document.getElementById("featuredBadge").innerHTML =
+  '<div class="featuredBadgeIcon">🏅</div>' +
+  '<div class="featuredBadgeTitle">FIRST PLATE</div>' +
+  '<div class="featuredBadgeText">Spot your first state</div>';
+
+document.getElementById("badges").innerHTML = badges.map(function(b){
+  return '<div class="badge ' + (b[3] ? "unlocked" : "") + '">' +
+    '<div class="badgeIcon">' + b[0] + '</div>' +
+    '<div class="badgeName">' + b[1] + '</div>' +
+    '<div class="badgeDesc">' + b[2] + '</div>' +
+    '</div>';
+}).join("");
 
 
 
