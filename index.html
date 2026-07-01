@@ -229,12 +229,7 @@ button {
   padding:14px;
 }
 #tripStatesLine,
-#tripModeSummary {
-  font-size:16px;
-  font-weight:800;
-  color:var(--navy);
-  margin-top:4px;
-}
+
 .bigProgress {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -398,11 +393,7 @@ button {
 .latestTripLabel,
 .tripNameInline,
 #tripStatesLine,
-#tripModeSummary {
-  display:block;
-  width:100%;
-  text-align:center !important;
-}
+
 
 .panelTitle span:last-child {
   font-size:20px;
@@ -1794,12 +1785,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   border-color:rgba(180,59,59,.25);
 }
 /* v41.2a current trip summary + share button alignment */
-#tripModeSummary {
-  color:var(--navy);
-  font-size:15px;
-  font-weight:800;
-  margin:2px 0 0;
-}
+
   #currentPlayerSelect {
   background-color:#fff !important;
   background-image:none !important;
@@ -2175,19 +2161,7 @@ font-size:34px;
   justify-content:center;
 }
 
-.avatarBtn {
-  width:56px;
-  height:56px;
-  border:none;
-  border-radius:50%;
-  font-size:28px;
-  background:#fff;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
-}
 
-.avatarBtn.selected {
-  outline:3px solid #26a957;
-}
 .savedMsg {
   margin-top:14px;
   text-align:center;
@@ -2396,7 +2370,23 @@ body {
 }
 
 .avatarBtn.selected {
-  outline:3px solid var(--green);
+  outline:3px solid #26a957;
+}
+
+or
+
+.avatarBtn {
+  width:56px;
+  height:56px;
+  border:none;
+  border-radius:50%;
+  font-size:28px;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.avatarBtn.selected {
+  outline:3px solid #26a957;
 }
   
 .modeCard {
@@ -2407,13 +2397,6 @@ body {
   padding:8px 0;
 }
 
-.modeCard .title {
-  font-size:18px;
-  font-weight:950;
-  color:var(--navy);
-  margin:0;
-  text-align:left;
-}
 
 .modeCard .sub {
   font-size:15px;
@@ -2422,9 +2405,11 @@ body {
   margin:0;
   text-align:left;
   line-height:1.2;
-}.modeCard {
+}
+
+.modeCard {
   display:grid;
-  grid-template-columns: 190px 1fr;
+  grid-template-columns:190px 1fr;
   align-items:center;
   column-gap:14px;
   padding:7px 0;
@@ -2439,14 +2424,7 @@ body {
   white-space:nowrap;
 }
 
-.modeCard .sub {
-  font-size:15px;
-  font-weight:800;
-  color:#667085;
-  margin:0;
-  text-align:left;
-  line-height:1.15;
-}
+
 .gameModesCard {
   padding:22px 28px;
   margin-bottom:18px;
@@ -2588,8 +2566,11 @@ body {
   font-weight:900;
   margin:0;
 }
+#tripModeSummary{
+  display:block;
+  width:100%;
+  text-align:center !important;
 
-#tripModeSummary {
   color:var(--navy);
   font-size:16px;
   font-weight:800;
