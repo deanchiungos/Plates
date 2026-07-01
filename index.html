@@ -4195,7 +4195,8 @@ if (profileBadgeMini) {
 }
   
   renderFamily(c, unlockedBadges);
-document.getElementById("tripStatesLine").textContent = c + "/50 states";
+document.getElementById("tripStatesLine").innerHTML =
+  '<span class="found">' + c + '</span>/50 states';
   document.getElementById("tripName").textContent = tripName;
 var tripNameTopEl = document.getElementById("tripNameTop");
 if (tripNameTopEl) tripNameTopEl.textContent = tripName;
