@@ -158,9 +158,6 @@ button {
 
 
 
-.textBtn:active {
-  transform:scale(.98);
-}
 
 .textBtn:hover {
   opacity:.7;
@@ -188,6 +185,7 @@ button {
 .completionOverlay.hidden {
   display:none;
 }
+
 
 .completionCard {
   width:100%;
@@ -228,7 +226,6 @@ button {
 #tripsScreen > .card:first-child {
   padding:14px;
 }
-#tripStatesLine,
 
 .bigProgress {
   display:grid;
@@ -390,9 +387,6 @@ button {
   color:var(--green);
   margin:0 0 4px;
 }
-.latestTripLabel,
-.tripNameInline,
-#tripStatesLine,
 
 
 .panelTitle span:last-child {
@@ -507,11 +501,7 @@ body.show-rarity .mapState.rare:not(.hit) {
 }
 .legendBox.collected { background:var(--green); border-color:var(--green); }
 .legendBox.rare { background:var(--gold); border-color:var(--gold); }
-.badgesGrid {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-}
+
   .stateDetailsTitle {
   padding-left:12px;
     
@@ -528,12 +518,6 @@ body.show-rarity .mapState.rare:not(.hit) {
   box-shadow:0 8px 18px rgba(11,62,103,.05);
 }
 
-.badge.unlocked{
-  opacity:1;
-  background:linear-gradient(180deg,#fff7c8,#ffe899);
-  border:2px solid #f3c74d;
-  box-shadow:0 12px 24px rgba(243,199,77,.28);
-}
 
 .badge.locked{
   filter:grayscale(.2);
@@ -607,17 +591,8 @@ body.show-rarity .mapState.rare:not(.hit) {
   width:100%;
   max-width:320px;
 }
-.primary {
-  background:var(--gold);
-  color:var(--navy);
-  padding:14px;
-}
-.secondary {
-  background:#fff;
-  border:1px solid var(--blue);
-  color:var(--blue);
-  padding:12px;
-}
+
+
 .tripHistoryList {
   display:grid;
   gap:12px;
@@ -647,13 +622,7 @@ body.show-rarity .mapState.rare:not(.hit) {
   padding:10px 18px;
   font-weight:800;
 }
-.shareCard {
-  background:linear-gradient(180deg,#eaf7ff,#fff);
-  border:1px solid var(--line);
-  border-radius:22px;
-  padding:18px;
-  text-align:center;
-}
+
 .sharePlate {
   max-width:270px;
   margin:0 auto 14px;
