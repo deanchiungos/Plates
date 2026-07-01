@@ -4162,16 +4162,15 @@ function selectMapState(code) {
 
 
 function renderBadges(c) {
-  var badges = [
-    ["1","First Plate","Spot your first state",c>=1],
-    ["10","10 States","Find 10 states",c>=10],
-    ["25","Halfway There","Find 25 states",c>=25],
-    ["50","All 50 States","Complete the map",c>=50],
-    ["AK","Alaska + Hawaii","Find Alaska and Hawaii",hasStates(["AK","HI"])],
-    ["WC","West Coast","Find CA, OR and WA",hasStates(["CA","OR","WA"])],
-    ["R5","Rare Hunter","Find 5 rare states",rareCollectedCount()>=5],
-    ["100","Road Warrior","Log 100 sightings",totalSightings()>=100]
-  ];
+var badges = [
+  ["🏅","First Plate","Spot your first state",c>=1],
+  ["🔟","10 Spot","Find 10 states",c>=10],
+  ["⭐","Halfway There","Find 25 states",c>=25],
+  ["🏆","All 50 States","Complete the map",c>=50],
+  ["💎","Hidden Gems","Find Alaska and Hawaii",hasStates(["AK","HI"])],
+  ["🌅","Coast to Coast","Find California and New York",hasStates(["CA","NY"])],
+  ["🚗","Road Warrior","Log 100 sightings",totalSightings()>=100]
+];
 document.getElementById("featuredBadge").innerHTML =
   '<div class="latestBadgeLabel">Latest Badge</div>' +
   '<div class="latestBadgeIcon">🥇</div>' +
