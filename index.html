@@ -4100,30 +4100,36 @@ function selectMapState(code) {
 
 
 function renderBadges(c) {
-var badges = [
-  ["🏅","First Plate","Spot your first state",c>=1],
-  ["🔟","10 Spot","Find 10 states",c>=10],
-  ["⭐","Halfway There","Find 25 states",c>=25],
-  ["🏆","All 50 States","Complete the map",c>=50],
-  ["💎","Hidden Gems","Find Alaska and Hawaii",hasStates(["AK","HI"])],
-  ["🌅","Coast to Coast","Find California and New York",hasStates(["CA","NY"])],
-  ["🚗","Road Warrior","Log 100 sightings",totalSightings()>=100]
-];
-document.getElementById("featuredBadge").innerHTML =
-  '<div class="latestBadgeLabel">Latest Badge</div>' +
-  '<div class="latestBadgeIcon">🥇</div>' +
-  '<div class="latestBadgeName">First Plate</div>' +
-  '<div class="latestBadgeDesc">Spot your first state</div>';
+  var badges = [
+    ["🏅","First Plate","Spot your first state",c>=1],
+    ["🔟","10 Spot","Find 10 states",c>=10],
+    ["⭐","Halfway There","Find 25 states",c>=25],
+    ["🏆","All 50 States","Complete the map",c>=50],
+    ["💎","Hidden Gems","Find Alaska and Hawaii",hasStates(["AK","HI"])],
+    ["🌅","Coast to Coast","Find California and New York",hasStates(["CA","NY"])],
+    ["🚗","Road Warrior","Log 100 sightings",totalSightings()>=100]
+  ];
 
-document.getElementById("badges").innerHTML = badges.map(function(b){
-  return '<div class="badge ' + (b[3] ? "unlocked" : "") + '">' +
-    '<div class="badgeIcon">' + b[0] + '</div>' +
-    '<div class="badgeName">' + b[1] + '</div>' +
-    '<div class="badgeDesc">' + b[2] + '</div>' +
-    '</div>';
-}).join("");
-  }
+  var unlockedBadges = badges.filter(function(b){
+    return b[3];
+  }).length;
 
+  document.getElementById("badgeMini").textContent = unlockedBadges;
+
+  document.getElementById("featuredBadge").innerHTML =
+    '<div class="latestBadgeLabel">Latest Badge</div>' +
+    '<div class="latestBadgeIcon">🥇</div>' +
+    '<div class="latestBadgeName">First Plate</div>' +
+    '<div class="latestBadgeDesc">Spot your first state</div>';
+
+  document.getElementById("badges").innerHTML = badges.map(function(b){
+    return '<div class="badge ' + (b[3] ? "unlocked" : "locked") + '">' +
+      '<div class="badgeIcon">' + b[0] + '</div>' +
+      '<div class="badgeName">' + b[1] + '</div>' +
+      '<div class="badgeDesc">' + b[2] + '</div>' +
+      '</div>';
+  }).join("");
+}
 
 
 function tripModeSummaryText(c, points, sightings) {
