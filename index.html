@@ -3004,6 +3004,10 @@ body {
     Rename Trip
   </button>
 
+  <button class="tripMenuItem" id="changeModeBtn">
+    Change Mode
+  </button>
+      
   <button class="tripMenuItem" id="shareTripBtn">
     Share Trip
   </button>
@@ -4414,6 +4418,15 @@ if(clearTripBtn) clearTripBtn.onclick = function(){
   document.getElementById("tripOptionsMenu").classList.add("hidden");
 };
 
+var changeModeBtn = document.getElementById("changeModeBtn");
+
+if (changeModeBtn) {
+  changeModeBtn.onclick = function () {
+    document.getElementById("tripOptionsMenu").classList.add("hidden");
+    setView("home");   // or whatever your Home screen is called
+  };
+}
+  
 var renameTripBtn = document.getElementById("renameTripBtn");
 if(renameTripBtn) renameTripBtn.onclick = renameTrip;
 
