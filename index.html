@@ -4722,9 +4722,7 @@ var modeCloseBtn = document.getElementById("modeCloseBtn");
 
 var saveProfileBtn = document.getElementById("saveProfileBtn");
 if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
-  document.querySelectorAll(".avatarBtn").forEach(function(btn){
-
-  btn.onclick = function() {
+  document.querySelectorAll(".avatarBtn").forEach(function(btn){btn.onclick = function() {
 
     profile.avatar = btn.dataset.avatar;
 
