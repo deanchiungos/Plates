@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  
+
 <head>
 <meta charset="utf-8">F
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -2577,6 +2577,67 @@ or
   gap:6px;
   margin-bottom:20px;
 }
+.vanityCard {
+  text-align:center;
+}
+
+.vanityPlatePreview {
+  width:100%;
+  max-width:320px;
+  margin:14px auto;
+  padding:12px 14px 10px;
+  border-radius:18px;
+  border:3px solid var(--navy);
+  background:linear-gradient(180deg,#ffffff,#eef6ff);
+  box-shadow:0 8px 20px rgba(10,31,68,.12);
+  color:var(--navy);
+}
+
+.plateState {
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:2px;
+  margin-bottom:8px;
+}
+
+.plateText {
+  font-size:36px;
+  font-weight:950;
+  letter-spacing:2px;
+  line-height:1;
+  white-space:nowrap;
+}
+
+.plateTagline {
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  margin-top:8px;
+  color:var(--muted);
+}
+
+.plateNameInput {
+  width:100%;
+  max-width:320px;
+  margin:8px auto 10px;
+  display:block;
+  border:1px solid rgba(10,31,68,.18);
+  border-radius:999px;
+  padding:13px 16px;
+  text-align:center;
+  font-size:18px;
+  font-weight:900;
+  color:var(--navy);
+  text-transform:uppercase;
+  background:#fff;
+}
+
+.plateHint {
+  margin-top:8px;
+  font-size:12px;
+  font-weight:800;
+  color:var(--muted);
+}
 .tripStatsHero {
   margin-top:10px;
 }
@@ -2619,6 +2680,7 @@ or
   border-top:1px solid rgba(21,101,192,.10);
   color:#b43b3b;
 }
+  
   
 </style>
 </head>
@@ -3124,12 +3186,27 @@ or
       <span>Profile</span>
     </div>
 
-    <div class="formGroup">
+<div class="vanityPlatePreview">
+  <div class="plateState">NEW YORK</div>
+  <div class="plateText" id="plateTextPreview">DCHIUNGOS</div>
+  <div class="plateTagline">PLATES</div>
+</div>
 
-   
-      <label>Name</label>
-      <input id="profileName" type="text" placeholder="Your name">
-    </div>
+<div class="formGroup">
+  <label>Your Plate (Global Username)</label>
+
+  <input
+    id="plateNameInput"
+    class="plateNameInput"
+    maxlength="10"
+    placeholder="Choose your plate"
+  >
+</div>
+
+<div class="formGroup">
+  <label>Name</label>
+  <input id="profileName" type="text" placeholder="Your name">
+</div>
 
     <div class="formGroup">
       <label>Email</label>
@@ -3245,6 +3322,54 @@ var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
 
+var plateName = localStorage.getItem("platesPlateName") || "DCHIUNGOS";
+
+function cleanPlateName(value) {
+  return String(value || "")
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, "")
+    .slice(0, 10);
+}
+
+function renderVanityPlate() {
+  var input = document.getElementById("plateNameInput");
+  var preview = document.getElementById("plateTextPreview");
+
+  if (input) input.value = plateName;
+  if (preview) {
+    preview.textContent = plateName || "PLATES";
+
+    if (plateName.length >= 9) {
+      preview.style.fontSize = "30px";
+    } else if (plateName.length >= 8) {
+      preview.style.fontSize = "33px";
+    } else {
+      preview.style.fontSize = "36px";
+    }
+  }
+}
+
+var plateInput = document.getElementById("plateNameInput");
+if (plateInput) {
+  plateInput.addEventListener("input", function() {
+    plateName = cleanPlateName(this.value);
+    this.value = plateName;
+    renderVanityPlate();
+  });
+}
+
+var savePlateBtn = document.getElementById("savePlateNameBtn");
+if (savePlateBtn) {
+  savePlateBtn.onclick = function() {
+    plateName = cleanPlateName(document.getElementById("plateNameInput").value);
+    localStorage.setItem("platesPlateName", plateName);
+    renderVanityPlate();
+    save();
+  };
+}
+
+renderVanityPlate();
+  
   var profile = safeParse(
   localStorage.getItem("platesProfile"),
   '{"name":"","email":""}'
