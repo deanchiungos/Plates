@@ -3148,7 +3148,9 @@ or
       </div>
 
       <div class="mapDetailsBox">
-        <div class="mapDetailsTitle">Interactive Map</div>
+     <div class="mapDetailsTitle" id="mapDetailsTitle">
+  Interactive Map
+</div>
         <div class="recent" id="stateDetails">
           Select a state for photos, stats & more!
         </div>
@@ -4115,6 +4117,11 @@ function selectMapState(code) {
   var firstSeen = first && first.ts ? formatShortDate(first.ts) : (found ? "Unknown" : "Not yet");
   var firstTrip = first && first.trip ? first.trip : (found ? tripName : "Unknown");
 
+  var mapTitle = document.getElementById("mapDetailsTitle");
+
+if (mapTitle) {
+  mapTitle.textContent = name;
+}
 
   document.getElementById("stateDetails").innerHTML =
     '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
