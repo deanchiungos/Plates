@@ -3500,6 +3500,14 @@ var selectedState = "";
 
 var plateName = localStorage.getItem("platesPlateName") || "DCHIUNGOS";
 
+function stateNameFromCode(code) {
+  var select = document.getElementById("plateStateSelect");
+  if (!select) return "NEW YORK";
+
+  var option = select.querySelector('option[value="' + code + '"]');
+  return option ? option.textContent.toUpperCase() : "NEW YORK";
+}
+  
 function cleanPlateName(value) {
   return String(value || "")
     .toUpperCase()
