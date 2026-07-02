@@ -3502,6 +3502,11 @@ if(saveBtn) {
   }, 2000);
 }
 
+var plateInput = document.getElementById("plateNameInput");
+if (plateInput) {
+  plateName = cleanPlateName(plateInput.value);
+  renderVanityPlate();
+}
   
 toast("Profile saved");
  } 
@@ -3517,8 +3522,9 @@ function save() {
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
-  localStorage.platesPlayers = JSON.stringify(players);
-  localStorage.platesCurrentPlayerId = currentPlayerId;
+localStorage.platesPlayers = JSON.stringify(players);
+localStorage.platesCurrentPlayerId = currentPlayerId;
+localStorage.platesPlateName = plateName;
 }
 
 function collectedCount() {
