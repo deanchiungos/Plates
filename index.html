@@ -4258,7 +4258,7 @@ medal + ' ' + ((players.find(function(x){ return x.name === p.name; }) || {}).av
     list.innerHTML = players.map(function(p){
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
 
-      return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
+return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
   '<div class="playerPlate">' +
     '<div class="playerPlateState">NEW YORK</div>' +
     '<div class="playerPlateName">' + playerPlateText(p) + '</div>' +
