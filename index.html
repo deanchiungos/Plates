@@ -2595,11 +2595,11 @@ or
 
 
 .playerPlate {
-  width:112px;
+  width:92px;
+  padding:5px 6px;
   border:2px solid var(--navy);
   border-radius:12px;
   background:linear-gradient(180deg,#fff,#eef6ff);
-  padding:6px 8px;
   text-align:center;
   flex-shrink:0;
 }
@@ -2612,9 +2612,9 @@ or
 }
 
 .playerPlateName{
-  font-size:16px;
+  font-size:13px;
+  letter-spacing:.5px;
   font-weight:950;
-  letter-spacing:1px;
   color:var(--navy);
   white-space:nowrap;
 }
@@ -4196,17 +4196,12 @@ function playerStats() {
   });
 }
 
-function playerPlateText(p) {
-  if (p && p.plate) return cleanPlateName(p.plate);
-  if (p && p.name) return cleanPlateName(p.name).slice(0, 10);
+  function playerPlateText(p) {
+  if (p && p.plate) return cleanPlateName(p.plate).slice(0,8);
+  if (p && p.name) return cleanPlateName(p.name).slice(0,8);
   return "PLAYER";
 }
   
-function playerPlateText(p) {
-  if (p && p.plate) return cleanPlateName(p.plate);
-  if (p && p.name) return cleanPlateName(p.name).slice(0, 10);
-  return "PLAYER";
-}
 
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
