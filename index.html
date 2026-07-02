@@ -4516,7 +4516,18 @@ if(mode === "classic") {
   document.getElementById("tripCount").textContent = tripCount;
 document.getElementById("tripStatesLine").innerHTML =
   '<span class="found">' + c + '/</span>50 States';
-  document.getElementById("mapCount").textContent = c + " / 50 found";
+
+document.getElementById("mapCount").innerHTML =
+  '<span class="found">' + c + '/</span>50 Found';
+
+var mapModeSummary = document.getElementById("mapModeSummary");
+if (mapModeSummary) {
+  mapModeSummary.textContent =
+    mode === "classic" ? "Classic Mode" :
+    mode === "weighted" ? "Battle Mode" :
+    "Roadtrip Mode";
+}
+  
 document.getElementById("badgeMini").textContent = unlockedBadges;
 
 var profileBadgeMini = document.getElementById("profileBadgeMini");
