@@ -4200,10 +4200,15 @@ function playerPlateText(p) {
   return "PLAYER";
 }
   
+function playerPlateText(p) {
+  if (p && p.plate) return cleanPlateName(p.plate);
+  if (p && p.name) return cleanPlateName(p.name).slice(0, 10);
+  return "PLAYER";
+}
+
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
-
-
+}
 
   var familyCount = document.getElementById("familyCount");
 
