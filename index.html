@@ -2593,14 +2593,20 @@ or
   color:var(--navy);
 }
 
-.plateState {
+.plateState,
+.plateText,
+.plateTagline{
+  text-align:center;
+}
+
+.plateState{
   font-size:12px;
   font-weight:950;
   letter-spacing:2px;
   margin-bottom:8px;
 }
 
-.plateText {
+.plateText{
   font-size:36px;
   font-weight:950;
   letter-spacing:2px;
@@ -2608,7 +2614,7 @@ or
   white-space:nowrap;
 }
 
-.plateTagline {
+.plateTagline{
   font-size:10px;
   font-weight:900;
   letter-spacing:3px;
@@ -3206,16 +3212,12 @@ or
 </div>
 
 <div class="formGroup">
-  <label>Your Plate</label>
+  <label>Username</label>
   <input
     id="plateNameInput"
     class="plateNameInput"
     maxlength="10"
-    placeholder="Choose your plate"
-  >
-  <div class="plateHint">This is your global username</div>
-</div>
-    
+    placeholder="Choose your plate">
 
 
 <div class="formGroup">
