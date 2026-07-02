@@ -2592,8 +2592,10 @@ or
   box-shadow:0 8px 20px rgba(10,31,68,.12);
   color:var(--navy);
 }
-  .playerPlate {
-  width:110px;
+
+
+.playerPlate {
+  width:112px;
   border:2px solid var(--navy);
   border-radius:12px;
   background:linear-gradient(180deg,#fff,#eef6ff);
@@ -2604,8 +2606,9 @@ or
 
 .playerPlateState{
   font-size:8px;
-  font-weight:900;
-  letter-spacing:1px;
+  font-weight:950;
+  letter-spacing:1.5px;
+  color:var(--navy);
 }
 
 .playerPlateName{
@@ -2613,6 +2616,7 @@ or
   font-weight:950;
   letter-spacing:1px;
   color:var(--navy);
+  white-space:nowrap;
 }
 
 .plateState,
@@ -4189,7 +4193,13 @@ function playerStats() {
     return b.plates - a.plates;
   });
 }
- 
+
+function playerPlateText(p) {
+  if (p && p.plate) return cleanPlateName(p.plate);
+  if (p && p.name) return cleanPlateName(p.name).slice(0, 10);
+  return "PLAYER";
+}
+  
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
 
@@ -4242,8 +4252,12 @@ medal + ' ' + ((players.find(function(x){ return x.name === p.name; }) || {}).av
     
     list.innerHTML = players.map(function(p){
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
-return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
- '<div class="familyAvatar">' + (p.avatar || initial) + '</div>' +
+
+      return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
+  '<div class="playerPlate">' +
+    '<div class="playerPlateState">NEW YORK</div>' +
+    '<div class="playerPlateName">' + playerPlateText(p) + '</div>' +
+  '</div>' +
   '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
   '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div></div>' +
  '<div class="familyActions">' +
