@@ -3671,25 +3671,22 @@ function saveProfile() {
   profile.name = nameInput ? nameInput.value.trim() : "";
   profile.email = emailInput ? emailInput.value.trim() : "";
 
-  localStorage.setItem("platesProfile", JSON.stringify(profile));
-  if(players && players.length) {
-  players[0].name = profile.name || "Player";
-  players[0].avatar = profile.avatar || "🚗";
-  localStorage.platesPlayers = JSON.stringify(players);
-}
+
   console.log("Saved profile:", profile);
-  if(players && players.length) {
-  players[0].name = profile.name || "Player";
-  players[0].avatar = profile.avatar || "🚗";
-  localStorage.platesPlayers = JSON.stringify(players);
+var cp = currentPlayer();
+
+if (cp) {
+  cp.name = profile.name || "Player";
+  cp.avatar = profile.avatar || "🚗";
+  cp.plate = plateName;
+  cp.plateState = plateState;
 }
+
+localStorage.platesPlayers = JSON.stringify(players);
 
 var saveBtn = document.getElementById("saveProfileBtn");
 
-if(saveBtn) {
-  saveBtn.classList.add("hidden");
-  console.log("button hidden");
-}
+
 
 var saveBtn = document.getElementById("saveProfileBtn");
 
@@ -3714,6 +3711,8 @@ if (stateSelect) {
 profile.plate = plateName;
 profile.plateState = plateState;
 
+ 
+  
 var cp = currentPlayer();
 if (cp) {
   cp.name = profile.name || cp.name;
@@ -3744,7 +3743,6 @@ function save() {
   localStorage.platesBestUnlimited = bestUnlimited;
 localStorage.platesPlayers = JSON.stringify(players);
 localStorage.platesCurrentPlayerId = currentPlayerId;
-localStorage.platesPlateName = plateName;
   localStorage.platesPlateName = plateName;
 localStorage.platesPlateState = plateState;
 }
