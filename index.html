@@ -3519,7 +3519,14 @@ function renderVanityPlate() {
   var input = document.getElementById("plateNameInput");
   var preview = document.getElementById("plateTextPreview");
 
+  var stateSelect = document.getElementById("plateStateSelect");
+  var statePreview = document.querySelector(".profilePlateHero .plateState");
+
   if (input) input.value = plateName;
+
+  if (stateSelect) stateSelect.value = plateState;
+  if (statePreview) statePreview.textContent = stateNameFromCode(plateState);
+
   if (preview) {
     preview.textContent = plateName || "PLATES";
 
@@ -3532,7 +3539,6 @@ function renderVanityPlate() {
     }
   }
 }
-
 var plateInput = document.getElementById("plateNameInput");
 if (plateInput) {
   plateInput.addEventListener("input", function() {
