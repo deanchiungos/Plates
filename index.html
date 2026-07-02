@@ -482,6 +482,25 @@ body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
   .tapStateTitle {
   font-size:22px;
 }
+.mapHero{
+  margin-bottom:12px;
+  padding:20px 18px;
+}
+
+.mapHeroCount{
+  display:block;
+  width:100%;
+  text-align:center;
+  font-size:34px;
+  font-weight:950;
+  color:var(--navy);
+  line-height:1.05;
+}
+
+.mapHeroCount .found{
+  color:var(--green);
+}
+  
 .mapGrid {
   display:grid;
   grid-template-columns:repeat(12,1fr);
@@ -2993,10 +3012,14 @@ or
 
   <section id="mapScreen" class="screen hidden">
     <div class="card mapCard">
-      <div class="sectionHeader">
-        <h2>United States</h2>
-        <span id="mapCount">0 / 50 states found</span>
-      </div>
+
+      <div class="latestTripInfo mapHero">
+  <div class="latestTripLabel">United States</div>
+  <div id="mapCount" class="mapHeroCount">
+    <span class="found">8/</span>50 found
+  </div>
+  <div class="sub" id="mapModeSummary">Classic Mode</div>
+</div>
 
       <div class="interactiveMapWrap">
         <svg class="interactiveUSMap" viewBox="0 0 540 270" role="img" aria-label="Interactive United States map">
