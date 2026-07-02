@@ -3704,8 +3704,29 @@ if(saveBtn) {
 var plateInput = document.getElementById("plateNameInput");
 if (plateInput) {
   plateName = cleanPlateName(plateInput.value);
-  renderVanityPlate();
 }
+
+var stateSelect = document.getElementById("plateStateSelect");
+if (stateSelect) {
+  plateState = stateSelect.value;
+}
+
+profile.plate = plateName;
+profile.plateState = plateState;
+
+var cp = currentPlayer();
+if (cp) {
+  cp.name = profile.name || cp.name;
+  cp.avatar = profile.avatar;
+  cp.plate = plateName;
+  cp.plateState = plateState;
+}
+
+localStorage.setItem("platesProfile", JSON.stringify(profile));
+localStorage.platesPlayers = JSON.stringify(players);
+
+renderVanityPlate();
+render();
   
 toast("Profile saved");
  } 
