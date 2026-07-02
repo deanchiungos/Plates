@@ -3482,6 +3482,7 @@ function safeParse(value, fallback) {
     return JSON.parse(fallback);
   }
 }
+  var plateState = localStorage.getItem("platesPlateState") || "NY";
   var mode = localStorage.platesMode || "classic";
 var view = localStorage.platesView || "game";
 var counts = safeParse(localStorage.platesCounts, "{}");
