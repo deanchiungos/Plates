@@ -1501,14 +1501,21 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 }
 
 .inviteActions{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-  margin-top:20px;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:16px !important;
+  width:100% !important;
 }
 
+.inviteActions button,
 .inviteActions .secondary{
-  width:100%;
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  min-height:58px !important;
+  margin:0 !important;
+  box-sizing:border-box !important;
+  border-radius:999px !important;
 }
   
 .recentPts {
