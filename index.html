@@ -4136,10 +4136,12 @@ function addPlayer() {
   var name = prompt("Player Name:", "");
   if(!name || !name.trim()) return;
 
-  var player = {
-    id:"p" + Date.now() + Math.floor(Math.random() * 1000),
-    name:name.trim()
-  };
+var player = {
+  id:"p" + Date.now() + Math.floor(Math.random() * 1000),
+  name:name.trim(),
+  plate: cleanPlateName(name).slice(0,10),
+  avatar:"🚗"
+};
 
   players.push(player);
   currentPlayerId = player.id;
