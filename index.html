@@ -3482,6 +3482,15 @@ function safeParse(value, fallback) {
     return JSON.parse(fallback);
   }
 }
+var plateStateSelect = document.getElementById("plateStateSelect");
+
+if (plateStateSelect) {
+  plateStateSelect.addEventListener("change", function() {
+    plateState = this.value;
+    renderVanityPlate();
+  });
+}
+  
   var plateState = localStorage.getItem("platesPlateState") || "NY";
   var mode = localStorage.platesMode || "classic";
 var view = localStorage.platesView || "game";
