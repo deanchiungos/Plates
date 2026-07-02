@@ -2638,6 +2638,19 @@ or
   font-weight:800;
   color:var(--muted);
 }
+
+  .profilePlateHero {
+  margin-top:18px;
+  margin-bottom:22px;
+}
+
+.plateHint {
+  margin-top:8px;
+  font-size:13px;
+  font-weight:800;
+  color:var(--muted);
+  text-align:center;
+}
 .tripStatsHero {
   margin-top:10px;
 }
@@ -3186,39 +3199,24 @@ or
       <span>Profile</span>
     </div>
 
-    <div class="vanityPlatePreview">
+    <div class="vanityPlatePreview profilePlateHero">
   <div class="plateState">NEW YORK</div>
   <div class="plateText" id="plateTextPreview">DCHIUNGOS</div>
-  <div class="plateTagline">PLATES</div>
+  <div class="plateTagline">GLOBAL PLATE</div>
 </div>
 
 <div class="formGroup">
-  <label>Your Plate (Global Username)</label>
-
+  <label>Your Plate</label>
   <input
     id="plateNameInput"
     class="plateNameInput"
     maxlength="10"
     placeholder="Choose your plate"
   >
+  <div class="plateHint">This is your global username</div>
 </div>
+    
 
-<div class="vanityPlatePreview">
-  <div class="plateState">NEW YORK</div>
-  <div class="plateText" id="plateTextPreview">DCHIUNGOS</div>
-  <div class="plateTagline">PLATES</div>
-</div>
-
-<div class="formGroup">
-  <label>Your Plate (Global Username)</label>
-
-  <input
-    id="plateNameInput"
-    class="plateNameInput"
-    maxlength="10"
-    placeholder="Choose your plate"
-  >
-</div>
 
 <div class="formGroup">
   <label>Name</label>
