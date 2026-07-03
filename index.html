@@ -2983,6 +2983,35 @@ body {
   margin-top:10px;
 }
 
+/* v50 locked mode display */
+
+.tripModePill{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  margin:4px auto 0;
+  padding:6px 14px;
+  border-radius:999px;
+  background:#eef6ff;
+  color:var(--navy);
+  font-size:15px;
+  font-weight:900;
+  line-height:1;
+}
+
+.currentTripHeader{
+  padding-bottom:14px !important;
+  margin-bottom:18px !important;
+}
+
+.bar{
+  margin-bottom:18px;
+}
+
+.modeDropdownBtn{
+  display:none !important;
+}
+  
 </style>
 </head>
 
@@ -3101,6 +3130,7 @@ body {
 <div class="currentTripHeader" id="tripPillBtn">
   <div class="latestTripLabel">Latest Trip</div>
   <div class="tripNameInline" id="tripNameTop">Summer Roadtrip</div>
+  <div class="tripModePill" id="tripModeTop">Classic Mode</div>
 </div>
    
 
@@ -3117,12 +3147,6 @@ body {
       <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
 
     
-
-<button class="modeDropdownBtn" id="modeDropdownBtn" type="button">
-  <span id="modeDropdownText">Classic Mode</span>
-  <span>▼</span>
-</button>
-
 <button class="newGameBtn" id="newGameBtn" type="button">
   ➕ Start New Game
 </button>
