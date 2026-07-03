@@ -3155,11 +3155,13 @@ button#newGameBtn{
   margin-top:8px;
 }
 
-.newGameOption strong{
-  display:block;
-  color:var(--navy);
-  font-size:18px;
-  font-weight:950;
+.newGameOption.active{
+  background:#edf5ff;
+  border:2px solid rgba(38,169,87,.55);
+}
+
+.newGameOption.active strong::after{
+  color:var(--green);
 }
 
 .newGameOption span{
@@ -3236,16 +3238,6 @@ button#newGameBtn{
   display:none;
 }
 
-/* v50 New Game selected cards use blue, not green */
-
-.newGameOption.active{
-  background:#eaf3ff !important;
-  border-color:rgba(21,119,210,.38) !important;
-}
-
-.newGameOption.active strong:after{
-  color:var(--blue) !important;
-}
 
 /* v50 selected New Game cards */
 
