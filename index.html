@@ -4886,6 +4886,11 @@ var c = collectedCount();
   var left = Math.max(0, 50 - c);
   var unlockedBadges = badgeCount(c);
 
+  var listCountEl = document.getElementById("listCount");
+if (listCountEl) {
+  listCountEl.innerHTML = '<span class="found">' + c + '/</span>50';
+}
+
   document.body.classList.toggle("show-rarity", mode !== "classic");
   document.querySelectorAll(".modeExplainCard").forEach(function(card){
   card.classList.toggle("active", card.dataset.explainMode === mode);
