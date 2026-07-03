@@ -4926,10 +4926,13 @@ if(clearTripBtn) clearTripBtn.onclick = function(){
 
 var changeModeBtn = document.getElementById("changeModeBtn");
 
-if (changeModeBtn) {
+  if (changeModeBtn) {
   changeModeBtn.onclick = function () {
-    document.getElementById("tripOptionsMenu").classList.add("hidden");
-    setView("home");   // or whatever your Home screen is called
+    var menu = document.getElementById("tripOptionsMenu");
+    if(menu) menu.classList.add("hidden");
+
+    var modeOverlay = document.getElementById("modeOverlay");
+    if(modeOverlay) modeOverlay.classList.remove("hidden");
   };
 }
   
