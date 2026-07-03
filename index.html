@@ -3608,6 +3608,8 @@ if (plateStateSelect) {
   
   var plateState = localStorage.getItem("platesPlateState") || "NY";
   var mode = localStorage.platesMode || "classic";
+  var gameType = localStorage.platesGameType || "solo";
+var scoringMode = localStorage.platesScoringMode || mode || "classic";
 var view = localStorage.platesView || "game";
 var counts = safeParse(localStorage.platesCounts, "{}");
 var log = safeParse(localStorage.platesLog, "[]");
