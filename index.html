@@ -4460,19 +4460,25 @@ function playerStats() {
 
   players.forEach(function(p){
     stats[p.id] = {
+      id:p.id,
       name:p.name,
-      plates:0
+      avatar:p.avatar || "🚗",
+      plate:playerPlateText(p),
+      plates:0,
+      points:0
     };
   });
 
   log.forEach(function(item){
     if(item.playerId && stats[item.playerId]) {
       stats[item.playerId].plates++;
+      stats[item.playerId].points += Number(item.points || 1);
     }
   });
 
   return Object.values(stats).sort(function(a,b){
-    return b.plates - a.plates;
+    if(mode === "classic") return b.plates - a.plates;
+    return b.points - a.points;
   });
 }
 
@@ -4517,15 +4523,15 @@ if(standingsModeLabel) {
     board.innerHTML = standings.map(function(p,i){
       var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
 
-   return '<div class="row"><div class="grow"><div class="title">' +
-medal + ' ' +
-((players.find(function(x){ return x.name === p.name; }) || {}).avatar || "🚗") +
-' ' +
-playerPlateText(players.find(function(x){ return x.name === p.name; })) +
-  '</div></div><div class="green">' +
-  p.plates + ' plates</div></div>';
-    }).join("");
-  }
+return '<div class="row battleStandingRow">' +
+  '<div class="grow">' +
+    '<div class="title">' + medal + ' ' + p.avatar + ' ' + p.plate + '</div>' +
+    '<div class="sub">' + p.name + '</div>' +
+  '</div>' +
+  '<div class="green">' +
+    (mode === "classic" ? p.plates + " plates" : p.points + " pts") +
+  '</div>' +
+'</div>';
 
   var list = document.getElementById("familyList");
   if(list) {
