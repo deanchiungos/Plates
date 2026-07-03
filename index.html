@@ -3923,14 +3923,12 @@ function rareCollectedCount() {
   return total;
 }
 
-
-  
 function tapState(btn) {
   var code = btn.dataset.code;
   var name = btn.dataset.name;
   var points = Number(btn.dataset.points);
+  var player = currentPlayer();
   var wasCollected = !!counts[code];
-  var before = collectedCount();
 
   if(mode === "classic" || mode === "weighted") {
     if(counts[code]) {
@@ -3950,22 +3948,29 @@ function tapState(btn) {
       points:points,
       mode:mode,
       trip:tripName,
-      playerId:currentPlayerId,
-      playerName:currentPlayer().name,
+
+      playerId:player.id,
+      playerName:player.name,
+      playerAvatar:player.avatar || "🚗",
+      playerPlate:playerPlateText(player),
+
       ts:new Date().toISOString()
     });
-    log = log.slice(0, 30);
+
+    log = log.slice(0, 50);
+
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
 
+    toast((player.avatar || "🚗") + " " + player.name + " found " + name);
+
     if(!wasCollected) {
-      toast("Collected " + name);
       var after = collectedCount();
-      if(after === 1) showCelebration("First Plate", "You started your collection with " + name);
-      else if(after === 10) showCelebration("10 States", "You've found 10 states on this trip");
+
+      if(after === 1) showCelebration("First Plate", player.name + " started the trip with " + name);
+      else if(after === 10) showCelebration("10 States", "The team has found 10 states");
       else if(after === 25) showCelebration("Halfway There", "25 states collected");
       else if(after === 50) showCelebration("All 50 States", "You completed the game");
-
     }
   }
 
@@ -3973,6 +3978,7 @@ function tapState(btn) {
   save();
   render();
 }
+
 function setMode(newMode) {
   mode = newMode;
 
