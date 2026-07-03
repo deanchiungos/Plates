@@ -5278,17 +5278,18 @@ if(newGameBtn && modeOverlay) {
   };
 }
   
-  if(modeDropdownBtn && modeOverlay) {
-    modeDropdownBtn.onclick = function() {
-      modeOverlay.classList.remove("hidden");
-    };
-  }
+if(modeCloseBtn) {
+  modeCloseBtn.onclick = function() {
 
-if(modeCloseBtn && newGameOverlay) {
-    modeCloseBtn.onclick = function() {
+    if(modeOverlay) {
       modeOverlay.classList.add("hidden");
-    };
-  }
+    }
+
+    if(newGameOverlay) {
+      newGameOverlay.classList.add("hidden");
+    }
+  };
+}
 
 document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
   btn.onclick = function() {
