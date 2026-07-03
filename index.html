@@ -2976,7 +2976,50 @@ button#newGameBtn{
   display:block !important;
   white-space:normal !important;
 }
+/* emergency mode/new game cleanup */
 
+.modeDropdownBtn{
+  background:#fff !important;
+  background-image:none !important;
+  border:2px solid #d8e2ef !important;
+  color:var(--navy) !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
+}
+
+.modeSheet{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:8px !important;
+  width:100% !important;
+  max-width:430px !important;
+  max-height:82vh !important;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+}
+
+.modeOption{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  flex:none !important;
+  margin:0 !important;
+  padding:14px 16px !important;
+  border-radius:16px !important;
+  text-align:left !important;
+}
+
+.modeOption strong,
+.modeOption span{
+  display:block !important;
+  white-space:normal !important;
+}
+
+#newGameBtn{
+  background:#fff !important;
+  background-image:none !important;
+  color:var(--navy) !important;
+  border:2px solid #d8e2ef !important;
+}
   
 </style>
 </head>
@@ -4905,6 +4948,8 @@ document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(fu
 
 function attachHandlers() {
 
+
+  
   var copyInviteBtn = document.getElementById("copyInviteBtn");
   if(copyInviteBtn) {
     copyInviteBtn.onclick = function() {
@@ -4956,6 +5001,14 @@ function attachHandlers() {
   var modeOverlay = document.getElementById("modeOverlay");
   var modeCloseBtn = document.getElementById("modeCloseBtn");
 
+var newGameBtn = document.getElementById("newGameBtn");
+
+if(newGameBtn && modeOverlay) {
+  newGameBtn.onclick = function() {
+    modeOverlay.classList.remove("hidden");
+  };
+}
+  
   if(modeDropdownBtn && modeOverlay) {
     modeDropdownBtn.onclick = function() {
       modeOverlay.classList.remove("hidden");
