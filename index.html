@@ -3102,7 +3102,119 @@ button#newGameBtn{
   margin-top:16px !important;
   border-radius:999px !important;
 }
+/* v50 New Game Sheet */
 
+.modeOverlay{
+  position:fixed !important;
+  inset:0 !important;
+  z-index:130 !important;
+  background:rgba(7,55,99,.55) !important;
+  display:flex !important;
+  align-items:flex-end !important;
+  justify-content:center !important;
+  padding:18px !important;
+}
+
+.modeOverlay.hidden{
+  display:none !important;
+}
+
+.newGameSheet{
+  width:100%;
+  max-width:430px;
+  max-height:84vh;
+  overflow-y:auto;
+  background:#fff;
+  border-radius:28px;
+  padding:22px 18px 18px;
+  box-shadow:0 18px 60px rgba(0,0,0,.28);
+}
+
+.newGameTitle{
+  text-align:center;
+  color:var(--navy);
+  font-size:28px;
+  font-weight:950;
+  margin-bottom:18px;
+}
+
+.newGameSectionLabel{
+  color:var(--muted);
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin:16px 0 8px;
+}
+
+.newGameOption{
+  width:100%;
+  display:block;
+  text-align:left;
+  background:#f8fbff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:14px 16px;
+  margin-top:8px;
+}
+
+.newGameOption strong{
+  display:block;
+  color:var(--navy);
+  font-size:18px;
+  font-weight:950;
+}
+
+.newGameOption span{
+  display:block;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:800;
+  margin-top:4px;
+}
+
+.newGameOption.active{
+  background:#eaffef;
+  border-color:rgba(38,169,87,.45);
+}
+
+.newGameOption.active strong:after{
+  content:" ✓";
+  color:var(--green);
+}
+
+.newGameDivider{
+  height:1px;
+  background:var(--line);
+  margin:18px 0;
+}
+
+.newGameInput{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  font-size:18px;
+  font-weight:850;
+  color:var(--navy);
+  margin-top:8px;
+}
+
+.createGameBtn{
+  width:100%;
+  min-height:58px;
+  border-radius:999px;
+  font-size:20px;
+  font-weight:950;
+  margin-top:18px;
+}
+
+.modeCloseBtn{
+  width:100%;
+  min-height:52px;
+  border-radius:999px;
+  margin-top:10px;
+}
   
   
   
@@ -3143,52 +3255,64 @@ button#newGameBtn{
     <button class="primary" id="onboardingDone" type="button">Got It</button>
   </div>
 </div>
+
 <div class="modeOverlay hidden" id="modeOverlay">
- 
-<div class="modeSheetTitle">New Game</div>
+  <div class="newGameSheet">
 
-<div class="modeSectionTitle">Game Type</div>
+    <div class="newGameTitle">New Game</div>
 
-<button class="modeOption" data-game-type="solo" type="button">
-  <strong>🚗 Solo</strong>
-  <span>Play by yourself</span>
-</button>
+    <div class="newGameSectionLabel">Game Type</div>
 
-<button class="modeOption" data-game-type="battle" type="button">
-  <strong>🏆 Battle</strong>
-  <span>Compete against friends</span>
-</button>
+    <button class="newGameOption active" data-game-type="solo" type="button">
+      <strong>🚗 Solo</strong>
+      <span>Play by yourself</span>
+    </button>
 
-<button class="modeOption" data-game-type="roadtrip" type="button">
-  <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
-  <span>Combine scores as a team</span>
-</button>
+    <button class="newGameOption" data-game-type="battle" type="button">
+      <strong>🏆 Battle</strong>
+      <span>Compete against friends</span>
+    </button>
 
-<div class="modeDivider"></div>
+    <button class="newGameOption" data-game-type="roadtrip" type="button">
+      <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
+      <span>Combine scores as a team</span>
+    </button>
 
-<div class="modeSectionTitle">Scoring</div>
+    <div class="newGameDivider"></div>
 
-<button class="modeOption" data-mode-choice="classic" type="button">
-  <strong>Classic</strong>
-  <span>Each state counts once</span>
-</button>
+    <div class="newGameSectionLabel">Scoring</div>
 
-<button class="modeOption" data-mode-choice="weighted" type="button">
-  <strong>Weighted</strong>
-  <span>Rare states are worth more points</span>
-</button>
+    <button class="newGameOption active" data-mode-choice="classic" type="button">
+      <strong>Classic</strong>
+      <span>Each state counts once</span>
+    </button>
 
-<button class="modeOption" data-mode-choice="unlimited" type="button">
-  <strong>Unlimited</strong>
-  <span>Every plate scores</span>
-</button>
+    <button class="newGameOption" data-mode-choice="weighted" type="button">
+      <strong>Weighted</strong>
+      <span>Rare states are worth more</span>
+    </button>
 
-<button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
-  Close
-</button>
+    <button class="newGameOption" data-mode-choice="unlimited" type="button">
+      <strong>Unlimited</strong>
+      <span>Every plate scores</span>
+    </button>
 
-  
+    <div class="newGameDivider"></div>
+
+    <div class="newGameSectionLabel">Game Name</div>
+    <input class="newGameInput" id="newGameNameInput" type="text" placeholder="Summer Roadtrip">
+
+    <button class="primary createGameBtn" id="createGameBtn" type="button">
+      Create Game
+    </button>
+
+    <button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
+      Cancel
+    </button>
+
+  </div>
 </div>
+  
 <div class="celebrationOverlay" id="celebrationOverlay" onclick="this.classList.remove('show')">
   <div class="celebrationBox">
     <h2 id="celebrationTitle">Nice Find</h2>
