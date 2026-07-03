@@ -4978,53 +4978,98 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
   if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
+
+    var tripOptionsMenu = document.getElementById("tripOptionsMenu");
+
+var tripOptionsBtn = document.getElementById("tripOptionsBtn");
+if (tripOptionsBtn && tripOptionsMenu) {
+  tripOptionsBtn.onclick = function () {
+    tripOptionsMenu.classList.toggle("hidden");
+  };
+}
+
 var endTripBtn = document.getElementById("endTripBtn");
-if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
+if(endTripBtn) {
+  endTripBtn.onclick = function(){
+    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+    endCurrentTrip();
+  };
+}
 
-  var clearTripBtn = document.getElementById("clearTripBtn");
-
-if(clearTripBtn) clearTripBtn.onclick = function(){
-  if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
-
-  selected = [];
-  score = 0;
-  save();
-  render();
-
-  document.getElementById("tripOptionsMenu").classList.add("hidden");
-};
+var renameTripBtn = document.getElementById("renameTripBtn");
+if(renameTripBtn) {
+  renameTripBtn.onclick = function(){
+    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+    renameTrip();
+  };
+}
 
 var changeModeBtn = document.getElementById("changeModeBtn");
-
-if (changeModeBtn) {
-  changeModeBtn.onclick = function () {
-    document.getElementById("tripOptionsMenu").classList.add("hidden");
-    setView("home");   // or whatever your Home screen is called
-  };
-}
-  
-var renameTripBtn = document.getElementById("renameTripBtn");
-if(renameTripBtn) renameTripBtn.onclick = renameTrip;
-
-  var tripOptionsBtn = document.getElementById("tripOptionsBtn");
-if (tripOptionsBtn) {
-  tripOptionsBtn.onclick = function () {
-    document.getElementById("tripOptionsMenu").classList.toggle("hidden");
+if(changeModeBtn) {
+  changeModeBtn.onclick = function(){
+    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+    document.getElementById("modeOverlay").classList.remove("hidden");
   };
 }
 
-  var newTripBtn = document.getElementById("newTripBtn");
-if(newTripBtn) newTripBtn.onclick = newTrip;
+var newTripBtn = document.getElementById("newTripBtn");
+if(newTripBtn) {
+  newTripBtn.onclick = function(){
+    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+    newTrip();
+  };
+}
 
 var shareTripBtn = document.getElementById("shareTripBtn");
-if(shareTripBtn) shareTripBtn.onclick = shareSummary;
+if(shareTripBtn) {
+  shareTripBtn.onclick = function(){
+    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+    shareSummary();
+  };
+}
 
+var clearTripBtn = document.getElementById("clearTripBtn");
+if(clearTripBtn) {
+  clearTripBtn.onclick = function(){
+    if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
 
-  var saveProfileBtn = document.getElementById("saveProfileBtn");
-if(saveProfileBtn) saveProfileBtn.onclick = function() {
-  document.querySelectorAll(".avatarBtn").forEach(function(btn) {
+    counts = {};
+    log = [];
+    score = 0;
+
+    save();
+    render();
+
+    var menu = document.getElementById("tripOptionsMenu");
+    if(menu) menu.classList.add("hidden");
+  };
+}
+
+var saveProfileBtn = document.getElementById("saveProfileBtn");
+if(saveProfileBtn) {
+  saveProfileBtn.onclick = function() {
+    profile.name = document.getElementById("profileName").value;
+    profile.email = document.getElementById("profileEmail").value;
+
+    localStorage.setItem(
+      "platesProfile",
+      JSON.stringify(profile)
+    );
+
+    var profileSavedMsg = document.getElementById("profileSavedMsg");
+    profileSavedMsg.classList.remove("hidden");
+
+    setTimeout(function() {
+      profileSavedMsg.classList.add("hidden");
+    }, 1800);
+
+    save();
+    render();
+  };
+}
+
+document.querySelectorAll(".avatarBtn").forEach(function(btn) {
   btn.onclick = function() {
-
     profile.avatar = btn.dataset.avatar;
 
     document.querySelectorAll(".avatarBtn").forEach(function(b){
@@ -5034,27 +5079,9 @@ if(saveProfileBtn) saveProfileBtn.onclick = function() {
     btn.classList.add("selected");
   };
 });
-  profile.name = document.getElementById("profileName").value;
-  profile.email = document.getElementById("profileEmail").value;
-
-  localStorage.setItem(
-    "platesProfile",
-    JSON.stringify(profile)
-  );
-
-var profileSavedMsg = document.getElementById("profileSavedMsg");
-profileSavedMsg.classList.remove("hidden");
-
-setTimeout(function() {
-  profileSavedMsg.classList.add("hidden");
-}, 1800);
-};
- var shareTripBtn = document.getElementById("shareTripBtn");
-if(shareTripBtn) shareTripBtn.onclick = shareSummary;
 
 var copyShareBtn = document.getElementById("copyShareBtn");
 if(copyShareBtn) copyShareBtn.onclick = copyShareText;
-
 
 var celebrationClose = document.getElementById("celebrationClose");
 if(celebrationClose) {
