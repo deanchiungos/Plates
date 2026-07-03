@@ -3848,6 +3848,8 @@ toast("Profile saved");
  } 
 function save() {
   localStorage.platesMode = mode;
+  localStorage.platesGameType = gameType;
+localStorage.platesScoringMode = scoringMode;
   localStorage.platesView = view;
   localStorage.platesCounts = JSON.stringify(counts);
   localStorage.platesLog = JSON.stringify(log);
