@@ -5298,13 +5298,14 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
 var endTripBtn = document.getElementById("endTripBtn");
 if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
 
-  var clearTripBtn = document.getElementById("clearTripBtn");
+var clearTripBtn = document.getElementById("clearTripBtn");
 
 if(clearTripBtn) clearTripBtn.onclick = function(){
   if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
 
-  selected = [];
+  log = [];
   score = 0;
+
   save();
   render();
 
