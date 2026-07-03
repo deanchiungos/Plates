@@ -4969,11 +4969,34 @@ document.getElementById("tripStatesLine").innerHTML =
   document.getElementById("tripName").textContent = tripName;
 var tripNameTopEl = document.getElementById("tripNameTop");
 if (tripNameTopEl) tripNameTopEl.textContent = tripName;
+
+var tripModeTopEl = document.getElementById("tripModeTop");
+if (tripModeTopEl) {
+  tripModeTopEl.textContent =
+    mode === "classic" ? "Classic Mode" :
+    mode === "weighted" ? "Weighted Mode" :
+    "Unlimited Mode";
+}
+  
   document.getElementById("tripModeSummary").textContent = tripModeSummaryText(c, points, sightings);
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
 
 
+  var hasActiveGame = tripName && tripName.trim() !== "";
+
+var currentTripHeader = document.querySelector(".currentTripHeader");
+var noGameHero = document.getElementById("noGameHero");
+
+if(currentTripHeader && noGameHero) {
+  if(hasActiveGame) {
+    currentTripHeader.classList.remove("hidden");
+    noGameHero.classList.add("hidden");
+  } else {
+    currentTripHeader.classList.add("hidden");
+    noGameHero.classList.remove("hidden");
+  }
+}
   
 var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
 
