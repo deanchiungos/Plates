@@ -5222,6 +5222,7 @@ function attachHandlers() {
 
   var modeDropdownBtn = document.getElementById("modeDropdownBtn");
   var modeOverlay = document.getElementById("modeOverlay");
+  var newGameOverlay = document.getElementById("newGameOverlay");
   var modeCloseBtn = document.getElementById("modeCloseBtn");
 
 var newGameBtn = document.getElementById("newGameBtn");
@@ -5229,10 +5230,9 @@ var newGameBtn = document.getElementById("newGameBtn");
 console.log("newGameBtn:", newGameBtn);
 console.log("modeOverlay:", modeOverlay);
 
-if(newGameBtn && modeOverlay) {
+if(newGameBtn && newGameOverlay) {
   newGameBtn.onclick = function() {
-    console.log("New Game clicked");
-    modeOverlay.classList.remove("hidden");
+    newGameOverlay.classList.remove("hidden");
   };
 }
   
@@ -5250,7 +5250,7 @@ if(newGameBtn && modeOverlay) {
     };
   }
 
-  if(modeCloseBtn && modeOverlay) {
+if(modeCloseBtn && newGameOverlay) {
     modeCloseBtn.onclick = function() {
       modeOverlay.classList.add("hidden");
     };
@@ -5259,7 +5259,7 @@ if(newGameBtn && modeOverlay) {
   document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
     btn.onclick = function() {
       setMode(btn.dataset.modeChoice);
-      if(modeOverlay) modeOverlay.classList.add("hidden");
+      if(modeOverlay) newGameOverlay.classList.add("hidden");
     };
   });
 
