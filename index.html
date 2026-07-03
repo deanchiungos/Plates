@@ -4562,71 +4562,49 @@ if(standingsModeLabel) {
     mode === "weighted" ? "Battle Mode" :
     "Roadtrip Mode";
 }
-  
-  if(board) {
-    var standings = playerStats();
 
-    board.innerHTML = standings.map(function(p,i){
-      var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
+if(board) {
+  var standings = playerStats();
 
-return '<div class="row battleStandingRow">' +
-  '<div class="grow">' +
-    '<div class="title">' + medal + ' ' + p.avatar + ' ' + p.plate + '</div>' +
-    '<div class="sub">' + p.name + '</div>' +
-  '</div>' +
-  '<div class="green">' +
-    (mode === "classic" ? p.plates + " plates" : p.points + " pts") +
-  '</div>' +
-'</div>';
+  board.innerHTML = standings.map(function(p,i){
+    var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
 
-  var list = document.getElementById("familyList");
-  if(list) {
-    if(!players.length) {
-      list.innerHTML = '<div class="familyEmpty">No Members yet</div>';
-      return;
-    }
-    
-    list.innerHTML = players.map(function(p){
-      var initial = (p.name || "?").trim().charAt(0).toUpperCase();
-
-return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
-  '<div class="playerPlate">' +
-    '<div class="playerPlateState">NEW YORK</div>' +
-    '<div class="playerPlateName">' + playerPlateText(p) + '</div>' +
-  '</div>' +
-  '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
-  '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div></div>' +
- '<div class="familyActions">' +
-
-(p.id === currentPlayerId
-? ''
-: '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>') +
-'</div>' +
-'</div>';
-    }).join("");
-  }
+    return '<div class="row battleStandingRow">' +
+      '<div class="grow">' +
+        '<div class="title">' + medal + ' ' + p.avatar + ' ' + p.plate + '</div>' +
+        '<div class="sub">' + p.name + '</div>' +
+      '</div>' +
+      '<div class="green">' +
+        (mode === "classic" ? p.plates + " plates" : p.points + " pts") +
+      '</div>' +
+    '</div>';
+  }).join("");
 }
 
-function checkTripCompletion() {
-  var totalStates =
-    Object.keys(counts).filter(function(s) {
-      return counts[s] > 0;
-    }).length;
-
-  if(totalStates === 50 && !hasShownCompletion) {
-    hasShownCompletion = true;
-    localStorage.platesCompletionShown = "true";
-
-    var overlay =
-      document.getElementById("completionOverlay");
-
-    if(overlay) {
-      overlay.classList.remove("hidden");
-    }
+var list = document.getElementById("familyList");
+if(list) {
+  if(!players.length) {
+    list.innerHTML = '<div class="familyEmpty">No Members yet</div>';
+    return;
   }
+
+  list.innerHTML = players.map(function(p){
+    return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
+      '<div class="playerPlate">' +
+        '<div class="playerPlateState">NEW YORK</div>' +
+        '<div class="playerPlateName">' + playerPlateText(p) + '</div>' +
+      '</div>' +
+      '<div class="familyInfo">' +
+        '<div class="familyName">' + p.name + '</div>' +
+        '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div>' +
+      '</div>' +
+      '<div class="familyActions">' +
+        (p.id === currentPlayerId ? '' : '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>') +
+      '</div>' +
+    '</div>';
+  }).join("");
 }
   
-
 function render() {
   var inviteCodeEl = document.getElementById("tripInviteCode");
   if(inviteCodeEl) {
