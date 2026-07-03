@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">F
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PLATES</title>
 <style>
@@ -2424,8 +2424,6 @@ body {
   outline:3px solid #26a957;
 }
 
-or
-
 .avatarBtn {
   width:56px;
   height:56px;
@@ -2826,6 +2824,165 @@ or
 }
   
   
+
+/* v50 clean Game Setup */
+
+.modeDropdownBtn{
+  background:#fff !important;
+  background-image:none !important;
+  border:2px solid #d8e2ef !important;
+  color:var(--navy) !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
+  margin:8px 0 !important;
+}
+
+.newGameBtn{
+  width:100%;
+  min-height:56px;
+  margin:8px 0 14px;
+  background:#fff;
+  color:var(--navy);
+  border:2px solid #d8e2ef;
+  border-radius:999px;
+  font-size:20px;
+  font-weight:950;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+
+.newGameBtn:active{
+  transform:scale(.985);
+}
+
+.newGameOverlay{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:rgba(7,55,99,.55);
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:18px;
+}
+
+.newGameOverlay.hidden{
+  display:none !important;
+}
+
+.newGameSheet{
+  width:100%;
+  max-width:430px;
+  max-height:84vh;
+  overflow-y:auto;
+  background:#fff;
+  border-radius:28px 28px 24px 24px;
+  padding:14px 18px 18px;
+  box-shadow:0 18px 60px rgba(0,0,0,.28);
+}
+
+.newGameHandle{
+  width:52px;
+  height:5px;
+  border-radius:999px;
+  background:#d8e2ef;
+  margin:0 auto 14px;
+}
+
+.newGameTitle{
+  text-align:center;
+  color:var(--navy);
+  font-size:28px;
+  font-weight:950;
+  margin-bottom:18px;
+}
+
+.newGameSectionLabel{
+  color:var(--muted);
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin:16px 0 8px;
+}
+
+.newGameOption{
+  width:100%;
+  display:block;
+  text-align:left;
+  background:#f8fbff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:14px 16px;
+  margin-top:8px;
+  box-shadow:none;
+}
+
+.newGameOption strong{
+  display:block;
+  color:var(--navy);
+  font-size:18px;
+  font-weight:950;
+}
+
+.newGameOption span{
+  display:block;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:800;
+  margin-top:4px;
+}
+
+.newGameOption.active{
+  background:#fff !important;
+  border:3px solid #26a957 !important;
+  box-shadow:0 0 0 3px rgba(38,169,87,.10) !important;
+}
+
+.newGameOption.active strong:after{
+  content:" ✓";
+  color:#26a957;
+}
+
+.newGameDivider{
+  height:1px;
+  background:var(--line);
+  margin:18px 0;
+}
+
+.newGameInput{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:14px 16px;
+  font-size:17px;
+  font-weight:850;
+  color:var(--navy);
+  margin-top:8px;
+}
+
+.createGameBtn{
+  width:100%;
+  min-height:58px;
+  background:#fff;
+  color:var(--navy);
+  border:2px solid #d8e2ef;
+  border-radius:999px;
+  font-size:20px;
+  font-weight:950;
+  margin-top:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+
+.createGameBtn:active{
+  transform:scale(.985);
+}
+
+.modeCloseBtn{
+  width:100%;
+  min-height:52px;
+  border-radius:999px;
+  margin-top:10px;
+}
+
 </style>
 </head>
 
@@ -2863,28 +3020,59 @@ or
     <button class="primary" id="onboardingDone" type="button">Got It</button>
   </div>
 </div>
-<div class="modeOverlay hidden" id="modeOverlay">
-  <div class="modeSheet">
+<div class="newGameOverlay hidden" id="newGameOverlay">
+  <div class="newGameSheet">
 
-    <div class="modeSheetTitle">Game Modes</div>
+    <div class="newGameHandle"></div>
+    <div class="newGameTitle">New Game</div>
 
-    <button class="modeOption" data-mode-choice="classic" type="button">
+    <div class="newGameSectionLabel">How to Play</div>
+
+    <button class="newGameOption active" data-game-type="solo" type="button">
+      <strong>🚗 Solo</strong>
+      <span>Play by yourself</span>
+    </button>
+
+    <button class="newGameOption" data-game-type="battle" type="button">
+      <strong>🏆 Battle</strong>
+      <span>Compete against friends</span>
+    </button>
+
+    <button class="newGameOption" data-game-type="roadtrip" type="button">
+      <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
+      <span>Combine scores as a team</span>
+    </button>
+
+    <div class="newGameDivider"></div>
+
+    <div class="newGameSectionLabel">Rules</div>
+
+    <button class="newGameOption active" data-mode-choice="classic" type="button">
       <strong>Classic</strong>
-      <span>Collect all 50 states Each state counts once</span>
+      <span>Each state counts once</span>
     </button>
 
-    <button class="modeOption" data-mode-choice="weighted" type="button">
-  <strong>Battle</strong>
-<span>Compete against friends to spot the most plates</span>
+    <button class="newGameOption" data-mode-choice="weighted" type="button">
+      <strong>Weighted</strong>
+      <span>Rare states are worth more</span>
     </button>
-    
-<button class="modeOption" data-mode-choice="unlimited" type="button">
-  <strong>Roadtrip</strong>
-  <span>Team up with family and friends and compete nationwide</span>
-</button>
+
+    <button class="newGameOption" data-mode-choice="unlimited" type="button">
+      <strong>Unlimited</strong>
+      <span>Every plate scores</span>
+    </button>
+
+    <div class="newGameDivider"></div>
+
+    <div class="newGameSectionLabel">Game Name</div>
+    <input class="newGameInput" id="newGameNameInput" type="text" placeholder="Summer Roadtrip">
+
+    <button class="createGameBtn" id="createGameBtn" type="button">
+      Start New Game
+    </button>
 
     <button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
-      Close
+      Cancel
     </button>
 
   </div>
@@ -2933,6 +3121,10 @@ or
 <button class="modeDropdownBtn" id="modeDropdownBtn" type="button">
   <span id="modeDropdownText">Classic Mode</span>
   <span>▼</span>
+</button>
+
+<button class="newGameBtn" id="newGameBtn" type="button">
+  ➕ Start New Game
 </button>
 
     <div class="card">
@@ -3522,6 +3714,9 @@ if (plateStateSelect) {
   
   var plateState = localStorage.getItem("platesPlateState") || "NY";
   var mode = localStorage.platesMode || "classic";
+var gameType = localStorage.platesGameType || (mode === "weighted" ? "battle" : mode === "unlimited" ? "roadtrip" : "solo");
+var scoringMode = localStorage.platesScoringMode || mode || "classic";
+mode = scoringMode;
 var view = localStorage.platesView || "game";
 var counts = safeParse(localStorage.platesCounts, "{}");
 var log = safeParse(localStorage.platesLog, "[]");
@@ -3760,6 +3955,8 @@ toast("Profile saved");
  } 
 function save() {
   localStorage.platesMode = mode;
+  localStorage.platesGameType = gameType;
+  localStorage.platesScoringMode = scoringMode;
   localStorage.platesView = view;
   localStorage.platesCounts = JSON.stringify(counts);
   localStorage.platesLog = JSON.stringify(log);
@@ -3901,8 +4098,67 @@ function tapState(btn) {
   save();
   render();
 }
+
+function gameTypeLabel() {
+  return gameType === "battle" ? "Battle" :
+    gameType === "roadtrip" ? "Roadtrip" :
+    "Solo";
+}
+
+function scoringModeLabel() {
+  return mode === "weighted" ? "Weighted" :
+    mode === "unlimited" ? "Unlimited" :
+    "Classic";
+}
+
+function gameSummaryLabel() {
+  return gameTypeLabel() + " • " + scoringModeLabel();
+}
+
+function syncNewGameSheet() {
+  document.querySelectorAll("[data-game-type]").forEach(function(btn){
+    btn.classList.toggle("active", btn.dataset.gameType === gameType);
+  });
+
+  document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
+    btn.classList.toggle("active", btn.dataset.modeChoice === mode);
+  });
+
+  var input = document.getElementById("newGameNameInput");
+  if(input && !input.value.trim()) input.value = tripName || "New Game";
+}
+
+function openNewGameSheet() {
+  var overlay = document.getElementById("newGameOverlay");
+  if(overlay) {
+    syncNewGameSheet();
+    overlay.classList.remove("hidden");
+  }
+}
+
+function closeNewGameSheet() {
+  var overlay = document.getElementById("newGameOverlay");
+  if(overlay) overlay.classList.add("hidden");
+}
+
+function createGameFromSheet() {
+  var input = document.getElementById("newGameNameInput");
+  var name = input && input.value.trim() ? input.value.trim() : "New Game";
+
+  tripName = name;
+  scoringMode = mode || scoringMode || "classic";
+  counts = {};
+  log = [];
+
+  save();
+  render();
+  closeNewGameSheet();
+  toast("New game started");
+}
+
 function setMode(newMode) {
   mode = newMode;
+  scoringMode = newMode;
 
   // Show player picker only in Roadtrip Mode
 const picker = document.getElementById("playerPickerRow");
@@ -4508,19 +4764,13 @@ function render() {
   var modeDropdownText = document.getElementById("modeDropdownText");
 
 if(modeDropdownText) {
-  modeDropdownText.textContent =
-    mode === "classic" ? "Classic Mode" :
-    mode === "weighted" ? "Battle Mode" :
-    "Roadtrip Mode";
+  modeDropdownText.textContent = gameSummaryLabel();
 }
 
 var tripModeTop = document.getElementById("tripModeTop");
 
 if(tripModeTop) {
-  tripModeTop.textContent =
-    mode === "classic" ? "Classic Mode" :
-    mode === "weighted" ? "Battle Mode" :
-    "Roadtrip Mode";
+  tripModeTop.textContent = gameSummaryLabel();
 }
 
 var c = collectedCount();
@@ -4768,8 +5018,40 @@ if(copyInviteBtn) {
 
   
 var modeDropdownBtn = document.getElementById("modeDropdownBtn");
-var modeOverlay = document.getElementById("modeOverlay");
+var newGameBtn = document.getElementById("newGameBtn");
+var newGameOverlay = document.getElementById("newGameOverlay");
 var modeCloseBtn = document.getElementById("modeCloseBtn");
+var createGameBtn = document.getElementById("createGameBtn");
+
+if(modeDropdownBtn && newGameOverlay) {
+  modeDropdownBtn.onclick = openNewGameSheet;
+}
+
+if(newGameBtn && newGameOverlay) {
+  newGameBtn.onclick = openNewGameSheet;
+}
+
+if(modeCloseBtn) {
+  modeCloseBtn.onclick = closeNewGameSheet;
+}
+
+if(createGameBtn) {
+  createGameBtn.onclick = createGameFromSheet;
+}
+
+document.querySelectorAll("[data-game-type]").forEach(function(btn){
+  btn.onclick = function() {
+    gameType = btn.dataset.gameType;
+    syncNewGameSheet();
+  };
+});
+
+document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
+  btn.onclick = function() {
+    setMode(btn.dataset.modeChoice);
+    syncNewGameSheet();
+  };
+});
 
 var saveProfileBtn = document.getElementById("saveProfileBtn");
 if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
@@ -4791,25 +5073,7 @@ if(preview) preview.textContent = profile.avatar;
   };
 
 });
-  
-if(modeDropdownBtn && modeOverlay) {
-  modeDropdownBtn.onclick = function() {
-    modeOverlay.classList.remove("hidden");
-  };
-}
 
-if(modeCloseBtn && modeOverlay) {
-  modeCloseBtn.onclick = function() {
-    modeOverlay.classList.add("hidden");
-  };
-}
-
-document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
-  btn.onclick = function() {
-    setMode(btn.dataset.modeChoice);
-    if(modeOverlay) modeOverlay.classList.add("hidden");
-  };
-});
   
   document.querySelectorAll("[data-view]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
@@ -4865,11 +5129,11 @@ if(clearTripBtn) clearTripBtn.onclick = function(){
 };
 
 var changeModeBtn = document.getElementById("changeModeBtn");
-
-if (changeModeBtn) {
-  changeModeBtn.onclick = function () {
-    document.getElementById("tripOptionsMenu").classList.add("hidden");
-    setView("home");   // or whatever your Home screen is called
+if(changeModeBtn) {
+  changeModeBtn.onclick = function() {
+    var menu = document.getElementById("tripOptionsMenu");
+    if(menu) menu.classList.add("hidden");
+    openNewGameSheet();
   };
 }
   
