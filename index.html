@@ -2826,7 +2826,77 @@ or
   border:2px solid #d8e2ef !important;
   box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
 }
-  
+/* v47 final polish pass */
+
+/* Profile Safari selector fix */
+.profileSelect{
+  height:58px !important;
+  line-height:normal !important;
+  padding:0 28px !important;
+  border:2px solid #d9dee8 !important;
+  border-radius:24px !important;
+  background:#fff !important;
+  color:var(--navy) !important;
+  font-size:18px !important;
+  font-weight:850 !important;
+  appearance:none !important;
+  -webkit-appearance:none !important;
+}
+
+/* Save profile button polish */
+#saveProfileBtn:not(.hidden){
+  min-height:58px !important;
+  border-radius:999px !important;
+  font-size:19px !important;
+  font-weight:900 !important;
+}
+
+/* Team invite button width */
+#copyInviteBtn{
+  width:100% !important;
+  max-width:none !important;
+  min-height:56px !important;
+  border-radius:999px !important;
+}
+
+/* More space between player plate and name */
+.familyRow{
+  gap:18px !important;
+}
+
+.playerPlate{
+  margin-right:8px !important;
+}
+
+/* Add Player button final sizing */
+.familyAddBtn{
+  width:100% !important;
+  min-height:58px !important;
+  border-radius:999px !important;
+  font-size:18px !important;
+  font-weight:900 !important;
+}
+
+/* Map title cleanup */
+#mapScreen .sectionHeader h2,
+.mapCard .sectionHeader h2{
+  color:var(--navy) !important;
+  font-size:24px !important;
+  font-weight:950 !important;
+  line-height:1.05 !important;
+  text-align:left !important;
+}
+
+/* Map subtitle alignment */
+#mapScreen .sectionHeader span,
+.mapCard .sectionHeader span{
+  display:block !important;
+  color:var(--muted) !important;
+  font-size:14px !important;
+  font-weight:850 !important;
+  text-align:left !important;
+  line-height:1.25 !important;
+}
   
 </style>
 </head>
