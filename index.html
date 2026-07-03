@@ -2911,359 +2911,6 @@ or
   margin-top:6px !important;
   padding-top:0 !important;
 }
-
-/* v50 new game entry point */
-
-/* v50 New Game */
-
-.newGameBtn{
-  width:100%;
-  min-height:56px;
-  margin:8px 0 12px;
-  background:#fff;
-  color:var(--navy);
-  border:2px solid #d8e2ef;
-  border-radius:999px;
-  font-size:20px;
-  font-weight:950;
-  box-shadow:0 6px 18px rgba(0,0,0,.06);
-  transition:.15s;
-}
-
-.newGameBtn:active{
-  transform:scale(.985);
-}
-
-.newGameBtn:hover{
-  border-color:rgba(21,119,210,.28);
-}
-
-  #newGameBtn.newGameBtn,
-button#newGameBtn{
-  background:#fff !important;
-  background-image:none !important;
-  color:var(--navy) !important;
-  border:2px solid #d8e2ef !important;
-  box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
-}
-
-/* emergency override: mode sheet vertical layout */
-
-.modeSheet{
-  display:block !important;
-  max-height:80vh !important;
-  overflow-y:auto !important;
-}
-
-.modeOption{
-  display:block !important;
-  width:100% !important;
-  min-height:auto !important;
-  margin:8px 0 0 !important;
-  padding:14px 16px !important;
-  border-radius:16px !important;
-  text-align:left !important;
-  white-space:normal !important;
-}
-
-.modeOption strong,
-.modeOption span{
-  display:block !important;
-  white-space:normal !important;
-}
-/* emergency mode/new game cleanup */
-
-.modeDropdownBtn{
- 
-  background:#fff !important;
-  background-image:none !important;
-  border:2px solid #d8e2ef !important;
-  color:var(--navy) !important;
-  box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
-   margin:8px 0;
-}
-
-.modeSheet{
-  display:flex !important;
-  flex-direction:column !important;
-  gap:8px !important;
-  width:100% !important;
-  max-width:430px !important;
-  max-height:82vh !important;
-  overflow-y:auto !important;
-  overflow-x:hidden !important;
-}
-
-.modeOption{
-  display:block !important;
-  width:100% !important;
-  max-width:none !important;
-  flex:none !important;
-  margin:0 !important;
-  padding:14px 16px !important;
-  border-radius:16px !important;
-  text-align:left !important;
-}
-
-.modeOption strong,
-.modeOption span{
-  display:block !important;
-  white-space:normal !important;
-}
-
-#newGameBtn{
-  background:#fff !important;
-  background-image:none !important;
-  color:var(--navy) !important;
-  border:2px solid #d8e2ef !important;
-}
-
-/* v50 force New Game sheet vertical */
-
-.modeOverlay{
-  align-items:flex-end !important;
-  justify-content:center !important;
-  padding:18px !important;
-}
-
-.modeSheet{
-  display:block !important;
-  width:100% !important;
-  max-width:430px !important;
-  max-height:82vh !important;
-  overflow-y:auto !important;
-  overflow-x:hidden !important;
-
-  background:#fff !important;
-  border-radius:28px 28px 24px 24px !important;
-  padding:22px 18px 18px !important;
-}
-
-.modeSectionTitle{
-  margin:18px 0 8px !important;
-  color:var(--muted) !important;
-  font-size:12px !important;
-  font-weight:950 !important;
-  letter-spacing:.12em !important;
-  text-transform:uppercase !important;
-}
-
-.modeDivider{
-  height:1px !important;
-  background:var(--line) !important;
-  margin:18px 0 !important;
-}
-
-.modeOption{
-  display:block !important;
-  width:100% !important;
-  max-width:none !important;
-  min-width:0 !important;
-  height:auto !important;
-  min-height:64px !important;
-
-  margin:8px 0 0 !important;
-  padding:14px 16px !important;
-
-  border:1px solid var(--line) !important;
-  border-radius:18px !important;
-  background:#f8fbff !important;
-
-  text-align:left !important;
-  box-shadow:none !important;
-  white-space:normal !important;
-}
-
-.modeOption strong{
-  display:block !important;
-  color:var(--navy) !important;
-  font-size:17px !important;
-  font-weight:950 !important;
-  line-height:1.15 !important;
-  white-space:normal !important;
-}
-
-.modeOption span{
-  display:block !important;
-  color:var(--muted) !important;
-  font-size:13px !important;
-  font-weight:800 !important;
-  line-height:1.25 !important;
-  margin-top:4px !important;
-  white-space:normal !important;
-}
-
-.modeCloseBtn{
-  width:100% !important;
-  min-height:54px !important;
-  margin-top:16px !important;
-  border-radius:999px !important;
-}
-/* v50 New Game Sheet */
-
-.modeOverlay{
-  position:fixed !important;
-  inset:0 !important;
-  z-index:130 !important;
-  background:rgba(7,55,99,.55) !important;
-  display:flex !important;
-  align-items:flex-end !important;
-  justify-content:center !important;
-  padding:18px !important;
-}
-
-.modeOverlay.hidden{
-  display:none !important;
-}
-
-.newGameSheet{
-  width:100%;
-  max-width:430px;
-  max-height:84vh;
-  overflow-y:auto;
-  background:#fff;
-  border-radius:28px;
-  padding:22px 18px 18px;
-  box-shadow:0 18px 60px rgba(0,0,0,.28);
-}
-
-.newGameTitle{
-  text-align:center;
-  color:var(--navy);
-  font-size:28px;
-  font-weight:950;
-  margin-bottom:18px;
-}
-
-.newGameSectionLabel{
-  color:var(--muted);
-  font-size:12px;
-  font-weight:950;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-  margin:16px 0 8px;
-}
-
-.newGameOption{
-  width:100%;
-  display:block;
-  text-align:left;
-  background:#f8fbff;
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:14px 16px;
-  margin-top:8px;
-}
-
-.newGameOption.active{
-  background:#fff !important;
-  border:3px solid #26a957 !important;
-  box-shadow:0 0 0 3px rgba(38,169,87,.10);
-}
-
-.newGameOption.active strong::after{
-  color:var(--green);
-}
-
-.newGameOption span{
-  display:block;
-  color:var(--muted);
-  font-size:14px;
-  font-weight:800;
-  margin-top:4px;
-}
-
-.newGameOption.active{
-  background:#eaffef;
-  border-color:rgba(38,169,87,.45);
-}
-
-.newGameOption.active strong:after{
-  content:" ✓";
-  color:var(--green);
-}
-
-.newGameDivider{
-  height:1px;
-  background:var(--line);
-  margin:18px 0;
-}
-
-.newGameInput{
-  width:100%;
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:16px;
-  font-size:18px;
-  font-weight:850;
-  color:var(--navy);
-  margin-top:8px;
-}
-
-.createGameBtn{
-  width:100%;
-  min-height:58px;
-
-  background:#fff;
-  color:var(--navy);
-
-  border:2px solid #d8e2ef;
-  border-radius:999px;
-
-  font-size:20px;
-  font-weight:950;
-
-  margin-top:18px;
-
-  box-shadow:0 6px 18px rgba(0,0,0,.06);
-}
-
-.createGameBtn:active{
-  transform:scale(.985);
-}
-
-  
-  
-  .newGameOverlay{
-  position:fixed;
-  inset:0;
-  background:rgba(7,55,99,.55);
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-  padding:18px;
-  z-index:9999;
-}
-
-.newGameOverlay.hidden{
-  display:none;
-}
-
-
-/* v50 selected New Game cards */
-
-.newGameOption.active{
-  background:#edf5ff !important;
-  border:2px solid rgba(21,119,210,.35) !important;
-}
-
-.newGameOption.active strong::after{
-  color:var(--blue) !important;
-}
-
-.newGameOption.active span{
-  color:var(--navy) !important;
-}
-
-.newGameSheet .newGameOption.active{
-  background:#edf5ff !important;
-  border:2px solid #26a957 !important;
-}
-
-.newGameSheet .newGameOption.active strong::after{
-  color:#26a957 !important;
-}
-
   
 </style>
 </head>
@@ -3302,65 +2949,52 @@ button#newGameBtn{
     <button class="primary" id="onboardingDone" type="button">Got It</button>
   </div>
 </div>
+<div class="modeOverlay hidden" id="modeOverlay">
+ 
+<div class="modeSheetTitle">New Game</div>
 
-<div class="newGameOverlay hidden" id="newGameOverlay">
+<div class="modeSectionTitle">Game Type</div>
+
+<button class="modeOption" data-game-type="solo" type="button">
+  <strong>🚗 Solo</strong>
+  <span>Play by yourself</span>
+</button>
+
+<button class="modeOption" data-game-type="battle" type="button">
+  <strong>🏆 Battle</strong>
+  <span>Compete against friends</span>
+</button>
+
+<button class="modeOption" data-game-type="roadtrip" type="button">
+  <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
+  <span>Combine scores as a team</span>
+</button>
+
+<div class="modeDivider"></div>
+
+<div class="modeSectionTitle">Scoring</div>
+
+<button class="modeOption" data-mode-choice="classic" type="button">
+  <strong>Classic</strong>
+  <span>Each state counts once</span>
+</button>
+
+<button class="modeOption" data-mode-choice="weighted" type="button">
+  <strong>Weighted</strong>
+  <span>Rare states are worth more points</span>
+</button>
+
+<button class="modeOption" data-mode-choice="unlimited" type="button">
+  <strong>Unlimited</strong>
+  <span>Every plate scores</span>
+</button>
+
+<button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
+  Close
+</button>
+
   
-  <div class="newGameSheet">
-
-    <div class="newGameTitle">New Game</div>
-
-    <div class="newGameSectionLabel">Game Type</div>
-
-    <button class="newGameOption active" data-game-type="solo" type="button">
-      <strong>🚗 Solo</strong>
-      <span>Play by yourself</span>
-    </button>
-
-    <button class="newGameOption" data-game-type="battle" type="button">
-      <strong>🏆 Battle</strong>
-      <span>Compete against friends</span>
-    </button>
-
-    <button class="newGameOption" data-game-type="roadtrip" type="button">
-      <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
-      <span>Combine scores as a team</span>
-    </button>
-
-    <div class="newGameDivider"></div>
-
-    <div class="newGameSectionLabel">Scoring</div>
-
-    <button class="newGameOption active" data-mode-choice="classic" type="button">
-      <strong>Classic</strong>
-      <span>Each state counts once</span>
-    </button>
-
-    <button class="newGameOption" data-mode-choice="weighted" type="button">
-      <strong>Weighted</strong>
-      <span>Rare states are worth more</span>
-    </button>
-
-    <button class="newGameOption" data-mode-choice="unlimited" type="button">
-      <strong>Unlimited</strong>
-      <span>Every plate scores</span>
-    </button>
-
-    <div class="newGameDivider"></div>
-
-    <div class="newGameSectionLabel">Game Name</div>
-    <input class="newGameInput" id="newGameNameInput" type="text" placeholder="Summer Roadtrip">
-
-    <button class="primary createGameBtn" id="createGameBtn" type="button">
-      Start New Game
-    </button>
-
-    <button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
-      Cancel
-    </button>
-
-  </div>
 </div>
-  
 <div class="celebrationOverlay" id="celebrationOverlay" onclick="this.classList.remove('show')">
   <div class="celebrationBox">
     <h2 id="celebrationTitle">Nice Find</h2>
@@ -3407,10 +3041,6 @@ button#newGameBtn{
   <span>▼</span>
 </button>
 
-<button class="primary newGameBtn" id="newGameBtn" type="button">
-  ➕ New Game
-</button>
-   
     <div class="card">
       <div class="panelTitle tapStateTitle">
   <span>Tap a State</span>
@@ -5205,8 +4835,6 @@ document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(fu
 
 function attachHandlers() {
 
-
-  
   var copyInviteBtn = document.getElementById("copyInviteBtn");
   if(copyInviteBtn) {
     copyInviteBtn.onclick = function() {
@@ -5255,78 +4883,28 @@ function attachHandlers() {
   });
 
   var modeDropdownBtn = document.getElementById("modeDropdownBtn");
-var newGameOverlay = document.getElementById("newGameOverlay");
-  var newGameOverlay = document.getElementById("newGameOverlay");
+  var modeOverlay = document.getElementById("modeOverlay");
   var modeCloseBtn = document.getElementById("modeCloseBtn");
 
-var newGameBtn = document.getElementById("newGameBtn");
+  if(modeDropdownBtn && modeOverlay) {
+    modeDropdownBtn.onclick = function() {
+      modeOverlay.classList.remove("hidden");
+    };
+  }
 
-console.log("newGameBtn:", newGameBtn);
-console.log("modeOverlay:", modeOverlay);
-
-if(newGameBtn && newGameOverlay) {
-  newGameBtn.onclick = function() {
-    newGameOverlay.classList.remove("hidden");
-  };
-}
-  
-var newGameBtn = document.getElementById("newGameBtn");
-
-if(newGameBtn && modeOverlay) {
-  newGameBtn.onclick = function() {
-    modeOverlay.classList.remove("hidden");
-  };
-}
-  
-if(modeCloseBtn) {
-  modeCloseBtn.onclick = function() {
-
-    if(modeOverlay) {
+  if(modeCloseBtn && modeOverlay) {
+    modeCloseBtn.onclick = function() {
       modeOverlay.classList.add("hidden");
-    }
+    };
+  }
 
-    var newGameOverlay = document.getElementById("newGameOverlay");
-    if(newGameOverlay) {
-      newGameOverlay.classList.add("hidden");
-    }
-  };
-}
+  document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
+    btn.onclick = function() {
+      setMode(btn.dataset.modeChoice);
+      if(modeOverlay) modeOverlay.classList.add("hidden");
+    };
+  });
 
-document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
-  btn.onclick = function() {
-
-    document.querySelectorAll("[data-mode-choice]").forEach(function(b){
-      b.classList.remove("active");
-    });
-
-    btn.classList.add("active");
-
-    setMode(btn.dataset.modeChoice);
-  };
-});
-
-  
-
-document.querySelectorAll("[data-game-type]").forEach(function(btn){
-  btn.onclick = function() {
-    gameType = btn.dataset.gameType;
-    localStorage.platesGameType = gameType;
-
-    document.querySelectorAll("[data-game-type]").forEach(function(b){
-      b.classList.remove("active");
-    });
-
-    btn.classList.add("active");
-
-    toast(
-      gameType.charAt(0).toUpperCase() +
-      gameType.slice(1) +
-      " selected"
-    );
-  };
-});
-
-  
   document.querySelectorAll("[data-view]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
   });
