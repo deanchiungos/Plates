@@ -5290,8 +5290,13 @@ if(modeCloseBtn && newGameOverlay) {
 document.querySelectorAll("[data-game-type]").forEach(function(btn){
   btn.onclick = function() {
     gameType = btn.dataset.gameType;
-
     localStorage.platesGameType = gameType;
+
+    document.querySelectorAll("[data-game-type]").forEach(function(b){
+      b.classList.remove("active");
+    });
+
+    btn.classList.add("active");
 
     toast(
       gameType.charAt(0).toUpperCase() +
@@ -5300,6 +5305,7 @@ document.querySelectorAll("[data-game-type]").forEach(function(btn){
     );
   };
 });
+
   
   document.querySelectorAll("[data-view]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
