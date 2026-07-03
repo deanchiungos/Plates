@@ -4135,7 +4135,10 @@ function collectedCount() {
   return Object.keys(unique).length;
 }
   
-
+function totalSightings() {
+  return Array.isArray(log) ? log.length : 0;
+}
+  
 function totalScore() {
   var total = 0;
   document.querySelectorAll(".state").forEach(function(btn){
