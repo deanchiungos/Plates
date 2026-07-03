@@ -5307,6 +5307,17 @@ document.querySelectorAll("[data-game-type]").forEach(function(btn){
 });
 
   
+    btn.classList.add("active");
+
+    toast(
+      gameType.charAt(0).toUpperCase() +
+      gameType.slice(1) +
+      " selected"
+    );
+  };
+});
+
+  
   document.querySelectorAll("[data-view]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
   });
