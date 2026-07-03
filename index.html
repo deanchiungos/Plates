@@ -4135,16 +4135,6 @@ function collectedCount() {
   return Object.keys(unique).length;
 }
   
-  if (typeof log !== "undefined" && Array.isArray(log)) {
-    log.forEach(function(item){
-      if (item.code) {
-        unique[item.code] = true;
-      }
-    });
-  }
-
-  return Object.keys(unique).length;
-}
 
 function totalScore() {
   var total = 0;
