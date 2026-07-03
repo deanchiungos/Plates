@@ -4979,7 +4979,7 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
 
-    var tripOptionsMenu = document.getElementById("tripOptionsMenu");
+   var tripOptionsMenu = document.getElementById("tripOptionsMenu");
 
 var tripOptionsBtn = document.getElementById("tripOptionsBtn");
 if (tripOptionsBtn && tripOptionsMenu) {
@@ -4989,49 +4989,51 @@ if (tripOptionsBtn && tripOptionsMenu) {
 }
 
 var endTripBtn = document.getElementById("endTripBtn");
-if(endTripBtn) {
-  endTripBtn.onclick = function(){
-    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+if (endTripBtn) {
+  endTripBtn.onclick = function () {
+    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
     endCurrentTrip();
   };
 }
 
 var renameTripBtn = document.getElementById("renameTripBtn");
-if(renameTripBtn) {
-  renameTripBtn.onclick = function(){
-    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+if (renameTripBtn) {
+  renameTripBtn.onclick = function () {
+    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
     renameTrip();
   };
 }
 
 var changeModeBtn = document.getElementById("changeModeBtn");
-if(changeModeBtn) {
-  changeModeBtn.onclick = function(){
-    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
-    document.getElementById("modeOverlay").classList.remove("hidden");
+if (changeModeBtn) {
+  changeModeBtn.onclick = function () {
+    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+
+    var modeOverlay = document.getElementById("modeOverlay");
+    if (modeOverlay) modeOverlay.classList.remove("hidden");
   };
 }
 
 var newTripBtn = document.getElementById("newTripBtn");
-if(newTripBtn) {
-  newTripBtn.onclick = function(){
-    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+if (newTripBtn) {
+  newTripBtn.onclick = function () {
+    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
     newTrip();
   };
 }
 
 var shareTripBtn = document.getElementById("shareTripBtn");
-if(shareTripBtn) {
-  shareTripBtn.onclick = function(){
-    if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+if (shareTripBtn) {
+  shareTripBtn.onclick = function () {
+    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
     shareSummary();
   };
 }
 
 var clearTripBtn = document.getElementById("clearTripBtn");
-if(clearTripBtn) {
-  clearTripBtn.onclick = function(){
-    if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
+if (clearTripBtn) {
+  clearTripBtn.onclick = function () {
+    if (!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
 
     counts = {};
     log = [];
@@ -5041,38 +5043,37 @@ if(clearTripBtn) {
     render();
 
     var menu = document.getElementById("tripOptionsMenu");
-    if(menu) menu.classList.add("hidden");
+    if (menu) menu.classList.add("hidden");
   };
 }
 
 var saveProfileBtn = document.getElementById("saveProfileBtn");
-if(saveProfileBtn) {
-  saveProfileBtn.onclick = function() {
+if (saveProfileBtn) {
+  saveProfileBtn.onclick = function () {
     profile.name = document.getElementById("profileName").value;
     profile.email = document.getElementById("profileEmail").value;
 
-    localStorage.setItem(
-      "platesProfile",
-      JSON.stringify(profile)
-    );
+    localStorage.setItem("platesProfile", JSON.stringify(profile));
 
     var profileSavedMsg = document.getElementById("profileSavedMsg");
-    profileSavedMsg.classList.remove("hidden");
+    if (profileSavedMsg) {
+      profileSavedMsg.classList.remove("hidden");
 
-    setTimeout(function() {
-      profileSavedMsg.classList.add("hidden");
-    }, 1800);
+      setTimeout(function () {
+        profileSavedMsg.classList.add("hidden");
+      }, 1800);
+    }
 
     save();
     render();
   };
 }
 
-document.querySelectorAll(".avatarBtn").forEach(function(btn) {
-  btn.onclick = function() {
+document.querySelectorAll(".avatarBtn").forEach(function (btn) {
+  btn.onclick = function () {
     profile.avatar = btn.dataset.avatar;
 
-    document.querySelectorAll(".avatarBtn").forEach(function(b){
+    document.querySelectorAll(".avatarBtn").forEach(function (b) {
       b.classList.remove("selected");
     });
 
@@ -5081,32 +5082,13 @@ document.querySelectorAll(".avatarBtn").forEach(function(btn) {
 });
 
 var copyShareBtn = document.getElementById("copyShareBtn");
-if(copyShareBtn) copyShareBtn.onclick = copyShareText;
+if (copyShareBtn) copyShareBtn.onclick = copyShareText;
 
 var celebrationClose = document.getElementById("celebrationClose");
-if(celebrationClose) {
-  celebrationClose.addEventListener("click", function(e){
+if (celebrationClose) {
+  celebrationClose.addEventListener("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
     document.getElementById("celebrationOverlay").classList.remove("show");
   });
 }
-}
-
-attachHandlers();
-loadProfile();
-render();
-showOnboardingIfNeeded();
-</script>
-
-<div class="completionOverlay hidden" id="completionOverlay">
-  <div class="completionCard">
-    <div class="completionEmoji">🎉</div>
-    <div class="completionTitle">Roadtrip Complete!</div>
-    <div class="completionSub">You've collected all 50 states!</div>
-    <button class="primary" id="closeCompletionBtn" type="button">Awesome!</button>
-  </div>
-</div>
-
-</body>
-</html>
