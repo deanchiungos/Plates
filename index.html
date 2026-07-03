@@ -2485,31 +2485,49 @@ body {
   padding:16px 18px;
 }
 
-.modeMiniRow {
-  display:grid;
-  grid-template-columns:120px 1fr;
+/* v50 Home explainer */
+
+.infoSectionTitle{
+  margin:14px 0 8px;
+  color:#6b7280;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.infoRow{
+  display:flex;
+  justify-content:space-between;
   align-items:center;
-  gap:12px;
-  padding:18px 0;
-  border-top:1px solid var(--line);
+  gap:18px;
+  padding:12px 0;
+  border-top:1px solid rgba(6,47,95,.10);
 }
 
-.modeMiniRow:first-of-type {
-  border-top:0;
+.infoRow:first-of-type{
+  border-top:none;
 }
 
-.modeMiniRow strong {
+.infoRow strong{
   color:var(--navy);
-  font-size:17px;
+  font-size:18px;
   font-weight:950;
-  text-align:left;
 }
 
-.modeMiniRow span {
+.infoRow span{
   color:var(--muted);
   font-size:15px;
   font-weight:800;
-  text-align:left;
+  text-align:right;
+  line-height:1.25;
+  max-width:56%;
+}
+
+.infoDivider{
+  height:1px;
+  background:rgba(6,47,95,.10);
+  margin:10px 0;
 }
 
 
