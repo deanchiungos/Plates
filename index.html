@@ -4148,6 +4148,10 @@ function totalScore() {
   return total;
 }
 
+function totalSightings() {
+  return Array.isArray(log) ? log.length : 0;
+}
+  
 function updateBestForCurrentMode() {
   var c = collectedCount();
   var points = totalScore();
