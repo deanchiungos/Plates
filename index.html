@@ -4811,21 +4811,19 @@ document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(fu
 
 function attachHandlers() {
 
+  var copyInviteBtn = document.getElementById("copyInviteBtn");
+  if(copyInviteBtn) {
+    copyInviteBtn.onclick = function() {
+      var code = getTripInviteCode();
 
-var copyInviteBtn = document.getElementById("copyInviteBtn");
+      navigator.clipboard.writeText(code).then(function() {
+        toast("Invite code copied");
+      }).catch(function() {
+        prompt("Copy this invite code:", code);
+      });
+    };
+  }
 
-if(copyInviteBtn) {
-  copyInviteBtn.onclick = function() {
-    var code = getTripInviteCode();
-
-    navigator.clipboard.writeText(code).then(function() {
-      toast("Invite code copied");
-    }).catch(function() {
-      prompt("Copy this invite code:", code);
-    });
-  };
-}
-  
   var addPlayerBtn = document.getElementById("addPlayerBtn");
   if(addPlayerBtn) addPlayerBtn.onclick = addPlayer;
 
@@ -4836,89 +4834,59 @@ if(copyInviteBtn) {
     if(e.target.dataset && e.target.dataset.playerDelete) {
       deletePlayer(e.target.dataset.playerDelete);
     }
-  });
-
-
-  document.querySelectorAll(".state").forEach(function(btn){
-    btn.onclick = function(){ tapState(btn); };
-  });
-
-
-  
-  document.querySelectorAll("[data-map-code]").forEach(function(cell){
-    cell.onclick = function(){
-      var code = cell.dataset.mapCode;
-      selectMapState(code);
-    };
-  });
-
-  
-var modeDropdownBtn = document.getElementById("modeDropdownBtn");
-var modeOverlay = document.getElementById("modeOverlay");
-var modeCloseBtn = document.getElementById("modeCloseBtn");
-
-var saveProfileBtn = document.getElementById("saveProfileBtn");
-if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
-  document.querySelectorAll(".avatarBtn").forEach(function(btn){btn.onclick = function() {
-
-    profile.avatar = btn.dataset.avatar;
-
-    localStorage.setItem("platesProfile", JSON.stringify(profile));
-    var preview = document.getElementById("avatarPreview");
-if(preview) preview.textContent = profile.avatar;
-
-    document.querySelectorAll(".avatarBtn").forEach(function(b){
-      b.classList.remove("selected");
-    });
-
-    btn.classList.add("selected");
-
-    toast("Avatar selected " + profile.avatar);
-  };
-
-});
-  
-if(modeDropdownBtn && modeOverlay) {
-  modeDropdownBtn.onclick = function() {
-    modeOverlay.classList.remove("hidden");
-  };
-}
-
-if(modeCloseBtn && modeOverlay) {
-  modeCloseBtn.onclick = function() {
-    modeOverlay.classList.add("hidden");
-  };
-}
-
-document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
-  btn.onclick = function() {
-    setMode(btn.dataset.modeChoice);
-    if(modeOverlay) modeOverlay.classList.add("hidden");
-  };
-});
-  
-  document.querySelectorAll("[data-view]").forEach(function(btn){
-    btn.onclick = function(){ setView(btn.dataset.view); };
-  });
-
-var tripPillBtn = document.getElementById("tripPillBtn");
-if(tripPillBtn) tripPillBtn.onclick = function(){ setView("trips"); };
-
-  document.body.addEventListener("click", function(e){
     if(e.target.classList.contains("memoryBtnNote")) {
       addMemoryNote(e.target.dataset.stateCode);
     }
     if(e.target.classList.contains("memoryBtnPhoto")) {
       addMemoryPhoto(e.target.dataset.stateCode);
     }
- if(e.target.classList.contains("deleteMemoryBtn")) {
-  deleteMemory(e.target.dataset.memoryId);
-}
-
-if(e.target.classList.contains("shareTripBtnSmall")) {
-  shareSavedTrip(e.target.dataset.tripIndex);
-}
+    if(e.target.classList.contains("deleteMemoryBtn")) {
+      deleteMemory(e.target.dataset.memoryId);
+    }
+    if(e.target.classList.contains("shareTripBtnSmall")) {
+      shareSavedTrip(e.target.dataset.tripIndex);
+    }
   });
+
+  document.querySelectorAll(".state").forEach(function(btn){
+    btn.onclick = function(){ tapState(btn); };
+  });
+
+  document.querySelectorAll("[data-map-code]").forEach(function(cell){
+    cell.onclick = function(){
+      selectMapState(cell.dataset.mapCode);
+    };
+  });
+
+  var modeDropdownBtn = document.getElementById("modeDropdownBtn");
+  var modeOverlay = document.getElementById("modeOverlay");
+  var modeCloseBtn = document.getElementById("modeCloseBtn");
+
+  if(modeDropdownBtn && modeOverlay) {
+    modeDropdownBtn.onclick = function() {
+      modeOverlay.classList.remove("hidden");
+    };
+  }
+
+  if(modeCloseBtn && modeOverlay) {
+    modeCloseBtn.onclick = function() {
+      modeOverlay.classList.add("hidden");
+    };
+  }
+
+  document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
+    btn.onclick = function() {
+      setMode(btn.dataset.modeChoice);
+      if(modeOverlay) modeOverlay.classList.add("hidden");
+    };
+  });
+
+  document.querySelectorAll("[data-view]").forEach(function(btn){
+    btn.onclick = function(){ setView(btn.dataset.view); };
+  });
+
+  var tripPillBtn = document.getElementById("tripPillBtn");
+  if(tripPillBtn) tripPillBtn.onclick = function(){ setView("trips"); };
 
   var photoInput = document.getElementById("memoryPhotoInput");
   if(photoInput) {
@@ -4926,103 +4894,134 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
       if(photoInput.files && photoInput.files[0]) saveSelectedPhoto(photoInput.files[0]);
     };
   }
+
   var tripsStatBtn = document.getElementById("tripsStatBtn");
   var badgesStatBtn = document.getElementById("badgesStatBtn");
   var bestStatBtn = document.getElementById("bestStatBtn");
+
   if(tripsStatBtn) tripsStatBtn.onclick = function(){ setView("trips"); };
   if(badgesStatBtn) badgesStatBtn.onclick = function(){ setView("badges"); };
   if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
+
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
-var endTripBtn = document.getElementById("endTripBtn");
-if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
 
-  var clearTripBtn = document.getElementById("clearTripBtn");
-
-if(clearTripBtn) clearTripBtn.onclick = function(){
-  if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
-
-  selected = [];
-  score = 0;
-  save();
-  render();
-
-  document.getElementById("tripOptionsMenu").classList.add("hidden");
-};
-
-var changeModeBtn = document.getElementById("changeModeBtn");
-
-  if (changeModeBtn) {
-  changeModeBtn.onclick = function () {
-    var menu = document.getElementById("tripOptionsMenu");
-    if(menu) menu.classList.add("hidden");
-
-    var modeOverlay = document.getElementById("modeOverlay");
-    if(modeOverlay) modeOverlay.classList.remove("hidden");
-  };
-}
-  
-var renameTripBtn = document.getElementById("renameTripBtn");
-if(renameTripBtn) renameTripBtn.onclick = renameTrip;
+  var tripOptionsMenu = document.getElementById("tripOptionsMenu");
 
   var tripOptionsBtn = document.getElementById("tripOptionsBtn");
-if (tripOptionsBtn) {
-  tripOptionsBtn.onclick = function () {
-    document.getElementById("tripOptionsMenu").classList.toggle("hidden");
-  };
-}
+  if(tripOptionsBtn && tripOptionsMenu) {
+    tripOptionsBtn.onclick = function() {
+      tripOptionsMenu.classList.toggle("hidden");
+    };
+  }
+
+  var endTripBtn = document.getElementById("endTripBtn");
+  if(endTripBtn) {
+    endTripBtn.onclick = function() {
+      if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+      endCurrentTrip();
+    };
+  }
+
+  var renameTripBtn = document.getElementById("renameTripBtn");
+  if(renameTripBtn) {
+    renameTripBtn.onclick = function() {
+      if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+      renameTrip();
+    };
+  }
+
+  var changeModeBtn = document.getElementById("changeModeBtn");
+  if(changeModeBtn) {
+    changeModeBtn.onclick = function() {
+      if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+      if(modeOverlay) modeOverlay.classList.remove("hidden");
+    };
+  }
 
   var newTripBtn = document.getElementById("newTripBtn");
-if(newTripBtn) newTripBtn.onclick = newTrip;
+  if(newTripBtn) {
+    newTripBtn.onclick = function() {
+      if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+      newTrip();
+    };
+  }
 
-var shareTripBtn = document.getElementById("shareTripBtn");
-if(shareTripBtn) shareTripBtn.onclick = shareSummary;
+  var shareTripBtn = document.getElementById("shareTripBtn");
+  if(shareTripBtn) {
+    shareTripBtn.onclick = function() {
+      if(tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+      shareSummary();
+    };
+  }
 
+  var clearTripBtn = document.getElementById("clearTripBtn");
+  if(clearTripBtn) {
+    clearTripBtn.onclick = function() {
+      if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
+
+      counts = {};
+      log = [];
+      score = 0;
+
+      save();
+      render();
+
+      var menu = document.getElementById("tripOptionsMenu");
+      if(menu) menu.classList.add("hidden");
+    };
+  }
 
   var saveProfileBtn = document.getElementById("saveProfileBtn");
-if(saveProfileBtn) saveProfileBtn.onclick = function() {
-  document.querySelectorAll(".avatarBtn").forEach(function(btn) {
-  btn.onclick = function() {
+  if(saveProfileBtn) {
+    saveProfileBtn.onclick = function() {
+      profile.name = document.getElementById("profileName").value;
+      profile.email = document.getElementById("profileEmail").value;
 
-    profile.avatar = btn.dataset.avatar;
+      localStorage.setItem("platesProfile", JSON.stringify(profile));
 
-    document.querySelectorAll(".avatarBtn").forEach(function(b){
-      b.classList.remove("selected");
-    });
+      var profileSavedMsg = document.getElementById("profileSavedMsg");
+      if(profileSavedMsg) {
+        profileSavedMsg.classList.remove("hidden");
 
-    btn.classList.add("selected");
-  };
-});
-  profile.name = document.getElementById("profileName").value;
-  profile.email = document.getElementById("profileEmail").value;
+        setTimeout(function() {
+          profileSavedMsg.classList.add("hidden");
+        }, 1800);
+      }
 
-  localStorage.setItem(
-    "platesProfile",
-    JSON.stringify(profile)
-  );
+      save();
+      render();
+    };
+  }
 
-var profileSavedMsg = document.getElementById("profileSavedMsg");
-profileSavedMsg.classList.remove("hidden");
+  document.querySelectorAll(".avatarBtn").forEach(function(btn){
+    btn.onclick = function() {
+      profile.avatar = btn.dataset.avatar;
+      localStorage.setItem("platesProfile", JSON.stringify(profile));
 
-setTimeout(function() {
-  profileSavedMsg.classList.add("hidden");
-}, 1800);
-};
- var shareTripBtn = document.getElementById("shareTripBtn");
-if(shareTripBtn) shareTripBtn.onclick = shareSummary;
+      var preview = document.getElementById("avatarPreview");
+      if(preview) preview.textContent = profile.avatar;
 
-var copyShareBtn = document.getElementById("copyShareBtn");
-if(copyShareBtn) copyShareBtn.onclick = copyShareText;
+      document.querySelectorAll(".avatarBtn").forEach(function(b){
+        b.classList.remove("selected");
+      });
 
-
-var celebrationClose = document.getElementById("celebrationClose");
-if(celebrationClose) {
-  celebrationClose.addEventListener("click", function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    document.getElementById("celebrationOverlay").classList.remove("show");
+      btn.classList.add("selected");
+      toast("Avatar selected " + profile.avatar);
+    };
   });
-}
+
+  var copyShareBtn = document.getElementById("copyShareBtn");
+  if(copyShareBtn) copyShareBtn.onclick = copyShareText;
+
+  var celebrationClose = document.getElementById("celebrationClose");
+  if(celebrationClose) {
+    celebrationClose.addEventListener("click", function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      document.getElementById("celebrationOverlay").classList.remove("show");
+    });
+  }
 }
 
 attachHandlers();
@@ -5042,3 +5041,5 @@ showOnboardingIfNeeded();
 
 </body>
 </html>
+
+  
