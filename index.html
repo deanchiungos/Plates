@@ -5003,6 +5003,18 @@ function attachHandlers() {
 
 var newGameBtn = document.getElementById("newGameBtn");
 
+console.log("newGameBtn:", newGameBtn);
+console.log("modeOverlay:", modeOverlay);
+
+if(newGameBtn && modeOverlay) {
+  newGameBtn.onclick = function() {
+    console.log("New Game clicked");
+    modeOverlay.classList.remove("hidden");
+  };
+}
+  
+var newGameBtn = document.getElementById("newGameBtn");
+
 if(newGameBtn && modeOverlay) {
   newGameBtn.onclick = function() {
     modeOverlay.classList.remove("hidden");
