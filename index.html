@@ -5032,12 +5032,17 @@ document.getElementById("tripStatesLine").innerHTML =
 document.getElementById("mapCount").innerHTML =
   '<span class="found">' + c + '/</span>50 Found';
 
-var mapModeSummary = document.getElementById("mapModeSummary");
+  var mapModeSummary = document.getElementById("mapModeSummary");
 if (mapModeSummary) {
   mapModeSummary.textContent =
-    mode === "classic" ? "Classic Mode" :
-    mode === "weighted" ? "Battle Mode" :
-    "Roadtrip Mode";
+    gameType.charAt(0).toUpperCase() +
+    gameType.slice(1) +
+    " • " +
+    (mode === "classic"
+      ? "Classic"
+      : mode === "weighted"
+        ? "Weighted"
+        : "Unlimited");
 }
   
 document.getElementById("badgeMini").textContent = unlockedBadges;
