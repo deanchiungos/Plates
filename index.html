@@ -3216,7 +3216,20 @@ button#newGameBtn{
   margin-top:10px;
 }
   
-  
+  .newGameOverlay{
+  position:fixed;
+  inset:0;
+  background:rgba(7,55,99,.55);
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:18px;
+  z-index:9999;
+}
+
+.newGameOverlay.hidden{
+  display:none;
+}
   
 </style>
 </head>
@@ -3256,7 +3269,8 @@ button#newGameBtn{
   </div>
 </div>
 
-<div class="modeOverlay hidden" id="modeOverlay">
+<div class="newGameOverlay hidden" id="newGameOverlay">
+  
   <div class="newGameSheet">
 
     <div class="newGameTitle">New Game</div>
