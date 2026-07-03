@@ -4588,6 +4588,7 @@ if(list) {
     return;
   }
 
+
   list.innerHTML = players.map(function(p){
     return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
       '<div class="playerPlate">' +
@@ -4604,8 +4605,10 @@ if(list) {
     '</div>';
   }).join("");
 }
-  
+}
+
 function render() {
+  
   var inviteCodeEl = document.getElementById("tripInviteCode");
   if(inviteCodeEl) {
     inviteCodeEl.textContent = getTripInviteCode();
