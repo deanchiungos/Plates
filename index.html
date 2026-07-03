@@ -2826,124 +2826,8 @@ or
   border:2px solid #d8e2ef !important;
   box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
 }
-/* v47 final polish pass */
-
-/* Profile Safari selector fix */
-.profileSelect{
-  height:58px !important;
-  line-height:normal !important;
-  padding:0 28px !important;
-  border:2px solid #d9dee8 !important;
-  border-radius:24px !important;
-  background:#fff !important;
-  color:var(--navy) !important;
-  font-size:18px !important;
-  font-weight:850 !important;
-  appearance:none !important;
-  -webkit-appearance:none !important;
-}
-
-/* Save profile button polish */
-#saveProfileBtn:not(.hidden){
-  min-height:58px !important;
-  border-radius:999px !important;
-  font-size:19px !important;
-  font-weight:900 !important;
-}
-
-/* Team invite button width */
-#copyInviteBtn{
-  width:100% !important;
-  max-width:none !important;
-  min-height:56px !important;
-  border-radius:999px !important;
-}
-
-/* More space between player plate and name */
-.familyRow{
-  gap:18px !important;
-}
-
-.playerPlate{
-  margin-right:8px !important;
-}
-
-/* Add Player button final sizing */
-.familyAddBtn{
-  width:100% !important;
-  min-height:58px !important;
-  border-radius:999px !important;
-  font-size:18px !important;
-  font-weight:900 !important;
-}
-
-/* Map title cleanup */
-#mapScreen .sectionHeader h2,
-.mapCard .sectionHeader h2{
-  color:var(--navy) !important;
-  font-size:24px !important;
-  font-weight:950 !important;
-  line-height:1.05 !important;
-  text-align:left !important;
-}
-
-/* Map subtitle alignment */
-#mapScreen .sectionHeader span,
-.mapCard .sectionHeader span{
-  display:block !important;
-  color:var(--muted) !important;
-  font-size:14px !important;
-  font-weight:850 !important;
-  text-align:left !important;
-  line-height:1.25 !important;
-}
-  .tripOptionsMenu{
-  margin-top:14px !important;
-  padding:10px !important;
-  border:2px solid #d8e2ef !important;
-  border-radius:24px !important;
-  background:#fff !important;
-  box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
-  overflow:hidden !important;
-}
-
-.tripOptionsMenu button.tripMenuItem{
-  display:flex !important;
-  align-items:center !important;
-  width:100% !important;
-  min-height:56px !important;
-  height:auto !important;
-  padding:0 18px !important;
-  border-radius:16px !important;
-  background:#fff !important;
-  color:var(--blue) !important;
-  font-size:19px !important;
-  font-weight:900 !important;
-  text-align:left !important;
-  line-height:1.1 !important;
-}
-
-.tripOptionsMenu button.tripMenuItem + button.tripMenuItem{
-  margin-top:8px !important;
-}
-
-.tripOptionsMenu button.tripMenuItem:active{
-  background:#eaf3ff !important;
-  transform:scale(.99);
-}
-
-.tripOptionsMenu button.dangerItem{
-  color:#b43b3b !important;
-  margin-top:12px !important;
-  border-top:1px solid rgba(21,101,192,.12) !important;
-  padding-top:16px !important;
-}
-
-.tripOptionsBtn{
-  min-height:58px !important;
-  border:2px solid #d8e2ef !important;
-  box-shadow:0 2px 8px rgba(0,0,0,.05) !important;
-}
+  
+  
 </style>
 </head>
 
@@ -3969,12 +3853,14 @@ function rareCollectedCount() {
   return total;
 }
 
+
+  
 function tapState(btn) {
   var code = btn.dataset.code;
   var name = btn.dataset.name;
   var points = Number(btn.dataset.points);
-  var player = currentPlayer();
   var wasCollected = !!counts[code];
+  var before = collectedCount();
 
   if(mode === "classic" || mode === "weighted") {
     if(counts[code]) {
@@ -3994,29 +3880,22 @@ function tapState(btn) {
       points:points,
       mode:mode,
       trip:tripName,
-
-      playerId:player.id,
-      playerName:player.name,
-      playerAvatar:player.avatar || "🚗",
-      playerPlate:playerPlateText(player),
-
+      playerId:currentPlayerId,
+      playerName:currentPlayer().name,
       ts:new Date().toISOString()
     });
-
-    log = log.slice(0, 50);
-
+    log = log.slice(0, 30);
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
 
-    toast((player.avatar || "🚗") + " " + player.name + " found " + name);
-
     if(!wasCollected) {
+      toast("Collected " + name);
       var after = collectedCount();
-
-      if(after === 1) showCelebration("First Plate", player.name + " started the trip with " + name);
-      else if(after === 10) showCelebration("10 States", "The team has found 10 states");
+      if(after === 1) showCelebration("First Plate", "You started your collection with " + name);
+      else if(after === 10) showCelebration("10 States", "You've found 10 states on this trip");
       else if(after === 25) showCelebration("Halfway There", "25 states collected");
       else if(after === 50) showCelebration("All 50 States", "You completed the game");
+
     }
   }
 
@@ -4024,7 +3903,6 @@ function tapState(btn) {
   save();
   render();
 }
-
 function setMode(newMode) {
   mode = newMode;
 
@@ -4506,25 +4384,19 @@ function playerStats() {
 
   players.forEach(function(p){
     stats[p.id] = {
-      id:p.id,
       name:p.name,
-      avatar:p.avatar || "🚗",
-      plate:playerPlateText(p),
-      plates:0,
-      points:0
+      plates:0
     };
   });
 
   log.forEach(function(item){
     if(item.playerId && stats[item.playerId]) {
       stats[item.playerId].plates++;
-      stats[item.playerId].points += Number(item.points || 1);
     }
   });
 
   return Object.values(stats).sort(function(a,b){
-    if(mode === "classic") return b.plates - a.plates;
-    return b.points - a.points;
+    return b.plates - a.plates;
   });
 }
 
@@ -4562,53 +4434,72 @@ if(standingsModeLabel) {
     mode === "weighted" ? "Battle Mode" :
     "Roadtrip Mode";
 }
+  
+  if(board) {
+    var standings = playerStats();
 
-if(board) {
-  var standings = playerStats();
+    board.innerHTML = standings.map(function(p,i){
+      var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
 
-  board.innerHTML = standings.map(function(p,i){
-    var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
-
-    return '<div class="row battleStandingRow">' +
-      '<div class="grow">' +
-        '<div class="title">' + medal + ' ' + p.avatar + ' ' + p.plate + '</div>' +
-        '<div class="sub">' + p.name + '</div>' +
-      '</div>' +
-      '<div class="green">' +
-        (mode === "classic" ? p.plates + " plates" : p.points + " pts") +
-      '</div>' +
-    '</div>';
-  }).join("");
-}
-
-var list = document.getElementById("familyList");
-if(list) {
-  if(!players.length) {
-    list.innerHTML = '<div class="familyEmpty">No Members yet</div>';
-    return;
+   return '<div class="row"><div class="grow"><div class="title">' +
+medal + ' ' +
+((players.find(function(x){ return x.name === p.name; }) || {}).avatar || "🚗") +
+' ' +
+playerPlateText(players.find(function(x){ return x.name === p.name; })) +
+  '</div></div><div class="green">' +
+  p.plates + ' plates</div></div>';
+    }).join("");
   }
 
+  var list = document.getElementById("familyList");
+  if(list) {
+    if(!players.length) {
+      list.innerHTML = '<div class="familyEmpty">No Members yet</div>';
+      return;
+    }
+    
+    list.innerHTML = players.map(function(p){
+      var initial = (p.name || "?").trim().charAt(0).toUpperCase();
 
-  list.innerHTML = players.map(function(p){
-    return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
-      '<div class="playerPlate">' +
-        '<div class="playerPlateState">NEW YORK</div>' +
-        '<div class="playerPlateName">' + playerPlateText(p) + '</div>' +
-      '</div>' +
-      '<div class="familyInfo">' +
-        '<div class="familyName">' + p.name + '</div>' +
-        '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div>' +
-      '</div>' +
-      '<div class="familyActions">' +
-        (p.id === currentPlayerId ? '' : '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>') +
-      '</div>' +
-    '</div>';
-  }).join("");
+return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
+  '<div class="playerPlate">' +
+    '<div class="playerPlateState">NEW YORK</div>' +
+    '<div class="playerPlateName">' + playerPlateText(p) + '</div>' +
+  '</div>' +
+  '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
+  '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div></div>' +
+ '<div class="familyActions">' +
+
+(p.id === currentPlayerId
+? ''
+: '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>') +
+'</div>' +
+'</div>';
+    }).join("");
+  }
 }
+
+function checkTripCompletion() {
+  var totalStates =
+    Object.keys(counts).filter(function(s) {
+      return counts[s] > 0;
+    }).length;
+
+  if(totalStates === 50 && !hasShownCompletion) {
+    hasShownCompletion = true;
+    localStorage.platesCompletionShown = "true";
+
+    var overlay =
+      document.getElementById("completionOverlay");
+
+    if(overlay) {
+      overlay.classList.remove("hidden");
+    }
+  }
 }
+  
 
 function render() {
-  
   var inviteCodeEl = document.getElementById("tripInviteCode");
   if(inviteCodeEl) {
     inviteCodeEl.textContent = getTripInviteCode();
@@ -4959,115 +4850,87 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
   if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
-
-   var tripOptionsMenu = document.getElementById("tripOptionsMenu");
-
-var tripOptionsBtn = document.getElementById("tripOptionsBtn");
-if (tripOptionsBtn && tripOptionsMenu) {
-  tripOptionsBtn.onclick = function () {
-    tripOptionsMenu.classList.toggle("hidden");
-  };
-}
-
 var endTripBtn = document.getElementById("endTripBtn");
-if (endTripBtn) {
-  endTripBtn.onclick = function () {
-    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
-    endCurrentTrip();
-  };
-}
+if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
 
-var renameTripBtn = document.getElementById("renameTripBtn");
-if (renameTripBtn) {
-  renameTripBtn.onclick = function () {
-    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
-    renameTrip();
-  };
-}
+  var clearTripBtn = document.getElementById("clearTripBtn");
+
+if(clearTripBtn) clearTripBtn.onclick = function(){
+  if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
+
+  selected = [];
+  score = 0;
+  save();
+  render();
+
+  document.getElementById("tripOptionsMenu").classList.add("hidden");
+};
 
 var changeModeBtn = document.getElementById("changeModeBtn");
+
 if (changeModeBtn) {
   changeModeBtn.onclick = function () {
-    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
+    document.getElementById("tripOptionsMenu").classList.add("hidden");
+    setView("home");   // or whatever your Home screen is called
+  };
+}
+  
+var renameTripBtn = document.getElementById("renameTripBtn");
+if(renameTripBtn) renameTripBtn.onclick = renameTrip;
 
-    var modeOverlay = document.getElementById("modeOverlay");
-    if (modeOverlay) modeOverlay.classList.remove("hidden");
+  var tripOptionsBtn = document.getElementById("tripOptionsBtn");
+if (tripOptionsBtn) {
+  tripOptionsBtn.onclick = function () {
+    document.getElementById("tripOptionsMenu").classList.toggle("hidden");
   };
 }
 
-var newTripBtn = document.getElementById("newTripBtn");
-if (newTripBtn) {
-  newTripBtn.onclick = function () {
-    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
-    newTrip();
-  };
-}
+  var newTripBtn = document.getElementById("newTripBtn");
+if(newTripBtn) newTripBtn.onclick = newTrip;
 
 var shareTripBtn = document.getElementById("shareTripBtn");
-if (shareTripBtn) {
-  shareTripBtn.onclick = function () {
-    if (tripOptionsMenu) tripOptionsMenu.classList.add("hidden");
-    shareSummary();
-  };
-}
+if(shareTripBtn) shareTripBtn.onclick = shareSummary;
 
-var clearTripBtn = document.getElementById("clearTripBtn");
-if (clearTripBtn) {
-  clearTripBtn.onclick = function () {
-    if (!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
 
-    counts = {};
-    log = [];
-    score = 0;
+  var saveProfileBtn = document.getElementById("saveProfileBtn");
+if(saveProfileBtn) saveProfileBtn.onclick = function() {
+  document.querySelectorAll(".avatarBtn").forEach(function(btn) {
+  btn.onclick = function() {
 
-    save();
-    render();
-
-    var menu = document.getElementById("tripOptionsMenu");
-    if (menu) menu.classList.add("hidden");
-  };
-}
-
-var saveProfileBtn = document.getElementById("saveProfileBtn");
-if (saveProfileBtn) {
-  saveProfileBtn.onclick = function () {
-    profile.name = document.getElementById("profileName").value;
-    profile.email = document.getElementById("profileEmail").value;
-
-    localStorage.setItem("platesProfile", JSON.stringify(profile));
-
-    var profileSavedMsg = document.getElementById("profileSavedMsg");
-    if (profileSavedMsg) {
-      profileSavedMsg.classList.remove("hidden");
-
-      setTimeout(function () {
-        profileSavedMsg.classList.add("hidden");
-      }, 1800);
-    }
-
-    save();
-    render();
-  };
-}
-
-document.querySelectorAll(".avatarBtn").forEach(function (btn) {
-  btn.onclick = function () {
     profile.avatar = btn.dataset.avatar;
 
-    document.querySelectorAll(".avatarBtn").forEach(function (b) {
+    document.querySelectorAll(".avatarBtn").forEach(function(b){
       b.classList.remove("selected");
     });
 
     btn.classList.add("selected");
   };
 });
+  profile.name = document.getElementById("profileName").value;
+  profile.email = document.getElementById("profileEmail").value;
+
+  localStorage.setItem(
+    "platesProfile",
+    JSON.stringify(profile)
+  );
+
+var profileSavedMsg = document.getElementById("profileSavedMsg");
+profileSavedMsg.classList.remove("hidden");
+
+setTimeout(function() {
+  profileSavedMsg.classList.add("hidden");
+}, 1800);
+};
+ var shareTripBtn = document.getElementById("shareTripBtn");
+if(shareTripBtn) shareTripBtn.onclick = shareSummary;
 
 var copyShareBtn = document.getElementById("copyShareBtn");
-if (copyShareBtn) copyShareBtn.onclick = copyShareText;
+if(copyShareBtn) copyShareBtn.onclick = copyShareText;
+
 
 var celebrationClose = document.getElementById("celebrationClose");
-if (celebrationClose) {
-  celebrationClose.addEventListener("click", function (e) {
+if(celebrationClose) {
+  celebrationClose.addEventListener("click", function(e){
     e.preventDefault();
     e.stopPropagation();
     document.getElementById("celebrationOverlay").classList.remove("show");
@@ -5086,9 +4949,7 @@ showOnboardingIfNeeded();
     <div class="completionEmoji">🎉</div>
     <div class="completionTitle">Roadtrip Complete!</div>
     <div class="completionSub">You've collected all 50 states!</div>
-    <button class="primary" id="closeCompletionBtn" type="button">
-      Awesome!
-    </button>
+    <button class="primary" id="closeCompletionBtn" type="button">Awesome!</button>
   </div>
 </div>
 
