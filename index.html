@@ -5280,12 +5280,20 @@ if(modeCloseBtn && newGameOverlay) {
     };
   }
 
-  document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
-    btn.onclick = function() {
-      setMode(btn.dataset.modeChoice);
-      if(modeOverlay) newGameOverlay.classList.add("hidden");
-    };
-  });
+document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
+  btn.onclick = function() {
+
+    document.querySelectorAll("[data-mode-choice]").forEach(function(b){
+      b.classList.remove("active");
+    });
+
+    btn.classList.add("active");
+
+    setMode(btn.dataset.modeChoice);
+  };
+});
+
+  
 
 document.querySelectorAll("[data-game-type]").forEach(function(btn){
   btn.onclick = function() {
