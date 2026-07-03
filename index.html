@@ -4905,6 +4905,20 @@ function attachHandlers() {
     };
   });
 
+document.querySelectorAll("[data-game-type]").forEach(function(btn){
+  btn.onclick = function() {
+    gameType = btn.dataset.gameType;
+
+    localStorage.platesGameType = gameType;
+
+    toast(
+      gameType.charAt(0).toUpperCase() +
+      gameType.slice(1) +
+      " selected"
+    );
+  };
+});
+  
   document.querySelectorAll("[data-view]").forEach(function(btn){
     btn.onclick = function(){ setView(btn.dataset.view); };
   });
