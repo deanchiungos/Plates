@@ -2950,30 +2950,50 @@ or
   </div>
 </div>
 <div class="modeOverlay hidden" id="modeOverlay">
-  <div class="modeSheet">
+ 
+<div class="modeSheetTitle">New Game</div>
 
-    <div class="modeSheetTitle">Game Modes</div>
+<div class="modeSectionTitle">Game Type</div>
 
-    <button class="modeOption" data-mode-choice="classic" type="button">
-      <strong>Classic</strong>
-      <span>Collect all 50 states Each state counts once</span>
-    </button>
-
-    <button class="modeOption" data-mode-choice="weighted" type="button">
-  <strong>Battle</strong>
-<span>Compete against friends to spot the most plates</span>
-    </button>
-    
-<button class="modeOption" data-mode-choice="unlimited" type="button">
-  <strong>Roadtrip</strong>
-  <span>Team up with family and friends and compete nationwide</span>
+<button class="modeOption" data-game-type="solo" type="button">
+  <strong>🚗 Solo</strong>
+  <span>Play by yourself</span>
 </button>
 
-    <button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
-      Close
-    </button>
+<button class="modeOption" data-game-type="battle" type="button">
+  <strong>🏆 Battle</strong>
+  <span>Compete against friends</span>
+</button>
 
-  </div>
+<button class="modeOption" data-game-type="roadtrip" type="button">
+  <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
+  <span>Combine scores as a team</span>
+</button>
+
+<div class="modeDivider"></div>
+
+<div class="modeSectionTitle">Scoring</div>
+
+<button class="modeOption" data-mode-choice="classic" type="button">
+  <strong>Classic</strong>
+  <span>Each state counts once</span>
+</button>
+
+<button class="modeOption" data-mode-choice="weighted" type="button">
+  <strong>Weighted</strong>
+  <span>Rare states are worth more points</span>
+</button>
+
+<button class="modeOption" data-mode-choice="unlimited" type="button">
+  <strong>Unlimited</strong>
+  <span>Every plate scores</span>
+</button>
+
+<button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
+  Close
+</button>
+
+  
 </div>
 <div class="celebrationOverlay" id="celebrationOverlay" onclick="this.classList.remove('show')">
   <div class="celebrationBox">
