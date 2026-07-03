@@ -2914,15 +2914,36 @@ or
 
 /* v50 new game entry point */
 
+/* v50 New Game */
+
 .newGameBtn{
   width:100%;
-  min-height:58px;
+  min-height:56px;
+  margin:14px 0 18px;
+
+  background:#fff;
+  color:var(--navy);
+
+  border:2px solid #d8e2ef;
   border-radius:999px;
+
   font-size:20px;
   font-weight:950;
-  margin:0 0 16px;
-  box-shadow:0 6px 18px rgba(38,169,87,.22);
+
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+
+  transition:.15s;
 }
+
+.newGameBtn:active{
+  transform:scale(.985);
+}
+
+.newGameBtn:hover{
+  border-color:rgba(21,119,210,.28);
+}
+
+  
   
 </style>
 </head>
