@@ -4123,13 +4123,16 @@ localStorage.platesCurrentPlayerId = currentPlayerId;
 localStorage.platesPlateState = plateState;
 }
 
+
 function collectedCount() {
   var unique = {};
+
   if (typeof selected !== "undefined" && Array.isArray(selected)) {
     selected.forEach(function(code){
       unique[code] = true;
     });
   }
+
   if (typeof log !== "undefined" && Array.isArray(log)) {
     log.forEach(function(item){
       if (item.code) {
@@ -4137,11 +4140,8 @@ function collectedCount() {
       }
     });
   }
-  return Object.keys(unique).length;
-}
 
-function totalSightings() {
-  return Object.values(counts).reduce(function(sum,n){ return sum + n; }, 0);
+  return Object.keys(unique).length;
 }
 
 function totalScore() {
