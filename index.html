@@ -4080,7 +4080,14 @@ localStorage.platesPlateState = plateState;
 }
 
 function collectedCount() {
-  return Object.keys(counts).filter(function(k){ return counts[k] > 0; }).length;
+  var unique = {};
+  selected.forEach(function(code){
+    unique[code] = true;
+  });
+  log.forEach(function(item){
+    if(item.code) unique[item.code] = true;
+  });
+  return Object.keys(unique).length;
 }
 
 function totalSightings() {
