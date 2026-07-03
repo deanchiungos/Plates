@@ -3230,6 +3230,18 @@ button#newGameBtn{
 .newGameOverlay.hidden{
   display:none;
 }
+
+/* v50 New Game selected cards use blue, not green */
+
+.newGameOption.active{
+  background:#eaf3ff !important;
+  border-color:rgba(21,119,210,.38) !important;
+}
+
+.newGameOption.active strong:after{
+  color:var(--blue) !important;
+}
+
   
 </style>
 </head>
