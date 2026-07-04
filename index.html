@@ -5377,7 +5377,16 @@ if(changeModeBtn) {
 }
   
 var renameTripBtn = document.getElementById("renameTripBtn");
-if(renameTripBtn) renameTripBtn.onclick = renameTrip;
+if(renameTripBtn) {
+  renameTripBtn.onclick = function(){
+    renameTrip();
+
+    var menu = document.getElementById("tripOptionsMenu");
+    if(menu) menu.classList.add("hidden");
+  };
+}
+
+  
 
   var tripOptionsBtn = document.getElementById("tripOptionsBtn");
 if (tripOptionsBtn) {
