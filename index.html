@@ -1908,14 +1908,9 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 #newTripBtn{
   margin-top:12px;
 }
-.tripOptionsMenu{
-  margin-top:12px;
-  border:1px solid rgba(21,101,192,.12);
-  border-radius:18px;
-  overflow:hidden;
-  background:#fff;
-    padding:8px 0;
-}
+
+  
+
 
 .tripMenuItem{
   width:100%;
@@ -2341,25 +2336,7 @@ body {
 .currentTripRow:active {
   transform:scale(.99);
 }
-.tripOptionsMenu #endTripBtn,
-.tripOptionsMenu #renameTripBtn,
-.tripOptionsMenu #shareTripBtn,
-.tripOptionsMenu #clearTripBtn,
-.tripOptionsMenu #newTripBtn{
-  width:100%;
-  border:0 !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-  background:#fff !important;
-  padding:16px 20px !important;
-  text-align:left !important;
-  font-size:17px !important;
-  font-weight:850 !important;
-}
 
-.tripOptionsMenu #clearTripBtn{
-  color:#b43b3b !important;
-}
   
 .tripModeTop {
   margin-top:4px;
@@ -2532,14 +2509,6 @@ body {
 
 
 
-
-
-.tripOptionsMenu button.dangerItem{
-  margin-top:6px !important;
-  padding-top:0 !important;
-  border-top:1px solid rgba(21,101,192,.10) !important;
-  color:#b43b3b !important;
-}
 
 
 
@@ -2805,38 +2774,8 @@ body {
   line-height:1.4 !important;
 }
 
-.tripOptionsMenu button.tripMenuItem{
-  display:block;
-  width:100%;
 
-  height:36px;
-  min-height:36px;
 
-  margin:0;
-  padding:0 20px;
-
-  border:none;
-  border-radius:0;
-  box-shadow:none;
-  background:#fff;
-
-  text-align:left;
-  font-size:17px;
-  font-weight:850;
-  line-height:36px;
-
-  color:var(--blue);
-}
-
-.tripOptionsMenu button.tripMenuItem + button.tripMenuItem{
-  border-top:none;
-}
-
-.tripOptionsMenu button.dangerItem{
-  margin-top:6px;
-  border-top:1px solid rgba(21,101,192,.10);
-  color:#b43b3b;
-}
   .latestTripInfo,
 .mapHero,
 .latestTripInfo.mapHero{
@@ -2844,7 +2783,49 @@ body {
   box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
 }
   
-  
+  .tripOptionsMenu{
+  margin:10px 0 12px !important;
+  padding:8px !important;
+  border:2px solid #d8e2ef !important;
+  border-radius:22px !important;
+  background:#fff !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.04) !important;
+}
+
+.tripOptionsMenu.hidden{
+  display:none !important;
+}
+
+.tripOptionsMenu .tripMenuItem{
+  width:100% !important;
+  min-height:44px !important;
+  height:44px !important;
+  padding:0 16px !important;
+  margin:0 !important;
+  display:flex !important;
+  align-items:center !important;
+  border:0 !important;
+  border-radius:14px !important;
+  background:#fff !important;
+  color:var(--blue) !important;
+  font-size:17px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  text-align:left !important;
+  box-shadow:none !important;
+}
+
+.tripOptionsMenu .tripMenuItem + .tripMenuItem{
+  margin-top:4px !important;
+}
+
+.tripOptionsMenu .dangerItem{
+  color:#b43b3b !important;
+  margin-top:8px !important;
+  border-top:1px solid rgba(180,59,59,.14) !important;
+  padding-top:8px !important;
+  border-radius:0 !important;
+}
 
 /* v50 clean Game Setup */
 
