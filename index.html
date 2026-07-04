@@ -3053,6 +3053,35 @@ color:var(--blue) !important;
 #mapScreen .sub{
   display:none;
 }
+
+  .modeOption.active,
+.newGameOption.active,
+.modeExplainCard.active{
+  background:linear-gradient(180deg,#eaffef,#ffffff) !important;
+  border:3px solid var(--green) !important;
+  box-shadow:0 0 0 3px rgba(38,169,87,.12) !important;
+}
+
+.modeOption.active strong,
+.newGameOption.active strong,
+.modeExplainCard.active .title{
+  color:var(--green) !important;
+}
+
+.modeOption.active strong::after,
+.newGameOption.active strong::after{
+  content:" ✓";
+  color:var(--green);
+}
+
+.tripOptionsMenu .tripMenuItem{
+  color:var(--blue) !important;
+  font-weight:900 !important;
+}
+
+.tripOptionsMenu .dangerItem{
+  color:#b43b3b !important;
+}
   
   
 </style>
