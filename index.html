@@ -3090,7 +3090,21 @@ color:var(--blue) !important;
 .tripOptionsMenu .dangerItem{
   color:#b43b3b !important;
 }
-  
+ #gameScreen .card:has(#recent),
+#gameScreen .card:has(#bestTrip){
+  padding:24px 28px !important;
+}
+
+#gameScreen .card:has(#recent) .panelTitle,
+#gameScreen .card:has(#bestTrip) .panelTitle{
+  margin-left:0 !important;
+  text-align:left !important;
+}
+
+#recent .memoryEmpty{
+  text-align:left !important;
+  padding:8px 0 2px !important;
+} 
   
 </style>
 </head>
