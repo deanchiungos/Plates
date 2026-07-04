@@ -5093,11 +5093,15 @@ return '<div class="row tripRow">' +
 
 document.getElementById("tripHistoryList").innerHTML = historyHtml;
 
-document.getElementById("recent").innerHTML = log.length ? log.slice(0,4).map(function(x){
-  var pts = mode === "classic" ? "" : "+" + x.points;
-  var finder = x.playerName || "Team";
-  return '<div class="row recentItem"><div><div class="recentState">' + x.name + '</div><div class="recentFinder">Found by ' + finder + '</div></div><div class="recentMeta"><span class="recentTime">' + timeAgo(x.ts) + '</span><span class="recentPts">' + pts + '</span></div></div>';
-}).join("") : '<div class="memoryEmpty">No plates yet<br><br>Tap a state to start your roadtrip</div>';
+var recentEl = document.getElementById("recent");
+
+if (recentEl) {
+  recentEl.innerHTML = log.length ? log.slice(0,4).map(function(x){
+    var pts = mode === "classic" ? "" : "+" + x.points;
+    var finder = x.playerName || "Team";
+    return '<div class="row recentItem"><div><div class="recentState">' + x.name + '</div><div class="recentFinder">Found by ' + finder + '</div></div><div class="recentMeta"><span class="recentTime">' + timeAgo(x.ts) + '</span><span class="recentPts">' + pts + '</span></div></div>';
+  }).join("") : '<div class="memoryEmpty">No plates yet<br><br>Tap a state to start your roadtrip</div>';
+}
 
   renderBadges(c);
 
