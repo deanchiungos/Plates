@@ -46,46 +46,9 @@ button {
   margin:0 auto;
   padding:26px 12px 0;
 }
-.logo {
-  position:relative;
-  max-width:320px;
-  margin:0 auto 18px;
-  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
-  border:4px solid var(--navy);
-  border-radius:20px;
-  padding:18px 20px;
-  box-shadow:0 5px 0 rgba(7,55,99,.18), 0 12px 22px rgba(7,55,99,.12);
-  overflow:hidden;
-}
-.logo:before,
-.logo:after {
-  content:"";
-  position:absolute;
-  top:12px;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#dbeafe;
-  border:2px solid rgba(7,55,99,.35);
-}
-.logo:before { left:14px; }
-.logo:after { right:14px; }
-.logo h1 {
-  margin:0;
-  text-align:center;
-  color:var(--navy);
-  font-size:38px;
-  letter-spacing:7px;
-  line-height:1;
-}
-.logo .tagline {
-  margin-top:10px;
-  text-align:center;
-  color:var(--navy);
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:2px;
-}
+
+
+  
 .card {
   background:#fff;
   border:1px solid var(--line);
@@ -858,69 +821,39 @@ html,body {
     linear-gradient(180deg,#bdefff 0%,#dff8ff 45%,#f5fff3 100%);
 }
 
-.logo {
-  position:relative;
-  max-width:326px;
+.logo{
+  width:100%;
+  max-width:430px;
   margin:0 auto 18px;
-  background:
-    radial-gradient(circle at 28% 18%,rgba(255,255,255,.95),transparent 22%),
-    linear-gradient(180deg,#ffffff 0%,#f4f9ff 48%,#eaf4ff 100%);
-  border:4px solid var(--navy);
-  border-radius:20px;
-  padding:17px 20px 18px;
-  box-shadow:
-    0 5px 0 rgba(6,47,95,.18),
-    0 14px 28px rgba(6,47,95,.16),
-    inset 0 0 0 2px rgba(6,47,95,.06);
-  overflow:hidden;
+  padding:0;
+  background:none;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  overflow:visible;
 }
 
-.logo:before,
-.logo:after {
-  content:"";
-  position:absolute;
-  top:12px;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#dcecff;
-  border:2px solid rgba(6,47,95,.34);
-  box-shadow:inset 0 1px 2px rgba(6,47,95,.18);
+.logo::before,
+.logo::after{
+  content:none;
+  display:none;
 }
 
-.logo:before { left:14px; }
-.logo:after { right:14px; }
-
-.logo .usaMark {
-  position:absolute;
-  left:22px;
-  top:36px;
-  font-size:11px;
-  font-weight:950;
-  color:rgba(21,119,210,.34);
-  letter-spacing:.6px;
-  transform:rotate(-2deg);
+.logo .usaMark{
+  display:none;
 }
 
-.logo h1 {
-  margin:0;
-  text-align:center;
-  color:var(--navy);
-  font-size:39px;
-  letter-spacing:7px;
-  line-height:1;
-  text-shadow:0 1px 0 #fff, 0 2px 0 rgba(6,47,95,.08);
+.logo h1,
+.logo .tagline{
+  display:none;
 }
 
-.logo .tagline {
-  margin-top:10px;
-  text-align:center;
-  color:var(--navy);
-  font-size:11px;
-  font-weight:950;
-  letter-spacing:2px;
+.logo img{
+  display:block;
+  width:100%;
+  height:auto;
 }
-
+  
 .card {
   background:rgba(255,255,255,.94);
   border:1px solid rgba(6,47,95,.12);
@@ -3208,8 +3141,7 @@ body {
 <main class="app">
   <section class="top">
     <div class="logo">
-            <h1>PLATES</h1>
-      <div class="tagline">THE LICENSE PLATE GAME</div>
+      <img src="logo.png" alt="PLATES">
     </div>
   </section>
 
