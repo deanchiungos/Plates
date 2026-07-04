@@ -5091,7 +5091,10 @@ return '<div class="row tripRow">' +
 
   }).join("") : '<div class="emptyHistory">No saved roadtrips yet.</div>';
 
-document.getElementById("tripHistoryList").innerHTML = historyHtml;
+var tripHistoryListEl = document.getElementById("tripHistoryList");
+if (tripHistoryListEl) {
+  tripHistoryListEl.innerHTML = historyHtml;
+}
 
 var recentEl = document.getElementById("recent");
 
