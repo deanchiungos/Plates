@@ -4635,24 +4635,39 @@ function renderBadges(c) {
     return b[3];
   }).length;
 
-  document.getElementById("badgeMini").textContent = unlockedBadges;
+  var badgeMiniEl = document.getElementById("badgeMini");
+  if (badgeMiniEl) {
+    badgeMiniEl.textContent = unlockedBadges;
+  }
 
-  document.getElementById("featuredBadge").innerHTML =
-    '<div class="latestBadgeLabel">Latest Badge</div>' +
-    '<div class="latestBadgeIcon">🥇</div>' +
-    '<div class="latestBadgeName">First Plate</div>' +
-    '<div class="latestBadgeDesc">Spot your first state</div>';
+  var featuredBadgeEl = document.getElementById("featuredBadge");
+  if (featuredBadgeEl) {
+    if (unlockedBadges > 0) {
+      featuredBadgeEl.style.display = "block";
+      featuredBadgeEl.innerHTML =
+        '<div class="latestBadgeLabel">Latest Badge</div>' +
+        '<div class="latestBadgeIcon">🥇</div>' +
+        '<div class="latestBadgeName">First Plate</div>' +
+        '<div class="latestBadgeDesc">Spot your first state</div>';
+    } else {
+      featuredBadgeEl.style.display = "none";
+      featuredBadgeEl.innerHTML = "";
+    }
+  }
 
-  document.getElementById("badges").innerHTML = badges.map(function(b){
-    return '<div class="badge ' + (b[3] ? "unlocked" : "locked") + '">' +
-      '<div class="badgeIcon">' + b[0] + '</div>' +
-      '<div class="badgeName">' + b[1] + '</div>' +
-      '<div class="badgeDesc">' + b[2] + '</div>' +
-      '</div>';
-  }).join("");
+  var badgesEl = document.getElementById("badges");
+  if (badgesEl) {
+    badgesEl.innerHTML = badges.map(function(b){
+      return '<div class="badge ' + (b[3] ? "unlocked" : "locked") + '">' +
+        '<div class="badgeIcon">' + b[0] + '</div>' +
+        '<div class="badgeName">' + b[1] + '</div>' +
+        '<div class="badgeDesc">' + b[2] + '</div>' +
+        '</div>';
+    }).join("");
+  }
 }
 
-
+  
 function tripModeSummaryText(c, points, sightings) {
   if(mode === "classic") return "Classic Mode";
   if(mode === "weighted") return "Weighted Mode";
