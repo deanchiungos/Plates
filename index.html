@@ -3120,7 +3120,7 @@ color:var(--blue) !important;
 
 /* How to Play */
 .gameModesMini > .panelTitle{
-  padding-left:2px;
+  padding-left:0px;
 }
 
 .tripOptionsMenu .tripMenuItem:focus,
@@ -3134,6 +3134,14 @@ color:var(--blue) !important;
 }
 
   
+.myStatsCard .panelTitle{
+  padding-left:2px;
+}
+
+.howToPlayCard .panelTitle{
+  padding-left:0;
+}
+
   
 </style>
 </head>
@@ -3349,7 +3357,7 @@ color:var(--blue) !important;
   </div>
 </div>
 
-<div class="card">
+<div class="card myStatsCard">
   <div class="panelTitle">
     <span>My Stats</span>
   </div>
@@ -3371,7 +3379,7 @@ color:var(--blue) !important;
     </button>
   </div>
 </div>
-<div class="card gameModesMini">
+<div class="card gameModesMini howToPlayCard">
  <div class="panelTitle">
   <span>How to Play</span>
 </div>
