@@ -1515,6 +1515,11 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   padding:8px 0 2px;
 }
 
+.emptyTitle{
+  font:inherit;
+  color:inherit;
+}
+  
 .memoryList{
   display:grid;
   gap:8px;
@@ -3291,11 +3296,11 @@ color:var(--blue) !important;
     <span>Recent Sightings</span>
   </div>
 
-  <div class="recent" id="recent">
-    <div class="memoryEmpty">
-      No plates yet<br><br>
-      Tap a state to start your roadtrip
-    </div>
+<div class="memoryEmpty">
+  <span class="emptyTitle">No plates yet</span><br><br>
+  Tap a state to start your roadtrip
+</div>
+     
   </div>
 </div>
 
