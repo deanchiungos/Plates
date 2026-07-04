@@ -5407,7 +5407,14 @@ if (tripOptionsBtn) {
 if(newTripBtn) newTripBtn.onclick = newTrip;
 
 var shareTripBtn = document.getElementById("shareTripBtn");
-if(shareTripBtn) shareTripBtn.onclick = shareSummary;
+if(shareTripBtn) {
+  shareTripBtn.onclick = function(){
+    shareSummary();
+
+    var menu = document.getElementById("tripOptionsMenu");
+    if(menu) menu.classList.add("hidden");
+  };
+}
 
 
   var saveProfileBtn = document.getElementById("saveProfileBtn");
