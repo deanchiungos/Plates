@@ -4913,6 +4913,11 @@ var c = collectedCount();
   var left = Math.max(0, 50 - c);
   var unlockedBadges = badgeCount(c);
 
+  var featured = document.getElementById("featuredBadge");
+if (featured) {
+  featured.style.display = unlockedBadges > 0 ? "block" : "none";
+}
+
   var listCountEl = document.getElementById("listCount");
 if (listCountEl) {
   listCountEl.innerHTML = '<span class="found">' + c + '/</span>50';
