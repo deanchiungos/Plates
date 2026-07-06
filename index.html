@@ -4131,7 +4131,10 @@ if (plateStateSelect) {
     renderVanityPlate();
   });
 }
-  
+  var account = safeParse(
+  localStorage.getItem("platesAccount"),
+  '{"username":"","email":"","signedIn":false}'
+);
   var plateState = localStorage.getItem("platesPlateState") || "NY";
   var mode = localStorage.platesMode || "classic";
 var gameType = localStorage.platesGameType || (mode === "weighted" ? "battle" : mode === "unlimited" ? "roadtrip" : "solo");
@@ -4158,6 +4161,34 @@ var selectedState = "";
 
 var plateName = localStorage.getItem("platesPlateName") || "DCHIUNGOS";
 
+function saveAccount(){
+  localStorage.setItem("platesAccount", JSON.stringify(account));
+}
+
+function isSignedIn(){
+  return account && account.signedIn && account.username;
+}
+
+function createAccount(){
+  var username = prompt("Choose a username:", account.username || "");
+
+  if(!username || !username.trim()) return;
+
+  var email = prompt("Email:", account.email || "");
+
+  if(!email || !email.trim()) return;
+
+  account = {
+    username: username.trim().replace(/^@/, ""),
+    email: email.trim(),
+    signedIn: true
+  };
+
+  saveAccount();
+  toast("Account created");
+  render();
+}
+  
 function stateNameFromCode(code) {
   var select = document.getElementById("plateStateSelect");
   if (!select) return "NEW YORK";
@@ -5211,6 +5242,23 @@ function render() {
     inviteCodeEl.textContent = getTripInviteCode();
   }
 
+  var accountBox = document.getElementById("accountBox");
+var createAccountBtn = document.getElementById("createAccountBtn");
+
+if(accountBox) {
+  if(isSignedIn()) {
+    accountBox.innerHTML =
+      '<div class="title">@' + account.username + '</div>' +
+      '<div class="sub">' + account.email + '</div>';
+  } else {
+    accountBox.innerHTML =
+      '<div class="memoryEmpty">Create an account to play Battles, add friends, and sync your games</div>';
+  }
+}
+
+if(createAccountBtn) {
+  createAccountBtn.textContent = isSignedIn() ? "Edit Account" : "Create Account";
+}
 
 
   var modeDropdownText = document.getElementById("modeDropdownText");
@@ -5476,7 +5524,11 @@ if (recentEl) {
 
 function attachHandlers() {
 
-
+var createAccountBtn = document.getElementById("createAccountBtn");
+if(createAccountBtn) {
+  createAccountBtn.onclick = createAccount;
+}
+  
 var copyInviteBtn = document.getElementById("copyInviteBtn");
 
 if(copyInviteBtn) {
