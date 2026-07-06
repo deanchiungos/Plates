@@ -5026,13 +5026,18 @@ if(standingsModeLabel) {
     board.innerHTML = standings.map(function(p,i){
       var medal = i === 0 ? "1st" : i === 1 ? "2nd" : i === 2 ? "3rd" : (i + 1) + "th";
 
-   return '<div class="row"><div class="grow"><div class="title">' +
-medal + ' ' +
-((players.find(function(x){ return x.name === p.name; }) || {}).avatar || "🚗") +
-' ' +
-playerPlateText(players.find(function(x){ return x.name === p.name; })) +
-  '</div></div><div class="green">' +
-  p.plates + ' plates</div></div>';
+return '<div class="row battleRow">' +
+  '<div class="battleRank">' + medal + '</div>' +
+  '<div class="grow">' +
+    '<div class="title battlePlayer">' +
+      ((players.find(function(x){ return x.name === p.name; }) || {}).avatar || "🚗") +
+      ' ' +
+      playerPlateText(players.find(function(x){ return x.name === p.name; })) +
+    '</div>' +
+  '</div>' +
+  '<div class="battleScore">' + p.plates + ' plates</div>' +
+'</div>';
+      
     }).join("");
   }
 
