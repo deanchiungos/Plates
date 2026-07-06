@@ -3885,10 +3885,13 @@ body::after{
 <div class="card inviteCard">
 
   <div class="inviteBox">
-    <div class="inviteLabel">Share this code to invite teammates</div>
+<div class="inviteLabel">Invite players to battle</div>
+
+
+    
 
     <div class="inviteCode" id="tripInviteCode">
-      ROAD-4832
+     PLT-4832
     </div>
 
     <div class="inviteActions">
@@ -4238,7 +4241,7 @@ function showOnboardingIfNeeded() {
 }
 function getTripInviteCode() {
   if(!tripInviteCode) {
-    tripInviteCode = "ROAD-" + Math.floor(1000 + Math.random() * 9000);
+    tripInviteCode = "PLT-" + Math.floor(1000 + Math.random() * 9000);
     localStorage.platesInviteCode = tripInviteCode;
   }
   return tripInviteCode;
