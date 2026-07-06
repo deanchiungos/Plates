@@ -3324,6 +3324,19 @@ body::after{
   font-weight:850;
 }
 
+
+.playerAvatar{
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  background:#f5f8fc;
+  border:2px solid #d8e2ef;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  flex-shrink:0;
+}
   
   
 </style>
@@ -5117,10 +5130,11 @@ return '<div class="row battleRow">' +
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
 
 return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
-  '<div class="playerPlate">' +
-    '<div class="playerPlateState">NEW YORK</div>' +
-    '<div class="playerPlateName">' + playerPlateText(p) + '</div>' +
-  '</div>' +
+
+'<div class="playerAvatar">' +
+  (p.avatar || "🚗") +
+'</div>' +
+  
   '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
   '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div></div>' +
  '<div class="familyActions">' +
