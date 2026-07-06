@@ -4266,57 +4266,60 @@ if (savePlateBtn) {
 
 renderVanityPlate();
   
+
   var profile = safeParse(
   localStorage.getItem("platesProfile"),
-  '{"name":"","email":""}'
+  '{"name":"","email":"","avatar":"🚗"}'
 );
-profile.avatar = profile.avatar || "🚗";
-  var players;
-try {
-  players = JSON.parse(localStorage.platesPlayers || '[{"id":"p1","name":"Dean"}]');
-} catch(e) {
-  players = [{
-  id:"p1",
-  name: profile.name || "Player",
-  avatar: profile.avatar || "🚗"
-}];
-}
-if(!Array.isArray(players) || !players.length) {
-  players = [{
-  id:"p1",
-  name: profile.name || "Player",
-  avatar: profile.avatar || "🚗"
-}];
-}
-players = players.filter(function(p){ return p && p.id && p.name; });
 
-if(players.length) {
-  players[0].name = profile.name || players[0].name;
-  players[0].avatar = profile.avatar || players[0].avatar || "🚗";
+profile.avatar = profile.avatar || "🚗";
+
+var players;
+
+try {
+  players = JSON.parse(
+    localStorage.platesPlayers ||
+    '[{"id":"p1","name":"Dean","avatar":"🚗"}]'
+  );
+} catch(e) {
+  players = [];
 }
-  
-if(!players.length) {
+
+if (!Array.isArray(players)) {
+  players = [];
+}
+
+players = players.filter(function(p){
+  return p && p.id && p.name;
+});
+
+if (!players.length) {
   players = [{
-  id:"p1",
-  name: profile.name || "Player",
-  avatar: profile.avatar || "🚗"
-}];
+    id:"p1",
+    name: profile.name || "Player",
+    avatar: profile.avatar || "🚗"
+  }];
 }
-var currentPlayerId = localStorage.platesCurrentPlayerId || (players[0] && players[0].id) || "p1";
-if(!players.some(function(p){ return p.id === currentPlayerId; })) {
+
+players[0].name = profile.name || players[0].name || "Player";
+players[0].avatar = profile.avatar || players[0].avatar || "🚗";
+
+var currentPlayerId =
+  localStorage.platesCurrentPlayerId ||
+  (players[0] && players[0].id) ||
+  "p1";
+
+if (!players.some(function(p){
+  return p.id === currentPlayerId;
+})) {
   currentPlayerId = players[0].id;
 }
-var pendingPhotoStateCode = "";
 
-var profile = safeParse(
-  localStorage.getItem("platesProfile"),
-  '{"name":"","email":""}'
-);
-  profile.avatar = profile.avatar || "🚗";
+var pendingPhotoStateCode = "";
+  
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
 
-  
 
 function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
@@ -4458,9 +4461,7 @@ function collectedCount() {
   return Object.keys(unique).length;
 }
   
-function totalSightings() {
-  return Array.isArray(log) ? log.length : 0;
-}
+
   
 function totalScore() {
   var total = 0;
