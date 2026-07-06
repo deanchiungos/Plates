@@ -5359,7 +5359,7 @@ if(copyInviteBtn) {
 
   
 var modeDropdownBtn = document.getElementById("modeDropdownBtn");
-var newGameBtn = document.getElementById("homeNewGameBtn");
+var newGameBtn = document.getElementById("createGameBtn");
 var newGameOverlay = document.getElementById("newGameOverlay");
 var modeCloseBtn = document.getElementById("modeCloseBtn");
 var createGameBtn = document.getElementById("createGameBtn");
@@ -5376,9 +5376,6 @@ if(modeCloseBtn) {
   modeCloseBtn.onclick = closeNewGameSheet;
 }
 
-if(createGameBtn) {
-  createGameBtn.onclick = createGameFromSheet;
-}
 
 document.querySelectorAll("[data-game-type]").forEach(function(btn){
   btn.onclick = function() {
