@@ -5395,7 +5395,26 @@ if(copyInviteBtn) {
     };
   });
 
-  
+var bestStatBtn = document.getElementById("bestStatBtn");
+if (bestStatBtn) {
+  bestStatBtn.onclick = function () {
+    setView("trips");
+  };
+}
+
+var tripsStatBtn = document.getElementById("tripsStatBtn");
+if (tripsStatBtn) {
+  tripsStatBtn.onclick = function () {
+    setView("trips");
+  };
+}
+
+var badgesStatBtn = document.getElementById("badgesStatBtn");
+if (badgesStatBtn) {
+  badgesStatBtn.onclick = function () {
+    setView("badges");
+  };
+}  
 var modeDropdownBtn = document.getElementById("modeDropdownBtn");
 var newGameBtn = document.getElementById("createGameBtn");
 var newGameOverlay = document.getElementById("newGameOverlay");
