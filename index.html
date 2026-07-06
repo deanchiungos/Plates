@@ -3240,6 +3240,23 @@ body::after{
   line-height:1.25 !important;
 }
 
+  #progressBar{
+  display:block !important;
+  height:16px !important;
+  background:#e5eef7 !important;
+  border-radius:999px !important;
+  overflow:hidden !important;
+}
+
+#fill{
+  display:block !important;
+  height:100% !important;
+  min-width:4px;
+  background:linear-gradient(90deg,var(--green),#70d66d,var(--gold)) !important;
+}
+
+  
+
   
 </style>
 </head>
@@ -5145,8 +5162,12 @@ if(mode === "classic") {
   document.getElementById("primaryLabel").textContent = "states collected";
   document.getElementById("secondaryNumber").textContent = left;
   document.getElementById("secondaryLabel").textContent = "states to go";
-  document.getElementById("progressBar").style.display = "block";
-  document.getElementById("fill").style.width = pct + "%";
+document.getElementById("progressBar").style.display = "block";
+
+var fill = document.getElementById("fill");
+if (fill) {
+  fill.style.width = pct + "%";
+}
 }
 
   if(mode === "weighted") {
