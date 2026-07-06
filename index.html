@@ -3873,7 +3873,10 @@ body::after{
 </div>
     
 <div class="card">
-  <div class="panelTitle"><span>Players</span><span id="familyCount">3</span></div>
+
+  <div class="panelTitle">
+  <span>Players</span>
+</div>
   <div class="familyList" id="familyList"></div>
   <button class="secondary familyAddBtn" id="addPlayerBtn" type="button">Add Player</button>
 </div>
@@ -5075,10 +5078,6 @@ function renderFamily(c, unlockedBadges) {
 
   var familyCount = document.getElementById("familyCount")
 
-if(familyCount) {
-familyCount.textContent = players.length;
-}
-  
   var board = document.getElementById("leaderboardList");
 var standingsTitle = document.getElementById("standingsTitle");
 if(standingsTitle) {
