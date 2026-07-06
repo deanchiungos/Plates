@@ -3292,6 +3292,39 @@ body::after{
   white-space:nowrap;
 }
 
+
+  .battleHero{
+  text-align:center;
+  background:#fff;
+  border:2px solid #d8e2ef;
+  border-radius:26px;
+  padding:22px 18px;
+  margin-bottom:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+
+.battleLabel{
+  color:var(--blue);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+
+.battleTitle{
+  margin-top:6px;
+  color:var(--navy);
+  font-size:28px;
+  font-weight:950;
+}
+
+.battleSub{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:15px;
+  font-weight:850;
+}
+
+  
   
 </style>
 </head>
@@ -3786,11 +3819,21 @@ body::after{
   <button class="secondary familyAddBtn" id="addPlayerBtn" type="button">Add Player</button>
 </div>
 
+<div class="battleHero">
+  <div class="battleLabel">⚔️ ACTIVE BATTLE</div>
 
+  <div class="battleTitle" id="battleName">
+    Summer Roadtrip
+  </div>
+
+  <div class="battleSub" id="battleSummary">
+    4 Players • Classic Mode
+  </div>
+</div>
 
 <div class="card">
 
-    
+  
 <div class="panelTitle"><span>Leaderboard</span><span id="standingsModeLabel">Classic Mode</span></div>
     
 <div id="leaderboardList">
