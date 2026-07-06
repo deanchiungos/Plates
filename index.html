@@ -1456,25 +1456,29 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   font-weight:900;
 }
   
-
 .inviteActions{
-  display:flex !important;
-  flex-direction:column !important;
-  gap:16px !important;
-  width:100% !important;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-top:22px;
 }
 
-.inviteActions button,
 .inviteActions .secondary{
-  display:block !important;
-  width:100% !important;
-  max-width:none !important;
-  min-height:58px !important;
-  margin:0 !important;
-  box-sizing:border-box !important;
-  border-radius:999px !important;
+  width:100%;
+  min-height:56px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:900;
+  border:2px solid #cfe0f7;
+  background:#fff;
+  color:var(--blue);
+  box-shadow:0 4px 12px rgba(0,0,0,.04);
 }
-  
+
+.inviteActions .secondary:active{
+  transform:scale(.98);
+}
+
 
 .recentPts{
   margin-left:8px;
@@ -3894,15 +3898,13 @@ body::after{
      PLT-4832
     </div>
 
-    <div class="inviteActions">
-  <button class="secondary" id="copyInviteBtn" type="button">
-    Copy Invite Code
-  </button>
+<button class="secondary" id="copyInviteBtn" type="button">
+  📋 Copy Invite Code
+</button>
 
-  <button class="secondary" id="shareInviteBtn" type="button">
-    Share Invite
-  </button>
-</div>
+<button class="secondary" id="shareInviteBtn" type="button">
+  📤 Share Invite
+</button>
     
 
   </div>
