@@ -4122,6 +4122,11 @@ var counts = safeParse(localStorage.platesCounts, "{}");
 var log = safeParse(localStorage.platesLog, "[]");
 var tripName = localStorage.platesTripName || "Summer Roadtrip";
   var tripInviteCode = localStorage.platesInviteCode || "";
+if (tripInviteCode.startsWith("ROAD-")) {
+  tripInviteCode = tripInviteCode.replace("ROAD-", "PLT-");
+  localStorage.platesInviteCode = tripInviteCode;
+}
+  
   var hasShownCompletion = localStorage.platesCompletionShown === "true";
 var tripCount = Number(localStorage.platesTripCount || 1);
 var savedTrips = safeParse(localStorage.platesSavedTrips, "[]");
