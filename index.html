@@ -5470,6 +5470,31 @@ if(copyInviteBtn) {
     });
   };
 }
+
+var shareInviteBtn = document.getElementById("shareInviteBtn");
+
+if (shareInviteBtn) {
+  shareInviteBtn.onclick = function () {
+    var code = getTripInviteCode();
+
+    var text =
+      "Join my PLATES Battle!\n\n" +
+      "Battle Code: " + code + "\n\n" +
+      "https://deanchiungos.github.io/Plates";
+
+    if (navigator.share) {
+      navigator.share({
+        title: "Join my PLATES Battle!",
+        text: text
+      });
+    } else {
+      navigator.clipboard.writeText(text);
+      toast("Battle invite copied");
+    }
+  };
+}
+
+  
   
   var addPlayerBtn = document.getElementById("addPlayerBtn");
   if(addPlayerBtn) addPlayerBtn.onclick = addPlayer;
