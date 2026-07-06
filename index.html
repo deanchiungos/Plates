@@ -821,12 +821,17 @@ html,body {
     linear-gradient(180deg,#bdefff 0%,#dff8ff 45%,#f5fff3 100%);
 }
 
-.logo{
+.logo img{
+  display:block;
   width:100%;
-  max-width:460px;
-  margin:0 auto 6px;
-  padding:0;
+  max-width:300px;   /* reduce from 340px */
+  height:auto;
+  margin:0 auto;
+  filter:drop-shadow(0 8px 18px rgba(0,0,0,.12));
+  animation:logoFade .45s ease;
 }
+
+  
 
 .logo::before,
 .logo::after{
@@ -834,9 +839,7 @@ html,body {
   display:none;
 }
 
-.logo .usaMark{
-  display:none;
-}
+
 
 .logo h1,
 .logo .tagline{
@@ -844,21 +847,11 @@ html,body {
 }
 
 
-.logo img{
-    display:block;
+.logo{
   width:100%;
   max-width:340px;
-  height:auto;
-  height:auto;
-  filter:drop-shadow(0 8px 18px rgba(0,0,0,.12));
-}
-
-  .logo img{
-  display:block;
-  width:100%;
-  height:auto;
-  filter:drop-shadow(0 8px 18px rgba(0,0,0,.12));
-  animation:logoFade .45s ease;
+  margin:-8px auto 2px;
+  padding:0;
 }
 
 @keyframes logoFade{
