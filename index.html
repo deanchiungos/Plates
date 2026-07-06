@@ -5076,9 +5076,7 @@ function renderFamily(c, unlockedBadges) {
   var familyCount = document.getElementById("familyCount")
 
 if(familyCount) {
-  familyCount.textContent =
-    players.length + " " +
-    (players.length === 1 ? "Player" : "Players");
+familyCount.textContent = players.length;
 }
   
   var board = document.getElementById("leaderboardList");
