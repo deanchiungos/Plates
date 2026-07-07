@@ -4300,19 +4300,26 @@ function saveAccountFromSheet(){
     return;
   }
 
-  account = {
-    username: username,
-    email: email,
-    signedIn: true
-  };
 
-  saveAccount();
-  closeAccountSheet();
-  toast("Account saved");
-  render();
-}
+ account = {
+  username: username,
+  email: email,
+  signedIn: true
+};
 
-  
+saveAccount();
+
+plateName = cleanPlateName(username);
+localStorage.setItem("platesPlateName", plateName);
+
+profile.name = username;
+profile.email = email;
+localStorage.setItem("platesProfile", JSON.stringify(profile));
+
+closeAccountSheet();
+toast("Account saved");
+render();
+} 
   
 function stateNameFromCode(code) {
   var select = document.getElementById("plateStateSelect");
