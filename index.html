@@ -4457,15 +4457,20 @@ function dismissOnboarding() {
 }
 
 
-  function loadProfile() {
+
+function loadProfile() {
   var nameInput = document.getElementById("profileName");
   var emailInput = document.getElementById("profileEmail");
+  var plateInput = document.getElementById("plateNameInput");
 
   if(nameInput) nameInput.value = profile.name || "";
-
-
-
   if(emailInput) emailInput.value = profile.email || "";
+
+  if(plateInput) {
+    plateInput.value = plateName || profile.name || "";
+  }
+
+  renderVanityPlate();
 
   var preview = document.getElementById("avatarPreview");
   if(preview) preview.textContent = profile.avatar || "🚗";
@@ -4478,7 +4483,7 @@ function dismissOnboarding() {
     }
   });
 }
-
+  
 function saveProfile() {
   var nameInput = document.getElementById("profileName");
   var emailInput = document.getElementById("profileEmail");
