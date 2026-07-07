@@ -3407,7 +3407,43 @@ body::after{
   padding:14px 18px 18px;
   box-shadow:0 18px 60px rgba(0,0,0,.28);
 }
+
+.accountBox{
+  margin:12px 0 18px;
+  padding:0;
+}
+
+.accountBox .title{
+  text-align:left;
+  font-size:24px;
+  line-height:1.1;
+  margin-bottom:6px;
+}
+
+.accountBox .sub{
+  text-align:left;
+  font-size:17px;
+  line-height:1.2;
+  margin-top:0;
+}
   
+.accountName{
+  color:var(--navy);
+  font-size:24px;
+  font-weight:950;
+  line-height:1.1;
+  text-align:left;
+}
+
+.accountEmail{
+  color:var(--muted);
+  font-size:17px;
+  font-weight:850;
+  line-height:1.25;
+  text-align:left;
+  margin-top:8px;
+}
+
   
 </style>
 </head>
@@ -5390,9 +5426,9 @@ var createAccountBtn = document.getElementById("createAccountBtn");
 
 if(accountBox) {
   if(isSignedIn()) {
-    accountBox.innerHTML =
-      '<div class="title">@' + account.username + '</div>' +
-      '<div class="sub">' + account.email + '</div>';
+   accountBox.innerHTML =
+  '<div class="accountName">@' + account.username + '</div>' +
+  '<div class="accountEmail">' + account.email + '</div>';
   } else {
     accountBox.innerHTML =
       '<div class="memoryEmpty">Play with and against friends, compete globally & more!</div>';
