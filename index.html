@@ -3430,6 +3430,28 @@ body::after{
 
     <div class="newGameSectionLabel">How to Play</div>
 
+<div class="accountOverlay hidden" id="accountOverlay">
+  <div class="accountSheet">
+    <div class="newGameHandle"></div>
+
+    <div class="newGameTitle">Create Account</div>
+
+    <div class="newGameSectionLabel">Username</div>
+    <input class="newGameInput" id="accountUsernameInput" type="text" placeholder="DCHIUNGOS">
+
+    <div class="newGameSectionLabel">Email</div>
+    <input class="newGameInput" id="accountEmailInput" type="email" placeholder="you@email.com">
+
+    <button class="secondary modeCloseBtn" id="accountCancelBtn" type="button">
+      Cancel
+    </button>
+
+    <button class="primary createGameBtn" id="accountSaveBtn" type="button">
+      Create Account
+    </button>
+  </div>
+</div>
+    
     <button class="newGameOption active" data-game-type="solo" type="button">
       <strong>🚗 Solo</strong>
       <span>Play by yourself</span>
@@ -4217,25 +4239,53 @@ function isSignedIn(){
   return account && account.signedIn && account.username;
 }
 
+
 function createAccount(){
-  var username = prompt("Choose a username:", account.username || "");
+  var overlay = document.getElementById("accountOverlay");
+  var usernameInput = document.getElementById("accountUsernameInput");
+  var emailInput = document.getElementById("accountEmailInput");
 
-  if(!username || !username.trim()) return;
+  if(usernameInput) usernameInput.value = account.username || "";
+  if(emailInput) emailInput.value = account.email || "";
 
-  var email = prompt("Email:", account.email || "");
+  if(overlay) overlay.classList.remove("hidden");
+}
 
-  if(!email || !email.trim()) return;
+function closeAccountSheet(){
+  var overlay = document.getElementById("accountOverlay");
+  if(overlay) overlay.classList.add("hidden");
+}
+
+function saveAccountFromSheet(){
+  var usernameInput = document.getElementById("accountUsernameInput");
+  var emailInput = document.getElementById("accountEmailInput");
+
+  var username = usernameInput ? usernameInput.value.trim().replace(/^@/, "") : "";
+  var email = emailInput ? emailInput.value.trim() : "";
+
+  if(!username) {
+    toast("Username required");
+    return;
+  }
+
+  if(!email) {
+    toast("Email required");
+    return;
+  }
 
   account = {
-    username: username.trim().replace(/^@/, ""),
-    email: email.trim(),
+    username: username,
+    email: email,
     signedIn: true
   };
 
   saveAccount();
-  toast("Account created");
+  closeAccountSheet();
+  toast("Account saved");
   render();
 }
+
+  
   
 function stateNameFromCode(code) {
   var select = document.getElementById("plateStateSelect");
@@ -5573,6 +5623,13 @@ if (recentEl) {
 
 function attachHandlers() {
 
+var accountCancelBtn = document.getElementById("accountCancelBtn");
+if(accountCancelBtn) accountCancelBtn.onclick = closeAccountSheet;
+
+var accountSaveBtn = document.getElementById("accountSaveBtn");
+if(accountSaveBtn) accountSaveBtn.onclick = saveAccountFromSheet;
+
+  
 var createAccountBtn = document.getElementById("createAccountBtn");
 if(createAccountBtn) {
   createAccountBtn.onclick = createAccount;
