@@ -4309,13 +4309,18 @@ function saveAccountFromSheet(){
 
 saveAccount();
 
-plateName = cleanPlateName(username);
+plateName = username;
 localStorage.setItem("platesPlateName", plateName);
 
 profile.name = username;
 profile.email = email;
 localStorage.setItem("platesProfile", JSON.stringify(profile));
 
+
+renderVanityPlate();
+loadProfile();
+
+  
 closeAccountSheet();
 toast("Account saved");
 render();
