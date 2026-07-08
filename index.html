@@ -4326,6 +4326,13 @@ function createAccount(){
   if(usernameInput) usernameInput.value = account.username || "";
   if(emailInput) emailInput.value = account.email || "";
 
+
+var title = document.querySelector("#accountOverlay .newGameTitle");
+var saveBtn = document.getElementById("accountSaveBtn");
+
+if(title) title.textContent = isSignedIn() ? "Edit Account" : "Create Account";
+if(saveBtn) saveBtn.textContent = isSignedIn() ? "Save Account" : "Create Account";
+  
   if(overlay) overlay.classList.remove("hidden");
 }
 
