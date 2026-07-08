@@ -5959,6 +5959,33 @@ if(copyFriendCodeBtn){
     toast("Friend code copied");
   };
 }
+
+var inviteFriendsBtn = document.getElementById("inviteFriendsBtn");
+
+if(inviteFriendsBtn){
+  inviteFriendsBtn.onclick = function(){
+
+    var text =
+      "Join my PLATES game!\n\n" +
+      "Friend Code: " + account.friendCode + "\n\n" +
+      "https://deanchiungos.github.io/Plates";
+
+    if(navigator.share){
+
+      navigator.share({
+        title: "Join my PLATES",
+        text: text
+      });
+
+    } else {
+
+      navigator.clipboard.writeText(text);
+      toast("Invite copied");
+
+    }
+
+  };
+}
   
   
   var accountCloseBtn = document.getElementById("accountCloseBtn");
