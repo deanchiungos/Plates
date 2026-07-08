@@ -5168,7 +5168,9 @@ if (mapTitle) {
   mapTitle.textContent = name;
 }
 
-  document.getElementById("stateDetails").innerHTML =
+  var stateDetails = document.getElementById("stateDetails");
+if(!stateDetails) return; stateDetails.innerHTML =
+  
     '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
       '<div><div class="stateDetailName">' + name + '</div>' +
       '<div class="stateDetailSub">' + (found ? "FOUND" : "MISSING") + '</div></div>' +
