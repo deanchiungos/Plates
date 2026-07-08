@@ -506,12 +506,15 @@ body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
 .mapState.rare:not(.hit) {
   border-color:#d8dde7;
 }
+  
 body.show-rarity .mapState.rare:not(.hit) {
   border-color:var(--gold);
 }
+  
 .mapBlank {
   opacity:0;
 }
+  
 .mapLegend {
   display:flex;
   gap:12px;
@@ -519,7 +522,10 @@ body.show-rarity .mapState.rare:not(.hit) {
   font-size:12px;
   color:var(--muted);
   font-weight:800;
+    margin-top:10px;
 }
+
+  
 .legendBox {
   width:14px;
   height:14px;
@@ -1010,6 +1016,7 @@ html,body {
   padding:10px;
   box-shadow:0 4px 12px rgba(0,0,0,.06);
   overflow:hidden;
+  padding-bottom:8px;
 }
 
 .interactiveUSMap {
