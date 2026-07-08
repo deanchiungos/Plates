@@ -4162,23 +4162,43 @@ body::after{
   </section>
 <section id="profileScreen" class="screen hidden">
 
-  <div class="card accountCard">
+<div class="card accountCard">
   <div class="panelTitle">
     <span>Account</span>
   </div>
 
-<div class="accountBox" id="accountBox"></div>
+  <div class="accountBox" id="accountBox"></div>
 
   <button class="primary" id="createAccountBtn" type="button">
     Create Account
   </button>
 </div>
-  
+
+<div class="card friendsCard">
+  <div class="panelTitle">
+    <span>Friends</span>
+  </div>
+
+  <div class="friendCodeBox">
+    <div class="profileLabel">Friend Code</div>
+    <div class="friendCode" id="friendCodeDisplay">PLT-XXXXXX</div>
+  </div>
+
+  <button class="primary" id="copyFriendCodeBtn" type="button">
+    Copy Friend Code
+  </button>
+
+  <button class="secondary" id="inviteFriendsBtn" type="button">
+    Invite Friends
+  </button>
+</div>
+
 <div class="card">
   <div class="panelTitle profileTitle">
     <span>Profile</span>
   </div>
 
+  
     <div class="vanityPlatePreview profilePlateHero">
   <div class="plateState">NEW YORK</div>
   <div class="plateText" id="plateTextPreview">DCHIUNGOS</div>
