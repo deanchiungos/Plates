@@ -5838,13 +5838,14 @@ if (shareInviteBtn) {
   });
 
 
+
+document.querySelectorAll("[data-map-code], .svgState").forEach(function(cell){
+  cell.onclick = function(){
+    var code = cell.dataset.mapCode || cell.dataset.code || cell.getAttribute("data-code");
+    if(code) selectMapState(code);
+  };
+});
   
-  document.querySelectorAll("[data-map-code]").forEach(function(cell){
-    cell.onclick = function(){
-      var code = cell.dataset.mapCode;
-      selectMapState(code);
-    };
-  });
 
 var bestStatBtn = document.getElementById("bestStatBtn");
 if (bestStatBtn) {
