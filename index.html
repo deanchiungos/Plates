@@ -4303,6 +4303,10 @@ var selectedState = "";
 
 var plateName = localStorage.getItem("platesPlateName") || "DCHIUNGOS";
 
+function generateFriendCode(){
+  return "PLT-" + Math.random().toString(36).substring(2, 8).toUpperCase();
+}
+  
 function saveAccount(){
   localStorage.setItem("platesAccount", JSON.stringify(account));
 }
@@ -4346,10 +4350,11 @@ function saveAccountFromSheet(){
   }
 
 
- account = {
+account = {
   username: username,
   email: email,
-  signedIn: true
+  signedIn: true,
+  friendCode: account.friendCode || generateFriendCode()
 };
 
 saveAccount();
