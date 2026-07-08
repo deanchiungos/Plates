@@ -3408,6 +3408,7 @@ body::after{
   border-radius:28px 28px 24px 24px;
   padding:14px 18px 18px;
   box-shadow:0 18px 60px rgba(0,0,0,.28);
+    position:relative;
 }
 
 .accountBox{
@@ -3453,6 +3454,24 @@ body::after{
   margin-left:10px;
 }
 
+
+.sheetCloseBtn{
+  position:absolute;
+  top:16px;
+  right:16px;
+  width:36px;
+  height:36px;
+  border:none;
+  border-radius:50%;
+  background:#f3f6fa;
+  color:var(--navy);
+  font-size:20px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+  
+  
   
 </style>
 </head>
@@ -3495,6 +3514,9 @@ body::after{
   <div class="newGameSheet">
 
     <div class="newGameHandle"></div>
+    
+    <button class="sheetCloseBtn" id="accountCloseBtn" type="button">✕</button>
+    
     <div class="newGameTitle">New Game</div>
 
     <div class="newGameSectionLabel">How to Play</div>
@@ -3540,10 +3562,6 @@ body::after{
     <div class="newGameSectionLabel">Game Name</div>
     <input class="newGameInput" id="newGameNameInput" type="text" placeholder="Summer Roadtrip">
 
-    
-    <button class="secondary modeCloseBtn" id="modeCloseBtn" type="button">
-      Cancel
-    </button>
 
   </div>
 </div>
@@ -3552,6 +3570,8 @@ body::after{
   <div class="accountSheet">
     <div class="newGameHandle"></div>
 
+<button class="sheetCloseBtn" id="accountCloseBtn" type="button">✕</button>
+    
     <div class="newGameTitle">Create Account</div>
 
   <div class="newGameSectionLabel">Player Name</div>
@@ -3560,9 +3580,7 @@ body::after{
     <div class="newGameSectionLabel">Email</div>
     <input class="newGameInput" id="accountEmailInput" type="email" placeholder="you@email.com">
 
-    <button class="secondary modeCloseBtn" id="accountCancelBtn" type="button">
-      Cancel
-    </button>
+ 
 
     <button class="primary createGameBtn" id="accountSaveBtn" type="button">
       Create Account
@@ -5734,8 +5752,8 @@ if (recentEl) {
 
 function attachHandlers() {
 
-var accountCancelBtn = document.getElementById("accountCancelBtn");
-if(accountCancelBtn) accountCancelBtn.onclick = closeAccountSheet;
+var accountCloseBtn = document.getElementById("accountCloseBtn");
+if(accountCloseBtn) accountCloseBtn.onclick = closeAccountSheet;
 
 var accountSaveBtn = document.getElementById("accountSaveBtn");
 if(accountSaveBtn) accountSaveBtn.onclick = saveAccountFromSheet;
