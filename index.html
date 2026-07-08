@@ -4610,6 +4610,13 @@ if(plateDisplay) plateDisplay.textContent = plateName || account.username || "PL
 var stateDisplay = document.getElementById("profileStateDisplay");
 if(stateDisplay) stateDisplay.textContent = stateNameFromCode(plateState);
 
+  var friendCodeDisplay = document.getElementById("friendCodeDisplay");
+if(friendCodeDisplay) {
+  friendCodeDisplay.textContent = account.friendCode || "";
+}
+
+  
+
 var avatarPicker = document.querySelector(".avatarPicker");
 if (avatarPicker) {
   avatarPicker.classList.add("readOnly");
