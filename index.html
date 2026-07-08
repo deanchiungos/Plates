@@ -4320,14 +4320,20 @@ function createAccount(){
   var overlay = document.getElementById("accountOverlay");
   var usernameInput = document.getElementById("accountUsernameInput");
   var emailInput = document.getElementById("accountEmailInput");
+
   var title = document.querySelector("#accountOverlay .newGameTitle");
   var saveBtn = document.getElementById("accountSaveBtn");
 
   if(usernameInput) usernameInput.value = account.username || "";
   if(emailInput) emailInput.value = account.email || "";
 
-  if(title) title.textContent = isSignedIn() ? "Edit Account" : "Create Account";
-  if(saveBtn) saveBtn.textContent = isSignedIn() ? "Save Account" : "Create Account";
+  if(title){
+    title.textContent = isSignedIn() ? "Edit Account" : "Create Account";
+  }
+
+  if(saveBtn){
+    saveBtn.textContent = isSignedIn() ? "Save Account" : "Create Account";
+  }
 
   if(overlay) overlay.classList.remove("hidden");
 }
