@@ -3627,14 +3627,23 @@ body::after{
   </div>
 </div>
 
+
 <div class="accountOverlay hidden" id="accountOverlay">
   <div class="accountSheet">
+
     <div class="newGameHandle"></div>
 
-<button class="sheetCloseBtn" id="accountCloseBtn" type="button">✕</button>
-    
+    <button
+      class="sheetCloseBtn"
+      type="button"
+      onclick="closeAccountSheet()">
+      ✕
+    </button>
+
     <div class="newGameTitle">Create Account</div>
 
+    
+  
   <div class="newGameSectionLabel">Player Name</div>
     <input class="newGameInput" id="accountUsernameInput" type="text" placeholder="Choose a player name">
 
