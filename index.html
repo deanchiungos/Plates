@@ -4410,6 +4410,8 @@ loadProfile();
 closeAccountSheet();
 toast("Account saved");
 render();
+
+
 } 
   
 function stateNameFromCode(code) {
@@ -4578,12 +4580,21 @@ var plateInput = document.getElementById("plateNameInput");
     }
   });
 
+
+  var plateDisplay = document.getElementById("profilePlateDisplay");
+if(plateDisplay) plateDisplay.textContent = plateName || account.username || "PLATES";
+
+var stateDisplay = document.getElementById("profileStateDisplay");
+if(stateDisplay) stateDisplay.textContent = stateNameFromCode(plateState);
+
 var avatarPicker = document.querySelector(".avatarPicker");
 if (avatarPicker) {
   avatarPicker.classList.add("readOnly");
 }
-  
+
 }
+
+  
   
 function saveProfile() {
   var nameInput = document.getElementById("profileName");
