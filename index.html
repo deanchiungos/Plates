@@ -5869,7 +5869,17 @@ if (recentEl) {
 
 function attachHandlers() {
 
-var accountCloseBtn = document.getElementById("accountCloseBtn");
+var copyFriendCodeBtn = document.getElementById("copyFriendCodeBtn");
+
+if(copyFriendCodeBtn){
+  copyFriendCodeBtn.onclick = function(){
+    navigator.clipboard.writeText(account.friendCode);
+    toast("Friend code copied");
+  };
+}
+  
+  
+  var accountCloseBtn = document.getElementById("accountCloseBtn");
 if(accountCloseBtn) accountCloseBtn.onclick = closeAccountSheet;
 
 var accountSaveBtn = document.getElementById("accountSaveBtn");
