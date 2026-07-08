@@ -2416,34 +2416,56 @@ body {
   font-weight:950;
   line-height:1.15;
 }
-  
+
 .friendsCard{
   padding:24px;
 }
 
-.friendCodeBox{
+.friendCodeCard{
   background:#f8fbff;
-  border:2px dashed rgba(21,119,210,.28);
-  border-radius:22px;
-  padding:18px;
+  border:2px dashed rgba(21,119,210,.25);
+  border-radius:24px;
+  padding:22px 18px;
+  margin:18px 0;
   text-align:center;
-  margin:14px 0 16px;
+  cursor:pointer;
+  transition:.18s;
+}
+
+.friendCodeCard:active{
+  transform:scale(.98);
+  background:#eef7ff;
+}
+
+.friendCodeAction{
+  color:var(--muted);
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:10px;
 }
 
 .friendCode{
   color:var(--navy);
-  font-size:28px;
+  font-size:34px;
   font-weight:950;
   letter-spacing:1px;
-  margin-top:6px;
 }
 
-.friendsCard button{
+.friendsCard #inviteFriendsBtn{
   width:100%;
   min-height:58px;
-  margin-top:12px;
+  margin-top:16px;
+  border-radius:999px;
+  background:#fff !important;
+  color:var(--blue) !important;
+  border:2px solid #d8e2ef !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+  font-size:20px;
+  font-weight:950;
 }
-
+  
   
 .modeCard {
   display:grid;
