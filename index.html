@@ -5378,17 +5378,29 @@ function renderBadges(c) {
 
   var featuredBadgeEl = document.getElementById("featuredBadge");
   if (featuredBadgeEl) {
-    if (unlockedBadges > 0) {
-      featuredBadgeEl.style.display = "block";
-      featuredBadgeEl.innerHTML =
-        '<div class="latestBadgeLabel">Latest Badge</div>' +
-        '<div class="latestBadgeIcon">🥇</div>' +
-        '<div class="latestBadgeName">First Plate</div>' +
-        '<div class="latestBadgeDesc">Spot your first state</div>';
-    } else {
-      featuredBadgeEl.style.display = "none";
-      featuredBadgeEl.innerHTML = "";
-    }
+
+if (unlockedBadges > 0) {
+
+  var latest = badges.filter(function(b){
+    return b[3];
+  }).slice(-1)[0];
+
+  featuredBadgeEl.style.display = "block";
+
+  featuredBadgeEl.innerHTML =
+    '<div class="latestBadgeLabel">Latest Badge</div>' +
+    '<div class="latestBadgeIcon">' + latest[0] + '</div>' +
+    '<div class="latestBadgeName">' + latest[1] + '</div>' +
+    '<div class="latestBadgeDesc">' + latest[2] + '</div>';
+
+} else {
+
+  featuredBadgeEl.style.display = "none";
+  featuredBadgeEl.innerHTML = "";
+
+}
+
+    
   }
 
   var badgesEl = document.getElementById("badges");
