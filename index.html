@@ -4442,6 +4442,11 @@ renderVanityPlate();
   '{"name":"","email":"","avatar":"🚗"}'
 );
 
+  var account = safeParse(
+  localStorage.getItem("platesAccount"),
+  '{"username":"","email":"","signedIn":false,"friendCode":""}'
+);
+
 profile.avatar = profile.avatar || "🚗";
 
 var players;
