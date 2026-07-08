@@ -4575,7 +4575,7 @@ function dismissOnboarding() {
 function loadProfile() {
   var nameInput = document.getElementById("profileName");
   var emailInput = document.getElementById("profileEmail");
-  var plateInput = document.getElementById("");
+var plateInput = document.getElementById("plateNameInput");
 
   if(nameInput) nameInput.value = profile.name || "";
   if(emailInput) emailInput.value = profile.email || "";
@@ -4596,6 +4596,12 @@ function loadProfile() {
       btn.classList.remove("selected");
     }
   });
+
+var avatarPicker = document.querySelector(".avatarPicker");
+if (avatarPicker) {
+  avatarPicker.classList.add("readOnly");
+}
+  
 }
   
 function saveProfile() {
