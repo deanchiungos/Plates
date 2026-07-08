@@ -4273,10 +4273,12 @@ if (plateStateSelect) {
     renderVanityPlate();
   });
 }
-  var account = safeParse(
+  
+var account = safeParse(
   localStorage.getItem("platesAccount"),
-  '{"username":"","email":"","signedIn":false}'
+  '{"username":"","email":"","signedIn":false,"friendCode":""}'
 );
+  
   var plateState = localStorage.getItem("platesPlateState") || "NY";
   var mode = localStorage.platesMode || "classic";
 var gameType = localStorage.platesGameType || (mode === "weighted" ? "battle" : mode === "unlimited" ? "roadtrip" : "solo");
@@ -4445,10 +4447,7 @@ renderVanityPlate();
   profile.avatar = profile.avatar || "🚗";
 
   
-  var account = safeParse(
-  localStorage.getItem("platesAccount"),
-  '{"username":"","email":"","signedIn":false,"friendCode":""}'
-);
+
 
 
 var players;
