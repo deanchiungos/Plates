@@ -2177,7 +2177,16 @@ font-size:34px;
   justify-content:center;
 }
 
+.avatarPicker.readOnly{
+  pointer-events:none;
+  opacity:.6;
+}
 
+.avatarPicker.readOnly .avatarBtn.selected{
+  opacity:1;
+}
+
+  
 .savedMsg {
   margin-top:14px;
   text-align:center;
@@ -2685,7 +2694,7 @@ body {
   color:var(--muted);
 }
 
-.plateNameInput{
+.{
   width:100%;
   box-sizing:border-box;
   display:block;
@@ -4118,11 +4127,12 @@ body::after{
 
 <div class="formGroup">
   <label>Username</label>
- <input
-  id="plateNameInput"
-  class="plateNameInput"
-  maxlength="15"
-  placeholder="Pick a username">
+  <input
+    id=""
+    class=""
+    maxlength="15"
+    placeholder="Pick a username"
+    readonly>
 </div>
 
 <div class="formGroup">
@@ -4182,19 +4192,29 @@ body::after{
   </select>
 </div>
 
-
 <div class="formGroup">
   <label>Name</label>
-  <input id="profileName" type="text" placeholder="Your name">
+  <input
+    id="profileName"
+    class="profileInput"
+    placeholder="Your name"
+    readonly>
 </div>
 
-    <div class="formGroup">
-      <label>Email</label>
-      <input id="profileEmail" type="email" placeholder="name@email.com">
-    </div>
+  
+
+<div class="formGroup">
+  <label>Email</label>
+  <input
+    id="profileEmail"
+    class="profileInput"
+    type="email"
+    placeholder="you@email.com"
+    readonly>
+</div>
 
 
-
+  
     <div class="formGroup">
   <label>Avatar</label>
 
@@ -4427,7 +4447,7 @@ function cleanPlateName(value) {
 }
 
 function renderVanityPlate() {
-  var input = document.getElementById("plateNameInput");
+  var input = document.getElementById("");
   var preview = document.getElementById("plateTextPreview");
 
   var stateSelect = document.getElementById("plateStateSelect");
@@ -4450,7 +4470,7 @@ function renderVanityPlate() {
     }
   }
 }
-var plateInput = document.getElementById("plateNameInput");
+var plateInput = document.getElementById("");
 if (plateInput) {
   plateInput.addEventListener("input", function() {
     plateName = cleanPlateName(this.value);
@@ -4462,7 +4482,7 @@ if (plateInput) {
 var savePlateBtn = document.getElementById("savePlateNameBtn");
 if (savePlateBtn) {
   savePlateBtn.onclick = function() {
-    plateName = cleanPlateName(document.getElementById("plateNameInput").value);
+    plateName = cleanPlateName(document.getElementById("").value);
     localStorage.setItem("platesPlateName", plateName);
     renderVanityPlate();
     save();
@@ -4555,7 +4575,7 @@ function dismissOnboarding() {
 function loadProfile() {
   var nameInput = document.getElementById("profileName");
   var emailInput = document.getElementById("profileEmail");
-  var plateInput = document.getElementById("plateNameInput");
+  var plateInput = document.getElementById("");
 
   if(nameInput) nameInput.value = profile.name || "";
   if(emailInput) emailInput.value = profile.email || "";
@@ -4612,7 +4632,7 @@ if(saveBtn) {
   }, 2000);
 }
 
-var plateInput = document.getElementById("plateNameInput");
+var plateInput = document.getElementById("");
 if (plateInput) {
   plateName = cleanPlateName(plateInput.value);
 }
