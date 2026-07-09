@@ -4824,6 +4824,33 @@ function cleanPlateName(value) {
     .slice(0, 10);
 }
 
+function renderDailyChallenge(){
+
+  var found = log.some(function(x){
+    return x.code === dailyChallenge.id;
+  });
+
+  var title =
+    document.getElementById("dailyChallengeTitle");
+
+  var progress =
+    document.getElementById("dailyChallengeProgress");
+
+  var fill =
+    document.getElementById("dailyChallengeFill");
+
+  if(!title || !progress || !fill) return;
+
+  title.textContent =
+    dailyChallenge.title;
+
+  progress.textContent =
+    (found ? "1" : "0") + " / 1 Complete";
+
+  fill.style.width =
+    found ? "100%" : "0%";
+}
+  
 function renderVanityPlate() {
   var input = document.getElementById("");
   var preview = document.getElementById("plateTextPreview");
