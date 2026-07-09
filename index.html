@@ -349,6 +349,7 @@ button {
   font-size:22px;
   line-height:1.05;
     margin-left:0px;
+    padding-left:4px;
 }
 
 .teamHelpTitle {
@@ -3056,15 +3057,7 @@ margin:12px 0 6px !important;
   padding:8px 0 2px !important;
 } 
 
-  /* Recent Sightings */
-.card > .panelTitle{
-  padding-left:8px;
-}
 
-/* How to Play */
-.gameModesMini > .panelTitle{
-  padding-left:0px;
-}
 
 .tripOptionsMenu .tripMenuItem:focus,
 .tripOptionsMenu .tripMenuItem:focus-visible,
@@ -3077,17 +3070,25 @@ margin:12px 0 6px !important;
 }
 
   
-.myStatsCard .panelTitle{
-  padding-left:2px;
-}
 
 .myStatsCard{
   margin-top:10px;
 }
   
-.howToPlayCard .panelTitle{
-  padding-left:0;
+
+.card > .panelTitle{
+  padding-left:4px;
+  
 }
+
+.myStatsCard .panelTitle,
+.dailyChallengeCard .panelTitle,
+.howToPlayCard .panelTitle,
+.gameModesMini .panelTitle,
+.statesCard .panelTitle{
+  padding-left:4px !important;
+}
+  
 
   .tripOptionsMenu #endTripBtn{
   border:0 !important;
