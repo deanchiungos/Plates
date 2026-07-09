@@ -5750,8 +5750,6 @@ function getBadgeProgress(badge) {
   var c = collectedCount();
 
   if (badge.type === "states") {
-    return Math.min(c, badge.goal);
-  }
 
   if (badge.id === "coastToCoast") {
     var hasCA = log.some(function(x){ return x.code === "CA"; });
@@ -5842,7 +5840,7 @@ var c = collectedCount();
   var points = totalScore();
   var sightings = totalSightings();
   var left = Math.max(0, 50 - c);
-  var unlockedBadges = badgeCount(c);
+
 
   var featured = document.getElementById("featuredBadge");
 if (featured) {
