@@ -542,57 +542,6 @@ body.show-rarity .mapState.rare:not(.hit) {
   padding-left:12px;
     
 }
-.badge{
-  min-height:150px;
-  border:2px solid #e3ebf4;
-  background:#fff;
-  border-radius:24px;
-  padding:18px 12px;
-  text-align:center;
-  transition:.18s;
-  box-shadow:0 8px 18px rgba(11,62,103,.05);
-}
-
-.badge.unlocked{
-  opacity:1;
-  border-color:rgba(245,197,66,.75);
-  background:linear-gradient(180deg,#fff9df,#ffffff);
-}
-
-.badge.locked{
-  opacity:.42;
-  filter:grayscale(.65);
-  background:#f8fbff;
-}
-
-.badgeIcon{
-  width:68px;
-  height:68px;
-  margin:0 auto 12px;
-  border-radius:999px;
-  background:#fff;
-  border:2px solid rgba(7,55,99,.12);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:36px;
-}
-
-.badgeName{
-  font-size:14px;
-  font-weight:950;
-  color:var(--navy);
-  letter-spacing:.04em;
-  text-transform:uppercase;
-}
-
-.badgeDesc{
-  margin-top:5px;
-  font-size:12px;
-  font-weight:800;
-  color:var(--muted);
-  line-height:1.25;
-}
 
   
 .tripActions {
@@ -884,12 +833,7 @@ html,body {
   color:var(--green);
 }
 
-.badge.unlocked {
-  opacity:1;
-  background:linear-gradient(180deg,#fff9e8,#ffe9a8);
-  border:2px solid var(--gold);
-  box-shadow:0 8px 18px rgba(245,197,66,.35);
-}
+
 
 .shareCard {
   background:
@@ -1371,14 +1315,7 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   margin-top:6px;
 }
 
-.currentBadge {
-  background:var(--green);
-  color:#fff;
-  border-radius:999px;
-  padding:6px 10px;
-  font-size:11px;
-  font-weight:950;
-}
+
 
 .deleteTripBtn {
   background:#fff;
@@ -2332,9 +2269,7 @@ body {
   font-size:14px;
   font-weight:850;
 }
-.currentBadge {
-  pointer-events:none;
-}
+
 
 
 /* v45.1 leaderboard emoji fix */
@@ -2564,76 +2499,6 @@ body {
 
 
 
-
-
-.badgesTitle{
-  font-size:28px;
-  font-weight:950;
-  color:var(--navy);
-}
-
-.badgesCount{
-  margin-top:4px;
-  font-size:16px;
-  font-weight:800;
-  color:var(--muted);
-}
-
-
-.latestBadgeCard{
-  background:linear-gradient(180deg,#fff8d9,#ffffff);
-  border:2px solid rgba(245,197,66,.75);
-  border-radius:26px;
-  padding:24px 20px;
-  text-align:center;
-  margin:18px 0 22px;
-  box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.latestBadgeLabel{
-  color:#9a7a11;
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  margin-bottom:10px;
-}
-
-.latestBadgeIcon{
-  font-size:60px;
-  line-height:1;
-  margin-bottom:12px;
-}
-
-.latestBadgeName{
-  color:var(--navy);
-  font-size:24px;
-  font-weight:950;
-  margin-bottom:6px;
-}
-
-.latestBadgeDesc{
-  color:var(--muted);
-  font-size:15px;
-  font-weight:750;
-  line-height:1.35;
-}
-
-
-  
-
-.allBadgesTitle{
-  font-size:24px;
-  font-weight:950;
-  color:var(--navy);
-  margin-bottom:14px;
-}
-
-.badgeGrid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
 
 
 #stateDetails {
@@ -3611,7 +3476,166 @@ body::after{
 }
 
   
-  
+  /* BADGES */
+
+.badgesTitle{
+  font-size:32px;
+  font-weight:950;
+  color:var(--navy);
+  margin:0;
+}
+
+.badgesCount{
+  margin-top:4px;
+  font-size:18px;
+  font-weight:850;
+  color:var(--muted);
+}
+
+.badgeStats{
+  display:none;
+}
+
+.nextBadgeBox{
+  background:linear-gradient(180deg,#fff8d9,#ffffff);
+  border:2px solid rgba(245,197,66,.75);
+  border-radius:26px;
+  padding:22px 20px;
+  margin:18px 0 22px;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.nextBadgeLabel{
+  color:#9a7a11;
+  font-size:13px;
+  font-weight:950;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.nextBadgeMain{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.nextBadgeIcon{
+  width:64px;
+  height:64px;
+  min-width:64px;
+  border-radius:999px;
+  background:#fff;
+  border:2px solid rgba(245,197,66,.75);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+}
+
+.nextBadgeName{
+  font-size:24px;
+  font-weight:950;
+  color:var(--navy);
+}
+
+.nextBadgeProgress{
+  font-size:15px;
+  font-weight:850;
+  color:var(--muted);
+  margin:5px 0 9px;
+}
+
+.progressTrack{
+  width:100%;
+  height:9px;
+  background:rgba(11,62,103,.12);
+  border-radius:999px;
+  overflow:hidden;
+}
+
+.progressTrack.small{
+  height:6px;
+  margin-top:9px;
+}
+
+.progressFill{
+  height:100%;
+  background:var(--green);
+  border-radius:999px;
+}
+
+.allBadgesTitle{
+  font-size:24px;
+  font-weight:950;
+  color:var(--navy);
+  margin:4px 0 14px;
+}
+
+.badgeGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.badge{
+  min-height:165px;
+  border:2px solid #e3ebf4;
+  background:#fff;
+  border-radius:24px;
+  padding:18px 12px;
+  text-align:center;
+  transition:.18s;
+  box-shadow:0 8px 18px rgba(11,62,103,.05);
+}
+
+.badge.unlocked{
+  opacity:1;
+  border-color:rgba(245,197,66,.75);
+  background:linear-gradient(180deg,#fff9df,#ffffff);
+}
+
+.badge.locked{
+  opacity:.45;
+  filter:grayscale(.55);
+  background:#f8fbff;
+}
+
+.badgeIcon{
+  width:68px;
+  height:68px;
+  margin:0 auto 12px;
+  border-radius:999px;
+  background:#fff;
+  border:2px solid rgba(7,55,99,.12);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:36px;
+}
+
+.badgeName{
+  font-size:14px;
+  font-weight:950;
+  color:var(--navy);
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+
+.badgeDesc{
+  margin-top:5px;
+  font-size:12px;
+  font-weight:800;
+  color:var(--muted);
+  line-height:1.25;
+}
+
+.badgeMiniProgress{
+  font-size:12px;
+  font-weight:950;
+  color:var(--navy);
+  margin-top:10px;
+}
   
 </style>
 </head>
@@ -4079,12 +4103,9 @@ body::after{
       </div>
     </div>
 
-    <div id="featuredBadge" class="latestBadgeCard"></div>
+<div id="featuredBadge" class="latestBadgeCard"></div>
 
-    <div class="allBadgesTitle">All Badges</div>
-    
-
- <div class="badgeStats" id="badgeStats"></div>
+<div class="badgeStats" id="badgeStats"></div>
 
 <div class="nextBadgeBox" id="nextBadgeBox"></div>
 
