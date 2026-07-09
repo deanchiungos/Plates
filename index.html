@@ -6176,6 +6176,15 @@ if (recentEl) {
 
 function attachHandlers() {
 
+document.getElementById("addPlayerBtn").onclick = function () {
+  document.getElementById("addPlayerOverlay").classList.remove("hidden");
+};
+
+document.getElementById("closeAddPlayerBtn").onclick = function () {
+  document.getElementById("addPlayerOverlay").classList.add("hidden");
+};
+
+  
 document.addEventListener("click", function(e){
   var badgeBtn = e.target.closest(".badge");
   if (!badgeBtn) return;
@@ -6542,6 +6551,37 @@ showOnboardingIfNeeded();
   </div>
 </div>
 
+<div class="overlay hidden" id="addPlayerOverlay">
+
+  <div class="sheet">
+
+    <div class="sheetHeader">
+      <div class="sheetTitle">Add Player</div>
+
+      <button class="sheetClose" id="closeAddPlayerBtn" type="button">
+        ✕
+      </button>
+    </div>
+
+    <div class="fieldLabel">
+      Friend Code
+    </div>
+
+    <input
+      id="friendCodeInput"
+      class="textInput"
+      placeholder="PLT-XXXXXX"
+      autocomplete="off"
+    >
+
+    <button class="primary" id="confirmAddPlayerBtn" type="button">
+      Add Player
+    </button>
+
+  </div>
+
+</div>
+  
 
 </body>
 </html>
