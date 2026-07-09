@@ -2363,30 +2363,7 @@ body {
   padding:24px;
 }
 
-.friendCodeCard{
-  background:#f8fbff;
-  border:2px dashed rgba(21,119,210,.25);
-  border-radius:24px;
-  padding:22px 18px;
-  margin:18px 0;
-  text-align:center;
-  cursor:pointer;
-  transition:.18s;
-}
 
-.friendCodeCard:active{
-  transform:scale(.98);
-  background:#eef7ff;
-}
-
-.friendCodeAction{
-  color:var(--muted);
-  font-size:14px;
-  font-weight:900;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  margin-bottom:10px;
-}
 
 .friendCode{
   color:var(--navy);
@@ -4421,19 +4398,6 @@ body::after{
     <span>Players</span>
   </div>
 
-    <div class="friendCodeCard" id="friendCodeCard">
-  <div class="friendCodeAction">
-    Your Friend Code
-  </div>
-
-  <div class="friendCode" id="friendCode">
-    PLT-XXXXXX
-  </div>
-
-  <div class="plateHint">
-    Tap to copy
-  </div>
-</div>
 
 <button class="newGameBtn" id="addFriendBtn">
   Add Friend
@@ -4504,20 +4468,7 @@ body::after{
     <span>Friends</span>
   </div>
 
-
-<div class="friendCodeCard" id="copyFriendCodeBtn">
-
-  <div class="friendCodeAction">
-    Copy Friend Code
-  </div>
-
-  <div class="friendCode" id="friendCodeDisplay">
-    PLT-XXXXXX
-  </div>
-
-</div>
   
-
   <div class="friendsEmpty">
 
 
@@ -6323,15 +6274,7 @@ document.getElementById("addPlayerBtn").onclick = function () {
 });
 
   
-  
-  var copyFriendCodeBtn = document.getElementById("copyFriendCodeBtn");
 
-if(copyFriendCodeBtn){
-  copyFriendCodeBtn.onclick = function(){
-    navigator.clipboard.writeText(account.friendCode);
-    toast("Friend code copied");
-  };
-}
 
 var inviteFriendsBtn = document.getElementById("inviteFriendsBtn");
 
@@ -6680,16 +6623,6 @@ showOnboardingIfNeeded();
       </button>
     </div>
 
-    <div class="fieldLabel">
-      Friend Code
-    </div>
-
-    <input
-      id="friendCodeInput"
-      class="textInput"
-      placeholder="PLT-XXXXXX"
-      autocomplete="off"
-    >
 
     <button class="primary" id="confirmAddPlayerBtn" type="button">
       Add Player
