@@ -4968,6 +4968,12 @@ function cleanPlateName(value) {
 
 function renderDailyChallenge(){
 
+var found =
+  dailyChallenge.complete ||
+  log.some(function(x){
+    return x.code === dailyChallenge.state;
+  });
+  
   if(!dailyChallenge) return;
 
   var title =
@@ -4981,7 +4987,9 @@ function renderDailyChallenge(){
 
   if(!title || !progress || !fill) return;
 
-  var found = log.some(function(x){
+var found =
+  dailyChallenge.complete ||
+  log.some(function(x){
     return x.code === dailyChallenge.state;
   });
 
