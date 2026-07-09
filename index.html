@@ -4859,10 +4859,15 @@ function createAccount(){
     return;
   }
 
-  var missing =
-    states.filter(function(s){
-      return !selected[s.code];
-    });
+var allStates =
+  Array.from(
+    document.querySelectorAll(".state")
+  );
+
+var missing =
+  allStates.filter(function(btn){
+    return !counts[btn.dataset.code];
+  });
 
   var target =
     missing.length
@@ -4877,12 +4882,12 @@ function createAccount(){
           )
         ];
 
-  dailyChallenge = {
-    date:today,
-    type:"findState",
-    state:target.code,
-    complete:false
-  };
+dailyChallenge = {
+  date:today,
+  type:"findState",
+  state:target.dataset.code,
+  complete:false
+};
 
   localStorage.dailyChallenge =
     JSON.stringify(dailyChallenge);
