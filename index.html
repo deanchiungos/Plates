@@ -6021,7 +6021,24 @@ if (recentEl) {
 
 function attachHandlers() {
 
-var copyFriendCodeBtn = document.getElementById("copyFriendCodeBtn");
+document.addEventListener("click", function(e){
+  var badgeBtn = e.target.closest(".badge");
+  if (!badgeBtn) return;
+
+  var badge = badgeDefs.find(function(b){
+    return b.id === badgeBtn.dataset.badgeId;
+  });
+
+  if (!badge) return;
+
+  alert(
+    badge.name + "\n\n" +
+    badge.desc + "\n\n" +
+    getBadgeProgress(badge) + " / " + badge.goal
+  );
+});
+  
+  var copyFriendCodeBtn = document.getElementById("copyFriendCodeBtn");
 
 if(copyFriendCodeBtn){
   copyFriendCodeBtn.onclick = function(){
