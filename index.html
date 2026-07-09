@@ -6255,10 +6255,7 @@ if(badgeDoneBtn) {
   };
 }
 
-  
-document.getElementById("addPlayerBtn").onclick = function () {
-  document.getElementById("addPlayerOverlay").classList.remove("hidden");
-};
+
 
   document.addEventListener("click", function(e){
   var badgeBtn = e.target.closest(".badge");
@@ -6610,7 +6607,7 @@ showOnboardingIfNeeded();
 <div class="completionOverlay hidden" id="completionOverlay">
   <div class="completionCard">
     <div class="completionEmoji">🎉</div>
-    <div class="completionTitle">Roadtrip Complete!</div>
+    <div class="completionTitle">Roadtrip complete!</div>
     <div class="completionSub">You've collected all 50 states!</div>
     <button class="primary" id="closeCompletionBtn" type="button">Awesome!</button>
   </div>
