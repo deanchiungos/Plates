@@ -3639,6 +3639,52 @@ body::after{
   color:var(--navy);
   margin-top:10px;
 }
+
+
+.profileHero{
+  text-align:center;
+  padding:8px 0 20px;
+}
+
+.profileAvatar{
+  width:88px;
+  height:88px;
+  margin:0 auto 14px;
+  border-radius:999px;
+  background:#fff;
+  border:3px solid var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:50px;
+  box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.profileName{
+  font-size:30px;
+  font-weight:950;
+  color:var(--navy);
+}
+
+.profileHandle{
+  margin-top:4px;
+  font-size:16px;
+  font-weight:850;
+  color:var(--muted);
+}
+
+.profileLevel{
+  display:inline-block;
+  margin-top:14px;
+  padding:8px 18px;
+  border-radius:999px;
+  background:#fff;
+  border:2px solid var(--badge-yellow);
+  color:#9a7a11;
+  font-size:14px;
+  font-weight:950;
+}
+
   
 </style>
 </head>
@@ -5744,9 +5790,30 @@ var createAccountBtn = document.getElementById("createAccountBtn");
 
 if(accountBox) {
   if(isSignedIn()) {
-   accountBox.innerHTML =
-  '<div class="accountName">@' + account.username + '</div>' +
-  '<div class="accountEmail">' + account.email + '</div>';
+
+accountBox.innerHTML =
+  '<div class="profileHero">' +
+
+    '<div class="profileAvatar">' +
+      (profile.avatar || "🚗") +
+    '</div>' +
+
+    '<div class="profileName">' +
+      account.username +
+    '</div>' +
+
+    '<div class="profileHandle">@' +
+      account.username +
+    '</div>' +
+
+    '<div class="profileLevel">' +
+      unlockedBadges + ' Badge' +
+      (unlockedBadges === 1 ? '' : 's') +
+      ' Earned' +
+    '</div>' +
+
+  '</div>';
+    
   } else {
     accountBox.innerHTML =
       '<div class="memoryEmpty">Play with and against friends, compete globally & more!</div>';
