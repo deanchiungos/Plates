@@ -3753,37 +3753,31 @@ body::after{
   min-height:52px !important;
 }
 
-  .dailyChallengeCard{
+
+.dailyChallengeCard{
   padding:22px 24px !important;
-  background:#fff;
-  border:1px solid rgba(6,47,95,.10);
 }
 
 .dailyChallengeCard .panelTitle{
-  font-size:22px !important;
-  margin-bottom:16px !important;
+  margin-bottom:18px !important;
 }
 
 .challengeMission{
   color:var(--navy);
-  font-size:18px;
+  font-size:20px;
   font-weight:950;
-  line-height:1.18;
+  line-height:1.15;
   margin-bottom:14px;
 }
 
-.challengeMeta{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-top:8px;
-
-  color:#7d8798;
-  font-size:15px;
-  font-weight:850;
+.challengeReward{
+  color:var(--green);
+  font-size:16px;
+  font-weight:950;
+  margin-bottom:6px;
 }
 
-  .challengeMeta strong{
+.challengeProgress{
   color:var(--muted);
   font-size:15px;
   font-weight:850;
@@ -3792,6 +3786,7 @@ body::after{
 .challengeBar{
   margin-top:14px !important;
 }
+  
 
   
 </style>
@@ -4106,27 +4101,35 @@ body::after{
 </div>
 
 <div class="card dailyChallengeCard">
+
   <div class="panelTitle">
     <span>Daily Challenge</span>
   </div>
 
-  <div class="challengeMission" id="dailyChallengeTitle">
+  <div
+    class="challengeMission"
+    id="dailyChallengeTitle">
     Find a New Hampshire plate
   </div>
 
-  <div class="challengeMeta">
-    <span>Reward</span>
-    <strong>250 XP</strong>
+  <div class="challengeReward">
+    +250 XP
   </div>
 
-  <div class="challengeMeta">
-    <span>Progress</span>
-    <strong id="dailyChallengeProgress">0 / 1</strong>
+  <div
+    class="challengeProgress"
+    id="dailyChallengeProgress">
+    0 / 1 Complete
   </div>
 
   <div class="bar challengeBar">
-    <div class="fill" id="dailyChallengeFill" style="width:0%"></div>
+    <div
+      class="fill"
+      id="dailyChallengeFill"
+      style="width:0%">
+    </div>
   </div>
+
 </div>
 
 <div class="card">
