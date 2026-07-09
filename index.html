@@ -5366,65 +5366,61 @@ if(!stateDetails) return; stateDetails.innerHTML =
 }
 
 
-function renderBadges(c) {
-  var badges = [
-    ["🏅","First Plate","Spot your first state",c>=1],
-    ["🔟","10 Spot","Find 10 states",c>=10],
-    ["⭐","Halfway There","Find 25 states",c>=25],
-    ["🏆","All 50 States","Complete the map",c>=50],
-    ["💎","Hidden Gems","Find Alaska and Hawaii",hasStates(["AK","HI"])],
-    ["🌅","Coast to Coast","Find California and New York",hasStates(["CA","NY"])],
-    ["🚗","Road Warrior","Log 100 sightings",totalSightings()>=100]
-  ];
+function renderBadges() {
+  var badgeGrid = document.getElementById("badgeGrid");
+  var badgeStats = document.getElementById("badgeStats");
+  var nextBadgeBox = document.getElementById("nextBadgeBox");
 
-  var unlockedBadges = badges.filter(function(b){
-    return b[3];
-  }).length;
+  if (!badgeGrid) return;
 
-  var badgeMiniEl = document.getElementById("badgeMini");
-  if (badgeMiniEl) {
-    badgeMiniEl.textContent = unlockedBadges;
+  var unlocked = getUnlockedBadges().length;
+  var total = badgeDefs.length;
+  var percent = Math.round((unlocked / total) * 100);
+
+  if (badgeStats) {
+    badgeStats.innerHTML =
+      '<div><strong>' + unlocked + '</strong><span>Unlocked</span></div>' +
+      '<div><strong>' + (total - unlocked) + '</strong><span>Remaining</span></div>' +
+      '<div><strong>' + percent + '%</strong><span>Complete</span></div>';
   }
 
-  var featuredBadgeEl = document.getElementById("featuredBadge");
-  if (featuredBadgeEl) {
+  var next = getNextBadge();
 
-if (unlockedBadges > 0) {
+  if (nextBadgeBox && next) {
+    var progress = getBadgeProgress(next);
+    var pct = Math.round((progress / next.goal) * 100);
 
-  var latest = badges.filter(function(b){
-    return b[3];
-  }).slice(-1)[0];
+    nextBadgeBox.innerHTML =
+      '<div class="nextBadgeLabel">Next Badge</div>' +
+      '<div class="nextBadgeMain">' +
+        '<div class="nextBadgeIcon">' + next.icon + '</div>' +
+        '<div class="grow">' +
+          '<div class="nextBadgeName">' + next.name + '</div>' +
+          '<div class="nextBadgeProgress">' + progress + ' / ' + next.goal + '</div>' +
+          '<div class="progressTrack"><div class="progressFill" style="width:' + pct + '%"></div></div>' +
+        '</div>' +
+      '</div>';
+  }
 
-  featuredBadgeEl.style.display = "block";
+  var sorted = badgeDefs.slice().sort(function(a,b){
+    return Number(isBadgeUnlocked(b)) - Number(isBadgeUnlocked(a)) ||
+      (getBadgeProgress(b) / b.goal) - (getBadgeProgress(a) / a.goal);
+  });
 
-  featuredBadgeEl.innerHTML =
-    '<div class="latestBadgeLabel">Latest Badge</div>' +
-    '<div class="latestBadgeIcon">' + latest[0] + '</div>' +
-    '<div class="latestBadgeName">' + latest[1] + '</div>' +
-    '<div class="latestBadgeDesc">' + latest[2] + '</div>';
+  badgeGrid.innerHTML = sorted.map(function(badge){
+    var unlocked = isBadgeUnlocked(badge);
+    var progress = getBadgeProgress(badge);
+    var pct = Math.round((progress / badge.goal) * 100);
 
-} else {
-
-  featuredBadgeEl.style.display = "none";
-  featuredBadgeEl.innerHTML = "";
-
+    return '<button class="badge ' + (unlocked ? 'unlocked' : 'locked') + '" data-badge-id="' + badge.id + '">' +
+      '<div class="badgeIcon">' + (badge.hidden && !unlocked ? '❓' : badge.icon) + '</div>' +
+      '<div class="badgeName">' + (badge.hidden && !unlocked ? 'Hidden Badge' : badge.name) + '</div>' +
+      '<div class="badgeDesc">' + (badge.hidden && !unlocked ? 'Keep playing to discover...' : badge.desc) + '</div>' +
+      '<div class="badgeMiniProgress">' + progress + ' / ' + badge.goal + '</div>' +
+      '<div class="progressTrack small"><div class="progressFill" style="width:' + pct + '%"></div></div>' +
+    '</button>';
+  }).join("");
 }
-
-    
-  }
-
-  var badgesEl = document.getElementById("badges");
-  if (badgesEl) {
-    badgesEl.innerHTML = badges.map(function(b){
-      return '<div class="badge ' + (b[3] ? "unlocked" : "locked") + '">' +
-        '<div class="badgeIcon">' + b[0] + '</div>' +
-        '<div class="badgeName">' + b[1] + '</div>' +
-        '<div class="badgeDesc">' + b[2] + '</div>' +
-        '</div>';
-    }).join("");
-  }
-}
-
   
 function tripModeSummaryText(c, points, sightings) {
   if(mode === "classic") return "Classic Mode";
@@ -5662,6 +5658,49 @@ function checkTripCompletion() {
 }
   
 
+var badgeDefs = [
+  { id:"firstPlate", icon:"🚗", name:"First Plate", desc:"Collect your first state.", goal:1, type:"states" },
+  { id:"explorer", icon:"🧭", name:"Explorer", desc:"Collect 10 states in one trip.", goal:10, type:"states" },
+  { id:"roadWarrior", icon:"🏆", name:"Road Warrior", desc:"Collect 25 states in one trip.", goal:25, type:"states" },
+  { id:"halfway", icon:"🇺🇸", name:"Halfway There", desc:"Collect 25 states.", goal:25, type:"states" },
+  { id:"coastToCoast", icon:"🌊", name:"Coast to Coast", desc:"Collect both California and Maine.", goal:2, type:"custom" },
+  { id:"complete50", icon:"👑", name:"Total Annihilation", desc:"Collect all 50 states.", goal:50, type:"states" },
+  { id:"hidden1", icon:"❓", name:"Hidden Badge", desc:"Keep playing to discover this badge.", goal:1, type:"hidden", hidden:true }
+];
+
+function getBadgeProgress(badge) {
+  var c = collectedCount();
+
+  if (badge.type === "states") {
+    return Math.min(c, badge.goal);
+  }
+
+  if (badge.id === "coastToCoast") {
+    var hasCA = log.some(function(x){ return x.code === "CA"; });
+    var hasME = log.some(function(x){ return x.code === "ME"; });
+    return (hasCA ? 1 : 0) + (hasME ? 1 : 0);
+  }
+
+  return 0;
+}
+
+function isBadgeUnlocked(badge) {
+  return getBadgeProgress(badge) >= badge.goal;
+}
+
+function getUnlockedBadges() {
+  return badgeDefs.filter(isBadgeUnlocked);
+}
+
+function getNextBadge() {
+  return badgeDefs
+    .filter(function(b){ return !b.hidden && !isBadgeUnlocked(b); })
+    .sort(function(a,b){
+      return (getBadgeProgress(b) / b.goal) - (getBadgeProgress(a) / a.goal);
+    })[0];
+}
+
+  
 function render() {
   var inviteCodeEl = document.getElementById("tripInviteCode");
   if(inviteCodeEl) {
