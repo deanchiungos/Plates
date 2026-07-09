@@ -5971,7 +5971,7 @@ function getNextBadge() {
   
 function render() {
 
-  renderDailyChallenge();
+
   
   var inviteCodeEl = document.getElementById("tripInviteCode");
   if(inviteCodeEl) {
@@ -6235,7 +6235,7 @@ if (recentEl) {
     return '<div class="row recentItem"><div><div class="recentState">' + x.name + '</div><div class="recentFinder">Found by ' + finder + '</div></div><div class="recentMeta"><span class="recentTime">' + timeAgo(x.ts) + '</span><span class="recentPts">' + pts + '</span></div></div>';
   }).join("") : '<div class="memoryEmpty">No plates yet<br><br>Tap a state to start your roadtrip</div>';
 }
-
+  renderDailyChallenge();
   renderBadges(c);
 
   var top = log.slice().sort(function(a,b){ return b.points - a.points; })[0];
