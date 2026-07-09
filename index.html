@@ -6290,6 +6290,21 @@ function openBadgeDetail(badge) {
   
 function attachHandlers() {
 
+  var closeBadgeBtn = document.getElementById("closeBadgeBtn");
+if(closeBadgeBtn) {
+  closeBadgeBtn.onclick = function(){
+    document.getElementById("badgeOverlay").classList.add("hidden");
+  };
+}
+
+var badgeDoneBtn = document.getElementById("badgeDoneBtn");
+if(badgeDoneBtn) {
+  badgeDoneBtn.onclick = function(){
+    document.getElementById("badgeOverlay").classList.add("hidden");
+  };
+}
+
+  
 document.getElementById("addPlayerBtn").onclick = function () {
   document.getElementById("addPlayerOverlay").classList.remove("hidden");
 };
