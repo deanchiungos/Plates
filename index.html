@@ -5970,6 +5970,9 @@ function getNextBadge() {
 
   
 function render() {
+
+  renderDailyChallenge();
+  
   var inviteCodeEl = document.getElementById("tripInviteCode");
   if(inviteCodeEl) {
     inviteCodeEl.textContent = getTripInviteCode();
