@@ -5420,7 +5420,7 @@ function renderBadges() {
     var pct = Math.round((progress / next.goal) * 100);
 
     nextBadgeBox.innerHTML =
-      '<div class="nextBadgeLabel">Next Badge</div>' +
+      '<div class="nextBadgeLabel">What's next?</div>' +
       '<div class="nextBadgeMain">' +
         '<div class="nextBadgeIcon">' + next.icon + '</div>' +
         '<div class="grow">' +
@@ -5688,12 +5688,12 @@ function checkTripCompletion() {
   
 
 var badgeDefs = [
-  { id:"firstPlate", icon:"🚗", name:"First Plate", desc:"Collect your first state.", goal:1, type:"states" },
-  { id:"explorer", icon:"🧭", name:"Explorer", desc:"Collect 10 states in one trip.", goal:10, type:"states" },
-  { id:"roadWarrior", icon:"🏆", name:"Road Warrior", desc:"Collect 25 states in one trip.", goal:25, type:"states" },
-  { id:"halfway", icon:"🇺🇸", name:"Halfway There", desc:"Collect 25 states.", goal:25, type:"states" },
-  { id:"coastToCoast", icon:"🌊", name:"Coast to Coast", desc:"Collect both California and Maine.", goal:2, type:"custom" },
-  { id:"complete50", icon:"👑", name:"Total Annihilation", desc:"Collect all 50 states.", goal:50, type:"states" },
+  { id:"firstPlate", icon:"🚗", name:"First Plate", desc:"Collect your first state", goal:1, type:"states" },
+  { id:"explorer", icon:"🧭", name:"Explorer", desc:"Spot 10 states in 1 trip", goal:10, type:"states" },
+  { id:"roadWarrior", icon:"🏆", name:"Road Warrior", desc:"Find 25 states in 1 trip", goal:25, type:"states" },
+  { id:"halfway", icon:"🇺🇸", name:"Halfway There", desc:"Collect 25 states", goal:25, type:"states" },
+  { id:"coastToCoast", icon:"🌊", name:"Coast to Coast", desc:"Spot both California and Maine", goal:2, type:"custom" },
+  { id:"complete50", icon:"👑", name:"Total Annihilation", desc:"Find all 50 states", goal:50, type:"states" },
   { id:"hidden1", icon:"❓", name:"Hidden Badge", desc:"Keep playing to discover this badge.", goal:1, type:"hidden", hidden:true }
 ];
 
