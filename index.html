@@ -3081,6 +3081,10 @@ margin:12px 0 6px !important;
   padding-left:2px;
 }
 
+.myStatsCard{
+  margin-top:10px;
+}
+  
 .howToPlayCard .panelTitle{
   padding-left:0;
 }
@@ -3749,28 +3753,46 @@ body::after{
   min-height:52px !important;
 }
 
+  .dailyChallengeCard{
+  padding:22px 24px !important;
+  background:#fff;
+  border:1px solid rgba(6,47,95,.10);
+}
 
 .dailyChallengeCard .panelTitle{
-  font-size:18px !important;
+  font-size:22px !important;
+  margin-bottom:16px !important;
+}
+
+.challengeMission{
+  color:var(--navy);
+  font-size:18px;
+  font-weight:950;
+  line-height:1.18;
   margin-bottom:14px;
 }
 
-  .dailyChallengeCard{
-  padding:24px !important;
+.challengeMeta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:8px;
+
+  color:var(--muted);
+  font-size:14px;
+  font-weight:850;
 }
 
-.challengeTitle{
-  font-size:18px;
-  font-weight:900;
-  line-height:1.2;
-  margin-bottom:10px;
-}
-
-.challengeReward,
-.challengeProgress{
+.challengeMeta strong{
+  color:var(--navy);
   font-size:15px;
+  font-weight:950;
 }
-  
+
+.challengeBar{
+  margin-top:14px !important;
+}
+
   
 </style>
 </head>
@@ -4085,27 +4107,25 @@ body::after{
 
 <div class="card dailyChallengeCard">
   <div class="panelTitle">
-    <span>⭐ Daily Challenge</span>
+    <span>Daily Challenge</span>
   </div>
 
-  <div class="challengeTitle" id="dailyChallengeTitle">
+  <div class="challengeMission" id="dailyChallengeTitle">
     Find a New Hampshire plate
   </div>
 
-  <div class="challengeReward">
-    Reward: <strong>250 XP</strong>
+  <div class="challengeMeta">
+    <span>Reward</span>
+    <strong>250 XP</strong>
   </div>
 
-  <div class="challengeProgress" id="dailyChallengeProgress">
-    0 / 1 Complete
+  <div class="challengeMeta">
+    <span>Progress</span>
+    <strong id="dailyChallengeProgress">0 / 1</strong>
   </div>
 
-  <div class="bar">
-    <div
-      class="fill"
-      id="dailyChallengeFill"
-      style="width:0%">
-    </div>
+  <div class="bar challengeBar">
+    <div class="fill" id="dailyChallengeFill" style="width:0%"></div>
   </div>
 </div>
 
