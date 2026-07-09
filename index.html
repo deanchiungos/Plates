@@ -5786,6 +5786,8 @@ function render() {
   var accountBox = document.getElementById("accountBox");
 var createAccountBtn = document.getElementById("createAccountBtn");
 
+var unlockedBadges = getUnlockedBadges().length;
+  
 if(accountBox) {
   if(isSignedIn()) {
 
