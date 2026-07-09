@@ -5419,16 +5419,16 @@ function renderBadges() {
     var progress = getBadgeProgress(next);
     var pct = Math.round((progress / next.goal) * 100);
 
-    nextBadgeBox.innerHTML =
-      '<div class="nextBadgeLabel">Badge Roadmap</div>' +
-      '<div class="nextBadgeMain">' +
-        '<div class="nextBadgeIcon">' + next.icon + '</div>' +
-        '<div class="grow">' +
-          '<div class="nextBadgeName">' + next.name + '</div>' +
-          '<div class="nextBadgeProgress">' + progress + ' / ' + next.goal + '</div>' +
-          '<div class="progressTrack"><div class="progressFill" style="width:' + pct + '%"></div></div>' +
-        '</div>' +
-      '</div>';
+nextBadgeBox.innerHTML =
+  '<div class="nextBadgeLabel">Badge Roadmap</div>' +
+  '<div class="nextBadgeMain">' +
+    '<div class="nextBadgeIcon">' + next.icon + '</div>' +
+    '<div class="grow">' +
+      '<div class="nextBadgeName">' + next.name + '</div>' +
+      '<div class="nextBadgeProgress">' + progress + ' / ' + next.goal + '</div>' +
+      '<div class="progressTrack"><div class="progressFill" style="width:' + pct + '%;"></div></div>' +
+    '</div>' +
+  '</div>';
   }
 
   var sorted = badgeDefs.slice().sort(function(a,b){
@@ -5694,7 +5694,7 @@ var badgeDefs = [
   { id:"halfway", icon:"🇺🇸", name:"Halfway There", desc:"Collect 25 states", goal:25, type:"states" },
   { id:"coastToCoast", icon:"🌊", name:"Coast to Coast", desc:"Spot both California and Maine", goal:2, type:"custom" },
   { id:"complete50", icon:"👑", name:"Total Annihilation", desc:"Find all 50 states", goal:50, type:"states" },
-  { id:"hidden1", icon:"❓", name:"Hidden Badge", desc:"Keep playing to discover this badge.", goal:1, type:"hidden", hidden:true }
+  { id:"hidden1", icon:"❓", name:"Hidden Badge", desc:"Keep playing to discover this badge", goal:1, type:"hidden", hidden:true }
 ];
 
 function getBadgeProgress(badge) {
