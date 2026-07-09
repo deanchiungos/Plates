@@ -3817,6 +3817,8 @@ body::after{
   padding-left:8px !important;
 }
 
+
+  
   
 </style>
 </head>
@@ -4959,6 +4961,10 @@ function cleanPlateName(value) {
     .slice(0, 10);
 }
 
+  function getStateName(code){
+  var btn = document.querySelector('.state[data-code="' + code + '"]');
+  return btn ? btn.dataset.name : code;
+}
 
 function renderDailyChallenge(){
 
@@ -4980,7 +4986,7 @@ function renderDailyChallenge(){
   });
 
   title.textContent =
-    "Find a " + codeToName(dailyChallenge.state) + " plate";
+ "Find a " + getStateName(dailyChallenge.state) + " plate";
 
   progress.textContent =
     (found ? "1" : "0") + " / 1 Complete";
