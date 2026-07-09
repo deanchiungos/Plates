@@ -4959,11 +4959,10 @@ function cleanPlateName(value) {
     .slice(0, 10);
 }
 
+
 function renderDailyChallenge(){
 
-  var found = log.some(function(x){
-    return x.code === dailyChallenge.id;
-  });
+  if(!dailyChallenge) return;
 
   var title =
     document.getElementById("dailyChallengeTitle");
@@ -4976,8 +4975,12 @@ function renderDailyChallenge(){
 
   if(!title || !progress || !fill) return;
 
+  var found = log.some(function(x){
+    return x.code === dailyChallenge.state;
+  });
+
   title.textContent =
-    dailyChallenge.title;
+    "Find a " + codeToName(dailyChallenge.state) + " plate";
 
   progress.textContent =
     (found ? "1" : "0") + " / 1 Complete";
@@ -4985,6 +4988,7 @@ function renderDailyChallenge(){
   fill.style.width =
     found ? "100%" : "0%";
 }
+  
   
 function renderVanityPlate() {
   var input = document.getElementById("");
