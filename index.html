@@ -4807,6 +4807,8 @@ var dailyChallenge = {
   title: "Find a New Hampshire plate",
   reward: 250
 };
+
+
   
 var plateName = localStorage.getItem("platesPlateName") || "DCHIUNGOS";
 
@@ -4845,7 +4847,46 @@ function createAccount(){
   if(overlay) overlay.classList.remove("hidden");
 }
 
-  
+  function generateDailyChallenge(){
+
+  var today =
+    new Date().toDateString();
+
+  if(
+    dailyChallenge &&
+    dailyChallenge.date === today
+  ){
+    return;
+  }
+
+  var missing =
+    states.filter(function(s){
+      return !selected[s.code];
+    });
+
+  var target =
+    missing.length
+      ? missing[
+          Math.floor(
+            Math.random()*missing.length
+          )
+        ]
+      : states[
+          Math.floor(
+            Math.random()*states.length
+          )
+        ];
+
+  dailyChallenge = {
+    date:today,
+    type:"findState",
+    state:target.code,
+    complete:false
+  };
+
+  localStorage.dailyChallenge =
+    JSON.stringify(dailyChallenge);
+}
 
 function closeAccountSheet(){
   var overlay = document.getElementById("accountOverlay");
