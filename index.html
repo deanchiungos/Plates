@@ -5750,6 +5750,8 @@ function getBadgeProgress(badge) {
   var c = collectedCount();
 
   if (badge.type === "states") {
+    return Math.min(c, badge.goal);
+  }
 
   if (badge.id === "coastToCoast") {
     var hasCA = log.some(function(x){ return x.code === "CA"; });
@@ -5760,6 +5762,7 @@ function getBadgeProgress(badge) {
   return 0;
 }
 
+  
 function isBadgeUnlocked(badge) {
   return getBadgeProgress(badge) >= badge.goal;
 }
