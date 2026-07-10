@@ -3903,6 +3903,50 @@ body::before{
   text-align:left !important;
   padding-left:4px !important;
 }
+
+
+/* BADGES — MOBILE OVERFLOW FIX */
+
+#badgesScreen,
+#badgesScreen .card,
+#badgesScreen .badgeGrid,
+#badgesScreen .badgesGrid{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow:hidden;
+}
+
+#badgesScreen .badgeGrid,
+#badgesScreen .badgesGrid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+  gap:10px !important;
+}
+
+#badgesScreen .badge{
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  padding:16px 10px !important;
+  overflow:hidden;
+}
+
+#badgesScreen .badgeName,
+#badgesScreen .badgeDesc,
+#badgesScreen .badgeDescription{
+  max-width:100%;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+#badgesScreen .badgeIcon{
+  max-width:64px;
+  width:64px;
+  height:64px;
+}
+  
   
 </style>
 </head>
