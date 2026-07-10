@@ -3103,10 +3103,22 @@ margin:12px 0 6px !important;
   box-shadow:none !important;
 }
 
-html,
-body{
-  background:#bfeeff !important;
-  background-image:linear-gradient(180deg,#bfeeff 0%,#dff8ff 45%,#f5fff3 100%) !important;
+
+  body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+
+  background:
+    url("plate-collage-bg.png");
+
+  background-size:700px auto;
+  background-repeat:repeat;
+
+  opacity:.10;
+
+  pointer-events:none;
+  z-index:-1;
 }
 
 body::before,
