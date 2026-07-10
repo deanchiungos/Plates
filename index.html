@@ -7283,7 +7283,13 @@ if (shareInviteBtn) {
   
   
   var addFriendBtn = document.getElementById("addFriendBtn");
-  if(addFriendBtn) addFriendBtn.onclick = addPlayer;
+if(addFriendBtn){
+  addFriendBtn.onclick = function(){
+    document
+      .getElementById("addFriendOverlay")
+      .classList.remove("hidden");
+  };
+}
 
   document.body.addEventListener("click", function(e){
     if(e.target.dataset && e.target.dataset.playerSwitch) {
