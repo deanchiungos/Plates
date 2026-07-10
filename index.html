@@ -6661,7 +6661,17 @@ if(badgeDoneBtn) {
 });
 
   
+var gameOptionsBtn = document.getElementById("gameOptionsBtn");
 
+if(gameOptionsBtn){
+  gameOptionsBtn.onclick = function(){
+
+    document
+      .getElementById("tripOptionsMenu")
+      .classList.toggle("hidden");
+
+  };
+}
 
 var inviteFriendsBtn = document.getElementById("inviteFriendsBtn");
 
