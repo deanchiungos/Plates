@@ -4683,7 +4683,8 @@ body::before{
     Game Options
   </button>
 </div>
-  <div class="tripOptionsMenu hidden" id="tripOptionsMenu">
+
+      <div class="tripOptionsMenu hidden" id="tripOptionsMenu">
   <button class="tripMenuItem" id="endTripBtn">Save Trip</button>
   <button class="tripMenuItem" id="renameTripBtn">Rename Trip</button>
   <button class="tripMenuItem" id="changeModeBtn">Change Mode</button>
@@ -6899,9 +6900,15 @@ if(modeCloseBtn) {
   modeCloseBtn.onclick = closeNewGameSheet;
 }
 
-  if(homeGameOptionsBtn && newGameOverlay) {
-  homeGameOptionsBtn.onclick = openNewGameSheet;
+if(homeGameOptionsBtn && tripOptionsMenu) {
+  homeGameOptionsBtn.onclick = function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    tripOptionsMenu.classList.toggle("hidden");
+  };
 }
+
+  
 if(createGameBtn) {
   createGameBtn.onclick = createGameFromSheet;
 }
