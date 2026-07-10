@@ -5129,7 +5129,7 @@ body::before{
 
 <div id="familyList" class="familyList"></div>
 
-  <button class="secondary familyAddBtn" id="addPlayerBtn" type="button">
+  <button class="secondary familyAddBtn" id="addFriendBtn" type="button">
     Add Friend
   </button>
 
@@ -5157,8 +5157,8 @@ body::before{
     📤 Share Battle
   </button>
   
-<button class="secondary familyAddBtn" id="addPlayerBtn" type="button">
-  ➕ Add Player
+<button class="secondary familyAddBtn" id="addFriendBtn" type="button">
+  ➕ Add Friend
 </button>
   
 </div>
@@ -7282,8 +7282,8 @@ if (shareInviteBtn) {
 
   
   
-  var addPlayerBtn = document.getElementById("addPlayerBtn");
-  if(addPlayerBtn) addPlayerBtn.onclick = addPlayer;
+  var addFriendBtn = document.getElementById("addFriendBtn");
+  if(addFriendBtn) addFriendBtn.onclick = addPlayer;
 
   document.body.addEventListener("click", function(e){
     if(e.target.dataset && e.target.dataset.playerSwitch) {
