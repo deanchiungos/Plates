@@ -4360,10 +4360,9 @@ body::before{
 <button class="state" data-code="WY" data-name="Wyoming" data-points="9">WY</button>
       </div>
 
-<button class="newGameBtn" id="homeGameOptionsBtn" type="button">
+<button class="newGameBtn gameOptionsTrigger" id="homeGameOptionsBtn" type="button">
   Game Options
 </button>
-
       
       
 <button class="newGameBtn" id="newGameBtn" type="button">
@@ -4679,7 +4678,7 @@ body::before{
 </div>
 
 <div class="tripOptionsBar">
-<button class="newGameBtn" id="homeGameOptionsBtn" type="button">
+<button class="newGameBtn gameOptionsTrigger" id="tripOptionsBtn" type="button">
     Game Options
   </button>
 </div>
@@ -6900,13 +6899,6 @@ if(modeCloseBtn) {
   modeCloseBtn.onclick = closeNewGameSheet;
 }
 
-if(homeGameOptionsBtn && tripOptionsMenu) {
-  homeGameOptionsBtn.onclick = function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    tripOptionsMenu.classList.toggle("hidden");
-  };
-}
 
   
 if(createGameBtn) {
@@ -7023,16 +7015,19 @@ if(renameTripBtn) {
 }
 
   
-var tripOptionsBtn = document.getElementById("tripOptionsBtn");
 var tripOptionsMenu = document.getElementById("tripOptionsMenu");
 
-if (tripOptionsBtn && tripOptionsMenu) {
-  tripOptionsBtn.addEventListener("click", function (e) {
+document.querySelectorAll(".gameOptionsTrigger").forEach(function(btn) {
+  btn.onclick = function(e) {
     e.preventDefault();
     e.stopPropagation();
+
+    if (!tripOptionsMenu) return;
+
+    btn.parentNode.insertAdjacentElement("afterend", tripOptionsMenu);
     tripOptionsMenu.classList.toggle("hidden");
-  });
-}
+  };
+});
 
 
   var newTripBtn = document.getElementById("newTripBtn");
