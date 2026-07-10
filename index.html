@@ -6860,7 +6860,10 @@ if (badgesStatBtn) {
     setView("badges");
   };
 }  
-var modeDropdownBtn = document.getElementById("modeDropdownBtn");
+
+
+
+  var modeDropdownBtn = document.getElementById("modeDropdownBtn");
 var newGameBtn = document.getElementById("newGameBtn");
 var newGameOverlay = document.getElementById("newGameOverlay");
 var modeCloseBtn = document.getElementById("modeCloseBtn");
@@ -6876,6 +6879,10 @@ if(newGameBtn && newGameOverlay) {
 
 if(modeCloseBtn) {
   modeCloseBtn.onclick = closeNewGameSheet;
+}
+
+if(createGameBtn) {
+  createGameBtn.onclick = createGameFromSheet;
 }
 
 
