@@ -4068,6 +4068,37 @@ body::before{
 #tripOptionsMenu{
   margin-bottom:10px;
 }
+
+.gameOptionsSheet{
+  position:relative;
+  width:100%;
+  max-width:420px;
+
+  background:#fff;
+  border-radius:36px;
+  padding:22px 18px 26px;
+
+  box-shadow:0 30px 80px rgba(0,0,0,.18);
+}
+
+.gameOptionsOverlay{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+
+  background:rgba(7,55,99,.55);
+
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+
+  padding:18px;
+}
+
+.gameOptionsOverlay.hidden{
+  display:none !important;
+}
+
   
 </style>
 </head>
