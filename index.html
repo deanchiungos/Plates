@@ -3824,7 +3824,80 @@ body::before{
   padding-left:8px !important;
 }
 
+/* FRIENDS PAGE — MOBILE CLIPPING FIX */
 
+#familyScreen,
+#familyScreen .card,
+#familyScreen .friendsCard{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow:hidden;
+}
+
+#familyScreen .familyList{
+  width:100%;
+  min-width:0;
+}
+
+#familyScreen .familyRow{
+  width:100%;
+  min-width:0;
+  display:grid;
+  grid-template-columns:52px minmax(0,1fr);
+  gap:12px !important;
+  align-items:center;
+  padding:12px;
+  overflow:hidden;
+}
+
+#familyScreen .familyAvatar{
+  width:52px;
+  height:52px;
+  flex:none;
+}
+
+#familyScreen .familyInfo{
+  width:100%;
+  min-width:0;
+  overflow:hidden;
+}
+
+#familyScreen .familyName,
+#familyScreen .familyMeta{
+  max-width:100%;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+#familyScreen .playerPlate{
+  width:100%;
+  max-width:118px;
+  margin:8px 0 0 !important;
+}
+
+#familyScreen .playerPlateName{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+#familyScreen .inviteCode{
+  max-width:100%;
+  font-size:22px;
+  letter-spacing:1px;
+  overflow-wrap:anywhere;
+}
+
+#familyScreen .inviteActions,
+#familyScreen .inviteActions button,
+#familyScreen .familyAddBtn,
+#familyScreen #copyInviteBtn{
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+}
   
   
 </style>
