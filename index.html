@@ -4683,13 +4683,57 @@ body::before{
   </button>
 </div>
 
-      <div class="tripOptionsMenu hidden" id="tripOptionsMenu">
-  <button class="tripMenuItem" id="endTripBtn">Save Trip</button>
-  <button class="tripMenuItem" id="renameTripBtn">Rename Trip</button>
-  <button class="tripMenuItem" id="changeModeBtn">Change Mode</button>
-  <button class="tripMenuItem" id="shareTripBtn">Share Trip</button>
-  <button class="tripMenuItem dangerItem" id="clearTripBtn">Clear Trip</button>
-    
+    <div class="gameOptionsOverlay hidden" id="gameOptionsOverlay">
+  <div class="gameOptionsSheet">
+
+    <div class="newGameHandle"></div>
+
+    <button
+      class="newGameCloseBtn"
+      id="gameOptionsCloseBtn"
+      type="button">
+      ×
+    </button>
+
+    <div class="newGameTitle">
+      Game Options
+    </div>
+
+    <div class="newGameSectionLabel">
+      Current Game
+    </div>
+
+    <button class="newGameOption" id="endTripBtn" type="button">
+      <strong>Save Trip</strong>
+      <span>Save this game to Trip History</span>
+    </button>
+
+    <button class="newGameOption" id="renameTripBtn" type="button">
+      <strong>Rename Trip</strong>
+      <span>Change the game name</span>
+    </button>
+
+    <button class="newGameOption" id="changeModeBtn" type="button">
+      <strong>Change Mode</strong>
+      <span>Switch scoring rules</span>
+    </button>
+
+    <button class="newGameOption" id="shareTripBtn" type="button">
+      <strong>Share Trip</strong>
+      <span>Share your progress</span>
+    </button>
+
+    <div class="newGameDivider"></div>
+
+    <button
+      class="newGameOption gameOptionsDanger"
+      id="clearTripBtn"
+      type="button">
+      <strong>Clear Trip</strong>
+      <span>Remove all progress</span>
+    </button>
+
+  </div>
 </div>
 
  <button class="newGameBtn" id="newTripBtn" type="button">
@@ -6744,13 +6788,23 @@ var gameOptionsBtn = document.getElementById("gameOptionsBtn");
 if(gameOptionsBtn){
   gameOptionsBtn.onclick = function(){
 
-    document
-      .getElementById("tripOptionsMenu")
-      .classList.toggle("hidden");
+document
+  .getElementById("gameOptionsOverlay")
+  .classList.remove("hidden");
 
   };
 }
 
+  var gameOptionsCloseBtn =
+  document.getElementById("gameOptionsCloseBtn");
+
+if(gameOptionsCloseBtn){
+  gameOptionsCloseBtn.onclick = function(){
+    document
+      .getElementById("gameOptionsOverlay")
+      .classList.add("hidden");
+  };
+}
 var inviteFriendsBtn = document.getElementById("inviteFriendsBtn");
 
 if(inviteFriendsBtn){
