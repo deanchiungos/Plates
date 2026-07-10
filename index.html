@@ -6863,7 +6863,7 @@ if (badgesStatBtn) {
 
 
 
-  var modeDropdownBtn = document.getElementById("modeDropdownBtn");
+var modeDropdownBtn = document.getElementById("modeDropdownBtn");
 var newGameBtn = document.getElementById("newGameBtn");
 var newGameOverlay = document.getElementById("newGameOverlay");
 var modeCloseBtn = document.getElementById("modeCloseBtn");
@@ -6884,7 +6884,6 @@ if(modeCloseBtn) {
 if(createGameBtn) {
   createGameBtn.onclick = createGameFromSheet;
 }
-
 
 document.querySelectorAll("[data-game-type]").forEach(function(btn){
   btn.onclick = function() {
