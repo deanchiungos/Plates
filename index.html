@@ -43,10 +43,12 @@ button {
   color:var(--text);
   background:#fff;
 }
-.app {
-  max-width:430px;
-  margin:0 auto;
-  padding:26px 12px 0;
+
+  
+  .app,
+.bottomNav{
+  position:relative;
+  z-index:1;
 }
 
 
@@ -3104,25 +3106,20 @@ margin:12px 0 6px !important;
 }
 
 
- body::before{
+body::before{
   content:"";
   position:fixed;
   inset:0;
-
-  background:url("plate-collage-bg.png.png");
+  background-image:url("plate-collage-bg.png.png");
   background-size:700px auto;
   background-repeat:repeat;
-
+  background-position:top left;
   opacity:.18;
   pointer-events:none;
-  z-index:-1;
+  z-index:0;
 }
 
-body::before,
-body::after{
-  display:none !important;
-  content:none !important;
-}
+
 
 #gameScreen .bigProgress{
   background:rgba(255,255,255,.72);
