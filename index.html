@@ -7281,47 +7281,68 @@ if (shareInviteBtn) {
 }
 
   
-  
-  var addFriendBtn = document.getElementById("addFriendBtn");
-if(addFriendBtn){
-  addFriendBtn.onclick = function(){
-    document
-      .getElementById("addFriendOverlay")
-      .classList.remove("hidden");
+
+var addFriendBtn = document.getElementById("addFriendBtn");
+
+if (addFriendBtn) {
+  addFriendBtn.onclick = function () {
+    var addFriendOverlay = document.getElementById("addFriendOverlay");
+
+    if (addFriendOverlay) {
+      addFriendOverlay.classList.remove("hidden");
+    }
   };
 }
 
-  document.body.addEventListener("click", function(e){
-    if(e.target.dataset && e.target.dataset.playerSwitch) {
-      switchPlayer(e.target.dataset.playerSwitch);
+var addFriendCloseBtn = document.getElementById("addFriendCloseBtn");
+
+if (addFriendCloseBtn) {
+  addFriendCloseBtn.onclick = function () {
+    var addFriendOverlay = document.getElementById("addFriendOverlay");
+
+    if (addFriendOverlay) {
+      addFriendOverlay.classList.add("hidden");
     }
-    if(e.target.dataset && e.target.dataset.playerDelete) {
-      deletePlayer(e.target.dataset.playerDelete);
-    }
-  });
+  };
+}
 
+document.body.addEventListener("click", function (e) {
+  if (e.target.dataset && e.target.dataset.playerSwitch) {
+    switchPlayer(e.target.dataset.playerSwitch);
+  }
 
-  document.querySelectorAll(".state").forEach(function(btn){
-    btn.onclick = function(){ tapState(btn); };
-  });
+  if (e.target.dataset && e.target.dataset.playerDelete) {
+    deletePlayer(e.target.dataset.playerDelete);
+  }
+});
 
-
-
-document.querySelectorAll("[data-map-code], .svgState").forEach(function(cell){
-  cell.onclick = function(){
-    var code = cell.dataset.mapCode || cell.dataset.code || cell.getAttribute("data-code");
-    if(code) selectMapState(code);
+document.querySelectorAll(".state").forEach(function (btn) {
+  btn.onclick = function () {
+    tapState(btn);
   };
 });
-  
+
+document.querySelectorAll("[data-map-code], .svgState").forEach(function (cell) {
+  cell.onclick = function () {
+    var code =
+      cell.dataset.mapCode ||
+      cell.dataset.code ||
+      cell.getAttribute("data-code");
+
+    if (code) {
+      selectMapState(code);
+    }
+  };
+});
 
 var bestStatBtn = document.getElementById("bestStatBtn");
+
 if (bestStatBtn) {
   bestStatBtn.onclick = function () {
     setView("trips");
   };
 }
-
+  
 var tripsStatBtn = document.getElementById("tripsStatBtn");
 if (tripsStatBtn) {
   tripsStatBtn.onclick = function () {
