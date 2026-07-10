@@ -2118,12 +2118,8 @@ font-size:34px;
   justify-content:center;
   box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
-.avatarPicker {
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  justify-content:center;
-}
+
+
 
 .avatarPicker.readOnly{
   pointer-events:none;
@@ -4209,16 +4205,16 @@ body::before{
   padding-bottom:14px !important;
 }
 
-  .avatarPicker{
+.avatarPicker{
   display:flex;
   gap:10px;
   flex-wrap:wrap;
   justify-content:center;
 
-  max-height:180px;
-  overflow-y:auto;
-
   padding:6px;
+
+  max-height:none;
+  overflow:visible;
 }
   
 </style>
