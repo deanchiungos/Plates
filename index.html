@@ -4053,14 +4053,17 @@ body::before{
 }
 
 
-  .tripOptionsBar{
-  margin:0 8px 8px;
-}
-
-.tripOptionsBar .newGameBtn{
+.tripOptionsBar .tripOptionsBtn{
   margin:0;
 }
 
+  .tripOptionsBar{
+  margin:0 8px 10px;
+}
+
+#tripOptionsMenu{
+  margin-bottom:10px;
+}
   
 </style>
 </head>
@@ -4672,7 +4675,7 @@ body::before{
 </div>
 
 <div class="tripOptionsBar">
-  <button class="tripOptionsBtn" id="tripOptionsBtn">
+  <button class="newGameBtn" id="tripOptionsBtn" type="button">
     Game Options
   </button>
 </div>
@@ -4685,7 +4688,7 @@ body::before{
     
 </div>
 
-    <button class="tripOptionsBtn" id="newTripBtn" type="button">
+ <button class="newGameBtn" id="newTripBtn" type="button">
   Start New Game
 </button>
     
