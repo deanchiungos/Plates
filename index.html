@@ -4668,7 +4668,7 @@ body::before{
     Game Options
   </button>
 </div>
-  <div class="tripOptionsMenu" id="tripOptionsMenu">
+  <div class="tripOptionsMenu hidden" id="tripOptionsMenu">
   <button class="tripMenuItem" id="endTripBtn">Save Trip</button>
   <button class="tripMenuItem" id="renameTripBtn">Rename Trip</button>
   <button class="tripMenuItem" id="changeModeBtn">Change Mode</button>
@@ -6997,13 +6997,17 @@ if(renameTripBtn) {
 }
 
   
+var tripOptionsBtn = document.getElementById("tripOptionsBtn");
+var tripOptionsMenu = document.getElementById("tripOptionsMenu");
 
-  var tripOptionsBtn = document.getElementById("tripOptionsBtn");
-if (tripOptionsBtn) {
-  tripOptionsBtn.onclick = function () {
-    document.getElementById("tripOptionsMenu").classList.toggle("hidden");
-  };
+if (tripOptionsBtn && tripOptionsMenu) {
+  tripOptionsBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    tripOptionsMenu.classList.toggle("hidden");
+  });
 }
+
 
   var newTripBtn = document.getElementById("newTripBtn");
 if(newTripBtn) newTripBtn.onclick = newTrip;
