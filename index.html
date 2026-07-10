@@ -2999,8 +2999,12 @@ color:var(--blue) !important;
   margin-bottom:8px !important;
 }
 
-#gameScreen .newGameBtn{
-margin:12px 0 6px !important;
+#gameScreen #homeGameOptionsBtn{
+  margin:8px 0 4px !important;
+}
+
+#gameScreen #newGameBtn{
+  margin:4px 0 6px !important;
 }
 
   /* re-center app shell */
@@ -4356,7 +4360,7 @@ body::before{
 <button class="state" data-code="WY" data-name="Wyoming" data-points="9">WY</button>
       </div>
 
-<button class="newGameBtn" id="tripOptionsBtn" type="button">
+<button class="newGameBtn" id="homeGameOptionsBtn" type="button">
   Game Options
 </button>
 
@@ -6878,6 +6882,7 @@ if (badgesStatBtn) {
 
 var modeDropdownBtn = document.getElementById("modeDropdownBtn");
 var newGameBtn = document.getElementById("newGameBtn");
+  var homeGameOptionsBtn = document.getElementById("homeGameOptionsBtn");
 var newGameOverlay = document.getElementById("newGameOverlay");
 var modeCloseBtn = document.getElementById("modeCloseBtn");
 var createGameBtn = document.getElementById("createGameBtn");
@@ -6894,6 +6899,9 @@ if(modeCloseBtn) {
   modeCloseBtn.onclick = closeNewGameSheet;
 }
 
+  if(homeGameOptionsBtn && newGameOverlay) {
+  homeGameOptionsBtn.onclick = openNewGameSheet;
+}
 if(createGameBtn) {
   createGameBtn.onclick = createGameFromSheet;
 }
