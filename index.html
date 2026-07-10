@@ -4651,6 +4651,9 @@ body::before{
 
   </div>
 </section>
+
+
+  
 <section id="tripsScreen" class="screen hidden">
   <div class="card">
 
@@ -4683,7 +4686,22 @@ body::before{
   </button>
 </div>
 
-    <div class="gameOptionsOverlay hidden" id="gameOptionsOverlay">
+   
+
+ <button class="newGameBtn" id="newTripBtn" type="button">
+  Start New Game
+</button>
+    
+    </div>
+
+    <div class="card">
+      <div class="panelTitle"><span>Trip History</span><span id="historyCount">0 saved</span></div>
+      <div class="tripHistoryList" id="tripHistoryList">No saved trips yet.</div>
+    </div>
+  </section>
+
+
+ <div class="gameOptionsOverlay hidden" id="gameOptionsOverlay">
   <div class="gameOptionsSheet">
 
     <div class="newGameHandle"></div>
@@ -4735,19 +4753,7 @@ body::before{
 
   </div>
 </div>
-
- <button class="newGameBtn" id="newTripBtn" type="button">
-  Start New Game
-</button>
-    
-    </div>
-
-    <div class="card">
-      <div class="panelTitle"><span>Trip History</span><span id="historyCount">0 saved</span></div>
-      <div class="tripHistoryList" id="tripHistoryList">No saved trips yet.</div>
-    </div>
-  </section>
-
+  
   <section id="familyScreen" class="screen hidden">
 
 
@@ -6783,28 +6789,44 @@ if(badgeDoneBtn) {
 });
 
   
-var gameOptionsBtn = document.getElementById("gameOptionsBtn");
 
-if(gameOptionsBtn){
-  gameOptionsBtn.onclick = function(){
+var homeGameOptionsBtn =
+  document.getElementById("homeGameOptionsBtn");
 
-document
-  .getElementById("gameOptionsOverlay")
-  .classList.remove("hidden");
+var tripOptionsBtn =
+  document.getElementById("tripOptionsBtn");
 
-  };
-}
+var gameOptionsOverlay =
+  document.getElementById("gameOptionsOverlay");
 
-  var gameOptionsCloseBtn =
+var gameOptionsCloseBtn =
   document.getElementById("gameOptionsCloseBtn");
 
-if(gameOptionsCloseBtn){
-  gameOptionsCloseBtn.onclick = function(){
-    document
-      .getElementById("gameOptionsOverlay")
-      .classList.add("hidden");
-  };
+function openGameOptions(){
+  if(gameOptionsOverlay){
+    gameOptionsOverlay.classList.remove("hidden");
+  }
 }
+
+function closeGameOptions(){
+  if(gameOptionsOverlay){
+    gameOptionsOverlay.classList.add("hidden");
+  }
+}
+
+if(homeGameOptionsBtn){
+  homeGameOptionsBtn.onclick = openGameOptions;
+}
+
+if(tripOptionsBtn){
+  tripOptionsBtn.onclick = openGameOptions;
+}
+
+if(gameOptionsCloseBtn){
+  gameOptionsCloseBtn.onclick = closeGameOptions;
+}
+
+  
 var inviteFriendsBtn = document.getElementById("inviteFriendsBtn");
 
 if(inviteFriendsBtn){
