@@ -4017,6 +4017,43 @@ body::before{
 }
 
   
+.howToPlayCard{
+  padding-left:28px !important;
+  padding-right:28px !important;
+}
+
+.howToPlayCard .panelTitle{
+  padding-left:0 !important;
+}
+
+.howToPlayCard .infoSectionTitle,
+.howToPlayCard .infoRow{
+  padding-left:8px !important;
+}
+
+.gameOptionsBtn{
+  display:block;
+  width:100%;
+  min-height:56px;
+  margin:14px 0 10px;
+
+  background:#fff !important;
+  border:2px solid #d8e2ef !important;
+  border-radius:999px;
+
+  color:var(--blue) !important;
+  font-size:20px;
+  font-weight:950;
+
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+
+.gameOptionsBtn:active{
+  transform:scale(.985);
+}
+    
+
+  
 </style>
 </head>
 
@@ -4109,42 +4146,9 @@ body::before{
     <div class="newGameSectionLabel">Game Name</div>
     <input class="newGameInput" id="newGameNameInput" type="text" placeholder="Summer Roadtrip">
 
-
-.howToPlayCard{
-  padding-left:28px !important;
-  padding-right:28px !important;
-}
-
-.howToPlayCard .panelTitle{
-  padding-left:0 !important;
-}
-
-.howToPlayCard .infoSectionTitle,
-.howToPlayCard .infoRow{
-  padding-left:8px !important;
-}
-
-.gameOptionsBtn{
-  display:block;
-  width:100%;
-  min-height:56px;
-  margin:14px 0 10px;
-
-  background:#fff !important;
-  border:2px solid #d8e2ef !important;
-  border-radius:999px;
-
-  color:var(--blue) !important;
-  font-size:20px;
-  font-weight:950;
-
-  box-shadow:0 6px 18px rgba(0,0,0,.06);
-}
-
-.gameOptionsBtn:active{
-  transform:scale(.985);
-}
-    
+<button class="createGameBtn" id="createGameBtn" type="button">
+  Create Game
+</button>
 
   </div>
 </div>
@@ -4349,7 +4353,7 @@ body::before{
   Game Options
 </button>
       
-<button class="newGameBtn" id="createGameBtn" type="button">
+<button class="newGameBtn" id="newGameBtn" type="button">
   Start New Game
 </button>
 
