@@ -4084,6 +4084,64 @@ body::before{
   margin-top:8px !important;
   margin-bottom:4px !important;
 }
+
+#gameOptionsOverlay .newGameOption{
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  margin-top:12px !important;
+  padding:16px 18px !important;
+  border:1px solid var(--line) !important;
+  border-radius:18px !important;
+  background:#f8fbff !important;
+  box-shadow:none !important;
+  text-align:left !important;
+}
+
+#gameOptionsOverlay #endTripBtn{
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  margin:12px 0 0 !important;
+  border-radius:18px !important;
+}
+
+#gameOptionsOverlay .newGameDivider{
+  margin:18px 0 10px !important;
+}
+
+#gameOptionsOverlay .newGameOption:hover,
+#gameOptionsOverlay .newGameOption:focus,
+#gameOptionsOverlay .newGameOption:focus-visible,
+#gameOptionsOverlay .newGameOption:active{
+  outline:none !important;
+  background:linear-gradient(180deg,#eaffef,#ffffff) !important;
+  border:3px solid var(--green) !important;
+  box-shadow:0 0 0 3px rgba(38,169,87,.12) !important;
+  transform:scale(.985);
+}
+
+#gameOptionsOverlay .newGameOption:hover strong,
+#gameOptionsOverlay .newGameOption:focus strong,
+#gameOptionsOverlay .newGameOption:active strong{
+  color:var(--green) !important;
+}
+
+#gameOptionsOverlay .gameOptionsDanger:hover,
+#gameOptionsOverlay .gameOptionsDanger:focus,
+#gameOptionsOverlay .gameOptionsDanger:active{
+  background:#fff8f8 !important;
+  border-color:#b43b3b !important;
+  box-shadow:0 0 0 3px rgba(180,59,59,.10) !important;
+}
+
+#gameOptionsOverlay .gameOptionsDanger:hover strong,
+#gameOptionsOverlay .gameOptionsDanger:focus strong,
+#gameOptionsOverlay .gameOptionsDanger:active strong{
+  color:#b43b3b !important;
+}
+
+
   
 </style>
 </head>
