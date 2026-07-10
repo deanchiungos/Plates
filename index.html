@@ -4069,35 +4069,7 @@ body::before{
   margin-bottom:10px;
 }
 
-.gameOptionsSheet{
-  position:relative;
-  width:100%;
-  max-width:420px;
 
-  background:#fff;
-  border-radius:36px;
-  padding:22px 18px 26px;
-
-  box-shadow:0 30px 80px rgba(0,0,0,.18);
-}
-
-.gameOptionsOverlay{
-  position:fixed;
-  inset:0;
-  z-index:9999;
-
-  background:rgba(7,55,99,.55);
-
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-
-  padding:18px;
-}
-
-.gameOptionsOverlay.hidden{
-  display:none !important;
-}
 
 
   #tripsScreen #tripOptionsBtn,
@@ -4739,14 +4711,15 @@ body::before{
     </div>
 
     <div class="card">
+      
       <div class="panelTitle"><span>Trip History</span><span id="historyCount">0 saved</span></div>
       <div class="tripHistoryList" id="tripHistoryList">No saved trips yet.</div>
     </div>
   </section>
 
 
- <div class="gameOptionsOverlay hidden" id="gameOptionsOverlay">
-  <div class="gameOptionsSheet">
+<div class="newGameOverlay hidden" id="gameOptionsOverlay">
+  <div class="newGameSheet">
 
     <div class="newGameHandle"></div>
 
