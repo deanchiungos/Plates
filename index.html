@@ -6002,16 +6002,32 @@ function collectedCount() {
   return Object.keys(unique).length;
 }
 
-  
-function totalScore() {
+
+  function totalScore() {
   var total = 0;
+
   document.querySelectorAll(".state").forEach(function(btn){
-    var c = btn.dataset.code;
-    var p = Number(btn.dataset.points);
-    if(mode === "classic") total += counts[c] ? 1 : 0;
-    if(mode === "weighted") total += counts[c] ? p : 0;
-    if(mode === "unlimited") total += (counts[c] || 0) * p;
+    var code = btn.dataset.code;
+    var points = Number(btn.dataset.points);
+    var isBonus = btn.dataset.bonus === "true";
+
+    if (mode === "classic") {
+      if (!isBonus && counts[code]) {
+        total += 1;
+      }
+    }
+
+    if (mode === "weighted") {
+      if (counts[code]) {
+        total += points;
+      }
+    }
+
+    if (mode === "unlimited") {
+      total += (counts[code] || 0) * points;
+    }
   });
+
   return total;
 }
 
