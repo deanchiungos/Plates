@@ -5987,12 +5987,20 @@ function collectedCount() {
 
   if (Array.isArray(log)) {
     log.forEach(function(item){
-      if (item && item.code) unique[item.code] = true;
+      if (!item || !item.code) return;
+
+      var stateBtn = document.querySelector(
+        '.state[data-code="' + item.code + '"]'
+      );
+
+      if (stateBtn && stateBtn.dataset.bonus === "true") return;
+
+      unique[item.code] = true;
     });
   }
+
   return Object.keys(unique).length;
 }
-  
 
   
 function totalScore() {
