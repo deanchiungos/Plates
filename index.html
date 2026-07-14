@@ -4325,6 +4325,30 @@ body::before{
 .howToPlayCard .panelTitle{
   padding-left:16px !important;
 }
+
+
+  #gameOptionsOverlay .newGameSheet{
+  max-height:calc(100dvh - 110px) !important;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+  -webkit-overflow-scrolling:touch;
+  padding-bottom:120px !important;
+  scrollbar-gutter:stable;
+}
+
+#gameOptionsOverlay .newGameSheet::-webkit-scrollbar{
+  width:8px;
+}
+
+#gameOptionsOverlay .newGameSheet::-webkit-scrollbar-track{
+  background:transparent;
+  margin:18px 0;
+}
+
+#gameOptionsOverlay .newGameSheet::-webkit-scrollbar-thumb{
+  background:rgba(7,55,99,.35);
+  border-radius:999px;
+}
   
   
 </style>
@@ -4366,7 +4390,7 @@ body::before{
 </div>
 <div class="newGameOverlay hidden" id="newGameOverlay">
   <div class="newGameSheet">
-
+    
     <div class="newGameHandle"></div>
     
 <button class="newGameCloseBtn"
@@ -4424,8 +4448,7 @@ body::before{
 </button>
 
   </div>
-</div>
-
+ </div>
 <div class="accountOverlay hidden" id="accountOverlay">
   <div class="accountSheet">
 
@@ -4727,6 +4750,12 @@ body::before{
 </button>
 
    </div>
+
+
+
+
+
+
    
 
    <div class="card myStatsCard">
@@ -5061,6 +5090,9 @@ body::before{
 
 <div class="newGameOverlay hidden" id="gameOptionsOverlay">
   <div class="newGameSheet">
+
+
+        <div class="gameOptionsScroll">
 
     <div class="newGameHandle"></div>
 
