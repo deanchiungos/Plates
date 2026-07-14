@@ -6295,15 +6295,13 @@ function setMode(newMode) {
   var picker = document.getElementById("playerPickerRow");
 
   if(picker) {
-    picker.style.display =
-      gameType === "battle" ? "flex" : "none";
+    picker.style.display = "none";
   }
 
   updateBestForCurrentMode();
   save();
   render();
 }
-  
 
 function setView(newView) {
   view = newView;
