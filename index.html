@@ -3040,7 +3040,23 @@ color:var(--blue) !important;
   font-weight:950 !important;
 }
 
-  
+ #gameScreen #tripPillBtn{
+  width:100%;
+  max-width:none;
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  padding:16px 22px !important;
+  text-align:center;
+
+  background:rgba(255,255,255,.38) !important;
+  border:1px solid rgba(255,255,255,.45) !important;
+  border-radius:26px !important;
+  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
+  backdrop-filter:none !important;
+} 
 
 #gameScreen #tripPillBtn .tripPillMeta{
   color:var(--muted);
@@ -3150,11 +3166,12 @@ body::before{
 }
 
 
-
 #gameScreen .bigProgress{
-  background:rgba(255,255,255,.72);
-  border-radius:22px;
+  background:rgba(255,255,255,.38) !important;
+  border:1px solid rgba(255,255,255,.45) !important;
+  border-radius:26px !important;
   padding:12px;
+  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
 }
 
 #gameScreen .bar{
