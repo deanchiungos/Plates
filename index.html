@@ -3553,11 +3553,7 @@ body::before{
 }
 
 .nextBadgeBox{
-  background:linear-gradient(
-    180deg,
-    rgba(255,250,225,.45),
-    rgba(255,255,255,.32)
-  ) !important;
+  background:rgba(255,255,255,.38) !important;
   border:2px solid rgba(234,194,58,.75) !important;
   box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
 }
@@ -4937,6 +4933,20 @@ body.show-rarity .state.rare:not(.collected){
   border:1px solid rgba(255,255,255,.46) !important;
   box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
 }
+
+.debateBtn.selected{
+  background:linear-gradient(
+    180deg,
+    #eaffef,
+    #ffffff
+  ) !important;
+
+  border:3px solid var(--green) !important;
+
+  color:var(--green) !important;
+
+  transform:scale(1.02);
+}
   
 </style>
 </head>
@@ -5443,9 +5453,9 @@ body.show-rarity .state.rare:not(.collected){
   </div>
 
   <div class="debateOptions">
-    <button class="debateBtn" type="button">ASSMAN</button>
-    <button class="debateBtn" type="button">OUTATIME</button>
-    <button class="debateBtn" type="button">ECTO-1</button>
+<button class="debateBtn" data-vote="ASSMAN">ASSMAN</button>
+<button class="debateBtn" data-vote="OUTATIME">OUTATIME</button>
+<button class="debateBtn" data-vote="ECTO-1">ECTO-1</button>
   </div>
 
 </div>
@@ -7562,7 +7572,22 @@ function getNextBadge() {
   
 function render() {
 
+var savedVote =
+  localStorage.getItem("todayDebateVote");
 
+if(savedVote){
+
+  var selected =
+    document.querySelector(
+      '.debateBtn[data-vote="' +
+      savedVote +
+      '"]'
+    );
+
+  if(selected){
+    selected.classList.add("selected");
+  }
+}
   
   var inviteCodeEl = document.getElementById("tripInviteCode");
   if(inviteCodeEl) {
