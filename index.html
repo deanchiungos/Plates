@@ -3088,12 +3088,7 @@ color:var(--blue) !important;
   
 }
 
-.myStatsCard .panelTitle,
-.dailyChallengeCard .panelTitle,
-.gameModesMini .panelTitle,
-.statesCard .panelTitle{
-  padding-left:4px !important;
-}
+
 
   .howToPlayCard{
   padding:20px 24px !important;
@@ -4431,6 +4426,10 @@ body::before{
   font-weight:900;
 }
 
+  .debateCard .panelTitle{
+  padding-left:4px !important;
+}
+
 
 .debateQuestion{
   text-align:center;
@@ -4505,6 +4504,26 @@ body::before{
   padding:7px 12px !important;
   font-size:14px !important;
   white-space:nowrap;
+}
+
+
+/* Standard card header alignment */
+.panelTitle{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding-left:4px;
+}
+
+/* Cards that should use standard alignment */
+.dailyChallengeCard .panelTitle,
+.debateCard .panelTitle,
+.myStatsCard .panelTitle,
+.howToPlayCard .panelTitle,
+.statesCard .panelTitle,
+.mapCard .panelTitle{
+  padding-left:4px !important;
+  margin-left:0 !important;
 }
   
   
