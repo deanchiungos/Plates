@@ -6081,6 +6081,16 @@ localStorage.platesCurrentPlayerId = currentPlayerId;
 localStorage.platesPlateState = plateState;
 }
 
+function bonusCollectedCount() {
+  var total = 0;
+  document.querySelectorAll('.state[data-bonus="true"]').forEach(function(btn){
+    if(counts[btn.dataset.code]) {
+      total++;
+    }
+  });
+  return total;
+}
+  
 
 function collectedCount() {
   var unique = {};
