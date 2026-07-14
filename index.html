@@ -4894,7 +4894,6 @@ body::before{
 }
 
 button,
-.state,
 .debateBtn,
 .newGameBtn,
 .gameOptionsBtn,
@@ -4907,6 +4906,28 @@ button,
 .shareRoadtripBtn{
   background:#fff !important;
 }  
+
+
+  /* State tiles */
+.state{
+  background:rgba(255,255,255,.88) !important;
+}
+
+/* Collected states must stay green */
+.state.collected{
+  background:linear-gradient(180deg,#32b860 0%,#249d4e 100%) !important;
+  color:#fff !important;
+  border-color:#249d4e !important;
+  box-shadow:0 3px 0 rgba(7,55,99,.10) !important;
+}
+
+/* Rare uncollected states */
+body.show-rarity .state.rare:not(.collected){
+  background:rgba(255,255,255,.88) !important;
+  border-color:var(--gold) !important;
+  color:var(--navy) !important;
+}
+  
 
 #gameScreen #tripPillBtn,
 #gameScreen .bigProgress{
