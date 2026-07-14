@@ -3090,10 +3090,50 @@ color:var(--blue) !important;
 
 .myStatsCard .panelTitle,
 .dailyChallengeCard .panelTitle,
-.howToPlayCard .panelTitle,
 .gameModesMini .panelTitle,
 .statesCard .panelTitle{
   padding-left:4px !important;
+}
+
+  .howToPlayCard{
+  padding:20px 24px !important;
+  overflow:hidden !important;
+}
+
+.howToPlayCard .panelTitle{
+  padding:0 !important;
+  margin:0 0 18px !important;
+  justify-content:flex-start !important;
+  text-align:left !important;
+}
+
+.howToPlayCard .infoSectionTitle{
+  padding:0 !important;
+  margin:0 !important;
+}
+
+.howToPlayCard .infoRow{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) !important;
+  gap:16px !important;
+  align-items:center !important;
+  width:100% !important;
+  min-width:0 !important;
+  padding:18px 0 !important;
+}
+
+.howToPlayCard .infoRow strong,
+.howToPlayCard .infoRow span{
+  min-width:0 !important;
+}
+
+.howToPlayCard .infoRow strong{
+  white-space:nowrap !important;
+}
+
+.howToPlayCard .infoRow span{
+  white-space:normal !important;
+  overflow-wrap:anywhere !important;
 }
   
 .myStatsCard,
@@ -4036,20 +4076,6 @@ body::before{
 }
 
 
-
-.howToPlayCard{
-  padding-left:28px !important;
-  padding-right:28px !important;
-}
-
-.howToPlayCard .panelTitle{
-  padding-left:0 !important;
-}
-
-.howToPlayCard .infoSectionTitle,
-.howToPlayCard .infoRow{
-  padding-left:8px !important;
-}
   
 .gameOptionsBtn{
   display:block;
