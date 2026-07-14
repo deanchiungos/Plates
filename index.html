@@ -6286,25 +6286,24 @@ function createGameFromSheet() {
   toast("New game started");
 }
 
+
+
 function setMode(newMode) {
   mode = newMode;
   scoringMode = newMode;
 
-  // Show player picker only in Roadtrip Mode
-const picker = document.getElementById("playerPickerRow");
+  var picker = document.getElementById("playerPickerRow");
 
-if (picker) {
-  if (mode === "weighted") {
-    picker.style.display = "flex";   // Battle Mode only
-  } else {
-    picker.style.display = "none";   // Classic + Roadtrip
+  if(picker) {
+    picker.style.display =
+      gameType === "battle" ? "flex" : "none";
   }
-}
 
   updateBestForCurrentMode();
   save();
   render();
 }
+  
 
 function setView(newView) {
   view = newView;
