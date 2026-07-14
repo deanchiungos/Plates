@@ -7049,6 +7049,8 @@ function memoryDate(iso) {
   return formatShortDate(iso);
 }
 
+
+  
 function stateNameForCode(code) {
   var btn = document.querySelector('.state[data-code="' + code + '"]');
   return btn ? btn.dataset.name : code;
@@ -7935,6 +7937,8 @@ function openBadgeDetail(badge) {
   
 function attachHandlers() {
 
+document.querySelectorAll(".debateBtn").forEach(function(btn){ btn.onclick = function(){ document .querySelectorAll(".debateBtn") .forEach(function(b){ b.classList.remove("selected"); }); btn.classList.add("selected"); localStorage.setItem( "todayDebateVote", btn.dataset.vote ); }; });
+  
   var closeBadgeBtn = document.getElementById("closeBadgeBtn");
 if(closeBadgeBtn) {
   closeBadgeBtn.onclick = function(){
