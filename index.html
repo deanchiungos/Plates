@@ -6292,11 +6292,6 @@ function setMode(newMode) {
   mode = newMode;
   scoringMode = newMode;
 
-  var picker = document.getElementById("playerPickerRow");
-
-  if(picker) {
-    picker.style.display = "none";
-  }
 
   updateBestForCurrentMode();
   save();
