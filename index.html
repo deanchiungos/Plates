@@ -4729,6 +4729,111 @@ body::before{
   .howToPlayCard > .panelTitle{
   margin-left:-6px !important;
 }
+
+
+/* =========================================
+   HOME HEADER + TRANSLUCENT PILL SYSTEM
+   ========================================= */
+
+/* Every direct Home-card header uses one alignment */
+#gameScreen .card > .panelTitle{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:8px !important;
+
+  width:100% !important;
+  margin:0 0 14px !important;
+  padding:0 12px !important;
+
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+
+  text-align:left !important;
+}
+
+/* Prevent old one-off nudges */
+#gameScreen .dailyChallengeCard > .panelTitle,
+#gameScreen .debateCard > .panelTitle,
+#gameScreen .myStatsCard > .panelTitle,
+#gameScreen .howToPlayCard > .panelTitle,
+#gameScreen .statesCard > .panelTitle{
+  margin-left:0 !important;
+  padding-left:12px !important;
+}
+
+/* Internal How to Play labels align with its header */
+#gameScreen .howToPlayCard .infoSectionTitle{
+  margin-left:12px !important;
+  margin-right:12px !important;
+  padding-left:0 !important;
+}
+
+
+/* LIVE GAME — same translucent treatment as stats */
+#gameScreen #tripPillBtn{
+  width:100% !important;
+  max-width:none !important;
+
+  background:rgba(255,255,255,.72) !important;
+  border:2px solid rgba(38,169,87,.18) !important;
+  border-radius:26px !important;
+  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
+  backdrop-filter:blur(5px);
+
+  display:grid !important;
+  grid-template-columns:auto minmax(0,1fr) !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:28px !important;
+
+  padding:16px 22px !important;
+  margin-bottom:8px !important;
+  text-align:center !important;
+}
+
+#gameScreen #tripPillBtn .tripPillColumn{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:6px !important;
+  min-width:0 !important;
+}
+
+#gameScreen #tripPillBtn .latestTripLabel,
+#gameScreen #tripPillBtn #tripNameTop{
+  width:auto !important;
+  margin:0 !important;
+  color:var(--navy) !important;
+  font-size:16px !important;
+  font-weight:950 !important;
+  line-height:1.1 !important;
+  text-align:center !important;
+}
+
+#gameScreen #tripPillBtn .tripPillMeta{
+  width:auto !important;
+  margin:0 !important;
+  color:var(--muted) !important;
+  font-size:12px !important;
+  font-weight:800 !important;
+  line-height:1.1 !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+}
+
+
+/* Stats pill uses the exact same translucent surface */
+#gameScreen .bigProgress{
+  background:rgba(255,255,255,.72) !important;
+  border:1px solid rgba(6,47,95,.08) !important;
+  border-radius:26px !important;
+  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
+  backdrop-filter:blur(5px);
+}
   
   
 </style>
