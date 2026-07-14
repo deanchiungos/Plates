@@ -6228,13 +6228,32 @@ function setView(newView) {
   render();
   window.scrollTo(0,0);
 }
+
+  
+
+
 function clearTrip() {
-  if (!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) {
+  if(!confirm("Clear this game? This will remove all current progress and cannot be undone.")) {
     return;
   }
 
-  // We'll add the actual reset code here next
+  counts = {};
+  log = [];
+  score = 0;
+
+  save();
+  render();
+
+  var overlay = document.getElementById("gameOptionsOverlay");
+  if(overlay) {
+    overlay.classList.add("hidden");
+  }
+
+  toast("Game cleared");
 }
+
+
+  
 function renameTrip() {
   var n = prompt("Trip name:", tripName);
   if(n && n.trim()) {
@@ -7539,17 +7558,9 @@ if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
 
 var clearTripBtn = document.getElementById("clearTripBtn");
 
-if(clearTripBtn) clearTripBtn.onclick = function(){
-  if(!confirm("Clear this trip? This will remove all current progress and cannot be undone.")) return;
-
-  log = [];
-  score = 0;
-
-  save();
-  render();
-
-  document.getElementById("gameOptionsOverlay").classList.add("hidden");
-};
+if(clearTripBtn) {
+  clearTripBtn.onclick = clearTrip;
+}
 
 var changeModeBtn = document.getElementById("changeModeBtn");
 
