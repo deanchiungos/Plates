@@ -6460,23 +6460,30 @@ function saveSelectedPhoto(file) {
 }
 
 function deleteMemory(id) {
-  var item = tripMemories.find(function(m){ return m.id === id; });
+  var item = tripMemories.find(function(m){
+    return m.id === id;
+  });
+
   if(!item) return;
+
   if(confirm("Delete this memory?")) {
-    tripMemories = tripMemories.filter(function(m){ return m.id !== id; });
+    tripMemories = tripMemories.filter(function(m){
+      return m.id !== id;
+    });
+
     save();
     render();
-    if(selectedState) selectMapState(selectedState);
 
-  const picker = document.getElementById("playerPickerRow");
+    if(selectedState) {
+      selectMapState(selectedState);
+    }
 
-  if (picker) {
-    picker.style.display = mode === "roadtrip" ? "flex" : "none";
+    toast("Memory deleted");
   }
+}
+  
 
-  save();
-}
-}
+  
 
 function selectMapState(code) {
   selectedState = code;
