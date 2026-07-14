@@ -4423,6 +4423,14 @@ body::before{
   min-height:50px !important;
 }
 
+
+  .bonusCount{
+  margin-top:4px;
+  color:#c48d00;
+  font-size:13px;
+  font-weight:900;
+}
+
   
 </style>
 </head>
@@ -6086,6 +6094,19 @@ localStorage.platesPlateState = plateState;
 
 function bonusCollectedCount() {
   var total = 0;
+  document
+    .querySelectorAll('.state[data-bonus="true"]')
+    .forEach(function(btn){
+      if(counts[btn.dataset.code]) {
+        total++;
+      }
+    });
+  return total;
+}
+
+  
+function bonusCollectedCount() {
+  var total = 0;
   document.querySelectorAll('.state[data-bonus="true"]').forEach(function(btn){
     if(counts[btn.dataset.code]) {
       total++;
@@ -7125,7 +7146,14 @@ if(mode === "classic") {
   document.getElementById("outOf").style.display = "inline";
   document.getElementById("outOf").innerHTML = '<span class="found">/</span>50';
 
-
+var bonus = bonusCollectedCount();
+var bonusEl = document.getElementById("bonusCount");
+if(bonusEl) {
+  bonusEl.textContent =
+    bonus > 0
+      ? "+" + bonus + " Bonus Plate" + (bonus > 1 ? "s" : "")
+      : "";
+}
 
   document.getElementById("primaryLabel").textContent = "states collected";
   document.getElementById("secondaryNumber").textContent = left;
