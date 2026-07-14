@@ -2992,10 +2992,31 @@ color:var(--blue) !important;
 /* tighten home spacing between new game and state grid */
 
 
-  
+
+#gameScreen #tripPillBtn{
+  width:100%;
+  max-width:none;
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  padding:16px 22px !important;
+  text-align:center;
+}
+
+#gameScreen #tripPillBtn .tripPillColumn{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  min-width:0;
+}
+
 #gameScreen #tripPillBtn .latestTripLabel,
 #gameScreen #tripPillBtn #tripNameTop,
-#gameScreen #tripPillBtn #tripModeTop{
+#gameScreen #tripPillBtn .tripPillMeta{
   width:auto !important;
   margin:0 !important;
   text-align:center !important;
@@ -3003,22 +3024,22 @@ color:var(--blue) !important;
 }
 
 #gameScreen #tripPillBtn .latestTripLabel{
-  font-size:14px !important;
+  font-size:16px !important;
   white-space:nowrap;
 }
 
 #gameScreen #tripPillBtn #tripNameTop{
-  min-width:0;
-  font-size:18px !important;
-  overflow-wrap:normal;
+  font-size:22px !important;
+  white-space:normal;
 }
 
-#gameScreen #tripPillBtn #tripModeTop{
-  display:block !important;
-  padding:8px 12px !important;
-  font-size:14px !important;
+#gameScreen #tripPillBtn .tripPillMeta{
+  color:var(--muted);
+  font-size:14px;
+  font-weight:850;
   white-space:nowrap;
 }
+  
   
   /* re-center app shell */
 
@@ -7389,12 +7410,18 @@ document.getElementById("tripStatesLine").innerHTML =
 var tripNameTopEl = document.getElementById("tripNameTop");
 if (tripNameTopEl) tripNameTopEl.textContent = tripName;
 
-var tripModeTopEl = document.getElementById("tripModeTop");
-if (tripModeTopEl) {
-  tripModeTopEl.textContent =
-    mode === "classic" ? "Classic Mode" :
-    mode === "weighted" ? "Weighted Mode" :
-    "Unlimited Mode";
+var tripGameTypeTop = document.getElementById("tripGameTypeTop");
+
+if(tripGameTypeTop) {
+  tripGameTypeTop.textContent =
+    gameTypeLabel() + " Mode";
+}
+
+var tripScoringTop = document.getElementById("tripScoringTop");
+
+if(tripScoringTop) {
+  tripScoringTop.textContent =
+    scoringModeLabel() + " Scoring";
 }
   
   document.getElementById("tripModeSummary").textContent = tripModeSummaryText(c, points, sightings);
