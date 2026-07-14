@@ -3052,6 +3052,9 @@ color:var(--blue) !important;
   
   /* re-center app shell */
 
+
+
+  
 .app{
   width:100% !important;
   max-width:430px !important;
@@ -3089,21 +3092,8 @@ color:var(--blue) !important;
 .tripOptionsMenu .dangerItem{
   color:#b43b3b !important;
 }
- #gameScreen .card:has(#recent),
-#gameScreen .card:has(#bestTrip){
-  padding:24px 28px !important;
-}
 
-#gameScreen .card:has(#recent) .panelTitle,
-#gameScreen .card:has(#bestTrip) .panelTitle{
-  margin-left:0 !important;
-  text-align:left !important;
-}
 
-#recent .memoryEmpty{
-  text-align:left !important;
-  padding:8px 0 2px !important;
-} 
 
 
 
@@ -4656,31 +4646,69 @@ body::before{
   text-align:left !important;
 }
 
+
+
+
+/* Recent Sightings - tighter */
+#gameScreen .card:has(#recent){
+  padding:16px 18px !important;
+}
+
+#recent{
+  display:grid !important;
+  gap:8px !important;
+  padding:0 !important;
+  margin:0 !important;
+}
+
+#recent .recentItem{
+  margin:0 !important;
+  padding:12px 14px !important;
+  min-height:0 !important;
+}
+
+#recent .recentMeta{
+  padding:6px 12px !important;
+}
+
+#recent .recentTime{
+  font-size:14px !important;
+}
+
+
+/* How to Play - tighter */
+.howToPlayCard{
+  padding:16px 18px !important;
+}
+
+.howToPlayCard > .panelTitle{
+  margin:0 0 8px !important;
+}
+
+.howToPlayCard .infoSectionTitle{
+  margin:6px 8px 0 !important;
+}
+
 .howToPlayCard .infoRow{
   display:grid !important;
-  grid-template-columns:minmax(145px, 42%) minmax(0, 1fr) !important;
-  align-items:center !important;
-  gap:16px !important;
-  width:100% !important;
-  min-height:0 !important;
-  padding:10px 12px !important;
+  grid-template-columns:145px 1fr !important;
+  gap:12px !important;
+  padding:10px 8px !important;
   margin:0 !important;
-  box-sizing:border-box !important;
+  min-height:0 !important;
 }
 
 .howToPlayCard .infoRow strong{
-  min-width:0 !important;
   white-space:nowrap !important;
-  text-align:left !important;
 }
 
 .howToPlayCard .infoRow span{
-  min-width:0 !important;
-  color:var(--muted) !important;
-  text-align:left !important;
-  white-space:normal !important;
-  overflow-wrap:normal !important;
-  word-break:normal !important;
+  font-size:14px !important;
+  line-height:1.2 !important;
+}
+
+.howToPlayCard .infoDivider{
+  margin:2px 8px !important;
 }
 
 #recent .recentItem,
