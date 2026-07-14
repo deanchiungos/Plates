@@ -3126,10 +3126,7 @@ color:var(--blue) !important;
 }
   
 
-.card > .panelTitle{
-  padding-left:4px;
-  
-}
+
 
 
 .howToPlayCard{
@@ -3908,12 +3905,14 @@ body::before{
   padding-left:4px;
 }
 
-.homeScreen .panelTitle,
-#gameScreen .panelTitle{
-  margin-left:0 !important;
-  padding-left:2px;
-}
 
+  .card > .panelTitle{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 14px !important;
+  padding:0 12px !important;
+}
 
   
   .statesCard .panelTitle,
@@ -4474,10 +4473,7 @@ body::before{
   font-weight:900;
 }
 
-.debateCard .panelTitle{
-  padding-left:0 !important;
-  gap:8px !important;
-}
+
 
 
 .debateQuestion{
@@ -4562,15 +4558,7 @@ body::before{
 }
 
 /* Cards that should use standard alignment */
-.dailyChallengeCard .panelTitle,
-.debateCard .panelTitle,
-.myStatsCard .panelTitle,
-.howToPlayCard .panelTitle,
-.statesCard .panelTitle,
-.mapCard .panelTitle{
-  padding-left:4px !important;
-  margin-left:0 !important;
-}
+
 
 
 /* Home live-game pill typography */
