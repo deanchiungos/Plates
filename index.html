@@ -6328,6 +6328,24 @@ render();
 
 
 } 
+
+  document.querySelectorAll(".debateBtn").forEach(function(btn){
+
+  btn.onclick = function(){
+
+    document.querySelectorAll(".debateBtn").forEach(function(b){
+      b.classList.remove("selected");
+    });
+
+    btn.classList.add("selected");
+
+    localStorage.setItem(
+      "todayDebateVote",
+      btn.dataset.vote
+    );
+  };
+
+});
   
 function stateNameFromCode(code) {
   var select = document.getElementById("plateStateSelect");
