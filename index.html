@@ -358,7 +358,7 @@ button {
   font-size: 24px;
 }
 
-  .latestTripInfo{
+.latestTripInfo{
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -367,9 +367,9 @@ button {
   background:#fff;
   border:2px solid #d8e2ef;
   border-radius:26px;
- padding:20px 18px;
-  margin:0 8px 18px;
-box-shadow:0 6px 18px rgba(0,0,0,.06);
+  padding:20px 18px;
+  margin:0 0 18px !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
 }
 
   
@@ -478,23 +478,7 @@ body.show-rarity .state.rare:not(.collected) { border-color:var(--gold); }
   margin-bottom:10px !important;
 }
   
-.mapHero .latestTripLabel{
-  color:var(--navy) !important;
-}
 
-.mapHeroCount{
-  display:block;
-  width:100%;
-  text-align:center;
-  font-size:34px;
-  font-weight:950;
-  color:var(--navy);
-  line-height:1.05;
-}
-
-.mapHeroCount .found{
-  color:var(--green);
-}
   
 .mapGrid {
   display:grid;
@@ -2692,7 +2676,23 @@ body {
   line-height:1.4 !important;
 }
 
+.mapHero .latestTripLabel{
+  color:var(--navy) !important;
+}
 
+.mapHeroCount{
+  display:block;
+  width:100%;
+  text-align:center;
+  font-size:34px;
+  font-weight:950;
+  color:var(--navy);
+  line-height:1.05;
+}
+
+.mapHeroCount .found{
+  color:var(--green);
+}
 
   .latestTripInfo,
 .mapHero,
@@ -3016,14 +3016,7 @@ color:var(--blue) !important;
   padding:26px 12px 0 !important;
 }
 
-  #mapScreen .panelTitle{
-  margin-top:8px;
-  margin-bottom:6px;
-}
 
-#mapScreen .sub{
-  display:none;
-}
 
   .modeOption.active,
 .newGameOption.active,
@@ -3219,6 +3212,15 @@ body::before{
   line-height:1.25 !important;
 }
 
+  #mapScreen .panelTitle{
+  margin-top:8px;
+  margin-bottom:6px;
+}
+
+#mapScreen .sub{
+  display:none;
+}
+  
   #progressBar{
   display:block !important;
   height:16px !important;
