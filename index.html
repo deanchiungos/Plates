@@ -6501,36 +6501,36 @@ if (mapTitle) {
   mapTitle.textContent = name;
 }
 
-  var stateDetails = document.getElementById("stateDetails");
-if(!stateDetails) return; stateDetails.innerHTML =
-  
-    '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
-      '<div><div class="stateDetailName">' + name + '</div>' +
-      '<div class="stateDetailSub">' + (found ? "FOUND" : "MISSING") + '</div></div>' +
-      '<div class="stateDetailCode">' + code + '</div>' +
-    '</div>' +
+var stateDetails = document.getElementById("stateDetails");
+if(!stateDetails) return;
 
-    '<div class="detailGrid">' +
-      '<div class="detailItem"><span>Rarity</span><strong>' + pts + '/10</strong></div>' +
-      '<div class="detailItem"><span>Sightings</span><strong>' + seen + '</strong></div>' +
-    '</div>' +
+stateDetails.innerHTML =
+  '<div class="stateDetailHero ' + (found ? "found" : "missing") + '">' +
+    '<div><div class="stateDetailName">' + name + '</div>' +
+    '<div class="stateDetailSub">' + (found ? "FOUND" : "MISSING") + '</div></div>' +
+    '<div class="stateDetailCode">' + code + '</div>' +
+  '</div>' +
 
-    '<div class="detailRows">' +
-      '<div class="detailRow"><span>First Seen</span><strong>' + firstSeen + '</strong></div>' +
-      '<div class="detailRow"><span>First Found By</span><strong>' + firstFoundBy(code) + '</strong></div>' +
-      '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
-    '</div>' +
+  '<div class="detailGrid">' +
+    '<div class="detailItem"><span>Rarity</span><strong>' + pts + '/10</strong></div>' +
+    '<div class="detailItem"><span>Sightings</span><strong>' + seen + '</strong></div>' +
+  '</div>' +
 
-    '<div class="notesPreview">' +
-      '<div class="title">Trip Memories</div>' +
-      '<div class="memoryActions">' +
-        '<button class="memoryBtn memoryBtnNote" data-state-code="' + code + '" type="button">Add Note</button>' +
-        '<button class="memoryBtn memoryBtnPhoto" data-state-code="' + code + '" type="button">Add Photo</button>' +
-      '</div>' +
-      renderMemoryList(code) +
-    '</div>';
+  '<div class="detailRows">' +
+    '<div class="detailRow"><span>First Seen</span><strong>' + firstSeen + '</strong></div>' +
+    '<div class="detailRow"><span>First Found By</span><strong>' + firstFoundBy(code) + '</strong></div>' +
+    '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
+  '</div>' +
+
+  '<div class="notesPreview">' +
+    '<div class="title">Trip Memories</div>' +
+    '<div class="memoryActions">' +
+      '<button class="memoryBtn memoryBtnNote" data-state-code="' + code + '" type="button">Add Note</button>' +
+      '<button class="memoryBtn memoryBtnPhoto" data-state-code="' + code + '" type="button">Add Photo</button>' +
+    '</div>' +
+    renderMemoryList(code) +
+  '</div>';
 }
-
 
 function renderBadges() {
   var badgeGrid = document.getElementById("badgeGrid");
