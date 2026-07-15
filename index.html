@@ -2993,76 +2993,8 @@ color:var(--blue) !important;
   margin-bottom:14px !important;
 }
 
-/* tighten home spacing between new game and state grid */
 
 
-#gameScreen #tripPillBtn{
-  width:100%;
-  max-width:none;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:8px;
-  padding:16px 22px !important;
-  text-align:center;
-  background:rgba(255,255,255,.58) !important;
-  border:1px solid rgba(255,255,255,.55) !important;
-  border-radius:26px !important;
-  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
-  backdrop-filter:none !important;
-}
-
-#gameScreen #tripPillBtn .tripPillColumn{
-  min-width:0;
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:4px;
-
-  text-align:center;
-}
-
-#gameScreen #tripPillBtn .latestTripLabel,
-#gameScreen #tripPillBtn #tripNameTop{
-  width:100%;
-  margin:0 !important;
-color: var(--blue);
-    letter-spacing: .08em;
-  font-size:18px !important;
-  font-weight:950 !important;
-  line-height:1.1 !important;
-  text-align:center !important;
-  
-}
-
-#gameScreen #tripPillBtn .tripPillMeta,
-#gameScreen #tripPillBtn #tripModeTop{
-  width:100%;
-  margin:0 !important;
-
-  color:var(--muted);
-  font-size:16px !important;
-  font-weight:850 !important;
-  line-height:1.1 !important;
-  text-align:center !important;
-}
-
-
-#gameScreen #tripPillBtn .tripPillColumn:first-child{
-  align-items:flex-end;
-  text-align:right;
-  padding-right:16px;
-}
-
-#gameScreen #tripPillBtn .tripPillColumn:last-child{
-  align-items:flex-start;
-  text-align:left;
-  padding-left:16px;
-}
-  
-  /* re-center app shell */
 
 
 
@@ -3162,23 +3094,6 @@ body::before{
 }
 
 
-#gameScreen .bigProgress{
-  background:rgba(255,255,255,.38) !important;
-  border:1px solid rgba(255,255,255,.45) !important;
-  border-radius:26px !important;
-  padding:12px;
-  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
-}
-
-#gameScreen .bar{
-  height:16px;
-  background:#e5eef7;
-  border-radius:999px;
-  overflow:hidden;
-  padding:0;
-}
-
-/* v47 final polish pass */
 
 /* Profile Safari selector fix */
 .profileSelect{
@@ -4062,30 +3977,7 @@ body::before{
 }
 
 
-  #gameScreen #gameOptionsBtn{
-  display:block !important;
-  width:100% !important;
-  min-height:56px !important;
 
-  margin:12px 0 10px !important;
-  padding:0 18px !important;
-
-  background:#fff !important;
-  border:2px solid #d8e2ef !important;
-  border-radius:999px !important;
-
-  color:var(--blue) !important;
-  font-size:20px !important;
-  font-weight:950 !important;
-  line-height:1 !important;
-
-  text-align:center !important;
-  box-shadow:0 6px 18px rgba(0,0,0,.06) !important;
-}
-
-#gameScreen #gameOptionsBtn:active{
-  transform:scale(.985);
-}
   
 .newGameSheet{
   position:relative !important;
@@ -4242,18 +4134,7 @@ body::before{
   overscroll-behavior:contain;
 }
   
-#gameScreen .gameOptionsBtn{
-  margin:6px 0 6px !important;
-}
 
-#gameScreen #newGameBtn{
-  margin-top:4px !important;
-}
-
-#gameScreen .stateGrid{
-  margin-bottom:8px !important;
-}
-  
 .profileCard{
   padding-top:20px !important;
   padding-bottom:20px !important;
@@ -4512,54 +4393,6 @@ body::before{
   padding-right:8px;
 }
 
-#gameScreen #tripPillBtn{
-  width:100%;
-  max-width:none;
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  padding:16px 18px !important;
-  text-align:center;
-}
-
-#gameScreen #tripPillBtn .latestTripLabel,
-#gameScreen #tripPillBtn #tripNameTop,
-#gameScreen #tripPillBtn #tripModeTop{
-  display:block !important;
-  width:auto !important;
-  margin:0 !important;
-  text-align:center !important;
-  line-height:1.1 !important;
-}
-
-#gameScreen #tripPillBtn #tripModeTop{
-  padding:7px 12px !important;
-  font-size:18px !important;
-  white-space:nowrap;
-}
-  
-#gameScreen #tripPillBtn .latestTripLabel{
-  font-size:14px !important;
-  font-weight:900 !important;
-  text-transform:uppercase;
-  letter-spacing:.06em;
-  color:var(--muted);
-}
-
-#gameScreen #tripPillBtn #tripNameTop{
-  font-size:22px !important;
-  font-weight:950 !important;
-  line-height:1.05;
-}
-
-  #gameScreen #tripPillBtn .tripPillMeta,
-#gameScreen #tripPillBtn #tripModeTop{
-  font-size:16px !important;
-  font-weight:850;
-  color:var(--muted);
-}
 
 /* Standard card header alignment */
 .panelTitle{
@@ -4572,20 +4405,6 @@ body::before{
 /* Cards that should use standard alignment */
 
 
-
-/* Home live-game pill typography */
-#gameScreen #tripPillBtn #tripNameTop{
-  font-size:16px !important;
-  font-weight:900 !important;
-  line-height:1.1 !important;
-}
-
-#gameScreen #tripPillBtn .tripPillMeta{
-  font-size:12px !important;
-  font-weight:800 !important;
-  color:var(--muted) !important;
-  line-height:1.1 !important;
-}
 
 /* Vertically center the secondary stat */
 .bigProgress{
@@ -4632,20 +4451,7 @@ body::before{
 }
 
 
-/* LIVE GAME PILL */
-#gameScreen #tripPillBtn .latestTripLabel,
-#gameScreen #tripPillBtn #tripNameTop{
-  font-size:16px !important;
-  font-weight:950 !important;
-  line-height:1.1 !important;
-}
 
-#gameScreen #tripPillBtn .tripPillMeta{
-  font-size:12px !important;
-  font-weight:800 !important;
-  color:var(--muted) !important;
-  line-height:1.1 !important;
-}
 
 
 /* DAILY CHALLENGE */
@@ -4711,12 +4517,6 @@ body::before{
 }
 
 
-
-
-/* Recent Sightings - tighter */
-#gameScreen .card:has(#recent){
-  padding:16px 18px !important;
-}
 
 #recent{
   display:grid !important;
@@ -4803,105 +4603,6 @@ body::before{
    ========================================= */
 
 /* Every direct Home-card header uses one alignment */
-#gameScreen .card > .panelTitle{
-  display:flex !important;
-  align-items:center !important;
-  justify-content:space-between !important;
-  gap:8px !important;
-
-  width:100% !important;
-  margin:0 0 14px !important;
-  padding:0 12px !important;
-
-  background:transparent !important;
-  border:0 !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-
-  text-align:left !important;
-}
-
-/* Prevent old one-off nudges */
-#gameScreen .dailyChallengeCard > .panelTitle,
-#gameScreen .debateCard > .panelTitle,
-#gameScreen .myStatsCard > .panelTitle,
-#gameScreen .howToPlayCard > .panelTitle,
-#gameScreen .statesCard > .panelTitle{
-  margin-left:0 !important;
-  padding-left:12px !important;
-}
-
-/* Internal How to Play labels align with its header */
-#gameScreen .howToPlayCard .infoSectionTitle{
-  margin-left:12px !important;
-  margin-right:12px !important;
-  padding-left:0 !important;
-}
-
-
-/* LIVE GAME — same translucent treatment as stats */
-#gameScreen #tripPillBtn{
-  width:100% !important;
-  max-width:none !important;
-
-  background:rgba(255,255,255,.72) !important;
-  border:2px solid rgba(38,169,87,.18) !important;
-  border-radius:26px !important;
-  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
-  backdrop-filter:blur(5px);
-
-  display:grid !important;
-  grid-template-columns:auto minmax(0,1fr) !important;
-  align-items:center !important;
-  justify-content:center !important;
-  gap:28px !important;
-
-  padding:16px 22px !important;
-  margin-bottom:8px !important;
-  text-align:center !important;
-}
-
-#gameScreen #tripPillBtn .tripPillColumn{
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:center !important;
-  justify-content:center !important;
-  gap:6px !important;
-  min-width:0 !important;
-}
-
-#gameScreen #tripPillBtn .latestTripLabel,
-#gameScreen #tripPillBtn #tripNameTop{
-  width:auto !important;
-  margin:0 !important;
-  color:var(--navy) !important;
-  font-size:16px !important;
-  font-weight:950 !important;
-  line-height:1.1 !important;
-  text-align:center !important;
-}
-
-#gameScreen #tripPillBtn .tripPillMeta{
-  width:auto !important;
-  margin:0 !important;
-  color:var(--muted) !important;
-  font-size:12px !important;
-  font-weight:800 !important;
-  line-height:1.1 !important;
-  text-align:center !important;
-  white-space:nowrap !important;
-}
-
-
-/* Stats pill uses the exact same translucent surface */
-#gameScreen .bigProgress{
-  background:rgba(255,255,255,.72) !important;
-  border:1px solid rgba(6,47,95,.08) !important;
-  border-radius:26px !important;
-  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
-  backdrop-filter:blur(5px);
-}
-
 
 /* =========================================
    GLOBAL GLASS SURFACE SYSTEM
@@ -4979,12 +4680,6 @@ body.show-rarity .state.rare:not(.collected){
 }
   
 
-#gameScreen #tripPillBtn,
-#gameScreen .bigProgress{
-  background:rgba(255,255,255,.38) !important;
-  border:1px solid rgba(255,255,255,.46) !important;
-  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
-}
 
 .debateBtn.selected{
   background:linear-gradient(
@@ -5026,18 +4721,79 @@ body.show-rarity .state.rare:not(.collected){
 .nextBadgeBox{
   background:rgba(255,255,255,.58) !important;
 }
-  
-#gameScreen #tripPillBtn,
-#gameScreen .bigProgress{
-  background:rgba(255,255,255,.58) !important;
-}
 
 
   #profileScreen .friendsCard .panelTitle,
 #profileScreen .friendsCard .memoryEmpty{
   margin-left:-4px !important;
+  
 }
 
+
+/* LIVE GAME PILL — FINAL */
+
+#gameScreen #tripPillBtn{
+  width:100%;
+  max-width:none;
+
+  display:grid;
+  grid-template-columns:1fr 1.35fr;
+  align-items:center;
+  gap:0;
+
+  padding:16px 22px !important;
+  margin-bottom:8px !important;
+
+  background:rgba(255,255,255,.58) !important;
+  border:1px solid rgba(255,255,255,.55) !important;
+  border-radius:26px !important;
+  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
+
+  text-align:center;
+}
+
+#gameScreen #tripPillBtn .tripPillColumn{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+}
+
+#gameScreen #tripPillBtn .tripPillColumn:first-child{
+  align-items:flex-end;
+  padding-right:18px;
+  text-align:right;
+}
+
+#gameScreen #tripPillBtn .tripPillColumn:last-child{
+  align-items:flex-start;
+  padding-left:18px;
+  text-align:left;
+}
+
+#gameScreen #tripPillBtn .latestTripLabel,
+#gameScreen #tripPillBtn #tripNameTop{
+  width:auto;
+  margin:0 !important;
+
+  color:var(--navy) !important;
+  font-size:18px !important;
+  font-weight:950 !important;
+  line-height:1.05 !important;
+  white-space:nowrap;
+}
+
+#gameScreen #tripPillBtn .tripPillMeta{
+  width:auto;
+  margin:0 !important;
+
+  color:var(--muted) !important;
+  font-size:14px !important;
+  font-weight:850 !important;
+  line-height:1.1 !important;
+  white-space:nowrap;
+}
   
   
 </style>
