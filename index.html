@@ -4920,17 +4920,158 @@ margin-bottom:6px;
   margin:0 !important;
 }
 
-  #tripsScreen .activeGameHero{
-  margin-bottom:0 !important;
+/* TRIPS ACTIVE GAME HERO — MATCH HOME */
+
+#tripsScreen .activeGameHero{
+  width:100% !important;
+  max-width:none !important;
+
+  padding:20px 22px 18px !important;
+  margin:0 !important;
+
+  background:rgba(255,255,255,.60) !important;
+  border:1px solid rgba(255,255,255,.55) !important;
+  border-radius:28px !important;
+  box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
+
+  text-align:center !important;
+}
+
+#tripsScreen .activeGameLabel{
+  margin:0 !important;
+
+  color:var(--blue) !important;
+  font-size:13px !important;
+  font-weight:950 !important;
+  line-height:1 !important;
+  letter-spacing:.10em !important;
+  text-align:center !important;
+}
+
+#tripsScreen #tripName{
+  display:block !important;
+  width:100% !important;
+
+  margin:8px 0 0 !important;
+
+  color:var(--navy) !important;
+  font-size:30px !important;
+  font-weight:950 !important;
+  line-height:1.05 !important;
+  text-align:center !important;
+}
+
+#tripsScreen .activeGameMeta{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-wrap:wrap !important;
+  gap:7px !important;
+
+  margin:4px 0 6px !important;
+
+  color:var(--muted) !important;
+  font-size:15px !important;
+  font-weight:850 !important;
+  line-height:1.1 !important;
+  text-align:center !important;
+}
+
+#tripsScreen .metaDot{
+  opacity:.55 !important;
+}
+
+#tripsScreen .activeGameFound{
+  display:flex !important;
+  align-items:baseline !important;
+  justify-content:center !important;
+  gap:0 !important;
+
+  margin-top:10px !important;
+
+  color:var(--navy) !important;
+  font-size:26px !important;
+  font-weight:950 !important;
+  line-height:1 !important;
+  text-align:center !important;
+}
+
+#tripsScreen #tripPrimaryNumber,
+#tripsScreen .activeGameFound .outOf{
+  margin:0 !important;
+  padding:0 !important;
 }
 
 #tripsScreen #tripPrimaryNumber{
   color:var(--green) !important;
 }
 
+#tripsScreen .activeGameFound .outOf{
+  color:var(--muted) !important;
+  margin-left:-2px !important;
+}
+
+#tripsScreen .foundText{
+  margin-left:6px !important;
+
+  color:var(--muted) !important;
+  font-size:20px !important;
+  font-weight:850 !important;
+}
+
+#tripsScreen .bonusCount{
+  display:block !important;
+  width:100% !important;
+
+  margin-top:5px !important;
+
+  color:var(--green) !important;
+  font-size:14px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  text-align:center !important;
+}
+
 #tripsScreen #tripProgressBar{
-  margin-top:6px !important;
-  margin-bottom:10px !important;
+  display:block !important;
+  width:100% !important;
+  height:16px !important;
+
+  margin:6px 0 10px !important;
+
+  background:#e5eef7 !important;
+  border-radius:999px !important;
+  overflow:hidden !important;
+}
+
+#tripsScreen #tripProgressFill{
+  height:100% !important;
+  border-radius:999px !important;
+  background:linear-gradient(
+    90deg,
+    var(--green),
+    #70d66d,
+    var(--gold)
+  ) !important;
+  transition:width .25s ease !important;
+}
+
+
+/* TIGHTEN TRIPS BUTTONS */
+
+#tripsScreen .tripOptionsBar{
+  margin:8px 0 0 !important;
+  padding:0 !important;
+}
+
+#tripsScreen #tripOptionsBtn{
+  width:100% !important;
+  margin:0 0 8px !important;
+}
+
+#tripsScreen #newTripBtn{
+  width:100% !important;
+  margin:0 !important;
 }
   
 </style>
