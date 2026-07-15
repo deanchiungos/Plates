@@ -3556,142 +3556,67 @@ body::before{
   background:rgba(255,255,255,.38) !important;
   border:2px solid rgba(234,194,58,.75) !important;
   box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
+  padding:12px 14px !important;
+  margin-top:10px;
 }
-  
 
 .nextBadgeLabel{
+  font-size:10px !important;
+  letter-spacing:1.5px;
+  margin-bottom:6px !important;
   color:#9a7a11;
-  font-size:13px;
   font-weight:950;
-  letter-spacing:.16em;
   text-transform:uppercase;
-  margin-bottom:12px;
 }
 
 .nextBadgeMain{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:12px;
 }
 
 .nextBadgeIcon{
-  width:64px;
-  height:64px;
-  min-width:64px;
+  width:60px;
+  height:60px;
+  min-width:60px;
   border-radius:999px;
   background:#fff;
   border:2px solid var(--badge-yellow);
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:34px;
+  font-size:30px;
+  flex-shrink:0;
 }
 
 .nextBadgeName{
-  font-size:24px;
+  margin:0;
+  font-size:20px;
   font-weight:950;
   color:var(--navy);
+  line-height:1.05;
 }
 
 .nextBadgeProgress{
-  font-size:15px;
+  margin-top:2px;
   font-weight:850;
   color:var(--muted);
-  margin:5px 0 9px;
+  font-size:14px;
 }
 
 .progressTrack{
   width:100%;
-  height:9px;
+  height:8px;
   background:rgba(11,62,103,.12);
   border-radius:999px;
   overflow:hidden;
+  margin-top:8px;
 }
 
-.progressTrack.small{
-  height:6px;
-  margin-top:9px;
+.grow{
+  flex:1;
 }
-
-.progressFill{
-  height:100%;
-  background:var(--green);
-  border-radius:999px;
-}
-
-.allBadgesTitle{
-  font-size:22px;
-  font-weight:950;
-  color:var(--navy);
-  margin:4px 0 14px;
-}
-
-.badgeGrid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
-
-.badge{
-  min-height:165px;
-  border:2px solid #e3ebf4;
-  background:#fff;
-  border-radius:24px;
-  padding:18px 12px;
-  text-align:center;
-  transition:.18s;
-  box-shadow:0 8px 18px rgba(11,62,103,.05);
-}
-
-.badge.unlocked{
-  opacity:1;
-  border-color:var(--badge-yellow);
-  background:#fff;
-}
-
-.badge.locked{
-  opacity:.45;
-  filter:grayscale(.55);
-  background:#f8fbff;
-}
-
-.badgeIcon{
-  width:68px;
-  height:68px;
-  margin:0 auto 12px;
-  border-radius:999px;
-  background:#fff;
-  border:2px solid rgba(7,55,99,.12);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:36px;
-}
-
-.badgeName{
-  font-size:14px;
-  font-weight:950;
-  color:var(--navy);
-  letter-spacing:.04em;
-  text-transform:uppercase;
-}
-
-.badgeDesc{
-  margin-top:5px;
-  font-size:12px;
-  font-weight:800;
-  color:var(--muted);
-  line-height:1.25;
-}
-
-.badgeMiniProgress{
-  font-size:12px;
-  font-weight:950;
-  color:var(--navy);
-  margin-top:10px;
-}
-
-
+  
 .profileHero{
   text-align:center;
   padding:0 !important;
@@ -7278,17 +7203,20 @@ function renderBadges() {
     var progress = getBadgeProgress(next);
     var pct = Math.round((progress / next.goal) * 100);
 
-nextBadgeBox.innerHTML =
-'<div class="nextBadgeLabel">What\'s next?</div>' +
+
+    nextBadgeBox.innerHTML =
+  '<div class="nextBadgeLabel">Next badge</div>' +
   '<div class="nextBadgeMain">' +
     '<div class="nextBadgeIcon">' + next.icon + '</div>' +
     '<div class="grow">' +
       '<div class="nextBadgeName">' + next.name + '</div>' +
-      '<div class="nextBadgeProgress">' + progress + ' / ' + next.goal + '</div>' +
-      '<div class="progressTrack"><div class="progressFill" style="width:' + pct + '%;"></div></div>' +
+      '<div class="nextBadgeProgress">' + progress + ' / ' + next.goal + ' states found</div>' +
+      '<div class="progressTrack">' +
+        '<div class="progressFill" style="width:' + pct + '%;"></div>' +
+      '</div>' +
     '</div>' +
   '</div>';
-  }
+}
 
   var sorted = badgeDefs.slice().sort(function(a,b){
     return Number(isBadgeUnlocked(b)) - Number(isBadgeUnlocked(a)) ||
