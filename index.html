@@ -7616,50 +7616,95 @@ if (listCountEl) {
     cell.classList.toggle("rare", pts >= 8);
   });
 
-if(mode === "classic") {
-  document.getElementById("primaryNumber").textContent = c;
-  document.getElementById("outOf").style.display = "inline";
-  document.getElementById("outOf").innerHTML = '<span class="found">/</span>50';
-
-var bonus = bonusCollectedCount();
+var primaryNumberEl = document.getElementById("primaryNumber");
+var outOfEl = document.getElementById("outOf");
+var primaryLabelEl = document.getElementById("primaryLabel");
+var progressBarEl = document.getElementById("progressBar");
+var fillEl = document.getElementById("fill");
 var bonusEl = document.getElementById("bonusCount");
-if(bonusEl) {
-  bonusEl.textContent =
-    bonus > 0
-      ? "+" + bonus + " Bonus Plate" + (bonus > 1 ? "s" : "")
-      : "";
-}
 
-  document.getElementById("primaryLabel").textContent = "states collected";
-  document.getElementById("secondaryNumber").textContent = left;
-  document.getElementById("secondaryLabel").textContent = "states to go";
-document.getElementById("progressBar").style.display = "block";
+if(mode === "classic") {
 
-var fill = document.getElementById("fill");
-if (fill) {
-  fill.style.width = pct + "%";
-}
-}
-
-  if(mode === "weighted") {
-    document.getElementById("primaryNumber").textContent = points;
-    document.getElementById("outOf").style.display = "none";
-    document.getElementById("primaryLabel").textContent = "points";
-    document.getElementById("secondaryNumber").textContent = c;
-    document.getElementById("secondaryLabel").textContent = "states found";
-    document.getElementById("progressBar").style.display = "none";
+  if(primaryNumberEl){
+    primaryNumberEl.textContent = c;
   }
 
-  if(mode === "unlimited") {
-    document.getElementById("primaryNumber").textContent = points;
-    document.getElementById("outOf").style.display = "none";
-    document.getElementById("primaryLabel").textContent = "points";
-    document.getElementById("secondaryNumber").textContent = sightings;
-    document.getElementById("secondaryLabel").textContent = "sightings";
-    document.getElementById("progressBar").style.display = "none";
+  if(outOfEl){
+    outOfEl.style.display = "inline";
+    outOfEl.innerHTML = '<span class="found">/</span>50';
   }
 
-  updateBestForCurrentMode();
+  if(primaryLabelEl){
+    primaryLabelEl.textContent = "states found";
+  }
+
+  if(bonusEl){
+    var bonus = bonusCollectedCount();
+
+    bonusEl.textContent =
+      bonus > 0
+        ? "+" + bonus + " Bonus Plate" + (bonus > 1 ? "s" : "")
+        : "";
+  }
+
+  if(progressBarEl){
+    progressBarEl.style.display = "block";
+  }
+
+  if(fillEl){
+    fillEl.style.width = pct + "%";
+  }
+}
+
+if(mode === "weighted") {
+
+  if(primaryNumberEl){
+    primaryNumberEl.textContent = points;
+  }
+
+  if(outOfEl){
+    outOfEl.style.display = "none";
+  }
+
+  if(primaryLabelEl){
+    primaryLabelEl.textContent = "points";
+  }
+
+  if(bonusEl){
+    bonusEl.textContent = "";
+  }
+
+  if(progressBarEl){
+    progressBarEl.style.display = "none";
+  }
+}
+
+if(mode === "unlimited") {
+
+  if(primaryNumberEl){
+    primaryNumberEl.textContent = points;
+  }
+
+  if(outOfEl){
+    outOfEl.style.display = "none";
+  }
+
+  if(primaryLabelEl){
+    primaryLabelEl.textConte
+      
+    nt = sightings + " sightings";
+  }
+
+  if(bonusEl){
+    bonusEl.textContent = "";
+  }
+
+  if(progressBarEl){
+    progressBarEl.style.display = "none";
+  }
+}
+
+updateBestForCurrentMode();
 
   document.getElementById("bestTrip").textContent = bestForCurrentMode();
   document.getElementById("tripCount").textContent = tripCount;
