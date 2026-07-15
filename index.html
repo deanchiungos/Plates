@@ -7829,6 +7829,24 @@ if(tripGameTypeTop) {
     gameTypeLabel() + " Mode";
 }
 
+
+var tripGameTypeTrips =
+  document.getElementById("tripGameTypeTrips");
+
+var tripScoringTrips =
+  document.getElementById("tripScoringTrips");
+
+if(tripGameTypeTrips){
+  tripGameTypeTrips.textContent =
+    gameTypeLabel() + " Mode";
+}
+
+if(tripScoringTrips){
+  tripScoringTrips.textContent =
+    scoringModeLabel() + " Scoring";
+}
+  
+  
 var tripScoringTop = document.getElementById("tripScoringTop");
 
 if(tripScoringTop) {
