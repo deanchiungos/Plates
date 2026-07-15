@@ -7835,8 +7835,32 @@ if(tripScoringTop) {
   tripScoringTop.textContent =
     scoringModeLabel() + " Scoring";
 }
+
+  var tripStatesLine =
+  document.getElementById("tripStatesLine");
+
+if(tripStatesLine){
+
+  if(mode === "classic"){
+    tripStatesLine.innerHTML =
+      '<span class="found">' + c + '</span>' +
+      '<span class="tripsOutOf">/50</span>' +
+      '<span class="tripsFoundText"> states found</span>';
+  }
+
+  else if(mode === "weighted"){
+    tripStatesLine.innerHTML =
+      points + " points";
+  }
+
+  else{
+    tripStatesLine.innerHTML =
+      sightings + " sightings";
+  }
+
+}
+
   
-  document.getElementById("tripModeSummary").textContent = tripModeSummaryText(c, points, sightings);
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
 
