@@ -5227,70 +5227,64 @@ body.show-rarity .state.rare:not(.collected){
     </div>
   </section>
 
- <section id="gameScreen" class="screen">
 
+<section id="gameScreen" class="screen">
 
+  <div class="activeGameHero" id="tripPillBtn">
 
-<div class="currentTripHeader" id="tripPillBtn">
-
-  <div class="tripPillColumn">
-    <div class="latestTripLabel" id="liveGameLabel">
-      Active Game:
+    <div class="activeGameLabel" id="liveGameLabel">
+      Active Game
     </div>
 
-    <div class="tripPillMeta" id="tripGameTypeTop">
-      Solo Mode
-    </div>
-  </div>
-
-  <div class="tripPillColumn">
     <div class="tripNameInline" id="tripNameTop">
       Bastille Day Roadtrip
     </div>
 
-    <div class="tripPillMeta" id="tripScoringTop">
-      Classic Scoring
+    <div class="activeGameMeta">
+      <span id="tripGameTypeTop">Solo Mode</span>
+      <span class="metaDot">•</span>
+      <span id="tripScoringTop">Classic Scoring</span>
+    </div>
+
+    <div class="activeGameStats">
+
+      <div class="primaryStat">
+        <div class="bigNum">
+          <span id="primaryNumber">0</span>
+          <span id="outOf" class="outOf">/50</span>
+        </div>
+
+        <div class="sub" id="primaryLabel">
+          states collected
+        </div>
+
+        <div class="bonusCount" id="bonusCount"></div>
+      </div>
+
+      <div class="secondaryStat">
+        <div class="scoreMini">
+          <strong id="secondaryNumber">50</strong>
+          <span id="secondaryLabel">states to go</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bar" id="progressBar">
+      <div class="fill" id="fill"></div>
+    </div>
+
+  </div>
+
+  <div class="noGameHero hidden" id="noGameHero">
+    <div class="noGameTitle">No Active Game</div>
+    <div class="noGameSub">
+      Start a new game to begin collecting plates
     </div>
   </div>
 
-</div> 
-
-
-
-<div class="noGameHero hidden" id="noGameHero">
-  <div class="noGameTitle">No Active Game</div>
-  <div class="noGameSub">Start a new game to begin collecting plates</div>
-</div>
-   
-<div class="bigProgress">
-
-  <div class="primaryStat">
-    <div class="bigNum">
-      <span id="primaryNumber">0</span>
-      <span id="outOf" class="outOf">/50</span>
-    </div>
-
-    <div class="sub" id="primaryLabel">
-      states collected
-    </div>
-
-    <div class="bonusCount" id="bonusCount"></div>
-  </div>
-
-  <div class="secondaryStat">
-    <div class="scoreMini">
-      <strong id="secondaryNumber">50</strong>
-      <br>
-      <span id="secondaryLabel">states to go</span>
-    </div>
-  </div>
-
-</div>
-
-      <div class="bar" id="progressBar"><div class="fill" id="fill"></div></div>
-
-    
-
+  
+  
     <div class="card">
       <div class="panelTitle tapStateTitle">
   <span>States</span>
