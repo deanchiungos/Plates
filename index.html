@@ -4807,13 +4807,26 @@ margin-bottom:6px;
   opacity:.55;
 }
 
-#gameScreen .activeGameFound{
-  margin-top:18px;
+
+
+  #gameScreen .activeGameFound{
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap:0;
+
+  margin-top:10px;
 
   color:var(--navy);
   font-size:26px;
   font-weight:950;
   line-height:1;
+}
+
+#gameScreen .activeGameFound #primaryNumber,
+#gameScreen .activeGameFound .outOf{
+  margin:0;
+  padding:0;
 }
 
 #gameScreen .activeGameFound #primaryNumber{
@@ -4822,10 +4835,11 @@ margin-bottom:6px;
 
 #gameScreen .activeGameFound .outOf{
   color:var(--muted);
+  margin-left:-2px;
 }
 
 #gameScreen .foundText{
-  margin-left:4px;
+  margin-left:6px;
 
   color:var(--muted);
   font-size:20px;
