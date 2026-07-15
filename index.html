@@ -1832,9 +1832,12 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   .found{
   color:var(--green) !important;
 }
+ 
   #primaryNumber{
   color: var(--green) !important;
+      margin-right:-4px;
 }
+  
   #stateDetails{
   text-align:left;
 }
@@ -4402,6 +4405,10 @@ body::before{
 /* Cards that should use standard alignment */
 
 .bigNum{
+display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap:0 !important;  
   font-size:42px;
   font-weight:950;
   letter-spacing:-1px;
