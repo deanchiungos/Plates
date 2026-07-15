@@ -3534,6 +3534,13 @@ body::before{
   
   /* BADGES */
 
+.allBadgesTitle{
+  font-size:22px;
+  font-weight:950;
+  color:var(--navy);
+  margin:4px 0 12px;
+}
+  
 .badgesTitle{
   font-size:26px;
   font-weight:950;
@@ -3554,10 +3561,11 @@ body::before{
 
 .nextBadgeBox{
   background:rgba(255,255,255,.38) !important;
-  border:2px solid rgba(234,194,58,.75) !important;
   box-shadow:0 8px 22px rgba(7,55,99,.08) !important;
-  padding:12px 14px !important;
+  padding:10px 14px !important;
   margin-top:10px;
+  margin-bottom:18px;
+  border:2px solid rgba(234,194,58,.45) !important;
 }
 
 .nextBadgeLabel{
@@ -3572,12 +3580,15 @@ body::before{
 .nextBadgeMain{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:16px;
 }
 
+
 .nextBadgeIcon{
-  width:60px;
-  height:60px;
+    width:56px;
+  height:56px;
+  min-width:56px;
+  font-size:28px;
   min-width:60px;
   border-radius:999px;
   background:#fff;
@@ -3590,18 +3601,19 @@ body::before{
 }
 
 .nextBadgeName{
+   font-size:18px;
+  margin-bottom:2px;
   margin:0;
-  font-size:20px;
   font-weight:950;
   color:var(--navy);
   line-height:1.05;
 }
 
 .nextBadgeProgress{
-  margin-top:2px;
+    font-size:13px;
+  margin-top:0;
   font-weight:850;
   color:var(--muted);
-  font-size:14px;
 }
 
 .progressTrack{
