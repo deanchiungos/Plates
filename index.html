@@ -5595,26 +5595,48 @@ margin-bottom:6px;
   <div class="card">
 
 
-<div class="currentTripHeader">
+<div class="currentTripHeader tripsActiveGameHero">
 
-<div class="latestTripLabel">Active Game</div>
+  <div class="tripsActiveGameLabel">
+    Active Game
+  </div>
 
   <div class="tripNameInline" id="tripName">
     Summer Roadtrip
   </div>
 
-  <div class="tripStatsHero">
+  <div class="tripsActiveGameMeta">
+    <span id="tripGameTypeTrips">
+      Solo Mode
+    </span>
 
-    <div id="tripStatesLine">
-      0/50 States
-    </div>
+    <span class="metaDot">•</span>
 
-    <div id="tripModeSummary">
-      Classic Mode
-    </div>
-
+    <span id="tripScoringTrips">
+      Classic Scoring
+    </span>
   </div>
 
+  <div class="tripsActiveGameFound" id="tripStatesLine">
+    <span class="found">0</span>
+    <span class="tripsOutOf">/50</span>
+    <span class="tripsFoundText">
+      states found
+    </span>
+  </div>
+
+  <div
+    class="tripsBonusCount"
+    id="tripBonusCount">
+  </div>
+
+</div>
+
+<div class="bar" id="tripProgressBar">
+  <div
+    class="fill"
+    id="tripProgressFill">
+  </div>
 </div>
 
 <div class="tripOptionsBar">
