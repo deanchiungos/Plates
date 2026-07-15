@@ -217,13 +217,7 @@ color: var(--navy);
   gap:12px;
   align-items:end;
 }
-.primaryStat,.secondaryStat { text-align:center; }
-.bigNum{
-  font-size:38px;
-  font-weight:950;
-  letter-spacing:-1px;
-  line-height:.92;
-}
+
   
 .outOf {
   font-size:24px;
@@ -3187,7 +3181,10 @@ body::before{
   background:#e5eef7 !important;
   border-radius:999px !important;
   overflow:hidden !important;
+   margin-top:12px !important;
 }
+
+
 
 #fill{
   display:block !important;
@@ -4404,7 +4401,21 @@ body::before{
 
 /* Cards that should use standard alignment */
 
+.bigNum{
+  font-size:42px;
+  font-weight:950;
+  letter-spacing:-1px;
+  line-height:.92;
+}
 
+#primaryLabel{
+  margin-top:4px;
+  font-size:13px;
+  font-weight:850;
+  color:var(--muted);
+}
+
+  
 
 /* Vertically center the secondary stat */
 .bigProgress{
@@ -4827,8 +4838,7 @@ body.show-rarity .state.rare:not(.collected){
   border-radius:999px;
 }
 
-#gameScreen .activeGameRemaining{
-  margin-top:14px;
+
 
   color:var(--muted);
   font-size:20px;
@@ -4836,11 +4846,7 @@ body.show-rarity .state.rare:not(.collected){
   line-height:1.1;
 }
 
-#gameScreen .activeGameRemaining #secondaryNumber{
-  color:var(--navy);
-  font-size:26px;
-  font-weight:950;
-}
+
 
 #gameScreen .bonusCount{
   margin-top:6px;
@@ -5166,7 +5172,7 @@ body.show-rarity .state.rare:not(.collected){
 
       <span id="primaryNumber">0</span>
       <span class="outOf">/50</span>
-      <span class="foundText">found</span>
+      <span class="foundText">states found</span>
 
       <div class="bonusCount" id="bonusCount"></div>
 
@@ -5174,11 +5180,6 @@ body.show-rarity .state.rare:not(.collected){
 
     <div class="bar" id="progressBar">
       <div class="fill" id="fill"></div>
-    </div>
-
-    <div class="activeGameRemaining">
-      <span id="secondaryNumber">50</span>
-      <span id="secondaryLabel">states to go</span>
     </div>
 
   </div>
