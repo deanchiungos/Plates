@@ -4920,7 +4920,18 @@ margin-bottom:6px;
   margin:0 !important;
 }
 
-  
+  #tripsScreen .activeGameHero{
+  margin-bottom:0 !important;
+}
+
+#tripsScreen #tripPrimaryNumber{
+  color:var(--green) !important;
+}
+
+#tripsScreen #tripProgressBar{
+  margin-top:6px !important;
+  margin-bottom:10px !important;
+}
   
 </style>
 </head>
@@ -5636,58 +5647,46 @@ margin-bottom:6px;
   <div class="card">
 
 
-<div class="currentTripHeader tripsActiveGameHero">
+<div class="activeGameHero currentTripHeader">
 
-  <div class="tripsActiveGameLabel">
+  <div class="activeGameLabel">
     Active Game
   </div>
 
   <div class="tripNameInline" id="tripName">
-    Summer Roadtrip
+    New Roadtrip
   </div>
 
-  <div class="tripsActiveGameMeta">
-    <span id="tripGameTypeTrips">
-      Solo Mode
-    </span>
-
+  <div class="activeGameMeta">
+    <span id="tripGameTypeTrips">Solo Mode</span>
     <span class="metaDot">•</span>
-
-    <span id="tripScoringTrips">
-      Classic Scoring
-    </span>
+    <span id="tripScoringTrips">Classic Scoring</span>
   </div>
 
-  <div class="tripsActiveGameFound" id="tripStatesLine">
-    <span class="found">0</span>
-    <span class="tripsOutOf">/50</span>
-    <span class="tripsFoundText">
-      states found
-    </span>
+  <div class="activeGameFound">
+
+    <span id="tripPrimaryNumber">0</span>
+    <span class="outOf">/50</span>
+    <span class="foundText">states found</span>
+
   </div>
 
-  <div
-    class="tripsBonusCount"
-    id="tripBonusCount">
-  </div>
+  <div class="bonusCount" id="tripBonusCount"></div>
 
 </div>
 
 <div class="bar" id="tripProgressBar">
-  <div
-    class="fill"
-    id="tripProgressFill">
-  </div>
+  <div class="fill" id="tripProgressFill"></div>
 </div>
 
+    
 <div class="tripOptionsBar">
 <button class="newGameBtn gameOptionsTrigger" id="tripOptionsBtn" type="button">
     Game Options
   </button>
 </div>
 
-   
-
+  
  <button class="newGameBtn" id="newTripBtn" type="button">
   Start New Game
 </button>
