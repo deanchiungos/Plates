@@ -4531,21 +4531,32 @@ body::before{
   line-height:1.1 !important;
 }
 
-#gameScreen #tripPillBtn .latestTripLabel{
-  font-size:14px !important;
-  white-space:nowrap;
-}
-
-#gameScreen #tripPillBtn #tripNameTop{
-  font-size:31px !important;
-}
-
 #gameScreen #tripPillBtn #tripModeTop{
   padding:7px 12px !important;
   font-size:18px !important;
   white-space:nowrap;
 }
+  
+#gameScreen #tripPillBtn .latestTripLabel{
+  font-size:14px !important;
+  font-weight:900 !important;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  color:var(--muted);
+}
 
+#gameScreen #tripPillBtn #tripNameTop{
+  font-size:22px !important;
+  font-weight:950 !important;
+  line-height:1.05;
+}
+
+  #gameScreen #tripPillBtn .tripPillMeta,
+#gameScreen #tripPillBtn #tripModeTop{
+  font-size:16px !important;
+  font-weight:850;
+  color:var(--muted);
+}
 
 /* Standard card header alignment */
 .panelTitle{
