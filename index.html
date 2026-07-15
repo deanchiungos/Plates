@@ -7795,52 +7795,90 @@ updateBestForCurrentMode();
 
   document.getElementById("bestTrip").textContent = bestForCurrentMode();
   document.getElementById("tripCount").textContent = tripCount;
-document.getElementById("tripStatesLine").innerHTML =
-  '<span class="found">' + c + '/</span>50 States';
-
 document.getElementById("mapCount").innerHTML =
   '<span class="found">' + c + '/</span>50 Found';
 
-  var mapModeSummary = document.getElementById("mapModeSummary");
-if (mapModeSummary) {
+var mapModeSummary =
+  document.getElementById("mapModeSummary");
+
+if(mapModeSummary){
   mapModeSummary.textContent =
     gameType.charAt(0).toUpperCase() +
     gameType.slice(1) +
     " • " +
-    (mode === "classic"
-      ? "Classic"
-      : mode === "weighted"
-        ? "Weighted"
-        : "Unlimited");
+    scoringModeLabel();
 }
-  
-document.getElementById("badgeMini").textContent = unlockedBadges;
 
-var profileBadgeMini = document.getElementById("profileBadgeMini");
-if (profileBadgeMini) {
-  profileBadgeMini.textContent = unlockedBadges;
+
+document.getElementById("badgeMini").textContent =
+  unlockedBadges;
+
+var profileBadgeMini =
+  document.getElementById("profileBadgeMini");
+
+if(profileBadgeMini){
+  profileBadgeMini.textContent =
+    unlockedBadges;
 }
-  
-  renderFamily(c, unlockedBadges);
-document.getElementById("tripStatesLine").innerHTML =
-'<span class="found">' + c + '/</span>50 States';
-  document.getElementById("tripName").textContent = tripName;
-var tripNameTopEl = document.getElementById("tripNameTop");
-if (tripNameTopEl) tripNameTopEl.textContent = tripName;
 
-var tripGameTypeTop = document.getElementById("tripGameTypeTop");
+renderFamily(c, unlockedBadges);
 
-if(tripGameTypeTop) {
+
+/* HOME HERO */
+
+var tripNameTopEl =
+  document.getElementById("tripNameTop");
+
+if(tripNameTopEl){
+  tripNameTopEl.textContent =
+    tripName;
+}
+
+var tripGameTypeTop =
+  document.getElementById("tripGameTypeTop");
+
+if(tripGameTypeTop){
   tripGameTypeTop.textContent =
     gameTypeLabel() + " Mode";
 }
 
+var tripScoringTop =
+  document.getElementById("tripScoringTop");
+
+if(tripScoringTop){
+  tripScoringTop.textContent =
+    scoringModeLabel() + " Scoring";
+}
+
+
+/* TRIPS HERO */
+
+var tripNameEl =
+  document.getElementById("tripName");
 
 var tripGameTypeTrips =
   document.getElementById("tripGameTypeTrips");
 
 var tripScoringTrips =
   document.getElementById("tripScoringTrips");
+
+var tripPrimaryNumber =
+  document.getElementById("tripPrimaryNumber");
+
+var tripBonusCount =
+  document.getElementById("tripBonusCount");
+
+var tripProgressBar =
+  document.getElementById("tripProgressBar");
+
+var tripProgressFill =
+  document.getElementById("tripProgressFill");
+
+
+if(tripNameEl){
+  tripNameEl.textContent =
+    tripName;
+}
 
 if(tripGameTypeTrips){
   tripGameTypeTrips.textContent =
@@ -7851,37 +7889,71 @@ if(tripScoringTrips){
   tripScoringTrips.textContent =
     scoringModeLabel() + " Scoring";
 }
-  
-  
-var tripScoringTop = document.getElementById("tripScoringTop");
 
-if(tripScoringTop) {
-  tripScoringTop.textContent =
-    scoringModeLabel() + " Scoring";
+
+if(mode === "classic"){
+
+  if(tripPrimaryNumber){
+    tripPrimaryNumber.textContent = c;
+  }
+
+  if(tripBonusCount){
+    var tripBonus =
+      bonusCollectedCount();
+
+    tripBonusCount.textContent =
+      tripBonus > 0
+        ? "+" + tripBonus +
+          " Bonus Plate" +
+          (tripBonus === 1 ? "" : "s")
+        : "";
+  }
+
+  if(tripProgressBar){
+    tripProgressBar.style.display =
+      "block";
+  }
+
+  if(tripProgressFill){
+    tripProgressFill.style.width =
+      pct + "%";
+  }
 }
 
-  var tripStatesLine =
-  document.getElementById("tripStatesLine");
 
-if(tripStatesLine){
+if(mode === "weighted"){
 
-  if(mode === "classic"){
-    tripStatesLine.innerHTML =
-      '<span class="found">' + c + '</span>' +
-      '<span class="tripsOutOf">/50</span>' +
-      '<span class="tripsFoundText"> states found</span>';
+  if(tripPrimaryNumber){
+    tripPrimaryNumber.textContent =
+      points;
   }
 
-  else if(mode === "weighted"){
-    tripStatesLine.innerHTML =
-      points + " points";
+  if(tripBonusCount){
+    tripBonusCount.textContent = "";
   }
 
-  else{
-    tripStatesLine.innerHTML =
-      sightings + " sightings";
+  if(tripProgressBar){
+    tripProgressBar.style.display =
+      "none";
+  }
+}
+
+
+if(mode === "unlimited"){
+
+  if(tripPrimaryNumber){
+    tripPrimaryNumber.textContent =
+      sightings;
   }
 
+  if(tripBonusCount){
+    tripBonusCount.textContent = "";
+  }
+
+  if(tripProgressBar){
+    tripProgressBar.style.display =
+      "none";
+  }
 }
 
   
