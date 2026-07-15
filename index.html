@@ -4524,18 +4524,7 @@ margin-top:2px !important;
 
 
 /* HOW TO PLAY */
-.howToPlayCard{
-    padding:18px 22px 14px !important;
-  overflow:hidden !important;
-}
 
-
-
-.howToPlayCard .infoSectionTitle{
-  margin:6px 12px 0 !important;
-  padding:0 !important;
-  text-align:left !important;
-}
 
 
 
@@ -4561,43 +4550,9 @@ margin-top:2px !important;
 }
 
 
-/* How to Play - tighter */
-.howToPlayCard{
-  padding:16px 18px !important;
-}
 
 
-  .howToPlayCard > .panelTitle{
-  margin:0 0 14px !important;
-  padding:0 12px !important;
-}
-
-.howToPlayCard .infoSectionTitle{
-  margin-left:-2px !important;
-}
-
-.howToPlayCard .infoRow{
-  display:grid !important;
-  grid-template-columns:145px 1fr !important;
-  gap:12px !important;
-  padding:10px 8px !important;
-  margin:0 !important;
-  min-height:0 !important;
-}
-
-.howToPlayCard .infoRow strong{
-  white-space:nowrap !important;
-}
-
-.howToPlayCard .infoRow span{
-  font-size:14px !important;
-  line-height:1.2 !important;
-}
-
-.howToPlayCard .infoDivider{
-  margin:2px 8px !important;
-}
-
+  
 #recent .recentItem,
 #recent .memoryCard{
   min-height:0 !important;
@@ -4613,10 +4568,6 @@ margin-top:2px !important;
   padding-bottom:14px !important;
 }
 
-
-  .howToPlayCard > .panelTitle{
-  margin-left:-6px !important;
-}
 
 
 /* =========================================
@@ -4713,6 +4664,50 @@ body.show-rarity .state.rare:not(.collected){
   transform:scale(1.02);
 }
 
+
+/* HOW TO PLAY — FINAL */
+
+#gameScreen .howToPlayCard{
+  padding:20px 22px !important;
+  overflow:hidden;
+}
+
+#gameScreen .howToPlayCard > .panelTitle{
+  margin:0 0 16px !important;
+  padding:0 !important;
+}
+
+#gameScreen .howToPlayCard .infoSectionTitle{
+  margin:8px 0 2px !important;
+  padding:0 !important;
+  text-align:left !important;
+}
+
+#gameScreen .howToPlayCard .infoRow{
+  display:grid !important;
+  grid-template-columns:175px minmax(0,1fr) !important;
+  align-items:center;
+  gap:18px !important;
+
+  margin:0 !important;
+  padding:14px 0 !important;
+}
+
+#gameScreen .howToPlayCard .infoRow strong{
+  white-space:nowrap;
+  text-align:left;
+}
+
+#gameScreen .howToPlayCard .infoRow span{
+  text-align:left;
+  font-size:14px !important;
+  line-height:1.2 !important;
+}
+
+#gameScreen .howToPlayCard .infoDivider{
+  margin:4px 0 !important;
+}
+  
 .card,
 .currentTripHeader,
 .latestTripInfo,
@@ -5371,10 +5366,6 @@ margin-bottom:6px;
 </div>
 
 
-
-
-
-<div class="card gameModesMini howToPlayCard">
      
 <div class="card gameModesMini howToPlayCard">
  <div class="panelTitle">
