@@ -2995,16 +2995,12 @@ color:var(--blue) !important;
 #gameScreen #tripPillBtn{
   width:100%;
   max-width:none;
-
   display:grid;
   grid-template-columns:1fr 1fr;
   align-items:center;
   gap:20px;
-
   padding:16px 22px !important;
-
   text-align:center;
-
   background:rgba(255,255,255,.58) !important;
   border:1px solid rgba(255,255,255,.55) !important;
   border-radius:26px !important;
@@ -3046,6 +3042,19 @@ color:var(--blue) !important;
   font-weight:850 !important;
   line-height:1.1 !important;
   text-align:center !important;
+}
+
+
+#gameScreen #tripPillBtn .tripPillColumn:first-child{
+  align-items:flex-end;
+  text-align:right;
+  padding-right:16px;
+}
+
+#gameScreen #tripPillBtn .tripPillColumn:last-child{
+  align-items:flex-start;
+  text-align:left;
+  padding-left:16px;
 }
   
   /* re-center app shell */
