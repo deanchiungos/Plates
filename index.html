@@ -6219,23 +6219,62 @@ render();
 
 }
 
+
+function renderDebateResults(){
+
+  var savedVote =
+    localStorage.getItem("todayDebateVote");
+
+  var votes = {
+    "ASSMAN": 38,
+    "OUTATIME": 27,
+    "ECTO-1": 35
+  };
+
+  if(savedVote && votes[savedVote] !== undefined){
+    votes[savedVote] += 1;
+  }
+
+  var total =
+    votes["ASSMAN"] +
+    votes["OUTATIME"] +
+    votes["ECTO-1"];
+
   document.querySelectorAll(".debateBtn").forEach(function(btn){
 
+    var vote = btn.dataset.vote;
+
+    var percent =
+      Math.round((votes[vote] / total) * 100);
+
+    btn.textContent =
+      vote + " • " + percent + "%";
+
+    btn.classList.toggle(
+      "selected",
+      vote === savedVote
+    );
+  });
+}
+
+
+document.querySelectorAll(".debateBtn").forEach(function(btn){
+
   btn.onclick = function(){
-
-    document.querySelectorAll(".debateBtn").forEach(function(b){
-      b.classList.remove("selected");
-    });
-
-    btn.classList.add("selected");
 
     localStorage.setItem(
       "todayDebateVote",
       btn.dataset.vote
     );
+
+    renderDebateResults();
   };
 
 });
+
+
+renderDebateResults();
+  
 
 function stateNameFromCode(code) {
   var select =
@@ -8014,7 +8053,6 @@ function openBadgeDetail(badge) {
 
 function attachHandlers() {
 
-document.querySelectorAll(".debateBtn").forEach(function(btn){ btn.onclick = function(){ document .querySelectorAll(".debateBtn") .forEach(function(b){ b.classList.remove("selected"); }); btn.classList.add("selected"); localStorage.setItem( "todayDebateVote", btn.dataset.vote ); }; });
 
   var closeBadgeBtn = document.getElementById("closeBadgeBtn");
 if(closeBadgeBtn) {
