@@ -7592,19 +7592,61 @@ function clearTrip() {
 }
 
 
+function renameTrip(){
 
-function renameTrip() {
-  var n = prompt("Trip name:", tripName);
-  if(n && n.trim()) {
-    var oldName = tripName;
-    tripName = n.trim();
-    tripMemories.forEach(function(m){
-      if(m.trip === oldName) m.trip = tripName;
-    });
-    save();
-    render();
-    toast("Trip renamed");
+  var overlay =
+    document.getElementById(
+      "nextTripNameOverlay"
+    );
+
+  var title =
+    overlay
+      ? overlay.querySelector(
+          ".newGameTitle"
+        )
+      : null;
+
+  var saveBtn =
+    document.getElementById(
+      "nextTripNameSaveBtn"
+    );
+
+  var input =
+    document.getElementById(
+      "nextTripNameInput"
+    );
+
+  if(title){
+    title.textContent =
+      "Rename Trip";
   }
+
+  if(saveBtn){
+    saveBtn.textContent =
+      "Save Trip Name";
+  }
+
+  if(input){
+    input.value =
+      tripName === "New Roadtrip"
+        ? ""
+        : tripName;
+  }
+
+  if(overlay){
+    overlay.dataset.mode =
+      "rename";
+
+    overlay.classList.remove(
+      "hidden"
+    );
+  }
+
+  setTimeout(function(){
+    if(input){
+      input.focus();
+    }
+  },100);
 }
 
 function currentTripSnapshot() {
@@ -7661,7 +7703,12 @@ function closeNextTripNameSheet(){
 }
 
 
-function saveNextTripName(){
+  function saveNextTripName(){
+
+  var overlay =
+    document.getElementById(
+      "nextTripNameOverlay"
+    );
 
   var input =
     document.getElementById(
@@ -7673,17 +7720,52 @@ function saveNextTripName(){
       ? input.value.trim()
       : "";
 
-  tripName =
-    nextName ||
-    "New Roadtrip";
+  var isRename =
+    overlay &&
+    overlay.dataset.mode ===
+      "rename";
+
+  if(isRename){
+
+    var oldName =
+      tripName;
+
+    tripName =
+      nextName ||
+      "New Roadtrip";
+
+    tripMemories.forEach(
+      function(m){
+
+        if(m.trip === oldName){
+          m.trip = tripName;
+        }
+      }
+    );
+
+    toast("Trip renamed");
+
+  } else {
+
+    tripName =
+      nextName ||
+      "New Roadtrip";
+
+    toast("New trip started");
+  }
+
+  if(overlay){
+    overlay.dataset.mode = "";
+  }
 
   closeNextTripNameSheet();
 
   save();
   render();
-
-  toast("Trip saved");
 }
+
+
+  
 
 function endCurrentTrip(){
 
