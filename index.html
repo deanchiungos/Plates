@@ -5266,11 +5266,35 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     Coolest fictional license plate?
   </div>
 
-  <div class="debateOptions">
-<button class="debateBtn" data-vote="ASSMAN">ASSMAN</button>
-<button class="debateBtn" data-vote="OUTATIME">OUTATIME</button>
-<button class="debateBtn" data-vote="ECTO-1">ECTO-1</button>
-  </div>
+<div class="debateOptions">
+
+  <button class="debateBtn" data-vote="ASSMAN">
+    <span class="debateFill"></span>
+    <span class="debateLabel">ASSMAN</span>
+    <span class="debatePercent"></span>
+  </button>
+
+  <button class="debateBtn" data-vote="OUTATIME">
+    <span class="debateFill"></span>
+    <span class="debateLabel">OUTATIME</span>
+    <span class="debatePercent"></span>
+  </button>
+
+  <button class="debateBtn" data-vote="ECTO-1">
+    <span class="debateFill"></span>
+    <span class="debateLabel">ECTO-1</span>
+    <span class="debatePercent"></span>
+  </button>
+
+</div>
+
+<button
+  class="primary debateSubmitBtn"
+  id="debateSubmitBtn"
+  type="button"
+  disabled>
+  Submit Vote
+</button>
 
 </div>
 
