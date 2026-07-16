@@ -6030,6 +6030,7 @@ function createAccount(){
   var usernameInput = document.getElementById("accountUsernameInput");
   var emailInput = document.getElementById("accountEmailInput");
 
+
 var stateInput =
   document.getElementById("accountStateInput");
   
@@ -6038,7 +6039,12 @@ var stateInput =
 
   if(usernameInput) usernameInput.value = account.username || "";
   if(emailInput) emailInput.value = account.email || "";
-
+if(stateInput){
+  stateInput.value =
+    account.state ||
+    plateState ||
+    "NY";
+}
   if(title){
     title.textContent = isSignedIn() ? "Edit Account" : "Create Account";
   }
