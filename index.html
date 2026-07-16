@@ -7715,18 +7715,33 @@ function shareSavedTrip(index) {
     alert(text);
   }
 }
+
 function newTrip() {
-  if(confirm("Start a new trip? This resets collected states.")) {
+
+  if(
+    confirm(
+      "Start a new trip? This resets collected states."
+    )
+  ){
+
     updateBestForCurrentMode();
+
     tripCount += 1;
+
     counts = {};
     log = [];
-    tripName = prompt("Trip name:","New Roadtrip") || "New Roadtrip";
+
     save();
     render();
-    toast("New trip started");
+
+    openNextTripNameSheet();
+
+    toast(
+      "New trip started"
+    );
   }
 }
+  
 
 function shareText() {
   return "PLATES\n" + currentPlayer().name + " - " + tripName + "\n" +
