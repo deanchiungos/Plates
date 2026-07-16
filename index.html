@@ -6030,6 +6030,9 @@ function createAccount(){
   var usernameInput = document.getElementById("accountUsernameInput");
   var emailInput = document.getElementById("accountEmailInput");
 
+var stateInput =
+  document.getElementById("accountStateInput");
+  
   var title = document.querySelector("#accountOverlay .newGameTitle");
   var saveBtn = document.getElementById("accountSaveBtn");
 
@@ -6113,6 +6116,9 @@ function saveAccountFromSheet(){
   var username = usernameInput ? usernameInput.value.trim().replace(/^@/, "") : "";
   var email = emailInput ? emailInput.value.trim() : "";
 
+var homeState =
+  stateInput ? stateInput.value : "NY";
+  
   if(!username) {
     toast("Username required");
     return;
@@ -6127,14 +6133,26 @@ function saveAccountFromSheet(){
 account = {
   username: username,
   email: email,
+  state: homeState,
   signedIn: true,
-  friendCode: account.friendCode || generateFriendCode()
+  friendCode:
+    account.friendCode ||
+    generateFriendCode()
 };
+
+  
 console.log(account);
 saveAccount();
 
 plateName = cleanPlateName(username);
 
+plateState = homeState;
+
+localStorage.setItem(
+  "platesPlateState",
+  plateState
+);
+  
 localStorage.setItem(
   "platesPlateName",
   plateName
