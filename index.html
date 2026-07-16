@@ -4995,7 +4995,7 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 }
 
 .mapCanadaSection{
-  margin-top:18px;
+  margin-top:24px;
 }
 
 
@@ -5005,6 +5005,47 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 #mapCanadaArrow.open{
   transform:rotate(180deg);
+}
+
+.mapCanadaGrid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:16px;
+}
+
+.mapCanadaProvince{
+  min-height:54px;
+
+  border:2px solid rgba(7,55,99,.12);
+  border-radius:18px;
+
+  background:#fff;
+
+  color:var(--navy);
+
+  font-size:24px;
+  font-weight:950;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:
+    0 4px 10px rgba(7,55,99,.05);
+}
+
+.mapCanadaProvince.found{
+  background:
+    linear-gradient(
+      180deg,
+      #35c768,
+      #28a853
+    );
+
+  border-color:#28a853;
+
+  color:#fff;
 }
   
   
