@@ -7322,15 +7322,47 @@ function tapState(btn) {
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
 
-    if(!wasCollected) {
-      toast("Collected " + name);
-      var after = collectedCount();
-      if(after === 1) showCelebration("First Plate", "You started your collection with " + name);
-      else if(after === 10) showCelebration("10 States", "You've found 10 states on this trip");
-      else if(after === 25) showCelebration("Halfway There", "25 states collected");
-      else if(after === 50) showCelebration("All 50 States", "You completed the game");
+if(!wasCollected) {
 
+  toast("Collected " + name);
+
+  var isBonus =
+    btn.dataset.bonus === "true";
+
+  if(!isBonus){
+
+    var after =
+      collectedCount();
+
+    if(after === 1){
+      showCelebration(
+        "First Plate",
+        "You started your collection with " + name
+      );
     }
+
+    else if(after === 10){
+      showCelebration(
+        "10 States",
+        "You've found 10 states on this trip"
+      );
+    }
+
+    else if(after === 25){
+      showCelebration(
+        "Halfway There",
+        "25 states collected"
+      );
+    }
+
+    else if(after === 50){
+      showCelebration(
+        "All 50 States",
+        "You completed the game"
+      );
+    }
+  }
+}
   }
 
   updateBestForCurrentMode();
