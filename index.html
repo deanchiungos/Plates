@@ -6118,15 +6118,37 @@ function closeAccountSheet(){
 }
 
 function saveAccountFromSheet(){
-  var usernameInput = document.getElementById("accountUsernameInput");
-  var emailInput = document.getElementById("accountEmailInput");
-  var stateInput = document.getElementById("accountStateInput");
+  var usernameInput =
+    document.getElementById(
+      "accountUsernameInput"
+    );
 
-  var username = usernameInput ? usernameInput.value.trim().replace(/^@/, "") : "";
-  var email = emailInput ? emailInput.value.trim() : "";
+  var emailInput =
+    document.getElementById(
+      "accountEmailInput"
+    );
 
-var homeState =
-  stateInput ? stateInput.value : "NY";
+  var stateInput =
+    document.getElementById(
+      "accountStateInput"
+    );
+
+  var username =
+    usernameInput
+      ? usernameInput.value
+          .trim()
+          .replace(/^@/, "")
+      : "";
+
+  var email =
+    emailInput
+      ? emailInput.value.trim()
+      : "";
+
+  var homeState =
+    stateInput
+      ? stateInput.value
+      : "NY";
   
   if(!username) {
     toast("Username required");
