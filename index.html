@@ -7506,7 +7506,19 @@ function endCurrentTrip() {
   tripCount += 1;
   counts = {};
   log = [];
-  tripName = prompt("Name your next trip:", "New Roadtrip") || "New Roadtrip";
+  var nextTripName =
+  prompt(
+    "Name your next trip:",
+    ""
+  );
+
+if(nextTripName === null){
+  nextTripName = "";
+}
+
+tripName =
+  nextTripName.trim() ||
+  "New Roadtrip";
   save();
   render();
   toast("Trip saved");
