@@ -8972,6 +8972,31 @@ function openBadgeDetail(badge) {
   document.getElementById("badgeOverlay").classList.remove("hidden");
 }
 
+function openNewGameSheet(){
+
+  var gameNameInput =
+    document.getElementById(
+      "gameNameInput"
+    );
+
+  if(gameNameInput){
+    gameNameInput.value = "";
+    gameNameInput.placeholder =
+      "New Roadtrip";
+  }
+
+  var overlay =
+    document.getElementById(
+      "newGameOverlay"
+    );
+
+  if(overlay){
+    overlay.classList.remove(
+      "hidden"
+    );
+  }
+}
+  
 
 function attachHandlers() {
 
@@ -9353,14 +9378,27 @@ if (badgesStatBtn) {
 
 var modeDropdownBtn = document.getElementById("modeDropdownBtn");
 
-  var newGameBtn =
+
+var newGameBtn =
   document.getElementById(
     "newGameBtn"
   );
 
 if(newGameBtn){
+  newGameBtn.onclick =
+    openNewGameSheet;
+}
+  
+    var gameNameInput =
+      document.getElementById(
+        "gameNameInput"
+      );
 
-  newGameBtn.onclick = function(){
+    if(gameNameInput){
+      gameNameInput.value = "";
+      gameNameInput.placeholder =
+        "New Roadtrip";
+    }
 
     var overlay =
       document.getElementById(
@@ -9374,6 +9412,7 @@ if(newGameBtn){
     }
   };
 }
+
 
   
   var homeGameOptionsBtn = document.getElementById("homeGameOptionsBtn");
