@@ -5118,7 +5118,24 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   font-weight:950;
   flex-shrink:0;
 }
+
+#nextTripNameOverlay{
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.nextTripNameSheet{
+  max-height:calc(100dvh - 120px);
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  padding-bottom:110px;
+}
   
+ #nextTripNameSaveBtn{
+  position:relative;
+  z-index:2;
+}
+
   
 </style>
 </head>
