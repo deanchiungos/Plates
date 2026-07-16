@@ -7538,11 +7538,30 @@ function syncNewGameSheet() {
   if(input && !input.value.trim()) input.value = tripName || "New Game";
 }
 
-function openNewGameSheet() {
-  var overlay = document.getElementById("newGameOverlay");
-  if(overlay) {
-    syncNewGameSheet();
-    overlay.classList.remove("hidden");
+function openNewGameSheet(){
+
+  var input =
+    document.getElementById(
+      "newGameNameInput"
+    );
+
+  if(input){
+    input.value = "";
+    input.placeholder =
+      "New Roadtrip";
+  }
+
+  syncNewGameSheet();
+
+  var overlay =
+    document.getElementById(
+      "newGameOverlay"
+    );
+
+  if(overlay){
+    overlay.classList.remove(
+      "hidden"
+    );
   }
 }
 
@@ -8972,30 +8991,6 @@ function openBadgeDetail(badge) {
   document.getElementById("badgeOverlay").classList.remove("hidden");
 }
 
-function openNewGameSheet(){
-
-  var gameNameInput =
-    document.getElementById(
-      "gameNameInput"
-    );
-
-  if(gameNameInput){
-    gameNameInput.value = "";
-    gameNameInput.placeholder =
-      "New Roadtrip";
-  }
-
-  var overlay =
-    document.getElementById(
-      "newGameOverlay"
-    );
-
-  if(overlay){
-    overlay.classList.remove(
-      "hidden"
-    );
-  }
-}
   
 
 function attachHandlers() {
