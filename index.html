@@ -6115,8 +6115,14 @@ account = {
 console.log(account);
 saveAccount();
 
-plateName = username;
-localStorage.setItem("platesPlateName", plateName);
+plateName = cleanPlateName(username);
+
+localStorage.setItem(
+  "platesPlateName",
+  plateName
+);
+
+profile.plate = plateName;
 
 profile.name = username;
 profile.email = email;
