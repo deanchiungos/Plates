@@ -4780,6 +4780,67 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   width: 100% !important;
   margin: 0 !important;
 }
+
+.debateBtn{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 18px;
+  isolation:isolate;
+}
+
+.debateFill{
+  position:absolute;
+  inset:0 auto 0 0;
+  width:0%;
+  background:rgba(38,169,87,.20);
+  transition:width .55s ease;
+  z-index:-1;
+}
+
+.debateLabel,
+.debatePercent{
+  position:relative;
+  z-index:1;
+}
+
+.debatePercent{
+  font-size:17px;
+  font-weight:950;
+  color:var(--navy);
+}
+
+.debateBtn.selected{
+  border:3px solid var(--green) !important;
+  color:var(--green) !important;
+}
+
+.debateBtn:disabled{
+  opacity:1;
+}
+
+.debateSubmitBtn{
+  display:block;
+  width:100%;
+  min-height:54px;
+  margin-top:14px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:950;
+}
+
+.debateSubmitBtn:disabled{
+  opacity:.45;
+}
+
+.debateSubmitBtn.submitted{
+  background:#eaf3ff !important;
+  color:var(--blue) !important;
+}
+
+  
 </style>
 </head>
 
@@ -6244,19 +6305,34 @@ render();
 }
 
 
-function renderDebateResults(){
+var pendingDebateVote = "";
 
-  var savedVote =
+var debateVotes = {
+  "ASSMAN": 38,
+  "OUTATIME": 27,
+  "ECTO-1": 35
+};
+
+
+function renderDebate(){
+
+  var submittedVote =
     localStorage.getItem("todayDebateVote");
 
+  var submitBtn =
+    document.getElementById("debateSubmitBtn");
+
   var votes = {
-    "ASSMAN": 38,
-    "OUTATIME": 27,
-    "ECTO-1": 35
+    "ASSMAN": debateVotes["ASSMAN"],
+    "OUTATIME": debateVotes["OUTATIME"],
+    "ECTO-1": debateVotes["ECTO-1"]
   };
 
-  if(savedVote && votes[savedVote] !== undefined){
-    votes[savedVote] += 1;
+  if(
+    submittedVote &&
+    votes[submittedVote] !== undefined
+  ){
+    votes[submittedVote] += 1;
   }
 
   var total =
@@ -6264,40 +6340,126 @@ function renderDebateResults(){
     votes["OUTATIME"] +
     votes["ECTO-1"];
 
-  document.querySelectorAll(".debateBtn").forEach(function(btn){
+  document
+    .querySelectorAll(".debateBtn")
+    .forEach(function(btn){
 
-    var vote = btn.dataset.vote;
+      var vote = btn.dataset.vote;
 
-    var percent =
-      Math.round((votes[vote] / total) * 100);
+      var label =
+        btn.querySelector(".debateLabel");
 
-    btn.textContent =
-      vote + " • " + percent + "%";
+      var percentEl =
+        btn.querySelector(".debatePercent");
 
-    btn.classList.toggle(
-      "selected",
-      vote === savedVote
-    );
-  });
+      var fill =
+        btn.querySelector(".debateFill");
+
+      var percent =
+        Math.round(
+          (votes[vote] / total) * 100
+        );
+
+      btn.classList.toggle(
+        "selected",
+        submittedVote
+          ? vote === submittedVote
+          : vote === pendingDebateVote
+      );
+
+      if(submittedVote){
+
+        btn.disabled = true;
+
+        if(percentEl){
+          percentEl.textContent =
+            percent + "%";
+        }
+
+        if(fill){
+          fill.style.width =
+            percent + "%";
+        }
+
+      } else {
+
+        btn.disabled = false;
+
+        if(percentEl){
+          percentEl.textContent = "";
+        }
+
+        if(fill){
+          fill.style.width = "0%";
+        }
+      }
+
+      if(label){
+        label.textContent = vote;
+      }
+    });
+
+  if(submitBtn){
+
+    if(submittedVote){
+      submitBtn.textContent = "Vote Submitted";
+      submitBtn.disabled = true;
+      submitBtn.classList.add("submitted");
+    } else {
+      submitBtn.textContent = "Submit Vote";
+      submitBtn.disabled = !pendingDebateVote;
+      submitBtn.classList.remove("submitted");
+    }
+  }
 }
 
 
-document.querySelectorAll(".debateBtn").forEach(function(btn){
+document
+  .querySelectorAll(".debateBtn")
+  .forEach(function(btn){
 
-  btn.onclick = function(){
+    btn.onclick = function(){
+
+      if(
+        localStorage.getItem(
+          "todayDebateVote"
+        )
+      ){
+        return;
+      }
+
+      pendingDebateVote =
+        btn.dataset.vote;
+
+      renderDebate();
+    };
+  });
+
+
+var debateSubmitBtn =
+  document.getElementById(
+    "debateSubmitBtn"
+  );
+
+if(debateSubmitBtn){
+
+  debateSubmitBtn.onclick = function(){
+
+    if(!pendingDebateVote){
+      return;
+    }
 
     localStorage.setItem(
       "todayDebateVote",
-      btn.dataset.vote
+      pendingDebateVote
     );
 
-    renderDebateResults();
+    renderDebate();
   };
+}
 
-});
 
-
-renderDebateResults();
+renderDebate();
   
 
 function stateNameFromCode(code) {
