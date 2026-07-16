@@ -9352,7 +9352,30 @@ if (badgesStatBtn) {
 
 
 var modeDropdownBtn = document.getElementById("modeDropdownBtn");
-var newGameBtn = document.getElementById("newGameBtn");
+
+  var newGameBtn =
+  document.getElementById(
+    "newGameBtn"
+  );
+
+if(newGameBtn){
+
+  newGameBtn.onclick = function(){
+
+    var overlay =
+      document.getElementById(
+        "newGameOverlay"
+      );
+
+    if(overlay){
+      overlay.classList.remove(
+        "hidden"
+      );
+    }
+  };
+}
+
+  
   var homeGameOptionsBtn = document.getElementById("homeGameOptionsBtn");
 var newGameOverlay = document.getElementById("newGameOverlay");
 var modeCloseBtn = document.getElementById("modeCloseBtn");
@@ -9498,8 +9521,28 @@ document.querySelectorAll(".gameOptionsTrigger").forEach(function(btn) {
 });
 
 
-  var newTripBtn = document.getElementById("newTripBtn");
-if(newTripBtn) newTripBtn.onclick = newTrip;
+var newTripBtn =
+  document.getElementById(
+    "newTripBtn"
+  );
+
+if(newTripBtn){
+
+  newTripBtn.onclick =
+    function(){
+
+      var overlay =
+        document.getElementById(
+          "newGameOverlay"
+        );
+
+      if(overlay){
+        overlay.classList.remove(
+          "hidden"
+        );
+      }
+    };
+}
 
 var shareTripBtn = document.getElementById("shareTripBtn");
 if(shareTripBtn) {
