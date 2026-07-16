@@ -4993,6 +4993,19 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     gap:7px;
   }
 }
+
+.mapCanadaSection{
+  margin-top:18px;
+}
+
+
+  #mapCanadaArrow{
+  transition:transform .2s ease;
+}
+
+#mapCanadaArrow.open{
+  transform:rotate(180deg);
+}
   
   
 </style>
@@ -8607,7 +8620,47 @@ function openBadgeDetail(badge) {
 
 function attachHandlers() {
 
-var canadaToggle =
+var mapCanadaToggle =
+  document.getElementById(
+    "mapCanadaToggle"
+  );
+
+var mapCanadaGrid =
+  document.getElementById(
+    "mapCanadaGrid"
+  );
+
+var mapCanadaArrow =
+  document.getElementById(
+    "mapCanadaArrow"
+  );
+
+if(
+  mapCanadaToggle &&
+  mapCanadaGrid
+){
+
+  mapCanadaToggle.onclick = function(){
+
+    var isOpening =
+      mapCanadaGrid
+        .classList
+        .contains("hidden");
+
+    mapCanadaGrid
+      .classList
+      .toggle("hidden");
+
+    if(mapCanadaArrow){
+      mapCanadaArrow.classList.toggle(
+        "open",
+        isOpening
+      );
+    }
+  };
+}
+  
+  var canadaToggle =
   document.getElementById(
     "canadaToggle"
   );
