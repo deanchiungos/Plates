@@ -5049,6 +5049,56 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
   color:#fff;
 }
+
+
+.nextTripNameSheet{
+  padding-bottom:24px;
+}
+
+.tripNameInputWrap{
+  position:relative;
+  width:100%;
+}
+
+#nextTripNameInput{
+  width:100%;
+  padding-right:54px;
+}
+
+.tripNameClearBtn{
+  position:absolute;
+  top:50%;
+  right:12px;
+  transform:translateY(-50%);
+
+  width:36px;
+  height:36px;
+  border-radius:999px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#eaf3ff !important;
+  color:var(--navy) !important;
+
+  font-size:24px;
+  font-weight:900;
+  line-height:1;
+}
+
+.tripNameClearBtn:active{
+  transform:translateY(-50%) scale(.94);
+}
+
+.nextTripSaveBtn{
+  width:100%;
+  min-height:56px;
+  margin-top:18px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:950;
+}
   
   
 </style>
@@ -5978,6 +6028,57 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     </div>
   </section>
 
+<div class="newGameOverlay hidden" id="nextTripNameOverlay">
+
+  <div class="newGameSheet nextTripNameSheet">
+
+    <div class="newGameHandle"></div>
+
+    <button
+      class="newGameCloseBtn"
+      id="nextTripNameCloseBtn"
+      type="button">
+      ×
+    </button>
+
+    <div class="newGameTitle">
+      Start Your Next Trip
+    </div>
+
+    <div class="newGameSectionLabel">
+      Trip Name
+    </div>
+
+    <div class="tripNameInputWrap">
+
+      <input
+        class="newGameInput"
+        id="nextTripNameInput"
+        type="text"
+        placeholder="New Roadtrip"
+        autocomplete="off">
+
+      <button
+        class="tripNameClearBtn"
+        id="nextTripNameClearBtn"
+        type="button"
+        aria-label="Clear trip name">
+        ×
+      </button>
+
+    </div>
+
+    <button
+      class="primary nextTripSaveBtn"
+      id="nextTripNameSaveBtn"
+      type="button">
+      Start New Trip
+    </button>
+
+  </div>
+
+</div>
+  
 
 <div class="newGameOverlay hidden" id="gameOptionsOverlay">
   <div class="newGameSheet">
@@ -7498,31 +7599,102 @@ function currentTripSnapshot() {
   };
 }
 
-function endCurrentTrip() {
-  if(collectedCount() === 0 && !confirm("Save this trip with 0 states?")) return;
-  savedTrips.unshift(currentTripSnapshot());
-  savedTrips = savedTrips.slice(0, 20);
+function openNextTripNameSheet(){
+
+  var overlay =
+    document.getElementById(
+      "nextTripNameOverlay"
+    );
+
+  var input =
+    document.getElementById(
+      "nextTripNameInput"
+    );
+
+  if(input){
+    input.value = "";
+  }
+
+  if(overlay){
+    overlay.classList.remove("hidden");
+  }
+
+  setTimeout(function(){
+    if(input){
+      input.focus();
+    }
+  },100);
+}
+
+
+function closeNextTripNameSheet(){
+
+  var overlay =
+    document.getElementById(
+      "nextTripNameOverlay"
+    );
+
+  if(overlay){
+    overlay.classList.add("hidden");
+  }
+}
+
+
+function saveNextTripName(){
+
+  var input =
+    document.getElementById(
+      "nextTripNameInput"
+    );
+
+  var nextName =
+    input
+      ? input.value.trim()
+      : "";
+
+  tripName =
+    nextName ||
+    "New Roadtrip";
+
+  closeNextTripNameSheet();
+
+  save();
+  render();
+
+  toast("Trip saved");
+}
+
+function endCurrentTrip(){
+
+  if(
+    collectedCount() === 0 &&
+    !confirm(
+      "Save this trip with 0 states?"
+    )
+  ){
+    return;
+  }
+
+  savedTrips.unshift(
+    currentTripSnapshot()
+  );
+
+  savedTrips =
+    savedTrips.slice(0,20);
+
   updateBestForCurrentMode();
+
   tripCount += 1;
   counts = {};
   log = [];
-  var nextTripName =
-  prompt(
-    "Name your next trip:",
-    ""
-  );
 
-if(nextTripName === null){
-  nextTripName = "";
-}
-
-tripName =
-  nextTripName.trim() ||
-  "New Roadtrip";
   save();
   render();
-  toast("Trip saved");
+
+  openNextTripNameSheet();
 }
+
+  
 function shareSavedTrip(index) {
   var t = savedTrips[index];
   if(!t) return;
@@ -8665,6 +8837,79 @@ function openBadgeDetail(badge) {
 
 function attachHandlers() {
 
+var nextTripNameCloseBtn =
+  document.getElementById(
+    "nextTripNameCloseBtn"
+  );
+
+if(nextTripNameCloseBtn){
+
+  nextTripNameCloseBtn.onclick =
+    function(){
+
+      tripName = "New Roadtrip";
+
+      closeNextTripNameSheet();
+
+      save();
+      render();
+
+      toast("Trip saved");
+    };
+}
+
+
+var nextTripNameClearBtn =
+  document.getElementById(
+    "nextTripNameClearBtn"
+  );
+
+if(nextTripNameClearBtn){
+
+  nextTripNameClearBtn.onclick =
+    function(){
+
+      var input =
+        document.getElementById(
+          "nextTripNameInput"
+        );
+
+      if(input){
+        input.value = "";
+        input.focus();
+      }
+    };
+}
+
+
+var nextTripNameSaveBtn =
+  document.getElementById(
+    "nextTripNameSaveBtn"
+  );
+
+if(nextTripNameSaveBtn){
+
+  nextTripNameSaveBtn.onclick =
+    saveNextTripName;
+}
+
+
+var nextTripNameInput =
+  document.getElementById(
+    "nextTripNameInput"
+  );
+
+if(nextTripNameInput){
+
+  nextTripNameInput.onkeydown =
+    function(e){
+
+      if(e.key === "Enter"){
+        saveNextTripName();
+      }
+    };
+}
+  
 var mapCanadaToggle =
   document.getElementById(
     "mapCanadaToggle"
