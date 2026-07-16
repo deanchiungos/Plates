@@ -6457,7 +6457,9 @@ if(accountAvatarPicker){
 
 var allStates =
   Array.from(
-    document.querySelectorAll(".state")
+    document.querySelectorAll(
+      '.state:not([data-bonus="true"])'
+    )
   );
 
 var missing =
