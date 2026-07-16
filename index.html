@@ -4,6 +4,7 @@
 
 <head>
 <meta charset="utf-8">
+  
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PLATES</title>
 <style>
@@ -6119,6 +6120,7 @@ function closeAccountSheet(){
 function saveAccountFromSheet(){
   var usernameInput = document.getElementById("accountUsernameInput");
   var emailInput = document.getElementById("accountEmailInput");
+  var stateInput = document.getElementById("accountStateInput");
 
   var username = usernameInput ? usernameInput.value.trim().replace(/^@/, "") : "";
   var email = emailInput ? emailInput.value.trim() : "";
