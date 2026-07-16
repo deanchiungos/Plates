@@ -8119,6 +8119,22 @@ if (listCountEl) {
   listCountEl.innerHTML = '<span class="found">' + c + '/</span>50';
 }
 
+  var canadaCountEl =
+  document.getElementById(
+    "canadaCount"
+  );
+
+if(canadaCountEl){
+
+  var canadaTotal =
+    canadaCollectedCount();
+
+  canadaCountEl.innerHTML =
+    '<span class="found">' +
+    canadaTotal +
+    '/</span>13';
+}
+
   document.body.classList.toggle("show-rarity", mode !== "classic");
   document.querySelectorAll(".modeExplainCard").forEach(function(card){
   card.classList.toggle("active", card.dataset.explainMode === mode);
@@ -8548,7 +8564,47 @@ function openBadgeDetail(badge) {
 
 function attachHandlers() {
 
+var canadaToggle =
+  document.getElementById(
+    "canadaToggle"
+  );
 
+var canadaProvinceGrid =
+  document.getElementById(
+    "canadaProvinceGrid"
+  );
+
+var canadaArrow =
+  document.getElementById(
+    "canadaArrow"
+  );
+
+if(
+  canadaToggle &&
+  canadaProvinceGrid
+){
+
+  canadaToggle.onclick = function(){
+
+    var isOpening =
+      canadaProvinceGrid
+        .classList
+        .contains("hidden");
+
+    canadaProvinceGrid
+      .classList
+      .toggle("hidden");
+
+    if(canadaArrow){
+      canadaArrow.classList.toggle(
+        "open",
+        isOpening
+      );
+    }
+  };
+}
+
+  
   var closeBadgeBtn = document.getElementById("closeBadgeBtn");
 if(closeBadgeBtn) {
   closeBadgeBtn.onclick = function(){
