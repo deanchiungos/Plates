@@ -6237,14 +6237,23 @@ render();
 });
 
 function stateNameFromCode(code) {
-  var select = document.getElementById("plateStateSelect");
-  if (!select) return "NEW YORK";
+  var select =
+    document.getElementById("accountStateInput");
 
-  var option = select.querySelector('option[value="' + code + '"]');
-  return option ? option.textContent.toUpperCase() : "NEW YORK";
+  if(!select) return code || "NY";
+
+  var option =
+    select.querySelector(
+      'option[value="' + code + '"]'
+    );
+
+  return option
+    ? option.textContent.toUpperCase()
+    : (code || "NY");
 }
 
-function cleanPlateName(value) {
+
+  function cleanPlateName(value) {
   return String(value || "")
     .toUpperCase()
     .replace(/[^A-Z0-9]/g, "")
@@ -6519,11 +6528,11 @@ profile.plateState = plateState;
 
 
 var cp = currentPlayer();
-if (cp) {
-  cp.name = profile.name || cp.name;
-  cp.avatar = profile.avatar;
+if(cp){
+  cp.name = username;
   cp.plate = plateName;
   cp.plateState = plateState;
+  cp.avatar = profile.avatar || cp.avatar;
 }
 
 localStorage.setItem("platesProfile", JSON.stringify(profile));
