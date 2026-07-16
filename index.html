@@ -3284,6 +3284,16 @@ body::before {
   position: relative;
 }
 
+.accountSheet{
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+
+.accountSheet::-webkit-scrollbar{
+  display:none;
+}
+  
+
 .accountSheet {
   position: relative;
 }
@@ -6034,6 +6044,14 @@ function createAccount(){
     saveBtn.textContent = isSignedIn() ? "Save Account" : "Create Account";
   }
 
+
+var accountAvatarPicker =
+  document.querySelector("#accountOverlay .avatarPicker");
+
+if(accountAvatarPicker){
+  accountAvatarPicker.classList.remove("readOnly");
+}
+  
   if(overlay) overlay.classList.remove("hidden");
 }
 
@@ -6391,10 +6409,11 @@ if(friendCodeDisplay) {
 }
 
 
+var profileAvatarPicker =
+  document.querySelector("#profileScreen .avatarPicker");
 
-var avatarPicker = document.querySelector(".avatarPicker");
-if (avatarPicker) {
-  avatarPicker.classList.add("readOnly");
+if(profileAvatarPicker){
+  profileAvatarPicker.classList.add("readOnly");
 }
 
 }
