@@ -9565,22 +9565,15 @@ var newTripBtn =
     "newTripBtn"
   );
 
+
+  var newTripBtn =
+  document.getElementById(
+    "newTripBtn"
+  );
+
 if(newTripBtn){
-
   newTripBtn.onclick =
-    function(){
-
-      var overlay =
-        document.getElementById(
-          "newGameOverlay"
-        );
-
-      if(overlay){
-        overlay.classList.remove(
-          "hidden"
-        );
-      }
-    };
+    openNewGameSheet;
 }
 
 var shareTripBtn = document.getElementById("shareTripBtn");
