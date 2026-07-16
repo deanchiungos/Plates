@@ -4902,6 +4902,98 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   flex-shrink:0;
 }
 
+.canadaSection{
+  margin-top:16px;
+  border-top:1px solid rgba(7,55,99,.12);
+  padding-top:14px;
+}
+
+.canadaToggle{
+  width:100%;
+  min-height:58px;
+  padding:0 16px;
+  border:2px solid #dbe8f5;
+  border-radius:20px;
+  background:#fff;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  font-size:18px;
+  font-weight:950;
+  text-align:left;
+}
+
+.canadaToggle:active{
+  transform:scale(.985);
+}
+
+.canadaToggleRight{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-shrink:0;
+}
+
+#canadaCount{
+  color:var(--muted);
+  font-size:17px;
+  font-weight:950;
+}
+
+#canadaArrow{
+  color:var(--blue);
+  font-size:14px;
+  transition:transform .2s ease;
+}
+
+#canadaArrow.open{
+  transform:rotate(180deg);
+}
+
+.canadaProvinceGrid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:8px;
+  margin-top:12px;
+}
+
+.canadaProvinceGrid.hidden{
+  display:none;
+}
+
+.canadaPlate{
+  border-color:rgba(21,119,210,.28);
+  background:linear-gradient(
+    180deg,
+    #ffffff,
+    #eef7ff
+  );
+}
+
+.canadaPlate.collected{
+  background:linear-gradient(
+    180deg,
+    #32b860,
+    #249d4e
+  );
+  border-color:#249d4e;
+  color:#fff;
+}
+
+@media (max-width:390px){
+
+  .canadaToggle{
+    font-size:16px;
+    padding:0 13px;
+  }
+
+  .canadaProvinceGrid{
+    gap:7px;
+  }
+}
+  
   
 </style>
 </head>
@@ -5297,6 +5389,150 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 <button class="state" data-code="PR" data-name="Puerto Rico" data-points="10" data-bonus="true">PR</button>
 </div>
 
+      <div class="canadaSection">
+
+  <button
+    class="canadaToggle"
+    id="canadaToggle"
+    type="button">
+
+    <span>🇨🇦 Canadian Provinces</span>
+
+    <span class="canadaToggleRight">
+      <span id="canadaCount">
+        <span class="found">0/</span>13
+      </span>
+
+      <span id="canadaArrow">▼</span>
+    </span>
+
+  </button>
+
+  <div
+    class="canadaProvinceGrid hidden"
+    id="canadaProvinceGrid">
+
+    <button class="state canadaPlate"
+            data-code="AB"
+            data-name="Alberta"
+            data-points="8"
+            data-bonus="true"
+            data-canada="true">
+      AB
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="BC"
+            data-name="British Columbia"
+            data-points="8"
+            data-bonus="true"
+            data-canada="true">
+      BC
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="MB"
+            data-name="Manitoba"
+            data-points="9"
+            data-bonus="true"
+            data-canada="true">
+      MB
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="NB"
+            data-name="New Brunswick"
+            data-points="10"
+            data-bonus="true"
+            data-canada="true">
+      NB
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="NL"
+            data-name="Newfoundland and Labrador"
+            data-points="10"
+            data-bonus="true"
+            data-canada="true">
+      NL
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="NS"
+            data-name="Nova Scotia"
+            data-points="10"
+            data-bonus="true"
+            data-canada="true">
+      NS
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="NT"
+            data-name="Northwest Territories"
+            data-points="12"
+            data-bonus="true"
+            data-canada="true">
+      NT
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="NU"
+            data-name="Nunavut"
+            data-points="12"
+            data-bonus="true"
+            data-canada="true">
+      NU
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="ON"
+            data-name="Ontario"
+            data-points="6"
+            data-bonus="true"
+            data-canada="true">
+      ON
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="PE"
+            data-name="Prince Edward Island"
+            data-points="11"
+            data-bonus="true"
+            data-canada="true">
+      PE
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="QC"
+            data-name="Quebec"
+            data-points="7"
+            data-bonus="true"
+            data-canada="true">
+      QC
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="SK"
+            data-name="Saskatchewan"
+            data-points="9"
+            data-bonus="true"
+            data-canada="true">
+      SK
+    </button>
+
+    <button class="state canadaPlate"
+            data-code="YT"
+            data-name="Yukon"
+            data-points="12"
+            data-bonus="true"
+            data-canada="true">
+      YT
+    </button>
+
+  </div>
+
+</div>
+      
 <button class="newGameBtn gameOptionsTrigger" id="homeGameOptionsBtn" type="button">
   Game Options
 </button>
@@ -6867,6 +7103,24 @@ function bonusCollectedCount() {
   return total;
 }
 
+function canadaCollectedCount(){
+
+  var total = 0;
+
+  document
+    .querySelectorAll(
+      '.state[data-canada="true"]'
+    )
+    .forEach(function(btn){
+
+      if(counts[btn.dataset.code]){
+        total++;
+      }
+    });
+
+  return total;
+}
+  
 
 function collectedCount() {
   var unique = {};
