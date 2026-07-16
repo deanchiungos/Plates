@@ -6128,6 +6128,17 @@ profile.name = username;
 profile.email = email;
 localStorage.setItem("platesProfile", JSON.stringify(profile));
 
+  
+var cp = currentPlayer();
+
+if(cp){
+  cp.name = username;
+  cp.plate = plateName;
+  cp.avatar = profile.avatar || cp.avatar;
+}
+
+localStorage.platesPlayers =
+  JSON.stringify(players);
 
 renderVanityPlate();
 loadProfile();
