@@ -4059,6 +4059,21 @@ body::before {
   padding-bottom: 14px !important;
 }
 
+.friendsActions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:14px;
+}
+
+.friendsActions button{
+  width:100%;
+  min-height:56px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:900;
+}
+  
 .avatarPicker {
   display: flex;
   gap: 10px;
@@ -6334,10 +6349,25 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 <div class="familyList" id="friendsList"></div>
 
-<button class="secondary" id="inviteFriendsBtn" type="button">
-  Invite Friends
-</button>
 
+<div class="friendsActions">
+
+  <button
+    class="secondary addFriendBtn"
+    type="button">
+    ➕ Add Friend
+  </button>
+
+  <button
+    class="secondary"
+    id="inviteFriendsBtn"
+    type="button">
+    📤 Invite Friends
+  </button>
+
+</div>
+  
+  
 </div>
 
 
@@ -6792,6 +6822,8 @@ function saveAccountFromSheet(){
   }
 
 
+
+  
 account = {
   username: username,
   email: email,
