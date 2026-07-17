@@ -7171,7 +7171,21 @@ if (!players.some(function(p){
   currentPlayerId = players[0].id;
 }
 
-var pendingPhotoStateCode = "";
+var friends;
+
+try {
+  friends = JSON.parse(
+    localStorage.getItem("friends") || "[]"
+  );
+} catch(e) {
+  friends = [];
+}
+
+if (!Array.isArray(friends)) {
+  friends = [];
+}
+  
+  var pendingPhotoStateCode = "";
 
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
