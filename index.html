@@ -7434,9 +7434,13 @@ players.push({
   friends.forEach(function(friend){
 
     players.push({
-      name: friend.name,
-      points: friend.points || 0
-    });
+  name:
+    document.getElementById(
+      "plateTextPreview"
+    )?.textContent || "You",
+
+  points: totalScore()
+});
 
   });
 
