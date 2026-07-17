@@ -7171,7 +7171,7 @@ localStorage.getItem(
 }
 
 
-document
+  document
   .querySelectorAll(".debateBtn")
   .forEach(function(btn){
 
@@ -7179,7 +7179,7 @@ document
 
       if(
         localStorage.getItem(
-          "todayDebateVote"
+          getDebateVoteKey()
         )
       ){
         return;
