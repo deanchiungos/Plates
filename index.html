@@ -6324,14 +6324,15 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   </div>
 
 
-  <div class="friendsEmpty">
+<div class="friendsEmpty" id="friendsEmpty">
 
+  <div class="friendsEmptySub">
+    Start your team & compete together
+  </div>
 
-<div class="friendsEmptySub">
-Start your team & compete together
 </div>
 
-</div>
+<div class="familyList" id="friendsList"></div>
 
 <button class="secondary" id="inviteFriendsBtn" type="button">
   Invite Friends
@@ -7198,6 +7199,59 @@ function saveFriends() {
   var hasSeenOnboarding = localStorage.platesSeenOnboarding === "true";
 
 
+function renderFriends(){
+
+  var friendsList =
+    document.getElementById("friendsList");
+
+  var friendsEmpty =
+    document.getElementById("friendsEmpty");
+
+  if(!friendsList){
+    return;
+  }
+
+  friendsList.innerHTML = "";
+
+  if(!friends.length){
+
+    if(friendsEmpty){
+      friendsEmpty.classList.remove("hidden");
+    }
+
+    return;
+  }
+
+  if(friendsEmpty){
+    friendsEmpty.classList.add("hidden");
+  }
+
+  friends.forEach(function(friend){
+
+    var row = document.createElement("div");
+    row.className = "familyMember";
+
+    row.innerHTML =
+      '<div class="familyAvatar">' +
+        friend.avatar +
+      '</div>' +
+
+      '<div class="familyInfo">' +
+        '<div class="familyName">' +
+          friend.name +
+        '</div>' +
+
+        '<div class="familyMeta">' +
+          friend.id +
+        '</div>' +
+      '</div>';
+
+    friendsList.appendChild(row);
+
+  });
+
+}
+  
 
 function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
