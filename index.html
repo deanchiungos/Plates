@@ -7184,6 +7184,14 @@ try {
 if (!Array.isArray(friends)) {
   friends = [];
 }
+
+
+function saveFriends() {
+  localStorage.setItem(
+    "friends",
+    JSON.stringify(friends)
+  );
+}
   
   var pendingPhotoStateCode = "";
 
