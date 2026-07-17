@@ -2050,36 +2050,52 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
   background: linear-gradient(180deg,#eaffef,#ffffff);
 }
 
-.familyAvatar {
-  width: 52px;
-  height: 52px;
-  font-size: 24px;
-  border-radius: 999px;
-  background: #eaf3ff;
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 950;
-  flex: 0 0 auto;
+familyMember{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 6px;
+}
+  
+.familyAvatar{
+  width:64px;
+  height:64px;
+  min-width:64px;
+
+  border-radius:999px;
+  background:#eef4ff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:34px;
+  font-weight:950;
+  color:var(--navy);
+
+  flex-shrink:0;
 }
 
-.familyInfo {
-  flex: 1;
-  min-width: 0;
-  text-align: left;
+
+
+  
+  .familyInfo{
+  flex:1;
+  min-width:0;
 }
+
 
 .familyName {
-  color: var(--navy);
-  font-size: 18px;
-  font-weight: 950;
   line-height: 1.1;
+  font-size:28px;
+  font-weight:900;
+  color:var(--navy);
 }
 
 .familyMeta {
   color: var(--muted);
-  font-size: 12px;
+    font-size:18px;
+  opacity:.6;
   font-weight: 800;
   margin-top: 3px;
 }
