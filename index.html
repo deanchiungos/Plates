@@ -8017,7 +8017,11 @@ if(!wasCollected) {
 
 addXP(10);
   
-toast("Collected " + name + " • +10 XP");
+  toast(
+  "Collected " +
+  name +
+  " +10 XP"
+);
 
   var isBonus =
     btn.dataset.bonus === "true";
@@ -9705,10 +9709,19 @@ if(xpText){
     (level + 1);
 }
 
-if(xpFill){
+  if(xpFill){
+
+  var fillPct =
+    levelXP === 0
+      ? 0
+      : Math.max(levelXP, 5);
+
   xpFill.style.width =
-    levelXP + "%";
+    fillPct + "%";
 }
+
+
+
   
   var top = log.slice().sort(function(a,b){ return b.points - a.points; })[0];
   document.getElementById("shareTripName").textContent = tripName;
