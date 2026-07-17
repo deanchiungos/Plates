@@ -7396,8 +7396,8 @@ function renderFriendLeaderboard(){
   var players = [];
 
   players.push({
-    name: playerName || "You",
-    points: totalScore || 0
+    name: "You",
+    points: 0
   });
 
   friends.forEach(function(friend){
@@ -7409,10 +7409,6 @@ function renderFriendLeaderboard(){
 
   });
 
-  players.sort(function(a,b){
-    return b.points - a.points;
-  });
-
   players.forEach(function(player,index){
 
     var row =
@@ -7422,15 +7418,14 @@ function renderFriendLeaderboard(){
       "leaderboardRow";
 
     row.innerHTML =
-      '<div>#' +
-        (index + 1) +
-        ' ' +
-        player.name +
+      '<div>' +
+      '#' + (index+1) +
+      ' ' + player.name +
       '</div>' +
 
       '<div>' +
-        player.points +
-        ' pts' +
+      player.points +
+      ' pts' +
       '</div>';
 
     box.appendChild(row);
