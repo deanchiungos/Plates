@@ -7396,8 +7396,27 @@ function saveXP() {
 }
 
 function addXP(amount) {
+
+  var oldLevel =
+    getPlayerLevel();
+
   playerXP += amount;
+
   saveXP();
+
+  var newLevel =
+    getPlayerLevel();
+
+  if(newLevel > oldLevel){
+
+    toast(
+      "Level " +
+      newLevel +
+      " reached!"
+    );
+
+  }
+
 }
 
 
