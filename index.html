@@ -4607,6 +4607,31 @@ body.show-rarity .state.rare:not(.collected) {
   border-radius: 999px;
 }
 
+
+  #gameScreen .currentTripHeader{
+  padding-top:14px !important;
+  padding-bottom:14px !important;
+}
+
+#gameScreen .activeGameLabel{
+  margin-bottom:5px !important;
+}
+
+#gameScreen .tripNameInline{
+  margin-bottom:3px !important;
+  line-height:1.05;
+}
+
+#gameScreen .activeGameMeta{
+  margin-bottom:0 !important;
+  line-height:1.1;
+}
+
+#gameScreen .activeGameDate{
+  margin-top:5px !important;
+  margin-bottom:0 !important;
+}
+
 color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScreen .bonusCount {
   display: block;
   width: 100%;
@@ -5134,6 +5159,16 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
  #nextTripNameSaveBtn{
   position:relative;
   z-index:2;
+}
+
+  .activeGameDate{
+  margin-top:4px;
+  color:var(--navy);
+  font-size:13px;
+  font-weight:800;
+  line-height:1;
+  text-align:center;
+  opacity:.72;
 }
 
   
@@ -9035,10 +9070,17 @@ var tripDateTop =
 if(tripDateTop){
   tripDateTop.textContent =
     "Started " +
-    formatTripDate(
-      tripStartedAt
-    );
+    new Date(tripStartedAt)
+      .toLocaleDateString(
+        "en-US",
+        {
+          month:"long",
+          day:"numeric"
+        }
+      );
 }
+  
+  
 
 /* TRIPS HERO */
 
@@ -9053,9 +9095,14 @@ var tripDateTrips =
 if(tripDateTrips){
   tripDateTrips.textContent =
     "Started " +
-    formatTripDate(
-      tripStartedAt
-    );
+    new Date(tripStartedAt)
+      .toLocaleDateString(
+        "en-US",
+        {
+          month:"long",
+          day:"numeric"
+        }
+      );
 }
   
 var tripScoringTrips =
