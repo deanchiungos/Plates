@@ -5265,6 +5265,22 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 .removeFriendBtn:active{
   transform:scale(.94);
 }
+
+
+  .xpLevelText{
+  font-size:34px;
+  font-weight:950;
+  color:var(--navy);
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.xpText{
+  text-align:center;
+  margin-top:10px;
+  font-weight:700;
+  color:var(--navy);
+}
   
   
 </style>
@@ -6412,6 +6428,30 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   </button>
 </div>
 
+<div class="card xpCard">
+
+  <div class="panelTitle">
+    ⭐ Level Progress
+  </div>
+
+  <div id="xpLevelText">
+    Level 1
+  </div>
+
+  <div class="bar">
+    <div
+      class="fill"
+      id="xpFill"
+      style="width:0%">
+    </div>
+  </div>
+
+  <div id="xpText">
+    0 XP
+  </div>
+
+</div>
+  
 <div class="card friendsCard">
 
   <div class="panelTitle">
@@ -9175,6 +9215,7 @@ if (listCountEl) {
 
 if(canadaCountEl){
 
+  
   var canadaTotal =
     canadaCollectedCount();
 
@@ -9201,6 +9242,8 @@ if(canadaCountEl){
   document.getElementById(view + "Nav").classList.add("active");
 
 ["classic","weighted","unlimited"].forEach(function(m){
+  
+  
   var modeBtn = document.getElementById(m + "Btn");
   if(modeBtn) {
     modeBtn.classList.toggle("active", mode === m);
@@ -9534,6 +9577,8 @@ if(currentTripHeader && noGameHero) {
   }
 }
 
+
+  
 var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
 
   var label =
@@ -9577,6 +9622,44 @@ if (recentEl) {
   renderDailyChallenge();
   renderBadges(c);
 
+
+var xpLevelText =
+  document.getElementById(
+    "xpLevelText"
+  );
+
+var xpText =
+  document.getElementById(
+    "xpText"
+  );
+
+var xpFill =
+  document.getElementById(
+    "xpFill"
+  );
+
+if(xpLevelText){
+
+  var level =
+    getPlayerLevel();
+
+  var levelXP =
+    playerXP % 100;
+
+  xpLevelText.textContent =
+    "⭐ Level " + level;
+
+  if(xpText){
+    xpText.textContent =
+      playerXP + " XP";
+  }
+
+  if(xpFill){
+    xpFill.style.width =
+      levelXP + "%";
+  }
+}
+  
   var top = log.slice().sort(function(a,b){ return b.points - a.points; })[0];
   document.getElementById("shareTripName").textContent = tripName;
   document.getElementById("shareDate").textContent = new Date().toLocaleDateString();
