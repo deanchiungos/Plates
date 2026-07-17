@@ -5472,9 +5472,11 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
   <div class="activeGameHero" id="tripPillBtn">
 
-<div class="activeGameLabel" id="activeGameLabelTop">
-      Active Game
-    </div>
+<div
+  class="activeGameLabel"
+  id="activeGameLabelTrips">
+  Active Game
+</div>
 
     <div class="tripNameInline" id="tripNameTop">
       Bastille Day Roadtrip
@@ -9033,9 +9035,26 @@ if(tripNameTopEl){
     tripName;
 }
 
-var tripGameTypeTop =
-  document.getElementById("tripGameTypeTop");
 
+  var tripGameTypeTop =
+  document.getElementById(
+    "tripGameTypeTop"
+  );
+
+if(tripGameTypeTop){
+  tripGameTypeTop.textContent =
+    gameTypeLabel() + " Mode";
+}
+
+var tripScoringTop =
+  document.getElementById(
+    "tripScoringTop"
+  );
+
+if(tripScoringTop){
+  tripScoringTop.textContent =
+    scoringModeLabel() + " Scoring";
+}
 
 var activeGameLabelTop =
   document.getElementById(
@@ -9050,41 +9069,26 @@ if(activeGameLabelTop){
         "en-US"
       );
 }
-  
-  document.getElementById("tripScoringTop");
 
-if(tripScoringTop){
-  tripScoringTop.textContent =
-    scoringModeLabel() + " Scoring";
-}
 
-if(tripGameTypeTop){
-  tripGameTypeTop.textContent =
-    gameTypeLabel() + " Mode";
-}
-
-var tripScoringTop =
-  
 /* TRIPS HERO */
+
+  /* TRIPS HERO */
 
 var tripNameEl =
   document.getElementById("tripName");
 
-var tripDateTrips =
+var activeGameLabelTrips =
   document.getElementById(
-    "tripDateTrips"
+    "activeGameLabelTrips"
   );
 
-if(tripDateTrips){
-  tripDateTrips.textContent =
-    "Started " +
+if(activeGameLabelTrips){
+  activeGameLabelTrips.textContent =
+    "Active Game • Started " +
     new Date(tripStartedAt)
       .toLocaleDateString(
-        "en-US",
-        {
-          month:"long",
-          day:"numeric"
-        }
+        "en-US"
       );
 }
   
