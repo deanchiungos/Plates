@@ -7406,13 +7406,12 @@ removeFriendBtn.onclick = function(){
 
 function renderFriendLeaderboard(){
 
-players.push({
-  name:
-    document.getElementById("plateTextPreview")
-      ?.textContent || "You",
 
+players.push({
+  name: vanityPlate || "You",
   points: totalScore || 0
 });
+  
   
   var box =
     document.getElementById(
