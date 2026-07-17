@@ -5852,7 +5852,7 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 
 <button class="newGameBtn" id="newGameBtn" type="button">
- 🚗 Start New Game
+ 🚗 Start New Trip
 </button>
 
    </div>
@@ -6220,21 +6220,21 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 <div class="tripOptionsBar">
 <button class="newGameBtn gameOptionsTrigger" id="tripOptionsBtn" type="button">
-     ⚙️ Game Options
+     ⚙️ Trip Options
   </button>
 </div>
 
 
  <button class="newGameBtn" id="newTripBtn" type="button">
-  🚗 Start New Game
+  🚗 Start New Trip
 </button>
 
     </div>
 
     <div class="card">
 
-      <div class="panelTitle"><span>Trip History</span><span id="historyCount">0 saved</span></div>
-      <div class="tripHistoryList" id="tripHistoryList">No saved trips yet.</div>
+      <div class="panelTitle"><span>🕘 Trip History</span><span id="historyCount">0 saved</span></div>
+      <div class="tripHistoryList" id="tripHistoryList">No saved trips yet</div>
     </div>
   </section>
 
@@ -6308,30 +6308,30 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     </button>
 
     <div class="newGameTitle">
-       ⚙️ Game Options
+       ⚙️ Trip Options
     </div>
 
     <div class="newGameSectionLabel">
-      Current Game
+      🛣️ Current Trip
     </div>
 
     <button class="newGameOption" id="endTripBtn" type="button">
-      <strong>Save Trip</strong>
-      <span>Save this game to Trip History</span>
+      <strong>💾 Save Trip</strong>
+      <span>Save this to Trip History</span>
     </button>
 
     <button class="newGameOption" id="renameTripBtn" type="button">
-      <strong>Rename Trip</strong>
-      <span>Change the game name</span>
+      <strong>✏️ Rename Trip</strong>
+      <span>Change the headline</span>
     </button>
 
     <button class="newGameOption" id="changeModeBtn" type="button">
-      <strong>Change Mode</strong>
+      <strong>🔄 Change Mode</strong>
       <span>Switch scoring rules</span>
     </button>
 
     <button class="newGameOption" id="shareTripBtn" type="button">
-      <strong>Share Trip</strong>
+      <strong>📤 Share Trip</strong>
       <span>Share your progress</span>
     </button>
 
@@ -8232,7 +8232,7 @@ function setView(newView) {
 
 
 function clearTrip() {
-  if(!confirm("Clear this game? This will remove all current progress and cannot be undone.")) {
+  if(!confirm("Clear this trip? This will remove all current progress and cannot be undone!")) {
     return;
   }
 
@@ -8541,7 +8541,7 @@ function shareSavedTrip(index) {
   if(
     hasProgress &&
     !confirm(
-      "Start a new game? Your current progress will be saved so you can resume it later"
+      "Start a new trip? Your current progress will be saved so you can resume it later"
     )
   ) {
     return;
@@ -8573,8 +8573,8 @@ function shareSavedTrip(index) {
 
   toast(
     hasProgress
-      ? "Game saved for later"
-      : "New game started"
+      ? "Trip saved for later"
+      : "New trip started"
   );
 }
 
@@ -8593,7 +8593,7 @@ function resumePausedTrip() {
     getPausedTrip();
 
   if(!paused) {
-    toast("No saved game to resume");
+    toast("No saved trip to resume");
     return;
   }
 
@@ -9549,7 +9549,7 @@ var activeGameLabelTop =
 
 if(activeGameLabelTop){
   activeGameLabelTop.textContent =
-    "Active Game • Started " +
+    "Active Trip • Started " +
     new Date(tripStartedAt)
       .toLocaleDateString(
         "en-US"
@@ -9571,7 +9571,7 @@ var activeGameLabelTrips =
 
 if(activeGameLabelTrips){
   activeGameLabelTrips.textContent =
-    "Active Game • Started " +
+    "Active Trip • Started " +
     new Date(tripStartedAt)
       .toLocaleDateString(
         "en-US"
@@ -10088,7 +10088,7 @@ if(inviteFriendsBtn){
   inviteFriendsBtn.onclick = function(){
 
     var text =
-      "Join my PLATES game!\n\n" +
+      "Join my PLATES roadtrip!\n\n" +
       "Friend Code: " + account.friendCode + "\n\n" +
       "https://deanchiungos.github.io/Plates";
 
