@@ -9699,6 +9699,91 @@ if(addFriendCloseBtn){
   };
 }
 
+if(findFriendBtn){
+  findFriendBtn.onclick = function(){
+
+    var code = "";
+
+    if(friendCodeInput){
+      code = friendCodeInput.value
+        .trim()
+        .toUpperCase();
+    }
+
+    if(friendPreview){
+      friendPreview.classList.add("hidden");
+    }
+
+    if(friendLookupError){
+      friendLookupError.classList.add("hidden");
+    }
+
+    if(!code || code.indexOf("PLT-") !== 0){
+
+      if(friendLookupError){
+        friendLookupError.textContent =
+          "Enter a valid friend code";
+        friendLookupError.classList.remove("hidden");
+      }
+
+      return;
+    }
+
+    var alreadyAdded = friends.some(function(friend){
+      return friend.id === code;
+    });
+
+    if(alreadyAdded){
+
+      if(friendLookupError){
+        friendLookupError.textContent =
+          "Friend already added";
+        friendLookupError.classList.remove("hidden");
+      }
+
+      return;
+    }
+
+    pendingFriend = {
+      id: code,
+      name: "PLATES Friend",
+      avatar: "😎",
+      plate: code.replace("PLT-", ""),
+      stateCount: 0,
+      points: 0
+    };
+
+    var friendPreviewAvatar =
+      document.getElementById("friendPreviewAvatar");
+
+    var friendPreviewPlate =
+      document.getElementById("friendPreviewPlate");
+
+    var friendPreviewName =
+      document.getElementById("friendPreviewName");
+
+    if(friendPreviewAvatar){
+      friendPreviewAvatar.textContent =
+        pendingFriend.avatar;
+    }
+
+    if(friendPreviewPlate){
+      friendPreviewPlate.textContent =
+        pendingFriend.plate;
+    }
+
+    if(friendPreviewName){
+      friendPreviewName.textContent =
+        pendingFriend.name;
+    }
+
+    if(friendPreview){
+      friendPreview.classList.remove("hidden");
+    }
+
+  };
+}
+  
 document.querySelectorAll(".state").forEach(function (btn) {
   btn.onclick = function () {
     tapState(btn);
