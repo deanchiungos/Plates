@@ -2058,10 +2058,12 @@ familyMember{
 }
   
 .familyAvatar{
-  width:64px;
-  height:64px;
-  min-width:64px;
-
+    width:56px;
+  height:56px;
+  min-width:56px;
+  
+  font-size:30px;
+  
   border-radius:999px;
   background:#eef4ff;
 
@@ -2069,7 +2071,6 @@ familyMember{
   align-items:center;
   justify-content:center;
 
-  font-size:34px;
   font-weight:950;
   color:var(--navy);
 
@@ -2114,6 +2115,13 @@ familyMember{
   padding: 7px 10px;
   font-size: 11px;
   font-weight: 900;
+}
+
+  .familyStats{
+  margin-top:4px;
+  font-size:13px;
+  font-weight:800;
+  color:var(--muted);
 }
 
 .familyDeleteBtn {
@@ -3703,6 +3711,10 @@ body::before {
   max-width: 100%;
   min-width: 0;
   overflow: hidden;
+}
+
+  .familyMember{
+  padding:16px 4px 20px;
 }
 
 #familyScreen .familyList {
@@ -7286,16 +7298,22 @@ function renderFriends(){
         friend.avatar +
       '</div>' +
 
-      '<div class="familyInfo">' +
-        '<div class="familyName">' +
-          friend.name +
-        '</div>' +
+'<div class="familyInfo">' +
 
-        '<div class="familyMeta">' +
-          friend.id +
-        '</div>' +
-      '</div>';
+  '<div class="familyName">' +
+    friend.name +
+  '</div>' +
 
+  '<div class="familyMeta">' +
+    friend.id +
+  '</div>' +
+
+  '<div class="familyStats">' +
+    '0 states • 0 pts' +
+  '</div>' +
+
+'</div>';
+      
     friendsList.appendChild(row);
 
   });
