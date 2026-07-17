@@ -6559,6 +6559,22 @@ var view = localStorage.platesView || "game";
 var counts = safeParse(localStorage.platesCounts, "{}");
 var log = safeParse(localStorage.platesLog, "[]");
 var tripName = localStorage.platesTripName || "Summer Roadtrip";
+var tripId =
+  localStorage.platesTripId ||
+  createTripId();
+
+var tripStartedAt =
+  localStorage.platesTripStartedAt ||
+  new Date().toISOString();
+
+var tripUpdatedAt =
+  localStorage.platesTripUpdatedAt ||
+  tripStartedAt;
+
+var tripStatus =
+  localStorage.platesTripStatus ||
+  "active";
+  
   var tripInviteCode = localStorage.platesInviteCode || "";
 if (tripInviteCode.startsWith("ROAD-")) {
   tripInviteCode = tripInviteCode.replace("ROAD-", "PLT-");
@@ -7256,6 +7272,77 @@ render();
 
 toast("Profile saved");
  }
+
+function createTripId() {
+  return (
+    "trip-" +
+    Date.now() +
+    "-" +
+    Math.random()
+      .toString(36)
+      .slice(2, 8)
+  );
+}
+
+function formatTripDate(iso) {
+  if(!iso) return "";
+
+  var date = new Date(iso);
+
+  if(isNaN(date.getTime())) {
+    return "";
+  }
+
+  return date.toLocaleDateString(
+    undefined,
+    {
+      month: "short",
+      day: "numeric",
+      year: "numeric"
+    }
+  );
+}
+
+function formatTripDateRange(startIso, endIso) {
+  var start = formatTripDate(startIso);
+  var end = formatTripDate(endIso);
+
+  if(!start) return "";
+  if(!end || start === end) return start;
+
+  return start + " – " + end;
+}
+
+function beginFreshTrip(name) {
+  tripId = createTripId();
+  tripName = name || "New Roadtrip";
+  tripStartedAt = new Date().toISOString();
+  tripUpdatedAt = tripStartedAt;
+  tripStatus = "active";
+
+  counts = {};
+  log = [];
+
+  localStorage.removeItem(
+    "platesPausedTrip"
+  );
+}
+
+function activeTripData() {
+  return {
+    id: tripId,
+    name: tripName,
+    gameType: gameType,
+    mode: mode,
+    scoringMode: scoringMode,
+    counts: counts,
+    log: log,
+    startedAt: tripStartedAt,
+    updatedAt: tripUpdatedAt,
+    status: tripStatus
+  };
+}
+  
 function save() {
   localStorage.platesMode = mode;
   localStorage.platesGameType = gameType;
@@ -7264,6 +7351,21 @@ function save() {
   localStorage.platesCounts = JSON.stringify(counts);
   localStorage.platesLog = JSON.stringify(log);
   localStorage.platesTripName = tripName;
+
+tripUpdatedAt = new Date().toISOString();
+
+localStorage.platesTripId =
+  tripId;
+
+localStorage.platesTripStartedAt =
+  tripStartedAt;
+
+localStorage.platesTripUpdatedAt =
+  tripUpdatedAt;
+
+localStorage.platesTripStatus =
+  tripStatus;
+  
   localStorage.platesTripCount = tripCount;
   localStorage.platesSavedTrips = JSON.stringify(savedTrips);
   localStorage.platesTripMemories = JSON.stringify(tripMemories);
@@ -7685,16 +7787,49 @@ function renameTrip(){
   },100);
 }
 
+
 function currentTripSnapshot() {
+  var endedAt =
+    new Date().toISOString();
+
   return {
+    id: tripId,
     name: tripName,
+    gameType: gameType,
     mode: mode,
+    scoringMode: scoringMode,
+
     states: collectedCount(),
     score: totalScore(),
     sightings: totalSightings(),
-    badges: badgeCount(collectedCount()),
-    memories: tripMemories.filter(function(m){ return m.trip === tripName; }),
-    date: new Date().toLocaleDateString()
+    badges: badgeCount(
+      collectedCount()
+    ),
+
+    counts: JSON.parse(
+      JSON.stringify(counts)
+    ),
+
+    log: JSON.parse(
+      JSON.stringify(log)
+    ),
+
+    memories: tripMemories.filter(
+      function(m) {
+        return m.trip === tripName;
+      }
+    ),
+
+    startedAt: tripStartedAt,
+    updatedAt: tripUpdatedAt,
+    endedAt: endedAt,
+
+    date: formatTripDateRange(
+      tripStartedAt,
+      endedAt
+    ),
+
+    status: "completed"
   };
 }
 
@@ -7805,37 +7940,55 @@ function closeNextTripNameSheet(){
 
 
   
-
-function endCurrentTrip(){
-
+function endCurrentTrip() {
   if(
     collectedCount() === 0 &&
     !confirm(
       "Save this trip with 0 states?"
     )
-  ){
+  ) {
     return;
   }
 
-  savedTrips.unshift(
-    currentTripSnapshot()
-  );
+  var completedTrip =
+    currentTripSnapshot();
+
+  var existingIndex =
+    savedTrips.findIndex(
+      function(t) {
+        return t.id === completedTrip.id;
+      }
+    );
+
+  if(existingIndex >= 0) {
+    savedTrips[existingIndex] =
+      completedTrip;
+  } else {
+    savedTrips.unshift(
+      completedTrip
+    );
+  }
 
   savedTrips =
-    savedTrips.slice(0,20);
+    savedTrips.slice(0, 50);
 
   updateBestForCurrentMode();
 
   tripCount += 1;
-  counts = {};
-  log = [];
+
+  var nextName =
+    prompt(
+      "Name your next trip:",
+      "New Roadtrip"
+    ) || "New Roadtrip";
+
+  beginFreshTrip(nextName);
 
   save();
   render();
 
-  openNextTripNameSheet();
+  toast("Trip saved");
 }
-
   
 function shareSavedTrip(index) {
   var t = savedTrips[index];
@@ -7858,30 +8011,113 @@ function shareSavedTrip(index) {
   }
 }
 
-function newTrip() {
+  function newTrip() {
+  var hasProgress =
+    collectedCount() > 0 ||
+    log.length > 0;
 
   if(
-    confirm(
-      "Start a new trip? This resets collected states."
+    hasProgress &&
+    !confirm(
+      "Start a new game? Your current progress will be saved so you can resume it later"
     )
-  ){
+  ) {
+    return;
+  }
 
-    updateBestForCurrentMode();
-
-    tripCount += 1;
-
-    counts = {};
-    log = [];
-
-    save();
-    render();
-
-    openNextTripNameSheet();
-
-    toast(
-      "New trip started"
+  if(hasProgress) {
+    localStorage.setItem(
+      "platesPausedTrip",
+      JSON.stringify(
+        activeTripData()
+      )
     );
   }
+
+  updateBestForCurrentMode();
+
+  tripCount += 1;
+
+  var nextName =
+    prompt(
+      "Trip name:",
+      "New Roadtrip"
+    ) || "New Roadtrip";
+
+  beginFreshTrip(nextName);
+
+  save();
+  render();
+
+  toast(
+    hasProgress
+      ? "Game saved for later"
+      : "New game started"
+  );
+}
+
+
+function getPausedTrip() {
+  return safeParse(
+    localStorage.getItem(
+      "platesPausedTrip"
+    ),
+    "null"
+  );
+}
+
+function resumePausedTrip() {
+  var paused =
+    getPausedTrip();
+
+  if(!paused) {
+    toast("No saved game to resume");
+    return;
+  }
+
+  tripId =
+    paused.id ||
+    createTripId();
+
+  tripName =
+    paused.name ||
+    "Roadtrip";
+
+  gameType =
+    paused.gameType ||
+    "solo";
+
+  mode =
+    paused.mode ||
+    "classic";
+
+  scoringMode =
+    paused.scoringMode ||
+    mode;
+
+  counts =
+    paused.counts || {};
+
+  log =
+    paused.log || [];
+
+  tripStartedAt =
+    paused.startedAt ||
+    new Date().toISOString();
+
+  tripUpdatedAt =
+    new Date().toISOString();
+
+  tripStatus = "active";
+
+  localStorage.removeItem(
+    "platesPausedTrip"
+  );
+
+  save();
+  render();
+
+  toast("Game resumed");
 }
   
 
