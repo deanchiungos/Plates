@@ -2078,18 +2078,18 @@ familyMember{
 }
 
 
-
   
   .familyInfo{
   flex:1;
   min-width:0;
+    padding-left:6px;
 }
 
 
 .familyName {
-  line-height: 1.1;
-  font-size:28px;
-  font-weight:900;
+  line-height: 1.15;
+  font-size:16px;
+  font-weight:950;
   color:var(--navy);
 }
 
@@ -2098,7 +2098,7 @@ familyMember{
     font-size:18px;
   opacity:.6;
   font-weight: 800;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .familyActions {
@@ -3714,7 +3714,11 @@ body::before {
 }
 
   .familyMember{
-  padding:16px 4px 20px;
+  display:flex;
+    align-items:center;
+    gap:14px;
+    padding:16px 4px;
+    border-bottom:1px solid rgba(11,62,103,.08);
 }
 
 #familyScreen .familyList {
