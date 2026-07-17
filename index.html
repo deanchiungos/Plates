@@ -5268,18 +5268,21 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 
   .xpLevelText{
-  font-size:34px;
-  font-weight:950;
+  font-size:18px;
+  font-weight:900;
   color:var(--navy);
   text-align:center;
-  margin-bottom:10px;
+    margin-top:-2px;
+  margin-bottom:12px;
 }
 
-.xpText{
-  text-align:center;
+
+  .xpText{
   margin-top:10px;
-  font-weight:700;
-  color:var(--navy);
+  font-size:15px;
+  font-weight:800;
+  color:rgba(11,62,103,.72);
+  text-align:left;
 }
 
 .xpLevelText{
@@ -6528,11 +6531,6 @@ margin-top:-2px;
     0/100 XP
   </div>
 
-  <div
-    class="xpNextText"
-    id="xpNextText">
-    100 XP to Level 2
-  </div>
 
 </div>
 
@@ -9740,18 +9738,16 @@ if(xpLevelText){
   xpLevelText.textContent =
     "Level " + level;
 
-  if(xpText){
-    xpText.textContent =
-      levelXP +
-      " / 100 XP";
-  }
+if(xpText){
 
-  if(xpNextText){
-    xpNextText.textContent =
-      (100 - levelXP) +
-      " XP to Level " +
-      (level + 1);
-  }
+  xpText.textContent =
+    levelXP +
+    "/100 XP • " +
+    (100 - levelXP) +
+    " XP to Level " +
+    (level + 1);
+
+}
 
   if(xpFill){
     xpFill.style.width =
