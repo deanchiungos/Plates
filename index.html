@@ -9783,6 +9783,35 @@ if(findFriendBtn){
 
   };
 }
+
+if(confirmAddFriendBtn){
+  confirmAddFriendBtn.onclick = function(){
+
+    if(!pendingFriend){
+      return;
+    }
+
+    friends.push(pendingFriend);
+    saveFriends();
+
+    toast("Friend added");
+
+    pendingFriend = null;
+
+    if(friendPreview){
+      friendPreview.classList.add("hidden");
+    }
+
+    if(addFriendOverlay){
+      addFriendOverlay.classList.add("hidden");
+    }
+
+    if(friendCodeInput){
+      friendCodeInput.value = "";
+    }
+
+  };
+}
   
 document.querySelectorAll(".state").forEach(function (btn) {
   btn.onclick = function () {
