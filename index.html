@@ -6422,10 +6422,20 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   </button>
 
 </div>
-  
-  
-</div>
 
+
+
+  </div>
+
+<div class="card friendLeaderboardCard">
+
+  <div class="panelTitle">
+    🏆 Friend Leaderboard
+  </div>
+
+  <div id="friendLeaderboard"></div>
+
+</div>
 
 <div class="card">
   <div class="panelTitle profileTitle">
@@ -7357,6 +7367,7 @@ removeFriendBtn.onclick = function(){
 
   saveFriends();
   renderFriends();
+  renderFriendLeaderboard();
   toast("Friend removed");
 
 };
@@ -7369,6 +7380,65 @@ removeFriendBtn.onclick = function(){
 }
   
 
+function renderFriendLeaderboard(){
+
+  var box =
+    document.getElementById(
+      "friendLeaderboard"
+    );
+
+  if(!box){
+    return;
+  }
+
+  box.innerHTML = "";
+
+  var players = [];
+
+  players.push({
+    name: playerName || "You",
+    points: totalScore || 0
+  });
+
+  friends.forEach(function(friend){
+
+    players.push({
+      name: friend.name,
+      points: friend.points || 0
+    });
+
+  });
+
+  players.sort(function(a,b){
+    return b.points - a.points;
+  });
+
+  players.forEach(function(player,index){
+
+    var row =
+      document.createElement("div");
+
+    row.className =
+      "leaderboardRow";
+
+    row.innerHTML =
+      '<div>#' +
+        (index + 1) +
+        ' ' +
+        player.name +
+      '</div>' +
+
+      '<div>' +
+        player.points +
+        ' pts' +
+      '</div>';
+
+    box.appendChild(row);
+
+  });
+
+}
+  
 function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
     var overlay = document.getElementById("onboardingOverlay");
@@ -9964,7 +10034,7 @@ if(confirmAddFriendBtn){
    friends.push(pendingFriend);
 saveFriends();
 renderFriends();
-
+renderFriendLeaderboard();
     toast("Friend added");
 
     pendingFriend = null;
@@ -10262,6 +10332,7 @@ attachHandlers();
 generateDailyChallenge();
 render();
 renderFriends();
+  renderFriendLeaderboard();
 showOnboardingIfNeeded();
   
 </script>
