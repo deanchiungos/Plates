@@ -3471,34 +3471,41 @@ body::before {
   transition: width .25s ease;
 }
 
-.badgesTitle {
-  font-size: 22px;
-  font-weight: 950;
-  color: var(--navy);
-  margin: 0;
+
+
+
+
+.badgesHeader{
+  margin-bottom:12px;
 }
 
-.badgesCount {
-  margin-top: 2px;
-  font-size: 18px;
-  font-weight: 850;
-  color: var(--muted);
+.nextBadgeBox{
+  margin-top:0;
+  margin-bottom:12px;
 }
 
+.badgesCount{
+  font-size:18px;
+  font-weight:950;
+  color:var(--muted);
+  text-align:left;
+  padding-left:4px;
+  margin:0 0 16px;
+}
+
+.badgesTitle{
+  font-size:28px;
+  font-weight:950;
+  color:var(--navy);
+  margin:0;
+}
+
+
+  
 .badgeStats {
   display: none;
 }
 
-.nextBadgeBox {
-  background: rgba(255,255,255,.38) !important;
-  box-shadow: 0 8px 22px rgba(7,55,99,.08) !important;
-  padding: 10px 14px !important;
-  margin-top: 8px;
-  margin-bottom: 18px;
-  border: 2px solid rgba(234,194,58,.45) !important;
-  border-radius: 26px !important;
-  overflow: hidden;
-}
 
 .nextBadgeLabel {
   font-size: 10px !important;
@@ -8881,6 +8888,19 @@ function renderBadges() {
 
   var unlocked = getUnlockedBadges().length;
   var total = badgeDefs.length;
+  var badgeMini =
+  document.getElementById("badgeMini");
+
+var badgeTotal =
+  document.getElementById("badgeTotal");
+
+if(badgeMini){
+  badgeMini.textContent = unlocked;
+}
+
+if(badgeTotal){
+  badgeTotal.textContent = total;
+}
   var percent = Math.round((unlocked / total) * 100);
 
   if (badgeStats) {
