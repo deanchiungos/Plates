@@ -8014,15 +8014,49 @@ function tapState(btn) {
     btn.classList.add("celebrate");
     setTimeout(function(){ btn.classList.remove("celebrate"); }, 600);
 
+
 if(!wasCollected) {
 
-addXP(10);
-  
-  toast(
-  "Collected " +
-  name +
-  " +10 XP"
-);
+  var xpEarned = 10;
+
+  var completedDailyChallenge =
+    dailyChallenge &&
+    dailyChallenge.state === code &&
+    !dailyChallenge.complete;
+
+  if(completedDailyChallenge){
+
+    xpEarned += 250;
+
+    dailyChallenge.complete = true;
+
+    localStorage.dailyChallenge =
+      JSON.stringify(
+        dailyChallenge
+      );
+  }
+
+  addXP(xpEarned);
+
+  if(completedDailyChallenge){
+
+    toast(
+      "Daily Challenge Complete" +
+      "\n+" +
+      xpEarned +
+      " XP"
+    );
+
+  } else {
+
+    toast(
+      "Collected " +
+      name +
+      "\n+10 XP"
+    );
+
+  }
+    
 
   var isBonus =
     btn.dataset.bonus === "true";
