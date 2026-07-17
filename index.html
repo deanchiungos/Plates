@@ -9647,15 +9647,14 @@ if (recentEl) {
 renderBadges(c);
 
 
+  var xpTitle =
+  document.getElementById(
+    "xpTitle"
+  );
 
 var xpText =
   document.getElementById(
     "xpText"
-  );
-
-var xpNextText =
-  document.getElementById(
-    "xpNextText"
   );
 
 var xpFill =
@@ -9663,39 +9662,29 @@ var xpFill =
     "xpFill"
   );
 
-if(xpTitle){
+var level =
+  getPlayerLevel();
 
-  var level =
-    getPlayerLevel();
-
-  var levelXP =
-    playerXP % 100;
-
-var xpTitle =
-  document.getElementById(
-    "xpTitle"
-  );
+var levelXP =
+  playerXP % 100;
 
 if(xpTitle){
   xpTitle.textContent =
     "Level " + level;
 }
-if(xpText){
 
+if(xpText){
   xpText.textContent =
     levelXP +
     "/100 XP • " +
     (100 - levelXP) +
     " XP to Level " +
     (level + 1);
-
 }
 
-  if(xpFill){
-    xpFill.style.width =
-      levelXP + "%";
-  }
-
+if(xpFill){
+  xpFill.style.width =
+    levelXP + "%";
 }
   
   var top = log.slice().sort(function(a,b){ return b.points - a.points; })[0];
