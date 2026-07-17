@@ -9646,26 +9646,33 @@ if (shareInviteBtn) {
 
 document.querySelectorAll(".addFriendBtn").forEach(function (button) {
   button.onclick = function () {
-    var addFriendOverlay = document.getElementById("addFriendOverlay");
 
-    if (addFriendOverlay) {
-      addFriendOverlay.classList.remove("hidden");
-    }
-  };
-});
+var addFriendOverlay =
+  document.getElementById("addFriendOverlay");
 
-var addFriendCloseBtn = document.getElementById("addFriendCloseBtn");
+var pendingFriend = null;
 
-if (addFriendCloseBtn) {
-  addFriendCloseBtn.onclick = function () {
-    var addFriendOverlay = document.getElementById("addFriendOverlay");
+var friendCodeInput =
+  document.getElementById("friendCodeInput");
 
-    if (addFriendOverlay) {
-      addFriendOverlay.classList.add("hidden");
-    }
-  };
-}
+var findFriendBtn =
+  document.getElementById("findFriendBtn");
 
+var friendPreview =
+  document.getElementById("friendPreview");
+
+var friendLookupError =
+  document.getElementById("friendLookupError");
+
+var confirmAddFriendBtn =
+  document.getElementById("confirmAddFriendBtn");
+
+var addFriendCloseBtn =
+  document.getElementById("addFriendCloseBtn");
+
+if(addFriendCloseBtn){
+  addFriendCloseBtn
+    
 document.body.addEventListener("click", function (e) {
   if (e.target.dataset && e.target.dataset.playerSwitch) {
     switchPlayer(e.target.dataset.playerSwitch);
