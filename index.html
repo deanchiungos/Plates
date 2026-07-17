@@ -9845,8 +9845,9 @@ if(confirmAddFriendBtn){
       return;
     }
 
-    friends.push(pendingFriend);
-    saveFriends();
+   friends.push(pendingFriend);
+saveFriends();
+renderFriends();
 
     toast("Friend added");
 
@@ -10138,13 +10139,15 @@ if(celebrationClose) {
   });
 }
 }
+
 loadProfile();
 renderVanityPlate();
 attachHandlers();
-  generateDailyChallenge();
+generateDailyChallenge();
 render();
+renderFriends();
 showOnboardingIfNeeded();
-
+  
 </script>
 </body>
 </html>
