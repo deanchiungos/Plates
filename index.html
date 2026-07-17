@@ -7333,6 +7333,14 @@ function addXP(amount) {
   saveXP();
 }
 
+
+function getPlayerLevel(){
+
+  return Math.floor(
+    playerXP / 100
+  ) + 1;
+
+}
   
   var pendingPhotoStateCode = "";
 
@@ -7921,6 +7929,8 @@ function tapState(btn) {
 
 if(!wasCollected) {
 
+addXP(10);
+  
   toast("Collected " + name);
 
   var isBonus =
