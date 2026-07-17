@@ -8697,6 +8697,23 @@ function getNextBadge() {
 }
 
 
+function formatTripDate(dateStr){
+
+  if(!dateStr) return "";
+
+  return new Date(dateStr)
+    .toLocaleDateString(
+      "en-US",
+      {
+        month:"short",
+        day:"numeric",
+        year:"numeric"
+      }
+    );
+
+}
+  
+
 function render() {
 
 var savedVote =
@@ -8997,15 +9014,50 @@ if(tripScoringTop){
     scoringModeLabel() + " Scoring";
 }
 
+if(tripGameTypeTop){
+  tripGameTypeTop.textContent =
+    gameTypeLabel() + " Mode";
+}
+
+var tripScoringTop =
+  document.getElementById("tripScoringTop");
+
+if(tripScoringTop){
+  tripScoringTop.textContent =
+    scoringModeLabel() + " Scoring";
+}
+
+var tripDateTop =
+  document.getElementById(
+    "tripDateTop"
+  );
+
+if(tripDateTop){
+  tripDateTop.textContent =
+    "Started " +
+    formatTripDate(
+      tripStartedAt
+    );
+}
 
 /* TRIPS HERO */
 
 var tripNameEl =
   document.getElementById("tripName");
 
-var tripGameTypeTrips =
-  document.getElementById("tripGameTypeTrips");
+var tripDateTrips =
+  document.getElementById(
+    "tripDateTrips"
+  );
 
+if(tripDateTrips){
+  tripDateTrips.textContent =
+    "Started " +
+    formatTripDate(
+      tripStartedAt
+    );
+}
+  
 var tripScoringTrips =
   document.getElementById("tripScoringTrips");
 
