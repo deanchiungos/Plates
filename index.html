@@ -5472,7 +5472,7 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
   <div class="activeGameHero" id="tripPillBtn">
 
-    <div class="activeGameLabel" id="liveGameLabel">
+<div class="activeGameLabel" id="activeGameLabelTop">
       Active Game
     </div>
 
@@ -5486,7 +5486,7 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
       <span id="tripScoringTop">Classic Scoring</span>
     </div>
 
- <div class="activeGameDate" id="tripDateTop"></div>
+
 
     </div>
 
@@ -6049,9 +6049,11 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 <div class="activeGameHero currentTripHeader">
 
-  <div class="activeGameLabel">
-    Active Game
-  </div>
+<div
+  class="activeGameLabel"
+  id="activeGameLabelTrips">
+  Active Game
+</div>
 
   <div class="tripNameInline" id="tripName">
     New Roadtrip
@@ -6062,8 +6064,6 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     <span class="metaDot">•</span>
     <span id="tripScoringTrips">Classic Scoring</span>
   </div>
-
- <div class="activeGameDate" id="tripDateTrips"></div> 
 
   
   <div class="activeGameFound">
@@ -9036,52 +9036,35 @@ if(tripNameTopEl){
 var tripGameTypeTop =
   document.getElementById("tripGameTypeTop");
 
-if(tripGameTypeTop){
-  tripGameTypeTop.textContent =
-    gameTypeLabel() + " Mode";
-}
 
-var tripScoringTop =
-  document.getElementById("tripScoringTop");
-
-if(tripScoringTop){
-  tripScoringTop.textContent =
-    scoringModeLabel() + " Scoring";
-}
-
-if(tripGameTypeTop){
-  tripGameTypeTop.textContent =
-    gameTypeLabel() + " Mode";
-}
-
-var tripScoringTop =
-  document.getElementById("tripScoringTop");
-
-if(tripScoringTop){
-  tripScoringTop.textContent =
-    scoringModeLabel() + " Scoring";
-}
-
-var tripDateTop =
+var activeGameLabelTop =
   document.getElementById(
-    "tripDateTop"
+    "activeGameLabelTop"
   );
 
-if(tripDateTop){
-  tripDateTop.textContent =
-    "Started " +
+if(activeGameLabelTop){
+  activeGameLabelTop.textContent =
+    "Active Game • Started " +
     new Date(tripStartedAt)
       .toLocaleDateString(
-        "en-US",
-        {
-          month:"long",
-          day:"numeric"
-        }
+        "en-US"
       );
 }
   
-  
+  document.getElementById("tripScoringTop");
 
+if(tripScoringTop){
+  tripScoringTop.textContent =
+    scoringModeLabel() + " Scoring";
+}
+
+if(tripGameTypeTop){
+  tripGameTypeTop.textContent =
+    gameTypeLabel() + " Mode";
+}
+
+var tripScoringTop =
+  
 /* TRIPS HERO */
 
 var tripNameEl =
