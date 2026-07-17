@@ -7315,6 +7315,24 @@ function saveFriends() {
     JSON.stringify(friends)
   );
 }
+
+var playerXP =
+  parseInt(
+    localStorage.getItem("playerXP")
+  ) || 0;
+
+function saveXP() {
+  localStorage.setItem(
+    "playerXP",
+    playerXP
+  );
+}
+
+function addXP(amount) {
+  playerXP += amount;
+  saveXP();
+}
+
   
   var pendingPhotoStateCode = "";
 
