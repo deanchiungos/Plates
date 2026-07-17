@@ -5307,22 +5307,27 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   text-align:center;
 }
 
-.xpLevelText{
-  font-size:30px;
-  font-weight:950;
-  color:var(--navy);
-  margin-bottom:12px;
+  .xpCard .bar{
+  margin:10px 0 8px;
 }
 
-.xpText{
-  margin-top:12px;
+
+.xpLevelText{
+  font-size:26px;
+  font-weight:950;
+  color:var(--navy);
+  margin-bottom:10px;
+}
+
+  .xpText{
+  margin-top:4px;
   font-size:18px;
-  font-weight:700;
+  font-weight:800;
   color:var(--navy);
 }
 
 .xpNextText{
-  margin-top:6px;
+  margin-top:2px;
   font-size:14px;
   font-weight:700;
   color:rgba(11,62,103,.55);
@@ -6485,8 +6490,7 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
   <div
     class="xpLevelText"
-    id="xpLevelText">
-    Level 1
+    id="xpLevelText">Level 1
   </div>
 
   <div class="bar">
@@ -9679,9 +9683,9 @@ if (recentEl) {
     return '<div class="row recentItem"><div><div class="recentState">' + x.name + '</div><div class="recentFinder">Found by ' + finder + '</div></div><div class="recentMeta"><span class="recentTime">' + timeAgo(x.ts) + '</span><span class="recentPts">' + pts + '</span></div></div>';
   }).join("") : '<div class="memoryEmpty">No plates yet<br><br>Tap a state to start your roadtrip</div>';
 }
-  renderDailyChallenge();
-  renderBadges(c);
 
+  renderDailyChallenge();
+renderBadges(c);
 
 var xpLevelText =
   document.getElementById(
@@ -9731,45 +9735,7 @@ if(xpLevelText){
     xpFill.style.width =
       levelXP + "%";
   }
-}
 
-  
-  
-var xpLevelText =
-  document.getElementById(
-    "xpLevelText"
-  );
-
-var xpText =
-  document.getElementById(
-    "xpText"
-  );
-
-var xpFill =
-  document.getElementById(
-    "xpFill"
-  );
-
-if(xpLevelText){
-
-  var level =
-    getPlayerLevel();
-
-  var levelXP =
-    playerXP % 100;
-
-  xpLevelText.textContent =
-    "⭐ Level " + level;
-
-  if(xpText){
-    xpText.textContent =
-      playerXP + " XP";
-  }
-
-  if(xpFill){
-    xpFill.style.width =
-      levelXP + "%";
-  }
 }
   
   var top = log.slice().sort(function(a,b){ return b.points - a.points; })[0];
