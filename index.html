@@ -5222,6 +5222,26 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   opacity:.72;
 }
 
+.removeFriendBtn{
+  width:36px;
+  height:36px;
+  min-width:36px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid rgba(180,59,59,.25);
+  color:var(--red);
+  font-size:15px;
+  font-weight:950;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.removeFriendBtn:active{
+  transform:scale(.94);
+}
+  
   
 </style>
 </head>
@@ -7299,27 +7319,49 @@ function renderFriends(){
     var row = document.createElement("div");
     row.className = "familyMember";
 
-    row.innerHTML =
-      '<div class="familyAvatar">' +
-        friend.avatar +
-      '</div>' +
-
-'<div class="familyInfo">' +
-
-  '<div class="familyName">' +
-    friend.name +
+row.innerHTML =
+  '<div class="familyAvatar">' +
+    friend.avatar +
   '</div>' +
 
-  '<div class="familyMeta">' +
-    friend.id +
+  '<div class="familyInfo">' +
+
+    '<div class="familyName">' +
+      friend.name +
+    '</div>' +
+
+    '<div class="familyMeta">' +
+      friend.id +
+    '</div>' +
+
+    '<div class="familyStats">' +
+      friend.stateCount + ' states • ' +
+      friend.points + ' pts' +
+    '</div>' +
+
   '</div>' +
 
-  '<div class="familyStats">' +
-    '0 states • 0 pts' +
-  '</div>' +
+  '<button class="removeFriendBtn" type="button">' +
+    '✕' +
+  '</button>';
 
-'</div>';
-      
+
+    var removeFriendBtn =
+  row.querySelector(".removeFriendBtn");
+
+removeFriendBtn.onclick = function(){
+
+  friends = friends.filter(function(savedFriend){
+    return savedFriend.id !== friend.id;
+  });
+
+  saveFriends();
+  renderFriends();
+  toast("Friend removed");
+
+};
+
+    
     friendsList.appendChild(row);
 
   });
