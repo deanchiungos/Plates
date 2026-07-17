@@ -5280,14 +5280,7 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     2px solid rgba(234,194,58,.25);
 }
 
-.xpLevelText{
-  font-size:16px;
-  font-weight:900;
-  color:var(--navy);
-  text-align:center;
-  margin-top:-2px;
-  margin-bottom:10px;
-}
+
 
 .xpCard .bar{
   margin:10px 0 8px;
@@ -6456,14 +6449,13 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 <div class="card xpCard">
 
-  <div class="panelTitle">
-    Level Progress
-  </div>
+ <div
+  class="panelTitle"
+  id="xpTitle">
+  Level 1
+</div>
 
-  <div
-    class="xpLevelText"
-    id="xpLevelText">Level 1
-  </div>
+
 
   <div class="bar">
     <div
@@ -9654,10 +9646,7 @@ if (recentEl) {
   renderDailyChallenge();
 renderBadges(c);
 
-var xpLevelText =
-  document.getElementById(
-    "xpLevelText"
-  );
+
 
 var xpText =
   document.getElementById(
@@ -9674,7 +9663,7 @@ var xpFill =
     "xpFill"
   );
 
-if(xpLevelText){
+if(xpTitle){
 
   var level =
     getPlayerLevel();
@@ -9682,9 +9671,15 @@ if(xpLevelText){
   var levelXP =
     playerXP % 100;
 
-  xpLevelText.textContent =
-    "Level " + level;
+var xpTitle =
+  document.getElementById(
+    "xpTitle"
+  );
 
+if(xpTitle){
+  xpTitle.textContent =
+    "Level " + level;
+}
 if(xpText){
 
   xpText.textContent =
