@@ -7407,9 +7407,16 @@ removeFriendBtn.onclick = function(){
 function renderFriendLeaderboard(){
 
 
-players.push({
-  name: vanityPlate || "You",
-  points: totalScore || 0
+  players.push({
+  name:
+    document.getElementById(
+      "plateTextPreview"
+    )?.textContent.trim() || "You",
+
+  points:
+    typeof totalScore === "function"
+      ? totalScore()
+      : 0
 });
   
   
