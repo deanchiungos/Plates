@@ -9902,11 +9902,6 @@ document.querySelectorAll(".gameOptionsTrigger").forEach(function(btn) {
 });
 
 
-var newTripBtn =
-  document.getElementById(
-    "newTripBtn"
-  );
-
 
   var newTripBtn =
   document.getElementById(
@@ -9951,6 +9946,7 @@ if(saveProfileBtn) saveProfileBtn.onclick = function() {
     JSON.stringify(profile)
   );
 
+  
 var profileSavedMsg = document.getElementById("profileSavedMsg");
 profileSavedMsg.classList.remove("hidden");
 
