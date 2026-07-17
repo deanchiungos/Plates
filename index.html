@@ -5281,6 +5281,27 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   font-weight:700;
   color:var(--navy);
 }
+
+.xpLevelText{
+  font-size:30px;
+  font-weight:950;
+  color:var(--navy);
+  margin-bottom:12px;
+}
+
+.xpText{
+  margin-top:12px;
+  font-size:18px;
+  font-weight:700;
+  color:var(--navy);
+}
+
+.xpNextText{
+  margin-top:6px;
+  font-size:14px;
+  font-weight:700;
+  color:rgba(11,62,103,.55);
+}
   
   
 </style>
@@ -6451,6 +6472,42 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   </div>
 
 </div>
+
+
+<div class="card xpCard">
+
+  <div class="panelTitle">
+    Level Progress
+  </div>
+
+  <div
+    class="xpLevelText"
+    id="xpLevelText">
+    Level 1
+  </div>
+
+  <div class="bar">
+    <div
+      class="fill"
+      id="xpFill">
+    </div>
+  </div>
+
+  <div
+    class="xpText"
+    id="xpText">
+    0 / 100 XP
+  </div>
+
+  <div
+    class="xpNextText"
+    id="xpNextText">
+    100 XP to Level 2
+  </div>
+
+</div>
+
+  
   
 <div class="card friendsCard">
 
@@ -9623,6 +9680,58 @@ if (recentEl) {
   renderBadges(c);
 
 
+var xpLevelText =
+  document.getElementById(
+    "xpLevelText"
+  );
+
+var xpText =
+  document.getElementById(
+    "xpText"
+  );
+
+var xpNextText =
+  document.getElementById(
+    "xpNextText"
+  );
+
+var xpFill =
+  document.getElementById(
+    "xpFill"
+  );
+
+if(xpLevelText){
+
+  var level =
+    getPlayerLevel();
+
+  var levelXP =
+    playerXP % 100;
+
+  xpLevelText.textContent =
+    "Level " + level;
+
+  if(xpText){
+    xpText.textContent =
+      levelXP +
+      " / 100 XP";
+  }
+
+  if(xpNextText){
+    xpNextText.textContent =
+      (100 - levelXP) +
+      " XP to Level " +
+      (level + 1);
+  }
+
+  if(xpFill){
+    xpFill.style.width =
+      levelXP + "%";
+  }
+}
+
+  
+  
 var xpLevelText =
   document.getElementById(
     "xpLevelText"
