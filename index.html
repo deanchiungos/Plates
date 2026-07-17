@@ -7406,20 +7406,6 @@ removeFriendBtn.onclick = function(){
 
 function renderFriendLeaderboard(){
 
-
-  players.push({
-  name:
-    document.getElementById(
-      "plateTextPreview"
-    )?.textContent.trim() || "You",
-
-  points:
-    typeof totalScore === "function"
-      ? totalScore()
-      : 0
-});
-  
-  
   var box =
     document.getElementById(
       "friendLeaderboard"
@@ -7434,21 +7420,28 @@ function renderFriendLeaderboard(){
   var players = [];
 
   players.push({
-    name: "You",
-    points: 0
+    name:
+      document.getElementById(
+        "plateTextPreview"
+      )?.textContent.trim() || "You",
+
+    points:
+      typeof totalScore === "function"
+        ? totalScore()
+        : 0
   });
 
   friends.forEach(function(friend){
 
     players.push({
-  name:
-    document.getElementById(
-      "plateTextPreview"
-    )?.textContent || "You",
+      name: friend.name,
+      points: friend.points || 0
+    });
 
-  points: totalScore()
-});
+  });
 
+  players.sort(function(a,b){
+    return b.points - a.points;
   });
 
   players.forEach(function(player,index){
@@ -7460,14 +7453,15 @@ function renderFriendLeaderboard(){
       "leaderboardRow";
 
     row.innerHTML =
-      '<div>' +
-      '#' + (index+1) +
-      ' ' + player.name +
+      '<div>#' +
+        (index+1) +
+        ' ' +
+        player.name +
       '</div>' +
 
       '<div>' +
-      player.points +
-      ' pts' +
+        player.points +
+        ' pts' +
       '</div>';
 
     box.appendChild(row);
@@ -7476,7 +7470,11 @@ function renderFriendLeaderboard(){
 
 }
   
-function showOnboardingIfNeeded() {
+
+  
+  
+  
+  function showOnboardingIfNeeded() {
   if(!hasSeenOnboarding) {
     var overlay = document.getElementById("onboardingOverlay");
     if(overlay) overlay.classList.add("show");
