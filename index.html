@@ -9642,11 +9642,6 @@ if (shareInviteBtn) {
   };
 }
 
-
-
-document.querySelectorAll(".addFriendBtn").forEach(function (button) {
-  button.onclick = function () {
-
 var addFriendOverlay =
   document.getElementById("addFriendOverlay");
 
@@ -9670,18 +9665,39 @@ var confirmAddFriendBtn =
 var addFriendCloseBtn =
   document.getElementById("addFriendCloseBtn");
 
-if(addFriendCloseBtn){
-  addFriendCloseBtn
-    
-document.body.addEventListener("click", function (e) {
-  if (e.target.dataset && e.target.dataset.playerSwitch) {
-    switchPlayer(e.target.dataset.playerSwitch);
-  }
+document.querySelectorAll(".addFriendBtn").forEach(function(button){
+  button.onclick = function(){
 
-  if (e.target.dataset && e.target.dataset.playerDelete) {
-    deletePlayer(e.target.dataset.playerDelete);
-  }
+    if(friendCodeInput){
+      friendCodeInput.value = "";
+    }
+
+    if(friendPreview){
+      friendPreview.classList.add("hidden");
+    }
+
+    if(friendLookupError){
+      friendLookupError.classList.add("hidden");
+    }
+
+    pendingFriend = null;
+
+    if(addFriendOverlay){
+      addFriendOverlay.classList.remove("hidden");
+    }
+
+  };
 });
+
+if(addFriendCloseBtn){
+  addFriendCloseBtn.onclick = function(){
+
+    if(addFriendOverlay){
+      addFriendOverlay.classList.add("hidden");
+    }
+
+  };
+}
 
 document.querySelectorAll(".state").forEach(function (btn) {
   btn.onclick = function () {
@@ -9968,3 +9984,8 @@ showOnboardingIfNeeded();
 </script>
 </body>
 </html>
+
+
+
+
+
