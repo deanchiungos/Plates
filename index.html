@@ -9048,7 +9048,15 @@ if(badgeTotal){
     '<div class="nextBadgeIcon">' + next.icon + '</div>' +
     '<div class="grow">' +
       '<div class="nextBadgeName">' + next.name + '</div>' +
-      '<div class="nextBadgeProgress">' + progress + ' / ' + next.goal + ' states found</div>' +
+
+'<div class="nextBadgeProgress">' +
+  progress +
+  ' / ' +
+  next.goal +
+  ' ' +
+  next.unit +
+'</div>' +
+      
       '<div class="progressTrack">' +
         '<div class="progressFill" style="width:' + pct + '%;"></div>' +
       '</div>' +
@@ -9313,14 +9321,286 @@ function checkTripCompletion() {
 
 
 var badgeDefs = [
-  { id:"firstPlate", icon:"🚗", name:"First Plate", desc:"Collect your first state", goal:1, type:"states" },
-  { id:"explorer", icon:"🧭", name:"Explorer", desc:"Spot 10 states in 1 trip", goal:10, type:"states" },
-  { id:"roadWarrior", icon:"🏆", name:"Road Warrior", desc:"Find 25 states in 1 trip", goal:25, type:"states" },
-  { id:"halfway", icon:"🇺🇸", name:"Halfway There", desc:"Collect 25 states", goal:25, type:"states" },
-  { id:"coastToCoast", icon:"🌊", name:"Coast to Coast", desc:"Spot both California and Maine", goal:2, type:"custom" },
-  { id:"complete50", icon:"👑", name:"Total Annihilation", desc:"Find all 50 states", goal:50, type:"states" },
-  { id:"hidden1", icon:"❓", name:"Hidden Badge", desc:"Keep playing to discover this badge", goal:1, type:"hidden", hidden:true }
+  {
+    id:"firstPlate",
+    icon:"🚗",
+    name:"Rookie Card",
+    desc:"Collect your first state",
+    goal:1,
+    type:"states",
+    unit:"state found"
+  },
+
+  {
+    id:"explorer",
+    icon:"🧭",
+    name:"10 Spot",
+    desc:"Find 10 states in 1 trip",
+    goal:10,
+    type:"states",
+    unit:"states found"
+  },
+
+  {
+    id:"roadWarrior",
+    icon:"🏆",
+    name:"Road Warrior",
+    desc:"Find 25 states in 1 trip",
+    goal:25,
+    type:"states",
+    unit:"states found"
+  },
+
+  {
+    id:"halfway",
+    icon:"🇺🇸",
+    name:"Halfway Home",
+    desc:"Collect 25 states",
+    goal:25,
+    type:"states",
+    unit:"states found"
+  },
+
+  {
+    id:"coastToCoast",
+    icon:"🌊",
+    name:"Coast to Coast",
+    desc:"Spot both California and Maine",
+    goal:2,
+    type:"collection",
+    codes:["CA","ME"],
+    unit:"states found"
+  },
+
+  {
+    id:"ohCanada",
+    icon:"🍁",
+    name:"Oh, Canada",
+    desc:"Find your first Canadian province",
+    goal:1,
+    type:"canada",
+    unit:"province found"
+  },
+
+  {
+    id:"clearlyCanadian",
+    icon:"🇨🇦",
+    name:"Clearly Canadian",
+    desc:"Find all Canadian provinces and territories",
+    goal:13,
+    type:"canada",
+    unit:"provinces found"
+  },
+
+  {
+    id:"rushHour",
+    icon:"🚦",
+    name:"Rush Hour",
+    desc:"Find 10 plates in 60 minutes or less",
+    goal:10,
+    type:"rushHour",
+    unit:"plates found"
+  },
+
+  {
+    id:"fourCorners",
+    icon:"🗺️",
+    name:"4 Corners",
+    desc:"Find Arizona, Colorado, New Mexico and Utah",
+    goal:4,
+    type:"collection",
+    codes:["AZ","CO","NM","UT"],
+    unit:"states found"
+  },
+
+  {
+    id:"newEnglander",
+    icon:"🦞",
+    name:"New Englander",
+    desc:"Find all 6 New England states",
+    goal:6,
+    type:"collection",
+    codes:["MA","CT","RI","NH","VT","ME"],
+    unit:"states found"
+  },
+
+  {
+    id:"heartlander",
+    icon:"🌽",
+    name:"Heartlander",
+    desc:"Find Iowa, Kansas, Nebraska and Missouri",
+    goal:4,
+    type:"collection",
+    codes:["IA","KS","NE","MO"],
+    unit:"states found"
+  },
+
+  {
+    id:"mountainMover",
+    icon:"🏔️",
+    name:"Mountain Mover",
+    desc:"Find Colorado, Utah, Wyoming, Montana & Idaho",
+    goal:5,
+    type:"collection",
+    codes:["CO","UT","WY","MT","ID"],
+    unit:"states found"
+  },
+
+  {
+    id:"og",
+    icon:"🗽",
+    name:"OG",
+    desc:"Find all 13 original states",
+    goal:13,
+    type:"collection",
+    codes:[
+      "DE","PA","NJ","GA","CT","MA","MD",
+      "SC","NH","VA","NY","NC","RI"
+    ],
+    unit:"states found"
+  },
+
+  {
+    id:"battleTested",
+    icon:"⚔️",
+    name:"Battle Tested",
+    desc:"Win a battle",
+    goal:1,
+    type:"battleWins",
+    unit:"battle won"
+  },
+
+  {
+    id:"frequentFlyer",
+    icon:"✈️",
+    name:"Frequent Flyer",
+    desc:"Complete 10 trips",
+    goal:10,
+    type:"completedTrips",
+    unit:"trips completed"
+  },
+
+  {
+    id:"complete50",
+    icon:"👑",
+    name:"Total Annihilation",
+    desc:"Find all 50 states",
+    goal:50,
+    type:"states",
+    unit:"states found"
+  },
+
+  {
+    id:"hidden1",
+    icon:"❓",
+    name:"Hidden Badge",
+    desc:"Keep playing to discover this badge",
+    goal:1,
+    type:"hidden",
+    hidden:true,
+    unit:""
+  }
 ];
+
+
+function countCollectedCodes(codes) {
+  return codes.filter(function(code){
+    return !!counts[code];
+  }).length;
+}
+
+
+function getRushHourProgress() {
+  if(!Array.isArray(log) || !log.length) {
+    return 0;
+  }
+
+  var timedSightings =
+    log
+      .filter(function(item){
+        return item && item.ts;
+      })
+      .map(function(item){
+        return new Date(item.ts).getTime();
+      })
+      .filter(function(time){
+        return !isNaN(time);
+      })
+      .sort(function(a,b){
+        return a - b;
+      });
+
+  var best = 0;
+  var start = 0;
+  var oneHour = 60 * 60 * 1000;
+
+  for(
+    var end = 0;
+    end < timedSightings.length;
+    end++
+  ){
+    while(
+      timedSightings[end] -
+      timedSightings[start] >
+      oneHour
+    ){
+      start++;
+    }
+
+    best =
+      Math.max(
+        best,
+        end - start + 1
+      );
+  }
+
+  return Math.min(best, 10);
+}
+
+
+function getBadgeProgress(badge) {
+  var c = collectedCount();
+
+  if(badge.type === "states") {
+    return Math.min(c, badge.goal);
+  }
+
+  if(badge.type === "collection") {
+    return countCollectedCodes(
+      badge.codes || []
+    );
+  }
+
+  if(badge.type === "canada") {
+    return Math.min(
+      canadaCollectedCount(),
+      badge.goal
+    );
+  }
+
+  if(badge.type === "rushHour") {
+    return getRushHourProgress();
+  }
+
+  if(badge.type === "completedTrips") {
+    return Math.min(
+      savedTrips.length,
+      badge.goal
+    );
+  }
+
+  if(badge.type === "battleWins") {
+    return Math.min(
+      Number(
+        localStorage.platesBattleWins || 0
+      ),
+      badge.goal
+    );
+  }
+
+  return 0;
+}
+
 
 function getBadgeProgress(badge) {
   var c = collectedCount();
