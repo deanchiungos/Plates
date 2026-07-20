@@ -6878,6 +6878,45 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 </div>
 
+
+<div id="resumeGameOverlay"
+     class="newGameOverlay hidden">
+
+  <div class="newGameSheet">
+
+    <div class="newGameHandle"></div>
+
+    <div class="newGameTitle">
+      Resume Game?
+    </div>
+
+    <div class="plateHint"
+         style="margin-bottom:20px">
+
+      You have an unfinished roadtrip saved
+
+    </div>
+
+    <button
+      id="resumeGameBtn"
+      class="newGameBtn">
+
+      ▶ Resume Game
+
+    </button>
+
+    <button
+      id="startFreshBtn"
+      class="newGameBtn">
+
+      ✨ Start New Game
+
+    </button>
+
+  </div>
+
+</div>
+  
 <script>
 function safeParse(value, fallback) {
   try {
