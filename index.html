@@ -8152,6 +8152,8 @@ function showCelebration(title, text) {
   document.getElementById("celebrationOverlay").classList.add("show");
 }
 
+
+  
 function badgeCount(c) {
   var total = 0;
   if(c >= 1) total++;
@@ -10522,7 +10524,31 @@ function openGameOptions(){
     gameOptionsOverlay.classList.remove("hidden");
   }
 }
+function checkForResumeGame(){
 
+  var states =
+    JSON.parse(
+      localStorage.getItem(
+        "platesTripStates"
+      ) || "[]"
+    );
+
+  if(states.length === 0){
+    return;
+  }
+
+  var overlay =
+    document.getElementById(
+      "resumeGameOverlay"
+    );
+
+  if(overlay){
+    overlay.classList.remove(
+      "hidden"
+    );
+  }
+}
+  
 function closeGameOptions(){
   if(gameOptionsOverlay){
     gameOptionsOverlay.classList.add("hidden");
@@ -10886,6 +10912,27 @@ document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
   };
 });
 
+document
+.getElementById("resumeGameBtn")
+.onclick = function(){
+
+  document
+  .getElementById("resumeGameOverlay")
+  .classList.add("hidden");
+
+};
+
+  document
+.getElementById("returningNewGameBtn")
+.onclick = function(){
+
+  document
+  .getElementById("resumeGameOverlay")
+  .classList.add("hidden");
+
+  newTrip();
+};
+  
 var saveProfileBtn = document.getElementById("saveProfileBtn");
 if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
   document.querySelectorAll(".avatarBtn").forEach(function(btn){btn.onclick = function() {
@@ -11040,27 +11087,65 @@ if(saveProfileBtn) saveProfileBtn.onclick = function() {
 
   
 var profileSavedMsg = document.getElementById("profileSavedMsg");
+
 profileSavedMsg.classList.remove("hidden");
 
 setTimeout(function() {
   profileSavedMsg.classList.add("hidden");
 }, 1800);
+
 };
- var shareTripBtn = document.getElementById("shareTripBtn");
-if(shareTripBtn) shareTripBtn.onclick = shareSummary;
+
+var shareTripBtn = document.getElementById("shareTripBtn");
+
+if(shareTripBtn) {
+  shareTripBtn.onclick = shareSummary;
+}
 
 var copyShareBtn = document.getElementById("copyShareBtn");
-if(copyShareBtn) copyShareBtn.onclick = copyShareText;
 
+if(copyShareBtn) {
+  copyShareBtn.onclick = copyShareText;
+}
 
 var celebrationClose = document.getElementById("celebrationClose");
+
 if(celebrationClose) {
-  celebrationClose.addEventListener("click", function(e){
+  celebrationClose.addEventListener("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
-    document.getElementById("celebrationOverlay").classList.remove("show");
+
+    document
+      .getElementById("celebrationOverlay")
+      .classList.remove("show");
   });
 }
+
+var resumeGameBtn = document.getElementById("resumeGameBtn");
+
+if(resumeGameBtn) {
+  resumeGameBtn.onclick = function() {
+    document
+      .getElementById("resumeGameOverlay")
+      .classList.add("hidden");
+  };
+}
+
+var returningNewGameBtn =
+  document.getElementById("returningNewGameBtn");
+
+if(returningNewGameBtn) {
+  returningNewGameBtn.onclick = function() {
+    document
+      .getElementById("resumeGameOverlay")
+      .classList.add("hidden");
+
+    document
+      .getElementById("newGameOverlay")
+      .classList.remove("hidden");
+  };
+}
+
 }
 
 loadProfile();
@@ -11068,15 +11153,12 @@ renderVanityPlate();
 attachHandlers();
 generateDailyChallenge();
 render();
+checkForResumeGame();
 renderFriends();
-  renderFriendLeaderboard();
+renderFriendLeaderboard();
 showOnboardingIfNeeded();
-  
+
 </script>
 </body>
 </html>
-
-
-
-
 
