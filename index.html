@@ -8570,7 +8570,18 @@ function closeNewGameSheet() {
 
 function createGameFromSheet() {
   var input = document.getElementById("newGameNameInput");
-  var name = input && input.value.trim() ? input.value.trim() : "New Game";
+
+  var name =
+  input
+    ? input.value.trim()
+    : "";
+
+if(!name){
+  toast(
+    "Please enter a trip name"
+  );
+  return;
+}
 
   tripName = name;
   scoringMode = mode || scoringMode || "classic";
