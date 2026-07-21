@@ -8263,6 +8263,13 @@ function tapState(btn) {
     }
   } else {
     counts[code] = (counts[code] || 0) + 1;
+    collections.plates++;
+
+if(
+  !collections.states.includes(code)
+){
+  collections.states.push(code);
+}
   }
 
   if(counts[code] && (!wasCollected || mode === "unlimited")) {
@@ -10441,6 +10448,8 @@ if(xpText){
   save();
 }
 
+
+  
 function openBadgeDetail(badge) {
   var progress = getBadgeProgress(badge);
   var pct = Math.round((progress / badge.goal) * 100);
