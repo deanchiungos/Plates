@@ -8438,10 +8438,14 @@ function createGameFromSheet() {
   counts = {};
   log = [];
 
-  save();
-  render();
-  closeNewGameSheet();
-  toast("New game started");
+  addActivity(
+  "🛣️ Started " + tripName
+);
+
+save();
+render();
+closeNewGameSheet();
+toast("New game started");
 }
 
 
