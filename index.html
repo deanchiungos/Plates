@@ -7610,8 +7610,9 @@ function stateNameFromCode(code) {
     );
 
   return option
-    ? option.textContent.toUpperCase()
-    : (code || "NY");
+  ? option.textContent
+  : (code || "NY");
+  
 }
 
 
