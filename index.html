@@ -5557,7 +5557,8 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     <button class="primary" id="onboardingDone" type="button">Got It</button>
   </div>
 </div>
-<div class="newGameOverlay hidden" id="newGameOverlay">
+
+  <div class="newGameOverlay hidden" id="newGameOverlay">
   <div class="newGameSheet">
 
     <div class="newGameHandle"></div>
@@ -5604,7 +5605,48 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 </div>
 
+<div class="newGameOverlay hidden"
+     id="tripNameOverlay">
 
+  <div class="newGameSheet">
+
+    <div class="newGameHandle"></div>
+
+    <button class="newGameCloseBtn"
+            id="tripNameCloseBtn"
+            type="button">×</button>
+
+    <h2 class="newGameTitle">
+      ✏️ Rename Trip
+    </h2>
+
+    <div class="newGameSection">
+
+      <div class="newGameLabel">
+        Trip Name
+      </div>
+
+      <input
+        id="tripNameInput"
+        class="tripNameInput"
+        type="text"
+        placeholder="Summer Roadtrip">
+
+    </div>
+
+    <button
+      class="startTripBtn"
+      id="saveTripNameBtn"
+      type="button">
+
+      ✅ Save Name
+
+    </button>
+
+  </div>
+
+</div>
+    
     
     <div class="newGameSectionLabel">Scoring</div>
 
@@ -6447,36 +6489,48 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     <span id="tripScoringTrips">Classic Scoring</span>
   </div>
 
-  
+
   <div class="activeGameFound">
 
     <span id="tripPrimaryNumber">0</span>
-  <span class="outOf"><span class="found">/</span>50</span>    
-  <span
-  class="foundText"
-  id="tripFoundText">
-  states found
-</span>
+    <span class="outOf">
+      <span class="found">/</span>50
+    </span>
+
+    <span
+      class="foundText"
+      id="tripFoundText">
+      states found
+    </span>
 
   </div>
 
-  <div class="bonusCount" id="tripBonusCount"></div>
+  <div class="bonusCount"
+       id="tripBonusCount"></div>
 
 </div>
 
-<div class="bar" id="tripProgressBar">
-  <div class="fill" id="tripProgressFill"></div>
+<div class="bar"
+     id="tripProgressBar">
+  <div class="fill"
+       id="tripProgressFill"></div>
 </div>
-
 
 <div class="tripOptionsBar">
-<button class="newGameBtn gameOptionsTrigger" id="tripOptionsBtn" type="button">
-     ⚙️ Trip Options
+
+  <button
+    class="newGameBtn gameOptionsTrigger"
+    id="tripOptionsBtn"
+    type="button">
+    ⚙️ Trip Options
   </button>
+
 </div>
 
-
- <button class="newGameBtn" id="newTripBtn" type="button">
+<button
+  class="newGameBtn"
+  id="newTripBtn"
+  type="button">
   🚗 Start New Trip
 </button>
 
@@ -6484,12 +6538,26 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
     <div class="card">
 
-      <div class="panelTitle"><span>🕘 Trip History</span><span id="historyCount">0 saved</span></div>
-      <div class="tripHistoryList" id="tripHistoryList">No saved trips yet</div>
+      <div class="panelTitle">
+        <span>🕘 Trip History</span>
+        <span id="historyCount">
+          0 saved
+        </span>
+      </div>
+
+      <div
+        class="tripHistoryList"
+        id="tripHistoryList">
+        No saved trips yet
+      </div>
+
     </div>
+
   </section>
 
-<div class="newGameOverlay hidden" id="nextTripNameOverlay">
+
+<div class="newGameOverlay hidden"
+     id="nextTripNameOverlay">
 
   <div class="newGameSheet nextTripNameSheet">
 
@@ -6536,13 +6604,51 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
       🚗 Start New Trip
     </button>
 
+  </div>
 
-    
+</div>
+
+
+<div class="newGameOverlay hidden"
+     id="tripNameOverlay">
+
+  <div class="newGameSheet">
+
+    <div class="newGameHandle"></div>
+
+    <button
+      class="newGameCloseBtn"
+      id="tripNameCloseBtn"
+      type="button">
+      ×
+    </button>
+
+    <div class="newGameTitle">
+      ✏️ Rename Trip
+    </div>
+
+    <div class="newGameSectionLabel">
+      Trip Name
+    </div>
+
+    <input
+      class="newGameInput"
+      id="tripNameInput"
+      type="text"
+      placeholder="Summer Roadtrip"
+      autocomplete="off">
+
+    <button
+      class="primary"
+      id="saveTripNameBtn"
+      type="button">
+      ✅ Save Name
+    </button>
+
   </div>
 
 </div>
   
-
 <div class="newGameOverlay hidden" id="gameOptionsOverlay">
   <div class="newGameSheet">
 
