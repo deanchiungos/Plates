@@ -9526,8 +9526,8 @@ var badgeDefs = [
     icon:"🇺🇸",
     name:"DC United",
     desc:"Find all 50 states + Washington DC",
-    goal:50,
-    type:"states",
+    goal:51,
+    type:"statesPlusDC", 
     unit:"states found"
   },
 
@@ -9605,6 +9605,15 @@ function getBadgeProgress(badge) {
   if(badge.type === "states") {
     return Math.min(c, badge.goal);
   }
+
+  if(badge.type === "statesPlusDC") {
+  var hasDC = counts.DC > 0 ? 1 : 0;
+
+  return Math.min(
+    collectedCount() + hasDC,
+    badge.goal
+  );
+}
 
   if(badge.type === "collection") {
     return countCollectedCodes(
@@ -9767,7 +9776,7 @@ if (featured) {
 
   var listCountEl = document.getElementById("listCount");
 if (listCountEl) {
-  listCountEl.innerHTML = '<span class="found">' + c + '/</span>50';
+  listCountEl.innerHTML = '<span class="found">' + c + '/</span>50 states found';
 }
 
   var canadaCountEl =
