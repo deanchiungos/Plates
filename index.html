@@ -10146,13 +10146,16 @@ if(mode === "unlimited") {
 }
 
 updateBestForCurrentMode();
+var bestTripEl = document.getElementById("bestTrip");
 
-  document.getElementById("bestTrip").textContent = bestForCurrentMode();
+if(bestTripEl){
+  bestTripEl.textContent = bestForCurrentMode();
+}
   document.getElementById("tripCount").textContent = tripCount;
 document.getElementById("mapCount").innerHTML =
   '<span class="found">' + c + '/</span>50 Found';
 
-var mapModeSummary =
+var mapModeSummary 
   document.getElementById("mapModeSummary");
 
 if(mapModeSummary){
