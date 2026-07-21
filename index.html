@@ -8727,15 +8727,7 @@ function shareSavedTrip(index) {
     return;
   }
 
-  counts = {};
-  log = [];
 
-  dailyChallenge = null;
-  delete localStorage.dailyChallenge;
-  generateDailyChallenge();
-
-  render();
-}
   
   if(hasProgress) {
     localStorage.setItem(
@@ -8756,6 +8748,10 @@ function shareSavedTrip(index) {
       "New Roadtrip"
     ) || "New Roadtrip";
 
+
+    dailyChallenge = null;
+delete localStorage.dailyChallenge;
+    
   beginFreshTrip(nextName);
 
   save();
