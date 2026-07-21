@@ -5569,27 +5569,43 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
     <div class="newGameTitle">🚗 New Game</div>
 
-    <div class="newGameSectionLabel">Trip Modes</div>
+
+<div id="newGameTypeSection">
+
+  <div class="newGameSectionLabel">
+    Trip Modes
+  </div>
+
+  <button
+    class="newGameOption active"
+    data-game-type="solo"
+    type="button">
+    <strong>🚗 Solo</strong>
+    <span>Play by yourself</span>
+  </button>
+
+  <button
+    class="newGameOption"
+    data-game-type="battle"
+    type="button">
+    <strong>⚔️ Battle</strong>
+    <span>Compete against friends & family</span>
+  </button>
+
+  <button
+    class="newGameOption"
+    data-game-type="roadtrip"
+    type="button">
+    <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
+    <span>Team up with friends & family</span>
+  </button>
+
+  <div class="newGameDivider"></div>
+
+</div>
 
 
-
-    <button class="newGameOption active" data-game-type="solo" type="button">
-      <strong>🚗 Solo</strong>
-      <span>Play by yourself</span>
-    </button>
-
-    <button class="newGameOption" data-game-type="battle" type="button">
-      <strong>⚔️ Battle</strong>
-      <span>Compete against friends & family</span>
-    </button>
-
-    <button class="newGameOption" data-game-type="roadtrip" type="button">
-      <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
-      <span>Team up with friends & family</span>
-    </button>
-
-    <div class="newGameDivider"></div>
-
+    
     <div class="newGameSectionLabel">Scoring</div>
 
     <button class="newGameOption active" data-mode-choice="classic" type="button">
