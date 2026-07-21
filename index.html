@@ -5492,6 +5492,10 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   border:2px solid rgba(10,55,99,.14);
 }
 
+
+  .collectionsCard{
+  cursor:pointer;
+}
   
 </style>
 </head>
@@ -6125,7 +6129,8 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 </div>
 
 
-<div class="card collectionsCard">
+<div class="card collectionsCard"
+     onclick="openCollectionSheet()">
   <div class="panelTitle">
     🏆 My Collection
   </div>
@@ -9475,6 +9480,12 @@ function playerCollectionStats(playerId){
     plates:plates
   };
 }
+
+  function openCollectionSheet(){
+  toast("Collection details coming soon");
+}
+
+  
   
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
