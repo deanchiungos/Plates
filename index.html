@@ -8563,6 +8563,7 @@ function syncNewGameSheet() {
   });
 }
 
+
 function openNewGameSheet(){
 
   var input =
@@ -8570,69 +8571,100 @@ function openNewGameSheet(){
       "newGameNameInput"
     );
 
-  if(input){
-    input.value = "";
-    input.placeholder =
-      "New Roadtrip";
+  var overlay =
+    document.getElementById(
+      "newGameOverlay"
+    );
+
+  var nameSection =
+    document.getElementById(
+      "newGameNameSection"
+    );
+
+  var typeSection =
+    document.getElementById(
+      "newGameTypeSection"
+    );
+
+  var createBtn =
+    document.getElementById(
+      "createGameBtn"
+    );
+
+  var title =
+    overlay
+      ? overlay.querySelector(
+          ".newGameTitle"
+        )
+      : null;
+
+  if(
+    overlay &&
+    overlay.dataset.mode === "change"
+  ){
+
+    if(createBtn){
+      createBtn.textContent =
+        "✅ Save Mode";
+    }
+
+    if(nameSection){
+      nameSection.classList.add(
+        "hidden"
+      );
+    }
+
+    if(typeSection){
+      typeSection.classList.add(
+        "hidden"
+      );
+    }
+
+    if(title){
+      title.textContent =
+        "⚙️ Change Mode";
+    }
+
+  } else {
+
+    if(input){
+      input.value = "";
+      input.placeholder =
+        "Summer Road Trip";
+    }
+
+    if(createBtn){
+      createBtn.textContent =
+        "🚗 Start New Trip";
+    }
+
+    if(nameSection){
+      nameSection.classList.remove(
+        "hidden"
+      );
+    }
+
+    if(typeSection){
+      typeSection.classList.remove(
+        "hidden"
+      );
+    }
+
+    if(title){
+      title.textContent =
+        "🚗 New Game";
+    }
   }
 
   syncNewGameSheet();
 
-var overlay =
-  document.getElementById(
-    "newGameOverlay"
-  );
-
-var nameSection =
-  document.getElementById(
-    "newGameNameSection"
-  );
-
-  var createBtn =
-  document.getElementById(
-    "createGameBtn"
-  );
-
-if(
-  overlay &&
-  overlay.dataset.mode === "change"
-){
-
-  if(createBtn){
-    createBtn.textContent =
-      "✅ Save Mode";
-  }
-
-  if(nameSection){
-    nameSection.classList.add(
-      "hidden"
-    );
-  }
-
-} else {
-
-  if(createBtn){
-    createBtn.textContent =
-      "🚗 Start New Trip";
-  }
-
-  if(nameSection){
-    nameSection.classList.remove(
+  if(overlay){
+    overlay.classList.remove(
       "hidden"
     );
   }
 }
-
   
-
-if(overlay){
-  overlay.classList.remove(
-    "hidden"
-  );
-}
-
-}
-
 function closeNewGameSheet() {
   var overlay = document.getElementById("newGameOverlay");
   if(overlay) overlay.classList.add("hidden");
