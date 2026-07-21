@@ -6101,6 +6101,16 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 </div>
 
 
+<div class="glassCard">
+  <div class="sectionTitle">
+    📣 Latest Activity
+  </div>
+
+  
+
+  <div id="activityFeed"></div>
+</div>
+  
 
 <div class="card gameModesMini howToPlayCard">
  <div class="panelTitle">
@@ -10234,7 +10244,7 @@ if (recentEl) {
 
   renderDailyChallenge();
 renderBadges(c);
-
+renderActivityFeed();
 
   var xpTitle =
   document.getElementById(
