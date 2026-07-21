@@ -9526,6 +9526,9 @@ return '<div class="row battleRow">' +
     }
 
     list.innerHTML = players.map(function(p){
+      var playerCollection =
+  playerCollectionStats(p.id);
+      
       var initial = (p.name || "?").trim().charAt(0).toUpperCase();
 
 return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '">' +
