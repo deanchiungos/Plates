@@ -7064,7 +7064,7 @@ if(accountAvatarPicker){
   if(overlay) overlay.classList.remove("hidden");
 }
 
-  function generateDailyChallenge(){
+ function generateDailyChallenge(){
 
   var today =
     new Date().toDateString();
@@ -7076,42 +7076,48 @@ if(accountAvatarPicker){
     return;
   }
 
-var allStates =
-  Array.from(
-    document.querySelectorAll(
-      '.state:not([data-bonus="true"])'
-    )
-  );
+  var allStates =
+    Array.from(
+      document.querySelectorAll(
+        '.state:not([data-bonus="true"])'
+      )
+    );
 
-var missing =
-  allStates.filter(function(btn){
-    return !counts[btn.dataset.code];
-  });
+  var missing =
+    allStates.filter(function(btn){
+      return !counts[btn.dataset.code];
+    });
 
   var target =
     missing.length
       ? missing[
           Math.floor(
-            Math.random()*missing.length
+            Math.random() * missing.length
           )
         ]
       : states[
           Math.floor(
-            Math.random()*states.length
+            Math.random() * states.length
           )
         ];
 
-dailyChallenge = {
-  date:today,
-  type:"findState",
-  state:target.dataset.code,
-  complete:false
-};
+  var stateCode =
+    target.dataset
+      ? target.dataset.code
+      : target.code;
+
+  dailyChallenge = {
+    date: today,
+    type: "findState",
+    state: stateCode,
+    complete: false
+  };
 
   localStorage.dailyChallenge =
     JSON.stringify(dailyChallenge);
 }
 
+  
 function closeAccountSheet(){
   var overlay = document.getElementById("accountOverlay");
   if(overlay) overlay.classList.add("hidden");
@@ -8707,6 +8713,7 @@ function shareSavedTrip(index) {
 }
 
   function newTrip() {
+
   var hasProgress =
     collectedCount() > 0 ||
     log.length > 0;
@@ -8720,6 +8727,16 @@ function shareSavedTrip(index) {
     return;
   }
 
+  counts = {};
+  log = [];
+
+  dailyChallenge = null;
+  delete localStorage.dailyChallenge;
+  generateDailyChallenge();
+
+  render();
+}
+  
   if(hasProgress) {
     localStorage.setItem(
       "platesPausedTrip",
