@@ -9698,6 +9698,29 @@ function formatTripDate(dateStr){
     );
 
 }
+
+function addActivity(text) {
+  var activityFeed =
+    safeParse(
+      localStorage.getItem(
+        "platesActivityFeed"
+      ),
+      "[]"
+    );
+
+  activityFeed.unshift({
+    text: text,
+    ts: new Date().toISOString()
+  });
+
+  activityFeed =
+    activityFeed.slice(0, 25);
+
+  localStorage.setItem(
+    "platesActivityFeed",
+    JSON.stringify(activityFeed)
+  );
+}
   
 
 function render() {
