@@ -9432,6 +9432,49 @@ function playerStats() {
 }
 
 
+function playerCollectionStats(playerId){
+
+  var states = {};
+  var provinces = {};
+  var plates = 0;
+
+  log.forEach(function(item){
+
+    if(
+      !item ||
+      item.playerId !== playerId ||
+      !item.code
+    ){
+      return;
+    }
+
+    plates++;
+
+    var btn =
+      document.querySelector(
+        '.state[data-code="' +
+        item.code +
+        '"]'
+      );
+
+    if(
+      btn &&
+      btn.dataset.canada === "true"
+    ){
+      provinces[item.code] = true;
+    } else {
+      states[item.code] = true;
+    }
+
+  });
+
+  return {
+    states:Object.keys(states).length,
+    provinces:Object.keys(provinces).length,
+    plates:plates
+  };
+}
+  
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
 
