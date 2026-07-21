@@ -8548,16 +8548,40 @@ function openNewGameSheet(){
 
   syncNewGameSheet();
 
-  var overlay =
-    document.getElementById(
-      "newGameOverlay"
-    );
+var overlay =
+  document.getElementById(
+    "newGameOverlay"
+  );
 
-  if(overlay){
-    overlay.classList.remove(
-      "hidden"
-    );
+var createBtn =
+  document.getElementById(
+    "createGameBtn"
+  );
+
+if(
+  overlay &&
+  overlay.dataset.mode === "change"
+){
+
+  if(createBtn){
+    createBtn.textContent =
+      "✅ Save Mode";
   }
+
+} else {
+
+  if(createBtn){
+    createBtn.textContent =
+      "🚗 Start New Trip";
+  }
+}
+
+if(overlay){
+  overlay.classList.remove(
+    "hidden"
+  );
+}
+
 }
 
 function closeNewGameSheet() {
