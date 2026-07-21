@@ -9526,6 +9526,8 @@ return '<div class="row battleRow">' +
     }
 
     list.innerHTML = players.map(function(p){
+      
+      
       var playerCollection =
   playerCollectionStats(p.id);
       
@@ -9549,25 +9551,25 @@ p.name +
   : 'Friend') +
 '</div>' +
 
+
 '<div class="familyStats">' +
+
 '🇺🇸 ' +
-((p.collections && p.collections.states)
-  ? p.collections.states.length
-  : 0) +
-' states • 🇨🇦 ' +
-((p.collections && p.collections.provinces)
-  ? p.collections.provinces.length
-  : 0) +
-' provinces • 👀 ' +
-((p.collections && p.collections.plates)
-  ? p.collections.plates
-  : 0) +
+playerCollection.states +
+' states • ' +
+
+'🇨🇦 ' +
+playerCollection.provinces +
+' provinces • ' +
+
+'👀 ' +
+playerCollection.plates +
 ' plates' +
-'</div>' +
 
+'</div>' +  
+  
 '</div>' +
- '<div class="familyActions">' +
-
+  
 (p.id === currentPlayerId
 ? ''
 : '<button class="familySmallBtn familyDeleteBtn" data-player-delete="' + p.id + '" type="button">Delete</button>') +
