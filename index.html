@@ -8288,16 +8288,33 @@ function tapState(btn) {
     }
   } else {
     counts[code] = (counts[code] || 0) + 1;
-    collections.plates++;
 
-if(
-  !collections.states.includes(code)
-){
-  collections.states.push(code);
-}
+    
   }
 
   if(counts[code] && (!wasCollected || mode === "unlimited")) {
+collections.plates++;
+
+if(
+  btn.dataset.canada === "true"
+){
+
+  if(
+    !collections.provinces.includes(code)
+  ){
+    collections.provinces.push(code);
+  }
+
+} else {
+
+  if(
+    !collections.states.includes(code)
+  ){
+    collections.states.push(code);
+  }
+
+}
+    
     log.unshift({
       code:code,
       name:name,
