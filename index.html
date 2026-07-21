@@ -8532,9 +8532,6 @@ function syncNewGameSheet() {
     btn.classList.toggle("active", btn.dataset.modeChoice === mode);
   });
 
-  var input = document.getElementById("newGameNameInput");
-  if(input && !input.value.trim()) input.value = tripName || "New Game";
-}
 
 function openNewGameSheet(){
 
@@ -11537,10 +11534,25 @@ var changeModeBtn = document.getElementById("changeModeBtn");
 
 if(changeModeBtn) {
   changeModeBtn.onclick = function() {
-    var overlay = document.getElementById("gameOptionsOverlay");
+    var optionsOverlay =
+      document.getElementById(
+        "gameOptionsOverlay"
+      );
 
-    if(overlay) {
-      overlay.classList.add("hidden");
+    if(optionsOverlay) {
+      optionsOverlay.classList.add(
+        "hidden"
+      );
+    }
+
+    var newGameOverlay =
+      document.getElementById(
+        "newGameOverlay"
+      );
+
+    if(newGameOverlay) {
+      newGameOverlay.dataset.mode =
+        "change";
     }
 
     openNewGameSheet();
