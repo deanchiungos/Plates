@@ -10146,17 +10146,37 @@ if(mode === "unlimited") {
 }
 
 updateBestForCurrentMode();
-var bestTripEl = document.getElementById("bestTrip");
+
+var bestTripEl =
+  document.getElementById("bestTrip");
 
 if(bestTripEl){
-  bestTripEl.textContent = bestForCurrentMode();
+  bestTripEl.textContent =
+    bestForCurrentMode();
 }
-  document.getElementById("tripCount").textContent = tripCount;
-document.getElementById("mapCount").innerHTML =
-  '<span class="found">' + c + '/</span>50 Found';
 
-var mapModeSummary 
-  document.getElementById("mapModeSummary");
+var tripCountEl =
+  document.getElementById("tripCount");
+
+if(tripCountEl){
+  tripCountEl.textContent =
+    tripCount;
+}
+
+var mapCountEl =
+  document.getElementById("mapCount");
+
+if(mapCountEl){
+  mapCountEl.innerHTML =
+    '<span class="found">' +
+    c +
+    '/</span>50 Found';
+}
+
+var mapModeSummary =
+  document.getElementById(
+    "mapModeSummary"
+  );
 
 if(mapModeSummary){
   mapModeSummary.textContent =
@@ -10166,12 +10186,18 @@ if(mapModeSummary){
     scoringModeLabel();
 }
 
+var badgeMini =
+  document.getElementById("badgeMini");
 
-document.getElementById("badgeMini").textContent =
-  unlockedBadges;
+if(badgeMini){
+  badgeMini.textContent =
+    unlockedBadges;
+}
 
 var profileBadgeMini =
-  document.getElementById("profileBadgeMini");
+  document.getElementById(
+    "profileBadgeMini"
+  );
 
 if(profileBadgeMini){
   profileBadgeMini.textContent =
@@ -10179,7 +10205,6 @@ if(profileBadgeMini){
 }
 
 renderFamily(c, unlockedBadges);
-
 
 /* HOME HERO */
 
