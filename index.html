@@ -5563,6 +5563,43 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   font-size:18px;
   font-weight:900;
 }
+
+#tripNameOverlay .newGameSheet{
+  padding-bottom:22px;
+}
+
+#tripNameInput{
+  margin-bottom:16px;
+}
+
+.renameTripSaveBtn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:58px;
+  margin-top:4px;
+  padding:14px 20px;
+  border:0;
+  border-radius:999px;
+  background:
+    linear-gradient(
+      180deg,
+      #35b964,
+      #239d4f
+    );
+  color:#fff;
+  font-size:19px;
+  font-weight:950;
+  line-height:1;
+  box-shadow:
+    0 6px 16px
+    rgba(38,169,87,.24);
+}
+
+.renameTripSaveBtn:active{
+  transform:scale(.985);
+}
   
   
 </style>
@@ -11366,7 +11403,9 @@ if(tripNameCloseBtn){
 }
 
 
-var saveTripNameBtn =
+
+  
+  var saveTripNameBtn =
   document.getElementById(
     "saveTripNameBtn"
   );
@@ -11399,6 +11438,31 @@ if(saveTripNameBtn){
       );
     };
 }
+
+  var tripNameInput =
+  document.getElementById(
+    "tripNameInput"
+  );
+
+if(tripNameInput){
+
+  tripNameInput.onkeydown =
+    function(e){
+
+      if(e.key === "Enter"){
+
+        e.preventDefault();
+
+        if(saveTripNameBtn){
+          saveTripNameBtn.click();
+        }
+      }
+    };
+}
+
+  
+
+  
 
 var nextTripNameInput =
   document.getElementById(
