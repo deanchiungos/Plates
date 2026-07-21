@@ -10525,32 +10525,25 @@ function openGameOptions(){
   }
 }
 
-
 function checkForResumeTrip() {
 
-  var savedCounts = JSON.parse(
-    localStorage.getItem("platesCounts") || "{}"
-  );
-
-  var savedLog = JSON.parse(
-    localStorage.getItem("platesLog") || "[]"
-  );
-
   var hasProgress =
-    Object.keys(savedCounts).some(function(state) {
-      return Number(savedCounts[state]) > 0;
-    }) ||
-    savedLog.length > 0;
+    collectedCount() > 0 ||
+    log.length > 0;
 
   if(!hasProgress) {
     return;
   }
 
   var overlay =
-    document.getElementById("resumeGameOverlay");
+    document.getElementById(
+      "resumeGameOverlay"
+    );
 
   if(overlay) {
-    overlay.classList.remove("hidden");
+    overlay.classList.remove(
+      "hidden"
+    );
   }
 }
   
@@ -11135,16 +11128,20 @@ if(startFreshBtn) {
 
 }
 
+
 loadProfile();
 renderVanityPlate();
 attachHandlers();
 generateDailyChallenge();
 render();
-checkForResumeTrip();
 renderFriends();
 renderFriendLeaderboard();
 showOnboardingIfNeeded();
+checkForResumeTrip();
 
+
+
+  
 </script>
 </body>
 </html>
