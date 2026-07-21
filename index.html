@@ -6452,7 +6452,11 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
     <span id="tripPrimaryNumber">0</span>
   <span class="outOf"><span class="found">/</span>50</span>    
-    <span class="foundText">states found</span>
+  <span
+  class="foundText"
+  id="tripFoundText">
+  states found
+</span>
 
   </div>
 
@@ -10752,6 +10756,9 @@ var tripPrimaryNumber =
 var tripBonusCount =
   document.getElementById("tripBonusCount");
 
+var tripFoundText =
+  document.getElementById("tripFoundText");
+  
 var tripProgressBar =
   document.getElementById("tripProgressBar");
 
@@ -10804,7 +10811,6 @@ if(mode === "classic"){
   }
 }
 
-
 if(mode === "weighted"){
 
   if(tripPrimaryNumber){
@@ -10813,7 +10819,13 @@ if(mode === "weighted"){
   }
 
   if(tripBonusCount){
-    tripBonusCount.textContent = "";
+    tripBonusCount.textContent =
+      c + "/50 states found";
+  }
+
+  if(tripFoundText){
+    tripFoundText.textContent =
+      "points";
   }
 
   if(tripProgressBar){
@@ -10834,6 +10846,11 @@ if(mode === "unlimited"){
     tripBonusCount.textContent = "";
   }
 
+  if(tripFoundText){
+    tripFoundText.textContent =
+      "plates found";
+  }
+
   if(tripProgressBar){
     tripProgressBar.style.display =
       "none";
@@ -10841,6 +10858,14 @@ if(mode === "unlimited"){
 }
 
 
+if(mode !== "weighted" &&
+   mode !== "unlimited"){
+
+  if(tripFoundText){
+    tripFoundText.textContent =
+      "states found";
+  }
+}
 
   document.getElementById("historyCount").textContent = savedTrips.length + " saved";
 
