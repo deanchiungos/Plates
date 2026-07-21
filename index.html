@@ -9505,6 +9505,68 @@ function playerCollectionStats(playerId){
   };
 }
 
+function renderCollectionDetails(){
+
+  var box =
+    document.getElementById(
+      "collectionDetails"
+    );
+
+  if(!box) return;
+
+  var completion =
+    Math.round(
+      (
+        collections.states.length / 50
+      ) * 100
+    );
+
+  box.innerHTML =
+
+    '<div class="quickStats">' +
+
+      '<div class="stat">' +
+        '<strong>' +
+        collections.states.length +
+        '/50</strong>' +
+        '<span>🇺🇸 States</span>' +
+      '</div>' +
+
+      '<div class="stat">' +
+        '<strong>' +
+        collections.provinces.length +
+        '/13</strong>' +
+        '<span>🇨🇦 Provinces</span>' +
+      '</div>' +
+
+      '<div class="stat">' +
+        '<strong>' +
+        (collections.plates || 0) +
+        '</strong>' +
+        '<span>👀 Plates</span>' +
+      '</div>' +
+
+    '</div>' +
+
+    '<div class="card" style="margin-top:16px;">' +
+
+      '<div class="panelTitle">' +
+        '🏆 Completion' +
+      '</div>' +
+
+      '<div style="' +
+        'font-size:42px;' +
+        'font-weight:950;' +
+        'text-align:center;' +
+        'color:var(--navy);">' +
+
+        completion + '%' +
+
+      '</div>' +
+
+    '</div>';
+}
+  
 
 function openCollectionSheet(){
 
