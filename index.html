@@ -5577,118 +5577,116 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
       <div>THE LICENSE PLATE GAME</div>
     </div>
 
-    <h1>Welcome to PLATES</h1>
-    <p class="onboardingIntro">Spot license plates from different states while you're in the car</p>
+<h1>Welcome to PLATES</h1>
 
-    <div class="onboardingRule">
-      <strong>Classic</strong>
-      <span>Collect all 50 states - each state counts once</span>
-    </div>
+<p class="onboardingIntro">
+  Spot license plates from different states while you're in the car
+</p>
 
-    <div class="onboardingRule">
-<strong>Battle</strong>
-<span>Compete against friends & see who spots the most plates</span>
-    </div>
+<div class="onboardingRule">
+  <strong>Classic</strong>
+  <span>
+    Collect all 50 states - each state counts once
+  </span>
+</div>
 
-    <div class="onboardingRule">
+<div class="onboardingRule">
+  <strong>Battle</strong>
+  <span>
+    Compete against friends & see who spots the most plates
+  </span>
+</div>
+
+<div class="onboardingRule">
   <strong>Roadtrip</strong>
-<span>Team up & compete nationwide</span>
-    </div>
-
-    <p class="onboardingFooter">Unlock badges, save games & earn bragging rights</p>
-
-    <button class="primary" id="onboardingDone" type="button">Got It</button>
-  </div>
+  <span>
+    Team up & compete nationwide
+  </span>
 </div>
 
-  <div class="newGameOverlay hidden" id="newGameOverlay">
-  <div class="newGameSheet">
+<p class="onboardingFooter">
+  Unlock badges, save games & earn bragging rights
+</p>
 
-    <div class="newGameHandle"></div>
-
-<button class="newGameCloseBtn"
-        id="modeCloseBtn"
-        type="button">×</button>
-
-
-    <div class="newGameTitle">🚗 New Game</div>
-
-
-<div id="newGameTypeSection">
-
-  <div class="newGameSectionLabel">
-    Trip Modes
-  </div>
-
-  <button
-    class="newGameOption active"
-    data-game-type="solo"
-    type="button">
-    <strong>🚗 Solo</strong>
-    <span>Play by yourself</span>
-  </button>
-
-  <button
-    class="newGameOption"
-    data-game-type="battle"
-    type="button">
-    <strong>⚔️ Battle</strong>
-    <span>Compete against friends & family</span>
-  </button>
-
-  <button
-    class="newGameOption"
-    data-game-type="roadtrip"
-    type="button">
-    <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
-    <span>Team up with friends & family</span>
-  </button>
-
-  <div class="newGameDivider"></div>
+<button
+  class="primary"
+  id="onboardingDone"
+  type="button">
+  Got It
+</button>
 
 </div>
+</div>
 
-<div class="newGameOverlay hidden"
-     id="tripNameOverlay">
+
+
+<div
+  class="newGameOverlay hidden"
+  id="newGameOverlay">
 
   <div class="newGameSheet">
 
     <div class="newGameHandle"></div>
-
-    <button class="newGameCloseBtn"
-            id="tripNameCloseBtn"
-            type="button">×</button>
-
-    <h2 class="newGameTitle">
-      ✏️ Rename Trip
-    </h2>
-
-    <div class="newGameSection">
-
-      <div class="newGameLabel">
-        Trip Name
-      </div>
-
-      <input
-        id="tripNameInput"
-        class="tripNameInput"
-        type="text"
-        placeholder="Summer Roadtrip">
-
-    </div>
 
     <button
-      class="startTripBtn"
-      id="saveTripNameBtn"
+      class="newGameCloseBtn"
+      id="modeCloseBtn"
       type="button">
-
-      ✅ Save Name
-
+      ×
     </button>
 
-  </div>
+    <div class="newGameTitle">
+      🚗 New Game
+    </div>
 
-</div>
+    <div id="newGameTypeSection">
+
+      <div class="newGameSectionLabel">
+        Trip Modes
+      </div>
+
+      <button
+        class="newGameOption active"
+        data-game-type="solo"
+        type="button">
+
+        <strong>🚗 Solo</strong>
+
+        <span>
+          Play by yourself
+        </span>
+
+      </button>
+
+      <button
+        class="newGameOption"
+        data-game-type="battle"
+        type="button">
+
+        <strong>⚔️ Battle</strong>
+
+        <span>
+          Compete against friends & family
+        </span>
+
+      </button>
+
+      <button
+        class="newGameOption"
+        data-game-type="roadtrip"
+        type="button">
+
+        <strong>👨‍👩‍👧‍👦 Roadtrip</strong>
+
+        <span>
+          Team up with friends & family
+        </span>
+
+      </button>
+
+      <div class="newGameDivider"></div>
+
+    </div>
     
     
     <div class="newGameSectionLabel">Scoring</div>
