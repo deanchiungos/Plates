@@ -9819,6 +9819,39 @@ function addActivity(text) {
   );
 }
 
+function renderCollections() {
+  var states =
+    document.getElementById(
+      "lifeStates"
+    );
+
+  var provinces =
+    document.getElementById(
+      "lifeProvinces"
+    );
+
+  var plates =
+    document.getElementById(
+      "lifePlates"
+    );
+
+  if(states){
+    states.textContent =
+      collections.states.length;
+  }
+
+  if(provinces){
+    provinces.textContent =
+      collections.provinces.length;
+  }
+
+  if(plates){
+    plates.textContent =
+      collections.plates || 0;
+  }
+}
+
+  
   function renderActivityFeed() {
 
   var box =
