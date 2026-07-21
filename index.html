@@ -9438,8 +9438,35 @@ return '<div class="familyRow ' + (p.id === currentPlayerId ? "active" : "") + '
   (p.avatar || "🚗") +
 '</div>' +
 
-  '<div class="familyInfo"><div class="familyName">' + p.name + '</div>' +
-  '<div class="familyMeta">' + (p.id === currentPlayerId ? 'You' : '') + '</div></div>' +
+'<div class="familyInfo">' +
+
+'<div class="familyName">' +
+p.name +
+'</div>' +
+
+'<div class="familyMeta">' +
+(p.id === currentPlayerId
+  ? 'You'
+  : 'Friend') +
+'</div>' +
+
+'<div class="familyStats">' +
+'🇺🇸 ' +
+((p.collections && p.collections.states)
+  ? p.collections.states.length
+  : 0) +
+' states • 🇨🇦 ' +
+((p.collections && p.collections.provinces)
+  ? p.collections.provinces.length
+  : 0) +
+' provinces • 👀 ' +
+((p.collections && p.collections.plates)
+  ? p.collections.plates
+  : 0) +
+' plates' +
+'</div>' +
+
+'</div>' +
  '<div class="familyActions">' +
 
 (p.id === currentPlayerId
