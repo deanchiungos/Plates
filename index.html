@@ -7042,7 +7042,11 @@ var bestClassic = Number(localStorage.platesBestClassic || localStorage.platesBe
 var bestWeighted = Number(localStorage.platesBestWeighted || 0);
 var bestUnlimited = Number(localStorage.platesBestUnlimited || 0);
 var selectedState = "";
-
+var collections =
+  safeParse(
+    localStorage.platesCollections,
+    '{"states":[],"provinces":[],"plates":0}'
+  );
 var dailyChallenge;
 
 try {
@@ -8079,6 +8083,7 @@ localStorage.platesTripStatus =
   localStorage.platesTripCount = tripCount;
   localStorage.platesSavedTrips = JSON.stringify(savedTrips);
   localStorage.platesTripMemories = JSON.stringify(tripMemories);
+  localStorage.platesCollections = JSON.stringify(collections);
   localStorage.platesBestClassic = bestClassic;
   localStorage.platesBestWeighted = bestWeighted;
   localStorage.platesBestUnlimited = bestUnlimited;
