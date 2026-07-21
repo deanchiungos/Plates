@@ -5441,6 +5441,48 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   border-radius:999px;
   font-size:18px;
 }
+
+.activityCard{
+  padding:18px 20px !important;
+}
+
+.activityTitle{
+  font-size:22px;
+  font-weight:900;
+  color:var(--navy);
+  margin-bottom:12px;
+}
+
+#activityFeed{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+#activityFeed .recentItem{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 16px;
+  min-height:0;
+  border-radius:18px;
+  background:rgba(255,255,255,.72);
+}
+
+#activityFeed .recentState{
+  font-size:18px;
+  font-weight:850;
+  color:var(--navy);
+}
+
+#activityFeed .recentFinder{
+  font-size:14px;
+  font-weight:750;
+  color:var(--muted);
+  white-space:nowrap;
+}
+  
   
 </style>
 </head>
@@ -6101,16 +6143,15 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 </div>
 
 
-<div class="glassCard">
-  <div class="sectionTitle">
+<div class="glassCard activityCard">
+  <div class="activityTitle">
     📣 The Latest
   </div>
-
-  
 
   <div id="activityFeed"></div>
 </div>
   
+
 
 <div class="card gameModesMini howToPlayCard">
  <div class="panelTitle">
