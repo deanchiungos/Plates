@@ -10918,26 +10918,7 @@ document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
   };
 });
 
-document
-.getElementById("resumeGameBtn")
-.onclick = function(){
 
-  document
-  .getElementById("resumeGameOverlay")
-  .classList.add("hidden");
-
-};
-
-  document
-.getElementById("returningNewGameBtn")
-.onclick = function(){
-
-  document
-  .getElementById("resumeGameOverlay")
-  .classList.add("hidden");
-
-  newTrip();
-};
   
 var saveProfileBtn = document.getElementById("saveProfileBtn");
 if(saveProfileBtn) saveProfileBtn.onclick = saveProfile;
@@ -11137,11 +11118,11 @@ if(resumeGameBtn) {
   };
 }
 
-var returningNewGameBtn =
-  document.getElementById("returningNewGameBtn");
+var startFreshBtn =
+  document.getElementById("startFreshBtn");
 
-if(returningNewGameBtn) {
-  returningNewGameBtn.onclick = function() {
+if(startFreshBtn) {
+  startFreshBtn.onclick = function() {
     document
       .getElementById("resumeGameOverlay")
       .classList.add("hidden");
