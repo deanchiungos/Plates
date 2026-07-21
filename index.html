@@ -8565,37 +8565,70 @@ function closeNewGameSheet() {
   if(overlay) overlay.classList.add("hidden");
 }
 
+
 function createGameFromSheet() {
-  var input = document.getElementById("newGameNameInput");
+
+  var overlay =
+    document.getElementById(
+      "newGameOverlay"
+    );
+
+  if(
+    overlay &&
+    overlay.dataset.mode === "change"
+  ){
+
+    scoringMode =
+      mode || "classic";
+
+    overlay.dataset.mode = "";
+
+    save();
+    render();
+    closeNewGameSheet();
+
+    toast("Trip mode updated");
+    return;
+  }
+
+  var input =
+    document.getElementById(
+      "newGameNameInput"
+    );
 
   var name =
-  input
-    ? input.value.trim()
-    : "";
+    input
+      ? input.value.trim()
+      : "";
 
-if(!name){
-  toast(
-    "Please enter a trip name"
-  );
-  return;
-}
+  if(!name){
+    toast(
+      "Please enter a trip name"
+    );
+    return;
+  }
 
   tripName = name;
-  scoringMode = mode || scoringMode || "classic";
+
+  scoringMode =
+    mode ||
+    scoringMode ||
+    "classic";
+
   counts = {};
   log = [];
 
   addActivity(
-  "🛣️ Started " + tripName
-);
+    "🛣️ Started " + tripName
+  );
 
-save();
-render();
-closeNewGameSheet();
-toast("New game started");
+  save();
+  render();
+  closeNewGameSheet();
+
+  toast("New trip started");
 }
-
-
+  
 
 function setMode(newMode) {
   mode = newMode;
