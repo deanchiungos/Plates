@@ -9736,7 +9736,55 @@ function addActivity(text) {
     JSON.stringify(activityFeed)
   );
 }
-  
+
+  function renderActivityFeed() {
+
+  var box =
+    document.getElementById(
+      "activityFeed"
+    );
+
+  if(!box) return;
+
+  var feed =
+    safeParse(
+      localStorage.getItem(
+        "platesActivityFeed"
+      ),
+      "[]"
+    );
+
+  if(!feed.length){
+    box.innerHTML =
+      '<div class="memoryEmpty">' +
+      'No recent activity yet' +
+      '</div>';
+    return;
+  }
+
+  box.innerHTML =
+    feed
+      .slice(0,5)
+      .map(function(item){
+
+        return (
+          '<div class="recentItem">' +
+
+            '<div class="recentState">' +
+              item.text +
+            '</div>' +
+
+            '<div class="recentFinder">' +
+              timeAgo(item.ts) +
+            '</div>' +
+
+          '</div>'
+        );
+
+      })
+      .join("");
+
+}
 
 function render() {
 
