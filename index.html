@@ -5517,6 +5517,49 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   left:auto;
   margin:0;
 }
+
+
+.clearTripSheet{
+  text-align:center;
+}
+
+.clearTripIcon{
+  font-size:54px;
+  line-height:1;
+  margin:8px 0 12px;
+}
+
+.clearTripMessage{
+  max-width:310px;
+  margin:0 auto 22px;
+  color:var(--muted);
+  font-size:16px;
+  font-weight:800;
+  line-height:1.4;
+}
+
+.clearTripConfirmBtn{
+  width:100%;
+  min-height:58px;
+  border-radius:999px;
+  background:#b43b3b !important;
+  color:#fff !important;
+  font-size:19px;
+  font-weight:950;
+}
+
+.clearTripCancelBtn{
+  width:100%;
+  min-height:54px;
+  margin-top:10px;
+  border:2px solid #d8e2ef;
+  border-radius:999px;
+  background:#fff;
+  color:var(--blue);
+  font-size:18px;
+  font-weight:900;
+}
+  
   
 </style>
 </head>
@@ -6705,6 +6748,55 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   </div>
 </div>
   </div>
+
+  
+  
+  <div
+  class="newGameOverlay hidden"
+  id="clearTripOverlay">
+
+  <div class="newGameSheet clearTripSheet">
+
+    <div class="newGameHandle"></div>
+
+    <button
+      class="newGameCloseBtn"
+      id="clearTripCloseBtn"
+      type="button">
+      ×
+    </button>
+
+    <div class="clearTripIcon">
+      🗑️
+    </div>
+
+    <div class="newGameTitle">
+      Clear This Trip?
+    </div>
+
+    <div class="clearTripMessage">
+      This will remove all current progress and cannot be undone
+    </div>
+
+    <button
+      class="primary clearTripConfirmBtn"
+      id="confirmClearTripBtn"
+      type="button">
+      🗑️ Clear Trip
+    </button>
+
+    <button
+      class="secondary clearTripCancelBtn"
+      id="cancelClearTripBtn"
+      type="button">
+      Cancel
+    </button>
+
+  </div>
+
+</div>
+  
+  
   <section id="familyScreen" class="screen hidden">
 
 
@@ -8879,11 +8971,48 @@ function setView(newView) {
 
 
 
+function openClearTripSheet(){
 
-function clearTrip() {
-  if(!confirm("Clear this trip? This will remove all current progress and cannot be undone!")) {
-    return;
+  var optionsOverlay =
+    document.getElementById(
+      "gameOptionsOverlay"
+    );
+
+  if(optionsOverlay){
+    optionsOverlay.classList.add(
+      "hidden"
+    );
   }
+
+  var clearOverlay =
+    document.getElementById(
+      "clearTripOverlay"
+    );
+
+  if(clearOverlay){
+    clearOverlay.classList.remove(
+      "hidden"
+    );
+  }
+}
+
+
+function closeClearTripSheet(){
+
+  var clearOverlay =
+    document.getElementById(
+      "clearTripOverlay"
+    );
+
+  if(clearOverlay){
+    clearOverlay.classList.add(
+      "hidden"
+    );
+  }
+}
+
+
+function clearTrip(){
 
   counts = {};
   log = [];
@@ -8892,13 +9021,14 @@ function clearTrip() {
   save();
   render();
 
-  var overlay = document.getElementById("gameOptionsOverlay");
-  if(overlay) {
-    overlay.classList.add("hidden");
-  }
+  closeClearTripSheet();
 
-  toast("Game cleared");
+  toast("Trip cleared");
 }
+
+
+
+  
 
 function renameTrip(){
   openTripNameSheet();
@@ -11849,12 +11979,60 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
 var endTripBtn = document.getElementById("endTripBtn");
 if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
 
-var clearTripBtn = document.getElementById("clearTripBtn");
 
-if(clearTripBtn) {
-  clearTripBtn.onclick = clearTrip;
+  var clearTripBtn =
+  document.getElementById(
+    "clearTripBtn"
+  );
+
+if(clearTripBtn){
+
+  clearTripBtn.onclick =
+    function(e){
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      openClearTripSheet();
+    };
 }
 
+
+var confirmClearTripBtn =
+  document.getElementById(
+    "confirmClearTripBtn"
+  );
+
+if(confirmClearTripBtn){
+  confirmClearTripBtn.onclick =
+    clearTrip;
+}
+
+
+var cancelClearTripBtn =
+  document.getElementById(
+    "cancelClearTripBtn"
+  );
+
+if(cancelClearTripBtn){
+  cancelClearTripBtn.onclick =
+    closeClearTripSheet;
+}
+
+
+var clearTripCloseBtn =
+  document.getElementById(
+    "clearTripCloseBtn"
+  );
+
+if(clearTripCloseBtn){
+  clearTripCloseBtn.onclick =
+    closeClearTripSheet;
+}
+
+
+
+  
 var changeModeBtn = document.getElementById("changeModeBtn");
 
 if(changeModeBtn) {
@@ -11884,14 +12062,34 @@ if(changeModeBtn) {
   };
 }
 
-var renameTripBtn = document.getElementById("renameTripBtn");
-if(renameTripBtn) {
-  renameTripBtn.onclick = function(){
-    renameTrip();
+var renameTripBtn =
+  document.getElementById(
+    "renameTripBtn"
+  );
 
-    var menu = document.getElementById("gameOptionsOverlay");
-    if(menu) menu.classList.add("hidden");
-  };
+if(renameTripBtn){
+
+  renameTripBtn.onclick =
+    function(e){
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      var menu =
+        document.getElementById(
+          "gameOptionsOverlay"
+        );
+
+      if(menu){
+        menu.classList.add(
+          "hidden"
+        );
+      }
+
+      setTimeout(function(){
+        openTripNameSheet();
+      },50);
+    };
 }
 
 
