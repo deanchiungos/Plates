@@ -6573,8 +6573,8 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     </button>
 
     <button class="newGameOption" id="changeModeBtn" type="button">
-      <strong>🔄 Change Mode</strong>
-      <span>Switch scoring rules</span>
+      <strong>🔄 Change Scoring</strong>
+      <span>Update the rules</span>
     </button>
 
     <button class="newGameOption" id="shareTripBtn" type="button">
@@ -8665,11 +8665,23 @@ function openNewGameSheet(){
   }
 }
   
-function closeNewGameSheet() {
-  var overlay = document.getElementById("newGameOverlay");
-  if(overlay) overlay.classList.add("hidden");
-}
+function closeNewGameSheet(){
 
+  var overlay =
+    document.getElementById(
+      "newGameOverlay"
+    );
+
+  if(overlay){
+
+    overlay.classList.add(
+      "hidden"
+    );
+
+    overlay.dataset.mode = "";
+
+  }
+}
 
 function createGameFromSheet() {
 
