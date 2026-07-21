@@ -9505,11 +9505,22 @@ function playerCollectionStats(playerId){
   };
 }
 
-  function openCollectionSheet(){
-  toast("Collection details coming soon");
+
+function openCollectionSheet(){
+
+  renderCollectionDetails();
+
+  document
+    .getElementById("collectionOverlay")
+    .classList.remove("hidden");
 }
 
-  
+function closeCollectionSheet(){
+
+  document
+    .getElementById("collectionOverlay")
+    .classList.add("hidden");
+}
   
 function renderFamily(c, unlockedBadges) {
   var player = currentPlayer();
