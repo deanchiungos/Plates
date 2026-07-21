@@ -9570,13 +9570,20 @@ function renderCollectionDetails(){
 
 function openCollectionSheet(){
 
-  renderCollectionDetails();
+  var overlay =
+    document.getElementById(
+      "collectionOverlay"
+    );
 
-  document
-    .getElementById("collectionOverlay")
-    .classList.remove("hidden");
+  if(!overlay){
+    toast("Collection overlay not found");
+    return;
+  }
+
+  overlay.classList.remove("hidden");
 }
 
+  
 function closeCollectionSheet(){
 
   document
