@@ -9857,14 +9857,17 @@ if(mode === "classic") {
   }
 
   if(outOfEl){
-    outOfEl.style.display = "inline";
-    outOfEl.innerHTML = '<span class="found">/</span>50';
-  }
+  outOfEl.style.display = "inline";
+  outOfEl.innerHTML = '<span class="found">/</span>50';
+}
+
 
   if(primaryLabelEl){
     primaryLabelEl.textContent = "states found";
   }
 
+
+    
   if(bonusEl){
     var bonus = bonusCollectedCount();
 
