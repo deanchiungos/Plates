@@ -8900,64 +8900,9 @@ function clearTrip() {
   toast("Game cleared");
 }
 
-
 function renameTrip(){
-
-  var overlay =
-    document.getElementById(
-      "nextTripNameOverlay"
-    );
-
-  var title =
-    overlay
-      ? overlay.querySelector(
-          ".newGameTitle"
-        )
-      : null;
-
-  var saveBtn =
-    document.getElementById(
-      "nextTripNameSaveBtn"
-    );
-
-  var input =
-    document.getElementById(
-      "nextTripNameInput"
-    );
-
-  if(title){
-    title.textContent =
-      "Rename Trip";
-  }
-
-  if(saveBtn){
-    saveBtn.textContent =
-      "Save Trip Name";
-  }
-
-  if(input){
-    input.value =
-      tripName === "New Roadtrip"
-        ? ""
-        : tripName;
-  }
-
-  if(overlay){
-    overlay.dataset.mode =
-      "rename";
-
-    overlay.classList.remove(
-      "hidden"
-    );
-  }
-
-  setTimeout(function(){
-    if(input){
-      input.focus();
-    }
-  },100);
+  openTripNameSheet();
 }
-
 
 function currentTripSnapshot() {
   var endedAt =
@@ -11277,11 +11222,58 @@ if(nextTripNameSaveBtn){
     saveNextTripName;
 }
 
+  var tripNameCloseBtn =
+  document.getElementById(
+    "tripNameCloseBtn"
+  );
+
+if(tripNameCloseBtn){
+
+  tripNameCloseBtn.onclick =
+    closeTripNameSheet;
+}
+
+
+var saveTripNameBtn =
+  document.getElementById(
+    "saveTripNameBtn"
+  );
+
+if(saveTripNameBtn){
+
+  saveTripNameBtn.onclick =
+    function(){
+
+      var value =
+        document
+          .getElementById(
+            "tripNameInput"
+          )
+          .value
+          .trim();
+
+      if(!value) return;
+
+      tripName = value;
+
+      save();
+
+      render();
+
+      closeTripNameSheet();
+
+      toast(
+        "Trip renamed"
+      );
+    };
+}
 
 var nextTripNameInput =
   document.getElementById(
     "nextTripNameInput"
   );
+
+  
 
 if(nextTripNameInput){
 
