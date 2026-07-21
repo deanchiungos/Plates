@@ -8831,15 +8831,18 @@ function currentTripSnapshot() {
   };
 }
 
-function openNextTripNameSheet(){
 
 
-overlay.dataset.mode = "new";
-  
+  function openNextTripNameSheet(){
+
   var overlay =
     document.getElementById(
       "nextTripNameOverlay"
     );
+
+  if(overlay){
+    overlay.dataset.mode = "new";
+  }
 
   var input =
     document.getElementById(
