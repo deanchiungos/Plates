@@ -9640,24 +9640,7 @@ function getBadgeProgress(badge) {
   }
 
   return 0;
-}
 
-
-function getBadgeProgress(badge) {
-  var c = collectedCount();
-
-  if (badge.type === "states") {
-    return Math.min(c, badge.goal);
-  }
-
-  if (badge.id === "coastToCoast") {
-    var hasCA = log.some(function(x){ return x.code === "CA"; });
-    var hasME = log.some(function(x){ return x.code === "ME"; });
-    return (hasCA ? 1 : 0) + (hasME ? 1 : 0);
-  }
-
-  return 0;
-}
 
 
 function isBadgeUnlocked(badge) {
