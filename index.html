@@ -9546,26 +9546,48 @@ var provincesRemaining =
 
     '<div class="quickStats">' +
 
-      '<div class="stat">' +
-        '<strong>' +
-        collections.states.length +
-        '/50</strong>' +
-        '<span>🇺🇸 States</span>' +
-      '</div>' +
+'<div class="stat">' +
+  '<strong>' +
 
-      '<div class="stat">' +
-        '<strong>' +
-        collections.provinces.length +
-        '/13</strong>' +
-        '<span>🇨🇦 Provinces</span>' +
-      '</div>' +
+    '<span class="found" ' +
+      'style="display:inline;font-size:inherit;">' +
 
-      '<div class="stat">' +
-        '<strong>' +
-        (collections.plates || 0) +
-        '</strong>' +
-        '<span>👀 Plates</span>' +
-      '</div>' +
+      collections.states.length +
+      '/' +
+
+    '</span>' +
+
+    '50' +
+
+  '</strong>' +
+
+  '<span>🇺🇸 States</span>' +
+'</div>' +
+
+'<div class="stat">' +
+  '<strong>' +
+
+    '<span class="found" ' +
+      'style="display:inline;font-size:inherit;">' +
+
+      collections.provinces.length +
+      '/' +
+
+    '</span>' +
+
+    '13' +
+
+  '</strong>' +
+
+  '<span>🇨🇦 Provinces</span>' +
+'</div>' +
+
+'<div class="stat">' +
+  '<strong>' +
+    (collections.plates || 0) +
+  '</strong>' +
+  '<span>👀 Plates</span>' +
+'</div>'
 
     '</div>' +
 
