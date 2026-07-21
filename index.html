@@ -8177,7 +8177,8 @@ function beginFreshTrip(name) {
 
   counts = {};
   log = [];
-
+tripMemories = [];
+  
   localStorage.removeItem(
     "platesPausedTrip"
   );
@@ -9169,6 +9170,9 @@ function resumePausedTrip() {
   log =
     paused.log || [];
 
+tripMemories =
+  paused.memories || [];
+  
   tripStartedAt =
     paused.startedAt ||
     new Date().toISOString();
