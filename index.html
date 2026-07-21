@@ -9514,13 +9514,13 @@ function renderCollectionDetails(){
 
   if(!box) return;
 
-  var completion =
-    Math.round(
-      (
-        collections.states.length / 50
-      ) * 100
-    );
+var statesRemaining =
+  50 - collections.states.length;
 
+var provincesRemaining =
+  13 - collections.provinces.length;
+
+  
   box.innerHTML =
 
     '<div class="quickStats">' +
@@ -9548,23 +9548,26 @@ function renderCollectionDetails(){
 
     '</div>' +
 
-    '<div class="card" style="margin-top:16px;">' +
+  '<div class="card" style="margin-top:16px;">' +
 
-      '<div class="panelTitle">' +
-        '🏆 Completion' +
-      '</div>' +
+  '<div style="' +
+    'text-align:center;' +
+    'font-size:22px;' +
+    'font-weight:950;' +
+    'color:var(--navy);' +
+    'line-height:1.6;">' +
 
-      '<div style="' +
-        'font-size:42px;' +
-        'font-weight:950;' +
-        'text-align:center;' +
-        'color:var(--navy);">' +
+    statesRemaining +
+    ' states remaining<br>' +
 
-        completion + '%' +
+    provincesRemaining +
+    ' provinces remaining' +
 
-      '</div>' +
+  '</div>' +
 
-    '</div>';
+'</div>';
+
+
 }
   
 
