@@ -10320,6 +10320,28 @@ function openBadgeDetail(badge) {
 
   
 
+function checkForResumeTrip() {
+
+  var hasProgress =
+    collectedCount() > 0 ||
+    log.length > 0;
+
+  if(!hasProgress) {
+    return;
+  }
+
+  var overlay =
+    document.getElementById(
+      "resumeGameOverlay"
+    );
+
+  if(overlay) {
+    overlay.classList.remove(
+      "hidden"
+    );
+  }
+}
+  
 function attachHandlers() {
 
 var nextTripNameCloseBtn =
@@ -10525,27 +10547,7 @@ function openGameOptions(){
   }
 }
 
-function checkForResumeTrip() {
 
-  var hasProgress =
-    collectedCount() > 0 ||
-    log.length > 0;
-
-  if(!hasProgress) {
-    return;
-  }
-
-  var overlay =
-    document.getElementById(
-      "resumeGameOverlay"
-    );
-
-  if(overlay) {
-    overlay.classList.remove(
-      "hidden"
-    );
-  }
-}
   
   
 function closeGameOptions(){
