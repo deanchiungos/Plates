@@ -7053,7 +7053,60 @@ var collections =
     localStorage.platesCollections,
     '{"states":[],"provinces":[],"plates":0}'
   );
-var dailyChallenge;
+
+  if(
+  !localStorage.getItem(
+    "platesCollectionsBackfilled"
+  )
+){
+
+  Object.keys(counts).forEach(function(code){
+
+    if(!counts[code]) return;
+
+    var btn =
+      document.querySelector(
+        '[data-code="' + code + '"]'
+      );
+
+    if(
+      btn &&
+      btn.dataset.canada === "true"
+    ){
+
+      if(
+        !collections.provinces.includes(code)
+      ){
+        collections.provinces.push(code);
+      }
+
+    } else {
+
+      if(
+        !collections.states.includes(code)
+      ){
+        collections.states.push(code);
+      }
+
+    }
+
+  });
+
+  collections.plates =
+    Math.max(
+      collections.plates || 0,
+      totalSightings()
+    );
+
+  localStorage.platesCollections =
+    JSON.stringify(collections);
+
+  localStorage.setItem(
+    "platesCollectionsBackfilled",
+    "true"
+  );
+}
+  var dailyChallenge;
 
 try {
 
