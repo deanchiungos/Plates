@@ -8567,9 +8567,9 @@ var overlay =
     "newGameOverlay"
   );
 
-var createBtn =
+var nameSection =
   document.getElementById(
-    "createGameBtn"
+    "newGameNameSection"
   );
 
 if(
@@ -8582,13 +8582,27 @@ if(
       "✅ Save Mode";
   }
 
+  if(nameSection){
+    nameSection.classList.add(
+      "hidden"
+    );
+  }
+
 } else {
 
   if(createBtn){
     createBtn.textContent =
       "🚗 Start New Trip";
   }
+
+  if(nameSection){
+    nameSection.classList.remove(
+      "hidden"
+    );
+  }
 }
+
+  
 
 if(overlay){
   overlay.classList.remove(
