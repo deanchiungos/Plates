@@ -9050,6 +9050,53 @@ function closeNextTripNameSheet(){
   }
 }
 
+function closeNextTripNameSheet(){
+
+  document
+    .getElementById(
+      "nextTripNameOverlay"
+    )
+    .classList.add(
+      "hidden"
+    );
+}
+
+
+
+function openTripNameSheet(){
+
+  var overlay =
+    document.getElementById(
+      "tripNameOverlay"
+    );
+
+  var input =
+    document.getElementById(
+      "tripNameInput"
+    );
+
+  if(input){
+    input.value =
+      tripName || "";
+  }
+
+  overlay.classList.remove(
+    "hidden"
+  );
+}
+
+
+function closeTripNameSheet(){
+
+  document
+    .getElementById(
+      "tripNameOverlay"
+    )
+    .classList.add(
+      "hidden"
+    );
+}
+  
 
   function saveNextTripName(){
 
@@ -11371,6 +11418,9 @@ var gameOptionsOverlay =
 var gameOptionsCloseBtn =
   document.getElementById("gameOptionsCloseBtn");
 
+
+
+  
 function openGameOptions(){
   if(gameOptionsOverlay){
     gameOptionsOverlay.classList.remove("hidden");
