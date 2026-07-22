@@ -9898,9 +9898,7 @@ function addMemoryPhoto(code) {
 }
 
 
-
-
-  function saveSelectedPhoto(file) {
+function saveSelectedPhoto(file) {
   if(!file || !pendingPhotoStateCode) return;
 
   var code = pendingPhotoStateCode;
@@ -9916,19 +9914,17 @@ function addMemoryPhoto(code) {
       var height = image.height;
 
       if(width > height && width > maxSize) {
-        height =
-          Math.round(
-            height * maxSize / width
-          );
+        height = Math.round(
+          height * maxSize / width
+        );
 
         width = maxSize;
       }
 
       if(height >= width && height > maxSize) {
-        width =
-          Math.round(
-            width * maxSize / height
-          );
+        width = Math.round(
+          width * maxSize / height
+        );
 
         height = maxSize;
       }
@@ -9956,64 +9952,128 @@ function addMemoryPhoto(code) {
           0.72
         );
 
-      var caption =
-        prompt(
-          "Photo caption:",
-          name + " plate"
+      var memoryOverlay =
+        document.getElementById(
+          "memoryOverlay"
         );
 
-      if(caption === null) {
-        caption = "";
-      }
-
-      tripMemories.unshift({
-        id:
-          "m" +
-          Date.now() +
-          Math.floor(
-            Math.random() * 1000
-          ),
-
-        type: "photo",
-
-        tripId: tripId,
-        trip: tripName,
-
-        stateCode: code,
-        stateName: name,
-
-        title:
-          caption.trim() ||
-          "Photo memory",
-
-        caption:
-          caption.trim(),
-
-        photo:
-          compressedPhoto,
-
-        ts:
-          new Date().toISOString()
-      });
-
-      pendingPhotoStateCode = "";
-
-      try {
-        save();
-      } catch(err) {
-        tripMemories.shift();
-
-        toast(
-          "Photo could not be saved"
+      var memoryPreview =
+        document.getElementById(
+          "memoryPreview"
         );
 
+      var memoryCaptionInput =
+        document.getElementById(
+          "memoryCaptionInput"
+        );
+
+      var saveMemoryBtn =
+        document.getElementById(
+          "saveMemoryBtn"
+        );
+
+      var memoryCloseBtn =
+        document.getElementById(
+          "memoryCloseBtn"
+        );
+
+      if(
+        !memoryOverlay ||
+        !memoryPreview ||
+        !memoryCaptionInput ||
+        !saveMemoryBtn
+      ) {
         return;
       }
 
-      render();
-      selectMapState(code);
+      memoryPreview.src =
+        compressedPhoto;
 
-      toast("Memory saved");
+      memoryPreview.classList.remove(
+        "hidden"
+      );
+
+      memoryCaptionInput.value =
+        name + " plate";
+
+      memoryOverlay.classList.remove(
+        "hidden"
+      );
+
+      function closeMemorySheet() {
+        memoryOverlay.classList.add(
+          "hidden"
+        );
+
+        memoryPreview.src = "";
+
+        memoryPreview.classList.add(
+          "hidden"
+        );
+
+        memoryCaptionInput.value = "";
+
+        pendingPhotoStateCode = "";
+      }
+
+      saveMemoryBtn.onclick =
+        function() {
+          var caption =
+            memoryCaptionInput.value.trim();
+
+          tripMemories.unshift({
+            id:
+              "m" +
+              Date.now() +
+              Math.floor(
+                Math.random() * 1000
+              ),
+
+            type: "photo",
+
+            tripId: tripId,
+            trip: tripName,
+
+            stateCode: code,
+            stateName: name,
+
+            title:
+              caption ||
+              "Photo memory",
+
+            caption: caption,
+
+            photo:
+              compressedPhoto,
+
+            ts:
+              new Date().toISOString()
+          });
+
+          try {
+            save();
+          } catch(err) {
+            tripMemories.shift();
+
+            toast(
+              "Photo could not be saved"
+            );
+
+            return;
+          }
+
+          closeMemorySheet();
+
+          render();
+          selectMapState(code);
+
+          toast("Memory saved");
+        };
+
+      if(memoryCloseBtn) {
+        memoryCloseBtn.onclick =
+          closeMemorySheet;
+      }
     };
 
     image.src = e.target.result;
@@ -10021,6 +10081,7 @@ function addMemoryPhoto(code) {
 
   reader.readAsDataURL(file);
 }
+  
   
 function deleteMemory(id) {
   var item = tripMemories.find(function(m){
