@@ -9838,275 +9838,373 @@ function memoriesForState(code){
 }
   
 
-function renderMemoryList(code) {
+  function renderMemoryList(code) {
   var items = memoriesForState(code);
+
   if(!items.length) {
     return '<div class="memoryEmpty">No memories saved yet</div>';
   }
 
-  return '<div class="memoryList">' + items.map(function(m){
-    var media = m.type === "photo" && m.photo
-      ? '<img class="memoryThumb" src="' + m.photo + '" alt="Trip memory photo">'
-      : '<div class="memoryNoteIcon">Note</div>';
+  return '<div class="memoryList">' +
+    items.map(function(m) {
+      var media =
+        m.type === "photo" && m.photo
+          ? '<img class="memoryThumb" src="' +
+              m.photo +
+              '" alt="Trip memory photo">'
+          : '<div class="memoryNoteIcon">Note</div>';
 
-    var body = m.type === "photo"
-      ? (m.caption || "Photo memory")
-      : (m.note || "");
+      var body =
+        m.type === "photo"
+          ? (m.caption || "Photo memory")
+          : (m.note || "");
 
-    return '<div class="memoryItem">' +
-      media +
-      '<div class="memoryText"><div class="memoryTitle">' + (m.title || "Trip memory") + '</div>' +
-      '<div class="memoryBody">' + body + '</div>' +
-      '<div class="memoryDate">' + memoryDate(m.ts) + '</div></div>' +
-      '<button class="deleteMemoryBtn" data-memory-id="' + m.id + '" type="button">Delete</button>' +
-    '</div>';
-  }).join("") + '</div>';
+      return (
+        '<div class="memoryItem">' +
+          media +
+          '<div class="memoryText">' +
+            '<div class="memoryTitle">' +
+              (m.title || "Trip memory") +
+            '</div>' +
+            '<div class="memoryBody">' +
+              body +
+            '</div>' +
+            '<div class="memoryDate">' +
+              memoryDate(m.ts) +
+            '</div>' +
+          '</div>' +
+          '<button class="deleteMemoryBtn" data-memory-id="' +
+            m.id +
+            '" type="button">Delete</button>' +
+        '</div>'
+      );
+    }).join("") +
+  '</div>';
 }
 
 function addMemoryNote(code) {
   var name = stateNameForCode(code);
-  var title = prompt("Memory title:", name + " sighting");
+
+  var title =
+    prompt(
+      "Memory title:",
+      name + " sighting"
+    );
+
   if(!title || !title.trim()) return;
 
-  var note = prompt("Add a note:", "");
+  var note =
+    prompt(
+      "Add a note:",
+      ""
+    );
+
   if(note === null) return;
 
   tripMemories.unshift({
-    id:"m" + Date.now() + Math.floor(Math.random() * 1000),
-    type:"note",
-    trip:tripName,
-    stateCode:code,
-    stateName:name,
-    title:title.trim(),
-    note:(note || "").trim(),
-    ts:new Date().toISOString()
+    id:
+      "m" +
+      Date.now() +
+      Math.floor(
+        Math.random() * 1000
+      ),
+
+    type: "note",
+
+    tripId: tripId,
+    trip: tripName,
+
+    stateCode: code,
+    stateName: name,
+
+    title: title.trim(),
+    note: (note || "").trim(),
+
+    ts:
+      new Date().toISOString()
   });
 
   save();
   render();
   selectMapState(code);
+
   toast("Memory saved");
 }
 
 function addMemoryPhoto(code) {
   pendingPhotoStateCode = code;
-  var input = document.getElementById("memoryPhotoInput");
+
+  var input =
+    document.getElementById(
+      "memoryPhotoInput"
+    );
+
   if(input) {
     input.value = "";
     input.click();
   }
 }
 
-
 function saveSelectedPhoto(file) {
   if(!file || !pendingPhotoStateCode) return;
 
   var code = pendingPhotoStateCode;
   var name = stateNameForCode(code);
-  var reader = new FileReader();
 
-  reader.onload = function(e) {
-    var image = new Image();
+  var reader =
+    new FileReader();
 
-    image.onload = function() {
-      var maxSize = 900;
-      var width = image.width;
-      var height = image.height;
+  reader.onload =
+    function(e) {
+      var image =
+        new Image();
 
-      if(width > height && width > maxSize) {
-        height = Math.round(
-          height * maxSize / width
-        );
-
-        width = maxSize;
-      }
-
-      if(height >= width && height > maxSize) {
-        width = Math.round(
-          width * maxSize / height
-        );
-
-        height = maxSize;
-      }
-
-      var canvas =
-        document.createElement("canvas");
-
-      canvas.width = width;
-      canvas.height = height;
-
-      var ctx =
-        canvas.getContext("2d");
-
-      ctx.drawImage(
-        image,
-        0,
-        0,
-        width,
-        height
-      );
-
-      var compressedPhoto =
-        canvas.toDataURL(
-          "image/jpeg",
-          0.72
-        );
-
-      var memoryOverlay =
-        document.getElementById(
-          "memoryOverlay"
-        );
-
-      var memoryPreview =
-        document.getElementById(
-          "memoryPreview"
-        );
-
-      var memoryCaptionInput =
-        document.getElementById(
-          "memoryCaptionInput"
-        );
-
-      var saveMemoryBtn =
-        document.getElementById(
-          "saveMemoryBtn"
-        );
-
-      var memoryCloseBtn =
-        document.getElementById(
-          "memoryCloseBtn"
-        );
-
-      if(
-        !memoryOverlay ||
-        !memoryPreview ||
-        !memoryCaptionInput ||
-        !saveMemoryBtn
-      ) {
-        return;
-      }
-
-      memoryPreview.src =
-        compressedPhoto;
-
-      memoryPreview.classList.remove(
-        "hidden"
-      );
-
-      memoryCaptionInput.value =
-        name + " plate";
-
-      memoryOverlay.classList.remove(
-        "hidden"
-      );
-
-      function closeMemorySheet() {
-        memoryOverlay.classList.add(
-          "hidden"
-        );
-
-        memoryPreview.src = "";
-
-        memoryPreview.classList.add(
-          "hidden"
-        );
-
-        memoryCaptionInput.value = "";
-
-        pendingPhotoStateCode = "";
-      }
-
-      saveMemoryBtn.onclick =
+      image.onload =
         function() {
-          var caption =
-            memoryCaptionInput.value.trim();
+          var maxSize = 900;
+          var width = image.width;
+          var height = image.height;
 
-          tripMemories.unshift({
-            id:
-              "m" +
-              Date.now() +
-              Math.floor(
-                Math.random() * 1000
-              ),
+          if(
+            width > height &&
+            width > maxSize
+          ) {
+            height =
+              Math.round(
+                height *
+                maxSize /
+                width
+              );
 
-            type: "photo",
+            width = maxSize;
+          }
 
-            tripId: tripId,
-            trip: tripName,
+          if(
+            height >= width &&
+            height > maxSize
+          ) {
+            width =
+              Math.round(
+                width *
+                maxSize /
+                height
+              );
 
-            stateCode: code,
-            stateName: name,
+            height = maxSize;
+          }
 
-            title:
-              caption ||
-              "Photo memory",
+          var canvas =
+            document.createElement(
+              "canvas"
+            );
 
-            caption: caption,
+          canvas.width = width;
+          canvas.height = height;
 
-            photo:
-              compressedPhoto,
+          var ctx =
+            canvas.getContext("2d");
 
-            ts:
-              new Date().toISOString()
-          });
+          ctx.drawImage(
+            image,
+            0,
+            0,
+            width,
+            height
+          );
 
-          try {
-            save();
-          } catch(err) {
-            tripMemories.shift();
+          var compressedPhoto =
+            canvas.toDataURL(
+              "image/jpeg",
+              0.72
+            );
 
+          var memoryOverlay =
+            document.getElementById(
+              "memoryOverlay"
+            );
+
+          var memoryPreview =
+            document.getElementById(
+              "memoryPreview"
+            );
+
+          var memoryCaptionInput =
+            document.getElementById(
+              "memoryCaptionInput"
+            );
+
+          var saveMemoryBtn =
+            document.getElementById(
+              "saveMemoryBtn"
+            );
+
+          var memoryCloseBtn =
+            document.getElementById(
+              "memoryCloseBtn"
+            );
+
+          if(
+            !memoryOverlay ||
+            !memoryPreview ||
+            !memoryCaptionInput ||
+            !saveMemoryBtn
+          ) {
             toast(
-              "Photo could not be saved"
+              "Memory sheet could not open"
             );
 
             return;
           }
 
-          closeMemorySheet();
+          memoryPreview.src =
+            compressedPhoto;
 
-          render();
-          selectMapState(code);
+          memoryPreview.classList.remove(
+            "hidden"
+          );
 
-          toast("Memory saved");
+          memoryCaptionInput.value =
+            name + " plate";
+
+          memoryOverlay.classList.remove(
+            "hidden"
+          );
+
+          setTimeout(
+            function() {
+              memoryCaptionInput.focus();
+              memoryCaptionInput.select();
+            },
+            150
+          );
+
+          function closeMemorySheet() {
+            memoryOverlay.classList.add(
+              "hidden"
+            );
+
+            memoryPreview.src = "";
+
+            memoryPreview.classList.add(
+              "hidden"
+            );
+
+            memoryCaptionInput.value = "";
+
+            pendingPhotoStateCode = "";
+          }
+
+          saveMemoryBtn.onclick =
+            function() {
+              var caption =
+                memoryCaptionInput.value.trim();
+
+              tripMemories.unshift({
+                id:
+                  "m" +
+                  Date.now() +
+                  Math.floor(
+                    Math.random() *
+                    1000
+                  ),
+
+                type: "photo",
+
+                tripId: tripId,
+                trip: tripName,
+
+                stateCode: code,
+                stateName: name,
+
+                title:
+                  caption ||
+                  "Photo memory",
+
+                caption: caption,
+
+                photo:
+                  compressedPhoto,
+
+                ts:
+                  new Date().toISOString()
+              });
+
+              try {
+                save();
+              } catch(err) {
+                tripMemories.shift();
+
+                toast(
+                  "Photo could not be saved"
+                );
+
+                return;
+              }
+
+              closeMemorySheet();
+
+              render();
+              selectMapState(code);
+
+              toast("Memory saved");
+            };
+
+          if(memoryCloseBtn) {
+            memoryCloseBtn.onclick =
+              closeMemorySheet;
+          }
+
+          memoryOverlay.onclick =
+            function(event) {
+              if(
+                event.target ===
+                memoryOverlay
+              ) {
+                closeMemorySheet();
+              }
+            };
         };
 
-      if(memoryCloseBtn) {
-        memoryCloseBtn.onclick =
-          closeMemorySheet;
-      }
+      image.src = e.target.result;
     };
-
-    image.src = e.target.result;
-  };
 
   reader.readAsDataURL(file);
 }
-  
-  
+
 function deleteMemory(id) {
-  var item = tripMemories.find(function(m){
-    return m.id === id;
-  });
+  var item =
+    tripMemories.find(
+      function(m) {
+        return m.id === id;
+      }
+    );
 
   if(!item) return;
 
-  if(confirm("Delete this memory?")) {
-    tripMemories = tripMemories.filter(function(m){
-      return m.id !== id;
-    });
+  if(
+    confirm(
+      "Delete this memory?"
+    )
+  ) {
+    tripMemories =
+      tripMemories.filter(
+        function(m) {
+          return m.id !== id;
+        }
+      );
 
     save();
     render();
 
     if(selectedState) {
-      selectMapState(selectedState);
+      selectMapState(
+        selectedState
+      );
     }
 
     toast("Memory deleted");
   }
 }
-
-
 
 
 function selectMapState(code) {
