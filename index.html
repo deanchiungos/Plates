@@ -12799,6 +12799,13 @@ document.querySelectorAll("[data-game-type]").forEach(function(btn){
   };
 });
 
+  document.querySelectorAll("[data-mode-choice]").forEach(function(btn){
+  btn.onclick = function() {
+    mode = btn.dataset.modeChoice;
+    scoringMode = mode;
+    syncNewGameSheet();
+  };
+});
 
 
   var saveProfileBtn = document.getElementById("saveProfileBtn");
