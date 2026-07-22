@@ -4850,91 +4850,100 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   text-align: center !important;
 }
 
-#tripsScreen .metaDot {
-  opacity: .55 !important;
-}
 
+#tripsScreen .metaDot {
+  opacity:.55 !important;
+}
 
 #tripsScreen .activeGameFound {
-  display: flex !important;
-  align-items: baseline !important;
-  justify-content: center !important;
-  gap: 0 !important;
-  margin-top: 10px !important;
-  color: var(--navy) !important;
-  font-size: 14px !important;
-  font-weight: 950 !important;
-  line-height: 1 !important;
-  text-align: center !important;
+  display:flex !important;
+  align-items:baseline !important;
+  justify-content:center !important;
+  gap:0 !important;
+  margin-top:10px !important;
+  color:var(--navy) !important;
+  font-size:14px !important;
+  font-weight:950 !important;
+  line-height:1 !important;
+  text-align:center !important;
 }
-  
 
-#tripsScreen #tripPrimaryNumber, #tripsScreen .activeGameFound .outOf {
-  margin: 0 !important;
-  padding: 0 !important;
+#tripsScreen #tripPrimaryNumber,
+#tripsScreen .activeGameFound .outOf,
+#tripsScreen .foundText {
+  display:inline !important;
+  width:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:14px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
 }
 
 #tripsScreen #tripPrimaryNumber {
-  color: var(--green) !important;
+  color:var(--green) !important;
 }
 
 #tripsScreen .activeGameFound .outOf {
-  color: var(--muted) !important;
-  margin-left: -2px !important;
+  color:var(--muted) !important;
+  margin-left:-2px !important;
 }
 
 #tripsScreen .foundText {
-  margin-left: 4px !important;
-  color: var(--muted) !important;
-  font-size: 14px !important;
-  font-weight: 900 !important;
+  margin-left:4px !important;
+  color:var(--muted) !important;
 }
 
-  
 #tripsScreen .bonusCount {
-  display: block !important;
-  width: 100% !important;
-  margin-top: 5px !important;
-  color: var(--green) !important;
-  font-size: 14px !important;
-  font-weight: 900 !important;
-  line-height: 1 !important;
-  text-align: center !important;
+  display:inline !important;
+  width:auto !important;
+  margin:0 0 0 2px !important;
+  color:var(--green) !important;
+  font-size:14px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  text-align:center !important;
+}
+
+#tripsScreen .bonusCount:not(:empty)::before {
+  content:" • ";
+  color:rgba(10,31,68,.45);
 }
 
 #tripsScreen #tripProgressBar {
-  display: block !important;
-  width: 100% !important;
-  height: 16px !important;
-  margin: 18px 0 10px !important;
-  background: #e5eef7 !important;
-  border-radius: 999px !important;
-  overflow: hidden !important;
+  display:block !important;
+  width:100% !important;
+  height:16px !important;
+  margin:18px 0 10px !important;
+  background:#e5eef7 !important;
+  border-radius:999px !important;
+  overflow:hidden !important;
 }
 
 #tripsScreen #tripProgressFill {
-  height: 100% !important;
-  border-radius: 999px !important;
-  background: linear-gradient(
+  height:100% !important;
+  border-radius:999px !important;
+  background:linear-gradient(
     90deg,
     var(--green),
     #70d66d,
     var(--gold)
   ) !important;
-  transition: width .25s ease !important;
+  transition:width .25s ease !important;
 }
 
 /* TIGHTEN TRIPS BUTTONS */
 
 #tripsScreen #tripOptionsBtn {
-  width: 100% !important;
-  margin: 0 0 8px !important;
+  width:100% !important;
+  margin:0 0 8px !important;
 }
 
 #tripsScreen #newTripBtn {
-  width: 100% !important;
-  margin: 0 !important;
+  width:100% !important;
+  margin:0 !important;
 }
+  
 
 .debateBtn{
   position:relative;
