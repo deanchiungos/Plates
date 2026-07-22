@@ -10149,13 +10149,25 @@ function saveSelectedPhoto(file) {
               toast("Memory saved");
             };
 
-          if(memoryCloseBtn) {
-            memoryCloseBtn.onclick =
-              closeMemorySheet;
-          }
 
-          memoryOverlay.onclick =
-            function(event) {
+if(memoryCloseBtn) {
+  memoryCloseBtn.onclick =
+    closeMemorySheet;
+}
+
+var cancelMemoryBtn =
+  document.getElementById(
+    "cancelMemoryBtn"
+  );
+
+if(cancelMemoryBtn) {
+  cancelMemoryBtn.onclick =
+    closeMemorySheet;
+}
+
+memoryOverlay.onclick =
+  function(event) {
+          
               if(
                 event.target ===
                 memoryOverlay
