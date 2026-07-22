@@ -9590,11 +9590,24 @@ function saveNextTripName(){
 }
 
 
+function endCurrentTrip() {
 
-if(collectedCount() === 0) {
-  openNewGameSheet();
-}
-  
+  if(collectedCount() === 0) {
+
+    var emptyOptionsOverlay =
+      document.getElementById(
+        "gameOptionsOverlay"
+      );
+
+    if(emptyOptionsOverlay){
+      emptyOptionsOverlay.classList.add(
+        "hidden"
+      );
+    }
+
+    openNewGameSheet();
+    return;
+  }
 
   var completedTrip =
     currentTripSnapshot();
@@ -9629,17 +9642,17 @@ if(collectedCount() === 0) {
       "gameOptionsOverlay"
     );
 
-if(optionsOverlay){
-  optionsOverlay.classList.add(
-    "hidden"
-  );
+  if(optionsOverlay){
+    optionsOverlay.classList.add(
+      "hidden"
+    );
+  }
+
+  openNewGameSheet();
+
+  toast("Trip saved");
 }
-
-openNewGameSheet();
-
-toast("Trip saved");
-}
-
+  
   
 function shareSavedTrip(index) {
   var t = savedTrips[index];
