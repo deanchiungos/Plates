@@ -9592,13 +9592,23 @@ function saveNextTripName(){
 
 
   
-
-function endCurrentTrip() {
 if(collectedCount() === 0) {
-  closeGameOptions();
+
+  var optionsOverlay =
+    document.getElementById(
+      "gameOptionsOverlay"
+    );
+
+  if(optionsOverlay){
+    optionsOverlay.classList.add(
+      "hidden"
+    );
+  }
+
   openNewGameSheet();
   return;
 }
+  
 
   var completedTrip =
     currentTripSnapshot();
