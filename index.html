@@ -9859,6 +9859,7 @@ if (mapTitle) {
   mapTitle.textContent = name;
 }
 
+
 var stateDetails = document.getElementById("stateDetails");
 if(!stateDetails) return;
 
@@ -9880,17 +9881,16 @@ stateDetails.innerHTML =
     '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
   '</div>' +
 
-return (
   '<div class="notesPreview">' +
-    '<div class="title">Trip Memories</div>' +
+    '<div class="title">Memories</div>' +
     '<div class="memoryActions">' +
-      '<button class="memoryBtn memoryBtnMemory" data-state-code="' + code + '" type="button">📸 Add Memory</button>' +
+      '<button class="memoryBtn memoryBtnPhoto" data-state-code="' + code + '" type="button">📸 Add Memory</button>' +
     '</div>' +
     renderMemoryList(code) +
-  '</div>'
-);
-  
+  '</div>';
 
+
+  
 function renderBadges() {
   var badgeGrid = document.getElementById("badgeGrid");
   var badgeStats = document.getElementById("badgeStats");
