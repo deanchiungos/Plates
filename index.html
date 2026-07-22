@@ -11800,6 +11800,17 @@ var historyHtml = savedTrips.length ? savedTrips.map(function(t, i){
       : t.score + " points";
 
 
+var memoryCount =
+  (t.memories || []).length;
+
+if(memoryCount > 0){
+  label +=
+    '<br>📸 ' +
+    memoryCount +
+    ' memor' +
+    (memoryCount === 1 ? 'y' : 'ies');
+}
+  
 return '<div class="row tripRow">' +
   '<div class="grow">' +
     '<div class="title tripHistoryTitle">' + t.name + '</div>' +
