@@ -8950,7 +8950,7 @@ if(!wasCollected) {
       );
     }
 
-    else if(after === 50){
+     else if(after === 50){
       showCelebration(
         "All 50 States",
         "You completed the game",
@@ -8959,13 +8959,12 @@ if(!wasCollected) {
     }
   }
 }
-
-  updateBestForCurrentMode();
-  save();
-  render();
 }
 
-
+updateBestForCurrentMode();
+save();
+render();
+}
 function gameTypeLabel() {
   return gameType === "battle" ? "Battle" :
     gameType === "roadtrip" ? "Roadtrip" :
