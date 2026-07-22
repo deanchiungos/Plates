@@ -12728,17 +12728,35 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
   if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
-  
-var endTripBtn = document.getElementById("endTripBtn");
-if(endTripBtn){ 
-  endTripBtn.onclick = 
+
+  var endTripBtn =
+  document.getElementById(
+    "endTripBtn"
+  );
+
+if(endTripBtn){
+
+  endTripBtn.onclick =
     function(e){
-  e.preventdDefault();
-   e.stopPropogation();
-endCurrentTrip();
-};
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      endCurrentTrip();
+    };
 }
 
+  
+
+  var saveTripBtn =
+  document.getElementById(
+    "saveTripBtn"
+  );
+
+if(saveTripBtn){
+  saveTripBtn.onclick =
+    saveCurrentTrip;
+}
   
   var clearTripBtn =
   document.getElementById(
@@ -12750,8 +12768,8 @@ if(clearTripBtn){
   clearTripBtn.onclick =
     function(e){
 
-      e.preventDefault();
-      e.stopPropagation();
+    e.preventDefault();
+e.stopPropagation();
 
       openClearTripSheet();
     };
