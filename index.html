@@ -10772,6 +10772,7 @@ if(modeDropdownText) {
   modeDropdownText.textContent = gameSummaryLabel();
 }
 
+
 var tripModeTop = document.getElementById("tripModeTop");
 
 if(tripModeTop) {
@@ -10779,38 +10780,45 @@ if(tripModeTop) {
 }
 
 var c = collectedCount();
-  var pct = Math.round(c / 50 * 100);
-  var points = totalScore();
-  var sightings = totalSightings();
-  var left = Math.max(0, 50 - c);
+var pct = Math.round(c / 50 * 100);
+var points = totalScore();
+var sightings = totalSightings();
+var left = Math.max(0, 50 - c);
 
+var listCountEl =
+  document.getElementById(
+    "listCount"
+  );
 
-countText =
-  '<span class="homeFoundNumber">' +
-  c +
-  '</span>' +
-  '<span class="homeFoundRest">/50 found</span>';
+if(listCountEl){
 
-if(mode !== "classic"){
+  var countText =
+    '<span class="homeFoundNumber">' +
+    c +
+    '</span>' +
+    '<span class="homeFoundRest">/50 found</span>';
 
-  countText +=
-    ' <span class="countDivider">•</span> ' +
-    '<span class="homeScoreTotal">' +
-    points +
-    ' pts' +
-    '</span>';
+  if(mode !== "classic"){
+
+    countText +=
+      ' <span class="countDivider">•</span> ' +
+      '<span class="homeScoreTotal">' +
+      points +
+      ' pts' +
+      '</span>';
+  }
+
+  listCountEl.innerHTML =
+    countText;
 }
 
-listCountEl.innerHTML =
-  countText;
-  var canadaCountEl =
+var canadaCountEl =
   document.getElementById(
     "canadaCount"
   );
 
 if(canadaCountEl){
 
-  
   var canadaTotal =
     canadaCollectedCount();
 
@@ -10819,6 +10827,7 @@ if(canadaCountEl){
     canadaTotal +
     '/</span>13';
 }
+  
 
   document.body.classList.toggle("show-rarity", mode !== "classic");
   document.querySelectorAll(".modeExplainCard").forEach(function(card){
