@@ -12029,6 +12029,16 @@ function checkForResumeTrip() {
   
 function attachHandlers() {
 
+document
+  .querySelectorAll(".navInner button")
+  .forEach(function(btn) {
+
+    btn.onclick = function() {
+      setView(btn.dataset.view);
+    };
+
+  });
+  
 var nextTripNameCloseBtn =
   document.getElementById(
     "nextTripNameCloseBtn"
