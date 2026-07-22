@@ -9881,16 +9881,15 @@ stateDetails.innerHTML =
     '<div class="detailRow"><span>First Roadtrip</span><strong>' + firstTrip + '</strong></div>' +
   '</div>' +
 
-  '<div class="notesPreview">' +
+   '<div class="notesPreview">' +
     '<div class="title">Memories</div>' +
     '<div class="memoryActions">' +
       '<button class="memoryBtn memoryBtnPhoto" data-state-code="' + code + '" type="button">📸 Add Memory</button>' +
     '</div>' +
     renderMemoryList(code) +
   '</div>';
+}
 
-
-  
 function renderBadges() {
   var badgeGrid = document.getElementById("badgeGrid");
   var badgeStats = document.getElementById("badgeStats");
