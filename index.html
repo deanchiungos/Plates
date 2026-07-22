@@ -9544,11 +9544,23 @@ function copyShareText() {
 
 function formatShortDate(iso) {
   if(!iso) return "Unknown";
+
   var d = new Date(iso);
-  if(isNaN(d.getTime())) return "Unknown";
-  return d.toLocaleDateString(undefined, { month:"short", day:"numeric", year:"numeric" });
+
+  if(isNaN(d.getTime())){
+    return "Unknown";
+  }
+
+  return (
+    (d.getMonth() + 1) +
+    "/" +
+    d.getDate() +
+    "/" +
+    String(d.getFullYear()).slice(-2)
+  );
 }
 
+  
 function stateHistory(code) {
   return log.filter(function(x){ return x.code === code; });
 }
