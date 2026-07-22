@@ -5806,34 +5806,11 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 }
   
 
-.archiveTripOption{
-  padding-bottom:16px !important;
-}
 
-.archiveTripSub{
-  margin-bottom:14px;
-}
 
-.archiveTripAction{
-  display:flex !important;
-  align-items:center;
-  justify-content:center;
-  width:100%;
-  min-height:50px;
-  margin-top:14px !important;
-  border-radius:999px;
-  background:linear-gradient(
-    180deg,
-    #2588df,
-    #1565c0
-  );
-  color:#fff !important;
-  font-size:18px !important;
-  font-weight:950 !important;
-  line-height:1 !important;
-  box-shadow:0 6px 16px rgba(38,169,87,.22);
-  pointer-events:none; 
-}
+
+
+
   
 </style>
 </head>
@@ -7068,20 +7045,23 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
       🛣️ Current Trip
     </div>
 
- <button
-  class="newGameOption archiveTripOption"
+<button
+  class="newGameOption"
   id="endTripBtn"
   type="button">
 
   <strong>🗂️ Archive Trip</strong>
+  <span>Save it and start a new trip</span>
 
-  <span class="archiveTripSub">
-    Resume it anytime
-  </span>
+</button>
 
-  <span class="archiveTripAction">
-    Archive Trip
-  </span>
+<button
+  class="newGameOption"
+  id="saveTripBtn"
+  type="button">
+
+  <strong>💾 Save Trip</strong>
+  <span>Resume your trip anytime after saving</span>
 
 </button>
 
