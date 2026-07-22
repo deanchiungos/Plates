@@ -5619,6 +5619,10 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   line-height:1;
   white-space:nowrap;
 }
+
+.countTotal{
+  color:var(--navy);
+}
   
   
 </style>
@@ -10755,7 +10759,8 @@ if(listCountEl){
 countText =
   '<span class="found">' +
   c +
-  '/50</span>';
+  '/</span>' +
+  '<span class="countTotal">50</span>';
 
   if(mode !== "classic"){
 
