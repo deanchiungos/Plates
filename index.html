@@ -5616,77 +5616,33 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
   
 
-  
 
-.countTotal{
-  color:var(--navy);
-}
-
-  
   #listCount{
   font-size:17px !important;
+  font-weight:950 !important;
+  line-height:1 !important;
 }
 
-
-
-
-.countDivider{
-  color:rgba(10,31,68,.45);
-  margin:0 2px;
-}
-
-
-  .homeFoundNumber,
-.homeFoundRest,
-.homeScoreTotal{
-  font-size:17px;
-  font-weight:950;
-  line-height:1;
-}
-
-.homeScoreTotal{
-  display:inline;
-  margin-left:1px;
-  padding:0;
-  background:transparent;
-  color:var(--green);
-  font-size:17px;
-  font-weight:950;
-  line-height:1;
-  white-space:nowrap;
-}
-
-  
-  
-  
-  #tripBonusCount{
-  display:inline;
-  font-size:15px;
-  color:var(--green);
-  font-weight:900;
-}
-
-#tripBonusCount:not(:empty)::before{
-  content:" • ";
-  color:rgba(10,31,68,.45);
-}
-
-.homeFoundNumber{
-  color:var(--green);
-}
-
-.homeFoundRest{
-  color:var(--navy);
-}
-
-  #listCount,
 #listCount .homeFoundNumber,
 #listCount .homeFoundRest,
 #listCount .countDivider,
 #listCount .homeScoreTotal{
-  font-size:17px !important;
-  font-weight:950 !important;
-  line-height:1 !important;
+  font-size:inherit !important;
+  font-weight:inherit !important;
+  line-height:inherit !important;
+}
+
+#listCount .homeFoundNumber{
+  color:var(--green) !important;
+}
+
+#listCount .homeFoundRest{
+  color:var(--navy) !important;
+}
+
+#listCount .countDivider{
+  color:rgba(10,31,68,.45) !important;
+  margin:0 2px !important;
 }
 
 #listCount .homeScoreTotal{
@@ -5696,6 +5652,7 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   border-radius:0 !important;
   background:transparent !important;
   color:var(--green) !important;
+  white-space:nowrap !important;
 }
   
 </style>
