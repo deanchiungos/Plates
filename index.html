@@ -492,16 +492,15 @@ body.show-rarity .state.rare:not(.collected) {
   font-size: 22px;
 }
 
+
 #listCount{
   display:flex;
   align-items:center;
-  justify-content:center;
-  gap:8px;
+  gap:6px;
   flex-wrap:nowrap;
-  white-space:nowrap;
-  font-size:20px !important;
 }
 
+  
 .mapDetailsBox {
   margin-top: 6px;
   padding: 0;
@@ -10755,10 +10754,10 @@ var listCountEl =
 
 if(listCountEl){
 
-  var countText =
-    '<span class="found">' +
-    c +
-    '/</span>50 states found';
+countText =
+  '<span class="found">' +
+  c +
+  '/50</span>';
 
   if(mode !== "classic"){
 
