@@ -9778,7 +9778,7 @@ function addMemoryPhoto(code) {
 
 
 
-function saveSelectedPhoto(file) {
+  function saveSelectedPhoto(file) {
   if(!file || !pendingPhotoStateCode) return;
 
   var code = pendingPhotoStateCode;
@@ -9786,53 +9786,115 @@ function saveSelectedPhoto(file) {
   var reader = new FileReader();
 
   reader.onload = function(e) {
-    var caption =
-      prompt(
-        "Photo caption:",
-        name + " plate"
+    var image = new Image();
+
+    image.onload = function() {
+      var maxSize = 900;
+      var width = image.width;
+      var height = image.height;
+
+      if(width > height && width > maxSize) {
+        height =
+          Math.round(
+            height * maxSize / width
+          );
+
+        width = maxSize;
+      }
+
+      if(height >= width && height > maxSize) {
+        width =
+          Math.round(
+            width * maxSize / height
+          );
+
+        height = maxSize;
+      }
+
+      var canvas =
+        document.createElement("canvas");
+
+      canvas.width = width;
+      canvas.height = height;
+
+      var ctx =
+        canvas.getContext("2d");
+
+      ctx.drawImage(
+        image,
+        0,
+        0,
+        width,
+        height
       );
 
-    if(caption === null) {
-      caption = "";
-    }
+      var compressedPhoto =
+        canvas.toDataURL(
+          "image/jpeg",
+          0.72
+        );
 
-    tripMemories.unshift({
-      id:
-        "m" +
-        Date.now() +
-        Math.floor(
-          Math.random() * 1000
-        ),
+      var caption =
+        prompt(
+          "Photo caption:",
+          name + " plate"
+        );
 
-      type: "photo",
+      if(caption === null) {
+        caption = "";
+      }
 
-      tripId: tripId,
-      trip: tripName,
+      tripMemories.unshift({
+        id:
+          "m" +
+          Date.now() +
+          Math.floor(
+            Math.random() * 1000
+          ),
 
-      stateCode: code,
-      stateName: name,
+        type: "photo",
 
-      title:
-        caption.trim() ||
-        "Photo memory",
+        tripId: tripId,
+        trip: tripName,
 
-      caption:
-        caption.trim(),
+        stateCode: code,
+        stateName: name,
 
-      photo:
-        e.target.result,
+        title:
+          caption.trim() ||
+          "Photo memory",
 
-      ts:
-        new Date().toISOString()
-    });
+        caption:
+          caption.trim(),
 
-    pendingPhotoStateCode = "";
+        photo:
+          compressedPhoto,
 
-    save();
-    render();
-    selectMapState(code);
+        ts:
+          new Date().toISOString()
+      });
 
-    toast("Memory saved");
+      pendingPhotoStateCode = "";
+
+      try {
+        save();
+      } catch(err) {
+        tripMemories.shift();
+
+        toast(
+          "Photo could not be saved"
+        );
+
+        return;
+      }
+
+      render();
+      selectMapState(code);
+
+      toast("Memory saved");
+    };
+
+    image.src = e.target.result;
   };
 
   reader.readAsDataURL(file);
