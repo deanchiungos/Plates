@@ -9594,14 +9594,11 @@ function saveNextTripName(){
   
 
 function endCurrentTrip() {
-  if(
-    collectedCount() === 0 &&
-    !confirm(
-      "Save this trip with 0 states?"
-    )
-  ) {
-    return;
-  }
+if(collectedCount() === 0) {
+  closeGameOptions();
+  openNewGameSheet();
+  return;
+}
 
   var completedTrip =
     currentTripSnapshot();
@@ -9766,7 +9763,9 @@ function resumePausedTrip() {
     paused.log || [];
 
 tripMemories =
-  paused.memories || [];
+  paused.memories ||
+  tripMemories ||
+  [];
   
   tripStartedAt =
     paused.startedAt ||
@@ -9789,20 +9788,38 @@ tripMemories =
   
 function saveCurrentTrip(){
 
-  localStorage.setItem(
-    "platesPausedTrip",
-    JSON.stringify(
-      activeTripData()
-    )
-  );
+  var pausedTrip =
+    activeTripData();
 
-  save();
+  delete pausedTrip.memories;
 
-  toast(
-    "Trip saved for later"
-  );
+  try {
+
+    localStorage.setItem(
+      "platesPausedTrip",
+      JSON.stringify(
+        pausedTrip
+      )
+    );
+
+    save();
+
+    toast(
+      "Trip saved for later"
+    );
+
+  } catch(err) {
+
+    console.error(
+      "Save Trip failed:",
+      err
+    );
+
+    toast(
+      "Trip could not be saved"
+    );
+  }
 }
-
   
 function shareText() {
   return "PLATES\n" + currentPlayer().name + " - " + tripName + "\n" +
