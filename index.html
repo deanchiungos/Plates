@@ -5572,7 +5572,27 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   margin-bottom:16px;
 }
 
+.state{
+  flex-direction:column !important;
+  gap:2px !important;
+  padding:6px 2px !important;
+}
 
+.state .value{
+  position:static !important;
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  margin:0 !important;
+  color:var(--navy) !important;
+  font-size:11px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+}
+
+.state.collected .value{
+  color:#fff !important;
+}
   
   
 </style>
