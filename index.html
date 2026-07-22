@@ -9777,6 +9777,7 @@ function addMemoryPhoto(code) {
 
 
 
+
 function saveSelectedPhoto(file) {
   if(!file || !pendingPhotoStateCode) return;
 
@@ -9785,31 +9786,58 @@ function saveSelectedPhoto(file) {
   var reader = new FileReader();
 
   reader.onload = function(e) {
-    var caption = prompt("Photo caption:", name + " plate");
-    if(caption === null) caption = "";
+    var caption =
+      prompt(
+        "Photo caption:",
+        name + " plate"
+      );
+
+    if(caption === null) {
+      caption = "";
+    }
 
     tripMemories.unshift({
-      id:"m" + Date.now() + Math.floor(Math.random() * 1000),
-      type:"photo",
-      trip:tripName,
-      stateCode:code,
-      stateName:name,
-      title:caption.trim() || "Photo memory",
-      caption:caption.trim(),
-      photo:e.target.result,
-      ts:new Date().toISOString()
+      id:
+        "m" +
+        Date.now() +
+        Math.floor(
+          Math.random() * 1000
+        ),
+
+      type: "photo",
+
+      tripId: tripId,
+      trip: tripName,
+
+      stateCode: code,
+      stateName: name,
+
+      title:
+        caption.trim() ||
+        "Photo memory",
+
+      caption:
+        caption.trim(),
+
+      photo:
+        e.target.result,
+
+      ts:
+        new Date().toISOString()
     });
 
     pendingPhotoStateCode = "";
+
     save();
     render();
     selectMapState(code);
-    toast("Photo saved");
+
+    toast("Memory saved");
   };
 
   reader.readAsDataURL(file);
 }
-
+  
 function deleteMemory(id) {
   var item = tripMemories.find(function(m){
     return m.id === id;
