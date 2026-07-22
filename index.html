@@ -5663,6 +5663,68 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   color:var(--green) !important;
   white-space:nowrap !important;
 }
+
+
+.celebrationBox{
+  max-width:340px !important;
+  padding:26px 22px 24px !important;
+  border:3px solid var(--badge-yellow) !important;
+  background:
+    linear-gradient(
+      180deg,
+      #fff8d9 0%,
+      #ffffff 58%
+    ) !important;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.28),
+    0 0 30px rgba(255,217,61,.35) !important;
+}
+
+.celebrationEyebrow{
+  color:#a87900;
+  font-size:13px;
+  font-weight:950;
+  letter-spacing:1.5px;
+  margin-bottom:14px;
+}
+
+.celebrationBadgeIcon{
+  width:82px;
+  height:82px;
+  margin:0 auto 14px;
+  border-radius:999px;
+  background:#fff;
+  border:3px solid var(--badge-yellow);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  box-shadow:0 8px 20px rgba(7,55,99,.12);
+}
+
+.celebrationBox h2{
+  margin:0 0 8px !important;
+  color:var(--navy) !important;
+  font-size:28px !important;
+  font-weight:950 !important;
+}
+
+.celebrationBox p{
+  margin:0 0 22px !important;
+  color:var(--muted) !important;
+  font-size:16px !important;
+  font-weight:800 !important;
+  line-height:1.35 !important;
+}
+
+.celebrationBtn{
+  width:100% !important;
+  max-width:260px !important;
+  min-height:54px !important;
+  border-radius:999px !important;
+}
+
+
   
 </style>
 </head>
@@ -5966,22 +6028,42 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   </div>
 </div>
 
-<div class="celebrationOverlay"
+
+  <div class="celebrationOverlay"
      id="celebrationOverlay"
      onclick="this.classList.remove('show')">
 
-  <div class="celebrationBox">
-    <h2 id="celebrationTitle">Nice Find!</h2>
-    <p id="celebrationText">You added a new plate</p>
+  <div class="celebrationBox"
+       onclick="event.stopPropagation()">
+
+    <div class="celebrationEyebrow">
+      BADGE UNLOCKED
+    </div>
+
+    <div class="celebrationBadgeIcon"
+         id="celebrationIcon">
+      🧢
+    </div>
+
+    <h2 id="celebrationTitle">
+      Rookie Card
+    </h2>
+
+    <p id="celebrationText">
+      Collect your first state
+    </p>
 
     <button class="primary celebrationBtn"
             id="celebrationClose"
             type="button">
-      Keep Playing
+      🏅 Awesome!
     </button>
+
   </div>
 
 </div>
+
+  
 
 <div class="overlay hidden" id="badgeOverlay">
 
@@ -8678,13 +8760,30 @@ function toast(text) {
   window.toastTimer = setTimeout(function(){ el.classList.remove("show"); }, 1300);
 }
 
-function showCelebration(title, text) {
-  document.getElementById("celebrationTitle").textContent = title;
-  document.getElementById("celebrationText").textContent = text;
-  document.getElementById("celebrationOverlay").classList.add("show");
+function showCelebration(
+  title,
+  text,
+  icon
+){
+
+  document.getElementById(
+    "celebrationTitle"
+  ).textContent = title;
+
+  document.getElementById(
+    "celebrationText"
+  ).textContent = text;
+
+  document.getElementById(
+    "celebrationIcon"
+  ).textContent = icon || "🏅";
+
+  document.getElementById(
+    "celebrationOverlay"
+  ).classList.add("show");
 }
 
-
+  
   
 function badgeCount(c) {
   var total = 0;
@@ -8830,39 +8929,43 @@ if(!wasCollected) {
     if(after === 1){
       showCelebration(
         "First Plate",
-        "You started your collection with " + name
+        "You started your collection with " + name,
+        "🧢"
       );
     }
 
     else if(after === 10){
       showCelebration(
         "10 States",
-        "You've found 10 states on this trip"
+        "You've found 10 states on this trip",
+        "🧭"
       );
     }
 
     else if(after === 25){
       showCelebration(
         "Halfway There",
-        "25 states collected"
+        "25 states collected",
+        "🧩"
       );
     }
 
     else if(after === 50){
       showCelebration(
         "All 50 States",
-        "You completed the game"
+        "You completed the game",
+        "🏆"
       );
     }
   }
 }
-  }
 
   updateBestForCurrentMode();
   save();
   render();
 }
 
+  
 function gameTypeLabel() {
   return gameType === "battle" ? "Battle" :
     gameType === "roadtrip" ? "Roadtrip" :
