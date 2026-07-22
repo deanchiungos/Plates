@@ -1896,8 +1896,10 @@ body.show-rarity .svgState.rare:not(.hit) + .svgLabel {
 #primaryNumber {
   color: var(--green) !important;
   margin-right: -4px;
+  font-size: inherit !important;
 }
 
+  
 #outOf .found{
   color: var(--green) !important;
 }
@@ -5613,18 +5615,26 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 }
 
 
+
+
 .countDivider{
   color:rgba(10,31,68,.45);
-  font-size:.85em;
-  margin:0 1px;
+  margin:0 2px;
 }
-  
+
+
+  .homeFoundNumber,
+.homeFoundRest,
+.homeScoreTotal{
+  font-size:17px;
+  font-weight:950;
+  line-height:1;
+}
 
 .homeScoreTotal{
   display:inline;
-  margin-left:0;
+  margin-left:1px;
   padding:0;
-  border-radius:0;
   background:transparent;
   color:var(--green);
   font-size:17px;
@@ -5632,6 +5642,8 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   line-height:1;
   white-space:nowrap;
 }
+
+  
   
   
   #tripBonusCount{
@@ -5644,6 +5656,14 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 #tripBonusCount:not(:empty)::before{
   content:" • ";
   color:rgba(10,31,68,.45);
+}
+
+.homeFoundNumber{
+  color:var(--green);
+}
+
+.homeFoundRest{
+  color:var(--navy);
 }
   
 </style>
@@ -10765,40 +10785,24 @@ var c = collectedCount();
   var left = Math.max(0, 50 - c);
 
 
-  var featured = document.getElementById("featuredBadge");
-if (featured) {
-  featured.style.display = unlockedBadges > 0 ? "block" : "none";
-}
-
-var listCountEl =
-  document.getElementById(
-    "listCount"
-  );
-
-if(listCountEl){
-
 countText =
-  '<span class="found">' +
+  '<span class="homeFoundNumber">' +
   c +
-  '/</span>' +
-  '<span class="countTotal">50 found</span>';
+  '</span>' +
+  '<span class="homeFoundRest">/50 found</span>';
 
-  if(mode !== "classic"){
+if(mode !== "classic"){
 
-    countText +=
-  ' <span class="countDivider">•</span> ' +
-  '<span class="homeScoreTotal">' +
-  points +
-  ' pts' +
-  '</span>';
-  }
-
-  
-
-  listCountEl.innerHTML =
-    countText;
+  countText +=
+    ' <span class="countDivider">•</span> ' +
+    '<span class="homeScoreTotal">' +
+    points +
+    ' pts' +
+    '</span>';
 }
 
+listCountEl.innerHTML =
+  countText;
   var canadaCountEl =
   document.getElementById(
     "canadaCount"
