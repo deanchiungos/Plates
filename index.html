@@ -11119,23 +11119,25 @@ if(mode === "classic"){
 if(mode === "weighted"){
 
   if(tripPrimaryNumber){
-    tripPrimaryNumber.textContent =
-      points;
+    tripPrimaryNumber.textContent = "";
   }
 
   if(tripBonusCount){
-    tripBonusCount.textContent =
-      c + "/50 states found";
+    tripBonusCount.textContent = "";
   }
 
   if(tripFoundText){
-    tripFoundText.textContent =
-      "points";
+    tripFoundText.textContent = "";
   }
 
   if(tripProgressBar){
     tripProgressBar.style.display =
-      "none";
+      "block";
+  }
+
+  if(tripProgressFill){
+    tripProgressFill.style.width =
+      pct + "%";
   }
 }
 
