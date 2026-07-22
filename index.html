@@ -9428,11 +9428,11 @@ function currentTripSnapshot() {
       JSON.stringify(log)
     ),
 
-    memories: tripMemories.filter(
-      function(m) {
-        return m.trip === tripName;
-      }
-    ),
+memoryCount: tripMemories.filter(
+  function(m) {
+    return m.trip === tripName;
+  }
+).length,
 
     startedAt: tripStartedAt,
     updatedAt: tripUpdatedAt,
