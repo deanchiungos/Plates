@@ -492,8 +492,14 @@ body.show-rarity .state.rare:not(.collected) {
   font-size: 22px;
 }
 
-#listCount {
-  padding-right: 4px;
+#listCount{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+  font-size:20px !important;
 }
 
 .mapDetailsBox {
@@ -5602,17 +5608,19 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   white-space:nowrap;
 }
 
+  
 .homeScoreTotal{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:6px 10px;
+  padding:3px 8px;
   border-radius:999px;
   background:#eaf7ec;
   color:var(--green);
-  font-size:15px;
+  font-size:13px;
   font-weight:950;
   line-height:1;
+  white-space:nowrap;
 }
   
   
