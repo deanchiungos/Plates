@@ -9206,8 +9206,7 @@ function currentTripSnapshot() {
   },100);
 }
 
-
-function closeNextTripNameSheet(){
+  function closeNextTripNameSheet(){
 
   var overlay =
     document.getElementById(
@@ -9215,22 +9214,11 @@ function closeNextTripNameSheet(){
     );
 
   if(overlay){
-    overlay.classList.add("hidden");
-  }
-}
-
-function closeNextTripNameSheet(){
-
-  document
-    .getElementById(
-      "nextTripNameOverlay"
-    )
-    .classList.add(
+    overlay.classList.add(
       "hidden"
     );
+  }
 }
-
-
 
 function openTripNameSheet(){
 
@@ -9254,7 +9242,6 @@ function openTripNameSheet(){
   );
 }
 
-
 function closeTripNameSheet(){
 
   document
@@ -9265,9 +9252,8 @@ function closeTripNameSheet(){
       "hidden"
     );
 }
-  
 
-  function saveNextTripName(){
+function saveNextTripName(){
 
   var overlay =
     document.getElementById(
@@ -9311,9 +9297,10 @@ function closeTripNameSheet(){
 
   } else {
 
-    tripName =
+    beginFreshTrip(
       nextName ||
-      "New Roadtrip";
+      "New Roadtrip"
+    );
 
     toast("New trip started");
   }
@@ -9329,7 +9316,9 @@ function closeTripNameSheet(){
 }
 
 
+
   
+
 function endCurrentTrip() {
   if(
     collectedCount() === 0 &&
@@ -9366,19 +9355,25 @@ function endCurrentTrip() {
 
   tripCount += 1;
 
-  var nextName =
-    prompt(
-      "Name your next trip:",
-      "New Roadtrip"
-    ) || "New Roadtrip";
-
-  beginFreshTrip(nextName);
-
   save();
-  render();
 
-  toast("Trip saved");
+  var optionsOverlay =
+    document.getElementById(
+      "gameOptionsOverlay"
+    );
+
+  if(optionsOverlay){
+    optionsOverlay.classList.add(
+      "hidden"
+    );
+  }
+
+  openNextTripNameSheet();
+
+  toast("Trip archived");
 }
+  
+  
   
 function shareSavedTrip(index) {
   var t = savedTrips[index];
