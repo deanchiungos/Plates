@@ -12350,6 +12350,117 @@ if(gameOptionsCloseBtn){
   gameOptionsCloseBtn.onclick = closeGameOptions;
 }
 
+  var saveTripBtn =
+  document.getElementById("saveTripBtn");
+
+if(saveTripBtn){
+  saveTripBtn.onclick = function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    closeGameOptions();
+    saveCurrentTrip();
+  };
+}
+
+
+var endTripBtn =
+  document.getElementById("endTripBtn");
+
+if(endTripBtn){
+  endTripBtn.onclick = function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    closeGameOptions();
+    endCurrentTrip();
+  };
+}
+
+
+var renameTripBtn =
+  document.getElementById("renameTripBtn");
+
+if(renameTripBtn){
+  renameTripBtn.onclick = function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    closeGameOptions();
+    openTripNameSheet();
+  };
+}
+
+
+var changeModeBtn =
+  document.getElementById("changeModeBtn");
+
+if(changeModeBtn){
+  changeModeBtn.onclick = function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    closeGameOptions();
+
+    var newGameOverlay =
+      document.getElementById(
+        "newGameOverlay"
+      );
+
+    if(newGameOverlay){
+      newGameOverlay.dataset.mode =
+        "change";
+    }
+
+    openNewGameSheet();
+  };
+}
+
+
+var clearTripBtn =
+  document.getElementById("clearTripBtn");
+
+if(clearTripBtn){
+  clearTripBtn.onclick = function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    openClearTripSheet();
+  };
+}
+
+
+var confirmClearTripBtn =
+  document.getElementById(
+    "confirmClearTripBtn"
+  );
+
+if(confirmClearTripBtn){
+  confirmClearTripBtn.onclick =
+    clearTrip;
+}
+
+
+var cancelClearTripBtn =
+  document.getElementById(
+    "cancelClearTripBtn"
+  );
+
+if(cancelClearTripBtn){
+  cancelClearTripBtn.onclick =
+    closeClearTripSheet;
+}
+
+
+var clearTripCloseBtn =
+  document.getElementById(
+    "clearTripCloseBtn"
+  );
+
+if(clearTripCloseBtn){
+  clearTripCloseBtn.onclick =
+    closeClearTripSheet;
+}
   
 var inviteFriendsBtn = document.getElementById("inviteFriendsBtn");
 
