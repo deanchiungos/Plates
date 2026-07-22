@@ -12350,63 +12350,7 @@ if(gameOptionsCloseBtn){
   gameOptionsCloseBtn.onclick = closeGameOptions;
 }
 
-  var saveTripBtn =
-  document.getElementById("saveTripBtn");
-
-if(saveTripBtn){
-  saveTripBtn.onclick = function(){
-    closeGameOptions();
-    saveCurrentTrip();
-  };
-}
-
-
-var endTripBtn =
-  document.getElementById("endTripBtn");
-
-if(endTripBtn){
-  endTripBtn.onclick = function(){
-    closeGameOptions();
-    endCurrentTrip();
-  };
-}
-
-
-var renameTripBtn =
-  document.getElementById("renameTripBtn");
-
-if(renameTripBtn){
-  renameTripBtn.onclick = function(){
-    closeGameOptions();
-    openTripNameSheet();
-  };
-}
-
-
-var changeModeBtn =
-  document.getElementById("changeModeBtn");
-
-if(changeModeBtn){
-  changeModeBtn.onclick = function(){
-    closeGameOptions();
-    openNewGameSheet();
-  };
-}
-
-
-var clearTripBtn =
-  document.getElementById("clearTripBtn");
-
-if(clearTripBtn){
-  clearTripBtn.onclick = function(){
-    closeGameOptions();
-
-    document
-      .getElementById("clearTripOverlay")
-      .classList.remove("hidden");
-  };
-}
-
+  
 var inviteFriendsBtn = document.getElementById("inviteFriendsBtn");
 
 if(inviteFriendsBtn){
