@@ -5773,6 +5773,36 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   max-width:260px;
   margin:18px auto 0 !important;
 }
+
+  .memoryPreview{
+  display:block;
+  width:100%;
+  max-height:240px;
+  object-fit:cover;
+  border:1px solid var(--line);
+  border-radius:18px;
+  margin:0 0 16px;
+}
+
+.memoryPreview.hidden{
+  display:none;
+}
+
+#memoryOverlay .formGroup{
+  margin-bottom:8px;
+}
+
+#memoryOverlay .formGroup input{
+  width:100%;
+  min-height:56px;
+  border:2px solid #d8e2ef;
+  border-radius:18px;
+  padding:0 16px;
+  background:#fff;
+  color:var(--navy);
+  font-size:17px;
+  font-weight:850;
+}
   
   
 </style>
@@ -5784,6 +5814,47 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 <div class="toast" id="toast">Collected</div>
 <input id="memoryPhotoInput" type="file" accept="image/*" style="display:none">
 
+<div
+  id="memoryOverlay"
+  class="newGameOverlay hidden">
+
+  <div class="newGameSheet">
+
+    <div class="newGameHandle"></div>
+
+    <div class="newGameTitle">
+      📸 Add Memory
+    </div>
+
+    <img
+      id="memoryPreview"
+      class="memoryPreview hidden">
+
+    <div class="formGroup">
+      <label>Caption (optional)</label>
+
+      <input
+        id="memoryCaptionInput"
+        type="text"
+        placeholder="Kentucky plate">
+    </div>
+
+    <button
+      id="saveMemoryBtn"
+      class="newGameBtn">
+      Save Memory
+    </button>
+
+    <button
+      id="cancelMemoryBtn"
+      class="newGameBtn">
+      Cancel
+    </button>
+
+  </div>
+</div>
+
+  
 <div class="onboardingOverlay" id="onboardingOverlay">
   <div class="onboardingSheet">
     <div class="onboardingPlate">
