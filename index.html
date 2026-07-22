@@ -11153,9 +11153,13 @@ if(mode === "classic") {
         : "";
   }
 
-  if(progressBarEl){
-    progressBarEl.style.display = "block";
-  }
+ if(progressBarEl){
+  progressBarEl.style.display = "block";
+}
+
+if(fillEl){
+  fillEl.style.width = pct + "%";
+}
 
   if(fillEl){
     fillEl.style.width = pct + "%";
@@ -11180,9 +11184,13 @@ if(mode === "weighted") {
     bonusEl.textContent = "";
   }
 
-  if(progressBarEl){
-    progressBarEl.style.display = "none";
-  }
+if(progressBarEl){
+  progressBarEl.style.display = "block";
+}
+
+if(fillEl){
+  fillEl.style.width = pct + "%";
+}
 }
 
 if(mode === "unlimited") {
@@ -11191,6 +11199,7 @@ if(mode === "unlimited") {
     primaryNumberEl.textContent = points;
   }
 
+  
   if(outOfEl){
     outOfEl.style.display = "none";
   }
