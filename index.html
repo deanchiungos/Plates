@@ -9729,6 +9729,7 @@ function getPausedTrip() {
   );
 }
 
+
 function resumePausedTrip() {
   var paused =
     getPausedTrip();
@@ -9786,7 +9787,23 @@ tripMemories =
   toast("Game resumed");
 }
   
+function saveCurrentTrip(){
 
+  localStorage.setItem(
+    "platesPausedTrip",
+    JSON.stringify(
+      activeTripData()
+    )
+  );
+
+  save();
+
+  toast(
+    "Trip saved for later"
+  );
+}
+
+  
 function shareText() {
   return "PLATES\n" + currentPlayer().name + " - " + tripName + "\n" +
     "I found " + collectedCount() + " of 50 states\n" +
@@ -12372,7 +12389,7 @@ var changeModeBtn =
 if(changeModeBtn){
   changeModeBtn.onclick = function(){
     closeGameOptions();
-    openModeSheet();
+    openNewGameSheet();
   };
 }
 
