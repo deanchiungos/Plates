@@ -8443,15 +8443,16 @@ function formatTripDate(iso) {
     return "";
   }
 
-  return date.toLocaleDateString(
-    undefined,
-    {
-      month: "short",
-      day: "numeric",
-      year: "numeric"
-    }
+  return (
+    (date.getMonth() + 1) +
+    "/" +
+    date.getDate() +
+    "/" +
+    String(date.getFullYear()).slice(-2)
   );
 }
+
+  
 
 function formatTripDateRange(startIso, endIso) {
   var start = formatTripDate(startIso);
