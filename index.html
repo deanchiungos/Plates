@@ -9708,11 +9708,13 @@ function stateNameForCode(code) {
   return btn ? btn.dataset.name : code;
 }
 
-function memoriesForState(code) {
+function memoriesForState(code){
   return tripMemories.filter(function(m){
-    return m.trip === tripName && m.stateCode === code;
+    return m.tripId === tripId &&
+           m.stateCode === code;
   });
 }
+  
 
 function renderMemoryList(code) {
   var items = memoriesForState(code);
