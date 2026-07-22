@@ -5824,14 +5824,15 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   border-radius:999px;
   background:linear-gradient(
     180deg,
-    #35b964,
-    #239d4f
+    #2588df,
+    #1565c0
   );
   color:#fff !important;
   font-size:18px !important;
   font-weight:950 !important;
   line-height:1 !important;
   box-shadow:0 6px 16px rgba(38,169,87,.22);
+  pointer-events:none; 
 }
   
 </style>
@@ -12747,10 +12748,18 @@ if(e.target.classList.contains("shareTripBtnSmall")) {
   if(bestStatBtn) bestStatBtn.onclick = function(){ setView("trips"); };
   var onboardingDone = document.getElementById("onboardingDone");
   if(onboardingDone) onboardingDone.onclick = dismissOnboarding;
+  
 var endTripBtn = document.getElementById("endTripBtn");
-if(endTripBtn) endTripBtn.onclick = endCurrentTrip;
+if(endTripBtn){ 
+  endTripBtn.onclick = 
+    function(e){
+  e.preventdDefault();
+   e.stopPropogation();
+endCurrentTrip();
+};
+}
 
-
+  
   var clearTripBtn =
   document.getElementById(
     "clearTripBtn"
