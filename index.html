@@ -494,7 +494,7 @@ body.show-rarity .state.rare:not(.collected) {
 
 
 #listCount{
-  font-size:20px !important;
+  font-size:18px !important;
 }
 
 
@@ -5615,12 +5615,21 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   white-space:nowrap;
 }
 
+  
+
 .countTotal{
   color:var(--navy);
 }
 
 #listCount{
   font-size:20px !important;
+}
+
+
+  .countDivider{
+  color:rgba(10,31,68,.45);
+  font-size:.85em;
+  margin:0 4px;
 }
   
   
@@ -10764,11 +10773,14 @@ countText =
   if(mode !== "classic"){
 
     countText +=
-      '<span class="homeScoreTotal">' +
-      points +
-      ' pts' +
-      '</span>';
+  ' <span class="countDivider">•</span> ' +
+  '<span class="homeScoreTotal">' +
+  points +
+  ' pts' +
+  '</span>';
   }
+
+  
 
   listCountEl.innerHTML =
     countText;
