@@ -11214,9 +11214,13 @@ if(mode === "unlimited") {
     bonusEl.textContent = "";
   }
 
-  if(progressBarEl){
-    progressBarEl.style.display = "none";
-  }
+if(progressBarEl){
+  progressBarEl.style.display = "block";
+}
+
+if(fillEl){
+  fillEl.style.width = pct + "%";
+}
 }
 
 updateBestForCurrentMode();
@@ -11229,6 +11233,7 @@ if(bestTripEl){
     bestForCurrentMode();
 }
 
+  
 var tripCountEl =
   document.getElementById("tripCount");
 
