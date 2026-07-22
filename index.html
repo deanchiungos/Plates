@@ -2623,16 +2623,31 @@ html, body {
   text-align: center;
 }
 
-.vanityPlatePreview {
-  width: 100%;
-  max-width: 320px;
-  margin: 14px auto;
-  padding: 12px 14px 10px;
-  border-radius: 18px;
-  border: 3px solid var(--navy);
-  background: linear-gradient(180deg,#ffffff,#eef6ff);
-  box-shadow: 0 8px 20px rgba(10,31,68,.12);
-  color: var(--navy);
+.vanityPlatePreview{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  aspect-ratio:2/1;
+
+  margin:18px auto;
+  padding:16px 18px 12px;
+
+  border-radius:20px;
+  border:3px solid var(--navy);
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f6faff 45%,
+      #eef6ff 100%
+    );
+
+  box-shadow:
+    0 10px 24px rgba(10,31,68,.16),
+    inset 0 2px 0 rgba(255,255,255,.8);
+
+  overflow:hidden;
 }
 
 .playerPlate {
@@ -2669,26 +2684,24 @@ html, body {
   color: #b0322f;
 }
 
-.plateState {
-  text-align: center;
-  font-size: 10px;
-  /* was 12px */
-  font-weight: 900;
-  /* was 950 */
-  letter-spacing: 2.5px;
-  /* was 3px */
-  margin-bottom: 8px;
-  /* was 10px */
+.plateState{
+  font-size:11px;
+  letter-spacing:3px;
+  margin-bottom:10px;
+  color:#b0322f;
+  margin-top:10px;
 }
 
-.plateText {
-  text-align: center;
-  font-size: 38px;
-  font-weight: 950;
-  letter-spacing: 2px;
-  line-height: 1;
-  white-space: nowrap;
-  color: var(--navy);
+  .plateText{
+  font-size:44px;
+  font-weight:950;
+  letter-spacing:4px;
+  line-height:1;
+  color:var(--navy);
+
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.7),
+    0 2px 3px rgba(0,0,0,.16);
 }
 
 .plateTagline {
@@ -5806,7 +5819,33 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 }
   
 
+.plateSticker{
+  position:absolute;
+  top:12px;
 
+  width:34px;
+  height:24px;
+
+  border-radius:6px;
+
+  background:#fff;
+  border:2px solid rgba(0,0,0,.12);
+
+  font-size:10px;
+  font-weight:900;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.plateSticker.left{
+  left:14px;
+}
+
+.plateSticker.right{
+  right:14px;
+}
 
 
 
@@ -7329,14 +7368,27 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   <div class="panelTitle profileTitle">
     <span>👤 Profile</span>
   </div>
+<div class="vanityPlatePreview profilePlateHero">
 
+  <div class="plateSticker left">JUL</div>
+  <div class="plateSticker right">26</div>
 
-    <div class="vanityPlatePreview profilePlateHero">
   <div class="plateState">NEW YORK</div>
-  <div class="plateText" id="plateTextPreview">DCHIUNGOS</div>
-  <div class="plateTagline">VANITY PLATE</div>
+
+  <div
+    class="plateText"
+    id="plateTextPreview">
+    DCHIUNGOS
+  </div>
+
+  <div class="plateTagline">
+    PLATES MEMBER
+  </div>
+
 </div>
 
+
+  
 
 
 <div class="profileInfo">
