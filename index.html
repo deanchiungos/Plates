@@ -5847,7 +5847,175 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   right:14px;
 }
 
+.vanityPlatePreview.profilePlateHero{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  aspect-ratio:2/1;
 
+  margin:18px auto 22px;
+  padding:22px 26px 14px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  border:4px solid var(--navy);
+  border-radius:22px;
+
+  background:
+    radial-gradient(
+      circle at 50% 18%,
+      rgba(255,255,255,.95),
+      transparent 40%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7fbff 48%,
+      #eaf3ff 100%
+    );
+
+  box-shadow:
+    0 10px 24px rgba(7,55,99,.18),
+    inset 0 0 0 2px rgba(7,55,99,.08),
+    inset 0 2px 0 rgba(255,255,255,.95);
+
+  overflow:hidden;
+}
+
+.vanityPlatePreview.profilePlateHero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:28%;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(21,119,210,.13),
+      rgba(21,119,210,0)
+    );
+}
+
+.profilePlateHero .plateState{
+  margin:0 0 13px;
+
+  color:#b0322f;
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:3px;
+  text-align:center;
+}
+
+.profilePlateHero .plateText{
+  font-size:44px;
+  font-weight:950;
+  letter-spacing:4px;
+  line-height:1;
+
+  text-align:center;
+  white-space:nowrap;
+
+  text-shadow:
+    0 1px 0 #fff,
+    0 2px 0 rgba(7,55,99,.18),
+    0 3px 4px rgba(7,55,99,.16);
+}
+
+.plateBottomRow{
+  position:absolute;
+  left:16px;
+  right:16px;
+  bottom:12px;
+
+  display:grid;
+  grid-template-columns:38px 1fr 38px;
+  align-items:center;
+}
+
+.profilePlateHero .plateTagline{
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:2.5px;
+  text-align:center;
+  color:var(--muted);
+}
+
+.profilePlateHero .plateSticker{
+  width:38px;
+  height:25px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:5px;
+  border:1px solid rgba(7,55,99,.22);
+
+  font-size:10px;
+  font-weight:900;
+}
+
+.monthSticker{
+  background:#f7d74b;
+  color:#503d00;
+}
+
+.dateSticker{
+  background:#dcecff;
+  color:var(--navy);
+}
+
+.profilePlateHero .plateBolt{
+  position:absolute;
+  top:11px;
+
+  width:13px;
+  height:13px;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #fff,
+      #dce2e8 40%,
+      #9aa5b1 100%
+    );
+
+  border:1px solid rgba(7,31,55,.28);
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.9),
+    0 1px 2px rgba(7,31,55,.22);
+}
+
+.profilePlateHero .plateBolt::after{
+  content:"";
+  position:absolute;
+
+  left:2px;
+  right:2px;
+  top:5px;
+
+  height:1px;
+
+  background:rgba(7,31,55,.45);
+
+  transform:rotate(-12deg);
+}
+
+.boltLeft{
+  left:28%;
+}
+
+.boltRight{
+  right:28%;
+}
 
 
   
@@ -7364,16 +7532,15 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 </div>
 
-<div class="card">
-  <div class="panelTitle profileTitle">
-    <span>👤 Profile</span>
+<div class="card vanityCard">
+  <div class="vanityPlatePreview profilePlateHero">
+
+  <div class="plateBolt boltLeft"></div>
+  <div class="plateBolt boltRight"></div>
+
+  <div class="plateState">
+    NEW YORK
   </div>
-<div class="vanityPlatePreview profilePlateHero">
-
-  <div class="plateSticker left">JUL</div>
-  <div class="plateSticker right">26</div>
-
-  <div class="plateState">NEW YORK</div>
 
   <div
     class="plateText"
@@ -7381,12 +7548,23 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
     DCHIUNGOS
   </div>
 
-  <div class="plateTagline">
-    PLATE CHASER
+  <div class="plateBottomRow">
+
+    <div class="plateSticker monthSticker">
+      JUL
+    </div>
+
+    <div class="plateTagline">
+      PLATE CHASER
+    </div>
+
+    <div class="plateSticker dateSticker">
+      26
+    </div>
+
   </div>
 
 </div>
-
 
   
 
@@ -7452,7 +7630,11 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 </div>
 
   </div>
+
+  
 </section>
+
+  
   <section id="shareScreen" class="screen hidden">
     <div class="card">
       <div class="panelTitle"><span>📤 Share Card</span><span id="shareModeLabel">Classic</span></div>
