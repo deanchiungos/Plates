@@ -13194,25 +13194,35 @@ if(celebrationClose) {
   });
 }
 
-var resumeGameBtn = document.getElementById("resumeGameBtn");
+
+  var resumeGameBtn =
+  document.getElementById(
+    "resumeGameBtn"
+  );
 
 if(resumeGameBtn) {
-  resumeGameBtn.onclick = function() {
-    document
-      .getElementById("resumeGameOverlay")
-      .classList.add("hidden");
+  resumeGameBtn.onclick =
+    function() {
 
-    render();
-    setView("game");
-  };
+      document
+        .getElementById(
+          "resumeGameOverlay"
+        )
+        .classList.add(
+          "hidden"
+        );
+
+      render();
+      setView("game");
+    };
 }
 
 var resumeGameCloseBtn =
   document.getElementById(
     "resumeGameCloseBtn"
   );
-  
-  if(resumeGameCloseBtn) {
+
+if(resumeGameCloseBtn) {
   resumeGameCloseBtn.onclick =
     function() {
 
@@ -13226,24 +13236,32 @@ var resumeGameCloseBtn =
 
     };
 }
-  
 
-  
 var startFreshBtn =
-  document.getElementById("startFreshBtn");
+  document.getElementById(
+    "startFreshBtn"
+  );
 
+if(startFreshBtn) {
+  startFreshBtn.onclick =
+    function() {
 
-  if(startFreshBtn) {
-  startFreshBtn.onclick = function() {
-    document
-      .getElementById("resumeGameOverlay")
-      .classList.add("hidden");
+      document
+        .getElementById(
+          "resumeGameOverlay"
+        )
+        .classList.add(
+          "hidden"
+        );
 
-    document
-      .getElementById("newGameOverlay")
-      .classList.remove("hidden");
-  };
-}
+      document
+        .getElementById(
+          "newGameOverlay"
+        )
+        .classList.remove(
+          "hidden"
+        );
+    };
 }
 
 
