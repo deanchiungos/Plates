@@ -13207,6 +13207,28 @@ if(resumeGameBtn) {
   };
 }
 
+var resumeGameCloseBtn =
+  document.getElementById(
+    "resumeGameCloseBtn"
+  );
+  
+  if(resumeGameCloseBtn) {
+  resumeGameCloseBtn.onclick =
+    function() {
+
+      document
+        .getElementById(
+          "resumeGameOverlay"
+        )
+        .classList.add(
+          "hidden"
+        );
+
+    };
+}
+  
+
+  
 var startFreshBtn =
   document.getElementById("startFreshBtn");
 
