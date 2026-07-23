@@ -7860,13 +7860,20 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 <div id="resumeGameOverlay"
      class="newGameOverlay hidden">
 
-  <div class="newGameSheet">
+<div class="newGameSheet">
 
-    <div class="newGameHandle"></div>
+  <div class="newGameHandle"></div>
 
-    <div class="newGameTitle">
-      Welcome back!
-    </div>
+  <button
+    class="newGameCloseBtn"
+    id="resumeGameCloseBtn"
+    type="button">
+    ×
+  </button>
+
+  <div class="newGameTitle">
+    Welcome back!
+  </div>
 
     <div class="plateHint"
          style="margin-bottom:20px">
