@@ -10522,6 +10522,194 @@ function endCurrentTrip() {
 
   toast("Trip saved");
 }
+
+
+function openTripDetails(index) {
+
+  var t =
+    savedTrips[index]
+
+  if(!t){
+    toast("Trip not found")
+    return
+  }
+
+  var nameEl =
+    document.getElementById(
+      "tripDetailName"
+    )
+
+  var dateEl =
+    document.getElementById(
+      "tripDetailDate"
+    )
+
+  var modeEl =
+    document.getElementById(
+      "tripDetailMode"
+    )
+
+  var statesEl =
+    document.getElementById(
+      "tripDetailStates"
+    )
+
+  var sightingsEl =
+    document.getElementById(
+      "tripDetailSightings"
+    )
+
+  var pointsEl =
+    document.getElementById(
+      "tripDetailPoints"
+    )
+
+  var badgesEl =
+    document.getElementById(
+      "tripDetailBadges"
+    )
+
+  var memoriesEl =
+    document.getElementById(
+      "tripDetailMemories"
+    )
+
+  var resumeBtn =
+    document.getElementById(
+      "tripDetailResumeBtn"
+    )
+
+  var shareBtn =
+    document.getElementById(
+      "tripDetailShareBtn"
+    )
+
+  var deleteBtn =
+    document.getElementById(
+      "tripDetailDeleteBtn"
+    )
+
+  var backBtn =
+    document.getElementById(
+      "tripDetailBackBtn"
+    )
+
+
+  nameEl.textContent =
+    t.name || "Roadtrip"
+
+  dateEl.textContent =
+    formatTripDateRange(
+      t.startedAt,
+      t.endedAt
+    ) ||
+    t.date ||
+    "Date unavailable"
+
+  modeEl.textContent =
+    (
+      t.mode
+        ? t.mode.charAt(0).toUpperCase() +
+          t.mode.slice(1)
+        : "Classic"
+    ) +
+    " Mode"
+
+  statesEl.textContent =
+    Number(t.states) || 0
+
+  sightingsEl.textContent =
+    Number(t.sightings) || 0
+
+  pointsEl.textContent =
+    Number(t.score) || 0
+
+
+  var badgeTotal =
+    Number(t.badges) || 0
+
+  badgesEl.textContent =
+    badgeTotal +
+    " badge" +
+    (
+      badgeTotal === 1
+        ? ""
+        : "s"
+    )
+
+
+  var memoryTotal =
+    Array.isArray(t.memories)
+      ? t.memories.length
+      : Number(t.memoryCount) || 0
+
+  memoriesEl.textContent =
+    memoryTotal > 0
+      ? memoryTotal +
+        " memor" +
+        (
+          memoryTotal === 1
+            ? "y"
+            : "ies"
+        ) +
+        " saved"
+      : "No memories saved yet"
+
+
+  resumeBtn.onclick =
+    function(){
+
+      resumeSavedTrip(index)
+
+    }
+
+  shareBtn.onclick =
+    function(){
+
+      shareSavedTrip(index)
+
+    }
+
+  deleteBtn.onclick =
+    function(){
+
+      deleteSavedTrip(index)
+
+    }
+
+  backBtn.onclick =
+    function(){
+
+      setView("trips")
+
+    }
+
+
+  document
+    .querySelectorAll(".screen")
+    .forEach(function(screen){
+
+      screen.classList.add(
+        "hidden"
+      )
+
+    })
+
+  document
+    .getElementById(
+      "tripDetailScreen"
+    )
+    .classList.remove(
+      "hidden"
+    )
+
+  window.scrollTo(0,0)
+
+}
+
+
+  
+
   
   
 function shareSavedTrip(index) {
@@ -13008,7 +13196,9 @@ if(memoryCount > 0){
     (memoryCount === 1 ? 'y' : 'ies');
 }
   
-return '<div class="row tripRow">' +
+
+return '<div class="row tripRow savedTripCard" data-trip-index="' + i + '">' +
+  
   '<div class="grow">' +
     '<div class="title tripHistoryTitle">' + t.name + '</div>' +
 
@@ -13083,19 +13273,42 @@ if (deleteBtn) {
 var shareBtn =
   e.target.closest(".shareTripBtnSmall");
 
+
 if (
   shareBtn &&
   !shareBtn.classList.contains("resumeTripBtn") &&
   !shareBtn.classList.contains("deleteSavedTripBtn")
 ) {
+
   shareSavedTrip(
     parseInt(
       shareBtn.dataset.tripIndex,
       10
     )
-  );
+  )
+
+  return
+
 }
 
+
+var tripCard =
+  e.target.closest(
+    ".savedTripCard"
+  )
+
+if(tripCard){
+
+  openTripDetails(
+    parseInt(
+      tripCard.dataset.tripIndex,
+      10
+    )
+  )
+
+}
+    
+    
     
   };
 }
