@@ -2926,6 +2926,82 @@ html, body {
   display: none !important;
 }
 
+.confirmSheet {
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  border-radius: 28px 28px 24px 24px;
+  padding: 14px 18px 20px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.28);
+  text-align: center;
+}
+
+.confirmIcon {
+  width: 72px;
+  height: 72px;
+  margin: 4px auto 14px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.confirmTitle {
+  color: var(--navy);
+  font-size: 28px;
+  font-weight: 950;
+  line-height: 1.05;
+  margin-bottom: 10px;
+}
+
+.confirmTripName {
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 950;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.confirmMessage {
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 0 auto 20px;
+  max-width: 300px;
+}
+
+.confirmPrimaryBtn {
+  width: 100%;
+  min-height: 56px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(180deg,#35b964,#239d4f);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 950;
+  box-shadow: 0 6px 18px rgba(38,169,87,.22);
+}
+
+.confirmCancelBtn {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 8px;
+  border: 0;
+  background: transparent;
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.confirmPrimaryBtn:active,
+.confirmCancelBtn:active {
+  transform: scale(.985);
+}
+
+  
 .newGameSheet {
   width: 100%;
   max-width: 430px;
