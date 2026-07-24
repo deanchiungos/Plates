@@ -13338,13 +13338,25 @@ return '<div class="row tripRow savedTripCard" data-trip-index="' + i + '">' +
 
   
 
-  
 '<div class="tripRowActions">' +
-  '<button class="textBtn shareTripBtnSmall resumeTripBtn" data-trip-index="' + i + '" type="button">▶ Resume</button>' +
-  '<button class="textBtn shareTripBtnSmall" data-trip-index="' + i + '" type="button">📤 Share</button>' +
-  '<button class="textBtn deleteTripBtn deleteSavedTripBtn" data-trip-index="' + i + '" type="button">🗑 Delete</button>' +
-'</div>' +
 
+  '<button class="textBtn shareTripBtnSmall resumeTripBtn" data-trip-index="' +
+    i +
+    '" type="button">▶ Resume</button>' +
+
+  '<button class="textBtn memoriesTripBtn" data-trip-index="' +
+    i +
+    '" type="button">📸 Memories</button>' +
+
+  '<button class="textBtn shareTripBtnSmall" data-trip-index="' +
+    i +
+    '" type="button">📤 Share</button>' +
+
+  '<button class="textBtn deleteTripBtn deleteSavedTripBtn" data-trip-index="' +
+    i +
+    '" type="button">🗑 Delete</button>' +
+
+'</div>' +
 
   
 '</div>' +
@@ -13372,6 +13384,23 @@ if (resumeBtn) {
   return;
 }
 
+var memoriesBtn =
+  e.target.closest(
+    ".memoriesTripBtn"
+  );
+
+if(memoriesBtn){
+
+  openTripDetails(
+    parseInt(
+      memoriesBtn.dataset.tripIndex,
+      10
+    )
+  );
+
+  return;
+}
+    
 var deleteBtn =
   e.target.closest(".deleteSavedTripBtn");
 
