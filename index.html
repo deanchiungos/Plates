@@ -11980,17 +11980,33 @@ function resumeSavedTrip(index, confirmed) {
   );
 
 
+view = "home";
+
+try {
+
   save();
-  render();
 
+} catch(err) {
 
-  toast(
-    tripName +
-    " resumed"
+  console.error(
+    "Resume Trip failed:",
+    err
   );
 
+  toast(
+    "Trip could not be resumed"
+  );
+
+  return;
+
 }
-  
+
+render();
+
+toast(
+  tripName +
+  " resumed"
+);
 
   
   function newTrip() {
