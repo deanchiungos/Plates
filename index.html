@@ -12574,10 +12574,22 @@ stateName:
 
               closeMemorySheet();
 
-              render();
-              selectMapState(code);
 
-              toast("Memory saved");
+              render();
+
+if(
+  !isTripPhoto
+){
+  selectMapState(
+    code
+  );
+}
+
+toast(
+  "Photo saved"
+);
+
+              
             };
 
 
