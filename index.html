@@ -10909,7 +10909,6 @@ function endCurrentTrip() {
 }
 
 
-
 function saveArchivedTripMemory(index, memory){
 
   var t =
@@ -10917,7 +10916,7 @@ function saveArchivedTripMemory(index, memory){
 
   if(!t){
     toast("Trip not found");
-    return;
+    return false;
   }
 
   if(
@@ -10935,14 +10934,39 @@ function saveArchivedTripMemory(index, memory){
   t.memoryCount =
     t.memories.length;
 
-  localStorage.platesSavedTrips =
-    JSON.stringify(
-      savedTrips
+  try{
+
+    localStorage.setItem(
+      "platesSavedTrips",
+      JSON.stringify(
+        savedTrips
+      )
     );
+
+  } catch(error){
+
+    t.memories.shift();
+
+    t.memoryCount =
+      t.memories.length;
+
+    console.error(
+      "Memory save failed:",
+      error
+    );
+
+    toast(
+      "Photo is too large to save"
+    );
+
+    return false;
+  }
 
   openTripDetails(index);
 
   toast("Memory saved");
+
+  return true;
 }
 
 
