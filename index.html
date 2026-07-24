@@ -11425,7 +11425,8 @@ function escapeMemoryText(value){
 }
 
 
-function renderArchivedTripMemories(index){
+
+  function renderArchivedTripMemories(index){
 
   var t =
     savedTrips[index];
@@ -11442,72 +11443,65 @@ function renderArchivedTripMemories(index){
     '<div class="archivedMemoryList">' +
 
       t.memories
-        .filter(
-          function(memory){
-            return (
-              memory &&
-              memory.photo
-            );
-          }
-        )
-        .map(
-          function(memory){
+        .filter(function(memory){
 
-            var note =
-              memory.note ||
-              memory.caption ||
-              "";
+          return (
+            memory &&
+            memory.photo
+          );
 
-            return (
-              '<button' +
-                ' class="archivedMemoryItem"' +
-                ' type="button"' +
-                ' data-memory-id="' +
+        })
+        .map(function(memory){
+
+          var note =
+            memory.note ||
+            memory.caption ||
+            "";
+
+          return (
+            '<button' +
+              ' class="archivedMemoryItem"' +
+              ' type="button"' +
+              ' data-memory-id="' +
+                escapeMemoryText(
+                  memory.id
+                ) +
+              '">' +
+
+              '<img' +
+                ' class="archivedMemoryThumb"' +
+                ' src="' +
+                  memory.photo +
+                '"' +
+                ' alt="Trip memory">' +
+
+              '<span class="archivedMemoryText">' +
+
+                '<span class="archivedMemoryNote">' +
                   escapeMemoryText(
-                    memory.id
+                    note ||
+                    "Photo memory"
                   ) +
-                '">' +
-
-                '<img' +
-                  ' class="archivedMemoryThumb"' +
-                  ' src="' +
-                    memory.photo +
-                  '"' +
-                  ' alt="Trip memory">' +
-
-                '<span class="archivedMemoryText">' +
-
-                  '<span class="archivedMemoryNote">' +
-                    escapeMemoryText(
-                      note ||
-                      "Photo memory"
-                    ) +
-                  '</span>' +
-
-                  '<span class="archivedMemoryDate">' +
-                    formatShortDate(
-                      memory.ts
-                    ) +
-                  '</span>' +
-
                 '</span>' +
 
-              '</button>'
-            );
-          }
-        )
+                '<span class="archivedMemoryDate">' +
+                  formatShortDate(
+                    memory.ts
+                  ) +
+                '</span>' +
+
+              '</span>' +
+
+            '</button>'
+          );
+
+        })
         .join("") +
 
     '</div>'
   );
+
 }
-
-
-
-overlay.classList.remove(
-  "hidden"
-);
-
 
 function closeViewer(){
 
