@@ -10227,7 +10227,7 @@ function shareSavedTrip(index) {
   }
 }
 
-  function resumeSavedTrip(index) {
+function resumeSavedTrip(index, confirmed) {
   var t =
     savedTrips[index];
 
@@ -10262,7 +10262,8 @@ if(
 
     onConfirm:function(){
 
-      resumeSavedTrip(index);
+      resumeSavedTrip(index, true);
+      
 
     }
 
@@ -10273,10 +10274,14 @@ if(
 }
 
     
-  if(
-    hasCurrentProgress &&
-    tripId !== t.id
-  ) {
+
+if(
+  hasCurrentProgress &&
+  tripId !== t.id &&
+  !confirmed
+){
+
+  
     var currentSnapshot =
       currentTripSnapshot();
 
