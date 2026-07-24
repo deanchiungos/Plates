@@ -10310,33 +10310,22 @@ if(
   tripId !== t.id
 ){
 
-  showConfirmSheet({
-
-    icon:"▶",
-
-    title:"Resume Trip",
-
-    tripName:t.name,
-
-    message:
-      "Your current trip will be automatically archived",
-
-    buttonText:
-      "Resume Trip",
-
-    onConfirm:function(){
+  showConfirmSheet(
+    "▶",
+    "Resume Trip",
+    t.name,
+    "Your current trip will be automatically archived",
+    "Resume Trip",
+    function(){
 
       resumeSavedTrip(index, true);
-      
 
     }
-
-  });
+  );
 
   return;
 
 }
-
     
 
 if(
