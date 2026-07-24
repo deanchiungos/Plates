@@ -6429,6 +6429,39 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 }
 
 
+/* trip-history typography and spacing */
+
+#tripHistoryList .tripHistoryTitle{
+  font-size:12px !important;
+  line-height:1.08 !important;
+  font-weight:850;
+  margin:0 0 2px !important;
+}
+
+#tripHistoryList .tripMeta{
+  margin-top:0 !important;
+  font-size:9px !important;
+  line-height:1.2 !important;
+  font-weight:650 !important;
+}
+
+#tripHistoryList .tripHistoryDate{
+  margin:0 0 8px;
+  font-size:7px;
+  line-height:1.1;
+  color:#697589;
+}
+
+#tripHistoryList .tripHistoryStats{
+  display:grid;
+  gap:3px;
+  font-size:9px;
+  line-height:1.2;
+  color:#55657a;
+}
+
+  
+
   
 </style>
 </head>
@@ -10994,11 +11027,9 @@ function openTripDetails(index) {
     "tripDetailAddPhotoBtn"
   )
 
-var addNoteBtn =
-  document.getElementById(
-    "tripDetailAddNoteBtn"
-  )
 
+
+  
 var photoInput =
   document.getElementById(
     "tripDetailPhotoInput"
@@ -11088,15 +11119,8 @@ var photoInput =
     }
 
 
-addNoteBtn.onclick =
-  function(){
 
-    addArchivedTripNote(
-      index
-    )
-
-  }
-
+  
 
 addPhotoBtn.onclick =
   function(){
@@ -13656,43 +13680,43 @@ return '<div class="row tripRow savedTripCard" data-trip-index="' + i + '">' +
     '<div class="title tripHistoryTitle">' + t.name + '</div>' +
 
 
-
 '<div class="tripMeta">' +
 
-  (
-    formatTripDateRange(
-      t.startedAt,
-      t.endedAt
-    ) ||
-    t.date ||
-    "Date unavailable"
-  ) +
+  '<div class="tripHistoryDate">' +
 
-  '<br>' +
+    (
+      formatTripDateRange(
+        t.startedAt,
+        t.endedAt
+      ) ||
+      t.date ||
+      "Date unavailable"
+    ) +
 
-  '🎯 ' +
+  '</div>' +
 
-  (
-    t.mode.charAt(0).toUpperCase() +
-    t.mode.slice(1)
-  ) +
+  '<div class="tripHistoryStats">' +
 
-  '<br>' +
+    '<div>🎯 ' +
+      (
+        t.mode.charAt(0).toUpperCase() +
+        t.mode.slice(1)
+      ) +
+    '</div>' +
 
-  '🇺🇸 ' +
+    '<div>🇺🇸 ' +
+      t.states +
+      "/50 states" +
+    '</div>' +
 
-  t.states +
-  "/50 states" +
+    '<div>⭐ ' +
+      t.score +
+      " points" +
+    '</div>' +
 
-  '<br>' +
-
-  '⭐ ' +
-
-  t.score +
-  " points" +
+  '</div>' +
 
 '</div>' +
-
   
 
 '<div class="tripRowActions">' +
