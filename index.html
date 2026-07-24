@@ -13288,7 +13288,11 @@ return '<div class="row tripRow savedTripCard" data-trip-index="' + i + '">' +
     '<div class="title tripHistoryTitle">' + t.name + '</div>' +
 
 
+
 '<div class="tripMeta">' +
+
+  '🗓️ ' +
+
   (
     formatTripDateRange(
       t.startedAt,
@@ -13297,15 +13301,34 @@ return '<div class="row tripRow savedTripCard" data-trip-index="' + i + '">' +
     t.date ||
     "Date unavailable"
   ) +
+
   '<br>' +
+
+  '🎯 ' +
+
   (
     t.mode.charAt(0).toUpperCase() +
     t.mode.slice(1) +
     " Mode"
   ) +
+
   '<br>' +
-  label +
+
+  '🇺🇸 ' +
+
+  t.states +
+  "/50 states" +
+
+  '<br>' +
+
+  '⭐ ' +
+
+  t.score +
+  " points" +
+
 '</div>' +
+
+  
 
   
 '<div class="tripRowActions">' +
