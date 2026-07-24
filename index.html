@@ -6670,6 +6670,23 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   font-weight:800;
 }
 
+  #shareMemoryBtn,
+#deleteMemoryBtn{
+  width:100%;
+  margin:10px 0 0;
+}
+
+#shareMemoryBtn{
+  margin-top:18px;
+}
+
+#deleteMemoryBtn{
+  margin-top:8px;
+  background:#fff;
+  color:#b43b3b;
+  border-color:rgba(180,59,59,.35);
+}
+
   
   
 </style>
@@ -6766,6 +6783,23 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
       id="memoryViewerDate"
       class="memoryViewerDate">
     </div>
+
+
+    <button
+  id="shareMemoryBtn"
+  class="newGameBtn"
+  type="button">
+  📤 Share Photo
+</button>
+
+<button
+  id="deleteMemoryBtn"
+  class="newGameBtn dangerBtn"
+  type="button">
+  🗑 Delete Photo
+</button>
+
+    
 
   </div>
 
