@@ -15018,6 +15018,32 @@ if(changeModeBtn){
   };
 }
 
+var addTripPhotoBtn =
+  document.getElementById("addTripPhotoBtn");
+
+if(addTripPhotoBtn){
+  addTripPhotoBtn.onclick = function(e){
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    pendingPhotoStateCode = "TRIP";
+
+    var input =
+      document.getElementById(
+        "memoryPhotoInput"
+      );
+
+    if(input){
+      input.value = "";
+      input.click();
+    }
+
+    closeGameOptions();
+
+  };
+}
+  
 
 var clearTripBtn =
   document.getElementById("clearTripBtn");
