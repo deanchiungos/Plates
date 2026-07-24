@@ -12418,28 +12418,48 @@ if (tripHistoryListEl) {
     var resumeBtn =
       e.target.closest(".resumeTripBtn");
 
-    if (resumeBtn) {
-      resumeSavedTrip(
-        parseInt(
-          resumeBtn.dataset.tripIndex,
-          10
-        )
-      );
+if (resumeBtn) {
+  resumeSavedTrip(
+    parseInt(
+      resumeBtn.dataset.tripIndex,
+      10
+    )
+  );
 
-      return;
-    }
+  return;
+}
 
-    var shareBtn =
-      e.target.closest(".shareTripBtnSmall");
+var deleteBtn =
+  e.target.closest(".deleteSavedTripBtn");
 
-    if (shareBtn) {
-      shareSavedTrip(
-        parseInt(
-          shareBtn.dataset.tripIndex,
-          10
-        )
-      );
-    }
+if (deleteBtn) {
+  deleteSavedTrip(
+    parseInt(
+      deleteBtn.dataset.tripIndex,
+      10
+    )
+  );
+
+  return;
+}
+
+var shareBtn =
+  e.target.closest(".shareTripBtnSmall");
+
+if (
+  shareBtn &&
+  !shareBtn.classList.contains("resumeTripBtn") &&
+  !shareBtn.classList.contains("deleteSavedTripBtn")
+) {
+  shareSavedTrip(
+    parseInt(
+      shareBtn.dataset.tripIndex,
+      10
+    )
+  );
+}
+
+    
   };
 }
 
