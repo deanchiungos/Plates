@@ -12268,6 +12268,88 @@ function memoriesForState(code){
 }
   
 
+function renderCurrentTripPhotos() {
+
+  var list =
+    document.getElementById(
+      "currentTripPhotosList"
+    );
+
+  if(!list) return;
+
+  var photos =
+    tripMemories.filter(
+      function(memory) {
+
+        return (
+          memory.tripId === tripId &&
+          memory.type === "photo" &&
+          !memory.stateCode
+        );
+
+      }
+    );
+
+  if(!photos.length) {
+
+    list.innerHTML =
+      '<div class="memoryEmpty">' +
+        'No photos added yet' +
+      '</div>';
+
+    return;
+  }
+
+  list.innerHTML =
+    photos.map(
+      function(memory) {
+
+        return (
+          '<div class="memoryItem">' +
+
+            '<img ' +
+              'class="memoryThumb" ' +
+              'src="' +
+              memory.photo +
+              '" ' +
+              'alt="Trip photo">' +
+
+            '<div class="memoryText">' +
+
+              '<div class="memoryTitle">' +
+                (
+                  memory.caption ||
+                  "Trip photo"
+                ) +
+              '</div>' +
+
+              '<div class="memoryDate">' +
+                memoryDate(
+                  memory.ts
+                ) +
+              '</div>' +
+
+            '</div>' +
+
+            '<button ' +
+              'class="deleteMemoryBtn" ' +
+              'type="button" ' +
+              'onclick="deleteMemory(\'' +
+                memory.id +
+              '\')">' +
+              'Delete' +
+            '</button>' +
+
+          '</div>'
+        );
+
+      }
+    ).join("");
+
+}
+
+
+  
   function renderMemoryList(code) {
   var items = memoriesForState(code);
 
