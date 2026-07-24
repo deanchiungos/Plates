@@ -8086,117 +8086,6 @@ var confirmAction = null;
 
 
 
-function showConfirmSheet(options) {
-
-  var overlay =
-    document.getElementById(
-      "confirmOverlay"
-    );
-
-  var icon =
-    document.getElementById(
-      "confirmIcon"
-    );
-
-  var title =
-    document.getElementById(
-      "confirmTitle"
-    );
-
-  var tripNameText =
-    document.getElementById(
-      "confirmTripName"
-    );
-
-  var message =
-    document.getElementById(
-      "confirmMessage"
-    );
-
-  var primaryBtn =
-    document.getElementById(
-      "confirmPrimaryBtn"
-    );
-
-  var cancelBtn =
-    document.getElementById(
-      "confirmCancelBtn"
-    );
-
-  if(
-    !overlay ||
-    !icon ||
-    !title ||
-    !tripNameText ||
-    !message ||
-    !primaryBtn ||
-    !cancelBtn
-  ){
-    return;
-  }
-
-  icon.textContent =
-    options.icon || "✓";
-
-  title.textContent =
-    options.title || "Are You Sure?";
-
-  tripNameText.textContent =
-    options.tripName || "";
-
-  message.textContent =
-    options.message || "";
-
-  primaryBtn.textContent =
-    options.buttonText || "Continue";
-
-  primaryBtn.classList.remove(
-    "dangerConfirmBtn"
-  );
-
-  if(options.danger){
-    primaryBtn.classList.add(
-      "dangerConfirmBtn"
-    );
-  }
-
-  confirmAction =
-    typeof options.onConfirm === "function"
-      ? options.onConfirm
-      : null;
-
-  primaryBtn.onclick =
-    function(){
-
-      var action =
-        confirmAction;
-
-      hideConfirmSheet();
-
-      if(action){
-        action();
-      }
-
-    };
-
-  cancelBtn.onclick =
-    function(){
-      hideConfirmSheet();
-    };
-
-  overlay.onclick =
-    function(e){
-
-      if(e.target === overlay){
-        hideConfirmSheet();
-      }
-
-    };
-
-  overlay.classList.remove(
-    "hidden"
-  );
-}
 
   
 function hideConfirmSheet() {
@@ -10291,79 +10180,115 @@ function shareSavedTrip(index) {
   }
 }
 
+
 function resumeSavedTrip(index, confirmed) {
+
   var t =
     savedTrips[index];
 
   if(!t) {
-    toast("Trip not found");
+
+    toast(
+      "Trip not found"
+    );
+
     return;
+
   }
 
   var hasCurrentProgress =
     collectedCount() > 0 ||
     log.length > 0;
 
+  var isDifferentTrip =
+    tripId !== t.id;
 
-if(
-  hasCurrentProgress &&
-  tripId !== t.id
-){
 
-  showConfirmSheet(
-    "▶",
-    "Resume Trip",
-    t.name,
-    "Your current trip will be automatically archived",
-    "Resume Trip",
-    function(){
+  if(
+    hasCurrentProgress &&
+    isDifferentTrip &&
+    !confirmed
+  ){
 
-      resumeSavedTrip(index, true);
+    showConfirmSheet({
 
-    }
-  );
+      icon:"▶",
 
-  return;
+      title:"Resume Trip",
 
-}
-    
+      tripName:t.name,
 
-if(
-  hasCurrentProgress &&
-  tripId !== t.id &&
-  !confirmed
-){
+      message:
+        "Your current trip will be automatically archived",
 
-  
+      buttonText:
+        "Resume Trip",
+
+      onConfirm:function(){
+
+        resumeSavedTrip(
+          index,
+          true
+        );
+
+      }
+
+    });
+
+    return;
+
+  }
+
+
+  if(
+    hasCurrentProgress &&
+    isDifferentTrip &&
+    confirmed
+  ){
+
     var currentSnapshot =
       currentTripSnapshot();
 
     var currentIndex =
       savedTrips.findIndex(
         function(savedTrip) {
+
           return (
             savedTrip.id ===
             currentSnapshot.id
           );
+
         }
       );
 
-    if(currentIndex >= 0) {
+    if(currentIndex >= 0){
+
       savedTrips[currentIndex] =
         currentSnapshot;
+
     } else {
+
       savedTrips.unshift(
         currentSnapshot
       );
+
     }
+
   }
+
 
   savedTrips =
     savedTrips.filter(
       function(savedTrip) {
-        return savedTrip.id !== t.id;
+
+        return (
+          savedTrip.id !==
+          t.id
+        );
+
       }
     );
+
 
   tripId =
     t.id ||
@@ -10385,6 +10310,7 @@ if(
     t.scoringMode ||
     mode;
 
+
   counts =
     JSON.parse(
       JSON.stringify(
@@ -10399,33 +10325,47 @@ if(
       )
     );
 
+
   if(
-    Array.isArray(t.memories)
-  ) {
+    Array.isArray(
+      t.memories
+    )
+  ){
+
     t.memories.forEach(
-      function(memory) {
+      function(memory){
+
         var alreadyExists =
           tripMemories.some(
-            function(existingMemory) {
+            function(existingMemory){
+
               return (
                 existingMemory.id &&
                 memory.id &&
                 existingMemory.id ===
                   memory.id
               );
+
             }
           );
 
-        if(!alreadyExists) {
+        if(!alreadyExists){
+
           tripMemories.push(
             JSON.parse(
-              JSON.stringify(memory)
+              JSON.stringify(
+                memory
+              )
             )
           );
+
         }
+
       }
     );
+
   }
+
 
   tripStartedAt =
     t.startedAt ||
@@ -10437,20 +10377,25 @@ if(
   tripStatus =
     "active";
 
+
   localStorage.removeItem(
     "platesPausedTrip"
   );
 
+
   save();
   render();
 
-  toast(
-    t.name + " resumed"
-  );
-}
 
+  toast(
+    tripName +
+    " resumed"
+  );
+
+}
   
 
+  
   function newTrip() {
 
   var hasProgress =
