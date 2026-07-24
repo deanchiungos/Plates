@@ -9006,7 +9006,38 @@ function safeParse(value, fallback) {
     return JSON.parse(fallback);
   }
 }
-var plateStateSelect = document.getElementById("plateStateSelect");
+var onboardingDone =
+  document.getElementById(
+    "onboardingDone"
+  );
+
+if(onboardingDone){
+
+  onboardingDone.onclick =
+    function(){
+
+      var onboardingOverlay =
+        document.getElementById(
+          "onboardingOverlay"
+        );
+
+      if(onboardingOverlay){
+        onboardingOverlay.classList.remove(
+          "show"
+        );
+      }
+
+      localStorage.setItem(
+        "platesOnboardingSeen",
+        "true"
+      );
+
+    };
+
+}
+
+  
+  var plateStateSelect = document.getElementById("plateStateSelect");
 
 if (plateStateSelect) {
   plateStateSelect.addEventListener("change", function() {
