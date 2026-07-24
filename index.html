@@ -8062,6 +8062,96 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 </div>
 
 <script>
+
+
+var confirmAction = null;
+
+function showConfirmSheet(options) {
+
+  var overlay =
+    document.getElementById(
+      "confirmOverlay"
+    );
+
+  var icon =
+    document.getElementById(
+      "confirmIcon"
+    );
+
+  var title =
+    document.getElementById(
+      "confirmTitle"
+    );
+
+  var tripNameText =
+    document.getElementById(
+      "confirmTripName"
+    );
+
+  var message =
+    document.getElementById(
+      "confirmMessage"
+    );
+
+  var primaryBtn =
+    document.getElementById(
+      "confirmPrimaryBtn"
+    );
+
+  if(
+    !overlay ||
+    !icon ||
+    !title ||
+    !tripNameText ||
+    !message ||
+    !primaryBtn
+  ) {
+    return;
+  }
+
+  icon.textContent =
+    options.icon || "✓";
+
+  title.textContent =
+    options.title || "Are You Sure?";
+
+  tripNameText.textContent =
+    options.tripName || "";
+
+  message.textContent =
+    options.message || "";
+
+  primaryBtn.textContent =
+    options.buttonText || "Continue";
+
+  confirmAction =
+    typeof options.onConfirm ===
+      "function"
+      ? options.onConfirm
+      : null;
+
+  overlay.classList.remove(
+    "hidden"
+  );
+}
+
+function hideConfirmSheet() {
+
+  var overlay =
+    document.getElementById(
+      "confirmOverlay"
+    );
+
+  if(overlay) {
+    overlay.classList.add(
+      "hidden"
+    );
+  }
+
+  confirmAction = null;
+}
+
+  
 function safeParse(value, fallback) {
   try {
     if (typeof value === "object" && value !== null) {
