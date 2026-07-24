@@ -12533,9 +12533,20 @@ var name =
                 tripId: tripId,
                 trip: tripName,
 
-                stateCode: code,
-                stateName: name,
+           stateCode:
+  isTripPhoto
+    ? ""
+    : code,
 
+stateName:
+  isTripPhoto
+    ? ""
+    : name,,
+
+
+
+
+                
                 title:
                   caption ||
                   "Photo memory",
