@@ -10240,18 +10240,39 @@ function shareSavedTrip(index) {
     collectedCount() > 0 ||
     log.length > 0;
 
-  if(
-    hasCurrentProgress &&
-    tripId !== t.id &&
-    !confirm(
-      "Resume " +
-      t.name +
-      "? Your current trip will be saved first"
-    )
-  ) {
-    return;
-  }
 
+if(
+  hasCurrentProgress &&
+  tripId !== t.id
+){
+
+  showConfirmSheet({
+
+    icon:"▶",
+
+    title:"Resume Trip",
+
+    tripName:t.name,
+
+    message:
+      "Your current trip will be automatically archived",
+
+    buttonText:
+      "Resume Trip",
+
+    onConfirm:function(){
+
+      resumeSavedTrip(index);
+
+    }
+
+  });
+
+  return;
+
+}
+
+    
   if(
     hasCurrentProgress &&
     tripId !== t.id
