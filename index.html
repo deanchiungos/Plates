@@ -8084,6 +8084,8 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
 var confirmAction = null;
 
+
+
 function showConfirmSheet(options) {
 
   var overlay =
@@ -8116,14 +8118,20 @@ function showConfirmSheet(options) {
       "confirmPrimaryBtn"
     );
 
+  var cancelBtn =
+    document.getElementById(
+      "confirmCancelBtn"
+    );
+
   if(
     !overlay ||
     !icon ||
     !title ||
     !tripNameText ||
     !message ||
-    !primaryBtn
-  ) {
+    !primaryBtn ||
+    !cancelBtn
+  ){
     return;
   }
 
@@ -8142,30 +8150,55 @@ function showConfirmSheet(options) {
   primaryBtn.textContent =
     options.buttonText || "Continue";
 
-
   primaryBtn.classList.remove(
-  "dangerConfirmBtn"
-);
-
-if(options.danger){
-
-  primaryBtn.classList.add(
     "dangerConfirmBtn"
   );
 
-}
+  if(options.danger){
+    primaryBtn.classList.add(
+      "dangerConfirmBtn"
+    );
+  }
 
   confirmAction =
-    typeof options.onConfirm ===
-      "function"
+    typeof options.onConfirm === "function"
       ? options.onConfirm
       : null;
+
+  primaryBtn.onclick =
+    function(){
+
+      var action =
+        confirmAction;
+
+      hideConfirmSheet();
+
+      if(action){
+        action();
+      }
+
+    };
+
+  cancelBtn.onclick =
+    function(){
+      hideConfirmSheet();
+    };
+
+  overlay.onclick =
+    function(e){
+
+      if(e.target === overlay){
+        hideConfirmSheet();
+      }
+
+    };
 
   overlay.classList.remove(
     "hidden"
   );
 }
 
+  
 function hideConfirmSheet() {
 
   var overlay =
