@@ -9769,13 +9769,23 @@ function currentTripSnapshot() {
       JSON.stringify(log)
     ),
 
-memoryCount: tripMemories.filter(
-  function(m) {
-    return m.trip === tripName;
-  }
-).length,
+
+    memories: tripMemories
+      .filter(function(m) {
+        return m.trip === tripName;
+      })
+      .map(function(m) {
+        return Object.assign({}, m);
+      }),
+
+    memoryCount: tripMemories.filter(
+      function(m) {
+        return m.trip === tripName;
+      }
+    ).length,
 
     startedAt: tripStartedAt,
+    
     updatedAt: tripUpdatedAt,
     endedAt: endedAt,
 
