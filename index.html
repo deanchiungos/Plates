@@ -12458,7 +12458,29 @@ function addMemoryPhoto(code) {
 }
 
 
+var memoryPhotoInput =
+  document.getElementById(
+    "memoryPhotoInput"
+  );
 
+if(memoryPhotoInput) {
+
+  memoryPhotoInput.onchange =
+    function() {
+
+      var file =
+        this.files &&
+        this.files[0];
+
+      if(file) {
+        saveSelectedPhoto(
+          file
+        );
+      }
+
+    };
+
+}
   
 
 function saveSelectedPhoto(file) {
