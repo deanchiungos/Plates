@@ -12457,6 +12457,10 @@ function addMemoryPhoto(code) {
   }
 }
 
+
+
+  
+
 function saveSelectedPhoto(file) {
   if(!file || !pendingPhotoStateCode) return;
 
@@ -13936,6 +13940,9 @@ if(canadaCountEl){
 }
   
 
+
+
+  
 document.body.classList.toggle(
   "show-rarity",
   mode !== "classic"
@@ -13963,11 +13970,66 @@ document.querySelectorAll(".modeExplainCard").forEach(function(card){
   };
 });
 
-  document.querySelectorAll(".screen").forEach(function(s){ s.classList.add("hidden"); });
-  document.getElementById(view + "Screen").classList.remove("hidden");
 
-  document.querySelectorAll(".navInner button").forEach(function(b){ b.classList.remove("active"); });
-  document.getElementById(view + "Nav").classList.add("active");
+  document
+  .querySelectorAll(
+    ".screen"
+  )
+  .forEach(
+    function(screen) {
+      screen.classList.add(
+        "hidden"
+      );
+    }
+  );
+
+var activeScreen =
+  document.getElementById(
+    view + "Screen"
+  );
+
+if(!activeScreen) {
+
+  view = "trips";
+
+  activeScreen =
+    document.getElementById(
+      "tripsScreen"
+    );
+
+  localStorage.platesView =
+    view;
+}
+
+activeScreen.classList.remove(
+  "hidden"
+);
+
+document
+  .querySelectorAll(
+    ".navInner button"
+  )
+  .forEach(
+    function(button) {
+      button.classList.remove(
+        "active"
+      );
+    }
+  );
+
+var activeNav =
+  document.getElementById(
+    view + "Nav"
+  );
+
+if(activeNav) {
+  activeNav.classList.add(
+    "active"
+  );
+}
+
+
+  
 
 ["classic","weighted","unlimited"].forEach(function(m){
   
