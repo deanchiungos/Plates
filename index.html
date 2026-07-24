@@ -2996,6 +2996,24 @@ html, body {
   font-weight: 900;
 }
 
+
+.dangerConfirmBtn{
+  background:
+    linear-gradient(
+      180deg,
+      #d85a5a,
+      #b43b3b
+    ) !important;
+
+  color:#fff !important;
+
+  box-shadow:
+    0 6px 18px
+    rgba(180,59,59,.28);
+}
+  
+
+  
 .confirmPrimaryBtn:active,
 .confirmCancelBtn:active {
   transform: scale(.985);
@@ -8124,6 +8142,19 @@ function showConfirmSheet(options) {
   primaryBtn.textContent =
     options.buttonText || "Continue";
 
+
+  primaryBtn.classList.remove(
+  "dangerConfirmBtn"
+);
+
+if(options.danger){
+
+  primaryBtn.classList.add(
+    "dangerConfirmBtn"
+  );
+
+}
+
   confirmAction =
     typeof options.onConfirm ===
       "function"
@@ -11177,6 +11208,8 @@ function deleteSavedTrip(index) {
 
     buttonText:
       "Delete Trip",
+danger:true,
+    
 
     onConfirm:function(){
 
