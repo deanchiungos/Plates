@@ -13083,7 +13083,59 @@ if(badgeDoneBtn) {
   if (!badge) return;
 
   openBadgeDetail(badge);
-});
+var confirmPrimaryBtn =
+  document.getElementById(
+    "confirmPrimaryBtn"
+  );
+
+if(confirmPrimaryBtn){
+
+  confirmPrimaryBtn.onclick =
+    function(){
+
+      var action =
+        confirmAction;
+
+      hideConfirmSheet();
+
+      if(action){
+        action();
+      }
+
+    };
+
+}
+
+var confirmCancelBtn =
+  document.getElementById(
+    "confirmCancelBtn"
+  );
+
+if(confirmCancelBtn){
+
+  confirmCancelBtn.onclick =
+    hideConfirmSheet;
+
+}
+
+var confirmOverlay =
+  document.getElementById(
+    "confirmOverlay"
+  );
+
+if(confirmOverlay){
+
+  confirmOverlay.onclick =
+    function(e){
+
+      if(e.target === this){
+        hideConfirmSheet();
+      }
+
+    };
+
+}
+  });
 
 
 
