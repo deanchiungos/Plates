@@ -11738,33 +11738,7 @@ function openArchivedMemoryViewer(
 }
   
 
-  function closeViewer(){
 
-    overlay.classList.add(
-      "hidden"
-    );
-
-    photo.src = "";
-  }
-
-  if(closeBtn){
-    closeBtn.onclick =
-      closeViewer;
-  }
-
-  overlay.onclick =
-    function(event){
-
-      if(
-        event.target ===
-        overlay
-      ){
-        closeViewer();
-      }
-    };
-}
-
-  
 
 
 function openTripDetails(index) {
