@@ -12481,8 +12481,10 @@ var name =
             "hidden"
           );
 
-          memoryCaptionInput.value =
-            name + " plate";
+        memoryCaptionInput.value =
+  isTripPhoto
+    ? ""
+    : name + " plate";
 
           memoryOverlay.classList.remove(
             "hidden"
