@@ -6330,6 +6330,71 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   color:#b43b3b !important;
 }
 
+
+
+  /* v-trip-history two-column cards */
+
+#tripHistoryList{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:12px;
+  align-items:stretch;
+}
+
+#tripHistoryList .tripRow{
+  display:block;
+  width:100%;
+  min-width:0;
+  margin:0;
+  padding:16px 12px;
+  border-radius:22px;
+  box-sizing:border-box;
+}
+
+#tripHistoryList .tripRow .grow{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  min-width:0;
+  height:100%;
+}
+
+#tripHistoryList .tripHistoryTitle{
+  font-size:18px;
+  line-height:1.08;
+  overflow-wrap:anywhere;
+}
+
+#tripHistoryList .tripMeta{
+  margin-top:8px;
+  font-size:14px;
+  line-height:1.35;
+}
+
+#tripHistoryList .tripRowActions{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  width:100%;
+  margin-top:auto;
+  padding-top:14px;
+}
+
+#tripHistoryList .tripRowActions button{
+  width:100%;
+  min-width:0;
+  min-height:44px;
+  margin:0;
+  padding:8px 6px;
+  font-size:14px;
+  white-space:nowrap;
+}
+
+#tripHistoryList .emptyHistory{
+  grid-column:1 / -1;
+}
+
+  
   
 
   
