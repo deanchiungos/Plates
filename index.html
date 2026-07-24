@@ -11141,21 +11141,65 @@ if(badgeTotal){
   }).join("");
 }
 
+
+  
 function tripModeSummaryText(c, points, sightings) {
   if(mode === "classic") return "Classic Mode";
   if(mode === "weighted") return "Weighted Mode";
   return "Unlimited Mode";
 }
-  function deleteSavedTrip(index) {
-  if(index < 0 || index >= savedTrips.length) return;
-  var name = savedTrips[index].name || "this roadtrip";
-  if(confirm("Delete " + name + "?")) {
-    savedTrips.splice(index, 1);
-    save();
-    render();
-    toast("Roadtrip deleted");
+
+
+  
+function deleteSavedTrip(index) {
+
+  if(
+    index < 0 ||
+    index >= savedTrips.length
+  ) {
+    return;
   }
+
+  var name =
+    savedTrips[index].name ||
+    "this roadtrip";
+
+  showConfirmSheet({
+
+    icon:"🗑",
+
+    title:"Delete Trip",
+
+    tripName:name,
+
+    message:
+      "This trip and its memories will be permanently deleted",
+
+    buttonText:
+      "Delete Trip",
+
+    onConfirm:function(){
+
+      savedTrips.splice(
+        index,
+        1
+      );
+
+      save();
+      render();
+
+      toast(
+        "Trip deleted"
+      );
+
+    }
+
+  });
+
 }
+
+
+  
 
 function renameSavedTrip(index) {
   if(index < 0 || index >= savedTrips.length) return;
