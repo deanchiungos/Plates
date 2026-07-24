@@ -11537,6 +11537,16 @@ function openArchivedMemoryViewer(
       "memoryViewerCloseBtn"
     );
 
+  var shareBtn =
+    document.getElementById(
+      "shareMemoryBtn"
+    );
+
+  var deleteBtn =
+    document.getElementById(
+      "deleteMemoryBtn"
+    );
+
   if(
     !overlay ||
     !photo ||
@@ -11562,6 +11572,160 @@ function openArchivedMemoryViewer(
   overlay.classList.remove(
     "hidden"
   );
+
+
+  function closeViewer(){
+
+    overlay.classList.add(
+      "hidden"
+    );
+
+    photo.src = "";
+  }
+
+
+  if(closeBtn){
+
+    closeBtn.onclick =
+      closeViewer;
+  }
+
+
+  overlay.onclick =
+    function(event){
+
+      if(
+        event.target ===
+        overlay
+      ){
+        closeViewer();
+      }
+    };
+
+
+  if(shareBtn){
+
+    shareBtn.onclick =
+      function(){
+
+        fetch(memory.photo)
+          .then(function(response){
+
+            return response.blob();
+
+          })
+          .then(function(blob){
+
+            var file =
+              new File(
+                [blob],
+                "plates-memory.jpg",
+                {
+                  type:
+                    blob.type ||
+                    "image/jpeg"
+                }
+              );
+
+            var shareData = {
+              title:
+                t.name ||
+                "PLATES Trip Memory",
+
+              text:
+                memory.note ||
+                memory.caption ||
+                "A memory from my PLATES trip",
+
+              files: [file]
+            };
+
+            if(
+              navigator.share &&
+              navigator.canShare &&
+              navigator.canShare({
+                files: [file]
+              })
+            ){
+
+              return navigator.share(
+                shareData
+              );
+            }
+
+            if(navigator.share){
+
+              return navigator.share({
+                title:
+                  shareData.title,
+
+                text:
+                  shareData.text
+              });
+            }
+
+            toast(
+              "Photo sharing is not supported on this device"
+            );
+
+          })
+          .catch(function(){
+
+            toast(
+              "Photo could not be shared"
+            );
+
+          });
+      };
+  }
+
+
+  if(deleteBtn){
+
+    deleteBtn.onclick =
+      function(){
+
+        var confirmed =
+          confirm(
+            "Delete this photo?"
+          );
+
+        if(!confirmed){
+          return;
+        }
+
+        t.memories =
+          t.memories.filter(
+            function(item){
+
+              return (
+                item.id !==
+                memoryId
+              );
+            }
+          );
+
+        t.memoryCount =
+          t.memories.length;
+
+        localStorage.platesSavedTrips =
+          JSON.stringify(
+            savedTrips
+          );
+
+        closeViewer();
+
+        openTripDetails(
+          index
+        );
+
+        toast(
+          "Photo deleted"
+        );
+      };
+  }
+}
+  
 
   function closeViewer(){
 
