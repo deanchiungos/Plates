@@ -6410,6 +6410,25 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   
   
 
+.tripDetailMemoryActions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:14px;
+}
+
+.tripDetailMemoryActions .memoryBtn{
+  width:100%;
+  min-height:46px;
+  margin:0;
+  padding:10px 8px;
+  border:2px solid #dbe8f5;
+  color:var(--blue);
+  font-size:14px;
+  white-space:nowrap;
+}
+
+
   
 </style>
 </head>
@@ -7633,20 +7652,47 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
 
     </div>
 
-    <div class="tripDetailSection">
+<div class="tripDetailSection">
 
-      <div class="tripDetailSectionTitle">
-        📝 Trip Memories
-      </div>
+  <div class="tripDetailSectionTitle">
+    📝 Trip Memories
+  </div>
 
-      <div
-        class="tripDetailSectionValue"
-        id="tripDetailMemories">
-        No memories saved yet
-      </div>
+  <div
+    class="tripDetailSectionValue"
+    id="tripDetailMemories">
+    No memories saved yet
+  </div>
 
-    </div>
+  <div class="tripDetailMemoryActions">
 
+    <button
+      id="tripDetailAddPhotoBtn"
+      class="memoryBtn"
+      type="button">
+      📸 Add Photo
+    </button>
+
+    <button
+      id="tripDetailAddNoteBtn"
+      class="memoryBtn"
+      type="button">
+      ✍️ Add Note
+    </button>
+
+  </div>
+
+  <input
+    id="tripDetailPhotoInput"
+    type="file"
+    accept="image/*"
+    hidden>
+
+</div>
+
+
+
+    
     <button
       id="tripDetailResumeBtn"
       class="newGameBtn"
@@ -10617,6 +10663,267 @@ function endCurrentTrip() {
 }
 
 
+
+function saveArchivedTripMemory(index, memory){
+
+  var t =
+    savedTrips[index];
+
+  if(!t){
+    toast("Trip not found");
+    return;
+  }
+
+  if(
+    !Array.isArray(
+      t.memories
+    )
+  ){
+    t.memories = [];
+  }
+
+  t.memories.unshift(
+    memory
+  );
+
+  t.memoryCount =
+    t.memories.length;
+
+  localStorage.platesSavedTrips =
+    JSON.stringify(
+      savedTrips
+    );
+
+  openTripDetails(index);
+
+  toast("Memory saved");
+}
+
+
+function addArchivedTripNote(index){
+
+  var t =
+    savedTrips[index];
+
+  if(!t){
+    toast("Trip not found");
+    return;
+  }
+
+  var title =
+    prompt(
+      "Memory title:",
+      "Trip memory"
+    );
+
+  if(
+    !title ||
+    !title.trim()
+  ){
+    return;
+  }
+
+  var note =
+    prompt(
+      "Add a note:",
+      ""
+    );
+
+  if(note === null){
+    return;
+  }
+
+  saveArchivedTripMemory(
+    index,
+    {
+      id:
+        "m" +
+        Date.now() +
+        Math.floor(
+          Math.random() * 1000
+        ),
+
+      type: "note",
+
+      tripId:
+        t.id,
+
+      trip:
+        t.name,
+
+      stateCode: "",
+      stateName: "",
+
+      title:
+        title.trim(),
+
+      note:
+        (note || "").trim(),
+
+      ts:
+        new Date().toISOString()
+    }
+  );
+}
+
+
+function addArchivedTripPhoto(
+  index,
+  file
+){
+
+  var t =
+    savedTrips[index];
+
+  if(
+    !t ||
+    !file
+  ){
+    return;
+  }
+
+  var reader =
+    new FileReader();
+
+  reader.onload =
+    function(event){
+
+      var image =
+        new Image();
+
+      image.onload =
+        function(){
+
+          var maxSize = 900;
+
+          var width =
+            image.width;
+
+          var height =
+            image.height;
+
+          if(
+            width > height &&
+            width > maxSize
+          ){
+
+            height =
+              Math.round(
+                height *
+                maxSize /
+                width
+              );
+
+            width =
+              maxSize;
+          }
+
+          if(
+            height >= width &&
+            height > maxSize
+          ){
+
+            width =
+              Math.round(
+                width *
+                maxSize /
+                height
+              );
+
+            height =
+              maxSize;
+          }
+
+          var canvas =
+            document.createElement(
+              "canvas"
+            );
+
+          canvas.width =
+            width;
+
+          canvas.height =
+            height;
+
+          var context =
+            canvas.getContext(
+              "2d"
+            );
+
+          context.drawImage(
+            image,
+            0,
+            0,
+            width,
+            height
+          );
+
+          var photo =
+            canvas.toDataURL(
+              "image/jpeg",
+              0.72
+            );
+
+          var caption =
+            prompt(
+              "Photo caption:",
+              "Trip photo"
+            );
+
+          if(caption === null){
+            return;
+          }
+
+          saveArchivedTripMemory(
+            index,
+            {
+              id:
+                "m" +
+                Date.now() +
+                Math.floor(
+                  Math.random() *
+                  1000
+                ),
+
+              type: "photo",
+
+              tripId:
+                t.id,
+
+              trip:
+                t.name,
+
+              stateCode: "",
+              stateName: "",
+
+              title:
+                caption.trim() ||
+                "Trip photo",
+
+              caption:
+                caption.trim(),
+
+              photo:
+                photo,
+
+              ts:
+                new Date()
+                  .toISOString()
+            }
+          );
+        };
+
+      image.src =
+        event.target.result;
+    };
+
+  reader.readAsDataURL(
+    file
+  );
+}
+  
+
+
 function openTripDetails(index) {
 
   var t =
@@ -10686,6 +10993,22 @@ function openTripDetails(index) {
     document.getElementById(
       "tripDetailBackBtn"
     )
+
+
+  var addPhotoBtn =
+  document.getElementById(
+    "tripDetailAddPhotoBtn"
+  )
+
+var addNoteBtn =
+  document.getElementById(
+    "tripDetailAddNoteBtn"
+  )
+
+var photoInput =
+  document.getElementById(
+    "tripDetailPhotoInput"
+  )
 
 
   nameEl.textContent =
@@ -10770,6 +11093,46 @@ function openTripDetails(index) {
 
     }
 
+
+addNoteBtn.onclick =
+  function(){
+
+    addArchivedTripNote(
+      index
+    )
+
+  }
+
+
+addPhotoBtn.onclick =
+  function(){
+
+    photoInput.value = ""
+
+    photoInput.click()
+
+  }
+
+
+photoInput.onchange =
+  function(){
+
+    var file =
+      photoInput.files &&
+      photoInput.files[0]
+
+    if(!file){
+      return
+    }
+
+    addArchivedTripPhoto(
+      index,
+      file
+    )
+
+  }
+
+  
   backBtn.onclick =
     function(){
 
