@@ -12358,8 +12358,16 @@ function addMemoryPhoto(code) {
 function saveSelectedPhoto(file) {
   if(!file || !pendingPhotoStateCode) return;
 
-  var code = pendingPhotoStateCode;
-  var name = stateNameForCode(code);
+var code =
+  pendingPhotoStateCode;
+
+var isTripPhoto =
+  code === "TRIP";
+
+var name =
+  isTripPhoto
+    ? tripName
+    : stateNameForCode(code);
 
   var reader =
     new FileReader();
