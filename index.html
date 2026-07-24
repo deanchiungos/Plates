@@ -8024,7 +8024,43 @@ color:var(--muted); font-size:20px; font-weight:850; line-height:1.1; } #gameScr
   </div>
 
 </div>
-  
+
+<div id="confirmOverlay" class="newGameOverlay hidden">
+
+  <div class="confirmSheet">
+
+    <div class="newGameHandle"></div>
+
+    <div class="confirmIcon" id="confirmIcon">▶</div>
+
+    <div class="confirmTitle" id="confirmTitle">
+      Resume Trip
+    </div>
+
+    <div class="confirmTripName" id="confirmTripName"></div>
+
+    <div class="confirmMessage" id="confirmMessage">
+      Your current trip will be automatically archived
+    </div>
+
+    <button
+      id="confirmPrimaryBtn"
+      class="confirmPrimaryBtn"
+      type="button">
+      Resume Trip
+    </button>
+
+    <button
+      id="confirmCancelBtn"
+      class="confirmCancelBtn"
+      type="button">
+      Cancel
+    </button>
+
+  </div>
+
+</div>
+
 <script>
 function safeParse(value, fallback) {
   try {
