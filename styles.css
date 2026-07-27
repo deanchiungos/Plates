@@ -1,0 +1,4895 @@
+:root{
+  --sky: #c8f0ff;
+  --cream: #fff8e6;
+  --navy: #073763;
+  --blue: #1565c0;
+  --green: #35a852;
+  --badge-yellow: #FFD93D;
+  --gold: var(--badge-yellow);
+  --red: #b43b3b;
+  --text: #082b5f;
+  --muted: #667085;
+  --line: rgba(8,43,95,.14);
+  --shadow: 0 8px 22px rgba(7,55,99,.12);
+}
+*{
+  box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  min-height: 100%;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg,var(--sky) 0%,#eaf9ff 48%,var(--cream) 100%);
+}
+body{
+  padding-bottom: 92px;
+}
+button, select{
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+button{
+  border: 0;
+  border-radius: 14px;
+  font-weight: 850;
+  color: var(--text);
+  background: #fff;
+}
+.app{
+  position: relative;
+}
+.bottomNav{
+  position: relative;
+  z-index: 30;
+}
+.card{
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 13px;
+  margin: 10px 0;
+  box-shadow: var(--shadow);
+}
+.currentTripHeader{
+  border: 2px solid rgba(38,169,87,.18);
+  background: #fff;
+  border-radius: 22px;
+  padding: 12px 16px;
+  max-width: 320px;
+  padding-bottom: 8px !important;
+  margin-bottom: 8px !important;
+}
+.currentTripHeader .latestTripLabel{
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.currentTripHeader .tripNameInline{
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.05;
+}
+.currentTripHeader .tripModeTop{
+  display: none;
+}
+.currentTripHeader .title, .currentTripHeader .sub, .currentTripHeader .latestTripLabel, .currentTripHeader #tripName, .currentTripHeader #tripStatesLine, .currentTripHeader #tripModeSummary{
+  color: var(--navy);
+}
+#tripNameTop, #tripName{
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  font-size: 20px;
+  line-height: 1.05;
+  font-weight: 950;
+  color: var(--navy);
+  margin: 0 0 10px;
+}
+.textBtn{
+  background: #fff;
+  border: 2px solid #dbe8f5;
+  border-radius: 999px;
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 800;
+  padding: 12px 18px;
+  min-width: 110px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.textBtn:active{
+  transform: scale(.98);
+}
+.textBtn:hover{
+  opacity: .7;
+}
+.completionOverlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+.completionOverlay.hidden{
+  display: none;
+}
+.completionCard{
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 28px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+.completionEmoji{
+  font-size: 72px;
+}
+.completionTitle{
+  font-size: 24px;
+  font-weight: 950;
+  color: var(--navy);
+  margin-top: 12px;
+}
+.completionSub{
+  font-size: 18px;
+  color: var(--muted);
+  margin: 14px 0 24px;
+  line-height: 1.35;
+}
+.tripNameInline{
+  display: block;
+  font-size: 20px;
+  line-height: 1.05;
+  font-weight: 950;
+  color: var(--navy);
+  margin: 0 0 6px;
+}
+#tripsScreen > .card:first-child{
+  padding: 14px;
+}
+.outOf{
+  font-size: 24px;
+  font-weight: 850;
+  letter-spacing: -1px;
+  color: var(--muted);
+}
+.sub{
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 4px;
+}
+.bar{
+  height: 16px;
+  background: #e5eef7;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 8px !important;
+}
+.fill{
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg,var(--green),#70d66d,var(--gold));
+  transition: width .25s ease;
+}
+.quickStats{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+.stat{
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 9px 6px;
+  text-align: center;
+}
+.stat strong{
+  display: block;
+  font-size: 22px;
+  color: var(--navy);
+  line-height: 1;
+}
+.stat span{
+  display: block;
+  font-size: 11px;
+  color: #4b5565;
+  font-weight: 900;
+  letter-spacing: .5px;
+  margin-top: 6px;
+}
+.modeExplainCard{
+  border: 1px solid transparent;
+  border-radius: 18px;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+.modeExplainCard.active{
+  background: linear-gradient(180deg,#eaffef,#ffffff);
+  transform: scale(.98);
+  border-color: rgba(38,169,87,.65);
+}
+.modeExplainCard.active .title, .modeExplainCard.active .sub{
+  color: var(--green);
+}
+.panelTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-weight: 950;
+  color: var(--navy);
+  font-size: 22px;
+  line-height: 1.05;
+  margin-left: 0px;
+  padding-left: 4px;
+}
+.latestTripInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #d8e2ef;
+  border-radius: 26px;
+  padding: 20px 18px;
+  margin: 0 0 18px !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.latestTripLabel{
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  font-size: 20px;
+  font-weight: 950;
+  color: var(--green);
+  margin: 0 0 8px;
+}
+.panelTitle span:last-child{
+  font-size: 20px;
+}
+.stateGrid{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 8px;
+  margin-top: 4px !important;
+}
+.state{
+  min-height: 52px;
+  border: 2px solid #d8dde7;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 3px 0 rgba(7,55,99,.08);
+  font-size: 19px;
+  font-weight: 950;
+}
+.state:active{
+  transform: scale(.96);
+}
+.state.collected{
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+.state.rare:not(.collected){
+  border-color: #d8dde7;
+}
+body.show-rarity .state.rare:not(.collected){
+  border-color: var(--gold);
+}
+.state.celebrate{
+  animation: pop .55s;
+  box-shadow: 0 0 26px rgba(245,197,66,.95);
+}
+.value{
+  position: absolute;
+  bottom: 5px;
+  font-size: 9px;
+  font-weight: 900;
+  opacity: .8;
+}
+.row{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 10px;
+}
+.grow{
+  flex: 1;
+}
+.title{
+  font-weight: 950;
+  color: var(--navy);
+}
+.recent{
+  display: grid;
+  gap: 8px;
+}
+.tapStateTitle{
+  padding-left: 10px !important;
+  font-size: 22px;
+}
+.mapDetailsBox{
+  margin-top: 6px;
+  padding: 0;
+}
+.mapDetailsTitle, #stateDetails{
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+.mapDetailsTitle{
+  color: var(--navy);
+  font-size: 22px !important;
+  font-weight: 950 !important;
+  line-height: 1.2;
+  margin-bottom: 10px !important;
+}
+.mapLegend{
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 800;
+  margin-top: 10px;
+}
+.tripHistoryList{
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+}
+.tripHistoryTitle{
+  font-size: 16px;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.shareTripBtnSmall{
+  border: 2px solid #dbe8f5;
+  color: var(--blue);
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 800;
+}
+.sharePlate{
+  max-width: 270px;
+  margin: 0 auto 14px;
+  border: 4px solid var(--navy);
+  border-radius: 18px;
+  background: #fff;
+  padding: 14px 12px;
+  color: var(--navy);
+  box-shadow: 0 5px 0 rgba(7,55,99,.14);
+}
+.sharePlate h2{
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 6px;
+}
+.sharePlate div{
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+.shareStats{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 8px;
+  margin: 12px 0;
+}
+.shareStats div{
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #fff;
+  padding: 9px 5px;
+}
+.shareStats strong{
+  display: block;
+  color: var(--navy);
+  font-size: 21px;
+}
+.shareStats span{
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--muted);
+}
+.celebrationOverlay{
+  position:fixed;
+  inset:0;
+  z-index:80;
+  background:rgba(7,55,99,.68);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.celebrationOverlay.show{
+  display:flex;
+}
+.celebrationBox{
+  width:100%;
+  max-width:340px;
+  background:#fff;
+  border-radius:30px;
+  padding:24px 22px 20px;
+  text-align:center;
+  border:3px solid var(--badge-yellow);
+  background:
+    linear-gradient(
+      180deg,
+      #fff8d9 0%,
+      #ffffff 58%
+    );
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.28),
+    0 0 30px rgba(255,217,61,.35);
+}
+.celebrationEyebrow{
+  color:#a87900;
+  font-size:13px;
+  font-weight:950;
+  letter-spacing:1.5px;
+  margin-bottom:8px;
+}
+.celebrationBadgeIcon{
+  width:96px;
+  height:96px;
+  margin:0 auto 12px;
+  border-radius:999px;
+  background:#fff;
+  border:3px solid var(--badge-yellow);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:52px;
+  line-height:1;
+  box-shadow:0 8px 20px rgba(7,55,99,.12);
+}
+.celebrationBox h2{
+  margin:0 0 10px;
+  color:var(--navy);
+  font-size:30px;
+  font-weight:950;
+  line-height:1.05;
+}
+.celebrationBox p{
+  margin:0 0 16px;
+  color:var(--muted);
+  font-size:16px;
+  font-weight:800;
+  line-height:1.35;
+}
+.toast{
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-110px);
+  z-index: 90;
+  background: #fff;
+  border: 2px solid var(--gold);
+  box-shadow: var(--shadow);
+  border-radius: 999px;
+  padding: 12px 16px;
+  font-weight: 950;
+  color: var(--navy);
+  transition: .25s;
+  max-width: 92vw;
+  text-align: center;
+}
+.toast.show{
+  transform: translateX(-50%) translateY(0);
+}
+.bottomNav{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+  background: rgba(255,255,255,.94);
+  border-top: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+.navInner{
+  max-width: 430px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 4px;
+}
+.navInner button{
+  height: 56px;
+  border-radius: 15px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.navInner .navIcon{
+  font-size: 24px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 6px;
+}
+.navInner button.active{
+  background: #eaf3ff;
+  color: var(--blue);
+}
+.screen{
+  display: block;
+}
+.screen.hidden{
+  display: none;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(1.17);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+/* v35 blue-green visual refresh */
+
+:root{
+  --sky: #bfeeff;
+  --cream: #f4fff5;
+  --navy: #05345f;
+  --blue: #1577d2;
+  --green: #26a957;
+  --gold: #f6c844;
+  --red: #b43b3b;
+  --text: #062f5f;
+  --muted: #667085;
+  --line: rgba(6,47,95,.14);
+  --shadow: 0 10px 26px rgba(6,47,95,.14);
+}
+html,body{
+  background: radial-gradient(circle at 50% 0%,rgba(255,255,255,.9),transparent 22%),
+    linear-gradient(180deg,#bdefff 0%,#dff8ff 45%,#f5fff3 100%);
+}
+.logo img{
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  /* reduce from 340px */
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.12));
+  animation: logoFade .45s ease;
+}
+.logo::before, .logo::after{
+  content: none;
+  display: none;
+}
+.logo h1{
+  display: none;
+}
+.logo{
+  width: 100%;
+  max-width: 340px;
+  margin: -8px auto 2px;
+  padding: 0;
+}
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.top{
+  margin-bottom: 12px;
+}
+.card{
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(6,47,95,.12);
+  box-shadow: 0 10px 26px rgba(6,47,95,.12);
+}
+.stat, .badge, .row{
+  background: linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+}
+.state{
+  background: linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+}
+.state.collected{
+  background: linear-gradient(180deg,#32b860 0%,#249d4e 100%);
+  color: #fff;
+  border-color: #249d4e;
+}
+.shareCard{
+  background: linear-gradient(180deg,rgba(255,255,255,.72),rgba(255,255,255,.95)),
+    linear-gradient(135deg,#bfeeff,#e8fff0);
+}
+.primary{
+  background: linear-gradient(180deg,#35b964,#239d4f);
+  color: #fff;
+}
+.secondary{
+  background: #fff;
+  border: 1px solid rgba(21,119,210,.3);
+  color: var(--blue);
+}
+.logo h1{
+  font-size: 38px;
+  letter-spacing: 6px;
+}
+
+@media (max-width:390px) {
+.logo h1{
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+}
+/* v38.2 interactive SVG-style map */
+
+.mapCard{
+  padding: 18px;
+}
+.interactiveMapWrap{
+  background: #fff;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.interactiveUSMap{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mapOcean{
+  fill: #f8fbff;
+}
+.svgState{
+  fill: #d9dee7;
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: fill .18s ease, transform .18s ease;
+}
+.svgState.hit{
+  fill: #34C759;
+}
+.svgState.rare:not(.hit){
+  fill: #d9dee7;
+}
+body.show-rarity .svgState.rare:not(.hit){
+  fill: #F6C744;
+}
+.svgState:active{
+  transform: scale(.96);
+  transform-origin: center;
+}
+.svgLabel{
+  font-size: 10px;
+  font-weight: 900;
+  text-anchor: middle;
+  fill: #073763;
+  pointer-events: none;
+}
+.svgState.hit + .svgLabel{
+  fill: #fff;
+}
+body.show-rarity .svgState.rare:not(.hit) + .svgLabel{
+  fill: #073763;
+}
+.mapLegend{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 800;
+}
+.legend{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+.legend.found{
+  background: #34C759;
+}
+.legend.rare{
+  background: #F6C744;
+}
+.legend.missing{
+  background: #D9DEE7;
+}
+.onboardingOverlay{
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  background: rgba(7,55,99,.55);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 18px;
+}
+.onboardingOverlay.show{
+  display: flex;
+}
+.onboardingSheet{
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px 18px 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.28);
+}
+.onboardingPlate{
+  max-width: 250px;
+  margin: 0 auto 16px;
+  background: linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+  border: 3px solid var(--navy);
+  border-radius: 18px;
+  padding: 12px 14px;
+  text-align: center;
+  box-shadow: 0 4px 0 rgba(7,55,99,.14);
+}
+.onboardingPlate h2{
+  margin: 0;
+  color: var(--navy);
+  font-size: 24px;
+  letter-spacing: 6px;
+  line-height: 1;
+}
+.onboardingPlate div{
+  margin-top: 7px;
+  color: #a52d2d;
+  font-size: 9px;
+  font-weight: 950;
+  letter-spacing: 1.4px;
+}
+.onboardingSheet h1{
+  margin: 0;
+  color: var(--navy);
+  font-size: 24px;
+  text-align: center;
+}
+.onboardingIntro{
+  margin: 8px 0 14px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.35;
+}
+.onboardingRule{
+  border: 1px solid var(--line);
+  background: #f8fbff;
+  border-radius: 16px;
+  padding: 11px 12px;
+  margin-top: 8px;
+}
+.onboardingRule strong{
+  display: block;
+  color: var(--navy);
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.onboardingRule span{
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.3;
+}
+.onboardingFooter{
+  margin: 13px 0;
+  color: var(--green);
+  font-weight: 900;
+  font-size: 13px;
+  text-align: center;
+}
+/* v40 State Details V1 */
+
+.stateDetailHero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 18px;
+  padding: 14px;
+  background: linear-gradient(180deg,#f8fbff,#ffffff);
+  border: 1px solid var(--line);
+  margin-bottom: 10px;
+}
+.stateDetailHero.found{
+  background: linear-gradient(180deg,#eaffef,#ffffff);
+  border-color: rgba(53,168,82,.35);
+}
+.stateDetailHero.missing{
+  opacity: .85;
+}
+.stateDetailName{
+  font-size: 24px;
+  font-weight: 950;
+  color: var(--navy);
+  line-height: 1.05;
+}
+.stateDetailSub{
+  margin-top: 4px;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 1px;
+}
+.stateDetailHero.missing .stateDetailSub{
+  color: var(--muted);
+}
+.emptyStateDetails{
+  text-align: center;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 8px 0 10px;
+}
+.stateDetailCode{
+  width: 56px;
+  height: 44px;
+  border-radius: 12px;
+  background: #fff;
+  border: 2px solid var(--line);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 950;
+  box-shadow: 0 3px 0 rgba(7,55,99,.08);
+}
+.detailGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.detailItem{
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 15px;
+  padding: 11px 10px;
+  text-align: center;
+}
+.detailItem span{
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .4px;
+}
+.detailItem strong{
+  display: block;
+  color: var(--navy);
+  font-size: 24px;
+  line-height: 1.1;
+  margin-top: 3px;
+}
+.detailRows{
+  display: grid;
+  gap: 7px;
+}
+.detailRow{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 11px;
+  background: #fff;
+}
+.detailRow span{
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+.detailRow strong{
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 950;
+  text-align: right;
+}
+.notesPreview{
+  margin-top: 10px;
+  border: 1px dashed rgba(21,101,192,.32);
+  border-radius: 15px;
+  padding: 24px 16px;
+  background: #f8fbff;
+  text-align: center;
+}
+.notesPreview .title{
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 950;
+  margin-bottom: 8px;
+}
+.notesPreview .sub{
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+.tripRow{
+  align-items: center;
+}
+.currentTripRow{
+  border: 2px solid rgba(38,169,87,.25);
+  background: #fff;
+}
+.currentTripRow .title{
+  text-align: left;
+  color: var(--navy);
+  font-size: 24px;
+}
+.currentTripRow .tripMeta{
+  text-align: left;
+  line-height: 1.25;
+  color: var(--muted);
+}
+.tripMeta{
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: left;
+  margin-top: 6px;
+}
+.deleteTripBtn{
+  background: #fff;
+  border: 1px solid rgba(180,59,59,.25);
+  color: #b43b3b;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 900;
+}
+.emptyHistory{
+  color: var(--muted);
+  font-weight: 800;
+  text-align: center;
+  padding: 12px;
+}
+.tripRow{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:12px;
+}
+.tripRowActions{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.tripRow .grow{
+  width:100%;
+}
+.renameTripBtnSmall{
+  background: #fff;
+  border: 1px solid rgba(21,119,210,.25);
+  color: var(--blue);
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 900;
+}
+/* v40.7 map border + recent sightings cleanup */
+
+.interactiveMapWrap{
+  border: 1px solid rgba(7,55,99,.14);
+  box-shadow: 0 4px 12px rgba(7,55,99,.06);
+}
+.interactiveUSMap{
+  border-radius: 16px;
+}
+.recentItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 2px solid #edf2f8;
+  border-radius: 20px;
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 4px 10px rgba(7,55,99,.05);
+}
+.recentState{
+  color: var(--navy);
+  line-height: 1.1;
+    font-size:17px;
+  font-weight:800;
+}
+.recentMeta{
+  background: #f4f7fb;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 900;
+}
+.inviteActions{
+  display: flex;
+  flex-direction: column;
+  gap: 16px !important;
+  margin-top: 16px !important;
+}
+.inviteActions button{
+  width: 100%;
+  min-height: 56px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 900;
+  border: 2px solid #cfe0f7;
+  background: #fff;
+  color: var(--blue);
+  box-shadow: 0 4px 12px rgba(0,0,0,.04);
+  margin: 0 !important;
+}
+.inviteActions .secondary:active{
+  transform: scale(.98);
+}
+.recentPts{
+  margin-left: 8px;
+  color: var(--green);
+  font-weight: 950;
+}
+/* v41 Trip Memories functional */
+
+.memoryActions{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+.memoryBtn{
+  border: 1px solid rgba(21,119,210,.22);
+  background: #fff;
+  color: var(--navy);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 900;
+}
+.memoryBtn:active{
+  transform: scale(.98);
+}
+.memoryEmpty{
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+  padding: 8px 12px 2px;
+    padding-left:6px;
+  text-align: center;
+}
+.memoryList{
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+.memoryItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: left;
+}
+.memoryThumb{
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  flex: 0 0 auto;
+}
+.memoryNoteIcon{
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eaf3ff;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 950;
+  flex: 0 0 auto;
+}
+.memoryText{
+  min-width: 0;
+  flex: 1;
+}
+.memoryTitle{
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1.1;
+}
+.memoryBody{
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.25;
+  margin-top: 3px;
+}
+.memoryDate{
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+.deleteMemoryBtn{
+  border: 1px solid rgba(180,59,59,.22);
+  color: #b43b3b;
+  background: #fff;
+  border-radius: 999px;
+  padding: 7px 9px;
+  font-size: 11px;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+/* v41.1 map is view-only */
+
+.svgState{
+  cursor: pointer;
+}
+/* Clear border around the U.S. map itself */
+
+.interactiveMapWrap{
+  border: 2px solid rgba(7,55,99,.22) !important;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 14px rgba(7,55,99,.08);
+  padding: 10px;
+}
+.interactiveUSMap{
+  border: 1px solid rgba(7,55,99,.12);
+  border-radius: 16px;
+  background: #f8fbff;
+}
+.formGroup{
+  margin-bottom: 16px;
+}
+.formGroup label{
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--navy);
+}
+.formGroup input{
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 14px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 800;
+}
+#saveProfileBtn:not(.hidden){
+  width: 100%;
+  background: #fff;
+  color: var(--blue);
+  border: 2px solid #dbe8f5;
+  border-radius: 999px;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.modeDropdownBtn{
+  width: 100%;
+  margin: 18px 0 16px;
+  padding: 13px 16px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  border: 1px solid rgba(21,119,210,.25);
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.modeCloseBtn{
+  width: 100%;
+  margin-top: 14px;
+}
+.dangerBtn{
+  color: #b43b3b;
+  border-color: rgba(180,59,59,.25);
+}
+/* v41.2a current trip summary + share button alignment */
+
+#currentPlayerSelect{
+  background-color: #fff !important;
+  background-image: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+.tripHistoryList .tripHistoryTitle, .tripHistoryList .title, .recent .title{
+  font-size: 17px !important;
+  line-height: 1.1 !important;
+}
+.recent .sub, .tripHistoryList .tripMeta{
+  font-size: 13px !important;
+}
+#endTripBtn{
+  display: block;
+  width: auto;
+  min-width: 240px;
+  margin: 0 auto 14px auto;
+}
+ #currentPlayerSelect{
+  background: #fff !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border: 1px solid var(--line);
+  box-shadow: none !important;
+}
+#currentPlayerSelect{
+  background: #fff !important;
+}
+.tripOptionsBtn{
+  width: 100%;
+  border: 2px solid rgba(21,101,192,.18);
+  border-radius: 999px;
+  background: #fff;
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--blue);
+}
+#newTripBtn{
+  margin-top: 12px;
+}
+.tripHistoryList .tripHistoryTitle, .tripHistoryList .title{
+  text-align: left !important;
+  width: 100%;
+  margin: 0 0 6px;
+}
+.found{
+  color: var(--green) !important;
+}
+#primaryNumber{
+  color: var(--green) !important;
+  margin-right: -4px;
+  font-size: inherit !important;
+}
+#outOf .found{
+  color: var(--green) !important;
+}
+#stateDetails{
+  text-align: left;
+}
+#mapCount{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--muted);
+}
+#tripsScreen .row .grow{
+  text-align: center;
+}
+.shareActions{
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+#copyShareBtn{
+  min-width: 260px;
+}
+/* v41.4 share card polish */
+
+.shareHeadline{
+  margin: 10px 0 2px;
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 950;
+  line-height: 1.05;
+}
+.shareSubhead{
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 900;
+  margin: 4px 0 12px;
+}
+.familyList{
+  display: grid;
+  gap: 10px;
+}
+.familyRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  padding: 12px;
+}
+.familyRow.active{
+  border-color: rgba(38,169,87,.45);
+  background: linear-gradient(180deg,#eaffef,#ffffff);
+}
+familyMember{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 6px;
+}
+.familyAvatar{
+    width:56px;
+  height:56px;
+  min-width:56px;
+  
+  font-size:30px;
+  
+  border-radius:999px;
+  background:#eef4ff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+margin-left:6px;
+  font-weight:950;
+  color:var(--navy);
+
+  flex-shrink:0;
+}
+.familyInfo{
+  flex:1;
+  min-width:0;
+    padding-left:6px;
+}
+.familyName{
+  line-height: 1.15;
+  font-size:16px;
+  font-weight:950;
+  color:var(--navy);
+}
+.familyMeta{
+  color: var(--muted);
+    font-size:18px;
+  opacity:.6;
+  font-weight: 800;
+  margin-top: 2px;
+  opacity:.72;
+}
+.familySmallBtn{
+  border: 1px solid rgba(21,119,210,.25);
+  color: var(--blue);
+  background: #fff;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 900;
+}
+.familyStats{
+  margin-top:4px;
+  font-size:13px;
+  font-weight:800;
+  color:var(--muted);
+  opacity:.72;
+}
+.familyDeleteBtn{
+  border-color: rgba(180,59,59,.25);
+  color: #b43b3b;
+}
+.familyAddBtn{
+  width: 100%;
+  min-height: 56px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 0 !important;
+}
+.familyEmpty{
+  border: 1px dashed rgba(21,101,192,.28);
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  color: var(--muted);
+  font-weight: 850;
+  background: #f8fbff;
+}
+.avatarPreview{
+  width: 60px;
+  height: 60px;
+  font-size: 34px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.avatarPicker.readOnly{
+  pointer-events: none;
+  opacity: .6;
+}
+.avatarPicker.readOnly .avatarBtn.selected{
+  opacity: 1;
+}
+.avatarCard{
+  border: 2px solid #e7edf6;
+  border-radius: 22px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.hidden{
+  display: none !important;
+}
+.inviteBox{
+  text-align: center;
+  padding: 0;
+}
+.inviteLabel{
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 850;
+  margin-bottom: 8px;
+}
+.inviteCode{
+  display: inline-block;
+  background: #f8fbff;
+  border: 2px dashed rgba(21,119,210,.35);
+  border-radius: 18px;
+  padding: 14px 20px;
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 950;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+#copyInviteBtn{
+  width: 100%;
+  max-width: 260px;
+}
+/* v42.4 safe family display fix */
+
+html, body{
+  overflow-x: hidden;
+}
+.app{
+  width: 100%;
+  max-width: 430px;
+}
+.logo{
+  max-width: min(326px, calc(100vw - 48px));
+}
+.familyRow{
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+.familyInfo{
+  min-width: 0;
+}
+.familyMeta{
+  white-space: normal;
+  line-height: 1.25;
+}
+.familySmallBtn{
+  white-space: nowrap;
+}
+/* v44 team attribution */
+
+.recentTime{
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 800;
+}
+.recentFinder{
+  margin-top:4px;
+    color:var(--muted);
+  opacity:.65;
+  font-size:11px;
+  font-weight:600;
+}
+/* v44.1 current trip row click target */
+
+.currentTripRow{
+  cursor: pointer;
+}
+.currentTripRow:active{
+  transform: scale(.99);
+}
+.tripModeTop{
+  margin-top: 4px;
+  color: rgba(255,255,255,.88);
+  font-size: 14px;
+  font-weight: 850;
+}
+/* v45.1 leaderboard emoji fix */
+
+#leaderboardList .title{
+  white-space: nowrap;
+}
+/* v46 trip history spacing */
+
+.tripHistoryList .tripRow{
+  padding: 14px 12px;
+  gap: 8px;
+}
+.tripHistoryList .title{
+  font-size: 24px;
+  line-height: 1.08;
+}
+.tripHistoryList .tripMeta{
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.tripRowActions{
+  gap: 8px;
+}
+.renameTripBtnSmall, .deleteTripBtn{
+  padding: 8px 13px;
+  font-size: 13px;
+}
+.avatarBtn{
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.avatarBtn.selected{
+  outline: 3px solid #26a957;
+}
+.profileInfo{
+  display: grid;
+  gap: 8px !important;
+  margin: 10px 0 10px !important;
+}
+.profileRow{
+  background: #fff;
+  border: 1px solid #dfe6ef;
+  border-radius: 18px;
+  padding: 13px 16px;
+}
+.profileLabel{
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  margin-bottom: 10px;
+}
+.profileValue{
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 950;
+  line-height: 1.15;
+}
+.friendsCard{
+  padding: 18px !important;
+}
+.friendCode{
+  color: var(--navy);
+  font-size: 34px;
+  font-weight: 950;
+  letter-spacing: 1px;
+}
+.friendsCard #inviteFriendsBtn{
+  width: 100%;
+  min-height: 58px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: #fff !important;
+  color: var(--blue) !important;
+  border: 2px solid #d8e2ef !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  font-size: 20px;
+  font-weight: 950;
+}
+.gameModesMini{
+  padding: 16px 18px;
+}
+/* v50 Home explainer */
+
+.infoSectionTitle{
+  margin: 14px 0 8px;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+.infoRow{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(6,47,95,.10);
+}
+.infoRow:first-of-type{
+  border-top: none;
+}
+.infoRow strong{
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 950;
+  text-align: left;
+}
+.infoRow span{
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: left;
+}
+.infoDivider{
+  height: 1px;
+  background: rgba(6,47,95,.10);
+  margin: 4px 0 !important;
+}
+#stateDetails{
+  font-size: 16px;
+  font-weight: 700;
+  color: #6b7280;
+  text-align: left;
+  line-height: 1.35;
+  padding: 0 12px 6px;
+  margin-top: 12px;
+}
+#endTripBtn{
+  background: #fff !important;
+  color: var(--blue) !important;
+  border: 2px solid #dbe8f5 !important;
+  border-radius: 999px;
+  min-width: 240px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+#tripStatesLine{
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 950;
+  color: var(--navy);
+}
+#tripStatesLine .found{
+  color: var(--green);
+}
+#tripModeSummary, #tripModeTop{
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  font-size: 18px;
+  font-weight: 850;
+  color: var(--navy);
+  margin-top: 6px;
+}
+.vanityCard{
+  text-align: center;
+}
+.vanityPlatePreview{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  aspect-ratio:2/1;
+
+  margin:18px auto;
+  padding:16px 18px 12px;
+
+  border-radius:20px;
+  border:3px solid var(--navy);
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f6faff 45%,
+      #eef6ff 100%
+    );
+
+  box-shadow:
+    0 10px 24px rgba(10,31,68,.16),
+    inset 0 2px 0 rgba(255,255,255,.8);
+
+  overflow:hidden;
+}
+.plateState, .plateText, .plateTagline{
+  text-align: center;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 4px;
+  margin-top: 12px;
+  color: #b0322f;
+}
+.plateState{
+  font-size:22px;
+  letter-spacing:6px;
+  color:#b0322f;
+
+  position:absolute;
+  top:24px;
+  left:50%;
+  transform:translateX(-50%);
+
+  margin:0;
+  white-space:nowrap;
+}
+.plateText{
+  position:absolute;
+  left:50%;
+  top:50%;
+
+  transform:
+    translate(-50%,-35%);
+
+  font-size:82px;
+  font-weight:950;
+  letter-spacing:4px;
+  line-height:1;
+  color:var(--navy);
+
+  white-space:nowrap;
+
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.7),
+    0 2px 3px rgba(0,0,0,.16);
+}
+.plateTagline{
+  position:absolute;
+  left:50%;
+  bottom:30px;
+
+  transform:translateX(-50%);
+
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:9px;
+  color:var(--muted);
+
+  white-space:nowrap;
+  margin:0;
+}
+#plateNameInput{
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 8px 0 18px;
+  border: 1px solid rgba(10,31,68,.14);
+  border-radius: 22px;
+  padding: 18px 28px;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--navy);
+  text-align: left;
+  background: #fff;
+}
+.plateHint{
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+}
+.profileSelect{
+  width: 100%;
+  height: 58px;
+  padding: 0 14px;
+  /* was 22px */
+  border: 2px solid #d8e2ef;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 850;
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
+  line-height: 54px;
+  box-sizing: border-box;
+}
+.profileSelect option{
+  font-weight: 850;
+}
+.profilePlateHero{
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+.plateHint{
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+  text-align: center;
+}
+.tripHistoryList .tripMeta{
+  color: var(--muted) !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+}
+.mapHero .latestTripLabel{
+  color: var(--navy) !important;
+}
+.mapHeroCount{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 950;
+  color: var(--navy);
+  line-height: 1.05;
+}
+.mapHeroCount .found{
+  color: var(--green);
+}
+.latestTripInfo, .mapHero, .latestTripInfo.mapHero{
+  border: 2px solid #d8e2ef !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06) !important;
+}
+/* v50 clean Game Setup */
+
+.modeDropdownBtn{
+  background: #fff !important;
+  background-image: none !important;
+  border: 2px solid #d8e2ef !important;
+  color: var(--navy) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06) !important;
+  margin: 8px 0 !important;
+}
+.newGameBtn{
+  width: 100%;
+  min-height: 56px;
+  background: #fff;
+  border: 2px solid #d8e2ef;
+  border-radius: 999px;
+  color: var(--blue);
+  /* changed from var(--navy) */
+  font-size: 20px;
+  font-weight: 950;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  margin: 10px 0 12px !important;
+}
+#resumeGameOverlay .newGameBtn{
+  margin:6px 0 !important;
+}
+#resumeGameOverlay .plateHint{
+  margin-bottom:14px !important;
+}
+#tripDetailResumeBtn,
+#tripDetailShareBtn,
+#tripDetailDeleteBtn{
+  margin:4px 0 !important;
+}
+#newGameBtn{
+  color: var(--blue) !important;
+  margin-top: 0 !important;
+}
+.newGameBtn:active{
+  transform: scale(.985);
+}
+.newGameOverlay{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(7,55,99,.55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 18px;
+}
+.newGameOverlay.hidden{
+  display: none !important;
+}
+.confirmSheet{
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  border-radius: 28px 28px 24px 24px;
+  padding: 14px 18px 20px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.28);
+  text-align: center;
+}
+.confirmIcon{
+  width: 72px;
+  height: 72px;
+  margin: 4px auto 14px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+.confirmTitle{
+  color: var(--navy);
+  font-size: 28px;
+  font-weight: 950;
+  line-height: 1.05;
+  margin-bottom: 10px;
+}
+.confirmTripName{
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 950;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.confirmMessage{
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 0 auto 20px;
+  max-width: 300px;
+}
+.confirmPrimaryBtn{
+  width: 100%;
+  min-height: 56px;
+
+  background: #fff !important;
+  border: 2px solid #d8e2ef !important;
+  border-radius: 999px;
+
+  color: var(--blue) !important;
+
+  font-size: 20px;
+  font-weight: 950;
+
+  box-shadow:
+    0 6px 18px
+    rgba(0,0,0,.06) !important;
+}
+.confirmCancelBtn{
+  width: 100%;
+  min-height: 48px;
+  margin-top: 8px;
+  border: 0;
+  background: transparent;
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 900;
+}
+.dangerConfirmBtn{
+  background:
+    linear-gradient(
+      180deg,
+      #d85a5a,
+      #b43b3b
+    ) !important;
+
+  color:#fff !important;
+
+  box-shadow:
+    0 6px 18px
+    rgba(180,59,59,.28);
+}
+.confirmPrimaryBtn:active,
+.confirmCancelBtn:active{
+  transform: scale(.985);
+}
+.newGameSheet{
+  width: 100%;
+  max-width: 430px;
+  max-height: 84vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 28px 28px 24px 24px;
+  padding: 14px 18px 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.28);
+}
+.newGameHandle{
+  width: 52px;
+  height: 5px;
+  border-radius: 999px;
+  background: #d8e2ef;
+  margin: 0 auto 14px;
+}
+.newGameTitle{
+  text-align: center;
+  color: var(--navy);
+  font-size: 28px;
+  font-weight: 950;
+  margin-bottom: 18px;
+}
+.newGameSectionLabel{
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: .12em;
+  margin: 16px 0 8px;
+}
+.newGameOption{
+  width: 100%;
+  display: block;
+  text-align: left;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px 16px;
+  margin-top: 8px;
+  box-shadow: none;
+}
+.newGameOption strong{
+  display: block;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 950;
+}
+.newGameOption span{
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+.newGameOption.active{
+  background: #fff !important;
+  border: 3px solid #26a957 !important;
+  box-shadow: 0 0 0 3px rgba(38,169,87,.10) !important;
+}
+.newGameOption.active strong:after{
+  content: " ✓";
+  color: #26a957;
+}
+.newGameDivider{
+  height: 1px;
+  background: var(--line);
+  margin: 18px 0;
+}
+.newGameInput{
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: 850;
+  color: var(--navy);
+  margin-top: 8px;
+}
+.createGameBtn{
+  width: 100%;
+  min-height: 58px;
+  background: #fff;
+  color: var(--blue) !important;
+  border: 2px solid #d8e2ef;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 950;
+  margin-top: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.createGameBtn:active{
+  transform: scale(.985);
+}
+.modeCloseBtn{
+  width: 100%;
+  min-height: 52px;
+  border-radius: 999px;
+  margin-top: 10px;
+}
+.currentTripHeader{
+  border: 2px solid rgba(38,169,87,.18);
+  background: #fff;
+  border-radius: 22px;
+  max-width: 390px;
+  padding: 12px 16px 8px;
+  margin: 0 auto 8px;
+  box-sizing: border-box;
+}
+/* v50 live game / no active game */
+
+.noGameHero{
+  background: #fff;
+  border: 2px solid #d8e2ef;
+  border-radius: 26px;
+  padding: 22px 18px;
+  margin: 0 8px 18px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.noGameTitle{
+  color: var(--navy);
+  font-size: 28px;
+  font-weight: 950;
+  line-height: 1.05;
+}
+.noGameSub{
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+.currentTripHeader{
+  padding-bottom: 14px !important;
+  margin-bottom: 1opx !important;
+}
+.bar{
+  margin-bottom: 14px !important;
+}
+.app{
+  width: 100% !important;
+  max-width: 430px !important;
+  margin: 0 auto !important;
+  padding: 26px 12px 0 !important;
+}
+ .newGameOption.active, .modeExplainCard.active{
+  background: linear-gradient(180deg,#eaffef,#ffffff) !important;
+  border: 3px solid var(--green) !important;
+  box-shadow: 0 0 0 3px rgba(38,169,87,.12) !important;
+}
+ .newGameOption.active strong, .modeExplainCard.active .title{
+  color: var(--green) !important;
+}
+ .newGameOption.active strong::after{
+  content: " ✓";
+  color: var(--green);
+}
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("plate-collage-bg.png.png");
+  background-size: 700px auto;
+  background-repeat: repeat;
+  background-position: top left;
+  opacity: .14;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Profile Safari selector fix */
+
+.profileSelect{
+  height: 58px !important;
+  line-height: normal !important;
+  padding: 0 28px !important;
+  border: 2px solid #d9dee8 !important;
+  border-radius: 24px !important;
+  background: #fff !important;
+  color: var(--navy) !important;
+  font-size: 18px !important;
+  font-weight: 850 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+/* Save profile button polish */
+
+#saveProfileBtn:not(.hidden){
+  min-height: 58px !important;
+  border-radius: 999px !important;
+  font-size: 19px !important;
+  font-weight: 900 !important;
+}
+/* Team invite button width */
+
+#copyInviteBtn{
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 56px !important;
+  border-radius: 999px !important;
+}
+/* More space between player plate and name */
+
+.familyRow{
+  gap: 18px !important;
+}
+/* Add Player button final sizing */
+
+.familyAddBtn{
+  width: 100% !important;
+  min-height: 58px !important;
+  border-radius: 999px !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+}
+ #mapTitle{
+  font-size: 44px !important;
+  font-weight: 950 !important;
+  line-height: 1.05 !important;
+}
+#mapScreen .panelTitle{
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+#mapScreen .sub{
+  display: none;
+}
+#progressBar, #tripProgressBar{
+  display: block !important;
+  height: 16px !important;
+  background: #e5eef7 !important;
+  border-radius: 999px !important;
+  overflow: hidden !important;
+  margin-top: 6px !important;
+  margin-bottom: 12px !important;
+}
+#fill{
+  display: block !important;
+  height: 100% !important;
+  min-width: 4px;
+  background: linear-gradient(90deg,var(--green),#70d66d,var(--gold)) !important;
+}
+.battleRow{
+  padding: 10px 16px !important;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  min-height: 62px !important;
+}
+.battleRank{
+  width: 42px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 950;
+}
+.battlePlayer{
+  font-size: 16px;
+  font-weight: 950;
+}
+.battleScore{
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 950;
+  white-space: nowrap;
+}
+.battleHero{
+  text-align: center;
+  background: #fff;
+  border: 2px solid #d8e2ef;
+  border-radius: 26px;
+  padding: 22px 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.battleLabel{
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.battleTitle{
+  margin-top: 6px;
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 950;
+}
+.battleSub{
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 850;
+}
+.playerAvatar{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #f5f8fc;
+  border: 2px solid #d8e2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+.inviteCard{
+  padding: 18px !important;
+}
+#createAccountBtn{
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  /* was 58 */
+  margin-top: 8px;
+  /* was 18 */
+  padding: 10px 18px;
+  /* add this */
+  border: 2px solid #cfe0f7;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--blue);
+  font-size: 18px;
+  /* optional */
+  font-weight: 900;
+  box-shadow: 0 4px 12px rgba(0,0,0,.04);
+}
+#createAccountBtn:active{
+  transform: scale(.98);
+}
+.accountCard{
+  padding: 20px 22px 20px !important;
+}
+.accountBox{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.accountOverlay{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(7,55,99,.55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 18px;
+}
+.accountOverlay.hidden{
+  display: none !important;
+}
+.accountSheet{
+  width: 100%;
+  max-width: 430px;
+  max-height: 84vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 28px 28px 24px 24px;
+  padding: 14px 18px 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.28);
+  position: relative;
+}
+.accountSheet{
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+.accountSheet::-webkit-scrollbar{
+  display:none;
+}
+.accountSheet{
+  position: relative;
+}
+.sheetCloseBtn{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 5;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 0;
+  background: #f3f6fa;
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accountBox{
+  margin: 12px 0 18px;
+  padding: 0;
+}
+.accountBox .title{
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.accountBox .sub{
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.sheetCloseBtn{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f6fa;
+  color: var(--navy);
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.friendLeaderboardCard{
+  margin-top:12px;
+}
+#friendLeaderboard{
+  margin-top:8px;
+}
+.leaderboardRow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:12px 4px;
+  border-bottom:1px solid rgba(11,62,103,.10);
+  font-size:16px;
+  font-weight:900;
+  color:var(--navy);
+}
+.leaderboardRow:last-child{
+  border-bottom:none;
+}
+.friendsCard #inviteFriendsBtn{
+  width: 100%;
+  min-height: 58px;
+  border-radius: 999px;
+  background: #fff !important;
+  color: var(--blue) !important;
+  border: 2px solid #d8e2ef !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  font-size: 20px;
+  font-weight: 950;
+  margin-top: 16px;
+}
+.friendsEmpty{
+  text-align: center;
+  margin: 14px 0 10px;
+}
+.friendsEmptySub{
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0 0 8px !important;
+}
+#badgesScreen .progressFill{
+  height: 100%;
+  background: var(--green);
+  border-radius: 999px;
+  transition: width .25s ease;
+}
+.badgesHeader{
+  margin-bottom:12px;
+}
+.nextBadgeBox{
+  margin-top:0;
+  margin-bottom:12px;
+  padding:22px 20px 18px;
+}
+.badgesCount{
+  font-size:18px;
+  font-weight:950;
+  color:var(--muted);
+  text-align:left;
+  padding-left:4px;
+  margin:0 0 22px;
+}
+.badgesTitle{
+  font-size:28px;
+  font-weight:950;
+  color:var(--navy);
+  margin:0;
+}
+.badgeStats{
+  display: none;
+}
+.nextBadgeLabel{
+  font-size:14px !important;
+  letter-spacing:1.5px;
+  margin-bottom:8px !important;
+  padding-left:10px;
+  color:#9a7a11;
+  font-weight:950;
+}
+.nextBadgeMain{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nextBadgeIcon{
+  width: 56px;
+  height: 56px;
+  min-width: 60px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid var(--badge-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex-shrink: 0;
+  gap:18px;
+  padding-top:8px;
+}
+.nextBadgeName{
+  font-size: 18px;
+  margin-bottom: 2px;
+  margin: 0;
+  font-weight: 950;
+  color: var(--navy);
+  line-height: 1.05;
+}
+.nextBadgeProgress{
+  font-size: 13px;
+  margin-top: 0;
+  font-weight: 850;
+  color: var(--muted);
+}
+.progressTrack{
+  width: 100%;
+  height: 8px;
+  background: rgba(11,62,103,.12);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.profileHero{
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+.profileAvatar{
+  border-radius: 999px;
+  background: #fff;
+  border: 3px solid var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  width: 72px !important;
+  height: 72px !important;
+  margin: 0 auto 8px !important;
+  font-size: 40px !important;
+}
+.profileName{
+  font-size: 30px;
+  font-weight: 950;
+  color: var(--navy);
+}
+.profileLevel{
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 4px 0 8px !important;
+  color: #b38b00;
+  font-size: 18px;
+  font-weight: 900;
+}
+.leaderRow{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.leaderRank{
+  width: 34px;
+  text-align: center;
+  font-size: 24px;
+}
+.leaderAvatar{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid rgba(21,101,192,.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  background: #fff;
+}
+.leaderInfo{
+  flex: 1;
+}
+.leaderName{
+  font-size: 18px;
+  font-weight: 950;
+  color: var(--navy);
+}
+.leaderSub{
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.leaderScore{
+  font-size: 28px;
+  font-weight: 950;
+  color: var(--green);
+}
+.accountCard{
+  padding: 22px 24px 24px !important;
+}
+.profileHero{
+  padding: 4px 0 14px !important;
+}
+.profileAvatar{
+  width: 78px !important;
+  height: 78px !important;
+  margin: 0 auto 10px !important;
+  font-size: 44px !important;
+}
+.profileName{
+  margin: 0 !important;
+  font-size: 26px !important;
+  line-height: 1 !important;
+}
+.profileLevel{
+  margin-top: 12px !important;
+  padding: 7px 16px !important;
+}
+#createAccountBtn{
+  margin-top: 4px !important;
+  min-height: 52px !important;
+}
+.dailyChallengeCard{
+  padding: 22px 24px !important;
+}
+.dailyChallengeCard .panelTitle{
+  margin-bottom: 18px !important;
+}
+.challengeMission{
+  color: #3d5575;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+.challengeReward{
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 950;
+  margin-bottom: 6px;
+}
+.challengeProgress{
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 850;
+}
+.challengeBar{
+  margin-top: 14px !important;
+}
+.dailyChallengeCard .panelTitle, .challengeMission, .challengeReward, .challengeProgress{
+  padding-left: 4px;
+}
+.card > .panelTitle{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px !important;
+  padding: 0 12px !important;
+}
+ .gameModesMini .panelTitle, .tapStateTitle{
+  padding-left: 8px !important;
+}
+/* FRIENDS PAGE — MOBILE CLIPPING FIX */
+
+#familyScreen, #familyScreen .card, #familyScreen .friendsCard{
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+.familyMember{
+  display:flex;
+    align-items:center;
+    gap:14px;
+    padding:14px 4px 18px;
+    border-bottom:1px solid rgba(11,62,103,.08);
+}
+#familyScreen .familyList{
+  width: 100%;
+  min-width: 0;
+}
+#familyScreen .familyRow{
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 52px minmax(0,1fr);
+  gap: 12px !important;
+  align-items: center;
+  padding: 12px;
+  overflow: hidden;
+}
+#familyScreen .familyAvatar{
+  width: 52px;
+  height: 52px;
+  flex: none;
+}
+#familyScreen .familyInfo{
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+#familyScreen .familyName, #familyScreen .familyMeta{
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+#familyScreen .inviteCode{
+  max-width: 100%;
+  font-size: 22px;
+  letter-spacing: 1px;
+  overflow-wrap: anywhere;
+}
+#familyScreen .inviteActions, #familyScreen .inviteActions button, #familyScreen .familyAddBtn, #familyScreen #copyInviteBtn{
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+#familyScreen .memoryEmpty{
+  text-align: left !important;
+  padding-left: 4px !important;
+}
+/* BADGES — MOBILE OVERFLOW FIX */
+
+#badgesScreen, #badgesScreen .card, #badgesScreen .badgeGrid{
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+#badgesScreen .badgeGrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+}
+#badgesScreen .badge{
+  width:100%;
+  min-width:0;
+  min-height:145px;
+  padding:12px 10px !important;
+  border:2px solid #e3ebf4;
+  border-radius:22px;
+  background:rgba(255,255,255,.62);
+  box-shadow:0 8px 18px rgba(11,62,103,.05);
+  text-align:center;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+}
+#badgesScreen .badgeName, #badgesScreen .badgeDesc{
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+#badgesScreen .badgeIcon{
+  width:54px;
+  height:54px;
+  min-width:54px;
+  max-width:54px;
+  margin:0 auto 7px;
+  border-radius:999px;
+  background:#fff;
+  border:2px solid rgba(7,55,99,.12);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:29px;
+  line-height:1;
+}
+#badgesScreen .badge{
+  width: 100%;
+  min-width: 0;
+  min-height: 165px;
+  padding: 16px 12px !important;
+  border: 2px solid #e3ebf4;
+  border-radius: 24px;
+  background: rgba(255,255,255,.62);
+  box-shadow: 0 8px 18px rgba(11,62,103,.05);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#badgesScreen .badge.unlocked{
+  opacity: 1;
+  border-color: var(--badge-yellow);
+}
+#badgesScreen .badge.locked{
+  opacity: .45;
+  filter: grayscale(.55);
+}
+#badgesScreen .badgeIcon{
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  max-width: 64px;
+  margin: 0 auto 10px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid rgba(7,55,99,.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  line-height: 1;
+}
+#badgesScreen .badgeName{
+  width: 100%;
+  margin: 0;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 950;
+  letter-spacing: .02em;
+  overflow-wrap: normal;
+  word-break: normal;
+  line-height:1.1;
+}
+#badgesScreen .badgeDesc{
+    margin:4px 0 0;
+  font-size:11px;
+  line-height:1.2;
+  width: 100%;
+  color: var(--muted);
+  font-weight: 800;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+#badgesScreen .badgeMiniProgress{
+  width: 100%;
+  margin-top: auto;
+  padding-top: 6px;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1;
+}
+#badgesScreen .badge .progressTrack.small{
+  width: 100%;
+  height: 5px;
+  margin-top: 7px;
+}
+#badgesScreen .nextBadgeBox{
+  background: rgba(255,255,255,.58) !important;
+  border: 2px solid rgba(234,194,58,.35) !important;
+  border-radius: 26px !important;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(7,55,99,.08) !important;
+}
+.friendsCard .friendsEmpty{
+  width: 100%;
+  margin: 14px 0 16px !important;
+  padding-left: 4px !important;
+  text-align: left !important;
+}
+#battleScreen .card:has(#leaderboardList){
+  margin-bottom: 12px !important;
+}
+.newGameSheet{
+  position: relative !important;
+}
+.newGameCloseBtn{
+  position: absolute !important;
+  top: 12px !important;
+  right: 12px !important;
+  z-index: 10 !important;
+  width: 42px !important;
+  height: 42px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: #f4f7fb !important;
+  color: var(--navy) !important;
+  font-size: 30px !important;
+  font-weight: 950 !important;
+  line-height: 1 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08) !important;
+}
+.tripOptionsBar{
+  width: 100%;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+}
+.tripOptionsBar .tripOptionsBtn{
+  margin: 0;
+}
+#tripOptionsMenu{
+  margin-bottom: 10px;
+}
+#tripsScreen #tripOptionsBtn, #tripsScreen #newTripBtn{
+  min-height: 46px !important;
+  padding: 8px 16px !important;
+  margin: 6px 0 !important;
+  font-size: 17px !important;
+}
+#tripsScreen .tripOptionsBar{
+  margin-top: 8px !important;
+  margin-bottom: 4px !important;
+}
+#gameOptionsOverlay .newGameOption{
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin-top: 12px !important;
+  padding: 16px 18px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 18px !important;
+  background: #f8fbff !important;
+  box-shadow: none !important;
+  text-align: left !important;
+}
+#gameOptionsOverlay #endTripBtn{
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin: 12px 0 0 !important;
+  border-radius: 18px !important;
+}
+#gameOptionsOverlay .newGameSheet{
+  padding-top: 16px !important;
+}
+#gameOptionsOverlay .newGameOption:hover, #gameOptionsOverlay .newGameOption:focus, #gameOptionsOverlay .newGameOption:focus-visible, #gameOptionsOverlay .newGameOption:active{
+  outline: none !important;
+  background: linear-gradient(180deg,#eaffef,#ffffff) !important;
+  border: 3px solid var(--green) !important;
+  box-shadow: 0 0 0 3px rgba(38,169,87,.12) !important;
+  transform: scale(.985);
+}
+#gameOptionsOverlay .newGameOption:hover strong, #gameOptionsOverlay .newGameOption:focus strong, #gameOptionsOverlay .newGameOption:active strong{
+  color: var(--green) !important;
+}
+#gameOptionsOverlay .gameOptionsDanger:hover, #gameOptionsOverlay .gameOptionsDanger:focus, #gameOptionsOverlay .gameOptionsDanger:active{
+  background: #fff8f8 !important;
+  border-color: #b43b3b !important;
+  box-shadow: 0 0 0 3px rgba(180,59,59,.10) !important;
+}
+#gameOptionsOverlay .gameOptionsDanger:hover strong, #gameOptionsOverlay .gameOptionsDanger:focus strong, #gameOptionsOverlay .gameOptionsDanger:active strong{
+  color: #b43b3b !important;
+}
+#gameOptionsOverlay{
+  overflow: hidden !important;
+}
+#gameOptionsOverlay .newGameSheet{
+  max-height: calc(100dvh - 110px) !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: calc(120px + env(safe-area-inset-bottom)) !important;
+  overscroll-behavior: contain;
+}
+.profileAvatar{
+  margin-bottom: 12px !important;
+}
+.profileName{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  line-height: 1.05 !important;
+}
+.profileLevel{
+  margin: 0 0 16px !important;
+}
+#createAccountBtn{
+  margin-top: 0 !important;
+}
+.friendsCard .memoryEmpty{
+  margin-bottom: 12px !important;
+}
+#inviteFriendsBtn{
+  margin-top: 0 !important;
+}
+#profileScreen .card{
+  padding-bottom: 14px !important;
+}
+.friendsActions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:14px;
+}
+.friendsActions button{
+  width:100%;
+  min-height:56px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:900;
+}
+.avatarPicker{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6px;
+  max-height: none;
+  overflow: visible;
+}
+.currentTripHeader, .battleHero, .latestTripInfo{
+  margin-bottom: 8px !important;
+}
+.addFriendSheet{
+  position: relative;
+}
+.friendPreview{
+  margin-top: 18px;
+  padding: 18px;
+  border: 2px solid #d8e2ef;
+  border-radius: 22px;
+  background: #fff;
+  text-align: center;
+}
+.friendPreviewAvatar{
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #eaf3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+.friendPreviewPlate{
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 950;
+}
+.friendPreviewName{
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 850;
+}
+.friendLookupError{
+  margin-top: 14px;
+  color: #b43b3b;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+}
+.addFriendSheet{
+  position: relative;
+  text-align: center;
+}
+.addFriendSheet .newGameSectionLabel{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.addFriendSheet .newGameInput{
+  text-align: center;
+}
+.addFriendSheet .newGameBtn{
+  margin-top: 14px;
+}
+#addFriendCloseBtn{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 30px;
+  color: var(--navy);
+  padding: 0;
+}
+#addFriendOverlay .newGameTitle{
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+#gameOptionsOverlay .newGameSheet{
+  max-height: calc(100dvh - 110px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 120px !important;
+  scrollbar-gutter: stable;
+}
+#gameOptionsOverlay .newGameSheet::-webkit-scrollbar{
+  width: 8px;
+}
+#gameOptionsOverlay .newGameSheet::-webkit-scrollbar-track{
+  background: transparent;
+  margin: 18px 0;
+}
+#gameOptionsOverlay .newGameSheet::-webkit-scrollbar-thumb{
+  background: rgba(7,55,99,.35);
+  border-radius: 999px;
+}
+/* Compact profile card */
+ #profileScreen .accountCard{
+  padding: 14px 20px !important;
+}
+#profileScreen .profileHero{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#profileScreen .profileAvatar{
+  width: 62px !important;
+  height: 62px !important;
+  margin: 0 auto 6px !important;
+  font-size: 34px !important;
+}
+#profileScreen .profileName{
+  margin: 0 !important;
+  line-height: 1 !important;
+  font-size: 24px !important;
+}
+#profileScreen .profileLevel{
+  margin: 0 0 10px !important;
+  line-height: 1.1 !important;
+}
+#profileScreen #accountBtn, #profileScreen #editAccountBtn{
+  margin: 0 !important;
+  min-height: 50px !important;
+}
+.bonusCount{
+  margin-top: 4px;
+  color: #c48d00;
+  font-size: 13px;
+  font-weight: 900;
+}
+.debateQuestion{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--navy);
+  margin: 12px 0 18px;
+}
+.debateOptions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.debateBtn{
+  width: 100%;
+  min-height: 54px;
+  border: 2px solid #d8e2ef;
+  border-radius: 18px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--navy);
+}
+.debateBtn:active{
+  transform: scale(.985);
+}
+/* Standard card header alignment */
+
+.panelTitle{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 4px;
+}
+#primaryLabel{
+  margin-top: 2px !important;
+  font-size: 13px;
+  font-weight: 850;
+  color: var(--muted);
+}
+/* HOME CARD HEADERS */
+
+.card > .panelTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 14px !important;
+  padding: 0 12px !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+/* DAILY CHALLENGE */
+
+.challengeMission, .challengeReward, .challengeProgress{
+  padding-left: 12px !important;
+}
+/* HEATED DEBATE */
+
+.debateCard{
+  padding: 22px 24px !important;
+}
+.debateCard .debateQuestion{
+  margin: 2px 12px 16px !important;
+  color: var(--muted) !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  text-align: left !important;
+}
+.debateBtn{
+  width: 100%;
+  min-height: 54px;
+  border: 2px solid #d8e2ef;
+  border-radius: 18px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 900;
+}
+/* HOW TO PLAY */
+
+#recent{
+  display: grid !important;
+  gap: 8px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#recent .recentItem{
+  margin: 0 !important;
+  padding: 12px 14px !important;
+  min-height: 0 !important;
+}
+#recent .recentMeta{
+  padding: 6px 12px !important;
+}
+#recent .recentTime{
+  font-size: 14px !important;
+}
+#recent .recentItem{
+  min-height: 0 !important;
+  padding: 16px 22px !important;
+  margin-bottom: 14px !important;
+}
+#recent{
+  padding-bottom: 0 !important;
+}
+.card:has(#recent){
+  padding-bottom: 14px !important;
+}
+/* =========================================
+   HOME HEADER + TRANSLUCENT PILL SYSTEM
+   ========================================= */
+/* Every direct Home-card header uses one alignment */
+/* =========================================
+   GLOBAL GLASS SURFACE SYSTEM
+   ========================================= */
+
+.card, .currentTripHeader, .latestTripInfo, .noGameHero, .accountCard, .mapCard, .dailyChallengeCard, .debateCard, .howToPlayCard, .battleHero, .shareCard, .stat, .row, .recentItem, .familyRow, .badge, .interactiveMapWrap, .stateDetailHero, .detailItem, .detailRow, .memoryItem, .onboardingRule{
+  background: rgba(255,255,255,.38) !important;
+  border: 1px solid rgba(255,255,255,.46) !important;
+  box-shadow: 0 8px 22px rgba(7,55,99,.08) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+button, .debateBtn, .newGameBtn, .textBtn, .tripOptionsBtn, .newGameOption, .familySmallBtn{
+  background: #fff !important;
+}
+/* State tiles */
+
+.state{
+  background: rgba(255,255,255,.88) !important;
+}
+/* Collected states must stay green */
+
+.state.collected{
+  background: linear-gradient(180deg,#32b860 0%,#249d4e 100%) !important;
+  color: #fff !important;
+  border-color: #249d4e !important;
+  box-shadow: 0 3px 0 rgba(7,55,99,.10) !important;
+}
+/* Rare uncollected states */
+
+body.show-rarity .state.rare:not(.collected){
+  background: rgba(255,255,255,.88) !important;
+  border-color: var(--gold) !important;
+  color: var(--navy) !important;
+}
+.debateBtn.selected{
+  background: linear-gradient(
+    180deg,
+    #eaffef,
+    #ffffff
+  ) !important;
+  border: 3px solid var(--green) !important;
+  color: var(--green) !important;
+  transform: scale(1.02);
+}
+/* HOW TO PLAY — FINAL */
+
+#gameScreen .howToPlayCard{
+  padding: 20px 22px !important;
+  overflow: hidden;
+}
+#gameScreen .howToPlayCard > .panelTitle{
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+}
+#gameScreen .howToPlayCard .infoSectionTitle{
+  margin: 8px 0 2px !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+#gameScreen .howToPlayCard .infoRow{
+  display: grid !important;
+  grid-template-columns: 175px minmax(0,1fr) !important;
+  align-items: center;
+  gap: 18px !important;
+  margin: 0 !important;
+  padding: 14px 0 !important;
+}
+#gameScreen .howToPlayCard .infoRow strong{
+  white-space: nowrap;
+  text-align: left;
+}
+#gameScreen .howToPlayCard .infoRow span{
+  text-align: left;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+#gameScreen .howToPlayCard .infoDivider{
+  margin: 4px 0 !important;
+}
+.card, .currentTripHeader, .latestTripInfo, .noGameHero, .accountCard, .mapCard, .dailyChallengeCard, .debateCard, .howToPlayCard, .battleHero, .shareCard, .stat, .row, .recentItem, .familyRow, .badge, .interactiveMapWrap, .stateDetailHero, .detailItem, .detailRow, .nextBadgeBox{
+  background: rgba(255,255,255,.58) !important;
+}
+#profileScreen .friendsCard .panelTitle, #profileScreen .friendsCard .memoryEmpty{
+  margin-left: -4px !important;
+}
+/* ACTIVE GAME HERO — FINAL */
+
+#gameScreen .activeGameHero{
+  width: 100%;
+  padding: 20px 22px 18px;
+  margin-bottom: 12px;
+  background: rgba(255,255,255,.60);
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 28px;
+  box-shadow: 0 8px 22px rgba(7,55,99,.08);
+  text-align: center;
+}
+#gameScreen .activeGameLabel{
+  margin: 0;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: .10em;
+}
+#gameScreen #tripNameTop{
+  width: 100%;
+  margin: 8px 0 0 !important;
+  color: var(--navy);
+  font-size: 24px !important;
+  font-weight: 950;
+  line-height: 1.05;
+  text-align: center !important;
+}
+#gameScreen .activeGameMeta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1.1;
+}
+#gameScreen .metaDot{
+  opacity: .55;
+}
+#gameScreen .activeGameFound{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: var(--navy);
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1;
+}
+#gameScreen .activeGameFound #primaryNumber, #gameScreen .activeGameFound .outOf{
+  margin: 0;
+  padding: 0;
+}
+#gameScreen .activeGameFound #primaryNumber{
+  color: var(--green);
+}
+#gameScreen .activeGameFound .outOf{
+  color: var(--muted);
+  margin-left: -2px;
+}
+#gameScreen .foundText{
+  margin-left: 6px;
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 850;
+}
+#gameScreen .activeGameHero .bar{
+  width: 100%;
+  height: 14px;
+  margin: 16px 0 0 !important;
+  background: #e5eef7;
+  border-radius: 999px;
+  overflow: hidden;
+}
+#gameScreen .activeGameHero .fill{
+  height: 100%;
+  border-radius: 999px;
+}
+#gameScreen .currentTripHeader{
+  padding-top:14px !important;
+  padding-bottom:14px !important;
+}
+#gameScreen .activeGameLabel{
+  margin-bottom:5px !important;
+}
+#gameScreen .tripNameInline{
+  margin-bottom:3px !important;
+  line-height:1.05;
+}
+#gameScreen .activeGameMeta{
+  margin-bottom:0 !important;
+  line-height:1.1;
+}
+/* A corrupted fragment here (orphan declarations + a stray brace) left the
+   following #gameScreen .bonusCount rule unparseable, so it never applied.
+   Removed; the live style comes from the rule below. */
+
+#gameScreen .bonusCount{
+  color: #27b35c !important;
+  opacity: .92;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+}
+/* REMOVE OUTER TRIPS WRAPPER SURFACE */
+
+#tripsScreen > .card:first-child{
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 0 12px !important;
+}
+#tripsScreen .tripOptionsBar{
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+}
+#tripsScreen #tripOptionsBtn{
+  margin: 0 0 8px !important;
+}
+#tripsScreen #newTripBtn{
+  margin: 0 !important;
+}
+/* TRIPS ACTIVE GAME HERO — MATCH HOME */
+
+#tripsScreen .activeGameHero{
+  width: 100% !important;
+  max-width: none !important;
+  padding: 20px 22px 18px !important;
+  margin: 0 !important;
+  background: rgba(255,255,255,.60) !important;
+  border: 1px solid rgba(255,255,255,.55) !important;
+  border-radius: 28px !important;
+  box-shadow: 0 8px 22px rgba(7,55,99,.08) !important;
+  text-align: center !important;
+}
+#tripsScreen .activeGameLabel{
+  margin: 0 !important;
+  color: var(--blue) !important;
+  font-size: 13px !important;
+  font-weight: 950 !important;
+  line-height: 1 !important;
+  letter-spacing: .10em !important;
+  text-align: center !important;
+}
+#tripsScreen #tripName{
+  display: block !important;
+  width: 100% !important;
+  margin: 8px 0 0 !important;
+  color: var(--navy) !important;
+  font-size: 24px !important;
+  font-weight: 950 !important;
+  line-height: 1.05 !important;
+  text-align: center !important;
+}
+#tripsScreen .activeGameMeta{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 7px !important;
+  margin: 4px 0 6px !important;
+  color: var(--muted) !important;
+  font-size: 15px !important;
+  font-weight: 850 !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+}
+#tripsScreen .metaDot{
+  opacity:.55 !important;
+}
+#tripsScreen .activeGameFound{
+  display:flex !important;
+  align-items:baseline !important;
+  justify-content:center !important;
+  gap:0 !important;
+  margin-top:6px !important;
+  color:var(--navy) !important;
+  font-size:15px !important;
+  font-weight:950 !important;
+  line-height:1 !important;
+  text-align:center !important;
+}
+#tripsScreen #tripPrimaryNumber,
+#tripsScreen .activeGameFound .outOf,
+#tripsScreen .foundText{
+  display:inline !important;
+  width:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:15px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+}
+#tripsScreen #tripPrimaryNumber{
+  color:var(--green) !important;
+}
+#tripsScreen .activeGameFound .outOf{
+  color:var(--muted) !important;
+  margin-left:-2px !important;
+}
+#tripsScreen .foundText{
+  margin-left:4px !important;
+  color:var(--muted) !important;
+}
+#tripsScreen .bonusCount{
+  display:inline !important;
+  width:auto !important;
+  margin:0 0 0 1px !important;
+  color:var(--green) !important;
+  font-size:15px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  text-align:center !important;
+  
+}
+#tripsScreen .bonusCount:not(:empty)::before{
+  content:" • ";
+  color:rgba(10,31,68,.45);
+  margin-right:-1px;
+}
+#tripsScreen #tripProgressBar{
+  display:block !important;
+  width:100% !important;
+  height:16px !important;
+  margin:18px 0 10px !important;
+  background:#e5eef7 !important;
+  border-radius:999px !important;
+  overflow:hidden !important;
+}
+#tripsScreen #tripProgressFill{
+  height:100% !important;
+  border-radius:999px !important;
+  background:linear-gradient(
+    90deg,
+    var(--green),
+    #70d66d,
+    var(--gold)
+  ) !important;
+  transition:width .25s ease !important;
+}
+#tripsScreen #tripOptionsBtn{
+  width:100% !important;
+  margin:0 0 8px !important;
+}
+#tripsScreen #newTripBtn{
+  width:100% !important;
+  margin:0 !important;
+}
+.debateBtn{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 18px;
+  isolation:isolate;
+}
+.debateFill{
+  position:absolute;
+  inset:0 auto 0 0;
+  width:0%;
+  background:rgba(38,169,87,.20);
+  transition:width .55s ease;
+  z-index:-1;
+}
+.debateLabel,
+.debatePercent{
+  position:relative;
+  z-index:1;
+}
+.debatePercent{
+  font-size:17px;
+  font-weight:950;
+  color:var(--navy);
+}
+.debateBtn.selected{
+  border:3px solid var(--green) !important;
+  color:var(--green) !important;
+}
+.debateBtn:disabled{
+  opacity:1;
+}
+.debateSubmitBtn{
+  display:block;
+  width:100%;
+  min-height:54px;
+  margin-top:14px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:950;
+    background:var(--blue) !important;
+  color:#fff !important;
+}
+.debateSubmitBtn:disabled{
+  opacity:.45;
+}
+.debateSubmitBtn.submitted{
+  background:#eaf3ff !important;
+  color:var(--blue) !important;
+}
+.onboardingOverlay{
+  overflow-y:auto;
+  padding:18px;
+}
+.onboardingSheet{
+  max-height:calc(100vh - 36px);
+  overflow-y:auto;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+.onboardingSheet::-webkit-scrollbar{
+  display:none;
+}
+#onboardingDone{
+  display:block;
+  width:100%;
+  min-height:56px;
+  margin-top:18px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:950;
+  background:linear-gradient(180deg,#35b964,#239d4f) !important;
+  color:#fff !important;
+}
+.onboardingOverlay{
+  overflow-y:auto;
+  padding:18px;
+}
+.onboardingSheet{
+  max-height:calc(100vh - 36px);
+  overflow-y:auto;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+.onboardingSheet::-webkit-scrollbar{
+  display:none;
+}
+#onboardingDone{
+  display:block;
+  width:100%;
+  min-height:56px;
+  margin-top:18px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:950;
+  background:linear-gradient(180deg,#35b964,#239d4f) !important;
+  color:#fff !important;
+  flex-shrink:0;
+}
+.canadaSection{
+  margin-top:16px;
+  border-top:1px solid rgba(7,55,99,.12);
+  padding-top:14px;
+}
+.canadaToggle{
+  width:100%;
+  min-height:58px;
+  padding:0 16px;
+  border:2px solid #dbe8f5;
+  border-radius:20px;
+  background:#fff;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  font-size:18px;
+  font-weight:950;
+  text-align:left;
+}
+.canadaToggle:active{
+  transform:scale(.985);
+}
+.canadaToggleRight{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-shrink:0;
+}
+#canadaCount{
+  color:var(--muted);
+  font-size:17px;
+  font-weight:950;
+}
+#canadaArrow{
+  color:var(--blue);
+  font-size:14px;
+  transition:transform .2s ease;
+}
+#canadaArrow.open{
+  transform:rotate(180deg);
+}
+.canadaProvinceGrid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:8px;
+  margin-top:12px;
+}
+.canadaProvinceGrid.hidden{
+  display:none;
+}
+.canadaPlate{
+  border-color:rgba(21,119,210,.28);
+  background:linear-gradient(
+    180deg,
+    #ffffff,
+    #eef7ff
+  );
+}
+.canadaPlate.collected{
+  background:linear-gradient(
+    180deg,
+    #32b860,
+    #249d4e
+  );
+  border-color:#249d4e;
+  color:#fff;
+}
+
+@media (max-width:390px){
+.canadaToggle{
+    font-size:16px;
+    padding:0 13px;
+  }
+.canadaProvinceGrid{
+    gap:7px;
+  }
+}
+#mapCanadaArrow{
+  transition:transform .2s ease;
+}
+#mapCanadaArrow.open{
+  transform:rotate(180deg);
+}
+.mapCanadaGrid{
+  display:grid;
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:12px;
+
+  margin-top:14px;
+}
+.nextTripNameSheet{
+  padding-bottom:24px;
+  padding-top:28px !important;
+}
+.tripNameInputWrap{
+  position:relative;
+  width:100%;
+}
+#nextTripNameInput{
+  width:100%;
+  padding-right:54px;
+}
+.tripNameClearBtn{
+  position:absolute;
+  top:50%;
+  right:12px;
+  transform:translateY(-50%);
+
+  width:36px;
+  height:36px;
+  border-radius:999px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#eaf3ff !important;
+  color:var(--navy) !important;
+
+  font-size:24px;
+  font-weight:900;
+  line-height:1;
+}
+.tripNameClearBtn:active{
+  transform:translateY(-50%) scale(.94);
+}
+#nextTripNameOverlay .newGameSheet{
+  padding-top:24px !important;
+}
+#nextTripNameOverlay .newGameTitle{
+  margin-top:14px !important;
+}
+.nextTripSaveBtn{
+  width:100%;
+  min-height:56px;
+  margin-top:18px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:950;
+}
+.nextTripNameSheet{
+  max-height:calc(100vh - 32px);
+  overflow-y:auto;
+  padding-bottom:24px;
+}
+#nextTripNameSaveBtn{
+  display:block;
+  width:100%;
+  min-height:58px;
+  margin-top:18px;
+  border-radius:999px;
+  background:var(--blue) !important;
+  color:#fff !important;
+  font-size:18px;
+  font-weight:950;
+  flex-shrink:0;
+}
+#nextTripNameOverlay{
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.nextTripNameSheet{
+  max-height:calc(100dvh - 120px);
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  padding-bottom:110px;
+}
+#nextTripNameSaveBtn{
+  position:relative;
+  z-index:2;
+}
+.removeFriendBtn{
+  width:36px;
+  height:36px;
+  min-width:36px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid rgba(180,59,59,.25);
+  color:var(--red);
+  font-size:15px;
+  font-weight:950;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+.removeFriendBtn:active{
+  transform:scale(.94);
+}
+#xpTitle{
+  margin-bottom:10px;
+}
+.xpCard{
+  text-align:center;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.55),
+      rgba(255,250,235,.55)
+    ) !important;
+
+  border:
+    2px solid rgba(234,194,58,.25);
+}
+.xpCard .bar{
+  margin:10px 0 8px;
+  height:16px;
+}
+.xpCard .fill{
+  border-radius:999px;
+}
+.xpText{
+  margin-top:10px;
+  font-size:15px;
+  font-weight:700;
+  color:rgba(11,62,103,.55);
+  text-align:center;
+}
+/* BADGE DETAIL OVERLAY */
+
+#badgeOverlay{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:rgba(7,55,99,.58);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+#badgeOverlay.hidden{
+  display:none !important;
+}
+#badgeOverlay .sheet{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  background:#fff;
+  border-radius:28px;
+  padding:22px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,.28);
+}
+#badgeOverlay .sheetHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:14px;
+}
+#badgeOverlay .sheetTitle{
+  color:var(--navy);
+  font-size:22px;
+  font-weight:950;
+}
+#badgeOverlay .sheetCloseBtn{
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  background:#f4f7fb;
+  color:var(--navy);
+  font-size:22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#badgeOverlay .badgeDetailIcon{
+  width:82px;
+  height:82px;
+  margin:4px auto 12px;
+  border-radius:999px;
+  background:#fff;
+  border:2px solid var(--badge-yellow);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+}
+#badgeOverlay .badgeDetailName{
+  color:var(--navy);
+  font-size:24px;
+  font-weight:950;
+}
+#badgeOverlay .badgeDetailDesc{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:16px;
+  font-weight:800;
+  line-height:1.3;
+}
+#badgeOverlay .badgeDetailProgress{
+  margin-top:12px;
+  color:var(--navy);
+  font-size:17px;
+  font-weight:950;
+}
+#badgeOverlay #badgeDoneBtn{
+  width:100%;
+  min-height:54px;
+  margin-top:18px;
+  border-radius:999px;
+  font-size:18px;
+}
+.activityCard{
+  padding:18px 20px !important;
+    border:2px solid #d8e2ef;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.activityTitle{
+  font-size:22px;
+  font-weight:900;
+  color:var(--navy);
+  margin-bottom:12px;
+}
+#activityFeed{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+#activityFeed .recentItem{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 16px;
+  min-height:0;
+  border-radius:18px;
+  background:rgba(255,255,255,.72);
+}
+#activityFeed .recentState{
+  font-size:18px;
+  font-weight:850;
+  color:var(--navy);
+}
+#activityFeed .recentFinder{
+  font-size:14px;
+  font-weight:750;
+  color:var(--muted);
+  white-space:nowrap;
+}
+.collectionsCard{
+  margin-bottom:18px;
+  border:2px solid rgba(10,55,99,.14);
+}
+.collectionsCard{
+  cursor:pointer;
+}
+#collectionOverlay .accountCloseBtn{
+  position:absolute;
+  top:18px;
+  right:18px;
+  left:auto;
+  margin:0;
+}
+#collectionOverlay .newGameSheet{
+  position:relative;
+}
+#collectionOverlay .accountCloseBtn{
+  position:absolute;
+  top:18px;
+  right:18px;
+  left:auto;
+  margin:0;
+}
+.clearTripSheet{
+  text-align:center;
+}
+.clearTripIcon{
+  font-size:54px;
+  line-height:1;
+  margin:8px 0 12px;
+}
+.clearTripMessage{
+  max-width:310px;
+  margin:0 auto 22px;
+  color:var(--muted);
+  font-size:16px;
+  font-weight:800;
+  line-height:1.4;
+}
+.clearTripConfirmBtn{
+  width:100%;
+  min-height:58px;
+  border-radius:999px;
+  background:#b43b3b !important;
+  color:#fff !important;
+  font-size:19px;
+  font-weight:950;
+}
+.clearTripCancelBtn{
+  width:100%;
+  min-height:54px;
+  margin-top:10px;
+  border:2px solid #d8e2ef;
+  border-radius:999px;
+  background:#fff;
+  color:var(--blue);
+  font-size:18px;
+  font-weight:900;
+}
+#tripNameOverlay .newGameSheet{
+  padding-bottom:22px;
+}
+#tripNameInput{
+  margin-bottom:16px;
+}
+.state{
+  flex-direction:column !important;
+  gap:2px !important;
+  padding:6px 2px !important;
+}
+.state .value{
+  position:static !important;
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  margin:0 !important;
+  color:var(--navy) !important;
+  font-size:11px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+}
+.state.collected .value{
+  color:#fff !important;
+}
+#listCount{
+  font-size:17px !important;
+  font-weight:950 !important;
+  line-height:1 !important;
+}
+#listCount .homeFoundNumber,
+#listCount .homeFoundRest,
+#listCount .countDivider,
+#listCount .homeScoreTotal{
+  font-size:inherit !important;
+  font-weight:inherit !important;
+  line-height:inherit !important;
+}
+#listCount .homeFoundNumber{
+  color:var(--green) !important;
+}
+#listCount .homeFoundRest{
+  color:var(--navy) !important;
+}
+#listCount .countDivider{
+  color:rgba(10,31,68,.45) !important;
+  margin:0 2px !important;
+}
+#listCount .homeScoreTotal{
+  display:inline !important;
+  margin:0 !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  color:var(--green) !important;
+  white-space:nowrap !important;
+}
+.celebrationBox{
+  max-width:340px !important;
+  padding:26px 22px 24px !important;
+  border:3px solid var(--badge-yellow) !important;
+  background:
+    linear-gradient(
+      180deg,
+      #fff8d9 0%,
+      #ffffff 58%
+    ) !important;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.28),
+    0 0 30px rgba(255,217,61,.35) !important;
+}
+.celebrationEyebrow{
+  color:#a87900;
+  font-size:13px;
+  font-weight:950;
+  letter-spacing:1.5px;
+  margin-bottom:14px;
+}
+.celebrationBadgeIcon{
+  width:82px;
+  height:82px;
+  margin:0 auto 14px;
+  border-radius:999px;
+  background:#fff;
+  border:3px solid var(--badge-yellow);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  box-shadow:0 8px 20px rgba(7,55,99,.12);
+}
+.celebrationBox h2{
+  margin:0 0 8px !important;
+  color:var(--navy) !important;
+  font-size:28px !important;
+  font-weight:950 !important;
+}
+.celebrationBox p{
+  margin:0 0 22px !important;
+  color:var(--muted) !important;
+  font-size:16px !important;
+  font-weight:800 !important;
+  line-height:1.35 !important;
+}
+.celebrationBox{
+  height:auto !important;
+  min-height:0 !important;
+  padding:22px 22px 20px !important;
+}
+#celebrationClose{
+  max-width:260px;
+  margin:18px auto 0 !important;
+}
+.memoryPreview{
+  display:block;
+  width:100%;
+  max-height:260px;
+  object-fit:cover;
+  border:1px solid var(--line);
+  border-radius:18px;
+  margin:0 0 16px;
+}
+.memoryPreview.hidden{
+  display:none;
+}
+#memoryOverlay .formGroup{
+  margin-bottom:8px;
+}
+#memoryOverlay .formGroup input{
+  width:100%;
+  min-height:56px;
+  border:2px solid #d8e2ef;
+  border-radius:18px;
+  padding:0 16px;
+  background:#fff;
+  color:var(--navy);
+  font-size:17px;
+  font-weight:850;
+}
+.plateSticker{
+  position:absolute;
+  top:12px;
+
+  width:34px;
+  height:24px;
+
+  border-radius:6px;
+
+  background:#fff;
+  border:2px solid rgba(0,0,0,.12);
+
+  font-size:10px;
+  font-weight:900;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.plateSticker.left{
+  left:14px;
+}
+.vanityPlatePreview.profilePlateHero{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  aspect-ratio:2.3 / 1;
+
+  margin:18px auto 22px;
+  padding:16px 24px 10px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  border:4px solid var(--navy);
+  border-radius:22px;
+
+  background:
+    radial-gradient(
+      circle at 50% 18%,
+      rgba(255,255,255,.95),
+      transparent 40%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7fbff 48%,
+      #eaf3ff 100%
+    );
+
+  box-shadow:
+    0 10px 24px rgba(7,55,99,.18),
+    inset 0 0 0 2px rgba(7,55,99,.08),
+    inset 0 2px 0 rgba(255,255,255,.95);
+
+  overflow:hidden;
+}
+.vanityPlatePreview.profilePlateHero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:28%;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(21,119,210,.13),
+      rgba(21,119,210,0)
+    );
+}
+.profilePlateHero .plateState{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+
+  margin:0;
+  color:#b0322f;
+  font-size:22px;
+  font-weight:950;
+  letter-spacing:6px;
+  text-align:center;
+  white-space:nowrap;
+  z-index:2;
+}
+.profilePlateHero .plateText{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-48%,-43%);
+
+  margin:0;
+  color:var(--navy);
+  font-size:82px;
+  font-weight:950;
+  letter-spacing:4px;
+  line-height:.9;
+  text-align:center;
+  white-space:nowrap;
+  z-index:2;
+
+  text-shadow:
+    0 1px 0 #fff,
+    0 2px 0 rgba(7,55,99,.18),
+    0 3px 4px rgba(7,55,99,.16);
+}
+.profilePlateHero .plateTagline{
+  position:absolute;
+  left:50%;
+  bottom:25px;
+  transform:translateX(-50%);
+
+  margin:0;
+  color:var(--muted);
+  font-size:18px;
+  font-weight:950;
+  letter-spacing:7px;
+  line-height:1;
+  text-align:center;
+  white-space:nowrap;
+  z-index:2;
+}
+.profilePlateHero .monthSticker{
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-35%);
+
+  width:48px;
+  height:62px;
+  padding:0;
+
+  display:flex;
+  flex-direction:column;
+
+  border:1px solid rgba(7,55,99,.22);
+  border-radius:8px;
+  overflow:hidden;
+  z-index:3;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,.12);
+}
+.profilePlateHero .monthSticker div:first-child{
+  flex:1;
+  width:100%;
+  background:#f3d24c;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:var(--navy);
+  font-size:15px;
+  font-weight:950;
+}
+.profilePlateHero .monthSticker div:last-child{
+  flex:1;
+  width:100%;
+  background:#eef4ff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:var(--navy);
+  font-size:15px;
+  font-weight:950;
+}
+.profilePlateHero .plateBolt{
+  position:absolute;
+  z-index:3;
+
+  width:13px;
+  height:13px;
+
+  border-radius:50%;
+  border:1px solid rgba(7,31,55,.28);
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #fff,
+      #dce2e8 40%,
+      #9aa5b1 100%
+    );
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,.9),
+    0 1px 2px rgba(7,31,55,.22);
+}
+.profilePlateHero .plateBolt::after{
+  content:"";
+  position:absolute;
+  left:2px;
+  right:2px;
+  top:5px;
+
+  height:1px;
+  background:rgba(7,31,55,.45);
+  transform:rotate(-12deg);
+}
+.profilePlateHero .boltTopLeft{
+  top:10px;
+  left:12px;
+}
+.profilePlateHero .boltTopRight{
+  top:10px;
+  right:12px;
+}
+.profilePlateHero .boltBottomLeft{
+  top:auto;
+  bottom:10px;
+  left:12px;
+}
+.profilePlateHero .boltBottomRight{
+  top:auto;
+  bottom:10px;
+  right:12px;
+}
+#resumeGameOverlay .newGameSheet{
+  position:relative;
+}
+#resumeGameCloseBtn{
+  position:absolute !important;
+  top:22px !important;
+  right:22px !important;
+  z-index:10001 !important;
+  pointer-events:auto !important;
+  cursor:pointer;
+}
+.tripDetailCard{
+  padding:22px;
+}
+.tripDetailBackBtn{
+  background:#fff;
+  border:2px solid #d8e2ef;
+  border-radius:999px;
+  color:var(--blue);
+  font-size:16px;
+  font-weight:900;
+  padding:12px 18px;
+  margin-bottom:18px;
+}
+.tripDetailHero{
+  text-align:center;
+  margin-bottom:22px;
+}
+.tripDetailLabel{
+  color:var(--green);
+  font-size:13px;
+  font-weight:950;
+  letter-spacing:.14em;
+}
+.tripDetailName{
+  margin-top:8px;
+  color:var(--navy);
+  font-size:30px;
+  font-weight:950;
+  line-height:1.05;
+}
+.tripDetailDate,
+.tripDetailMode{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:16px;
+  font-weight:800;
+}
+.tripDetailStats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:20px;
+}
+.tripDetailStat{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:14px 10px;
+  text-align:center;
+}
+.tripDetailStat strong{
+  display:block;
+  color:var(--navy);
+  font-size:28px;
+  line-height:1;
+}
+.tripDetailStat span{
+  display:block;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:900;
+}
+.tripDetailSection{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  margin-bottom:12px;
+}
+.tripDetailSectionTitle{
+  color:var(--navy);
+  font-size:18px;
+  font-weight:950;
+}
+.tripDetailSectionValue{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:15px;
+  font-weight:800;
+}
+#tripDetailResumeBtn,
+#tripDetailShareBtn,
+#tripDetailDeleteBtn{
+  margin:6px 0 !important;
+}
+#tripDetailResumeBtn{
+  margin-top:4px !important;
+}
+.tripDetailDeleteBtn{
+  color:#b43b3b !important;
+}
+/* v-trip-history two-column cards */
+
+#tripHistoryList{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:12px;
+  align-items:stretch;
+}
+#tripHistoryList .tripRow{
+  display:block;
+  width:100%;
+  min-width:0;
+  margin:0;
+  padding:16px 12px;
+  border-radius:22px;
+  box-sizing:border-box;
+}
+#tripHistoryList .tripRow .grow{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  min-width:0;
+  height:100%;
+}
+#tripHistoryList .tripHistoryTitle{
+  font-size:13px;
+  line-height:1.15;
+  font-weight:800;
+  margin-bottom:6px;
+}
+#tripHistoryList .tripMeta{
+  font-size:12px;
+  line-height:1.28;
+  color:#55657a;
+  font-weight:600;
+}
+#tripHistoryList .tripRowActions{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  width:100%;
+  margin-top:auto;
+  padding-top:14px;
+}
+#tripHistoryList .tripRowActions button{
+  font-size:13px;
+  padding:7px 6px;
+  min-height:38px;
+}
+#tripHistoryList .tripRowActions button{
+  width:100%;
+  min-width:0;
+  min-height:44px;
+  margin:0;
+  padding:8px 6px;
+  font-size:14px;
+  white-space:nowrap;
+}
+#tripHistoryList .emptyHistory{
+  grid-column:1 / -1;
+}
+.tripDetailMemoryActions{
+  display:block;
+  margin-top:14px;
+}
+.tripDetailMemoryActions .memoryBtn{
+  display:block;
+  width:100%;
+  min-height:56px;
+  margin:0;
+  padding:0 20px;
+  border:2px solid #dbe8f5;
+  border-radius:999px;
+  background:#fff;
+  color:var(--blue);
+  font-size:18px;
+  font-weight:900;
+  white-space:nowrap;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+/* trip-history typography and spacing */
+
+#tripHistoryList .tripHistoryTitle{
+  font-size:14px !important;
+  line-height:1.08 !important;
+  font-weight:850;
+  margin:0 0 1px !important;
+}
+#tripHistoryList .tripMeta{
+  margin-top:0 !important;
+  font-size:10px !important;
+  line-height:1.2 !important;
+  font-weight:650 !important;
+}
+#tripHistoryList .tripHistoryDate{
+  margin:0 0 8px;
+  font-size:10px;
+  line-height:1.1;
+  color:#697589;
+}
+#tripHistoryList .tripHistoryStats{
+  display:grid;
+  gap:3px;
+  font-size:13px;
+  line-height:1.2;
+  color:#55657a;
+}
+.memoryComposerSheet .newGameBtn{
+  margin-top:8px !important;
+}
+#saveMemoryBtn{
+  margin-top:12px !important;
+}
+#cancelMemoryBtn{
+  margin-top:6px !important;
+}
+/* archived trip memory composer */
+
+.memoryComposerSheet{
+  max-height:calc(100vh - 36px);
+  overflow-y:auto;
+}
+.memoryComposerSheet .newGameBtn{
+  margin-top:10px !important;
+}
+#saveMemoryBtn{
+  margin-top:14px !important;
+}
+#cancelMemoryBtn{
+  margin-top:8px !important;
+}
+.memoryPreview{
+  display:block;
+  width:100%;
+  max-height:300px;
+  margin:4px 0 18px;
+  border-radius:18px;
+  object-fit:contain;
+  background:#f2f6fb;
+  border:1px solid var(--line);
+}
+.memoryNoteGroup{
+  text-align:left;
+  margin-bottom:6px;
+}
+.memoryNoteInput{
+  display:block;
+  width:100%;
+  min-height:110px;
+  resize:none;
+  padding:14px;
+  border:2px solid #d8e2ef;
+  border-radius:16px;
+  background:#fff;
+  color:var(--navy);
+  font-family:inherit;
+  font-size:16px;
+  font-weight:750;
+  line-height:1.35;
+  box-sizing:border-box;
+}
+.memoryNoteInput:focus{
+  outline:none;
+  border-color:rgba(21,119,210,.6);
+}
+/* memories inside saved trip details */
+
+#tripDetailMemories{
+  margin-top:12px;
+}
+.archivedMemoryList{
+  display:grid;
+  gap:10px;
+}
+.archivedMemoryItem{
+  display:grid;
+  grid-template-columns:82px minmax(0,1fr);
+  align-items:center;
+  gap:12px;
+  width:100%;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#f8fbff;
+  text-align:left;
+  cursor:pointer;
+}
+.archivedMemoryItem:active{
+  transform:scale(.99);
+}
+.archivedMemoryThumb{
+  display:block;
+  width:82px;
+  height:72px;
+  border-radius:12px;
+  object-fit:cover;
+  background:#eaf3ff;
+}
+.archivedMemoryText{
+  min-width:0;
+}
+.archivedMemoryNote{
+  display:block;
+  color:var(--navy);
+  font-size:14px;
+  font-weight:850;
+  line-height:1.3;
+  overflow-wrap:anywhere;
+}
+.archivedMemoryDate{
+  display:block;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:800;
+}
+/* full-screen memory viewer */
+
+.memoryViewerOverlay{
+  position:fixed;
+  inset:0;
+  z-index:10000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:
+    calc(18px + env(safe-area-inset-top))
+    18px
+    calc(18px + env(safe-area-inset-bottom));
+  background:rgba(3,18,34,.92);
+}
+.memoryViewerOverlay.hidden{
+  display:none !important;
+}
+.memoryViewerCard{
+  position:relative;
+  width:100%;
+  max-width:430px;
+  max-height:100%;
+  overflow-y:auto;
+  text-align:left;
+}
+.memoryViewerCloseBtn{
+  position:sticky;
+  top:0;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  margin:0 0 12px auto;
+  border-radius:999px;
+  background:rgba(255,255,255,.94);
+  color:var(--navy);
+  font-size:28px;
+  font-weight:700;
+}
+.memoryViewerPhoto{
+  display:block;
+  width:100%;
+  max-height:68vh;
+  border-radius:20px;
+  object-fit:contain;
+  background:#000;
+}
+.memoryViewerNote{
+  margin-top:16px;
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+  line-height:1.4;
+  white-space:pre-wrap;
+}
+.memoryViewerDate{
+  margin-top:8px;
+  color:rgba(255,255,255,.68);
+  font-size:13px;
+  font-weight:800;
+}
+#shareMemoryBtn,
+#deleteMemoryBtn{
+  width:100%;
+  margin:10px 0 0;
+}
+#shareMemoryBtn{
+  margin-top:18px;
+}
+#deleteMemoryBtn{
+  margin-top:8px;
+  background:#fff;
+  color:#b43b3b;
+  border-color:rgba(180,59,59,.35);
+}
