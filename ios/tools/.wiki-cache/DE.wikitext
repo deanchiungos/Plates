@@ -1,0 +1,532 @@
+{{short description|Delaware vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=July 2021}}
+{{Infobox vehicle registration plate
+| image = Delaware plate, 2008 series with 2013 sticker.png
+| nickname =
+| slogan_label = Slogan 
+| slogan =
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123456
+| current_start_date = {{Start date|2008}}
+| designer =  
+| issuer = [[Delaware Department of Transportation]], Division of Motor Vehicles
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia]]
+| start_date = {{Start date|1909|05|01}}<br />(pre-state plates from 1905 through April 30, 1909)
+}}
+The U.S. state of [[Delaware]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1909, when the state began to issue plates.<ref>{{cite web |title=Old Delaware License Plates |url=http://leatherlicenseplates.com/old-delaware-license-plates-vintage-delaware-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=June 30, 2017}}</ref> Beginning in 1910, plates were issued in sequential order from the number 1 upwards.<ref>{{cite web |title=DMV History - Division of Motor Vehicles |url=https://www.dmv.de.gov/About/history/index.shtml |website=Delaware DMV |access-date=1 August 2023}}</ref>
+
+{{As of|2022}}, plates are issued by the [[Delaware Department of Transportation]] (DelDOT) through its Division of Motor Vehicles. Only rear plates have been required on standard passenger vehicles since 1945. All plates issued since 1942 can still be used with current stickers. Authorized reproductions of [[Vitreous enamel|porcelain enamel]] plates can be obtained through a private vendor,<ref>http://www.dehistoricplate.com/ Delaware Historic Plate Company</ref> provided they fall within the state's guidelines.
+
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Delaware license plate that complied with these standards was issued in 1958.
+
+Delaware allows plate-owners to transfer the rights to display a particular number on their vehicle. The inherent scarcity of low-digit plates has spawned a vibrant secondary market for low numbers.<ref name="Freakonomics_episode">{{cite web |last1=Crockett |first1=Zachary |title=Delaware License Plates - Freakonomics |url=https://freakonomics.com/podcast/delaware-license-plates/ |website=Freakonomics |access-date=1 August 2023 |format=Podcast}}</ref>
+
+==Secondary market==
+In Delaware, plate number 1 is reserved for the governor, 2 for the lieutenant governor, and 3 for the secretary of state. But all other numbers 4 and higher are allowed to be traded.<ref name="Freakonomics_episode" /> Additionally, plates up to 87,000 are allowed to display replica porcelain enamel plates. These factors have caused low plate-numbers to become [[positional good]]s and status symbols.<ref name="University of Delaware Thesis">{{Cite thesis |last=Liu |first=Boyang |date=Fall 2014 |title=Positional Competition: From Low-Number License Plates to McMansions |url=https://udspace.udel.edu/server/api/core/bitstreams/9dc68b3b-0205-4b12-a382-405206329ed6/content |type=M.Sc. |publisher=University of Delaware |pages=1–2 |id=UMI Number 1585159|access-date=1 August 2023}}</ref>
+
+Marketplaces have been created to facilitate exchanges. {{As of|August 2023}}, one such market, Low Digit Plates, has priced five-digit plates in the low-thousands of dollars, and three-digit plates approaching $70,000.<ref>{{cite web |title=Numbers Only - Delaware's Marketplace for Low Digit Black Tags |url=https://lowdigittags.com/29.html |website=lowdigittags.com |access-date=1 August 2023}}</ref> Single-digit plates are particularly valuable. Plate number 9 was traded for $185,000 in 1994 ({{Inflation|US|185000|1994|fmt=eq|r=-3}}). In 2008, number 6 went for $675,000 (${{Inflation|US|675000|2008|fmt=c|r=-3}} in {{Inflation/year|US}}).<ref name="Freakonomics_episode" />
+
+==Passenger baseplates==
+This is a list of the plate templates used by Delaware.
+
+===1909 to 1942===
+No slogans were used on passenger plates during the period covered by this subsection.
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1909
+|White on black porcelain; "DEL. 1909" at top
+|1234
+|1001 to approximately 1500
+|Serials followed on from those on pre-state-issued plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1910
+|Black on white porcelain; "DEL. 1910" at top
+|123
+|1 to approximately 900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|White on dark blue porcelain; "DEL. 1911" at top
+|1234
+|1 to approximately 1300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|White on maroon porcelain; "DEL. 1912" at top
+|1234
+|1 to approximately 1800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1913
+|White on black porcelain; vertical "DEL" and "1913" at left and right respectively
+|rowspan="2"|1234
+|1 to approximately 2000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As above, but with "DEL 13" at right
+|2001 to approximately 2500
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Yellow on black porcelain; "DEL 14" at right
+|1234
+|1 to approximately 3200
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Blue on white porcelain; "DEL 15" at right
+|1234
+|1 to approximately 4700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|White on dark green; "DEL 16" at right
+|1234
+|1 to approximately 7000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|White on black; "DEL 17" at right
+|1234
+|1 to approximately 10700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|White on brown; "DEL 18" at right
+|12345
+|1 to approximately 13000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|White on dark blue with border line; "DEL 19" at right
+|12345
+|1 to approximately 13100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Black on light green with border line; "DEL 20" at right
+|12345
+|1 to approximately 18100
+|
+|-
+|[[File:1921 Delaware license plate.jpg|150px]]
+|1921
+|Red on white with border line; "DEL 21" at right
+|12345
+|1 to approximately 20800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Blue on white with border line; "DEL 22" at right
+|12-345
+|1 to approximately<br />23-300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|White on black with border line; "DEL 23" at right
+|12-345
+|1 to approximately<br />25-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Brown on white with border line; "DEL 24" at right
+|12-345
+|1 to 20-000;<br />30-001 to approximately<br />39-000
+|Serials 20-001 through 30-000 reserved for commercial vehicles.<ref name="allaboutlicenseplatesDE">{{cite web |last=Tanner |first=Eric N. |title=Delaware Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Delaware&code=de |publisher=allaboutlicenseplates.com |access-date=November 19, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Black on orange with border line; "DEL 25" at right
+|12-345
+|1 to 30-000;<br />45-001 to approximately<br />48-000
+|Serials 30-001 through 45-000 reserved for commercial vehicles and tractor units.<ref name="allaboutlicenseplatesDE"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Yellow on blue with border line; "DEL 26" at right
+|12-345
+|1 to approximately<br />37-000
+|
+|-
+|[[File:Delaware 1927 license plate.jpg|150px]]
+|1927
+|Red on gray with border line; "DEL 27" at right
+|12-345
+|1 to approximately<br />40-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Black on white with border line; "DEL 28" at right
+|12-345
+|1 to approximately<br />50-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Blue on golden yellow with border line; diamond at left and "DEL 29" at right
+|12-345
+|1 to approximately<br />47-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Golden yellow on blue with border line; diamond at left and "DEL 30" at right
+|12-345
+|1 to approximately<br />45-000
+|
+|-
+|[[File:1931 Delaware License Plate 17411.jpg|150x150px]]
+|1931
+|As 1929 base, but with "DEL 31" at right
+|12-345
+|1 to approximately<br />48-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|As 1930 base, but with "DEL '32" at right
+|12-345
+|1 to approximately<br />47-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1933
+|As 1929 base, but with "DEL '33" at right
+|12-345
+|1 to approximately<br />48-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|As 1930 base, but with "DEL '34" at right
+|12-345
+|1 to approximately<br />47-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|As 1929 base, but with "DEL '35" at right
+|12-345
+|1 to approximately<br />48-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Golden yellow on blue with border line; "DELAWARE – 36" at bottom
+|12♦345
+|1 to approximately 51♦000
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Blue on golden yellow with border line; "DELAWARE – 37" at bottom
+|12♦345
+|1 to approximately 53♦000
+|
+|-
+|[[File:1938 Delaware license plate.jpg|150px]]
+|1938
+|Red on silver with border line; "DELAWARE – 38" at bottom
+|12♦345
+|1 to approximately 55♦000
+|
+|-
+|[[File:1939-Delaware-license-plate.jpg|150px]]
+|1939
+|Silver on maroon with border line; "DELAWARE – 39" at bottom
+|12♦345
+|1 to approximately 58♦000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Blue on golden yellow; "DEL. EX. 3-31-41" at bottom
+|12♦345
+|1 to approximately 60♦000
+|
+|-
+|[[File:1942 Delaware license plate 2.jpg|150px]]
+|1941
+|Golden yellow on blue; "DELAWARE 3-31-42" at top
+|12♦345
+|1 to approximately 59♦000
+|
+|}
+
+===1942 to present===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1942 Delaware license plate.jpg|150px]]
+|1942
+|White on black porcelain; "DEL." at top with tab slots to left and right
+|''none''
+|12♦345
+|1 to approximately 87♦000<sup>1</sup>
+|Measures 5.5" x 9.5". Month/day tab (3/31 in black on white, 6/30 in white on green, 9/30 in white on red, or 12/31 in white on brown) fitted at top left and year tab (even-numbered years in blue on gold and odd-numbered years in gold on blue) at top right until 1963, when sticker revalidation commenced. Issued in pairs until 1945; only rear plates have been required ever since. Authorized modern reproductions allowed.
+|-
+|[[File:Delaware license plate 1948 graphic.png|150px]]
+|1947
+|Riveted polished stainless steel serial on black painted stainless steel base plate. Base embossed with Delaware on top. Insert space at bottom. Insert format continued as original. 
+|''none''
+|123456
+|1 to 200000<sup>1</sup>
+|''Plates varied in size:''<br />5-digit 9.5 x 5.5 in<br />6 digit 11 x 5.5 in.<br />Renewed with metal tabs.
+|-
+|[[File:Delaware license plate 1952 graphic.png|150px]]
+|1951
+|Riveted reflective white [[scotchlite]] painted stainless steel serial on black painted stainless steel base plate. Base plate embossed with Delaware on top. Insert spaces at bottom. Insert format continued as original. 
+|''none''
+|123456
+|1 to 200000<sup>1</sup>
+|Plates were smaller than the 6 digit plates if they were 5 digits or lower. <br />Renewed with metal tabs.
+|-
+|[[File:1954 Delaware license plate.jpg|150px]]
+|1954
+|Riveted reflective-coated steel serial on black painted stainless steel base plate. Base plate embossed with Delaware on top. Insert spaces at bottom. Insert format continued as original. 
+|''none''
+|123456
+|1 to 200000<sup>1</sup>
+|Plates with or less 5 digits were smaller than 6 digit plates. <br />Renewed with metal tabs.
+|-
+|[[File:Delaware license plate 1959 graphic.png|150px]]
+|1958
+|Riveted gold serial on reflective dark blue plate; "DELAWARE" centered at top; tab slots at bottom
+|''none''
+|123456
+|4 to approximately 213000<sup>1-2</sup>
+|First 6" x 12" plate. Validated with tabs until 1963, and with stickers thereafter.
+|-
+|[[File:1969 Delaware license plate 520731.jpg|150px]]
+|1962
+|Riveted gold serial on reflective dark blue plate; "DELAWARE" centered at bottom
+|"THE FIRST STATE" centered at top
+|123456
+|4 to approximately 262000<sup>1-2</sup>
+|Validated with stickers.
+|-
+|[[File:Delaware license plate, 2008.png|150px]]
+|1969
+|rowspan="2"|Screened gold serial on reflective dark blue plate with gold border; "DELAWARE" centered at bottom
+|rowspan="2"|"THE FIRST STATE" centered at top
+|rowspan="2"|123456
+|rowspan="2"|4 to 999999<sup>1-2</sup>
+|Several variations of the font used for the serial exist. Some replacement plates have riveted numbers.{{citation needed|date=October 2018}}
+|-
+|[[File:Delaware plate, 2008 series with 2013 sticker.png|150px]]
+|2008
+|Plates have a beveled edge around the plate as opposed to the previous all-flat plates.
+|}
+'''Notes:'''<br />
+'''1''' The state recycles serials, so they can be found on any base.<br />
+'''2''' Serials 1, 2 and 3 reserved for the [[List of Governors of Delaware|Governor]], [[Lieutenant Governor of Delaware|Lieutenant Governor]] and [[Secretary of State of Delaware|Secretary of State]] respectively. Plates with these serials are blue on gold with the state's [[Seal of Delaware#Coat of arms|coat of arms]] at the left.
+
+==Non-passenger plates==
+Delaware does not use leading zeros on its plates, so serials are composed of a variable number of digits.
+
+{|class="wikitable"
+|-
+!Image
+!Type
+!Slogan
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Commercial vehicle|Commercial]]
+|The First State
+|'''C'''123456<br />{{small|'''C'''/'''L'''}}123456
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Car dealership|Dealer]]
+|The First State
+|'''D'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farm Truck
+|The First State
+|'''FT'''1234
+|
+|-
+|[[File:Delaware handicap plate HP32076.jpg|150px]]
+|[[Disability|Handicapped]]
+|The First State
+|'''HP'''12345
+|[[International Symbol of Access]] at left.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Limousine]]
+|The First State
+|'''LX'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Motorcycle]]
+|''none''
+|12345
+|"M/C" at bottom left.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Pleasure Commercial
+|The First State
+|{{small|'''P'''/'''C'''}}123456
+|Issued to [[station wagon]]s and [[sport utility vehicle]]s.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Recreational vehicle|Recreational Trailer]]
+|The First State
+|'''RT'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Recreational vehicle|Recreational Vehicle]]
+|The First State
+|'''RV'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Delaware#Law and government|State-Owned]]
+|The First State
+|'''S'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Hot rod|Street Rod]]
+|The First State
+|'''SR'''123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Taxicab|Taxi]]
+|The First State
+|'''TX'''1234
+|
+|-
+|[[File:Delaware temporary tags (2015).jpg|150px]]
+|Temporary Registration
+|The First State
+|'''X'''A123456
+|Delaware started issuing temporary tags with an all-numeric format, then moved to the letter X as a prefix, then XA, XB, XC, XD, XP then XQ as of June 19, 2021
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Trailer (vehicle)|Trailer]]
+|The First State
+|'''T'''123456
+|
+|}
+
+==Optional plates==
+Delaware does not use leading zeros on its plates, so serials are composed of a variable number of digits.
+
+{|class="wikitable"
+!Image!!Type!!Serial format!!Notes
+|-
+|[[File:Delaware 2009 Centennial license plate-.jpg|150px]]
+|Centennial of Delaware License Plates
+|Remakes of passenger serials:<br />123456<br />Remakes of pleasure commercial serials:<br />{{small|'''P'''/'''C'''}}123456
+|Issued from October 1, 2008, through December 31, 2009.<ref>{{cite web|url=http://deldot.gov/information/media_gallery/2008/centennial_plates/index.shtml |title=Centennial License Plate |publisher=[[Delaware Department of Transportation]] |access-date=November 25, 2008 |archive-url=https://web.archive.org/web/20081107180930/http://deldot.gov/information/media_gallery/2008/centennial_plates/index.shtml |archive-date=November 7, 2008}}</ref> Awarded "Plate of the Year" for best new license plate of 2008 by the [[Automobile License Plate Collectors Association]], the first time Delaware was so honored.<ref>{{cite web|url=http://governor.delaware.gov/news/2009/05may/20090520-bestplate.shtml |title=State Receives "Best Plate of the Year" Award Honors For Limited Edition Centennial Plate |publisher=Delaware.gov |date=May 20, 2009 |access-date=May 26, 2009 |archive-url=https://web.archive.org/web/20090522212203/http://governor.delaware.gov/news/2009/05may/20090520-bestplate.shtml |archive-date=May 22, 2009}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Disabled American Veterans]]
+|<sup>123</sup><sub>'''DAV'''</sub>
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Duck]]
+|Remakes of passenger serials:<br />123456
+|A portion of the proceeds from this license plate's sales benefit Delaware's two National Estuary Programs: the Center for the Inland Bays<ref name="inlandbays.org">{{cite web |url=http://www.inlandbays.org/ |title=Home |website=inlandbays.org}}</ref> and the [[Partnership for the Delaware Estuary]].<ref name="delawareestuary.org">{{cite web |url=http://www.delawareestuary.org/ |title=Home |website=delawareestuary.org}}</ref> These funds are used to improve the health of Delaware's coastal waterways, bays, and [[estuaries]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Lighthouse]]
+|Remakes of passenger serials:<br />123456<br />Remakes of pleasure commercial serials:<br />{{small|'''P'''/'''C'''}}123456
+|A portion of the proceeds from this license plate's sales benefit Delaware's two National Estuary Programs: the Center for the Inland Bays<ref name="inlandbays.org"/> and the [[Partnership for the Delaware Estuary]].<ref name="delawareestuary.org"/> These funds are used to improve the health of Delaware's coastal waterways and bays, or "[[estuaries]]."
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Lighthouse&mdash;Personalized
+|''various''
+|A portion of the proceeds from this license plate's sales benefit Delaware's two National Estuary Program's: the Center for the Inland Bays<ref name="inlandbays.org"/> and the [[Partnership for the Delaware Estuary]].<ref name="delawareestuary.org"/> These funds are used to improve the health of Delaware's coastal waterways and bays, or "[[estuaries]]."
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Passenger&mdash;Personalized
+|''various''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Purple Heart]]
+|{{small|'''P'''/'''H'''}}1234
+|
+|-
+|[[File:Delaware Whip Plate.jpg|150px]]
+|[[Delaware General Assembly|State Legislators]]
+|Legislators' initials:<br />A. B. C.
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support Pollinators
+|Remakes of passenger serials:<br />123456
+|First issued June 2021. Awarded "Plate of the Year" for best new license plate of 2021 by the Automobile License Plate Collectors Association, the second time Delaware was so honored.<ref>{{cite news |title=DMV Support Pollinators plate wins national collectors' award |url=https://www.capegazette.com/article/dmv%C2%A0support-pollinators-plate-wins-national-collectors%E2%80%99-award/240953 |newspaper=[[Cape Gazette]] |location=Lewes, DE |date=June 5, 2022 |access-date=July 4, 2022}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Telephone Pioneers
+|'''TP'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Delaware]]
+|'''UD'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Volunteer [[Firefighter]]
+|{{small|'''V'''/'''F'''}}1234
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/de.html Delaware license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200205032342/http://15q.net/de.html |date=February 5, 2020 }}
+*[https://lowdigittags.com/29.html Low Digit Plates]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Delaware}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|Delaware]]
+[[Category:Road transportation in Delaware]]
+[[Category:Delaware transportation-related lists]]

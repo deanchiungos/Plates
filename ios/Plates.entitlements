@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  Deliberately kept beside the .xcodeproj rather than inside Plates/, which is a
+	  PBXFileSystemSynchronizedRootGroup — anything dropped in there is picked up by
+	  the build automatically, and an entitlements plist is not something that should
+	  ever end up copied into the bundle as a resource.
+	-->
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array>
+		<string>iCloud.com.eggeppel.plates</string>
+	</array>
+	<key>com.apple.developer.icloud-services</key>
+	<array>
+		<string>CloudKit</string>
+	</array>
+</dict>
+</plist>

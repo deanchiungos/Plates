@@ -1,0 +1,1172 @@
+{{short description|Oregon vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=July 2021}}
+{{Infobox vehicle registration plate
+| image = Plate tree lg.jpg
+| nickname = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123 ABC
+| current_start_date = {{Start date|1989|11}}
+| designer = 
+| issuer = [[Oregon Department of Transportation]], Driver & Motor Vehicle Services
+| manufacturer = Irwin-Hodson Company, Portland, Oregon
+| start_date = {{Start date|1911|08|01}}<br>(pre-state plates from 1905 through July 31, 1911)
+}}
+The U.S. state of [[Oregon]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1911, when the state began to issue plates.<ref>{{cite web |title=Old Oregon License Plates |url=http://leatherlicenseplates.com/old-oregon-license-plates-vintage-oregon-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=August 17, 2017}}</ref>
+
+{{As of|2022}}, plates are issued by the [[Oregon Department of Transportation]] through its Driver & Motor Vehicle Services branch. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+{{More citations needed section|date=January 2011}}
+{{Clear}}
+
+===1911 to 1949===
+No slogans were used on passenger plates during the period covered by this subsection.
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|Embossed black serial on yellow plate with border line; vertical "ORE" and "1911" at left and right respectively
+|1234
+|1 to approximately 6200
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|Embossed black serial on light green plate with border line; vertical "ORE" and "1912" at left and right respectively
+|1234
+|1 to approximately 9999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|Black serial on silver plate; vertical "ORE" and "1913" at left and right respectively
+|12345
+|1 to approximately 14000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Debossed white serial on blue plate; vertical "ORE" and "1914" at left and right respectively
+|12345
+|1 to approximately 16500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Debossed black serial on yellow plate; vertical "ORE" and "1915" at left and right respectively
+|12345
+|1 to approximately 22500
+|
+|-
+|[[File:1916 Oregon license plate.jpg|150px]]
+|1916
+|Embossed white serial on dark red plate; vertical "ORE" and "1916" at left and right respectively
+|12345
+|1 to approximately 34000
+|
+|-
+|[[File:1917 Oregon license plate.jpg|150px]]
+|1917
+|Embossed white serial on green plate; vertical "ORE" and "1917" at left and right respectively
+|12345
+|1 to approximately 49000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed black serial on light blue plate; vertical "ORE" and "1918" at left and right respectively
+|12345
+|1 to approximately 70000
+|
+|-
+|[[File:1919 Oregon license plate.jpg|150px]]
+|1919
+|Embossed black serial on orange plate; vertical "ORE" and "1919" at left and right respectively
+|12345
+|1 to approximately 84000
+|
+|-
+|[[File:1920 Oregon license plate.jpg|150px]]
+|1920
+|Embossed white serial on red plate; "ORE 1920" at right
+|123456
+|1 to approximately 104000
+|
+|-
+|[[File:1921 Oregon Vehicle License Plate.jpg|150px]]
+|1921
+|Embossed white serial on green plate; "ORE 1921" at right
+|123456
+|1 to approximately 119000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed black serial on golden yellow plate; "ORE 1922" at right
+|123456
+|1 to approximately 135000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed white serial on dark blue plate; "ORE 1923" at right
+|123456
+|1 to approximately 168000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on red plate; "ORE 1924" at right
+|{{nowrap|123-456}}
+|1 to approximately 197-000
+|
+|-
+|[[File:1925 Oregon License plate.jpg|150px]]
+|1925
+|Embossed black serial on yellow plate; "ORE 1925" at right
+|123-456
+|1 to approximately 220-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed white serial on black plate; "ORE 1926" at right
+|123-456
+|1 to approximately 236-000
+|
+|-
+|[[File:1927 Oregon License plate.jpg|150px]]
+|1927
+|Embossed white serial on black plate; "OREGON-1927" at bottom
+|123-456
+|1 to approximately 261-000
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed black serial on white plate; "OREGON-1928" at bottom
+|123-456
+|1 to approximately 256-000
+|
+|-
+|[[File:1929 Oregon License plate.jpg|150px]]
+|January 1, 1929&nbsp;–<br>June 30, 1930
+|Embossed white serial on black plate; "OREGON-1929" at top
+|123-456
+|1 to approximately 330-000
+|Validated from January 1 through June 30, 1930, with windshield sticker.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|July 1, 1930&nbsp;–<br>June 30, 1931
+|Embossed orange serial on black plate; "OREGON EXPIRES JUNE 30 1931" at bottom
+|123-456
+|1 to approximately 296-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|July 1, 1931&nbsp;–<br>June 30, 1932
+|Embossed white serial on black plate; "OREGON JUNE 30 1932" at bottom
+|123-456
+|1 to approximately 265-000
+|
+|-
+|[[File:1933 OR license plate 2.jpg|150px]]
+|July 1, 1932&nbsp;–<br>June 30, 1933
+|Embossed white serial on black plate with border line; "OREGON JUNE 30 1933" at top
+|123-456
+|1 to approximately 250-000
+|
+|-
+|[[File:1933 Oregon license plate.jpg|150px]]
+|July 1&nbsp;– December 31, 1933
+|Embossed black serial on golden yellow plate with border line; "OREGON DEC. 31 1933" at bottom
+|123-456
+|1 to approximately 218-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed black serial on gray plate with border line; "OREGON-1934" at bottom
+|123-456
+|1 to approximately 249-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed yellow serial on black plate with border line; "OREGON-1935" at top
+|123-456
+|1 to approximately 272-000
+|
+|-
+|[[File:1936 Oregon License plate.jpg|150px]]
+|1936
+|Embossed black serial on silver plate with border line; "OREGON-1936" at bottom
+|123-456
+|1 to approximately 276-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed white serial on black plate with border line; "OREGON-1937" at top
+|123-456
+|1 to approximately 293-000
+|
+|-
+|[[File:1938 Oregon license plate.jpg|150px]]
+|1938
+|Embossed black serial on silver plate with border line; "OREGON-1938" at top
+|123-456
+|1 to approximately 327-000
+|
+|-
+|[[File:1939 Oregon license plate.jpg|150px]]
+|1939
+|Embossed black serial on yellow plate with border line; "OREGON-1939" at bottom
+|123-456
+|1 to approximately 344-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed blue serial on white plate with border line; "OREGON-1940" at top
+|123-456
+|1 to approximately 359-000
+|
+|-
+|[[File:1941 Oregon license plate.JPG|150px]]
+|1941
+|Embossed white serial on green plate with border line; "19 OREGON 41" at bottom
+|123-456
+|1 to approximately 390-000
+|
+|-
+|[[File:1942 Oregon license plate.JPG|150px]]
+|1942–45
+|Embossed white serial on blue plate with border line; "19 OREGON 42" at bottom
+|123-456
+|1 to approximately 495-000
+|Revalidated for 1943, 1944 and 1945 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1946 Oregon Vehicle License Plate.jpg|150px]]
+|1946
+|Embossed black serial on gray plate with border line; "46 OREGON 46" at bottom
+|123-456
+|1 to approximately 480-000
+|Only rear plates issued due to ongoing metal shortages. A windshield sticker was carried at the front of the vehicle.
+|-
+|[[File:1947 Oregon license plate.jpg|150px]]
+|1947
+|Embossed black serial on unpainted aluminum plate with border line; "47 OREGON 47" at bottom
+|123-456
+|1 to approximately 458-000
+|
+|-
+|[[File:1948 Oregon License plate.jpg|150px]]
+|1948
+|Embossed red serial on unpainted aluminum plate with border line; "48 OREGON 48" at top
+|123-456
+|1 to approximately 511-000
+|
+|-
+|[[File:1949 Oregon License Plate.jpg|150px]]
+|1949
+|Embossed black serial on unpainted aluminum plate with border line; "19 OREGON 49" at bottom
+|123-456
+|1 to approximately 567-000
+|
+|}
+
+===1950 to present===
+[[File:License plates (10728525246).jpg|thumb|right|Some of Oregon's current license plate designs]]
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Oregon license plate that complied with these standards.
+
+All plates from 1955 until present are still valid, provided they are displayed on the vehicle to which they were originally issued and the vehicle has been continuously registered.
+{{Clear}}
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed black serial on unpainted aluminum plate with border line; month of expiration, "OREGON" and "50" or "51" at top
+|rowspan="2"|''none''
+|rowspan="2"|123-456
+|1 to 710-000
+|rowspan="2"|Monthly staggered registration introduced. Dated plates were generally issued to existing registrants, while all undated plates were issued to new registrants. All were revalidated with tabs each year until 1955.
+|-
+|[[File:1955 Oregon license plate.JPG|150px]]
+|1951–54
+|As above, but without "50" or "51"
+|710-001 to approximately 995-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed golden yellow serial on blue plate with border line; month of expiration, "OREGON" and "56" at top
+|rowspan="2"|''none''
+|rowspan="3"|1''A''-1234
+|rowspan="3"|Letter corresponds to month of expiration (see right)
+|rowspan="3"|Letters A through M (excluding I) were used for January through December respectively, followed by letters N through Z (excluding O). All 1955–59 plates were revalidated with tabs each year until 1960 and with stickers thereafter, while all "Pacific Wonderland" plates were revalidated with stickers.
+|-
+|[[File:Oregon 1962 license plate - Number 8D-1403.jpg|150px]]
+|1956–59
+|As above, but without "56"
+|-
+|[[File:1963 Oregon license plate.jpg|150px]]
+|1960–63
+|As above, but with shorter dies for the serial, state name and month of expiration
+|"PACIFIC WONDERLAND" at bottom
+|-
+|[[File:Oregon 1964-72 license plate with 1976 sticker - Number GGT 297.jpg|150px]]
+|1964–73
+|Embossed golden yellow serial on blue plate; border line around plate and around registration year sticker spot at bottom right; "OREGON" centered at bottom; month of expiration at bottom left
+|''none''
+|''A''BC&nbsp;123
+|First letter corresponds to month of expiration
+|Letters A through M (excluding I) were used for January through December respectively.
+|-
+|[[File:1974 Oregon Passenger License Plate.jpg|150px]]
+|1973–85
+|Embossed blue serial on golden yellow plate; border line around plate and around registration year sticker spot at bottom right; "OREGON" centered at bottom; month of expiration at bottom left
+|rowspan="2"|''none''
+|''A''BC&nbsp;123
+|First letter corresponds to month of expiration
+|Serials for each month continued from where the 1964–73 plates left off.
+|-
+|[[File:Oregon Passenger Plate - Gold Month Sticker.jpg|150px]]
+|1985&nbsp;–<br>June<br>1988
+|As above, but without month of expiration and sticker spot border line
+|ABC&nbsp;123
+|NAA 001 to PDM&nbsp;999
+|Month coding discontinued.
+|-
+|[[File:Oregon license plate, 1988–1989 series with July 1991 sticker.png|150px]]
+|July<br>1988&nbsp;– November 1989
+|Embossed dark blue serial on mountain skyline with pale lavender mountains, light khaki sky and pale green [[Douglas Fir]] in the center; "Oregon" screened in pale blue centered at top
+|''none''
+|ABC&nbsp;123
+|PDN 001 to QNL&nbsp;999
+|Awarded "Plate of the Year" for best new license plate of 1988 by the [[Automobile License Plate Collectors Association]], the first time Oregon was so honored.
+|-
+|[[File:2003 Oregon License Plate.jpg|150px]]
+|November 1989&nbsp;– February 2004
+|rowspan=2|Embossed dark blue serial on mountain skyline with lavender mountains, light blue sky and dark green Douglas Fir in the center; "Oregon" screened in dark blue centered at top
+|rowspan=2|''none''
+|ABC&nbsp;123
+|QNM 001 to ZZZ&nbsp;999
+|Same design as previous, but with the colors changed in response to public criticism of the original colors.<ref>Goetze, Janet (October 11, 1989). "Oregon plates are getting brighter: '89 Legislature agreed to alter color scheme". ''[[The Oregonian]]'', p. B6.</ref>
+|-
+|[[File:Plate tree lg.jpg|150px]]
+|February 2004&nbsp;– present
+|123&nbsp;ABC
+|001&nbsp;BAA to 999 REN {{small|(as of June 22, 2026)}}
+|No change to design or colors. Formatting changed to numbers first. 'A' series of serials skipped to avoid confusion with optional Oregon Trail plates, 'I' and O' series of serials skipped to avoid confusion with ones or zeroes respectively.
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial&nbsp;format
+!style="width:85px;"|Serials issued
+!Notes
+|-
+| 
+|[[Oregon Trail]]
+|1993–2000
+|Black on blue, yellow and green background. Embossed serials.
+|123 ABC
+|001 AAA to 999&nbsp;ASZ
+|Featured a [[Covered Wagon]] print. Printing of plates to this design ceased in 1998,<ref>Boone, Jerry (January 5, 1998). "New traffic rules for '98 multiply". ''The Oregonian'', p. B4.</ref> but the design continued to be issued to vehicle owners requesting it until the supply of pre-printed plates ran out, circa early 2000.<ref>Oliver, Gordon (November 19, 1999). "Oregon Trail license plates going fast". ''The Oregonian'', p. C6.</ref>
+|-
+|[[File:Oregon 2006 Original Salmon Passenger License Plate.jpg|150px]]
+| rowspan="2" |[[Salmon]]
+|1998–2021
+|Dark blue on multicolored background. Embossed serials. Discontinued September 1, 2021.  
+|{{small|'''S'''/'''L'''}} 12345
+|{{small|S/L}} 00001 to {{small|S/L}}&nbsp;93326 {{small|(as of May 8, 2021)}}
+| rowspan="2" |$30 surcharge supports the [[Oregon Watershed Enhancement Board]] and the [[Oregon Parks and Recreation Department]] and is charged at each renewal time (every two years). First available in February 1998, the Salmon design has been less popular than had been expected, and by 2002 had only raised about one-third as much revenue as originally predicted.<ref>Martins, Cheryl (January 18, 2002). "License plate goal looks like fish tale". ''The Oregonian'', p. D1.</ref>
+|-
+|[[File:Salmon plate.jpg|150px]]
+|2021–present
+|White on multicolored background. Surface-printed serials. Redesigned in 2021, released September 1, 2021
+|{{small|'''S'''/'''M'''}} 12345
+|{{small|S/M}} 00001 to present
+|-
+| rowspan="4" |[[File:Crater Lake Plate (5161920566) (cropped).jpg|150px]]
+| rowspan="4" |[[Crater Lake]] Centennial
+| rowspan="4" |2002–2022
+| rowspan="4" |White on multicolored background. Surface-printed serials. Discontinued September 9, 2022.
+|{{small|'''C'''/'''L'''}} 12345
+|{{small|C/L}} 00001 to {{small|C/L}}&nbsp;99999
+| rowspan="4" |Awarded "Plate of the Year" for best new license plate of 2002 by the [[Automobile License Plate Collectors Association]], the second time Oregon was so honored. Surcharge supports [[Crater Lake National Park]].
+|-
+|{{small|'''C'''/'''K'''}} 12345
+|{{small|C/K}} 00001 to {{small|C/K}}&nbsp;99999
+|-
+|{{small|'''C'''/'''A'''}} 12345
+|{{small|C/A}} 00001 to {{small|C/A}}&nbsp;99999
+|-
+|{{small|'''C'''/'''B'''}} 12345
+|{{small|C/B}} 00001 to approx. {{small|C/B}}&nbsp;44000
+|-
+|[[File:New Crater Lake license plate.jpg|150px]]
+|[[Crater Lake]]
+|2022–present
+|White on multicolored background. Surface-printed serials. Redesigned in 2022, released September 9, 2022.
+|{{small|'''C'''/'''B'''}} 12345
+|{{small|C/B}} 44001 to present
+|Surcharge supports [[Crater Lake National Park]].
+|-
+|[[File:Oregon Undated Cultural Trust Sample License Plate.jpg|150px]]
+|Cultural Trust
+|2006–2021
+|Black on multicolored background. Embossed serials. Discontinued October 1, 2021.
+| rowspan="2" |{{small|'''C'''/'''U'''}} 12345
+| rowspan="2" |{{small|C/U}} 00001 to present
+| rowspan="2" |Surcharge supports the [[Oregon Cultural Trust]].
+|-
+|[[File:Cultural Trust plate.jpg|150px]]
+|Cultural Trust
+|2021–present
+|White on multicolored background. Embossed serials. Redesigned in 2021, released October 1, 2021
+|-
+| 
+|Honoring Their Sacrifice
+|2009-present
+|As current passenger base, but with a picture of the State of Oregon with an American Flag in the center behind a [[firefighter]] and [[police officer]] replacing the two left-most serials.
+|A BCD
+|
+|Surcharge supports the Oregon Law Enforcement Memorial Trust Fund.<ref>{{Cite web |title=Department of Public Safety Standards & Training : Oregon Law Enforcement Memorial Trust Fund : Memorial Trust Fund : State of Oregon |url=https://www.oregon.gov/dpsst/BD/MFB/Pages/Oregon-Law-Enforcement-Memorial-Trust-Fund.aspx |access-date=2023-10-03 |website=www.oregon.gov}}</ref>
+|-
+| rowspan="2" |[[File:Oregon 2019 Sesquicentennial Passenger License Plate with 9S Prefix and Alternate Dies.jpg|150px]]<br />[[File:Oregon Undated Sesquicentennial Passenger License Plate with 9X Prefix.jpg|150px]]<br />[[File:Oregon 2025 Sesquicentennial Passenger License Plate with 0A Prefix.jpg|150px]]
+| rowspan="2" |Pacific Wonderland
+| rowspan="2" |2009–present
+| rowspan="2" |Gold on blue. Embossed serials.
+|'''9'''A-1234
+|9P-0001 to 9Z-9999
+| rowspan="2" |Special re-issue of 1960–63 passenger base to celebrate Oregon's 150 years of statehood. Surcharge supports the [[Oregon State Capitol Foundation]] and the [[Oregon Historical Society]]. Originally limited to 40,000 plates; increased to 80,000 in 2015.
+|-
+|'''0'''A-1234
+|0A-0001 to 0F-4281 {{small|(as of September 3, 2024)}}
+|-
+| 
+|Higher Education
+|2005–present
+|As current passenger base, but with school logo replacing two left-most serials. Embossed serials.
+|A BCD
+|
+|Surcharge supports the school of choice. Available for [[Eastern Oregon University|EOU]], [[Oregon State University|OSU]], [[University of Oregon|U of O]], [[University of Portland|UP]], and [[Willamette University|Willamette]].
+|-
+| [[File:Oregon 2008 Share The Road License Plate.jpg|frameless|150x150px]]
+|Share the Road
+|2008–present
+|White and yellow text on blue background. Surface-printed serials.
+|ABCD
+|
+|Surcharge supports [[The Street Trust]] and [[Cycle Oregon]].
+|-
+| [[File:Oregon 2012 Wine Country License Plate.jpg|frameless|150x150px]]
+|Wine Country
+|May 14, 2012<ref name="DMV-DD-spring2012">{{cite web |title=Handbook updated for May 2012 |url=http://www.oregon.gov/ODOT/Forms/DMV/7022_20_2.pdf |work=Dealer Details |publisher=[[Oregon Department of Transportation]] |date=Spring 2012 |page=2 |url-status=live |archive-url=https://web.archive.org/web/20180327055225/http://www.oregon.gov/ODOT/Forms/DMV/7022_20_2.pdf |archive-date=March 27, 2018 |access-date=March 26, 2018 |quote=the new Wine Country registration plates ... have been available to the public since May 14, 2012}}</ref>&nbsp;– present
+|White text on multi-colored background. Surface-printed serials.
+|{{small|'''W'''/'''C'''}} 12345
+|{{small|W/C}} 00001 to {{small|W/C}}&nbsp;62360 {{small|(as of August 6, 2024)}}
+|Surcharge supports "agricultural and culinary tourism".<ref name="DMV-DD-spring2012"/>
+|-
+| 
+|Keep Kids Safe
+|October 16, 2012&nbsp;– early 2015
+|White text on blue burst background with two children in front of red heart. Surface-printed serials.
+|ABCD
+|
+|Surcharge supported child abuse prevention programs. Production discontinued October 31, 2014 due to low sales.
+|-
+|[[File:Oregon 2022 Trail Blazers License Plate.jpg|150px]]
+|[[Portland Trail Blazers]]
+|September 1, 2016&nbsp;– present
+|Black on white background, with Trail Blazer colors around border. Embossed serials.
+|{{small|'''T'''/'''B'''}} 12345
+|{{small|T/B}} 00001 to {{small|T/B}}&nbsp;46061 {{small|(as of July 10, 2024)}}
+|The design includes the Trail Blazers pin wheel between the stacked TB and the numbers, 'ripcity' at the bottom and red, black and gray stripes at the top. Also available as a vanity plate and as an amateur radio operator (ham) plate.
+|-
+|[[File:Gray Whale plate.jpg|150px]]
+|Coastal Playground
+|February 1, 2019&nbsp;– present
+|White on two-shade-blue background, with mother [[gray whale]] and calf swimming just below surface of ocean; small lighthouse at upper left.
+|{{small|'''G'''/'''W'''}} 12345
+|{{small|G/W}} 00001 to {{small|G/W}}&nbsp;34740 {{small|(as of August 25, 2024)}}
+|Surcharge supports [[Oregon State University]]'s Marine Mammal Institute.<ref>{{cite news |last=Theen |first=Andrew |date=January 28, 2019 |title=Gray whale license plate available Friday in Oregon |url=https://www.oregonlive.com/pacific-northwest-news/2019/01/gray-whale-license-plate-available-friday-in-oregon.html |newspaper=The Oregonian |access-date=May 11, 2019}}</ref>
+|-
+|[[File:Ducks plate.jpg|150px]]
+|[[University of Oregon]]
+|April 1, 2019–present
+|Yellow on green background, the mascot, the [[duck]], is seen drawn on the left side and the team name is printed at the bottom.
+|'''U'''/'''O''' 12345
+|
+|Surcharge supports the [[University of Oregon]]
+|-
+|[[File:Keep Oregon Green license plate.jpg|150px]]
+|Smokey Bear
+|August 1, 2019&nbsp;– present
+|White on forest green background, changing to light green in the shape of a forest silhouette at top, with portion of face of [[Smokey Bear]] at left and "Keep Oregon Green" along the bottom.
+|{{small|'''S'''/'''B'''}} 12345
+|{{small|S/B}} 00001 to {{small|S/B}}&nbsp;77683 {{small|(as of August 6, 2024)}}
+|Awarded "Plate of the Year" for best new license plate of 2019 by the Automobile License Plate Collectors Association, the third time Oregon was so honored. Surcharge, paid partly in the form of a voucher purchased from the non-profit Keep Oregon Green Association, supports that organization's efforts to reduce instances of human-caused wildfires.<ref>{{cite news |title=Smokey Bear license plates available in Oregon starting today |url=https://www.kgw.com/article/news/local/smokey-bear-license-plates-available-in-oregon-starting-today/283-78601741-065c-41d3-9ab6-00a6684ad1b5 |access-date=September 4, 2019 |publisher=[[KGW]] |date=August 1, 2019|orig-year=July 9, 2019}}</ref><ref>{{cite news |last=Fernandez |first=Ryan |title=Oregon's Smokey Bear license plate available just in time for his 75th birthday |url=https://www.oregonlive.com/trending/2019/07/oregons-smokey-bear-license-plate-available-just-in-time-for-his-75th-birthday.html |access-date=September 4, 2019 |newspaper=The Oregonian |date=July 9, 2019}}</ref>
+|-
+|[[File:Watch for Wildlife license plate (52018879102).jpg|150px]]
+|Watch for Wildlife
+|May 4, 2022&nbsp;– present
+|Dark blue on multicolored background, with a [[mule deer]] at left and [[Mount Hood]] prominently in the righthand background<ref name="wildlife-KLCC"/>
+|{{small|'''W'''/'''W'''}} 12345
+|{{small|W/W}} 00001 to {{small|W/W}} 27005 {{small|(as of Sept 7, 2024)}}
+|Surcharge supports the Oregon Wildlife Foundation.<ref name="wildlife-KLCC">{{cite news |last1=Bull |first1=Brian |title=New license plate will fund efforts to safeguard Oregon's wildlife |url=https://www.klcc.org/2022-04-21/new-license-plate-will-fund-efforts-to-safeguard-oregons-wildlife |access-date=April 24, 2023 |publisher=[[KLCC (FM)|KLCC]] |date=April 21, 2022 |archive-url=https://web.archive.org/web/20220421205818/https://www.klcc.org/2022-04-21/new-license-plate-will-fund-efforts-to-safeguard-oregons-wildlife |archive-date=April 21, 2022 |url-status=live}}</ref><ref name="wildlife-OPB-2023">{{cite news |last1=Lewin |first1=Jasmine |title=New Oregon license plate will fund safe animal crossings |url=https://www.opb.org/article/2023/04/19/oregon-license-plate-mule-deer-watch-for-wildlife/ |access-date=April 24, 2023 |publisher=[[OPB]] |date=April 19, 2023}}</ref>
+|-
+|[[File:Pollinator Paradise license plate.jpg|150px]]
+|Pollinator paradise 
+|November 1, 2023&nbsp;– present
+|White on multicolored background, with [[honey bee]] and [[bumble bee]] amid [[red clover]]<ref name="OSU-pollinator">{{cite web |title=Oregon Pollinator License Platee |url=https://agsci.oregonstate.edu/home/oregon-pollinator-license-plate |publisher=College of Agricultural Resources, Oregon State University |access-date=March 1, 2024}}</ref>
+|{{small|'''B'''/'''Z'''}} 12345
+|{{small|B/Z}} 00001 to present
+|Surcharge supports Oregon State University programs studying how to maintain healthy [[pollinator]] populations.<ref>{{cite news |last=Acker |first=Lizzy |title=Oregon’s new license plate is the bee's knees, and it's available soon |url=https://www.oregonlive.com/hg/2023/10/oregons-new-license-plate-is-the-bees-knees-and-its-available-soon.html |access-date=March 1, 2024 |newspaper=[[The Oregonian]] |date=October 19, 2023}}</ref>
+|-
+| [[File:Oregon_2025_OSU_License_Plate.jpg|150x150px]]
+|OSU (Oregon State University) 
+|April 7, 2025[https://communications.oregonstate.edu/license-plate]&nbsp;– present
+| A black and gray background with the logo of Oregon State University and "The Beaver State" in orange along the bottom.
+|{{small|'''B'''/'''V'''}} 12345
+|{{small|B/V}} 00001 to present
+| Supports OSU athletics and university strategic initiatives.
+|-
+|[[File:Oregon Zoo license plate.jpg|150px]]
+|[[Oregon Zoo]]
+|November 3, 2025&nbsp;– present
+|White on multicolored background, with [[Asian elephant]] and roses.
+|{{small|'''O'''/'''Z'''}} 12345
+|{{small|O/Z}} 00001 to present
+|Surcharge supports the Oregon Zoo Foundation for conservation education, species recovery and animal wellbeing.<ref>{{cite news |last=Bourgeois |first=Michaela |date=October 20, 2025 |title=Oregon DMV releasing elephant-inspired license plates for animal conservation |url=https://www.koin.com/news/oregon/oregon-dmv-releasing-elephant-inspired-license-plates-for-animal-conservation/ |work=KOIN |location=Portland, Oregon |access-date=November 8, 2025}}</ref>
+
+|}
+<!-- until we get photos. just put the template plate -->
+There are also special plates available for special interest vehicles, antique vehicles, veterans, and various service clubs.
+
+==Non-passenger plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!style="width:70px;"|Dates issued
+!Design
+!Serial&nbsp;format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Oregon ham radio license plate.jpg|150px]]
+|[[Amateur Radio Operator]]
+|
+|
+|Serial begins with 'A', 'K', 'W' or 'N'
+|Reflects call letters issued to amateur radio operators by the [[Federal Communications Commission|FCC]]
+|These plates can be issued on the optional Salmon, Crater Lake and Cultural Trust designs. They were also issued on the Oregon Trail design.
+|-
+|[[File:Oregon 2016 Moped license plate.jpg|150px]]
+|Amateur Radio Operator – Motorcycle/Moped
+|
+|
+|Serial begins with 'A', 'K', 'W' or 'N'
+|Reflects call letters issued to amateur radio operators by the FCC
+|
+|-
+|[[File:Oregon 2018 Apportioned Truck license plate.jpg|150px]]
+|rowspan="2"|Apportioned Truck
+|1975–present
+|Blue on gold; "APPORTIONED" at bottom
+|'''Y'''123456
+|Y000001 to present
+|Issued to trucks based in Oregon that operate interstate and have a [[Gross vehicle weight rating|GVW]] of 26,000 pounds or less. Trucks are ''not'' subject to Oregon's weight mile tax. 
+|-
+|[[File:Oregon 2018 Apportioned Truck license plate - DOT.jpg|150px]]<br>[[File:Oregon 2018 Apportioned Truck License Plate.jpg|150px]]
+|
+|White on red or black on white with "APPORTIONED" at bottom and "DOT" or "PUC" at upper right corner
+|'''YA'''BC123
+|YAAA001 to present
+|Issued to trucks based in Oregon that operate interstate and have a [[Gross vehicle weight rating|GVW]] of more than 26,000 pounds. Trucks are subject to Oregon's weight mile tax. 
+|-
+|[[File:Oregon 1988 Apportioned Trailer License Plate.jpg|150px]]
+|Apportioned Trailer
+|1975 to ?
+|Blue on gold; "APPORTIONED" at bottom
+|'''Z'''123456
+|Z000001 to present
+|Issued to trailers based in Oregon that operate interstate. May have been discontinued in favor of the Heavy Permanent license plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Bus]]
+|
+|Orange on aluminum; "OREGON" at top
+|'''B''' 123<br>'''B''' 1-234
+|
+|rowspan="2"|Issued to buses designed and used for carrying passengers, baggage and express for compensation. Also any vehicle with a registration weight of more than 10,000 pounds (e.g. church bus, private school bus, worker bus, etc.) that is primarily used for carrying passengers. Also bus trailer.
+|-
+|[[File:Oregon 2018 Bus License Plate 5 Digit.jpg|150px]]<br>[[File:Oregon 2018 Bus License Plate - Bus, New Alternative Dies.jpg|150px]]<br>[[File:Oregon 2018 Bus License Plate 6 Digit.jpg|150px]]
+|
+|Blue on gold; "OREGON" at top
+|'''B''' 1-234<br>'''B''' 1234<br>'''B''' 12345<br>'''B'''012345
+|
+|-
+|[[File:Oregon 1978 Black Camper License Plate.jpg|150px]]
+|rowspan="5"|Camper
+|before 1973
+|White on black; "CAMPER" at bottom
+|rowspan="5"|'''K'''123456
+|K700001 to approx. K760000
+|rowspan="5"|Issued to “camper” which is a structure with a floor designed to be mounted upon a motor vehicle but not permanently attached. 
+|-
+|[[File:Oregon 1980 Camper license plate.jpg|150px]]
+|1973 to ?
+|Blue on gold; "CAMPER" at bottom
+|K760001 to approx. K790000
+|-
+|[[File:Oregon 2012 Camper license plate.jpg|150px]]
+|
+|Blue on gold; sticker box at top and "Oregon" at bottom
+|K790001 to approx. K810000
+|-
+| 
+|1993–99
+|Oregon Trail base
+|Approx. K990000 to K999999
+|-
+|[[File:Oregon 2010 Camper License Plate with Tall K.jpg|150px]]
+|? to present
+|Blue on gold; "OREGON" at top
+|K810001 to present
+|-
+|[[File:Oregon 1998 Charitable Non-Profit license plate.jpg|150px]]
+|rowspan="3"|Charitable/Non-Profit
+|1989–early 2000s
+|Blue on gold; "OREGON" at top with sticker box at bottom
+|rowspan="3"|{{small|'''C'''/'''N'''}} 12345
+|{{small|C/N}}&nbsp;00001 to approx. {{small|C/N}}&nbsp;02400
+|rowspan="3"|Issued to trucks or buses owned and used by charitable or nonprofit organizations.
+|-
+|[[File:Oregon 2017 Charitable Non-Profit license plate - Tall dies.jpg|150px]]
+|early 2000s–mid 2000s
+|Blue on gold; "OREGON" at top
+|{{small|C/N}}&nbsp;02401 to approx. {{small|C/N}}&nbsp;03200
+|-
+|[[File:Oregon 2018 Charitable Non-Profit license plate.jpg|150px]]
+|mid. 2000s–present
+|Blue on gold; "OREGON" at top with sticker box at bottom
+|{{small|C/N}}&nbsp;03200 to {{small|C/N}}&nbsp;04617 {{small|(as of August 23, 2021)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Coach
+|
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Commercial Truck
+|1966–73
+|Orange on aluminum
+|rowspan="2"|'''T'''123456
+|T200001 to approx. T346500
+|rowspan="2"|Issued to trucks that only operate within Oregon and have a [[Gross vehicle weight rating|GVW]] of 26,000 pounds or less.
+|-
+|[[File:Oregon 1989 Truck License Plate with Polyvend Dies.jpg|150px]]<br>[[File:Oregon 2011 Truck license plate.jpg|150px]]<br>[[File:Oregon 2005 Truck License Plate with Waldale Dies.jpg|150px]]<br>[[File:Oregon 2007 Truck License Plate New.jpg|150px]]
+|1974–present
+|Blue on gold
+|Approx. T346501 to present
+|-
+|[[File:Oregon 2018 Commercial Truck license plate.jpg|150px]]
+|
+|White on red or black on white with "COMMERCIAL" at bottom and "DOT" or "PUC" at upper right corner
+|'''YC'''BC123
+|YCAA001 to present
+|Issued to trucks that only operate within Oregon and have a [[Gross vehicle weight rating|GVW]] of more than 26,000 pounds.
+|-
+|[[File:Oregon Dealer License Plate - Gold 1978.jpg|150px]]<br>[[File:Oregon 1981 Dealer License Plate.jpg|150px]]
+|rowspan="4"|Dealer
+|1977-1983
+|Blue on gold with "OREGON DEALER" and 2-digit year or valiation sticker at bottom
+|{{small|'''D'''/'''A'''}} 1234 A
+|rowspan="4"|
+|rowspan="4"|Issued to dealers with current business license
+|-
+|[[File:Oregon 1995 Dealer License Plate.jpg|150px]]
+|1984-early 2000s
+|Blue on gold with "OREGON" at bottom; 1984 issues included "84" at bottom, other years used validation stickers
+|{{small|'''D'''/'''A'''}} 1234 A<br>{{small|'''D'''/'''A'''}} 1234AB<br>{{small|'''D'''/'''A'''}} 1234 {{small|A/B}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|early 2000s-late 2000s
+|Blue on gold with "OREGON" at top
+|{{small|'''D'''/'''A'''}} 1234 A<br>{{small|'''D'''/'''A'''}} 1234AB
+|-
+|[[File:Oregon 2014 Dealer License Plate - Silver with DA Prefix.jpg|150px]]
+|late 2000s-present
+|Blue on gold or black on silver with "OREGON" at top and "DEALER" at bottom
+|{{small|'''D'''/'''A'''}} 1234 A<br>{{small|'''D'''/'''A'''}} 1234AB<br>{{small|'''D'''/'''L'''}} 1234 A<br>{{small|'''D'''/'''L'''}} 1234AB
+|-
+|[[File:Oregon 2015 Motorcycle Dealer license plate.jpg|150px]]
+|Dealer – Motorcycle/Moped/<br>Snowmobile/ATV
+|
+|Blue on gold or black on silver
+|
+|
+|Issued to dealers with current business license.
+|-
+|[[File:Oregon disabled person license plate.jpg|150px]]<br>[[File:Oregon 1978 disabled license plate.jpg|150px]]<br>[[File:Oregon disabled person license plate 2.jpg|150px]]<br>[[File:Oregon 1990 Disabled License Plate - D♿ Prefix.jpg|150px]]
+|Disabled Person
+|
+|
+|
+|
+|
+|-
+|[[File:Oregon Disabled Veteran License Plate with D Wheelchair Prefix.jpg|150px]]
+|rowspan="4"|Disabled Veteran
+|rowspan="3"|1973&nbsp;– early 1990s
+|Blue on gold; "PERMANENT" at top, "VETERAN" at right and wheelchair under 'D' prefix
+|rowspan="3"|'''D'''12345
+|D00001 to approximately D06000
+|rowspan="4"|Serials continue on from those on the blue-on-gold plates, with {{small|D/1}}&nbsp;99&nbsp;99 followed by {{small|D/2}}&nbsp;00&nbsp;00, {{small|D/2}}&nbsp;99&nbsp;99 followed by {{small|D/3}}&nbsp;00&nbsp;00, etc.
+|-
+|[[File:Oregon Disabled Veteran License Plate with D Prefix.jpg|150px]]
+|As above, but with no wheelchair
+|D06001 to approximately D10000
+|-
+|[[File:Oregon Disabled Veteran Plate - D17768.jpg|150px]]
+|As above, but with "PERMANENT" at bottom
+|D10001 to approximately D18000
+|-
+| <br> <br> <br> <br> 
+|early 1990s&nbsp;– present
+|1989 Douglas Fir graphic; "PERMANENT" at bottom and "VETERAN" at right
+|{{small|'''D'''/1}} 23 45
+|{{small|D/1}} 80 01 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Ex-POW
+|
+|
+|
+|
+|Issued to persons qualifying as former prisoners of war.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Ex-POW – Motorcycle/Moped
+|
+|
+|
+|
+|Issued to persons qualifying as former prisoners of war.
+|-
+|[[File:1955 Oregon Farm License Plate.jpg|150px]]<br>[[File:1958 Oregon Farm License Plate.jpg|150px]]
+|rowspan="4"|Farm Vehicle
+|{{nowrap|before 1965}}
+|Various colors on aluminum with date stamped at top
+|rowspan="3"|'''F'''12-345
+|F10-000 and above
+|rowspan="4"|For use on motor vehicles used in farm operations.
+|-
+|[[File:Oregon 1965 Farm Truck license plate.jpg|150px]]
+|{{nowrap|1965–72}}
+|Orange on aluminum; sticker box at bottom
+|F10-000 to approximately<br>F71-500
+|-
+|[[File:Oregon 1979 Farm Truck license plate.jpg|150px]]
+|rowspan="2"|1973–present
+|rowspan="2"|Blue on gold; sticker box at bottom
+|F71-501 to<br>F99-999
+|-
+|[[File:Oregon 2018 Farm Truck license plate - F173434.jpg|150px]]
+|'''F'''123456
+|F100000 to present
+|-
+|[[File:Oregon For Rent License Plate - Dec 2020 Expiry.jpg|150px]]
+|For-Rent
+|
+|Blue on gold; "OREGON" at top and "DEC." and year of expiration at bottom
+|{{small|'''F'''/'''R'''}} 1-2345
+|
+|Issued to trailers having a loaded weight of 8,000&nbsp;lb or less that are for hire and are equipped with pneumatic tires. All plates expire on December 31 of the stated year.
+|-
+|[[File:Oregon Exempt Publicly Owned license plate (blue) 02.jpg|150px]]<br>[[File:Oregon Exempt Publicly Owned license plate (blue).jpg|150px]]
+|rowspan="3"|Government Exempt
+|rowspan="3"|
+|Gold on blue; "PUBLICLY OWNED" at top and "OREGON" at bottom
+|'''E'''12-345<br />'''E'''123-456<br />'''E'''123456
+|E95-000 to approximately E122000
+|rowspan="3"|Issued to vehicles registered to state, local and regional agencies
+|-
+|[[File:Oregon Exempt Publicly Owned license plate (yellow).jpg|150px]]
+|Blue on gold; "PUBLICLY OWNED" at top and "OREGON" at bottom
+|rowspan="2"|'''E'''123456
+|E122001 to approximately E226000
+|-
+|[[File:Oregon Government Plate Short Bottom Legend.jpg|150px]]<br>[[File:Oregon Government Plate Tall Bottom Legend.jpg|150px]]
+|Blue on gold; "OREGON" at top and "PUBLICLY OWNED" at bottom
+|E226001 to present
+|-
+|[[File:Oregon Government Exempt License Plate - Motorcycle.jpg|150px]]
+|Government Exempt – Motorcycle/Moped
+|
+|Blue on gold; "OREGON" at top and "EXEMPT" at bottom
+|{{small|'''E'''/'''9'''}} 12345
+|
+|
+|-
+|[[File:Oregon 1975 Heavy Fixed Load License Plate - Short Numbers, Blue, December.jpg|150px]]<br>[[File:Oregon Heavy Fixed Load License Plate - Short Numbers, Yellow, December.jpg|150px]]<br>[[File:Oregon 1998 Heavy Fixed Load License Plate - Short Numbers.jpg|150px]]<br>[[File:Oregon 2019 Heavy Fixed Load License Plate.jpg|150px]]
+|Heavy Fixed Load
+|
+|
+|{{small|'''H'''/'''F'''}} 12345
+|
+|Issued to vehicles, both motorized and non-motorized, that weigh over 3,000&nbsp;lb. and are not designed to carry people or property.
+|-
+|[[File:Oregon Heavy Trailer Plate HT 58 676.jpg|150px]]
+|rowspan="2"|Heavy Trailer
+|1973&nbsp;– late 1980s 
+|Blue on gold; sticker box at bottom
+|{{small|'''H'''/'''T'''}} 12-345<br>{{small|'''H'''/'''T'''}}&nbsp;12345
+|{{small|H/T}} 06–001 to approximately {{small|H/T}}&nbsp;62000
+|rowspan="2"|Issued to trailers having a loaded weight over 8,000&nbsp;lb.
+|-
+|[[File:Oregon Heavy Trailer Permanent license plate - HP Prefix.jpg|150px]]<br>[[File:Oregon Heavy Permanent Plate - HU Prefix Waldale Dies.jpg|150px]]
+|late 1980s&nbsp;– present
+|Blue on gold; "PERMANENT" at bottom
+|{{small|'''H'''/B}}&nbsp;12345
+|{{small|H/P}}&nbsp;00001 to {{small|H/S}}&nbsp;99999; {{small|H/U}}&nbsp;00001 to {{small|H/V}}&nbsp;74602 {{small|(as of April 6, 2022)}}
+|-
+|[[File:Oregon 2017 Light Fixed Load license plate.jpg|150px]]<br>[[File:Oregon Light Fixed Load Plate Aug 2020.jpg|150px]]
+|Light Fixed Load
+|
+|Blue on gold
+|{{small|'''L'''/'''F'''}} 12345
+|
+|Issued to vehicles, both motorized and non-motorized, that weigh 3,000&nbsp;lb. or less and are not designed to carry people or property. Examples of such vehicles are temporary lighting rigs and portable [[Variable-message sign|VMSes]].
+|-
+|[[File:Oregon 2012 Low Speed Vehicle License Plate - Short Dies.jpg|150px]]
+|rowspan="2"|Low-Speed Vehicle
+|
+|Blue on gold; "OREGON" at top and sticker box at bottom
+|rowspan="2"|{{small|'''L'''/'''S'''}} 12345
+|{{small|L/S}} 00001 to ?
+|rowspan="2"|Issued to four-wheeled vehicles with a maximum speed of between 20 and 25 miles per hour.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|Blue on gold; "OREGON" at top
+|? to {{small|L/S}} 00521 {{small|(as of September 23, 2016)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Medium-Speed Vehicle
+|
+|Blue on gold; "OREGON" at top
+|{{small|'''M'''/'''S'''}} 12345
+|{{small|M/S}} 00001 to present
+|Issued to four-wheeled electrical vehicles that are equipped with a roll cage or a crushproof body design and have a maximum speed of 35 miles per hour.
+|-
+|[[File:Oregon 2016 Moped license plate.jpg|150px]]
+|Moped
+|1980s&nbsp;– present
+|Blue on gold
+|{{small|'''M'''/'''P'''}} 12345
+|{{small|M/P}} 00001 to present
+|Issued to two- or three-wheeled cycles or bicycles equipped with an independent power source, with an engine size of up to 50 cubic centimeters and a maximum speed of up to 30 miles per hour.
+|-
+|[[File:Oregon 1990 Motor Home License Plate, Yellow Irwin-Hodson.jpg|150px]]
+|rowspan="8"|Motor Home
+|
+|Blue on yellow
+|rowspan="4"|'''H'''123456
+|H900001 to approx. H913000
+|rowspan="8"|
+|-
+|[[File:Oregon 1981 Motor Home License Plate, Orange Irwin-Hodson H9 Prefix.jpg|150px]]
+|
+|Blue on gold; "MOTOR HOME" at bottom
+|H913001 to approx. H952000
+|-
+|[[File:Oregon 2019 Motor Home License Plate - H9 Prefix.jpg|150px]]<br>[[File:Oregon 2009 Motor Home License Plate - H1 Prefix.jpg|150px]]
+|
+|Blue on gold; sticker box at bottom
+|H952001 to H999999<br>H100001 to approx. H135000
+|-
+| 
+|
+|rowspan="2"|Oregon Trail base
+|H800001 to approx. H809999
+|-
+| 
+|
+|rowspan="3"|{{small|'''H'''/'''C'''}} 12345
+|{{small|H/C}} 00001 to approx. 17999
+|-
+|[[File:Oregon 2018 Motor Home License Plate - HC Prefix Short.jpg|150px]]
+|
+|Blue on gold; sticker box at bottom
+|{{small|H/C}} 99999 to approx. {{small|H/C}} 58000 (issued in reverse)
+|-
+|[[File:Oregon Motor Home License Plate - HC Prefix Tall, Waldale.jpg|150px]]<br>[[File:Oregon 2018 Motor Home License Plate - HC Prefix Tall.jpg|150px]]
+|
+|rowspan="2"|Blue on gold
+|{{small|H/C}} 57999 to 18000 (issued in reverse)
+|-
+|[[File:Oregon 2019 Motor Home License Plate - HD Prefix.jpg|150px]]
+|
+|{{small|'''H'''/'''D'''}} 12345
+|{{small|H/D}} 00001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="6"|Motorcycle
+|rowspan="2"|1968–70
+|rowspan="2"|White on blue; sticker box at bottom
+|12345
+|1 to approximately 85000
+|rowspan="6"| White-on-blue and gold-on-blue plates are still valid and may be renewed. In the current serial format, {{small|M/2}}&nbsp;99999 was followed by {{small|M/3}}&nbsp;00000, {{small|M/3}}&nbsp;99999 was followed by {{small|M/4}}&nbsp;00000 and so on.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|'''<u>M</u>'''12345
+|<u>M</u>85001 to approximately <u>M</u>90000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1970–72
+|Gold on blue; sticker box at bottom
+|'''<u>M</u>'''12345<br>'''<u>M</u>'''123456
+|<u>M</u>90001 to approximately <u>M</u>188000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1973–75
+|rowspan="2"|Blue on gold; sticker box at bottom
+|'''<u>M</u>'''123456
+|<u>M</u>188001 to approximately <u>M</u>199999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|{{small|'''M'''/1}} 23456
+|{{small|M/2}} 00000 to approximately {{small|M/2}}&nbsp;55000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1975–present
+|As above, but without sticker box
+|{{small|M/2}} 55001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|National Guard
+|
+|
+|{{small|'''N'''/'''G'''}}12 345
+|{{small|N/G}}00 001 to present
+|Issued to current active members of the Oregon National Guard.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|[[Antique car|Old Timer]]
+|1952–54
+|Black on aluminum; "OLD TIMER" at left
+|'''A'''-123
+|A-1 to approximately<br>A-636
+|rowspan="9"|Issued to any vehicle that is older than half the number of years between 1900 and the current year (so, in 2021, any vehicle that dates from 1960 or before). Black-on-aluminum Old Timer plates were revalidated with tabs until 1955, while gold-on-blue versions were revalidated with tabs until 1960, then with stickers until 1964.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1955–59
+|rowspan="2"|Gold on blue; "OLD TIMER" at left
+|'''A'''-123
+|A-1 to A-999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|1-234
+|1-000 to approximately<br>2-100
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1960–63
+|As above, but with "PACIFIC WONDERLAND" at bottom
+|2-101 to approximately<br>3-000
+|-
+|[[File:Oregon 1964 Historic Vehicle license plate.jpg|150px]]
+|rowspan="3"|[[Antique car|Historic Vehicle]]
+|1964–72
+|Gold on blue; "HISTORIC VEHICLE" at left
+|3-001 to approximately<br>6-000
+|-
+|[[File:Oregon Historic Vehicle License Plate.jpg|150px]]
+|1973&nbsp;– early 1980s
+|rowspan="2"|Blue on gold; "HISTORIC VEHICLE" at left
+|6-001 to approximately<br>8-500
+|-
+|[[File:Oregon Undated Historic Vehicle License Plate - Polyvend Dies.jpg|150px]]
+|early 1980s&nbsp;– late 1980s
+|1234
+|8501 to 9999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Antique car|Antique Vehicle]]
+|late 1980s&nbsp;– late 1990s
+|Blue on gold; "ANTIQUE VEHICLE" at top
+|rowspan="2"|{{small|'''A'''/'''Q'''}} 12345
+|{{small|A/Q}} 00001 to approximately {{small|A/Q}}&nbsp;02000
+|-
+|[[File:Oregon Undated Antique Vehicle License Plate - Tall Numbers.jpg|150px]]
+|late 1990s&nbsp;– present
+|As above, but with "ANTIQUE VEHICLE" at bottom
+|{{small|A/Q}} 02001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Permanent Fleet
+|c. 1973–2004
+|Blue on gold; "PERMANENT FLEET" at top and "OREGON" at bottom
+|rowspan="2"|{{small|'''P'''/'''F'''}} 12345
+|{{small|P/F}} 00001 to approximately {{small|P/F}}&nbsp;27000
+|rowspan="2"|Issued to owners of fleets of 50 or more vehicles used within Oregon. Fleet vehicles can be passenger cars, trucks, buses or utility trailers.
+|-
+|[[File:Oregon Permanent Fleet License Plate - Text Below.jpg|150px]]
+|c. 2004–present
+|Blue on gold; "OREGON" at top and "PERMANENT FLEET" at bottom
+|{{small|P/F}} 27001 to {{small|P/F}}&nbsp;44010 {{small|(as of July 4, 2021)}}
+|-
+|[[File:Oregon Undated School License Plate - Short Polyvend Dies.jpg|150px]]
+|rowspan="2"|School Bus
+|
+|Blue on gold; "SCHOOL BUS" at top, "OREGON" at bottom and "PERM" at right
+|rowspan="2"|{{small|'''S'''/'''C'''}} 12345
+|rowspan="2"|{{small|S/C}} 00001 to present
+|rowspan="2"|
+|-
+|[[File:Oregon School Bus License Plate.jpg|150px]]
+|
+|Blue on gold, "OREGON" at top, "SCHOOL BUS" at bottom and "PERM" at right
+|-
+|[[File:Oregon 1979 Special Interest Vehicle license plate - short numbers.jpg|150px]]
+|rowspan="2"|Special Interest
+|before c. 2004
+|Blue on gold; "OREGON" at bottom
+|rowspan="2"|{{small|'''S'''/'''P'''}} 12345
+|{{small|S/P}} 00001 to approximately {{small|S/P}}&nbsp;10000
+|rowspan="2"|Issued on vehicles that are maintained as collector's items and are at least 25 years old.
+|-
+|[[File:Oregon 1979 Special Interest Vehicle license plate.jpg|150px]]
+|c. 2004–present
+|Blue on gold; "OREGON" at top
+|{{small|S/P}} 10001 to {{small|S/P}}&nbsp;33754 {{small|(as of December 25, 2021)}}
+|-
+|[[File:Oregon Special Use Trailer Plate.jpg|150px]]<br>[[File:Oregon 2024 Special Use Trailer License Plate.jpg|150px]]
+|Special Use Trailer
+|
+|
+|{{small|'''S'''/'''T'''}} 12345
+|{{small|S/T}} 00001 to present
+|
+|-
+|[[File:Oregon 1994 Tow Truck License Plate.jpg|150px]]<br>[[File:Oregon 2018 Tow Truck License Plate - Tall IH.jpg|150px]]
+|Tow Truck
+|
+|Blue on gold; "OREGON" at top
+|{{small|'''T'''/'''W'''}} 12345
+|{{small|T/W}} 00001 to present
+|Issued to individuals who tow vehicles not owned by them in tow and recovery operations for direct or indirect compensation. Also issued to businesses which must transport damaged, disabled or abandoned vehicles.
+|-
+|[[File:Oregon 1982 Transporter license plate - TR prefix.jpg|150px]]<br>[[File:Oregon 1984 Transporter License Plate.jpg|150px]]<br>[[File:Oregon 1999 Transporter License Plate.jpg|150px]]<br>[[File:Oregon 2016 Transporter License Plate with TR Prefix.jpg|150px]]<br>[[File:Oregon 2020 Transporter License Plate - TN Prefix.jpg|150px]]
+|Transporter
+|
+|
+|TR 123<br>TR 123A<br>TR 123AB<br>{{small|'''T'''/'''R'''}} 123ABC<br>{{small|'''T'''/'''N'''}} 12345
+|
+|
+|-
+|[[File:Oregon 1984 Travel Trailer license plate.jpg|150px]]
+|rowspan="6"|[[Caravan (towed trailer)|Travel Trailer]]
+|c. 1964–73
+|White on pistachio green; "ORE" and sticker box at top and "TRAVEL TRAILER" at bottom
+|rowspan="5"|'''R'''123456
+|R400001 to approximately R499500
+|rowspan="6"|
+|-
+|[[File:Oregon 1986 Travel Trailer license plate - Irwin-Hodson Type.jpg|150px]]<br>[[File:Oregon 1983 Travel Trailer license plate - Polyvend.jpg|150px]]
+|c. 1973–83
+|Blue on gold; "ORE" and sticker box at top and "TRAVEL TRAILER" at bottom
+|R499501 to approximately R575000
+|-
+|[[File:Oregon 1998 Travel Trailer license plate.jpg|150px]]<br>[[File:Oregon 2017 Travel Trailer license plate.jpg|150px]]
+|c. 1983–2004
+|Blue on gold; sticker box at top and "OREGON" at bottom
+|R575001 to approximately R750000
+|-
+| 
+|1993–99
+|Oregon Trail base
+|R980001 to R999999
+|-
+|[[File:Oregon 2019 Travel Trailer license plate - tall numbers.jpg|150px]]
+|c. 2004–2022
+|Blue on gold; "OREGON" at top
+|R750001 to R979999
+|-
+|[[File:Oregon 2022 travel trailer license plate.jpg|150px]]
+|2022–present
+|Blue on gold; "OREGON" at top
+|'''R'''12345A
+| R00001A to present
+|-
+|[[File:Oregon 1980 Utility Trailer license plate.jpg|150px]]
+|rowspan="5"|Utility Trailer
+|c. 1979–83
+|Blue on gold; "ORE" and sticker box at top and "TRAILER" at bottom
+|rowspan="5"|'''U'''123456
+|U000001 to approximately U041000
+|rowspan="5"|Issued to trailers having a loaded weight of 8,000&nbsp;lb or less.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|c. 1983–88
+|Blue on gold; sticker box at top and "OREGON" at bottom
+|U041001 to approximately U110000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|c. 1988–89
+|1988 Douglas Fir graphic
+|U110001 to approximately U140000
+|-
+| <br> 
+|c. 1989–present
+|1989 Douglas Fir graphic
+|U140001 to present
+|}
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|License plates of Oregon}}
+*[https://web.archive.org/web/20080501142305/http://www.oregon.gov/ODOT/DMV/vehicle/plateregular.shtml Current Oregon Regular-Issue License Plates] from [[Oregon Department of Transportation]]
+*[https://www.15q.net/or.html Oregon license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20250822223254/https://www.15q.net/or.html |date=August 22, 2025 }}
+*[http://www.odot.state.or.us/forms/dmv/6726.pdf Oregon Vehicle License Plate Manual] {{Webarchive|url=https://web.archive.org/web/20151002233621/http://www.odot.state.or.us/forms/dmv/6726.pdf |date=October 2, 2015 }} from [[Oregon Department of Transportation]]
+*[http://licenseplates.cc/ License Plate News & Highs]
+*[http://www.wweek.com/sports/2016/08/16/you-can-get-a-blazers-specialty-license-plate-starting-next-month/ Portland Trail Blazers license plate]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Oregon}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|Oregon]]
+[[Category:Transportation in Oregon]]
+[[Category:Oregon transportation-related lists]]
+[[Category:Culture of Oregon]]

@@ -1,0 +1,3230 @@
+{{short description|New York vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{pp-pc}}
+{{Original research|date=November 2014}}
+{{Use mdy dates|date=April 2025}}
+
+{{Infobox vehicle registration plate
+| image =
+| nickname = Excelsior
+| slogan_label = Slogan
+| slogan = Excelsior
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-1234
+| current_start_date = {{Start date|2020|06}}
+| designer = 
+| issuer = [[New York State Department of Motor Vehicles]]
+| manufacturer = Corcraft Products, [[Auburn Correctional Facility]], Auburn, New York
+| start_date = {{Start date|1910|08|01}}<br />(pre-state plates from 1901 to July 31, 1910)
+}}
+
+The U.S. state of [[New York (state)|New York]] was the first to require its residents to register their [[motor vehicle]]s, in 1901. Registrants provided their own [[Vehicle registration plate|license plate]]s for display, featuring their initials until 1903 and numbers thereafter, until the state began to issue plates in 1910.<ref>{{cite web|url=http://leatherlicenseplates.com/old-new-york-license-plates-vintage-new-york-license-plates/ |title=Old New York License Plates |date=27 August 2015 |publisher=LeatherLicensePlates.com |access-date=August 5, 2017}}</ref>
+
+Plates are currently issued by the [[New York State Department of Motor Vehicles]] (NYSDMV). Front and rear plates are required on all vehicles except for motorcycles and trailers.{{cn|date=June 2025}}
+
+==Passenger baseplates==
+===1910 to 1965===
+In 1956, the United States, Canada and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first New York license plate that complied with these standards.{{cn|date=June 2025}}
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:NEW YORK 1910 LICENSE PLATE FIRST GOV'T ISSUE rivited numbers - Flickr - woody1778a.jpg|150px]]
+|1910
+|Riveted white serial on dark blue plate; vertical "NY" at right
+|''none''
+|12345
+|1 to 999; 3000 to approximately 61000
+|Serials 1000 through 2999 reserved for dealers; this practice continued through 1913.<ref name="allaboutlicenseplatesNY">{{cite web |last=Tanner |first=Eric N. |title=New York License Plates |url=http://www.allaboutlicenseplates.com/athome.asp?State=New%20York |publisher=allaboutlicenseplates.com |access-date=August 5, 2017 |archive-date=August 6, 2017 |archive-url=https://web.archive.org/web/20170806020144/http://www.allaboutlicenseplates.com/athome.asp?State=New%20York |url-status=dead }}</ref>
+|-
+|[[File:1911 government-issued New York state license plate, 63923.png|150px]]
+|1911
+|Embossed white serial on maroon plate; vertical "NY" at right
+|''none''
+|12345
+|1 to 999; 3000 to approximately 85000
+|
+|-
+|[[File:NEW YORK 1912 LICENSE PLATE THIRD GOV'T ISSUE porcelain - Flickr - woody1778a.jpg|150px]]
+|1912
+|White serial on red porcelain plate; vertical "NY" at right
+|''none''
+|123456
+|1 to 999; 3000 to approximately 106000
+|
+|-
+|rowspan="2"|[[File:NEW YORK 1913 LICENSE PLATE, first DATED plate - Flickr - woody1778a.jpg|150px]]
+|rowspan="2"|1913
+|rowspan="2"|Embossed white serial on purple plate; "NY 1913" at right
+|rowspan="2"|''none''
+|12345
+|1 to 999; 3000 to 99999
+|rowspan="2"|First dated plate.
+|-
+|A1234
+|A1 to approximately E2000
+|-
+|rowspan="2"|[[File:NEW YORK 1914 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|rowspan="2"|1914
+|rowspan="2"|Embossed white serial on brown plate; "NY 1914" at left
+|rowspan="2"|''none''
+|12345
+|1 to 5999; 8000 to 99999
+|rowspan="2"|Serials 6000 through 7999 reserved for dealers.<ref name="allaboutlicenseplatesNY"/>
+|-
+|A1234
+|A1 to approximately F5000
+|-
+|rowspan="2"|[[File:NEW YORK 1915 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|rowspan="2"|1915
+|rowspan="2"|Embossed black serial on yellow plate; "NY 1915" at right
+|rowspan="2"|''none''
+|12345
+|1 to 999; 3000 to 99999
+|rowspan="2"|Serials 1000 through 2999 reserved for dealers (as from 1910 to 1913). Letters A, B, D, E, F, H, K, R, S, V, X and Y used in the A1234 serial format.<ref name="allaboutlicenseplatesNY"/>
+|-
+|A1234
+|A1 to approximately Y3000
+|-
+|[[File:NEW YORK 1916 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1916
+|Embossed dark blue serial on white plate; "N.Y. 1916" centered at bottom
+|''none''
+|123-456<br />'''''A'''''12-345<br />'''''B'''''12-345
+|Coded by district
+|All-numeric serials issued in New York City district; 'A' series in Albany district (eastern upstate New York); and 'B' series in Buffalo district (western upstate New York). This happened again in 1917.<ref>{{cite web |last=Tanner |first=Eric N. |title=New York License Plates - County Codes |url=http://www.allaboutlicenseplates.com/codes.asp?State=New%20York |publisher=allaboutlicenseplates.com |access-date=October 1, 2019 }}{{Dead link|date=July 2025 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+|-
+|[[File:1917 New York license plate.JPG|150px]]
+|1917
+|Embossed white serial on dark olive green plate with border line; "N.Y. 1917" centered at bottom
+|''none''
+|123-456<br />'''''A'''''123-456<br />'''''B'''''123-456
+|Coded by district
+|
+|-
+|[[File:1918 New York license plate.JPG|150px]]
+|1918
+|Embossed white serial on maroon plate with border line; "N.Y. 1918" centered at top
+|''none''
+|123-456
+|
+|Single series of all-numeric serials used for all classes of vehicles, with blocks allocated to passenger vehicles in each of the three districts (above). This practice continued through 1921.<ref name="allaboutlicenseplatesNY"/>
+|-
+|[[File:NEW YORK 1919 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1919
+|Embossed white serial on black plate with border line; "N.Y. 1919" centered at top
+|''none''
+|123-456
+|
+|
+|-
+|[[File:1920 New York license plate.JPG|150px]]
+|1920
+|Embossed black serial on light green plate with border line; "N.Y. 1920" centered at bottom
+|''none''
+|123-456
+|
+|
+|-
+|[[File:1921 New York license plate.JPG|150px]]
+|1921
+|Embossed white serial on dark blue plate with border line; "N.Y. 1921" centered at bottom
+|''none''
+|123-456
+|
+|
+|-
+|[[File:1922 New York license plate.JPG|150px]]
+|1922
+|Embossed white serial on green plate with border line; "N.Y. 1922" centered at bottom
+|''none''
+|123-456<br />{{nowrap|1-234-567}}
+|Issued in blocks by county
+|
+|-
+|[[File:1923 New York license plate.JPG|150px]]
+|1923
+|Embossed white serial on purple plate with border line; "N.Y. 1923" centered at top
+|''none''
+|123-456<br />1-234-567
+|Issued in blocks by county
+|
+|-
+|[[File:NEW YORK 1924 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1924
+|Embossed white serial on gray plate with border line; "N.Y. 1924" centered at bottom
+|''none''
+|123-456<br />1-234-567
+|Issued in blocks by county
+|
+|-
+|[[File:NEW YORK 1925 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1925
+|Embossed black serial on golden yellow plate; "N.Y. 1925" centered at top
+|''none''
+|''1A''·12-34
+|County-coded
+|First use of county codes.
+|-
+|[[File:NEW YORK 1926 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1926
+|Embossed white serial on dark blue plate with border line; "N.Y. 1926" centered at bottom
+|''none''
+|''1A''·12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1927 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1927
+|Embossed black serial on golden yellow plate with border line; "NY 27" centered at top
+|''none''
+|''1A''-12-34<br />''A''-12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1928 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1928
+|Embossed golden yellow serial on black plate; "NY 28" centered at bottom
+|''none''
+|''1A''-12-34<br />''A''-12-34
+|County-coded
+|
+|-
+|[[File:1929 New York license plate.jpg|150px]]
+|1929
+|Embossed black serial on golden yellow plate; "NY·29" centered at bottom
+|''none''
+|{{small|''A''/''1''}} 12-34<br />{{small|''A''/ }} 12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1930 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1930
+|Embossed golden yellow serial on black plate; "NY 30" centered at top
+|''none''
+|''A'' 12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1931 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1931
+|Embossed black serial on golden yellow plate; "NY 31" centered at bottom
+|''none''
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:1932 New York license plate 01.JPG|150px]]
+|1932
+|Embossed golden yellow serial on black plate; "NY 32" centered at top
+|''none''
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:1933 New York license plate.JPG|150px]]
+|1933
+|Embossed black serial on golden yellow plate; "NY 33" centered at top
+|''none''
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:1934 New York license plate.jpg|150px]]
+|1934
+|Embossed golden yellow serial on black plate; "NY 34" centered at bottom
+|''none''
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1935 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1935
+|Embossed black serial on golden yellow plate; "NY 35" centered at bottom
+|''none''
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1936 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1936
+|Embossed golden yellow serial on black plate; "NY 36" centered at top
+|''none''
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:New York 1937 license plate - Number 1J15-83.jpg|150px]]
+|1937
+|Embossed black serial on golden yellow plate; "NY 37" centered at top
+|''none''
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1938 LICENSE PLATE with NEW YORK WORLD'S FAIR 1939 slogan - Flickr - woody1778a.jpg|150px]]
+|1938
+|Embossed golden yellow serial on black plate; "NY 38" centered at top
+|"[[1939 New York World's Fair|NEW YORK WORLD"S FAIR 1939]]" at bottom
+|''A''-12-34<br />''1A''12-34
+|County-coded
+|First base to feature the full state name.
+|-
+|[[File:1939 New York license plate.JPG|150px]]
+|1939
+|Embossed black serial on golden yellow plate
+|"NEW YORK WORLD"S FAIR 1939" at top
+|''A-''12-34<br />''1A''12-34<br />''AB''-123
+|County-coded
+|
+|-
+|[[File:NEW YORK 1940 LICENSE PLATE with NEW YORK WORLD'S FAIR 1940 slogan - Flickr - woody1778a.jpg|150px]]
+|1940
+|Embossed golden yellow serial on black plate
+|"NEW YORK WORLD"S FAIR 1940" at bottom
+|''A-''12-34<br />''1A''12-34<br />''AB''-123
+|County-coded
+|
+|-
+|[[File:1941 New York license plate.JPG|150px]]
+|1941
+|Embossed black serial on golden yellow plate; "NY 41" centered at bottom
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''-123
+|County-coded
+|
+|-
+|[[File:1942 New York license plate.JPG|150px]]
+[[File:1943 New York license plate.jpeg|150px]]
+|{{nowrap|1942–43}}
+|Embossed golden yellow serial on black plate; "NY 42" centered at top
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|Only rear plates issued due to metal conservation for [[World War II]]. Revalidated for 1943 with golden yellow tabs.
+|-
+|[[File:NEW YORK 1944 LICENSE PLATE overstamped 1942 plate - Flickr - woody1778a.jpg|150px]]
+|1944
+|Embossed black serial on golden yellow plate; "NY 44" centered at top
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|Restamped and repainted 1942 plates.
+|-
+|[[File:NEW YORK 1945 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1945
+|Embossed golden yellow serial on black plate; "NY 45" centered at top
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1946 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1946
+|Embossed black serial on golden yellow plate; "NY 46" centered at bottom
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1947 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1947
+|Embossed golden yellow serial on black plate; "NY 47" centered at bottom
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|
+|-
+|[[File:NEW YORK 1948 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+[[File:NEW YORK 1949 LICENSE PLATE, 1948 plate WITH "49" tab - Flickr - woody1778a.jpg|150px]]
+|1948–49
+|Embossed black serial on golden yellow plate; "NY 48" centered at top
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|Revalidated for 1949 with black tabs.
+|-
+|[[File:1950 New York license plate.jpg|150px]]
+|1950
+|Embossed golden yellow serial on black plate; "NY 50" centered at top
+|''none''
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|
+|-
+|[[File:1951 New York license plate.jpg|150px]] [[File:1952 New York license plate.JPG|150px]]
+|1951–52
+|Embossed black serial on golden yellow plate; "NY", slogan and "51" at bottom
+|"THE EMPIRE STATE" between state abbreviation and year
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|Revalidated for 1952 with black tabs.
+|-
+|[[File:1953 New York license plate.jpg|150px]]
+[[File:NEW YORK 1954 LICENSE PLATE, 1953 plate with "54" TAB - Flickr - woody1778a.jpg|150px]]
+|1953–54
+|Embossed golden yellow serial on black plate; "NY", slogan and "53" at bottom
+|"THE EMPIRE STATE" between state abbreviation and year
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|Revalidated for 1954 with golden yellow tabs.
+|-
+|[[File:1955 New York license plate.jpg|150px]]
+[[File:NEW YORK 1956 EMPIRE STATE, 1955 plate with "56" TAB - Flickr - woody1778a.jpg|150px]]
+|1955–56
+|Embossed black serial on golden yellow plate; "NY", slogan and "55" at top
+|"THE EMPIRE STATE" between state abbreviation and year
+|''A-''12-34<br />''1A''12-34<br />''AB''12-34
+|County-coded
+|Revalidated for 1956 with black tabs.
+|-
+|[[File:NEW YORK 1957 LICENSE PLATE, STANDARD 12 X 6 INCH SIZE - Flickr - woody1778a.jpg|150px]]
+|1957
+|Embossed golden yellow serial on black plate; "NY", slogan and "57" at bottom
+|"EMPIRE STATE" between state abbreviation and year
+|''A''-1234<br />''AB''-1234<br />1234-''A''<br />1234-''AB''<br />''1A''-1234
+|County-coded
+|First 6" x 12" plate.
+|-
+|[[File:NEW YORK 1958 LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+[[File:NEW YORK 1959 LICENSE PLATE, 1958 plate with '59" tab - Flickr - woody1778a.jpg|150px]]
+|1958–59
+|Embossed black serial on golden yellow plate; "NY", slogan and "58" at bottom
+|"EMPIRE STATE" between state abbreviation and year
+|''A''-1234<br />''AB''-1234<br />1234-''A''<br />1234-''AB''<br />''1A''-1234
+|County-coded
+|Revalidated for 1959 with black tabs.
+|-
+|[[File:1960 New York License Plate Sample.jpg|150px]]
+[[File:NEW YORK 1961 LICENSE PLATE, 1960 plate with "61" TAB - Flickr - woody1778a.jpg|150px]]
+|1960–61
+|As 1957 base, but with "60" at bottom right
+|"EMPIRE STATE" as on 1957 base
+|''A''-1234<br />''AB''-1234<br />1234-''A''<br />1234-''AB''<br />''1A''-1234
+|County-coded
+|Revalidated for 1961 with golden yellow tabs.
+|-
+|[[File:New York 1962 Sample license plate.jpg|150px]]
+[[File:NEW YORK 1963 LICENSE PLATE, 1962 plate with "63" TAB - Flickr - woody1778a.jpg|150px]]
+|1962–63
+|As 1958–59 base, but with "62" at bottom right
+|"EMPIRE STATE" as on 1958–59 base
+|''A''-1234<br />''AB''-1234<br />1234-''A''<br />1234-''AB''<br />''1A''-1234
+|County-coded
+|Revalidated for 1963 with black tabs.
+|-
+|[[File:NEW YORK 1964 LICENSE PLATE, with NY WORLD'S FAIR slogan - Flickr - woody1778a.jpg|150px]][[File:1964-65 New York license plate.jpg|150px]]
+|1964–65
+|Embossed golden yellow serial on black plate with border line; "NY", slogan and "64" at bottom
+|"[[1964 New York World's Fair|WORLD'S FAIR]]" between state abbreviation and year
+|''A''-1234<br />''AB''-1234<br />1234-''A''<br />1234-''AB''<br />''1A''-1234
+|County-coded
+|Revalidated for 1965 with red stickers placed at far right.
+|}
+
+===1966 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:NY-3-73-2228-TL.jpg|150px]]
+|1966–72
+|Embossed orange serial on blue plate; border lines around plate and around registration sticker spot at bottom right; "NEW YORK" centered at bottom
+|''none''
+|''A''-1234<br />''AB''-1234<br />1234-''A''<br />1234-''AB''<br />''1A''-1234
+|County-coded
+|Some later plates use the 1973 serial [[Die (manufacturing)|die]]s; all revalidated with stickers.
+|-
+|[[File:1974 New York Number Plate.jpg|150px]]
+|1973–80
+|rowspan="2"|Embossed dark blue serial on reflective orange plate; border lines around plate and around registration sticker spot at bottom right; "NEW YORK" centered at bottom
+|rowspan="2"|''none''
+|12-ABC<br />123-ABC<sup>'''1'''</sup>
+|County-coded
+|rowspan="2"|Numbers 51 through 999 were used on the 12-ABC and 123-ABC serial formats. Narrower dies introduced 1979 to accommodate 1234-ABC format. All plates revalidated with windshield decals; plate stickers never used despite sticker box. (Except on Trailer plates)
+|-
+|[[File:NY license plate 1982.jpg|150px]]
+|1980&nbsp;– June 30, 1986
+|{{nowrap|1234-ABC<sup>'''1'''</sup>}}
+|1000-AAA to approximately 9999-BUR;<br />1000-TAA to approximately 9999-TCS
+|-
+|rowspan="2"|[[File:New York license plate, 1986.png|150px]]
+|rowspan="2"|July 1, 1986&nbsp;– December 2000
+|rowspan="2"|Liberty plates. Embossed dark blue serial on reflective white plate, with red stripes at top and bottom; red [[Statue of Liberty]] graphic [[screen printing|screened]] in center (or at left on vanity plates); "NEW YORK" screened in dark blue centered at top
+|rowspan="2"|''none''
+|ABC 123<br />1AB 234<sup>'''2'''</sup>
+|County-coded
+|rowspan="2"|Validated with windshield decal.
+|-
+|A1B 234<br />A12 3BC<br />AB1 23C<sup>'''2'''</sup>
+|A2A 100 to Y9Z&nbsp;999;<br />A10&nbsp;0AA to Z99&nbsp;9ZZ;<br />AA1&nbsp;00A to GS9&nbsp;99E
+|-
+| 
+|January 2001&nbsp;– March 31, 2010
+|Empire State plates. Embossed dark blue serial with state-shaped separator on reflective white plate with blue bars above and below; upper blue bar has the words "NEW YORK" in white with dark blue outline, over a skyline of [[Niagara Falls]], the [[Adirondack Mountains]], and [[New York City]], with sky above all
+|"THE EMPIRE STATE" screened in white on lower blue bar
+|ABC-1234<sup>'''3'''</sup>
+|AAA-1000 to EYH-2999
+|Validated with windshield decal. Letters I, O and Q not used in serials.<ref name="allaboutlicenseplatesNY"/> AAA-1000 through ABZ-9999 reserved for Transit Permit; EYH-3000 through EZZ-9999 may be issued on custom plates. TWY series used by [[New York State Thruway Authority]].
+|-
+|[[File:New York plate 4-2010.jpg|150x150px]]
+|April 1, 2010<ref>{{cite press release|url=http://www.dmv.ny.gov/press/pr040110.htm |title=DMV Commissioner Announces Empire Gold License Plate Availability |publisher=[[New York State Department of Motor Vehicles]] |date=April 1, 2010 |access-date=November 25, 2012 |archive-url=https://web.archive.org/web/20101028084340/http://www.dmv.ny.gov/press/pr040110.htm |archive-date=October 28, 2010}}</ref>&nbsp;– May 2020
+|Empire Gold plates. Embossed dark blue serial with state-shaped separator on golden yellow plate, with small blue bar at bottom with thin blue stripe above and curved larger blue bar at top with thin blue stripe below, with orange "NEW YORK" curving to edges of top bar
+|"EMPIRE STATE" screened in dark blue centered at bottom
+|ABC-1234<sup>'''4'''</sup>
+|FAA-1000 to JSF-9999
+|Validated with windshield decal. JTA-3000 through JZZ-9999 may be issued on custom plates.  
+|-
+|[[File:School Van Plates.jpg|left|thumb|133x133px]]
+|June 2020<ref>{{cite news |last=Campbell |first=Jon |date=June 25, 2020 |title=New York's new license plates have finally hit the road |url=https://www.democratandchronicle.com/story/news/politics/albany/2020/06/25/new-yorks-new-license-plates-finally-hit-road/3246364001/ |newspaper=[[Democrat and Chronicle]] |location=[[Rochester, New York|Rochester, NY]]|publisher=[[Gannett]]|access-date=July 1, 2020 |quote=The Excelsior plates are being issued in counties that have depleted their supply of Empire Gold. As of Tuesday [June 23], that included Albany, Columbia, Franklin, Greene, Madison, Oneida, Otsego, Rensselaer, Schuyler, St. Lawrence, Tioga, Warren, Wyoming and Yates counties, as well as several auto dealerships across the state.}}</ref>&nbsp;– present
+|Excelsior plates. Dark blue serial with state-shaped separator on white plate; images of Niagara Falls and New York City skyline at bottom; "NEW YORK" in dark blue centered at top with gold and blue stripes on either side
+|"EXCELSIOR" in gold, with blue outline, centered at bottom
+|ABC-1234<sup>'''6'''</sup>
+|KAA-1000 to KCH-9999;<sup>'''7'''</sup><br />KDA-1000 to MHT-1800(as of July 24, 2026)<sup>'''5'''</sup>
+|Plate design chosen by online vote.<ref>{{cite press release |url=https://www.governor.ny.gov/news/governor-cuomo-launches-statewide-survey-allowing-new-yorkers-choose-states-new-license-plate |title=Governor Cuomo Launches Statewide Survey Allowing New Yorkers to Choose State's New License Plate Design |date=August 19, 2019 |access-date=August 19, 2019 |archive-date=August 19, 2019 |archive-url=https://web.archive.org/web/20190819214337/https://www.governor.ny.gov/news/governor-cuomo-launches-statewide-survey-allowing-new-yorkers-choose-states-new-license-plate |url-status=dead }}</ref>
+|}
+
+'''Notes on serials'''
+
+'''1'''. Plus remakes of 1966–72 serials, issued upon request.<br />
+'''2'''. Plus remakes of 1966–72 and 1973–86 serials, issued upon request.<br />
+'''3'''. Plus remakes of Liberty serials, issued upon request.<br />
+'''4'''. Plus remakes of Liberty and Empire State serials, issued upon request.<br />
+'''5'''. This is the highest serial reserved by the NYSDMV.<br />
+'''6'''. Plus remakes of Liberty, Empire State and Empire Gold serials, issued upon request.<br />
+'''7'''. These were originally recalled as being too reflective but have been reprinted and reissued.
+
+==Passenger baseplate variations==
+===1973–1986: Blue on orange===
+The letter series on the original run of 1973 orange plates were allocated by county and were determined by a number of factors such as geographical names or features found in any said county. The entire 1973–74 allocation list is displayed below.
+
+By 1975, the DMV began to issue letter series that were not part of the original allocation. These were issued alphabetically, beginning with the 'A' series and running until the final 'V' and 'W' plates were issued in 1979–80. This was done on a rotating basis in the alphabetical order of the county name. At times, issuing offices or counties ran short of plates and plates would be diverted to where they were needed, sometimes breaking the intended issuing order.
+
+In late 1979, the state introduced new narrower dies that were to be used on the upcoming seven-character passenger plates. Most of the 'V' series of six-character plates used these dies (except for VS, VV, and the series issued in the original allocation), as well as series UYA through UYH, WXC through WXZ, and WYX through WZZ.
+
+The new seven-character passenger plates started to be issued in late 1980. These plates were issued sequentially, starting at 1000-AAA, with the letters I, O and Q not used, and 0 not used as the first digit. The 'A' series ran until around the end of 1983 and the 'B' series from around the beginning of 1984 until June 1986; there were also a few mis-stamped plates with the GAM suffix in [[Nassau County, New York|Nassau County]]. The final known issue was in the BUR series.
+
+The seven-character passenger plates were issued without regard of the meaning of any specific three-letter combination, with one exception: 1000-AUB through 4999-AUB were assigned to [[Cayuga County, New York|Cayuga County]] for its county seat at [[Auburn, New York|Auburn]], where the [[Corcraft]] plate facility is located.
+
+In 1984 the DMV began to issue plates directly through dealers, using the 'T' series. The plates were issued in the same manner as described above, and can be dated in this manner: TAA-TAZ in 1984, TBA-TBZ in 1985, and TCA-TCS in 1986. The final known issue was in the TCS series.
+
+===1986–2001: Statue of Liberty===
+
+In July 1986 the DMV began to issue the Liberty plates to replace the 1973-86 issue, and it took two years for the blue-on-orange plates to be fully off the road.
+
+All [[Statue of Liberty]] plates in the ABC 123 serial format, plus those in the early 1AB 234 format, featured the word "Liberty" in their [[3M]] security marks. During 1990, the security marks changed, with "Liberty" replaced by the last two digits of the year in which the sheeting was manufactured (the plates may actually date from later). In 1993, the marks changed again to feature 3M lot numbers, which were used until the end of Liberty plate manufacture in 2000. Plates were issued two ways: "over-the-counter" from a DMV or County office or "mail-out" in which registrants received new plates directly by mail.
+
+When the 1AB 234 serial format made its first appearance in September 1988, the first serials observed began with 6VB; this was because most plates with serials from 2VA 100 through 9VZ 999 and 2XA 100 through 9XZ 999 were issued from new [[car dealer]]s, which had exhausted their allocations in the ABC 123 format (roughly VAA 100 through VZZ 999 and XGA 100 through XZZ 999; XAA 100 through XFZ 999 were issued in Suffolk County as mail-out replacement passenger plates).
+
+Most plates, including specialty, vanity, and non-passenger plates, contained embossed characters, except a few in the A12 3BC format, which had screened characters.
+
+To date, these earlier Liberty plates are:
+;Type One: ABC 123 format, issued from July 1, 1986, through at least July 1989. These plates were issued primarily on a county-code basis (so, for instance, BXW 415 and ULK 767 could have been issued in different parts of the state on the same day in 1986). The letters I, O and Q were used only as the first letter; they were not used at all on subsequent Liberty standard passenger issues, as they could be confused with the numbers 1 and 0.<ref name="allaboutlicenseplatesNY"/>
+;Type Two: 1AB 234 format, issued from around September 1988 through at least October 1991. These plates were at least partially issued on a county-code basis (so, for instance, 4LV 392 and 7TC 806 could have been issued in different parts of the state on the same day in 1989) and became the last standard passenger plates issued in this manner. The numbers 0 and 1 were not used in the first position, to avoid confusion with the letters O and I respectively, while 0 was also not used in the fourth position. Plates stamped out during 1990 featured the "90" security mark.
+;Type Three: A1B 234 format, issued from around January 1991 through at least November 1993. These plates were issued in strict alphanumeric order, beginning with A2A 100 and ending with Y9Z 999. The numbers 0 and 1 were not used in the second position for the reasons mentioned above, while 0 was also not used in the fourth position. "90", "91" and "92" security marks featured on these plates.
+;Type Four: A12 3BC format, issued from February 1993 through at least August 1999. The first plates featured "92" security marks and were the final plates on galvanized steel; by the end of the 'A' series, plates had lot-number security marks and were on thin gauge aluminum. Some 'Y' series plates during 1998 had screened, rather than embossed, serials and were issued in the [[Rochester, New York|Rochester]] area.
+;Type Five: AB1 23C format, issued from May 1999 through February 28, 2001. All had lot-number security marks, and were aluminum. GS9 99E was the final known Type Five issue.
+;"Preferred" plates: Plates in the 1A 234 format were usually issued by county clerks' offices to constituents who contributed significantly to the counties; some were also issued as remakes of pre-1973 serials.
+;Rental plates: Plates with serials ZAA 100 through ZZZ 999 were assigned for use on rental cars from 1986 through September 1996. They featured "Liberty", "90", and "91" security marks. They were manufactured as needed in small quantities, and none were made after 1992. The use of rental plates was eventually discontinued and standard passenger plates used instead, in order to discourage [[carjacking]] of rental cars.
+
+===2001–2010: "Empire State"===
+In 2001, the state began the process of replacing all of the Liberty plates with a new "Empire State" design depicting [[Niagara Falls]], the [[Adirondack Mountains]], and the [[New York City]] skyline, including the [[Empire State Building]]. This base was the first to use the "Empire State" slogan since 1963. As with the Liberty base, standard passenger plates had embossed serials, but unlike on the Liberty base, all vanity plates, most specialty plates, and many non-passenger plates had screened serials. Existing registrants with Liberty plates were given the option of keeping the serials from these plates on new Empire State plates, for a one-time fee. Many took this option, and thus many Liberty serials can still be seen on the road; plates with these serials have them embossed.
+
+The ABC-1234 serial format for standard passenger plates was introduced with this base, beginning at ACA-1000 (series AAA through ABZ were reserved for Transit Permit plates). The 'A', 'B', and early 'C' series were issued during the replacement of the Liberty plates, the last of which came off the road in early 2003. The 'D' series began in 2004, followed by the 'E' series in 2007. The last standard passenger serial issued was EYH-2999. The letters I, O and Q are not used in this serial format.
+
+===2010–2020: "Empire Gold"===
+In 2010, the standard plate was redesigned to "Empire Gold". This plate consists of dark blue numbers on a gold background, and retains the ABC-1234 serial format. As with the Empire State base, standard passenger plates have embossed serials, while all vanity plates, all specialty plates, and many non-passenger plates have screened serials. Originally, the Empire Gold plate was supposed to be a reissue, replacing all of the Empire State plates in two years; however, after controversy over the new design and the $25 fee for reissue plates, mandatory replacement was called off, and the Empire State plates remain valid. All new registrants received Empire Gold plates, while existing registrants with Empire State plates could keep them or pay $25 for new Empire Gold plates;<ref>{{cite web |last=Frankel |first=Katherine |date=July 19, 2010 |title=Not Everyone Happy With New NYS License Plates |url=http://patch.com/new-york/harrison/not-everyone-happy-with-new-nys-license-plates |publisher=[[Patch Media|Patch.com]] |access-date=September 22, 2016}}</ref> they could also keep their previous serials on new plates for an additional one-time fee of $20.
+
+Standard passenger serials on the Empire Gold plate began at FAA-1000. The 'G' series began in 2012, followed by the 'H' series in 2015 and the 'J' series in 2018.
+
+===2020–present: "Excelsior"===
+On August 19, 2019, Governor Andrew Cuomo announced the initiation of a statewide survey to select a new design for New York's license plates, which would be available in April 2020. A design was selected in September 2019, depicting the words "New York"; images of Niagara Falls and mountains on the bottom left; the state motto "Excelsior" at bottom center; and a New York City skyline and Long Island lighthouse at bottom right.<ref>{{Cite web|url=https://www.democratandchronicle.com/story/news/politics/albany/2019/09/06/new-york-license-plate-design-in-april-2020/2196965001/|title=This is New York's new license plate. Here's when it will hit the road.|last=Campbell|first=Jon|website=Rochester Democrat and Chronicle|language=en|access-date=2020-02-23}}</ref><ref>{{Cite web|url=https://auburnpub.com/blogs/eye_on_ny/and-the-winner-is-ny-dmv-announces-new-license-plate/article_d6f861b0-fe3d-53e2-b5a9-ed03b980bd08.html|title=And the winner is...: NY DMV announces new license plate design|last= Harding |first=Robert |website= Auburnpub.com | publisher = The Citizen, a division of Lee Publications, Inc. |language=en| date=2019-09-07 }}</ref>
+
+Originally, starting in April 2020, plates older than ten years would have to be replaced upon the renewal of vehicle registration.<ref>{{Cite web|url=https://www.timesunion.com/news/article/Vote-for-new-state-license-plate-design-14351962.php|title=Cuomo advances mandatory license plate replacement with $25 fee|last=Lombardo|first=David|date=August 19, 2019|website=www.timesunion.com|language=en-US|access-date=August 19, 2019}}</ref><ref>{{Cite press release|url=https://www.governor.ny.gov/news/governor-cuomo-launches-statewide-survey-allowing-new-yorkers-choose-states-new-license-plate|title=Governor Cuomo Launches Statewide Survey Allowing New Yorkers to Choose State's New License Plate Design|date=August 19, 2019|publisher=Office of the Governor of the State of New York|location=[[Albany, New York|Albany, NY]]|language=en|access-date=August 19, 2019|archive-date=August 19, 2019|archive-url=https://web.archive.org/web/20190819214337/https://www.governor.ny.gov/news/governor-cuomo-launches-statewide-survey-allowing-new-yorkers-choose-states-new-license-plate|url-status=dead}}</ref> However, as with the Empire Gold plates, there was controversy over the mandatory replacement scheme,<ref>{{Cite news|url=https://nypost.com/2019/09/17/new-yorkers-strongly-oppose-license-plate-replacement-plan-poll-shows/|title=New Yorkers strongly oppose license plate replacement plan, poll shows|last=Campanile|first=Carl|date=2019-09-17|newspaper=[[New York Post]]|location=[[New York City|New York]]|publisher=[[News Corp]]|language=en|access-date=2020-02-23}}</ref> leading Cuomo's administration to consider reducing the new-plate fees.<ref>{{Cite news|url=https://nypost.com/2019/08/29/cuomo-admin-softens-stance-on-25-license-plate-replacement/|title=Cuomo admin. softens stance on $25 license plate replacement|last=Hogan|first=Bernadette|date=2019-08-29|newspaper=[[New York Post]]|location=[[New York City|New York]]|publisher=[[News Corp]]|language=en|access-date=2020-02-23}}</ref> Ultimately, the requirement to replace plates greater than ten years old was dropped, as long as the plates remained legible.<ref>{{Cite web|url=https://nypost.com/2019/09/17/andrew-cuomo-scraps-plan-to-charge-new-yorkers-for-new-license-plates/|title=Andrew Cuomo scraps plan to charge New Yorkers for new license plates|last1=Hogan|first1=Bernadette|last2=Meyer|first2=David|newspaper=[[New York Post]]|location=[[New York City|New York]]|publisher=[[News Corp]]|date=2019-09-17|language=en-US|access-date=2020-02-28}}</ref><ref>{{Cite news|url=https://spectrumlocalnews.com/nys/central-ny/politics/2019/09/17/new-license-plate-new-york-andrew-cuomo-abandons-requirement|title=Cuomo Officially Puts the Brakes on New License Plate Requirement|last=Gross|first=Courtney|location=[[Syracuse, New York|Syracuse, NY]]|work=[[Spectrum News]]|publisher = Charter Communications | date=2019-09-17|language=en-US|access-date=2020-02-28}}</ref>
+
+The first deliveries of the new plate design to state DMVs took place in April 2020, but ended up being returned without entering circulation. These early manufactures, in the series KAA through KCH, were too reflective and thus impossible for toll and speed cameras to read.<ref name=reflective>{{cite news| url = https://spectrumlocalnews.com/nys/central-ny/ny-state-of-politics/2020/05/12/new-excelsior-license-plates-sent-back-due-to-design-problem- | archive-url = https://web.archive.org/web/20200529182323/https://spectrumlocalnews.com/nys/central-ny/ny-state-of-politics/2020/05/12/new-excelsior-license-plates-sent-back-due-to-design-problem- | archive-date = 2020-05-29 | title = New 'Excelsior' License Plates Sent Back Due To Manufacturing Problem | first = Nick | last = Reisman | date = 2020-05-12 |location=[[Syracuse, New York|Syracuse, NY]]| work = Spectrum News | publisher = Charter Communications }}</ref> New York state therefore only started issuing Excelsior plates beginning with the KDA series. The earlier codes were subsequently issued to motorists following release of the LZA-LZZ plates.
+
+Standard passenger serials on the Excelsior Plate began at KAA-1000. The 'L' series began in 2022 and the 'M' series in late 2025. As of January 2026, plates had progressed to serials beginning with 'MC'.
+
+==Optional plates==
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:2001 to 2010 New York organizational plate.png|150px]]
+[[File:New York organizational license plate, c. 2012.png|150px]]
+[[File:NYS plate SCJ2.jpg|150px]]
+|from unknown
+|Blue bar with script New York with thin red stripe below. Logo picture on the left followed by 2 to 6 plate digits. Red and blue stripes run along the bottom. Newer plates have a curved blue banner with yellow stripe below on top, though some of the older designs (such as "regions") have not been transitioned to the new style.
+|Custom Picture plates with sports logos, [[university|universities]], professions, emergency services, and military organizations. Also used for some official plates, such as those of the press, judges and assemblypeople.
+|Up to six letters and numbers. If number is random it will be in pre-allocated blocks in the 123ABC format. Serial numbers proceed sequentially within their own plate type, but non-sequentially otherwise, setting them apart from standard-issue plates.
+|
+|Validated with windshield decal.
+|}
+
+==Non-passenger plates==
+
+{{Outdated as of|2024|08|24|topic=current professional plates.}}
+
+Below are some non-passenger and professional plates on the Empire Gold and Excelsior bases.<ref>{{cite web|url=http://www.licenseplates.cc/highs.php?where=NY |title=New York License Plates |publisher=LicensePlates.cc |access-date=October 10, 2015 |archive-url=https://web.archive.org/web/20160207153221/http://licenseplates.cc/highs.php?where=NY |archive-date=February 7, 2016}}</ref> Empire State non-passenger plates remain valid as of October 2019.
+{|class="wikitable"
+|-
+!Image
+!Type
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Agriculture
+|12345-'''GL'''
+|Embossed.
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|Ambulance
+|12345-'''EV'''
+|Embossed. EV = Emergency Vehicle.
+|-
+| [[File:Blank License Plate Shape.svg|left|thumb|138x138px]]
+|Apportioned
+|12345-'''PF'''
+|Flat.
+|-
+|[[File:New York Architect license plate AR 600.png|frameless|149x149px]]
+|Architect
+|'''AR'''-123
+|Flat.
+|-
+|[[File:Blank License Plate Shape.svg|left|thumb|130x130px]]
+|Bus
+|12345-'''BT'''
+|Flat. (Formerly Embossed) 
+2001 series: 12345-'''BA'''
+2010 series: 12345-'''BB'''
+|-
+|[[File:NY license plate 54111ME commercial.jpg|150px]]
+|Commercial
+|12345-'''N'''A<ref>{{cite web| url=http://www.plateshack.com/y2k/New_York5/nycomm2021.jpg | format=JPG | title=New York plate}}</ref>
+|Embossed.
+1980 series: 12345-'''G'''(A-W)
+1986 series: AA1000
+1994 series: 10000-'''A'''(A-Y)
+2001 series: 10000-'''J'''(A-Z), 10000-'''KA'''
+
+2011 series: 10000-'''M'''(A-P)
+|-
+| 
+[[File:NY DSEALER.jpg|150px]]
+|Dealer
+|1234567
+|Flat. Began at 7100000.
+|-
+|[[File:NY license plate 626040 handicapped.jpg|150px]]
+|Disability
+|123456 {{access icon|10px}}
+|Flat. Began at 600000. Wheelchair symbol updated 2014.<ref>{{cite web |title=New York Updates the Handicap Symbol |url=https://www.nmeda.com/handicap-symbol/ |publisher=National Mobility Equipment Dealers Association |date=October 22, 2014 |access-date=December 4, 2017}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farm
+|12345-'''FR'''
+|Embossed.
+|-
+| [[File:Blank License Plate Shape.svg|left|frameless|154x154px]]
+|Historical Car
+|12345-'''HL'''
+|Flat. Began at 10000-HL
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Livery
+|12345-'''LY'''
+|Flat. (Formerly Embossed) The LA Series was used for the 2001 series and The LV Series was used for the 2010 Series.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|12AB34
+|Flat. Began at 10RA00.
+|-
+|[[File:New York license plate official R-14893.jpg|150px]]
+[[File:New York City School Construction Authority license plate AJ7546.jpg|150px]]
+|Official
+|'''R'''-12345<br />{{small|A/B}}1234
+|Older plates with the '''R'''-12345 serial format were embossed. Newer plates with the {{small|A/B}}1234 format are flat, and display the political subdivision at the left and the county name at the bottom.
+|-
+|[[File:New York Press license plate 5535.jpg|frameless|150x150px]]
+|Press
+|'''NYP'''-1234
+|Flat.
+|-
+| [[File:School Van Plates.jpg|left|thumb|133x133px]]
+|School
+|12345-'''SV'''
+|Flat. (Formerly Embossed) The SL Series was used for the 2001 series and The SH Series was used for the 2010 Series.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Special Commercial
+|12345-'''SM'''
+|Embossed.
+|-
+|[[File:New York Taxi & Limousine Commission license plate T641760C.jpg|150px]]
+|[[New York City Taxi and Limousine Commission|T&LC]]
+|'''T'''123456'''C'''
+|Flat. Began at T600000C.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|T&LC – [[Nassau County, New York|Nassau County]]
+|'''N'''123456'''C'''
+|Flat.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|T&LC – [[Westchester County, New York|Westchester County]]
+|'''W'''123456'''C'''
+|Flat.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Taxi
+|12345-'''TY'''
+|Flat.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Taxi – [[Taxicabs of New York City|NYC medallion cabs]]
+|'''Y'''123456'''C'''
+|Flat. New serial format from March 2018. Standby vehicles have the format '''S'''123456'''V'''.<ref>{{cite web |title=Industry Notice #18-04: DMV to Issue New Taxi Plates |url=http://www.nyc.gov/html/tlc/downloads/pdf/industry_notice_18_04.pdf |publisher=New York City Taxi and Limousine Commission |date=March 23, 2018 |archive-url=https://web.archive.org/web/20180612141915/http://www.nyc.gov/html/tlc/downloads/pdf/industry_notice_18_04.pdf |archive-date=June 12, 2018 |access-date=June 8, 2018}}</ref> Previous plates display the medallion number with a serial subscript (e.g. 1X97<sub>A</sub>), or 999SBV<sub>A</sub> for standby vehicles, and remain valid.
+|-
+|[[File:New York tow truck license plate, c. 1989.png|150x150px]]
+[[File:Ny tow truck plate 2.png|150x150px]]
+|Tow Truck
+|12345-'''TV'''
+|Flat. (Formerly Embossed) The TW Series was used for the 2001 series and The TT Series was used for the 2010 Series.
+|-
+| [[File:Blank License Plate Shape.svg|left|frameless|150x150px]]
+|Tractor
+|12345-'''TC'''
+|Flat.
+|-
+| [[File:Blank License Plate Shape.svg|border|left|frameless|150x150px]]
+|Trailer
+|'''C'''A-12345
+|Flat. Embossed prior to Excelsior Series. Serial format was initially from AE-12345, then changed to '''B'''A-12345, and finally to '''C'''A-12345 with the introduction of Excelsior Series plates.
+|-
+| [[File:Blank License Plate Shape.svg|none|thumb|142x142px]]
+|Transporter
+|1234567
+|Flat. Probably began at 2100000.
+|}
+
+==Vanity plates==
+Prior to 1977, all [[vanity plate]]s, or special registration plates in NYSDMV parlance, in New York had combinations consisting of up to three letters and up to three digits (e.g. RED-123, JD-555, JIM-1).
+
+In 1977, the NYSDMV began to allow vanity plates featuring up to six letters (e.g. ALBANY, WAYNE, METS-1). In 1978, narrower [[Die (manufacturing)|die]]s were introduced that allowed for vanity plates featuring up to eight characters (e.g. BROOKLYN, AMERICA, GRADE-12). Until 1982, digits could not be interspersed with letters (e.g. GOOD2GO, ALL4U2, TERMIN8R), and a dash (itself considered a character) could only separate letters and digits. Vanity plates began to be issued for some non-passenger types in 1982, including Commercial, Motorcycle, and Trailer.
+
+Since the introduction of the Empire State base in 2001, all vanity plates have been manufactured with screened, rather than embossed, combinations.
+
+As of 2019, vanity plates continue to feature up to eight characters, including letters, digits, spaces, and state-shaped dashes (the last two are not recognized as characters on the vehicle's windshield decal). All plates must feature at least one letter, and combinations that are currently in use on standard plates are not allowed: for instance, if FAB-1000 is currently in use on a standard passenger plate, then FAB 1000 (with a space instead of a dash) and FAB1000 (without a dash or space) cannot be used. Offensive and questionable combinations are also not allowed, and some are permanently banned. Of 152,430 applications for vanity plates from 2010 to 2015, more than 5,000 were rejected.<ref>{{cite web |last=Eisenstadt |first=Marnie |date=March 25, 2015 |title=In New York, you can't have these 6,942 dirty vanity plates (search for banned licenses) |url=http://www.syracuse.com/news/index.ssf/2015/03/in_new_york_you_cant_have_these_6942_dirty_vanity_license_plates.html |publisher=Syracuse.com |access-date=September 22, 2016}}</ref>
+
+==County coding==
+New York never placed the full name of the county of registration explicitly on its standard-issue plates. Some states encode the [[United States license plate designs and serial formats#County of issuance|county of issuance]] into the selection of serial number, with varying degrees of subtlety. New York intentionally encoded county into the serial number from 1946 through 1986. One system was used from 1946 through 1973, and a second system was used from 1973 through 1986. County coding was also used on the first two formats of Liberty plates, 1986 to 1990. While mostly similar, the county coding on Liberty plates did have variations from the 1973-86 orange base (for example, JTA and JTB being used on Liberty plates in Chautauqua County).
+
+===1973 base: original allocation===
+On the 1973–86 orange base, plates were issued in letter blocks by [[list of counties in New York|county]], initially with phonetic combinations similar to the county's name or the names of communities, companies, or colleges/universities within the county.
+
+{|class="wikitable"
+!County
+!Letter blocks
+|-
+|[[Albany County, New York|Albany]]
+|AAA–ABM, ABO–ACB, ACD, ACF–ADK, ADN–AED, AJM, BSM, CEM, CPC, DFG, DFM, EJK, FGS, JAG, JGS, LEA, MAC, RJH, RJR, SPM, WJR
+|-
+|[[Allegany County, New York|Allegany]]
+|ALF–ALG, ALL–ALM, ALY, AND, ANG, ARI, BEL, BIS, BOL, CUB, FIL, HOU, HUM, NIL, SWA, WEL
+|-
+|[[Bronx County, New York|Bronx]]
+|BWB, BXA–BXZ, BZA–BZZ, CBE, FOR, HWB, JPS, LSG, MSV, NYU, SLG, VCP, XAA–XHZ, XJA–XJJ
+|-
+|[[Broome County, New York|Broome]]
+|BEY–BEZ, BNA–BNZ, BRB–BRC, BRF–BRG, BRI–BRK, BRM–BRU, BRW–BRZ, BTA–BTU, BTW–BTY, ECT, ENA–ENU, ENW–ENZ, IBM, JCI, JON, VES
+|-
+|[[Cattaraugus County, New York|Cattaraugus]]
+|AIR, ASP, BBS, BOV, CAC, CAF–CAH, CAK, CAM, CAO, CAQ, CAT–CAX, CCC, CCV, CGS, CTG, CVC, ELC, LTV, OLE, OLN, ROP, SLC, SLN
+|-
+|[[Cayuga County, New York|Cayuga]]
+|AUB, CAY, CGK–CGR, CGU–CGZ, CYA–CYG, CYI–CYS, CYU–CYX, CYZ
+|-
+|[[Chautauqua County, New York|Chautauqua]]
+|CCA–CCB, CCD–CCS, CCU, CCW–CCZ, CHA, CHC–CHD, CHJ–CHL, CHQ–CHR, CHU, CHW–CHZ, CXA–CXZ, JMT, MAY
+|-
+|[[Chemung County, New York|Chemung]]
+|CHE, CHM, CMA–CMO, CMQ–CMS, CMU–CMZ, EHG, ELA, ELD, ELF–ELH, ELJ–ELK, ELM, ELO–ELR, HHD, NBR
+|-
+|[[Chenango County, New York|Chenango]]
+|AFT, BBG, BER, CHG, CHN–CHO, EAR, JID, NBL, NRH, NWC, NWH–NWI, REM, SBN, SBR, TYN
+|-
+|[[Clinton County, New York|Clinton]]
+|AFB, CDV, CHP, CLI–CLJ, CLL–CLP, CMP, CUH, CZY, DAM, DJW, ELE, KDL, PLA–PLB, PLT, PRU, PTG, ROP, RPT
+|-
+|[[Columbia County, New York|Columbia]]
+|AUS, CAA, CHH, CLA–CLB, CLE–CLH, CLQ–CLS, CLU–CLW, COL, FFM, HLD, HUD, KDH, LFN, PLM, TSP, VLT
+|-
+|[[Cortland County, New York|Cortland]]
+|CLD, COR, CRA–CRF, CRH–CRL, CRQ–CRV, CRX–CRZ, CSU, GPS, HMR, MCG, MRT
+|-
+|[[Delaware County, New York|Delaware]]
+|DEL, DWA–DWL, DWN–DWX
+|-
+|[[Dutchess County, New York|Dutchess]]
+|BDV, BEA, DCA–DCG, DCI–DDR, DDT–DDZ, DHA–DHZ, DUB–DUZ, FHK, MIL, PAW, PGH, PGK, POK, POU, RHB, TIV
+|-
+|[[Erie County, New York|Erie]]
+|BBA–BBF, BBH–BBR, BBT–BBZ, BFA–BFZ, BQA–BQB, BUA–BYZ, CEA–CEL, CEN–CFR, CFT–CGA, DEP, EEA–EEY, EQA–ERN, ERP–ERZ, EUA–EWZ, EYA–EZZ, HMB, KEA–KEM, KEO–KEQ, KES–KET, KEW–KEZ
+|-
+|[[Essex County, New York|Essex]]
+|ELB, ELI, ELY, ESX, FTY, JAY, KEV, LPE, MIV, NHU, PHE, TYE, WIT
+|-
+|[[Franklin County, New York|Franklin]]
+|CHT, CLC, CRP, DBK, DJH, DUA, FRA, FRN, FTC, HAR, JJC, MAL, MLC, PSM, RRL, SRL, TUP, WAV, WDS
+|-
+|[[Fulton County, New York|Fulton]]
+|BDA, BRD, EKT, EPH, FLT, FUL, GLO, GLV, JOH, JST, KAT, MCO, MYF, NHB, PER, RWT, SAC, VMI, WPR
+|-
+|[[Genesee County, New York|Genesee]]
+|ALE, BAV, BTV, EIL, GNA–GNZ, LER, OAK
+|-
+|[[Greene County, New York|Greene]]
+|ATH, CAI, CGF, CKL, CTK, CTS, GRE, GRN, HNF, HTR, KAR, LED, PHM, PRV, TEM, TMC, WND
+|-
+|[[Hamilton County, New York|Hamilton]]
+|HAM, LPL
+|-
+|[[Herkimer County, New York|Herkimer]]
+|DGV, FFT, HRA–HRU, HRW–HRZ, LIT, MOH
+|-
+|[[Jefferson County, New York|Jefferson]]
+|ADM, ALX, AWP, BRV, CMT, CVI, CYT, DEX, HAL, HDS, JEA–JEY, PHL, SKH, TMB, WTO, WTR, WTT, WTW
+|-
+|[[Kings County, New York|Kings (Brooklyn)]]
+|BMT, DAR, GAP, JJG, KAA–KAG, KAI–KAQ, KAS, KAU–KDG, KDI–KDK, KDM–KDZ, KFA–KGR, KGU–KHR, KHT–KHZ, KIB–KIF, KIH–KIM, KIO–KNF, KNH–KNW, KNY–KNZ, KPA–KZK, KZM–KZZ, WKH
+|-
+|[[Lewis County, New York|Lewis]]
+|CGH, CRG, CTL, DMK, LEW, LOW, LWS, LYF, TUR
+|-
+|[[Livingston County, New York|Livingston]]
+|LVA–LVY
+|-
+|[[Madison County, New York|Madison]]
+|CAZ, CGT, CHF, CHI, CLK, CST, DYT, MAD, MDA–MDC, MDE–MDR, MRV, PTB, WMP
+|-
+|[[Monroe County, New York|Monroe]]
+|BDL, BPT, BSU, CGJ, DJB, EGY, FAI, GRC, GRI, HEN, HNR–HNT, MCA–MCC, MCE–MCF, MCH–MCN, MCP–MCU, MCW–MCZ, MJA–MJZ, MMA–MNE, MNG–MNS, MNU–MOG, MOI–MPA, MQA–MRS, MRU, MRW–MRZ, MUA–MVZ, PIT, PTF, RHA, RHC–RHZ, RMA–RMC, RME–RMR, RMT–RMZ, RPA–RPL, RQA–RQZ, SPP, WEB
+|-
+|[[Montgomery County, New York|Montgomery]]
+|AMD, AMS, AST, AUR, CAJ, CJH, FDA, FON, MTG, MTI–MTU, NJN, PGT, VPR, VWN
+|-
+|[[Nassau County, New York|Nassau]]
+|ADL, AMA, AOA, BHF, BMF, CWP, DGA–DGU, DGW–DGZ, DLC, DNA–DNL, DNN–DNZ, DQA–DRX, DRZ–DTZ, DWM, EJA, ERO, FPA–FPZ, FRB–FRM, FRO–FSZ, GCA–GCZ, HBF, HEM, HIA–HIZ, HMF, HOF, HPA–HPS, HPU–HPZ, JBA–JBZ, LBA–LBX, LBZ, LIA, LIC–LIR, LIU–LIZ, LYA–LYE, LYG–LYL, LYN–LYZ, MLA, MLD–MLK, MLM–MLZ, NAA–NAZ, NCA–NCK, NCM–NCQ, NCS–NCZ, NET, NHI, NNA–NPK, NPM, NPO–NPS, NPU–NPY, RSA–RSB, RSD–RSZ, RVA–RVZ, SRX–SSL, SSN–SSZ, TRI, VSA–VSZ, WBA–WBZ, WMF
+|-
+|[[New York County, New York|New York (Manhattan)]]
+|AYP, BJP, JPT, YSA–YZZ
+|-
+|[[Niagara County, New York|Niagara]]
+|LOA–LOV, LOX–LOZ, LPD, LWT, NFB–NFJ, NFL–NGZ, NIA–NIK, NIM–NIR, NIT–NIZ, NTA–NTU, NTW–NTZ, NWF, OFN, TIR, TNA–TNZ, TUS, YON, YOU
+|-
+|[[Oneida County, New York|Oneida]]
+|BON, CDE, DMF, GAB, NHF, NHT, NLP, NYM, ORF, RMS, RNY, ROA–RON, ROQ–ROZ, SYL, UHC, UKA–UKZ, UNY, UQA–UQB, UTA–UTZ, VRN, WML
+|-
+|[[Onondaga County, New York|Onondaga]]
+|BWT, CIC, DEW, ESY, FAB, FAY, FYV, JMV, JOR, KKV, LEM, LPO, MAN, MAT, NED, ONA–OND, ONF–ONS, ONU–ONZ, OVB–OVZ, POM, SFA–SFE, SFG–SFZ, SLY, SNK–SNZ, SPX, SPZ, SVA–SVM, SVO–SVZ, SWB–SWX, SWZ–SYK, SYM–SYZ, TUL
+|-
+|[[Ontario County, New York|Ontario]]
+|CAN, CNA–CNC, CNE, GEN, GVA–GVF, ONT, OTA–OTN
+|-
+|[[Orange County, New York|Orange]]
+|BLG, CHS, CNG–CNZ, CRW, CWL, DPK, GSN, HBG, HLF, KNX, MDT, MIA–MIC, MIE–MIJ, MIM–MIU, MIW–MIZ, MTA–MTB, MTD–MTE, MTH, MTX–MTZ, NBA–NBK, NBM–NBQ, NBS–NBZ, NEW, ORA–ORE, ORG–ORK, PJV, PTJ, TUX, WDY, WRK
+|-
+|[[Orleans County, New York|Orleans]]
+|ABN, HLY, LNV, MLL, ORL–ORZ, RGW, SLB, WPT
+|-
+|[[Oswego County, New York|Oswego]]
+|AMB, CSQ, CVD, FTO, FUT, HBL, LMG, MXO, OSA–OSB, OSD–OSZ, PLK, PSK, RCM, TEX, VER
+|-
+|[[Otsego County, New York|Otsego]]
+|CHV, CPS–CPT, CPW, DBL, DOU, FAM, FEN, JFC, ONE, OTP–OTZ, RIC, RIS
+|-
+|[[Putnam County, New York|Putnam]]
+|ACE, AOK, BAL, BCR, BHG, BRE, CAS, CFS, CRM, CRO, CTY, FMP, GAR, KEN, LAK, MAH, NEL, OSC, PAT, PCO, PHI, PTN, PTV–PUZ, VAL
+|-
+|[[Queens County, New York|Queens]]
+|JAA–JAF, JAH–JAJ, JFK, QAA–QBX, QBZ–QZZ
+|-
+|[[Rensselaer County, New York|Rensselaer]]
+|AVP, BRL, BYS, CPH, EGB, ESC, GSM, JRG, LES, PBP, POE, REA–REL, REN–RER, RET–REZ, RJE, RPI, TRJ–TRZ, WSL, WYS
+|-
+|[[Richmond County, New York|Richmond (Staten Island)]]
+|RAA–RAP, RAR–RBZ, RGA–RGV, RGX–RGZ, RLA–RLB, RLD–RLZ, RTA–RTC, RTE–RUA, TRA, TRC–TRH
+|-
+|[[Rockland County, New York|Rockland]]
+|CKT, HVS, NYA, PJC, PLR, RCA–RCL, RCN–RCQ, RCS–RCZ, RKA–RKZ, RNA–RNX, RNZ, RPO, RZA–RZZ, SFF, SPT, SPV, TJD, TPP, TZB
+|-
+|[[St. Lawrence County, New York|St. Lawrence]]
+|ASW, ATC, ATG, BIW, CTT, CLT, CNF, CTN, DEK, DJP, DNM, ELT, GOU, GRA, GUV, HVT, HWF, LIS, LSR, MAS, MTW, NDM, NFA, NFK, NRW, OGB, OGD, PAR, PDM, PTO, RAQ, RMD, ROO, RUS, SLA, SLS, SLU, SSM, SWY, WGT, WTP
+|-
+|[[Saratoga County, New York|Saratoga]]
+|BLL, BRH, BST, BUR, CTH, DMB, HDL, MCV, MHV, SAR, SGR–SGS, SGU–SGZ, SPA, SRA–SRK, SRM–SRV, TES, WLT
+|-
+|[[Schenectady County, New York|Schenectady]]
+|AEL, AGL, DBG, DLS, DMC, EAL, GEC, GLN, MAR, NIS, RDJ, RTD, SDA–SDO, SDQ–SDT, SDV–SDZ, SGA–SGD, SGF–SGQ, SNA–SNJ, WGB, WGY
+|-
+|[[Schoharie County, New York|Schoharie]]
+|SHA–SHM
+|-
+|[[Schuyler County, New York|Schuyler]]
+|HEC, KYU, MNF, MTF, SCH, SCR, TYR, WGK, WNE, WTK
+|-
+|[[Seneca County, New York|Seneca]]
+|SEB–SEW
+|-
+|[[Steuben County, New York|Steuben]]
+|STA–STZ, THA–THV
+|-
+|[[Suffolk County, New York|Suffolk]]
+|BAA–BAK, BAM–BAU, BAW–BAY, BOA, CAE, CAP, CBK–CBL, CGI, COA–COB, ESP, FIA–FIK, FIM–FIZ, FIL, GSA–GSL, GSO–GSX, GSZ, HUA–HUC, HUE–HUL, HUO–HUZ, LDA–LDZ, LEE, LHA–LHZ, LRA–LRZ, MHA–MHU, MHW–MHZ, MID, MLB, PCA, PCP–PCZ, PJA–PJB, PJD–PJU, PJW–PJZ, RFA–RFZ, RIA–RIB, RID–RIR, RIT–RIZ, RRA–RRK, RRM–RRZ, SAG, SAY, SBB–SBM, SBO–SBQ, SBS–SCG, SCI, SCK–SCQ, SCS–SCZ, SEA, SHO–SJZ, SMB–SMZ, SOA–SOZ, SQA–SQZ, SUA–SUJ, SUM–SUZ, SZA–SZZ, TPM
+|-
+|[[Sullivan County, New York|Sullivan]]
+|GRV, GSY, HRV, KIA, KZL, LBY, LCS, LIB, LLH, LTY, LYM, MGP, MNT, MTC, RSC, SLV–SLX, SUL, SVN, TMR, WDB, WSS, WTB
+|-
+|[[Tioga County, New York|Tioga]]
+|APL, BKS, CND, NCL, NKV, OWE, SPN, TIA–TIO, WVL
+|-
+|[[Tompkins County, New York|Tompkins]]
+|CRN, CYH, DRY, ETN, ITH, MDD, TAU, TOA–TOX, TRB
+|-
+|[[Ulster County, New York|Ulster]]
+|ACC, ATW, CUL, ELL, ELN, ELV, ENV, HGH, KER, KGS–KGT, KHS, KIG, KIN, LKT, NEP, NPL, NPN, NPT, NPZ, PHO, SDK, SGT, ULA–ULZ, UST
+|-
+|[[Warren County, New York|Warren]]
+|BLT, CTW, DPT, FWH, GLE–GLF, GOR, LGE, LUZ, NCR, PRS, QBY, SDP, SKI, WRA–WRJ, WRN
+|-
+|[[Washington County, New York|Washington]]
+|ARG, BKK, CBR, CSK, DLT, EDW, FTA, FTE, GIM, GPH, GVL, GWH, HCK, HCM, HFA, HFD, HFL, HPT, WHH, WSA–WSK
+|-
+|[[Wayne County, New York|Wayne]]
+|ALT, CHB, CLY, LYO, NWK, PAL, PLY, PMY, RCR, SAV, SDU, WAA–WAQ, WAS–WAU, WAX–WAZ, WIL, WOL, WYN
+|-
+|[[Westchester County, New York|Westchester]]
+|AOH, ARM, DOB, HAW, HJD, HOH, JMG, KAH, MAM, MKS, MTV, NER, NRA–NRG, NRI–NRV, NRX, NRZ, PKA–PKZ, PLE, RYA–RYZ, TAA–TAT, TAV–TAZ, TUC, VVA–VVZ, WCA–WDA, WDC–WDR, WDT–WDX, WEA, WEC–WEK, WEM–WEZ, WHA–WHG, WHI–WHZ, WPA–WPQ, WPS, WPU–WPZ, WTA, WTC–WTJ, WTL–WTN, WTQ, WTS, WTU–WTV, WTX–WTZ, YKA–YKZ, YOA–YOM, YOO–YOT, YOV–YOZ, YQA–YQK, YRA–YRZ
+|-
+|[[Wyoming County, New York|Wyoming]]
+|ARC, ATT, LET, VAR, WAR, WYA–WYM, WYO–WYQ
+|-
+|[[Yates County, New York|Yates]]
+|YCA–YCJ
+|}
+
+'''Alphabetical cross-reference'''
+
+{|class="wikitable"
+!Letter blocks
+!County
+!rowspan=205|&nbsp;&nbsp;&nbsp;
+!Letter blocks
+!County
+!rowspan=205|&nbsp;&nbsp;&nbsp;
+!Letter blocks
+!County
+!rowspan=205|&nbsp;&nbsp;&nbsp;
+!Letter blocks
+!County
+!rowspan=204|&nbsp;&nbsp;&nbsp;
+!Letter blocks
+!County
+|-
+|AAA–ABM
+|Albany
+|CRM
+|Putnam
+|HGH
+|Ulster
+|MTW
+|St. Lawrence
+|SAY
+|Suffolk
+|-
+|ABN
+|Orleans
+|CRN
+|Tompkins
+|HHD
+|Chemung
+|MTX–MTZ
+|Orange
+|SBB–SBM
+|Suffolk
+|-
+|ABO–ACB
+|Albany
+|CRO
+|Putnam
+|HIA–HIZ
+|Nassau
+|MUA–MVZ
+|Monroe
+|SBN
+|Chenango
+|-
+|ACC
+|Ulster
+|CRP
+|Franklin
+|HJD
+|Westchester
+|MXO
+|Oswego
+|SBO–SBQ
+|Suffolk
+|-
+|ACD
+|Albany
+|CRQ–CRV
+|Cortland
+|HLD
+|Columbia
+|MYF
+|Fulton
+|SBR
+|Chenango
+|-
+|ACE
+|Putnam
+|CRW
+|Orange
+|HLF
+|Orange
+|NAA–NAZ
+|Nassau
+|SBS–SCG
+|Suffolk
+|-
+|ACF–ADK
+|Albany
+|CRX–CRZ
+|Cortland
+|HLY
+|Orleans
+|NBA–NBK
+|Orange
+|SCH
+|Schuyler
+|-
+|ADL
+|Nassau
+|CSK
+|Washington
+|HMB
+|Erie
+|NBL
+|Chenango
+|SCI
+|Suffolk
+|-
+|ADM
+|Jefferson
+|CSQ
+|Oswego
+|HMF
+|Nassau
+|NBM–NBQ
+|Orange
+|SCK–SCQ
+|Suffolk
+|-
+|ADN–AED
+|Albany
+|CST
+|Madison
+|HMR
+|Cortland
+|NBR
+|Chemung
+|SCR
+|Schuyler
+|-
+|AEL
+|Schenectady
+|CSU
+|Cortland
+|HNF
+|Greene
+|NBS–NBZ
+|Orange
+|SCS–SCZ
+|Suffolk
+|-
+|AFB
+|Clinton
+|CTG
+|Cattaraugus
+|HNR–HNT
+|Monroe
+|NCA–NCK
+|Nassau
+|SDA–SDO
+|Schenectady
+|-
+|AFT
+|Chenango
+|CTH
+|Saratoga
+|HOF
+|Nassau
+|NCL
+|Tioga
+|SDK
+|Ulster
+|-
+|AGL
+|Schenectady
+|CTK
+|Greene
+|HOH
+|Westchester
+|NCM–NCQ
+|Nassau
+|SDP
+|Warren
+|-
+|AIR
+|Cattaraugus
+|CTL
+|Lewis
+|HOU
+|Allegany
+|NCR
+|Warren
+|SDQ–SDT
+|Schenectady
+|-
+|AJM
+|Albany
+|CTN
+|St. Lawrence
+|HPA–HPS
+|Nassau
+|NCS–NCZ
+|Nassau
+|SDU
+|Wayne
+|-
+|ALE
+|Genesee
+|CTS
+|Greene
+|HPT
+|Washington
+|NDM
+|St. Lawrence
+|SDV–SDZ
+|Schenectady
+|-
+|ALF–ALG
+|Allegany
+|CTT
+|St. Lawrence
+|HPU–HPZ
+|Nassau
+|NED
+|Onondaga
+|SEA
+|Suffolk
+|-
+|ALL–ALM
+|Allegany
+|CTW
+|Warren
+|HRA–HRU
+|Herkimer
+|NEL
+|Putnam
+|SEB–SEW
+|Seneca
+|-
+|ALT
+|Wayne
+|CTY
+|Putnam
+|HRV
+|Sullivan
+|NEP
+|Ulster
+|SFA–SFE
+|Onondaga
+|-
+|ALX
+|Jefferson
+|CUB
+|Allegany
+|HRW–HRZ
+|Herkimer
+|NER
+|Westchester
+|SFF
+|Rockland
+|-
+|ALY
+|Allegany
+|CUH
+|Clinton
+|HTR
+|Greene
+|NET
+|Nassau
+|SFG–SFZ
+|Onondaga
+|-
+|AMA
+|Nassau
+|CUL
+|Ulster
+|HUA–HUC
+|Suffolk
+|NEW
+|Orange
+|SGA–SGD
+|Schenectady
+|-
+|AMB
+|Oswego
+|CVC
+|Cattaraugus
+|HUD
+|Columbia
+|NFA
+|St. Lawrence
+|SGF–SGQ
+|Schenectady
+|-
+|AMD
+|Montgomery
+|CVD
+|Oswego
+|HUE–HUL
+|Suffolk
+|NFB–NFJ
+|Niagara
+|SGR–SGS
+|Saratoga
+|-
+|AMS
+|Montgomery
+|CVI
+|Jefferson
+|HUM
+|Allegany
+|NFK
+|St. Lawrence
+|SGT
+|Ulster
+|-
+|AND
+|Allegany
+|CWL
+|Orange
+|HUO–HUZ
+|Suffolk
+|NFL–NGZ
+|Niagara
+|SGU–SGZ
+|Saratoga
+|-
+|ANG
+|Allegany
+|CWP
+|Nassau
+|HVS
+|Rockland
+|NHB
+|Fulton
+|SHA–SHM
+|Schoharie
+|-
+|AOA
+|Nassau
+|CXA–CXZ
+|Chautauqua
+|HVT
+|St. Lawrence
+|NHF
+|Oneida
+|SHO–SJZ
+|Suffolk
+|-
+|AOH
+|Westchester
+|CYA–CYG
+|Cayuga
+|HWB
+|Bronx
+|NHI
+|Nassau
+|SKH
+|Jefferson
+|-
+|AOK
+|Putnam
+|CYH
+|Tompkins
+|HWF
+|St. Lawrence
+|NHT
+|Oneida
+|SKI
+|Warren
+|-
+|APL
+|Tioga
+|CYI–CYS
+|Cayuga
+|IBM
+|Broome
+|NHU
+|Essex
+|SLA
+|St. Lawrence
+|-
+|ARC
+|Wyoming
+|CYT
+|Jefferson
+|ITH
+|Tompkins
+|NIA–NIK
+|Niagara
+|SLB
+|Orleans
+|-
+|ARG
+|Washington
+|CYU–CYX
+|Cayuga
+|JAA–JAF
+|Queens
+|NIL
+|Allegany
+|SLC
+|Cattaraugus
+|-
+|ARI
+|Allegany
+|CYZ
+|Cayuga
+|JAG
+|Albany
+|NIM–NIR
+|Niagara
+|SLG
+|Bronx
+|-
+|ARM
+|Westchester
+|CZY
+|Clinton
+|JAH–JAJ
+|Queens
+|NIS
+|Schenectady
+|SLN
+|Cattaraugus
+|-
+|ASP
+|Cattaraugus
+|DAM
+|Clinton
+|JAY
+|Essex
+|NIT–NIZ
+|Niagara
+|SLS
+|St. Lawrence
+|-
+|AST
+|Montgomery
+|DAR
+|Kings
+|JBA–JBZ
+|Nassau
+|NJN
+|Montgomery
+|SLU
+|St. Lawrence
+|-
+|ASW
+|St. Lawrence
+|DBG
+|Schenectady
+|JCI
+|Broome
+|NKV
+|Tioga
+|SLV–SLX
+|Sullivan
+|-
+|ATC
+|St. Lawrence
+|DBK
+|Franklin
+|JEA–JEY
+|Jefferson
+|NLP
+|Oneida
+|SLY
+|Onondaga
+|-
+|ATG
+|St. Lawrence
+|DBL
+|Otsego
+|JFC
+|Otsego
+|NNA–NPK
+|Nassau
+|SMB–SMZ
+|Suffolk
+|-
+|ATH
+|Greene
+|DCA–DCG
+|Dutchess
+|JFK
+|Queens
+|NPL
+|Ulster
+|SNA–SNJ
+|Schenectady
+|-
+|ATT
+|Wyoming
+|DCI–DDR
+|Dutchess
+|JGS
+|Albany
+|NPM
+|Nassau
+|SNK–SNZ
+|Onondaga
+|-
+|ATW
+|Ulster
+|DDT–DDZ
+|Dutchess
+|JID
+|Chenango
+|NPN
+|Ulster
+|SOA–SOZ
+|Suffolk
+|-
+|AUB
+|Cayuga
+|DEK
+|St. Lawrence
+|JJC
+|Franklin
+|NPO–NPS
+|Nassau
+|SPA
+|Saratoga
+|-
+|AUR
+|Montgomery
+|DEL
+|Delaware
+|JJG
+|Kings
+|NPT
+|Ulster
+|SPM
+|Albany
+|-
+|AUS
+|Columbia
+|DEP
+|Erie
+|JMG
+|Westchester
+|NPU–NPY
+|Nassau
+|SPN
+|Tioga
+|-
+|AVP
+|Rensselaer
+|DEW
+|Onondaga
+|JMT
+|Chautauqua
+|NPZ
+|Ulster
+|SPP
+|Monroe
+|-
+|AWP
+|Jefferson
+|DEX
+|Jefferson
+|JMV
+|Onondaga
+|NRA–NRG
+|Westchester
+|SPT
+|Rockland
+|-
+|AYP
+|New York
+|DFG
+|Albany
+|JOH
+|Fulton
+|NRH
+|Chenango
+|SPV
+|Rockland
+|-
+|BAA–BAK
+|Suffolk
+|DFM
+|Albany
+|JON
+|Broome
+|NRI–NRV
+|Westchester
+|SPX
+|Onondaga
+|-
+|BAL
+|Putnam
+|DGA–DGU
+|Nassau
+|JOR
+|Onondaga
+|NRW
+|St. Lawrence
+|SPZ
+|Onondaga
+|-
+|BAM–BAU
+|Suffolk
+|DGV
+|Herkimer
+|JPS
+|Bronx
+|NRX
+|Westchester
+|SQA–SQZ
+|Suffolk
+|-
+|BAV
+|Genesee
+|DGW–DGZ
+|Nassau
+|JPT
+|New York
+|NRZ
+|Westchester
+|SRA–SRK
+|Saratoga
+|-
+|BAW–BAY
+|Suffolk
+|DHA–DHZ
+|Dutchess
+|JRG
+|Rensselaer
+|NTA–NTU
+|Niagara
+|SRL
+|Franklin
+|-
+|BBA–BBF
+|Erie
+|DJB
+|Monroe
+|JST
+|Fulton
+|NTW–NTZ
+|Niagara
+|SRM–SRV
+|Saratoga
+|-
+|BBG
+|Chenango
+|DJH
+|Franklin
+|KAA–KAG
+|Kings
+|NWC
+|Chenango
+|SRX–SSL
+|Nassau
+|-
+|BBH–BBR
+|Erie
+|DJP
+|St. Lawrence
+|KAH
+|Westchester
+|NWF
+|Niagara
+|SSM
+|St. Lawrence
+|-
+|BBS
+|Cattaraugus
+|DJW
+|Clinton
+|KAI–KAQ
+|Kings
+|NWH–NWI
+|Chenango
+|SSN–SSZ
+|Nassau
+|-
+|BBT–BBZ
+|Erie
+|DLC
+|Nassau
+|KAR
+|Greene
+|NWK
+|Wayne
+|STA–STZ
+|Steuben
+|-
+|BCR
+|Putnam
+|DLS
+|Schenectady
+|KAS
+|Kings
+|NYA
+|Rockland
+|SUA–SUJ
+|Suffolk
+|-
+|BDA
+|Fulton
+|DLT
+|Washington
+|KAT
+|Fulton
+|NYM
+|Oneida
+|SUL
+|Sullivan
+|-
+|BDL
+|Monroe
+|DMB
+|Saratoga
+|KAU–KDG
+|Kings
+|NYU
+|Bronx
+|SUM–SUZ
+|Suffolk
+|-
+|BDV
+|Dutchess
+|DMC
+|Schenectady
+|KDH
+|Columbia
+|OAK
+|Genesee
+|SVA–SVM
+|Onondaga
+|-
+|BEA
+|Dutchess
+|DMF
+|Oneida
+|KDI–KDK
+|Kings
+|OFN
+|Niagara
+|SVN
+|Sullivan
+|-
+|BEL
+|Allegany
+|DMK
+|Lewis
+|KDL
+|Clinton
+|OGB
+|St. Lawrence
+|SVO–SVZ
+|Onondaga
+|-
+|BER
+|Chenango
+|DNA–DNL
+|Nassau
+|KDM–KDZ
+|Kings
+|OGD
+|St. Lawrence
+|SWA
+|Allegany
+|-
+|BEY–BEZ
+|Broome
+|DNM
+|St. Lawrence
+|KEA–KEM
+|Erie
+|OLE
+|Cattaraugus
+|SWB–SWX
+|Onondaga
+|-
+|BFA–BFZ
+|Erie
+|DNN–DNZ
+|Nassau
+|KEN
+|Putnam
+|OLN
+|Cattaraugus
+|SWY
+|St. Lawrence
+|-
+|BHF
+|Nassau
+|DOB
+|Westchester
+|KEO–KEQ
+|Erie
+|ONA–OND
+|Onondaga
+|SWZ–SYK
+|Onondaga
+|-
+|BHG
+|Putnam
+|DOU
+|Otsego
+|KER
+|Ulster
+|ONE
+|Otsego
+|SYL
+|Oneida
+|-
+|BIS
+|Allegany
+|DPK
+|Orange
+|KES–KET
+|Erie
+|ONF–ONS
+|Onondaga
+|SYM–SYZ
+|Onondaga
+|-
+|BIW
+|St. Lawrence
+|DPT
+|Warren
+|KEV
+|Essex
+|ONT
+|Ontario
+|SZA–SZZ
+|Suffolk
+|-
+|BJP
+|New York
+|DQA–DRX
+|Nassau
+|KEW–KEZ
+|Erie
+|ONU–ONZ
+|Onondaga
+|TAA–TAT
+|Westchester
+|-
+|BKK
+|Washington
+|DRY
+|Tompkins
+|KFA–KGR
+|Kings
+|ORA–ORE
+|Orange
+|TAU
+|Tompkins
+|-
+|BKS
+|Tioga
+|DRZ–DTZ
+|Nassau
+|KGS–KGT
+|Ulster
+|ORF
+|Oneida
+|TAV–TAZ
+|Westchester
+|-
+|BLG
+|Orange
+|DUA
+|Franklin
+|KGU–KHR
+|Kings
+|ORG–ORK
+|Orange
+|TEM
+|Greene
+|-
+|BLL
+|Saratoga
+|DUB–DUZ
+|Dutchess
+|KHS
+|Ulster
+|ORL–ORZ
+|Orleans
+|TES
+|Saratoga
+|-
+|BLT
+|Warren
+|DWA–DWL
+|Delaware
+|KHT–KHZ
+|Kings
+|OSA–OSB
+|Oswego
+|TEX
+|Oswego
+|-
+|BMF
+|Nassau
+|DWM
+|Nassau
+|KIA
+|Sullivan
+|OSC
+|Putnam
+|THA–THV
+|Steuben
+|-
+|BMT
+|Kings
+|DWN–DWX
+|Delaware
+|KIB–KIF
+|Kings
+|OSD–OSZ
+|Oswego
+|TIA–TIO
+|Tioga
+|-
+|BNA–BNZ
+|Broome
+|DYT
+|Madison
+|KIG
+|Ulster
+|OTA–OTN
+|Ontario
+|TIR
+|Niagara
+|-
+|BOA
+|Suffolk
+|EAL
+|Schenectady
+|KIH–KIM
+|Kings
+|OTP–OTZ
+|Otsego
+|TIV
+|Dutchess
+|-
+|BOL
+|Allegany
+|EAR
+|Chenango
+|KIN
+|Ulster
+|OVB–OVZ
+|Onondaga
+|TJD
+|Rockland
+|-
+|BON
+|Oneida
+|ECT
+|Broome
+|KIO–KNF
+|Kings
+|OWE
+|Tioga
+|TMB
+|Jefferson
+|-
+|BOV
+|Cattaraugus
+|EDW
+|Washington
+|KKV
+|Onondaga
+|PAL
+|Wayne
+|TMC
+|Greene
+|-
+|BPT
+|Monroe
+|EEA–EEY
+|Erie
+|KNH–KNW
+|Kings
+|PAR
+|St. Lawrence
+|TMR
+|Sullivan
+|-
+|BQA–BQB
+|Erie
+|EGB
+|Rensselaer
+|KNX
+|Orange
+|PAT
+|Putnam
+|TNA–TNZ
+|Niagara
+|-
+|BRB–BRC
+|Broome
+|EGY
+|Monroe
+|KNY–KNZ
+|Kings
+|PAW
+|Dutchess
+|TOA–TOX
+|Tompkins
+|-
+|BRD
+|Fulton
+|EHG
+|Chemung
+|KPA–KZK
+|Kings
+|PBP
+|Rensselaer
+|TPM
+|Suffolk
+|-
+|BRE
+|Putnam
+|EIL
+|Genesee
+|KYU <sup>'''a'''</sup>
+|Schuyler
+|PCA
+|Suffolk
+|TPP
+|Rockland
+|-
+|BRF–BRG
+|Broome
+|EJA
+|Nassau
+|KZL
+|Sullivan
+|PCO
+|Putnam
+|TRA
+|Richmond
+|-
+|BRH
+|Saratoga
+|EJK
+|Albany
+|KZM–KZZ
+|Kings
+|PCP–PCZ
+|Suffolk
+|TRB
+|Tompkins
+|-
+|BRI–BRK
+|Broome
+|EKT
+|Fulton
+|LAK
+|Putnam
+|PDM
+|St. Lawrence
+|TRC–TRH
+|Richmond
+|-
+|BRL
+|Rensselaer
+|ELA
+|Chemung
+|LBA–LBX
+|Nassau
+|PER
+|Fulton
+|TRI
+|Nassau
+|-
+|BRM–BRU
+|Broome
+|ELB
+|Essex
+|LBY
+|Sullivan
+|PGH
+|Dutchess
+|TRJ–TRZ
+|Rensselaer
+|-
+|BRV
+|Jefferson
+|ELC
+|Cattaraugus
+|LBZ
+|Nassau
+|PGK
+|Dutchess
+|TSP
+|Columbia
+|-
+|BRW–BRZ
+|Broome
+|ELD
+|Chemung
+|LCS
+|Sullivan
+|PGT
+|Montgomery
+|TUC
+|Westchester
+|-
+|BSM
+|Albany
+|ELE
+|Clinton
+|LDA–LDZ
+|Suffolk
+|PHE
+|Essex
+|TUL
+|Onondaga
+|-
+|BST
+|Saratoga
+|ELF–ELH
+|Chemung
+|LEA
+|Albany
+|PHI
+|Putnam
+|TUP
+|Franklin
+|-
+|BSU
+|Monroe
+|ELI
+|Essex
+|LED
+|Greene
+|PHL
+|Jefferson
+|TUR
+|Lewis
+|-
+|BTA–BTU
+|Broome
+|ELJ–ELK
+|Chemung
+|LEE
+|Suffolk
+|PHM
+|Greene
+|TUS
+|Niagara
+|-
+|BTV
+|Genesee
+|ELL
+|Ulster
+|LEM
+|Onondaga
+|PHO
+|Ulster
+|TUX
+|Orange
+|-
+|BTW–BTY
+|Broome
+|ELM
+|Chemung
+|LER
+|Genesee
+|PIT
+|Monroe
+|TYE
+|Essex
+|-
+|BUA–BYZ
+|Erie
+|ELN
+|Ulster
+|LES
+|Rensselaer
+|PJA–PJB
+|Suffolk
+|TYN
+|Chenango
+|-
+|BUR
+|Saratoga
+|ELO–ELR
+|Chemung
+|LET
+|Wyoming
+|PJC
+|Rockland
+|TYR
+|Schuyler
+|-
+|BWB
+|Bronx
+|ELT
+|St. Lawrence
+|LEW
+|Lewis
+|PJD–PJU
+|Suffolk
+|TZB
+|Rockland
+|-
+|BWT
+|Onondaga
+|ELV
+|Ulster
+|LFN
+|Columbia
+|PJV
+|Orange
+|UHC
+|Oneida
+|-
+|BXA–BXZ
+|Bronx
+|ELY
+|Essex
+|LGE
+|Warren
+|PJW–PJZ
+|Suffolk
+|UKA–UKZ
+|Oneida
+|-
+|BYS
+|Rensselaer
+|ENA–ENU
+|Broome
+|LHA–LHZ
+|Suffolk
+|PKA–PKZ
+|Westchester
+|ULA–ULZ
+|Ulster
+|-
+|BZA–BZZ
+|Bronx
+|ENV
+|Ulster
+|LIA
+|Nassau
+|PLA–PLB
+|Clinton
+|UNY
+|Oneida
+|-
+|CAA
+|Columbia
+|ENW–ENZ
+|Broome
+|LIB
+|Sullivan
+|PLE
+|Westchester
+|UQA–UQB
+|Oneida
+|-
+|CAC
+|Cattaraugus
+|EPH
+|Fulton
+|LIC–LIR
+|Nassau
+|PLK
+|Oswego
+|UST
+|Ulster
+|-
+|CAE
+|Suffolk
+|EQA–ERN
+|Erie
+|LIS
+|St. Lawrence
+|PLM
+|Columbia
+|UTA–UTZ
+|Oneida
+|-
+|CAF–CAH
+|Cattaraugus
+|ERO
+|Nassau
+|LIT
+|Herkimer
+|PLR
+|Rockland
+|VAL
+|Putnam
+|-
+|CAI
+|Greene
+|ERP–ERZ
+|Erie
+|LIU–LIZ
+|Nassau
+|PLT
+|Clinton
+|VAR
+|Wyoming
+|-
+|CAJ
+|Montgomery
+|ESC
+|Rensselaer
+|LKT
+|Ulster
+|PLY
+|Wayne
+|VCP
+|Bronx
+|-
+|CAK
+|Cattaraugus
+|ESP
+|Suffolk
+|LLH
+|Sullivan
+|PMY
+|Wayne
+|VER
+|Oswego
+|-
+|CAM
+|Cattaraugus
+|ESX
+|Essex
+|LMG
+|Oswego
+|POE
+|Rensselaer
+|VES
+|Broome
+|-
+|CAN
+|Ontario
+|ESY
+|Onondaga
+|LNV
+|Orleans
+|POK
+|Dutchess
+|VLT
+|Columbia
+|-
+|CAO
+|Cattaraugus
+|ETN
+|Tompkins
+|LOA–LOV
+|Niagara
+|POM
+|Onondaga
+|VMI
+|Fulton
+|-
+|CAP
+|Suffolk
+|EUA–EWZ
+|Erie
+|LOW
+|Lewis
+|POU
+|Dutchess
+|VPR
+|Montgomery
+|-
+|CAQ
+|Cattaraugus
+|EYA–EZZ
+|Erie
+|LOX–LOZ
+|Niagara
+|PRS
+|Warren
+|VRN
+|Oneida
+|-
+|CAS
+|Putnam
+|FAB
+|Onondaga
+|LPD
+|Niagara
+|PRU
+|Clinton
+|VSA–VSZ
+|Nassau
+|-
+|CAT–CAX
+|Cattaraugus
+|FAI
+|Monroe
+|LPE
+|Essex
+|PRV
+|Greene
+|VVA–VVZ
+|Westchester
+|-
+|CAY
+|Cayuga
+|FAM
+|Otsego
+|LPL
+|Hamilton
+|PSK
+|Oswego
+|VWN
+|Montgomery
+|-
+|CAZ
+|Madison
+|FAY
+|Onondaga
+|LPO
+|Onondaga
+|PSM
+|Franklin
+|WAA–WAQ
+|Wayne
+|-
+|CBE
+|Bronx
+|FDA
+|Montgomery
+|LRA–LRZ
+|Suffolk
+|PTB
+|Madison
+|WAR
+|Wyoming
+|-
+|CBK–CBL
+|Suffolk
+|FEN
+|Otsego
+|LSG
+|Bronx
+|PTF
+|Monroe
+|WAS–WAU
+|Wayne
+|-
+|CBR
+|Washington
+|FFM
+|Columbia
+|LSR
+|St. Lawrence
+|PTG
+|Clinton
+|WAV
+|Franklin
+|-
+|CCA–CCB
+|Chautauqua
+|FFT
+|Herkimer
+|LTV
+|Cattaraugus
+|PTJ
+|Orange
+|WAX–WAZ
+|Wayne
+|-
+|CCC
+|Cattaraugus
+|FGS
+|Albany
+|LTY
+|Sullivan
+|PTN
+|Putnam
+|WBA–WBZ
+|Nassau
+|-
+|CCD–CCS
+|Chautauqua
+|FHK
+|Dutchess
+|LUZ
+|Warren
+|PTO
+|St. Lawrence
+|WCA–WDA
+|Westchester
+|-
+|CCU
+|Chautauqua
+|FIA–FIK
+|Suffolk
+|LVA–LVY
+|Livingston
+|PTV–PUZ
+|Putnam
+|WDB
+|Sullivan
+|-
+|CCV
+|Cattaraugus
+|FIL <sup>'''a'''</sup>
+|Allegany
+|LWS
+|Lewis
+|QAA–QBX
+|Queens
+|WDC–WDR
+|Westchester
+|-
+|CCW–CCZ
+|Chautauqua
+|FIL <sup>'''a'''</sup>
+|Suffolk
+|LWT
+|Niagara
+|QBY
+|Warren
+|WDS
+|Franklin
+|-
+|CDE
+|Oneida
+|FIM–FIZ
+|Suffolk
+|LYA–LYE
+|Nassau
+|QBZ–QZZ
+|Queens
+|WDT–WDX
+|Westchester
+|-
+|CDV
+|Clinton
+|FLT
+|Fulton
+|LYF
+|Lewis
+|RAA–RAP
+|Richmond
+|WDY
+|Orange
+|-
+|CEA–CEL
+|Erie
+|FMP
+|Putnam
+|LYG–LYL
+|Nassau
+|RAQ
+|St. Lawrence
+|WEA
+|Westchester
+|-
+|CEM
+|Albany
+|FON
+|Montgomery
+|LYM
+|Sullivan
+|RAR–RBZ
+|Richmond
+|WEB
+|Monroe
+|-
+|CEN–CFR
+|Erie
+|FOR
+|Bronx
+|LYN–LYZ
+|Nassau
+|RCA–RCL
+|Rockland
+|WEC–WEK
+|Westchester
+|-
+|CFS
+|Putnam
+|FPA–FPZ
+|Nassau
+|LYO <sup>'''a'''</sup>
+|Wayne
+|RCM
+|Oswego
+|WEL
+|Allegany
+|-
+|CFT–CGA
+|Erie
+|FRA
+|Franklin
+|MAC
+|Albany
+|RCN–RCQ
+|Rockland
+|WEM–WEZ
+|Westchester
+|-
+|CGF
+|Greene
+|FRB–FRM
+|Nassau
+|MAD
+|Madison
+|RCR
+|Wayne
+|WGB
+|Schenectady
+|-
+|CGH
+|Lewis
+|FRN
+|Franklin
+|MAH
+|Putnam
+|RCS–RCZ
+|Rockland
+|WGK
+|Schuyler
+|-
+|CGI
+|Suffolk
+|FRO–FSZ
+|Nassau
+|MAL
+|Franklin
+|RDJ
+|Schenectady
+|WGT
+|St. Lawrence
+|-
+|CGJ
+|Monroe
+|FTA
+|Washington
+|MAM
+|Westchester
+|REA–REL
+|Rensselaer
+|WGY
+|Schenectady
+|-
+|CGK–CGR
+|Cayuga
+|FTC
+|Franklin
+|MAN
+|Onondaga
+|REM
+|Chenango
+|WHA–WHG
+|Westchester
+|-
+|CGS
+|Cattaraugus
+|FTE
+|Washington
+|MAR
+|Schenectady
+|REN–RER
+|Rensselaer
+|WHH
+|Washington
+|-
+|CGT
+|Madison
+|FTO
+|Oswego
+|MAS
+|St. Lawrence
+|RET–REZ
+|Rensselaer
+|WHI–WHZ
+|Westchester
+|-
+|CGU–CGZ
+|Cayuga
+|FTY
+|Essex
+|MAT
+|Onondaga
+|RFA–RFZ
+|Suffolk
+|WIL
+|Wayne
+|-
+|CHA
+|Chautauqua
+|FUL
+|Fulton
+|MAY
+|Chautauqua
+|RGA–RGV
+|Richmond
+|WIT
+|Essex
+|-
+|CHB
+|Wayne
+|FUT
+|Oswego
+|MCA–MCC
+|Monroe
+|RGW
+|Orleans
+|WJR
+|Albany
+|-
+|CHC–CHD
+|Chautauqua
+|FWH
+|Warren
+|MCE–MCF
+|Monroe
+|RGX–RGZ
+|Richmond
+|WKH
+|Kings
+|-
+|CHE
+|Chemung
+|FYV
+|Onondaga
+|MCG
+|Cortland
+|RHA
+|Monroe
+|WLT
+|Saratoga
+|-
+|CHF
+|Madison
+|GAB
+|Oneida
+|MCH–MCN
+|Monroe
+|RHB
+|Dutchess
+|WMF
+|Nassau
+|-
+|CHG
+|Chenango
+|GAP
+|Kings
+|MCO
+|Fulton
+|RHC–RHZ
+|Monroe
+|WML
+|Oneida
+|-
+|CHH
+|Columbia
+|GAR
+|Putnam
+|MCP–MCU
+|Monroe
+|RIA–RIB
+|Suffolk
+|WMP
+|Madison
+|-
+|CHI
+|Madison
+|GCA–GCZ
+|Nassau
+|MCV
+|Saratoga
+|RIC
+|Otsego
+|WND
+|Greene
+|-
+|CHJ–CHL
+|Chautauqua
+|GEC
+|Schenectady
+|MCW–MCZ
+|Monroe
+|RID–RIR
+|Suffolk
+|WNE
+|Schuyler
+|-
+|CHM
+|Chemung
+|GEN
+|Ontario
+|MDA–MDC
+|Madison
+|RIS
+|Otsego
+|WOL
+|Wayne
+|-
+|CHN–CHO
+|Chenango
+|GIM
+|Washington
+|MDD
+|Tompkins
+|RIT–RIZ
+|Suffolk
+|WPA–WPQ
+|Westchester
+|-
+|CHP
+|Clinton
+|GLE–GLF
+|Warren
+|MDE–MDR
+|Madison
+|RJE
+|Rensselaer
+|WPR
+|Fulton
+|-
+|CHQ–CHR
+|Chautauqua
+|GLN
+|Schenectady
+|MDT
+|Orange
+|RJH
+|Albany
+|WPS
+|Westchester
+|-
+|CHS
+|Orange
+|GLO
+|Fulton
+|MGP
+|Sullivan
+|RJR
+|Albany
+|WPT
+|Orleans
+|-
+|CHT
+|Franklin
+|GLV
+|Fulton
+|MHA–MHU
+|Suffolk
+|RKA–RKZ
+|Rockland
+|WPU–WPZ
+|Westchester
+|-
+|CHU
+|Chautauqua
+|GNA–GNZ
+|Genesee
+|MHV
+|Saratoga
+|RLA–RLB
+|Richmond
+|WRA–WRJ
+|Warren
+|-
+|CHV
+|Otsego
+|GOR
+|Warren
+|MHW–MHZ
+|Suffolk
+|RLD–RLZ
+|Richmond
+|WRK
+|Orange
+|-
+|CHW–CHZ
+|Chautauqua
+|GOU
+|St. Lawrence
+|MIA–MIC
+|Orange
+|RMA–RMC
+|Monroe
+|WRN
+|Warren
+|-
+|CIC
+|Onondaga
+|GPH
+|Washington
+|MID
+|Suffolk
+|RMD
+|St. Lawrence
+|WSA–WSK
+|Washington
+|-
+|CJH
+|Montgomery
+|GPS
+|Cortland
+|MIE–MIJ
+|Orange
+|RME–RMR
+|Monroe
+|WSL
+|Rensselaer
+|-
+|CKL
+|Greene
+|GRA
+|St. Lawrence
+|MIL
+|Dutchess
+|RMS
+|Oneida
+|WSS
+|Sullivan
+|-
+|CKT
+|Rockland
+|GRC
+|Monroe
+|MIM–MIU
+|Orange
+|RMT–RMZ
+|Monroe
+|WTA
+|Westchester
+|-
+|CLA–CLB
+|Columbia
+|GRE
+|Greene
+|MIV
+|Essex
+|RNA–RNX
+|Rockland
+|WTB
+|Sullivan
+|-
+|CLC
+|Franklin
+|GRI
+|Monroe
+|MIW–MIZ
+|Orange
+|RNY
+|Oneida
+|WTC–WTJ
+|Westchester
+|-
+|CLD
+|Cortland
+|GRN
+|Greene
+|MJA–MJZ
+|Monroe
+|RNZ
+|Rockland
+|WTK
+|Schuyler
+|-
+|CLE–CLH
+|Columbia
+|GRV
+|Sullivan
+|MKS
+|Westchester
+|ROA–RON
+|Oneida
+|WTL–WTN
+|Westchester
+|-
+|CLI–CLJ
+|Clinton
+|GSA–GSL
+|Suffolk
+|MLA
+|Nassau
+|ROO
+|St. Lawrence
+|WTO
+|Jefferson
+|-
+|CLK
+|Madison
+|GSM
+|Rensselaer
+|MLB
+|Suffolk
+|ROP <sup>'''a'''</sup>
+|Cattaraugus
+|WTP
+|St. Lawrence
+|-
+|CLL–CLP
+|Clinton
+|GSN
+|Orange
+|MLC
+|Franklin
+|ROP <sup>'''a'''</sup>
+|Clinton
+|WTQ
+|Westchester
+|-
+|CLQ–CLS
+|Columbia
+|GSO–GSX
+|Suffolk
+|MLD–MLK
+|Nassau
+|ROQ–ROZ
+|Oneida
+|WTR
+|Jefferson
+|-
+|CLT
+|St. Lawrence
+|GSY
+|Sullivan
+|MLL
+|Orleans
+|RPA–RPL
+|Monroe
+|WTS
+|Westchester
+|-
+|CLU–CLW
+|Columbia
+|GSZ
+|Suffolk
+|MLM–MLZ
+|Nassau
+|RPI
+|Rensselaer
+|WTT
+|Jefferson
+|-
+|CLY
+|Wayne
+|GUV
+|St. Lawrence
+|MMA–MNE
+|Monroe
+|RPO
+|Rockland
+|WTU–WTV
+|Westchester
+|-
+|CMA–CMO
+|Chemung
+|GVA–GVF
+|Ontario
+|MNF
+|Schuyler
+|RPT
+|Clinton
+|WTW
+|Jefferson
+|-
+|CMP
+|Clinton
+|GVL
+|Washington
+|MNG–MNS
+|Monroe
+|RQA–RQZ
+|Monroe
+|WTX–WTZ
+|Westchester
+|-
+|CMQ–CMS
+|Chemung
+|GWH
+|Washington
+|MNT
+|Sullivan
+|RRA–RRK
+|Suffolk
+|WVL
+|Tioga
+|-
+|CMT
+|Jefferson
+|HAL
+|Jefferson
+|MNU–MOG
+|Monroe
+|RRL
+|Franklin
+|WYA–WYM
+|Wyoming
+|-
+|CMU–CMZ
+|Chemung
+|HAM
+|Hamilton
+|MOH
+|Herkimer
+|RRM–RRZ
+|Suffolk
+|WYN
+|Wayne
+|-
+|CNA–CNC
+|Ontario
+|HAR
+|Franklin
+|MOI–MPA
+|Monroe
+|RSA–RSB
+|Nassau
+|WYO–WYQ
+|Wyoming
+|-
+|CND
+|Tioga
+|HAW
+|Westchester
+|MQA–MRS
+|Monroe
+|RSC
+|Sullivan
+|WYS
+|Rensselaer
+|-
+|CNE
+|Ontario
+|HBF
+|Nassau
+|MRT
+|Cortland
+|RSD–RSZ
+|Nassau
+|XAA–XHZ
+|Bronx
+|-
+|CNF
+|St. Lawrence
+|HBG
+|Orange
+|MRU
+|Monroe
+|RTA–RTC
+|Richmond
+|XJA–XJJ
+|Bronx
+|-
+|CNG–CNZ
+|Orange
+|HBL
+|Oswego
+|MRV
+|Madison
+|RTD
+|Schenectady
+|YCA–YCJ
+|Yates
+|-
+|COA–COB
+|Suffolk
+|HCK
+|Washington
+|MRW–MRZ
+|Monroe
+|RTE–RUA
+|Richmond
+|YKA–YKZ
+|Westchester
+|-
+|COL
+|Columbia
+|HCM
+|Washington
+|MSV
+|Bronx
+|RUS
+|St. Lawrence
+|YOA–YOM
+|Westchester
+|-
+|COR
+|Cortland
+|HDL
+|Saratoga
+|MTA–MTB
+|Orange
+|RVA–RVZ
+|Nassau
+|YON
+|Niagara
+|-
+|CPC
+|Albany
+|HDS
+|Jefferson
+|MTC
+|Sullivan
+|RWT
+|Fulton
+|YOO–YOT
+|Westchester
+|-
+|CPH
+|Rensselaer
+|HEC
+|Schuyler
+|MTD–MTE
+|Orange
+|RYA–RYZ
+|Westchester
+|YOU
+|Niagara
+|-
+|CPS–CPT
+|Otsego
+|HEM
+|Nassau
+|MTF
+|Schuyler
+|RZA–RZZ
+|Rockland
+|YOV–YOZ
+|Westchester
+|-
+|CPW
+|Otsego
+|HEN
+|Monroe
+|MTG
+|Montgomery
+|SAC
+|Fulton
+|YQA–YQK
+|Westchester
+|-
+|CRA–CRF
+|Cortland
+|HFA
+|Washington
+|MTH
+|Orange
+|SAG
+|Suffolk
+|YRA–YRZ
+|Westchester
+|-
+|CRG
+|Lewis
+|HFD
+|Washington
+|MTI–MTU
+|Montgomery
+|SAR
+|Saratoga
+|YSA–YZZ
+|New York
+|-
+|CRH–CRL
+|Cortland
+|HFL
+|Washington
+|MTV
+|Westchester
+|SAV
+|Wayne
+|}
+
+'''Notes'''
+
+'''a'''. Duplicate use.
+
+FIL: Allegany County (from "[[Fillmore, New York|'''Fil'''lmore]]")
+
+ROP: Clinton County (from "[[Rouses Point, New York|'''Ro'''uses '''P'''oint]]")
+
+LG: Warren County (from "[[Lake George (disambiguation)|'''L'''ake '''G'''eorge]]")
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|License plates of New York (state)}}
+* [https://dmv.ny.gov/vehicle-registration/information-about-empire-gold-plates Information about Empire Gold plates | New York State DMV]
+* [https://dmv.ny.gov/custom-plates/looking-information-custom-plates Information on custom plates | New York State DMV] {{Webarchive|url=https://web.archive.org/web/20161107015037/https://dmv.ny.gov/custom-plates/looking-information-custom-plates |date=November 7, 2016 }}
+* [https://transact2.dmv.ny.gov/PlatesPersonalized/ Look up and order personalized plates | New York State DMV]
+* [http://dmv.ny.gov/order-picture-and-professional-plates Order picture and professional plates | New York State DMV]
+* [https://www.15q.net/ny.html New York license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200225152930/http://15q.net/ny.html |date=February 25, 2020 }}
+* {{webarchive |url=https://web.archive.org/web/20160505174438/http://www.nyplates.net/ |date=May 5, 2016 |title=Scott Smith's New York License Plates }}
+* [http://www.bprlicenseplates.com/New%20York%20-%20county%20codes.htm County codes for NY license plates (1946–1986)]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of New York}}
+[[Category:New York (state) transportation-related lists]]
+[[Category:Transportation in New York (state)]]
+[[Category:Vehicle registration plates of the United States by state or territory|New York]]

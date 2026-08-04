@@ -1,0 +1,498 @@
+{
+ "AB": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.001,
+  "offsetY": 0.001,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "AK": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.016,
+  "offsetY": 0.005,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "AL": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.02,
+  "offsetY": -0.021,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "AR": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.014,
+  "offsetY": 0.038,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "AZ": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.007,
+  "offsetY": -0.02,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "BC": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.007,
+  "offsetY": 0.029,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "CA": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.001,
+  "offsetY": 0.019,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "CO": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.001,
+  "offsetY": 0.133,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "CT": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.005,
+  "offsetY": 0.003,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "DC": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.015,
+  "offsetY": 0.078,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "DE": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.003,
+  "offsetY": 0.036,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "FL": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.023,
+  "offsetY": 0.04,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "IA": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.003,
+  "offsetY": 0.036,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "ID": {
+  "flagged": true,
+  "note": "The potato needs to be removed",
+  "offsetX": 0.017,
+  "offsetY": 0.009,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "IL": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.001,
+  "offsetY": 0.057,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "IN": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.01,
+  "offsetY": -0.077,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "KS": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "KY": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.009,
+  "offsetY": -0.028,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "LA": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.006,
+  "offsetY": -0.007,
+  "scrim": 0.14,
+  "short": ""
+ },
+ "MA": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.018,
+  "offsetY": 0.067,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "MB": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.025,
+  "offsetY": -0.098,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "MD": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.003,
+  "offsetY": -0.076,
+  "scrim": 0.32,
+  "short": ""
+ },
+ "ME": {
+  "flagged": true,
+  "note": "No moose its a tree",
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "MI": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.005,
+  "offsetY": 0.043,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "MN": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.001,
+  "offsetY": 0.089,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "MS": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.0,
+  "offsetY": 0.092,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "MT": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.02,
+  "offsetY": 0.065,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NB": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.008,
+  "offsetY": 0.069,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NC": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.038,
+  "offsetY": 0.082,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "ND": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.003,
+  "offsetY": 0.014,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NE": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.001,
+  "offsetY": 0.056,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NH": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.009,
+  "offsetY": 0.015,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NJ": {
+  "flagged": true,
+  "note": "Gradient is important",
+  "offsetX": 0.01,
+  "offsetY": 0.066,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NL": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.015,
+  "offsetY": 0.049,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NM": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.001,
+  "offsetY": 0.01,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NS": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.014,
+  "offsetY": 0.203,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NT": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.002,
+  "offsetY": 0.046,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "NU": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.007,
+  "offsetY": 0.034,
+  "scrim": 0.16,
+  "short": ""
+ },
+ "NV": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.017,
+  "offsetY": 0.08,
+  "scrim": 0.08,
+  "short": ""
+ },
+ "NY": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.011,
+  "offsetY": 0.032,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "OH": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.009,
+  "offsetY": 0.015,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "OK": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.018,
+  "offsetY": 0.124,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "ON": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.005,
+  "offsetY": 0.141,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "OR": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.011,
+  "offsetY": 0.124,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "PA": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.008,
+  "offsetY": 0.046,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "PE": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.006,
+  "offsetY": 0.164,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "PR": {
+  "flagged": true,
+  "note": "Odd seperation doesnt fit",
+  "offsetX": -0.0,
+  "offsetY": 0.106,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "QC": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.001,
+  "offsetY": 0.109,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "RI": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.001,
+  "offsetY": 0.074,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "SC": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.007,
+  "offsetY": 0.157,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "SD": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.031,
+  "offsetY": 0.029,
+  "scrim": 0.12,
+  "short": ""
+ },
+ "SK": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.011,
+  "offsetY": 0.096,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "TN": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.001,
+  "offsetY": 0.023,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "TX": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.005,
+  "offsetY": 0.027,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "UT": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.0,
+  "offsetY": 0.021,
+  "scrim": 0.5,
+  "short": ""
+ },
+ "VA": {
+  "flagged": false,
+  "note": "",
+  "offsetX": -0.0,
+  "offsetY": -0.007,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "VT": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.003,
+  "offsetY": 0.02,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "WA": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.001,
+  "offsetY": 0.051,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "WI": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.022,
+  "offsetY": 0.094,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "WV": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.013,
+  "offsetY": 0.035,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "WY": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "scrim": 0.0,
+  "short": ""
+ },
+ "YT": {
+  "flagged": false,
+  "note": "",
+  "offsetX": 0.001,
+  "offsetY": -0.007,
+  "scrim": 0.0,
+  "short": ""
+ }
+}

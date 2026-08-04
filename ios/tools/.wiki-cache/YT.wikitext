@@ -1,0 +1,648 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{ref improve|date=December 2012}}
+{{Infobox vehicle registration plate
+| image =
+| caption = 
+| nickname = 
+| slogan_label = 
+| slogan = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = 
+| serial_format = ABC12
+| current_start_date = {{Start date|1990}}
+| designer = 
+| issuer = 
+| manufacturer = 
+| start_date = {{Start date|1924}}
+}}
+The [[Provinces and territories of Canada|Canadian territory]] of [[Yukon]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|licence plates]] in 1914. Only rear plates have been required since 1990.
+
+==Passenger baseplates==
+{{-}}
+===1924 to 1979===
+In 1956, Canada, the United States and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1954 (dated 1955) issue was the first Yukon licence plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Black on yellow; "Y.T. 1924" at right
+|''none''
+|123
+|100 to approximately 210
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|White on dark blue; "Y.T. 1925" at right
+|''none''
+|123
+|100 to approximately 230
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Black on red; "Y.T. 1926" at right
+|''none''
+|123
+|100 to approximately 240
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Black on yellow; "Y.T. 1927" at right
+|''none''
+|123
+|100 to approximately 300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|White on green; "Y.T. 1928" at right
+|''none''
+|123
+|100 to approximately 260
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|White on dark blue; "Y.T. 1929" at right
+|''none''
+|123
+|100 to approximately 300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Black on yellow; "Y.T. 1930" at right
+|''none''
+|123
+|100 to approximately 350
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Orange on black; "YUKON TY. 1931" at bottom
+|''none''
+|123
+|100 to approximately 450
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Black on orange; "YUKON TY. 1932" at bottom
+|''none''
+|123
+|100 to approximately 400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1933
+|White on green; "YUKON TY. 1933" at bottom
+|''none''
+|123
+|100 to approximately 400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Black on light blue; black lines at top and bottom borders; "YUKON TY. 1934" at bottom
+|''none''
+|123
+|100 to approximately 400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Dark blue on gray; dark blue lines at top and bottom borders; "YUKON TY. 1935" at bottom
+|''none''
+|123
+|100 to approximately 400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Black on red; black lines at top and bottom borders; "YUKON TY. 1936" at bottom
+|''none''
+|123
+|100 to approximately 400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|White on maroon; white lines at top and bottom borders; "YUKON TY. 1937" at bottom
+|''none''
+|123
+|100 to approximately 450
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1938
+|Orange on black; orange lines at top and bottom borders; "YUKON TY. 1938" at bottom
+|''none''
+|123
+|100 to approximately 450
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Black on yellow with border line; "YUKON TY. 1939" at bottom
+|''none''
+|123
+|100 to approximately 500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|White on green with border line; "YUKON TY. 1940" at bottom
+|''none''
+|123
+|100 to approximately 500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|White on black with border line; "YUKON TY. 1941" at bottom
+|''none''
+|123
+|100 to approximately 450
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1942
+|Black on gray with border line; "YUKON TY. 1942" at bottom
+|''none''
+|123
+|100 to approximately 500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1943
+|Black on orange with border line; "YUKON TY. 1943" at bottom
+|''none''
+|123
+|100 to approximately 700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|Black on yellow with border line; "YUKON TY. 1944" at bottom
+|''none''
+|123
+|100 to approximately 750
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|White on maroon with border line; "YUKON TY. 1945" at bottom
+|''none''
+|123
+|100 to approximately 650
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Black on light blue with border line; "YUKON TY. 1946" at bottom
+|''none''
+|1234
+|100 to approximately 1100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|White on green with border line; "YUKON TY. 1947" at bottom
+|''none''
+|1234
+|100 to approximately 1400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Orange on black with border line; "YUKON TY. 1948" at bottom
+|''none''
+|1234
+|100 to approximately 1900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Red on silver with border line; "YUKON TY. 1949" at bottom
+|''none''
+|1234
+|100 to approximately 2100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Black on gray with border line; "YUKON TY. 1950" at bottom
+|''none''
+|1234
+|100 to approximately 1000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Green on gray with border line; "YUKON TY.-EX. 31-3-52" at bottom
+|''none''
+|1234
+|100 to approximately 1100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|White on blue with border line; black embossed [[Gold prospecting|prospector]] at left with gold paint speck; "YUKON TY. CANADA" at bottom and "EX. 31-3-53" at right
+|Land of the Midnight Sun
+|1234
+|1 to approximately 2300
+|Revalidated through March 31, 1954 with blue tabs, then through March 31, 1955 with white tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|White on green with border line; black embossed prospector at left with gold paint speck; "YUKON 55" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 2300
+|First 6" x 12" plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Dark blue on white with border line; black embossed prospector at left with gold paint speck; "YUKON 56" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 2500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|Red on white with border line; black embossed prospector at left with gold paint speck; "YUKON 57" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 2600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1958
+|White on red with border line; black embossed prospector at left with gold paint speck; "YUKON 58" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 3200
+|Manufactured in British Columbia using that province's serial [[Die (manufacturing)|die]]s. This practice continued through 1977.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1959
+|White on black with border line; red embossed prospector at left with gold paint speck; "YUKON 59" at bottom
+|Land of the Midnight Sun
+|1-234
+|1 to approximately 3-200
+|
+|-
+|[[File:Yukon License Plate 1960 3-304.jpg|150px]]
+|1960
+|Black on white with border line; red embossed prospector at left with gold paint speck; "YUKON 60" at bottom
+|Land of the Midnight Sun
+|1-234
+|1 to approximately 3-800
+|
+|-
+|[[File:Yukon License Plate 1961 2-474.jpg|150px]]
+|1961
+|Maroon on sky blue with border line; maroon embossed prospector at left with gold paint speck; "YUKON 61" at bottom
+|Land of the Midnight Sun
+|1-234
+|1 to approximately 4-000
+|
+|-
+|[[File:1962 Yukon licence plate.jpg|150px]]
+|1962
+|White on dark green with border line; red embossed prospector at left with gold paint speck; "YUKON 62" at bottom
+|Land of the Midnight Sun
+|1-234
+|1 to approximately 4-200
+|
+|-
+|[[File:Yukon License Plate 1963 2-555.jpg|150px]]
+|1963
+|Black on light yellow with border line; black embossed prospector at left with gold paint speck; "YUKON 63" at bottom
+|Land of the Midnight Sun
+|1-234
+|1 to approximately 4-500
+|
+|-
+|[[File:Yukon License Plate 1964 2226.jpg|150px]]
+|1964
+|Red on white with border line; red embossed prospector at left with gold paint speck; "YUKON 64" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 4800
+|
+|-
+|[[File:Yukon License Plate 1965 2702.jpg|150px]]
+|1965
+|Green on white with border line; green embossed prospector at left with gold paint speck; "YUKON 65" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 4300
+|
+|-
+|[[File:Yukon License Plate 1966 3459.jpg|150px]]
+|1966
+|Red on white with border line; red embossed prospector at left with gold paint speck; "YUKON 66" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 4900
+|
+|-
+|[[File:Yukon License Plate 1967 2318.jpg|150px]]
+|1967
+|Blue on white with border line; blue embossed prospector at left with gold paint speck; "YUKON 67" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 5200
+|
+|-
+|[[File:Yukon License Plate 1968 3655.jpg|150px]]
+|1968
+|Black on white with border line; black embossed prospector at left with gold paint speck; "YUKON 68" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 5800
+|
+|-
+|[[File:Yukon_1969_license_plate.jpg|150px]]
+|1969
+|Black on light yellow with border line; black embossed prospector at left with gold paint speck; "YUKON 69" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 6200
+|
+|-
+|[[File:Yukon License Plate 1970 5477.jpg|150px]]
+|1970
+|Green on white with border line; green embossed prospector at left with gold paint speck; "YUKON 70" at bottom
+|Land of the Midnight Sun
+|1234
+|1 to approximately 7300
+|
+|-
+|[[File:Yukon License Plate 1971 3448.jpg|150px]]
+|1971
+|Orange on white with border line; orange embossed prospector at left with gold paint speck; "YUKON 71" at bottom
+|Home of the Klondike
+|1234
+|1 to approximately 6300
+|
+|-
+|[[File:Yukon License Plate 1972 6235.jpg|150px]]
+|1972
+|Green on white with border line; green embossed prospector at left with gold paint speck; "YUKON 72" at bottom
+|Home of the Klondike
+|1234
+|1 to approximately 6500
+|
+|-
+|[[File:Yukon License Plate 1973 2342.jpg|150px]]
+|1973
+|Black on tan with border line; black embossed prospector at left with gold paint speck; "YUKON 73" at bottom
+|Home of the Klondike
+|1234
+|1 to approximately 7000
+|
+|-
+|[[File:Yukon License Plate 1974 2347.jpg|150px]]
+|1974
+|Green on white with border line; green embossed prospector at left with gold paint speck; "YUKON 74" at bottom
+|Home of the Klondike
+|1234
+|1 to approximately 8000
+|
+|-
+|[[File:Yukon_1975_license_plate.jpg|150px]]
+|1975
+|Orange on white with border line; orange embossed prospector at left with gold paint speck; "YUKON 75" at bottom
+|Home of the Klondike
+|1234
+|1 to approximately 8000
+|
+|-
+|[[File:Yukon License Plate 1976 K627.jpg|150px]]
+|1976
+|Black on white with border line; black embossed prospector at left with gold paint speck; "YUKON 76" at bottom
+|Home of the Klondike
+|''A''123
+|Coded by region (''A'')
+|Letters A, B, C, E, J, K, L, N, P and T used in [[Whitehorse]], D in [[Dawson City|Dawson]], F in [[Faro, Yukon|Faro]], H in [[Haines Junction]], M in [[Mayo, Yukon|Mayo]], and W in [[Watson Lake, Yukon|Watson Lake]]. This continued through 1981.<ref>{{cite web |last=Tanner |first=Eric N. |title=Yukon Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Yukon&code=yt |publisher=allaboutlicenseplates.com |access-date=November 22, 2020}}</ref>
+|-
+|[[File:Yukon License Plate 1977 PO71.jpg|150px]]
+|1977
+|Red on white with border line; red embossed prospector at left with gold paint speck; "YUKON 77" at bottom
+|Home of the Klondike
+|''A''123
+|Coded by region (''A'')
+|
+|-
+|[[File:Yukon License Plate 1978 BG-71.jpg|150px]]
+|1978
+|Green on white with border line; green embossed prospector at left with gold paint speck; "YUKON" centred at bottom and "78" at top right
+|The Klondike
+|''A''B-12
+|Coded by region (''A'')
+|Manufactured in Saskatchewan using that province's serial dies. This practice continued until 1990.
+|-
+|[[File:Yukon License Plate 1979 CF-79.jpg|150px]]
+|1979
+|Red on white with border line; red embossed prospector at left with gold paint speck; "YUKON" centred at bottom and "79" at top right
+|The Klondike
+|''A''B-12
+|Coded by region (''A'')
+|Final single-year passenger plate in Canada.
+|}
+
+===1980 to present===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Yukon 1980 License Plate.jpg|150px]]
+|1980
+|Green on white with border line; green embossed prospector at left with gold paint speck; "YUKON" centred at bottom and "80" at top right
+|rowspan="2"|The Klondike
+|rowspan="2"|''A''B-12
+|rowspan="2"|Coded by region (''A'')
+|rowspan="2"|Revalidated for 1981 with stickers.
+|-
+|[[File:Yukon 1981 License Plate.jpg|150px]]
+|1981
+|As above, but without "80"
+|-
+|[[File:1982 YUKON License plate "HJC-9".jpg|150px]]
+|1982
+|Red on white with border line; red embossed prospector at left with gold paint speck; "YUKON" centred at bottom
+|The Klondike
+|ABC-1
+|ABA-1 to ?
+|
+|-
+|[[File:Yukon 1985 License Plate.jpg|150px]]
+|1985
+|Black on reflective gold with border line; black embossed prospector at left; "YUKON" centred at bottom
+|The Klondike
+|ABC-1
+|ABA-1 to ?
+|
+|-
+| 
+|1990
+|Black on reflective white with border line; screened prospector at left; screened red "Yukon" centred on sky blue band at bottom
+|The Klondike
+|ABC12<br>ABC&nbsp;12
+|AAA01 to KAA04 (As of July 20, 2026)
+|Letters I, Q, U and Y not used in serials, and C, D, F and G not used as first letters.
+|-
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Description
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Yukon Commercial License Plate 1990.jpg|150px]]
+|rowspan="2"|[[Commercial vehicle|Commercial]] – Heavy
+|1990
+|rowspan="2"|As current passenger base; "Commercial" in place of slogan
+|'''C'''BC12
+|CAA01 to CKZ99
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009
+|'''C'''B123
+|CA001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Commercial – Light
+|1990
+|As current passenger base
+|'''C'''BC12
+|CLA01 to CZZ99
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Car dealership|Dealer]]
+|1990
+|As current passenger base, but without prospector; "Dealer" in place of slogan
+|'''DLR'''123
+|DLR001 to DLR999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farm Vehicle
+|1990
+|As current passenger base, but without prospector; "Farm Vehicle" in place of slogan
+|'''F'''1234
+|F0001 to present
+|
+|-
+|[[File:Yukon Federal Government License Plate 1990.jpg|150px]]
+|Federal Government
+|1990
+|As current passenger base
+|'''FG'''C12
+|FGA01 to present
+|
+|-
+|[[File:Yukon Motorcycle License Plate 1990.jpg|150px]]
+|[[Motorcycle]]
+|1990
+|Similar to current passenger base but without prospector; "Motorcycle" at top
+|'''M'''&nbsp;12345
+|M 50001 to present
+|
+|-
+|[[File:Yukon RCMP License Plate 1990.jpg|150px]]
+|[[Royal Canadian Mounted Police|RCMP]]
+|1990
+|As current passenger base
+|'''MP'''C12
+|MPA01 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Car rental|Rental Vehicle]]
+|1990
+|As current passenger base; "Rental" or slogan at top
+|'''R'''BC12
+|RAA01 to present
+|
+|-
+|[[File:Yukon Snowmobile License Plate 1990.jpg|150px]]
+|[[Snowmobile|Snowmachine]]
+|1990
+|As Motorcycle plate, but with "Snowmachine" at top
+|'''S''' 12345
+|S 0001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Territorial Government
+|1990
+|As current passenger base, but without prospector; "Government" in place of slogan
+|'''YTG'''123
+|YTG001 to YTG999
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008
+|As above, but with prospector
+|'''Y'''1234
+|Y1000 to present
+|-
+|[[File:Yukon Government License Plate 1990.jpg|150px]]
+|Other government
+|1990
+|
+|'''G'''12 345
+|G00 001 to present
+|
+|-
+|[[File:Yukon Trailer License Plate 1993.jpg|150px]]
+|[[Trailer (vehicle)|Trailer]]
+|1990
+|As Motorcycle plate, but with "Trailer" at top
+|'''T''' 12345
+|T 50001 to present
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/yt.html Yukon Territory licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200616152937/https://www.15q.net/yt.html |date=2020-06-16 }}
+*[http://www.bcpl8s.ca/Yukon/ A History of Yukon License Plates]
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:Vehicle registration plates of Canada|Yukon]]
+[[Category:Transport in Yukon]]
+[[Category:Yukon transport-related lists]]

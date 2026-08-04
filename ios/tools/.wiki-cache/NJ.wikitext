@@ -1,0 +1,1859 @@
+{{short description|New Jersey vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = New Jersey license plate 2014.jpg
+| caption = Current Garden State plate, with screened serial
+| nickname = 
+| slogan_label = Slogan
+| slogan = Garden State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = A12-BCD
+| current_start_date = {{Start date|1992}}<br>(current version introduced April 2014)
+| designer = 
+| issuer = [[New Jersey Motor Vehicle Commission]]
+| manufacturer = 
+| start_date = {{Start date|1908|06|01}}<br>(pre-state plates from 1903 through May 31, 1908)
+}}
+The U.S. state of [[New Jersey]] first required its residents to register their [[motor vehicle]]s in 1903. Registrants provided their own [[Vehicle registration plate|license plates]] for display until 1908, when the state began to issue plates.<ref>{{cite web |title=Old New Jersey License Plates |url=http://leatherlicenseplates.com/old-new-jersey-license-plates-vintage-new-jersey-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=August 20, 2017}}</ref>
+
+{{As of|2025}}, plates are issued by the [[New Jersey Motor Vehicle Commission]]. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Validation==
+In 1999 the state tried re-validating plates with stickers, but that scheme ended in 2004 with stickers issued to expire in 2005. Some non-passenger plates stickers extended to 2010 with stickers issued to expire in 2011 (2014 for trailer plates only). Since then passenger and non-passenger plates have been re-validated with just the registration card issued to the driver.
+
+==Passenger baseplates==
+===1908 to 1958===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first New Jersey license plate that complied with these standards was a modification of the 1952 plate, introduced in 1956.
+
+No slogans were used on passenger plates during the period covered by this subsection.
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1908
+|Cream-colored serial digits on individual dark blue flat metal panels inserted into metal frame; "N.J.", lead seal and "08" on single panel inserted at right
+|12345
+|38001 to approximately 50500, plus reissues of pre-state serials
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1909
+|White serial on black porcelain plate; "N.J", aluminum seal and "09" at right
+|12345
+|1 to approximately 24000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1910
+|Black serial on bright orange porcelain plate; "N.J", aluminum seal and "10" at left
+|12345
+|1 to approximately 30000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|Red serial on gray porcelain plate; "N.J", aluminum seal and "11" at right
+|12345
+|1 to approximately 38000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|Yellow serial on blue porcelain plate; "N.J", aluminum seal and "12" at left
+|12345
+|1 to approximately 44000
+|
+|-
+|[[File:1913 New Jersey passenger license plate.jpg|150px]]
+|1913
+|Red serial on white porcelain plate; "N.J", aluminum seal and "13" at right
+|12345
+|1 to approximately 50000
+|
+|-
+|[[File:1914-NJ-License-Plate.jpg|150px]]
+|1914
+|White serial on red porcelain plate; "N.J", aluminum seal and "14" at left
+|12345
+|1 to approximately 61000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|White serial on green porcelain plate; "N.J", aluminum seal and "15" at right
+|12345
+|1 to approximately 78000
+|
+|-
+|rowspan="2"|[[File:1916-NJ-License-Plate.JPG|150px]]
+|rowspan="2"|1916
+|rowspan="2"|Embossed white serial on brown plate; "NJ 16" at left
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately A6800
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1917
+|rowspan="2"|Embossed white serial on blue plate; "NJ 17" at right
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A, B, N and O series; X1 to approximately X1900
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed blue serial on white plate; "N.J.-1918" centered at top
+|123456
+|1 to approximately 149500
+|
+|-
+|[[File:1919 New Jersey passenger license plate.jpg|alt=1919_New_Jersey_passenger_license_plate.jpg|150x150px]]
+|1919
+|Embossed white serial on gray plate; "N.J.−1919" centered at top
+|123456
+|1 to approximately 175500
+|
+|-
+|[[File:New Jersey surviving 1920 license plate.jpg|alt=Photograph of a surviving 1920 license plate|150x150px]]
+|1920
+|Embossed white serial on brick red plate; "N.J.−1920" centered at top
+|123456
+|1 to approximately 212500
+|
+|-
+|[[File:1921 New Jersey license plate.jpg|150px]]
+|1921
+|Embossed white serial on forest green plate; "N.J.−1921" centered at top
+|123456
+|1 to approximately 247500
+|
+|-
+|[[File:1922 New Jersey Vehicle Registration Plate.jpg|150px]]
+|1922
+|Embossed white serial on black plate; "N.J.−1922" centered at top
+|123456
+|1 to approximately 258500
+|
+|-
+|[[File:1923 New Jersey Vehicle Registration Plate.jpg|150px]]
+|1923
+|Embossed orange serial on black plate; "N.J.—23" centered at top
+|123456
+|1 to approximately 331500
+|
+|-
+|[[File:1924 New Jersey Vehicle Registration Plate.jpg|alt=1924 New Jersey Vehicle Registration Plate|150x150px]]
+|1924
+|Embossed white serial on red plate; "N.J.−1924" centered at top
+|123456
+|1 to approximately 400000
+|
+|-
+|[[File:New Jersey 1925 license plate.jpg|150px]]
+|1925
+|Embossed silver serial on midnight blue plate; "N.J.—25" centered at top
+|123456
+|1 to approximately 460500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed white serial on orange plate; "N.J.−1926" centered at top
+|''A''12345<br>1'''''E'''''2345
+|County-coded
+|Essex County used E in the second position following E99999; this practice continued through 1930.<ref name="allaboutlicenseplatesNJ">{{cite web |last=Tanner |first=Eric N. |title=New Jersey Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=New%20Jersey&code=nj |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed white serial on green plate; "N.J.−27." centered at top
+|''A''12345<br>1'''''E'''''2345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|Serifs added to letters in serials for better readability. {{small|O/N}} code replaced Q code in Ocean County.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed white serial on light blue plate; "N.J.−1928" centered at top
+|''A''12345<br>1'''''E'''''2345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed white serial on black plate; "N.J.−29." centered at top
+|''A''12345<br>1'''''E'''''2345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed white serial on gray plate; "N.J.−1930" centered at top
+|''A''12345<br>1'''''E'''''2345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed white serial on red plate; "N.J.−31." centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|{{small|1/E}}1001 onwards issued in Essex County following E99999; this practice continued through 1938.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on black plate; "N.J.−1932." centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:1933 NJ passenger plate.jpg|150px]]
+|1933
+|Embossed orange serial on black plate; "N.J.−'33." centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed light green serial on black plate; "N.J.−1934" centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed silver serial on black plate; "N.J.−'35." centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed bright orange serial on black plate; "N.J.−1936" centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed light green serial on black plate; "N.J.−'37." centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|
+|-
+|[[File:1938 New Jersey license plate.jpg|150px]]
+|1938
+|Embossed silver serial on black plate; "N.J.−1938" centered at top
+|''A''12345<br>{{small|'''''1'''''/'''''B'''''}}1234<br>{{small|'''''1'''''/'''''E'''''}}12345<br>{{small|'''''O'''''/'''''N'''''}}12345
+|County-coded
+|{{small|1/B}}1001 onwards issued in Bergen County following B99999.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed bright orange serial on black plate; vertical "NJ 39" at right
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|For each two-letter code, the numbers 100 to 999 were issued, followed by 10A through 99Z (omitting G, I, O and Q).<ref name="allaboutlicenseplatesNJ"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed light green serial on black plate; vertical "NJ 40" at right
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed white serial on black plate; "N.J. '41" roughly centered at bottom
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:1942 NJ license plate.jpg|150px]]
+[[File:Blank License Plate Shape.svg|150px]]
+|1942
+|Embossed yellow serial on black plate; "N.J. 1942" roughly centered at bottom
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|Revalidated for 1943 with white-on-black tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|Embossed black serial on straw-colored plate; "N.J. '44" roughly centered at bottom
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|Only rear plates issued due to ongoing metal conservation. Issuance of front plates resumed in 1947.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed blue serial on straw-colored plate; "N.J. 1945" at bottom, offset to right
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:New Jersey License Plate 1946.jpg|150px]]
+|1946
+|Embossed black serial on straw-colored plate; "N.J. '46" centered at top
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed blue serial on straw-colored plate; "N.J. 1947" at bottom, offset to right
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Embossed black serial on straw-colored plate; "N.J. '48" centered at top
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:1949 New Jersey license plate.JPG|150px]]
+|1949
+|Embossed straw-colored serial on black plate; "N.J. 1949" at bottom, offset to right
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:1950 New Jersey license plate.jpg|150px]]
+|1950
+|As 1948 base, but with "N.J. '50" at top
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:New Jersey 1951 license plate - Number NW 71 N.jpg|150px]]
+|1951
+|As 1949 base, but with "N.J. 1951" at bottom
+|{{small|''A''/''B''}}123<br>{{small|''A''/''B''}}12A
+|County-coded ({{small|''A''/''B''}})
+|
+|-
+|[[File:1954 New Jersey license plate.jpg|150px]]<br>[[File:1956 New Jersey passenger license plate.jpg|150px]]
+|1952
+|Embossed orange lettering on black plate with border line; "N. 52 J." embossed at bottom.
+|<small>''A''/''B''</small> 123<br><small>''A''/''B''</small> 12A<br><small>''A''/''B''</small> A12<br><small>''A''/''B''</small> 1A2<br><small>''A''/''B''</small> 1234 
+|Coded by county (<small>''A''/''B''</small>)
+|Revalidated for 1953, 1954 (shown in photo), 1955 and 1956 (also shown in photo) with tabs (Passenger) 1957, 1958, 1959, and 1960 with tabs (Non-Passenger).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|As above but changed to 6" x 12" size, and with stacked "NJ" embossed at right
+|<small>''A''/''B''</small> 1234
+|Coded by county (<small>''A''/''B''</small>)
+|Revalidated for 1958 with windshield stickers. The older 1952 plates (by now dated "56") were also validated with windshield stickers.
+|}
+
+===1959 to present===
+All passenger plates from 1959 until present are still valid, provided they have been continuously registered. It is also possible to have a serial from an older plate remade on a plate of a newer design.<ref name="moiniremake">{{cite web |last=Moini |first=Jim |title=Remakes (Replacement) |url=http://njplates.moini.net/remakes.html |publisher=Jim Moini's License Plates |access-date=July 8, 2019}}</ref>
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1959 New Jersey.jpg|150px]]
+|1959
+|Embossed black serial on non-reflective buff plate; "N.J." centered at top
+|rowspan="5"|"GARDEN STATE" centered at bottom
+|rowspan="3"|ABC-123
+|AAA-100 to RHZ-999
+|Letter Q not used in serials, and 'D', 'O', 'T' and 'X' series reserved for Dealer, Omnibus, Trailer and Commercial plates respectively.<ref name="moini1959">{{cite web |last=Moini |first=Jim |title=Passenger Plates 1959 - 1973 |url=http://njplates.moini.net/1959.html |publisher=Jim Moini's License Plates |access-date=July 2, 2019}}</ref> This practice continued until late 1992.
+|-
+|[[File:1970 New Jersey license plate.jpg|150px]]
+|1969
+|As above, but reflective
+|RIA-100 to SZZ-999
+|Experimental plates.
+|-
+|[[File:1959 New Jersey.jpg|150px]]
+|1970
+|rowspan="2"|As above, but non-reflective as from 1959 to 1969
+|UAA-100 to YZZ-999
+|'Z' series initially reserved for Commercial plates; issued 1985 on blue base (below).<ref name="moini1959"/>
+|-
+|[[File:1973 New Jersey license plate.jpg|150px]]
+|1973
+|rowspan="2"|123-ABC
+|100-AAA to 999-HBZ
+|
+|-
+|[[File:1977 New Jersey License Plate.jpg|150px]]
+|1977
+|As above, but with "NEW JERSEY" centered at top
+|100-HCA to 999-KZZ
+|First use of the full state name on passenger plates.
+|-
+|[[File:1979 New Jersey license plate.jpg|150px]]
+|1979
+|rowspan="3"|Embossed buff serial with state-shaped separator on non-reflective medium blue plate; "NEW JERSEY" centered at top
+|rowspan="3"|"GARDEN STATE" centered at bottom
+|123-ABC
+|100-LAA to 999-ZZZ
+|rowspan="2"|
+|-
+|[[File:1985 New Jersey license plate.jpg|150px]]
+|1985
+|ABC-123
+|ZAA-100 to ZZZ-999
+|-
+|[[File:New Jersey license plate, 1986.png|150px]]
+|1985
+|ABC-12D
+|AAA-10A to HZZ-99Z
+|I and O not used as suffix letters in this serial format (in addition to Q).<ref name="allaboutlicenseplatesNJ"/>
+|-
+|[[File:1992 New Jersey sample license plate.jpg|150px]]
+|late 1992
+|Embossed black serial on reflective yellow to gradient white plate; "New Jersey" screened in black centered at top; black outlines for registration stickers at top corners
+|rowspan="6"|"Garden State" screened in black centered at bottom
+|ABC1234
+|AAA1000&nbsp;to ADJ9999
+|Letters I, O and Q not used in serials; this practice continues today.<ref name="allaboutlicenseplatesNJ"/>
+|-
+|[[File:1997 New Jersey.jpg|150px]]
+|spring 1993
+|rowspan="2"|As above, but with state-shaped separator added to serial
+|AB-123C
+|BA-100A to ZY-999Z
+|'D', 'H', 'T' and 'X' series reserved for Dealer, Handicapped, Trailer and Commercial plates respectively, and 'S' series for optional Shore to Please plate.<ref name="moini1992">{{cite web |last=Moini |first=Jim |title=Passenger Plates 1992 - 1999 |url=http://njplates.moini.net/1992.html |publisher=Jim Moini's License Plates |access-date=July 2, 2019}}</ref> 'A' series used on Apportioned plates from 1996 onwards.
+|-
+|[[File:NJ 2007.jpg|150px]]
+|May 1999
+|rowspan="2"|ABC-12D
+|JAA-10A to SZZ-99Z;<br>UAA-10A to VZT-99Z
+|'T' series reserved for Trailer plates. Between 2001 and 2004, plates used [[Avery Dennison|Avery]] reflective sheeting instead of [[3M]] reflective sheeting.
+|-
+|[[File:New Jersey 2008.jpg|150px]]
+|mid 2007
+|As above, but without black outlines at top corners
+|VZU-10A to WZZ-99Z;<br>YAA-10A to ZZZ-99Z
+|'X' series reserved for Commercial and Farmer plates.
+|-
+|[[File:New Jersey 2011 license plate.jpg|150px]]
+|July 2010
+|As above, but with security threads added to center of plate
+|rowspan="2"|A12-BCD
+|A10-AAA to T99-EEK<ref name="moini2010">{{cite web |last=Moini |first=Jim |title=Passenger Plates 2010 - 2014 |url=http://njplates.moini.net/2010.html |publisher=Jim Moini's License Plates |access-date=September 27, 2021}}</ref>
+|In this format, the prefix letter progresses before the suffix letters. For example, A99-AAA was followed by B10-AAA; and Z99-AAA was followed by A10-AAB.<ref>{{Cite web |title=New Jersey Passenger Series History |url=https://www.licenseplates.cc/history.php?id=297 |access-date=2026-01-02 |website=www.licenseplates.cc}}</ref>
+|-
+|[[File:F92-PEE.JPG|150px]]
+|April 2014
+|As above, but with serial and separator screened rather than embossed
+|A10-EFF to Z99-SZZ;<br>A10-UAA to R22-WPG {{small|(as of January 5, 2026)}}<ref name=":1">{{Cite web |title=New Jersey License Plates |url=https://www.licenseplates.cc/NJ |access-date=June 24, 2023 |website=www.licenseplates.cc}}</ref>
+|'T' series reserved for Trailer plates.
+|}
+
+==Courtesy plates==
+[[File:New Jersey SVM 2.jpg|thumb|right|New Jersey courtesy license plate]]
+Courtesy plates have been issued to individuals with political connections since 1920. The current serial formats on these plates consist of three letters followed or preceded by a number between 1 and 20. On standard courtesy plates the first letter is a county code, the second letter is the first initial of the vehicle owner's name, and the third letter is the initial of the last name of the vehicle owner. Courtesy plates may also be personalized, with all three letters making up the owner's initials.
+
+Courtesy plates can be used on several types of vehicles, including cars, motorcycles and historic vehicles. They must be approved by a [[New Jersey Senate|NJ State Senator]] from the applicant's election district prior to being submitted to the MVC.<ref>{{cite web|url=http://www.state.nj.us/mvc/pdf/Vehicles/SP-2.pdf |title=Information about Personalized License Plates |publisher=New Jersey Motor Vehicle Commission |access-date=February 14, 2013}}</ref> The staff for the applicant's senator must also get approval from the state senator from the county that corresponds to the first letter on the plate being requested. The letter Q cannot be used on these plates, and D, O, T, and X cannot be used as the first letter.<ref name="allaboutlicenseplatesNJ"/>
+
+===Courtesy plate county codes 1959 to present===
+{|class="wikitable sortable"
+|-
+!Letter
+!County
+|-
+|A
+|[[Atlantic County, New Jersey|Atlantic]]
+|-
+|B
+|[[Bergen County, New Jersey|Bergen]]
+|-
+|C
+|[[Camden County, New Jersey|Camden]]
+|-
+|E
+|[[Essex County, New Jersey|Essex]]
+|-
+|F
+|[[Ocean County, New Jersey|Ocean]]
+|-
+|G
+|[[Gloucester County, New Jersey|Gloucester]]
+|-
+|H
+|[[Hudson County, New Jersey|Hudson]]
+|-
+|I
+|[[Hunterdon County, New Jersey|Hunterdon]]
+|-
+|J
+|[[Salem County, New Jersey|Salem]]
+|-
+|K
+|[[Middlesex County, New Jersey|Middlesex]]
+|-
+|L
+|[[Morris County, New Jersey|Morris]]
+|-
+|M
+|[[Monmouth County, New Jersey|Monmouth]]
+|-
+|N
+|[[Burlington County, New Jersey|Burlington]]
+|-
+|P
+|[[Passaic County, New Jersey|Passaic]]
+|-
+|R
+|[[Mercer County, New Jersey|Mercer]]
+|-
+|S
+|[[Somerset County, New Jersey|Somerset]]
+|-
+|U
+|[[Union County, New Jersey|Union]]
+|-
+|V
+|[[Sussex County, New Jersey|Sussex]]
+|-
+|W
+|[[Warren County, New Jersey|Warren]]
+|-
+|Y
+|[[Cumberland County, New Jersey|Cumberland]]
+|-
+|Z
+|[[Cape May County, New Jersey|Cape May]]
+|}
+
+==Current plate types==
+All bases of all classes of plates from 1959 to present are still valid for display in New Jersey.<ref name="Jim Moini"/>
+
+===Non-Passenger===
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Current serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Ambulance
+|July 1, 2014
+|'''OA'''-123A
+|'''OA'''-1234
+|Ambulances used Commercial and No Fee plates prior to July 2014.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Apportioned
+|June 1996
+|'''A'''B-123C
+|
+|Issued to trucks and buses weighing at least 13 tons.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Autocycle
+|October 2017
+|A1B2C
+|
+|Issued to three-wheeled motorcycles.
+|-
+|[[File:NJ commercial license plate XCJ-S77.jpg|150px]]
+|Commercial
+|1918
+|'''X'''BC-D12
+|'''X'''BC-123<br>'''X'''B-1234<br>'''X'''-12345<br>'''X'''1B-234<br>'''X'''BC-12D<br>'''X'''B-12CD<br>'''X'''BC1234<br>'''X'''12-B34<br>'''X'''-1234B<br>'''X'''B-123C
+|Serials XYA-100 through XZZ-999 and XYA-10A through XZZ-99Z reserved for Farmer plates. Current serial format began mid-2012. Vanity variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Commercial Motorcycle
+|1962
+|'''X'''B123
+|
+|Infrequently issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Commuter Van
+|1982
+|'''CV'''12345
+|'''CV'''-1234
+|Issued to airport vans and ride-share vehicles.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer Temporary
+|1953
+|{{nowrap|'''DL'''-123 {{small|12}}}}
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer Transporter
+|c.&nbsp;1970
+|{{nowrap|'''DTT'''-12 {{small|12}}}}<br>{{nowrap|12 {{small|12}} '''DTT'''}}
+|
+|Issued to new vehicles being transported from manufacturers to dealers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Driving School
+|2019
+|'''DS'''-1234
+|
+|
+|-
+|[[File:nj new.jpg|150px]]
+|Equipment In Transit
+|1949
+|12-{{small|1}}-AB
+|A-12-{{small|1}}<br>AB-12-{{small|1}}
+|Issued to construction vehicles, in groups of five (each plate in the group is distinguished by the small number in its serial, between 1 and 5). Issued annually through 1962.
+|-
+|[[File:NJ 2004 Farm Use.jpg|150px]]
+|Farm Use
+|1941
+|'''G'''B-12C
+|'''F'''-1234<br>'''F'''-B123<br>'''F'''-B12C<br>'''F'''B-12C<br>'''F'''B12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Handicapped
+|1977
+|1234{{small|'''H'''/B}}
+|'''H'''1234<br>1234'''H'''<br>{{small|'''H'''/B}}1234
+|[[International Symbol of Access]] at left. Vanity variants also issued.
+|-
+|[[File:NJ 2000 Historic.jpg|150px]]
+|Historic
+|1964
+|12345'''QQ'''
+|'''QQ'''-A123<br>123A-'''QQ'''<br>'''QQ'''-1234<br>1234-'''QQ'''<br>'''QQ'''12345
+|Issued to vehicles that are at least 25 years old and are used for exhibition purposes. Vanity and Courtesy variants also issued, with serial preceded by stacked Q/Q prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Historic Motorcycle
+|1976
+|'''Q'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Hotel Bus
+|2014
+|'''OH'''-1234
+|
+|Issued to small buses transporting passengers to and from hotels.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|In Transit Empty
+|1977
+|12-'''Z'''B
+|'''Z'''B-12
+|Issued to trucks and trailers that are empty when transported.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Jitney
+|July 1, 2014
+|'''OJ'''-1234
+|
+|Issued to small buses for urban transport. These buses used Omnibus plates prior to July 2014.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Limousine
+|late 2000
+|'''OL'''1234A
+|
+|Replaced Livery plate. Serials began at OL1000D. Vanity variants also issued, with serial of owner's choice preceded by stacked O/L prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Mobility Assistance Vehicle
+|July 1, 2014
+|'''OM'''-1234
+|
+|Issued to vehicles transporting handicapped individuals.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Moped
+|1983
+|1A2B3
+|
+|
+|-
+|[[File:New Jersey Motorcycle license plate.jpg|150px]]
+|Motorcycle
+|1912
+|1ABC2
+|AB123<br>123AB<br>A123B<br>A1234<br>1234A
+|Issued annually through 1960. Current serial format began 2009. Vanity and Courtesy variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle Dealer
+|c.&nbsp;1926
+|12{{small|-1}}'''D'''B
+|'''D'''B12{{small|-1}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle No Fee
+|1952
+|1234A
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|New Car Dealer
+|1960
+|{{nowrap|'''D'''BC-12 {{small|12}}}}
+|
+|Series DAA through DKZ used on these plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|No Fee
+|1932
+|'''NF'''12345
+|'''NF'''-C123
+|Issued to vehicles owned by nonprofit organizations. Courtesy variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Non-Conventional Dealer
+|c.&nbsp;1965
+|{{nowrap|'''DN'''-123 {{small|12}}}}
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Omnibus
+|1922
+|'''O'''BC1234
+|'''O'''BC-123
+|Current serial format began 1992 at OXV1000.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Omnibus 2
+|August 2014
+|'''O2'''-1234
+|
+|Issued to buses owned by private transportation companies.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Paratransit
+|July 1, 2014
+|'''OP'''-123A
+|'''OP'''-1234
+|Issued to small buses providing non-emergency medical transport. These buses used Omnibus, Commercial and No Fee plates prior to July 2014.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Passenger Vanity
+|1959
+|varies
+|varies
+|Alcoholic vanity plates are banned.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|School Vehicle I
+|1977
+|'''S1'''-1234
+|'''S1'''-123A<br>123A-'''S1'''<br>1234A'''S1'''<br>'''S1'''-A123<br>A123-'''S1'''
+|Issued to full-size school buses (seating 17 or more passengers).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|School Vehicle II
+|1977
+|A123-'''S2'''
+|'''S2'''-123A<br>123A-'''S2'''<br>1234A'''S2'''<br>'''S2'''-A123
+|Issued to small school buses (seating under 17 passengers).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Street Rod
+|1982
+|'''R'''1234
+|
+|Issued to modified antique automobiles manufactured before 1949.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Taxicab
+|July 1, 2014
+|'''OT'''-123A
+|'''OT'''-1234
+|Taxicabs used Omnibus plates prior to July 2014.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Temporary
+|April 1, 2012
+|A123456
+|
+|F, H, J, L, M, R, T, V, W, X, Z and C series of serials issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Temporary Motorcycle
+|June 2015
+|A123456
+|
+|Same design as regular Temporary plates, but smaller. J and L series of serials issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Temporary Non-Resident
+|April 1, 2012
+|123456A
+|
+|N, P, R and T series of serials issued.
+|-
+|[[File:JerseyTractorPlate.png|150px]]
+|Tractor
+|1918
+|1234-'''T'''B
+|'''TR'''-1234<br>'''TR'''-C123<br>'''TS'''-C123
+|Infrequently issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Trailer
+|1915
+|A12-'''T'''CD
+|'''T'''BC-123<br>'''T'''B-123C<br>123-'''T'''BC<br>'''T'''123-BC<br>'''T'''BC1234<br>'''T'''1B-234<br>'''T'''12-B3C<br>'''T'''BC-12D
+|Current serial format began early 2023.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Used Car Dealer
+|1960
+|{{nowrap|12-'''D'''BC {{small|12}}}}
+|{{nowrap|'''D'''BC-12 {{small|12}}}}<br>{{nowrap|12 {{small|12}} '''D'''BC}}
+|Series DLA through DSZ and DUA through DZZ used on these plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Vehicle Converter
+|c.&nbsp;1973
+|{{nowrap|'''DTC'''-12 {{small|12}}}}<br>{{nowrap|12 {{small|12}} '''DTC'''}}
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Vehicle Manufacturer
+|1908
+|{{nowrap|'''DTM'''-12 {{small|12}}}}<br>{{nowrap|12 {{small|12}} '''DTM'''}}<br>{{nowrap|'''DTN'''-12 {{small|12}}}}<br>{{nowrap|12 {{small|12}} '''DTN'''}}
+|
+|
+|}
+
+====Discontinued====
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Final serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Boat
+|1919
+|1234<br>A123
+|
+|rowspan="3"|"BL NJ" and last two digits of year embossed at right. Last issued 1962; stickers used for boat registration since at least 1973.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Boat Dealer
+|by 1959
+|'''D'''12{{small|−1}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Boat No Fee
+|by 1953
+|{{small|'''N'''/'''F'''}}12
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Clam/Oyster Permit
+|1935
+|1234
+|'''C'''-1234<br>'''O'''-1234
+|Issued to vehicles used for the purpose of clam and oyster digging. All-numeric serials used from 1936 onwards. Discontinued sometime after 1938.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Constructor
+|1951
+|12345
+|
+|Issued mainly to construction [[dump truck]]s. Discontinued sometime after 1979.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Gasoline License
+|1928
+|12345
+|
+|Replaced by Motor Fuel Dealer in 1932 (below).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Licensed Coal/Fuel Truck
+|1937
+|1234
+|
+|Supplementary plates. Last issued 1973, but revalidated until at least 1980.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Licensed Poultry Truck
+|by 1948
+|123
+|
+|Supplementary plates. Last issued 1973.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Livery
+|1979
+|'''OL'''1234A
+|'''OL'''-1234<br>1234-'''OL'''<br>'''OL'''-123A
+|Livery vehicles used their own plates from 1917 to 1921, then Omnibus plates from 1922 until 1977 when the PUC LIM plate was introduced (below). Vanity variants also issued, with serial of owner's choice preceded by stacked O/L prefix. Replaced by Limousine in late 2000.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motor Fuel Dealer
+|1932
+|12345
+|
+|Motorcycle-sized from 1936. Last issued 1942.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motor Fuel Transport
+|1936
+|12345
+|
+|Motorcycle-sized plates issued to tanker trucks hauling gasoline or other motor fuel. Issued annually through 1972. Last issued 2010.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[NJ Transit]] Bus
+|1982
+|1234-'''NJ'''
+|
+|Discontinued in the late 1990s; regular Omnibus plates issued to NJ Transit buses since.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Outdoor Advertising
+|1931
+|12345
+|
+|rowspan="2"|Used on signs and billboards. Discontinued sometime after 1956.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Outdoor Advertising No Fee
+|by 1956
+|{{small|'''N'''/'''F'''}}123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|PUC LIM
+|1977
+|'''OL'''-1234
+|
+|PUC LIM stood for "Public Utilities Commission - Limousine". Replaced by Livery in 1979 (above).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Regulated Bulk Hauler
+|1981
+|1234
+|
+|Issued to [[Semi-trailer truck|semi-trailer]]s. Vertical "NJ" and "DMV" embossed at left and right respectively. Replaced by Apportioned in 1996.
+|}
+
+===Governmental===
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Current serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:New Jersey 1993 Assembly license plate - AA 0.jpg|150px]]
+|[[New Jersey General Assembly|Assembly]]
+|by 1936
+|{{small|A/B}}&nbsp;1
+|
+|Plates usually feature [[Coat of arms and flag of New Jersey|state seal]]s either side of the number. The letters at the left are the Assembly member's initials.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Atlantic City Expressway]]
+|1979
+|'''ACE'''&nbsp;12
+|
+|Used for all tollbooths of the Atlantic City Expressway.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Cabinet
+|
+|(numeric)
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|County Government
+|1926
+|'''CG'''1-CDE
+|'''CG'''-C123<br>'''CG'''-123C<br>A123-'''CG'''<br>'''CG'''12345
+|Current serial format began 2012.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[New Jersey Department of Transportation|Department of Transportation]]
+|1959
+|'''TD'''12345
+|'''TD'''-123<br>'''TD'''-1234
+|"STATE GOVT" legend. Current serial format began c.&nbsp;2004.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Former Assembly
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Former Senator
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Governor of New Jersey|Governor]]
+|by 1935
+|1
+|
+|Plates usually feature state seals either side of the number.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Highway Authority
+|1959
+|
+|'''HA'''-'''A'''123
+|No longer issued, as the Garden State Parkway is now under the purview of the Turnpike Authority.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Mayor
+|
+|{{small|A/B}}&nbsp;1&nbsp;{{small|C/D}}
+|
+|The first two letters are a code signifying the municipality, and the last two letters are the mayor's initials.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Mayor Emeritus
+|c.&nbsp;2000
+|{{small|'''M'''/'''E'''}}1234
+|
+|New Jersey Conference of Mayors logo at left. Vanity and Courtesy variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal Government
+|1926
+|12345'''MG'''
+|'''MG'''-C123<br>'''MG'''-123C<br>'''MG'''-1234<br>123'''MG'''-C<br>'''MG'''-12CD<br>'''MG'''12345
+|Current serial format began late 2013.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal No Fee
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal Government Motorcycle
+|
+|
+|
+|
+|-
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[New Jersey Senate|Senate]]
+|by 1933
+|AB
+|
+|Letters indicate senator's initials.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Sheriff
+|
+|''A''&nbsp;'''1'''&nbsp;{{small|A/B}}
+|
+|The letter on the left indicates the county, while the letters on the right are the initials of the Sheriff for that county.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Government
+|1926
+|'''SG'''12345
+|'''SG'''-C123<br>'''SG'''-C12D
+|Current serial format began 1993.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Police
+|c.&nbsp;1964
+|'''SPA'''123D
+|'''SP'''-'''A'''123
+|Used for all [[New Jersey State Police]] vehicle. State Police also has TP for vehicles assigned to turnpike patrol
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Senate Majority Leader
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[New Jersey Turnpike Authority|Turnpike Authority]]
+|1959
+|'''TPA'''1234
+|'''TP'''-'''A'''123
+|Used for NJ turnpike maintenance vehicles and New Jersey State Police vehicles assigned to turnpike patrol 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|U.S. Congress
+|c.&nbsp;1952
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|U.S. Senate
+|c.&nbsp;1952
+|1 or 2 (depending on seniority), flanked by state seals
+|
+|
+|}
+
+===Professional===
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Current serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Chiropractor]]
+|1977
+|'''1 DC''' 234
+|
+|Vanity variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dentist
+|1977
+|'''DDS''' 123<br>'''DMD''' 123
+|
+|Vanity variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Emergency medical technician|EMT]]
+|1993
+|{{small|'''E'''/'''M'''}}1234
+|
+|[[Star of Life]] at left.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farmer
+|1933
+|'''XY'''C-12D, '''XZ'''C-12D
+|'''XY'''C-123, '''XZ'''C-123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Firefighter
+|1977
+|1A-B2
+|A1-2B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Firemen's Benevolent Association
+|1990
+|{{small|'''F'''/'''F'''}}1234
+|
+|
+|-
+|[[File:NJ First Aider license plate.jpg|150px]]
+|First Aider
+|1981
+|'''F'''1234
+|
+|Cross at left.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fraternal Order of Police
+|1989
+|1234{{small|'''F'''/'''P'''}}
+|{{small|'''F'''/'''P'''}}1234
+|{{small|F/P}}9999 issued late 2019, followed by 1000{{small|F/P}} onwards.
+|-
+||[[File:Blank License Plate Shape.svg|150px]]
+|New Jersey Press
+|1979
+|'''NJP'''-123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|New York Press
+|1977
+|1234'''NYP'''
+|'''NYP'''-123<br>123-'''NYP'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Newark Firefighter
+|2001
+|{{small|'''F'''/'''D'''}}1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Operating Engineer
+|2005
+|{{small|'''O'''/'''E'''}}1234
+|
+|
+|-
+|[[File:MD2775 New Jersey physician's license plate.jpg|150px]]
+|Physician
+|1951
+|'''MD'''-1234<br>'''DO'''-1234
+|'''MD'''-C123
+|Vanity variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Podiatrist]]
+|1979
+|'''DPM'''-123
+|
+|Vanity variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Policemen's Benevolent Association
+|1991
+|1234{{small|'''P'''/'''B'''}}
+|{{small|'''P'''/'''B'''}}1234
+|{{small|P/B}}9999 issued late 2018, followed by 1000{{small|P/B}} onwards.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Society of Professional Engineers
+|1994
+|{{small|'''P'''/'''E'''}}1234
+|
+|
+|}
+
+===Organizational===
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Current serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Amateur Radio]]
+|
+|(call sign)
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Freemason
+|
+|<sup>M</sup><sub>B</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Honor Legion
+|
+|<sup>P</sup><sub>D</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Knights of Columbus]] (Columbianism)
+|
+|<sup>K</sup><sub>C</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Rotary International
+|
+|<sup>R</sup><sub>I</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Square Dancer
+|
+|<sup>S</sup><sub>D</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Teamsters
+|
+|<sup>I</sup><sub>B</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Telephone Pioneer
+|
+|<sup>P</sup><sub>A</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|United Bowhunters
+|
+|<sup>U</sup><sub>B</sub>1234
+|
+|
+|}
+
+===Military and Veteran===
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Current serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Air Force Auxiliary
+|
+|<sup>C</sup><sub>P</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Air Force Reserve
+|
+|<sup>C</sup><sub>F</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Air Force Retired
+|
+|<sup>R</sup><sub>A</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Air Guard
+|
+|<sup>N</sup><sub>G</sub>A 123
+|
+|The letter appearing after the N/G is the first letter of the plate owner's last name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Airborne
+|
+|<sup>A</sup><sub>B</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[American Legion]]
+|
+|<sup>A</sup><sub>L</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Amvets]]
+|
+|<sup>A</sup><sub>V</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Army Guard
+|
+|<sup>N</sup><sub>G</sub>A 123
+|
+|The letter appearing after the N/G is the first letter of the plate owner's last name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Army Reserve
+|
+|<sup>A</sup><sub>R</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Coast Guard Auxiliary
+|
+|<sup>C</sup><sub>A</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Coast Guard Reserve
+|
+|<sup>C</sup><sub>R</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Combat Veteran
+|
+|<sup>C</sup><sub>I</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Combat Wounded
+|
+|<sup>P</sup><sub>H</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled American Veteran
+|
+|<sup>W</sup><sub>D</sub>1234
+|DAV-123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Disabled Veteran]]
+|
+|<sup>D</sup><sub>V</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Gold Star Family
+|2011
+|<sup>M</sup><sub>H</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Leatherneck
+|
+|<sup>M</sup><sub>L</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Merchant Marine
+|
+|<sup>M</sup><sub>M</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Navy Cross
+|
+|<sup>N</sup><sub>C</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Navy Lakehurst
+|
+|<sup>L</sup><sub>K</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Navy League
+|
+|<sup>N</sup><sub>L</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Navy Reserve
+|
+|<sup>N</sup><sub>R</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Pearl Harbor '41
+|
+|1234<sup>P</sup><sub>H</sub>
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Prisoner of War
+|
+|P1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Silver Star
+|
+|1234<sup>S</sup><sub>S</sub>
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Silent Service
+|
+|<sup>S</sup><sub>S</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Tin Can Sailors
+|
+|<sup>D</sup><sub>D</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|U.S. Army Retired
+|
+|<sup>G</sup><sub>I</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veterans of Foreign Wars
+|
+|<sup>W</sup><sub>V</sub>1234
+|VFW-123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Vietnam Veteran
+|
+|<sup>V</sup><sub>V</sub>1234
+|
+|
+|}
+
+===College and University Optionals===
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Current serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|New Jersey Institute of Technology
+|
+|<sup>J</sup><sub>T</sub>1234
+|
+|"Highlanders"
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Notre Dame
+|
+|<sup>N</sup><sub>D</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Penn State Alumni
+|
+|<sup>P</sup><sub>S</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Rutgers
+|
+|<sup>R</sup><sub>U</sub>1234, 1234<sup>R</sup><sub>U</sub>
+|
+|New graphic features Rutgers' red "R" and numbers-first format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Seton Hall
+|
+|<sup>S</sup><sub>H</sub>1234
+|
+|Base revised in 2007 – rim is no longer embossed and has updated Pirates logo
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Stevens Tech
+|
+|<sup>S</sup><sub>T</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Temple University
+|
+|<sup>U</sup><sub>N</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|University of Delaware
+|
+|<sup>U</sup><sub>D</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|University of Michigan
+|
+|<sup>U</sup><sub>M</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|West Point
+|
+|<sup>W</sup><sub>P</sub>1234
+|
+|
+|}
+
+===Specialty===
+{|class="wikitable sortable"
+!Image
+!Type
+!First issued
+!Current serial format
+!Previous serial formats
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Alpha Kappa Alpha]]
+|October 2017
+|<sup>I</sup><sub>V</sub>1234
+|
+|Features the [[Ivy leaf]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Animal Friendly
+|1995
+|
+|<sup>I</sup><sub>M</sub>1234, <sup>I</sup><sub>M</sub>123A, <sup>I</sup><sub>M</sub>12AB (ended at ...99CZ)
+|No longer issued but still valid
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Animal Friendly ([[Mutts (comic strip)|''Mutts'']])
+|2002
+|<sup>I</sup><sub>M</sub>BA12
+|<sup>I</sup><sub>M</sub>12EA
+|Plate features characters from [[Patrick McDonnell]]'s comic strip
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Battleship 
+|1996
+|<sup>B</sup><sub>B</sub>12AB
+|<sup>B</sup><sub>B</sub>1234, 1234<sup>B</sup><sub>B</sub>
+|Features an image of battleship {{USS|New Jersey|BB-62|6}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Baymen's Heritage
+|February 26, 1998<ref>{{cite web|url=http://www.state.nj.us/transportation/about/press/1998/022498.shtm |title=Baymen's Heritage License Plate To Be Unveiled |publisher=[[New Jersey Department of Transportation]] |date=February 24, 1998 |access-date=August 15, 2016}}</ref>
+|<sup>B</sup><sub>H</sub>12AB
+|<sup>B</sup><sub>H</sub>1234, 1234<sup>B</sup><sub>H</sub>
+|Sports an image of the [[Tuckerton Seaport|Tucker's Island Lighthouse]]
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Center for Food Action
+|2001
+|
+|<sup>C</sup><sub>F</sub>1234
+|No longer being issued (see below)
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Choose Life
+|2011
+|<sup>C</sup><sub>F</sub>1234
+|
+|Uses same prefix as previously issued Center for Food Action plates, of which less than 100 were registered.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Conquer [[Cancer]]
+|1998
+|<sup>C</sup><sub>C</sub>AB12
+|<sup>C</sup><sub>C</sub>1234, <sup>C</sup><sub>C</sub>12AB, A123<sup>C</sup><sub>C</sub>
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Conserve [[Wildlife]] – [[Red-headed woodpecker|Woodpecker]]
+|1993
+|
+|<sup>C</sup><sub>W</sub>1234, <sup>C</sup><sub>W</sub>123A, <sup>C</sup><sub>W</sub>12AB
+|No longer issued but still valid.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Conserve Wildlife – [[Bald eagle|Bald Eagle]]
+|June 26, 1997
+|A123<sup>W</sup><sub>C</sub>
+|<sup>W</sup><sub>C</sub>123A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Deborah Heart & Lung
+|2000
+|1234<sup>D</sup><sub>H</sub>
+|<sup>D</sup><sub>H</sub>1234
+|
+|-
+| 
+|Discover NJ [[History]]
+|March 26, 1997
+|1234<sup>Z</sup><sub>Z</sub>
+|<sup>Z</sup><sub>Z</sub>1234
+|Features painting of a house in Lambertville, New Jersey by renowned New Jersey artist Harry Devlin. Proceeds go to the Historic License Plate Preservation Fund to save priceless historic buildings, artifacts and documents.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Liberty State Park]]
+|1999
+|1234<sup>L</sup><sub>S</sub>
+|<sup>L</sup><sub>S</sub>1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[New Jersey Meadowlands|Meadowlands]]
+|2001
+|<sup>M</sup><sub>C</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|New Jersey Agriculture
+|January 29, 2001
+|<sup>G</sup><sub>S</sub>12BA,
+<sup>X</sup><sub>Y</sub>123<sup>A</sup><sub>A</sub> (farmer)
+<sup>X</sup><sub>A</sub>123<sup>A</sup><sub>A</sub> (commercial)
+<sup>F</sup><sub>X</sub>123<sup>A</sup><sub>A</sub> (farm use)
+|<sup>G</sup><sub>S</sub>1234, 1234<sup>G</sup><sub>S</sub>
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|NPDF Safe Cop
+|
+|<sup>P</sup><sub>F</sub>1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Olympic Committee|Olympic]] Spirit
+|1995
+|1234<sup>U</sup><sub>S</sub>
+|<sup>U</sup><sub>S</sub>1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Organ Donors Save Lives
+|2002
+|1234<sup>D</sup><sub>L</sub>
+|<sup>D</sup><sub>L</sub>1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Pinelands
+|1998
+|<sup>P</sup><sub>L</sub>12AB
+|<sup>P</sup><sub>L</sub>1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Price of Honor
+|2002
+|<sup>L</sup><sub>E</sub>AB12
+|<sup>L</sup><sub>E</sub>1234, 1234<sup>L</sup><sub>E</sub>, <sup>L</sup><sub>E</sub>12AB, BA12<sup>L</sup><sub>E</sub>
+|
+|-
+|
+|[[Jersey Shore|Shore]] to Please
+|November 1993
+|<sup>S</sup><sub>A</sub>12AB
+|<sup>S</sup><sub>A</sub>1234,<sup>S</sup><sub>A</sub>123A, <sup>S</sup><sub>C</sub>123A, <sup>S</sup><sub>E</sub>123A, <sup>S</sup><sub>F</sub>123A, <sup>S</sup><sub>J</sub>123A, <sup>S</sup><sub>K</sub>123A, <sup>S</sup><sub>L</sub>123A, <sup>S</sup><sub>N</sub>123A, <sup>S</sup><sub>R</sub>123A, <sup>S</sup><sub>U</sub>123A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Treasure Our Trees
+|1998
+|<sup>W</sup><sub>E</sub>123A, <sup>X</sup><sub>A</sub>123<sup>W</sup><sub>E</sub> (commercial)
+|<sup>W</sup><sub>E</sub>1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|United We Stand
+|2004
+|<sup>U</sup><sub>W</sub>12AB
+|<sup>U</sup><sub>W</sub>1234, 1234<sup>U</sup><sub>W</sub>
+|
+|}
+
+===Sports===
+The New Jersey sports plates were introduced in the fall of 2010. They share a common serial format – {{small|R/M}}12AB – and were the first NJ plates to be issued with screened, rather than embossed, serials.
+{|class="wikitable"
+!Image
+!Type
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[NASCAR]]
+|Plates feature the number and signature of one of the following eight drivers: [[Dale Earnhardt]], [[Dale Earnhardt Jr.]], [[Danica Patrick]], [[Jeff Gordon]], [[Jimmie Johnson]], [[Kevin Harvick]], [[Martin Truex Jr.]] and [[Tony Stewart]]. There is also a Dale Earnhardt Hall of Fame commemorative plate, a [[Ford Racing]] plate and a generic NASCAR Fan plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Basketball Association|NBA]]
+|Plates feature the logo of either the [[New York Knicks]] or the [[Philadelphia 76ers]].<ref>[http://www.state.nj.us/mvc/Vehicle/nba.htm NBA License Plates], New Jersey Motor Vehicle Commission. Retrieved 2010-11-21.</ref> There was also a [[New Jersey Nets]] plate, which was discontinued when the Nets moved to Brooklyn in 2012.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Hockey League|NHL]]
+|Plates feature the logo of either the [[New Jersey Devils]] or the [[Philadelphia Flyers]].<ref>[http://www.state.nj.us/mvc/Vehicle/nhl.htm NHL License Plates], New Jersey Motor Vehicle Commission. Retrieved 2012-08-14.</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Major League Baseball|MLB]]
+|Plates feature the logo of either the [[New York Yankees]], the [[New York Mets]] or the [[Philadelphia Phillies]].<ref>[http://www.state.nj.us/mvc/Vehicle/mlb.htm MLB License Plates], New Jersey Motor Vehicle Commission. Retrieved 2010-11-27.</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Football League|NFL]]
+|Plates feature a graphic of the helmet of either the [[New York Jets]], the [[New York Giants]] or the [[Philadelphia Eagles]].<ref>[http://www.state.nj.us/mvc/Vehicle/nfl.htm NFL License Plates], New Jersey Motor Vehicle Commission. Retrieved 2010-12-22.</ref>
+|}
+
+===Other===
+{|class="wikitable"
+!Image
+!Type
+!First issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Beach Buggy Association
+|early 1970s
+|Issued to members of the [https://www.njbba.org/ New Jersey Beach Buggy Association] for member identification; the serial number on each plate is the owner's membership number. Current plate design is dark red on white with the slogan "Fighting For Beach Access Since 1954".
+|}
+
+==References==
+{{Reflist|refs=
+<ref name="Jim Moini">[http://moini.net/index.htm Jim Moini's License Plates]</ref>
+}}
+
+==External links==
+*[https://www.15q.net/nj.html New Jersey license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200225152847/http://www.15q.net/nj.html |date=February 25, 2020 }}
+*[https://alpcagardenstate.org Garden State Region of the Automobile License Plate Collectors Association]
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{New Jersey}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|New Jersey]]
+[[Category:Transportation in New Jersey]]
+[[Category:New Jersey transportation-related lists]]
+[[Category:1908 establishments in New Jersey]]

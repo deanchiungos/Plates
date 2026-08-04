@@ -1,0 +1,677 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = 1989 Nova Scotia license plate FRP 490 type II.jpg
+| caption = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Canada's Ocean Playground
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123
+| current_start_date = {{Start date|2011}}
+| designer = 
+| issuer = Nova Scotia Registry of Motor Vehicles
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia]]
+| start_date = {{Start date|1918|01|01}}<br>(pre-provincial plates from 1907 through December 31, 1917)
+}}
+The [[Provinces and territories of Canada|Canadian province]] of [[Nova Scotia]] first required its residents to register their [[motor vehicle]]s in 1907. Registrants provided their own [[Vehicle registration plate|licence plate]]s for display until 1918, when the province began to issue plates.<ref>{{cite web |last=Taylor |first=Eric Robert |title=Nova Scotia Pre-Provincial Plates |url=http://porcelainplates.net/nova_scotia_collection.html |publisher=PorcelainPlates.net |access-date=November 25, 2017}}</ref>
+
+{{As of|2025}}, plates are issued by the Nova Scotia Registry of Motor Vehicles. Only rear plates have been required since 1997.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1918 to 1959===
+In 1956, Canada, the United States, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Nova Scotia licence plate that complied with these standards was issued fifteen years beforehand, in 1941.{{citation needed|date=October 2018}}
+
+No slogans were used on passenger plates during the period covered by this subsection.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|White serial on green flat metal plate; "NOVA SCOTIA", [[Coat of arms of Nova Scotia|provincial shield]] and "1918" at left
+|1234
+|1 to approximately 9000
+|
+|-
+|[[File:Nova Scotia License Plate 1919.jpg|150px]]
+|1919
+|Black serial on yellow flat metal plate; "NOVA SCOTIA", provincial shield and "1919" at left
+|12345
+|1001 to approximately 12000
+|
+|-
+|[[File:Nova Scotia License Plate 1920.jpg|150px]]
+|1920
+|Embossed white serial on dark blue plate with border line; "NOVA SCOTIA", provincial shield and "1920" at left
+|12345
+|1001 to approximately 12500
+|First embossed plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1921
+|Black serial on light green flat metal plate; "NOVA SCOTIA", provincial shield and "1921" at left
+|12345
+|1001 to approximately 13500
+|
+|-
+|[[File:Nova Scotia License Plate 1922.jpg|150px]]
+|1922
+|Embossed white serial on black plate with border line; "NS 22" at left
+|12-345
+|1-001 to approximately 15-500
+|
+|-
+|[[File:Nova Scotia License Plate 1923.jpg|150px]]
+|1923
+|Embossed red serial on gray plate with border line; "NOVA SCOTIA 1923" at right
+|12-345
+|1-001 to approximately 17-000
+|
+|-
+|[[File:Nova Scotia License Plate 1924.jpg|150px]]
+|1924
+|Embossed yellow serial on black plate with border line; "NS 24" at right
+|12-345
+|1-001 to approximately 19-000
+|
+|-
+|[[File:Nova Scotia License Plate 1925.jpg|150px]]
+|1925
+|Embossed black serial on white plate with border line; "NOVA SCOTIA–25" at bottom
+|12-345
+|1-001 to approximately 21-000
+|
+|-
+|rowspan="2"|[[File:Nova Scotia License Plate 1926 Heavy Vehicle.jpg|150px]]
+|rowspan="2"|1926
+|rowspan="2"|Embossed white serial on dark green plate with border line; "NOVA SCOTIA 1926" at bottom
+|'''L'''12-345
+|L1-001 to approximately L11-500
+|rowspan="2"|'L' prefix used for vehicles weighing 3,000 lb or less, and 'H' prefix for vehicles above 3,000 lb. This happened again in 1927.<ref name="allaboutlicenseplatesNS">{{cite web |last=Tanner |first=Eric N. |title=Nova Scotia Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Nova%20Scotia&code=ns |publisher=allaboutlicenseplates.com |access-date=November 17, 2020}}</ref>
+|-
+|'''H'''12-345
+|H15-001 to approximately H24-500
+|-
+|rowspan="2"|[[File:Nova Scotia License Plate 1927.jpg|150px]]
+|rowspan="2"|1927
+|rowspan="2"|Embossed yellow serial on black plate with border line; "NOVA SCOTIA 1927" at bottom
+|'''L'''12-345
+|L1-001 to approximately L19-000
+|rowspan="2"|
+|-
+|'''H'''12-345
+|H19-001 to approximately H29-500
+|-
+|rowspan="2"|[[File:Nova Scotia License Plate 1928.jpg|150px]]
+|rowspan="2"|1928
+|rowspan="2"|Embossed black serial on orange plate with border line; "1928" and "NOVA SCOTIA" centred at top and bottom respectively
+|12-345
+|10-001 to approximately 27-500
+|rowspan="2"|No letter prefix used for vehicles weighing 3,000 lb or less.
+|-
+|'''H'''12-345
+|H40-001 to approximately H52-500
+|-
+|[[File:Nova Scotia License Plate 1929.jpg|150px]]
+|1929
+|Embossed white serial on red plate with border line; "NOVA SCOTIA 29" at bottom
+|12-345
+|10-001 to approximately 41-500
+|
+|-
+|[[File:Nova Scotia License Plate 1930.jpg|150px]]
+|1930
+|Embossed red serial on white plate with border line; "30 NOVA SCOTIA" at bottom
+|12-345
+|40-001 to approximately 85-000
+|
+|-
+|[[File:Nova Scotia License Plate 1931.jpg|150px]]
+|1931
+|Embossed white serial on black plate with border line; "NOVA SCOTIA 31" at top
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1932.jpg|150px]]
+|1932
+|Embossed black serial on yellow plate; "NOVA SCOTIA 32" at bottom
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1933.jpg|150px]]
+|1933
+|Embossed orange serial on black plate; "33 NOVA SCOTIA" at bottom
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1934.jpg|150px]]
+|1934
+|Embossed white serial on dark blue plate; "NOVA SCOTIA 34" at bottom
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1935.jpg|150px]]
+|1935
+|Embossed dark blue serial on white plate; "35-NOVA SCOTIA" at bottom
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1936.jpg|150px]]
+|1936
+|Embossed white serial on red plate; "NOVA SCOTIA 36" at top
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1937.jpg|150px]]
+|1937
+|Embossed yellow serial on black plate; "37-NOVA SCOTIA" at bottom
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1938.jpg|150px]]
+|1938
+|Embossed black serial on yellow plate; "NOVA SCOTIA" and "1938" centred at top and bottom respectively
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1939.jpg|150px]]
+|1939
+|Embossed white serial on green plate; "NOVA" and "SCOTIA" centred at top and bottom respectively; vertical "1939" at right
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1940.jpg|150px]]
+|1940
+|Embossed white serial on black plate with border line; "NOVA" and "SCOTIA" centred at top and bottom respectively; vertical "1940" at right
+|''1''2-345
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1941.jpg|150px]]
+|1941
+|Embossed black serial on cream plate with border line; "NOVA SCOTIA '41" at bottom
+|''1''-23-45
+|Coded by county group (''1'')
+|First 6" x 12" plate.
+|-
+|[[File:Nova Scotia License Plate 1942.jpg|150px]]
+|1942
+|Embossed black serial on pale green plate with border line; "NOVA SCOTIA" and "1942" centred at top and bottom respectively
+|''1''-23-45
+|Coded by county group (''1'')
+|Produced in pairs but only single plates issued; the remaining plates were restamped and repainted for use in 1943 and 1944, due to metal conservation for [[World War II]].<ref name="allaboutlicenseplatesNS"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1943–44}}
+|Embossed white serial on black plate with border line; "NOVA SCOTIA" and "1943" centred at top and bottom respectively
+|''1''-23-45
+|Coded by county group (''1'')
+|Restamped and repainted 1942 plates. Revalidated for 1944 with windshield stickers.
+|-
+|[[File:Nova Scotia License Plate 1945.jpg|150px]]
+|1945
+|Embossed black serial on cream plate with border line; "NOVA SCOTIA '45" at bottom
+|''1''-23-45
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1946.jpg|150px]]
+|1946
+|Embossed black serial on gray plate with border line; "NOVA SCOTIA '46" at top
+|''1''-23-45
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1947.jpg|150px]]
+|1947
+|Embossed white serial on black plate with border line; "NOVA SCOTIA '47" at bottom
+|''1''-23-45
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1948.jpg|150px]]
+|1948
+|Embossed black serial on pale green plate with border line; "NOVA SCOTIA '48" at bottom
+|''1''-23-45
+|Coded by county group (''1'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Embossed black serial on cream plate with border line; "NOVA SCOTIA '49" at top
+|''1''-23-45
+|Coded by county group (''1'')
+|
+|-
+|[[File:Nova Scotia License Plate 1950.jpg|150px]]
+|1950
+|Embossed black serial on gray plate with border line; "NOVA SCOTIA - 50" at bottom
+|''1''-23-45
+|Coded by county group (''1'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Embossed black serial on orange plate with border line; "NOVA SCOTIA - 51" at top
+|''1''-23-45
+|Coded by county group (''1'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|Embossed black serial on unpainted aluminum plate with border line; "NOVA SCOTIA - 52" at bottom
+|''1''-23-45
+|Coded by county group (''1'')
+|Revalidated for 1953 with light blue tabs, for 1954 with black tabs, for 1955 with white tabs, and for 1956 with dark green tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|As above, but with "NOVA SCOTIA - 53" at bottom
+|rowspan="2"|{{nowrap|12-34-56}}
+|10-00-00 to {{nowrap|10-99-99}}
+|rowspan="2"|Issued only to new registrants. Validated for 1954, 1955 and 1956 in the same manner as for 1952 plates.
+|-
+|[[File:Nova Scotia License Plate 1954.jpg|150px]]
+|1953–56
+|As above, with "NOVA SCOTIA - 52" at bottom
+|11-00-00 to approximately 16–49–00
+|-
+|[[File:Nova Scotia License Plate 1957.jpg|150px]]
+|1957
+|Embossed black serial on white plate with border line; "NOVA SCOTIA '57" at top
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 13–34–00
+|
+|-
+|[[File:Nova Scotia License Plate 1958.jpg|150px]]
+|1958
+|Embossed light yellow serial on black plate with border line; "NOVA SCOTIA '58" at bottom
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 13–83–00
+|
+|-
+|[[File:Nova Scotia License Plate 1959.jpg|150px]]
+|1959
+|Embossed black serial on light yellow plate with border line; "NOVA SCOTIA '59" at top
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 14–70–00
+|
+|}
+
+===1960 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Nova Scotia License Plate 1960.jpg|150px]]
+|{{nowrap|1960–61}}
+|Embossed light yellow serial on black plate with border line; "NOVA SCOTIA '60" at bottom
+|''none''
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 18–37–00
+|Revalidated for 1961 with windshield stickers.
+|-
+|[[File:Nova Scotia License Plate 1962.jpg|150px]]
+|1962–63
+|Embossed black serial on light yellow plate with border line; "NOVA SCOTIA '62" at top
+|''none''
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 20–33–00
+|Revalidated for 1963 with windshield stickers.
+|-
+|[[File:Nova Scotia License Plate 1964.jpg|150px]]
+|1964–65
+|Embossed yellow serial on black plate with border line; "NOVA SCOTIA '64" at top
+|''none''
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 22–49–00
+|Revalidated for 1965 with windshield stickers.
+|-
+|[[File:Nova Scotia License Plate 1968.jpg|150px]]
+|1966–68
+|Embossed black serial on yellow plate with border line; "NOVA SCOTIA" at bottom, offset to left; black box at bottom right containing debossed "66"
+|''none''
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 28–20–00
+|
+|-
+|[[File:Nova Scotia License Plate 1971.jpg|150px]]
+|1969–71
+|Embossed yellow serial on black plate; border lines around plate and around bottom corners; "NOVA SCOTIA" centred at bottom; "69" at bottom left
+|''none''
+|1-23-45<br>12-34-56
+|2-00-00 to approximately 29–75–00
+|
+|-
+|[[File:Nova Scotia License Plate 1975.jpg|150px]]
+|1972–75
+|Embossed light blue serial on non-reflective white plate; border lines around plate and around top corners; "NOVA SCOTIA" centred at top
+|rowspan="3"|"CANADA'S OCEAN PLAYGROUND" at bottom
+|1-23-45<br>12-34-56
+|2-00-00 to<br>38-49-99
+|rowspan="3"|Letters I, O and Q not used in the ABC-123 serial format. Material changed from steel to aluminum in 1986.<ref name="allaboutlicenseplatesNS"/>
+|-
+|[[File:Nova Scotia License Plate 1978.jpg|150px]]
+|1975–79
+|rowspan="2"|As above, but reflective and with darker blue elements
+|12-34-56
+|38-50-00 to<br>66-39-99
+|-
+|[[File:Nova Scotia BGT026.jpg|150px|]]
+|1979–89
+|{{nowrap|ABC-123}}
+|AAA-001 to BRS-999
+|-
+|[[File:Nova Scotia CLY137.jpg|150px]]
+|1989–2011
+|Embossed blue serial on reflective white plate; border lines around plate and around top corners; light blue graphic of the ''[[Bluenose]]'' screened in the centre; "NOVA SCOTIA" screened in blue centred at top
+|rowspan="2"|"CANADA'S OCEAN PLAYGROUND" screened in blue at bottom
+|rowspan="2"|ABC 123
+|BRT 001 to FAD&nbsp;999
+|Awarded "Plate of the Year" for best new licence plate of 1989 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Nova Scotia has been so honored. Co-recipient with [[Vehicle registration plates of Oklahoma|Oklahoma]].
+|-
+|[[File:1989 Nova Scotia license plate FRP 490 type II.jpg|150px]]
+|2011–present
+|As above, but without border lines, and with narrower serial [[Die (manufacturing)|die]]s
+|FAE 001 to HTH&nbsp;021 {{small|(as of May 12 2026)}}
+|
+|}
+
+==Specialty plates==
+{|class="wikitable sortable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File: Acadian license plate of Nova Scotia.jpg|150px]]
+|[[Acadian|Acadian heritage]]
+|2012–present
+|Embossed blue serial on white plate; [[Flag of Acadia]] screened at left; "NOVA SCOTIA" and "NOUVELLE-ÉCOSSE" screened in blue centred at top
+|''none''
+|'''F'''BC12
+|FAA01&nbsp;to FBX48 {{small|(as of May 22, 2023)}}
+|
+|-
+|[[File:NS buy local license plate.jpg|150px]]
+|[[Local purchasing|Buy local]]
+|2013–present
+|Embossed blue serial on white plate; Select Nova Scotia logo (a circle with the [[Flag of Nova Scotia|provincial flag]] at the top, "Select" in blue handwritten font across the middle and "NOVA SCOTIA" in blue at the bottom) screened at left; "NOVA SCOTIA" screened in blue centred at top
+|"Buy Local" screened in blue centred at bottom
+|'''L'''BC12
+|LAA01&nbsp;to LAN69 {{small|(as of March 26, 2023)}}
+|Introduced&nbsp;to promote buying local produce.
+|-
+|[[File:NS conservation license plate.jpg|150px]]
+|[[Wildlife conservation|Conservation]]
+|2003–present
+|Embossed blue serial on white plate; [[piping plover]] screened at left; "NOVA SCOTIA" screened in blue centred at top
+|"Conservation - Species at Risk" screened in blue centred at bottom
+|'''P'''BC12
+|PAA01&nbsp;to PEB03 {{small|(as of March 26, 2023)}}
+|
+|-
+|[[File:Nova Scotia FM license plate.jpg|150px]]
+|Farmers and Fishermen
+|1960–present
+|Embossed blue serial on white plate; "NOVA SCOTIA" and "CANADA'S OCEAN PLAYGROUND" centred at top and bottom respectively, "FM" on left side of number vertically.
+|"CANADA'S OCEAN PLAYGROUND" screened in blue at bottom
+|{{nowrap|FM 1-23-45}}
+|
+|Issued to farmers or fishermen and must be displayed on either a commercial truck that is owned or leased by the farmer or fisherman or a passenger van with a minimum seating capacity of 7 that is owned or leased by the farmer or fisherman.<ref>[https://novascotia.ca/just/regulations/regs/mvplatesfarmer.htm Number Plates for Farmers and Fishermen Regulations made under Section 38 of the Motor Vehicle Act, R.S.N.S. 1989, c. 293, O.I.C. 2012-335 (October 30, 2012), N.S. Reg. 203/2012] Government of Nova Scotia</ref>
+|-
+|[[File:Nova Scotia Firefighter Plate.jpg|150px]]
+|[[Firefighter]]
+|1991–present<ref>[https://novascotia.ca/just/regulations/regs/mvnpfire.htm?utm_source=chatgpt.com Number Plates for Firefighters Regulations made under subsection 36(1) of the Motor Vehicle Act, R.S.N.S. 1989, c. 293, N.S. Reg. 49/91] Government of Nova Scotia</ref>
+|Embossed blue serial on white plate; Firefighter's Cross at left, with "FD" inside; "NOVA SCOTIA" screened in blue centred at top, "FF" on right side of number vertically.
+|"FIREFIGHTER" screened in blue centred at bottom
+|'''A'''BC1
+|
+|Available to career firefighters
+|-
+|[[File:Gaelic License Plate.jpg|150px]]
+|[[Canadian Gaelic|Gaelic heritage]]
+|2018–present
+|Embossed blue serial on white plate; [[Salmon of Knowledge]] screened at left; "NOVA SCOTIA" screened in blue centred at top
+|"ALBA NUADH" screened in blue centred at bottom
+|'''G'''BC12
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Consul (representative)|Honorary Consul]]
+|1989–present
+|Embossed blue serial on white plate; “NOVA SCOTIA” and “HONORARY CONSUL” centred at top and bottom respectively
+|NSC 123
+|
+|
+|Issued to persons who have been appointed an Honorary Consul<ref>[https://novascotia.ca/just/regulations/regs/MVhonconsulnp.htm Honorary Consul Number Plates Regulations made under Section 38 of the Motor Vehicle Act, R.S.N.S. 1989, c. 293, O.I.C. 2020-239 (effective September 8, 2020), N.S. Reg. 117/2020] Government of Nova Scotia</ref>
+|-
+|[[File:Nova scotia MI'KMA'KI plate.jpg|150px]]
+|[[Mi'kmaq|Mi'kmaq heritage]]
+|2018–present
+|Embossed blue serial on white plate; eight-point star [[petroglyph]] screened at left; "NOVA SCOTIA" screened in blue centred at top
+|"MI'KMA'KI LAND OF THE MI'KMAQ" screened in blue centred at bottom
+|'''M'''BC12
+|MAA01&nbsp;to MCA12 {{small|(as of May 17, 2023)}}
+|
+|-
+|[[File:Veterans license plate of Nova Scotia.jpg|150px]]
+|[[Veteran]]s
+|2003–present<ref>[https://news.novascotia.ca/en/2003/02/11/legion-president-receives-first-veterans-plate Legion President Receives First Veteran's Plate] Government of Nova Scotia</ref>
+|Embossed blue serial on white plate; [[flag of Canada]] at left; "NOVA SCOTIA" screened in blue centred at top
+|"VETERAN" screened in blue centred at bottom
+|'''A'''BC12
+|
+|Nova Scotia was the first province to institute a government-issued Veterans’ Licence Plate to recognize the contributions of veterans.<ref>[https://news.novascotia.ca/en/2024/09/12/changes-honour-more-nova-scotia-veterans-through-specialty-licence-plate Changes to Honour More Nova Scotia Veterans Through Specialty Licence Plate] Government of Nova Scotia</ref>
+|-
+|[[File:NS volunteer firefighter license plate.jpg|150px]]
+|[[Volunteer fire department|Volunteer firefighters]]
+|1999–present<ref name="Motor Vehicle Regulations Passed">[https://news.novascotia.ca/en/1999/12/02/motor-vehicle-regulations-passed Motor Vehicle Regulations Passed] Government of Nova Scotia</ref>
+|Embossed red serial on white plate; Firefighter's Cross at left, with "FD" inside; "NOVA SCOTIA" screened in red centred at top, "VFF" on right side of number vertically.
+|"VOLUNTEER FIREFIGHTER" screened in red centred at bottom
+|'''A'''BC1
+|
+|
+|-
+|[[File:Retired Volunteer FF license plate of Nova Scotia.jpg|150px]]
+|[[Volunteer fire department|Retired volunteer firefighters]]
+|2022–present
+|Embossed red serial on white plate; Firefighter's Cross at left, with "FD" inside; "NOVA SCOTIA" screened in red centred at top
+|"RETIRED VOLUNTEER FIREFIGHTER" screened in red centred at bottom
+|'''R'''BC12
+|
+|Issued to retired volunteer firefighters with at least 15 years of service
+|-
+|[[File:NS Search and Rescue License Plate.jpg|150px]]
+|[[National Search and Rescue Program|Volunteer search and rescue]]
+|1999–present<ref name="Motor Vehicle Regulations Passed"/>
+|Embossed red serial on white plate; Compass Rose at left; "NOVA SCOTIA" screened in red centred at top; "SAR" vertically at right
+|"VOLUNTEER" screened in red centred at bottom
+|'''A'''BC1
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Search and Rescue Program|Retired volunteer search and rescue]]
+|2022–present<ref>[https://novascotia.ca/sns/access/drivers/retired-volunteer-ground-search-rescue-licence-plate.asp Retired Volunteer Ground Search and Rescue Licence Plate] Nova Scotia</ref>
+|Embossed red serial on white plate; Compass Rose at left; "NOVA SCOTIA" screened in red centred at top; "SAR" vertically at right
+|"RETIRED VOLUNTEER SEARCH AND RESCUE" screened in red centred at bottom
+|'''R'''BC12
+|
+|Issued to retired search and rescue volunteers with at least 15 years of service
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!style="width:60px;"|Dates issued
+!Design
+!Serial format
+!style="width:80px;"|Serials issued
+!Notes
+|-
+|[[File:License plate for off-highway vehicles in Nova Scotia.png|150px]]
+|[[All-terrain vehicle]]
+|1989–present
+|Embossed red serial on white plate with red border lines around plate; “NOVA SCOTIA” and “OFF-HIGHWAY” centred at top and bottom respectively
+|AB·123
+|AA·001 to MS·999 <small>(as of February 1, 2026)</small>
+|
+|-
+|[[File:Nova Scotia Antique Auto License Plate 5341 (cropped).jpg|150px]]
+|rowspan="2"|Antique Auto
+|1966-2009
+|Embossed blue serial on white plate; border lines around plate and around top corners; "NOVA SCOTIA" and "CANADA'S OCEAN PLAYGROUND" centred at top and bottom respectively, "ANTIQUE AUTO" on left side of number.
+|1234
+|0001 to 9999
+|
+|-
+|[[File:Nova Scotia antique license plate.jpg|150px]]
+|2009–present
+|As above, but without border lines
+|A123
+|A001 to S628 {{small|(as of June 24, 2023)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[List of recreational vehicles|Camper]]
+|1977–present
+|Embossed blue serial on white plate with border line; "NOVA SCOTIA" and "CAMPER" centred at top and bottom respectively and blue provincial crest centered in middle.
+|12 345
+|
+|Must be displayed on a vehicle designed or reconstructed, equipped and used or intended to be used primarily for sleeping, eating and living quarters, and includes a motorized home or a bus converted for such purposes.<ref>[https://novascotia.ca/just/regulations/regs/mvcamper.htm Registration Fees for Campers Regulations made under subsection 302(1) of the Motor Vehicle Act, R.S.N.S. 1989, c. 293, O.I.C. 77-763 (July 5, 1977, effective November 1, 1977), N.S. Reg. 62/77, as amended to O.I.C. 2015-96 (March 31, 2015, effective June 1, 2015), N.S. Reg. 132/2015] Government of Nova Scotia</ref>
+|-
+|[[File:Nova Scotia Commercial License Plate 1983.jpg|150px]]
+|rowspan="2"|[[Commercial vehicle|Commercial]]
+|1978–2012
+|Embossed black serial on yellow plate; border lines around plate and around top corners; "NOVA SCOTIA" and "COMMERCIAL" centred at top and bottom respectively
+|rowspan="2"|{{nowrap|12-345-A}}
+|10-000-A to {{nowrap|37-519-D}}
+|rowspan="2"|Currently issued to commercial vehicles above {{convert|5000|kg|lb|abbr=on}}. Passenger plates issued to lighter commercial vehicles since 1986.<ref>{{cite web |last=Tanner |first=Eric N. |title=Nova Scotia Truck-Commercial License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Truck-Commercial&jurisdiction=Nova%20Scotia&code=ns |publisher=allaboutlicenseplates.com |access-date=February 4, 2021}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2012–present
+|As above, but without border lines
+|37-520-D to {{nowrap|61-129-D}} {{small|(as of January 15, 2024)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Handicap
+|1981-2012
+|Embossed blue serial on white plate; border lines around plate and around top corners; [[International Symbol of Access]] screened at left; "NOVA SCOTIA" and "CANADA'S OCEAN PLAYGROUND" centred at top and bottom respectively
+|rowspan="2"|1A-23
+|0A-01 to 9A-99
+|
+|-
+|[[File:NS Handicap License Plate.jpg|150px]]
+|2012–present
+|As above, but without border lines
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[Motorcycle]]
+|1972–78
+|Embossed blue serial on non-reflective white plate with border line; "NOVA SCOTIA" at top, offset to left
+|rowspan="2"|1-23-45
+|1-00 to {{nowrap|1-25-99}}
+|rowspan="3"|All motorcycle plates expire on December 31.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1978–98
+|As above, but reflective
+|1-26-00 to {{nowrap|9-75-99}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998–present
+|As above, but with rounder serial dies, and "NOVA SCOTIA" centred at top
+|123456
+|97600 to 219191 {{small|(as of September 17, 2023)}}
+|-
+|[[File:Restricted license plate of Nova Scotia (border).jpg|150px]]
+|rowspan="2"|Restricted
+|1974-2012
+|Embossed black serial on white plate; border lines around plate and around top corners; "RESTRICTED" and "NOVA SCOTIA" centred at top and bottom respectively
+|rowspan="2"|'''R'''12345
+|
+|rowspan="2"|Issued to municipal and province-owned vehicles
+|-
+|[[File:Restricted license plate of Nova Scotia (without border).jpg|150px]]
+|2012–present
+|As above, but without border lines
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Semi-trailer]]
+|1993–2012
+|Embossed red serial on yellow plate; border lines around plate and around top corners; "NOVA SCOTIA" and "OPEN FOR BUSINESS" centred at top and bottom respectively, "PT" on left side of number vertically.
+|rowspan="2"|{{nowrap|PT 1-23-45}}
+|rowspan="4"|All Trailer plates expire on December 31.
+|
+|-
+|[[File:Nova Scotia semi-trailer license plate.jpg|150px]]
+|2012–present
+|As above, but without border lines
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Trailer (vehicle)|Trailer]]
+|1981–2012
+|Embossed black serial on yellow plate; border lines around plate and around top corners; "NOVA SCOTIA" and "CANADA'S OCEAN PLAYGROUND" centred at top and bottom respectively
+|rowspan="2"|'''T'''1-23-45<br>'''T'''123-456
+|T1-00 to approximately T339-000
+|-
+|[[File:Trailer license plate of Nova Scotia.jpg|150px]]
+|2012–present
+|As above, but without border lines
+|T339-001 to T516-513 {{small|(as of January 8, 2024)}}
+|}
+
+==Controversies==
+===GRABHER licence plate===
+In 2017, Lorne Grabher of Nova Scotia had his custom licence plate revoked. The plate displayed his last name 'GRABHER', which he had purchased as a gift for his father in the 1990s. He had received a letter saying his plate would be cancelled as some had found his licence plate to be misogynistic and offensive.<ref>{{cite web |last1=Colbert |first1=Yvonne |title=Too rude for the road — government yanks man's last name from licence plate |url=https://www.cbc.ca/news/canada/nova-scotia/license-plate-government-regulations-removal-last-name-1.4037912 |website=CBC |publisher=CBC News |access-date=5 August 2022}}</ref> Lorne attempted to keep his plate by fighting back in court, claiming it violated his right to freedom of expression. However, in August 2021 the Nova Scotia Court of Appeals ruled his constitutional rights had not been violated. They concluded the plate could not be used as it could be seen as offensive without the correct context.<ref>{{cite web |last1=Rhodes |first1=Blair |title=Nova Scotia man loses appeal in 'Grabher' licence plate dispute |url=https://www.cbc.ca/news/canada/nova-scotia/nova-scotia-lorn-grabher-license-plate-loses-appeal-1.6151452 |website=CBC |publisher=CBC News |access-date=5 August 2022}}</ref> In 2022, the Supreme Court of Canada declined to hear an appeal of his case.<ref>{{cite web |title=Supreme Court won't hear appeal of Nova Scotia man's 'Grabher' licence plate case |url=https://globalnews.ca/news/8689904/grabher-supreme-court-appeal-licence-plate/ |website=Global News |publisher=The Canadian Press |access-date=5 August 2022}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/ns.html Nova Scotia licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20210427023235/http://www.15q.net/ns.html |date=2021-04-27 }}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:1918 establishments in Nova Scotia]]
+[[Category:Vehicle registration plates of Canada|Nova Scotia]]
+[[Category:Transport in Nova Scotia]]
+[[Category:Nova Scotia transport-related lists]]

@@ -1,0 +1,804 @@
+{{short description|New Mexico vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =
+| caption =
+| nickname =
+| slogan_label = Slogan
+| slogan = ''Yucca, turquoise and chile plates:''<br>Land of Enchantment<br>''Chile plate only:<br>''Chile Capital of the World
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ''Yucca:'' 123-ABC<br>''Turquoise:'' ABC-123<br>''Chile:'' ABCD12
+| current_start_date = ''Yucca:'' {{Start date|1991}}<br>''Turquoise:'' {{Start date|2010}}<br>''Chile:'' {{Start date|2017|07}}
+| designer = 
+| issuer = [[New Mexico Taxation and Revenue Department]], [[New Mexico Motor Vehicle Division|Motor Vehicle Division]]
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia]]
+| start_date = {{Start date|1912|06|08}}
+}}
+The U.S. state of [[New Mexico]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1912. {{As of|2024}}, plates are issued by the [[New Mexico Taxation and Revenue Department]] through its [[New Mexico Motor Vehicle Division|Motor Vehicle Division]]. Only rear plates have been required since 1961.
+
+New Mexico is the only state that specifies "USA" on its license plates, so as to avoid confusion with the country [[Mexico]], which it borders to the southwest.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1912 to 1960===
+In 1956, the United States, Canada and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first New Mexico license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:70px;"|Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1912-13 New Mexico License Plate.jpg|150px]]
+|{{nowrap|1912–13}}
+|Embossed green serial on white plate; diagonal "NM" at right
+|''none''
+|1234
+|1 to approximately 2100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Embossed white serial on green plate; vertical "N M 14" at right
+|''none''
+|1234
+|1 to approximately 3100
+|First dated plate.
+|-
+|[[File:1915 New Mexico License Plate.jpg|150px]]
+|1915
+|Embossed white serial on red plate; vertical "N M 15" at right
+|''none''
+|1234
+|1 to approximately 4700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed silver serial on dark blue plate; vertical "N M 16" at right
+|''none''
+|1234
+|1 to approximately 8300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Embossed black serial on orange plate with border line; vertical "N M 17" at right
+|''none''
+|12345
+|1 to approximately 14500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed light blue serial on gray plate with border line; vertical "N M 18" at right
+|''none''
+|12345
+|1 to approximately 19000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Embossed black serial on white plate with border line; vertical "N M 19" at right
+|''none''
+|12345
+|1 to approximately 17500
+|
+|-
+|[[File:New Mexico license plate, c. 1921.png|150px]]
+|1920–23
+|Dark blue serial on white porcelain plate; vertical "NM" at right
+|''none''
+|12345
+|1 to approximately 49000
+|Revalidated for 1921 with red diamond-shaped tabs, for 1922 with silver octagonal tabs, and for 1923 with yellow star-shaped tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed black serial on orange plate with border line; "N.M. 1924" centered at bottom
+|''none''
+|12-345
+|1 to approximately 39-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed white serial on black plate with border line; "N.M. 1925" centered at bottom; vertical "FRONT" or "REAR" at left
+|''none''
+|12345
+|1 to approximately 47000
+|Issued in pairs, for the front and the rear of the vehicle respectively.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed red serial on gray plate with border line; vertical "NM" and "26" at left and right respectively
+|''none''
+|12345
+|1 to approximately 51000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed black serial on yellow plate with border line; embossed [[Zia sun symbol]] at left with "27" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 55-000
+|First use of the full state name and Zia sun symbol.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed beige serial on dark blue plate with border line; embossed Zia sun symbol at left with "28" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 65-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed red serial on light yellow plate with border line; embossed Zia sun symbol at left with "29" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 75-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed golden yellow serial on black plate with border line; embossed Zia sun symbol at left with "30" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 71-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed black serial on golden yellow plate with border line; embossed Zia sun symbol at left with "31" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 70-000
+|
+|-
+|[[File:1932 New Mexico license plate.jpg|150px]]
+|1932
+|Embossed white serial with Zia sun symbol separator on green plate; "NEW MEX 32" at left
+|"SUNSHINE STATE" at bottom, offset to right
+|12-345
+|1 to approximately 65-000
+|
+|-
+|[[File:1933 New Mexico license plate 64-581.jpg|150px]]
+|1933
+|Embossed red serial on golden yellow plate; embossed Zia sun symbol at left with "33" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 65-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed yellow serial on red plate; embossed Zia sun symbol at left with "34" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 67-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed white serial on dark blue plate; embossed Zia sun symbol at left with "35" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 76-000
+|
+|-
+|[[File:1936 New Mexico license plate.jpg|150px]]
+|1936
+|Embossed dark blue serial on white plate; embossed Zia sun symbol at left with "36" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 86-000
+|
+|-
+|[[File:1937 New Mexico license plate.jpg|150px]]
+|1937
+|Embossed maroon serial on turquoise plate; embossed Zia sun symbol at left with "37" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 91-000
+|
+|-
+|[[File:1938 New Mexico license plate.jpg|150px]]
+|1938
+|Embossed black serial on yellow plate; embossed Zia sun symbol at left with "38" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 92-000
+|
+|-
+|[[File:1939 New Mexico license plate.jpg|150px]]
+|1939
+|Embossed black serial on orange plate; embossed Zia sun symbol at left with "39" in the center; "NEW MEXICO" centered at bottom
+|''none''
+|12-345
+|1 to approximately 93-000
+|
+|-
+|[[File:1940 New Mexico License Plate.jpg|150px]]
+|1940
+|Embossed yellow serial on red plate; embossed Zia sun symbol at left with "1540" above and "1940" below; "NEW MEXICO" centered at bottom
+|"CORONADO CUARTO CENTENNIAL" at top
+|12-345
+|1 to approximately 96-000
+|Commemorated the 400th anniversary of the expedition of [[Francisco Vázquez de Coronado]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed red serial on golden yellow plate; embossed Zia sun symbol at left with "41" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|12-345
+|1 to approximately 99-000
+|First use of the "Land of Enchantment" slogan.
+|-
+|[[File:1942 New Mexico license plate.jpg|150px]]
+|1942–43
+|Embossed black serial on white plate; embossed Zia sun symbol at left with "42" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|12-345<br>123456
+|1 to approximately 102000
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|Embossed white serial on black plate; embossed Zia sun symbol at left with "44" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|12-345
+|1 to approximately 79-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed white serial on blue plate; embossed Zia sun symbol at left with "45" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|12-345
+|1 to approximately 88-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed red serial on yellow plate; embossed Zia sun symbol at left with "46" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|12-345
+|1 to approximately 94-000
+|
+|-
+|[[File:1947 New Mexico license plate 11*3227.jpg|150px]]
+|1947
+|Embossed yellow serial on maroon plate; embossed Zia sun symbol used as separator with "47" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Embossed white serial on azure plate; embossed Zia sun symbol used as separator with "48" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Embossed azure serial on waffle-textured white plate; embossed Zia sun symbol used as separator with "49" in the center; "NEW MEXICO" centered at bottom
+|"THE LAND OF ENCHANTMENT" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|As 1948 base, but with "50" in the center of the Zia sun symbol
+|"THE LAND OF ENCHANTMENT" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:New Mexico license plate 1951 graphic.png|150px]]
+|1951
+|As 1949 base, but on smooth metal, and with narrower [[Die (manufacturing)|die]]s and "51" in the center of the Zia sun symbol
+|"THE LAND OF ENCHANTMENT" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:New Mexico license plate 1952 graphic.png|150px]]
+|1952
+|Embossed red serial with Zia sun symbol separator on white plate; "NEW MEXICO" centered at bottom; "52" at top left
+|"LAND OF ENCHANTMENT" at top, offset to right
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1953 New Mexico License Plate.jpg|150px]]
+|1953
+|Embossed white serial with Zia sun symbol separator on red plate with border line; "NEW MEXICO" centered at bottom; "53" at top left
+|"LAND OF ENCHANTMENT" at top, offset to right
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1954 New Mexico license plate.jpg|150px]]
+|1954
+|Embossed red serial with Zia sun symbol separator on white plate with border line; "NEW MEXICO" centered at bottom; "54" at top left
+|"LAND OF ENCHANTMENT" at top, offset to right
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed golden yellow serial with Zia sun symbol separator on maroon plate with border line; "NEW MEXICO" centered at bottom; "55" at top left
+|"LAND OF ENCHANTMENT" at top, offset to right
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:New Mexico license plate 1956 graphic.png|150px]]
+|1956
+|Embossed white serial with Zia sun symbol separator on maroon plate with border line; "56 NEW MEXICO 56" at bottom
+|"LAND OF ENCHANTMENT" centered at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:New Mexico license plate 1957 graphic.png|150px]]
+|1957
+|Embossed green serial with Zia sun symbol separator on white plate with border line; "57 NEW MEXICO 57" at bottom
+|"LAND OF ENCHANTMENT" centered at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1958 New Mexico (USA) license plate.jpg|150px]]
+|1958
+|Embossed red serial with Zia sun symbol separator on golden yellow plate with border line; "NEW MEXICO" centered at bottom; "58" at bottom right
+|"LAND OF ENCHANTMENT" at top
+|''1''-12345<br>{{small|''1''/''0''}}-1234
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|One-digit county plates had the slogan centered, while two-digit county plates had the slogan offset to the right. This practice continued through 1971. One-digit county plates additionally had "19" embossed at the bottom left.
+|-
+|[[File:1959 New Mexico license plate.jpg|150px]]<br>[[File:1960 New Mexico license plate.jpg|150px]]
+|1959–60
+|Embossed golden yellow serial with Zia sun symbol separator on maroon plate with border line; "NEW MEXICO" centered at bottom; "59" at bottom right
+|"LAND OF ENCHANTMENT" at top
+|''1''-12345<br>'''''2'''''-A1234<br>{{small|''1''/''0''}}-12345
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|One-digit county plates additionally had "19" embossed at the bottom left. One-letter, four-digit serials issued in [[Bernalillo County, New Mexico|Bernalillo County]] after 2-99999 was reached. Revalidated for 1960 with white stickers on maroon tabs.
+|}
+
+===1961 to present===
+{|class="wikitable"
+|-
+!Image(s)
+!style="width:60px;"|Dates issued
+!Design
+!Slogan
+!style="width:70px;"|Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:New Mexico license plate 1961 graphic.png|150px]]
+|1961–64
+|Embossed red serial with Zia sun symbol separator on white plate with border line; "NEW MEXICO" centered at bottom
+|"LAND OF ENCHANTMENT" at top
+|''1''-12345<br>'''''2'''''-A1234<br>{{small|''1''/''0''}}-12345
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:1967 New Mexico license plate.JPG|150px]]<br>[[File:1966 New Mexico (USA) license plate.jpg|150px]]
+|1965–69
+|Embossed red serial with Zia sun symbol separator on yellow plate with border line; "NEW MEXICO" centered at bottom
+|rowspan="2"|"LAND OF ENCHANTMENT" at top
+|rowspan="2"|''1''-12345<br>'''''2'''''-A1234<br>{{small|''1''/''0''}}-12345
+|rowspan="2"|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|One-digit county plates had "65" embossed at the bottom left.
+|-
+|[[File:1971 New Mexico license plate 2*V8122.jpg|150px]]
+|{{nowrap|1969–71}}
+|As above, but with "NEW MEXICO USA" at bottom
+|One-digit county plates initially had "19" embossed at the bottom left.
+|-
+|[[File:1972-74 New Mexico License Plate.jpg|150px]]
+|1972–74
+|Embossed red serial with Zia sun symbol separator on white steel plate with border line; "NEW MEXICO USA" centered at bottom; "72" at bottom left
+|rowspan="4"|"LAND OF ENCHANTMENT" centered at top
+|rowspan="4"|ABC-123
+|AAA-001 to BCT-999
+|Letters I, O, Q, U and V not used in serials from 1973 onwards.<ref name="allaboutlicenseplatesNM">{{cite web |last=Tanner |first=Eric N. |title=New Mexico Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=New%20Mexico&code=nm |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1974
+|Red serial with Zia sun symbol separator on white paper plate; "NEW MEXICO" centered at bottom; "74" at bottom right
+|rowspan="2"|BCW-001 to BFC-999
+|Temporary plates issued due to steel shortage.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As 1972–74 plates, but [[aluminum]] rather than steel, and with "74" at bottom left
+|Replacements for paper plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1974–76
+|As 1972–74 plates, but aluminum rather than steel
+|BFD-001 to BTM-999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1976–78
+|Embossed red serial with Zia sun symbol separator on white plate; "NEW MEXICO" centered at bottom; "72" at bottom left; stamped indentation at top center for county-name sticker
+|rowspan="2"|"LAND OF ENCHANTMENT" centered between serial and state name
+|rowspan="2"|ABC-123
+|BTN-001 to CCW-999
+|rowspan="2"|
+|-
+|[[File:New Mexico license plate, 1980.png|150px]]
+|1978–82
+|As above, but yellow rather than white, and without "72"
+|CCX-001 to EGZ-999
+|-
+|[[File:New Mexican license plate, 1988.jpg|150px]]
+|1982&nbsp;– mid<br>1988
+|Embossed red serial with Zia sun symbol separator on yellow plate; "New Mexico" screened in red centered below serial; stamped indentation at top center for county-name sticker
+|rowspan="2"|"Land of Enchantment" screened in red centered at bottom
+|rowspan="2"|ABC-123
+|EHA-001 to KAJ-999
+|rowspan="2"|'F' series not used.<ref name="allaboutlicenseplatesNM"/>
+|-
+|[[File:New Mexico license plate, 1988-1990.png|150px]]
+|mid 1988&nbsp;– late<br>1990
+|As above, but with "USA" added after state name
+|KAK-001 to LKL-999
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|late 1990&nbsp;– early 1991
+|rowspan="2"|Embossed red serial with Zia sun symbol separator on yellow plate; light blue [[yucca]] graphic screened at bottom left and Native American zigzag bands screened at top corners; "New Mexico USA" screened in red centered below serial; stamped indentation at top center for county-name sticker
+|rowspan="2"|"Land of Enchantment" screened in light blue centered at bottom
+|ABC-123
+|LKM-001 to approximately LLL-999
+|rowspan="2"|Replaced all 1972–90 plates. Letter E not used in 123-ABC serial format (in addition to I, O, Q, U and V).<ref name="allaboutlicenseplatesNM"/> County-name stickers discontinued sometime after 1996.
+|-
+|early 1991&nbsp;– mid<br>1997
+|123-ABC
+|001-AAA to approximately 999-KFG
+|-
+|[[File:1990 New Mexico license plate 466*KGC passenger stamped on trailer base.jpg|150px]]
+|mid&nbsp;– late<br>1997
+|As above, but without yucca graphic and slogan
+|''none''
+|123-ABC
+|001-KFH to approximately 999-KHM
+|Erroneously made on trailer base.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|late 1997&nbsp;– early 1999
+|As 1990–97 plates
+|rowspan="2"|"Land of Enchantment" as on 1990–97 plates
+|rowspan="2"|123-ABC
+|001-KHN to approximately 999-LRK
+|rowspan="2"|
+|-
+| 
+|early 1999&nbsp;– present
+|As above, but with smaller dies and no stamped indentation at top center
+|001-MAA to 275-XJX {{small|(as of January 18, 2025)}}<ref name="licenseplates.cc">{{Cite web |title=New Mexico License Plates |url=https://www.licenseplates.cc/NM |website=www.licenseplates.cc |access-date=July 3, 2023}}</ref>
+|}
+
+===Alternative passenger plates===
+The letters E, I, O, Q, U and V are not used in the serials on these plates.<ref name="allaboutlicenseplatesNM"/>
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:60px"|Serial format
+!Serials issued
+!Notes
+|-
+|rowspan="7"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="7"|1999–2010
+|rowspan="7"|Embossed red serial on white, yellow and orange gradient plate; green, yellow, orange and red [[hot air balloon]] graphic screened at left with red Zia sun symbol on yellow section; "NEW MEXICO USA" screened in yellow centered at bottom
+|rowspan="7"|"Land of Enchantment" screened in yellow centered above state name
+|'''NM'''1234
+|NM0001&nbsp;to NM9999
+|rowspan="7"|
+|-
+|1'''NM'''234
+|0NM001 to 9NM999
+|-
+|12'''NM'''34
+|00NM01 to 99NM99
+|-
+|123'''NM'''4
+|000NM1 to 999NM9
+|-
+|1234'''NM'''
+|0001NM to 9999NM
+|-
+|AB 123
+|AA 001 to BZ&nbsp;999
+|-
+|ABC123
+|CAA001 to LGP999
+|-
+|[[File:NM Cenn 2010.jpg|150px]]
+|{{nowrap|2010–16}}
+|Embossed yellow serial on turquoise plate with border line; yellow and red Zia sun symbol embossed in the center; "NEW MEXICO" screened in white centered below serial
+|"CENTENNIAL 1912-2012" screened in white centered at top; "LAND OF ENCHANTMENT" screened in yellow centered at bottom
+|rowspan="2"|ABC-123
+|{{nowrap|LGR-001 to}} NZT-499
+|Awarded "Plate of the Year" for best new license plate of 2010 by the [[Automobile License Plate Collectors Association]], the first time New Mexico was so honored.
+|-
+|[[File:2019 New Mexico License Plate.jpg|150px]]
+|2016–present
+|As above, but with "NEW MEXICO USA" below serial, and without Centennial slogan
+|"LAND OF ENCHANTMENT" as above, but at top
+|{{nowrap|NZT-500 to}} SBC-521 {{small|(as of January 28, 2025)}}<ref name="licenseplates.cc"/>
+|'W' series of serials used on mail-order plates.
+|-
+|[[File:NM Chile 2017.jpg|150px]]
+|July 2017&nbsp;– present
+|Embossed yellow serial on black plate with border line; green and red [[chili pepper]]s screened at left; "New Mexico USA" screened in red centered below serial
+|"CHILE CAPITAL OF THE WORLD" screened in yellow centered at top; "Land of Enchantment" screened in green centered at bottom
+|ABCD12
+|AAAA01 to CAFX50 {{small|(as of February 2, 2025)}}<ref name="licenseplates.cc"/>
+|Awarded "Plate of the Year" for best new license plate of 2017 by the Automobile License Plate Collectors Association, the second time New Mexico was so honored. 'W' series of serials used on mail-order plates.
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!style="width:60px"|Serial format
+!Serials issued
+!Notes
+|-
+|[[File:NM Donate Life plate.jpg|150px]]
+|Organ Donation Awareness
+|
+|As yucca passenger plate, but with "Donate Life" logo at left
+|"Land of Enchantment" as on yucca passenger plate, plus "Organ Donors Save Lives" screened in red centered at top
+|1234{{small|'''L'''/'''F'''/'''E'''}}
+|0001{{small|'''L'''/'''F'''/'''E'''}} to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support Our Troops
+|c. 2007&nbsp;– present
+|Embossed blue serial on graphic plate with national flag at left, [[bald eagle]] in center, and [[Flag of New Mexico|state flag]] at right; "New Mexico USA" screened in blue centered at bottom
+|"Support Our Troops" screened in blue centered between serial and state name
+|12345{{small|'''U'''/'''S'''}}
+|0001{{small|U/S}} to 94785{{small|U/S}} {{small|(as of June 21, 2023)}}<ref name="licenseplates.cc"/>
+|Officially known as the Patriot plate.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!style="width:70px;"|Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1971-74 New Mexico Trailer license plate.jpg|150px]]
+|rowspan="7"|Trailer
+|1971–74
+|Embossed white serial with Zia sun symbol separator on reflective pale green plate with border line; "NEW MEXICO USA" at bottom
+|"LAND OF ENCHANTMENT" at top
+|'''T'''-12345
+|T-1 to approximately T-64500
+|"Trailer" and "Rec. Vehicle" printed on stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1975–77
+|Embossed red serial with Zia sun symbol separator on reflective yellow plate with border line; "N.M." at top left; "75" at bottom right
+|"LAND OF ENCHANTMENT" at bottom, offset to left
+|rowspan="4"|'''T'''B-1234
+|TA-0001 to<br>TF-9999
+|rowspan="6"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1977–78
+|As 1978–82 passenger plates, but with "75" at bottom left
+|rowspan="2"|"LAND OF ENCHANTMENT" as on 1978–82 passenger plates
+|TG-0001 to<br>TG-9999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1978–82
+|As 1978–82 passenger plates, without "75"
+|TH-0001 to<br>TM-7000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1982–87
+|rowspan="2"|As 1982–88 passenger plates, with "New Mexico" below serial
+|rowspan="3"|"Land of Enchantment" as on 1982–90 passenger plates
+|TM-7001 to<br>TW-9999;<br>TY-0001 to<br>TZ-9999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1987–90
+|rowspan="2"|{{nowrap|{{small|'''T'''/'''R'''}} C-1234}}
+|{{small|T/R}} A-0001 to approximately {{small|T/R}} D-9999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1990
+|As 1988–90 passenger plates, with "New Mexico USA" below serial
+|{{small|T/R}} E-0001 to approximately {{small|T/R}} E-5000
+|-
+|[[File:1963 New Mexico license plate.JPG|150px]]
+|rowspan="9"|Truck
+|{{nowrap|1961–63}}
+|Embossed green serial with Zia sun symbol separator on reflective white plate with border line; "NEW MEXICO" at bottom
+|"LAND OF ENCHANTMENT" at top
+|''1''-12345<br>{{small|''1''/''0''}}-12345
+|Coded&nbsp;by county of issuance (''1'' or {{small|''1''/''0''}})
+|rowspan="8"|
+|-
+|[[File:1964 New Mexico license plate.JPG|150px]]
+|1964–65
+|Embossed black serial with Zia sun symbol separator on reflective yellow plate with border line; "NEW MEXICO" at bottom
+|"LAND OF ENCHANTMENT" at top
+|''1''-12345<br>{{small|''1''/''0''}}-12345
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|-
+|[[File:1968 New Mexico license plate.JPG|150px]]
+|1966–70
+|Embossed navy blue serial with Zia sun symbol separator on reflective white plate with border line; "NEW MEXICO" at bottom
+|"LAND OF ENCHANTMENT" at top
+|''1''-12345<br>{{small|''1''/''0''}}-12345
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1971–74
+|Embossed white serial with Zia sun symbol separator on reflective pale green plate with border line; "NEW MEXICO USA" at bottom
+|"LAND OF ENCHANTMENT" at top
+|''1''-12345<br>{{small|''1''/''0''}}-12345
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1975–77
+|Embossed red serial with Zia sun symbol separator on reflective yellow plate with border line; "N.M." at top left; "75" at bottom right
+|"LAND OF ENCHANTMENT" at bottom, offset to left
+|rowspan="5"|AB-1234
+|AA-0001 to {{nowrap|CA-5000}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1977–78
+|As 1978–82 passenger plates, but with "75" at bottom left
+|rowspan="2"|"LAND OF ENCHANTMENT" as on 1978–82 passenger plates
+|CA-5001 to {{nowrap|CJ-9999}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1978–82
+|As 1978–82 passenger plates, without "75"
+|CK-0001 to {{nowrap|GD-9999}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1982–88
+|As 1982–88 passenger plates, with "New Mexico" below serial
+|rowspan="2"|"Land of Enchantment" as on 1982–90 passenger plates
+|GE-0001 to approximately KT-9999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1988–90
+|As 1988–90 passenger plates, with "New Mexico USA" below serial
+|KW-0001 to approximately MG-4000
+|Truck plates discontinued 1991; passenger plates issued to trucks since.
+|-
+|[[File:New Mexico State Police license plate.png|150px]]
+|[[New Mexico State Police|State police]]
+|2017–present
+|Black base.
+|
+|
+|}
+
+==County coding, 1947–74==
+New Mexico established a numeric county-code system for its passenger and truck plates in 1947. [[Santa Fe County, New Mexico|Santa Fe County]] was assigned code 1, while the remaining counties were assigned codes 2 through 31 in order of the number of registered vehicles in the county. Following shifts in these numbers, codes 2 through 31 were re-allocated in 1948, after which they remained constant.<ref name="allaboutlicenseplatesNM"/> [[Los Alamos County, New Mexico|Los Alamos County]] was created in 1949, and subsequently assigned code 32.
+
+The codes were discontinued on passenger plates in 1972, and on truck plates in 1975. From 1976 until sometime after 1996, the county of issuance was displayed on a sticker at the top of the plate.
+{|class="wikitable sortable"
+|-
+!County!!1947!!1948–74
+|-
+| [[Santa Fe County, New Mexico|Santa Fe]] || 1 || 1
+|-
+| [[Bernalillo County, New Mexico|Bernalillo]] || 2 || 2
+|-
+| [[Eddy County, New Mexico|Eddy]] || 7 || 3
+|-
+| [[Chaves County, New Mexico|Chaves]] || 3 || 4
+|-
+| [[Curry County, New Mexico|Curry]] || 5 || 5
+|-
+| [[Lea County, New Mexico|Lea]] || 4 || 6
+|-
+| [[Doña Ana County, New Mexico|Doña Ana]] || 6 || 7
+|-
+| [[Grant County, New Mexico|Grant]] || 8 || 8
+|-
+| [[Colfax County, New Mexico|Colfax]] || 10 || 9
+|-
+| [[Quay County, New Mexico|Quay]] || 11 || 10
+|-
+| [[Roosevelt County, New Mexico|Roosevelt]] || 9 || 11
+|-
+| [[San Miguel County, New Mexico|San Miguel]] || 13 || 12
+|-
+| [[McKinley County, New Mexico|McKinley]] || 12 || 13
+|-
+| [[Valencia County, New Mexico|Valencia]] || 15 || 14
+|-
+| [[Otero County, New Mexico|Otero]] || 14 || 15
+|-
+| [[San Juan County, New Mexico|San Juan]] || 18 || 16
+|-
+| [[Rio Arriba County, New Mexico|Rio Arriba]] || 19 || 17
+|-
+| [[Union County, New Mexico|Union]] || 17 || 18
+|-
+| [[Luna County, New Mexico|Luna]] || 16 || 19
+|-
+| [[Taos County, New Mexico|Taos]] || 21 || 20
+|-
+| [[Sierra County, New Mexico|Sierra]] || 22 || 21
+|-
+| [[Torrance County, New Mexico|Torrance]] || 20 || 22
+|-
+| [[Hidalgo County, New Mexico|Hidalgo]] || 24 || 23
+|-
+| [[Guadalupe County, New Mexico|Guadalupe]] || 27 || 24
+|-
+| [[Socorro County, New Mexico|Socorro]] || 25 || 25
+|-
+| [[Lincoln County, New Mexico|Lincoln]] || 26 || 26
+|-
+| [[De Baca County, New Mexico|De Baca]] || 23 || 27
+|-
+| [[Catron County, New Mexico|Catron]] || 28 || 28
+|-
+| [[Sandoval County, New Mexico|Sandoval]] || 29 || 29
+|-
+| [[Mora County, New Mexico|Mora]] || 31 || 30
+|-
+| [[Harding County, New Mexico|Harding]] || 30 || 31
+|-
+| [[Los Alamos County, New Mexico|Los Alamos]] || – || 32
+|}
+[[Cibola County, New Mexico|Cibola County]] was created in 1981, after the codes had been discontinued.
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.NMplates.com History of New Mexico License Plates]
+*[https://www.15q.net/nm.html New Mexico license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613221946/https://www.15q.net/nm.html |date=June 13, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{New Mexico}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of New Mexico}}
+[[Category:Vehicle registration plates of the United States by state or territory|New Mexico]]
+[[Category:New Mexico transportation-related lists]]
+[[Category:Transportation in New Mexico]]

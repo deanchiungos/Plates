@@ -1,0 +1,645 @@
+{{short description|West Virginia vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = WV 2023 plate.jpg
+| caption = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Wild, Wonderful
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ''0''12 345A<br>''A''12 345A<br>(month-coded)
+| current_start_date = July 2023
+| designer = 
+| issuer = [[West Virginia Department of Transportation]], Division of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1905|05|01}}
+}}
+The U.S. state of [[West Virginia]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1905. {{As of|2023}}, plates are issued by the [[West Virginia Department of Transportation]] through its Division of Motor Vehicles. Only rear plates have been required since 1944.
+
+==Passenger baseplates==
+
+===1905 to 1970===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956–57 (dated 1957) issue was the first West Virginia license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1905
+|Embossed blue serial on green plate; "W. VA." at right; "LICENSED" and "05" above and below serial respectively
+|''none''
+|123
+|1 to approximately 200
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1906
+|Embossed gray serial on dark blue plate; "W. VA." at right; "LICENSED" and "1906" above and below serial respectively
+|''none''
+|123
+|201 to approximately 500
+|One of the rarest license plates in American history. Less than five of these plates are known to exist.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1907–09}}
+|Black serial on white porcelain plate; "W. VA." at right and "LICENSED" centered at top
+|''none''
+|1234
+|401 to approximately 1100
+|
+|-
+|[[File:1909 West Virginia license plate.jpg|150px]]
+|1909–10
+|Black serial on red porcelain plate; "W. VA. 1909" at right and "LICENSED" centered at top
+|''none''
+|123
+|1 to approximately 900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1910–11
+|White serial on dark blue porcelain plate; "W. VA. 1910" at right and "LICENSED" centered at top
+|''none''
+|1234
+|1 to approximately 1700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911–12
+|Black serial on white porcelain plate; "W VA" at left, vertical "1911" at right and "LICENSED" centered at top
+|''none''
+|1234
+|1 to approximately 2500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912–13
+|White serial on forest green porcelain plate; vertical "1912" and "W. VA" at left and right respectively; "LICENSE" centered at top
+|''none''
+|1234
+|1 to approximately 3500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913–14
+|Yellow serial on black porcelain plate; vertical "JULY 1914" and "W. VA." at left and right respectively; "LICENSE" centered at top
+|''none''
+|1234
+|1 to approximately 6000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914–15
+|White serial on light blue porcelain plate; vertical "1914 1915" and "W. VA." at left and right respectively; "LICENSE" centered at top
+|''none''
+|12345
+|1 to approximately 10500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915–16
+|White serial on red porcelain plate; vertical "1915 1916" and "W. VA." at left and right respectively; "LICENSE" centered at top
+|''none''
+|12345
+|1 to approximately 16500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916–17
+|Navy blue serial on white flat metal plate; vertical "W. VA." and "1916-17" at left and right respectively; "LICENSED" centered at top
+|''none''
+|12345
+|1 to approximately 25000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917–18
+|Embossed yellow serial on black plate with border line; "W.VA 17-18" at right
+|''none''
+|12345
+|1 to approximately 33000
+|
+|-
+|[[File:1918-19 West Virginia license plate 33153.jpg|150px]]
+|1918–19
+|Embossed black serial on white plate with border line; "W.VA 18-19" at right
+|''none''
+|12345
+|1 to approximately 43000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919–20
+|Embossed white serial on black plate with border line; "W.VA 19-20" at right
+|''none''
+|12345
+|1 to approximately 66000
+|Valid from July 1, 1919 through December 31, 1920.
+|-
+|[[File:1921 West Virginia license plate.jpg|150px]]
+|1921
+|Embossed white serial on dark blue plate with border line; "W VA" monogram and "1921" at right
+|''none''
+|12345
+|1 to approximately 87000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed black serial on tan plate with border line; "W VA" monogram and "1922" at right
+|''none''
+|12345
+|1 to approximately 96000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed red serial on white plate; "WEST VIRGINIA 1923" at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 141-000
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on maroon plate; "WEST VIRGINIA 1924" at bottom
+|''none''
+|123-456
+|1 to approximately 165-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed dark blue serial on orange plate; "WEST VIRGINIA 1925" at bottom
+|''none''
+|123-456
+|1 to approximately 173-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed white serial on dark blue plate; "WEST VIRGINIA 1926" at top
+|''none''
+|123-456
+|1 to approximately 211-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed black serial on gray plate; "WEST VIRGINIA 1927" at top
+|''none''
+|123-456
+|1 to approximately 207-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed white serial on dark green plate; "WEST VIRGINIA 1928" at bottom
+|''none''
+|123-456
+|1 to approximately 217-000
+|
+|-
+|[[File:1929 West Virginia license plate.jpg|150px]]
+|1929
+|Embossed orange serial on black plate; "WEST VIRGINIA 1929" at bottom
+|''none''
+|123-456
+|1 to approximately 232-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed black serial on gray plate; "W. VA. – 1930" centered at bottom
+|''none''
+|123-456
+|1 to approximately 223-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed yellow serial on black plate; "W. VA. – 1931" centered at bottom
+|''none''
+|123-456
+|1 to approximately 213-000
+|
+|-
+|[[File:1932 West Virginia license plate 100-436.jpg|150px]]
+|1932
+|Embossed white serial on black plate; "W. VA. – 1932" centered at bottom
+|''none''
+|123-456
+|1 to approximately 192-000
+|
+|-
+|[[File:1933 West Virginia license plate.jpg|150px]]
+|1933–34
+|Embossed yellow serial on black plate; "W. VA. – 1933" centered at bottom
+|''none''
+|123-456
+|1 to approximately 214-000
+|Validated from January 1 through June 30, 1934 with windshield stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934–35
+|Embossed black serial on yellow plate; "W. VA.-34-35" centered at bottom
+|''none''
+|123-456
+|1 to approximately 207-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935–36
+|Embossed yellow serial on black plate; "W. VA.-35-36" centered at bottom
+|''none''
+|123-456
+|1 to approximately 219-000
+|
+|-
+|[[File:1936-37 West Virginia license plate.jpg|150px]]
+|1936–37
+|Embossed black serial on yellow plate; "W. VA.-36-37" centered at top
+|''none''
+|123-456
+|1 to approximately 224-000
+|
+|-
+|[[File:1938 West Virginia license plate.jpg|150px]]
+|1937–38
+|Embossed yellow serial on black plate; "W. VA.-37-38" centered at top
+|''none''
+|123-456
+|1 to approximately 237-000
+|
+|-
+|[[File:1938-39 West Virginia license plate.jpg|150px]]
+|1938–39
+|Embossed black serial on yellow plate; "W. VA.-38-39" centered at bottom
+|''none''
+|123-456
+|1 to approximately 236-000
+|
+|-
+|[[File:1939-40 West Virginia license plate.jpg|150px]]
+|1939–40
+|Embossed yellow serial on black plate; "W. VA.-39-40" centered at bottom
+|''none''
+|123-456
+|1 to approximately 245-000
+|
+|-
+|[[File:1940-41 West Virginia license plate 57-349.jpg|150px]]
+|1940–41
+|Embossed black serial on yellow plate; "W. VA.-40-41" centered at bottom
+|''none''
+|123-456
+|1 to approximately 258-000
+|
+|-
+|[[File:1942 West Virginia license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1941–44
+|Embossed yellow serial on black plate with border line; "W. VA. EXP.-6-30-42" at bottom
+|''none''
+|123-456
+|1 to approximately 349-000
+|Revalidated through June 30, 1943 with white tabs, then through June 30, 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1945 West Virginia license plate.jpg|150px]]
+|1944–45
+|Embossed black serial on yellow plate with border line; "W. VA. EXP.-6-30-45" at bottom
+|''none''
+|123-456
+|1 to approximately 214-000
+|
+|-
+|[[File:1946 West Virginia license plate.JPG|150px]]
+|1945–46
+|As 1941–44 base, but with "W. VA. EXP.-6-30-46" at bottom
+|''none''
+|123-456
+|1 to approximately 239-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946–47
+|As 1944–45 base, but with "W. VA. EXP.-6-30-47" at bottom
+|''none''
+|123-456
+|1 to approximately 250-000
+|
+|-
+|[[File:1947-48 West Virginia license plate 6-994.jpg|150px]]
+|1947–48
+|As 1941–44 base, but with "W. VA. EXP.-6-30-48" at bottom
+|''none''
+|123-456
+|1 to approximately 282-000
+|
+|-
+|[[File:1948-49 West Virginia license plate 83-646.jpg|150px]]
+|1948–49
+|As 1944–45 base, but with "W. VA. EXP.-6-30-49" at bottom
+|''none''
+|123-456
+|1 to approximately 312-000
+|
+|-
+|[[File:1950 West Virginia license plate.jpg|150px]]
+|1949–50
+|As 1941–44 base, but with "W. VA. EXP.-6-30-50" at bottom
+|''none''
+|123-456
+|1 to approximately 339-000
+|
+|-
+|[[File:1951 West Virginia license plate.jpg|150px]]
+|1950–51
+|As 1944–45 base, but with "W. VA. EXP.-6-30-51" at bottom
+|''none''
+|123-456
+|1 to approximately 365-000
+|
+|-
+|[[File:1951-52 West Virginia license plate.jpg|150px]]
+|1951–52
+|As 1941–44 base, but with "W. VA. EXP.-6-30-52" at bottom
+|''none''
+|123-456
+|1 to approximately 377-000
+|
+|-
+|[[File:1953 West Virginia license plate.jpg|150px]]
+|1952–53
+|As 1944–45 base, but with "W. VA. EXP.-6-30-53" at bottom
+|''none''
+|123-456
+|1 to approximately 379-000
+|
+|-
+|[[File:1954 West Virginia license plate.jpg|150px]]
+|1953–54
+|As 1941–44 base, but with "W. VA. EXP.-6-30-54" at bottom
+|''none''
+|123-456
+|1 to approximately 399-000
+|
+|-
+|[[File:1954 West Virginia License Plate 17-105.jpg|150px]]
+|1954–55
+|As 1944–45 base, but with "WEST VIRGINIA 54" at bottom
+|''none''
+|123-456
+|1 to approximately 418-000
+|
+|-
+|[[File:1956 West Virginia license plate.jpg|150px]]
+|1955–56
+|Embossed white serial on green plate with border line; "WEST VIRGINIA 56" at bottom
+|''none''
+|123-456
+|1 to approximately 436-000
+|
+|-
+|[[File:1957 West Virginia license plate.jpg|150px]]
+|1956–57
+|Embossed yellow serial on dark blue plate with border line; "WEST VIRGINIA" centered at bottom; "19" at bottom left and "57" at bottom right
+|''none''
+|123-456
+|1 to approximately 461-000
+|First 6" x 12" plate.
+|-
+|[[File:1958 West Virginia license plate.jpg|150px]]
+|1957–58
+|Embossed green serial on white plate with border line; "WEST VIRGINIA" centered at bottom; "58" at bottom right
+|''none''
+|123-456
+|1 to approximately 469-000
+|
+|-
+|[[File:1959 West Virginia license plate.jpg|150px]]
+|1958–59
+|Embossed white serial on green plate with border line; "WEST VIRGINIA" centered at bottom; "19" at bottom left and "59" at bottom right
+|''none''
+|123-456
+|1 to approximately 478-000
+|
+|-
+|[[File:1960 West Virginia license plate.JPG|150px]]
+|1959–60
+|Embossed red serial on white plate with border line; "WEST VIRGINIA" centered at bottom; "19" at bottom left and "60" at bottom right
+|''none''
+|123-456
+|1 to approximately 471-000
+|
+|-
+|[[File:1961 West Virginia license plate 106-321.jpg|150px]]
+|rowspan="2"|1960–61
+|Embossed white serial on dark red plate with border line; "WEST VIRGINIA" centered at bottom; "19" at bottom left and "61" at bottom right
+|rowspan="2"|''none''
+|rowspan="2"|123-456
+|1 to {{nowrap|141-826<ref>{{cite web |last=Tanner |first=Eric N. |title=West Virginia License Plate Variations |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Variations&jurisdiction=West%20Virginia&code=wv |publisher=allaboutlicenseplates.com |access-date=November 19, 2020}}</ref>}}
+|rowspan="2"|
+|-
+|[[File:1961 West Virginia debossed license plate.jpg|150px]]
+|As above, but with elements debossed
+|141-827 to approximately 476-000
+|-
+|[[File:1962 West Virginia license plate.jpg|150px]]
+|1961–62
+|Embossed green serial on reflective white plate with border line; "WEST VIRGINIA" centered at bottom; "19" at bottom left and "62" at bottom right
+|''none''
+|123-456
+|1 to approximately 488-000
+|
+|-
+|[[File:1963 West Virginia license plate.jpg|150px]]
+|1962–63
+|Debossed yellow serial on reflective blue plate with border line; "WEST VIRGINIA" centered at bottom; "19" at bottom left and "63" at bottom right
+|"1863 CENTENNIAL 1963" at top
+|123-456
+|1 to approximately 490-000
+|Both this and the 1963–64 base commemorated West Virginia's 100 years as a separate state.
+|-
+|[[File:1964 West Virginia license plate 14-717.jpg|150px]]
+|1963–64
+|Embossed blue serial on reflective yellow plate with border line; "WEST VIRGINIA" centered at bottom; "19" at bottom left and "64" at bottom right
+|"1863 CENTENNIAL 1963" at top
+|123-456
+|1 to approximately 521-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1964–65
+|As 1962–63 base, but with "65" at bottom right
+|"MOUNTAIN STATE" centered at top
+|123-456
+|1 to approximately 522-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1965–66
+|As 1963–64 base, but with "66" at bottom right
+|"MOUNTAIN STATE" centered at top
+|123-456
+|1 to approximately 558-000
+|
+|-
+|[[File:1967 West Virginia license plate.jpg|150px]]
+|1966–67
+|As 1962–63 base, but with "67" at bottom right
+|"MOUNTAIN STATE" centered at top
+|123-456
+|1 to approximately 582-000
+|
+|-
+|[[File:1968 West Virginia license plate.JPG|150px]]
+|1967–68
+|As 1963–64 base, but with "68" at bottom right
+|"MOUNTAIN STATE" centered at top
+|123-456
+|1 to approximately 603-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1968–69
+|As 1962–63 base, but with "69" at bottom right
+|"MOUNTAIN STATE" centered at top
+|123-456
+|1 to approximately 625-000
+|
+|-
+|[[File:1970 West Virginia license plate.jpg|150px]]
+|1969–70
+|As 1963–64 base, but with "70" at bottom right
+|"MOUNTAIN STATE" centered at top
+|123-456
+|1 to approximately 591-000
+|
+|}
+
+===1970 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1970–75
+|Embossed blue serial on reflective yellow plate with border line; "WEST VIRGINIA" centered at bottom; sticker box at bottom right
+|"MOUNTAIN STATE" centered at top
+|''0''B-1234<br>''A''B-1234
+|First character corresponds to month of expiration (see right) 
+|1 through 9 indicated January through September respectively, and O, N and D indicated October, November and December respectively. This system remains in use today.
+|-
+|[[File:West Virginia license plate, 1979.png|150px]]
+|1976–82
+|Embossed dark blue serial on reflective white plate; yellow state shape with blue outline screened at left behind serial; "WEST VIRGINIA" screened in dark blue centered at bottom
+|rowspan="2"|Dark blue bar screened at top with "Wild, Wonderful" in white in the center
+|''0''B-1234<br>''A''B-1234
+|rowspan="2"|First character corresponds to month of expiration
+|Early plates for August through December manufactured by Polyvend Inc. of Arkansas.<ref>{{cite web |last=Turnbull |first=Andrew |title=West Virginia "Map" Bases: A Primer, 1976-1995 |url=http://www.andrewturnbull.net/plates/westvirginia.html |publisher=The Andrew Turnbull Network |access-date=November 19, 2020}}</ref>
+|-
+|[[File:West Virginia license plate, 1982-1994.png|150px]]
+|1982&nbsp;– December 1994
+|As above, but without blue outline around state shape
+|''0''BC-123<br>{{nowrap|''A''BC-123}}
+|Two-letter series introduced for each month as one-letter series were exhausted. These series progressed as follows: both letters A through M only, then first letter N through Z and second letter A through M, then first letter A through M and second letter N through Z. 
+|-
+|[[File:2008 West Virginia license plate - NAD 434.jpg|150px]]
+|January 1995&nbsp;– December 2000
+|rowspan="3"|Embossed dark blue serial on reflective white plate; dark blue bar screened at top containing "West Virginia" in gold in the center; thin gold stripe screened between dark blue bar and serial
+|"Wild, Wonderful" screened in dark blue centered at bottom, with three stripes (two dark blue and one gold) screened on either side 
+|rowspan="3"|''0''B&nbsp;1234<br>''0''BC&nbsp;123<br>''0''1B&nbsp;123<br>''A''B&nbsp;1234<br>''A''BC&nbsp;123<br>''A''1B&nbsp;123
+| rowspan="4" |First character corresponds to month of expiration
+|rowspan="3"|Series reset to A for all months; progression is as before but with two-letter series progressing in standard order (AA–AZ, BA–BZ etc.). Series S and SA–SZ reserved for optional Scenic plates. Number-letter series introduced October 2015 as two-letter series started to be exhausted. 
+|-
+|[[File:2002 West Virginia license plate 4JB 592.jpg|150px]]
+|December 2000&nbsp;– early<br>2006
+|"Wild, Wonderful" as before, plus "www.callwva.com" in dark blue between state name and serial, cutting off thin gold stripe in the middle
+|-
+|[[File:West Virginian license plate, c. 2021.png|150px]]
+|early 2006&nbsp;– July 2023
+| rowspan="2" |"Wild, Wonderful" 
+|-
+|[[File:WV 2023 plate.jpg|150x150px]]
+|July 2023 – present
+|Embossed dark blue serial on reflective white plate with state outline as separator; dark blue bar screened at top containing "West Virginia" in gold in the center; thin gold stripe screened between dark blue bar and serial
+|''0''12 345B<br>''A''12 345B
+|
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Scenic
+|1996–2020's
+|Embossed dark blue serial on reflective graphic plate with mountain scene featuring white and orange sky, pale blue mountains and dark blue forest; "West Virginia" screened in dark blue centered at top
+|"Wild, Wonderful" screened in dark blue centered at bottom
+|''0'''''S'''&nbsp;1234<br>''0'''''S'''C&nbsp;123<br>''A'''''S'''&nbsp;1234<br>''A'''''S'''C&nbsp;123
+|First character corresponds to month of expiration
+|Similar monthly serial formats to standard passenger base, but with series progressing S, then SA, SB, SC etc. "www.callwva.com" appeared between state name and serial during the early and mid-2000s.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|250 Years of Freedom
+|May 2026–present
+|Embossed white serial on reflective graphic plate with mountain scene featuring dark blue sky, fireworks, [[flag of the United States]], and the [[New River Gorge Bridge]]; "West Virginia" screened in white centered on top.
+|"Celebrating 250 Years of Freedom" screened in white on red at top
+|{{small|'''J'''/'''4'''}}&nbsp;1234
+|{{small|J/4}}&nbsp;0001 to<br>{{small|J/4}}&nbsp;1601<br><small>(As of May 22, 2026)</small>
+|J/4 for July 4th.
+|-
+|-
+|[[File:Commemorative plate.jpeg|150px]]
+|9/11
+|2002–present
+|Embossed black serial on reflective white plate; "West Virginia" screened in white against national flag motif at top; "September 11, 2001" screened in black centered at bottom
+|"We will not Forget..." screened in black at left
+|{{small|'''9'''/'''11'''}}&nbsp;12345
+|{{small|9/11}}&nbsp;0001 to<br>{{small|9/11}}&nbsp;19605<br><small>(As of May 22, 2026)</small>
+|
+|-
+|[[File:Sesquicentennial.jpeg|150px]]
+|Sesquicentennial
+|2012–2020's
+|Screened dark blue serial on reflective gradient gold plate; [[Seal of West Virginia|state seal]] at left and state shape at right; "West Virginia" screened in dark blue centered at top
+|"Wild & Wonderful for 150 Years!" screened in dark blue centered at bottom
+|{{small|'''S'''/'''Q'''}}123456
+|{{small|S/Q}}000001 to {{small|S/Q}}069999
+|Commemorates West Virginia's 150 years as a separate state.
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/wv.html West Virginia license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613182950/https://www.15q.net/wv.html |date=June 13, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of West Virginia}}
+[[Category:Vehicle registration plates of the United States by state or territory|West Virginia]]
+[[Category:West Virginia transportation-related lists]]
+[[Category:Transportation in West Virginia]]

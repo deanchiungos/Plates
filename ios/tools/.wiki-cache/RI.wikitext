@@ -1,0 +1,622 @@
+{{short description|Rhode Island vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = License_Plate_of_Rhode_Island.png
+| nickname = 
+| slogan_label = Slogan
+| slogan = Ocean State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = AB-123<br>123-456<br>1AB234<br>1A234
+| current_start_date = {{Start date|2023}}
+| designer = 
+| issuer = Rhode Island Department of Revenue, Division of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1904|04|13}}
+}}
+
+The U.S. state of [[Rhode Island]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1904. Plates are currently issued by the [[Rhode Island Department of Revenue]] through its Division of Motor Vehicles. Front and rear plates are required for vehicles delivered with a front license plate mounting bracket from the factory, while only rear plates are required for motorcycles, trailers and vehicles delivered from the factory without a front license plate mounting bracket.
+
+==Passenger baseplates==
+===1904 to 1960===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Rhode Island license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1904–08}}
+|White serial on black porcelain plate; "REGISTERED IN R.I." at top
+|''none''
+|1234
+|1 to approximately 3300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1908–12
+|White serial on black porcelain plate; "RI" at right
+|''none''
+|1234
+|3301 to approximately 8700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912–17
+|Black serial on white porcelain plate; vertical "RI" at left
+|''none''
+|12345
+|1 to approximately 35000
+|
+|-
+|[[File:Rhode Island 1918 license plate - Number 17056.jpg|150px]]
+|1918
+|White serial on black flat metal plate; "R.I. 1918" centered at bottom
+|''none''
+|12345
+|1 to approximately 30000
+|First dated plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Black serial on white flat metal plate; "R.I. 1919" centered at bottom
+|''none''
+|12345
+|1 to approximately 32000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|White serial on black flat metal plate; "R.I. 1920" centered at bottom
+|''none''
+|12345
+|1 to approximately 37000
+|
+|-
+|[[File:1921 Rhode Island license plate.jpg|150px]]
+|1921
+|Embossed black serial on white plate with border line; "R.I. 1921" centered at bottom
+|''none''
+|12345
+|1 to approximately 43000
+|First embossed plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed white serial on black plate with border line; "R.I. 1922" centered at bottom
+|''none''
+|12345
+|1 to approximately 50000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed black serial on white plate with border line; "R.I. 1923" centered at bottom
+|''none''
+|12-345
+|1 to approximately 62-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on black plate with border line; "R.I. 1924" centered at bottom
+|''none''
+|12-345
+|1 to approximately 86-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed black serial on white plate with border line; "R.I. 1925" centered at bottom
+|''none''
+|12-345
+|1 to approximately 85-000
+|
+|-
+|[[File:1926 Rhode Island license plate.jpg|150px]]
+|1926
+|Embossed white serial on black plate with border line; "R.I. 1926" centered at top
+|''none''
+|12-345
+|1 to approximately 90-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed black serial on white plate with border line; "27 R.I." centered at top
+|''none''
+|12-345
+|1 to approximately 97-000
+|
+|-
+|[[File:1928 Rhode Island licence plate.jpg|150px]]
+|1928
+|Embossed white serial on black plate with border line; "R.I. 1928" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 108-000
+|
+|-
+|[[File:1929 Rhode Island license plate.jpg|150px]]
+|1929
+|Embossed black serial on white plate with border line; "29–R.I." centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 109-000
+|
+|-
+|[[File:1930 Rhode Island license plate.jpg|150px]]
+|1930
+|Embossed white serial on black plate with border line; "RHODE ISLAND 1930" at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 115-000
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed black serial on white plate with border line; "31 RHODE ISLAND" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 116-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on black plate with border line; "RHODE ISLAND 1932" centered at top
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 113-000
+|
+|-
+|[[File:1933 RI license plate.jpg|150px]]
+|1933
+|Embossed black serial on white plate with border line; "33 RHODE ISLAND" centered at top
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 117-000
+|
+|-
+|[[File:1934 Rhode Island license plate.JPG|150px]]
+|1934
+|Embossed white serial on black plate with border line; "1934 RHODE ISLAND" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 125-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed black serial on white plate with border line; "RHODE ISLAND 35" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 130-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed white serial on black plate with border line; "1636 RHODE ISLAND 1936" centered at top
+|"300TH&nbsp;YEAR" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 140-000
+|Commemorated the 300th anniversary of the settlement of Rhode Island.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed black serial on white plate with border line; "1937 RHODE ISLAND" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 148-000
+|
+|-
+|[[File:1938 Rhode Island license plate.JPG|150px]]
+|1938
+|Embossed white serial on black plate; "R.I. 1938" at bottom
+|''none''
+|A1234
+|B1 to approximately P9000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed black serial on white plate; "R.I. 39" at top
+|''none''
+|A-1234
+|B-1 to approximately R-5000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed white serial on black plate; "R.I. 40" at bottom
+|''none''
+|A-1234
+|B-1 to approximately T-4000
+|
+|-
+|[[File:1941 Rhode Island license plate.jpg|150px]]
+|1941
+|As 1939 base, but with "R.I. 41" at top
+|''none''
+|A-1234
+|B-1 to approximately W-9000
+|
+|-
+|[[File:1942 Rhode Island license plate.jpg|150px]]
+|1942–43
+|As 1940 base, but with "R.I. 42" at bottom
+|''none''
+|A-1234
+|B-1 to approximately W-8000
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1944–46
+|Embossed white serial on black plate; "R.I." at bottom, offset to left, with tab slots to right
+|''none''
+|A-1234
+|B-1 to approximately W-5000
+|Validated for 1944 with orange tabs, for 1945 with green tabs, and until July 31, 1946 with red tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:1947 Rhode Island license plate.jpg|150px]]
+|1946–47
+|Embossed black serial on silver plate; "RHODE ISLAND" at bottom, with tab box between the two words
+|''none''
+|A1234
+|B1 to approximately Y9999
+|Validated until December 31, 1946 with silver tabs, then for 1947 with white tabs.
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1948–50
+|rowspan="2"|Embossed black serial on white plate; "RHODE ISLAND" at bottom, with tab slots between the two words
+|rowspan="3"|''none''
+|A1234
+|B1 to Z9999
+|rowspan="3"|Tab-slot plates validated each year with white tabs. All-numeric serials from 1 through 10000 were reserved, while 10001 through 19999 were used on replacement plates.
+|-
+|rowspan="2"|12345
+|30001 to approximately 59000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|As above, but with "50" instead of tab slots
+|59001 to approximately 71000
+|-
+|[[File:1951 Rhode Island license plate.JPG|150px]]
+|1951
+|Embossed white serial on black plate; "RHODE 51 ISLAND" at bottom
+|rowspan="2"|''none''
+|rowspan="2"|A1234<br>12345
+|rowspan="2"|
+|rowspan="2"|1951 plates revalidated for 1952 with windshield stickers. 1952 plates issued only to new registrants.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|As above, but with "52" instead of "51"
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1954 Rhode Island license plate.jpg|150px]]
+|rowspan="2"|1953–54
+|rowspan="2"|Embossed black serial on white plate; "RHODE 53 ISLAND" at bottom
+|rowspan="2"|''none''
+|A1234
+|B1 to Z9999
+|rowspan="2"|Revalidated for 1954 with black tabs.
+|-
+|12345
+|30001 to approximately 85000
+|-
+|rowspan="2"|[[File:1955 Rhode Island license plate.JPG|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1955–56
+|rowspan="2"|Embossed white serial on black plate; "RHODE 55 ISLAND" at bottom
+|rowspan="2"|''none''
+|A1234
+|B1 to Z9999
+|rowspan="2"|Revalidated for 1956 with white tabs.
+|-
+|12345
+|30001 to 99999
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1957–58
+|Embossed black serial on white plate with border line; "RHODE ISLAND 57" at top
+|''none''
+|AB123
+|AA1 to<br>WW999
+|Letters I, Q and U not used in serials, and X, Y and Z used only on replacement plates.<ref name="allaboutlicenseplatesRI">{{cite web |last=Tanner |first=Eric N. |title=Rhode Island Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Rhode%20Island&code=ri |publisher=allaboutlicenseplates.com |access-date=November 19, 2020}}</ref> Revalidated for 1958 with black tabs.
+|-
+|[[File:1959 Rhode Island license plate.JPG|150px]]
+[[File:1960 Rhode Island license plate.jpg|150px]]
+|1959–60
+|Embossed white serial on black plate with border line; "RHODE ISLAND 59" at top
+|''none''
+|AB123
+|AA1 to<br>WW999
+|Unused and replacement serial letters same as on 1957–58 base. Revalidated for 1960 with white tabs.
+|}
+
+===1961 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1963 Rhode Island license plate.jpg|150px]]
+|{{nowrap|1961–66}}
+|Embossed black serial on white plate with border line; "RHODE ISLAND" at top, offset to left
+|''none''
+|AB123
+|AA1 to<br>WW999;<br>AI1 to approximately KX500
+|Validated each year with stickers, placed to the right of the state name. Letters I, Q, U, X, Y and Z used in standard serials from 1965 after the original allocation was exhausted.<ref name="allaboutlicenseplatesRI"/>
+|-
+|[[File:1967 Rhode Island license plate.jpg|150px]]
+|1967–71
+|Embossed black serial on non-reflective white plate with border line; "RHODE ISLAND" centered at bottom
+|"DISCOVER" centered at top
+|AB·123
+|AA·100 to<br>ZZ·999 (see right)
+|Revalidated with stickers until 1980. After serial KZ·999 was issued, the letters I, Q, U, X, Y and Z were not used until WW·999 was reached in 1969, after which all serials with Q, U, X, Y and Z as the first letter were issued.<ref name="allaboutlicenseplatesRI"/>
+|-
+|[[File:Rhode Island license plate, 1972–1979 series with 1973 sticker.png|150px]]
+|1972–79
+|As 1967–71 base, but reflective
+|"OCEAN STATE" centered at top
+|AB-123
+|Unused and reissued 1967–71 serials
+|Issued only to new registrants. During 1977, some plates were manufactured in New York, using that state's serial [[Die (manufacturing)|die]]s (with the letters taller than the digits) and omitting the slogan.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1980–86
+|Embossed blue serial on reflective white plate with border line; "RHODE ISLAND" embossed in blue centered at bottom; blue [[anchor]] embossed at top left and last two digits of year of issue at top right
+|"OCEAN STATE" embossed in blue centered at top
+|rowspan="5"|AB-123
+|rowspan="5"|AA-100 to ZZ-999 (see right)
+|rowspan="5"|On all variants of this base, serials were issued and reissued in random order, as existing registrants generally retained the serials from their previous plates (including 1967–79 plates) when receiving new ones. During 1992, plates were manufactured in Massachusetts, using that state's serial dies.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1986
+|As above, but with "Rhode Island" screened in blue centered at bottom
+|"Ocean State" screened in blue centered at top
+|-
+|[[File:Rhode Island license plate, 1987–1993 series with November 1994 sticker.png|150px]]
+|1987–93
+|As 1980–86 all-embossed plates, but without year of issue
+|"OCEAN STATE" as on 1980–86 all-embossed plates
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1993–95
+|As above, but with state name (still all upper case) and anchor screened
+|"OCEAN STATE" as above, but screened
+|-
+|[[File:Rhode Island license plate, 1987–1993 series with November 1994 sticker.png|150px]]
+|1995–96
+|As 1987–93 plates
+|"OCEAN STATE" as on 1987–93 plates
+|-
+|[[File:Rhode Island License Plate AB-123 format.JPG|150px]]
+[[File:Rhode Island 2001 License Plate 12345 format.jpg|150px]]
+[[File:Rhode Island 2013 License Plate.jpg|150px]]
+|1996–2023
+|Embossed navy blue serial on reflective white plate with gray wave graphic; "Rhode Island" screened in navy blue centered at top; navy blue anchor screened at top left
+|"Ocean State" screened in navy blue centered at bottom
+|12345 (variable number of digits)
+<br>AB-12 and AB-123
+
+<br>123-456
+
+1AB234 / 1AB&nbsp;234
+|1 to 99999
+<br>AA-00 to ZZ-999<br> (1996–07, 2015–20)<br>
+<br>710-001 to 399-999<br>{{small|(leading number progresses in reverse)}}<br>(2007–15)
+
+1AA 100 to 1KV&nbsp;999 (2020–23)
+|Colloquially referred to as the "wave plate".
+
+Serials in the 1AL to 1BQ series of the latest format did not contain a space after the letters.
+|-
+|[[File:Thumbnail-rhode-island-license-plate-design-5.webp|150x150px]]
+|2023–present
+|Screened navy blue serial on reflective light blue plate with five-wave graphic; "Rhode Island" screened in navy blue centered at top; navy blue anchor screened at top left
+|"Ocean State" script screened in navy blue centered at bottom
+|1AB 234 (plus remakes of previously-issued serials)
+|1LE 100 to 1ZF&nbsp;266 {{small|(as of January 30, 2025)}}
+|Referred to as the ''Ocean Plate''.
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|<!-- Deleted image removed: [[File:RI D3826YT RI Sailboat-Ocean.png|150px]] -->
+|1992–present
+|Embossed blue serial on reflective white plate; gray [[sailboat]] graphic screened in the center; "RHODE ISLAND" screened in red centered at top, with five red stripes to left and right; blue bar screened at bottom containing thirteen white stars
+|"Ocean State" screened in blue centered between sailboat and blue bar
+|as requested by registrant: 12345<br>AB-12<br>AB-123
+|
+|
+|-
+|
+|2023–present
+|Embossed navy blue serial on graphic of a [[Mako Shark]] in water; "Rhode Island" screened in dark blue centered at top between two dark blue sharks; white border
+|"Atlantic Shark Institute" screened in dark blue below state name.
+|Remakes of any standard format 
+|Registrants transferring plates keep existing combination.<ref name="atlanticsharkinstitute">{{cite news |title=Get your Atlantic Shark Institute license plate today! |url=https://www.atlanticsharkinstitute.org/licenseplate |access-date=23 April 2024}}</ref>
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Commercial
+|1996–2000
+|Similar to wave passenger base but with "COMMERCIAL" in lieu of Ocean State
+|rowspan="2"|123456
+|rowspan="2"|1 to 260089, plus reissues of dormant serials
+|rowspan="2"| 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with Ocean Wave background
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Combination
+|1996–2023
+|Similar to wave passenger base but with "COMBINATION" in lieu of Ocean State
+|rowspan="2"|123456
+|rowspan="2"|1 to 260089, plus reissues of dormant serials
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with Ocean Wave background
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="1"|Fire (Municipal) 
+|####–present
+|White Background with red embossing, Fire on top, Rhode Island on bottom
+|rowspan="1"|123
+|rowspan="1"|
+|rowspan="1"| Used for fire apparatus and non-private recuses
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Jitney
+|1996–2023
+|Similar to wave passenger base but with "JITNEY" in leui of Ocean State
+|rowspan="2"|1234
+|rowspan="2"|
+|rowspan="2"|Used by Rhode Island Public transit authority buses
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with Ocean Wave background
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Motorcycle
+|1996–2000
+|Similar to wave passenger base but with border line; "MOTORCYCLE" embossed at top and "RI" at bottom left
+|rowspan="2"|12345
+|rowspan="2"|1 to 99999, plus reissues of dormant serials
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with "MOTORCYCLE" and "RI" screened, and with anchor at top left
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="1"|Municipal 
+|####–present
+|White background, embossed with "TOWN" or "CITY" with RHODE ISLAND at the bottom
+|rowspan="1"|123
+|rowspan="1"|
+|rowspan="1"| Used for town and city vehicles 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="1"|Police (Municipal) 
+|####–present
+|Blue Background with Ocean State with anchor on top, "Police" diagonally descending (left justified), with Rhode Island on bottom
+|rowspan="1"|123
+|rowspan="1"|
+|rowspan="1"| used by town or city police vehicles
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Public
+|1996–2023
+|Similar to wave passenger base but with "PUBLIC" in leui of Ocean State
+|rowspan="2"|1234
+|rowspan="2"|
+|rowspan="2"| used by Rhode Island Transit Authority vehicles and vehicles for hire (i.e. [[chauffeur]])
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with Ocean Wave background
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Radio Operator
+|1996–2000
+|Indistinguishable from the private passenger registration type
+|rowspan="2"|AB#BBB, AB#BB, where A=(A,K,N,W), B=(A-Z), #=(0-9)
+|rowspan="2"|
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with RADIO OPERATOR in leui of Ocean State
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="1"|State 
+|####–present
+|White or Yellow background, state seal with RHODE ISLAND in alternate sailboat style
+|rowspan="1"|123
+|rowspan="1"|
+|rowspan="1"|Used by state vehicles and Publicly owned utilities (i.e. Kent County Water Authority, Narragansett Bay Commission, etc)
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="1"|State Police 
+|####–present
+|Black background white text, Ocean State with anchor on top, State Police double line left justified, with Rhode Island on bottom
+|rowspan="1"|123
+|rowspan="1"|
+|rowspan="1"|
+|-
+|[[File:RI_Sheriff_Plate.jpg|150px]]
+|rowspan="1"|Sheriff
+|####–2026
+|Blue Background with "Sheriff" and anchor on top with Rhode Island on bottom
+|rowspan="1"|12
+|rowspan="1"|
+|rowspan="1"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="1"|Sheriff
+|2026–present
+|Blue Background with Rhode Island and anchor on top with "Sheriff" on bottom
+|rowspan="1"|12
+|rowspan="1"|
+|rowspan="1"|
+|}
+
+==Trivia==
+License plates with low serial numbers have been distributed by politicians, as a way of rewarding supporters or associates, since the state first issued plates in 1904. Such plates have become a status symbol, similar to [[Vehicle registration plates of Delaware|Delaware]]'s low-numbered plates.<ref>{{cite web |last=Irazabal |first=Jordan |title=The Delaware 3000 |url=http://www.thedelaware3000.org/ |publisher=TheDelaware3000.org |access-date=November 25, 2014}}</ref>
+
+Additionally, an official lottery for so-called "preferred plates" was implemented in 1995 through the Governor's Office.<ref>{{cite web |title=Plates: Overview |url=http://www.dmv.ri.gov/plates/overview/ |publisher=RI Division of Motor Vehicles |access-date=November 24, 2014}}</ref> Passenger plates with serials consisting of two letters and up to two digits, one letter and up to three digits, or all-numeric with up to five digits, are considered "preferred plates", as are commercial, motorcycle and combination plates with serials up to four digits, war veterans' plates with serials up to three digits, and [[Rhode Island National Guard|National Guard]] plates with serials up to two digits.
+
+Rhode Island is also one of the few states that allows plate owners to transfer their plates to other family members in their [[Will and testament|will]].<ref>{{cite web|title=Transfer at Death |url=http://www.dmv.ri.gov/registrations/deathTransfer/index.php |publisher=RI Division of Motor Vehicles |access-date=November 24, 2014}}</ref>
+
+Rhode Island  reissues plate numbers to new owners if that plate number is a inactive plate not registered in several years.
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.15q.net/ri.html Rhode Island license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20201127115714/https://www.15q.net/ri.html |date=November 27, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Rhode Island}}
+[[Category:Rhode Island transportation-related lists]]
+[[Category:Transportation in Rhode Island]]
+[[Category:Vehicle registration plates of the United States by state or territory|Rhode Island]]

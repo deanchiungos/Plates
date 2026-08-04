@@ -1,0 +1,1442 @@
+{{short description|Connecticut vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2019}}
+{{Infobox vehicle registration plate
+| image = 2015 to Present Connecticut license plate.jpg
+| nickname = 
+| slogan_label = Slogan
+| slogan = Constitution State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = AB·12345 (2015-present)<br />1AB·CD2 (2013-2015)<br />1ABCD2 (2013)<br />123·ABC (2000-2013)
+| current_start_date = {{Start date|2000|01|01}}
+| designer = 
+| issuer = [[Connecticut Department of Motor Vehicles]]
+| manufacturer = 
+| start_date = {{Start date|1905|09|01}}<br>(pre-state plates from 1903 through August 31, 1905)
+}}
+
+The U.S. state of [[Connecticut]] first required its residents to register their [[motor vehicle]]s in 1903. Registrants provided their own [[Vehicle registration plate|license plates]] for display until 1905, when the state began to issue plates.<ref>{{cite web|url=http://leatherlicenseplates.com/old-connecticut-license-plates-vintage-connecticut-license-plates/ |title=Old Connecticut License Plates |date=August 27, 2015 |publisher=LeatherLicensePlates.com |access-date=June 10, 2017}}</ref> Since then, Connecticut has used a variety of license plate designs, and has issued different designs for passenger, non-passenger, and, more recently, optional plate types that often require an additional fee. {{As of|2024}}, plates are issued by the [[Connecticut Department of Motor Vehicles]].
+
+For most classes of vehicles, plates are issued in pairs, for the front and rear of the vehicle respectively, though single rear plates were issued between 1980 and 1987. Plates were validated with metal date tabs from 1937 through 1963, then with plate stickers until 2006, and finally with windshield stickers until 2010. Plate stickers continue to be used on plates for vehicles that do not have a windshield, or are part of fleets that frequently rotate plates among vehicles. All issues (including re-issues) since 2000 are currently valid.
+
+Until 2013 Connecticut, as a rule, skipped the number 0 as the leading digit in its plates, with the exception of dealer plates. Between July 2013 and August 2015, temporary 1ABCD2 and 1AB-CD2 serial formats were used, both of which allowed 0 to be used as the leading digit. In August 2015, a permanent AB-12345 serial format was introduced, and the number 0 could be used as the first of the five digits in the serial.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1905 to 1936===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!style="width:70px;"|Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1905 to 1909 Connecticut license plate.jpg|150px]]
+|{{nowrap|1905–09}}
+|White serial on black porcelain plate
+|'''C'''1234
+|C1 to C9999
+|Each serial was specific to the motorist, rather than to an individual plate (so if the motorist owned more than one vehicle, the plates on each would display the same serial). Annual re-registration commenced 1907.<ref>{{cite web |last=Wasielewski |first=Joe |title=Illustrated History of Connecticut License Plates – Passenger 1905–1919 |url=http://www.ctplates.info/ct_pass05-19.html |access-date=April 21, 2015}}</ref>
+|-
+|[[File:1910 Connecticut license plate.jpg|150px]]
+|1910
+|White serial on red porcelain plate
+|'''C'''12345
+|C1 to approximately C11400
+|
+|-
+|[[File:1911 Connecticut license plate.jpg|150px]]
+|1911
+|Blue serial on white porcelain plate
+|'''C'''12345
+|C1 to approximately C14000
+|
+|-
+|[[File:1912 Connecticut license plate.jpg|150px]]
+|1912
+|White serial on green porcelain plate
+|'''C'''12345
+|C1 to approximately C17700
+|
+|-
+|[[File:1913 Connecticut license plate.jpg|150px]]
+|1913
+|White serial on blue porcelain plate
+|'''C'''12345
+|C1 to approximately C21800
+|
+|-
+|[[File:1914 Connecticut license plate.jpg|150px]]
+|1914
+|White serial on green porcelain plate; vertical "CONN" and "1914" at left and right respectively
+|12345
+|1 to approximately 25000
+|First dated plate.
+|-
+|[[File:1915 Connecticut license plate.jpg|150px]]
+|1915
+|Yellow serial on black porcelain plate; vertical "CONN" and "1915" at left and right respectively
+|12345
+|1 to approximately 34000
+|
+|-
+|[[File:Connecticut 1916 license plate.jpg|150px]]
+|1916
+|White serial on black porcelain plate; vertical "CONN" and "1916" at left and right respectively
+|12345
+|1 to approximately 49000
+|
+|-
+|[[File:1917 Connecticut license plate.jpg|150px]]
+|1917
+|Dark blue serial on white flat metal plate; vertical "CONN" and "1917" on dark blue bands at left and right respectively
+|12345
+|1 to approximately 62000
+|
+|-
+|[[File:Connecticut 1918 License Plate.jpg|150px]]
+|1918
+|Dark green serial on white flat metal plate; vertical "CONN" and "1918" on dark green bands at left and right respectively
+|12-345
+|1 to approximately 70-000
+|
+|-
+|[[File:1919 Connecticut license plate.JPG|150px]]
+|1919
+|Black serial on white flat metal plate; "CONN. 1919" centered at bottom
+|12-345
+|1 to approximately 83-000
+|
+|-
+|[[File:1920 Connecticut license plate.jpg|150px]]
+|1920
+|Embossed blue serial on white plate with border line; "CONN.–1920" centered at bottom
+|12-345
+|1 to approximately 99-000
+|First embossed plate.
+|-
+|[[File:1921 Connecticut license plate.JPG|150px]]
+|1921
+|Embossed yellow serial on black plate with border line; "CONN.–1921" centered at bottom
+|123-456
+|1 to approximately 110–000
+|
+|-
+|[[File:1922 Connecticut license plate.JPG|150px]]
+|1922
+|Embossed maroon serial on white plate with border line; "CONN.–1922" centered at bottom
+|123-456
+|1 to approximately 125–000
+|
+|-
+|[[File:1923 Connecticut License Plate.jpg|150px]]
+|1923
+|Embossed white serial on dark green plate; "CONN. 1923" centered at bottom
+|123-456
+|1 to approximately 157–000
+|
+|-
+|[[File:1924 Connecticut license plate.jpg|150px]]
+|rowspan="2"|1924
+|rowspan="2"|Embossed black serial on gray plate; "CONN. 1924" centered at bottom
+|12-345
+|1 to approximately 98-000
+|rowspan="2"|Letter prefixes introduced to keep the width of plates down.<ref>{{cite web |last=Wasielewski |first=Joe |title=Illustrated History of Connecticut License Plates – Passenger 1920–1929 |url=http://www.ctplates.info/ct_pass20-29.html |access-date=August 10, 2023}}</ref> These were assigned to branch offices as follows: A, E and Y to [[New Haven, Connecticut|New Haven]]; F, H and S to [[Bridgeport, Connecticut|Bridgeport]]; K and V to [[Waterbury, Connecticut|Waterbury]]; N and L to [[New London, Connecticut|New London]]; and P and Z to [[Hartford, Connecticut|Hartford]].<ref name="allaboutlicenseplatesCT">{{cite web |last=Tanner |first=Eric N. |title=Connecticut Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Connecticut&code=ct |publisher=allaboutlicenseplates.com |access-date=December 17, 2020}}</ref>
+|-
+|[[File:1924 Connecticut license plate A123 format.jpg|150px]]
+|A-1234
+|Coded by branch&nbsp;office
+|-
+|[[File:1925 Connecticut license plate.jpg|150px]]
+|rowspan="2"|1925
+|rowspan="2"|Embossed white serial on navy blue plate; "CONN. 1925" centered at bottom
+|123-456
+|1 to approximately 104–000
+|rowspan="2"|
+|-
+|[[File:1925 Connecticut license plate A-1234 format.jpg|150px]]
+|A-1234
+|Coded by branch office
+|-
+|[[File:1926 Connecticut license plate.jpg|150px]]
+|rowspan="2"|1926
+|rowspan="2"|Embossed black serial on yellow plate; "CONN. 1926" centered at bottom
+|123-456
+|1 to approximately 112–000
+|rowspan="2"|
+|-
+|[[File:Connecticut 1926 license plate - Number A-1845.jpg|150px]]
+|A-12-345
+|Coded by branch office
+|-
+|[[File:1927 Connecticut license plate.jpg|150px]]
+|rowspan="2"|1927
+|rowspan="2"|Embossed white serial on maroon plate; "CONN. 1927" centered at bottom
+|123-456
+|1 to approximately 118–000
+|rowspan="2"|'S' prefix reassigned to [[Stamford, Connecticut|Stamford]].<ref name="allaboutlicenseplatesCT"/>
+|-
+|[[File:1927 Connecticut license plate county coded.jpg|150px]]
+|A-12-345
+|Coded by branch office
+|-
+|[[File:1928 Connecticut license plate.jpg|150px]]
+|rowspan="2"|1928
+|rowspan="2"|Embossed white serial on navy blue plate; "CONN. 1928" centered at bottom
+|123-456
+|1 to approximately 128–000
+|rowspan="2"|
+|-
+|[[File:1928 Connecticut license plate A-1234 format.jpg|150px]]
+|A-12-345
+|Coded by branch office
+|-
+|[[File:1929 Connecticut license plate.jpg|150px]]
+|rowspan="2"|1929
+|rowspan="2"|As 1927 base, but with "CONN. 1929" at bottom
+|123-456
+|1 to approximately 135–000
+|rowspan="2"|
+|-
+|[[File:1929 Connecticut license plate A-1234 format.jpg|150px]]
+|A-12-345
+|Coded by branch office
+|-
+|[[File:1930 Connecticut license plate - 9820.png|150px]]
+|rowspan="2"|1930
+|rowspan="2"|As 1928 base, but with "CONN. 1930" at bottom
+|123-456
+|1 to approximately 133–000
+|rowspan="2"|'Y' prefix reassigned to [[Danbury, Connecticut|Danbury]].<ref name="allaboutlicenseplatesCT"/>
+|-
+|[[File:1930 Connecticut license plate.jpg|150px]]
+|A-12-345
+|Coded by branch office
+|-
+|[[File:1931 Connecticut license plate.jpg|150px]]
+|rowspan="2"|1931
+|rowspan="2"|As 1927 base, but with "CONN. 1931" at bottom
+|123-456
+|1 to approximately 137–000
+|rowspan="2"|
+|-
+|[[File:1931 Connecticut license plate county coded.jpg|150px]]
+|A-12-345
+|Coded by branch office
+|-
+|[[File:1932 Connecticut license plate.jpg|150px]]
+|rowspan="3"|1932
+|rowspan="3"|Embossed white serial on navy blue plate; "CONN. 1932" at bottom
+|1234
+|rowspan="3"|Issued in blocks by branch office
+|rowspan="3"|All plates were {{convert|6|in|cm}} in height by {{convert|9+1/4|in|cm}} in width; this practice continued through 1956.<ref name="allaboutlicenseplatesCTsizes">{{cite web |last=Tanner |first=Eric N. |title=Connecticut Passenger License Plates - Sizes |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Sizes&jurisdiction=Connecticut&code=ct |publisher=allaboutlicenseplates.com |access-date=August 11, 2023}}</ref> Plates with the {{small|A/B}}123 serial format had the state abbreviation and year offset to the right; this practice continued through 1936.
+|-
+|[[File:1932 Connecticut license plate A123 format.jpg|150px]]
+|A123
+|-
+|[[File:1932 Connecticut license plate AB format.jpg|150px]]
+|{{small|A/B}}123
+|-
+|[[File:1933 Connecticut license plate 1234 format.jpg|150px]]
+|rowspan="3"|1933
+|rowspan="3"|Embossed white serial on maroon plate; "CONN. 1933" at bottom
+|1234
+|rowspan="3"|Issued in blocks by branch office
+|rowspan="3"|
+|-
+|[[File:1933 Connecticut license plate A123 format.jpg|150px]]
+|A123
+|-
+|[[File:1933 Connecticut license plate.jpg|150px]]
+|{{small|A/B}}123
+|-
+|[[File:1934 Connecticut license plate 1234 format.jpg|150px]]
+|rowspan="3"|1934
+|rowspan="3"|As 1932 base, but with "CONN. 1934" at bottom
+|1234
+|rowspan="3"|Issued in blocks by branch office
+|rowspan="3"|
+|-
+|[[File:1934 Connecticut A123 format.jpg|150px]]
+|A123
+|-
+|[[File:1934 Connecticut license plate AB123 format.jpg|150px]]
+|{{small|A/B}}123
+|-
+|[[File:1935 Connecticut license plate 1234 format.jpg|150px]]
+|rowspan="3"|1935
+|rowspan="3"|As 1933 base, but with "CONN. 1935" at bottom
+|1234
+|rowspan="3"|Issued in blocks by branch office
+|rowspan="3"|
+|-
+|[[File:1935 Connecticut A123 format.jpg|150px]]
+|A123
+|-
+|[[File:1935 Connecticut license plate AB123 format.jpg|150px]]
+|{{small|A/B}}123
+|-
+|[[File:1936 Connecticut license plate 1234 format.jpg|150px]]
+|rowspan="3"|1936
+|rowspan="3"|Embossed yellow serial on navy blue plate; "CONN. 1936" at bottom
+|1234
+|rowspan="3"|Issued in blocks by branch office
+|rowspan="3"|
+|-
+|[[File:1936 Connecticut license plate A123 format.jpg|150px]]
+|A123
+|-
+|[[File:1936 Connecticut license plate AB123 format.jpg|150px]]
+|{{small|A/B}}123
+|}
+
+===1937 to 1956===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Serial format
+!Serials issued
+!Notes
+|-
+|rowspan="3"|[[File:1938 Connecticut license plate.jpg|150px]]
+|rowspan="3"|{{nowrap|1937–41}}
+|rowspan="4"|Embossed black serial on silver plate; vertical "CONN" at right; tab box at bottom center
+|1234
+|1 to 9999
+|rowspan="6"|Validated for 1937, 1940 and 1943 with yellow tabs; for 1938, 1941 and 1946 with silver tabs; for 1939, 1942, 1945 and 1947 with light green tabs; and for 1944 with white tabs. In the {{small|A/1}}&nbsp;123 serial format, the letter progressed before the small number ({{small|A/2}} through {{small|Z/2}}, then {{small|A/3}} through {{small|Z/3}}, etc.).<ref name="allaboutlicenseplatesCT"/>
+|-
+|{{small|A/}} 123
+|{{small|A/}} 1 to {{small|Z/}} 999
+|-
+|{{small|A/B}} 123
+|{{small|A/A}} 1 to {{small|Z/Z}}&nbsp;999
+|-
+|[[File:1942 Connecticut license plate.jpg|150px]]
+|1941–46
+|rowspan="2"|{{small|1/A}} 123
+|{{small|2/A}} 1 to {{small|8/Z}}&nbsp;999
+|-
+|rowspan="2"|[[File:1947 to 1947 Connecticut license plate.jpg|150px]]
+|1946–47
+|rowspan="2"|As above, but with border line
+|{{small|9/A}} 1 to {{small|9/Z}}&nbsp;999
+|-
+|1947
+|{{small|A/1}} 123
+|{{small|A/2}} 100 to approximately {{small|Y/3}}&nbsp;999
+|-
+|rowspan="4"|[[File:1948 Connecticut license plate scotchlite.jpg|150px]]
+|rowspan="4"|1948–51
+|rowspan="5"|Embossed black serial on reflective aluminum plate with border line; "CT" at bottom right; tab box at bottom center
+|1234
+|1 to 9999
+|rowspan="8"|Validated for 1948, 1951 and 1954 with yellow tabs; for 1949 and 1952 with silver tabs; for 1950 and 1955 with light green tabs; and for 1953 and 1956 with red tabs.
+|-
+|{{small|A/}} 123
+|{{small|A/}} 1 to {{small|Z/}} 999
+|-
+|{{small|A/B}} 123
+|{{small|A/A}} 1 to {{small|Z/Z}}&nbsp;999
+|-
+|{{small|1/A}} 123
+|{{small|2/A}} 1 to {{small|9/Z}}&nbsp;999
+|-
+|[[File:1953 Connecticut license plate 12345 format.jpg|150px]]
+|1951–53
+|{{small|A/1}} 123
+|{{small|A/2}} 100 to {{small|Z/9}}&nbsp;999
+|-
+|[[File:1954 Connecticut license plate 12345 format.jpg|150px]]
+|1953–54
+|As above, but with narrower dies
+|12345
+|10000 to 99999
+|-
+|[[File:1954 Connecticut plate A-A 8667.png|150px]]
+|1954
+|As above, but non-reflective aluminum
+|rowspan="2"|{{small|A/B}}&nbsp;1234
+|{{small|A/A}} 1000 to {{small|A/C}}&nbsp;9999
+|-
+|[[File:1956 Connecticut license plate.jpg|150px]]
+|1954–56
+|As above, but with "CONN" at bottom right
+|{{small|A/D}} 1000 to approximately {{small|B/B}}&nbsp;6000
+|}
+
+===1957 to present===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Connecticut license plate that complied with these standards.<ref>{{cite web|url=http://www.ctplates.info/ct_pass50-59.html |title=Illustrated History of Connecticut License Plates – Passenger 1950–1959 |last=Wasielewski |first=Joe |access-date=June 23, 2017}}</ref>
+
+Plates continued to be validated with tabs each year through 1960. Monthly staggered registration commenced in 1961; tabs were used for expirations from May 1962 through February 1963, and stickers thereafter.{{citation needed|date = June 2017}}
+
+The "Constitution State" slogan was first used on the 1974 blue-on-white base. This base did not hold up well and was discontinued in 1976; remaining plates were recalled in 1990 and replaced with white-on-blue plates bearing the same serials.{{citation needed|date = June 2017}}
+
+From 1980 through 1987, only rear plates were issued as a cost-saving measure. When front plates became mandatory again in 1987, the design of the 1976 white-on-blue base was changed in order to distinguish between plates issued in pairs and rear-only plates, with a state shape added in the top left corner and the "Constitution State" slogan moved from the top to the bottom.<ref>{{cite web|url=http://www.ctplates.info/ct_pass80-89.html |title=Illustrated History of Connecticut License Plates – Passenger 1980–1989 |last=Wasielewski |first=Joe |access-date=June 23, 2017}}</ref>
+
+The current sky blue base was introduced in January 2000. Between September 2000 and August 2002, all remaining 1957–74 and 1976–99 plates were replaced with plates on this base bearing the same serials. Hence, serials issued in 1957 can be seen on the current base.
+
+Plate stickers continued to be issued through August 2006 (the last being used for August 2008 expirations). From September 2006 through July 2010, windshield stickers were used instead (the last being used for July 2012 expirations); these were discontinued after the Connecticut Department of Motor Vehicles began allowing police agencies to use license plate scanners to verify registrations.<ref>{{cite news|last1=Kauffman |first1=Matthew |title=Police keeping data from license plate scans; ACLU files privacy protest |url=https://www.courant.com/2012/02/21/police-keeping-data-from-license-plate-scans-aclu-files-privacy-protest/ |work=Hartford Courant |date=February 21, 2012 |access-date=September 21, 2015}}</ref><ref>{{cite news|last1=Tepfer |first1=Daniel |title=Police tout use of license plate scanners |url=http://www.ctpost.com/local/article/Police-tout-use-of-license-plate-scanners-3453946.php |work=Connecticut Post |date=April 2, 2012 |access-date=September 21, 2015}}</ref>
+
+The older 123·ABC format was in use from 1980 to 2013 - on both the 1976 and 2000 bases. After its exhaustion, the 1ABCD2 and 1AB·CD2 formats were used, until a computer upgrade was completed in 2015. Since then, Connecticut has used the seven-character AB·12345 format, beginning from AA·00001. Plates progressed to the current "B" series in 2020.<ref>{{Cite web |title=Connecticut 2015 Series Series History |url=https://www.licenseplates.cc/history.php?id=3188 |access-date=2026-01-02 |website=www.licenseplates.cc}}</ref>
+
+{| class="wikitable"
+|-
+!Image
+! style="width:70px;" |Dates issued
+!Description
+!Slogan
+!Serial format
+! style="width:95px;" |Serials issued
+!Notes
+|-
+|[[File:1957 Connecticut license plate.jpg|150px]]
+| rowspan="3" |1957
+| rowspan="5" |Embossed white serial on blue plate with border line; "CONNECTICUT" at bottom, offset to left
+| rowspan="5" |''none''
+|12345
+|1 to 99999
+| rowspan="5" |In the two-letter serial formats, serials with C or D as the first letter were reserved for Combination and Used Dealer plates respectively.
+|-
+|[[File:1959 Connecticut license plate.JPG|150px]]
+|AB 123
+|AA 1 to<br>ZZ 999
+|-
+|[[File:1960 Connecticut license plate.jpg|150px]]
+|AB1234
+|AA1000 to BH9999
+|-
+|[[File:1963 Connecticut license plate.JPG|150px]]
+|1958–66
+|123·456
+|100·000 to 999·999
+|-
+|[[File:Connecticut 1971 GX-7113.jpg|150px]]
+|1966–74
+|AB·1234
+|BJ·1000 to NZ·9999; ZA·1000 to ZF·9999
+|-
+|[[File:1974 to 1976 Connecticut license plate.jpg|150px]]
+|1974–76
+|Embossed blue serial on reflective white plate with border line; "CONNECTICUT" centered at bottom
+|"CONSTITUTION STATE" centered at top
+|AB·1234<sup>1</sup>
+|PA·1000 to approximately TP·4999
+|
+|-
+|[[File:Connecticut license plate, 1976–1980 series with January 1978 sticker.png|150px]]
+|1976–80
+| rowspan="2" |Embossed reflective (glass-beaded) white serial on blue plate with border line; "CONNECTICUT" centered at bottom
+| rowspan="2" |"CONSTITUTION STATE" at top
+|AB·1234<sup>1</sup>
+|TP·5000 to YZ·9999; ZG·1000 to ZZ·9999
+|
+|-
+|[[File:1980 to 1987 Connecticut license plate.jpg|150px]]
+|1980–87
+|123·ABC<sup>1</sup>
+|100·AAA to 999·EVX
+|Letters I and Q not used in this serial format. 'C' series reserved for Combination plates.
+|-
+|[[File:Connecticut 1987 Base License Plate.jpg|150px]]
+|1987&nbsp;– December 1999
+|Similar to above, but with "CONNECTICUT" at top and embossed state shape at top left
+|"CONSTITUTION STATE" at bottom
+|123·ABC<sup>1</sup>
+|100·EVY to 999·NZM
+|'L' series reserved for optional Preserve the Sound plates.
+|-
+|[[File:Connecticut 2004 784-PAJ.jpg|150px]]
+|January 2000&nbsp;– June<br>2013
+| rowspan="4" |Embossed dark blue serial on reflective gradient sky blue and white plate with dark blue border line; "Connecticut" screened in dark blue centered at top; screened dark blue state shape at top left
+| rowspan="4" |"Constitution State" screened in dark blue centered at bottom
+|123·ABC<sup>2</sup>
+|100·NZN to 999·ZZX
+|'O' series not used; 'V' series reserved for Veteran plates.
+|-
+|[[File:2013 Connecticut license plate.jpg|150px]]
+|June&nbsp;– December 2013
+|1ABCD2
+|0AAAA0 to 9AGGX9
+| rowspan="2" |Temporary serial formats used until the completion of a computer upgrade to allow standard seven-character serials (below). Initial 1ABCD2 format revised with addition of dot separator in response to visibility concerns. Letters C, I, Q, Y and Z not used in either format; O used in the 1ABCD2 format but not in the 1AB·CD2 format.
+|-
+|[[File:2013 to 2015 Connecticut license plate.jpg|150px]]
+|December 2013&nbsp;– August 2015
+|1AB·CD2
+|0AG·HA0 to 9AX·XX9
+|-
+|[[File:2015 to Present Connecticut license plate.jpg|150px]]
+|August 2015&nbsp;– present
+|AB·12345
+|AA·00001 to BW·99865 {{small|(as of October 31, 2025)}}<ref name="licenseplates.cc">{{Cite web |title=Connecticut License Plates |url=https://www.licenseplates.cc/CT |website=www.licenseplates.cc |access-date=November 25, 2023}}</ref>
+|Standard seven-character serials introduced following the completion of the aforementioned computer upgrade. Letters I, O, and Q not used.<ref>{{cite news |last=Busemeyer |first=Stephen |date=September 18, 2015 |title=DMV ditches license plate style, jumps to seven characters |url=http://www.courant.com/news/connecticut/hc-license-plates-0919-20150918-story.html |newspaper=[[Hartford Courant]] |access-date=September 21, 2015}}</ref>
+|}
+
+'''Notes'''   
+*'''1''' Plus remakes of serials issued on previous bases: 123–456 and AB-1234 formats
+*'''1''' Plus remakes of serials issued on previous bases: 123–456, AB-1234, and 123-ABC formats (serials from 100-AAA to 999-NZM)
+*'''2''' Plus remakes of serials issued on previous bases: 123–456, AB-1234, and 123-ABC formats (serials from 100-AAA to 999-NZM)
+
+==Current plate types==
+===Non-passenger types===
+A number of non-passenger types now use the AB·12345 serial format introduced on passenger plates in 2015.
+{|class="wikitable"
+!Image
+!Type
+!Design
+!Serial<br>format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|All Terrain
+|As Motorcycle plate, but with "All Terrain" at bottom
+|'''G'''·1234
+|This type probably started in the 1970s. Used on off-road recreational vehicles.
+|-
+|[[File:Connectiut 2002 HAM Radio License Plate.gif|150px]]
+|[[Amateur radio|Amateur Radio]]
+|As passenger base, with lightning bolt used as separator
+|''[[Federal Communications Commission|FCC]] call sign''
+|This type started in the mid-1950s.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Ambulance]]
+|As passenger base, but with "Ambulance" in place of slogan
+|1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]] 
+|[[International Registration Plan|Apportioned]]
+|As passenger base, but with red serial and border line, and "Apportioned" in place of slogan
+|12345·'''A'''
+|This type appears to have started in the mid-1980s, from 1000·A.
+|- 
+|[[File:License plates of Connecticut 0177.jpg|150px]]
+|[[Bus]]
+|As passenger base, but with "Bus" in place of slogan
+|1234<br>AB·12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Camp Trailer
+|As passenger base, but with "Camp Tr." in place of slogan
+|123·456<br>AB·12345
+|This type started in 1924. Used on private trailers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Recreational vehicle|Camper]]
+|As passenger base, but with "Camper" in place of slogan
+|12345<br>123·456
+|This type started in 1969.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Classic [[Motorcycle]]
+|Blue on white
+|1234
+|Used on collectable motorcycles that are at least 20 years old. Previously "Early American," black on white.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Classic Vehicle
+|Blue on white
+|'''00'''·ABCD
+|Used on collectable vehicles (except motorcycles) that are at least 20 years old. Previously "Early American," black on white. The earliest of the "Early American" plates were issued in 1952. These were porcelain plates, black on a white background. Original sequence of 12345 was replaced by 1A·123 format, which carried over after the black on white design was changed to the new blue on white on March 29, 2014. '''00'''·ABCD serial format introduced 2015; shared with standard Motorcycle plates.<ref name=ClassicCT>{{cite web | url = http://ctplates.info/home/non-passenger-gallery/classic-vehicle/ | title = Classic Vehicle | work = An Illustrated History of Connecticut License Plates }}</ref>
+|-
+|[[File:CT comb 3CF-593.png|150px]]
+|Combination
+|"Constitution State" legend; "COMB" embossed vertically at right. This type started in 1922, with the same size, colors and format as regular passenger plates but with a 'C' prefix.
+|'''C'''·123456
+|Previously '''C'''A·1234, '''C'''·12345, 12345, 123·'''C'''AB, 1'''C'''·2345, 12'''C'''·345 on past bases remade on the current base; 12345·'''C''', 1'''C'''A·234, 12'''C'''·A34, 1234·'''C'''A, and 1234·'''D'''A on the current base.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Combination – Handicapped
+|"Constitution State" legend. Wheelchair embossed to right of serial; "COMB" embossed vertically to right of wheelchair.
+|123·'''R'''<br>123·'''S'''<br>123·'''T'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Commercial vehicle|Commercial]]
+|As passenger base, but with red serial and border line, and vertical "COMM" embossed to left of serial
+|A·12345<br>AB·12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]] 
+|Connecticut News [[Photographer]]
+|"Constitution State" legend.
+|12·{{small|'''C'''/'''N'''/'''P'''}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Construction
+|As passenger base, but with red serial and border line, and "Construction" in place of slogan
+|1234
+|This type probably started in the late 1960s or early 1970s. Generally used on construction vehicles with little or no highway use.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Factory
+|As passenger base, but with red serial and border line, and "Factory" in place of slogan
+|1234
+|This type started in the mid-1920s.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Farm]]
+|As passenger base, but with red serial and border line, and "Farm" in place of slogan
+|12345
+|This type started in 1933.
+|-
+|[[File:Connecticut Fire 2585.png|150px]] 
+|[[Fire engine|Fire Apparatus]]
+|As passenger base, but with red serial and border line, and "Fire Apparatus" in place of slogan
+|1234
+|This type started circa 1963.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Disability|Handicapped]]
+|As passenger base
+|123·A {{access icon|10px}}<br>1234·'''Z''' {{access icon|10px}}<br>1234·'''Y''' {{access icon|10px}}
+|
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Hearse]]
+|As passenger base, but with "Hearse" in place of slogan
+|'''U'''·123<br>'''U'''·'''8'''123<br>AB·12345
+|This type started in the mid-1920s; the 'U' prefix was for "undertaker".<ref>{{cite web |last=Wasielewski |first=Joe |title=Illustrated History of Connecticut License Plates – Hearse |url=https://www.ctplates.info/ct_hearse.html |access-date=November 26, 2023}}</ref>
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|Interstate
+|As passenger base, but with "Interstate" in place of slogan
+|'''Z'''1234'''Z'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Livery]]
+|As passenger base, but with "Livery" in place of slogan
+|'''L'''1234'''L'''
+|This type started in 1910. Used on limousines and for-hire cars, but not taxis.
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Medal of Honor]]
+|
+|1
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Medical Doctor]]
+|
+|'''MD'''·1234
+|MD·0001 to MD·0999 followed MD·1000 to MD·9999
+|-
+|[[File:CT 2004 MC.jpg|150px]]
+|Motorcycle
+|Similar to passenger base, with "Conn" at top and "Motorcycle" at bottom
+|123·456<br>'''00'''·ABCD
+|'''00'''·ABCD serial format introduced 2015; shared with Classic Vehicle plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle&nbsp;– Handicapped
+|As standard Motorcycle plate
+|123·'''M''' {{access icon|10px}}<br>123·'''N''' {{access icon|10px}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal
+|As passenger base, but with "Municipal" in place of slogan
+|1·''AB''<br>12·''AB''<br>123·''AB''<br>1·''ABC''<br>12·''ABC''<br>123·''ABC''
+|This type started in the mid-1970s. Used on town/city government vehicles, including police cars and dump trucks. The letters in the serial indicate the municipality.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal – Preserve the Sound
+|Uses a "MUNICIPAL CT" sticker in place of validation sticker.
+|1·''AB''<br>12·''AB''<br>123·''AB''<br>1·''ABC''<br>12·''ABC''<br>123·''ABC''
+|Letters signify municipality.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[New York (state)|New York]] [[Mass media|Press]]
+|As passenger base
+|'''NYP'''·123
+|Used by news reporters to park in Working Press zones in New York City.<ref>{{cite web |last=Wasielewski |first=Joe |title=Illustrated History of Connecticut License Plates – Reserved Series |url=http://www.ctplates.info/ct_reserved.html |access-date=September 12, 2013}}</ref><ref>{{cite web |title=Media Parking in NYC |url=http://www.sportsshooter.com/message_display.html?tid=15854 |access-date=September 12, 2013 |archive-date=January 30, 2016 |archive-url=https://web.archive.org/web/20160130162624/http://www.sportsshooter.com/message_display.html?tid=15854 |url-status=dead }}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Official
+|
+|1
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[School Bus]]
+|Gradient sky blue and white with school bus graphic at left; "CONNECTICUT" at top and "SCHOOL BUS" at bottom
+|'''S'''1234'''S'''<br>12A34<br>AB·12345
+|School buses used Service Bus plates prior to the mid-1990s. In the 12A34 serial format, the letter progressed S, A, B.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|School Bus/Livery Bus
+|As School Bus plate, but with "SCHOOL BUS/LIVERY BUS" at bottom
+|1'''SL'''23
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Service Bus
+|As passenger base, but with "Service Bus" in place of slogan
+|12345
+|This type started sometime in the 1940s. Used on private transportation vehicles that carry persons without charge. Until the mid-1990s, these included school buses.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Snowmobile]]
+|As Motorcycle plate, but with "Snowmobile" at bottom
+|12345
+|This type started in 1969.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Service Bus
+|
+|123<br>AB·12345
+|This type started sometime in the 1970s. Plates are typically used on buses belonging to the State Vocational schools, the State University system, and prisoner transport buses.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Taxicab|Taxi]]
+|As passenger base, but with "Taxi" in place of slogan
+|'''T'''1234'''T'''
+|This type started in 1931.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Trailer (vehicle)|Trailer]]
+|As passenger base, but with red serial and border line, and "Trailer" in place of slogan
+|'''V'''·12345<br>'''W'''·12345<br>AB·12345
+|This type probably started in the early 1930s. Used on commercial trailers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Transporter
+|Embossed maroon serial on yellow plate with border line; embossed state shape and "CONNECTICUT" at top; "TRANS." at bottom
+|1234
+|This type probably started in the late 1940s. Has a variety of uses, including for the movement of unregistered vehicles for the purposes of inspection or sale, and on vehicles being repossessed.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Vanpool
+|As passenger base, but with "Vanpool" in place of slogan
+|1234
+|This type started in 1980. Used on carpool commuter vans.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Tow truck|Wrecker]]
+|Embossed black serial on orange plate with border line; embossed state shape and "CONNECTICUT" at top; "WRECKER" at bottom
+|12345<br>AB·12345
+|This type started circa 1954.
+|}
+
+===Optional issues===
+{|class="wikitable"
+!Image
+!Type
+!Design
+!style="width:70px"|Serial format
+!Notes
+|-
+|[[File:CT IUOE 478.jpg|150px]]<br>
+|Optional Issues – Passenger
+|
+|123·ABC<br>1ABC2
+|Types confirmed as using 1ABC2 format: Blue Knights, Combat Wounded, Ducks Unlimited, Fraternal Order of Police, Garden Clubs, Greenways, Laos War Veteran, Meriden, Norwich, Olympic Spirit, Silent Service, UCONN. Letters I, O, and Q are used in any letter position. Elks previously used 123-'''ELK'''; UCONN 1999 NCAA National Champions: 123·'''PEP'''; Olympic Spirit: 123·'''WIN'''; [[Penn State University]]: 123·'''PSU'''.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Special issues – Combination
+|
+|1'''C'''AB2
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Candlewood Lake|Candlewood Lake Authority]]
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Caring for [[Pet]]s
+|
+|123·'''PET'''<br>123·'''DOG'''<br>123·'''CAT'''<br>123·'''TLC'''<br>123·'''WAG'''<br>123·'''WOF'''<br>1ABC2
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Keep [[Child|Kids]] Safe
+|
+|123·'''ZZY'''
+|Previously 123·'''KID''', 123·'''TOT''', 123·'''ZZZ'''.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Olympic Games|Olympic]] Spirit
+|
+|123·'''WIN'''<br>1ABC2
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Police Memorial
+|
+|123·'''OFC'''<br>1ABC2
+|
+|-
+| 
+|Preserve the Sound – Passenger
+|
+|123·'''L'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Home of the Patriots – Passenger 
+|
+|
+|In 1998, [[New England Patriots]] owner [[Robert Kraft]] sought to relocate the team's home to [[Downtown Hartford|downtown]] [[Hartford, Connecticut]]. Kraft and then-Connecticut Governor [[John G. Rowland]] were photographed at a related press conference shaking hands and holding a "Home of the Patriots" sample plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Preserve the Sound – Camp Trailer
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Preserve the Sound – Camper
+|"CAMP" embossed vertically.
+|123·'''L'''A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Preserve the Sound – Combination
+|"COMB" printed vertically to left of serial.
+|123·'''L'''A
+|Serials issued in descending order from 999·LZ.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Preserve the Sound – Combination Handicapped
+|"COMB" printed vertically to left of serial.
+|123'''L'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Preserve the Sound – Commercial
+|"COMM" printed vertically to left of serial; red serial.
+|123·'''C'''A
+|Previously 000·'''L'''A, for which the high is 269·LC.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Preserve the Sound – Handicapped
+|
+|123'''L'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|United We Stand – Passenger
+|
+|1'''B'''AC2
+|Original format was 000·'''USA'''.
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|United We Stand – Combination
+|"CO" and "MB" embossed vertically above and below separator dot.
+|1'''BC'''A2
+|Original format was '''USA'''·123.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Veteran]] – Passenger
+|
+|123·'''V'''BC
+|Originally 123·'''VET''', then VAA and up.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – Camper
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – Combination
+|"CO" and "MB" embossed vertically above and below separator dot.
+|123·'''VS'''A
+|Originally 123·'''VET'''.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – Combination Handicapped
+|Wheelchair embossed at right of plate. Format of 1V23 followed by "COMB" embossed vertically through at least 1V13; switched to format of 1V·23 with "CO" and "MB" embossed vertically above and below a separator dot at 3V·56 or lower.
+|1'''V'''·23
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – Commercial
+|
+|123·'''VZ'''A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – Handicapped
+|Wheelchair embossed to left of serial.
+|1'''V'''·23
+|Previously 000·'''V'''
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – Motorcycle
+|"Veteran – MC" legend.
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran with V/E/T
+|
+|123 {{small|'''V'''/'''E'''/'''T'''}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – [[Prisoner of War|POW]]
+|
+|123 {{small|'''P'''/'''O'''/'''W'''}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Volunteer [[Firefighter]] – Passenger
+|"Constitution State" slogan with small logo at right.
+|123·'''A'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Volunteer [[Firefighter]] – Combination
+|"Constitution State" slogan with small logo at right.
+|123·'''C'''A
+|
+|}
+
+===Annual types===
+{|class="wikitable"
+!Image
+!Type
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer – Motorcycle New
+|"Dealer" legend.
+|'''MX'''A·0, '''MX'''AA·0, '''MX'''A·00, '''MX'''AA·00, '''MX'''A·000
+|Numerical suffix signifies the dealership, which receives plates with sequential letters following the X.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer – Motorcycle Used
+|"Dealer" legend.
+|'''MD'''A·0, '''MD'''AA·0, '''MD'''A·00, '''MD'''AA·00, '''MD'''A·000
+|Numerical suffix signifies the dealership, which receives plates with sequential letters following the D.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer – Passenger New
+|"Dealer" legend.
+|'''X'''A·0, '''X'''AA·0, '''X'''A·00, '''X'''AA·00, '''X'''A·000, '''X'''AA·000, '''X'''A·0000
+|Numerical suffix signifies the dealership, which receives plates with sequential letters following the X.
+|-
+|[[File:Connecticut Dealer Plate DR-3513.png|150px]]
+|Dealer – Passenger Used
+|"Dealer" legend.
+|'''D'''A·0, '''D'''AA·0, '''D'''A·00, '''D'''AA·00, '''D'''A·000, '''D'''AA·000, '''D'''A·0000
+|Numerical suffix signifies the dealership, which receives plates with sequential letters following the D.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer – Special
+|"Dealer" legend.
+|'''SX'''·0000
+|Issued sequentially, not coded by dealership.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dismantler
+|"Dismantler" legend.
+|'''D'''A·0000
+|
+|-
+|[[File:RA-3214 CT repair plate.png|150px]]
+|Repair
+|"Repair" legend.
+|'''R'''A·000, '''R'''A·0000
+|Numerical suffix signifies the repairer, which receives plates with sequential letters following the R.
+|}
+
+===Political types===
+On both flat blue on white and Preserve the Sound bases:
+*Assistant Majority Leader
+*Assistant Minority Leader
+*Deputy Majority Leader
+*Deputy Minority Leader
+
+==Municipality codes==
+{{Incomplete list|date=October 2008}}
+{|class="wikitable sortable mw-collapsible mw-collapsed"
+!Code!!Municipality
+|-
+|AS
+|[[Ansonia, Connecticut|Ansonia]]
+|-
+|AV
+|[[Avon, Connecticut|Avon]]
+|-
+|BA
+|[[Barkhamsted, Connecticut|Barkhamsted]]
+|-
+|BD
+|[[Bloomfield, Connecticut|Bloomfield]]
+|-
+|BE
+|[[Berlin, Connecticut|Berlin]]
+|-
+|BF
+|[[Beacon Falls, Connecticut|Beacon Falls]]
+|-
+|BK
+|[[Brookfield, Connecticut|Brookfield]]
+|-
+|BL
+|[[Bethel, Connecticut|Bethel]]
+|-
+|BM
+|[[Bethlehem, Connecticut|Bethlehem]]
+|-
+|BPT
+|[[Bridgeport, Connecticut|Bridgeport]]
+|-
+|BR
+|[[Branford, Connecticut|Branford]]
+|-
+|BT
+|[[Bristol, Connecticut|Bristol]]
+|-
+|BU
+|[[Burlington, Connecticut|Burlington]]
+|-
+|BW
+|[[Bridgewater, Connecticut|Bridgewater]]
+|-
+|BY
+|[[Bethany, Connecticut|Bethany]]
+|-
+|CH
+|[[Cheshire, Connecticut|Cheshire]]
+|-
+|CL
+|[[Clinton, Connecticut|Clinton]]
+|-
+|CN
+|[[Canton, Connecticut|Canton]]
+|-
+|CO
+|[[Colchester, Connecticut|Colchester]]
+|-
+|COR
+|[[Cornwall, Connecticut|Cornwall]]
+|-
+|CP
+|[[Chaplin, Connecticut|Chaplin]]
+|-
+|CR
+|[[Chester, Connecticut|Chester]]
+|-
+|CU
+|[[Columbia, Connecticut|Columbia]]
+|-
+|CV
+|[[Coventry, Connecticut|Coventry]]
+|-
+|CW
+|[[Cromwell, Connecticut|Cromwell]]
+|-
+|DA
+|[[Danbury, Connecticut|Danbury]]
+|-
+|DAR
+|[[Darien, Connecticut|Darien]]
+|-
+|DE
+|[[Derby, Connecticut|Derby]]
+|-
+|DR
+|[[Deep River, Connecticut|Deep River]]
+|-
+|DU
+|[[Durham, Connecticut|Durham]]
+|-
+|EG
+|[[East Granby, Connecticut|East Granby]]
+|-
+|EH
+|[[East Hartford, Connecticut|East Hartford]]
+|-
+|EHA
+|[[East Haven, Connecticut|East Haven]]
+|-
+|EL
+|[[East Lyme, Connecticut|East Lyme]]
+|-
+|ELL
+|[[Ellington, Connecticut|Ellington]]
+|-
+|EM
+|[[East Haddam, Connecticut|East Haddam]]
+|-
+|EN
+|[[East Hampton, Connecticut|East Hampton]]
+|-
+|ENF
+|[[Enfield, Connecticut|Enfield]]
+|-
+|ES
+|[[Essex, Connecticut|Essex]]
+|-
+|ET
+|[[Easton, Connecticut|Easton]]
+|-
+|FA
+|[[Fairfield, Connecticut|Fairfield]]
+|-
+|FN
+|[[Farmington, Connecticut|Farmington]]
+|-
+|FWD
+|Farmington Woods District (Farmington/Avon)
+|-
+|GL
+|[[Glastonbury, Connecticut|Glastonbury]]
+|-
+|GLP
+|[[Groton Long Point, Connecticut|Groton Long Point]]
+|-
+|GO
+|[[Goshen, Connecticut|Goshen]]
+|-
+|GR
+|[[Granby, Connecticut|Granby]]
+|-
+|GRO
+|[[Groton, Connecticut|Groton]]
+|-
+|GU
+|[[Guilford, Connecticut|Guilford]]
+|-
+|GW
+|[[Greenwich, Connecticut|Greenwich]]
+|-
+|HE
+|[[Hebron, Connecticut|Hebron]]
+|-
+|HFD
+|[[Hartford, Connecticut|Hartford]]
+|-
+|HN
+|[[Hamden, Connecticut|Hamden]]
+|-
+|HR 
+|[[Hartland, Connecticut|Hartland]]
+|-
+|KI
+|[[Killingly, Connecticut|Killingly]]
+|-
+|KW
+|[[Killingworth, Connecticut|Killingworth]]
+|-
+|LD
+|[[Ledyard, Connecticut|Ledyard]]
+|-
+|LE
+|[[Lebanon, Connecticut|Lebanon]]
+|-
+|LFD
+|[[Litchfield, Connecticut|Litchfield]]
+|-
+|LI
+|[[Lisbon, Connecticut|Lisbon]]
+|-
+|MA
+|[[Manchester, Connecticut|Manchester]]
+|-
+|MDC
+|[[Metropolitan District Commission of Connecticut|Metropolitan District Commission]], a non-profit municipal corporation that provides water to most of [[Hartford County, Connecticut|Hartford County]]
+|-
+|MDF
+|[[Middlefield, Connecticut|Middlefield]]
+|-
+|MDN
+|[[Madison, Connecticut|Madison]]
+|-
+|ME
+|[[Meriden, Connecticut|Meriden]]
+|-
+|MF
+|[[Mansfield, Connecticut|Mansfield]]
+|-
+|MFD
+|[[Milford, Connecticut|Milford]]
+|-
+|MI
+|[[Middlebury, Connecticut|Middlebury]]
+|-
+|MN
+|[[Middletown, Connecticut|Middletown]]
+|-
+|MO
+|[[Marlborough, Connecticut|Marlborough]]
+|-
+|MON
+|[[Monroe, Connecticut|Monroe]]
+|-
+|MTV
+|[[Montville, Connecticut|Montville]]
+|-
+|NA
+|[[Naugatuck, Connecticut|Naugatuck]]
+|-
+|NB
+|[[New Britain, Connecticut|New Britain]]
+|-
+|NBR
+|[[North Branford, Connecticut|North Branford]]
+|-
+|NC
+|[[New Canaan, Connecticut|New Canaan]]
+|-
+|NE
+|[[Newington, Connecticut|Newington]]
+|-
+|NF
+|[[New Fairfield, Connecticut|New Fairfield]]
+|-
+|NFK
+|[[Norfolk, Connecticut|Norfolk]]
+|-
+|NH
+|[[New Haven, Connecticut|New Haven]]
+|-
+|NHD
+|[[New Hartford, Connecticut|New Hartford]]
+|-
+|NHN
+|[[North Haven, Connecticut|North Haven]]
+|-
+|NL
+|[[New London, Connecticut|New London]]
+|-
+|NM
+|[[New Milford, Connecticut|New Milford]]
+|-
+|NO
+|[[Norwich, Connecticut|Norwich]]
+|-
+|NT
+|[[Newtown, Connecticut|Newtown]]
+|-
+|NW
+|[[Norwalk, Connecticut|Norwalk]]
+|-
+|NWT
+|Second Taxing District of City of Norwalk ([[South Norwalk]] Electric and Water)
+|-
+|OL
+|[[Old Lyme, Connecticut|Old Lyme]]
+|-
+|OR
+|[[Orange, Connecticut|Orange]]
+|-
+|OS
+|[[Old Saybrook, Connecticut|Old Saybrook]]
+|-
+|OX
+|[[Oxford, Connecticut|Oxford]]
+|-
+|PL
+|[[Plainville, Connecticut|Plainville]]
+|-
+|PO
+|[[Portland, Connecticut|Portland]]
+|-
+|PRO
+|[[Prospect, Connecticut|Prospect]]
+|-
+|PT
+|[[Putnam, Connecticut|Putnam]]
+|-
+|PY
+|[[Plymouth, Connecticut|Plymouth]]
+|-
+|RB
+|[[Roxbury, Connecticut|Roxbury]]
+|-
+|RE
+|[[Redding, Connecticut|Redding]]
+|-
+|RI
+|[[Ridgefield, Connecticut|Ridgefield]]
+|-
+|RH
+|[[Rocky Hill, Connecticut|Rocky Hill]]
+|-
+|RPV
+|Regional Refuse District #1
+|-
+|SA
+|[[Salem, Connecticut|Salem]]
+|-
+|SBY
+|[[Southbury, Connecticut|Southbury]]
+|-
+|SE
+|[[Seymour, Connecticut|Seymour]]
+|-
+|SF
+|[[Stratford, Connecticut|Stratford]]
+|-
+|SH
+|[[Shelton, Connecticut|Shelton]]
+|-
+|SI
+|[[Simsbury, Connecticut|Simsbury]]
+|-
+|SO
+|[[Southington, Connecticut|Southington]]
+|-
+|SOM
+|[[Somers, Connecticut|Somers]]
+|-
+|ST
+|[[Stamford, Connecticut|Stamford]]
+|-
+|STF
+|[[Stafford, Connecticut|Stafford]]
+|-
+|STN
+|[[Stonington, Connecticut|Stonington]]
+|-
+|SU
+|[[Suffield, Connecticut|Suffield]]
+|-
+|SW
+|[[South Windsor, Connecticut|South Windsor]]
+|-
+|TH
+|[[Thomaston, Connecticut|Thomaston]]
+|-
+|TO
+|[[Torrington, Connecticut|Torrington]]
+|-
+|TR
+|[[Trumbull, Connecticut|Trumbull]]
+|-
+|UN
+|[[Union, Connecticut|Union]]
+|-
+|VE
+|[[Vernon, Connecticut|Vernon]]
+|-
+|WAS
+|[[Washington, Connecticut|Washington]]
+|-
+|WB
+|[[Westbrook, Connecticut|Westbrook]]
+|-
+|WBY
+|[[Waterbury, Connecticut|Waterbury]]
+|-
+|WE
+|[[Weston, Connecticut|Weston]]
+|-
+|WF
+|[[Wallingford, Connecticut|Wallingford]]
+|-
+|WFD
+|[[Waterford, Connecticut|Waterford]]
+|-
+|WH
+|[[West Hartford, Connecticut|West Hartford]]
+|-
+|WI
+|[[Wilton, Connecticut|Wilton]]
+|-
+|WIN
+|[[Windsor, Connecticut|Windsor]]
+|-
+|WL
+|[[Windsor Locks, Connecticut|Windsor Locks]]
+|-
+|WM
+|[[Windham, Connecticut|Windham]]
+|-
+|WN
+|[[West Haven, Connecticut|West Haven]]
+|-
+|WO
+|[[Wolcott, Connecticut|Wolcott]]
+|-
+|WOO
+|[[Woodbridge, Connecticut|Woodbridge]]
+|-
+|WP
+|[[Westport, Connecticut|Westport]]
+|-
+|WR
+|[[Winchester, Connecticut|Winchester]]/[[Winsted, Connecticut|Winsted]]
+|-
+|WT
+|[[Watertown, Connecticut|Watertown]]
+|-
+|WTD
+|[[Wethersfield, Connecticut|Wethersfield]]
+|-
+|WWL
+|[[Willington, Connecticut|Willington]]
+|-
+|WY
+|[[Woodbury, Connecticut|Woodbury]]
+|-
+|}<ref>{{cite web|url=http://ctplates.info/municipal.html |title=Connecticut Municipal License Plate Codes |last1=Wasielewski |first1=Joe |last2=Barnes |first2=Mike |access-date=September 12, 2013}}</ref>
+
+==State agency plates==
+{{Incomplete list|date=December 2010}}
+Most state agencies in Connecticut register their vehicles with state plates. The plate starts with a number to represent the agency that owns the vehicle. Some agencies, such as the Connecticut State Police, register some vehicles using regular passenger or combination plates.
+{|class="wikitable sortable"
+!Code!!Agency
+|-
+|1-
+|[[Connecticut Department of Motor Vehicles|Department of Motor Vehicles]]
+|-
+|2-
+|[[Connecticut Department of Transportation|Department of Transportation]]
+|-
+|5-
+|[[Connecticut Department of Administrative Services|Department of Administrative Services]] – Fleet vehicles, leased to other agencies
+|-
+|9-
+|[[University of Connecticut|University of Connecticut (UCONN)]]
+|-
+|36-
+|[[Western Connecticut State University]] – Police
+|-
+|46-
+|[[Eastern Connecticut State University]] – Police
+|-
+|50-
+|[[Connecticut Department of Energy and Environmental Protection|Department of Energy and Environmental Protection]]
+|-
+|56-
+|[[Department of Emergency Services and Public Protection]] – [[Connecticut State Police|State Police]] special vehicles (mobile crime lab, fire investigation unit, etc.)
+|-
+|58-
+|[[Connecticut Department of Emergency Management and Homeland Security|Department of Emergency Management and Homeland Security]] – CT-TF1 Urban Search & Rescue
+|-
+|79-
+|[[Connecticut Department of Veteran Affairs|Department of Veteran Affairs]] – Vehicles belonging to the Veterans Home in Rocky Hill
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/ct.html Connecticut license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613165125/https://www.15q.net/ct.html |date=June 13, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Connecticut}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Connecticut}}
+[[Category:Vehicle registration plates of the United States by state or territory|Connecticut]]
+[[Category:Transportation in Connecticut]]
+[[Category:Connecticut transportation-related lists]]

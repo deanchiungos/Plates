@@ -1,0 +1,3680 @@
+{{Short description|Licence plates of Ontario, Canada}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = 2016 Ontario License Plate CBPC-344.jpg
+| slogan = Yours to discover/''Tant à découvrir''{{notetag|Vehicular license plates may be ordered with the slogan in either the [[Ontario#Language|English or French language]]. The slogan is omitted on green vehicle license plates issued by the province.}}
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABCD-123
+| current_start_date = 1997 (reissued in 2020)
+| designer = 
+| issuer = [[Ministry of Transportation (Ontario)|Ministry of Transportation]]
+| manufacturer = Trilcor Industries<br />[[Milton, Ontario]], Canada
+| start_date = {{Start date|1911}}<br />(pre-provincial plates from 1903 to 1911)
+}}
+
+The [[Provinces and territories of Canada|Canadian province]] of [[Ontario]] first required its residents to register their [[motor vehicle]]s in 1903. Registrants provided their own [[Vehicle registration plate|licence plate]]s for display until 1911, when the province began to issue plates.<ref>{{cite web |last=Taylor |first=Eric Robert |title=Ontario Archive |url=http://porcelainplates.net/ontario_archive.html |publisher=PorcelainPlates.net |access-date=16 August 2017}}</ref> Plates are currently issued by the [[Ministry of Transportation (Ontario)|Ministry of Transportation]] (MTO). The location of plates is specified by the Highway Traffic Act<ref>{{cite web|url=https://www.ontario.ca/laws/statute/90h08 |title=Highway Traffic Act, R.S.O. 1990, c. H.8 |date=24 July 2014 |publisher=[[Government of Ontario]] |access-date=17 September 2015}}</ref> and Regulation 628 under the Act.<ref>{{cite web|url=https://www.ontario.ca/laws/regulation/900628#BK2 |title=R.R.O. 1990, Reg. 628: Vehicle Permits |date=24 July 2014 |publisher=Government of Ontario |access-date=17 September 2015}}</ref>
+
+==The Crown==
+The symbol of a crown representing the [[Monarchy of Canada|Crown of Canada]] has appeared on almost all Ontario licence plates since 1937, when it was first used to commemorate the [[coronation of King George VI and Queen Elizabeth]]. Exceptions to this included a series of licence plates issued from 1951 to 1952, due to metal shortages from the Korean War;<ref>{{cite web|url=https://www.canadianautomotivemuseum.com/royal-symbols-and-the-canadian-car|title=Royal Symbols and the Canadian Car|publisher=Canadian Automotive Museum|year=2022|website=www.canadianautomotivemuseum.com|access-date=20 June 2023}}</ref> and a series of farm plates issued in the 1980s and 1990s.
+
+Toronto politician and [[Orange Order in Canada|Orange Order]] leader [[Leslie Howard Saunders|Leslie Saunders]] led protests against a proposal to remove the crown in 1948, a decision the government overturned.<ref>Leslie Howard Saunders. ''An Orangeman in public life: the memoirs of Leslie Howard Saunders.'' Britannia Printers, 1980 p. 97</ref>
+
+==Passenger baseplates==
+===1911 to 1972===
+In 1956, Canada, the United States, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1954 (dated 1955) issue was the first Ontario licence plate that complied with these standards.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:65px"|Serial format
+!Serials issued
+!Notes
+|-
+|[[File:ONTARIO 1911 ---LICENSE PLATE, ONTARIO'S ONLY PORCELAIN ISSUE (5731735261).jpg|150px]]
+|1911
+|White serial on blue porcelain plate; vertical "ONT." and "1911" at left and right respectively
+|''none''
+|12345
+|1 to approximately 11500
+|
+|-
+|[[File:Ontario 1912 license plate.png|150px]]
+|1912
+|Black serial on white flat metal plate; [[Coat of arms of Ontario|provincial coat of arms]] and "ONT 1912" at left
+|''none''
+|12345
+|1 to approximately 16500
+|
+|-
+|[[File:ONTARIO 1913 LICENSE PLATE (6007091777).jpg|150px]]
+|1913
+|Black serial on yellow flat metal plate; provincial coat of arms and "ONT 1913" at left
+|''none''
+|12345
+|1 to approximately 24000
+|
+|-
+|[[File:ONTARIO 1914 license plate (2289317731).jpg|150px]]
+|1914
+|Black serial on tan flat metal plate; provincial coat of arms and "ONT 1914" at left
+|''none''
+|12345
+|1 to approximately 33000
+|
+|-
+|[[File:ONTARIO 1915 license plate (2290111968).jpg|150px]]
+|1915
+|Dark blue serial on light green flat metal plate; provincial coat of arms and "ONT 1915" at left
+|''none''
+|12345
+|1 to approximately 43000
+|
+|-
+|[[File:ONTARIO 1916 license plate (2289320027).jpg|150px]]
+|1916
+|Black serial on white flat metal plate; provincial coat of arms and "ONT 1916" at left
+|''none''
+|12345
+|1 to approximately 64000
+|
+|-
+|[[File:ONTARIO 1917 LICENSE PLATE, Thin fonts (2290125896).jpg|150px]]
+|1917
+|Black serial on white flat metal plate; provincial coat of arms and "ONT 1917" at right
+|''none''
+|12345
+|1 to approximately 78000
+|
+|-
+|[[File:ONTARIO 1918 license plate (2289334075).jpg|150px]]
+|1918
+|Dark blue serial on white flat metal plate; provincial coat of arms and "ONT 1918" at left
+|''none''
+|123456
+|1 to approximately 107000
+|
+|-
+|[[File:ONTARIO 1919 license plate (2290127530).jpg|150px]]
+|1919
+|Black serial on golden yellow flat metal plate; provincial coat of arms and "ONT 1919" at left
+|''none''
+|123456
+|1 to approximately 133000
+|
+|-
+|[[File:ONTARIO 1920 license plate (2290128272).jpg|150px]]
+|1920
+|Dark green serial on white flat metal plate; provincial coat of arms and "ONT 1920" at left
+|''none''
+|123456
+|1 to approximately 162000
+|
+|-
+|[[File:ONTARIO 1921 ---SIX DIGIT LONG VERSION LICENSE PLATE (10203242365).jpg|150px]]
+|1921
+|Embossed orange serial on black plate with border line; "ONT 21" at left
+|''none''
+|123-456
+|1 to approximately 184–000
+|First embossed plate.
+|-
+|[[File:ONTARIO 1922 LICENSE PLATE.LONG (9952632976).jpg|150px]]
+|1922
+|Embossed black serial on white plate with border line; "ONT 22" at left
+|''none''
+|123-456
+|1 to approximately 216–000
+|
+|-
+|[[File:ONTARIO 1923 license plate (2290146968).jpg|150px]]
+|1923
+|Embossed white serial on black plate; "ONT–1923" at bottom
+|''none''
+|123-456
+|1 to approximately 260–000
+|
+|-
+|[[File:ONTARIO 1924 LICENSE PLATE, LONG SIX DIGIT (9431940335).jpg|150px]]
+|1924
+|Embossed black serial on golden yellow plate; "ONT–1924" at bottom
+|''none''
+|123-456
+|1 to approximately 313–000
+|
+|-
+|[[File:ONTARIO 1925 license plate (2290160236).jpg|150px]]
+|1925
+|Embossed yellow serial on black plate with border line; "ONT 25" at left
+|''none''
+|123-456
+|1 to approximately 309–000
+|
+|-
+|[[File:ONTARIO 1926 license plate (2289368363).jpg|150px]]
+|1926
+|Embossed black serial on grey plate with border line; "ONT 26" at left
+|''none''
+|123-456
+|1 to approximately 415–000
+|
+|-
+|[[File:1927 Ontario Plate.jpg|150x150px]]
+|1927
+|Embossed black serial on buff plate with border line; "ONTARIO 1927" at bottom
+|''none''
+|123·456
+|1 to approximately 437·000
+|First use of the full province name.
+|-
+|[[File:Ontario License Plate 1928.jpg|150px]]
+|1928
+|Embossed black serial on yellow plate with border line; "ONTARIO 1928" at bottom
+|''none''
+|123·456
+|1 to approximately 446·000
+|
+|-
+|[[File:ONTARIO 1929 ---LONG SIX DIGIT LICENSE PLATE (9465137756).jpg|150px]]
+|1929
+|Embossed black serial on grey plate with border line; "ONTARIO 1929" at bottom
+|''none''
+|123·456
+|1 to approximately 477·000
+|
+|-
+|rowspan="2"|[[File:1930 Ontario License Plate DP-18 (cropped).jpg|150px]]
+|rowspan="2"|1930
+|rowspan="2"|Embossed black serial on white plate with border line; "ONTARIO 1930" at bottom
+|rowspan="2"|''none''
+|A-1234
+|A-1 to Z-9999
+|rowspan="2"|Letters G, I and Q not used in serials.<ref name="allaboutlicenseplatesON">{{cite web |last=Tanner |first=Eric N. |title=Ontario License Plates |url=http://www.allaboutlicenseplates.com/athome.asp?State=Ontario |publisher=allaboutlicenseplates.com |access-date=10 July 2017 |archive-date=16 August 2017 |archive-url=https://web.archive.org/web/20170816191911/http://www.allaboutlicenseplates.com/athome.asp?State=Ontario |url-status=dead }}</ref>
+|-
+|AB-123
+|AA-1 to approximately PV-999
+|-
+|rowspan="2"|[[File:ONTARIO 1931 license plate (2290178640).jpg|150px]]
+|rowspan="2"|1931
+|rowspan="2"|Embossed black serial on yellow plate; "ONTARIO 1931" at top
+|rowspan="2"|''none''
+|A·1234
+|A·1 to Z·9999
+|rowspan="2"|
+|-
+|AB·123
+|AA·1 to approximately OT·999
+|-
+|rowspan="2"|[[File:ONTARIO 1932 license plate (2290179706).jpg|150px]]
+|rowspan="2"|1932
+|rowspan="2"|Embossed black serial on grey plate; "ONTARIO 1932" at top
+|rowspan="2"|''none''
+|A·1234
+|A·1 to Z·9999
+|rowspan="2"|
+|-
+|AB·123
+|AA·1 to approximately OB·999
+|-
+|rowspan="2"|[[File:ONTARIO 1933 plate (2210920242).jpg|150px]]
+|rowspan="2"|1933
+|rowspan="2"|Embossed black serial on yellow plate; "ONTARIO 1933" at top
+|rowspan="2"|''none''
+|A·1234
+|A·1 to Z·9999
+|rowspan="2"|
+|-
+|AB·123
+|AA·1 to approximately MZ·999
+|-
+|rowspan="2"|[[File:ONTARIO 1934 license plate (2289506657).jpg|150px]]
+|rowspan="2"|1934
+|rowspan="2"|Embossed black serial on white plate; "ONTARIO 1934" at top
+|rowspan="2"|''none''
+|A·1234
+|A·1 to Z·9999
+|rowspan="2"|
+|-
+|AB·123
+|AA·1 to approximately NA·999
+|-
+|rowspan="2"|[[File:ONTARIO 1935 license plate (2289507567).jpg|150px]]
+|rowspan="2"|1935
+|rowspan="2"|Embossed black serial on orange plate; "19 ONTARIO 35" at top
+|rowspan="2"|''none''
+|A·1234
+|A·1 to Z·9999
+|rowspan="2"|
+|-
+|AB·123
+|AA·1 to approximately OK·999
+|-
+|rowspan="2"|[[File:ONTARIO 1936 license plate (2289508543).jpg|150px]]
+|rowspan="2"|1936
+|rowspan="2"|Embossed white serial on black plate; "19 ONTARIO 36" at bottom
+|rowspan="2"|''none''
+|A·1234
+|A·1 to Z·9999
+|rowspan="2"|
+|-
+|AB·123
+|AA·1 to approximately PK·999
+|-
+|[[File:1937 Ontario License Plate 27-J-61.jpg|150px]]
+|1937
+|Embossed white serial on red plate; "ONTARIO 1937" centred at top, with crowns to left and right
+|''none''
+|1·A·234<br>12·A·34<br>123·A·4
+|
+|First base to feature a crown in any form.
+|-
+|[[File:ONTARIO 1938 license plate (2290316402).jpg|150px]]
+|1938
+|Embossed orange serial on light blue plate; "19", crown and "38" centred at top; "ONTARIO" centred at bottom
+|''none''
+|1A234<br>12A34<br>123A4
+|
+|Colours commemorate [[the Loyal True Blue and Orange Home]].<ref>{{cite book |last=Sallmen |first=Joseph |date=2003 |title=Ontario License Plates: A Century of History |page=13 |publisher=J.P. Sallmen |isbn=0973414405 }}</ref>
+|-
+|[[File:ONTARIO 1939 license plate (2289524831).jpg|150px]]
+|1939
+|Embossed white serial on black plate; "19", crown and "39" centred at top; "ONTARIO" centred at bottom
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:ONTARIO 1940 license plate (2289525637).jpg|150px]]
+|1940
+|Embossed black serial on yellow plate; "ONTARIO", crown and "1940" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:1941 Ontario License Plate 17H90.jpg|150px]]
+|1941
+|Embossed green serial on white plate; "ONTARIO", crown and "1941" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:Ontario 1942 License Plate.jpg|150px]]
+|1942
+|Embossed black serial on orange plate; "ONTARIO", crown and "1942" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:Ontario 1943 License Plate.jpg|150px]]
+|{{nowrap|1943–44}}
+|Embossed orange serial on black plate; "ONTARIO", crown and "1943" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|Revalidated for 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Ontario 1945 License Plate.jpg|150px]]
+|1945
+|Embossed white serial on blue plate; "ONTARIO", crown and "1945" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:Ontario 1946 License Plate.jpg|150px]]
+|1946
+|Embossed white serial on black plate; "ONTARIO", crown and "1946" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:Ontario 1947 License Plate.jpg|150px]]
+|1947
+|Embossed black serial on silver plate; "ONTARIO", crown and "1947" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:1948 Ontario License Plate 340B5.jpg|150px]]
+|1948
+|Embossed white serial on blue plate; "ONTARIO", crown and "1948" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234
+|
+|
+|-
+|[[File:1949 Ontario License Plate 6K824.jpg|150px]]
+|1949
+|Embossed blue serial on white plate; "ONTARIO", crown and "1949" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234<br>1234A
+|
+|
+|-
+|[[File:1950 Ontario License Plate 639V4.jpg|150px]]
+|1950
+|Embossed white serial on black plate; "ONTARIO", crown and "1950" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234<br>1234A
+|
+|
+|-
+|[[File:Ontario 1951 License Plate.jpg|150px]]
+|1951–52
+|Embossed blue serial on white plate; "19–ONTARIO–51" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234<br>1234A<br>AB123
+|
+|Revalidated for 1952 with windshield stickers.
+|-
+|[[File:1953 Ontario License Plate 8370N.jpg|150px]]
+|1953
+|Embossed white serial on blue plate; "ONTARIO", crown and "1953" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234<br>1234A<br>AB123
+|
+|
+|-
+|[[File:Ontario 1954 License Plate.jpg|150px]]
+|1954
+|Embossed blue serial on white plate; "ONTARIO", crown and "1954" at top
+|''none''
+|1A234<br>12A34<br>123A4<br>A1234<br>1234A<br>AB123
+|
+|
+|-
+|[[File:1955 Ontario License Plate 733-454.jpg|150px]]
+|1955
+|As 1953 base, but with "1955" to right of crown
+|''none''
+|123·456<br>A12·345
+|
+|First 6" x 12" plate.
+|-
+|[[File:1956 Ontario License Plate 939-007.jpg|150px]]
+|1956
+|As 1954 base, but with "1956" to right of crown
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:1957 Ontario License Plate 553-757.jpg|150px]]
+|1957
+|Embossed white serial on black plate; "ONTARIO", crown and "1957" at top
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario 1958 License Plate.jpg|150px]]
+|1958
+|Embossed black serial on white plate; "ONTARIO", crown and "1958" at top
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario 1959 License Plate.jpg|150px]]
+|1959
+|As 1957 base, but with "1959" to right of crown
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario 1960 License Plate.jpg|150px]]
+|1960
+|As 1958 base, but with "1960" to right of crown
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario License Plate 586-229 1961.jpg|150px]]
+|1961
+|As 1957 base, but with "1961" to right of crown
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario 1962 License Plate.jpg|150px]]
+|1962
+|As 1958 base, but with border line, and with "1962" to right of crown
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario License Plate 309-552 1963.jpg|150px]]
+|1963
+|As 1957 base, but with border line, and with "1963" to right of crown
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario 1964 License Plate.jpg|150px]]
+|1964
+|As 1958 base, but with border line, and with "1964" to right of crown
+|''none''
+|123·456<br>A·12345
+|
+|
+|-
+|[[File:Ontario 1965 License Plate.jpg|150px]]
+|1965
+|Embossed white serial on blue plate with border line; "ONTARIO", crown and "1965" at top
+|''none''
+|123·456<br>A·12345<br>12345·A
+|
+|
+|-
+|[[File:1966 Ontario license plate 165-928.jpg|150px]]
+|1966
+|Embossed blue serial on white plate with border line; "ONTARIO", crown and "1966" at top
+|''none''
+|123·456<br>A·12345<br>12345·A
+|
+|
+|-
+|[[File:1967 Ontario Confederation License Plate 104-43E.jpg|150px]]
+|1967
+|Embossed white serial with crown separator on blue plate with border line; "19 ONTARIO 67" at top
+|"18 CONFEDERATION 67" at bottom
+|123-456<br>A12-345<br>123-45A
+|
+|Issued as part of the [[Canadian Centennial]] celebration.
+|-
+|[[File:1968 Ontario license plate 728♔61K.jpg|150px]]
+|1968
+|Embossed blue serial with crown separator on white plate with border line; "1968" and "ONTARIO" centred at top and bottom respectively
+|''none''
+|123-456<br>A12-345<br>123-45A
+|
+|
+|-
+|[[File:1969 Ontario license plate 349♔78J.jpg|150px]]
+|1969
+|Embossed white serial with crown separator on blue plate with border line; "1969" and "ONTARIO" centred at top and bottom respectively
+|''none''
+|123-456<br>A12-345<br>123-45A
+|
+|
+|-
+|[[File:1970 Ontario License plate.jpg|150px]]
+|1970
+|As 1968 base, but with "1970" at top
+|''none''
+|123-456<br>A12-345<br>123-45A
+|
+|
+|-
+|[[File:1971 Ontario License plate.jpg|150px]]
+|1971
+|As 1969 base, but with "1971" at top
+|''none''
+|123-456<br>A12-345<br>123-45A
+|
+|
+|-
+|[[File:ONTARIO 1972 license plate (2291648586).jpg|150px]]
+|1972
+|As 1968 base, but with "1972" at top
+|''none''
+|123-456<br>A12-345<br>123-45A
+|
+|
+|}
+
+===1973 to present===
+After 1973, Ontario ceased to issue plates annually. Instead, validation was indicated by means of stickers affixed to the top right of the rear plate. All Ontario license plates issued since 1973 remain valid for display.
+
+In 1973, the "Keep it Beautiful" slogan was introduced to Ontario passenger plates. In 1982, the slogan was changed to "Yours to Discover". The adjustment was made to reflect the province's new tourism campaign.<ref>{{cite web |title=And you're gonna love it: How Ontario became 'Yours to Discover' |url=https://www.tvo.org/article/and-youre-gonna-love-it-how-ontario-became-yours-to-discover |website=tvo |access-date=18 September 2022}}</ref>
+
+In April 2019, the [[Government of Ontario]] announced that the plates would be redesigned. The plates' design includes a superficial laminate layer manufactured by [[3M]].<ref>{{cite news|url=https://www.thestar.com/politics/provincial/2020/02/19/toronto-photo-radar-having-trouble-reading-ontarios-new-licence-plates-in-day-and-night-as-plategate-grows.html|title=Ontario government shifts blame for hard-to-read license plates to the manufacturer|last1=Rider|first1=David|last2=Ferguson|first2=Rob|newspaper=[[Toronto Star]]|date=2020-02-19|access-date=2020-02-19}}</ref> The plates have a two-tone blue background with white letters and numbers flanking a stylized [[white trillium]], and no longer [[Embossing (manufacturing)|embossed]]. The motto was also changed to "A Place to Grow", taking inspiration from Ontario's unofficial anthem "[[A Place to Stand, a Place to Grow]]".<ref>{{cite news|url=https://www.cbc.ca/news/canada/ottawa/new-blue-ontario-licence-plates-1.5454205|title=Ontario's new blue license plates hitting the road|publisher=[[CBC News]]|date=2020-02-08|access-date=2020-02-19}}</ref>
+
+Issue of the new plates began in February 2020. The new plates faced criticism from law enforcement agencies, as their new design made them difficult to read in certain lighting conditions. Concerns were also raised that [[Traffic enforcement camera|photo radar]] systems would have difficulty reading them, due to the lighting issues, as well as the smaller sizing of their "Ontario" text. On February 20, 2020, Premier Doug Ford stated that the government planned to recall the initial batch, and was working with 3M on improvements.<ref name=":3">{{Cite web |date=2020-02-20 |title=Ford government admits new license plates 'absolutely' a problem, will need to be recalled |url=https://www.cbc.ca/news/canada/toronto/ontario-licence-plates-1.5470143 |access-date=2022-09-04 |website=CBC News}}</ref> However, on May 6, 2020, a spokesperson for Ford announced that the blue plates would be discontinued entirely after "thorough testing by law enforcement and other key stakeholders". The previous white plates were reinstated, with their coating also made more durable, although the blue plates continued to be issued through early-June until their supply was exhausted.<ref>{{Cite web |date=2020-05-06 |title=Ford government's blue license plates officially scrapped, 'Yours to Discover' is back |url=https://www.cbc.ca/news/canada/toronto/blue-licence-plates-scrapped-1.5557952 |access-date=2022-09-04 |website=CBC News}}</ref><ref>{{Cite web |last=DeClerq |first=Katherine |date=2020-06-28 |title=Ontario government expects to stop issuing blue license plates by end of week |url=https://www.ctvnews.ca/toronto/article/ontario-government-expects-to-stop-issuing-blue-licence-plates-by-end-of-week/ |access-date=2022-09-05 |website=CTV News Toronto |language=en}}</ref>
+
+{| class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1973 Base Ontario License Plate LVK-827 (Transparent).png|150px]]
+|{{nowrap|1973–78}}
+|Embossed blue serial with crown separator on white plate with border line; "ONTARIO" centred at top; "73" at bottom left and full sticker box at bottom right
+| rowspan="2" |"KEEP IT BEAUTIFUL" centred at bottom
+| rowspan="3" |ABC-123
+|AAA-001 to NKJ-999
+|Letters G, I and Q not used in this serial format, and U discontinued after the LMU series (1976).<ref name="allaboutlicenseplatesON" />
+|-
+|[[File:1973 Ontario license plate PTA♔264 type II.jpg|150px]]
+|1978–82
+|As above, but without "73", and with partial sticker box at bottom right
+|NKK-001 to TMA-999
+|
+|-
+|[[File:Ontario 1984 License Plate.jpg|150px]]
+|1982–86
+| rowspan="2" |As above, but with no sticker box
+| rowspan="2" |"YOURS TO DISCOVER" centred at bottom
+|TMB-001 to ZZZ-999
+|Staggered registration introduced 1983, with each plate expiring in the same month as the registrant's birthday.
+|-
+|[[File:Ontario License Plate 711-HJP.jpg|150px]]
+|1986–94
+|123-ABC
+|001-AAA to 999-VYH
+|Letters G, I, Q and U not used in this serial format.<ref name="allaboutlicenseplatesON" />
+|-
+|[[File:Ontario License Plate 310-XNS.jpg|150px]]
+|1994–97
+| rowspan="3" |Blue on reflective white with screened crown separator; "ONTARIO" screened in blue centred at top
+| rowspan="2" |"YOURS TO DISCOVER" screened in blue centred at bottom
+|123-ABC
+|001-VYJ to 999-ZZZ
+|Narrower serial [[Die (manufacturing)|die]]s introduced in preparation for ABCD-123 format, and O discontinued after the ZZO series (1997).
+|-
+|[[File:1997 Ontario license plate BPNW♔958.png|150px]]
+|1997–2020<br>2020–present
+| rowspan="2" |{{nowrap|ABCD-123}}
+|{{nowrap|AAAA-001 to}} CLZZ-999; CPAA-001 to DLPH-458 {{small|(as of June 21, 2026)}}<ref>{{Cite web |title=OFFICIAL Ontario Plate Sample Series Thread Discussion D SERIES HERE! DAAL - Page 47 - RedFlagDeals.com Forums |url=https://forums.redflagdeals.com/official-ontario-plate-sample-series-thread-discussion-d-series-here-daal-1050899/47/ |access-date=2023-08-09 |website=RedFlagDeals.com |language=en-CA}}</ref><br>
+|Letters G, I, O, Q and U not used in this serial format.<ref name="allaboutlicenseplatesON" /> Font had slightly changed from CASA-001 to CATR-999.<ref>{{cite web |title=Ontario special orders licence plates to meet high demand |url=https://www.cbc.ca/news/canada/windsor/licence-plates-ontario-nova-scotia-1.3939234 |website=CBC News |publisher=www.cbc.ca |access-date=7 June 2023}}</ref>
+|-
+|[[File:2008 Ontario license plate BEAD♔712 TANT À DÉCOUVRIR.png|150px]]
+|2008–20<br>2020–present
+|"TANT À DÉCOUVRIR" screened in blue centred at bottom
+|FAAA-001 to FABF-787 {{small|(as of November 1, 2025)}}<ref name="PlateHighsON">{{cite web |title=Ontario License Plates |url=https://www.licenseplates.cc/ON |access-date=11 Dec 2025 |website=The High Road |publisher=www.licenseplates.cc}}</ref>
+|Alternative issue, introduced in 2008. Certain series were allocated for the French slogan: BCAA, BEAA, BEAD, BEAE, BEAJ, BEAL, BEAM, BEAN, BEAP, BEAS, BSRH, BSRJ, BSRK, BTBE, and BTBF. Exclusive use of 'F' series of serials since April 2019.
+|-
+|[[File:2020 Ontario License Plate 2023-09-23.jpg|150px]]
+|rowspan=2|2020
+| rowspan="2" |White on reflective, two-hue blue with white stylized trillium separator and white crown placed bottom right; "Ontario" screened in white centred at top.<ref>{{cite web|url=https://news.ontario.ca/mgs/en/2019/04/open-for-business-and-a-place-to-grow-new-licence-plate-and-drivers-licence-to-reflect-ontarios-opti-2.html|title='Open for Business' and 'A Place to Grow' New Licence Plate and Driver's Licence to Reflect Ontario's Optimistic Future|publisher=new.ontario.ca|date=April 15, 2019}}</ref><ref>{{cite web|url=https://www.ctvnews.ca/toronto/article/ontarios-new-licence-plates-hit-the-road-heres-what-you-need-to-know/|title=Ontario's new licence plates hit the road: Here's what you need to know|date=February 3, 2020|publisher=toronto.ctvnews.ca}}</ref>  Plates are made of synthetic material and are not embossed.
+|"[[A Place to Stand, a Place to Grow|A PLACE TO GROW]]" screened in white centred at bottom.
+| rowspan="2" |ABCD-123
+|CMAA-001 to CMMZ-349 {{small|(as of July 9, 2020)}} <ref name="PlateHighsON"/>
+|The initial batch of these plates issued from February 1, 2020, to March 4, 2020, were recalled due to poor visibility at night when illuminated.<ref name=":3" /> This design was later scrapped on May 6, 2020.<ref name="scrapped">{{cite news |title=Ontario scraps licence plate redesign, will revert to old design |agency=National Post |url=https://nationalpost.com/pmn/news-pmn/canada-news-pmn/ontario-scraps-licence-plate-redesign-will-revert-to-old-design}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"EN PLEIN ESSOR" screened in white centred at bottom<ref>{{cite web |title=Accueil véhicules |url=http://www.mto.gov.on.ca/french/vehicles/ |website=Ministère des Transports |publisher=Le gouvernement de l'Ontario |access-date=12 February 2020 |language=fr}}</ref>
+|FAAE-000 to FAAM-000
+|Alternative issue.
+|}
+
+===Serial numbers reserved for government officials===
+{|class="wikitable sortable"
+|-
+! Serial(s)
+! Political Office of Holder(s)
+! Level of Government
+|-
+| CAN-001
+| [[Prime Minister of Canada]]
+| Federal
+|-
+| CAN-002 to CAN-999
+| [[Cabinet of Canada|Federal Cabinet Ministers]]
+| Federal
+|-
+| SEN-001 to SEN-999
+| [[Senate of Canada|Members of the Senate]]
+| Federal
+|-
+| MHC-001 to MHC-999
+| [[House of Commons of Canada|Members of the House of Commons]]
+| Federal
+|-
+| FCJ-001 to FCJ-999
+| [[Court system of Canada#Courts of the federal level|Federal Court Judges]]
+| Federal
+|-
+| FDA-001 to FDZ-999
+| Federally Owned Vehicles
+| Federal
+|-
+| ONT-001
+| [[Premier of Ontario]]
+| Provincial
+|-
+| ONT-002 to ONT-999
+| [[Executive Council of Ontario|Provincial Cabinet Ministers]]
+| Provincial
+|-
+| MPP-001 to MPP-999
+| [[Member of Provincial Parliament (Ontario)|Members of Provincial Parliament]]
+| Provincial
+|-
+| SCO-001 to SCO-999
+| [[Ontario Superior Court of Justice]]
+| Provincial
+|-
+| PJO-001 to PJO-999
+| [[Ontario Superior Court of Justice|Ontario Provincial Judges]]
+| Provincial
+|-
+| ONA-001 to ONZ-999
+| Provincially Owned Vehicles<ref>{{cite book |author=((Ontario Ministry of Transportation)) |title=Ontario Licence Plate and Permit Guide |publisher=Ontario Ministry of Transportation |date=1991}}</ref>
+| Provincial
+|}
+
+===Green vehicle plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:2010 Ontario license plate GVAH 823 electric vehicle.png|150px]]
+|rowspan="2"|2010
+|rowspan="2"|Green on white with graphic [[white trillium]] separator
+|"GREEN VEHICLE"
+|'''GV'''AB&nbsp;123<br>'''GW'''AB&nbsp;123
+|GVAA-001 to GWAS-853 {{small|(as of April 24, 2026)}}<ref name="PlateHighsON" />
+|rowspan="2"|Issued to [[electric vehicle]]s ([[plug-in hybrid]] and [[battery electric vehicle|battery electric]]) and [[hydrogen vehicle]]s. Vehicles with these plates can access [[High-occupancy vehicle lane|HOV lanes]] on [[400-series highways]] regardless of the number of passengers in the vehicle.<ref name=GreenPlates>{{cite web|title=Ontario's Green Licence Plate Program |url=http://www.mto.gov.on.ca/english/vehicles/electric/green-licence-plate.shtml |publisher=Ontario Ministry of Transportation |access-date=6 July 2015}}</ref> See also: [[Government incentives for plug-in electric vehicles#Canada|government incentives for plug-in electric vehicles]].
+|-
+|[[File:Ontario Véhicule Écologique license plate VEAA-132 (cropped).jpg|150px]]
+|"VÉHICULE ÉCOLOGIQUE"
+|'''VE'''AB 123
+|VEAA-001 to VEAC-452 {{small|(as of September 25, 2025)}}<ref name="PlateHighsON" />
+|}
+
+===Historic vehicles===
+[[File:Unidentified Car, Mill St. Stirling, Ontario 1776 (14191918725) (cropped).jpg|thumbnail|Example of an Ontario Historic plate, affixed to the front of a vehicle.]]
+Historic vehicle licence plates were introduced in 1969 as yearly plates. In 1973, plates switched to permanently issued plates validated with stickers.
+
+Vehicles more than 30 years old and substantially unchanged since manufacture may qualify for a "Historic" registration.<ref>{{cite web|title=Highway Traffic Act, R.S.O. 1990, CHAPTER H.8, s7|url=https://www.ontario.ca/laws/statute/90h08#BK15|website=eLaws|date=24 July 2014 |publisher=Queen's Printer for Ontario|access-date=17 September 2015}}</ref>
+
+Annual fees were much lower ($18 vs $120 for a passenger car until 2022),<ref name=mtofees>{{cite web|title=Fees for other types of vehicles|url=https://www.ontario.ca/driving-and-roads/register-vehicle-permit-licence-plate-and-sticker#fees|website=Ontario Ministry of Transportation|publisher=Queen's Printer for Ontario|access-date=17 September 2015}}</ref> but historic vehicles may not be used as conventional transportation. They legally may only be driven to and from events and parades where the vehicle is on display, to garages for maintenance, and other similar use cases. Annual renewal stickers are affixed to the rear plate, as with passenger vehicles.
+
+Historic plates are not to be confused with year-of-manufacture plates.<ref>{{cite web|title=Vehicles must be 30 years old for historic plate designation  |url=http://www.wheels.ca/news/vehicles-must-be-30-years-old-for-historic-plate-designation/|website=wheels.ca|date=23 August 2008 |publisher=Toronto Star Newspapers and Metroland news|access-date=17 September 2015}}</ref>
+
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969
+|White on blue plate; year centred at top, "ONTARIO" centred at bottom. "HISTORIC" "VEHICLE" screened vertically on left and right sides in red tags.
+|''none''
+|rowspan=4|12 345
+|
+|
+|-
+|[[File:1970 Ontario Historic Vehicle License Plate 43-511.jpg|150px]]
+|1970
+|Blue on white plate; year centred at top, "ONTARIO" centred at bottom. "HISTORIC" "VEHICLE" screened vertically on left and right sides in red tags.
+|''none''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1971
+|White on blue plate; year centred at top, "ONTARIO" centred at bottom. "HISTORIC" "VEHICLE" screened vertically on left and right sides in red tags.
+|''none''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1972
+|Blue on white plate; year centred at top, "ONTARIO" centred at bottom. "HISTORIC" "VEHICLE" screened vertically on left and right sides in red tags.
+|''none''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1973
+|Embossed blue serial with crown separator on white plate with border line; "ONTARIO" centred at top; "73" at bottom left and full sticker box at bottom right
+|rowspan=3|"HISTORIC VEHICLE"
+|rowspan=4|'''HV'''A-123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1978
+|As above, but without "73", and with partial sticker box at bottom right
+|
+|
+|-
+|[[File:Ontario Historic Vehicle License Plate 1982 base.jpg|150px]]
+|1982
+|As above, but with no sticker box
+|
+|
+|-
+|[[File:Ontario Historic Vehicle license plate HVX-550.jpg|150px]]
+|1994
+|Blue on reflective white with screened crown separator; "ONTARIO" screened in blue centred at top. "HISTORIC" screened vertically on left side.
+|rowspan=3|"YOURS TO DISCOVER"
+|
+|
+|-
+|[[File:Ontario Historic Vehicle License Plate 364 HVR (cropped).jpg|150px]]
+|
+|Blue on reflective white with screened crown separator; "ONTARIO" screened in blue centred at top. "HISTORIC" screened vertically on left side.
+|123-'''HV'''A
+|001-HVA to 999-HVZ
+|
+|-
+|[[File:Ontario historic vehicle license plate 2h5200.jpg|150px]]
+|2007
+|Blue on reflective white with screened crown separator; "ONTARIO" screened in blue centred at top. "HISTORIC" screened vertically on left side.
+|1'''H'''2345
+|1H0001 to 8H1165 (as of September 25, 2025)<ref name="PlateHighsON" />
+|
+|-
+|}
+
+==Commercial baseplates==
+[[File:2015 Ontario license plate passenger sticker.png|thumbnail|Exemption sticker]]
+Unlike passenger cars, plate validation stickers for commercial vehicles are placed on the front plate, instead of the rear. This placement is consistent between trucks with visible rear plates, and [[tractor unit]]s where the rear plate is obscured by a trailer. Ontario vehicles registered in the [[International Registration Plan]] receive special commercial plates with "PRP" screened vertically at the left.
+
+All pickup trucks are legally considered commercial vehicles and thus require commercial plates. However, if used strictly as a passenger vehicle ("personal-use vehicle"), a truck may be exempt from some conditions imposed on commercial vehicles, indicated by a white or red "PERSONAL USE ONLY" sticker affixed in the top left corner of the front plate.<ref name=mtopickupfaq15>{{cite web|title=Is my pickup truck a commercial motor vehicle and does it need a CVOR?|url=http://www.mto.gov.on.ca/english/trucks/commercial-vehicle-faq.shtml#a15|website=Ontario Ministry of Transportation|publisher=QUEEN'S PRINTER FOR ONTARIO|access-date=31 August 2015}}</ref>
+
+===1916 to 1962===
+Commercial licence plates were first introduced in 1916.
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Black serial on white flat metal plate; provincial coat of arms and "ONT 1916" at left
+|'''C'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Black serial on white flat metal plate; provincial coat of arms and "ONT 1917" at right
+|'''C'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Dark blue serial on white flat metal plate; provincial coat of arms and "ONT 1918" at left
+|'''C'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Black serial on golden yellow flat metal plate; provincial coat of arms and "ONT 1919" at left
+|'''C'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Dark green serial on white flat metal plate; provincial coat of arms and "ONT 1920" at left
+|'''C'''12345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1921
+|Embossed orange serial on black plate with border line; "ONT 21" at left
+|'''C'''1-234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed black serial on white plate with border line; "ONT 22" at left
+|'''C'''1-234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed white serial on black plate; "ONT–1923" at bottom
+|'''C'''12-345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed black serial on golden yellow plate; "ONT–1924" at bottom
+|'''C'''12-345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed yellow serial on black plate with border line; "ONT 25" at left
+|'''C'''12-345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed black serial on grey plate with border line; "ONT 26" at left
+|'''C'''12-345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed black serial on buff plate with border line; "ONTARIO 1927" at bottom
+|'''C'''12-345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed black serial on yellow plate with border line; "ONTARIO 1928" at bottom
+|'''C'''12-345
+|
+|
+|-
+|[[File:1929 Ontario Commercial License Plate C32-366.jpg|150px]]
+|1929
+|Embossed black serial on grey plate with border line; "ONTARIO 1929" at bottom
+|'''C'''1-234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed black serial on white plate with border line; "ONTARIO 1930" at bottom
+|12-345'''C'''
+|
+|Letter C moved to the end
+|-
+|[[File:1931 Ontario Commercial License Plate 34-005C.jpg|150px]]
+|1931
+|Embossed black serial on yellow plate; "ONTARIO 1931" at top
+|12-345'''C'''
+|
+|
+|-
+|[[File:1932 Ontario Commercial License Plate 25-601C.jpg|150px]]
+|1932
+|Embossed black serial on grey plate; "ONTARIO 1932" at top
+|12-345'''C'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1933
+|Embossed black serial on yellow plate; "ONTARIO 1933" at top
+|12345-'''C'''
+|
+|
+|-
+|[[File:1934 Ontario Commercial License Plate C-7584.jpg|150px]]
+|1934
+|Embossed black serial on white plate; "ONTARIO 1934" at top
+|12345-'''C'''<br> '''C'''-12345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed black serial on orange plate; "19 ONTARIO 35" at top
+|12345-'''C'''
+|
+|
+|-
+|[[File:Ontario 1936 Commercial License Plate 18473-C.jpg|150px]]
+|1936
+|Embossed white serial on black plate; "19 ONTARIO 36" at top
+|12345-'''C'''
+|
+|
+|-
+|[[File:1937 Ontario Commercial License Plate 31362-C.jpg|150px]]
+|1937
+|Embossed white serial on red plate; "ONTARIO 1937" centred at top, with crowns to left and right
+|12345-'''C'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1938
+|Embossed orange serial on light blue plate; "19", crown and "38" centred at top; "ONTARIO" centred at bottom
+|12345'''C'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed white serial on black plate; "19", crown and "39" centred at top; "ONTARIO" centred at bottom
+|12345'''C'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed black serial on yellow plate; "ONTARIO", crown and "1940" at top
+|12345'''C'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed green serial on white plate; "ONTARIO", crown and "1941" at top
+|12345'''C'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1942
+|Embossed black serial on orange plate; "ONTARIO", crown and "1942" at top
+|12345'''C'''
+|
+|
+|-
+|[[File:Ontario Commercial License Plate 1943 68304C (cropped).jpg|150px]]
+|1943-44
+|Embossed orange serial on black plate; "ONTARIO", crown and "1943" at top
+|12345'''C''' <br> '''C'''12345
+|
+|Revalidated for 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed white serial on black plate; "ONTARIO", crown and "1946" at top
+|1234'''C''' <br> '''C'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed white serial on blue plate; "ONTARIO", crown and "1945" at top
+|12345'''C''' <br> '''C'''12345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed black serial on silver plate; "ONTARIO", crown and "1947" at top
+|12345'''C''' <br> '''C'''12345
+|
+|
+|-
+|[[File:1948 Ontario Commercial License Plate C43139.jpg|150px]]
+|1948
+|Embossed white serial on blue plate; "ONTARIO", crown and "1948" at top
+|12345'''C''' <br> '''C'''12345
+|
+|
+|-
+|[[File:1949 Ontario Commercial License Plate 39887C.jpg|150px]]
+|1949
+|Embossed blue serial on white plate; "ONTARIO", crown and "1949" at top
+|12345'''C''' <br> '''C'''12345
+|
+|
+|-
+|[[File:1950 Ontario Commercial License Plate C14042.jpg|150px]]
+|1950
+|Embossed white serial on black plate; "ONTARIO", crown and "1950" at top
+|12345'''C''' <br> '''C'''12345 <br> 12345'''B'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951-52
+|Embossed blue serial on white plate; "19–ONTARIO–51" at top
+|12345'''C''' <br> '''C'''12345 <br> 12345'''B'''
+|
+|Revalidated for 1952 with windshield stickers.
+|-
+|[[File:Ontario Commercial License Plate 1953.jpg|150px]]
+|1953
+|Embossed white serial on blue plate; "ONTARIO", crown and "1953" at top
+|12345'''C''' <br> '''C'''12345 <br> 12345'''B'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1954
+|As 1953 base, but with "1955" to right of crown
+|12345'''C''' <br> '''C'''12345 <br> 12345'''B'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed blue serial on white plate; "ONTARIO", crown and "1954" at top
+|12-345'''A''' <br> 12-345'''B''' <br> 12-345'''C''' <br> 12-345'''D'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed white serial on blue plate; "ONTARIO", crown and "1955" at top
+|12345-'''A''' <br> 12345-'''B''' <br> 12345-'''C''' <br> 12345-'''D'''
+|
+|
+|-
+|[[File:1959 Ontario Commercial License Plate C-98631.jpg|150px]]
+|1957
+|Embossed white serial on black plate; "ONTARIO", crown and "1957" at top
+|12345-'''A''' <br> 12345-'''B''' <br> 12345-'''C''' <br> 12345-'''D'''
+|
+|
+|-
+|[[File:Ontario Commercial License Plate 1958.jpg|150px]]
+|1958
+|Embossed black serial on white plate; "ONTARIO", crown and "1958" at top
+|12345-'''A''' <br> 12345-'''B''' <br> 12345-'''C''' <br> 12345-'''D'''
+|
+|
+|-
+|[[File:Ontario 1959 Commercial License Plate C-85335.jpg|150px]]
+|1959
+|Embossed white serial on black plate; "ONTARIO", crown and "1959" at top
+|12345-'''A''' <br> 12345-'''B''' <br> 12345-'''C''' <br> 12345-'''D'''
+|
+|
+|-
+|[[File:Ontario 1960 Commercial License Plate 62482-C.jpg|150px]]
+|1960
+|Embossed black serial on white plate; "ONTARIO", crown and "1960" at top
+|12345-'''A''' <br> 12345-'''B''' <br> 12345-'''C''' <br> 12345-'''D'''
+|
+|
+|-
+|[[File:1961 Ontario Commercial License Plate 66049-C.jpg|150px]]
+|1961
+|Embossed white serial on black plate; "ONTARIO", crown and "1961" at top
+|12345-'''A''' <br> 12345-'''B''' <br> 12345-'''C''' <br> 12345-'''D'''
+|
+|
+|-
+|[[File:1962 Ontario Commercial License Plate 8612-C.jpg|150px]]
+|1962
+|Embossed black serial on white plate; "ONTARIO", crown and "1962" at top
+|12345-'''A''' <br> 12345-'''B''' <br> 12345-'''C''' <br> 12345-'''D'''
+|
+|
+|}
+
+===1963 to 1979===
+In 1963, Ontario switched to a quarterly system for commercial plates. Plates could be issued on a quarterly basis rather than paying for a full year of registration.
+<gallery>
+File:Ontario 1963 Commercial quarterly plate expires March 1964.jpg|This 1963 Ontario commercial licence plate was the first quarterly plate. It expired in March 1964 and until dated March quarterly plates appeared in March 1967 this plate when issued in December 1963 was used as a quarterly commercial plate.
+File:Ontario June 1965 QUARTERLY COMMERCIAL Plate.jpg|In 1965 all June, September and December quarterly plates were issued in the reverse colours as in 1963 and 1964. In alternate years Ontario quarterly plates reversed their colours each year.
+File:Ontario MAR 1967 QUARTERLY COMMERCIAL Plate.jpg|First issue of commercial quarterly plates dated for March.
+File:Ontario SEP 1969 QUARTERLY COMMERCIAL Plate.jpg|Each plate would be valid for three months or a quarter of the year. This plate was issued in June 1969 and expired in September 1969.
+File:Ontario DEC 1971 QUARTERLY COMMERCIAL Plate.jpg|Quarterly plates had several serial format arrangements. Beginning in March 1968 they switched to the '''A'''1-234, 123-4'''A''' and '''A'''12-345 & 123-45'''A''' formats.
+File:Ontario JUN 1974 QUARTERLY COMMERCIAL Plate.jpg|
+File:Ontario SEP 1976 QUARTERLY COMMERCIAL Plate.jpg|
+File:Ontario DEC 1978 QUARTERLY COMMERCIAL Plate.jpg|
+File:Ontario Commercial Quarterly License Plate MAR-80 D96-082.jpg|Final quarterly plate issued. Ontario switched to plates renewed with stickers in 1980.
+</gallery>
+
+===1980 to present===
+In the 1980s, Ontario shifted to plates that were renewed yearly with stickers, ditching the quarterly system.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Ontario 1986 Truck Plate.jpg|150px]]
+|1980–1995
+|Black on white with embossed crown separator
+|''none''
+|AB1-234
+|AA1-001 to ZD9-999
+|Also used for non-passenger personal vehicles (i.e. pick-up trucks and panel vans).
+|-
+|[[File:Ontario screened ab1 234 commercial.jpg|150 px]]
+|1995–1996
+|rowspan="4"|Black on reflective white with screened crown separator
+|rowspan="3"|"YOURS TO DISCOVER"
+|AB1-234
+|ZE1-001 to ZZ9-999
+|rowspan="4"|On commercial vehicles, licence plate stickers are affixed in the top right of the front plate, as shown in the photo. The top left corner may be used for other stickers relating to vehicle use or taxation (i.e.: government exemption).
+|-
+|[[File:Ontario Commercial License Plate 839-1HV.jpg|150px]]
+|1996–2011
+|123-4AB
+|100-1AA to 999-9ZZ
+|-
+|[[File:2011 Ontario license plate AJ♔42864 commercial.png|150px]]
+|rowspan="2"|2011–present
+|rowspan="2"|{{nowrap|AB-12345}}
+|{{nowrap|AA-10001 to CE-72145 <br>(as of December 7, 2025)<ref name="PlateHighsON" />}}
+|-
+|[[File:2011 Ontario license plate DA♔12247 commercial TANT À DÉCOUVRIR.png|150px]]
+|"TANT À DÉCOUVRIR"
+|{{nowrap|DA-10001 to}} DA-19023 (as of January 7, 2024)<ref name="PlateHighsON" />
+|-
+|[[File:Ontario-Open-For-Business-PlateGuys.png|150x150px]]
+|2020
+|rowspan="2"|White on reflective, two-hue blue with white stylized trillium separator and white crown placed bottom right
+|"OPEN FOR BUSINESS"
+|BF-10000
+|
+|rowspan="2"|Never released to public due to visibility issues, scrapped.
+|-
+|[[File:Ontario-Ouvert-Aux-Affaires-PlateGuys.png|150x150px]]
+|2020
+|"OUVERT AUX AFFAIRES"
+|DB-10000
+|}
+
+===Prorate plates===
+Used on vehicles registered in the [[International Registration Plan]] (IRP).
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1982–1994
+|Black on white with embossed crown separator
+|''none''
+|'''P'''A1-234
+|PA1-001 to PJ7-999
+|
+|-
+|[[File:Ontario Prorate License Plate PL8-876.jpg|150px]]
+|1994–2006
+|Black on reflective white with screened crown separator; vertical "PRP" at left
+|rowspan=3|"YOURS TO DISCOVER"
+|'''P'''A1-234
+|PJ8-001 to PZ9-999
+|Switched to new reflective plates.
+|-
+|[[File:Ontario license plate, PRP 813-4PM.png|150px]]
+|2006–2019
+|Black on reflective white with screened crown separator; vertical "PRP" at left
+|123-4'''P'''A
+|100-1PA to 999-9PZ
+|
+|-
+|[[File:Ontario Prorate License Plate PA63810.jpg|150px]]
+|2019–present
+|Black on reflective white; vertical "PRP" at left
+|'''P'''A12345
+|PA10001 to PR26520 (as of June 20, 2025)<ref name="PlateHighsON" />
+|
+|}
+
+===Bus plates===
+Bus licence plates were first issued in 1973. They followed the quarterly system until 1980, switching in favour of a new permanent plate renewed yearly with stickers.<ref name="EricPlate" />
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+!Usage
+|-
+|[[File:Ontario_Bus_Licnese_plate_on_Oshawa_Transit_bus_147.jpg|150px]]
+|1980–1994
+|Black reflective on white; "ONTARIO" screened in black at bottom.
+|
+|'''B'''A1-234
+|
+|The plate's colour is changed to black for this design.
+|All bus types
+|-
+|[[File:License plates of Ontario 0051.jpg|150px]]
+|1994–2009
+|Black reflective on white; "ONTARIO" screened in black on top.
+|"YOURS TO DISCOVER"
+|'''B'''A1-234
+|BA1-001 to BN9-999
+|
+|Plates designated for use on municipal and long distance busses. Letters G, I, O, Q and U not used in this serial format.
+|-
+|[[File:Ontario Bus License Plate 510 6BH (cropped).jpg|150px]]
+|2009–present
+|Black on reflective white with screened crown separator
+|"YOURS TO DISCOVER"
+|123-4'''B'''A
+|101-1BF to 482-1BN (as of November 14, 2025)<ref name="PlateHighsON" />
+|
+|Plates designated for use on municipal and long distance busses. Letters G, I, O, Q and U not used in this serial format.{{citation needed|date=June 2023}}
+|-
+|[[File:Ontario PRP Bus License Plate BP1-467 (cropped).jpg|150px]]
+|1980–1994
+|Black on white with embossed crown separator
+|''none''
+|'''BP'''1 234
+|BP1 001 to BP1 615
+|
+|Plates designated for use on inter-provincial and long-distance coach busses.
+|-
+|[[File:Ontario PRP Bus License Plate BP2-593 (cropped).jpg|150px]]
+|1994–present
+|Black on reflective white with screened crown separator
+|"YOURS TO DISCOVER"
+|'''BP'''1 234
+|BP2 001 to BP5 349 (as of February 22, 2025)<ref name="PlateHighsON" />
+|
+|Plates designated for use on inter-provincial and long-distance coach busses. Letters G, I, O, Q and U not used in this serial format. {{citation needed|date=June 2023}}
+|}
+
+===School bus plates===
+School bus licence plates were first issued in 1975 under a yearly registration. Unlike regular bus licence plates, these plates expired in June at the end of the school year. In 1980, these yearly issued plates were phased out for  permanent plates revalidated with stickers annually.<ref name="EricPlate" />
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1980–1994
+|Black on white; "ONTARIO" on bottom
+|''none''
+|'''S'''A1-234
+|
+|Plates no longer issued yearly. Letters A, B, C, D, E, F, H, J, K, L, M, N, P, R, S, T, V, W, X, Y and Z are now used in this serial format. However, letters G, I, O, Q and U are not used in this serial format.
+|-
+|[[File:Ontario School Bus License Plate SD8-549 (cropped).jpg|150px]]
+|1994–present
+|Black relfective on white; "ONTARIO" screened in black on top
+|"YOURS TO DISCOVER" in black screen in bottom
+|'''S'''A1-234
+|SA1-001 to SJ9-168 (as of October 18, 2025)<ref name="PlateHighsON" />
+|Letters G, I, O, Q and U are not used in this serial format. Switched to reflective plate
+|}
+
+===Farm plates===
+[[File:Ontario Farm Quarterly License Plate MAR-79 F73 70.jpg|thumb|Example of a Farm quarterly plate from 1979.]]
+Farm plates were introduced in 1978 using the quarterly system. In 1980, the plates were switched to permanent plates revalidated with stickers.<ref name="EricPlate" />
+
+Vehicles over 3000&nbsp;kg owned by farmers and used for farm-related purposes, such as working the soil, building maintenance, and the transportation of farm products, may qualify for a farm plate. Farm-plated trucks and towed trailers may also be used by a farmer for personal transportation.
+
+To qualify, a farmer must meet a series of criteria, including membership in farming organisations and a minimum amount of income that derives from farming. Fees for farm plates are substantially lower than for passenger or commercial plates. The Highway Traffic Act also exempts farm vehicles from several requirements imposed on commercial vehicles.<ref name=farmplatefee>{{cite web|title=Register a farm vehicle (permit, licence plate and sticker)|url=https://www.ontario.ca/page/register-farm-vehicle-permit-licence-plate-and-sticker|website=Ontario Ministry of Transportation|publisher=Queen's Printer for Ontario|access-date=17 September 2015}}</ref>
+
+Farm plates are black on white with a black crown separator, in a pattern similar to commercial plates. They have the word "FARM" written vertically on the left of the plate. Validation stickers are the same as for other vehicles, and are affixed to the front plate, as with commercial plates.
+
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1980
+|Black on white; "ONTARIO" on bottom. "FARM" screened vertically on right side.
+|''none''
+|'''F'''A1234
+|
+|Switched to permanent baseplates, renewed annually with validation stickers.
+|-
+|[[File:Ontario Farm License Plate FJ6439.jpg|150px]]
+|1982
+|Black on white; "ONTARIO" on bottom. "FARM" screened vertically on left side.
+|''none''
+|'''F'''A1234
+|
+|"FARM" moved to left side.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994
+|Black reflective on white; "ONTARIO" screened in black on top
+|"YOURS TO DISCOVER" in black screen in bottom
+|'''F'''A1-234
+|
+|Introduction of reflective plates.
+|-
+|[[File:Ontario Farm License Plate 124-5FJ.jpg|150px]]
+|2003
+|Black reflective on white; "ONTARIO" screened in black on top
+|"YOURS TO DISCOVER" in black screen in bottom
+|123-4'''F'''A
+|100-1FA to 955-8FY (as of November 8, 2025)<ref name="PlateHighsON" />
+|
+|}
+
+==Trailer plates==
+{{expand section|date=August 2022}}
+[[File:Sand Road Maple Sugar Farm Sap Trailer (13789710015) (cropped).jpg|thumb|Example of a Trailer plate, affixed to the rear.]]
+All trailers in Ontario are considered separate vehicles and must have a permit and be plated. New owners of a trailer must register with the MTO within six days of purchase. They are then issued with a permit and a plate. Trailer plates are not renewed annually, but may be replaced if lost, damaged or stolen. Plates are affixed to the rear of the trailer. There is no front plate.<ref name=mtohandbooktrailer>{{cite web|title=Driver's Handbook|url=http://www.mto.gov.on.ca/english/dandv/driver/handbook/section5.4.2.shtml|website=Ontario Ministry of Transportation|publisher=Queen's Printer for Ontario|access-date=17 September 2015}}</ref>
+
+All trailers, whether used by commercial operators or others, use a same model plate. Plates are blue on white with crown separator, in a pattern and colour similar to that of passenger vehicles, with the word "TRAILER" written vertically on the left of the plate. However, they do not follow the same numbering system as other vehicles.
+
+===1921 to 1973===
+Trailer plates were first introduced in 1921. Plates issued from 1921 to 1929 had the letter T at the front. In 1930, the letter T was moved to the end of the number. A quarterly system was introduced for trailers starting in 1963.<ref name="EricPlate">{{cite web |title=Collection |url=https://ericsplates.weebly.com/collection.html |website=Eric's Plates |access-date=7 August 2022}}</ref>
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:ONTARIO 1934 -TRAILER LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1934
+|Embossed black serial; "ONTARIO" at top with year
+|''none''
+|12345·T
+|
+|Trailer text vertically on left side
+|-
+|[[File:Ontario 1935 Trailer License Plate.jpg|150px]]
+|1935
+|Embossed black serial; "ONTARIO" at top with year
+|''none''
+|12345·T
+|
+|Trailer text vertically on left side
+|-
+|[[File:Ontario 1936 Trailer License Plate.jpg|150px]]
+|1936
+|Embossed dark yellow serial; "ONTARIO" at bottom with year
+|''none''
+|12345·T
+|
+|Trailer text vertically on left side
+|-
+|[[File:Ontario 1937 Trailer License Plate.jpg|150px]]
+|1937
+|Embossed white serial; "ONTARIO" at top with year
+|''none''
+|12345·T
+|
+|Trailer text vertically on left side
+|-
+|[[File:1943 Ontario Trailer License Plate 30614T.jpg|150px]]
+|1943
+|Embossed dark yellow serial; "ONTARIO" at bottom with year
+|''none''
+|12345·T
+|
+|
+|-
+|[[File:Ontario 1944 Trailer License Plate.jpg|150px]]
+|1944
+|Embossed black serial on yellow plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|12345·T
+|
+|
+|-
+|[[File:1947 Ontario Trailer License Plate 38595T.jpg|150px]]
+|1947
+|Embossed black serial on white plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|12345·T
+|
+|
+|-
+|[[File:Ontario 1952 Trailer License Plate.jpg|150px]]
+|1952
+|Embossed black serial on yellow plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|12345·T
+|
+|
+|-
+|[[File:Ontario Trailer License Plate 1953.jpg|150px]]
+|1953
+|Embossed white serial on blue plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|12345·T
+|
+|
+|-
+|[[File:1955 Ontario Trailer License Plate 8-360T.jpg|150px]]
+|1955
+|Embossed white serial on blue plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|12·345T
+|
+|
+|-
+|[[File:Ontario Trailer License Plate 1956 Rusty.jpg|150px]]
+|1956
+|Embossed blue serial on white plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|12345·T
+|
+|
+|-
+|[[File:1959 Ontario Trailer License Plate T-36457.jpg|150px]]
+|1959
+|Embossed white serial on black plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|T·12345
+|
+|
+|-
+|[[File:1962 Ontario Trailer License Plate 18152-T.jpg|150px]]
+|1962
+|Embossed black serial on white plate; "ONTARIO" at top left with crown centred and year at the top right.
+|''none''
+|12345·T
+|
+|
+|-
+|}
+
+===1973 to present===
+By 1973, the quarterly system was phased out in favour of a semi-permanent plate validated each year with an annual sticker. As of 1980, trailer plates no longer require yearly validation stickers, rather a one time fee.<ref name="EricPlate" />
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+
+|-
+|[[File:1973 Ontario Trailer License Plate 522-54R.jpg|150px]]
+|1973⁠–79
+|Embossed blue serial with crown separator on white plate with border line; "ONTARIO" centred at top; "73" at bottom left and full sticker box at bottom right
+|rowspan=2|"KEEP IT BEAUTIFUL"
+|123-45A
+|10-01Z to 397-61N
+|Serials issued in reverse
+|-
+|[[File:1979 Ontario Trailer License Plate 769-92N.jpg|150px]]
+|1979–80
+|As above, but without "73", and with partial sticker box at bottom right
+|123-45A
+|700-97N - 586-49L
+|Letter M not used.<ref name="AllAboutLicensePlates Non-passenger">{{cite web |title=Non Passenger Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Non-passenger&jurisdiction=Ontario&code=on |website=Allaboutlicenceplates |access-date=18 October 2022}}</ref> 
+|-
+|[[File:Ontario Trailer License Plate 114-90F.jpg|150px]]
+|1980⁠–84
+|Embossed blue serial with crown separator on white reflective plate with border line; "ONTARIO" centred at top and "TRAILER" at bottom.
+|rowspan=4|"TRAILER"
+|123-45A
+|10-01A - 412-51K
+|First issue of permanent trailer plates. Reflective plates from Quebec.
+|-
+|[[File:Blank License Plate Shape.svg|150px|]]
+|1984⁠–86
+|Embossed blue serial with crown separator on white reflective plate with border line; "ONTARIO" centred at top and "TRAILER" at bottom.
+|123-45A
+|604-92K - 999-99M
+|Introduction of reflective plates from ALCAN. Letter L not used.<ref name="AllAboutLicensePlates Non-passenger" />
+|-
+|[[File:Ontario Trailer License Plate A27-333.jpg|150px|]]
+|1986
+|Embossed blue serial with crown separator on white reflective plate with border line; "ONTARIO" centred at top and "TRAILER" at bottom.
+|123-45A
+|A10-001 - A16-827
+|
+|-
+|[[File:Ontario Trailer license plate L86-002.jpg|150px]] 
+|1986⁠–94
+|Embossed blue serial with crown separator on white plate with border line; "ONTARIO" centred at top and "TRAILER" at bottom.
+|A12-345
+|A68-592 - M98-192
+|Switched back to painted plates due to issues with ALCAN reflective plates.
+|-
+|[[File:Ontario Trailer License Plate R41-421.jpg|150px]]
+|1994⁠–2002
+|Blue on reflective white; "ONTARIO" screened in blue centred at top and vertical trailer text on the left side.
+|rowspan=3|"YOURS TO DISCOVER"
+|A12-345
+|N40-861 to Z99-999
+|Trailer text moved back to the left side vertically.
+|-
+|[[File:Ontario trailer e4856v.jpg|150px]]
+|2002⁠–2025
+|Blue on reflective white; "ONTARIO" screened in blue centred at top and vertical trailer text on the left side.
+|A12-34B
+|A10-01A to Z99-99Z
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px|]]
+|2025–present
+|Blue on reflective white; "ONTARIO" screened in blue centred at top and vertical trailer text on the left side.
+|AB1-23C
+|AA0-01A to AD2-54K (as of November 21, 2025)<ref name="PlateHighsON" />
+|
+|-
+|}
+
+==Motorcycle vehicle plates==
+Motorcycle plates were first issued in 1911.<ref name="EricPlate" /> Issued yearly until 1980 when they switched to yearly renewal with validation stickers.
+{{expand section|date=August 2022}}
+
+===1911 to 1980===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1965 Ontario Motorcycle license plate 8508.jpg|150px]]
+|1965
+|White on blue; "ONT" screened in white on top with year to the right.
+|''none''
+|123<br> 1234<br> 12345
+|
+|
+|-
+|[[File:1966 Ontario Motorcycle license plate R724 (cropped).jpg|150px]]
+|1966
+|Blue on white; "ONT" screened in blue on top with year to the right.
+|''none''
+|A123<br> 123A
+|
+|
+|-
+|[[File:1968 Ontario Motorcycle license plate 40722.jpg|150px]]
+|1968
+|Blue on white; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1972.jpg|150px]]
+|1972
+|Blue on white; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1973.jpg|150px]]
+|1973
+|White on blue; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1974.jpg|150px]]
+|1974
+|Blue on white; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1975.jpg|150px]]
+|1975
+|White on blue; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1976.jpg|150px]]
+|1976
+|Blue on white; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1977.jpg|150px]]
+|1977
+|White on blue; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1978.jpg|150px]]
+|1978
+|Blue on white; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1979.jpg|150px]]
+|1979
+|White on blue; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|
+|-
+|[[File:Ontario Motorcycle License Plate 1980.jpg|150px]]
+|1980
+|Blue on white; "ONT" screened in blue on top with year to the right.
+|''none''
+|12345
+|
+|Plates issued in 1980 were re-used in 1981 with a validation sticker. 
+|}
+
+===1980 to present===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1980
+|Blue on white; "ONT" screened in blue on top. 
+|''none''
+|12345<br> A1234
+|10001 to 99999<br> Z1001 to Z9999
+|Validation stickers were used on 1980 plates for 1981, year was removed by 1982.
+|-
+|[[File:Ontario Motorcycle License Plate ONT 82.jpg|150px]]
+|1981–⁠82
+|Blue on white; "ONT" screened in blue on top
+|''none''
+|A1234
+|Y0001 to S9999
+|Serials issued in reverse
+|-
+|-
+|[[File:Ontario Motorcycle License Plate APR 1984.jpg|150px]]
+|1982–⁠91
+|Blue on white; "ONT" screened in blue on top
+|''none''
+|A1234<br> 123AB
+|R0001 to H9999<br> 001AA to 999EZ<br> 001NA to 999ZZ
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1991–⁠94
+|Blue on white; "ONT" screened in blue on top
+|''none''
+|AB123
+|FA001 TO KZ999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994–⁠96
+|Blue on reflective white; "ONT" screened in blue on top
+|''none''
+|AB123
+|LA001 to LZ999
+|Switched to new reflective plate design
+|-
+|[[File:Ontario Motorcycle License Plate JUL 2003.jpg|150px]]
+|1996–⁠2003
+|Blue on reflective white; "ONT" screened in blue on top
+|''none''
+|1A234
+|1A001 - 9Z999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2003–⁠08
+|Blue on reflective white; "ONT" screened in blue on top
+|''none''
+|123A4
+|100A1 to 999Z9
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008–⁠13
+|Blue on reflective white; "ONT" screened in blue on top
+|''none''
+|1234A
+|0001A to 9999Z
+|
+|-
+|[[File:2022 Ontario motorcycle license plate.jpg|150px]]
+|2013–2024
+|Blue on reflective white; "ONT" screened in blue on top
+|''none''
+|1A2B3
+|0A0A1 to 0X1J6 (as of July 6, 2023)<ref name="PlateHighsON" />
+|Used occasionally; "ONT" stands for Ontario.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2024
+|Blue on reflective white; "ONT" screened in blue on top
+|''none''
+|12A3B
+|00A0A to 50E5C (as of September 6, 2025)<ref name="PlateHighsON" />
+|Used occasionally; "ONT" stands for Ontario.
+|}
+
+===Off-road vehicle plates===
+These licence plates are issued to ATVs and other vehicles for off roading uses.
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1984
+|Green on reflective white; "ONT" screened in green on top
+|''none''
+|123AB
+|001AA to 999ZZ
+|Used occasionally; "ONT" stands for Ontario.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|rowspan="2"|Green on reflective white; "ONT" screened in green on top
+|rowspan="2"|''none''
+|rowspan="2"|AB123
+|AA001 to P????
+|Used occasionally; "ONT" stands for Ontario.
+|-
+|[[File:Ontario ATV License Plate TL140.jpg|150px]]
+|1994
+|P???? to ZZ999
+|Used occasionally; "ONT" stands for Ontario.
+|-
+|[[File:Ontario ATV license plate, 2002–2013.webp|150px]]
+|2002
+|Green on reflective white; "ONT" screened in green on top
+|''none''
+|12AB3
+|11AA1 to 99ZZ9
+|Used occasionally; "ONT" stands for Ontario.
+|-
+|[[File:Ontario ATV License Plate 4HT22.jpg|150px]]
+|2013
+|Green on reflective white; "ONT" screened in green on top
+|''none''
+|1AB23
+|1AA11 to 4J26H (as of July 18, 2025)<ref name="PlateHighsON" />
+|Used occasionally; "ONT" stands for Ontario.
+|}
+
+===Moped plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1976
+|White on reflective red; "ONT 1976" screened in white on top
+|''none''
+|A1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1977
+|Red on reflective white; "ONT 1977" screened in red on top
+|''none''
+|A1234
+|
+|
+|-
+|[[File:Ontario Moped License Plate 1978.jpg|150px]]
+|1978
+|White on reflective red; "ONT 1978" screened in white on top
+|''none''
+|A1234
+|
+|
+|-
+|[[File:Ontario Moped License Plate 1979.jpg|150px]]
+|1979
+|Red on reflective white; "ONT 1979" screened in red on top and "MOPED" at bottom
+|''none''
+|A1234
+|
+|
+|-
+|[[File:Ontario 1980 Moped License Plate.jpg|150px]]
+|1980
+|Red on reflective white; "ONT 1980" screened in red on top and "MOPED" at bottom
+|''none''
+|A1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1981
+|Red on reflective white; "ONT" screened in red on top and "MOPED" at bottom
+|''none''
+|A1234
+|
+|Year removed, sticker box added.
+|-
+|[[File:Ontario Moped License Plate 1986.jpg|150px]]
+|1982
+|Red on reflective white; "ONT" screened in red on top and "MOPED" at bottom
+|''none''
+|A1234
+|
+|Sticker box removed.
+|-
+|[[File:Ontario moped license plate, 1998.png|150px]]
+|1994
+|Red on reflective white; "ONT" screened in red on top and "MOPED" at bottom
+|''none''
+|A1234
+|
+|New reflective plate. Used occasionally; "ONT" stands for Ontario.
+|-
+|[[File:Ontario moped license plate base, post-1994.png|150px]]
+|2004
+|Red on reflective white; "ONT" screened in red on top and "MOPED" at bottom
+|''none''
+|AB123
+|EA001 to EE544 (as of July 27, 2025)<ref name="PlateHighsON" />
+|New serial format. Used occasionally; "ONT" stands for Ontario.
+|-
+|}
+
+===Snowmobile plates===
+{{expand section|December 2022|date=December 2022}}
+Unlike all Ontario licence plates — which were changed to reflective plates in 1994 — the snowmobile plates remain non-reflective.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1970 Ontario Snowmobile license plate AS328.jpg|150px]]
+|1970
+|Green on white; "ONT" screened on top
+|''none''
+|AB123
+|
+|
+|-
+|[[File:1972 Ontario Snowmobile license plate DT955.jpg|150px]]
+|1972
+|As above, but yellow on blue
+|''none''
+|AB123
+|
+|
+|-
+|[[File:Ontario 1973 Snowmobile License Plate.jpg|150px]]
+|1973
+|Green on white; "ONT" screened on top
+|''none''
+|AB123
+|
+|
+|-
+|[[File:1974 Ontario Snowmobile license plate FR096.jpg|150px]]
+|1974
+|As 1970, 1973 and 1975, but inverted to white on green
+|''none''
+|AB123
+|
+|
+|-
+|[[File:1975 Ontario Snowmobile license plate EA752.jpg|150px]]
+|1975
+|Green on white; "ONT" screened on top
+|''none''
+|AB123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1999
+|Blue on white; "ONTARIO" in the Helvetica Bold font screened on top
+|''none''
+|123456
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009
+|Blue on white; "ONTARIO" in the Helvetica Bold font screened on top
+|''none''
+|0AA000
+|
+|Serial format switched back to two-letter format after 999999 series (2009). 
+|}
+
+==Dual purpose plates==
+Dual purpose license plates were first introduced in 1927. They were issued to vehicles that could be used for both personal and commercial purposes. Vehicles such as RV's, station wagons & motor-homes.<ref name="EricPlate" /> They were noted by the X prefix. However, these plates were discontinued in 1973 and are no longer issued.
+
+===1927 to 1972===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Slogan
+!style="width:65px"|Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Black serial on yellow plate; "ONTARIO." and "1927" at bottom
+|''none''
+|'''X'''1-234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Black serial on yellow plate; "ONTARIO." and "1928" at bottom
+|''none''
+|'''X'''1-234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Black serial on white plate; "ONTARIO." and "1929" at bottom
+|''none''
+|'''X'''12-345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Black serial on white plate; "ONTARIO." and "1930" at bottom
+|''none''
+|1234-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Black serial on yellow plate; "ONTARIO." and "1931" at top
+|''none''
+|1234-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Black serial on white plate; "ONTARIO." and "1932" at top
+|''none''
+|1-234-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1933
+|Black serial on yellow plate; "ONTARIO." and "1933" at top
+|''none''
+|1234-'''X'''
+|
+|
+|-
+|[[File:Ontario dual-purpose license plate, 1934.jpg|150px]]
+|1934
+|Black serial on white plate; "ONTARIO." and "1934" at top
+|''none''
+|'''X'''-1234 <br> 1234-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Black serial on orange plate; "19 ONTARIO 35" at top
+|''none''
+|1234-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|White serial on black plate; "19 ONTARIO 36" at bottom
+|''none''
+|1234-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|White serial on red plate; "ONTARIO." and "1937" at top
+|''none''
+|1234-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1938
+|Red serial on blue plate; "ONTARIO." at bottom and "1938" at top
+|''none''
+|123'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|White serial on black plate; "ONTARIO." at bottom and "1939" at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Black serial on yellow plate; "ONTARIO." and "1940" at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Green serial on white plate; "ONTARIO." and "1941" at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1942
+|Black serial on yellow plate; "ONTARIO." and "1942" at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|White serial on blue plate; "ONTARIO." and "1945" at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|White serial on black plate; "ONTARIO." and "1946" at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Black serial on yellow plate; "ONTARIO." and "1947" at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|White serial on blue plate; "ONTARIO." and "1948" at top
+|''none''
+|123'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Blue serial on white plate; "19-ONTARIO-51." at top
+|''none''
+|1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|White serial on blue plate; "ONTARIO." and "1953" at top
+|''none''
+|12'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1954
+|Blue serial on white plate; "ONTARIO." and "1954" at top
+|''none''
+|'''X'''1234 <br> 1234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|White serial on blue plate; "ONTARIO." and "1955" at top
+|''none''
+|'''X'''123-4 <br> 1-234'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Blue serial on white plate; "ONTARIO." and "1956" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|White serial on black plate; "ONTARIO." and "1957" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1958
+|Black serial on white plate; "ONTARIO." and "1958" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1959
+|White serial on black plate; "ONTARIO." and "1959" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1960
+|Black serial on white plate; "ONTARIO." and "1960" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X''' 
+|
+|
+|-
+|[[File:Ontario dual purpose license plate 1961.jpg|150px]]
+|1961
+|White serial on black plate; "ONTARIO." and "1961" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X''' 
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1962
+|Black serial on white plate; "ONTARIO." and "1962" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X''' 
+|
+|
+|-
+|[[File:Ontario 1963 License Plate.jpg|150px]]
+|1963
+|White serial on black plate; "ONTARIO." and "1963" at top
+|''none''
+|'''X'''-12345 12345-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1964
+|Black serial on white plate; "ONTARIO." and "1964" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1965
+|White serial on blue plate; "ONTARIO." and "1965" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X'''
+|
+|
+|-
+|[[File:1966 ONTARIO LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1966
+|Blue serial on white plate; "ONTARIO." and "1966" at top
+|''none''
+|'''X'''-12345 <br> 12345-'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1967
+|White serial on blue plate; "19 ONTARIO 67." at top and "18 CONFEDERATION 67" at bottom
+|''none''
+|'''X'''12-345 <br> 123-45'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1968
+|Blue serial on white plate; "ONTARIO." at bottom and "1968" at top
+|''none''
+|'''X'''12-345 <br> 123-45'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969
+|White serial on blue plate; "ONTARIO." at bottom and "1969" at top
+|''none''
+|'''X'''12-345 <br> 123-45'''X'''
+|
+|
+|-
+|[[File:Ontario Dual Purpose License Plate 1970.jpg|150px]]
+|1970
+|Blue serial on white plate; "ONTARIO." at bottom and "1970" at top
+|''none''
+|'''X'''12-345 <br> 123-45'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1971
+|White serial on blue plate; "ONTARIO." at bottom and "1971" at top
+|''none''
+|'''X'''12-345 <br> 123-45'''X'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1972
+|Blue serial on white plate; "ONTARIO." at bottom and "1972" at top
+|''none''
+|'''X'''1-234 <br> 12-34'''X'''
+|
+|
+|-
+|}
+
+==Diplomatic plates==
+[[File:ONTARIO 1965 -DIPLOMAT LICENSE PLATE - Flickr - woody1778a.jpg|thumb|Example of an older style Diplomatic plate from 1965.]]
+In Ontario, diplomatic plates were first issued in the 1950s. The first red licence plate was issued in 1959. Yearly plates were issued until 1986, when permanent plates renewed with stickers were introduced the following year. The ABC-123 serial format began in 1973.<ref name="EricPlate" />
+
+The current design is a white serial on red plate, using the 123-ABC serial format. "YOURS TO DISCOVER" is screened at the bottom. The red plate colour is exclusive to diplomatic plates.
+
+Any foreign representatives and their accredited family members are required to obtain special red diplomatic licence plates when registering passenger vehicles within 30 days of taking up residence in the province. This rule does not apply to the registration of motorcycles.<ref>{{cite web |title=Issuance of Licence Plates to Foreign Representatives, including Honorary Consular Officers |url=https://www.international.gc.ca/protocol-protocole/policies-politiques/licence-plates-guidelines_lignes-directrices-plaques-immatriculation.aspx?lang=eng |website=Global Affairs Canada |publisher=Government of Canada}}</ref>
+
+These plates are most commonly found in [[Ottawa]] and [[Toronto]] where embassies and foreign government operations are located.
+{{Clear}}
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Type
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1994 Ontario diplomatic license plate 251♔CDL.png|150px]]<br>
+|rowspan="4"|1994
+|rowspan="4"|White on reflective red with crown separator.
+|rowspan="4"|"YOURS TO DISCOVER"
+|Diplomatic
+|123-CDA
+|101-CDA to 065-CDX (as of December 4, 2025)<ref name="PlateHighsON" />
+|Ontario plates do not bear indications of the mission. Low numbers assigned to heads of missions (i.e.: ambassadors).
+|-
+|[[File:1994 Ontario diplomatic license plate 378♔CCC.jpg|150px]]<br>
+|Consulate
+|123-CCA
+|101-CCA to 609-CCD (as of July 18, 2025)<ref name="PlateHighsON" />
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>
+|Embassy Staff
+|123-XTR
+|101-XTR to 969-XTW (as of September 28, 2025)<ref name="PlateHighsON" />
+|Reserved for non-diplomat embassy staff.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|External Organization
+|123-XOR
+|101-XOR to 205-XOR (as of June 25, 2023)<ref name="PlateHighsON" />
+|Issued to envoys without diplomatic recognition.<ref>Used for example by Palestine or Taiwan, which has a trade office but is not officially recognized by the Canadian Government</ref>
+|}
+
+==Dealer and service licence plates==
+[[File:Ontario Dealer License Plate on 1991 Nissan Figaro (5564006773) (cropped).jpg|thumb|A Dealer plate is affixed only to the rear of a vehicle.]]
+In Ontario, motor vehicle dealers licensed under the ''Motor Vehicle Dealers Act'' use a single portable plate with the word "DEALER" on the left side and red alpha-numeric characters on a white background. It is for exclusive use by motor vehicle dealers only on motor vehicles owned as part of the dealer's inventory of vehicles for sale. It may also be used for private use vehicles that are owned as part of the dealer's inventory of vehicles for sale.<ref name=dealerplatesfaq>{{cite web|title=Frequently Asked Questions about Ontario Dealer Plates|url=http://www.ucda.org/DealerInfo/DealerPlateFAQ.aspx|website=ucda.org|publisher=The Used Car Dealers Association of Ontario|access-date=24 August 2015}}</ref>
+
+Service providers, including anyone who repairs, customizes, modifies, manufactures or transports motor vehicles or trailers use yellow and black DLR series plates (Dealer and Service Plate).
+
+A service plate may be used:
+
+* on a trailer or motor vehicle other than a motorcycle or motor-assisted bicycle for purposes related to the repair, road testing, customization or modification of the vehicle, if the vehicle is in the possession of the person to whom the service plate is issued, or
+* for the purpose of transporting the vehicle by a person engaged in the business of transporting vehicles, or
+* for purposes related to the manufacturing or sale of a trailer, or
+* for the purpose of towing the vehicle by a person engaged in the business of transporting vehicles, or
+* to tow a vehicle to a location where its load will be removed or to an impound facility.
+
+Private use of motor vehicles or trailers with a service plate is not permitted.
+
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1994 Ontario license plate 924♔DKY dealer.png|150px]]
+|1994
+|Black on yellow background, with crown separator.
+|"YOURS TO DISCOVER"
+|123-'''D'''AB
+|001-DAA to 836-DXL (as of December 8, 2025)<ref name="PlateHighsON" />
+|Removable service plate. Before 2007 also used by vehicle dealers. [[Vehicle registration plates of Ontario#Dealer and service licence plates|See below]].
+|-
+|[[File:2007 Ontario license plate 293♔DPB dealer.png|150px]]
+|2007
+|Red stamped identification on a white reflective background. Screened in black: "DEALER" written vertically on the left, crown separator, "ONTARIO" across the top and "Yours to discover".
+|"YOURS TO DISCOVER"
+|123-'''D'''AB
+|011-DLA to 909-DTH (as of November 15, 2025)<ref name="PlateHighsON" />
+|Removable plate restricted to car dealers. Introduced in 2007 to differentiate dealer's inventory from vehicles being serviced.<ref name=dealerserviceinfo>{{cite web|title=Dealer plates and Service plates - public information package|url=http://www.hamiltonpolice.on.ca/NR/rdonlyres/6FC931EB-F6A5-492A-9678-D05571236D5E/3163/NEW_DealerPlatesandServicePlates.PDF|website=Hamilton Police|access-date=24 August 2015}}{{Dead link|date=July 2025 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>  [[Vehicle registration plates of Ontario#Dealer and service licence plates|See below]]. Issued singly, to be displayed at the rear of the vehicle.
+|}
+
+===Motorcycle dealer plates===
+[[File:Motorcycle-DEALER-ONTARIO-PLATEGUYS.png|thumb|An example of a current motorcycle dealer plate.]]
+Dealer plates for motorcycles have been issued since the 1920s.<ref name="EricPlate" /> Very few of these early plates were issued, thus making it a rare plate. The 'M' prefix was featured on all plates before 1973. From 1973 to 1979 they were issued with the 'DL' prefix, with a similar design to regular motorcycle plates. In 1982, the government began issuing permanent plates with yearly registration stickers.<ref name="EricPlate" /> Reflective plates were introduced in 1994.
+
+The current plate design is a white serial on a light blue plate. These plates are the same size as regular motorcycle plates. The serial format used by these plates is AB123, running from AA001 to AH486 (as of March 2, 2025)<ref name="PlateHighsON" />
+
+==Other non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:2004 Ontario license plate 10 day permit.jpg|150px]]
+|2004
+|Printed on security paper with barcode
+|10 Day Temporary Permit/Permis Provisoire de Dix Jours
+|A-123456
+|
+|Temporary use only, placed on dashboard at windshield. 
+|-
+|[[File:Ontario Manufacturer license plate 044MPA.jpg|150px]]
+|2017
+|Blue on reflective white; "ONTARIO" screened in blue centred at top with MFR vertically on left side.
+|"YOURS TO DISCOVER"
+|123-MPA
+|101-MPA to 457-MPB (as of October 22, 2022)<ref name="PlateHighsON" />
+|Manufacturer License plate. New plate as of 2017.
+|-
+|}
+
+===Medical doctor plates===
+{{expand section|December 2022|date=December 2022}}
+Medical doctor plates were first introduced in 1930, and are denoted by the letters starting with MD.  When all the MDA - MDZ serials had been issued in the late 1990s {{date?}}, new serials using MAA started being issued.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1973
+|Blue on white; "73" on bottom left and sticker box on bottom right
+|"KEEP IT BEAUTIFUL"
+|'''MD'''A-123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1978
+|As above, but with no "73"
+|"KEEP IT BEAUTIFUL"
+|'''MD'''-123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1982
+|As above, but with no sticker box
+|"YOURS TO DISCOVER"
+|'''MD'''A-123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994
+|Blue reflective on white; "ONTARIO" screened in blue on top
+|"YOURS TO DISCOVER"
+|123-'''MA'''A
+|001-MAA to 205-MAE (as of September 7, 2025)<ref name="PlateHighsON" />
+|
+|}
+
+===Amateur radio plates===
+Amateur Radio plates were introduced in 1969 as supplemental plates. In 1976, Ontario permitted the call-sign to be on regular passenger plates, eliminating the small supplemental plates.<ref name="EricPlate" /> 
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969
+|Yellow on black; "RADIO" on top and "AMATEUR" on bottom
+|''none''
+|'''VE3'''ABC
+|
+|
+|-
+|[[File:Ontario Amateur Radio License Plate VE3 CK.jpg|150px]]
+|1976
+|Blue on white; "ONTARIO" screened in blue on top
+|"KEEP IT BEAUTIFUL"
+|'''VE3'''-ABC
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1983
+|As above, but with no "73"
+|"YOURS TO DISCOVER"
+|'''VE3'''ABC
+|
+|The format switched back to its original format. Returned in 1986.
+|-
+|[[File:Ontario Amateur Radio License Plate VE3CJG.jpg|150px]]
+|rowspan=2|1994
+|Blue reflective on white; "ONTARIO" screened in blue on top
+|"YOURS TO DISCOVER"
+|'''VE3'''ABC
+|
+|Switched to new reflective plate
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Blue reflective on white; "ONTARIO" screen in blue on top
+|"YOURS TO DISCOVER"
+|'''VA3'''AB
+|
+|For 5-digit amateur radio callsigns
+|-
+|}
+
+===Special event plates===
+{{expand section|date=August 2022}}
+{|class="wikitable"
+|-
+!Image
+!Date issued
+!Description
+!Slogan
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1984
+|
+|"YOURS TO DISCOVER"
+|
+|Used in the motorcade of [[Queen Elizabeth II]] at provincial events during her Royal Visit of 1984
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1984
+|
+|"YOURS TO DISCOVER"
+|
+|Used during the visit of [[Pope John Paul II]] to Ontario during the Papal Visit of 1984
+|-
+|[[File:Ontario QEW 50th Anniversary License Plate.jpg|150px]]
+|1989
+|
+|"YOURS TO DISCOVER"
+|
+|Commemorative plates to celebrate the 50th Anniversary of the QEW highway. Plates used by police.
+|-
+|[[File:Blank License Plate Shape.svg|150px]] 
+|1991
+|
+|"YOURS TO DISCOVER"
+|
+|Given to MTO employees in celebration of the agency's 75th anniversary.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2000
+|
+|"YOURS TO DISCOVER"
+|
+|Plates for the CCMTA Conference 2000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2002
+|
+|"YOURS TO DISCOVER"
+|
+|Used in the Queen's motorcade during the 2002 Royal Jubilee Visit to Ontario.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2010
+|
+|'none'
+|
+|G20 Summit Special plates used in Toronto
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2016
+|
+|"YOURS TO DISCOVER"
+|
+|Given to MTO employees in celebration of the agency's 100th anniversary.
+|}
+
+==Vanity licence plates==
+Along with regular series plates, the province also offers [[vanity plate]]s for passenger and commercial vehicles. A personalized licence plate message may contain almost any combination of letters and numbers from two to eight characters. The plates can also include one of 60 different graphics,<ref name=chosegraphic>{{cite web|title=Choose a licence plate graphic|url=https://www.ontario.ca/page/choose-licence-plate-graphic|website=Service Ontario|publisher=Queen's Printer for Ontario|access-date=24 August 2015}}</ref> with two to six characters. Available graphics have changed over the years, with some becoming available, while others have been withdrawn or modified. Owners selecting a graphic but no custom message are generally assigned a registration with a 12XY34 pattern, where the XY is a code indicating the design (i.e.: LN and LM = [[Loon]], CF = [[Canadian Flag]], etc.).
+
+The province reserves the right to refuse or withdraw plates for a variety of reasons,<ref name=appropriateplate>{{cite web|title=Choose an appropriate personalized message|url=https://www.ontario.ca/page/choose-appropriate-personalized-message|website=Service Ontario|publisher=Queen's printer for Ontario|access-date=24 August 2015}}</ref> including:
+* Sexual messages
+* Abusive, obscene language and derogatory slang
+* Promotion or denunciation of religion and religious figures
+* Promotion of use of drugs or alcohol
+* Messages relating to politics, political figures, negative statements on institutions and persons, public personalities, or police badge numbers
+* Advocating or promoting violence or crime
+* Any discriminatory statement
+* Ambiguous or confusing numbers, or which may be mistaken for another existing plate (about 1 in 3 rejections)
+* Messages which may infringe on copyright and intellectual property
+While criteria have existed since the introduction of personalized plates, accusations of excessive zeal led the [[Dalton McGuinty|McGuinty]] government to set up a review committee in August 2008. The eight-member committee meets weekly to review submissions.  In the first half of 2013, it had rejected 3% of requests.<ref>{{cite news|last1=Ellison|first1=Marc|title=0UTLAW3D: The vanity licence plates the Ontario government won't let you see|url=https://www.thestar.com/news/gta/2013/08/02/0utlaw3d_the_vanity_licence_plates_the_ontario_government_wont_let_you_see.html|access-date=7 October 2015|work=The Toronto Star|publisher=Toronto Star Newspapers Ltd.|date=2 August 2013}}</ref> Plates have also been withdrawn after issue.<ref>{{cite web|last1=Laroque|first1=Corey|title=Government revokes driver's 'WTF' plate|url=http://www.torontosun.com/2011/05/10/government-revokes-drivers-wtf-plate|website=The Toronto Sun|publisher=Sun Media|access-date=24 August 2015|date=10 May 2011}}</ref>
+
+The [[COVID-19 pandemic|COVID-19 pandemic of 2020]] brought renewed attention to the work of the Personalized License Plate Review Committee as it rejected personalized plates based on this theme.<ref>{{cite web |last1=Watters |first1=Hayden |title=Here's the list of licence plates Ontario doesn't want on the road |url=https://www.cbc.ca/news/canada/hamilton/ontario-rejected-licence-plates-1.5693775 |website=CBC News Hamilton |publisher=Canadian Broadcasting Corporation |access-date=21 August 2020 |ref=2020CovidPlates}}</ref>
+
+The ownership of plates with graphic elements associated with particular groups, such as veterans or firefighters, may be restricted and require proof of eligibility.
+
+Personalized plates with two to five characters are also available for motorcycles.
+
+<gallery>
+File:Ontario pers vrrrmmmm.png|Ontario personalised plates can have up to eight characters, including letters, numbers and the crown.
+File:Ontario pers q2.png|The minimum number of characters is two.
+File:Ontario per 7tjm.jpg|Personalized licence plate. Note the use of the crown as a character.
+File:Ontario pers wloo fadium.jpg|Plate with both a graphic element and a personalised registration. This example bears the logo of the University of Waterloo. The dark areas around the digits are dirt, and not part of the design.
+File:2011 Ontario license plate 56FL12 Franco-Ontarian TANT À DÉCOUVRIR.png|Personalized plate bearing the image of the [[Franco-Ontarian flag]] ("FL" code). The marketing legend reads "Tant à découvrir", in French.
+File:2011 Ontario license plate 05FL07 Franco-Ontarian.png|Personalized plate bearing the image of the [[Franco-Ontarian flag]]. Uncommonly for this pattern, the marketing legend is in English.
+File:Ontario comm plate mdsons front.jpg|Personalized plate (front) attached to a pickup truck. As a pickup truck it should otherwise bear a black on white commercial plate, but the personalized plate is blue on white. Validation and "personal use" tags are affixed to the front plate, as in the case of other pickups.
+File:Ontario pers temp.png|This personalised rear plate bears a temporary licence plate sticker. Temporary registration allows a "fit" and insured vehicle to be driven for ten days pending completion of the requirements for a regular registration. 
+File:Ontario License Plate 2008.jpg|The "YOURS TO DISCOVER" slogan can be covered by the below of the dealer's logo at times.
+</gallery>
+
+===Veteran plate===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Ontario vet 4v7234.png|150px]]
+|2003
+|rowspan="2"|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|1'''V'''2345
+|1V0001 to 9V1431 (as of October 31, 2025)
+|rowspan="3"|Applicants must confirm their eligibility through the [[Royal Canadian Legion]]. Numbers are assigned in  format if no personalized message selected.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2003
+|"TANT À DÉCOUVRIR"
+|1'''F'''2345
+|A69F to D85V (as of March 2, 2025)
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011
+|Motorcycle Plate
+|A12B
+|1F0166 to 1F0180 (as of September 28, 2025)
+|}
+
+===License plate graphics===
+{{Expand section|date=August 2022}}
+Plates with graphics are also available.<ref>{{cite web |title=Choose a licence plate graphic |url=https://www.ontario.ca/page/choose-licence-plate-graphic |website=Service Ontario |publisher=Ontario Government |access-date=9 August 2022}}</ref> Graphics first being issued on license plates began in 1996. The variety of graphics includes charities, universities, community organizations and popular Ontario sports teams, such as the [[Ottawa Senators]]. All plates offer the French slogan since 2017.<ref name="EricPlate" />
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Type
+!Category
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|Ontario Square and Round Dance Federation
+|Arts
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SQ'''34
+|{{nowrap|01SQ01 to 15SQ65 (As of June}} 1st 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|Breast Cancer Society of Canada
+|Charity
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''BC'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|[[Canadian Tire]] Jumpstart Charities
+|Charity
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''JS'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|Farley Foundation
+|Charity
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''FF'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2015
+|[[MADD Canada]] (Mother's Against Drunk Driving)
+|Charity
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''MD'''34
+|01MD01 to 03MD88 (As of April 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009
+|[[St. John Ambulance]]
+|Charity
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SJ'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|48th Highlanders
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''TH'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|Army Cadet League of Canada (Ontario)
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''AL'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|Association of Canadian Distillers
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''CD'''34
+|01CD01 to 09CD57 (As of May 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|[[Canadian Blood Services]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''BL'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1997
+|Elmer the Safety Elephant
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''EE'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|[[Girl Guides of Canada]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''GG'''34
+|01GG01 to 10GG28 (As of March 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|Governor General's Horse Guards Association
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''HG'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|Grand Lodge A.F. & A.M. of Canada
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''FM'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|Grand Lodge of Ontario, Independent Order of Odd Fellows
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''OF'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|[[Knights of Columbus]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''VJ'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2001
+|Lincoln and Welland Regiment Foundation
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''LW'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|Ottawa Valley Adventure Playground
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''AP'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005
+|Queens Own Rifles of Canada
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''QO'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|Queen's York Rangers
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''QR'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|Radio Amateurs of Canada
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''HM'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005
+|[[Rotary International]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''RI'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2001
+|[[Royal Canadian Legion]] (Ontario Provincial Command)
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''CL'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|Trillium Gift of Life Network
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''GL'''34
+|
+|Introduced to promote organ donation.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|Royal Hamilton Light Infantry
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''CA'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|[[Royal Regiment of Canada]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''RG'''34
+|01RG01 to 02RG29 (As of May 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005
+|[[Royal Regiment of Canadian Artillery]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''AD'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Scouts Canada]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SC'''34
+|01SC01 to 11SC61 (As of May 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Shriners International]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SR'''34
+|
+|
+|-
+|[[File:Ontario pers 02yr35.png|150px]]
+|2010
+|[[Support Our Troops]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''YR'''34
+|01YR01 to 21YR66 (As of April 30, 2022)
+|Some money from the sale of the Yellow Ribbon plates is donated by the province to the [[Canadian Forces Morale and Welfare Services|Canadian Forces Personnel Assistance Fund]] to assist Canadian military veterans.<ref>{{cite news|last1=Leslie|first1=Keith|title=Licence plates to honour troops called 'offensive gimmick'|url=https://www.theglobeandmail.com/news/national/licence-plates-to-honour-troops-called-offensive-gimmick/article4215427/|access-date=26 August 2015|work=The Globe and Mail|publisher=The Globe and Mail Inc|date=13 November 2009}}</ref> The "yellow ribbon" design is indicated by the "YR" code.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|[[Toronto Scottish Regiment]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''TS'''34
+|01TS01 to 02TS38 (As of May 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|[[Ducks Unlimited]]
+|Environment
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''DU'''34
+|01DU01 to 14DU05 (As of January 30, 2022)
+|
+|-
+|[[File:Ontario Federation of Anglers and Hunters.jpg|150x150px]]
+|1998
+|Ontario Federation of Anglers and Hunters
+|Environment
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''AH'''34
+|
+|
+|-
+|[[File:Ontario Don't Drink Drive Vanity Plate.jpg|150px]]
+|1998
+|Don't Drink and Drive
+|Government
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''DD'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2010
+|[[Flag of Ontario]]
+|Government
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''ON'''34
+|01ON01 to 03ON53 (As of December 31, 2018)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|Road Safety
+|Government
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''RS'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|[[Anishinabek Nation]]
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''AN'''34
+|01AN01 to 18AN81 (As of October 31, 2021)
+|
+|-
+|[[File:Ontario License Plate Canadian Flag Graphic I MIEV (cropped).jpg|150px]]
+|1997
+|[[Canadian Flag]]
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''CF'''34<br> 12'''FC'''34
+|01CF01 to 99CF99<br> 01FC01 to 11FC60 (As of March 31, 2022)
+|
+|-
+|[[File:2011 Ontario license plate 05FL07 Franco-Ontarian.png|150px]]
+|2005
+|[[Franco-Ontarian]] Flag (English)
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''FL'''34
+|01FL01 to 06FL08 (As of July 1, 2014)
+|The English slogan plates start at 01FL01
+|-
+|[[File:2011 Ontario license plate 56FL12 Franco-Ontarian TANT À DÉCOUVRIR.png|150px]]
+|2009
+|[[Franco-Ontarian]] Flag (French)
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"TANT A DECOUVRIR"
+|12'''FL'''34
+|50FL01 to 64FL14 (As of July 1, 2021)
+|The French slogan plates start at 50FL01
+|-
+|[[File:Ontario License Plate 01GR22 with Garden River First Nation graphic.jpg|150x150px]]
+|2023
+|[[Garden River First Nation]]
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''GR'''34
+|01GR01 to 01GR28 (As of May 25, 2026)
+|Only available for purchase through the Garden River First Nation band office.<ref>{{Cite web |last=Hopkin |first=James |date=2023-09-15 |title=Garden River First Nation ready to roll with new licence plates |url=https://www.sootoday.com/local-news/garden-river-first-nation-ready-to-roll-with-new-licence-plates-7548135 |url-status=live |website=SooToday}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|Loon
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''LN'''34 {{small|(1996)}}<br> 12'''LM'''34 {{small|(2002)}}
+|01LN01 to 99LN99<br> 01LM01 to 61LM13 (As of July 1, 2021)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|[[Nishnawbe Aski Nation]]
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''NA'''34
+|01NA01 to 01NA82 (As of March 1, 2022)
+|
+|-
+|[[File:Ontario Trillium License Plate 59TR85.jpg|150px]]
+|1996
+|Trillium
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''TR'''34 {{small|(1996)}}<br> 12'''TL'''34 {{small|(2004)}}
+|01TR01 to 99TR99<br> 01TL01 to 40TL37 (As of February 1, 2021)
+|
+|-
+|[[File:Ontario license plate United Empire Loyalists' Association of Canada.jpg|150x150px]]
+|2013
+|United Empire Loyalists' Association of Canada
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''UE'''34
+|
+|Last batch of plates were ordered in June 2018. Remaining plates available while supply lasts at ServiceOntario.<ref>{{cite web |title=Ontario Loyalist Licence Plates |url=https://uelac.ca/projects/ontario-license-plates/ |website=United Empire Loyalists Association of Canada |access-date=26 September 2022}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|Heart
+|Novelty
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''RH'''34
+|
+|
+|-
+|[[File:I Heart license plate ontario.jpg|150x150px]]
+|1996
+|I Heart
+|Novelty
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''LV'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|Fire Service Society
+|Professional
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''FD'''34 {{small|(1998)}} 12'''FS'''34 {{small|(2004)}} 12'''FR'''34 {{small|(2012)}} 12'''RF'''34 {{small|(2021)}}
+|01FD01 to 99FD99<br> 01FS01 to 99FS99<br> 01FR01 to 99FR99<br> 01RF01 to 10RF60 (As of July 31, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|201X
+|Ontario Association of Veterinary Technicians
+|Professional
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''ME'''34
+|
+|Plates can be purchased through the OAVT website.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005
+|Ontario Paramedic Association
+|Professional
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''PA'''34<br> 12'''EP'''34
+|
+|Changed from PA to EP
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008
+|Ontario Professional Fire Fighter Association (OPFFA)
+|Professional
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''PF'''34
+|
+|Plates are only available through the OPFFA
+|-
+|[[File:Professional Engineer License Ontario.jpg|150x150px]]
+|2011
+|Professional Engineers Ontario
+|Professional
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''PE'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009
+|Equine Canada
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''EC'''34
+|01EC01 to 07EC41 (As of November 30, 2021)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Hamilton Tiger-Cats]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''TC'''34
+|01TC01 to 21TC98 (As of May 9, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|International Ch’ang-Hon Taekwon-Do Federation
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''TD'''34
+|01TD01 to 04TD75 (As of May 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Ontario Federation of Snowmobile Clubs]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SN'''34
+|01SN01 to 27SN67 (As of May 1, 2015)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Ontario Lacrosse Association]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''LX'''34
+|01LX01 to 14LX35 (As of May 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2014
+|[[Ottawa REDBLACKS]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''RB'''34
+|01RB01 to 03RB95 (As of September 30, 2021)
+|
+|-
+|[[File:Ontario pers 45se62.png|150px]]
+|1996
+|[[Ottawa Senators]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SE'''34
+|01SE01 to 74SE07 (As of March 4, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Toronto Argonauts]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''AR'''34
+|01AR01 to 17AR96 (As of May 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Toronto Blue Jays]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''JA'''34
+|01JA01 to 94JA14 (As of February 28, 2022)
+|
+|-
+|[[File:TML Ontario license plate.jpg|150px]]
+|1996
+|[[Toronto Maple Leafs]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''ML'''34 {{small|(1996)}}<br> 12'''TO'''34 {{small|(2002)}}<br> 12'''TM'''34 {{small|(2007)}}
+|01ML01 to 99ML99<br> 01TO01 to 99TO99<br> 01TM01 to 83TM74 (As of April 5, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Toronto Raptors]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''RA'''34
+|01RA01 to 54RA47 (As of May 9, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005
+|[[Lakehead University]]
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''LU'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|[[George Brown College]]
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''GB'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Queen's University at Kingston|Queen's University]]
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''QU'''34
+|01QU01 to 14QU88 (As of February 16, 2022)
+|
+|-
+|[[File:University of toronto license plate Ontario.jpg|150px]]
+|1997
+|[[University of Toronto]]
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''UT'''34
+|
+|
+|-
+|[[File:Ontario pers wloo fadium.jpg|150px]]
+|2001
+|[[University of Waterloo]]
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''UW'''34
+|
+|Image depicts license plate with both a graphic element and a personalized registration.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|[[Wilfrid Laurier University]]
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''WL'''34
+|
+|
+|-
+|}
+
+===Discontinued graphics===
+Certain graphics have been discontinued and are no longer issued. A plate design is considered discontinued once it is no longer offered at ServiceOntario.
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Discontinued
+!Type
+!Category
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1996
+|2002
+|[[Star Trek]]
+|Arts / Entertainment
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''ST'''34
+|
+|Discontinued due to licensing issues.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|
+|Cadet Instructor Cadre
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''IV'''34
+|01IV01 to 03IV30 (As of November 30, 2013)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|
+|Canadian Auxiliary Coast Guard
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''CG'''34
+|01CG01 to 03CG32 (As of November 30, 2014)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1997
+|2020
+|Canadian National Sportsmen's Show
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''NS'''34
+|01NS01 to 08NS10 (As of June 14, 2010)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009
+|
+|[[Canadian Snowbird Association]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''CS'''34
+|01CS01 to 04CS13 (As of May 26, 2013)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|2022
+|[[Geocaching]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''GC'''34
+|01GC01 to 04GC05 (As of August 21, 2015)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|
+|[[Humane Society]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''HS'''34
+|01HS01 to 11HS82 (As of October 31, 2009)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2001
+|2018
+|[[Kawartha Lakes]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''KL'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009
+|2019
+|[[Lions Club]]
+|Community Organizations
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''LC'''34
+|01LC01 to 09LC60 (As of February 28, 2015)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2000
+|
+|[[Millennium celebrations|Millennium]]
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''MM'''34
+|01MM01 to 14MM44 (As of February 28, 2009)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009
+|2012
+|Niagara [[War of 1812]]
+|Heritage / Historical
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''NI'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005
+|2010
+|[[Ottawa Renegades]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''RR'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|
+|[[Special Olympics]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SA'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998
+|2005
+|[[Toronto SkyDome]]
+|Sports / Recreation
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''SD'''34
+|01SD01 to 08SD50 (As of April 30, 2022)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1997
+|2007
+|King's College
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''KC'''34
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1997
+|2005
+|University of Guelph
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''UG'''34
+|01UG02 to 01UG51 (As of June 16, 2024)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1997
+|2005
+|York University
+|Universities / Colleges
+|Blue on reflective white with graphic to the left; "ONTARIO" screened in blue centred at top with crown in bottom right
+|"YOURS TO DISCOVER"
+|12'''YU'''34
+|04YU25 to 06YU37 (As of December 18, 2010)
+|
+|}
+
+==Manufacturing==
+[[File:Ontario avery 9903.png|thumbnail|Since 1994, Ontario plates have had a reflective backing. Between 1999 and 2003, the backing was made by [[Avery Dennison|Avery]]. These can be recognized by the slogan written with smaller letters, and the presence of a registration mark below the bottom left bolt hole. Backing has since been made using [[3M]]-brand reflective material.|173x173px]]
+Ontario licence plates were formerly manufactured by prison inmates at the Millbrook Correctional Centre in [[Cavan-Millbrook-North Monaghan]].<ref>{{cite book |last=Sallmen |first=Joseph |date=2003 |title=Ontario License Plates: A Century of History |page=66 |publisher=J.P. Sallmen |isbn=0973414405 }}</ref>  Upon Millbrook's closure in 2003,<ref>{{cite news|last=Graham|first=Karen|date=2015|title=End of an Era as the Jail Comes Tumbling Down|url=http://themillbrooktimes.ca/end-of-an-era-as-the-jail-comes-tumbling-down/|location=Millbrook, Ontario|access-date=2017-10-11}}</ref> manufacture was moved to the [[Central East Correctional Centre]] in Lindsay, Ontario.<ref>{{cite web|title=First look at where Ontario inmates make blankets, licence plates|url=https://www.ctvnews.ca/london/article/first-look-at-where-ontario-inmates-make-blankets-licence-plates/|website=CTV News London|date=17 March 2015 |publisher=CTV Television Network|access-date=24 August 2015}}</ref>  Since 1991, all Ontario plates have been manufactured for the MTO by Trilcor Industries, owned by the province's [[Ministry of the Solicitor General (Ontario)|Ministry of the Solicitor General]].<ref>{{cite web|title=Treatment Programs;Trilcor Industries|url=http://www.mcscs.jus.gov.on.ca/english/corr_serv/adult_off/OffenderProgramsServices/treat_prog_trilcor/treat_prog_trilcor.html|website=Ministry of Community Safety and Correctional Services|publisher=Queen's Printer for Ontario|access-date=24 August 2015|archive-date=15 September 2015|archive-url=https://web.archive.org/web/20150915085521/http://www.mcscs.jus.gov.on.ca/english/corr_serv/adult_off/OffenderProgramsServices/treat_prog_trilcor/treat_prog_trilcor.html|url-status=dead}}</ref><ref>[http://www.mcscs.jus.gov.on.ca/english/corr_serv/adult_off/treat_prog/treat_prog_trilcor/treat_prog_trilcor.html Government of Ontario, Canada / Gouvernement de l'Ontario, Canada] {{in lang|en|fr}} {{webarchive |url=https://web.archive.org/web/20110717173317/http://www.mcscs.jus.gov.on.ca/english/corr_serv/adult_off/treat_prog/treat_prog_trilcor/treat_prog_trilcor.html |date=July 17, 2011 }}</ref> From 2017 to 2018, the plates were manufactured by Waldale Manufacturing of Nova Scotia, because Ontario's prison made plates ran out due to the peeling and bubbling in the preceding "B" series. The plates made by Trilcor Industries returned in 2018, to avoid license plate issues with the [[Vehicle registration plates of Nova Scotia|Nova Scotia license plates]].
+
+===Alternative supplier===
+In 2016, an increase in the rate of defective plates combined with an increase in the number of registered vehicles led to the Ontario Ministry of Transportation becoming unable to keep up with demand for plates. It placed an order for 100,000 units from the Waldale Irwin Holdson Group, the largest licence plate manufacturer in North America.<ref>{{cite web|title=About us|url=http://www.waldale.com/about-us.php|website=Waldale Irwin Hodson Group|access-date=18 January 2017|archive-date=31 January 2017|archive-url=https://web.archive.org/web/20170131184212/http://www.waldale.com/about-us.php|url-status=dead}}</ref> Plates are produced by the Waldale Manufacturing facility in [[Amherst, Nova Scotia]].
+
+Plates from the first batch of 35,000 can be identified due to the use of embossed letters and numbers from [[Vehicle registration plates of Nova Scotia|Nova Scotia plates]], which differ in appearance from Ontarian fonts.<ref>{{cite web|title=Ontario special orders licence plates to meet high demand|url=http://www.cbc.ca/news/canada/windsor/licence-plates-ontario-nova-scotia-1.3939234|website=CBC News|publisher=Canadian Broadcasting Corporation|access-date=18 January 2017}}</ref> The province continues to order supplementary batches of plates from Waldale. Since 2017, the Ontario die set has been in use. These plates are almost identical to those made by Trilcor Industries. The Waldale made plates have squared off edges and smaller bolt holes.<ref>{{cite web |title=Ontario Project |url=http://www.andrewturnbull.net/plates/ontario-p1.html#passenger |website=The Andrew Turnbull Network |access-date=10 October 2022}}</ref>
+
+== Issues and controversies ==
+
+===Defective plates from 2012===
+In 2012, reports began to appear of plates deteriorating earlier than otherwise expected. The reflective layers detached themselves from the metal plate, making the plate unreadable. Approximately 1% of licence plates issued have this defect. The defect has appeared in both front and rear plates. Trilcor Industries and the MTO offer a five-year warranty on plates and will replace the defective plates at no cost.<ref name="PeelingRecord">{{cite news|last1=Warren|first1=May|date=22 January 2015|title=Peeling licence plates a problem across Ontario|work=Waterloo Region Record|publisher=Metroland News|url=http://www.therecord.com/news-story/5271532-peeling-licence-plates-a-problem-across-ontario/|access-date=2 September 2015}}</ref> Plate replacement for other reasons (theft, damage, wear, etc.) is done at a cost.
+
+Conventional plates can be replaced "over-the-counter" at a licence office, but the complete process for personalized plates takes over six months.<ref name="ServiceOntReplace">{{cite web|title=How can I replace a lost, stolen, or damaged licence plate or personalized licence plate?|url=https://www.ontario.ca/faq/how-can-i-replace-lost-stolen-or-damaged-licence-plate-or-personalized-licence-plate|access-date=2 September 2015|website=Service Ontario|publisher=Queen's Printer for Ontario}}</ref>
+
+Driving with an illegible plate is an offence punishable by fine, under the Highway Traffic Act.<ref name="HTAs12">{{cite web|title=Highway Traffic Act (Highway Traffic Act, R.S.O. 1990, c. H.8)|url=https://www.ontario.ca/laws/statute/90h08#BK37|access-date=2 September 2015|website=ontario.ca|date=24 July 2014 |publisher=Queen's Printer for Ontario}}</ref>
+
+In 2015, the Ministry of Community Safety and Correctional Services hired [[National Research Council (Canada)|Canada's National Research Council]] to identify the root cause of licence plate de-lamination. The NRC's report indicated that the reflective material adhered poorly to the aluminium plates, and that embossing process stressed the materials to the point that the reflective layer would puncture and de-laminate. At that point, water and other contaminants could slip between the layers. Also, road de-icing materials contributed to the de-lamination. The report found that this problem was present in samples from all types of plates, except for motorcycle plates.
+
+The report recommended that Trilcor work with its supplier of laminating layer to resolve the problem, and indicated that a thicker layer of material would likely perform better.<ref>{{cite news|last1=Howorun|first1=Christina|date=22 September 2016|title=Thousands of Ontario licence plates deemed defective|publisher=Rogers Digital Media|agency=City News|url=https://toronto.citynews.ca/2016/09/19/thousands-of-ontario-licence-plates-deemed-defective/|access-date=18 January 2017}}</ref>
+
+<gallery>
+File:Damaged Ontario DCDM236.JPG|Example of early deterioration of a front Ontario licence plate.
+File:Damaged Ontario Number Plate.JPG|Early deterioration on a rear plate. The aluminum base is visible where the reflective layer has fallen off.
+File:Defective Ontario Plate Front.jpg|Close-up view of early damage to a front licence plate of an Ontario car. The reflective layer can be seen de-laminating and separating from the metal base.
+File:Defective Ontario Plate Rear.jpg|Close-up view of similar damage to the rear plate of the same car, indicating this problem is not confined to the front plates. 
+File:Ontario corrosion 695sya.png|For comparison purposes, corrosion on this plate is due to age and wear, rather than a defective substrate.
+</gallery>
+
+=== Illegality of licence plate covers ===
+Many vehicle owners place clear plastic covers over their licence plates to protect their already defective licence plates (2012) from premature deterioration.<ref name=":0">{{Cite news|title=Why was I ticketed for a plastic covering over a licence plate?|url=https://www.theglobeandmail.com/drive/mobility/article-why-was-i-ticketed-for-a-plastic-covering-over-a-licence-plate/|access-date=2020-07-02}}</ref> According to Ontario's [[Highway Traffic Act]] Section 13.2, licence plate covers are considered an obstruction and are illegal in the province of Ontario.<ref name=":1">{{Cite book|last=Ontario.|url=http://worldcat.org/oclc/695599257|title=Highway Traffic Act.|publisher=Queen's Printer|chapter=13.2|oclc=695599257}}</ref> In the rare event that the officer chooses to issue the citation, the offence carries a minimum fine of $85.<ref>{{Cite book|last=Ontario.|url=http://worldcat.org/oclc/695599257|title=Highway Traffic Act.|publisher=Queen's Printer|chapter=13.4|oclc=695599257}}</ref> On the contrary, drivers operating a motor vehicle with defective (i.e. unreadable) number plates can be charged with the same offence.<ref name=":1" /> This has left defective number plate owners with little choice but to obtain replacement plates from the MTO, orders which have taken months (or over six months for customised plates) to process.<ref name=":0" />
+
+Several motorists sought other solutions to prevent their number plates from deterioration, such as placing the front plate on the dashboard instead of affixing it to the front bumper.<ref name=":2">{{Cite web|last=Foran|first=Pat|date=2020-03-12|title=Driver gets $110 ticket for not having front licence plate|url=https://www.ctvnews.ca/toronto/article/driver-gets-110-ticket-for-not-having-front-licence-plate/|access-date=2020-07-02|website=Toronto|language=en}}</ref> Others have omitted the front licence plate altogether since it is not uncommon to see out-of-province vehicles on Ontario roadways (many jurisdictions in North America, including neighbouring [[Quebec]] and [[Michigan]], do not require front plates). In most cases, vehicle owners who attempted the aforementioned solutions were convicted of the same offence (HTA section 13.2).<ref name=":2" />
+
+===Defective plates from 2020===
+[[File:Defectiveplate.jpeg|thumb|Recalled 2020 plate design that is difficult to read at night.]]
+On 15 February 2020, two weeks after the province began issuing plates with the new design, off-duty [[Kingston Police]] Sergeant Steve Koopman posted a photo on [[Twitter]] showing a vehicle with the new plate at night, stating that "they're virtually unreadable at night".<ref name="Stone">{{cite news|last=Stone|first=Laura|date=2020-02-18|title=Ontario facing criticism over visibility problems of new blue licence plates|newspaper=[[The Globe and Mail]]|url=https://www.theglobeandmail.com/canada/article-ontario-facing-criticism-over-visibility-of-new-blue-licence-plates/|access-date=2020-02-19}}</ref> Government spokesperson [[Lisa Thompson (politician)|Lisa Thompson]], the [[Ministry of Government and Consumer Services (Ontario)|Minister of Government and Consumer Services]], stated in a news conference that the new design had undergone a "rigorous testing program", that the government had consulted with "key stakeholders" including law enforcement, and that the plates were not problematic.<ref name="Stone" /><ref name="Lucs">{{cite news|last=Lucs|first=Ieva|date=2020-02-19|title=Toronto's photo radar cameras having trouble reading new Ontario licence plates|url=https://www.cbc.ca/news/canada/toronto/ontario-licence-plate-toronto-photo-radar-1.5467640|access-date=2020-02-19}}</ref> She also criticized the earlier "Liberal plates",<ref name="Stone" /> referring to a batch of plates issued during a previous government that peeled. Thompson stated that manufacturing and quality control are the responsibility of 3M.<ref name="Lucs" /> The redesigned plates also caused problems for [[Traffic enforcement camera|photo radar cameras]], which have difficulty reading the name of the jurisdiction. The name is rendered in a smaller [[Point (typography)|font size]] than earlier plates.<ref name="Lucs" /> The president of the [[Toronto Police Association]] stated that the organization had not been consulted on the new design.<ref name="Stone" />
+
+The [[Doug Ford|Ford]] Government had insisted for days that there was not an issue with the plates; however, on February 20, it announced that 3M would make an "enhanced licence plate" to be available in less than three weeks.<ref>{{cite news|date=February 20, 2020|title=Days after denying there was a problem, Ontario government says it will replace defective new licence plates|newspaper=National Post |url=https://nationalpost.com/news/ontario-will-need-to-recall-defective-licence-plates-cabinet-minister-says|publisher=nationalpost.com|last1=Jeffords |first1=Shawn }}</ref> On February 28, the government announced that the distribution of the defective plates would cease on March 4, that the enhanced plates would be ready by March 16 at "no cost to Ontario taxpayers", those who had already been issued the new plates will receive the enhanced version in the mail, and until the enhanced plates were ready, the government switched back to the previous plate design.<ref name="enhanced">{{cite web |date=February 28, 2020 |title=Update on New Enhanced Licence Plates |url=https://news.ontario.ca/mgs/en/2020/02/update-on-new-enhanced-licence-plates.html |publisher=Province of Ontario}}</ref><ref>{{cite web|date=February 28, 2020|title=Ontario government will go back to the old licence plates while waiting for a fix to plates that are hard to read|url=https://www.thestar.com/politics/provincial/2020/02/28/ontario-government-will-go-back-to-the-old-licence-plates-while-waiting-for-a-fix-to-plates-that-are-hard-to-read.html|work=thestar.com}}</ref> This design was later scrapped on May 6.<ref name=scrapped/>
+
+===Sticker renewal fee===
+On February 22, 2022, the Ontario Government eliminated licence plate renewal fees and the requirement to have a licence plate sticker for passenger vehicles, light-duty trucks, motorcycles and mopeds, effective March 13, 2022.<ref>{{cite web|url=https://news.ontario.ca/en/release/1001639/ontario-eliminating-licence-plate-renewal-fees-and-stickers|title=Ontario Eliminating Licence Plate Renewal Fees and Stickers|publisher=news.ontario.ca|date=February 22, 2022}}</ref>
+
+==See also==
+* [[Canadian veteran vehicle registration plates]]
+* [[Canadian licence plate designs and serial formats]]
+* [[Vehicle registration plates of Canada]]
+
+==Notes==
+{{notefoot}}
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.ontario.ca/laws/regulation/900628 R.R.O. 1990, Regulation 628] which prescribes vehicle registration
+* [https://www.ontario.ca/laws/statute/90h08 Highway Traffic Act, R.S.O. 1990, c. H.8]
+* [http://www.15q.net/on.html Ontario licence plates 1969-present]
+* {{cite web|title=ONTARIO License Plate History|url=http://www.canplates.com/ontario.html|website=Canplates|first=Joseph P.|last=Sallmen|url-status=dead|archive-date=24 November 2001|archive-url=https://web.archive.org/web/20011124182002/http://www.canplates.com/ontario.html|access-date=3 August 2015}}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:1903 establishments in Ontario]]
+[[Category:1903 introductions]]
+[[Category:Vehicle registration plates of Canada|Ontario]]
+[[Category:Transport in Ontario]]
+[[Category:Ontario transport-related lists]]

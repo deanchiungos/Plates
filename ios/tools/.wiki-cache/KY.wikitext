@@ -1,0 +1,777 @@
+{{short description|Kentucky vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Bluegrass State<br>In God We Trust (alternative since 2011)
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = A1B234<br />ABC123
+| current_start_date = {{Start date|2020|09|21}}
+| designer = 
+| issuer = [[Kentucky Transportation Cabinet]], Division of Motor Vehicle Licensing
+| manufacturer = Roederer Correctional Complex, La Grange, Kentucky
+| start_date = {{Start date|1910|03|23}}
+}}
+The U.S. state of [[Kentucky]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plates]] in 1910. Plates are currently issued by the [[Kentucky Transportation Cabinet]] through its Division of Motor Vehicle Licensing. Only rear plates have been required since 1944.
+
+==Passenger baseplates==
+===1910 to 1974===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]], and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|spell=in}} tall by {{convert|12|in|spell=in}} wide, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref>
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1910-11 Kentucky license plate.jpg|150px]]
+|1910–11
+|White serial on black porcelain plate; vertical "KY" at right, above circle containing 'B'
+|''none'' 
+|1234
+|1 to approximately 3200
+|Front and rear plates issued; this practice continued through 1943.
+|-
+|[[File:1911-12 Kentucky license plate.jpg|150px]]
+|1911–12
+|White serial on black porcelain plate; vertical "KY" at right, above circle containing 'L'
+|''none'' 
+|1234
+|4001 to approximately 8300
+|
+|-
+|[[File:1912-13 Kentucky license plate.jpg|150px]]
+|1912–13
+|White serial on black porcelain plate; white horizontal stripes at top and bottom; vertical "KY" at right, above square containing 'M'
+|''none'' 
+|1234
+|1 to approximately 8000
+|
+|-
+|[[File:1913-14 Kentucky license plate.jpg|150px]]
+|1913–14
+|White serial on black porcelain plate; red horizontal stripes at top and bottom; vertical "KY" at right, above diamond containing red 'G'
+|''none'' 
+|12345
+|10001 to approximately 19000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Embossed black serial on white plate; "KY 1914" at right
+|''none'' 
+|12345
+|20001 to approximately 26400
+|First dated and embossed plate. Issued only from June through December 1914.
+|-
+|[[File:1915 Kentucky license plate.jpg|150px]]
+|1915
+|Embossed red serial on white plate; "KY 1915" at right
+|''none'' 
+|12345
+|1 to approximately 19500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed white serial on blue plate; "KY 1916" at right
+|''none'' 
+|12345
+|1 to approximately 29500
+|
+|-
+|[[File:1917 Kentucky license plate.jpg|150px]]
+|1917
+|Embossed black serial on white plate with border line; "KY. 1917" at right
+|''none'' 
+|12345
+|1 to approximately 47500
+|
+|-
+|[[File:1918 Kentucky license plate.jpg|150px]]
+|1918
+|Embossed yellow serial on black plate with border line; "KY. 1918" at right
+|''none'' 
+|12345
+|1 to approximately 64000
+|
+|-
+|[[File:1919 Kentucky license plate.jpg|150px]]
+|1919
+|Embossed white serial on green plate with border line; "KY. 1919" at right
+|''none'' 
+|12345
+|1 to approximately 81000
+|
+|-
+|[[File:1920 Kentucky license plate.jpg|150px]]
+|1920
+|Embossed black serial on white plate with border line; "KY. 1920" at right
+|''none'' 
+|12345
+|1 to approximately 96000
+|
+|-
+|[[File:1921 Kentucky license plate.jpg|150px]]
+|1921
+|Embossed white serial on brown plate with border line; "KY. 1921" at right
+|''none'' 
+|123456
+|1 to approximately 157000
+|
+|-
+|[[File:1922 Kentucky license plate.jpg|150px]]
+|1922
+|Embossed black serial on orange plate with border line; "KY. 1922" at right
+|''none'' 
+|123456
+|1 to approximately 167000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed blue serial on gray plate with border line; "KY. 1923" at right
+|''none'' 
+|123456
+|1 to approximately 185000
+|
+|-
+|[[File:Kentucky 1924 license plate - Number 343090.jpg|150px]]
+|1924
+|Embossed white serial on dark blue plate with border line; "KY 1924" at right
+|''none'' 
+|123456
+|
+|
+|-
+|[[File:1925 Kentucky license plate.jpg|150px]]
+|1925
+|Embossed white serial on green plate with border line; "KENTUCKY·1925" centered at bottom
+|''none'' 
+|123-456
+|
+|First use of the full state name.
+|-
+|[[File:1926 Kentucky license plate.jpg|150px]]
+|1926
+|Embossed white serial on maroon plate with border line; "KENTUCKY·1926" centered at bottom
+|''none'' 
+|123-456
+|
+|
+|-
+|[[File:1927 Kentucky license plate.jpg|150px]]
+|1927
+|Embossed white serial on blue plate. Plate divided into four sections, each surrounded by border lines, with "KY", county name and "27" in top section and serial numbers in bottom left and bottom right sections
+|''none'' 
+|12 34<br>12 345
+|Began at 1 in each county
+|First state-issued passenger plate in the U.S. to feature the name of the county of issuance.
+|-
+|[[File:1928 Kentucky license plate.jpg|150px]]
+|1928
+|Embossed white serial on green plate. Plate divided into four sections, each surrounded by border lines, with "KY. 28" in bottom center section, county name in top section and serial numbers in bottom left and bottom right sections
+|''none'' 
+|12 34<br>12 345
+|Began at 1 in each county
+|
+|-
+|[[File:1929 Kentucky front license plate.jpg|150px]] [[File:1929 Kentucky rear license plate.jpg|150px]]
+|1929
+|Pair of plates with blue base with white embossed lettering and border.<br>Front: top of plate emblazoned with "19 KENTUCKY 29" with county name at bottom. Serial numbers in center separated by "FRONT" in small letters in middle.<br>Rear: top of plate emblazoned with "19 KENTUCKY 29" with "FOR" in center of plate between serial numbers and "PROGRESS" emblazoned at bottom.
+|"FOR PROGRESS" on rear plates (see left)
+|123-456
+|1 to 850-000 (see right)
+|A block of serials was assigned to each county in alphabetical order; this practice continued through 1936.<ref name="allaboutlicenseplatesKY">{{cite web |last=Tanner |first=Eric N. |title=Kentucky License Plates |url=http://www.allaboutlicenseplates.com/athome.asp?State=Kentucky |publisher=allaboutlicenseplates.com |access-date=December 3, 2015 |archive-date=December 8, 2015 |archive-url=https://web.archive.org/web/20151208150414/http://www.allaboutlicenseplates.com/athome.asp?State=Kentucky |url-status=dead }}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Pair of plates, each with white base with red embossed lettering and border.<br>Front: top of plate emblazoned with "19 KENTUCKY 30" with county name at bottom and serial numbers in center.<br>Rear: top of plate emblazoned with "19 KENTUCKY 30" with serial in center of plate and "FOR PROGRESS" emblazoned at bottom.
+|"FOR PROGRESS" on rear plates (see left)
+|123-456
+|1 to 850-000
+|
+|-
+|[[File:1931 Kentucky license plates.jpg|150px]] 
+|1931
+|Embossed white serial on green plate with border line; "19 KENTUCKY 31" (on front plates) or "KY", county name and "31" (on rear plates) at bottom
+|''none''
+|123-456
+|1 to 850-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:1932 Kentucky license plate.jpg|150px]]
+|1932
+|Embossed white serial on maroon plate with border line; "19 KENTUCKY 32" (on front plates) or "KY", county name and "32" (on rear plates) at bottom
+|''none''
+|123-456
+|1 to 850-000
+|
+|-
+|[[File:1933 KY passenger plate.jpg|150px]]
+|1933
+|Embossed white serial on green plate with border line; "KY", county name and "33" at bottom
+|''none''
+|123-456
+|1 to 850-000
+|
+|-
+|[[File:1934 Kentucky license plate.jpg|150px]]
+|1934
+|Embossed black serial on white plate with border line; "KY", county name and "34" at top
+|''none''
+|123-456
+|1 to 850-000
+|
+|-
+|[[File:1935 Kentucky license plate.jpg|150px]]
+|1935
+|Embossed black serial on yellow plate with border line; "KY", county name and "35" at bottom
+|''none''
+|123-456
+|1 to 850-000
+|
+|-
+|[[File:1936 Kentucky license plate.jpg|150px]]
+|1936
+|Embossed silver serial on black plate with border line; "KY", county name and "36" at bottom
+|''none''
+|123-456
+|1 to 850-000
+|
+|-
+|[[File:1937 Kentucky passenger license plate.jpg|150px]]
+|1937
+|Embossed dark blue serial on white plate with border line; "KENTUCKY-'37" and county name centered at top and bottom respectively
+|''none''
+|12345<br>A1234<br>1A234<br>12A34<br>123A4
+|Issued in blocks by county
+|
+|-
+|[[File:1938 Kentucky license plate.jpg|150px]]
+|1938
+|Embossed green serial on white plate with border line; "KENTUCKY-'38" and county name centered at top and bottom respectively
+|''none''
+|12345<br>A1234<br>1A234<br>12A34<br>123A4
+|Issued in blocks by county
+|
+|-
+|[[File:1939 Kentucky license plate.jpg|150px]]
+|1939
+|Embossed white serial on green plate with border line; "KENTUCKY-'39" and county name centered at top and bottom respectively
+|''none''
+|12345<br>A1234<br>1A234<br>12A34<br>123A4
+|Issued in blocks by county
+|
+|-
+|[[File:1940 Kentucky license plate.jpg|150px]]
+|1940
+|Embossed red serial on white plate with border line; "KENTUCKY-'40" and county name centered at top and bottom respectively
+|''none''
+|12345<br>A1234<br>1A234<br>12A34<br>123A4
+|Issued in blocks by county
+|
+|-
+|[[File:1941 Kentucky license plate.JPG|150px]]
+|1941
+|Embossed black serial on silver plate with border line; "KENTUCKY-'41" and county name centered at top and bottom respectively
+|''none''
+|12345<br>A1234<br>1A234<br>12A34<br>123A4
+|Issued in blocks by county
+|
+|-
+|[[File:1942 KY passenger plate.jpg|150px]]
+|{{nowrap|1942–43}}
+|Embossed silver serial on black plate with border line; "KENTUCKY-'42" and county name centered at top and bottom respectively
+|''none''
+|12345<br>A1234<br>1A234<br>12A34<br>123A4
+|Issued in blocks by county
+|{{nowrap|Revalidated for 1943}} with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1944 Kentucky passenger license plate.jpg|150px]]
+|1944–45
+|Embossed yellow serial on black plate with border line; "KENTUCKY-'44" and county name centered at top and bottom respectively
+|''none''
+|12345<br>A1234<br>1A234<br>12A34<br>123A4
+|Issued in blocks by county
+|Only rear plates issued; this practice continues today. Revalidated for 1945 with windshield stickers.
+|-
+|[[File:1946 Kentucky license plate.JPG|150px]]
+|1946–47
+|Embossed silver serial on black plate with border line; "KENTUCKY-'46" and county name centered at top and bottom respectively
+|''none''
+|123-456
+|Issued in blocks by county
+|Revalidated for 1947 with windshield stickers.
+|-
+|[[File:1948 Kentucky passenger license plate.jpg|150px]]
+|1948
+|Embossed orange serial on unpainted aluminum plate; "KENTUCKY-'48" and county name centered at top and bottom respectively
+|''none''
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1949 KY passenger plate.jpg|150px]]
+|1949
+|Embossed black serial on waffle-textured silver plate; "KENTUCKY-'49" and county name centered at top and bottom respectively
+|''none''
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1950 Kentucky passenger license plate.png|150px]]
+|1950
+|Embossed white serial on waffle-textured green plate; "KENTUCKY-'50" and county name centered at top and bottom respectively
+|''none''
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1951 Kentucky license plate 562-695.jpg|150px]]
+|1951–52
+|Embossed black serial on silver plate; county name centered at bottom
+|"TOUR KENTUCKY-'51" centered at top
+|123-456
+|Issued in blocks by county
+|Revalidated for 1952 with windshield stickers, due to metal conservation for the [[Korean War]].
+|-
+|[[File:1953 Kentucky license plate.JPG|150px]]
+|1953
+|Embossed white serial on dark blue plate; county name centered at bottom
+|"TOUR KENTUCKY-'53" centered at top
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1954 Kentucky license plate.JPG|150px]]
+|1954
+|Embossed dark blue serial on white plate; county name centered at bottom
+|"TOUR KENTUCKY-'54" centered at top
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1955 Kentucky license plate.jpg|150px]]
+|1955
+|Embossed white serial on dark blue plate; county name centered at bottom
+|"TOUR KENTUCKY-'55" centered at top
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1956 Kentucky passenger license plate.jpg|150px]]
+|1956
+|Embossed dark blue serial on white plate; "19" at top left and "56" at top right; county name centered at bottom
+|"TOUR KENTUCKY" centered at top
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1957 Kentucky passenger plate.jpg|150px]]
+|1957
+|Embossed white serial on dark blue plate; "19" at top left and "57" at top right; county name centered at bottom
+|"TOUR KENTUCKY" centered at top
+|123-456<br>{{nowrap|A12-345}}
+|Issued in blocks by county
+|One-letter, five-digit serials introduced in counties that had exhausted their all-numeric allocations.
+|-
+|[[File:1958 Kentucky license plate.png|150px]]
+|1958
+|Embossed dark blue serial on white plate; "19 KENTUCKY 58" at top; county name centered at bottom
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1959 Kentucky license plate.JPG|150px]]
+|1959
+|Embossed white serial on dark blue plate; "19 KENTUCKY 59" at top; county name centered at bottom
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1960 Kentucky license plate.JPG|150px]]
+|1960
+|As 1958 base, but with "60" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1961 Kentucky license plate 299-404.jpg|150px]]
+|1961
+|As 1959 base, but with "61" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1962 Kentucky license plate.JPG|150px]]
+|1962
+|As 1958 base, but with "62" at top right; border line added on later plates
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1963 Kentucky license plate.JPG|150px]]
+|1963
+|Embossed white serial on dark blue plate with border line; "19 KENTUCKY 63" at top; county name centered at bottom
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1964 Kentucky license plate.JPG|150px]]
+|1964
+|Embossed dark blue serial on white plate with border line; "19 KENTUCKY 64" at top; county name centered at bottom
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1965 Kentucky license plate 561-915.jpg|150px]]
+|1965
+|As 1963 base, but with "65" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1966 Kentucky license plate.JPG|150px]]
+|1966
+|As 1964 base, but with "66" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1967 Kentucky license plate K77-294.jpg|150px]]
+|1967
+|As 1963 base, but with "67" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1968 Kentucky license plate.JPG|150px]]
+|1968
+|As 1964 base, but with "68" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1969 Kentucky license plate.jpg|150px]]
+|1969
+|As 1963 base, but with "69" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1970 Kentucky license plate.jpg|150px]]
+|1970
+|As 1964 base, but with "70" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1971 Kentucky license plate 39-224.jpg|150px]]
+|1971
+|As 1963 base, but with "71" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1972 Kentucky license plate.jpg|150px]]
+|1972
+|As 1964 base, but with "72" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1973 Kentucky license plate.jpg|150px]]
+|1973
+|As 1963 base, but with "73" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:1974 Kentucky license plate.jpg|150px]]
+|1974
+|As 1964 base, but with "74" at top right
+|''none''
+|123-456<br>A12-345
+|Issued in blocks by county
+|
+|}
+
+===1975 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1975-76 Kentucky license plate.jpg|150px]]
+|1975–77
+|Embossed white serial on dark blue plate with border line; "19 KENTUCKY 75" at top; county name centered at bottom
+|''none''
+|{{nowrap|ABC-123}}
+|Issued in blocks by county
+|Revalidated for 1976 and 1977 with stickers. Letters I, O, Q and U not used in serials; this practice continues today.<ref name="allaboutlicenseplatesKY"/>
+|-
+|[[File:Kentucky license plate, 1977–1983 series with February 1982 sticker (Jefferson County).png|150px]]
+|1977–83
+|Embossed dark blue serial on white plate; "KY" at top left and top right; debossed box for expiration sticker centered at top; county-name sticker centered at bottom
+|''none''
+|ABC-123
+|AAA-000 to approximately GFZ-999
+|Monthly staggered registration introduced.
+|-
+|[[File:1987 Kentucky license plate.jpg|150px]]
+|1983–88
+|Embossed white serial on dark blue plate; "KENTUCKY" and county name centered at top and bottom respectively
+|''none''
+|ABC-123
+|JAA-000 to approximately RNV-999
+|
+|-
+|[[File:Kentucky license plate, 1988-1997.png|150px]]
+|1988–97
+|Embossed blue serial on white plate; twin spires of [[Churchill Downs]] racetrack screened in blue at the top and a [[mare]] and foal screened in light blue in the center; "Kentucky" screened in blue centered between spires; county name on blue sticker between state name and serial
+|"Bluegrass State" screened in blue centered at bottom
+|ABC&nbsp;123
+|TAA 000 to ZZZ&nbsp;999; AAA&nbsp;000 to approximately EBP&nbsp;999
+|Mare and foal based on the photo ''[[The Soul of a Horse]]'', taken by [[Peter Thomann]]. The base was withdrawn when Thomann threatened to sue for copyright infringement.
+|-
+|[[File:Kentucky License Plate 1998.jpg|150px]]
+|1997
+|Embossed blue serial on white plate; "KENTUCKY" and county name embossed in blue centered at top and bottom respectively
+|''none''
+|ABC-123
+|EBR-000 to approximately FAE-999
+|Interim plates based on truck plates of the time, with county name in place of weight class.
+|-
+| 
+|January 1998&nbsp;– November 2002
+|Embossed blue serial on graphic plate with light blue sky, white state-shaped cloud and green rolling hills; "Kentucky" screened in black centered at top; county name on green sticker in debossed box centered at bottom 
+|"BLUEGRASS STATE" screened in black centered below state name
+|123&nbsp;ABC
+|000 AAA to approximately 700&nbsp;HYJ
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|November 2002&nbsp;– January 2003
+|Embossed dark blue serial on white plate; "KENTUCKY" embossed in dark blue centered at top; county name on green sticker in debossed box centered at bottom
+|''none''
+|123&nbsp;ABC
+|701 HYJ to 999&nbsp;HZZ
+|Interim plates manufactured when stocks of cloud plates ran out before the smiling sun base (below) was introduced.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2003&nbsp;–<br>July 31, 2005
+|Embossed dark blue serial on graphic plate with blue, white and red gradient sky, green rolling hills, and an [[Anthropomorphism|anthropomorphic]] rising yellow sun with a red smile; "KENTUCKY" screened in white centered above serial; county name on green sticker in debossed box centered at bottom
+|"The Bluegrass State" and "It's that friendly." screened in blue above and below state name respectively
+|123&nbsp;ABC
+|000 JAA to approximately 999&nbsp;PSX
+|Awarded "Plate of the Year" for best new license plate of 2003 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Kentucky has been so honored. Despite the honor, the plates were widely derided and defaced by residents.<ref>{{cite web|url=https://www.nbcnews.com/id/wbna8598104 |title=Kentucky Frowns on Smiley License Plates |publisher=NBC News |date=July 16, 2005 |access-date=October 4, 2011}}</ref>
+|-
+|[[File:Kentucky811BMRPlate.jpg|150x150px]]
+|August&nbsp;1, 2005<ref>{{cite web |url=http://migration.kentucky.gov/Newsroom/agovernor/050719license.htm |title=Governor Ernie Fletcher unveils new Unbridled Spirit license plate |publisher=Kentucky.gov |date=July 19, 2005 |access-date=January 10, 2015 |archive-date=October 22, 2014 |archive-url=https://web.archive.org/web/20141022113205/http://migration.kentucky.gov/newsroom/agovernor/050719license.htm |url-status=dead }}</ref> – June<br />2008
+|rowspan="3"|Embossed dark blue serial on white and light blue gradient plate; state icon screened in the center; screened blue and red Kentucky Tourism logo centered above serial; county name on blue sticker in debossed box centered at bottom
+|rowspan="3"|"BLUEGRASS STATE" and "UNBRIDLED SPIRIT" screened above and below Kentucky Tourism logo respectively
+|rowspan="2"|123&nbsp;ABC
+|000 AAA to approximately 900&nbsp;JCB
+|
+|-
+| [[File:Kentucky050MDTPlate.jpg|frameless|150x150px]]
+|June 2008&nbsp;– late 2019
+|901 JCB to 999&nbsp;ZZZ
+|rowspan="2"|Narrower serial [[Die (manufacturing)|die]]s. 'S' series not used in the 123 ABC format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|late 2019&nbsp;– September 2020
+|ABC&nbsp;123
+|AAA 000 to ATE&nbsp;999; BAA&nbsp;000 to approximately BCD&nbsp;999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2011&nbsp;– September 2020
+|As above, but with smaller Kentucky Tourism logo
+|As above, plus "In God We Trust" screened in blue centered between logo and serial
+|123&nbsp;ABC<br>ABC&nbsp;123
+|Taken from standard allocation
+|No-cost alternative plate; first issues were in the LRG series of the 123 ABC format. 
+|-
+|rowspan=2|
+|September 2020&nbsp;–August 2021
+|rowspan=2|Flat, digitally printed dark blue serial on white and light blue gradient plate; state icon screened on the left; screened blue "KENTUCKY" centered above serial, with "BLUEGRASS STATE" screened above that in smaller font; county name on blue sticker in box centered at bottom; serial is not separated in middle, as with past designs
+|rowspan=2|
+|ABC123
+|ATF000 to AZZ999; BCE000 to approximately CBZ999
+|rowspan=2|
+|-
+|August 2021 – present
+|A1B234 
+|A0A000 to W1C050 {{small|(as of Mar 10, 2026)}}<ref name="licenseplates.cc">{{cite web |title=Kentucky License Plates |url=https://licenseplates.cc/KY |website=The High Road |access-date=29 April 2024}}</ref>
+|-
+|
+|September 2020&nbsp;– Present
+|As above, but with county sticker box moved down slightly
+|As above, plus "IN GOD WE TRUST" screened in blue centered above county sticker
+|ABC123 A1B234
+|Taken from standard allocation
+|
+|}
+
+==Special plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Description
+!Serial format
+!Notes
+|-
+! colspan="6" |"Nature's Finest"
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Nature's Finest – [[Viceroy (butterfly)|Viceroy butterfly]]
+|2004-2008,
+2013-2025
+|Custom plate featuring a large viceroy butterfly on the left and a smaller one of the right.  On the top is the familiar Kentucky Tourism logo and on the bottom are the words "Nature's Finest."
+|00 000,
+A0 000,
+0000AA,
+A0A000
+|First run from 2004 to 2008, brought back in 2013 with a new serial format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Nature's Finest – [[Wren]]
+|
+|12345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Nature's Finest - [[Cumberland Falls]]
+|
+|Custom plate featuring the Cumberland Falls, a state park in Corbin, Kentucky.  On the top is the familiar Kentucky Tourism logo and on the bottom are the words "Nature's Finest."
+|
+|Discontinued
+|-
+|
+|
+|
+|
+|
+|
+|-
+! colspan="6" |'''"Share The Road"'''
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Bicycle law in the United States|Share The Road]]
+|2006-
+|Custom plate featuring two bicyclists and a runner on a blue background.  A portion of proceeds goes to promote safety and education for both cyclists and pedestrians in the Commonwealth.
+|0000AA, A0A000
+|Flat printed beginning 2020
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Kentucky Motorcycle Plate.jpg|150x150px]]
+|rowspan="2"|Motorcycle
+|{{nowrap|2003–09}}
+|rowspan="2"|Embossed dark blue serial on white plate; "KENTUCKY" and "MOTORCYCLE" centered at top and bottom respectively
+|1234A
+|0000A to 9999Z
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009–<br />present
+|AB123
+|AA000 to JV001 (as of October 23, 2020)
+|}
+
+== Government/Official plates ==
+{| class="wikitable"
+|+
+!Image
+!Type
+!Design
+!Serial Format
+!Notes
+|-
+|
+|Official Government Units or Emergency Ambulances
+|Embossed black serial on white background.  "Kentucky" screened at center top and "OFFICIAL" screen at center bottom.  A black-and-white seal of the Commonwealth of Kentucky resides at the left side.
+|A1234
+|Local agencies may occasionally cover the Commonwealth seal with a sticker of their own organization's logo/seal.
+|-
+|
+|Congressional
+|
+|
+|
+|-
+|
+|Judiciary
+|
+|
+|
+|-
+|
+|State Senator
+|
+|
+|
+|-
+|
+|State Representative
+|
+|
+|
+|}
+
+==External links==
+*[http://www.15q.net/ky.html Kentucky license plates 1969-present]
+
+==References==
+{{Reflist}}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Kentucky}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Kentucky}}
+[[Category:Vehicle registration plates of the United States by state or territory|Kentucky]]
+[[Category:Transportation in Kentucky]]
+[[Category:Kentucky transportation-related lists]]

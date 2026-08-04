@@ -1,0 +1,1265 @@
+{{Short description|Illinois vehicle license plates}}
+{{Overly detailed|date=May 2019}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = 
+| nickname =
+| slogan_label = Slogan
+| slogan = Land of Lincoln
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = AB 12345
+| current_start_date = {{Start date|2017|01|01}}
+| designer = Illinois Secretary of State staff
+| issuer = [[Illinois Secretary of State]]
+| manufacturer = Macon Resources, Inc., [[Decatur, Illinois]]
+| start_date = {{Start date|1911|07|01}}<br>(pre-state plates from July 1, 1907 through June 30, 1911)
+}}
+The U.S. state of [[Illinois]] first required its residents to register their [[motor vehicle]]s in 1907. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1911, when the state began to issue plates. {{As of|2023}}, plates are issued by the [[Illinois Secretary of State]].
+
+Front and rear plates are required on most vehicle types, with the exception of motorcycles, motor-driven cycles, and trailers. Plates were issued annually until 1979; multi-year plates have been issued ever since. Plates belong to vehicle owners, so they can be transferred from one vehicle to another.
+
+==Early history: 1907–1939==
+Automobile owners in Illinois were first required to register their vehicles with the [[Illinois Secretary of State|Secretary of State's office]] in 1907, paying a one-time registration fee of $2. Registrants were issued a numbered [[aluminum]] disc to place on their dashboard, but they had to provide their own license plates. Annual registration commenced in 1909.
+
+The state began to issue license plates in 1911. Front and rear plates were required each year, along with an aluminum dashboard disc whose number matched the serial on the plate. The legislation authorizing the state issuance of license plates also provided for the registration and plating of [[motorcycle]]s, and issued special licenses and plates to mechanics and chauffeurs.
+
+Serials were all-numeric and originally ran to five digits. When 99999 was reached in 1914 and 1915, serials with one letter and four digits were issued. Six-digit all-numeric serials were introduced in 1916, followed in 1925 by seven-digit serials. Aluminum dashboard discs were discontinued after 1917.
+
+[[Truck]]s received their own plates for the first time in 1920. Serials on these plates were all-numeric until 1930, when weight codes were introduced. [[Trailer (vehicle)|Trailer]]s received their own plates from 1924 onwards.
+
+In 1927, the state issued its first graphic license plate, featuring an embossed state shape to the right of the serial.
+
+==Mid-century history: 1940–1978==
+With the entry of the United States into [[World War II]], and the subsequent introduction of measures to conserve metal for the war effort, Illinois manufactured its license plates for 1943 from wood-based [[fiberboard]] instead of steel. This practice continued each year up to and including 1948, despite the war ending in 1945 with the [[surrender of Japan]]. The state reverted to manufacturing its plates from steel in 1949, although the 1950 and 1951 plates were instead manufactured from [[aluminum]].<ref>{{cite magazine |last1=Balsamo |first1=George |last2=Williams |first2=Daryl |date=June 1992 |title=Illinois - Land of Lincoln |magazine=ALPCA Newsletter |volume=38 |issue=3 |location=Columbus, Ohio |publisher=[[Automobile License Plate Collectors Association]] |page=72}}</ref>
+
+License plates were placed under the jurisdiction of the [[Illinois Secretary of State|Secretary of State]] in 1953. The 1954 plates were the first to feature the "Land of Lincoln" slogan, which continues to be used today.
+
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Illinois license plate that fully complied with these standards: the 1955 (dated 1956) issue was 6 inches in height by 12 inches in width, but had non-standard mounting holes.
+
+==Multiyear baseplates: 1979–present==
+In late 1966 the implementation of five year license plates, which would use renewal tabs annually, was proposed. Their use would also aid police in identifying drivers because the books that listed all license plate numbers were not available until halfway through the year. With fewer plate numbers changing, the books would be relevant for longer periods of time.<ref>{{cite news |title=7 Anti-Crime Bills Drawn Up by Commission |work=Chicago Tribune |date=October 13, 1966 |page=18 }}</ref> [[Paul Powell (politician)|Paul Powell]], the Illinois Secretary of State, rejected the proposal stating that any cost savings would be minimized by additional record keeping costs. He also mentioned that some multiyear plates used in other states were not satisfactory.<ref>{{cite news |last=Howard |first=Robert |date=March 4, 1967 |title=5-Year Auto Plate Plan Is Hit By Powell  |work=Chicago Tribune }}</ref> Powell further reiterated his position the following month by mentioning a University of Illinois study which recommended the annual change in license plate colors as an incentive for motorists to pay the annual registration cost, and that the initial cost of the longer term plates would be much more than regular plates.<ref>{{cite news |title=Powell Tells Opposition to 5-Year Plates |work=Chicago Tribune |date=April 19, 1967 |page=11 }}</ref> The University of Illinois study mentioned by Powell was conducted in 1957 and 1958, and also recommended the addition of letters to the Illinois license plate.<ref>{{cite news |last=Foust |first=Hal |date=October 27, 1958 |title=U. of I. Study Asks Changes In Auto Licenses |work=Chicago Tribune |page=C10 }}</ref> In 1969 Powell backed a plan to implement two-year plates, which would have cost twice the annual registration price, but the plan did not pass the legislature.<ref>{{cite news |last=Howard |first=Robert |date=April 15, 1969 |title=Powell Seeks 2-Year Basis on Car Plates |work=Chicago Tribune |page=14 }}</ref>
+
+In January 1975 it was recommended that Illinois retain the practice of issuing annual license plates by an advisory committee to Secretary of State [[Michael Howlett]]. Two year license plates and a staggered registration system were studied by the committee, but both proposals were rejected.<ref>{{cite news |title=Uniform fee urged in auto plate study |work=Chicago Tribune |date=January 2, 1975 |page=2 }}</ref> Despite this recommendation Howlett appointed a task force in April 1975 to study how to implement multiyear plates.<ref>{{cite news |title=Multiyear car plate system is studied |work=Chicago Tribune |date=May 8, 1975 |page=A3 }}</ref> At the conclusion of the study in September 1975 Howlett stated he would propose to the legislature that Illinois begin issuing multiyear plates validated by an annual renewal sticker. The plates were expected to last five years, and they were to be made of aluminum stock that was twice as thick as the current plates in order to make them more durable.<ref>{{cite news |last=Elmer |first=John |date=September 2, 1975 |title=Howlett seeks 5-year plates |work=Chicago Tribune |page=A8 }}</ref> With the 1976 license plates already in production, and the 1977 license plate contract already awarded, the implementation of a multiyear license plate system was delayed.
+
+===Issue of 1979===
+Legislation to implement a multiyear license plate was finally proposed in 1977. The bill to institute five-year plates passed the House Motor Vehicle Committee on March 16, 1977, and the state House on March 29, 1977. [[Alan J. Dixon|Alan Dixon]], the Secretary of State, spoke in favor of passage of the bill. The Senate Transportation Committee passed the bill on April 28, 1977, and the full Senate on June 10, 1977. The bill was signed into law by [[James R. Thompson|Governor Jim Thompson]] on August 4, 1977. With the 1978 contract for license plates already awarded, multiyear plates would not be implemented until 1979. The cost savings from not issuing annual plates for the expected five year life of the plates was $21 million. One change made to the legislation before becoming a law gave the Secretary of State the discretion to determine how long the plates would last. This change would have long-term implications as there was not a statutory requirement to issue new license plates every five years.<ref>{{cite news |title=Long-term license plate plan sails toward OK |work=Chicago Tribune |date=March 17, 1977 |page=3 }}</ref><ref>{{cite news |title=Time for five-year plates |work=Chicago Tribune |date=March 20, 1977 |page=A4 }}</ref><ref>{{cite news |last1=Elmer |first1=John |last2=Locin |first2=Mitchell |title=State House votes in favor of multiyear license plates |work=Chicago Tribune |date=March 30, 1977 |page=B3 }}</ref><ref>{{cite news |title=License plate bill |work=Chicago Tribune |date=April 29, 1977 |page=B6 }}</ref><ref>{{cite news |title=1978 auto tags to go on sale |work=Chicago Tribune |date=November 25, 1977 |page=C1 }}</ref><ref>{{cite news |last=Elmer |first=John |date=August 5, 1977 |title=State OKs multiyear car plates |work=Chicago Tribune |page=3 }}</ref>
+
+The 1979 issue of new license plates was complicated by the fact that the state was converting to a staggered registration system at the same time it issued these plates. Under the multiyear system vehicle owners could obtain their new plates and register their vehicles for as few as nine months or as long as 23 months. At this time a full year registration cost $18, so the registration cost was prorated to the number of months that was chosen. A nine-month registration was $13.50 while a 23-month registration cost $34.50. Initially the month that a registration would expire was based upon the last two digits of a license plate number. For instance a plate ending in the number 11 allowed the vehicle owner to register for nine months ending on September 30, 1979, or they could choose an April 30, 1980 expiration. By limiting the choices for expiration to only two different months, the state ensured that registrations would be staggered.<ref name=MultiYear>{{cite news |title=Multiyear Car License Switch Set |work=Chicago Sunday Tribune |date=July 4, 1978 |page=10 }}</ref>
+
+Renewal stickers for the 1979 license plates were blue for 1979, red for 1980, green for 1981, brown for 1982, and orange for 1983.
+
+The multiyear system also eliminated the need for current vehicle owners to replace license plates during the winter months as no registrations were set to expire in December, January, or February. Anyone who purchased a new or used vehicle in the winter months could still end up with license plates that needed to be renewed while it was cold outside.   Many other types of vehicles, such as taxis, limousines, dealers, etc. continued to be issued a new plate annually.<ref name=MultiYear /><ref>{{cite news |last=Mateja |first=James |title=Five-year life expected for new car license plates |work=Chicago Tribune |date=August 23, 1977 |page=B11 }}</ref>
+
+===Issue of 1984===
+A new multi-year plate was introduced in 1984, replacing all the 1979 plates by the start of 1987. This plate consisted of embossed dark blue characters on a reflective white background, with a light blue band screened across the top containing the state name and the "Land of Lincoln" slogan. Serials on passenger plates issued to new registrants initially consisted of three letters and three numbers, while existing registrants with 1979 plates could retain the all-numeric and two-letter, four-number serials from these plates. After the three-letter, three-number format was completed in 1995, new formats were used consisting of one letter and up to six numbers.
+
+Renewal stickers for these plates were as follows: purple for 1984, green for 1985, orange for 1986, blue for 1987, red for 1988, green for 1989, orange for 1990, maroon for 1991, white for 1992, blue for 1993, dark gray for 1994, red for 1995, white for 1996, green for 1997, gray for 1998, orange for 1999, blue for 2000 and finally red for 2001.
+
+===Issue of 2001===
+The new multiyear baseplate, which began to be issued in July 2001, was the first fully graphic passenger plate issued by the state of Illinois. The design, dark red characters on a background that faded from white at the top to dark blue at the bottom, was chosen by Internet voters from among nine different designs. The word "Illinois" was centered in a script font at the top, the "Land of Lincoln" slogan was once more centered at the bottom of the plate, and a single sticker well, half the size of the former well, was at the top right corner. In the center of the plate was a silhouette of Abraham Lincoln. Approximately 8.5 million passenger plates were scheduled to be replaced in a single year although replacement plates for all vehicle types was scheduled to take place over three years.<ref>{{cite news |title=Illinois Drivers Due To Get New Plates Starting In July |work=Chicago Tribune |date=February 12, 2001 |page=2C.1 }}</ref><ref>{{cite news |last=Bolen |first=William P. |date=July 12, 2001 |title=New license plates hit the roads |work=Chicago Tribune |page=2C.3 }}</ref> Approximately 6.5 million passenger plates were made in Illinois at Macon County Rehabilitation Facilities, Inc. in Decatur, and another 2 million plates were made by Waldale Manufacturing Ltd. of Amherst, Nova Scotia, Canada in order to produce all of the passenger plates needed in a single year.<ref>{{cite news |title=Too much on its plate, state enlists Canadian aid |work=Chicago Tribune |date=May 2, 2001 |page=3 }}</ref>
+
+===Issue of 2017===
+On November 15, 2016, Illinois Secretary of State [[Jesse White (politician)|Jesse White]] announced that new Illinois license plates would begin to be issued in 2017. As before, the new license plates were announced in conjunction with a multiyear replacement program. The largest change to the plate was the complete replacement of the background image. The image of Abraham Lincoln was moved to the far left, was changed to a dark gray color, only showed the left half of his face, and was nearly the entire height of the plate. Additionally, the rest of the background showed a blue sky above a partial [[Chicago]] skyline including the [[Willis Tower]] (formerly Sears Tower); a [[barn]] with a [[windpump]]; and the [[dome]] of the [[Illinois State Capitol]] building; all of which are all in white. The serial number characters remained in dark red, and the word "Illinois" along with the "Land of Lincoln" slogan were changed to a black seriffed font. The replating program is scheduled to take place over 10 years ending in 2026.<ref>{{cite news |title=New Illinois license plate design revealed |url=https://www.sj-r.com/news/20161115/new-illinois-license-plate-design-revealed |work=The State Journal-Register |location=Springfield, Illinois |date=November 15, 2016 |access-date=May 3, 2019 |archive-date=May 3, 2019 |archive-url=https://web.archive.org/web/20190503135212/https://www.sj-r.com/news/20161115/new-illinois-license-plate-design-revealed |url-status=dead }}</ref><ref>{{cite magazine |last=Dragon |first=Richard E. |date=February 2017 |title=Notes from the states |magazine=Plates |location=Montezuma, Iowa |publisher=[[Automobile License Plate Collectors Association]] |page=21 }}</ref>
+
+The plate was designed by staff of the Illinois Secretary of State's office, and drew criticism immediately, Blair Kamin of the ''Chicago Tribune'' calling the design "busy and banal".<ref>{{cite news |last=Kamin |first=Blair |date=November 22, 2016 |title=New Illinois plate is busy and banal |newspaper=Chicago Tribune |page=4 }}</ref> Two changes were made to the plate's design within the first year of issuance, both in order to make the serial more readable: the serial's layout was changed from AB1 2345 to AB 12345 (the space coming after the letters instead of after the first digit), before the image of Abraham Lincoln was changed from a dark gray color to a much lighter gray.<ref>{{cite news |title=Illinois' new license plate is a mashup of indiscernible clip art |newspaper=Chicago Tribune |date=March 23, 2017 }}</ref>
+
+In mid 2023, a change in production equipment was made. The serial on plates is now screened from a [[flatbed digital printer|UV printer]] and then embossed, rather than embossed first and then roll-painted. With this change, new serial dies are being used which have a font similar to that used in [[Vehicle registration plates of North Carolina|North Carolina]]. The revised plates began to appear in August 2023, first on remakes of passenger combinations carried over from the previous base, and gradually spreading to new combinations of all types in the following months.<ref name="allaboutlicenseplatesIL"/><ref name="ricksplatesIL">{{cite web |last1=Kretschmer |first1=Rick |title=A Pictorial History of Illinois License Plates |url=https://www.ricksplates.com/illinois/ilpass2.htm |website=Rick Kretschmer's License Plate Archives |access-date=22 May 2024}}</ref>
+
+==Passenger baseplates==
+===Pre-state plates===
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!Description
+!Serial format
+!Serials issued
+!Notes
+|-
+|rowspan="2"|[[File:Illinois - 1907 license plate - 449.jpg|150px]]
+|rowspan="2"|{{nowrap|1907–11}}
+|rowspan="2" width="200"|Black on white; vertical "ILL" at right
+|12345
+|1 to approximately 38300
+|rowspan="2"|Front and rear plates provided by vehicle owner. Most were made of metal or leather. The serial number matched that on the aluminum disc provided to the owner by the state. Requests for low numbers caused the state to issue discs with letter prefixes and numbers 1–20 from 1907 through 1909, with all letters used except 'I'.<ref>{{cite book |last=Rose |first=James |date=1908 |title=List of Automobile Licenses (to November 30, 1907) |location=Springfield, IL |publisher=Phillips Brothers}}</ref><ref>{{cite book |last=Rose |first=James |date=1908 |title=List of Automobile Licenses (From November 30, 1907 to December 1, 1908) |location=Springfield, IL |publisher=Illinois State Journal Co.}}</ref><ref>{{cite book |last=Rose |first=James |date=1909 |title=List of Automobile Licenses (From December 1, 1908 to July 1, 1909) |location=Springfield, IL |publisher=Illinois State Journal Co.}}</ref>
+|-
+|A12
+|A1 to Z20
+|}
+
+===1911 to 1978===
+{|class=wikitable
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!style="width:70px;"|Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|Black on white; vertical "ILL" at right
+|''none''
+|12345
+|1 to approximately 38100
+|Issued only from July 1 through December 31, 1911.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|White on black; "ILL 1912" at right
+|''none''
+|12345
+|1 to approximately 67200
+|First dated plate. Front plates were perforated in order to allow air to pass through to the vehicle's radiator, while rear plates were solid.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|''Front'': White with border and no background; "ILL 13" at right<br>''Rear'': White on dark blue; "ILL 13" at right
+|''none''
+|12345
+|1 to approximately 94100
+|Front plates were stencil-like, again to facilitate passage of air to the vehicle's radiator.
+|-
+|rowspan="2"|[[File:Illinois 1914 license plate 68929.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1914
+|rowspan="2"|Green on white; "ILL 14" at right
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|Front plates had vertical slits between the characters of the serial; this practice continued through 1918. Letters H, K, P and R used in the A1234 serial format.
+|-
+|A1234
+|H0001 to approximately R1000
+|-
+|rowspan="2"|[[File:1915 Illinois License Plate Front.jpg|150px]]<br>[[File:1915 Illinois License Plate Rear.jpg|150px]]
+|rowspan="2"|1915
+|rowspan="2"|Dark blue on yellow; "ILL 15" at right
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|Letters H, K, P, R, T, U, X and Y used in the A1234 serial format.<ref name="allaboutlicenseplatesIL">{{cite web |last=Tanner |first=Eric N. |title=Illinois Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Illinois&code=il |publisher=allaboutlicenseplates.com |access-date=November 26, 2020}}</ref>
+|-
+|A1234
+|H0001 to approximately Y9999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Illinois 1916 license plate - Number 130073.jpg|150px]]
+|1916
+|Black on silver with border line; "ILL 16" at right
+|''none''
+|123456
+|1 to approximately 249000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|White on black with border line; "ILL 17" at right
+|''none''
+|123456
+|1 to approximately 339000
+|Last year in which aluminum dashboard discs were required.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Illinois 1918 Passenger Car License Plate.png|150px]]
+|1918
+|Blue on gray with border line; "ILL 18" at right
+|''none''
+|123456
+|1 to approximately 387000
+|
+|-
+|[[File:1919 Illinois License Plate.jpg|150px]]
+|1919
+|White on brown with border line; "ILL 19" at right
+|''none''
+|123456
+|1 to approximately 473000
+|
+|-
+|[[File:Illinois - 1920 license plate.jpg|150px]]
+|1920
+|Black on orange with border line; "ILL 20" at right
+|''none''
+|123456
+|1 to approximately 494000
+|
+|-
+|[[File:Illinois - 1921 license plate.jpg|150px]]
+|1921
+|White on black with border line; "ILL 21" at right
+|''none''
+|123456
+|1 to approximately 579000
+|
+|-
+|[[File:Illinois - 1922 license plate.jpg|150px]]
+|1922
+|Black on gray with border line; "ILL 22" at right
+|''none''
+|123-456
+|1 to approximately 681–000
+|
+|-
+|[[File:Illinois - 1923 license plate.jpg|150px]]
+|1923
+|White on green with border line; "ILL 23" at right
+|''none''
+|123-456
+|1 to approximately 841–000
+|
+|-
+|[[File:Illinois 1924 198-565.jpg|150px]]
+|1924
+|Deep yellow on black with border line; "ILL 24" at right
+|''none''
+|123-456
+|1 to approximately 977–000
+|
+|-
+|[[File:Illinois 1925 24-086.jpg|150px]]
+|1925
+|White on brown with border line; "ILL 25" at right
+|''none''
+|1-234-567
+|1 to approximately 1–102–000
+|
+|-
+|[[File:Illinois - 1926 license plate.jpg|150px]]
+|1926
+|White on dark blue with border line; "ILL 26" at right
+|''none''
+|1-234-567
+|1 to approximately 1–180–000
+|
+|-
+|[[File:1927 Illinois license plate.jpg|150px]]
+|1927
+|Black on orange with border line; embossed state shape at right containing debossed "ILL 27" in orange
+|''none''
+|1-234-567
+|1 to approximately 1–249–000
+|
+|-
+|[[File:Illinois - 1928 license plate.jpg|150px]]
+|1928
+|White on maroon with border line; "ILL 28" at right
+|''none''
+|1-234-567
+|1 to approximately 1–313–000
+|
+|-
+|[[File:Illinois - 1929 license plate.jpg|150px]]
+|1929
+|Red on black with border line; "ILL 29" at right
+|''none''
+|1-234-567
+|1 to approximately 1–411–000
+|
+|-
+|[[File:Illinois 1930 522-110.jpg|150px]]
+|1930
+|White on black with border line; "ILL 30" at right
+|''none''
+|1-234-567
+|1 to approximately 1–418–000
+|
+|-
+|[[File:Illinois 1931 1-237-904.jpg|150px]]
+|1931
+|Black on light green with border line; "ILL 31" at right
+|''none''
+|1-234-567
+|1 to approximately 1–411–000
+|
+|-
+|[[File:Illinois - 1932 license plate.jpg|150px]]
+|1932
+|Golden yellow on dark blue with border line; "ILL 32" at right
+|''none''
+|1-234-567
+|1 to approximately 1–301–000
+|
+|-
+|[[File:Illinois - 1933 license plate.jpg|150px]]
+|1933
+|White on dark blue with border line; "ILL 33" at right
+|''none''
+|1-234-567
+|1 to approximately 1–277–000
+|
+|-
+|[[File:Illinois - 1934 license plate.jpg|150px]]
+|1934
+|Yellow on black with border line; "ILL-34", "ILLINOIS-34" or "ILLINOIS-1934" at bottom (see right) 
+|''none''
+|1-234-567
+|1 to approximately 1–285–000
+|Plates with serials 1 through 999 had "ILL-34" at the bottom; plates with serials 1000 through 9999 had "ILLINOIS-34"; and plates with serials 10-000 and up had "ILLINOIS-1934". The latter two groups were the first plates to feature the full state name.
+|-
+|[[File:Illinois - 1935 license plate.jpg|150px]]
+|1935
+|Blue on white with border line; "ILL-35", "ILLINOIS-35" or "ILLINOIS-1935" at top
+|''none''
+|1-234-567
+|1 to approximately 1–351–000
+|Plates with serials 1 through 999 had "ILL-35" at the top; plates with serials 1000 through 9999 had "ILLINOIS-35"; and plates with serials 10-000 and up had "ILLINOIS-1935".
+|-
+|[[File:Illinois - 1936 license plate.jpg|150px]]
+|1936
+|White on black with border line; "ILL-36", "ILL-1936" or "ILLINOIS-1936" at bottom
+|''none''
+|1-234-567
+|1 to approximately 1–475–000
+|Plates with serials 1 through 999 had "ILL-36" at the bottom; plates with serials 1000 through 9999 had "ILL-1936"; and plates with serials 10-000 and up had "ILLINOIS-1936".
+|-
+|[[File:Illinois 1937 1-221-737.jpg|150px]]
+|1937
+|Black on yellow with border line; "19 - ILLINOIS - 37" at top
+|''none''
+|1-234-567
+|1 to approximately 1–569–000
+|
+|-
+|[[File:Illinois - 1938 license plate.jpg|150px]]
+|1938
+|White on green; "ILLINOIS 38" at bottom
+|''none''
+|1234 567
+|1 to approximately 1579&nbsp;000
+|
+|-
+|[[File:Illinois 1939 969 850.jpg|150px]]
+|1939
+|Yellow on black; "ILLINOIS 39" at top
+|''none''
+|1234 567
+|1 to approximately 1639&nbsp;000
+|
+|-
+|[[File:Illinois 1940 1343 184.jpg|150px]]
+|1940
+|Cream on brown; "ILL 1940" or "ILLINOIS 1940" at bottom
+|''none''
+|1234 567
+|1 to approximately 1723&nbsp;000
+|
+|-
+|[[File:1941 IL license plate.jpg|150px]]
+|1941
+|Black on golden yellow; "ILL 1941" or "ILLINOIS 1941" at top
+|''none''
+|1234 567
+|1 to approximately 1827&nbsp;000
+|
+|-
+|[[File:Illinois - 1942 license plate.jpg|150px]]
+|1942
+|Golden yellow on black; "ILL 1942" or "ILLINOIS 1942" at bottom
+|''none''
+|1234 567
+|1 to approximately 1750&nbsp;000
+|
+|-
+|[[File:1943 IL passenger plate.jpg|150px]]
+|1943
+|Cream on green [[fiberboard]];<br>"ILL. 43" or "ILLINOIS 43" at top
+|''none''
+|1234 567
+|1 to approximately 1639&nbsp;000
+|Manufactured on fiberboard due to metal conservation for [[World War II]]. Plates continued to be manufactured in this manner through 1948.
+|-
+|[[File:1944 IL passenger plate.jpg|150px]]
+|1944
+|Cream on brown fiberboard;<br>"ILL. 44" or "ILLINOIS 1944" at bottom
+|''none''
+|1234 567
+|1 to approximately 1515&nbsp;000
+|
+|-
+|[[File:Illinois 1945 206 760.jpg|150px]]
+|1945
+|Orange on black fiberboard;<br>"ILL. 45" or "ILLINOIS 1945" at top
+|''none''
+|1234 567
+|1 to approximately 1513&nbsp;000
+|
+|-
+|[[File:1946 IL passenger plate.jpg|150px]]
+|1946
+|White on maroon fiberboard;<br>"ILL. 46" or "ILLINOIS 1946" at bottom
+|''none''
+|1234 567
+|1 to approximately 1610&nbsp;000
+|
+|-
+|[[File:Illinois 1947 14 983.jpg|150px]]
+|1947
+|Off-white on green fiberboard;<br>"ILL. 47" or "ILLINOIS 1947" at top
+|''none''
+|1234-567
+|1 to approximately 1747–000
+|
+|-
+|[[File:1948 IL passenger plate.jpg|150px]]
+|1948
+|Black on orange fiberboard;<br>"ILL. 48" or "ILLINOIS 1948" at bottom
+|''none''
+|1234 567
+|1 to approximately 1949&nbsp;000
+|Last fiberboard plate.
+|-
+|[[File:Illinois 1949 421 912.jpg|150px]]
+|1949
+|Canary yellow on dark blue;<ref>{{cite news |title=Mail Out First Auto License Plates |newspaper=Christopher Progress |location=Christopher, IL |date=December 16, 1948 |page=1 |quote=The plates were made of steel this year instead of the substitute materials used during the war years. They have a dark blue background and canary yellow numerals.}}</ref><br>"ILL 49" or "ILLINOIS 1949" at top
+|''none''
+|1234 567
+|1 to approximately 2079&nbsp;000
+|First steel plate since 1942.
+|-
+|[[File:Illinois 1950 695 097.jpg|150px]]
+|1950
+|Ivy green on off-white;<ref>{{cite news |title=Auto License Plates Go On Sale Tomorrow |newspaper=Chicago Tribune |date=August 25, 1949 |page=23 |quote=The 1950 Illinois license plates will have ivy green numerals on an off-white base . . . . Passenger car plates will be made of rust resistant aluminum, said [State Secretary] Barrett.}}</ref> "ILL 1950" at bottom
+|''none''
+|1234 567
+|1 to approximately 2287&nbsp;000
+|First [[aluminum]] plate.
+|-
+|[[File:Illinois 1951 854 116.jpg|150px]]
+|1951
+|Maroon on unpainted aluminum;<ref>{{cite news |title=Illinois License Plates For 1951, Maroon on Silver |newspaper=The Daily Register |location=Harrisburg, IL |date=September 29, 1950 |page=6 |quote=Secretary of State Edward J. Barrett announced today that 1951 Illinois license plates will feature maroon numbers on an unpainted aluminum background, which is silverish in color.}}</ref> "ILL 1951" at top
+|''none''
+|1234 567
+|1 to approximately 2403&nbsp;000
+|
+|-
+|[[File:Illinois 1952 611 854.jpg|150px]]
+|1952
+|Midnight blue on burnt orange;<ref>{{cite news |title=Auto License Plates Go On Sale Tomorrow |newspaper=Chicago Tribune |date=December 3, 1951 |page=E7 |quote=The Illinois plates for 1952 will be of midnight blue on a burnt orange background.}}</ref> "ILL 1952" at bottom
+|''none''
+|1234 567
+|1 to approximately 2462&nbsp;000
+|
+|-
+|[[File:Illinois 1953 1017 046.jpg|150px]]
+|1953
+|Ruby red on buff;<ref>{{cite news |title=Illinois Auto Plates In '53 To Be Red On Buff |newspaper=Chicago Tribune |date=May 26, 1952 |page=2 |quote=Illinois' 1953 auto license plates will be ruby red figures on a buff background, Secretary of State Edward J. Barrett announced yesterday.}}</ref> "ILL 1953" at top
+|''none''
+|1234 567
+|1 to approximately 2580&nbsp;000
+|License plates placed under the jurisdiction of the Secretary of State.
+|-
+|[[File:Illinois 1954 2236 213.jpg|150px]]
+|1954
+|White on kelly green; "19 ILLINOIS 54" at bottom
+|Land of Lincoln
+|1234 567
+|1 to approximately 2700&nbsp;000
+|First use of the "Land of Lincoln" slogan.<ref>{{cite news |title=Order Lincoln Slogan on '54 License Plates |newspaper=Chicago Tribune |date=July 22, 1953 |page=1}}</ref>
+|-
+|[[File:Illinois 1955 2647 648.jpg|150px]]
+|1955
+|Orange lettering on blue base; "19 ILLINOIS 55" at top
+|Land of Lincoln
+|1234 567
+|1 to approximately 2849&nbsp;000
+|Issued in the colors of the [[University of Illinois at Urbana–Champaign|University of Illinois]].<ref>{{cite news |title='55 State Auto Plates To Be Blue, Orange |newspaper=Chicago Tribune |date=August 3, 1954 |page=6 |quote=The plates will have a navy blue background with orange numerals. Samples of materials used for Illini football uniforms were provided by Coach Ray Eliot of the University of Illinois so the plates can be of matching colors.}}</ref>
+|-
+|[[File:Illinois 1956 2078091.jpg|150px]]
+|1956
+|Ivy green lettering on powder gray base;<ref>{{cite news |title=1956 Auto Tag Color Scheme: Gray and Green |work=Chicago Tribune |date=August 10, 1955 |page=12 |quote=Illinois' 1956 automobile license plates will be powder gray with ivy green numerals.}}</ref> "19 ILLINOIS 56" at bottom
+|Land of Lincoln
+|1234 567
+|1 to approximately 2980&nbsp;000
+|First 6" x 12" plate. It is unconfirmed if this plate was issued to honor [[Illinois Wesleyan University]], whose colors are actually green and white, as no period reference has been found.
+|-
+|[[File:Illinois 1957 442 312.jpg|150px]]
+|1957
+|White lettering on red base; "19 ILLINOIS 57" at top
+|Land of Lincoln
+|1234 567
+|1 to approximately 3075&nbsp;000
+|Issued in the colors of [[Illinois State University]], in honor of its centennial.<ref>{{cite news |title=1957 Illinois Licenses Make Artists See Red |newspaper=Chicago Tribune |date=December 17, 1956 |page=18 |quote=He said, there was nothing to prevent a combination of red lettering on a white background, but that the university preferred white on red.}}</ref>
+|-
+|[[File:Illinois 1958 325 414.jpg|150px]]
+|1958
+|Purple lettering on white base; "19 ILLINOIS 58" at bottom
+|Land of Lincoln
+|1234 567
+|1 to approximately 3104&nbsp;000
+|Issued in the colors of [[Northwestern University]].<ref>{{cite news |title=Purple And White Auto Plates For Illinois in 1958 |newspaper=Chicago Tribune |date=August 16, 1957 |page=1 |quote=As a tribute to Northwestern University the 1958 automobile license plates will have purple numbers on a white background.}}</ref>
+|-
+|[[File:Illinois 1959 1076302.jpg|150px]]
+|1959
+|White lettering on brown base; "19 ILLINOIS 59" at top
+|Land of Lincoln
+|1234 567
+|1 to approximately 3224&nbsp;000
+|Issued in the colors of [[Quincy University|Quincy College]], in honor of its centennial.<ref>{{cite news |title=Quincy College |newspaper=Chicago Tribune |date=August 20, 1958 |page=20 |quote=Secretary of State Carpentier's recent announcement that the 1959 motor vehicle license plates will honor Quincy College is a fine outward expression of the realization by our legislators and citizens of the importance and quality of the many small colleges in our state.}}</ref>
+|-
+|[[File:Illinois 1960 license plate - Number 425 147.jpg|150px]]
+|1960
+|Gold lettering on royal blue base; "19 ILLINOIS 60" at bottom
+|Land of Lincoln
+|1234 567
+|1 to approximately 3307&nbsp;000
+|Issued in the colors of [[Augustana College (Illinois)|Augustana College]] and [[Wheaton College (Illinois)|Wheaton College]], in honor of their respective centennials.<ref>{{cite news |title=Illinois Auto Tags For 1960 Will Be Gold, Royal Blue |newspaper=Chicago Tribune |date=July 14, 1959 |page=B7 |quote=Royal blue and gold, in honor of Augustana and Wheaton Colleges will be the color combination of Illinois motor vehicle license plates, the secretary of state's office announced Monday.}}</ref>
+|-
+|rowspan="2"|[[File:Illinois 1961 187 318.jpg|150px]]
+|rowspan="2"|1961
+|rowspan="2"|White lettering on red base; "19 ILLINOIS 61" at top
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|Issued in the colors of [[North Central College]], in honor of its centennial.<ref>{{cite news |title=North Central Colors To Be On Licenses |newspaper=Chicago Tribune |date=June 6, 1960 |page=16 |quote=The colors are those of North Central [College], and were chosen in honor of that school's centennial. Illinois license plates each year carry the colors of a college or university in the state.}}</ref> Letters I, O, Q and Z not used in the AB 1234 serial format.<ref name="allaboutlicenseplatesIL"/> 
+|-
+|AB 1234
+|AA 1000 to approximately NP&nbsp;7000
+|-
+|rowspan="2"|[[File:Illinois 1962 BY 8791.jpg|150px]]
+|rowspan="2"|1962
+|rowspan="2"|White lettering on orange base; "19 ILLINOIS 62" at bottom
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|The orange base was specifically chosen for its visibility, but police officers complained that they could not read the white serials, especially at night.<ref>{{cite news |title=White, Orange To Be License Colors In 1962 |newspaper=Chicago Tribune |date=July 25, 1961 |page=B5 |quote=The secretary of state's office said the color combination was chosen from a list of 22 recommended by the University of Illinois engineers who prompted the change this year to the numeral-letter system. . . . The colors are not those of a college or university as has been the custom of recent years. No college or university requested its colors be used in 1962.}}</ref>
+|-
+|AB 1234
+|AA 1000 to approximately PH&nbsp;8000
+|-
+|rowspan="2"|[[File:Illinois 1963 JJ 3854.jpg|150px]]
+|rowspan="2"|1963
+|rowspan="2"|Yellow lettering on dark green base; "19 ILLINOIS 63" at top
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|Issued in the colors of [[Moline, Illinois|Moline]]-based [[John Deere|Deere & Company]], in honor of its 125th anniversary.<ref>{{cite news |title=New Hues For Illinois Auto Plates |newspaper=Chicago Tribune |date=November 9, 1962 |page=1 |quote=Birgitte Lundstrom, blue-eyed beauty from Sweden, displays yellow and green Illinois license plates for 1963. Colors were chosen to honor John Deere Farm Machinery Company, which is observing 125th anniversary this year.}}</ref>
+|-
+|AB 1234
+|AA 1000 to approximately RD&nbsp;6000
+|-
+|rowspan="2"|[[File:Illinois 1964 617 763.jpg|150px]]
+|rowspan="2"|1964
+|rowspan="2"|White lettering on purple base; "19 ILLINOIS 64" at bottom
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|Issued in the colors of [[McKendree University|McKendree College]] and [[Rockford University|Rockford College]], the two oldest colleges in Illinois.<ref>{{cite news |title=Our Town: New License Plates Are Pretty Purple - but on Orange Cars? |newspaper=Chicago Tribune |date=December 15, 1963 |page=A1 |quote=The purple license plates with white lettering were chosen by the secretary of state to honor Illinois' oldest colleges. They are McKendree college, Lebanon, founded in 1828, and Rockford college, Rockford, founded in 1847.}}</ref>
+|-
+|AB 1234
+|AA 1000 to approximately SD&nbsp;7000
+|-
+|rowspan="2"|[[File:Illinois 1965 license plate - Number JB 3176.jpg|150px]]
+|rowspan="2"|1965
+|rowspan="2"|Green on white; "19 ILLINOIS 65" at top
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|The colors were used to honor Secretary of State [[Charles F. Carpentier|Charles Carpentier]], who died in office on April 3, 1964.<ref>{{cite news |title=Here Is an Exclusive Look at the Midwest's Official License Plate for Next Year |newspaper=Chicago Tribune |date=September 7, 1964 |page=C14}}</ref> T and U not used as first letters in the AB 1234 serial format; this practice continued through 1968.<ref name="allaboutlicenseplatesIL"/>
+|-
+|AB 1234
+|AA 1000 to approximately VE&nbsp;5000
+|-
+|rowspan="2"|[[File:Illinois 1966 EW 4756.jpg|150px]]
+|rowspan="2"|1966
+|rowspan="2"|Red on reflective white; "19 ILLINOIS 66" at bottom
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|First reflective plate.
+|-
+|AB 1234
+|AA 1000 to approximately WG&nbsp;3000
+|-
+|rowspan="2"|[[File:Illinois 1967 53 975.jpg|150px]]
+|rowspan="2"|1967
+|rowspan="2"|Black on reflective white; "19 ILLINOIS 67" at top
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|Numbers 100–999 added for each series in the AB&nbsp;1234 serial format.<ref name="allaboutlicenseplatesIL"/>
+|-
+|AB 1234
+|AA 100 to approximately SK&nbsp;2000
+|-
+|rowspan="2"|[[File:Illinois 1968 436 743.jpg|150px]]
+|rowspan="2"|1968
+|rowspan="2"|Red on reflective white; "19 ILLINOIS 68" at bottom; "18" at top corners
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|Commemorated Illinois' 150 years of statehood. Numbers 1–99 added for each series in the AB&nbsp;1234 serial format.
+|-
+|AB 1234
+|AA 1 to approximately SW&nbsp;9000
+|-
+|rowspan="2"|[[File:Illinois 1969 NG 203.jpg|150px]]
+|rowspan="2"|1969
+|rowspan="2"|Dark blue on reflective orange; "19 ILLINOIS 69" at top
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|T added as first letter in the AB 1234 serial format.
+|-
+|AB 1234
+|AA 1 to approximately TP&nbsp;4000
+|-
+|rowspan="2"|[[File:1970 Illinois license plate.jpg|150px]]
+|rowspan="2"|1970
+|rowspan="2"|Red on reflective yellow with border line; "19 ILLINOIS 70" at bottom
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|
+|-
+|AB 1234
+|AA 1 to approximately TW&nbsp;6000
+|-
+|rowspan="2"|[[File:ILLINOIS 1971 LICENSE PLATE 282-662 - Flickr - woody1778a.jpg|150px]]
+|rowspan="2"|1971
+|rowspan="2"|Black on reflective white with border line; "19 ILLINOIS 71" at top
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|
+|-
+|AB 1234
+|AA 1 to approximately VT&nbsp;8000
+|-
+|rowspan="2"|[[File:1972 Illinois license plate.jpg|150px]]
+|rowspan="2"|1972
+|rowspan="2"|Blue on reflective white with border line; "19 ILLINOIS 72" at bottom
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|
+|-
+|AB 1234
+|AA 1 to approximately WX&nbsp;1000
+|-
+|rowspan="2"|[[File:Illinois 1973 53 973.jpg|150px]]
+|rowspan="2"|1973
+|rowspan="2"|Green on reflective white with border line; "19 ILLINOIS 73" at top
+|rowspan="2"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="2"|U added as first letter in the AB 1234 serial format following WY 9999.<ref name="allaboutlicenseplatesIL"/> Total passenger plates issued exceeds five million for the first time.
+|-
+|AB 1234
+|AA 1 to WY&nbsp;9999;<br>UA&nbsp;1 to approximately UX&nbsp;2000
+|-
+|rowspan="3"|[[File:Illinois 1974 53 975.jpg|150px]]
+|rowspan="3"|1974
+|rowspan="3"|Red on reflective white with border line; "19 ILLINOIS 74" at bottom
+|rowspan="3"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="3"|Three-letter serials used for the first time on a trial basis.<ref>{{cite news |title=Put your name on plate |newspaper=Dolton Pointer |location=Dolton, IL |date=July 17, 1974 |page=14}}</ref><ref>{{cite news |title=Three-Letter Prefix Plates Now Available |work=The Herald |location=Harvard, IL |date=August 7, 1974 |page=2}}</ref> 
+|-
+|AB 1234
+|AA 1 to WY&nbsp;9999;<br>UA 1 to UY&nbsp;9999
+|-
+|ABC 123
+|AAA 100 to approximately AML 500<ref name="allaboutlicenseplatesIL"/>
+|-
+|[[File:Illinois 1975 FG 647.jpg|150px]]
+|1975
+|Black on reflective yellow with border line; "19 ILLINOIS 75" at top
+|Land of Lincoln
+|123 456<br>AB 1234<br>ABC 123
+|
+|*Issued in the colors of [[Peoria, Illinois|Peoria]]-based [[Caterpillar Inc.]], in honor of its 50th anniversary.<ref>{{cite news |title=Caterpillar 50 Years Old |newspaper=The Morris Daily Herald |location=Morris, IL |date=February 7, 1975 |page=2A}}</ref><ref>{{cite news |title=License Plate Mailing Under Way |newspaper=Star-Tribune |location=Harvey, IL |date=November 14, 1974 |page=39}}</ref><br>*Three-letter prefix program expanded from about 800 combinations in 1974 to 2,851.<ref>{{cite news |title=Drivers Can Write Own License Plates for '75 |newspaper=Register-Mail |location=Galesburg, Illinois |date=July 20, 1974 |page=5 }}</ref><ref>{{cite news |last=Manning |first=Mary Lou |date=December 20, 1974 |title=Special licenses play number game  |newspaper=The Daily Gazette |location=Sterling-Rock Falls, Illinois |page=4 }}</ref>
+|-
+|[[File:USA Illinois 1976 plate.jpg|150px]]
+|1976
+|Blue on reflective white with red and blue [[United States Bicentennial]] graphics
+|Land of Lincoln
+|123 456<br>AB 1234<br>ABC 123
+|?<br>remakes of previously issued serials
+|Design chosen following a statewide grade and high school contest; the winner was 10-year-old Kelley Jordan of [[Normal, Illinois]].<ref>{{cite news |last=Soencer |first=Sandy |date=June 27, 1974 |title=Normal girl submits winning license design |work=The Pantagraph |location=Bloomington, IL |page=3}}</ref>
+|-
+|[[File:Illinois 1977 AY 2977.jpg|150px]]
+|1977
+|Green on reflective white; "19 ILLINOIS 77" at top
+|Land of Lincoln
+|123 456<br>AB 1234<br> ABC 123
+|?<br>remakes of previously issued serials
+|Plates issued reach the six million mark.
+|-
+|[[File:IL 1978.jpg|150px]]
+|1978
+|Black on reflective white with border line; "19 ILLINOIS 78" at bottom
+|Land of Lincoln
+|123 456<br>AB 1234<br>ABC 123
+|?<br>remakes of previously issued serials
+|Last single-year plate, and last year that all license plates in the state expire on the same date.
+|}
+
+===1979 to present===
+{|class=wikitable
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|rowspan="2"|[[File:1979-Illinois-license-plate.png|150px]]
+|rowspan="2"|1979
+|rowspan="3"|Dark blue on reflective white; state name screened in dark blue at top
+|rowspan="3"|Land of Lincoln
+|123 456
+|1 to<br>999 999
+|rowspan="3"|First multi-year base, and first to feature monthly staggered registration. Manufactured in Texas using that state's serial [[Die (manufacturing)|die]]s, and issued in the colors of [[Illinois College]] in honor of its sesquicentennial.<ref>{{cite news |title=Blue-white license plate color honors I. C. |newspaper=Jacksonville Courier |location=Jacksonville, IL |date=December 22, 1978 |page=3}}</ref> [[Vanity plate]]s introduced 1980.<ref>{{cite news |title=Auto plate plan, Vanity gets boost here |work=Chicago Tribune |date=September 25, 1979 |page=3 }}</ref> Replaced 1984–86.
+|-
+|AB 1234
+|AA 1 to ZZ&nbsp;9999
+|-
+|[[File:1983-Illinois-license-plate.png|150px]]
+|1982
+|ABC 123
+|XAA 1 to ZZZ&nbsp;999
+|-
+|rowspan="3"|[[File:1987-Illinois-license-plate.png|150px]]
+|rowspan="2"|1983
+|rowspan="4"|Dark blue on reflective white with light and dark blue stripes; state name screened in dark blue at top left
+|rowspan="4"|Land of Lincoln
+|ABC 123
+|AAA 1 to ZZZ&nbsp;999
+|rowspan="2"|Seven letter vanity plates become available on January 1, 1984.<ref>{{cite news |title=State law extends drivers license 1 yr. |work=Chicago Tribune |date=February 16, 1984 |page=J2 }}</ref>
+|-
+|123 456<br>AB 1234
+|Reissues of 1979–82 serials
+|-
+|1995
+|A 12 345
+|B 1 to Z&nbsp;99&nbsp;999<br>(see right)
+|Letters B, C, D, F, J, S, T, Y and Z used in this serial format.
+|-
+|[[File:Illinois 2000 plate.jpg|150px]]
+|1996
+|A&nbsp;123&nbsp;456
+|B 100 000 to approximately Y&nbsp;677&nbsp;000 (see right)
+|Narrower serial dies. Letters B, C, D, F, J, T and Y used in this serial format. All plates on this base replaced 2001–02.
+|-
+|[[File:Illinois license plate.png|150px]]
+|rowspan="2"|2001
+|rowspan="4"|Reflective gradient white-to-blue fade with [[Abraham Lincoln]] graphic at center; state name screened in blue at top
+|rowspan="4"|Land of Lincoln
+|123 4567
+|100 0001 to 999&nbsp;9999
+|rowspan="2"|Design selected by voters on the state's web site.
+|-
+|
+|123 456<br>AB 1234<br>ABC 123<br>A12 345<br>A12 3456
+|Reissues of 1979–2001 serials
+|-
+| 
+|2006
+|A12 3456
+|A10 0001 to Z99&nbsp;9999 (see right)
+|Letter progressed as follows: G, X, A, H, K, L, N, P, R, S, V, E, Y (70 0000 to 99 9999), Z and Q. I and O were not used, and M, U and W were reserved for Municipal, State Owned and Disabled plates respectively. T, J, F and B have also been found.
+|-
+|[[File:Illinois ZZ License Plate.jpg|150px]]
+|2016
+|AB1 2345
+|ZZ1 1001 to approximately ZU9&nbsp;3000 (see right)
+|Two-letter series progressed as follows: ZX, ZZ, ZY, ZV and ZU. This was to avoid conflicting with serials of the same format on the upcoming 2017 base (below).
+|-
+|
+|rowspan="3"|2017
+|rowspan="4"|Reflective gradient blue-to-white with white Chicago and Springfield skyline and gray Abraham Lincoln graphic at far left; state name screened in black at top
+|rowspan="4"|Land of Lincoln
+|AB1 2345
+|AA1 1001 to AF9&nbsp;9999
+|Mandatory ten-year plate replacement to be phased in with this base.<ref>{{cite web|url=http://chicago.cbslocal.com/2016/11/15/illinois-launches-license-plate-replacement-program-after-rusting-issue/ |title=Illinois Launches License Plate Replacement Program After Rusting Issue |publisher=CBS Chicago |date=November 15, 2016 |access-date=May 26, 2017}}</ref> I and O not used in two-letter series.
+|-
+|[[File:Illinois 2017 Six Digit License Plate.jpg|150px]]
+|AB 12345<br>123 456
+|AG 11001 to AP 76000<ref name="allaboutlicenseplatesIL"/>
+|The seven-character format was briefly halted due to difficulty in reading the characters over the Lincoln graphic. To use up existing sheeting, numbers in 123&nbsp;456 format were temporarily issued with the serial offset to the right.<ref name="ricksplatesIL"/>
+|-
+|[[File:2017 Illinois License Plate.png|150px]]
+|rowspan="2"|AB 12345
+|AP 76001 to EN 76000
+|Lincoln's portrait was faded from black and dark gray to light gray in order to improve the readability of the plate. Issue started in late 2017.
+|-
+|
+|2024
+|EN 76001 to GC 32739 {{small|(as of March 18, 2026)}}<ref name=":0">{{Cite web |title=Illinois License Plates |url=https://www.licenseplates.cc/IL |access-date=February 19, 2024 |website=www.licenseplates.cc}}</ref>
+|New serial dies introduced similar to those used in North Carolina. The serials are screened from a printer rather than traditionally painted. Issue started in August 2023 on remade combinations, and February 2024 on new combinations.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image 
+!Type
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Illinois Antique Vehicle License Plate.jpg|150px]]
+|Antique Vehicle
+|1968
+|Black on cream with a white Illinois state shape outline
+|123<br>1234<br>12 345{{small|'''A'''/'''V'''}}<br>123 456{{small|'''A'''/'''V'''}}
+|100 to 238&nbsp;487{{small|A/V}} {{small|(as of July 21, 2024)}}
+|New plates were issued every two years until 1989, when they were replaced with multi-year plates and renewed with stickers on a five-year cycle.
+|-
+|[[File:Illinois Autocycle License Plate.jpg|150px]]
+|Autocycle
+|2015
+|Red on white, motorcycle-sized plate
+|123 {{small|'''C'''/'''Y'''}}<br>1234 {{small|'''C'''/'''Y'''}}
+|100 {{small|C/Y}} to present
+|Defined by the Secretary of State as "A 3-wheel motor vehicle that has a steering wheel and seating that does not require the operator to straddle or sit astride it."<ref>{{Cite web|url=https://www.ilga.gov/Legislation/publicacts/view/098-0777|title=Illinois General Assembly - Public Act 098-0777|date=January 1, 2015|website=ilga.gov|access-date=April 4, 2026}}</ref><ref>{{Cite web|url=https://www.locostusa.com/forums/viewtopic.php?t=17002|title=ILLINOIS - new 3-wheeled law effective 2015|date=December 31, 2014|website=locostusa.com|access-date=April 4, 2026}}</ref>
+|-
+|[[File:Illinois - 1923 - Truck license plate.jpg|150px]]
+|rowspan="8"|B Truck
+|1923
+|White on green with border line; "TRUCK" embossed vertically at left; "ILL" over "23" embossed at right 
+|111-119
+|1 to 72726
+|Format used 1922 – 1929
+|-
+|[[File:1951 Illinois license plate.png|150px]]
+|1951 (Rear Plate)
+|Maroon on Aluminum; "ILL" and "1951" at top center; "REAR" embossed vertically at left
+|B 123<br>B1234<br>B12345<br>B123456
+|B 1 to approximately B387&nbsp;096<br> {{small|(as of 1969)}}
+|Front plate similar.<br>Format used continuously from 1935 to 1969 with various changes in spacing.<ref name="allaboutlicenseplatesIL"/>
+|-
+|[[File:Illinois 1983 B Truck License Plate.jpg|150px]]
+|1983
+|Embossed black characters on reflective yellow; "Land of Lincoln" at top center; "JUN ILLINOIS 83" at bottom
+|1234 B<br>12 345B<br>123 456B
+|1 B to approximately 896&nbsp;493B<br> {{small|(as of 1984)}}
+|Format started in 1969 (dated Jun 1970) and ended June 1984; even years instead have slogan at bottom and date at top
+|-
+|[[File:Illinois 1984 B Class Truck Plate 301 253B.jpg|150px]]
+|1984
+|Embossed black characters on yellow; "Land of Lincoln" in italics at bottom center; "JUN ILLINOIS 84" at top
+|1234 B<br>12 345B<br>123 456B
+|Unknown
+|
+|-
+|rowspan="2"|[[File:Illinois Truck B License Plate.jpg|150px]]
+|rowspan="2"|1985
+|Red on reflective white with red stripes; state name screened in red at top left; "B" embossed at right
+|1234 B<br>12 345B<br>123 456B
+|1B to 999&nbsp;999B
+|rowspan="2"|First multiyear truck base. Began June 1984 with screened "85 JUN" expiration, stickers used on new plates every year onward.<ref name="allaboutlicenseplatesIL"/>
+Replaced in 2003
+|-
+|As above, but with "B TRUCK" embossed vertically at right
+|1234 AB
+|101 AA to 9999&nbsp;ZZ
+|-
+|[[File:Illinois B Truck License Plate 2634238.jpg|150px]]
+|2003
+|Dark blue on reflective white with light blue Abraham Lincoln graphic at center; state name screened in red at top; "B TRUCK" screened vertically at right
+|1234 A<br>12&nbsp;345&nbsp;A<br>1234567 
+|1001 A to<br>99&nbsp;999&nbsp;Z;<br>1000001 to 2874000;
+plus remakes of previously issued serials
+|Being replaced by year of manufacture<ref>{{Cite web|url=https://www.cyberdriveillinois.com/news/2016/november/161115d1.pdf|title=Jesse White Launching Passenger License Plate Replacement Program in January|date=November 15, 2016|website=cyberdriveillinois.com|access-date=2019-11-07}}</ref>
+|-
+|[[File:Illinois 2020 B Truck License Plate.png|150px]]
+[[File:Illinois 4000000 B Truck License Plate.jpg|150px]]
+|2020
+|Dark blue on reflective white with state name screened in red at top; "Land of Lincoln" screened in red at bottom
+|1234567'''B'''
+|2874000B to 4191778B<br>{{small|(as of May 9, 2025)}};<br>plus remakes of previously issued serials
+|Replacement of previous plates began in 2020.
+New serial dies began at approximately 3900000B.
+|-
+|[[File:Illinois C Truck License Plate.jpg|150px]]
+|C Truck
+|2019
+|Dark blue on reflective white with state name screened in red at top; "Land of Lincoln" screened in red at bottom
+|123 456'''C'''
+|100 001C to <br> 237 891C {{small|(as of June 3, 2025)}}
+|Issued to vehicles weighing 8,001-10,000 lbs.<ref>{{Cite web|url=https://www.ilsos.gov/departments/vehicles/license_plate_guide/c_truck.html|title=C-Truck License Plates|website=ilsos.gov|access-date=April 19, 2025}}</ref>
+|-
+|[[File:Illinois Charitable Vehicle License Plate.jpg|150px]]
+|Charitable Vehicle
+|1976<ref>{{Cite web|url=https://www.ilsos.gov/special/plate_history/1970_1979.pdf|title=1970-1979 License Plate History|website=ilsos.gov|access-date=April 20, 2025}}</ref>
+|Black serial on white with faded Lincoln graphic; Blue cursive state name at top
+|1234 '''CV'''<br>12 345 '''CV'''<br> 12 345 {{small|'''C'''/'''V'''}}
+|1001 CV to <br>48 649 {{small|C/V}} {{small|(as of May 30, 2025)}}
+|Plates are renewed every two years.<ref>{{Cite web|url=https://www.ilsos.gov/departments/vehicles/license_plate_guide/charitable_vehicle.html|title=Charitable Vehicle License Plates|website=ilsos.gov|access-date=April 20, 2025}}</ref>
+|-
+|[[File:Illinois Dealer License Plate 2024.jpg|150px]]
+|Dealer
+|1912<ref>{{Cite web|url=https://www.ilsos.gov/special/plate_history/1907_1919.pdf|title=1907-1919 License Plate History|website=ilsos.gov|access-date=2024-12-27}}</ref>
+|Black serial on white background
+|{{small|'''D/L'''}} 1234 A<br>{{small|'''D/L'''}} 1234 AB (variable number of digits)
+|
+|Plate number identifies the dealership.<br>Plates are issued annually (no validation stickers used). The background color typically changes each year, with various shades of white or beige being most common.
+|-
+|[[File:Illinois Disabled License Plate.jpg|150px]]
+|rowspan="2"|Disabled
+|rowspan="2"|1974<ref>{{Cite web|url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Non-passenger&jurisdiction=Illinois&code=il|title=All About License Plates |website=allaboutlicenseplates.com|access-date=April 18, 2025}}</ref>
+|rowspan="2"|Red serial on 2001 passenger base
+|rowspan="2"|123<br>1234<br>12 345<br>123 456
+|rowspan="2"|101 to 334 027 {{small|(as of January 2, 2026)}}
+|rowspan="2"|The wheelchair symbol is coded as a "W", which can be seen at the top of the registration sticker on the plate image at left.<br><br>New serial dies began at approximately 331 500; with this, the wheelchair symbol changed from embossed to flat.
+|-
+|[[File:IL Disabled License Plate.jpg|150px]]
+|-
+|[[File:Illinois Electric Vehicle License Plate.jpg|150px]]
+|rowspan="2"|Electric Vehicle
+|rowspan="2"|2020
+|rowspan="2"|Black serial on white with faded Lincoln graphic; Blue cursive state name at top
+|12345 '''EL'''
+|1 EL to 99999&nbsp;EL
+|rowspan="2"|New serial dies began at approximately 80801 EL; with this, the letter suffix changed from embossed to flat.
+|-
+|[[File:IL Electric Vehicle A1584 License Plate.jpg|150px]]
+|A1234 '''EL'''
+|A1001 EL to D1748 EL {{small|(as of July 3, 2026)}}
+|-
+|[[File:Illinoisan fire truck license plate.png|150px]]
+|Fire Department
+|
+|Red serial on white; Red state name centered at top; Gradient red band at bottom with 'Fire Department' centered in white
+|{{small|'''F/V'''}} 12-345 (variable number of digits)
+|
+|
+|-
+|[[File:Illinois D Truck License Plate.jpg|150px]]
+|Flat Weight Truck - D Truck
+|1930
+||Black serial on white with faded Lincoln graphic; Green cursive state name centered at top; Green slogan centered at bottom
+|From 1 {{small|'''D'''}} to 123456 {{small|'''D'''}}
+|1 {{small|D}} to 555694 {{small|D}} {{small|(as of May 18, 2026)}}
+|New plates were issued annually until 1995, when they were replaced with multi-year plates and renewed with stickers on a yearly cycle. All flat weight truck plates expire on June 30.<ref>{{Cite web|url=https://www.ilsos.gov/departments/vehicles/license-plate-guide/truck-and-trailer-plates/truck8000.html|title=Flat Weight Trucks (over 8000 pounds) License Plates |website=ilsos.gov|access-date=May 17, 2026}}</ref>
+|-
+|[[File:Illinois Fleet License Plate.jpg|150px]]
+|Fleet Permanent
+|
+|Black serial on white with faded Lincoln graphic; Green cursive state name centered at top; Green slogan centered at bottom
+|{{small|'''F/P'''}} 123456 (variable number of digits)
+|{{small|F/P}} 1001 to {{small|F/P}} 305127<br>{{small|(as of May 18, 2025)}}
+|Used on rental cars, fleet telecom vans and delivery vehicles.
+New serial dies began at approximately {{small|F/P}} 246000; with this, the stacked letters changed from embossed to flat.
+|-
+|[[File:IL Medical Carrier License Plate.jpg|150px]]
+|rowspan="2"|Medical Carrier
+|rowspan="2"|1990<ref>{{Cite web|url=https://www.ilsos.gov/special/plate_history/1990_2000.pdf|title=1990-2000 License Plate History|website=ilsos.gov|access-date=December 27, 2024}}</ref>
+|rowspan="2"|Black serial on white with faded Lincoln graphic; Green cursive state name centered at top; Green slogan centered at bottom
+|123 {{small|'''MC'''}}<br>1234 {{small|'''MC'''}}
+|rowspan="2"|100 {{small|MC}} to present
+|rowspan="2"|New serial dies began at approximately 10000 {{small|MC}}; with this, the MC letters changed from embossed to flat.
+|-
+|[[File:New Illinois Medical Carrier License Plate.jpg|150px]]
+|12345 {{small|'''MC'''}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|2003
+|Similar to 2001 Abraham Lincoln passenger base
+|AB 1234
+|AA 101 to GE&nbsp;2085 {{small|(as of April 26, 2025)}}
+|Letters I, O and Q not used.
+|-
+|[[File:Illinoisan municipal police car license plate.png|150px]]
+|Municipal Police
+|
+|Dark blue serial on white; Blue state name and slogan centered at top; Blue gradient band at bottom with 'Municipal Police' centered in white
+|{{small|'''M/P'''}} 12&nbsp;345 (variable number of digits)
+|{{small|M/P}} 10 to {{small|M/P}} 25 335<br>{{small|(as of April 28, 2025)}}
+|
+|-
+|[[File:Illinois Public Transport License Plate.jpg|150px]]
+|Public Transportation
+|1990<ref>{{Cite web|url=https://www.ilsos.gov/special/plate_history/1990_2000.pdf|title=1990-2000 License Plate History|website=ilsos.gov|access-date=December 27, 2024}}</ref>
+|Black serial on white with faded Lincoln graphic; Green cursive state name centered at top; Green slogan centered at bottom
+|1234 {{small|'''PT'''}}<br>12345 {{small|'''PT'''}}
+|1001 {{small|PT}} to 26336 {{small|PT (as of July 3, 2026)}}
+|-
+|[[File:Illinois School Bus License Plate.jpg|150px]]
+|rowspan="2"|School Bus
+|rowspan="2"|1967
+|rowspan="2"|Black serial on white with faded Lincoln graphic; Blue cursive state name at top
+|1234 '''SB'''<br>12 345 '''SB'''
+|rowspan="2"|1001 SB to<br>122 004 {{small|S/B (as of April 4, 2026)}}
+|rowspan="2"|New plates were issued every two years until 1995, when they were replaced with multi-year plates and renewed with stickers on the same two-year cycle.<br><br>New serial dies began at approximately 119 000 {{small|S/B}}; with this, the stacked letters changed from embossed to flat.
+|-
+|[[File:Illinois New School Bus License Plate.jpg|150px]]
+|123 456{{small|'''S'''/'''B'''}}
+|-
+|[[File:Illinois Semi Trailer 2025 license plate.jpg|150px]]
+|Semi-Trailer
+|ca. 1976
+|Green serial on white
+|1234 {{small|'''S'''/'''T'''}}<br>12 345{{small|'''S'''/'''T'''}}<br>123 456{{small|'''S'''/'''T'''}}<br>1234567{{small|'''S'''/'''T'''}}
+|1 {{small|S/T}} to<br>1032416{{small|S/T (as of September 25, 2025)}}
+|Plates were replaced annually through 1998. Starting in 1999, semi trailer plates are issued on a permanent basis (no renewal sticker required).
+|-
+|[[File:Illinois Window Tint License Plate.jpg|150px]]
+|Tinted Windows
+|2009
+|Black serial on 2001 passenger base
+|10 000 '''WT'''
+|10 000 WT to <br>12 387 WT {{small|(as of November 5, 2025)}}
+|Plates are issued to individuals with a medical condition requiring tinted windows.<ref>{{Cite web|url=https://www.ilsos.gov/departments/vehicles/license-plate-guide/tinted-windows.html|title=Tinted Windows License Plates |website=ilsos.gov|access-date=September 24, 2025}}</ref>
+|}
+
+==Temporary registration permits==
+===1914 to 1982===
+The use of "License Applied For" windshield signs or similar devices can be traced back to at least 1914. Their use is likely back to 1911 when Illinois first began to provide state issued license plates.<ref>{{cite news |title=Autoists Given New Warning |work=Chicago Tribune |date=May 1, 1914 |page=7 }}</ref><ref>{{cite news |title=Struck By Unlicensed Car |work=Chicago Tribune |date=August 16, 1915 |page=2 }}</ref><ref>{{cite news |title=Bandits Slay Saloon Man And Rob Him Of $300 |work=Chicago Tribune |date=April 22, 1917 |page=11 }}</ref><ref>{{cite news |last=Reader |first=A |date=July 26, 1920 |title=Motor Licenses |work=Chicago Tribune |page=6 }}</ref><ref>{{cite news |last=Foust |first=Hal |date=December 25, 1932 |title=Drivers Have One More Week To Get Plates |work=Chicago Tribune |page=A10 }}</ref> Defacing the signs was not taken lightly, and fines were handed out for tampering with them in even the most minor way.<ref>{{cite news |title="Nerts to All Policemen" Sign Brings a $10 Fine |work=Chicago Tribune |date=July 13, 1932 |page=10 }}</ref> In 1933 many new cars were seen in Chicago without the required sign.<ref>{{cite news |last=Foust |first=Hal |date=July 15, 1933 |title=City And Park Police Wink At Unlicensed Cars |work=Chicago Tribune |page=2 }}</ref> There is little evidence of the use of "License Applied For" signs  throughout the 1940s, 1950s, and 1960s, but no other system of temporary vehicle registration is known for these decades. In the early 1970s Illinois vehicle owners were again receiving a small piece of cardboard with the words "License Applied For" to be taped to the inside of the vehicle's windshield until their license plates arrived in the mail.<ref>{{cite news |last=Hofmann |first=H. R. |date=July 30, 1971 |title=License Plate Loophole |work=Chicago Tribune |page=10 }}</ref><ref>{{cite news |last=Soll |first=Rick |date=July 10, 1973 |title=Teen shot - bad payment for a good life |work=Chicago Tribune |page=2 }}</ref> These signs continued to be issued until the early 1980s.<ref>{{cite news |title=Action Line |work=Chicago Tribune |date=November 23, 1980 |page=A8 }}</ref>
+
+===1983 to 2000===
+By 1983 this had transitioned to a Temporary Registration Permit on blue banknote paper for state residents that purchased new or used cars. These permits were supposed to be displayed in the lower right corner of the windshield. If new plates did not arrive in the mail within 60 days, the permit could be renewed. State residents who privately purchased a new or used vehicle were required to place a copy of their registration application in the lower right corner of the windshield and place a copy of the bill of sale in the lower left window. There has never been a charge for these permits.<ref>{{cite report |author=Jim Edgar |date=1983 |title=1983 License Plate Handbook |publisher=Illinois Secretary of State |page=18 }}</ref><ref>{{cite report |author=Jim Edgar |date=1987 |title=Illinois License Plate Guide |publisher=Illinois Secretary of State |page=21 }}</ref>
+
+Each of these permits had a unique number at the bottom left hand corner. In 1984 a prefix was added to the permit number so that the location of where the permit was obtained could be identified. The following prefixes were used: B for agents of the Secretary of State; CX for currency exchanges; DL for Illinois vehicle dealers; and RM for licensed remittance agents.<ref>{{cite report |author=Jim Edgar |date=1984 |title=1984 License Plate Handbook |publisher=Illinois Secretary of State |page=18 }}</ref>
+
+A revised permit form and new codes were used beginning in 1986. The primary change to the form was the expiration date went from being the same size as most of the text on the form to becoming the prominent feature with characters at least {{convert|1|in|cm}} in size. The acronym "EXP" (expires) immediately proceeded the Month, Day, and Year boxes at the top of the form. This change provided much better visibility of when a temporary permit expired. The revised codes were CUR for currency exchanges; DLR for Illinois vehicle dealers; MVS for agents of the Secretary of State; and REM for licensed remittance agents. The code and the unique serial number continued to appear at the bottom of the form.<ref>{{cite report |author=Jim Edgar |date=1986 |title=1986 Calendar License Plate Handbook |publisher=Illinois Secretary of State |page=21 }}</ref>
+
+By 1993 this system had been changed to an orange Temporary Registration Permit that showed both a large expiration date and a large temporary registration number. This paper tag was three inches wide by eight inches long, and it was supposed to be displayed in the back window of the vehicle. Problems with this permit, as well as the previous blue permit, were that they could easily be altered, their small size made them difficult to read, the numbers were not entered into police databases of plate numbers, and with the increased popularity of tinted windows the orange permits were often nearly invisible to other motorists, pedestrians, and the police.<ref>{{cite news |title=Police and fire report |work=Chicago Tribune |date=July 27, 1993 |page= 3}}</ref><ref>{{cite news |title=Activists, Ryan To Discuss Car Stickers |work=Chicago Tribune |date=November 19, 1997 |page=2C }}</ref><ref name=Unfriendly>{{cite news |title=Temporary Vehicle IDs To Be Crook Unfriendly |work=Chicago Tribune |date=June 12, 1998 |page=7 }}</ref> Originally these permits were valid for 60 days, but circa 1998 the length of time they could be used was extended to 90 days.<ref>{{cite news |title=Licenses That Endanger Cops |work=Chicago Tribune |date=November 25, 2000 |page=24 }}</ref>
+
+In June 1998 it was announced that new Temporary Registration Permits would begin to be issued in March 1999. Stickers, the size of regular license plates, were to be placed in the same location as normal plates. They were designed to be difficult to alter, would shred if moved, and therefore could not be transferred to another vehicle.<ref name=Unfriendly /> This system was never implemented, and it wasn't until June 2001 that the orange temporary permitting form was replaced with an entirely revised permitting system.<ref name=NewPermits>{{cite news |last=Holt |first=Douglas |date=June 20, 2001 |title=State takes temporary licenses off the window |work=Chicago Tribune |page=2C.3 }}</ref> The last of the orange permits did not expire until December 31, 2001.<ref>{{cite news |title=Orange tags now off street |work=Chicago Tribune |date=January 4, 2002 |page=3 }}</ref>
+
+===2001 to present===
+[[File:Illinois 2004 Temporary Registration Permit.png|thumb|2004 temporary registration permit]]
+"Responding to complaints that temporary vehicle tags help criminals escape detection, Secretary of State [[Jesse White (politician)|Jesse White]] announced a $2 million program [on] Tuesday [June 19, 2001] to introduce tamper-proof temporary license plates that will allow police to know the identity of vehicle owners."<ref name=NewPermits /> He also called the black on yellow permit design, "One of the finest devised by man."<ref>{{cite news |last1=Warren |first1=Ellen |last2=Armour |first2=Terry  |title=For these 'Bums,' names changed to protect baseball |work=Chicago Tribune |date=June 20, 2001 |page=2}}</ref> These tags were the size of regular license plates, they incorporated a hologram in a strip across the entire plate, they had numbers the same size as a regular license plate, and they were immediately entered into law enforcement databases upon being issued. The expiration date was under a clear film to make them tamper-proof. Plates were valid for 90 days, which was the same length as the old system, and only a single permit for the rear of the vehicle was issued. The first day of issue was June 12, 2001 with these earliest permits being distributed to drivers license facilities, auto dealers, and currency exchanges.<ref name=NewPermits />
+
+The main problem with the new temporary permit, which remain in use today and are colloquially known as a temporary plate, is that the cardboard plate easily darkens when it gets wet, usually from rain, snow, or car washes, and consequently many begin to look old when left attached to a vehicle for as few as 30 days. Changes to the design since being issued include the format of the serial number being updated (see below), the plates red lettering has been revised, the state seal has been removed, and the boxes that indicate the month of expiration have been separated into four different groups. Regular updates to the year boxes are necessary to keep the plates current. All vehicle types use this temporary registration permit with the exception of motorcycles and mopeds which use a smaller permit with a slightly modified format than the standard permit.
+
+Initially the format used for the permit was the same as that of a passenger car license plate: three numbers followed by a space and then four more numbers {{nowrap|(123 4567)}}. For motorcycles and mopeds the format was three numbers followed by a space and then three more numbers {{nowrap|(123 456)}}. This led to there sometimes being the same number on both a permanent registration and a temporary registration. Eventually the inevitable mix-up happened, and a person with a permanent plate was pulled over for having the serial number of a temporary plate which was being looked for by the police. The proliferation of vanity plates and specialty plates, like the Environmental and Prevent Violence plates, some of which also carried the same serial number sequence as regular passenger plates, was also of concern.<ref>{{cite news |date=September 14, 2002 |title=Tag mix-up shows flaw in Illinois system |work=Chicago Tribune |page=11 }}</ref><ref>{{cite news |title=State will study changes to temporary license tags |work=Chicago Tribune |date=September 20, 2002 |page=3 }}</ref><ref>{{cite news |title=Selling out safety in Illinois |work=Chicago Tribune |date=September 23, 2002 |page=14 }}</ref>
+
+The confusion caused by duplicate serial numbers led to a format change on the permits in the spring of 2003. The new format for passenger permits consisted of three numbers, a letter, and three more numbers {{nowrap|(123 A 456)}}; the format for motorcycle and moped plates was similar but with two numbers before the letter instead of three {{nowrap|(12 A 345)}}. In both cases, T was the first letter used, followed by A, B, C etc., with I, O and Q skipped. With the introduction of the new formats, the red state seal between the sets of characters was removed.
+
+Starting in late 2020, a revised tag design was introduced along with a new serial format {{nowrap|(123 AA 456)}}. The previous format reached as high as 561 V 749 before the change.
+
+==Specialty plates==
+In addition to regular passenger plates, Illinois offers a large variety of specialty plates to include plates for colleges, professional sports teams, law enforcement, hunting (sporting), medical research, and many other causes. The cost of each set of plates differs depending on the type of plate and the required donation amount to annually display these plates.
+
+{|class=wikitable
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Illinois Agriculture License Plate.jpg|150px]]
+|Agriculture
+|2009<ref>{{Cite web|url=https://www.iaafoundation.org/get-involved/why-give/saluting-agriculture-license-plate|title=Saluting Agriculture License Plate|website=iaafoundation.org|access-date=2024-12-28}}</ref>
+|1234 {{small|'''A'''/'''G'''}}
+|1000 {{small|A/G}} to present
+|
+|-
+|[[File:Illinois Alzheimer's Assn. License Plate.jpg|150px]]
+|Alzheimer's Association
+|2018<ref>{{Cite web|url=https://www.wandtv.com/news/new-illinois-license-plates-support-alzheimers-association/article_f53e1b96-c0bc-52b8-9312-b4f0efccf391.html|date=June 12, 2018|title=New Illinois license plates support Alzheimer's Association|website=wandtv.com|access-date=2024-12-28}}</ref>
+|1234 {{small|'''D'''/'''A'''}}
+|1000 {{small|D/A}} to present
+|
+|-
+|[[File:Illinois America Remembers License Plate.jpg|150px]]
+|America Remembers
+|2002<ref>{{Cite web|url=https://www.ilsos.gov/news/2002/september/020909d1.pdf|title=Secretary White Unveils "America Remembers" License Plate|website=ilsos.gov|access-date=2024-12-28}}</ref>
+|1234 {{small|'''A'''/'''R'''}}
+|1000 {{small|A/R}} to present
+|
+|-
+|[[File:IL Bears License Plate.jpg|150px]]
+|[[Chicago Bears]]
+|2011<ref>{{Cite web|url=https://www.ilsos.gov/news/2011/march/110328d1.pdf|date=March 28, 2011|title=Jesse White and the Chicago Bears Unveil New Permanent Bears License Plate|website=ilsos.gov|access-date=August 25, 2025}}</ref>
+|123 {{small|'''B'''/'''D'''}}<br>1234 {{small|'''B'''/'''D'''}}<br>12345 {{small|'''B'''/'''D'''}}
+|100 {{small|B/D}} to present
+|
+|-
+|[[File:Illinois Bulls License Plate.jpg|150px]]
+|[[Chicago Bulls]]
+|2011<ref>{{Cite web|url=https://www.nba.com/bulls/news/chicago-bulls-and-illinois-secretary-state-unveil-permanent-bulls-license-plate.html|date=April 25, 2011|title=Chicago Bulls and Illinois Secretary of State unveil permanent Bulls license plate|website=nba.com|access-date=April 4, 2026}}</ref>
+|123 {{small|'''B'''/'''U'''}}<br>1234 {{small|'''B'''/'''U'''}}<br>12345 {{small|'''B'''/'''U'''}}
+|100 {{small|B/U}} to present
+|
+|-
+|[[File:Illinois Cubs License Plate.jpg|150px]]
+|[[Chicago Cubs]]
+|2011<ref>{{Cite web|url=https://www.nbcchicago.com/news/local/illinois-chicago-cubs-license-plate/1910815|date=January 26, 2011|title=Illinois Debuts Chicago Cubs License Plate|website=nbcchicago.com|access-date=April 4, 2026}}</ref>
+|123 {{small|'''C'''/'''C'''}}<br>1234 {{small|'''C'''/'''C'''}}<br>12345 {{small|'''C'''/'''C'''}}
+|100 {{small|C/C}} to present
+|
+|-
+|[[File:Illinois White Sox License Plate.jpg|150px]]
+|[[Chicago White Sox]]
+|2011
+|123 {{small|'''W'''/'''S'''}}<br>1234 {{small|'''W'''/'''S'''}}<br>12345 {{small|'''W'''/'''S'''}}
+|100 {{small|W/S}} to present
+|
+|-
+|[[File:Old Illinois Environmental Plate.jpg|150x150px]]
+|rowspan="2"|Environmental
+|1994
+|'''E'''1234<br>'''E'''12345<br>'''E'''123456
+|E1000 to present
+|rowspan="2"|The baseplate design and serial format changed in 2011, in order for the state to issue standard passenger plates beginning with the E prefix, which occurred around 2016. Motorists who elected to retain their plate number received the new baseplate with their existing 4-, 5-, or 6-digit numeric serial followed by the new {{small|E/N}} suffix.
+|-
+|[[File:Illinois Green Environmental License Plate.jpg|150px]]
+|2011
+|1234 {{small|'''E'''/'''N'''}}<br>12345 {{small|'''E'''/'''N'''}}<br>{{nowrap|123456 {{small|'''E'''/'''N'''}}}}
+|1000 {{small|E/N}} to present
+|-
+|[[File:Illinois Firefighters Memorial license plate 1st type.png|150px]]
+|rowspan=2 |Firefighters Memorial
+|1996
+|123 {{small|'''F'''/'''F'''}}<br>1234 {{small|'''F'''/'''F'''}}<br>12345 {{small|'''F'''/'''F'''}}
+|100 {{small|F/F}} to {{nowrap|99999 {{small|F/F}}}}
+|
+|-
+|[[File:Illinois Firefighters Memorial license plate 2nd type.png|150px]]
+|2019
+|1A 234{{small|'''F'''/'''F'''}}
+|1A 100 to {{nowrap|9A 999,}} <br>1B 100 to 1J 088 {{small|(as of December 27, 2023)}}
+|This is only the second type of Illinois plate to intermingle numbers and letters. The other type is the Temporary Registration Permit.
+|-
+|[[File:Illinois Panhellenic License Plate - Alpha Kappa Alpha.jpg|150px]]
+|Pan Hellenic - [[Alpha Kappa Alpha]]
+|rowspan="7" |2023
+||1234 {{small|'''A'''/'''K'''}}
+|1001 {{small|A/K}} to present
+|rowspan="7" |Pan Hellenic specialty plates are offered with the choice of nine fraternities/sororities. Fees benefit children, the underprivileged, and older adults as well as educational and civic events in Illinois.<ref>{{Cite web|url=https://www.ilsos.gov/content/dam/publications/pdf_publications/vsd946.pdf|title=Illinois Pan Hellenic License Plates|website=ilsos.gov|access-date=November 20, 2025}}</ref>
+|-
+|[[File:Illinois Alpha Phi Alpha License Plate.jpg|150px]]
+|Pan Hellenic - [[Alpha Phi Alpha]]
+|1234 {{small|'''P'''/'''A'''}}
+|1001 {{small|P/A}} to present
+|-
+|[[File:Illinois Delta Sigma Theta License Plate.jpg|150px]]
+|Pan Hellenic - [[Delta Sigma Theta]]
+|1234 {{small|'''D'''/'''S'''}}
+|1001 {{small|D/S}} to present
+|-
+|[[File:Illinois Kappa Alpha Psi License Plate.jpg|150px]]
+|Pan Hellenic - [[Kappa Alpha Psi]]
+|1234 {{small|'''K'''/'''A'''}}
+|1001 {{small|K/A}} to present
+|-
+|[[File:Illinois Omega Psi Phi License Plate.jpg|150px]]
+|Pan Hellenic - [[Omega Psi Phi]]
+|1234 {{small|'''Q'''/'''U'''}}
+|1001 {{small|Q/U}} to present
+|-
+|[[File:Illinois Phi Beta Sigma License Plate.jpg|150px]]
+|Pan Hellenic - [[Phi Beta Sigma]]
+|1234 {{small|'''P'''/'''B'''}}
+|1001 {{small|P/B}} to present
+|-
+|[[File:Illinois Sigma Gamma Rho License Plate.jpg|150px]]
+|Pan Hellenic - [[Sigma Gamma Rho]]
+|1234 {{small|'''S'''/'''R'''}}
+|1001 {{small|S/R}} to present
+|-
+|[[File:IL Sporting Series License Plate - Deer.jpg|150px]]
+|Sporting Series - Deer
+|1997<ref>{{Cite web|url=https://www.ilsos.gov/special/plate_history/1990_2000.pdf|title=1990-2000 License Plate History|website=ilsos.gov|access-date=May 17, 2026}}</ref>
+|1234 {{small|'''S'''/'''W'''}}
+|100 {{small|S/W}} to present
+|
+|-
+|[[File:Illinois State Police Heritage Foundation license plate.jpg|150px]]
+|State Police Heritage Foundation
+|2014
+|1234 {{small|'''H'''/'''F'''}}
+|1001 {{small|H/F}} to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2" |Veteran - Bronze Star
+|1983
+|{{small|'''B'''/'''Z'''}} 123<br>{{small|'''B'''/'''Z'''}} 1234
+|{{small|B/Z}} 100 to present
+|
+|-
+|[[File:Illinois Bronze Star license plate.jpg|150px]]
+|2006
+|123 {{small|'''B'''/'''Z'''}}<br>1234 {{small|'''B'''/'''Z'''}}<br>12345 {{small|'''B'''/'''Z'''}}
+|100 {{small|B/Z}} to present
+|In 2006, {{small|B/Z}} was moved from prefix to suffix, to match the convention of the other types of veteran plates.
+|-
+|[[File:Illinois Veteran License Plate (1997 issue).jpg|150px]]
+|rowspan=2 |Veteran - Universal
+|1997<ref>{{Cite web|url=https://www.ilsos.gov/special/plate_history/1990_2000.pdf|title=1990-2000 License Plate History|website=ilsos.gov|access-date=April 21, 2025}}</ref>
+|rowspan=2 |123 {{small|'''U'''/'''S'''}}<br>1234 {{small|'''U'''/'''S'''}}<br>12345 {{small|'''U'''/'''S'''}}
+|rowspan=2 |100 {{small|U/S}} to present
+|rowspan=2 |The plate features the words “Illinois Veteran” encircling the State of Illinois. Decals are issued to personalize the plate with a specific branch of service or theater of action, if desired.<ref>{{Cite web|url=https://www.ilsos.gov/special/plate_history/1990_2000.pdf|title=1990-2000 License Plate History|website=ilsos.gov|access-date=April 21, 2025}}</ref><br><br>In 2003, Illinois began to issue veteran plates on the new Veteran-specific base seen here. Prior to 2003, Universal Veteran plates were issued on the 1997 base above, and all other veteran plates were issued on the 1983 passenger base (with a red header instead of blue).
+|-
+|[[File:Illinois Universal Veteran License Plate.jpg|150px]]
+|2003
+|-
+|[[File:Illinois Vietnam Veteran license plate.jpg|150px]]
+|Veteran - Vietnam
+|2006
+|123 {{small|'''V'''/'''N'''}}<br>1234 {{small|'''V'''/'''N'''}}<br>12345 {{small|'''V'''/'''N'''}}
+|100 {{small|V/N}} to present
+|
+|-
+|[[File:Illinois Wildlife Prairie Park License Plate.jpg|150px]]
+|Wildlife Prairie Park
+|1996
+|123 {{small|'''W'''/'''P'''}}<br>1234 {{small|'''W'''/'''P'''}}
+|100 {{small|W/P}} to present
+|
+|}
+
+==Special Event plates==
+Special Event plates are available to civic organizations and other groups. The event must be open to the public and it must promote the interests of Illinois citizens. Plates may be displayed for the 60 days prior to the last day of the event and the basic cost per set of two plates is $10. The full cost of the plate is determined by the number of colors, and at least 50 sets of plates must be ordered. The Illinois Secretary of State must approve the design of all plates.<ref>{{cite web |url=https://www.cyberdriveillinois.com/departments/vehicles/license_plate_guide/specialevent.html |title=Special Event License Plates |author=<!--Not stated--> |website=www.cyberdriveillinois.com |publisher=Illinois Secretary of State |access-date=August 1, 2020}}</ref>
+
+{|class=wikitable
+|-
+!Image
+!Type
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Illinois 1987 Governor's Conference license plate - 77.jpg|150px]]
+|1987 Midwest Governor's Conference
+|White on pale blue
+|
+|
+|Used for 30–60 days.
+|-
+|[[File:Illinois World Columbian Stamp Expo Registration Plate.png|150px]]
+|1992 World Columbian Stamp Exposition
+|Pale blue on white
+|
+|
+|
+|-
+|[[File:Illinois 1992 LPGA Sun Times Challenge license plate - 40.jpg|150px]]
+|1992 LPGA [[Chicago Challenge]]
+|Black on yellow
+|
+|
+|Used for 30–60 days.
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.cyberdriveillinois.com/departments/vehicles/license_plate_guide/home.html Illinois Secretary of State License Plate Guide]
+*[https://www.15q.net/il.html Illinois license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200326004946/https://www.15q.net/il.html |date=March 26, 2020 }}
+*[http://platesmania.com/us/illinois More photos of Illinois license plates]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Illinois}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Illinois}}
+[[Category:Vehicle registration plates of the United States by state or territory|Illinois]]
+[[Category:Transportation in Illinois]]
+[[Category:Illinois transportation-related lists]]

@@ -1,0 +1,1623 @@
+{{short description|Wisconsin vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =2024 Wisconsin Passenger AXS-2802.jpg 
+| nickname =
+| slogan_label = Slogan
+| slogan = America's Dairyland
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-1234 (2017-present)<br />123-ABC (2000-2017)
+| current_start_date = {{Start date|2000|06}}
+| designer = 
+| issuer = [[Wisconsin Department of Transportation]], Division of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1905|07|01}}
+}}
+The U.S. state of [[Wisconsin]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1905. Plates are currently issued by the [[Wisconsin Department of Transportation]] (WisDOT) through its Division of Motor Vehicles. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1905 to 1941===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1911 Wisconsin License Plate 17676-W.jpg|150px]]
+|{{nowrap|1905–11}}
+|Riveted aluminum serial on black plate
+|''none''
+|12345-'''W'''
+|1-W to 21983-W<ref name="Tanner">{{cite web |last=Tanner |first=Eric N. |title=Wisconsin Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Wisconsin&code=wi |publisher=allaboutlicenseplates.com |access-date=December 9, 2020}}</ref>
+|
+|-
+|[[File:1911 Wisconsin License Plate 105W.jpg|150px]]
+|1911
+|Riveted aluminum serial on dark green plate; vertical "1911" at left
+|''none''
+|1234'''W'''
+|1W to 1287W
+|First dated plate. Issued only to new registrants from August 1 through December 31, 1911.<ref name="Turnbull">{{cite web|last=Turnbull |first=Andrew |title=The Wisconsin Pages: Passenger, 1905-1941 |url=http://www.andrewturnbull.net/plates/wis-p1.html |publisher=The Andrew Turnbull Network |access-date=August 16, 2017}}</ref>
+|-
+|[[File:1912 Wisconsin License Plate 10284W.jpg|150px]]
+|1912
+|Riveted aluminum serial on red plate; vertical "1912" at left
+|''none''
+|12345'''W'''
+|1W to approximately 24600W
+|
+|-
+|[[File:Wisconsin 1913 License Plate.png|150x150px]]
+|1913
+|Riveted aluminum serial on dark blue plate; vertical "1913" at left
+|''none''
+|12345'''W'''
+|1W to approximately 34100W
+|
+|-
+|[[File:Wisconsin 1914 passenger license plate.jpg|150x150px]]
+|1914
+|Embossed black serial on white plate; vertical "1914" at left
+|''none''
+|12345'''W'''
+|1W to approximately 53500W
+|First embossed plate.
+|-
+|[[File:WI 1915.jpg|150x150px]]
+|1915
+|Embossed white serial on black plate; "W 15" at right
+|''none''
+|12345
+|1 to approximately 79500
+|
+|-
+|[[File:WI 1916.jpg|150x150px]]
+|1916
+|Embossed red serial on white plate; vertical "WIS." and "16" at right
+|''none''
+|123456
+|1 to approximately 115000
+|
+|-
+|[[File:Wisconsin 1917 license plate - Number 43521.jpg|150px]]
+|1917
+|Embossed white serial on olive green plate; vertical "WIS." and "17" at right
+|''none''
+|123456
+|1 to approximately 165000
+|
+|-
+|[[File:WI 1918.jpg|150x150px]]
+|1918
+|Embossed black serial on beige plate with border line; "18 W" at right
+|''none''
+|123456
+|1 to approximately 185000
+|
+|-
+|[[File:Wisconsin 1919 150472.jpg|150px]]
+|1919
+|Embossed yellow serial on green plate with border line; "W 19" at right
+|''none''
+|123456
+|1 to approximately 224000
+|
+|-
+|[[File:1920 Wisconsin Passenger.jpg|150px]]
+|1920
+|Embossed white serial on maroon plate; "W 20" at right
+|''none''
+|123456
+|1 to approximately 275000
+|
+|-
+|[[File:1921 Wisconsin Passenger.jpg|150px]]
+|1921
+|Embossed black serial on gray plate; vertical "WIS" and "21" at right
+|''none''
+|123-456
+|1 to approximately 320-000
+|
+|-
+|[[File:1922 Wisconsin Passenger.jpg|150px]]
+|1922
+|Embossed white serial on olive green plate; vertical "WIS" and "22" at right
+|''none''
+|123-456
+|1 to approximately 360-000
+|
+|-
+|[[File:1923 Wisconsin Passenger.jpg|150px]]
+|1923
+|Embossed red serial on white plate; vertical "WIS" and "23" at right
+|''none''
+|123-456
+|1 to approximately 419-000
+|
+|-
+|[[File:1924 Wisconsin Passenger.jpg|150px]]
+|1924
+|Embossed white serial on black plate; vertical "WIS" and "24" at right
+|''none''
+|{{nowrap|''A''123-456}}
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1925 Wisconsin Passenger.jpg|150px]]
+|1925
+|Embossed golden yellow serial on blue plate; vertical "WIS" at left and "25" at bottom right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1926 Wisconsin Passenger.jpg|150px]]
+|1926
+|Embossed black serial on beige plate; "26" at bottom left and vertical "WIS" at right
+|''none''
+|''A''123-456
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Wisconsin 1927 license plate.jpg|150px]]
+|1927
+|Embossed white serial on black plate; vertical "WIS" at left and "27" at bottom right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1928 Wisconsin license plate.JPG|150px]]
+|1928
+|Embossed black serial on orange plate; "28" at bottom left and vertical "WIS" at right
+|''none''
+|''A''123-456
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1929 Wisconsin Passenger.jpg|150px]]
+|1929
+|Embossed white serial on green plate; vertical "WIS" at left and "29" at bottom right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:WI 1930 recolor.jpg|150x150px]]
+|1930
+|Embossed black serial on gray plate; "30" at bottom left and vertical "WIS" at right
+|''none''
+|''A''123-456
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Wisconsin 1931 license plate - Number 29-103D.jpg|150px]]
+|1931
+|Embossed golden yellow serial on blue plate; vertical "WIS" at left and "31" at bottom right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:WI 1932.jpg|150x150px]]
+|1932
+|Embossed blue serial on yellow plate with border line; "WISCONSIN 32" at bottom
+|''none''
+|123456
+|1 to approximately 582000
+|First use of the full state name. Plates under 1000 used small plates through 1933.
+|-
+|[[File:WI 1933 recolor.jpg|150x150px]]
+|1933
+|Embossed white serial on dark blue plate with border line; "WISCONSIN 33" at top
+|''none''
+|123-456
+|1 to approximately 566-000
+|
+|-
+|[[File:1934 Wisconsin passenger car license plate.jpg|150px]]
+|1934
+|Embossed black serial on white plate with border line; "WISCONSIN 34" at bottom
+|''none''
+|123-456
+|1 to approximately 578-000
+|Plates under 10000 used small plates through 1939
+|-
+|[[File:Wisconsin license plate, 1935.jpg|150x150px]]
+|1935
+|Embossed white serial on black plate with border line; "WISCONSIN 35" at top
+|''none''
+|123-456
+|1 to approximately 610-000
+|
+|-
+|[[File:WI 1936 improved color.jpg|150x150px]]
+|1936
+|Embossed green serial on white plate with border line; "36 WISCONSIN" at bottom
+|''none''
+|123-456
+|1 to approximately 667-000
+|
+|-
+|[[File:WI 1937.jpg|150x150px]]
+|1937
+|Embossed white serial on dark blue plate with border line; "37 WISCONSIN" at top
+|''none''
+|123-456
+|1 to approximately 714-000
+|
+|-
+|[[File:1938 Wisconsin license plate.JPG|150px]]
+|1938
+|Embossed black serial on silver plate with border line; "WISCONSIN 1938" at bottom
+|''none''
+|123-456
+|1 to approximately 706-000
+|
+|-
+|[[File:WI 1939.jpg|150x150px]]
+|1939
+|Embossed white serial on black plate with border line; "WISCONSIN 1939" at top
+|''none''
+|123-456
+|1 to approximately 723-000
+|
+|-
+|[[File:WI 1940 early.jpg|150x150px]]
+|rowspan="2"|1940
+|Embossed red serial on white plate with border line; "WISCONSIN 1940" at top
+|rowspan="2"|"AMERICA'S DAIRYLAND" at bottom
+|rowspan="2"|123-456
+|1 to<br>430-350<ref name="Turnbull"/>
+|rowspan="2"|First use of the "America's Dairyland" slogan.
+|-
+|[[File:WIS 1940 late.jpg|150x150px]]
+|As above, but with taller serial [[Die (manufacturing)|die]]s and vertical "WIS-40" used as separator
+|430-351 to approximately 747-000
+|-
+|[[File:Wisconsin 1941 license plate - Number 4805.jpg|150px]]
+|1941
+|Embossed black serial on golden yellow plate; "19 WISCONSIN 41" at bottom
+|"AMERICA'S DAIRYLAND" at top
+|123-456
+|1 to approximately 791-000
+|
+|}
+
+===1942 to 1952===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1942 Wisconsin license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:WI 1942 with 45 tab.jpg|150x150px]]
+|{{nowrap|1942,<br>1943-45}}
+|Embossed golden yellow serial on black plate; "19 WISCONSIN 42" at bottom
+|"AMERICA'S DAIRYLAND" at top
+|123 456
+|1 to 772 000
+|Corners were rounded and plates were revalidated for 1943 with white tabs, for 1944 with green tabs, and for 1945 with white tabs, due to metal conservation for [[World War II]]. Front plates were removed and replaced with windshield stickers around 1943. Large plates stopped issuing at {{nowrap|720 000}} in 1942 and resumed issuing in 1943.<ref name="Tanner" />
+|-
+|[[File:Wisconsin 1942 Wartime passenger license plate.jpg|150x150px]] [[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|Late 1942-late 1943
+|Embossed golden yellow serial on black plate with border line; "WIS" at bottom left, embossed oval with debossed date in bottom right corner
+|''none''
+|A12, A1B, AB1, ABC, 12A, 1A2, 1AB, A123, 1A23
+|A00 to ZZZ, 00A to 9ZZ, A000 to Z999, 0A00 to 9K99<ref name="Tanner" />
+|Plates were small to save metal for the war. Plates used every serial possible in a three digit format then overflowed to a four digit format; serial formats for three digit plates would progress from A00 to A09, then A0A and so on, treating the letters like numbers. I, L, M, O, Q, and W were not used in serials.<ref name="Tanner" /> Early plates were dated 1942 with the oval the same color as the serial, rest of plates were dated 43 and the oval was white. Plates were validated to 1945 with horizontal tabs in the same color as large plates.
+|-
+|[[File:1946 Wisconsin license plate.jpeg|150px]]<br>[[File:WI 46 with 47 tab.jpg|150x150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:WI 1947 w 1949 tab.jpg|150x150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1946–49
+|Embossed white serial on black plate; "EXP WISCONSIN" at top, "46" or "47" at top right
+|rowspan="2"|"AMERICA'S DAIRYLAND" at bottom
+|''1'' 12345<br>{{small|''1''/''0''}} 12345
+|rowspan="2"|Coded by month of expiration (''1'' or {{small|''1''/''0''}})
+|Plates were set to expire between June 1946 and May 1947; later plates didn't have a "46" or "47" date designation. Plates were revalidated for 1947 with orange tabs, for 1948 with yellow tabs, for 1949 with green tabs, for 1950 with light blue tabs, for 1951 with white tabs, and for 1952 with golden yellow tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1951 Wisconsin passenger car license plate, 2 102-856.jpg|150px]]<br>[[File:1952 Wisconsin passenger car license plate, 2 116-227.jpg|150px]]
+|October 1949–52<ref name="Tanner" />
+|As above, but with square corners and thinner serial dies
+|''1'' 12345<br>''1'' 123-456<br>{{small|''1''/''0''}} 12345<br>{{nowrap|{{small|''1''/''0''}} 123-456}}
+|Validated for 1950, 1951 and 1952 in the same manner as for 1946–49 plates. Serials for each month continued from where these plates left off.
+|}
+
+===1953 to 1967===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Wisconsin license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1953 Wisconsin Passenger License Plate L63-776.jpg|150px]]
+[[File:1954 Wisconsin Passenger License Plate T79-549.jpg|150px]]
+|{{nowrap|1953–54}}
+|Embossed black serial on golden yellow plate; "WIS" at top left; month of expiration and "53" at top right
+|"AMERICA'S DAIRYLAND" centered at bottom
+|''A''12-345
+|Letter corresponds to month of expiration (see right)
+|Letters A, B, C, D, E, H, J, K, L, P, T and V were used for January through December respectively; this practice continued through 1960. Revalidated for 1954 with red tabs.
+|-
+|[[File:WI 1955.jpg|150x150px]] [[File:Wisconsin 1956 license plate - Number H40-083.jpg|150px]]
+|1955–56
+|Embossed green serial on white plate; "WIS" at top left; month of expiration and "55" at top right
+|"AMERICA'S DAIRYLAND" centered at bottom
+|''A''12-345<br>{{nowrap|''A'''''K'''-1234}}
+|First letter corresponds to month of expiration
+|Two-letter serial format introduced in months where serials in the one-letter format had been exhausted. Revalidated for 1956 with yellow tabs. Late plates and remakes measured 6" x 12".
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:1958 Wisconsin Passenger.jpg|150px]]
+|1957–58
+|Embossed black serial on golden yellow plate; "WIS" at top left; month of expiration and "57" at top right
+|"AMERICA'S DAIRYLAND" centered at bottom
+|''A''12-345<br>''A''B-1234
+|First letter corresponds to month of expiration
+|First base plate where all plates are 6" x 12". Revalidated for 1958 with white tabs. K, L, and N used as overflow second letters through 1960.
+|-
+|[[File:Wisconsin 1959 license plate - Number L17-595.jpg|150px]] [[File:1960 Wisconsin license plate.jpg|150px]]
+|1959–60
+|Embossed dark green serial on white plate; "WIS" at top left; month of expiration and "59" at top right
+|"AMERICA'S DAIRYLAND" centered at bottom
+|''A''12-345<br>''A''B-1234
+|First letter corresponds to month of expiration
+|Revalidated for 1960 with orange tabs.
+|-
+|[[File:1961 Wisconsin J67-492.jpg|150px]] [[File:1962 Wisconsin Passenger.jpg|150px]]
+|1961–62
+|Embossed black serial on light yellow plate; "WIS" at top left; month of expiration and "61" at top right
+|"AMERICA'S DAIRYLAND" centered at bottom
+|''A''12-345
+|Letter corresponds to month of expiration
+|Two letters assigned for each month (A and B for January, C and D for February and so on up to Y and Z for December, with I and O excluded); this practice continued until 1986. Revalidated for 1962 with stickers.
+|-
+|[[File:1963 Wisconsin license plate.jpg|150px]] [[File:Wisconsin 1964 license plate - Number L73-349.jpg|150px]]
+|1963–64
+|Embossed blue serial on white plate; "WIS" at top left; month of expiration and "63" at top right
+|"AMERICA'S DAIRYLAND" centered at bottom
+|''A''12-345
+|Letter corresponds to month of expiration
+|Revalidated for 1964 with stickers.
+|-
+|[[File:Wisconsin 1967 R 669.jpg|150px]]
+|1965–67
+|Embossed white serial on maroon plate; "WIS" at top left; month of expiration and "65" at top right
+|"AMERICA'S DAIRYLAND" centered at bottom
+|''A''12-345
+|Letter corresponds to month of expiration
+|Revalidated for 1966 and 1967 with stickers.
+|}
+
+===1968 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1971 Wisconsin Passenger X73-926.jpg|150px]]
+|1968–72
+|Embossed black serial on reflective yellow plate; month of expiration, "WISCONSIN" and debossed "68" at bottom
+|"AMERICA'S DAIRYLAND" centered at top
+|''A''12-345<br>''A''B 1234
+|First letter corresponds to month of expiration
+|
+|-
+|[[File:Wisconsin license plate, 1976.png|150px]]
+|1973–79
+|Embossed red serial on reflective white plate; month of expiration, "WISCONSIN" and debossed "73" at bottom
+|"AMERICA'S DAIRYLAND" centered at top
+|''A''12-345<br>''A''B 1234
+|First letter corresponds to month of expiration
+|
+|-
+|[[File:Wisconsin 1993 FF 2325.jpg|150px]]
+|1980&nbsp;– June<br>1986
+|As 1968–72 base, but with debossed "80" at bottom right
+|"AMERICA'S DAIRYLAND" centered at top
+|''A''12-345<br>''A''B 1234
+|First letter corresponds to month of expiration
+|Revalidated until 1993.
+|-
+|[[File:1987 WI Blue letter.jpg|150x150px]]
+|July<br>1986&nbsp;– March 1987
+|Embossed dark blue serial on reflective white plate; "WISCONSIN" screened in dark blue at top left and graphics screened at top right featuring a sailboat and sunset, flying geese, and a farm scene; green and dark blue lines separating state name and graphics from serial
+|rowspan="3"|"America's Dairyland" screened in dark blue centered at bottom
+|rowspan="3"|{{nowrap|ABC-123}}
+|AAA-101 to<br>AZZ-999
+|Recalled starting in August 1993 and replaced with plates with red serials (below). Letters I, O and Q not used in serials; this practice continues today.
+|-
+|[[File:Wisconsin license plate, 1987.png|150px]]
+|March 1987&nbsp;– December 1994
+|rowspan="2"|As above, but with red serial
+|BAA-101 to NMD-999
+|Serial changed from dark blue to red in response to concerns of confusion with [[Vehicle registration plates of Illinois|Illinois plates]] of the time.
+|-
+|[[File:WI 99 Narrow die.jpg|150x150px]]
+|December 1994&nbsp;– June<br>2000
+|NME-101 to WRE-999
+|Narrower dies. All plates with red serials replaced by the end of 2014.
+|-
+|[[File:2004-wi-plate.png|150x150px]]
+|June 2000&nbsp;– April<br>2017
+|rowspan="2"|As above, but with black serial, red state name, graphics revised and green line removed
+|rowspan="2"|"America's Dairyland" screened in red centered at bottom
+|123-ABC
+|101-AAA to<br>999-ZZZ
+|rowspan="2"|Baseplate design updated.
+[[File:WI EV License Plate Sitcker.jpg|100px]]<br>
+In May 2024, an orange ''EV HYBRID'' sticker applied to the top right corner of the front and rear plates became compulsory for [[electric vehicle|electric]] and [[hybrid vehicle]] owners to provide clarity for first responders in an accident.<ref>{{cite news|url=https://www.jsonline.com/story/news/local/wisconsin/2024/04/16/what-to-know-about-wisconsins-new-electric-hybrid-vehicle-stickers/73287482007/|title=Did you get a new Wisconsin electric vehicle sticker in the mail? Here's why.|last=Karnopp|first=Hope|date=16 April 2024|work=[[Milwaukee Journal Sentinel]]|access-date=July 9, 2024}}</ref> 
+|-
+|[[File:2024 Wisconsin Passenger AXS-2802.jpg|150px]]
+|April 2017&nbsp;– present
+|{{nowrap|ABC-1234}}
+|AAA-1001 to BDK-2558 {{small|(as of 4/13/26)}}<ref name=":0">{{Cite web|title=Wisconsin License Plates |url=https://www.licenseplates.cc/WI |access-date=January 8, 2025 |website=www.licenseplates.cc}}</ref>
+|}
+
+==Specialty plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Amateur Radio]]
+|ca. 2000 to present
+|As standard passenger base, but with "Amateur Radio" in place of slogan
+|Amateur Radio
+|[[Amateur radio licensing in the United States#Call sign|Owner's FCC radio call sign]]<br>(4-6 characters)
+|
+|Operator's can put call sign plate on all vehicles owned 
+|-
+|[[File:Wisconsin_Versiti_License_Plate.jpg|150px]]
+|[[Blood donation]]<br>([[List of blood donation agencies in the United States|Versiti]])
+|2021–present
+| Embossed white serial on a multi-colored gold-to-red-to-purple background with Versiti logo to left and the rightmost part of the background; ''WISCONSIN'' rendered in gold, logo and slogan text in white
+| Donation Saves Lives (left) Beacon of Hope (lower)
+| 12345'''VS'''
+|10001VS to 10258VS (as of December 31, 2023)<ref name="mjs-2023-stats" />
+|
+|-
+|[[File:Wisconsin Collector License Plate.jpg|150px]]
+|Collector
+|1972–present
+|Embossed red serial on a blue background
+|Collector
+|123456
+|1 to present
+|Collector plates are issued to vehicles 20 years old or older with no major modifications. Plates do not expire once issued and do not require registration stickers. The owner must also have one regularly licensed motor vehicle in Wisconsin in order to receive Collector plates. Collector plates are not valid during the month of January. Subsequent Collector plates issued to the same owner will feature an "A", "B", etc. appended to the initial Collector plate number.<ref>{{cite web |title=Collector license plates |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/collector-plates.aspx |publisher=Wisconsin DOT |access-date=July 4, 2024}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Children's Trust Fund
+|1999–present
+|Red on white with multicolored image of child with "Children's Trust Fund" at left.
+|Celebrate Children
+|12345'''K'''
+|10001K to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Ducks Unlimited]]
+|2001–present
+|Embossed black serial on white plate; graphic screened at left featuring yellow state shape, green Ducks Unlimited logo and black silhouettes of flying ducks; "WISCONSIN" screened in red centered at top
+|"Ducks Unlimited" screened in red centered at bottom
+|'''D'''12345
+|D10001 to present
+|
+|-
+|[[File:Wisconsin EMT License Plate.jpg|150px]]
+|[[Emergency medical services|Emergency Medical Services]]
+|2011–present
+|Embossed black serial on white plate: Service sticker on left featuring the [[Star of Life]]; "WISCONSIN" screened in red centered at top
+|''Emergency Medical Services'' screened in red centered at bottom; red accents across top or bottom available per driver election
+|12345'''EM'''
+|10001EM to 11315EM (as of December 31, 2023)<ref name="mjs-2023-stats" />
+| Issued to active and licensed [[emergency medical technician]]s, along with former EMTs retired due to an injury suffered on duty
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|Endangered Resources
+|1995-2006
+|Embossed red serial on white plate with wolf image at left
+|rowspan="4"|Endangered Resources
+|rowspan="2"|12345'''E'''
+|10001E to approximately 42925E
+|rowspan="4"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–present
+|As above, but with black text
+|43000E to 60694E {{small|(as of September 2, 2024)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2010-2015
+|Screened black serial on plate with various graphics including a badger
+|rowspan="2"|12345{{small|'''E'''/'''R'''}}
+|10001{{small|E/R}} to 13110{{small|E/R}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2015–present
+|Embossed black serial on plate with eagle graphic as background
+|13151{{small|E/R}} to 18421{{small|E/R}} {{small|(as of September 2, 2024}}
+|-
+|[[File:WI Fleet plate.jpg|150px]]
+|Fleet
+|2023–present
+|Embossed black serial on plate with screened green-and-blue waves background
+|America's Dairyland; FLEET
+|12345A{{small|'''F'''/'''T'''}}
+|10001A{{small|'''F'''/'''T'''}} to 26500A{{small|'''F'''/'''T'''}} {{small|(as of April 27, 2024)}}
+|Starting in 2023, Wisconsin introduced a new fleet plate option for entities operating ten or more standard or light-truck vehicles. This plate does not require registration stickers and can be renewed online.<ref>{{cite web |last=Schilz |first=Indiana |title=Wisconsin DMV debuts new, ‘stylish’ license plate for qualified fleet operators |url=https://www.wearegreenbay.com/news/local-news/wisconsin-dmv-debuts-new-stylish-license-plate-for-qualified-fleet-operators |publisher=wearegreenbay.com |access-date=December 10, 2023}}</ref>
+|-
+|[[File:WI Ice Age Trail plate.jpg|150px]]
+|Ice Age Trail
+|2023–present
+|Embossed black serial on two-tone blue and yellow background with a woolly mammoth at left.
+|IceAgeTrail.org
+|12345{{small|'''A'''/'''T'''}}
+|10001{{small|'''A'''/'''T'''}} to 10630{{small|'''A'''/'''T'''}} {{small|(as of January 12, 2024)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Milwaukee Brewers]] (Glove Logo)
+|2010–2020
+|Embossed white serial on blue plate; Brewers glove logo graphic screened at left.
+|Milwaukee Brewers
+|1234'''AB'''
+|1001AB to present
+|
+|-
+|[[File:Wisconsin Brewers Glove New License Plate.jpg|150px]]
+|2020–present
+|Embossed white serial on dark blue plate; Brewers glove logo graphic screened at left.
+|Brew Crew
+|12345{{small|'''A'''/'''B'''}}
+|10001{{small|A/B}} to present
+|The plate was redesigned in 2020 to match the Brewers' new branding.<ref name="Kaster">{{cite web |last=Kaster |first=Ashley |title=DMV releases new Milwaukee Brewers license plates |url=https://fox11online.com/sports/brewers-and-mlb/dmv-releases-new-milwaukee-brewers-license-plates |publisher=Fox 11 News |access-date=July 4, 2024}}</ref>
+|-
+|[[File:Wisconsin Brewers Old M Logo License Plate.jpg|150px]]
+|rowspan="2"|[[Milwaukee Brewers]] (M Logo)
+|2010–2020
+|rowspan="2"|Embossed white serial on dark blue plate; Brewers "M" logo graphic screened at left.
+|rowspan="2"|Milwaukee Brewers
+|1234'''AC'''
+|1001AC to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2020–present
+|12345{{small|'''A'''/'''C'''}}
+|10001{{small|A/C}} to present
+|The plate was redesigned in 2020 to match the Brewers' new branding.<ref name="Kaster"/>
+|-
+|rowspan="3"|[[File:WI SESQ 1997.jpg|150x150px]]
+|rowspan="3"|Sesquicentennial of Wisconsin's statehood
+|rowspan="3"|1997&nbsp;– January 1, 1999, with remakes made until August 1, 2008<ref>[http://www.dot.wisconsin.gov/drivers/vehicles/personal/sesquifaq.htm Wisconsin DMV]</ref>
+|rowspan="3"|Embossed red serial on lake scene.
+|rowspan="3"|1848 WISCONSIN 1998; SESQUICENTENNIAL
+|12345'''T'''
+|10001T to 99999T
+|rowspan="3"|Awarded "Plate of the Year" for best new [[Vehicle registration plates of the United States#Vanity and specialty plates|optional license plate]] of 1997 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Wisconsin has been so honored. Co-recipient with [[Vehicle registration plates of Manitoba|Manitoba]].
+|-
+|A1234'''T'''
+|A1001T to Z9999T
+|-
+|AB123'''T'''
+|AA101T to DW999T
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+
+|Salutes Veterans
+|2006–present
+|Embossed black serial on white plate; graphic screened at left featuring an eagle, American flag and the Wisconsin flag.
+|"Salutes Veterans"
+|12345'''Y'''
+|10001Y to 12277Y (as of May 8, 2021)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Spay/Neuter/Adopt
+|May 2024 &mdash; present
+|Embossed black serial on a rural farm background; a dog, cat, and rabbit are shown at left.
+|"SPAY-NEUTER-ADOPT"
+|12345{{small|'''S'''/'''N'''}}
+|10001{{small|S/N}} to 10039{{small|S/N}} {{small|(as of June 12, 2024}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Suicide Prevention Foundation
+|May 2024 &mdash; present
+|Embossed white serial on green-to-blue gradient background; a [[lifebuoy]] is shown at the left, with the organization name between the lifebuoy and the serial.
+|"Save Lives. Bring Hope."
+|12345{{small|'''P'''/'''F'''}}
+|10001{{small|P/F}} to 10002{{small|P/F}} {{small|(as of June 12, 2024}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Whitetails Unlimited
+|2017–present
+|Embossed black serial on deer and forest printed backdrop.
+|"Whitetails Unlimited"
+|12345'''W/U'''
+|10001W/U to 17219W/U (as of May 7, 2021)
+|An additional $25 donation with registration fee provides funding for Whitetails Unlimited, a group that provides resources for the conservation of [[whitetail deer]].
+|-
+|[[File:Green bay Packers License Plate.jpg|150x150px]]
+|[[Green Bay Packers]]
+|2001–present
+|Embossed black serial on yellow plate; graphic screened at left featuring Green Bay Packers logo.
+|"Green Bay Packers"
+|12345'''G'''
+|10001G to 38528G (as of March 31, 2021)
+|An additional $25 donation with registration fee provides funding for [[Lambeau Field]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Harley Davidson]]
+|2011–present
+|Embossed black serial on black, grey and orange plate; graphic screened at left Harley-Davidson's symbol.
+|"Share The Road"
+|12345'''H/D'''
+|10001H/D to 12753H/D (as of November 2019)
+|An annual $25 donation with registration fee provides funding towards motorcycle and moped safety and training programs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Nurses Change Lives
+|2019–present
+|Embossed black serial on white plate, red heart and [[stethoscope]] graphic at left.
+|"Nurses Change Lives"
+|12345'''W/N'''
+|10001W/N to 10110W/N (as of August 31, 2020)
+|An annual $25 donation with registration fee provides funding towards the Wisconsin Organization of Nurse Executives.
+|-
+|[[File:Wisconsin "Road America" license plate.jpg|150px]]
+|[[Road America]]
+|2021–present
+|Embossed white serial on black, black and white plate; graphic screened at left is a northward rendering of the track's circuit map.
+|Road America
+|12345'''RA'''
+|10001RA to 20000RA (as of December 31, 2023)<ref name="mjs-2023-stats">{{cite news|url=https://www.jsonline.com/story/news/local/wisconsin/2024/02/19/these-are-wisconsins-most-popular-specialty-license-plates/72562261007/|title=These are the most popular specialty license plates in Wisconsin|last=Karnopp|first=Hope|date=19 February 2024|work=[[Milwaukee Journal Sentinel]]|access-date=12 March 2024}}</ref>
+| Most issued specialty plate of 2023 behind only hobbyist/collector plates and military service plates.
+|-
+|}
+
+==Non-passenger plates==
+===Light truck and bus plates===
+{|class="wikitable"
+|-
+!Image
+!style="width:50px;"|Type
+!Dates issued
+!style="width:250px;"|Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[Bus]]
+|1988-1994
+|Embossed red serial on reflective white plate; "WISCONSIN" at bottom, "BUS" at top
+|{{small|''A''/B}} 123
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1995-2004
+|As 1987-2000 passenger base, but with embossed red "BUS" in place of slogan
+|{{small|''A''/B}} 123
+|Coded by weight class (''A'')
+|Bottom letter is a constant "B"
+|-
+|[[File:BusWisconsin.gif|150px]]
+|2004–present
+|As current passenger base, but with embossed black "BUS" in place of slogan
+|12345'''B'''
+|1001B to 32555B {{small|(as of October 19, 2024)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Farm Truck
+|1994–2004
+|As 1987–2000 passenger base, but with embossed red "FARM" in place of slogan
+|rowspan="3"|123456'''F'''
+|1001F to approximately 140000F
+|rowspan="3"|All Farm Truck plates expire at the end of February in even-numbered years. Narrower serial dies introduced 2001 when 100000F was reached.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|2004–08}}
+|As current passenger base, but with red serial, plus embossed red "FARM" in place of slogan
+|140001F to approximately 162000F
+|-
+|[[File:FarmWiscon.gif|150px]]
+|2008–present
+|As above, but with black serial and "FARM", plus embossed "FEB" at bottom left
+|200001F to 318450F, 348451F to 376781F {{small|(as of March 22, 2025)}}
+|-
+|[[File:1988 Wisconsin Truck AE50-823.jpg|150px]]
+|rowspan="4"|Light Truck
+|1987–94
+|Embossed blue serial on tan plate; "WISCONSIN" at bottom and "TRUCK" at top; debossed "88" at bottom right
+|rowspan="2"|{{nowrap|{{small|''A''/B}}12-345}}
+|rowspan="2"|Coded by weight class (''A'')
+|rowspan="4"|Weight classes are as follows: A (4,500 lb and under), B (4,501 to 6,000 lb) and C (6,001 lb to 8,000 lb).<ref>{{cite web |last=Tanner |first=Eric N. |title=Wisconsin Truck-Commercial License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Truck-Commercial&jurisdiction=Wisconsin&code=wi |publisher=allaboutlicenseplates.com |access-date=December 9, 2020}}</ref> In the AB1234 serial format, serials AW1001 through DF9999 were skipped to avoid confusion with Temporary plates. Personalized plates also issued.
+|-
+|[[File:1996 Wisconsin Truck AJ58-426.jpg|150px]]
+|1995–2000
+|As 1987–2000 passenger base, but with embossed red "TRUCK" in place of slogan
+|-
+|[[File:LightTruckWiscon.gif|150px]]
+|2000–04
+|rowspan="2"|As current passenger base, but with embossed black "TRUCK" in place of slogan, plus sticker for weight class at left
+|123456
+|100001 to 999999
+|-
+|[[File:2025 Wisconsin Truck VB4450.jpg|150px]]
+|2004–present
+|AB1234
+|AA1001 to AV9999;<br>DG1001 to WA1659 {{small|(as April 12, 2025)}}
+|}
+
+===Heavy truck and trailer plates===
+{|class="wikitable"
+|-
+!Image
+!style="width:50px";|Type
+!Dates issued
+!style="width:250px;"|Design
+!Serial format
+!style="width:80px;"|Serials issued
+!Notes
+|-
+|[[File:2004 Wisconsin Apportioned 44802.jpg|150px]]
+|rowspan="6"|Apportioned
+|{{nowrap|1999-2000}}
+|Embossed red serial on white plate; "APPORTIONED" and "WISCONSIN" centered at top and bottom respectively; debossed "99" at bottom right
+|rowspan="2"|12345
+|101 to 54164
+|rowspan="6"|Weight classes are truck and heavy truck weight classes. Weight classes are indicated by a letter sticker
+|-
+|rowspan="3"|[[File:2018 Wisconsin Apportioned 54804X.jpg|150px]]
+|rowspan="3"|2001-2018
+|rowspan="3"|As above but with "APPORTIONED" at bottom and "WISCONSIN" at top and no debossed "99" at bottom right
+|65909 to 99999
+|-
+|rowspan="4"|12345A
+|101W to 99999W
+|-
+|10001X to 79999X
+|-
+|rowspan="2"|[[File:2020 Wisconsin Apportioned 94884X.jpg|150px]]
+|rowspan="2"|2018–present
+|rowspan="2"|As above but with a black serial instead of a red serial
+|80000X to 99999X
+|-
+|10001Z to 80000Z {{small|(as of October 2024)}}
+|-
+
+|[[File:1992 Wisconsin Trailer FA940.jpg|150px]]
+|rowspan="3|Trailer
+|1992-93
+|Embossed green serial on white plate; "TRAILER" and "WISCONSIN" centered at top and bottom respectively; "92" at bottom right
+|{{small|''A''/B}}1234
+|rowspan="3"|Coded by weight class (''A'')
+|Weight classes are truck and heavy truck weight classes
+|-
+|[[File:2001 Wisconsin Trailer CT14190.jpg|150px]]
+|1994-2008
+|Embossed black serial on light teal plate; "TRAILER" and "WISCONSIN" centered at top and bottom respectively; "94" at bottom right
+|rowspan="2"|{{small|''A''/B}}12345
+|Bottom letters (B) started at R then overflowed to T
+|-
+|[[File:2014 Wisconsin Trailer XR50757.jpg|150px]]
+|2009–present
+|Embossed black serial on gray plate; "TRAILER" and "WISCONSIN" centered at top and bottom respectively
+|A Y weight class (14,000&nbsp;lb) was added in 2009. C and Y weight class trailer plates started at C/A and Y/A respectively, while other trailer plates started where the 1994 series left off
+|-
+
+|[[File:1992 Wisconsin Heavy Truck DB 9487.jpg|150px]]
+|rowspan="3"|Heavy Truck
+|{{nowrap|1992–93}}
+|Embossed green serial on white plate; "TRUCK" and "WISCONSIN" centered at top and bottom respectively; "92" at bottom right
+|{{small|''A''/B}}1234
+|rowspan="3"|Coded by weight class (''A'')
+|rowspan="3"|Weight classes are as follows: X (10,000&nbsp;lb), D (12,000&nbsp;lb), E (16,000&nbsp;lb), F (20,000&nbsp;lb), G (26,000&nbsp;lb), H (32,000&nbsp;lb), J (38,000&nbsp;lb), K (44,000&nbsp;lb), L (50,000&nbsp;lb), M (54,000&nbsp;lb), N (56,000&nbsp;lb), P (62,000&nbsp;lb), Q (68,000&nbsp;lb), R (73,000&nbsp;lb), S (76,000&nbsp;lb), and T (80,000&nbsp;lb).<ref>{{cite web |title=Registered gross weight |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/val-gross-weight.aspx |publisher=Wisconsin Department of Transportation |access-date=November 7, 2020}}</ref>
+|-
+|[[File:1994 Wisconsin Heavy Truck DG19118.jpg|150px]]
+|1994–2008
+|Embossed black serial on light teal plate; "TRUCK" and "WISCONSIN" centered at top and bottom respectively; "94" at bottom right
+|rowspan="2"|{{small|''A''/B}}12345
+|-
+|[[File:2009 Wisconsin Heavy Truck XD13638.jpg|150px]]
+|2009–present
+|Embossed black serial on gray plate; "TRUCK" and "WISCONSIN" centered at top and bottom respectively
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Heavy farm truck
+|1992-1993
+|Embossed green serial on white plate; "FARM" and "WISCONSIN" centered at top and bottom respectively; "FEB" embossed at top right, "93" debossed at bottom right
+|{{small|''A''/'''F'''}}1234
+|rowspan="3"|Coded by weight class
+|Issued to farm trucks over 12,000lbs. Weight classes are heavy truck weight classes from E upward.
+|-
+|[[File:2009 Wisconsin Heavy Farm FF32904.jpg|150px]]
+|1994-2008
+|Embossed black serial on teal plate; "FARM" and "WISCONSIN" centered at top and bottom respectively; "FEB" embossed at top right; "95" or "94" debossed at bottom right
+|rowspan="2"|{{small|''A''/'''F'''}}12345
+|Serials start at ''A''F30001. Early plates had a debossed "95" at bottom right, later plates had a debossed "94" at bottom right.
+|-
+|[[File:2022 Wisconsin Heavy Farm FF35883.jpg|150px]]
+|2009–Present
+|Embossed black serial on gray plate; "FARM" and "WISCONSIN" centered at top and bottom respectively
+|
+|-
+
+|[[File:1992 Wisconsin Farm Trailer DF 2512.jpg|150px]]
+|rowspan="3"|Farm Trailer
+|1992-1993
+|Embossed green serial on white plate; "FARM TRAILER" and "WISCONSIN" centered at top and bottom respectively; "DEC" embossed at top right, "92" debossed at bottom right
+|{{small|''A''/'''F'''}}1234
+|rowspan="3"|Coded by weight class
+|Serials start at ''A''F1001. Weight classes are same as trailer weight classes.
+|-
+|[[File:2008 Wisconsin Farm Trailer FF 8762.jpg|150px]]
+|1994-2008
+|Embossed black serial on teal plate; "FARM TRAILER" and "WISCONSIN" centered at top and bottom respectively; "DEC" embossed at top right, "94" debossed at bottom right
+|rowspan="2"|{{small|''A''/'''F'''}}12345
+|Serials start at ''A''F5001
+|-
+|[[File:2020 Wisconsin Farm Trailer YF11677.jpg|150px]]
+|2009–Present
+|Embossed black serial on gray plate; "FARM TRAILER" and "WISCONSIN" centered at top and bottom respectively; "DEC" embossed at top right
+|
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Trailer (vehicle)|Light Trailer]]
+|2000–present
+|As current passenger base, but with embossed black "TRAILER" in place of slogan
+|12345{{small|'''Z'''/'''A'''}}
+|1001{{small|Z/A}} to 15522{{small|Z/A}} {{small|(as of March 7, 2024)}}
+|Optional plates for regular trailers weighing 3,000&nbsp;lb or less, and for rental trailers weighing 4,500&nbsp;lb or less.<ref name="WisDOTTrk">{{cite web |title=Heavy trucks and trailers license plates |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/heavy-trucks.aspx |publisher=Wisconsin Department of Transportation |access-date=December 10, 2020}}</ref>
+|-
+|[[File:1987 Wisconsin Semi Trailer 451036.jpg|150px]]
+|[[Semi-trailer|Semi-Trailer]]
+|1987–present
+|Embossed black serial on orange plate; "SEMI TRAILER" and "WISCONSIN" centered at top and bottom respectively
+|123456
+|200001 to 860392 {{small|(as of October 7, 2024)}}
+|
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[Tractor unit|Tractor]]
+|1992-1993
+|Embossed green serial on white plate; "TRACTOR" and "WISCONSIN" centered at top and bottom respectively; "92" at bottom right
+|{{small|''A''/B}}1234
+|rowspan="3"|Coded by weight class (''A'')
+|rowspan="3"|Weight classes are truck and heavy truck weight classes
+|-
+|[[File:1994 Wisconsin Tractor MS 2114.jpg|150px]]
+|1994–2008
+|Embossed black serial on light teal plate; "TRACTOR" and "WISCONSIN" centered at top and bottom respectively; "94" at bottom right
+|rowspan="2"|{{small|''A''/'''S'''}}12345
+|-
+|[[File:2009 Wisconsin Tractor TS35363.jpg|150px]]
+|2009–present
+|Embossed black serial on gray plate; "TRACTOR" and "WISCONSIN" centered at top and bottom respectively
+|}
+
+===Motorcycle and moped plates===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!style="width:250px;"|Design
+!style="width:60px;"|Serial format
+!Serials issued
+!Notes
+|-
+|[[File:AutoOldWiscon.png|150px]]
+|rowspan="2"|[[Three-wheeler#Autocycle|Autocycle]]
+|2020-August 2022<ref>{{cite web |title=Wisconsin DMV Official Government Site - Miscellaneous license plates |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/misc.aspx |publisher=[[Wisconsin Department of Transportation]] |access-date=November 29, 2022}}</ref>
+|Embossed black serial on white plate; "WIS&nbsp;APR" screened at bottom offset to left, "AUTOCYCLE" screened at top; year sticker at bottom right
+|rowspan="2"|123A4
+|101A1 to approximately 220B1
+|All plates expire April 30 annually
+|-
+|[[File:AutoNewWiscon.png|150px]]
+|September 2022 – present
+|Embossed black serial on white plate; "WIS" at bottom, "AUTOCYCLE" at top
+|101C1 to 417C1 {{small|(As of May 2024)}}
+|
+|-
+|rowspan="4"|[[File:2002 Wisconsin Moped 13 2X.jpg|150px]]
+|rowspan="6"|[[Moped]]
+|rowspan="4"|1992–2004
+|rowspan="4"|Embossed green serial on white plate; "WIS", year sticker and "MOPED" at bottom; vertical "APR" in center
+|12 34
+|10 01 to 99&nbsp;99
+|rowspan="6"|All moped plates expire on April 30 in even-numbered years.<ref name="WisDOT">{{cite web |title=Motorcycle and moped license plates |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/cycle.aspx |publisher=[[Wisconsin Department of Transportation]] |access-date=June 1, 2020}}</ref>
+|-
+|12 3A
+|10 1A to 99&nbsp;9Z
+|-
+|A1 23
+|A1 01 to Z9&nbsp;99
+|-
+|rowspan="2"|A1 2B
+|A1 1A to E9&nbsp;9Z
+|-
+|rowspan="2"|[[File:2024 Wisconsin Moped B876U.jpg|150px]]
+|rowspan="2"|July 2004–present
+|rowspan="2"|Embossed black serial on white plate; "WISCONSIN" at top; year sticker and "MOPED" at bottom; vertical "APR" at left
+|F1 1A to Z9&nbsp;9Z
+|-
+|A123B
+|A101A to D444J {{small|(as of April 5, 2023)}}
+|-
+|rowspan="3"|[[File:2012 Wisconsin Motorcycle FX693.jpg|150px]]
+|rowspan="8"|[[Motorcycle]]
+|rowspan="3"|1992–2003
+|rowspan="3"|Embossed green serial on white plate; "WIS", year sticker and "APR" at bottom.
+|12345
+|1 to 99999
+|rowspan="8"|All motorcycle plates expire on April 30 in even-numbered years.<ref name="WisDOT"/>
+|-
+|A1234
+|A101 to Z9999
+|-
+|AB123
+|AA101 to KU999
+|-
+|rowspan="3"|[[File:2012 Wisconsin Motorcycle 6255L.jpg|150px]]
+|rowspan="3"|April 2003<ref>{{cite web |title=Wisconsin's new motorcycle plate |url=http://www.licenseplates.cc/story.php?id=94 |publisher=LicensePlates.cc |archive-url=https://web.archive.org/web/20050222095723/http://www.licenseplates.cc/story.php?id=94 |archive-date=February 22, 2005 |access-date=December 10, 2014}}</ref>&nbsp;– 2024
+|rowspan="3"|Embossed black serial on white plate; "WISCONSIN" at top; "APR" and year sticker at bottom
+|AB 123
+|KV 101 to ZZ 999
+|-
+|1234 A
+|1001 A to 9999 Z
+|-
+|rowspan="2"|123 AB
+|101 AA to 999&nbsp;VZ, 101XA to 999XZ, 101&nbsp;WA to 999&nbsp;WZ, 101YA to approximately 999YG?
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|October 2024 – present
+|rowspan="2"|As above, but with a shortened state name of "WIS"
+|101YH? to 999&nbsp;ZZ
+|-
+|A123BC
+|A101AA to A178AA {{small|(As of October 1, 2025}}
+|}
+
+===Governmental plates===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1957 Wisconsin Municipal Plate A.jpg|150px]]
+|rowspan="4"|Municipal
+|1957
+|Embossed red serial on cream plate; "WIS" at top left, "57" at top right; "MUNICIPAL" at bottom
+|12345
+|1 to approximately 16000
+|rowspan="4"|Only rear plates issued.<ref name="WisDOTOfficial">{{cite web |title=Official license plates |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/official.aspx |publisher=Wisconsin Department of Transportation |access-date=September 25, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969-1988
+|Embossed black serial on blue plate; "WISCONSIN" at bottom, "MUNICIPAL" at top
+|12345
+|5001 to approximately 65000
+|-
+|rowspan="2"|[[File:Wisconsin license plate, municipal.gif|150px]]
+|1989–2019
+|rowspan="2"|Embossed black serial on straw-colored plate; "MUNICIPAL" and "WISCONSIN" centered at top and bottom respectively
+|12345
+|5001 to 99999
+|-
+|2019–present
+|'''C'''12345
+|C10001 to C27194 {{small|(as of August 6, 2024)}}
+|-
+|rowspan="2"|[[File:Wisconsin license plate, official.gif|150px]]
+|rowspan="2"|Official
+|rowspan="2"|1989–present
+|rowspan="2"|Embossed black serial on straw-colored plate; embossed hollow star at left; "OFFICIAL" and "WISCONSIN" centered at top and bottom respectively
+|12345
+|3 to 99999
+|rowspan="2"| Serials 1 and 2 reserved for the [[Governor of Wisconsin|Governor]] and [[Lieutenant Governor of Wisconsin|Lieutenant Governor]] respectively; plates with these serials have a second hollow star at the right. Most 1 and 2 plates are unused official souvenir plates <ref>{{cite web |title=Deceptive and Misleading Plates - Wisconsin - ALPCA Archives |url=https://www.alpca.org/fake-license-plates/wisconsin.html |publisher=Automobile License Plate Collectors Association |access-date=February 22, 2021}}</ref>
+|-
+|A1234
+|A101 to F2275 {{small|(as of November 27, 2023)}}
+|-
+|[[File:Wisconsin state owned license plate.gif|150px]]
+|State Owned
+|1981–present
+|Embossed white serial on red plate, "STATE OWNED" and "WISCONSIN" centered at top and bottom respectively
+|12345
+|1001 to 20055 {{small|(as of June 14, 2024)}}
+|Only rear plates issued.<ref name="WisDOTOfficial"/>
+|-
+|[[File:Wisconsin State Patrol Plate.gif|150px]]
+|State Patrol
+|
+|Blue on blue-to-white shaded graphic with Wisconsin State Patrol logo
+|123
+|
+|
+|-
+|[[File:Wisconsin State Patrol Motorcycle Plate.gif|150px]]
+|State Patrol Motorcycle
+|
+|Blue on white with Wisconsin State Patrol logo
+|1
+|
+|
+|}
+
+===Dealer plates===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!style="width:250px;"|Design
+!Serial format
+!Notes
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Dealer
+|2011-2018
+|rowspan="2"|Embossed black serial on aluminum plate; "DEALER" and "WISCONSIN" embossed at top and bottom respectively
+|{{small|'''M'''/'''V'''}} 1234
+|rowspan="2"|Motorcycle dealer plates use motorcycle-sized plates with no prefix, RV dealer plates use an "R/V" prefix in place of an "M/V" prefix, and from 2011-2018 trailer dealer plates used a "T/L" prefix and from 2018 onward used a "W/T" prefix and used a "TRAILER DEALER" caption
+|-
+|2018–present
+|{{small|'''M'''/'''V'''}} 1234A
+|-
+
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Demonstrator
+|2011-2018
+|rowspan="2"|As dealer plate but with "DEMONSTRATOR" in place of caption and embossed "DEC" in lower left corner
+|{{small|'''T'''/'''T'''}} 12345
+|rowspan="2"|Used on truck demonstrations in excess of 8,000 lbs.<ref name="WisDOTDlr">{{cite web |title=Wisconsin DMV Official Government Site - Dealer and other motor vehicle industry license plates |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/dealer.aspx |publisher=Wisconsin Department of Transportation |access-date=February 22, 2021}}</ref> Trailer demonstrator plates use a T/L prefix
+|-
+|2018–present
+|{{nowrap|{{small|'''T'''/'''K'''}} 12345}}
+|-
+
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Wholesaler
+|2011-2018
+|As dealer plate but with "WHOLESALER" in place of caption
+|{{small|'''M'''/'''V'''}} 1234
+|rowspan="2"|Used by people who buy and then resell used vehicles <ref>{{cite web |title=Wisconsin Legislature: 218.0101 |url=https://docs.legis.wisconsin.gov/statutes/statutes/218/i/0101 |publisher=Wisconsin State Legislature |access-date=February 22, 2021}}</ref><ref>{{cite web |title=Wisconsin Legislature: 341.51 |url=https://docs.legis.wisconsin.gov/statutes/statutes/341/IV/51 |publisher=Wisconsin State Legislature |access-date=February 22, 2021}}</ref>
+|-
+|2018–present
+|As dealer plate
+|{{nowrap|{{small|'''W'''/'''H'''}} 1234A}}
+|-
+
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Distributor
+|2011-2018
+|As dealer plate but with "DISTRIBUTOR" in place of caption
+|{{small|'''M'''/'''V'''}} 1234
+|rowspan="2"|Used on vehicles in transit from vehicle manufacturers to vehicle dealerships
+|-
+|2018–present
+|As dealer plate
+|{{small|'''W'''/'''D'''}} 1234A
+|-
+
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Transporter
+|2011-2018
+|rowspan="2"|As demonstrator plate but with "TRANSPORTER" in place of caption
+|{{small|'''M'''/'''V'''}} 1234
+|rowspan="2"|Used on vehicles in transit "on their own wheels" or "under their own power"
+|-
+|2018–present
+|{{small|'''W'''/'''P'''}} 12345
+|-
+
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Manufacturer
+|2011-2018
+|As dealer plate but with "MANUFACTURER" caption
+|{{small|'''M'''/'''V'''}} 1234
+|rowspan="2"|Used on vehicle manufacturers to test or demonstrate vehicles. Motorcycle manufacturer plates are also issued.
+|-
+|2018–present
+|As dealer plate
+|{{nowrap|{{small|'''W'''/'''M'''}} 1234A}}
+|-
+
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Finance Company
+|2011-2018
+|rowspan="2"|As dealer base, but with {{nowrap|"FINANCE CO"}} in place of caption
+|{{small|'''M'''/'''V'''}} 1234
+|rowspan="2"|Used by financial institutions moving or demonstrating repossessed vehicles
+|-
+|2018–present
+|{{small|'''W'''/'''F'''}} 12345
+|}
+
+===Miscellaneous===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!style="width:250px;"|Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|rowspan="4"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="6"|[[Disability|Disabled]]
+|rowspan="4"|1988-2000
+|rowspan="4"|As 1988-2000 passenger base, but with embossed red [[International Symbol of Access]] at right
+|{{small|'''DIS'''}}1234
+|{{small|DIS}}1001 to {{small|DIS}}9999
+|rowspan="6"|
+|-
+|{{small|'''DIS'''}}A123
+|{{small|DIS}}A101 to {{small|DIS}}Z999
+|-
+|{{small|'''DIS'''}} AB12
+|{{small|DIS}}&nbsp;A1 to approximately {{small|DIS}}&nbsp;CZ99
+|-
+|rowspan="2"|12345'''D'''
+|10001D to ?
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|2000–12
+|rowspan="2"|As current passenger base, but with embossed black [[International Symbol of Access]] at right
+|30001D to 99999D<ref>{{cite web |last=Turnbull |first=Andrew |title=The Wisconsin Pages: Passenger-Related Types |url=http://www.andrewturnbull.net/plates/wis-r.html |publisher=The Andrew Turnbull Network |access-date=July 4, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2012–present
+|12345{{small|'''D'''/'''S'''}}
+|10001{{small|D/S}} to 67454{{small|D/S}} {{small|(as of July 24, 2023)}}
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Disabled veteran
+|1988-1992
+|As 1988 passenger base
+|{{small|'''VET'''}}1234
+|{{small|VET}} 1 to at least {{small|VET}}2938
+|rowspan="3"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1992-2009
+|Embossed red serial on light blue base; "DISABLED VETERAN" and "WISCONSIN" screened in blue at top and bottom respectively, stacked "VET" prefix and wheelchair symbol screened in red at left and right respectively.
+|{{small|'''VET'''}}1234
+|{{small|VET}} 1 to {{small|VET}}&nbsp;6634
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009 to present
+|Embossed blue serial on red-white-blue gradient base; "WISCONSIN" and "DISABLED VETERAN" screened in white ovals at top and bottom respectively
+|12345'''V'''
+|10001V to 13868V (as of 2015)
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Human services vehicle
+|1988-2000
+|As 1988-2000 passenger base
+|'''ZY'''A-123
+|ZYA-101 to approximately ZYE-999
+|rowspan="2"|Used on vehicles transporting elderly or disabled people.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2000–present
+|As current passenger base
+|123-'''ZY'''A
+|101-ZYA to 439-ZYJ (as of 2025)
+|-
+
+|[[File:Wisconsin Low Speed License Plate.jpg|150px]]
+|Low Speed
+|2007–present
+|Embossed black serial on turquoise plate; "LOW SPEED" and "WISCONSIN" at top and bottom respectively
+|1234 {{small|'''L'''/'''S'''}}
+|1001 {{small|L/S}} to 2733 {{small|L/S}} (as of July 3, 2024)
+|
+|-
+
+|[[File:1995 Wisconsin Motor Home 52651.jpg|150px]]
+|rowspan="5"|[[Motorhome|Motor Home]]
+|1987–95
+|As 1987–2000 passenger base, but with screened dark blue "Motor Home" in place of slogan
+|rowspan="2"|12345
+|10001 to 70000
+|rowspan="5"|
+|-
+|rowspan="2"|[[File:2006 Wisconsin Motor Home 99344.jpg|150px]]
+|rowspan="2"|1995–2004
+|rowspan="2"|As above, but with narrower serial dies and "MOTOR HOME" embossed in red
+|70001 to 99999
+|-
+|rowspan="3"|A1234
+|A1001 to B3999
+|-
+|[[File:2011 Wisconsin Motor Home D8211.jpg|150px]]
+|2005–08
+|As current passenger base, but with red serial and "MOTOR HOME"
+|B8000 to D9999
+|-
+|[[File:2010 Wisconsin Motor Home E8242.jpg|150px]]
+|2008–present
+|As above, but with black serial and "MOTOR HOME" as from 2000–01
+|E1001 to approximately F9999, B4051 to B8000, G1001 to M3736 {{small|(as of April 16, 2024)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Special-X
+|1998-2004
+|As 1994-2000 passenger base, but with "SPECIAL-X" embossed in place of slogan
+|rowspan="2"|1234 {{small|'''S'''/'''P'''}}
+|1001 {{small|S/P}} to 6400 {{small|S/P}}
+|rowspan="2"|Used on non-profit organization vehicles. All plates back to 1998 are valid and currently in use. Plates are revalidated every 5 years
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2004 to present
+|As above, but with revised graphics
+|6401 {{small|S/P}} to 7845 {{small|S/P}} (as of July 5, 2024)
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Temporary
+|2004–19
+|Red serial on white cardboard plate; state outline in center; "WISCONSIN TEMPORARY" in blue at top; expiration date written at bottom right
+|A12 34B
+|A10 01A to P24&nbsp;66U {{small|(as of August 7, 2018)}}
+|Discontinued on December 31, 2019.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2020–present
+|White serial surrounded by black box on white paper plate. "WISCONSIN TEMPORARY PLATE" printed above, with vehicle information to the left, expiration date to the right and the last 6 [[Vehicle Identification Number|VIN]] digits on the bottom. Affixed to the inside of rear windshield.
+|A1234B, A1234B'''E'''
+|X1687E (as of October 7, 2024), D8604KE (as of February 29, 2024)
+|Both serial versions issued and in use.
+|}
+
+===Discontinued===
+{|class="wikitable"
+!Image
+!Type
+!Dates Issued
+!style="width:250px;"|Design
+!Serial Format
+!Serials Issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Apportioned semi trailer
+|1999-2001
+|Embossed black serial on yellow plate; "WISCONSIN" and "APPORTIONED" at top and bottom respectively
+|{{nowrap|{{small|'''S'''/'''T'''}}12345}}
+|{{small|S/T}}10001 to approximately {{small|S/T}}31000
+|According to the Wisconsin Department of Transportation, plates are now treated as non-expiring semi trailer plates.<ref name="WisDOTTrk" /> Discontinued after California dropped the requirement for apportioning trailers <ref name="TurnbullHeavyTrk2">{{cite web |last=Turnbull |first=Andrew |title=Trailers & Heavier Trucks, Part 2 - The Wisconsin Pages - The Andrew Turnbull License Plate Gallery |url=http://www.andrewturnbull.net/plates/wis-tt2.html |access-date=December 11, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|BX bus
+|1993-1998
+|As 1988 passenger base, but with embossed red "BX BUS" in place of slogan and "98" date designation
+|rowspan="2"|1234 '''BX'''
+|1001 BX to ? 
+|rowspan="2|Used on privately owned urban mass transit vehicles. BX bus plates were merged into bus plates in 2004, and these vehicles now receive bus plates with 5-year registration cycles expiring on December 30.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998-2003
+|As above, but without the date designation
+|4001 BX to 4206 BX
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Dual purpose farm
+|1988-1994
+|Embossed dark blue serial on tan plate; "DUAL PURPOSE FARM" and "WISCONSIN" centered at top and bottom respectively; embossed "JAN" and debossed "88" at bottom left and bottom right respectively (some early plates had a border line)
+|''A''Z 1234
+|Coded by weight class. Letter progression goes in reverse alphabetical order (''A''Z 1001-''A''Z 9999, then ''A''Y 1001 and so on, using the letters Z, Y, W, and V)
+|rowspan="2"|Issued to trucks used for farm and non-farm purposes. All bases from 1988 onward were revalidated through 2009.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994-2004
+|As 1994 passenger base, but with embossed red "DUAL PURP FARM" in place of slogan
+|''A''Z 1234
+|Coded by weight class. Serial picked up where the 1988 base left off
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2004
+|As current passenger base, but with red serial and embossed red "DUAL PURP FARM" in place of slogan
+|''A''Z 1234
+|Coded by weight class
+|Issued very briefly before the series was discontinued in October 2004
+|-
+
+|[[File:1988 Wisconsin Dual Purpose Vehicle 604128.jpg|150px]]
+|rowspan="2"|Dual purpose vehicle
+|1988-1994
+|As 1988 dual purpose farm base, but with embossed "DUAL PURPOSE VEH" in place of caption
+|rowspan="2"|123456
+|600001 to approximately 625999
+|rowspan="2"|Issued to trucks with slide-in camper trailers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994-2004
+|As 1994 passenger base, but with embossed red "DUAL PURP VEH" in place of slogan
+|626001 to approximately 632200
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Driver education
+|1993-1998
+|As 1988 passenger base, but with embossed red "DRIVER ED" in place of slogan
+|1234'''DE'''
+|1001DE to approximately 1900DE
+|rowspan="2"|Older plates from 1998 are still valid and in use as of 2024. Driver education vehicles are currently issued passenger plates with 5-year expirations.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998-2004
+|As above, but without the date designation
+|1234 {{small|'''D'''/'''E'''}}
+|4001 {{small|D/E}} to 4895 {{small|D/E}}
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|School bus
+|1993-1998
+|As 1988 passenger base, but with embossed red "SCHOOL BUS" in place of slogan and "98" date designation
+|12345
+|1001 to approximately 16500
+|rowspan="2"|School bus plates were merged into bus plates in 2004, though they still can be identified by inspection stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998-2004
+|As above, but without the date designation
+|12345{{small|'''S'''/'''B'''}}
+|40001{{small|S/B}} to 55950{{small|S/B}}
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|{{nowrap|Special-UX}}
+|1992-1994
+|Embossed green serial on white plate; "SPECIAL-UX" and "WISCONSIN" embossed at top and bottom respectively; debossed "92" at bottom right
+|rowspan="2"|{{nowrap|{{small|''A'''''X'''}} 1234}}
+|rowspan="2"|Coded by weight class
+|rowspan="2"|Used on trucks and trailers with specific permanently mounted equipment. 1994 plates started at ''A''/X 1001.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994-2004
+|Embossed black serial on light teal plate; "SPECIAL-UX" and "WISCONSIN" embossed at top and bottom respectively; debossed "94" at bottom right
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Special-Z
+|1992-1994
+|Embossed green serial on white plate; "SPECIAL-Z" and "WISCONSIN" embossed at top and bottom respectively; debossed "92" at bottom right
+|rowspan="2"|{{small|''A''/'''Z'''}} 1234
+|rowspan="2"|Coded by weight class
+|rowspan="2"|Used on empty equipment in transit, particularly excavating and carnival vehicles. 1994 plates started at ''A''/Z 1001.
+|-
+|[[File:1994 Wisconsin Special-Z QZ 1286.jpg|150px]]
+|1994-2004
+|Embossed black serial on light teal plate; "SPECIAL-Z" and "WISCONSIN" embossed at top and bottom respectively; debossed "94" at bottom
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|For Hire
+|1988-2000
+|As 1988 passenger base.
+|'''ZZ'''A-123
+|ZZA-101 to at least ZZA-458
+|rowspan="2"|Phased out in favor of passenger plates around 2004. Issued for use on automobiles used for hire under authority of the Transportation Commission, most commonly taxis and shuttle vehicles.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2000-2004?
+|As current passenger base.
+|123-'''ZZ'''A
+|101-ZZA to 638-ZZA
+|}
+
+===Tribal plates===
+Tribal and Indian nation plates are given to members and nonmembers who reside on their respective reservation.<ref>{{cite web |last1= Wisconsin DMV |first1=WisconsinDOT.gov |title=Wisconsin DMV Official Government Site - Tribal/Indian bands license plates |url=https://wisconsindot.gov/Pages/dmv/vehicles/title-plates/tribal.aspx |website=Tribal/Indian bands license plates |publisher=Wisconsin DOT |access-date=1 March 2021}}</ref> Plates also usually bear special-design expiration stickers unavailable to the rest of the state or other reservations, except for Ho-Chunk nation plates, which use standard Wisconsin expiration stickers.
+
+Additionally, most reservations issue non-passenger plates. Truck plates generally start with "T", except for Oneida and Menominee, which use various other prefixes to denote trucks. Most reservations also have motorcycle plates available, and some also issue motorhome plates. Disabled plates are available for multiple reservations, as well as disabled veteran plates. Some also issue plates specifically for municipal and tribal government vehicles.
+
+{|class="wikitable"
+!Image
+!Tribe
+!Dates Issued
+!style="width:250px;"|Design
+!Serial Format
+!Serials Issued
+!Notes
+|-
+|[[File:2017 Wisconsin Bad River Band Tribal Plate A729.jpg|150px]]
+|rowspan="5"|[[Bad River Band of Lake Superior Chippewa]]
+|2006 - c. 2018
+|Embossed black serial on red graphic plate, "BAD RIVER BAND" screened on top and "LAKE SUPERIOR CHIPPEWA" screened in white below.
+|rowspan="3"|A123
+|A001 to approximately A850
+|rowspan="5"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|c. 2019
+|Embossed black serial on white to blue gradient plate; "Bad River Tribe" screened at top above two blue waves, "Of Lake Superior Chippewa Indians" and "WI" screened at bottom, and tribal seal screened at left
+|c. A851 to A899
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|2020 to 2024
+|rowspan="2"|As above, but with the serial screened
+|c. A901 to A999
+|-
+|rowspan="2"|'''BR'''123
+|BR100 to BR299
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2024 to present
+|Embossed black serial on blue, white, and red graphic plate
+|c. BR 300 to BR&nbsp;393 (as of October 5, 2025)
+|-
+
+|[[File:WI Ho-Chunk Nation plate.jpg|150px]]
+|[[Ho-Chunk Nation of Wisconsin]]
+|2020–present
+|Embossed blue serial on blue, white, and green graphic plate.
+|1234'''HC'''
+|1000HC to 1046HC (As of September 12, 2025)
+|
+|-
+|[[File:2014 Wisconsin Lac Courte Oreilles Tribal Plate A549.jpg|150px]]
+|[[Lac Courte Oreilles Band of Lake Superior Chippewa Indians]]
+|2010–Present
+|Screened black serial on white graphic plate with eagle to the left. "LAC COURTE OREILLES" screened in red at top and "OJIBWE NATION" screened in white inside red box below, or, "VETERAN" screened in red inside white box below.
+|A123
+|A101 to B962 (As of October 4, 2025)
+|
+|-
+|[[File:2002 Wisconsin Lac Du Flambeau Tribal Plate 2779.jpg|150px]]
+|[[Lac du Flambeau Band of Lake Superior Chippewa]]
+|1994–Present
+|Embossed blue serial, later a black serial and later a screened black serial on red, white and blue graphic plate, "LAC DU FLAMBEAU" screened on top in white and "OJIBWE NATION" screened in white below. Optional "VETERAN" screened vertically in black at left.
+|1234, T123 or T1234
+|1001 to approximately 6079, T101 to approximately T1019
+|
+|-
+
+|[[File:1981 Wisconsin Menominee Nation Tribal Plate E063.jpg|150px]]
+|rowspan="5"|[[Menominee|Menominee Tribe]]/''de facto'' [[Menominee County, Wisconsin|Menominee County]]
+|1980-1990
+|Embossed blue serial on white plate with embossed thunderbird symbol to left. "WIS" screened in blue at top and "MENOMINEE NATION" screened in blue below.
+|rowspan="2"|A123
+|A001 to at least E343
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1990-1996
+|As 1980-1990 base with inverted colors.
+|A101 to at least C543
+|
+|-
+|[[File:2000 Wisconsin Menominee Nation Tribal Plate A1008.jpg|150px]]
+|1996-2000
+|Embossed black serial on sky and nature scene graphic plate. "WIS" screened in white at top and "MENOMINEE NATION" screened in white below.
+|rowspan="2"|A1234
+|A0100 to at least A2490
+|-
+|[[File:2001 Wisconsin Menominee Nation Tribal Plate A0402.jpg|150px]]
+|2000- c. 2021
+|Revised graphics from 1996 base. "WISCONSIN" now screened on top.
+|A0100 to at least A11147
+|-
+|[[File:2022 Wisconsin Menominee Tribal Plate 122.jpg|150px]]
+|c. 2021 to present
+|Embossed black serial on white plate; "WISCONSIN" screened at top, [[Menominee|"OMĀĒQNOMENĒWAK"]] screened at bottom
+|1234
+|1 to 2273 (As of September 12, 2025)
+|
+|-
+|[[File:2006 Wisconsin Oneida Nation Tribal Plate 7G-2751.jpg|150px]]
+|rowspan="7"|[[Oneida Nation of Wisconsin]]
+|1999-2004
+|Embossed purple serial on white plate with eagle, pine tree and turtle at left. "ONEIDA NATION" screened in purple in top right.
+|'''7G'''-1234
+|7G-1001 to at least 7G-2769
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|2004-2017
+|Embossed black serial on white and purple graphic plate with clan symbols at left. "ONEIDA NATION" screened in purple above and clan sticker screened in purple below.
+|'''3C'''1234
+|3C1001 to at least 3C4496
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Embossed black serial on white plate with eagle at left. "ONEIDA NATION" screened in white inside purple box-like graphic in top right.
+|'''6N'''1234
+|6N1001 to at least 6N3299
+|Regular passenger car
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|'''MH'''-123
+|MH-101 to at least MH-115
+|Motor home
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|2017 to present
+|rowspan="3"|Embossed white serial on black plate; purple band at top with white "ONEIDA NATION" screened at top, clan symbol screened at left, and clan slogan screened at bottom
+|'''BC'''1234
+|BC1001 to BC1061 (As of 2018)
+|Bear clan
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|'''TC'''1234
+|TC1001 to TC1266
+|Turtle clan
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|'''WC'''1234
+|
+|Wolf clan
+|-
+
+|[[File:2021 Wisconsin Red Cliff Band Tribal Plate R00866.jpg|150px]]
+|[[Red Cliff Band of Lake Superior Chippewa|Red Cliff Band]]
+|2012 to present
+|White serial screened on graphic base depicting a cliff on Lake Superior; "Red Cliff Band" screened at top, "Lake Superior Chippewa" screened at bottom, and tribal seal screened in middle behind serial
+|'''R'''12345
+|R00001 to R01057 as of (October 4, 2025)
+|
+|-
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/wi.html Wisconsin license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613174350/https://www.15q.net/wi.html |date=June 13, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Wisconsin}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Wisconsin}}
+[[Category:Vehicle registration plates of the United States by state or territory|Wisconsin]]
+[[Category:Transportation in Wisconsin]]
+[[Category:Wisconsin transportation-related lists]]

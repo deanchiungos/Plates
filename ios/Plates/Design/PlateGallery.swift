@@ -29,17 +29,32 @@ enum ContrastAudit {
     /// hold the whole tile to the stricter number.
     static let threshold = 4.5
 
-    /// Worst case across the gradient — the ink has to hold up at both ends.
-    static func check(_ style: PlateStyle) -> Double {
-        min(ratio(style.bgHex, style.inkHex),
-            ratio(style.bgHex2, style.inkHex))
+    /// Worst case for one plate, which is a different question depending on
+    /// what is behind the type.
+    ///
+    /// A vector plate has a gradient, so the ink has to survive both stops. A
+    /// plate with artwork has one measured field colour — the raster never
+    /// reaches PlateStyle, so auditing bgHex there would be auditing a
+    /// background that is no longer drawn.
+    static func check(_ code: String, _ style: PlateStyle) -> Double {
+        if let art = PlateArtwork.table[code] {
+            return ratio(art.field, art.ink)
+        }
+        return min(ratio(style.bgHex, style.inkHex),
+                   ratio(style.bgHex2, style.inkHex))
     }
 
-    /// Every plate that fails, worst first.
+    /// Every plate that fails *unmitigated*, worst first.
+    ///
+    /// Plates carrying a halo are excluded. They fail the raw number and always
+    /// will: New Mexico is yellow on turquoise on the actual road. The halo is
+    /// the answer to those, so flagging them here would be a permanent red ring
+    /// around a decision already made.
     static func failures() -> [(code: String, ratio: Double)] {
         Plate.all.compactMap { plate in
             guard let s = PlateStyle.style(for: plate.code) else { return nil }
-            let r = check(s)
+            guard PlateArtwork.halo(plate.code) == nil else { return nil }
+            let r = check(plate.code, s)
             return r < threshold ? (plate.code, r) : nil
         }
         .sorted { $0.ratio < $1.ratio }
@@ -71,27 +86,30 @@ struct PlateGallery: View {
     private func header(failures: [String: Double]) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text("Plate catalogue")
-                .font(.system(size: 20, weight: .bold))
+                .font(.plates(size: 20, weight: .bold))
             Text(summary(failures: failures))
-                .font(.system(size: 12))
+                .font(.plates(size: 12))
                 .foregroundStyle(failures.isEmpty ? Theme.inkMuted : Color.red)
         }
     }
 
     private func summary(failures: [String: Double]) -> String {
-        let styled = "\(PlateStyle.catalog.count) of \(Plate.all.count) styled"
+        let art = Plate.all.filter { PlateArtwork.has($0.code) }.count
+        let haloed = Plate.all.filter { PlateArtwork.halo($0.code) != nil }.count
+        let styled = "\(art) art \u{00B7} \(PlateStyle.catalog.count - art) vector"
+            + " of \(Plate.all.count)"
         let contrast = failures.isEmpty
             ? "contrast: all pass"
             : "contrast: \(failures.count) below "
               + String(format: "%.1f", ContrastAudit.threshold) + ":1"
-        return styled + "  \u{00B7}  " + contrast
+        return styled + "  \u{00B7}  " + contrast + "  \u{00B7}  \(haloed) haloed"
     }
 
     private func group(_ title: String, _ plates: [Plate],
                        _ failures: [String: Double]) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
-                .font(.system(size: 13, weight: .bold))
+                .font(.plates(size: 13, weight: .bold))
                 .foregroundStyle(Theme.inkMuted)
 
             LazyVGrid(columns: columns, spacing: 6) {
@@ -106,7 +124,7 @@ struct PlateGallery: View {
                             )
                         if let r = failures[plate.code] {
                             Text(String(format: "%.1f", r))
-                                .font(.system(size: 8, weight: .bold))
+                                .font(.plates(size: 8, weight: .bold))
                                 .foregroundStyle(.red)
                         }
                     }

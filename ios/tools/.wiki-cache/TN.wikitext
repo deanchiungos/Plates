@@ -1,0 +1,1356 @@
+{{short description|Vehicle license plates in Tennessee, United States}}
+{{for|the song|Tennessee Plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = [[File:TennesseeAuto.jpg|230px]]
+| image2 = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = The Volunteer State<br> Optional: In God We Trust
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-1234 (Standard)<br> 123-ABCD (Standard- In God We Trust)
+| current_start_date = {{Start date|2022|01|01}}; revised {{Start date|2023|11|16}}
+| designer = 
+| issuer = [[Tennessee Department of Revenue]], Vehicle Services Division
+| manufacturer = 
+| start_date = {{Start date|1915|07|01}}<br>(pre-state plates from 1905 through June 30, 1915)
+}}
+The U.S. state of [[Tennessee]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1915, when the state began to issue plates.<ref>{{cite web |url=http://leatherlicenseplates.com/old-tennessee-license-plates-vintage-tennessee-license-plates/ |title=Old Tennessee License Plates |publisher=LeatherLicensePlates.com |access-date=June 10, 2017 |archive-date=March 4, 2017 |archive-url=https://web.archive.org/web/20170304135611/http://leatherlicenseplates.com/old-tennessee-license-plates-vintage-tennessee-license-plates/ |url-status=dead }}</ref>
+
+{{As of|2024}}, plates are issued by the [[Tennessee Department of Revenue]] through its Vehicle Services Division. Only rear plates have been required since 1977.
+
+==Passenger baseplates==
+===1915 to 1961===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Tennessee license plate that complied with these standards, following a 21-year period where the plates were roughly the shape of the state of Tennessee.
+
+No slogans were used on passenger plates during the period covered by this subsection.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Embossed white serial on dark blue plate; vertical "1915" and "TENN" at left and right respectively; "EXPIRES DEC 31, 1915" at bottom
+|12345
+|23001 to approximately 27000
+|Issued only to new registrants from July 1 through December 31, 1915, with serials following on from those on pre-state-issued plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed black serial on cream plate; vertical "1916" and "TENN" at left and right respectively; "EXPIRES DEC 31" at bottom
+|12345
+|6001 to approximately 37000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Embossed white serial on black plate with border line; vertical "1917" and "TENN" at left and right respectively
+|12345
+|6001 to approximately 54000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed black serial on light green plate with border line; vertical "TENN" and "1918" at left and right respectively
+|12345
+|6001 to approximately 69000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Embossed white serial on dark blue plate with border line; vertical "TENN" and "1919" at left and right respectively
+|12345
+|6001 to approximately 87000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed black serial on gray plate with border line; vertical "TENN" and "1920" at left and right respectively
+|12345
+|6001 to approximately 95000
+|
+|-
+|[[File:1921 Tennessee license plate.jpg|150px]]
+|1921
+|Embossed black serial on orange plate with border line; vertical "TENN" and "1921" at left at right respectively
+|12345
+|1 to approximately 94000
+|
+|-
+|[[File:1922 Tennessee license plate.jpg|150px]]
+|1922
+|Embossed white serial on dark green plate with border line; vertical "TENN" and "1922" at left and right respectively
+|123456
+|25001 to approximately 148000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed dark blue serial on gray plate with border line; vertical "TENN" and "1923" at left and right respectively
+|123456
+|25001 to approximately 179000
+|
+|-
+|[[File:1924 Tennessee license plate.jpg|150px]]
+|1924
+|Embossed black serial on yellow plate with border line; vertical "TENN" at left and "1924" centered at bottom
+|123-456
+|25-001 to approximately 205-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed white serial on maroon plate with border line; "TENN. 25" at bottom
+|123-456
+|25-001 to approximately 240-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed white serial on black plate with border line; vertical "FRONT" or "REAR" used as separator; "TENN 1926" at bottom
+|123-456
+|100-001 to approximately 349-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed white serial within state outline on lavender plate; vertical "FRONT" or "REAR" used as separator; "TENN" at top right and "27" at bottom right
+|123-456
+|50-001 to approximately 326-000
+|First base to feature the state shape in any form.
+|-
+|[[File:1928 Tennessee license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed white serial on black plate with border line; vertical "FRONT" or "REAR" used as separator; "TENN 1928" at right
+|123-456
+|50-001 to approximately 348-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed white serial on green plate with border line; "TENN 1929" at left
+|123-456
+|2-001 to approximately 323-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed dark blue serial on silver plate with border line; vertical "TENN" used as separator; vertical "1930" at right
+|123-456
+|50-001 to approximately 405-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed yellow serial on black plate with border line; vertical "1931" used as separator; vertical "TENN" at right
+|123-456
+|15-001 to approximately 367-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on black plate with border line; vertical "TENN" and "32" at right
+|123-456
+|10-001 to approximately 347-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1933
+|Embossed cream serial on brown plate with border line; "33" and vertical "TENN" at right
+|123-456
+|10-001 to approximately 359-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed white serial on medium blue plate with border line; "34" and vertical "TENN" used as separator
+|123-456
+|10-001 to approximately 309-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed white serial on black plate with border line; "35" and vertical "TENN" at left
+|123-456
+|10-001 to approximately 332-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed blue serial on silver state-shaped plate with border line; "TENNESSEE 1936" at top
+|123-456
+|10-001 to approximately 343-000
+|First use of the full state name.
+|-
+|rowspan="2"|[[File:Tennessee license plate 1937 graphic.png|150px]]
+|rowspan="2"|1937
+|rowspan="2"|Embossed black serial on yellow state-shaped plate with border line; "TENN. 1937" at bottom
+|{{nowrap|'''C'''123-456}}
+|C30-001 to approximately C371-000
+|rowspan="2"|Weight classes introduced, with C used for vehicles weighing 3,500 lb or less, and D for vehicles above 3,500 lb.<ref name="allaboutlicenseplatesTN">{{cite web |last=Tanner |first=Eric N. |title=Tennessee Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Tennessee&code=tn |publisher=allaboutlicenseplates.com |access-date=November 26, 2020}}</ref>
+|-
+|'''D'''12-345
+|D4-000 to approximately D11-500
+|-
+|rowspan="2"|[[File:1938 Tennessee license plate.jpg|150px]]
+|rowspan="2"|1938
+|rowspan="2"|Embossed blue serial on silver state-shaped plate with border line; "TENN. 38" at bottom
+|123 456
+|100 001 to approximately 443 000
+|rowspan="2"|Weight classes same as 1937, but with no letter used for vehicles weighing 3,500 lb or less.
+|-
+|'''D'''12 345
+|D85 001 to approximately D95 000
+|-
+|[[File:Tennessee license plate 1939 graphic.png|150px]]
+|1939
+|Embossed red serial on silver state-shaped plate with border line; "1939 TENN." at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|County coding introduced. Weight classes remained in use until 1957, with D continuing to be used for vehicles weighing more than 3,500 lb.
+|-
+|[[File:Tennessee license plate 1940 graphic.png|150px]]
+|1940
+|Embossed orange serial on black state-shaped plate with border line; "TENN. 40" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Tennessee license plate 1941 graphic.png|150px]]
+|1941
+|Embossed white serial on black state-shaped plate with border line; "1941 TENN." at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1942 Tennessee license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1942–43}}
+|Embossed black serial on white state-shaped plate with border line; "TENN. 42" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1943 with black tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Tennessee license plate 1944 graphic.png|150px]]
+|1944
+|Embossed white serial on black state-shaped plate with border line; "TENN. 44" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Tennessee license plate 1945 graphic.png|150px]]
+|1945
+|Embossed blue serial on silver state-shaped plate with border line; "TENN. 1945" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1946 Tennessee license plate.jpg|150px]]
+|1946
+|Embossed green serial on silver state-shaped plate with border line; "TENN. 46" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Tennessee license plate 1947 graphic.png|150px]]
+|1947
+|Embossed white serial on black state-shaped plate with border line; "1947 TENN." at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Tennessee license plate 1948 graphic.png|150px]]
+|1948
+|Embossed black serial on yellow state-shaped plate with border line; "TENN. 48" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1949 Tennessee license plate.jpg|150px]]
+|1949
+|Embossed yellow serial on black state-shaped plate with border line; "1949 TENN." at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1950 Tennessee license plate.jpg|150px]]
+|1950
+|Embossed black serial on silver state-shaped plate with border line; "TENN. 50" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1951 Tennessee license plate.jpg|150px]]
+|1951
+|Embossed white serial on orange state-shaped plate with border line; "51 TENN." at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|Issued in the colors of the [[University of Tennessee]].<ref>{{cite book|last=Garrish |first=Christopher |date=2013 |title=Tales from the Back Bumper: A Century of BC Licence Plates |publisher=Heritage House |location=Victoria, British Columbia |page=48 |isbn=978-1-927527-03-0}}</ref>
+|-
+|[[File:1952 Tennessee license plate.jpg|150px]]
+|1952
+|Embossed black serial on white state-shaped plate with border line; "TENN. 52" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1953 Tennessee license plate 2D-7032.png|150px]]
+|1953
+|Embossed blue serial on silver state-shaped plate with border line; "53 TENN." at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1954 Tennessee license plate.jpg|150px]]
+|1954
+|Embossed yellow serial on black state-shaped plate with border line; "TENN. 54" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1955 Tennessee license plate 9-240.jpg|150px]]
+|1955
+|Embossed red serial on white state-shaped plate with border line; "55 TENN." at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Tennessee license plate 1956 graphic.png|150px]]
+|1956
+|Embossed white serial on dark blue state-shaped plate with border line; "TENN. 56" at bottom
+|''1''-12345<br>''10''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1957 Tennessee license plate.jpg|150px]]
+|1957
+|Embossed white serial within state outline on black plate with border line; "TENN. 57" centered at bottom
+|{{small|''1''/A}}&nbsp;1234<br>{{small|''10''/}}&nbsp;1234<br>{{small|''10''/A}}&nbsp;1234
+|Coded by county of issuance (''1'' or ''10'')
+|First 6" x 12" plate.
+|-
+|[[File:1958 Tennessee license plate 32-A5-50.jpg|150px]]
+|1958
+|Embossed black serial on white plate with border line; "TENN" within state outline centered at top; "19" at top left and "58" at top right
+|''1''A-12-34<br>''10''-A1-23
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1959 Tennessee license plate.jpg|150px]]
+|1959
+|Embossed white serial on black plate with border line; "TENN" within state outline centered at top; "59" at top left
+|''1''A-1234<br>''10''-1234<br>''10''-A123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1960 Tennessee license plate 2F-4698.jpg|150px]]
+|1960
+|Embossed black serial on white plate with border line; "TENN" within state outline centered at top; "60" at top right
+|''1''A-1234<br>''10''-1234<br>''10''-A123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1961 Tennessee license plate.jpg|150px]]
+|1961
+|Embossed white serial on black plate with border line; "TENN" within state outline centered at top; "61" at top left
+|''1''A-1234<br>''10''-1234<br>''10''-A123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|}
+
+===1962 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1962 Tennessee license plate 12-3262.jpg|150px]]
+|1962–65
+|Embossed black serial on white plate with border line; "TENN" within state outline centered at top; "62" at top right
+|''none''
+|''1''-1234<br>''1''A-1234<br>''1''AB-123<br>''10''-1234<br>''10''-A123<br>''10''-AB12
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1963, 1964 and 1965 with stickers.
+|-
+|[[File:1966 Tennessee license plate DR-8339.jpg|150px]]
+|1966–70
+|Embossed black serial on white plate with border line; "TENN" within state outline centered at top; county name on sticker centered at bottom, cutting off border line
+|''none''
+|AB-1234
+|AA-0001 to<br>TZ-9999
+|
+|-
+|rowspan="2"|[[File:Tennessee 1976 license plate sticker on 1971 license pate - Number 8-J1396.jpg|150px]]
+|rowspan="2"|1971–75
+|rowspan="2"|As 1966–70 base, but with full border line around plate and no county-name sticker
+|rowspan="2"|''none''
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|{{nowrap|ABC-123}}
+|AAA-001 to approximately ANA-999<ref name="allaboutlicenseplatesTN"/>
+|Supplemental plates issued in counties that had exhausted their allocations of county-code plates.
+|-
+|rowspan="2"|[[File:Tennessee license plate, 1976–1982 series with March 1981 sticker.png|150px]]<br>[[File:1976 to 1982 Tennessee plate AAA000 format.jpg|alt=AAA000 format 1976-82|150x150px]]
+|rowspan="2"|1976–82
+|rowspan="2"|Embossed dark blue serial on reflective white plate; pale yellow [[Seal of Tennessee|state seal]] screened in the center behind serial; blue banner graphic screened at top containing "TENNESSEE" in white in the center
+|rowspan="2"|"Volunteer State" screened in blue centered at bottom
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12
+|Coded by county of issuance (''1'' or ''10'')
+|First base not to feature the state shape since 1935, and first to use the full state name since 1936. Monthly staggered registration introduced. Some plates manufactured in Texas using that state's serial [[Die (manufacturing)|die]]s (pictured).
+|-
+|ABC-123
+|AAA-001 to approximately BPA-999<ref name="allaboutlicenseplatesTN"/>
+|Supplemental plates issued in counties that had exhausted their allocations of county-code plates.
+|-
+|rowspan="2"|[[File:1983 Tennessee license plate 2-R4D95.jpg|150px]]
+|rowspan="2"|1983&nbsp;– December 1987
+|rowspan="2"|Embossed blue serial on reflective white plate; "Tennessee" screened in green centered at top
+|rowspan="2"|"Volunteer State" screened in green centered at bottom, surrounded by green state outline
+|''1''-A1B23<br>''1''-ABC12<br>''10''-1A23<br>''10''-12A3<br>''10''-123A<br>''10''-12AB
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|ABC-123
+|BRK-001 to approximately CZS-999<ref name="allaboutlicenseplatesTN"/>
+|Supplemental plates issued in counties that had exhausted their allocations of county-code plates.
+|-
+|[[File:Tennessee license plate, 1988-1993.png|150px]]
+|January 1988&nbsp;– December 1993
+|Embossed red serial on reflective white plate; blue circle with three white stars (from the [[Flag of Tennessee|state flag]]) screened in the center; "Tennessee" screened in blue centered at top; county name on blue sticker centered at bottom
+|''none''
+|ABC&nbsp;123
+|ABB 001 to ZZZ&nbsp;999 (see right)
+|Serials began at DBB 001 and ran to ZZZ 999, followed by BBB 001 through CZZ 999; vowels and Y were not used until 1993, when Y and then A were used as the first letter (the last serial issued was in the APP series).
+|-
+|[[File:1994 Tennessee license plate SAM PLE.jpg|150px]]
+|January 1994&nbsp;– December 1999
+|Embossed red serial on reflective white plate; [[Tennessee State Capitol]] screened in blue in the center; "BicenTENNial" screened in red and blue at top, offset to left ("TENN" in blue); "1796" and "1996" screened in blue to the right; county name on blue sticker centered at bottom
+|"VOLUNTEER STATE" screened in red centered between "BicenTENNial" and serial
+|123&nbsp;ABC
+|001 ABB to 999&nbsp;ZZZ (see right)
+|Commemorated Tennessee's 200 years of statehood. Serials began at 001 BBB and ran to 999 ZZZ; vowels and Y were not used until 1997, when Y, A, E and U were used as the first letter in that order (the last serial issued was in the UKX series).
+|-
+|[[File:TN SOUNDS GOOD TO ME.jpg|150x150px]]
+|January 2000&nbsp;– December 2005
+|Embossed black serial on reflective white plate; gold rising sun over green state shape screened in the center; "TENNESSEE" screened in blue centered at top; county name on white sticker centered at bottom
+|"Sounds good to me" and "Volunteer State" screened in black centered above and below serial respectively
+|ABC&nbsp;123
+|AAA 001 to approximately TPZ&nbsp;999
+|Early plates used a darker shade of green for the state shape; this was changed to a lighter shade in late 2000 in response to visibility concerns. Letters I and O not used in serials.
+|-
+|
+|January 2006&nbsp;– February 2011
+|rowspan="5"|Screened black serial with state-shaped separator on reflective graphic plate with white sky and green rolling hills; "Tennessee" screened in black centered above serial; county name on white sticker centered at bottom
+|"The Volunteer State" screened in dark green above state name, offset to right
+|123-ABC
+|001-BBB to<br>999-ZZZ
+| rowspan="5" |Vowels not used in the 123-ABC, ABC-123 serial formats. I, O and Q not used in the A12-34B, 1A2-3B4 and 12A-B34 formats.<ref name="allaboutlicenseplatesTN"/> In spring 2020, some plates were manufactured at the Wynne License Plate Plant in Texas using a darker shade of green after a tornado damaged Tennessee's license plate manufacturing facility.<ref>{{Cite web |date=2020-07-07 |title=700 Tennessee license plates lost after March tornadoes |url=https://www.wkrn.com/news/700-tennessee-license-plates-lost-after-march-tornadoes/ |access-date=2023-03-25 |website=WKRN News 2 |language=en-US}}</ref> 
+|-
+|
+[[File:Tn14-2.jpg|150px]]
+|February 2011&nbsp;– April<br>2016
+|rowspan="3"|As above, plus "www.tnvacation.com" screened in black between serial and county sticker
+|A12-34B
+|A00-01A to Z99-99Z
+|-
+|
+|April 2016&nbsp;– June<br>2021
+|1A2-3B4
+|0A0-0A1 to 9Z9-9Z9 
+|-
+| [[File:2021 Tennessee base plate.jpg|150x150px]]
+|June 2021&nbsp;– December 31, 2021
+|12A-B34
+|00A-A01 to 65B-J90
+|-
+|[[File:Tennessee In God We Trust license tag.jpg|150px]]
+|July 1, 2017<ref>{{cite web |last=Strayer |first=Kayla |date=July 6, 2017 |title=In God We Trust plates now available in Tennessee |url=https://newschannel9.com/news/local/in-god-we-trust-plates-now-available-in-tennessee |publisher=[[WTVC]] |access-date=October 14, 2017}}</ref>&nbsp;– December 31, 2021
+|As above, plus "In God We Trust" screened in green above and below separator
+|ABC-123
+|BBB-001 to DXX-700
+|-
+|[[File:2022 Tennessee License Plate Base - Standard Automobile.png|150x150px]]
+| rowspan="2" |January 1, 2022<ref name=":1">{{Cite web |title=New License Plates Coming in 2022 |url=https://www.tn.gov/revenue/news/2022/1/6/new-license-plates-coming-in-2022.html |access-date=2023-03-12 |website=www.tn.gov |language=en}}</ref>&nbsp;&nbsp;– November 15, 2023
+| rowspan="4" |Screened white serial on reflective blue plate with flag emblem as separator; "TENNESSEE" screened in white inside an outlined state map, centered at top; county name on white sticker centered at bottom
+|"THE VOLUNTEER STATE" screened on the top left corner, to the left of the state map; "TNVACATION.COM" screened in white between serial and county sticker
+|ABC-1234
+|BBB-0001 to BRC-2189<ref name=":0">{{Cite web |title=Tennessee License Plates |url=https://www.licenseplates.cc/TN |access-date=2023-03-11 |website=www.licenseplates.cc}}</ref>
+| rowspan="2" |Plate design chosen by online vote.<ref>{{Cite web |title=Gov. Lee Unveils New License Plate Design Picked by Tennesseans |url=https://www.tn.gov/governor/news/2021/10/5/gov--lee-unveils-new-license-plate-design-picked-by-tennesseans.html |access-date=2023-04-08 |website=www.tn.gov |language=en}}</ref>
+|-
+|[[File:Tennessee ‘In God We Trust’ variant plate 2022.jpg|alt=2022 Tennessee "In God We Trust" license plate|frameless|150x150px]]
+|As above, plus "In God We Trust" in the center curved around the state's unofficial logo emblem; "TNVACATION.COM" screened in white between serial and county sticker
+|123-ABCD
+|001-BBBB to 999-BMDM<ref name=":0" />
+|-
+|[[File:TennesseeAuto.jpg|150x150px]]
+| rowspan="2" |November 16, 2023<ref>{{Cite web |title=Standard Plate FAQ |url=https://www.tn.gov/revenue/title-and-registration/license-plates/additional-license-plate-information/standard-plate-faq.html |access-date=2023-12-13 |website=www.tn.gov |language=en}}</ref>&nbsp;– present
+|"THE VOLUNTEER STATE" screened on the top left corner, to the left of the state map
+|ABC-1234
+|BRC-8001 to BVP-2252 {{Small|(as of December 20, 2025)}}<ref name=":0" />
+| rowspan="2" |The changes remove the words www.tnvacation.com from both the standard and In God We Trust license plates.  For the In God We Trust plate option, the words “In God We Trust” is located where www.tnvacation.com previously appeared. BRC-2190 to BRC-8000 were not issued.
+|-
+|[[File:TennesseeAutoGod.jpg|150x150px]]
+|As above, plus "IN GOD WE TRUST" screened in white between serial and county sticker
+|123- ABCD
+|001-BMDN to 490-BRZC {{Small|(as of July 23, 2026)}}<ref name=":0" />
+|}
+
+==County coding==
+From 1939 through 1965 and from 1971 through 1988, Tennessee license plates began with a one- or two-digit county code. The order of the codes was based on the respective populations of each county.
+
+The codes remained constant from 1939 through 1965, then were re-allocated according to population shifts in 1971, 1976 and 1983.<ref>{{cite web |last=Nicholson |first=David |title=Tennessee County Codes |url=http://www.15q.net/tnco.html |publisher=15q.net |access-date=June 1, 2015}}</ref>
+
+{|class="wikitable collapsible collapsed sortable"
+|-
+!County!!1939–65!!1971–76!!1976–83!!1983–88
+|-
+| [[Anderson County, Tennessee|Anderson]] || 29 || 8 || 10 || 13
+|-
+| [[Bedford County, Tennessee|Bedford]] || 25 || 42 || 38 || 44
+|-
+| [[Benton County, Tennessee|Benton]] || 71 || 75 || 71 || 70
+|-
+| [[Bledsoe County, Tennessee|Bledsoe]] || 88 || 84 || 83 || 82
+|-
+| [[Blount County, Tennessee|Blount]] || 10 || 9 || 8 || 10
+|-
+| [[Bradley County, Tennessee|Bradley]] || 19 || 17 || 13 || 12
+|-
+| [[Campbell County, Tennessee|Campbell]] || 31 || 27 || 35 || 28
+|-
+| [[Cannon County, Tennessee|Cannon]] || 80 || 80 || 80 || 80
+|-
+| [[Carroll County, Tennessee|Carroll]] || 35 || 38 || 36 || 43
+|-
+| [[Carter County, Tennessee|Carter]] || 21 || 15 || 17 || 18
+|-
+| [[Cheatham County, Tennessee|Cheatham]] || 68 || 78 || 66 || 55
+|-
+| [[Chester County, Tennessee|Chester]] || 61 || 77 || 77 || 77
+|-
+| [[Claiborne County, Tennessee|Claiborne]] || 49 || 51 || 52 || 48
+|-
+| [[Clay County, Tennessee|Clay]] || 92 || 86 || 87 || 86
+|-
+| [[Cocke County, Tennessee|Cocke]] || 46 || 40 || 37 || 38
+|-
+| [[Coffee County, Tennessee|Coffee]] || 41 || 24 || 25 || 26
+|-
+| [[Crockett County, Tennessee|Crockett]] || 62 || 62 || 62 || 68
+|-
+| [[Cumberland County, Tennessee|Cumberland]] || 58 || 50 || 48 || 40
+|-
+| [[Davidson County, Tennessee|Davidson]] || 1 || 2 || 2 || 2
+|-
+| [[Decatur County, Tennessee|Decatur]] || 83 || 82 || 78 || 79
+|-
+| [[DeKalb County, Tennessee|DeKalb]] || 66 || 73 || 75 || 76
+|-
+| [[Dickson County, Tennessee|Dickson]] || 39 || 52 || 47 || 37
+|-
+| [[Dyer County, Tennessee|Dyer]] || 18 || 22 || 26 || 29
+|-
+| [[Fayette County, Tennessee|Fayette]] || 48 || 33 || 44 || 46
+|-
+| [[Fentress County, Tennessee|Fentress]] || 72 || 64 || 67 || 71
+|-
+| [[Franklin County, Tennessee|Franklin]] || 37 || 31 || 33 || 35
+|-
+| [[Gibson County, Tennessee|Gibson]] || 13 || 12 || 14 || 19
+|-
+| [[Giles County, Tennessee|Giles]] || 24 || 44 || 46 || 47
+|-
+| [[Grainger County, Tennessee|Grainger]] || 70 || 65 || 63 || 62
+|-
+| [[Greene County, Tennessee|Greene]] || 12 || 13 || 15 || 16
+|-
+| [[Grundy County, Tennessee|Grundy]] || 82 || 71 || 76 || 73
+|-
+| [[Hamblen County, Tennessee|Hamblen]] || 27 || 20 || 19 || 20
+|-
+| [[Hamilton County, Tennessee|Hamilton]] || 4 || 4 || 4 || 4
+|-
+| [[Hancock County, Tennessee|Hancock]] || 87 || 85 || 86 || 89
+|-
+| [[Hardeman County, Tennessee|Hardeman]] || 52 || 47 || 45 || 52
+|-
+| [[Hardin County, Tennessee|Hardin]] || 56 || 54 || 54 || 54
+|-
+| [[Hawkins County, Tennessee|Hawkins]] || 43 || 21 || 24 || 23
+|-
+| [[Haywood County, Tennessee|Haywood]] || 47 || 39 || 51 || 57
+|-
+| [[Henderson County, Tennessee|Henderson]] || 57 || 56 || 56 || 56
+|-
+| [[Henry County, Tennessee|Henry]] || 26 || 45 || 42 || 41
+|-
+| [[Hickman County, Tennessee|Hickman]] || 67 || 70 || 72 || 67
+|-
+| [[Houston County, Tennessee|Houston]] || 90 || 92 || 89 || 90
+|-
+| [[Humphreys County, Tennessee|Humphreys]] || 74 || 72 || 65 || 65
+|-
+| [[Jackson County, Tennessee|Jackson]] || 81 || 79 || 81 || 83
+|-
+| [[Jefferson County, Tennessee|Jefferson]] || 44 || 48 || 39 || 36
+|-
+| [[Johnson County, Tennessee|Johnson]] || 73 || 74 || 74 || 74
+|-
+| [[Knox County, Tennessee|Knox]] || 3 || 3 || 3 || 3
+|-
+| [[Lake County, Tennessee|Lake]] || 76 || 76 || 82 || 87
+|-
+| [[Lauderdale County, Tennessee|Lauderdale]] || 42 || 46 || 50 || 49
+|-
+| [[Lawrence County, Tennessee|Lawrence]] || 36 || 26 || 29 || 30
+|-
+| [[Lewis County, Tennessee|Lewis]] || 85 || 87 || 85 || 81
+|-
+| [[Lincoln County, Tennessee|Lincoln]] || 28 || 36 || 40 || 45
+|-
+| [[Loudon County, Tennessee|Loudon]] || 40 || 37 || 41 || 42
+|-
+| [[Macon County, Tennessee|Macon]] || 65 || 66 || 70 || 66
+|-
+| [[Madison County, Tennessee|Madison]] || 7 || 7 || 7 || 11
+|-
+| [[Marion County, Tennessee|Marion]] || 54 || 49 || 49 || 50
+|-
+| [[Marshall County, Tennessee|Marshall]] || 32 || 55 || 55 || 58
+|-
+| [[Maury County, Tennessee|Maury]] || 9 || 14 || 16 || 17
+|-
+| [[McMinn County, Tennessee|McMinn]] || 23 || 19 || 22 || 24
+|-
+| [[McNairy County, Tennessee|McNairy]] || 50 || 53 || 53 || 53
+|-
+| [[Meigs County, Tennessee|Meigs]] || 89 || 90 || 91 || 88
+|-
+| [[Monroe County, Tennessee|Monroe]] || 51 || 41 || 43 || 39
+|-
+| [[Montgomery County, Tennessee|Montgomery]] || 11 || 10 || 9 || 9
+|-
+| [[Moore County, Tennessee|Moore]] || 91 || 95 || 95 || 94
+|-
+| [[Morgan County, Tennessee|Morgan]] || 69 || 63 || 64 || 63
+|-
+| [[Obion County, Tennessee|Obion]] || 17 || 30 || 27 || 33
+|-
+| [[Overton County, Tennessee|Overton]] || 77 || 61 || 60 || 61
+|-
+| [[Perry County, Tennessee|Perry]] || 86 || 89 || 90 || 92
+|-
+| [[Pickett County, Tennessee|Pickett]] || 94 || 93 || 93 || 95
+|-
+| [[Polk County, Tennessee|Polk]] || 63 || 67 || 73 || 75
+|-
+| [[Putnam County, Tennessee|Putnam]] || 34 || 23 || 21 || 22
+|-
+| [[Rhea County, Tennessee|Rhea]] || 53 || 57 || 57 || 51
+|-
+| [[Roane County, Tennessee|Roane]] || 33 || 16 || 18 || 21
+|-
+| [[Robertson County, Tennessee|Robertson]] || 15 || 29 || 28 || 27
+|-
+| [[Rutherford County, Tennessee|Rutherford]] || 8 || 11 || 11 || 8
+|-
+| [[Scott County, Tennessee|Scott]] || 75 || 59 || 61 || 60
+|-
+| [[Sequatchie County, Tennessee|Sequatchie]] || 93 || 88 || 88 || 85
+|-
+| [[Sevier County, Tennessee|Sevier]] || 38 || 34 || 31 || 25
+|-
+| [[Shelby County, Tennessee|Shelby]] || 2 || 1 || 1 || 1
+|-
+| [[Smith County, Tennessee|Smith]] || 55 || 68 || 68 || 69
+|-
+| [[Stewart County, Tennessee|Stewart]] || 79 || 83 || 84 || 84
+|-
+| [[Sullivan County, Tennessee|Sullivan]] || 5 || 5 || 5 || 5
+|-
+| [[Sumner County, Tennessee|Sumner]] || 14 || 18 || 12 || 7
+|-
+| [[Tipton County, Tennessee|Tipton]] || 30 || 25 || 32 || 31
+|-
+| [[Trousdale County, Tennessee|Trousdale]] || 84 || 91 || 92 || 91
+|-
+| [[Unicoi County, Tennessee|Unicoi]] || 59 || 60 || 59 || 64
+|-
+| [[Union County, Tennessee|Union]] || 78 || 81 || 79 || 78
+|-
+| [[Van Buren County, Tennessee|Van Buren]] || 95 || 94 || 94 || 93
+|-
+| [[Warren County, Tennessee|Warren]] || 45 || 43 || 34 || 34
+|-
+| [[Washington County, Tennessee|Washington]] || 6 || 6 || 6 || 6
+|-
+| [[Wayne County, Tennessee|Wayne]] || 64 || 69 || 69 || 72
+|-
+| [[Weakley County, Tennessee|Weakley]] || 22 || 35 || 30 || 32
+|-
+| [[White County, Tennessee|White]] || 60 || 58 || 58 || 59
+|-
+| [[Williamson County, Tennessee|Williamson]] || 20 || 32 || 23 || 14
+|-
+| [[Wilson County, Tennessee|Wilson]] || 16 || 28 || 20 || 15
+|}
+
+==Optional plates==
+Tennessee offers over 200 optional license plates.<ref>{{Cite web |title=Specialty License Plate |url=https://tnspecialtyplates.org/purchase-a-specialty-plate/ |access-date=2023-03-12 |website=TN Arts Commission — TN Specialty Plates |language=en-US}}</ref> Most can be personalized for an additional fee.<ref>{{Cite web |title=Personalized Plates |url=https://personalizedplates.revenue.tn.gov/#/ |access-date=2023-03-25 |website=personalizedplates.revenue.tn.gov}}</ref>
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format'''/s'''
+!Notes
+|-
+|[[File:Ducks.png|150px]]
+|[[Ducks Unlimited]]
+|
+|Embossed black on white; "TENNESSEE" screened in green at top; green Ducks Unlimited logo at left; green bar at bottom containing "Ducks Unlimited" in white
+|{{small|'''D'''/'''U'''}}1234<br>1234{{small|'''D'''/'''U'''}}<br>1{{small|'''D'''/'''U'''}}234
+|
+|-
+|[[File:EquityAllianceTN.png|150px]]
+|The Equity Alliance
+|Fall 2022
+|Screened white on black; "TENNESSEE" screened in white at top, "THE EQUITY ALLIANCE" screened in gray at bottom.
+|'''{{small|A/J}}'''1234
+|Introduced as Tennessee's first all black specialty plate<ref>{{Cite web |last= |first= |date=2021-12-05 |title=The Equity Alliance Introduces Tennessee's First All Black Specialty License Plate |url=http://tntribune.com/the-equity-alliance-introduces-tennessees-first-all-black-specialty-license-plate/ |access-date=2023-03-25 |website=The Tennessee Tribune |language=en-US}}</ref>
+|-
+|[[File:ExploreTN.jpg|150px]]
+|Explore TN
+|March 2023
+|Screened white on black; "TENNESSEE" screened in white at top, "explore tn" screened in white at bottom. Off-road vehicle and mountains screened on left.
+|'''<small>A/Q</small>'''1234<br>1'''<small>A/Q</small>'''234
+|
+|-
+|[[File:MasonsTN.png|150px]]
+|[[Freemasonry]]
+|
+|Screened black on white; "TENNESSEE" screened in blue at top; blue square containing yellow [[Square and Compasses]] at left; blue bar at bottom containing "MASON" in yellow
+|{{small|'''M'''/'''L'''}}1234
+1{{small|'''M'''/'''L'''}}234
+|
+|-
+|[[File:IsaiahTN.jpg|150px]]
+|Isaiah 117 House
+|April 2023
+|Screened black on white; "TENNESSEE" screened in black at top; Isaiah 117 house screened on left; "Isaiah 117" screened at bottom.
+|{{Small|'''A'''/'''X'''}}1234
+|
+|-
+|[[File:MillenialTN.png|150px]]
+|Millennial Debt Foundation
+|October 2022<ref>{{Cite web |last=westonwamp |date=2022-11-04 |title=Tennessee's First All-Black License Plate Arrives As Symbol of Fiscal Stewardship |url=https://www.millennialdebt.org/post/tennessee-s-first-all-black-license-plate-arrives-as-symbol-of-fiscal-stewardship |access-date=2023-03-25 |website=Millennial Debt |language=en}}</ref>
+|Screened white on black; "TENNESSEE" screened in white inside an outlined state map, centered at top; "IN THE BLACK" screened at bottom in silver
+|
+<small>'''A/I'''</small>1234<br>1<small>'''A/I'''</small>234<br>12<small>'''A/I'''</small>34<br>123<small>'''A/I'''</small>4<br>1234<small>'''A/I'''</small><br><small>'''I/A'''</small>1234<br>1<small>'''I/A'''</small>234<br>12<small>'''I/A'''</small>34<br>123<small>'''I/A'''</small>4<br> 1234<small>'''I/A'''</small><br><small>'''A/I'''</small>12345<br>
+|
+|-
+|[[File:SonsConfedsTN.png|150px]]
+|[[Sons of Confederate Veterans]]
+|2004
+|Screened black on white; "TENNESSEE" screened in red at top; Confederate flag screened on left; "SONS OF THE CONFEDERATE VETERANS" screened in red at bottom
+|{{Small|'''C'''/'''V'''}}1234
+1234{{Small|'''C'''/'''V'''}}
+|
+|-
+| colspan="6" |'''''Tennessee Arts Commission'''''<ref>{{Cite web |title=TN Specialty License Plate {{!}} Tennesseans for the Arts |url=https://www.tn4arts.org/buy-a-tn-specialty-license-plate |access-date=2023-04-08 |website=Tn4Arts |language=en}}</ref>
+|-
+|[[File:CoolCatTN.jpg|150px]]
+|Cool Cat
+|1995
+|Originally embossed black serial on white, blue, and lavender background, now screened.  "Tennessee" screened in white at top, bespectacled cat playing saxophone at left, with "ARTS" at bottom in blue.
+|'''A'''1234
+'''<small>A/C</small>'''1234
+
+1234'''<small>A/C</small>'''
+
+12'''<small>A/C</small>'''34
+| rowspan="2" |Artwork by Norris Hall
+|-
+|[[File:CoolFishTN.jpg|150px]] 
+|Fish
+|1995
+|Originally embossed black serial, now screened. "Tennessee" screened in blue at top with fish background. 
+|'''F'''1234
+{{Small|'''A'''/'''F'''}}1234 1234{{Small|'''A'''/'''F'''}}
+
+12{{Small|'''A'''/'''F'''}}34
+|-
+| colspan="6" |'''''Environment & Conservation'''''
+|-
+|<!-- Deleted image removed: [[File:AppalachianTN.jpg|150px]] -->
+|[[Appalachian Trail Conservancy]]
+|2010
+|Serial screened black on blue sky background. "TENNESSEE" screened in black at top, "appalachiantrail.org" screened in green at bottom on mountains screened transparently in background.
+|'''<small>A/T</small>'''1234<br>1'''<small>A/T</small>'''234
+|[[Appalachian Trail Conservancy]] plates<ref>{{Cite web |date=2020-02-12 |title=A.T. License Plates {{!}} Appalachian Trail Conservancy |url=https://appalachiantrail.org/get-involved/contribute/at-license-plates/ |access-date=2023-03-25 |website=Appalachian Trail Conservancy {{!}}}}</ref>
+|-
+|
+| rowspan="2" |[[List of Tennessee state parks and natural areas|State Parks]]
+|1993
+|Embossed black serial on white plate.  "Tennessee State Parks" screened at top in green with purple wildflowers screened in background.
+|'''EV'''12345
+|Font used for "Tennessee" script same as the one used on roadside [[c:File:Tennessee welcome sign.jpg|state border sign]].  Sample at left also carries curious single month-year validation sticker, seen only in 1994 and only on select plates.
+|-
+|[[File:StateParksTN.jpg|150px]]
+|2000
+|Serial screened black on white/light blue. "TENNESSEE" screened in light blue at top. "STATE PARKS" screened in blue at bottom. Purple flowers screened in background.
+|{{Small|'''E'''/'''V'''}}1234
+1234{{Small|'''E'''/'''V'''}}
+1{{Small|'''E'''/'''V'''}}234
+12{{Small|'''E'''/'''V'''}}34
+123{{Small|'''E'''/'''V'''}}4
+'''E'''1234'''V'''
+|
+|-
+|
+|rowspan="2"|[[Great Smoky Mountains National Park]]
+|1997
+|Originally embossed black serial on purple and orange graphic of mountains and sunrise, now screened. "TENNESSEE" screened at top. "Friends of Great Smoky Mountains" screened at left. "Preserve & Protect our National Park" screened at bottom.
+|1234<br>A123<br>123A<br>'''{{small|N/P}}'''1234<br>1234'''{{small|N/P}}'''<br>1'''{{small|N/P}}'''234<br>12'''{{small|N/P}}'''34<br>123'''{{small|N/P}}'''4<br>'''{{small|N/P}}'''A123
+|
+|-
+| 
+|2018
+|Screened black serial on purple and orange graphic of mountains and sunrise. Silhouette of bear standing on ledge at left. "Tennessee" screened at top. Stylized "FRIENDS OF THE SMOKIES" at bottom. 
+|'''{{small|N/P}}'''A123<br>1'''{{small|N/P}}'''A23<br>12'''{{small|N/P}}'''A3
+|Updated design introduced in 2018.
+|-
+| colspan="6" |'''''Collegiate'''''
+|-
+|[[File:TN University of Alabama plate.jpg|alt=Tennessee University of Alabama plate|150x150px]]
+|[[University of Alabama]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "THE UNIVERSITY OF ALABAMA" screened in white at bottom, Alabama capital A logo screened on left.
+|{{Small|'''A'''/'''L'''}}1234
+1234{{Small|'''A'''/'''L'''}}
+12{{Small|'''A'''/'''L'''}}34
+|
+|-
+|[[File:ArkansasTN.jpg|150px]]
+|[[University of Arkansas]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "University of Arkansas" screened in red at bottom, Arkansas Razorback logo screened on left.
+|{{Small|'''U'''/'''A'''}}1234
+1234{{Small|'''U'''/'''A'''}}
+|
+|-
+|[[File:AuburnTN.jpg|150px]]
+|[[Auburn University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "Auburn University" screened in navy with orange outline at bottom, A/U logo screened on left.
+|1234{{Small|'''A'''/'''U'''}}
+{{Small|'''A'''/'''U'''}}1234
+|
+|-
+|[[File:AustinTN.jpg|150px]]
+|[[Austin Peay State University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "Austin Peay State University" screened in white at bottom, A/P logo screened on left.
+|{{Small|'''A'''/'''P'''}}1234
+|
+|-
+|[[File:BelmontTN.jpg|150px]]
+|[[Belmont University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "Belmont University" screened in white at bottom, Belmont University logo screened in black on left.
+|{{Small|'''B'''/'''U'''}}1234
+|
+|-
+|[[File:CarsonNewTN.jpg|150px]]
+|[[Carson–Newman University]]
+|
+|Serial screened black on orange; "TENNESSEE" screened in white at top, "CARSON-NEWMAN" screened in white at bottom, Carson Newman Eagle logo screened on left.
+|{{Small|'''C'''/'''U'''}}1234
+|
+|-
+|[[File:ChristianTN.jpg|150px]]
+|[[Christian Brothers University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "CHRISTIAN BROTHERS UNIVERSITY" screened in white at bottom, CBU logo screened on left.
+|123{{Small|'''C'''/'''B'''}}U
+|
+|-
+|[[File:ClemsonTN.jpg|150px]]
+|[[Clemson University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "Clemson University" screened in black at bottom, Clemson Tiger paw screened in orange on left.
+|{{Small|'''C'''/'''L'''}}1234
+|
+|-
+|[[File:EastTNUni.jpg|150px]]
+|[[East Tennessee State University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "EAST TENNESSEE STATE UNIVERSITY" screened in black at bottom, ETSU logo screened on left.
+|1234{{Small|'''E'''/'''T'''}}
+|
+|-
+|[[File:UniofFlorTN.jpg|150px]]
+|[[University of Florida]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "University of Florida" screened in white at bottom, Gator logo screened on left.
+|{{Small|'''U'''/'''F'''}}1234
+1234{{Small|'''U'''/'''F'''}}
+|
+|-
+|[[File:FlorStatTN.jpg|150px]]
+|[[Florida State University]]
+|
+|Serial screened black on gold; "TENNESSEE" screened in white at top, "FLORIDA STATE UNIVERSITY" screened in white at bottom, Seminole logo screened on left.
+|{{Small|'''F'''/'''S'''}}1234
+|
+|-
+|<!-- Deleted image removed: [[File:FreedTN.jpg|150px]] -->
+|[[Freed–Hardeman University]]
+|
+|Serial screened black on sunset sky background, "TENNESSEE" screened in maroon at top, "FREED-HARDEMAN UNIVERSITY" screened in orange at bottom, University logo screened on right.
+|{{Small|'''F'''/'''H'''}}1234
+|
+|-
+|[[File:GeorgiaTechTN.jpg|150px]]
+|[[Georgia Tech]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "Georgia Tech" screened in gold at bottom, G/T logo screened on left.
+|{{Small|'''G'''/'''T'''}}1234
+|
+|-
+|
+|[[Indiana University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "INDIANA UNIVERSITY" screened in red at bottom, I/U logo screened on left.
+|1234{{Small|'''I'''/'''U'''}}
+|
+|-
+|
+|[[Jackson State University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "THEE I LOVE" screened in white at bottom, JSU logo screened on left.
+|{{Small|'''J'''/'''S'''}}123
+|
+|-
+| 
+|[[University of Kentucky]]
+|1998
+|Serial screened black on white; "TENNESSEE" screened in black at top, "University of Kentucky" screened in blue at bottom, UK/Wildcat logo screened on right, and "UK" Memorial Hall logo screened transparently in background.
+|<small>'''U'''/'''K'''</small>1234
+
+1234<small>'''U'''/'''K'''</small>
+|
+|-
+|
+|[[Lane College]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "LANE COLLEGE" screened in blue at bottom, logo screened on left.
+|{{Small|'''L'''/'''A'''}}1234
+|
+|-
+|
+|[[Lee University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "LEE UNIVERSITY" screened in blue at bottom, logo screened in between serial.
+|'''LU'''1234
+|
+|-
+|
+|[[LeMoyne–Owen College]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "LeMoyne-Owen College" screened in black at bottom, logo screened on left.
+|123{{Small|'''L'''/'''C'''}}
+|
+|-
+|
+|[[Lipscomb University]]
+|
+|Serial screened white on purple; "TENNESSEE" screened in white at top, "LIPSCOMB" screened in gold at bottom, Capital L logo screened in gold on left.
+|{{Small|'''L'''/'''B'''}}1234
+|
+|-
+|
+|[[Maryville College]]
+|
+|Serial screened black on white; "TENNESSEE" screened in garnet at top, "MARYVILLE COLLEGE" screened in garnet at bottom, logo screened on left.
+|{{Small|'''M'''/'''V'''}}1234
+|
+|-
+|
+|[[University of Memphis]]
+|early 1990s
+|Serial screened black on white; "TENNESSEE" screened in white at top, "University of Memphis" screened in white at bottom, Memphis Tiger logo screened on left, and Memphis skyline screened transparently in background. (2018 redesign)
+|1234
+{{Small|'''T'''/'''G'''}}1234
+
+1234{{Small|'''T'''/'''G'''}}
+
+1{{Small|'''T'''/'''G'''}}123
+
+|
+|-
+|
+|[[Middle Tennessee State University]]
+|
+|Serial screened black on white; "Tennessee" screened in white at top, "MIDDLE TENNESSEE STATE UNIVERSITY" screened in white at bottom, MTSU logo screened on left.
+|{{Small|'''M'''/'''T'''}}1234
+|
+|-
+|
+|[[Milligan University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "MILLIGAN UNIVERSITY" screened in white at bottom, M/U logo screened on left.
+|
+|
+|-
+|
+|[[University of Mississippi]]
+|
+|Serial screened black on white; "TENNESSEE" screened in blue at top, "Ole Miss" screened in red outlined in blue at bottom, logo screened on left.
+|{{Small|'''U'''/'''M'''}}1234
+1234{{Small|'''U'''/'''M'''}}
+12{{Small|'''U'''/'''M'''}}34
+|
+|-
+|
+|[[Mississippi State University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in maroon at top, "MISSISSIPPI STATE UNIVERSITY" screened in maroon at bottom, logo screened on left.
+|{{Small|'''M'''/'''S'''}}1234
+1234{{Small|'''M'''/'''S'''}}
+|
+|-
+|
+|[[Penn State University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in blue at top, "PENN STATE ALUMNI ASSOCIATION" screened in blue at bottom, logo screened on left.
+|'''PS'''123
+|
+|-
+|
+|[[Purdue University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "PURDUE UNIVERSITY" screened in gold at bottom, logo screened on left.
+|{{Small|'''P'''/'''U'''}}1234
+|
+|-
+|
+|[[Rhodes College]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "RHODES" screened in white at bottom, logo screened on left.
+|{{Small|'''R'''/'''C'''}}1234
+|
+|-
+|
+|[[Sewanee: The University of the South]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "SEWANEE The University of the South" screened on left. 
+|1{{Small|'''S'''/'''W'''}}23
+|
+|-
+|
+|[[Tennessee State University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, TSU logo screened on left.
+|1234
+|
+|-
+|
+|[[Tennessee Tech University]]
+|
+|Serial screened black on gold, "TENNESSEE" screened in black at top, "TENNESSEE TECH UNIVERSITY" screened in back on bottom, TTU logo screened on left. 
+|{{Small|'''T'''/'''K'''}}1234
+|
+|-
+|
+|[[Tennessee Wesleyan University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in gold at top, "TENNESSEE WESLEYAN" screened in gold on bottom, T/W logo screened on left.
+|{{Small|'''T'''/'''W'''}}1234
+|
+|-
+|
+|[[Trevecca Nazarene University]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "TREVECCA NAZARENE UNIVERSITY" screened in white at bottom, T/U logo screened on left.
+|{{Small|'''T'''/'''U'''}}1234
+|
+|-
+|
+|[[Tusculum University]]
+|
+|Serial screened black on white; "TENNESSEE" screened at top in orange, "TUSCULUM UNIVERSITY" screened in black and white at bottom, T/U logo on left.
+|{{Small|'''T'''/'''L'''}}123
+|
+|-
+|
+|[[University of Tennessee at Chattanooga]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "CHATTANOOGA" screened in white at bottom, Capitol C logo screened on left.
+|1234{{Small|'''T'''/'''C'''}}
+{{Small|'''T'''/'''C'''}}1234
+12{{Small|'''T'''/'''C'''}}34
+|
+|-
+|
+|[[University of Tennessee Health Science Center]]
+|
+|Serial screened black on white; "TENNESSEE" screened in white at top, "THE UNIVERSITY OF TENNESSEE HEALTH SCIENCE CENTER" screened in white at bottom, UT logo above "HSC" screened on left.
+|1234{{Small|'''H'''/'''S'''}}
+|
+|-
+|
+|[[UT–Knoxville]]
+|
+|Serial screened black on orange and white; "TENNESSEE" screened at top in white, "VOLUNTEERS" screened at bottom in white. Power T logo screened on left.
+|1{{Small|'''V'''/'''O'''}}234
+|
+|-
+|
+|[[UT Knoxville]] Alumni Program
+|2021<ref>{{Cite web |last=Jason |date=2020-07-02 |title=New Vol license plates to help fund UT scholarships |url=https://tnspecialtyplates.org/uncategorized/new-vol-license-plates-to-help-fund-ut-scholarships/ |access-date=2023-04-08 |website=TN Arts Commission — TN Specialty Plates |language=en-US}}</ref>
+|Serial screened black on white; "THE UNIVERSITY OF TENNESSEE" screened in white at top, "VOLUNTEERS" screened in white at bottom, Power T logo screened on left.
+|
+|
+|-
+|
+|[[University of Tennessee at Martin]]
+|
+|Serial screened black on white; "TENNESSEE" screened at top in white, "UT MARTIN" screened at bottom in orange and white, Skyhawk logo screened on left.
+|1234{{Small|'''T'''/'''M'''}}
+|
+|-
+|
+|[[Union University]]
+|
+|Serial screened black on white; "TENNESSEE" screened at top in black, "UNION UNIVERSITY" screened at bottom in black, logo and "RELIGIO ET ERUDITO" written on logo crest screened on left.
+|{{Small|'''U'''/'''U'''}}1234
+|
+|-
+|
+|[[University of Tennessee]]- All Colleges System
+|
+|Serial screened black on orange/white; "TENNESSEE" screened in black at top, "THE UNIVERSITY OF TENNESSEE" screened at bottom in black, UT logo screened on left.
+|A123{{Small|'''U'''/'''T'''}}
+|
+|-
+|
+|[[Vanderbilt University]]
+|
+|Serial screened black on gold; "Tennessee" screened in black at top, "VANDERBILT" screened at bottom in white, logo screened on left.
+|{{Small|'''V'''/'''U'''}}1234
+1234{{Small|'''V'''/'''U'''}}
+12{{Small|'''V'''/'''U'''}}34
+|
+|-
+|
+|[[Virginia Tech]]
+|
+|Serial screened black on white; "TENNESSEE" screened in black at top, "GO HOKIES" screened at bottom in maroon, logo screened on left.
+|{{Small|'''V'''/'''T'''}}1234
+|
+|-
+| colspan="6" |'''''Professional Sports Teams'''''
+|-
+|
+|[[Chattanooga FC]]
+|2022
+|Serial screened black on white; "TENNESSEE" screened in white at top, "CHATTANOOGA FC" screened in white at bottom, Chattanooga FC logo screened on left.
+|{{Small|'''F'''/'''C'''}}1234
+{{Small|'''A'''/'''V'''}}1234
+|
+|-
+|
+|[[Memphis Grizzlies]] Version 1<ref>{{Cite web |last=Jason |date=2014-07-28 |title=Memphis Grizzlies announce official license plate |url=https://tnspecialtyplates.org/specialty-license-plates/memphis-grizzlies-announce-official-license-plate/ |access-date=2023-04-08 |website=TN Arts Commission — TN Specialty Plates |language=en-US}}</ref>
+|2015
+|Serial screened black on white; "TENNESSEE" screened in black at top, "MEMPHIS GRIZZLIES" screened in yellow at bottom, Grizz logo screened on left.
+|{{Small|'''M'''/'''G'''}}1234
+1234{{Small|'''M'''/'''G'''}}
+|
+|-
+|
+|[[Memphis Grizzlies]] Version 2
+|2018
+|Serial screened white on navy; "TENNESSEE" screened in Beale Street Blue at top, "MEMPHIS GRIZZLIES" screened in Beale Street Blue at bottom, Grizz logo screened on left.
+|{{Small|'''M'''/'''B'''}}1234
+1234{{Small|'''M'''/'''B'''}}
+12{{Small|'''M'''/'''B'''}}34
+|
+|}
+
+== Gift-A-Tag  specialty plate program ==
+Beginning March 4, 2015,<ref>{{Cite web |last=Jason |date=2015-03-05 |title=You can "gift" speciality license plates |url=https://tnspecialtyplates.org/specialty-license-plates/you-can-gift-speciality-license-plates/ |access-date=2023-04-08 |website=TN Arts Commission — TN Specialty Plates |language=en-US}}</ref> Tennesseans were granted the ability to purchase gift vouchers to buy state specialty plates for relatives and friends. This program is no longer available, but vouchers previously purchased can be redeemed at county clerk offices.<ref>{{Cite web |title=Gift-A-Tag |url=https://tnspecialtyplates.org/gift-a-tag/ |access-date=2023-04-08 |website=TN Arts Commission — TN Specialty Plates |language=en-US}}</ref>
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format'''/s'''
+!style="width:110px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="4" |[[Antique car|Antique Auto]]
+|2001
+|Embossed black on white; "TENNESSEE" and "ANTIQUE AUTO" screened at top and bottom respectively; "PERM" at top right
+| rowspan="2" |{{small|'''A'''/'''A'''}}12345
+|{{small|A/A}}00001 to approximately {{small|A/A}}34000
+|
+|-
+|rowspan="3"|[[File:AntiquePlateTN.jpg|150px]]
+|2006
+|rowspan="3"|As above, but with serial screened
+|{{small|A/A}}34001 to {{small|A/A}}99999
+| rowspan="3" |
+|-
+|2011
+|12345{{small|'''A'''/'''A'''}}
+|00001{{small|A/A}} to 99999{{small|A/A}}
+|-
+|2018
+|1{{small|'''A'''/'''A'''}}2345
+|0{{small|A/A}}0001 to present
+|-
+|[[File:TN disabled 2023.jpg|alt=Tennessee disabled plate 2023|150x150px]]
+| rowspan="3" |[[Disability|Disabled Person]]
+|January 2, 2023<ref>{{Cite web |title=License Plate for Tennesseans with Disabilities to Have New Design in 2023 |url=https://www.tn.gov/didd/news/2023/1/5/license-plate-for-tennesseans-with-disabilities-to-have-new-design-in-2023.html |access-date=2023-04-06 |website=www.tn.gov |language=en}}</ref>
+| rowspan="4" |"THE VOLUNTEER STATE" screened on the top left corner, to the left of the state map
+|{{Small|'''P'''/'''D'''}}12345
+|{{Small|P/D}}00001 to {{Small|P/D}}99999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|March 2023
+|12345'''{{Small|P/D}}'''
+|00001{{Small|P/D}} to 99999{{Small|P/D}} 
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|November 2023
+|1'''{{Small|P/D}}'''2345
+|0{{Small|P/D}}0001 to 0{{Small|P/D}}1000 (as of December 2, 2023)
+|
+|-
+|
+|[[Disability|Disabled Person]] (Confined to Wheelchair)
+|2023
+|'''{{Small|P/C}}'''00001 
+|{{Small|P/C}}00001 to {{Small|P/C}}03022 (as of July 17, 2023)
+|
+|-
+|[[File:TN- Disabled Veteran.jpg|150x150px]]
+|Disabled Veteran
+|2019
+|
+|'''{{Small|D/V}}'''00001
+|{{Small|DV}}00001 to {{Small|D/V}}8052P {{Small|( as of June 17th 2026 )}}
+|
+|-
+|[[File:TN- Hearing Impaired.jpg|150x150px]]
+|[[Hearing-impaired|Hearing Impaired]]
+|January 3, 2022
+|Screened white serial on reflective blue plate with flag emblem as separator; "TENNESSEE" screened in white inside an outlined state map, centered at top; county name on white sticker centered at bottom
+|ABC-1234
+|TTY-0001 to TTY-0275 {{Small|(as of August 5, 2022)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="9" |[[Motorcycle]]
+|2001
+|Embossed black on white with border line; "TENNESSEE" screened at top; "TN" embossed at bottom
+|rowspan="2"|'''Z'''B1234
+|ZA0001 to approximately ZD9500
+|rowspan="7"|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|2002
+|rowspan="2"|As above, but without embossed "TN"
+|ZD9501 to ZW9999
+|-
+|2005
+|rowspan="2"|1234'''Z'''B
+|0001ZA to 9999ZL
+|-
+| rowspan="6" |[[File:TN MOTORCYCLE TAG.jpg|alt=Motorcycle plate|150x150px]]
+|2007
+| rowspan="6" |Screened black on white; "TENNESSEE" screened at top
+|0001ZM to 9999ZV
+|-
+|2008
+|1'''Z'''B234
+|0ZA001 to 9ZV999
+|-
+|2012
+|12'''Z'''B34
+|00ZA01 to 99ZV99
+|-
+|2016
+|123'''Z'''B4
+|000ZA1 to 999ZZ9
+|-
+|2021
+|'''K'''12345
+|K00001 to K99999
+|
+|-
+|2023 
+|12345'''K'''
+|00001K to 21037K <small>(as of November 13, 2023)</small>
+|
+|-
+|
+|Music City Bus
+|2001
+|Serial screened black on white; "TENNESSEE" screened at top
+|{{Small|'''M'''/'''C'''}}12345
+|{{Small|M/C}}00001 to unknown
+|Used on privately owned, nonapportioned entertainer coaches
+|-
+|
+| rowspan="2" |Semi-Trailer
+|2006
+| rowspan="2" |Serial screened black on white; "TENNESSEE" screened at top in blue; "SEMI" screened in blue at bottom 
+|'''U'''123456
+|U000001 to U999999
+|
+|-
+|
+|2019
+|123456'''T'''
+|000001T to 490147T {{Small|(as of October 9, 2023)}}
+|
+|}
+
+== See also ==
+*[[Tennessee Plates]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/tn.html Tennessee license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200622115814/https://www.15q.net/tn.html |date=June 22, 2020 }}
+*[https://web.archive.org/web/20081212133917/http://www.webspawner.com/users/thetagmonkey/index.html Tennessee license plates 1915&ndash;1956]
+
+{{Vehicle registration plates of the United States}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Tennessee}}
+[[Category:Vehicle registration plates of the United States by state or territory|Tennessee]]
+[[Category:Transportation in Tennessee]]
+[[Category:Tennessee transportation-related lists]]

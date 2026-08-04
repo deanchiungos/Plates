@@ -1,0 +1,1389 @@
+{{short description|Mississippi vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Mississippi 2024 license plate.jpg
+| nickname = 
+| slogan_label = Slogan
+| slogan = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123<br />(county-coded)
+| current_start_date = {{Start date|2024|01|01}}
+| designer = 
+| issuer = Mississippi Department of Revenue, Vehicle Licensing Division
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia]]
+| start_date = {{Start date|1912|06|01}}
+}}
+The U.S. state of [[Mississippi]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plates]] in 1912. Since then, the state has gone through a variety of license plate designs and currently has several different designs for passenger, non-passenger, and optional-issue plates.
+
+Plates are currently issued by the Vehicle Licensing Division of the Mississippi Department of Revenue. Mississippi is one of a handful of U.S states that only requires rear plates. The state switched to rear only plates in 1925.
+
+== Passenger baseplates ==
+=== 1912 to 1976 ===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Mississippi license plate that complied with these standards was issued 22 years beforehand, in 1934.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1912 Mississippi license plate.png|150px]]
+|1912
+|Embossed black on white; vertical "1912" and "MISS" at left and right respectively
+|1234
+|
+|First state issue. Local municipalities had issued license plates earlier.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|1913
+|As 1912 base, but with "1913" at right
+|1234
+|
+|One of the rarest license plates in American history. Only two plates are known to exist.
+|-
+|[[File:1914-18MississippiLicensePlate.jpg|150px]]
+|{{nowrap|1914–18}}
+|Embossed black on white; vertical "MISS" at right
+|12345
+|1 to approximately 44500
+|
+|-
+|[[File:1919 Mississippi license plate.jpg|150px]]
+|1919
+|Embossed light green on black; vertical "1919" and "MISS" at left and right respectively
+|12345
+|1 to approximately 60000
+|
+|-
+|[[File:1920 Mississippi license plate.jpg|150px]]
+|1920
+|Embossed white on maroon with border line; vertical "1920" and "MISS" at left and right respectively
+|12345
+|1 to approximately 65000
+|
+|-
+|[[File:1921 Mississippi license plate.jpg|150px]]
+|1921
+|Embossed red on white with border line; vertical "1921" and "MISS" at left and right respectively
+|12345
+|1 to approximately 64500
+|
+|-
+|[[File:1922 Mississippi license plate.jpg|150px]]
+|1922
+|Embossed black on light green with border line; vertical "1922" and "MISS" at left and right respectively
+|12345
+|1 to approximately 77000
+|
+|-
+|[[File:1923 Mississippi license plate.jpg|150px]]
+|1923
+|Embossed yellow on black with border line; vertical "1923" and "MISS" at left and right respectively
+|123456
+|1 to approximately 107000
+|
+|-
+|[[File:1924 Mississippi license plate.jpg|150px]]
+|1924
+|Embossed white on dark blue with border line; vertical "1924" and "MISS" at left and right respectively
+|123456
+|1 to approximately 133000
+|
+|-
+|[[File:1925 Mississippi license plate.jpg|150px]]
+|1925
+|Embossed black on golden yellow with border line; vertical "1925" and "MISS" at left and right respectively
+|123-456
+|1 to approximately 177-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|1926
+|Embossed white on dark green with border line; vertical "1926" and "MISS" at left and right respectively
+|123-456
+|1 to approximately 207-000
+|
+|-
+|[[File:1927 Mississippi license plate.jpg|150px]]
+|1927
+|Embossed yellow on navy blue with border line; "MISS. 1927" centered at bottom
+|123-456
+|1 to approximately 235-000
+|
+|-
+|[[File:1928 Mississippi license plate.jpg|150px]]
+|1928
+|Embossed white on black with border line; "MISS. 1928" centered at bottom
+|123-456
+|1 to approximately 249-000
+|
+|-
+|[[File:1929 Mississippi license plate.jpg|150px]]
+|1929
+|Embossed white on maroon with border line; "MISS-1929" centered at bottom
+|123-456
+|1 to approximately 279-000
+|
+|-
+|[[File:1930 Mississippi license plate.jpg|150px]]
+|1930
+|Embossed red on dark blue with border line; "MISS-1930" centered at bottom
+|123-456
+|1 to approximately 283-000
+|
+|-
+|[[File:1931 Mississippi license plate.jpg|150px]]
+|1931
+|Embossed white on orange with border line; "MISS 1931" centered at bottom
+|123-456
+|1 to approximately 245-000
+|
+|-
+|[[File:1932 Mississippi license plate.jpg|150px]]
+|1932
+|Embossed golden yellow on black with border line; "MISS-1932" centered at bottom
+|123-456
+|1 to approximately 221-000
+|
+|-
+|[[File:1933 Mississippi license plate.JPG|150px]]
+|1933
+|Embossed white on dark green with border line; "MISS." centered at top; tax code letter and "33" stamped on locking bar, displayed to left and right of state abbreviation respectively
+|123-456
+|1 to approximately 120-000
+|
+|-
+|[[File:1934 Mississippi sample license plate.jpg|150px]]
+|1934
+|Embossed white on black with border line; "MISS." centered at top; tax code letter and "34" stamped on locking bar, displayed to left and right of state abbreviation respectively
+|123-456
+|1 to approximately 149-000
+|
+|-
+|[[File:1935MississippiLicensePlate.jpg|150px]]
+|1935
+|Embossed orange on black with border line; "MISS." centered at top; "35" and tax code letter stamped on locking bar, displayed to left and right of state abbreviation respectively
+|123-456
+|1 to approximately 152-000
+|
+|-
+|[[File:1936 Mississippi license plate.jpg|150px]]
+|1936
+|Embossed white on black with border line; "MISS." centered at top; tax code letter and "36" stamped on locking bar, displayed to left and right of state abbreviation respectively
+|123-456
+|1 to approximately 164-000
+|
+|-
+|[[File:1937 Mississippi License Plate.jpg|150px]]
+|1937
+|Embossed white on green with border line; "MISS." centered at top; tax code letter at top left and "37" at top right
+|123-456
+|1 to approximately 170-000
+|
+|-
+|[[File:1938MississippiLicensePlate.JPG|150px]]
+|1938
+|Embossed white on dark blue with border line; "MISS." centered at top; tax code letter at top left and "38" at top right
+|123-456
+|300-001 to approximately 491-000
+|Issued only from January 1 through October 31, 1938.
+|-
+|[[File:1939 Mississippi License Plate.jpg|150px]]
+|1938–39
+|Embossed black on yellow with border line; "MISS." centered at top; "19" at top left and "39" at top right
+|123-456
+|300-001 to approximately 506-000
+|
+|-
+|[[File:1940 Mississippi license plate.JPG|150px]]
+|1939–40
+|Embossed yellow on black with border line; "MISS." centered at top; "19" at top left and "40" at top right
+|123-456
+|700-001 to approximately 892-000
+|
+|-
+|[[File:1941 Mississippi license plate.jpg|150px]]
+|1940–41
+|Embossed white on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-41" at top
+|123-456
+|100-001 to approximately 318-000
+|First to use county name 
+|-
+|[[File:1942MississippiPassengerLicensePlate.jpg|150px]]
+|1941–42
+|Embossed yellow on dark blue with border line; vertical "MISS" used as separator; county name and "EX. 10-31-42" at top
+|123-456
+|400-001 to approximately 643-000
+|
+|-
+|[[File:1943 Mississippi License Plate.jpg|150px]]
+|1942–43
+|Embossed orange on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-43" at top
+|123-456
+|600-001 to approximately 815-000
+|Due to wartime metal shortages, some 1943 plates were over-stamped on previously used license plates, and the old embossed letters and numbers are still partially visible under the new paint.
+|-
+|[[File:1944 Mississippi passenger plate.jpg|150px]]
+|1943–44
+|Embossed white on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-44" at top
+|123-456
+|700-001 to approximately 898-000
+|Due to wartime metal shortages, some 1944 plates were over-stamped on previously used license plates, and the old embossed letters and numbers are still partially visible under the new paint.
+|-
+|[[File:1945 Mississippi License Plate.jpg|150px]]
+|1944–45
+|Embossed yellow on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-45" at top
+|123-456
+|500-001 to approximately 700-000
+|Due to wartime metal shortages, some 1945 plates were over-stamped on previously used license plates, and the old embossed letters and numbers are still partially visible under the new paint.
+|-
+|[[File:1946 Mississippi Passenger License Plate.jpg|150px]]
+|1945–46
+|Embossed white on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-46" at top
+|123-456
+|200-001 to approximately 411-000
+|
+|-
+|[[File:1947 Mississippi license plate.jpg|150px]]
+|1946–47
+|Embossed yellow on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-47" at top
+|123-456
+|500-001 to approximately 735-000
+|
+|-
+|[[File:1948 Mississippi license plate.jpg|150px]]
+|1947–48
+|Embossed white on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-48" at top
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1949 Mississippi passenger plate.png|150px]]
+|1948–49
+|Embossed orange on black with border line; vertical "MISS" used as separator; county name and "EX. 10-31-49" at top
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1950 Mississippi passenger plate.png|150px]]
+|1949–50
+|Embossed black on yellow with border line; vertical "MISS" used as separator; county name and "EX. 10-31-50" at top
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1951 Mississippi Passenger License Plate.jpg|150px]]
+|1950–51
+|Embossed yellow on black with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|First use of the full state name.
+|-
+|[[File:1952 Mississippi License Plate.jpg|150px]]
+|1951–52
+|Embossed white on dark green with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1953 Mississippi License Plate.jpg|150px]]
+|1952–53
+|Embossed maroon on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1954MississippiLicensePlate.jpg|150px]]
+|1953–54
+|Embossed white on black with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1955 Mississippi License Plate.jpg|150px]]
+|1954–55
+|Embossed white on blue with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1956 Mississippi License Plate.jpg|150px]]
+|1955–56
+|Embossed yellow on black with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1957 Mississippi License Plate.jpg|150px]]
+|1956–57
+|Embossed white on dark green with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1958 Mississippi License Plate.jpg|150px]]
+|1957–58
+|Embossed black on golden yellow with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1959MississippiLicensePlate.jpg|150px]]
+|1958–59
+|Embossed dark green on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1960MississippiPassengerLicensePlate.JPG|150px]]
+|1959–60
+|Embossed red on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1961 Mississippi License Plate.jpg|150px]]
+|1960–61
+|Embossed black on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1962 Mississippi License Plate.jpg|150px]]
+|1961–62
+|Embossed maroon on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|{{small|''A''/''1''}} 12345<br>{{small|''A''/''10''}}&nbsp;12345
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|Weight classes were as follows: A (1,800&nbsp;lb and under), B (1,801 to 3,000&nbsp;lb), C (3,001 to 4,000&nbsp;lb) and D (4,001&nbsp;lb and over).<ref name="allaboutlicenseplatesMS">{{cite web |last=Tanner |first=Eric N. |title=Mississippi Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Mississippi&code=ms |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref>
+|-
+|[[File:1963 Mississippi license plate.jpg|150px]]
+|1962–63
+|Embossed blue on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1A''-1234<br>''10A''-123<br>''XA''-1234<br>''1''-1234<br>''10''-1234<br>''X''-12345
+|Coded by county of issuance (''1'', ''10'' or ''X'') and weight class (''A'')
+|Letter county codes used by the 17 most populous counties that used two-digit codes in 1961–62. No letter used for the 3,001 to 4,000&nbsp;lb weight class. Both these practices continued through September 1968.<ref name="allaboutlicenseplatesMS"/>
+|-
+|[[File:1964 Mississippi license plate.jpg|150px]]
+|1963–64
+|Embossed red on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1A''-1234<br>''10A''-123<br>''XA''-1234<br>''1''-1234<br>''10''-1234<br>''X''-12345
+|Coded by county of issuance (''1'', ''10'' or ''X'') and weight class (''A'')
+|
+|-
+|[[File:1965 Mississippi License Plate.jpg|150px]]
+|1964–65
+|Embossed white on blue with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1A''-1234<br>''10A''-123<br>''XA''-1234<br>''1''-1234<br>''10''-1234<br>''X''-12345
+|Coded by county of issuance (''1'', ''10'' or ''X'') and weight class (''A'')
+|
+|-
+|[[File:1966 Mississippi License Plate.jpg|150px]]
+|1965–66
+|Embossed blue on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1A''-1234<br>''10A''-123<br>''XA''-1234<br>''1''-12345<br>''10''-1234<br>''X''-12345
+|Coded by county of issuance (''1'', ''10'' or ''X'') and weight class (''A'')
+|
+|-
+|[[File:1967MississippiLicensePlate.jpg|150px]]
+|1966–67
+|Embossed white on black with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1A''-1234<br>''10A''-123<br>''XA''-1234<br>''1''-12345<br>''10''-1234<br>''X''-12345
+|Coded by county of issuance (''1'', ''10'' or ''X'') and weight class (''A'')
+|
+|-
+|[[File:1968 Mississippi License Plate.jpg|150px]]
+|1967–68
+|Embossed black on beige with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1A''-1234<br>''10A''-123<br>''XA''-1234<br>''1''-12345<br>''10''-1234<br>''X''-12345
+|Coded by county of issuance (''1'', ''10'' or ''X'') and weight class (''A'')
+|
+|-
+|[[File:1969 Mississippi Passenger Plate.jpg|150px]]
+|1968–69
+|Embossed white on brown with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1{{small|A}}'' 12345<br>''10{{small|A}}''12345
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|All county codes and weight class letters same as 1961–62.
+|-
+|[[File:1970 Mississippi Passenger License Plate.jpg|150px]]
+|1969–70
+|Embossed blue on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1{{small|A}}'' 12345<br>''10{{small|A}}''12345
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1971 Mississippi Passenger License Plate.jpg|150px]]
+|1970–71
+|Embossed green on white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1{{small|A}}'' 12345<br>''10{{small|A}}''12345
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1972 Mississippi Passenger License Plate.jpg|150px]]
+|1971–72
+|Embossed green on reflective white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1{{small|A}}'' 12345<br>''10{{small|A}}''12345
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1973 Mississippi license plate 34c18747.jpg|150px]]
+|1972–73
+|Embossed red on reflective white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''1{{small|A}}'' 12345<br>''10{{small|A}}''12345
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:Mississippi license plate (Alcorn County), October 1974.png|150px]]
+|1973–74
+|Embossed blue on reflective white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''A''BC 123<br>123 ''A''BC
+|Coded by weight class (''A'')
+|Letters I, O and Q not used in serials. The 123 ABC format was used in the five most populous counties ([[Hinds County, Mississippi|Hinds]], [[Harrison County, Mississippi|Harrison]], [[Jackson County, Mississippi|Jackson]], [[Washington County, Mississippi|Washington]] and [[Lauderdale County, Mississippi|Lauderdale]]); this practice continued until the cessation of weight classes in 1976.<ref name="allaboutlicenseplatesMS"/>
+|-
+|[[File:1975 Mississippi license plate CRA 150.jpg|150px]]
+|1974–75
+|Embossed red on reflective white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''A''BC 123<br>123 ''A''BC
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1976 Mississippi license plate 703 BLC.jpg|150px]]
+|1975–76
+|Embossed maroon on reflective white with border line; "MISSISSIPPI" and county name centered at top and bottom respectively
+|''A''BC 123<br>123 ''A''BC
+|Coded by weight class (''A'')
+|
+|}
+
+=== 1976 to present ===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Mississippi license plate, 1976–1981 series with March 1981 sticker.png|150px]]
+|October 1, 1976<ref>{{cite news |last=Sellers |first=Jim |date=October 1, 1976 |title=State's 1977 license tags start of permanent system |newspaper=[[Sun Herald|The Daily Herald]] |location=Biloxi, Mississippi |page=A-2}}</ref>&nbsp;– September 30, 1981
+|Embossed red serial on reflective white plate with border line; green [[magnolia]] graphic screened in the center; "MISSISSIPPI" screened in green centered at top; county name embossed in red centered at bottom
+|The Hospitality State
+|ABC 123
+|Issued in blocks by county
+|First graphic plate; monthly staggered registration also introduced. Awarded "Plate of the Year" for best new license plate of 1977 by the [[Automobile License Plate Collectors Association]], the first time Mississippi was so honored. Some plates had the magnolia graphic in a darker shade of green.
+|-
+|[[File:1981 Mississippi license plate KYH 608.jpg|150px]]
+|October 1, 1981<ref>{{cite news |last=Monteith |first=Gene |date=September 3, 1981 |title=New 5-year license plates involve a tedious process for experienced embosser |newspaper=[[The Clarion-Ledger]] |location=Jackson, Mississippi |page=7E}}</ref>&nbsp;– September 30, 1987
+|rowspan="2"|Embossed dark blue serial on reflective white plate; "MISSISSIPPI" screened in red centered at top; county name embossed in dark blue centered at bottom
+|rowspan="2"|''none''
+|ABC 123
+|Issued in blocks by county
+|Wide serial [[Die (manufacturing)|die]]s.
+|-
+|[[File:Mississippi license plate, March 1989 (Madison County).png|150px]]
+|October 1, 1987<ref>{{cite news |last=Peck |first=Ann |date=September 27, 1987 |title=New license plates to carry seven digits |newspaper=The Mississippi Press |location=Pascagoula, Mississippi |page=1-A}}</ref>&nbsp;– September 30, 1992
+|'''1'''ABC123
+|1AAA001 to approximately 1FNJ999
+|Narrow serial dies reintroduced. The initial '1' indicated the passenger class of vehicles. Letters I, O, Q and U and number 666 not used in serials; this practice continued through September 1997.<ref name="allaboutlicenseplatesMS"/>
+|-
+|[[File:1998 Mississippi license plate - KVK 763.jpg|150px]]
+|October 1, 1992&nbsp;– September 30, 1997
+|Embossed dark blue serial on reflective gradient sky blue and white plate; "MISSISSIPPI" screened in blue centered at top; county name embossed in dark blue centered at bottom
+|''none''
+|ABC 123
+|Issued in blocks by county
+|Awarded "Plate of the Year" for best new license plate of 1992 by the Automobile License Plate Collectors Association, the second time Mississippi was so honored.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|October 1, 1997&nbsp;– September 30, 2002
+|Embossed dark green serial on reflective gradient yellow, white and green plate; magnolia graphic screened in the center; "MISSISSIPPI" screened in dark green centered at top; county name embossed in dark green centered at bottom
+|''none''
+|ABC 123
+|Issued in blocks by county
+|Letters I, O, Q and U not used in serials, but number 666 used.<ref name="allaboutlicenseplatesMS"/>
+|-
+| 
+|October 1, 2002&nbsp;– September 30, 2007
+|Embossed dark green serial on reflective graphic plate with green trees at top, magnolia in the center and blue bands at bottom representing water; "MISSISSIPPI" screened in dark green centered at top; county name embossed in dark green centered at bottom
+|''none''
+|123 ABC
+|Issued in blocks by county
+|Letter O and number 666 not used in serials; this practice continues today.<ref name="allaboutlicenseplatesMS"/>
+|-
+|[[File:MSlighthouseplate.jpg|150px]]
+|October 1, 2007&nbsp;– September 30, 2012
+|Featuring an image of the [[Biloxi Lighthouse]] at the center of the plate, on a multicolored background depicting a yellow sunrise behind the lighthouse.
+|''none''
+|ABC 123
+|Issued in blocks by county
+|Awarded "Plate of the Year" for best new license plate of 2007 by the Automobile License Plate Collectors Association, the third time Mississippi was so honored.
+|- 
+|[[File:Mississippi 2012-2018 license plate.jpg|150px]]
+|October 1, 2012&nbsp;– January 2018
+|rowspan="2"|Featuring an image of B.B. King's [[Lucille (guitar)|Lucille]] guitar, white background with blue lines from the bottom of the plate. State name printed at the top in blue, county name stamped at the bottom
+|rowspan="2"|Birthplace of America's Music / Celebrating Mississippi's Creative Culture
+|ABC 123
+|rowspan="2"|Issued in blocks by county
+|rowspan="2|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018&nbsp;– January 2019
+|ABC&nbsp;1234
+|-
+|[[File:Mississippi state seal license plate.jpg|150px]]
+|January 2019&nbsp;– December 2023
+|Embossed dark blue serial on gold gradient plate; screened [[Seal of Mississippi|state seal]] slightly to left of center; state name screened in dark blue centered at top; county name embossed in dark blue centered at bottom
+|''none''
+|ABC&nbsp;1234	
+|Issued in blocks by county	
+|Controversy and lawsuit over "In God We Trust" (added to seal in 2014, also added to state flag in 2021)
+|-
+|[[File:Mississippi 2024 license plate.jpg|150x150px]]
+|January 2024 – present
+|Embossed dark blue serial on white plate; screened magnolia blossom against a blue circle acting as separator; state name screened in dark blue centered at top; county name embossed in dark blue centered at bottom
+|''none''
+|ABC 123
+|Issued in blocks by county 
+|Created by Leah Eaton of Starkville, Mississippi.<ref>{{cite news |work=WXXV-TV |title=New Mississippi license plate design |url=https://www.wxxv25.com/new-mississippi-license-plate-design/ |date=January 3, 2024}}</ref>
+|}
+
+== County coding ==
+{{Incomplete list|date=October 2008}}
+
+{|class="wikitable"
+|-
+!rowspan=2|[[List of counties in Mississippi|County]]
+!colspan=6|Letter blocks beginning with
+|-
+!1976–87
+!1992–97
+!1997–2002
+!2002–07
+!2007–18
+!2018–present
+|-
+|[[Adams County, Mississippi|Adams]]
+|AA, AB
+|AA, AB
+|WN
+|AD, AE
+|AD, AE
+|AD
+|-
+|[[Alcorn County, Mississippi|Alcorn]]
+|AH–AJ
+|AG, AH, AJ
+|WG, WJ
+|AN, AP
+|AL, AC
+|AC
+|-
+|[[Amite County, Mississippi|Amite]]
+|AM
+|AM, AN
+|WD
+|AM
+|AM
+|AM
+|-
+|[[Attala County, Mississippi|Attala]]
+|AT
+|AT
+|WA, WB
+|AT
+|AT, AA
+|AA
+|-
+|[[Benton County, Mississippi|Benton]]
+|BA
+|BA
+|VY
+|BE
+|BE
+|BE
+|-
+|[[Bolivar County, Mississippi|Bolivar]]
+|BD, BE
+|BD, BF, BG
+|VS
+|BL, BM
+|BR, BV {{small|([[Cleveland, Mississippi|Cleveland]])}}<br>BL {{small|([[Rosedale, Mississippi|Rosedale]])}}
+|BL
+|-
+|[[Calhoun County, Mississippi|Calhoun]]
+|BL
+|BL
+|VN
+|CA
+|CA, CN
+|CA
+|-
+|[[Carroll County, Mississippi|Carroll]]
+|BP, BT
+|BP, BS
+|VK, VL
+|CR
+|CR
+|CR
+|-
+|[[Chickasaw County, Mississippi|Chickasaw]]
+|BV, BX
+|BV, BX
+|VH
+|CH
+|CH
+|CH
+|-
+|[[Choctaw County, Mississippi|Choctaw]]
+|CA
+|BZ
+|VB
+|CT
+|CT
+|CT
+|-
+|[[Claiborne County, Mississippi|Claiborne]]
+|CC
+|CB
+|TZ
+|CL
+|CB
+|CB
+|-
+|[[Clarke County, Mississippi|Clarke]]
+|CE
+|CD
+|TV, TW
+|CK
+|CK, CL
+|CE
+|-
+|[[Clay County, Mississippi|Clay]]
+|CH
+|CG
+|TM, TN
+|CY
+|CY
+|CY
+|-
+|[[Coahoma County, Mississippi|Coahoma]]
+|CK, CL
+|CL, CM
+|TG
+|CM
+|CM
+|CG
+|-
+|[[Copiah County, Mississippi|Copiah]]
+|CR, CS
+|CS, CT
+|SY
+|CP
+|CP, CQ
+|CF
+|-
+|[[Covington County, Mississippi|Covington]]
+|CX
+|CX
+|SV
+|CV
+|CV, CW
+|CV
+|-
+|[[DeSoto County, Mississippi|DeSoto]]
+|DA–DD
+|DA–DF
+|SG, SJ–SP
+|DA–DZ
+|DA–DZ
+|DA, DC
+|-
+|[[Forrest County, Mississippi|Forrest]]
+|DK–DN
+|DK–DM
+|RY–SA, SC
+|FM, FS, FT
+|FR–FT
+|FR
+|-
+|[[Franklin County, Mississippi|Franklin]]
+|DX
+|DW
+|RW
+|FR
+|FN
+|FN
+|-
+|[[George County, Mississippi|George]]
+|EA
+|DY
+|RR
+|GE
+|GE, GF
+|GE
+|-
+|[[Greene County, Mississippi|Greene]]
+|EE
+|EB
+|RM
+|GR
+|GR
+|GR
+|-
+|[[Grenada County, Mississippi|Grenada]]
+|EG, EH
+|ED
+|RJ, RK
+|GN
+|GN, GA
+|GA
+|-
+|[[Hancock County, Mississippi|Hancock]]
+|EX, EY
+|EH, EJ
+|RC, RD
+|HA, HB
+|KA–KD
+|KA
+|-
+|[[Harrison County, Mississippi|Harrison]]
+|FA–FI {{small|([[Gulfport, Mississippi|Gulfport]])}}<br />FN–FS {{small|([[Biloxi, Mississippi|Biloxi]])}}
+|EL–ET {{small|(Gulfport)}}<br />FB–FD {{small|(Biloxi)}}
+|PD–PR, PV, PX
+|HR–HZ
+|HA–HH {{small|(Gulfport)}}<br />HI–HK {{small|(Biloxi)}}
+|HA–HB
+|-
+|[[Hinds County, Mississippi|Hinds]]
+|GA–GL {{small|([[Jackson, Mississippi|Jackson]])}}<br />HM–HN {{small|([[Raymond, Mississippi|Raymond]])}}
+|FP–FX {{small|(Jackson)}}<br />HA–HC {{small|(Raymond)}}
+|NH–NK, NP–NV
+|HC, HF–HK, HN
+|HN–HW {{small|(Jackson)}}<br />HX–HZ {{small|(Raymond)}}
+|HN–HP
+|-
+|[[Holmes County, Mississippi|Holmes]]
+|HR
+|HF
+|NB
+|HL
+|HL
+|HL
+|-
+|[[Humphreys County, Mississippi|Humphreys]]
+|HW
+|HJ
+|MZ
+|HM
+|HM
+|HM
+|-
+|[[Issaquena County, Mississippi|Issaquena]]
+|IA
+|HL
+|MX
+|IS
+|IS
+|IR
+|-
+|[[Itawamba County, Mississippi|Itawamba]]
+|IT, IV
+|HN, HP
+|MM, MP
+|IT
+|IT, IW
+|IT
+|-
+|[[Jackson County, Mississippi|Jackson]]
+|JA–JG
+|HS–HZ
+|LW–LZ, MG, MJ
+|JG–JM
+|JG–JM
+|JG
+|-
+|[[Jasper County, Mississippi|Jasper]]
+|JR–JT, JV
+|JL, JN
+|LV
+|JS
+|JA {{small|([[Paulding, Mississippi|Paulding]])}}<br />JB {{small|([[Bay Springs, Mississippi|Bay Springs]])}}
+|JA
+|-
+|[[Jefferson County, Mississippi|Jefferson]]
+|JW
+|JR
+|LP
+|JF
+|JF
+|JE
+|-
+|[[Jefferson Davis County, Mississippi|Jefferson Davis]]
+|JY, JZ
+|JT
+|LM
+|JD
+|JD
+|JC
+|-
+|[[Jones County, Mississippi|Jones]]
+|KA–KE
+|JW, JZ, KA
+|LC, LD, LJ
+|JN, JP
+|JN {{small|([[Ellisville, Mississippi|Ellisville]])}}<br />JP–JR {{small|([[Laurel, Mississippi|Laurel]])}}
+|JN
+|-
+|[[Kemper County, Mississippi|Kemper]]
+|KJ
+|KE
+|LA
+|KM
+|KM
+|KM
+|-
+|[[Lafayette County, Mississippi|Lafayette]]
+|KL, KM
+|KG, KH
+|KW, KX
+|LX–LZ
+|LX–LZ
+|LX
+|-
+|[[Lamar County, Mississippi|Lamar]]
+|KP, KR
+|KL, KM
+|KP, KR
+|LL, LM
+|LL–LN
+|LL
+|-
+|[[Lauderdale County, Mississippi|Lauderdale]]
+|KV–KZ
+|KR–KV
+|KG–KK
+|LA–LD
+|LA–LD
+|LA
+|-
+|[[Lawrence County, Mississippi|Lawrence]]
+|LH
+|LE
+|KE
+|LW
+|LW
+|LW
+|-
+|[[Leake County, Mississippi|Leake]]
+|LJ, LK
+|LG
+|KB
+|LK
+|LJ, LK
+|LJ
+|-
+|[[Lee County, Mississippi|Lee]]
+|LM–LR
+|LK–LP
+|JT, JV–JY
+|LE-LH
+|LE-LH
+|LE
+|-
+|[[Leflore County, Mississippi|Leflore]]
+|LX–LZ
+|MA, MB
+|JN, JP
+|LR
+|LR, LS
+|LR
+|-
+|[[Lincoln County, Mississippi|Lincoln]]
+|MD–MF
+|MF, MG
+|JH, JJ
+|LI, LJ
+|LI, LP, LQ
+|LI
+|-
+|[[Lowndes County, Mississippi|Lowndes]]
+|MJ–MM
+|ML–MP
+|JA, JB, JD, JE
+|LN, LP, LQ
+|LT–LV
+|LT
+|-
+|[[Madison County, Mississippi|Madison]]
+|MR–MT, MV
+|MV, MW, MY
+|HM, HN, HV, HW
+|MA-MD
+|MA-MF
+|MA
+|-
+|[[Marion County, Mississippi|Marion]]
+|MY, MZ
+|NC, ND
+|HJ, HK
+|MN
+|MN, MP
+|MM
+|-
+|[[Marshall County, Mississippi|Marshall]]
+|NC, ND
+|NF–NH
+|HE–HG
+|MR, MS
+|MQ–MS
+|MH
+|-
+|[[Monroe County, Mississippi|Monroe]]
+|NG–NI
+|NK, NL
+|GZ, HA
+|MF
+|MJ–ML
+|MI
+|-
+|[[Montgomery County, Mississippi|Montgomery]]
+|NM, NN
+|NR
+|GX
+|MT
+|MT
+|MT
+|-
+|[[Neshoba County, Mississippi|Neshoba]]
+|NP, NR
+|NT, NV
+|GS
+|NE, NF
+|NE, NF
+|NE
+|-
+|[[Newton County, Mississippi|Newton]]
+|NV, NW
+|NX
+|GN
+|NW
+|NV, NW
+|NU
+|-
+|[[Noxubee County, Mississippi|Noxubee]]
+|NZ
+|PA
+|GL
+|NX
+|NX
+|NX
+|-
+|[[Oktibbeha County, Mississippi|Oktibbeha]]
+|OK, OL
+|PD, PE
+|GG, GH
+|KT, KU
+|KT, KU
+|KT
+|-
+|[[Panola County, Mississippi|Panola]]
+|PA, PB, PD
+|PH, PJ, PL
+|GB
+|PA, PB, PF
+|PA, PB {{small|([[Batesville, Mississippi|Batesville]])}}<br />PC {{small|([[Sardis, Mississippi|Sardis]])}}
+|PA
+|-
+|[[Pearl River County, Mississippi|Pearl River]]
+|PF–PH
+|PN, PP, PR
+|FR, FS, FV, FW
+|PR–PT
+|PR–PU
+|PR
+|-
+|[[Perry County, Mississippi|Perry]]
+|PK, PL
+|PV
+|FN
+|PE
+|PE
+|PE
+|-
+|[[Pike County, Mississippi|Pike]]
+|PM–PO
+|PX, PY
+|FG
+|PK, PL
+|PK–PM
+|PJ
+|-
+|[[Pontotoc County, Mississippi|Pontotoc]]
+|PT, PV
+|RC
+|FB, FC
+|PC
+|PN, PP, PQ
+|PN
+|-
+|[[Prentiss County, Mississippi|Prentiss]]
+|PW–PY
+|RF
+|EX, EY
+|PN, PP
+|PW, PX
+|PW
+|-
+|[[Quitman County, Mississippi|Quitman]]
+|RA
+|RJ
+|EV
+|QT
+|QT
+|QT
+|-
+|[[Rankin County, Mississippi|Rankin]]
+|RK–RP
+|RL–RT
+|EE–EL
+|RA–RZ
+|RA–RZ
+|RA
+|-
+|[[Scott County, Mississippi|Scott]]
+|SA, SB
+|SB
+|DZ, EA
+|SC
+|SC, SD
+|SB
+|-
+|[[Sharkey County, Mississippi|Sharkey]]
+|SF
+|SG
+|DX
+|SH
+|SH
+|SH
+|-
+|[[Simpson County, Mississippi|Simpson]]
+|SH, SI
+|SJ
+|DP, DR
+|SP, SQ
+|SP, SR
+|SP
+|-
+|[[Smith County, Mississippi|Smith]]
+|SM
+|SM
+|DH
+|SM
+|SM, SN
+|SL
+|-
+|[[Stone County, Mississippi|Stone]]
+|SP
+|SP
+|DD
+|ST
+|ST, SU
+|ST
+|-
+|[[Sunflower County, Mississippi|Sunflower]]
+|SS, ST
+|SS, ST
+|CX, CY
+|SF
+|SF, SG
+|SE
+|-
+|[[Tallahatchie County, Mississippi|Tallahatchie]]
+|TA, TE
+|TA, TC
+|CS, CV
+|TL
+|TL
+|TK
+|-
+|[[Tate County, Mississippi|Tate]]
+|TG, TH
+|TG, TH
+|CN, CP
+|TA, TB
+|TA, TB
+|TA
+|-
+|[[Tippah County, Mississippi|Tippah]]
+|TJ, TK
+|TK, TN
+|CJ, CK
+|TP, TQ
+|TP, TQ
+|TP
+|-
+|[[Tishomingo County, Mississippi|Tishomingo]]
+|TN
+|TP
+|CE
+|TS
+|TS, TT
+|TS
+|-
+|[[Tunica County, Mississippi|Tunica]]
+|TT
+|TV
+|BY
+|TN
+|TN
+|TN
+|-
+|[[Union County, Mississippi|Union]]
+|UN, UO
+|VA
+|BW
+|UN, UP
+|UN, UP
+|UN
+|-
+|[[Walthall County, Mississippi|Walthall]]
+|WA
+|VE
+|BP
+|WL
+|WL, WM
+|WH
+|-
+|[[Warren County, Mississippi|Warren]]
+|WC–WE
+|VG, VH, VJ
+|BH
+|WA, WB
+|WA-WD
+|WA
+|-
+|[[Washington County, Mississippi|Washington]]
+|WJ–WM
+|WA–WC
+|AZ, BB
+|WS, WT
+|WS–WW
+|WR
+|-
+|[[Wayne County, Mississippi|Wayne]]
+|WV
+|WN
+|AW
+|WY
+|WY, WZ
+|WX
+|-
+|[[Webster County, Mississippi|Webster]]
+|WY
+|WS
+|AT
+|WE
+|WE
+|WE
+|-
+|[[Wilkinson County, Mississippi|Wilkinson]]
+|XA
+|WV
+|AN
+|WK
+|WK
+|WJ
+|-
+|[[Winston County, Mississippi|Winston]]
+|XW
+|WX
+|AJ
+|WN
+|WN, WP
+|WN
+|-
+|[[Yalobusha County, Mississippi|Yalobusha]]
+|YA, YJ
+|YA, YC
+|AD, AG
+|YL
+|YL
+|YL
+|-
+|[[Yazoo County, Mississippi|Yazoo]]
+|YT, YV
+|YT
+|AA
+|YZ
+|YZ, YA
+|YA
+|-
+|[[Car rental|Rental car]]
+|
+|AR, AS
+|WR, WS
+|WR
+|WR
+|
+|}
+
+== Non-passenger plates ==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Ambulance jpg.jpg|150px]]
+|[[Ambulance]]
+|
+|As current passenger base; "AMBULANCE" embossed at bottom
+|'''AM''' 1234
+|AM 1001 to present
+|
+|-
+|[[File:ChurchBus.jpg|150px]]
+|Church Bus
+|
+|As current passenger base; "CHURCH BUS" embossed at bottom
+|'''CB''' 12345
+|CB 1 to present
+|
+|-
+| 
+|[[Disability|Disabled]]
+|
+|As current passenger base
+|{{nowrap|{{small|'''D'''/'''B'''}} {{access icon|10px}} 12345}}
+|
+|
+|-
+|[[File:MSFleet.jpg|150px]]
+|Fleet
+|
+|As current passenger base; "FLEET" embossed at bottom
+|'''FL''' 12345
+|FL 00001 to present
+|
+|-
+|[[File:MSHearse.jpg|150px]]
+|[[Hearse]]
+|
+|As current passenger base; "HEARSE" embossed at bottom
+|'''HR''' 1234
+|HR 1001 to present
+|
+|-
+|[[File:MSMotorcycle.jpg|150px]]
+|[[Motorcycle]]
+|
+|Similar to current passenger base
+|{{small|'''M'''/'''C'''}} 12345<br>{{small|'''M'''/'''C'''}} A1234
+|{{small|M/C}} 1001 to present<br>{{small|'''M'''/'''C'''}} A0001 to present
+|
+|-
+|[[File:MSSchool.jpg|150px]]
+|[[School Bus]]
+|
+|As current passenger base; "SCHOOL BUS" embossed at bottom
+|'''SB''' 12345
+|SB 1 to present
+|
+|-
+|[[File:MSTaxi.jpg|150px]]
+|[[Taxi]]
+|
+|As current passenger base; "TAXI" embossed at bottom
+|'''TX''' 1234
+|TX 0001 to present
+|
+|-
+| 
+|Truck
+|As current passenger base
+|AB1 234
+|Issued in blocks by county
+|
+|}
+
+== Optional / specialty plates ==
+Many different specialty tags are available. In fiscal year 2014, a total of 2,749,315 license plates were issued by counties, with 683,550 being specialty plates such as: 165,849 Antique (vehicles older than 25 years), 100,698 disabled, 78,714 vanity or personalized plates, 18,367 MS State University, and 15,596 University of Mississippi.
+
+As of July 2022, most specialty plates have a $33 fee, but college or university plates are $53.  The state government has a revenue sharing deal with organizations sponsoring a specialty plate, which can be as small as a single high school.  For 2014, $5,113,035 was paid to such organizations.
+
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:MSUniversityofWomen.jpeg|150px]]
+|[[Mississippi University for Women]]
+|
+|
+|12'''W'''34
+|
+|
+|-
+|[[File:Mississippi Antique Car plate A51749.png|150px]]
+|Antique Car
+|
+|
+|123<br>1234<br>12345<br>123456<br>'''A'''12345 (current)
+|
+|No renewal necessary, one-time registration fee.<br>The vehicle has to be at least 25 years of age.
+|-
+|[[File:Mississippi Stennis Car Tag.jpg|150px]]
+|History + Hope + Hospitality
+|July 1, 2019<ref>{{cite web |last1=Lou |first1=Michelle |last2=Griggs |first2=Brandon |date=April 22, 2019 |title=Mississippi, the only state with a Confederate symbol in its flag, is offering a new flag design on license plates |url=https://edition.cnn.com/2019/04/22/us/mississippi-flag-license-plate-trnd/index.html |publisher=[[CNN]] |access-date=April 29, 2019}}</ref>
+|Black serial on white plate; [[Flag of Mississippi#Stennis Flag|Stennis Flag]] at left; state name in blue centered at top; motto in black at bottom
+|1234AB
+|
+|$30 fee.
+|-
+|[[File:2024 Blackout Passenger Plate 0.png|150px]]
+| Blackout
+| July 2022<ref>{{cite news |url=https://www.wxxv25.com/new-license-plate-option-available-to-mississippi-drivers/ |title=New license plate option available to Mississippi drivers |work=WXXV-TV |date=April 21, 2022}}</ref>
+|Black tag with white letters
+| 123ABC
+|
+|$5 fee
+|-
+|[[File:Elvis Fan.jpeg|150px]]
+|Tupelo Elvis Presley Fan Club
+|
+|
+|
+|
+|
+|}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://www.dor.ms.gov/tagstitles/available-drivers-license-plates Available License Plates - Mississippi Department of Revenue]
+* [https://www.15q.net/ms.html Mississippi license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20210125153828/http://www.15q.net/ms.html |date=January 25, 2021 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Mississippi}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Mississippi}}
+[[Category:Vehicle registration plates of the United States by state or territory|Mississippi]]
+[[Category:Transportation in Mississippi]]
+[[Category:Mississippi transportation-related lists]]

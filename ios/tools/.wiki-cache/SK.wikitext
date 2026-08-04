@@ -1,0 +1,720 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = Saskatchewan License Plate 2011.jpg
+| caption = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Land of Living Skies
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123 ABC
+| current_start_date = {{Start date|2009}}
+| designer = 
+| issuer = Saskatchewan Government Insurance
+| start_date = {{Start date|1912}}
+}}
+The [[Provinces and territories of Canada|Canadian province]] of [[Saskatchewan]] first required its residents to register their [[motor vehicle]]s in 1906. Registrants provided their own [[Vehicle registration plate|licence plate]]s for display until 1912, when the province began to issue plates.<ref>{{cite web |last=Tanner |first=Eric N. |title=Saskatchewan Pre-Provincial License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=PrestateState&jurisdiction=Saskatchewan&code=sk |publisher=allaboutlicenseplates.com |access-date=January 23, 2022 |archive-date=January 23, 2022 |archive-url=https://web.archive.org/web/20220123185834/https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=PrestateState&jurisdiction=Saskatchewan&code=sk |url-status=live }}</ref>
+
+{{As of|2022}}, plates are issued by [[Saskatchewan Government Insurance]]. Only rear plates have been required since June 30, 2004.<ref name="singleplate">{{cite web |title=Saskatchewan moves to a single plate on June 30th |url=https://www.saskatchewan.ca/government/news-and-media/2004/june/28/saskatchewan-moves-to-a-single-plate-on-june-30th |publisher=Government of Saskatchewan |date=June 28, 2004 |access-date=March 22, 2020 |archive-date=March 22, 2020 |archive-url=https://web.archive.org/web/20200322203930/https://www.saskatchewan.ca/government/news-and-media/2004/june/28/saskatchewan-moves-to-a-single-plate-on-june-30th |url-status=live }}</ref>
+
+==Passenger baseplates==
+{{-}}
+
+===1912 to 1976===
+In 1956, Canada, the United States and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1954 (dated 1955) issue was the first Saskatchewan licence plate that complied with these standards.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:SASKATCHEWAN 1912 plate (2146586618).jpg|150px]]
+|1912
+|White on black porcelain; vertical "SASK" and "1912" at left and right respectively
+|''none''
+|1234
+|1 to approximately 4500
+|
+|-
+|[[File:SASKATCHEWAN 1913 plate (2146597206).jpg|150px]]
+|1913
+|Black on white porcelain; vertical "SASK" and "1913" at left and right respectively
+|''none''
+|1234
+|1 to approximately 6500
+|
+|-
+|[[File:SASKATCHEWAN 1914 plate (2145803801).jpg|150px]]
+|1914
+|Dark blue on yellow porcelain; vertical "SASK" and "1914" at left and right respectively
+|''none''
+|1234
+|1 to approximately 9000
+|
+|-
+|[[File:SASKATCHEWAN 1915 plate (2145804599).jpg|150px]]
+|1915
+|Black on orange flat metal; vertical "SASK" and "1915" at left and right respectively
+|''none''
+|12345
+|1 to approximately 13500
+|
+|-
+|[[File:SASKATCHEWAN 1916 plate (2145816543).jpg|150px]]
+|1916
+|Navy blue on ivory flat metal; vertical "SASK" and "1916" at left and right respectively
+|''none''
+|12345
+|1 to approximately 18500
+|
+|-
+|[[File:SASKATCHEWAN 1917 plate (2145817145).jpg|150px]]
+|1917
+|Red on white flat metal; vertical "SASK" and "1917" at left and right respectively
+|''none''
+|12345
+|1 to approximately 33000
+|
+|-
+|[[File:SASKATCHEWAN 1918 plate (2145817805).jpg|150px]]
+|1918
+|White on green flat metal; vertical "SASK" and "1918" at left and right respectively
+|''none''
+|12345
+|1 to approximately 54000
+|Some later plates embossed.
+|-
+|[[File:Saskatchewan 1919 license plate - Number 54140 (2145857549).jpg|150px]]
+|1919
+|White on black porcelain; "SASK", [[Symbols of Saskatchewan|provincial shield]] and "1919" at left
+|rowspan="4"|''none''
+|rowspan="3"|12345
+|1 to approximately 60000
+|Revalidated for 1920 with [[:File:SASKATCHEWAN 1920 plate (2146652334).jpg|yellow tabs]], for 1921 with [[:File:SASKATCHEWAN 1921 plate (2146652934).jpg|red tabs]], and for 1922 with [[:File:SASKATCHEWAN 1922 plate (2146663274).jpg|green tabs]].
+|-
+|[[File:Saskatchewan License Plate 1919-20.jpg|150px]]
+|1920
+|As above, but without provincial shield and year
+|60001 to approximately 67000
+|rowspan="3"|Validated in the same manner as for 1919 plates.
+|-
+|[[File:SASKATCHEWAN 1921 plate (2146652934).jpg|150px]]
+|{{nowrap|1921}}
+|rowspan="2"|As above, but metal rather than porcelain
+|67001 to approximately 82000
+|-
+|[[File:SASKATCHEWAN 1922 ---EMBOSSED LATE ISSUE PASSENGER BASEPLATE (4574441701).jpg|150px]]
+|1922
+|12-345
+|82-001 to approximately<br>97-000
+|-
+|[[File:Saskatchewan 1923 license plate - Number 37-397 (2146663904).jpg|150px]]
+|1923
+|Black on yellow; vertical "SASK" and "1923" at left and right respectively
+|''none''
+|12-345
+|1 to approximately 62-000
+|
+|-
+|[[File:Saskatchewan 1924 license plate - Number 23-585 (2146860074).jpg|150px]]
+|1924
+|White on dark blue; vertical "SASK" and "1924" at left and right respectively
+|''none''
+|12-345
+|1 to approximately 65-000
+|
+|-
+|[[File:Saskatchewan 1925 license plate - Number 32-828 (2146860732).jpg|150px]]
+|1925
+|Black on grey; vertical "SASK" and "1925" at left and right respectively
+|''none''
+|12-345
+|1 to approximately 68-000
+|
+|-
+|[[File:Saskatchewan 1926 license plate - Number 5-168 (2146066401).jpg|150px]]
+|1926
+|White on red; diagonal "SASK" and "1926" at left
+|''none''
+|12-345
+|1 to approximately 87-000
+|
+|-
+|[[File:Saskatchewan 1927 license plate - Number 37-842 (2146868964).jpg|150px]]
+|1927
+|White on black; "1927" and diagonal "SASK" at right
+|''none''
+|12-345
+|1 to approximately 98-000
+|
+|-
+|[[File:SASKATCHEWAN 1928 plate (2146074663).jpg|150px]]
+|1928
+|White on green; "1928" centred at top and "SASKATCHEWAN" at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 104-000
+|First use of the full province name.
+|-
+|[[File:SASKATCHEWAN 1929 plate (2146075519).jpg|150px]]
+|1929
+|Black on golden yellow; "1929" centred at top with "SASKATCHEWAN" below
+|''none''
+|123-456
+|1 to approximately 109-000
+|
+|-
+|[[File:SASKATCHEWAN 1930 plate (2149241788).jpg|150px]]
+|1930
+|White on maroon; "SASKATCHEWAN" at top and "1930" centred at bottom
+|''none''
+|123-456
+|1 to approximately 120-000
+|
+|-
+|[[File:SASKATCHEWAN 1931 plate (2148453895).jpg|150px]]
+|1931
+|White on purple; "SASKATCHEWAN" at bottom and vertical "1931" at right
+|''none''
+|12-345
+|1 to approximately 92-000
+|
+|-
+|[[File:SASKATCHEWAN 1932 plate (2149249386).jpg|150px]]
+|1932
+|White on blue; vertical "1932" at left and "SASKATCHEWAN" at bottom
+|''none''
+|12-345
+|1 to approximately 89-000
+|
+|-
+|[[File:SASKATCHEWAN 1933 plate (2149250362).jpg|150px]]
+|1933
+|Black on golden yellow; "SASKATCHEWAN–33" at top
+|''none''
+|12-345
+|1 to approximately 65-000
+|
+|-
+|[[File:SASKATCHEWAN 1934 plate (2149258610).jpg|150px]]
+|1934
+|White on red; "34–SASKATCHEWAN" at bottom
+|''none''
+|12-345
+|1 to approximately 75-000
+|
+|-
+|[[File:SASKATCHEWAN 1935 plate (2149259398).jpg|150px]]
+|1935
+|White on brown; "35 SASKATCHEWAN" at top
+|''none''
+|12-345
+|1 to approximately 77-000
+|
+|-
+|[[File:Saskatchewan 1936 license plate - Number 36-388 (2149318046).jpg|150px]]
+|1936
+|Black on orange; "SASKATCHEWAN–36" at bottom
+|''none''
+|12-345
+|1 to approximately 82-000
+|
+|-
+|[[File:Saskatchewan 1937 license plate CORONATION YEAR (2148524353).jpg|150px]]
+|1937
+|Black on white; "SASKATCHEWAN–37" at top
+|"CORONATION YEAR" at bottom
+|12-345
+|1 to approximately 87-000
+|Commemorated the [[Coronation of George VI and Elizabeth|coronation of King George VI]].
+|-
+|[[File:Saskatchewan 1938 license plate - Number 62-599 (2148525165).jpg|150px]]
+|1938
+|White on red; "38–SASKATCHEWAN" at bottom
+|''none''
+|12-345
+|1 to approximately 89-000
+|
+|-
+|[[File:Saskatchewan 1939 license plate - Number 52-995 (2149331066).jpg|150px]]
+|1939
+|Black on orange; "39 SASKATCHEWAN" at top
+|''none''
+|12-345
+|1 to approximately 92-000
+|
+|-
+|[[File:Saskatchewan 1940 license plate - Number 23-605 (2149332070).jpg|150px]]
+|1940
+|Red on white; "SASKATCHEWAN-40" at bottom
+|''none''
+|12-345
+|1 to approximately 95-000
+|
+|-
+|[[File:SASKATCHEWAN 1941 plate (2149333046).jpg|150px]]
+|1941
+|White on red; "SASKATCHEWAN -41" at top
+|''none''
+|12-345
+|1 to approximately 96-000
+|
+|-
+|[[File:SASKATCHEWAN 1942 plate (2149394342).jpg|150px]]
+|1942
+|Black on orange; "42–SASKATCHEWAN" at bottom
+|''none''
+|12-345
+|1 to approximately 94-000
+|
+|-
+|[[File:SASKATCHEWAN 1943 plate (2148600855).jpg|150px]]
+|1943–44
+|Black on white; "SASK.–43" centred at top
+|''none''
+|12-345
+|1 to approximately 89-000
+|Revalidated for 1944 with [[:File:SASKATCHEWAN 1944 WINDSHIELD STICKER to revalidate 1943 plate (2149396216).jpg|windshield stickers]], due to metal conservation for [[World War II]].
+|-
+|[[File:SASKATCHEWAN 1945 plate (2148621421).jpg|150px]]
+|1945
+|Red on white; "SASKATCHEWAN–45" at top
+|''none''
+|12-345
+|1 to approximately 98-000
+|
+|-
+|[[File:SASKATCHEWAN 1946 plate (2148622295).jpg|150px]]
+|1946
+|White on red; "46–SASKATCHEWAN" at bottom
+|''none''
+|12-345
+|1 to approximately 98-000
+|
+|-
+|[[File:SASKATCHEWAN 1947 plate (2148623289).jpg|150px]]
+|1947
+|Black on orange; "SASKATCHEWAN–47" at bottom
+|''none''
+|12-345
+|1 to approximately 98-000
+|
+|-
+|[[File:SASKATCHEWAN 1948 plate (2152059264).jpg|150px]]
+|1948
+|Black on silver; "SASKATCHEWAN 1948" at top
+|''none''
+|123-456
+|1 to approximately 114-000
+|
+|-
+|[[File:SASKATCHEWAN 1949 plate (2151268093).jpg|150px]]
+|1949
+|White on brown; "SASKATCHEWAN 1949" at bottom
+|''none''
+|123-456
+|1 to approximately 130-000
+|
+|-
+|[[File:SASKATCHEWAN 1950 plate (2151268643).jpg|150px]]
+|1950
+|Black on orange; "SASKATCHEWAN 50" at top
+|''none''
+|123-456
+|1 to approximately 137-000
+|
+|-
+|[[File:SASKATCHEWAN 1951 plate WHEAT PROVINCE (2151276613).jpg|150px]]
+|1951
+|Black on beige; "SASKATCHEWAN 51" at bottom
+|"WHEAT PROVINCE" at top
+|123-456
+|1 to approximately 141-000
+|
+|-
+|[[File:SASKATCHEWAN 1952 plate WHEAT PROVINCE (2152069182).jpg|150px]]
+|1952
+|Beige on black; "52 SASKATCHEWAN" at bottom
+|"WHEAT PROVINCE" at top
+|123-456
+|1 to approximately 156-000
+|
+|-
+|[[File:SASKATCHEWAN 1953 plate WHEAT PROVINCE (2151278165).jpg|150px]]
+|1953
+|Green on beige; "SASKATCHEWAN 53" at bottom
+|"WHEAT PROVINCE" at top
+|123-456
+|1 to approximately 163-000
+|
+|-
+|[[File:SASKATCHEWAN 1954 plate WHEAT PROVINCE (2152070648).jpg|150px]]
+|1954
+|Beige on maroon; "54 SASKATCHEWAN" at bottom
+|"WHEAT PROVINCE" at top
+|123-456
+|1 to approximately 168-000
+|
+|-
+|[[File:SASKATCHEWAN 1955 plate GOLDEN JUBILEE 1955 (2152173248).jpg|150px]]
+|1955
+|Dark green on white; "SASKATCHEWAN" at top
+|"GOLDEN JUBILEE 1955" at bottom
+|123-456
+|1 to approximately 193-000
+|Commemorated Saskatchewan's 50 years of provincehood.
+|-
+|[[File:SASKATCHEWAN 1956 plate WHEAT PROVINCE (2151382101).jpg|150px]]
+|1956
+|White on dark green; "SASKATCHEWAN 56" at top
+|"WHEAT PROVINCE" at bottom
+|123-456
+|1 to approximately 192-000
+|
+|-
+|[[File:SASKATCHEWAN 1957 plate WHEAT PROVINCE (2152174690).jpg|150px]]
+|1957
+|Dark blue on beige; "57 SASKATCHEWAN" at top
+|"WHEAT PROVINCE" at bottom
+|123-456
+|1 to approximately 195-000
+|
+|-
+|[[File:SASKATCHEWAN 1958 plate WHEAT PROVINCE, experimental reflective (2152185712).jpg|150px]]
+|rowspan="2"|1958
+|Red on reflective light grey; "SASKATCHEWAN 58" at top
+|rowspan="2"|"WHEAT PROVINCE" at bottom
+|rowspan="2"|123-456
+|1 to 1-000
+|Experimental plates.
+|-
+|[[File:SASKATCHEWAN 1958 plate WHEAT PROVINCE (2151383643).jpg|150px]]
+|As above, but non-reflective
+|1-001 to approximately 201-000
+|
+|-
+|[[File:Saskatchewan Experimental License Plate 1959.jpg|150px]]
+|rowspan="2"|1959
+|Black on reflective light grey; "59 SASKATCHEWAN" at top
+|rowspan="2"|"WHEAT PROVINCE" at bottom
+|rowspan="2"|123-456
+|1 to 1-000
+|Experimental plates.
+|-
+|[[File:SASKATCHEWAN 1959 plate WHEAT PROVINCE (2152186458).jpg|150px]]
+|As above, but non-reflective
+|1-001 to approximately 218-000
+|
+|-
+|[[File:Saskatchewan License Plate 1960.jpg|150px]]
+|1960
+|Light grey on black; "SASKATCHEWAN 60" at top
+|''none''
+|123-456
+|1 to approximately 239-000
+|
+|-
+|[[File:Saskatchewan License Plate 1961.jpg|150px]]
+|1961
+|Dark blue on white; "SASKATCHEWAN 61" at top
+|''none''
+|123-456
+|1 to approximately 248-000
+|
+|-
+|[[File:SASKATCHEWAN 1962 plate (2156376639).jpg|150px]]
+|1962
+|White on dark blue; "62 SASKATCHEWAN" at top
+|''none''
+|123-456
+|1 to approximately 248-000
+|
+|-
+|[[File:SASKATCHEWAN 1963 plate (2157173768).jpg|150px]]
+|1963
+|Dark blue on orange; "63 SASKATCHEWAN" at top
+|''none''
+|123-456
+|1 to approximately 261-000
+|
+|-
+|[[File:Saskatchewan License Plate 1964.jpg|150px]]
+|1964
+|Green on white; "64 SASKATCHEWAN" at top
+|''none''
+|123-456
+|1 to approximately 277-000
+|
+|-
+|[[File:SASKATCHEWAN 1965 plate DIAMOND JUBILEE (2156394899).jpg|150px]]
+|1965
+|White on green; "65 SASKATCHEWAN" at bottom
+|"DIAMOND JUBILEE" at top
+|123-456
+|1 to approximately 287-000
+|Commemorated Saskatchewan's 60 years of provincehood.
+|-
+|[[File:Saskatchewan License Plate 1966.jpg|150px]]
+|1966
+|Green on white; "66 SASKATCHEWAN" at bottom
+|''none''
+|123-456
+|1 to approximately 291-000
+|
+|-
+|[[File:SASKATCHEWAN 1967 plate CANADA CENTENNIAL (2156407337).jpg|150px]]
+|1967
+|Brown on yellow; "SASKATCHEWAN 1967" at top
+|"[[Canadian Centennial|CANADA CENTENNIAL]]" at bottom
+|123-456
+|1 to approximately 304-000
+|
+|-
+|[[File:Saskatchewan License Plate 1968.jpg|150px]]
+|1968
+|Green on white; "19" at top left, "68" at top right and "SASKATCHEWAN" at bottom
+|''none''
+|123-456
+|1 to approximately 311-000
+|
+|-
+|[[File:1969 Saskatchewan licence plate.jpg|150px]]
+|1969
+|White on green; "SASKATCHEWAN 1969" at top
+|''none''
+|123-456
+|1 to approximately 313-000
+|
+|-
+|[[File:Saskatchewan License Plate 1970.jpg|150px]]
+|1970
+|Green on reflective white; "SASKATCHEWAN 1970" at top
+|''none''
+|123-456
+|1 to approximately 308-000
+|
+|-
+|[[File:Saskatchewan 1971 Plate.jpg|150px]]
+|1971
+|Red on reflective white; "SASKATCHEWAN 1971" at bottom
+|''none''
+|123-456
+|1 to approximately 325-000
+|
+|-
+|[[File:Saskatchewan License Plate 1972.jpg|150px]]
+|1972
+|Blue on reflective white; "72 SASKATCHEWAN" at top
+|''none''
+|123-456
+|1 to approximately 315-000
+|
+|-
+|[[File:SASKATCHEWAN 1973 license plate HOME OF THE RCMP.jpg|150px]]
+|1973
+|Red on reflective white; "73 SASKATCHEWAN" at top
+|"HOME OF THE [[Royal Canadian Mounted Police|RCMP]]" at bottom
+|123-456
+|1 to approximately 316-000
+|
+|-
+|[[File:Saskatchewan License Plate 1974.jpg|150px]]
+|1974
+|Green on reflective white; "74 SASKATCHEWAN" at bottom
+|''none''
+|123-456
+|1 to approximately 339-000
+|
+|-
+|[[File:Saskatchewan License Plate 1975.jpg|150px]]
+|1975
+|Red on reflective white; "75 SASKATCHEWAN" at bottom
+|''none''
+|123-456
+|1 to approximately 365-000
+|
+|-
+|[[File:Saskatchewan License Plate 1976.jpg|150px]]
+|1976
+|Blue on reflective white; "76 SASKATCHEWAN" at bottom
+|''none''
+|123-456
+|1 to approximately 383-000
+|
+|}
+
+===1977 to present===
+{{As of|2025}}, Saskatchewan is one of seven provinces/territories in which decals are not used on passenger vehicles to show that the vehicle has valid registration (the others being Quebec, Manitoba, Alberta, Ontario, British Columbia, and the Northwest Territories).
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:SASKATCHEWAN 1977 plate (2156625545).jpg|150px]]
+|1977&nbsp;–<br>May<br>1998
+|Green on reflective white with screened wheat graphic in centre; sans-serif "Saskatchewan" screened in green centred at top
+|''none''
+|ABC&nbsp;123
+|HBB 100 to SZZ&nbsp;999, then random blocks (see right)
+|'H', 'J', 'K', 'M', 'N' and 'S' series of serials issued first, followed by random blocks from 1991 onwards. Letters I, O, Q, U and V not used; this practice continued until 2009.<ref name="allaboutlicenseplatesSK">{{cite web |last=Tanner |first=Eric N. |title=Saskatchewan Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Saskatchewan&code=sk |publisher=allaboutlicenseplates.com |access-date=November 17, 2020 |archive-date=January 23, 2022 |archive-url=https://web.archive.org/web/20220123205505/https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Saskatchewan&code=sk |url-status=live }}</ref>
+|-
+|[[File:Saskatchewan 1998 type license plate.png|150px]]
+|May<br>1998&nbsp;– early<br>2009
+|rowspan="2"|As above, but with smaller wheat graphic, and serif "Saskatchewan" centred at top
+|rowspan="2"|"Land of Living Skies" screened in green centred at bottom
+|rowspan="2"|123 ABC
+|100 AAA to 999&nbsp;MZZ
+|Front and rear plates required until June 30, 2004; only rear plates required since.<ref name="singleplate"/> The change occurred in the early 'E' series of serials.
+|-
+|[[File:Saskatchewan License Plate 2011.jpg|150px]]
+|early 2009&nbsp;– present
+|001 MNB to 905&nbsp;PIK {{small|(as of July 10, 2026)}}
+|Manufactured on aluminium rather than steel, and with former [[Vehicle registration plates of South Dakota|South Dakota]] serial [[Die (manufacturing)|die]]s. Letters I, Q, U and V and numbers 001 through 099 added to serials.<ref name="allaboutlicenseplatesSK"/> The [[Sticker|stickers]] on license plates were [[Deprecation|deprecated]] in October 2012 to maximize efficiency.<ref>{{Cite web |title=SASKATCHEWAN LICENCE PLATES ARE GOING STICKERLESS {{!}} News and Media |url=https://www.saskatchewan.ca/government/news-and-media/2012/october/02/saskatchewan-licence-plates-are-going-stickerless |access-date=2024-05-21 |website=Government of Saskatchewan |language=en}}</ref>
+|}
+
+==Non-passenger baseplates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Driver
+|
+|Green on reflective white; sans-serif "Saskatchewan" screened in green centred at top with wheelchair icon to left of number
+|"Land of Living Skies"
+|12345
+|''unknown''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|
+|Green on reflective white; sans-serif "Saskatchewan" screened in green centred at top
+|"Land of Living Skies"
+|123AB
+|''unknown'' to 225RA (As of August 25, 2025)
+|
+|}
+
+==Specialty plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Collector
+|
+|
+|"COLLECTOR"
+|123-456
+|100-001 to 101-001 (As of April 21, 2024)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Consular Corps
+|
+|
+|"Consular Corps"
+|AB-123
+|CC-001 to CC-171 (As of March 10, 2024)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Roughriders
+|
+|
+|"Pride Lives Here"
+|12A34
+|R1001 to R9999, 1R101 to 9R999, 01R01 to 24R01 (As of November 16, 2025)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Roughriders Vintage
+|
+|
+|"Rider Nation"
+|12345
+|00001 to 03141 (As of September 28, 2022)
+|Old design still available 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support Our Troops
+|
+|
+|"Support Our Troops"
+|A1234
+|T0001 to T3178 (As of June 28, 2026)
+|
+|}
+
+===Military plates===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Memorial Cross
+|
+|
+|"Memorial Cross Recipient"
+|A1234
+|M0001 to M0011 (As of November 14, 2024)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran
+|
+|
+|"Veteran"
+|A1234
+|V1001 to V7799 (As of April 26, 2025)
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category|Licence plates of Saskatchewan}}
+*[https://www.15q.net/sk.html Saskatchewan licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200616154744/https://www.15q.net/sk.html |date=2020-06-16 }}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:Vehicle registration plates of Canada|Saskatchewan]]
+[[Category:Transport in Saskatchewan]]
+[[Category:Saskatchewan transport-related lists]]
+[[Category:1912 establishments in Saskatchewan]]

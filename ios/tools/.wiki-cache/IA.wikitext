@@ -1,0 +1,1211 @@
+{{short description|Iowa vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =  Iowa license plate.jpg
+| nickname =
+| slogan_label = Slogan
+| slogan = ''county name''
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123
+| current_start_date = {{Start date|2018|04|01}}
+| designer = 
+| issuer = [[Iowa Department of Transportation]], Motor Vehicle Division
+| manufacturer = 
+| start_date = {{Start date|1911|01|01}}<br>(pre-state plates from 1904 to December 31, 1910)
+}}
+The U.S. state of [[Iowa]] first required its residents to register their [[motor vehicle]]s in 1904. Registrants provided their own [[Vehicle registration plate|license plates]] for display until 1911, when the state began to issue plates.<ref>{{cite news |last=Swarm |first=Curt |date=February 15, 2013 |title=Moulton man has 100-year collection of Appanoose County license plates |url=http://www.dailygate.com/opinion/article_43262419-45c6-5bb9-9e92-703e3afa725d.html |newspaper=Daily Gate City |location=Keokuk, IA |access-date=September 23, 2016}}</ref>
+
+Plates are currently issued by the [[Iowa Department of Transportation]] through its Motor Vehicle Division. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+===Prestate===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1904 to 1910 (prestate)
+|Riveted metal numbers on black leather plate, "IA" riveted on right
+|12345
+|1 to approximately 13000
+|
+|}
+
+===1911 to 1971===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Iowa license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1911_IA.jpg|150px]]
+|1911
+|Embossed white serial on dark blue plate with border line; "IA 1911" at right
+|''none''
+|12345
+|2001 to approximately 30000
+|
+|-
+|[[File:Iowa 1912 license plate.jpg|150px]]
+|1912
+|Embossed white serial on black plate; "IA 1912" at right
+|''none''
+|12345
+|1001 to approximately 46000
+|
+|-
+|[[File:Iowa 1913 65764.jpg|150px]]
+|1913
+|Embossed black serial on white plate; "IA 1913" at right
+|''none''
+|12345
+|3001 to approximately 75000
+|
+|-
+|[[File:1914 IA.jpg|150px]]
+|1914
+|Embossed white serial on black plate; "IA 1914" at right
+|''none''
+|123456
+|6001 to approximately 112000
+|
+|-
+|[[File:Iowa 1915 151168.jpg|150px]]
+|1915
+|Embossed black serial on yellow plate; "IA 1915" at right
+|''none''
+|123456
+|7001 to approximately 152000
+|
+|-
+|[[File:Iowa_1918_license_plate_-_Number_132874.jpg|150px]]
+|{{nowrap|1916–18}}
+|Embossed beige serial on dark olive green plate; "IA" and dash at right
+|''none''
+|123456
+|1 to approximately 341000
+| Intentionally used for [[Vehicle registration plates of the United States for 1916|three]] [[Vehicle registration plates of the United States for 1917|years]] [[Vehicle registration plates of the United States for 1918|straight]].
+|-
+|[[File:Iowa 1919 86047.jpg|150px]]
+|1919
+|Embossed white serial on brown plate; "IA 19" at right
+|''none''
+|123456
+|1 to approximately 362000
+|
+|-
+|[[File:Iowa 1920 184015.jpg|150px]]
+|1920
+|Embossed black serial on light green plate with border line; "IA 20" at right
+|''none''
+|123456
+|1 to approximately 438000
+|
+|-
+|[[File:1921 Iowa license plate.jpg|150px]]
+|1921
+|Embossed silver serial on black plate with border line; "IA 21" at right
+|''none''
+|123456
+|1 to approximately 441000
+|
+|-
+|[[File:Iowa 1922 license plate - Number 7-680.jpg|150px]]
+|1922
+|Embossed black serial on silver plate with border line; "IA 22" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|First use of county codes.
+|-
+|[[File:Iowa 1923 license plate - Number 45-3179.jpg|150px]]
+|1923
+|Embossed yellow serial on black plate with border line; "IA 23" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1924 74-49.jpg|150px]]
+|1924
+|Embossed white serial on black plate with border line; "IA 24" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1925 74-49.jpg|150px]]
+|1925
+|Embossed black serial on gray plate with border line; "IA 25" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1926 license plate - Number 2 -3752.jpg|150px]]
+|1926
+|Embossed white serial on maroon plate with border line; "IA 26" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1927 1-546 license plate.jpg|150px]]
+|1927
+|Embossed orange serial on dark blue plate with border line; "IA 27" at right
+|''none''
+|''A''-12345<br>''1''-1234<br>''10''-1234
+|Coded by county of issuance (''A'', ''1'' or ''10'')
+|
+|-
+|[[File:1928 Iowa license plate.JPG|150px]]
+|1928
+|Embossed black serial on white plate with border line; "IA 28" at right
+|''none''
+|''A''-12345<br>''1''-1234<br>''10''-1234
+|Coded by county of issuance (''A'', ''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1929 B-5354.jpg|150px]]
+|1929
+|Embossed black serial on green plate with border line; vertical "IOWA" and "1929" at right
+|Truck plates have a vertical "TRUCK" instead of the dash
+|''A''-12345<br>''1''-1234<br>''10''-1234
+|Coded by county of issuance (''A'', ''1'' or ''10'')
+|First use of the full state name.
+|-
+|[[File:Iowa 1930 license plate - Number 77-37837.jpg|150px]]
+|1930
+|Embossed white serial on dark blue plate with border line; "IOWA-1930" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1931 IA.jpg|150px]]
+|1931
+|Embossed dark blue serial on white plate with border line; "IOWA-1931" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1932 license plate - Number 85-3891.jpg|150px]]
+|1932
+|Embossed white serial on maroon plate with border line; "IOWA-1932" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Image-1933 IA passenger plate.jpg|150px]]
+|1933
+|Embossed white serial on dark blue plate with border line; "IOWA-1933" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1934 license plate - Number 7- 8883.jpg|150px]]
+|1934
+|Embossed yellow serial on dark blue plate with border line; "IOWA-1934" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1935 license plate - Number 68-2222.jpg|150px]]
+|1935
+|Embossed white serial on dark blue plate with border line; "IOWA-1935" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1936 license plate - Number 77-14435.jpg|150px]]
+|1936
+|Embossed dark blue serial on white plate with border line; "IOWA-1936" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1937 license plate - Number 25 - 23.jpg|150px]]
+|1937
+|Embossed white serial on dark blue plate with border line; "1937-IOWA" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1938 Iowan license plate.jpg|150px]]
+|1938
+|Embossed dark blue serial on white plate with border line; "IOWA-1938" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed white serial on dark blue plate with border line; "IOWA-1939" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1940 license plate - Number 15-865.jpg|150px]]
+|1940
+|Embossed dark blue serial on orange plate with border line; "IOWA-1940" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1941 license plate - Number 57-9767.jpg|150px]]
+|1941
+|Embossed black serial on white plate with border line; "IOWA-1941" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1942 Iowa license plate.jpg|150px]]
+|1942–44
+|Embossed white serial on black plate with border line; "IOWA-1942" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1943 and 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed black serial on white plate with border line; "IOWA-1945" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|Only rear plates issued due to ongoing metal conservation; a windshield sticker was carried at the front of the vehicle.
+|-
+|[[File:Iowa 1946 license plate - Number 54-1687.jpg|150px]]
+|1946
+|Embossed white serial on black plate with border line; "IOWA-1946" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1947 license plate - Number 77-2469.jpg|150px]]<br>[[File:Iowa 1948 license plate - Number 23-1487.jpg|150px]]
+|1947–48
+|Embossed black serial on white plate with border line; "1947-IOWA" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1948 with silver tabs.
+|-
+|[[File:1949 IA passenger plate.jpg|150px]]
+|1949
+|Embossed white serial on waffle-textured black plate with border line; "IOWA-1949" centered at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1950 license plate - Number 86-534.jpg|150px]]<br>[[File:Iowa 1951 license plate - Number 91-6667.jpg|150px]]
+|1950–51
+|Embossed black serial on white plate with border line; "IOWA" centered at top; "19" at top left and "50" at top right
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1951 with silver tabs.
+|-
+|[[File:Iowa 1952 license plate - Number 61-2518.jpg|150px]]
+|1952
+|Embossed white serial on black plate with border line; "IOWA" centered at top; "19" at top left and "52" at top right
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Iowa 1953 license plate - Number 57-43049.jpg|150px]]<br>[[File:1954 Iowa license plate.jpg|150px]]<br>[[File:Iowa 1955 license plate - Number 55-9861.jpg|150px]]
+|1953–55
+|Embossed black serial on white plate with border line; "IOWA" centered at top; "19" at top left and "53" at top right
+|"THE CORN STATE" centered at bottom
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|First use of a slogan of any kind, with the state's unofficial nickname chosen over the official nickname of "The Hawkeye State". Revalidated for 1954 and 1955 with silver tabs.
+|-
+|[[File:Iowa 1956 50-3990.jpg|150px]]<br>[[File:Iowa 1957 license plate - Number 29-3551.jpg|150px]]
+|1956–57
+|Embossed white serial on black plate with border line; "IOWA" centered at top; "19" at top left and "56" at top right
+|''none''
+|''1''-1234<br>''1''-A123<br>''1''-1A23<br>''10''-1234<br>''10''-A123<br>''10''-1A23<br>'''77'''-12A3<br>'''77'''-123A<br>'''77'''-AB12
+|1-0001 to approximately 99-9999<br>1-A000 to approx. 99-Z999 (212,762 plates were issued in 20 counties)<br>1-0A00 to approx. 99-9Z99 (76,955 in 6 counties)<br>77-00A0 to 77-99Z9 (20,000 in Polk county)<br>77-000A to 77-999Z (20,000 in Polk county)<br>77-AA00 to 77-FC79 (10,280 in Polk County)
+|First 6" x 12" plate. I, M, O, Q, W and Y not used in lettered serial formats.<ref name="allaboutlicenseplatesIA">{{cite web |last=Tanner |first=Eric N. |title=Iowa Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Iowa&code=ia |publisher=allaboutlicenseplates.com |access-date=November 17, 2020}}</ref> Revalidated for 1957 with silver tabs. Coded by county of issuance (''1'' or ''10'')
+|-
+|[[File:Iowa 1958 license plate - Number 9-5361.jpg|150px]]
+|1958
+|Embossed black serial on white plate with border line; "IOWA" centered at top; "58" at top right
+|''none''
+|{{small|''1''}}-12345<br>{{small|''1''/''0''}}-12345
+|Coded by county of issuance ({{small|''1''}} or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1959 6-3388.jpg|150px]]
+|1959
+|Embossed black serial on yellow plate with border line; "IOWA" centered at top; "59" at top right
+|''none''
+|{{small|''1''}} 12345<br>{{small|''1''/''0''}} 12345
+|Coded by county of issuance ({{small|''1''}} or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1960 42 6361.jpg|150px]]
+|1960
+|Embossed black serial on light gray plate with border line; "IOWA" centered at top; "60" at top right
+|''none''
+|''1'' 12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1961 license plate - Number 91 4454.jpg|150px]]
+|1961
+|As 1959 base, but with "61" at top right
+|''none''
+|''1'' 12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1962 license plate - Number 77 14405.jpg|150px]]
+|1962
+|As 1960 base, but with "62" at top right
+|''none''
+|''1'' 12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1963 78 534.jpg|150px]]
+|1963
+|Embossed white serial on black plate with border line; "IOWA" centered at top; "63" at top right
+|''none''
+|''1'' 12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1964 license plate - Number 42 5258.jpg|150px]]
+|1964
+|Embossed white serial on green plate with border line; "IOWA" centered at top; "64" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1965 license plate - Number 42 5344.jpg|150px]]
+|1965
+|Embossed white serial on dark blue plate with border line; "IOWA" centered at top; "65" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1966 license plate - Number 77-29519.jpg|150px]]
+|1966
+|Embossed white serial on red plate with border line; "IOWA" centered at top; "66" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1967 5 -3761.jpg|150px]]
+|1967
+|Embossed black serial on reflective white plate with border line; "IOWA" centered at top; "67" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1968 license plate - number 91 8896.jpg|150px]]
+|1968
+|Embossed red serial on reflective white plate with border line; "IOWA" centered at top; "68" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1969 license plate - Number 50 7981.jpg|150px]]
+|1969
+|As 1967 base, but with "69" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1970 license plate - number 50-5807.jpg|150px]]
+|1970
+|As 1968 base, but with "70" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|-
+|[[File:Iowa 1971 license plate - Number 25 8740.jpg|150px]]
+|1971
+|As 1967 base, but with "71" at top right
+|''none''
+|''1''-12345<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or {{small|''1''/''0''}})
+|
+|}
+
+===1972 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Description
+!Slogan
+!Serial format
+!style="width:115px;"|Serials issued
+!Notes
+|-
+|[[File:Iowa 1972 license plate - Number 77 107471.jpg|150px]]
+|{{nowrap|1972–74}}
+|Embossed black serial on reflective yellow plate with border line; "IOWA 72" centered at top; black sticker box at top right
+|''none''
+|{{small|''1''}} 123456<br>{{small|''1''/''0''}}&nbsp;123456
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for [[:File:Iowa 1973 25 4420.jpg|1973]] and [[:File:Iowa 1974 77-167439.jpg|1974]] with stickers.
+|-
+|[[File:Iowa 1975 license plate - Number 57 DNW595.jpg|150px]]
+|1975–78
+|Embossed black serial on reflective white plate with border line; "IOWA 75" centered at top
+|''none''
+|{{small|''1''}} ABC123<br>{{small|''1''/''0''}}&nbsp;ABC123
+|Coded by county of issuance (''ABC'' and either''1'' or ''10'')
+|Three-letter serials assigned in blocks to each county ({{small|''1''}} or {{small|''1''/''0''}}); this practice continued until circa 1980-1985. See the County Coding table below for each assignment. Non-resident plates initially had "NON RESIDENT" at the bottom and no {{small|''0''/''0''}} code at the far left.<ref name="allaboutlicenseplatesIAvar">{{cite web|last=Tanner |first=Eric N. |title=Iowa License Plate Variations |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Variations&jurisdiction=Iowa&code=ia |publisher=allaboutlicenseplates.com |access-date=November 17, 2020}}</ref><ref>{{cite web |title=76 Iowa |url=http://www.plateshack.com/76/IA/iowa.html |publisher=Plateshack.com |access-date=October 25, 2014 |archive-date=July 2, 2014 |archive-url=https://web.archive.org/web/20140702131027/http://www.plateshack.com/76/IA/iowa.html |url-status=dead }}</ref>
+|-
+|[[File:Iowa 1980 BGN 804.jpg|150px]]
+|rowspan="2"|1979 – December 1984
+|rowspan="2"|Reflective white serial on green plate with border line; "IOWA" and county name centered at top and bottom respectively; "79" at top right; all embossed. Plate elements either embossed (above) or debossed (below)
+|rowspan="2"|''county name''
+|rowspan="2"|ABC&nbsp;123
+|rowspan="2"|AAA 000 to approximately KCZ&nbsp;999
+|rowspan="2"|County codes abolished after 57 years, replaced by county names at bottom of plate. Whether the plate was embossed or debossed depended on the county of issuance. The serial blocks initially assigned were the same as those on the 1975–78 base. Non-resident plates had blank bottoms.
+|-
+|[[File:Iowa 1979 GMC 569.jpg|150px]]
+|-
+|[[File:Iowa license plate, 1986–1996 series with November 1994 sticker.png|150px]]
+|January 1985&nbsp;– December 1996
+|Embossed reflective white serial on blue plate with border line; "IOWA" and county name centered at top and bottom respectively; "86" at top right
+|''county name''
+|ABC&nbsp;123
+|LAA 000 to<br>YZZ&nbsp;999
+|Non-resident plates discontinued. Month and year stickers are separate, and vanity plates had blank bottoms.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 1997&nbsp;– 1998
+|Embossed blue serial on reflective graphic plate with light blue sky, white city skyline and gray farm scene; "IOWA" screened in blue centered at top; county name on sticker centered at bottom
+|rowspan="5"|''county name''
+|rowspan="4"|123&nbsp;ABC
+|000 AAA to 399&nbsp;FSK
+|'D' series not used.<ref name="allaboutlicenseplatesIA"/>
+|-
+| 
+|1998&nbsp;–<br>mid<br>2001
+|As above, but with county name screened in blue
+|Exclusively from 400&nbsp;FSK to approximately 999&nbsp;HMY; intermittently&nbsp;from 000&nbsp;HMZ to approximately 999&nbsp;JYC
+|
+|-
+|[[File:Iowa registarion plate (mid2000-jul2011).png|150px]]
+|mid<br>2000&nbsp;–<br>July<br>2011
+|As above, but with serial screened rather than embossed
+|Intermittently from 000&nbsp;HMZ to approximately 999&nbsp;JYC;<br>exclusively from 000&nbsp;JYD to approximately 999&nbsp;YPK
+|Originally issued in eight most populous counties ([[Black Hawk County, Iowa|Black Hawk]], [[Dubuque County, Iowa|Dubuque]], [[Johnson County, Iowa|Johnson]], [[Linn County, Iowa|Linn]], [[Polk County, Iowa|Polk]], [[Pottawattamie County, Iowa|Pottawattamie]], [[Scott County, Iowa|Scott]], [[Woodbury County, Iowa|Woodbury]]); issued in all counties from mid-2001. Series KDA through KZC skipped in error; SAA through SHG reserved for Special plates; 'U' and 'V' series not used.<ref name="allaboutlicenseplatesIA"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|July<br>2011&nbsp;–<br>late<br>2012
+|rowspan="2"|As above, but with serial, state name and county name in black rather than blue
+|000 YPL to<br>999&nbsp;ZZZ
+|Elements changed from blue to black in order to reduce costs and improve legibility.<ref>{{cite news |last=Sutterman |first=Kelli |date=July 10, 2011 |title=Standard license plates to adopt black lettering |url=https://www.thegazette.com/2011/07/10/standard-license-plates-to-adopt-black-lettering |newspaper=[[The Gazette (Cedar Rapids)|The Gazette]] |location=Cedar Rapids, IA |access-date=July 11, 2011}}</ref> Zeros in serials became [[Slashed zero|slashed]] at the beginning of the YYA series (early 2012).
+|-
+| 
+|late<br>2012&nbsp;– April<br>2018
+|ABC&nbsp;123
+|AAA 000 to approximately GXV&nbsp;199
+| No I, O, Q used as 3rd letter. 
+|-
+|[[File:Iowa license plate.jpg|150px]]
+|April 2018 – present
+|Screened black serial on reflective graphic plate with blue sky, white city skyline, farm and wind turbine, and green grass field; "IOWA" screened in white centered at top; county name screened in black centered at bottom
+|''county name''
+|ABC&nbsp;123
+|GXV 200 to QBW 361 {{small|(as of September 14, 2025)}}<ref name=":0">{{Cite web |title=Iowa License Plates |url=https://www.licenseplates.cc/IA |access-date=September 14, 2025 |website=www.licenseplates.cc}}</ref>
+|In August 2017, this "City and Country Reboot" design was chosen by voters at the 2017 [[Iowa State Fair]] and on the Iowa State Fair's website.  Competing against a "Flying Our Colors" design and a "Great Wide Open" design, the new "City and Country Reboot" license plate won the contest with 113,299 votes cast out of a total of 291,095 votes.<ref name=whbf-tv>{{cite news|url=http://www.ourquadcities.com/news/iowa-announces-winning-license-plate/794922296|title=Iowa announces winning license plate|work=[[WHBF-TV]]|publisher=[[Nexstar Media Group]]|date=August 21, 2017|access-date=December 17, 2017}}</ref><ref name=who-tv>{{cite news|last=Maricle|first=Kelly|url=http://whotv.com/2017/08/21/new-iowa-license-plate-design-revealed|title=New Iowa License Plate Design Revealed|work=[[WHO-DT]]|publisher=[[Tribune Broadcasting]]|date=August 21, 2017|access-date=December 17, 2017}}</ref><ref name=cr-gazette>{{cite news|url=http://www.thegazette.com/subject/news/government/new-iowa-license-plate-city-and-country-reboot-20170821|title=New Iowa license plate: 'City and Country Reboot'|work=[[The Gazette (Cedar Rapids)|Cedar Rapids Gazette]]|publisher=The Gazette Company|date=August 22, 2017|access-date=December 17, 2017}}</ref> No I, O, Q used as 3rd letter. 
+|}
+
+==County coding==
+{|class="wikitable collapsible collapsed sortable"
+|-
+!County!!data-sort-type="text"|Code, 1928–29!!Code, 1930–78!!3-letter block, 1975–84
+|-
+|[[Adair County, Iowa|Adair]] || 1 || 1 || AAA–AAZ
+|-
+|[[Adams County, Iowa|Adams]] || 2 || 2 || ABA–ABZ
+|-
+|[[Allamakee County, Iowa|Allamakee]] || 3 || 3 || ACA–ACZ
+|-
+|[[Appanoose County, Iowa|Appanoose]] || 4 || 4 || ADA–ADZ
+|-
+|[[Audubon County, Iowa|Audubon]] || 5 || 5 || AEA–AEZ
+|-
+|[[Benton County, Iowa|Benton]] || 6 || 6 || AFA–AGZ
+|-
+|[[Black Hawk County, Iowa|Black Hawk]] || H || 7 || AHA–AMZ
+|-
+|[[Boone County, Iowa|Boone]] || 7 || 8 || ANA–AOZ
+|-
+|[[Bremer County, Iowa|Bremer]] || 8 || 9 || APA–AQZ
+|-
+|[[Buchanan County, Iowa|Buchanan]] || 9 || 10 || ARA–ARZ
+|-
+|[[Buena Vista County, Iowa|Buena Vista]] || 10 || 11 || ASA–ATZ
+|-
+|[[Butler County, Iowa|Butler]] || 11 || 12 || AUA–AUZ
+|-
+|[[Calhoun County, Iowa|Calhoun]] || 12 || 13 || AVA–AVZ
+|-
+|[[Carroll County, Iowa|Carroll]] || 13 || 14 || AWA–AXZ
+|-
+|[[Cass County, Iowa|Cass]] || 14 || 15 || AYA–AYZ
+|-
+|[[Cedar County, Iowa|Cedar]] || 15 || 16 || AZA–AZZ
+|-
+|[[Cerro Gordo County, Iowa|Cerro Gordo]] || M || 17 || BAA–BCZ
+|-
+|[[Cherokee County, Iowa|Cherokee]] || 16 || 18 || BDA–BDZ
+|-
+|[[Chickasaw County, Iowa|Chickasaw]] || 17 || 19 || BEA–BEZ
+|-
+|[[Clarke County, Iowa|Clarke]] || 18 || 20 || BFA–BFZ
+|-
+|[[Clay County, Iowa|Clay]] || 19 || 21 || BGA–BGZ
+|-
+|[[Clayton County, Iowa|Clayton]] || 20 || 22 || BHA–BIZ
+|-
+|[[Clinton County, Iowa|Clinton]] || K || 23 || BJA–BLZ
+|-
+|[[Crawford County, Iowa|Crawford]] || 21 || 24 || BMA–BMZ
+|-
+|[[Dallas County, Iowa|Dallas]] || 22 || 25 || BNA–BOZ
+|-
+|[[Davis County, Iowa|Davis]] || 23 || 26 || BPA–BPZ
+|-
+|[[Decatur County, Iowa|Decatur]] || 24 || 27 || BQA–BQZ
+|-
+|[[Delaware County, Iowa|Delaware]] || 25 || 28 || BRB–BRZ
+|-
+|[[Des Moines County, Iowa|Des Moines]] || N || 29 || BSA–BUZ
+|-
+|[[Dickinson County, Iowa|Dickinson]] || 26 || 30 || BVA–BVZ
+|-
+|[[Dubuque County, Iowa|Dubuque]] || J || 31 || BWA–CAZ
+|-
+|[[Emmet County, Iowa|Emmet]] || 27 || 32 || CBA–CBZ
+|-
+|[[Fayette County, Iowa|Fayette]] || 28 || 33 || CCA–CDZ
+|-
+|[[Floyd County, Iowa|Floyd]] || 29 || 34 || CEA–CFZ
+|-
+|[[Franklin County, Iowa|Franklin]] || 30 || 35 || CGA–CGZ
+|-
+|[[Fremont County, Iowa|Fremont]] || 31 || 36 || CHA–CHZ
+|-
+|[[Greene County, Iowa|Greene]] || 32 || 37 || CIA–CIZ
+|-
+|[[Grundy County, Iowa|Grundy]] || 33 || 38 || CJA–CJZ
+|-
+|[[Guthrie County, Iowa|Guthrie]] || 34 || 39 || CKA–CKZ
+|-
+|[[Hamilton County, Iowa|Hamilton]] || 35 || 40 || CLA–CMZ
+|-
+|[[Hancock County, Iowa|Hancock]] || 36 || 41 || CNA–CNZ
+|-
+|[[Hardin County, Iowa|Hardin]] || 37 || 42 || COA–CPZ
+|-
+|[[Harrison County, Iowa|Harrison]] || 38 || 43 || CQA–CQZ
+|-
+|[[Henry County, Iowa|Henry]] || 39 || 44 || CRA–CRZ
+|-
+|[[Howard County, Iowa|Howard]] || 40 || 45 || CSA–CSZ
+|-
+|[[Humboldt County, Iowa|Humboldt]] || 41 || 46 || CTA–CTZ
+|-
+|[[Ida County, Iowa|Ida]] || 42 || 47 || CUA–CUZ
+|-
+|[[Iowa County, Iowa|Iowa]] || 43 || 48 || CVA–CVZ
+|-
+|[[Jackson County, Iowa|Jackson]] || 44 || 49 || CWA–CWZ
+|-
+|[[Jasper County, Iowa|Jasper]] || P || 50 || CXA–CYZ
+|-
+|[[Jefferson County, Iowa|Jefferson]] || 45 || 51 || CZA–CZZ
+|-
+|[[Johnson County, Iowa|Johnson]] || 46 || 52 || DAA–DDZ
+|-
+|[[Jones County, Iowa|Jones]] || 47 || 53 || DEA–DEZ
+|-
+|[[Keokuk County, Iowa|Keokuk]] || 48 || 54 || DFA–DFZ
+|-
+|[[Kossuth County, Iowa|Kossuth]] || 49 || 55 || DGA–DHZ
+|-
+|[[Lee County, Iowa|Lee]] || R || 56 || DIA–DLZ
+|-
+|[[Linn County, Iowa|Linn]] || C || 57 || DMA–DTZ
+|-
+|[[Louisa County, Iowa|Louisa]] || 50 || 58 || DUA–DUZ
+|-
+|[[Lucas County, Iowa|Lucas]] || 51 || 59 || DVA–DVZ
+|-
+|[[Lyon County, Iowa|Lyon]] || 52 || 60 || DWA–DWZ
+|-
+|[[Madison County, Iowa|Madison]] || 53 || 61 || DXA–DXZ
+|-
+|[[Mahaska County, Iowa|Mahaska]] || 54 || 62 || DYA–DZZ
+|-
+|[[Marion County, Iowa|Marion]] || 55 || 63 || EAA–EBZ
+|-
+|[[Marshall County, Iowa|Marshall]] || 56 || 64 || ECA–EEZ
+|-
+|[[Mills County, Iowa|Mills]] || 57 || 65 || EFA–EFZ
+|-
+|[[Mitchell County, Iowa|Mitchell]] || 58 || 66 || EGA–EGZ
+|-
+|[[Monona County, Iowa|Monona]] || 59 || 67 || EHA–EHZ
+|-
+|[[Monroe County, Iowa|Monroe]] || 60 || 68 || EIA–EIZ
+|-
+|[[Montgomery County, Iowa|Montgomery]] || 61 || 69 || EJA–EJZ
+|-
+|[[Muscatine County, Iowa|Muscatine]] || 62 || 70 || EKA–ELZ
+|-
+|[[O'Brien County, Iowa|O'Brien]] || 63 || 71 || EMA–EMZ
+|-
+|[[Osceola County, Iowa|Osceola]] || 64 || 72 || ENA–ENZ
+|-
+|[[Page County, Iowa|Page]] || 65 || 73 || EOA–EOZ
+|-
+|[[Palo Alto County, Iowa|Palo Alto]] || 66 || 74 || EPA–EPZ
+|-
+|[[Plymouth County, Iowa|Plymouth]] || 67 || 75 || EQA–ERZ
+|-
+|[[Pocahontas County, Iowa|Pocahontas]] || 68 || 76 || ESA–ESZ
+|-
+|[[Polk County, Iowa|Polk]] || A || 77 || FAA–FPZ
+|-
+|[[Pottawattamie County, Iowa|Pottawattamie]] || F || 78 || FQA–FUZ
+|-
+|[[Poweshiek County, Iowa|Poweshiek]] || 69 || 79 || FVA–FVZ
+|-
+|[[Ringgold County, Iowa|Ringgold]] || 70 || 80 || FWA–FWZ
+|-
+|[[Sac County, Iowa|Sac]] || 71 || 81 || FXA–FXZ
+|-
+|[[Scott County, Iowa|Scott]] || E || 82 || GAA–GHZ
+|-
+|[[Shelby County, Iowa|Shelby]] || 72 || 83 || GIA–GIZ
+|-
+|[[Sioux County, Iowa|Sioux]] || 73 || 84 || GJA–GKZ
+|-
+|[[Story County, Iowa|Story]] || 74 || 85 || GLA–GNZ
+|-
+|[[Tama County, Iowa|Tama]] || 75 || 86 || GOA–GOZ
+|-
+|[[Taylor County, Iowa|Taylor]] || 76 || 87 || GPA–GPZ
+|-
+|[[Union County, Iowa|Union]] || 77 || 88 || GQA–GQZ
+|-
+|[[Van Buren County, Iowa|Van Buren]] || 78 || 89 || GRA–GRZ
+|-
+|[[Wapello County, Iowa|Wapello]] || 79 || 90 || GSA–GUZ
+|-
+|[[Warren County, Iowa|Warren]] || 80 || 91 || GVA–GWZ
+|-
+|[[Washington County, Iowa|Washington]] || 81 || 92 || GXA–GXZ
+|-
+|[[Wayne County, Iowa|Wayne]] || 82 || 93 || GYA–GYZ
+|-
+|[[Webster County, Iowa|Webster]] || L || 94 || HAA–HCZ
+|-
+|[[Winnebago County, Iowa|Winnebago]] || 83 || 95 || HDA–HDZ
+|-
+|[[Winneshiek County, Iowa|Winneshiek]] || 84 || 96 || HEA–HEZ
+|-
+|[[Woodbury County, Iowa|Woodbury]] || B || 97 || HFA–HKZ
+|-
+|[[Worth County, Iowa|Worth]] || 85 || 98 || HLA–HLZ
+|-
+|[[Wright County, Iowa|Wright]] || 86 || 99 || HMA–HMZ
+|-
+|Non-resident || 00 || 00 || HNA–HNZ
+|}
+
+==Current non-passenger and optional plates==
+
+===Non-passenger plates===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] Power Unit
+|c.&nbsp;1998
+|Green on white
+|'''P'''B 1234<br>'''S'''B 1234
+|Issued to trucks and tractor units.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Apportioned [[Trailer (vehicle)|Trailer]]
+|c.&nbsp;1998
+|Green on white
+|'''R'''B 1234<br>'''T'''B 1234
+|Issued to semi-trailers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|County Sheriff's Department
+|
+|Green on white with Sheriff's star-shaped seal at left
+|{{nowrap|'''S'''''00''-1234}}
+|Uses the numeric county-code system that was used on standard passenger plates until 1979 (so, for instance, a plate whose serial starts with S77 would indicate a deputy from Polk County). The numbers to the right of the hyphen correspond to the deputy's badge number. These plates are used only on marked units.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Car dealership|Dealer]]
+|
+|Black on white with blue state name
+|'''D'''1<br />'''D'''12<br />'''D'''123<br />'''D'''1234
+|Plus three-digit suffix that ascends for each dealer.
+|-
+| 
+|[[Motorcycle]]
+|
+|Similar to standard passenger base
+|1234 AB<br>AB 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Official]]
+|
+|Black on white
+|1234567
+|
+|-
+|[[File:Iowa 1986 Official County license plate - 36946.jpg|150px]]
+|Official [[County (United States)|County]]
+|
+|Black on white
+|12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Official School]]
+|
+|Red on white
+|12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Special
+|
+|As standard passenger base, but with vertical "SPECIAL" at left
+|123&nbsp;'''S'''BC (000 SAA to 999 SHG)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Iowa State Patrol|State Patrol]]
+|1975
+|Black on yellow with two red stars either side of serial
+|12<br>123
+|The serial number corresponds to the badge number for that state trooper, excluding post 16, who drive pool cars assigned numbers which are currently not being used by another trooper. These plates are used only on marked units; unmarked units use regular state-issued plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Trailer
+|
+|As standard passenger base
+|1234 AB<br>AB 1234
+|
+|-
+|}
+
+===Optional plates===
+Iowa offers its motorists a number of optional issue designs that are available upon the payment of an additional fee.
+
+Plates of all types other than the university types are available for both automobiles and motorcycles, the latter using a smaller overall plate size. University Plates are the only plates not colored the same as the standard issue plate, the color scheme is a yellow base, with the university's main sports team color on both the numbers, and a header denoting the school (i.e. red for Iowa State University, black for University of Iowa, purple for UNI, et cetera).
+
+{|class=wikitable
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Air Force Cross (United States)|Air Force Cross]]
+|
+|
+|Must present military form DD-214 showing receipt of medal to be issued. Issuance is strictly regulated by the Iowa Department of Transportation, and the Iowa Department of Veterans' Affairs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Airman's Medal]]
+|
+|
+|Must present military form DD-214 showing receipt of medal to be issued. Plate issuance is strictly regulated by the Iowa Department of Transportation, and the Iowa Department of Veterans' Affairs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Blackout
+|July 2019
+|ABC 123
+|Combinations leapfrog through regular series. No I, O, Q used as 3rd letter. INS 427 lowest number reported.<ref name="allaboutlicenseplatesIA"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Breast Cancer]] Awareness
+|
+|123'''B'''A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Bronze Star]]
+|
+|
+|Must present military form DD-214 showing receipt of medal to be issued. As with all plates denoting high issue military medals, the issuance of this plate is strictly regulated by the Iowa Department of Transportation, and the Iowa Department of Veterans' Affairs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Cattle]]men Care
+|
+|'''CA'''123<br />123'''C'''A<br />123'''CI'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Congressional [[Medal of Honor]]&mdash;Air Force
+|
+|Plate number is medal issuance number
+|plate is light blue on white, with the words "Medal of Honor" in place of county name. Plate is issued by the state Veterans Administration.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Congressional Medal of Honor&mdash;Army
+|
+|Plate number is medal issuance number
+|county name replaced with the words "Medal of Honor." Plate is light blue on white. Plate is issued by state Veterans Administration. Must provide Military form DD-214 showing receipt of medal, as well as a copy of the medal certificate. Medal of Honor plates issued for all branches of service are strictly regulated.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Congressional Medal of Honor&mdash;Navy
+|
+|Plate number is medal issuance number
+|county name replaced with the words "Medal of Honor." Plate is light blue on white. Plate is issued by state Veterans Administration
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Distinguished Service Cross
+|
+|'''DSC'''123<br />'''DSC'''1234
+|Must present military form DD-214 showing receipt of medal to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Education]]
+|
+|
+|Must show [[National Education Association|NEA]] membership card and hold credentials as a schoolteacher to be issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Emergency Medical Services]]
+|
+|123'''EM'''<br />123'''EN'''
+|You need your signature and your director's signature notarized proving that you are indeed a member of a paid or volunteer EMS service in Iowa
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Freemasons|Masons]]
+|
+|
+|Must provide membership in an area [[Freemasons]] Lodge to be issued this plate
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Ex-[[Prisoner of War]]
+|
+|'''POW'''123<br />'''POW'''1234
+|Must present military form DD-214 showing receipt of the POW medal before issuance.
+|-
+|[[File:Iowa Firefighter license plate.jpg|150x150px]]
+|[[Firefighter]]
+|
+|'''FF'''123<br />123'''FF'''<br />'''FD'''123<br />123'''FD'''<br />1234'''F'''<br />'''F'''1234
+|Must have Firefighter's Identification before issuance. Plate is red on white, with nationally recognized firefighter's insignia in far left side, and reads "''Firefighter''," in place of county name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[God Bless America]]
+|
+|'''U'''S123<br />123'''US'''<br />123'''UA'''<br />123'''UD'''<br />123'''UE'''<br />123'''UK'''<br />123'''UP'''<br />123'''UQ'''<br />123'''UR'''<br />123'''UT'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Gold Star Mothers Club|Gold Star Mothers/Wives]]
+|
+|
+|Must have proof of membership within [[Gold Star Mothers Club|Gold Star Mother's]], or [[Gold Star Wives]] in order to be issued this plate
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Iowa Heritage
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Iowa State University]]
+|
+|'''ISU'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Legion of Merit]]
+|
+|
+|Must present military form DD-214 showing receipt of medal to be issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Love Our [[Child|Kid]]s
+|
+|'''K'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Motorcycle]] Rider
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Guard (United States)|National Guard]]
+|
+|'''N'''1234
+|Must have Military Identification denoting member of National Guard in order to be issued this plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Natural Resources – [[Bald eagle]]
+|
+|AB 123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Natural Resources – [[American goldfinch|Goldfinch]]/[[Wild prairie rose|wild rose]]
+|
+|AB123<br />AB 123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Natural Resources – [[Pheasant]]
+|
+|AB 123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Navy and Marine Corps Medal]]
+|
+|
+|Must present military form DD-214 showing receipt of medal to be issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Navy Cross (United States)|Navy Cross]]
+|
+|'''NC'''123<br />'''NC'''1234
+|Must present military form DD-214 showing receipt of medal to be issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Organ and Tissue Donor Awareness
+|
+|'''U'''1234<br />1234'''U'''
+|Must provide proof as an organ, or tissue donor (usually found on drivers license), to be issued this plate
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Persons with Disabilities
+|
+|'''C'''1234<br />1234'''C'''<br />'''J'''1234<br />1234'''J'''<br />'''Y'''1234<br />1234'''Y'''<br />1234'''Z''',<br />'''Z'''1234
+|Must have proof of disability, as well as the signature of a board certified doctor before plate is issued. Nobody can be issued this plate without the approval of the Iowa Department of Transportation. The plate is marked with the universal handicapped symbol on the far left hand side, with the serial number following, the one letter four number combination can either be with the letter first, or last in sequence.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Purple Heart]]
+|
+|'''P'''1234
+|Must present military form DD-214 showing receipt of medal to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Retired Air Force
+|
+|'''R'''1234
+|Must present Military Identification Card denoting retirement to be issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Retired Army
+|
+|'''R'''1234
+|Must have military identification card denoting retirement to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Retired Coast Guard
+|
+|'''R'''1234
+|Must present Coast Guard identification card showing retirement to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Retired Marines
+|
+|'''R'''1234
+|Must have military identification card denoting retirement to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Retired Navy
+|
+|'''R'''1234
+|Must have military identification card denoting retirement to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Bicycling|Share the Road]]
+|
+|'''SR'''123 (passenger)<br />123'''SU''' (motorcycle)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Shriners]]
+|
+|'''ZA'''123<br />'''ZB'''123
+|Must present a Shriners membership card to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Silver Star]]
+|
+|
+|Must present military form DD-214 showing receipt of medal to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Soldier's Medal]]
+|
+|
+|Must present military form DD-214 showing receipt of medal to be issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Iowa]]
+|
+|'''UI''' 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Northern Iowa]]
+|
+|'''UNI'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran
+|
+|'''V'''1234
+|Plate appears as standard plate, with an American flag to the far left, with the word "Veteran" above, plate is issued by the state Veteran's Administration, all applying must have copy of Military form DD-214 denoting Honorable Discharge in order to receive the Veterans plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Police Department
+|
+|1234567
+|Plate is white on dark blue, with a police officer's badge from the corresponding city on the left side, along with a seven digit number, and at the bottom, the City Police Department of issuance. These are issued only by the local police departments within the state, and placed on marked units only upon receipt of vehicle. They are illegal to be displayed by non-police officers.
+|}
+
+==Previous non-passenger and optional plates==
+
+===Optional plates===
+{|class=wikitable
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Pearl Harbor Survivor]]
+|1979?
+|Same as passenger baseplate, but with [[Pearl Harbor Survivor]] logo, used until 2011 or when the last Pearl Harbor Survivor from Iowa died
+|"Pearl Harbor Veteran"<br>''county name''
+|ship's hull number
+|ship's hull number
+|Must have proof to be issued this plate. Proof would consist of Military form DD-214, denoting that applicant was stationed on any one of the eight Battleships moored at Pearl Harbor [[Attack on Pearl Harbor|Dec. 7, 1941]], or any smaller vessel that was documented to be at Pearl Harbor during the attack. In place of county name, the plate reads "Pearl Harbor Veteran" before 1997, when the slogan became the county name sticker. Can have ship's hull number placed as plate number for no extra charge, provided the sequence is not already taken by another motorist.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Antique]]
+|1975?
+|Same as passenger baseplate
+|"ANTIQUE"
+|
+|
+|This plate was discontinued on at most 1997.
+|-
+|[[File:Iowa 1966 Truck Plate 23 182.jpg|150px]]
+|[[Truck]]
+|1966
+|Embossed dark blue lettering on a white background, "IOWA" in center at top "TRK" in center at bottom
+|
+|
+|}
+
+===Sesquicentennial plates===
+{|class=wikitable
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Iowa 1992 Sesquicentennial license plate - S082488.jpg|150px]]
+|Sesquicentennial (Patriotic)
+|1992
+|Embossed red serial on reflective white plate; "IOWA" screened in blue centered at top, with blue state shape to right; "Sesquicentennial" screened in red centered at bottom; blue bands screened at top left and top right, with "1846-1996" on left band and "92" on right band
+|'''S'''123456
+|S000001 to approximately S125000
+|rowspan="2"|Both these plates commemorated Iowa's 150 years of statehood. They remained valid until 1997.
+|-
+| 
+|Sesquicentennial (Scenic)
+|1992
+|Embossed red serial on reflective graphic plate with pale blue sky, green grass, pale green tree and blue city skyline; "IOWA" screened in red at top, offset to right; "SESQUICENTENNIAL 1846 * 1996" (in two lines) screened in black to left; "92" screened at top right
+|123456'''S'''
+|000001S to approximately 130000S
+|}
+
+==References==
+{{Reflist}}
+
+==External links==
+*[https://www.15q.net/ia.html Iowa license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613230144/https://www.15q.net/ia.html |date=June 13, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Iowa}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Iowa}}
+[[Category:Vehicle registration plates of the United States by state or territory|Iowa]]
+[[Category:Transportation in Iowa]]
+[[Category:Iowa transportation-related lists]]

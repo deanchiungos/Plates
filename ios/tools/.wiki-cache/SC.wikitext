@@ -1,0 +1,755 @@
+{{short description|South Carolina vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Where the Revolutionary War Was Won
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123ABC
+| current_start_date = {{Start date|2026|01}}
+| designer = 
+| issuer = South Carolina Department of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1917|07|01}}
+}}
+The U.S. state of [[South Carolina]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1917. {{As of|2023}}, plates are issued by the South Carolina Department of Motor Vehicles. Only rear plates have been required since 1975.
+
+==Passenger baseplates==
+===1917 to 1975===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first South Carolina license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Embossed black serial on light yellow plate; "SC 17" at right
+|''none''
+|12345
+|5001 to approximately 41000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed white serial on green plate with border line; "SC 18" at left
+|''none''
+|12345
+|5001 to approximately 61000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Embossed blue serial on white plate with border line; "S.C. 1919" centered at bottom
+|''none''
+|12-345
+|5-001 to approximately 73-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed white serial on black plate with border line; "S.C. 1920" centered at bottom
+|''none''
+|12-345
+|5-001 to approximately 98-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1921
+|Embossed red serial on black plate with border line; "S.C. 1921" centered at bottom
+|''none''
+|''A''12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed black serial on white plate with border line; "SC 22" at right
+|''none''
+|''A''12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed white serial on black plate with border line; "SC 23" at right
+|''none''
+|''A''12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed black serial on orange plate with border line; "24" and "SC" monogram at right
+|''none''
+|''A''123-456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed white serial on green plate with border line; "SC" monogram and "25" at right
+|''none''
+|''A''123-456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed red serial on white plate with border line; "SC" at right, with letters separated by embossed [[Sabal palmetto]] containing debossed "26"
+|''none''
+|''A''123-456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1927 South Carolina license plate.jpg|150px]]
+|1927
+|Embossed green serial on white plate with border line; "SC" at right, with letters separated by embossed Sabal palmetto containing debossed "27"
+|''none''
+|''A''123-456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed black serial on yellow plate with border line; "SOUTH CAROLINA 1928" at bottom
+|''none''
+|''A''123-456
+|Letter corresponds to weight class
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed black serial on white plate with border line; "SOUTH CAROLINA 1929" at bottom
+|''none''
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:1930 South Carolina license plate.jpg|150px]]
+|1930
+|Embossed white serial on black plate with border line; "SOUTH CAROLINA 1930" at bottom
+|Vertical "IODINE" at right
+|''A''-12-345
+|Letter corresponds to weight class
+|The slogan referred to the high amounts of [[iodine]] found in South Carolina's produce. Similar slogans were used through 1933.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed green serial on gray plate with border line; "S.C.", slogan and "31" at bottom
+|"THE IODINE STATE" between state abbreviation and year
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed black serial on golden yellow plate with border line; "S.C.", slogan and "32" at top
+|"THE IODINE STATE" between state abbreviation and year
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January&nbsp;– October 1933
+|Embossed black serial on white plate with border line; "SC 33" at right
+|"THE IODINE PRODUCTS STATE" at bottom
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|November 1933&nbsp;–<br>April<br>1934
+|Embossed black serial on yellow plate; "SC · EXPIRES APR 30 · 34" at top
+|''none''
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|May&nbsp;– October 1934
+|Embossed yellow serial on black plate; "SC · EXPIRES OCT 31 · 34" at bottom
+|''none''
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|November 1934&nbsp;–<br>April<br>1935
+|Embossed white serial on black plate; "SC · APRIL 30 · 35" at top
+|''none''
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|May&nbsp;– October 1935
+|Embossed black serial on white plate; "SC · OCTOBER 31 · 35" at bottom
+|''none''
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|November 1935&nbsp;–<br>April<br>1936
+|Embossed yellow serial on black plate with border line; "SC · APRIL 30 · 36" at top
+|''none''
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|May&nbsp;– October 1936
+|Embossed black serial on yellow plate with border line; "SC · OCTOBER 31 · 36" at bottom
+|''none''
+|''A''-12-345
+|Letter corresponds to weight class
+|
+|-
+|[[File:South Carolina 1937 License Plate.jpg|150px]]
+|November 1936&nbsp;– October 1937
+|Embossed black serial on white plate with border line; "SC · OCTOBER 31 · 37" at bottom
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|
+|-
+|[[File:1938 South Carolina license plate.JPG|150px]]
+|1937–38
+|Embossed black serial on golden yellow plate; "SOUTH CAROLINA 38" at bottom
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1938–39
+|Embossed black serial on white plate; "SOUTH CAROLINA 39" at bottom
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939–40
+|Embossed golden yellow serial on black plate; "SC · OCTOBER 31 · 40" at bottom
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940–41
+|Embossed black serial on golden yellow plate; "SOUTH CAROLINA 41" at bottom
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|
+|-
+|[[File:1942 South Carolina license plate.jpg|150px]]
+|1941–42
+|Embossed golden yellow serial on black plate; "SOUTH CAROLINA 42" at top
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1942–44
+|Embossed black serial on golden yellow plate; "SOUTH CAROLINA 43" at bottom
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|Revalidated for 1944 with green tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed yellow serial on green plate; "SOUTH CAROLINA 45" at top
+|''none''
+|''A''·12·345
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed silver serial on black plate; "SOUTH CAROLINA 46" at bottom
+|''none''
+|{{nowrap|''A''·123·456}}
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed black serial on golden yellow plate; "SOUTH CAROLINA 47" at top
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Embossed yellow serial on black plate; "SOUTH CAROLINA 48" at bottom
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Embossed white serial on black plate; "SOUTH CAROLINA 49" at top
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed black serial on white plate; "SOUTH CAROLINA 50" at bottom
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Embossed white serial on black plate; "SOUTH CAROLINA 51" at top
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1952 South Carolina license plate.jpg|150px]]
+|1952
+|Embossed yellow serial on black plate; "SOUTH CAROLINA 52" at bottom
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1953 South Carolina license plate.jpg|150px]]
+|1953
+|Embossed black serial on golden yellow plate; "SOUTH CAROLINA 53" at top
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1954 South Carolina license plate.jpg|150px]]
+|1954
+|Embossed white serial on black plate; "SOUTH CAROLINA 54" at bottom
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed black serial on white plate; "SOUTH CAROLINA 55" at top
+|''none''
+|''A''·123·456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed black serial on yellow plate; "SOUTH CAROLINA 56" at bottom
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|Embossed white serial on blue plate; "SOUTH CAROLINA 57" at top
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1958
+|Embossed blue serial on white plate; "SOUTH CAROLINA 58" at bottom
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1959 South Carolina license plate.JPG|150px]]
+|1959
+|Embossed white serial on blue plate; "SOUTH CAROLINA 59" at top
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1960 South Carolina license plate.JPG|150px]]
+|1960
+|Embossed blue serial on white plate; "SOUTH CAROLINA 60" at bottom
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1961 South Carolina license plate.JPG|150px]]
+|1961
+|Embossed red serial on white plate with border line; "SOUTH CAROLINA 61" at top
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1962 South Carolina license plate.jpg|150px]]
+|1962
+|Embossed white serial on red plate with border line; "SOUTH CAROLINA 62" at bottom
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1963 South Carolina license plate.JPG|150px]]
+|1963
+|Embossed white serial on green plate with border line; "SOUTH CAROLINA 63" at top
+|''none''
+|''A''-123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:1964 South Carolina license plate.JPG|150px]]
+|1964
+|Embossed white serial on black plate with border line; "SOUTH CAROLINA 64" at bottom
+|''none''
+|''A''-123456<br/>''A''B-1234
+|First letter corresponds to weight class
+|Two-letter serial format introduced for each weight class, though the one-letter format continued to be used.
+|-
+|[[File:1965 South Carolina license plate.jpg|150px]]
+|1965
+|Embossed black serial on white plate with border line; "SOUTH CAROLINA 65" at top
+|''none''
+|''A''-123456<br/>''A''B-1234
+|First letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1966
+|Embossed white serial on blue plate with border line; "SOUTH CAROLINA 66" at bottom
+|''none''
+|''A'' 123456<br/>''A''B 1234
+|First letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1967
+|Embossed dark blue serial on white plate with border line; "SOUTH CAROLINA" and "1967" centered at top and bottom respectively
+|''none''
+|''A'' 123456<br/>''A''B 1234
+|First letter corresponds to weight class
+|
+|-
+|[[File:1968 South Carolina license plate.jpg|150px]]
+|1968
+|Embossed white serial on black plate with border line; "SOUTH CAROLINA" and "AUTO" centered at top and bottom respectively; "19" at bottom left and "68" at bottom right
+|''none''
+|''A'' 123456
+|Letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969
+|Embossed white serial on blue plate with border line; "SOUTH CAROLINA" and "1969" centered at top and bottom respectively
+|''none''
+|''A'' 123456<br/>''A''B 1234
+|First letter corresponds to weight class
+|
+|-
+|[[File:1970 South Carolina license plate.jpg|150px]]
+|1970
+|Embossed white serial on green plate with border line; "SOUTH CAROLINA" at top
+|"300 YEARS" centered at bottom, with "1670" to the left and "1970" to the right
+|''A'' 123456<br/>''A''B 1234
+|First letter corresponds to weight class
+|Commemorated&nbsp;the 300th anniversary of the settlement of South Carolina.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1971
+|Embossed white serial on brown plate with border line; "SOUTH CAROLINA" at top and "1971" centered at bottom
+|''none''
+|''A'' 123456<br/>''A''B 1234
+|First letter corresponds to weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1972
+|Embossed white serial on black plate with border line; "SOUTH CAROLINA" at top and "1972" centered at bottom
+|''none''
+|ABC 123
+|AAA 101 to approximately TOW&nbsp;250
+|For each three-letter series, only the numbers 101–250 were issued. This practice continued through 1975. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1973
+|Embossed white serial on blue plate with border line; "SOUTH CAROLINA" at top and "1973" centered at bottom
+|''none''
+|ABC 123
+|AAA 101 to approximately VEP&nbsp;250
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1974
+|Embossed white serial on green plate with border line; "SOUTH CAROLINA" at top and "1974" centered at bottom
+|''none''
+|ABC 123
+|AAA 101 to approximately WJC&nbsp;250
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1975
+|Embossed white serial on maroon plate with border line; "SOUTH CAROLINA" at top and "1975" centered at bottom
+|''none''
+|ABC 123
+|AAA 101 to approximately WRC&nbsp;250
+|
+|}
+
+===1976 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1976 South Carolina license plate KMZ 219.jpg|150px]]
+|1976&nbsp;– December 1979
+|Embossed blue serial on reflective white plate; red Sabal palmetto and blue [[cannon]] screened in the center; "1775" and "1783" screened in blue on either side of cannon; red band screened at bottom containing "SOUTH CAROLINA" in white in the center
+|"1776 Bicentennial 1976" screened in blue at top
+|ABC&nbsp;123
+|AAA 101 to WZZ&nbsp;400; AAA&nbsp;401 to WZZ&nbsp;500
+|Commemorated both the US Bicentennial and the [[American Revolutionary War|Revolutionary War]]. Numbers 101–400 issued for each three-letter series first, followed by 401–500 from 1978.
+|-
+|[[File:SC Plate 1982.jpg|150px]]
+|January 1980&nbsp;– December 1984
+|Embossed blue serial on reflective white plate; white [[Seal of South Carolina|state seal]] on pale blue state shape screened in the center; "South Carolina" screened in blue centered at bottom
+|''none''
+|ABC 123
+|AAA 101 to YZZ&nbsp;500
+|Numbers 101–500 issued for each three-letter series.
+|-
+|[[File:South Carolina license plate, 1985–1989 series with 1986 expiration date.png|150px]]
+|January 1985&nbsp;– December 1989
+|Embossed blue serial on reflective white plate; pale blue Sabal palmetto screened in the center; "SOUTH CAROLINA" screened in red at top
+|''none''
+|ABC 123
+|AAA 501 to ZZZ&nbsp;999
+|Numbers 501–900 issued for each three-letter series, with 901–999 added in 1988.
+|-
+|[[File:1991 South Carolina license plate ADJ 630.jpg|150px]]
+|January 1990&nbsp;– December 1997
+|Embossed black serial on reflective white plate; [[Carolina wren]] on [[Gelsemium sempervirens|yellow jessamine]] vine screened at top; "SOUTH CAROLINA" screened in brown centered at bottom
+|''none''
+|ABC 123
+|AAA 101 to YZZ&nbsp;500; AAA&nbsp;501 to YZZ&nbsp;900
+|Awarded "Plate of the Year" for best new license plate of 1990 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time South Carolina has been so honored. Numbers 101–500 issued for each three-letter series first, followed by 501–900 from mid-1991.
+|-
+| [[File:SC_Plate_98-08.jpg|frameless|147x147px]]
+|January 1998&nbsp;– October 2007
+|Embossed black serial on reflective white plate; light blue mountain graphic screened at top and sides and Sabal palmetto in the center; "South Carolina" screened in light blue centered at bottom
+|rowspan="2"|"Smiling Faces. Beautiful Places." screened in black at top
+|rowspan="2"|123 ABC
+|101 AAA to approximately 900&nbsp;XBJ
+|rowspan="2"|Numbers 101–900 issued for each three-letter series, with 901–999 added in late 2007 at the XCR series. Letters I, O and Q not used, and U used only from 2002 onwards, beginning with the NKU series.<ref name="allaboutlicenseplatesSC">{{cite web |last=Tanner |first=Eric N. |title=South Carolina Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=South%20Carolina&code=sc |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+| 
+|October 2007<ref>{{cite web|last=Turnbull |first=Andrew |title=March of the Flats |url=http://www.andrewturnbull.net/plates/flat.html |publisher=The Andrew Turnbull Network |access-date=May 28, 2017}}</ref>&nbsp;– June<br>2008
+|As above, but with serial screened rather than embossed
+|101 XBK to approximately 999&nbsp;XXM
+|-
+| 
+|July<br>2008&nbsp;– January 2016
+|Screened black serial on multicolored sunset background with state flag motif at center
+|TRAVEL2SC.COM
+|ABC 123
+|AAA 101 to LZD&nbsp;799
+|Letter O not used in serials; this practice continued until October 2023.
+|-
+|[[File:2020 South Carolina passenger car rear license plate.png|150px]]
+|February 2016&nbsp;– October 2023
+| rowspan="3" |Screened black serial on white and blue background with state flag motif at center
+| rowspan="3" |[[Dum spiro spero|While I Breathe, I Hope.]]
+| rowspan="2" |ABC 123
+|LZD 800 to XMV&nbsp;999
+|
+|-
+|rowspan="2"|[[File:2023 South Carolina mail-out series passenger car rear license plate.png|150px]]
+| rowspan="2" |October 2023 – December 2025
+|YAA 101 to YCL&nbsp;750
+|rowspan="2"|New serial font. Letter O used. Plates from this edition also feature a very small number on the bottom center from the manufacturer. 
+|-
+|123 ABC
+|Exclusively 101 AAA to approximately 999&nbsp;CUU; intermittently from 101&nbsp;CUV to 999&nbsp;DDL
+|-
+|
+|January 2026 – present
+|
+|Where the Revolutionary War Was Won
+|123ABC
+|Intermittently from 101CUV to 999DDL; exclusively from 101DDM to 433DEN {{Small|(as of February 7, 2026)}}<ref name="licenseplates.cc">{{Cite web |title=South Carolina License Plates |url=https://www.licenseplates.cc/SC |website=www.licenseplates.cc |access-date=September 23, 2023}}</ref>
+|
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!style="width:75px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:2008 South Carolina license plate In God We Trust 877 9CL.jpg|150px]]
+|February 2003&nbsp;– October 2007
+|Embossed black serial on light blue and white gradient plate; [[Flag of the United States|national]] and [[Flag of South Carolina|state flag]]s on gold flagpole screened in the center; "South Carolina" screened in blue centered at bottom
+|rowspan="2"|"[[In God We Trust|IN GOD WE TRUST]]" screened in gold centered at top, with gradient gold stripe below
+|rowspan="2"|123&nbsp;4AB
+|100 1AA to approximately 400&nbsp;0DT
+|rowspan="3"|No cost.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|October 2007&nbsp;– December 2015
+|As above, but with serial screened rather than embossed
+|400 1DT to approximately 999&nbsp;9HQ
+|-
+|[[File:2016-present South Carolina license plate In God We Trust.png|150px]]
+|January 2016&nbsp;– present
+|Screened black serial on white plate; national and state flags on gold flagpole screened at left; "South Carolina" screened in black centered at bottom
+|"IN GOD WE TRUST" screened in black centered at top, with blue stripe above and red stripe below
+|1234AB
+|1001HR to 8008RR {{small|(as of September 18, 2023)}}<ref name="licenseplates.cc"/>
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer
+|January 2016&nbsp;– present
+|Screened black serial on reflective white plate; "South Carolina" screened at bottom; "Dealer" screened at top with blue stripe above and red stripe below
+|'''X'''123456
+|X622001 to present
+|Issued annually from 2008 to 2015. '''X'''123456 serial format used during this period, with the first digit after the 'X' corresponding to the last digit of the year of expiration (9 for 2008, 0 for 2009 and so on up to 6 for 2015). Serials on the current plate continue from where those on the 2015 plate left off.{{cn|date=November 2025}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled
+|January 2010&nbsp;– present
+|Screened black serial on reflective graphic plate with Sabal palmetto against a light blue and white gradient sky; "SOUTH CAROLINA" screened at bottom and [[International Symbol of Access]] at left
+|123456'''W'''
+|1001W to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="5"|Motorcycle
+|1995–2000
+|rowspan="2"|Embossed blue serial on white plate with border line; "SOUTH CAROLINA" at top
+|'''Z'''12345
+|Z10001 to Z99999
+|rowspan="5"|Serials ZA0001 through ZA9999 and {{small|Z/A}}10001 through {{small|Z/A}}99999 reserved for antique motorcycles.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|2000–07}}
+|'''Z'''B1234
+|ZB0001 to ZZ9999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–08
+|As above, but with state name and letters in serial screened rather than embossed
+|rowspan="3"|{{small|'''Z'''/B}}12345
+|{{small|Z/B}}10001 to approximately {{small|Z/B}}40000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008&nbsp;–<br>April 2015
+|As above, but with all elements screened
+|{{small|Z/B}}40001 to {{small|Z/C}}99999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|May 2015&nbsp;– present
+|Screened black serial on reflective white plate; "South Carolina" screened at top with blue stripe above and red stripe below
+|{{small|Z/D}}10001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Truck
+|1996–2008
+|Embossed red serial on white plate with border line; "SOUTH CAROLINA" and "TRUCK" at top and bottom respectively
+|rowspan="3"|'''P'''123456
+|P100001 to approximately P393500
+|rowspan="3"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008&nbsp;–<br>April 2015
+|As above, but with elements screened rather than embossed
+|P393501 to approximately P500000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|May 2015&nbsp;– present
+|Screened black serial on reflective white plate; "South Carolina" screened at bottom; "Property Carrying" screened at top with blue stripe above and red stripe below
+|P500001 to present
+|}
+
+==Special plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Text
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:MA2314 South Carolina mfr plate.png|150px]]
+|Manufacturers' Plate
+| 
+|Screened black serial on white plate
+|Motor Vehicle Manufacturer
+|AB&nbsp;1234
+|AA0001 to present
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/sc.html South Carolina license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200614083559/http://www.15q.net/sc.html |date=June 14, 2020 }}
+*[http://www.scplates.com License Plates of South Carolina]
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{South Carolina}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of South Carolina}}
+[[Category:Vehicle registration plates of the United States by state or territory|South Carolina]]
+[[Category:Transportation in South Carolina]]
+[[Category:1917 introductions]]
+[[Category:1917 in transport]]
+[[Category:South Carolina transportation-related lists]]

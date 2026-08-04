@@ -1,0 +1,1092 @@
+{{short description|South Dakota vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=July 2021}}
+{{Infobox vehicle registration plate
+| image = South Dakota license plate.jpg
+| nickname =
+| slogan_label = Slogan
+| slogan = Great Faces. Great Places.
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ''1''A1 234<br>''1''AB 123<br>''10''A 123<br>''10''A B12<br>'''''44'''''A BC1<br>(county-coded)
+| current_start_date = {{Start date|2023|01}}
+| designer = 
+| issuer = South Dakota Department of Revenue, Motor Vehicle Division
+| manufacturer = 
+| start_date = {{Start date|1913|07|01}}<ref>{{cite news |title=Local News Notes |newspaper=The Mitchell Capital |location=Mitchell, SD |date=July 10, 1913 |page=4 |quote=Most [of] the automobilists now have numbers on both the front and rear of their cars in accordance with the new law which went into effect July 1st.}}</ref><br>(pre-state plates from 1905 through June 30, 1913)
+}}
+The U.S. state of [[South Dakota]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1913, when the state began to issue plates.<ref>{{cite web |title=Old South Dakota License Plates |url=http://leatherlicenseplates.com/old-south-dakota-license-plates-vintage-south-dakota-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=July 21, 2017}}</ref>
+
+{{As of|2024}}, plates are issued by the South Dakota Department of Revenue through its Motor Vehicle Division. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+===Prestate===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:SD prestate.jpg|150px]]
+|1905 to 1912 (prestate)
+|Riveted metal numbers on black leather plate, "SD" riveted on right
+|12345
+|1 to approximately 13500
+|}
+
+===1913 to 1975===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first South Dakota license plate that complied with these standards.
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1913 SD.jpg|150px]]
+|1913
+|Embossed black on white; vertical "SD" at right
+|''none''
+|12345
+|1 to approximately 14100
+|
+|-
+|[[File:1914 SD.jpg|150px]]
+|1914
+|Embossed white on red; vertical "SD" at right
+|''none''
+|12345
+|1 to approximately 20800
+|
+|-
+|[[File:1915 South Dakota license plate.jpg|150px]]
+|1915
+|Embossed yellow on black; vertical "SD" at right
+|''none''
+|12345
+|1 to approximately 28700
+|
+|-
+|[[File:1916 South Dakota license plate.jpg|150px]]
+|1916
+|Embossed light green on black; "SD 1916" at right
+|''none''
+|12345
+|1 to approximately 43000
+|First dated plate.
+|-
+|[[File:1917 South Dakota license plate.jpg|150px]]
+|1917
+|Embossed beige on brown; vertical "SD" and "1917" at left and right respectively
+|''none''
+|12345
+|1 to approximately 67000
+|
+|-
+|[[File:1918 SD.jpg|150px]]
+|1918
+|Embossed brown on beige; vertical "SD" and "1918" at left and right respectively
+|''none''
+|12345
+|1 to approximately 84000
+|
+|-
+|[[File:1919 South Dakota license plate.jpg|150px]]
+|1919
+|Embossed silver on olive green with border line; vertical "SD" and "1919" at left and right respectively
+|''none''
+|123456
+|1 to approximately 105000
+|
+|-
+|[[File:1920 SD.jpg|150px]]
+|1920
+|Embossed maroon on cream with border line; vertical "SD" and "20" at left and right respectively
+|''none''
+|123456
+|30000 to approximately 139000
+|Serials below 30000 reserved for motorcycles and trucks. This practice continued through 1923.
+|-
+|[[File:1921 South Dakota license plate.jpg|150px]]
+|1921
+|Embossed white on green; lines at top and bottom borders; vertical "SD" and "21" at left and right respectively
+|''none''
+|123456
+|30000 to approximately 154000
+|
+|-
+|[[File:1922 SD.jpg|150px]]
+|1922
+|Embossed white on dark blue; lines at top and bottom borders; vertical "SD" and "22" at left and right respectively
+|''none''
+|123456
+|30000 to approximately 150000
+|
+|-
+|[[File:1923 SD.jpg|150px]]
+|1923
+|Embossed black on gray with border line; vertical "SD" and "23" at left and right respectively
+|''none''
+|123-456
+|30-000 to approximately 153-000
+|
+|-
+|[[File:1924_South_Dakota_license_plate.jpg|150px]]
+|1924
+|Embossed silver on black with border line; vertical "SD" and "24" at left and right respectively
+|''none''
+|123-456
+|20-000 to approximately 151-000
+|Serials below 20-000 reserved for motorcycles and trucks.
+|-
+|[[File:1925_South_Dakota_license_plate.jpg|150px]]
+|1925
+|Embossed black on tan with border line; vertical "25" and "SD" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|First use of county codes.
+|-
+|[[File:1926_South_Dakota_license_plate.jpg|150px]]
+|1926
+|Embossed black on silver with border line; vertical "SD" and "26" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1927 South Dakota license plate.jpg|150px]]
+|1927
+|Embossed black on turquoise with border line; vertical "27" and "SD" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1928_South_Dakota_license_plate.jpg|150px]]
+|1928
+|Embossed white on red with border line; vertical "SD" and "28" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1929_South_Dakota_license_plate.jpg|150px]]
+|1929
+|Embossed white on green with border line; vertical "29" and "SD" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1930 South Dakota license plate.jpg|150px]]
+|1930
+|Embossed black on yellow with border line; vertical "SD" and "30" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1931_South_Dakota_license_plate.jpg|150px]]
+|1931
+|Embossed black on white with border line; vertical "31" and "SD" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1932_South_Dakota_license_plate.jpg|150px]]
+|1932
+|Embossed yellow on black with border line; vertical "SD" and "32" at left and right respectively
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1933 SD passenger plate.jpg|150px]]
+|1933
+|Embossed black on yellow with border line; "S. DAK. 1933" at bottom
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1934 SD.jpg|150px]]
+|1934
+|Embossed yellow on black with border line; "S. DAK. 1934" at bottom
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1935 South Dakota license plate.jpg|150px]]
+|1935
+|Embossed black on yellow with border line; "S. DAK. 1935" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1936 SD.jpg|150px]]
+|1936
+|Embossed white on brick red with border line; "S. DAK. 1936" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1937 South Dakota license plate.jpg|150px]]
+|1937
+|Embossed red on white with border line; "S. DAK. 1937" at bottom
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1938 South Dakota license plate.jpg|150px]]
+|1938
+|Embossed white on blue with border line; "S. DAK. 1938" at bottom
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1939 SD.jpg|150px]]
+|1939
+|Embossed blue on white; "SD" at bottom left and "39" at bottom right
+|"[[Mount Rushmore|RUSHMORE MEMORIAL]]" at bottom center
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1940 SD.jpg|150px]]
+|1940
+|Embossed black on golden yellow; "SOUTH DAKOTA 1940" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|First use of the full state name.
+|-
+|[[File:1941 South Dakota license plate.jpg|150px]]
+|1941
+|Embossed golden yellow on black; "SOUTH DAKOTA 1941" at bottom
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1942 South Dakota license plate.jpg|150px]]
+|{{nowrap|1942–44}}
+|Embossed black on golden yellow; "SOUTH DAKOTA 1942" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1943 with black tabs, and for 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1945 SD.jpg|150px]]
+|1945
+|Embossed green on white with border line; "SOUTH DAKOTA 1945" at bottom
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1946 South Dakota license plate.jpg|150px]]
+|1946
+|Embossed white on black with border line; "SOUTH DAKOTA 1946" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1947 South Dakota license plate.jpeg|150px]]
+|1947
+|Embossed black on unpainted aluminum with border line; "1947 SOUTH DAKOTA" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1948 SD.jpg|150px]]
+|1948
+|Embossed red on unpainted aluminum with border line; "SOUTH DAKOTA 1948" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1949 South Dakota license plate.jpg|150px]]
+|1949
+|Embossed blue on waffle-textured unpainted aluminum with border line; "1949 SOUTH DAKOTA" at top
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1950 SD.jpg|150px]]
+|1950
+|Embossed black on orange with border line; "SOUTH DAKOTA '50" at top
+|''none''
+|''1''-1234<br>''1''-A123<br>''10''-123<br>''10''-A12<br>''10''-1A2<br>''10''-12A
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1951 South Dakota license plate.jpg|150px]]
+|1951
+|Embossed orange on black with border line; "'51 SOUTH DAKOTA" at top
+|''none''
+|''1''-1234<br>''1''-A123<br>''10''-123<br>''10''-A12<br>''10''-1A2<br>''10''-12A
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1952 SD.jpg|150px]]
+|1952
+|Embossed maroon on beige with border line; "S.DAK", Mount Rushmore decal and "1952" at top
+|''none''
+|''1''-1234<br>''1''-A123<br>''10''-123<br>''10''-A12<br>''10''-1A2<br>''10''-12A
+|Coded by county of issuance (''1'' or ''10'')
+|First base to feature a graphic of Mount Rushmore in any form.
+|-
+|[[File:1953 SD.jpg|150px]]
+|1953
+|Embossed beige on maroon with border line; "1953", Mount Rushmore decal and "S.DAK" at top
+|''none''
+|''1''-1234<br>''1''-A123<br>''10''-1234<br>{{nowrap|''10''-A123}}
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1954 South Dakota license plate.jpg|150px]]
+|1954
+|Embossed black on white with border line; "S.DAK.", Mount Rushmore decal and "1954" at top
+|''none''
+|''1''-1234<br>''1''-A123<br>''10''-1234<br>''10''-A123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1955 South Dakota license plate.jpg|150px]]
+|1955
+|Embossed white on green with border line; "1955", Mount Rushmore decal and "S.DAK" at top
+|''none''
+|''1''-1234<br>''1''-A123<br>''10''-1234<br>''10''-A123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1956 SD.jpg|150px]]
+|1956
+|Embossed green on beige with border line; "S.DAK.", Mount Rushmore decal and "1956" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|First 6" x 12" plate.
+|-
+|[[File:1957 South Dakota license plate.JPG|150px]]
+|1957–59
+|Embossed black on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "57" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1958 with maroon tabs, and for 1959 with red tabs.
+|-
+|[[File:1960 SD.jpg|150px]]
+|1960
+|Embossed black on reflective tan with border line; "S.DAK.", stamped Mount Rushmore graphic and "60" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 1961 licene plate - Number A1-2707.jpg|150px]]
+|1961
+|Embossed green on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "61" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1962 SD.jpg|150px]]
+|1962
+|Embossed black on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "62" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1963 South Dakota license plate.jpg|150px]]
+|1963
+|Embossed red on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "63" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1964 South Dakota license plate.jpg|150px]]
+|1964
+|Embossed dark blue on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "64" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 1965 license plate - Number 19-1064.jpg|150px]]
+|1965
+|Embossed green on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "65" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1966 SD.jpg|150px]]
+|1966
+|Embossed dark blue on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "66" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1967 South Dakota license plate.jpg|150px]]
+|1967
+|Embossed maroon on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "67" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1968 SD.jpg|150px]]
+|1968
+|Embossed light blue on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "68" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1969 SD.jpg|150px]]
+|1969
+|Embossed orange on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "69" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 1970 license plate - Number 61-1492.jpg|150px]]
+|1970
+|Embossed dark blue on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "70" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 1971 license plate A1-3705.jpg|150px]]
+|1971
+|Embossed green on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "71" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 1972 license plate - Number 1-24075.jpg|150px]]
+|1972
+|Embossed black on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "72" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 1973 license plate - Number 1-18108.jpg|150px]]
+|1973
+|Embossed red on reflective white with border line; "S.DAK.", stamped Mount Rushmore graphic and "73" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 1974 license plate - Number 1-32334.jpg|150px]]
+|rowspan="2"|1974
+|Embossed blue on reflective white with screened red and black Mount Rushmore graphic at bottom
+|''none''
+|rowspan="2"|''1''-12345<br>''10''-1234
+|rowspan="2"|Coded by county of issuance (''1'' or ''10'')
+|First screened graphic license plate in the United States. Awarded "Plate of the Year" for best new license plate of 1974 by the [[Automobile License Plate Collectors Association]], the first time South Dakota was so honored.
+|-
+|[[File:1974 SD.jpg|150px]]
+|Embossed blue on reflective white with stamped Mount Rushmore graphic at bottom
+|''none''
+|Issued in counties that had exhausted their supplies of screened graphic plates.
+|-
+|[[File:South Dakota 1975 license plate - Number 6-10243.jpg|150px]]
+|1975
+|Embossed red on reflective white with screened light blue and black Mount Rushmore graphic at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|}
+
+===1976 to present===
+{|class=wikitable
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:South Daktota license plate, 1976–1980 series with 1979 sticker.png|150px]]
+|1976–80
+|Embossed blue on reflective white with screened blue and white Mount Rushmore graphic and three red stripes at top
+|''none''
+|''AB'':1234
+|Coded by county of issuance (''AB'')
+|
+|-
+|[[File:1986 SD.jpg|150px]]
+|1981–86
+|Embossed red on reflective white with screened dark blue Mount Rushmore graphic at bottom right; county name on sticker at top
+|''none''
+|ABC:123
+|AAA:001 to BRP:599; CAB:001 to approximately KAS:888<br>(see right)
+|Awarded "Plate of the Year" for best new license plate of 1981 by the Automobile License Plate Collectors Association, the second time South Dakota was so honored. Letter Q not used in serials; all three-letter combinations from 1983 onwards were consonant-vowel-consonant.<ref name="allaboutlicenseplatesSD">{{cite web |last=Tanner |first=Eric N. |title=South Dakota Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=South%20Dakota&code=sd |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|[[File:South Dakota license plate, 1987–1990 series with September 1991 sticker.png|150px]]
+|1987–90
+|Embossed red on reflective white with screened blue Mount Rushmore graphic at bottom right
+|Celebrate the Century (optional)
+|''1''AB 123<br>''10''A 123
+|Coded by county of issuance (''1'' or ''10'')
+|Commemorated South Dakota's 100 years of statehood. Numeric county codes reintroduced. Letters I, O and Q not used in serials; this practice continues today.<ref name="allaboutlicenseplatesSD"/>
+|-
+|[[File:South Dakota 1996 1H 0485.jpg|150px]]
+|1990–95
+|Embossed green on reflective gradient gold and white with Mount Rushmore graphic at top right
+|Great Faces. Great Places.
+|''1''A 1234<br>''10'' A123<br>''10'' AB12
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 2000 1A07581.jpg|150px]]
+|1996 – December 1999
+|Embossed green on reflective white with large gold Mount Rushmore graphic in background
+|Great Faces. Great Places.
+|''1''A12345<br>''10''A1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota 2003 4AA 656.jpg|150px]]
+|January 2000<ref>{{cite web|url=https://doc.sd.gov/documents/news/1999/1999-12-13licenseplates.pdf |title=Inmate Made License Plates To Debut in January |publisher=[[South Dakota Department of Corrections]] |date=December 13, 1999 |access-date=April 2, 2017}}</ref>&nbsp;– late 2003
+|Embossed blue on reflective red, white and blue with blue Mount Rushmore graphic at bottom
+|rowspan="2"|''none''
+|rowspan="2"|''1''AB 123<br>''10''A 123<br>''10''A B12
+|rowspan="2"|Coded by county of issuance (''1'' or ''10'')
+|rowspan="2"|
+|-
+|[[File:South Dakota 2006 license plate - 67L 726.jpg|150px]]
+|late 2003&nbsp;– December 2005
+|As above, but with serial screened
+|-
+|[[File:2009 SD.jpg|150px]]
+|January 2006&nbsp;– December 2015
+|Screened dark blue on reflective full-color Mount Rushmore graphic
+|Great Faces. Great Places.
+|''1''AB 123<br>'''''1'''''AB C12<br>''10''A 123<br>''10''A B12<br>''10''A BC1
+|Coded by county of issuance (''1'' or ''10'')
+|Awarded "Plate of the Year" for best new license plate of 2006 by the Automobile License Plate Collectors Association, the third time South Dakota was so honored. Serials in each county continued from where the 2000 base left off.
+|-
+|[[File:South Dakota 2018 License Plate.jpg|150px]]
+|January 2016&nbsp;– December 2022
+|Screened dark blue on reflective beige Mount Rushmore graphic<ref>{{cite news|date=March 8, 2016 |title=Some South Dakotans not happy with new license plate design |url=http://rapidcityjournal.com/news/local/some-south-dakotans-not-happy-with-new-license-plate-design/article_9575cb27-a245-5e03-9570-7c1912325b1c.html |newspaper=[[Rapid City Journal]] |access-date=May 27, 2016}}</ref>
+|Great Faces. Great Places.
+|''1''A1 234<br>''1''AB 123<br>''10''A 123<br>''10''A B12<br>'''''44'''''A BC1
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:South Dakota license plate.jpg|150px]]
+|January 2023&nbsp;– present
+|Screened black serial on reflective full-color Mount Rushmore graphic and blue sky
+|Great Faces. Great Places.
+|''1''A1 234<br>''1''AB 123<br>''10''A 123<br>''10''A B12<br>'''''44'''''A BC1
+|Coded by county of issuance (''1'' or ''10'')
+|Serials in each county continued from where the 2016 base left off.<ref name="allaboutlicenseplatesSD"/>
+|}
+
+==Non-passenger plates==
+===2006 to present===
+{|class=wikitable
+|-
+!Image
+!Type
+!Design
+!Slogan
+!Serial format
+!Notes
+|-
+|[[File:SD City.jpg|150px]]
+|City Government
+|Modified blue Mount Rushmore base.
+|''none''
+|'''CTY'''1234
+|
+|-
+|[[File:South Dakota 2013 commercial license plate.png|150px|]]
+|Commercial
+|Modified blue Mount Rushmore base.
+|''none''
+|12345 A
+|
+|-
+|[[File:SD County.jpg|150px]]
+|[[County (United States)|County]] Government
+|Modified blue Mount Rushmore base.
+|''none''
+|'''CO''' 1234<br/>'''CO'''12345
+|
+|-
+|[[File:SD Fire Dept.jpg|150px]]
+|[[Fire Department]]
+|Modified blue Mount Rushmore base.
+|''none''
+|'''FD''' 1234
+|
+|-
+|[[File:SD School.jpg|150px]]
+|School
+|Modified blue Mount Rushmore base.
+|''none''
+|'''S''' 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Oglala Sioux Tribe]] government
+|Modified blue Mount Rushmore base.
+|''none''
+|'''OST''' 123<br/>'''OST'''1234
+|
+|-
+|[[File:SD State.jpg|150px]]
+|[[Government of South Dakota|State Government]]
+|Modified blue Mount Rushmore base.
+|''none''
+|AB123
+|State seal at left, state flag bottom right corner.
+|}
+
+==Optional plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!Design
+!Slogan
+!Serial format
+!Notes
+|-
+|[[File:SD Vet.jpg|150px]]
+|[[Veteran]]
+|Modified blue Mount Rushmore base.
+|VETERAN
+|1234A
+|Logo for branch of service at left.
+|
+|-
+|[[File:SD Dignity.jpg|150px]]
+|[[Dignity (statue)]]
+|Dignity of Earth & Sky sculpture
+|Great Faces, Great Places
+|Y1234
+|
+|-
+|[[File:SD FF.jpg|150px]]
+|Firefighter
+|[[Maltese Cross]], flames
+|Firefighter
+|FF 1234
+|
+|-
+|[[File:SD Org.jpg|150px]]
+|Organizational
+|Modified Mount Rushmore base.
+|Great Faces, Great Places
+|A1234 AB123 ABC12 ABCD1
+|Organizational decal purchased separately.
+|
+|-
+|[[File:SD tribal.jpg|150px]]
+|Tribal
+|Red on white with tribal logo on left side.
+|
+|A123
+|Nine tribes available.
+|
+|-
+|[[File:SD Rear Plate Only.jpg|150px]]
+|Rear Plate Only
+|White upper, gray lower.
+|Rear Plate Only
+|SI 1234
+|Limited to 7500 miles per year.
+|}
+
+==County coding==
+{|class="wikitable sortable"
+|-
+!County
+!1925–55
+!1956–75, 1987–present
+!1976–80
+|-
+|[[Minnehaha County, South Dakota|Minnehaha]]
+|1
+|1
+|MA, ME, MH, MN, MO, MX, MZ
+|-
+|[[Pennington County, South Dakota|Pennington]]
+|51
+|2
+|PA, PB, PE, PG, PN, PX, PY, PZ
+|-
+|[[Brown County, South Dakota|Brown]]
+|7
+|3
+|BN, BR, BW
+|-
+|[[Beadle County, South Dakota|Beadle]]
+|3
+|4
+|BD, BE
+|-
+|[[Codington County, South Dakota|Codington]]
+|15
+|5
+|CD, CT
+|-
+|[[Brookings County, South Dakota|Brookings]]
+|6
+|6
+|BG, BK
+|-
+|[[Yankton County, South Dakota|Yankton]]
+|63
+|7
+|YA, YN
+|-
+|[[Davison County, South Dakota|Davison]]
+|18
+|8
+|DN, DV
+|-
+|[[Lawrence County, South Dakota|Lawrence]]
+|41
+|9
+|LA, LW
+|-
+|[[Aurora County, South Dakota|Aurora]]
+|2
+|10
+|AU
+|-
+|[[Bennett County, South Dakota|Bennett]]
+|4
+|11
+|BT
+|-
+|[[Bon Homme County, South Dakota|Bon Homme]]
+|5
+|12
+|BH
+|-
+|[[Brule County, South Dakota|Brule]]
+|8
+|13
+|BL
+|-
+|[[Buffalo County, South Dakota|Buffalo]]
+|9
+|14
+|BF
+|-
+|[[Butte County, South Dakota|Butte]]
+|10
+|15
+|BU
+|-
+|[[Campbell County, South Dakota|Campbell]]
+|11
+|16
+|CA
+|-
+|[[Charles Mix County, South Dakota|Charles Mix]]
+|12
+|17
+|CM
+|-
+|[[Clark County, South Dakota|Clark]]
+|13
+|18
+|CK
+|-
+|[[Clay County, South Dakota|Clay]]
+|14
+|19
+|CL
+|-
+|[[Corson County, South Dakota|Corson]]
+|16
+|20
+|CN
+|-
+|[[Custer County, South Dakota|Custer]]
+|17
+|21
+|CU
+|-
+|[[Day County, South Dakota|Day]]
+|19
+|22
+|DA
+|-
+|[[Deuel County, South Dakota|Deuel]]
+|20
+|23
+|DU
+|-
+|[[Dewey County, South Dakota|Dewey]]
+|21
+|24
+|DW
+|-
+|[[Douglas County, South Dakota|Douglas]]
+|22
+|25
+|DG
+|-
+|[[Edmunds County, South Dakota|Edmunds]]
+|23
+|26
+|ED
+|-
+|[[Fall River County, South Dakota|Fall River]]
+|24
+|27
+|FR
+|-
+|[[Faulk County, South Dakota|Faulk]]
+|25
+|28
+|FA
+|-
+|[[Grant County, South Dakota|Grant]]
+|26
+|29
+|GT
+|-
+|[[Gregory County, South Dakota|Gregory]]
+|27
+|30
+|GY
+|-
+|[[Haakon County, South Dakota|Haakon]]
+|28
+|31
+|HK
+|-
+|[[Hamlin County, South Dakota|Hamlin]]
+|29
+|32
+|HN
+|-
+|[[Hand County, South Dakota|Hand]]
+|30
+|33
+|HD
+|-
+|[[Hanson County, South Dakota|Hanson]]
+|31
+|34
+|HS
+|-
+|[[Harding County, South Dakota|Harding]]
+|32
+|35
+|HR
+|-
+|[[Hughes County, South Dakota|Hughes]]
+|33
+|36
+|HU
+|-
+|[[Hutchinson County, South Dakota|Hutchinson]]
+|34
+|37
+|HT
+|-
+|[[Hyde County, South Dakota|Hyde]]
+|35
+|38
+|HY
+|-
+|[[Jackson County, South Dakota|Jackson]]
+|36
+|39
+|JA
+|-
+|[[Jerauld County, South Dakota|Jerauld]]
+|37
+|40
+|JE
+|-
+|[[Jones County, South Dakota|Jones]]
+|38
+|41
+|JN
+|-
+|[[Kingsbury County, South Dakota|Kingsbury]]
+|39
+|42
+|KG
+|-
+|[[Lake County, South Dakota|Lake]]
+|40
+|43
+|LK
+|-
+|[[Lincoln County, South Dakota|Lincoln]]
+|42
+|44
+|LN
+|-
+|[[Lyman County, South Dakota|Lyman]]
+|43
+|45
+|LY
+|-
+|[[McCook County, South Dakota|McCook]]
+|44
+|46
+|MC
+|-
+|[[McPherson County, South Dakota|McPherson]]
+|45
+|47
+|MP
+|-
+|[[Marshall County, South Dakota|Marshall]]
+|46
+|48
+|ML
+|-
+|[[Meade County, South Dakota|Meade]]
+|47
+|49
+|MD
+|-
+|[[Mellette County, South Dakota|Mellette]]
+|48
+|50
+|MT
+|-
+|[[Miner County, South Dakota|Miner]]
+|49
+|51
+|MR
+|-
+|[[Moody County, South Dakota|Moody]]
+|50
+|52
+|MY
+|-
+|[[Perkins County, South Dakota|Perkins]]
+|52
+|53
+|PK
+|-
+|[[Potter County, South Dakota|Potter]]
+|53
+|54
+|PT
+|-
+|[[Roberts County, South Dakota|Roberts]]
+|54
+|55
+|RB
+|-
+|[[Sanborn County, South Dakota|Sanborn]]
+|55
+|56
+|SA
+|-
+|[[Spink County, South Dakota|Spink]]
+|56
+|57
+|SP
+|-
+|[[Stanley County, South Dakota|Stanley]]
+|57
+|58
+|ST
+|-
+|[[Sully County, South Dakota|Sully]]
+|58
+|59
+|SU
+|-
+|[[Tripp County, South Dakota|Tripp]]
+|59
+|60
+|TR
+|-
+|[[Turner County, South Dakota|Turner]]
+|60
+|61
+|TU
+|-
+|[[Union County, South Dakota|Union]]
+|61
+|62
+|UN
+|-
+|[[Walworth County, South Dakota|Walworth]]
+|62
+|63
+|WL
+|-
+|[[Ziebach County, South Dakota|Ziebach]]
+|64
+|64
+|ZB
+|-
+|[[Oglala Lakota County, South Dakota|Shannon /<br>Oglala Lakota]]
+|&ndash;
+|65
+|SN
+|-
+|[[Washabaugh County, South Dakota|Washabaugh]]<br>(until 1983)
+|&ndash;
+|66
+|WB
+|-
+|[[Todd County, South Dakota|Todd]]
+|&ndash;
+|67
+|TD
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/sd.html South Dakota license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200622203857/https://www.15q.net/sd.html |date=June 22, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{South Dakota}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of South Dakota}}
+[[Category:Vehicle registration plates of the United States by state or territory|South Dakota]]
+[[Category:Transportation in South Dakota]]
+[[Category:South Dakota transportation-related lists]]

@@ -1,0 +1,835 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = Prince Edward Island numberless license plate (English version), post-2022 series.png
+| caption = Default version with provincial stile at top centre in English; identical version with provincial stile in French at top centre is available as an alternate design geared towards Francophones.
+| nickname = 
+| slogan_label = 
+| slogan = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = 
+| serial_format = 123★ABC
+| current_start_date = {{Start date|2022|12}}
+| designer = 
+| issuer = PEI Department of Transportation and Infrastructure
+| start_date = {{Start date|1913}}
+}}
+The [[Provinces and territories of Canada|Canadian province]] of [[Prince Edward Island]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|licence plate]]s in 1913; only rear licence plates have been required since 1976.
+
+==Passenger baseplates==
+
+=== 1919 to 1961 ===
+In 1956, Canada, the United States and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardised the size for licence plates for motor vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Prince Edward Island licence plate that complied with these standards was issued six years beforehand, in 1950.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Dark blue serial on light blue porcelain plate; vertical "PEI" at right
+|''none''
+|1234
+|1 to approximately 1000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed white serial on green plate with border line; vertical "PEI" at right
+|''none''
+|1234
+|1001 to approximately 2500
+|First embossed plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1921
+|Embossed black serial on white plate with border line; vertical "PEI" at right
+|''none''
+|1-234
+|3-001 to approximately 4-800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed orange serial on black plate with border line; vertical "PEI" at right
+|''none''
+|1-234
+|5-001 to approximately 7-200
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed white serial on black plate with border line; "P.E.I. 1923" at left
+|''none''
+|1-234
+|1-001 to approximately 3-300
+|First dated plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed black serial on light green plate with border line; "P.E.I. 1924" at left
+|''none''
+|1-234
+|4-001 to approximately 6-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed red serial on white plate with border line; vertical "P.E.I." and "1925" at left and right respectively
+|''none''
+|1-234
+|5-001 to approximately 7-900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed white serial on red plate with border line; "P.E. ISLAND" at bottom and vertical "1926" at right
+|''none''
+|1-234
+|5-001 to approximately 8-300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed orange serial on dark blue plate with border line; "PRINCE EDWARD ISLAND" at left and "CANADA 1927" at bottom
+|''none''
+|1-234
+|1-001 to approximately 5-300
+|First use of the full province name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed white serial on green plate with border line; "PRINCE EDWARD ISLAND" at bottom and vertical "1928" at right
+|"SEED POTATOES FOXES" at left
+|1-234
+|4-001 to approximately 8-800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed orange serial on black plate with border line; "PRINCE EDWARD ISLAND" at bottom and vertical "1929" at right
+|"GARDEN OF THE GULF" at left
+|1-234
+|1-001 to approximately 6-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed green serial on white plate with border line; "PRINCE EDWARD ISLAND" at bottom and vertical "1930" at right
+|"GARDEN OF THE GULF" at left
+|1-234
+|3-001 to approximately 9-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed white serial on maroon plate with border line; "PRINCE EDWARD ISLAND" at bottom and vertical "31" at right
+|''none''
+|1-234
+|1-001 to approximately 7-600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on green plate with border line; "PRINCE EDWARD ISLAND" at bottom and vertical "32" at right
+|''none''
+|1-234
+|1-001 to approximately 8-100
+|
+|-
+|[[File:Prince Edward Island license plate, 1933.png|150px]]
+|1933
+|Embossed white serial on purple plate with border line; "PRINCE EDWARD ISLAND" at bottom and vertical "1933" at right
+|''none''
+|1-234
+|1-001 to approximately 7-200
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed orange serial on black plate with border line; "PRINCE EDWARD ISLAND" at bottom and vertical "1934" at right
+|''none''
+|1-234
+|1-001 to approximately 7-100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed black serial on orange plate; "PRINCE EDWARD ISLAND" at top and vertical "1935" at right
+|''none''
+|1-234
+|1-001 to approximately 7-300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed white serial on black plate; "PRINCE EDWARD ISLAND" at bottom and vertical "1936" at right
+|''none''
+|1-234
+|1-001 to approximately 7-100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed black serial on white plate; "PRINCE EDWARD ISLAND" at top and vertical "1937" at right
+|''none''
+|1-234
+|1-001 to approximately 8-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1938
+|Embossed silver serial on dark green plate; "PRINCE EDWARD ISLAND" at top; [[Coat of arms of Prince Edward Island|provincial shield]] and "1938" at left
+|''none''
+|1-234
+|1-001 to approximately 7-700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed green serial on grey plate; "PRINCE EDWARD ISLAND" at bottom; "1939" and provincial shield at left
+|''none''
+|1-234
+|1-001 to approximately 7-800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed white serial on black plate; "PRINCE EDWARD ISLAND" at top; provincial shield and "1940" at left
+|''none''
+|1-234
+|1-001 to approximately 8-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed black serial on orange plate; "PRINCE EDWARD ISLAND" at bottom; "1941" and provincial shield at left
+|''none''
+|1-234
+|1-001 to approximately 7-800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1942
+|Embossed silver serial on green plate; "PRINCE EDWARD ISLAND" at top; provincial shield and "1942" at left
+|''none''
+|1-234
+|1-001 to approximately 7-100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1943–44}}
+|Embossed white serial on black plate; "PRINCE EDWARD ISLAND" at bottom; "1943" and provincial shield at left
+|''none''
+|1-234
+|1-001 to approximately 7-900
+|Revalidated for 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed black serial on yellow plate; "PRINCE EDWARD ISLAND" at bottom; "1945" and provincial shield at left
+|''none''
+|1-234
+|1-001 to approximately 7-900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed yellow serial on black plate; "PRINCE EDWARD ISLAND" at top; provincial shield and "1946" at left
+|''none''
+|1-234
+|1-001 to approximately 8-400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed white serial on black plate; "PRINCE EDWARD ISLAND" at bottom; provincial shield and "1947" at right
+|''none''
+|1-234
+|1-001 to approximately 8-400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Embossed black serial on silver plate; "PRINCE EDWARD ISLAND" at bottom; provincial shield and "1948" at left
+|''none''
+|1-234
+|1-001 to approximately 9-300
+|
+|-
+|[[File:Prince Edward Island license plate, 1949.png|150px]]
+|1949
+|Embossed white serial on blue plate with border line; "PRINCE EDWARD ISLAND" at bottom; provincial shield and "1949" at left
+|''none''
+|1-234
+|1-001 to approximately 9-999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed blue serial on white plate with border line; "PRINCE EDWARD ISLAND" at bottom; provincial shield and "1950" at left
+|''none''
+|1-234<br>12345
+|1-001 to approximately 11500
+|First 6" x 12" plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Embossed white serial on dark blue plate with border line; provincial shield and "1951" used as separator; "PRINCE EDWARD ISLAND" at bottom
+|''none''
+|12-345
+|10-001 to approximately 22-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|Embossed white serial on dark green plate with border line; provincial shield and "1952" used as separator; "PRINCE EDWARD ISLAND" at bottom
+|''none''
+|12-345
+|10-001 to approximately 21-100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|Embossed blue serial on yellow plate with border line; provincial shield and "1953" used as separator; "PRINCE EDWARD ISLAND" at bottom
+|''none''
+|12-345
+|10-001 to approximately 22-400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1954
+|Embossed yellow serial on blue plate with border line; provincial shield and "1954" used as separator; "PRINCE EDWARD ISLAND" at bottom
+|''none''
+|12-345
+|10-001 to approximately 22-900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed green serial on white plate with border line; provincial shield and "1955" used as separator; "PRINCE EDWARD ISLAND" at top
+|''none''
+|12-345
+|10-001 to approximately 23-400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed black serial on golden yellow plate with border line; provincial shield and "1956" used as separator; "PRINCE EDWARD ISLAND" at bottom
+|''none''
+|12-345
+|10-001 to approximately 24-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|Embossed yellow serial on blue plate with border line; provincial shield and "1957" used as separator; "PRINCE EDWARD ISLAND" at top
+|''none''
+|12-345
+|10-001 to approximately 25-100
+|
+|-
+|[[File:Prince Edward Island license plate, 1958.png|150px]]
+|1958
+|Embossed red serial on white plate with border line; "1958" and provincial shield used as separator; "PRINCE EDWARD ISLAND" at bottom
+|''none''
+|12-345
+|10-001 to approximately 25-600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1959
+|Embossed silver serial on light blue plate with border line; provincial shield and "1959" used as separator; "PRINCE EDWARD ISLAND" at top
+|''none''
+|12-345
+|10-001 to approximately 27-100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1960
+|Embossed white serial on maroon plate with border line; "1960" and provincial shield used as separator; "PRINCE EDWARD ISLAND" at bottom
+|''none''
+|12-345
+|10-001 to approximately 30-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1961
+|Embossed burnt orange serial on white plate with border line; provincial shield and "1961" used as separator; "PRINCE EDWARD ISLAND" at top
+|''none''
+|12-345
+|10-001 to approximately 30-300
+|
+|}
+
+===1962 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1962 Prince Edward Island license plate, 33-031.png|150px]]
+|{{nowrap|1962–63}}
+|Embossed white serial on dark blue plate with border line; "PRINCE EDWARD ISLAND" at top; white box at right containing debossed "62"
+|"GARDEN OF THE GULF" at bottom
+|12-345
+|20-001 to approximately 47-000
+|Revalidated for 1963 with stickers.
+|-
+|[[File:PEI License Plate 1965.jpg|150px]]
+|1964–65
+|Embossed dark blue serial on white plate with border line; "PRINCE EDWARD ISLAND" at top; "64" at right
+|"GARDEN OF THE GULF" at bottom
+|12-345
+|20-001 to approximately 51-000
+|Revalidated for 1965 with yellow tabs.
+|-
+|[[File:PEI License Plate 1966-67.jpg|150px]]
+|rowspan="2"|1966–68
+|rowspan="2"|Embossed white serial on dark green plate; border lines around plate and around top corners; "PRINCE EDWARD ISLAND" at bottom; "66" at top left
+|rowspan="2"|"GARDEN PROVINCE" centred at top
+|rowspan="2"|12-345
+|rowspan="2"|20-001 to approximately 61-000
+|rowspan="2"|Revalidated for 1967 and 1968 with stickers.
+|-
+|[[File:PEI License Plate 1966-68.jpg|150px]]
+|-
+|[[File:Blank License Plate Shape.svg|150px]] 
+|rowspan="2"|1969–72
+|Embossed dark blue serial on reflective orange plate; border lines around plate and around top corners; "PRINCE EDWARD ISLAND" at bottom; "69" at top left
+|rowspan="2"|"GARDEN PROVINCE" centred at top
+|rowspan="2"|12-345
+|30-001 to<br>30-500
+|rowspan="2"|Reflective plates were experimental. All plates revalidated for 1970, 1971 and 1972 with stickers.
+|-
+|[[File:PEI License Plate 1969.jpg|150px]]
+|As above, but beige rather than orange, and non-reflective
+|30-501 to approximately 83-000
+|-
+|[[File:1973 Prince Edward Island license plate 75-921.jpg|150px]]
+|1973–75
+|Embossed burnt orange serial on white plate with border line; [[Fathers of Confederation|Father of Confederation]] graphic at left; "PRINCE EDWARD ISLAND" at bottom
+|"The Place To Be... In 73" at top
+|12-345
+|19-760 to approximately 76-000
+|Awarded "Plate of the Year" for best new licence plate of 1973 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Prince Edward Island has been so honoured. Revalidated for 1974 and 1975 with stickers.
+|-
+|[[File:1976 Prince Edward Island license plate 46-046.png|150px]]
+|1976–80
+|Embossed white serial on dark blue plate with border line; "PRINCE EDWARD ISLAND" at bottom; white box at right containing debossed "76"
+|"SEAT BELTS SAVE" centred at top
+|12-345
+|19-790 to<br>99-999;<br>10-001 to approximately 12-000
+|Revalidated for 1977, 1978, 1979 and 1980 with stickers.
+|-
+|[[File:Canada Prince Edward Island license plate 1981 graphic.png|150px]]
+|1981–92
+|Embossed green serial with provincial shield separator on reflective white plate; border lines around plate and around bottom corners; "PRINCE EDWARD ISLAND" at top and "CANADA" centred at bottom
+|''none''
+|{{nowrap|ABC★123}}
+|see right
+|Only A through T (excluding Q and S) used as first letter in serial, and only A through G (excluding D) used as second letter. Series with A as the second letter issued first; random order thereafter.<ref>{{cite web |last=Tanner |first=Eric N. |title=Prince Edward Island Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Prince%20Edward%20Island&code=pe |publisher=allaboutlicenseplates.com |access-date=December 17, 2020}}</ref>
+|-
+|[[File:Canada Prince Edward Island license plate 1993 graphic.png|150px]]
+|1993–97
+|Embossed red serial on reflective white plate; green and red [[Anne of Green Gables]] graphic slightly to left of centre; "PRINCE EDWARD ISLAND" screened in red at top
+|"Home of "Anne of Green Gables"" screened in red centred at bottom
+|''A''B★123<br>'''''Q'''''1★234<br>'''''Q'''''B★C12
+|Coded by county of issuance (''A'')
+|'K' code used in [[Kings County, Prince Edward Island|Kings County]], 'P' in [[Prince County, Prince Edward Island|Prince County]], and 'Q' in [[Queens County, Prince Edward Island|Queens County]], which used the '''Q'''1 234 and '''Q'''B C12 serial formats following QZ 999.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1997
+|
+|
+|AB 123
+|AA 001 to approximately AH&nbsp;500
+|No county coding.
+|-
+|[[File:Prince Edward Island License Plate 1997.jpg|150px]]
+|rowspan="2"|1997–2007
+|Embossed green serial on reflective gradient green, white and blue plate; screened [[Confederation Bridge]] graphic separator at top centre and national flag at bottom left; "Prince Edward Island" screened in green below graphic with green trees, wavy blue underline, and "CANADA" below underline
+|"Confederation Bridge" screened in green at top
+|AB★123
+|ZA 001 to approximately RV 999 (see right)
+|Progression of first letter was as follows: Z, Y, X, V (most series), U, R.
+|-
+|[[File:Prince Edward Island Sample License Plate 2007.jpg|150px]]
+|As above, but with screened [[Province House (Prince Edward Island)|Province House]] graphic separator at top centre
+|"Birthplace of Confederation" screened in green at top
+|AB★123
+|WA 001 to approximately VW 999 (see right)
+|Issued concurrently with the Confederation Bridge base. Progression of first letter was as follows: W, N, V (some series).
+|-
+|[[File:Prince Edward Island License Plate 2007.jpg|150px]]
+|2007–09
+|rowspan="3"|Embossed green numbers on reflective white plate with screened photo of windmills
+|"Canada's Green Province" at bottom
+|AB 123
+|AA 101 to ZZ 999
+|Issued concurrently with "Canada's Green Province" base (website: "www.peiplay.ca")
+|-
+| 
+|2010–12
+|"Canada's Green Province" as 2007 base
+|123 AB
+|101 AA to 963 EW (As of July 30th 2011)
+|Issued concurrently with "Canada's Green Province" base (website: "www.peiplay.ca")
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–2012
+|La province verte du Canada as 2007 base
+|'''JA'''123
+|JA101 to JA999
+|Issued concurrently with "La province verte du Canada" base (website: "www.douceurdelile.com")
+|-
+|[[File:Prince Edward Island Passenger Plate 62-1VZ.jpg|150px]]
+|rowspan="2"|2013–2022
+|rowspan="2"|Embossed light brown numbers on reflective white with screened facsimile of [[Province House (Prince Edward Island)|Province House]] on the left, provincial coat of arms in centre.
+|Birthplace of Confederation
+|rowspan="2"|12★3AB A1★23B
+|rowspan="2"|10 1AA to 99 9ZZ A1 01A to C7 56G (As of July 30th 2022)
+|
+|-
+|[[File:PEI Berceau de la Confederation Sample License Plate.jpg|150px]]
+|Berceau de la Confederation
+|
+|-
+| 
+|2013–present
+|Personalized plates; can choose to have Province House on the left. 
+|Birthplace of Confederation
+|unlimited
+|
+|Any personalized plates are allowed so long as text is not offensive; can also be low digit. 
+|-
+|[[File:Prince Edward Island sample license plate (English version), post-2022 series.png|150px]]
+|rowspan="2"|2022–present
+|Green letters on white baseplate; 'PRINCE EDWARD ISLAND' screened at top. Provincial crest separator in centre and small Canadian state flag in bottom left.
+|rowspan="2"|CANADA
+|rowspan="2"|123★ABC
+|rowspan="2"|
+|Default version for Anglophone Prince Edward Islanders.<ref name=PDF/>
+|-
+|[[File:Prince Edward Island sample license plate (French version), post-2022 series.png|150px]]
+|Green letters on white baseplate; 'ÎLE-DU-PRINCE-ÉDOUARD' screened at top. Provincial crest separator in centre and small Canadian state flag in bottom left.
+|Available as an alternate choice for Francophone Prince Edward Islanders.<ref name=PDF>{{cite web |title=Province unveils new license plates |url=https://www.princeedwardisland.ca/en/news/province-unveils-new-license-plates |website=Prince Edward Island |date=16 November 2022 |access-date=29 January 2023}}</ref>
+|}
+
+==Commercial licence plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Prince Edward Island commercial license plate CG-184.jpg|150px]]
+|rowspan="3"|Commercial
+|1997–2007
+|Embossed green serial on reflective gradient green, white and blue plate; screened [[Confederation Bridge]] graphic at top centre and national flag at bottom left; "Prince Edward Island" screened in green below graphic with green trees, wavy blue underline, and "CANADA" below underline
+|"Confederation Bridge" screened in green at top
+|rowspan="2"|'''C'''A 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–2012
+|Embossed green numbers on reflective white plate with screened photo of windmills
+|"Canada's Green Province" at bottom
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013–present
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left
+|Birthplace of Confederation
+|'''CVC'''1 234
+|
+|Letters CV are stacked on left
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|PRP
+|1997–2007
+|Embossed green serial on reflective gradient green, white and blue plate; screened [[Confederation Bridge]] graphic at top centre and national flag at bottom left; "Prince Edward Island" screened in green below graphic with green trees, wavy blue underline, and "CANADA" below underline
+|"Confederation Bridge" screened in green at top
+|rowspan="3"|'''P'''1 234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–2012
+|Embossed green numbers on reflective white plate with screened photo of windmills
+|"Canada's Green Province" at bottom
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013–present
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left
+|Birthplace of Confederation
+|
+|
+|-
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Prince Edward Island Dealer License Plate.jpg|150px]]
+|Dealer
+|
+|Embossed red serial on reflective yellow plate; "Prince Edward Island" at top, and "Dealer" at bottom
+|''none''
+|'''DLR'''1234
+|
+|
+|-
+|[[File:Prince Edward Island Service Vehicle License Plate 2010.jpg|150px]]
+|rowspan="3"|Service Vehicle
+|1997–2007
+|Embossed green serial on reflective gradient green, white and blue plate; screened [[Confederation Bridge]] graphic at top centre and national flag at bottom left; "Prince Edward Island" screened in green below graphic with green trees, wavy blue underline, and "CANADA" below underline
+|"Confederation Bridge" screened in green at top
+|rowspan="2"|'''SV'''★A12
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–2012
+|Embossed green numbers on reflective white plate with screened photo of windmills
+|"Canada's Green Province" at bottom
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013–present
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left
+|Birthplace of Confederation
+|'''SV'''12 345
+|
+|Letters SV are stacked on left
+|-
+|[[File:Prince Edward Island Trailer License Plate 1993.jpg|150px]]
+|rowspan="4"|Trailer
+|1993–1997
+|Embossed red serial on reflective white plate; green and red [[Anne of Green Gables]] graphic slightly to left of centre; "PRINCE EDWARD ISLAND" screened in red at top
+|"Home of "Anne of Green Gables"" screened in red centred at bottom
+|'''T'''A★123
+|
+|
+|-
+|[[File:Prince Edward Island Trailer Plate 1997.jpg|150px]]
+|1997-–2007
+|Embossed green serial on reflective gradient green, white and blue plate; screened [[Confederation Bridge]] graphic at top centre and national flag at bottom left; "Prince Edward Island" screened in green below graphic with green trees, wavy blue underline, and "CANADA" below underline
+|"Confederation Bridge" screened in green at top
+|rowspan="2"|12★3A'''T'''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–2012
+|Embossed green numbers on reflective white plate with screened photo of windmills
+|"Canada's Green Province" at bottom
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013–present
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left
+|Birthplace of Confederation
+|'''TLR'''12'''T'''34
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|Motorcycle
+|1993–1997
+|Embossed red serial on reflective white plate; green and red [[Anne of Green Gables]] graphic slightly to left of centre; "PRINCE EDWARD ISLAND" screened in red at top
+|"Home of "Anne of Green Gables"" screened in red centred at bottom
+|
+|
+|
+|-
+|[[File:1997 Prince Edward Island Motorcycle License Plate C9 46.jpg|150px]]
+|1997–2007
+|Embossed green serial on reflective gradient green, white and blue plate; screened [[Confederation Bridge]] graphic at top centre and national flag at bottom left; "Prince Edward Island" screened in green below graphic with green trees, wavy blue underline, and "CANADA" below underline
+|"Confederation Bridge" screened in green at top
+|A1★23
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–2012
+|Embossed green numbers on reflective white plate with screened photo of windmills
+|"Canada's Green Province" at bottom
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013–present
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left
+|Birthplace of Confederation
+|
+|
+|
+|}
+
+==Specialty licence plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Prince Edward Island 1993 Firefighter License Plate.jpg|150px]]
+|rowspan="4"|Volunteer firefighter
+|1993–1997
+|Embossed red serial on reflective white plate; green and red [[Anne of Green Gables]] graphic slightly to left of centre; "PRINCE EDWARD ISLAND" screened in red at top
+|"Home of "Anne of Green Gables"" screened in red centred at bottom
+|A12
+|
+|
+|-
+|[[File:Prince Edward Island Firefighter License Plate 1997.jpg|150px]]
+|1997–2007
+|Embossed green serial on reflective gradient green, white and blue plate; screened [[Confederation Bridge]] graphic at top centre and national flag at bottom left; "Prince Edward Island" screened in green below graphic with green trees, wavy blue underline, and "CANADA" below underline
+|"Confederation Bridge" screened in green at top
+|rowspan="2"|1A1
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–2012
+|Embossed green numbers on reflective white plate with screened photo of windmills
+|"Canada's Green Province" at bottom
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013–present
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left
+|Birthplace of Confederation
+|12 3'''F'''A
+|
+|FD to FS
+|-
+|[[File:PEI EV green plate, English.png|150px]]
+|Green electric vehicle (English)
+|2022–present
+|White serial on green background, provincial escutcheon in centre and state flag at bottom left.
+|ELECTRIC VEHICLE
+|123★4EV
+|
+|
+|-
+|[[File:PEI EV green plate, French.png|150px]]
+|Green electric vehicle (French)
+|2022–present
+|White serial on green background, provincial escutcheon in centre and state flag at bottom left.
+|{{lang|fr|VÉHICULE ÉLECTRIQUE}}
+|123★4EV
+|
+|
+|}
+
+===Conservation licence plates===
+In 2013, the province introduced five new specialty plate designs. Those designs included; Blue jay, Canada goose, Red fox, Trout & Lady slipper, the provinces official flower. All profits go to the P.E.I. Wildlife Conservation Fund.<ref>{{cite web|title=New Licence Plate|url=http://www.gov.pe.ca/highwaysafety/index.php3?number=1047720&lang=E|website=www.gov.pe.ca/highwaysafety|publisher=Highway Safety Division|access-date=12 September 2014|date=2013-10-03}}</ref><ref>{{cite web |title=5 conservation licence plates offered by P.E.I. |url=https://www.cbc.ca/news/canada/prince-edward-island/5-conservation-licence-plates-offered-by-p-e-i-1.1872951 |website=CBC News |access-date=19 September 2022}}</ref>
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Blue Jay
+|2013
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left; Blue Jay graphic on right
+|Birthplace of Confederation
+|
+|
+|
+|-
+|[[File:PEI goose plate.jpg|150px|License plate from PEI feat. Canada Goose]]
+|Goose
+|2013
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left; Goose graphic on right
+|Birthplace of Confederation
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Red fox
+|2013
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left; Red fox graphic on right
+|Birthplace of Confederation
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Lady slipper
+|2013
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left; Lady slipper flower graphic on right
+|Birthplace of Confederation
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Speckled trout
+|2013
+|Embossed light brown numbers on reflective white with photo of [[Province House (Prince Edward Island)|Province House]] on the left; Trout graphic on right
+|Birthplace of Confederation
+|
+|
+|
+|}
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Commonscat-inline|Licence plates of Prince Edward Island}}
+*[https://www.15q.net/pei.html Prince Edward Island licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20210912044230/http://www.15q.net/pei.html |date=2021-09-12 }}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:1913 establishments in Prince Edward Island]]
+[[Category:Vehicle registration plates of Canada|Prince Edward Island]]
+[[Category:Transport in Prince Edward Island]]
+[[Category:Prince Edward Island transport-related lists]]

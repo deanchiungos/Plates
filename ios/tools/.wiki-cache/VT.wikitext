@@ -1,0 +1,738 @@
+{{short description|Vermont vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Vermont 2017 License Plate.jpg
+| nickname = 
+| slogan_label = Slogan
+| slogan = Green Mountain State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123
+| current_start_date = {{Start date|1990|01|01}}
+| designer = 
+| issuer = [[Vermont Agency of Transportation]], [[Vermont Department of Motor Vehicles]]
+| manufacturer = 
+| start_date = {{Start date|1905|05|01}}
+}}
+The U.S. state of [[Vermont]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1905. {{As of|2022}}, plates are issued by the [[Vermont Department of Motor Vehicles]] (DMV), associated with the [[Vermont Agency of Transportation]]. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1905 to 1966===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Vermont license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1905 to 1907 Vermont license plate.jpg|150px]]
+|{{nowrap|1905–07}}
+|White serial on blue porcelain plate; "VERMONT AUTOMOBILE REGISTER" centered at top
+|''none''
+|123
+|1 to approximately 999
+|
+|-
+|[[File:1907 to 1909 Vermont license plate.jpg|150px]]
+|1907–09
+|Black serial on white porcelain plate with border line; "VT." at right
+|''none''
+|1234
+|1 to approximately 2000
+|
+|-
+|[[File:1909 Vermont license plate.jpg|150px]]
+|1909
+|Black serial on white porcelain plate with border line; "VT. 1909" at right
+|''none''
+|1234
+|1 to approximately 2000
+|First dated plate.
+|-
+|[[File:1910 Vermont license plate.jpg|150px]]
+|1910
+|As 1909 base, but with "VT. 1910" at right
+|''none''
+|1234
+|1 to approximately 2500
+|
+|-
+|[[File:1911 Vermont license plate.jpg|150px]]
+|1911
+|As 1909 base, but with "VT. 1911" at right
+|''none''
+|1234
+|1 to approximately 3300
+|
+|-
+|[[File:1912 Vermont License Plate.jpg|150px]]
+|1912
+|As 1909 base, but with "VT. 1912" at right
+|''none''
+|1234
+|1 to approximately 4300
+|
+|-
+|[[File:1913 Vermont license plate.jpg|150px]]
+|1913
+|Black serial on white porcelain plate with border line; vertical "VT" and "1913" at left and right respectively
+|''none''
+|1234
+|1 to approximately 6000
+|
+|-
+|[[File:1914 Vermont license plate.jpg|150px]]
+|1914
+|Black serial on white porcelain plate with border line; vertical "1914" and "VT" at left and right respectively
+|''none''
+|1234
+|1 to approximately 8300
+|
+|-
+|[[File:1915 Vermont license plate.jpg|150px]]
+|1915
+|Black serial on white porcelain plate with border line; vertical "VT" and "1915" at left and right respectively
+|''none''
+|12345
+|1 to approximately 11500
+|
+|-
+|[[File:1916 Vermont license plate.jpg|150px]]
+|1916
+|Embossed white serial on dark blue plate with border line; vertical "VT" at right
+|''none''
+|12345
+|1 to approximately 15600
+|First embossed plate.
+|-
+|[[File:1917 Vermont License Plate 17679.jpg|150px]]
+|1917
+|Embossed blue serial on white plate with border line; vertical "VT" at right
+|''none''
+|12345
+|1 to approximately 20300
+|
+|-
+|[[File:1918 Vermont license plate.jpg|150px]]
+|1918
+|Embossed golden yellow serial on green plate with border line; vertical "VT" at right
+|''none''
+|12345
+|1 to approximately 22500
+|
+|-
+|[[File:1919 Vermont license plate.jpg|150px]]
+|1919
+|Embossed blue serial on off-white plate with border line; "VT 19" at right
+|''none''
+|12345
+|1 to approximately 26700
+|
+|-
+|[[File:1920 Vermont license plate.jpg|150px]]
+|1920
+|Embossed white serial on black plate with border line; "VT 20" at left
+|''none''
+|12-345
+|1 to approximately {{nowrap|32-000}}
+|
+|-
+|[[File:1921 Vermont license plate.jpg|150px]]
+|1921
+|Embossed black serial on white plate; "VT 21" at left
+|''none''
+|12-345
+|1 to approximately {{nowrap|37-000}}
+|
+|-
+|[[File:1922 Vermont license plate.jpg|150px]]
+|1922
+|Embossed blue serial on white plate; "VT 22" at right
+|''none''
+|12-345
+|1 to approximately {{nowrap|42-000}}
+|
+|-
+|[[File:1923 Vermont license plate.jpg|150px]]
+|1923
+|Embossed black serial on yellow plate with border line; "VT 23" at left
+|''none''
+|12-345
+|100 to approximately {{nowrap|48-000}}
+|
+|-
+|[[File:1924 Vermont license plate.jpg|150px]]
+|1924
+|Embossed black serial on silver plate with border line; "VT 24" at right
+|''none''
+|12-345
+|100 to approximately {{nowrap|57-000}}
+|
+|-
+|[[File:1925 Vermont license plate.jpg|150px]]
+|1925
+|Embossed golden yellow serial on green plate with border line; "VT 25" at left
+|''none''
+|12-345
+|100 to approximately {{nowrap|64-000}}
+|
+|-
+|[[File:1926 Vermont License Plate 17682.jpg|150px]]
+|1926
+|Embossed green serial on golden yellow plate with border line; "VERMONT 1926" at bottom
+|''none''
+|12-345
+|1 to approximately {{nowrap|69-000}}
+|
+|-
+|[[File:Vermont 1927 license plate.jpg|150px]]
+|1927
+|Embossed golden yellow serial on green plate with border line; "VERMONT 1927" at bottom
+|''none''
+|12-345
+|1 to approximately {{nowrap|75-000}}
+|
+|-
+|[[File:1928 Vermont license plate.jpg|150px]]
+|1928
+|Embossed green serial on golden yellow plate with border line; "VERMONT 1928" at top
+|''none''
+|12-345
+|1 to approximately {{nowrap|80-000}}
+|
+|-
+|[[File:1929 Vermont license plate.jpg|150px]]
+|1929
+|Embossed tan serial on maroon plate with border line; "VERMONT 1929" at bottom
+|''none''
+|12-345
+|1 to approximately {{nowrap|85-000}}
+|
+|-
+|[[File:1930 Vermont License Plate 17917.jpg|150px]]
+|1930
+|Embossed maroon serial on tan plate with border line; "VERMONT 1930" at bottom
+|''none''
+|12-345
+|1 to approximately {{nowrap|85-000}}
+|
+|-
+|[[File:1931 Vermont License Plate 31 907.jpg|150px]]
+|1931
+|Embossed white serial on dark blue plate with border line; "VERMONT 1931" at top
+|''none''
+|12-345
+|1 to approximately {{nowrap|76-000}}
+|
+|-
+|[[File:1932 Vermont license plate.jpg|150px]]
+|1932
+|Embossed dark blue serial on white plate with border line; "VERMONT 1932" at bottom
+|''none''
+|12-345
+|1 to approximately {{nowrap|70-000}}
+|
+|-
+|[[File:1933 VT license plate.jpg|150px]]
+|1933
+|Embossed white serial on dark blue plate with border line; "VERMONT 1933" at top
+|''none''
+|12-345
+|101 to approximately {{nowrap|69-000}}
+|
+|-
+|[[File:1934 Vermont license plate.jpg|150px]]
+|1934
+|Embossed dark blue serial on white plate with border line; "VERMONT 1934" at top
+|''none''
+|12-345
+|101 to approximately {{nowrap|66-000}}
+|
+|-
+|[[File:1935 Vermont license plate.jpg|150px]]
+|1935–36
+|Embossed white serial on dark blue plate with border line; "VERMONT 1935" at bottom
+|''none''
+|12-345
+|101 to approximately {{nowrap|73-000}}
+|Validated through March 31, 1936.
+|-
+|[[File:1936-37 Vermont License Plate.jpg|150px]]
+|1936–37
+|Embossed dark blue serial on white plate with border line; "VERMONT EXPIRES MARCH 31 1937" at bottom
+|''none''
+|12-345
+|1 to approximately {{nowrap|77-000}}
+|
+|-
+|[[File:1938 Vermont license plate - apr 38.jpg|150px]]
+|1937–38
+|Embossed white serial on dark blue plate with border line; "VERMONT TO APR. 1 1938" at bottom
+|''none''
+|12-345
+|1 to approximately {{nowrap|77-000}}
+|
+|-
+|[[File:1938 Vermont license plate.jpg|150px]]
+|1938
+|Embossed dark blue serial on white plate; "19 VERMONT 38" at bottom
+|''none''
+|12 345
+|1 to approximately 78&nbsp;000
+|
+|-
+|[[File:1939 Vermont license plate.jpg|150px]]
+|1939
+|Embossed white serial on dark blue plate; "19 VERMONT 39" at bottom
+|''none''
+|12 345
+|1 to approximately 81&nbsp;000
+|
+|-
+|[[File:1940 Vermont license plate.jpg|150px]]
+|1940
+|Embossed dark blue serial on white plate; "19 VERMONT 40" at bottom
+|''none''
+|12 345
+|1 to approximately 84&nbsp;000
+|
+|-
+|[[File:1941 Vermont license plate.jpg|150px]]
+|1941
+|Embossed white serial on dark blue plate; "19 VERMONT 41" at top
+|''none''
+|12 345
+|1 to approximately 87&nbsp;000
+|
+|-
+|[[File:1942 Vermont license plate.jpg|150px]]<br>[[File:1942 Vermont license plate with 1943 tab.jpg|150px]]
+|1942–43
+|Embossed dark blue serial on white plate; "19 VERMONT 42" at bottom
+|''none''
+|12 345
+|1 to approximately 88&nbsp;000
+|Revalidated for 1943 with yellow tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:1944 Vermont license plate.jpg|150px]]
+|1944
+|Embossed black serial on white plate; "VERMONT 44" at bottom
+|''none''
+|12345
+|1 to approximately 74000
+|
+|-
+|[[File:1945 Vermont license plate.JPG|150px]]
+|1945
+|Embossed white serial on dark blue plate; "VERMONT 45" at bottom
+|''none''
+|12345
+|1 to approximately 81000
+|
+|-
+|[[File:1946 Vermont license plate.jpg|150px]]
+|1946
+|Embossed black serial on white plate; "VERMONT 46" at bottom
+|''none''
+|12345
+|1 to approximately 88000
+|
+|-
+|[[File:1947 Vermont license plate.jpg|150px]]
+|1947
+|Embossed white serial on black plate; "47 VERMONT" at bottom
+|''none''
+|12345
+|1 to approximately 93000
+|
+|-
+|[[File:1948 Vermont license plate.jpg|150px]]
+|1948
+|Embossed gold serial on dark green plate; "48 VERMONT" centered at bottom
+|"GREEN MOUNTAINS" centered at top
+|12345
+|1 to approximately 96000
+|Most recent passenger base to use a color other than green or white.
+|-
+|[[File:Vermont 1949 license plate.jpg|150px]]
+|1949
+|Embossed dark green serial on white plate; "VERMONT 49" centered at bottom
+|"GREEN MOUNTAINS" centered at top
+|12345
+|1 to approximately 99000
+|
+|-
+|rowspan="2"|[[File:1950 Vermont license plate.jpg|150px]]
+|rowspan="2"|1950
+|rowspan="2"|Embossed white serial on dark green plate with border line; "50 VERMONT" centered at bottom
+|rowspan="2"|"GREEN MOUNTAINS" centered at top
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|'''K'''1234
+|K101 to approximately K5000
+|-
+|rowspan="2"|[[File:1951 Vermont license plate.jpg|150px]]
+|rowspan="2"|1951
+|rowspan="2"|Embossed white serial on dark green plate; "VERMONT 51" centered at bottom
+|rowspan="2"|''none''
+|A123
+|A1 to W999
+|rowspan="2"|Letters I, O, Q, T, X and Y not used in serials.<ref name="allaboutlicenseplatesVT">{{cite web |last=Tanner |first=Eric N. |title=Vermont Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Vermont&code=vt |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|AB123
+|AB1 to approximately GR999
+|-
+|rowspan="2"|[[File:1952 Vermont license plate.jpg|150px]]
+|rowspan="2"|1952
+|rowspan="2"|Embossed dark green serial on white plate; "52 VERMONT" centered at bottom
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|E1 to approximately E9999
+|-
+|rowspan="2"|[[File:1953 Vermont license plate.jpg|150px]]
+|rowspan="2"|1953
+|rowspan="2"|As 1951 base, but with "VERMONT 53" at bottom
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to A9999;<br>E1 to approximately E2400
+|-
+|rowspan="2"|[[File:1954 Vermont license plate.jpg|150px]]
+|rowspan="2"|1954
+|rowspan="2"|As 1952 base, but with "54 VERMONT" at bottom
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to A9999;<br>E1 to approximately E6200
+|-
+|rowspan="2"|[[File:1955 Vermont license plate.jpg|150px]]
+|rowspan="2"|1955
+|rowspan="2"|As 1951 base, but with "VERMONT 55" at bottom
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A and E series; C1 to approximately C900
+|-
+|rowspan="2"|[[File:1956 Vermont license plate.jpg|150px]]
+|rowspan="2"|1956
+|rowspan="2"|As 1952 base, but with "56 VERMONT" at bottom
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A and E series; C1 to approximately C5000
+|-
+|rowspan="2"|[[File:1957 Vermont license plate.jpg|150px]]
+|rowspan="2"|1957
+|rowspan="2"|Embossed white serial on dark green plate; "VERMONT" centered at bottom; "57" at bottom right
+|rowspan="2"|"SEE" to left of state name, giving "SEE VERMONT"
+|12345
+|1 to 99999
+|rowspan="2"|First 6" x 12" plate.
+|-
+|A1234
+|A and E series; C1 to approximately C7400
+|-
+|rowspan="2"|[[File:1958 Vermont license plate.JPG|150px]]
+|rowspan="2"|1958
+|rowspan="2"|Embossed dark green serial on white plate; "VERMONT" centered at bottom; "58" at bottom right
+|rowspan="2"|"SEE" to left of state name, giving "SEE VERMONT"
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A and E series; C1 to approximately C6100
+|-
+|rowspan="2"|[[File:1959 Vermont license plate.JPG|150px]]
+|rowspan="2"|1959
+|rowspan="2"|As 1957 base, but with "59" at bottom right
+|rowspan="2"|"SEE" as on 1957 base
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A, E and C series; B1 to approximately B100
+|-
+|rowspan="2"|[[File:1960 Vermont license plate.jpg|150px]]
+|rowspan="2"|1960
+|rowspan="2"|As 1958 base, but with "60" at bottom right
+|rowspan="2"|"SEE" as on 1958 base
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A, E and C series; B1 to approximately B3100
+|-
+|rowspan="2"|[[File:1961 Vermont license plate.jpg|150px]]
+|rowspan="2"|1961
+|rowspan="2"|As 1957 base, but with "61" at bottom right
+|rowspan="2"|"SEE" as on 1957 base
+|12345
+|1 to 99999
+|rowspan="2"|D series not used.<ref name="allaboutlicenseplatesVT"/>
+|-
+|A1234
+|A1 to approximately E5600
+|-
+|rowspan="2"|[[File:1962 Vermont license plate.jpg|150px]]
+|rowspan="2"|1962
+|rowspan="2"|As 1958 base, but with "62" at bottom right
+|rowspan="2"|"SEE" as on 1958 base
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately E9100
+|-
+|rowspan="2"|[[File:1963 Vermont license plate.jpg|150px]]
+|rowspan="2"|1963
+|rowspan="2"|As 1957 base, but with "63" at bottom right
+|rowspan="2"|"SEE" as on 1957 base
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately F2800
+|-
+|rowspan="2"|[[File:1964 Vermont license plate.jpg|150px]]
+|rowspan="2"|1964
+|rowspan="2"|As 1958 base, but with "64" at bottom right
+|rowspan="2"|"SEE" as on 1958 base
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately F7100
+|-
+|rowspan="2"|[[File:1965 Vermont License Plate.jpg|150px]]
+|rowspan="2"|1965
+|rowspan="2"|As 1957 base, but with "65" at bottom right
+|rowspan="2"|"SEE" as on 1957 base
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately F8500
+|-
+|rowspan="2"|[[File:1966 Vermont license plate.jpg|150px]]
+|rowspan="2"|1966
+|rowspan="2"|As 1958 base, but with "66" at bottom right
+|rowspan="2"|"SEE" as on 1958 base
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately F7800
+|}
+
+===1967 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Vermont 1968 license plate - Number 176753.jpg|150px]]
+|1967–68
+|Debossed white serial on green plate with border line; "VERMONT" centered at bottom; rectangular sticker box at bottom left and "67" at bottom right
+|''none''
+|123456
+|1 to<br>approximately 187000
+|Shade of green changed from forest green to the kelly green still used today.
+|-
+|rowspan="2"|[[File:1969 to 1971 Vermont license plate.jpg|150px]]
+|rowspan="2"|1969–71
+|rowspan="2"|Debossed white serial on green plate with border line; "VERMONT" centered at bottom; rectangular sticker box at bottom right
+|rowspan="2"|"SEE" to left of state name, giving "SEE VERMONT"
+|A·1234
+|A·100 to<br>Y·9999
+|rowspan="2"|Letters I, J, O, Q, W and Z not used in serials; this practice continued until 1984.<ref name="allaboutlicenseplatesVT"/>
+|-
+|1234·A
+|100·A to approximately 7000·E
+|-
+|rowspan="4"|[[File:1972 Vermont license plate A1234 combo.jpg|150px]]
+|rowspan="4"|1972–76
+|rowspan="4"|Similar to 1969–71 base, but with state name, slogan and sticker box at top rather than bottom
+|rowspan="4"|"SEE" as on 1969–71 base, but at top
+|A·1234
+|A·100 to<br>Y·9999
+|rowspan="4"|In the AB·123 serial format, the first letter was strictly A through L and the second letter was strictly M through Y.<ref name="allaboutlicenseplatesVT"/>
+|-
+|1234·A
+|100·A to<br>9999·L
+|-
+|AB·123
+|AM·100 to<br>LY·999
+|-
+|A123B
+|A100A to approximately A999B
+|-
+|rowspan="4"|[[File:Vermont license plate, 1977–1984 series with September 1981 sticker.png|150px]]
+|rowspan="4"|1977–84
+|rowspan="4"|Debossed white serial on green plate with border line; "VERMONT" centered at bottom; round sticker box at bottom left and rectangular sticker box at bottom right
+|rowspan="4"|"GREEN MOUNTAINS" centered at top
+|A·1234
+|A·100 to<br>Y·9999
+|rowspan="4"|Round sticker box never used. Letter W added to serials in 1984. Revalidated until 1989.
+|-
+|1234·A
+|100·A to<br>9999·Y
+|-
+|AB123
+|AM100 to<br>YY999
+|-
+|123AB
+|100AB to approximately 999EC
+|-
+|rowspan="4"|[[File:Vermont license plate, 1985.png|150px]]
+|1985–87
+|rowspan="5"|Debossed white serial on green plate; screened white rectangular box around serial; "Vermont" screened in white centered at top; white [[Acer saccharum|sugar maple]] screened at top left
+|rowspan="5"|"Green Mountain State" screened in white centered at bottom
+|1A234
+|1A100 to<br>9Y999
+|rowspan="2"|
+|-
+|1987–89
+|123A4
+|100A1 to<br>999Y9
+|-
+|rowspan="2"|1989
+|1AB23
+|1AA00 to approximately 9FF99
+|Issued as replacements for 1977–84 plates.
+|-
+|12AB3
+|10AA0 to approximately 99BC9
+|Issued only to new registrants.
+|-
+|[[File:Vermont 2017 License Plate.jpg|150px]]
+|January&nbsp;1, 1990 – present
+|ABC&nbsp;123
+|Intermingled with truck, municipal and (large) trailer plates from AAB 100 to BNF 999; exclusively from BNG 100 to KXA 509 {{small|(as of May 11, 2025)}}<ref name=":0">{{Cite web |title=Vermont License Plates |url=https://www.licenseplates.cc/VT |access-date=January 8, 2025 |website=www.licenseplates.cc}}</ref>
+|Narrow serial [[Die (manufacturing)|die]]s introduced. Same format used on Trailer (Large) and Municipal plates, and on Truck plates until 2009. Letters I, J, O, Q and U not used. Letters V and Z traditionally skipped, but are now used as of January 2024, starting with the KPV series.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] [[Bus]]
+|As current passenger base, but with "APPORTIONED" in place of slogan; "BUS" debossed vertically to left of serial
+|12'''B'''34
+|10B00 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] [[Truck]]
+|As current passenger base, but with "APPORTIONED" in place of slogan; "TRK" debossed vertically to left of serial
+|12A34
+|10A00 to present
+|B series reserved for Apportioned Bus.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Disability|Disabled]]
+|As current passenger base
+|{{access icon|10px}}&nbsp;A1234
+|{{access icon|10px}}&nbsp;A1000 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Motorcycle]]
+|Debossed white serial on green plate with border line; "VERMONT" at top left and "MOTORCYCLE" at bottom; debossed box for revalidation sticker at top right
+|AB123
+|AA100 to present
+|
+|-
+|[[File:Vermont Municipal License Plate AAR596.jpg|150px]]
+|Municipal
+|As current passenger base, but red rather than green; "MUN" debossed vertically to left of serial
+|'''A'''BC&nbsp;123
+|AAA100 to present
+|Serials start with AA or AB.
+|-
+|[[File:Vermont Street Rod sample plate.png|150px]]
+|[[Hot rod|Street Rod]]
+|As current passenger base; "STREET RODS" debossed diagonally to left of serial
+|'''SR'''123
+|SR001&nbsp;to present
+|
+|-
+|[[File:Vermont Trailer Plate TRAAHF 391.jpg|150px]]
+|[[Trailer (vehicle)|Trailer]] (Large)
+|As current passenger base; "TRA" debossed vertically to left of serial
+|'''A'''BC&nbsp;123
+|AAA100 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Trailer (Small)
+|As Motorcycle plate, but with "TRAILER" at bottom
+|A12345
+|A10000 to present
+|
+|-
+|[[File:Vermont truck 185A253.jpg|150px]]
+|[[Truck]]
+|As current passenger base; "TRK" debossed vertically to left of serial
+|123A456
+|100A100 to present
+|Current serial format introduced mid-2009 after the truck allocations intermingled with passenger plates in the ABC 123 format were discontinued for this format.{{cn|date=November 2025}}
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/vt.html Vermont license plates, 1969–present]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Vermont}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Vermont}}
+[[Category:Vehicle registration plates of the United States by state or territory|Vermont]]
+[[Category:Vermont transportation-related lists]]
+[[Category:Transportation in Vermont]]

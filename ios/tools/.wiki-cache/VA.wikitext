@@ -1,0 +1,2531 @@
+{{short description|Virginia vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =  Virginia 2016 License Plate.jpg
+| nickname = 
+| slogan_label = Slogan
+| slogan = [[Virginia is for Lovers]]
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-1234
+| current_start_date = {{Start date|2014|03}}
+| designer = 
+| issuer = [[Virginia Department of Motor Vehicles]]
+| manufacturer = 
+| start_date = {{Start date|1906|06}}
+}}
+The U.S. state of [[Virginia]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1906. {{As of|2025}}, plates are issued by the [[Virginia Department of Motor Vehicles]] (DMV). Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Motor vehicle registration statistics==
+As of 2008, the DMV has 7,698,416 active registrations, 1,696,795 (22%) of which are special or personalized plates.<ref>[http://www.dmv.state.va.us/webdoc/general/news/pdf/ActiveVehicleRegistrationsFY08.pdf Special and Personalized License Plates Report] {{Webarchive|url=https://web.archive.org/web/20110716154214/http://www.dmv.state.va.us/webdoc/general/news/pdf/ActiveVehicleRegistrationsFY08.pdf |date=July 16, 2011 }}, accessed March 29, 2009</ref> One out of every ten personalized license plates in the United States is registered to a Virginian driver.<ref>{{Cite web |date=2007-11-12 |title=Va. drivers vainest of them all with their plates |url=https://www.nbcnews.com/id/wbna21742618 |access-date=2024-06-12 |website=NBC News |language=en}}</ref> The high take-up of vanity plates in the state is arguably due to the fact that, unlike in many other states, a personalized plate in Virginia costs just $10 more than a randomly-assigned registration plate. In 2008, 1,624,146 pairs of license plates were sold, with 831,361 of them being personalized plates.<ref>[http://www.dmv.state.va.us/webdoc/general/news/pdf/BusinessProfileFY07.pdf DMV Business Profile] {{Webarchive|url=https://web.archive.org/web/20110716154223/http://www.dmv.state.va.us/webdoc/general/news/pdf/BusinessProfileFY07.pdf |date=July 16, 2011 }}, accessed March 29, 2009</ref>
+
+==Passenger baseplates==
+===1906 to 1972===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Virginian license plate that complied with these standards was issued eight years beforehand, in 1948.
+
+No slogans were used on passenger plates during the period covered by this subsection.
+{|class="wikitable"
+!Image
+!Dates issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1906–10}}
+|White serial on black porcelain plate; "VA" at right
+|1234
+|1 to approximately 4500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1910
+|Red serial on white porcelain plate; "VA. 1910" at right
+|1234
+|1 to approximately 2600
+|First dated plate. Issued only from June 15 through December 31, 1910.<ref>{{cite web |last=Taylor |first=Eric Robert |title=Virginia Archive |url=http://porcelainplates.net/virginia_archive.html |publisher=PorcelainPlates.net |access-date=July 19, 2017}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|White serial on blue porcelain plate; "VA. 1911" at right
+|1234
+|101 to approximately 4000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|White serial on green porcelain plate, "VA. 1912" at right
+|1234
+|101 to approximately 6000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|White serial on maroon porcelain plate; "VA 1913" at right
+|1234
+|1 to approximately 9000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Embossed dark blue serial on white plate; "VA 1914" at right
+|12345
+|1 to approximately 14000
+|First embossed plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Embossed white serial on dark green plate; "VA 1915" at right
+|12345
+|1 to approximately 21000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed dark blue serial on orange plate; "VA 1916" at right
+|12345
+|1 to approximately 35000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Embossed white serial on black plate with border line; "VA 1917" at right
+|12345
+|1 to approximately 52000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed black serial on white plate with border line; "VA 1918" at right
+|12345
+|1 to approximately 71000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Embossed white serial on black plate with border line; "VA 1919" at right
+|12345
+|1 to approximately 88000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed white serial on dark green plate with border line; "VA 20" at right
+|123456
+|1 to approximately 126000
+|
+|-
+|[[File:1921 Virginia license plate.jpg|150px]]
+|1921
+|Embossed black serial on orange plate with border line; "VA 21" at right
+|123-456
+|1 to approximately 146-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed white serial on dark blue plate; white lines at top and bottom borders; "VA 22" at right
+|123456
+|1 to approximately 145000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed white serial on dark green plate; white lines at top and bottom borders; "VA 23" at right
+|123456
+|1 to approximately 189000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on red plate; "VIRGINIA - 24" centered at top
+|123456
+|1 to approximately 217000
+|Manufactured in New Jersey to the same design as that state's 1924 plates. First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed black serial on white plate with border line; "VIRGINIA - 1925" at bottom
+|123-456
+|1 to approximately 235-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed golden yellow serial on dark blue plate with border line; "VIRGINIA - 26" centered at top
+|123-456
+|1 to approximately 273-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed red serial on green plate with border line; "VIRGINIA - 27" at bottom
+|123-456
+|1 to approximately 293-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed orange serial on black plate with border line; "VIRGINIA · 1928" centered at top
+|123-456
+|1 to approximately 317-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed black serial on orange plate with border line; "VIRGINIA · 1929" centered at bottom
+|123-456
+|1 to approximately 321-000
+|
+|-
+|[[File:1930 Virginia license plate.jpg|150px]]
+|1930
+|Embossed orange serial on black plate with border line; "VIRGINIA · 1930" centered at top
+|123-456
+|1 to approximately 349-000
+|
+|-
+|[[File:1931 Virginia license plate.jpg|150px]]
+|1931
+|Embossed black serial on orange plate with border line; "VIRGINIA · 1931" centered at bottom
+|123-456
+|1 to approximately 368-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on black plate with border line; "VIRGINIA · 1932" centered at top
+|123-456
+|1 to approximately 376-000
+|
+|-
+|[[File:1933 Virginia license plate.jpg|150px]]
+|1933
+|Embossed black serial on white plate; "VIRGINIA - 1933" at bottom
+|123-456
+|1 to approximately 334-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed white serial on black plate; "VIRGINIA - 1934" at top
+|123-456
+|1 to approximately 337-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed black serial on white plate; "VIRGINIA - 1935" at top
+|123-456
+|1 to approximately 335-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed orange serial on dark blue plate; "VIRGINIA - 1936" at bottom
+|123-456
+|1 to approximately 360-000
+|
+|-
+|[[File:Virginia license plate 1937 graphic.png|150px]]
+|1937
+|Embossed white serial on black plate; "VIRGINIA - 1937" at top
+|123-456
+|1 to approximately 375-000
+|
+|-
+|[[File:1938 Virginia license plate.jpg|150px]]
+|1938
+|Embossed black serial on white plate; "VIRGINIA - 1938" at bottom
+|123-456
+|1 to approximately 388-000
+|
+|-
+|[[File:Virginia license plate 1939 graphic.png|150px]]
+|1939
+|Embossed white serial on black plate; "VIRGINIA - 1939" at bottom
+|123-456
+|1 to approximately 402-000
+|
+|-
+|[[File:Virginia license plate 1940 graphic.png|150px]]
+|1940
+|Embossed black serial on white plate; "1940 - VIRGINIA" at top
+|123-456
+|1 to approximately 438-000
+|
+|-
+|[[File:Virginia license plate 1941 graphic.png|150px]]
+|1941
+|Embossed white serial on black plate; "19 - VIRGINIA - 41" at top
+|123-456
+|1 to approximately 491-000
+|
+|-
+|[[File:1942 Virginia licence plate.JPG|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1942–43
+|Embossed black serial on white plate; "VIRGINIA - 1942" at top
+|123-456
+|1 to approximately 524-000
+|Revalidated for 1943 with black tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Virginia license plate 1944 graphic.png|150px]]
+|1944
+|Embossed black serial on yellow plate; "1944 - VA" centered at bottom
+|123-456
+|1 to approximately 468-000
+|
+|-
+|[[File:Virginia license plate 1945 graphic.png|150px]]
+|1945
+|Embossed black serial on white plate; "19 - VIRGINIA - 45" at bottom
+|123-456
+|1 to approximately 475-000
+|
+|-
+|[[File:Virginia license plate 1946 graphic.png|150px]]
+|1946
+|Embossed white serial on black plate; "VIRGINIA - 1946" at bottom
+|123-456
+|1 to approximately 524-000
+|
+|-
+|[[File:Virginia license plate 1947 graphic.png|150px]]
+|1947
+|Embossed black serial on unpainted aluminum plate; "19 VIRGINIA 47" at top
+|123-456
+|1 to approximately 567-000
+|
+|-
+|[[File:Virginia license plate 1948 graphic.png|150px]]
+|1948
+|Embossed white serial on black plate; "1948 VIRGINIA" at top
+|123-456
+|1 to approximately 642-000
+|
+|-
+|[[File:1949 Virginia license plate.jpg|150px]]
+|1949
+|Embossed black serial on unpainted aluminum plate; "VIRGINIA 1949" at bottom
+|123-456
+|1 to approximately 698-000
+|
+|-
+|[[File:1950 Virginian license plate (378-641).jpg|150px]]
+|1950
+|Embossed white serial on black plate; "1950 VIRGINIA" at bottom
+|123-456
+|1 to approximately 783-000
+|
+|-
+|rowspan="2"|[[File:Virginian 1951 license plate.jpg|150px]]<br>[[File:1952 Virginia license plate.jpg|150px]]
+|rowspan="2"|1951–52
+|rowspan="2"|Embossed black serial on white plate; "19 VIRGINIA 51" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|Revalidated for 1952 with black tabs, due to metal conservation for the [[Korean War]].<ref>{{cite web|url=http://www.licensepl8s.com/VA.html |title=Virginia License Plates from 1906- |last=Pang |first=Andrew |publisher=licensepl8s.com |access-date=July 11, 2015}}</ref> Plates with serials A100-000 and up used narrower serial [[Die (manufacturing)|die]]s; this practice continued until 1969.<ref name="ricksplates1">{{cite web |last=Kretschmer |first=Rick |title=Virginia Passenger Cars 1933-1972 |url=https://www.ricksplates.com/virginia/vapass1.htm |publisher=Rick Kretschmer's License Plate Archives |access-date=July 3, 2018}}</ref>
+|-
+|{{nowrap|'''A'''123-456}}
+|A-100 to approximately A145-000
+|-
+|[[File:1953 Virginia license plate.jpg|150px]]
+|1953
+|Embossed orange serial on blue plate; "19 VIRGINIA 53" at top
+|123-456
+|1 to approximately 940-000
+|
+|-
+|[[File:1954 Virginia license plate.JPG|150px]]
+|1954
+|Embossed white serial on black plate; "VIRGINIA 1954" at top
+|123-456
+|1 to approximately 999-999
+|
+|-
+|rowspan="2"|[[File:1955 Virginian license plate.jpg|150px]]
+|rowspan="2"|1955
+|rowspan="2"|Embossed black serial on white plate; "1955 VIRGINIA" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A122-000
+|-
+|rowspan="2"|[[File:Virginia license plate 1956 graphic.png|150px]]
+|rowspan="2"|1956
+|rowspan="2"|Embossed white serial on black plate; "19 VIRGINIA 56" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A178-000
+|-
+|rowspan="2"|[[File:Virginia license plate 1957 graphic.png|150px]]
+|rowspan="2"|1957
+|rowspan="2"|Embossed black serial on white plate; "VIRGINIA 1957" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A223-000
+|-
+|rowspan="2"|[[File:1958 Virginian license plate.jpg|150px]]
+|rowspan="2"|1958
+|rowspan="2"|Embossed white serial on black plate; "1958 VIRGINIA" at top
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A232-000
+|-
+|rowspan="2"|[[File:1959 Virginia license plate 363-883.jpg|150px]]
+|rowspan="2"|1959
+|rowspan="2"|Embossed black serial on white plate; "19 VIRGINIA 59" at top
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A259-000
+|-
+|rowspan="2"|[[File:1960 Virginian license plate.jpg|150px]]
+|rowspan="2"|1960
+|rowspan="2"|Embossed white serial on black plate; "VIRGINIA 1960" at top
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A240-000
+|-
+|rowspan="2"|[[File:Virginia license plate 1961 graphic.png|150px]]
+|rowspan="2"|1961
+|rowspan="2"|Embossed black serial on white plate; "1961 VIRGINIA" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A273-000
+|-
+|rowspan="2"|[[File:Virginia license plate 1962 graphic.png|150px]]
+|rowspan="2"|1962
+|rowspan="2"|Embossed white serial on black plate; "19 VIRGINIA 62" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A344-000
+|-
+|rowspan="2"|[[File:1963 Virginian license plate.jpg|150px]]
+|rowspan="2"|1963
+|rowspan="2"|Embossed black serial on white plate; "VIRGINIA 1963" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A425-000
+|-
+|rowspan="2"|[[File:1964 Virginian license plate.jpg|150px]]
+|rowspan="2"|1964
+|rowspan="2"|Embossed white serial on black plate; "1964 VIRGINIA" at top
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A504-000
+|-
+|rowspan="2"|[[File:1965 Virginian license plate.jpg|150px]]
+|rowspan="2"|1965
+|rowspan="2"|Embossed black serial on white plate; "19 VIRGINIA 65" at top
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A545-000
+|-
+|rowspan="2"|[[File:Virginian license plate (1966, graphic).png|150px]]
+|rowspan="2"|1966
+|rowspan="2"|Embossed white serial on black plate; "VIRGINIA 1966" at top
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A626-000
+|-
+|rowspan="2"|[[File:1967 Virginian license plate.jpg|150px]]
+|rowspan="2"|1967
+|rowspan="2"|Embossed black serial on white plate; "1967 VIRGINIA" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A700-000
+|-
+|rowspan="2"|[[File:Virginian license plate (1968, graphic).png|150px]]
+|rowspan="2"|1968
+|rowspan="2"|Embossed white serial on black plate; "19 VIRGINIA 68" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A788-000
+|-
+|rowspan="2"|[[File:1969 Virginian license plate.webp|150px]]
+|rowspan="2"|1969
+|rowspan="2"|Embossed black serial on white plate; "VIRGINIA 1969" at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|All plates now used the narrower serial dies introduced on the 1951–52 base.<ref name="ricksplates1"/>
+|-
+|'''A'''123-456
+|A-100 to approximately A857-000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1970
+|rowspan="2"|Embossed white serial on black plate; "1970 VIRGINIA" at top
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|'''A'''123-456
+|A-100 to approximately A966-000
+|-
+|rowspan="4"|[[File:1971 Virginia license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|1971
+|rowspan="4"|Embossed black serial on white plate, with or without border line; "19 VIRGINIA 71" at top
+|123-456
+|1 to 999-999
+|rowspan="4"|
+|-
+|'''A'''123-456
+|A-100 to<br>A999-999
+|-
+|ABC 123
+|AAA 001 to AAD&nbsp;999
+|-
+|'''B'''12-345
+|B-1 to approximately B54-000
+|-
+|[[File:1972 Virginian license plate.jpg|150px|]]
+|1972
+|Embossed white serial on black plate with border line; "VIRGINIA 1972" at top
+|ABC-123
+|AAA-001 to DZZ-999
+|Letters I, O and Q not used in serials; this practice continues today (except 1988–92).<ref name="allaboutlicenseplatesVA">{{cite web |last=Tanner |first=Eric N. |title=Virginia Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Virginia&code=va |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref>
+|}
+
+===1973 to present===
+{|class="wikitable"
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Virginia license plate, 1973–1979 series with September 1974 sticker.png|150px]]
+|1973–79
+|Embossed blue serial on white plate with border line; "VIRGINIA" centered at top
+|''none''
+|ABC-123
+|AAA-101 to NZZ-999;<br>SAA-101 to SZZ-999
+|Revalidated with stickers until 1984. 'P' series of serials reserved for light trucks, and 'R' series for rental cars (the latter practice continued until the late 1990s).<ref name="ricksplates2">{{cite web |last=Kretschmer |first=Rick |title=Virginia Passenger Cars 1973-Present |url=https://www.ricksplates.com/virginia/vapass2.htm |publisher=Rick Kretschmer's License Plate Archives |access-date=August 26, 2019}}</ref>
+|-
+|[[File:Virginia license plate, 1979–1992 series with February 1983 sticker.png|150px]]
+|1979–92
+|Embossed dark blue serial on reflective white plate with border line; "Virginia" screened in blue centered at top
+|''none''
+|ABC-123
+|AAA-101 to ZZZ-999 (see right)
+|Still currently revalidated. Serials UAA-101 through ZZZ-999 issued first, followed by AAA-101 through SZZ-999 as 1973–79 plates were invalidated, then (from 1988) all serials with I, O, Q and T as the first letter, and finally (from 1990) all remaining serials with I, O or Q as the second and/or third letters (beginning with AAI-101 and ending with ZZQ-999).<ref name="allaboutlicenseplatesVA"/>
+|-
+|[[File:1993 Virginia license plate, with June 1994 sticker.png|150px|]]
+|1993
+|Embossed dark blue serial on reflective white plate; "Virginia" screened in blue centered at top
+|rowspan="2"|''none''
+|rowspan="2"|{{nowrap|ABC-1234}}
+|ZZZ-9999 to approximately ZXX-1001
+|rowspan="2"|Serials progressed backwards, presumably due to the serials on the optional Scenic plate (see Optional plates below) progressing forward from AAA-1001.
+|-
+|[[File:Virginia license plate, 1993–2002 series with October 2002 sticker.png|150px]]
+|1993&nbsp;– June<br>2002
+|As above, but with state name in all capital letters
+|ZXW-9999 to XYN-1001
+|-
+|[[File:Virginia 2005 license plate JDL-8308.png|150px]]
+|July 1, 2002<ref>https://web.archive.org/web/20020803021608/http://www.dmv.state.va.us/webdoc/general/news/news.asp?id=2021</ref>&nbsp;– early<br>2003
+|Embossed dark blue serial on reflective white plate; "VIRGINIA" screened in blue centered at top
+|rowspan=2|"400th Anniversary" in red centered at bottom, with a red ship graphic between the two words, plus "1607" to the left and "2007" to the right
+|rowspan="2"|ABC-1234
+|Exclusively&nbsp;from JAA-1001 to JAX-9999; intermittently from JAY-1001 to JDL-9999
+|rowspan="2"|Issued in advance of the 400th anniversary of the founding of [[Jamestown, Virginia|Jamestown]], the first permanent English settlement in North America. Serials progressed forward from the start of the 'J' series (presumably for Jamestown). The slogan was originally printed on a white sticker, before it started to be screened directly onto the plate at around the JAM series.<ref name="allaboutlicenseplatesVA"/>
+|-
+|[[File:Virginian 2005 license plate.jpg|150px]]
+|October 2002&nbsp;– June<br>2006
+|As above, but with state name in red
+|Intermittently from JAY-1001 to JDL-9999; exclusively from JDM-1001 to KCW-9999
+|-
+|[[File:Virginia 2007 license plate KDD-5455.png|150px]]
+|June<br>2006&nbsp;– December 2007
+|Embossed dark blue serial on reflective white plate; "VIRGINIA" screened in red centered at top; Jamestown 400th Anniversary logo screened at bottom left and "2007" at bottom right
+|"JAMESTOWN" screened in blue and "AMERICA'S 400TH ANNIVERSARY" in red, both centered at bottom
+|ABC-1234
+|KCX-1001 to KNP-9999
+|
+|-
+|[[File:Virginia license plate, 1993–2002 series with October 2002 sticker.png|150px]]
+|January 2008&nbsp;– February 2014
+|rowspan="2"|Embossed dark blue serial on reflective white plate; "VIRGINIA" screened in blue centered at top
+|''none''
+|rowspan="2"|ABC-1234
+|XXP-9999 to approximately WLN-1001
+|Return to 1993 base. Serials progressed backwards as before. 'R' series reserved for rental vehicles.
+|-
+|[[File:Virginia 2016 License Plate.jpg|150px]]
+|March 2014&nbsp;– present
+|"[[Virginia is for Lovers|VIRGINIA IS FOR LOVERS]]" screened in black, plus a red heart for the second 'V', centered at bottom
+|VAA-1001 to VZZ-9950; UZZ-9950 to SUE-5647 {{small|(as of July 21, 2026)}}
+|Serials progressed forward through the 'V' series (presumably for Virginia), then backwards through the 'U', 'T', and now 'S' series.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Antique Vehicle
+|?
+|white on black aluminum with "ANTIQUE VEHICLE" and "VA." on right
+|1234; 12345; 1234A; A1234; 123AB; AB123
+|1001 to 99999; ?
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|?
+|blue on reflective yellow with blue screened state name
+|12345; 1234AB; AB1234
+|10001 to 99999; ? ; 1001DW to 9950DZ; 1001EV to 9950FA; 1001FE to 9950FE; 1001YM to 6250YM {{small|(as of May 3, 2026)}} 
+|-
+|[[File:1993 Virginia license plate 4 disabled person.jpg|150px]]
+|rowspan="4"|[[Disability|Disabled]] person
+|1993
+|blue on reflective white with blue screened state name
+|123456
+|100001 to approximately 340000
+|rowspan="4"|Embossed [[International Symbol of Access]] at left.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|same as 2006-2007 Jamestown base
+|12345 H/P
+|10001 H/P to approximately 47000 H/P
+|-
+|[[File:1993 Virginia license plate 4 disabled person.jpg|150px]]
+|2008
+|blue on reflective white with blue screened state name
+|123456
+|approximately 360000 to approximately 436000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2014
+|same as 2014- base
+|12345H; 1234'''D'''A
+|10001H to 99999H; 1001DA to 1577DT {{small|(as of January 11, 2026)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="5"|Motorcycle
+|1975
+|Embossed dark blue serial on non-reflective white plate with border line; "VA." embossed in blue centered at top
+|rowspan="3"|123456
+|1 to approximately 370000
+|rowspan="4"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1979
+|As above, but reflective
+|370001 to approximately 960000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|1992
+|rowspan="2"|As above, but without border line
+|960001 to 999999, then 10001 to 960000
+|-
+|2018
+|A12345<br />12345A
+|Z10001 to Z99999; W10001 to W99999; 10001W to 99999W
+|-
+|rowspan="1"|[[File:Blank License Plate Shape.svg|150px]]
+|2024
+|rowspan="1"|As above, but "VA" screened in blue centered at top
+|A12345
+|J10001 to J99999; N10001 to N55947 {{small|(as of January 11, 2026)}}
+|Design appears on some later 99999W serials
+|-
+|[[File:Virginia 1988 license plate TJ98-232.png|150px]]
+|rowspan="3"|Truck
+|1973
+|same as 1973 base
+|TA12-345, T/A 12-345, T/A 123-456
+|T/A 10-001 to approximately T/R 500-000
+|rowspan="3"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1993
+|same as 1994 base
+|T/A 12-345, T/A 123-456
+|Approximately T/T 10-001 to approximately T/X 320-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2020?
+|same as 2014 base, but reads "TRUCK" in red below
+|UA12-345
+|UA10-001 to UC92-731 {{small|(as of March 14, 2026)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Truck (Permanent)
+|1993
+|same as 1994 base
+|12-345 T/A
+|10-001 T/A to approximately 49-000 T/B
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2014
+|same as 2014 base, but reads "TRUCK PERMANENT" in red below
+|12-345UA
+|10-001UA to 64-241UA {{small|(as of January 11, 2026)}}
+|}
+
+===Government and exempt plates===
+
+{|class="wikitable"
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Local Government
+|
+|Embossed dark blue serial on reflective tan plate; on the top the plate reads "VIRGINIA" and on the bottom the plate reads "OFFICIAL LOCAL GOVERNMENT USE ONLY", with dark blue border.
+|{{nowrap|12-345'''L'''}}
+|10-001L to 99-999L
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|late 1990's
+|Embossed dark blue serial on reflective tan plate; on the top the plate reads "VIRGINIA" and on the bottom the plate reads "OFFICIAL LOCAL GOVERNMENT USE ONLY".
+|{{nowrap|123-456'''L'''}}
+|100-001L to 269-254L {{small|(as of March 23, 2026)}} 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Local Government – Motorcycle
+|
+|Embossed dark blue serial on reflective tan plate; on the top the plate reads "VIRGINIA" and on the bottom the plate reads "OFFICIAL LOCAL GOVERNMENT USE ONLY".
+|1234'''L'''
+|1000L to 2553L {{small|(as of March 23, 2026)}} 
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Government
+|
+|Embossed dark blue serial on reflective light blue plate; on the top the plate reads "VIRGINIA" and on the bottom the plate reads "OFFICIAL STATE USE ONLY".
+|{{nowrap|12-345'''S'''}}
+|10-001S to 86-960S {{small|(as of March 23, 2026)}} 
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|State Police
+|1993
+|Embossed dark blue serial on reflective white plate; on the top the plate reads "VIRGINIA" and on the bottom the plate reads "STATE POLICE", colored [[Virginia State Police]] badge to left
+|1234
+|1001 to approximately 6000
+|rowspan="3"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2016, 2024
+|Same as above, but blue and white VSP badge
+|1234
+|6000 to 8000; 8201 to 8734 {{small|(as of March 23, 2026)}} 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2022
+|Same as 1993 base, but with stacked S/P serials
+|S/P 1234
+|approximately S/P 8000 to approximately S/P 8200
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Police – Motorcycle
+|1993
+|Embossed dark blue serial on reflective white plate; on the top the plate reads "VIRGINIA" and on the bottom the plate reads "STATE POLICE", colored [[Virginia State Police]] badge to left
+|12, 123, 1234
+|
+|
+|}
+
+==Optional plates==
+Virginia offers 333 optional license plates.[https://www.dmv.virginia.gov/vehicles/license-plates/search] Most can be personalized for an additional fee. Listed below are the most popular of those available optionals.
+
+{|class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Autumn Leaves
+|May&nbsp;– October 1997
+|Embossed dark blue serial on reflective white plate; ten orange and yellow gradient [[Leaf|leaves]] behind serial; "Virginia" screened in black centered at top
+|rowspan="2"|1234-ABC
+|1000-AAA to approximately 9999-AAD
+|
+|-
+|[[File:Virginia 2002 license plate 7537-BAY.png|150px]]
+|October 1997&nbsp;– present
+|As above, but with leaves around edge of plate
+|1000-BAA to 8816-BBM {{small|(as of March 7, 2026)}}
+|Revised design introduced in response to visibility concerns surrounding the original design.<ref>{{cite news|last=Chernicky |first=David |date=September 23, 1997 |title=Autumn Leaves Fall Into Place On Plate |url=https://www.dailypress.com/1997/09/23/autumn-leaves-fall-into-place-on-plate/ |newspaper=[[Daily Press (Virginia)|Daily Press]] |location=Newport News |access-date=July 18, 2015}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Cardinal
+|?&nbsp;– present
+|Embossed dark blue serial on reflective graphic plate of the [[Northern cardinal]] on light blue field; "Virginia" screened in dark blue centered at top
+|AB-1234; 1234-AB
+|AA-1001 to ZZ-9950{{efn|Many prefixes skipped along the way.}}; AG-1001 to AK-9950; 1001-EA to 9950-EB; 1001-ZY to 9950-ZZ; BD-1001 to BE-2647 {{small|(as of March 7, 2026)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Chesapeake Bay
+|December 1992&nbsp;– present
+|Embossed dark blue serial on reflective light blue plate; graphic design including a [[crab]], [[seaweed]], and [[seashell|shell]]s near the bottom of the plate
+|'''CB'''-1234; '''C'''12345
+|C10001 to C95919 {{small|(as of March 23, 2026)}}
+|
+|-
+|[[File:1976 Virginia license plate 111 112.jpg|150px|]]
+|Independence Bicentennial
+|{{nowrap|1975–82}}
+|Embossed blue serial on reflective white plate with border line; blue bust of [[George Washington]] and thirteen red stars (representing the [[Thirteen Colonies|original colonies]]) screened in the center; "Virginia" and "1776 Independence Bicentennial 1976" screened in red centered at top and bottom respectively
+|123-456
+|100-001 to<br>500-000
+|Still currently revalidated.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Great Seal
+|1986&nbsp;– present
+|Embossed dark blue serial on reflective white background with Virginia state seal placed in center
+|{{nowrap|123 456}}
+|500 001 to 773 153 {{small|(as of March 6, 2026)}}
+|Continuation to Independence Bicentennial
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[George Washington]] [[wikt:bicentennial|Bicentennial]]
+|1999 to ?
+|Dark blue on [[Flag of the United States]] with image of Washington.
+|1234'''WB'''
+|1001WB to ?
+|Awarded "Plate of the Year" for best new license plate of 1999 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Virginia has been so honored.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|In God We Trust
+|?&nbsp;– present
+|Embossed dark blue serial on reflective graphic plate of the [[Flag of the United States|flag of the United States]] waving; "Virginia" screened in dark blue centered at top
+|1234AB; 123-45AB
+|100-01HM to 999-50HM; 100-01HZ to 133-67HZ {{small|(as of May 24, 2026)}}
+|HM, HZ, PZ, UZ, GD, TR suffixes used with 1234AB format. Currently, 123-45AB format issued using those same suffixes.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Patriot
+|May 1997&nbsp;– present
+|Similar to passenger base, but with Revolutionary War [[fifer]] graphic at right
+|123ABC
+|101AAA to 562AER {{small|(as of August 20, 2025)}}
+|
+|-
+|[[File:12-07-15-wikimania-wdc-by-RalfR-003.jpg|150px]]
+|Scenic (Mountain to Seashore)
+|July 1992&nbsp;– present
+|Embossed dark blue serial on reflective graphic plate with pale blue sky, light blue mountains, green fields, yellow sand and light blue sea; "VIRGINIA" screened in blue centered at top
+|{{nowrap|ABC-1234}}
+|AAB-1001 to AFC-9384 {{small|(as of May 24, 2026)}}
+|
+|}
+
+==Temporary plates==
+<gallery>
+Virginia temporary tags, 1989.png|1989
+</gallery>
+
+==Type codes==
+{{Incomplete list|date=June 2019}}
+The format for the majority of Virginia specialty license plates is 1234AB and AB1234. Below is a table with the prefixes and suffixes of all of the specialty license plates for Virginia.
+{|class="wikitable"
+!Code
+!Prefix
+!Suffix
+|-
+|AA
+|rowspan=11|[[Northern cardinal|cardinal]]
+|
+|-
+|AB
+|I'm Animal Friendly
+|-
+|AC
+|[[Averett University]]<br>(Averett College prior to 2001)
+|-
+|AD
+|Veteran — Armed Forces
+|-
+|AE
+|Virginia Aviation
+|-
+|AF
+|Veteran — Armed Forces
+|-
+|AG
+|Permanent Trailer — Airgas
+|-
+|AH
+|Antique (blue/yellow)
+|-
+|AJ	
+|
+|-
+|rowspan=2|AK
+|[[Alpha Kappa Alpha]]
+|-
+|Permanent Apportioned — Airgas
+|-
+|AL
+|Antique (blue/yellow)
+|[[September 11 attacks|Fight Terrorism]] (A/L)
+|-
+|AM
+|[[Texas A&M University]]
+|I'm Animal Friendly<br>[[National Air and Space Museum]]
+|-
+|AN
+|
+|Fight Terrorism (A/N)
+|-
+|rowspan=2|AP
+|[[Appalachian State University]]
+|rowspan=2|[[Alpha Phi Alpha]]
+|-
+|[[Appalachian Trail]]
+|-
+|AQ
+|Antique (blue/yellow)
+|Antique (blue/yellow)
+|-
+|AR
+|[[United States Army Reserve|Army Reserve]]<br>Virginia 250
+|Permanent Apportioned — Airgas
+|-
+|AS
+|
+|National Air and Space Museum
+|-
+|AT
+|Antique (blue/yellow)
+|Virginians for the Arts
+|-
+|AU
+|
+|[[Auburn University]]
+|-
+|AV
+|
+|rowspan=2 |Antique (blue/yellow)
+|-
+|AW
+|
+|-
+|AX
+|
+|[[Alexandria, Virginia|Alexandria]]
+|-
+|AY
+|
+|Antique (blue/yellow)
+|-
+|BA
+|
+|rowspan=2|Wildlife Conservationist − bass
+|-
+|BB
+|
+|-
+|BC
+|[[Bridgewater College]]
+|[[Breast Cancer]]
+|-
+|BD
+|rowspan=2|cardinal
+|Wildlife Conservationist − bear
+|-
+|BE
+|Protect Pollinators
+|-
+|rowspan=2|BF
+|[[Bluefield College]]
+|rowspan=2|[[Papilio glaucus|Tiger Swallowtail]] - State Insect
+|-
+|[[Blue Ridge Parkway]]
+|-
+|BG
+|
+|Airborne (173 ABN BDE Sky Soldiers)
+|-
+|BH
+|
+|Tiger Swallowtail - State Insect
+|-
+|BI
+|
+|Share the Road
+|-
+|BJ
+|
+|Wildlife Conservationist − bear
+|-
+|BN
+|cardinal
+|Wildlife Conservationist − bluebird
+|-
+|BP
+|
+|rowspan=2|Antique (blue/yellow)
+|-
+|BQ
+|
+|-
+|BR
+|[[Blue Ridge Community College (Virginia)|Blue Ridge Community College]]
+|Blue Ridge Parkway
+|-
+|BT
+|
+|Wildlife Conservationist − [[brook trout]]
+|-
+|BU
+|
+|[[BoatUS]]
+|-
+|rowspan=2|BV
+|rowspan=2|cardinal
+|Friends of the Blue Ridge
+|-
+|Blue Ridge Parkway
+|-
+|BW
+|
+|[[Bowling|Bowler]]
+|-
+|BX
+|cardinal
+|Antique (blue/yellow)
+|-
+|BZ
+|[[Bronze Star Medal|Bronze Star]]
+|Bronze Star - Valor
+|-
+|CA
+|
+|Virginia Breast Cancer Foundation
+|-
+|CB
+|[[Chesapeake Bay]]
+|
+|-
+|rowspan=2|CC
+|rowspan=2|[[Patrick Henry Community College]]
+|Commonwealth College
+|-
+|Cure Childhood Cancer
+|-
+|CD
+|
+|I'm Animal Friendly
+|-
+|CF
+|cardinal
+|Clean Special Fuel
+|-
+|CG
+|[[United States Coast Guard Auxiliary]] (C/G)
+|[[U.S. Coast Guard]]
+|-
+|CH
+|
+|[[Chesterfield County, Virginia|Chesterfield County]]
+|-
+|CI
+|[[The Citadel]]
+|[[AFL-CIO]]
+|-
+|CJ
+|
+|[[Norfolk and Western Railway class J (1941)|Virginia Railway Heritage]]
+|-
+|CK
+|
+|[[Chesapeake, Virginia|Chesapeake City]]
+|-
+|rowspan="2"|CL
+|rowspan="2"|
+|[[USS Cole bombing|Remember the USS Cole]]
+|-
+|[[Choose Life license plates|Choose Life]]
+|-
+|CM
+|
+|[[Friends of Coal]]
+|-
+|CN
+|[[Christopher Newport University]]
+|Combat Infantryman
+|-
+|CP
+|Virginia Society of CPAs
+|[[Washington Capitals]]
+|-
+|CR
+|
+|Credit Unions
+|-
+|CT
+|Clean Special Fuel
+|
+|-
+|CU
+|
+|[[Clemson University]]
+|-
+|CV
+|[[University of Virginia's College at Wise]]
+|[[Sons of Confederate Veterans]]
+|-
+|CW
+|
+|[[Colonial Williamsburg]]
+|-
+|CX
+|cardinal
+|rowspan=3|Clean Special Fuel
+|-
+|CY
+|Clean Special Fuel
+|-
+|CZ
+|cardinal
+|-
+|DA
+|Drive-Away (D/A)
+|Disabled Person
+|-
+|DB
+|
+|Drive Out [[Diabetes]]
+|-
+|DC
+|[[Danville Community College]]
+|I'm Animal Friendly
+|-
+|DE
+|
+|Disabled Person
+|-
+|DF
+|
+|[[Distinguished Flying Cross (United States)|Distinguished Flying Cross]]
+|-
+|DG
+|
+|rowspan=3|Disabled Person
+|-
+|DH
+|
+|-
+|DJ
+|
+|-
+|DK
+|
+|[[Duke University]]
+|-
+|DL
+|cardinal
+|[[Dabney S. Lancaster Community College]]
+|-
+|DN
+|
+|rowspan=2|Disabled Person
+|-
+|DP
+|cardinal
+|-
+|DR
+|
+|Drive Smart
+|-
+|DS
+|colspan=2|[[Delta Sigma Theta]]
+|-
+|rowspan=2|DT
+|rowspan=2|
+|[[Don't Tread On Me]]
+|-
+|Disabled Person
+|-
+|DU
+|
+|[[Ducks Unlimited]]
+|-
+|DV
+|Disabled Veteran (D/V)
+|
+|-
+|DW
+|
+|rowspan=4|Antique (blue/yellow)
+|-
+|DX
+|rowspan=2|cardinal
+|-
+|DY
+|-
+|DZ
+|
+|-
+|EA
+|
+|cardinal
+|-
+|EB
+|
+|Protect Pollinators
+|-
+|EC
+|Lineman
+|[[East Carolina University]]
+|-
+|ED
+|
+|Education Begins at Home
+|-
+|EE
+|
+|[[Mountain Empire Community College]]
+|-
+|EF
+|
+|[[Enduring Freedom]] Veteran
+|-
+|EG
+|
+|rowspan=2|Wildlife Conservationist − [[bald eagle]]
+|-
+|EH
+|[[Emory and Henry University]]
+|-
+|EJ
+|cardinal
+|
+|-
+|EL
+|
+|[[Elon College]]
+|-
+|EM
+|
+|[[Eastern Mennonite University]]<br>Emergency Vehicle
+|-
+|EN
+|rowspan=2|cardinal
+|
+|-
+|EP
+|
+|-
+|EQ
+|Equipment (E/Q)
+|
+|-
+|ER
+|[[Germanna Community College]]
+|
+|-
+|ES
+|
+|rowspan=2|[[Eastern Shore of Virginia|Eastern Shore]]
+|-
+|ET
+|
+|-
+|EU
+|cardinal
+|
+|-
+|rowspan=2|EV
+|[[Eastern Virginia Medical School]]
+|rowspan=2|Emergency Vehicle
+|-
+|Emergency Vehicle
+|-
+|EW
+|cardinal
+|
+|-
+|EX
+|
+|rowspan=4|Antique (blue/yellow)
+|-
+|EY
+|cardinal
+|-
+|EZ
+|
+|-
+|FA
+|
+|-
+|FB
+|Franchised Motorcycle Dealer (F/B)
+|Tiger Swallowtail - State Insect
+|-
+|FC
+|[[Ferrum College]]
+|
+|-
+|FD
+|Firefighter
+|Fight Terrorism (F/D)
+|-
+|FE
+|
+|Antique (blue/yellow)
+|-
+|FG
+|rowspan=2|cardinal
+|Virginia Farms
+|-
+|FH
+|
+|-
+|FJ
+|
+|Wildflowers
+|-
+|FK
+|cardinal
+|
+|-
+|FL
+|
+|Wildflowers
+|-
+|FM
+|Franchised Motor Home Dealer
+|
+|-
+|FP
+|[[Fraternal Order of Police]]
+|
+|-
+|FR
+|
+|Fight Terrorism (F/R)
+|-
+|FS
+|
+|[[Florida State University]]
+|-
+|FT
+|Franchised Trailer Dealer (F/T)
+|Fight Terrorism (F/T)
+|-
+|FV
+|Farm Use Vehicle
+|
+|-
+|rowspan=2|FW
+|rowspan=2|
+|Fight Terrorism (F/W) (motorcycle)
+|-
+|[[Veterans of Foreign Wars]]
+|-
+|FX
+|[[Fairfax, Virginia|Fairfax]]
+|Foxhunting
+|-
+|FY
+|rowspan=3|cardinal
+|[[Iraq War|Iraqi Freedom]] Veteran
+|-
+|FZ
+|Wildflowers
+|-
+|GA
+|[[Greyhound]] Adoption
+|-
+|GB
+|
+|Tiger Swallowtail - State Insect
+|-
+|GD
+|
+|In God We Trust
+|-
+|GL
+|[[Freemasonry|Freemason]]
+|
+|-
+|GM
+|[[George Mason University]]
+|George Mason Patriots
+|-
+|GO
+|
+|[[U.S. Army]]
+|-
+|GS
+|
+|[[5/16 inch star|Gold Star]] (G/S)
+|-
+|rowspan=2|GT
+|rowspan=2|
+|[[Georgia Tech]]
+|-
+|Virginia Tech University — Go Hokies
+|-
+|GU
+|[[Georgetown University]]
+|
+|-
+|GV
+|cardinal
+|Stop Gun Violence
+|-
+|GW
+|
+|[[George Washington University]]
+|-
+|GX
+|cardinal
+|
+|-
+|HA
+|Truck For Hire (H/A)
+|Virginia Children's Trust Fund — Hand
+|-
+|HB
+|
+|Tiger Swallowtail - State Insect
+|-
+|HC
+|
+|[[Hollins University]]<br>(Hollins College prior to 1998)
+|-
+|HD
+|
+|[[Harley Owners Group]]
+|-
+|HE
+|
+|Horse Enthusiast
+|-
+|HF
+|
+|Harley Owners Group
+|-
+|HI
+|
+|[[Ohio State University]]
+|-
+|HJ
+|
+|Horse Enthusiast
+|-
+|HK
+|
+|[[Virginia Tech]] — Go Hokies
+|-
+|HM
+|
+|[[In God We Trust]]
+|-
+|HN
+|
+|Horse Enthusiast
+|-
+|HP
+|colspan=2|Handicapped (H/P)
+|-
+|HQ
+|Manufacturer (H/Q)
+|
+|-
+|HS
+|
+|[[Hampden–Sydney College]]
+|-
+|HT
+|
+|Virginia Children's Trust Fund — Heart
+|-
+|HU
+|
+|[[Hampton University]]
+|-
+|HV
+|
+|Horse Enthusiast
+|-
+|HZ
+|
+|In God We Trust
+|-
+|IC
+|
+|Internet Capital
+|-
+|ID
+|colspan=2|Independent Dealer
+|-
+|JB
+|
+|Parrotheads
+|-
+|JC
+|
+|[[Jefferson College of Health Sciences]]
+|-
+|JD
+|
+|Parrotheads
+|-
+|JM
+|[[James Madison University]] — Seal
+|James Madison University — Athletics
+|-
+|JR
+|
+|[[James River]] Park System
+|-
+|JS
+|
+|[[J. Sargeant Reynolds Community College|J. S. Reynolds Community College]]
+|-
+|JT
+|[[Brightpoint Community College|John Tyler Community College]]
+|
+|-
+|JV
+|rowspan=3|cardinal
+|
+|-
+|JX
+|
+|-
+|JY
+|
+|-
+|KC
+|[[Knights of Columbus]]
+|
+|-
+|KD
+|
+|Virginia Kids Eat Free
+|-
+|KE
+|cardinal
+|
+|-
+|KF
+|
+|rowspan=3|Kids First
+|-
+|KG
+|
+|-
+|KH
+|
+|-
+|KM
+|rowspan=3|cardinal
+|
+|-
+|KN
+|
+|-
+|KP
+|
+|-
+|KV
+|Korean War Veteran
+|
+|-
+|KW
+|
+|Eyes on the Road
+|-
+|KX
+|rowspan=2|cardinal
+|
+|-
+|KY
+|
+|-
+|LA
+|
+|Lighthouses
+|-
+|LB
+|
+|[[Liberty University]]
+|-
+|LC
+|
+|[[University of Lynchburg|Lynchburg College]]
+|-
+|LD
+|
+|Lighthouses
+|-
+|LE
+|
+|[[Robert E. Lee|General Robert E. Lee]]
+|-
+|LF
+|
+|rowspan=2|Lighthouses
+|-
+|LG
+|
+|-
+|rowspan=2|LH
+|rowspan=2|
+|[[Alzheimer's Association]]
+|-
+|rowspan=5|Lighthouses
+|-
+|LI
+|
+|-
+|LJ
+|
+|-
+|LK
+|
+|-
+|LM
+|
+|-
+|LN
+|
+|[[Legion of Merit]]
+|-
+|LP
+|
+|Lighthouses
+|-
+|LR
+|
+|[[NASA Langley Research Center]]
+|-
+|LT
+|
+|Lighthouses
+|-
+|LU
+|
+|[[Liberty University]]
+|-
+|LV
+|Lions of Virginia
+|Choose Life
+|-
+|LW
+|[[Longwood University]]
+|Police - Heroes Live Forever
+|-
+|LX
+|rowspan=3|cardinal
+|[[Lord Fairfax Community College]]
+|-
+|LY
+|Low-Speed Vehicle
+|-
+|LZ
+|
+|-
+|MA
+|Military Assault Force
+|Lighthouses
+|-
+|rowspan=2|MC
+|rowspan=2|
+|[[Virginia Commonwealth University]] — Seal
+|-
+|United We Stand
+|-
+|MD
+|Air Medal
+|
+|-
+|ME
+|
+|rowspan=2|Lighthouses
+|-
+|MG
+|
+|-
+|MH
+|cardinal
+|[[University of Michigan]]
+|-
+|MI
+|
+|Lighthouses
+|-
+|ML
+|
+|[[Marine Corps League]]
+|-
+|MM
+|
+|Meg's Miles
+|-
+|MN
+|
+|[[United States Marine Corps|US Marine Corps]]
+|-
+|MO
+|
+|Move Over
+|-
+|MP
+|cardinal
+|
+|-
+|rowspan=2|MR
+|rowspan=2|
+|Lighthouses
+|-
+|US Marine Corps
+|-
+|MS
+|
+|[[Marshall University]]
+|-
+|MU
+|rowspan=2|cardinal
+|[[Marymount University]]
+|-
+|MV
+|Move Over
+|-
+|MW
+|[[University of Mary Washington]]
+|
+|-
+|MX
+|cardinal
+|
+|-
+|MY
+|
+|Support Our Troops
+|-
+|MZ
+|cardinal
+|
+|-
+|NA
+|[[United States Naval Academy]]
+|[[Naval Air Station Oceana|Oceana Naval Air Station]]
+|-
+|NB
+|
+|[[Natural Bridge (Virginia)|Natural Bridge]]
+|-
+|NC
+|cardinal
+|
+|-
+|ND
+|colspan=2|[[University of Notre Dame]]
+|-
+|NE
+|
+|Natural Bridge
+|-
+|NF
+|
+|Nurses
+|-
+|NH
+|rowspan=5|cardinal
+|
+|-
+|NJ
+|[[Rutgers University]]
+|-
+|NK
+|
+|-
+|NL
+|Donate Life
+|-
+|NN
+|[[Northern Neck]]
+|-
+|NR
+|[[United States Navy Reserve|Naval Reserve]]
+|[[National Rifle Association]]
+|-
+|NS
+|[[Norfolk State University]]
+|[[Newport News Shipbuilding]]
+|-
+|NT
+|Christopher Newport University
+|[[Washington Nationals]]
+|-
+|NU
+|
+|[[North Carolina State University]]
+|-
+|NV
+|[[Northern Virginia Community College]]
+|Naval Aviator
+|-
+|NX
+|rowspan=3|cardinal
+|
+|-
+|NY
+|[[United States Navy]]
+|-
+|NZ
+|
+|-
+|OD
+|[[Old Dominion University]]
+|
+|-
+|PC
+|[[Paul D. Camp Community College]]
+|Peace Begins at Home
+|-
+|PD
+|
+|Fight Terrorism (P/D)
+|-
+|PE
+|
+|Permanent Apportioned — Penske
+|-
+|PF
+|colspan=2|Professional Firefighter
+|-
+|PG
+|
+|[[Gulf War|Operation Desert Shield/Storm]] Veteran
+|-
+|PH
+|[[Purple Heart]]
+|[[Attack on Pearl Harbor|Pearl Harbor]] Survivor<br>Parrotheads
+|-
+|PK
+|rowspan=2|cardinal
+|Permanent Apportioned — Penske
+|-
+|PL
+|
+|-
+|PN
+|rowspan=2|[[Poquoson, Virginia|Poquoson]]
+|-
+|PO
+|
+|-
+|PR
+|
+|Professional Firefighter
+|-
+|PS
+|[[Pennsylvania State University|Penn State University]]
+|Peace (Dove)<br>Virginia Community Peacebuilding
+|-
+|PT
+|
+|Fight Terrorism (P/T)
+|-
+|PV
+|[[Carpool|Ride-Sharing]]
+|[[Piedmont Virginia Community College]]
+|-
+|PZ
+|
+|In God We Trust
+|-
+|QQ
+|[[Omega Psi Phi]]
+|
+|-
+|RA
+|rowspan=2|Rental Truck (stacked)
+|#TeamTommie
+|-
+|RB
+|
+|-
+|RD
+|
+|[[Washington Redskins]]
+|-
+|rowspan=2|RE
+|rowspan=2|
+|Lighthouses
+|-
+|[[Regent University]]
+|-
+|RM
+|
+|[[Randolph–Macon College]] — Seal
+|-
+|RN
+|
+|[[Ruritan]] National
+|-
+|RP
+|
+|[[Richmond Planet]]
+|-
+|RS
+|Rescue Squad
+|Fight Terrorism (R/S)
+|-
+|RU
+|
+|[[Radford University]]
+|-
+|RW
+|
+|Randolph College<br>(Randolph-Macon Woman's College prior to 2007)
+|-
+|RY
+|
+|[[Rotary International]]
+|-sr
+|SA
+|Bronze Star − Two Awards
+|Wildlife Conservationist − Red Salamander
+|-
+|SB
+|cardinal
+|[[Sweet Briar College]]
+|-
+|SC
+|
+|[[University of South Carolina]]
+|-
+|SE
+|Protect Sea Life
+|
+|-
+|SF
+|US Marine Corps
+|[[Surfrider Foundation]]
+|-
+|SJ
+|
+|[[Shenandoah National Park]]
+|-
+|SK
+|cardinal
+|
+|-
+|rowspan=2|SL
+|Protect Sea Life
+|rowspan=2|U.S. Army
+|-
+|Silver Star
+|-
+|SM
+|
+|[[Smith Mountain Lake]]
+|-
+|SN
+|
+|Shenandoah National Park
+|-
+|SP
+|[[Virginia State Police|State Police]] (S/P)
+|[[Special Forces Association]]<br>Shenandoah National Park
+|-
+|SR
+|Street Rod
+|Shriner
+|-
+|ST
+|
+|Virginia Children's Trust Fund — Star
+|-
+|SU
+|
+|[[Shenandoah University]]
+|-
+|SV
+|
+|Shenandoah National Park
+|-
+|SY
+|cardinal
+|
+|-
+|TA
+|rowspan=3|Power Unit Truck
+|
+|-
+|TB
+|
+|-
+|TC
+|
+|-
+|TD
+|Power Unit Truck (T/D)
+|[[Tidewater Community College]]
+|-
+|TE
+|Power Unit Truck (T/E)
+|Don't Tread on Me
+|-
+|TF
+|Power Unit Truck (T/F)
+|
+|-
+|TG
+|Power Unit Truck (T/G)
+|Don't Tread on Me
+|-
+|TH
+|Truck For Hire
+|[[Tobacco]] Heritage
+|-
+|TI
+|
+|Friends of Tibet
+|-
+|TJ
+|Power Unit Truck (T/J)
+|Don't Tread on Me
+|-
+|TK
+|Power Unit Truck (T/K)
+|Wildlife Conservationist − turkey
+|-
+|TL
+|Power Unit Truck (T/L)
+|
+|-
+|TM
+|Power Unit Truck (T/M)
+|Don't Tread on Me
+|-
+|rowspan=2|TN
+|rowspan=2|Power Unit Truck (T/N)
+|[[3rd Infantry Regiment (United States)|3rd U.S. Infantry Regiment (The Old Guard)]]
+|-
+|[[University of Tennessee]]
+|-
+|TP
+|Power Unit Truck (T/P)
+|Don't Tread on Me
+|-
+|TR
+|Private Trailer
+|Don't Tread on Me<br>In God We Trust
+|-
+|TS
+|Power Unit Truck (T/S)
+|Don't Tread on Me
+|-
+|TT
+|Power Unit Truck (T/T)
+|
+|-
+|TU
+|Power Unit Truck (T/U)
+|Don't Tread on Me
+|-
+|TV
+|Power Unit Truck (T/V)
+|Virginia Tech - VT
+|-
+|TW
+|Power Unit Truck (T/W)
+|Tow Truck
+|-
+|TX
+|Power Unit Truck (T/X)
+|Don't Tread on Me
+|-
+|TY
+|
+|[[College of William & Mary]] — Athletics
+|-
+|TZ
+|[[Virginia Tech]] — Mountains
+|Tow Truck
+|-
+|UA
+|cardinal
+|Unlocking Autism
+|-
+|UB
+|
+|[[War of 1812]]
+|-
+|UD
+|
+|Used Car Dealer (U/D)
+|-
+|UE
+|cardinal
+|Don't Tread on Me
+|-
+|UF
+|
+|[[University of Florida]]
+|-
+|UG
+|cardinal
+|rowspan=3|Don't Tread on Me
+|-
+|UH
+|
+|-
+|UJ
+|rowspan=4|cardinal
+|-
+|UK
+|
+|-
+|UL
+|Don't Tread on Me
+|-
+|UM
+|[[University of Maryland]]
+|-
+|UN
+|
+|[[University of North Carolina]]
+|-
+|UP
+|cardinal
+|United We Stand
+|-
+|UQ
+|
+|Don't Tread on Me
+|-
+|UR
+|[[University of Richmond]] — Spider
+|[[University of Richmond]] — Crest
+|-
+|US
+|
+|United We Stand
+|-
+|UT
+|Private Trailer (U/T)
+|rowspan=2|Don't Tread on Me
+|-
+|UU
+|cardinal
+|-
+|UV
+|[[University of Virginia]] — Rotunda
+|[[University of Virginia]]
+|-
+|rowspan=2|UW
+|rowspan=5|cardinal
+|United We Stand
+|-
+|United We Stand (U/W) (motorcycle)
+|-
+|UX
+|rowspan=2|Don't Tread on Me
+|-
+|UY
+|-
+|UZ
+|In God We Trust
+|-
+|VA
+|
+|Rotary International
+|-
+|VB
+|colspan=2|[[Virginia Beach, Virginia|Virginia Beach]]
+|-
+|VC
+|Virginia Commonwealth University — Ram
+|
+|-
+|VE
+|cardinal
+|
+|-
+|VF
+|
+|rowspan=2|Disabled Veteran
+|-
+|VG
+|cardinal
+|-
+|VH
+|[[Virginia Highlands Community College]]
+|Virginia Tech - VT
+|-
+|VI
+|
+|Virginia Railway Heritage
+|-
+|VJ
+|cardinal
+|
+|-
+|VK
+|
+|rowspan=4|Disabled Veteran
+|-
+|VL
+|
+|-
+|VM
+|[[Virginia Military Institute]]
+|-
+|VN
+|
+|-
+|VP
+|State Parks
+|Virginia Tech - Mountains
+|-
+|VR
+|cardinal
+|Virginia Realtors
+|-
+|VS
+|[[Virginia State University]] — Trojan
+|Veteran — Armed Forces
+|-
+|rowspan=2|VT
+|rowspan=2|[[Virginia Tech]] — Seal
+|[[Iraq War|Iraqi Freedom]] Veteran
+|-
+|Virginia Tech — Hokie Bird
+|-
+|VU
+|[[Villanova University]]
+|[[Virginia Union University]]
+|-
+|VV
+|[[Vietnam Veterans of America]]
+|Vietnam Veteran
+|-
+|VW
+|[[Virginia Wesleyan University]]
+|
+|-
+|VX
+|rowspan=3|cardinal
+|[[University of Virginia]] — Sabre
+|-
+|VY
+|
+|-
+|VZ
+|
+|-
+|rowspan=2|WA
+|rowspan=2|
+|Washington Redskins
+|-
+|rowspan=2|[[Williamsburg, Virginia|Williamsburg]] 300th Anniversary
+|-
+|rowspan=2|WB
+|rowspan=2|
+|-
+|[[George Washington]] Bicentennial
+|-
+|WD
+|cardinal
+|Wildlife Conservationist − [[white-tailed deer]]
+|-
+|WF
+|
+|[[Wallops Flight Facility]]
+|-
+|WG
+|
+|Williamsburg 300th Anniversary
+|-
+|WH
+|cardinal
+|
+|-
+|WJ
+|
+|Wildlife Conservationist − white-tailed deer
+|-
+|WK
+|cardinal
+|
+|-
+|WL
+|[[Washington and Lee University]]
+|Wildlife Conservationist − [[mallard]]
+|-
+|WM
+|[[College of William & Mary]]
+|
+|-
+|WN
+|cardinal
+|
+|-
+|WP
+|[[United States Military Academy]]
+|
+|-
+|WS
+|
+|Wildlife Conservationist - eagle
+|-
+|WT
+|colspan=2|Tow Truck
+|-
+|WV
+|cardinal
+|[[West Virginia University]]<br>Women Veterans
+|-
+|WW
+|
+|[[World War II]] Veteran
+|-
+|WX
+|rowspan=3|cardinal
+|
+|-
+|WY
+|
+|-
+|WZ
+|
+|-
+|XA
+|For Hire Tractor (X/A)
+|rowspan=21|Don't Tread on Me
+|-
+|XB
+|
+|-
+|XC
+|
+|-
+|XD
+|
+|-
+|XE
+|
+|-
+|XF
+|
+|-
+|XG
+|
+|-
+|XH
+|
+|-
+|XJ
+|
+|-
+|XK
+|
+|-
+|XL
+|
+|-
+|XM
+|
+|-
+|XN
+|
+|-
+|XP
+|
+|-
+|XR
+|
+|-
+|XS
+|
+|-
+|XT
+|
+|-
+|XU
+|
+|-
+|XV
+|
+|-
+|XW
+|
+|-
+|XX
+|
+|-
+|YA
+|Power Unit Tractor (Y/A)
+|
+|-
+|YH
+|Tractor For Hire
+|
+|-
+|YJ
+|
+|Randolph–Macon College — Athletics
+|-
+|YM
+|
+|rowspan=2|Antique (blue/yellow)
+|-
+|YN
+|
+|-
+|ZA
+|rowspan=23|cardinal
+|Permanent Trailer — Small (Z/A)
+|-
+|ZB
+|
+|-
+|ZC
+|
+|-
+|ZD
+|Permanent Trailer — Small (Z/D)
+|-
+|ZE
+|Permanent Trailer — Small (Z/E)
+|-
+|ZF
+|
+|-
+|ZG
+|
+|-
+|ZH
+|Permanent Trailer — Small (Z/H)
+|-
+|ZJ
+|
+|-
+|ZK
+|
+|-
+|ZL
+|Permanent Trailer — Small (Z/L)
+|-
+|ZM
+|Permanent Trailer — Small (Z/M)
+|-
+|ZN
+|
+|-
+|ZP
+|
+|-
+|ZR
+| Permanent Trailer — Small (Z/R)
+|-
+|ZS
+|
+|-
+|ZT
+|Permanent Trailer — Small (Z/T)
+|-
+|ZU
+|Permanent Trailer — Small (Z/U)
+|-
+|ZV
+|
+|-
+|ZW
+|Permanent Trailer — Small (Z/W)
+|-
+|ZX
+|
+|-
+|ZY
+|rowspan=2|cardinal
+|-
+|ZZ
+|}
+
+==Notes==
+{{notelist}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*[https://www.15q.net/va.html Virginian license plates, 1969−present]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Virginia}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Virginia}}
+[[Category:Vehicle registration plates of the United States by state or territory|Virginia]]
+[[Category:Transportation in Virginia]]
+[[Category:Virginia transportation-related lists]]

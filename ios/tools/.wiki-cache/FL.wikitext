@@ -1,0 +1,2867 @@
+{{short description|Florida vehicle license plates}}
+{{redirect|Florida plates|the Pencey Prep song|Heartbreak in Stereo}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Florida License Plate 2026-present.jpg
+| caption = Current orange blossom license plate without county designator
+| nickname = 
+| slogan_label = Slogan
+| slogan = County name<br>Sunshine State<br>[[In God We Trust]]
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC D12<br>A12 3BC<br>12A BCD<br>123 4AB<br>AB1 2CD<br>A12 34B<br>ABC 123
+| current_start_date = {{Start date|2026|2}}
+| designer = 
+| issuer = [[Florida Department of Highway Safety and Motor Vehicles]]
+| manufacturer = 
+| start_date = {{Start date|1918|01|01}}<br>(pre-state plates from 1905 to December 31, 1917)
+}}
+The U.S. state of [[Florida]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plates]] for display until 1918, when the state began to issue plates, becoming the last of the contiguous 48 states to do so.<ref>{{cite web |title=Old Florida License Plates |url=http://leatherlicenseplates.com/old-florida-license-plates-vintage-florida-license-plates/ |publisher=LeatherLicensePlates.com |access-date=July 29, 2017 |archive-date=July 29, 2017 |archive-url=https://web.archive.org/web/20170729224427/http://leatherlicenseplates.com/old-florida-license-plates-vintage-florida-license-plates/ |url-status=dead }}</ref><ref name="Simpers">{{cite web |last=Simpers |first=M. R. |date=September 18, 2015 |title=Florida License Plates |url=https://antiqueautomobileclubofcapecanaveral.wildapricot.org/Resources/Documents/FloridaLicensePlates%2018Sept2015.pdf |publisher=Antique Automobile Club of Cape Canaveral |access-date=July 29, 2017 }}{{Dead link|date=November 2025 |bot=InternetArchiveBot }}</ref>
+
+Plates are currently issued by the [[Florida Department of Highway Safety and Motor Vehicles]]. Only rear plates have been required since 1922 (with the exception of large trucks, which require both front and rear plates).
+
+==Passenger baseplates==
+===1918 to 1974===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Florida license plate that complied with these standards.
+[[File:Wall of license plates in Florida.jpg|thumb|right|A collection of Florida license plates on the wall.]]
+
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format(s)
+!Serials issued
+!Notes
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:black;">No image</div>
+|1918
+|White serial on black flat metal plate; vertical "1918" and "FLA" at left and right respectively
+|''none''
+|12345-''A''
+|Coded by horsepower class (''A'')
+|Horsepower classes were B (25&nbsp;hp and under), C (26-40&nbsp;hp) and D (41-60&nbsp;hp).
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:black; font-size:20pt; background:orange;">No image</div>
+|1919
+|Embossed black serial on orange plate with border line; "FLA 1919" at right
+|''none''
+|12345-''A''
+|Coded by horsepower class (''A'')
+|Horsepower classes were B (22&nbsp;hp and under), C (23-27&nbsp;hp), D (28-35&nbsp;hp) and E (36&nbsp;hp and over). This continued through 1921.<ref name="allaboutlicenseplatesFL">{{cite web |last=Tanner |first=Eric N. |title=Florida Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Florida&code=fl |publisher=allaboutlicenseplates.com |access-date=November 18, 2020}}</ref>
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:red; font-size:20pt; background:gray;">No image</div>
+|1920
+|Embossed red serial on gray plate with border line; "FLA 20" at left
+|''none''
+|''A''-12345
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1921 Florida license plate.jpg|150px]]
+|1921
+|Embossed white serial on brown plate with border line; "FLA 21" at right
+|''none''
+|12345-''A''
+|Coded by horsepower class (''A'')
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:green;">C-12-345</div>
+|1922
+|Embossed white serial on green plate with border line; vertical "FLA" and "22" at right; vehicle weight on aluminum tab at bottom left
+|''none''
+|'''C'''-12-345
+|C-1 to approximately C-94-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:orange; font-size:20pt; background:darkblue;">No image</div>
+|1923
+|Embossed orange serial on dark blue plate with border line; state outline at right with "FLA 23" below; vehicle weight on aluminum tab at bottom left
+|''none''
+|123-456-'''C'''
+|1-C to approximately 123-000-C
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:18pt; background:black;">123-456-C</div>
+|1924
+|Embossed white serial on black plate with border line; state outline at right with "FLA 24" below; vehicle weight on aluminum tab at bottom left
+|''none''
+|123-456-'''C'''
+|1-C to approximately 156-000-C
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:orange; font-size:18pt; background:green;">123-456-C</div>
+|1925
+|Embossed orange serial on green plate with border line; "FLA" within state outline at right with "25" below; vehicle weight on aluminum tab at bottom left
+|''none''
+|123-456-'''C'''
+|1-C to approximately 250-000-C
+|
+|-
+|[[File:1926 Florida License Plate.jpg|150px]]
+|1926
+|Embossed yellow serial on black plate with border line; "FLA" within state outline at right with "26" below
+|''none''
+|123-456-'''C'''
+|1-C to approximately 491-000-C
+|
+|-
+|[[File:1927 Florida license plate.JPG|150px]]
+|1927
+|Embossed white serial on black plate with border line; "FLORIDA-27" centered at bottom
+|''none''
+|123-456-'''C'''
+|1-C to approximately 409-000-C
+|First use of the full state name.
+|-
+|[[File:1928 Florida license plate.png|150px]]
+|1928
+|Embossed yellow serial on maroon plate with border line; "1928 FLORIDA" at bottom
+|''none''
+|123-456-'''C'''
+|1-C to approximately 391-000-C
+|
+|-
+|[[File:1929 Florida License Plate.png|150px]]
+|1929
+|Embossed yellow serial on dark blue plate with border line; "19-FLORIDA-29" at bottom
+|''none''
+|'''C'''-123-456
+|C-1 to approximately C-321-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:darkgreen;">123-456</div>
+|1930
+|Embossed white serial on dark green plate with border line; "FLORIDA–1930" at bottom
+|''none''
+|123-456
+|1 to approximately 324–000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:maroon;">123-456</div>
+|1931
+|Embossed white serial on maroon plate with border line; "1931–FLORIDA" at bottom
+|''none''
+|123-456
+|1 to approximately 313–000
+|
+|-
+|rowspan="2"|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:orange; font-size:20pt; background:black;">No image</div>
+|rowspan="2"|1932
+|rowspan="2"|Embossed orange serial on black plate with border line; "FLORIDA–1932" at bottom
+|rowspan="2"|''none''
+|123-456
+|1 to approximately 288–000
+|rowspan="2"|First use of weight classes: all-numeric serials were used for vehicles weighing 3,000&nbsp;lb and under, and serials with D prefixes for vehicles 3,001&nbsp;lb and over.<ref name="allaboutlicenseplatesFL"/>
+|-
+|'''D'''12-345
+|D1 to approximately D75-000
+|-
+|rowspan="2"|[[File:1933 Florida license plate.jpg|150px]]
+|rowspan="2"|1933
+|rowspan="2"|Embossed black serial on orange plate with border line; "1933–FLORIDA" at bottom
+|rowspan="2"|''none''
+|123-456
+|1 to approximately 235–000
+|rowspan="2"|Weight classes same as 1932, but with D used as a suffix instead of a prefix.
+|-
+|12-345'''D'''
+|1D to approximately 58-000D
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:black;">No image</div>
+|1934
+|Embossed white serial on black plate with border line; "FLA." centered at top; weight class letter and "34" stamped on locking bar, displayed to left and right of state abbreviation respectively
+|''none''
+|'''T'''12-345<br>123-456<br>'''D'''12-345<br>'''W''' 1–234
+|Coded by weight class
+|Weight classes were as follows: T (2,050&nbsp;lb and under), no letter (2,051 to 3,050&nbsp;lb), D (3,051 to 4,050&nbsp;lb) and W (4,051&nbsp;lb and over). This continued through 1941.<ref name="allaboutlicenseplatesFL"/>
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:black; font-size:20pt; background:yellow;">No image</div>
+|1935
+|Embossed black serial on yellow plate with border line; "FLA." centered at top; weight class letter and "35" stamped on locking bar, displayed to left and right of state abbreviation respectively
+|''none''
+|'''T'''12-345<br>123-456<br>'''D'''12-345<br>'''W'''12-345
+|Coded by weight class
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:red;">No image</div>
+|1936
+|Embossed white serial on red plate with border line; "FLORIDA 1936" at top
+|''none''
+|'''T'''12-345<br>123-456<br>'''D'''12-345<br>'''W'''12-345
+|Coded by weight class
+|
+|-
+|[[File:1937 Florida license plate.JPG|150px]]
+|1937
+|Embossed white serial on green plate with border line; "1937 FLORIDA" at top
+|''none''
+|12-345'''T'''<br>123-456<br>12-345'''D'''<br>1-234 '''W''' 
+|Coded by weight class
+|
+|-
+|[[File:1938Florida license plate.JPG|150px]]
+|1938
+|Embossed yellow serial on black plate with border line; "FLORIDA" centered at top; "19" at top left and "38" at top right
+|''none''
+|'''T'''''1''-1-234<br>'''T'''''10''-123<br>''1''-12-345<br>''10''-1-234<br>'''D'''''1''-12-345<br>'''D'''''10''-1-234<br>'''W'''''1''-1-234<br>'''W'''''10''-123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|First use of county codes.
+|-
+|[[File:1939 Florida license plate.JPG|150px]]
+|1939
+|Embossed red serial on white plate with border line; "FLORIDA" centered at bottom; "19" at bottom left and "39" at bottom right
+|''none''
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1''-12345<br>''10''-1234<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''-1234<br>''10'''''W'''-123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1940 Florida license plate.jpg|150px]]
+|1940
+|Embossed white serial on black plate with border line; "FLORIDA" centered at top; "19" at top left and "40" at top right
+|''none''
+|''1'''''T'''-123<br>''10'''''T'''-123<br>''1''-12345<br>''10''-1234<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''-1234<br>''10'''''W'''-123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1941 Florida license plate.jpg|150px]]
+|1941
+|Embossed red serial on white plate with border line; "FLORIDA" centered at bottom; "19" at bottom left and "41" at bottom right
+|''none''
+|''1'''''T'''-123<br>''10'''''T'''-123<br>''1''-12345<br>''10''-1234<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''-1234<br>''10'''''W'''-123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1942 Florida license plate.JPG|150px]] [[File:1943 Florida license plate.jpg|150px]]
+|{{nowrap|1942–43}}
+|Embossed orange serial on dark blue plate with border line; "FLORIDA" centered at top; "19" at top left and "42" at top right
+|''none''
+|''1'''''T'''-123<br>''10'''''T'''-12<br>''1''-1234<br>''10''-123<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''-123<br>''10'''''WW'''-12
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|Revalidated for 1943 with dark blue tabs, due to metal conservation for [[World War II]]. Weight classes were as follows: T (<= 2,000&nbsp;lb / 0.90 t), no letter (2,001 to 2,500&nbsp;lb / 0.90 - 1.13 t), D (2,501 to 3,500&nbsp;lb / 1.13 - 1.59 t), W (3,501 to 4,500&nbsp;lb / 1.59 - 2.04 t) and WW (>= 4,501 lb / 2.04 t); this continued through 1947.<ref name="allaboutlicenseplatesFL"/>
+|-
+|[[File:1944 Florida license plate.JPG|150px]]
+|1944
+|Embossed black serial on yellow plate with border line; "FLORIDA" centered at top; "19" at top left and "44" at top right
+|''none''
+|''1'''''T'''-123<br>''10'''''T'''-12<br>''1''-1234<br>''10''-123<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''-123<br>''10'''''WW'''-12
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1945 Florida license plate 18D1011.jpg|150px]]
+|1945
+|Embossed yellow serial on black plate with border line; "FLORIDA" centered at bottom; "19" at bottom left and "45" at bottom right
+|''none''
+|''1'''''T'''-123<br>''10'''''T'''-12<br>''1''-1234<br>''10''-123<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''-123<br>''10'''''WW'''-12
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1946 Florida license plate.JPG|150px]]
+|1946
+|Embossed white serial on dark blue plate with border line; "FLORIDA" centered at top; "19" at top left and "46" at top right
+|''none''
+|''1'''''T'''-123<br>''10'''''T'''-12<br>''1''-1234<br>''10''-123<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''-123<br>''10'''''WW'''-12
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1947 Florida license plate.JPG|150px]]
+|1947
+|Embossed white serial on forest green plate with border line; "FLORIDA" centered at bottom; "19" at bottom left and "47" at bottom right
+|''none''
+|''1'''''T'''-123<br>''10'''''T'''-123<br>''1''-1234<br>''10''-123<br>''1'''''D'''12345<br>''10'''''D'''1234<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''-123<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1948 Florida license plate.JPG|150px]]
+|1948
+|Embossed yellow serial on black plate with border line; "FLORIDA" centered at top; "19" at top left and "48" at top right
+|''none''
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''-123<br>''1''-12345<br>'''''1'''''-1234A<br>''10''-1234<br>'''''10'''''/12345<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''1234<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|Weight classes same as 1942–47, except D used for the 2,001 to 2,500 lb (0.90 - 1.13 t) class and no letter for the 2,501 to 3,500&nbsp;lb (1.13 - 1.58 t) class. This continued through 1961.<ref name="allaboutlicenseplatesFL"/>
+|-
+|[[File:1949 Florida License Plate.png|150px]]
+|1949
+|Embossed red serial on white plate with border line; "FLORIDA" centered at bottom; "19" at bottom left and "49" at bottom right
+|"SUNSHINE STATE" centered at top
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''-123<br>''1''-12345<br>'''''1'''''-1234A<br>''10''-1234<br>'''''10'''''-123A<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''1234<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|First use of the "Sunshine State" slogan.
+|-
+|[[File:1950 Florida license plate.jpg|150px]]
+|1950
+|Embossed blue serial on orange plate with border line; "FLORIDA" centered at top; "19" at top left and "50" at top right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''-123<br>''1''-12345<br>'''''1'''''-1234A<br>''10''-1234<br>'''''10'''''-123A<br>''1'''''W'''12345<br>''10'''''W'''1234<br>''1'''''WW'''-123<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1951 Florida license plate.jpg|150px]]
+|1951
+|Embossed dark green serial on yellow plate with border line; "FLORIDA" centered at bottom; "19" at bottom left and "51" at bottom right
+|"KEEP FLORIDA GREEN" centered at top
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''-123<br>''1''-123456<br>''10''-12345<br>''1'''''W'''12345<br>''10'''''W'''12345<br>''1'''''WW'''-123<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|Plates with eight-character serials (counting the dash, if present) were an inch longer than plates with serials of seven characters or less. This practice continued through 1955.
+|-
+|[[File:1952 Florida license plate.JPG|150px]]
+|1952
+|Embossed orange serial on blue plate with border line; "FLORIDA" centered at top; "19" at top left and "52" at top right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''-123<br>''1''-123456<br>''10''-12345<br>''1'''''W'''12345<br>''10'''''W'''12345<br>''1'''''WW'''-123<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1953 Florida license plate 3W~3505.jpg|150px]]
+|1953
+|Embossed blue serial on orange plate with border line; "FLORIDA" centered at bottom; "19" at bottom left and "53" at bottom right
+|"SUNSHINE STATE" centered at top
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''12345<br>''10'''''W'''12345<br>''1'''''WW'''-123<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1954 Florida license plate 7W12558.jpg|150px]]
+|1954
+|Similar to 1952 base, but with "19" at bottom left and "54" at bottom right
+|"SUNSHINE STATE" as on 1952 base
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''12345<br>''10'''''W'''12345<br>''1'''''WW'''-123<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1955 Florida license plate 3W~3973.jpg|150px]]
+|1955
+|Similar to 1953 base, but with "19" at top left and "55" at top right
+|"SUNSHINE STATE" as on 1953 base
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''12345<br>''10'''''W'''12345<br>''1'''''WW'''-123<br>''10'''''WW'''123
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1956 Florida (USA) License Plate.JPG|150px]]
+|1956
+|Embossed white serial on blue plate with border line; "FLORIDA" centered at top; "19" at bottom left and "56" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''T'''-1234<br>''10'''''T'''-123<br>''1'''''D'''-1234<br>''10'''''D'''-1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''-1234<br>''10'''''WW'''1234
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|First 6" x 12" plate.
+|-
+|[[File:1957 Florida license plate.jpg|150px]]
+|1957
+|Embossed blue serial on white plate with border line; "FLORIDA" centered at bottom; "19" at top left and "57" at top right
+|"SUNSHINE STATE" centered at top
+|''1'''''T'''-1234<br>''10'''''T'''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''-1234<br>''10'''''WW'''1234
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1958 Florida license plate 14~10047.jpg|150px]]
+|1958
+|Embossed white serial on dark green plate with border line; "FLORIDA" centered at top; "19" at bottom left and "58" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''T'''-12345<br>''10'''''T'''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''-1234<br>''10'''''WW'''1234
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1959 Florida license plate.JPG|150px]]
+|1959
+|Embossed dark green serial on white plate with border line; "FLORIDA" centered at bottom; "19" at top left and "59" at top right
+|"SUNSHINE STATE" centered at top
+|''1'''''T'''-12345<br>''10'''''T'''-1234<br>''1'''''D'''-1234<br>''10'''''D'''-1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''12345<br>''10'''''WW'''1234
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1960 Florida license plate.jpg|150px]]
+|1960
+|Embossed yellow serial on royal blue plate with border line; "FLORIDA" centered at top; "19" at bottom left and "60" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''T'''-12345<br>''10'''''T'''-1234<br>''1'''''D'''-12345<br>''10'''''D'''-1234<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''12345<br>''10'''''WW'''1234
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1961 Florida License Plate.JPG|150px]]
+|1961
+|Embossed navy blue serial on lemon yellow plate with border line; "FLORIDA" centered at bottom; "19" at top left and "61" at top right
+|"SUNSHINE STATE" centered at top
+|''1'''''T'''-12345<br>''10'''''T'''-1234<br>''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''12345<br>''10'''''WW'''1234
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1962 Florida license plate.jpg|150px]]
+|1962
+|Embossed blue serial on white plate with border line; "FLORIDA" centered at top; "19" at bottom left and "62" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|Weight classes same as 1948–61, except D used for all vehicles 2,500&nbsp;lb (1.13 t) and under. This continued until the cessation of weight classes and county codes in 1977.<ref name="allaboutlicenseplatesFL"/>
+|-
+|[[File:1963 Florida license plate.JPG|150px]]
+|1963
+|Embossed white serial on blue plate with border line; "FLORIDA" centered at bottom; "19" at top left and "63" at top right
+|"SUNSHINE STATE" centered at top
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1964 Florida license plate.JPG|150px]]
+|January 1964&nbsp;– January 1965
+|Embossed blue serial on orange plate with border line; "FLORIDA" centered at top; "19" at bottom left and "64" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1965 Florida license plate 7~51135.jpg|150px]]
+|February 1965&nbsp;– February 1966
+|Embossed gold serial on red plate with border line; "FLORIDA" centered at bottom; "19" at top left and "65" at top right
+|"400TH ANNIVERSARY" centered at top
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|Commemorated the 400th anniversary of the founding of [[St. Augustine, Florida|St. Augustine]], the oldest continuously inhabited European-established settlement in the continental United States.
+|-
+|[[File:1966 Florida license plate.jpg|150px]]
+|March 1966&nbsp;– March 1967
+|Embossed white serial on blue plate with border line; "FLORIDA" centered at top; "19" at bottom left and "66" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-12345<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1967-1968 Florida license plate 7~35064.jpg|150px]]
+|April 1967&nbsp;– April 1968
+|Embossed white serial on black plate with border line; "FLORIDA" centered at bottom; "67" at top left and "68" at top right
+|"SUNSHINE STATE" centered at top
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1968-1969 Florida license plate 7W~20106.jpg|150px]]
+|May 1968&nbsp;– May 1969
+|Embossed white serial on red plate with border line; "FLORIDA" centered at top; "68" at bottom left and "69" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1969-70 Florida license plate.JPG|150px]]
+|June 1969&nbsp;– June 1970
+|Embossed white serial on green plate with border line; "FLORIDA" centered at bottom; "69" at top left and "70" at top right
+|"SUNSHINE STATE" centered at top
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1970 Florida license plate 64WW2412.jpg|150px]]
+|July 1970&nbsp;– June 1971
+|Embossed white serial on blue plate with border line; "FLORIDA" centered at top; "70" at bottom left and "71" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''D'''-12345<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1972 Florida License Plate.JPG|150px]]
+|July 1971&nbsp;– June 1972
+|Embossed orange serial on reflective white plate with border line; "FLORIDA" centered at bottom; "72" at top right
+|"SUNSHINE STATE" centered at top
+|''1'''''D'''123456<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1973 Florida license plate 34D~255.jpg|150px]]
+|July 1972&nbsp;– June 1973
+|Embossed green serial on reflective white plate with border line; "FLORIDA" centered at top; "73" at bottom right
+|"SUNSHINE STATE" centered at bottom
+|''1'''''D'''123456<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|-
+|[[File:1974 Florida license plate 11WW~517.jpg|150px]]
+|July 1973&nbsp;– June 1974
+|As 1971–72 base, but with "74" at top right
+|"SUNSHINE STATE" as on 1971–72 base
+|''1'''''D'''123456<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>'''''10'''''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|
+|}
+
+===1974 to present===
+{|class=wikitable
+|+
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format(s)
+!Serials issued
+!Notes
+|-
+|[[File:1974–1977 series Floridian license plate with October 1979 sticker.png|150px]]
+|July 1974&nbsp;– March 1977
+|Embossed red serial on reflective white plate with border line; "FLORIDA" centered at top; "75" at top left
+|"SUNSHINE STATE" centered at bottom
+|''1'''''D'''123456<br>''10'''''D'''12345<br>''1''-123456<br>''10''-123456<br>''1'''''W'''123456<br>''10'''''W'''12345<br>{{small|'''''10'''''/'''W'''}}-123456<br>''1'''''WW'''12345<br>''10'''''WW'''1234<br>''10''{{small|'''W'''/'''W'''}}12345
+|Coded by county of issuance (''1'' or ''10'') and weight class
+|Monthly staggered registration introduced July 1976, with each plate expiring in the same month as the registrant's birthday.<ref name="Simpers"/> Revalidated with stickers until 1980.
+|-
+|[[File:1977–1979 series Florida license plate with November 1979 sticker.png|150px]]
+|April 1977&nbsp;– February 1979
+|Embossed green serial on reflective white plate; "FLORIDA" centered at top
+|''none''
+|ABC 123
+|AAA 000 to approximately FBN&nbsp;999
+|Issued only to new registrants. Letters I, O and Q not used in serials. County-name sticker added at bottom in 1978. Revalidated with stickers until 1987.
+|-
+|[[File:1978 Florida license plate XRN 061.jpg|150px]]
+|February 1979&nbsp;– February 1984
+|rowspan="2"|Embossed green serial on reflective white plate; orange state map screened to left of center behind serial; "FLORIDA" centered at top
+|rowspan="2"|County name centered at bottom
+|ABC 123
+|FBP 000 to YZZ&nbsp;999;<br>AIA&nbsp;000 to YQZ&nbsp;999
+|rowspan="2"|'M' and 'Z' series in the ABC 123 serial format reserved for [[Car dealership|dealer]]s and [[Car rental|rental vehicle]]s respectively. After YZZ 999 was issued in late 1982, serials with I and Q as the first and/or second letters were issued, before the 123 ABC format was introduced. Revalidated with stickers until 1992.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|February 1984&nbsp;– June<br>1986
+|123 ABC
+|000 AAA to approximately 999&nbsp;KTG
+|-
+|[[File:Florida license plate, 1986–1991 series with November 1989 sticker.png|150px]]
+|June 1986&nbsp;– November 1991
+|Embossed red serial on reflective white plate; green state map screened to left of center behind serial; "FLORIDA" centered at top
+|County name centered at bottom
+|ABC 12D 
+|Exclusively from AAA&nbsp;00A to approximately JUQ&nbsp;99Z; intermittently&nbsp;from JUR&nbsp;00A to approximately KGW&nbsp;99Z
+|Early plates used a lighter shade of green for the state map, while some plates manufactured during 1988 featured a smaller-size state name. Letter O not used in serials (this practice continues today); 'M' series reserved for dealers and 'Y' and 'Z' series for rental vehicles. Replaced from 1992 through 1996 as part of five-year plate replacement cycle.
+|-
+|rowspan="2"|[[File:Florida 1996 QNJ 07D.jpg|150px]]
+|November 1991&nbsp;– November 1994
+|rowspan="2"|As 1979–86 base
+|County name centered at bottom
+|rowspan="2"|ABC 12D 
+|Intermittently from JUR&nbsp;00A to approximately KGW&nbsp;99Z; exclusively from KGX&nbsp;00A to approximately RWV&nbsp;99Z
+|
+|-
+|November 1994&nbsp;– July<br>1997
+|County name or "SUNSHINE STATE" centered at bottom
+|Exclusively from RWW&nbsp;00A to approximately XBQ&nbsp;99Z; intermittently from XBR&nbsp;00A to approximately XDQ&nbsp;99Z
+|"Sunshine State" slogan reintroduced on all plates in [[Miami-Dade County, Florida|Dade County]].   
+|-
+|[[File:S-l500 1997.jpg|150x150px]]
+|July 1997&nbsp;– February 1998
+|rowspan="6"|Embossed green serial on reflective white plate; citrus orange graphic over green state map screened in the center; "FLORIDA" screened in orange and yellow centered at top
+|rowspan="4"|County name or "SUNSHINE STATE" embossed in green centered at bottom
+|'''X'''BC 12D
+|Intermittently from XBR&nbsp;00A to approximately XDQ&nbsp;99Z; exclusively from XDR&nbsp;00A to XZZ&nbsp;99Z
+|rowspan="4"|"Sunshine State" plates issued in Dade County (renamed Miami-Dade County in late 1997); county-name plates in all other counties.
+|-
+|[[File:EY Orange.jpg|150x150px]]
+|rowspan="2"|February 1998&nbsp;– early 1999
+|AB1 23C
+|CY0 00X to IZ9&nbsp;99Z
+|-
+|[[File:1999 FL Plate.jpg|150x150px]]
+|A12 34B
+|I00 00V to L99&nbsp;99Z
+|-
+|[[File:Type 4 1997 Style FL.jpg|150x150px]]
+|early 1999&nbsp;– 2000
+|A12 BCD
+|A00 AAA to approximately B99&nbsp;FWB
+|-
+|[[File:2004 Florida Duval.jpg|150x150px]]
+|rowspan="2"|2000&nbsp;– December 2003
+|County name
+|rowspan="2"|A12 BCD
+|B00 FWC to approximately I99&nbsp;YXW
+|Issued in all counties except Miami-Dade County.
+|-
+|[[File:2006 Florida license plate W71 GJF.jpg|150px]]
+|"SUNSHINE STATE"
+|T00 AAA to approximately X99&nbsp;FTJ
+|Issued in Miami-Dade County. First use of a separate serial block for this county.
+|-
+|[[File:2006FloridaMarion.jpg|150x150px]]
+|rowspan="2"|December 2003&nbsp;– August 2004
+|rowspan="17" |Embossed green serial on reflective white plate; [[orange blossom]] graphic over green state map screened in the center; "MYFLORIDA.COM" screened in green centered at top
+|County name
+|A12 BCD
+|I00 ZAA to approximately K99&nbsp;AAR
+|Issued in all counties except Miami-Dade County.
+|-
+|[[File:Florida license plate Sunshine State.gif|150px]]
+|"SUNSHINE STATE"
+|'''X'''12 BCD
+|X00 FTN to X99&nbsp;ZZZ
+|Issued in Miami-Dade County.
+|-
+|[[File:2006FloridaDuval.jpg|frameless|150x150px]]
+|August 2004&nbsp;– March 2009
+|rowspan="7"|County name
+|A12 3BC
+|A00 0AA to N99&nbsp;9ZZ
+|rowspan="7"|Issued in all counties except Miami-Dade County. Wider serial [[Die (manufacturing)|die]]s introduced 2006.
+|-
+|[[File:Orange FL Plates.jpg|frameless|150x150px]]
+|March 2009&nbsp;– July<br>2015
+|123 ABC
+|000 MAA to 999 RZZ
+|-
+|[[File:Palm Beach FL Plates.jpg|150x150px]]
+|July 2015&nbsp;– mid-2018
+|A12 BCD
+|Y00 AAA to Z62&nbsp;JZP
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|mid-2018&nbsp;–August 2021
+|'''I'''B1 2CD
+|IA0 0AA to IZ9&nbsp;9ZZ
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|August 2021&nbsp;– June 2022;<br>April 2023&nbsp;– June 2024
+|12A BCD
+|01B AAA to approximately 99B BIG;<br>01C BAA to approximately 99C KCT
+|-
+|[[File:Current Florida Design with Lake County Plate.jpg|150x150px]]
+|June 2022&nbsp;– April 2023
+|'''C'''B1 234
+|CA0 001 to CZ9&nbsp;999
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|June 2024&nbsp;– present
+|AB1 23C
+|JN0 00A to KM9 99Z;<br>
+LA0 00A to LC9 99M <small>(as of January 22, 2026)</small>
+|-
+|[[File:2007FloridaSunshine.jpg|150x150px]]
+| rowspan="2" |August 2004&nbsp;– late<br>2009
+| rowspan="9" |"SUNSHINE STATE"
+|A12 3BC
+|P00 0AA to X99&nbsp;9ZZ
+|Issued in Miami-Dade County. Dies changed from narrow set to wider set mid-production.
+|-
+|[[File:2009FloridaSunshine.jpg|150x150px]]
+|123 ABC
+|000 HAA to 999&nbsp;LZZ;<br>000&nbsp;VAA to 999&nbsp;YZZ;<br>000&nbsp;TAA to 999&nbsp;TZZ
+|Issued in Miami-Dade County, as well as alternate choice in all other counties. In 2008 state changes mandatory 5 year license plate replacement to 6 years.
+|-
+|[[File:2003 Florida license plate IYT E32.jpg|150px]]
+|November 2009&nbsp;– May 2021;<br>
+February 2024&nbsp;– June 2024;<br>
+September 2024&nbsp;– November 2024;<br>
+June 2025&nbsp;– October 2025
+|ABC D12
+|AAA A01 to EZZ Z99;<br>GAA A01 to LZZ Z99;<br>NAA A01 to RZZ Z99;<br>FBA A01 to FVZ Z99
+|Issued in Miami-Dade County, as well as alternate choice in all other counties. 
+'FA' series reserved for antique and 'M' series for motorcycles.
+State changes mandatory 6 year license plate replacement to 10 years.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|May 2022–June 2022
+|123 4'''A'''B
+|000 1AL to 999 9AZ
+|
+|-
+|[[File:Florida Orange Blossom Sunshine State plate with PM (permanent) sticker.jpg|150x150px]]
+|May 2021&nbsp;– May 2022;<br>June 2022&nbsp;–August 2022;
+July 2023&nbsp;– February 2024;<br>
+November 2024&nbsp;– February 2025;<br>
+October 2025&nbsp;– February 2026
+|12A BCD
+|01A AAA to 99B ZZZ; <small>(except for 01B AAA to approximately 99B BIG, occupied by county name plates)</small><br>01D AAA to 99F EZZ; <small>(except for the DK, EA, EF, EN, EP, and FA series)</small><br>01F PAA to approximately 99G CZZ; <small>(except for the FU, FW, and GA series)</small><br>01T GAA to 99T GZZ;<br>01V BAA to 99V CZZ
+|
+|-
+|[[File:Fl Plate 2023.jpg|150x150px]]
+|August 2022&nbsp;–July&nbsp;2023;<br>
+February 2025&nbsp;–June 2025
+|AB1 2CD
+|AF0 0AA to AZ9 9ZZ;<br>BL0 0AA to BZ9 9ZZ;<br>DH0 0AA to EB9 9ZZ; <small>(except for the DV and EA series)</small>
+|AA-AC, DA-DG, and EA series occupied by Apportioned.<br>DV series occupied by disabled veteran.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|June 2024–September 2024
+|'''K'''B1 23C
+|KN0 00A to KZ9 99Z
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|November 2025
+|'''E'''12 34B
+|E00 00F to E99 99M
+|
+|-
+|[[File:Florida License Plate 2026-present.jpg|150px]]
+|February 2026–August 2026–present
+|Embossed green serial on reflective white plate; [[orange blossom]] graphic over green state map screened in the center; "FLORIDA" screened in green centered at top
+|ABC 123
+|XAA 000 to XZZ 999–present
+WZ0 000 to WZ9 999
+|
+|-
+|[[File:2021FloridaIGWT.jpg|frameless|150x150px]]
+|October 1, 2008 – September 2018
+|rowspan="4" |Embossed green serial on reflective white plate; [[orange blossom]] graphic over green state map screened in the center; "MYFLORIDA.COM" screened in green centered at top
+| rowspan="6" |"IN GOD WE TRUST"
+|123 4AB
+|000 1GA to 999&nbsp;9YZ
+|Issued in all counties as no-cost alternative issue. Progression of first letter in the 123 4AB serial format: G, H, I, J, B, P, Q, T, U, V, X, Y.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|September 2018&nbsp;–January 2019
+|123 45'''Z'''
+|000&nbsp;01Z to 999&nbsp;99Z
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2019&nbsp;–February 2022
+|A12 3BC
+|Z00 0AA to Z99&nbsp;9ZZ;<br>Y00&nbsp;0AA to Y99&nbsp;9ZZ
+|
+|-
+|[[File:FL In God Wee Trust 2023.jpg|left|150x150px|frameless]]
+|February 2022&nbsp;–February 2026
+|AB1 2CD
+|BB0 0AA to BH9&nbsp;9ZZ;<br>CC0 0AA to approximately CU9&nbsp;9ZZ
+|BA and BK series occupied by Apportioned, BJ for weighted wrecker.
+|-
+| rowspan="2" |[[File:Florida 250.jpg|150x150px]]
+|December 2025
+| rowspan="2" |Embossed navy serial on reflective white plate; America250FL logo screened in the center; "FLORIDA" screened in navy at the center top.
+|'''US'''1 234
+|US0 001 to US9 999
+| rowspan="2" |
+|-
+|December 2025&nbsp;–present
+|'''US'''C 123
+|USA 001 to USH 999 <small>(as of March 11, 2026)</small>
+|}
+
+== County coding, 1938–77 ==
+
+Florida used numeric county codes on its license plates between 1938 and 1977, with the order of the codes based on the populations of each of the state's 67 counties according to a 1935 census.<ref name="Simpers"/> There was also code 68 on plates ordered from the state tag office in [[Tallahassee, Florida|Tallahassee]], and code 90 on replacement plates.
+
+{|class="wikitable collapsible collapsed sortable"
+|-
+!Code!!County
+|-
+| 1 || [[Miami-Dade County, Florida|Dade]]
+|-
+| 2 || [[Duval County, Florida|Duval]]
+|-
+| 3 || [[Hillsborough County, Florida|Hillsborough]]
+|-
+| 4 || [[Pinellas County, Florida|Pinellas]]
+|-
+| 5 || [[Polk County, Florida|Polk]]
+|-
+| 6 || [[Palm Beach County, Florida|Palm Beach]]
+|-
+| 7 || [[Orange County, Florida|Orange]]
+|-
+| 8 || [[Volusia County, Florida|Volusia]]
+|-
+| 9 || [[Escambia County, Florida|Escambia]]
+|-
+| 10 || [[Broward County, Florida|Broward]]
+|-
+| 11 || [[Alachua County, Florida|Alachua]]
+|-
+| 12 || [[Lake County, Florida|Lake]]
+|-
+| 13 || [[Leon County, Florida|Leon]]
+|-
+| 14 || [[Marion County, Florida|Marion]]
+|-
+| 15 || [[Manatee County, Florida|Manatee]]
+|-
+| 16 || [[Sarasota County, Florida|Sarasota]]
+|-
+| 17 || [[Seminole County, Florida|Seminole]]
+|-
+| 18 || [[Lee County, Florida|Lee]]
+|-
+| 19 || [[Brevard County, Florida|Brevard]]
+|-
+| 20 || [[St. Johns County, Florida|St. Johns]]
+|-
+| 21 || [[Gadsden County, Florida|Gadsden]]
+|-
+| 22 || [[Putnam County, Florida|Putnam]]
+|-
+| 23 || [[Bay County, Florida|Bay]]
+|-
+| 24 || [[St. Lucie County, Florida|St. Lucie]]
+|-
+| 25 || [[Jackson County, Florida|Jackson]]
+|-
+| 26 || [[Osceola County, Florida|Osceola]]
+|-
+| 27 || [[Highlands County, Florida|Highlands]]
+|-
+| 28 || [[Pasco County, Florida|Pasco]]
+|-
+| 29 || [[Columbia County, Florida|Columbia]]
+|-
+| 30 || [[Hardee County, Florida|Hardee]]
+|-
+| 31 || [[Suwannee County, Florida|Suwannee]]
+|-
+| 32 || [[Indian River County, Florida|Indian River]]
+|-
+| 33 || [[Santa Rosa County, Florida|Santa Rosa]]
+|-
+| 34 || [[DeSoto County, Florida|DeSoto]]
+|-
+| 35 || [[Madison County, Florida|Madison]]
+|-
+| 36 || [[Walton County, Florida|Walton]]
+|-
+| 37 || [[Taylor County, Florida|Taylor]]
+|-
+| 38 || [[Monroe County, Florida|Monroe]]
+|-
+| 39 || [[Levy County, Florida|Levy]]
+|-
+| 40 || [[Hernando County, Florida|Hernando]]
+|-
+| 41 || [[Nassau County, Florida|Nassau]]
+|-
+| 42 || [[Martin County, Florida|Martin]]
+|-
+| 43 || [[Okaloosa County, Florida|Okaloosa]]
+|-
+| 44 || [[Sumter County, Florida|Sumter]]
+|-
+| 45 || [[Bradford County, Florida|Bradford]]
+|-
+| 46 || [[Jefferson County, Florida|Jefferson]]
+|-
+| 47 || [[Citrus County, Florida|Citrus]]
+|-
+| 48 || [[Clay County, Florida|Clay]]
+|-
+| 49 || [[Hendry County, Florida|Hendry]]
+|-
+| 50 || [[Washington County, Florida|Washington]]
+|-
+| 51 || [[Holmes County, Florida|Holmes]]
+|-
+| 52 || [[Baker County, Florida|Baker]]
+|-
+| 53 || [[Charlotte County, Florida|Charlotte]]
+|-
+| 54 || [[Dixie County, Florida|Dixie]]
+|-
+| 55 || [[Gilchrist County, Florida|Gilchrist]]
+|-
+| 56 || [[Hamilton County, Florida|Hamilton]]
+|-
+| 57 || [[Okeechobee County, Florida|Okeechobee]]
+|-
+| 58 || [[Calhoun County, Florida|Calhoun]]
+|-
+| 59 || [[Franklin County, Florida|Franklin]]
+|-
+| 60 || [[Glades County, Florida|Glades]]
+|-
+| 61 || [[Flagler County, Florida|Flagler]]
+|-
+| 62 || [[Lafayette County, Florida|Lafayette]]
+|-
+| 63 || [[Union County, Florida|Union]]
+|-
+| 64 || [[Collier County, Florida|Collier]]
+|-
+| 65 || [[Wakulla County, Florida|Wakulla]]
+|-
+| 66 || [[Gulf County, Florida|Gulf]]
+|-
+| 67 || [[Liberty County, Florida|Liberty]]
+|-
+| 68 || State Tag Office
+|-
+| 90 || Replacements
+|}
+
+==Vehicle classes, 1932–77==
+Between 1932 and 1977, Florida used letters on its license plates that corresponded to the class of vehicle.
+
+Through 1937, the letters were placed before or after the numeric part of the serial, depending on the year. When county codes (above) were introduced in 1938, the letters were placed before the code (e.g. G10-123 for a commercial truck in Broward County). From 1939 onwards, the letters were placed after the code, but before the rest of the serial (e.g. 10G-123).
+
+Throughout this period, license plates without letters were used on passenger cars. In 1932 and 1933, they were used on cars weighing 3,000 lb and under; from 1934 through 1941, on cars weighing between 2,051 and 3,050 lb; and from 1942 through 1947, on cars weighing between 2,001 and 2,500 lb. From 1948 onwards, they were used on cars weighing between 2,501 and 3,500 lb, as there were now more heavy cars.<ref name="Simpers"/>
+
+{|class="wikitable collapsible collapsed sortable"
+|-
+!Letter!!Vehicle class
+|-
+| A || Motorcycle
+|-
+| AM || Motorcycle dealer (1949–69)
+|-
+| AX || Tax-exempt motorcycle 
+|-
+| B || Boat trailer 
+|-
+| BB || Private trailer, 501 to 1050 lb
+|-
+| C || City bus
+|- 
+| CV || Commercial vehicle over 2000 lbs 
+|- 
+| D || Passenger car, 3001 lb and over (1932–33)<br>Passenger car, 3051 to 4050 lb (1934–41)<br>Passenger car, 2501 to 3500 lb (1942–47)<br>Passenger car, 2001 to 2500 lb (1948–61)<br>Passenger car, 2500 lb and under (from 1962) 
+|-
+| E || Taxi cabs, rental cars or limousines
+|-
+| FHP || Florida Highway Patrol vehicle
+|-
+| FO || Trailer for hire over 4001 lbs (half years plates with an expiration date)
+|-
+| G || Truck, 4000 lb and under (1932–33)<br>Commercial truck, 2050 lb and under (from 1934)
+|-
+| GF || Truck for hire
+|- 
+| GFH || Truck for hire (until 1939)
+|- 
+| GH || Private truck, 2051 to 3050 lb (from 1934)
+|- 
+| GK || Private truck, 3051 to 5050 lb (from 1934)
+|- 
+| GL || Private truck, 5051 lb and over (1934–66)
+|- 
+| GW || Private truck over 5051 lbs (from 1967)
+|- 
+| H || Truck, 4001 lb and over (1932–33)<br>Half-year plate (1938 to early 1950s)
+|- 
+| HF || Truck for hire over 4051 lbs
+|- 
+| HFH || Half year for hire vehicle
+|- 
+| HT || House trailer
+|- 
+| K || Ambulance
+|- 
+| KA || Fractional Ambulance (1949)
+|- 
+| L || Semi-trailer
+|- 
+| M || Dealer (1932–65)
+|- 
+| MC || Member of Congress
+|- 
+| MF || Franchised dealer (from 1966)
+|- 
+| MH || Mobile home
+|- 
+| MI || Independent dealer (from 1966)
+|- 
+| MT || Truck dealer (from 1966)
+|- 
+| N || Rental trailer, 2001 lb and over
+|- 
+| NN || Rental trailer, 2000 lb and under
+|- 
+| O || Semi-trailer for hire
+|- 
+| P || Off-road vehicle
+|- 
+| Q || Antique passenger car
+|-
+| R || Light motorcycle (from 1960)
+|- 
+| RB || Ringling Brothers (circus vehicles)
+|- 
+| RP || Real property (for Mobile Homes that had been converted to a fixed asset)
+|- 
+| RV || Recreational vehicle
+|- 
+| S || Bus for hire
+|-
+| T || Passenger car, 2050 lb and under (1934–41)<br>Passenger car, 2000 lb and under (1942–61)
+|-
+| TA || Truck tractor
+|-
+| TAF || Half year truck tractor
+|-
+| TB || Truck tractor
+|-
+| TBF || Half year truck tractor
+|-
+| TC || Truck tractor
+|-
+| TCF || Half year truck tractor
+|-
+| TD || Truck tractor
+|-
+| TDF || Half year truck tractor
+|-
+| TE || Truck tractor
+|-
+| TEF || Half year truck tractor
+|-
+| V || Private trailer, 500 lb and under
+|-
+| W || Passenger car, 4051 lb and over (1934–41)<br>Passenger car, 3501 to 4500 lb (from 1942)
+|-
+| WW || Passenger car, 4501 lb and over (from 1942)
+|-
+| X || Tax exempt
+|-
+|}
+
+==Non-passenger plates==
+The state issues many non-passenger types of license plates to various vehicle classes and types.
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!style="width:70px;"|Serial format(s)
+!Notes
+|-
+|[[File:Florida Amateur Radio Sample plate.png|150px]]
+|[[Amateur Radio]]
+|
+|''FCC call sign''
+|
+|-
+|[[File:Florida Antique car license plate.jpg|150px]]
+|[[Antique car|Antique]]
+|
+|123&nbsp;456<br>'''B'''B1&nbsp;234<br>'''I'''B1&nbsp;234<br>'''FA'''C&nbsp;D12<br>'''J'''B1&nbsp;234<br>12'''E'''&nbsp;'''P'''CD<br>123&nbsp;4'''F'''B
+|Issued to cars and trucks that are at least 30 years old and under 26,000 lb (11.7 t)<br>Second letter progression for the '''J'''B1 234 format: A, B<br>Second letter progression for the 123 4'''F'''B format: G, H<br>699 9FH current high.
+|-
+|[[File:Florida Antique Motorcycle license plate.jpg|150px]]
+|Antique Motorcycle
+|
+|'''Q'''123456<br>123'''Q'''B<br>123'''R'''B<br>'''FJ'''C12<br>123'''N'''B
+|
+|-
+|[[File:Florida Apportioned license plate.jpg|150px]]
+|[[International Registration Plan|Apportioned]]
+|
+|''A''12 34B<br>'''X'''B1 23C<br>''AB''1 2CD
+|Annual plates. Issued in pairs.
+Newly issued purple plates in 2025 does not indicate year on the top left.
+''"AB"'' denotes the type of vehicle.
+
+<s>Not to confuse with AB1 2CD in regular passenger series, they never share the first two letters.</s>
+|-
+|[[File:Florida City Government license plate.jpg|150px]]
+|City Government
+|
+|123456<br>'''X'''B1234
+|"City" legend.<br>XM4999 current high.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|City Government — Motorcycle
+|
+|'''CY''' 1234<br>'''J'''12345
+|"City" legend.
+|-
+| [[File:Florida College Owned Sample License Plate.png|frameless|150x150px]]
+|[[College]]
+|
+|1234<br>'''I'''B12<br>'''J'''B12<br>'''K'''B12
+|
+|-
+|[[File:Florida County Government license plate.jpg|150px]]
+|County Government
+|
+|123456<br>'''T'''B1234
+|"County" legend.<br>TM4999 current high.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|County Government — Motorcycle
+|
+|'''C0''' 1234
+|"County" legend.
+|-
+|[[File:FL 2010 Custom Vehicle License Plate.jpg|frameless|150x150px]]
+|Custom Vehicle
+|2008
+|'''V'''BC1D
+|
+|-
+|[[File:FL Dealer License Plate.jpg|150x150px]]
+|[[Car dealer|Dealer]]
+|
+|'''M'''BC 123<br>'''M'''BC 12D<br>'''M'''B1 23C<br>'''N'''B1 23C<br>'''P'''B1 23C
+|The series skipped to PA0 00A after approximately issuing NC7 18I. PP9 99Z current high
+<s>Not to confuse with A12 3BC in the regular series</s>
+
+<s>Not to confuse with '''M'''BC D12 motorcycle plates</s>
+|-
+|[[File:FloridaDisabledPerson.jpg|frameless|150x150px]]
+|[[Disability|Disabled]] Person
+|
+|12345&nbsp;{{access icon|10px}}<br>123456&nbsp;{{access icon|10px}}<br>'''Y'''1BCD&nbsp;{{access icon|10px}}<br>'''Z'''1BCD&nbsp;{{access icon|10px}}<br>'''Y'''B12C&nbsp;{{access icon|10px}}<br>'''Z'''B12C&nbsp;{{access icon|10px}}<br>'''J'''B12C&nbsp;{{access icon|10px}}<br>'''V'''B1CD&nbsp;{{access icon|10px}}<br>'''FZ'''C1D&nbsp;{{access icon|10px}}<br>'''CT'''1CD&nbsp;{{access icon|10px}}<br>'''F'''BC12&nbsp;{{access icon|10px}}<br>'''U'''B1CD&nbsp;{{access icon|10px}}
+|X through Z are used as second letter in the FBC12 serial format.<br>Current high: UP9ZZ&nbsp;{{access icon|10px}}
+|-
+|[[File:Florida Disabled Person Motorcycle Sample License Plate.png|150x150px]]
+|Disabled Person – Motorcycle
+|
+|1234&nbsp;{{access icon|10px}}<br>'''W'''B1C&nbsp;{{access icon|10px}}<br>'''X'''B1C&nbsp;{{access icon|10px}}<br>'''Y'''B1C&nbsp;{{access icon|10px}}<br>'''Z'''B1C&nbsp;{{access icon|10px}}<br>12AB&nbsp;{{access icon|10px}}<br>'''A'''1BC&nbsp;{{access icon|10px}}
+|C, D, X, and Y used as first letter (<u>A</u>) in the 12<u>A</u>B serial format. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Division of Driver Licenses
+|
+|'''DDL'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Electronic Temporary registration
+|
+|ABC1234
+|DYM9999 current high
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Exempt
+|
+|'''X'''12345<br>'''X'''1234B
+|
+|-
+|[[File:Florida Fleet license plate.jpg|150px]]
+|Fleet
+|
+|'''G'''BC 123<br>'''G'''B1 234 <small>(If issued by a truck with pairs.)</small>
+|GGP 999 is the current high, while GB4 999 with truck.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Department of Agriculture and Consumer Services]]
+|
+|'''ACS'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Department of Corrections]]
+|
+|'''DC''' 12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Department of Environmental Protection]]
+|
+|'''DEP'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Department of Health]]
+|
+|'''DH''' 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Department of Transportation]]
+|
+|'''D0T'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Department of Veterans Affairs]]
+|
+|'''FDVA'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Florida Division of Motor Vehicles
+|
+|'''DMV'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Public Service Commission]]
+|
+|'''PSC'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Florida Water Management District
+|
+|'''WMD'''12345
+|
+|-
+|[[File:Florida Former Military Vehicle Sample License Plate.png|frameless|150x150px]]
+|Former Military Vehicle
+|
+|12345'''HA'''
+|Very obscure, it has been said that FL doesn't even want to issue them.
+|-
+|[[File:Florida Horseless Carrage license plate.jpg|150px]]
+|[[Horseless Carriage]]
+|
+|12345
+|
+|-
+|[[File:Florida Horseless DMV license plate.jpg|150px]]
+|[[Horseless Carriage]] - DMV
+|
+|1234<br>12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Horseless Carriage]] - Motorcycle
+|
+|'''HC''' 123'''A'''<br>'''HC''' C12
+|
+|-
+|[[File:Florida Horseless Permanent license plate.jpg|150px]]
+|[[Horseless Carriage]] - Permanent
+|
+|12<br>123<br>1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Indefinite — Agricultural Trailer
+|
+|'''Y'''B1 23C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Indefinite — Rental Trailer
+|
+|'''Z''' 12345<br>'''Z'''B1 23C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Labor of Employment Security
+|
+|'''LES'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Lease
+|
+|'''Y'''BC 12D<br>'''Z'''BC 12D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Livestock Hauler
+|
+|'''LH''' 1234
+|
+|-
+|[[File:Florida Manufacturer Sample License Plate.png|150x150px]]
+|[[Manufacturer]]
+|
+|'''A'''12 345
+|A13 899 current high
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Medal of Honor]] (Air Force)
+|1985
+|'''F'''12
+|Given to [[Medal of Honor]] recipients who served the Air Force
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Medal of Honor]] (Army)
+|1985
+|'''A'''12
+|Given to [[Medal of Honor]] recipients who served the Army
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Medal of Honor]] (Navy)
+|1985
+|'''N'''12
+|Given to [[Medal of Honor]] recipients who served the Navy
+|-
+|[[File:Screen Shot 2024-03-03 at 11.23.52 AM.png|150px]]
+|[[Member of Congress]]
+|
+|1<br>12
+|Serial is [[List of United States congressional districts#Florida|district number]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Miccosukee]] Indian
+|
+|1234
+|Issued to Miccosukee owners.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Miccosukee]] Indian Motorcycle
+|
+|1234'''MI'''
+|Issued to Miccosukee motorcyclists.
+|-
+|[[File:Screen Shot 2024-03-03 at 11.28.59 AM.png|150px]]
+|Motor Scooter&mdash;driver under 21 years old
+|
+|12'''A'''BC<br>12'''B'''BC<br>12'''L'''BC
+|Current high: 99LMZ.
+|-
+|[[File:Florida Motorcycle license plate.jpg|150px]]
+|[[Motorcycle]]
+|
+|123456<br/>'''V'''B1234<br/>12345A<br/>1234AB<br/>'''M'''BCD12<br/>'''S'''BCD12<br/>12'''FI'''CD
+|The 6 series in the 123456 format are occupied by motorcycle dealers. N through W then A through R except M, reserved for motorcycle dealers, used as first letter in the 12345<u>A</u> format. E, although the first six letters of the second, K, L, N, and R used as first letter (<u>A</u>) in the 1234<u>A</u>B serial format. '''M'''BCD12 and '''S'''BCD12 format began in 2016 and 2024 respectively. The 12FICD format began in 2025 nearing the end of the SD series.
+Current high: 99FIFZ.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle Dealer
+|
+|'''6'''23456<br>12345'''M'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Broward Health|North Broward Hospital District]]
+|
+|'''NBHD'''1234
+|
+|-
+|[[File:Florida Permanent Trailer License Plate.png|150x150px]]
+|Permanent [[Trailer (vehicle)|Trailer]]
+|
+|'''C'''12 34B<br>123 4'''C'''B<br>'''Q'''B1 2CD
+|Permanent plates. 
+<s>Not to confuse with regular plates '''C'''B1 234</s>
+
+QB9 9VZ is the current high
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Reg Only
+|
+|AB12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Reg Only — Motorcycle
+|
+|12345'''X'''
+|
+|-
+|[[File:Florida Restricted Sample License Plate.png|150x150px]]
+|Restricted
+|
+|'''U'''12 34B<br>'''M'''BC 12D
+|<s>Not to confuse with '''M'''BC D12 motorcycle plates</s>
+|-
+|[[File:Screen Shot 2024-03-03 at 11.26.45 AM.png|150px]]
+|[[Seminole]] Indian
+|
+|1234<br>'''I'''B1C
+|Issued to Seminole owners.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Seminole]] Indian Motorcycle
+|
+|1234'''SI'''
+|Issued to Seminole motorcyclists.
+|-
+|[[File:Screen Shot 2024-03-03 at 11.32.21 AM.png|150px]]
+|[[Sheriff]]
+|
+|12345<br>'''Z'''BC12
+|ZZX99 current high
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Fire Marshall
+|
+|1'''F'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Government
+|
+|12345<br>'''Y'''B123<br>'''Z'''B123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Government — Motorcycle
+|
+|'''ST''' 1234
+|
+|-
+|[[File:Floridian Highway Patrol license plate.png|150px]]
+|[[Florida Highway Patrol|State police]]
+|
+|1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Street Rod
+|1983
+|'''Z'''1234
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.30.31 AM.png|150px]]
+|Temporary registration
+|
+|A-123456<br>AB-12345
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.33.26 AM.png|150px]]
+|Truck over 5,000 lb (2.26 t)
+|1986
+|AA0000 - DK9999<br>H00 00A - P19 99L
+|County name or "SUNSHINE STATE" slogan at bottom. Issued in pairs with the validation sticker placed on the front plate.
+<s>I..V to I..Z series are passenger plates, not to be confused.</s>
+|-
+|[[File:Florida Transporter license plate.jpg|150px]]
+|Transporter
+|
+|'''G'''12 34B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Workforce Innovation
+|
+|'''AWI'''12345
+|
+|-
+|[[File:Florida Wrecker Sample License Plate.png|150x150px]]
+|[[Tow truck|Wrecker]]
+|
+|'''D'''12 34B
+|"WRECKER" legend.
+|-
+|[[File:Florida Vehicle Weight Wrecker Sample License Plate.png|frameless|150x150px]]
+|[[Tow truck|Wrecker]] — Weighted
+|
+|'''E'''1234B<br>'''BJ'''12CD
+|"WRECKER" legend. A through E are issued as second letter in the E1234B serial format.
+<s>E..F to E..M series are passenger plates, not to be confused.</s>
+|}
+
+==Personalized plates==
+Florida offers [[Vanity plate|personalized license plate]]s for an extra fee, on the standard orange blossom design and on specialty designs (below). On the orange blossom design and specialty designs with centered graphics, combinations can consist of between one and seven characters specified by the registrant, including letters, numbers, spaces and hyphens. On specialty designs with left-aligned graphics, combinations are limited to a maximum of five characters, and on the Motorcycle Specialty plate, they are limited to a maximum of six characters.<ref>{{cite web |title=Application for Personalized License Plate |url=https://www.flhsmv.gov/pdf/forms/83043.pdf |publisher=Florida Department of Highway Safety and Motor Vehicles |access-date=February 2, 2021}}</ref>
+
+==Specialty plates==
+Florida has offered over 120 specialty license plates to its motorists, most for an extra fee. Some of these plates are no longer issued, while others have been redesigned since they were first issued.<ref name="FLPlateHistory">{{cite web |title=Florida License Plate History |url=https://flhsmv.gov/pdf/about/history/100_years_mv.pdf |publisher=Florida Department of Highway Safety and Motor Vehicles |date=May 2019 |access-date=August 3, 2020}}</ref>
+
+===Collegiate===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued<br>(redesigned)
+!Serial format(s)
+!Notes
+|-
+|[[File:Advent Health University - Florida sample license plate.png|150x150px]]
+|[[AdventHealth University]]<br>(Florida Hospital College of Health Sciences prior to 2012)
+|October 1, 2002<br>(November 1, 2021)
+|'''H'''12 345<br>'''CA'''C12
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Auburn University]]
+|December 18, 2023
+|123'''A'''B
+|Series stated at 001AR.
+|-
+|[[File:Ave Maria University - Florida sample license plate.png|150px]]
+|[[Ave Maria University]]
+|November 1, 2021
+|'''CB'''C12
+|
+|-
+|[[File:Barry University - Florida sample license plate.png|150x150px]]
+|[[Barry University]]
+|July 1, 1998<br>(November 1, 2021)
+|'''AA'''123<br>'''A'''B12C<br>'''CC'''C12<br>'''EE'''C12<br>'''C'''1'''B'''CD
+|
+|-
+|[[File:Beacon College - Florida sample license plate.png|150px]]
+|[[Beacon College]]
+|November 1, 2021
+|'''CD'''C12
+|
+|-
+|[[File:Bethune Cookman College License Plate.jpg|150x150px]]
+|[[Bethune–Cookman University]]<br>(Bethune–Cookman College prior to 2007)
+|February 15, 1997
+|'''BC'''123<br>'''B'''B12C<br>'''B'''B1CD
+|
+|-
+|[[File:Eckerd College - Florida sample license plate.png|150x150px]]
+|[[Eckerd College]]
+|October 1, 2002<br>(November 1, 2021)
+|'''E'''12 345<br>'''CE'''C12
+|
+|-
+|[[File:Edward Waters University - Florida sample license plate.png|150x150px]]
+|[[Edward Waters College]]
+|October 1, 2002<br>(January 7, 2022)
+|'''B'''1BC<br>'''M'''B12<br>'''A'''B12C
+|
+|-
+|[[File:Embry-Riddle Aeronautical University - Florida sample license plate.png|150x150px]]
+|[[Embry–Riddle Aeronautical University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''K'''1BC<br>'''Y'''1BC<br>'''CF'''C12<br>'''ED'''C12
+|
+|-
+|[[File:Everglades University - Florida sample license plate.png|150px]]
+|[[Everglades University]]
+|November 1, 2021
+|'''CG'''C12
+|
+|-
+|[[File:Flagler College - Florida sample license plate.png|150x150px]]
+|[[Flagler College]]
+|October 1, 2002<br>(December 28, 2018, July 27, 2022)
+|'''C'''1BC<br>'''Z'''1BC<br>'''FG'''C1D
+|
+|-
+|[[File:Florida A&M University - Florida sample license plate.png|150x150px]]
+|[[Florida A&M University]]
+|October 1, 1987<br>(July 30, 2025)
+|'''M'''1234<br>'''M'''123B<br>'''M'''12BC<br>'''Y'''12BC<br>'''M'''1BCD
+|
+|-
+|[[File:Florida Atlantic University - Florida sample license plate.png|150x150px]]
+|[[Florida Atlantic University]]
+|October 1, 1987<br>(February 19, 2025)
+|'''A'''1234<br>'''A'''123B
+|
+|-
+|[[File:Florida College - Florida sample license plate.png|150x150px]]
+|[[Florida College]]
+|October 1, 2002<br>(November 1, 2021)
+|'''L'''1BC<br>'''CH'''C12
+|
+|-
+|[[File:Florida Gulf Coast University - Florida sample license plate.png|150x150px]]
+|[[Florida Gulf Coast University]]
+|November 1, 1997<br>(September 27, 2021)
+|'''V'''1234<br>'''V'''123B<br>'''V'''12BC
+|
+|-
+|[[File:Florida Institute of Technology - Florida sample license plate.png|150x150px]]
+|[[Florida Institute of Technology]]
+|October 1, 2002<br>(November 1, 2021)
+|'''Q'''1BC<br>'''CI'''C12
+|
+|-
+|[[File:Florida International University - Florida sample license plate.png|150x150px]]
+|[[Florida International University]]
+|October 1, 1987<br>(February 19, 2025)
+|'''I'''1234<br>'''I'''123B<br>'''I'''12BC
+|
+|-
+|[[File:Florida Memorial University - Florida sample license plate.png|150x150px]]
+|[[Florida Memorial University]]
+|July 1, 1999<br>(March 27, 2023)
+|'''F'''BC1D<br>12'''QA'''C
+|
+|-
+|[[File:Florida Southern College - Florida sample license plate.png|150x150px]]
+|[[Florida Southern College]]
+|October 1, 2002<br>(November 1, 2021)
+|'''D'''1BC<br>'''CJ'''C12<br>'''KA'''1CD
+|
+|-
+|[[File:Florida State University - Florida sample license plate.png|150x150px]]
+|[[Florida State University]]
+|October 1, 1987
+|'''S'''1234<br>'''S'''123B<br>'''S'''12BC<br>'''S'''1BCD<br>'''A'''BC1D<br>1234'''S'''<br>'''S'''B123<br>'''V'''B123<br>'''W'''B123<br>'''W'''B12C<br>'''U'''B12C<br>'''AM'''12C<br>'''FL'''C1D<br>'''J'''1'''K'''CD<br>'''T'''1BCD
+|
+|-
+|[[File:Jacksonville University - Florida sample license plate.png|150x150px]]
+|[[Jacksonville University]]
+|October 1, 2002<br>(October 28, 2019, November 1, 2021)
+|'''R'''1BC<br>12'''J'''B<br>12'''K'''B<br>'''CL'''C12
+|
+|-
+|[[File:Keiser University - Florida sample license plate.png|150x150px]]
+|[[Keiser University]]
+|2015<br>(November 1, 2021)
+|123'''N'''B<br>'''CZ'''C12
+|
+|-
+|[[File:Lynn University - Florida sample license plate.png|150x150px]]
+|[[Lynn University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''E'''1BC<br>'''CM'''C12
+|
+|-
+|[[File:New College of Florida - Florida sample license plate.jpg|frameless|150x150px]]
+|[[New College of Florida]]
+|July 1, 2002 - March 28, 2022<br> April 14, 2025 - Present
+|'''N'''123<br>'''N'''12B<br>'''N'''1BC<br>'''E'''123<br>1'''B'''BC
+|
+|-
+|[[File:Nova Southeastern University - Florida sample license plate.png|150x150px]]
+|[[Nova Southeastern University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''S'''1BC<br>'''S'''B12<br>'''S'''12B<br>12'''U'''B<br>'''CN'''C12
+|
+|-
+|[[File:Palm Beach Atlantic University - Florida sample license plate.png|150x150px]]
+|[[Palm Beach Atlantic University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''F'''1BC<br>'''CP'''C12
+|
+|-
+|[[File:Ringling College of Art and Design - Florida sample license plate.png|150x150px]]
+|[[Ringling School of Art and Design]]
+|October 1, 2002<br>(November 1, 2021)
+|'''U'''1BC<br>'''CQ'''C12
+|
+|-
+|[[File:Rollins College - Florida sample license plate.png|150x150px]]
+|[[Rollins College]]
+|October 1, 2002<br>(November 1, 2021)
+|'''G'''1BC<br>'''R'''B12<br>'''CR'''C12
+|
+|-
+|[[File:Saint Leo University - Florida sample license plate.png|150x150px]]
+|[[Saint Leo University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''V'''1BC<br>'''CS'''C12
+|
+|-
+|[[File:Saint Thomas University - Florida sample license plate.png|150x150px]]
+|[[St. Thomas University (Florida)|Saint Thomas University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''H'''1BC<br>'''CT'''C12
+|
+|-
+|[[File:Southeastern University - Florida sample license plate.png|150x150px]]
+|[[Southeastern University (Florida)|Southeastern University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''W'''1BC<br>'''W'''B12<br>'''CU'''C12
+|
+|-
+|[[File:Stetson University - Florida sample license plate.png|150x150px]]
+|[[Stetson University]]
+|October 1, 2002<br>(November 1, 2021)
+|'''I'''1BC<br>'''Z'''B12<br>'''CV'''C12
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Alabama]]
+|July 17, 2024
+|'''UA'''1CD<br>'''W'''1'''W'''CD
+|
+|-
+|[[File:University of Central Florida - Florida sample license plate.png|150x150px]]
+|[[University of Central Florida]]
+|October 1, 1987<br>(July 26, 2016)
+|'''C'''1234<br>'''C'''123B<br>'''C'''12BC<br>123'''Y'''B<br>'''J'''12'''L'''C<br>'''P'''12BC
+|
+|-
+|[[File:University of Florida - Florida sample license plate.png|150x150px]]
+|[[University of Florida]]
+|October 1, 1987<br>(1997, 2007,
+December 13, 2022)
+|'''F'''1234<br>'''F'''123B<br>'''F'''12BC<br>'''F'''1BCD<br>'''G'''BC1D<br>'''H'''BC1D<br>'''I'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Georgia]]
+|March 27, 2023
+|'''UG'''1CD<br>'''U'''1'''G'''CD<br>'''BU'''C12
+|
+|-
+|[[File:University of North Florida - Florida sample license plate.png|150x150px]]
+|[[University of North Florida]]
+|October 1, 1987&nbsp;– February 1, 2024<br> July 30, 2025&nbsp;–Present
+|'''N'''1234<br>'''N'''123B<br>'''N'''12BC
+|
+|-
+|[[File:University of Miami - Florida sample license plate.png|150x150px]]
+|[[University of Miami]]
+|October 1989
+|'''H'''1234<br>'''H'''123B<br>'''H'''12BC<br>'''H'''BC1D<br>'''X'''12BC<br>'''EF'''C12<br>'''JB'''C12<br>'''FD'''1CD<br>123'''NH'''<br>123'''XA'''<br>12'''HN'''C<br>'''UM'''1CD<br>'''Z'''12'''W'''C
+|
+|-
+|[[File:University of South Florida - Florida sample license plate.png|150x150px]]
+|[[University of South Florida]]
+|October 1, 1987<br>(July 30, 2018)
+|'''U'''1234<br>'''U'''123B<br>'''U'''12BC<br>'''Z'''BC1D
+|
+|-
+|[[File:University of Tampa - Florida sample license plate.png|150x150px]]
+|[[University of Tampa]]
+|October 1, 2002<br>(August 15, 2016, November 1, 2021)
+|'''X'''1BC<br>'''T'''B12<br>'''U'''B12<br>'''V'''B12<br>'''X'''B12<br>'''CW'''C12
+|
+|-
+|[[File:University of West Florida - Florida sample license plate.png|150x150px]]
+|[[University of West Florida]]
+|October 1, 1987<br>(2015)
+|'''W'''1234<br>'''W'''123B<br>'''W'''12BC
+|
+|-
+|[[File:Warner College - Florida sample license plate.png|150x150px]]
+|[[Warner University]]<br>(Warner Southern College prior to 2008)
+|October 1, 2002<br>(November 1, 2021)
+|'''J'''1BC<br>'''CX'''C12
+|
+|-
+|[[File:Webber International University - Florida sample license plate.png|150x150px]]
+|[[Webber International University]]
+|November 1, 2021
+|'''CY'''C12
+|
+|}
+
+===Environmental/Wildlife===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued<br>(redesigned)
+!Serial format(s)
+!Notes
+|-
+|[[File:Animalfren.png|150px]]
+|[[Pet|Animal]] Friend
+|July 1, 2004<br>(September 26, 2016)
+|'''A'''BC12<br>'''B'''BC12
+|
+|-
+|[[File:AquaCul.png|150px]]
+|[[Aquaculture]]
+|July 1, 2004
+|'''A'''B1 234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Bonefish & Tarpon Trust
+|August 28, 2023
+|123'''X'''B
+|
+|-
+|[[File:WildlifeConserve.png|150px]]
+|Conserve [[Ecology of Florida|Wildlife]]
+|July 1, 1998
+|'''CA'''123<br>'''C'''B12C<br>'''C'''B1CD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Conserve Florida Fisheries
+|2021
+|12'''C A'''CD
+|
+|-
+|[[File:DiscoveryHorse.png|150px]]
+|Discover Florida's Horses
+|January 10, 2010
+|12'''D'''BC
+|
+|-
+|[[File:2007 Discover Florida's Oceans License Plate.jpg|150x150px]]
+|Discover Florida's [[Ocean]]s
+|July 1, 2004
+|'''D'''BC12
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Ducks Unlimited
+|March 27, 2023
+|'''E'''BC12
+|
+|-
+|[[File:FloridaEndlessSummerPlate.jpg|150x150px]]
+|Endless Summer
+|2010
+|12'''E'''BC<br>12'''J'''BC<br>12'''K'''BC<br>'''P'''B1CD<br>123'''C'''B<br>'''E'''BC12<br>'''F'''BC12<br>'''C'''1BCD<br>'''JK'''C12<br>'''F'''B1CD
+|
+|-
+|[[File:EvergladesPlate.png|150px]]
+|[[Everglades]] River of Grass
+|July 1, 1998
+|'''EA'''123<br>'''E'''B12C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Explore Off-Road
+|May 26, 2022
+|'''J'''BC1D
+|
+|-
+|[[File:FishingFlorida.png|150px]]
+|[[Fishing|Fish]] Florida
+|October 1, 2003
+|'''J'''B1CD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Florida Bay Forever
+|April 8, 2024
+|123'''C'''B<br>'''F'''B123<br>'''FR'''C12
+|
+|-
+|[[File:FloridaGoFishingPlate.jpg|150x150px]]
+|Go Fishing
+|March 15, 1997
+|'''LA'''123<br>'''L'''B12C<br>'''L'''B1CD
+|
+|-
+|[[File:FloridaHelpingSeaTurtles.jpg|150x150px]]
+|Helping [[Sea Turtle]]s Survive
+|February 1, 1998
+|'''R'''BC 123
+|
+|-
+|[[File:FloridaIndianRiverLagoonPlate.jpg|150x150px]]
+|[[Indian River Lagoon]]
+|February 15, 1995<br>April 24, 2023
+|'''R'''1234<br>'''R'''123B<br>'''R'''12BC<br>'''R'''1BCD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Protect [[Biscayne Bay]]
+|June 23, 2025
+|'''CZ'''1CD
+|
+|-
+|[[File:FloridaSprings.png|150px]]
+|Protect [[List of major springs in Florida|Florida Springs]]
+|October 1, 2007
+|'''P'''12 345
+|
+|-
+|[[File:FloridaWhales.png|150px]]
+|Protect Florida [[Whale]]s
+|July 1, 2002
+|'''W'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Protect Marine Wildlife
+|March 27, 2023
+|'''E'''BC12<br>'''LA'''C12<br>'''FA'''1CD<br>'''CS'''1CD
+|
+|-
+||[[File:ProtectOceans.png|150px]]
+|Protect Our Oceans
+|October 1, 2010
+|12'''G'''BC<br>'''F'''B123<br>'''F'''BC12<br>'''CU'''1CD
+|The "Protect Our Oceans" plate, introduced in the spring of 2015, is a re-design of the original "Catch Me, Release Me" plate. 
+|-
+|[[File:ProtectReefs.png|150px]]
+|Protect Our [[Florida Reef|Reefs]]
+|July 1, 2003
+|'''R'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="3" |Protect the [[Florida panther|Panther]]
+|October 15, 1990
+| rowspan="2" |'''L'''BC 123<br>'''M'''BC 123
+| rowspan="3" |Original design: white plate with panther in center (serials LAA 001 through LEE 999). Current design: white and orange gradient plate with panther's head in center and grass at bottom (serials LEF 001 and up).
+|-
+|[[File:Florida 1998 Protect The Panther License Plate.jpg|150px]]
+|1993
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|November 27, 2023
+|'''X'''1BCD
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Protect the Gopher Tortoise
+|April 14, 2025
+|'''CV'''1CD
+|
+|-
+|[[File:Florida 2019 Protect Wild Dolphins license plate.jpg|150px]]
+|Protect Wild [[Dolphin]]s
+|July 1, 1998
+|'''DA'''123<br>'''D'''B12C<br>'''D'''B1CD<br>'''D'''BC1D<br>'''X'''B12C
+|
+|-
+|[[File:ProtectSeas.png|150px]]
+|Save Our [[Sea]]s
+|July 1, 2004
+|'''Q'''BC12<br>'''R'''BC12<br>'''S'''BC12<br>'''Q'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Save the [[Bee]]s
+|October 29, 2025
+|'''FS'''1 2CD
+|
+|-
+| [[File:2001FloridaManatee.jpg|frameless|150x150px]]
+| rowspan="2" |Save the [[West Indian manatee|Manatee]]
+|March 16, 1990
+| rowspan="2" |'''H'''BC 123<br>'''I'''BC 123
+| rowspan="2" |Original design: red serial on white, blue and green plate with manatee in center (serials HAA 001 through IBX 999). Current design: black serial on yellow, green and blue plate with manatee in center (serials IBY 001 and up).
+|-
+|[[File:ManUhTees.png|150px]]
+|2008
+|-
+|[[File:SaveWildlife.png|150px]]
+|Save Wild Florida
+|
+|12'''F'''BC
+|Features a [[Miami blue]] butterfly at left.
+|-
+|[[File:Florida Wildlife Conservation license plate.png|150px]]
+|Sportsmen's National Land Trust / Wildlife Foundation of Florida
+|July 1, 2004<br>(2014)
+|'''V'''BC12<br>'''W'''BC12
+|Both designs feature a [[white-tailed deer]] at left.
+|-
+||[[File:Blank License Plate Shape.svg|150px]]
+|State Parks
+|2022
+|'''BI'''1 2CD
+|
+|-
+|[[File:Florida State Wildflower License Plate.jpg|150x150px]]
+|State [[Wildflower]]
+|July 1, 1999
+|'''W'''BC 123
+|
+|-
+|[[File:TampBayEstuary.png|150px]]
+|[[Tampa Bay]] Estuary
+|June 10, 1999
+|'''T'''BC1D
+|
+|-
+|[[File:TreeAreCool.png|150px]]
+|[[Tree]]s Are Cool
+|October 1, 2007
+|12'''C'''BC
+|
+|}
+
+===Special Interest===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued<br>(redesigned)
+!Serial format(s)
+!Notes
+|-
+|[[File:AgricultureEducation.png|150px]]
+|[[National FFA Organization|Agricultural Education]]
+|July 1, 2006
+|'''J'''B123<br>'''J'''BC1D
+|
+|-
+|[[File:AgriPlate.png|150px]]
+|[[Agriculture]]
+|April 1, 1997
+|'''V'''BC 123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Alpha Kappa Alpha]]
+|May 26, 2022
+|123 4'''AB'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Alpha Phi Alpha]]
+|May 26, 2022
+|123 4'''AC'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|America the Beautiful
+|May 26, 2022
+|'''A'''B12C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Big Brothers, Big Sisters
+|2013 (2019)
+|123'''E'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|''[[Space Shuttle Challenger|Challenger]]''/''[[Space Shuttle Columbia|Columbia]]''
+|January 1, 1987<br>(2001, 2005)
+|'''KSC''' 123<br>'''A'''BC 123<br>'''B'''BC 123<br>'''T'''B123<br>'''TA'''12C<br>'''T'''B1CD
+|The first issuance of a speciality plate, commemorating their astronauts following [[Space Shuttle Challenger disaster]] in 1986. In 2005, due to [[Space Shuttle Columbia disaster]] that arose in 2003, Florida redesigned by inserting “Columbia” on their plate.
+|-
+|[[File:FloridaChooseLifePlate.jpg|150x150px]]
+|[[Choose Life license plates|Choose Life]]
+|July 1,1999
+(2022)
+|'''C'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Delta Sigma Theta]]
+|May 26, 2022
+|123 4'''AD'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disease Prevention & Early Detection
+|February 23, 2026
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Don't Tread on Me]]
+|December 13, 2022
+|'''G'''BC12<br>'''JL'''C12<br>'''J'''12'''K'''C<br>'''K'''B1CD<br>'''Y'''123B<br>'''F'''B123
+|
+|-
+|[[File:EndBreaCan.png|150px]]
+|End [[Breast Cancer]]
+|July 1,1998
+(2022)
+|'''K'''BC1D
+|
+|-
+|[[File:FamFir.png|150px]]
+|Family First
+|July 1,2004
+(2022)
+|'''F'''B1 234
+|
+|-
+|[[File:FamilyValues.png|150px]]
+|[[Family values|Family Values]]
+|July 1, 2004<br>(October 2, 2023)
+|'''V'''B1 234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Sheriffs Association]]
+|2014
+|'''F'''B12C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Florida Stands with Israel
+|January 30, 2025
+|'''UB'''1CD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Fraternal Order of Police|Fraternal Order of Police]]
+|2010
+|123'''F'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Freemasonry]]
+|2013
+|123'''K'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Honoring Law Enforcement
+|2014
+|123'''L'''B<br>'''CP'''1CD
+|
+|-
+|[[File:Florida 2018 Horse Country license plate.jpg|150px]]
+|[[Horse]] Country
+|August 1,2008
+(2022)
+|12'''H'''BC
+|
+|-
+|[[File:Hospice.png|150px]]
+|[[Hospice]] – Every Day Is a Gift
+|July 1,2003
+(2022)
+|123'''H'''B<br>123'''I'''B
+|
+|-
+|[[File:JonLenin.png|150px]]
+|[[John Lennon|Imagine]]
+|July 1,2004
+(2022)
+|123 4'''F'''B
+|
+|-
+|[[File:In God We Trust license plate.jpg|150x150px]]
+|[[In God We Trust]]
+|October 1, 2008
+|'''I'''BC12
+|
+|-
+|[[File:2017FloridaChildren.jpg|150x150px]]
+|Invest in Children
+|June 1,1995
+(2022)
+|123 '''C'''BC<br>123 '''D'''BC
+|The series skipped to 001 DJJ after approximately issuing 370 CCJ.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Iota Phi Theta]]
+|May 26, 2022
+|123 4'''AE'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|K9s United
+|January 30, 2025
+|'''G'''BC12
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Kappa Alpha Psi]]
+|May 26, 2022
+|123 4'''AF'''
+|
+|-
+|[[File:LuarinKid.png|150px]]
+|[[Lauren's Kids]]
+|July 1,2014
+(2022)
+|123'''G'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Margaritaville
+|July 30, 2025
+|'''J'''BC12
+|
+|-
+|[[File:MLKDream.png|150px]]
+|[[Martin Luther King Jr.|Live the Dream]]
+|July 1,2004
+(2022)
+|'''D'''B1 234
+|
+|-
+|[[File:MoffittCanCen.png|150px]]
+|[[H. Lee Moffitt Cancer Center & Research Institute|Moffitt Cancer Center]]
+|2015
+|123'''P'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Omega Psi Phi]]
+|May 26, 2022
+|123 4'''AG'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Phi Beta Sigma]]
+|May 26, 2022
+|123 4'''AH'''
+|
+|-
+|[[File:SaluteFire.png|150px]]
+|Salutes [[Firefighter]]s
+|July 1,2002 (2022)
+|'''Y'''B1CD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Sigma Gamma Rho]]
+|May 26,2022
+|123 4'''AI'''
+|
+|-
+|[[File:Florida "State of the Arts" License Plate.jpg|alt=This plate says "Florida" on the top, "State of the Arts" at the bottom, and incorporates a colored design that is teal on the top, blue on the bottom, and red in the middle.|150px]]
+|State of the [[Fine art|Arts]]
+|February 1,1995
+(2022)
+|'''F'''BC 123
+|
+|-
+|[[File:StopChildAbuse.png|150px]]
+|Stop [[Child Abuse]]
+|July 1,2003 (2022)
+|123'''S'''B<br>123'''T'''B
+|
+|-
+|[[File:HearDisease.png|150px]]
+|Stop [[Cardiovascular disease|Heart Disease]]
+|July 1,2003
+|'''S'''12 345
+|
+|-
+|[[File:AutismAwareness.png|150px]]
+|Support [[Autism]] Programs
+|September 1,2009 (2022)
+|12'''S'''BC
+|
+|-
+|[[File:EducationSupport.png|150px]]
+|Support Education
+|October 1, 1994<br>(December 13, 2018)
+|123 '''A'''BC<br>'''M'''BC12
+|
+|-
+|[[File:HomeOwnership.png|150px]]
+|Support Homeownership for All
+|July 1, 2006<br>(March 25, 2024)
+|'''Q'''B123<br>'''FQ'''C12
+|
+|-
+|[[File:FloridaSupportLawEnforcement.jpg|150x150px]]
+[[File:LawEnforceNEW.png|150x150px]]
+|Support Law Enforcement
+|October 1, 2002<br>(September 15, 2020)
+|'''P'''BC1D
+|
+|-
+|[[File:United911.png|150px]]
+|[[September 11 attacks|United We Stand]]
+|September 1,2002
+(2022)
+|123 '''U'''BC
+|
+|-
+|[[File:LighthouseVisit.png|150px]]
+|Visit [[List of lighthouses in Florida|Our Lights]]
+|October 1, 2008<br>(July 29, 2019)
+|'''V'''B12C
+|
+|-
+|[[File:DidneyWorlPlate.png|150px]]
+|[[Walt Disney World]]
+|August 26,2021
+|12'''D'''BC<br>'''E'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Zeta Phi Beta]]
+|May 26, 2022
+|123 4'''AJ'''
+|
+|}
+
+===Sports===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued<br>(redesigned)
+!Serial format(s)
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Panthers]]
+|June 1, 1995<br>(June 28, 2017, April 24, 2023)
+|'''P'''1234<br>'''P'''123B<br>'''PA'''1 234<br>12'''P'''BC<br>12'''RN'''C<br>'''F'''BC12<br>'''LH'''C12
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.38.29 AM.png|150px]]
+|[[Golf]] Capital of the World
+|July 1, 2002
+|'''J'''B1 23C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Inter Miami CF]]
+|August 28, 2025
+|'''J'''BC12
+|
+|-
+| [[File:2002FloridaJaguarsFIXED.jpg|frameless|150x150px]]
+|[[Jacksonville Jaguars]]
+|June 1,1995
+July 23,2010
+September 14,2023
+|'''J'''1234<br>'''J'''123B<br>'''J'''12BC<br>'''J'''1BCD
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.39.07 AM.png|150px]]
+|[[Miami Dolphins]]
+|April 1, 1995<br>(2015, October 28, 2019)
+|'''D'''1234<br>'''D'''123B<br>'''D'''12BC<br>'''D'''1BCD
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.40.00 AM.png|150px]]
+|[[Miami Heat]]
+|June 1, 1995<br>(November 13, 2018, December 3, 2021, October 2, 2023)
+|'''L'''1234<br>'''L'''123B<br>'''L'''12BC<br>'''L'''1BCD<br>'''L'''BC12<br>'''CW'''1CD<br>'''Y'''123B
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.40.32 AM.png|150px]]
+|[[Miami Marlins]]<br>(Florida Marlins prior to 2012)
+|July 1, 1995<br>(April 29, 2019)
+|'''E'''1234<br>'''E'''123B<br>'''E'''12BC
+|
+|-
+|[[File:NASCAR license plate.jpg|150x150px]]
+[[File:Screen Shot 2024-03-03 at 11.41.10 AM.png|150x150px]]
+|[[NASCAR]]
+|October 1, 2007<br>(2015)
+|12'''N'''BC
+|
+|-
+|[[File:FloridaOlympicPlate.jpg|150x150px]]
+[[File:OlymTeamUSA.png|150x150px]]
+|[[Olympic Spirit]]
+|January 1,1994
+July 23,2012
+August 10,2023
+|'''G'''1234<br>'''G'''123B<br>'''G'''12BC<br>'''G'''1BCD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Orlando City SC]]
+|March 14, 2023
+|123 '''SE'''C
+|
+|-
+|[[File:Orlandomagic.png|150px]]
+|[[Orlando Magic]]
+|June 1, 1995<br>(August 28, 2025)
+|'''K'''1234<br>'''K'''123B<br>'''K'''12BC
+|
+|-
+|[[File:Playtennis.png|150px]]
+|Play [[Tennis]]
+|October 1, 2008
+|123'''B'''B
+|
+|-
+|[[File:2007FloridaPoliceAthletic.jpg|150x150px]]
+|[[Police Athletic League]]
+|February 15,1997
+(2009)
+|'''PA'''123<br>'''P'''B12C<br>'''P'''B1CD
+|
+|-
+|[[File:ShareRoad.png|150px]]
+|[[Cycling|Share the Road]]
+|June 10,1999
+(2010)
+|123 '''E'''BC<br>'''E'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Swim For Life
+|January 8, 2025
+|12'''F'''&nbsp;'''H'''CD
+|
+|-
+|[[File:TampBuccs.png|150px]]
+|[[Tampa Bay Buccaneers]]
+|April 1, 1998<br>(2008, 2015, August 12, 2021, June 20, 2025)
+|'''B'''1234<br>'''B'''123B<br>'''B'''12BC<br>'''B'''1BCD
+|
+|-
+|[[File:TampLightning.png|150px]]
+|[[Tampa Bay Lightning]]
+|June 1, 1995<br>(August 26, 2019)
+|'''T'''1234<br>'''T'''123B<br>'''T'''12BC
+|
+|-
+|[[File:TampRays.png|150px]]
+|[[Tampa Bay Rays]]<br>(Tampa Bay Devil Rays prior to 2008)
+|March 1, 1997<br>(2008)
+|'''Q'''1234<br>'''Q'''123B<br>'''Q'''12BC
+|
+|}
+
+===Military===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued<br>(redesigned)
+!Serial format(s)
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[American Legion]]
+|2013
+|123'''D'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Blue Angels]]
+|2021
+|'''A'''1BCD<br>'''B'''B123<br>'''CY'''1CD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Blue Angels — Motorcycle
+|2021
+|123A<br>'''F'''123<br>12'''B'''B
+|
+|-
+|[[File:FL-2010.jpg|150px]]
+|Salutes [[Veteran]]s
+|1999
+|'''S'''BC1D
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.18.36 AM.png|150px]]
+|Support Our Troops
+|October 1, 2007
+|12'''T'''BC
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.19.38 AM.png|150px]]
+|[[United States Air Force|U.S. Air Force]]
+|July 1, 2003
+|'''A'''BC1D
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.20.13 AM.png|150px]]
+|[[United States Army|U.S. Army]]
+|July 1, 2003
+|'''B'''BC1D
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.20.48 AM.png|150px]]
+|[[United States Coast Guard|U.S. Coast Guard]]
+|July 1, 2003
+|123'''V'''B<br>12'''I'''BC
+|
+|-
+|[[File:Florida 2018 Marince Corps license plate - UNS9P.jpg|150px]]
+|[[United States Marine Corps|U.S. Marine Corps]]
+|July 1, 1999
+|'''U'''BC1D<br>'''Q'''BC1D
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.21.19 AM.png|150px]]
+|[[United States Navy|U.S. Navy]]
+|July 1, 2003
+|'''N'''BC1D
+|
+|}
+
+===Special military===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued<br>(redesigned)
+!Serial format(s)
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Combat Action Medal|Air Force Combat Action Medal]]
+|April 25, 2016
+|'''Y'''1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Air Force Cross (United States)|Air Force Cross]]
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Army of Occupation Medal|Army of Occupation]]
+|May 26, 2022
+|'''AN'''12C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Bronze Star Medal|Bronze Star]]
+|August 9, 2021
+|'''B'''B123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Combat Action Badge]]
+|
+|1'''T'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Combat Action Ribbon]]
+|
+|123'''U'''B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Combat Infantryman Badge|Combat Infantry Badge]]
+|
+|1'''H'''BC<br>1'''I'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Combat Medical Badge]]
+|
+|'''X'''123B
+|
+|-
+|[[File:FloridaDVPlate.jpg|150x150px]]
+|Disabled Veteran (Disabled)
+|
+|{{access icon|10px}}&nbsp;1234<br>{{access icon|10px}}&nbsp;ABC1<br>{{access icon|10px}}&nbsp;12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Veteran
+|
+|'''DV'''12345<br>'''DV'''1234C<br>'''DV'''1234<br>'''DV'''12CD<br>12345'''DV'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Veteran — Motorcycle
+|
+|'''DV'''1234<br>1234'''D'''B
+|Progression of second letter: V, A, B.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Distinguished Flying Cross (United States)|Distinguished Flying Cross]]
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Distinguished Service Cross (United States)|Distinguished Service Cross]]
+|
+|
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.14.06 AM.png|150px]]
+|Ex-[[Prisoner of War]]
+|1983
+|{{small|EX-POW}} 123<br>{{small|EX-POW}} 1234<br>{{small|EX-POW}} '''P'''BC1
+|Orange blossom design.
+|-
+|[[File:Screen Shot 2024-03-03 at 11.10.41 AM.png|150px]]
+|[[Gold Star Lapel Button|Gold Star]] family
+|April 1, 2008
+|1'''G'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Korean War Veteran
+|
+|1'''Q'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Guard]]
+|
+|1234<br>A12B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Navy Cross
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Navy Submariner
+|April 25, 2016
+|'''V'''B1C<br>'''U'''B1C
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Gulf War#Operation Desert Shield|Operation Desert Shield]]
+|
+|1'''Y'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Gulf War|Operation Desert Storm]]
+|
+|1'''V'''BC<br>1'''W'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Operation Enduring Freedom]]
+|2006
+|'''J'''B1C<br>'''K'''B1C<br>'''L'''B1C
+|
+|-
+|[[File:FL 2011 Iraqi Freedom License Plate.jpg|center|frameless|150x150px]]
+[[File:Screen Shot 2024-03-03 at 11.16.54 AM.png|150px]]
+|[[Operation Iraqi Freedom]]
+|2010 (2014)
+|'''A'''B1C<br>'''B'''B1C<br>'''C'''B1C<br>'''D'''B1C
+|Double orange base pictured was replaced in 2014 by updated design.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Paralyzed Veterans of America]]
+|1987
+|A12B
+|
+|-
+|[[File:Screen Shot 2024-03-03 at 11.12.23 AM.png|150px]]
+|[[Attack on Pearl Harbor|Pearl Harbor]] survivor
+|1983
+|1234
+|Orange blossom design.
+|-
+|[[File:Screen Shot 2024-03-03 at 11.13.04 AM.png|150px]]
+|[[Purple Heart]] recipient
+|
+|12345<br>'''Q'''B1CD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Purple Heart — Motorcycle
+|2021
+|1'''P'''BC<br>'''E'''1BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Silver Star]]
+|
+|
+|
+|-
+|[[File:FloridaParatrooperPlate.jpg|150x150px]]
+|U.S. [[paratrooper]]
+|July 1, 2003
+|123'''W'''B<br>'''EN'''C1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|U.S. Reserve
+|1983
+|1234<br>'''U'''B123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran
+|
+|'''Z'''123B<br>'''X'''B1CD
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran (Motorcycle)
+|2021
+|'''X'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Vietnam War Veteran
+|
+|1'''L'''BC<br>1'''M'''BC<br>1'''N'''BC<br>1'''Z'''BC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Woman Veteran
+|2016
+|'''X'''1234<br>'''EG'''C12
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Woman Veteran — Motorcycle
+|2021
+|'''Y'''BC1D
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[World War II]] Veteran
+|April 25, 2016
+|
+|
+|}
+
+===Other===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:Screen Shot 2024-03-03 at 11.36.44 AM.png|150px]]
+|Motorcycle Specialty
+|October 1, 2003
+|'''Y'''12345
+|Red, white and blue design.
+|}
+
+===Discontinued===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Serial format(s)
+!Serials issued
+!Notes
+|-
+|[[File:StateofVision.png|150px]]
+|A State of Vision
+|July 1, 2006&nbsp;– November 1, 2024
+|'''X'''B123
+|XA001 to XR513
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[American Red Cross]]
+|July 1, 2002&nbsp;– March 2016
+|123'''A'''B
+|001AA to 866AE
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Best Buddies
+|July 26, 2023&nbsp;– February 17, 2025
+|12'''P'''BC<br>'''FB'''1CD
+|01PAA to 99PBZ<br>FB0AA to FB9ZZ
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Clearwater Christian College]]
+|October 1, 2002&nbsp;– September 2015
+|'''A'''1BC
+|A0AA to approximately A9JZ
+|Discontinued following the college's closure.<ref name="FLPlateHistory"/>
+|-
+|[[File:1999 Floridian collectible license plate.jpg|frameless|150x150px]]
+|Collectible
+|1996 - 1999
+|123456
+|
+|Discontinued due to abuse of the reduced rate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Columbus Jubilee
+|1991&nbsp;– January 1, 1994
+|'''P'''BC 123
+|PAA 001 to approximately PAJ 599
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Corrections]] Foundation
+|October 1, 2007&nbsp;– 2009
+|1'''C'''BC<br>1'''D'''BC
+|1CAA to approximately 9DTZ
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Organ donation|Donate Organs]]
+|July 1, 2006&nbsp;– 2016
+|'''Y'''123B
+|Y001A to Y720L
+|
+|-
+|[[File:YouthRanches.png|150px]]
+|[[Florida Sheriffs Youth Ranches]]
+|July 1, 1998&nbsp;– November 1, 2024
+|'''RA'''123<br>'''R'''B12C
+|RA001 to RA999<br>RA00A to RN87Y
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Girl Scouts of the USA|Girl Scouts]]
+|1996&nbsp;– February 20, 2002
+|'''GA'''123<br>'''G'''B12C
+|GA001 to GA999<br>GA01A to GE13F
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Hispanic Achievers
+|2010&nbsp;– July 1, 2016
+|123 4'''AA'''
+|000 1AA to 649 3AA
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Hodges University
+|November 1, 2021&nbsp;–  March 1, 2024
+|'''CK'''C12
+|CKA01 to approximately CKS55
+|
+|-
+|[[File:MV8 Florida Honorary Consul plate.jpg|frameless|150x150px]]
+|[[Honorary Consul]]
+|1989&nbsp;– 2022
+|1<br>123<br>AB1
+|
+|
+|-
+|[[File:Florida Keep Kids Drug Free license plate.jpg|150x150px]]
+|Keep Kids Drug Free
+|July 1, 1998&nbsp;– November 1, 2024
+|'''KA'''123<br>'''K'''B12C
+|KA001 to KA999<br>KA01A to KR94E
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Kids Deserve Justice
+|July 1, 2004 – February 15, 2023
+|'''K'''BC12&nbsp;
+|KAA01 to KIV13
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Florida Bobcats|Miami Hooters]]
+|1995&nbsp;– December 1997
+|'''M'''123<br>'''M'''12B
+|M001 to M999;<br>M01A to approximately M81P
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Orlando Predators]]
+|1995&nbsp;– December 1997
+|'''P'''123<br>'''P'''12B<br>'''P'''1BC
+|P001 to P999<br>P01A to P99Z<br>P0AA to approximately P6IS
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Parent]]s Make a Difference
+|July 1, 2004&nbsp;– February 3, 2020
+|'''P'''BC12
+|PAA01 to PHI89
+|
+|-
+|[[File:Floridian "Salutes Veterans" license plate.jpg|center|frameless|150x150px]]
+|Salutes Veterans
+|October 10, 1989 - 1999
+|'''D'''BC 123
+|DAA 001 to DEH 550
+|Replaced with the redesigned version.
+|-
+|[[File:BoyscoutValues.png|150px]]
+|[[Scouting]] Teaches Values
+|February 15, 1997&nbsp;– November 1, 2024
+|123 '''S'''BC
+|001 SAA to 954 SBE
+|
+|-
+|[[File:SpecOlym.png|150px]]<br>[[File:Florida License Plate Support Florida Special Olympics.jpg|150px]]
+|[[Special Olympics]]
+|January 1, 1994&nbsp;– November 1, 2024
+|'''S'''BC 123
+|SAA 001 to SCG 357
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[St. Johns River]]
+|2010&nbsp;– July 1, 2016
+|12'''R'''BC
+|01RAA to 32RDG
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Super Bowl
+|October 1, 1989&nbsp;– January 1, 1994
+|'''T'''BC 123
+|TMM 001 to approximately TPT 454
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support [[Association football|Soccer]]
+|July 1, 2004&nbsp;– 2018
+|123 4'''S'''B
+|000 1SA to 176 6SC
+|Discontinued following the closure of Lighthouse Soccer Foundation Inc.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support Scenic Walton
+|November 13, 2023&nbsp;– February 6, 2026
+|'''FC'''1CD
+|FC0AA to FC8ZY
+|
+|-
+|[[File:2006 Tampa Bay Storm Florida License Plate.jpg|frameless|150x150px]]
+|[[Tampa Bay Storm]]
+|1995&nbsp;– February 20, 2002
+|'''T'''123<br>'''T'''12B
+|T001 to T999<br>T00A to approximately T99T
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/fl.html Florida license plates, 1969–present]{{Dead link|date=November 2025 |bot=InternetArchiveBot }}
+*[http://www.flhsmv.gov/dmv/specialtytags/ Florida DMV listing of specialty plates]
+*[http://platesmania.com/us/florida Florida license plates]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Florida}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Florida}}
+[[Category:Vehicle registration plates of the United States by state or territory|Florida]]
+[[Category:Transportation in Florida]]
+[[Category:Florida transportation-related lists]]

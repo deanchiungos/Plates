@@ -1,0 +1,969 @@
+{{short description|Louisiana vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = [[File:Louisiana America 250 license plate.jpg|150px]]
+| nickname =
+| slogan_label = Slogan
+| slogan = Sportsman's Paradise
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123 ABC
+| current_start_date = {{Start date|2025|01}}
+| designer = 
+| issuer = [[Louisiana Department of Public Safety & Corrections]], Public Safety Services, Office of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1915|01|01}}
+}}
+The U.S. state of [[Louisiana]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1915.<ref>{{cite book |last1=Shearer |first1=Benjamin F. |last2=Shearer |first2=Barbara S. |year=2001 |title=State Names, Seals, Flags, and Symbols: A Historical Guide |edition=3rd |location=Westport, CT |publisher=[[Greenwood Publishing Group|Greenwood Press]] |page=200 |isbn=0-313-31534-5}}</ref> {{As of|2024}}, plates are issued by the Public Safety Services division of the [[Louisiana Department of Public Safety & Corrections]], through the division's Office of Motor Vehicles. Only rear plates have been required since 1952.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1915 to 1963===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1954 (dated 1955) issue was the first Louisiana license plate that complied with these standards.
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1915 Louisiana license plate.jpg|150px]]
+|1915
+|Embossed white serial on dark blue plate; vertical "LA" and "1915" at left and right respectively
+|''none''
+|12345
+|1 to approximately 10500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|1916
+|Embossed white serial on green plate; stylized "LA" and "16" at left 
+|''none''
+|12345
+|1 to approximately 16000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|1917
+|Embossed dark blue serial on white plate; stylized "LA" and "17" at left
+|''none''
+|12345
+|1 to approximately 27000
+|
+|-
+|[[File:Louisiana 1918 license plate.jpg|150px]]
+|1918
+|Embossed black serial on orange plate with border line; stylized "LA" and "18" at left
+|''none''
+|12345
+|1 to approximately 40000
+|
+|-
+|[[File:1919 Louisiana license plate.jpg|150px]]
+|1919
+|Embossed black serial on light green plate with border line; stylized "LA" and "19" at left
+|''none''
+|12345
+|1 to approximately 50000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed white serial on maroon plate; stylized "LA" and "20" at left
+|''none''
+|12345
+|1 to approximately 54000
+|
+|-
+|[[File:1921 Louisiana license plate.jpg|150px]]
+|1921
+|Embossed black serial on gray plate with border line; stylized "LA" and "21" at left
+|''none''
+|12345
+|1 to approximately 79000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|rowspan="2"|1922
+|Embossed white serial on green plate with border line; stylized "LA" and "22" at left
+|''none''
+|rowspan="2"|123456
+|1 to 20000; 100001 to approximately 105000
+|rowspan="2"|Separate bases issued for vehicles up to 23 [[Horsepower|hp]] and for vehicles above this power; this practice continued through 1929. In all years, the base with low-numbered serials (starting from 1) was issued on the vehicles above 23&nbsp;hp.<ref name="allaboutlicenseplatesLA">{{cite web |last=Tanner |first=Eric N. |title=Louisiana Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Louisiana&code=la |publisher=allaboutlicenseplates.com |access-date=November 20, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|Embossed maroon serial on white plate with border line; stylized "LA" and "22" at left
+|''none''
+|20001 to 100000
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|rowspan="2"|1923
+|Embossed black serial on gray plate with border line; "LA 23" at left
+|''none''
+|rowspan="2"|123456
+|1 to 30000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Embossed white serial on black plate with border line; "LA 23" at left
+|''none''
+|30001 to approximately 116000
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|rowspan="2"|1924
+|Embossed white serial on dark blue plate with border line; "LA 24" at right
+|''none''
+|rowspan="2"|123456
+|1 to 30000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|Embossed black serial on white plate with border line; "LA 24" at right
+|''none''
+|30001 to approximately 143000
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|rowspan="2"|1925
+|Embossed red serial on gray plate with border line; "LA 25" at right
+|''none''
+|rowspan="2"|123456
+|1 to 40000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Embossed white serial on maroon plate with border line; "LA 25" at right
+|''none''
+|40001 to approximately 179000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1926
+|Embossed white serial on dark blue plate with border line; "LA-1926" centered at bottom
+|''none''
+|rowspan="2"|123-456
+|1 to 40-000; 200-001 to approximately 205-000
+|rowspan="2"|
+|-
+|[[File:1926 Louisiana license plate.jpg|150px]]
+|Embossed maroon serial on white plate with border line; "LA-1926" centered at bottom
+|''none''
+|40-001 to<br>200-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1927
+|Embossed white serial on green plate with border line; "LA-1927" centered at bottom
+|''none''
+|rowspan="2"|123-456
+|1 to 50-000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Embossed black serial on cream plate with border line; "LA-1927" centered at bottom
+|''none''
+|50-001 to approximately 224-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1928
+|Embossed white serial on dark blue plate with border line; "LA-1928" centered at bottom
+|''none''
+|rowspan="2"|123-456
+|1 to 70-000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|Embossed dark blue serial on white plate with border line; "LA-1928" centered at bottom
+|''none''
+|70-001 to approximately 232-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150x150px]]
+|rowspan="2"|1929
+|Embossed yellow serial on black plate with border line; "LOUISIANA 1929" at bottom, slightly offset to right; vertical "FRONT" or "REAR" at left
+|''none''
+|rowspan="2"|123-456
+|1 to 70-000; 234-001 to approximately 268-000
+|rowspan="2"|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|Embossed black serial on orange plate with border line; "LOUISIANA 1929" at bottom, slightly offset to right; vertical "FRONT" or "REAR" at left
+|''none''
+|70-001 to<br>234-000
+|-
+|[[File: 1930 Louisiana license plate FRONT.JPG|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed yellow serial on green plate with border line; "LOUISIANA-30" centered at bottom; vertical "FRONT" or "REAR" at left
+|''none''
+|123-456
+|1 to approximately 254-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1931 Louisiana license plate.jpg|150px]]
+|1931
+|Embossed white serial on dark blue plate with border line; "LOUISIANA–1931" centered at top; vertical "FRONT" or "REAR" at left
+|''none''
+|123-456
+|1 to approximately 249-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial with [[pelican]] separator on red plate with border line; "LOUISIANA" centered at top; vertical "1932" at right and vertical "FRONT" or "REAR" at left
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch&nbsp;office<ref name="allaboutlicenseplatesLA"/>
+|First base to feature a pelican in any form.
+|-
+|[[File:1933 Louisiana license plate.jpg|150px]]
+|1933
+|Embossed black serial with pelican separator on orange plate with border line; "LA–33" centered at top
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1934 Louisiana license plate.jpg|150px]]
+|1934
+|Embossed white serial with pelican separator on dark blue plate with border line; "LA" and "34" above and below pelican respectively
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1935 Louisiana license plate.jpg|150px]]
+|1935
+|Embossed yellow serial with pelican separator on purple plate with border line; "35" and "LA" above and below pelican respectively
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1936 Louisiana license plate.jpg|150px]]
+|1936
+|Embossed light blue serial with pelican separator on olive green plate with border line; "LOUISIANA–1936" centered at top
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1937 Louisiana license plate.jpg|150px]]
+|1937
+|Embossed golden yellow serial with pelican separator on maroon plate with border line; "LOUISIANA–1937" centered at bottom
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1938 Louisiana license plate.jpg|150px]]
+|1938
+|Embossed white serial with pelican separator on red plate with border line; "LOUISIANA–1938" centered at top
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1939 Louisiana license plate.JPG|150px]]
+|1939
+|Embossed orange serial with pelican separator on black plate with border line; "LOUISIANA–1939" centered at bottom
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1940 Louisiana license plate.jpg|150px]]
+|1940
+|Embossed dark blue serial with state-shaped separator on orange plate with border line; "LOUISIANA–1940" centered at top
+|''none''
+|123-456
+|Issued in blocks by horsepower class and branch office
+|
+|-
+|[[File:1941 Louisiana license plate.jpg|150px]]
+|1941
+|Embossed black serial with state-shaped separator on white plate with border line; "LOUISIANA–1941" centered at bottom
+|''none''
+|123-456
+|1-001 to approximately 406-000
+|
+|-
+|[[File:1942 Louisiana license plate.jpg|150px]]
+|{{nowrap|1942–43}}
+|Embossed white serial with pelican separator on red plate with border line; "LOUISIANA–1942" centered at top
+|''none''
+|123-456
+|1-001 to approximately 384-000
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1944 Louisiana license plate.jpg|150px]]
+|1944
+|Black serial with pelican separator on yellow [[fiberboard]] plate; "LOUISIANA - 1944" centered at top
+|''none''
+|123-456
+|1-001 to approximately 380-000
+|Manufactured&nbsp;on [[soybean]]-based fiberboard due to ongoing metal conservation.
+|-
+|[[File:1945 Louisiana license plate.jpg|150px]]
+|1945
+|Embossed white serial with pelican separator on black plate with border line; "19 LOUISIANA 45" at top
+|''none''
+|123-456
+|1-001 to approximately 341-000
+|
+|-
+|[[File:1946 Louisiana license plate 144 204.jpg|150px]]
+|1946
+|Embossed black serial with pelican separator on white plate with border line; "19 LOUISIANA 46" at top
+|''none''
+|123-456
+|1-001 to approximately 337-000
+|
+|-
+|[[File:1947 Louisiana license plate.jpg|150px]]
+|1947
+|Embossed black serial with pelican separator on unpainted aluminum plate with border line; "19 LOUISIANA 47" at bottom
+|''none''
+|123-456
+|1-001 to approximately 356-000
+|
+|-
+|[[File:1948 Louisiana license plate.jpg|150px]]
+|1948
+|Embossed white serial with pelican separator on dark green plate with border line; "19 LOUISIANA 48" at top
+|''none''
+|123-456
+|1-001 to<br>380-000;<br>400-001 to approximately 410-000
+|
+|-
+|[[File:1949 Louisiana license plate.jpg|150px]]
+|1949
+|Embossed black serial with pelican separator on yellow plate with border line; "19 LOUISIANA 49" at bottom
+|''none''
+|123-456
+|1-001 to<br>380-000;<br>435-001 to approximately 485-000
+|
+|-
+|[[File:1950 Louisiana license plate.jpg|150px]]
+|1950
+|Embossed yellow serial on royal blue plate with border line; pelican decal used as separator; "19 LOUISIANA 50" at bottom
+|''none''
+|123-456
+|1-001 to<br>490-000;<br>550-001 to approximately 615-000
+|
+|-
+|[[File:1951 Louisiana license plate 495 486.jpg|150px]]
+|1951
+|Embossed yellow serial with pelican separator on dark green plate with border line; "LOUISIANA–1951" at bottom
+|''none''
+|123-456
+|1-001 to approximately 566-000
+|
+|-
+|[[File:1952 Louisiana license plate 114 870.jpg|150px]]
+|1952
+|Embossed white serial with pelican separator on dark green plate with border line; "19 LOUISIANA 52" at bottom
+|''none''
+|123-456
+|1-001 to approximately 590-000
+|
+|-
+|[[File:1953 Louisiana license plate.jpg|150px]]
+|1953
+|Embossed yellow serial with pelican separator on green plate with border line; "LOUISIANA-1953" at bottom
+|''none''
+|123-456
+|1-001 to approximately 638-000
+|
+|-
+|[[File:1954 Louisiana license plate.jpg|150px]]
+|1954
+|Embossed blue serial with pelican separator on beige plate with border line; "19" at bottom left and "54" at bottom right
+|"LOUISIANA-YAMS" centered at bottom
+|123-456
+|1-001 to approximately 700-000
+|
+|-
+|[[File:1955 Louisiana license plate.jpg|150px]]
+|1955
+|Embossed white serial with pelican separator on black plate with border line; "LOUISIANA 1955" at bottom
+|''none''
+|123-456
+|1-001 to approximately 740-000
+|First 6" x 12" plate.
+|-
+|[[File:1956 Louisiana license plate.jpg|150px]]
+|1956
+|Embossed white serial with pelican separator on dark green plate with border line; "19 LOUISIANA 56" at top
+|''none''
+|123-456
+|1-001 to approximately 801-000
+|
+|-
+|[[File:1957 Louisiana license plate.jpg|150px]]
+|1957
+|Embossed golden yellow serial with pelican separator on purple plate with border line; "LOUISIANA 1957" at bottom
+|''none''
+|123-456
+|1-001 to approximately 865-000
+|
+|-
+|[[File:1958 Louisiana license plate 552 661.jpg|150px]]
+|1958
+|Embossed white serial with pelican separator on red plate with border line; "19 LOUISIANA 58" at bottom
+|"SPORTSMEN'S PARADISE" at top
+|123-456
+|1-001 to approximately 880-000
+|
+|-
+|[[File:1959 Louisiana license plate.JPG|150px]]
+|1959
+|Embossed white serial with pelican separator on dark blue plate with border line; "19 LOUISIANA 59" at top
+|"SPORTSMAN'S PARADISE" at bottom
+|123-456
+|1-001 to approximately 910-000
+|
+|-
+|[[File:1960 Louisiana license plate.JPG|150px]]
+|1960
+|Embossed golden yellow serial with pelican separator on purple plate with border line; "19 LOUISIANA 60" at bottom
+|"LSU CENTENNIAL" at top
+|123-456
+|1-001 to approximately 934-000
+|
+|-
+|[[File:1961 Louisiana license plate 194 910.jpg|150px]]
+|1961
+|Embossed golden yellow serial with pelican separator on dark green plate with border line; "19 LOUISIANA 61" at bottom
+|"SPORTSMEN'S PARADISE" at top
+|123-456
+|1-001 to approximately 948-000
+|
+|-
+|[[File:1962 Louisiana license plate 985 660.jpg|150px]]
+|1962
+|Embossed white serial with pelican separator on brown plate with border line; "19 LOUISIANA 62" at bottom
+|"SPORTSMEN'S PARADISE" at top
+|123-456<br>1234567
+|1-001 to approximately 1006000
+|Plates with seven-digit serials omitted the pelican. This happened again in 1963.
+|-
+|[[File:1963 Louisiana license plate 30 919.jpg|150px]]
+|1963
+|Embossed white serial with pelican separator on dark green plate with border line; "19 LOUISIANA 63" at bottom
+|"SPORTSMEN'S PARADISE" at top
+|123-456<br>1234567
+|1-001 to approximately 1036000
+|Last base to feature the embossed pelican.
+|}
+
+===1964 to present===
+{|class=wikitable
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!style="width:125px;"|Notes
+|-
+|[[File:1964-65 Louisiana license plate.jpg|150px]]
+|1964–65
+|Embossed white serial on dark blue plate with border line; "64 LOUISIANA 65" at bottom
+|"SPORTSMAN'S PARADISE" at top
+|123A456
+|Letter corresponds to [[Louisiana State Police|State Police]] troop area of issue
+|
+|-
+|[[File:1966-67 Louisiana license plate.JPG|150px]]
+|1966–67
+|Embossed white serial on dark green plate with border line; "66 LOUISIANA 67" at bottom
+|"SPORTSMAN'S PARADISE" at top
+|123A456
+|Letter corresponds to State Police troop area of issue
+|
+|-
+|[[File:1968-69 Louisiana license plate.jpg|150px]]
+|1968–69
+|Embossed green serial on reflective white plate with border line; "68 LOUISIANA 69" at bottom
+|"SPORTSMAN'S PARADISE" at top
+|123A456
+|Letter corresponds to State Police troop area of issue
+|
+|-
+|[[File:1970-71 Louisiana license plate.jpg|150px]]
+|1970–71
+|Embossed red serial on reflective white plate with border line; "70 LOUISIANA 71" at bottom
+|"SPORTSMAN'S PARADISE" at top
+|123A456
+|Letter corresponds to State Police troop area of issue
+|
+|-
+|[[File:1973 Louisiana license plate 60L516.jpg|150px]]
+|1972–73
+|Embossed blue serial on reflective white plate with border line; "72 LOUISIANA 73" at bottom
+|"SPORTSMAN'S PARADISE" at top
+|123A456
+|Letter corresponds to State Police troop area of issue
+|
+|-
+|[[File:Louisiana license plate 1974 graphic.png|150px]]
+|1974–75
+|Embossed black serial on reflective white plate with border line; "LOUISIANA" centered at bottom; "74" at top left and "75" at top right
+|rowspan="2"|"BAYOU STATE" centered at top
+|rowspan="3"|123A456
+|rowspan="3"|Letter corresponds to State Police troop area of issue
+|rowspan="3"|
+|-
+|[[File:Louisiana license plate 1977 graphic.png|150px]]
+|1976–77
+|rowspan="2"|As above, but without years
+|-
+|[[File:Louisiana license plate 1980 graphic.png|150x150px]]
+|1978–83
+|"SPORTSMAN'S PARADISE" at top
+|-
+|[[File:Louisiana license plate 1980 graphic.png|150x150px]]
+|1983–84
+|Embossed dark blue serial on reflective white plate; logo of the [[1984 Louisiana World Exposition|1984 World's Fair]] screened at bottom left; "Louisiana" screened in blue centered at top
+|"World's Fair" screened in blue centered at bottom
+|123A456
+|Letter corresponds to State Police troop area of issue
+|
+|-
+|[[File:Louisiana license plate 1980 graphic.png|150x150px]]
+|1984–89
+|Embossed dark blue serial on reflective white plate with border line; "LOUISIANA" centered at bottom
+|"SPORTSMAN'S PARADISE" at top
+|123A456
+|Letter corresponds to State Police troop area of issue
+|
+|-
+|[[File:Louisiana license plate, 1989-1993.png|150px]]
+|1989–93
+|Embossed dark blue serial on reflective white plate; screened dark blue graphics of mother pelicans with chicks at top corners; "LoUiSiAna" screened in red and dark blue (the 'U', 'S' and 'A' in dark blue) centered at bottom
+|"SPORTSMAN'S PARADISE" screened in red centered at top
+|123A456
+|Letter corresponds to State Police troop area of issue
+|Last base to use State Police troop area of issuance.
+|-
+|[[File:Louisianan license plate, GSW 796.jpg|150px]]
+|1993&nbsp;– December 31, 2001
+|Embossed dark blue serial on reflective white plate, with or without border line; "Louisiana" screened in red handwritten font centered at top
+|"SPORTSMAN'S PARADISE" screened in blue centered at bottom
+|ABC 123
+|AAA 000 to approximately KLK 999
+|Known as the "Lipstick" base. All 1974–93 plates were replaced with this design during 1995–96.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|January 1, 2002&nbsp;– July<br>2004
+|As 1993–2001 base, but with a screened blue compass graphic in the center containing a map of the [[Contiguous United States|contiguous U.S.]] with the area of the [[Louisiana Purchase]] highlighted
+|"Louisiana Purchase Bicentennial 1803-2003" screened in blue centered at bottom
+|ABC 123
+|KLL 000 to approximately MSN 999
+|Limited-run plate to commemorate the 200th anniversary of the Louisiana Purchase.
+|-
+|[[File:MVX 368.jpg|150px]]
+|July 2004&nbsp;– February 2005
+|As 1993–2001 base
+|"SPORTSMAN'S PARADISE" as from 1993–2001
+|ABC 123
+|MSP 000 to approximately NFU 999
+|
+|-
+|[[File:RWB 376.jpg|150px]]
+|February 2005&nbsp;– January 2, 2011
+|Embossed black serial on reflective white, yellow and pink gradient plate with black border line; screened pelican graphic in the center; "Louisiana" screened in red handwritten font centered at top
+|"Sportsman's Paradise" screened in red at bottom, offset to left
+|ABC 123
+|NFV 000 to approximately VCS 999
+|Initial plates featured a larger font for the state name. 'Q' and 'U' series of serials not used.<ref name="allaboutlicenseplatesLA"/>
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|January 3, 2011&nbsp;– December 31, 2012<ref>Louisiana Bicentennial Commission web site [http://www.louisianabicentennial2012.com/page.php?page=License-Plate] {{Webarchive|url=https://web.archive.org/web/20120130053035/http://www.louisianabicentennial2012.com/page.php?page=License-Plate |date=January 30, 2012 }}.</ref>
+|Embossed black serial on reflective white plate with pale green grass graphic and black border line; white pelican within green state shape screened at left; "Louisiana" screened in red handwritten font centered at top
+|"200 YEARS" screened in black centered at bottom, with "1812" and "2012" on small red banners at left and right respectively
+|ABC123
+|VCT000 to approximately WUG999
+|Limited-run plate to commemorate 200 years of statehood. Pelican and state shape later reduced in size.
+|-
+|
+|January 1, 2013&nbsp;– January 2014
+|As 2005–11 base
+|"Sportsman's Paradise" as from 2005–11
+|ABC 123
+|WUH 000 to approximately XRZ 999
+|
+|-
+|[[File:Louisiana Battle Of New Orleans Bicentennial Plate.jpg|150px]]
+|January 2014&nbsp;– December 2015
+|Embossed dark blue serial on reflective white plate with border line; logo of the [[Battle of New Orleans]] Bicentennial Commission (featuring a bucking horse and rider) screened at left; "LOUISIANA" screened in red centered at top
+|"www.louisianatravel.com" screened in dark blue centered at bottom
+|ABC123
+|XSA000 to approximately ZPC999
+|Limited-run plate to commemorate the 200th anniversary of the Battle of New Orleans.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|January&nbsp;– May 2016
+|rowspan="2"|As 2005–11 base
+|rowspan="2"|"Sportsman's Paradise" as from 2005–11
+|ABC 123
+|ZPD 000 to ZZZ&nbsp;999
+|rowspan="2"|
+|-
+|[[File:Louisiana 2026 license plate.jpg|150px]] 
+|May 2016&nbsp;– December 31, 2024
+|rowspan="2"|123 ABC
+|100 AAA to approximately 799&nbsp;HUK
+|-
+|[[File:Louisiana America 250 license plate.jpg|150px]]
+|January 1, 2025 – present
+|Embossed dark blue serial on reflective white plate with border line; 18 stars circled around a map of Louisiana with a red background with America 250 logo below; "LOUISIANA" screened in red centered at top 
+|"Sportman's Paradise"
+|100 HUL to 371&nbsp;JCY {{small|(as of March 31, 2025)}}
+|-
+|}
+
+==Non-passenger plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!Design
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:1983 Louisiana license plate boat trailer.jpg|150px]]
+|rowspan="2"|[[Boat trailer|Boat Trailer]]
+|Embossed blue on white with border line; "LOUISIANA" at bottom; "BOAT TRAILER" at top
+|unknown
+|'''D'''123456
+|Likely to have begun at D500000.
+|-
+|[[File:Louisiana boat trailer license plate.jpg|150px]]
+|As 1993–2001 passenger base, but with embossed "BOAT TRAILER" in place of slogan
+|c. 1993
+|'''D'''123456<br>'''K'''123456
+|
+|-
+|[[File:Louisiana commercial license plate.jpg|150px]]
+|[[Commercial vehicle|Commercial]]
+|As 1993–2001 passenger base, but with embossed "COMMERCIAL" in place of slogan
+|c. 1993
+|'''A'''123456<br>'''N'''123456
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Car dealership|Dealer]]
+|As 1993–2001 passenger base, but with embossed "DEALER" in place of slogan
+|
+|'''DI'''12345
+|rowspan="2"|DI99999 followed by {{small|D/I}}100000 and up.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Embossed black on yellow with border line; "LOUISIANA" at top; "DEALER" at bottom
+|c. 2012
+|'''DI'''12345<br>{{small|'''D'''/'''I'''}}123456
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Motorcycle]]
+|Embossed red on white with border line; "LA." at bottom; "MOTORCYCLE" at top
+|1983
+|rowspan="2"|123456
+|
+|-
+|[[File:Louisiana motorcycle license plate.jpg|150px]]
+|Similar to 1993–2001 passenger base; "MC" embossed at bottom
+|1995
+|
+|-
+|[[File:LOUISIANA 1991 PRIVATE TRUCK plate.jpg|150px]]
+|rowspan="3"|[[Pickup truck|Private Truck]]
+|Embossed green on white with border line; "LOUISIANA" at bottom; "PRIVATE" at top
+|1978
+|rowspan="3"|A123456
+|T, R and part of S series issued.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|As 1993–2001 passenger base, but with embossed "PRIVATE" in place of slogan
+|c. 1993
+|Rest of S series issued, followed by V and part of W.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As 1993–2001 passenger base, with screened "SPORTSMAN'S PARADISE" slogan
+|c. 2004
+|Rest of W series issued, followed by X and Y; issuing Z series as of October 2023.
+|-
+|[[File:1963 Louisiana license plate 16,000lb tractor.jpg|150px]]
+|[[Tractor]]
+|"TRACTOR" embossed at top; weight of vehicle embossed in top right corner.
+|1963
+|123456
+|
+|-
+|[[File:1966 Louisiana license plate 8,000lb truck.jpg|150px]]
+|[[Truck]]
+|"TRUCK" embossed at top; weight of vehicle embossed in top right corner.
+|1966
+|'''B'''123456, now at '''C'''123456
+|
+|-
+|[[File:1967 Louisiana license plate 10,000lb privately owned truck.jpg|150px]]
+|[[Truck]]
+|"TRUCK" embossed at top; weight of vehicle embossed in top right corner.
+|1967
+|123456
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Trailer (vehicle)|Trailer]]
+|Embossed red on white with border line; "LOUISIANA" at bottom; "TRAILER" at top
+|mid 1980s
+|rowspan="2"|A123456
+|D series issued up to D499999 (higher numbers reserved for Boat Trailer), followed by part of E series.
+|-
+|[[File:Louisiana trailer license plate.jpg|150px]]
+|As 1993–2001 passenger base, but with embossed "TRAILER" in place of slogan
+|c. 1993
+|Rest of E series issued; currently issuing L series.
+|}
+
+==Optional plates==
+Optional plates do not use leading [[zero]]s in their serials.
+
+{|class=wikitable
+|-
+!Image
+!Type
+!Design
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:LoadPlateImageAdmin.ashx.jpg|150px]]
+|[[Native Americans in the United States|American Indian]]
+|
+|
+|{{small|'''A'''/'''I'''}} 1234
+|
+|-
+|[[File:Animal friendly.jpeg|150px]]
+|Animal Friendly
+|
+|
+|{{small|'''F'''/'''A'''}} 1234
+|
+|-
+|<!-- Deleted image removed: [[File:Bobwhite.jpeg|150px]] -->
+|Bring Back the [[Bobwhite]]
+|
+|
+|12
+|
+|-
+|[[File:Louisiana.jpeg|150px]]
+|[[French immersion#United States|Chez Nous Autres]]<ref>{{Cite web|url=https://lifeinthefrenchalps.wordpress.com/2009/07/18/french-license-plates-for-louisianians/|title = Private Site}}</ref> "our home" in [[Cajun]]
+|French spelling "Louisiane" printed instead of English spelling "Louisiana"
+|
+|{{small|'''C'''/'''Z'''}} 123
+|
+|-
+|[[File:Choose life la.jpeg|150px]]
+|[[Pro-life|Choose Life]]
+|
+|
+|{{small|'''C'''/'''L'''}} 1234
+|
+|-
+|[[File:Emergency worker.jpeg|150px]]
+|[[Emergency Medical Technician]]
+|
+|
+|
+|
+|-
+|[[File:Firefight.jpeg|150px]]
+|Firefighter&mdash;Retired
+|
+|
+|123
+|
+|-
+|[[File:InGod.jpeg|150px]]
+|"[[In God We Trust]]"
+|
+|
+|{{small|'''T'''/'''G'''}} 1234
+|
+|-
+|[[File:Louisiana "Louisiana Tech University" license plate.jpg|150px]]
+|[[Louisiana Tech University]]
+|
+|
+|123
+|
+|-
+|[[File:Marine corps league.jpeg|150px]]
+|[[Marine Corps League]]
+|
+|
+|12
+|
+|-
+|<!-- Deleted image removed: [[File:Pelicans.jpeg|150px]] -->
+|[[New Orleans Pelicans]]
+|
+|
+|
+|Introduced January 29, 2024.<ref>{{cite web |last=Pellittieri |first=Raley |date=January 29, 2024 |title=Pelicans license plates now available |url=https://www.wafb.com/2024/01/29/pelicans-license-plates-now-available/ |publisher=[[WAFB]] |access-date=February 16, 2024}}</ref>
+|-
+|[[File:Louisiana Our Environment Our Future license plate.jpg|150px]]
+|Our [[Environmentalism|Environment]]...Our Future
+|Black on reflective light blue, white, and dark blue with multicolored graphic of pelican at right.
+|
+|123<br>{{small|'''E'''/'''E'''}} 1234
+|
+|-
+|<!-- Deleted image removed: [[File:Deer.jpeg|150px]] -->
+|"Preserve Our Hunting Heritage"
+|
+|
+|{{small|'''W'''/'''D'''}} 1234
+|
+|-
+|[[File:BlackBear.jpeg|150px]]
+|Save the Louisiana [[American Black Bear|Black Bear]]
+|
+|
+|{{small|'''B'''/'''B'''}} 1234
+|
+|-
+|[[File:Confeds.jpeg|150px]]
+|[[Sons of Confederate Veterans]]
+|
+|
+|{{small|'''C'''/'''V'''}} 1234
+|
+|-
+|[[File:SpecialOlympics.jpeg|150px]]
+|[[Special Olympics]]
+|
+|
+|12
+|
+|-
+|[[File:Safe kids.jpeg|150px]]
+|Think Safe Kids
+|
+|
+|12
+|
+|-
+|[[File:Marine.jpeg|150px]]
+|U.S. Veteran&mdash;Marine Corps
+|"USMC" printed diagonally to left of serial
+|
+|{{small|'''M'''/'''A'''}} 1234
+|
+|-
+|[[File:Navy.jpeg|150px]]
+|U.S. Veteran&mdash;Navy&mdash;Retired
+|"NAVY" printed diagonally and "RETIRED" printed horizontally to left of serial
+|
+|123
+|
+|}
+
+==Government plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!Design
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:Louisiana public license plate.jpg|150px]]
+|Public
+|"PUBLIC" embossed vertically at left; "SPORTSMAN'S PARADISE" screened at bottom.
+|
+|123456
+|
+|-
+|[[File:1993 Louisiana license plate SF 46 Game Warden.jpg|150px]]
+|[[Louisiana Department of Wildlife & Fisheries - Enforcement Division|Wildlife & Fisheries Enforcement]]
+|
+|
+|'''SF''' 12
+|
+|}
+
+==State Police troop codes==
+From 1964 until 1993, [[Louisiana State Police]] troop area codes were used as part of the serial on the plate, invariably in the center of the serial. From 1993 until 1996, stickers were used to show the troop. This was done to give some idea of where the plates were issued. However, registrants who applied via the mail got plates with the "X" code, which was used for Baton Rouge.
+
+{|class="wikitable sortable"
+|-
+!Code
+!Troop or area
+|-
+|A
+|[[Baton Rouge, Louisiana|Baton Rouge]]
+|-
+|B
+|[[New Orleans, Louisiana|New Orleans]] (troop office in [[Kenner, Louisiana|Kenner]] since 1995)
+|-
+|C
+|[[Raceland, Louisiana|Raceland]], (later [[Gray, Louisiana|Gray]] after troop office was moved in the mid 1970s)
+|-
+|D
+|[[Lake Charles, Louisiana|Lake Charles]]
+|-
+|E
+|[[Alexandria, Louisiana|Alexandria]]
+|-
+|F
+|[[Monroe, Louisiana|Monroe]]
+|-
+|G
+|[[Shreveport, Louisiana|Shreveport]]
+|-
+|H
+|[[Leesville, Louisiana|Leesville]] (eliminated in 1988)
+|-
+|I
+|[[Lafayette, Louisiana|Lafayette]]
+|-
+|K
+|[[Opelousas, Louisiana|Opelousas]] (eliminated in 1988)
+|-
+|L
+|[[Covington, Louisiana|Covington]]
+|-
+|M
+|[[Raceland, Louisiana|Raceland]] (eliminated in 1973)
+|-
+|N
+|New Orleans (overflow)
+|-
+|X
+|Baton Rouge/statewide mail
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/la.html Louisiana license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200205025911/http://15q.net/la.html |date=February 5, 2020 }}
+*[http://www.licenseplates.cc/highs.php?where=LA Louisiana License Plates]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Louisiana}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Louisiana}}
+[[Category:Vehicle registration plates of the United States by state or territory|Louisiana]]
+[[Category:Transportation in Louisiana]]
+[[Category:Louisiana transportation-related lists]]

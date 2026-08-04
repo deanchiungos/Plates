@@ -1,0 +1,864 @@
+{{short description|Minnesota vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = ABC 123 currently MN plate from my collection.png
+| nickname = 
+| slogan_label = Slogan
+| slogan = 10,000 Lakes
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123<br />123 ABC<br />(Switches on a rolling basis)
+| current_start_date = {{Start date|2008|06}}
+| designer = 
+| issuer = [[Minnesota Department of Public Safety]], Driver and Vehicle Services Division
+| manufacturer = 
+| start_date = {{Start date|1909|05|15}}<br>(pre-state plates from 1903 through May 14, 1909)
+}}
+The U.S. state of [[Minnesota]] first required its residents to register their [[motor vehicle]]s in 1903. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1909, when the state began to issue plates.
+
+{{As of|2024}}, plates are issued by the [[Minnesota Department of Public Safety]] through its Driver and Vehicle Services Division. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+[[File:First Minnesota license plate.jpg|thumb|left|The first automobile license plate in Minnesota, 1903.]]
+{{Clear}}
+
+===1909 to 1954===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1909
+|Silver serial on orange flat metal plate; vertical "MINN" and "1909" in silver at left and right respectively
+|''none''
+|1234
+|1 to approximately 7000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1910
+|Gold serial on black flat metal plate; vertical "MINN" and "1910" in gold at left and right respectively
+|''none''
+|12345
+|1 to approximately 12000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|White serial on dark blue porcelain plate; vertical "MINN" and "1911" in white at left and right respectively
+|''none''
+|12345
+|1 to approximately 20000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1912–14}}
+|Black serial on silver plate; vertical "MINN" in black at left and "1912", "1913" and "1914" at right
+|''none''
+|12345
+|1 to approximately 67000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915–16
+|Red serial on silver plate; vertical "MINNESOTA" at left and "1915", "1916" and "1917" at right
+|rowspan="2"|''none''
+|rowspan="2"|123456
+|1 to approximately 139000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|As above, but with vertical "MINN" in red at left
+|139001 to approximately 191000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918–20
+|Embossed white serial on black plate; vertical "MINN" at left and "1918", "1919" and "1920" at right
+|rowspan="2"|''none''
+|rowspan="2"|123456
+|1 to approximately 325000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|As above, but with only "1920" at right
+|325001 to approximately 333000
+|-
+|rowspan="2"|[[File:1921 Minnesota license plate.jpg|150px]]
+|rowspan="2"|1921
+|rowspan="2"|Embossed black serial on sky blue plate with border line; vertical "MINN" at right; "21" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A142-000
+|rowspan="2"|Weight classes introduced, with 'A' used for vehicles weighing 2,000 lb or less, and 'B' for vehicles above 2,000 lb. This practice continued through 1939.
+|-
+|'''B'''123-456
+|B1 to approximately B160-000
+|-
+|rowspan="2"|[[File:1922 Minnesota A8-139.jpg|150px]]
+|rowspan="2"|1922
+|rowspan="2"|Embossed black serial on off-white plate; vertical "MINN" at right; "22" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A176-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B175-000
+|-
+|rowspan="2"|[[File:1923 Minnesota A205-239.jpg|150px]]
+|rowspan="2"|1923
+|rowspan="2"|Embossed brown serial on gray plate with border line; vertical "MINN" at right; "23" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A224-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B173-000
+|-
+|rowspan="2"|[[File:1924 Minnesota 164-850A.jpg|150px]]
+|rowspan="2"|1924
+|rowspan="2"|Embossed white serial on dark blue plate with border line; vertical "MINN" at left; "24" at bottom right
+|rowspan="2"|''none''
+|123-456'''A'''
+|1A to approximately 242-000A
+|rowspan="2"|
+|-
+|123-456'''B'''
+|1B to approximately 222-000B
+|-
+|rowspan="2"|[[File:1925 Minnesota A66-597.jpg|150px]]
+|rowspan="2"|1925
+|rowspan="2"|Embossed black serial on silver plate with border line; vertical "MINN" at right; "25" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A268-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B256-000
+|-
+|rowspan="2"|[[File:1926 Minnesota A63-788.jpg|150px]]
+|rowspan="2"|1926
+|rowspan="2"|Embossed white serial on black plate with border line; vertical "MINN" at right; "26" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A249-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B302-000
+|-
+|rowspan="2"|[[File:1927 Minnesota license plate.jpg|150px]]
+|rowspan="2"|1927
+|rowspan="2"|Embossed light green serial on dark green plate with border line; vertical "MINN" at right; "27" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A258-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B293-000
+|-
+|rowspan="2"|[[File:1928 Minnesota A194-942.jpg|150px]]
+|rowspan="2"|1928
+|rowspan="2"|Embossed black serial on tan plate with border line; vertical "MINN" at right; "28" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A243-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B326-000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1929
+|rowspan="2"|Embossed white serial on black plate with border line; vertical "MINN" at right; "29" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A245-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B379-000
+|-
+|rowspan="2"|[[File:1930 Minnesota license plate.jpg|150px]]
+|rowspan="2"|1930
+|rowspan="2"|Embossed black serial on silver plate with border line; vertical "MINN" at right; "30" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A196-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B428-000
+|-
+|rowspan="2"|[[File:1931 Minnesota B295-499.jpg|150px]]
+|rowspan="2"|1931
+|rowspan="2"|Embossed white serial on black plate with border line; vertical "MINN" at right; "31" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A130-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B453-000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1932
+|rowspan="2"|Embossed golden yellow serial on maroon plate with border line; vertical "MINN" at right; "32" at bottom left
+|rowspan="2"|''none''
+|'''A'''123-456
+|A1 to approximately A111-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B457-000
+|-
+|rowspan="2"|[[File:1933 Minnesota license plate.jpg|150px]]
+|rowspan="2"|1933
+|rowspan="2"|As 1930 base, but with "33" at bottom left
+|rowspan="2"|''none''
+|'''A'''12-345
+|A1 to approximately A94-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B475-000
+|-
+|rowspan="2"|[[File:1934 Minnesota license plate.jpg|150px]]
+|rowspan="2"|1934
+|rowspan="2"|As 1931 base, but with "34" at bottom left
+|rowspan="2"|''none''
+|'''A'''12-345
+|A1 to approximately A89-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B499-000
+|-
+|rowspan="2"|[[File:1935 Minnesota license plate.JPG|150px]]
+|rowspan="2"|1935
+|rowspan="2"|As 1932 base, but with "35" at bottom left
+|rowspan="2"|''none''
+|'''A'''12-345
+|A1 to approximately A72-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B545-000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1936
+|rowspan="2"|Embossed white serial on dark blue plate with border line; vertical "MINN" at right; "36" at bottom left
+|rowspan="2"|''none''
+|'''A'''12-345
+|A1 to approximately A58-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B612-000
+|-
+|rowspan="2"|[[File:1937 Minnesota, USA, license plate.jpg|150px]]
+|rowspan="2"|1937
+|rowspan="2"|Embossed black serial on silver plate with border line; vertical "MINN" at right; "37" at bottom left
+|rowspan="2"|''none''
+|'''A'''12-345
+|A1 to approximately A40-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B664-000
+|-
+|rowspan="2"|[[File:1938 Minnesota license plate.jpg|150px]]
+|rowspan="2"|1938
+|rowspan="2"|Embossed silver serial on black plate with border line; vertical "MINN" at right; "38" at bottom left
+|rowspan="2"|''none''
+|'''A'''12-345
+|A1 to approximately A25-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B674-000
+|-
+|rowspan="2"|[[File:1939 Minnesota license plate.JPG|150px]]
+|rowspan="2"|1939
+|rowspan="2"|Embossed black serial on golden yellow plate with border line; vertical "MINN" at right; "39" at bottom left
+|rowspan="2"|''none''
+|'''A'''12-345
+|A1 to approximately A15-000
+|rowspan="2"|
+|-
+|'''B'''123-456
+|B1 to approximately B696-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Minnesota 1940 license plate - Number 342-577.jpg|150px]]
+|1940
+|Embossed white serial on black plate with border line; "MINN - 1940" or "MINNESOTA 1940" (see right) centered at bottom 
+|''none''
+|123-456
+|1 to approximately 734-000
+|The abbreviated state name was used on plates with serials of up to four digits (1 through 9999), and the full state name on plates with five- or six-digit serials. This practice continued through 1948.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1941 Minnesota license plate.jpg|150px]]
+|1941
+|Embossed black serial on silver plate with border line; "MINN - 1941" or "MINNESOTA 1941" centered at bottom
+|''none''
+|123-456
+|1 to approximately 763-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1942 Minnesota license plate.jpg|150px]]
+|1942–43
+|Embossed red serial on cream plate with border line; "MINN - 1942" or "MINNESOTA 1942" centered at bottom
+|''none''
+|123-456
+|1 to approximately 748-000
+|Revalidated for 1943 with black tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1944 Minnesota license plate.jpg|150px]]
+|1944
+|Embossed white serial on navy blue plate with border line; "MINN - 1944" or "MINNESOTA 1944" centered at bottom 
+|''none''
+|123-456
+|1 to approximately 641-000
+|
+|-
+|[[File:1945 Minnesota license plate.JPG|150px]]<br>[[File:1945 Minnesota 220-796.jpg|150px]]
+|1945
+|As 1941 base, but with "MINN - 1945" or "MINNESOTA 1945" at bottom
+|''none''
+|123-456
+|1 to approximately 633-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1946 Minnesota passenger 569-842.jpg|150px]]
+|1946
+|As 1940 base, but with "MINN - 1946" or "MINNESOTA 1946" at bottom
+|''none''
+|123-456
+|1 to approximately 660-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1947 Minnesota license plate.JPG|150px]]
+|1947
+|As 1941 base, but with "MINN - 1947" or "MINNESOTA 1947" at bottom
+|''none''
+|123-456
+|1 to approximately 717-000
+|
+|-
+|[[File:1948 Minnesota license plate.JPG|150px]]<br>[[File:1948 Minnesota 780-569.jpg|150px]]
+|1948
+|As 1940 base, but with "MINN - 1948" or "MINNESOTA 1948" at bottom
+|''none''
+|123-456
+|1 to approximately 801-000
+|
+|-
+|[[File:Minnesota 1949 84-698.jpg|150px]]
+|1949
+|Embossed black serial on waffle-textured silver plate; "MINNESOTA" centered at top
+|"1849 - CENTENNIAL - 1949" at bottom
+|123-456
+|1 to approximately 871-000
+|Commemorated the 100th anniversary of the creation of the [[Minnesota Territory]].
+|-
+|[[File:Minnesota 1950 license plate - Number 487-627.jpg|150px]]
+|1950
+|Embossed white serial on black plate with border line; "19 MINNESOTA 50" at bottom
+|"10,000 LAKES" centered at top
+|123-456
+|1 to approximately 962-000
+|First use of the "10,000 Lakes" slogan.
+|-
+|[[File:1951 Minnesota license plate.jpg|150px]]
+|1951
+|Embossed black serial on silver plate with border line; "19 MINNESOTA 51" at bottom
+|"10,000 LAKES" centered at top
+|123-456 {{nowrap|1-234-567}}
+|1 to approximately 1-005-000
+|
+|-
+|[[File:1952 Minnesota license plate.JPG|150px]]
+|1952
+|Embossed blue serial on gold plate with border line; "19 MINNESOTA 52" at bottom
+|"10,000 LAKES" centered at top
+|123-456
+|1 to approximately 994-000
+|
+|-
+|[[File:1953 Minnesota license plate.JPG|150px]]
+|1953
+|Embossed white serial on black plate with border line; "19 MINNESOTA 53" at bottom
+|"10,000 LAKES" centered at top
+|123-456<br>1-234-567
+|1 to approximately 1-040-000
+|
+|-
+|[[File:1954 Minnesota license plate.JPG|150px]]
+|1954
+|Embossed blue serial on cream plate with border line; "19 MINNESOTA 54" at bottom
+|"10,000 LAKES" centered at top
+|123-456<br>1-234-567
+|1 to approximately 1-075-000
+|
+|}
+
+===1955 to present===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1954 (dated 1955) issue was the first Minnesota license plate that complied with these standards.
+
+Since 1989, Minnesota law has required license plates to be replaced every seven years, due to deterioration of the reflective material.<ref name="allaboutlicenseplatesMN">{{cite web |last=Tanner |first=Eric N. |title=Minnesota Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Minnesota&code=mn |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|rowspan="2"|[[File:Minnesota 1955 license plate - Number LV 6371.jpg|150px]]
+|rowspan="2"|1955
+|rowspan="2"|Embossed yellow serial on maroon plate with border line; "19 MINNESOTA 55" at bottom
+|rowspan="2"|"10,000 LAKES" centered at top
+|''A''B&nbsp;1234
+|First letter corresponds&nbsp;to [[Minnesota's congressional districts|congressional district]] of issue
+|First 6" x 12" plate. Letters A, B, C, E, F, G, H, J and K were used to indicate the nine congressional districts of the time, in that order. 
+|-
+|'''L'''B&nbsp;1234<br>'''M'''B&nbsp;1234
+|LA 1000 to approximately MD&nbsp;9999
+|Mail-order issues.
+|-
+|rowspan="2"|[[File:Minnesota 1956 license plate - Number 6H 1902.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1956–57
+|rowspan="2"|Embossed green serial on reflective white plate with border line; "19 MINNESOTA 56" at bottom
+|rowspan="2"|"10,000 LAKES" centered at top
+|''1''B&nbsp;1234
+|First number corresponds&nbsp;to congressional district of issue
+|Revalidated for 1957 with gold tabs.
+|-
+|'''M'''B&nbsp;1234
+|
+|Mail-order issues.
+|-
+|rowspan="2"|[[File:Minnesota 1958 license plate - Number 9C 1290.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1958–59
+|rowspan="2"|Embossed blue serial on reflective white plate with border line; "19 MINNESOTA 58" at bottom
+|rowspan="2"|"10,000 LAKES" centered at top
+|''1''B&nbsp;1234
+|First number corresponds&nbsp;to congressional district of issue
+|Revalidated for 1959 with green tabs.
+|-
+|'''M'''B&nbsp;1234
+|
+|Mail-order issues.
+|-
+|rowspan="2"|[[File:Minnesota 1960 license plate - Number 6E 1919.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1960–61
+|rowspan="2"|Embossed black serial on reflective white plate with border line; "19 MINNESOTA 60" at bottom
+|rowspan="2"|"10,000 LAKES" within embossed black bar centered at top
+|''1''B&nbsp;1234
+|First number corresponds&nbsp;to congressional district of issue
+|Revalidated for 1961 with blue tabs.
+|-
+|'''M'''B&nbsp;1234
+|
+|Mail-order issues.
+|-
+|rowspan="2"|[[File:Minnesota 1962 license plate - Number 9E 9653.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1964 Minnesota license plate.jpg|150px]]
+|rowspan="2"|1962–64
+|rowspan="2"|Embossed maroon serial on reflective white plate with border line; "MINNESOTA" within embossed maroon bar centered at bottom; "19" at bottom left and "62" at bottom right
+|rowspan="2"|"10,000 LAKES" within embossed maroon bar centered at top
+|''1''B&nbsp;1234
+|First number corresponds&nbsp;to congressional district of issue
+|Revalidated for 1963 with green tabs, and for 1964 with yellow tabs.
+|-
+|'''M'''B&nbsp;1234
+|
+|Mail-order issues.
+|-
+|rowspan="2"|[[File:Minnesota 1967 4HF 401.jpg|150px]]
+|rowspan="2"|1965–67
+|rowspan="2"|Embossed green serial on reflective white plate with border line; "19 MINNESOTA 65" at bottom
+|rowspan="2"|"10,000 LAKES" centered at top
+|''1''BC&nbsp;123
+|First number corresponds&nbsp;to congressional district of issue
+|Revalidated for 1966 and 1967 with stickers.
+|-
+|'''M'''BC&nbsp;123
+|MAA 100 to approximately MLC 999
+|Mail-order issues.
+|-
+|rowspan="2"|[[File:Minnesota 1968 license plate - Number 8SH 388.jpg|150px]]<br>[[File:Minnesota 1970 license plate - Number 6NF 367.jpg|150px]]
+|rowspan="2"|1968–70
+|rowspan="2"|Embossed blue serial on reflective white plate with border line; "MINNESOTA" within embossed blue bar centered at bottom; "19" at bottom left and "68" at bottom right
+|rowspan="2"|"10,000 LAKES" within embossed blue bar centered at top
+|''1''BC&nbsp;123
+|First number corresponds&nbsp;to congressional district of issue
+|Revalidated for 1969 and 1970 with stickers.
+|-
+|'''M'''BC&nbsp;123
+|MAA 100 to approximately MNN 999
+|Mail-order issues.
+|-
+|rowspan="2"|[[File:Minnesota 1973 license plate - Number 1SM 749.jpg|150px]]
+|rowspan="2"|1971–73
+|rowspan="2"|Embossed green serial on reflective white plate with border line; "19 MINNESOTA 71" at bottom
+|rowspan="2"|"10,000 LAKES" centered at top
+|''1''BC&nbsp;123
+|First number corresponds&nbsp;to congressional district of issue
+|Revalidated for 1972 and 1973 with stickers.
+|-
+|'''M'''BC&nbsp;123
+|MAA 100 to approximately MPA 999
+|Mail-order issues.
+|-
+|[[File:Minnesota 1977 ES 9550.jpg|150px]]<br>[[File:Minnesota 1974 license plate.png|150px]]
+|1974–77
+|Embossed orange serial on reflective white plate with border line; "MINNESOTA" centered at bottom; "19" at top left and "74" at top right
+|"10,000 LAKES" centered at top
+|AB&nbsp;1234
+|AA 1000 to approximately PW&nbsp;3999
+|Some plates manufactured using Illinois' serial [[Die (manufacturing)|die]]s. Monthly staggered registration introduced 1975.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1977
+|Embossed blue serial on reflective white plate with border line; "MINNESOTA" centered at top
+|"10,000 LAKES" centered at bottom
+|ABC&nbsp;123
+|AAA 001 to CGZ&nbsp;999
+|
+|-
+|[[File:Minnesota 1980 plate.jpg|150px]]
+|1978–82
+|Embossed blue serial on reflective graphic plate featuring a lake scene with pale blue and white water, pale blue sky, green island and trees, and a small green canoe; "Minnesota" screened in blue centered at top
+|rowspan="2"|"10,000 lakes" screened in blue centered at bottom
+|ABC&nbsp;123
+|CHA 001 to approximately FOR&nbsp;999
+|rowspan="2"|
+|-
+|[[File:1986 Minnesota license plate.jpg|150px]]
+|1982–87
+|As above, but with embossed state shape used as separator in serial
+|{{nowrap|ABC-123}}
+|LAA-001 to approximately RMF-999
+|-
+|[[File:Minnesota license plate, 1987–1993 series with November 1995 sticker.png|150px]]
+|1987–93
+|rowspan="4"|As 1978–87 base, but with darker colors
+|rowspan="4"|"EXPLORE" screened in blue to left of state name, giving "Explore Minnesota"; "10,000 lakes" screened in blue centered at bottom
+|rowspan="2"|{{nowrap|123-ABC}}
+|001-AAA to approximately 999-HZK
+|Replaced all 1977–87 plates.
+|-
+|[[File:Minnesota 1997 209-KQF.jpg|150px]]
+|1993–97
+|001-HZL to approximately 999-PYW
+|White section of water now fades into the light blue band at the bottom containing the "10,000 lakes" slogan. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1997–2000
+|rowspan="2"|{{nowrap|ABC-123}}
+|AAA-001 to DBZ-999
+|Material changed from steel to aluminum.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2000&nbsp;– June<br>2008
+|DCA-001 to XZZ-999;<br>SAA-001 to SZZ-999
+|White section of water increased in size; fade to light blue at bottom now occurs behind the "10,000 lakes" slogan. 'W', 'Y' and 'Z' series of serials not used; 'S' series issued after 'X' series.
+|-
+|[[File:MN with no.com flat plate from my own collection.png|150px]]
+|June 2008&nbsp;– June<br>2009
+|rowspan="3"|As 1987–2008 base, but with screened black serial and dark blue state-shaped separator, and state name in a different serifed font
+|"EXPLORE" and "10,000 lakes" as on 1987–2008 base, but in a different serifed font
+|rowspan="2"|{{nowrap|123-ABC}}
+|rowspan="2"|001-AAA to 999-XZZ
+|rowspan="2"|'B' series of serials reserved for mail-order issues. 'F', 'S', 'Y' and 'Z' series not used.<ref name="allaboutlicenseplatesMN"/>{{why|date=March 2018}}
+|-
+|[[File:Minnesota 2014 License Plate.jpg|150px]]
+|June 2009&nbsp;– September 2017
+|rowspan="2"|As before but with ".com" added to right of state name, giving "Explore Minnesota.com"
+|-
+|[[File:ABC 123 currently MN plate from my collection.png|150px]]
+|September 2017&nbsp;– present
+|{{nowrap|ABC-123}}
+|AAA-001 to 
+UCD-654 (as of May 7th 2026)<ref name="licenseplates.cc">{{Cite web |title=Minnesota License Plates |url=https://www.licenseplates.cc/MN |website=www.licenseplates.cc |access-date=April 11, 2024}}</ref>
+|'M', 'N' and 'P' series of serials reserved for mail-order issues.
+|}
+
+==Optional plates==
+{|class="wikitable sortable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Blackout
+|data-sort-value="2024-01"|January 1, 2024<ref>{{cite web |last=Krueger |first=Andrew |date=April 7, 2024 |title=Just three months after launch, sales of Minnesota blackout plates near 50,000 |url=https://www.mprnews.org/story/2024/04/07/minnesota-blackout-license-plates-sales-near-50000 |website=MPR News |publisher=[[Minnesota Public Radio]] |access-date=July 13, 2024}}</ref>&nbsp;– present
+|Screened white serial on black plate; white state outline used as separator; "Minnesota" and "10,000 lakes" screened in white centered at top and bottom respectively
+|'''Z'''BC-123
+|ZAA-001 to ZEN-264 {{small|(as of June 25, 2024)}}<ref name="licenseplates.cc"/>
+|Series ZXA through ZXZ reserved for mail-order issues.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – Chickadee
+|data-sort-value="2009-05"|May 2009&nbsp;– present
+|Screened black serial on green plate, with a chickadee on left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively 
+|'''4'''AB123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – Classic Deer
+|data-sort-value="1996-06"|June 1996&nbsp;– present
+|
+|AB123<br>'''1'''AB123
+|AA001 to HZ999<br>NA001 to NZ999<br>1AA001 to 1AC958 {{small|(as of June 2019)}}
+|First "Critical habitat" license plates and the only ones that are embossed. The screened version was released much later. Letters I, O, Q are not used for all the "Critical Habitat" plates, this practice still continues today.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – [[Common loon]]
+|data-sort-value="2002-04"|April 2002&nbsp;– present
+|Screened black serial on fall landscape with lake plate, with a common loon in left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively 
+|AB123<br>'''2'''AB123
+|JA 001 to MZ 999<br>PA 001 to ZZ 999<br>2AA001 to 2GE068 {{small|(as of June 2019)}}
+|The first version is with blue serial and continued registrations after Classic Deer plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – Fishing
+|data-sort-value="2009-05"|May 2009&nbsp;– present
+|Screened black serial on landscape sunset plate, with two fishermen in a boat in left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively, but the "O" is a fishing float
+|'''3'''AB123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – [[Cypripedioideae|Lady slipper]]
+|data-sort-value="2009-05"|May 2009&nbsp;– present
+|Screened black serial on pink plate, with a lady slipper orchid on left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively 
+|'''5'''AB123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – [[Moose]]
+|data-sort-value="2014-08"|August 2014&nbsp;– present
+|Screened black serial on light blue plate, with a moose on left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively 
+|'''8'''AB123
+|
+|The chosen design is part of [[Les Kouba]] painting, his signature is present on the left as well.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – [[Pheasant]]
+|data-sort-value="2013-11"|November 2013&nbsp;– present
+|Screened black serial on ocher plate, with two pheasants who flight on left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively 
+|'''7'''AB123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – [[White-tailed deer]]
+|data-sort-value="2009-05"|May 2009&nbsp;– present
+|Screened black serial on light yellow at the top and grey plate, with a white-tailed dear on left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively 
+|'''6'''AB123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Critical Habitat – [[Wild turkey]]
+|data-sort-value="2016-11"|November 2016&nbsp;– present
+|Screened black serial on fall landscape plate, with a wild turkey in left. "Reinvest in Minnesota" and "Critical Habitat" centered at top and bottom respectively 
+|'''9'''AB123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Golf]]
+|data-sort-value="2015-07"|July 2015&nbsp;– present
+|Screened black serial on graphic plate with light blue sky at top, golf course at bottom and black silhouette of golfer at left; "PLAY GOLF Minnesota" screened in blue (plus a golf ball for the 'O' in the state name) at top and "The Game For A Lifetime" in white at bottom
+|'''C'''B123<br>1234'''C'''B
+|CA001 to approximately CE999;<br>0001CA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Minnesota Lynx]]
+|January 2024–Present
+|Screened black serial on a white plate with "lake blue" bars on the top and bottom with a lynx-print pattern; "aurora green" lines border the inside of the bars. A Minnesota Lynx logo is on the left in the middle white section. The top text reads "Minnesota" in the same font as the standard plate, and the bottom reads "The Minnesota Fastbreak Foundation"
+|000AA0
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Minnesota Timberwolves]]
+|January 2024–Present
+|Screened black serial on a dark blue gradient plate with the top having a blue monochrome lakeside design featuring groups of pine trees on either side of the "Minnesota" text, the left containing a green aurora and the right with the moon. The Timberwolves logo is on the left side of the plate, and "The Minnesota Fastbreak Foundation" is on the bottom of the plate.
+|000AA0
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Minnesota Twins]]
+|January 2024–Present
+|Screened navy blue serial on a white plate with a navy blue bar across the top with a small repeating "M" logo that is used the Twins' "road" hat from their 2023 uniform redesign. It contains the "Minnesota" text. The middle features the Twins interlocking "TC" logo featuring a navy blue "T" and a red "C". The bottom has a red bar with white text at the bottom saying "This is Twins Territory" with "Twins" in the font from the primary jersey.
+|000AA0
+|
+|The motorcycle variant uses black text instead of navy blue.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Minnesota United FC]]
+|October 2024–Present
+|Screened white serial on a black plate with a light blue "Minnesota" text on top and "United" on the bottom. The plate features a grey wing design that matches the feathers in the Minnesota United FC logo that is on the left.
+|000AA0
+|
+|This plate was originally set to be released with the other sports teams in January 2024. Previous state laws required that plateholders make a contribution to the teams' foundation through registration fees, and Minnesota United does not have one. The law was amended in 2024<ref>{{Cite web |title=Sec. 168.1259 MN Statutes |url=https://www.revisor.mn.gov/statutes/2024/cite/168.1259 |access-date=2025-04-21 |website=www.revisor.mn.gov}}</ref> to allow other philanthropic pursuits. Minnesota United FC chose the Minnesota Loon Restoration Project,<ref>{{Cite web |date=2024-10-01 |title=Minnesota United specialty license plate now available |url=https://www.mprnews.org/story/2024/10/01/minnesota-united-specialty-license-plate-now-available |access-date=2025-04-21 |website=MPR News |language=en}}</ref> a state-run initiative.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Minnesota Vikings]]
+|January 2024–Present
+|Screened black serial on a white plate with a top purple-white gradient bar with "Minnesota" in purple. The right of the top bar features pine tree silhouettes, and the left features a silhouetted Minneapolis skyline that includes [[U.S. Bank Stadium]].
+|00AA00
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Minnesota Wild]]
+|January 2024–Present
+|Screened black serial on a white plate with a green-white gradient bar with "Minnesota" on the top in green. The left and right feature pine trees and lakefronts with the right side depicting two ice hockey players playing on a frozen body of water. The middle of the plate features the Wild logo center left. Text on the bottom reads "State of Hockey" in green.
+|000AA0
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Parks and Trails
+|data-sort-value="2016-10"|October 2016&nbsp;– present
+|Screened black serial on landscape with a wood bridge and a boat in left. "Minnesota" and "STATE PARK AND TRAILS" centered at top and bottom respectively
+|'''1P'''B123
+|1PA001 to 1PH850 {{small|(as of June 2019)}}
+|Plate created as part of the 125th anniversary celebration of Minnesota state parks and trails. The design was chosen in July 2016 after an online vote.<ref>{{Cite web |title=New Minnesota license plate? Check out the 3 finalists, then vote |url=https://www.mprnews.org/story/2016/06/27/new-minnesota-trails-license-plate-finalists-vote |publisher=[[Minnesota Public Radio]] |date=June 27, 2016 |access-date=January 15, 2021}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support Our Troops
+|data-sort-value="2005-12"|December 2005&nbsp;– present
+|Screened blue or black serial (see right) on graphic plate with national flag in background and [[bald eagle]] at left; "Minnesota" and "SUPPORT OUR TROOPS" screened in blue centered at top and bottom respectively
+|123AB<br>1234'''A'''B
+|001AA to approximately 999EH;<br>0001AA to present
+|Original design had a blue serial over a full national flag background. Current design has a black serial on a white section in the middle, plus a different font for the "Support Our Troops" slogan.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!style="width:110px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Farm Truck
+|1997–2008
+|Embossed green serial on white plate; "MINNESOTA" and "FARM TRUCK" centered at top and bottom respectively; weight class sticker at right
+|{{small|'''T'''/'''L'''}}&nbsp;C1234
+|{{small|T/L}} A0001 to approxminately {{small|T/L}}&nbsp;D5200
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008–present
+|As current passenger base; "Farm Truck" centered at bottom, "FEB" at bottom left and weight class sticker at right
+|'''TL'''C1234
+|TLD5201 to TLJ1941 {{small|(as of July 20, 2022)}}<ref name="licenseplates.cc"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="5"|Motorcycle
+|{{nowrap|1976–80}}
+|Embossed blue serial on white plate; "MINNESOTA" and "M.C." centered at top and bottom respectively
+|123-456
+|000-001 to approximately<br>350-000
+|rowspan="5"|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|1981–90
+|rowspan="2"|As above, but with "10,000 LAKES" at bottom, offset to left
+|{{nowrap|{{small|'''M'''/B}} 12-345}}
+|{{small|M/L}} 00-001 to {{nowrap|{{small|M/N}} 99-999}}; {{nowrap|{{small|M/R}} 00-001 to}} approximately {{nowrap|{{small|M/R}} 65-000}}
+|-
+|1990–99
+|rowspan="2"|12-345 {{small|'''M'''/B}}
+|00-001 {{small|M/A}} to approximately {{nowrap|60-000 {{small|M/C}}}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1999–2008
+|As above, but with "FEB M.C." in place of slogan
+|60-001 {{small|M/C}} to approximately {{nowrap|24-000 {{small|M/G}}}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008–present
+|Similar to current passenger base; "MOTORCYCLE" centered at bottom and "FEB" at bottom left
+|12345'''M'''B
+|24001MG to 89236MJ {{small|(as of October 2, 2021)}}<ref name="licenseplates.cc"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Special Registration
+|c.&nbsp;1995–2008
+|Embossed blue serial on white plate with border line; "MINNESOTA" and "10,000 LAKES" centered at top and bottom respectively
+|rowspan="2|'''W'''B1234
+|
+|rowspan="2"|Issued to owners of vehicles in which [[Driving under the influence|DUI]] offenses are committed, while the vehicles' regular plates are impounded. Minnesota is one of only two states to issue such plates, the other being Ohio.<ref>{{cite web |title=Minnesota Whiskey Plates – Everything you Need to Know |url=https://www.leversonbudke.com/minnesota-whiskey-plates-everything-you-need-to-know/ |publisher=Leverson Budke Criminal Defense |location=Eagan, MN |date=February 20, 2020 |access-date=January 13, 2021}}</ref>
+
+Nicknamed "whiskey plates" because their serials start with 'W', and "whiskey" is this letter's code word in the [[NATO phonetic alphabet]].
+|-
+|[[File:MN drunk plate.jpg|150px]]
+|2008–present
+|Screened black serial on white plate; "Minnesota" and "10,000 lakes" centered at top and bottom respectively
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Truck
+|1997–2008
+|Embossed blue serial on white plate; "MINNESOTA" and "10,000 LAKES" centered at top and bottom respectively; weight class sticker at right
+|{{small|'''Y'''/B}}&nbsp;C1234
+|{{small|Y/A}} A0001 to approximately {{small|Y/B}}&nbsp;A8000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008–present
+|As current passenger base; "FEB" at bottom left and weight class sticker at right
+|'''Y'''BC1234
+|YBB0001 to YCD4180 {{small|(as of March 1, 2023)}}<ref name="licenseplates.cc"/>
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/mn.html Minnesota license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200623204642/https://www.15q.net/mn.html |date=June 23, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Minnesota}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Minnesota}}
+[[Category:Vehicle registration plates of the United States by state or territory|Minnesota]]
+[[Category:Transportation in Minnesota]]
+[[Category:1909 in transport]]
+[[Category:Minnesota transportation-related lists]]

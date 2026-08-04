@@ -1,0 +1,1584 @@
+{{short description|Utah vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =
+| image2 = UTnewfont.png
+| caption = Current ski license plate
+| caption2 = Current arch license plate
+| nickname = 
+| slogan_label = Slogan
+| slogan = ''Ski and arch plates:''<br />Life Elevated<br />''Ski plate only:''<br />Greatest Snow on Earth<br />''In God We Trust plate:''<br />In God We Trust; United We Stand
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ''Ski and arch plates:''<br />A12 3BC<br />''In God We Trust plate:''<br />1ABC2
+| current_start_date = ''Ski and arch plates:''<br />{{Start date|2007|11|19}}<br />''In God We Trust plate:''<br />{{Start date|2013}}; standardized from January 1, 2017 onwards
+| designer = 
+| issuer = Utah State Tax Commission, Division of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1915|05|11}}<br />(pre-state plates from May 11, 1909 through May 10, 1915)
+}}
+The U.S. state of [[Utah]] first required its residents to register their [[motor vehicle]]s in 1909. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1915, when the state began to issue plates.<ref>{{cite web |title=Old Utah License Plates |url=http://leatherlicenseplates.com/old-utah-license-plates-vintage-utah-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=June 10, 2017 |archive-date=March 4, 2017 |archive-url=https://web.archive.org/web/20170304112650/http://leatherlicenseplates.com/old-utah-license-plates-vintage-utah-license-plates/ |url-status=dead }}</ref>
+
+{{As of|2026}}, plates are issued by the Utah State Tax Commission through its Division of Motor Vehicles. Only rear plates are required for most classes of vehicles, including motorcycles and trailers. The front plate requirement was lifted for passenger vehicles on January 1, 2025.<ref>{{cite web|title=Utah officially changed its license plate requirements - Here's when you can ditch your front plate |url=https://www.abc4.com/news/local-news/utah-officially-changed-its-license-plate-requirements-heres-when-you-can-ditch-your-front-plate/ |publisher=ABC4 |access-date=March 15, 2024}}</ref> Month and year decals have now been consolidated into one sticker instead of two separate decals. New license plates will now be flat-screen printed instead of being embossed.
+
+== Passenger baseplates ==
+{{Clear}}
+
+=== 1915 to 1967 ===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1954 (dated 1955) issue was the first Utah license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Dark green on white; "U 15" at right
+|''none''
+|1234
+|1 to approximately 7600
+|
+|-
+|[[File:Utah 1916 licnese plate - Number 10622.jpg|150px]]
+|1916
+|Yellow on brown; "U 16" at right
+|''none''
+|12345
+|1 to approximately 13800
+|
+|-
+|[[File:Utah 1917 license plate - Number 3811.jpg|150px]]
+|1917
+|Black on gray; "U 17" at right
+|''none''
+|12345
+|1 to approximately 18200
+|
+|-
+|[[File:Utah 1918 license plate - Number 9243.jpg|150px]]
+|1918
+|Gray on black; "U 18" at right
+|''none''
+|12345
+|1 to approximately 22000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|White on dark olive green; "U 19" at right
+|''none''
+|12345
+|5000 to approximately 34600
+|Serials 1 through 399 used on dealer plates, and 400 through 4999 on truck plates.<ref name="allaboutlicenseplatesUT">{{cite web |last=Tanner |first=Eric N. |title=Utah Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Utah&code=ut |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref>
+|-
+|[[File:Utah 1920 license plate - Number 23012.jpg|150px]]
+|1920
+|White on blue; "U 20" at right
+|''none''
+|12345
+|5000 to approximately 42300
+|Dealer and truck plate serials same as 1919.
+|-
+|[[File:Ut1921.JPG|150px]]
+|1921
+|Orange on black; lines at top and bottom borders; "U 21" at right
+|''none''
+|12345
+|7001 to approximately 47500
+|Serials 1 through 400 used on dealer plates, and 401 through 7000 on truck plates.
+|-
+|[[File:Utah 1922 license plate - Number 9-068.jpg|150px]]
+|1922
+|White on black with border line; "U 22" at right
+|''none''
+|12-345
+|8-501 to approximately 49-500
+|Serial 1 issued to [[Secretary of state (U.S. state government)|Secretary of State]]; 2 through 300 used on dealer plates, 301 through 8-000 on truck plates, and 8-001 through 8-500 on trailer plates.
+|-
+|[[File:Utah 1923 License Plate.jpg|150px]]
+|1923
+|White on red with border line; slanted "UTAH" and "1923" at left
+|''none''
+|12-345
+|8-501 to approximately 65-000
+|First use of the full state name. Secretary of State, dealer, truck and trailer plate serials same as 1922.
+|-
+|[[File:Utah 1924 license plate - Number 77-938.jpg|150px]]
+|1924
+|White on dark blue with border line; slanted "UTAH" and "1924" at right
+|''none''
+|12-345
+|10-000 to approximately 79-000
+|Serial 1 issued to Secretary of State; 2 through 299 used on dealer plates, 300 through 499 on trailer plates, 500 through 999 on exempt plates, and 1-000 through 9-999 on truck plates.
+|-
+|[[File:Utah 1925 license plate - Number 41-444.jpg|150px]]
+|1925
+|White on green with border line; "UTAH 25" at left
+|''none''
+|12-345
+|13-000 to approximately 91-000
+|Serial 1 issued to Secretary of State; 2 through 299 used on dealer plates, 300 through 399 on trailer plates, 400 through 999 on exempt plates, and 1-000 through 12-999 on truck plates.
+|-
+|[[File:Utah 1926 license plate - Number 22-114.jpg|150px]]
+|1926
+|Black on silver with border line; "26 UTAH" at right
+|''none''
+|12-345
+|14-000 to approximately 95-000
+|Serial 1 issued to Secretary of State; 2 through 299 used on dealer plates, 300 through 499 on trailer plates, 500 through 12-999 on truck plates, and 13-000 through 13-999 on exempt plates.
+|-
+|[[File:Utah 1927 license plate.jpg|150px]]
+|1927
+|White on dark blue with border line; "UTAH 27" at left
+|''none''
+|12-345
+|1-500 to approximately 82-000
+|
+|-
+|[[File:Utah 1928 license plate - Number 90-724.jpg|150px]]
+|1928
+|Black on yellow with border line; "UTAH 28" at right
+|''none''
+|12-345
+|1-500 to approximately 91-000
+|
+|-
+|[[File:Utah 1929 license plate - Number 66-769.jpg|150px]]
+|1929
+|Black on green with border line; "UTAH 29" at left
+|''none''
+|12-345
+|1-500 to approximately 96-500
+|
+|-
+|[[File:Ut1930.JPG|150px]]
+|1930
+|White on black with border line; "UTAH 30" at right
+|''none''
+|12-345
+|1-500 to approximately 93-500
+|
+|-
+|[[File:Utah 1931 license plate - Number 91-347.jpg|150px]]
+|1931
+|Black on silver with border line; "31 UTAH" at right
+|''none''
+|12-345
+|1-500 to approximately 91-500
+|
+|-
+|[[File:Utah 1932 license plate - Number 39-936.jpg|150px]]
+|1932
+|White on black with border line; "32 UTAH" at left
+|''none''
+|12-345
+|1-500 to approximately 95-500
+|
+|-
+|[[File:Ut1933.JPG|150px]]
+|1933
+|White on black with border line; "UTAH - 1933" at top
+|''none''
+|12-345
+|1-500 to approximately 78-500
+|
+|-
+|[[File:Utah 1934 license plate - Number 116-726.jpg|150px]]
+|1934
+|Black on silver with border line; "UTAH - 1934" at bottom
+|''none''
+|123-456
+|30-000 to approximately 133-000
+|
+|-
+|[[File:Utah 1935 license plate - Number 132-853.jpg|150px]]
+|1935
+|White on black with border line; "1935 - UTAH" at bottom
+|''none''
+|123-456
+|50-001 to approximately 154-000
+|
+|-
+|[[File:Utah 1936 license plate - Number 167-467.jpg|150px]]
+|1936
+|Black on silver with border line; "UTAH - 1936" at bottom
+|''none''
+|123-456
+|50-001 to approximately 167-500
+|
+|-
+|[[File:1937 Utah license plate.jpg|150px]]
+|1937
+|White on black with border line; "UTAH - 1937" at top
+|''none''
+|123-456
+|50-001 to approximately 179-000
+|
+|-
+|[[File:Ut1938.JPG|150px]]
+|1938
+|Maroon on white with border line; "UTAH - 1938" at bottom
+|''none''
+|123-456
+|50-001 to approximately 174-000
+|
+|-
+|[[File:Utah 1939 license plate - Number 115-391.jpg|150px]]
+|1939
+|White on blue/black with border line; "UTAH - 1939" at top
+|''none''
+|123-456
+|100-001 to approximately 229-500
+|
+|-
+|[[File:Utah 1940 license plate - Number K-7242.jpg|150px]]
+|1940
+|Orange on dark blue with border line; "UTAH - 40" at bottom
+|''none''
+|A-1234
+|
+|
+|-
+|[[File:Utah 1941 license plate - Number K 8454.jpg|150px]]
+|1941
+|White on black with border line; "UTAH - 41" at top right
+|''none''
+|A 1234
+|
+|
+|-
+|[[File:Ut1942.JPG|150px]]
+|{{nowrap|1942–43}}
+|Black on white with border line; "42 UTAH" at left
+|CENTER SCENIC AMERICA
+|A 1234
+|
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Utah 1944 license plate, number M2815.png|150px]]
+|1944
+|Black on white; "UTAH 44" at bottom
+|''none''
+|A1234
+|
+|Manufactured on [[soybean]]-based [[fiberboard]] due to ongoing metal conservation.
+|-
+|[[File:Utah 1945 license plate - Number M5142.jpg|150px]]
+|1945
+|White on maroon with border line; "45 UTAH" at left
+|CENTER SCENIC AMERICA
+|A1234
+|
+|
+|-
+|[[File:Utah 1946 License Plate.jpg|150px]]
+|1946
+|White on black with border line; "46 UTAH" at left
+|CENTER SCENIC AMERICA
+|A1234
+|
+|
+|-
+|[[File:Utah 1947 license plate - Number X7870.jpg|150px]]
+|1947
+|Yellow on black with border line; "47 UTAH" at left
+|THIS IS THE PLACE
+|A1234
+|
+|
+|-
+|[[File:Ut1948.JPG|150px]]
+|1948
+|White on black with border line; vertical "UTAH" and "48" at left
+|THE FRIENDLY STATE
+|A1234
+|
+|
+|-
+|[[File:Utah 1949 license plate - Number B 860.jpg|150px]]
+|1949
+|White on black with border line; "UTAH - 49" at bottom right
+|''none''
+|A&nbsp;1234
+|
+|
+|-
+|[[File:Utah 1950 license plate - Number A 252.jpg|150px]]
+|1950
+|Orange on black with border line; "UTAH - 50" at top right
+|''none''
+|A&nbsp;1234
+|
+|
+|-
+|[[File:Utah 1951 license plate .jpg|150px]]
+|1951
+|White on green with border line; "UTAH 1951" at top right
+|''none''
+|{{small|A/B}} 123
+|
+|
+|-
+|[[File:Utah 1952 license plate.jpg|150px]]
+|1952
+|White on blue with border line; "UTAH 1952" at bottom left
+|''none''
+|123 {{small|A/B}}
+|
+|
+|-
+|[[File:Utah 1953 license plate.jpg|150px]]
+|1953
+|Yellow on black with border line; "UTAH 1953" at top right
+|''none''
+|{{small|A/B}} 123
+|
+|
+|-
+|[[File:Ut1954.JPG|150px]]
+|1954
+|White on dark green with border line; "UTAH 1954" at bottom right
+|''none''
+|{{small|A/B}} 123
+|
+|
+|-
+|[[File:Utah 1955 license plate.jpg|150px]]
+|1955
+|White on black with border line; "UTAH 1955" at top
+|''none''
+|AB 123
+|
+|
+|-
+|[[File:Utah 1956 license plate.jpg|150px]]
+|1956
+|White on dark red with border line; "UTAH 56" at bottom right
+|''none''
+|{{small|A/B}}&nbsp;1234
+|{{small|A/A}} 1000 to approximately {{small|D/J}}&nbsp;9999
+|For each two-letter series, only the letters A, B, C, D, E, F, H, J and K were used. This practice continued until 1970.
+|-
+|[[File:Utah 1957 license plate.jpg|150px]]
+|1957
+|White on dark blue with border line; "UTAH 57" at top right
+|''none''
+|{{small|A/B}}&nbsp;1234
+|{{small|A/A}} 1000 to approximately {{small|D/J}}&nbsp;5000
+|
+|-
+|[[File:Utah 1958 license plate.jpg|150px]]
+|1958
+|Yellow on dark blue with border line; "UTAH 58" at top right
+|''none''
+|{{small|A/B}}&nbsp;1234
+|{{small|A/A}} 1000 to approximately {{small|D/H}}&nbsp;9999
+|
+|-
+|[[File:Ut1959.JPG|150px]]
+|1959
+|White on red-orange; "UTAH 59" at top
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately DK&nbsp;5000
+|
+|-
+|[[File:Ut1960.JPG|150px]]
+|1960
+|Dark red on off gray; "UTAH 60" at top
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately DK&nbsp;9999
+|
+|-
+|[[File:Utah 1961 license plate.jpg|150px]]
+|1961
+|Dark blue on off white; "UTAH 61" at top
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately EC&nbsp;5000
+|
+|-
+|[[File:Utah 1962 license plate.jpg|150px]]
+|1962
+|Red on off gray/white; "UTAH 62" at top
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately EE&nbsp;5000
+|
+|-
+|[[File:1963 Utah license plate.jpg|150px]]
+|1963
+|White on dark blue; "UTAH 63" at bottom
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately EH&nbsp;5000
+|
+|-
+|[[File:Utah 1964 License Plate.png|150px]]
+|1964
+|White on green; "UTAH 64" at top
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately EJ&nbsp;9999
+|
+|-
+|[[File:Utah 1965 License Plate.png|150px]]
+|1965
+|White on blue; "UTAH 65" at bottom
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately FA&nbsp;9999
+|
+|-
+|[[File:Utah 1966 license plate.jpg|150px]]
+|1966
+|White on black; "UTAH 66" at top
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately FB&nbsp;9999
+|
+|-
+|[[File:1967 Utah license plate.JPG|150px]]
+|1967
+|White on green; "UTAH 67" at bottom
+|''none''
+|AB&nbsp;1234
+|AA 1000 to approximately FD&nbsp;5000
+|
+|}
+
+=== 1968 to present ===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Utah 1968 license plate.jpg|150px]]
+|{{nowrap|1968–72}}
+|White on black; "UTAH" centered at bottom
+|''none''
+|AB&nbsp;1234
+|AA 1000 to<br />KK&nbsp;9999;<br />LL&nbsp;1000 to approximately PR&nbsp;9999
+|Revalidated for [[:File:Ut1969.JPG|1969]], [[:File:Ut1970.JPG|1970]], [[:File:Ut1971.JPG|1971]] and [[:File:Ut1972.JPG|1972]] with stickers. After KK 9999 was issued in 1970, the serial format continued with only the letters L, M, N, P, R, S, T, V and W used.
+|-
+|[[File:Utah 1973 license plate.jpg|150px]]
+|1973
+|Black on reflective white; "UTAH 73" at bottom
+|rowspan="6"|''none''
+|rowspan="6"|ABC&nbsp;123
+|AAA 001 to approximately HDH&nbsp;999
+|rowspan="6"|Three-letter series used a split-alphabet system, with each letter advancing A, B, C, D, E, F, H, J, K (block 1), or L, M, N, P, R, S, T, V, W (block 2). Progression was as follows: all three letters in block 1, then first letter in block 2 and last two letters in block 1, then first two letters in block 2 and last letter in block 1, then all three letters in block 2, and finally first two letters in block 1 and last letter in block 2.<br /><br />On the 1974–78 variant, two different designs of beehive were used - one rounded, the other pointed.<br /><br />All variants are still currently revalidated.
+|-
+|[[File:1973HistoricUtah.jpg|150px]]
+|1973
+|As above, but without year ("UTAH" offset to left)
+|HDJ 001 to approximately HJB&nbsp;999
+|-
+|[[File:Ut1973thin.jpg|150px]]
+|1973–74
+|As above, but with "UTAH" centered
+|HJC 001 to approximately KEE&nbsp;999
+|-
+|[[File:UtBeehive.JPG|150px]]
+|1974–78
+|As above, but with embossed beehive used as separator in serial
+|KEF 001 to KKK&nbsp;999;<br />LAA&nbsp;001 to WKK&nbsp;999;<br />LLA&nbsp;001 to approximately LWK&nbsp;999
+|-
+|[[File:Utah license plate, 1980.png|150px]]
+|1978–81
+|As above, but without beehive (similar to 1973–74)
+|MLA 001 to WWK&nbsp;999;<br />LLL&nbsp;001 to approximately MVW&nbsp;999
+|-
+|[[File:Utah license plate, 1982-1985.png|150px]]
+|1982–85
+|As above, but with "UTAH" screened rather than embossed
+|MWL 001 to WWW&nbsp;999;<br />AAL&nbsp;001 to approximately BFP&nbsp;999
+|-
+|[[File:Utah license plate, 1985-1990 series with August 2001 sticker.png|150px]]
+|1985–90
+|Blue on white with [[Skiing|skier]] graphic
+|rowspan="3"|Greatest Snow on Earth
+|rowspan="3"|123&nbsp;ABC
+|001 AAA to 999&nbsp;DWW
+|rowspan="3"|Awarded "Plate of the Year" for best new license plate of 1986 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Utah has been so honored. Letters G, U, X, Y and Z added to serials in late 1992, beginning with the FPG series.<ref name="allaboutlicenseplatesUT"/>
+Certain plates in the 001 LAA - 999 LZZ series have been spotted with the 'W' dies incorrectly stamped.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1990–93
+|As above, but with narrower serial [[Die (manufacturing)|die]]s
+|001 EAA to approximately 999 GPY
+|-
+|[[File:Utah 1999 license plate.png|150px]]
+|1993&nbsp;– November 18, 2007
+|As above, but with darker blue serials
+|001 GPZ to approximately 999 PMV
+|-
+|
+|1992–96
+|Dark blue on [[Delicate Arch]] graphic; "UTAH" in white
+|rowspan="2"|Centennial
+|rowspan="2"|123&nbsp;ABC
+|001 ZAA to 999&nbsp;ZEZ
+|rowspan="2"|Commemorated Utah's 100 years of statehood. Issued concurrently with the 1985 Ski base, first as an extra-fee base and then as a no-cost base from 1997. The first letter in the serial progressed backwards (so 999 ZZZ was followed by 001 YAA, 999 YZZ was followed by 001 XAA, and so on).
+Certain plates in the 001 XAA - 999 XZZ series have been spotted with the 'W' dies incorrectly stamped.
+|-
+|[[File:Utah-License-Plate-Arches-448WAE.jpg|150px]]
+|1996&nbsp;– November 18, 2007
+|As above, but with "UTAH" in blue
+|001 ZFA to approximately 999 UYL<br />(see right)
+|-
+|[[File:Utah “greatest snow on earth” embossed license plate.jpg|150px]]
+|November 19, 2007<ref name="auto">{{cite web|last=Richard |first=Terry |date=November 20, 2007 |title=New Utah plate features skier Heidi Voelker |url=http://blog.oregonlive.com/terryrichard/2007/11/new_utah_plate_features_skier.html |publisher=[[OregonLive.com]] |access-date=September 1, 2016}}</ref>&nbsp;– May 2023
+|Dark blue on skier graphic
+| rowspan="3" |Greatest Snow on Earth / Life Elevated
+| rowspan="3" |A12&nbsp;3BC
+|A00 1AA to G99&nbsp;9XZ (see right)
+| rowspan="6" |Redesigned Ski base and updated Arch base, issued concurrently. On the Arch base, the first letter in the serial progresses backwards (Z then Y then X etc.). For both types, then the letters in the 5th and 6th positions are issued alphabetically (AA to ZZ). Then the next first letter is started. The letters I, O and Q are not used.<ref>Observing hundreds of plates over the past several months</ref>
+
+For Life Elevated - Skier plates, all plates issued during the B-NW - D-FW, D-WZ, and F-GW series have the 'W' die incorrectly stamped. Certain plates in the B-BW series have been spotted using the 'W' die stamped correctly and incorrectly.
+
+For Life Elevated - Arches plates, all plates issued during the Z-YW - X-CW, X-UW, X-WD, and V-BW series have the 'W' die incorrectly stamped, except for the Y-SW and Y-TW series. The Y-SM, Y-TM, X-DM, and X-MJ series have the 'M' die incorrectly stamped. Certain plates in the X-SW series have been spotted with the 'W' die stamped correctly and incorrectly.
+
+With the updated North Carolina dies introduced in 2023, Ski and Arch plates have been seen reverting back to the old dies in random sequences throughout the G-Yx series and T-Hx series. Approximately G00 1YW-G34 9YW, G00 1YX-G99 9YZ, and T00 1HZ-T84 9HZ were seen using the previous dies.
+
+For 2025, Utah no longer embosses the characters into the plate. All new plates are now flat screen printed. Utah is re-using stagnant plate numbers that were originally issued from 2007-2023 on both the 2007 skier and arch base. Skier plates are issued in ascending order, re-starting again with the A series. Arch plates are issued in ascending order but with the first letter progressing backwards, re-starting again with the Z series. This is the first time the state has re-issued a previous serial run to our knowledge. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|May 2023 – December 2024
+|As above, but with thinner, squarer serial dies (using North Carolina dies)
+|G00 1YA to H99 9JH
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2025 – Present
+|As above, but with flat print
+|H00 1JJ to H84 9JU and A00 1AA to A56 4LB {{small|(as of July 17, 2026)}}
+|-
+|[[File:2017 Utah License Plate.jpg|150px]]
+|November 19, 2007<ref name="auto" />&nbsp;– March 2023
+|Dark blue on Delicate Arch graphic
+| rowspan="3" |Life Elevated
+| rowspan="3" |A12 3BC
+|Z00 1AA to T99 9GZ (see right)
+|-
+|[[File:UTnewfont.png|150px]]
+|March 2023 – December 2024
+|As above, but with thinner, squarer characters (using North Carolina dies)
+|T00 1HA to S99 9BM
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2025 – present
+|As above, but with flat print
+|S00 1BN to S26 0DB and Z00 1AA to Z33 6WR {{
+small|(as of July 25, 2026)}}
+|-
+|rowspan="2"|[[File:Utah In God We Trust license plate.png|150px]]
+|January 1, 2017&nbsp;– April<br />2018
+|rowspan="2"|Dark blue on white with national flag at left
+| rowspan="5" |In God We Trust / United We Stand
+|A123B
+|Z001A to N999Z
+| rowspan="5" |First issued in 2013 as a specialty plate; standardized from 2017 onwards.<ref>{{cite news |last=McKellar |first=Katie |date=March 21, 2016 |title='In God We Trust' Utah license plate to become new standard option |url=http://www.deseretnews.com/article/865650580/In-God-We-Trust-Utah-license-plate-to-become-new-standard-option.html |archive-url=https://web.archive.org/web/20160324021315/http://www.deseretnews.com/article/865650580/In-God-We-Trust-Utah-license-plate-to-become-new-standard-option.html |url-status=dead |archive-date=March 24, 2016 |newspaper=[[Deseret News]] |location=Salt Lake City |access-date=July 24, 2017}}</ref> In the A123B serial format, the first letter progressed backwards (so Z999Z was followed by Y001A, Y999Z was followed by X001A, and so on).
+In the 1A2BC and 1ABC2 formats, letter combinations begin with the numbers 00 instead of 01 (so 9AAA9 is followed by 0AAB0, 9AAB9 is followed by 0AAC0 and so on).
+
+The #A#FM, #A#GM, and #M#MB series have the 'M' die incorrectly stamped. Certain plates in the #U#ZW series have been spotted with the 'W' die stamped correctly and incorrectly.
+
+For 2025, Utah no longer embosses the characters into the plate. All new plates are now flat screen printed. In God We Trust plates are still issued using the 1ABC2 format that began in August 2023 while also re-using plates from the A123B format, which is the serial format that specialty plates used from 2007-2019. What determines which alphanumeric series gets printed onto an In God We Trust plate is unknown. The current 1ABC2 format transitioned from embossed to flat plates sometime during the FEx-FFx series. The re-using of the A123B format for In God We Trust appears to have begun around A001N and is ascending up the alphabet similar to what specialty plates did from 2007-2019. This is the first time the state has re-issued a previous serial run to our knowledge.
+|-
+|April 2018&nbsp;– June<br />2023
+|rowspan="2"|1A2BC
+|0A0AA to approximately 4Z9GL (see right) 
+|-
+|[[File:UTnewfont2.jpg|150px]]
+|June<br />2023 – August 2023
+| rowspan="2" |As above, but with thinner, squarer characters (using North Carolina dies) 
+|Approximately 5Z0GL to 9Z9ZZ 
+|-
+|[[File:2023 Utah IGWT plate with new serials.jpg|150px]]
+|August 2023 – December 2024
+|1ABC2
+|0AAA0 to 9FEZ9
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2025 – present
+|As above, but with flat print
+|A123B and 1ABC2
+|A001P to D094U and 0FFA0 to 0LLC2 {{small|(as of July 17, 2026)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|June 1, 2026 - July 31, 2027
+|White on dark blue featuring the 13-star colonial flag on the left, with 1776 in the middle of the stars.
+|America 250
+|1A2345
+|0A0001 to 5A4386 {{small|(as of July 29, 2026)}}
+|The America 250 plate is a limited edition plate that Utah and many other US states are issuing in celebrating the 250th anniversary of the Declaration of Independence signing on July 4, 2026. This is a standard issue plate celebrating a major event - similar to the 2002 Utah Winter Olympic Games plate. [https://dmv.utah.gov/plates/license-plates/america-250/]
+|}
+
+== Non-passenger plates ==
+=== Current ===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+| rowspan="5" |[[File:UtahDisabled Person.JPG|150px]]
+| rowspan="10" |Disabled Person
+| rowspan="3" |1990s – July 2023
+| rowspan="3" |Plain white base; [[International Symbol of Access]] at left
+| rowspan="4" |Greatest Snow on Earth
+|1234A
+|0001A to approximately 4285U 
+| rowspan="5" |Drivers who need a disabled person plate have 3 different options for a plate design. They are able to choose from a plain white base, a skier base, or an arches base.
+
+Serial formats 1234A, A123B, & 12AB3 are shared with the optional plates, as all optional plates share the same plain white base.
+
+The B###W - D###W series have been spotted with the 'W' die stamped incorrectly.
+
+For 2025, Utah no longer embosses the characters onto the plate. All plates are now flat screen printed. In addition to the current 12AB3 format, it appears that Utah is re-using retired plate numbers from the A123B and 1234A formats from when they were originally issued from 2007-2023. The A123B format is also being shared with flat printed In God We Trust plates. Specialty plates are issued in ascending order starting again the A series. This is the first time the state has re-issued a previous serial run to our knowledge.   
+|-
+|A123B
+|A001A to M999Z
+|-
+| rowspan="2" |12AB3
+|00AA1 to 99FB9 
+|-
+|July 2023 — present
+|As above, but with thinner, squarer characters (using North Carolina dies)
+|00FD1 to 99GV9 
+|-
+|January 2025—present
+|As above, but with flat print
+|
+|A123B, 12AB3, and 1234A
+|A001A to A999N, 00GW1 to 27GW5, and 0001A to 0326C {{small|(as of June 18, 2026)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1990s — 2007
+
+|As Centennial base; [[International Symbol of Access]] at left
+|Centennial
+|1234A
+|0000Z to no later than 9999V
+|
+|-
+|[[File:UTskierdisabled.jpg|150px]]
+|2007 - 2023
+|Dark blue on skier graphic; [[International Symbol of Access]] at left
+| rowspan="5" |Life Elevated
+| rowspan="5" |AB12C
+|AA01A to AL99Z
+| rowspan="5" |Redesigned Ski base and updated Arch base, issued concurrently. On the Arch base, the first letter in the serial progresses backwards (Z then Y then X etc.). For both types, then the letters in the 2nd and 5th positions are issued alphabetically (AA to ZZ). Then the next first letter is started.
+Important to note, the AB12C serial format is exclusive to the Skier and Arch disabled person plates.
+
+For the Disabled Person Life Elevated - Arches plates, the ZA-W series has been spotted with the 'W' die incorrectly stamped. Certain plates in the ZM01A - ZM99Z series have been spotted with the 'M' die stamped correctly and incorrectly.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2025 - Present
+|As above, but with thinner, squarer characters (using North Carolina dies) and issued with flat print.
+|AA01A to AM70W {{small|(as of March 22, 2026)}}
+|-
+|[[File:Utarchdisabled.jpg|150px]]
+|2007 - 2023
+|Dark blue on Delicate Arch graphic; [[International Symbol of Access]] at left
+|ZA01A to ZP99W
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023 - December 2024
+|As above, but with thinner, squarer characters (using North Carolina dies)
+|ZP01X to ZR99Z
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|
+|January 2025 - Present
+|As above, but with flat print.
+|ZA01A to ZU16C {{small|(as of January 19, 2026)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="8" |Motorcycle
+|1985
+|Embossed blue on white; "UTAH" embossed in blue at top, offset to left
+|''none''
+|123&nbsp;AB
+|001 AA to approximately 999&nbsp;ET
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994
+|Embossed dark blue on white; "Utah" screened in red at top, offset to right
+|''none''
+|123AB
+|001FA to approximately 999KZ
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1992
+|As 1992 Centennial passenger base, with "UTAH" in white
+|Centennial
+|123AB
+|001ZA to approximately 999VP<br />(see right)
+|Issued concurrently with the 1985 and 1994 bases. The first letter in the serial progressed backwards (so 999ZZ was followed by 001YA, 999YZ was followed by 001XA, and so on).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008 to 2023
+|As 2007 Ski passenger base
+| rowspan="2" |Greatest Snow on Earth / Life Elevated
+| rowspan="4" |A12BC
+|A01AA to E99BZ
+| rowspan="4" |Issued concurrently. On the Arch base, the first letter in the serial progresses backwards (so Z99ZZ was followed by Y01AA, Y99ZZ was followed by X01AA, and so on).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with thinner, squarer characters (using North Carolina dies)
+|E01CA to E04HP {{small|(as of May 6, 2025)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008 - 2023
+|As 2007 Arch passenger base
+| rowspan="2" |Life Elevated
+|Z01AA to U99NZ
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2023–present
+|As above, but with thinner, squarer characters (using North Carolina dies)
+|U01RA to T87BM {{small|(as of September 9, 2025)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2017 – present
+|As 'In God We Trust' passenger base
+|In God We Trust / United We Stand
+|ABC1
+|AAA0 to CVU0 {{small|(as of February 28, 2026)}}
+|
+|-
+|[[File:Utah 2004 Temporary Motor Vehicle Registration.jpg|150px]]
+|Temporary
+|varies
+|Hand-written date on paper
+|''none''
+|MM-DD-YY
+|A 00000 to Z 99999, then AA 00000 to DC 09474 {{small|(as of November 28, 2024)}}
+|Hologram on bottom right valid for 30 days
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|[[Trailer (vehicle)|Trailer]]
+|1985
+|rowspan="2"|As 1985 Ski passenger base
+|rowspan="2"|Greatest Snow on Earth
+|rowspan="2"|12345 A
+|00001 A to approximately 40000 E
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1992
+|40001 E to approximately 17000 R
+|Narrower serial dies.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|2008
+|As 2007 Ski passenger base
+|Greatest Snow on Earth / Life Elevated
+|rowspan=2|123456A
+|000001A to 274729A {{small|(as of January 18, 2025)}}
+|rowspan="2"|Issued concurrently.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As 2007 Arch passenger base
+|Life Elevated
+|000001Z to 434773Z {{small|(as of November 16, 2024)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Apportioned Truck
+|rowspan="2"|2008
+|As 2007 Ski passenger base
+|Greatest Snow on Earth / Life Elevated
+|A000000
+|A000000 to A069622 {{small|(as of February 10, 2025)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As 2007 Arch passenger base
+|Life Elevated
+|Z000000
+|Z000000 to Z095872 {{small|(as of November 15, 2024)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Apportioned Trailer
+|rowspan="2"|2008
+|As 2007 Ski passenger base
+|Greatest Snow on Earth / Life Elevated
+|A000000
+|A500000 to A542473 {{small|(as of November 22, 2024)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As 2007 Arch passenger base
+|Life Elevated
+|Z000000
+|Z500000 to Z524843 {{small|(as of November 19, 2024)}}
+|-
+||[[File:OffHighwayUtah.png|150px]]
+|Off-Highway Vehicle
+|January 1, 2023
+|Plain Desert Tan base; "UTAH" and plate dies in black (using North Carolina dies)
+|Off-Highway Vehicle
+|1AB23
+|0AA00 to 6HS77 {{small|(as of April 19, 2026)}}
+|Issued to off-highway vehicles only. These plates CANNOT be personalized.<ref>{{Cite web|url=https://dmv.utah.gov/plates/off-highway-vehicle|title=Off-Highway Vehicle}}</ref>
+|}
+
+=== Deprecated ===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Utah December 1957 quarterly license plate.jpg|150px]]
+|rowspan="10"|Commercial 1/4 Year
+|October 1, 1957
+|Colors unknown; "4 Expires Dec. 31 1957" at bottom
+|UTAH 1234
+|rowspan="10"|
+|-
+|[[File:Utah December 1963 quarterly license plate.jpg|150px]]
+|October 1, 1963
+|White on orange; "UTAH 63" at bottom; "EXP 31 DEC" at left
+|12345
+|-
+|[[File:Utah March 1967 quarterly license plate.jpg|150px]]
+|January 1, 1967
+|White on brown; "UTAH 67" at bottom; "EXP 31 MAR" at left
+|12345
+|-
+|[[File:Utah June 67 quarterly license plate.jpg|150px]]
+|April 1, 1967
+|White on red; "UTAH 67" at bottom; "EXP 30 JUNE" at left
+|12345
+|-
+|[[File:Utah September 1967 quarterly license plate.jpg|150px]]
+|July 1, 1967
+|White on blue; "UTAH 67" at bottom; "EXP 30 SEPT" at left
+|12345
+|-
+|[[File:Utah December 1967 quarterly license plate.jpg|150px]]
+|October 1, 1967
+|White on black; "UTAH 67" at bottom; "EXP 31 DEC" at left
+|12345
+|-
+|[[File:Utah December 1971 quarterly license plate.jpg|150px]]
+|October 1, 1971
+|White on green; "UTAH 71" at top; "EXP 31 DEC" at left
+|12345
+|-
+|[[File:Utah September 1972 quarterly license plate.jpg|150px]]
+|July 1, 1972
+|White on green; "UTAH 72" at bottom; "EXP 30 SEPT" at left
+|12345
+|-
+|[[File:Utah December 1972 quarterly license plate.jpg|150px]]
+|October 1, 1972
+|White on brown; "UTAH 72" at bottom; "EXP 31 DEC" at left
+|12345
+|-
+|[[File:Utah September 1973 quarterly license plate.jpg|150px]]
+|July 1, 1973
+|Blue on white; "UTAH 73" at bottom; "EXP 30 SEPT" at left
+|12345
+|}
+
+== Optional plates ==
+Utah currently offers over 60 optional license plates.<ref>{{cite web|url=http://dmv.utah.gov/plates/special-group|url-status=dead|archive-url=https://web.archive.org/web/20171207013232/http://dmv.utah.gov/plates/special-group|archive-date=2017-12-07|title=Special Group License Plates}}</ref> With the exception of the Amateur Radio Operator & Historic Black & White plates, all use the same serial format – originally 1234A (with a high of 4285U), then A123B (A001A to M999Z), and now 12AB3 (00AA1 to 99FB9) alongside the generic disabled plate.
+
+=== Current ===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serials issued
+!Notes
+|-
+|<!-- Deleted image removed: [[File:AmaRadUtah.png|150px]] -->
+|Amateur Radio
+|
+| rowspan="32" |Full color design depending on the special group.
+|Amateur Radio
+|
+|The serial number is the operator's FCC [[Call sign#Amateur radio|call sign]].
+|-
+|<!-- Deleted image removed: [[File:AutismAwareUtah.png|150px]] -->
+|Autism Awareness
+|
+|Support Autism Awareness
+|
+|
+|-
+|<!-- Deleted image removed: [[File:BoyScoutUtah.png|150px]] -->
+|Boy Scouts of America
+|
+|Scouting Teaches Values
+|
+|
+|-
+|[[File:BoyGirlUtah.png|150px]]
+|Boys and Girls Clubs
+|
+|Boys & Girls Clubs
+|
+|
+|-
+|<!-- Deleted image removed: [[File:CancerResearchUtah.png|150px]] -->
+|Cancer Research
+|
+|Changing the DNA of Cancer Care
+|
+|
+|-
+|
+|Children's Issues
+|
+|Invest in Children
+|
+|
+|-
+|[[File:CivilAirUtah.png|150px]]
+|Civil Air Patrol
+|2019 <ref>{{cite web | url=https://www.instagram.com/p/BvW3-sSn7lN/ | title=Instagram }}</ref>
+|Civil Air Patrol
+|
+|
+|-
+|[[File:BrighamYoungUtah.png|150px]]
+|Brigham Young University - Academic
+|July 1, 2026
+|Brigham Young University
+|
+|
+|-
+|
+|Brigham Young University - Athletic
+|July 1, 2026
+|Brigham Young University
+|
+|
+|-
+|[[File:EnsignUtah.png|150px]]
+|Ensign College (Formerly LDS Business College)
+|
+|Ensign College
+|
+|
+|-
+|
+|Salt Lake Community College
+|
+|Salt Lake Community College
+|
+|
+|-
+|[[File:SnowCollUtah.png|150px]]
+|Snow College
+|
+|Snow College
+|
+|
+|-
+|
+|Southern Utah University
+|
+|Southern Utah University
+|
+|
+|-
+|[[File:UniofUtah.png|150px]]
+|University of Utah - Academic
+|July 1, 2026
+|University of Utah
+|
+|
+|-
+|[[File:UtUofU.JPG|150px]]
+|University of Utah - Athletic
+|July 1, 2026
+|Utah Utes
+|
+|
+|-
+|[[File:UtahStateU.JPG|150px]]
+|Utah State University - Academic
+|July 1, 2026
+|Utah State Aggies
+|
+|
+|-
+|
+|Utah State University - Athletic
+|July 1, 2026
+|Utah State Aggies
+|
+|
+|-
+|[[File:TechUniUtah.png|150px]]
+|Utah Tech University (Formerly Dixie State University)
+|
+|Utah Tech University
+|
+|
+|-
+|[[File:Utah-License-Plate-UVU-L947J.jpg|150px]]
+|Utah Valley University
+|
+|Utah Valley University
+|
+|
+|-
+|[[File:WeberStateUtah.png|150px]]
+|Weber State University - Academic
+|July 1, 2026
+|Weber State University
+|
+|
+|-
+|
+|Weber State University - Athletic
+|July 1, 2026
+|Weber State
+|
+|
+|-
+|[[File:WestGovernUtah.png|150px]]
+|Western Governors University
+|
+|Western Governors University
+|
+|
+|-
+|[[File:WestMinsterUtah.png|150px]]
+|Westminster College
+|
+|Go Griffins
+|
+|
+|-
+|[[File:DisabledVetUtah.png|150px]]
+|Disabled Veteran
+|
+|Disabled Veteran
+|
+|
+|-
+|[[File:DonateLifeUtah.png|150px]]
+|Donate Life
+|
+|Organ, Eye, & Tissue Donation Saves Lives
+|
+|
+|-
+|
+|Emergency Medical Technician (EMT)
+|
+|Emergency Medical Technician
+|
+|
+|-
+|
+|Farm Vehicle
+|
+|Farm Vehicle
+|
+|
+|-
+|[[File:UTfirefighter.jpg|150px]]
+|Fire Fighter
+|
+|Utah Firefighter
+|
+|
+|-
+|[[File:FormerPOWUtah.png|150px]]
+|Former Prisoner of War (POW)
+|
+|Prisoner of War
+|
+|
+|-
+|[[File:FraternalUtah.png|150px]]
+|Fraternal Order
+|
+|www.utahgrandlodge.org
+|
+|
+|-
+|
+|Great Salt Lake Preservation
+|September 2025
+|Great Salt Lake
+|
+|
+|-
+|[[File:GoldStarUtah.png|150px]]
+|Gold Star
+|
+|Honors Their Sacrifice
+|
+|
+|-
+|[[File:HistoricBlackUtah.png|150px]]
+|rowspan=2|Historic Black and White
+|rowspan=2|May 2023
+|rowspan=2|White on black base
+|''none''
+|0AA000 to 2BH149 {{small|(as of July 23, 2026)}}
+|The serial format is different from the 1968 version, being 1AB234 instead of AB&nbsp;1234. The serial dies are also different (using [[Vehicle registration plates of North Carolina|North Carolina]] dies) as used on the new Skier & Arches plates.<ref>{{cite web | url=https://www.fox13now.com/news/local-news/utahs-new-license-plate-is-so-popular-theres-a-waitlist-for-it | title=Utah's new license plate is so popular, there's a waitlist for it | date=24 August 2023 }}</ref>
+|-
+||[[File:Blank License Plate Shape.svg|150px]]
+|''none''
+|00A00 to 32B56 {{small|(as of September 12, 2025}}
+|The motorcycle variant of the Historical Society plate.
+|-
+|
+|White and Black Classic
+|July 1, 2026
+|Black on white base
+|''none''
+|
+|
+|-
+|
+|Honoring Heroes
+|
+| rowspan="36" |Full color design depending on the special group.
+|Honoring Heroes Foundation
+|
+|
+|-
+|[[File:HumanUtah.png|150px]]
+|Humanitarian Service
+|
+|Utah Rotary
+|
+|
+|-
+|
+|Live On - Suicide Prevention
+|May 2024
+|Prevent Suicide
+|
+|
+|-
+|
+|Martin Luther King
+|2021<ref>{{cite web | url=https://apnews.com/article/utah-salt-lake-city-martin-luther-king-jr-2d6d5ff9f4adc7ea201a89ab506ded5e | title=Utah's newest license plate honors Martin Luther King's work | website=[[Associated Press News]] | date=18 September 2021 }}</ref>
+|Many Stories, One Utah
+|
+|
+|-
+|[[File:NBAJazzUtah.png|150px]]
+|National Basketball Association (NBA) – Utah Jazz
+|Originally released in 2015, redesigned in 2021. Complete overhaul on July 1, 2026. <ref>{{cite web | url=https://www.abc4.com/news/local-news/new-utah-jazz-license-plates-now-available/ | title=New Utah Jazz license plates now available | date=17 November 2021 }}</ref>
+|Utah Jazz
+|
+|
+|-
+|[[File:NatlGuardUtah.png|150px]]
+|National Guard
+|
+|Americans at Their Best
+|
+|
+|-
+|
+|National Hockey League - Utah Mammoth
+|July 1, 2026
+|Utah Mammoth
+|
+|
+|-
+|
+|National Men’s Soccer – Real Salt Lake
+|
+|Believe
+|
+|
+|-
+|[[File:HomelessPetUtah.png|150px]]
+|No More Homeless Pets
+|
+|Best Friends Animal Society
+|
+|
+|-
+|
+|Pearl Harbor Survivor
+|
+|Pearl Harbor Survivor
+|
+|
+|-
+|
+|Public Education Support
+|
+|I Support Public Education
+|
+|
+|-
+|[[File:PurpHeartUtah.png|150px]]
+|Purple Heart/Combat Wounded
+|
+|Combat Wounded
+|
+|
+|-
+|[[File:SearchRescueUtah.png|150px]]
+|Search and Rescue Teams
+|
+|Search and Rescue Team
+|
+|
+|-
+|[[File:ShareRoadUtah.png|150px]]
+|Share the Road
+|
+|Share the Road
+|
+|
+|-
+|
+|Soil Conservation
+|
+|Soil Conservation
+|
+|
+|-
+|
+[[File:ThirdLegisUtah.png|150px]]
+|State Legislator
+|
+|Greatest Snow on Earth
+|
+|
+|-
+|
+[[File:ThirdCongressUtah.png|150px]]
+|US Congress
+|
+|Greatest Snow on Earth
+|
+|
+|-
+|[[File:RealtorUtah.png|150px]]
+|Utah Housing Opportunity (Realtor)
+|
+|Protecting Homeownership
+|
+|
+|-
+|
+|Utah Law Enforcement Memorial
+|
+|Law Enforcement Memorial
+|
+|
+|-
+|[[File:AirForceUtah.png|150px]]
+|Veterans - Air Force
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:AmericanLegonUtah.png|150px]]
+|Veterans – American Legion
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:Utah Army Veteran License Plate.JPG|150px]]
+|Veterans - Army
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:CoastGuardUtah.png|150px]]
+|Veterans – Coast Guard
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:Utah Marines Veterans License Plate.JPG|150px]]
+|Veterans - Marines 
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:NavyUtah.png|150px]]
+|Veterans – Navy
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:CombatAirUtah.png|150px]]
+|Veteran Combat Theater – Air Force Combat Action Medal 
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:ArmyCombatUtah.png|150px]]
+|Veteran Combat Theater – Army Combat Action Badge
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:ArmyInfantUtah.png|150px]]
+|Veteran Combat Theater – Army Combat Infantry Badge
+|
+|Honors Veterans
+|
+|
+|-
+|[[File:CombatActionUtah.png|150px]]
+|Veteran Combat Theater – Marine & Navy Combat Action Ribbon
+|
+|Honors Veterans
+|
+|
+|-
+|
+|Wildlife - Elk
+|
+|I Support Wildlife
+|
+|
+|-
+|
+|Wildlife - Kestrel
+|
+|I Support Wildlife
+|
+|
+|-
+|
+|Wildlife - Mule Deer
+|
+|I Support Wildlife
+|
+|
+|-
+|
+|Wildlife - Trout
+|
+|I Support Wildlife
+|
+|
+|-
+|
+|Everyone Outdoors
+|July 1, 2026
+|Everyone Outdoors
+|
+|
+|-
+|
+|Women's Suffrage
+|2018<ref>{{cite web | url=https://www.deseret.com/2018/10/3/20655097/new-utah-license-plates-celebrating-utah-women-s-suffrage-now-available | title=New Utah license plates celebrating Utah women's suffrage now available | date=4 October 2018 }}</ref>
+|First to Vote
+|
+|
+|-
+|
+|Zion National Park
+|Originally released in 2009,<ref>{{cite web | url=https://www.nationalparkstraveler.org/2009/06/zion-national-park-gets-commemorative-licence-plate-its-no-arches | title=Zion National Park Gets Commemorative Licence Plate, but It's No Delicate Arch }}</ref> redesigned in 2022. Redesigned again on July 1, 2026. <ref>{{Cite web|url=https://dmv.utah.gov/plates/zionpark|title=Zion National Park}}</ref>
+|Zion Forever
+|
+|
+|-
+|
+|}
+
+=== Discontinued Plates ===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Slogan
+!Date Discontinued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Utah 2002 Olympics License Plate.jpg|150px]]
+|[[2002 Winter Olympics]]
+|Olympic Winter Games 2002
+|1998&nbsp;– June 30, 2002
+|black on multicolored
+|123A4
+|000A0 to 999T9
+|
+|-
+|[[File:Utah Clean Air License Plate.JPG|150px]]
+|Clean Fuel - Clean Air
+|Clean Fuel - Clean Air
+|July 1, 2011
+| rowspan="10" |Dark blue on white base with an image on the left side of the plate.
+|0000A and A123B
+|Varies
+|Plate was discontinued on July 1, 2011.<ref>{{Cite web|url=https://dmv.utah.gov/plates/cleanfuel|title=Clean Fuel – Clean Air}}</ref>
+|-
+|
+|Wildlife - Great Blue Heron
+|I Support Wildlife
+|Unknown
+|0000A
+|Varies
+|Unsure when this type was discontinued.
+|-
+|
+|Utah State University Eastern (Formerly College of Eastern Utah)
+|www.ceu.edu
+|Unknown
+|Unknown
+|Varies
+|Plate is discontinued.<ref>{{Cite web|url=https://dmv.utah.gov/plates/ceu|title=College of Eastern Utah}}</ref>
+|-
+|[[File:CHDAwarenessUtah.jpg|150px]]
+|Children's Heart Disease Awareness
+|I ❤ CHD Awareness
+|Never
+|N/A
+|N/A
+|Approved in 2016, though this plate was never issued.<ref>{{Cite web|url=https://www.intermountainhealinghearts.org/|title=Intermountain Healing Hearts|website=Intermountain Healing Hearts}}</ref>
+|-
+|[[File:HonoraryConsulUtah.jpg|150px]]
+|Honorary Consulate
+|Honorary Consul
+|Unknown
+|N/A
+|N/A
+|Unsure if this plate was ever produced. This plate does not show it is an option on the Utah DMV website.
+|-
+|
+|Prostate Cancer Awareness
+|Screening Saves Lives
+|October 1, 2017
+|A123B
+|Varies
+|Plate was discontinued on October 1, 2017.<ref>{{Cite web|url=https://dmv.utah.gov/plates/prostatecancer|title=Prostate Cancer Awareness}}</ref>
+|-
+|
+|Wildlife - Eagle
+|I Support Wildlife
+|November 1, 2017
+|0000A and A123B
+|Varies
+|Plate was discontinued on November 1, 2017.<ref>{{Cite web|url=https://dmv.utah.gov/plates/wildlifeeagle|title=Wildlife – Eagle}}</ref>
+|-
+|[[File:UTvintagevehicle.jpg|150px]]
+|Vintage Vehicle
+|Vintage Vehicle
+|July 1, 2025
+| rowspan="3" |0000A, A123B, and 12AB3
+| rowspan="3" |Varies
+|Plate was discontinued on July 1, 2025.[https://dmv.utah.gov/plates/license-plates/vintagevehicle/]
+|-
+|
+|Special Interest Vehicles
+|Special Interest
+|July 1, 2026
+|Plate was discontinued on July 1, 2026.
+|-
+|
+|Snowmobiler
+|Snowmobiler
+|July 1, 2026
+|Plate was discontinued on July 1, 2026.
+|}
+
+== Statistics ==
+The Utah Motor Vehicle Division (DMV) publishes yearly statistics on vehicle license plates with active registrations.<ref>{{Cite web |title=Registrations |url=https://tax.utah.gov/econstats/mv/registrations |access-date=2025-06-13 |website=Utah State Tax Commission |language=en-US}}</ref>
+{| class="wikitable"
+|+On Highway Registrations by License Plate Type (2025)
+!Plate Type
+!Amount
+!% of total
+|-
+|LE Arches
+|1,202,359
+|35.9%
+|-
+|LE Skier
+|893,811
+|26.7%
+|-
+|In God We Trust
+|767,541
+|22.9%
+|-
+|B&W Historical Support
+|192,989
+|5.8%
+|-
+|Ski Utah
+|70,369
+|2.1%
+|-
+|Centennial
+|60,011
+|1.8%
+|-
+|Other
+|166,658
+|5.0%
+|-
+|State Total
+|3,353,738
+|100 %
+|}
+
+== Errors ==
+
+Plates with the bolder dies have been spotted using the 'M' and 'W' dies being stamped incorrectly. In this image,<ref name=":0">{{Cite web | url=https://www.plateshack.com/y2k/Utah2/utah2020arches.jpg | format=JPG | title=Utah license plate | website=www.plateshack.com}}</ref> the 'W' die in V62 0BW was stamped with an upside down 'M' die. This has been spotted on a variety of serial sequences throughout the years.
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://www.15q.net/ut.html Utah license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613224609/https://www.15q.net/ut.html |date=June 13, 2020 }}
+* [http://www.zulsplatepage.com Zuls Plate Page]
+
+{{Vehicle registration plates of the United States}}
+{{North America topic|Vehicle registration plates of}}
+{{Utah}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Utah}}
+[[Category:Vehicle registration plates of the United States by state or territory|Utah]]
+[[Category:Utah transportation-related lists]]
+[[Category:Transportation in Utah]]

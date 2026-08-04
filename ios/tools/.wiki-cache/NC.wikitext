@@ -1,0 +1,779 @@
+{{short description|North Carolina vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = 2020 North Carolina License Plate.png
+| caption = Current "First in Flight" plate
+| nickname =
+| slogan_label = Slogan
+| slogan = ''Standard:''<br>First in Flight<br>''Alternative from 2015:''<br>First in Freedom<br>''Alternative from 2019:''<br>In God We Trust;<br>To Be Rather Than to Seem
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-1234
+| current_start_date = First in Flight: {{Start date|1982}}<br>First in Freedom: {{Start date|2015|07|01}}<br>In God We Trust: {{Start date|2019|07|01}}
+| designer = 
+| issuer = [[North Carolina Department of Transportation]], [[North Carolina Division of Motor Vehicles|Division of Motor Vehicles]]
+| manufacturer = 
+| start_date = {{Start date|1913|04|01}}<br>(county plates from 1907 through June 30, 1909; pre-state plates from July 1, 1909 through March 31, 1913)
+}}
+The U.S. state of [[North Carolina]] first required its residents to register their [[motor vehicle]]s in 1907. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1913, when the state began to issue plates.<ref>{{cite web |title=Old North Carolina License Plates |url=http://leatherlicenseplates.com/old-north-carolina-license-plates-vintage-north-carolina-license-plates/ |publisher=LeatherLicensePlates.com |access-date=May 24, 2017 |archive-date=March 4, 2017 |archive-url=https://web.archive.org/web/20170304051419/http://leatherlicenseplates.com/old-north-carolina-license-plates-vintage-north-carolina-license-plates/ |url-status=dead }}</ref>
+
+{{As of|2024}}, plates are issued by the [[North Carolina Department of Transportation]] (NCDOT) through its [[North Carolina Division of Motor Vehicles|Division of Motor Vehicles]]. Only rear plates have been required since 1956.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1913 to 1974===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first North Carolina license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1913 North Carolina license plate.jpg|150px]]
+|1913
+|White serial on black porcelain plate; vertical "NC" at right and "EXPIRES JUNE 30-13" at bottom
+|''none''
+|1234
+|6801 to approximately 8000
+|Issued only to new registrants from April 1 through June 30, 1913, with serials following on from those on pre-state-issued plates.<ref>{{cite web |last=Taylor |first=Eric Robert |title=North Carolina Archive |url=http://porcelainplates.net/northcarolina_archive.html |publisher=PorcelainPlates.net |access-date=May 24, 2017}}</ref>
+|-
+|[[File:1914 North Carolina license plate.png|150px]]
+|{{nowrap|1913–14}}
+|Red serial on white porcelain plate; vertical "NC" at right and "EXPIRES JUNE 30-14" at bottom
+|''none''
+|12345
+|1 to approximately 13000
+|Issued to all registrants.
+|-
+|[[File:1915 North Carolina license plate.png|150px]]
+|1914–15
+|White serial on green porcelain plate; vertical "NC" at right and "EXPIRES JUNE 30-15" at bottom
+|''none''
+|12345
+|1 to approximately 17000
+|
+|-
+|[[File:1916 North Carolina license plate.jpg|150px]]
+|1915–16
+|Black serial on gray porcelain plate; vertical "NC" at right and "EXPIRES JUNE 30-16" at bottom
+|''none''
+|12345
+|1 to approximately 25000
+|
+|-
+|[[File:1917 North Carolina license plate 5637.png|150px]]
+|1916–17
+|Embossed white serial on dark blue plate with border line; "NC" monogram and "6-30 1917" at right
+|''none''
+|12345
+|1 to approximately 40000
+|First embossed plate. From the collection of Richard Watson.
+|-
+|[[File:1918 North Carolina license plate.png|150px]]
+|1917–18
+|Embossed dark blue serial on white plate with border line; "NC" monogram and "6-30 1918" at right
+|''none''
+|12-345
+|1 to approximately 65-000
+|
+|-
+|[[File:1919 North Carolina license plate.jpg|150px]]
+|1918–19
+|Embossed white serial on black plate; "NC" monogram and "6-30 1919" at right
+|''none''
+|12-345
+|1 to approximately 80-000
+|
+|-
+|[[File:1920 North Carolina license plate.jpg|150px]]
+|1919–20
+|Embossed black serial on yellow plate with border line; "N.C. 6-30 1920" at left
+|''none''
+|12-345<br>123456
+|1 to approximately 106000
+|
+|-
+|[[File:1921 North Carolina license plate.jpg|150px]]
+|1920–21
+|Embossed white serial on brown plate; white lines at top and bottom borders; "NC" monogram and "6-30 1921" at right
+|''none''
+|123-456
+|1 to approximately 131-000
+|
+|-
+|[[File:1922 North Carolina license plate.jpg|150px]]
+|1921–22
+|Embossed black serial on white plate with border line; "NC" monogram and "6-30 22" at right
+|''none''
+|123-456
+|1 to approximately 213-000
+|
+|-
+|[[File:1923 North Carolina license plate.jpg|150px]]
+|1922–23
+|Embossed white serial on green plate with border line; vertical "NC" at right and "6-30-23" centered at bottom
+|''none''
+|123456
+|1 to approximately 181000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923–24
+|Embossed maroon serial on light gray plate with border line; "N.C.-6-30-24" centered at top
+|''none''
+|123-456
+|1 to approximately 262-000
+|
+|-
+|[[File:1925 North Carolina license plate.png|150px]]
+|1924–25
+|Embossed white serial on dark blue plate with border line; "NC" monogram and "6-30 25" at left
+|''none''
+|123.456
+|1 to approximately 320.000
+|
+|-
+|[[File:1926 North Carolina license plate.JPG|150px]]
+|1925–26
+|Embossed black serial on orange plate with border line; diagonal "NC" and "6-30-26" at right
+|''none''
+|123-456
+|1 to approximately 348-000
+|
+|-
+|[[File:1927 North Carolina license plate.jpg|150px]]
+|1926–27
+|Embossed white serial on black plate with border line; "NC" monogram and [[horsepower]] class at right; "6 30 27" at left
+|''none''
+|123-456
+|1 to approximately 421-000
+|Horsepower classes were A (over 35&nbsp;hp), B (31-35&nbsp;hp), C (26-30&nbsp;hp) and E (25&nbsp;hp and under); a block of serials was assigned to each class, with E having the biggest block. This continued through 1928.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed red serial on white plate with border line; vertical "NC" at left; horsepower class and "27" at right
+|''none''
+|123-456
+|100-001 to approximately 496-000
+|Issued only from July 1 through December 31, 1927.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed white serial on green plate with border line; vertical "NC" at right; horsepower class and "28" at left
+|''none''
+|123-456
+|100-001 to approximately 556-000
+|
+|-
+|[[File:1929 North Carolina license plate.jpeg|150px]]
+|1929
+|Embossed white serial on sky blue plate with border line; "NORTH CAROLINA-1929" at bottom
+|''none''
+|123-456
+|100-001 to approximately 580-000
+|First use of the full state name. Horsepower classes same as 1926–28 but no letter used for the 25&nbsp;hp and under class; for the other classes, the letter was carried at the right of the plate. This happened again in 1930.
+|-
+|[[File:1930 North Carolina license plate.png|150px]]
+|1930
+|Embossed white serial on maroon plate with border line; "NORTH CAROLINA–1930" at top
+|''none''
+|123-456
+|100-001 to approximately 607-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed yellow serial on black plate; horsepower class number used as separator; "NORTH CAROLINA–31" at bottom
+|''none''
+|123-456
+|100-001 to approximately 483-000
+|Last year of horsepower classes; same as 1926–30 but numbered 1–4 in decreasing order of power.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed black serial on yellow plate; "NORTH CAROLINA–32" at top
+|''none''
+|123-456
+|100-001 to approximately 415-000
+|
+|-
+|[[File:1933 North Carolina license plate 258÷021.jpg|150px]]
+|1933
+|Embossed white serial on dark blue plate; "NORTH CAROLINA–33" at bottom
+|''none''
+|123-456
+|100-001 to approximately 464-000
+|
+|-
+|[[File:1934 North Carolina license plate 345÷204.jpg|150px]]
+|1934
+|Embossed yellow serial on black plate; "NORTH CAROLINA–34" at top
+|''none''
+|123-456
+|100-001 to approximately 493-000
+|
+|-
+|[[File:1935 North Carolina license plate 412÷814 (cropped).jpg|150px]]
+|1935
+|Embossed silver serial on black plate; "NORTH CAROLINA–35" at bottom
+|''none''
+|123-456
+|100-001 to approximately 518-000
+|
+|-
+|[[File:1936 North Carolina license plate 373÷054.jpg|150px]]
+|1936
+|Embossed light green serial on black plate; "NORTH CAROLINA–36" at top
+|''none''
+|123-456
+|100-001 to approximately 545-000
+|
+|-
+|[[File:1937 North Carolina license plate.JPG|150px]]
+|1937
+|Embossed yellow serial on black plate; "NORTH CAROLINA–37" at bottom
+|''none''
+|123-456
+|200-001 to approximately 651-000
+|Serials 100-001 through 200-000 reserved for trucks; this practice continued through 1946.<ref name="allaboutlicenseplatesNC">{{cite web |last=Tanner |first=Eric N. |title=North Carolina Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=North%20Carolina&code=nc |publisher=allaboutlicenseplates.com |access-date=November 19, 2020}}</ref>
+|-
+|[[File:1938 North Carolina license plate.jpeg|150px]]
+|1938
+|Embossed black serial on yellow plate; "NORTH CAROLINA–38" at top
+|''none''
+|123-456
+|200-001 to approximately 646-000
+|
+|-
+|[[File:North Carolinian license plate, 1939.png|150px]]
+|1939
+|Embossed silver serial on maroon plate; "North Carolina 39" centered at bottom
+|''none''
+|123-456
+|200-001 to approximately 686-000
+|
+|-
+|[[File:1940 North Carolina license plate 258-041.png|150px]]
+|1940
+|Embossed maroon serial on silver plate; "North Carolina 40" centered at bottom
+|''none''
+|123-456
+|200-001 to approximately 705-000
+|
+|-
+|[[File:1941 North Carolina license plate 520-980.jpg|150px]]
+|1941
+|Embossed golden yellow serial on black plate; "North Carolina 41" centered at bottom
+|''none''
+|123-456
+|200-001 to approximately 775-000
+|
+|-
+|[[File:1942 North Carolina license plate 536-184.jpg|150px]]
+|1942–43
+|Embossed black serial on golden yellow plate; "NORTH CAROLINA 42" at bottom
+|''none''
+|123-456
+|200-001 to approximately 762-000
+|Revalidated for [[:File:1943 North Carolina Plate war.jpg|1943]] with black tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:1944 North Carolina license plate 318-832.jpg|150px]]
+|1944
+|Embossed golden yellow serial on black plate; "NORTH CAROLINA 44" at top
+|''none''
+|123-456
+|200-001 to approximately 707-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed black serial on tan plate; "NORTH CAROLINA 45" at bottom
+|''none''
+|123-456
+|200-001 to approximately 703-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed golden yellow serial on black plate; "NORTH CAROLINA 46" at top
+|''none''
+|123-456
+|200-001 to approximately 748-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed black serial on golden yellow plate; "NORTH CAROLINA 47" at top
+|''none''
+|123-456
+|100-001 to approximately 682-000
+|Serials 800-001 through 999-999 reserved for trucks and farm vehicles; this practice continued through 1949.<ref name="allaboutlicenseplatesNC"/>
+|-
+|[[File:1948 North Carolina license plate 554-094.jpg|150px]]
+|1948
+|Embossed golden yellow serial on black plate; "NORTH CAROLINA 48" at top
+|''none''
+|123-456
+|100-001 to approximately 760-000
+|
+|-
+|rowspan="2"|[[File:1949 North Carolina license plate 324-500.jpg|150px]]
+|rowspan="2"|1949
+|rowspan="2"|Embossed black serial on golden yellow plate; "NORTH CAROLINA 49" at bottom
+|rowspan="2"|''none''
+|123-456
+|100-001 to 800-000
+|rowspan="2"|From the personal collection of Richard Watson.
+|-
+|A-12345
+|W-1001 to approximately W-14000
+|-
+|rowspan="2"|[[File:1950 North Carolina license plate.jpeg|150px]]
+|rowspan="2"|1950
+|rowspan="2"|Embossed golden yellow serial on black plate; "NORTH CAROLINA 50" at bottom
+|rowspan="2"|''none''
+|123-456
+|100-001 to<br>760-000
+|rowspan="2"|Serials 760-001 through 999-999 reserved for trucks and farm vehicles; this practice continued through 1955.<ref name="allaboutlicenseplatesNC"/>
+|-
+|A-12345
+|W-1001 to<br>W-99999;<br>R-1001 to approximately R-74000
+|-
+|rowspan="2"|[[File:1951 North Carolinian license plate, R-33603.png|150px]]
+|rowspan="2"|1951
+|rowspan="2"|Embossed red serial on white plate; "NORTH CAROLINA 51" at bottom
+|rowspan="2"|''none''
+|123-456
+|100-001 to<br>760-000
+|rowspan="2"|
+|-
+|A-12345
+|W and R series;<br>N-1001 to approximately N-39000
+|-
+|rowspan="2"|[[File:1952 North Carolina license plate.png|150px]]
+|rowspan="2"|1952
+|rowspan="2"|Embossed white serial on red plate; "NORTH CAROLINA 52" at bottom
+|rowspan="2"|''none''
+|123-456
+|100-001 to<br>760-000
+|rowspan="2"|
+|-
+|A-12345
+|W and R series;<br>N-1001 to approximately N-76000
+|-
+|rowspan="2"|[[File:1953 North Carolina license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1953
+|rowspan="2"|Embossed golden yellow serial on black plate; "NORTH CAROLINA 53" or "N.C.", slogan and "53" at bottom (see right)
+|rowspan="2"|''none'', or "DRIVE SAFELY" between state abbreviation and year
+|123-456
+|100-001 to<br>760-000
+|rowspan="2"|
+|-
+|A-12345
+|W, R and N series;<br>X-1001 to approximately X-46000
+|-
+|rowspan="2"|[[File:1954 North Carolina license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1954
+|rowspan="2"|Embossed black serial on golden yellow plate; "NORTH CAROLINA 54" or "N.C.", slogan and "54" at bottom
+|rowspan="2"|''none'', or "DRIVE SAFELY" between state abbreviation and year
+|123-456
+|100-001 to<br>760-000
+|rowspan="2"|
+|-
+|A-12345
+|W, R and N series;<br>X-1001 to approximately X-96000
+|-
+|rowspan="2"|[[File:1955 North Carolina license plate R-21913.jpg|150px]]
+|rowspan="2"|1955
+|rowspan="2"|Embossed golden yellow serial on black plate; "NORTH CAROLINA 55" at bottom
+|rowspan="2"|''none''
+|123-456
+|100-001 to 760-000
+|rowspan="2"|
+|-
+|A-12345
+|W, R, N, X and A series;<br>V-1001 to approximately V-22000
+|-
+|[[File:1956 North Carolina license plate.jpg|150px]]
+|1956
+|Embossed black serial on golden yellow plate with border line; "NORTH CAROLINA 56" at bottom
+|"DRIVE SAFELY" centered at top
+|A-1234<br>AB-1234
+|
+|Serials progressed as follows: A-1 through A-9999, AA-1 through AZ-9999, B-1 through B-9999, BA-1 through BZ-9999, etc. Some series ran only to 1000 rather than 9999. This continued through 1972. Letters G, I, O and Q not used; this practice continued through 1968.<ref name="allaboutlicenseplatesNC"/>
+|-
+|[[File:1957 North Carolina license plate.jpg|150px]]
+|1957
+|Embossed golden yellow serial on black plate with border line; "NORTH CAROLINA 57" at bottom
+|"DRIVE SAFELY" centered at top
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1958 North Carolina license plate.JPG|150px]]
+|1958
+|As 1956 base, but with "NORTH CAROLINA 58" at bottom
+|"DRIVE SAFELY" as on 1956 base
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1959 North Carolina license plate.JPG|150px]]
+|1959
+|As 1957 base, but with "NORTH CAROLINA 59" at bottom
+|"DRIVE SAFELY" as on 1957 base
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1960 North Carolina license plate.JPG|150px]]
+|1960
+|As 1956 base, but with "NORTH CAROLINA 60" at bottom
+|"DRIVE SAFELY" as on 1956 base
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1961 North Carolina license plate.JPG|150px]]
+|1961
+|As 1957 base, but with "61 NORTH CAROLINA" at bottom
+|"DRIVE SAFELY" as on 1957 base
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1962 North Carolina license plate.jpg|150px]]
+|1962
+|As 1956 base, but with "62 NORTH CAROLINA" at bottom
+|"DRIVE SAFELY" as on 1956 base
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1963 North Carolina license plate.jpg|150px]]
+|1963
+|Embossed golden yellow serial on black plate with border line; "NORTH CAROLINA 63" at top
+|"DRIVE SAFELY" centered at bottom
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1964 North Carolina license plate.JPG|150px]]
+|1964
+|Embossed black serial on golden yellow plate; "NORTH CAROLINA" at top; "64" centered at bottom
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1965 North Carolina license plate.jpg|150px]]
+|1965
+|Embossed golden yellow serial on black plate; "NORTH CAROLINA" at top; "1965" centered at bottom
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1966 North Carolina license plate.jpg|150px]]
+|1966
+|Embossed black serial on golden yellow plate with border line; "1966" centered at top; "NORTH CAROLINA" at bottom
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1967 North Carolina license plate.png|150px]]
+|1967
+|Embossed green serial on reflective white plate with border line; "1967" centered at top; "NORTH CAROLINA" at bottom
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1968 North Carolina license plate 8845-KS.png|150px]]
+|1968
+|Embossed red serial on reflective white plate with border line; "NORTH CAROLINA" at top; "1968" centered at bottom
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1969 North Carolina license plate.png|150px]]
+|1969
+|Embossed green serial on reflective white plate with border line; "NORTH CAROLINA" at top; "19" at bottom left and "69" at bottom right
+|''none''
+|A-1234<br>AB-1234
+|
+|Letters G, I, O, Q and U not used in serials; this practice continues today.<ref name="allaboutlicenseplatesNC"/>
+|-
+|[[File:1970 North Carolina license plate.png|150px]]
+|1970
+|Embossed red serial on reflective white plate with border line; "19" at top left and "70" at top right; "NORTH CAROLINA" at bottom
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1971 North Carolina license plate.png|150px]]
+|1971
+|Embossed green serial on reflective white plate with border line; "71" centered at top; "NORTH CAROLINA" at bottom
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1972 North Carolina license plate.png|150px]]
+|1972
+|Embossed blue serial on reflective white plate with border line; "NORTH CAROLINA" at top; "19" at bottom left and "72" at bottom right
+|''none''
+|A-1234<br>AB-1234
+|
+|
+|-
+|[[File:1973 North Carolina license plate.png|150px]]
+|1973
+|Embossed red serial on reflective white plate with border line; "19" at top left and "73" at top right; "NORTH CAROLINA" at bottom
+|''none''
+|{{nowrap|ABC-123}}
+|AAA-101 to approximately HVA-999
+|
+|-
+|[[File:1974 North Carolina license plate.png|150px]]
+|1974
+|Embossed green serial on reflective white plate with border line; "1974" centered at top; "NORTH CAROLINA" at bottom
+|''none''
+|{{nowrap|ABC-123}}
+|AAA-101 to approximately JBA-999
+|
+|}
+
+===1975 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:NC1975Plate.png|150px]]
+|1975–78
+|Embossed red serial on reflective white plate with border line; vertical "75" used as separator; "NORTH CAROLINA" at bottom
+|"FIRST IN FREEDOM" centered at top
+|rowspan="5"|ABC-123
+|AAA-101 to approximately PMZ-999
+|rowspan="5"|First base to be revalidated with stickers. Monthly staggered registration introduced 1981.<ref name="ricksplates">{{cite web|last=Kretschmer |first=Rick |title=A Pictorial History of North Carolina License Plates: Passenger car plates dated 1975 to present |url=http://www.ricksplates.com/northcarolina/ncpass2.htm |publisher=Rick Kretschmer's License Plate Archives |access-date=February 8, 2016}}</ref> Plates from AAA-101 through JAY-999 replaced 1982; all other plates replaced by 1992.
+|-
+|[[File:NC1979Plate.png|150px]]
+|1978–80
+|As above, but without "75" and slogan
+|rowspan="4"|''none''
+|PNA-101 to approximately SXZ-999
+|-
+|[[File:NC1980Plate.png|150px]]
+|1980–81
+|As above, but with "1980" centered at top
+|SYA-101 to approximately XFZ-999
+|-
+|[[File:NC1981Plate.png|150px]]
+|1981–82
+|As above, but with "NORTH CAROLINA" at top and "1981" centered at bottom
+|XHA-101 to approximately YJZ-999
+|-
+|[[File:NC1982Plate.png|150px]]
+|1982
+|As above, but with "1982" centered at bottom
+|YKA-101 to approximately ZRZ-999
+|-
+|[[File:NC1982FirstVersion.png|150px]]
+|rowspan="2"|1982
+|rowspan="4"|Blue on reflective white with light blue [[Wright Flyer]] graphic
+|rowspan="4"|"First in Flight" screened at top
+|ABC-123
+|ZSA-101 to ZZZ-999
+|rowspan="3"|Awarded "Plate of the Year" for best new license plate of 1982 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time North Carolina has been so honored.
+|-
+|[[File:NC1982twoNumber.png|150px]]
+|ABC-12<br>ABC-'''100'''
+|AAA-11 to XZZ-100
+|-
+|[[File:North Carolinian 1985 license plate.png|150px]]
+|1982–85
+|ABC-123
+|AAA-101 to JAY-999
+|-
+|[[File:North Carolinian license plate, 1982–2007 series with April 1999 sticker.png|150px]]
+|1985&nbsp;– April<br>2007
+|{{nowrap|ABC-1234}}
+|ANA-1001 to approximately WTF-1975
+|Second letter in serials strictly N through Z (so AZZ was followed by BNA, BZZ was followed by CNA, and so on); this practice continued until ZZZ-9999 was issued in 2010. Since 1999, OBX has been issued as a special series for [[Dare County, North Carolina|Dare County]].
+|-
+|[[File:FirstFlightNorthCarolina.png|150px]]
+|April 2007&nbsp;– October 2009
+|Red on reflective white with light blue Wright Flyer graphic
+|"First in Flight" as above
+|{{nowrap|ABC-1234}}
+|WTF-1976 to approximately ZND-9999
+|Mainly issued as replacements for earlier "First in Flight" plates with the ABC-123 and ABC-12 serial formats, plus the ABC-1234 format up to JZZ-9999.<ref name="ricksplates"/>
+|-
+|rowspan="2"|[[File:2020 North Carolina License Plate.png|150px]]
+|October 2009&nbsp;– December 2010
+|rowspan="2"|Blue on reflective white with light blue Wright Flyer graphic
+|rowspan="2"|"First in Flight" as above
+|rowspan="2"|{{nowrap|ABC-1234}}
+|ZNE-1001 to ZZZ-9999
+|Blue serials reintroduced following complaints that the red serials were too hard to read from a distance.
+|-
+|December 2010&nbsp;– present
+|AAA-1001 to LKE-7520 {{small|(as of June 4, 2025)}}<ref name="licenseplates.cc">{{Cite web |title=North Carolina License Plates |url=https://www.licenseplates.cc/NC |website=www.licenseplates.cc |access-date=July 3, 2023}}</ref>
+|Standard issue plate. Second letter in serials strictly A through M (so AMZ was followed by BAA, BMZ was followed by CAA, and so on); this practice should continue until at least NMZ-9999 is issued.
+|-
+| 
+|July 1, 2015&nbsp;– present
+|Blue on reflective white with quill pen graphic
+|"First In Freedom" screened at top
+|{{nowrap|ABC-1234}}
+|PAA-1001 to RKT-1298 {{small|(as of May 6, 2025)}}<ref name="licenseplates.cc"/>
+|Alternative issue. Includes dates of May 20, 1775 and April 12, 1776 commemorating the adoption of the [[Mecklenburg Declaration of Independence|Mecklenburg Declaration]] and [[Halifax Resolves]], respectively.<ref>{{cite news |last=Siceloff |first=Bruce |date=July 1, 2015 |title=Second to none, NC now offers choice of 2 'First' license plates |url=http://www.newsobserver.com/news/traffic/article25995232.html |newspaper=[[The News & Observer]] |location=Raleigh |access-date=December 21, 2015}}</ref> Second letter in serials strictly A through M (so PMZ was followed by RAA, and RMZ will be followed by SAA).
+|-
+| 
+|July 1, 2019&nbsp;– present
+|Blue on reflective white with national flag motif at top
+|"IN GOD WE TRUST" screened at top; "To Be Rather Than to Seem" screened between serial and state name
+|{{nowrap|ABC-1234}}
+|TAA-1001 to VFT-7102 {{small|(as of May 12, 2025)}}<ref name="licenseplates.cc"/>
+|Alternative issue. "To Be Rather Than to Seem" is the English translation of the state motto, ''[[Esse quam videri]]''.<ref>{{cite news |last=Stradling |first=Richard |date=July 1, 2019 |title='In God We Trust' now an option on your next North Carolina license plate |url=https://www.newsobserver.com/news/local/article232138912.html |newspaper=[[The News & Observer]] |location=Raleigh |access-date=November 26, 2019}}</ref> Second letter in serials strictly A through M (so TMZ was followed by VAA, VMZ will be followed by WAA, and so on).(Note that this plate, along with newer versions of the 2 plates above, feature an updated "8" digit to further differentiate it from the "B".)
+|}
+
+==Non-passenger plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:NC Permanent.jpg|150px]]
+|[[International Registration Plan|Apportioned]] Truck
+|2006–present
+|Embossed blue on white with border line; "N.C. PERMANENT" at top; "APPORTIONED" at bottom
+|'''L'''B-1234<br>'''M'''B-1234<br>'''N'''B-1234<br>{{nowrap|'''D'''B-1234A}}
+|LA-1001 to<br>MC-9999;<br>MH-1001 to<br>MR-9999;<br>NH-1001 to<br>NW-9999;<br>TD-1001 to<br>TE-9999;<br>VT-1001 to<br>VX-9999;<br>DD-1001A to present
+|
+|-
+|[[File:NC Farm Plate.jpg|150px]]
+|Farm Truck
+|
+|Embossed red on white with border line; "COMMERCIAL" at top; "FARM TRUCK–NC" at bottom
+|'''W'''B-1234<br>'''X'''B-1234<br>'''Y'''B-1234
+|WA-1001 to present
+|
+|-
+|[[File:NC For Hire Plate.jpg|150px]]
+|[[Vehicle for hire|For Hire]]
+|2006–present
+|Embossed blue on white with border line; "NORTH CAROLINA" at bottom; "FOR HIRE" at top
+|'''Z'''B-1234<br>{{nowrap|'''B'''B-1234A}}
+|ZB-1001 to ZT-9999;<br>BB-1001A to present
+|Issued annually through 2005.<ref name="ricksplates2">{{cite web |last=Kretschmer |first=Rick |title=Current and Recent North Carolina License Plates, Part 3 |url=http://www.ricksplates.com/northcarolina/nccurr-com.htm |publisher=Rick Kretschmer's License Plate Archives |access-date=April 10, 2020}}</ref>
+|-
+|[[File:2011 North Carolina license plate automobile manufacturer.jpg|150px]]
+|[[Manufacturer]]
+|
+|Embossed blue on white with border line; "NORTH CAROLINA" at bottom; "MANUFACTURER" at top
+|'''MF'''-1234
+|MF-1001 to present
+|
+|-
+|[[File:Screen Shot 2024-03-11 at 9.29.37 PM.png|150px]]
+|[[Moped]]
+|2015–present<ref>{{cite news |last=Biviano |first=Dennis |date=July 1, 2015 |title=Moped Riders Purchase New Required License Plates |url=https://spectrumlocalnews.com/news/2015/07/1/moped-riders-purchase-new-required-license-plates |publisher=Spectrum Local News |access-date=September 21, 2023}}</ref>
+|Embossed black on white with border line; "N.C. MOPED" at top
+|'''M'''B12345
+|MA10000 to present
+|
+|-
+|[[File:NC Motor Cycle Plate.jpg|150px]]
+|[[Motorcycle]]
+|1999–present
+|Embossed blue on white with border line; "N.C." at top
+|1A2345
+|1A0001 to present
+|Letter advances before leftmost number (1A-1Z, 2A-2Z, etc.). G, I, O, Q and U not used.
+|-
+|[[File:NCMultiYear.jpg|150px]]
+|Multi-Year Trailer
+|1993–present
+|Embossed black on white with border line; "NORTH CAROLINA" at top; "MULTI YEAR" at bottom
+|{{nowrap|'''A'''B-12345}}<br>{{nowrap|'''D'''B-12345}}
+|{{nowrap|AY-10000 to}} AZ-99999;<br>AA-10000 to AM-99999;<br>DA-10000 to present
+|Permanent trailer plate obtained for a one-time fee.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Special Mobile Equipment
+|2006–present
+|Embossed blue on white with border line; "NORTH CAROLINA" at bottom; "SPEC MOBILE" at top
+|'''ME'''-1234
+|ME-1001 to present
+|Issued annually through 2005.<ref name="ricksplates2"/>
+|-
+|[[File:NCTaxiPlate.jpg|150px]]
+|[[Taxicab|Taxi]]
+|2006–present
+|Embossed blue on white with border line; "NORTH CAROLINA" at bottom; "TAXI" at top
+|'''T'''B-1234
+|TA-1001 to present
+|Issued annually through 2005.<ref name="ricksplates2"/>
+|-
+|[[File:NCTrailerPlate.jpg|150px]]
+|[[Trailer (vehicle)|Trailer]]
+|1995–present
+|Embossed red on white with border line; "NORTH CAROLINA" at bottom; "TRAILER" at top
+|{{nowrap|AB-12345}}
+|AN-10000 to<br>AX-99999;<br>BA-10000 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Weighted
+|2004–present
+|Embossed blue on white with border line; "NORTH CAROLINA" at bottom; "WEIGHTED" at top
+|{{nowrap|AB-1234}}<br>{{nowrap|'''A'''B-1234A}}
+|?;<br>AA-1001A to present
+|Issued annually through 2005. Required for vehicles weighing over 7,000 lbs, regardless of use.
+|}
+
+==Temporary plates==
+<gallery>
+North Carolina temporary tag, 1997.png|1997
+North Carolina temporary tag, 2003.png|2003
+North Carolina motorcycle temporary tag, 2009.png|2009, motorcycle
+</gallery>
+
+==References==
+{{reflist}}
+
+==Further reading==
+*[https://www.15q.net/nc.html North Carolina license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200621144112/https://www.15q.net/nc.html |date=June 21, 2020 }}
+*[http://www.ricksplates.com/northcarolina/ncgallery.htm Gallery of North Carolina License Plates, 1913-present (by Rick Kretschmer)]
+
+==External links==
+*{{commons category-inline|License plates of North Carolina}}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{North Carolina}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|North Carolina]]
+[[Category:North Carolina transportation-related lists]]
+[[Category:Transportation in North Carolina]]

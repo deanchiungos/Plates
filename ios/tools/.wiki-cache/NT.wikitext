@@ -1,0 +1,572 @@
+{{Short description|none}} <!-- This short description is INTENTIONALLY "none" - please see WP:SDNONE before you consider changing it! -->
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = 1986 Northwest Territories license plate 331758.jpg
+| caption = 
+| slogan_label = Slogan
+| slogan = Spectacular Northwest Territories
+| material = Aluminum
+| serial_format = 123456	
+| current_start_date = {{Start date|2010|07|01}}
+| designer = 
+| issuer = Registrar of Motor Vehicles, Government of the Northwest Territories
+| manufacturer = 
+| start_date = {{Start date|1941}}
+}}
+
+The [[Provinces and territories of Canada|Canadian territory]] of [[Northwest Territories]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plates of Canada|licence plates]] in 1941. {{As of|2022}}, plates are issued by the Northwest Territories Registrar of Motor Vehicles.<ref>{{Cite web |date=17 June 2022 |title=Motor Vehicles Act |url=https://www.justice.gov.nt.ca/en/files/legislation/motor-vehicles/motor-vehicles.a.pdf |access-date=7 July 2023 |website=Legislation of the Northwest Territories}}</ref> Only rear plates have been required since June 1, 1993 and have been required thereafter.<ref name="allaboutlicenseplatesNT">{{cite web |last=Tanner |first=Eric N. |title=Northwest Territories Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Northwest%20Territories&code=nt |publisher=allaboutlicenseplates.com |access-date=February 15, 2021}}</ref>
+
+In 1970, to celebrate the centennial of the territory, a unique [[polar bear]]-shaped plate was introduced. The basic bear shape has been retained ever since, and the plate is now a [[registered trademark]] of the Government of the Northwest Territories.<ref>{{cite web |last=Blackburn |first=Mark |date=August 5, 2011 |title=Nunavut polar bear (license plate) on verge of extinction |url=https://www.aptnnews.ca/national-news/nunavut-polar-bear-license-plate-on-verge-of-extinction/ |publisher=[[Aboriginal Peoples Television Network|APTN]] |access-date=October 18, 2011}}</ref><ref> [https://ised-isde.canada.ca/cipo/trademark-search/1050364 Canadian Trademark 1050364 - Stylized Polar Bear]</ref>
+
+The current design, which consists of graphic and material updates, was rolled out on July 1, 2010. The blue-and-white plates prior to the update were made of steel and lack graphic sheeting technology that would make them visible in the dark. Current plates are made with aluminum and incorporated visual updates as well as a new slogan.<ref>{{cite web |title=N.W.T. licence plates get update |url=https://www.cbc.ca/news/canada/north/n-w-t-licence-plates-get-update-1.880354 |publisher=[[CBC News]] |date=May 4, 2010 |access-date=October 18, 2020}}</ref>
+
+==Influence on Nunavut plate design==
+{{see also|Vehicle registration plates of Nunavut}}
+In April 1999, the territory of Nunavut was created from the eastern part of the Northwest Territories. The new territory adopted a virtually identical bear-shaped licence plate, following an agreement between the governments of the two territories. In 2011, the Government of Nunavut decided to discontinue the bear shape and replace it with a conventional rectangular design, which was introduced in July 2012.
+
+In 2024, [[Vehicle registration plates of Nunavut|the polar bear plate was reintroduced]] and, as of summer 2025, is required for all motor vehicles.
+
+==Passenger baseplates==
+===1945 to 1974===
+In 1956, Canada, the United States, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Northwest Territories licence plate that complied with these standards was issued five years beforehand, in 1951. The current bear-shaped plates feature the standard mounting holes.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:50px;"|Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:blue;">27</div>
+|1945
+|White on blue
+|''none''
+|123
+|1 to approximately 180
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:orange; font-size:30pt; background:black;">37</div>
+|1946
+|Orange on black
+|''none''
+|123
+|1 to approximately 290
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:silver;">277</div>
+|1947
+|Black on silver
+|''none''
+|123
+|1 to approximately 400
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:blue;">38</div>
+|1948
+|White on blue
+|''none''
+|123
+|1 to approximately 590
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:green;">72</div>
+|1949
+|White on green
+|''none''
+|123
+|1 to approximately 460
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:orange;">727</div>
+|1950
+|Black on orange
+|''none''
+|1234
+|651 to approximately 1350
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:orange; font-size:30pt; background:black;">1722</div>
+|1951
+|Orange on black
+|''none''
+|1234
+|1351 to approximately 2100
+|First 6" x 12" plate.
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:blue;">138</div>
+|1952
+|White on blue
+|''none''
+|123
+|100 to approximately 650
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:orange;">76</div>
+|1953
+|Black on orange
+|''none''
+|123
+|100 to approximately 760
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:orange; font-size:30pt; background:black;">378</div>
+|1954
+|Orange on black
+|Canada's Northland
+|123
+|100 to approximately 870
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:orange;">723</div>
+|1955
+|Black on orange
+|Canada's Northland
+|123
+|100 to approximately 1300
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:orange; font-size:30pt; background:black;">273</div>
+|1956
+|Orange on black
+|Canada's Northland
+|1234
+|100 to approximately 1100
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:orange;">762</div>
+|1957
+|Black on orange
+|Canada's Northland
+|1234
+|100 to approximately 1400
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:orange; font-size:30pt; background:black;">237</div>
+|1958
+|Orange on black
+|Canada's Northland
+|1234
+|100 to approximately 2200
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:orange;">27</div>
+|1959
+|Black on orange
+|Canada's Northland
+|1234
+|100 to approximately 2300
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:orange; font-size:30pt; background:black;">763</div>
+|1960
+|Orange on black
+|Canada's Northland
+|1234
+|100 to approximately 2400
+|
+|-
+|[[File:1961 Northwest Territories licence plate.jpg|150px]]
+|1961
+|Black on orange
+|Canada's Northland
+|1234
+|100 to approximately 3400
+|
+|-
+|[[File:Canada Northwest Territories license plate 1962.jpg|150px]]
+|1962
+|Orange on black
+|Canada's Northland
+|1234
+|100 to approximately 4100
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:orange;">287</div>
+|1963
+|Black on orange
+|Canada's Northland
+|1234
+|100 to approximately 3900
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:5px; vertical-align:middle; text-align:center; color:orange; font-size:30pt; background:black;">723</div>
+|1964
+|Orange on black
+|Canada's Northland
+|1234
+|100 to approximately 4200
+|
+|-
+|[[File:Northwest Territories License Plate 1965.jpg|150px]]
+|1965
+|White on light green
+|Canada's Northland
+|1-234
+|100 to approximately 4-900
+|
+|-
+|[[File:Northwest Territories Licence Plate 1966.jpg|150px]]
+|{{nowrap|1966–69}}
+|Black on reflective orange; [[Coat of arms of the Northwest Territories|territorial shield]] at left
+|Canada's Northland
+|12-345
+|100 to approximately 11-500
+|Revalidated for 1967 with white-on-blue tabs, for 1968 with red-on-white tabs, and for 1969 with green-on-white tabs.
+|-
+|[[File:Northwest Territories 1970 license plate.jpg|150px]]
+|1970
+|[[Polar bear|Bear]]-shaped; white on blue
+|Centennial
+|1-234
+|1 to approximately 7-500
+|First bear-shaped plate. Awarded inaugural "Plate of the Year" for best new licence plate of 1970 by the [[Automobile License Plate Collectors Association]].
+|-
+|[[File:Northwest Territories Licence Plate 1971 bear design.jpg|150px]]
+|1971
+|Bear-shaped; blue on white
+|''none''
+|1-234
+|1 to approximately 8-500
+|
+|-
+|[[File:Northwest Territories Licence Plate - 1972, bear design.jpg|150px]]
+|1972
+|Bear-shaped; white on blue
+|''none''
+|12-345
+|1 to approximately 10-500
+|
+|-
+|[[File:Northwest Territories Licence Plate, 1973, bear design.jpg|150px]]
+|1973
+|Bear-shaped; dark blue on white with yellow slogan, date, and border
+|[[Royal Canadian Mounted Police|RCMP]] Centennial
+|12-345
+|1 to approximately 11-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1974
+|Bear-shaped; red on white
+|''none''
+|12-345
+|1 to approximately 11-500
+|
+|}
+
+===1975 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:60px;"|Dates issued
+!style="width:170px;"|Design
+!style="width:85px;"|Slogan
+!style="width:50px;"|Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Northwest Territories License Plate 1975.jpg|150px]]
+|1975–76
+|Bear-shaped; turquoise on white
+|''none''
+|12-345
+|1 to approximately 18-000
+|Revalidated for 1976 with stickers.
+|-
+|[[File:Northwest Territories License Plate 1977.jpg|150px]]
+|1977–78
+|Bear-shaped; red on white
+|''none''
+|12-345
+|1 to approximately 21-500
+|Revalidated for 1978 with stickers.
+|-
+|[[File:Northwest Territories License Plate 1979.jpg|150px]]
+|1979–80
+|Bear-shaped; turquoise on white
+|''none''
+|12-345
+|1 to approximately 21-500
+|Revalidated for 1980 with stickers.
+|-
+|[[File:1981 Northwest Territories license plate 6-909.jpg|150px]]
+|1981–82
+|Bear-shaped; red on white
+|''none''
+|12-345
+|1 to approximately 21-000
+|Revalidated for 1982 with stickers.
+|-
+|[[File:Northwest Territories Licence Plate 1983 bear design.jpg|150px]]
+|1983–85
+|Bear-shaped; blue on white
+|''none''
+|12-345
+|1 to approximately 30-500
+|Last dated plate. Revalidated for 1984 and 1985 with stickers.
+|-
+|[[File:1986 Northwest Territories license plate 125419.jpg|150px]]
+|1986–2010
+|Bear-shaped; blue on white
+|Explore Canada's Arctic
+|123456
+|1 to approximately 126000
+|Monthly staggered registration introduced 1990. Front and rear plates issued through May 31, 1993 (serials 1 through 51700); only rear plates issued thereafter.<ref name="allaboutlicenseplatesNT"/>
+|-
+|[[File:1986 Northwest Territories license plate 331758.jpg|150px]]
+|2010–present
+|Bear-shaped; nature scene
+|Spectacular
+|123456
+|300000 to 378949 {{small|(as of November 5, 2024)}}
+|
+|}
+
+==Commercial plates==
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Northwest Territories Commercial License Plate 1967.jpg|150px]]
+|1967
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1968
+|
+|'''CV'''123
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1969.jpg|150px]]
+|1969
+|
+|'''CV'''123
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1970.jpg|150px]]
+|1970
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1971.jpg|150px]]
+|1971
+|
+|'''CV'''123
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1972.jpg|150px]]
+|1972
+|
+|'''CV'''123
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1973.jpg|150px]]
+|1973
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1974.jpg|150px]]
+|1974
+|
+|'''CV'''123
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1975.jpg|150px]]
+|1975-76
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1977.jpg|150px]]
+|1977-78
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1979.jpg|150px]]
+|1979-80
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1981.jpg|150px]]
+|1981-82
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1983.jpg|150px]]
+|1983-85
+|
+|'''CV'''1234
+|
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1986.jpg|150px]]
+|1986
+|
+|'''CV'''1234
+|CV100 to CV9999
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 1991.jpg|150px]]
+|1991
+|As 1986 passenger base
+|rowspan="2"|'''C'''12345
+|C10000 to approximately C29999
+|
+|-
+|[[File:Northwest Territories Commercial License Plate 2011.jpg|150px]]
+|2010
+|As Spectacular passenger base
+|C30000 to C48571 {{small|(as of June 3, 2022)}}
+|
+|}
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Construction
+|2010
+|Bear-shaped; green on white; "CONSTRUCTION" at top, "NORTHWEST TERRITORIES" at bottom.
+|'''H'''12345
+| ''unknown'' to H11944 {{small|(as of June 7, 2025)}}
+|
+|-
+|[[File:2010 Northwest Territories Dealer license plate SAMPLE (cropped).jpg|150px]]
+|Dealer
+|2010
+|Bear-shaped; black on white; "DEALER" at top, "NORTHWEST TERRITORIES" at bottom.
+|'''D'''1234
+|''unknown'' to D2323 {{small|(as of October 1, 2022)}}
+|
+|-
+|[[File:Northwest Territories Government License Plate 2012.jpg|150px]]
+|Government
+|2010
+|As Spectacular passenger base
+|'''G'''12345
+|G8000 to G12291 {{small|(as of June 1, 2022)}}
+|
+|-
+|[[File:Northwest Territories Trailer License Plate 2010.jpg|150px]]
+|rowspan=2|Public Service
+|1986
+|Bear-shaped; blue on white; "EXPLORE CANADA'S ARTIC" at top, "NORTHWEST TERRITORIES" at bottom.
+|'''PS'''1234
+|
+|Issued to taxis and busses.
+|-
+|[[File:Northwest Territories Trailer License Plate 2012.jpg|150px]]
+|2010
+|As Spectacular passenger base
+|'''P'''12345
+|
+|
+|-
+|[[File:Northwest Territories Motorcycle License Plate 1986.jpg|150px]]
+|rowspan="2"|Motorcycle
+|1986
+|Bear-shaped; blue on white; "NWT" at top
+|1234
+|100 to approximately 9999
+|rowspan="2"|
+|-
+|[[File:2010 Northwest Territories Motorcycle license plate SAMPLE (cropped).jpg|150px]]
+|2010
+|Similar to Spectacular passenger base
+|12345
+|10000 to 13075 {{small|(as of May 14, 2022)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|ATV / Off-road
+|1986
+|
+|
+|
+|rowspan="2"|
+|-
+|[[File:NORTHWEST TERRITORIES 2014 - ATV-SNOWMOBILE LICENSE PLATE.jpg|150px]]
+|2010
+|Bear-shaped; orange on white; "NWT" at top
+|12345
+|
+|-
+|[[File:Northwest Territories Trailer License Plate 2010.jpg|150px]]
+|rowspan=2|Trailer
+|1991
+|
+|'''T'''12345
+|T40000 to present
+|
+|-
+|[[File:Northwest Territories Trailer License Plate 2012.jpg|150px]]
+|2010
+|As Spectacular passenger base
+|'''T'''12345
+|T40000 to present
+|
+|}
+
+==Veteran plate==
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:2010 Northwest Territories Veteran license plate SAMPLE (cropped).jpg|150px]]
+|2010
+|Bear-shaped; red on white; poppy icon at very bottom, "LEST WE FORGET" at top and "NORTHWEST TERRITORIES" at bottom.
+|'''VET'''123
+|VET001 to VET512 {{small|(as of October 1, 2022)}}
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/nwt.html Northwest Territories licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20210310172704/https://15q.net/nwt.html |date=2021-03-10 }}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:Vehicle registration plates of Canada|Northwest Territories]]
+[[Category:Transport in the Northwest Territories]]
+[[Category:Government of the Northwest Territories]]
+[[Category:Northwest Territories transport-related lists]]

@@ -1,0 +1,2155 @@
+{{short description|Kansas vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =
+| nickname = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 1234ABC
+| current_start_date = {{Start date|2024|08|19}}<br>
+| designer = 
+| issuer = [[Kansas Department of Revenue]], Division of Vehicles
+| manufacturer = 
+| start_date = {{Start date|1913|07|01}}
+}}
+The U.S. state of [[Kansas]] first required its residents to register their vehicles and display [[Vehicle registration plate|license plate]]s in 1913. Plates are currently issued by the [[Kansas Department of Revenue]] through its Division of Vehicles and only rear plates have been required since 1956.
+
+==Passenger baseplates==
+===1913 to 1975===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Kansas license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Kansas 1913 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1913
+|Embossed black serial on white plate; diagonal "KAN" at right
+|''none''
+|12345
+|1 to approximately 39000
+|
+|-
+|[[File:Kansas 1914 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1914
+|Embossed white serial on dark blue plate; "KAN" at right
+|''none''
+|12345
+|1 to approximately 59000
+|
+|-
+|[[File:Kansas 1915 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1915
+|Embossed black serial on golden yellow plate with border line; diagonal "KAN" at right
+|''none''
+|12345
+|1 to approximately 86000
+|
+|-
+|[[File:Kansas 1916 License Plate - photo credits to Nathan Kuehn.jpg|150x150px]]
+|1916
+|Embossed white serial on black plate with border line; "KAN" monogram at right
+|''none''
+|123456
+|1 to approximately 140000
+|
+|-
+|[[File:Kansas 1917 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1917
+|Embossed black serial on light green plate with border line; vertical "KAN" at left
+|''none''
+|123456
+|1 to approximately 183000
+|
+|-
+|[[File:Kansas 1918 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1918
+|Embossed green serial on white plate with border line; vertical "KAN" at right
+|''none''
+|123456
+|1 to approximately 205000
+|
+|-
+|[[File:Kansas 1919 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1919
+|Embossed dark blue serial on light green plate with border line; vertical "KAN" at right
+|''none''
+|123456
+|1 to approximately 260000
+|
+|-
+|[[File:Kansas 1920 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1920
+|Embossed white serial on black plate with border line; vertical "KAN" at left
+|''none''
+|123456
+|1 to approximately 290000
+|
+|-
+|[[File:1921 Kansas license plate.jpg|150px]]
+|1921
+|Embossed black serial on golden yellow plate with border line; "KAN 21" at right
+|''none''
+|123-456
+|1 to approximately 274-000
+|First dated plate.
+|-
+|[[File:Kansas 1922 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1922
+|Embossed golden yellow serial on black plate with border line; "KAN 22" at right
+|''none''
+|123-456
+|1 to approximately 304-000
+|
+|-
+|[[File:Kansas 1923 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1923
+|Embossed black serial on white plate with border line; vertical "KAN" and "1923" at left and right respectively
+|''none''
+|123456
+|1 to approximately 350000
+|
+|-
+|[[File:1924 Kansas license plate.jpg|150px]]
+|1924
+|Embossed white serial on green plate with border line; vertical "KAN" and "24" at left
+|''none''
+|123-456
+|1 to approximately 369-000
+|
+|-
+|[[File:1925 Kansas License Plate 117762.jpg|150px]]
+|1925
+|Embossed white serial on red plate with border line; "KAN 25" at right
+|''none''
+|123-456
+|1 to approximately 409-000
+|
+|-
+|[[File:Kansas 1926 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1926
+|Embossed white serial on dark blue plate with border line; "KAN 26" at left
+|''none''
+|123-456
+|1 to approximately 442-000
+|
+|-
+|[[File:1927 Kansas license plate.jpg|150px]]
+|1927
+|Embossed black serial on gray plate with border line; vertical "1927" and "KAN" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 459-000
+|
+|-
+|[[File:Kansas 1928 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1928
+|Embossed blue serial on white plate with border line; "KAN 28" at right
+|''none''
+|123-456
+|1 to approximately 472-000
+|
+|-
+|[[File:Kansas 1929 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1929
+|Embossed black serial on yellow plate; black lines at top and bottom borders; "KANSAS 1929" at bottom
+|''none''
+|123-456
+|1 to approximately 507-000
+|First use of the full state name.
+|-
+|[[File:1930 Kansas license plate 55C321.jpg|150px]]
+|1930
+|Embossed white serial on black plate; white lines at top and bottom borders; "KANSAS - 1930" at top
+|''none''
+|''1''{{small|'''C'''}}12345<br>''10''{{small|'''C'''}}1234<br>''100''{{small|'''C'''}}123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|First base to use numeric county codes.
+|-
+|[[File:1931 Kansas license plate 58-3239.png|150px]]
+|1931
+|Embossed white serial on green plate with border line; "KAN 31" at right
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas 1932 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1932
+|Embossed black serial on orange plate with border line; "KAN 32" at left
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1933-Kansas-license-plate.jpg|150px]]
+|1933
+|Embossed white serial on dark blue plate with border line; "KAN 33" at right
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1934 Kansas license plate.jpg|150px]]
+|1934
+|Embossed black serial on white plate with border line; "KAN 34" at left
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas 1935 License Plate - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1935
+|Embossed orange serial on black plate with border line; "KAN 35" at right
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1936 Kansas license plate.JPG|150px]]
+|1936
+|Embossed black serial on orange plate with border line; "KAN 36" at left
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas 1937 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1937
+|Embossed yellow serial on black plate with border line; "KAN 37" at right
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1938 Kansas license plate.JPG|150px]]
+|1938
+|Embossed white serial on black plate with border line; "KAN. '38" centered at bottom
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1939 Kansas license plate.jpg|150px]]
+|1939
+|Embossed black serial on white plate with border line; "'39 KAN." centered at top
+|''none''
+|''1''-12345<br>''10''-1234<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1940 Kansas license plate.jpg|150px]]
+|1940
+|Embossed white serial on black plate with border line; "KANSAS '40" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1941 Kansas license plate.JPG|150px]]
+|1941
+|Embossed yellow serial on dark red plate with border line; "41 KANSAS" centered at bottom
+|''none''
+|''1''-12345<br>''10''-12345<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1942 Kansas license plate.JPG|150px]] 
+|1942
+| rowspan="2" |Embossed white serial on green plate with border line; "KANSAS '42" centered at bottom; sunflower decals at bottom corners
+| rowspan="2" |''none''
+| rowspan="2" |''1''-12345<br>''10''-12345<br>''100''-123
+| rowspan="2" |Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas 1942 License Plate with 1943 Zinc Tab - Photo Credits to Nathan Kuehn.jpg|150x150px]] 
+|1943
+|Revalidated for 1943 with zinc "43" tabs over the '42, due to metal conservation for [[World War II]].
+|-
+|[[File:Kansas 1944 License Plate - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1944
+|Embossed red serial on white plate with border line; "KANSAS-44" at top
+|''none''
+|''1''-12345<br>''10''-12345<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas 1945 license plate - photo credits to Nathan Kuehn.jpg|150x150px]]
+|1945
+|Embossed black serial on white plate; "KANSAS-45" centered at top
+|''none''
+|''1''-12345<br>''10''-12345<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas License Plate 1946 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1946
+|Embossed blue serial on golden yellow plate; "KANSAS-46" centered at top
+|''none''
+|''1''-12345<br>''10''-12345<br>''100''-123
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1947 Kansas License Plate.JPG|150px]]
+|1947
+|Embossed black serial on white plate with border line; "19 KANSAS 47" at top
+|''none''
+|''1''-12345<br>''10''-12345<br>''100''-1234
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1948 Kansas license plate.JPG|150px]]
+|1948
+|Embossed white serial on black plate with border line; "19 KANSAS 48" at top
+|''none''
+|''1''-12345<br>''10''-12345<br>''100''-1234
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:1949 Kansas license plate.jpg|150px]]
+|1949
+|Embossed black serial on unpainted aluminum plate with border line; "19 KANSAS 49" at top
+|"THE WHEAT STATE" at bottom
+|''1''-12345<br>''10''-12345<br>''100''-1234
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas License Plate 1950 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1950
+|Embossed green serial on unpainted aluminum plate with border line; "KANSAS 50" centered at top
+|"THE WHEAT STATE" centered at bottom
+|''1''-12345<br>''10''-12345<br>''100''-1234
+|Coded by county of issuance (''1'', ''10'' or ''100'')
+|
+|-
+|[[File:Kansas 1951 license plate - Number JW-201.jpg|150px]]  
+|1951
+| rowspan="3" |Embossed white serial on dark blue state-shaped plate with border line; "KANSAS 51" centered at top
+| rowspan="3" |"THE WHEAT STATE" centered at bottom
+| rowspan="3" |{{small|''A''/''B''}}-12345
+| rowspan="3" |Coded by county of issuance ({{small|''A''/''B''}})
+|First base to use two-letter county codes.
+|-
+|[[File:Kansas 1951 License Plate with 1952 Tab - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1952
+| rowspan="2" |Revalidated for 1952 with white tabs, and for 1953 with yellow tabs, due to metal conservation for the [[Korean War]].
+|-
+|[[File:1953 Kansas license plate.jpg|150px]]
+|1953
+|-
+|[[File:Kansas 1954 JW-3154.jpg|150px]]
+|1954
+|Embossed black serial on white state-shaped plate with border line; "KANSAS 54" centered at top
+|"THE WHEAT STATE" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1955 Kansas license plate.jpg|150px]]
+|1955
+|Embossed white serial on black state-shaped plate with border line; "KANSAS 55" centered at top
+|"THE WHEAT STATE" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1956 Kansas License Plate.JPG|150px]]
+|1956
+|Embossed black serial on white plate with state-shaped border; "KANSAS 56" centered at top
+|"THE WHEAT STATE" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|1956 was the first year that Kansas plates complied with the new standardized 6" x 12" measurements.
+|-
+|[[File:1957 Kansas License Plate.jpg|150px]]
+|1957
+|Embossed red serial on white plate with state-shaped border; "KANSAS 57" centered at top
+|"THE WHEAT STATE" at bottom, offset to right
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1958 Kansas License Plate.JPG|150px]]
+|1958
+|Embossed yellow serial on blue plate with state-shaped border; "KANSAS 58" centered at top
+|"THE WHEAT STATE" at bottom, offset to right
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1959 Kansas license plate.JPG|150px]]
+|1959
+|Embossed blue serial on yellow plate with state-shaped border; "KANSAS 59" centered at top
+|"THE WHEAT STATE" at bottom, offset to right
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1960 Kansas license plate.jpg|150px]]
+|1960
+|Embossed blue serial on white plate with state-shaped border; "KANSAS 60" centered at top
+|"CENTENNIAL 1961" at bottom, offset to right
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|Both this and the 1961 base commemorated Kansas' 100 years of statehood.
+|-
+|[[File:1961 Kansas license plate.JPG|150px]]
+|1961
+|Embossed brown serial on white plate with state-shaped border; "KANSAS 61" centered at top
+|"CENTENNIAL 1961" at bottom, offset to right
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1962 Kansas license plate.jpg|150px]]
+|1962
+|Embossed white serial on green plate with state-shaped border; "KANSAS 62" centered at top
+|''none''
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1963 KS license plate.JPG|150px]]
+|1963
+|Embossed green serial on white plate with state-shaped border; "KANSAS 63" centered at top
+|''none''
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1964 Kansas license plate.jpg|150px]]
+|1964
+|Embossed white serial on blue plate with state-shaped border; "KANSAS 64" centered at top
+|''none''
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1965 Kansas passenger license plate.jpg|150px]]
+|1965
+|Embossed white serial on red plate with state-shaped border; "KANSAS 65" centered at top
+|"MIDWAY&nbsp;USA" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1966 Kansas license plate.jpg|150px]]
+|1966
+|Embossed white serial on black plate with state-shaped border; "KANSAS 66" centered at top
+|"MIDWAY USA" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1967 KS license plate.JPG|150px]]
+|1967
+|Embossed white serial on Columbia blue plate with state-shaped border; "KANSAS 67" centered at top
+|"MIDWAY USA" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1968 Kansas license plate.jpg|150px]]
+|1968
+|Embossed yellow serial on black plate with state-shaped border; "KANSAS 68" centered at top
+|"MIDWAY USA" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1969 Kansas license plate.jpg|150px]]
+|1969
+|Embossed white serial on black plate with state-shaped border; "KANSAS 69" centered at top
+|"MIDWAY USA" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:Kansas License Plate 1970 - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1970
+|Embossed white serial on pale green plate with state-shaped border; "KANSAS 70" centered at top
+|"MIDWAY USA" centered at bottom
+|{{small|''A''/''B''}}-12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:Kansas License Plate 1971 Type 1, EXP JUL 31 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+| rowspan="2" |1971
+| rowspan="2" |Embossed white serial on red plate with state-shaped border; "KANSAS" and month of expiration centered at top and bottom respectively
+| rowspan="2" |''none''
+|{{small|''A''/''B''}} 12345
+|Coded by county of issuance ({{small|''A''/''B''}})
+|Staggered registration introduced, with the month of expiration determined by the initial letter of the registrant's surname. The {{small|''A''/''B''}}&nbsp;12345 serial format was used only on plates expiring on July 31.
+|-
+|[[File:Kansas License Plate 1971 Type 2, Staggered EXP Month - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|{{small|''A''/''B''}}&nbsp;''C''12345
+|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|These plates using {{small|''A''/''B''}}&nbsp;''C''12345 expired from July 31 through December 31, 1971.
+|-
+|[[File:Kansas License Plate 1972 - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1972
+|Embossed white serial on black plate with state-shaped border; "KANSAS" and month of expiration centered at top and bottom respectively
+|''none''
+|{{small|''A''/''B''}}&nbsp;''C''12345
+|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|Plates expired from February 29 through December 31, 1972.
+|-
+|[[File:Kansas License Plate 1973 - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1973
+|Embossed gold serial on green plate with state-shaped border; "KANSAS" and month of expiration centered at top and bottom respectively
+|''none''
+|{{small|''A''/''B''}}&nbsp;''C''12345
+|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|Plates expired from February 28 through December 31, 1973.
+|-
+|[[File:Kansas License Plate 1974 Type 1 with Expiration - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|rowspan="3"|1974
+|Embossed white serial on red plate with state-shaped border; "KANSAS" and month of expiration centered at top and bottom respectively
+|rowspan="2"|''none''
+|rowspan="3"|{{small|''A''/''B''}}&nbsp;''C''12345
+|rowspan="3"|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|rowspan="3"|Plates expired from February 28 through December 31, 1974. The first "KANSAS 74" plates expired on July 31, 1974, and the first "Wheat Centennial" plates on August 31, 1974. 
+In 1974, Kansas hosted a "Wheat Centennial" celebration commemorating the first Turkey Red wheat planting, according to folklore.<ref>{{Cite web|title=Turkey Red Wheat - Kansapedia - Kansas Historical Society|url=https://www.kshs.org/kansapedia/turkey-red-wheat/16789|access-date=2022-02-20|website=www.kshs.org}}</ref>
+|-
+|[[File:Kansas License Plate 1974 Type 2 Plain - Photo Credits to Dale Brigger.jpg|150x150px]]
+|rowspan="2"|As above, but with "KANSAS 74" at top, and without month of expiration
+|-
+|[[File:Kansas License Plate 1974 Wheat Centennial - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|"WHEAT CENTENNIAL" centered at bottom
+|-
+|[[File:Kansas License Plate 1975 Wheat Centennial - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|rowspan="2"|1975
+|rowspan="2"|Embossed white serial on green plate with state-shaped border; "KANSAS 75" centered at top
+|"WHEAT CENTENNIAL" centered at bottom
+|rowspan="2"|{{small|''A''/''B''}}&nbsp;''C''12345
+|rowspan="2"|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|rowspan="2"|Plates expired from February 28 through December 31, 1975. The first plates without the slogan expired on August 31, 1975.
+|-
+|[[File:Kansas License Plate 1975 Type 2 Plain - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|''none''
+|}
+
+===1976 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Kansas 1976 License Plate.JPG|150px]]
+|1976 - 1980
+|Embossed white serial on dark blue plate with embossed white state-shaped border and "KANSAS 76" at top
+|''none''
+|{{small|''A''/''B''}}&nbsp;''C''12345
+|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|
+|-
+|[[File:Kansas 1986 license plate.jpg|150px]]
+|1980&nbsp; - December 1981
+|Embossed white serial on blue plate with yellow wheat stalk graphic screened at left and "KANSAS" in yellow at top
+|''none''
+|{{small|''A''/''B''}}&nbsp;''C''12345
+|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|Awarded "Plate of the Year" for best new license plate of 1980 by the [[Automobile License Plate Collectors Association]], the first time Kansas was so honored. Discontinued due to legibility issues, but revalidated with stickers until 1988.
+|-
+|[[File:Kansas 1985 plate.jpg|150px]]
+|January 1982&nbsp;- December 1987
+|Embossed blue serial on reflective white plate; gold sunflower and wheat stalk graphic screened at top left and "KANSAS" in blue at top
+|''none''
+|{{small|''A''/''B''}}&nbsp;''C''12345
+|Coded by county of issuance ({{small|''A''/''B''}}) and month of expiration (''C'')
+|Issued only to new registrants. Serials in each county, for each month, continued from where the 1980–81 plates left off.<ref name="allaboutlicenseplatesKS">{{cite web |last=Tanner |first=Eric N. |title=Kansas Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Kansas&code=ks |publisher=allaboutlicenseplates.com |access-date=December 4, 2020}}</ref>
+|-
+|[[File:1988-1990 Kansas Standard License Plate.jpg|150x150px]]
+|January 1988&nbsp;- 1990
+|rowspan="2"|Embossed dark blue serial on white plate; brown wheat stalk graphic screened in the center; pale yellow band screened across top containing stylized "KANSAS" in the center and three dark blue stripes on either side
+|rowspan="2"|''none''
+|rowspan="2"|ABC 123
+|AAA 000 to approximately DVD&nbsp;999
+|
+|-
+|[[File:Kansas License Plate 1990-1993.jpg|150px]]
+|1990 - December 1993
+|DVE 000 to approximately GRR&nbsp;999
+|The county sticker was enlarged and the state name was made more legible.
+|-
+|[[File:Kansas Standard License Plate 1994-2001.jpg|150px]]
+|January 1994&nbsp;- January 2001
+|Embossed blue serial on light blue, white and light yellow gradient plate; yellow wheat stalk graphic screened in the center and "KANSAS" in blue at top
+|''none''
+|ABC 123
+|GRS 000 to approximately PAZ&nbsp;999;<br>SMA&nbsp;000 to approximately SVC&nbsp;499
+|Awarded "Plate of the Year" for best new license plate of 1994 by the Automobile License Plate Collectors Association, the second time Kansas was so honored.
+|-
+| 
+|January 2001&nbsp;- April 2007
+|Embossed black serial on sky blue plate; [[Kansas State Capitol|State Capitol]] screened in the center surrounded by clouds; fading gold band screened at bottom with gold wheat stalks at left and "KANSAS" in black at top 
+|''none''
+|ABC 123
+|PBA 000 to SLZ&nbsp;999;<br>TAA&nbsp;000 to approximately XWB&nbsp;016
+|Revalidated through December 31, 2023, with the last expiration being December 31, 2024**. 
+A state-wide replacement of all standard embossed plates started on January 1, 2024. Owners of old embossed plates will be required to replace them with the newest design at their annual renewal.
+|-
+|[[File:Kansas License Plate Base 2007-2018 (045 BKR).jpg|150x150px]]
+|April 2007&nbsp;- August 14, 2018
+|Embossed dark blue serial on light blue plate; top half of [[Seal of Kansas|state seal]] screened in white at bottom right and "KANSAS" in dark blue at top
+|rowspan="2"|''none''
+|rowspan="2"|123 ABC
+|000 AAA to approximately 
+850 LJW
+|Letters I, O, and Q are not used in serials from late 2012 onwards (FFQ being the last).<ref name="allaboutlicenseplatesKS"/> Ixx, Oxx, and Qxx series were skipped in 2016, 2021, & 2022, respectively.
+Revalidated through December 31, 2023 with the last expiration being December 31, 2024**. A state-wide replacement of all standard embossed plates started on January 1, 2024. Owners of old embossed plates will be required to replace them with the newest design at their annual renewal.
+|-
+|[[File:Kansas License Plate Standard Flat September 2019.jpg|150x150px]]
+|August 15, 2018<ref>{{cite news|last=Obermeyer |first=Madison |date=July 19, 2018 |title=Don't lose that decal: new license plate production to start Aug. 15 |url=https://www.kansas.com/news/local/article214968625.html |newspaper=[[The Wichita Eagle]] |access-date=December 13, 2018}}</ref>&nbsp;- September 7, 2023
+|Same as above, but with screened black serial and pre-printed county code
+|895 LJW to approximately 
+999 SGW
+|[[666 (number)#In religion|Number 666]] is no longer being used in serials from late 2018 onwards.
+Oxx and Qxx series were skipped in 2021 and 2022, respectively.
+|-
+| 
+|September 8, 2023 - August 18, 2024
+|Same as above, but with different serial format
+|''none''
+|1234ABC
+|0000ABB to approximately 2899AFJ
+|Kansas switched to a 7-character serial format starting on September 8, 2023.
+|-
+| 
+|August 19, 2024<ref>{{cite news|last=Self |first=Matthew |date=August 19, 2024 |title=New 'To The Stars' Kansas license plate now available |url=https://fox4kc.com/news/kansas-news/new-to-the-stars-kansas-license-plate-now-available/ |website=FOX4 Kansas City |access-date=August 19, 2024}}</ref>&nbsp; - Present
+|Screened black serial on light blue, white, and gold gradient plate with dark gray state-shaped border; [[Kansas State Capitol|State Capitol]] in dark gray at bottom left and "KANSAS" in dark gray centered at top
+|"To the Stars" centered at bottom
+|1234ABC
+|2900AFJ to 5145AHY {{small|(as of December 27, 2024)}}<ref name=":0">{{Cite web |title=Kansas License Plates |url=https://www.licenseplates.cc/KS |access-date=January 8, 2025
+|website=www.licenseplates.cc}}</ref>
+|On November 22, 2023, Kansas Governor Laura Kelly announced a redesigned standard license plate that was slated to replace all standard embossed plates starting in March 2024. This replacement was introduced due to longstanding legibility concerns with older embossed plates - the oldest of which had been on the road since 2001.<ref>{{Cite web |date=November 22, 2023 |title=Governor Kelly Announces New Standard License Plate Design, Replacement of Embossed Plates |url=https://governor.kansas.gov/governor-kelly-announces-new-standard-license-plate-design-replacement-of-embossed-plates/ |access-date=February 20, 2024 |website=kansas.gov - Office of the Governor}}</ref> However, following a widely negative response to the initial proposed redesign<ref>{{Cite web |date=November 28, 2023 |title=Governor Kelly Announces New Path Forward on State License Plate |url=https://governor.kansas.gov/governor-kelly-announces-new-path-forward-on-state-license-plate/ |access-date=February 20, 2024 |website=kansas.gov - Office of the Governor}}</ref> and with many locals deeming it too closely resembling the colors of Missouri and New York,<ref>{{Cite web |last=Self |first=Matthew |date=November 28, 2023 |title=‘I’ve heard you loud and clear’: Kansas governor puts stop to new state license plates after public backlash |url=https://www.ksnt.com/capitol-bureau/kansas-governor-puts-stop-to-new-state-license-plates-after-public-backlash/ |access-date=February 20, 2024 |website=ksnt.com}}</ref> Governor Kelly announced a contest on December 11, 2023, between five new designs that Kansans would instead vote on to decide the future plate. On December 15, this plate was chosen as the winner, with over 140,000 votes.<ref>{{Cite web |date=December 18, 2023 |title=Winning Kansas license plate announced |url=https://www.ksn.com/news/local/winning-kansas-license-plate-announced/ |access-date=January 2, 2024 |website=KSN-TV |language=en-US}}</ref> 
+|}
+
+<nowiki>**</nowiki>Standard embossed plates that are registered to farm vehicles were not part of the original replacement plan. According to KDOR, they are scheduled to start replacement on January 1, 2025.
+
+<nowiki>**</nowiki>In some cases, owners of standard embossed plates (non-farm related) have been given renewals for 2025, rather than having to replace their plates with the newest design. There has been no official explanation from KDOR as to why this is the case.
+
+==Replacement plates==
+Most specialty Kansas license plates are available to be reissued with the same serial number at the owner's request if they become damaged or illegible over time. Since Kansas does not have a rolling replate system, this duty falls on the vehicle owner to make sure their plates are legible to law enforcement and other motorists at all times.
+
+This process includes all Collegiate, Firefighter, EMS, Disabled, and most other specialty plates. However, they will not be reissued with an embossed serial or original designs, even if the plate holder has an older design, such as the first edition Agriculture plates. Instead, they will be issued with the most current design of the plate, and will be completely flat.
+
+The only style of plates that are not eligible to be reissued with the same serial are the standard Ad Astra or Capitol bases. If the owner wishes to retain their standard serial number, they can request it on a personalized plate.
+
+=== County coding ===
+Kansas has a system of [[County (United States)|county]] codes used for identification of the home county of a state [[Residency (domicile)|resident]] or company on license plates and state tax forms.<ref>Codes from the 2005-06 Kansas state transportation map (index of counties).</ref>
+
+The codes are two letters based on the first letter of and another letter in the name of the county. There is no true convention for the selection of the letters; for example, Bourbon County is the only county that begins with "BO," yet its code is "BB." In most cases, but not all, as noted above, the only county that begins with two particular letters gets those letters. Exceptions are '''D'''e'''c'''atur, '''D'''ic'''k'''inson, '''H'''od'''g'''eman, '''L'''ea'''v'''enworth, '''L'''o'''g'''an, '''M'''c'''P'''herson (MC is used for Mitchell), '''N'''or'''t'''on (NO is used for Neosho), '''P'''aw'''n'''ee, and '''P'''o'''t'''tawatomie.
+
+The two-letter code began appearing on Kansas license plates in 1951. From 1930 to 1950, the code was a number based on the order a county ranked in terms of population based on the 1920 [[United States Census]]. From 1951 until 1988, the two letters were stamped on the license plate on the far left side, one letter on top of the other. Since then, the letters are on a sticker applied to the upper-left corner of the plate.
+
+There is also a place on the address form of Kansas tax forms to place the county code.
+
+{|class="wikitable collapsible collapsed sortable"
+|-
+!County
+!Numeric code, 1930–50
+!Letter code, 1951–present
+|-
+|[[Allen County, Kansas|Allen]]
+|24
+|AL
+|-
+|[[Anderson County, Kansas|Anderson]]
+|52
+|AN
+|-
+|[[Atchison County, Kansas|Atchison]]
+|15
+|AT
+|-
+|[[Barber County, Kansas|Barber]]
+|67
+|BA
+|-
+|[[Barton County, Kansas|Barton]]
+|33
+|BT
+|-
+|[[Bourbon County, Kansas|Bourbon]]
+|17
+|BB
+|-
+|[[Brown County, Kansas|Brown]]
+|25
+|BR
+|-
+|[[Butler County, Kansas|Butler]]
+|9
+|BU
+|-
+|[[Chase County, Kansas|Chase]]
+|81
+|CS
+|-
+|[[Chautauqua County, Kansas|Chautauqua]]
+|63
+|CQ
+|-
+|[[Cherokee County, Kansas|Cherokee]]
+|10
+|CK
+|-
+|[[Cheyenne County, Kansas|Cheyenne]]
+|82
+|CN
+|-
+|[[Clark County, Kansas|Clark]]
+|91
+|CA
+|-
+|[[Clay County, Kansas|Clay]]
+|41
+|CY
+|-
+|[[Cloud County, Kansas|Cloud]]
+|36
+|CD
+|-
+|[[Coffey County, Kansas|Coffey]]
+|44
+|CF
+|-
+|[[Comanche County, Kansas|Comanche]]
+|90
+|CM
+|-
+|[[Cowley County, Kansas|Cowley]]
+|8
+|CL
+|-
+|[[Crawford County, Kansas|Crawford]]
+|4
+|CR
+|-
+|[[Decatur County, Kansas|Decatur]]
+|74
+|DC
+|-
+|[[Dickinson County, Kansas|Dickinson]]
+|18
+|DK
+|-
+|[[Doniphan County, Kansas|Doniphan]]
+|45
+|DP
+|-
+|[[Douglas County, Kansas|Douglas]]
+|16
+|DG
+|-
+|[[Edwards County, Kansas|Edwards]]
+|79
+|ED
+|-
+|[[Elk County, Kansas|Elk]]
+|68
+|EK
+|-
+|[[Ellis County, Kansas|Ellis]]
+|38
+|EL
+|-
+|[[Ellsworth County, Kansas|Ellsworth]]
+|64
+|EW
+|-
+|[[Finney County, Kansas|Finney]]
+|71
+|FI
+|-
+|[[Ford County, Kansas|Ford]]
+|35
+|FO
+|-
+|[[Franklin County, Kansas|Franklin]]
+|21
+|FR
+|-
+|[[Geary County, Kansas|Geary]]
+|47
+|GE
+|-
+|[[Gove County, Kansas|Gove]]
+|88
+|GO
+|-
+|[[Graham County, Kansas|Graham]]
+|76
+|GH
+|-
+|[[Grant County, Kansas|Grant]]
+|103
+|GT
+|-
+|[[Gray County, Kansas|Gray]]
+|89
+|GY
+|-
+|[[Greeley County, Kansas|Greeley]]
+|105
+|GL
+|-
+|[[Greenwood County, Kansas|Greenwood]]
+|32
+|GW
+|-
+|[[Hamilton County, Kansas|Hamilton]]
+|101
+|HM
+|-
+|[[Harper County, Kansas|Harper]]
+|51
+|HP
+|-
+|[[Harvey County, Kansas|Harvey]]
+|28
+|HV
+|-
+|[[Haskell County, Kansas|Haskell]]
+|100
+|HS
+|-
+|[[Hodgeman County, Kansas|Hodgeman]]
+|93
+|HG
+|-
+|[[Jackson County, Kansas|Jackson]]
+|42
+|JA
+|-
+|[[Jefferson County, Kansas|Jefferson]]
+|46
+|JF
+|-
+|[[Jewell County, Kansas|Jewell]]
+|43
+|JW
+|-
+|[[Johnson County, Kansas|Johnson]]
+|19
+|JO
+|-
+|[[Kearny County, Kansas|Kearny]]
+|98
+|KE
+|-
+|[[Kingman County, Kansas|Kingman]]
+|57
+|KM
+|-
+|[[Kiowa County, Kansas|Kiowa]]
+|85
+|KW
+|-
+|[[Labette County, Kansas|Labette]]
+|11
+|LB
+|-
+|[[Lane County, Kansas|Lane]]
+|97
+|LE
+|-
+|[[Leavenworth County, Kansas|Leavenworth]]
+|7
+|LV
+|-
+|[[Lincoln County, Kansas|Lincoln]]
+|66
+|LC
+|-
+|[[Linn County, Kansas|Linn]]
+|49
+|LN
+|-
+|[[Logan County, Kansas|Logan]]
+|95
+|LG
+|-
+|[[Lyon County, Kansas|Lyon]]
+|13
+|LY
+|-
+|[[Marion County, Kansas|Marion]]
+|23
+|MN
+|-
+|[[Marshall County, Kansas|Marshall]]
+|20
+|MS
+|-
+|[[McPherson County, Kansas|McPherson]]
+|26
+|MP
+|-
+|[[Meade County, Kansas|Meade]]
+|86
+|ME
+|-
+|[[Miami County, Kansas|Miami]]
+|31
+|MI
+|-
+|[[Mitchell County, Kansas|Mitchell]]
+|55
+|MC
+|-
+|[[Montgomery County, Kansas|Montgomery]]
+|5
+|MG
+|-
+|[[Morris County, Kansas|Morris]]
+|54
+|MR
+|-
+|[[Morton County, Kansas|Morton]]
+|94
+|MT
+|-
+|[[Nemaha County, Kansas|Nemaha]]
+|34
+|NM
+|-
+|[[Neosho County, Kansas|Neosho]]
+|22
+|NO
+|-
+|[[Ness County, Kansas|Ness]]
+|75
+|NS
+|-
+|[[Norton County, Kansas|Norton]]
+|61
+|NT
+|-
+|[[Osage County, Kansas|Osage]]
+|29
+|OS
+|-
+|[[Osborne County, Kansas|Osborne]]
+|56
+|OB
+|-
+|[[Ottawa County, Kansas|Ottawa]]
+|65
+|OT
+|-
+|[[Pawnee County, Kansas|Pawnee]]
+|69
+|PN
+|-
+|[[Phillips County, Kansas|Phillips]]
+|58
+|PL
+|-
+|[[Pottawatomie County, Kansas|Pottawatomie]]
+|39
+|PT
+|-
+|[[Pratt County, Kansas|Pratt]]
+|53
+|PR
+|-
+|[[Rawlins County, Kansas|Rawlins]]
+|77
+|RA
+|-
+|[[Reno County, Kansas|Reno]]
+|6
+|RN
+|-
+|[[Republic County, Kansas|Republic]]
+|40
+|RP
+|-
+|[[Rice County, Kansas|Rice]]
+|48
+|RC
+|-
+|[[Riley County, Kansas|Riley]]
+|30
+|RL
+|-
+|[[Rooks County, Kansas|Rooks]]
+|70
+|RO
+|-
+|[[Rush County, Kansas|Rush]]
+|73
+|RH
+|-
+|[[Russell County, Kansas|Russell]]
+|60
+|RS
+|-
+|[[Saline County, Kansas|Saline]]
+|14
+|SA
+|-
+|[[Scott County, Kansas|Scott]]
+|96
+|SC
+|-
+|[[Sedgwick County, Kansas|Sedgwick]]
+|2
+|SG
+|-
+|[[Seward County, Kansas|Seward]]
+|84
+|SW
+|-
+|[[Shawnee County, Kansas|Shawnee]]
+|3
+|SN
+|-
+|[[Sheridan County, Kansas|Sheridan]]
+|87
+|SD
+|-
+|[[Sherman County, Kansas|Sherman]]
+|80
+|SH
+|-
+|[[Smith County, Kansas|Smith]]
+|50
+|SM
+|-
+|[[Stafford County, Kansas|Stafford]]
+|59
+|SF
+|-
+|[[Stanton County, Kansas|Stanton]]
+|104
+|ST
+|-
+|[[Stevens County, Kansas|Stevens]]
+|92
+|SV
+|-
+|[[Sumner County, Kansas|Sumner]]
+|12
+|SU
+|-
+|[[Thomas County, Kansas|Thomas]]
+|78
+|TH
+|-
+|[[Trego County, Kansas|Trego]]
+|83
+|TR
+|-
+|[[Wabaunsee County, Kansas|Wabaunsee]]
+|62
+|WB
+|-
+|[[Wallace County, Kansas|Wallace]]
+|99
+|WA
+|-
+|[[Washington County, Kansas|Washington]]
+|37
+|WS
+|-
+|[[Wichita County, Kansas|Wichita]]
+|102
+|WH
+|-
+|[[Wilson County, Kansas|Wilson]]
+|27
+|WL
+|-
+|[[Woodson County, Kansas|Woodson]]
+|72
+|WO
+|-
+|[[Wyandotte County, Kansas|Wyandotte]]
+|1
+|WY
+|-
+|}
+
+==Decals==
+
+=== Yearly Registration Decals ===
+- Regular Auto decals started issuance in 1976 for 1977 expirations of the redesigned 1976 standard license plate. Trucks and other non-highway vehicles using the green 1975 plates were issued 1976 decals upon expiration.
+
+- The decal sizing was changed from square to rectangular in 1994/1995 to be able to fit a similarly sized month sticker above the registration decal.
+
+-  The sizing was again changed in some 2012/2013 and all 2014 registrations to a square "smart sticker" that now includes the month, plate number, and registration year on one decal. Smart stickers for 2012 registrations were only issued to new plates in OCT, NOV, & DEC, and 2013 smart sticker issuance began in mid-May. Since the expiration month is now printed directly on the registration, separate month stickers were phased out and newer plates removed the debossed sticker well that had previously been used for the decal.
+
+^ Denotes a decal issued to non-auto, vanity or specialty plate holders.
+
+<nowiki>*</nowiki> Denotes a redesigned standard plate with a natural expiration.
+{| class="wikitable"
+!Year
+!1977
+!1978
+!1979
+!1980
+!1981*
+!1981^
+!1982
+|-
+!Image
+|[[File:Kansas License Plate Sticker Auto 1977.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1978.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1979.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1980.jpg|150x150px]]
+|[[File:Kansas License Plate 1981 Debossed Natural Year.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker 1981 NON HIGHWAY.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1982.jpg|150x150px]]
+|-
+!Year
+!1983
+!1984
+!1985
+!1986
+!1987
+!1988
+!1989*
+|-
+!Image
+|[[File:Kansas License Plate Sticker Auto 1983.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1984.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1985.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1986.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1987.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker Auto 1988.jpg|150x150px]]
+|[[File:Kansas License Plate 1989 Natural Expiration Year.jpg|150x150px]]
+|-
+!Year
+!1989^
+!1990
+!1991
+!1992
+!1993
+!1994
+!1994^
+|-
+!Image
+|[[File:Kansas License Plate Auto Sticker 1989.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1990.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1991.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1992.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1993.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1994.jpg|150x150px]]
+|[[File:1994 Kansas Registration Sticker New Style.jpg|150x150px]]
+|-
+!Year
+!1995*
+!1995^
+!1996
+!1997
+!1998
+!1999
+!2000
+|-
+!Image
+|[[File:Kansas License Plate 1995 Natural Expiration Year.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1995.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1996.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1997.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1998.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 1999.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 2000.jpg|150x150px]]
+|-
+!Year
+!2001
+!2002*
+!2002^
+!2003
+!2004
+!2005
+!2006
+|-
+!Image
+|[[File:Kansas License Plate Auto Sticker 2001.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Natural Expiration 2002.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 2002.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 2003.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 2004.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 2005.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 2006.jpg|150x150px]]
+|-
+!Year
+!2007
+!2008
+!2009
+!2010
+!2011
+!2012
+!2012
+|-
+!Image
+|[[File:Kansas License Plate Auto Sticker 2007.jpg|150x150px]]
+|[[File:Kansas License Plate Auto Sticker 2008.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker 2009.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker 2010.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker 2011.jpg|150x150px]]
+|[[File:Kansas License Plate Sticker 2012.jpg|150x150px]]
+|[[File:Kansas License Plate 2012 Smart Sticker Registration Decal.jpg|150x150px]]
+|-
+!Year
+!2013
+!2013
+!2014
+!2015
+!2016
+!2017
+!2018
+|-
+!Image
+|[[File:Kansas License Plate Sticker 2013.jpg|150x150px]]
+|[[File:Kansas License Plate 2013 Smart Sticker Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2014 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2015 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2016 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2017 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2018 Registration Decal.jpg|150x150px]]
+|-
+!Year
+!2019
+!2020
+!2021
+!2022
+!2023
+!2024
+!2025
+|-
+!Image
+|[[File:Kansas License Plate 2019 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2020 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2021 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2022 Registration Decal.jpg|150x150px]]
+|[[File:Kansas License Plate 2023 Registration Decal.jpg|150x150px]]
+|[[File:2024 Kansas Registration Sticker.jpg|150x150px]]
+|[[File:KS2025 Renewal Sticker JUN 6400ACL.png|150x150px]]
+|}
+
+==Optional plates==
+
+=== Personalized Plates ===
+Starting January 1, 2025, all Kansas distinctive plates are now eligible for personalization.
+{|class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Kansas License Plate 1975 Vanity Truck - Photo Credits to Jason Smith.jpg|150x150px]]
+| rowspan="14" |[[Vanity plate|Personalized]] passenger
+|1975 registration year
+|Embossed white serial on green plate with "KANSAS 75" at top and county abbreviation/truck weight code at bottom
+|''various''
+|''various''
+|Kansas first issued vanity plates in 1975 to trucks only
+|-
+|[[File:Kansas License Plate 1976 Vanity - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1976 to 1979 registration years
+|Embossed white serial on blue plate with "KANSAS 76" at top and county abbreviation/month of expiration at bottom
+|''various''
+|''various''
+|1976 was the first year that vanity plates were issued to cars
+|-
+|[[File:Kansas License Plate 1980 Vanity - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1980 to 1984 registration years
+|Embossed dark blue serial on gold reflective plate with "KANSAS" at top and county abbreviation/month of expiration at bottom
+|''various''
+|''various''
+|
+|-
+|[[File:Kansas License Plate 1985 Vanity - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|1985 to 1989 registration years
+|Embossed dark blue serial on beige background with dark blue band at top containing "KANSAS" in the center in beige
+|''various''
+|''various''
+|
+|-
+|[[File:KS-1995-A.jpg|150px]]
+|1990 to 1994 registration years
+|Embossed dark blue serial on beige background with orange fade  at top and stalk of wheat in the center; "KANSAS" in dark blue at top
+|''various''
+|''various''
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|1995 to 1999 registration years
+|Embossed blue serial on white plate with sky blue fade at top and blue [[List of Kansas state symbols|sunflower]] graphic at bottom; "KANSAS" in blue at top
+|''various''
+|''various''
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2000 to 2004 registration years
+|Embossed black serial on white plate with gold fade and [[List of Kansas state symbols|wild sunflowers]] at bottom; "KANSAS" in yellow and black at top
+|''various''
+|''various''
+|
+|-
+|[[File:Kansas Vanity License Plate 2005-2010.jpg|150x150px]]
+|2005 to 2009 registration years
+|Embossed brown serial on tan plate with embossed brown state-shaped border, brown [[American Bison|buffalo]] in the center, and "Home On The Range" in brown at bottom; "KANSAS" in brown at top
+|''various''
+|''various''
+|Awarded "Plate of the Year" for best new license plate of 2005 by the Automobile License Plate Collectors Association, the third time Kansas was so honored.
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2010 to 2014 registration years
+|Embossed brown serial on sunset graphic background plate with old-fashioned windmill at left, modern [[wind turbine]] at right, grass at bottom, state seal in the center, and "America's Heartland" in white at bottom; "KANSAS" in dark brown at top
+|''various''
+|''various''
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2015 to 2018 registration years
+|Embossed black serial on sunflower graphic background plate with "KANSAS" and "SUNFLOWER STATE" in black at top and bottom, respectively
+|''various''
+|''various''
+|Kansas stopped taking orders for personalized plates in April 2018 to prepare for the launch of flat plates in August.
+|-
+|[[File:2018-2020 Kansas Vanity Plate.jpg|150x150px]]
+|2018 to 2019 registration years
+|Screened black serial on sunflower graphic background plate with "KANSAS" and "SUNFLOWER STATE" in black at top and bottom, respectively
+|''various''
+|''various''
+|Serial and county stickers became screened in August 2018.
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2020 to 2024 registration years
+|Screened white serial on gradient red and yellow background plate with three wind turbines at left; "KANSAS" and "Powering the Future" at top and bottom, respectively
+|''various''
+|''various''	
+|The background of these plates tend to turn into a single shade of brown from any distance.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2025 to 2029 registration years
+|Screened black serial on sunrise graphic overlooking the rolling green [[Flint Hills]] with "KANSAS" and "To the Stars" at top and bottom, respectively.
+|''various''
+|''various''
+|Kansas stopped taking personalized plate orders on October 11, 2024, to prepare for the new design starting January 1, 2025.
+|-
+|[[File:Kansas License Plate Personalized Flat State Seal 2022 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|January 1, 2022 – present
+|Same as 2018 state seal passenger base, with "PERSONALIZED" in black between the bolt holes at the bottom
+|''various''
+|''various''
+|Optional choice for personalized plates instead of the regular graphic design.
+|}
+
+===Educational Institution Plates===
+These plates share a common all-numeric serial format that started at 1 with K-State in 1997.
+{|class="wikitable"	
+!Image	
+!Type
+!Dates issued
+!Design
+!Notes
+|-
+|[[File:Kansas License Plate Baker University Embossed - Photo Credits to Jason Smith.jpg|150x150px]]
+|[[Baker University]]
+|2005 - 2009
+|Embossed black serial on white plate with the college's logo and "BAKER UNIVERSITY" at left; "KANSAS" in black at top
+|Discontinued due to minimum number of yearly registrations not met. Still valid for renewals
+|-
+|[[File:Benedictine College Kansas License Plate.jpg|150px]]
+| rowspan="2" |[[Benedictine College]]
+|2016 - 2018
+|Embossed black serial on white plate with the college's logo at left; "KANSAS" and "BENEDICTINE COLLEGE" in red at top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Benedictine College Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with the college's logo at left; "KANSAS" and "BENEDICTINE COLLEGE" in red at top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Emporia State 2008 Embossed - Photo by John Perez.jpg|150x150px]]
+| rowspan="2" |[[Emporia State University]]
+|2001 - 2018
+|Embossed black serial on white plate with the university's mascot, Corky the Hornet, at left and "KANSAS" in black at top
+|
+|-
+|[[File:Kansas License Plate Emporia State Flat 2023 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with the university's "Power E" logo at left and "KANSAS" in black at top
+|
+|-
+|[[File:Fort Hays State University Kansas License Plate.jpg|150px]]
+| rowspan="2" |[[Fort Hays State University]]
+|2003 - 2018
+|Embossed black serial on white plate with the university's tiger mascot at left and "KANSAS" in black at top
+|
+|-
+|[[File:Kansas License Plate Fort Hays State Flat - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with the university's tiger mascot at left and "KANSAS" in black at top
+|
+|-
+|[[File:Friends University Kansas License Plate.jpg|150px]]
+| rowspan="2" |[[Friends University]]
+|2016 - 2018
+|Embossed black serial on white plate with the university's logo at left and "KANSAS" in scarlet at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with the university's logo at left and "KANSAS" in scarlet at top
+|
+|-
+|[[File:Kansas License Plate K-State Number 1 Embossed - Photo Credits to Kyle Eilts.jpg|150x150px]]
+| rowspan="3" |[[Kansas State University]]
+|1997 - 2018
+|Embossed purple serial on white plate with the university's mascot, Willie the Wildcat, at left and "KANSAS" in purple at top
+|#1 issued in 1997 is still currently in active use
+|-
+|[[File:Kansas License Plate K-State 2nd Edition Flat 2022.jpg|150x150px]]
+|late 2018
+|Screened black serial on white plate with the university's mascot, Willie the Wildcat, at left and "KANSAS" in purple at top
+|These plates were issued between 40800 and 42000
+|-
+|[[File:Kansas License Plate K-State Flat Type 2, Go Wildcats - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2019–present
+|Screened black serial on white plate with the university's mascot, Willie the Wildcat, at left; "KANSAS" and "GO WILDCATS" in purple at top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Ottawa University Embossed - Photo Credits to Jason Smith.jpg|150x150px]]
+|[[Ottawa University]]
+|2005 - 2009
+|Embossed black serial on white plate with the university's logo and "OTTAWA UNIVERSITY" at left; "KANSAS" in black at top
+|Discontinued due to minimum number of yearly registrations not met. Still valid for renewals
+|-
+|[[File:Pittsburg State University Kansas License Plate.jpg|150px]]
+| rowspan="2" |[[Pittsburg State University]]
+|2000 - 2018
+|Embossed crimson serial on white plate with the university's mascot, Gus the Gorilla, at left and "KANSAS" in crimson at top
+|
+|-
+|[[File:Kansas License Plate Pitt State Flat Custom.png|150x150px]]
+|2018–present
+|Screened black serial on white plate with the university's mascot, Gus the Gorilla, at left and "KANSAS" in crimson at top
+|
+|-
+|[[File:Kansas License Plate KU Embossed 2022 - Photo Credits to J Kevin Kitzman.jpg|150x150px]]
+| rowspan="2" |[[University of Kansas]]
+|1998 - 2018
+|Embossed blue serial on white plate with the university's mascot, Big Jay, at left and "KANSAS" in blue at top
+|
+|-
+|[[File:Kansas License Plate KU Flat 2022 - Photo Credits to J Kevin Kitzman.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with the university's mascot, Big Jay, at left;  "KANSAS" and "ROCK CHALK" in blue at top and bottom, respectively
+|
+|-
+|[[File:Washburn University Kansas License Plate.jpg|150px]]
+| rowspan="2" |[[Washburn University]]
+|2005 - 2018
+|Embossed dark blue serial on white plate with the university's mascot, the Ichabod, at left and "KANSAS" in dark blue at top
+|
+|-
+| 
+|2018–present
+|Screened black serial on white plate with the university's mascot, the Ichabod, at left and "KANSAS" in dark blue at top
+|
+|-
+|[[File:Kansas License Plate Wichita State Embossed 2014.jpg|150x150px]]
+| rowspan="2" |[[Wichita State University]]
+|2000 - 2018
+|Embossed black serial on white plate with the university's mascot, WuShock, at left and "KANSAS" in black at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with the university's mascot, WuShock, at left and "KANSAS" in black at top
+|
+|}
+
+=== Organizational Distinctive Plates ===
+{| class="wikitable"	
+!Image	
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Kansas Agriculture License Plate.jpg|150x150px]]
+| rowspan="3" |[[Agriculture in the United States|Agriculture]]
+|2005 - 2018
+|Embossed black serial on white plate with Kansas Foundation for Agriculture in the Classroom (KFAC) logo at the left and "KANSAS" in black at top
+| rowspan="3" |1234
+|
+|-
+|[[File:Kansas License Plate Agriculture 2nd Edition Flat- Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|late 2018
+|Screened black serial on white plate with Kansas Foundation for Agriculture in the Classroom (KFAC) logo at the left and "KANSAS" in black at top
+|
+|-
+|[[File:Kansas License Plate Agriculture 3rd Edition Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2019–present
+|Screened black serial on white plate with Kansas Foundation for Agriculture in the Classroom (KFAC) logo at the left; blue band containing "KANSAS" in white at top and "AGRICULTURE" in black at bottom
+|
+|-
+|[[File:Kansas License Plate Autism Awareness Flat 2020 - Photo Credits to Jason Smith.jpg|150x150px]]
+|[[Autism|Autism Awareness]]
+|2019–present
+|Screened black serial on white plate with Kansas Autism Awareness logo at the left and "KANSAS" in blue at top
+|1AB
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|[https://bradenshope.org/hope-license-plate/ Braden's Hope]
+|2022–present
+|Screened black serial on white plate with red border and Braden's Hope for Childhood Cancer logo at left; "KANSAS" in blue and "Delivering HOPE" in red at top and bottom, respectively
+|1AB
+|
+|-
+|[[File:Kansas License Plate Children's Trust Fund 2002 Embossed - Photo by Jack Walker.jpg|150x150px]]
+| rowspan="2" |[https://kschildrenscabinet.org/donate/ Children's Trust Fund]
+|2000 - 2018
+|Embossed blue serial on white plate with Kansas Children's Trust Fund logo at the left and "KANSAS" in blue at top
+| rowspan="2" |12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with Kansas Children's Trust Fund logo at the left and "KANSAS" in blue at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|[https://www.ksrevenue.gov/dov-chooselife.html Choose Life]
+|2022–present
+|Screened black serial on white plate with red and pink border and Kansas Choose Life logo at left; "KANSAS" in blue and "Choose LIFE" in pink at top and bottom, respectively
+|A123
+|
+|-
+|[[File:Kansas License Plate City of Wichita Black Error - Photo Credits to Nathan Kuehn.jpg|149x149px]]
+| rowspan="2" |[[Wichita, Kansas|City of Wichita]]
+|early 2019
+|Screened black serial on graphic of [[Wichita, Kansas|City of Wichita]] Flag plate with "KANSAS" in white at top
+| rowspan="2" |A123
+|A small number of plates with black serials were printed in error; owners were mailed correct plates with white serials
+|-
+|[[File:Kansas License Plate City of Wichita - Photo credits to Alex Burbidge.jpg|149x149px]]
+|2019–present
+|Screened white serial on graphic of [[Wichita, Kansas|City of Wichita]] Flag plate with  "KANSAS" in white at top
+|
+|-
+|[[File:Kansas License Plate Donate Life Embossed - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+| rowspan="2" |[https://mwtn.org/donate-life-license-plates/ Donate Life]
+|2015 - 2018
+|Embossed black serial on green and white plate with [[Donate Life America]] logo at left; "KANSAS" and "Be an Organ, Eye and Tissue Donor" in black at  top and bottom, respectively
+| rowspan="2" |123AB
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on green and white plate with [[Donate Life America]] logo at left; "KANSAS" and "Be an Organ, Eye and Tissue Donor" in black at  top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Ducks Unlimited 2020.jpg|150x150px]]
+| rowspan="2" |[[Ducks Unlimited]]
+|2012 - 2018
+|Embossed black serial on white plate with graphic of duck head at left; "KANSAS" and "DUCKS UNLIMITED" in black at top and bottom, respectively
+| rowspan="2" |1ABC
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with graphic of duck head at left; "KANSAS" and "DUCKS UNLIMITED" in black at top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Eisenhower Foundation Embossed 2017 - Photo by Tom Allen.jpg|150x150px]]
+| rowspan="2" |[https://www.eisenhowerfoundation.net/join-and-give/ike-license-plate Eisenhower Foundation]
+|2014 - 2018
+|Embossed black serial on white plate with "I LIKE IKE" button graphic at left; and "KANSAS" in blue at top
+| rowspan="2" |AB12
+|
+|-
+|[[File:Kansas License Plate Eisenhower Foundation Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with "I LIKE IKE" button graphic at left; and "KANSAS" in blue at top
+|
+|-
+|[[File:Kansas EMS License Plate.jpg|150x150px]]
+| rowspan="2" |[[Emergency medical services in the United States|Emergency Medical Services (EMS)]]
+|2008 - 2018
+|Embossed blue serial on white plate with embossed blue state-shape border and EMS [[Star of Life]] symbol at left; "KANSAS" and "EMS" in blue at top and bottom, respectively
+| rowspan="2" |12345
+| rowspan="2" |Must be employed in the EMS field
+|-
+|[[File:Kansas License Plate EMS Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with EMS [[Star of Life]] symbol at left; "KANSAS" and "EMS" in blue at top and bottom, respectively
+|-
+|[[File:Kansas Firefighter License Plate.jpg|150x150px]]
+| rowspan="2" |[[Firefighter]]
+|2005 -  2018
+|Embossed red serial on gold plate with embossed red state-shape border and Firefighter [[Maltese cross|Maltese Cross]] symbol at left; "KANSAS" and "FIREFIGHTER" in red at top and bottom, respectively
+| rowspan="2" |12345
+| rowspan="2" |Must be a firefighter - volunteer and retired are also eligible
+|-
+|[[File:Kansas License Plate Firefighter Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on gold plate with red state-shape border and Firefighter [[Maltese cross|Maltese Cross]] symbol at left; "KANSAS" and "FIREFIGHTER" in red at top and bottom, respectively
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+| rowspan="2" |In God We Trust
+|2009 - 2018
+|Embossed dark blue serial on light blue plate with stalks of yellow wheat and "IN GOD WE TRUST" at left in white; "KANSAS" in white at top
+| rowspan="2" |AB123
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on light blue plate with stalks of yellow wheat and "IN GOD WE TRUST" at left in white; "KANSAS" in white at top
+|
+|-
+|[[File:Kansas License Plate 4-H Embossed - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+| rowspan="2" |[[4-H|Kansas 4H Foundation]]
+|2017 - 2018
+|Embossed green serial on white with [[4-H#Emblem|4H Clover Emblem]] at left, "KANSAS" and "TO MAKE THE BEST BETTER" slogan in white at top and bottom, respectively
+| rowspan="2" |AB1
+|
+|-
+|[[File:Kansas License Plate 4-H Flat - Photo Credits to Jason Smith.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with [[4-H#Emblem|4H Clover Emblem]] at left, "KANSAS" and "TO MAKE THE BEST BETTER" slogan in white at top and bottom, respectively
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+| rowspan="2" |[https://www.kansascommerce.gov/program/kcaic/contribute/ Kansas Arts Foundation]
+|2015 - 2018
+|Embossed dark blue serial on dark blue/black plate with Kansas Arts Foundation logo at left; "KANSAS" and "State of the Arts" in yellow at top and bottom, respectively
+| rowspan="2" |AB123
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on dark blue/black plate with Kansas Arts Foundation logo at left; "KANSAS" and "State of the Arts" in yellow at top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Breast Cancer Embossed 2016 - Photo Credits to Jason Smith.jpg|150x150px]]
+| rowspan="2" |[[Breast cancer awareness|Kansas Breast Cancer Research]]
+|2008 - 2018
+|Embossed pink serial on white plate with [[Breast cancer awareness#Pink ribbon|Breast Cancer Awareness Ribbon]] and a [[List of Kansas state symbols|sunflower]] at left; "KANSAS" in blue and "DRIVEN TO CURE" in white at top and bottom, respectively
+| rowspan="2" |12345
+|
+|-
+|[[File:Kansas License Plate Breast Cancer Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with [[Breast cancer awareness#Pink ribbon|Breast Cancer Awareness Ribbon]] and a [[List of Kansas state symbols|sunflower]] at left; "KANSAS" in pink and "DRIVEN TO CURE" in white at top and bottom, respectively
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+| rowspan="2" |[https://kansashorsecouncil.com/khc-license-plates Kansas Horse Council]
+|2015 - 2018
+|Embossed black serial on sunset field background plate with horse graphic at left; "KANSAS" and "KANSAS HORSE COUNCIL" in black at top and bottom, respectively
+| rowspan="2" |ABCD1
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on sunset field background plate with horse graphic at left; "KANSAS" and "KANSAS HORSE COUNCIL" in black at top and bottom, respectively
+|
+|-
+|[[File:Kansas Freemasons License Plate.jpg|150x150px]]
+| rowspan="2" |[[Freemasonry|Kansas Masonic Lodge]]
+|2015 - 2018
+|Embossed dark blue serial on gray plate with Kansas Freemason logo at the left; "KANSAS" and "KANSAS FREEMASONS - ON THE LEVEL" in blue at top and bottom, respectively
+| rowspan="2" |ABC1
+|
+|-
+|[[File:Kansas License Plate Freemasons Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on gray plate with Kansas Freemason logo at the left; "KANSAS" and "KANSAS FREEMASONS - ON THE LEVEL" in blue at top and bottom, respectively
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|[https://kansasrifle.org/about/resources/gadsden-flag-signup/ Kansas State Rifle Association]
+|2022–present
+|Screened black serial on yellow plate with [[Gadsden flag|Gadsen Flag Don't Tread on Me]] logo at left; "KANSAS" and "Kansas State Rifle Association" in black at top and bottom, respectively
+|ABC12
+|
+|-
+|[[File:Kansas Pet Friendly License Plate.jpg|150x150px]]
+| rowspan="2" |[[Kansas State University College of Veterinary Medicine|K-State Veterinary Medicine]]
+|2013 - 2018
+|Embossed black serial on white plate with animal graphic at left; gold bars at top, "KANSAS" and "I'm Pet Friendly" in purple at top and bottom, respectively
+| rowspan="2" |AB123
+|
+|-
+|[[File:Kansas License Plate Pet Friendly Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with animal graphic at left; gold bars at top, "KANSAS" and "I'm Pet Friendly" in purple at top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Childhood Cancer Love, Chloe Foundation - Photo Credits to Joe Smith.jpg|150x150px]]
+|[https://lovechloe.org/distinctive-license-plate Love, Chloe Foundation]
+|2022–present
+|Screened black serial on blue plate with yellow ribbon and rainbow graphics; "KANSAS" and "FUELING THE FIGHT.ORG" in black at top and bottom, respectively 
+|1AB
+|
+|-
+|[[File:Kansas Shriner's License Plate.jpg|150x150px]]
+| rowspan="2" |[[Shriners]]
+|2002 - 2018
+|Embossed red serial on white plate with Shriner's logo at right, graphic of man and child at left; "KANSAS" and "SHRINERS HELP KIDS" in red at top and bottom, respectively
+| rowspan="2" |12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with Shriner's logo at right, graphic of man and child at left; "KANSAS" and "SHRINERS HELP KIDS" in red at top and bottom, respectively
+|
+|-
+|[[File:Kansas License Plate Special Olympics - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|[[Special Olympics]]
+|2019–present
+|Screened black serial on white plate with Kansas Special Olympics logo at left; "KANSAS" and "KSSO.ORG" in red at top and bottom, respectively
+|A12
+|
+|}
+
+=== Military Distinctive Plates ===
+{| class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+| 
+|[[Medal of Honor]]
+|2005–present
+|Embossed blue serial on white plate with national flag and medal graphic at left; "KANSAS" and "Medal of Honor" in blue at top and bottom, respectively
+|1
+|Must have been presented the Medal of Honor.
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+| rowspan="4" |Disabled Veteran
+|2001 - 2007
+|Same as 2001 state capitol passenger base, with disabled placard and "DISABLED VETERAN" in black at left and bottom, respectively
+| rowspan="3" |{{nowrap|{{access icon|10px}} 12345}}
+| rowspan="4" |Must have served in the armed forces of the United States and are entitled to compensation for either a service-connected disability, the loss of limbs, or permanent visual impairment.<ref>{{Cite web|title=Kansas Department of Revenue Division of Vehicles - Kansas Disabled Veteran Plate|url=https://www.ksrevenue.org/dov-disabledvet.html|access-date=2021-06-01|website=www.ksrevenue.org}}</ref>
+|-
+|[[File:Disabled Veteran Kansas License Plate.jpg|150px]]
+|2007 - 2018
+|Same as 2007 state seal passenger base, with disabled placard and "DISABLED VETERAN" in dark blue at left and bottom, respectively
+|-
+|[[File:Kansas License Plate Disabled Vet Flat 2020 - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018 - 2023
+|Same as 2018 state seal passenger base, with disabled placard and "DISABLED VETERAN" in black at left and bottom, respectively
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|September 2023 – present
+|Same as above, but with different serial format
+|{{nowrap|{{access icon|10px}}ABC123}}
+|-
+|[[File:Kansas License Plate Ex-POW Embossed July 2011 - Photo by Leo Good.jpg|150x150px]]
+|Ex-Prisoner of War
+|1980–present
+|Embossed blue serial on white plate with American Ex-Prisoners of War shield and motto in red at left; "KANSAS" and "EX-PRISONER OF WAR" in red at top and bottom, respectively
+|1234
+|Must have been held as a prisoner of war while serving in the military, including any civilian who was held as a prisoner of war.
+|-
+|[[File:Families of the Fallen Kansas License Plate.jpg|150px]]
+| rowspan="2" |Families of the Fallen
+|2011 - 2018
+|Embossed blue serial on white plate with blue border; Gold Star and Next of Kin lapel button graphics at left; "KANSAS" and "FAMILIES OF THE FALLEN" in red at top and bottom, respectively
+| rowspan="2" |AB12
+| rowspan="2" |Must be a Department of Defense recognized next of kin of deceased military personnel.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with blue border; Gold Star and Next of Kin lapel button graphics at left; "KANSAS" and "FAMILIES OF THE FALLEN" in red at top and bottom, respectively
+|-
+|[[File:Kansas License Plate Gold Star Mother Embossed 2013 - Photo by Tom Allen.jpg|150x150px]]
+| rowspan="2" |[[American Gold Star Mothers|Gold Star Mother]]
+|2009 - 2018
+|Embossed blue serial on white plate with Gold Star Mother graphic at left and gray state shape at right; "KANSAS" in gold on dark blue bar at top and "HONORING THOSE WHO HAVE FALLEN" on gold bar at bottom
+| rowspan="2" |12345
+| rowspan="2" |Must be the mother of a service member killed on active duty.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with Gold Star Mother graphic at left and gray state shape at right; "KANSAS" in gold on dark blue bar at top and "HONORING THOSE WHO HAVE FALLEN" on gold bar at bottom
+|-
+|[[File:Korean War Veteran Kansas License Plate.png|150px]]
+|[[Korean War]] Veteran
+|2018–present
+|Screened black serial on white plate with [[Korean Service Medal]] graphic at left and "KANSAS" in blue at top
+|AB
+|Must have been a service member that showed honorable service on active duty between June 25, 1950, and January 31, 1955, during the Korean War, or awarded the Korean Service Medal.
+|-
+|[[File:National Guard Kansas License Plate.jpg|150px]]
+| rowspan="2" |[[United States National Guard|National Guard]]
+|1980 - 2018
+|Embossed blue serial on white plate with red minuteman graphic at left; "KANSAS" and "NATIONAL GUARD" in red at top and bottom, respectively
+| rowspan="2" |12345
+| rowspan="2" |Must be a member or retired member of the Kansas National Guard.
+|-
+|[[File:Kansas License Plate National Guard Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with red minuteman graphic at left; "KANSAS" and "NATIONAL GUARD" in red at top and bottom, respectively
+|-
+|[[File:Operation Desert Storm Kansas License Plate.png|150px]]
+|[[Gulf War|Operation Desert Storm]]
+|2018–present
+|Screened black serial on white plate with [[Southwest Asia Service Medal]] graphic at left; "KANSAS" in blue at top
+|12A
+|Must have been awarded the Southwest Asia Service Medal.
+|-
+|[[File:Operation Enduring Freedom Kansas License Plate.png|150px]]
+|[[War in Afghanistan (2001–present)|Operation Enduring Freedom]]
+|2018–present
+|Screened black serial on white plate with [[Afghanistan Campaign Medal]] graphic at left; "KANSAS" in blue at top
+|1AB
+|Must have been awarded the Afghanistan Campaign Medal .
+|-
+|[[File:Operation Iraqi Freedom Kansas License Plate.png|150px]]
+|[[Iraq War|Operation Iraqi Freedom]]
+|2018–present
+|Screened black serial on white plate with [[Iraq Campaign Medal]] graphic at left; "KANSAS" in blue at top
+|AB1
+|Must have been awarded the Iraq Campaign Medal.
+|-
+|[[File:Pearl Harbor Survivor Kansas License Plate.jpg|150px]]
+|[[Attack on Pearl Harbor|Pearl Harbor]] Survivor
+|1993–present
+|Embossed red serial on white plate with logo of the [[Pearl Harbor Survivors Association]] at left; "KANSAS" and "Pearl Harbor Survivor" in red at top and bottom, respectively
+|1234
+|Must have been stationed during the attack at Pearl Harbor on December 7, 1941.<ref>{{Cite web|title=Kansas Department of Revenue Division of Vehicles - Pearl Harbor Survivor Plate|url=https://www.ksrevenue.org/dov-pearlharbor.html|access-date=2021-06-01|website=www.ksrevenue.org}}</ref>
+|-
+|[[File:Kansas License Plate Purple Heart Embossed 2008.jpg|150x150px]]
+| rowspan="2" |[[Purple Heart]]
+|1995 - 2018
+|Embossed purple serial on white plate with Purple Heart graphic at left; "KANSAS" and "COMBAT WOUNDED" in purple at top and bottom, respectively
+| rowspan="2" |12345
+| rowspan="2" |Must have been awarded the Purple Heart Medal for being combat wounded.
+|-
+|[[File:Kansas License Plate Purple Heart 2022 Flat - Photo from Marc Welby.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with Purple Heart graphic at left; "KANSAS" and "COMBAT WOUNDED" in purple at top and bottom, respectively
+|-
+|[[File:Kansas License Plate US Veteran July 2001.jpg|150x150px]]
+| rowspan="3" |U.S. Veteran
+|1998 - 2007
+| rowspan="2" |Embossed blue serial on white plate with "U.S. VETERAN" and [[Great Seal of the United States|national coat of arms]] in blue at left, together with five red stars; "KANSAS" in blue at top
+|12345
+| rowspan="3" |Must be a currently serving member in the U.S. military or an honorably discharged veteran.
+|-
+|[[File:US Veteran Kansas License Plate New.jpg|150px]]
+|2007 - 2018
+| rowspan="2" |12ABC
+|-
+|[[File:Kansas License Plate US Veteran Flat October 2020.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with "U.S. VETERAN" and [[Great Seal of the United States|national coat of arms]] in blue at left, together with five red stars; "KANSAS" in blue at top
+|-
+|[[File:Vietnam Veteran Kansas License Plate.jpg|150px]]
+| rowspan="2" |[[Vietnam War|Vietnam]] Veteran
+|2011 - 2018
+|Embossed green serial on white plate with [[Vietnam Service Medal]] graphic at left; "KANSAS" and "VIETNAM VETERAN" in red at top and bottom, respectively
+| rowspan="2" |12345
+| rowspan="2" |Must have been awarded the Vietnam Service Medal.
+|-
+|[[File:Kansas License Plate Vietnam Veteran Flat - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with [[Vietnam Service Medal]] graphic at left; "KANSAS" and "VIETNAM VETERAN" in red at top and bottom, respectively
+|}
+
+=== Other Distinctive Plates ===
+{| class="wikitable"	
+!Image	
+!Type
+!Dates issued
+!Design
+!Serial Format
+!Notes
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+| rowspan="3" |Amateur Radio Operator
+|2001 - 2007
+|Same as 2001 state capitol passenger base with call sign as the serial
+|''various''
+| rowspan="3" |The call sign is used as the plate serial and no county stickers are present.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2007 - 2018
+|Same as 2007 state seal passenger base with call sign as the serial
+|''various''
+|-
+|[[File:Kansas Amateur Radio License Plate.jpg|150x150px]]
+|2018–present
+|Same as 2018 state seal passenger base with call sign as the serial
+|''various''
+|-
+|[[File:Kansas License Plate 1980s Antique Blue and Gold - Photo Credits to Kyle Eilts.jpg|150x150px]]
+| rowspan="4" |Antique
+|
+|Embossed gold serial on blue plate with embossed gold state-shaped border; "KANSAS" and "ANTIQUE" in gold at top and bottom, respectively
+|ABCDE;
+''various''
+|Random letters were issued in lieu of numbers.
+These plates are no longer issued, but still valid if displayed on the original vehicle it was registered to.
+|-
+|[[File:Kansas License Plate 1980s Antique - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1982 - 2001
+|Embossed navy blue serial on white plate with "KANSAS" and "ANTIQUE" in navy blue at top and bottom, respectively
+| rowspan="3" |123456;
+''various''
+| rowspan="3" |Can be issued to any vehicle 35 years or older. (1989 and older vehicles are eligible as of January 1, 2024)
+The owner can also choose to use an original Kansas license plate with correct year stickers instead (Speciality Antique).<ref>{{Cite web |last=Kansaslicenseplates.com |title=Kansaslicenseplates.com |url=https://kansaslicenseplates.com/kansas-model-year-law |access-date=2024-01-03 |website=Kansaslicenseplates.com |language=en-US}}</ref>
+|-
+|[[File:Kansas Antique License Plate.jpg|150x150px]]
+|2001 - 2018
+|Embossed blue serial on white plate with "KANSAS" and "ANTIQUE" in blue at top and bottom, respectively
+|-
+|[[File:Kansas License Plate Antique Flat - Photo Credits to Joe Smith.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with "KANSAS" and "ANTIQUE" in blue at top and bottom, respectively
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+| rowspan="4" |Disabled
+|2001 - 2007
+|Same as 2001 state capitol passenger base with disabled placard at left
+| rowspan="2" |{{access icon|10px}}12345
+| rowspan="4" |Requires re-certification every 3 years to retain disabled status.
+|-
+|[[File:Kansas License Plate Disabled Embossed 2016 - Photo Credits to Jason Smith.jpg|150x150px]]
+|2007 - 2018
+|Same as 2007 state seal passenger base with disabled placard at left.
+|-
+|[[File:Kansas License Plate Disabled Flat 2020 - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|2018 - 2023
+|Same as 2018 state seal passenger base with disabled placard at left.
+|{{access icon|10px}}A1234
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|September 2023 – present
+|Same as above, but with different serial format
+|{{nowrap|{{access icon|10px}}ABC123}}
+|-
+|[[File:Kansas Special Interest License Plate.jpg|150x150px]]
+|Special Interest
+|2018–present
+|Same as 2018 state seal passenger base with "SPEC" and "VEH" in black on left and right, respectively
+|12345
+|Issued to special vehicles that are at least 20 years old and have not been altered from original manufacturer specifications.
+|-
+|[[File:Kansas Street Rod License Plate.jpg|150x150px]]
+|Street Rod
+|2018–present
+|Same as state 2018 seal passenger base with "SPEC", "VEH", and "STREET ROD" in black at left, right, and bottom, respectively
+|12345
+|Issued to vehicles manufactured in 1949 or before that have been altered or modified and may be referred to as a "street rod.”
+|}
+
+== Non-passenger plates ==
+{| class="wikitable"	
+|[[File:Kansas License Plate Apportioned - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+|Apportioned
+|
+|Embossed black serial on white plate with "KANSAS" and "APPORTIONED" in black at top and bottom, respectively
+|123456
+|Apportioned trucking vehicles accrue mileage among two or more jurisdictions and have a GVW that exceeds 26,000 pounds.
+|-
+|[[File:Kansas Commercial License Plate.jpg|150x150px]]
+| rowspan="2" |Commercial
+|2012 - 2018
+|Embossed purple serial on white plate with "PWR" at the left, "KANSAS" and "COMMERCIAL" in purple at top and bottom, respectively
+| rowspan="2" |123456
+| rowspan="2" |Most commonly used on semi-trucks or heavy machinery owned by a commercial company, but can also be used on trucks or SUVs owned by the same company. No annual registration stickers or county identification is needed.
+|-
+|[[File:Kansas PWR Commercial License Plate Flat.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with "PWR" at the left, "KANSAS" and "COMMERCIAL" in purple at top and bottom, respectively
+|-
+|[[File:Kansas License Plate Fleet - Photo Credits to Nathan Kuehn.jpg|150x150px]]
+| rowspan="2" |Fleet
+|2001 - 2018
+|Embossed red serial on white plate with "KANSAS" and "FLEET" in red at top and bottom, respectively
+| rowspan="2" |F012345
+| rowspan="2" |Used for company fleet vehicles, most commonly seen on vehicles owned by utility companies.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Screened black serial on white plate with "KANSAS" and "FLEET" in red at top and bottom, respectively
+|-
+|[[File:Kansas License Plate Municipal 1989-94 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+| rowspan="4" |Municipal
+|1989 - 1994
+|Embossed navy blue serial on white plate with "KANSAS" in navy blue at top
+| rowspan="3" |12345
+| rowspan="4" |Municipal plates use a county sticker in the top left along with the designation sticker at the bottom such as "CITY" or "COUNTY". 
+They can be used for police cars, fire department SUVs, county vehicles, and school district vehicles. These plates are not transferable upon the sale or disposal of the vehicle.
+|-
+|[[File:Kansas License Plate Municipal 1994-01 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1994 - 2001
+|Embossed blue serial on white plate with "KANSAS" in blue at top
+|-
+|[[File:Kansas County License Plate.jpg|150x150px]]
+|2001 - 2018
+|Embossed black serial on white plate with "KANSAS" in black at top
+|-
+|[[File:Kansas License Plate Municipal Flat 2018 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|2018–present
+|Screened black serial on white plate with "KANSAS" in black at top
+|A1234
+|-
+|[[File:Kansas Permanent Trailer License Plate.jpg|150x150px]]
+| rowspan="2" |Permanent Trailer
+|1999 - 2018
+|Embossed red serial on white plate with "TRAILER" at left; "KANSAS" and "PERMANENT" in red at top and bottom, respectively
+| rowspan="2" |123456
+| rowspan="2" |Not transferable upon the sale or disposal of the trailer.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Flat black serial on white plate with "TRAILER" at left; "KANSAS" and "PERMANENT" in red at top and bottom, respectively
+|-
+|[[File:Kansas License Plate PWR Permanent Application Embossed Blue 2005 - Photo by Norm Russo.jpg|150x150px]]
+| rowspan="3" |PWR Permanent Application
+|2001 - 2006
+|Embossed blue serial on white plate with "PWR" at left; "KANSAS" and "PERM APP" in red at top and bottom, respectively
+| rowspan="3" |123456
+|Used for commercial machinery such as semi-trucks, road construction equipment, dump trucks, etc. where a permanent application is needed 
+|-
+|[[File:Kansas License Plate PWR Permanent Application Embossed Red 2017 - Photo from Marc Welby.jpg|150x150px]]
+|2006 - 2018
+|Embossed red serial on white plate with "PWR" at left; "KANSAS" and "PERM APP" in red at top and bottom, respectively
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2018–present
+|Flat black serial on white plate with "PWR" at left; "KANSAS" and "PERM APP" in red at top and bottom, respectively
+|Remakes of old numbers on flat plates are common because these plates tend to be damaged from the machinery they are used on
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|Rental Fleet
+|2020<ref>{{cite web |title=Rental Cars Can Have Fleet Registration Plates Effective Jan. 1, 2020 |url=https://www.kslawenforcementinfo.com/uploads/3/4/3/3/34330059/dyk-dmv20201228.pdf |website=KsLawEnforcementInfo}}</ref> - present
+|Flat black serial on standard passenger base, using a more condensed font. "PERMANENT" at top right.
+|R012345
+|All rentals seen with "SN" for Shawnee County.
+|-
+|[[File:Kansas License Plate Highway Patrol Embossed 2000 - Photo Credits to Jason Smith.jpg|150x150px]]
+| rowspan="2" |State Trooper/
+Kansas Highway Patrol
+|1983 - 1999
+|Embossed blue serial on white plate with Kansas Highway Patrol badge at left; "KANSAS" and "HIGHWAY PATROL" in blue at top and bottom, respectively
+|12345
+|Two plates are issued to State Trooper vehicles by the Kansas Highway Patrol for the front and rear. Each State Trooper is assigned a number and carries that same number through each plate design change.
+|-
+|[[File:Kansas State Trooper License Plate 2016.jpg|150x150px]]
+|December 2016 – Present
+|Embossed white serial on blue plate with Kansas Highway Patrol badge at left, "STATE TROOPER" and "Serving Kansas since 1937" in gold at top and bottom, respectively.
+|123
+|The Kansas Highway Patrol replated their entire fleet in late 2016 with these blue and gold plates in preparation for their 80th anniversary in 2017.
+|}
+
+==Motorcycle plates==
+{|class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Kansas License Plate 1975 Motorcycle - Photo Credits to Kyle Eilts.jpg|150x150px]]
+| rowspan="10" |[[Motorcycle]]
+|1975 - 1980
+|Embossed white serial on green plate with embossed white state-shaped border and "KANSAS 75" at top.
+| rowspan="3" |{{small|''A''/''B''}}-1234
+| rowspan="4" |Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:Kansas License Plate 1980 Motorcycle - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1980 - 1981
+|Embossed white serial on blue plate with "KANSAS 75" and "CYCLE" at top and right, respectively.
+|Similar to the 1980 passenger base, these plates were discontinued due to legibility issues in late 1981
+|-
+|[[File:Kansas License Plate 1982 Motorcycle Type 1 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+| rowspan="2" |1982 - 1988
+|Embossed blue serial on reflective white plate with "KANSAS" and "CYCLE" at top and right, respectively.
+|Despite the debossed "80" in the lower left, these plates were not issued until 1982.
+|-
+|[[File:Kansas License Plate 1982 Motorcycle Type 2 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|Embossed blue serial on reflective white plate with "KANSAS" and "CYCLE" at top and right, respectively.
+|{{small|''A''/''B''}} 1234
+|The debossed "80" and hyphen did not appear on every plate, it depended on the county it was issued to.
+|-
+|[[File:Kansas License Plate Motorcycle 1989 - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1988 - 1994
+|Embossed dark blue serial on white plate with "KANSAS" and "CYCLE" at top and bottom, respectively
+| rowspan="3" |ABC12
+|AAA00 to approximately CNA99
+|
+|-
+|[[File:Kansas License Plate 1994 Motorcycle - Photo Credits to Kyle Eilts.jpg|150x150px]]
+|1994 - 2001
+|Embossed blue serial on white plate with "KANSAS" and "CYCLE" at top and bottom, respectively
+|CWY00 to approximately EAR99;<br>LBK00 to approximately MBP99
+|
+|-
+| [[File:Blank License Plate Shape.svg|150x150px]]
+|2001 - 2007
+|Same as State Capitol passenger base with "CYCLE" screened at bottom
+|OAA00 to approximately QPD99
+|
+|-
+|[[File:Kansas Motorcycle License Plate 2007-2018.jpg|150x150px]]
+|2007 - 2018
+|Same as 2007 state seal passenger base with "CYCLE" screened at bottom
+| rowspan="2" |12ABC
+|00AAA to 99DZZ
+|
+|-
+|[[File:Kansas Motorcycle License Plate 44FSX for 2018-2023.png|150px]]
+|2018 - 2023
+|Same as 2018 state seal passenger base with "CYCLE" screened at bottom
+|00EAA to 99FZZ
+|Serial and county code became screened in August 2018.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2023–present
+|Same as above, but with different serial format
+|AB1CD
+|Starting at AA0AA {{small|(as of September 5, 2023)}}
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/ks.html Kansas license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613223706/https://www.15q.net/ks.html |date=June 13, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Kansas}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Kansas}}
+[[Category:Transportation in Kansas]]
+[[Category:Vehicle registration plates of the United States by state or territory|Kansas]]
+[[Category:Kansas transportation-related lists|Vehicle registration]]

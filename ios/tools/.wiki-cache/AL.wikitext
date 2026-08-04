@@ -1,0 +1,1623 @@
+{{short description|Alabama vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =
+| slogan_label = Slogan
+| slogan = Heart of Dixie
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ''1''A2345B<br>''1''A23BCD<br>''1''A23B4C<br>''10''A123B<br>''10''A12B3<br>''10''A1B23<br>''10''A1BC2<br>''10''A2BCD
+<br>''10''ABCDE<br />(county-coded)
+| current_start_date = {{Start date|2022|01|03}}
+| issuer = Alabama Department of Revenue
+| start_date = {{Start date|1911|10|01}}
+}}
+
+The U.S. state of [[Alabama]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1911.
+
+{{As of|2021}}, plates are issued by the Alabama Department of Revenue. Only rear plates have been required on standard passenger vehicles since 1963.
+
+==History==
+Some Alabama municipalities issued their own license plates for [[horse-drawn vehicle]]s as well as automobiles prior to 1911. The earliest known plate is a bronze plate, "No. 1", issued by the city of [[Bessemer, Alabama|Bessemer]] on a two-horse wagon in 1901, while the earliest known plate for an automobile is a 1906 dash plate<ref name=Plates>Harris, Len (June 2007) "Heart of Plates: Alabama". ''Plates''. The Magazine of ALPCA. Vol. 53, No. 3</ref> issued by the city of [[Birmingham, Alabama|Birmingham]], originally assigned to a 1904 6-cylinder Ford.<ref name=Plates/> Between 1909 and 1911, Birmingham and [[Mobile, Alabama|Mobile]] issued annual plates made of porcelain-coated steel, while [[Montgomery, Alabama|Montgomery]], the state capital, issued a similar plate only in 1909. [[Dothan, Alabama|Dothan]] also issued a porcelain plate in 1911.<ref>{{cite web |last=Taylor |first=Eric Robert |title=Alabama Archive |url=http://porcelainplates.net/alabama_archive.html |publisher=PorcelainPlates.net |access-date=July 27, 2017}}</ref>
+
+The state first issued annual license plates on October 1, 1911, with plate #1 being issued to the Leak Funeral Home in Montgomery.<ref name="Plates"/> Until 1980, the license year was October 1 to September 30. Porcelain plates were originally used, before the state switched to embossed metal plates in 1915. The 1916–17 plate was the first to feature the year of expiration, while the 1921–22 plate was the first to use a [[horsepower]] class system, with each class denoted by a letter.<ref name="allaboutlicenseplatesAL">{{cite web |last=Tanner |first=Eric N. |title=Alabama Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Alabama&code=al |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref> [[Kilby Correctional Facility|Kilby Prison]] near Montgomery took charge of all plate manufacture in 1928.<ref name=Plates />
+
+In 1933, the horsepower classes were replaced by weight classes, using the same letter system; these lasted until 1952.<ref>"[http://www.birminghamrewound.com/features/CarTags%20%2807-52%29.jpg A preview of 1953 state tag]" (July 1952) ''Birmingham News'' via Birmingham Rewound</ref> County coding was introduced in 1941.
+
+A 1951 law added a heart shape and the phrase "Heart of Dixie" to the state's license plates (beginning with the 1954–55 plate), adopting a slogan created by the Alabama Chamber of Commerce. The heart motif and slogan remain in use on all standard-issue plates today.<ref name=Plates />
+
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Alabama license plate that complied with these standards.
+
+Since 1980, Alabama has used a staggered registration system based on the first letter of the registrant's last name. Registrations expire January through November, with fleet, leased, and commercial vehicles expiring in November.<ref name=Plates /><ref>{{Cite web |url=http://www.ador.state.al.us/motorvehicle/registration_faq.html |title=Motor Vehicle Division - Registration FAQs |access-date=2008-04-27 |archive-date=2012-08-30 |archive-url=https://web.archive.org/web/20120830073901/http://www.ador.state.al.us/motorvehicle/registration_faq.html |url-status=dead }}</ref>
+
+== Passenger baseplates ==
+=== 1911 to 1976 ===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1912 AL passenger plate.jpg|150px]]
+|1911–12
+|White serial on blue porcelain plate; vertical "ALA" at left
+|''none''
+|1234
+|1 to approximately 4000
+|
+|-
+|[[File:1913 AL passenger plate.jpg|150px]]
+|{{nowrap|1912–13}}
+|Black serial on orange porcelain plate; vertical "ALA" at left
+|''none''
+|1234
+|1 to approximately 4800
+|
+|-
+|[[File:1914 AL passenger plate.jpg|150px]]
+|1913–14
+|Black serial on white porcelain plate; vertical "ALA" at left
+|''none''
+|1234
+|1 to approximately 8300
+|
+|-
+|[[File:1915 AL passenger plate.jpg|150px]]
+|1914–15
+|White serial on green porcelain plate; vertical "ALA" at left
+|''none''
+|12345
+|1 to approximately 12100
+|
+|-
+|[[File:1916 Alabama passenger license plate - restored.jpg|150px]]
+|1915–16
+|Embossed black serial on yellow plate; vertical "ALA" at left
+|''none''
+|12345
+|1 to 10000;<br />15001 to approximately 24100
+|First embossed plate.
+|-
+|[[File:1917 Alabama passenger license plate - restored.jpg|150px]]
+|1916–17
+|Embossed red serial on white plate; vertical "ALA" and "1917" at left and right respectively
+|''none''
+|12345
+|1 to 25000;<br />35001 to approximately 36600
+|First dated plate.
+|-
+|[[File:1918 AL passenger plate - restored.jpg|150px]]
+|1917–18
+|Embossed blue serial on gray plate; vertical "1918" and "ALA" at left and right respectively
+|''none''
+|12345
+|1 to approximately 30200
+|
+|-
+|[[File:1919 AL passenger plate - restored.jpg|150px]]
+|1918–19
+|Embossed white serial on dark green plate with border line; vertical "ALA" and "19" at left and right respectively
+|''none''
+|12345
+|00001 to approximately 49500
+|
+|-
+|[[File:1920 AL passenger plate - restored.jpg|150px]]
+|1919–20
+|Embossed black serial on white plate with border line; vertical "20" and "ALA" at left and right respectively
+|''none''
+|12345
+|00001 to approximately 64700
+|
+|-
+|[[File:1921 AL passenger plate - restored.jpg|150px]]
+|1920–21
+|Embossed red serial on white plate with border line; vertical "21" and "ALA" at left and right respectively
+|''none''
+|12345
+|00001 to approximately 69600
+|
+|-
+|[[File:1922 Alabama passenger license plate.jpg|150px]]
+|1921–22
+|Embossed black serial on yellow plate with border line; vertical "ALA" and "22" at right; "PRIVATE" centered at bottom
+|''none''
+|''A''-12345
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1923 Alabama passenger license plate - restored.jpg|150px]]
+|1922–23
+|Embossed white serial on dark blue plate with border line; "23" and vertical "ALA" at right; "PRIVATE" centered at bottom
+|''none''
+|''A''-12345
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1924 Alabama passenger license plate - restored.jpg|150px]]
+|1923–24
+|Embossed brown serial on cream plate with border line; "ALA. PRIVATE 1924" at bottom
+|''none''
+|{{nowrap|''A''-123-456}}
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1925 Alabama passenger license plate - restored.jpg|150px]]
+|1924–25
+|Embossed white serial on red plate with border line; "1925 PRIVATE ALA." at bottom
+|''none''
+|''A''-123-456
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1926 Alabama passenger license plate - restored.jpg|150px]]
+|1925–26
+|Embossed white serial on green plate with border line; "1926 PRIVATE ALA." at bottom
+|''none''
+|''A''-123-456
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:Alabama 1927 passenger license plate - restored.jpg|150px]]
+|1926–27
+|Embossed white serial on black plate with border line; "ALABAMA 1927" at bottom
+|''none''
+|''A''-123-456
+|Coded by horsepower class (''A'')
+|First use of the full state name.
+|-
+|[[File:1928 AL passenger plate - restored.jpg|150px]]
+|1927–28
+|Embossed black serial on yellow plate with border line; "ALABAMA" at bottom, offset to left; "28" at bottom right
+|''none''
+|123-456''A''
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1929 AL passenger plate - restored.jpg|150px]]
+|1928–29
+|Embossed yellow serial on black plate with border line; "ALABAMA" at bottom, offset to left; "29" at bottom right
+|''none''
+|123-456''A''
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1930 AL passenger plate - restored.jpg|150px]]
+|1929–30
+|Embossed white serial on red plate with border line; "ALABAMA" at top, offset to left; "30" at top right
+|''none''
+|123-456''A''
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1931 AL passenger plate - restored.jpg|150px]]
+|1930–31
+|Embossed yellow serial on green plate with border line; "ALABAMA" at top, offset to right; "31" at top left
+|''none''
+|''A''123-456
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1932 AL passenger plate - restored.jpg|150px]]
+|1931–32
+|Embossed black serial on white plate with border line; "ALABAMA" at top, offset to left; "32" at top right
+|''none''
+|123-456''A''
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1933 AL passenger plate - restored.jpg|150px]]
+|1932–33
+|Embossed white serial on light blue plate with border line; "ALABAMA" at bottom, offset to left; "33" at bottom right
+|''none''
+|123-456''A''
+|Coded by horsepower class (''A'')
+|
+|-
+|[[File:1934 Alabama passenger license plate.jpg|150px]]
+|1933–34
+|Embossed black serial on orange plate with border line; "ALABAMA" at top, offset to left; "34" at top right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1935 Alabama passenger license plate - restored.jpg|150px]]
+|1934–35
+|Embossed white serial on green plate with border line; "ALABAMA" at bottom, offset to left; "35" at bottom right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1936 Alabama passenger license plate - restored.jpg|150px]]
+|1935–36
+|Embossed red serial on white plate with border line; "ALABAMA" at top, offset to left; "36" at top right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1937 Alabama passenger license plate - front restored.jpg|150px]]<br />[[File:1937 Alabama passenger license plate - rear restored.jpg|150px]]
+|1936–37
+|Embossed blue serial on white plate with border line; "ALA. FRONT" (on front plates) or "ALABAMA" (on rear plates) at bottom, offset to left; "37" at bottom right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|Separate front and rear plates.
+|-
+|[[File:1938 AL passenger plate.jpg|150px]]
+|1937–38
+|Embossed red serial on dark blue plate with border line; "ALABAMA" at top, offset to left; "38" at top right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1939 Alabama passenger license plate.jpg|150px]]
+|1938–39
+|Embossed black serial on silver plate with border line; "ALABAMA" at bottom, offset to right; "39" at bottom left
+|''none''
+|''A''123-456
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1940 Alabama passenger license plate.jpg|150px]]
+|1939–40
+|Embossed yellow serial on black plate with border line; "ALA." at top, offset to left; "40" at top right
+|''none''
+|123-456''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1941 Alabama passenger license plate.jpg|150px]]
+|1940–41
+|Embossed black serial on yellow plate with border line; "ALA. 1941" centered at top
+|''none''
+|''A'' 123–456
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1942 AL passenger plate.jpg|150px]]
+|1941–43
+|Embossed yellow serial on black plate; "ALABAMA 1942" centered at bottom
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|First use of county codes. Revalidated through September 30, 1943, with windshield stickers, due to metal conservation for [[World War II]].<ref>{{Cite web |url=http://www.worldlicenceplates.com/jpglps/USA_AL_GI4_1940%27s.jpg |title=License Plates of the World - Alabama 1940s |access-date=June 28, 2009 |archive-date=November 30, 2010 |archive-url=https://web.archive.org/web/20101130112456/http://worldlicenceplates.com/jpglps/USA_AL_GI4_1940%27s.jpg |url-status=dead }}</ref>
+|-
+|[[File:1944 Alabama passenger license plate.jpg|150px]]
+|1943–44
+|Embossed black serial on yellow plate; "ALABAMA 1944" centered at top
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1945 Alabama passenger license plate.jpg|150px]]
+|1944–45
+|Embossed yellow serial on black plate; "ALABAMA 1945" centered at bottom
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1946 Alabama passenger license plate.jpg|150px]]
+|1945–46
+|Embossed white serial on black plate; "ALABAMA 1946" centered at top
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1947 Alabama passenger license plate.jpg|150px]]
+|1946–47
+|Embossed black serial on silver plate; "ALABAMA 1947" centered at bottom
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1948 Alabama passenger license plate.jpg|150px]]
+|1947–48
+|Embossed golden yellow serial on black plate; "ALABAMA 1948" centered at top
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1949 AL passenger plate.jpg|150px]]
+|1948–49
+|Embossed black serial on golden yellow plate with border line; "ALA. 49" centered at bottom
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1950 Alabama passenger license plate.jpg|150px]]
+|1949–50
+|Embossed yellow serial on black plate with border line; "ALA. 50" centered at top
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1951 Alabama passenger license plate.jpg|150px]]
+|1950–51
+|Embossed black serial on yellow plate with border line; "ALA. 51" centered at bottom
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1952 Alabama passenger license plate.jpg|150px]]
+|1951–52
+|Embossed white serial on blue plate with border line; "ALA. 52" centered at top
+|''none''
+|''1''{{small|''A''}}12·345<br />''10''{{small|''A''}}1·234
+|Coded by county of issuance (''1'' or ''10'') and weight class (''A'')
+|
+|-
+|[[File:1953 Alabama passenger license plate.jpg|150px]]
+|1952–53
+|Embossed blue serial on white plate with border line; "ALA. 53" centered at bottom
+|''none''
+|''1''-123·456<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1954 AL passenger plate.jpg|150px]]
+|1953–54
+|Embossed white serial on blue plate with border line; "ALA. 54" centered at bottom
+|''none''
+|''1''-123·456<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1955 Alabama passenger license plate.jpg|150px]]
+|1954–55
+|Embossed white serial on green plate with border line; heart shape around county code at left; "ALABAMA" centered at bottom; "55" at bottom right
+|"HEART OF&nbsp;DIXIE" centered at top
+|''1'' 12·345<br />'''''1'''''A 12·345<br />''10'' 12·345
+|Coded by county of issuance (''1'' or ''10'')
+|First use of the "Heart of Dixie" slogan. One-letter serial format used in [[Jefferson County, Alabama|Jefferson County]] after 1&nbsp;99·999 was reached; this occurred on each subsequent plate until 1976, with [[Mobile County, Alabama|Mobile County]] following suit from 1960.
+|-
+|[[File:1956 Alabama passenger license plate.jpg|150px]]
+|1955–56
+|Embossed black serial on golden yellow plate with border line; heart shape, "ALABAMA" and "56" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12·345<br />{{nowrap|'''''1'''''A-12·345}}<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|First 6" x 12" plate.
+|-
+|[[File:1957 Alabama passenger license plate.jpg|150px]]
+|1956–57
+|Embossed golden yellow serial on black plate with border line; heart shape, "ALABAMA" and "57" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12·345<br />'''''1'''''A-12·345<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1958 Alabama passenger license plate.jpg|150px]]
+|1957–58
+|Embossed white serial on blue plate with border line; heart shape, "ALABAMA" and "58" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12·345<br />'''''1'''''A-12·345<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1959 AL passenger plate.jpg|150px]]
+|1958–59
+|Embossed blue serial on white plate with border line; heart shape, "ALABAMA" and "59" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12·345<br />'''''1'''''A-12·345<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1960 AL passenger plate.jpg|150px]]
+|1959–60
+|Embossed white serial on blue plate with border line; heart shape, "ALABAMA" and "60" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12·345<br />'''''1'''''A-12·345<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1961 Alabama passenger license plate.jpg|150px]]
+|1960–61
+|Embossed white serial on black plate with border line; heart shape, "ALABAMA" and "61" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12·345<br />''1''A-12·345<br />''10''-12·345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1962 Alabama passenger license plate.jpg|150px]]
+|1961–62
+|Embossed white serial on green plate with border line; heart shape, "ALABAMA" and "62" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1963 AL passenger plate.jpg|150px]]
+|1962–63
+|Embossed reflective white serial on dark blue plate with border line; heart shape, "ALABAMA" and "63" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1964 AL passenger plate.jpg|150px]]
+|1963–64
+|Embossed reflective white serial on red plate with border line; heart shape, "ALABAMA" and "64" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|Issued in the colors of the [[Alabama Crimson Tide|University of Alabama]].
+|-
+|[[File:1965 Alabama passenger plate.jpg|150px]]
+|1964–65
+|Embossed reflective orange serial on blue plate with border line; heart shape, "ALABAMA" and "65" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|Issued in the colors of [[Auburn Tigers|Auburn University]].
+|-
+|[[File:1966 AL passenger plate.jpg|150px]]
+|1965–66
+|Embossed reflective white serial on black plate with border line; heart shape, "ALABAMA" and "66" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1967 AL passenger plate.jpg|150px]]
+|1966–67
+|Embossed reflective yellow serial on blue plate with border line; heart shape, "ALABAMA" and "67" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1968 AL passenger plate.jpg|150px]]
+|1967–68
+|Embossed reflective white serial on red plate with border line; heart shape, "ALABAMA" and "68" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1969 AL passenger plate.jpg|150px]]
+|1968–69
+|Embossed green serial on reflective white plate with border line; heart shape, "ALABAMA" and "69" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1970 Alabama passenger license plate.jpg|150px]]
+|1969–70
+|Embossed blue serial on reflective white plate with border line; heart shape, "ALABAMA" and "70" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1971 AL passenger plate.jpg|150px]]
+|1970–71
+|Embossed black serial on reflective yellow plate with border line; heart shape, "ALABAMA" and "71" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1972 AL passenger plate.jpg|150px]]
+|1971–72
+|Embossed black serial on reflective mint green plate with border line; heart shape, "ALABAMA" and "72" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1973 AL passenger plate.jpg|150px]]
+|1972–73
+|Embossed red serial on reflective white plate with border line; heart shape, "ALABAMA" and "73" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1974 Alabama passenger license plate.jpg|150px]]
+|1973–74
+|Embossed black serial on reflective white plate with border line; "74", "ALABAMA" and heart shape at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Alabama 1975 passenger plate.jpg|150px]]
+|1974–75
+|Embossed black serial on reflective yellow plate with border line; heart shape, "ALABAMA" and "75" at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1976 AL passenger plate.jpg|150px]]
+|1975–76
+|Embossed blue serial on reflective white plate with border line; "76", "ALABAMA" and heart shape at bottom
+|"HEART OF DIXIE" centered at top
+|''1''-12345<br />''1''A-12345<br />''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|}
+
+=== 1976 to present ===
+{|class="wikitable"
+|-
+!Image
+!style="width:75px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Alabama 1977 license plate.jpg|150px]]<br />[[File:Alabama license plate, 1976–1981 with 1978 sticker.png|150px]]
+|October 1976&nbsp;– December 1981
+|Embossed blue serial on reflective white plate; red [[Alabama State Capitol]] graphic screened in the center; [[Flag of Alabama|state flag]], blue rectangle and [[United States Bicentennial|U.S. Bicentennial]] logo screened at bottom; "ALABAMA" screened in blue centered at top
+|"HEART OF DIXIE" in white within red heart screened at top left
+|ABC 123
+|AAA 001 to approximately HDZ&nbsp;999
+|Early plates carried the county of issuance on a sticker over the blue rectangle. Later plates used taller serial [[Die (manufacturing)|die]]s. Letters I and Q not used in serials.<ref name="allaboutlicenseplatesAL"/>
+|-
+|[[File:1982 AL passenger plate.jpg|150px]]
+|January 1982&nbsp;– December 1986
+|Embossed red serial on reflective white plate; "Alabama" screened in dark blue centered at top
+|"HEART OF DIXIE" in white within dark blue heart screened at top left
+|''1''A 12345<br />''10''A 1234<br />'''''47''''' 12345
+|Coded by county of issuance (''1'' or ''10'')
+|All-numeric serials issued in [[Madison County, Alabama|Madison County]] after 47Z&nbsp;9999 was reached.
+|-
+|[[File:1988 AL passenger plate.jpg|150px]]
+|January 1987&nbsp;– December 1991
+|Embossed blue serial on reflective white plate; two red hearts screened at top left and top right, connected by two red lines; "Alabama" screened in red centered at bottom
+|"HEART OF DIXIE" screened in red centered at top, between red lines
+|''1''AB&nbsp;1234<br />''10''AB 123
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1993 AL passenger plate.jpg|150px]]
+|January 1992&nbsp;– December 1996
+|Embossed blue serial on reflective white plate; "ALABAMA" screened in blue centered at top, with blue line on either side
+|"Heart of Dixie" screened in red centered between state name and serial, with heart outline around the "of"
+|''1''ABC123<br />''10''ABC12
+|Coded by county of issuance (''1'' or ''10'')
+|Letters E, I, O, Q, U and X not used in serials; this practice continued until 2022.<ref name="allaboutlicenseplatesAL"/>
+|-
+|[[File:AL 1997.jpg|150px]]
+|January 1997&nbsp;– December 2001
+|Embossed black serial on reflective white plate; pale blue fade with stars at top and pale red fade at bottom; "Alabama" screened in red at bottom
+|"Heart of Dixie" screened in blue centered at top; with red heart behind the "of"
+|''1''AB1234<br />''10''AB123<br />'''''47'''''ABC12<br />'''''47'''''A1B23
+|Coded by county of issuance (''1'' or ''10'')
+|Three-letter and letter-number-letter serial formats used in Madison County after 47ZZ999 was reached.
+|-
+|
+|January 2002<ref name="October 8, 2008">{{cite news|last=Lowry |first=Bob |title='Stars' fall from car tags for 'Sweet Home' at beach |newspaper=[[The Huntsville Times]] |date=October 8, 2008}}</ref>&nbsp;– December 31, 2008
+|Embossed red serial on reflective white plate; blue bar with white falling stars and musical notes screened at top; "Alabama" screened in red centered at bottom
+|rowspan="2"|"[[Stars Fell on Alabama|Stars Fell On]]" screened in white centered on blue bar; "HEART OF DIXIE" in white within red heart screened above and to right of state name
+|rowspan="2"|''1''A1234B<br />''10''A123B<br />'''''47'''''A1B2C
+|rowspan="2"|Coded by county of issuance (''1'' or ''10'')
+|rowspan="2"|Alternating letter-number serial format used in Madison County after 47Z999Z was reached. Plates with screened serials issued in counties that had exhausted their supplies of embossed plates.
+|-
+| 
+|June&nbsp;– December 31, 2008
+|As above, but with serial screened rather than embossed
+|-
+|
+|January 2, 2009<ref name="October 8, 2008"/>&nbsp;– December 31, 2013
+|Black screened digits with Alabama [[Gulf Coast of the United States|Gulf Coast]] graphic;<ref>[http://www.governorpress.alabama.gov/pr/pr-2008-10-07-01-new_tags_photo.asp State of Alabama - Office of Governor Bob Riley - Press Release: State’s New License Plates Feature Beach Scene and ‘Sweet Home Alabama’] {{webarchive|url=https://web.archive.org/web/20081119154727/http://www.governorpress.alabama.gov/pr/pr-2008-10-07-01-new_tags_photo.asp |date=2008-11-19 }}</ref> blue cursive "Alabama" centered at bottom
+|"[[Sweet Home Alabama|Sweet Home]]" in blue centered at top; "HEART OF DIXIE" in blue within blue heart outline to right of "Sweet Home"
+|''1''A12B34<br />''10''A12B3
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|
+|January 2, 2014&nbsp;– January 2, 2022
+|Black screened serial with lake and forest graphic
+|"HEART OF DIXIE" in white within white heart outline at bottom right
+|''1''AB1234<br />''10''AB123<br />''10''A1B23
+|Coded by county of issuance (''1'' or ''10'')
+|Letter-number-letter serial format used in Madison and [[Shelby County, Alabama|Shelby]] Counties after 47ZZ999 and 58ZZ999, respectively, were reached.
+|-
+| 
+|January 3, 2022&nbsp;– present
+|Black screened serial with sunrise beach graphic; "ALABAMA" centered at top in blue; "www.alabama.travel" centered at bottom in white
+|"HEART OF DIXIE" in white within white heart outline at bottom right
+|''1''A2345B<br>''1''A23BCD<br>''10''A123B<br>''10''A12B3<br>''10''A1B23<br>''10''A1BC2<br>''10''A2BCD <br>''10''ABCDE
+|Coded by county of issuance (''1'' or ''10'')
+|While the official start of this base was January 2022, some appeared as early as October 2021.<ref name="allaboutlicenseplatesAL"/><br><br>The last 4-5 characters can be numbers or letters. Each progresses 0 to 9, then A to Y, from right to left.<br><br>Letters I, O, Q not used. Additionally, the letters F, G, J, K, L, S, V and Z have '''only''' been observed in the ''10''A123B format.
+|}
+
+== Non-passenger and specialty plates ==
+Alabama offers a variety of optional plates that motorists may display upon the payment of an additional fee as well as non-passenger plate types that are displayed on vehicles for specialized uses.<ref>[https://web.archive.org/web/20050531003059/http://www.revenue.alabama.gov/motorvehicle/index.html Alabama Department of Revenue Motor Vehicle Division].</ref>
+
+=== Non-passenger types ===
+Many non-passenger types are both county-coded and weight-coded. Where noted, the county code is the first one or two regularly sized number of the serial, while the weight code is a small number beneath the letter that indicates the vehicle type.
+
+{|class="wikitable sortable"
+|-
+!Image
+!Type
+!First issued (in design shown)
+!Serial format
+!Notes
+|-
+|[[File:AL0K-012345.png|150px]]
+|[[Ambulance]]/[[Hearse]]
+| October 1, 2022
+|''0''{{small|'''K'''/''0''}} 12345<br />''00''{{small|'''K'''/''0''}} 1234
+|Annual plates. "Ambulance" legend.
+|-
+|[[File:AL1234567.png|150px]]
+|[[International Registration Plan|Apportioned]]
+|January 2012
+|1234567
+|Annual plates. "Apportioned" legend.
+|-
+|[[File:Alabaman bus license plate, 0Q-012345.png|150px]]
+|[[Bus]]
+|October 2013
+|''0''{{small|'''Q'''/''0''}} 12345<br />''00''{{small|'''Q'''/''0''}} 1234
+|Annual plates. "Bus" legend.
+|-
+|[[File:ALCNSL12.png|150px]]
+|[[Consul (representative)|Consular Official]]
+|October 1, 2022
+|'''CNSL'''12
+|Annual plates. "Consular Official" legend.
+|-
+|[[File:ALCM12345.png|150px]]
+|[[Cotton]] Module
+|October 2013
+|'''CM'''12345
+|Annual plates. "Cotton Module" legend.
+|-
+|[[File:ALCM123.png|150px]]
+|[[County Government]] - [[Motorcycle]]
+|Unknown
+|'''CM''' 123
+|Permanent plates.
+|-
+|[[File:AL12345CO.png|150px]]
+|County Government - Passenger
+|Unknown
+|12345 '''CO'''
+|"County" legend. Permanent plates.
+|-
+|[[File:ALD12CO.png|150px]]
+|County Government - Passenger - Disabled
+|Unknown
+|'''D'''12 '''CO'''
+|"County" legend. Permanent plates.
+|-
+|[[File:AL1234.png|150px]]
+|[[Car dealership|Dealer]] - Motorcycle
+|Unknown
+|1234
+|Annual plates. "Dealer" legend.
+|-
+|[[File:AL12345.png|150px]]
+|Dealer - Passenger
+|Unknown
+|12345
+|Annual plates. "Dealer" legend.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer Transit - Motorcycle
+|
+|12345
+|Annual plates. "Dealer" legend.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer Transit - Passenger
+|
+|12345
+|Annual plates. "Dealer" legend.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Person - Motorcycle
+|
+|12'''G'''34
+|
+|-
+|[[File:1998 Alabama license plate Disabled.jpg|150px]]
+|Disabled Person - Passenger
+|
+|123 AB<br />1A2B3
+|
+|-
+|[[File:AL0F-012345.png|150px]]
+|Farm [[Truck]] or Farm Truck Tractor
+|Unknown
+|''0''{{small|'''F'''/''0''}} 12345<br />''00''{{small|'''F'''/''0''}} 1234
+|Annual plates. "Farm" legend.
+|-
+|[[File:XAlabama Fleet A0A0HR3.jpg|150x150px]]
+|Fleet
+|Unknown
+|
+|"Fleet" legend.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|For-Hire - Limited
+|
+|''0''{{small|'''X'''/'''L'''}} 12345<br />''00''{{small|'''X'''/'''L'''}} 1234
+|Annual plates.
+|-
+|[[File:AL0L-012345.png|150px]]
+|[[Forestry|Forest]] Truck
+|Unknown
+|''0''{{small|'''L'''/''0''}} 12345<br />''00''{{small|'''L'''/''0''}} 1234
+|Annual plates. "Forest" legend.
+|-
+|[[File:ALMA1234.png|150px]]
+|[[Automobile manufacturer|Manufacturer]]
+|Unknown
+|'''M'''A1234
+|Annual plates. "Manufacturer" legend.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|January 2014
+|123456'''M'''
+|
+|-
+|
+[[File:ALMM123.png|150px]]
+|[[Municipal Government]] - Motorcycle
+|
+|'''MM''' 123
+|Permanent plates.
+|-
+|[[File:Alabama 2005 municipal license plate.jpg|150px]]
+|Municipal Government - Passenger
+|
+|12345 '''MU'''
+|"Municipal" legend. Permanent plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal Government - Passenger - Disabled
+|
+|A12 '''MU'''
+|"Municipal" legend. Permanent plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal Government - Public Utility
+|
+|1234 '''PUD'''
+|"Municipal" legend. Permanent plates.
+|-
+|
+[[File:ALA123456.png|150px]]
+|Permanent [[Trailer (vehicle)|Trailer]]
+|
+|'''A'''123456
+|Permanent plates.
+|-
+|
+[[File:AL0R-12345.png|150px]]
+|[[Recreational vehicle|Motor Home]]
+|
+|''0''{{small|'''R'''/''0''}} 12345<br />''00''{{small|'''R'''/''0''}} 1234
+|Annual plates. Weight class as legend.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Rental Trailer
+|
+|''0''{{small|'''R'''/'''T'''}} 12345<br />''00''{{small|'''R'''/'''T'''}} 1234
+|Annual plates.
+|-
+|[[File:Alabaman taxi license plate.jpg|150px]]
+|[[Taxicab|Taxi]]
+|
+|''0''{{small|'''Z'''/''0''}} 12345<br />''00''{{small|'''Z'''/''0''}} 1234
+|Annual plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Semi Trailer
+|
+|''0'''''TR''' 1234<br />''00''{{small|'''T'''/'''R'''}} 1234
+|Annual plates. "Forest" legend.
+|-
+|<!-- Deleted image removed: [[File:StateDefenseAL.jpg|150px]] -->
+|[[Alabama State Defense Force|State Defense Force]]
+|
+|123'''SDF'''
+|
+|-
+|[[File:StateMotorAL.jpg|150px]]
+|[[State Government]] - Motorcycle
+|
+|'''S M'''12
+|Permanent plates.
+|-
+|[[File:AL state government plate.jpg|150px]]
+|State Government - Passenger
+|
+|'''S''' 1234A
+|Permanent plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Government - Passenger - Disabled
+|
+|'''S''' 12A
+|Permanent plates.
+|-
+|[[File:MotorPoolAL.jpg|150px]]
+|State Government - Passenger - State [[fleet vehicle|motor pool]]
+|
+|'''SMP''' 123
+|Permanent plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Truck or Truck Tractor - 8,001 to 10,000&nbsp;lb.
+|
+|''0''{{small|'''P'''/''0''}} 12345<br />''00''{{small|'''P'''/''0''}} 1234
+|
+|-
+|[[File:1996 Alabama license plate 11X9 130.jpg|150px]]
+|Truck or Truck Tractor - greater than 10,000&nbsp;lb.
+|
+|''0''{{small|'''X'''/''0''}} 12345<br />''00''{{small|'''X'''/''0''}} 1234
+|Annual plates.
+|-
+|[[File:GovtLoanAL.jpg|150px]]
+|[[U.S. Government]]-Loaned
+|
+|'''GL''' 1234
+|"US GOV'T LOANED" legend. Permanent plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Antique car|Vintage Vehicle]] - Motorcycle
+|
+|
+|
+|-
+|<!-- Deleted image removed: [[File:VintageAL.jpg|150px]] -->
+|Vintage Vehicle - Passenger
+|
+|'''V'''AB 123
+|
+|-
+|
+|[[Volunteer firefighter|Volunteer Fire Department]]
+|
+|'''VF'''1234
+|
+|}
+
+=== Specialty types===
+{| class="wikitable sortable"
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:LicensePlate Military ActiveReserve.jpg|150px]]
+|Active [[Reserve forces|Reserve]]
+|Redesigned 2009
+|12AB
+|
+|-
+|[[File:Alabama A&M University Plate.png|150x150px]]
+|[[Alabama A&M University]]
+|
+|
+|Available in personalized format.
+|-
+|<!-- Deleted image removed: [[File:AL-Cattlemen-2022-approved-passenger-768x376.jpg|150px]] -->
+|Alabama [[Cattle]]men's Association
+|
+|1A23B
+|Available in personalized format.
+|-
+|
+|Alabama Children's Trust Fund
+|
+|
+|Available in personalized format.
+|-
+| 
+|[[Alabama State University]]
+|
+|ABC123
+|Available in personalized format.
+|-
+|<!-- Deleted image removed: [[File:AL-Wildlife-Federation-2022-768x374.jpg|150px]] -->
+|Alabama Wildlife Federation
+|
+|1A23B
+|Available in personalized format.
+|-
+|[[File:200221 AmateurRadio2020 tag page.jpg|150px]]
+|[[Amateur Radio]]
+|
+|''various''
+|
+|-
+|<!-- Deleted image removed: [[File:ATHENS2019 CollPlate page.jpg|150px]] -->
+|[[Athens State University]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:Atomic-Veteran-768x391.jpg|150px]]
+|Atomic Nuked Veteran
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Atomic Nuked Veteran - Disabled
+|
+|A12B
+|
+|-
+|[[File:2001 Alabama license plate Auburn.jpg|150px]]
+|[[Auburn University]]
+|
+|12A3B
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Barber Vintage Motorsports Museum]] - Motorcycle
+|
+|
+|Available in personalized format.
+|-
+|[[File:Barber Vintage Motorsports Museum - Passenger Plate.png|150x150px]]
+|[[Barber Vintage Motorsports Museum]] - Passenger
+|
+|
+|Available in personalized format.
+|-
+|<!-- Deleted image removed: [[File:BirminghamSouthernCollege2019 CollPlate page.jpg|150px]] -->
+|[[Birmingham-Southern College]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:Breast Cancer Research Foundation of Alabama Plate.png|150x150px]]
+|Breast Cancer Research Foundation of Alabama
+|2009
+|
+|Available in personalized format.
+|-
+|[[File:ChooseLifeSupportAdoption2019 tag page.jpg|150px]]
+|[[Choose Life (organization)|Choose Life]]
+|
+|1A23B
+|
+|-
+|[[File:Curing-Childhood-Cancer-2021-front.jpg|150px]]
+|Curing Childhood Cancer
+|
+|12A3B
+|Available in personalized format.
+|-
+|[[File:Desert-Storm-Shield-768x382.jpg|150px]]
+|[[Operation Desert Shield (Gulf War)|Desert Shield]]/[[Desert Storm]] Veteran
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Desert Shield/Desert Storm Veteran - Disabled
+|
+|A12B
+|
+|-
+|[[File:AlabamaDVPlate.jpg|150x150px]]
+|Disabled Veteran
+|
+|'''V'''12345
+|Sticker with name of conflict placed between lower bolt holes.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Veteran - Disabled
+|
+|AB12
+|Sticker with name of conflict placed between lower bolt holes.
+|-
+|[[File:Ovarian-Cancer-Research-2022-768x377.jpg|150px]]
+|Drive Out [[Ovarian Cancer]]
+|2009
+|
+|Available in personalized format.
+|-
+|<!-- Deleted image removed: [[File:AL-Ducks-Unlimited-2022-768x370.jpg|150px]] -->
+|[[Ducks Unlimited]]
+|
+|ABC123
+|Available in personalized format.
+|-
+|[[File:Educator-2023-768x377.jpg|150px]]
+[[File:Reitred-Educator-2023-300x147.jpg|150px]]
+|Educator
+|Redesigned 2009
+|AB123
+|Available in personalized format.
+|-
+|<!-- Deleted image removed: [[File:FaulknerUniversity2019v2 CollPlate page.jpg|150px]] -->
+|[[Faulkner University]]
+|Redesigned 2009
+|
+|Available in personalized format.
+|-
+|
+|[[Agriculture|Farming]] Feeds Alabama
+|
+|ABC123
+|Available in personalized format.
+|-
+|[[File:Fight Breast Cancer Plate.png|150x150px]]
+|Fight Breast Cancer
+|2009
+|
+|Available in personalized format.
+|-
+|[[File:190802 Firefighter tag page.jpg|150px]]
+|Fire Fighter
+|
+|'''F'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Saturn V|First to the Moon and Beyond]]
+|
+|ABC123
+|Serials were initially embossed but were later surface-printed. Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Forests Forever
+|
+|ABC123
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Forever Wild
+|
+|1234'''FW'''
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Former Prisoner of War
+|
+|'''POW''' 1234
+|"God Bless America" legend
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Former Prisoner of War
+|
+|'''POW''' 1AB
+|"God Bless America" legend
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Fraternal Order of Police]]
+|
+|123'''F'''A<br />12'''A'''B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Generic specialty plate: [[National Association of Realtors|Alabama Association of Realtors]]; [[Civitan International]]; [[Delta Sigma Theta]]; [[Letter Carrier]]; [[NASCAR]]-themed; [[Organ donation|Organ Donor]]; Retired Educator; [[Square dancing|Square Dancer]]; Take a Kid Fishing
+|
+|12A3B<br />1A2B3
+|Decal promoting organization or cause applied to left of serial. Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Global [[War on Terrorism]] Veteran
+|
+|12A3B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Global War on Terrorism Veteran - Disabled
+|
+|
+|
+|-
+| 
+|God Bless America
+|2006{{Clear}}redesigned 2013
+|AB12345 and 12345AB{{Clear}}1234AB5
+|
+|-
+|
+|Helping Schools
+|
+|'''HS'''123A
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Helping [[Medical insurance|Uninsured]] Children
+|c. 2008
+|
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Huntingdon College]]
+|
+|1A23B
+|Available in personalized format.
+|-
+| 
+|[[Jacksonville State University]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Judson College (Alabama)|Judson College]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:Korean-War-Vet-768x382.jpg|150px]]
+|[[Korean War]] Veteran
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Korean War Veteran - Disabled
+|
+|A12B
+|
+|-
+|[[File:LIcensePlate Military MedalHonor-768x394.jpg|150px]]
+|[[Medal of Honor]]
+|
+|'''MOH''' 1
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Medal of Honor]] - Disabled
+|
+|1AB
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Miles College]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:National Guard Plate.png|150x150px]]
+|[[National Guard (United States)|National Guard]]
+|Redesigned 2008
+|12345 (until 2008)<br />{{small|'''N'''}}/{{small|'''G'''}} (2008—present)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|National Guard - Disabled
+|
+|1AB (until 2008)<br />''unknown'' (2008—present)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Wild Turkey Federation]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Oakwood College]]
+|
+|1A23B
+|Available in personalized format.
+|-
+|[[File:LIcensePlate Military PearlHarbor.jpg|150px]]
+|[[Pearl Harbor]] Survivor
+|
+|1A2
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Pearl Harbor Survivor - Disabled
+|
+|AB1
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Environmentalism|Protect Our Environment]]
+|
+|ABC123
+|Available in personalized format.
+|-
+|[[File:Alabaman Purple Heart Combat Wounded license plate.jpg|150px]]
+|[[Purple Heart]]
+|Redesigned c. 2009
+|'''PH'''12A
+|"Combat Wounded" legend
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Purple Heart—Disabled
+|Redesigned c. 2009
+|AB1
+|"Combat Wounded" legend
+|-
+|[[File:Rescue Squad Plate.png|150x150px]]
+|[[Rescue Squad]]
+|Redesigned 2009
+|'''RS''' 12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Samford University]]
+|Redesigned 2009
+|'''SU'''12A
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Save the [[Cahaba River|Cahaba]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Selma University]]
+|
+|1A23B
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Shriner]]s Hospitals for Children
+|
+|AB 12
+|
+|-
+|[[File:190802 SonsOfConfederateVeterans tag page.jpg|150px]]
+|[[Sons of Confederate Veterans]]
+|
+|AB123
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Spay and Neuter
+|2009
+|
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Spring Hill College]]
+|
+|'''SHC'''123
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Stillman College]]
+|
+|'''123''' SC
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support the Arts
+|
+|
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Talladega College]]
+|
+|12 '''TC'''<br />123 '''TC'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Tuskegee University]]
+|
+|'''T'''123'''U'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Troy University]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:University of Alabama Plate.png|150x150px]]
+|[[University of Alabama]]
+|Redesigned c. 2004, 2009
+|ABC123
+|Serials were initially embossed but were later surface-printed. Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Alabama Birmingham]]
+|
+|A1B23
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Alabama in Huntsville]]
+|
+|
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Mobile]]
+|
+|A1B23
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Montevallo]]
+|Redesigned c. 2008
+|A123B
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of North Alabama]]
+|Redesigned c. 2009
+|'''UNA'''123
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of South Alabama]]
+|Redesigned c. 2009
+|'''SA'''123
+|Available in personalized format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of West Alabama]]
+|Redesigned c. 2009
+|123'''WA'''
+|Available in personalized format.
+|-
+|[[File:AL passenger plate - Retired Military.jpg|150px]]
+|U.S. Armed Forces - Retired
+|
+|A1B23
+|Sticker with branch of service placed between lower bolt holes.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|U.S. Armed Forces - Retired - Disabled
+|
+|1234A
+|Sticker with branch of service placed between lower bolt holes.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Vanity plate|Vanity]]
+|
+|''various''
+|
+|-
+|[[File:LIcensePlate Military VietnamVet.jpg|150px]]
+|[[Vietnam Veteran]]
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Vietnam Veteran - Disabled
+|
+|A12B3
+|
+|-
+|[[File:LIcensePlate Military WWIIAmericanCampaign.jpg|150px]]
+|[[World War II]] Veteran - American Campaign
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[World War II]] Veteran - American Campaign - Disabled
+|
+|A12B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|World War II Veteran - Asiatic Campaign
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|World War II Veteran - Asiatic Campaign - Disabled
+|
+|A12B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|World War II Veteran - [[Battle of the Bulge]]
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|World War II Veteran - Battle of the Bulge - Disabled
+|
+|A12B
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|World War II Veteran - European Campaign
+|
+|A12B3
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|World War II Veteran - European Campaign
+|
+|A12B
+|
+|}
+
+== County coding ==
+Alabama established a numerical county-code system for its license plates in 1941, with codes 1, 2 and 3 assigned to the three most populous counties of the time ([[Jefferson County, Alabama|Jefferson]], [[Mobile County, Alabama|Mobile]] and [[Montgomery County, Alabama|Montgomery]]), and codes 4 through 67 assigned to the remaining counties in alphabetical order. The state had no plans to update this numbering system.<ref name="al-tag-nums">{{cite web |url=http://www.archives.alabama.gov/auto-tags.html |archive-url=https://web.archive.org/web/20090430071153/http://www.archives.alabama.gov/auto-tags.html |url-status=dead |archive-date=April 30, 2009 |title=Alabama Automobile Tags Numerical by County |year=2008 |department=Alabama Department of Archives and History |access-date=September 1, 2015}}</ref> Code 70 was added in 1948 for replacement plates, followed in 1966 by code 80 for supplemental plates in counties that had run out of standard plates.<ref name="allaboutlicenseplatesAL"/> The system remains in use today on passenger plates and some non-passenger types. Despite being 03 on registration plates, [[Montgomery County, Alabama|Montgomery County]] is no longer the third most populous county and ranks 7th in the state. The current second [[List of counties in Alabama|Most populous]] county as of 2024 is [[Madison County, Alabama|Madison County]] with the registration code of 47.
+
+{|class="wikitable sortable"
+|-
+!Code
+!County
+|-
+|1||[[Jefferson County, Alabama|Jefferson]]
+|-
+|2||[[Mobile County, Alabama|Mobile]]
+|-
+|3||[[Montgomery County, Alabama|Montgomery]]
+|-
+|4||[[Autauga County, Alabama|Autauga]]
+|-
+|5 || [[Baldwin County, Alabama|Baldwin]]
+|-
+|6 || [[Barbour County, Alabama|Barbour]]
+|-
+|7 || [[Bibb County, Alabama|Bibb]]
+|-
+|8 || [[Blount County, Alabama|Blount]]
+|-
+|9 || [[Bullock County, Alabama|Bullock]]
+|-
+|10 || [[Butler County, Alabama|Butler]]
+|-
+|11 || [[Calhoun County, Alabama|Calhoun]]
+|-
+|12 || [[Chambers County, Alabama|Chambers]]
+|-
+|13 || [[Cherokee County, Alabama|Cherokee]]
+|-
+|14 || [[Chilton County, Alabama|Chilton]]
+|-
+|15 || [[Choctaw County, Alabama|Choctaw]]
+|-
+|16 || [[Clarke County, Alabama|Clarke]]
+|-
+|17 || [[Clay County, Alabama|Clay]]
+|-
+|18 || [[Cleburne County, Alabama|Cleburne]]
+|-
+|19 || [[Coffee County, Alabama|Coffee]]
+|-
+|20 || [[Colbert County, Alabama|Colbert]]
+|-
+|21 || [[Conecuh County, Alabama|Conecuh]]
+|-
+|22 || [[Coosa County, Alabama|Coosa]]
+|-
+|23 || [[Covington County, Alabama|Covington]]
+|-
+|24 || [[Crenshaw County, Alabama|Crenshaw]]
+|-
+|25 || [[Cullman County, Alabama|Cullman]]
+|-
+|26 || [[Dale County, Alabama|Dale]]
+|-
+|27 || [[Dallas County, Alabama|Dallas]]
+|-
+|28 || [[DeKalb County, Alabama|DeKalb]]
+|-
+|29 || [[Elmore County, Alabama|Elmore]]
+|-
+|30 || [[Escambia County, Alabama|Escambia]]
+|-
+|31 || [[Etowah County, Alabama|Etowah]]
+|-
+|32 || [[Fayette County, Alabama|Fayette]]
+|-
+|33 || [[Franklin County, Alabama|Franklin]]
+|-
+|34 || [[Geneva County, Alabama|Geneva]]
+|-
+|35 || [[Greene County, Alabama|Greene]]
+|-
+|36 || [[Hale County, Alabama|Hale]]
+|-
+|37 || [[Henry County, Alabama|Henry]]
+|-
+|38 || [[Houston County, Alabama|Houston]]
+|-
+|39 || [[Jackson County, Alabama|Jackson]]
+|-
+|40 || [[Lamar County, Alabama|Lamar]]
+|-
+|41 || [[Lauderdale County, Alabama|Lauderdale]]
+|-
+|42 || [[Lawrence County, Alabama|Lawrence]]
+|-
+|43 || [[Lee County, Alabama|Lee]]
+|-
+|44 || [[Limestone County, Alabama|Limestone]]
+|-
+|45 || [[Lowndes County, Alabama|Lowndes]]
+|-
+|46 || [[Macon County, Alabama|Macon]]
+|-
+|47 || [[Madison County, Alabama|Madison]]
+|-
+|48 || [[Marengo County, Alabama|Marengo]]
+|-
+|49 || [[Marion County, Alabama|Marion]]
+|-
+|50 || [[Marshall County, Alabama|Marshall]]
+|-
+|51 || [[Monroe County, Alabama|Monroe]]
+|-
+|52 || [[Morgan County, Alabama|Morgan]]
+|-
+|53 || [[Perry County, Alabama|Perry]]
+|-
+|54 || [[Pickens County, Alabama|Pickens]]
+|-
+|55 || [[Pike County, Alabama|Pike]]
+|-
+|56 || [[Randolph County, Alabama|Randolph]]
+|-
+|57 || [[Russell County, Alabama|Russell]]
+|-
+|58 || [[Shelby County, Alabama|Shelby]]
+|-
+|59 || [[St. Clair County, Alabama|St. Clair]]
+|-
+|60 || [[Sumter County, Alabama|Sumter]]
+|-
+|61 || [[Talladega County, Alabama|Talladega]]
+|-
+|62 || [[Tallapoosa County, Alabama|Tallapoosa]]
+|-
+|63 || [[Tuscaloosa County, Alabama|Tuscaloosa]]
+|-
+|64 || [[Walker County, Alabama|Walker]]
+|-
+|65 || [[Washington County, Alabama|Washington]]
+|-
+|66 || [[Wilcox County, Alabama|Wilcox]]
+|-
+|67 || [[Winston County, Alabama|Winston]]
+|-
+|70 || Replacement
+|-
+|80 || Supplemental
+|}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://web.archive.org/web/20050531003059/http://www.revenue.alabama.gov/motorvehicle/index.html Alabama Department of Revenue Motor Vehicle Division]
+* [https://www.15q.net/al.html Alabama license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20201109120842/http://www.15q.net/al.html |date=November 9, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Alabama}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Alabama}}
+[[Category:Vehicle registration plates of the United States by state or territory|Alabama]]
+[[Category:Transportation in Alabama]]
+[[Category:Alabama transportation-related lists|Vehicle registration]]

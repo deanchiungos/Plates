@@ -1,0 +1,1337 @@
+{{short description|Massachusetts vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Massachusetts_2011_license_plate.png
+| nickname = 
+| slogan_label = Slogan
+| slogan = The Spirit of America
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = '''Current:'''<br />1ABC 2''3''<br />'''Former:'''<br />12''3'' ABC<br />123''4'' AB<br />12A B3''4''<br />123 AB''4''<br />1AB 23''4''<br />12A 34'''0'''<br />123 A4'''0'''<br />(Coded by month)
+| current_start_date = {{Start date|1987}} (vanity plates and some non-passenger types; used as standard passenger base from 1993 onwards)
+| designer = 
+| issuer = [[Massachusetts Department of Transportation]],<br> Registry of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1903|09|01}}, to Frederick Tudor
+}}
+[[Massachusetts]] was the first U.S. state to issue [[Vehicle registration plate|license plate]]s on September 1, 1903.<ref name="MassRMV">{{cite web|title=History of the Plate |url=http://www.massrmv.com/AboutUs/HistoryofthePlate.aspx |publisher=Massachusetts Registry of Motor Vehicles |archive-url=https://web.archive.org/web/20170104215635/http://www.massrmv.com/AboutUs/HistoryofthePlate.aspx |archive-date=January 4, 2017 |access-date=August 18, 2017}}</ref> Plates are currently issued by the [[Massachusetts Department of Transportation#Registry of Motor Vehicles Division|Massachusetts Registry of Motor Vehicles]] (RMV).
+
+All plates since 1978 are currently valid. Prior to 1993, only rear plates were required; since the first "Spirit of America" plate was issued in 1986, front and rear plates have been required since. As such, the 1978-1993 issues continue to only require the rear plate, while the "Spirit of America" issues since 1986 require front and rear plates.
+
+The very first Massachusetts license plate, "1", is still in use today.<ref>{{Cite web |title=Man About Canton: Mass. License Plates {{!}} Canton Citizen |url=https://www.thecantoncitizen.com/2016/03/24/man-about-canton-212/ |access-date=2025-12-17 |website=www.thecantoncitizen.com}}</ref> It was issued to Frederick Tudor, who also received the first license issued.<ref name=":1">{{Cite web |last=Executive Office of Transportation |date=September 25, 2009 |title=History of the Plate |url=https://archives.lib.state.ma.us/server/api/core/bitstreams/ceef6116-db4c-4fc7-8fa1-eb23bc9ffe73/content |access-date=December 17, 2025 |website=Massachusetts Registry of Motor Vehicles}}</ref> He got the plate due to his work for the Massachusetts Highway Commission and his connection as the nephew of the wealthy [[Henry Lee Higginson]], whose irritation with cars speeding by his estate led to him successfully petitioning for the state of Massachusetts to register all motor vehicles (previously, only the city of [[Boston]] had this requirement).<ref>{{Cite web |date=2018-09-26 |title=Just A Car Guy: The first license plate in the US was "1", issued in Massachusetts, to Frederick Tudor, in 1903. He got it because he was related to the right person, the fix was in. The plate is still held by someone in his family. |url=https://justacarguy.blogspot.com/2018/09/the-first-license-plate-in-us-was-1.html |access-date=2025-12-17 |website=Just A Car Guy}}</ref> This was the first license plate in the United States. His descendants have kept the plate registered and in use within the family.<ref>{{Cite web |last=GazelleGazelle |date=2021-12-10 |title=The First License Plate Ever Was Spotted on 195 East in Dartmouth |url=https://fun107.com/the-first-license-plate-ever-was-spotted-on-195-east-in-dartmouth/ |access-date=2025-12-17 |website=FUN 107 |language=en}}</ref>
+
+==Passenger baseplates==
+===1903 to 1966===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Massachusetts license plate that complied with these standards.
+{{Clear}}
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Massachusetts 1903 license plate 911.jpg|150px]]
+|{{nowrap|1903–07}}
+|White serial on blue porcelain plate; "MASS. AUTOMOBILE REGISTER" at top
+|12345
+|1 to 26207<ref name="MassRMV"/>
+|
+|-
+|[[File:Massachusetts_license_plate_1908.jpg|150px]]
+|1908
+|Blue serial on white porcelain plate; vertical "MASS" and "1908" at left and right respectively
+|12345
+|1 to approximately 17500
+|First dated plate.
+|-
+|[[File:Massachusetts license plate 1909.jpg|150px]]
+|1909
+|White serial on blue porcelain plate; vertical "MASS" and "1909" at left and right respectively
+|12345
+|1 to approximately 23500
+|
+|-
+|[[File:1910 Massachusetts License Plate.jpg|150px]]
+|1910
+|Blue serial on white porcelain plate; vertical "MASS" and "1910" at left and right respectively
+|12345
+|1 to approximately 29000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:darkblue;">12345</div>
+|1911
+|White serial on blue porcelain plate; vertical "MASS" and "1911" at left and right respectively
+|12345
+|1 to approximately 33000
+|
+|-
+|[[File:1912 Massachusetts License Plate.jpg|150px]]
+|1912
+|Blue serial on white porcelain plate; vertical "MASS" and "1912" at left and right respectively
+|12345
+|1 to approximately 41000
+|
+|-
+|[[File:Massachusetts Licence Plate 1913.jpg|150px]]
+|1913
+|White serial on blue porcelain plate; vertical "MASS" and "1913" at left and right respectively
+|12345
+|1 to approximately 54500
+|
+|-
+|[[File:1914 Massachusetts License Plate.jpg|150px]]
+|1914
+|Blue serial on white porcelain plate; vertical "MASS" and "1914" at left and right respectively
+|12345
+|1 to approximately 62000
+|
+|-
+|[[File:Massachusetts 1915 License Plate.jpg|150px]]
+|1915
+|White serial on blue porcelain plate; vertical "MASS" and "1915" at left and right respectively
+|12345
+|1 to approximately 79500
+|
+|-
+|[[File:1916 Massachusetts License Plate.jpg|150px]]
+|1916
+|Dark blue serial on cream flat metal plate; vertical "MASS" and "1916" at left and right respectively
+|123456
+|1 to approximately 102000
+|First plate to use tin instead of iron.<ref name=":1" />
+|-
+|[[File:1917 Massachusetts License Plate.jpg|150px]]
+|1917
+|Cream serial on dark blue flat metal plate; "MASS. 1917" centered at bottom
+|123,456
+|1 to approximately 127,000
+|
+|-
+|[[File:1918 Massachusetts License Plate.jpg|150px]]
+|1918
+|Dark blue serial on cream flat metal plate; "MASS. 1918" centered at bottom
+|123,456
+|1 to approximately 142,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:#FFFDD0; font-size:25pt; background:darkblue;">123,456</div>
+|1919
+|Cream serial on dark blue flat metal plate; "MASS. 1919" centered at bottom
+|123,456
+|1 to approximately 177,000
+|Last plate to use tin.<ref name=":1" />
+|-
+|[[File:Massachusetts license plate 1920, number 198603.jpg|150px]]
+|1920
+|Embossed dark blue serial on white plate; "MASS. 1920" centered at bottom
+|123,456
+|1 to approximately 219,000
+|First embossed plate.
+|-
+|[[File:1921 Massachusetts license plate.jpg|150px]]
+|1921
+|Embossed white serial on dark blue plate; "MASS. 1921" centered at bottom
+|123,456
+|1 to approximately 260,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:darkblue; font-size:25pt; background:white;">123,456</div>
+|1922
+|As 1920 base, but with "MASS. 1922" at bottom
+|123,456
+|1 to approximately 321,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:darkblue;">123,456</div>
+|1923
+|As 1921 base, but with "MASS. 1923" at bottom
+|123,456
+|1 to approximately 402,000
+|
+|-
+|[[File:Massachusetts License Plate 1924.JPG|150px]]
+|1924
+|Embossed white serial on maroon plate; "MASS. 1924" centered at bottom
+|123,456
+|1 to approximately 473,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:black;">123,456</div>
+|1925
+|Embossed white serial on black plate; "MASS. — 1925" at bottom
+|123,456
+|1 to approximately 546,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:blue;">123,456</div>
+|1926
+|Embossed white serial on blue plate; "1926 — MASS" at bottom
+|123,456
+|1 to approximately 598,000
+|
+|-
+|[[File:1927 Massachusetts license plate.jpg|150px]]
+|1927
+|Embossed white serial on maroon plate; "MASS — 1927" at bottom
+|123,456
+|1 to approximately 624,000
+|
+|-
+|[[File:Massachusetts_license_plate_1928.jpg|150px]]
+|1928
+|Embossed white serial on green plate; "1928", [[cod]] fish graphic and "MASS" at bottom
+|123,456
+|1 to approximately 644,000
+|Removed due to superstition cod fish facing away from "MASS" led to bad fishing harvest.<ref name=":1" />
+|-
+|[[File:1929 Massachusetts License Plate.jpg|150x150px]]
+|1929
+|Embossed white serial on blue plate; "MASS — 1929" at bottom and occasional cod graphic
+|123,456
+|1 to approximately 712,000
+|
+|-
+|[[File:1930 Massachusetts license plate.jpg|150px]]
+|1930
+|Embossed white serial on maroon plate; "1930 — MASS" at bottom
+|123,456
+|1 to approximately 749,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:green;">123,456</div>
+|1931
+|Embossed white serial on green plate; "MASS — 1931" at bottom
+|123,456
+|1 to approximately 792,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:maroon;">123,456</div>
+|1932
+|As 1930 base, but with "1932 — MASS" at bottom
+|123,456
+|1 to approximately 740,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:green;">123,456</div>
+|1933
+|As 1931 base, but with "MASS — 1933" at bottom
+|123,456
+|1 to approximately 759,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:maroon;">123,456</div>
+|1934
+|As 1930 base, but with "MASS — 1934" at bottom
+|123,456
+|1 to approximately 749,000
+|
+|-
+|[[File:Massachusetts 1935 license plate - Number 48,460.jpg|150px]]
+|1935
+|As 1931 base, but with "1935 — MASS" at bottom
+|123,456
+|1 to approximately 734,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:maroon;">123,456</div>
+|1936
+|Embossed white serial on maroon plate; "MASS 36" centered at top
+|123,456
+|1 to approximately 729,000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:green;">123,456</div>
+|1937
+|Embossed white serial on green plate; "37 MASS" centered at top
+|123,456
+|1 to approximately 755,000
+|
+|-
+|[[File:1938 Massachusetts license plate.jpg|150px]]
+|1938
+|Embossed white serial on maroon plate; "MASS 38" centered at bottom
+|123·456
+|1 to approximately 751·000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:green;">123·456</div>
+|1939
+|Embossed white serial on green plate; "39 MASS" centered at bottom
+|123·456
+|1 to approximately 771·000
+|
+|-
+|[[File:1940 Massachusetts License Plate.jpg|150x150px]]
+|1940
+|Embossed white serial on maroon plate; "MASS 40" centered at top
+|123·456
+|1 to approximately 779·000
+|
+|-
+|[[File:1941 Massachusetts license plate.JPG|150px]]
+|1941
+|Embossed white serial on green plate; "41 MASS" centered at bottom
+|123·456
+|1 to approximately 852·000
+|
+|-
+|[[File:1942 Massachusetts license plate.jpg|150px]]
+|rowspan="2"|1942–44
+|Embossed white serial on maroon plate; "MASS 42" centered at bottom
+|rowspan="2"|123·456
+|1 to approximately 828·000
+|rowspan="2"|Revalidated for 1943<br/>and 1944 with wind-<br/>shield stickers, due to metal conservation<br/>for [[World War II]].
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:green;">123·456</div>
+|As above, but green rather than maroon
+|828·001 to approximately 855·000
+|-
+|[[File:Massachusetts 1945 License Plate.jpg|150px]]
+|1945
+|Embossed white serial on dark blue plate; "45 MASS" at top
+|123·456
+|1 to approximately 799·000
+|
+|-
+|[[File:Massachusetts 1946 License Plate.jpg|150px]]
+|1946
+|Embossed white serial on black plate; "46 MASS" at bottom
+|123·456
+|1 to approximately 843·000
+|
+|-
+|[[File:Massachusetts 1947 License Plate.jpg|150px]]
+|1947
+|Embossed white serial on dark green plate; "MASS 47" within embossed white bar centered at top
+|123·456
+|1 to approximately 897·000
+|
+|-
+|[[File:1948 Massachusetts license plate.JPG|150px]]
+|1948
+|Embossed white serial on maroon plate; "48 MASS" within embossed white bar centered at bottom
+|123·456
+|1 to approximately 948·000
+|
+|-
+|rowspan="2"|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:black;">No image</div>
+|rowspan="2"|1949–50
+|rowspan="2"|Embossed white serial on black plate; "49 MASS" within embossed white bar centered at top
+|123·456
+|1 to 999·999
+|rowspan="2"|Revalidated for 1950<br/>with windshield sticker.
+|-
+|A12·345
+|K, H and J series
+|-
+|rowspan="2"|[[File:1951 Massachusetts License Plate.jpg|150x150px]]
+|rowspan="2"|1951–52
+|rowspan="2"|Embossed white serial on maroon plate; "MASS 51" within embossed white bar centered at bottom
+|123·456
+|1 to 999·999
+|rowspan="2"|Revalidated for 1952<br/>with windshield sticker.
+|-
+|A12·345
+|K, H, E and P series
+|-
+|rowspan="2"|[[File:1953 Massachusetts license plate.JPG|150px]]
+|rowspan="2"|1953–54
+|rowspan="2"|Embossed white serial on black plate; "MASS 53" within embossed white bar centered at top
+|123·456
+|1 to 999·999
+|rowspan="2"|Revalidated for 1954<br/>with windshield sticker.<br/>[[File:1954 Massachusetts vehicle registration sticker.jpg|125px]]
+|-
+|A12·345
+|K, H, E, P and L series
+|-
+|rowspan="2"|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:maroon;">No image</div>
+|rowspan="2"|1955–56
+|rowspan="2"|Embossed white serial on maroon plate; "55 MASS" within embossed white bar centered at bottom
+|123·456
+|1 to 999·999
+|rowspan="2"|Revalidated for 1956<br/>with windshield sticker.
+|-
+|A12·345
+|K, H, E, P, L, N and X series
+|-
+|rowspan="2"|[[File:1957 Massachusetts license plate.JPG|150px]]
+|rowspan="2"|1957–58
+|rowspan="2"|Embossed white serial on black plate with border line; "MASS 57" within embossed white bar centered at top
+|123·456
+|1 to 999·999
+|rowspan="2"|First 6" x 12" plate. Revalidated for 1958<br/>with windshield sticker.
+|-
+|A12·345
+|K, H, E, P, L, N, X and U series
+|-
+|[[File:1959 Massachusetts license plate.JPG|150px]]
+|1959–60
+|Embossed white serial on maroon plate with border line; "59 MASS" within embossed white bar centered at top
+|123·456<br/>A12·345
+|
+|Revalidated for 1960<br/>with windshield sticker.
+|-
+|[[File:Mass 1961 plate.jpg|150x150px]]
+|1961–62
+|Embossed white serial on dark green plate with border line; "MASS 61" within embossed white bar centered at top
+|123·456<br/>A12·345
+|
+|Revalidated for 1962<br/>with windshield sticker.
+|-
+|[[File:1963 Massachusetts license plate.jpg|150px]]
+|1963
+|Embossed white serial on black plate with border line; "63 MASS" within embossed white bar centered at top
+|123·456<br/>A12·345
+|
+|Substandard paint used, plates needed refurbishing.<ref name=":1" />
+|-
+|[[File:Massachusetts 1964 License Plate.jpg|150px]]
+|1964–65
+|Embossed white serial on maroon plate with border line; "MASS 64" within embossed white bar centered at top
+|123·456<br/>A12·345
+|
+|Revalidated for 1965<br/>with windshield sticker.
+|-
+|[[File:1966 Massachusetts license plate.JPG|150px]]
+|1966
+|Embossed white serial on dark green plate with border line; "66 MASS" within embossed white bar centered at top
+|123·456<br/>A12·345
+|
+|
+|}
+
+===1967 to present===
+Massachusetts implemented a monthly staggered registration system in 1969. Since then, serials on passenger plates have been coded by the month of expiration of the registration, determined by the last number in the serial (1 for January, 2 for February and so on up to 0 for October). From 1969 through 1977, serials with 'X' suffixes were used for November and 'Y' suffixes for December expirations respectively. Registrants are issued plates expiring the last day of the previous month (e.g. a motorist registering a vehicle in June will be issued May plates). If a vehicle is registered in December or January (so that November and December plates would be called for), leftover plates are issued from other months with manufacturing overruns.
+
+Two-year registrations are mandatory, with the exception of vehicles initially registered during December or January. [[Vanity plate]]s and motorcycle plates must be renewed annually. All apportioned plate registrations expire on June 30, all trailer and "Spirit of America" vanity plate registrations expire on November 30, and all motorcycle, commercial, and single letter passenger reserved plate registrations expire on December 31.
+
+Currently, the Livery plate is the only common license plate in Massachusetts that is allowed to have more than six characters in its serials. All Livery plate serials start with the letters "LV", even if not stamped.
+
+Because the RMV utilizes "Plate Type" to describe the type of registration, it is theoretically possible to have two plates issued with seemingly the same serial. Some of the plate types, and their three-letter codes, are listed below:
+{{div col|colwidth=20em}}
+* PAN - Passenger: Normal
+* PAR - Passenger: Reserved
+* PAS - Passenger: Specialty (Antique, Veteran, Environmental, Sports, Spay & Neuter, Breast Cancer, United We Stand, etc.)
+* PAV - Passenger: Vanity
+* PAY - Passenger: Year of Manufacture (Antique plate with year stamped; AN gets added to the beginning of plate number on registration)
+* CON - Commercial: Normal (plates starting SR are for snow removal; HR for Hearse)
+* COR - Commercial: Reserved
+* COV - Commercial: Vanity
+* MCN - Motorcycle: Normal
+* MCR - Motorcycle: Reserved
+* MCS - Motorcycle: Specialty
+* MCV - Motorcycle: Vanity
+* AHN - Camper: Normal
+* AHR - Camper: Reserved
+* AHV - Camper: Vanity
+* AMN - Ambulance: Normal (includes Animal Ambulance)
+* AMR - Ambulance: Reserved
+* LVN - Livery: Normal
+* LVR - Livery: Reserved
+* LVV - Livery: Vanity
+* SPN - School Pupil: Normal
+* TAN - Taxi: Normal
+* TAR - Taxi: Reserved
+* TRN - Trailer: Normal (not used on Camper trailers)
+* TRR - Trailer: Reserved
+* VPN - Van Pool: Normal
+* SBN - School Bus: Normal
+* SBR - School Bus: Reserved
+* BUN - Bus: Normal
+* BUR - Bus: Reserved
+* BUV - Bus: Vanity
+{{div col end}}
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|rowspan="3"|[[File:1968 Massachusetts License Plate.jpg|150px]]
+|rowspan="2"|{{nowrap|1967–68}}
+|rowspan="3"|Embossed blue serial on reflective white plate with border line; "MASSACHUSETTS" centered at top
+|123·456
+|100·001 to 999·999
+|rowspan="2"|Revalidated with windshield stickers through the end of 1969, then coded by month of expiration (see above) and revalidated with plate stickers.
+|-
+|A12·345
+|E10·001 to Y99·999
+|-
+|1969–71
+|123·45A
+|Coded by month of expiration
+|Revalidated with plate stickers. All plates replaced 1972–73.
+|-
+|[[File:Mass Plate Red on White V329.jpg|150px]]
+|1972–78
+|Embossed red serial on reflective white plate with border line; "MASSACHUSETTS" centered at bottom
+|1A·2345<br/>12A·340<br/>123·456<br/>A12·345<br/>123·45A
+|Coded by month of expiration
+|12A·34'''0''' serial format used only on plates expiring in October.<ref>{{cite web |last=Tanner |first=Eric N. |title=Massachusetts License Plates |url=http://www.allaboutlicenseplates.com/athome.asp?State=Massachusetts |publisher=allaboutlicenseplates.com |access-date=December 5, 2015 |archive-date=December 8, 2015 |archive-url=https://web.archive.org/web/20151208155302/http://www.allaboutlicenseplates.com/athome.asp?State=Massachusetts |url-status=dead }}</ref> Issued in alternating weeks from 1977, following the introduction of the green-on-white base (below), until supplies were exhausted. Replaced 1982–83.
+|-
+|rowspan="2"|[[File:Massachusetts license plate, 1977–1993 series with 2005 sticker.png|150px]]
+|1977–93
+|rowspan="2"|Embossed green serial on reflective white plate with border line; "MASSACHUSETTS" centered at top
+|123·ABC
+|100·AAA to 999·VZZ (see right) 
+|rowspan="2"|Only rear plates issued (except for reserved and non-passenger plates). On all plates, the last digit corresponded to the month of expiration, with November and December expirations discontinued except on non-passenger plates and on red-and-white plates until 1980–81. All-numeric plates were generally issued to holders of the same serials on the red-on-white base. Still currently revalidated.
+|-
+|1983–93
+|123·456
+|100·000 to 999·999 (see right)
+|-
+|rowspan="8"|<br>[[File:Massachusetts 2011 license plate.png|150px]]
+|rowspan="8"|1993–present
+|rowspan="8"|Embossed red serial on reflective white plate; "Massachusetts" and "The Spirit of America" screened in blue centered at top and bottom respectively
+|123·ABC
+|999·ZZZ to 100·WAA (reverse issue)
+|rowspan="8"|This base was first issued in 1987 for [[vanity plate]]s and some non-passenger types, before becoming the standard passenger base in 1993. On all standard passenger plates, the last digit corresponds to the month of expiration. Digit 1 became serifed in March 2005. Letters Q and U never used. Letters I and O used in 123·ABC and 1234&nbsp;AB formats (IA-IZ, OA-OZ were skipped)
+|-
+|1234&nbsp;AB
+|1000&nbsp;AA to 9999&nbsp;AA, then 1000&nbsp;AB through 9999&nbsp;AZ and so on  through 9999&nbsp;ZZ (January issued only through 9991&nbsp;TZ, February issued only through 9992&nbsp;YZ)<ref>{{cite web |url=http://www.licenseplates.cc/highs/?where=Massachusetts |title=licenseplates.cc Massachusetts highs page |author=Sage, Kit |author2=Tanner, Eric |access-date=June 24, 2009 |archive-date=April 25, 2009 |archive-url=https://web.archive.org/web/20090425002349/http://licenseplates.cc/highs/?where=Massachusetts |url-status=dead }}</ref>
+|-
+|12A&nbsp;B34
+|10A&nbsp;A00 to 99A&nbsp;A09, then 10A&nbsp;B00 through 99A&nbsp;Z09, then 10B&nbsp;A00 through 99Z&nbsp;Z09 and so on through 99Z&nbsp;Z99 (May issued only through 99Z&nbsp;Z85, June issued only through 99Z&nbsp;Z86)
+|-
+|123&nbsp;AB4
+|111&nbsp;AA0 to 999&nbsp;AA9, then 111&nbsp;AB0 through 999&nbsp;AZ9 and so on through 999&nbsp;ZZ9 (October issued only through 999&nbsp;NZ0 to avoid any further confusion with the previous 123·AB'''O''' format)
+|-
+|1AB&nbsp;234
+|1AA&nbsp;110 to 9ZZ&nbsp;999
+|-
+|1ABC&nbsp;23
+|As of May 25, 2026:
+* 1AAA&nbsp;11 to at least 6ZZL&nbsp;51
+* 1AAA&nbsp;12 to at least 6NZT&nbsp;22
+* 1AAA&nbsp;13 to at least 7JLY&nbsp;83
+* 1AAA&nbsp;14 to at least 6YTP&nbsp;94
+* 1AAA&nbsp;15 to 5YLZ&nbsp;95 
+* 1AAA&nbsp;16 to 5GZZ&nbsp;96
+* 1AAA&nbsp;17 to 7CZZ&nbsp;97
+* 1AAA&nbsp;18 to 6XZZ&nbsp;98
+* 1AAA&nbsp;29 to 7DZZ&nbsp;99
+* 1AAA&nbsp;10 to 9RZZ&nbsp;90 (9SAA&nbsp;10 to 9ZZZ&nbsp;90 were not used and October was moved on to the below formats in November 2018)
+|-
+|12A&nbsp;340
+|11A&nbsp;100 to 99Z&nbsp;990 (October only)
+|-
+|123&nbsp;A40
+|111&nbsp;A10 to 479&nbsp;Z90 (October only)
+|-
+|}
+
+==Current passenger base plates==
+Currently, both the 1977 green-on-white base and the 1987 "Spirit" base are valid for registration. On the 1977 base, only rear plates were issued for most types (except for Reserved, Commercial and Taxi, for which front plates were also issued and must also be displayed today), whereas on the current "Spirit" base, both front and rear plates are issued. Registrants with 1977 plates have the option of replacing these with "Spirit" plates at no charge (though a different number will be used); however, most choose to keep their 1977 plates as a point of pride. In many cases, the 1977 plates are worn and illegible; legally per [[Massachusetts General Laws|M.G.L.]] Chapter 90, a car with an illegible plate (regardless of age or color) must fail the state's annually required vehicle safety inspection. This is a safety fail, which under Massachusetts law prohibits operation of the vehicle until the issue is corrected.
+{|class="wikitable"
+|-
+!Image
+!First year of issue
+!Description
+!Serials previously issued
+!Current serial format
+!Notes
+|-
+|<br>[[File:Massachusetts 2011 license plate.png|150px]]
+|1987
+|Red on reflective white base with screened state name and slogan in blue
+|Coded with ''n'' by month of expiration ('''1''' through '''9''' for January through September, '''0''' for October):
+*123·45''n'' 
+*12''n''·ABC
+*123''n''&nbsp;AB
+*12A&nbsp;B3''n''
+*123&nbsp;AB''n''
+*1AB&nbsp;23''n''
+*1ABC&nbsp;20 (October expirations, although other months are currently following)
+*12A&nbsp;340 ''(October expirations only, although other months might follow)''
+|Coded with ''n'' by month of expiration ('''1''' through '''9''' for January through September, '''0''' for October):
+*1ABC&nbsp;2''n (January through September expirations)''
+*123&nbsp;A40 ''(October expirations only, although other months might follow)''
+|Letters Q and U never used. Letters I and O used in 123·ABC and 1234&nbsp;AB formats (IA-IZ, OA-OZ were skipped)
+|-
+|}
+
+==Reserved plates==
+[[File:Massachusetts 1988 'reserve' or 'legacy' plate.jpg|thumb|left|"Spirit of America" low-number reserve plate.]]
+In addition to the standard serial formats, Massachusetts also issues "reserve" plates. Reserve plates permit the plate holder to receive the same serial number when new plate styles are issued, or to transfer the serial number to family members. These plates are either all-numeric (1 through 99999) or consist of a single letter followed or preceded by a number (A 1 through Z 9999 and 1 A through 9999 Z). Reserve serials may also be of the forms A (expires on December 31), A#A, A##A, #A#, and #AA#, where # represents any number, and A represents any letter. Low-number reserve plates – now called "[[Lottery]] Plates" by the RMV – are of the forms A, #, ##, ###, ####, A #, A ##, # A, and ## A only. When a registrant cancels a low-number reserve registration, the number is placed in an annual lottery.<ref>{{Cite web |url=http://www.eot.state.ma.us/default.asp?pgid=content/releases/pr061311_PlateLottery&sid=release |title=2011 Low Plate Lottery Announcement |access-date=March 11, 2012 |archive-date=September 25, 2011 |archive-url=https://web.archive.org/web/20110925134332/http://www.eot.state.ma.us/default.asp?pgid=content/releases/pr061311_PlateLottery&sid=release |url-status=dead }}</ref> Registration for the lottery generally begins each June, and the drawing must be held by September 15. Prior to the institution of this annual lottery{{When|date=January 2011}}, low-number reserve plates were issued only to well-connected individuals, and it is widely believed that drivers with low registration numbers were given preferential treatment by law enforcement. The annual lottery was instituted in response to complaints about the politics behind the issuance of low-number registrations.{{Citation needed|date=January 2011}} As with standard registration plates, the final digit on low-number reserve plates indicates the month of expiration.
+{|class="wikitable"
+|-
+!Image
+!First year of issue
+!Description
+!Serial formats
+!Notes
+|-
+|[[File:MA-Base-Plate.jpg|150px]]<br><br>[[File:V92 LowDigit Mass Plate.jpg|150px]]
+|1987
+|Low-number reserve: Red on reflective white base with screened state name and slogan in blue
+|Coded with ''n'' by month of expiration ('''1''' through '''9''' for January through September, '''0''' for October):
+* A (expires on December 31).
+* ''n''
+* 1''n''
+* 12''n''
+* 123''n''
+* 1234''n*''
+* A&nbsp;''n**''
+* A&nbsp;1''n**''
+* A&nbsp;12''n*''
+* A&nbsp;123''n*''
+* ''n''&nbsp;A***
+* 1''n''&nbsp;A***
+* 12''n''&nbsp;A*
+* 123''n''&nbsp;A*
+* A''n''B*
+* A1''n''B*
+* 1A''n*''
+* 1AB''n*''
+|*&nbsp;No longer available via lottery.<ref name=":0" />
+<nowiki>**</nowiki>&nbsp;No longer uses the letter O.<ref name=":0" />
+
+<nowiki>***</nowiki>&nbsp;Never used the letter O.<ref name=":0">{{cite web |title=Passenger Plates Booklet 
+|url=https://www.mass.gov/files/RMV_Passenger_Plates_Booklet.pdf |website=massDOT Registry of Motor Vehicles Division |publisher=Commonwealth of Massachusetts |access-date=7 October 2022 |date=July 2014}}</ref>
+|-
+|}
+
+==Vanity plates==
+[[File:Massachusetts 1966 vanity plate naming alcoholic beverages no longer permitted.jpg|thumb|left|1966 vanity plate. Serials featuring the names of alcoholic beverages are no longer permitted.]]
+{|class="wikitable"
+|-
+!Image
+!First year of issue
+!Design
+!Allowed serial formats
+!Notes
+|-
+|[[File:Massachusetts sample license plate, 1987.png|150px]]
+|1987
+|Red on reflective white base with screened state name and slogan in blue
+|
+* AB
+* AB&nbsp;1
+* AB&nbsp;12
+* AB&nbsp;123
+* AB&nbsp;1234
+* ABC
+* ABC&nbsp;1
+* ABC&nbsp;12
+* ABC&nbsp;123
+* ABCD
+* ABCD&nbsp;1
+* ABCD&nbsp;12
+* ABCDE
+* ABCDE&nbsp;1
+* ABCDEF
+|All passenger vanity plates expire on November 30.
+|}
+
+== Charitable Organization Plates ==
+In general, Massachusetts specialty plates follow the formats of X/X 1234, progressing to X/X 123A, X/X 12AB, X/X AB12, X/X A123.
+
+Specialty plates cost an additional $40 every two years, for a total registration cost of $100. Upon initial registration, the special plate fee is divided into $12 for manufacturing and $28 for the organization featured on the plate. For the “Cape and Islands” and “Olympic Spirit” plates, a $50 special plate fee is divided into $16 for manufacturing and $34 for the organization featured on the plate, for a total registration cost of $110. The charity receives the full special plate fee upon renewal of registration. <ref>{{Cite web |title=Apply for a special license plate |url=https://www.mass.gov/how-to/apply-for-a-special-license-plate |archive-url=https://web.archive.org/web/20250311051052/https://www.mass.gov/how-to/apply-for-a-special-license-plate |archive-date=March 11, 2025 |access-date=2025-03-19 |website=Mass.gov |language=en |url-status=live }}</ref><ref>{{Cite web |date=2025-05-01 |title=Schedule of Fees |url=https://www.mass.gov/doc/rmv-schedule-of-fees/download |url-status=live |archive-url=https://web.archive.org/web/20251102014949/https://www.mass.gov/doc/rmv-schedule-of-fees/download |archive-date=2025-11-02 |access-date=2026-01-06 |website=Mass.gov}}</ref>
+{| class="wikitable"
+|+
+!Image
+!Type
+!Dates issued
+!Design
+!Serial Prefix
+!Serials issued
+!Notes
+|-
+|[[File:Cure ALS Plate.png|frameless|150x150px]]
+|[[ALS]] One
+|2016 - Present
+|As 1993 Passenger base,  "Care & A Cure For ALS" screened in blue at bottom.
+|L/G
+|
+|
+|-
+|[[File:Atlantic White Shark Mass.png|frameless|150x150px]]
+|Atlantic White Shark
+|2016 - Present
+|As 1993 Passenger base,  shark graphic screened at left, "Atlantic White Shark Conservancy" screened in black at bottom.
+|W/S
+|
+|
+|-
+|[[File:Basketball Hall of Fame Mass.png|frameless|150x150px]]
+|[[Naismith Memorial Basketball Hall of Fame|Basketball Hall of Fame]]
+|1993 - Present
+|As 1993 Passenger base, basketball hall of fame graphic screened at left, "BIRTHPLACE OF BASKETBALL" screened in blue at bottom.
+|B/B
+|
+|
+|-
+|[[File:Blackstone Valley Mass.png|frameless|150x150px]]
+|[[Blackstone Valley]]
+|1999 - Present
+|Embossed Red Serial on blue and white plate with watermill graphic at left, "Massachusetts screened in blue at top, "Preserve the Trust" screened in blue at bottom.
+|B/V
+|
+|
+|-
+|[[File:Celtics 2 Mass.png|frameless|150x150px]]
+| rowspan="3" |[[Boston Celtics|Celtics]]
+|1987 - 1998
+|Embossed Red Serial on white plate, "Massachusetts" screened in blue at top, "The Spirit of America" screened in blue at bottom, "CELTICS" screened in red at left.
+|
+|
+|
+|-
+|[[File:Boston Celtics Plate Mass.png|frameless|150x150px]]
+|1998 - 2025
+|Embossed Red Serial on white plate with Boston Celtics logo at left, "Massachusetts" screened in blue at top, "17-Time World Champions" screened in green at bottom left, "Boston Children's" screened in black at bottom.
+| rowspan="2" |C/S
+|
+|
+|-
+|[[File:Massachusetts Boston Celtics.jpg|frameless|150x150px]]
+|2025 - Present
+|The "17-Time World Champions" screened in green at the bottom left was removed. New "Boston Children's Hospital" wordmark screened along with fully colored Celtics logo.
+|
+|
+|-
+|[[File:Bruins 2 Mass.png|frameless|150x150px]]
+| rowspan="2" |[[Boston Bruins|Bruins]]
+|1987 - 1998
+|Embossed black serial in yellow plate, "Massachusetts" screened in black at top, "BRUINS" screened in black at left.
+|
+|
+|
+|-
+|[[File:Boston Bruins Plate Mass.png|frameless|150x150px]]
+|1998 - Present
+|Embossed Red Serial on white plate with Boston Bruins logo at left, "Massachusetts" screened in blue at top, "Invest in Youth Hockey" screened in black at bottom.
+|B/R
+|
+|
+|-
+|[[File:Cape Ann Plate Mass.png|frameless|150x150px]]
+|[[Cape Ann]]
+|2017 - Present
+|Embossed Red Serial on white plate "Massachusetts" screened in blue at top, "[https://lovecapeann.com lovecapeann.com]" screened in blue at bottom.
+|C/A
+|
+|
+|-
+|[[File:Cape Plate 2 Mass.png|frameless|150x150px]]
+| rowspan="3" |[[Cape Cod|Cape and Islands]]
+|1996 - 2006
+| rowspan="3" |Embossed Red Serial on blue and white plate with lighthouse graphic at left, "Massachusetts" screened in blue at top, "Cape Cod & Islands" screened in blue at bottom.
+|C/I
+| rowspan="3" |
+| rowspan="3" |$50 annual fee
+|-
+|[[File:Cape Plate 3 Mass.png|frameless|150x150px]]
+|2006 - 2024
+|I/C
+|-
+|[[File:Cape Plate Mass.png|frameless|150x150px]]
+|2024 - Present
+|C/P
+|-
+|[[File:Choose Life Plate Mass.png|frameless|150x150px]]
+|Choose Life
+|2010 - Present
+|Embossed Red Serial on white plate, mother and child graphic screened at left, "Massachusetts" screened in blue at top, "Choose Life" screened in black at bottom.
+|C/L
+|
+|
+|-
+|[[File:Conquer Cancer Plate Mass.png|frameless|150x150px]]
+|Conquer Cancer
+|2006 - Present
+|Embossed blue tear drop and yellow sunset screened at left, "Conquer Cancer" screened in blue at bottom.
+|C/C
+|
+|
+|-
+|[[File:Cure Breast Cancer Plate Mass.png|frameless|150x150px]]
+|[[Breast cancer awareness|Cure Breast Cancer]]
+|2006 - Present
+|Embossed pink breast cancer ribbon screened at left, "Cure Breast Cancer" screened in blue at bottom.
+|B/C 
+|
+|
+|-
+|[[File:Massachusetts Dr Seuss.jpg|frameless|150x150|150x150px]]
+|[[Dr. Seuss]]
+|2025 - Present
+|Embossed image of The Cat in the Hat and the website “[https://SeussInSpringfield.org SeussInSpringfield.org]” at the bottom of the plate. 
+|D/R
+|
+|
+|-
+|[[File:Fallen Heroes Plate Mass.png|frameless|150x150px]]
+|Fallen Heroes
+|2016 - Present
+|Embossed Red Serial on white plate, Massachusetts Fallen Heroes graphic screened at left, "Massachusetts" screened in blue at top, "Honor Their Sacrifice" screened in blue at bottom.
+|F/H 
+|
+|
+|-
+|[[File:Firefighters Memorial Plate Mass.png|frameless|150x150px]]
+|Firefighters Memorial
+|2006 - Present
+|Embossed Red Serial on white plate, Firefighter graphic screened at left, "Massachusetts" screened in blue at top, "Firefighters Memorial" screened in red at bottom.
+|F/F
+|
+|
+|-
+|[[File:Fish and Wildlife Plate Mass.png|frameless|150x150px]]
+|Fish and Wildlife
+|1998 - Present
+|Embossed Red Serial on blue and white plate with fish graphic at left, "Massachusetts screened in purple at top, "Preserve the Trust" screened in white at bottom.
+|F/W
+|
+|
+|-
+|[[File:Freemasonry Plate Mass.png|frameless|150x150px]]
+|[[Freemasonry]]
+|2017 - Present
+|Embossed Red Serial on white plate, Freemason graphic screened at left, "Massachusetts" screened in blue at top, "Freemasonry" screened in blue at bottom.
+|M/M
+|
+|
+|-
+|[[File:Fresh and Local Plate Mass.png|frameless|150x150px]]
+|Fresh and Local
+|2015 - Present
+|Embossed Red Serial on white plate, Pumpkin graphic screened at left, "Massachusetts" screened in blue at top, "Choose Fresh and Local" screened in blue at bottom.
+|A/G
+|
+|
+|-
+|[[File:Habitat and Heritage Plate Mass.png|frameless|150x150px]]
+|Habitat and Heritage
+|2022 - Present
+|Embossed Red Serial on white plate, deer graphic screened at left, "Massachusetts" screened in blue at top, "Habitat and Heritage" screened in black at bottom.
+|S/L
+|
+|
+|-
+|[[File:Invest in Children Plate Mass.png|frameless|150x150px]]
+|Invest in Children
+|1998–Present
+|Embossed Red Serial on white and blue plate, children graphic screened at left, "Massachusetts" screened in blue at top, "Invest in Children" screened in white at bottom.
+|T/C
+|
+|
+|-
+|[[File:Marthas Vineyard Plate Mass.png|frameless|150x150px]]
+|[[Martha's Vineyard]]
+|2015 - Present
+|Embossed Red Serial on white plate, ferry graphic screened at left, "Massachusetts" screened in blue at top, "Martha's Vineyard" screened in blue at bottom.
+|M/V
+|
+|
+|-
+|[[File:Mass Animal Coalition Plate Mass.png|frameless|150x150px]]
+|Mass Animal Coalition
+|2003 - Present
+|Embossed Red Serial on white plate, dog and cat graphic screened at left, "Massachusetts" screened in blue at top, "I'm Animal Friendly" screened in blue at bottom.
+|S/N
+|
+|
+|-
+|[[File:Massachusetts_250_Years_Independence.jpg|frameless|150x150px]]
+|250 Years of Independence
+|2025 - Present
+|Embossed White Serial on blue plate with "1776" circled by 13 star graphic screened at left, "Massachusetts" screened in red at top, "250 Years of Independence" screened in white at bottom.
+|M/A
+|
+|
+|-
+|[[File:Nantucket Plate Mass.png|frameless|150x150px]]
+|[[Nantucket|Nantucket Island]]
+|2016 - Present
+|Embossed Red Serial on white plate, Nantucket and whale graphic screened at left, "Massachusetts" screened in blue at top, "Nantucket Island" screened in blue at bottom.
+|N/I
+|
+|
+|-
+|[[File:Patriots 2 Mass.png|frameless|150x150px]]
+| rowspan="3" |[[New England Patriots]]
+|2005 - 2017
+| rowspan="3" |Embossed Red Serial on white plate, "Massachusetts" screened in blue at top, "New England Patriots Charitable Foundation" screened at bottom.
+| rowspan="3" |N/E
+|
+|
+|-
+|[[File:Patriots 3 Mass.png|frameless|150x150px]]
+|2017 - 2022
+|
+|
+|-
+|[[File:New England Patriots Plate Mass.png|frameless|150x150px]]
+|2022 - Present
+|
+|
+|-
+|[[File:Olympic Spirit Plate Mass.png|frameless|150x150px]]
+|Olympic Spirit
+|1996 - Present
+|Embossed Red Serial on white and blue plate, USA Olympics graphic screened at left, "Massachusetts" screened in blue at top, "Olympic Spirit" screened in white at bottom.
+|O/S
+|
+|$50 annual fee
+|-
+|[[File:Massachusetts_Overdose_Awareness.jpg|frameless|150x150px]]
+|Overdose Awareness
+|2025 - Present
+|Embossed purple ribbon with angel wings and a halo and the words “Overdose Awareness”. 
+|
+|
+|
+|-
+|[[File:Pan-Mass Plate Mass.png|frameless|150x150px]]
+|[[Pan-Mass Challenge]]
+|2015 - Present
+|Embossed Red Serial on white plate, Pan-Mass logo screened at left, "Massachusetts" screened in blue at top, "Share the Road" screened in blue at bottom.
+|P/M
+|
+|-
+|[[File:Plymouth Plate Mass.png|frameless|150x150px]]
+|[[Plymouth Colony|Plymouth 400]]
+|2015 - Present
+|Embossed Red Serial on white plate, mayflower graphic screened at left, "Massachusetts" screened in blue at top, "An American Story, A National Legacy" screened in blue at bottom.
+|P/L
+|
+|
+|-
+|[[File:Red Sox Plate Mass.png|frameless|150x150px]]
+| rowspan="3" |[[Boston Red Sox|Red Sox]] / [[The Jimmy Fund|Jimmy Fund]]
+| rowspan="2" |2010 - 2023
+| rowspan="2" |Embossed Red Serial on white plate, Red Sox Logo screened at left, "Massachusetts" screened in blue at top, "The Jimmy Fund" screened in blue at bottom.
+|J/F
+|
+|
+|-
+|[[File:Red Sox 3 Mass.png|frameless|150x150px]]
+| rowspan="2" |R/S
+|
+|
+|-
+|[[File:Massachusetts_RedSox.jpg|frameless|150x150px]]
+|2023 - Present
+|Embossed pair of red socks with a blue heart between them and Dana‑Farber/Jimmy Fund logos, commemorating the Jimmy Fund’s 75th anniversary.
+|
+|
+|-
+|[[File:Registered Nurse Plate Mass.png|frameless|150x150px]]
+|Registered Nurse
+|2017 - Present
+|Embossed Red Serial on white plate, Registered Nurse graphic screened at left, "Massachusetts" screened in blue at top, "Advancing Health" screened in blue at bottom.
+|R/N
+|
+|
+|-
+|[[File:Right Whale Plate Mass.png|frameless|150x150px]]
+|Right Whale
+| rowspan="2" |1994 - Present
+|Embossed Red Serial on white and blue plate, whale graphic screened at left, "Massachusetts" screened in blue at top, "Preserve the Trust" screened in blue at bottom.
+|R/W
+|
+|
+|-
+|[[File:Right Whale 2 Mass.png|frameless|150x150px]]
+|Roseate Tern
+|Embossed Red Serial on white and blue plate, whale graphic screened at left, "Massachusetts" screened in blue at top, "Preserve the Trust" screened in blue at bottom.
+|R/T
+|
+|
+|-
+|[[File:State Police Association Plate Mass.png|frameless|150x150px]]
+| rowspan="2" |[[Massachusetts State Police|State Police]] Association
+| rowspan="2" |2019 - Present
+|Embossed Red Serial on white plate, state trooper hat graphic screened at left, "Massachusetts" screened in blue at top, "Protect and Serve" screened in blue at bottom.
+| rowspan="2" |P/S
+|
+|
+|-
+|[[File:Massachusetts_Protect_and_Serve.jpg|frameless|150x150px]]
+|Embossed Red Serial on white plate, American flag and a blue police ribbon screened at left, "Massachusetts" screened in blue at top, "Protect and Serve" screened in blue at bottom.
+|
+|
+|-
+|[[File:Striped Bass Plate Mass.png|frameless|150x150px]]
+|Striped Bass
+|2019 - Present
+|Embossed Red Serial on white plate, striped bass graphic screened at left, "Massachusetts" screened in blue at top, "Striped Bass Conservation" screened in blue at bottom.
+|S/C
+|
+|
+|-
+|[[File:UMASS Plate Mass.png|frameless|150x150px]]
+|[[University of Massachusetts|UMass]]
+|2013 - Present
+|Embossed Red Serial on white plate, UMass graphic screened at left, "Massachusetts" screened in blue at top, "You were. You are. UMASS." screened in red at bottom.
+|U/M
+|
+|
+|-
+|[[File:United Plate Mass.png|frameless|150x150px]]
+|United We Stand
+|2002 - Present
+|Embossed Red Serial on American flag background,  "Massachusetts" screened in blue at top, "United we Stand" screened in blue at bottom.
+|U/S
+|
+|
+|-
+|[[File:Welcome Home Plate Mass.png|frameless|150x150px]]
+|Welcome Home
+|2020 - Present
+|Embossed Red Serial on white plate, house graphic screened at left, "Massachusetts" screened in blue at top, "Welcome Home" screened in blue at bottom.
+|W/H
+|
+|
+|-
+|[[File:Massachusetts_Zoo_England.jpg|frameless|150x150px]]
+|Zoo New England
+|2023 - Present
+|Embossed image of a gorilla and the words “Zoo New England” at the bottom of the plate and "Massachusetts" screened in blue at top, 
+|Z/N
+|
+|
+|}
+
+== Government Plates ==
+{| class="wikitable"
+!Image
+!Type
+!Design
+!Notes
+|-
+|[[File:Massachusetts_Governors_Council.jpg|frameless|150x150px]]
+|[[Massachusetts Governor's Council|Governor's Council]]
+|Embossed Red Serial on white plate, with "GOVERNORS COUNCIL" in red on the left. 
+|Governor's Council plates are issued to elected members of the Governor's Council.
+|-
+|[[File:Massachusetts Honorary Consular.jpg|frameless|150x150px]]
+|Honorary Consular
+|Embossed Red Serial on white plate, with "HON. CONSULAR CORPS" in red on the left.
+|Honorary Consular plates are issued to a private individual who is authorized to perform limited functions on behalf of a foreign government.
+|-
+|[[File:Massachusetts House.jpg|frameless|150x150px]]
+|[[Massachusetts House of Representatives|House]]
+|Embossed Red Serial on white plate, with "HOUSE" in red on the left, and the state seal on the right.
+|House plates are issued to elected members of the Massachusetts House of Representatives.
+|-
+|[[File:Massachusetts Senate.jpg|frameless|150x150px]]
+|[[Massachusetts Senate|Senate]]
+|Embossed Red Serial on white plate, with "SENATE" in red on the left, and the state seal on the right.
+|Senate plates are issued to elected members of the Massachusetts State Senate.
+|-
+|[[File:Massachusetts US Congress.jpg|frameless|150x150px]]
+|[[United States Congress]]
+|Embossed Red Serial on white plate, with "*U.S. CONGRESS*" in red on the left.
+|US Congress plates are issued to elected members of the US House of Representatives.
+|-
+|[[File:Massachusetts US Senate.jpg|frameless|150x150px]]
+|[[United States Senate]]
+|Embossed Red Serial on white plate, with "*U.S. SENATE*" in red on the left.
+|US Senate plates are issued to elected members of the US Senate.
+|}
+
+== Medical / Disability Plates ==
+{| class="wikitable"
+!Image
+!Type
+!Dates Issued
+!Design
+!Serial Prefix
+!Notes
+|-
+|[[File:Massachusetts Disabled.jpg|frameless|150x150px]]
+|Disability
+|
+|Embossed red serial on white plate, with the [[International Symbol of Access]] icon in red on the left. 
+|
+|
+|-
+|[[File:Massachusetts Disabled Veterans 1.jpg|frameless|150x150px]]
+| rowspan="2" |Disabled Veteran
+| - 2005
+|Embossed red serial on a white plate, with a vertical solid blue bar containing six white stars on the left and the word "Disabled" next to it, followed by a vertical red‑and‑white striped bar with the word "Veteran" next to it.”
+| rowspan="2" |
+| rowspan="2" |
+|-
+|[[File:Massachusetts Disabled Veterans 2.jpg|frameless|150x150px]]
+|2005 - Present
+|Embossed red serial on white plate, with [[International Symbol of Access]]"icon holding an American Flag, in red on the left, and with "Disabled Veteran" screened in blue on the bottom.
+|-
+|[[File:Massachusetts Disaster Vehicle.jpg|frameless|150x150px]]
+|Emergency Vehicle
+|
+|Embossed white serial on red plate, "Emergency Vehicle" in white to the left, and "Emergency" in white at the bottom.
+|
+|
+|-
+|[[File:Massachusetts Doctor.jpg|frameless|150x150px]]
+|Medical Doctor
+|
+|Embossed red serial on white plate, with "MD" icon in red on the left. 
+|M/D
+|
+|}
+
+== Military Plates ==
+{| class="wikitable"
+!Image
+!Type
+!Design
+!Serial Prefix
+!Notes
+|-
+|[[File:Massachusetts Bronze Star.jpg|frameless|150x150px]]
+|[[Bronze Star Medal|Bronze Star]]
+|Embossed red serial on white plate, with Bronze Star medal on the left, and "Veteran" on the bottom. 
+|V/B
+|
+|-
+|[[File:Massachusetts Congressional Medal of Honor.jpg|frameless|150x150px]]
+|[[Medal of Honor|Congressional Medal of Honor]]
+|Embossed white serial on blue plate, with six white stars on both sides, "CONGRESSIONAL MEDAL OF HONOR" on the top, and "Massachusetts" on the bottom.
+|
+|
+|-
+|[[File:Massachusetts Distinguished Flying Cross.jpg|frameless|150x150px]]
+|[[Distinguished Flying Cross (United States)|Distinguished Flying Cross]]
+|Embossed red serial on white plate, with a Distinguished Flying Cross medal on the left, and "Veteran" on the bottom.
+|D/F
+|
+|-
+|[[File:Massachusetts Ex POW.jpg|frameless|150x150px]]
+|Ex-[[Prisoner of war|POW]]
+|Embossed red serial on white plate, with barbed wire and "Ex POW" on the left. 
+|
+|
+|-
+|[[File:Massachusetts Gold Star Family.jpg|frameless|150x150px]]
+|[[Service flag|Gold Star Family]]
+|Embossed red serial on white plate, with a gold star on the left on a vertical black bar and "Gold Star Family" on the bottom. 
+|G/S
+|
+|-
+|[[File:Massachusetts Legion of Honor.jpg|frameless|150x150px]]
+|[[Legion of Valor of the United States of America|Legion Of Valor]]
+|Embossed red serial on white plate, with "Legion of Valor" on the left.
+|
+|
+|-
+|[[File:Massachusetts Medal of Liberty.jpg|frameless|150x150px]]
+|[[Medal of Liberty|Medal Of Liberty]]
+|Embossed red serial on white plate, with Medal of Liberty on the left.
+|M/L
+|
+|-
+|[[File:Massachusetts National Guard Plate.jpg|frameless|150x150px]]
+|[[Massachusetts National Guard|National Guard]]
+|Embossed red serial on white plate, with an image of a National Guard solder on the left, and "National guard" on the bottom.
+|
+|
+|-
+|[[File:Massachusetts Pearl Harbor Survivor.jpg|frameless|150x150px]]
+|[[Pearl Harbor]] Survivor
+|Embossed red serial on white plate, with an eagle and a "Pearl Harbor Survivor" banner on the left, and "Veteran" on the bottom.
+|
+|
+|-
+|[[File:Massachusetts Purple Heart 1.jpg|frameless|150x150px]]
+| rowspan="2" |[[Purple Heart]]
+|Embossed red serial on white plate, with Purple Heart medal on the left, and "Veteran" on the bottom.
+|
+|
+|-
+|[[File:Massachusetts Purple Heart 2.jpg|frameless|150x150px]]
+|Embossed red serial on white plate, with Purple Heart medal on the left, and "Combat Wounded" on the bottom.
+|
+|
+|-
+|[[File:Massachusetts Silver Star.jpg|frameless|150x150px]]
+|[[Silver Star]]
+|Embossed red serial on white plate, with Silver Star medal on the left.
+|
+|
+|-
+|[[File:Massachusetts Veterans 2.jpg|frameless|150x150px]]
+| rowspan="2" |Veteran
+|Embossed red serial on white plate, with American Flag on the left, and "Veteran" on the "bottom". The left side will have a branch of service decal (Army, Navy, Coast Guard, Marine Corps, Air Force).
+|
+|
+|-
+|[[File:Massachusetts Veterans 1.jpg|frameless|150x150px]]
+|Embossed red serial on white plate, with "Veteran" on the "bottom". No American Flag.
+|
+|
+|}
+
+== "Other" Plates ==
+{| class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Serial Prefix
+!Serials issued
+!Notes
+|-
+|[[File:Massachusetts Antique.jpg|frameless|150x150px]]
+|Antique
+|
+|Embossed Red Serial on white plate with the embossed word "Antique" at the bottom.
+|
+|
+|Vehicle must be 25 years or older and may only be used and maintained for use in exhibitions, club activities, parades, and other functions of public interest.
+|-
+|[[File:EV Plate Mass.png|frameless|150x150px]]
+| rowspan="2" |Electric Vehicle
+| rowspan="2" |2012 - Present
+| rowspan="2" |Embossed Red Serial on white plate, green EV graphic screened at left, and "Electric Vehicle" screened in blue at bottom.
+|E/V
+|
+| rowspan="2" |Optional for electric and hybrid vehicles.
+|-
+|[[File:VE Plate Mass.jpg|frameless|150x150px]]
+|V/E
+|
+|-
+|[[File:Massachusetts Foreign Org.jpg|frameless|150x150px]]
+|Foreign Organization
+|
+|Embossed Red Serial on white plate with "Foreign Organization" screened at the bottom.
+|
+|
+|
+|-
+|[[File:Massachusetts HAM.jpg|frameless|150x150px]]
+|[[Amateur radio operator|HAM Operator]]
+|
+|Embossed Red Serial on white plate with red separator for call sign.
+|
+|
+|
+|-
+|[[File:Massachusetts Limited Use.jpg|frameless|150x150px]]
+|Limited Use Vehicle (LUV)
+|
+|Embossed Red Serial on white plate with "Limited Use" icon in a yellow square screened on the right side.
+|L/U
+|
+|
+|-
+|[[File:Massachusetts Low Speed.jpg|frameless|150x150px]]
+|Low Speed
+|
+|Embossed Red Serial on white plate with "Low Speed" screened at the bottom and an orange triangle with missing corners on the right side.
+|L/S
+|
+|
+|-
+|[[File:Massachusetts News.jpg|frameless|150x150px]]
+|News Photographer
+|
+|Embossed Red Serial on white plate with "NEWS PHOTOG" screened on the left side.
+|
+|
+|Issued to members of the Boston Press Photographer's Association.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates Issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|rowspan="5"|[[File:License plates of Massachusetts 1842.jpg|150px]]
+| rowspan="5" |Commercial
+|{{nowrap|1987–1991}}
+|rowspan="2"|As "Spirit of America" base, but with embossed "COMMERCIAL" in place of slogan
+|123·456
+|1 to 999·999
+| rowspan="5" |All Commercial plates expire on December 31.
+|-
+|{{nowrap|1991–1993}}
+| rowspan="4" |A&nbsp;1234<br/>A12·345
+|A&nbsp;1000 to C99·999
+|-
+|{{nowrap|1993–2007}}
+|As above, but with embossed "DEC" at top left
+|D&nbsp;1000 to approximately M63·800
+|-
+|2007–2019
+|As above, but with "DEC" screened rather than embossed
+|M63·801 to approximately V43·499
+|-
+|{{nowrap|2019–present}}
+|As above, but with "COMMERCIAL" screened rather than embossed
+|V43·500 to at least Z27·646 <small>(as of May 3, 2026)</small>
+|-
+| rowspan="5" |[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="5" |Trailer
+|1987–2004
+| rowspan="5" |As "Spirit of America" base, but with embossed "TRAILER" in place of slogan
+|123·456
+|1 to 999·999
+| rowspan="5" |All Trailer plates expire on November 30.
+|-
+|2004–2008
+|A&nbsp;1234
+|A 1000 to Z&nbsp;9999
+|-
+|2008–2021
+|A12·345
+|A10·000 to approximately F68·449
+|-
+|2021–2024
+|TZ&nbsp;12345
+|TZ&nbsp;10000 to TZ&nbsp;99999
+|-
+|2024–present
+|TZ&nbsp;1234A
+|TZ&nbsp;1000A to at least TZ&nbsp;5952M <small>(as of April 30, 2026)</small>
+|-
+| rowspan="3" |[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="3" |Apportioned
+|1987–2018
+| rowspan="3" |As "Spirit of America" base, but with screened "APPORTIONED" in place of slogan
+|12345
+|10000 to 99999
+| rowspan="3" |All Apportioned plates expire on June 30.
+|-
+|2018–2021
+|1234&nbsp;A
+|1000&nbsp;A to 9999&nbsp;B
+|-
+|2021–present
+|1AB23C
+|1AA10A to at least 1AL17T <small>(as of April 30, 2026)</small>
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.15q.net/ma.html Massachusetts license plates 1969–present]
+*[http://www.massrmv.com/Portals/30/docs/manuals/passenger_plates_manual_public.pdf Passenger Plates Booklet July 2014] {{Webarchive|url=https://web.archive.org/web/20140704083521/http://www.massrmv.com/Portals/30/docs/manuals/passenger_plates_manual_public.pdf |date=July 4, 2014 }}. Registry of Motor Vehicles (MassDOT). Retrieved 2014-07-02.
+*[https://lovecapeann.com Love Cape Ann]
+*[https://seussinspringfield.org/ Seuss in Springfield]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Massachusetts}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|Massachusetts]]
+[[Category:Transportation in Massachusetts]]
+[[Category:Massachusetts transportation-related lists]]

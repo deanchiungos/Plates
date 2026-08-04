@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  A deliberately near-empty Info.plist.
+
+	  The target still has GENERATE_INFOPLIST_FILE = YES and keeps declaring the scene
+	  manifest, orientations and launch screen through INFOPLIST_KEY_* build settings;
+	  Xcode merges those into this file rather than replacing it. This exists only for
+	  the one key that has no INFOPLIST_KEY_ equivalent — the build system silently
+	  drops INFOPLIST_KEY_UIBackgroundModes, since background modes are normally
+	  written here by the Signing & Capabilities editor.
+
+	  remote-notification is what lets CloudKit wake the app on a silent push and pull
+	  changes down in the background. Without it sync still works, but only while the
+	  app is in the foreground.
+	-->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<!--
+	  A party is the phones in one car talking to each other directly, so iOS asks
+	  for local network access the first time one is started or looked for.
+
+	  Both _tcp and _udp are required. MultipeerConnectivity uses both, and
+	  declaring only the tcp half is the classic way to end up with a browser that
+	  runs happily and simply never finds anybody — no error, no prompt, nothing.
+	  The service name must match `PartySession.service` exactly.
+	-->
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Plates uses the local network to find the other phones in your car, so everyone can share the plates they spot.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_plates-party._tcp</string>
+		<string>_plates-party._udp</string>
+	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Voice mode listens while you drive so you can call out plates instead of tapping them.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Voice mode turns what you say into plate sightings. Recognition runs on your iPhone wherever the device supports it, so your speech does not leave it.</string>
+</dict>
+</plist>

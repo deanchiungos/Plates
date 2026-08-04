@@ -1,0 +1,915 @@
+{{short description|Maryland vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=September 2012}}
+{{Infobox vehicle registration plate
+| image = Maryland 2016 License Plate.jpg
+| caption = 
+| nickname = Maryland Proud
+| slogan_label = Slogan 
+| slogan = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = 
+| serial_format = 1AB2345
+| current_start_date = {{Start date|2016|09|26}}
+| designer = 
+| issuer = [[Maryland Department of Transportation]], Motor Vehicle Administration
+| manufacturer =
+| start_date = {{Start date|1910|07|01}}<br>(pre-state plates from 1904 to June 30, 1910)
+}}
+The U.S. state of [[Maryland]] first required its residents to register their [[motor vehicle]]s in 1904. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1910, when the state began to issue plates.<ref>{{cite web |url=http://leatherlicenseplates.com/old-maryland-license-plates-vintage-maryland-license-plates/ |title=Old Maryland License Plates |publisher=LeatherLicensePlates.com |access-date=May 30, 2017 |archive-date=March 4, 2017 |archive-url=https://web.archive.org/web/20170304112455/http://leatherlicenseplates.com/old-maryland-license-plates-vintage-maryland-license-plates/ |url-status=dead }}</ref>
+
+Plates are currently issued by the Motor Vehicle Administration of the [[Maryland Department of Transportation]]. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers, as well as classes L (historic, 20+ years and unaltered) and N (street rod, 25+ years and altered) that are at least 50 years old.<ref>{{cite web |url=https://mva.maryland.gov/vehicles/Pages/licenseplates/general.aspx |title=General License Plate Information |website=Maryland Department of Transportation Motor Vehicle Administration |access-date=December 23, 2022 }}</ref><ref>{{cite web |url=https://www.dmv.com/md/maryland/custom-vehicle-registration |title=Custom Car Registration in Maryland |date=March 9, 2020 |website=DMV.com |access-date=December 24, 2022 }}</ref><ref>{{cite web |url=https://mva.maryland.gov/Documents/VR-096.pdf |title=Application for Historic or Street Rod Registration |website=Maryland Department of Transportation Motor Vehicle Administration |access-date=December 24, 2022 }}</ref>
+
+==Passenger baseplates==
+===1910 to 1970===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (expired March 31, 1957) issue was the first Maryland license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Maryland license plate, 1910.png|150px]]
+|1910
+|Embossed black serial on yellow plate with border line; vertical "MD" and "1910" at right
+|''none''
+|1234
+|1 to approximately 5000
+|
+|-
+|[[File:Maryland license plate, 1911.png|150px]]
+|1911
+|White serial on black porcelain plate; "MD 1911" at right
+|''none''
+|1234
+|1000 to approximately 8000
+|
+|-
+|[[File:Maryland license plate, 1912.png|150px]]
+|1912
+|Dark blue serial on white porcelain plate; "MD 1912" at right
+|''none''
+|12345
+|1000 to approximately 11000
+|
+|-
+|[[File:Maryland license plate, 1913.png|150px]]
+|1913
+|Yellow serial on black porcelain plate; "MD 13" at right
+|''none''
+|12345
+|2000 to approximately 15000
+|
+|-
+|[[File:Maryland license plate, 1914.png|150px]]
+|1914
+|White serial on green porcelain plate; "MD 14" at right
+|''none''
+|12345
+|2000 to approximately 20500
+|
+|-
+|[[File:Maryland license plate, 1915.png|150px]]
+|1915
+|Embossed white serial on blue plate; "MD 15" at right
+|''none''
+|12345
+|4000 to approximately 32000
+|
+|-
+|[[File:Maryland license plate, 1916.png|150px]]
+|1916
+|Embossed yellow serial on black plate; "MD 16" at left
+|''none''
+|12345
+|8000 to approximately 51000
+|
+|-
+|[[File:Maryland license plate, 1917.png|150px]]
+|1917
+|Embossed dark green serial on white plate; "MD·1917" centered at bottom
+|''none''
+|12-345
+|20-000 to approximately 82-000
+|
+|-
+|[[File:Maryland license plate, 1918.png|150px]]
+|1918
+|Embossed white serial on dark gray plate; "MD·1918" centered at top
+|''none''
+|12-345
+|20-000 to approximately 95-000
+|
+|-
+|[[File:Maryland license plate, 1919.png|150px]]
+|1919
+|Embossed black serial on white plate; "MD·1919" centered at bottom
+|''none''
+|123-456
+|20-000 to approximately 109-000
+|
+|-
+|[[File:Maryland license plate, 1920.png|150px]]
+|1920
+|Embossed white serial on red plate; "MD·1920" centered at top
+|''none''
+|123-456
+|20-000 to approximately 113-000
+|
+|-
+|[[File:Maryland license plate, 1921.png|150px]]
+|1921
+|Embossed red serial on white plate with border line; "MD·1921" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 138-000
+|
+|-
+|[[File:1922 Maryland license plate.png|150px]]
+|1922
+|Embossed white serial on dark blue plate with border line; "MARYLAND·1922" centered at top
+|''none''
+|123-456
+|30-000 to approximately 151-000
+|First use of the full state name.
+|-
+|[[File:Maryland license plate, 1923.png|150px]]
+|1923
+|Embossed black serial on yellow plate with border line; "MARYLAND·1923" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 185-000
+|
+|-
+|[[File:Maryland license plate, 1924.png|150px]]
+|1924
+|Embossed orange serial on black plate with border line; "MARYLAND 1924" centered at top
+|''none''
+|123-456
+|30-000 to approximately 223-000
+|
+|-
+|[[File:Maryland license plate, 1925.png|150px]]
+|1925
+|Embossed white serial on green plate with border line; "MARYLAND 1925" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 242-000
+|
+|-
+|[[File:Maryland license plate, 1926.png|150px]]
+|1926
+|Embossed white serial on black plate with border line; "MARYLAND 1926" centered at top
+|''none''
+|123-456
+|30-000 to approximately 275-000
+|
+|-
+|[[File:Maryland license plate, 1927.png|150px]]
+|1927
+|Embossed black serial on white plate with border line; "MARYLAND 1927" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 288-000
+|
+|-
+|[[File:Maryland license plate, 1928.png|150px]]
+|1928
+|Embossed white serial on blue plate with border line; "MARYLAND 1928" centered at top
+|''none''
+|123-456
+|30-000 to approximately 305-000
+|
+|-
+|[[File:1929 Maryland plate.jpg|150px]]
+|1929
+|Embossed blue serial on white plate with border line; "MARYLAND 1929" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 325-000
+|
+|-
+|[[File:1930 Maryland license plate.jpg|150px]]
+|1930
+|Embossed white serial on green plate with border line; "MARYLAND 1930" centered at top
+|''none''
+|123-456
+|30-000 to approximately 342-000
+|
+|-
+|[[File:Maryland license plate, 1931.png|150px]]
+|1931
+|Embossed white serial on red plate with border line; "MARYLAND 1931" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 386-000
+|
+|-
+|[[File:1932 Maryland license plate.jpg|150px]]
+|1932
+|Embossed red serial on white plate with border line; "MARYLAND 1932" centered at top
+|''none''
+|123-456
+|30-000 to approximately 389-000
+|
+|-
+|[[File:1933 Maryland license plate.jpg|150px]]
+|1933
+|Embossed white serial on blue plate with border line; "MARYLAND 1933" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 385-000
+|
+|-
+|[[File:Maryland license plate, 1934.png|150px]]
+|1934
+|Embossed yellow serial on black plate with border line; "MARYLAND" centered at top; "1634" at top left and "1934" at top right
+|"TERCENTENARY" centered at bottom
+|123-456
+|30-000 to approximately 374-000
+|Commemorated the 300th anniversary of the settlement of Maryland.
+|-
+|[[File:Maryland license plate, 1935.png|150px]]
+|1935
+|Embossed dark blue serial on white plate with border line; "MARYLAND 1935" centered at bottom
+|''none''
+|123-456
+|30-000 to approximately 381-000
+|
+|-
+|[[File:Maryland license plate, 1936.png|150px]]
+|{{nowrap|1936–37}}
+|Embossed white serial on black plate with border line; "MARYLAND 1936" centered at top
+|''none''
+|123-456
+|30-000 to approximately 396-000
+|Valid through March 31, 1937.
+|-
+|[[File:Maryland license plate, 1937.png|150px]]
+|1937–38
+|Embossed black serial on white plate with border line; "MARYLAND 1937" centered at top
+|''none''
+|123-456
+|30-000 to approximately 409-000
+|
+|-
+|[[File:1939 Maryland license plate.jpg|150px]]
+|1938–39
+|Embossed white serial on green plate with border line; "MARYLAND EX-3-31-39" at top
+|''none''
+|123-456
+|30-000 to approximately 508-000
+|
+|-
+|[[File:Maryland license plate, 1939–1940.png|150px]]
+|1939–40
+|Embossed green serial on white plate with border line; "MARYLAND EX-3-31-40" at bottom
+|''none''
+|123-456
+|30-000 to approximately 522-000
+|
+|-
+|[[File:1941 Maryland license plate.jpg|150px]]
+|1940–41
+|Embossed white serial on dark blue plate with border line; "MARYLAND EX-3-31-41" at top
+|''none''
+|123-456
+|30-000 to approximately 544-000
+|
+|-
+|[[File:Maryland license plate, 1941–1944.png|150px]]
+|1941–44
+|Embossed black serial on silver plate with border line; "MARYLAND" centered at top; "3-31" at top left and "1942" at top right
+|"DRIVE CAREFULLY" centered at bottom
+|123-456
+|30-000 to approximately 654-000
+|Revalidated through March 31, 1943 with yellow tabs, then through March 31, 1944 with black tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Maryland license plate, 1944.png|150px]]
+|1944–47
+|Embossed silver serial on black plate with border line; "MARYLAND" centered at top; "3-31" at top left and "1945" at top right
+|"DRIVE CAREFULLY" centered at bottom
+|123-456
+|30-000 to approximately 688-000
+|Revalidated through March 31, 1946 with silver tabs, then through March 31, 1947 with yellow tabs.
+|-
+|[[File:1951 Maryland license plate.jpg|150px]]
+|1947–51
+|Embossed black serial on silver plate with border line; "MARYLAND" and "48" centered at top and bottom respectively
+|''none''
+|123-456
+|30-000 to approximately 795-000
+|Revalidated through March 31, 1949 with black tabs, then through March 31, 1950 with red tabs, and finally through March 31, 1951 with black tabs.
+|-
+|[[File:1953 Maryland license plate.jpg|150px]]
+|1951–53
+|Embossed silver serial on black plate with border line; "MARYLAND" and "MARCH 52" centered at top and bottom respectively
+|''none''
+|123-456
+|30-000 to approximately 795-000
+|Revalidated through March 31, 1953 with white tabs.
+|-
+|[[File:1954 Maryland License Plate.JPG|150px]]
+|1953–54
+|Embossed yellow serial on black plate with border line; "MARYLAND" and "54" centered at top and bottom respectively
+|''none''
+|AB-12-34
+|AA-10-01 to approximately JF-65-00
+|For each two-letter series, only the letters A through H, and J, were used.<ref name="allaboutlicenseplatesMD">{{cite web |last=Tanner |first=Eric N. |title=Maryland Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Maryland&code=md |publisher=allaboutlicenseplates.com |access-date=November 17, 2020}}</ref>
+|-
+|[[File:Maryland license plate, 1954–1955.png|150px]]
+|1954–55
+|Embossed black serial on golden yellow plate with border line; "MARYLAND" and "55" centered at top and bottom respectively
+|''none''
+|AB♦12♦34
+|
+|Letter K added to two-letter series.
+|-
+|[[File:Maryland license plate, 1955–1956.png|150px]]
+|1955–56
+|Embossed red serial on white plate with border line; "MARYLAND" and "56" centered at top and bottom respectively
+|''none''
+|AB:12:34
+|
+|
+|-
+|[[File:1956-57 Maryland license plate.jpg|150px]]
+|1956–57
+|Embossed dark green serial on white plate with border line; "MARYLAND" and "EXP-3-31-57" centered at top and bottom respectively
+|''none''
+|AB-12-34
+|
+|
+|-
+|[[File:1957-58 Maryland License Plate.JPG|150px]]
+|1957–58
+|Embossed white serial on dark green plate with border line; "MARYLAND" and "EXP-3-31-58" centered at top and bottom respectively
+|''none''
+|AB-12-34
+|
+|Letter L added to two-letter series.
+|-
+|[[File:Maryland license plate, 1958–1959.png|150px]]
+|1958–59
+|Embossed blue serial on white plate with border line; "MARYLAND" and "EXP-3-31-59" centered at top and bottom respectively
+|''none''
+|AB:12:34
+|
+|
+|-
+|[[File:Maryland license plate, 1960.png|150px]]
+|1959–60
+|Embossed white serial on blue plate with border line; "MARYLAND" and "EXP-3-31-60" centered at top and bottom respectively
+|''none''
+|AB♦12♦34
+|
+|
+|-
+|[[File:1960-61 Maryland license plate.JPG|150px]]
+|1960–61
+|Embossed black serial on turquoise plate with border line; "MARYLAND" and "EXP-3-31-61" centered at top and bottom respectively
+|''none''
+|AB:12:34
+|
+|
+|-
+|[[File:Maryland license plate, 1961-1962.png|150px]]
+|1961–62
+|Embossed blue serial on white plate with border line; "MARYLAND" and "EXP-3-31-62" centered at top and bottom respectively
+|''none''
+|AB-12-34
+|AA-10-01 to approximately FY-47-00
+|Letters M through Z (excluding O, Q and U) added to two-letter series. The practice of not using I, O, Q and U in standard passenger serials continues today.<ref name="allaboutlicenseplatesMD"/>
+|-
+|[[File:Maryland license plate, 1962–1963.png|150px]]
+|1962–63
+|Embossed white serial on blue plate with border line; "MARYLAND" and "EXP-3-31-63" centered at top and bottom respectively
+|''none''
+|AB♦12♦34
+|AA♦10♦01 to approximately FN♦98♦00
+|
+|-
+|[[File:Maryland license plate, 1963–1964.png|150px]]
+|1963–64
+|Embossed blue serial on white plate with border line; "MARYLAND" and "EXP-3-31-64" centered at top and bottom respectively
+|''none''
+|AB:12:34
+|AA:10:01 to approximately FX:92:00
+|
+|-
+|[[File:Maryland license plate, 1964-1965.png|150px]]
+|1964–65
+|Embossed white serial on blue plate with border line; "EXP-3-31-65" and "MARYLAND" centered at top and bottom respectively
+|''none''
+|AB-1234
+|AA-1001 to approximately GF-1300
+|
+|-
+|[[File:Maryland 1966 license plate - Number EX♦5332.jpg|150px]]
+|1965–66
+|Embossed black serial on golden yellow plate with border line; "EXP-3-31-66" and "MARYLAND" centered at top and bottom respectively
+|''none''
+|AB♦1234
+|AA♦1001 to approximately GP♦7800
+|
+|-
+|[[File:1966-67 Maryland license plate.JPG|150px]]
+|1966–67
+|Embossed golden yellow serial on black plate with border line; "EXP-3-31-67" and "MARYLAND" centered at top and bottom respectively
+|''none''
+|AB:1234
+|AA:1001 to approximately GZ:9000
+|
+|-
+|[[File:Maryland license plate, 1967–1968.png|150px]]
+|1967–68
+|Embossed blue serial on white plate with border line; "EXP-3-31-68" and "MARYLAND" centered at top and bottom respectively
+|''none''
+|AB-1234
+|AA-1001 to approximately HG-8000
+|
+|-
+|[[File:Maryland license plate, 1968–1969.png|150px]]
+|1968–69
+|Embossed white serial on blue plate with border line; "EXP-3-31-69" and "MARYLAND" centered at top and bottom respectively
+|''none''
+|AB♦1234
+|AA♦1001 to approximately HT♦5900
+|
+|-
+|[[File:Maryland license plate, 1969, new.png|150px]]
+|1969–70
+|Embossed blue serial on white plate with border line; "EXP-3-31-70" and "MARYLAND" centered at top and bottom respectively
+|''none''
+|AB&nbsp;1234
+|AA 1001 to approximately JB&nbsp;9300
+|
+|}
+
+===1970 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Maryland license plate, 1971 with 1975 sticker.png|150px]]
+|April<br>1970&nbsp;– March<br>1975
+|Embossed white serial on blue plate; border line around plate and around sticker spot at bottom right; "MARYLAND" centered at bottom; "71" at bottom left
+|''none''
+|AB&nbsp;1234
+|AA 1001 to approximately SC&nbsp;4300
+| 
+|-
+|[[File:1976 Maryland License Plate.jpg|150px]]
+|April<br>1975&nbsp;– March<br>1980
+|Embossed red serial on white plate; border line around plate and around sticker spot at top right; "MARYLAND" centered at top
+|''none''
+|ABC&nbsp;123
+|AAA 001 to approximately HNB&nbsp;999
+|
+|-
+|[[File:Maryland license plate, 1980.png|150px]]
+|April<br>1980&nbsp;– January 1986
+|Embossed black serial on white plate with border line; "MARYLAND" centered at top
+|''none''
+|ABC&nbsp;123
+|AAA 001 to approximately KHN&nbsp;999
+|
+|-
+|[[File:Maryland license plate, 1986–2004 with 2010 sticker.png|150px]]
+|February 1986&nbsp;– September 2004
+|rowspan="5"|Embossed black serial on reflective white plate; shield with design of the [[Flag of Maryland|state flag]] screened in the center; "Maryland" screened in black centered at top
+|rowspan="2"|''none''
+|ABC&nbsp;123
+|NAA 001 to ZZZ&nbsp;999, then AAA&nbsp;001 to MZZ&nbsp;999 (from mid-1992)
+|{{nowrap|Modification of the}} optional 350th Anniversary base introduced in 1983 (see below). Two-year renewals started on July 1, 1992.
+|-
+|[[File:Maryland license plate, 2004.png|150px]]
+|September 2004&nbsp;– February 2005
+|rowspan="4"|1AB&nbsp;C23
+|1AA A01 to 9AK&nbsp;Z99
+|rowspan="2"|
+|-
+|[[File:Maryland license plate, 2005.png|150px]]
+|February 2005&nbsp;– November 2006
+|rowspan="3"|"www.maryland.gov" screened in black centered at bottom
+|1AL A01 to 9CM&nbsp;Z99
+|-
+|[[File:2005 series Maryland license plate, 2006-made.png|150px]]
+|November&nbsp;– December 2006
+|1CN A01 to 9CN&nbsp;Z99
+|Manufactured in New Jersey using that state's serial [[Die (manufacturing)|die]]s, while the plate production facility at the Maryland State Prison was closed for three weeks due to inmate unrest.<ref name="ricksplates">{{cite web |last=Kretschmer |first=Rick |title=Current and Recent Maryland License Plates |url=http://www.ricksplates.com/maryland/mdcurr-per.htm |publisher=Rick Kretschmer's License Plate Archives |access-date=January 17, 2015}}</ref>
+|-
+|[[File:Maryland Passenger Sample License Plate 2005.jpg|150px]]
+|December 2006&nbsp;–<br>June 13, 2010
+|1CP A01 to approximately 4GD&nbsp;J47<ref name="Sage">{{cite web|url=http://www.licenseplates.cc/highs.php?where=MD |title=licenseplates.cc Maryland highs page |last=Sage |first=Kit |author2=Tanner, Eric |access-date=January 3, 2011}}</ref>
+|Identical to 2005–06 plates.
+|-
+| 
+|June 14, 2010<ref>{{cite web|url=http://starspangled200.org/About/Pages/LicensePlate.aspx |title=FAQs for the New Maryland License Plate |publisher=Maryland War of 1812 Bicentennial Commission |access-date=September 4, 2015 |archive-url=https://web.archive.org/web/20101128031616/http://starspangled200.org/About/Pages/LicensePlate.aspx |archive-date=November 28, 2010}}</ref>&nbsp;– September 25, 2016
+|[[War of 1812]] 200th anniversary commemorative design with [[Flag of the United States|U.S. flag]] and [[Fort McHenry]] silhouette.  Blue on reflective white.  State name in blue (with capital-letter sized, but lower-case shaped, "Y").  "War of 1812" text under state name in red. Was to be issued until 2015, but was extended. Commemorates both the Bicentennial, and the anniversary of the writing of the [[The Star-Spangled Banner|United States' national anthem]] by [[Francis Scott Key]].
+|www.starspangled200.org
+|1{{small|A/B}}2345
+|1{{small|M/D}}0000 to 9{{small|M/D}}9999; 1{{small|A/A}}0000 to approximately 7{{small|C/N}}9999
+|During the period when the plate was issued, the web address "www.starspangled200.org" belonged to a non-profit commemorating the War of 1812 bicentennial. Afterwards, the address was briefly owned by a gambling site in the Philippines but was reclaimed by the state government and now redirects to the Maryland Motor Vehicle Administration.<ref>{{Cite news |date=June 9, 2023 |title=Maryland reclaims web address linked to Philippines gambling site|work=[[The Washington Post]] |url=https://www.washingtonpost.com/transportation/2023/06/09/maryland-license-plates-gambling/ |access-date=December 20, 2023}}</ref>
+Serials issued on passenger vehicles, trucks and multi-purpose vehicles (SUVs and minivans).
+|-
+
+|[[File:Maryland 2016 License Plate.jpg|150px]]
+|September 26, 2016<ref>{{cite news|date=August 30, 2016|title=Hogan unveils new, Maryland-flag themed license plates|newspaper=[[The Baltimore Sun]]|url=http://www.baltimoresun.com/news/maryland/bs-md-license-plates-20160830-story.html|access-date=August 30, 2016}}</ref>&nbsp;– present
+|Embossed black serial on reflective white plate with state flag screened in bottom half; "Maryland" screened in red centered at top
+|''none''
+|1AB2345
+|8CN0000<ref>{{cite web|last=MDDeptPublicSafety|date=September 2, 2016|title=Maryland Proud License Plate|url=https://www.youtube.com/watch?v=ZT8VCkmS-yI|via=YouTube}}</ref> to 1HA3202 {{small|(as of March 7, 2026)}}<ref name=":0">{{Cite web |title=Maryland License Plates |url=https://www.licenseplates.cc/MD |access-date=2023-06-21 |website=www.licenseplates.cc}}</ref>
+|The letters I, O, Q, and U are not used, except for special-issue plates. E and F stopped being used in late 2023; plates jumped from 9FR9999 to 1GA0000 following this change. The GZ series was also skipped in early 2026.<ref name=":0"/>
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Maryland U.S. bicentennial license plate, 1977.png|150px]]
+|December 1975&nbsp;– February 1977
+|Embossed blue serial on reflective white plate; blue graphic screened at top left featuring the [[Fort McHenry]] cannons; "MARYLAND" screened in red centered at bottom; "1776" and "1976" screened in blue on either side of state name
+|"BICENTENNIAL" screened in blue centered at top, with a red star on either side
+|123 ABC
+|001 AAA to approximately 999 AFH
+|Manufactured by Polyvend Inc. of Arkansas. Last issued February 1977, but remained valid through March 31, 1980.
+|-
+|[[File:Maryland license plate, 1984.png|150px]]
+|August 1983&nbsp;– February 1986
+|Embossed black serial on reflective white plate; shield with design of the [[Flag of Maryland|state flag]] screened in the center; "Maryland" screened in black centered at top; "1634" and "1984" screened on either side of state name
+|"350th Anniversary" screened in black centered at bottom
+|123 ABC
+|001 AAA to approximately 999 AKE
+|Commemorated the 350th anniversary of the settlement of Maryland. Awarded "Plate of the Year" for best new license plate of 1984 by the [[Automobile License Plate Collectors Association]], the first time Maryland was so honored. Adopted as standard passenger base from 1986 to 2010 (see above).
+|-
+|rowspan="2"| 
+|rowspan="2"|December 1990&nbsp;– January 2004
+|rowspan="2"|Embossed dark green serial on reflective white plate; blue [[heron]] graphic screened in the center and dark green reed graphics at bottom corners; "Maryland" screened in blue centered at top
+|rowspan="2"|"Treasure the Chesapeake" screened in blue centered at bottom
+|123 ABC (passenger)
+|001 BAY to 999&nbsp;BAY; 001&nbsp;AAA to 899&nbsp;BNN
+|rowspan="2"|
+|-
+|ABC 12D (multi-purpose vehicle)
+|BAY 01A to BAY&nbsp;99Z; AAA&nbsp;01A to AEY&nbsp;99W<ref name="Sage"/>
+|-
+| [[File:Blank License Plate Shape.svg|150px]]
+|January 2004&nbsp;– October 28, 2018
+|Embossed black serial on reflective graphic plate featuring gradient blue sky, white sea, a heron and reeds at left, and a [[Callinectes sapidus|Chesapeake blue crab]] on sand at bottom right; "MARYLAND" screened in white centered at top
+|"Treasure the Chesapeake" screened in blue centered at bottom
+|12345{{small|'''C'''/A}}<br>12345{{small|'''B'''/'''Y'''}}<br>1234{{small|'''D'''/A}}&nbsp;♿
+|00001{{small|C/B}} to 99999{{small|C/B}}; 00001{{small|B/Y}} to 99999{{small|B/Y}}; 00001{{small|C/A}} to 99999{{small|C/A}}; 00001{{small|C/C}} to approximately 50000{{small|C/H}}
+|Same serial formats used for passenger and multi-purpose vehicles.
+|-
+| 
+|October 29, 2018<ref>{{cite press release |url=https://www.prnewswire.com/news-releases/new-chesapeake-bay-license-plate-design-unveiled-300733771.html |title=New Chesapeake Bay License Plate Design Unveiled |publisher=[[Chesapeake Bay Trust]] |agency=[[PR Newswire]] |date=October 18, 2018  |place=Annapolis |access-date=November 5, 2018}}</ref>&nbsp;– present
+|Embossed black serial on reflective graphic plate featuring cloudy blue sky, blue sea, seabed, the [[Chesapeake Bay Bridge]] and a Chesapeake blue crab at left and seagrass at bottom right; "MARYLAND" screened in black centered at top
+|"Protect the Chesapeake" screened in white centered at bottom (50001 {{small|C/H}} to 31999 {{small|C/M}})<br>"Protect the Chesapeake & Coastal Bays" screened in white centered at bottom (32000 {{small|C/M}})
+|12345{{small|'''C'''/A}}
+|50001{{small|C/H}} to 98034{{small|C/M}} {{small|(as of May 8, 2025)}}
+|Awarded "Plate of the Year" for best new license plate of 2018 by the Automobile License Plate Collectors Association, the second time Maryland was so honored. Same serial formats used for passenger and multi-purpose vehicles.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|July 2001&nbsp;– present
+|Embossed black serial on reflective graphic plate featuring orange and yellow gradient sky, green and white rolling hills, and a red farmhouse with a white silo and a green tree; "Maryland" screened in yellow centered at top
+|"Our Farms, Our Future" screened in yellow at bottom right
+|'''A'''123456
+|A000001 to A350180 {{small|(as of September 18, 2020)}}
+|Issued in celebration of Maryland's agricultural heritage. Same serial format used for passenger and multi-purpose vehicles.
+|-
+|[[File:Maryland "1910 Vintage" reproduction plate, 2014.png|150px]]
+|{{nowrap|January 1, 2014 –}} present
+|Embossed black serial on yellow plate with border line; "MARYLAND" screened in black centered at top
+|"1910 VINTAGE" screened in black centered at bottom
+|'''VR'''12345 (passenger car)<br>'''VG'''12345 (antique vehicles)<br>'''VR'''1234♿ (handicapped)
+|VR00001 to approximately VR00760
+|Special reproduction of Maryland's first license plate. Serials VR00300 and up were issued to the general public, while VR00001 to VR00299 were issued by special request.
+|}
+
+==Non-passenger plates==
+Multi-purpose vehicles (such as [[minivan]]s and [[sport utility vehicle]]s), as well as [[pickup truck]]s and cargo vans, have traditionally been issued separate plate types. However, since June 14, 2010, trucks and multi-purpose vehicles have been issued passenger plates with the same serial format, first on the War of 1812 commemorative base and currently on the "Maryland Proud" base.
+
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Maryland motorcycle license plate, 1971 with 1975 sticker.png|150px]]
+|rowspan="14"|Motorcycle
+|1970–75
+|White on blue with border line; "71 MD." at bottom
+|''none''
+|1234<br>A123<br>123A<br>AB12<br>12345
+|
+|rowspan="14"|Issued annually prior to 1970. All plates from 1986 until present are still valid.
+|-
+|[[File:Maryland motorcycle license plate, 1980.png|150px]]
+|1975–80
+|Red on white with border line; "MD." at bottom
+|''none''
+|123456
+|10000 to approximately 201500
+|-
+|[[File:Maryland motorcycle license plate, 1982.png|150px]]
+|1980–86
+|Black on white with border line; "MD." at bottom
+|''none''
+|123456
+|10000 to approximately 214000
+|-
+|rowspan="4"|[[File:Maryland motorcycle license plate, June 2008.png|150px]]
+|1986–89
+|rowspan="7"|Black on white; "Maryland" screened at top
+|rowspan="4"|''none''
+|12345'''D'''
+|00001D to 99999D
+|-
+|1989–97
+|1234'''D'''5
+|0000D1 to 9999D9
+|-
+|1997–2003
+|123'''D'''45
+|000D01 to 999D99
+|-
+|2003–05
+|rowspan="2"|123'''M'''45
+|000M01 to approximately 740M00
+|-
+|rowspan="3"|[[File:Maryland motorcycle license plate, May 2008.png|150px]]
+|2005–06
+|rowspan="3"|www.maryland.gov
+|740M01 to 999M99
+|-
+|2006–09
+|1'''D'''2345
+|0D0001 to 9D9999
+|-
+|2009&nbsp;– June 13, 2010
+|rowspan="2"|'''D'''12345
+|D00001 to approximately D39000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|June 14, 2010&nbsp;– mid 2012
+|rowspan="2"|As War of 1812 passenger base
+|rowspan="2"|www.StarSpangled200.org
+|D39001 to D99999
+|-
+|mid 2012&nbsp;– September 25, 2016
+|rowspan="2"|12345'''Y'''
+|00001Y to approximately 95000Y
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|September 26&nbsp;– December 2016
+|rowspan="2"|As "Maryland Proud" passenger base
+|rowspan="2"|''none''
+|95001Y to 99999Y
+|-
+|December 2016&nbsp;– present
+|123'''Y'''45
+|000Y01 to present
+|-
+|[[File:Maryland license plate, October 2003.png|150px]]
+|rowspan="5"|Multi-purpose
+|February 1986&nbsp;– October 1997
+|rowspan="5"|Black on white; "Maryland" screened at top
+|rowspan="3"|''none''
+|123456'''M'''
+|000001M to 999999M
+|rowspan="3"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|October 1997&nbsp;– February 2003
+|'''M'''123456
+|M000001 to M999999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|February 2003&nbsp;– February 2005
+|rowspan="2"|123'''M'''456
+|000M001 to 479M999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|February 2005&nbsp;– April<br>2007
+|rowspan="2"|www.maryland.gov
+|480M000 to 999M999
+|895M000 through 909M999 were manufactured in New Jersey using that state's serial [[Die (manufacturing)|die]]s, while the plate production facility at the Maryland State Prison was closed for three weeks due to inmate unrest.<ref name="ricksplates"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April<br>2007&nbsp;– June 13, 2010
+|12345'''M'''6
+|00000M1 to approximately 61999M9
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Truck
+|February 1986&nbsp;– December 1992
+|rowspan="3"|As shield passenger base
+|rowspan="2"|''none''
+|123 456
+|300 001 to 999&nbsp;999, then 000&nbsp;001 to 299&nbsp;999<br>(from 1989)
+|rowspan="3"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|December 1992&nbsp;– February 2005
+|rowspan="2"|12A 345
+|00A 001 to 22R&nbsp;999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|February 2005&nbsp;– June 13, 2010
+|www.maryland.gov
+|23R 000 to approximately 99X&nbsp;999
+|}
+
+==Government plates==
+Plates issued to local and state government agencies, including police and transit buses operated by a city or county or the state (for City of Baltimore).
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!style="width:70px;"|Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Local government-owned vehicle
+|1986
+|rowspan="2"|Black on reflective white with shield as separator in serial
+|''none''
+|rowspan="2"|{{small|'''L'''/'''G'''}} 12345
+|{{small|L/G}} 00001 to approximately {{small|L/G}}&nbsp;75000
+|rowspan="3"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005
+|rowspan="2"|www.maryland.gov
+|{{small|L/G}} 75001 to {{small|L/G}}&nbsp;99999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2014
+|As above, but with shield at left
+|12345 {{small|'''L'''/'''G'''}}
+|00001 {{small|L/G}} to 17397&nbsp;{{small|L/G}} {{small|(as of December 9, 2020)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|State government-owned vehicle
+|1986
+|rowspan="2"|Black on reflective white with shield as separator in serial
+|''none''
+|rowspan="2"|{{small|'''S'''/'''G'''}} 12345
+|{{small|S/G}} 00001 to approximately {{small|S/G}}&nbsp;22800
+|rowspan="3"|Serials {{small|S/G}}&nbsp;80000 and up used on State Highway Administration vehicles.<ref>{{cite web |last=Kretschmer |first=Rick |title=Maryland Government Vehicle and Official License Plates |url=http://www.ricksplates.com/maryland/mdgovt.htm |publisher=Rick Kretschmer's License Plate Archives |access-date=January 21, 2021}}</ref>
+|-
+|[[File:Maryland state license plate b.jpg|150px]]
+|2005
+|rowspan="2"|www.maryland.gov
+|{{small|S/G}} 22801 to approximately {{small|S/G}}&nbsp;30500
+|-
+|[[File:Maryland state license plate a.jpg|150px]]
+|2014
+|As above, but with shield at left
+|12345 {{small|'''S'''/'''G'''}}
+|00001 {{small|S/G}} to 07271&nbsp;{{small|S/G}} {{small|(as of December 20, 2020)}}
+|-
+|[[File:Maryland Natural Resources Police license plate.png|150px]]
+|[[Maryland Natural Resources Police|Natural Resources Police]]
+|
+|Screen-printed yellow slogan stacked vertically on black background, state name screen-printed and centered at top in yellow, serial screen-printed and stacked in yellow offset right.
+|'''NATURAL'''/'''RESOURCES'''/'''POLICE'''
+|1/2/3 
+|
+|-
+|[[File:Maryland State Police license plate.png|150px]]
+|rowspan="4"|[[Maryland State Police|State Police]]<ref name="auto1">{{Cite web|url=http://www.statetrooperplates.com/maryland.html|title=Maryland :: State Trooper Plates|website=www.statetrooperplates.com}}</ref>
+|1963–1984, 1997–present<ref name="auto1"/>
+|Stamped black text on yellow background of galvanized steel with state name stamped centered at top in black; slogan centered in black at top underneath state name with serial stamped centered at bottom in black.<ref name="auto1"/>
+|rowspan="2"|'''STATE POLICE'''<ref name="auto1"/>
+|rowspan="2"|A-12<ref name="auto1"/>
+|
+|
+|-
+|[[File:Maryland State Police license plate, 1995–1996.png|150px]]
+|1995–1996<ref name="auto1"/>
+|Stamped black text on yellow background of galvanized steel with state name stamped centered at top in black; slogan centered in middle with serial stamped centered at bottom in black.<ref name="auto1"/>
+|
+|
+|-
+|[[File:Maryland State Police license plate, 1990–1995.png|150px]]
+|1989–1995<ref name="auto1"/>
+|Printed emblem offset left, with state name printed centered at top, slogan printed centered at bottom, with printed serial in black on white silk-screened steel background.<ref name="auto1"/>
+|''State Police''<ref name="auto1"/>
+|
+|
+|
+|-
+|[[File:Maryland State Police license plate, c. 1985.png|150px]]
+|1985–1989<ref name="auto1"/>
+|Printed emblem offset left, with state name printed centered at top, slogan printed centered at bottom, with printed serial in black on white silk-screened aluminum background.<ref name="auto1"/>
+|''50th Anniversary''<ref name="auto1"/>
+|
+|
+|
+|}
+
+==Temporary plates==
+{|class="wikitable"
+|-
+!Image(s)
+!Type and/or tenure
+!Date(s) issued
+!Design
+!Information imprinting method
+|-
+|[[File:Maryland 1955 temporary license plate.png|150px]]
+|rowspan="2"|Temporary, 20-day
+|1955
+|rowspan="4"|Black on white cardboard
+|rowspan="3"|Hand-written
+|-
+|[[File:Maryland temporary tag, Hudson (March 1959).png|150px]]<br>[[File:Maryland temporary tag, Mercury (1960).png|150px]]<br>[[File:Maryland temporary tag, Oldsmobile (March 1963).png|150px]]
+|1959&ndash;1963
+|-
+|[[File:Maryland temporary tag (April 1970).png|150px]]<br>[[File:Maryland temporary tag, Toyota (February 1973).png|150px]]<br>[[File:Maryland_temporary_tag,_Chevrolet_convertible_(March_1976).png|150px]]<br>[[File:Maryland temporary tag, Dodge (July 1976).png|150px]]<br>[[File:Maryland temporary tag, Chevrolet (December 1977).png|150px]]
+|rowspan="2"|Temporary, 30-day
+|1970&ndash;1977
+|-
+|[[File:Maryland temporary tag, Chevrolet (1980s).png|150px]]<br>[[File:Maryland temporary tag (1980s).png|150px]]
+|1980s
+|Combination, hand-written and hole-punched
+|-
+|[[File:Maryland temporary tag, Mazda (November 1998).png|150px]]
+|Temporary, 45-day
+|1998&ndash;2000
+|Green on white cardboard
+|rowspan="2"|Hand-written
+|-
+|[[File:Maryland temporary tag, 1999 Nissan Sentra (August 2002).png|150px]]<br>[[File:Maryland temporary tag, Chrysler (February 2003).png|150px]]
+|rowspan="2"|Temporary, 60-day
+|2002&ndash;2003
+|rowspan="2"|Blue on white cardboard
+|-
+|[[File:Maryland temporary tag, Toyota (November 2006).png|150px]]
+|2006
+|Combination, hand-written and machine-printed
+|-
+|rowspan="2"|[[File:12-07-15-wikimania-wdc-by-RalfR-011.jpg|150px]]
+|rowspan="2"|Temporary,
+60-day
+|2011&ndash;2013<ref>{{cite web|url=https://www.ricksplates.com/maryland/mdtemp.htm|title=Rick Kretschmer's License Plate Archives – Maryland Temporary and Special Event Plates|first=Rick|last=Kretschmer|website=www.ricksplates.com}}</ref>
+|rowspan="2"|Black on white paper<ref>{{cite web|url=http://www.plateshack.com/y2k/Maryland3/md3y2k.html|title=Maryland 3 Y2K|website=www.plateshack.com}}</ref><ref name="auto"/>
+|Computer-printed
+|-
+|2013&ndash;present<ref name="auto">{{cite web|url=https://www.cecildaily.com/news/local_news/mva-now-offers-better-temporary-tag-for-new-vehicles/article_68283870-8b43-11e2-9501-001a4bcf887a.html|title=MVA now offers better temporary tag for new vehicles|first=Jane|last=Bellmyer|date=March 12, 2013 }}</ref>
+|Machine-printed
+|}
+
+==Organization plates==
+{{Main|Non-passenger and special vehicle registration plates of Maryland}}
+
+==See also==
+{{Portal|Maryland}}
+*[[List of non-passenger and special vehicle registration plates of Maryland]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+*[http://www.15q.net/md.html "Maryland license plates, 1969–present"] (June 16, 2017), by David Nicholson, Christopher Jackson, and Jeff Ellis, ''License Plates of North America, 1969–present''
+
+==External links==
+*{{Commons category-inline}}
+*
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Maryland}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Maryland}}
+[[Category:Vehicle registration plates of the United States by state or territory|Maryland]]
+[[Category:Transportation in Maryland]]
+[[Category:Maryland transportation-related lists]]

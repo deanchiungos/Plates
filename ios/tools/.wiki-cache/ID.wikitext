@@ -1,0 +1,1174 @@
+{{short description|Idaho vehicle license plates}}
+{{More citations needed|date=December 2022}}
+{{Use American English|date=June 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =
+| nickname =
+| slogan_label = Slogan 
+| slogan = Famous Potatoes
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format =
+| current_start_date = {{Start date|1991|09}}; screened serials used from {{Start date|2008|04}} onward
+| designer =  
+| issuer = [[Idaho Transportation Department]], Division of Motor Vehicles
+| manufacturer =
+| start_date = {{Start date|1913|05|07}}
+}}
+
+The U.S. state of [[Idaho]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plates]] in 1913. {{As of|2024}}, plates are issued by the [[Idaho Transportation Department]] through its Division of Motor Vehicles. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+===1913 to 1967===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Idaho license plate that fully complied with these standards: the issues from 1952 through 1955 (dated 1953 through 1956) were all 6 inches in height by 12 inches in width, but had non-standard mounting holes.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1913 Idaho Plate.jpg|150px]]
+|1913
+|Embossed white serial on blue plate; "IDAHO 1913" at right
+|''none''
+|1234
+|1 to approximately 2500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Embossed white serial on red plate; "IDAHO 1914" at right
+|''none''
+|1234
+|1 to approximately 3500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Embossed red serial on white plate; "IDAHO 1915" at right
+|''none''
+|1234
+|1 to approximately 8000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed black serial on yellow plate; "IDAHO 1916" at right
+|''none''
+|12345
+|1 to approximately 13000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Embossed yellow serial on black plate; "IDAHO 1917" at right
+|''none''
+|12345
+|1 to approximately 25000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed white serial on brown plate; "IDAHO 1918" at right
+|''none''
+|12345
+|1 to approximately 35000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1919
+|Embossed yellow serial on dark green plate; "IDAHO 1919" at right
+|rowspan="2"|''none''
+|rowspan="2"|12345
+|1 to approximately 40000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As above, but with "IDA 1919" at right
+|40001 to approximately 43000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed white serial on dark blue plate with border line; "IDA 1920" at right
+|''none''
+|12345
+|1 to approximately 55000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1921
+|Embossed black serial on orange plate; black lines at top and bottom borders; "IDAHO 1921" at right
+|''none''
+|12345
+|1 to approximately 65000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed orange serial on black plate; orange lines at top and bottom borders; "IDA 1922" at right
+|''none''
+|12-345
+|1 to approximately 60-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed orange serial on silver plate with border line; "IDA 1923" at right
+|''none''
+|12-345
+|1 to approximately 62-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed black serial on yellow plate; "IDA X-24" at right
+|''none''
+|12-345
+|1 to 60-000;<br>70-001 to approximately 72-000
+|Serials 60-001 through {{nowrap|70-000}} reserved for trucks.<ref>{{cite web |last=Tanner |first=Eric N. |title=Idaho Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Idaho&code=id |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed black serial on white plate with border line; "IDAHO X-25" at bottom
+|''none''
+|12-345
+|1 to approximately 74-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed black serial on orange plate with border line; "IDAHO X-26" at bottom
+|''none''
+|12-345
+|1 to approximately 87-000
+|
+|-
+|[[File:1927 Idaho license plate.jpg|150px]]
+|1927
+|Embossed orange serial on dark blue plate, "IDAHO–27" at bottom
+|''none''
+|12-345
+|1 to approximately 95-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Debossed green serial within embossed tan potato graphic on green plate with border line; "1928" at bottom right
+|"IDAHO POTATOES" at bottom, offset to left
+|12-345
+|1 to approximately 99-999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed golden yellow serial on black plate with border line; "IDAHO - 1929" at bottom
+|''none''
+|123-456
+|1 to approximately 120–000
+|
+|-
+|[[File:1930 Idaho license plate.jpg|150px]]
+|1930
+|Embossed black serial on golden yellow plate with border line; "1930 - IDAHO" at bottom
+|''none''
+|123-456
+|1 to approximately 112–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed white serial on black plate with border line; "IDAHO – 1931" at top
+|''none''
+|123-456
+|1 to approximately 115–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed black serial on orange plate with border line; vertical "IDA" at right and "1932" centered at top
+|''none''
+|{{small|''A/1''}} 1–234
+|Coded by county of issuance ({{small|''A/1''}})
+|
+|-
+|[[File:1933 Idaho license plate.jpg|150px]]
+|1933
+|Embossed orange serial on black plate; "19 - IDAHO - 33" at bottom
+|''none''
+|''1A''-12-34
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed black serial on golden yellow plate; "19 - IDAHO - 34" at bottom
+|''none''
+|{{nowrap|''1A''-12-345}}
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed golden yellow serial on black plate; "19 - IDAHO - 35" at top
+|''none''
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed black serial on golden yellow plate; "19 - IDAHO - 36" at bottom
+|''none''
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed black serial on silver plate with border line; "IDAHO - 1937" at bottom
+|''none''
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:1938 Idaho license plate.jpg|150px]]
+|1938
+|Embossed white serial on maroon plate with border line; "IDAHO - 1938" at bottom
+|''none''
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed yellow serial on blue plate; "IDAHO - 1939" at bottom
+|''none''
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed green serial on gold plate; "1890 IDAHO 1940" centered at bottom
+|"50 YEARS STATEHOOD" centered at top
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed black serial on yellow plate; "1941" at bottom right
+|"SCENIC IDAHO" at bottom, offset to left
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|
+|-
+|[[File:1942 Idaho license plate.jpg|150px]]
+|{{nowrap|1942–44}}
+|Embossed dark blue serial on white plate; "42" at bottom right
+|"SCENIC IDAHO" at bottom, offset to left
+|''1A''-12-345
+|Coded by county of issuance (''1A'')
+|Revalidated for 1943 and 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed black serial on golden yellow plate with border line; "45" at bottom right
+|"SCENIC IDAHO" at bottom, offset to left
+|''A''-12-34<br>''0A''-12-345
+|Coded by county of issuance (''A'' or ''0A'')
+|Current county-coding system introduced.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed white serial on black plate with border line; "46" at bottom right
+|"SCENIC IDAHO" at bottom, offset to left
+|''A''-12-34<br>''0A''-12-345
+|Coded by county of issuance (''A'' or ''0A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed white serial on dark blue plate with border line; embossed graphic in the center featuring a skier and mountains; "19 IDAHO 47" centered at top
+|"Vacation Wonderland" centered at bottom
+|{{small|''A''}} 1234<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1948–49
+|Embossed black serial on silver plate; [[baked potato]] sticker in the center; "IDAHO 48" centered at top
+|"World Famous POTATOES" centered at bottom
+|{{small|''A''}} 1234<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|Revalidated for 1949 with silver tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed white serial on black plate with border line; "IDAHO 50" centered at top
+|''none''
+|{{small|''A''}} 1234<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:Idaho 1951 license plate.JPG|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1951–52
+|Embossed white serial on maroon plate with border line; "IDAHO 51" centered at top
+|''none''
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|Revalidated for 1952 with silver tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|Embossed white serial on black plate with border line; "IDAHO 53" centered at top
+|"WORLD FAMOUS POTATO" at bottom
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1954 Idaho license plate.jpg|150px]]
+|1954
+|Embossed black serial on white plate with border line; "IDAHO 54" centered at bottom
+|''none''
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed white serial on black plate with border line; "IDAHO 55" centered at bottom
+|''none''
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed black serial on white plate with border line; "IDAHO 56" centered at top
+|"WORLD FAMOUS POTATO" at bottom
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|Embossed white serial on light green plate with border line; "IDAHO 57" centered at top
+|"FAMOUS POTATOES" centered at bottom
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1958 Idaho license plate.JPG|150px]]
+|1958
+|Embossed dark green serial on white plate with border line; "IDAHO 58" centered at top
+|"FAMOUS POTATOES" centered at bottom
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1959 Idaho license plate.JPG|150px]]
+|1959
+|Embossed white serial on dark green plate with border line; "IDAHO 59" centered at top
+|"FAMOUS POTATOES" centered at bottom
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1960 Idaho license plate.JPG|150px]]
+|1960
+|As 1958 base, but with "IDAHO 60" at top
+|"FAMOUS POTATOES" as on 1958 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1961
+|As 1959 base, but with "IDAHO 61" at top
+|"FAMOUS POTATOES" as on 1959 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1962 Idaho License Plate.jpg|150px]]
+|1962
+|As 1958 base, but with "IDAHO 62" at top
+|"FAMOUS POTATOES" as on 1958 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1963 Idaho license plate.jpg|150px]]
+|1963
+|As 1959 base, but with "IDAHO 63" at top
+|"FAMOUS POTATOES" as on 1959 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1964 Idaho license plate.JPG|150px]]
+|1964
+|As 1958 base, but with "IDAHO 64" at top
+|"FAMOUS POTATOES" as on 1958 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1965 Idaho license plate.JPG|150px]]
+|1965
+|As 1959 base, but with "IDAHO 65" at top
+|"FAMOUS POTATOES" as on 1959 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1966 Idaho License Plate.jpg|150px]]
+|1966
+|As 1958 base, but with "IDAHO 66" at top
+|"FAMOUS POTATOES" as on 1958 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|-
+|[[File:1967 Idaho license plate.JPG|150px]]
+|1967
+|As 1959 base, but with "IDAHO 67" at top
+|"FAMOUS POTATOES" as on 1959 base
+|{{small|''A''}} 12345<br>{{small|''0''/''A''}} 12345
+|Coded by county of issuance ({{small|''A''}} or {{small|''0''/''A''}})
+|
+|}
+
+===1968 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1968-70 Idaho License Plate.jpg|150px]]
+|1968–70
+|Embossed green serial on white plate with border line; "IDAHO 68" centered at top
+|rowspan="2"|"FAMOUS POTATOES" centered at bottom
+|rowspan="2"|{{small|''A''}} 12345<br>{{small|''0/A''}} 12345<br>{{small|'''''1/A'''''}} A1234
+|rowspan="2"|Coded&nbsp;by county of issuance ({{small|''A''}} or {{small|''0/A''}})
+|rowspan="2"|
+|-
+|[[File:1971-73 Idaho License Plate.jpg|150px]]
+|1971–73
+|As above, but with simply "IDAHO" centered at top
+|-
+|[[File:Idaho 1977 license plate sticker on 1974 license plate.jpg|150px]]
+|1974
+|Embossed green serial on white plate with border line; "IDAHO 74" centered at top
+|rowspan="2"|"FAMOUS POTATOES" centered at bottom
+|rowspan="4"|{{small|''A''}} 12345<br>{{small|'''''K'''''}} A1234<br>{{small|''0/A''}} 12345<br>{{small|''0/A''}} A1234<br>{{small|'''''1/A'''''}} AB123
+|rowspan="4"|Coded by county of issuance ({{small|''A''}} or {{small|''0/A''}})
+|rowspan="2"|
+|-
+|[[File:Idaho license plate, 1979.png|150px]]
+|1975–82
+|As above, but with simply "IDAHO" centered at top
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1982–85
+|Embossed green serial on white plate; "IDAHO" screened in green centered at top, with the 'A' resembling a mountain peak
+|"Famous Potatoes" screened in green centered at bottom
+|Serials in each county continued from where the 1974–82 plates left off.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1985–87
+|rowspan="3"|Embossed green serial on white plate; screened green lines above and below serial; screened green [[Sawtooth Range (Idaho)|Sawtooth Mountains]] graphic on top line at the right; "IDAHO" screened in green to left of graphic, with the 'A' resembling a mountain peak
+|rowspan="3"|"Famous Potatoes" screened in green centered below serial, just above bottom line
+|Serials in each county continued from where the 1982–85 plates left off.
+|-
+|[[File:Idaho license plate, 1987–1991 series with March 1990 sticker.png|150px]]
+|1987–89
+|rowspan="2"|{{small|''A''}} 12345<br>{{small|''0/A''}} 12345<br>{{small|'''''1/A'''''}} A1234<br>{{small|'''''2/C'''''}}&nbsp;123456 
+|rowspan="2"|Coded by county of issuance ({{small|''A''}} or {{small|''0/A''}})
+|Top line cut off at the left, allowing for taller county-code characters. This plate replaced all 1974–87 plates; serials in each county thus restarted from 1.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1989&nbsp;– September 1991
+|Narrow serial dies introduced, allowing for six-digit serials in [[Canyon County, Idaho|Canyon County]]. ([[Ada County, Idaho|Ada County]] had already gone over to one-letter, four-digit serials after reaching 99999.)
+|-
+|<!-- [[File:Idaho 1995 license plate.jpg|150px]] -->
+|September 1991&nbsp;– June<br>1997
+|Embossed dark blue serial on mountain scene with red and white gradient sky, pale blue mountains and dark blue forest; tall dark blue tree screened at far right; "IDAHO" screened in white centered at top
+|rowspan="4"|"Scenic" screened in white to left of state name, giving "Scenic Idaho"; "FAMOUS POTATOES" screened in white centered at bottom
+|{{small|''A''}} 123456<br>{{small|''0/A''}} 123456
+|Coded by county of issuance ({{small|''A''}} or {{small|''0/A''}})
+|Modification of the optional Centennial base introduced in 1987 (see Optional plates below). Awarded "Plate of the Year" for best new license plate of 1991 by the [[Automobile License Plate Collectors Association]], the second time Idaho was so honored.
+|-
+| 
+|June 1997&nbsp;– April<br>2008
+|As above, but with tall dark blue tree removed and red section of sky reduced in height
+|rowspan="2"|''A'' 123456<br>''0A'' 12345<br>''0A'' A1234<br>''0A'' AB123<br>''0A'' 1A234<br>'''''1A''''' 1234A<br>'''''1A''''' 123AB<br>'''''10B''''' 1234<br>'''''10B''''' A123
+|rowspan="3"|Coded by county of issuance (''A'' or ''0A'')
+|Full-size county codes introduced in addition to design modifications, all for better visibility. Serials in each county continued from where the 1991–97 plates left off, but were now restricted to seven characters (including the county-code characters).
+|-
+| 
+|April 2008<ref>{{cite web |last=Turnbull |first=Andrew |title=March of the Flats |url=http://www.andrewturnbull.net/plates/flat.html |publisher=The Andrew Turnbull Network |access-date=March 29, 2015}}</ref>&nbsp;– December 2020
+|rowspan="2"|As above, but with screened black serial and full white border around plate
+|Serials in each county continued from where the 1997–2008 plates left off.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|December 2020&nbsp;– present
+|''A'' 1234'''U'''<br>''A'' A123'''U'''<br>'''''K''''' AB12'''U'''<br>''0A'' 1234'''U'''<br>''0A'' A123'''U'''<br>''0A'' AB12'''U'''<br>''0A''&nbsp;ABC1'''U'''<br>'''''10B''''' 123'''U'''<br>'''''10B''''' A12'''U'''
+|New serial formats introduced in each county.
+Canyon County uses a '''P''' suffix instead of U as with every other county.  
+
+Ada County has progressed from the U suffix to the '''V''' suffix. 
+|}
+
+==County coding==
+The current county-coding system on standard-issue Idaho license plates has been in use since 1945. The naming convention is the order of the county in an alphabetical list followed by the first letter of the county name. For example, <code>2T</code> indicates the second county beginning with <code>T</code> in an alphabetical list, or [[Twin Falls County, Idaho|Twin Falls County]]. If only one county begins with a particular letter, the letter alone serves as the county code. Specialty and [[Vehicle registration plates of the United States#Vanity and specialty plates|vanity]] license plates do not use county codes; some non-passenger types are county-coded, while others are not.
+{|class="wikitable collapsible autocollapse sortable"
+|-
+! County !! 1934–44 !! 1945–present
+|-
+| [[Ada County, Idaho|Ada]] || 1A || {{sort|01A|1A}}
+|-
+| [[Adams County, Idaho|Adams]] || 2A || {{sort|02A|2A}}
+|-
+| [[Bannock County, Idaho|Bannock]] || 3A || {{sort|01B|1B}}
+|-
+| [[Bear Lake County, Idaho|Bear Lake]] || 4A || {{sort|02B|2B}}
+|-
+| [[Benewah County, Idaho|Benewah]] || 5A || {{sort|03B|3B}}
+|-
+| [[Bingham County, Idaho|Bingham]] || 6A || {{sort|04B|4B}}
+|-
+| [[Blaine County, Idaho|Blaine]] || 7A || {{sort|05B|5B}}
+|-
+| [[Boise County, Idaho|Boise]] || 8A || {{sort|06B|6B}}
+|-
+| [[Bonner County, Idaho|Bonner]] || 9A || {{sort|07B|7B}}
+|-
+| [[Bonneville County, Idaho|Bonneville]] || 1P || {{sort|08B|8B}}
+|-
+| [[Boundary County, Idaho|Boundary]] || 2P || {{sort|09B|9B}}
+|-
+| [[Butte County, Idaho|Butte]] || 3P || {{sort|10B|10B}}
+|-
+| [[Camas County, Idaho|Camas]] || 4P || {{sort|01C|1C}}
+|-
+| [[Canyon County, Idaho|Canyon]] || 5P || {{sort|02C|2C}}
+|-
+| [[Caribou County, Idaho|Caribou]] || 6P || {{sort|03C|3C}}
+|-
+| [[Cassia County, Idaho|Cassia]] || 7P || {{sort|04C|4C}}
+|-
+| [[Clark County, Idaho|Clark]] || 8P || {{sort|05C|5C}}
+|-
+| [[Clearwater County, Idaho|Clearwater]] || 9P || {{sort|06C|6C}}
+|-
+| [[Custer County, Idaho|Custer]] || 1H || {{sort|07C|7C}}
+|-
+| [[Elmore County, Idaho|Elmore]] || 2H || {{sort|00E|E}}
+|-
+| [[Franklin County, Idaho|Franklin]] || 3H || {{sort|01F|1F}}
+|-
+| [[Fremont County, Idaho|Fremont]] || 4H || {{sort|02F|2F}}
+|-
+| [[Gem County, Idaho|Gem]] || 5H || {{sort|01G|1G}}
+|-
+| [[Gooding County, Idaho|Gooding]] || 6H || {{sort|02G|2G}}
+|-
+| [[Idaho County, Idaho|Idaho]] || 7H || {{sort|00I|I}}
+|-
+| [[Jefferson County, Idaho|Jefferson]] || 8H || {{sort|01J|1J}}
+|-
+| [[Jerome County, Idaho|Jerome]] || 9H || {{sort|02J|2J}}
+|-
+| [[Kootenai County, Idaho|Kootenai]] || 1K || {{sort|00K|K}}
+|-
+| [[Latah County, Idaho|Latah]] || 2K ||{{sort|01L|1L}}
+|-
+| [[Lemhi County, Idaho|Lemhi]] || 3K || {{sort|02L|2L}}
+|-
+| [[Lewis County, Idaho|Lewis]] || 4K || {{sort|03L|3L}}
+|-
+| [[Lincoln County, Idaho|Lincoln]] || 5K || {{sort|04L|4L}}
+|-
+| [[Madison County, Idaho|Madison]] || 6K || {{sort|01M|1M}}
+|-
+| [[Minidoka County, Idaho|Minidoka]] || 7K || {{sort|02M|2M}}
+|-
+| [[Nez Perce County, Idaho|Nez Perce]] || 8K || {{sort|00N|N}}
+|-
+| [[Oneida County, Idaho|Oneida]] || 9K || {{sort|01O|1O}}
+|-
+| [[Owyhee County, Idaho|Owyhee]] || 1R || {{sort|02O|2O}}
+|-
+| [[Payette County, Idaho|Payette]] || 2R || {{sort|01P|1P}}
+|-
+| [[Power County, Idaho|Power]] || 3R || {{sort|02P|2P}}
+|-
+| [[Shoshone County, Idaho|Shoshone]] || 4R || {{sort|00S|S}}
+|-
+| [[Teton County, Idaho|Teton]] || 5R || {{sort|01T|1T}}
+|-
+| [[Twin Falls County, Idaho|Twin Falls]] || 6R || {{sort|02T|2T}}
+|-
+| [[Valley County, Idaho|Valley]] || 7R || {{sort|00V|V}}
+|-
+| [[Washington County, Idaho|Washington]] || 8R || {{sort|00W|W}}
+|}
+
+==Non-passenger plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] [[Tractor unit|Tractor]]
+|{{nowrap|{{small|'''P'''/'''R'''/'''P'''}} '''A'''B 1234}}
+|{{nowrap|{{small|P/R/P}} AA 1}} to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] [[Trailer (vehicle)|Trailer]]
+|{{nowrap|{{small|'''P'''/'''R'''/'''P'''}} '''C'''B 1234}}
+|{{nowrap|{{small|P/R/P}} CA 1}} to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] [[Truck]]
+|{{nowrap|{{small|'''P'''/'''R'''/'''P'''}} '''B'''B 1234}}
+|{{nowrap|{{small|P/R/P}} BA 1}} to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Antique car|Classic]]
+|1234
+|
+|Serials became screened by 9991.
+|-
+|rowspan="3"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[Commercial vehicle|Commercial]]
+|'''K'''B 1234
+|KA 1 to KZ 9999
+|rowspan="3"|Serials became screened around KL 5000.
+|-
+|'''KZ''' 12345
+|KZ 10000 to approximately KZ&nbsp;26000
+|-
+|'''K'''B C123
+|KA A001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Car dealership|Dealer]]
+|{{small|'''D'''/'''L'''/'''R'''}} 1234–56
+|
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Disability|Disabled Person]]
+|{{access icon|10px}} '''D'''B 123
+|{{access icon|10px}} DA 001 to {{access icon|10px}} DZ&nbsp;999
+|rowspan="2"|Serials became screened between DR 451 and DU 201. DV series reserved for Disabled Veteran plates.
+|-
+|{{access icon|10px}} '''D'''BC 12
+|{{access icon|10px}} DAA 01 to present
+|-
+|[[File:Idaho Fleet License Plate.png|150px]]
+|[[Fleet vehicle|Fleet]]
+|'''F'''L12345
+|FL00001 to present
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Motorcycle]]
+|'''M'''BC 123
+|MAA 1 to MZZ&nbsp;999
+|rowspan="2"|Serials became screened between MPE 289 and MPH 714.
+|-
+|'''M'''12 345
+|M10 000 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Antique car|Old Timer]]
+|12
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Hot rod|Street Rod]]
+|123A
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Truck
+|''A'' 12345'''T'''<br>''A'' A1234'''T'''<br>''0A'' 1234'''T'''<br>''0A'' A123'''T'''
+|Coded by county of issuance (''A'' or ''0A'')
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Utility [[Trailer (vehicle)|Trailer]]
+|123 '''U'''BC
+|1 UAA to 999&nbsp;UZZ
+|rowspan="2"|Motorcycle-sized plate.
+|-
+|'''Z'''BC 123
+|ZAA 1 to present
+|}
+
+==Government types==
+{|class=wikitable
+|-
+!Image
+!Type
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Ada County, Idaho|Ada County]] [[Sheriff]]
+|'''AC'''123
+|AC1 to present
+|At least some plates issued on "Celebrate Idaho Youth: America's Promise" base.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Building Safety
+|'''DBS''' 123
+|DBS 1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Labor
+|'''J''' 12
+|J 1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fire Department
+|'''F''' 1
+|F 1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Gem County, Idaho|Gem County]] Sheriff
+|'''GCS''' 123
+|GCS 1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Idaho State Police]]
+|'''ISP''' 123
+|ISP 1 to present
+|
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Idaho Centennial
+|rowspan="2"|1987
+|rowspan="3"|Embossed dark blue serial on mountain scene with red and white gradient sky, pale blue mountains and dark blue forest; two tall dark blue trees screened at far left; "IDAHO" and "CENTENNIAL" screened in white centered at top and bottom respectively; "1890" at top left and "1990" at top right
+|12345'''C'''
+|1C to 99999C
+|rowspan="3"|Awarded "Plate of the Year" for best new license plate of 1987 by the [[Automobile License Plate Collectors Association]], the first time Idaho was so honored. Adopted as standard passenger base from 1991 onwards (see above).
+
+Since the introduction of this design, the plate has been colloquially referred to by Idahoans as the "nuclear winter" plate. It remains so to this day (with the most recent 2008 design retaining the characteristic features).
+|-
+|<!-- [[File:Idaho centennial license plate.jpg|150px]] -->
+|'''C'''12345
+|C1 to approximately C78000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1992
+|123 ABC
+|100 AAA to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Agriculture]]
+|
+|As current passenger base, but with farm scene graphic screened at left featuring a red farmhouse, a silver silo and white clouds, and "AGRICULTURE" centered at bottom
+|1234'''A'''
+|1A to present
+|
+|-
+|
+|[[Appaloosa]]
+|2003
+|As current passenger base, but with Appaloosa horse graphic screened at left, "Discover Idaho Heritage" at top, and "APPALOOSA" at bottom
+|1234'''B'''
+|1B to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Idaho State Capitol|Capitol]] Restoration
+|
+|
+|1234'''R'''
+|1R to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Celebrate Idaho Youth: America's Promise
+|
+|
+|1234'''Y'''
+|1Y to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Colleges and Universities
+|
+|
+|1234'''S'''<br />12'''SAS'''<br />1AB2'''S'''
+|1S to 9999S<br />?<br />?
+|Idaho State University redesigned at least by transition to surface-printed serials.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Chevrolet Corvette|Corvette]]
+|
+|As current passenger base, but with Corvette logo screened at left, "Drive Idaho" at top, and "America's Sports Car" centered at bottom
+|1234'''M'''
+|1M to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Benevolent and Protective Order of Elks|Elks]] USA
+|c. 2009
+|
+|''unknown''
+|''unknown''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Firefighter|Fire Fighters]]
+|
+|As current passenger base, but with graphic screened at left featuring two firefighters and flames, and "FIRE FIGHTERS" centered at bottom
+|1234'''X'''
+|1X to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Forest]]s Today and Tomorrow
+|
+|
+|1234'''F'''
+|1F to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Idaho Aviation
+|2012
+|As current passenger base, but with yellow airplane graphic screened at left, "Fly Idaho" at top, and "A PILOT'S PARADISE" centered at bottom
+|12345'''I'''
+|00001I to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Mountain biking|Idaho Biking: Preserve Our Trails]]
+|
+|As current passenger base, but with mountain biker graphic screened at left, "Biking" to right of state name, and "PRESERVE OUR TRAILS" centered at bottom
+|12345'''F'''
+|00001F to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Ideas. Innovations. Idaho.
+|
+|As current passenger base, but with [[Incandescent light bulb|light bulb]] graphic screened at left, with a yellow state shape as its filament, and "IDEAS. INNOVATIONS. IDAHO." centered at bottom
+|'''U'''1234
+|U0001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Lewis and Clark Expedition|Lewis & Clark]]
+|
+|As current passenger base, but with graphic of a pointing Native American Indian woman screened at left, "Discover Idaho" at top, and "1803 LEWIS & CLARK 1806" centered at bottom
+|1234'''L'''
+|1L to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Mining]]: Yesterday, Today, Tomorrow
+|c. 2009
+|
+|12345'''C'''
+|00001C to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States National Guard|National Guard]]
+|
+|
+|1234'''G'''
+|1G to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Home on the Range|On the Range]]
+|c. 2009
+|
+|12345'''B'''
+|00001B to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Law enforcement officer|Peace Officer]]
+|
+|As current passenger base, but with the logo of the Idaho Peace Officers' Memorial screened at left and "Honoring our Peace Officers" centered at bottom
+|1234'''J'''
+|1J to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Pet Friendly
+|July 1, 2019<ref>{{cite web|title=Pet-friendly license plates now available in Idaho |url=https://www.ktvb.com/article/news/pet-friendly-license-plates-now-available/277-a987d948-7a20-4f4e-b04d-fbbed708aed8 |publisher=[[KTVB]] |date=July 1, 2019 |access-date=March 25, 2020}}</ref>
+|As current passenger base, but with dog and cat graphic screened at left and "PET FRIENDLY", with a heart on either side, centered at bottom
+|'''PF'''123
+|PF001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Purple Heart]]
+|
+|
+|1234'''H'''
+|1H to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Amateur radio|Radio Amateur]]
+|
+|As current passenger base, but with "RADIO AMATEUR" centered at bottom
+|''FCC [[Call sign#Amateur radio|call sign]]''
+|''various''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Rotary International|Rotary]]
+|
+|As current passenger base, but with black Rotary logo screened at left and "Service Above Self" centered at bottom
+|'''RI'''123
+|RI001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Sawtooth National Recreation Area]]
+|
+|As current passenger base, but with graphic screened at left featuring a white [[mountain goat]] against a purple mountain and a white sun, and "Sawtooth National Recreation Area" centered at bottom
+|1234'''Z'''
+|1Z to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Scenic Idaho: Wild [[River]]s
+|
+|
+|1234'''U'''
+|1U to present
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Skiing|Ski Idaho: Winter Wonderland]]
+|rowspan="2"|
+|rowspan="2"|As current passenger base, but with skier graphic screened at left, "Ski" to left of state name, and "WINTER WONDERLAND" at bottom
+|1234'''K'''
+|1K to 9999K
+|rowspan="2"|
+|-
+|123A'''K'''
+|1AK to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Snowmobiling|Snowmobile: World's Best Trails]]
+|
+|
+|1234'''N'''
+|1N to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Special Olympics
+|June 2008<ref>{{cite web |title=Sale of new license plates to benefit 2009 Special Olympics World Games in Idaho |url=http://www.itd.idaho.gov/transporter/2008/061308_Trans/061308_OlyPlates.html |publisher=[[Idaho Transportation Department]] |date=June 6, 2008 |url-status=dead |archive-url=https://web.archive.org/web/20100622103941/http://www.itd.idaho.gov/transporter/2008/061308_Trans/061308_OlyPlates.html |archive-date=June 22, 2010 |access-date=October 11, 2014}}</ref>
+|As current passenger base, but with the logo of the [[2009 Special Olympics World Winter Games]] screened at left and "SPECIAL OLYMPICS" centered at bottom
+|''unknown''
+|''unknown''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support Our Troops
+|
+|
+|12345'''S'''
+|00001S to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Supporting [[Motorcycle|Rider]] Education
+|
+|As current passenger base, but with the logo of the [https://idahostar.org/ Idaho STAR Motorcycle Safety Program], featuring three motorcyclists, screened at left and "Supporting Rider Education" centered at bottom
+|1234'''P'''
+|1P to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|The Gem State
+|
+|As current passenger base, but with graphic screened at left consisting of a diamond, two [[quartz]] crystals and a [[Garnet#Gemstones|star garnet]], and "THE GEM STATE" centered at bottom
+|12345'''E'''
+|00001E to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Timeless Idaho Values: [[Boy Scouts of America|Boy Scouts]]
+|
+|
+|1234'''I'''
+|1I to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Veteran]]
+|
+|
+|1234'''V'''
+|1V to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Wilderness]] - Frank Church: River of No Return and Selway-[[Bitterroot Mountains|Bitterroot]]
+|
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife &ndash; [[bluebird]]
+|
+|
+|12345
+|1 to present
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Wildlife &ndash; [[cutthroat trout|cutthroat]]
+|rowspan="2"|2003
+|rowspan="2"|
+|1234'''D'''
+|1D to 9999D
+|rowspan="2"|
+|-
+|123A'''D'''
+|1AD to present
+|-
+|rowspan="4"|<!-- [[File:Idaho wildlife elk license plate.jpg|150px]] -->
+|rowspan="4"|Wildlife &ndash; [[elk]]
+|rowspan="4"|1998<br />redesigned c. 2008
+|rowspan="4"|
+|1234'''E'''
+|1E to 9999E
+|rowspan="4"|Awarded "Plate of the Year" for best new [[Vehicle registration plates of the United States#Vanity and specialty plates|optional license plate]] of 1998 by the [[Automobile License Plate Collectors Association]], the third time Idaho was so honored. Co-recipient with [[Vehicle registration plates of Alaska|Alaska]].
+|-
+|123A'''E'''
+|1AE to 999ZE
+|-
+|12AB'''E'''
+|1AAE to 99ZZE
+|-
+|12A3'''E'''
+|1A0E to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|World Famous Potatoes
+|
+|As current passenger base, but with baked potato graphic screened at left, "World" and "Famous" on either side of the state name, and "Potatoes" centered at bottom
+|1234'''T'''
+|1T to present
+|
+|}
+
+===Discontinued===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Basque Americans|Basque]]
+|2006&nbsp;– June 30, 2011<ref>{{cite web|title=Idaho's Basque heritage license plate gets death penalty |url=https://www.eitb.eus/en/news/detail/684861/idahos-basque-heritage-license-plate-gets-death-penalty/ |publisher=[[EITB]] |date=May 9, 2011 |access-date=March 25, 2020}}</ref>
+|As current passenger base, but with green and white sheep wagon graphic screened at left and "BASQUE" centered at bottom
+|'''B'''1234
+|B0001 to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Breast Cancer]]
+|{{nowrap|c. 2009–12}}
+|As current passenger base, but with [[pink ribbon]] graphic screened at left and "EARLY DETECTION SAVES LIVES" centered at bottom
+|''unknown''
+|''unknown''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Historic preservation|Historic Idaho: Preserve Our Heritage]]
+|? to 2012<ref>{{cite news |last=Prentice |first=George |date=June 19, 2012 |title=Idaho Reins In Specialty License Plates |url=https://www.boiseweekly.com/CityDesk/archives/2012/06/19/idaho-reins-in-speciality-license-plates |newspaper=[[Boise Weekly]] |access-date=March 19, 2018 |archive-date=March 19, 2018 |archive-url=https://web.archive.org/web/20180319151437/https://www.boiseweekly.com/CityDesk/archives/2012/06/19/idaho-reins-in-speciality-license-plates |url-status=dead }}</ref>
+|As current passenger base, but with graphic of a wooden house and trees screened at left, "Historic" to left of state name, and "PRESERVE OUR HERITAGE" centered at bottom
+|'''J'''A123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Rifle Association]]
+|c. 2009–12
+|
+|''unknown''
+|''unknown''
+|
+|}
+
+==References==
+{{reflist|2}}
+
+==External links==
+{{commons category|License plates of Idaho}}
+* [https://web.archive.org/web/20060211032040/http://www.itd.idaho.gov/dmv/VehicleServices/Assessor.htm Idaho Motor Vehicle County Office Locations]
+* [https://www.15q.net/id.html Idaho license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200326004918/https://www.15q.net/id.html |date=March 26, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Idaho}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Idaho}}
+[[Category:Road transportation in Idaho| ]]
+[[Category:Idaho counties| Vehicle]]
+[[Category:Vehicle registration plates of the United States by state or territory|Idaho]]
+[[Category:Transportation in Idaho]]
+[[Category:Idaho transportation-related lists]]

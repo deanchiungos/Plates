@@ -1,0 +1,1009 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = Newfoundland and Labrador 2026 license plate JXH 941.png
+| caption = 
+| nickname = 
+| slogan_label = 
+| slogan = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = 
+| serial_format = ABC 123
+| current_start_date = {{Start date|2025|11}}
+| designer = 
+| issuer = Digital Government and Service NL, Motor Registration Division
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia]]<ref>{{cite web |last=Drost |first=Philip |date=April 19, 2018 |title=Peel... in this place: Why thousands of licence plates are being recalled |url=https://www.cbc.ca/news/canada/new-brunswick/peeling-plate-problems-1.4624822 |publisher=[[CBC News]] |access-date=November 11, 2020}}</ref>
+| start_date = {{Start date|1925}}
+}}
+
+[[Newfoundland and Labrador]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|licence plate]]s in 1920, while still a [[Dominion of Newfoundland|British dominion]]. It became a [[Provinces and territories of Canada|province of Canada]] in 1949.
+
+In 1956, Canada, the United States, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Newfoundland licence plate that fully complied with these standards: the issues from 1951 (dated 1952) through 1955 (dated 1956) were all 6 inches in height by 12 inches in width, but had non-standard mounting holes.
+
+The last complete re-registration of all registered vehicles in Newfoundland and Labrador was in 1981, with a switch from a numerical system to an alphanumeric system.
+
+All plates issued since 1982 (beginning AAA-001) remain valid today. Plates remain with the vehicle to which they are originally registered, rather than with the owner. Used vehicles with expired plates are issued new licence plates, while used vehicles with valid plates retain their original licence plate.
+
+Since 1985, the province has not used the letters I, Q, U or Y on licence plates,<ref>{{cite web |last=Tanner |first=Eric N. |title=Newfoundland and Labrador Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Newfoundland%20and%20Labrador&code=nl |website=allaboutlicenseplates.com |access-date=December 1, 2020}}</ref> except on plates that use "VO1" (or "VO2" for Labrador) followed by two or three letters issued to [[Amateur radio]] operators.<ref>{{Cite web|title=VO Plates|url=https://sonra.ca/en/vo-plates/|access-date=2021-05-14|publisher=Society of Newfoundland Radio Amateurs|language=en-CA}}</ref> However, the HAY series was issued on the 1996-97 Cabot 500 base, while the TFI series was issued on trailers in 2010. The letter I is skipped because it closely resembles the number 1, while the letter Q is skipped because it closely resembles the letter O (which the province ''does'' use) and the number zero.
+
+Since September 1997, the province requires only a rear plate for most registrations, except for B, C, E and G plates (see below). Some older cars still display both front and rear plates. Some early "World of Difference" and Cabot 500 base plates were issued in duplicate for the front and rear.
+
+In 2019 the province announced<ref>{{Cite web|title=Provincial Government Highlights Prototype of Electric Vehicle Licence Plates|url=https://www.gov.nl.ca/releases/2019/exec/1120n06/|access-date=2021-08-03|publisher=Government of Newfoundland and Labrador|language=en-CA}}</ref>  it would be designing licence plates for electric "green" vehicles.
+
+On Newfoundland licence plates, the first letter (or two letters) designates the registration class of the vehicle. For example, HMT-999 would be assigned to a passenger car, while TZD-019 would be assigned to a trailer.
+
+Newfoundland and Labrador is the only province in [[Canada]] that does not allow [[vanity plate|vanity licence plates]] to be registered.
+
+==Vehicle class==
+{|class="wikitable"
+|-
+!First letter(s)
+!Vehicle type
+!Notes on use/expiration/issue
+!Current/last issue
+|-
+|A
+|Private car
+|Began at AAA-001 in 1982; ended at AZZ-999 on World of Difference base in 1998. Front and rear plates required until 1997.
+|AZZ-999
+|-
+|AA
+|Antique Auto
+|Issued to cars and trucks eligible to be considered antique. Cars must be at least 25 years old to be considered. ‘Antique Auto’ is screened onto the plate on the left of the serial
+|4433
+|-
+|B
+|[[Bus]]
+|BAx for public-use buses, BPx for private-use buses (e.g. tour buses). Front and rear plates required.
+|BAJ-976  BPD-893
+|-
+|C
+|Truck/heavy vehicle
+|Issued to pickup trucks, SUVs and large vans. Began at CAA-001 in 1982; reached CZZ-999 on pitcher plant base in 2017, followed by CA0 001 onwards. Front and rear plates required. CRx indicates large mobile crane units that are generally overwidth and need special permits and escort on public roadways. Some trucks and vans may now be registered as private cars. 
+|CL7-999
+|-
+|D
+|Dealer
+|Issued to auto dealers for test driving and transporting cars.
+|DAW-768
+|-
+|E
+|Emergency vehicle
+|Emergency vehicles (fire trucks or police cars) are registered as provincial or municipal, as private ambulance companies operate in NL. Front and rear plates required. Also used by search and rescue vehicles.
+|EAD-692
+|-
+|F
+|Farm vehicle
+|FAx for farm tractors, FEx for farm equipment, FTx for farm trucks that operate on roads. Infrequently issued.
+|FAD-638  FEC-654  FTD-273
+|-
+|FF
+|Fire Fighter
+|Issued to cars and trucks belonging to firefighters. Have the FD crest on the left of the serial. 
+|6163FF
+|-
+|G
+|Government vehicle
+|GMx on municipal vehicles, GPx on provincial, GFx on federal. Front and rear plates required.
+|GMO-320  GPR-292  GFM-154
+|-
+|H
+|Private car
+|Issued as next available letter after 'A' series. Began at HAB-001 on Cabot base in fall of 1996; issued on World of Difference base from 1998; ended at HZZ-999 on pitcher plant base in summer of 2013.
+|HZZ-999
+|-
+|J
+|Private car
+|Issued as next available letter after 'H' series. Began at JAA-001 on pitcher plant base in summer of 2013.
+|JUH-002
+|-
+|K
+|Trail Bike
+|Used primarily on dual purpose motorcycles for on and off road use. Same size and base as current Motorcycle plate
+|KAP-048
+|-
+|M
+|Motorcycle
+|Began at MCA-001 in 1982.
+|MEO-723
+|-
+|PR
+|[[International Registration Plan|Apportioned]]
+|Issued to transport trucks. Began at PRP-001 in 1982; reached PRZ-999 on pitcher plant base in 2012, followed by PRA-001 onwards.
+|PRC-228
+|-
+|S
+|Snowmobile
+|Began at SAA-001. These are decals and older ones can also be 12345 format. Used to all be orange text on white but the current decal is black text on white. 
+|SMN-942
+|-
+|T
+|[[Trailer (vehicle)|Trailer]]
+|Began at TAA-001 in 1982; jumped from TET-999 to TVT-001 when flag base was introduced in 2001; reached TZZ-999 then jumped back to TEV-001 on pitcher plant base in 2008. TXx reserved for taxi plates.
+|TMJ-999
+|-
+|TX
+|Licensed [[taxicab|taxi]]
+|Supplemented with a municipal taxi licence sticker.
+|TXP-999
+|-
+|W
+|[[Tow truck]]
+|Tow trucks display a second plate (in addition to a 'C' series plate). Infrequently issued.
+|WAE-592
+|-
+|X
+|Heavy machinery
+|Issued to tractors, backhoes, forklifts, etc.
+|XAX-203
+|-
+|V (VBC-123)
+|Off-Road
+|Issued to quads and UTVs,
+|VJO-091
+|-
+|VO1, VO2
+|Amateur Radio
+|Issued to Newfoundland (VO1) and Laborador (VO2) Amateur Operators. These plates are issued to match an individual's assigned callsign. Unlike other plates these are not issued sequentially, as callsigns are selected by choice.<ref>{{Cite web |last=Government of Canada |first=Innovation |date=2011-10-10 |title=RIC-9 — Call Sign Policy and Special Event Prefixes |url=https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-9-call-sign-policy-and-special-event-prefixes |access-date=2025-06-08 |website=ised-isde.canada.ca}}</ref> Plates may vary between 5 and 6 characters, as operators may conditionally be issued a shorter callsign<ref>{{Cite web |last=Government of Canada |first=Innovation |date=2011-10-10 |title=RIC-9 — Call Sign Policy and Special Event Prefixes |url=https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-9-call-sign-policy-and-special-event-prefixes |access-date=2025-06-08 |website=ised-isde.canada.ca}}</ref>
+|N/A (VO1?? - VO2???)
+|-
+|V (V1234)
+|Veteran
+|Issued to cars and trucks belonging to military veterans
+|V3223
+|-
+|VA (VA123)
+|Veteran Motorcycle 
+|Issued to motorcycles belonging to military veterans
+|VA644
+|}
+
+==Passenger baseplates==
+===1925 to 1969===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed white serial on red plate with border line; vertical "NFLD" and "1925" at left and right respectively
+|''none''
+|1234
+|1001 to approximately 2100
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed black serial on cream plate with border line; vertical "NFLD" and "1926" at left and right respectively
+|''none''
+|1234
+|1001 to approximately 2000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed white serial on forest green plate with border line; "NFLD 1927" at bottom
+|''none''
+|1234
+|1001 to approximately 2500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed black serial on white plate with border line; "NFLD 1928" at bottom
+|''none''
+|1234
+|1001 to approximately 2700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed white serial on ocean blue plate with border line; "NFLD 1929" at bottom
+|''none''
+|1234
+|1001 to approximately 3200
+|
+|-
+|[[File:1930 NL passenger issue 1559.jpg|150px]]
+|1930
+|Embossed white serial on red plate with border line; "NEWFOUNDLAND-30" at bottom
+|''none''
+|1234
+|1001 to approximately 3500
+|
+|-
+|[[File:NL Licence Plate - 1931.jpg|150px]]
+|1931
+|Embossed white serial on green plate with border line; "NEWFOUNDLAND-31" at bottom
+|''none''
+|1234
+|1001 to approximately 3600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on dark blue plate with border line; "NEWFOUNDLAND-32" at bottom
+|''none''
+|1234
+|1001 to approximately 3300
+|
+|-
+|[[File:1933 Newfoundland passenger license plate - Number 2782.jpg|150px]]
+|1933
+|Embossed white serial on red plate with border line; "NEWFOUNDLAND-33" at bottom
+|''none''
+|1234
+|1001 to approximately 2800
+|
+|-
+|[[File:1934 Newfoundland and Labrador license plate 3306.jpg|150px]]
+|1934
+|Embossed orange serial on black plate with border line; "NEWFOUNDLAND-34" at bottom
+|''none''
+|1234
+|1001 to approximately 3600
+|
+|-
+|[[File:1935 NL passenger issue 3057.jpg|150px]]
+|1935
+|Embossed silver serial on black plate with border line; "NEWFOUNDLAND-35" at top
+|''none''
+|1234
+|1001 to approximately 3900
+|
+|-
+|[[File:1936 NL passenger issue 4370.jpg|150px]]
+|1936
+|Embossed blue serial on white plate with border line; "NEWFOUNDLAND-36" at bottom
+|''none''
+|1234
+|1001 to approximately 4200
+|
+|-
+|[[File:1937 NL passenger issue 2707.jpg|150px]]
+|1937
+|Embossed red serial on white plate with border line; embossed crown graphic at left; "NEWFOUNDLAND-37" at top
+|''none''
+|1234
+|1001 to approximately 4800
+|
+|-
+|[[File:1938 NL passenger issue 3-724.jpg|150px]]
+|1938
+|Embossed white serial on black plate with border line; "NEWFOUNDLAND-38" at bottom
+|''none''
+|1-234
+|1-001 to approximately 5-100
+|
+|-
+|[[File:1939 NL passenger issue 2-526.jpg|150px]]
+|1939
+|Embossed dark green serial on white plate with border line; "NEWFOUNDLAND-39" at top
+|''none''
+|1-234
+|1-001 to approximately 4-900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed orange serial on black plate with border line; "NEWFOUNDLAND-40" at bottom
+|''none''
+|1-234
+|1-001 to approximately 5-400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed white serial on red plate with border line; "NEWFOUNDLAND-41" at top
+|''none''
+|1-234
+|1-001 to approximately 5-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1942
+|Embossed orange serial on black plate with border line; "NEWFOUNDLAND-42" at bottom
+|''none''
+|1-234
+|1-001 to approximately 6-500
+|Reused in 1944 due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1943
+|Embossed white serial on black plate with border line; "NEWFOUNDLAND-43" at top
+|''none''
+|1-234
+|1-001 to approximately 6-100
+|C-001 ... used for Commercial vehicles
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|As 1942 base, but red on black
+|''none''
+|1-234
+|1-001 to approximately 5-700
+|Repainted and reused 1942 plates.
+|-
+|[[File:1945 Newfoundland passenger license plate - Number 2-311.jpg|150px]]
+|1945
+|Hand-painted white serial on dark green flat metal plate; "NEWFOUNDLAND-45" at top
+|''none''
+|1-234
+|1-001 to approximately 4-700
+|
+|-
+|[[File:1946 NL passenger issue 4-566.jpg|150px]]
+|1946
+|Embossed white serial on red plate with border line; "NEWFOUNDLAND-46" at bottom
+|''none''
+|1-234
+|1-001 to approximately 6-400
+|
+|-
+|[[File:1947 NL passenger issue 1-531.jpg|150px]]
+|1947
+|Embossed white serial on green plate with border line; "NEWFOUNDLAND-47" at top
+|''none''
+|1-234
+|1-001 to approximately 7-200
+|
+|-
+|[[File:1948 NL passenger issue 1-843.jpg|150px]]
+|1948
+|Embossed white serial on black plate with border line; "NEWFOUNDLAND-48" at bottom
+|''none''
+|1-234
+|1-001 to approximately 8-000
+|
+|-
+|[[File:1949 NL passenger issue 7-989.jpg|150px]]
+|1949
+|Embossed white serial on red plate with border line; "NEWFOUNDLAND-49" at top
+|''none''
+|1-234
+|1-001 to approximately 9-000
+|Joined Canada
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed black serial on orange plate with border line; "NEWFOUNDLAND-50" at top
+|''none''
+|{{nowrap|12-345}}
+|1-001 to approximately 11-500
+|
+|-
+|[[File:1951 NL passenger issue 16-212.jpg|150px]]
+|1951
+|Embossed white serial on blue plate with border line; "NEWFOUNDLAND 51" at bottom
+|''none''
+|12-345
+|10-001 to approximately 23-500
+|
+|-
+|[[File:1952 Newfoundland passenger license plate - Number 2-178.jpg|150px]]
+|1952
+|Embossed white serial on green plate with border line; "NEWFOUNDLAND-52" at bottom
+|''none''
+|12-345
+|1-001 to approximately 19-000
+|
+|-
+|[[File:1953 NL passenger issue 1-117.jpg|150px]]
+|1953
+|Embossed white serial on maroon plate with border line; "NEWFOUNDLAND-53" at top
+|''none''
+|12-345
+|1-001 to approximately 21-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1954
+|Embossed white serial on dark green plate with border line; "NEWFOUNDLAND-54" at top
+|''none''
+|12-345
+|1-001 to approximately 26-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed white serial on black plate with border line; "NEWFOUNDLAND-55" at bottom
+|''none''
+|12-345
+|1-001 to approximately 28-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed white serial on maroon plate with border line; "NEWFOUNDLAND-56" at top
+|''none''
+|12-345
+|1-001 to approximately 36-000
+|
+|-
+|[[File:1957 NL passenger issue 2-500.jpg|150px]]
+|1957
+|Embossed yellow serial on sky blue plate with border line; "NEWFOUNDLAND-57" at bottom
+|''none''
+|12-345
+|1-001 to approximately 38-000
+|
+|-
+|[[File:1958 NL passenger issue 3-368.jpg|150px]]
+|1958
+|Embossed black serial on yellow plate with border line; "NEWFOUNDLAND-58" at top
+|''none''
+|12-345
+|1-001 to approximately 39-000
+|
+|-
+|[[File:1959 NL passenger issue 5-646.jpg|150px]]
+|1959
+|Embossed yellow serial on black plate with border line; "NEWFOUNDLAND-59" at bottom
+|''none''
+|12-345
+|1-001 to approximately 43-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1960
+|Embossed white serial on red plate with border line; "NEWFOUNDLAND-60" at top
+|''none''
+|12-345
+|1-001 to approximately 45-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1961
+|Embossed black serial on white plate with border line; "NEWFOUNDLAND-61" at bottom
+|''none''
+|12-345
+|1-001 to approximately 49-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1962
+|Embossed white serial on black plate with border line; "NEWFOUNDLAND-62" at top
+|''none''
+|12-345
+|1-001 to approximately 55-000
+|
+|-
+|[[File:1963 Newfoundland passenger license plate - Number 10-023.jpg|150px]]
+|1963
+|Embossed black serial on yellow plate with border line; "NEWFOUNDLAND-63" at bottom
+|''none''
+|12-345
+|1-001 to approximately 59-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1964
+|Embossed white serial on dark blue plate with border line; "NEWFOUNDLAND-64" at top
+|''none''
+|12-345
+|1-001 to approximately 65-000
+|
+|-
+|[[File:1965 NL passenger issue 29-797.jpg|150px]]
+|1965
+|Embossed dark blue serial on white plate with border line; "NEWFOUNDLAND AND" and "LABRADOR" centred and top and bottom respectively; "19" at top left and "65" at top right
+|''none''
+|12-345
+|1-001 to approximately 70-000
+|
+|-
+|[[File:1966 Newfoundland passenger sample license plate - Number 0-000.jpg|150px]]
+|1966
+|Embossed dark blue serial on orange plate with border line; "NEWFOUNDLAND AND LABRADOR" and "1966" centred at top and bottom respectively
+|''none''
+|12-345
+|1-001 to approximately 74-000
+|
+|-
+|[[File:1968 NL passenger issue 5-906.jpg|150px]]
+|1967
+|Embossed green serial on white plate with border line; "NEWFOUNDLAND AND LABRADOR" and "1967" centred at top and bottom respectively
+|"[[Canadian Centennial|CANADA CENTENNIAL]]" between serial and year
+|12-345
+|1-001 to approximately 79-000
+|
+|-
+|[[File:1968 NL passenger issue 5-246.jpg|150px]]
+|1968
+|Embossed red serial on white plate with border line; "NEWFOUNDLAND AND LABRADOR" at top; "19" at bottom left and "68" at bottom right
+|"CANADA'S HAPPY PROVINCE" centred at bottom
+|12-345
+|1-001 to approximately 87-000
+|
+|-
+|[[File:1969 Newfoundland and Labrador License Plate Sample.jpg|150px]]
+|1969
+|Embossed blue serial on white plate with border line; "NEWFOUNDLAND AND LABRADOR" and "1969" centred at top and bottom respectively; embossed blue lightning bolts either side of year
+|"THE MIGHTY CHURCHILL" between serial and year
+|12-345
+|1-001 to approximately 88-000
+|
+|}
+
+===1970 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1970-newfoundland-license-plate-86-579.jpg|150px]]
+|1970–72
+|Embossed green serial on white plate with border line; "NEWFOUNDLAND AND LABRADOR" and "1970" centred at top and bottom respectively
+|''none''
+|123-456
+|1-001 to approximately 136-000
+|
+|-
+|[[File:1973 newfoundland license plate 37-026.jpg|150px]]
+|1973–75
+|Embossed red serial on white plate; border lines around plate and around bottom corners; "NEWFOUNDLAND AND LABRADOR" and "1973" centred at top and bottom respectively
+|''none''
+|123-456
+|1-001 to approximately 165-000
+|
+|-
+|[[File:1976 nl passenger issue 226-452.jpg|150px]]
+|1976–82
+|Embossed blue serial on orange plate; border lines around plate and around bottom corners; "NEWFOUNDLAND AND LABRADOR" and "1976" centred at top and bottom respectively
+|''none''
+|123-456
+|1-001 to approximately 259-000
+|
+|-
+|[[File:Nl passenger issue ADJ-921.jpg|150px]]
+|1982&nbsp;–<br>mid<br>1993
+|Embossed blue serial on white plate; "NEWFOUNDLAND" and "AND LABRADOR" in red centred at top and bottom respectively
+|''none''
+|{{nowrap|ABC-123}}
+|AAA-001 to ASZ-999
+|
+|-
+|[[File:NL passenger issue AWE-166.jpg|150px]]
+|mid<br>1993&nbsp;– September 1996
+|Embossed red serial on white plate; graphic screened at bottom featuring a [[Viking ships|Viking ship]] with a red sail against a yellow sunset; "Newfoundland & Labrador" screened in red at top
+|"A WORLD OF DIFFERENCE" screened in red below and to right of graphic
+|ABC 123
+|ATA 001 to AZF&nbsp;999
+|
+|-
+|[[File:NL passenger issue HBC-399.jpg|150px]]
+|September 1996&nbsp;– September 1997
+|Embossed red serial on light blue and white gradient plate; screened red graphic of [[John Cabot]] centred at bottom; "Newfoundland & Labrador" screened in blue at top
+|"CABOT" screened in blue to right of graphic, and "Celebrate 500 Years" in black to left
+|ABC 123
+|HAB 001 to HBC&nbsp;999
+|Commemorated the 500th anniversary of Cabot's voyage to Newfoundland.
+|-
+|[[File:NL passenger issue HDB-251.jpg|150px]]
+|September 1997&nbsp;– October 2001
+|As 1993–96 base
+|"A WORLD OF DIFFERENCE" as from 1993 to 1996
+|ABC 123
+|AZG 001 to AZZ&nbsp;999; HBD&nbsp;001 to HEP&nbsp;999
+|
+|-
+|[[File:NL passenger issue HFA-566.jpg|150px]]
+|October 2001&nbsp;– July<br>2002
+|Embossed red serial on white plate; screened [[Flag of Newfoundland and Labrador|provincial flag]] centred slightly below serial; "NEWFOUNDLAND & LABRADOR CANADA" screened in red below flag
+|rowspan="3"|''none''
+|rowspan="3"|ABC 123
+|HER 001 to HFO&nbsp;999
+|rowspan="3"|
+|-
+|[[File:NL passenger issue HGB-557.jpg|150px]]
+|July<br>2002&nbsp;– September 2003
+|As above, but with "NEWFOUNDLAND & LABRADOR" centred at top, and "CANADA" increased in size
+|HFP 001 to HGZ&nbsp;999
+|-
+|[[File:NL passenger issue HMD-926.jpg|150px]]
+|September 2003&nbsp;– April<br>2007
+|As above, but with flag graphic revised and increased in size, "Newfoundland & Labrador" at top, and "CANADA" removed
+|HHA 001 to HMT&nbsp;999
+|-
+|[[File:NL passenger issue JEJ-371.jpg|150px]]
+|April 2007&nbsp;– December 2021
+January 2023&nbsp;– November 2025
+|Embossed blue serial on white plate; screened provincial wordmark centred at bottom, consisting of a [[pitcher plant]] with "Newfoundland" and "Labrador" in blue below
+|''none''
+|ABC 123
+|HMV 001 to JPZ&nbsp;999;<br>JTD 001 to JWY&nbsp;999
+|
+|-
+|[[File:NL-2022-comehomeyear-JRB325.jpg|150px]]
+|January 2022 – December 2022
+| Embossed blue serial on white and teal gradient plate; screened blue graphic of a whale; screened red provincial word mark on top; screened red “COME HOME 2022” on bottom
+|"COME HOME 2022" screened in red bottom centre 
+|ABC 123
+|JRA 001 to JTC 999
+|Commemorated the 2022 Newfoundland and Labrador Come Home Year. 
+|
+|-
+|[[File:Newfoundland and Labrador License Plate JUW-990.jpg|150px]]
+|January 2024 – December 2024
+| Embossed black serial on white plate; screened blue and gray graphics of sections of the NL flag; screened red half maple leaf; screened blue “1949 - 2024” on bottom separated by a gold dash; screened provincial wordmark with pitcher plant on top; screened 75 middle
+|"1949 - 2024 75" screened in bottom & centre 
+|ABC 123
+|JUH 001 to JVV&nbsp;999
+|Commemorated the 75th anniversary of Newfoundland and Labrador joining Canadian confederation. 
+|-
+|[[File: Newfoundland and Labrador 2026 license plate JXH 941.png|150px]]
+| November 2025 – present
+| Same as original pitcher plant base, with black province name on bottom.
+| ''none''
+|ABC 123
+|JWZ 001 to JXP&nbsp;001 <small>(As of April 27, 2026)</small><ref>{{cite web |title=Newfoundland & Labrador Passenger Series History |url=https://licenseplates.cc/history.php?id=1763 |website=licenseplates.cc}}</ref>
+|
+|}
+
+===Green vehicle plates===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Notes
+|-
+|[[File:Green license plate (Newfoundland and Labrador, Canada).jpg|150px|alt=A prototype of a new electric vehicle licence plate for Newfoundland and Labrador.|A prototype of a new electric vehicle licence plate for Newfoundland and Labrador.]]
+|TBD
+|Embossed green serial on white plate with; "NEWFOUNDLAND AND LABRADOR" logo centred at bottom.
+|''none''
+|ABC 123
+|In November 2019, the Newfoundland and Labrador government announced a prototype design for a Green vehicle licence plate.<ref>{{cite web |title=Provincial Government Highlights Prototype of Electric Vehicle Licence Plates |url=https://www.gov.nl.ca/releases/2019/exec/1120n06/ |publisher=Newfoundland and Labrador |access-date=9 September 2022}}</ref> Premier [[Dwight Ball]] made the announcement at the Drive Electric NL Electric Vehicle Showcase. As of 2023, this plate design has not yet been made available; electric vehicles simply use plates from the main series.
+|}
+
+==Commercial baseplates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Newfoundland and Labrador 1994 license plate -CGB-252.jpg|150px]]
+|rowspan="9"|Commercial
+|1982–95
+|As 1982 passenger base
+|'''C'''BC-123
+|CAA-001 to<br>CHV-999
+|
+|-
+|[[File:Newfoundland & Labrador 2001 license plate - CHZ-911.jpg|150px]]
+|1995–96
+|As World of Difference passenger base
+|rowspan="6"|'''C'''BC 123
+|CHW 001 to CJH&nbsp;999
+|
+|-
+|[[File:Newfoundland & Labrador 1997 license plate - CKM-636.jpg|150px]]
+|1996–97
+|As Cabot passenger base
+|CKL 001 to CKR&nbsp;999
+|
+|-
+|[[File:Newfoundland & Labrador 2017 license plate - CKJ-286.jpg|150px]]
+|1997–<br>2003
+|As World of Difference passenger base
+|CJJ 001 to CKK&nbsp;999; CKS&nbsp;001 to CMS&nbsp;999
+|
+|-
+|[[File:2003-2004 Newfoundland and Labrador truck license plate CNE-092.jpg|150px]]
+|2003–04
+|As 2001 flag passenger base
+|CMT 001 to CNE&nbsp;999
+|
+|-
+|[[File:2004-2007 Newfoundland and Labrador truck license plate CNV-216.jpg|150px]]
+|2004–07
+|As 2003 flag passenger base
+|CNF 001 to COS&nbsp;999
+|
+|-
+|rowspan="2"|[[File:CA1-550.jpg|150px]]
+|2007–17
+|rowspan="2"|As pitcher plant passenger base
+|COT 001 to CZZ&nbsp;999
+|rowspan="2"|Series CRA through CRZ reserved for mobile crane units.
+|-
+|2017–2025
+|rowspan="2"|'''C'''B1 234
+|CA0&nbsp;001 to approximately CN7&nbsp;999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2025–present
+|As black pitcher plant passenger base
+|approximately CN8 000 to CP4&nbsp;271  {{small|(as of April 30, 2026)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|PRP
+|
+|As pitcher plant passenger base
+|'''PR'''A 123
+|
+|
+|-
+|[[File:Newfoundland and Labrador license plate 2005.jpg|150px]]
+|rowspan="2"|Bus
+|1997-2001
+|As World of Difference passenger base
+|rowspan="2"|'''B'''AB 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–present
+|As pitcher plant passenger base
+|
+|
+|-
+|[[File:Newfoundland Private Bus License plate 1997.jpg|150px]]
+|rowspan="2"|Private Bus
+|1997-2001
+|As World of Difference passenger base
+|rowspan="2"|'''BP'''A 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–present
+|As pitcher plant passenger base
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farm Truck
+|
+|As pitcher plant passenger base
+|'''FT'''A 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farm Equipment
+|
+|As pitcher plant passenger base
+|'''FE'''A 123
+|
+|
+|-
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Antique
+|
+|As pitcher plant passenger base; "ANTIQUE AUTO" on left side
+|1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|ATV
+|
+|
+|ABC 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|1954
+|Dark green with white numerals
+|123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|1955
+|Black with white numerals
+|123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|1968
+|White with red numerals
+|123
+|
+|
+|-
+|[[File:Newfoundland & Labrador 1997 motorcycle license plate MCO-787.jpg|150px]]
+|rowspan="3"|Motorcycle
+|1982–<br>2004
+|Similar design to 1982 passenger base; debossed sticker box at bottom left
+|{{nowrap|{{small|'''M'''/'''C'''}} A-123}}
+|{{nowrap|{{small|M/C}} A-001 to}} {{nowrap|{{small|M/C}}&nbsp;X-999}}
+|rowspan="3"|
+|-
+|[[File:Newfoundland & Labrador 2005 motorcycle license plate - MDA-240.jpg|150px]]
+|2004–07
+|Embossed red serial on white plate; border lines around plate and around sticker box at bottom left; "NEWFOUNDLAND" at top; "& LABRADOR" at bottom right
+|rowspan="2"|'''M'''BC-123
+|MDA-001 to<br>MDE-999
+|-
+|[[File:Newfoundland & Labrador 2009 motorcycle license plate - MDH-393.jpg|150px]]
+|2007–<br>present
+|Similar design to pitcher plant passenger base; debossed sticker box at bottom left
+|MDF-001 to<br>MEK-031 {{small|(as of June 28, 2019)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Snow vehicle
+|
+|
+|ABC 123
+|
+|
+|-
+|[[File:Newfoundland and Labrador 1983 license plate - TAA-616.jpg|150px]]
+|rowspan="9"|Trailer
+|{{nowrap|1982–94}}
+|As 1982 passenger base
+|'''T'''BC-123
+|TAA-001 to<br>TDE-999
+|rowspan="9"|
+|-
+|[[File:Newfoundland & Labrador 1998 license plate - TDH-586.jpg|150px]]
+|1994–96
+|As World of Difference passenger base
+|rowspan="8"|'''T'''BC 123
+|TDF 001 to TDR&nbsp;999
+|-
+|[[File:Newfoundland & Labrador 2011 trailer license plate - TDV-209.jpg|150px]]
+|1996–97
+|As Cabot passenger base
+|TDS 001 to TDX&nbsp;999
+|-
+|[[File:Newfoundland & Labrador 2000 license plate - TED 940.jpg|150px]]
+|1997–2001
+|As World of Difference passenger base
+|TDZ 001 to TET&nbsp;999
+|-
+|[[File:Newfoundland & Labrador 2003 license plate - TVV-447.jpg|150px]]
+|2001–02
+|As 2001 flag passenger base
+|TVT 001 to TVV&nbsp;999
+|-
+|[[File:Newfoundland & Labrador 2013 trailer license plate - TVW-133.jpg|150px]]
+|2002–03
+|As 2002 flag passenger base
+|TVW 001 to TWE&nbsp;999
+|-
+|[[File:Newfoundland & Labrador 2005 trailer license plate - TWL-583.jpg|150px]]
+|2003–07
+|As 2003 flag passenger base
+|TWF 001 to TWZ&nbsp;999; TZA&nbsp;001 to TZC&nbsp;999
+|-
+|[[File:Newfoundland & Labrador 2017 trailer license plate - THX-505.jpg|150px]]
+|2007–2025
+|As pitcher plant passenger base
+|TZD 001 to TZZ&nbsp;999;<br>TEV&nbsp;001 to approximately TMO&nbsp;999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2025–present
+|As black pitcher plant passenger base
+|approximately TMP 001 to TMS&nbsp;455 {{small|(as of April 30, 2026)}}
+|-
+|[[File:Newfoundland Emergency Vehicle License plate 1997.jpg|150px]]
+|rowspan="2"|Emergency Vehicle
+|1997–2001
+|As World of Difference passenger base
+|rowspan="2"|'''E'''AB 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007–present
+|As pitcher plant passenger base
+|
+|
+|}
+
+===Government plates===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Federal government
+|
+|As pitcher plant passenger base
+|'''GF'''A 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Provincial government
+|
+|As pitcher plant passenger base
+|'''GP'''A 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal government
+|
+|As pitcher plant passenger base
+|'''GM'''A 123
+|
+|
+|}
+
+==Specialty plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran
+|
+|As pitcher plant passenger base; "VETERAN" at top, poppy on left.
+|'''V'''1234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran Motorcycle
+|
+|As pitcher plant passenger base; "VETERAN" at top, poppy on left.
+|'''V'''A123
+|
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/nl.html Newfoundland and Labrador licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200616152432/https://www.15q.net/nl.html |date=2020-06-16 }}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:Vehicle registration plates of Canada|Newfoundland and Labrador]]
+[[Category:Transport in Newfoundland and Labrador]]
+[[Category:Newfoundland and Labrador transport-related lists]]

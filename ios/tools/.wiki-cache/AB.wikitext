@@ -1,0 +1,892 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = AB3CKZ3449.jpg
+| nickname = 
+| slogan_label = Slogan
+| front = Optional for Vanity plates, otherwise not present.
+| rear = Required
+| slogan = Wild Rose Country
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-1234
+| current_start_date = {{Start date|2021}}
+| designer = 
+| issuer = Service Alberta
+| manufacturer = Waldale Manufacturing
+| start_date = {{Start date|1906}}
+}}
+
+The [[Provinces and territories of Canada|Canadian province]] of [[Alberta]] first required its residents to register their [[motor vehicle]]s in 1906.<ref>{{Cite web |title=An Act to regulate the speed and operation of Motor Vehicles on highways, SA 1906, c 26 |url=https://canlii.ca/t/541c4 |access-date=April 25, 2024 |website=[[CanLII]]}}</ref> Registrants provided their own [[Vehicle registration plate|licence plate]]s for display until 1912, when the province began to issue plates. Only rear plates have been required since 1992. 
+
+==List of plate issues==
+===1912 to 1915===
+When the first plates were issued in Alberta, a number of materials were tried. 1912 and 1913 used porcelain enameled iron, and 1914 and 1915 used thin sheet metal with silkscreened number rolled over a wire frame. Serials issued started at 1 every year, and every year the registrant could request the same number as the previous year. The 1912 plate followed the design of other provinces, but 1913 to 1915 featured the Alberta shield and year on the left side. Registration expired December 31.
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serials issued
+|-
+|[[File:ALBERTA 1912.JPG|100px]]
+|1912
+|white on dark blue
+|1 to approximately 2400
+|-
+|[[File:AUTO 1913 ALBERTA.jpg|100px]]
+|1913
+|white on red
+|1 to approximately 3800
+|-
+|[[File:AUTO 1914 ALBERTA license plate.jpg|100px]]
+|1914
+|black on white
+|1 to approximately 5000
+|-
+|[[File:AB plate 3965.jpg|100px]]
+|1915
+|black on yellow
+|1 to approximately 5800
+|}
+
+===1916 to 1920===
+Starting with the 1916 issue, a heavier gauge of metal was used, and the text moved to the right side, saying ALTA, and the year. The 1918 plates were the first embossed plates, and 1920 had the first painted border.
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serials issued
+|-
+|[[File:Alberta 1916 license plate - Number 1963.jpg|100px]]
+|1916
+|dark blue on white
+|1 to approximately 10000
+|-
+|[[File:Alberta 1917 license plate- Number 2171.jpg|100px]]
+|rowspan="2"|1917
+|rowspan="2"|black on yellow
+|rowspan="2"|1 to approximately 22000
+|-
+|[[File:Alberta 1917 license plate - Number 21538.jpg|100px]]
+|-
+|[[File:Alberta 1918 license plate - Number 8114.jpg|100px]]
+|1918
+|white on black
+|1 to approximately 35000
+|-
+|[[File:Alberta 1919 license plate - Number 73.jpg|100px]]
+|rowspan="2"|1919
+|rowspan="2"|black on white
+|rowspan="2"|1 to approximately 36000
+|-
+|[[File:Alberta 1919 license plate - Number 35606.jpg|100px]]
+|-
+|[[File:Alberta 1920 license plate - Number 16719.jpg|100px]]
+|1920
+|white on green
+|1 to approximately 38000
+|}
+
+===1921 to 1924===
+The 1921 to 1924 issues each used several plate sizes, depending on the length of the serial. Hyphens were also used in serials for the first time.
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serials issued
+|-
+|[[File:Alberta 1921 license plate - Number 635.jpg|100px]]
+|rowspan="3"|1921
+|rowspan="3"|blue on gray
+|rowspan="3"|1 to approximately 40-000
+|-
+|[[File:Alberta 1921 license plate - Number 7-668.jpg|100px]]
+|-
+|[[File:Alberta 1921 license plate - Number 17-055.jpg|100px]]
+|-
+|[[File:Alberta 1922 license plate - Number 281.jpg|100px]]
+|rowspan="3"|1922
+|rowspan="3"|yellow on black
+|rowspan="3"|1 to approximately 43-000
+|-
+|[[File:Alberta 1922 license plate - Number 6-841.jpg|100px]]
+|-
+|[[File:Alberta 1922 license plate - Number 14-043.jpg|100px]]
+|-
+|[[File:Alberta 1923 license plate - Number 850.jpg|100px]]
+|rowspan="2"|1923
+|rowspan="2"|white on black
+|rowspan="2"|1 to approximately 41-000
+|-
+|[[File:Alberta 1923 license plate - Number 15-362.jpg|100px]]
+|-
+|[[File:Alberta 1924 license plate - Number 278.jpg|100px]]
+|rowspan="2"|1924
+|rowspan="2"|red on gray
+|rowspan="2"|1 to approximately 43-000
+|-
+|[[File:Alberta 1924 license plate - Number 18-216.jpg|100px]]
+|}
+
+===1925 to 1936===
+The 1925 base was the first to feature the full province name. Six-digit serials were used for the first time in 1929.
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serials issued
+|-
+|[[File:Alberta 1925 license plate - Number 2-836.jpg|100px]]
+|1925
+|yellow on black
+|1 to approximately 52-000
+|-
+|[[File:Alberta 1926 license plate - Number 57-064.jpg|100px]]
+|1926
+|black on yellow
+|1 to approximately 65-000
+|-
+|[[File:Alberta 1927 license plate 1944.jpg|100px]]
+|1927
+|black on light green
+|1 to approximately 69-000
+|-
+|[[File:Alberta 1928 license plate - Number 2-630.jpg|100px]]
+|1928
+|white on blue
+|1 to approximately 84-000
+|-
+|[[File:Alberta 1929 license plate - Number 100-335.jpg|100px]]
+|1929
+|black on orange
+|1 to approximately 101-000
+|-
+|[[File:Alberta 1930 license plate - Number 88-344.jpg|100px]]
+|1930
+|white on green
+|1 to approximately 93-000
+|-
+|[[File:Alberta 1931 license plate - Number 72-314.jpg|100px]]
+|1931
+|white on blue
+|1 to approximately 88-000
+|-
+|[[File:Alberta 1932 license plate - Number 1-084.jpg|100px]]
+|1932
+|black on white
+|1 to approximately 82-000
+|-
+|[[File:Alberta 1933 license plate - Number 75-255.jpg|100px]]
+|1933
+|blue on yellow
+|1 to approximately 76-000
+|-
+|[[File:Alberta 1934 license plate - Number 45-335.jpg|100px]]
+|1934
+|red on white
+|1 to approximately 75-000
+|-
+|[[File:Alberta 1935 license plate - Number 31-750.jpg|100px]]
+|1935
+|white on red
+|1 to approximately 75-000
+|-
+|[[File:Alberta 1936 license plate - Number 57-682.jpg|100px]]
+|1936
+|orange on black
+|1 to approximately 77-000
+|}
+
+===1937 to 1951===
+In 1937, the licence year was changed to April 1 to March 31, and continued as such until 1984. The 1940 (expiring March 31, 1941) base was the first to feature a slogan, namely "Drive Safely". This slogan was used again on the 1941 (expiring March 31, 1942) base, before the 1942 (expiring March 31, 1943) base featured "Canada", the first and thus far only Alberta base to feature the country name. Due to metal conservation for [[World War II]], the 1943 (expiring March 31, 1944) base was revalidated until March 31, 1945, with windshield stickers. Six-digit serials were issued on each base from 1947 through 1951.
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serials issued
+|-
+|[[File:Alberta 1938 license plate - Number 51-025.jpg|100px]]
+|1937
+|black on yellow
+|1 to approximately 85-000
+|-
+|[[File:Alberta 1939 license plate - Number 2-280.jpg|100px]]
+|1938
+|red on white
+|1 to approximately 85-000
+|-
+|[[File:Alberta 1940 license plate - Number 4-972.jpg|100px]]
+|1939
+|black on white
+|1 to approximately 90-000
+|-
+|[[File:Alberta 1941 license plate - Number 8-031.jpg|100px]]
+|1940
+|black on yellow
+|1 to approximately 94-000
+|-
+|[[File:Alberta 1942 license plate - Number 1-084.jpg|100px]]
+|1941
+|white on black
+|1 to approximately 93-000
+|-
+|[[File:Alberta 1943 license plate - Number 46-318.jpg|100px]]
+|1942
+|white on dark blue
+|1 to approximately 87-000
+|-
+|[[File:Alberta 1944 license plate - Number 88-561.jpg|100px]]
+|1943–44
+|black on yellow
+|1 to approximately 96-000
+|-
+|[[File:Alberta 1946 license plate - Number 94-179.jpg|100px]]
+|1945
+|orange on black
+|1 to approximately 95-000
+|-
+|[[File:Alberta 1947 license plate - Number 54-378.jpg|100px]]
+|1946
+|green on white
+|1 to approximately 98-000
+|-
+|[[File:Alberta 1948 license plate - Number 100-476.jpg|100px]]
+|1947
+|white on blue
+|1 to approximately 101-000
+|-
+|[[File:Alberta 1949 license plate - Number 99-182.jpg|100px]]
+|1948
+|black on white
+|1 to approximately 115-000
+|-
+|[[File:Alberta 1950 license plate - Number 59-241.jpg|100px]]
+|1949
+|red on white
+|1 to approximately 130-000
+|-
+|[[File:Alberta 1951 license plate - Number 11-096.jpg|100px]]
+|1950
+|white on blue
+|1 to approximately 153-000
+|-
+|[[File:Alberta 1952 license plate - Number 119-775.jpg|100px]]
+|1951
+|blue on yellow
+|1 to approximately 163-000
+|}
+
+===1952 to 1953===
+In 1956, Canada, the United States, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Alberta licence plate that complied with these standards was issued four years beforehand, in 1952.
+
+The 1952 base was also the first reflective base, with beaded white characters on a black background. Letters were used in passenger serials for the first time: five-character serials were used, with a single letter in the third and later the second position. The letter Q was not used, while the letters I and O were at a smaller size to prevent confusion with the numbers 1 and 0.
+
+Passenger and dealer plates on this base were revalidated for 1953 with black-on-aluminum "53" tabs. Other vehicle types, however, received new plates for 1953, with dark blue characters on a white background.
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serial format
+!Serials issued
+|-
+|[[File:Alberta 1952 license plate - Number 37E37.jpg|100px]]<br>[[File:Alberta 1953 license plate - Number 25I85.jpg|100px]]<br>[[File:Alberta 1953 license plate - Number 70O29.jpg|100px]]
+|rowspan="2"|1952–53
+|rowspan="2"|white on black
+|12A34
+|10A10 to 99Z99
+|-
+|[[File:Alberta 1953 license plate - Number 8B446.jpg|100px]]
+|1A234
+|1B100 to approximately 9F999
+|}
+
+===1954 to 1972===
+Two-letter series were introduced in 1954, with each series initially followed by three digits. In 1960, the number of digits increased to four, with each series running from 0001 to 9000. From 1964 through 1972, only B, C, E, H, J, K, L, N, R, T, X and Z were used as the first letter, with four such letters allocated each year.<ref name="allaboutlicenseplatesAB">{{cite web |last=Tanner |first=Eric N. |title=Alberta License Plates |url=http://www.allaboutlicenseplates.com/athome.asp?State=Alberta |publisher=allaboutlicenseplates.com |access-date=January 23, 2018 |archive-date=January 24, 2018 |archive-url=https://web.archive.org/web/20180124195632/http://www.allaboutlicenseplates.com/athome.asp?State=Alberta |url-status=dead }}</ref> The 1967 base commemorated the [[Canadian Centennial|centennial of Canadian Confederation]].
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serial format
+!Serials issued
+|-
+|[[File:Alberta 1954 license plate - Number ZZ205.jpg|100px]]
+|1954
+|black on orange
+|AB 123
+|EE 101 to ZZ 950, with gaps
+|-
+|[[File:Alberta 1955 license plate - Number ZM-554.jpg|100px]]
+|1955
+|yellow on blue
+|AB-123
+|BB-101 to ZM-950, with gaps
+|-
+|[[File:Alberta 1956 license plate - Number PP 156.jpg|100px]]
+|1956
+|red on white
+|rowspan="4"|AB 123
+|''unknown''
+|-
+|[[File:Alberta 1957 license plate - Number ZE 791.jpg|100px]]
+|1957
+|blue on white
+|''unknown''
+|-
+|[[File:Alberta 1958 license plate - Number LK165.jpg|100px]]
+|1958
+|black on yellow
+|''unknown''
+|-
+|[[File:Alberta 1959 license plate - Number DJ 282.jpg|100px]]
+|1959
+|green on white
+|''unknown''
+|-
+|[[File:Alberta 1960 Commercial license plate - Number CX 5743.jpg|100px]]
+|1960
+|white on red
+|rowspan="4"|AB 1234
+|BA 0001 to approximately DZ 1900
+|-
+|[[File:Alberta 1961 license plate - Number HB 8455.jpg|100px]]
+|1961
+|blue on yellow
+|FA 0001 to JZ 9000
+|-
+|[[File:Alberta 1962 license plate - Number KL 0807.jpg|100px]]
+|1962
+|white on green
+|KA 0001 to approximately RD 3600
+|-
+|[[File:Alberta 1963 license plate - Number VN 4601.jpg|100px]]
+|1963
+|black on white
+|TA 0001 to approximately ZH 8400
+|-
+|[[File:Alberta 1964 license plate - Number HC-70-60.jpg|100px]]
+|1964
+|white on blue
+|rowspan="10"|AB-12-34
+|BA-00-01 to approximately HL-62-00
+|-
+|[[File:Alberta 1965 license plate - Number LL-09-68.jpg|100px]]
+|1965
+|red on white
+|JA-00-01 to approximately NK-84-00
+|-
+|[[File:Alberta 1966 license plate - Number XJ-85-85.jpg|100px]]
+|1966
+|blue on white
+|RA-00-01 to approximately ZL-76-00
+|-
+|[[File:Alberta 1967 license plate - Number HL-55-87.jpg|100px]]
+|1967
+|green on white
+|BA-00-01 to approximately HR-95-00
+|-
+|[[File:Alberta 1968 license plate - Number LR-19-68.jpg|100px]]
+|rowspan="2"|1968
+|rowspan="2"|white on green
+|rowspan="2"|JA-00-01 to approximately NZ-36-00
+|-
+|[[File:Alberta 1968 license plate - Number ND-25-58.jpg|100px]]
+|-
+|[[File:Alberta 1969 license plate - Number XZ-35-52.jpg|100px]]
+|1969
+|yellow on black
+|RA-00-01 to approximately ZT-25-00
+|-
+|[[File:Alberta 1970 license plate - Number CT-61-40.jpg|100px]]
+|1970
+|white on blue
+|BA-00-01 to approximately HZ-46-00
+|-
+|[[File:Alberta 1971 license plate - Number LG-88-88.jpg|100px]]
+|1971
+|white on green
+|JA-00-01 to approximately NX-78-00
+|-
+|[[File:Alberta 1972 license plate - Number XT-25-25.jpg|100px]]
+|1972
+|white on blue
+|RA-00-01 to ZZ-90-00
+|}
+
+===1973 to 1983===
+The 1973–74 base used the AB-12-34 serial format, with B, C, E, H, K and L used as the first letter.<ref name="allaboutlicenseplatesAB"/> It was also the first base to feature the "[[Rosa acicularis|Wild Rose]] Country" slogan, which remains in use today.
+
+The 1975–84 base introduced the ABC-123 serial format, which provided many more combinations. However, only 15 letters were used at first (B, C, D, F, G, H, J, K, L, N, P, R, T, V and X), while others were later used only as the first letter (with some exceptions), and the overall order of issuance was not strictly alphabetical.<ref name="allaboutlicenseplatesAB"/> Most plates on this base were manufactured in Alberta, but some were manufactured in Quebec and Nova Scotia using these provinces' serial [[Die (manufacturing)|die]]s.
+{|class=wikitable
+|-
+!Image
+!Issued
+!Design
+!Serial format
+!Serials issued
+|-
+|[[File:Alberta 1973 license plate - Number EK-60-00.jpg|100px]]<br>[[File:1973 Alberta license plate BH-05-38.jpg|100px]]
+|1973–74
+|orange on blue
+|AB-12-34
+|BA-00-01 to LZ-90-00
+|-
+|[[File:Alberta 1975 license plate - Number JBF-591.jpg|100px]]
+|1975–76
+|rowspan="5"|black on yellow
+|rowspan="5"|ABC-123
+|JBB-000 to LRP-999
+|-
+|[[File:Alberta 1979 license plate - Number TDR-731.jpg|100px]]
+|1977–80
+|''unknown''
+|-
+|[[File:Alberta 1972 license plate - Number MGT-250.jpg|100px]]
+|1981
+|MGB-000 to MXX-999; XKK-000 to XXX-999; SBB-000 to SBC-999
+|-
+|[[File:Alberta 1983 license plate - Number MBZ-358.jpg|100px]]
+|1982
+|SBD-000 to SXX-999; QBB-000 to QXX-999
+|-
+|[[File:1984 Alberta license plate ESH-315.jpg|100px]]
+|1983–84
+|EBB-000 to approximately ETP-999
+|}
+
+===1983 to present===
+The current white, red and blue base was introduced in late 1983. Monthly staggered registration was introduced at the same time, with the month of expiration determined by the first letter of the registrant's surname, and the plate expiring on the last day of the assigned month. Plates were originally manufactured from steel and were reflective; non-reflective plates were introduced in 1993 as a cost-saving measure, while the material changed to aluminum in 1999 due to a steel shortage at the plant where the plates were manufactured. Front and rear plates were required until 1991; only rear plates have been required ever since.<ref>{{cite web |title=Province considers bringing back front licence plates |url=https://www.cbc.ca/news/canada/edmonton/province-considers-bringing-back-front-licence-plates-1.715709 |publisher=[[CBC News]] |date=January 2, 2008 |access-date=August 4, 2019}}</ref> Several serial dies have been used on this base, owing to different plate vendors.
+
+The base originally used the ABC-123 serial format, starting at BBB-000. The letters I, O and Q were not used in this format, and A, E, U and Y were used only from 1997, beginning with the TGY series. After YZZ-999 was reached in 2003 (the 'Z' series were reserved for [[All-terrain vehicle|ATV]]s at the time), previously skipped series containing A, E, U and Y were issued, starting with the BAA series and ending with the TGU series in April 2009. These were followed by the 'Z' series that had not been issued on ATVs, including those containing A, E, U and Y. The 'A' and 'X' series were not issued due to their use on Handicapped and Motorcycle plates respectively.
+
+Some three-letter series were skipped because they had offensive connotations. The BSE series was issued in 2004, but was largely recalled due to a [[Bovine spongiform encephalopathy|mad cow disease]] crisis.<ref>{{cite news |title=A licence to change: Alberta plates to get facelift |url=http://www.canada.com/calgaryherald/news/story.html?id=6ee9ee9c-1247-4166-9891-64909013ff92&k=12421 |newspaper=[[Calgary Herald]] |date=November 9, 2007 |archive-url=https://web.archive.org/web/20121108221553/http://www.canada.com/calgaryherald/news/story.html?id=6ee9ee9c-1247-4166-9891-64909013ff92&k=12421 |archive-date=November 8, 2012 |access-date=July 1, 2010}}</ref>
+
+As the ABC-123 format neared exhaustion in the late 2000s, the Alberta government launched an initiative to design a new base, with an expected launch date of 2009. This project was eventually put on hold in favour of introducing an ABC-1234 format on the 1984 base.<ref>{{cite news|title=Announcement of Alberta's new licence plate design postponed |url=https://www.ponokanews.com/news/announcement-of-albertas-new-licence-plate-design-postponed/ |publisher=Ponoka News |date=February 24, 2009 |access-date=February 24, 2018}}</ref><ref>{{cite news|last=Landry |first=Frank |date=June 9, 2010 |title=7-digit licence plates hitting Alberta roads |url=http://www.edmontonsun.com/news/alberta/2010/06/09/14323236.html |newspaper=[[Edmonton Sun]] |archive-url=https://web.archive.org/web/20160303222704/http://www.edmontonsun.com/news/alberta/2010/06/09/14323236.html |archive-date=March 3, 2016 |access-date=June 20, 2010}}</ref> The new format started in June 2010 at BBB-0000, with the letters A, E, I, O, Q and U skipped.
+
+In July 2019, the new Alberta logo was added to the base, with Wild Rose Country being kept. The issuance of the license plates with the new logo started with two out-of-order series: the last series with the old logo, CDT, was followed by CFT and then CFS. After that, regular sequence resumed: CDV through CFR, then (since CFS and CFT have already been issued) CFV and so forth.
+
+As of 2021, month and year expiry stickers were no longer required, but can still be obtained and issued under certain circumstances.<ref>{{Cite web|title=Renew your vehicle registration|url=https://www.alberta.ca/vehicle-registration-renewal.aspx|access-date=2021-07-08|website=www.alberta.ca|language=en-CA}}</ref>
+
+Beginning in October 2021, Alberta began issuing passenger (class 3) license plates with HD 6700 reflective sheeting from 3M. The reflective series began at CKT-1800. This sheeting had been used on several small batches of Antique Auto, Motorcycle, and Veteran plates before being introduced to general issue plates. This is the first time reflective passenger plates had been issued since 1993. The changes also occurred to trailer plates at 6JP0-00, Class 2 commercial plates at 44-P000, and Class 1 commercial plates at the beginning of a new format, 0-AA000; this format would take effect after the exhaustion of the A-00000 to A-99999 series. Dealer plates had the new sheeting introduced at M83000. 
+
+{| class="wikitable"
+|-
+!Image
+!Issued
+!Type
+!Serial format
+!Serials issued
+
+|-
+|[[File:Alberta 1986 license plate - BTP610.jpg|100px]]
+|1983–90
+|Passenger, reflective base
+| rowspan="12" |ABC-123
+|BBB-000 to DZZ-999; FBB-000 to HZZ-999; JBB-000 to LWK-499 (without A, E, U, and Y)
+|-
+|[[File:Blank License Plate Shape.svg|100px]]
+|1990–91
+|Passenger; Manufactured by L&M Signs on a reflective baseplate.
+|LWK-500 to MDR-499 (without A, E, U and Y)
+|-
+|[[File:Alberta 1992 license plate - MZL-574.jpg|100px]]
+|1991–93
+|Passenger; Pairs were phased out during this time, mid M-series. 
+|MDR-500 to NZZ-999; PBB-000 to PFB-199 (without A, E, U and Y)
+|-
+|[[File:Alberta 1995 license plate - PTD-141.jpg|100px]]
+|1993–94
+|Passenger; Beginning of Non-reflective series.
+|PFB-200 to PZX-199 (without A, E, U and Y)
+|-
+|[[File:Alberta 1994 license plate - RHK-218.jpg|100px]]
+|1994–95
+|Passenger; Initial batch of plates manufactured by L&M Signs.
+|PZX-200 to RRF-199 (without A, E, U and Y)
+|-
+|[[File:Alberta 1996 license plate - RRR-491.jpg|100px]]
+|1995–96
+|Passenger; Initial batch of plates manufactured by the Waldale company using New Brunswick dies. 
+|RRF-200 to SLM-199 (without A, E, U and Y)
+|-
+|[[File:Alberta 1997 license plate - SNX-000.jpg|100px]]
+|1996
+|Passenger; Second batch made by L&M Signs, featuring round bolt holes. 
+|SLM-200 to SVL-599 (without A, E, U and Y)
+|-
+|[[File:AB plate TCH243.jpg|100px]]
+|1996–97
+|Passenger; Third batch made by L&M Signs, featuring dies used on Saskatchewan plates. 
+|SVL-600 to TGW-199 (without A, E, U and Y)
+|-
+|[[File:Blank License Plate Shape.svg|100px]]
+|1997–98
+|Passenger; Manufactured by Hi-Signs Ltd. of Edmonton. 
+|TGW-200 to UVZ-999 (except some of UJ*)
+|-
+|[[File:AB plate UXM444.jpg|100px]]
+|1998–2000
+|Passenger; Hi-Signs batch, some made with Aluminum baseplate.
+|some of UJ*<br>UWA-000 to VAE-999; VUR-000 to VVX-999
+|-
+|[[File:AB plate VGM548.jpg|100px]]
+|2000–03
+|Passenger; Waldale base with Manitoba dies. 
+|VAF-000 to VUP-999; VVY-000 to WZZ-999; YAA-000 to YZZ-999
+|-
+|[[File:AB plate BAB448.jpg|100px]]
+|2003 – June 2010
+|Passenger; Reissued portion of plates including previously skipped vowels series. Some were made using darker paint from New Brunswick plates. 
+|BAA-000 to TGU-999; ZAA-000 to ZGA-999 (only with A, E, U, and/or Y)<br>ZGH-000 to ZZZ-999
+|-
+| 
+|June 2010 – July 2019
+|Same as before using 7-digit sequence using Waldale's PEI/Mississippi dies. 
+| rowspan="3" |BBC-1234
+|BBB-0000 to {{nowrap|CDT-9999}}
+|-
+|[[File:AB3CKR0762.jpg|100px]]
+|July 2019 – October 2021
+|Same as before with new logo variety
+|CDV-0000 to {{nowrap|CKT-1799}}
+|-
+|[[File:AB3CKZ3449.jpg|100px]]
+|October 2021 – present
+|Same as before with new reflective baseplate introduced, the first of its type since 1993
+|CKT-1800 to {{nowrap|CZR-1162}} {{small|(as of July 23, 2026)}}
+|}
+
+===Future licence plate design===
+
+In October 2025, the provincial government announced an online vote for the choice of a new license plate design would be held. All 8 choices have replaced "Wild Rose Country" with "Strong and Free", taken from ''Fortis et Libre'' ([[Latin]]) on the Alberta Coat of Arms, which in turn is from the Canadian national anthem. The new license plate will feature the Moraine Lake and will start being issued in mid 2026 likely starting with the sequence DBB-0000 continuing the current ABC-1234 format in use since the early 2010s skipping vowels and the letter Q, the current 1983 base will still continue to be valid. <ref>{{Cite web |last=Alberta |first=Government of |date=2025-11-18 |title=The results are in: new plate revealed {{!}} Nous avons les résultats : la province dévoile une nouvelle plaque d’immatriculation |url=https://www.alberta.ca/news.aspx |access-date=2025-11-23 |website=www.alberta.ca |language=en-CA}}</ref> 
+
+{| class="wikitable"
+|-
+!Image
+!Issued
+!Type
+!Serial format
+!Serials issued
+|-
+|[[File:Licence-plate-moraine-lake-8.jpg|100px]]
+|
+|Passenger; New motto "Strong and Free" and the Moraine Lake featured on new design
+|BBC-1234
+|likely {{nowrap|CZX-0000}} through indefinite
+|}
+
+
+
+===Personalized plates===
+Alberta first issued personalized plates in 1985. As of 2018, over 80,000 such plates have been issued.<ref>{{cite web |title=Personalized Plates Program Information Sheet |url=https://www.servicealberta.ca/pdf/mv/Pers_Plate_Info_Sheet.pdf |website=Government of Alberta |publisher=Service Alberta |access-date=27 August 2018}}</ref>
+
+Personalized plates for private passenger vehicles can feature between one and seven characters, including letters, numbers, and spaces, while plates for motorcycles and veterans' vehicles can feature between one and five characters. Special characters, such as hyphens and exclamation marks, are not permitted. As in other jurisdictions, combinations may be rejected or withdrawn by the Registrar of Motor Vehicle Services if they are deemed offensive or confusing.<ref>{{cite news |last1=Snowdon |first1=Wallis |last2=Keeler |first2=Nola |date=27 August 2018 |title=Too rude for the road: Here are the licence plates Alberta won't allow |url=http://www.cbc.ca/news/canada/edmonton/edmonton-alberta-rejected-licence-plates-1.4797754 |publisher=[[CBC News]] |access-date=27 August 2018}}</ref>
+
+Personalized plates are issued in pairs, except for motorcycles. Only the rear plate is required to be displayed.
+
+===Specialty plates===
+A specially designed Support Our Troops plate was introduced on July 22, 2014, to honor current and former members of the Canadian Armed Forces.<ref>{{cite web |title=Service Alberta: Support Our Troops Plate |url=http://www.servicealberta.com/2181.cfm |publisher=Government of Alberta |access-date=April 14, 2015}}</ref> The design features artwork in honour of the first four Alberta-based Canadian soldiers who died in Afghanistan in April 2002. The plate is available at registry agent locations in Alberta for a one-time $75 fee and a $9 registry agent service charge. For every plate purchased, $55 of the purchase price goes to the Support Our Troops Program managed by the Canadian Forces Morale and Welfare Services.<ref>{{cite web |title=Support Our Troops licence plate raised more than $220,000 |url=https://www.alberta.ca/release.cfm?xID=3731873E966F5-B6EB-BA5F-F362F26AD3A0CC08 |publisher=Government of Alberta |date=November 7, 2014 |access-date=April 14, 2015}}</ref>
+
+On November 19, 2018, two specially designed [[Calgary Flames]] and [[Edmonton Oilers]] plates were introduced, with $55 of each $75 plate going to the Calgary Flames Foundation and the Edmonton Oilers Community Foundation.<ref>{{cite web |title=Licence plates have now joined the Battle of Alberta between Flames and Oilers |url=https://www.cbc.ca/news/canada/calgary/battle-of-alberta-licence-plates-1.4910441 |last=Dormer |first=Dave |publisher=Canadian Broadcasting Corporation |date=November 17, 2018 |access-date=November 18, 2018}}</ref><ref name=Plates2Months>{{cite web |title=When it comes to specialty licence plates, Edmonton Oilers winning Battle of Alberta |url=https://globalnews.ca/news/4890432/specialty-licence-plates-edmonton-oilers-calgary-flames-hockey/ |last=Mertz |first=Emily |publisher=Global News |date=25 January 2019 |access-date=27 January 2019}}</ref> In the first two months of sales 4507 plates were sold (2750 Oilers plates and 1757 Flames plates), raising over $247,000 for the foundations.<ref name=Plates2Months />
+
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Alberta 2014 license plate.jpg|100px]]
+|Support Our Troops
+|July 22, 2014&nbsp;–<br>present
+|'''A'''B1234
+|AA0000 to AG9232 (as of June 24, 2026)
+|Awarded "Plate of the Year" for best new licence plate of 2014 by the [[Automobile License Plate Collectors Association]], the first time Alberta was so honored.
+|-
+|[[File:Alberta License Plate Flames.jpg|100px]]
+|Calgary Flames
+|November 19, 2018&nbsp;–<br>present
+|'''F'''B0234
+|FA0000 to FB2512 (as of July 24, 2026)<ref name=Plates2Months />
+|
+|-
+|[[File:Alberta_license_plate_Oilers_2020.jpg|100px]]
+|Edmonton Oilers
+|November 19, 2018&nbsp;–<br>present
+|'''D'''B1234
+|DA0000 to DC5811 (as of July 24, 2026)<ref name=Plates2Months />
+|
+|-
+|[[File:1986 Alberta License Plate XV Winter Olympics.png|108x108px]]
+|XV Winter Olympic Games
+|1988
+|Corresponds to the rear plate
+|N/A
+|A specialty plate issued to commemorate the 1988 Winter Olympics held in Calgary.  This plate was unique in that it was offered only as a front plate; the rear remained the standard "Wild Rose Country" base.  It was valid until the end of 1988.
+|-
+|[[File:Alberta Veteran License Plate 2007.jpg|100px]]
+|[[Veteran]]<br>passenger<br>vehicles
+|2005 to present
+|'''V'''BC12
+|VAA00 to VTD81 (as of July 21, 2026)
+|
+|}
+
+==Non-passenger plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!Issued
+!Design
+! width="80" |Serial format
+!Serials issued
+|-
+|[[File:ABMZBV566.jpg|100px]]
+|[[All-terrain vehicle]]
+|1984-1990
+|red on white
+|'''Z'''BC-123
+|ZBB-000 to ZGG-999 (Z prefix with no vowels)
+|-
+|[[File:AB2010969.jpg|100px]]
+|rowspan=2|Class 2 Commercial
+(Restricted)
+|1984–86
+|rowspan=2|red on white
+|01-2345
+|00-0000 to 09-9999
+|-
+|[[File:Alberta 1995 farm truck license plate - 77-B000.jpg|100px]]
+[[File:AB252L464.jpg|100px]]
+[[File:AB274L838.jpg|100px]]
+[[File:AB224P754.jpg|100px]]
+[[File:AB247P666.jpg|100px]]
+|1986–present
+|12-A345
+|00-A000 to 48-H999;
+49-H000 to 59-L999; (made by Waldale, Manitoba dies)
+60-L000 to 99-N999; (made by Waldale, PEI dies) 
+00-P000 to 43-P999; (New logo) 
+44-P000 to 17-R704 (Reflective series) (as of May 26, 2026) 
+|-
+|[[File:AB plate D24086.jpg|100px]]
+[[File:ABDM54689.jpg|100px]]
+[[File:ABDM77770.jpg|100px]]
+|[[Car dealership|Dealer]]
+|1984–present
+|red on white
+|D12345
+|D00000 to D99999,<br>M00000 to M82999, 
+M83000 to M94460 (reflective series) (as of June 4, 2026) 
+|-
+|[[File:Alberta 2019 - 2020 License Plate AAE-072.jpg|100px]]
+|[[Disability|Handicapped]]
+|1984–present
+|red on white, plates AAA through AAC were standard design, with a handicap sticker placed on the top right corner. AAD and AAE have the handicap logo printed on the top right corner of the plate. 
+|'''A'''AB-123
+|AAA-000 to AAF-000 (as of June 21, 2026)
+it appears that nothing past the AAE series has been issued. Alberta may or may not continue this series after AAE-999. 
+Handicap placards: 
+ABA-000 to AZZ-999 (beginning of series needs to be verified) 
+AAA-0000 to ABX-9999 (as of September 7, 2023) 
+|-
+|[[File:ABM522MBR.jpg|100px]]
+|rowspan=4|[[Motorcycle]]
+|1984–86
+|rowspan="4"|red on white
+|123-'''M'''BC
+|000-MBB to 999-MGB (without A, E, U, I, O);
+
+Optional plates in smaller sizes were made in the following ranges and issued out of sequence:<br>
+000-MXZ to 399-MXZ;<br>
+000-MZX to 999-MZX; <br>
+000-MZZ to 999-MZZ;<br> 
+|-
+|[[File:ABMXTD374.jpg|100px]]
+|1986–99
+|'''X'''BC-123
+|XBB-000 to XZY-999 (without A, E, U, I, O);<br>XAA-000 to XAC-699 (stock of plates never issued)<br>
+Optional plates in smaller sizes were made with the following prefixes and issued out of sequence:<br>
+XZW, XZX, XZZ
+|-
+|[[File:ABMKH246.jpg|100px]]
+[[File:ABMVZ942.jpg|100px]]
+[[File:AB07 XU046.jpg|100px]]
+[[File:ABMBM004.jpg|100px]]
+[[File:ABMQR465.jpg|100px]]
+[[File:ABMQV932.jpg|100px]]
+|1999–2010
+|AB123
+|GS000–ZZ999 (1999 to 2007)<br> 
+AA000–GR999 (2007 to 2009) <br> 
+'''Q'''A000–'''Q'''Z999 (2009 to 2010) <br> 
+A'''Q'''000-Z'''Q'''999 (2010) <br> 
+|-
+|[[File:Alberta-Motorcycle-Plate-ALP84.jpg|100px]]
+[[File:ABMLSP88.jpg|100px]]
+[[File:ABMNCA00.jpg|100px]]
+[[File:ABMSMH81.jpg|100px]]
+|2010–present
+|ABC12
+|AAA00 to SCC99 (Non-reflective, apart from some specific test batches in the P series)  
+SCD00 to WMV56 (Reflective series) (as of June 27, 2026)
+|-
+|[[File:ABVVS73.jpg|100px]]
+|Veteran Motorcycle
+|2012–present
+|red on white, Poppy and Maple Leaf symbol to the left of plate number
+|VB12
+|VA00 to VZ99
+ZA00 to ZS99 (as of September 28, 2024)
+|-
+|[[File:Alberta 1995 license plate - 3-28861.jpg|100px]]
+|rowspan=3|Class 1 Commercial (Livery vehicle)
+|1984–97
+| rowspan="2" |red on white
+|1-23456
+|1-00000 to 3-99999
+|-
+|[[File:Alberta-Rental-Plate-U-07070.jpg|100px|]]
+[[File:AB1U99998.jpg|100px|]]
+[[File:AB1A61768.jpg|100px|]]
+|1997–2023
+|A-12345
+|B-00000 to C-99999,(1997-2003)<br>F-00000 to H-99999, (2003-2011)<br>J-00000 to L-99999, (2011-2017)<br>E-00000- to E-99999 (2017- December 2018),<br>U-00000 to U-79999 (December 2018 – 2020)
+U-80000 to U-99999, (New logo) (2020)<br>A-00000 to A-99999 (December 2020-May 2023)
+|- 
+|[[File:AB10AB006.jpg|100px]]
+|2023–present 
+|red on white; reflective sheeting
+|0-AB123
+|0-AA000 to 0-HL229 (as of June 26, 2026) 
+|-
+|[[File:ABT10560A.jpg|100px]]
+[[File:ABT78889B.jpg|100px]]
+| rowspan="4" |[[Trailer (vehicle)|Trailer]]
+|1984''-unknown''
+| rowspan="3" |red on white, always featured a white "PERMANENT TRAILER" sticker until stickers were discontinued in 2021.
+|1234-5A
+|0000-1A to 9999-9D
+|-
+|[[File:ABT655548.jpg|100px]]
+[[File:ABT999292.jpg|100px]]
+|''unknown–''1997
+|4567-89
+|4000-00 to 9999-99
+|-
+|[[File:ABTN00702.jpg|100px]]
+[[File:ABTN19669.jpg|100px]]
+[[File:ABTN29716.jpg|100px]]
+[[File:ABTX21627.jpg|100px]]
+|1997-2010
+|N123-45
+|N000-00 to N189-99 (Made by Hi-Signs) 
+N190-00 to N199-99 (Made by L&M Signs with Saskatchewan dies) 
+N200-00 to N999-99 (Made by Hi-Signs)<br>P000-00 to P499-99, (Made by Hi-Signs)
+
+P500-00 to P999-99, (Made by Waldale with Manitoba dies from here on after)<br>R000-00 to T999-99,<br>V000-00 to Z799-99; <br>
+Z800-00 to Z999-99 (Made with Waldale 7-digit dies, same as on PEI plates) 
+|-
+|[[File:ABT4KW216.jpg|100px]]
+[[File:ABT6DR953.jpg|100px]]
+[[File:ABT6JW518.jpg|100px]]
+|2010–present
+|red on white
+|4AB5-67
+|4AA0-00 to 4ZZ9-99;
+5AA0-00 to 5YZ9-99;
+
+5ZA0-00 to 5ZZ9-99 (New logo);<br>6AA0-00 to 6JN9-99;<br>6JP0-00 to 6ZZ9-99 (Reflective series);<br>7AA0-00 to 7BC5-86 (as of July 17, 2026)
+|-
+|[[File:ABA2864.jpg|100px]]
+| rowspan="3" |Antique Auto
+|1984–1999
+| rowspan="3" |red on white, "ANTIQUE AUTO" printed on top right corner
+|2-567
+|2–500 to 9-999 (1-000 to 2-499 was used for the 1970s yellow Base and initially skipped. These numbers were reissued around 2019 – see below)
+|-
+|[[File:ABAB357.jpg|100px]]
+|1999–2019
+|A-123
+|A-000 to Z-999; <br>Changed to 7-digit dies at L-999/M-000
+0–000 to 2-499 (reissued the portion of plate numbers initially skipped from the yellow Base)
+|-
+|[[File:ABA00760.jpg|100px]]
+[[File:ABA03343.jpg|100px]]
+|2019–present
+|12345
+|00000 to 02999 (Old logo, Non-reflective) 
+03000 to 19454 (New logo, Reflective) (as of June 27, 2026) 
+|-
+|[[File:Blank License Plate Shape.svg|100px]]
+|Antique Motorcycle
+|''unknown–''present
+|red on white, "ANTIQUE" printed on bottom right corner
+|Blocks from the Antique Auto series
+|G-100 to G-199 (needs verification)
+K-900 to K-999 (needs verification)
+ 
+10400 to 10499 (needs verification)
+
+|-
+|[[File:ABCCC1507.jpg|100px]]<br>
+[[File:ABCCC1685.jpg|100px]]<br>
+[[File:ABCCC1701.jpg|100px]]<br>
+|Consular Corps
+|1984–present
+|red on white, "CONSULAR CORPS" printed on top right corner
+|'''CC'''-1234
+|CC-1000 to CC-1932 (as of September 29, 2025)
+Beginning at CC-1800 the plates are manufactured with reflective sheeting but still feature the old Alberta logo for the time being. 
+|}
+
+===Previous plates===
+{|class=wikitable
+|-
+!Image
+!Type
+!Issued
+!Design
+! width="80" |Serial format
+!Serials issued
+|-
+|[[File:Alberta 1974 license plate - Number 01-44-56.jpg|100px]]
+|Exempt
+|1974
+|yellow on blue
+|12-34-56
+|''Unknown''
+|-
+|[[File:Alberta 1953 Farm Truck license plate F71388.jpg|100px]]
+|Farm
+|1953
+|blue on white
+|'''F'''12345
+|''Unknown''
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category|License plates of Alberta}}
+*[https://www.flickr.com/photos/woodysworld1778/collections/72157603945489254/ Alberta Licence Plates 1912-Date All Types]
+*[http://www.15q.net/ab.html Alberta licence plates 1969-present]
+*[http://www.servicealberta.gov.ab.ca/572.cfm Service Alberta - Vehicle Licence Plate and Registration]
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:1912 establishments in Alberta]]
+[[Category:Vehicle registration plates of Canada|Alberta]]
+[[Category:Transport in Alberta]]
+[[Category:Alberta transport-related lists]]

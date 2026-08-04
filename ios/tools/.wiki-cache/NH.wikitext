@@ -1,0 +1,950 @@
+{{short description|New Hampshire vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = New Hampshire license plate.jpg
+| nickname =
+| slogan_label = Slogan
+| slogan = Live Free or Die
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123 4567
+| current_start_date = {{Start date|1999|01}}
+| designer = 
+| issuer = [[New Hampshire Department of Safety]], Division of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1905|04|04}}
+}}
+The U.S. state of [[New Hampshire]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1905. {{As of|2022}}, plates are issued by the [[New Hampshire Department of Safety]] through its Division of Motor Vehicles. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+===1905 to 1972===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first New Hampshire license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1905–11
+|White serial on green porcelain plate; "N.H." centered at bottom
+|''none''
+|1234
+|1 to approximately 7200
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|Embossed green serial on white plate; vertical "NH" and "1912" at left and right respectively
+|''none''
+|1234
+|1 to approximately 5700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|White serial on green porcelain plate; vertical "NH" and "1913" at left and right respectively
+|''none''
+|1234
+|1000 to approximately 7800
+|
+|-
+|[[File:1914 New Hampshire License Plate.jpg|150px]]
+|1914
+|White serial on green porcelain plate; vertical "NH" and "1914" at left and right respectively
+|''none''
+|1234
+|1000 to approximately 9700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Green serial on white porcelain plate; "N.&nbsp;H." and "1915" centered at top and bottom respectively
+|''none''
+|12345
+|1000 to approximately 13500
+|
+|-
+|[[File:1916 New Hampshire License Plate.jpg|150px]]
+|1916
+|White serial on green porcelain plate; vertical "NH" and "1916" at left and right respectively
+|''none''
+|12345
+|1 to approximately 17600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Green serial on white porcelain plate; "N.&nbsp;H." and "1917" centered at top and bottom respectively
+|''none''
+|12345
+|100 to approximately 23100
+|
+|-
+|[[File:New Hampshire 1918 license plate - Number 18831.jpg|150px]]
+|1918
+|White serial on green porcelain plate; "N&nbsp;H" and "1918" centered at top and bottom respectively
+|''none''
+|12345
+|100 to approximately 24700
+|Some later plates manufactured on [[fiberboard]].<ref>{{cite web |last=Taylor |first=Eric Robert |title=New Hampshire Archive |url=http://porcelainplates.net/newhampshire_archive.html |publisher=PorcelainPlates.net |access-date=October 14, 2017}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Dark green serial on white flat metal plate; "N&nbsp;H" and "1919" centered at top and bottom respectively
+|''none''
+|12345
+|100 to approximately 30000
+|
+|-
+|[[File:1920 NH license plate.JPG|150px]]
+|1920
+|White serial on dark green flat metal plate; "N&nbsp;H" and "1920" centered at top and bottom respectively
+|''none''
+|12345
+|100 to approximately 35000
+|
+|-
+|[[File:1921 New Hampshire license plate.jpg|150px]]
+|1921
+|Dark green serial on white flat metal plate; "N&nbsp;H" and "1921" centered at top and bottom respectively
+|''none''
+|12345
+|100 to approximately 42500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed white serial on dark green plate with border line; "N.H. 1922" centered at bottom
+|''none''
+|12345
+|100 to approximately 48500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed dark green serial on white plate with border line; "N&nbsp;H" and "1923" centered at top and bottom respectively
+|''none''
+|12.345
+|100 to approximately 60.000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on dark green plate with border line; "N&nbsp;H" and "1924" centered at top and bottom respectively
+|''none''
+|12-345
+|100 to approximately 72-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed dark green serial on white plate with border line; "N&nbsp;H" and "1925" centered at top and bottom respectively
+|''none''
+|12-345
+|100 to approximately 81-000
+|
+|-
+|[[File:New Hampshire 1926 license plate.jpg|150px]]
+|1926
+|Embossed white serial on dark green plate with border line; embossed white [[Old Man of the Mountain, New Hampshire|Old Man of the Mountain]] graphic at left; "N&nbsp;H" and "1926" centered at top and bottom respectively
+|''none''
+|12-345
+|100 to approximately 89-000
+|
+|-
+|[[File:New Hampshire 1927 license plate.jpg|150px]]
+|1927
+|Embossed dark green serial on white plate with border line; "N&nbsp;H" and "1927" centered at top and bottom respectively
+|''none''
+|12-345
+|100 to approximately 95-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed white serial on green plate with border line; "NH-28" centered at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 103-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed green serial on white plate with border line; "NH-29" centered at top
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 109-000
+|
+|-
+|[[File:1930 New Hampshire.jpg|150px]]
+|1930
+|As 1928 base, but with "NH-30" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 111-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|As 1929 base, but with "NH-31" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 112-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|As 1928 base, but with "NH-32" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 107-000
+|
+|-
+|[[File:1933 NH passenger plate.jpg|150px]]
+|1933
+|As 1929 base, but with "NH-33" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 107-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|As 1928 base, but with "NH-34" at top
+|''none''
+|12-345
+|100 to approximately 91-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|As 1929 base, but with "NH-35" at top
+|''none''
+|12-345
+|100 to approximately 94-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|As 1928 base, but with "NH-36" at top
+|''none''
+|12-345
+|100 to approximately 97-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|As 1929 base, but with "NH-37" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 101-000
+|
+|-
+|[[File:1938 New Hampshire license plate.jpg|150px]]
+|{{nowrap|1938–39}}
+|As 1928 base, but with "NH-38-9" at top
+|''none''
+|12-345
+|100 to approximately 98-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939–40
+|As 1929 base, but with "NH-39-40" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 104-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940–41
+|As 1928 base, but with "NH-40-41" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 108-000
+|
+|-
+|[[File:1942 New Hampshire license plate.jpg|150px]]
+|1941–42
+|As 1929 base, but with "NH-41-42" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 110-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1942–44
+|As 1928 base, but with "NH-42-43" at top
+|''none''
+|{{nowrap|123-456}}
+|100 to approximately 104-000
+|Revalidated through March 31, 1944, with white rectangular tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|As 1929 base, but with "NH 44" at top
+|''none''
+|12-345
+|1 to approximately 89-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed black serial on white plate with border line; "NH 45" centered at top
+|''none''
+|12-345
+|1 to approximately 98-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed white serial on black plate with border line; "NH 46" centered at top
+|''none''
+|12-345<br>123456
+|1 to approximately 109000
+|
+|-
+|[[File:1947 New Hampshire license plate.jpg|150px]]
+|1947
+|As 1945 base, but with "NH 47" at top
+|''none''
+|12-345<br>123456
+|1 to approximately 114000
+|
+|-
+|[[File:1948 New Hampshire license plate.jpg|150px]]
+|1948
+|As 1946 base, but with "NH - 48" at top
+|''none''
+|12-345<br>123456
+|1 to approximately 120000
+|
+|- 
+|[[File:1949 NH license plate.JPG|150px]]
+|1949
+|Embossed forest green serial on white plate with border line; "NH - 49" centered at top
+|''none''
+|{{small|''A''/''B''}}123
+|County-coded
+|
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed white serial on forest green plate with border line; "NH - 50" centered at top
+|''none''
+|{{small|''A''/''B''}}123
+|County-coded
+|
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|As 1949 base, but with "NH - 51" at top
+|''none''
+|{{small|''A''/''B''}}123
+|County-coded
+|
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|As 1950 base, but with "NH - 52" at top
+|''none''
+|{{small|''A''/''B''}}123
+|County-coded
+|
+|- 
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|As 1949 base, but with "NH - 53" at top
+|''none''
+|{{small|''A''/''B''}}123
+|County-coded
+|
+|-
+|[[File:1954 New Hampshire license plate.jpg|150px]]
+|1954
+|Embossed white serial on forest green plate with border line; "NEW HAMPSHIRE" at bottom; "1954" centered at top
+|''none''
+|''AB''123
+|County-coded
+|First use of the full state name.
+|-
+|[[File:1955 New Hampshire license plate.jpg|150px]]
+|1955
+|Embossed forest green serial on white plate with border line; "NEW HAMPSHIRE" at bottom; "1955" centered at top
+|''none''
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed white serial on forest green plate with border line; "NEW HAMPSHIRE" at bottom; "1956" centered at top
+|''none''
+|''AB''123
+|County-coded
+|First 6" x 12" plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|Embossed forest green serial on white plate with border line; "NEW HAMPSHIRE" at bottom; "19" at top left and "57" at top right
+|"SCENIC" centered at top
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1958
+|Embossed white serial on forest green plate with border line; "NEW HAMPSHIRE" at bottom; "19" at top left and "58" at top right
+|"SCENIC" centered at top
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1959
+|As 1957 base, but with "59" at top right
+|"SCENIC" as on 1957 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:1960 New Hampshire license plate.jpg|150px]]
+|1960
+|As 1958 base, but with "60" at top right
+|"SCENIC" as on 1958 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:1961 New Hampshire license plate.jpg|150px]]
+|1961
+|As 1957 base, but with "61" at top right
+|"SCENIC" as on 1957 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:1962 New Hampshire license plate.jpg|150px]]
+|1962
+|As 1958 base, but with "62" at top right
+|"SCENIC" as on 1958 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:New Hampshire 1963 Hillsborough County license plate.jpg|150px]]
+|1963
+|As 1957 base, but without border line, and with "63" at top right
+|"PHOTOSCENIC" centered at top
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1964
+|As 1958 base, but with "64" at top right
+|"SCENIC" as on 1958 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1965
+|As 1957 base, but with "65" at top right
+|"SCENIC" as on 1957 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:New Hampshire 1966 license plate.png|150px]]
+|1966
+|As 1958 base, but with "66" at top right
+|"SCENIC" as on 1958 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:1967 New Hampshire license plate.JPG|150px]]
+|1967
+|As 1957 base, but with "67" at top right
+|"SCENIC" as on 1957 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1968
+|As 1958 base, but with "68" at top right
+|"SCENIC" as on 1958 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969
+|As 1957 base, but with "69" at top right
+|"SCENIC" as on 1957 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1970
+|As 1958 base, but with "70" at top right
+|"SCENIC" as on 1958 base
+|''AB''123
+|County-coded
+|
+|-
+|[[File:New Hampshire 1971 license plate - number 5519.jpg|150px]]
+|1971
+|As 1957 base, but with "71" at top right
+|"[[Live Free or Die|LIVE FREE OR DIE]]" centered at top
+|''AB''123
+|County-coded
+|First use of the state motto on regular passenger plates. The motto had first been used on [[vanity plate]]s on the 1970 base.
+|-
+|[[File:New Hampshire 1972 license plate - 5519.jpg|150px]]
+|1972
+|As 1958 base, but with "72" at top right
+|"LIVE FREE OR DIE" centered at top
+|''AB''123
+|County-coded
+|
+|}
+
+===1973 to present===
+In 1977, the [[Supreme Court of the United States|U.S. Supreme Court]] ruled that vehicle owners may cover up the mottos that a state places on its license plates. The case began in 1974 when George Maynard, a [[Jehovah's Witnesses|Jehovah's Witness]] from [[Claremont, New Hampshire]], and his wife taped over the "Live Free or Die" motto on their plates. Maynard, who argued that the motto violated his religious beliefs, subsequently spent 15 days in jail for refusing to pay the $75 fine imposed for covering up the motto ({{Inflation|US|75|1974|r=-1|fmt=eq}}). Chief Justice [[Warren E. Burger]] stated, "The [[First Amendment to the United States Constitution|First Amendment]] protects the right of individuals to hold a point of view different from the majority and to refuse to foster, in the way New Hampshire commands, an idea they find morally objectionable."<ref>{{cite news |title=Justices uphold right to cover car-tag motto |newspaper=[[Chicago Tribune]] |date=April 21, 1977 |page=6 }}</ref><ref>{{cite news |title=Foes of Auto Tag Messages Gain |newspaper=[[The New York Times]] |date=April 21, 1977 |page=18 }}</ref>
+
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1973 New Hampshire License Plate OWN IT.jpg|150px]]
+|1973–74
+|Embossed forest green serial on white plate with border line; "NEW HAMPSHIRE" at bottom; "73" at top right 
+|"LIVE FREE OR DIE" centered at top
+|''AB''123<br>{{small|''A''/''B''}}1234
+|County-coded
+|Revalidated for 1974 with stickers. Four-digit serials with stacked county codes introduced in counties that had exhausted their three-digit allocations.
+|-
+|[[File:New Hampshire 1979 license plate sticker on 1975 license plate - Number LI541.jpg|150px]]
+|1975–76
+|rowspan="2"|Embossed white serial on forest green plate with border line; "NEW HAMPSHIRE" at bottom; "75" at top left
+|rowspan="2"|"LIVE FREE OR DIE" centered at top
+|''AB''123<br>{{small|''A''/''B''}}1234
+|rowspan="2"|County-coded
+|Monthly staggered registration introduced, with each plate expiring in the same month as the registrant's birthday.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1977
+|''AB''123<br>''AB''1234
+|Narrow dies introduced, allowing for six-character serials with full-size county code letters.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|December 1977&nbsp;– July<br>1978
+|Embossed red serial on white plate with border line; "NEW HAMPSHIRE" at bottom
+|rowspan="2"|"LIVE FREE OR DIE" centered at top
+|rowspan="2"|'''X'''B1234
+|XA1 to<br>XF9999
+|rowspan="2"|Interim plates issued only to new registrants. Elements changed from red to green in response to concerns of confusion with [[Vehicle registration plates of Massachusetts|Massachusetts plates]] of the time; unissued red plates were recalled and repainted accordingly before issue.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|July 1978&nbsp;– December 1978
+|As above, but with elements in green rather than red
+|XG1 to approximately XN7000<ref name="allaboutlicenseplatesNH">{{cite web |last=Tanner |first=Eric N. |title=New Hampshire Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=New%20Hampshire&code=nh |publisher=allaboutlicenseplates.com |access-date=February 25, 2021}}</ref>
+|-
+|[[File:New Hampshire license plate, 1979.png|150px]]
+|January 1979&nbsp;– December 1983
+|rowspan="2"|Embossed forest green serial on reflective white plate with border line; "NEW HAMPSHIRE" centered at bottom
+|rowspan="2"|"LIVE FREE OR DIE" centered at top
+|123456
+|1 to 999999
+|rowspan="2"|
+|-
+|[[File:New Hampshire 1985 65064A.jpg|150px]]
+|December 1983&nbsp;– December 1986
+|12345A
+|10000A to approximately 59000G<ref name="allaboutlicenseplatesNH"/>
+|-
+|[[File:1986 New Hampshire sample plate.jpg|150px]]
+|January 1987&nbsp;– March 1989
+|Embossed forest green serial on reflective white plate; "NEW HAMPSHIRE" screened in pale green centered at top, with a graphic of the Old Man of the Mountain in a circle between the two words
+|"Live Free or Die" screened in pale green centered at bottom
+|123456
+|1 to 999999
+|rowspan="2"|
+|-
+|[[File:New Hampshire license plate, 1989-1998.png|150px]]
+|March 1989&nbsp;– December 1998
+|As above, but with dark green serial, state name and graphic
+|"LIVE FREE OR DIE" screened in dark green centered at bottom
+|{{nowrap|ABC-123}}
+|AAA-001 to approximately DEX-500<ref name="allaboutlicenseplatesNH"/>
+|-
+| 
+| rowspan="4" |January 1999&nbsp;– present
+| rowspan="4" |Embossed dark green serial on reflective graphic plate with Old Man of the Mountain and [[Cannon Mountain (New Hampshire)|Cannon Mountain]] against pale blue sky; screened dark green "New HAMPSHIRE" centered at bottom, with cursive "New" above serifed "HAMPSHIRE"
+| rowspan="4" |"LIVE FREE OR DIE" screened in dark green centered at top
+|12345
+|1 to 99999
+|Old Man graphic at right (also the style for vanity plates).
+|-
+| 
+|123&nbsp;456
+|999&nbsp;999 to 100&nbsp;000
+|Serials progressed backwards.<ref>{{cite web|url= http://www.licenseplates.cc/highs.php?where=NH |title= licenseplates.cc New Hampshire highs page |author= Sage, Kit |author2=Tanner, Eric |access-date= June 24, 2009}}</ref> Old Man graphic in center.
+|-
+|[[File:New Hampshire license plate.jpg|150px]]
+|123&nbsp;4567
+|100&nbsp;0000 to 553 8164{{small|(as of January 17, 2025)}}<ref name=":1">{{Cite web |title=New Hampshire License Plates |url=https://www.licenseplates.cc/NH |access-date=2023-06-15|website=www.licenseplates.cc}}</ref>
+|Old Man graphic slightly to left of center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|D1234
+|D1000 to unknown
+|Old man graphic at right. Empty 3"x3" square at left for placement of a decal purchased separately from a legislatively approved organization or charity.<ref>{{Cite web |title=Decal Plates |url=https://www.dmv.nh.gov/vehicles-boats-or-titles/vehicle-registrations/decal-plates |access-date=2022-08-26 |website=NH Division of Motor Vehicles |language=en}}</ref>
+|}
+{| class="wikitable"
+|+Specialty Plates
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1999–Present
+|Embossed dark green serial with moose graphic on left and mountain graphic in background; screened dark green "New HAMPSHIRE" centered at bottom, with cursive "New" above serifed "HAMPSHIRE"; "C/H" screened in green to the left of serial
+|"LIVE FREE OR DIE" screened in dark green centered at top
+|{{Small|C/H}}1234'''X'''
+{{Small|C/H}}123'''X'''4
+{{Small|C/H}}12'''X'''34
+
+{{Small|C/H}}1'''X'''234
+{{Small|C/H}}'''X'''1234
+|{{Small|C/H}}1000C to {{Small|C/H}} C9999
+{{Small|C/H}}1000H to {{Small|C/H}} H9999
+
+{{Small|C/H}}1000P to {{Small|C/H}} P9999
+
+{{Small|C/H}}1000M to {{Small|C/H}} 5M117 {{small|(as of December 17, 2024)}} 
+|Progresses through each format with a single letter, then switches to a new letter
+C, H, P, M, W used so far
+$30 a year cost
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013–Present
+|As Moose/Conservation plate with NH state parks logo on right
+|"LIVE FREE OR DIE" screened in dark green centered at top
+|123A
+|100A to 217E {{small|(as of December 9, 2024)}} 
+|$115 a year cost, gives free access to state parks
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2012–Present
+|As current passenger base, with Old Man of the Mountain graphic at right and NH state parks logo screened on left 
+|"LIVE FREE OR DIE" screened in dark green centered at top
+|123456
+|100000 to approximately 105000 and reused 2000 passenger serials
+|$85 a year cost, gives free access to state parks
+|}
+{| class="wikitable"
+|+Veteran Plates
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1999–Present
+|Embossed blue serial on white plate with American flag screened in blue left of serial "NEW HAMPSHIRE" screened in blue on bottom and "VETERAN" screened in red on top 
+|"LIVE FREE OR DIE" screened in blue centered at top
+|V12345
+|V 1 to V73125 {{small|(as of October 16, 2024)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1999–Present
+|As standard veteran plate with "DISABLED VETERAN" screened in red on top and wheelchair symbol screened in blue on right
+|"LIVE FREE OR DIE" screened in blue centered at top
+|1234
+|1 to 5786 {{small|(as of November 19, 2024)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2012–Present
+|As standard veteran plate with "NATIONAL GUARD" screened in red on top and blue colonial soldier screened in blue on right
+|"LIVE FREE OR DIE" screened in blue centered at top
+|1234
+|1000 to 2081 {{small|(as of September 14, 2014)}}
+|
+|}
+
+==County coding==
+
+From 1949 to 1979, passenger plates in New Hampshire featured a two-letter code indicating the county in which the vehicle was registered, as follows:<ref>{{cite web |last=Reback |first=Brian P. |title= New Hampshire - county codes |url=http://www.bprlicenseplates.com/New%20Hampshire%20-%20county%20codes.htm |publisher=bprlicenseplates.com |archive-url=https://web.archive.org/web/20150402103651/http://www.bprlicenseplates.com/New%20Hampshire%20-%20county%20codes.htm |archive-date=April 2, 2015 |access-date= May 6, 2013}}</ref>
+
+===County code allocations===
+
+{|class="wikitable"
+!County
+!Letter blocks 
+|-
+|[[Belknap County, New Hampshire|Belknap]]
+|BA–BZ
+|-
+|[[Carroll County, New Hampshire|Carroll]]
+|CA–CZ
+|-
+|[[Cheshire County, New Hampshire|Cheshire]]
+|EA–EZ, ZA–ZH (from 1972)
+|-
+|[[Coös County, New Hampshire|Coös]]
+|OA–OZ
+|-
+|[[Grafton County, New Hampshire|Grafton]]
+|GA–GZ
+|-
+|[[Hillsborough County, New Hampshire|Hillsborough]]
+|HA–HZ, LA–LZ, IA–IZ (from 1959), JA–JZ (from 1968)
+|-
+|[[Merrimack County, New Hampshire|Merrimack]]
+|MA–MZ, NA–NZ (from 1967)
+|-
+|[[Rockingham County, New Hampshire|Rockingham]]
+|RA–RZ, KA–KZ (from 1955), PA–PZ (from 1968)
+|-
+|[[Strafford County, New Hampshire|Strafford]]
+|FA–FZ, DA–DZ (from 1970)
+|-
+|[[Sullivan County, New Hampshire|Sullivan]]
+|SA–SZ
+|}
+
+===Alphabetical cross-reference===
+
+{|class="wikitable"
+!Letter blocks
+!County
+|-
+|BA–BZ
+|Belknap
+|-
+|CA–CZ
+|Carroll
+|-
+|DA–DZ
+|Strafford
+|-
+|EA–EZ
+|Cheshire
+|-
+|FA–FZ
+|Strafford
+|-
+|GA–GZ
+|Grafton
+|-
+|HA–HZ
+|Hillsborough
+|-
+|IA–IZ
+|Hillsborough
+|-
+|JA–JZ
+|Hillsborough
+|-
+|KA–KZ
+|Rockingham
+|-
+|LA–LZ
+|Hillsborough
+|-
+|MA–MZ
+|Merrimack
+|-
+|NA–NZ
+|Merrimack
+|-
+|OA–OZ
+|Coös
+|-
+|PA–PZ
+|Rockingham
+|-
+|RA–RZ
+|Rockingham
+|-
+|SA–SZ
+|Sullivan
+|-
+|ZA–ZH
+|Cheshire
+|}
+
+In addition, XA–XN were used on interim plates issued to new registrants between December 1977 and December 1978, while the serial AC 000 was and still is used on sample plates.
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Commercial
+|{{nowrap|1988–89}}
+|As 1987–89 passenger base
+|"Live Free or Die" centered at bottom
+|rowspan="2"|'''A'''B1234
+|AA0001 to approximately AB9999
+|rowspan="2"|Possibly discontinued 2007.<ref>{{cite web |last=Tanner |first=Eric N. |title=New Hampshire Truck/Commercial License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Truck-Commercial&jurisdiction=New%20Hampshire&code=nh |publisher=allaboutlicenseplates.com |access-date=July 5, 2021}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1989–present
+|As 1989–98 passenger base
+|"LIVE FREE OR DIE" centered at bottom
+|AC0001 to approximately AE8800
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Construction Equipment
+|1999–present
+|As current passenger base, with Old Man of the Mountain graphic at right; "CONSTRUCT EQUIP" screened vertically over graphic
+|"LIVE FREE OR DIE" centered at top
+|{{small|'''C'''/'''E'''}}12345
+|{{small|C/E}}00001 to {{small|C/E}}35959 {{small|(as of September 18, 2024)}}
+|
+|-
+| rowspan="4" |[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="4" |Disabled
+| rowspan="4" |1989–present
+| rowspan="4" |As 1989–98 passenger base, with wheelchair symbol at left
+| rowspan="4" |"LIVE FREE OR DIE" centered at bottom
+|1234
+|1000 to 9999
+|
+|-
+|123A
+|100A to 999Z
+|
+|-
+|A123
+|A100 to Z999
+|
+|-
+|1A23
+|1A00 to 9G99 {{small|(as of March 2025)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal Government
+|1989–present
+|As 1989–98 passenger base
+|"LIVE FREE OR DIE" centered at bottom
+|G12345
+|G10000 to G30914 {{small|(as of September 18, 2024)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Municipal Police
+|1999–present
+|Embossed blue serial on white and blue plate; "MUNICIPAL POLICE" screened at bottom; "M/P" Screened on left
+|"LIVE FREE OR DIE" centered at top
+|'''xxx''' 12
+|
+|'''xxx -''' department code
+12 - vehicle number
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="5" |Motorcycle
+|1987–94
+|rowspan="2"|Embossed green serial on white plate with border line; green Old Man of the Mountain graphic screened at top left with 'N' and 'H' on either side; "MOTORCYCLE" screened at bottom
+| rowspan="5" |''none''
+|12345
+|1 to 99999
+|rowspan="4"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994–2004
+|rowspan="2"|1234A
+|1000A to approximately 2000T
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2004–08
+| rowspan="3" |As above, but without border line
+|2001T to 9999Z
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2008–2022
+|A1234
+|A1000 to Z9999 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2022–Present
+|1A234
+|1A000 to 1H885 {{small|(as of October 12, 2024)}}
+|
+|-
+| 
+|rowspan="2"|Trailer
+|? to 2004
+|rowspan="2"|As 1989–98 passenger base
+|rowspan="2"|"LIVE FREE OR DIE" centered at bottom
+|'''T'''B1234
+|TA0001 to TZ9999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2004–present
+|'''T'''123456
+|T100000 to T792323 {{small|(as of January 23, 2025)}}
+|Same serial dies as current passenger base.
+|}
+
+==Gallery==
+{{Gallery
+|File:New Hampshire 1951 Commercial license plate.jpg
+|1951 commercial plate
+|File:1967 New Hampshire U.S. Senate License Plate.jpg
+|1967 U.S. Senate plate
+}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*[https://www.15q.net/nh.html New Hampshire license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200613013058/https://www.15q.net/nh.html |date=June 13, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{New Hampshire}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of New Hampshire}}
+[[Category:Vehicle registration plates of the United States by state or territory|New Hampshire]]
+[[Category:Transportation in New Hampshire]]
+[[Category:1905 introductions]]
+[[Category:1905 in transport]]
+[[Category:New Hampshire transportation-related lists]]

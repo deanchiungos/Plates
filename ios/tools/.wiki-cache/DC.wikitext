@@ -1,0 +1,1240 @@
+{{Short description|none}}
+{{Use American English|date=March 2023}}
+{{Use mdy dates|date=August 2021}}
+{{Infobox vehicle registration plate
+| image = Washington, D.C. license plate, 2017.png
+| nickname = 
+| slogan = End Taxation Without Representation
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = AB 1234
+| current_start_date = {{Start date|2017|08}}
+| designer = 
+| issuer = [[District of Columbia Department of Motor Vehicles]]
+| manufacturer =
+| start_date = {{Start date|1907|10|01}}
+}}
+<!--
+
+Do not change instances of "Washington, D.C." to "District of Columbia" without discussing this first. District of Columbia may be the formal name of the district, but "Washington, D.C." has been used on the district's standard passenger plates since 1965 (except for 2013–17).
+
+-->
+The U.S. [[federal district]] of [[Washington, D.C.]], first required its residents to register their [[motor vehicle]]s in 1903. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1907, when the district began to issue plates.<ref>{{cite web |title=Old District of Columbia License Plates |url=http://leatherlicenseplates.com/old-district-of-columbia-license-plates-vintage-district-of-columbia-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=September 27, 2017}}</ref> Plates are issued by the [[District of Columbia Department of Motor Vehicles]] (DC DMV). Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+===1907 to 1966===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Washington, D.C. license plate that complied with these standards was issued three years beforehand, in 1953 (dated March 31, 1954).
+
+{|class="wikitable"
+|-
+!Image
+!style="width:65px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1907–17
+|White serial on black porcelain plate; "DISTRICT OF COLUMBIA" at top
+|''none''
+|12345
+|1 to approximately 65000, with gaps
+|Some serial blocks believed to be reserved for motorcycles.<ref>{{cite web |last=Taylor |first=Eric Robert |title=District of Columbia Archive |url=http://porcelainplates.net/distofcolumbia_archive.html |publisher=PorcelainPlates.net |access-date=September 27, 2017}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed black serial on yellow plate; "DC 18" at right
+|''none''
+|12-345
+|1 to approximately 38-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Embossed white serial on green plate with border line; "D.C. 1919" at right
+|''none''
+|12-345
+|1 to approximately 46-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed black serial on white plate with border line; "D.C. 1920" at right
+|''none''
+|12-345
+|1 to approximately 55-000
+|
+|-
+|[[File:1921 DC license plate.jpg|150px]]
+|1921
+|Embossed blue serial on white plate with border line; "D.C. 1921" at right
+|''none''
+|12-345
+|1 to approximately 67-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed white serial on red plate with border line; "D.C. 1922" at right
+|''none''
+|12-345
+|1 to approximately 80-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed white serial on brown plate with border line; "D.C. 1923" at right
+|''none''
+|123-456
+|1 to approximately 112–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on black plate with border line; "DIST. COL. 1924" centered at top
+|''none''
+|12-345
+|1 to approximately 91-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed white serial on dark gray plate with border line; "DIST. COL. 1925" centered at top
+|''none''
+|123-456
+|1 to approximately 114–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed black serial on orange plate with border line; "DIST. COL. 1926" centered at top
+|''none''
+|123-456
+|1 to approximately 112–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed golden yellow serial on black plate with border line; "DIST. COL. 1927" centered at top
+|''none''
+|A-1234
+|E-1 to approximately V-1000
+|Letters A, B, C, D, H and R used on non-passenger vehicles. This practice continued through 1934.<ref name="allaboutlicenseplatesDC">{{cite web |last=Tanner |first=Eric N. |title=District of Columbia Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=District%20of%20Columbia&code=dc |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed black serial on golden yellow plate; "DIST. OF COLUMBIA - 1928" at bottom
+|''none''
+|A-1234
+|E-1 to approximately W-9000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed golden yellow serial on black plate; "DIST. OF COLUMBIA - 1929" at bottom
+|''none''
+|A-1234
+|E-1 to approximately Z-8000
+|
+|-
+|[[File:1930 District of Columbia.jpg|150px]]
+|1930
+|As 1928 base, but with "DIST. OF COLUMBIA - 1930" at bottom
+|''none''
+|A-1234
+|E-1 to approximately Y-3000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|As 1929 base, but with "DIST. OF COLUMBIA - 1931" at bottom
+|''none''
+|A-1234
+|E-1 to approximately Z-3000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|As 1928 base, but with "DIST. OF COLUMBIA - 1932" at bottom
+|''none''
+|A-1234
+|E-1 to approximately W-1000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1933
+|As 1929 base, but with "DIST. OF COLUMBIA - 1933" at bottom
+|''none''
+|A-1234
+|E-1 to approximately X-4000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|As 1928 base, but with "DIST. OF COLUMBIA - 1934" at bottom
+|''none''
+|A-1234
+|E-1 to approximately X-3000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed green serial on white plate with border line; "DISTRICT OF COLUMBIA - 1935" at bottom
+|''none''
+|123-456
+|57-001 to approximately 191–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed black serial on golden yellow plate with border line; "DISTRICT OF COLUMBIA" and "1936" centered at top and bottom respectively
+|''none''
+|123-456
+|54-001 to approximately 202–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed golden yellow serial on black plate with border line; "DISTRICT OF COLUMBIA" and "1937" centered at top and bottom respectively
+|''none''
+|123-456
+|46-001 to approximately 193–000
+|
+|-
+|[[File:1938 District of Columbia license plate.jpg|150px]]
+|1938
+|Embossed black serial on golden yellow plate with border line; "1938" and "DISTRICT OF COLUMBIA" centered at top and bottom respectively
+|''none''
+|123-456
+|46-001 to approximately 182–000
+|
+|-
+|[[File:1939 District of Columbia license plate.jpg|150px]]
+|January 1, 1939&nbsp;– February 29, 1940
+|Embossed golden yellow serial on black plate with border line; "DISTRICT OF COLUMBIA" and "EX-2-29-40" centered at top and bottom respectively
+|''none''
+|123-456
+|46-001 to approximately 174–000
+|
+|-
+|[[File:1940 District of Columbia license plate.jpg|150px]]
+|March 1, 1940&nbsp;– March&nbsp;31, 1941
+|Embossed black serial on golden yellow plate with border line; "DISTRICT OF COLUMBIA" and "EX-3-31-41" centered at top and bottom respectively
+|''none''
+|123-456
+|52-000 to approximately 182–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1941&nbsp;– March 31, 1942
+|Embossed golden yellow serial on black plate with border line; "EX-3-31-42" and "DISTRICT OF COLUMBIA" centered at top and bottom respectively
+|''none''
+|123-456
+|46-001 to approximately 183–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1942&nbsp;– March 31, 1945
+|As 1940–41 base, but with "EX-3-31-43" at bottom
+|''none''
+|123-456
+|52-001 to approximately 216–000
+|Revalidated through March 31, 1944, with black tabs, then through March 31, 1945, with white tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1945&nbsp;– March 31, 1946
+|As 1941–42 base, but with "EX-3-31-46" at top
+|''none''
+|123-456
+|45-001 to approximately 136–000
+|Only rear plates issued due to ongoing metal shortage.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1946&nbsp;– March 31, 1948
+|As 1940–41 base, but with "EX-3-31-47" at bottom
+|''none''
+|123-456
+|50-001 to approximately 181–000
+|Revalidated through March 31, 1948, with white tabs.
+|-
+|rowspan="3"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|April 1, 1948&nbsp;– March 31, 1949
+|rowspan="3"|Embossed golden yellow serial on black plate; "19 D.C. 48" at top
+|rowspan="3"|''none''
+|1234
+|1 to 9999
+|rowspan="3"|Letters B, C, D, H, L, M, R and T used on non-passenger vehicles. This practice continued through March 31, 1955.<ref name="allaboutlicenseplatesDC"/>
+|-
+|1-2345
+|1-1000 to<br>9-9999
+|-
+|A-1234
+|A-1 to approximately N-1000
+|-
+|rowspan="3"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|April 1, 1949&nbsp;– March 31, 1950
+|rowspan="3"|Embossed black serial on golden yellow plate; "19 D.C. 49" at bottom
+|rowspan="3"|''none''
+|1234
+|1 to 9999
+|rowspan="3"|
+|-
+|1-2345
+|1-1000 to<br>9-9999
+|-
+|A-1234
+|A-1 to approximately P-7000
+|-
+|rowspan="3"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|April 1, 1950&nbsp;– March 31, 1951
+|rowspan="3"|Embossed golden yellow serial on black plate with border line; "19 D.C. 50" at bottom
+|rowspan="3"|''none''
+|1234
+|1 to 9999
+|rowspan="3"|
+|-
+|1-2345
+|1-1000 to<br>9-9999
+|-
+|A-1234
+|A-1 to approximately S-5000
+|-
+|rowspan="3"|[[File:1951 District of Columbia license plate.jpg|150px]]
+|rowspan="3"|April 1, 1951&nbsp;– March 31, 1952
+|rowspan="3"|Embossed black serial on golden yellow plate with border line; "19 D.C. 51" at top
+|rowspan="3"|''none''
+|1234
+|1 to 9999
+|rowspan="3"|
+|-
+|1-2345
+|1-1000 to<br>9-9999
+|-
+|A-1234
+|A-1 to approximately S-2000
+|-
+|rowspan="3"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|April 1, 1952&nbsp;– March 31, 1953
+|rowspan="3"|Embossed golden yellow serial on black plate with border line; "19 D.C. 52" at bottom
+|rowspan="3"|''none''
+|1234
+|1 to 9999
+|rowspan="3"|
+|-
+|1-2345
+|1-1000 to<br>9-9999
+|-
+|A-1234
+|A-1 to approximately P-1000
+|-
+|rowspan="4"|[[File:1954 District of Columbia license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|April 1, 1953&nbsp;– March 31, 1955
+|rowspan="4"|Embossed dark green serial on white plate with border line; "DIST. OF COLUMBIA" centered at top; "3-31" at top left and "54" at top right
+|rowspan="4"|"THE NATION'S CAPITAL" centered at bottom
+|1234
+|1 to 9999
+|rowspan="4"|Revalidated through March 31, 1955, with dark green tabs.
+|-
+|1-2345
+|1-1000 to<br>9-9999
+|-
+|A-1234
+|A-1 to<br>Z-9999
+|-
+|AB-123
+|AA-1 to approximately AB-999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1955&nbsp;– March 31, 1956
+|Embossed white serial on dark green plate with border line; "DISTRICT OF COLUMBIA" centered at bottom; "3-31" at top left and "56" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦12♦34
+|AA♦10♦00 to AY♦99♦99; EA♦10♦00 to approximately EA♦99♦99
+|Serials with B, C, D, H and L as the first letter used on non-passenger vehicles. This practice continued through March 31, 1964.<ref name="allaboutlicenseplatesDC"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1956&nbsp;– March 31, 1957
+|Embossed black serial on golden yellow plate with border line; "DISTRICT OF COLUMBIA" centered at bottom; "3-31" at top left and "57" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦12♦34
+|AA♦10♦00 to AY♦99♦99; EA♦10♦00 to approximately EA♦99♦99
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1957&nbsp;– March 31, 1958
+|Embossed golden yellow serial on royal blue plate with border line; "DISTRICT OF COLUMBIA" centered at bottom; "3-31" at top left and "58" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦123
+|AA♦100 to approximately SZ♦999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1958&nbsp;– March 31, 1959
+|Embossed royal blue serial on golden yellow plate with border line; "DISTRICT OF COLUMBIA" centered at bottom; "3-31" at top left and "59" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦123
+|AA♦100 to approximately WB♦999
+|
+|-
+|[[File:1960 District of Columbia License Plate.JPG|150px]]
+|April 1, 1959&nbsp;– March 31, 1960
+|As 1957–58 base, but with "60" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦123
+|AA♦100 to approximately WK♦999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1960&nbsp;– March 31, 1961
+|As 1958–59 base, but with "61" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦123
+|AA♦100 to approximately WP♦999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1961&nbsp;– March 31, 1962
+|As 1957–58 base, but with "62" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦123
+|AA♦100 to approximately WV♦999
+|
+|-
+|[[File:1963 DC license plate.jpg|150px]]
+|April 1, 1962&nbsp;– March 31, 1963
+|Embossed dark green serial on reflective white plate with border line; "DISTRICT OF COLUMBIA" centered at bottom; "3-31" at top left and "63" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦123
+|AA♦100 to approximately WV♦999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1963&nbsp;– March 31, 1964
+|Embossed black serial on reflective yellow plate with border line; "DISTRICT OF COLUMBIA" centered at bottom; "3-31" at top left and "64" at top right
+|"NATION'S CAPITAL" centered at top
+|AB♦123
+|AA♦100 to approximately XJ♦999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|April 1, 1964&nbsp;– March 31, 1965
+|rowspan="2"|Embossed red serial on reflective white plate with border line; "DISTRICT OF COLUMBIA" centered at bottom; "3-31" at top left and "65" at top right
+|rowspan="2|"NATION'S CAPITAL" centered at top
+|1A234
+|1A101 to 9Z999
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1A23
+|1A01 to approximately 2T99
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1965&nbsp;– March 31, 1966
+|Embossed black serial on reflective golden yellow plate with border line; "WASHINGTON, D.C." centered at bottom; "3-31" at top left and "66" at top right
+|"NATION'S CAPITAL" centered at top
+|1AB23
+|1AA01 to approximately 2MH99
+|
+|}
+
+===1966 to present===
+Since November 2000, the standard Washington, D.C. license plate design has featured some form of the slogan "[[No taxation without representation|Taxation Without Representation]]", referring to the circumstance that the district's residents face, in common with U.S. territories, in which they must pay [[income tax in the United States|federal income tax]] but [[District of Columbia voting rights|cannot elect a voting member]] of the [[United States Congress]].<ref name=wapo-2000-11-05>{{cite news |last=Chan |first=Sewell |date=November 5, 2000 |title=Message Gets Rolling; D.C. Government Enlists Residents' Vehicles In Campaign for Congressional Representation |url=https://pqasb.pqarchiver.com/washingtonpost/access/63411917.html?FMT=ABS |newspaper=[[The Washington Post]] |page=C01 |archive-url=https://web.archive.org/web/20110501091023/https://pqasb.pqarchiver.com/washingtonpost/access/63411917.html?FMT=ABS |archive-date=May 1, 2011 |access-date=August 6, 2008}}</ref>
+{|class="wikitable"
+|-
+!Image(s)
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1966&nbsp;– March 31, 1967
+|Embossed black serial on reflective white plate with border line; "WASHINGTON, D.C." centered at top; "3-31" at bottom left and "67" at bottom right
+|rowspan="2"|"NATION'S CAPITAL" centered at bottom
+|rowspan="2"|123-456
+|100-001 to 300–000
+|rowspan="2"|Validated from April 1, 1967, through March 31, 1968, with stickers.
+|-
+|[[File:1968 Washington, D.C. license plate.jpg|150x150px]]
+|April 1, 1967&nbsp;– March 31, 1968
+|As above, but without "67"
+|300-001 to approximately 368–000
+|-
+|[[File:District of Columbia 1973 sample license plate 000-000.jpg|150px]]
+|April 1, 1968&nbsp;– March 31, 1974
+|Embossed black serial on reflective white plate with border line; "WASHINGTON, D.C." centered at bottom
+|"NATION'S CAPITAL" centered at top
+|123-456
+|500-001 to 999-999
+|
+|-
+|[[File:DC 1976 Bicentennial License Plate.jpg|150px]]
+|April 1, 1974&nbsp;– March 31, 1978
+|Embossed blue serial on reflective white plate; embossed blue [[United States Capitol dome|U.S. Capitol dome]] graphic used as separator; screened red stripes above and below serial; "WASHINGTON, D.C." centered at bottom; "3-31" at bottom left and debossed sticker box at bottom right
+|"1776 BICENTENNIAL 1976" at top
+|rowspan="3"|123-456
+|100-001 to 500–000
+|rowspan="3"|Monthly staggered registration introduced August 1, 1983. All plates replaced between 1984 and 1986.
+|-
+|[[File:Washington, D.C. license plate, 1978–1979 series with March 1980 expiration date.png|150px]]
+|April 1, 1978&nbsp;– March 31, 1979
+|As above, but with "3-31" on sticker at bottom left (applied during production)
+|rowspan="2"|"NATION'S CAPITAL" centered at top
+|500-001 to 562–000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|April 1, 1979&nbsp;– September 1984
+|As above, but without "3-31" sticker
+|562-001 to 925–000
+|-
+|[[File:Washington, D.C. license plate, 1984-1991.png|150px]]
+|October 1984&nbsp;– July<br>1991
+|rowspan="2"|Embossed blue serial on reflective white plate; screened [[Flag of the District of Columbia|district flag]] used as separator; screened red stripes above and below serial; "Washington, D.C." screened in blue centered at bottom; debossed sticker boxes in bottom corners
+|"A Capital City" screened in blue centered at top
+|rowspan="2"|123-456
+|925-001 to 999-999;<br>010-001 to 501–750
+|rowspan="2"|Plates with all-numeric serials still validated including April 2016 all-numedic remake on the 2013 DISTRICT OF COLUMBIA base<ref>{{cite web |title=1984 Capital City Baseplate |url=http://dcplates.net/Base1984.htm |publisher=DCplates.net |access-date=September 6, 2018 |archive-date=November 22, 2022 |archive-url=https://web.archive.org/web/20221122164354/http://dcplates.net/Base1984.htm |url-status=dead }}</ref> Slogan changed in 1991 in honor of the district's bicentennial.
+|-
+|[[File:Washington, D.C. license plate, 1991–1997 series.png|150px]]
+|July 1991&nbsp;–<br>April<br>1997
+|"Celebrate & Discover" screened in blue centered at top
+|501-751 to approximately 853–000
+|-
+|[[File:Washington, D.C. license plate, 1997–2000 series with December 2000 sticker.png|150px]]
+|April<br>1997&nbsp;– November 2000
+|rowspan="3"|As above, but with "Washington, D.C." and sticker boxes at top rather than bottom
+|"Celebrate & Discover" as above, but at bottom
+|rowspan="9"|{{nowrap|AB-1234}}
+|AA-0000 to<br>AY-9999
+|rowspan="2"|AP series reserved for Apportioned plates.
+|-
+|[[File:Washington, D.C. license plate, 2000–2001 series with December 2001 sticker.png|150px]]
+|November 2000&nbsp;– October 2001
+|"[[No taxation without representation#District of Columbia|TAXATION WITHOUT REPRESENTATION]]" screened in blue at bottom
+|AZ-0000 to BA-9999;<br>BC-0000 to approximately BG-1999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2001&nbsp;– January 2002
+|"WWW.Washingtondc.gov" screened in blue centered at bottom
+|BB-0000 to approximately BB-1999
+|Alternative issue.
+|-
+|[[File:Washington, D.C. license plate, October 2002.png|150px]]
+|October 2001&nbsp;– October 2002
+|rowspan="3"|As above, but with serial screened rather than embossed, and without debossed sticker boxes
+|"TAXATION WITHOUT REPRESENTATION" as above
+|BG-2000 to BH-9999;<br>BK-0000 to approximately BP-1399
+|
+|-
+|[[File:2010–2017 Washington, D.C. license plate (www.washingtondc.gov).png|150px]]
+|January 2002&nbsp;– c.&nbsp;2018
+|"www.washingtondc.gov" screened in blue centered at bottom
+|BJ-0000 to<br>BJ-9999;<br>EA-0000 to approximately EA-2999
+|rowspan="2"|Alternative issues. EA series began in mid-2010.
+|-
+|[[File:District of Columbia, D.C. post-2018 license plate.png|150px]]
+|{{nowrap|c. 2018 &nbsp;–}} present
+|"www.dc.gov" screened in blue centered at bottom
+|EA-3000 to present
+|-
+|[[File:DC 2011.jpg|150px]]
+|October 2002&nbsp;–<br>July<br>2013
+|As above, but with "WASHINGTON, DC" in blue at top
+|rowspan="2"|"TAXATION WITHOUT REPRESENTATION" as above
+|BP-1400 to DZ-9999;<br>EB-0000 to<br>EJ-9999
+|rowspan="3"|DC series reserved for D.C. Government Fleet plates.
+|-
+|[[File:DC 2013.jpg|150px]]
+|July<br>2013&nbsp;–<br>August<br>2017
+|As above, but with "DISTRICT OF COLUMBIA" in blue at top
+|EK-0000 to FN-3999 
+also all-numeric remakes (000-000 format) from the 1984 A Capital City & 1991 Celebrate & Discover bases
+|-
+|[[File:Washington, D.C. license plate, 2017.png|150px]]
+|August<br>2017&nbsp;– present
+|As above, but with "WASHINGTON, DC" at top as from 2002 to 2013
+|"END TAXATION WITHOUT REPRESENTATION" screened in blue at bottom
+|FN-4000 to GV-9999; JA-0000 to JU-7808	 {{small|(as of October 26, 2025)}}<ref name=":0">{{Cite web |title=District of Columbia License Plates |url=https://www.licenseplates.cc/DC |access-date=2022-05-30 |website=www.licenseplates.cc}}</ref>
+|}
+
+==Non-passenger plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:District of Columbia - 2014 Annual Special Permit.png|alt=|150x150px]]
+|Annual Special Permit
+|c. 1971–present; undated prior to 1980
+|Annual plates; unique design each year:<br>1980: yellow on red<br>1981: red on yellow<br>1982: white on green<br>1983: black on yellow<br>1984: yellow on blue<br>1986: black on white<br>1987: white on green<br>1988: white on red<br>1990: yellow on red<br>1991: red on yellow<br>1991: yellow on red<br>2008: black on orange<br>2009: black on blue<br>2010: white on green<br>2011: black on magenta<br>2012: white on black<br>2013: black on white<br>2014: black on orange<br>2015: black on dark yellow<br>2016: white on dark blue<br>2017: black on lemon yellow<br>2018: black on red<br>2019: black on gray<br>2020: black on dark yellow<br>2021: black on green (expiration extended to 2022 with stickers)<br>2023: orange on white<br>2024: black on green<br>2025: [[buff (colour)|buff]] on light blue
+|1234-'''65'''<br>'''TC'''-1234<br>'''TT'''-1234{{efn|name=serial|1=The [[:File:Flag of Washington, D.C..svg|flag of the District of Columbia]] is used as a serial divider.}}
+|Temporary-use permits supplemental to registration plates; issued to heavy trucks registered outside of D.C.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]]
+|c. 2000–present
+|As passenger base, with district flag used as separator in serial, but with "APPORTIONED" in place of slogan
+|'''AP'''-1234
+|Infrequently issued. Validated with plate stickers, as opposed to windshield stickers. Current highest serial seen: AP-1396 (on October 28, 2021).
+|-
+|[[File:Washington, D.C. bus license plate, 2020.jpg|150px]]
+|[[Bus]]
+|1927–present
+|As passenger base, with district flag used as separator in serial
+|'''B'''-12345
+|Current serial sequence began 1974 at B-101; serials became screened at around B-40500. Current highest serial seen: B-52131 (on November 2, 2020).
+|-
+|[[File:Washington DC Clergy License Plate.jpg|150px]]
+|[[Clergy]]
+|1975-1984, with limited issuance since 1984
+|As 1984–91 passenger base, with "A Capital City" at top, but with district flag at left
+|{{small|'''CLERGY'''<br>1234}}
+|Likely no longer manufactured, but still revalidated.
+|-
+|[[File:DC Commercial License Plate.jpg|150px]]
+|[[Commercial vehicle|Commercial]]
+|1926–present
+|As passenger base, with district flag used as separator in serial
+|'''C'''-12345
+|Current serial sequence began 1974 at C-101; serials became screened at around C-68000. Current highest serial seen: C-82000 (on June 3, 2021).
+|-
+|rowspan="3"|[[File:2013 Washington, D.C. dealer vehicle registration plate.JPG|150px]]<br>2013<br><br>[[File:2020 Washington DC Dealer License Plate.jpg|150px]]<br>2020<br><br>[[File:2021 Washington DC Dealer License Plate.jpg|150px]]<br>2021<br><br>[[File:2022 Washington DC Dealer License Plate.jpg|150px]]<br>2022
+|rowspan="3"|Dealer
+|rowspan="3"|1919–present
+|rowspan="3"|Generally issued on the same cycle as passenger plates until 2004, when annual plates with a unique design each year began.
+|'''DLR'''-1234{{efn|name=serial}}
+|2005: white on red<br>2006: white on blue<br>2007: black on yellow<br>2008: black on pink<br>2009: black on teal<br>2010: white on light blue<br>2011: black on yellow<br>2012: white on dark green
+|-
+|'''DLR'''12345
+|2013: black on blue<br>2014: black on maroon
+|-
+|'''DLR'''-12345{{efn|name=serial}}
+|2015: black on yellow<br>2016: black on grey<br>2017: black on green<br>2018: black on red<br>2019: black on orange<br>2020: black on blue<br>2021: black on pink<br>2022: black on yellow<br>2023: black on green<br>2024: ''unknown''<br>2025: yellow on dark green
+|-
+|[[File:DC Disabled License Plate.jpg|150px]]
+|[[Disability|Disabled]]
+|c. 1981–present
+|As passenger base, with no district flag
+|{{nowrap|{{access icon|10px}} {{small|'''H'''/'''P'''}}12345}}<br>{{access icon|10px}} 12345
+|Serial sequence began at {{nowrap|{{access icon|10px}} {{small|H/P}}001}}; the letters were dropped when the "Celebrate & Discover" slogan was introduced, at around {{nowrap|{{access icon|10px}} 12000}}. Current highest serial seen: {{nowrap|{{access icon|10px}} 26021}} (on October 6, 2020).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Foreign Organization
+|Beginning by at least 2003; discontinued by 2015
+|Similar to passenger base, but with [[National Flower of the Republic of China|plum blossom]] symbol at left
+|{{small|'''T'''/'''P'''/'''E'''}}1234
+|Issued to vehicles owned by official representatives of [[Taiwan]]. No longer issued.
+|-
+|[[File:Washington DC Government Vehicle License Plate.jpg|150px]]
+|D.C. Government Fleet
+|1927–present
+|As passenger base, but with district flag at left with "D.C. GOVT." above and "Fleet" below
+|<sup>'''G'''</sup><small>'''V'''</small><sub>'''T'''</sub>1234{{efn|name=serial}}<br>'''GT'''-1234{{efn|name=serial}}<br>{{small|'''D'''/'''C'''}} 12345
+|Current serial sequence began 2000 at {{small|D/C}} 0001. Current highest serial seen: {{small|D/C}} 14350 (on June 3, 2022).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|D.C. Government Motorcycle
+|1952–present
+|5-digit plates: embossed blue on white; 6-digit plates: flat blue on white
+|'''GM'''-123<br>'''DC'''-1234<br>'''DC'''-123A
+|"GVT Motorcycle" legend
+|-
+|[[File:DC Water License Plate 2025.jpg|150px]]
+|[[District of Columbia Water and Sewer Authority]]
+|2001-2011; 2011–present
+|
+|{{small|'''W'''/'''A'''/'''S'''/'''A'''}}1234<br>{{small|'''D'''/'''C'''/'''W'''}}1234
+|D.C. Water plates replaced WASA plates in October 2011.
+|-
+|[[File:Washington, D.C. Historic Motor Vehicle license plate.jpg|150px]]
+|[[Antique car|Historic Motor Vehicle]]
+|1979–present
+|White plate with Capitol dome and district flag at left. Screened blue serial letters and embossed red serial digits until 2006; full serial screened blue since
+|{{small|'''H'''/'''M'''/'''V'''}}1234
+|Issued to vehicles that are at least 25 years old. Serial sequence began at {{small|H/M/V}}1; serials became fully screened at around {{small|H/M/V}}900. Current highest serial seen: {{small|H/M/V}}3018 (on May 11, 2020).
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Livery]]
+|1974–present
+|As passenger base, with district flag used as separator in serial
+|'''L'''-1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Manufacturer]]
+|2004-2011
+|Annual plates; unique design each year.
+|'''MFR'''-1234{{efn|name=serial}}
+|
+|-
+|[[File:Washington, D.C. motorcycle license plate 1980s-1990s.JPG|150px]]<br>[[File:Washington, D.C., motorcycle license plate.JPG|150px]]<br>[[File:Washington DC License Plate in MX Series.jpg|150px]]<br>[[File:2021 Washington DC Motorcycle License plate MY Series.jpg|150px]]
+|[[Motorcycle]]
+|c. 1908/1912–present
+|M and MC series: blue on white<br>Subsequent series: black on white
+|1234'''M'''<br>'''MC'''123<br><sup>'''M'''</sup><sub>'''T'''</sub>1234<br><sup>'''M'''</sup><sub>'''R'''</sub>1234<br><sup>'''M'''</sup><sub>'''C'''</sub>1234<br><sup>'''M'''</sup><sub>'''X'''</sub>1234<br><sup>'''M'''</sup><sub>'''Y'''</sub> 1234
+|<sup>M</sup><sub>T</sub> series began in 2002.<br><sup>M</sup><sub>R</sub> series began in 2010 but was not issued to completion before<br><sup>M</sup><sub>C</sub> series began in 2012.<sup>M</sup><sub>R</sub> series later issued to completion.<br><sup>M</sup><sub>X</sub> series began in 2019 but was not issued to completion before<sup>M</sup><sub>Y</sub> series began in 2021.
+|-
+|[[File:Washington DC License Plate Motor Driven Cycle.jpg|150px]]
+|[[Moped|Motor-Driven Cycle]]
+|c. 2018–present
+|Black on white
+|{{small|'''M'''/'''D'''/'''C'''}}1234
+|
+|-
+|[[file:12-07-15-wikimania-wdc-by-RalfR-020.jpg|150px]]<br>[[File:Washington DC Rental Car License Plate.jpg|150px]]
+|[[Car rental|Rental vehicle]]
+|1927-1954, 1964–present
+|As passenger base, with district flag used as separator in serial
+|'''R'''-12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Solid Waste
+|c. 1980s
+|As passenger base, with district flag used as separator in serial
+|'''SW'''-123
+|Probably no longer issued.
+|-
+|[[File:Washington DC Taxi License Plate.jpg|150px]]
+|[[Taxicab|Taxi]]
+|c. 1920–present
+|As passenger base, with district flag used as separator in serial
+|'''H'''-12345<br>12345-'''H'''
+|Current serial sequence began 1974 at H-101; serials became screened at around H-85500. H-99999 reached early 2011, followed by 00001-H onwards. Current highest serial seen: 05395-H (on February 26, 2022).
+|-
+|[[File:Washington DC temporary license plate.jpg|150px]]
+|rowspan=2|Temporary registration
+|rowspan=2|c. 1955–present
+|Orange-red on white cardboard.
+|12345'''D'''A<br>'''X''' 12345<br>'''Z''' 12345<br>'''K''' 12345<br>'''N''' 12345
+|X series began in 2001.<br>Z series began in 2003.<br>K series began in 2007.<br>N series began in 2011.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Black on white paper
+|A1B2C3D4
+|Print-on-demand style began on September 30, 2024.<ref>https://dmv.dc.gov/release/dc-dmv-redesigns-temporary-tags-mitigate-fraud</ref>
+|-
+|[[File:Washington, D.C. temporary motorcycle license plate.JPG|150px]]
+|Temporary registration &mdash; motorcycle
+|c. 2009–present
+|Black on white cardboard
+|'''MM''' 1234
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Temporary registration issued by new car dealer
+|c. 2008–present
+|Pink on white cardboard.
+|12'''NC'''345
+|Issued only by [[Tesla, Inc.]] and [[Polestar]] since 2014, when the only other new car dealerships in D.C. moved to [[Maryland]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Trailer (vehicle)|Trailer]]
+|1932–present
+|As passenger base, with district flag used as separator in serial
+|'''T'''-12345
+|Current serial sequence began 1974 at T-101; serials became screened at around T-15500. Current highest serial seen: T-20013 (on May 8, 2020).
+|-
+|[[File:WMATA Metro Transit Police Dept license plate 2025.jpg|150px]]
+|WMATA [[Metro Transit Police Department|Transit police]]
+|
+|White with black lettering
+|12345
+|The [[Washington Metropolitan Area Transit Authority]] issues these to itself replacing standard passenger plates on WMATA-owned transit police cars. Some patrol cars now use commercial vehicle plates.
+|}
+
+==Optional and organization license plates ==
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:1970 Washington, D.C. low number license plate.jpg|150px]]<br>[[File:DC Low Number License Plate 2025.jpg|150px]]
+|Passenger&mdash;low number
+|
+|2001-2017: Annual plates; unique design each year.<br>2018-2019; 2022-2023: Plate valid for 2 years.<br>2020-2022: Plate valid for 2 years; renewed for third year with sticker.
+|1<br>12<br>123<br>1234
+|Serials issued: 1 to 1250
+|-
+|[[File:Dc dmv tag aka.jpg|150px]]
+|[[Alpha Kappa Alpha]] sorority
+|
+|
+|<sup>'''A'''</sup><small>'''K'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag apa.jpg|150px]]
+|[[Alpha Phi Alpha]] fraternity
+|
+|
+|<sup>'''A'''</sup><small>'''P'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Washington, D.C. Anacostia River commemorative license plate.jpg|150px]]
+|[[Anacostia River]] environmental protection
+|
+|
+|<sup>'''E'''</sup><small>'''N'''</small><sub>'''V'''</sub> 1234<br><sup>'''E'''</sup><small>'''N'''</small><sub>'''V'''</sub> 1<br><sup>'''E'''</sup><small>'''N'''</small><sub>'''V'''</sub> 12<br><sup>'''E'''</sup><small>'''N'''</small><sub>'''V'''</sub> 123
+|The original design, with 3 birds on the shore, was issued from <sup>E</sup><small>N</small><sub>V</sub> 1001 to approximately <sup>E</sup><small>N</small><sub>V</sub> 1089. The revised design, with 1 bird on the shore, was issued from <sup>E</sup><small>N</small><sub>V</sub> 2001 to <sup>E</sup><small>N</small><sub>V</sub>9999, then <sup>E</sup><small>N</small><sub>V</sub> 1 to <sup>E</sup><small>N</small><sub>V</sub> 999, and then <sup>E</sup><small>N</small><sub>V</sub> 0001 to <sup>E</sup><small>N</small><sub>V</sub> 0999.
+|-
+|[[File:Dc dmv tag badboys.jpg|150px]]
+|Bad Boys Club
+|
+|
+|<sup>'''B'''</sup><small>'''B'''</small><sub>'''C'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Bicentennial
+|1991-2001
+|
+|'''200'''-ABC
+|Personalized, Disabled American Veteran, and personalized disabled person also available.
+|-
+|[[File:Dc dmv tag blueknights.jpg|150px]]
+|[[Blue Knights]]
+|
+|
+|<sup>'''B'''</sup><small>'''K'''</small><sub>'''I'''</sub> 1234<ref name="dmv.dc.gov">{{Cite web|url=https://dmv.dc.gov/node/1119013|title = Organizations Offering DC DMV Vehicle Tags &#124; DMV}}</ref>
+|
+|-
+|[[File:Dc dmv breast cancer awareness tag.jpg|150px]]
+|[[Breast Cancer]] Awareness
+|
+|
+|<sup>'''B'''</sup><small>'''C'''</small><sub>'''A'''</sub> 1<br><sup>'''B'''</sup><small>'''C'''</small><sub>'''A'''</sub> 12<br><sup>'''B'''</sup><small>'''C'''</small><sub>'''A'''</sub> 123
+|
+|-
+|[[File:Dc dmv tag children.jpg|150px]]
+|The Children First Foundation
+|October 23, 2013–present
+|
+|<sup>'''C'''</sup><small>'''F'''</small><sub>'''F'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[College of William and Mary]]
+|
+|
+|<sup>'''C'''</sup><small>'''W'''</small><sub>'''M'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag firefighters.jpg|150px]]
+|D.C. Firefighters Local 36
+|
+|
+|<sup>'''F'''</sup><small>'''F'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Delta Sigma Theta]] sorority
+|
+|
+|<sup>'''D'''</sup><small>'''S'''</small><sub>'''T'''</sub> 1234
+|
+|-
+|[[File:Washington, D.C. Disabled American Veteran License Plate.jpg|150px]]
+|[[Disabled American Veterans|Disabled American Veteran]]
+|
+|
+|'''DAV'''123<br>'''DAV''' 123<br>'''DAV'''-1234
+|
+|-
+|[[File:Washington, D.C. disabled American veteran license plate.png|150px]]
+|Disabled American Veteran&mdash;Disabled
+|
+|
+|♿'''DAV''' 123<br>'''DV'''♿-1234<br>'''DV'''♿-123{{efn|name=serial}}
+|
+|-
+|[[File:Dc dmv tag donatelife.jpg|150px]]
+|[[Organ donation|Donate Life]]
+|
+|
+|<sup>'''O'''</sup><small>'''E'''</small><sub>'''T'''</sub> 1234<ref name="dmv.dc.gov"/>
+|
+|-
+|[[File:Dc dmv tag famu.jpg|150px]]
+|[[Florida A&M University]]
+|
+| 
+|<sup>'''F'''</sup><small>'''A'''</small><sub>'''M'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Fraternal Order of Police]] District of Columbia Lodge
+|
+|
+|<sup>'''F'''</sup><small>'''O'''</small><sub>'''P'''</sub> 123<br><sup>'''F'''</sup><small>'''O'''</small><sub>'''P'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[George Washington University]]
+|
+|
+|<sup>'''G'''</sup><small>'''W'''</small><sub>'''U'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag hu.jpg|150px]]
+|[[Howard University]] Alumni
+|
+|
+|<sup>'''H'''</sup><small>'''U'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Kappa Alpha Psi]] fraternity
+|
+|
+|<sup>'''K'''</sup><small>'''A'''</small><sub>'''P'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag msu2.jpg|150px]]
+|[[Mississippi State University]]
+|
+|
+|<sup>'''M'''</sup><small>'''S'''</small><sub>'''U'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Morehouse College]] Alumni
+|
+|
+|<sup>'''M'''</sup><small>'''C'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|National Association of Black Scuba Divers
+|
+|
+|<sup>'''U'''</sup><small>'''A'''</small><sub>'''S'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Norfolk State University]]
+|
+|
+|<sup>'''N'''</sup><small>'''S'''</small><sub>'''U'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[North Carolina Agricultural and Technical State University]] Alumni
+|
+|
+|<sup>'''A'''</sup><small>'''T'''</small><sub>'''U'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Omega Psi Phi]] fraternity
+|
+|
+|<sup>'''Q'''</sup><small>'''U'''</small><sub>'''E'''</sub> 1234
+|
+|-
+|[[File:Washington D.C. Personalized License Plate with website slogan.jpg|150px]]
+|[[Vanity plate|Personalized]]
+|
+|"DISTRICT OF COLUMBIA" and "www.washingtondc.gov" legends.
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Porsche Club of America
+|
+|
+|<sup>'''P'''</sup><small>'''C'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Prince Hall]] Family ([[Order of the Eastern Star]])
+|
+|
+|<sup>'''O'''</sup><small>'''E'''</small><sub>'''S'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Prince Hall Masonic Family
+|
+|
+|<sup>'''P'''</sup><small>'''H'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Dc dmv dc veteran tag.jpg|150px]]
+|Proud DC Veteran
+|
+|
+|<sup>'''O'''</sup><small>'''V'''</small><sub>'''A'''</sub> 1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Purple Heart]] Veteran
+|
+|
+|<sup>'''P'''</sup><sub>'''H'''</sub>-1234{{efn|name=serial}}
+|
+|-
+|[[File:Dc dmv tag sjc.jpg|150px]]
+|[[St. John's College (Annapolis/Santa Fe)|St. John's College]]
+|
+|
+|<sup>'''S'''</sup><small>'''J'''</small><sub>'''C'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag smu.jpg|150px]]
+|[[Southern Methodist University]]
+|
+|
+|<sup>'''S'''</sup><small>'''M'''</small><sub>'''U'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag spirit.jpg|150px]]
+|Spirit of Faith [[Christianity|Christian]] Center
+|
+|
+|<sup>'''S'''</sup><small>'''O'''</small><sub>'''F'''</sub> 1234
+|
+|-
+|[[File:Dc dmv dc woman veteran tag.jpg|150px]]
+|Strong Woman Veteran
+|
+|
+|<sup>'''P'''</sup><small>'''R'''</small><sub>'''D'''</sub> 1234
+|First observed March 2021.
+|-
+|[[File:Dc dmv tag umich.jpg|150px]]
+|[[University of Michigan]]
+|
+|
+|<sup>'''U'''</sup><small>'''M'''</small><sub>'''I'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag olemiss.jpg|150px]]
+|[[University of Mississippi]]
+|
+|
+|<sup>'''U'''</sup><small>'''M'''</small><sub>'''S'''</sub> 1234
+|
+|-
+|[[File:Screen Shot 2024-02-24 at 1.52.00 AM.png|150px]]
+|[[United States Air Force]] Veteran
+|
+|
+|<sup>'''A'''</sup><small>'''I'''</small><sub>'''R'''</sub> 1
+|rowspan=5|First issued November 10, 2021.<ref>{{Cite web|url=https://dmv.dc.gov/release/veterans-specialty-license-plates|title=Veterans Specialty License Plates &#124; DMV}}</ref>
+|-
+|[[File:Screen Shot 2024-02-24 at 1.53.29 AM.png|150px]]
+|[[United States Army]] Veteran
+|
+|
+|<sup>'''A'''</sup><small>'''R'''</small><sub>'''M'''</sub> 1
+|-
+|[[File:Screen Shot 2024-02-24 at 1.52.46 AM.png|150px]]
+|[[United States Coast Guard]] Veteran
+|
+|
+|<sup>'''C'''</sup><small>'''O'''</small><sub>'''A'''</sub> 1
+|-
+|[[File:Screen Shot 2024-02-24 at 1.54.08 AM.png|150px]]
+|[[United States Marines|United States Marine]] Veteran
+|
+|
+|<sup>'''M'''</sup><small>'''A'''</small><sub>'''R'''</sub> 1<br><sup>'''M'''</sup><small>'''A'''</small><sub>'''R'''</sub> 12
+|-
+|[[File:Screen Shot 2024-02-24 at 1.54.51 AM.png|150px]]
+|[[United States Navy]] Veteran
+|
+|
+|<sup>'''N'''</sup><small>'''A'''</small><sub>'''V'''</sub> 1
+|-
+|[[File:Dc dmv tag vfw.jpg|150px]]
+|[[Veterans of Foreign Wars]]
+|
+|
+|<sup>'''V'''</sup><small>'''F'''</small><sub>'''W'''</sub> 1234
+|
+|-
+|[[File:Screen Shot 2024-02-26 at 3.24.04 PM.png|150px]]
+[[File:Screen Shot 2024-02-26 at 3.24.12 PM.png|150px]]
+|[[Washington Capitals]]
+|February 2022–present
+|Two designs:<br>WASHINGTON CAPITALS began at CAP 0000; 2018 STANLEY CUP CHAMPIONS began at CAP 0500.
+|<sup>'''C'''</sup><small>'''A'''</small><sub>'''P'''</sub> 1234
+|
+|-
+|[[File:Dc dmv tag nationals.jpg|150px]]
+|[[Washington Nationals]]
+|June 2013–present
+|
+|<sup>'''N'''</sup><small>'''A'''</small><sub>'''T'''</sub> 123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|White Stars
+|
+|
+|''unknown''
+|Probably never issued.
+|}
+
+==Special event plates==
+===Presidential inaugurations===
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Inauguration of [[John F. Kennedy]]
+|1961
+|Capitol dome and national flag at left
+|1234
+|
+|-
+|[[File:1965 Presidential Inaugration Plate.jpg|150x150px]]
+|Second inauguration of [[Lyndon B. Johnson]]
+|1965
+|Red band at top; blue band at bottom; national and district flags at left
+|1234
+|
+|-
+|[[File:District of Columbia Inaugural 1969 8493.jpg|150px]]
+|First inauguration of [[Richard Nixon]]
+|1969
+|Red band at top; blue band at bottom; national flag over the [[White House]] at left
+|1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Second inauguration of Richard Nixon
+|1973
+|Capitol dome and national flag at left, as in 1961
+|1234
+|
+|-
+|[[File:District of Columbia 1977 Inauguration license plate.jpg|150px]]
+|Inauguration of [[Jimmy Carter]]
+|1977
+|Abstract national flag graphic at left
+|12345
+|
+|-
+|[[File:District of Columbia Inaugural 1981 W-678.jpg|150px]]
+|First inauguration of [[Ronald Reagan]]
+|1981
+|Red band at top; blue band at bottom; national flag at left
+|1234<br>A-123
+|
+|}
+
+===Mayoral inaugurations===
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Vintage 1983 Washington D.C. Mayoral Inaugural License Plate -657, Only 1K Made To Commorate The Inauguration Of Mayor Marion Barry (17042813131).jpg|150px]]
+|First inauguration of [[Marion Barry]]
+|1983
+|Red band at top; blue band at bottom; district flag at left
+|123
+|
+|-
+|[[File:1987 Washington DC Inauguration License Plate.jpg|150px]]
+|Second inauguration of Marion Barry
+|1987
+|Similar to 1983
+|'''I'''-123
+|
+|-
+|[[File:1991 Washington DC Mayor Inauguration License Plate.jpg|150px]]
+|Inauguration of [[Sharon Pratt]]
+|1991
+|Red with stylized district flag at left
+|123
+|
+|-
+|[[File:1995 Washington DC Mayoral Inauguration License Plate.jpg|150px]]
+|Third inauguration of Marion Barry
+|1995
+|Green with district flag at left and district outline at right
+|'''I'''-123
+|
+|-
+|[[File:1999 Washington DC Mayoral Inauguration License Plat.jpg|150px]]
+|First inauguration of [[Anthony A. Williams]]
+|1999
+|Blue band at top containing "OUR CITY", district flag and "OUR FUTURE"; red band at bottom
+|123
+|
+|}
+
+==Political types==
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Washington DC Board of Education License Plate 1980.jpg|150px]]<br>[[File:DC State Board of Ed Plate 2025.jpg|150px]]
+|[[District of Columbia State Board of Education|Board of Education]]
+|c. 1979–present
+|
+|<small>'''WARD''' 1</small>
+|
+|-
+|[[File:Washington, D.C. city council license plate.JPG|150px]]
+|[[Council of the District of Columbia|District Council]]
+|c. 2007
+|
+|<small>'''WARD''' 1</small>
+|Most plates say "DC COUNCIL"; some say "DISTRICT COUNCIL"
+|-
+|[[File:Washington DC Congress license plate.jpg|150px]]
+|[[Non-voting members of the United States House of Representatives|Delegate to the U.S. House of Representatives]]
+|c. 1984
+|
+|<small>'''CONGRESS'''</small>-1
+|}
+
+==See also==
+*[[Vehicle license plates of the United States#Department-specific examples|Federal government plates]]
+*[[Vehicle license plates of the United States#Diplomatic license plates|Diplomatic plates in the United States]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://dcplates.net/ District of Columbia License Plates, Permits, and Vehicle Registration History]
+*[https://www.15q.net/dc.html Washington, D.C. license plates, 1969–present]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|Washington, D.C.]]
+[[Category:Washington, D.C., transportation-related lists]]
+[[Category:Transportation in Washington, D.C.]]

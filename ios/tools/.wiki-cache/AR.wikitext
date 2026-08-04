@@ -1,0 +1,1649 @@
+{{short description|Arkansas vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = The Natural State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 12D (2021-present)<br />123 ABC (2006-2021)
+| current_start_date = {{Start date|2006|03|01}}
+| designer = 
+| issuer = Arkansas Department of Finance and Administration
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia|Amherst]], Canada
+| start_date = {{Start date|1911|03|24}}
+}}
+
+The U.S. state of [[Arkansas]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plates]] in 1911. Prior to 1911, plates were issued by cities.
+
+{{As of|2022}}, plates are issued by the Arkansas Department of Finance and Administration. Only rear plates have been required since 1944.
+
+==Passenger baseplates==
+===1911 to 1967===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Arkansas license plate that fully complied with these standards: the 1947 (dated 1948), 1952 (dated 1953) and 1955 (dated 1956) issues were all 6 inches in height by 12 inches in width, but had non-standard mounting holes.
+
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:70px;"|Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|Black serial on white porcelain plate with border line; vertical "ARK" and "1911" at left and right respectively
+|''none''
+|1234
+|1 to approximately 1600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|White serial on black porcelain plate with border line; vertical "ARK" and "1912" at left and right respectively
+|''none''
+|1234
+|1 to approximately 2500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|Yellow serial on green porcelain plate; vertical "ARK" and "1913" at left and right respectively
+|''none''
+|1234
+|1 to approximately 3600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Embossed black serial on white plate; vertical "ARK" and "1914" at left and right respectively
+|''none''
+|1234
+|1 to approximately 5200
+|The 1914 plate is quite rare, as motorists had to turn in the plate in order to get the 1915 renewal plate. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Embossed white serial on dark blue plate; vertical "ARK" and "1915" at left and right respectively
+|''none''
+|1234
+|1 to approximately 8000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed black serial on orange plate with border line; vertical "ARK" and "1916" at left and right respectively
+|''none''
+|12345
+|1 to approximately 15500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Embossed yellow serial on black plate with border line; vertical "ARK" and "1917" at left and right respectively
+|''none''
+|12345
+|1 to approximately 27000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed black serial on light green plate with border line; vertical "ARK" and "1918" at left and right respectively
+|''none''
+|12345
+|1 to approximately 41000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Embossed light green serial on black plate with border line; vertical "ARK" and "1919" at left and right respectively
+|''none''
+|12345
+|1 to approximately 44000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed dark blue serial on light blue plate with border line; vertical "ARK" and "1920" at left and right respectively
+|''none''
+|12345
+|1 to approximately 59000
+|
+|-
+|[[File:Arkansas 1921 license plate.jpg|150px]]
+|1921
+|Embossed silver serial on black plate with border line; vertical "ARK" and "1921" at left and right respectively
+|''none''
+|12345
+|1 to approximately 71000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed black serial on yellow plate with border line; vertical "ARK" and "1922" at left and right respectively
+|''none''
+|12-345
+|1 to approximately 77-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed yellow serial on black plate with border line; vertical "ARK" and "1923" at left and right respectively
+|''none''
+|123-456
+|
+|
+|-
+|[[File:Arkansas 1924 154-262.jpg|150x150px]]
+|1924
+|Embossed dark blue serial on gray plate with border line; "ARK" within state outline and "24" at right
+|''none''
+|123-456
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed white serial on black plate with border line; "ARK" within state outline and "25" at right
+|''none''
+|123-456
+|
+|
+|-
+|[[File:1926 Arkansas license plate.jpg|150px]]
+|1926
+|Embossed black serial on white plate with border line; "ARK 26" at right
+|''none''
+|123-456
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed yellow serial on green plate with border line; "ARK 27" at right
+|''none''
+|123-456
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed orange serial on black plate with border line; vertical "FRONT" or "REAR" used as separator; "ARK 28" at left
+|''none''
+|123-456
+|1 to approximately 177-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed white serial on dark blue plate with border line; vertical "FRONT" or "REAR" used as separator; "ARK 29" at right
+|''none''
+|123-456
+|1 to approximately 225-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1930 Arkansas license plate.jpg|150px]]
+|1930
+|Embossed yellow serial on dark blue plate with border line; vertical "FRONT" or "REAR" used as separator; "30 ARK" at left
+|''none''
+|123-456
+|1 to approximately 208-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed white serial on black plate with border line; vertical "FRONT" or "REAR" used as separator; "ARK 31" at right
+|''none''
+|123-456
+|1 to approximately 189-000
+|
+|-
+|[[File:1932 Arkansas license plate.jpg|150px]]
+|1932
+|Embossed slanted gold serial on black plate with border line; slanted "ARK 32" centered at top
+|''none''
+|123-456
+|1 to approximately 170-000
+|
+|-
+|[[File:1933 Arkansas license plate.jpg|150px]]
+|1933
+|Embossed green serial on black plate with border line; vertical "ARK" and "1933" at left and right respectively
+|''none''
+|123-456
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed red serial on white plate with border line; vertical "1934" and "ARK" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 178-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed dark blue serial on light yellow plate with border line; vertical "ARK" and "1935" at left and right respectively
+|"CENTENNIAL" and "CELEBRATION 36" centered at top and bottom respectively
+|123-456
+|1 to approximately 173-000
+|Commemorated Arkansas' 100 years of statehood.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed dark blue serial on white plate with border line; vertical "1936" used as separator; "ARKANSAS" centered at top
+|''none''
+|123-456
+|1 to approximately 179-000
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed black serial on white plate with border line; vertical "37" used as separator; "ARKANSAS" centered at top
+|''none''
+|123-456
+|1 to approximately 183-000
+|
+|-
+|[[File:1938 Arkansas license plate.png|150px]]
+|1938
+|Embossed white serial on red plate with border line; "ARKANSAS" within winged graphic centered at bottom; "38" within state outline at left
+|''none''
+|123-456
+|1 to approximately 177-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed black serial on silver plate with border line; vertical "39" used as separator; "ARKANSAS" centered at top
+|''none''
+|123-456
+|1 to approximately 187-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed red serial on silver plate with border line; "ARK 1940" and "EXPIRES 12-31-40" centered at top and bottom respectively
+|''none''
+|123-456
+|1 to<br>200-000;<br>300-001 to approximately 301-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed green serial on silver plate with border line; vertical "41" used as separator; "ARKANSAS" centered at top
+|"OPPORTUNITY LAND" centered at bottom
+|123-456
+|1 to<br>200-000;<br>300-001 to approximately 334-000
+|
+|-
+|[[File:1942 Arkansas license plate.jpg|150px]]
+|{{nowrap|1942–43}}
+|Embossed orange serial on black plate with border line; "1942" and "ARKANSAS" centered at top and bottom respectively
+|''none''
+|123-456
+|1 to<br>200-000;<br>300-001 to approximately 390-000
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1944 Arkansas license plate 74-892.jpg|150px]]
+|1944
+|White serial on black [[fiberboard]] plate; "19 ARK. 44" centered at top
+|''none''
+|123-456
+|1 to approximately 224-000
+|Manufactured on fiberboard due to ongoing metal conservation for World War II.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed golden yellow serial on black plate with border line; "19 ARK. 45" centered at top
+|''none''
+|123-456
+|1 to approximately 218-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed black serial on white plate with border line; "19 ARK. 46" centered at top
+|''none''
+|123-456
+|1 to approximately 222-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed red serial on unpainted aluminum plate with border line; "19 ARKANSAS 47" at top
+|''none''
+|123-456
+|1 to approximately 245-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1948–49
+|Embossed black serial on unpainted aluminum plate with border line; "ARKANSAS 1948" centered at top
+|"OPPORTUNITY LAND" centered at bottom
+|123-456
+|1 to approximately 345-000
+|Revalidated for 1949 with aluminum tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed white serial on dark green plate with border line; "ARKANSAS 1950" centered at top
+|{{nowrap|"LAND OF OPPORTUNITY"}} at bottom
+|123-456
+|1 to approximately 374-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Embossed dark green serial on white plate with border line; "ARKANSAS 1951" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|123-456
+|1 to approximately 375-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|Embossed white serial on brown plate with border line; "ARKANSAS 1952" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|123-456
+|1 to approximately 380-000
+|
+|-
+|[[File:1953 Arkansas license plate.jpg|150px]]
+|1953
+|Embossed blue serial on white plate with border line; "ARKANSAS 1953" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|123-456
+|1 to approximately 394-000
+|
+|-
+|[[File:1954 Arkansas license plate.jpg|150px]]
+|1954
+|Embossed white serial on dark green plate with border line; "ARKANSAS 1954" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|123-456
+|1 to approximately 393-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed white serial on dark blue plate with border line; "ARKANSAS 1955" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|123-456
+|1 to approximately 399-000
+|
+|-
+|[[File:1956 Arkansas license plate.JPG|150px]]
+|1956
+|Embossed black serial on pale green plate with border line; "ARKANSAS 1956" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|123-456
+|1 to approximately 422-000
+|
+|-
+|[[File:1957 Arkansas license plate.jpg|150px]]
+|1957
+|Embossed red serial on white plate with border line; "ARKANSAS 1957" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1958 Arkansas license plate.JPG|150px]]
+|1958
+|Embossed white serial on dark blue plate with border line; "ARKANSAS 58" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1959 Arkansas license plate.jpg|150px]]
+|1959
+|Embossed black serial on white plate with border line; "ARKANSAS 59" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1960 Arkansas license plate.jpg|150px]]
+|1960
+|Embossed white serial on dark blue plate with border line; "ARKANSAS 60" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1961 Arkansas license plate.jpg|150px]]
+|1961
+|Embossed red serial on gray plate with border line; "ARKANSAS 61" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1962 Arkansas license plate.jpg|150px]]
+|1962
+|Embossed blue serial on white plate with border line; "ARKANSAS 62" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1963 Arkansas license plate.jpg|150px]]
+|1963
+|Embossed white serial on dark blue plate with border line; "ARKANSAS 63" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-123456<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1964 Arkansas license plate.JPG|150px]]
+|1964
+|Embossed red serial on white plate with border line; "ARKANSAS 64" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-123456<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1965 Arkansas license plate.jpg|150px]]
+|1965
+|Embossed blue serial on white plate with border line; "ARKANSAS 65" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-123456<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1966 Arkansas license plate.jpg|150px]]
+|1966
+|Embossed red serial on reflective white plate with border line; "ARKANSAS 66" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-123456<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1967 Arkansas license plate.jpg|150px]]
+|1967
+|Embossed blue serial on reflective white plate with border line; "ARKANSAS 67" centered at top
+|"LAND OF OPPORTUNITY" at bottom
+|''1''-123456<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|
+|}
+
+===1968 to present===
+{|class=wikitable
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1969 AR license plate.jpg|150px]]
+|1968–74
+|rowspan="2"|Embossed red serial on reflective white plate with border line; "ARKANSAS" centered at top
+|''none''
+|rowspan="2"|ABC&nbsp;123
+|AAA 001 to EEW&nbsp;999
+|rowspan="2"|Letter Q not used in serials, and U and V not used from 1973 onwards.<ref name="allaboutlicenseplatesAR">{{cite web |last=Tanner |first=Eric N. |title=Arkansas Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Arkansas&code=ar |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1975–77
+|"LAND OF OPPORTUNITY" at bottom
+|EEX 001 to GEC&nbsp;999
+|-
+|[[File:Arkansas license plate, 1987.png|150px]]
+|1978–88
+|Embossed red serial on reflective white plate; "Arkansas" screened in blue centered at top
+|"Land of Opportunity" screened in blue centered at bottom
+|ABC 123
+|{{nowrap|GED 001 to}} POP&nbsp;999
+|
+|-
+|[[File:Arkansas license plate, 1989–1996 with August 1996 sticker.png|150px]]
+|1989&nbsp;–<br>May<br>1996
+|Embossed blue serial on reflective white plate; red band screened at top containing "Arkansas" in white in the center
+|"The Natural State" screened in red centered at bottom
+|ABC 123
+|POR 001 to ZZZ&nbsp;999
+|
+|-
+|[[File:1996–2006 series Arkansas license plate, 1998.png|150px]]
+|May<br>1996&nbsp;– February 2006
+|Embossed red serial on reflective white plate; "Arkansas" screened in dark blue centered at top
+|"The Natural State" screened in dark blue centered at bottom
+|123 ABC
+|001 AAA to 999&nbsp;KPF
+|
+|-
+|[[File:Arkansas 2011 license plate.jpg|150px]]
+|March 2006&nbsp;– April<br>2021
+|rowspan="2"|Embossed black serial on reflective gradient sky blue and white plate; [[diamond]] graphic screened in the center; "Arkansas" screened in dark red centered at top
+|rowspan="2"|"The Natural State" screened in dark red centered at bottom
+|123 ABC
+|001 KPG to 999&nbsp;ZZZ
+|rowspan="2"|Letters U and V added back to serials in 2015.<ref name="allaboutlicenseplatesAR"/>
+|-
+| 
+|April 2021&nbsp;– present
+|ABC&nbsp;12D
+|AAA 01A to BJA 95D {{small|(as of October 31, 2025)}}<ref name=":0">{{Cite web |title=Arkansas License Plates |url=https://www.licenseplates.cc/AR |access-date=May 20, 2022 |website=www.licenseplates.cc}}</ref>
+|}
+
+==Non-passenger plates==
+{|class=wikitable
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:AmRadARK.jpg|150px]]
+|[[Amateur radio]]
+|2006–present
+|As passenger base, but with "AMATEUR RADIO" in place of slogan
+|''FCC call sign''
+|''various''
+|
+|-
+|[[File:Arkansas ambulance license plate.jpg|150px]]
+|[[Ambulance]]
+|2006–present
+|As passenger base, with "AMBULANCE" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Arkansas Antique Motorcycle license plate.jpg|150px]]
+|Antique motorcycle
+|? to present
+|Black on white background; "ARK. M CYCLE" at top and "ANTIQUE" at bottom
+|123A
+|
+|
+|-
+|<!-- Deleted image removed: [[File:AntiqueARKNoLonger.jpg|150px]] -->
+|rowspan="2"|Antique vehicle
+|1957 to 2007
+|rowspan="2"|Black on white background; antique car graphic at left
+|12345
+|? to 99999
+|No longer issued, but still valid.
+|-
+|<!-- Deleted image removed: [[File:AntiqueARKCurr.jpg|150px]] -->
+|2007–present
+|A1234
+|A0001 to present
+|
+|-
+|[[File:AppARK.png|150px]]
+|[[International Registration Plan|Apportioned]] [[truck]]
+|? to present
+|All-embossed black on yellow
+|'''C'''&nbsp;123456
+|
+|
+|-
+|[[File:Arkansas Border City Taxi Cab license plate.jpg|150px]]
+|Border cities [[Taxicab|taxi cab]]
+|? to present
+|Red on white background; "Border City" at bottom
+|123 ABC
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Church (building)|Church]] [[bus]]
+|2006–present
+|As passenger base, with "CHURCH BUS" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|This plate appears to be the same as "Not For Hire," but the AR DFA lists them separately.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Car dealership|Dealer]]—[[Motorcycle]]
+|Annual plates
+|2004: All-embossed black on light blue
+|1234 '''M'''
+|
+|
+|-
+|[[File:Arkansas Persons With Disabilities Disabled license plate.jpg|150px]]
+|[[Disability|Disabled]]
+|? to present
+|Blue on reflective white with blue graphics and wheelchair graphic at left
+|123456
+|
+|Officially called "Persons With Disabilities" license plate by the AR DFA.
+|-
+|[[File:Arkansas Persons with Disabilities Motorcycle license plate.jpg|150px]]
+|[[Disability|Disabled]] [[Motorcycle]]
+|? to present
+|Blue on reflective white; "ARK. M CYCLE" at top and wheelchair graphic at left
+|{{small|'''D'''/'''M'''}} 123
+|{{small|D/M}} 001 to present
+|Officially called "Persons With Disabilities" license plate by the AR DFA.
+|-
+|[[File:Farm To Market Bus license plate.jpg|150px]]
+|[[Farm-to-market road|Farm to Market]] [[Bus]]
+|? to present
+|Red on white background; "F-M Bus" at bottom
+|ABC 123
+|
+| 
+|-
+|[[File:Arkansas Hearse license plate.jpg|150px]]
+|[[Hearse]]
+|? to present
+|Red on white background; "Funeral Coach" at bottom
+|ABC 123
+|? to present
+|Used for both hearses and funeral cars.
+|-
+|rowspan="3"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="5"|Motorcycle
+|{{nowrap|1979–81}}
+|rowspan="3"|Embossed red serial on white plate; "ARK. M CYCLE" at top and "EXP. 6" at bottom left
+|AB 12
+|AA 01 to ZZ&nbsp;99
+|rowspan="5"|All motorcycle plates expired on June 30 until 1994, when staggered registration was introduced.
+|-
+|1981–85
+|12 AB
+|01 AA to 99&nbsp;ZZ
+|-
+|1985–94
+|rowspan="2"|AB 123
+|AA 001 to FZ&nbsp;999
+|-
+|rowspan="2"|[[File:MotorARK.jpg|150px]]
+|1994–2015
+|rowspan="2"|As above, but without "EXP. 6"
+|{{nowrap|GA 001 to}} ZZ&nbsp;999
+|-
+|2015–present
+|123 AB
+|001 AA to 537&nbsp;EF {{small|(as of October 25, 2021)}}
+|-
+|[[File:Arkansas Not For Hire Bus license plate.jpg|150px]]
+|[[Vehicle for hire|Not For Hire Bus]]
+|? to present
+|Red on white background; "Not For Hire" at bottom
+|123 ABC
+|
+|This plate appears to be the same as "Church Bus," but the AR DFA lists them separately.
+|-
+|[[File:Arkansas Permanent Trailer AB415499.jpg|150px]]
+|rowspan="3"|Permanent [[Trailer (vehicle)|Trailer]]
+|rowspan="3"|? to present
+|rowspan="2"|All-embossed black on white
+|{{small|A/B}}123456
+|{{small|A/A}}000&nbsp;001 to {{small|A/B}}649830 {{small|(As of May 29, 2021)}}
+|Used on trailers hauled by automobiles and class 1 trucks
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{small|'''S'''/'''P'''}}123&nbsp;456
+|{{small|S/P}}000&nbsp;001 to {{small|S/P}}000&nbsp;923 {{small|(As of November 29, 2022)}}
+|Unknown classification of permanent trailer plate
+|-
+|[[File:PermTrailARK.jpg|150px]]
+|All-embossed blue on tan
+|{{small|'''PT'''}}12 345<br>{{small|'''PT'''}}123456
+|{{small|PT}}00&nbsp;001? to {{small|PT}}210303 {{small|(As of April 28, 2022)}}
+|Used on trailers hauled by class 2 through 8 trucks
+|-
+|[[File:SchoolBuARK.jpg|150px]]
+|[[School bus|School Vehicle]]
+|2006–present
+|As passenger base, with "SCHOOL VEHICLE" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Hot rod|Street Rod Custom Vehicle]]
+|? to present
+|Red on white background; street rod graphic at left
+|{{small|'''S'''/'''R'''}} 1234
+|{{small|S/R}} 0001 to ?
+|
+|-
+|[[File:Arkansas Transporter license plate.jpg|150px]]
+|Transporter
+|? to present
+|All-embossed black on light blue
+|{{small|'''T'''/'''P'''}}12345
+|
+|
+|}
+
+==Optional plates==
+
+===College and university plates===
+
+{|class=wikitable
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Arkansas School for the Deaf]]
+|? to present
+|Red on blue fade to white background with ASL "I Love You" sign at left.
+|{{small|'''A'''/'''D'''}} 1234
+|? to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Arkansas State University]]
+|? to present
+|Red on reflective white with ASU graphic at left.
+|rowspan="2"|'''2'''ABC
+|2AAA to present
+|rowspan="2"|Issued concurrently.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Red on reflective white with red wolf graphic at left.
+|? to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Arkansas Tech University]]
+|2006–present
+|Green on reflective yellow.
+|'''10'''ABC
+|10AAA to present
+|The image at the Arkansas DFA website shows "Technical" instead of "Tech."
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[College of the Ouachitas]]
+|? to present
+|Black on multicolor background with COTO logo at left.
+|{{small|'''O'''/'''C'''}} 1234
+|? to present
+|As of 2016 only 18 of these plates had been issued.<ref name=Colleges />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Harding University]]
+|c. 2009 to present
+|Black on reflective white with multicolored graphic at left.
+|'''15'''ABC
+|15AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Henderson State University]]
+|? to present
+|Black on reflective white with multicolored graphic at left.
+|'''7'''ABC
+|7AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Hendrix College]]
+|? to present
+|Black on reflective white with multicolored graphic at left.
+|'''11'''ABC
+|11AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Lyon College]]
+|c. 2008 to present
+|Black on reflective white with multicolored graphic at left.
+|'''13'''ABC
+|13AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Mid-South Community College]]
+|? to present
+|Black on reflective white with multicolored graphic at left.
+|{{small|'''M'''/'''C'''}} ABCD
+|? to present
+|As of 2016 only 18 of these plates had been issued.<ref name=Colleges>{{cite web |url=http://www.scout.com/Article/License-plates-promoting-Arkansas-schools-are-still-growing-74984219 |title=College License Plates Continue to Grow |author=<!--Not stated--> |date=June 17, 2016 |website=CBS Interactive |publisher=CBS Broadcasting |access-date=September 15, 2017}}</ref> This college was renamed [[Arkansas State University Mid-South]] as of July 1, 2015.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Park College|National Park Community College]]
+|? to present
+|Black on reflective blue to white fade background and multicolored graphic at left.
+|{{small|'''N'''/'''P'''}} ABCD
+|? to present
+|As of 2016 only 12 of these plates had been issued, which was the fewest of any of the colleges or universities.<ref name=Colleges />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Northwest Arkansas Community College]]
+|? to present
+|Black on reflective white and green and multicolored graphic at left.
+|{{small|'''N'''/'''W'''}}&nbsp;ABCD
+|? to present
+|As of 2016 only 50 of these plates had been issued.<ref name=Colleges />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Ouachita Baptist University]]
+|? to present
+|Black on reflective yellow fade background.
+|rowspan="2"|'''8'''ABC
+|8AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Black on reflective white background.
+|8AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[Southern Arkansas University]]
+|? to present
+|Black on reflective white with multicolored graphic at left.
+|'''5'''ABC
+|5AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Black on reflective white with multicolored graphic at left.
+|{{small|'''S'''/'''A'''}} ABCD
+|{{small|S/A}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[University of Arkansas at Fayetteville]]
+|? to ?
+|rowspan="3"|Red on reflective white with multicolored graphic at left.
+|'''1'''ABC
+|1AAA to ?
+|No longer issued, but still valid.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|? to present
+|{{small|'''U'''/'''A'''}} ABC
+|{{small|U/A}} AAA to present
+|rowspan="2"|As of September 2017 all three plate types are still shown on the Arkansas DFA website with the later two still being issued. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{small|'''Y'''/'''A'''}} 12A
+|{{small|Y/A}} 01A to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Arkansas at Fort Smith]]
+|? to present
+|Black on blue and white striped background and UAFS logo at right.
+|{{small|'''F'''/'''S'''}} ABCD
+|? to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Arkansas at Little Rock]]
+|? to present
+|Red on reflective white with multicolored graphic at left.
+|'''4'''ABC
+|4AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Arkansas at Monticello]]
+|? to present
+|Black on multicolored background.
+|'''9'''ABC
+|9AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Arkansas at Pine Bluff]]
+|? to present
+|Black on multicolored background.
+|'''6'''ABC
+|6AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Arkansas for Medical Sciences]]
+|? to present
+|Black on multicolored background with UAMS logo right.
+|{{small|'''M'''/'''S'''}} ABCD
+|? to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[University of Central Arkansas]]
+|? to present
+|Blue on reflective white with white and red UCA graphic.
+|rowspan="2"|'''3'''ABC
+|3AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Black on reflective white with purple and white graphic.
+|3AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of the Ozarks]]
+|c. 2008 to present
+|Black on reflective multicolored graphic.
+|'''12'''ABC
+|12AAA to present
+|
+|}
+
+===Military and veteran plates===
+{|class=wikitable
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:ColdWarARK.jpg|150px]]
+|[[Cold War]] Veteran
+|2006–present
+|As passenger base, with "COLD WAR VETERAN" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:MedalOfARK.jpg|150px]]
+|[[Congressional Medal of Honor]]
+|? to present
+|Red on reflective white with multicolored graphic of award and award ribbon.
+|'''MH'''12
+|?
+|
+|-
+|[[File:Arkansas Disabled Veteran license plate.jpg|150px]]
+|[[Veteran|Disabled Veteran]]
+|? to present
+|Red on reflective white
+|'''DV'''12345
+|? to present
+|
+|-
+|[[File:Arkansas Disabled Veteran Free license plate.jpg|150px]]
+|[[Veteran|Disabled Veteran - Free]]
+|? to present
+|Red on reflective white
+|'''DAV'''1234
+|? to present
+|
+|-
+|[[File:FlyingARK.jpg|150px]]
+|[[Distinguished Flying Cross (United States)|Distinguished Flying Cross]]
+|? to present
+|Red on reflective white; DFC graphic screened at right; "Arkansas" screened in blue at top
+|A12'''DFC'''
+|A01DFC to present
+|
+|-
+|[[File:Arkansas Ex-Prisoner of War license plate.jpg|150px]]
+|[[Prisoner of war|Ex-Prisoner of War]]
+|? to present
+|Blue on reflective white
+|'''POW''' 123
+|?
+|
+|-
+|[[File:GoldStarARK.jpg|150px]]
+|[[Service flag|Gold Star Family]]
+|? to present
+|Red on reflective white with purple and gold star and wreath
+|{{small|'''G'''/'''S'''}} 1234
+|?
+|
+|-
+|[[File:KoreanARK.jpg|150px]]
+|[[Korean War]] Veteran
+|2006–present
+|As passenger base, with "KOREAN WAR VETERAN" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:LittleRockAFBARKPlate.jpg|150px]]
+|[[Little Rock Air Force Base]]
+|? to present
+|Black on multicolored sky background and LRAFB logo at left
+|{{small|'''R'''/'''R'''}} 1234
+|?
+|
+|-
+|[[File:NatlARK2.jpg|150px]]
+|[[National Guard of the United States|National Guard]]
+|?
+|Black on multicolored flag background with "National Guard" in yellow.
+|12345
+|?
+|
+|-
+|[[File:NatlARK.jpg|150px]]
+|[[National Guard of the United States|National Guard]] - [[Minuteman]]
+|?
+|Red on reflective white with National Guard Minuteman at left.
+|123456
+|? to present
+|
+|-
+|[[File:OpEnFrARK.jpg|150px]]
+|[[Operation Enduring Freedom]] Veteran
+|2006–present
+|As passenger base, with "OPERATION ENDURING FREEDOM VETERAN" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|First issued 2005 on general Veteran design (below).<ref name="LittleRockAFB">{{cite web|last=Oldham |first=Master Sgt. Bob |date=August 8, 2007 |title=Airmen missing chance on low-cost car tags |url=https://www.littlerock.af.mil/News/Article-Display/Article/357762/airmen-missing-chance-on-low-cost-car-tags/ |publisher=[[Little Rock Air Force Base]] |access-date=September 20, 2017}}</ref>
+|-
+|[[File:OpIrFrARK.jpg|150px]]
+|[[Iraq War|Operation Iraqi Freedom]] Veteran
+|2006–present
+|As passenger base, with "OPERATION IRAQI FREEDOM VETERAN" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|First issued 2005 on general Veteran design.<ref name="LittleRockAFB"/>
+|-
+|[[File:PearlHarbARK.jpg|150px]]
+|[[Pearl Harbor]] Survivor
+|?
+|Red on reflective white with Pearl Harbor Survivor graphic at left.
+|'''PHS''' 123
+|?
+|
+|-
+|[[File:PersianGulfARK.jpg|150px]]
+|[[Persian Gulf]] Veteran
+|2006–present
+|As passenger base, with "PERSIAN GULF VETERAN" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:PurpHeartPlateARK.jpg|150px]]
+|[[Purple Heart]]
+|? to present
+|Red on reflective white with multicolored graphic of award.
+|'''PH'''1234
+|? to present
+|Earlier plates were issued in a format of '''PH''' 1234, without a graphic of the award.
+|-
+|[[File:Arkansas Purple Heart Motorcycle license plate.jpg|150px]]
+|[[Purple Heart]] [[Motorcycle]]
+|? to present
+|Red on reflective white with "Purple Heart" wording at bottom.
+|12 AB
+|? to present
+|
+|-
+|<!-- Deleted image removed: [[File:SuppTroopsARK.jpg|150px]] -->
+|[[Support Our Troops]]
+|2006–present
+|As passenger base, with "Support Our Troops!" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Arkansas Retired United States Veteran Merchant Marine license plate.jpg|150px]]
+|Retired U.S. Veteran - [[United States Merchant Marine|U.S. Merchant Marine]]
+|? to present
+|Blue on reflective white
+|ABC 123
+|? to present
+|
+|-
+|[[File:Arkansas United States Armed Forces Retired license plate.jpg|150px]]
+|[[Veteran|U.S. Armed Forces Retired]]
+|? to present
+|Red on reflective white
+|123456
+|? to present
+|
+|-
+|[[File:Arkansas United Stares Armed Forces Reserve license plate.jpg|150px]]
+|[[Reserve components of the United States Armed Forces|U.S. Armed Forces Reserve]]
+|? to present
+|Red on reflective white
+|12345
+|? to present
+|
+|-
+|[[File:ObsoleteVetARK.jpg|150px]]
+|[[Veteran]]
+|obsolete
+|Embossed red on reflective white; "Arkansas" screened in blue at top; campaign name sticker at bottom; sticker at left for corresponding branch of service, medal, or major award
+|{{small|'''U'''/'''S'''}}&nbsp;ABCDE
+|{{small|U/S}} AAAAA to approximately {{small|U/S}}&nbsp;AIAZZ
+|Issued to veterans of World War II, the Korean, Vietnam and Persian Gulf Wars, and Operations Iraqi Freedom and Enduring Freedom. Discontinued in favour of regular passenger plates with campaign name sticker placed over the "Natural State" slogan, but still valid.
+|-
+|[[File:VFWARK.jpg|150px]]
+|[[Veterans of Foreign Wars]]
+|? to present
+|Embossed black on reflective blue, white and red gradient; VFW logo screened at left; "Arkansas" screened in black at top
+|{{small|'''N'''/'''B'''}}&nbsp;ABCD
+|{{small|N/B}}&nbsp;AAAA to present
+|Proceeds partially support the [[Nick Bacon]] Memorial Scholarship Fund (NBMS).
+|-
+|[[File:VietnamVetARK.jpg|150px]]
+|[[Vietnam War|Vietnam]] Veteran
+|2006–present
+|As passenger base, with "VIETNAM VETERAN" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Arkansas Word War II Veteran license plate.jpg|150px]]
+|[[World War II]] Veteran
+|2006–present
+|As passenger base, with "WORLD WAR II VETERAN" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|}
+
+===Organization and specialty plates===
+Beginning in 2000, the Arkansas Game and Fish Commission has released one wildlife-themed plate design each year,<ref>[http://www.agfc.com/education-class/license_plates.aspx] {{webarchive|url=https://web.archive.org/web/20080911182151/http://www.agfc.com/education-class/license_plates.aspx|date=September 11, 2008}}</ref> to be issued for one calendar year, although remaining stock is sometimes issued past the end of a particular plate design's year of release. Note that some plates that were originally issued without prefixes now have them, and that prefixes now include {{small|'''G'''/'''F'''}}, {{small|'''G'''/'''G'''}} and {{small|'''G'''/'''H'''}}.
+
+{|class=wikitable
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Rice cultivation in Arkansas|Arkansas Rice Council]]
+|? to present
+|Black on reflective blue and white sky background with rice plant graphic and duck.
+|{{small|'''R'''/'''C'''}} ABCD
+|{{small|R/C}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Sheriffs in the United States#Arkansas|Arkansas Sheriffs' Association]]
+|? to present
+|Black on reflective white background with association logo at left.
+|{{small|'''A'''/'''S'''}} ABCD
+|{{small|A/S}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[List of Arkansas state parks|Arkansas State Parks]]
+|March 2012&nbsp;– present
+|Golden yellow on multicolored graphic with Mather Lodge at Petit Jean State Park.
+|{{small|'''P'''/'''K'''}} ABCD
+|{{small|P/K}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Black on white background with multicolored graphic of hikers graphic at left.
+|{{small|'''P'''/'''K'''}} ABCD
+|{{small|P/K}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Autism|Autism Awareness]]
+|? to present
+|Black on blue to white fade background with autism puzzle pieces inside state outline.
+|{{small|'''A'''/'''U'''}} ABCD
+|{{small|A/U}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Boy Scout, Girl Scout, and Orphanages
+|? to present
+|Red on white background with "BS & O" at bottom.
+|ABC 123
+|?
+|The AR DFA states that these plates are for any Boy Scouts, Girl Scouts, Orphanages, or Boy or Girl Clubs which are a member of or affiliated with Boys or Girls Clubs of America.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Boy Scouts of America]]
+|? to present
+|Green on tan background with Boy Scout logo on red, white and blue stripes at right.
+|{{small|'''B'''/'''P'''}} ABCD
+|{{small|B/P}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Buffalo River
+|? to present
+|Black on multicolored background.
+|{{small|'''B'''/'''R'''}} ABCD
+|{{small|B/R}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Cattlemen Foundation
+|? to present
+|Red on reflective white with multicolored graphic at left.
+|{{small|'''C'''/'''F'''}} ABCD
+|{{small|C/F}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Civil Air Patrol]]
+|? to present
+|Red on reflective white with Civil Air Patrol logo at left.
+|'''CA''' 123
+|CA 001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Court Appointed Special Advocates
+|2015–present
+|Black on reflective blue to white fade with multicolored CASA graphic at left.
+|{{small|'''C'''/'''A'''}} ABCD
+|{{small|C/A}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Choose Life license plates|Choose Life]]
+|? to present
+|Black on reflective yellow with blue and red graphics.
+|{{small|'''C'''/'''L'''}} ABCD
+|{{small|C/L}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Committed to Education
+|? to present
+|Black on white reflective background with books, apple and worm at left.
+|ABCD
+|AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Bright blue on light blue reflective background with "A+" inside state shape at right.
+|ABCD
+|AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Conservation Districts
+|? to present
+|Black on reflective white background with landscape graphic at left and "For Love of the Land" at bottom.
+|{{small|'''C'''/'''D'''}} ABCD
+|{{small|C/D}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Down syndrome|Down Syndrome Awareness]]
+|? to present
+|As passenger base, with "Down Syndrome Awareness" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Martin Luther King Jr.|Dr. Martin Luther King, Jr.]]
+|? to present
+|Black on reflective white with graphic of Dr. King at left.
+|{{small|'''M'''/'''K'''}}&nbsp;ABCD
+|{{small|M/K}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Martin Luther King Jr.|Dr. Martin Luther King, Jr. Commission]]
+|? to present
+|As passenger base, with sticker featuring Dr. King, "LIVE THE DREAM" and "MAKE CHANGE HAPPEN" placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[Ducks Unlimited]]
+|? to present
+|Black on multicolored background and Ducks Unlimited shield at left.
+|rowspan="3"|'''1'''ABCD
+|rowspan="3"|1AAAA to present
+|No longer issued, but still valid.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Black on multicolored background and flying duck at left.
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|? to present
+|Black on multicolored background and standing duck at right.
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Emergency Medical Services]]
+|? to present
+|Red on reflective white with multicolored graphic at left.
+|{{small|'''E'''/'''M'''}} ABCD
+|{{small|E/M}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Firefighter]]
+|? to present
+|Blue on reflective white with logo and legends displayed on stickers.
+|AB123
+|?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Firefighter]]s' [[Memorial]]
+|? to present
+|Black on multicolored fire background.
+|{{small|'''F'''/'''F'''}} ABCD
+|{{small|F/F}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Freemasonry|Freemason]]
+|2006–present
+|As passenger base, with "FREEMASON" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Golf]] Association
+|? to present
+|Red on reflective white with green graphic at right.
+|{{small|'''G'''/'''A'''}} ABC
+|{{small|G/A}} AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Hospice and palliative medicine|Hospice & Palliative Care Association]]
+|? to present
+|Black on reflective white with Hospice & Palliative Care Association logo at left.
+|{{small|'''H'''/'''P'''}} ABCD
+|{{small|H/P}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Humane society|Humane Society of the Ozarks]]
+|? to present
+|Red on white background with "Get Rescued" and "Adopt A Pet" at bottom.
+|123 ABC
+|?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[In God We Trust]]
+|? to present
+|Black on light blue with multicolored image of [[Arkansas State Capitol]].
+|{{small|'''A'''/'''R'''}} ABCD
+|{{small|A/R}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Justice of the Peace]]
+|? to present
+|Blue on white background with "Justice of the Peace" at bottom.
+|ABC 123
+|?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Kappa Alpha Psi]] [[Fraternity]]
+|? to present
+|Black on orange to white fade background with fraternity crest at left.
+|{{small|'''I'''/'''U'''}} ABCD
+|{{small|I/U}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Law enforcement in the United States#Municipal|Municipal Police]] Association
+|? to present
+|Black on white background with black and blue state outline and background at left.
+|{{small|'''L'''/'''O'''}} ABCD
+|{{small|L/O}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Multiple Sclerosis Society]]
+|? to present
+|As passenger base, with NMSS sticker placed over slogan 
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Wild turkey|National Wild Turkey Federation]]
+|? to present
+|Black on multicolored background and wild turkey graphic at left
+|{{small|'''B'''/'''L'''}} ABCD
+|{{small|B/L}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Omega Psi Phi]] [[Fraternity]]
+|? to present
+|Black on purple to white fade background with fraternity crest at left.
+|{{small|'''A'''/'''O'''}} ABCD
+|{{small|A/O}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Organ donation|Organ Donor Awareness]]
+|? to present
+|Black on white background with green ribbon and red heart at left.
+|{{small|'''O'''/'''D'''}} ABCD
+|{{small|O/D}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Phi Beta Sigma]] [[Fraternity]]
+|? to present
+|Blue on white background with fraternity seal at right.
+|{{small|'''H'''/'''U'''}} ABCD
+|{{small|H/U}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Professional]] [[Firefighter]]
+|April 2008&nbsp;– present
+|Black on reflective red to white fade background with logo of Arkansas Professional Fire Fighters Association
+|{{small|'''P'''/'''F'''}} ABCD
+|{{small|P/F}}&nbsp;AAAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Realtor]]
+|? to present
+|Blue on reflective white with Realtor logo at right
+|{{small|'''R'''/'''A'''}} ABC
+|{{small|R/A}} AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Search and Rescue]]
+|? to present
+|Red on reflective white with SAR logo at left.
+|'''SA''' 123
+|SA 001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Sheep dog|Sheep Dog Impact Assistance]]
+|? to present
+|As passenger base, with "SHEEP DOG IMPACT ASSISTANCE" sticker placed over slogan
+|123 ABC<br>ABC 12D
+|Taken from passenger allocation
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Wildlife]] — [[American Black Bear]]
+|2008
+|Black on multicolored background.
+|12AB
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Bald eagle]]
+|2013
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} ABC
+|{{small|G/F}} AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Black crappie]]
+|2012
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} ABC
+|{{small|G/F}} AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Labrador Retriever|Black Labrador]]
+|2010
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} ABC
+|{{small|G/F}} AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Diana fritillary]] [[butterfly]]
+|2009
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} ABC
+|{{small|G/F}} AAA to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Meleagris gallopavo silvestris|Eastern Wild Turkey]]
+|2003
+|Black on multicolored background.
+|AB12
+|AA01 to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Elk]]
+|2007
+|Black on multicolored background.
+|12AB
+|01AA to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Ivory-Billed Woodpecker]]
+|2006
+|Black on multicolored background.
+|12AB
+|01AA to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Largemouth Bass]]
+|2002
+|Black on multicolored background.
+|AB12
+|AA01 to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Mallard]]
+|2004
+|Black on multicolored background.
+|AB12
+|AA01 to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Northern Cardinal]]
+|2016
+|Black on multicolored background.
+|AB12
+|AA01 to ?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Rainbow Trout]]
+|2005
+|Black on multicolored background.
+|AB12
+|?
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Red Fox]]
+|2017
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} AB12
+|{{small|G/F}} AA01 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Ruby-throated hummingbird|Ruby-Throated Hummingbird]]
+|2001
+|Black on light blue with multicolored image of hummingbird and flower.
+|AB12<br>12AB<br>{{small|'''G'''/'''F'''}} ABC
+|?
+|Awarded "Plate of the Year" for best new license plate of 2001 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Arkansas has been so honored.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Smallmouth Bass]]
+|2015
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} AB12
+|{{small|G/F}} AA01 to present
+| 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[Squirrel]]
+|2014
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} AB12
+|{{small|G/F}} AA01 to present
+| 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[White-Tailed Deer]]
+|2000
+|Black on multicolored background.
+|AB12
+|AA01 to ?
+|Possibly no longer available, but is still shown on the AR DFA website. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife — [[White-Tailed Deer]]
+|2011
+|Black on multicolored background.
+|{{small|'''G'''/'''F'''}} AB12
+|{{small|G/F}} AA01 to present
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://web.archive.org/web/20150523204523/http://www.dfa.arkansas.gov/offices/motorVehicle/Pages/specialtyPlates.aspx Arkansas Office of Motor Vehicles—Specialty Plates and Placards]
+*[https://www.15q.net/ar.html Arkansas license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200627222230/https://www.15q.net/ar.html |date=June 27, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Arkansas}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Arkansas}}
+[[Category:Vehicle registration plates of the United States by state or territory|Arkansas]]
+[[Category:Transportation in Arkansas]]
+[[Category:1911 in transport]]
+[[Category:1911 introductions]]
+[[Category:Arkansas transportation-related lists]]

@@ -1,0 +1,379 @@
+{{Short description|Puerto Rico vehicle license plates}}
+{{copyedit|date=July 2025}}
+{{Infobox vehicle registration plate
+| country = {{country|United States}}
+| countrycode = USA
+| image =
+| nickname =
+| slogan_label = 
+| slogan = Isla del Encanto 
+| size = {{cvt|12|x|6|in|cm|disp=br}}
+| material = [[Aluminum]]
+| serial_format = ABC 123
+| current_start_date = {{Start date|2023|3|}}
+| designer = 
+| issuer = Driver Services Directorate
+| manufacturer = 
+| start_date = {{Start date and age|1906}}
+}}
+
+The [[Commonwealth (United States insular area)|U.S. Commonwealth]] of '''[[Puerto Rico]]''' first required its residents to register their [[motor vehicle]]s and display '''[[vehicle registration plate]]s''' in 1906.<ref>{{cite magazine |last1=Tanner |first1=Eric |last2=Bittner |first2=Bob |date=August 2018 |title=Puerto Rico Passenger Plates 1906-1918 |magazine=Plates Magazine |location=Montezuma, Iowa |publisher=[[Automobile License Plate Collectors Association]] }}</ref> Only rear plates have been required since 1976.
+
+== Passenger baseplates 1930–present ==
+In 1956, the United States, Canada, and Mexico reached an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] to standardise the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardised mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Puerto Rico license plate that complied with these standards. However, in 2012 the Puerto Rican government began issuing optional [[Vehicle registration plates of Europe#Format|European-style plates]] that incorporate the design language of the standard-issue plates in a longer and narrower size typically seen in Europe.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1930-1931 Puerto Rico license plate.jpg|150px]]
+| 1930
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico Army license plate 1939-1940.jpg|150px]]
+| 1939
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1950 graphic.png|150px]]
+|1950 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1951 graphic.png|150px]]
+|1951 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1952 graphic.png|150px]]
+|1952 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1953 graphic.png|150px]]
+|1953 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1954 graphic.png|150px]]
+|1954 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1955 graphic.png|150px]]
+|1955 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1956 graphic.png|150px]]
+|1956 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1957 graphic.png|150px]]
+|1957 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1958 graphic.png|150px]]
+|1958 
+|
+|
+|
+|
+|
+|-
+|[[File:Puerto Rico license plate 1967 graphic.png|150px]]
+|1967 
+|
+|
+|
+|
+|
+|-
+|[[File:PUERTO RICO 1970-1973 license plate - Flickr - woody1778a.jpg|150px]]
+|1970 
+|
+|
+|
+|
+|
+|-
+|[[File:PUERTO RICO 1976 -TRAFICANTE LICENSE PLATE - Flickr - woody1778a.jpg|150px]]
+|1976
+|Embossed black on reflective white
+|
+| 
+| 
+|
+|-
+|[[File:1978 Puerto Rican license plate.png|150px]]
+|1978
+|Embossed black serial on white background
+|''None''
+|12A123
+|
+|
+|-
+|[[File:Puerto Rico 1987 car license plate "Isla Del Encanto".jpg|150px]]
+|January 1987 – December 2001;<br>2003 – December 2007<ref name="allaboutlicenseplatesPR">{{Cite web|url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Puerto%20Rico&code=pr|title=Puerto Rico: Passenger|website=allaboutlicenseplates.com|access-date=July 27, 2025}}</ref>
+|Embossed black on reflective white with fort graphic
+|Isla Del Encanto
+|ABC 123
+|AAA 001 to FCX&nbsp;999;<br>FLM 501 to HEN&nbsp;999
+|
+|-
+|[[File:Puerto Rico Flag Design License Plate (Low Res).png|150px]]
+|January 2002 – 2003
+|Embossed black on flag graphics
+|Cincuentenario
+|ABC 123
+|FCY 001 to FLM&nbsp;500
+|
+|-
+|[[File:Puerto Rico 2008 Screened License Plate.jpg|150px]]
+|December 2007 – February 2023
+|Screened black on reflective fort graphic
+|Isla Del Encanto 
+|ABC 123
+|HEO 001 to HRR 999;IEJ 001 to JCA 999; JCE 001- JGI 999; JGL 001 - JJF 999; JJI 001 - JKD 999; JLU; JRE 001 - JUJ 999; JRX; JUM 001 - JVJ 999
+|Early plates feature a dash between the letters and numbers. Euro-style plates offered at an additional cost and were issued in the following series: ITA - ITE; IXV - IXZ; JEG; JGA - JGB; JKA; JLU; JRX.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|March 2023 – present
+|Screened black on reflective white with fort graphic, similar to the 1986 series
+|Isla Del Encanto
+|ABC 123
+|KBV 001 to KXK 709 {{small|(as of July 20, 2026)}}<ref name=".cc">{{Cite web |title=Puerto Rico License Plates |url=https://www.licenseplates.cc/PR |access-date=January 8, 2025 |website=licenseplates.cc}}</ref>
+|Optional European style plates were offered in the following series: JVQ-JVT; KCZ; KHR-KHS; KIL-KIO; KMX-KMZ; KOQ-KOR; KRD-KRE, KRU-KRW, KRZ; KSA‐KSB; KVG-KVH; KXB-KXC. "KBU" series reserved for Modified Classic Vehicle plates.
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Puerto Rico — License plate "Mayagüez 2010".JPG|150px]]
+|2009–2012
+|Black on reflective white with green stripes on top and orange stripes on bottom and [[2010 Central American and Caribbean Games|Mayagüez 2010]] logo in the center
+|Isla Del Encanto Mayaguez 2010
+|ABC 123
+|HRS 001 to HVZ 999
+|Issued for the 2010 Central American and Caribbean Games
+|-
+|[[File:Puerto_Rico_lo_Hace_Mejor_License_Plate.jpg|150px]]
+|2012–2013
+|A picture of the Puerto Rican Governor's mansion
+|Puerto Rico does it better<br>{{lang|es|Puerto Rico lo hace mejor|i=no}}<ref name="allaboutlicenseplatesPR"/>
+|ABC 123
+|HWD 001 to IEI 999
+|European-sized plates optionally offered in the following series: IAA-IAJ; IQR 001- IQR 999.
+|-
+|[[File:SanJuanEstuaries.jpeg|150px]]
+|2013–2015
+|Image of a Puerto Rico Manatee
+|San Juan Estuary
+|ABC 123
+|IAK 001 to IAP 999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2017
+|
+|100 years of the Senate of Puerto Rico
+|ABC 123
+|JCB 001 - JCD 999, JGJ 001 - JGK 999
+|
+|-
+|[[File:Puerto Rico Olympics committee.jpeg|150px]]
+|2017–2018
+|
+|[[Puerto Rico Olympic Committee]]
+|ABC 123
+|JJG 001 - JJH 999, PUR 001 to PUR 999
+|
+|-
+|[[File:PR Make a Wish Plate.jpg|150px]]
+|2020–2021
+|
+|[[Make A Wish Foundation]]
+|ABC 123
+|JKE 001 - JRD 999
+|European-sized plates optionally offered (JLV 001 - JLX 999; JQK 001 -JQL 999; JRW 001 - JRW 999). "JNU" series was reserved for Classic Vehicle plates and "JNV" series was reserved for Modified Classic Vehicle plates.
+|-
+|[[File:Roberto Clemente Puerto Rico Plate.jpg|150px]]
+|2022–2023
+|Celebration of the hit #3,000 of Roberto Clemente
+|[[Roberto Clemente]]
+|ABC 123
+|JVK 001 - JVP 999; JVQ, JVW 001 - JVW 999; JWA 001 - KAD 999, KAK 001 - KBN 999
+|Initial serial font was a [[3M]] typeface. Later plates used. European-styled plates were offered using the following series: JRY 001 - JRZ 999; JUK 001 - JUL 999; some JVQ series.
+|-
+|[[File:Puerto Rico San Juan 500th License Plate.jpg|150x150px]]
+|2021–2022
+|Celebration of the 500th anniversary of the founding of San Juan
+|500 Years of San Juan
+|ABC 123
+|JVU 001 - JVV 999, JVX 001 - JVZ 999, KAE 001 - KAJ 999, KBO 001 - KBT 999
+|Initial serial font was a [[3M]] typeface.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Puerto Rico 2015 license plate "Taxi turistico".jpg|150px]]
+|
+|2015
+|Screened black serial on green to white to red faded background, "PUERTO RICO" in white at bottom, Castillo del Morro graphic over green fields at left
+|"www.gobierno.pr" in small black type below serial at far right
+|1234AB
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Omnibus
+|
+|Embossed black characters on a white background; black “OMNI BUS” text at top, "PUERTO RICO" at bottom.
+|
+|123-'''OPR'''
+|
+|
+|-
+|[[File:Puerto Rico Omnibus License Plate.jpg|150x150px]]
+|Omnibus
+|
+|Embossed black characters on white background; “OMNIBUS” text at top.
+|
+|1234-'''OP'''
+|
+|
+|-
+|[[File:Puerto Rico Cargo License Plate (Old).jpg|150x150px]]
+|Truck under 1 ton
+|
+|Embossed black characters on white background, "CARGA" text at top.
+|
+|123-456
+|
+|Formerly issued for cargo vehicles.
+|-
+|[[File:Puerto Rico Cargo License Plate 2.jpg|150x150px]]
+|Truck over 1 ton
+|
+|Embossed black characters on white background, "CARGA" at top.
+|
+|A-12345
+|
+|
+|-
+|[[File:Puerto Rico Cargo License Plate.jpg|150x150px]]
+|Truck over 1 ton
+|
+|Black characters on white background, "CARGA" text at top.
+|
+|A12345
+|
+|Issued for cargo vehicles such as pickup trucks.
+|-
+|[[File:Puerto Rico Motorcycle License Plate.jpg|150x150px]]
+|Motorcycle
+|
+|Black characters on white background, "PUERTO RICO" at top, "MOTORA" at bottom.
+|
+|123456
+|
+|
+|-
+|[[File:Puerto Rico Trailer License Plate.jpg|150x150px]]
+|Trailer
+|
+|Black characters on white background, "ARRASTRE" text at top.
+|
+|123456'''A'''
+|
+|
+|-
+|[[File:Puerto Rico School Vehicle License Plate.jpg|150x150px]]
+|School Vehicle
+|
+|Black characters on white background, "ESCOLAR" text at top.
+|
+|12345'''TE'''
+|
+|
+|}
+
+==See also==
+{{Portal|Puerto Rico}}
+* [[List of highways in Puerto Rico]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|License plates of Puerto Rico}}
+* {{cite web |url=https://www.plateshack.com/y2k/Puerto_Rico/pry2k.html |website=Plateshack.com |title=Puerto Rico Y2K |access-date=July 27, 2025}}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Puerto Rico}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Puerto Rico}}
+[[Category:Vehicle registration plates of the United States by state or territory|Puerto Rico]]
+[[Category:Puerto Rico transport-related lists]]
+[[Category:Transportation in Puerto Rico]]
+
+{{automotive-part-stub}}
+{{PuertoRico-stub}}

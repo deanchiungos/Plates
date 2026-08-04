@@ -1,0 +1,1023 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = Plate_NewBrunswick_2016.jpg
+| caption = 
+| slogan_label = 
+| slogan = 
+| size = {{cvt|12|x|6|in|cm|disp=br}}
+| material = 
+| serial_format = ABC 123
+| current_start_date = {{Start date|2011}}
+| designer = 
+| issuer = [[Department of Justice and Public Safety (New Brunswick)|Department of Justice and Public Safety]], Motor Vehicle Branch
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia]]<ref>{{cite web |last=Drost |first=Philip |date=April 19, 2018 |title=Peel... in this place: Why thousands of licence plates are being recalled |url=https://www.cbc.ca/news/canada/new-brunswick/peeling-plate-problems-1.4624822 |work=[[CBC News]] |access-date=November 11, 2020}}</ref>
+| start_date = {{Start date|1911}}
+}}
+
+The [[Provinces and territories of Canada|Canadian province]] of [[New Brunswick]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|licence plate]]s for display until 1911, when the province began to issue plates.
+
+{{As of|{{CURRENTYEAR}}}}, plates are issued by the New Brunswick [[Department of Justice and Public Safety (New Brunswick)|Department of Justice and Public Safety]] through its Motor Vehicle Branch. Only rear plates have been required on all vehicles since July 15, 2019.<ref name="singleplate">{{cite web |last=MacKinnon |first=Bobbi-Jean |date=June 18, 2019 |title=Front licence plates will be scrapped by July 15 despite safety concerns |url=https://www.cbc.ca/news/canada/new-brunswick/front-licence-plate-new-brunswick-july-15-1.5179596 |work=[[CBC News]] |access-date=July 28, 2019}}</ref>
+
+==Passenger baseplates==
+===1911 to 1961===
+In 1956, Canada, the United States and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first New Brunswick licence plate that complied with these standards was issued seven years beforehand, in 1949 (dated 1950).
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|Black serial on white porcelain plate; vertical "1911" and "NB" at left and right respectively
+|''none''
+|123
+|1 to 483<ref>{{cite web |last=Taylor |first=Eric Robert |title=New Brunswick Archive |url=https://porcelainplates.net/newbrunswick_archive.html |work=PorcelainPlates.net |access-date=December 31, 2018}}</ref>
+|Those who paid their license tax to the Provincial Board of Works in 1911 were provided with a 6 x 10 inch license plate.<ref>{{cite news |title=AUTO OWNERS SLOW IN PAYING LICENSE FEES |url=https://da.tj.news/viewer?opub=The_Daily_Gleaner&date=19121022&page=8&filename=0341_DG_A7232 |access-date=24 August 2023 |work=The Daily Gleaner |date=October 22, 1912 |archive-date=24 August 2023 |archive-url=https://web.archive.org/web/20230824163434/https://da.tj.news/viewer?opub=The_Daily_Gleaner&date=19121022&page=8&filename=0341_DG_A7232 |url-status=dead }}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|Red-orange serial on white porcelain plate; vertical "1912" and "NB" at left and right respectively
+|''none''
+|123
+|1 to 700
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|Black serial on yellow porcelain plate; vertical "1913" and "NB" at left and right respectively
+|''none''
+|1234
+|701 to 1524
+|
+|-
+|[[File:1914 New Brunswick License Plate 991.jpg|150px]]
+|1914
+|White serial on green porcelain plate; vertical "1914" and "NB" at left and right respectively
+|''none''
+|1234
+|701 to approximately 2100
+|
+|-
+|[[File:1915 New Brunswick License Plate 2007.jpg|150px]]
+|1915
+|White serial on red porcelain plate; vertical "1915" and "NB" at left and right respectively
+|''none''
+|1234
+|701 to approximately 2600
+|
+|-
+|[[File:1916 New Brunswick License Plate 6044.jpg|150px]]
+|1916
+|Dark blue serial on light blue porcelain plate; vertical "1916" and "NB" at left and right respectively
+|''none''
+|1234
+|3000 to approximately 6500
+|
+|-
+|[[File:1917 New Brunswick License Plate 7802.jpg|150px]]
+|1917
+|Black serial on light yellow porcelain plate; vertical "1917" and "NB" at left and right respectively
+|''none''
+|1234
+|3000 to approximately 8300
+|
+|-
+|[[File:1918 New Brunswick License Plate 8569.jpg|150px]]
+|1918
+|White serial on black flat metal plate; "N.B. 1918" at left
+|''none''
+|12345
+|3000 to approximately 11700
+|
+|-
+|[[File:1919 New Brunswick License Plate 1341.jpg|150px]]
+|1919
+|Black serial on white flat metal plate; "N.B. 1919" at left
+|''none''
+|1234
+|1000 to approximately 8300
+|
+|-
+|[[File:1920 New Brunswick License Plate 9979.jpg|150px]]
+|1920
+|Yellow serial on black flat metal plate; vertical "NB" and "1920" at left and right respectively
+|''none''
+|12345
+|1000 to approximately 11800
+|
+|-
+|[[File:1921 New Brunswick License Plate 12153.jpg|150px]]
+|1921
+|Brown serial on tan flat metal plate; vertical "NB" and "1921" at left and right respectively
+|''none''
+|12345
+|1000 to approximately 13500
+|
+|-
+|[[File:1922 New Brunswick License Plate 7-086.jpg|150px]]
+|1922
+|Embossed dark green serial on white plate with border line; vertical "NB" and "1922" at left and right respectively
+|''none''
+|12-345
+|1-000 to approximately 13-600
+|First embossed plate.
+|-
+|[[File:1923 New Brunswick License Plate 11912.jpg|150px]]
+|1923
+|Embossed white serial on dark blue plate with border line; vertical "NB" and "1923" at left and right respectively
+|''none''
+|12345
+|1000 to approximately 16700
+|
+|-
+|[[File:1924 New Brunswick License Plate 14189.jpg|150px]]
+|1924
+|Embossed dark blue serial on grey plate; vertical "NB" and "1924" at left and right respectively
+|''none''
+|12345
+|1000 to approximately 20900
+|
+|-
+|[[File:1925 New Brunswick License Plate 13-592.jpg|150px]]
+|1925
+|Embossed black serial on light green plate with border line; vertical "NB" and "1925" at left and right respectively
+|''none''
+|12-345
+|1-000 to approximately 19-400
+|
+|-
+|[[File:1926 New Brunswick License Plate 21187.jpg|150px]]
+|1926
+|Embossed white serial on black plate with border line; vertical "NB" and "1926" at left and right respectively
+|''none''
+|12345
+|1000 to approximately 23200
+|
+|-
+|[[File:1927 New Brunswick License Plate 15-330.jpg|150px]]
+|1927
+|Embossed black serial on cream plate with border line; vertical "1927" and "NB" at left and right respectively
+|''none''
+|12-345
+|3-000 to approximately 24-700
+|
+|-
+|[[File:1928 New Brunswick License Plate 20-882.jpg|150px]]
+|1928
+|Embossed white serial on maroon plate with border line; "NEW BRUNSWICK-28" at bottom
+|''none''
+|12-345
+|3-000 to approximately 28-500
+|First use of the full province name.
+|-
+|[[File:1929 New Brunswick License Plate 16-877.jpg|150px]]
+|1929
+|Embossed white serial on teal plate with border line; "NEW BRUNSWICK-29" at top
+|''none''
+|12-345
+|5-000 to approximately 32-200
+|
+|-
+|[[File:1930 New Brunswick License Plate 16715.jpg|150px]]
+|1930
+|Embossed maroon serial on silver plate with border line; "NEW BRUNSWICK-30" at bottom
+|''none''
+|12345
+|5000 to approximately 35000
+|
+|-
+|[[File:1931 New Brunswick License Plate M-7804.jpg|150px]]
+|1931
+|Embossed orange serial on dark purple plate; "NEW BRUNSWICK-31" at top
+|''none''
+|''A''-1234
+|Probably coded by region
+|
+|-
+|[[File:1932 New Brunswick License Plate M-7906.jpg|150px]]
+|1932
+|Embossed black serial on white plate with border line; "NEW BRUNSWICK-32" at bottom
+|''none''
+|''A''-1234
+|Coded by region (''A'')
+|
+|-
+|[[File:1933 New Brunswick License Plate S-1820.jpg|150px]]
+|1933
+|Embossed white serial on dark blue plate; "NEW BRUNSWICK-33" at top
+|''none''
+|''A''-1234
+|Coded by region (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed blue serial on white plate with border line; "34-NEW BRUNSWICK" at bottom
+|''none''
+|''A''-1234
+|Coded by region (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed silver serial on black plate; "NEW BRUNSWICK-35" at top
+|''none''
+|''A''-1234
+|Coded by region (''A'')
+|
+|-
+|[[File:1936 New Brunswick License Plate M-1348.jpg|150px]]
+|1936
+|Embossed black serial on white plate; "NEW BRUNSWICK-36" at bottom
+|''none''
+|''A''-1234
+|Coded by region (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed white serial on black plate; "NEW BRUNSWICK - 37" at bottom
+|''none''
+|12-345
+|1-000 to approximately 34-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1938
+|Embossed black serial on silver plate; "NEW BRUNSWICK - 38" at top
+|''none''
+|12-345
+|1-000 to approximately 34-000
+|
+|-
+|[[File:1939 New Brunswick License Plate 9-603.jpg|150px]]
+|1939
+|Embossed white serial on blue plate; "NEW BRUNSWICK - 39" at bottom
+|''none''
+|12-345
+|1-000 to approximately 34-500
+|
+|-
+|[[File:1940 New Brunswick License Plate 5-735.jpg|150px]]
+|1940
+|Embossed yellow serial on dark green plate; "NEW BRUNSWICK - 40" at top
+|''none''
+|12-345
+|2-000 to approximately 36-500
+|
+|-
+|[[File:1941 New Brunswick License Plate 5-917.jpg|150px]]
+|1941
+|Embossed beige serial on brown plate; "NEW BRUNSWICK - 41" at bottom
+|''none''
+|12-345
+|2-000 to approximately 36-500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1942–44}}
+|Embossed yellow serial on dark blue plate; "42 - NEW BRUNSWICK" at top
+|''none''
+|12·345
+|2·000 to approximately 37·500
+|Revalidated for 1943 and 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1945 New Brunswick license plate.JPG|150px]]
+|1945
+|Embossed yellow serial on black plate; "NEW BRUNSWICK - 45" at top
+|''none''
+|12·345
+|1·000 to approximately 30·500
+|
+|-
+|[[File:1946 New Brunswick License Plate 8-633.jpg|150px]]
+|1946
+|Embossed white serial on dark blue plate; "NEW BRUNSWICK-46" at bottom
+|''none''
+|12·345
+|1·000 to approximately 35·500
+|
+|-
+|[[File:1947 New Brunswick License Plate 1-090.jpg|150px]]
+|1947
+|Embossed white serial on brown plate; "NEW BRUNSWICK-47" at bottom
+|''none''
+|12·345
+|1·000 to approximately 40·000
+|
+|-
+|[[File:1948 New Brunswick License Plate 32-056.jpg|150px]]
+|1948
+|Embossed white serial on black plate; "48-NEW BRUNSWICK" at top
+|''none''
+|12·345
+|1000 to approximately 42·500
+|
+|-
+|[[File:1949 New Brunswick License Plate 10-309.jpg|150px]]
+|1949
+|Embossed white serial on maroon plate; "49-NEW BRUNSWICK" at bottom
+|''none''
+|12·345
+|1·000 to approximately 46·500
+|
+|-
+|[[File:Canada New Brunswick license plate 1950 graphic.png|150px]]
+|1950
+|Embossed white serial on dark blue plate with border line; "NEW BRUNSWICK – 50" at top
+|''none''
+|12·345
+|1·000 to approximately 53·000
+|
+|-
+|[[File:Canada New Brunswick license plate 1951 graphic.png|150px]]
+|1951
+|Embossed white serial on green plate with border line; "NEW BRUNSWICK – 51" at bottom
+|''none''
+|12·345
+|1·000 to approximately 58·000
+|
+|-
+|[[File:Canada New Brunswick license plate 1952 graphic.png|150px]]
+|1952
+|Embossed white serial on maroon plate with border line; "52 – NEW BRUNSWICK" at top
+|''none''
+|12·345
+|1·000 to approximately 64·000
+|
+|-
+|[[File:Canada New Brunswick license plate 1953 graphic.png|150px]]
+|1953
+|Embossed white serial on black plate with border line; "53 – NEW BRUNSWICK" at bottom
+|''none''
+|12·345
+|1·000 to approximately 68·000
+|
+|-
+|[[File:Canada New Brunswick license plate 1954 graphic.png|150px]]
+|1954
+|Embossed green serial on white plate with border line; embossed [[Symbols of New Brunswick|provincial shield]] used as separator; "54 - NEW BRUNSWICK" at top
+|''none''
+|12-345
+|1-000 to approximately 77-000
+|
+|-
+|[[File:1955 New Brunswick Licence Plate 17 239.jpg|150px]]
+|1955
+|Embossed white serial on green plate with border line; embossed provincial shield used as separator; "55 – NEW BRUNSWICK" at bottom
+|''none''
+|12-345
+|1-000 to approximately 79-000
+|
+|-
+|[[File:Canada New Brunswick license plate 1956 graphic.png|150px]]
+|1956
+|As 1954 base, but with "56 – NEW BRUNSWICK" at top
+|''none''
+|12-345
+|1-000 to approximately 90-000
+|
+|-
+|[[File:Canada New Brunswick license plate 1957 graphic.png|150px]]
+|1957
+|As 1955 base, but with "57 – NEW BRUNSWICK" at bottom
+|''none''
+|12-345
+|1-000 to approximately 99-999
+|
+|-
+|[[File:Canada New Brunswick license plate 1958 graphic.png|150px]]
+|1958
+|Embossed green serial on white plate with border line; embossed provincial shield used as separator; "58 – NEW BRUNSWICK" at top
+|"PICTURE PROVINCE" centred at bottom
+|{{nowrap|123-456}}
+|10-00 to approximately 109-000
+|
+|-
+|[[File:Canada New Brunswick license plate 1959 graphic.png|150px]]
+|1959
+|Embossed white serial on green plate with border line; embossed provincial shield used as separator; "NEW BRUNSWICK – 59" at top
+|"PICTURE PROVINCE" centred at bottom
+|123-456
+|10-00 to approximately 110-000
+|
+|-
+|[[File:Canada New Brunswick license plate 1960 graphic.png|150px]]
+|1960–61
+|As 1958 base, but with "60 – NEW BRUNSWICK" at top
+|"PICTURE PROVINCE" centred at bottom
+|123-456
+|10-00 to approximately 130-000
+|Revalidated for 1961 with windshield stickers.
+|}
+
+===1962 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!style="width:125px;"|Notes
+|-
+|[[File:New Brunswick 1962 License Plate.jpg|150px]]
+|{{nowrap|1962–63}}
+|Embossed white serial on red plate with border line; "NEW BRUNSWICK" at top, offset to left; embossed white box at top right containing debossed "62"
+|"PICTURE PROVINCE" centred at bottom
+|123-456
+|1-000 to approximately 152-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1964–65
+|Embossed white serial on red plate; border lines around plate and around bottom corners; "NEW BRUNSWICK" centred at top; "64" at bottom right
+|"PICTURE PROVINCE" centred at bottom
+|123-456
+|1-000 to approximately 173-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1966–68
+|As 1964–65 base, but with "66" at bottom right
+|"PICTURE PROVINCE" centred at bottom
+|123-456
+|1-000 to approximately 233-000
+|
+|-
+|[[File:New Brunswick 1971 license plate.jpg|150px]]
+|1969–71
+|Embossed red serial on reflective white plate; border lines around plate and around bottom corners; "NEW BRUNSWICK" centred at top; "69" at bottom right
+|"PICTURE PROVINCE" centred at bottom
+|123-456
+|1-000 to approximately 239-000
+|
+|-
+|[[File:New Brunswick 1973 license plate.jpg|150px]]
+|1972–74
+|Embossed green serial on reflective white plate; border lines around plate and around top corners; "NEW BRUNSWICK" and "NOUVEAU-BRUNSWICK" centred at top and bottom respectively; "72" at top right
+|''none''
+|123-456
+|1-000 to approximately 270-000
+|
+|-
+|[[File:New Brunswick 1977 License Plate.jpg|150px]]
+|1975–77
+|As 1972–74 base, but with "75" at top right
+|''none''
+|123-456
+|1-000 to approximately 321-000
+|
+|-
+|[[File:New Brunswick 1982 license plate.jpg|150px]]
+|1978–85
+|As 1972–74 base, but with "78" at top right
+|''none''
+|123-456
+|1-000 to approximately 547-000
+|
+|-
+|[[File:New Brunswick License Plate 1987.jpg|150px]]
+|1986–89
+|Embossed blue serial on reflective white plate; border lines around plate and around top corners; "NEW BRUNSWICK" and "NOUVEAU-BRUNSWICK" screened in turquoise centred at top and bottom respectively
+|rowspan="3"|''none''
+|rowspan="3"|{{nowrap|ABC-123}}
+|AAA-000 to approximately ARZ-999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1989
+|As above, but with province names embossed rather than screened
+|AZA-000 to AZG-999
+|Interim plates manufactured while material was changed from ordinary steel to [[Galvanization|galvanized]] steel.
+|-
+|[[File:New Brunswick License Plate AVF-595.jpg|150px]]
+|1989–91
+|As 1986–89 plates
+|ASA-000 to approximately AVT-999
+|
+|-
+|[[File:New Brunswick License Plate 1997.jpg|150px]]
+|1991–2003
+|Embossed red serial on reflective white plate; screened provincial wordmark (red [[galley]] graphic with "New" and "Nouveau" to the left and "Brunswick" to the right, all in green) centred at top
+|rowspan="2"|''none''
+|rowspan="2"|ABC-123
+|BAA-000 to BZZ-999;<br>GAA-000 to approximately GIY-499
+|C, D and F as first letters reserved for Commercial, Dealer and Farm plates respectively.
+|-
+|[[File:New Brunswick License Plate 2004.jpg|150px]]
+|2003–09
+|As above, but with revised wordmark ("New" to the left of the galley, "Nouveau" to the right and "Brunswick" and "CANADA" below)
+|GIY-500 to GWZ-999 
+|
+|-
+|[[File:New Brunswick License Plate GYK 945.jpg|150px]]
+|2009–11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|ABC 123
+|GXA 000 to GZZ&nbsp;999; JAA&nbsp;000 to JDZ&nbsp;999
+|H as first letter reserved for Taxi plates.
+|-
+|[[File:Plate NewBrunswick 2016.jpg|150px]]
+|2011–present
+|''none''
+|JEA 000 to KFR&nbsp;200 {{small|(As of November 12, 2024)}}<ref name=":0">{{Cite web |title=New Brunswick License Plates |url=https://www.licenseplates.cc/NB |access-date=December 5, 2023 |website=licenseplates.cc}}</ref>
+|Only rear plates required beginning July 15, 2019.<ref name="singleplate"/>
+|-
+|}
+
+==Commercial baseplates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:New Brunswick 1986 Commercial License Plate.jpg|150px]]
+|rowspan="3"|Commercial
+|1986
+|Embossed blue serial on reflective white plate; border lines around plate and around top corners; "NEW BRUNSWICK" and "NOUVEAU-BRUNSWICK" screened in turquoise centred at top and bottom respectively
+|''none''
+|'''C'''A1-234
+|
+|rowspan="3"|First letter C reserved for Commercial plates
+|-
+|[[File:New Brunswick Bilingual License Plate 2014.jpg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|'''C'''AB 123
+|
+|-
+|[[File:New Brunswick Commercial License Plate 2011.jpg|150px]]
+|2011-present
+|''none''
+|CRA 001 to CXT 983 {{small|(As of November 10, 2023)}}<ref name=":0"/>
+|}
+
+===Truck plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:New Brunswick Truck License Plate 1991.jpg|150px]]
+|rowspan="2"|1991-2003
+|rowspan="2"|Embossed red serial on reflective white plate; screened provincial wordmark (red galley graphic with "New" and "Nouveau" to the left and "Brunswick" to the right, all in green) centred at top
+|''none''
+|'''L'''12-345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|''none''
+|rowspan="2"|'''L'''123456
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|2003-09
+|rowspan="2"|
+|''none''
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|''none''
+|rowspan="3"|'''L'''AB 123
+|LAA 001 to LAR 250
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|LAU 068 to LBI 686
+|Also used on Transit busses
+|-
+|[[File:New Brunswick Truck License Plate LCC-403.jpg|150px]]
+|2011-present
+|''none''
+|LBI 687 to LDA 683 {{small|(As of October 14, 2023)}}<ref name=":0"/>
+|
+|}
+
+===Prorated plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:NEW BRUNSWICK 1987 PRORATE PLATE.jpg|150px]]
+|1986
+|Embossed blue serial on reflective white plate; border lines around plate and around top corners; "NEW BRUNSWICK" and "NOUVEAU-BRUNSWICK" screened in turquoise centred at top and bottom respectively
+|''none''
+|'''PR'''12345
+|
+|rowspan="3"|PRP Plan
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-2011
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|'''P'''AB 123
+|PTF 001 to PTO 041
+|-
+|[[File:New Brunswick Prorate License Plate PTS 098.jpg|150px]]
+|2011-present
+|''none''
+|PTO 042 to PUX 476 {{small|(As of October 11, 2023)}}<ref name=":0"/>
+|}
+
+===Farm plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|'''F'''12 345
+|
+|rowspan="2"|First letter F reserved for Farm plates
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011-present
+|''none''
+|F22 001 to F27 541 {{small|(As of October 29, 2021)}}<ref name=":0"/>
+|}
+
+===Taxi plates===
+{{incomplete section|New Brunswick's timeline of taxi license plates|date=August 2023}}
+
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|'''H'''12 345
+|
+|rowspan="2"|H as first letter reserved for Taxi plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011-present
+|''none''
+|H21 415 to H25 864 {{small|(As of September 17, 2023)}}<ref name=":0"/>
+|}
+
+==Other non-passenger baseplates==
+===Antique vehicle plates===
+License plates designated for Historic cars.
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1991–2003
+|Embossed red serial on reflective white plate; screened provincial wordmark (red galley graphic with "New" and "Nouveau" to the left and "Brunswick" to the right, all in green) centred at top
+|''none''
+|
+|
+|-
+|[[File:New Brunswick Antique License Plate AA2-190 (cropped).jpg|150px]]
+|2003–09
+|As above, but with revised wordmark ("New" to the left of the galley, "Nouveau" to the right and "Brunswick" and "CANADA" below)
+|''none''
+|rowspan="3"|'''A'''B1 234
+|AA1 001 to ''unknown''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011–present
+|''none''
+|''unknown'' to AA5 852 {{small|(As of July 23, 2022)}}<ref name=":0"/>
+|
+|}
+
+===Trailer plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:New Brunswick Trailer License Plate 1986.jpg|150px]]
+|1986
+|Embossed blue serial on reflective white plate; border lines around plate and around top corners; "NEW BRUNSWICK" and "NOUVEAU-BRUNSWICK" screened in turquoise centred at top and bottom respectively
+|''none''
+|'''T'''A1-234
+|
+|
+|-
+|[[File:New Brunswick Trailer License Plate 1991.jpg|150px]]
+|1991-2003
+|Embossed red serial on reflective white plate; screened provincial wordmark (red galley graphic with "New" and "Nouveau" to the left and "Brunswick" to the right, all in green) centred at top
+|''none''
+|rowspan="4"|'''T'''AB 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2003–09
+|As above, but with revised wordmark ("New" to the left of the galley, "Nouveau" to the right and "Brunswick" and "CANADA" below)
+|''none''
+|
+|
+|-
+|[[File:New Brunswick Trailer License Plate 02 2012.jpg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|
+|
+|-
+|[[File:New Brunswick Trailer License Plate 09 2012.jpg|150px]]
+|2011-present
+|''none''
+|TNA 101 to TVC 792 {{small|(As of December 1, 2023)}}<ref name=":0"/>
+|
+|}
+
+===Motorcycle plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|ABC12
+|
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011-present
+|''none''
+|YJY37 to ZBN74 {{small|(As of September 17, 2023)}}<ref name=":0"/>
+|}
+
+===ATV plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:New Brunswick ATV License Plate 1986.jpg|150px]]
+|1986
+|Embossed blue serial on reflective white plate; border lines around plate and around top corners; "NEW / NOUVEAU" and "BRUNSWICK" screened in turquoise centred at top and bottom respectively
+|''none''
+|AB12345
+|issued
+|notes
+|-
+|[[File:New Brunswick ATV License Plate 2005.jpg|150px]]
+|2003-09
+|
+|''none''
+|rowspan="3"|AB1-234
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011-present
+|''none''
+|''unknown'' to YE6 025 {{small|(As of September 15, 2023)}}<ref name=":0"/>
+|
+|}
+
+===Dealer plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|'''D'''12 345
+|
+|rowspan="2"|First letter D reserved for Dealer plates
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011-present
+|''none''
+|''unknown'' to D21 547 {{small|(As of May 10, 2023)}}<ref name=":0"/>
+|}
+
+===Seasonal plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|'''S'''AB 123
+|
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011-present
+|''none''
+|SAA 001 to SAF 522 {{small|(As of May 25, 2019)}}<ref name=":0"/>
+|}
+
+===Firefighter plates===
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-11
+|rowspan="2"|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Be... in this place  ᐧ  Être... ici on le peut" screened in green centred at bottom
+|rowspan="2"|AB123
+|
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011-present
+|''none''
+|RJ825 to RS890 {{small|(As of October 26, 2023)}}<ref name=":0"/>
+|}
+
+==Specialty plates==
+The first Conservation license plate featured a Salmon design. In 2009, New Brunswick introduced three new specialty license plate designs; Chickadee, Flower & Deer. The money earned from these plates go to the New Brunswick Wildlife Trust Fund.<ref>{{cite web |title=New conservation plates available |url=https://www1.gnb.ca/cnb/multimedia/display-e.asp?id=2087&num=1 |website=Communications New Brunswick |publisher=New Brunswick |access-date=10 August 2022}}</ref>
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Nouveau Brunswick 2011 License Plate.jpg|150px]]
+|rowspan="2"|Conservation Salmon
+|2000
+|Embossed red serial on reflective white plate
+|"Conservation"
+|rowspan="2"|ABC 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2009-present
+|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Conservation"
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Conservation Chickadee
+|2009
+|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Conservation"
+|ABC 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Conservation Flower
+|2009
+|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Conservation"
+|ABC 123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Conservation Deer
+|2009
+|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial
+|"Conservation"
+|ABC 123
+|
+|
+|-
+|[[File:New Brunswick Veteran License Plate 2009.jpg|150px]]
+|rowspan="2"|Veteran
+|2003
+|
+|"VETERAN / ANCIEN COMBATTANT"
+|'''W'''A 123
+|WA001 to WZ 999
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2021-present
+|Embossed red serial on reflective white plate with curved gold and sky blue bands at the top; screened provincial wordmark (red galley graphic with small blue waves and "New" to the left, "Nouveau" to the right and "Brunswick" and "CANADA" below, all in green) on bands, centred above serial with red poppy to the left of serial
+|"VETERAN / ANCIEN COMBATTANT"
+|'''W'''AB01
+|WAA01 to WAX19 {{small|(As of November 30, 2023)}}<ref name=":0"/>
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.15q.net/nb.html New Brunswick licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200722235425/http://www.15q.net/nb.html |date=2020-07-22 }}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:1905 establishments in New Brunswick]]
+[[Category:Vehicle registration plates of Canada|New Brunswick]]
+[[Category:Transport in New Brunswick]]
+[[Category:New Brunswick transport-related lists]]

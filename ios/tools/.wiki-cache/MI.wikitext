@@ -1,0 +1,1819 @@
+{{short description|Michigan vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = 2017 Michigan state license plate, DNJ-0955.jpg
+| caption = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Pure Michigan
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 1234
+| current_start_date = {{Start date|2013|04}}
+| designer = 
+| issuer = [[Michigan Secretary of State]]
+| manufacturer = 
+| start_date = {{Start date|1910|01|01}}<br>(pre-state plates from 1905 to December 31, 1909)
+}}
+The U.S. state of [[Michigan]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1910, when the state began to issue plates.<ref>{{cite web |url=http://leatherlicenseplates.com/old-michigan-license-plates-vintage-michigan-license-plates/ |title=Old Michigan License Plates |publisher=LeatherLicensePlates.com |access-date=May 24, 2017 |archive-date=March 4, 2017 |archive-url=https://web.archive.org/web/20170304025157/http://leatherlicenseplates.com/old-michigan-license-plates-vintage-michigan-license-plates/ |url-status=dead }}</ref>
+
+{{As of|2022}}, plates are issued by the [[Michigan Secretary of State]]. Only rear plates have been required since 1981. For an extra charge, drivers can request a personalized plate serial as well as a second duplicate plate. Since January 1, 2015, drivers have been required to replace their plates every ten years.<ref>{{cite news |last=Grenke |first=Nicholas |date=December 2, 2013 |title=State law calls for license plates to be replaced at least every 10 years |url=https://www.michigansthumb.com/news/article/State-law-calls-for-license-plates-to-be-replaced-7292611.php |newspaper=[[Huron Daily Tribune]] |access-date=September 13, 2021}}</ref>
+
+==Passenger baseplates==
+===1910 to 1970===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Michigan license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Michigan 1910 license plate.jpg|150px]]
+|1910
+|Black on white porcelain; state seal and "MICH 1910" at left
+|''none''
+|12345
+|1 to approximately 18500
+|Front and rear plates issued; this practice continued until 1944.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|White on black porcelain; state seal and "MICH 1911" at left
+|''none''
+|12345
+|1 to approximately 27500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|Black on yellow porcelain; state seal and "MICH 1912" at left
+|''none''
+|12345
+|1 to approximately 40000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|White on green porcelain; state seal and "MICH 1913" at left
+|''none''
+|12345
+|1 to approximately 55000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Red on white porcelain; state seal and "MICH 1914" at left
+|''none''
+|12345
+|1 to approximately 77000
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1915
+|rowspan="2"|White on blue; aluminum state seal and "MICH 1915" at left
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|First embossed plate. Only letters C and E used in the A1234 serial format.<ref name="allaboutlicenseplatesMI">{{cite web |last=Tanner |first=Eric N. |title=Michigan Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Michigan&code=mi |publisher=allaboutlicenseplates.com |access-date=November 17, 2020}}</ref>
+|-
+|A1234
+|C0000 to approximately E6000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1916
+|rowspan="2"|Blue on white; aluminum state seal and "MICH 1916" at left
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately F5000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1917
+|rowspan="2"|White on black; aluminum state seal and "MICH 1917" at left
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately O9000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|White on green; aluminum state seal and "MICH 18" at left
+|''none''
+|123456
+|1 to approximately 245000
+|
+|-
+|rowspan="2"|[[File:1919 Michigan Licence Plate.jpg|150px]]
+|rowspan="2"|1919
+|rowspan="2"|White on brown; aluminum state seal and "MICH 19" at left
+|rowspan="2"|''none''
+|12345
+|1 to 99999
+|rowspan="2"|
+|-
+|A1234
+|A1 to approximately Z9000
+|-
+|[[File:Michigan 1920 license plate.jpg|150px]]
+|1920
+|Black on orange; stylized "MICH 20" at left
+|''none''
+|123-456
+|1 to approximately 414-000
+|
+|-
+|[[File:1921 Michigan license plate.jpg|150px]]
+|1921
+|White on black; stylized "MICH 21" at left
+|''none''
+|123-456
+|1 to approximately 476-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|White on red; stylized "MICH 22" at left
+|''none''
+|123-456
+|1 to approximately 577-000
+|
+|-
+|[[File:1923 Michigan license plate.jpg|150px]]
+|1923
+|White on green; stylized "MICH 23" at left
+|''none''
+|123-456
+|1 to approximately 730-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Black on yellow; stylized "MICH 24" at left
+|''none''
+|123-456
+|1 to approximately 879-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Black on gray; stylized "MICH 25" at left
+|''none''
+|123-456
+|1 to approximately 996-000
+|
+|-
+|rowspan="2"|[[File:1926 Michigan license plate.jpg|150px]]
+|rowspan="2"|1926
+|rowspan="2"|White on black; "MICH 26" at left
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="4"|On both these bases, plates with the <span style="text-decoration:overline">'''M'''</span>123-456 serial format had the '<span style="text-decoration:overline">M</span>' surrounded by a diamond, and are thus informally known as "Diamond M" plates.
+|-
+|<span style="text-decoration:overline">'''M'''</span>123-456
+|<span style="text-decoration:overline">M</span>1 to approximately <span style="text-decoration:overline">M</span>133-000
+|-
+|rowspan="2"|[[File:Michigan_1927_license_plate.jpg|150px]]
+|rowspan="2"|1927
+|rowspan="2"|Black on yellow; "MICHIGAN 1927" at bottom
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|-
+|<span style="text-decoration:overline">'''M'''</span>123-456
+|<span style="text-decoration:overline">M</span>1 to approximately <span style="text-decoration:overline">M</span>226-000
+|-
+|[[File:1928 Michigan license plate.jpg|150px]]
+|1928
+|White on green; "MICHIGAN 1928" at top
+|''none''
+|{{nowrap|1-234-567}}
+|1 to approximately 1-116-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Yellow on black; "MICHIGAN 1929" at bottom
+|''none''
+|{{nowrap|1-234-567}}
+|1 to approximately 1-234-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Black on yellow; "MICHIGAN 1930" at bottom
+|''none''
+|{{nowrap|1-234-567}}
+|1 to approximately 1-248-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Red on black; "MICHIGAN 1931" at bottom
+|''none''
+|{{nowrap|1-234-567}}
+|1 to approximately 1-223-000
+|
+|-
+|[[File:Michigan License Plate 1932.jpg|150px]]
+|1932
+|White on dark blue; "MICHIGAN 1932" at top
+|''none''
+|{{nowrap|1-234-567}}
+|1 to approximately 1-139-000
+|
+|-
+|[[File:1933 Michigan license plate.jpg|150px]]
+|1933
+|Black on white; "MICHIGAN 1933" at bottom
+|''none''
+|12-345<br>A12-345
+|Issued in blocks by county
+|
+|-
+|[[File:Michigan_1934_License_Plate.jpg|150px]]
+|1934
+|Black on yellow; "19 MICHIGAN 34" at top
+|''none''
+|12-345<br>A 12345
+|Issued in blocks by county
+|
+|-
+|[[File:Michigan_1935_License_Plate.jpg|150px]]
+|1935
+|Yellow on dark blue; "19 MICHIGAN 35" at bottom
+|''none''
+|12-345<br>A 12345
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Black on gray; "19 MICHIGAN 36" at top
+|''none''
+|12-345<br>A 12345
+|Issued in blocks by county
+|
+|-
+|[[File:1937 Michigan license plate.jpg|150px]]
+|1937
+|Yellow on dark blue; "1937 MICHIGAN" at bottom
+|''none''
+|12 345<br>A 12345
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1938
+|Black on light green; "1938 MICHIGAN" or "MICHIGAN 1938" at top
+|''none''
+|A 12345
+|Issued in blocks by county
+|
+|-
+|[[File:1938-Aug31 Michigan license plate.jpg|150px]]
+|Black on white; vertical "MICH" at left; "PASS EXP 8-31-38" at top
+|''none''
+|123456
+|1 to approximately 552000
+|Half-year plates issued at lower cost to full-year plates, due to the [[Great Depression|Depression]].
+|-
+|[[File:1939 MICHIGAN LICENSE PLATE.jpg|150px]]
+|rowspan="2"|1939
+|Black on beige; "19 MICH 39" at bottom
+|''none''
+|A 12345<br>AB 1234
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|White on dark blue; vertical "MICH" at left; "PASS EXP 8-31-39" at bottom
+|''none''
+|123456
+|1 to approximately 552000
+|Half-year plate.
+|-
+|[[File:1940 Michigan license plate.jpg|150px]]
+|rowspan="2"|1940
+|Black on silver; "MICH 40" at top
+|''none''
+|rowspan="2"|''AB''-12-34
+|rowspan="2"|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|White on black; "MICH EXP. 8-31 40" at top
+|''none''
+|Half-year plate.
+|-
+|[[File:1941 Michigan license plate.jpg|150px]]
+|rowspan="2"|1941
+|White on maroon; "MICH 41" at top
+|''none''
+|rowspan="2"|''AB''-12-34
+|rowspan="2"|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Maroon on white; "MICH EXP. 8-31 41" at top
+|''none''
+|Half-year plate.
+|-
+|[[File:1942 Michigan license plate.jpg|150px]]
+|rowspan="2"|{{nowrap|1942–43}}
+|White on olive green; "MICHIGAN" at top and "42" at bottom
+|''none''
+|rowspan="2"|''AB''-12-34
+|rowspan="2"|County-coded
+|Full and half-year plates revalidated for 1943 with metal tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As above, but with "EXP. 8-31-42" at bottom
+|''none''
+|Half-year plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1944
+|White on maroon; "MICHIGAN" at bottom and "44" at top
+|''none''
+|rowspan="2"|''AB''-12-34
+|rowspan="2"|County-coded
+|Only rear plates issued for both full-year and half-year plates. For full-year plates, this practice continued until 1957.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Maroon on white; "MICHIGAN" at bottom and "EXP. 8-31-44" at top
+|''none''
+|Half-year plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1945
+|Black on silver; "MICHIGAN" at top and "45" at bottom
+|''none''
+|rowspan="2"|''AB''-12-34
+|rowspan="2"|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|White on black; "MICHIGAN" at top and "EXP. 8-31-45" at bottom
+|''none''
+|Half-year plate.
+|-
+|[[File:1946 Michigan license plate.JPG|150px]]
+|rowspan="2"|1946
+|White on dark olive green; "MICHIGAN" at bottom and "46" at top
+|''none''
+|rowspan="2"|''AB''-12-34
+|rowspan="2"|County-coded
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|White on maroon; "MICHIGAN" at bottom and "EXP. 8-31-46" at top
+|''none''
+|Last half-year plate.
+|-
+|[[File:1947MichiganLicensePlate.JPG|150px]]
+|1947
+|Black on golden yellow; "MICHIGAN" at top and "47" at bottom
+|''none''
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:Michigan 1948 JN-53-17.jpg|150px]]
+|1948
+|Black on silver; "MICHIGAN" at bottom and "48" at top
+|''none''
+|''AB''-12-34
+|County coded
+|
+|-
+|[[File:1949 Michigan Plate.jpg|150px]]
+|1949
+|White on black; "MICHIGAN" at top and "49" at bottom
+|''none''
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:1950MichiganLicensePlate.JPG|150px]]
+|1950
+|Black on silver; "MICHIGAN" at bottom and "50" at top
+|''none''
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:Michigan 1951 JN-84-66.jpg|150px]]
+|1951
+|White on black; "MICHIGAN" at top and "51" at bottom
+|''none''
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:1952MichiganLicensePlate.JPG|150px]]
+|1952
+|Black on silver; "MICHIGAN" at bottom and "52" at top
+|''none''
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:1953 Michigan License Plate.JPG|150px]]
+|1953
+|White on black, "MICHIGAN" at top and "53" at bottom
+|''none''
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:1954 Michigan License Plate.JPG|150px]]
+|1954
+|Yellow on dark blue; "19 MICHIGAN 54" at top
+|Water Wonderland
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:1955MichiganLicensePlate.JPG|150px]]
+|1955
+|White on green; "19 MICHIGAN 55" at top
+|Water Wonderland
+|''AB''-12-34
+|County-coded
+|
+|-
+|[[File:1956 Michigan license plate.jpeg|150px]]
+|1956
+|Dark green on white; "19 MICHIGAN 56" at top
+|Water Wonderland
+|''AB''-1234
+|County-coded
+|First 6" x 12" plate.
+|-
+|[[File:1957 Michigan License Plate.JPG|150px]]
+|1957
+|White on red; "19 MICHIGAN 57" at top
+|Water Wonderland
+|''AB''-1234
+|County-coded
+|Front and rear plates issued (as from 1910–43); this practice continued until 1981.
+|-
+|[[File:1958 Michigan License Plate.JPG|150px]]
+|1958
+|Black on gray; "19 MICHIGAN 58" at top
+|Water Wonderland
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1959 Michigan License Plate.jpg|150px]]
+|1959–61
+|Yellow on green; "19 MICHIGAN 59" at top
+|Water Wonderland
+|''AB''-1234
+|County-coded
+|Revalidated for 1960 with yellow tabs, and for 1961 with silver tabs.
+|-
+|[[File:Michigan 1962 VG-2194.jpg|150px]]
+|1962–64
+|Green on white; "19 MICHIGAN 62" at top
+|Water Wonderland
+|''AB''-1234
+|County-coded
+|Revalidated for 1963 with green tabs, and for 1964 with olive tabs.
+|-
+|[[File:LicencePlateMichigan1965.jpg|150px]]
+|1965
+|Yellow on blue; "MICH 65" at top
+|Water-Winter Wonderland
+|''AB''-1234
+|County-coded
+|First year using galvanized steel. First year using state school colors: 1965 honored [[University of Michigan]].
+|-
+|[[File:1966 Michigan License Plate.jpg|150px]]
+|1966
+|Dark blue on buff; "MICH 66" at top
+|Water-Winter Wonderland
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:LicencePlateMichigan1967.jpg|150px]]
+|1967
+|Maize on dark blue; "MICH 67" at top
+|Water-Winter Wonderland
+|''AB''-1234
+|County-coded
+|Issued in the colors of the University of Michigan, in honor of its sesquicentennial.
+|-
+|[[File:Michigan 1968 KA-5014.jpg|150px]]
+|1968
+|Yellow on green; "19 MICHIGAN 68" at top
+|Great Lake State
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Michigan 1969 License Plate.JPG|150px]]
+|1969
+|White on red; "19 MICHIGAN 69" at top
+|Great Lake State
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Michigan 1970 CSH-191.jpg|150px]]
+|1970
+|White on light gold; "19 MICHIGAN 70" at top
+|Great Lake State
+|ABC-123
+|BBB-000 to approximately NGS-999
+|Issued in the colors of [[Oakland University]], which became independent from Michigan State University in 1970. Vowels and Q not used in serials; this practice continued until 1983.<ref name="allaboutlicenseplatesMI"/>
+|}
+
+==== County coding ====
+Michigan used two-letter county codes from 1940 to 1969, after using county coding blocks from 1933 to 1939. The letters I, O and Q were not used in these codes.
+
+{| class="wikitable collapsible collapsed sortable"
+|-
+!County
+!1942–1943<ref>{{cite news |date=November 27, 1941 |title=License plate letters explained |publisher=Hastings Banner |ref=Hastings, Michigan}}</ref>!!1955–61!!1962–64!!1965–69
+|-
+| [[Wayne County, Michigan|Wayne]] 
+| AA-DZ|| AA–FZ || AA–FZ || AA–FZ
+|-
+| [[Oakland County, Michigan|Oakland]] 
+| EA-EN|| GA–HH || GA–HZ || GA–HZ
+|-
+| [[Washtenaw County, Michigan|Washtenaw]] 
+| JU-JZ|| HJ–HU || NA–NL || NA–NL
+|-
+| [[Allegan County, Michigan|Allegan]] 
+| LY-LZ|| HV–HZ || NM–NR || NM–NR
+|-
+| [[Kent County, Michigan|Kent]] 
+| FA-FK|| JA–JZ || JA–JZ || JA–JZ
+|-
+| [[Genesee County, Michigan|Genesee]] 
+| GA-GK|| KA–KZ || KA–KZ || KA–KZ
+|-
+| [[Ingham County, Michigan|Ingham]] 
+| HA-HH|| LA–LN || LA–LN || LA–LN
+|-
+| [[Saginaw County, Michigan|Saginaw]] 
+| HS-HX|| LP–LZ || LP–LZ || LP–LZ
+|-
+| [[Macomb County, Michigan|Macomb]] 
+| HJ-HH|| MA–MT || MA–MZ || MA–MZ
+|-
+| [[Shiawassee County, Michigan|Shiawassee]] 
+| LJ-LL|| MU–MZ || NS–NV || NS–NV
+|-
+| [[Kalamazoo County, Michigan|Kalamazoo]] 
+| JG-JM|| NA–NJ || PA–PL || PA–PL
+|-
+| [[Calhoun County, Michigan|Calhoun]] 
+| JA-JF|| NK–NT || PM–PW || PM–PW
+|-
+| [[Ottawa County, Michigan|Ottawa]] 
+| KS-KV|| NU–NZ || RL–RS || RL–RS
+|-
+| [[Berrien County, Michigan|Berrien]] 
+| JN-JT|| PA–PJ || RA–RK || RA–RK
+|-
+| [[St. Clair County, Michigan|St. Clair]] 
+| KL-KR|| PK–PS || RT–RZ || RT–RZ
+|-
+| [[Tuscola County, Michigan|Tuscola]] 
+| LS-LT|| PT–PW || TL–TN || TL–TN
+|-
+| [[Barry County, Michigan|Barry]] 
+| NV-NW|| PX–PZ || TP–TR || TP–TR
+|-
+| [[Muskegon County, Michigan|Muskegon]] 
+| KF-KK|| RA–RJ || TA–TK || TA–TK
+|-
+| [[Bay County, Michigan|Bay]] 
+| KW-KZ|| RK–RS || UA–UG || XA–XG
+|-
+| [[Monroe County, Michigan|Monroe]] 
+| LE-LH|| RT–RZ || UH–UP || XH–XP
+|-
+| [[Jackson County, Michigan|Jackson]] 
+| KA-KE|| SA–SH || SA–SJ || SA–SJ
+|-
+| [[Ionia County, Michigan|Ionia]] 
+| LW-LX|| SJ–SM || SK–SM || SK–SM
+|-
+| [[Van Buren County, Michigan|Van Buren]] 
+| LU-LV|| SN–SS || SN–SS || SN–SS
+|-
+| [[St. Joseph County, Michigan|St. Joseph]] 
+| LM-LN|| ST–SW || ST–SV || ST–SV
+|-
+| [[Alpena County, Michigan|Alpena]] 
+| PC-PD|| SX–SZ || SW–SX || SW–SX
+|-
+| [[Eaton County, Michigan|Eaton]] 
+| MN-MP|| TA–TD || PX–PZ || PX–PZ
+|-
+| [[Sanilac County, Michigan|Sanilac]] 
+| MT-MU|| TE–TH || SY–SZ || SY–SZ
+|-
+| [[Montcalm County, Michigan|Montcalm]] 
+| MA-MB|| TJ–TM || TV–TX || TV–TX
+|-
+| [[Lapeer County, Michigan|Lapeer]] 
+| MC-MD|| TN–TP || TY–TZ || TY–TZ
+|-
+| [[Huron County, Michigan|Huron]] 
+| ME-MF|| TT–TU || TS–TU || TS–TU
+|-
+| [[Manistee County, Michigan|Manistee]] 
+| PG-PH|| TX–TY || NY–NZ || NY–NZ
+|-
+| [[Gratiot County, Michigan|Gratiot]] 
+| MG-MH|| UA–UB || VE–VG || VE–VG
+|-
+| [[Hillsdale County, Michigan|Hillsdale]] 
+| MJ-MK|| UE–UF || VH–VK || VH–VK
+|-
+| [[Clinton County, Michigan|Clinton]] 
+| NL-NM|| UJ–UK || VL–VN || VL–VN
+|-
+| [[Lenawee County, Michigan|Lenawee]] 
+| LA-LD|| UN–UR || UR–UV || YA–YE
+|-
+| [[Grand Traverse County, Michigan|Grand Traverse]] 
+| NA-NB|| UU–UV || UW–UY || XR–XT
+|-
+| [[Charlevoix County, Michigan|Charlevoix]] 
+| PW-PX|| UY || UZ || XZ
+|-
+| [[Midland County, Michigan|Midland]] 
+| MR-MS|| VA–VC || VA–VD || VA–VD
+|-
+| [[Branch County, Michigan|Branch]] 
+| MV-MW|| VF–VG || VP–VS || VP–VS
+|-
+| [[Livingston County, Michigan|Livingston]] 
+| NC-ND|| VK–VL || VT–VV || VT–VV
+|-
+| [[Cass County, Michigan|Cass]] 
+| NJ-NK|| VP–VR || NW–NX || NW–NX
+|-
+| [[Newaygo County, Michigan|Newaygo]] 
+| NR-NS|| VU–VV || VW–VX || VW–VX
+|-
+| [[Isabella County, Michigan|Isabella]] 
+| NN-NP|| VX–VZ || VY–VZ || VY–VZ
+|-
+| [[Mason County, Michigan|Mason]] 
+| PA-PB|| WA–WC || WA–WB || WA–WB
+|-
+| [[Mecosta County, Michigan|Mecosta]] 
+| PL-PM|| WD–WE || WC–WD || WC–WD
+|-
+| [[Wexford County, Michigan|Wexford]] 
+| PE-PF|| WF–WG || WE–WF || WE–WF
+|-
+| [[Oceana County, Michigan|Oceana]] 
+| PS-PT|| WH || WG || WG
+|-
+| [[Emmet County, Michigan|Emmet]] 
+| PN-PR|| WK || WH || WH
+|-
+| [[Osceola County, Michigan|Osceola]] 
+| PU-PV|| WM || WJ || WJ
+|-
+| [[Cheboygan County, Michigan|Cheboygan]] 
+| RA-RB|| WP || WK || WK
+|-
+| [[Clare County, Michigan|Clare]] 
+| PY-PZ|| WS || WL || WL
+|-
+| [[Presque Isle County, Michigan|Presque Isle]] 
+| RC-RD|| WU || WM || WM
+|-
+| [[Arenac County, Michigan|Arenac]] 
+| RE-RF|| WW || WN || WN
+|-
+| [[Ogemaw County, Michigan|Ogemaw]] 
+| RG-RH|| WY || WP || WP
+|-
+| [[Gladwin County, Michigan|Gladwin]] 
+| RL-RM|| XA || WR || WR
+|-
+| [[Iosco County, Michigan|Iosco]] 
+| RR-RS|| XC || WS || WS
+|-
+| [[Benzie County, Michigan|Benzie]] 
+| RV-RW|| XE || WT || WT
+|-
+| [[Missaukee County, Michigan|Missaukee]] 
+| SD-SE|| XG || WU || WU
+|-
+| [[Otsego County, Michigan|Otsego]] 
+| SH-SJ|| XJ || WV || WV
+|-
+| [[Leelanau County, Michigan|Leelanau]] 
+| SK-SL|| XL || WW || WW
+|-
+| [[Kalkaska County, Michigan|Kalkaska]] 
+| SM-SN|| XN || WX || WX
+|-
+| [[Roscommon County, Michigan|Roscommon]] 
+| SU-SV|| XR || WY || WY
+|-
+| [[Alcona County, Michigan|Alcona]] 
+| SP-SR|| XT || WZ || WZ
+|-
+| [[Antrim County, Michigan|Antrim]] 
+| SA-SC|| XU || XA || XU
+|-
+| [[Lake County, Michigan|Lake]] 
+| SW-SX|| XV || XB || XV
+|-
+| [[Crawford County, Michigan|Crawford]] 
+| || XW || XC || XW
+|-
+| [[Montmorency County, Michigan|Montmorency]] 
+| SY-SZ|| XX || XD || XX
+|-
+| [[Oscoda County, Michigan|Oscoda]] 
+| TC-TD|| XY || XE || XY
+|-
+| [[Marquette County, Michigan|Marquette]] 
+| LP-LR|| YA–YC || XF–XJ || UA–UC
+|-
+| [[Houghton County, Michigan|Houghton]] 
+| ME-MF|| YE–YH || XK–XL || UD–UE
+|-
+| [[Delta County, Michigan|Delta]] 
+| MX-MY|| YJ–YK || XM–XN || UF–UG
+|-
+| [[Dickinson County, Michigan|Dickinson]] 
+| NG-NH|| YN–YP || XP–XR || UH–UJ
+|-
+| [[Iron County, Michigan|Iron]] 
+| PJ-PK|| YT–YU || XS–XT || UK
+|-
+| [[Chippewa County, Michigan|Chippewa]] 
+| NT-NU|| YW–YX || XU–XV || UL–UM
+|-
+| [[Menominee County, Michigan|Menominee]] 
+| NX-NY|| ZA–ZB || XW–XX || UN–UP
+|-
+| [[Gogebic County, Michigan|Gogebic]] 
+| NE-NF|| ZE–ZF || XY–XZ || UR–US
+|-
+| [[Schoolcraft County, Michigan|Schoolcraft]] 
+| RJ-RK|| ZJ || YA || UT
+|-
+| [[Ontonagon County, Michigan|Ontonagon]] 
+| RN-RP|| ZL || YB || UU
+|-
+| [[Alger County, Michigan|Alger]] 
+| RT-RU|| ZN || YC || UV
+|-
+| [[Baraga County, Michigan|Baraga]] 
+| RX-RY|| ZR || YD || UW
+|-
+| [[Luce County, Michigan|Luce]] 
+| SF-SG|| ZT || YE || UX
+|-
+| [[Mackinac County, Michigan|Mackinac]] 
+| SS-ST|| ZV || YF || UY
+|-
+| [[Keweenaw County, Michigan|Keweenaw]] 
+| TE-TF|| ZX || YG || UZ
+|}
+
+===1971 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Michigan 1971 BGP-188.jpg|150px]]
+|1971–72
+|Embossed reflective (glass-beaded) white serial on maroon plate with border line; "19 MICHIGAN 71" at top.
+|"GREAT LAKE STATE" centered at bottom
+|ABC-123
+|BBB-000 to approximately RMH-999
+|Plates available by mail for the first time. Revalidated for 1972 with stickers.
+|-
+|[[File:Michigan 1973 TTV-605.jpg|150px]]
+|{{nowrap|1973–75}}
+|Embossed reflective (glass-beaded) white serial on dark blue plate with border line; "19 MICHIGAN 73" at top.
+|"GREAT LAKE STATE" centered at bottom
+|ABC-123
+|BBB-000 to approximately VRM-999
+|Personalized and disabled plates available for the first time. Some aluminum plates issued. Revalidated for 1974 and 1975 with stickers.
+|-
+|[[File:1976 Michigan License Plate.jpg|150px]]
+|1976–78
+|Embossed reflective (glass-beaded) white serial on red and dark blue plate with border line; two embossed flag stripes at bottom and four embossed stars at left; "MICHIGAN" centered at top.
+|''none''
+|ABC123
+|BBB000 to approximately XSD999
+|Commemorated the US Bicentennial. All plates issued were aluminum. Awarded "Plate of the Year" for best new license plate of 1976 by the [[Automobile License Plate Collectors Association]], the first time Michigan was so honored.<ref name=best/><ref name=":6" /> Revalidated for 1977 and 1978 with stickers.
+|-
+|[[File:Michigan 1979 SVR-132.jpg|150px]]
+|1979–82
+|rowspan="2"|Embossed reflective (glass-beaded) white serial on black plate with border line; "19 MICHIGAN 79" at top.
+|rowspan="2"|"GREAT LAKE STATE" centered at bottom
+|ABC-123
+|BBB-000 to ZZZ-999
+|Serials BBB-000 through NVM-999 were issued by county.<ref name="allaboutlicenseplatesMI"/><ref name="BPR">{{cite web |last=Reback |first=Brian P. |title=Michigan - county codes |url=http://www.bprlicenseplates.com/Michigan%20-%20county%20codes.htm |publisher=BPRlicenseplates.com |date=December 29, 2010 |archive-url=https://web.archive.org/web/20141006194322/http://www.bprlicenseplates.com/Michigan%20-%20county%20codes.htm |archive-date=October 6, 2014 |access-date=October 4, 2014}}</ref> Front and rear plates issued until April 1, 1981; only rear plates have been issued ever since.
+|-
+|[[File:1983 Michigan License Plate.JPG|150px]]
+|1982–83
+|123-ABC
+|999-ZZZ to approximately 000-ZMD
+|Serials progressed backwards. Last plate to require both front and rear plates.<ref name=":6">{{Cite web |date= |title=Legacy plate options |url=https://www.michigan.gov/sos/vehicle/license-plates/legacy-plate-options |url-status=live |archive-url=https://web.archive.org/web/20250202182627/https://www.michigan.gov/sos/vehicle/license-plates/legacy-plate-options |archive-date=2025-02-02 |access-date=2025-02-17 |website=[[Michigan Secretary of State]]}}</ref>
+|-
+|[[File:Michigan license plate, April 1985.png|150px]]
+|1983–90
+|rowspan="5"|Embossed reflective (glass-beaded) white serial on blue plate; "MICHIGAN" centered at top.
+|rowspan="5"|"GREAT LAKES" centered at bottom
+|123 ABC
+|000 AAA to 999&nbsp;ZZZ
+|All variants of this base revalidated with stickers until 2007. Letters I and O not used in serials; this practice continues today.
+|-
+|[[File:Michigan license plate, 1990–2001 with June 1999 sticker.png|150px]]
+|1990–2001
+|rowspan="2"|ABC 123
+|AAA 000 to UDT&nbsp;999
+|
+|-
+|[[File:Michigan 2005 plate.jpg|150px]]
+|2001–04
+|UDU 000 to ZZZ&nbsp;999
+|Narrow serial [[Die (manufacturing)|die]]s introduced.
+|-
+|[[File:Michigan 2007 License Plate AAZ1297.jpg|150px]]
+|2004–06
+|ABC1234
+|AAA0000 to AFP8999
+|
+|-
+|[[File:Michigan License Plate AHV 5920.JPG|150px]]
+|2006–07
+|ABC&nbsp;1234
+|AFP&nbsp;9000 to AJX&nbsp;1999
+|Narrower serial dies introduced and space added between letters and digits. Last Michigan plate to use glass beads the white coating for reflectivity.<ref name=":6" /> All unissued plates scrapped in January 2007.
+|-
+|[[File:Michigan license plate 2008.jpg|150px]]
+|January 1, 2007–<br>April<br>2013
+|Embossed blue serial on reflective white plate; blue band screened at top with "MICHIGAN" in white in the center.
+|"www.Michigan.gov" screened in blue centered at bottom
+|ABC&nbsp;1234
+|BAA&nbsp;0000 to approximately CPS&nbsp;0999
+|First standard baseplate reissue since 1983. Revalidated with stickers until 2023.<ref name="michigan.gov" />
+|-
+|[[File:2017 Michigan state license plate, DNJ-0955.jpg|150px]]
+|April<br>2013–present
+|Embossed blue serial on reflective white plate; wavy blue band screened at bottom; screened blue [[Pure Michigan]] logo centered at top.
+|"michigan.org" screened in white in center of wavy blue band
+|ABC&nbsp;1234
+|DAA&nbsp;0000 to ~FAZ&nbsp;9999 {{small|(as of January 2026)}}
+|
+|}
+
+==Optional plates==
+{|class="wikitable"
+|-
+!Image
+!Slogan
+!Dates issued
+!Design
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|rowspan="2"|[[File:Michigan 2007 World's Motor Capital License Plate.jpg|150px]]
+| rowspan="2" |World's Motor Capital
+| rowspan="2" |1996
+|rowspan="2"|Blue serial on background featuring the seal of the American Automobile Centennial Commission and a gold silhouette of an antique automobile outlined in red.
+|ABC 12
+|AAA&nbsp;00 to ZZZ&nbsp;99
+|rowspan="2"|Validated with sticker until 2015 expiration.<ref name="michigan.gov">{{cite web |title=Plate Order/Replacement |url=https://www.michigan.gov/sos/all-services/plate-order-and-replacement |access-date=March 7, 2025 |publisher=Michigan Secretary of State}}</ref> Serials may be transferred to a new design for an additional fee.
+|-
+|12 ABC
+|00&nbsp;AAA to approximately 99&nbsp;LPZ
+|-
+| [[File:Michigan Great Lakes Splendor license plate.jpg|150x150px]]
+|Great Lakes Splendor
+|1997–December 31, 2006
+|Blue serial on background featuring a sunset and the [[Mackinac Bridge]].
+|1AB&nbsp;C23
+|0AA&nbsp;A00 to approximately 0GR&nbsp;A99
+|Validated with sticker until 2017 expiration.<ref name="michigan.gov"/>
+|-
+| 
+|Spectacular Peninsulas
+|January 1, 2007 – December 1, 2021
+|Black serial on background featuring buildings from the skylines of Detroit, [[Grand Rapids, Michigan|Grand Rapids]], [[Lansing, Michigan|Lansing]], and [[Flint, Michigan|Flint]], the forests of Michigan, all five [[Great Lakes]], and the Mackinac Bridge.
+|1AB&nbsp;C23
+|0HA&nbsp;A00 to approximately 9NB&nbsp;L92
+|Replaced the Great Lakes Splendor plate, using the same serial format. Being replaced on a rolling 10-year replacement cycle. 
+|-
+| 
+| rowspan="2" |The Mackinac Bridge
+|{{nowrap|August 29, 2013–October 12, 2014}}
+|Embossed white serial on sunrise scene featuring the Mackinac Bridge, with gradient orange sky and light blue water; screened white rectangle centered at top containing [[Pure Michigan]] logo.
+| rowspan="2" |ABC&nbsp;123
+|AAA&nbsp;000 to approximately AJG&nbsp;999
+|Awarded "Plate of the Year" for best new license plate of 2013 by the Automobile License Plate Collectors Association, the second time Michigan was so honored.<ref name=best>{{cite news |last=Smith |first=Jay Scott |date=March 31, 2014 |title=Mackinac Bridge license plate designed by Lansing native wins annual 'world's best' award |url=http://www.mlive.com/lansing-news/index.ssf/2014/03/mackinac_license_plate_designe.html |work=MLive |publisher=[[Booth Newspapers]] |access-date=July 9, 2014}}</ref> Validated with sticker until 2024 expiration<ref name="michigan.gov" />
+|-
+| 
+|October 13, 2014–present
+|Embossed black serial on sunrise scene featuring the Mackinac Bridge, with gradient orange and white sky and light blue water; screened Pure Michigan logo centered at top.
+|AJH&nbsp;000 to ETA&nbsp;999 {{small|(as of January 2026)}}
+|Revision of the original Mackinac Bridge base for better visibility.
+|-
+|[[File:Michigan Wonderland Revival License Plate.jpg|150x150px]]
+|Water-Winter Wonderland
+|December 2, 2021–present
+|Embossed yellow serial on dark blue plate; screened yellow Michigan at top.
+|1ABC23
+|0NBM00 to 9RBZ99 {{small|(as of January 2026)}}
+|Reintroduced in 2021 as an homage to the original 1965 Water-Winter Wonderland plate.<ref>{{Cite web|last=Huschka|first=Amy|title=Secretary of State Jocelyn Benson brings back popular Michigan license plate|url=https://www.freep.com/story/news/local/michigan/2021/12/02/michigan-license-plate-water-winter-wonderland/8838020002/|access-date=2021-12-14|website=Detroit Free Press|language=en-US}}</ref> Continues serial range from Spectacular Peninsulas series, with increment from second character. Renewal tab is placed in the lower right corner.<ref>{{Cite web|title=SOS - Water-Winter Wonderland Plate|url=https://www.michigan.gov/sos/0,4670,7-127-96435_1595_1607-573184--,00.html|access-date=2021-12-14|website=www.michigan.gov}}</ref>
+|-
+|[[File:Green "Water Wonderland" Michigan license plate.png|150x150px]]
+|Water Wonderland
+|January 27, 2024–present
+|Embossed white serial on green plate; screened Pure Michigan logo in white at top.
+|12ABC3
+|00AAA0 to 99APM9 {{small|(as of January 2026)}}
+|Reintroduced in 2024 as an homage to the original 1963 Water Wonderland plate.<ref>{{Cite web |last=James |first=Janelle |date=December 21, 2023 |title=Green 'Water Wonderland' license plates to return in Michigan |url=https://www.bridgemi.com/michigan-government/green-water-wonderland-license-plates-return-michigan |access-date=February 13, 2024 |website=Bridge Michigan}}</ref> Serial characters are not reflective.
+|-
+|[[File:Michigan Great Lake State License Plate.jpg|150px]]
+|Great Lake State
+|February 1, 2025–present
+|Embossed white serial on black plate;" GREAT LAKE STATE" centered at bottom.
+|AB1CDE
+|AA0AAA to AA9GMZ {{small|(as of January 9, 2026)}}
+|Reintroduced in 2025 as an homage to the original 1979 plate.<ref name=":6" /> Renewal tab is placed in the lower right corner.
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|Great Lakes
+|February 1, 2025–present
+|Embossed white serial on blue plate; "GREAT LAKES" centered at bottom.
+| rowspan="2" |ABC12D
+|AAA00A to AAB99L {{small|(as of January 9, 2026)}}
+|Reintroduced in 2025 as an homage to the original 1983 plate.<ref name=":6" /> Renewal tab is placed in the lower right corner.
+|-
+|[[File:Red Semiquincentennial Plate.png]]
+|Semiquincentennial
+|January 2, 2026 – December 31, 2026
+|Embossed white serial on red and blue plate; two flag stripes at bottom and four stars above 26 at left; “MICHIGAN” centered at top.
+|~AAB01T to AAC75D {{small|(as of February 2, 2026)}}
+|Reintroduced in 2026 as an homage to the original 1976 plate.<ref>{{Cite web |last=James |first=Janelle D. |date=2025-12-16 |title=Michigan’s red, white and blue retro license plate returns next month |url=https://bridgemi.com/quality-life/michigans-red-white-and-blue-retro-license-plate-returns-next-month/ |access-date=2026-01-08 |website=BridgeDetroit |language=en-US}}</ref> Renewal tab is placed in the lower right corner. Only available for 2026.<ref>{{Cite web |title=Secretary Benson announces revival of iconic red, white, and blue license plate to commemorate America’s 250th anniversary |url=https://www.michigan.gov/sos/resources/news/2025/12/11/secretary-benson-announces-revival-of-iconic-red-white-and-blue-license-plate |archive-url=https://web.archive.org/web/20251214021406/https://www.michigan.gov/sos/resources/news/2025/12/11/secretary-benson-announces-revival-of-iconic-red-white-and-blue-license-plate |archive-date=2025-12-14 |access-date=2026-01-08 |website=www.michigan.gov |language=en}}</ref>
+|}
+
+== Disability plates ==
+{| class="wikitable"
+!Image
+!Base
+!Dates Issued
+!Serial format
+![[International Symbol of Access|Symbol of Access]]
+! style="width:95px;" |Serials issued
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|2007 passenger
+|January 1, 2007–April 2013
+|1234A5
+| rowspan="4" |Embossed at left
+|0000E0 to approximately 9149G9
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Spectacular Peninsulas
+|January 1, 2007 – December 1, 2021
+|1A2345
+|0J0000 to 1K7937
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Pure Michigan 
+|April 2013–present
+|1234A5
+|0000J0 to 2468M9 {{small|(as of June 2023)}}
+|-
+| 
+|Mackinac Bridge
+|October 13, 2014–present
+|A1234
+|A7708 to approximately M2662 {{small|(as of October 2024)}}
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Water-Winter Wonderland
+|December 2, 2021–present
+|1'''K'''2345
+| rowspan="4" |Screened at bottom left
+|2K0000 to 4K6063 {{small|(as of June 2023)}}
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Water Wonderland
+|January 27, 2024–present
+|12'''E'''345
+|00E000 to 00E400 {{small|(as of July 2024)}}
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Great Lake State
+|February 1, 2025–present
+|'''C'''B1CDE
+|CA0AAA to CA9ABP {{small|(as of September 6, 2025)}}
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Great Lakes
+|February 1, 2025–present
+|'''C'''BC12D
+|CAA00A to CAA40A {{small|(as of September 6, 2025)}}
+|}
+
+== Non-passenger plates ==
+{| class="wikitable"
+!Image
+!Type
+!Base
+!Distinguishing features
+!Serial format
+! style="width:100px;" |Serials issued
+!Notes
+|-
+|[[File:Michigan 2007-2013 State Gov't License Plate.jpg|150x150px]]
+| rowspan="2" |State Government
+|2007 passenger
+| rowspan="2" |"STATE GOVT" screened at bottom
+| rowspan="2" |123456
+1234567
+| rowspan="2" |
+| rowspan="2" |used on state-owned vehicles, except State Police
+|-
+|[[File:Michigan 2013-present State Gov't License Plate.jpg|150x150px]]
+|Pure Michigan without wave
+|-
+|[[File:Michigan State Police License Plate.jpg|150x150px]]
+|State Police
+|Pure Michigan passenger
+|Black serial; [[Michigan State Police]] emblem to left of serial
+|State Police fleet number
+|
+|Front and rear plates on blue marked patrol vehicles; first digit usually corresponds to MSP district number or special division; number usually also painted on top of vehicle
+|-
+|[[File:Michigan Commercial License Plate (2007).jpg|150x150px]]
+| rowspan="4" |Commercial
+|2007 passenger
+| rowspan="4" |Identical to passenger plate; distinguished only by serial format
+|'''C'''A 12345
+|CA'''&nbsp;'''00000 to CF'''&nbsp;'''13999
+|
+|-
+|[[File:Michigan Commercial License Plate (2023).jpg|150x150px]]
+|Pure Michigan passenger
+|'''D'''A 12345
+|DA'''&nbsp;'''00000 to ~DF'''&nbsp;'''94791 {{small|(as of March 2025)}}
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|2013 Mackinac Bridge
+|'''AA''' 1234
+|from AA'''&nbsp;'''0000
+|
+|-
+|[[File:Michigan Mackinac Bridge Commercial License Plate.jpg|150x150px]]
+|2014 Mackinac Bridge
+|'''A'''A 1234
+|through ~AD'''&nbsp;'''8021 {{small|(as of August 2024)}}
+|
+|-
+|[[File:Michigan Dealer License Plate.jpg|150x150px]]
+|Dealer
+|Pure Michigan without wave
+|"DEALER" screened at bottom
+|123&nbsp;'''D&nbsp;'''45<br>12&nbsp;'''D&nbsp;'''345<br>123&nbsp;'''D&nbsp;'''456<br>
+|000&nbsp;D&nbsp;000 to 077&nbsp;D&nbsp;999 {{small|(as of May 2026)}}
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="3" |Historical
+|
+|Maize on dark blue, "HISTORICAL VEHICLE" embossed below.
+|123 456
+|000 000 to approximately 077 633
+| rowspan="3" |Issued to vehicles that are at least 26 years old. Must be replaced after each 10-year renewal cycle.
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|2007 passenger
+|2007—2013 passenger base with "HISTORICAL" at bottom
+| rowspan="2" |123456
+|078000 to 228983
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|
+|Pure Michigan logo at top, "HISTORICAL" at bottom
+|300000 to 382808 {{small|(as of July 2023)}}
+|-
+|[[File:Michigan In-Transit Repair License Plate.jpg|150x150px]]
+|In-Transit Repair
+|Pure Michigan without wave
+|"IN-TRANSIT REPAIR" screened at bottom
+|12'''G'''345
+123'''G'''456
+|
+|
+|-
+|[[File:Michigan Manufacturer License Plate.jpg|150x150px]]
+|Manufacturer
+|Pure Michigan without wave
+|"MANUFACTURER" screened at bottom
+|123'''M'''456
+|
+|
+|-
+|[[File:Michigan Municipal License Plate.jpg|150x150px]]
+| rowspan="2" |Municipal
+|2007 passenger
+| rowspan="2" |
+| rowspan="2" |123&nbsp;'''X&nbsp;'''456
+|000'''&nbsp;'''X'''&nbsp;'''000 to 129'''&nbsp;'''X'''&nbsp;'''999
+| rowspan="2" |used on almost all government-owned vehicles (including police), except county sheriff's departments and State of Michigan-owned vehicles; was the last plate to use the 2007 base until it was updated in 2024.
+|-
+|[[File:New Michigan Municipal License Plate.jpg|150x150px]]
+|Pure Michigan without wave
+|130'''&nbsp;'''X'''&nbsp;'''000 to ~136'''&nbsp;'''X'''&nbsp;'''999 {{small|(as of January 2026)}}
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |Tribal Government
+|2007 passenger
+| rowspan="2" |"TRIBAL GOVERNMENT" screened at bottom
+|'''900'''&nbsp;'''X&nbsp;'''456
+|
+| rowspan="2" |
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Pure Michigan without wave
+|'''901'''&nbsp;'''X&nbsp;'''456
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |Nonprofit
+|2007 passenger
+| rowspan="2" |"NONPROFIT" screened at bottom
+| rowspan="2" |123&nbsp;'''Y&nbsp;'''456
+|
+| rowspan="2" |Offered to non-profit organizations (including private schools) for a low fee. 5-year renewal cycle.
+|-
+|[[File:Michigan Nonprofit License Plate.jpg|150x150px]]
+|Pure Michigan without wave
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Repossession
+|Pure Michigan without wave
+|"REPOSSESSION" screened at bottom
+|123'''R'''456
+|
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Special Equipment
+|Pure Michigan without wave
+|"SPECIAL EQUIPMENT" screened at bottom
+|123'''S'''456
+|
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Special Farm
+|Pure Michigan without wave
+|"SPECIAL FARM" screened at bottom
+|123'''F'''456
+|011F000 to 018F012 (As of March 24, 2024)
+|
+|-
+|[[File:Michigan Transporter License Plate.jpg|150x150px]]
+|Transporter
+|Pure Michigan without wave
+|"TRANSPORTER" screened at bottom
+|123'''T'''456
+|
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |Fleet
+|2007 passenger
+|2007–2013 passenger base, "FLEET" at bottom
+| rowspan="2" |'''PF'''&nbsp;12345
+|
+| rowspan="2" |Usually used on utility service trucks & [[United Parcel Service|UPS]] trucks.
+|-
+|[[File:Michigan Fleet (PF) License Plate.jpg|150x150px]]
+|Pure Michigan without wave
+| rowspan="2" |Pure Michigan logo at top, "FLEET" at bottom
+|through PF&nbsp;19849 {{small|(as of October 2024)}}
+|-
+|[[File:Michigan Fleet (RF) License Plate.jpg|150x150px]]
+|Rental Fleet
+|Pure Michigan without wave
+|12345&nbsp;'''RF'''
+|00000&nbsp;RF to 13700&nbsp;RF {{small|(as of June 2024)}}
+|Used on [[Car rental|rental vehicles]].
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |Apportioned
+|2007 passenger
+|2007–2013 passenger base with "APPORTIONED" at bottom
+| rowspan="2" |'''R'''A&nbsp;12345
+|RA&nbsp;00000 to ~RA&nbsp;92999
+| rowspan="2" |often used on commercial trucks & motorcoaches
+|-
+|[[File:Michigan Apportioned License Plate.jpg|150x150px]]
+|Pure Michigan without wave
+|Pure Michigan logo at top, "APPORTIONED" at bottom
+|RB&nbsp;00000 to RC&nbsp;27961 {{small|(as of July 2023)}}
+|-
+|[[File:Michigan Truck License Plates.jpg|150x150px]]
+|Truck
+| rowspan="3" |Pure Michigan without wave
+|Pure Michigan logo at top, weight class sticker at bottom
+| rowspan="3" |AB12345
+| rowspan="3" |BA00000 to BE05253 {{small|(as of November 2024)}}
+|front and rear plates on tractor-trailers
+|-
+|[[File:Michigan Wrecker Truck License Plate.jpg|150x150px]]
+|Wrecker
+|Pure Michigan logo at top, "WRECKER" sticker at bottom
+|used on tow trucks
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Farm
+|Pure Michigan logo at top, "FARM" at bottom
+|
+|-
+|[[File:Michigan 2007-2013 Trailer License Plate (1).jpg|150x150px]]
+| rowspan="2" |Trailer
+|2007 passenger
+|2007–2013 passenger base; "PERMANENT TRAILER" screened at bottom
+| rowspan="2" |A123456
+|
+|
+|-
+|[[File:Michigan Trailer License Plate.jpg|150x150px]]
+|Pure Michigan without wave
+|Pure Michigan logo at top, "PERMANENT TRAILER" screened at bottom
+|D000000 to F134612 {{small|(as of October 2024)}}
+|-
+|[[File:Michigan 2007 Sheriff License Plate.jpg|150x150px]]
+| rowspan="3" |Sheriff's Department
+|2007 passenger
+| rowspan="2" |Black serial; "SHERIFF" screened in gold at bottom; Michigan Sheriffs' Association emblem in center
+| rowspan="2" |12&nbsp;345
+| rowspan="3" |
+| rowspan="3" |First two digits county coded alphabetically; for example, the [[Oakland County Sheriff's Office]] is assigned "63" as "[[Oakland County, Michigan|Oakland]]" falls 63rd in an alphabetical list of Michigan counties
+|-
+|[[File:Pure Michigan Sheriff License Plate 01.jpg|150x150px]]
+|Pure Michigan without wave
+|-
+|[[File:AntrimSheriffExp16 (2).jpg|150x150px]]
+|Black
+|"SHERIFF" embossed at bottom
+|12🟌345
+|}
+
+==Special plates==
+
+=== Organizations ===
+Special plates are available to members of certain groups. Each is currently made with the Pure Michigan base, with an emblem to the serial's left, and a 5-character serial format.
+{| class="wikitable"
+!Image
+!Group
+!Emblem
+!Serial format
+!Notes
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Amateur radio operator]]s
+|Radio tower
+|''FCC call sign''
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Fraternal Order of Police]]
+|FOP emblem
+| rowspan="5" |1AB23
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Freemasonry|Freemasons]]
+|[[Square and Compasses]]
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[International Association of Fire Fighters|Michigan Professional Fire Fighters Union]]
+|MPFFU emblem
+|"Professional Fire Fighter" at bottom
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Michigan State Firemen's Association
+|MSFA emblem
+|"Firefighter" at bottom
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Police Officers' Association of Michigan
+|POAM emblem
+|"The Choice of Professionals" at bottom
+|}
+
+=== University fundraising ===
+Since September 2000, special plates have been offered to raise funds for each of [[List of colleges and universities in Michigan|Michigan's 15 public universities]].<ref name=":0">{{Cite web |date=2018-05-15 |title=Warrior Strong license plates now available |url=https://today.wayne.edu//news/2018/01/10/warrior-strong-license-plates-now-available-6627 |access-date=2023-12-02 |website=Today@Wayne |publisher=[[Wayne State University]] |language=en}}</ref><ref name=":1">{{Cite web |last=Gray |first=Kathleen |date=2016-05-12 |title=House votes to put limits on specialty license plates |url=https://www.freep.com/story/news/politics/2016/05/12/house-votes-put-limits-specialty-license-plates/84296018/ |access-date=2023-12-02 |website=[[Detroit Free Press]] |language=en-US |via=[[Gannett]]}}</ref> Each uses the Pure Michigan baseplate with the college's name at the bottom and the university's logo to the serial's left, and all share the same serial format and range.
+{| class="wikitable"
+!Image
+!University
+!Emblem
+!Serial format
+!Notes
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Central Michigan University]]
+|"Block C" logo
+| rowspan="17" |AB12C
+(A12BC for certain mail-in orders)
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Eastern Michigan University]]
+|"Block E" logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Ferris State University]]
+|Bulldogs logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Grand Valley State University]]
+|"Block GV" logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Lake Superior State University]]
+|Anchor logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |[[Michigan State University]]
+|"Block S" logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|"Sparty" emblem
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Michigan Technological University]]
+|"1885" logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Northern Michigan University]]
+|Wildcats logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Oakland University]]
+|Golden Grizzly logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Saginaw Valley State University]]
+|Cardinal logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[University of Michigan]]
+|"Block M" logo
+|Bottom reads "GO BLUE" rather than "University of Michigan"
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[University of Michigan–Dearborn|University of Michigan-Dearborn]]
+|"Block M" UM-Dearborn logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[University of Michigan–Flint|University of Michigan-Flint]]
+|"Block M" UM-Flint logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |[[Wayne State University]]
+|"W" logo
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|"W" shield logo
+|Introduced in 2018<ref name=":0" />
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Western Michigan University]]
+|Circle "W" logo
+|
+|}
+
+=== Special cause fundraising ===
+Special plates have been offered since 2001 to raise funds for certain charitable causes.<ref name=":1" /> State law limits the number of fundraising plates (excluding universities) available at one time to 20, and 14 are currently in production.<ref name=":2">{{Cite web |last=Orner |first=Ben |date=2023-11-27 |title=Eight new Michigan license plates are in the works |url=https://www.mlive.com/public-interest/2023/11/eight-new-michigan-license-plates-are-in-the-works.html |access-date=2023-12-02 |website=[[MLive]] |language=en}}</ref> Each is currently made with the Pure Michigan base, with an emblem to the serial's left, and a 5-character serial format; prior to 2013, they were made with the 2007-2013 passenger base.<ref name=":3">{{Cite web |title=Order your Veterans Memorial License Plate today! |url=http://www.sos.state.mi.us/frp/orderform_veterans.pdf |url-status=dead |archive-url=https://web.archive.org/web/20011127185401/http://www.sos.state.mi.us/frp/orderform_veterans.pdf |archive-date=2001-11-27 |website=[[Michigan Department of State]]}}</ref>
+{| class="wikitable"
+!Image
+!Cause
+!Emblem
+!Tagline
+!Years issued
+!Serial format
+!Notes
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Agricultural heritage
+|Barn and fields insignia
+|"Agricultural Heritage"
+|2001–present<ref>{{Cite web |title=Order your Agricultural Heritage License Plate today! |url=http://www.sos.state.mi.us/frp/orderform_agriculture.pdf |archive-url=https://web.archive.org/web/20011127185140/http://www.sos.state.mi.us/frp/orderform_agriculture.pdf |archive-date=2001-11-27 |website=[[Michigan Department of State]]}}</ref>
+| rowspan="21" |AB12C
+(A12BC for certain mail-in orders)
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Breast cancer awareness]]
+|[[Pink ribbon]]
+|"Early Detection Saves Lives"
+|2014–present<ref>{{Cite web |last= |first= |date=2014-10-06 |title=Michigan launches 'pink ribbon' license plate |url=https://nbc24.com/news/local/michigan-launches-pink-ribbon-license-plate |access-date=2023-12-03 |website=[[WNWO]] |publisher=[[Sinclair Broadcast Group]] |language=en}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |Children's Trust Fund
+|"Just Love 'Em"
+|"Children"
+|from 2001<ref>{{Cite web |title=Order your Children License Plate today! |url=http://www.sos.state.mi.us/frp/orderform_children.pdf |url-status=dead |archive-url=https://web.archive.org/web/20011130162012/http://www.sos.state.mi.us/frp/orderform_children.pdf |archive-date=2001-11-30 |website=[[Michigan Department of State]]}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Hand
+|"Children's Trust Fund"
+|until 2022
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Children Trust Michigan
+|Pinwheel
+|"Strength Through Abuse Prevention"
+|2022–present<ref>{{Cite web |date=2022-05-19 |title=New Name, Same Mission |url=https://www.youtube.com/watch?si=yRR0m4gHeM6zPTxN&v=fbrAp7_Xof0&feature=youtu.be |publisher=Children Trust Michigan |via=[[YouTube]]}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Detroit Lions]] Charities
+|Lions logo
+|"Detroit Lions"
+|2019–present<ref name=":4">{{Cite web |last=Walker |first=Micah |date=2019-04-26 |title=Detroit sports license plates unveiled: How to get one |url=https://www.freep.com/story/news/local/michigan/2019/04/16/detroit-sports-license-plate-michigan/3482613002/ |access-date=2023-12-03 |website=Detroit Free Press |language=en-US}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Detroit Pistons]] Foundation
+|Pistons logo
+|"Detroit Basketball"
+|2019–present<ref name=":4" />
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Detroit Red Wings]] Foundation
+|Red Wings logo
+|"Detroit Red Wings"
+|2019–present<ref name=":4" />
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Detroit Tigers]] Foundation
+|Tigers "English D" logo
+|"Detroit Tigers"
+|2019–present<ref name=":4" />
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Donate Life
+|Donate Life logo
+|"Be an Organ, Eye, & Tissue Donor"
+|2012–present<ref>{{Cite web |last= |first= |date=2012-03-22 |title=Michigan Gets Donate Life License Plate |url=https://giftoflifemichigan.org/blog/news-calendar-latest-news-michigan-gets-donate-life-license-plate |access-date=2023-12-03 |website=Gift of Life Michigan |language=en-US}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Ducks Unlimited]]
+|Ducks Unlimited logo
+|"Ducks Unlimited"
+|2014–present<ref>{{Cite web |date=2013-03-23 |title=Snyder OKs Michigan License Plate For Ducks Unlimited |url=https://www.cbsnews.com/detroit/news/snyder-oks-michigan-license-plate-for-ducks-unlimited/ |access-date=2023-12-03 |website=CBS News Detroit |language=en-US}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="2" |[[Lighthouse]] preservation
+|[[White Shoal Light, Michigan|White Shoal Light]]<ref>{{Cite web |date=2017-06-13 |title=State debuts redesigned lighthouse license plate |url=https://www.wlns.com/uncategorized/state-debuts-redesigned-lighthouse-license-plate/ |access-date=2023-12-03 |website=WLNS 6 News |language=en-US}}</ref>
+|"Save Our Lights"
+|2001–2017<ref>{{Cite web |title=Order your Lighthouse License Plate today! |url=http://www.sos.state.mi.us/frp/orderform_lighthouse.pdf |url-status=dead |archive-url=https://web.archive.org/web/20011127185321/http://www.sos.state.mi.us/frp/orderform_lighthouse.pdf |archive-date=2001-11-27 |website=[[Michigan Department of State]]}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Generic lighthouse insignia
+|"Protect Michigan Lighthouses"
+|2017–present<ref>{{Cite web |date=2017-06-21 |title=Michigan's lighthouse fundraising license plate gets new look |url=https://radio.wcmu.org/local-regional-news/2017-06-21/michigans-lighthouse-fundraising-license-plate-gets-new-look |access-date=2023-12-03 |website=[[WCMU-FM|WCMU]] |language=en}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Northern Michigan University#Olympic Training Site|NMU Olympic Education Center]]
+|Team USA logo
+|"Go Team USA"
+|2012–present<ref>{{Cite web |last=Oosting |first=Jonathan |date=2012-09-05 |title=Olympian Jordyn Wieber unveils new Michigan license plate to support Team USA |url=https://www.mlive.com/news/2012/09/olympian_jordyn_wieber_unveils.html |access-date=2023-12-03 |website=[[MLive]] |language=en}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[American Red Cross]] & [[The Salvation Army|Salvation Army]]
+|[[Flag of the United States|United States flag]]
+|"Proud to be an American"
+|2001–present<ref>{{Cite web |date=2001-11-19 |title=More than 10,000 patriotic license plates sold in just one month |url=http://www.sos.state.mi.us/pressrel/active/011119-1n.html |url-status=dead |archive-url=https://web.archive.org/web/20011127080316/http://www.sos.state.mi.us/pressrel/active/011119-1n.html |archive-date=2001-11-27 |website=[[Michigan Department of State]]}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Michigan Veterans Affairs Agency]]
+|"Veterans" emblem
+|"Support Michigan Veterans"
+|2001–present
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Michigan Vietnam Veterans Monument
+|[[Dog tag]]s
+|"Lest We Forget"
+|2001–present<ref name=":3" />
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Water quality
+|Sailboat insignia
+|"Protecting Our Waters"
+|2001–present<ref>{{Cite web |title=Order your Water Quality License Plate today! |url=http://www.sos.state.mi.us/frp/orderform_water.pdf |url-status=dead |archive-url=https://web.archive.org/web/20011130061601/http://www.sos.state.mi.us/frp/orderform_water.pdf |archive-date=2001-11-30 |website=[[Michigan Department of State]]}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+| rowspan="3" |Wildlife habitat conservation
+|[[Loon]]
+|"Conserve Wildlife Habitat"
+|2001–2017<ref name=":5">{{Cite web |last=Zaniewski |first=Ann |title=Elk is in, loon is out for Michigan's wildlife license plate |url=https://www.freep.com/story/news/local/michigan/2017/10/18/elk-michigan-license-plate/777591001/ |access-date=2023-12-03 |website=Detroit Free Press |language=en-US}}</ref>
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Elk]]
+|"2018 Marks 100 Years of Elk"
+|2018–2021<ref name=":5" />
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|[[Kirtland's warbler]]
+|"Conserve Wildlife Habitat"
+|2022–present<ref>{{Cite web |last=Bingham |first=Emily |date=2021-12-06 |title=Kirtland's warbler to appear on Michigan license plates in 2022 |url=https://www.mlive.com/naias/2021/12/kirtlands-warbler-to-appear-on-michigan-license-plates-in-2022.html |access-date=2023-12-03 |website=mlive |language=en}}</ref>
+|
+|}
+As of November 2023, three new fundraising plates are currently being considered in the [[Michigan Legislature]]: one supporting Michigan's [[4-H]] organizations, another funding [[Sickle cell disease|sickle cell anemia]] research, and a third supporting [[prostate cancer]] prevention.<ref name=":2" />
+
+Legislation was passed in June 2017 to offer an anti-abortion [[Choose Life license plates|Choose Life plate]] in Michigan, but was vetoed by Governor [[Rick Snyder]].<ref>{{cite web |last=Lawler |first=Emily |date=2017-06-30 |title=Gov. Rick Snyder vetoes bill that would have allowed 'choose life' license plates |url=http://www.mlive.com/news/index.ssf/2017/06/gov_rick_snyder_vetoes_bill_th.html |access-date= |website=[[MLive]] |publisher=}}</ref><ref>{{Cite web |last=Oosting |first=Jonathan |date=2017-06-30 |title=Snyder vetoes 'Choose Life' license plate |url=https://www.detroitnews.com/story/news/politics/2017/06/30/snyder-vetoes-choose-life-license-plate-michigan/103315188/ |access-date=2023-12-03 |website=The Detroit News |language=en-US}}</ref>
+
+=== Veterans ===
+
+{| class="wikitable"
+!Image
+!Type
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Afghanistan Campaign Medal
+|Afghanistan Campaign Medal with "AFGHANISTAN" topped at left, "VETERAN" centered at bottom
+| rowspan="7" |1ABC2
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Afghanistan
+|"AFGHANISTAN" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Air Force
+|United States Air Force logo at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Army
+|United States Army logo at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Blue Star Family
+|State inside an outlined star at left, stars before and after "BLUE STAR FAMILY" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Coast Guard
+|United States Coast Guard emblem at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Cuban Missile Crisis
+|"CUBAN MISSILE CRISIS" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Disabled Veteran
+|"DISABLED VETERAN" centered at bottom
+|'''DV'''123A<br>'''DV'''1234A
+|
+|-
+|[[File:Blank License Plate Shape.svg|frameless|150x150px]]
+|Disabled Veteran
+(Permanent)
+|"DISABLED VETERAN" centered at bottom, "NON-EXP" at bottom right
+|'''DV'''123A<br>'''DV'''1234A
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Dominican Republic
+|"DOMINICAN REPUBLIC" at left, "VETERAN" centered at bottom
+|1ABC2
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Ex-Prisoner of War
+|"EX POW" stacked at left, "EX-PRISONER OF WAR" centered at bottom
+|12A34
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Gold Star Family
+|Gold Star service banner at left, "GOLD STAR FAMILY" centered at bottom
+|12 '''GS''' 34
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Grenada
+|"GRENADA" at left, "VETERAN" centered at bottom
+| rowspan="7" |1ABC2
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Iraq Campaign Medal
+|Iraq Campaign Medal with "IRAQ" topped at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Iraq
+|"IRAQ" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Korean War
+|"KOREA" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Laos
+|"LAOS" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Lebanon
+|"LEBANON" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Marine Corps
+|United States Marine Corps emblem at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Medal of Honor
+|United States Medal of Honor at left, stars before and after "MEDAL OF HONOR" centered at bottom
+|'''MH''' 12
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Merchant Marine
+|Merchant Marine seal at left, "MERCHANT MARINE" centered at bottom
+|
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Military Reserve
+|"MILITARY RESERVE" at left, "VETERAN" centered at bottom
+|1'''Z'''A23
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|National Guard
+|National Guard logo at left, "NATIONAL GUARD" centered at bottom
+|1'''A'''BC2
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Navy
+|United States Navy emblem at left, "VETERAN centered at bottom
+| rowspan="2" |1ABC2
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Panama
+|"PANAMA" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Pearl Harbor Survivor
+|"PEARL HARBOR SURVIVOR" centered at bottom
+|1A2345
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Persian Gulf
+|"PERSIAN GULF" at left, "VETERAN" centered at bottom
+|1ABC2
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Prisoner of War
+|"POW" stacked at left, "PRISONER OF WAR" centered at bottom
+|12'''P'''34
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Purple Heart
+|Purple Heart medal at left, "COMBAT WOUNDED VETERAN" centered at bottom
+|123A4
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Somalia
+|"SOMALIA" at left, "VETERAN" centered at bottom
+| rowspan="3" |1ABC2
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Vietnam Service Medal
+|Vietnam Service Medal with "VIETNAM" topped at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Vietnam
+|"VIETNAM" at left, "VETERAN" centered at bottom
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|Woman Veteran
+|"HER SERVICE, OUR FREEDOM" at left, "WOMAN VETERAN" centered at bottom
+|
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|World War I
+|"WWI" stacked at left, "WORLD WAR I VETERAN" centered at bottom
+|12'''W'''34
+|
+|-
+|[[File:Blank_License_Plate_Shape.svg|150x150px]]
+|World War II
+|"WORLD WAR II" at left, "VETERAN" centered at bottom
+|1ABC2
+|
+|}
+
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.15q.net/mi.html Michigan license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200626022511/https://www.15q.net/mi.html |date=June 26, 2020 }}
+* {{cite web |title=License plate fact sheet |url=http://www.michigan.gov/documents/sos/License_Plate_Fact_Sheet_307066_7.pdf |publisher=Michigan Secretary of State}}
+
+{{Vehicle registration plates of the United States}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|Michigan]]
+[[Category:Michigan transportation-related lists]]

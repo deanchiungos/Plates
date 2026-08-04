@@ -1,0 +1,866 @@
+{{short description|Montana vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Montana 2010-present standard plate (new font).jpg
+| nickname = 
+| slogan_label = Slogan
+| slogan = Treasure State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ''1''-12345A<br>''10''-1234A
+| current_start_date = 2010
+| designer = 
+| issuer = [[Montana Department of Justice]], Motor Vehicle Division
+| manufacturer = 
+| start_date = {{Start date|1913|03|11}}
+}}
+
+The U.S. state of [[Montana]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1913. {{As of|2024}}, plates are issued by the [[Montana Department of Justice]] through its Motor Vehicle Division. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1913 to 1975===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Montana license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1913–14}}
+|Embossed black serial on white plate; "M" at right
+|''none''
+|12345
+|1 to approximately 10500
+|Front plates were perforated in order to allow air to pass through to the vehicle's radiator, while rear plates were solid.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Embossed white serial on black plate; "MON 1915" at right
+|''none''
+|12345
+|100 to approximately 14500
+|First dated plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed light green serial on dark green plate; "MON 1916" at right
+|''none''
+|12345
+|100 to approximately 24500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Embossed red serial on gray plate; "MONT -17" at right
+|''none''
+|12345
+|1 to approximately 42000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Embossed white serial on dark blue plate; "MONT 1918" at left
+|''none''
+|12345
+|1 to approximately 51000
+|
+|-
+|[[File:1919 Montana license plate.jpg|150px]]
+|1919
+|Embossed dark green serial on light green plate with border line; "MONT –19" at left
+|''none''
+|12345
+|1 to approximately 58000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed white serial on black plate with border line; "MONT –20" at left
+|''none''
+|12345
+|1 to approximately 61000
+|
+|-
+|[[File:1921 Montana license plate.jpg|150px]]
+|1921
+|Embossed white serial on maroon plate with border line; "MONT –21" at left
+|''none''
+|12345
+|1 to approximately 57000
+|
+|-
+|[[File:1922 Montana license plate.jpg|150px]]
+|1922
+|Embossed black serial on orange plate; "MONT –22" at left
+|''none''
+|12345
+|1 to approximately 55000
+|
+|-
+|[[File:1923 Montana license plate.jpg|150px]]
+|1923
+|Embossed red serial on white plate; "MONT –23" at left
+|''none''
+|12345
+|1 to approximately 66000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on dark blue plate; "MONT –24" at left
+|''none''
+|12345
+|1 to approximately 70000
+|
+|-
+|[[File:1925 Montana license plate.jpg|150px]]
+|1925
+|Embossed white serial on red plate; "MONT –25" at left
+|''none''
+|12345
+|1 to approximately 82000
+|
+|-
+|[[File:1926 Montana license plate.jpg|150px]]
+|1926
+|Embossed white serial on black plate with border line; "MONT –26" at left
+|''none''
+|12-345
+|1 to approximately 90-000
+|
+|-
+|[[File:1927 Montana license plate.jpg|150px]]
+|1927
+|Embossed black serial on green plate with border line; "MONT –27" at left
+|''none''
+|12-345
+|1 to approximately 95-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed black serial on orange plate with border line; "MONTANA–28" centered at bottom
+|''none''
+|123-456
+|1 to approximately 103-000
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed black serial on white plate with border line; "MONTANA–29" centered at bottom
+|''none''
+|123-456
+|1 to approximately 115-000
+|
+|-
+|[[File:1930 Montana license plate.jpg|150px]]
+|1930
+|As 1928 base, but with "MONTANA–30" at bottom
+|''none''
+|123-456
+|1 to approximately 107-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|As 1929 base, but with "MONTANA–31" at bottom
+|''none''
+|123-456
+|1 to approximately 103-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on black plate with border line; "MONTANA–32" centered at bottom
+|''none''
+|12-345
+|1 to approximately 87-000
+|
+|-
+|[[File:1933 Montana license plate.jpg|150px]]
+|1933
+|Embossed orange serial on maroon plate with state-shaped border; "MONTANA–33" below serial
+|''none''
+|12-345
+|1 to approximately 83-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed orange serial on black plate with state-shaped border; "34–MONTANA" below serial
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|First use of county codes.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed white serial on black plate with state-shaped border; "MONTANA–35" below serial
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed black serial on orange plate with state-shaped border; "36–MONTANA" below serial
+|''none''
+|''1''-1234<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Montana_1937_License_Plate.jpg|150px]]
+|1937
+|Embossed black serial on green plate with state-shaped border; "MONTANA–37" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1938 Montana license plate.jpg|150px]]
+|1938
+|Embossed black serial with [[American bison|buffalo]] skull separator on orange plate with state-shaped border; "MONTANA–38" below serial
+|''none''
+|{{small|''1''}}-12345<br>{{small|''1''/''0''}}-1234
+|Coded by county of issuance ({{small|''1''}} or {{small|''1''/''0''}})
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed orange serial on black plate with state-shaped border; "MONTANA–39" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed white serial on blue plate with state-shaped border; "MONTANA–40" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1941 Montana license plate.jpg|150px]]
+|1941
+|Embossed blue serial on white plate with state-shaped border; "MONTANA–41" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1942 Montana license plate.jpg|150px]]
+|1942–43
+|Embossed white serial on black plate with state-shaped border; "MONTANA–42" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1943 with red tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Montana 1944 license plate - Number 18-1210.jpg|150px]]
+|1944
+|White serial on green [[fiberboard]] plate; "MONTANA-1944" centered at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Manufactured on [[soybean]]-based fiberboard due to ongoing metal conservation.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed white serial on black plate with state-shaped border; "MONTANA–45" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946–47
+|Embossed black serial on white plate with state-shaped border; "MONTANA–46" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1947 with windshield stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Embossed white serial on black plate with state-shaped border; "MONTANA–48" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1949 Montana license plate.jpg|150px]]
+|1949
+|Embossed black serial on white plate with state-shaped border; "MONTANA–49" below serial
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed white serial on black plate with state-shaped border; "MONTANA–50" below serial
+|"THE TREASURE STATE" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951–52
+|Embossed yellow serial on blue plate with state-shaped border; "MONTANA–51" below serial
+|"THE TREASURE STATE" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1952 with windshield stickers.
+|-
+|[[File:1954 Montana license plate.jpg|150px]]
+|1953–54
+|Embossed white serial on black plate with state-shaped border; "MONTANA–53" below serial
+|"THE TREASURE STATE" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1954 with silver tabs.
+|-
+|[[File:1955 Montana License Plate 17-T772 with 1956 tab.jpg|150px]]
+|1955–56
+|Embossed white serial on red plate with state-shaped border; "MONTANA–55" below serial
+|"THE TREASURE STATE" at top
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1956 with silver tabs.
+|-
+|[[File:1957 Montana License Plate.jpg|150px]]
+|1957–58
+|Embossed white serial on black plate with border line; "MONTANA–57" centered at bottom
+|''none''
+|{{small|''1''/}}&nbsp;12345<br>{{small|''1''/''0''}} 1234
+|Coded by county of issuance ({{small|''1''}} or {{small|''1''/''0''}})
+|First 6" x 12" plate. Revalidated for 1958 with silver tabs.
+|-
+|[[File:1959 Montana 17-661.png|150px]]
+|1959–62
+|Embossed black serial on unpainted aluminum plate with state-shaped border; "MONTANA 59" below serial, stamped "PRISON MADE" beneath state outline
+|''none''
+|''1''·12345<br>''10''·1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1960 with yellow tabs, for 1961 with black tabs, and for 1962 with blue tabs.
+|-
+|[[File:1963 Montana license plate.jpg|150px]]
+|1963–66
+|As 1959–62 base, but with "MONTANA 63" below serial
+|"TREASURE STATE" centered at top
+|''1''·12345<br>''10''·1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1964 with black tabs, for 1965 with blue tabs, and for 1966 with yellow tabs.
+|-
+|[[File:1967 Montana license plate.jpg|150px]]
+|1967
+|Embossed yellow serial on light blue plate with state-shaped border; "MONTANA 67" below serial
+|"BIG SKY COUNTRY" centered at top
+|''1''·12345<br>''10''·1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Montana 1968 license plate - Number 9-217.jpg|150px]]
+|1968–69
+|Embossed green serial on reflective white plate with state-shaped border; "MONTANA" and debossed "68" below serial
+|"BIG SKY COUNTRY" centered at top
+|''1''·12345<br>''10''·1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1969 with stickers.
+|-
+|[[File:Montana 1971 license plate.png|150px]]
+|1970–72
+|Embossed blue serial on reflective white plate with state-shaped border; "MONTANA" and debossed "70" below serial
+|"BIG SKY COUNTRY" centered at top
+|''1''·12345<br>''10''·1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1971 and 1972 with stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1973–74
+|Debossed white serial on reflective green plate with state-shaped border; debossed buffalo skull at bottom left; "MONTANA 73" below serial
+|"BIG SKY COUNTRY" centered at top
+|''1''·12345<br>''10''·1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1974 with stickers.
+|-
+|[[File:Montana 1975 license plate 29-3621.jpg|150px]]
+|1975
+|Debossed white serial on reflective blue plate with state-shaped border; debossed buffalo skull at bottom left; "MONTANA 75" below serial
+|"BIG SKY COUNTRY" centered at top
+|''1''·12345<br>''10''·1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|}
+
+===1976 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Montana license plate, 1976–1991 series with September 1990 sticker.png|150px]]
+|{{nowrap|1976–91}}
+|Embossed sky blue serial on reflective white plate with screened red state-shaped border; red "[[United States Bicentennial|76 Bicentennial]]" logo and sky blue buffalo skull screened at top left and bottom left respectively; red band screened above serial containing "MONTANA" in white; screened sky blue "'76" at bottom right
+|"BIG SKY" screened in sky blue centered at bottom
+|''1''·123456<br>''10''·12345
+|Coded&nbsp;by county of issuance (''1'' or ''10'')
+|A straight-line die was originally used for the number '1', before being replaced by a serifed version.
+|-
+|[[File:Montana 1992 license plate - 3P-1997B.jpg|150px]]
+|1991–2000
+|Embossed dark blue serial on reflective sky blue and white gradient plate; white and pale blue state outline screened around plate and yellow, orange and purple band, resembling a mountain range, screened above serial; "MONTANA" screened in white at top left
+|"Big Sky" screened in sky blue at bottom right, along with a sky blue buffalo skull
+|''1'''''P'''·1234A<br>'''''3''P'''·123AB<br>''10''·1234A
+|Coded by county of issuance (''1'' or ''10'')
+|Letters I, O, Q, R and V not used in serials.<ref>{{cite web |last=Tanner |first=Eric N. |title=Montana Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Montana&code=mt |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref> Three-digit, two-letter serials briefly issued in [[Yellowstone County, Montana|Yellowstone County]] after 3P·9999Z was reached.
+|-
+| 
+|2000–03
+|Embossed black serial on reflective graphic plate with sky blue background and gradient sky blue and white state shape containing purple mountain range and orange badlands; "MONTANA" screened in blue centered above serial; "2000" screened in white above state name
+|rowspan="2"|"BIG SKY" screened in sky blue at bottom left, with words separated by a blue buffalo skull
+|rowspan="2"|''1''·A12345<br>''10''·A1234
+|rowspan="2"|Coded by county of issuance (''1'' or ''10'')
+|rowspan="2"|
+|-
+|[[File:2004MontanaPlate.jpg|150px]]
+|2003–06
+|As above, but with serial screened rather than embossed
+|-
+| 
+|2006–09
+|Screened black serial with buffalo skull separator on reflective graphic plate with gradient dark blue and white background, yellow state outline and mountain range and forest at bottom; "MONTANA" screened in gold, with curved underline, centered above serial
+|"Big Sky Country" screened in brown between state name and serial
+|''1'''''C'''-12345<br>''1'''''C'''-1234A<br>''10''-12345
+|Coded by county of issuance (''1'' or ''10'')
+|Still currently revalidated, due to mixed reception of the 2010 blue base (below) and financial concerns.
+|-
+|[[File:Montana 2010–2016 standard license plate (old font).png|150px]]<br>[[File:Montana 2010-present standard plate (new font).jpg|150px]]
+|2010–present
+|Screened white serial with buffalo skull separator on reflective blue plate with white state-shaped border; "MONTANA - 10" screened in white centered below serial
+|"TREASURE STATE" screened in white centered at top
+|rowspan="4"|''1''-12345A
+''1-''AB1234<br>''10''-1234A
+''10-''AB123
+|rowspan="4"|Coded by county of issuance (''1'' or ''10'')
+|New serial font, similar to that used in [[Vehicle registration plates of Arizona|Arizona]], introduced in mid-2016.<ref>{{cite web |title=Montana License Plates To Feature New, Larger Font |url=https://dojmt.gov/montana-license-plates-feature-new-larger-font/ |publisher=[[Montana Department of Justice]] |date=August 8, 2016 |access-date=April 1, 2017}}</ref>
+|-
+|[[File:6 96872C.jpg|150px]][[File:6 AA4108.jpg|150px]]
+|rowspan="4"|2012–present
+|As 1991–2000 base, but with screened black serial with buffalo skull separator
+|"Big Sky" as on original 1991–2000 base
+|rowspan="4"|Replicas of 1991, 2000 and 2006 bases and the optional Montana Centennial plate, issued due to mixed reception of the 2010 blue base. Motorists can choose any one of these five plates. Montana Centennial replicas use the same serial format as current optional plates. New serial font, similar to that used in Arizona, introduced in mid-2016. In 2025, Montana updated the format on standard plates that use the county code format.<ref>{{Cite web |date=2025-01-08 |title=License plate problems: Montana license plate configuration can confuse out-of-state plate readers |url=https://www.ktvh.com/news/license-plate-problems-montana-license-plate-configuration-can-confuse-out-of-state-plate-readers |access-date=2025-07-04 |website=KTVH |language=en}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|As 2000–06 base, with serial screened as from 2003 onwards, but with buffalo skull separator
+|"BIG SKY" as on original 2000–06 base
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|As 2006–09 base
+|"Big Sky Country" as on original 2006–09 base
+|-
+| [[File:MontanaCentennialNewFormat.webp|150px]]<br> 
+|As 1987-89 Montana Centennial plate (see Optional Plates below), but with serial screened
+|"100 YEARS" as on original Montana Centennial plate
+|ABC123
+|Not issued in blocks
+|}
+
+==Optional plates==
+All optional plates issued from 2003 onwards use an ABC123 serial format. Since 2012, this format has also been used on the Montana Centennial replica plate (above).
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Notes
+|-
+| 
+|Gallatin Valley Land Trust
+|
+|White serial on graphic plate; Gallatin Valley and two silhouettes in background; "MONTANA" in grey at top 
+|"Trails & Conservation" in white at bottom
+|
+|-
+| 
+|rowspan="2"|[[Glacier National Park (U.S.)|Glacier National Park]]
+|February 2002 – 2022
+|White serial on graphic plate with dark blue state outline and Glacier National Park in background; "MONTANA" in blue with white outline at top
+|"Glacier National Park" in green at bottom
+|Still valid for renewals.
+|-
+|[[File:Glacier-National-Park-GNP-Conservancy-2023.jpg|150px]]
+|2022–present
+|White serial on graphic plate with the northern lights and [[Saint Mary Lake]] in background; "MONTANA" in white at top
+|"Glacier National Park" in white at bottom
+|
+|-
+|[[File:DTD369 Montana, Missoula Downtown Foundation speciality plate.jpg|150px]]
+|Missoula Downtown Foundation
+|
+|White serial on black plate with white state outline; small white heart outline to left of serial; "MONTANA" in white at top
+|"406" in white at bottom right
+|
+|-
+|[[File:Montana DLV821 License Plate.jpg|150px]]
+|Montana Concerns of Police Survivors
+|
+|White serial on black plate; C.O.P.S. logo at left; "MONTANA" in white at top
+|"HONORING FALLEN OFFICERS" in white within blue band at bottom
+|
+|-
+|[[File:Montana-State-Golf-Association-2023.jpg|150px]]
+|Montana State Golf Association
+|2003–present
+|Black serial on graphic plate with blue sky at top, golf course at bottom and black silhouette of golfer at bottom left; "MONTANA" in cream color at top
+|"Golf the Big Sky" in blue below serial
+|
+|-
+|[[File:Montana Eagle Mount Bozeman License Plate.webp|150px]]
+|Eagle Mount Bozeman
+|
+|Black serial on white plate; "MONTANA" in black at the top, with an eagle flying inside a Montana silhouette.
+|None
+|
+|}
+
+===Before 2003===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Montana 1987 Centennial license plate.jpg|150px]]
+|Montana Centennial (original)
+|{{nowrap|1987–89}}
+|Embossed blue serial on graphic plate with gold background, white state shape and brown mountain range at top; "MONTANA" screened in brown at bottom right, with a Montana Centennial logo for the 'O'
+|"100 YEARS" screened in brown at bottom left
+|''1''ABC12<br>''10''AB12
+|Coded&nbsp;by county of issuance (''1'' or ''10'')
+|Also issued to trucks, with ''1'''''T'''AB123 and ''10'''''T'''AB12 serial formats. Remained valid until 1996.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Motorcycle]]
+|1988–present
+|Embossed dark blue serial on white plate; "MONTANA" at bottom and "CYCLE" at top, offset to left
+|''1''-1234<br>''1''-A123<br>{{nowrap|''1''-AB12}}<br>''10''-123<br>''10''-A12<br>''10''-AB1
+|Coded by county of issuance (''1'' or ''10'')
+|
+|}
+
+===Discontinued===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!style="width:250px;"|Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[Truck]]
+|1976–91
+|As 1976 passenger base
+|''1'''''T'''·12345<br>'''''3''T'''·A1234<br>''10'''''T'''·1234<br>''10'''''T'''·A123
+|Coded by county of issuance (''1'' or ''10'')
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1991–2000
+|As 1991 passenger base
+|''1'''''T'''·1234A<br>''10'''''T'''·123A<br>''10'''''T'''·12AB
+|Coded by county of issuance (''1'' or ''10'')
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2000–06
+|As 2000 passenger base
+|''1'''''T'''·A1234<br>''10'''''T'''·A123<br>''10'''''T'''·AB12
+|Coded by county of issuance (''1'' or ''10'')
+|Truck plates discontinued 2006; passenger plates issued to trucks since.
+|}
+
+==County coding==
+Montana established a numeric county-code system for its license plates in 1934, which remains in use today (except on optional plates). With some exceptions, the order of the codes is based on the respective populations of the state's 56 counties according to the [[1930 United States census]].<ref>{{cite news |title=What's the deal with Montana's license plate numbering system? |url=https://billingsgazette.com/news/state-and-regional/montana/whats-the-deal-with-montanas-license-plate-numbering-system/article_119837d9-3863-5951-a163-066c86fd86af.html |newspaper=[[Billings Gazette]] |date=May 2, 2014 |access-date=January 2, 2022}}</ref><ref>{{cite web |title=Montana County Seats & Corresponding License Plate Numbers |url=https://www.mtcounties.org/counties/county-seats-corresponding-license-plate-numbers/ |publisher=Montana Association of Counties |access-date=January 2, 2022}}</ref>
+{|class="wikitable sortable"
+|-
+!Code
+!County
+!County seat
+|-
+|1
+|[[Silver Bow County, Montana|Silver Bow]]
+|[[Butte, Montana|Butte]]
+|-
+|2
+|[[Cascade County, Montana|Cascade]]
+|[[Great Falls, Montana|Great Falls]]
+|-
+|3
+|[[Yellowstone County, Montana|Yellowstone]]
+|[[Billings, Montana|Billings]]
+|-
+|4
+|[[Missoula County, Montana|Missoula]]
+|[[Missoula, Montana|Missoula]]
+|-
+|5
+|[[Lewis and Clark County, Montana|Lewis and Clark]]
+|[[Helena, Montana|Helena]]
+|-
+|6
+|[[Gallatin County, Montana|Gallatin]]
+|[[Bozeman, Montana|Bozeman]]
+|-
+|7
+|[[Flathead County, Montana|Flathead]]
+|[[Kalispell, Montana|Kalispell]]
+|-
+|8
+|[[Fergus County, Montana|Fergus]]
+|[[Lewistown, Montana|Lewistown]]
+|-
+|9
+|[[Powder River County, Montana|Powder River]]
+|[[Broadus, Montana|Broadus]]
+|-
+|10
+|[[Carbon County, Montana|Carbon]]
+|[[Red Lodge, Montana|Red Lodge]]
+|-
+|11
+|[[Phillips County, Montana|Phillips]]
+|[[Malta, Montana|Malta]]
+|-
+|12
+|[[Hill County, Montana|Hill]]
+|[[Havre, Montana|Havre]]
+|-
+|13
+|[[Ravalli County, Montana|Ravalli]]
+|[[Hamilton, Montana|Hamilton]]
+|-
+|14
+|[[Custer County, Montana|Custer]]
+|[[Miles City, Montana|Miles City]]
+|-
+|15
+|[[Lake County, Montana|Lake]]
+|[[Polson, Montana|Polson]]
+|-
+|16
+|[[Dawson County, Montana|Dawson]]
+|[[Glendive, Montana|Glendive]]
+|-
+|17
+|[[Roosevelt County, Montana|Roosevelt]]
+|[[Wolf Point, Montana|Wolf Point]]
+|-
+|18
+|[[Beaverhead County, Montana|Beaverhead]]
+|[[Dillon, Montana|Dillon]]
+|-
+|19
+|[[Chouteau County, Montana|Chouteau]]
+|[[Fort Benton, Montana|Fort Benton]]
+|-
+|20
+|[[Valley County, Montana|Valley]]
+|[[Glasgow, Montana|Glasgow]]
+|-
+|21
+|[[Toole County, Montana|Toole]]
+|[[Shelby, Montana|Shelby]]
+|-
+|22
+|[[Big Horn County, Montana|Big Horn]]
+|[[Hardin, Montana|Hardin]]
+|-
+|23
+|[[Musselshell County, Montana|Musselshell]]
+|[[Roundup, Montana|Roundup]]
+|-
+|24
+|[[Blaine County, Montana|Blaine]]
+|[[Chinook, Montana|Chinook]]
+|-
+|25
+|[[Madison County, Montana|Madison]]
+|[[Virginia City, Montana|Virginia City]]
+|-
+|26
+|[[Pondera County, Montana|Pondera]]
+|[[Conrad, Montana|Conrad]]
+|-
+|27
+|[[Richland County, Montana|Richland]]
+|[[Sidney, Montana|Sidney]]
+|-
+|28
+|[[Powell County, Montana|Powell]]
+|[[Deer Lodge, Montana|Deer Lodge]]
+|-
+|29
+|[[Rosebud County, Montana|Rosebud]]
+|[[Forsyth, Montana|Forsyth]]
+|-
+|30
+|[[Deer Lodge County, Montana|Deer Lodge]]
+|[[Anaconda, Montana|Anaconda]]
+|-
+|31
+|[[Teton County, Montana|Teton]]
+|[[Choteau, Montana|Choteau]]
+|-
+|32
+|[[Stillwater County, Montana|Stillwater]]
+|[[Columbus, Montana|Columbus]]
+|-
+|33
+|[[Treasure County, Montana|Treasure]]
+|[[Hysham, Montana|Hysham]]
+|-
+|34
+|[[Sheridan County, Montana|Sheridan]]
+|[[Plentywood, Montana|Plentywood]]
+|-
+|35
+|[[Sanders County, Montana|Sanders]]
+|[[Thompson Falls, Montana|Thompson Falls]]
+|-
+|36
+|[[Judith Basin County|Judith Basin]]
+|[[Stanford, Montana|Stanford]]
+|-
+|37
+|[[Daniels County, Montana|Daniels]]
+|[[Scobey, Montana|Scobey]]
+|-
+|38
+|[[Glacier County, Montana|Glacier]]
+|[[Cut Bank, Montana|Cut Bank]]
+|-
+|39
+|[[Fallon County, Montana|Fallon]]
+|[[Baker, Montana|Baker]]
+|-
+|40
+|[[Sweet Grass County, Montana|Sweet Grass]]
+|[[Big Timber, Montana|Big Timber]]
+|-
+|41
+|[[McCone County, Montana|McCone]]
+|[[Circle, Montana|Circle]]
+|-
+|42
+|[[Carter County, Montana|Carter]]
+|[[Ekalaka, Montana|Ekalaka]]
+|-
+|43
+|[[Broadwater County, Montana|Broadwater]]
+|[[Townsend, Montana|Townsend]]
+|-
+|44
+|[[Wheatland County, Montana|Wheatland]]
+|[[Harlowton, Montana|Harlowton]]
+|-
+|45
+|[[Prairie County, Montana|Prairie]]
+|[[Terry, Montana|Terry]]
+|-
+|46
+|[[Granite County, Montana|Granite]]
+|[[Philipsburg, Montana|Philipsburg]]
+|-
+|47
+|[[Meagher County, Montana|Meagher]]
+|[[White Sulphur Springs, Montana|White Sulphur Springs]]
+|-
+|48
+|[[Liberty County, Montana|Liberty]]
+|[[Chester, Montana|Chester]]
+|-
+|49
+|[[Park County, Montana|Park]]
+|[[Livingston, Montana|Livingston]]
+|-
+|50
+|[[Garfield County, Montana|Garfield]]
+|[[Jordan, Montana|Jordan]]
+|-
+|51
+|[[Jefferson County, Montana|Jefferson]]
+|[[Boulder, Montana|Boulder]]
+|-
+|52
+|[[Wibaux County, Montana|Wibaux]]
+|[[Wibaux, Montana|Wibaux]]
+|-
+|53
+|[[Golden Valley County, Montana|Golden Valley]]
+|[[Ryegate, Montana|Ryegate]]
+|-
+|54
+|[[Mineral County, Montana|Mineral]]
+|[[Superior, Montana|Superior]]
+|-
+|55
+|[[Petroleum County, Montana|Petroleum]]
+|[[Winnett, Montana|Winnett]]
+|-
+|56
+|[[Lincoln County, Montana|Lincoln]]
+|[[Libby, Montana|Libby]]
+|-
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/mt.html Montana license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20210505231208/http://www.15q.net/mt.html |date=May 5, 2021 }}
+*[https://mvdmt.gov/license-plate-lookup/ License plates of Montana]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Montana}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Montana}}
+[[Category:Vehicle registration plates of the United States by state or territory|Montana]]
+[[Category:Transportation in Montana]]
+[[Category:Montana transportation-related lists]]

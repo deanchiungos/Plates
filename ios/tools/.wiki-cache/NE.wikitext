@@ -1,0 +1,902 @@
+{{short description|Nebraska vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=August 2021}}
+{{Infobox vehicle registration plate
+| image = [[File:Nebraska License Plate 2023 Design.jpg]]
+| nickname =
+| slogan_label =
+| slogan =
+| size = {{convert|12|x|6|in|mm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ''Douglas, Lancaster and Sarpy Counties:''<br>ABC 123<br>''All other counties (county-coded):''<br>''3''-A1234<br>''3''-AB123<br>''10''-A123<br>''10''-AB12
+| current_start_date = {{Start date|2023|01}}
+| designer = 
+| issuer = Nebraska Department of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1915}}
+}}
+The U.S. state of [[Nebraska]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1915, when the state began to issue plates.<ref>{{cite web |title=Old Nebraska License Plates |url=http://leatherlicenseplates.com/old-nebraska-license-plates-vintage-nebraska-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=May 25, 2017}}</ref>
+
+{{As of|2024}}, plates are issued by the Nebraska Department of Motor Vehicles (DMV). Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers. A bill was passed by legislators in April 2025 to change the law of just issuing rear license plates. That law change is set to go into effect in 2029 when a new design print license plates will be released. All state-issued plates were made of [[steel]] until 1947 when [[aluminum]] plates were introduced.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1915 to 1965===
+In 1956, the United States, Canada and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Nebraska license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Nebraskan license plate (1915), from the private collection of Ryan Smith.jpg|150px]]
+|1915
+|Black on white; "NEB 1915" at right
+|''none''
+|12345
+|1 to approximately 70000
+|
+|-
+|[[File:1916 Nebraska license plate 41963.jpg|150px]]
+|1916
+|White on navy blue; "NEB 1916" at right
+|''none''
+|123456
+|1 to approximately 101000
+|
+|-
+|[[File:Nebraska license plate 1917 from the private collection of Ryan Smith.jpg|150px]]
+|1917
+|Black on cream; "NEB 1917" at right
+|''none''
+|123456
+|1 to approximately 148000
+|
+|-
+|[[File:1918 Nebraska license plate 41963.jpg|150px]]
+|1918
+|Yellow on black; "NEB 1918 at right"
+|''none''
+|123456
+|1 to approximately 171000
+|
+|-
+|[[File:Nebraska license plate 1919 from the private collection of Ryan Smith.jpg|150px]]
+|{{nowrap|1919–20}}
+|Black on light green; "NEB 1919" at right
+|''none''
+|123456
+|1 to approximately 273000
+|Revalidated for 1920 with dark blue tab.<br>[[File:1920 Nebraska License Plate Tab.jpg|50px]]
+|-
+|[[File:1921 Nebraskan license plate.jpg|150px]]
+|1921
+|White on black; "NEB 1921" at right
+|''none''
+|123456
+|1 to approximately 272000
+|
+|-
+|[[File:1922 Nebraskan license plate.jpg|150px]]
+|1922
+|Black on white; "NEB 1922" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|First use of county codes.
+|-
+|[[File:1923 Nebraska license plate 52-1967.jpg|150px]]
+|1923
+|Green on black; "NEB 1923" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1924 Nebraskan license plate.jpg|150px]]
+|1924
+|White on black; "NEB 1924" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1925 Nebraska License Plate 17 833.jpg|150px]]
+|1925
+|Black on orange; "NEB 1925" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Nebraska license plate 1926 from the private collection of Ryan Smith.jpg|150px]]
+|1926
+|White on green; "NEB 1926" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Nebraska 1927 license plate.jpg|150px]]
+|1927
+|White on maroon; "1927 NEB" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1928 Nebraska license plate 11-5528.jpg|150px]]
+|1928
+|White on dark blue; "NEB 1928" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:1929 Nebraska License Plate 17 833.jpg|150px]]
+|1929
+|White on black; "1929 NEB" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1930 Nebraska license plate.jpg|150px]]
+|1930
+|Yellow on dark blue; "NEB 1930" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Nebraska license plate 1931 from the private collection of Jim Smith.jpg|150px]]
+|1931
+|Red on gray; "1931 NEB" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1932 Nebraska License Plate.jpg|150px]]
+|1932
+|White on blue; "NEB 1932" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1933 Nebraska license plates 34-990.jpg|150px]]
+|1933
+|Dark blue on orange; "1933 NEB" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:1934 Nebraska license plate 33-4319.jpg|150px]]
+|1934
+|White on dark green; "NEBRASKA – 34" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1''  or ''10'')
+|First use of the full state name.
+|-
+|[[File:Nebraskan license plate (1935), from the private collection of Jim Smith.jpg|150px]]
+|1935
+|Black on gray; "NEBRASKA – 35" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county off issuance (''1'' or ''10'')
+|
+|-
+|[[File:Nebraska license plate 1936 from the private collection of Jim Smith.jpg|150px]]
+|1936
+|Silver on black; "NEBRASKA – 36" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Nebraskan license plate (1937), from the private collection of Jim Smith.jpg|150px]]
+|1937
+|Black on gray; "37 – NEBRASKA" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1938 Nebraska license plate.JPG|150px]]
+|1938
+|Silver on black; "NEBRASKA – 38" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:Nebraska license plate 1939 from the private collection of Jim Smith.jpg|150px]]
+|1939
+|Black on gray; "NEBRASKA – 39" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Nebraska license plate 1940 from the private collection of Jim Smith.jpg|150px]]
+|1940
+|Orange on turquoise with [[Nebraska State Capitol|State Capitol]] graphic; "NEBRASKA 40" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:Nebraska license plate 1941 from the private collection of Jim Smith.jpg|150px]]
+|1941
+|Dark blue on orange with State Capitol graphic; "NEBRASKA 41" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1942 Nebraska license plate.jpg|150px]]
+|1942–44
+|Red on white; "NEBRASKA 42" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|Revalidated for 1943 with dark blue tabs, and for 1944 with orange tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Nebraska license plate 1945 from the private collection of Jim Smith.jpg|150px]]
+|1945
+|White on black; "NEBRASKA 45" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1946 Nebraska license plate.jpg|150px]]<br>[[File:1947 Nebraska License Plate with tab.jpg|150px]]
+|1946–47
+|White on brick red; "46 NEBRASKA" at top
+|''none''
+|''1''-12345<br>''10''-12345
+|Coded by county of issuance (''1''  or ''10'')
+|Revalidated for 1947 with brown tabs.
+|-
+|[[File:1948 Nebraska license plate.JPG|150px]]
+|1948
+|Dark blue on unpainted aluminum; "19 NEBRASKA 48" at bottom
+|''none''
+|''1''-12345<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:1949 Nebraska license plate.jpg|150px]]
+|1949
+|Maroon on unpainted aluminum; "19 NEBRASKA 49" at top
+|''none''
+|''1''-12345<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:1950 Nebraska license plate 17-360.jpg|150px]]
+|1950
+|Dark blue on white; "19 NEBRASKA 50" at top
+|''none''
+|''1''-12345<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:1951 Nebraska License Plate.jpg|150px]]
+|1951
+|White on black; "NEBRASKA 51" at bottom
+|''none''
+|''A''1234A<br>''AB''123A
+|Coded by county of issuance (''A'' or ''AB'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]<br>[[File:Nebraska 1953 License Plate.jpg|150px]]
+|1952–53
+|Black on golden yellow; "NEBRASKA 52" at bottom
+|''none''
+|''1''-12345<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|Revalidated for 1953 with black tabs.
+|-
+|[[File:1954 Nebraska license plate.JPG|150px]]
+|1954
+|Golden yellow on black; "NEBRASKA 54" at top
+|''none''
+|''1''-12345<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:1955 Nebraska license plate.JPG|150px]]
+|1955
+|Black on golden yellow; "NEBRASKA 55" at bottom
+|''none''
+|''1''-12345<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:Nebraska license plate 1956 from the private collection of Jim Smith.jpg|150px]]
+|1956
+|White on black with border line; "19 NEBRASKA 56" at top
+|The Beef State
+|{{nowrap|''1''-123456}}<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|First 6" x 12" plate.
+|-
+|[[File:Nebraska license plate 1957 from the private collection of Jim Smith.jpg|150px]]
+|1957
+|Green on white with border line; "19 NEBRASKA 57" at top
+|The Beef State
+|{{nowrap|''1''-123456}}<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:1958 Nebraska license plate 32-1939.jpg|150px]]<br>[[File:1958 Nebraska license plate 20-2727.jpg|150px]]
+|1958–59
+|Black on golden yellow with border line; "19 NEBRASKA 58" at top
+|The Beef State
+|{{nowrap|''1''-123456}}<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|Revalidated for [[:File:Nebraska 1959 11-4082.jpg|1959]] with aluminum tabs.
+|-
+|[[File:1960 Nebraska license plate 8-13579.jpg|150px]]
+|1960–61
+|Golden yellow on black with border line; "19 NEBRASKA 60" at top
+|The Beef State
+|{{nowrap|''1''-123456}}<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|Revalidated for [[:File:1961 Nebraska license plate.JPG|1961]] with stickers.
+|-
+|[[File:1962 Nebraska license plate 59-7866.jpg|150px]]
+|1962–64
+|Green on white with border line; "19 NEBRASKA" and green sticker box at bottom
+|The Beef State
+|{{nowrap|''1''-123456}}<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|Revalidated for 1963 and 1964 with stickers.
+|-
+|[[File:1965 Nebraskan license plate (15-13825).jpg|150px]]
+|1965
+|Black on white with border line; "19 NEBRASKA 65" at bottom
+|The Beef State
+|{{nowrap|''1''-123456}}<br>{{nowrap|''10''-12345}}
+|Coded by county of issuance (''1''  or ''10'')
+|
+|}
+
+===1966 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Nebraska automobile license plate 1966.jpg|150px]]
+|1966–68
+|Red on reflective white with state-shaped border; "NEBRASKA 66" at bottom, offset to right
+|Centennial
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12
+|Coded&nbsp;by county of issuance (''1''  or ''10'')
+|Commemorated Nebraska's 100 years of statehood. Letters I, M, O, Q, W and X not used in serials; this practice continues today (except in [[Douglas County, Nebraska|Douglas]], [[Lancaster County, Nebraska|Lancaster]] and [[Sarpy County, Nebraska|Sarpy]] Counties since 2002).<ref name="allaboutlicenseplatesNE">{{cite web |last=Tanner |first=Eric N. |title=Nebraska Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Nebraska&code=ne |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref> Revalidated for 1967 and 1968 with stickers.
+|-
+|[[File:1970 Nebraska license plate 11-F506.jpg|150px]]
+|1969–71
+|Black on reflective white with state-shaped border; "NEBRASKA 69" at bottom, offset to right
+|Cornhusker State
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12
+|Coded by county of issuance (''1''  or ''10'')
+|Revalidated for 1970 and 1971 with stickers.
+|-
+|[[File:Nebraska 1975 license plate sticker on 1972 license plate.jpg|150px]]
+|1972–75
+|Red on reflective white with state-shaped border; "NEBRASKA 72" at bottom, offset to right
+|Cornhusker State
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{nowrap|{{small|'''''5'''''/'''''9'''''}}-A1234}}
+|Coded by county of issuance (''1''  or ''10'')
+|Revalidated for 1973, 1974 and 1975 with stickers. After reaching 59-ZZ99, Sarpy County introduced five-character serials with stacked county codes; these were used on each subsequent base until 2002.
+|-
+|[[File:Nebraska license plate, 1977.png|150px]]
+|1976–83
+|Red on reflective white with sky blue banner at bottom, [[Conestoga wagon]] graphic at top left and Native American chief graphic at top right
+|1776 BICENTENNIAL 1976
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{small|'''''2'''''/'''''1'''''}}-A1234<br>{{small|'''''5'''''/'''''9'''''}}-A1234
+|Coded by county of issuance (''1''  or ''10'')
+|Only base on which [[Scotts Bluff County, Nebraska|Scotts Bluff County]], as well as Sarpy County, used five-character serials with stacked county codes.
+|-
+|[[File:1987 Nebraska license plate 1-D4623.jpg|150px]]
+|January 1984&nbsp;– December 1986
+|Blue on reflective white
+|''none''
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{small|'''''5'''''/'''''9'''''}}-A1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:Nebraska license plate, April 1988.png|150px]]
+|January 1987&nbsp;– December 1989
+|Red on reflective white with yellow, orange and red sunset graphic at top
+|''none''
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{small|'''''5'''''/'''''9'''''}}-A1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:Nebraska License Plate 23-E 58 for years 1990-1992 Compressed.png|150px]]
+|January 1990&nbsp;– December 1992
+|Black on reflective white with light blue, gold and black windmill graphic at top
+|''none''
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{small|'''''5'''''/'''''9'''''}}-A1234
+|Coded by county of issuance (''1''  or ''10'')
+|Early Lancaster County plates were manufactured in South Dakota using that state's serial [[Die (manufacturing)|die]]s.
+|-
+|[[File:Nebraska License Plate 1-V7529 for years 1993-1995 Compressed.png|150px]]
+|January 1993&nbsp;– December 1995
+|Blue on reflective white with blue and yellow graphic at top featuring [[Chimney Rock National Historic Site|Chimney Rock]] and city skyline
+|''none''
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{small|'''''5'''''/'''''9'''''}}-A1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:Nebraska License Plate 10-H226 for years 1996-1998 Compressed.png|150px]]
+|January 1996&nbsp;– December 1998
+|Black on reflective white with black and orange graphic at top featuring Chimney Rock and city skyline
+|''none''
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{small|'''''5'''''/'''''9'''''}}-A1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:Nebraska License Plate 10-H226 for years 1999-2001 Compressed.png|150px]]
+|January 1999&nbsp;– December 2001
+|Red on reflective gradient blue and white with yellow Chimney Rock and light blue city skyline graphics
+|''none''
+|''1''-A1234<br>''1''-AB123<br>''10''-A123<br>''10''-AB12<br>{{small|'''''5'''''/'''''9'''''}}-A1234
+|Coded by county of issuance (''1''  or ''10'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|January 2002&nbsp;– December 2004
+|rowspan="2"|Black on reflective gradient yellow, orange and red with black [[prairie]] landscape graphic, three black silhouettes of [[sandhill crane]]s, and an orange sun
+|rowspan="2"|www.state.ne.us
+|ABC 123
+|NAA 001 to mid-'O' series
+|rowspan="2"|ABC 123 serial format introduced in Douglas, Lancaster and Sarpy Counties, the three most populous, while the county-code system was retained in all other counties. Plates with the ABC 123 format were originally issued with stickers at the bottom displaying the county name; these were discontinued due to poor quality. Serials became screened in May 2004.<ref>{{cite web |last=Turnbull |first=Andrew |title=March of the Flats |url=http://www.andrewturnbull.net/plates/flat.html |publisher=The Andrew Turnbull Network |access-date=May 25, 2017}}</ref>
+|-
+|[[File:Nebraska License Plate 10-H227 for years 2002-2004 Compressed.png|150px]]
+|''3''-A1234<br>''3''-AB123<br>''10''-A123<br>''10''-AB12
+|Coded by county of issuance (''3''  or ''10'')
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|January 2005&nbsp;– December 2010
+|rowspan="2"|Dark blue on reflective gradient blue and white with red state outline and Conestoga wagon graphic
+|rowspan="2"|www.Nebraska.gov
+|ABC 123
+|Mid-'O' series to late 'R' series
+|rowspan="2"|In Douglas, Lancaster and Sarpy Counties, the 'Q' series of serials was not used.<ref name="allaboutlicenseplatesNE"/>
+|-
+|[[File:Nebraska License Plate 10-H226 for years 2005-2010 Compressed.png|150px]]
+|''3''-A1234<br>''3''-AB123<br>''10''-A123<br>''10''-AB12<br>
+|Coded by county of issuance (''3''  or ''10'')
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|January 2011&nbsp;– December 2016
+|rowspan="2"|Dark green on reflective gradient white and yellow with [[Western meadowlark]] and [[Solidago gigantea|goldenrod]]
+|rowspan="2"|Nebraska.gov
+|ABC 123
+|Late 'R' series to early 'U' series
+|rowspan="2"|
+|-
+|[[File:Nebraska_License_Plate_10-H227_for_years_2011-2016_Compressed.png|150px]]
+|''3''-A1234<br>''3''-AB123<br>''10''-A123<br>''10''-AB12<br>
+|Coded by county of issuance (''3''  or ''10'')
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|January 2017&nbsp;– December 2022
+|rowspan="2"|Black on reflective white with Sower statue from the [[Nebraska State Capitol]]; state name in gold on navy blue bar at top
+|rowspan="2"|"1867" and "2017"
+|ABC 123
+|Early 'U' series to early 'Y' series
+|rowspan="2"|Commemorated Nebraska's 150 years of statehood. In Douglas, Lancaster and Sarpy Counties, the 'X' series of serials was reserved for trailer plates.<ref name="allaboutlicenseplatesNE"/> County-coded plates originally used the state shape as the separator; this was replaced with a standard dash in May 2022 when the serial font on all plates changed to that used in Kentucky.
+|-
+|[[File:Nebraska License Plate 10-H226 for years 2017-2022 Compressed.png|150px]]
+|''3''-A1234<br>''3''-AB123<br>''10''-A123<br>''10''-AB12
+|Coded by county of issuance (''3'' or ''10'')
+|-
+|
+|rowspan="2"|January 2023&nbsp;– present
+|rowspan="2"|Dark blue on reflective white with the "Genius of Creative Energy" mosaic from the Nebraska State Capitol in the background; state name in dark blue at top
+|rowspan="2"|''none''
+|ABC 123
+|Early 'Y' series to YZZ&nbsp;999; AAA&nbsp;000 to BDE&nbsp;388 {{small|(as of May 8, 2025)}}<ref name="licenseplates.cc">{{Cite web |title=Nebraska License Plates |url=https://www.licenseplates.cc/NE |website=www.licenseplates.cc |access-date=July 13, 2024}}</ref>
+|rowspan="2"|In Douglas, Lancaster and Sarpy Counties, the 'Z' series of serials was reserved for certain non-passenger types, including local trucks.
+|-
+|
+|''3''-A1234<br>''3''-AB123<br>''10''-A123<br>''10''-AB12
+|Coded by county of issuance (''3'' or ''10'')
+|}
+
+===Optional plates===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150x150px]]
+|2012
+|Yellow Union Pacific locomotive and train left, plowed wheat field and city skyline right
+|Union Pacific Railroad Museum
+|123AB
+|001AA to 660EN {{small|(as of January 26, 2024)}}<ref name="licenseplates.cc"/>
+|Awarded "Plate of the Year" for best new license plate of 2012 by the [[Automobile License Plate Collectors Association]], the first time Nebraska was so honored.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="6"|Motorcycle
+|1999–2001
+|Embossed red on white; "NEB" at top left
+|''1''&nbsp;{{small|'''M'''/'''C'''}}&nbsp;12345<br>''10''&nbsp;{{small|'''M'''/'''C'''}}&nbsp;1234
+|Coded by county of issuance.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|2002–04}}
+|Embossed black on white; "NEB" at top left
+|ABC 123<br>''3''&nbsp;{{small|'''M'''/'''C'''}}&nbsp;1234<br>''10''&nbsp;{{small|'''M'''/'''C'''}}&nbsp;1234
+|ABC 123 serial format used in Douglas, Lancaster and Sarpy Counties; shared with passenger plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2004
+|Screened black on white; "NEBRASKA" and "MC" at top left
+|ABC 123<br>''3''-1234<br>''10''-1234
+|Serials continued from where the 2002–04 plates left off.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2005–10
+|Screened blue on white; "NEBRASKA" and "MC" at top left
+|ABC 123<br>''3''-1234<br>''10''-1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011–16
+|Screened dark green on white; "NEBRASKA" and "MC" at top left
+|ABC 123<br>''3''-1234<br>''10''-1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2017–present
+|Screened black on white; "NEBRASKA" and "MOTORCYCLE" centered at top
+|ABC 123<br>''3''-1234<br>''10''-1234
+|
+|}
+
+==County coding==
+[[File:Nebraskaplatenumbers.png|right|400px|thumb|Nebraska counties by license plate prefix]]
+Nebraska established a county-code system for its passenger and motorcycle plates in 1922, with one- or two-digit codes assigned to each county in order of the number of registered vehicles in the county at that time.<ref>{{cite web |url=http://www.dmv.nebraska.gov/dvr/plates/plthistory.html |title=History Of Nebraska Passenger Vehicle License Plates |publisher=Nebraska Department of Motor Vehicles |access-date=October 29, 2015 |archive-date=December 27, 2015 |archive-url=https://web.archive.org/web/20151227071418/http://www.dmv.nebraska.gov/dvr/plates/plthistory.html |url-status=dead }}</ref> These codes remained constant through 1950.
+
+For 1951, letter codes were used. One-letter codes were assigned to the first counties whose names began with those letters, while all other counties were assigned two-letter codes consisting of the initial letter and the next available letter in their names (the letters I, O and Q were not used). There were three exceptions: [[Douglas County, Nebraska|Douglas County]], the most populous in the state, was assigned single-letter X to increase capacity; [[Otoe County, Nebraska|Otoe County]] was assigned Z as O was not allowed; and [[Dodge County, Nebraska|Dodge County]] was assigned DG instead of DD as double-letter codes were also not allowed.<ref>{{cite web |last=Reback |first=Brian P. |title=Nebraska - county codes |url=http://www.bprlicenseplates.com/Nebraska%20-%20county%20codes.htm |publisher=bprlicenseplates.com |archive-url=https://web.archive.org/web/20150312143912/http://www.bprlicenseplates.com/Nebraska%20-%20county%20codes.htm |archive-date=March 12, 2015 |access-date=March 11, 2016}}</ref>
+
+The numeric code system was reintroduced in 1952, with the codes the same as before. It remains in use, except in Douglas, [[Lancaster County, Nebraska|Lancaster]], and [[Sarpy County, Nebraska|Sarpy]] Counties, which adopted an uncoded ABC 123 serial format in 2002.
+
+{|class="wikitable sortable" align="center" width="300px" style="border: 1px solid #88a; padding: 5px; font-size: 95%; text-align: left;"
+|- style="background-color: #ccf"
+!County
+!Numeric code, 1922
+!Letter code, 1951
+!Current code, 2002
+|-
+||[[Adams County, Nebraska|Adams]] || 14 || A
+|14
+|-
+||[[Antelope County, Nebraska|Antelope]] || 26 || AN
+|26
+|-
+||[[Arthur County, Nebraska|Arthur]] || 91 || AR
+|91
+|-
+||[[Banner County, Nebraska|Banner]] || 85 || B
+|85
+|-
+||[[Blaine County, Nebraska|Blaine]] || 86 || BA
+|86
+|-
+||[[Boone County, Nebraska|Boone]] || 23 || BN
+|23
+|-
+||[[Box Butte County, Nebraska|Box Butte]] || 65 || BX
+|65
+|-
+||[[Boyd County, Nebraska|Boyd]] || 63 || BY
+|63
+|-
+||[[Brown County, Nebraska|Brown]] || 75 || BR
+|75
+|-
+||[[Buffalo County, Nebraska|Buffalo]] || 9 || BU
+|9
+|-
+||[[Burt County, Nebraska|Burt]] || 31 || BT
+|31
+|-
+||[[Butler County, Nebraska|Butler]] || 25 || BL
+|25
+|-
+||[[Cass County, Nebraska|Cass]] || 20 || C
+|20
+|-
+||[[Cedar County, Nebraska|Cedar]] || 13 || CE
+|13
+|-
+||[[Chase County, Nebraska|Chase]] || 72 || CH
+|72
+|-
+||[[Cherry County, Nebraska|Cherry]] || 66 || CR
+|66
+|-
+||[[Cheyenne County, Nebraska|Cheyenne]] || 39 || CY
+|39
+|-
+||[[Clay County, Nebraska|Clay]] || 30 || CL
+|30
+|-
+||[[Colfax County, Nebraska|Colfax]] || 43 || CF
+|43
+|-
+||[[Cuming County, Nebraska|Cuming]] || 24 || CU
+|24
+|-
+||[[Custer County, Nebraska|Custer]] || 4 || CS
+|4
+|-
+||[[Dakota County, Nebraska|Dakota]] || 70 || D
+|70
+|-
+||[[Dawes County, Nebraska|Dawes]] || 69 || DA
+|69
+|-
+||[[Dawson County, Nebraska|Dawson]] || 18 || DW
+|18
+|-
+||[[Deuel County, Nebraska|Deuel]] || 78 || DE
+|78
+|-
+||[[Dixon County, Nebraska|Dixon]] || 35 || DX
+|35
+|-
+||[[Dodge County, Nebraska|Dodge]] || 5 || DG
+|5
+|-
+||[[Douglas County, Nebraska|Douglas]] || 1 || X
+|ABC 123
+|-
+||[[Dundy County, Nebraska|Dundy]] || 76 || DU
+|76
+|-
+||[[Fillmore County, Nebraska|Fillmore]] || 34 || F
+|34
+|-
+||[[Franklin County, Nebraska|Franklin]] || 50 || FR
+|50
+|-
+||[[Frontier County, Nebraska|Frontier]] || 60 || FN
+|60
+|-
+||[[Furnas County, Nebraska|Furnas]] || 38 || FU
+|38
+|-
+||[[Gage County, Nebraska|Gage]] || 3 || G
+|3
+|-
+||[[Garden County, Nebraska|Garden]] || 77 || GA
+|77
+|-
+||[[Garfield County, Nebraska|Garfield]] || 83 || GR
+|83
+|-
+||[[Gosper County, Nebraska|Gosper]] || 73 || GS
+|73
+|-
+||[[Grant County, Nebraska|Grant]] || 92 || GN
+|92
+|-
+||[[Greeley County, Nebraska|Greeley]] || 62 || GE
+|62
+|-
+||[[Hall County, Nebraska|Hall]] || 8 || H
+|8
+|-
+||[[Hamilton County, Nebraska|Hamilton]] || 28 || HA
+|28
+|-
+||[[Harlan County, Nebraska|Harlan]] || 51 || HR
+|51
+|-
+||[[Hayes County, Nebraska|Hayes]] || 79 || HY
+|79
+|-
+||[[Hitchcock County, Nebraska|Hitchcock]] || 67 || HT
+|67
+|-
+||[[Holt County, Nebraska|Holt]] || 36 || HL
+|36
+|-
+||[[Hooker County, Nebraska|Hooker]] || 93 || HK
+|93
+|-
+||[[Howard County, Nebraska|Howard]] || 49 || HW
+|49
+|-
+||[[Jefferson County, Nebraska|Jefferson]] || 33 || J
+|33
+|-
+||[[Johnson County, Nebraska|Johnson]] || 57 || JH
+|57
+|-
+||[[Kearney County, Nebraska|Kearney]] || 52 || K
+|52
+|-
+||[[Keith County, Nebraska|Keith]] || 68 || KE
+|68
+|-
+||[[Keya Paha County, Nebraska|Keya Paha]] || 82 || KY
+|82
+|-
+||[[Kimball County, Nebraska|Kimball]] || 71 || KM
+|71
+|-
+||[[Knox County, Nebraska|Knox]] || 12 || KN
+|12
+|-
+||[[Lancaster County, Nebraska|Lancaster]] || 2 || L
+|ABC 123
+|-
+||[[Lincoln County, Nebraska|Lincoln]] || 15 || LN
+|15
+|-
+||[[Logan County, Nebraska|Logan]] || 87 || LG
+|87
+|-
+||[[Loup County, Nebraska|Loup]] || 88 || LU
+|88
+|-
+||[[Madison County, Nebraska|Madison]] || 7 || M
+|7
+|-
+||[[McPherson County, Nebraska|McPherson]] || 90 || MC
+|90
+|-
+||[[Merrick County, Nebraska|Merrick]] || 46 || ME
+|46
+|-
+||[[Morrill County, Nebraska|Morrill]] || 64 || MR
+|64
+|-
+||[[Nance County, Nebraska|Nance]] || 58 || N
+|58
+|-
+||[[Nemaha County, Nebraska|Nemaha]] || 44 || NE
+|44
+|-
+||[[Nuckolls County, Nebraska|Nuckolls]] || 42 || NU
+|42
+|-
+||[[Otoe County, Nebraska|Otoe]] || 11 || Z
+|11
+|-
+||[[Pawnee County, Nebraska|Pawnee]] || 54 || P
+|54
+|-
+||[[Perkins County, Nebraska|Perkins]] || 74 || PE
+|74
+|-
+||[[Phelps County, Nebraska|Phelps]] || 37 || PH
+|37
+|-
+||[[Pierce County, Nebraska|Pierce]] || 40 || PR
+|40
+|-
+||[[Platte County, Nebraska|Platte]] || 10 || PL
+|10
+|-
+||[[Polk County, Nebraska|Polk]] || 41 || PK
+|41
+|-
+||[[Red Willow County, Nebraska|Red Willow]] || 48 || R
+|48
+|-
+||[[Richardson County, Nebraska|Richardson]] || 19 || RC
+|19
+|-
+||[[Rock County, Nebraska|Rock]] || 81 || RK
+|81
+|-
+||[[Saline County, Nebraska|Saline]] || 22 || S
+|22
+|-
+||[[Sarpy County, Nebraska|Sarpy]] || 59 || SA
+|ABC 123
+|-
+||[[Saunders County, Nebraska|Saunders]] || 6 || SU
+|6
+|-
+||[[Scotts Bluff County, Nebraska|Scotts Bluff]] || 21 || SC
+|21
+|-
+||[[Seward County, Nebraska|Seward]] || 16 || SE
+|16
+|-
+||[[Sheridan County, Nebraska|Sheridan]] || 61 || SH
+|61
+|-
+||[[Sherman County, Nebraska|Sherman]] || 56 || SR
+|56
+|-
+||[[Sioux County, Nebraska|Sioux]] || 80 || SX
+|80
+|-
+||[[Stanton County, Nebraska|Stanton]] || 53 || ST
+|53
+|-
+||[[Thayer County, Nebraska|Thayer]] || 32 || T
+|32
+|-
+||[[Thomas County, Nebraska|Thomas]] || 89 || TH
+|89
+|-
+||[[Thurston County, Nebraska|Thurston]] || 55 || TU
+|55
+|-
+||[[Valley County, Nebraska|Valley]] || 47 || V
+|47
+|-
+||[[Washington County, Nebraska|Washington]] || 29 || W
+|29
+|-
+||[[Wayne County, Nebraska|Wayne]] || 27 || WA
+|27
+|-
+||[[Webster County, Nebraska|Webster]] || 45 || WE
+|45
+|-
+||[[Wheeler County, Nebraska|Wheeler]] || 84 || WH
+|84
+|-
+||[[York County, Nebraska|York]] || 17 || Y
+|17
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/ne.html Nebraska license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200205030348/http://15q.net/ne.html |date=February 5, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Nebraska}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Nebraska}}
+[[Category:Vehicle registration plates of the United States by state or territory|Nebraska]]
+[[Category:Nebraska transportation-related lists]]
+[[Category:Transportation in Nebraska]]

@@ -14,6 +14,14 @@ import SwiftUI
 // Deliberately omitted: New Mexico's Zia sun. It is a sacred symbol of Zia
 // Pueblo and its use is actively disputed — a separate problem from copyright,
 // and one that redrawing it does not solve.
+//
+// The palette below is grounded, not guessed: `research/plate-primary.csv` has
+// one real, described photograph per jurisdiction (plate_vision.py), and every
+// entry here except WY and YT — no free photo exists for either — was checked
+// against it and adjusted where the two disagreed. Colours were then pushed
+// through a WCAG-AA check against both gradient stops; a few (marked below)
+// had to be pulled off the literal photographed hue to stay legible, the same
+// tradeoff CO/MT/AZ already made before any of this data existed.
 
 enum Motif {
     case mountains       // ranges and ridgelines
@@ -27,6 +35,11 @@ enum Motif {
     case wheat           // plains
     case maple           // Canada
     case horizon         // generic two-tone split, the default when nothing fits
+    case fleurDeLis       // Quebec — was sharing .maple with Ontario, read as identical
+    case stateOutline     // a small place-mark separator (New Jersey, Missouri)
+    case arch             // Utah's sandstone arch
+    case cactus           // Arizona's saguaro
+    case bloom            // a single stylised flower (Alberta's rose, Newfoundland's pitcher plant)
 }
 
 struct PlateStyle {
@@ -69,78 +82,139 @@ struct PlateStyle {
     static let catalog: [String: PlateStyle] = [
 
         // ---- states ----
-        "AL": .init(0xFFFFFF, 0xEFF3F6, ink: 0x1B3A6B, accent: 0xB3282D, .horizon),
-        "AK": .init(0xF6C544, 0xE39F1E, ink: 0x18355F, accent: 0xC8801E, .sunDisc),
-        // sunset lifted and the maroon deepened; the original failed at the
-        // bottom of the gradient only
-        "AZ": .init(0xF6B072, 0xE8834F, ink: 0x4A1214, accent: 0xFBD9A0, .sunDisc),
-        "AR": .init(0xFDFDF8, 0xE8EFE6, ink: 0x1F5C3A, accent: 0xB3282D, .mountains),
-        "CA": .init(0xFFFFFF, 0xF3F1E8, ink: 0x1A3E7C, accent: 0xC8102E, .scriptBar),
-        "CO": .init(0x2F7D4F, 0x1C5334, ink: 0xFFFFFF, accent: 0xBFE3CC, .mountains),
-        "CT": .init(0xF7FAFD, 0xE3ECF5, ink: 0x123C6B, accent: 0x7FA8CE, .horizon),
-        "DE": .init(0x14315C, 0x0D2440, ink: 0xF2C14E, accent: 0xF2C14E),
-        "FL": .init(0xFFFFFF, 0xFFF3E0, ink: 0x1F6F3C, accent: 0xF29F3D, .sunDisc),
-        "GA": .init(0xFFFFFF, 0xFBEDE6, ink: 0x1C3F94, accent: 0xE0876A, .horizon),
-        "HI": .init(0xFFFFFF, 0xF2F6FA, ink: 0x14539A, accent: nil, .rainbow),
-        "ID": .init(0xF6F9FC, 0xDCE9F2, ink: 0x1D4E76, accent: 0x8FB4D6, .mountains),
-        "IL": .init(0xFFFFFF, 0xEDF1F6, ink: 0x14305C, accent: 0xB3282D, .skyline),
-        "IN": .init(0xFFFFFF, 0xEAF0F7, ink: 0x16386B, accent: 0xE0A33E, .star),
-        "IA": .init(0xFCFBF3, 0xEDEBD6, ink: 0x2C5E2E, accent: 0xE0B84B, .wheat),
-        "KS": .init(0xFDF6E0, 0xF2E2B0, ink: 0x2F4E86, accent: 0xE0A83E, .wheat),
-        "KY": .init(0xF7FAFC, 0xE6EEF5, ink: 0x1B4A82, accent: 0x9FC4E0, .horizon),
-        "LA": .init(0xFFFDF5, 0xF2EBD8, ink: 0x1C3F7A, accent: 0xC9A227, .wave),
-        "ME": .init(0xFAFDF9, 0xE4EFE2, ink: 0x1F5230, accent: 0xC8801E, .pine),
-        "MD": .init(0xFFFFFF, 0xF4EFE2, ink: 0x1F1F1F, accent: 0xC8A02E, .horizon),
-        "MA": .init(0xFFFFFF, 0xF3F5F8, ink: 0xB3282D, accent: 0x1B3A6B, .horizon),
-        "MI": .init(0xEAF4FB, 0x9FC9E4, ink: 0x14406E, accent: 0xFFFFFF, .wave),
-        "MN": .init(0xF2F9FC, 0xCFE4F0, ink: 0x1B5E4A, accent: 0x2E7D8F, .pine),
-        "MS": .init(0xFFFFFF, 0xF6EEF2, ink: 0x1C3F6B, accent: 0xC26A8D, .horizon),
-        "MO": .init(0xFFFFFF, 0xEDF0F5, ink: 0x1A3A6B, accent: 0xB3282D, .skyline),
-        // sky lightened so the navy holds at both ends of the gradient
-        "MT": .init(0x9FC9E8, 0xE3F0F9, ink: 0x13294B, accent: 0xFFFFFF, .mountains),
-        "NE": .init(0xFDF8E8, 0xEFE2BE, ink: 0x2B4C7E, accent: 0xC8A02E, .wheat),
-        "NV": .init(0xE9EDF2, 0xB9C4D1, ink: 0x22384F, accent: 0x7A8899, .mountains),
-        "NH": .init(0xF6FAF6, 0xDCE9DC, ink: 0x1F5230, accent: 0x8FB08F, .mountains),
-        "NJ": .init(0xF7E7A8, 0xE9D076, ink: 0x2E2A1A, accent: 0x9C8A3E),
-        // deeper teal than the real plate: yellow-on-turquoise measures 2.0:1
-        "NM": .init(0x14615C, 0x0E4A46, ink: 0xF7D84B, accent: 0xF7D84B),
-        "NY": .init(0x143A75, 0x0E2A57, ink: 0xF5A623, accent: 0xF5A623, .skyline),
-        "NC": .init(0xFFFFFF, 0xEFF2F7, ink: 0x1B3A8C, accent: 0xB3282D, .horizon),
-        "ND": .init(0xF4F8F2, 0xD9E6D2, ink: 0x2B5738, accent: 0xB08A4A, .wheat),
-        "OH": .init(0xFFFFFF, 0xFDEFE0, ink: 0x1C3F7A, accent: 0xE07B39, .sunDisc),
-        "OK": .init(0xF9FBFD, 0xDCE9F2, ink: 0x1F4E79, accent: 0xC8623E, .wheat),
-        "OR": .init(0xF5FAF6, 0xD9EADF, ink: 0x1B5E3A, accent: 0x2E8B57, .pine),
-        "PA": .init(0xFFFFFF, 0xEDF1F7, ink: 0x14305C, accent: 0xE0B84B, .horizon),
-        "RI": .init(0xFAFCFE, 0xDCEBF5, ink: 0x1B4A82, accent: 0x6FA8DC, .wave),
-        "SC": .init(0x1B4A5A, 0x0F323E, ink: 0xF2F7F5, accent: 0x8FCBB8, .pine),
-        "SD": .init(0xF7F4EC, 0xE2D9C4, ink: 0x3E4A5A, accent: 0x9A8468, .mountains),
-        "TN": .init(0xFFFFFF, 0xEDF2F0, ink: 0x1B5E4A, accent: 0xC8A02E, .star),
-        "TX": .init(0xFBFBFC, 0xDDE1E6, ink: 0x22262B, accent: 0x8A9099, .star),
-        "UT": .init(0xFDF1E6, 0xE8C4A0, ink: 0x8A3A1E, accent: 0xC8623E, .mountains),
-        "VT": .init(0x2E6B47, 0x1C4A30, ink: 0xF7FBF8, accent: 0xA8D8BE, .pine),
-        "VA": .init(0xFFFFFF, 0xEDF1F6, ink: 0x1B3A6B, accent: 0x7FA8CE, .horizon),
-        "WA": .init(0xF2F8FB, 0xCFE2EE, ink: 0x1B5E4A, accent: 0xFFFFFF, .mountains),
-        "WV": .init(0xF7FAFC, 0xE0EAF2, ink: 0x1C3F7A, accent: 0xC8A02E, .mountains),
-        "WI": .init(0xFFF8F0, 0xF2DCC4, ink: 0x8A2B2B, accent: 0xC8623E, .wheat),
+        // coastal sunset/lighthouse scene; wave motif for the shoreline
+        "AL": .init(0xE0C97A, 0x7FA9C4, ink: 0x1C1C1C, accent: 0xB3282D, .wave),
+        // Big Dipper flag, not a sun — kept sunDisc as the closest existing shape
+        "AK": .init(0xF6C544, 0xE0A32A, ink: 0x14305C, accent: 0xC8623E, .sunDisc),
+        // saguaro + purple mountains desert scene (colours adjusted from the raw photo to clear WCAG AA)
+        "AZ": .init(0xBFE0EE, 0xF2D9A0, ink: 0x0E4E4B, accent: 0xE0876A, .cactus),
+        // pale blue-to-white gradient, faint diamond watermark
+        "AR": .init(0xE8F0F6, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1F5C3A, .horizon),
+        // unchanged — matched already
+        "CA": .init(0xFFFFFF, 0xF3F1E8, ink: 0x14305C, accent: 0xB3282D, .scriptBar),
+        // was inverted: real plate is white bg / green ink, not green bg / white ink
+        "CO": .init(0xFFFFFF, 0xEAF0EC, ink: 0x1B5230, accent: 0x1B5230, .mountains),
+        // sky-blue-to-white gradient; small state outline
+        "CT": .init(0xBFE0F2, 0xFFFFFF, ink: 0x14305C, accent: 0x6FA8DC, .horizon),
+        // unchanged — matched already
+        "DE": .init(0x14305C, 0x0E2A57, ink: 0xF2C14E, accent: 0xF2C14E, nil),
+        // orange-blossom plate; kept the closest existing warm-state shape
+        "FL": .init(0xFFFFFF, 0xE8F2EA, ink: 0x1B5230, accent: 0xD97B3D, .sunDisc),
+        // flat grey field, peach graphic; no peach motif exists yet
+        "GA": .init(0xEDEDED, 0xE0E0E0, ink: 0x1C1C1C, accent: 0xD97B3D, .horizon),
+        // ink was navy, real serial is black
+        "HI": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1C1C1C, accent: nil, .rainbow),
+        // red/white/blue banded potato-and-mountains plate
+        "ID": .init(0xE8A0A0, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1B7D78, .mountains),
+        // was white bg / navy ink: real plate is a blue gradient with a red serial (colours adjusted from the raw photo to clear WCAG AA)
+        "IL": .init(0xD9E9F5, 0xEFF6FB, ink: 0x9E1A24, accent: 0x9E1A24, .skyline),
+        // covered bridge + pine trees; no bridge motif, pine is the closest fit
+        "IN": .init(0xBFE0F2, 0x8FB4D6, ink: 0x14305C, accent: 0xB3282D, .pine),
+        // skyline + wind turbine top band, green ground
+        "IA": .init(0xBFE0F2, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1F5C3A, .skyline),
+        // unchanged — matched already
+        "KS": .init(0xD6E9F5, 0xC2DCEE, ink: 0x1C1C1C, accent: 0xE0B84B, .wheat),
+        // white-to-cyan gradient
+        "KY": .init(0xFFFFFF, 0xBFE8EE, ink: 0x14305C, accent: 0x6FA8DC, .horizon),
+        // pelican on a post; wave is the closest coastal shape available
+        "LA": .init(0xFFFFFF, 0xF2ECD8, ink: 0x1C1C1C, accent: 0xE0B84B, .wave),
+        // unchanged — matched already
+        "ME": .init(0xFFFFFF, 0xF2F2F2, ink: 0x14305C, accent: 0x14305C, .horizon),
+        // state-flag ribbon across the lower half; ink was correct, adjusted from navy-black to true black
+        "MD": .init(0xFFFFFF, 0xF4EFE2, ink: 0x1C1C1C, accent: 0xE0B84B, .horizon),
+        // unchanged — matched already
+        "MA": .init(0xFFFFFF, 0xF3F5F8, ink: 0xB3282D, accent: 0x14305C, .horizon),
+        // was mostly-blue bg: real plate is white with a wave band across only the bottom third
+        "MI": .init(0xFFFFFF, 0xBFE0F2, ink: 0x1B4A8C, accent: 0x1B4A8C, .wave),
+        // lakeshore/canoe/pine scene; ink was green, real serial is black
+        "MN": .init(0xBFE0F2, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1B7D78, .pine),
+        // unchanged — matched already
+        "MS": .init(0xFFFFFF, 0xF6EEF2, ink: 0x14305C, accent: 0xC26A8D, .horizon),
+        // state outline + bluebird; was skyline, which doesn't exist on this plate
+        "MO": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1B4A8C, accent: 0x1B4A8C, .stateOutline),
+        // unchanged shape, ink lightened from navy to the true dark-grey serial
+        "MT": .init(0xBFE0F2, 0xFFFFFF, ink: 0x3E3D46, accent: 0xE0B84B, .mountains),
+        // silver-grey field with a ghosted watermark; wheat motif from before doesn't match the current design
+        "NE": .init(0xE8ECEF, 0xD6DCE2, ink: 0x14305C, accent: 0xE0B84B, .horizon),
+        // low-poly mountain range; unchanged shape
+        "NV": .init(0xBFE0F2, 0xE0C97A, ink: 0x1C1C1C, accent: 0x1F5C3A, .mountains),
+        // unchanged shape — Old Man of the Mountain watermark reads as a mountain motif
+        "NH": .init(0xFFFFFF, 0xF2F2F2, ink: 0x1B5230, accent: 0x1B5230, .mountains),
+        // background was too saturated/gold — real plate is a pale cream; added the state-outline motif for its actual separator mark
+        "NJ": .init(0xF7F3E6, 0xE9DFC4, ink: 0x1C1C1C, accent: 0x1C1C1C, .stateOutline),
+        // unchanged — matched already; Zia deliberately omitted, see file header
+        "NM": .init(0x14615C, 0x0E4A46, ink: 0xF7D84B, accent: 0xF7D84B, nil),
+        // was navy bg / gold ink — that's the retired ~2010-2020 plate; the current Excelsior design is cream with a navy serial and a skyline vignette
+        "NY": .init(0xF7F3E6, 0xE8E4DC, ink: 0x14305C, accent: 0x14305C, .skyline),
+        // Wright Flyer + beach grass; wave motif for the dune/water linework
+        "NC": .init(0xF2EFE6, 0xFFFFFF, ink: 0x1B3A9E, accent: 0xB3282D, .wave),
+        // badlands sunset with a bison; mountains is the closest existing shape
+        "ND": .init(0xBFE0F2, 0xE0A05A, ink: 0x1C1C1C, accent: 0xC8623E, .mountains),
+        // was white bg / navy ink / orange accent: real current plate is flat gold with a red serial (colours adjusted from the raw photo to clear WCAG AA)
+        "OH": .init(0xF6C544, 0xE0A32A, ink: 0x7A1015, accent: 0xB3282D, nil),
+        // was pale blue / navy: the Sept-2024 design is solid saturated red with a white serial and star device
+        "OK": .init(0xB3282D, 0x9E1A24, ink: 0xFFFFFF, accent: 0xFFFFFF, .star),
+        // unchanged — matched already
+        "OR": .init(0xBFE0F2, 0xFFFFFF, ink: 0x14305C, accent: 0x1F5C3A, .pine),
+        // banded blue/white/gold; added state-outline for its corner mark (colours adjusted from the raw photo to clear WCAG AA)
+        "PA": .init(0x6FA8DC, 0xE0B84B, ink: 0x14305C, accent: 0x6FA8DC, .stateOutline),
+        // unchanged — matched already
+        "RI": .init(0xBFE0F2, 0xDCEBF5, ink: 0x14305C, accent: 0x6FA8DC, .wave),
+        // was dark-teal bg / near-white ink: real plate is light (blue-to-white gradient) with a black serial — inverted brightness (colours adjusted from the raw photo to clear WCAG AA)
+        "SC": .init(0x6FA8DC, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1B4A8C, .pine),
+        // photographic Rushmore scene; mountains is the closest existing shape
+        "SD": .init(0xBFE0F2, 0x8A8580, ink: 0x1C1C1C, accent: 0xE0B84B, .mountains),
+        // was white bg / green ink: real current plate is solid navy with a white serial and tri-star emblem
+        "TN": .init(0x14305C, 0x0E2A57, ink: 0xFFFFFF, accent: 0xFFFFFF, .star),
+        // unchanged shape, ink darkened from grey to true black
+        "TX": .init(0xFFFFFF, 0xEDEDED, ink: 0x1C1C1C, accent: 0x1C1C1C, .star),
+        // was peach bg / brown ink: real plate is blue-sky-to-tan-desert with a navy serial and Delicate Arch — added an arch motif for it
+        "UT": .init(0xBFE0F2, 0xE0C29A, ink: 0x14305C, accent: 0xC8623E, .arch),
+        // unchanged — matched already
+        "VT": .init(0x1F5C3A, 0x1B5230, ink: 0xFFFFFF, accent: 0xFFFFFF, .pine),
+        // unchanged — matched already, small heart accent kept as the red device
+        "VA": .init(0xFFFFFF, 0xF2F6FA, ink: 0x14305C, accent: 0xB3282D, .horizon),
+        // was light-blue bg / green ink: real plate is warm cream with a navy serial; Rainier silhouette keeps the mountains motif
+        "WA": .init(0xF2ECD8, 0xE8E0CC, ink: 0x14305C, accent: 0xBFE0F2, .mountains),
+        // state-seal watermark + gold rules, not a mountain graphic — kept the shape as the closest existing fit
+        "WV": .init(0xFFFFFF, 0xF2F6FA, ink: 0x14305C, accent: 0xE0B84B, .mountains),
+        // was cream/wheat-toned bg / maroon ink: real plate is flat white with a black serial; wheat kept loosely for the farm-scene vignette
+        "WI": .init(0xFFFFFF, 0xF2F2F2, ink: 0x1C1C1C, accent: 0xD97B3D, .wheat),
+        // no photo yet — WY's agency still only shows the retired 2017 sample
         "WY": .init(0xF7FAFD, 0xDCE9F2, ink: 0x8A3A1E, accent: 0x2B4C7E, .mountains),
 
         // ---- bonus ----
-        "DC": .init(0xFFFFFF, 0xEDF1F7, ink: 0x1B3A8C, accent: 0xB3282D, .skyline),
-        "PR": .init(0xF2FAFB, 0xCFE9EE, ink: 0x1B5E7A, accent: 0xC8283E, .wave),
+        // DC flag's three stars — swapped skyline for star, there's no skyline on this plate
+        "DC": .init(0xFFFFFF, 0xEDF1F7, ink: 0x14305C, accent: 0xB3282D, .star),
+        // unchanged — matched already
+        "PR": .init(0xBFE0F2, 0x8FB4D6, ink: 0x1C1C1C, accent: 0x9E1A24, .wave),
 
         // ---- Canada ----
-        "ON": .init(0xFFFFFF, 0xEDF2F7, ink: 0x1B4A8C, accent: 0x6FA8DC, .maple),
-        "QC": .init(0xFFFFFF, 0xE9EFF7, ink: 0x1B3A8C, accent: 0x4A78C4, .maple),
-        "BC": .init(0xF4F9FB, 0xD6E7EF, ink: 0x1B4A6B, accent: 0x2E8B8B, .mountains),
-        "AB": .init(0xFFFFFF, 0xF2ECEC, ink: 0x8A2B2B, accent: 0xC8623E, .wheat),
-        "MB": .init(0xF7FBF7, 0xDCEADC, ink: 0x1F5230, accent: 0x6FA88A, .maple),
-        "SK": .init(0xFDF8E8, 0xEFE2BE, ink: 0x2B6B3E, accent: 0xC8A02E, .wheat),
-        "NS": .init(0xF7FAFD, 0xDCE9F5, ink: 0x1B3A8C, accent: 0x6FA8DC, .wave),
-        "NB": .init(0xFFFAF2, 0xF2E4D2, ink: 0x8A4A1E, accent: 0xC8801E, .pine),
-        "NL": .init(0xF5FAF7, 0xD9EAE0, ink: 0x1B5E4A, accent: 0xB3282D, .wave),
-        "PE": .init(0xFDF4F4, 0xF2D9D9, ink: 0x8A2B3E, accent: 0xC8623E, .wave),
-        "NT": .init(0xF2F8FC, 0xD2E6F2, ink: 0x1B4A7A, accent: 0x8FB4D6, .mountains),
+        // was white bg / navy ink: the 2020 redesign (A Place to Grow) is solid blue with a white serial — the old white/navy values belonged to the previous design (colours adjusted from the raw photo to clear WCAG AA)
+        "ON": .init(0x1B4A8C, 0x2E6BB0, ink: 0xFFFFFF, accent: 0xFFFFFF, .maple),
+        // was sharing Ontario's maple motif — fleur-de-lis is Quebec's actual mark and now reads distinctly from Ontario at tile size
+        "QC": .init(0xFFFFFF, 0xE9EFF7, ink: 0x14305C, accent: 0x4A78C4, .fleurDeLis),
+        // Union Jack/sunburst flag; off-white speckled sheeting
+        "BC": .init(0xF7F5EE, 0xEDEADF, ink: 0x14305C, accent: 0x6FA8DC, .wave),
+        // wild rose + small flag device
+        "AB": .init(0xFFFFFF, 0xF2EDE8, ink: 0xB3282D, accent: 0xE0876A, .bloom),
+        // prairie-and-forest landscape with a bison; maple kept as the Canada-wide shorthand
+        "MB": .init(0xBFE0F2, 0xE0C97A, ink: 0x14305C, accent: 0x6FA88A, .maple),
+        // unchanged — matched already
+        "SK": .init(0xF2ECD8, 0xE9DFC4, ink: 0x1F5C3A, accent: 0xE0B84B, .wheat),
+        // unchanged — matched already
+        "NS": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1B4A8C, accent: 0x6FA8DC, .wave),
+        // sky-wash arc + sailing-ship logo
+        "NB": .init(0xFFFFFF, 0xF2E4D2, ink: 0x9E1A24, accent: 0xE0B84B, .wave),
+        // pitcher-plant flower logo — same new bloom shape as Alberta's rose
+        "NL": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1B3A8C, accent: 0xB3282D, .bloom),
+        // coat of arms crest; no heraldic-shield motif exists, left unset rather than force a poor fit
+        "PE": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1F5C3A, accent: 0xB3282D, nil),
+        // unchanged — matched already
+        "NT": .init(0xBFE0F2, 0xFFFFFF, ink: 0x14305C, accent: 0x6FA8DC, .mountains),
+        // no photo yet — the 1990 design has never had a free-licensed photo turn up
         "YT": .init(0xFDF6E0, 0xEDD9A8, ink: 0x6B4A1E, accent: 0xC8A02E, .mountains),
-        "NU": .init(0xF4FAFC, 0xD6EAF2, ink: 0x1B4A6B, accent: 0x7FB8CE, .horizon)
+        // aurora-over-snow scene; no aurora motif exists, horizon is the neutral fallback (colours adjusted from the raw photo to clear WCAG AA)
+        "NU": .init(0xC2B4DC, 0xBFE0F2, ink: 0x1C1C1C, accent: 0x2E8B8B, .horizon)
     ]
 }

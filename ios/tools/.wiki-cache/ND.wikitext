@@ -1,0 +1,592 @@
+{{short description|North Dakota vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = North Dakota license plate.jpg
+| caption = "Legendary" plate with original font for the state name
+| nickname = Legendary
+| slogan_label = Slogan
+| slogan = Legendary North Dakota<br>Peace Garden State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123 ABC
+| current_start_date = {{Start date|2015|11|12}}<br>(minor redesign November 2016)
+| designer = 
+| issuer = [[North Dakota Department of Transportation]], Motor Vehicle Division
+| manufacturer = 
+| start_date = {{Start date|1911}}
+}}
+The U.S. state of [[North Dakota]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1911. {{As of|2024}}, plates are issued by the [[North Dakota Department of Transportation]] through its Motor Vehicle Division. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1911 to 1957===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first North Dakota license plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:65px;"|Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|Golden yellow serial on black flat metal plate; vertical "ND" and "1911" at left and right respectively
+|''none''
+|1234
+|1 to approximately 7000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|Embossed red serial on white plate; vertical "ND" and "1912" at left and right respectively
+|''none''
+|1234
+|1 to approximately 9000
+|
+|-
+|[[File:1913 North Dakota License Plate.png|150px]]
+|1913
+|Embossed black serial on tan plate; vertical "ND" and "1913" at left and right respectively
+|''none''
+|12345
+|1 to approximately 12500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Embossed black serial on yellow plate; vertical "ND" and "1914" at left and right respectively
+|''none''
+|12345
+|1 to approximately 17000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Embossed black serial on green plate; vertical "ND" and "1915" at left and right respectively
+|''none''
+|12345
+|1 to approximately 25000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Debossed yellow serial on black plate with border line; vertical "ND" and "1916" at left and right respectively
+|''none''
+|12345
+|1 to approximately 41000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1917
+|Debossed black serial on white plate with border line; vertical "ND" and "1917" at left and right respectively
+|rowspan="2"|''none''
+|12-345
+|1 to approximately 50-000
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As above, but embossed rather than debossed, and without border line
+|12345
+|50001 to approximately 63000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Debossed red serial on white plate with border line; vertical "ND" and "1918" at left and right respectively
+|''none''
+|12345
+|1 to approximately 72000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Debossed light green serial on black plate with border line; vertical "ND" and "1919" at left and right respectively
+|''none''
+|12345
+|1 to approximately 85000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|Embossed cream serial on green plate with border line; vertical "ND" and "1920" at left and right respectively
+|''none''
+|12345
+|1 to approximately 91000
+|
+|-
+|[[File:1921 North Dakota license plate.jpg|150px]]
+|1921
+|Embossed white serial on dark blue plate with border line; vertical "ND" and "1921" at left and right respectively
+|''none''
+|12345
+|1 to approximately 92000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed black serial on golden yellow plate with border line; vertical "ND" and "1922" at left and right respectively
+|''none''
+|12-345
+|1 to approximately 99-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed white serial on green plate with border line; vertical "ND" and "1923" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 110-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed black serial on silver plate with border line; vertical "ND" and "1924" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 116-000
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1925
+|rowspan="2"|Embossed silver serial on black plate with border line; vertical "ND" and "1925" at left and right respectively
+|rowspan="2"|''none''
+|<u>'''F'''</u>12-345
+|<u>F</u>1 to approximately <u>F</u>82-000
+|Issued on [[Ford Motor Company|Ford]]s.
+|-
+|12-345
+|1 to approximately 51-000
+|Issued on all other vehicles.
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1926
+|rowspan="2"|Embossed red serial on gray plate with border line; vertical "ND" and "1926" at left and right respectively
+|rowspan="2"|''none''
+|<u>'''F'''</u>12-345
+|<u>F</u>1 to approximately <u>F</u>85-000
+|Issued on Fords.
+|-
+|12-345
+|1 to approximately 56-000
+|Issued on all other vehicles.
+|-
+|[[File:1927 North Dakota license plate.JPG|150px]]
+|1927
+|Embossed black serial on orange plate with border line; vertical "ND" and "1927" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 140-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed white serial on black plate with border line; vertical "ND" and "1928" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 151-000
+|
+|-
+|[[File:1929 North Dakota License Plate.jpg|150px]]
+|1929
+|Embossed black serial on silver plate with border line; vertical "ND" and "1929" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 162-000
+|
+|-
+|[[File:1930 North Dakota license plate.jpg|150px]]
+|1930
+|Embossed green serial on golden yellow plate with border line; vertical "ND" and "1930" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 155-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed tan serial on dark blue plate with border line; vertical "ND" and "1931" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 145-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed white serial on maroon plate with border line; vertical "ND" and "1932" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 125-000
+|
+|-
+|[[File:1933 North Dakota passenger license plate.jpg|150px]]
+|1933
+|Embossed white serial on green plate with border line; vertical "ND" and "1933" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 149-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed blue serial on orange plate with border line; vertical "ND" and "1934" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 155-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed orange serial on black plate with border line; vertical "ND" and "1935" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 135-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed black serial on orange plate with border line; vertical "ND" and "1936" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 140-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed green serial on white plate with border line; vertical "ND" and "1937" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 140-000
+|
+|-
+|[[File:1938 North Dakota license plate.jpg|150px]]
+|1938
+|Embossed black serial on yellow plate with border line; vertical "ND" and "1938" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 141-000
+|
+|-
+|[[File:1939 North Dakota license plate.jpg|150px]]
+|1939
+|Embossed red serial on white plate with border line; vertical "ND" and "1939" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 142-000
+|
+|-
+|[[File:1940 North Dakota license plate.jpg|150px]]
+|1940
+|Embossed yellow serial on black plate with border line; vertical "ND" and "1940" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 147-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed black serial on yellow plate with border line; vertical "ND" and "1941" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 150-000
+|
+|-
+|[[File:1942 North Dakota license plate.jpg|150px]]
+|1942
+|Embossed yellow serial on red plate with border line; vertical "ND" and "1942" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 143-000
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1943
+|As 1942 base, but with vertical "1943" at right
+|''none''
+|123-456
+|200-001 to approximately 213-000
+|Issued only to new registrants.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|Embossed yellow serial on black plate with border line; vertical "ND" and "1944" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 135-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed white serial on black plate with border line; vertical "ND" and "1945" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 130-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed red serial on silver plate with border line; vertical "ND" and "1946" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 140-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed black serial on yellow plate with border line; vertical "ND" and "1947" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 152-000
+|
+|-
+|[[File:1948 North Dakota license plate.jpg|150px]]
+|1948
+|Embossed black serial on yellow plate with border line; "NORTH DAKOTA" centered at top; vertical "1948" at right
+|''none''
+|123-456
+|1 to approximately 162-000
+|First use of the full state name. Revalidated for 1949 with white tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|As 1948 base, but waffle-textured, and with vertical "1949" at right
+|''none''
+|123-456
+|200-001 to approximately 237-000
+|Issued only to new registrants.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed black serial on orange plate with border line; "NORTH DAKOTA" centered at top; vertical "1950" at right
+|''none''
+|123-456
+|1 to approximately 194-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Embossed white serial on black plate with border line; "NORTH DAKOTA" centered at top; vertical "1951" at right
+|''none''
+|123-456
+|1 to approximately 196-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|Embossed black serial on white plate with border line; "NORTH DAKOTA" centered at top; vertical "1952" at right
+|''none''
+|123-456
+|1 to approximately 192-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|Embossed white serial on green plate with border line; "NORTH DAKOTA" centered at top; vertical "1953" at right
+|''none''
+|123-456
+|1 to approximately 198-000
+|
+|-
+|[[File:1954 North Dakota license plate.jpg|150px]]
+|1954
+|Embossed white serial on black plate with border line; "NORTH DAKOTA 54" at top
+|''none''
+|123-456
+|1 to approximately 201-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed yellow serial on black plate with border line; "NORTH DAKOTA 55" at top
+|''none''
+|123-456
+|1 to approximately 209-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed blue serial on white plate with border line; "NORTH DAKOTA 56" at top
+|"PEACE GARDEN STATE" at bottom
+|123-456
+|1 to approximately 208-000
+|First 6" x 12" plate, and first use of the "Peace Garden State" slogan.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|Embossed white serial on blue plate with border line; "NORTH DAKOTA 57" at top
+|"PEACE GARDEN STATE" at bottom
+|123-456
+|1 to approximately 213-000
+|
+|}
+
+===1958 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:North Dakota 1958 license plate.jpg|150px]]
+|{{nowrap|1958–61}}
+|Embossed green serial on reflective white plate with border line; "NORTH DAKOTA 58" at top
+|"PEACE GARDEN STATE" at bottom
+|123-456
+|1 to approximately 316-000
+|Revalidated for 1959 with yellow tabs, for 1960 with orange tabs, and for 1961 with green tabs.
+|-
+|[[File:1963 North Dakota license plate.jpg|150px]]
+|1962–65
+|Embossed black serial on reflective white plate with border line; "N.DAKOTA" at top left and "62" at top right
+|"PEACE GARDEN STATE" at bottom
+|123-456
+|1 to approximately 355-000
+|Revalidated for 1963, 1964 and 1965 with stickers.
+|-
+|[[File:1966-69 North Dakota license plate.jpg|150px]]
+|1966–69
+|Embossed red serial on reflective white plate with border line; "N.DAKOTA" at top left and "66" at top right
+|"PEACE GARDEN STATE" at bottom
+|123-456
+|1 to approximately 378-000
+|Revalidated for 1967, 1968 and 1969 with stickers.
+|-
+|[[File:1970 North Dakota license plate with 1973 sticker - Number 1-760.jpg|150px]]
+|1970–73
+|Embossed blue serial on reflective white plate with border line; "N.DAKOTA" at top left and "70" at top right
+|"PEACE GARDEN STATE" at bottom
+|123-456
+|1 to approximately 416-000
+|
+|-
+|[[File:North Dakota 1974 license plate.png|150px]]
+|1974–79
+|Embossed green serial on reflective white plate with border line; "N.DAKOTA" at top left and "74" at top right 
+|"PEACE GARDEN STATE" at bottom
+|123-456
+|1 to approximately 580-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1980–82
+|Embossed black serial on reflective white plate with border line; "NORTH DAKOTA" centered at top; "80" at top right
+|rowspan="2"|"PEACE GARDEN STATE" at bottom
+|rowspan="2"|ABC&nbsp;123
+|AAA 000 to AVP&nbsp;999
+|rowspan="2"|Manufactured in Iowa using that state's serial [[Die (manufacturing)|die]]s. Issued concurrently with the Theodore Roosevelt base (below) from 1984.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1983–88
+|As above, but without "80"
+|AVR 000 to approximately AZM&nbsp;999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1984–88
+|Embossed blue serial on reflective white plate; blue, white and red graphic featuring [[Theodore Roosevelt]] screened at left; "NORTH DAKOTA" screened in blue centered at bottom
+|"PEACE GARDEN STATE" screened in red centered at top
+|AB123
+|AA000 to approximately KS999
+|Manufactured in South Dakota using that state's serial dies. Awarded "Plate of the Year" for best new license plate of 1985 by the [[Automobile License Plate Collectors Association]], the first time North Dakota was so honored. Co-recipient with [[Vehicle registration plates of Nevada|Nevada]].
+|-
+|[[File:North Dakota license plate, 1989–1992 with January 1991 sticker.png|150px]]
+|1989–92
+|Embossed black serial on light blue, white and light orange gradient plate; long black bar screened below serial containing "1889 NORTH DAKOTA 1989" in white
+|Short black bar screened above serial containing "CENTENNIAL" in white; "PEACE GARDEN STATE" screened in black centered at top
+|ABC&nbsp;123
+|BAA 000 to approximately CNP&nbsp;999
+|Commemorated North Dakota's 100 years of statehood.
+|-
+| 
+|1993&nbsp;– November 11, 2015
+|Embossed black serial on prairie scene with gradient light blue sky, grey mountains and yellow grass; bison at bottom left and three wheat stalks at bottom right; "NORTH DAKOTA" screened in white with heavy black outline, centered below serial
+|"Discover the Spirit" screened in white centered at top; "PEACE GARDEN STATE" screened in brown centered at bottom
+|ABC&nbsp;123
+|DAA 000 to approximately KRZ&nbsp;999
+|Awarded "Plate of the Year" for best new license plate of 1993 by the Automobile License Plate Collectors Association, the second time North Dakota was so honored. 'F' series of serials reserved for Farm plates; 'I' series not used.<ref>{{cite web |last=Tanner |first=Eric N. |title=North Dakota Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=North%20Dakota&code=nd |publisher=allaboutlicenseplates.com |access-date=November 17, 2020}}</ref>
+|-
+| 
+|November 12, 2015<ref>{{cite web |title=New 'Sunrise' North Dakota license plates released |url=http://kfgo.com/news/articles/2015/nov/12/new-sunrise-north-dakota-license-plates-released/ |publisher=[[KFGO (AM)|KFGO]] |date=November 12, 2015 |access-date=December 2, 2015 |archive-date=December 8, 2015 |archive-url=https://web.archive.org/web/20151208072647/http://kfgo.com/news/articles/2015/nov/12/new-sunrise-north-dakota-license-plates-released/ |url-status=dead }}</ref>&nbsp;– November 2016
+|Screened black serial on badlands scene with light blue, orange and yellow gradient sky, yellow rising sun and brown canyon; bison at bottom right; "NORTH DAKOTA" screened in orange centered above serial, with three wheat stalks on either side
+|rowspan="2"|"LEGENDARY" screened in black centered above state name; "PEACE GARDEN STATE" screened in white at bottom left
+|rowspan="2"|123&nbsp;ABC
+|000 AAA to 999&nbsp;BTX
+|rowspan="2"|First general reissue since 1993.
+|-
+|[[File:North Dakota license plate.jpg|150px]]
+|November 2016<ref>{{cite news |title=ND makes slight change to new version of license plates |url=http://www.westfargopioneer.com/news/4231108-nd-makes-slight-change-new-version-license-plates |newspaper=West Fargo Pioneer |date=March 8, 2017 |access-date=July 31, 2017}}</ref>&nbsp;– present
+|As above, but with state name in larger, non-serif font
+|000 BTY to 402&nbsp;EXB {{small|(as of April 6, 2025)}}<ref name="licenseplates.cc">{{Cite web |title=North Dakota License Plates |url=https://www.licenseplates.cc/ND |website=www.licenseplates.cc |access-date=July 3, 2023}}</ref>
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="5"|Motorcycle
+|{{nowrap|1988–94}}
+|Embossed black serial on beige plate; "ND" at top left, "88" at top right and "MOTORCYCLE" at bottom
+|'''L'''12345
+|L1 to approximately L35000
+|rowspan="5"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994–2010
+|Embossed black serial on light blue plate; "ND" at top left and "MOTORCYCLE" at bottom
+|rowspan="2"|'''M'''12345
+|M1 to approximately M93000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|2010–15
+|rowspan="2"|Embossed black serial on graphic plate similar to "Discover the Spirit" passenger base; "ND" screened at top left and "MOTORCYCLE" at bottom
+|M93001 to M99999
+|-
+|rowspan="2"|12345'''M'''
+|1M to approximately 40000M
+|-
+|<!-- Deleted image removed: [[File:NorthDakotaMotorcycle.jpg|150px]] -->
+|2015–present
+|Similar to "Legendary" passenger base; "MOTORCYCLE" screened at bottom
+|50001M to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|Trailer
+|1993–2015
+|As "Discover the Spirit" passenger base
+|rowspan="2"|'''T'''123456
+|T1 to approximately T380000
+|rowspan="2"|
+|-
+|<!-- Deleted image removed: [[File:TrailerNorthDakota.jpg|150px]] -->
+|2015–present
+|As "Legendary" passenger base
+|T400001 to present
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/nd.html North Dakota license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200320034738/https://www.15q.net/nd.html |date=March 20, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{North Dakota}}
+
+[[Category:Vehicle registration plates of the United States by state or territory|North Dakota]]
+[[Category:North Dakota transportation-related lists]]
+[[Category:Transportation in North Dakota]]

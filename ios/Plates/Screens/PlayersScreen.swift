@@ -2,21 +2,52 @@ import SwiftUI
 import SwiftData
 
 struct PlayersScreen: View {
+    /// True when pushed from the More tab, which already supplies a navigation
+    /// stack and a title. Nesting a second one swallows the back button.
+    var embedded = false
+
     @Environment(\.modelContext) private var context
+    @Environment(PopupHost.self) private var popup
 
     @Query(sort: \Player.joinedAt) private var players: [Player]
-    @Query(filter: #Predicate<Trip> { $0.endedAt == nil },
-           sort: \Trip.startedAt, order: .reverse)
-    private var activeTrips: [Trip]
+    @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
+    @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
+    @AppStorage(TripSelection.key) private var currentTripID = ""
+    @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
+    @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
 
     @State private var editing: Player?
     @State private var addingPlayer = false
+
+    /// Acted on after the editor sheet closes — the popup layer is at the root,
+    /// which a sheet covers, so confirming from inside the sheet would show
+    /// nothing at all.
     @State private var pendingDelete: Player?
 
-    private var trip: Trip? { activeTrips.first }
+    /// Standings are for whatever is being filled, trip or book, so the numbers
+    /// here always match the ones on the Drive screen.
+    private var target: (any PlateCollection)? {
+        PlaySelection.current(kind: targetKind, tripID: currentTripID,
+                              bookID: currentBookID, trips: trips, books: books)?.collection
+    }
 
     var body: some View {
-        NavigationStack {
+        Group {
+            if embedded { content } else { NavigationStack { content } }
+        }
+        .sheet(item: $editing, onDismiss: confirmPendingDelete) { player in
+            PlayerEditor(player: player,
+                         usedColors: usedColorIndices(excluding: player),
+                         onDelete: { pendingDelete = player; editing = nil })
+        }
+        .sheet(isPresented: $addingPlayer) {
+            PlayerEditor(player: nil,
+                         usedColors: usedColorIndices(excluding: nil),
+                         onDelete: nil)
+        }
+    }
+
+    private var content: some View {
             ZStack {
                 Theme.ground.ignoresSafeArea()
 
@@ -26,8 +57,8 @@ struct PlayersScreen: View {
                             Button { editing = player } label: {
                                 PlayerRow(
                                     player: player,
-                                    plates: trip.map { platesSpotted(by: player, in: $0) } ?? 0,
-                                    score: trip?.score(for: player) ?? 0
+                                    plates: target.map { platesSpotted(by: player, in: $0) } ?? 0,
+                                    score: target?.score(for: player) ?? 0
                                 )
                             }
                             .buttonStyle(.plain)
@@ -40,7 +71,7 @@ struct PlayersScreen: View {
                                 Image(systemName: "plus")
                                     .font(.system(size: 14, weight: .bold))
                                 Text("Add player")
-                                    .font(.system(size: 15, weight: .semibold))
+                                    .font(.plates(size: 15, weight: .semibold))
                             }
                             .foregroundStyle(Theme.route)
                             .frame(maxWidth: .infinity)
@@ -53,10 +84,8 @@ struct PlayersScreen: View {
                         }
                         .padding(.top, 2)
 
-                        Text(players.count > 1
-                             ? "Tap a plate on the Game screen and you will be asked who spotted it."
-                             : "Add someone to play together in the car. With one player, plates are collected without asking.")
-                            .font(.system(size: 12.5))
+                        Text(footnote)
+                            .font(.plates(size: 12.5))
                             .foregroundStyle(Theme.inkMuted)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 18)
@@ -66,36 +95,39 @@ struct PlayersScreen: View {
                 }
             }
             .navigationTitle("Players")
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(embedded ? .inline : .large)
+    }
+
+    private var footnote: String {
+        // Past six the palette wraps, so two people end up the same colour. Said
+        // once, here, rather than blocking the seventh person from joining.
+        if players.count > Theme.playerColors.count {
+            return "Tap a plate on the Game screen and you will be asked who spotted it. "
+                 + "With this many playing, some colours repeat."
         }
-        .sheet(item: $editing) { player in
-            PlayerEditor(player: player,
-                         usedColors: usedColorIndices(excluding: player),
-                         onDelete: { pendingDelete = player; editing = nil })
-        }
-        .sheet(isPresented: $addingPlayer) {
-            PlayerEditor(player: nil,
-                         usedColors: usedColorIndices(excluding: nil),
-                         onDelete: nil)
-        }
-        .confirmationDialog(
-            pendingDelete.map { "Remove \($0.name)?" } ?? "",
-            isPresented: Binding(get: { pendingDelete != nil },
-                                 set: { if !$0 { pendingDelete = nil } }),
-            titleVisibility: .visible
+        return players.count > 1
+            ? "Tap a plate on the Game screen and you will be asked who spotted it."
+            : "Add someone to play together in the car. With one player, plates are collected without asking."
+    }
+
+    private func confirmPendingDelete() {
+        guard let player = pendingDelete else { return }
+        pendingDelete = nil
+
+        popup.present(
+            "Remove \(player.name)?",
+            message: "Plates they spotted stay collected. Only their points are removed from the standings."
         ) {
-            Button("Remove", role: .destructive) {
-                if let p = pendingDelete { remove(p) }
-                pendingDelete = nil
+            PopupButton(title: "Remove", kind: .destructive) {
+                remove(player)
+                popup.dismiss()
             }
-            Button("Cancel", role: .cancel) { pendingDelete = nil }
-        } message: {
-            Text("Plates they spotted stay collected on the trip. Only their points are removed from the standings.")
+            PopupButton(title: "Cancel") { popup.dismiss() }
         }
     }
 
-    private func platesSpotted(by player: Player, in trip: Trip) -> Int {
-        Set(trip.allSightings
+    private func platesSpotted(by player: Player, in collection: any PlateCollection) -> Int {
+        Set(collection.allSightings
             .filter { $0.player?.id == player.id }
             .map(\.plateCode)).count
     }
@@ -107,6 +139,7 @@ struct PlayersScreen: View {
     private func remove(_ player: Player) {
         context.delete(player)
         try? context.save()
+        Haptics.destructive()
     }
 }
 
@@ -128,10 +161,10 @@ private struct PlayerRow: View {
 
             VStack(alignment: .leading, spacing: 1) {
                 Text(player.name)
-                    .font(.system(size: 16, weight: .semibold))
+                    .font(.plates(size: 16, weight: .semibold))
                     .foregroundStyle(Theme.ink)
-                Text("\(plates) plate\(plates == 1 ? "" : "s") this trip")
-                    .font(.system(size: 12.5))
+                Text("\(plates) plate\(plates == 1 ? "" : "s") collected")
+                    .font(.plates(size: 12.5))
                     .foregroundStyle(Theme.inkMuted)
             }
 
@@ -183,13 +216,13 @@ struct PlayerEditor: View {
                 VStack(alignment: .leading, spacing: 22) {
                     VStack(alignment: .leading, spacing: 7) {
                         Text("NAME")
-                            .font(.system(size: 11, weight: .bold))
+                            .font(.plates(size: 11, weight: .bold))
                             .tracking(1.2)
                             .foregroundStyle(Theme.inkMuted)
 
                         TextField("Who is playing?", text: $name)
                             .focused($focused)
-                            .font(.system(size: 17))
+                            .font(.plates(size: 17))
                             .padding(.horizontal, 14)
                             .padding(.vertical, 12)
                             .background(
@@ -204,7 +237,7 @@ struct PlayerEditor: View {
 
                     VStack(alignment: .leading, spacing: 9) {
                         Text("COLOUR")
-                            .font(.system(size: 11, weight: .bold))
+                            .font(.plates(size: 11, weight: .bold))
                             .tracking(1.2)
                             .foregroundStyle(Theme.inkMuted)
 
@@ -238,7 +271,7 @@ struct PlayerEditor: View {
                     if let onDelete {
                         Button(role: .destructive) { onDelete() } label: {
                             Text("Remove player")
-                                .font(.system(size: 15, weight: .semibold))
+                                .font(.plates(size: 15, weight: .semibold))
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 12)
                         }

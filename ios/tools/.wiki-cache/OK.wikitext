@@ -1,0 +1,1169 @@
+{{Short description|Oklahoma vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = [[File:Imagine That.png|300px]]
+| nickname = 
+| slogan_label = Slogan
+| slogan = Imagine That
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123
+| current_start_date = {{Start date|2024|09|01}}<br>
+| designer = Freestyle Creative
+| issuer = Service Oklahoma
+| manufacturer =
+| start_date = {{Start date|1915|07|01}}
+}}
+
+The U.S. state of [[Oklahoma]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1915. As of 2024, plates are issued by Service Oklahoma. Only rear plates have been required since 1944.
+
+Prior to July 1, 2019, plates belonged to the car, not the owner. As a result of lost turnpike toll revenue and law enforcement having trouble tracking vehicle owners, the law was changed, meaning plates now belong to vehicle owners and can be transferred from a previous vehicle to a new vehicle.<ref>{{cite web | url=https://www.kjrh.com/news/local-news/keep-tag-ok-law-begins-july-1 | title="Keep Tag OK" law begins July 1 | date=28 June 2019 }}</ref>
+
+==Passenger baseplates==
+===1915 to 1978===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Oklahoma license plate that complied with these standards.
+
+{{Clear}}
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:70px"|Serial format
+!Serials issued
+!Notes
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:blue; font-size:30pt; background:white;">12345</div>
+|1915
+|Embossed blue serial on white plate; vertical "OKLA" and "1915" at left and right respectively
+|''none''
+|12345
+|4001 to approximately 33500, with gaps
+|Single series of serials used for all classes of vehicles, with blocks reserved for non-passenger classes. This practice continued in one form or another through 1938.<ref name="allaboutlicenseplatesOK">{{cite web |last=Tanner |first=Eric N. |title=Oklahoma Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Oklahoma&code=ok |publisher=allaboutlicenseplates.com |access-date=November 18, 2020}}</ref>
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:blue;">12345</div>
+|1916
+|Embossed white serial on blue plate; vertical "OKLA" and "1916" at left and right respectively
+|''none''
+|12345
+|2501 to approximately 60500, with gaps
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:brown;">123456</div>
+|1917
+|Embossed white serial on brown plate; vertical "OKLA" and "1917" at left and right respectively
+|''none''
+|123456
+|6501 to approximately 118500, with gaps
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:yellow; font-size:30pt; background:green;">123456</div>
+|1918
+|Embossed yellow serial on green plate; vertical "OKLA" and "1918" at left and right respectively
+|''none''
+|123456
+|18001 to approximately 131500
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:green; font-size:30pt; background:yellow;">123456</div>
+|1919
+|Embossed green serial on yellow plate with border line; vertical "OKLA" and "1919" at left and right respectively
+|''none''
+|123456
+|8001 to approximately 156500
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:blue;">123456</div>
+|1920
+|Embossed white serial on blue plate with border line; vertical "OKLA" and "1920" at left and right respectively
+|''none''
+|123456
+|8001 to approximately 212000
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:brown;">123456</div>
+|1921
+|Embossed white serial on brown plate with border line; vertical "OKLA" and "1921" at left and right respectively
+|''none''
+|123456
+|10001 to approximately 231500, with gaps
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:30pt; background:turquoise;">123-456</div>
+|1922
+|Embossed black serial on turquoise plate with border line; vertical "OKLA" and "1922" at left and right respectively
+|''none''
+|123-456
+|11-001 to approximately 261-000, with gaps
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:maroon;">123-456</div>
+|1923
+|Embossed white serial on maroon plate with border line; vertical "OKLA" and "1923" at left and right respectively
+|''none''
+|123-456
+|18-001 to approximately 313-000
+|
+|-
+|[[File:1924 Oklahoma license plate.jpg|150px]]
+|1924
+|Embossed white serial on olive green plate with border line; vertical "OKLA" and "1924" at left and right respectively
+|''none''
+|123'''F'''456<br>123.456
+|
+|Plates with an 'F' in the serial were issued on [[Ford Motor Company|Ford]]s. This practice continued through 1928.
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:silver; font-size:25pt; background:black;">No image</div>
+|1925
+|Embossed silver serial on black plate; silver lines at top and bottom borders; "1925 OKLA" at right
+|''none''
+|123'''F'''456<br>123.456
+|
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">No image</div>
+|1926
+|Embossed black serial on yellow plate; black lines at top and bottom borders; "OKLA 1926" at bottom
+|''none''
+|123'''F'''456<br>123-456
+|
+|
+|-
+|rowspan="2"|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:yellow; font-size:25pt; background:black;">123F456</div>
+|rowspan="2"|1927
+|rowspan="2"|Embossed yellow serial on black plate with border line; "OKLA 1927" at bottom
+|rowspan="2"|''none''
+|123'''F'''456
+|30F001 to approximately 375F000
+|rowspan="2"|
+|-
+|123-456
+|495-001 to approximately 674-000
+|-
+|rowspan="2"|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">123F456</div>
+|rowspan="2"|1928
+|rowspan="2"|Embossed black serial on yellow plate with border line; vertical "OKLA" and "1928" at left and right respectively
+|rowspan="2"|''none''
+|123'''F'''456
+|35F001 to approximately 370F000
+|rowspan="2"|
+|-
+|123-456
+|480-001 to approximately 727-000
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:yellow; font-size:25pt; background:black;">123-456</div>
+|1929
+|Embossed yellow serial on black plate with border line; "OK–29" centered at top
+|''none''
+|123-456
+|50-001 to approximately 571-000
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">123-456</div>
+|1930
+|Embossed black serial on yellow plate with border line; "OKLA–1930" centered at bottom
+|''none''
+|123-456
+|60-001 to approximately 597-000
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:yellow; font-size:25pt; background:black;">123-456</div>
+|1931
+|Embossed yellow serial on black plate with border line; "OKLA–1931" centered at bottom
+|''none''
+|123-456
+|60-001 to approximately 564-000
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">123-456</div>
+|1932
+|Embossed black serial on yellow plate with border line; "OKLAHOMA-1932" at top
+|''none''
+|123-456
+|60-001 to approximately 464-000
+|First use of the full state name.
+|-
+|[[File:1933 Oklahoma license plate.jpg|150px]]
+|1933
+|Embossed yellow serial on black plate with border line; "OKLAHOMA-1933" at bottom
+|''none''
+|123-456
+|60-001 to approximately 481-000
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">123A456</div>
+|1934
+|Embossed black serial on yellow plate with border line; "OKLAHOMA-1934" at top
+|''none''
+|123'''A'''456
+|60A001 to approximately 507A000
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:white;">123A456</div>
+|1935
+|Embossed black serial on white plate with border line; "1935-OKLAHOMA" at bottom
+|''none''
+|123'''A'''456
+|60A001 to approximately 510A000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed black serial on yellow plate with border line; "1936-OKLAHOMA" at top
+|''none''
+|123-456
+|60-001 to approximately 516-000
+|Front and rear plates required; rear plates used an 'R' as the separator in the serial.
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed yellow serial on black plate with border line; "1937-OKLAHOMA" at bottom
+|''none''
+|123-456
+|60-001 to approximately 528-000
+|Front plates used an 'F' as the separator in the serial, while rear plates used an 'R'.
+|-
+|[[File:1938 Oklahoma license plate.jpg|150px]]
+|1938
+|Embossed black serial on yellow plate with border line; "OKLAHOMA-1938" at top
+|''none''
+|123-456
+|60-001 to approximately 546-000
+|
+|-
+|[[File:1939 Oklahoma license plate.jpg|150px]]
+|1939
+|Embossed black serial on silver plate with border line; "OK–39" at bottom, offset to right
+|''none''
+|''A/B''123
+|County-coded (''A/B'')
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">No image</div>
+|1940
+|Embossed black serial on yellow plate with border line; "OKLA–1940" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:black;">No image</div>
+|1941
+|Embossed white serial on black plate with border line; "OKLA—1941" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1942 Oklahoma license plate.jpg|150px]]
+|{{nowrap|1942–43}}
+|Embossed dark blue serial on white plate with border line; "OKLA-1942" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">No image</div>
+|1944
+|Embossed black serial on yellow plate with border line; "OKLAHOMA–44" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|Only rear plates issued; this practice continues today.
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:orange; font-size:25pt; background:black;">No image</div>
+|1945
+|Embossed orange serial on black plate with border line; "OKLAHOMA–45" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|
+|-
+| [[File:Blank License Plate Shape.svg|150px]]
+|1946–47
+|Embossed white serial on black plate with border line; "OKLAHOMA–46" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|Revalidated for 1947 with yellow tabs.
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">No image</div>
+|1948
+|Embossed black serial on yellow plate with border line; "OKLAHOMA–48" at bottom
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:black;">No image</div>
+|1949
+|Embossed white serial on black plate with border line; "49–OKLAHOMA" at top
+|''none''
+|''1''-12345<br>''10''-1234
+|County-coded (''1'' or ''10'')
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:white;">No image</div>
+|1950
+|Embossed black serial on white plate with border line; "50–OKLAHOMA" at bottom
+|''none''
+|''1''-12345<br>''1''-A1234<br>''10''-1234<br>''10''-A123
+|County-coded (''1'' or ''10'')
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:yellow;">No image</div>
+|1951
+|Embossed black serial on yellow plate with border line; "51–OKLAHOMA" at top
+|''none''
+|''1''-12345<br>''1''-A1234<br>''10''-1234<br>''10''-A123
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1952 Oklahoma license plate.jpg|150px]]
+|1952
+|Embossed white serial on black plate with border line; "52–OKLAHOMA" at bottom
+|''none''
+|''1''-12345<br>''1''-A1234<br>''10''-1234<br>''10''-A123
+|County-coded (''1'' or ''10'')
+|
+|-
+|
+|1953
+|Embossed black serial on yellow plate with border line; "OKLAHOMA–53" at top
+|''none''
+|''1''-12345<br>''1''-A1234<br>''10''-1234<br>''10''-A123
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1954 Oklahoma license plate.jpg|150px]]
+|1954
+|Embossed yellow serial on black plate with border line; "54-OKLAHOMA" at bottom
+|''none''
+|''1''-12345<br>''1''-A1234<br>''10''-1234<br>''10''-A123
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1955 Oklahoma license plate.jpg|150px]]
+|1955
+|Embossed white serial on black plate with border line; "55" at top right
+|"VISIT OKLAHOMA" at top, offset to left
+|''1''-12345<br>''1''-A1234<br>''10''-1234<br>''10''-A123
+|County-coded (''1'' or ''10'')
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:black; font-size:25pt; background:white;">No image</div>
+|1956
+|Embossed black serial on white plate with border line; "56" at bottom right
+|"VISIT OKLAHOMA" at bottom, offset to left
+|''1''-123456<br>''10''-12345
+|County-coded (''1'' or ''10'')
+|
+|-
+|<div style="border-radius:10px; border: solid lightgray 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:black;">No image</div>
+|1957
+|Embossed white serial on black plate with border line; "57" at top right
+|"VISIT OKLAHOMA" at top, offset to left
+|''1''-123456<br>''10''-12345
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1958 Oklahoma license plate.jpg|150px]]
+|1958
+|Embossed black serial on white plate with border line; "58" at top right
+|"VISIT OKLAHOMA" at top, offset to left
+|''1''-123456<br>''10''-12345
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1959 Oklahoma license plate.jpg|150px]]
+|1959
+|Embossed white serial on black plate with border line; "59" at top right
+|"VISIT OKLAHOMA" at top, offset to left
+|''1''-123456<br>''10''-12345
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1960 Oklahoma license plate.jpg|150px]]
+|1960
+|Embossed black serial on white plate; "19" at top left and "60" at top right
+|"VISIT OKLAHOMA" centered at top
+|''1''-123456<br>''10''-12345
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1961 Oklahoma License Plate.JPG|150px]]
+|1961
+|Embossed white serial on black plate; "19" at top left and "61" at top right
+|"VISIT OKLAHOMA" centered at top
+|''1''-123456<br>''10''-12345
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1962 Oklahoma license plate.jpg|150px]]
+|1962
+|Embossed black serial on white plate; "19" at top left and "62" at top right
+|"VISIT OKLAHOMA" centered at top
+|''1''-123456<br>''10''-12345
+|County-coded (''1'' or ''10'')
+|
+|-
+|[[File:1963 Oklahoma license plate.jpg|150px]]
+|1963
+|Embossed white serial on black plate with border line; "19 OKLAHOMA 63" at top
+|''none''
+|''AB''-1234
+|County-coded
+|Two-letter county codes introduced. Serials with numbers below 1000 used leading zeros; this happened again in 1964.
+|-
+|[[File:1964 Oklahoma license plate.jpg|150px]]
+|1964
+|Embossed black serial on white plate; "19 OKLAHOMA 64" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1965 Oklahoma license plate.jpg|150px]]
+|1965
+|Embossed white serial on black plate; "19 OKLAHOMA 65" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1966 Oklahoma Vehicle License Plate.jpg|150px]]
+|1966
+|Embossed black serial on white plate; "19 OKLAHOMA 66" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1967 Oklahoma license plate SM-9559.jpg|150px]]
+|1967
+|Embossed red serial on reflective white plate; "67" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234
+|County-coded
+|Issued in the colors of the [[University of Oklahoma]].<ref name="Mai">{{cite news |last=Mai |first=Chuck |date=July 31, 2016 |title=Chuck Mai: The colorful history of Oklahoma license plates |url=https://tulsaworld.com/archive/chuck-mai-the-colorful-history-of-oklahoma-license-plates/article_42aa54ad-fa3c-5576-96aa-7179c3267ef2.html |newspaper=[[Tulsa World]] |access-date=November 12, 2020}}</ref>
+|-
+|[[File:1968 Oklahoma license plate.jpg|150px]]
+|1968
+|Embossed black serial on reflective orange plate; "68" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234
+|County-coded
+|Issued in the colors of [[Oklahoma State University–Stillwater|Oklahoma State University]].<ref name="Mai"/>
+|-
+|
+|1969
+|Embossed red serial on reflective white plate; "69" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234
+|County-coded
+|Issued in the colors of the University of Oklahoma.<ref name="Mai"/>
+|-
+|[[File:1970 Oklahoma license plate ZB-6599.jpg|150px]]
+|1970
+|Embossed green serial on reflective white plate; "70" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1971 Oklahoma license plate.JPG|150px]]
+|1971
+|Embossed red serial on reflective white plate; "71" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|Three-letter county codes introduced in some counties that had exhausted their two-letter allocations.
+|-
+|
+|1972
+|Embossed green serial on reflective white plate; "72" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|
+|-
+|
+|1973
+|Embossed red serial on reflective white plate; "73" at top left
+|rowspan="2"|"OKLAHOMA IS OK" at top, offset to right
+|rowspan="2"|''AB''-1234<br>''ABC''-1234
+|rowspan="2"|County-coded
+|Carried over into 1974 after the plate shop at [[Oklahoma State Penitentiary]] was hit by fire during a riot in July 1973, destroying the supply of 1974 plates (below).
+|-
+|
+|1973–74
+|As above, but with border line
+|Supplemental plates manufactured by Polyvend Inc. of Arkansas while the prison plate shop was being repaired.
+|-
+|
+|(1974)
+|Embossed green serial on reflective white plate; "74" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|Most of these plates were destroyed in the prison plate shop fire of July 1973 (above); salvaged plates were not issued.
+|-
+|[[File:Oklahoma 1975 License plate ZY-9945.jpg|150px]]
+|1975
+|Embossed green serial on reflective white plate with border line; "75" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|Manufactured by Polyvend Inc. while the prison plate shop was being repaired.
+|-
+|
+|1976
+|Embossed red serial on reflective white plate with border line; "19 OKLAHOMA 76" at top
+|"1776&nbsp;BICENTENNIAL 1976" at bottom
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|
+|-
+|
+|1977
+|Embossed green serial on reflective white plate with border line; "77" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|
+|-
+|
+|1978
+|Embossed red serial on reflective white plate with border line; "78" at top left
+|"OKLAHOMA IS OK" at top, offset to right
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|
+|}
+
+===1979 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!style="width:70px"|Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Oklahoma license plate, April 1979.png|150px]]
+|1979–80
+|Embossed blue serial on reflective white plate; "OKLAHOMA" centered at top; debossed sticker boxes in top corners with "79" further debossed in right box
+|''none''
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|Monthly staggered registration introduced.
+|-
+|
+|1981–82
+|Embossed green serial with state-shaped separator on reflective white plate; debossed sticker boxes in top corners with "81" further debossed in right box
+|"OKLAHOMA IS OK" centered at top
+|''AB''-1234<br>''ABC''-1234
+|County-coded
+|Revalidated with stickers until 2009.
+|-
+|[[File:1989 Oklahoma license plate RRS-447.jpg|150px]]
+|1983–88
+|Embossed green serial with state-shaped separator on reflective white plate; yellow band screened at bottom with a yellow sun and "Oklahoma" in black in the middle; sticker boxes debossed in bottom corners
+|"is OK!" screened in black centered below state name, giving "Oklahoma is OK!"
+|''ABC''-123
+|County-coded
+|Commonly known as the "sunbelt" plate. Revalidated with stickers until 2009.
+|-
+|[[File:Oklahoman license plate, 1989–1994 series with August 1992 sticker.png|150px]]
+|1989–94
+|Embossed green serial on reflective white plate; battle shield of the [[Osage Nation]] screened in the center; "OKLAHOMA" screened in black centered at top
+|"OK!" screened in tan centered between state name and battle shield
+|''ABC'' 123
+|County-coded
+|Awarded "Plate of the Year" for best new license plate of 1989 by the [[Automobile License Plate Collectors Association]], the first time Oklahoma was so honored. Co-recipient with [[Vehicle registration plates of Nova Scotia|Nova Scotia]]. Serials in each county continued from where the 1983–88 plates left off, with leading zeros added in numbers below 100. Revalidated with stickers until 2009.
+|-
+| 
+|rowspan="2"|1994–2008
+|rowspan="2"|Similar to 1989–94 base, but with larger state name and debossed area in center containing redrawn battle shield graphic
+|rowspan="2"|"NATIVE AMERICA" screened in red centered at bottom
+|''ABC'' 123
+|rowspan="2"|County-coded
+|rowspan="2"|Final embossed plate. Serials in each county continued from where the 1989–94 plates left off, with the 123 ABC format introduced in counties that had exhausted their ABC 123 allocations. Revalidated with stickers until 2009.
+|-
+| 
+|123 ''ABC''
+|-
+|[[File:999ZPP.png|150px]]
+|January 2009&nbsp;– December 2016
+|Screened red serial on reflective white plate; [[Allan Houser]]'s "Sacred Rain Arrow" sculpture (outside the [[Gilcrease Museum]] in [[Tulsa, Oklahoma|Tulsa]]) screened against cloudy blue sky at left and blue bar screened at bottom; "OKLAHOMA" screened in dark blue centered at top
+|"NATIVE AMERICA" screened in white in center of blue bar, with white Osage Nation battle shield at right
+|123ABC
+|001AAA to approximately 999QJX
+|First screened plate. Mandatory plate replacement introduced, all plates from 1981–2008 were replaced. Awarded "Plate of the Year" for best new license plate of 2009 by the Automobile License Plate Collectors Association, the third time Oklahoma was so honored. County coding discontinued; the county of issuance has been printed on the month revalidation sticker since 2010. 'C', 'N' and 'O' series of serials not issued; some serials carried over from 1994–2008 plates.
+Only issuing three-letter combinations that have not yet appeared in [[Vehicle registration plates of Oklahoma#County coding|1994-2009 123-ABC plates]].
+|-
+|[[File:NDN999.png|150x150px]]
+|January 2017&nbsp;– March 2022
+|rowspan="2"|Screened black serial with state-shaped separator on reflective graphic plate with white [[scissor-tailed flycatcher]] against blue landscape featuring mountains, badlands and water 
+|"EXPLORE OKLAHOMA" screened in black centered at top; "TRAVELOK.COM" screened in red centered at bottom
+|rowspan="2"|ABC-123
+(Sometimes 123-ABC)
+|Exclusively from AAA-001 to LYZ-999; intermittently for 'LZ' serials
+|rowspan="2"|Mandatory replacement of all 2009-2016 plates, with some serials carried over from them. Still valid for renewals and transfers.
+|-
+|[[File:PND742.png|150x150px]]
+|March 2022&nbsp;–August 2024
+|"OKLAHOMA" screened in black centered at top; "TRAVELOK.COM" screened in red centered at bottom
+|Intermittently for 'LZ' serials;<br>MAA-001{{efn|Some plates in the NB- to ND- range were observed with the previous "EXPLORE" legend.<ref name="allaboutlicenseplatesOK"/>}} to PZH-999{{efn|Only PXH, PYH and PZH following PXA. Some unused earlier 'P' combinations were filled in on the next base (see below).|b}}
+|-
+|[[File:Imagine That.png|150px]]
+|September 2024&nbsp;–Present
+|Screened white serial with white star-shaped separator on reflective red plate, featuring smaller images screened in blue along the bottom
+|"OKLAHOMA" screened in white centered at top; "IMAGINE THAT" screened in white centered at bottom
+|ABC-123
+|Intermittently PNU-001 to PZG-999;<br>Exclusively PZJ-001 to VXY-261
+ {{small|(as of November 8th, 2025)}}<ref name=":0">{{Cite web |title=Oklahoma License Plates |url=https://www.licenseplates.cc/OK |access-date=2023-05-21 |website=www.licenseplates.cc}}</ref>
+|Only issued if vehicle buyers do not have an existing scissor-tailed flycatcher plate to transfer from their prior vehicle, or if a buyer chooses to purchase the new design.
+|}
+
+==County coding==
+The order of the numeric county codes used from 1952–61 was based on the populations of each county according to the [[1950 United States census]], and the order of the codes used in 1962 was based on the populations of each county according to the [[1960 United States census|1960 census]],<ref name="allaboutlicenseplatesOK"/> in 2009 county codes were reintroduced on month stickers. As of 2025, both the county abbreviated and the month only abbreviation is currently being used. However, as of 2024, the county abbreviated decal is no longer being issued by the state.
+[[File:Month decal (no county).png|left|thumb|189x189px|Month decal without county abbreviation.]]
+
+[[File:Month Decal with County.png|left|thumb|189x189px|Month decal with county abbreviation (abbreviations listed below)]]
+
+{|class="wikitable sortable"
+!County!!Numeric codes, 1952–61!!Numeric codes, 1962!!2-letter codes, 1963–82!!3-letter codes in ABC-123, 1981–2009
+!3-letter codes, in 123-ABC, 1994-2009!!Month Stickers 2009–2024
+|-
+|[[Adair County, Oklahoma|Adair]] || 46 || 46 || AD, AR || "..." means the same as left, with another letter appended to it.
+..., AI*, AJA-AJT <small>(noted AJA-T)</small>
+|left blank if this county has no 123-ABC plates
+| AD ||
+|-
+|[[Alfalfa County, Oklahoma|Alfalfa]] || 62 || 62 || AL || ...
+| || AL ||
+|-
+|[[Atoka County, Oklahoma|Atoka]] || 51 || 57 || AT || ..., AU*
+| || AT ||
+|-
+|[[Beaver County, Oklahoma|Beaver]] || 73 || 69 || BV || ..., BWA-I
+| || BV ||
+|-
+|[[Beckham County, Oklahoma|Beckham]] || 29 || 35 || BK, BE || ..., BF*, BGA-U
+| || BK ||
+|-
+|[[Blaine County, Oklahoma|Blaine]] || 45 || 49 || BL || ..., BA*
+| || BL ||
+|-
+|[[Bryan County, Oklahoma|Bryan]] || 25 || 27 || BR, BY || ..., BN*, BS*, BD*
+| || BR ||
+|-
+|[[Caddo County, Oklahoma|Caddo]] || 16 || 20 || CA, CD || ...
+|CA*, COA-S, KAA-N|| CD ||
+|-
+|[[Canadian County, Oklahoma|Canadian]] || 26 || 26 || CN, CX || ..., UN*, UX*, UYA-J 
+|CN*, CP*, CX*, NAA-NDA|| CN ||
+|-
+|[[Carter County, Oklahoma|Carter]] || 14 || 12 || CR, CE || ..., UE* 
+|CE*, CR*, CT*, RAA-E|| CR ||
+|-
+|[[Cherokee County, Oklahoma|Cherokee]] || 37 || 36 || CZ || ..., UZ*, UHA-D 
+|CZ*, CH*, UAA-C|| CH ||
+|-
+|[[Choctaw County, Oklahoma|Choctaw]] || 32 || 39 || CW || ..., UWA-J
+|CW*, HAB-O|| CW ||
+|-
+|[[Cimarron County, Oklahoma|Cimarron]] || 77 || 77 || CI || CMA-N
+| || CI ||
+|-
+|[[Cleveland County, Oklahoma|Cleveland]] || 11 || 7 || CL, CV, CY, CF || ..., VA*, VL*, VB*-VK*, VMA-VYB 
+|VXN-O|| CL ||
+|-
+|[[Coal County, Oklahoma|Coal]] || 71 || 74 || CO || ...
+| || CO ||
+|-
+|[[Comanche County, Oklahoma|Comanche]] || 4 || 3 || CC, CH, CM, CB, CP || ... (except CM*), UC*, UD*, UBA-U, UIA-G 
+|CF*, CB*-CD*, CJ*, CM*, EAA-EDT|| CM ||
+|-
+|[[Cotton County, Oklahoma|Cotton]] || 66 || 65 || CT || ... A-U only (CTA-CTU)
+| || CT ||
+|-
+|[[Craig County, Oklahoma|Craig]] || 39 || 37 || CG || ..., UGA-L 
+|CG*, CIC-U|| CG ||
+|-
+|[[Creek County, Oklahoma|Creek]] || 10 || 11 || CK, CJ, CU || ..., UK*, UJA-G 
+|CK*, CQ*, JAA-X|| CK ||
+|-
+|[[Custer County, Oklahoma|Custer]] || 30 || 28 || CS || ..., CU*, UUA-I 
+|CU*, CSA-B, CVA-L, DAA-R|| CU ||
+|-
+|[[Delaware County, Oklahoma|Delaware]] || 47 || 45 || DL, DE || ..., DR*, DAA-DDI
+| || DL ||
+|-
+|[[Dewey County, Oklahoma|Dewey]] || 68 || 70 || DW || ... A-V only
+| || DW ||
+|-
+|[[Ellis County, Oklahoma|Ellis]] || 75 || 75 || EL || ... A-Q only
+| || EL ||
+|-
+|[[Garfield County, Oklahoma|Garfield]] || 5 || 5 || GA, GR, GF, GB, GL || ..., GC*, GG*-GK*, GSA-G
+| || GF ||
+|-
+|[[Garvin County, Oklahoma|Garvin]] || 24 || 22 || GV, GN || ..., GOA-GQU
+| || GV ||
+|-
+|[[Grady County, Oklahoma|Grady]] || 17 || 18 || GD, GY || ..., GZ*, GX*, GW*, GMA-J 
+| || GY ||
+|-
+|[[Grant County, Oklahoma|Grant]] || 64 || 64 || GT || ... A-Q appended only
+| || GT ||
+|-
+|[[Greer County, Oklahoma|Greer]] || 59 || 60 || GE || ... A-W appended only
+| || GR ||
+|-
+|[[Harmon County, Oklahoma|Harmon]] || 70 || 73 || HM || ... A-K only
+| || HM ||
+|-
+|[[Harper County, Oklahoma|Harper]] || 76 || 71 || HP || ..., HRA-B
+| || HP ||
+|-
+|[[Haskell County, Oklahoma|Haskell]] || 54 || 58 || HK || ..., HLA-B, HSA-K
+| || HK ||
+|-
+|[[Hughes County, Oklahoma|Hughes]] || 31 || 40 || HG || ..., HH*, HUA-M
+| || HU ||
+|-
+|[[Jackson County, Oklahoma|Jackson]] || 33 || 17 || JA, JK, JS, JX || ..., JCA-U
+| || JA ||
+|-
+|[[Jefferson County, Oklahoma|Jefferson]] || 60 || 63 || JE || JF*
+| || JE ||
+|-
+|[[Johnston County, Oklahoma|Johnston]] || 63 || 61 || JN || ..., JOA-P
+| || JO ||
+|-
+|[[Kay County, Oklahoma|Kay]] || 6 || 6 || KA, KY, KK || ..., KB*-KE*, KJA-U 
+| || KA ||
+|-
+|[[Kingfisher County, Oklahoma|Kingfisher]] || 55 || 54 || KF || ..., KG*
+| || KF ||
+|-
+|[[Kiowa County, Oklahoma|Kiowa]] || 38 || 41 || KW || ..., KX*
+| || KW ||
+|-
+|[[Latimer County, Oklahoma|Latimer]] || 67 || 67 || LA || ... A-M only
+| || LA ||
+|-
+|[[Le Flore County, Oklahoma|Le Flore]] || 15 || 19 || LE, LF, LR || ..., LS*, LU*, LX*, LJ*, LMA-P
+| || LF ||
+|-
+|[[Lincoln County, Oklahoma|Lincoln]] || 28 || 31 || LN, LL || ..., LC*, LD*
+| || LI ||
+|-
+|[[Logan County, Oklahoma|Logan]] || 27 || 32 || LG, LO || ..., LP*, LH*
+| || LG ||
+|-
+|[[Love County, Oklahoma|Love]] || 72 || 72 || LV || ..., LWA-W
+| || LV ||
+|-
+|[[Major County, Oklahoma|Major]] || 65 || 66 || MA || ...
+| MAA-K|| MJ ||
+|-
+|[[Marshall County, Oklahoma|Marshall]] || 69 || 68 || MR || ..., MM*
+| MRA-M|| MR ||
+|-
+|[[Mayes County, Oklahoma|Mayes]] || 35 || 30 || ME, MY || ..., MX*, MW*
+| MYA-MZR|| MY ||
+|-
+|[[McClain County, Oklahoma|McClain]] || 48 || 47 || ML, MN || ..., MP*
+| ML*, MNA-C|| ML ||
+|-
+|[[McCurtain County, Oklahoma|McCurtain]] || 22 || 25 || MC, MT || ..., MD*, MQ*
+| MC*, MTA-G|| MC ||
+|-
+|[[McIntosh County, Oklahoma|McIntosh]] || 40 || 48 || MO || ..., MHA-MIZ
+| MIB-G|| MI ||
+|-
+|[[Murray County, Oklahoma|Murray]] || 61 || 55 || MU || ..., MV*
+| || MU ||
+|-
+|[[Muskogee County, Oklahoma|Muskogee]] || 3 || 4 || MK, MG, MS, MB || ..., MJ*, MF* 
+|MG*, MK*, MS*, MU*, MEB-M|| MK ||
+|-
+|[[Noble County, Oklahoma|Noble]] || 57 || 56 || NB || ..., NCA-U
+| || NB ||
+|-
+|[[Nowata County, Oklahoma|Nowata]] || 56 || 53 || NW || ..., NOA-K
+| || NW ||
+|-
+|[[Okfuskee County, Oklahoma|Okfuskee]] || 43 || 51 || OK || ..., OFA-E
+| || OF ||
+|-
+|[[Oklahoma County, Oklahoma|Oklahoma]] || 1 || 1 || XA-YZ || ..., Q**, F** 
+|XAA-XWM|| OK ||
+|-
+|[[Okmulgee County, Oklahoma|Okmulgee]] || 8 || 14 || OM, OL || ..., ON*, OP*, OUA-S 
+| || OM ||
+|-
+|[[Osage County, Oklahoma|Osage]] || 19 || 16 || OS, OA, OE, OG || ..., OBA-ODB 
+| || OS ||
+|-
+|[[Ottawa County, Oklahoma|Ottawa]] || 21 || 21 || OT, OW || ..., OXA-OZZ, OVA-S 
+| || OT ||
+|-
+|[[Pawnee County, Oklahoma|Pawnee]] || 53 || 52 || PW || ..., PX*
+|PWA-H|| PW ||
+|-
+|[[Payne County, Oklahoma|Payne]] || 7 || 8 || PA, PY, PF || ..., PZ*, PL*, PG*, PV* 
+| PY*, PAA-S|| PY ||
+|-
+|[[Pittsburg County, Oklahoma|Pittsburg]] || 12 || 15 || PB, PS || ..., PP*, PQ*, PI* 
+| PB*, PSA-E, PSJ|| PI ||
+|-
+|[[Pontotoc County, Oklahoma|Pontotoc]] || 23 || 23 || PN, PC || ..., PO*, PR*
+| PNA-P|| PO ||
+|-
+|[[Pottawatomie County, Oklahoma|Pottawatomie]] || 9 || 10 || PT, PE, PD || PT*, PD*, PJ*, PK* 
+| PT*, PO*, PE*, PMA-I|| PT ||
+|-
+|[[Pushmataha County, Oklahoma|Pushmataha]] || 58 || 59 || PM || ..., PU*
+| PUA-B|| PU ||
+|-
+|[[Roger Mills County, Oklahoma|Roger Mills]] || 74 || 76 || RM || ... A-N only
+| RMH-N|| RM ||
+|-
+|[[Rogers County, Oklahoma|Rogers]] || 36 || 29 || RG, RE, RO, RR || ..., RF*, RH*, RS*, RAA-RBK
+| || RG ||
+|-
+|[[Seminole County, Oklahoma|Seminole]] || 13 || 24 || SM, SE || ..., SF*, SI*, SLA
+| || SM ||
+|-
+|[[Sequoyah County, Oklahoma|Sequoyah]] || 34 || 34 || SY, SH || ..., SZ*, SA*-SC*, SQ*, SO*
+| || SQ ||
+|-
+|[[Stephens County, Oklahoma|Stephens]] || 18 || 13 || ST, SP, SN || ..., SR*, SUA-SXW 
+| || ST ||
+|-
+|[[Texas County, Oklahoma|Texas]] || 52 || 43 || TX, TS || ...
+| TX*, TSA|| TX ||
+|-
+|[[Tillman County, Oklahoma|Tillman]] || 42 || 42 || TL || .., TTA-L
+| || TI ||
+|-
+|[[Tulsa County, Oklahoma|Tulsa]] || 2 || 2 || ZA-ZZ || ZA*-ZY*, I**, T** 
+|ZAA-ZZE|| TU ||
+|-
+|[[Wagoner County, Oklahoma|Wagoner]] || 44 || 38 || WG, WN || ..., WO*, WR*, WE*, WVA-I
+| || WG ||
+|-
+|[[Washington County, Oklahoma|Washington]] || 20 || 9 || WA, WH, WS, WI || ..., WJ*, WK*, WM*, WQA-J
+| || WS ||
+|-
+|[[Washita County, Oklahoma|Washita]] || 41 || 33 || WT || ..., WUA-J
+| || WT ||
+|-
+|[[Woods County, Oklahoma|Woods]] || 49 || 50 || WD || ..., WFA-E
+| || WD ||
+|-
+|[[Woodward County, Oklahoma|Woodward]] || 50 || 44 || WW, WB || ..., WCA-W
+| || WW ||
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!style="width:70px"|Serial format
+!Serials issued
+!Notes
+|-
+|[[File:COML TRUCK.jpg|150px]]
+|Commercial Truck
+|January 2017&nbsp;– present
+|Screened black serial with state-shaped separator on reflective graphic plate with white [[scissor-tailed flycatcher]] against blue landscape featuring mountains, badlands and water 
+|"EXPLORE OKLAHOMA" or "OKLAHOMA" screened in black centered at top; "COML TRUCK" screened in black centered at bottom
+|V12-345
+123-45V<br>12C-345
+|T, C, X, Y at both front and the end.
+I00000-I99999, Z00000- approx. Z59999
+V00000-99999V
+00C000 - today
+|Note: This plate is replaced by the Imagine That plate in Sep 2024. However, scissortail flycatcher plates are still being used.
+|-
+|[[File:E14588.png|150px]]
+|Exempt
+|January 2017&nbsp;– present
+|Screened black serial with state-shaped separator on reflective graphic plate with white [[scissor-tailed flycatcher]] against blue landscape featuring mountains, badlands and water 
+|"EXPLORE OKLAHOMA" or "OKLAHOMA" screened in black centered at top; "TAX EXEMPT" screened in black centered at bottom
+|'''E'''12-345
+|
+|Note: This plate is replaced by the Imagine That plate in Sep 2024. However, scissortail flycatcher plates are still being used.
+|-
+|[[File:CZ3043.png|150px]]
+|Non-expiring Trailer
+|January 2017&nbsp;– present
+|Screened black serial with state-shaped separator on reflective graphic plate with white [[scissor-tailed flycatcher]] against blue landscape featuring mountains, badlands and water 
+|"EXPLORE OKLAHOMA" or "OKLAHOMA" screened in black centered at top; "NON EXP TRAILER" screened in black centered at bottom
+|1234-AB
+AB-1234
+|
+|Note: This plate is replaced by the Imagine That plate in Sep 2024. However, scissortail flycatcher plates are still being used.
+|-
+|[[File:1NAK968 (Updated).png|left|frameless|150x150px]]
+|Non-expiring Truck
+|January 2017&nbsp;– present
+|Screened black serial with state-shaped separator on reflective graphic plate with white [[scissor-tailed flycatcher]] against blue landscape featuring mountains, badlands and water 
+|"EXPLORE OKLAHOMA" or "OKLAHOMA" screened in black centered at top; "NON EXP TRUCK" screened in black centered at bottom
+|1 {{small|'''N'''/'''Y'''/C}}-234
+|
+|Note: This plate is replaced by the Imagine That plate in Sep 2024. However, scissortail flycatcher plates are still being used.
+|-
+|[[File:CI48061 (Updated).png|frameless|149x149px]]
+|City
+|January 2017 – September 2024
+|Screened black serial with state-shaped separator on reflective graphic plate with white [[scissor-tailed flycatcher]] against blue landscape featuring mountains, badlands and water
+|"EXPLORE OKLAHOMA" or "OKLAHOMA" screened in black centered at top; "CITY" screened in black centered at bottom
+|{{small|'''C'''/'''I'''}}-12345
+|C/I-00001 to C/I-99999
+|Note: This plate is replaced by the Imagine That plate in September 2024. However, scissortail flycatcher plates are still being used.
+|-
+|[[File:CI38099.png|150px]]
+|City (New)
+|September 2024 – Present
+|Screened white serial with original 46 state flag star separator on reflective graphic plate with red background with Oklahoma landmarks.
+|"OKLAHOMA" screened in white centered at top; "CITY" screened in white centered at bottom
+|{{small|'''C'''/'''I'''}}-12345
+|C/I-00001 to C/I-99999
+|}
+
+==Optional plates==
+{|class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:OK Aviation Plate.png|150px]]
+|Aviation
+|
+|Black serial on a sunset landscape, two planes flying on either side and an airport runway at the bottom. Oklahoma screened in black at the top and AVIATION screened in white at the bottom with two wings on each side.
+|{{small|'''A'''/'''V'''}}&nbsp;12345
+|{{small|A/V}} 00001 to present
+|Supports the Oklahoma Aeronautics Commission Revolving Fund
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Bass
+|
+|
+|123'''B'''4
+|001B1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Deer
+|
+|
+|123'''D'''4
+|001D1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Mallard
+|
+|
+|123'''J'''4
+|001J1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Lizard
+|
+|
+|123'''L'''4
+|001L1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Striper
+|
+|
+|123'''P'''4
+|001P1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Quail
+|
+|
+|123'''Q'''4
+|001Q1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Scissortail
+|
+|
+|123'''S'''4
+|001S1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Department of Wildlife Conservation - Turkey
+|
+|
+|123'''T'''4
+|001T1 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Ducks Unlimited]]
+|
+|Black serial on a purple and orange gradient background, a flying mallard is in the middle of the registration. A black screened Ducks Unlimited logo is present on the lower right corner, the mallard head of this same logo is also present in faded in the background, much larger. OKLAHOMA screened in black at the top, DUCKS UNLIMITED screened in black at the bottom.
+|'''DU'''1 234
+|DU0 001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[In God We Trust]]
+|
+|White serial on blue background with national flag, "In God We Trust" screened in white on left. OKLAHOMA screened in white at the top.
+|{{small|'''G'''/'''T'''}}&nbsp;1234
+|{{small|G/T}} 0001 to present
+|Identical to "In God We Trust" 2008 Indiana plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Weather Center]]
+|
+|Light blue serial on a sunset sky, NWC in the middle of the registration. OKLAHOMA screened in orange at the top, National Weather Center and EDUCATION-RESEARCH-OPERATIONS screened in white at the bottom with two wings on each side.
+|'''WX'''1 234
+|WX1 001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Oklahoma Blood Institute]]
+|
+|Black serial on a white background, Oklahoma Blood Institute with logo at the left. OKLAHOMA screened in black at the top and FEEL GOOD. GIVE BLOOD. screened in light blue at the bottom.
+|123'''OBI'''
+|001OBI to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Pioneers of the Prairie
+|
+|White serial on a gradient red background with an American bison on the left. OKLAHOMA screened in black at the top and Pioneers of the Prairie screened in white at the bottom.
+|'''NC'''1234
+|NC0001 to present
+|
+|-
+|
+|Save the Monarchs
+|2020–present
+|Black screened serial on multicolored background, features a monarch butterfly to the left of the serial and "Save the Monarchs" below the serial.
+|'''SM'''1234
+|SM0001 to present
+|Awarded "Plate of the Year" for best new license plate of 2020 by the Automobile License Plate Collectors Association, the fourth time Oklahoma was so honored.
+|-
+|
+|"[[List of Oklahoma state parks|State Parks]]" – [[Gazebo|Pavilion]]
+|2004–present
+|Black on multicolored background.
+|{{small|'''O'''/'''P'''}}&nbsp;1234
+|{{small|O/P}} 1 to present
+|Awarded "Plate of the Year" for best new license plate of 2004 by the Automobile License Plate Collectors Association, the second time Oklahoma was so honored.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support Education
+|
+|White serial on a sunset landscape, a house on the left and grass at the bottom. OKLAHOMA screened in white at the top and SUPPORT EDUCATION screened in white at the bottom.
+|'''L'''0001'''E'''
+|L0001E to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Tulsa Zoo]]
+|
+|Black serial on a white background, a brown giraffe at the top right corner of the plate until to the middle, TulsaZoo AND LIVING MUSEUM with logo screened in orange in the left corner. The logo is also screened in very light orange below the giraffe's head, in the middle of the registration. OKLAHOMA screened in black at the bottom.
+|'''TZ'''1 234
+|TZ0 001 to present
+|
+|}
+
+=== Personalized plates ===
+{|class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|White
+|
+|Black serial on reflective white plate; "OKLAHOMA" centered at top
+|rowspan="6" |''various''
+|rowspan="6" |''various''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Silver Gray
+|
+|Black serial on reflective silver gray plate; "OKLAHOMA" centered at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Sand
+|
+|Black serial on reflective sand plate; "OKLAHOMA" centered at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Sea Green
+|
+|Black serial on reflective sea green plate; "OKLAHOMA" centered at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Chamois
+|
+|Black serial on reflective chamois plate; "OKLAHOMA" centered at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Sky Blue
+|
+|Black serial on reflective sky blue plate; "OKLAHOMA" centered at top
+|
+|}
+
+==Notes==
+{{notelist}}
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.15q.net/ok.html Oklahoma license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200320034755/https://www.15q.net/ok.html |date=March 20, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Oklahoma}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Oklahoma}}
+[[Category:Vehicle registration plates of the United States by state or territory|Oklahoma]]
+[[Category:Oklahoma transportation-related lists]]
+[[Category:Transportation in Oklahoma]]

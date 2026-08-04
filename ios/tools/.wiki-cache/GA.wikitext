@@ -1,0 +1,1042 @@
+{{Short description|Georgia vehicle license plates}}
+{{Redirect|Georgia license plates|license plates from the country of Georgia|Vehicle registration plates of Georgia (country)}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = File:Georgia RXK8223.jpg
+| caption = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Peach State (standard)<br />250 Year Anniversary Revolutionary War (alternate)
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC1234 (Standard and alternate peach bases)<br />ABC1DE; AB1CDE (250 Years base)
+| current_start_date = {{Start date|2012|5}} (Standard and alternate peach bases)<br />{{Start date|2026|01}} (250 Years base)
+| designer = 
+| issuer = [[Georgia Department of Revenue]], Motor Vehicle Division
+| manufacturer = 
+| start_date = {{Start date|1910|09|01}}
+}}
+
+The U.S. state of [[Georgia (U.S. state)|Georgia]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1910. Plates are currently issued by the Motor Vehicle Division of the [[Georgia Department of Revenue]]. Only rear plates have been required since 1942.
+
+==Passenger baseplates==
+===1910 to 1970===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1956 (dated 1957) issue was the first Georgia license plate that fully complied with these standards: the 1954 (dated 1955) and 1955 (dated 1956) issues were 6 inches in height by 12 inches in width, but had non-standard mounting holes.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1910–11
+|Black on aluminum
+|''none''
+|12345
+|1 to 10000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911–12
+|Black on yellow
+|''none''
+|12345
+|10001 to 17000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1912–13}}
+|Black on white; vertical "GA" at right
+|''none''
+|12345
+|17001 to approximately 23600
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Black on white with border line; "GA 1914" at right
+|''none''
+|12345
+|1 to approximately 20600
+|First dated plate; replaced all 1910–13 plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|White on black porcelain with border line; "GA. 1915" at right
+|''none''
+|12345
+|1 to approximately 25300
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Black on white with border line; "GA 16" at right
+|''none''
+|12345
+|1 to approximately 47500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|White on black with border line; "GA 1917" at right
+|''none''
+|12345
+|1 to approximately 67500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Black on light green with border line; "GA 1918" at right
+|''none''
+|12345
+|1 to approximately 95500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Black on white with border line; "GA 1919" at right
+|''none''
+|123456
+|1 to approximately 118500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920
+|White on dark green with border line; "GA 20" at right
+|''none''
+|123-456
+|1 to approximately 145–000
+|
+|-
+|[[File:1921 Georgia license plate.jpg|150px]]
+|1921
+|Dark green on white with border line; "GA 21" at right
+|''none''
+|123-456
+|1 to approximately 133–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|White on black with border line; "GA 22" at right
+|''none''
+|123-456
+|1 to approximately 151–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|White on brown with border line; "GA 23" at left
+|''none''
+|123-456
+|1 to approximately 151–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Black on gray with border line; "GA. 1924" at bottom
+|''none''
+|123-456
+|1 to approximately 178–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|White on dark blue with border line; "GA. 25" at top
+|''none''
+|123-456
+|1 to approximately 221–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|White on red with border line; "GA. 1926" at bottom
+|''none''
+|123-456
+|1 to approximately 243–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Black on yellow with border line; vertical "GA-27" as separator
+|''none''
+|123-456
+|1 to approximately 265–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|White on dark blue with border line; "GA. 1928" at bottom
+|''none''
+|123-456
+|1 to approximately 294–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Golden yellow on black with border line; vertical "GA-29" as separator; vertical "FRONT" or "REAR" at right
+|''none''
+|123-456{{small|''A''}}
+|1{{small|A}} to approximately 316-000{{small|D}}<br>(see right)
+|Front and rear plates issued; this practice continued through 1941. First use of weight classes, with the letters A, B, C and D used in order from the heaviest vehicles to the lightest, and a block of serials assigned to each class.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Black on gray with border line; "GEORGIA–1930" at top
+|''none''
+|123-456{{small|''A''}}
+|1{{small|A}} to approximately 349-000{{small|D}}<br>(see right)
+|First use of the full state name. Weight class letters and method of assigning serials to each class same as 1929.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1931
+|White on dark green with border line; "GA–31" at top
+|''none''
+|rowspan="2"|A1234<br>1A234
+|rowspan="2"|A1 to Z9999;<br>0A1 to 9Z999
+|rowspan="2"|Four weight classes as in 1929 and 1930; separate blocks of serials for regular and locking-bar plates assigned to each class. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|White on dark green with border line; "GA" at top left, "31" at top right and space for locking bar at top middle
+|''none''
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|White on dark blue with border line; "GA–32" at top
+|''none''
+|12345''A''
+|Coded by weight class (''A'')
+|Letters A, B, C and D used in order from the heaviest vehicles to the lightest, as in 1929 and 1930, but with serials in each class starting from 1. Letter E added for the lightest class when 99999D was reached. These practices continued through 1935. 
+|-
+|[[File:1933 Georgia license plate.jpg|150px]]
+|1933
+|Dark blue on orange with border line; "GA–33" at top
+|''none''
+|12-345''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Orange on dark blue with border line; "GEORGIA" and "1934" at top and bottom respectively
+|''none''
+|12-345''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Dark blue on orange with border line; "1935" and "GEORGIA" at top and bottom respectively
+|''none''
+|12-345''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|As 1934 base, but with "1936" at bottom
+|''none''
+|123-456
+|1 to approximately 331–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|As 1935 base, but with "1937" at top
+|''none''
+|123-456
+|1 to approximately 364–000
+|
+|-
+|[[File:1938 Georgia license plate.jpg|150px]]
+|1938
+|As 1934 base, but with "1938" at bottom
+|''none''
+|12-345''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Dark blue on yellow with border line; "1939" and "GEORGIA" at top and bottom respectively
+|''none''
+|12-345''A''
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1940
+|Orange on green with border line; "GA", [[peach]] graphic and "40" at bottom
+|"PEACH STATE" at top
+|rowspan="2"|''A''12-345
+|rowspan="2"|Coded by weight class (''A'')
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As above, but with "GA 40" at top and no peach graphic
+|"PEACH STATE" at bottom
+|-
+|[[File:1941 Georgia License Plate.jpg|150px]]
+|1941
+|Reflective yellow on dark blue with border line; peach sticker in the center; "GA 41" at top
+|"PEACH STATE" at bottom
+|123-45''A''<br>123-4'''''EX'''''
+|Coded by weight class (''A'')
+|First reflectorized passenger plate in the United States, and also the first to use a sticker of any kind.<ref>{{cite web|url=https://www.alpca.org/faq/trivia/ |title=License Plate Trivia |publisher=[[Automobile License Plate Collectors Association|ALPCA]] |access-date=May 29, 2016}}</ref><ref>{{cite news|last=Sultan |first=Tim |date=May 6, 2005 |title=Vintage Cars, Vintage Plates |url=https://www.nytimes.com/2005/05/06/automobiles/vintage-cars-vintage-plates.html |newspaper=[[The New York Times]] |access-date=May 29, 2016}}</ref>
+|-
+|[[File:1942 Georgia license plate.jpg|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1942–43
+|White on dark blue with red border line; "1942" and "GEORGIA" in red at top at bottom respectively
+|''none''
+|''A''12-345<br>'''''EX'''''12345
+|Coded by weight class (''A'')
+|Revalidated for 1943 with red tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|Yellow on black with border line; "GA 44" at left
+|''none''
+|''A'' 12345<br>'''''EX''''' 12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|White on black with border line; "1945" and "GEORGIA" at top and bottom respectively
+|''none''
+|''A''-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Black on silver with border line; "1946" and "GEORGIA" at top and bottom respectively
+|''none''
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Maroon on cream with border line; "GA 47" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Black on unpainted aluminum with border line; "GA 48" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Red on unpainted aluminum with border line; "GA 49" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1950 Georgia license plate C-55919.jpg|150px]]
+|1950
+|Black on unpainted aluminum with border line; "GA 50" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1951 Georgia license plate E*S-71343.jpg|150px]]
+|1951
+|Green on unpainted aluminum with border line; "GA 51" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|White on black with border line; "GA 52" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|Orange on black with border line; "GA 53" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1954 Georgia license plate.jpg|150px]]
+|1954
+|Black on yellow with border line; "GA 54" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:1955 Georgia license plate F-88748.jpg|150px]]
+|1955
+|Yellow on black with border line; "GEORGIA 55" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''E'''''/'''''S'''''}}-12345
+|Coded by weight class (''A'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|White on black with border line; "GEORGIA 56" at top
+|"PEACH STATE" at bottom
+|''A''-12345<br>{{small|'''''E'''''/'''''X'''''}}-12345<br>{{small|'''''H'''''/''A''}}-12345
+|Coded by weight class
+|Weight classes were as follows: E, E/X and D (3,000 lb and under); H/A through H/N (3,001 to 3,500 lb); J and K (3,501 to 4,000 lb); and A (4,001 lb and over).<ref name="allaboutlicenseplatesGA">{{cite web |last=Tanner |first=Eric N. |title=Georgia License Plates |url=http://www.allaboutlicenseplates.com/athome.asp?State=Georgia |publisher=allaboutlicenseplates.com |access-date=January 21, 2016 |archive-date=January 25, 2016 |archive-url=https://web.archive.org/web/20160125191442/http://allaboutlicenseplates.com/athome.asp?State=Georgia |url-status=dead }}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|White on dark green with border line; "GEORGIA" centered at top; "19" at bottom left and "57" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class (see right)
+|Weight classes were as follows: D and E (3,000 lb and under); no letter (3,001 to 3,500 lb); J (3,501 to 4,000 lb); and A (4,001 lb and over). This continued through 1970.<ref name="allaboutlicenseplatesGA"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1958
+|Black on white with border line; "GEORGIA" centered at top; "19" at bottom left and "58" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1959
+|White on black with border line; "GEORGIA" centered at top; "19" at bottom left and "59" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1960 Georgia license plate.jpg|150px]]
+|1960
+|Black on white with border line; "GEORGIA" centered at top; "19" at bottom left and "60" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1961 Georgia license plate.jpg|150px]]
+|1961
+|Black on yellow with border line; "GEORGIA" centered at top; "19" at bottom left and "61" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1962 Georgia license plate.jpg|150px]]
+|1962
+|Red on white with border line; "GEORGIA" centered at top; "19" at bottom left and "62" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1963 Georgia license plate.jpg|150px]]
+|1963
+|White on red with border line; "GEORGIA" centered at top; "19" at bottom left and "63" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1964 Georgia license plate.jpg|150px]]
+|1964
+|Peach on green with border line; "GEORGIA" centered at top; "19" at bottom left and "64" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1965
+|Blue on white with border line; "GEORGIA" centered at top; "19" at bottom left and "65" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1966
+|White on red with border line; "19 GEORGIA 66" at bottom
+|"PEACH STATE" centered at top
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1967 Georgia license plate.jpg|150px]]
+|1967
+|Red on white with border line; "GEORGIA" centered at top; "19" at bottom left and "67" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1968 Georgia license plate.jpg|150px]]
+|1968
+|White on green with border line; "GEORGIA" centered at top; "19" at bottom left and "68" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969
+|White on black with border line; "GEORGIA" centered at top; "19" at bottom left and "69" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|-
+|[[File:1970 Georgia USA license plate.jpg|150px]]
+|1970
+|White on blue with border line; "GEORGIA" centered at top; "19" at bottom left and "70" at bottom right
+|"PEACH STATE" centered at bottom
+|''1''·12345<br>''1''·''A''·12345<br>''10''·1234<br>''10''·''A''·1234<br>''100''·1234<br>''100''·''A''·123
+|Coded by county of issuance (''1'', ''10'' or ''100'') and weight class
+|
+|}
+
+===1971 to present===
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials Issued
+!Notes
+|-
+|[[File:Georgia license plate, 1971–1975 series (Pike County).png|150px]]
+|1971–75
+|Embossed blue on reflective white with border line; "GEORGIA" centered at top; "71" at top left; county name on sticker at bottom
+|''none''
+|''A''BC 123
+|First letter corresponds to weight class (see right)
+|Weight classes were as follows: A, B, C and F (3,000 lb and under); E and G (3,001 to 3,500 lb); L, M and P (3,501 to 4,000 lb); and R and W (4,001 lb and over).
+|-
+|[[File:Georgia license plate, 1976.png|150px]]
+|1976–79
+|rowspan="2"|Embossed red on reflective white with border line; "GEORGIA" centered at top; "76" at top left; county name on sticker at bottom
+|rowspan="3"|''none''
+|''A''BC 123
+|First letter corresponds to weight class (see right)
+|Weight classes were as follows: A through E (3,000 lb and under); G and H (3,001 to 3,500 lb); L, M and N (3,501 to 4,000 lb); and R and S (4,001 lb and over).
+|-
+|[[File:Georgian state license plate, 1979–1980 series with 1979 sticker (Whitfield County).png|150px]]
+|1979–80
+|rowspan="2"|ABC 123
+|TAA 001 to<br>TZZ&nbsp;999;<br>WAA&nbsp;001 to approximately WGZ&nbsp;999
+|rowspan="2"|
+|-
+|[[File:Georgia license plate, 1976–1979 series with 1982 sticker (Dekalb County).png|150px]]
+|1980–82
+|As above, but with "GEORGIA" screened rather than embossed
+|WHA 001 to approximately YFI&nbsp;999
+|-
+|[[File:Georgia license plate, 1983–1989 series with 1989 sticker.png|150px]]
+|1983–89
+|Embossed green on reflective white; screened "19 GEORGIA 83" at top; county name on sticker at bottom
+|''none''
+|ABC 123
+|AAA 001 to approximately WCW&nbsp;999
+|[[Vanity plate]]s featured the "Peach State" slogan in place of the county-name sticker.
+|-
+|[[File:1990 Georgia license plate RRX 397.jpg|150px]]
+|1990&nbsp;– March 1996
+|rowspan=2|Embossed black on reflective gradient white and orange; screened green "Georgia" at top with peach graphic for the 'o'; "19" at top left and "90" at top right; county name on sticker at bottom
+|rowspan=2|''none''
+|ABC 123
+|AAA 001 to<br>ZZZ 999
+|rowspan="2"|Letters I, O, Q, U and V not used in either serial format.<ref name="allaboutlicenseplatesGA"/> The ABC 1234 format used narrower [[Die (manufacturing)|die]]s.
+|-
+|[[File:1996 Georgia license plate ABJ 1413.jpg|150px]]
+|March 1996&nbsp;– January 1997
+|ABC&nbsp;1234
+|AAA 1001 to approximately ADM&nbsp;9999
+|-
+|[[File:1998 Georgia license plate 840 BSS.jpg|150px]]
+|February 1997&nbsp;– June<br>2001
+|rowspan="4"|Embossed black on reflective white with peach graphic at center; screened black "GEORGIA" at top, offset to left; county name on sticker at bottom
+|rowspan="4"|[[Georgia on My Mind|...on my mind]]
+|123 ABC
+|001 AAA to<br>999 ZZZ
+|Letters I and O not used in this serial format, and Q, U and V used only from 2000, beginning with the XAQ series.<ref name="allaboutlicenseplatesGA"/>
+|-
+|[[File:1998 Georgia License Plate.jpg|150px]]
+|rowspan="2"|April 1997&nbsp;– June<br>2001
+|1234 AB
+|Intermittently from 1001&nbsp;QA to 9999&nbsp;YZ
+|rowspan="2"|Both these serial formats used on passenger vehicles (interchangeably with the 123&nbsp;ABC format) and trucks, having originally been intended to be reserved for the latter. Letters I, O, U and V not used in the 1234 AB format. The 12345 '''Q'''A format used narrower dies.
+|-
+|[[File:1998 Georgia license plate 45702 QF.jpg|150px]]
+|12345 '''Q'''A
+|Intermittently from 10001&nbsp;QA to approximately 50000&nbsp;QG
+|-
+|[[File:1998 Georgia license plate 3343 ALG.jpg|150px]]
+|June 2001&nbsp;– November 2003
+|1234 ABC
+|1001 AAA to approximately 9999&nbsp;AWT
+|Same narrow dies as the 12345 '''Q'''A format. Letters I, O, Q, U and V not used.
+|-
+|[[File:2005 Georgia license plate AAQ 7166.jpg|150px]]
+|December 2003&nbsp;– April<br>2007
+|Embossed black on reflective gradient gray and white; peach graphic containing green state shape at center; county name on sticker at bottom
+|www.GEORGIA.gov
+|rowspan="2"|ABC&nbsp;1234
+|Exclusively from AAA&nbsp;0001 to approximately AVM&nbsp;9999; intermittently from AVN&nbsp;0001 to approximately AYP&nbsp;4275
+|rowspan="2"|Letter O not used in this serial format.
+|-
+|[[File:2007 Georgia license plate AXT 5757.jpg|150px]]
+|May 2007&nbsp;– April<br>2012
+|Similar to above, but without gray gradient and "www." in web address
+|GEORGIA.gov
+|Intermittently from AVN&nbsp;0001 to approximately AWB&nbsp;1750; exclusively from AWB&nbsp;1751 to approximately CAQ&nbsp;9999
+|-
+|[[File:Georgia RXK8223.jpg|150px]]
+|May 2012&nbsp;– present
+|Screened black on reflective graphic plate with rolling hills, peach tree, and peaches
+|Peach State
+|ABC1234
+|Exclusively:<br>PAA1000 to PEZ9999; PMA1000 to QBT1499;
+
+Alternating with plain peach plates:<br>CAA1000 to approximately DEC9999;<br>RAA0001 to approximately SMR9999;<br>TAA0001 to TGW0701
+|rowspan="2"|On both these bases, "[[In God We Trust]]" can be printed at the bottom in place of the county name.
+<br>
+Serials in the CAA to CAQ range appear intermittently between this base and the previous.
+|-
+|[[File:2024 Georgian license plate (TDA9755).jpg|150px]]
+|May 2012&nbsp;– present
+|Screened black on reflective white; peach graphic in center
+|''none''
+|ABC1234
+|Exclusively:<br>PFA1000 to PLZ9999;<br>QFA1000 to QFP6449;
+|-
+|
+|January 2026&nbsp;– present
+|rowspan="2"|Screened black on reflective graphic tan plate with state map on left, with US flag behind and 1776 overtop. On the top of the plate reads, "GEORGIA" and "250 Year Anniversary Revolutionary War".
+|rowspan="2"|250 Year Anniversary Revolutionary War
+|ABC1DE
+|AAA1AA to ABD6ZG {{small|(as of April 20, 2026)}}
+|
+|-
+|
+|March 2026&nbsp;– present
+|AB1CDE
+|AA1AAA to AA1ADB {{small|(as of April 20, 2026)}}
+|
+|}
+
+==County coding==
+Georgia used two sets of numeric county codes on its license plates between 1957 and 1970. On both sets, the order of the codes was based on the respective populations of each county, with the order of the codes from 1962 onwards based on the figures according to the [[1960 United States census]].<ref>{{cite web|title=Georgia license plate County Codes |url=https://www.georgiaplates.com/county-codes |publisher=GeorgiaPlates.com |access-date=21 March 2025}}</ref><ref>{{cite web|last=Nicholson |first=David |date=11 February 1999 |title=Georgia County Codes |url=http://www.15q.net/gaco.html |publisher=15q.net |access-date=24 December 2014}}</ref>
+
+Since 1971, the name of the county of issuance has been displayed at the bottom of each plate – originally on a sticker, before becoming screened in 2012.
+
+{|class="wikitable collapsible collapsed sortable"
+|-
+!Code !! 1957–61 !! 1962–70
+|-
+|1 || [[Fulton County, Georgia|Fulton]] || [[Fulton County, Georgia|Fulton]]
+|-
+|2 || [[Chatham County, Georgia|Chatham]] || [[DeKalb County, Georgia|DeKalb]]
+|-
+|3 || [[DeKalb County, Georgia|DeKalb]] || [[Chatham County, Georgia|Chatham]]
+|-
+|4 || [[Muscogee County, Georgia|Muscogee]] || [[Muscogee County, Georgia|Muscogee]]
+|-
+|5 || [[Bibb County, Georgia|Bibb]] || [[Bibb County, Georgia|Bibb]]
+|-
+|6 || [[Richmond County, Georgia|Richmond]] || [[Richmond County, Georgia|Richmond]]
+|-
+|7 || [[Floyd County, Georgia|Floyd]] || [[Cobb County, Georgia|Cobb]]
+|-
+|8 || [[Cobb County, Georgia|Cobb]] || [[Dougherty County, Georgia|Dougherty]]
+|-
+|9 || [[Troup County, Georgia|Troup]] || [[Floyd County, Georgia|Floyd]]
+|-
+|10 || [[Dougherty County, Georgia|Dougherty]] || [[Hall County, Georgia|Hall]]
+|-
+|11 || [[Hall County, Georgia|Hall]] || [[Lowndes County, Georgia|Lowndes]]
+|-
+|12 || [[Walker County, Georgia|Walker]] || [[Troup County, Georgia|Troup]]
+|-
+|13 || [[Clarke County, Georgia|Clarke]] || [[Clayton County, Georgia|Clayton]]
+|-
+|14 || [[Lowndes County, Georgia|Lowndes]] || [[Clarke County, Georgia|Clarke]]
+|-
+|15 || [[Whitfield County, Georgia|Whitfield]] || [[Walker County, Georgia|Walker]]
+|-
+|16 || [[Carroll County, Georgia|Carroll]] || [[Gwinnett County, Georgia|Gwinnett]]
+|-
+|17 || [[Colquitt County, Georgia|Colquitt]] || [[Whitfield County, Georgia|Whitfield]]
+|-
+|18 || [[Thomas County, Georgia|Thomas]] || [[Glynn County, Georgia|Glynn]]
+|-
+|19 || [[Laurens County, Georgia|Laurens]] || [[Houston County, Georgia|Houston]]
+|-
+|20 || [[Gwinnett County, Georgia|Gwinnett]] || [[Carroll County, Georgia|Carroll]]
+|-
+|21 || [[Spalding County, Georgia|Spalding]] || [[Spalding County, Georgia|Spalding]]
+|-
+|22 || [[Polk County, Georgia|Polk]] || [[Thomas County, Georgia|Thomas]]
+|-
+|23 || [[Ware County, Georgia|Ware]] || [[Ware County, Georgia|Ware]]
+|-
+|24 || [[Baldwin County, Georgia|Baldwin]] || [[Baldwin County, Georgia|Baldwin]]
+|-
+|25 || [[Glynn County, Georgia|Glynn]] || [[Colquitt County, Georgia|Colquitt]]
+|-
+|26 || [[Coweta County, Georgia|Coweta]] || [[Laurens County, Georgia|Laurens]]
+|-
+|27 || [[Bartow County, Georgia|Bartow]] || [[Coweta County, Georgia|Coweta]]
+|-
+|28 || [[Upson County, Georgia|Upson]] || [[Bartow County, Georgia|Bartow]]
+|-
+|29 || [[Bulloch County, Georgia|Bulloch]] || [[Polk County, Georgia|Polk]]
+|-
+|30 || [[Sumter County, Georgia|Sumter]] || [[Decatur County, Georgia|Decatur]]
+|-
+|31 || [[Coffee County, Georgia|Coffee]] || [[Sumter County, Georgia|Sumter]]
+|-
+|32 || [[Decatur County, Georgia|Decatur]] || [[Bulloch County, Georgia|Bulloch]]
+|-
+|33 || [[Burke County, Georgia|Burke]] || [[Upson County, Georgia|Upson]]
+|-
+|34 || [[Clayton County, Georgia|Clayton]] || [[Tift County, Georgia|Tift]]
+|-
+|35 || [[Tift County, Georgia|Tift]] || [[Cherokee County, Georgia|Cherokee]]
+|-
+|36 || [[Mitchell County, Georgia|Mitchell]] || [[Coffee County, Georgia|Coffee]]
+|-
+|37 || [[Chattooga County, Georgia|Chattooga]] || [[Catoosa County, Georgia|Catoosa]]
+|-
+|38 || [[Meriwether County, Georgia|Meriwether]] || [[Newton County, Georgia|Newton]]
+|-
+|39 || [[Washington County, Georgia|Washington]] || [[Burke County, Georgia|Burke]]
+|-
+|40 || [[Houston County, Georgia|Houston]] || [[Walton County, Georgia|Walton]]
+|-
+|41 || [[Cherokee County, Georgia|Cherokee]] || [[Chattooga County, Georgia|Chattooga]]
+|-
+|42 || [[Walton County, Georgia|Walton]] || [[Meriwether County, Georgia|Meriwether]]
+|-
+|43 || [[Newton County, Georgia|Newton]] || [[Mitchell County, Georgia|Mitchell]]
+|-
+|44 || [[Emanuel County, Georgia|Emanuel]] || [[Gordon County, Georgia|Gordon]]
+|-
+|45 || [[Worth County, Georgia|Worth]] || [[Washington County, Georgia|Washington]]
+|-
+|46 || [[Jackson County, Georgia|Jackson]] || [[Jackson County, Georgia|Jackson]]
+|-
+|47 || [[Grady County, Georgia|Grady]] || [[Stephens County, Georgia|Stephens]]
+|-
+|48 || [[Gordon County, Georgia|Gordon]] || [[Habersham County, Georgia|Habersham]]
+|-
+|49 || [[Jefferson County, Georgia|Jefferson]] || [[Grady County, Georgia|Grady]]
+|-
+|50 || [[Elbert County, Georgia|Elbert]] || [[Wayne County, Georgia|Wayne]]
+|-
+|51 || [[Brooks County, Georgia|Brooks]] || [[Elbert County, Georgia|Elbert]]
+|-
+|52 || [[Screven County, Georgia|Screven]] || [[Emanuel County, Georgia|Emanuel]]
+|-
+|53 || [[Dodge County, Georgia|Dodge]] || [[Crisp County, Georgia|Crisp]]
+|-
+|54 || [[Crisp County, Georgia|Crisp]] || [[Henry County, Georgia|Henry]]
+|-
+|55 || [[Early County, Georgia|Early]] || [[Jefferson County, Georgia|Jefferson]]
+|-
+|56 || [[Toombs County, Georgia|Toombs]] || [[Toombs County, Georgia|Toombs]]
+|-
+|57 || [[Stephens County, Georgia|Stephens]] || [[Douglas County, Georgia|Douglas]]
+|-
+|58 || [[Habersham County, Georgia|Habersham]] || [[Worth County, Georgia|Worth]]
+|-
+|59 || [[Tattnall County, Georgia|Tattnall]] || [[Dodge County, Georgia|Dodge]]
+|-
+|60 || [[Henry County, Georgia|Henry]] || [[Tattnall County, Georgia|Tattnall]]
+|-
+|61 || [[Fannin County, Georgia|Fannin]] || [[Brooks County, Georgia|Brooks]]
+|-
+|62 || [[Catoosa County, Georgia|Catoosa]] || [[Hart County, Georgia|Hart]]
+|-
+|63 || [[Ben Hill County, Georgia|Ben Hill]] || [[Screven County, Georgia|Screven]]
+|-
+|64 || [[Haralson County, Georgia|Haralson]] || [[Haralson County, Georgia|Haralson]]
+|-
+|65 || [[Hart County, Georgia|Hart]] || [[Liberty County, Georgia|Liberty]]
+|-
+|66 || [[Franklin County, Georgia|Franklin]] || [[Barrow County, Georgia|Barrow]]
+|-
+|67 || [[Terrell County, Georgia|Terrell]] || [[Peach County, Georgia|Peach]]
+|-
+|68 || [[Wayne County, Georgia|Wayne]] || [[Ben Hill County, Georgia|Ben Hill]]
+|-
+|69 || [[Macon County, Georgia|Macon]] || [[Fannin County, Georgia|Fannin]]
+|-
+|70 || [[Dooly County, Georgia|Dooly]] || [[Columbia County, Georgia|Columbia]]
+|-
+|71 || [[Appling County, Georgia|Appling]] || [[Franklin County, Georgia|Franklin]]
+|-
+|72 || [[Berrien County, Georgia|Berrien]] || [[Appling County, Georgia|Appling]]
+|-
+|73 || [[Randolph County, Georgia|Randolph]] || [[Macon County, Georgia|Macon]]
+|-
+|74 || [[Telfair County, Georgia|Telfair]] || [[Early County, Georgia|Early]]
+|-
+|75 || [[Barrow County, Georgia|Barrow]] || [[Paulding County, Georgia|Paulding]]
+|-
+|76 || [[Greene County, Georgia|Greene]] || [[Chattahoochee County, Georgia|Chattahoochee]]
+|-
+|77 || [[Wilkes County, Georgia|Wilkes]] || [[Terrell County, Georgia|Terrell]]
+|-
+|78 || [[Madison County, Georgia|Madison]] || [[McDuffie County, Georgia|McDuffie]]
+|-
+|79 || [[Cook County, Georgia|Cook]] || [[Forsyth County, Georgia|Forsyth]]
+|-
+|80 || [[Douglas County, Georgia|Douglas]] || [[Berrien County, Georgia|Berrien]]
+|-
+|81 || [[Chattahoochee County, Georgia|Chattahoochee]] || [[Cook County, Georgia|Cook]]
+|-
+|82 || [[Irwin County, Georgia|Irwin]] || [[Telfair County, Georgia|Telfair]]
+|-
+|83 || [[Morgan County, Georgia|Morgan]] || [[Dooly County, Georgia|Dooly]]
+|-
+|84 || [[Paulding County, Georgia|Paulding]] || [[Madison County, Georgia|Madison]]
+|-
+|85 || [[Peach County, Georgia|Peach]] || [[Greene County, Georgia|Greene]]
+|-
+|86 || [[McDuffie County, Georgia|McDuffie]] || [[Harris County, Georgia|Harris]]
+|-
+|87 || [[Harris County, Georgia|Harris]] || [[Randolph County, Georgia|Randolph]]
+|-
+|88 || [[Pierce County, Georgia|Pierce]] || [[Wilkes County, Georgia|Wilkes]]
+|-
+|89 || [[Hancock County, Georgia|Hancock]] || [[Rockdale County, Georgia|Rockdale]]
+|-
+|90 || [[Forsyth County, Georgia|Forsyth]] || [[Monroe County, Georgia|Monroe]]
+|-
+|91 || [[Murray County, Georgia|Murray]] || [[Murray County, Georgia|Murray]]
+|-
+|92 || [[Monroe County, Georgia|Monroe]] || [[Morgan County, Georgia|Morgan]]
+|-
+|93 || [[Turner County, Georgia|Turner]] || [[Lamar County, Georgia|Lamar]]
+|-
+|94 || [[Jenkins County, Georgia|Jenkins]] || [[Effingham County, Georgia|Effingham]]
+|-
+|95 || [[Lamar County, Georgia|Lamar]] || [[Hancock County, Georgia|Hancock]]
+|-
+|96 || [[Wilcox County, Georgia|Wilcox]] || [[Camden County, Georgia|Camden]]
+|-
+|97 || [[Gilmer County, Georgia|Gilmer]] || [[Pierce County, Georgia|Pierce]]
+|-
+|98 || [[Oglethorpe County, Georgia|Oglethorpe]] || [[Bleckley County, Georgia|Bleckley]]
+|-
+|99 || [[Johnson County, Georgia|Johnson]] || [[Wilkinson County, Georgia|Wilkinson]]
+|-
+|100 || [[Wilkinson County, Georgia|Wilkinson]] || [[Irwin County, Georgia|Irwin]]
+|-
+|101 || [[Columbia County, Georgia|Columbia]] || [[Jenkins County, Georgia|Jenkins]]
+|-
+|102 || [[Jeff Davis County, Georgia|Jeff Davis]] || [[Butts County, Georgia|Butts]]
+|-
+|103 || [[Bleckley County, Georgia|Bleckley]] || [[Gilmer County, Georgia|Gilmer]]
+|-
+|104 || [[Stewart County, Georgia|Stewart]] || [[Jeff Davis County, Georgia|Jeff Davis]]
+|-
+|105 || [[Effingham County, Georgia|Effingham]] || [[Pickens County, Georgia|Pickens]]
+|-
+|106 || [[Taylor County, Georgia|Taylor]] || [[Dade County, Georgia|Dade]]
+|-
+|107 || [[Butts County, Georgia|Butts]] || [[Jones County, Georgia|Jones]]
+|-
+|108 || [[Miller County, Georgia|Miller]] || [[Turner County, Georgia|Turner]]
+|-
+|109 || [[Bacon County, Georgia|Bacon]] || [[Bacon County, Georgia|Bacon]]
+|-
+|110 || [[Pickens County, Georgia|Pickens]] || [[Taylor County, Georgia|Taylor]]
+|-
+|111 || [[Pulaski County, Georgia|Pulaski]] || [[Pulaski County, Georgia|Pulaski]]
+|-
+|112 || [[Warren County, Georgia|Warren]] || [[Fayette County, Georgia|Fayette]]
+|-
+|113 || [[Calhoun County, Georgia|Calhoun]] || [[Johnson County, Georgia|Johnson]]
+|-
+|114 || [[Rockdale County, Georgia|Rockdale]] || [[Twiggs County, Georgia|Twiggs]]
+|-
+|115 || [[Pike County, Georgia|Pike]] || [[Oglethorpe County, Georgia|Oglethorpe]]
+|-
+|116 || [[Liberty County, Georgia|Liberty]] || [[Wilcox County, Georgia|Wilcox]]
+|-
+|117 || [[Twiggs County, Georgia|Twiggs]] || [[Putnam County, Georgia|Putnam]]
+|-
+|118 || [[Candler County, Georgia|Candler]] || [[Rabun County, Georgia|Rabun]]
+|-
+|119 || [[Fayette County, Georgia|Fayette]] || [[Stewart County, Georgia|Stewart]]
+|-
+|120 || [[Seminole County, Georgia|Seminole]] || [[Warren County, Georgia|Warren]]
+|-
+|121 || [[Montgomery County, Georgia|Montgomery]] || [[Calhoun County, Georgia|Calhoun]]
+|-
+|122 || [[Putnam County, Georgia|Putnam]] || [[Lumpkin County, Georgia|Lumpkin]]
+|-
+|123 || [[Talbot County, Georgia|Talbot]] || [[Pike County, Georgia|Pike]]
+|-
+|124 || [[Jones County, Georgia|Jones]] || [[Talbot County, Georgia|Talbot]]
+|-
+|125 || [[Jasper County, Georgia|Jasper]] || [[Evans County, Georgia|Evans]]
+|-
+|126 || [[Rabun County, Georgia|Rabun]] || [[White County, Georgia|White]]
+|-
+|127 || [[Dade County, Georgia|Dade]] || [[Miller County, Georgia|Miller]]
+|-
+|128 || [[Atkinson County, Georgia|Atkinson]] || [[Seminole County, Georgia|Seminole]]
+|-
+|129 || [[Camden County, Georgia|Camden]] || [[Candler County, Georgia|Candler]]
+|-
+|130 || [[Union County, Georgia|Union]] || [[Clinch County, Georgia|Clinch]]
+|-
+|131 || [[Oconee County, Georgia|Oconee]] || [[Union County, Georgia|Union]]
+|-
+|132 || [[Heard County, Georgia|Heard]] || [[Banks County, Georgia|Banks]]
+|-
+|133 || [[Banks County, Georgia|Banks]] || [[McIntosh County, Georgia|McIntosh]]
+|-
+|134 || [[Wheeler County, Georgia|Wheeler]] || [[Oconee County, Georgia|Oconee]]
+|-
+|135 || [[Lee County, Georgia|Lee]] || [[Montgomery County, Georgia|Montgomery]]
+|-
+|136 || [[Evans County, Georgia|Evans]] || [[Bryan County, Georgia|Bryan]]
+|-
+|137 || [[Lumpkin County, Georgia|Lumpkin]] || [[Lee County, Georgia|Lee]]
+|-
+|138 || [[Treutlen County, Georgia|Treutlen]] || [[Atkinson County, Georgia|Atkinson]]
+|-
+|139 || [[Marion County, Georgia|Marion]] || [[Jasper County, Georgia|Jasper]]
+|-
+|140 || [[Lincoln County, Georgia|Lincoln]] || [[Lincoln County, Georgia|Lincoln]]
+|-
+|141 || [[Brantley County, Georgia|Brantley]] || [[Brantley County, Georgia|Brantley]]
+|-
+|142 || [[Crawford County, Georgia|Crawford]] || [[Treutlen County, Georgia|Treutlen]]
+|-
+|143 || [[McIntosh County, Georgia|McIntosh]] || [[Crawford County, Georgia|Crawford]]
+|-
+|144 || [[Clinch County, Georgia|Clinch]] || [[Marion County, Georgia|Marion]]
+|-
+|145 || [[Bryan County, Georgia|Bryan]] || [[Wheeler County, Georgia|Wheeler]]
+|-
+|146 || [[Baker County, Georgia|Baker]] || [[Heard County, Georgia|Heard]]
+|-
+|147 || [[White County, Georgia|White]] || [[Charlton County, Georgia|Charlton]]
+|-
+|148 || [[Clay County, Georgia|Clay]] || [[Lanier County, Georgia|Lanier]]
+|-
+|149 || [[Lanier County, Georgia|Lanier]] || [[Clay County, Georgia|Clay]]
+|-
+|150 || [[Charlton County, Georgia|Charlton]] || [[Baker County, Georgia|Baker]]
+|-
+|151 || [[Towns County, Georgia|Towns]] || [[Towns County, Georgia|Towns]]
+|-
+|152 || [[Taliaferro County, Georgia|Taliaferro]] || [[Long County, Georgia|Long]]
+|-
+|153 || [[Webster County, Georgia|Webster]] || [[Dawson County, Georgia|Dawson]]
+|-
+|154 || [[Schley County, Georgia|Schley]] || [[Taliaferro County, Georgia|Taliaferro]]
+|-
+|155 || [[Dawson County, Georgia|Dawson]] || [[Schley County, Georgia|Schley]]
+|-
+|156 || [[Long County, Georgia|Long]] || [[Webster County, Georgia|Webster]]
+|-
+|157 || [[Glascock County, Georgia|Glascock]] || [[Glascock County, Georgia|Glascock]]
+|-
+|158 || [[Quitman County, Georgia|Quitman]] || [[Quitman County, Georgia|Quitman]]
+|-
+|159 || [[Echols County, Georgia|Echols]] || [[Echols County, Georgia|Echols]]
+|}
+
+==Non-passenger and optional types==
+{{Main|Non-passenger and special vehicle registration plates of Georgia (U.S. state)|History of non-passenger and special vehicle registration plates of Georgia (U.S. state)}}
+
+[[File:2007 Georgia license plate alternative fueled vehicle.jpg|thumb|right|alternative fueled vehicle]]
+Georgia was one of the first states to issue optional plates, introducing commemorative issues for several of its [[List of colleges and universities in Georgia (U.S. state)|in-state colleges and universities]] in 1983.{{Citation needed|date=April 2008}}  The only requirement is a minimum of 1000 plates ordered, thus the state has made plates for fans of [[Auburn University]] in [[Alabama]] and [[Clemson University]] in [[South Carolina]].
+
+The number of optional types has increased since 1983; Georgia currently offers many specialty or optional license plates, most at an extra cost to motorists.<ref>{{Cite web |url=http://motor.etax.dor.ga.gov/motor/plates/images/Plates%20Photo%20Album/platestb.asp |title=Georgia Department of Revenue |access-date=April 29, 2008 |archive-date=June 7, 2008 |archive-url=https://web.archive.org/web/20080607002005/http://motor.etax.dor.ga.gov/motor/plates/images/Plates%20Photo%20Album/platestb.asp |url-status=dead }}</ref>  Revenue from the sale of specialty plates is shared with the sponsoring organization, provided that the sponsor is an in-state Georgia college or an organization which has been authorized to receive revenue by an act of the [[Georgia General Assembly|legislature]]. Organizations which have not received legislative authorization, and out of state colleges, are not eligible to receive revenue from specialty tag sales.<ref>{{cite web|url=https://dor.georgia.gov/specialty-license-plate-sponsors|title=Specialty License Plate Sponsors|publisher=Georgia Department of Revenue|access-date=September 28, 2018|archive-date=September 28, 2019|archive-url=https://web.archive.org/web/20190928130347/https://dor.georgia.gov/specialty-license-plate-sponsors|url-status=dead}}</ref>
+
+Effective with the 2005 base, the state streamlined the ever-growing number of limited-issuance plates by instituting two-letter prefixes for almost all types other than standard passenger plates. Most of these plate types first appeared on the www.GEORGIA.gov base and are currently migrating to the new GEORGIA.gov base.
+
+The state also issues plates for non-passenger vehicles, such as [[truck]]s, [[school bus]]es, and government vehicles.
+
+{|class=wikitable
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+| 
+|[[1996 Summer Olympics]]
+|{{nowrap|1993–96}}
+|Embossed red on reflective white with border line; 1996 Summer Olympics logo screened in green at left; screened green "Georgia" at top with red flame graphic for the 'o'
+|"Centennial Olympic Games" screened in green at bottom
+|12345<br>123AB<br>12AB3<br>1AB23
+|
+|Revalidated until 1997.
+|-
+|[[File:Georgia Florida State University.jpg|frameless|150x150px]]
+|[[Florida State University]]
+|2013-2020
+|Screened black on reflective white; Florida State University logo screened in color at left; screened "Georgia" in black at top.
+|"Florida State University" screened in red at bottom
+|ABC123
+|
+|Replaced with updated design.
+|-
+|[[File:2007GAAntique.jpg|frameless|150x150px]]
+|Antique Vehicle
+|2004-2007
+|Embossed black on grey-white gradient; "Hobby Antique Vehicle" and image of antique car screened on left; debossed areas on bottom for month, county, and year stickers.
+|www.GEORGIA.gov screened at top
+|'''H'''A1BCD
+|
+|
+|}
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|License plates of Georgia (U.S. state)}}
+* [http://www.15q.net/ga.html Georgia license plates 1969-present]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Georgia (U.S. state)}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Georgia (U.S. State)}}
+[[Category:Georgia (U.S. state) transportation-related lists]]
+[[Category:Transportation in Georgia (U.S. state)]]
+[[Category:Vehicle registration plates of the United States by state or territory|Georgia]]

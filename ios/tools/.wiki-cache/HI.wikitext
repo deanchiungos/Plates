@@ -1,0 +1,612 @@
+{{short description|Hawaii vehicle license plates}}
+{{more citations needed|article|date=January 2011}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Hawaiian sample license plate, 2025.png
+| country = {{Flagu|United States}}
+| countrycode = USA
+| nickname =
+| slogan_label = Slogan 
+| slogan = Aloha State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123
+| current_start_date = {{Start date|2025}} (current series)
+| designer =  
+| issuer = County government offices
+| manufacturer = Irwin-Hodson Company, Portland, Oregon
+| start_date = {{Start date|1922|01|01}}<br>(city and county plates from 1906 to December 31, 1921)
+}}
+
+Each of Hawaii's four counties register vehicles autonomously, starting with the City and County of Honolulu in 1906, when license plates were homemade or owner-provided. The first government-issued plates were used by both Honolulu and the County of Hawaii in 1915. Maui County first issued plates in 1919, while Kauaʻi County retained homemade plates through 1921; this was the last jurisdiction in the United States to do so. All license plates were standardized throughout the Territory of Hawaii for the first time in 1922. Despite its status at the time as a territory, Hawaii's vehicle registration laws and license plates were the same as the rest of the United States until the State of Hawaii was admitted to the U.S. as the 50th state in August 1959.
+
+==Background==
+[[Kingdom of Hawaiʻi|Hawaiʻi]] was a sovereign constitutional monarchy until its government was overthrown in January 1893, but many of its laws were already modeled after those of the United States, including (for example) registering dogs and issuing metal tags for them since the 1870s. The Republic of Hawaii which replaced the previous government was annexed as a Territory by the United States in August 1898, and the first automobiles to be shipped to the Hawaiian Islands arrived in 1899.
+
+==Passenger baseplates==
+{{Clear}}
+
+===1922 to 1952===
+No slogans were used on passenger plates during the period covered by this subsection.
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!style="width:180px"|Design
+!Serial format
+!style="width:65px"|Serials issued
+!Notes
+|-
+|[[File:1922 Hawaii license plate.jpg|150px]]
+|1922
+|Embossed white on dark green; vertical "HAWAII" and "1922" at right
+|12-345
+|Issued in blocks by county
+|Serials started from 1–000 in [[Honolulu County, Hawaii|Honolulu County]], from 20 to 000 in [[Hawaii County, Hawaii|Hawaii County]], from 30 to 000 in [[Maui County, Hawaii|Maui County]], and from 40 to 000 in [[Kauaʻi County, Hawaii|Kauaʻi County]]. This continued through 1925.<ref name="allaboutlicenseplatesHI">{{cite web |last=Tanner |first=Eric N. |title=Hawaii Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Hawaii&code=hi |publisher=allaboutlicenseplates.com |access-date=July 5, 2021}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed green on white with border line; "HAWAII 1923" at bottom
+|rowspan="4"|12345
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed red on white with border line; "HAWAII 1924" at top
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1925
+|Embossed black on orange with border line; "HAWAII 1925" at bottom
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed white on green with border line; vertical "HAWAII" and "1926" at left
+|Issued in blocks by county
+|Serials started from 50000 in Honolulu County; starting serials in other counties same as 1922–25. This continued through 1939.<ref name="allaboutlicenseplatesHI"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1927
+|Embossed black on silver with border line; "HAWAII 1927" centered at bottom
+|rowspan="13"|12-345
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1928
+|Embossed orange on black with border line; "HAWAII 1928" centered at bottom
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed golden yellow on blue with border line; "HAWAII 1929" centered at top
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed white on red with border line; "HAWAII 1930" centered at bottom
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed white on black with border line; "HAWAII 1931" centered at top
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed yellow on green with border line; "HAWAII 1932" centered at bottom
+|Issued in blocks by county
+|
+|-
+|[[File:1933 HI license plate.jpg|150px]]
+|1933
+|Embossed red on orange; "HAWAII 1933" centered at top
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed white on blue; "HAWAII 1934" centered at bottom
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed black on golden yellow; "HAWAII 1935" centered at top
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed white on green; "HAWAII 1936" centered at bottom
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed blue on white; "HAWAII 1937" centered at top
+|Issued in blocks by county
+|
+|-
+|[[File:1938 Hawaii license plate.jpg|150px]]
+|1938
+|Embossed yellow on black; "HAWAII 1938" centered at bottom
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed white on blue; "HAWAII 1939" centered at top
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed black on yellow; "HAWAII 1940" at bottom, offset to right
+|{{small|A/''A''}}''1234''
+|County-coded (see right)
+|Honolulu County used O as the second letter and numbers 5000–9999; Hawaiʻi County used H and numbers 2000–2999; Maui County used M and numbers 3000–3999; and Kauaʻi County used K and numbers 4000–4999. The number allocations were used through 1950.<ref name="allaboutlicenseplatesHI"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed red on gray; "HAWAII 1941" centered at top
+|rowspan="6"|A''1234''
+|rowspan="9"|County-coded
+|
+|-
+|[[File:1942 Hawaiian license plate.jpg|150px]]
+|{{nowrap|1942–45}}
+|Embossed white on black; "HAWAII 1942" centered at bottom
+|Revalidated for 1943, 1944 and 1945 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed black on white; "HAWAII 1946" centered at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed white on green; "HAWAII 1947" centered at bottom
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Embossed black on golden yellow; "HAWAII 1948" centered at top
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Embossed golden yellow on black; "HAWAII 1949" centered at bottom
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|As 1948 base, but with "HAWAII 1950" at top
+|1A''1234''<br>A''1234''
+|1A''1234'' serial format used in Honolulu County, with the prefix progressing 1A-5A, 1B-5B, etc.<ref name="allaboutlicenseplatesHI"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|As 1949 base, but with "HAWAII 51" at bottom
+|1''A''-123<br>''A'' 123<br>''A''-1234
+|Honolulu County used letters A, B, C, E, F, N, T, W and X; Hawaiʻi County used H and Z; Maui County used M and L; and Kauaʻi County used K. This continued through 1980.<ref name="allaboutlicenseplatesHI"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|As 1948 base, but with "HAWAII 52" at top
+|1''A''-123<br>''A''-123<br>''A''-1234
+|
+|}
+
+===1953 to present===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Hawaii license plate that complied with these standards was a modification of the 1953 plate, introduced in 1956.<ref>{{Cite web|url=http://www.plateshack.com/y2k/Hawaii/hiy2k.html|title = Hawai'i Y2K}}</ref>
+
+Since 1969, all Hawaii passenger plates have featured a round mounting hole at the top right and horizontal slots in the other three corners. This irregularity is to accommodate the yearly registration sticker in the upper right corner of the rear plate.
+
+{|class=wikitable
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Hawaii 1953 license plate.jpg|150px]]<br>[[File:Hawaii 1954 license plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1953–56}}
+|Embossed golden yellow on black; "HAWAII" at bottom, offset to left
+|''none''
+|1''A''-123<br>''A''-123<br>''A''-1234<br>1''A''-1234
+|rowspan="5"|County-coded
+|Validated annually with one metal tab attached to the lower right corner of the front license plate: 1953 - plain aluminum, 1954 - black on yellow, 1955 - red on white, and 1956 - black on deep yellow.
+|-
+|[[File:1957-8-9 Hawaii license plate.jpg|150px]]
+|1957–60
+|Embossed white on red with border line; "HAWAII" centered at bottom
+|"ALOHA" centered in white at top
+|1''A''-123<br>''A''-123<br>''A''-1234<br>1''A''-1234
+|Validated annually with windshield stickers: 1957 - red on white, 1958 - gold on green, 1959 - black on yellow, 1960 - white on blue.
+|-
+|[[File:1961 Hawaii license plate 9E-2334.jpg|150px]]
+|1961–68
+|Embossed white on green with border line; "HAWAII" centered at top
+|"ALOHA STATE" centered in white at bottom
+|1''A''-1234<br>''A''-1234<br>'''''K'''''-12345
+|Validated annually with windshield stickers: 1961- white on green, 1962 - red on yellow with Hawaii Visitors Bureau Hawaiian warrior logo, 1963 - yellow on red with Hawaii Visitors Bureau Hawaiian warrior logo, 1964 - black on gold, 1965 - white on blue, 1966 - white on green, 1967 - yellow on red, 1968 - black on gold.
+|-
+|[[File:1969 Hawaii license plate 9B-90.jpg|150px]]
+|1969–75
+|Embossed black on reflective yellow with border line; "HAWAII" centered at top; "69" etched at top right
+|"ALOHA STATE" centered in black at bottom
+|1''A''-1234<br>''A''-1234<br>'''''K'''''-12345
+|
+|-
+|[[File:1976 Hawaii license plate 565-895.jpg|150px]]
+|1976–80
+|Embossed blue on reflective white with border line; "HAWAII" centered at top; pink graphics of King [[Kamehameha I]] and [[Diamond Head, Hawaii|Diamond Head]] screened in background; red [[hibiscus]] screened at top left and "76" at top right
+|"ALOHA STATE" centered in blue at bottom
+|1''A''-1234<br>''A''-12345
+|
+|-
+|[[File:Hawaii license plate, 1981–1990.png|150px]]
+|1981–90
+|Embossed brown on reflective white; orange [[warrior]] head graphic screened in center; "HAWAII" screened in brown centered at top; "81" screened at top right
+|"ALOHA STATE" screened in brown centered at bottom
+|''A''BC&nbsp;123
+|County-coded (see right)
+|Honolulu County used A, B, C and D as the first letter; Hawaiʻi County used H; Maui County used M; and Kauaʻi County used K. Letters I, O and Q not used, and H, K, L and M not used in Honolulu County; these practices continue today.<ref name="allaboutlicenseplatesHI"/><ref name="Alphabet soup">{{cite news|last=Watanabe |first=June |date=February 19, 2010 |title=Kokua Line: Alphabet soup |url=http://archives.starbulletin.com/content/20100220_Alphabet_soup |newspaper=[[Honolulu Star-Bulletin]] |access-date=January 23, 2011}}</ref><ref name="Some letters exclusive">{{cite news |last=Watanabe |first=June |date=March 2, 2010 |title=Kokua Line: Some letters exclusive to neighbor island plates |url=http://archives.starbulletin.com/content/20100302_Some_letters_exclusive_to_neighbor_island_plates |newspaper=Honolulu Star-Bulletin |access-date=January 23, 2011}}</ref>
+|-
+|[[File:1991 Hawaii license plate MNG 728.jpg|150px]]
+|1991–2025
+|Embossed black on reflective white; [[rainbow]] graphic screened in background; "HAWAII" screened in black centered at top
+|rowspan="2"|"ALOHA STATE" screened in black centered at bottom
+|rowspan="2"|''A''BC&nbsp;123
+|rowspan="2"|County-coded
+|rowspan="2"|Honolulu County uses E, F, G, J, N, P, R, S, T, W and Y as the first letter; Hawaiʻi County uses H and Z; Maui County uses M and L; and Kauaʻi County uses K.<ref name="allaboutlicenseplatesHI"/><ref name="Alphabet soup"/> The design was set to run out in Honolulu County mid-2024 with the letter W, but it was announced in late 2023 that the letters Y, A, B, C, and D had been added to Honolulu County. It is estimated that this will keep the Rainbow series in production for the next 15 years.<ref name="khon2news">{{cite news |title=Hawaii's rainbow license plate is not retiring after all |url=https://www.khon2.com/local-news/hawaiis-rainbow-license-plate-is-not-retiring-after-all/ |access-date=23 April 2024 |agency=KHON2 News}}</ref>
+|-
+|[[File:Hawaiian sample license plate, 2025.png|150px]]
+|2025–present<ref name=okina/>
+|Embossed black on reflective white; [[rainbow]] graphic screened in background; "{{lang|haw|HAWAI[[ʻokina|ʻ]]I|italic=no}}" screened in black centered at top<ref name=okina>{{cite web |title=Motor Vehicle License Plates |url=https://www8.honolulu.gov/csd/motor-vehicle-license-plates/ |website=City and County of Honolulu |access-date=18 January 2025}}</ref>
+|}
+
+==Non-passenger types==
+===1981 base===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Serial format
+!Serials issued
+!Notes
+|-
+
+|[[File:Blank License Plate Shape.svg|150px]]
+|City and County Government
+|City and County of Honolulu: '''C&C''' ####
+
+City and County Of Honolulu: 3 Numbers: ###
+
+County of Hawaiʻi: '''CofH''' ###
+
+County of Maui: '''CofM''' ###
+
+County of Kauaʻi: '''CofK''' ###
+
+County of Kauaʻi: 1981 Vehicles: 2 Numbers: '''CofK''' ##
+
+|City and County of Honolulu: '''C&C''' 1700–3199 
+County Of Hawaiʻi: '''CofH''' 430–999
+
+County Of Mauʻi: '''CofM''' 100–799
+
+County Of Kauaʻi: '''CofK''' 130–599
+
+County Of Kauaʻi: 1981-1982: 2 Numbers: '''CofK''' 10–99
+
+|County and State Governments have a history of renewing their old vehicles, so some vehicles that have fairly new license plates may be an old vehicle. Also, the state/county tends to reuse numbers, so it may not be accurate, this data has been reported and estimated based on remaining renewed state/county vehicle title information.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Motorcycle]]
+|123&nbsp;''A''BC
+|County-coded
+|Honolulu County used X as the first letter; Hawaiʻi County used H (starting from HMC); Maui County used M (starting from MMC); and Kauaʻi County used K (starting from KMC).<ref>{{cite web |last=Tanner |first=Eric N. |title=Hawaii Motorcycle License Plates |url=http://www.allaboutlicenseplates.com/motorcycle.asp?State=Hawaii |publisher=allaboutlicenseplates.com |access-date=April 5, 2020 }}{{Dead link|date=November 2025 |bot=InternetArchiveBot }}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Government
+|1981-1990: '''State''' ####
+Some Older Vehicles: (such as 1970, 1960, etc. or some vehicles) '''State''' ###
+|1981-1990: '''State''' 2600–5699
+Airport Division: Older Vehicles: '''State''' 2100–2599
+
+Early 1981: '''State''' 200-299 - '''State''' 300-399 - '''State''' 400-499 - '''State''' 500-599 - '''State''' 700-799 - '''State''' 800-899 - '''State''' 900-999 - '''State''' 1000-1099 - '''State''' 1100-1199 - '''State''' 1200-1299 - '''State''' 1500-1599 - '''State''' 1600-1699 - '''State''' 1700-1799 -  '''State''' 1800-1899 - '''State''' 1900-1999 - '''State''' 2000-2099 - '''State''' 2600–2699
+|County and State Governments have a history of renewing their old vehicles, so some vehicles that have fairly new license plates may be an old vehicle. Also, the state/county tends to reuse numbers, so it may not be accurate, this data has been reported and estimated based on remaining renewed state/county vehicle title information.
+|-
+|[[File:Modern Hawaii truck license plate 970 MDR.jpg|150px]]
+|[[Truck]]
+|123&nbsp;''A''BC
+|County-coded
+|Honolulu County used T as the first letter; Hawaiʻi County used H; Maui County used M; and Kauaʻi County used K.
+|}
+
+===1991 base===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:County of Maui, Hawaii license plate CofM2180.jpg|150px]]
+|City and County Government
+|City and County of Honolulu: '''C&C''' ####
+
+County of Hawaiʻi: '''CofH''' ####
+
+County of Maui: '''CofM''' ####
+
+County of Kauaʻi: Older Plates: '''CK''' ####
+
+County of Kauaʻi: Newer Plates:  '''CofK/Or CK''' ####
+|City and County of Honolulu:
+1991-1992: '''C&C''' 3000-3499/5000-5499
+
+1993–present: '''C&C''' 4000–9444
+
+County Of Hawaiʻi: '''CofH''' 1000–3775
+
+County Of Maui: '''CofM''' 1000–2728
+
+County Of Kauaʻi: Older Plates: '''CK''' 1000–1999
+
+County of Kauaʻi: Newer Plates: '''CofK/Or CK''' 2000–2528
+|County and State Governments have a history of renewing their old vehicles, so some vehicles that have fairly new license plates may be an old vehicle.
+|-
+|
+|[[Honolulu Police Department]]
+|'''HPD'''1234
+|
+|Numeric portion of serial is the unit number of the plated vehicle.
+|-
+|
+|[[Motorcycle]]
+|123 '''X'''BC
+|
+|First letter is X.<ref name="Alphabet soup" />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|State Government
+|1991-2001: '''State''' ####
+2001–present: '''State''' A###
+|1991-1992: '''State''' 5500–6499
+1993-2001: '''State''' 4000–9999
+
+2001–present: '''State''' A101-H788
+|County and State Governments have a history of renewing their old vehicles, so some vehicles that have fairly new license plates may be an old vehicle.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[TheBus (Honolulu)|TheBus]]
+|'''BUS'''123
+|
+|Numeric portion of serial is the unit number of the plated vehicle.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Trailer
+|123 '''W'''BC
+|
+|First letter is W.<ref name="Alphabet soup" />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Truck]]
+|123 '''T'''BC
+|
+|First letter is T.<ref name="Alphabet soup" />
+|-
+|}
+
+==Optional types==
+===1991 base===
+{| class="wikitable"
+|+
+!Image
+!Type
+!Design
+!Serial format
+|-
+|
+|America United (issued 2 weeks after 9/11/01)
+|Sticker at left
+|AB123
+|-
+|
+|Bishop Museum (first optional plate, issued 2000)
+|Sticker at left
+|AB123
+|-
+|
+|Hawaii Arts Council (2 sticker designs used)
+|Sticker at left
+|AB123
+|-
+|
+|Hawaiian Humane Society (2 sticker designs used)
+|Sticker at left
+|AB123
+|-
+|
+|Honolulu Zoo
+|Sticker at left
+|AB123
+|-
+|
+|Honolulu Police Relief Association
+|Sticker at left
+|AB123
+|-
+|
+|Hawaii Firefighters
+|Sticker at left
+|AB123
+|-
+|
+|Maui Fire Dept.
+|Sticker at left
+|AB123
+|-
+|
+|Protect Our Native Species
+|Sticker at left
+|AB123
+|-
+|
+|University of Hawaii
+|Sticker at left
+|AB123
+|-
+|
+|Kamehameha Schools
+|Sticker at left
+|AB123
+|-
+|
+|Hawaii Lions Clubs
+|Sticker at left
+|AB123
+|-
+|
+|Mighty Mo (Battleship Missouri)
+|Sticker at left
+|AB123
+|-
+|
+|National Marine Sanctuaries
+|Sticker at left
+|AB123
+|-
+|
+|Olelo Hawaii (Hawaiian language)
+|Sticker at left
+|AB123
+|-
+|
+|Respect Choice
+|Sticker at left
+|AB123
+|-
+|
+|Choose Life
+|Sticker at left
+|AB123
+|-
+|
+|Veteran 
+|Text and American flag on left
+|1-9999; 001A-999Z
+|-
+|
+|Combat Veteran
+|Text on left
+|1-9999; 001A-999Z
+|-
+|
+|Combat Wounded
+|Text and Purple Heart design on left
+|1-9999; 001A-999Z
+|-
+|
+|World War II Veteran
+|Text on left
+|1-9999
+|-
+|
+|Korea Veteran
+|Text on left
+|1-9999
+|-
+|
+|Vietnam Veteran
+|Text on left
+|1-9999
+|-
+|
+|Persian Gulf Veteran
+|Text on left
+|1-9999
+|-
+|[[File:1991 Hawaii license plate Pearl Harbor survivor.jpg|150px]]
+|Pearl Harbor Survivor
+|Text on left
+|1-9999
+|-
+|
+|Electric Vehicle
+|Text on left
+|1-9999; 001A-999Z
+|-
+|
+|Disabled
+|Wheelchair logo on left
+|1-9999; 001-999Z
+|-
+|
+|Honorary Consul
+|Text on left
+|1-9999
+|}
+
+===Unique base===
+{| class="wikitable"
+|-
+!Image
+!Type
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|
+|[[Haleakalā National Park]]
+|
+|AB12A
+|
+|-
+|
+|[[Hawaiʻi Volcanoes National Park]]
+|
+|AB123
+|
+|-
+|
+|Polynesian Voyaging Society
+|
+|AB12A
+|
+|Awarded "Plate of the Year" for best new license plate of 2022 by the [[Automobile License Plate Collectors Association]], the first time Hawaii was so honored.
+|-
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.15q.net/hi.html Hawaii license plates 1969-present]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Oceania in topic|Vehicle registration plates of}}
+{{Hawaii}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Hawaii}}
+[[Category:Vehicle registration plates of the United States by state or territory|Hawaii]]
+[[Category:Transportation in Hawaii]]
+[[Category:Hawaii transportation-related lists]]

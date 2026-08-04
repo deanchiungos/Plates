@@ -1,0 +1,884 @@
+{{short description|Arizona vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Grand Canyon State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = XXX 1XX (2021-present)<br />XXX1XXX (2020-2021)<br />ABC1234 (2008-2020)<br />123·ABC (1996-2008)
+| current_start_date = 1996 (current flat-printed version introduced in 2008)
+| designer = 
+| issuer = [[Arizona Department of Transportation]], Motor Vehicle Division
+| manufacturer = 
+| start_date = {{Start date|1914|01|01}}<br>(pre-state plates from 1912 to December 31, 1913)
+}}
+
+The U.S. state of [[Arizona]] first required its residents to register their [[motor vehicle]]s in 1912. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1914, when the state began to issue plates.
+
+Plates are issued by the [[Arizona Department of Transportation]] (ADOT) through its Motor Vehicle Division (MVD). Only rear plates have been required since 1989.
+
+In Arizona, the license plate belongs to the vehicle owner. This allows for the transfer of a plate from one vehicle to another.<ref>{{cite web |title=Selling Your Vehicle |url=https://azdot.gov/motor-vehicles/vehicle-services/buying-and-selling-your-vehicle/selling-your-vehicle |publisher=[[Arizona Department of Transportation]] |access-date=July 12, 2020}}</ref>
+
+The existing style was introduced in 1996 and was designed by Walter Punzmann.<ref>{{cite web | url=https://azbigmedia.com/lifestyle/heres-how-the-arizona-license-plate-got-its-look/ | title=Here's how the Arizona license plate got its look | date=29 October 2020 }}</ref>
+
+==Passenger baseplates==
+
+===1914 to 1955===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Embossed white serial on blue plate; "ARIZ 1914" at right
+|''none''
+|1234
+|1 to approximately 5000
+|
+|-
+|[[File:1915 Arizona License Plate.jpg|150px]]
+|1915
+|Embossed black serial on white plate; "ARIZ 1915" at right
+|''none''
+|1234
+|1 to approximately 7500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed black serial on copper plate with border line; vertical "ARIZ" and "1916" at left and right respectively
+|''none''
+|12345
+|1 to approximately 12500
+|
+|-
+|[[File:1917 Arizona license plate.jpg|150px]]
+|1917
+|Embossed white serial on black plate; embossed steer head graphic at left with "ARIZ" above and "1917" below
+|''none''
+|12345
+|1 to approximately 20000
+|
+|-
+|[[File:1918 Arizona License Plate.jpg|150px]]
+|1918
+|Embossed dark blue serial on olive-gray plate; "1918 ARIZ" at right
+|''none''
+|12345
+|1 to approximately 24000
+|
+|-
+|[[File:1919 Arizona License Plate.jpg|150px]]
+|1919
+|Embossed white serial on black plate with border line; "ARIZ 1919" at left
+|''none''
+|12345
+|1 to approximately 29000
+|
+|-
+|[[File:Arizona 1920 License Plate.jpg|150px]]
+|1920
+|Embossed black serial on white plate with border line; vertical "ARIZ" and "1920" at left and right respectively
+|''none''
+|12345
+|1 to approximately 35000
+|
+|-
+|[[File:1921 Arizona license plate.jpg|150px]]
+|1921
+|Embossed white serial on black plate with border line; stylized "ARIZ" and "21" at right
+|''none''
+|12345
+|1 to approximately 36000
+|
+|-
+|[[File:1922 Arizona License Plate.jpg|150px]]
+|1922
+|Embossed green serial on white plate with border line; vertical "ARIZ" and "1922" at left and right respectively
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1923 Arizona License Plate.jpg|150px]]
+|1923
+|Embossed dark blue serial on white plate with border line; stylized vertical "ARIZ" and "23" at left
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1924 Arizona License Plate.jpg|150px]]
+|1924
+|Embossed white serial on dark blue plate with border line; "24" and stylized vertical "ARIZ" at left
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1925 Arizona License Plate.jpg|150px]]
+|1925
+|Embossed black serial on copper plate with border line; "ARIZONA" at bottom, offset to left; vertical "1925" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|First use of the full state name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed black serial on white plate with border line; "ARIZONA" at bottom, offset to left; vertical "1926" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1927 Arizona License Plate.jpg|150px]]
+|1927
+|Embossed black serial on copper plate with border line; "ARIZONA" at bottom, offset to left; vertical "1927" at right
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1928 Arizona License Plate.jpg|150px]]
+|1928
+|Embossed red serial on copper plate with border line; "ARIZONA" at bottom, offset to right; vertical "1928" at left
+|''none''
+|''1''-12345<br>''10''-1234
+|Coded by county of issuance (''1'' or ''10'')
+|
+|-
+|[[File:1929 Arizona License Plate.jpg|150px]]
+|1929
+|Embossed slanted orange serial on black plate with border line; slanted "19 ARIZ 29" centered at bottom
+|''none''
+|123-456
+|Issued in blocks by county
+|
+|-
+|[[File:1930 Arizona license plate.jpg|150px]]
+|1930
+|Embossed slanted black serial on white plate; slanted "ARIZONA" and "1930" centered at top and bottom respectively; letter at top left denoting county of issuance
+|''none''
+|{{nowrap|12-34-56}}
+|Issued in blocks by county
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed slanted black serial on orange plate; slanted "1931" and "ARIZONA" centered at top and bottom respectively; letter at top left denoting county of issuance
+|''none''
+|12-34-56
+|Issued in blocks by county
+|
+|-
+|[[File:1932 Arizona License Plate.jpg|150px]]
+|1932
+|Embossed slanted white serial on copper plate; slanted "ARIZONA-1932" at top
+|''none''
+|''1''AB1<br>''1''A1B<br>''A''A12<br>''A''1A2
+|Coded by county of issuance (''1'' or ''A'')
+|
+|-
+|[[File:1933 Arizona license plate.jpg|150px]]
+|1933
+|Debossed slanted copper serial within embossed black rectangle on copper plate; slanted "ARIZONA-1933" at bottom
+|''none''
+|''1''AB1<br>''1''A1B<br>''A''A12<br>''A''1A2
+|Coded by county of issuance (''1'' or ''A'')
+|
+|-
+|[[File:1934 Arizona license plate.jpg|150px]]
+|1934
+|Debossed slanted copper serial within embossed light blue rectangle on copper plate; slanted "ARIZONA-1934" at top
+|''none''
+|''1''AB1<br>''1''A1B<br>''A''A12<br>''A''1A2
+|Coded by county of issuance (''1'' or ''A'')
+|
+|-
+|[[File:1935 Arizona License Plate.jpg|150px]]
+|1935
+|Embossed slanted black serial within black rectangular outline on copper plate; slanted "ARIZONA-1935" at bottom
+|''none''
+|''1''AB1<br>''1''A1B<br>''A''A12<br>''A''1A2
+|Coded by county of issuance (''1'' or ''A'')
+|
+|-
+|[[File:1936 Arizona License Plate.jpg|150px]]
+|1936
+|Embossed black serial on copper plate; vertical "ARIZ" and "1936" at left and right respectively; county name centered at bottom
+|''none''
+|''1''A B1<br>''1''A 1B<br>''A''A 12<br>''A''1 A2
+|Coded by county of issuance (''1'' or ''A'')
+|
+|-
+|[[File:1937 Arizona License Plate.jpg|150px]]
+|1937
+|Embossed black serial on copper plate with border line; "ARIZONA-37" and county name centered at top and bottom respectively
+|''none''
+|''A''1-234
+|Coded by county of issuance (''A'')
+|
+|-
+|[[File:1938 Arizona license plate 02.jpg|150px]]
+|1938
+|Embossed black serial on yellow plate with border line; "ARIZONA-38" and county name centered at top and bottom respectively
+|''none''
+|''A''1234
+|Coded by county of issuance (''A'')
+|
+|-
+|[[File:1939 Arizona License Plate.jpg|150px]]
+|1939
+|Embossed black serial on copper plate; "ARIZONA" centered at top; vertical "1539" and "1939" at left and right respectively
+|"MARCOS DE NIZA" centered at bottom
+|''A''12345
+|Coded&nbsp;by county of issuance (''A'')
+|Commemorated the 400th anniversary of the expedition of Fray [[Marcos de Niza]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed dark blue serial on white plate; "ARIZONA-40" centered at top
+|"GRAND CANYON STATE" at bottom
+|''A''12345
+|Coded by county of issuance (''A'')
+|First use of the "Grand Canyon State" slogan.
+|-
+|[[File:1941 Arizona license plate.JPG|150px]]
+|1941
+|Embossed black serial on copper plate; "ARIZONA-41" centered at bottom
+|"GRAND CANYON STATE" at top
+|''A''12345
+|Coded by county of issuance (''A'')
+|
+|-
+|[[File:1942 Arizona license plate.jpg|150px]]
+|{{nowrap|1942–44}}
+|Embossed black serial on white plate; "42-ARIZONA" centered at top
+|"GRAND CANYON STATE" at bottom
+|''A''123<br>1''A''234<br>12''A''345
+|Coded by county of issuance (''A'')
+|Revalidated for 1943 and 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945–46
+|Embossed black serial on white plate; "ARIZ. 45" centered at top
+|''none''
+|''A''1234
+|Coded by county of issuance (''A'')
+|Revalidated for 1946 with windshield stickers.
+|-
+|[[File:Arizona 1947 license plate.jpg|150px]]
+|1947
+|Embossed red serial on unpainted aluminum plate; "ARIZ. 47" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|{{small|''A''/''B''}}&nbsp;1234
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:1948 Arizona License Plate.jpg|150px]]
+|1948
+|Embossed black serial on unpainted aluminum plate; "ARIZ. 48" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|{{small|''A''/''B''}}&nbsp;1234
+|Coded by county of issuance ({{small|''A''/''B''}})
+|
+|-
+|[[File:AZ 1949 license plate.JPG|150px]]
+|1949
+|Embossed green serial on waffle-textured unpainted aluminum plate; "ARIZONA 49" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|''A''-12345
+|Coded by county of issuance (''A'')
+|
+|-
+|[[File:AZ 1950 license plate.JPG|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1950–51
+|Embossed black serial on white plate; "ARIZONA 50" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|''A''-12345
+|Coded by county of issuance (''A'')
+|Revalidated for 1951 with aluminum tabs.
+|-
+|[[File:Arizona 1952 license plate.jpg|150px]] [[File:1953 Arizona license plate.jpg|150px]]
+|1952–53
+|Embossed white serial on black plate; "ARIZONA 52" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|''A''-12345
+|Coded by county of issuance (''A'')
+|Revalidated for 1953 with black tabs.
+|-
+|[[File:AZ 1954.JPG|150px]] [[File:Blank License Plate Shape.svg|150px]]
+|1954–55
+|Embossed black serial on white plate; "ARIZONA 54" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|''A''-12345
+|Coded by county of issuance (''A'')
+|Revalidated for 1955 with aluminum tabs.
+|}
+
+===Since 1956===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]], and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref name="Plates">{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Arizona license plate that complied with these standards.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Arizona 1956 license plate.jpg|150px]]
+|{{nowrap|1956–58}}
+|Embossed white serial on black plate with border line; "ARIZONA 56" centered at top
+|"[[Grand Canyon|GRAND CANYON STATE]]" centered at bottom
+|''A''-12345
+|Coded by county of issuance (''A'')
+|Revalidated for 1957 and 1958 with stickers.
+|-
+|[[File:Arizona 1959 ATC-886.jpg|150px]]
+|1959–60
+|Embossed white serial on blue plate with border line; "ARIZONA 59" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|ABC-123
+|AAA-001 to approximately BDY-999
+|Revalidated for 1960 with stickers. Letters I, O and Q not used in serials; this practice continued through 1965.<ref name="allaboutlicenseplatesAZ">{{cite web |last=Tanner |first=Eric N. |title=Arizona Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Arizona&code=az |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|[[File:Arizona 1961 license plate - Number CGT-882.jpg|150px]]
+|1961–63
+|Embossed blue serial on white plate with border line; "ARIZONA 61" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|ABC-123
+|CAA-001 to approximately DMC-999
+|Revalidated for 1962 and 1963 with stickers.
+|-
+|[[File:Arizona 1964 license plate FGM-258.jpg|150px]]
+|1964–65
+|Embossed white serial on blue plate with border line; "ARIZONA 64" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|ABC-123
+|EAA-001 to approximately FMJ-999
+|Revalidated for 1965 with stickers.
+|-
+|[[File:Arizona 1966 license plate.jpg|150px]]
+|1966–68
+|Embossed black serial on reflective white plate with border line; "ARIZONA 66" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|ABC-123
+|HAA-001 to<br>JZZ-999;<br>NAA-001 to approximately NEF-999
+|Revalidated for 1967 and 1968 with stickers. Letters I, O, Q and U not used in serials; this practice continues today.<ref name="allaboutlicenseplatesAZ"/>
+|-
+|[[File:Arizona 1969 MPP-619.jpg|150px]]
+|1969–72
+|Embossed black serial on reflective yellow plate with border line; "ARIZONA 69" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|ABC-123
+|KAA-001 to<br>MZZ-999;<br>YAA-001 to approximately YDF-999
+|Revalidated for 1970, 1971, and 1972 with stickers.
+|-
+|[[File:Arizona license plate 1973 series.jpg|150px]]
+|1973–80
+|Embossed green serial on reflective pale orange plate with border line; "ARIZONA 73" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|ABC-123
+|PAA-001 to approximately WNJ-999
+|Revalidated with stickers until 1990.
+|-
+|[[File:Arizona license plate, 1980–1996 series with March 1998 sticker.png|150px]]
+|1980–96
+|Embossed reflective white serial with [[Saguaro|saguaro cactus]] separator on maroon plate with border line; "ARIZONA" centered at top
+|"GRAND CANYON STATE" centered at bottom
+|ABC-123
+|AAA-001 to approximately NXG-200
+|Front and rear plates issued until around the ETT series (1989); rear plates only thereafter. Still currently revalidated.
+|-
+|[[File:2005 Arizona License Plate.png|150px|Embossed standard Arizona car registration plate 2005]]
+|1996&nbsp;– January 2008
+|Embossed dark green serial on reflective graphic plate with desert scene featuring turquoise, white, and orange gradient sky, white setting sun and purple mountains (in the shape of [[Four Peaks]]) and cacti; "ARIZONA" screened in turquoise, with white outlines, centered at top
+| rowspan="4" |"GRAND CANYON STATE" screened in dark green below serial, offset to right
+|123·ABC
+|001·AAA to 999·ZZZ
+|Awarded "Plate of the Year" for best new license plate of 1996 by the [[Automobile License Plate Collectors Association]], the first time Arizona was so honored.
+|-
+|
+|January 2008<ref>{{cite news |last=Faherty |first=John |date=April 30, 2008 |title=Ariz. plates get extra character |newspaper=[[The Arizona Republic]] |quote="The change in the number of characters happened when the Arizona Department of Transportation ran out of combinations when it issued plate 999 ZZZ in mid-January."}}</ref>&nbsp;– April 2020
+| rowspan="3" |As above, but with serial screened, security threads added to center of plate, and saguaro cactus added to the left of the serial
+|ABC1234
+|AAA0001 to approximately CWX9999
+|CWL0001 to CWX9999 used on rental cars since 2020.<ref name="allaboutlicenseplatesAZ"/>
+|-
+| 
+| April 2020&nbsp;– January 2021
+| Various formats, including ABC1DEF{{efn|Order of progression: DFB1CEA. Because of the non-standard nature of the serials, sixty-four serial formats were available, though only eight were used. Read from left to right in a conventional format:
+* ABC1DEF
+* A1B2CDE
+* ABC1D2E
+* A1B2C3D
+* 1AB2CDE
+* 12A3BCD
+* 1AB2C3D
+* 12A3B4C
+}}
+| AAA0AAA to approximately SXA6DTA {{small|(as of August 19, 2021)}}
+| rowspan="2" |Also called "Alphabet Soup" plates, this switch occurred after ADOT introduced a new computer coding system for plates, the old system having dated from the mid-1980s.<ref name="Randazzo">{{cite news |last=Randazzo |first=Ryan |date=June 17, 2020 |title=Arizona has made a subtle but significant change to its license plates. Have you noticed? |url=https://www.azcentral.com/story/money/business/consumers/2020/06/17/arizona-changes-license-plate-format-expand-options-drivers/3192879001/ |newspaper=[[The Arizona Republic]] |access-date=June 22, 2020}}</ref><ref>{{cite web|last=Staff|url=https://azdot.gov/adot-news/your-eyes-don%E2%80%99t-deceive-you-new-license-plate-numbers-are-different|title=Your Eyes Don't Deceive You, New License Plates Numbers Are Different|date=June 17, 2020|access-date=February 9, 2021|publisher=Arizona Department of Transportation}}</ref> These were reported as "random" combinations but actually increment in a non-standard order. Except for the fourth digit in each plate, which is always a number, all other positions can be either letters or numbers; each position uses the letters A–Z followed by the numbers 0–9.
+|-
+|
+| February 2021&nbsp;– present
+| Various formats, including ABC&nbsp;1DE{{efn|Order of progression: CEA 1DB. Because of the non-standard nature of the serials, thirty-two serial formats are available.}}
+| AAA&nbsp;0AA to DAA&nbsp;9V7 {{small|(as of June 18, 2026)}}
+|}
+
+==County coding==
+{|class="wikitable sortable"
+|-
+!County!!1922-23!!1924-28!!1930-31!!1932-36!!1937-38!!1939-44<!--!!1945-58-->
+|-
+| [[Maricopa County, Arizona|Maricopa]] || 1 || 1 || A  || 1-7 || A-E || A
+|-
+| [[Cochise County, Arizona|Cochise]] || 2 || 2 || B || 8, 9 || G || C
+|-
+| [[Pima County, Arizona|Pima]] || 3 || 3 || C || A-E || J, K || B
+|-
+| [[Gila County, Arizona|Gila]] || 4 || 4 || D || F, G || M || F
+|-
+| [[Yavapai County, Arizona|Yavapai]] || 5 || 5 || E || H, J, K || N || D
+|-
+| [[Yuma County, Arizona|Yuma]] || 6 || 6 || F || L, N || R || E
+|-
+| [[Pinal County, Arizona|Pinal]] || 7 || 7 || G || P, R  || S || G
+|-
+| [[Graham County, Arizona|Graham]] || 8 || 8 || H || S || T || K
+|-
+| [[Santa Cruz County, Arizona|Santa Cruz]] || 9 || 9 || J || T || U || N
+|-
+| [[Mohave County, Arizona|Mohave]] || 10 || 10 || K || U || V || L
+|-
+| [[Coconino County, Arizona|Coconino]] || 11 || 11 || L || V || W || H
+|-
+| [[Navajo County, Arizona|Navajo]] || 12 || 12 || M || X || X || J
+|-
+| [[Apache County, Arizona|Apache]] || 14 || 14 || N || Y || Y || P
+|-
+| [[Greenlee County, Arizona|Greenlee]] || 13 || 15 || P || Z || Z || R
+|}
+'''Note:''' [[La Paz County]] was not formed until 1983, by which time the county-coding policy had ended.
+
+==Non-passenger plates==
+===Since 1997===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Alternative fuel|Alternative Fuel]] – Government
+|
+|Blue on sky and clouds graphic
+|'''GA'''·12345
+|
+|-
+| 
+|Alternative Fuel – Passenger
+|April 1997
+|Blue on sky and clouds graphic
+|'''AF'''·1234<br>'''AF'''·123A<br>'''AF'''·12A3<br>'''AF'''12A3<br>'''AF'''1A23<br>1A23'''AF'''
+|Early plates had a lighter-colored background. Serials became screened at around AF·00P1, and lost the separator at around AF00S1. High # {{asof|2020|4|22|lc=y|df=US}}: 7M77AF
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Alternative Fuel – [[hybrid vehicle]]
+|2008
+|Blue on sky and clouds graphic
+|12'''L N'''34<br>123 '''LN'''4
+|Issuance ceased at 99L N99.
+|-
+|
+|[[Amateur Radio]]
+|
+|As passenger base. Starting in 1955, a [[Radio masts and towers|radio tower]] graphic appears to the left of the serial, and "GRAND CANYON STATE" is replaced with "AMATEUR RADIO OPERATOR"
+|''FCC call sign''
+|One of the earliest special plates that was still available as of February 2013.
+|-
+|[[File:Arizona apportioned plate.jpg|150px]]
+|[[International Registration Plan|Apportioned]]
+|
+|As passenger base, but with "APPORTIONED" in place of slogan
+|'''A'''B·12345<br>'''A'''B12345
+|Began at AA·00001. AC series reserved for optional It Shouldn't Hurt to Be a Child plate, and AF series skipped to avoid confusion with Alternative Fuel passenger plates. Serials became screened midway through the AD series, and lost the separator at the start of the AH series. High # {{asof|2024|5|25|lc=y|df=US}}: AM50695.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Commercial vehicle|Commercial]]
+|October 1997
+|As passenger base
+|'''C'''B·12345<br>'''C'''B12345
+|Began at CA·00001. Serials became screened early in the CF series, and lost the separator at the start of the CK series. High # {{asof|2022|6|22|lc=y|df=US}}: CN65743.
+|-
+|<!-- Deleted image removed: [[File:DiableAZ.jpg|150px]] -->
+|[[Disability|Disabled Person]]
+|1996
+|As passenger base
+|<nowiki>-</nowiki>1ABC
+|Large wheelchair embossed to left of serial with hyphen. First series used older [[die (manufacturing)|dies]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Disability|Disabled Person]]
+|1997
+|As passenger base
+|ABC12
+|Small wheelchair embossed to left of serial. First series used older [[die (manufacturing)|dies]].
+|-
+|[[File:1977 Arizona Historic Vehicle License Plate.jpg|150px]]
+|[[Antique car|Historic Vehicle]]
+|1977
+|All-embossed red on copper
+|12A<br>1A2<br>1234<br>ABC1<br>12AB<br>123A<br>12A3<br>1A23
+|Dated-1977 base issued continuously since then. Latest serial is 12AB. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Manufacturer
+|
+|As passenger base
+|'''MT'''-1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Motorcycle]]
+|1996
+|Similar to passenger base
+|{{small|'''M'''/'''C'''}}&nbsp;ABC1<br>{{small|'''M'''/'''C'''}}&nbsp;1ABC<br>{{small|'''M'''/'''C'''}}&nbsp;AB1C<br>{{small|'''M'''/'''C'''}}&nbsp;A1BC<br>{{small|'''M'''/'''C'''}}&nbsp;1A2B<br>{{small|'''M'''/'''C'''}}&nbsp;A12B
+|
+|-
+|
+|[[Trailer (vehicle)|Trailer]]
+|1997
+|As passenger base
+|A-12345<br>12345-A
+|Letters J through Y (excluding O, Q and U) were used in the A-12345 format. Serials became screened late in the T series. 
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Transporter (vehicles)|Transporter]]
+|
+|As passenger base
+|'''XP'''-123A
+|
+|}
+
+===1980 to 1996===
+{|class="wikitable"
+|-
+!Image
+!Type
+!Design
+!Serial format
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]]
+|As passenger base, but with "APPORTIONED" in place of slogan
+|12'''A'''-345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Commercial vehicle|Commercial]]
+|As passenger base
+|1AB-234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Trailer (vehicle)|Trailer]]
+|As passenger base, but with "TLR." to left of state name
+|A-12345
+|Letters D, E, F and G were used.
+|}
+
+==Optional plates==
+Arizona offers its motorists a number of optional issue designs that are available upon the payment of an additional fee. Below is a partial list.
+
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Notes
+|-
+|<!-- Deleted image removed: [[File:AZAgriculture.jpg|150px]] -->
+|Arizona Agriculture
+|2010
+|1'''AG'''2345
+|
+|-
+|[[File:AZCentennial.jpg|150px]]
+|Arizona Centennial
+|October 30, 2011
+|'''A'''1234'''Z'''<br>'''A'''1234'''C'''
+|Awarded "Plate of the Year" for best new license plate of 2011 by the Automobile License Plate Collectors Association, the second time Arizona was so honored.
+|-
+|<!-- Deleted image removed: [[File:AZDiamond.jpg|150px]] -->
+|[[Arizona Diamondbacks]]
+|April 4, 2007
+|'''DB'''12345
+|Redesigned in 2016.
+|-
+|<!-- Deleted image removed: [[File:AZHighway.jpg|150px]] -->
+|[[Arizona Highways|''Arizona Highways'' Magazine]]
+|early 2009
+|1'''AH'''2345
+|
+|-
+|<!-- Deleted image removed: [[File:AZHistoric.jpg|150px]] -->
+|[[Arizona Historical Society]]
+|June 2007
+|'''AH'''123
+|Redesigned in 2020.
+|-
+|[[File:Arizona Science Center License Plate.jpg|150px]]
+|[[Arizona Science Center]]
+|2018
+|12345'''SC'''
+|
+|-
+|<!-- Deleted image removed: [[File:AZStateUni.jpg|150px|alt=]] -->
+|[[Arizona State University]]
+|1989
+|'''A'''1234{{Clear}}'''C'''1234 (series halted early for Pet plates){{Clear}}'''D'''1234{{Clear}}'''F'''1234
+|Redesigned in 2010 and 2018.
+|-
+|<!-- Deleted image removed: [[File:AZChooseLife.jpg|150px]] -->
+|[[Choose Life license plates|Choose Life]]
+|early 2009
+|12'''CL'''34
+|
+|-
+|<!-- Deleted image removed: [[File:AZConserve.jpg|150px]] -->
+|Conserving [[Wildlife]]
+|2002
+|{{small|'''W'''/'''A'''}}12345
+|Redesigned in 2010.
+|-
+|
+|Curing Childhood Cancer
+|2012
+|12345'''CR'''
+|
+|-
+|[[File:DonateLifeAZ.jpg|150px]]
+|[[Organ donation|Donate Life/Be an Organ Donor]]
+|approx 2005
+|'''B'''1ABC
+|
+|-
+|[[File:AZAwareness.jpg|150px]]
+|[[Breast cancer#Screening|Early Detection Saves Lives]]
+|March 26, 2006
+|'''JK'''1234
+|
+|-
+|<!-- Deleted image removed: [[File:AZHunger.jpg|150px]] -->
+|Ending Hunger
+|2011
+|12345'''HR'''
+|
+|-
+|<!-- Deleted image removed: [[File:AZEnviroonment.jpg|150px]] -->
+|[[Environment (biophysical)|Environmental]]
+|October 1, 1992
+|'''E'''1234{{Clear}}1234'''E'''{{Clear}}123'''E'''4{{Clear}}12'''E'''34{{Clear}}1'''E'''234{{Clear}}'''E'''A·1234 (counting up from EV)
+|Originally had yellow serial; this was changed to black due to poor visibility.<ref>{{cite magazine|last1=Carson |first1=Ron |last2=Northup |first2=John |date=June 1, 1997 |title=Arizona Non-Passenger Plates |magazine=ALPCA Newsletter 43 |pages=138–139}}</ref> Redesigned version available December 27, 1994.
+|-
+|[[File:AZFormerPOW.jpg|150px]]
+|Former [[Prisoner of War]]
+|
+|A12
+|
+|-
+|<!-- Deleted image removed: [[File:AZFraternal.jpg|150px]] -->
+|[[Fraternal Order of Police]]
+|
+|{{small|'''L'''/'''E'''}}1234
+|
+|-
+|[[File:Arizona 'Freedom' Specialty License Plate(cropped).jpg|150px]]
+|Freedom
+|January 14, 2007
+|1'''FR'''2345
+|
+|-
+||<!-- Deleted image removed: [[File:AZGoldStar.jpg|150px]] -->
+|[[Gold Star Families for Peace|Gold Star Family]]
+|May 2009
+|'''B'''123{{Citation needed|date=July 2009}}
+|Serials are surface-printed.
+|-
+|[[File:AZRoute66.jpg|150px]]
+|[[U.S. Route 66|Historic Route 66]]
+|December 19, 2016<ref>{{cite news|last=Ricca |first=Aaron |date=December 29, 2016 |title=Arizona gives Route 66 a license plate |url=https://kdminer.com/news/2016/dec/29/arizona-gives-route-66-license-plate/ |newspaper=[[The Kingman Daily Miner]] |access-date=April 8, 2017}}</ref>
+|'''RT'''1234
+|Awarded "Plate of the Year" for best new license plate of 2016 by the Automobile License Plate Collectors Association, the third time Arizona was so honored.
+|-
+|<!-- Deleted image removed: [[File:AZApache.jpg|150px]] -->
+|[[San Carlos Apache Indian Reservation|Home of the Apache]]
+|March 2007
+|'''C'''123'''E'''4
+|San Carlos Apache.
+|-
+| 
+|Honoring Fallen [[Police officer|Officers]]
+|November 2007
+|'''FP'''12345
+|Serials are surface-printed. Red starburst design removed after FP05500 to improve visibility.
+|-
+|<!-- Deleted image removed: [[File:AZAbuseAwareness.jpg|150px]] -->
+|[[Child abuse#Treatment|It Shouldn't Hurt to Be a Child]]
+|
+|'''AC'''·12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|It Shouldn't Hurt to Be a Child – Disabled Person
+|
+|'''AC'''·1234
+|Wheelchair embossed to left of serial.
+|-
+|
+|Keep It Beautiful
+|2013
+|'''A'''1234'''B'''
+|Redesigned in 2024.
+|-
+|
+|Live the [[Golden Rule]]
+|November 2007
+|'''LM'''12345
+|Serials are surface-printed. Colors changed after LM09000 to improve visibility. Serial changed from black to white.
+|-
+|[[File:azcmoh.JPG|150px]]
+|[[Medal of Honor]]
+|
+|123
+|
+|-
+|<!-- Deleted image removed: [[File:AzNatlGuard.jpg|150px]] -->
+|[[National Guard of the United States|National Guard]]
+|
+|'''N'''1234
+|
+|-
+|
+|[[Navajo Nation]]
+|September 2003
+|{{small|'''B'''/'''A'''}}1234
+|
+|-
+|[[File:AZLumber.jpg|150px]]
+|[[Northern Arizona University]]
+|1989
+|'''V'''1234
+|Redesigned in 2010 and 2020. A 1999 centennial variation was also available.
+|-
+|
+|[[Neutering|Pets Enrich Our Lives]]
+|May 2005
+|'''C'''1234<br>1234'''C'''
+|
+|-
+|
+|[[Phoenix Suns]]
+|May 5, 2009
+|1'''PS'''2345
+|Serials are surface-printed. Redesigned in 2014. Updated Suns logo in 2021.
+|-
+|<!-- Deleted image removed: [[File:AZFirefight.jpg|150px]] -->
+|[[International Association of Fire Fighters|Professional Fire Fighters]]
+|
+|{{small|'''F'''/'''F'''}}1234
+|
+|-
+|[[File:AZPurple.jpg|150px]]
+|[[Purple Heart]]
+|
+|1234
+|
+|-
+|[[File:AZSpecOlym.jpg|150px]]
+|[[Special Olympics]] Arizona
+|December 19, 2016<ref>{{cite news |title=New license plate helps Special Olympics |url=https://www.eacourier.com/news/new-license-plate-helps-special-olympics/article_fd4f2e58-c3e9-11e6-ac62-4bcb05b2a576.html |newspaper=Eastern Arizona Courier |location=Safford, AZ |date=December 20, 2016 |access-date=November 11, 2020}}</ref>
+|
+|$25 fee, of which $17 benefits local Special Olympics programs.
+|-
+|
+|[[Character education|A State of Good Character]]
+|September 2005
+|'''A'''12'''B'''34
+|
+|-
+|[[File:AZFirst.jpg|150px]]
+|Supporting Public Safety
+|2016
+|'''RF'''12345
+|
+|-
+|[[File:AZVeteran.jpg|150px]]
+|[[Veteran]]
+|
+|{{small|'''V'''/'''T'''}}1234
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran – Disabled Person
+|
+|{{small|'''V'''/'''T'''}}123
+|Wheelchair embossed to left of serial.
+|-
+|<!-- Deleted image removed: [[File:AZUniOfAZ.jpg|150px]] -->
+|[[University of Arizona]]
+|1989
+|'''P'''1234<br>'''S'''1234
+|Redesigned in approx 2008 and 2012.
+|-
+|<!-- Deleted image removed: [[File:AZUniOfPhoe.jpg|150px]] -->
+|[[University of Phoenix]]
+|
+|{{small|'''F'''/'''A'''}}1234
+|
+|-
+|
+|[[Fort Apache Indian Reservation|White Mountain Apache]]
+|November 2007
+|'''WM'''123<br>123'''WM'''
+|Serials are surface-printed.
+|}
+
+==Notes==
+{{Notelist}}
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.15q.net/az.html Arizona license plates, 1969–present]
+* [http://www.worldlicenceplates.com/usa/US_AZXX.html License Plates of Arizona] {{Webarchive|url=https://web.archive.org/web/20160221124844/http://www.worldlicenceplates.com/usa/US_AZXX.html |date=February 21, 2016 }}
+* [http://www.azplates.com/ Arizona License Plates]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Arizona}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Arizona}}
+[[Category:Vehicle registration plates of the United States by state or territory|Arizona]]
+[[Category:Transportation in Arizona]]
+[[Category:Arizona transportation-related lists]]

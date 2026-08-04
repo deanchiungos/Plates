@@ -1,0 +1,667 @@
+{{short description|Maine vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image =Sample license plate of Maine, 2025.png
+| nickname =
+| slogan_label = Slogan
+| slogan = Vacationland
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 123·ABC
+| current_start_date = {{Start date|2025|05|01}}
+| designer = 
+| issuer = [[Secretary of State of Maine|Department of the Secretary of State]], Bureau of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1905|06|01}}
+}}
+The U.S. state of [[Maine]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plate]]s in 1905. {{As of|2022}}, plates are issued by the Maine Bureau of Motor Vehicles, within the office of the [[Secretary of State of Maine|Department of the Secretary of State]]. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+Maine legislators effectively removed a potentially unconstitutional review process for [[vanity plate]]s in 2015, which formerly was able to reject plates that were "obscene, contemptuous, profane or prejudicial."<ref>{{cite news |last1=Sharp |first1=David |title=Maine close to ridding license plates of obscenities |url=https://www.boston.com/news/local-news/2022/05/05/maine-close-to-ridding-license-plates-of-obscenities/ |work=Boston.com |agency=Associated Press |date=May 6, 2022}}</ref> Due to a proliferation of vulgar plates over the following years, the legislature directed the [[Maine Bureau of Motor Vehicles|Bureau of Motor Vehicles]] to establish new rules for reviewing plates in 2021. The new rules ban profane or obscene language, language inciting violence, and derogatory references "to age, race, ethnicity, sexual orientation, gender identity, national origin, religion or disability." A committee for vanity plates consults the online [[Urban Dictionary]] for assistance with "arcane lingo".<ref>{{cite news |last1=Calvert |first1=Scott |url=https://www.wsj.com/articles/maine-obscene-license-plates-crack-down-11655301439 |title=What the BLEEP? Maine Is Cracking Down on Obscene License Plates |newspaper=The Wall Street Journal |date=June 15, 2022 }}</ref>
+
+==Passenger baseplates==
+{{Clear}}
+
+===1905 to 1949===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:red;">1234</div>
+|1905–11
+|White serial on red porcelain plate; "MAINE" centered at bottom
+|''none''
+|12345
+|1 to approximately 10100
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:darkblue; font-size:30pt; background:yellow;">1234</div>
+|1912
+|Dark blue serial on yellow porcelain plate; "MAINE" centered at bottom
+|''none''
+|1234
+|1 to approximately 9200
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:yellow; font-size:30pt; background:darkblue;">1234</div>
+|1913
+|Yellow serial on dark blue porcelain plate; "MAINE" centered at bottom
+|''none''
+|12345
+|1 to approximately 11000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:darkblue;">12345</div>
+|1914
+|White serial on dark blue porcelain plate; "MAINE 1914" at right
+|''none''
+|12345
+|1 to approximately 14500
+|First dated plate.
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:darkblue; font-size:30pt; background:white;">12345</div>
+|1915
+|Dark blue serial on white porcelain plate; "MAINE 1915" at right
+|''none''
+|12345
+|1 to approximately 21500
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:darkblue;">12345</div>
+|1916
+|Embossed white serial on dark blue plate with border line; "MAINE 1916" at right
+|''none''
+|12345
+|1 to approximately 29000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:darkblue; font-size:30pt; background:white;">12-345</div>
+|1917
+|Embossed dark blue serial on white plate with border line; "MAINE 1917" at right
+|''none''
+|12-345
+|1 to approximately 38-000
+|
+|-
+|[[File:1918 Maine license plate.JPG|150px]]
+|1918
+|Dark green serial on white flat metal plate; "MAINE 1918" centered at bottom
+|''none''
+|12-345
+|1 to approximately 42-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:maroon;">12-345</div>
+|1919
+|Embossed white serial on maroon plate with border line; "MAINE 1919" centered at bottom
+|''none''
+|12-345
+|1 to approximately 48-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:maroon; font-size:30pt; background:white;">12345</div>
+|1920
+|Embossed maroon serial on white plate with border line; "MAINE 1920" centered at bottom
+|''none''
+|12-345
+|1 to approximately 54-000
+|
+|-
+|[[File:1921 Maine license plate.jpg|150px]]
+|1921
+|Embossed white serial on maroon plate with border line; "MAINE 1921" centered at bottom
+|''none''
+|12-345
+|1 to approximately 68-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:white; font-size:30pt; background:darkblue;">12-345</div>
+|1922
+|Embossed white serial on dark blue plate with border line; "MAINE 1922" centered at bottom
+|''none''
+|12-345
+|1 to approximately 79-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:5px; vertical-align:middle; text-align:center; color:darkblue; font-size:30pt; background:white;">12-345</div>
+|1923
+|Embossed dark blue serial on white plate with border line; "MAINE 1923" centered at bottom
+|''none''
+|12-345
+|1 to approximately 90-000
+|
+|-
+|[[File:1924 Maine license plate.jpg|150px]]
+|1924
+|As 1922 base, but with "MAINE 1924" at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 105-000
+|
+|-
+|[[File:Maine License Plate 1925.jpg|150px]]
+|1925
+|As 1923 base, but with "MAINE 1925" at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 115-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:#FFDF00; font-size:25pt; background:darkblue;">123-456</div>
+|1926
+|Embossed golden yellow serial on dark blue plate with border line; "MAINE 1926" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 122-000
+|
+|-
+|[[File:1927 Maine license plate.JPG|150px]]
+|1927
+|Embossed dark blue serial on golden yellow plate with border line; "MAINE 1927" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 130-000
+|
+|-
+|[[File:1928-Maine-license-plate.jpg|150px]]
+|1928
+|Embossed dark blue serial on white plate with border line; "MAINE 1928" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 140-000 
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:darkblue;">123-456</div>
+|1929
+|Embossed white serial on dark blue plate with border line; "MAINE 1929" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 145-000
+|
+|-
+|[[File:Maine 1930 license plate.jpg|150px]]
+|1930
+|Embossed white serial on red plate with border line; "MAINE 1930" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 150-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:black;">123-456</div>
+|1931
+|Embossed white serial on black plate with border line; "MAINE 1931" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 138-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:green;">123-456</div>
+|1932
+|Embossed white serial on green plate with border line; "MAINE 1932" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 164-000
+|
+|-
+|[[File:1933 Maine license plate.jpg|150px]]
+|1933
+|Embossed white serial on black plate with border line; "MAINE 1933" centered at bottom
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 157-000
+|
+|-
+|rowspan="3"|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:black; font-size:20pt; background:orange;">123-456</div>
+| rowspan="3" |1934
+| rowspan="3" |Embossed black serial on orange plate with border line; "MAINE '34" at bottom
+|rowspan="3"|''none''
+|1-234
+|1 to 9-999
+|rowspan="6"|Small plates manufactured for 1934 and 1935 due to the [[Great Depression|Depression]].<ref name="allaboutlicenseplatesME">{{cite web |last=Tanner |first=Eric N. |title=Maine Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Maine&code=me |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref> In both years, the state name and year were centered on plates with the 1-234 and A123 serial formats, and offset to the right on plates with the {{small|A/B}}123 format.
+|-
+|A123
+|A1 to W999
+|-
+|{{small|A/B}}123
+|{{small|A/A}}1 to approximately {{small|F/N}}999
+|-
+|rowspan="3"|<div style="border-radius:10px; border: solid black 1px; padding:15px; vertical-align:middle; text-align:center; color:white; font-size:20pt; background:blue;">123-456</div>
+| rowspan="3" |1935
+| rowspan="3" |Embossed white serial on blue plate with border line; "MAINE '35" at bottom
+|rowspan="3"|''none''
+|1-234
+|1 to 9-999
+|-
+|A123
+|A1 to W999
+|-
+|{{small|A/B}}123
+|{{small|A/A}}1 to approximately {{small|F/W}}999
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:white; font-size:25pt; background:black;">123-456</div>
+|1936
+|Embossed white serial on black plate with border line; "MAINE 1936" centered at top
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 157-000
+|First use of the "Vacationland" slogan.
+|-
+|[[File:1937 maine plate.jpg|150px]]
+|1937
+|Embossed white serial on dark green plate with border line; "MAINE 1937" centered at top 
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 162-000
+|
+|-
+|[[File:1938 Maine license plate.jpg|150px]]
+|1938
+|Embossed dark green serial on light green plate with border line; "MAINE 1938" centered at top 
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 157-000
+|
+|-
+|[[File:1939 Maine license plate.JPG|150px]]
+|1939
+|Embossed silver serial on dark green plate with border line; "MAINE 1939" centered at top 
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 160-000
+|
+|-
+|[[File:1940 Maine license plate.JPG|150px]]
+|1940
+|Embossed dark green serial on silver plate with border line; "MAINE 1940" centered at top 
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 165-000
+|
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:red; font-size:25pt; background:silver;">123-456</div>
+|1941
+|Embossed red serial on silver plate with border line; "MAINE 1941" centered at top
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 170-000
+|
+|-
+|[[File:1942 Maine license plate 01.jpg|150px]]
+|{{nowrap|1942–43}}
+|Embossed black serial on beige plate with border line; "MAINE 1942" centered at top 
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 177-000
+|Revalidated for 1943 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1944 Maine licence plate.jpg|150px]]
+|1944
+|Embossed yellow serial on black plate with border line; "MAINE 1944" centered at top
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 155-000
+|
+|-
+|[[File:1945 Maine license plate.jpg|150px]]
+|1945
+|Embossed dark blue serial on white plate with border line; "MAINE 1945" centered at top
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 155-000
+|
+|-
+|[[File:1946 Maine license plate.jpg|150px]]
+|1946–47
+|Embossed white serial on dark blue plate with border line; "MAINE 1946" centered at top
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 204-000
+|Revalidated for 1947 with windshield stickers.
+|-
+|<div style="border-radius:10px; border: solid black 1px; padding:10px; vertical-align:middle; text-align:center; color:orange; font-size:25pt; background:black;">123-456</div><br>[[File:Blank License Plate Shape.svg|150px]]
+|1948–49
+|Embossed orange serial on black plate with border line; "MAINE 1948" centered at top
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 223-000
+|Revalidated for 1949 with silver tabs.
+|}
+
+===1950 to present===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Maine license plate that complied with these standards.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1954 Maine license plate.jpg|150px]]<br>[[File:1955 Maine licence plate.jpg|150px]]
+|{{nowrap|1950–55}}
+|Embossed black serial on reflective white plate with border line; "MAINE" at top, offset to left, with metal tab slots to right
+|"VACATIONLAND" centered at bottom
+|{{nowrap|123-456}}
+|1 to approximately 376-000
+|Validated for 1950 with silver tabs, for 1951 with red tabs, for 1952 with green tabs, for 1953 with gold tabs, for 1954 with silver tabs, and for 1955 with blue tabs.
+|-
+|[[File:1956 Maine license plate.JPG|150px]]
+|1956
+|Embossed black serial on reflective gold plate with border line; "MAINE 56" centered at top, with metal tab slots either side of year
+|rowspan="2"|"VACATIONLAND" centered at bottom
+|rowspan="2"|{{nowrap|123-456}}
+|1 to<br>264-000
+|rowspan="2"|Revalidated for 1957 with red tabs, for 1958 with green tabs, for 1959 with white tabs, for 1960 with dark blue tabs, and for 1961 with orange tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1960 Maine license plate.jpg|150px]]
+|1957–61
+|As above, but without "56"
+|264-001 to approximately 463-000
+|-
+|[[File:Maine 1962 License Plate.JPG|150px]]
+|1962
+|Embossed black serial on reflective white plate with border line; "MAINE 62" at top, offset to left, with metal tab slots either side of year
+|rowspan="2"|"VACATIONLAND" centered at bottom
+|rowspan="2"|{{nowrap|123-456}}
+|1 to<br>384-000
+|rowspan="2"|Revalidated for 1963 with yellow tabs, for 1964 with dark blue tabs, for 1965 with red tabs, for 1966 with yellow tabs, and for 1967 with black tabs.
+|-
+|[[File:Maine 1963 license plate.jpg|150px]]<br>[[File:Maine 1965 License Plate.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1963–67
+|As above, but without "62"
+|384-001 to approximately 617-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1968
+|Embossed black serial on reflective yellow plate with border line; "MAINE 68" at top, offset to left, with metal tab slots either side of year 
+|rowspan="2"|"VACATIONLAND" centered at bottom
+|rowspan="2"|{{nowrap|123-456}}
+|1 to<br>395-000
+|rowspan="2"|Revalidated with stickers; tab slots on 1968 plates never used.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1969–73
+|As above, but without "68" and metal tab slots
+|395-001 to approximately 793-000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1974–75
+|Embossed black serial on reflective white plate with border line; "MAINE 74" at top, offset to left
+|rowspan="4"|"VACATIONLAND" centered at bottom
+|rowspan="3"|{{nowrap|123-456}}
+|1 to<br>488-000;<br>502-001 to<br>510-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1975–78
+|As above, but without "74"
+|488-001 to<br>502-000;<br>510-001 to<br>875-000
+|Embossed year replaced by revalidation stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1978–79
+|rowspan="2"|As above, but with "MAINE" centered at top
+|875-001 to<br>999-999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1979&nbsp;– June 30, 1987
+|12345&nbsp;A
+|1 A to<br>52000&nbsp;N
+|
+|-
+|rowspan="3"|[[File:Maine license plate, 1987–1999 series.png|150px]]
+|July 1, 1987&nbsp;– May<br>1990
+|rowspan="3"|Embossed navy blue serial on reflective white plate with border line; red [[American lobster]] screened behind serial, offset to right; "MAINE" screened in red centered at top
+|rowspan="3"|"Vacationland" (with enlarged 'V') screened in red centered at bottom
+|12345&nbsp;A
+|1 P to<br>99999&nbsp;Z
+|
+|-
+|May 1990&nbsp;– April<br>1993
+|rowspan="2"|1234&nbsp;AB
+|1 AA to<br>9999&nbsp;ZZ;<br>1&nbsp;AB to<br>9999&nbsp;AY<br>(see right)
+|Double-letter series issued first (AA, BB, CC, up to ZZ), followed by different-letter series (AB, AC, AD etc.) from September 1991.
+|-
+|April 1993&nbsp;– June 30, 1999
+|1 AZ to<br>2999&nbsp;ES
+|Narrower serial [[Die (manufacturing)|die]]s introduced.
+|-
+|rowspan="2"| 
+|July 1, 1999&nbsp;– October 2023
+|rowspan="2"|Embossed black serial on reflective white plate with border line; [[black-capped chickadee]] on [[Pinus strobus|pine cone and tassel]] screened at left and green pine forest silhouette screened at bottom; "MAINE" screened in black centered at top
+|rowspan="2"|"Vacationland" screened in black in center of pine forest silhouette
+|1234&nbsp;AB
+|1 GA to<br>9999&nbsp;ZY
+|Letter O not used in serials.
+|-
+|October 2023&nbsp;– April 30, 2025
+|123·ABC
+|101·JAA to<br> 691·JQJ (as of May 2, 2025)<ref name="The High Road">{{cite web |title=Maine License Plates |url=https://licenseplates.cc/ME |publisher=The High Road |access-date=May 2, 2025}}</ref>
+|Initial letters A to E reserved for optional and certain non-passenger plate types; F to H reserved for alternative standard design since May 2025. The middle serial letter progresses first, followed by the final letter, and then the first one. Letters I and O not used in serials.
+|-
+|
+|May 1, 2025&nbsp;– present
+|Embossed dark blue serial on reflective white plate with border line; pine tree screened at left and blue five-pointed star screened on top left; "MAINE" screened in dark green centered at top
+|"VACATIONLAND" screened in dark green centered at bottom
+|123·ABC
+|101·KAA to<br> present
+|Design pays homage to the [[Flag of Maine (1901–1909)|state flag used from 1901 to 1909]].
+|-
+|[[File:Sample license plate of Maine, 2025.png|150px]]
+|May 1, 2025&nbsp;– present
+|Embossed dark blue serial on reflective white plate with border line; "MAINE" screened in dark green centered at top
+|"VACATIONLAND" screened in dark green centered at bottom
+|123·ABC
+|101·FAA to<br> present
+|Alternative base; issued concurrently with the "pine tree" base.
+|}
+
+==Optional plates==
+All optional plates introduced from 2003 onwards use a 123·ABC serial format, with blocks of three-letter series assigned for each plate as required.
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!style="width:95px;"|Serial blocks assigned
+!Notes
+|-
+|<!-- Deleted image removed: [[File:Lobsterplt.jpg|150px]] -->
+|Lobster
+|May 1, 2003&nbsp;– present
+|Embossed navy blue serial on graphic plate featuring a coast scene with green cliffs, a grey boathouse and a red American lobster at left; navy blue border line around plate; "MAINE" screened in black centered at top
+|"Lobster" screened in black centered at bottom
+|AAA–ABZ, AEB–AEZ, AXA–AXZ, BEA–BEZ, BLA–BLZ
+|Proceeds go towards the Maine Lobster Research, Education and Development Fund.
+|-
+|<!-- Deleted image removed: [[File:Blackbearplate.jpg|150px]] -->
+|Black Bear
+|November 3, 2003&nbsp;– present
+|Embossed black serial on white and pale blue gradient plate with border line; logo of the [[Maine Black Bears]] screened at left; "MAINE" screened in light blue centered at top
+|Light blue band screened at bottom with "The [[University of Maine]]" in black in the center
+|ACA–ADZ
+|Proceeds go towards the Maine Black Bears Scholarship Fund.
+|-
+|[[File:Wabanaki.jpg|150px]]
+|Wabanaki
+|August 12, 2005&nbsp;– present
+|Embossed black serial on graphic plate featuring [[Mount Katahdin]]; black border line around plate; "MAINE" screened in dark red centered at top
+|"WABANAKI" screened in dark red centered at bottom
+|AFA–AFZ
+|Issued to members of the nations of the [[Wabanaki Confederacy]].
+|-
+|<!-- Deleted image removed: [[File:Agplate.jpg|150px]] --><!-- Deleted image removed: [[File:Acplate.jpg|150px]] -->
+|Agriculture
+|October 1, 2007&nbsp;– present
+|Embossed black serial on graphic plate featuring an orange and yellow gradient sky, green hills, a farmhouse, a forest, and black silhouettes of an old man and a young girl at left; black border line around plate; "MAINE" screened in black centered at top
+|"Support Local Agriculture" screened in white centered at bottom
+|AGA–AGZ, ANA–ANZ, BCA–BCZ
+|Proceeds go towards the Maine Agriculture Education Fund.
+|-
+|<!-- Deleted image removed: [[File:Tsplate.jpg|150px]] -->
+|Support Our Troops
+|November 1, 2007&nbsp;– present
+|Embossed black serial on white plate with border line; dark green forest screened at bottom and [[yellow ribbon]] on dark green three-dimensional state icon screened at left; "MAINE" screened in black centered at top 
+|"We Support Our Troops" screened in yellow centered at bottom
+|AJA–AJZ
+|Proceeds go towards members of the [[Maine Department of Defense, Veterans, and Emergency Management#Maine National Guard|Maine National Guard]] and their families.
+|-
+|<!-- Deleted image removed: [[File:Swplate.jpg|150px]] -->
+|Sportsman
+|April 7, 2008&nbsp;– present
+|Embossed black serial on white plate with border line; Mount Katahdin screened at top and moose and [[brook trout]] screened at left; "MAINE" screened in black centered at top 
+|"SUPPORT WILDLIFE" screened in black centered at bottom
+|AKA–AKZ, ASA–ASZ, AVA–AVZ, BDA–BDZ, BHA–BHZ
+|Proceeds go towards funds including the Fish Hatchery Maintenance Fund and the Maine Endangered and Nongame Wildlife Fund.
+|-
+|[[File: Bcplate.jpg|150px]]
+|Breast Cancer
+|October 1, 2008&nbsp;– present
+|Embossed pink serial on white plate with border line; [[pink ribbon]] on magenta state icon screened at left; "MAINE" screened in purple centered at top 
+|"early detection saves lives" screened in purple centered at bottom
+|ALA–ALZ, ATA–ATZ, AYA–AYZ
+|Proceeds go towards the Breast Cancer Services Special Program Fund of the Maine Center for Disease Control and Prevention.
+|-
+|<!-- Deleted image removed: [[File:Awplate.jpg|150px]] -->
+|Animal Welfare
+|October 1, 2009&nbsp;– present
+|Embossed black serial on white plate with border line; silhouettes of cat, dog, bird, rabbit and horse screened at right; "MAINE" screened in red centered at top 
+|Yellow band screened at bottom with "respect. love. adopt." in black offset to left
+|{{nowrap|AMA–AMZ}}, AWA–AWZ, BGA–BGZ
+|Proceeds go towards Animal Welfare Auxiliary Fund and Companion Animal Sterilization Fund.
+|-
+|<!-- Deleted image removed: [[File:Bushplate.png|150px]] -->
+|The Barbara Bush Children's Hospital
+|October 1, 2018&nbsp;– present
+|Embossed black serial on white plate with border line; Barbara Bush Children's Hospital logo screened at left; "MAINE" screened in black centered at top 
+|"The Barbara Bush Children's Hospital, At Maine Medical Center" screened centered at the bottom.
+|{{nowrap|BBA-BBZ}}, BJA–BJZ
+|Proceeds go towards The Barbara Bush Children's Hospital.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!style="width:65px;"|Dates issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Commercial
+|July 1, 1987&nbsp;– June 30, 1999
+|As lobster passenger base; vertical embossed "COM" to left of serial
+|123456
+|350001 to approximately 570000
+|Narrower serial dies used from 500000 onwards.
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|July 1, 1999&nbsp;– December 2007
+|rowspan="2"|As chickadee passenger base, but with embossed "COMMERCIAL" in place of slogan
+|123-456
+|600-001 to<br>799-999
+|rowspan="2"|
+|-
+|December 2007&nbsp;– present
+|1A-2345
+|1A-0001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled
+|July 1, 1999&nbsp;– present
+|As chickadee passenger base
+|{{access icon|10px}} 12345
+|{{access icon|10px}} 30000 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Low-Speed Vehicle
+|2003–present
+|As chickadee passenger base, but with embossed "LOW–SPEED" in place of slogan
+|123·'''AEA'''
+|101·AEA to present
+|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|Motorcycle
+|1988–95
+|rowspan="2"|Embossed blue serial on white plate with border line; "MAINE" at top; vertical "MC" at left
+|1234 A
+|4001 N to 9999&nbsp;Z
+|rowspan="4"|
+|-
+|1995–97
+|rowspan="3"|123 AB
+|1 AA to approximately 500&nbsp;AR
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1998&nbsp;– mid 2012
+|As above, with "RIDE SAFE" at bottom
+|1 AT to approximately 500&nbsp;HV
+|-
+|[[File:Mcinspection.jpg|150px]]
+|mid 2012&nbsp;– present
+|As above, but without "MC"
+|501 HV to present
+|-
+|[[File:2019 Maine Semi Permanent Trailer 19 79445.jpg|150px]]
+|rowspan="3"|Long term trailer
+|2001-2018
+|Embossed green serial on white plate with border line; "MAINE" at top offset to left, "SEMI&nbsp;PERMANENT" at bottom; day of expiration at top right, vertical stacked "TLR" in between first two numbers and last 5 numbers
+|rowspan="2"|''12''&nbsp;34567<br>''12''&nbsp;3456A
+|rowspan="2"|Coded by year of expiration (''12'')
+|rowspan="2"|Registered in periods between 3 and 25 years.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2018-2021
+|Embossed green serial on white plate with border line; "MAINE" and "SEMI&nbsp;PERMANENT" at top and bottom respectively; vertical stacked "TLR" between first two numbers and the rest of the serial
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2022–present
+|Embossed green serial on white plate with border line; "MAINE" and "LONG&nbsp;TERM&nbsp;TLR" at top and bottom respectively
+|{{nowrap|123-4567}}
+|{{nowrap|500-0000}} to present
+|
+|-
+|rowspan="2"|[[File:1995 Maine Trailer G 32052.jpg|150px]]
+|rowspan="2"|Trailer
+|1988–95
+|rowspan="2"|Embossed blue serial on white plate with border line; "MAINE" and "TRAILER" at top and bottom respectively
+|A 12345
+|E 10001 to L&nbsp;99999
+|rowspan="2"|
+|-
+|1995–present
+|A&nbsp;123456
+|A 100001 to present
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/me.html Maine license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200222192923/http://www.15q.net/me.html |date=February 22, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Maine}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Maine}}
+[[Category:Vehicle registration plates of the United States by state or territory|Maine]]
+[[Category:Transportation in Maine]]
+[[Category:Maine transportation-related lists]]

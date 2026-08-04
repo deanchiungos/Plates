@@ -1,0 +1,820 @@
+{{short description|Washington vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = CPU4704 Unembossed Washington License Plate.jpg
+| nickname =
+| slogan_label = Slogan
+| slogan = Evergreen State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC1234
+| current_start_date = {{Start date|1998|07}}
+| designer = 
+| issuer = [[Washington State Department of Licensing]]
+| manufacturer = 
+| start_date = {{Start date|1915|06|10}}<br>(pre-state plates from May 1905 through May 31, 1915)<ref>{{cite news |title=New Car Owners Must Have Short Licenses |newspaper=The Tacoma Daily Ledger |date=June 3, 1915 |page=14 |quote="The old law, which will be supplanted by the new auto code June 10, made all licenses expire on May 31. The new code, though not yet in effect, provides that on machines licensed up to May 31 no renewal shall be necessary until June 10, when it will be taken out under the schedule of the new code."}}</ref>
+}}
+The U.S. state of [[Washington (state)|Washington]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1915, when the state began to issue plates.<ref>{{cite web |title=Old Washington License Plates |url=http://leatherlicenseplates.com/old-washington-license-plates-washington-state-vintage-license-plates/ |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=July 10, 2017}}</ref>
+
+{{As of|2023}}, plates are issued by the [[Washington State Department of Licensing]]. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+The plates have been manufactured by incarcerated workers managed by the [[Washington State Department of Corrections]] since 1923. They are primarily produced at the [[Washington State Penitentiary]] in [[Walla Walla, Washington|Walla Walla]], with some also made at the [[Monroe Correctional Complex]] in [[Monroe, Washington|Monroe]].<ref>{{cite news |last=Zhou |first=Amanda |date=August 2, 2021 |title=Washington state grappling with license-plate shortage as pandemic slows production |url=https://www.seattletimes.com/seattle-news/washington-state-grappling-with-license-plate-shortage-as-pandemic-slows-production/ |work=[[The Seattle Times]] |accessdate=August 5, 2021}}</ref>
+
+==Passenger baseplates==
+{{Clear}}
+
+===1915 to 1949===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1916 Washington license plate.jpg|150px]]
+|{{nowrap|1915–16}}
+|Embossed white serial on dark blue plate with border line; vertical "WN" and "1916" at left and right respectively
+|''none''
+|12345
+|1 to approximately 45000, with gaps (see right)
+|Single series of all-numeric serials used for all classes of vehicles, including trucks, vehicles for hire and dealer vehicles.<ref name="allaboutlicenseplatesWA">{{cite web |last=Tanner |first=Eric N. |title=Washington Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Washington&code=wa |publisher=allaboutlicenseplates.com |access-date=November 11, 2020}}</ref>
+|-
+|[[File:1917 Washington license plate.jpg|150px]]
+|1916–17
+|Embossed white serial on lavender plate with border line; "WN" at left and vertical "X17" at right
+|''none''
+|12345
+|1 to approximately 64000, with gaps
+|The 'X' indicated the passenger class of vehicles; other letters were used for other classes.<ref name="allaboutlicenseplatesWA"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917–18
+|Embossed white serial on black plate with border line; "WN" at left and vertical "X18" at right
+|''none''
+|12345
+|1 to approximately 96000, with gaps
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918–19
+|Embossed black serial on yellow plate with border line; "WN X-19" at left
+|''none''
+|123456
+|1 to approximately 114000
+|Revalidated through February 29, 1920, with white porcelain tabs.
+|-
+|[[File:1920 Washington license plate.jpg|150px]]
+|rowspan="2"|1919–20
+|Black serial on yellow and white porcelain plate; "WN X-20" on white section at left
+|''none''
+|123456
+|144001 to approximately 157000, with gaps
+|rowspan="2"|Both these plates issued only to new registrants.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|As above, but fully embossed with border line
+|''none''
+|123456
+|157501 to approximately 194000, with gaps
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1920–21
+|Embossed white serial on green plate; "WN X-21" at left
+|''none''
+|123456
+|1 to approximately 181000, with gaps
+|
+|-
+|[[File:1921 Washington license plate.jpg|150px]]
+|1921
+|Embossed black serial on gray plate; "WN X:21" at left
+|''none''
+|123456
+|1 to approximately 184000, with gaps
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Embossed white serial on brown plate; "WN X-22" at left
+|''none''
+|123456
+|1 to approximately 195000, with gaps
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Embossed dark blue serial on white plate; "WN X:23" at left
+|''none''
+|123456
+|1 to 200000; 300001 to approximately 319000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1924
+|Embossed white serial on dark blue plate; "WN X:24" at left
+|''none''
+|123456
+|1 to approximately 253000
+|
+|-
+|[[File:1925 Washington license plate.jpg|150px]]
+|1925
+|Embossed dark blue serial on white plate; "WN X-25" at left
+|''none''
+|123456
+|1 to approximately 282000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1926
+|Embossed white serial on green plate; "WASHINGTON" at bottom, slightly offset to right; vertical "X26" at left
+|''none''
+|123-456
+|1 to approximately 311-000
+|First use of the full state name.
+|-
+|[[File:1927 Washington license plate.jpg|150px]]
+|1927
+|Embossed green serial on white plate; "WASHINGTON" at bottom, slightly offset to right; vertical "X27" at left
+|''none''
+|123-456
+|1 to approximately 326-000
+|
+|-
+|[[File:1928 Washington license plate.jpg|150px]]
+|1928
+|Embossed black serial on orange plate with border line; "X WASHINGTON-28" at bottom
+|''none''
+|123-456
+|1 to approximately 343-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1929
+|Embossed white serial on green plate with border line; "X WASHINGTON-29" at bottom
+|''none''
+|123-456
+|1 to approximately 394-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed green serial on white plate with border line; "30 WASHINGTON X" at bottom
+|''none''
+|123-456
+|1 to approximately 380-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1931
+|Embossed white serial on green plate with border line; "X WASHINGTON 31" at bottom
+|''none''
+|123-456
+|1 to approximately 348-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1932
+|Embossed green serial on white plate with border line; "X 32 WASHINGTON" at bottom
+|''none''
+|123-456
+|1 to approximately 381-000
+|
+|-
+|[[File:1933 Washington license plate.jpg|150px]]
+|1933
+|Embossed white serial on green plate with border line; "X WASHINGTON 33" at top
+|''none''
+|123-456
+|1 to approximately 359-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1934
+|Embossed green serial on white plate with border line; "X WASHINGTON 34" at bottom
+|''none''
+|123-456
+|1 to approximately 358-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1935
+|Embossed white serial on dark blue plate with border line; "X WASHINGTON 35" at bottom
+|''none''
+|''A''-12345<br>123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|First use of county codes, and last use of 'X' to indicate the passenger class. Six-digit all-numeric serials issued in [[King County, Washington|King County]] following A-99999; this happened again in 1936.<ref name="allaboutlicenseplatesWA"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1936
+|Embossed dark blue serial on white plate with border line; "19 WASHINGTON 36" at bottom
+|''none''
+|''A''-12345<br>123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed white serial on dark blue plate with border line; "WASHINGTON 1937" at top
+|''none''
+|{{nowrap|''A''-123-456}}<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|
+|-
+|[[File:1938 Washington license plate.jpg|150px]]
+|1938
+|Embossed green serial on white plate with border line; "1938 WASHINGTON" at top
+|''none''
+|''A''-123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed golden yellow serial on green plate with border line; "STATE OF WASHINGTON" at bottom
+|"1889-GOLDEN JUBILEE-1939" at top
+|''A''-123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|Commemorated Washington's 50 years of statehood.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed green serial on white plate with border line;  "WASHINGTON 1940" at bottom
+|''none''
+|''A''-123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed white serial on green plate with border line;  "WASHINGTON 1941" at top
+|''none''
+|''A''-123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|
+|-
+|[[File:1942 Washington license plate.jpg|150px]]
+|1942–44
+|Embossed green serial on white plate; "WASHINGTON 1942" at bottom
+|''none''
+|''A''-123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|Revalidated for 1943 and 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1944
+|As 1942 base, but with "WASHINGTON 1944" at bottom
+|''none''
+|12345
+|1 to approximately 89000
+|Issued only to new registrants.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945–46
+|Embossed green serial on white plate; "WASHINGTON 1945" at top
+|''none''
+|''A''-123-456<br>''AB''-1234
+|County-coded<br>(''A'' or ''AB'')
+|Revalidated for 1946 with windshield stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947–48
+|Embossed green serial on unpainted aluminum plate; "WASHINGTON 1947" at bottom
+|''none''
+|''A''·123·456<br>''AB''·1234
+|County-coded<br>(''A'' or ''AB'')
+|Revalidated for 1948 with windshield stickers.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Embossed green serial on unpainted aluminum plate; "WASHINGTON 1949" at top
+|''none''
+|''A''123·456<br>''AB''·1234
+|County-coded<br>(''A'' or ''AB'')
+|
+|}
+
+===1950 to present===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Washington license plate that complied with these standards was a modification of the 1954 plate, introduced in January 1956.
+{|class="wikitable"
+|-
+!Image
+!style="width:75px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1950 Washington license plate.jpg|150px]]
+|1950
+|Embossed green serial on white plate; "WASHINGTON 50" at bottom
+|rowspan="2"|''none''
+|rowspan="2"|''A''123·456<br>''AB''·1234
+|rowspan="2"|County-coded<br>(''A'' or ''AB'')
+|Revalidated for 1951 with silver tabs, for 1952 with windshield stickers, and for 1953 with green tabs.
+|-
+|[[File:1951 Washington license plate.jpg|150px]]
+|1951–53
+|As above, but with "51" instead of "50"
+|Single plate issued only to new registrants. Revalidated for 1952 and 1953 in the same manner as for 1950 plates.
+|-
+|[[File:1954 Washington license plate.jpg|150px]] 
+|1954–57
+|Embossed white serial on green plate; "54 WASHINGTON" at bottom
+|rowspan="2"|''none''
+|rowspan="2"|123-456 ''A''<br>{{nowrap|12-345 ''AB''}}
+|rowspan="2"|County-coded<br>(''A'' or ''AB'')
+|Revalidated for 1955 with silver tabs, for 1956 with white tabs, and for [[:File:1957 Washington license plate.jpg|1957]] with green tabs.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956–57
+|As above, but to 6" x 12" size, and with narrower serial [[Die (manufacturing)|die]]s and border line
+|Validated for 1956 and 1957 in the same manner as for 1954–55 plates.
+|-
+|[[File:1960 Washington Vehicle License Plate.jpg|150px]]
+|1958–62
+|Embossed white serial on green plate with border line; "WASHINGTON" centered at bottom
+|''none''
+|ABC 123
+|County-coded
+|Validated each year with plate stickers.
+|-
+|[[File:Washington 1963 license plate - number MAF 756.jpg|150px]]
+|1963–64
+|Embossed green serial on non-reflective white plate with border line; "WASH. 63" centered at bottom
+|rowspan="5"|''none''
+|rowspan="4"|ABC 123
+|rowspan="3"|County-coded (until 1981)
+|rowspan="5"|
+|-
+|[[File:1967 Washington license plate.jpg|150px]]
+|1965–67
+|As above, but with "WASHINGTON" centered at bottom
+|-
+|[[File:Washington state license plate, June 1980 (DNK 845).png|150px]]
+|1968–82
+|As above, but reflective, and with "WASHINGTON" at top, offset to left
+|-
+|[[File:WA Plate 1983-86.jpg|150px]]
+|1982–85
+|As above, but with "WASHINGTON" screened rather than embossed
+|Unused 'E', 'G', 'H' and 'L' series
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1985–86
+|As above, but with narrower serial dies
+|ABC-123
+|Unused 'L' and 'W' series
+|-
+|[[File:Washington state license plate, May 1988.png|150px]]
+|1987&nbsp;–<br>late<br>1990
+|rowspan="2"|Embossed dark blue serial on reflective white plate with light blue [[Mount Rainier]] graphic and dark blue border line; "Washington" screened in red centered at top
+|"Centennial Celebration" screened in red centered at bottom
+|rowspan="3"|123-ABC
+|000-AAA to 999-DGP
+|rowspan="3"|I, O and Q not used as the first letter in this serial format. Seven-year plate replacement schedule phased from January 2001 to December 2014.<ref name="allaboutlicenseplatesWA"/>
+|-
+|[[File:1997 Washington state license plate.jpg|150px]]
+|late<br>1990&nbsp;–<br>July<br>1998
+|''none''
+|000-DGQ to 999-JNZ
+|-
+|[[File:Washington 1998 plate.jpg|150px]]
+|July<br>1998&nbsp;–<br>December 31, 2009
+|rowspan="2"|As above, but without dark blue border line, and with "WASHINGTON" screened in red at top, offset to left
+|rowspan="3"|"EVERGREEN STATE" screened in red centered at bottom
+|000-JOA to 999-ZZZ
+|-
+|[[File:2017 Washington License Plate.jpg|150px]]
+|January 1, 2010&nbsp;– October 2024
+|rowspan="2"|ABC1234
+|AAA0000 to CPE8599;<br>CPL1600 to CPN2599;<br> CRH0000 to CTM9999
+|I, O and Q not used as the third letter in this serial format.<ref name="allaboutlicenseplatesWA"/> Seven-year plate replacement schedule discontinued in January 2015.<ref>{{cite news |last1=Baker |first1=Mike |last2=Berens |first2=Michael J. |date=December 15, 2014 |title=Why license plates have cost us so much |url=https://projects.seattletimes.com/2014/prison-labor/3/ |newspaper=[[The Seattle Times]] |access-date=February 21, 2022}}</ref>
+|-
+|[[File:CPU4704 Unembossed Washington License Plate.jpg|150px]]
+|October 2024 – present
+|As above, but Un-embossed with navy blue letters.
+|CPE8600 to CPL1599;<br>CPN2600 to CRG9999<br> CTN0000 to CXT9999 {{small|(as of June 21, 2026)}}<ref name="licenseplates.cc">{{Cite web |title=Washington License Plates |url=https://www.licenseplates.cc/WA |website=www.licenseplates.cc |access-date=September 23, 2023}}</ref>
+|I, O and Q not used in the 'C' series of serials. 
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Disabled
+|1990-98
+|Similar to 1990-98 passenger plates, but with man in wheelchair on right
+|12345D/P
+|D/P12345-D/P99999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1999-2010
+|Similar to 1998-2010 passenger plates, but with man in wheelchair on right
+|12345D/P
+|D/P00001-D/P99999
+|-
+| 
+|2010–present
+|Similar to 2010–present passenger plates, but with man in wheelchair on left; plate also became screened
+|D/P12345
+|D/P00001-present  
+|-
+|[[File:Washington 1976 license plate FG-356.jpg|150px]]
+|rowspan="5"|Motorcycle
+|1968–76
+|Debossed white on green with border line; "WASHINGTON" at top, offset to left
+|AB-123 
+|AA-000 to approximately {{nowrap|KY-999}}
+|Validated until 2000.
+|-
+|[[File:Washington 1986 license plate - 124449.jpg|150px]]
+|1976–86 
+|Embossed green on white with border line; "WASHINGTON" at top, offset to left
+|123456
+|000001 to approximately 297000
+|Validated until 2000.
+|-
+|[[File:Washington 1998 license plate - 589214.jpg|150px]]
+|1987–99
+|Similar to 1987–98 passenger plates, but with "Washington" offset to left and no slogan
+|rowspan="2"|123456
+|400000 to approximately 601999
+|rowspan="3"|
+|-
+|[[File:Moto lic 2008.jpg|150px]]
+|1999–2008
+|rowspan="2"|Similar to current passenger plates, but without slogan
+|602000 to 999999
+|-
+|[[File:Washington 2016 license plate 1D3189.jpg|150px]]
+|2008–present
+|1A2345
+|0A0000 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|Trailer – large
+|1987–90
+|As 1987–90 passenger plates
+|rowspan="3"|1234-AB
+|0000-JA to approximately 9999-KC
+|rowspan="4"|
+|-
+|
+|1990–99
+|As 1990–98 passenger plates
+|0000-KD to approximately 9999-MH
+|-
+| [[File:Washington State Trailer License Plate Late 2010's.jpg|150px]] 
+|1999–2016
+|rowspan="2"|As current passenger plates
+|0000-MI to 9999-ZZ
+|-
+| 
+|2016–present
+|12345AB
+|00000AA to present
+|-
+| 
+|rowspan="4"|Truck
+|1987–90
+|As 1987–90 passenger plates
+|rowspan="2"|12345-A
+|00000-H to 11999-T
+|rowspan="4"|
+|-
+|[[File:Washington 2002 license plate - 97795-U.jpg|150px]]
+|1990–95
+|rowspan="2"|As 1990–98 passenger plates
+|12000-T to 99999-Z
+|-
+|[[File:Washington State Truck Plate YOM1995-1999.jpg|150px]]
+|1995–99
+|rowspan="2"|A12345B
+|A00000A to A18999E
+|-
+| 
+|1999–present
+|As current passenger plates
+|A19000E to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="4" |Apportioned Combination
+|1988–94
+|As 1987–90 style passenger plates with "Apportioned" in red text at bottom
+|12345AB
+|
+| rowspan="4" |<ref>{{Cite web |title=WASHINGTON Apportioned License Plates - moini.net |url=https://moini.net/app/washington.html |access-date=2024-07-27 |website=moini.net}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1994–99
+|As 1990–98 style passenger plates with text "APPOR. COMBINATION" in red on yellow sticker at bottom
+|12345AB
+|
+|-
+| 
+|1998–99
+|As above except black band around edge has been omitted
+|12345AB
+|
+|-
+| 
+|2000–present
+|As 1998–present style passenger plates with text "APPOR. COMBINATION" in red on yellow sticker at bottom or with text "APPORTIONED COMBINATION" in red printed at bottom
+|12345AB
+|-
+| 
+|rowspan="4"|Rental Car
+|1990–1998
+|As 1990–1998 passenger plates. Discontinued after used to target and rob tourists. First three digits sometimes reflect rental car company (ex. NCR= National Car Rental.)
+|rowspan="3"|AAA0000
+|
+|}
+
+==County coding==
+{|class="wikitable sortable"
+!County!!One- or two-letter code,<br>1935–57!!Three-letter codes,<br>1958–81
+|-
+| [[King County, Washington|King]] || A || AAA–AZZ, OAA–OZZ, IAA–IRZ, IUA–IZZ, UCA–UKZ
+|-
+| [[Pierce County, Washington|Pierce]] || B || BAA–BZZ, TBA–TFZ
+|-
+| [[Spokane County, Washington|Spokane]] || C || CAA–CKZ, CNA–CTZ, CVA–CVK (1963–81), CVL–CZZ, SLA–SMZ
+|-
+| [[Snohomish County, Washington|Snohomish]] || D || DAA–DRZ, DVA–DVR
+|-
+| [[Yakima County, Washington|Yakima]] || E || EAA–EKZ
+|-
+| [[Whatcom County, Washington|Whatcom]] || F || FAA–FFM
+|-
+| [[Clark County, Washington|Clark]] || G || GAA–GCZ, GEA–GNP
+|-
+| [[Grays Harbor County, Washington|Grays Harbor]] || H || HAA–HDW
+|-
+| [[Kitsap County, Washington|Kitsap]] || I || KSA–KUB, KVA–KZF
+|-
+| [[Thurston County, Washington|Thurston]] || J || JAA–JEK
+|-
+| [[Chelan County, Washington|Chelan]] || K || KAA–KDH
+|-
+| [[Lewis County, Washington|Lewis]] || L || LAA–LDG
+|-
+| [[Skagit County, Washington|Skagit]] || M || MAA–MDS
+|-
+| [[Cowlitz County, Washington|Cowlitz]] || N || NAA–NFP
+|-
+| [[Walla Walla County, Washington|Walla Walla]] || O || WWA–WYZ
+|-
+| [[Whitman County, Washington|Whitman]] || P || PAA–PCF
+|-
+| [[Clallam County, Washington|Clallam]] || Q || CLA–CMZ, PDA–PDF
+|-
+| [[Benton County, Washington|Benton]] || R || RAA–REU
+|-
+| [[Kittitas County, Washington|Kittitas]] || S || SAA–SBM
+|-
+| [[Lincoln County, Washington|Lincoln]] || T || TAA–TAN
+|-
+| [[Okanogan County, Washington|Okanogan]] || U || UAA–UBK
+|-
+| [[Pacific County, Washington|Pacific]] || V || VAA–VAW
+|-
+| [[Stevens County, Washington|Stevens]] || W || WAA–WBD
+|-
+| [[Mason County, Washington|Mason]] || X || XAA–XAZ
+|-
+| [[Jefferson County, Washington|Jefferson]] || Y || YAA–YAN
+|-
+| [[Klickitat County, Washington|Klickitat]] || Z || ZAA–ZBD
+|-
+| [[Adams County, Washington|Adams]] || AD || YYA–YYR
+|-
+| [[Asotin County, Washington|Asotin]] || AN || ZZA–ZZZ, ZYA–ZYL
+|-
+| [[Columbia County, Washington|Columbia]] || CO || CUA–CUG
+|-
+| [[Douglas County, Washington|Douglas]] || DO || DSA–DST
+|-
+| [[Franklin County, Washington|Franklin]] || FN || FNA–FSF
+|-
+| [[Ferry County, Washington|Ferry]] || FY || FYA–FYE
+|-
+| [[Garfield County, Washington|Garfield]] || GA || GDA–GDF
+|-
+| [[Grant County, Washington|Grant]] || GT || GTA–GVW
+|-
+| [[Island County, Washington|Island]] || IS || CVA–CVK (1958–62); ISA–ITZ (1963–81)
+|-
+| [[Pend Oreille County, Washington|Pend Oreille]] || PO || PEB–PES
+|-
+| [[Skamania County, Washington|Skamania]] || SA || SKA–SKK
+|-
+| [[San Juan County, Washington|San Juan]] || SJ || SJA–SJK
+|-
+| [[Wahkiakum County, Washington|Wahkiakum]] || WA || WMA–WMF
+|}
+
+==Specialty plates==
+{|class="wikitable"
+!Image
+!Type
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!style="width:80px;"|Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[4-H]]
+|
+|Black serial on gradient white and green plate; 4-H four-leaf clover emblem at left; "WASHINGTON" in black at top left
+|"4-H For YOUth!" in black at bottom
+|{{small|'''4'''/'''H'''}}&nbsp;12345
+|{{small|4/H}}&nbsp;00001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Amateur Radio]]
+|
+|As standard passenger base, but with black serial
+|"EVERGREEN STATE" in red at bottom
+|''[[Federal Communications Commission|FCC]] call sign''
+|
+|
+|-
+|[[File:Washington Collector plate.jpg|150px]]
+|Collector Vehicle
+|
+|As standard passenger base, but with black serial
+|"EVERGREEN STATE" in red at bottom; "COLLECTOR VEHICLE" vertically at left
+|12345<br><br>1234A
+|00001 to 99999<br><br>0001A to current
+| Issued to vehicles 30 years old or older. Need not display month/year tabs.<ref>{{cite web |title=Collector Vehicle - Washington State Department of Licensing |url=https://dol.wa.gov/vehicles-and-boats/license-plates/get-custom-plates/special-design-plates/collector-vehicle |publisher=Washington State Department of Licensing |access-date=March 8, 2024}}</ref>
+|-
+|[[File:Washington Wildlife license plate.jpg|150px]]
+|Endangered Wildlife
+|
+|Black serial on graphic plate with ocean and cliffs against a light blue sky and breaching [[killer whale]] at left; "WASHINGTON" in black at top left
+|"Endangered Wildlife" in dark blue at bottom
+|{{small|'''E'''/'''W'''}}&nbsp;12345
+|{{small|E/W}}&nbsp;00001 to present
+|[[Vanity plate|Vanity]] variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]] 
+|Fly Washington Aviation
+|
+|Black serial on graphic plate with Mount Rainier in background with a yellow and teal biplane left of serial; "''Fly'' WASHINGTON" in blue at top left
+|"CELEBRATE AVIATION" in white at bottom
+|{{small|'''A'''/'''V'''}}&nbsp;12345
+|{{small|A/V}}&nbsp;00001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Keep Kids Safe
+|January&nbsp;3, 2006<ref>{{cite news |title=New Special License Plate Supports the Little Ones |url=http://archive.kitsapsun.com/news/local/new-special-license-plate-supports-the-little-ones-ep-424385721-359587451.html |newspaper=[[Kitsap Sun]] |date=January 2, 2006 |access-date=February 20, 2021}}</ref>&nbsp;– present
+|Black serial on pale blue plate with green, pink, blue, yellow and red handprints; "WASHINGTON" in black at top left
+|"Keep Kids Safe" in green at bottom
+|{{small|'''K'''/'''S'''}}&nbsp;12345
+|{{small|K/S}}&nbsp;00001 to present
+|
+|-
+| 
+|Music Matters
+|
+|Black serial on graphic plate with music notes and lines against a yellow and orange background; "WASHINGTON" in black at top left
+|"Music Matters" in Red at bottom
+|MU12345
+|MU00001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Preserve Our National Parks
+|
+|Black serial on graphic plate with [[North Cascades]] in mist against a pink and gray sky; "WASHINGTON" in black at top left 
+|"Preserve Our National Parks" in black at bottom
+|{{small|'''N'''/'''P'''}}&nbsp;12345
+|{{small|N/P}}&nbsp;00001 to present
+|Vanity variants also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[San Juan Islands]]
+|
+|White serial on graphic plate with [[Arbutus menziesii|Pacific madrone]] tree and pod of [[orca]]s     surfacing; "WASHINGTON" in white at top left
+|"San Juan Islands" in white at bottom
+|{{small|'''S'''/'''J'''}}&nbsp;12345
+|{{small|S/J}}&nbsp;00001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Share the Road
+|
+|Black serial on graphic plate with Mount Rainier at top, green field in middle, gray road at bottom and cyclist at left; "WASHINGTON" in black at top left 
+|"SHARE THE ROAD" in yellow at bottom
+|{{small|'''B'''/'''K'''}}&nbsp;12345
+|{{small|B/K}}&nbsp;00001 to present
+|
+|-
+| 
+|[[United States Army]]
+|
+|Black serial on graphic plate with national flag in background and emblem of the [[United States Department of the Army|Department of the Army]] at left; "WASHINGTON" in black at top left
+|''none''
+|{{small|'''A'''/'''R'''}}&nbsp;12345
+|{{small|A/R}}&nbsp;00001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Navy]]
+|
+|Black serial on graphic plate with national flag in background and emblem of the U.S. Navy at left; "WASHINGTON" in black at top left
+|''none''
+|{{small|'''N'''/'''A'''}}&nbsp;12345
+|{{small|N/A}}&nbsp;00001 to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[University of Washington]]
+|2006&nbsp;– December 2013
+|Black serial on white and gold gradient plate; purple 'W' logo at left and university's seal at right; "WASHINGTON" in black at top left
+|"UNIVERSITY OF WASHINGTON" in purple at bottom
+|rowspan="2"|1234A
+|0001A to approximately 8700A
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|December 2013&nbsp;– present
+|White serial on purple plate; gold 'W' logo at left; "WASHINGTON" in white at top left
+|"UNIVERSITY of WASHINGTON" in gold at bottom
+|8701A to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+| rowspan="2" |[[Washington State University]]
+|1985&nbsp;-January 2012
+|Red serial on Washington plate; red “Cougar” WSU logo at left; vertical WSU lettering at left; “WASHINGTON” in red at top left
+|"GO COUGARS" in red at bottom
+|
+|Unknown
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|January 2012&nbsp;– present
+|White serial on crimson red plate; white "Cougar" WSU logo at right; vertical WSU lettering in center; "WASHINGTON" in white at top left
+|"WASHINGTON STATE UNIVERSITY" in white at bottom
+|{{small|'''W'''/'''S'''/'''U'''}}123A
+|001A to present
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Washington Apple Commission]]
+|July 1, 2020<ref>{{cite news |title=Washington Apples Specialty License Plates now available |url=https://www.qcherald.com/washington-apples-specialty-license-plates-now-available |newspaper=Quad City Herald |date=June 30, 2020 |access-date=February 20, 2021}}</ref>&nbsp;– present
+|White serial on navy blue plate with state outline at right and Washington Apple Commission logo in red at left; "WASHINGTON" in white at top left
+|"World's Finest Apples" in white at bottom
+|{{small|'''W'''/'''A'''/'''C'''}}&nbsp;1234
+|{{small|W/A/C}}&nbsp;0001 to present
+|
+|-
+| 
+|Wildlife - [[deer]]
+|
+|Black serial on graphic plate with forest scene in background and deer at left; "WASHINGTON" in black at top left
+|"Washingtons's Wildlife" in green at bottom
+|{{small|'''W'''/'''D'''}}&nbsp;12345
+|{{small|W/D}}&nbsp;00001 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Wildlife – [[bald eagle]]
+|
+|Black serial on graphic plate with sunset scene in background and bald eagle at left; "WASHINGTON" in black at top left
+|"Wild on Washington" in yellow at bottom
+|{{small|'''W'''/'''W'''}}&nbsp;12345
+|{{small|W/W}}&nbsp;00001 to present
+|
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.15q.net/wa.html Washington license plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200629210717/https://www.15q.net/wa.html |date=June 29, 2020 }}
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Washington}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Washington}}
+[[Category:Vehicle registration plates of the United States by state or territory|Washington]]
+[[Category:Transportation in Washington (state)]]
+[[Category:Washington (state) transportation-related lists]]

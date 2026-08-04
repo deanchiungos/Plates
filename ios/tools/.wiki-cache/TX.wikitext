@@ -1,0 +1,1168 @@
+{{short description|Texas vehicle license plates}}
+{{Redirect|Texas plates|the Vince Bell album|Texas Plates|the Kellie Coffey song|Texas Plates (song)}}
+{{Cleanup|reason=missing images and info in some tables|date=October 2020}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Texas Passenger Car License Plate 2020.png
+| caption = 
+| nickname = Texas Classic
+| slogan_label = Slogan 
+| slogan = The Lone Star State
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-1234
+| current_start_date = {{Start date|2012|07}}
+| designer = 
+| issuer = [[Texas Department of Motor Vehicles]]
+| manufacturer = [[Wynne Unit]], [[Huntsville, Texas]]
+| start_date = {{Start date|1917|07|01}}<br>(pre-state plates from 1907 through June 30, 1917)
+}}
+The U.S. state of [[Texas]] first required its residents to register their [[motor vehicle]]s in 1907. Registrants provided their own [[Vehicle registration plate|license plate]]s for display, with serial numbers assigned by their county of residence, until the state began to issue plates in 1917.<ref>{{cite web |url=http://leatherlicenseplates.com/old-texas-license-plates-vintage-texas-license-plates/ |title=Old Texas License Plates |publisher=LeatherLicensePlates.com |date=<!-- Deny Citation Bot--> |access-date=September 3, 2017 |archive-date=September 4, 2017 |archive-url=https://web.archive.org/web/20170904013733/http://leatherlicenseplates.com/old-texas-license-plates-vintage-texas-license-plates/ |url-status=dead }}</ref>
+
+{{As of|2025}}, plates are manufactured at the [[Wynne Unit]] in [[Huntsville, Texas]], and are issued by the [[Texas Department of Motor Vehicles]] (TxDMV).<ref>{{cite web |title=Plates and Prisoners |url=https://100plates.txdmv.gov/page/Plates_and_Prisoners.html |publisher=Texas Department of Motor Vehicles |access-date=September 24, 2023}}</ref> Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles, trailers and antique vehicles.<ref>{{cite web |title=Application for Antique License Plate (Form VTR-54) |url=https://d3eaozktcyljdh.cloudfront.net/cdn/ff/z1eHVQJa2GfGpn2p1-aAuWyCCUsvM8KKvZ1qfUiPHjI/1599528546/public/2020-09/antique.pdf |publisher=Texas Department of Motor Vehicles |access-date=November 10, 2020 |archive-date=November 10, 2020 |archive-url=https://web.archive.org/web/20201110214433/https://d3eaozktcyljdh.cloudfront.net/cdn/ff/z1eHVQJa2GfGpn2p1-aAuWyCCUsvM8KKvZ1qfUiPHjI/1599528546/public/2020-09/antique.pdf |url-status=dead }}</ref>
+
+==Passenger baseplates==
+===1917 to 1974===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Texas license plate that complied with these standards was a modification of the 1955 plate, introduced towards the end of that year.
+{{Clear}}
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1917-1921 Texas license plate.jpg|150px]]
+|{{nowrap|1917–22}}
+|Embossed white serial on dark blue plate with border line; vertical "TEX" at right
+|''none''
+|123456
+|1 to approximately 767000
+|Validated for 1917, 1918 and 1919 with round seals, and for 1920, 1921 and 1922 with rectangular seals.
+|-
+|[[File:Texan license plate (1923–1924).png|150px]]
+|1923–24
+|Embossed white serial with star separator on black plate with border line; vertical "TEXAS" at both left and right
+|''none''
+|123-456
+|1 to approximately 999-999
+|Validated for 1924 with rectangular seals.
+|-
+|[[File:1925TexasPlate.png|150px]]
+|1925
+|Embossed white serial with star separator on maroon plate with border line; vertical "TEXAS" and "1925" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 935–000
+|First dated plate.
+|-
+|[[File:1926 Texan license plate.png|150px]]
+|1926
+|Embossed black serial with star separator on gray plate with border line; vertical "TEX-26" at right
+|''none''
+|123-456
+|1 to approximately 997–000
+|
+|-
+|rowspan="2"|[[File:Screen Shot 2024-03-11 at 10.03.23 PM.png|150px]]
+|rowspan="2"|1927
+|rowspan="2"|Embossed white serial with star separator on green plate with border line; vertical "1927" and "TEXAS" at left and right respectively
+|rowspan="2"|''none''
+|123-456
+|1 to<br>999-999
+|rowspan="2"|
+|-
+|'''A'''12-345
+|A00-000 to approximately A69-000
+|-
+|[[File:1928 Texas license plate 511*774 front.jpg|150px]]<br>[[File:1928RearTexasPlate.png|150px]]
+|1928
+|Embossed white serial with star separator on dark brown plate with border line; vertical "TEX-28" at right; vertical "FRONT" or "REAR" at left
+|''none''
+|123-456<br>{{nowrap|1-234-567}}
+|1 to approximately 1–114–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:1929TexasRearPlate.png|150px]]
+|1929
+|Embossed orange serial with star separator on black plate with border line; "TEXAS–1929" centered at bottom; vertical "FRONT" or "REAR" at left
+|''none''
+|123-456<br>1-234-567
+|1 to approximately 1–195–000
+|
+|-
+|[[File:1930 Texas license plate 1-015*533 front.jpg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|1930
+|Embossed dark blue serial with star separator on golden yellow plate with border line; "TEXAS–1930" centered at top; vertical "FRONT" or "REAR" at left
+|''none''
+|123-456<br>1-234-567
+|1 to approximately 1–358–000
+|
+|-
+|rowspan="2"|[[File:1931 Texan license plate.png|150px]]
+|rowspan="2"|1931
+|rowspan="2"|Embossed white serial with star separator on black plate with border line; vertical "TEX" and "31" at right
+|rowspan="2"|''none''
+|1-2345
+|1 to 9–9999
+|rowspan="2"|
+|-
+|A1-2345
+|A0-0000 to approximately P5-0000
+|-
+|rowspan="2"|[[File:1932 Texas license plate 871*744.jpg|150px]]
+|rowspan="2"|1932
+|rowspan="2"|Embossed white serial with star separator on green plate with border line; "TEXAS–1932" centered at bottom
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|Only letters A, F, K, N, V and Y used in the A12-345 serial format. This practice continued through 1944.<ref name="allaboutlicenseplatesTX">{{cite web |last=Tanner |first=Eric N. |title=Texas Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Texas&code=tx |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref>
+|-
+|A12-345
+|A00-000 to approximately V19-000
+|-
+|rowspan="2"|[[File:1933 Texas license plate 104*275.jpg|150px]]
+|rowspan="2"|1933
+|rowspan="2"|Embossed orange serial with star separator on white plate with border line; "TEXAS–1933" centered at top
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately F90-000
+|-
+|rowspan="2"|[[File:1934 Texas license plate 791*400.jpg|150px]]
+|rowspan="2"|1934
+|rowspan="2"|Embossed black serial with star separator on orange plate with border line; "TEXAS – 1934" centered at bottom
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately F35-000
+|-
+|rowspan="2"|[[File:1935 Texas license plate 798*900.jpg|150px]]
+|rowspan="2"|1935
+|rowspan="2"|Embossed white serial with star separator on maroon plate with border line; "TEXAS–1935" centered at top
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately F64-000
+|-
+|rowspan="2"|[[File:1936 Texas license plate 569*310.jpg|150px]]
+|rowspan="2"|1936
+|rowspan="2"|Embossed dark blue serial on lemon yellow plate with border line; vertical "TEX" used as separator; "19" at bottom left and "36" at bottom right
+|rowspan="2"|"CENTENNIAL" centered at bottom
+|123-456
+|1 to 999-999
+|rowspan="2"|Commemorated the 100th anniversary of the creation of the [[Republic of Texas]].
+|-
+|A12-345
+|A00-000 to approximately K31-000
+|-
+|rowspan="2"|[[File:1937TexPlate.png|150px]]
+|rowspan="2"|1937
+|rowspan="2"|Embossed ivory serial with star separator on black plate with border line; "TEXAS–1937" centered at top
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately K83-000
+|-
+|rowspan="2"|[[File:1938 Texas license plate 500*474.jpg|150px]]
+|rowspan="2"|1938
+|rowspan="2"|Embossed black serial with star separator on white plate with border line; "TEXAS–1938" centered at bottom
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately K88-000
+|-
+|rowspan="2"|[[File:1939 Texas license plate 501*940.jpg|150px]]
+|rowspan="2"|1939
+|rowspan="2"|Embossed dark purple serial with star separator on golden yellow plate; "TEXAS 1939" at top
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately N18-000
+|-
+|rowspan="2"|[[File:1940 Texas license plate K41*669.png|150px]]
+|rowspan="2"|1940
+|rowspan="2"|Embossed dark purple serial with star separator on white plate; "19 TEXAS 40" at top
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately V06-000
+|-
+|rowspan="2"|[[File:1941 K82047 20180329 192735WIKIRESIZE.jpg|150px]]
+|rowspan="2"|1941
+|rowspan="2"|Embossed golden yellow serial with star separator on black plate; "TEXAS 1941" at top
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|
+|-
+|A12-345
+|A00-000 to approximately V70-000
+|-
+|rowspan="2"|[[File:1942 Texas license plate Y53*748.jpg|150px]]
+|rowspan="2"|1942–44
+|rowspan="2"|Embossed black serial with star separator on golden yellow plate; "TEXAS-42" at bottom
+|rowspan="2"|''none''
+|123-456
+|1 to 999-999
+|rowspan="2"|Revalidated for 1943 with black tabs, and for 1944 with green tabs, due to metal conservation for [[World War II]].
+|-
+|A12-345
+|A00-000 to approximately Y79-000
+|-
+|[[File:1945 Texas license plate CS 4540.jpg|150px]]
+|1945
+|Embossed black serial on golden yellow plate; "TEXAS-45" at top, offset to right
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|H/L}}4000
+|
+|-
+|[[File:1946 Texas license plate HZ 71.jpg|150px]]
+|1946
+|Embossed cream serial on black plate; "TEXAS-46" at top, offset to right
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|J/B}}7000
+|
+|-
+|[[File:1947 Texan license plate.png|150px]]
+|1947
+|Embossed white serial on black plate; "TEXAS-47" at bottom, offset to right
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|J/U}}7000
+|
+|-
+|[[File:1948 Texas license plate - DZ 4014.jpg|150px]]
+|1948
+|Embossed golden yellow serial on black plate; "TEXAS-48" at top, offset to right
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|K/U}}7000
+|
+|-
+|[[File:1949 Texas license plate.JPG|150px]]
+|1949
+|Embossed black serial on golden yellow plate; "TEXAS-49" at bottom, offset to right
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|L/Y}}8000
+|
+|-
+|[[File:1950 Texas license plate - AT 3837.jpg|150px]]
+|1950
+|Embossed golden yellow serial on black plate; "TEXAS-50" at top, offset to right
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to {{small|L/Z}}9999;<br>{{small|U/A}}10 to approximately {{small|U/E}}3000
+|
+|-
+|[[File:1951 Texas License Plate.jpg|150px]]
+|1951
+|Embossed black serial on golden yellow plate; "TEXAS-51" at top, offset to right
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to {{small|L/Z}}9999;<br>{{small|U/A}}10 to approximately {{small|U/R}}8000
+|
+|-
+|[[File:1952 Texas license plate HP 9188.jpg|150px]]
+|1952
+|As 1950 base, but with "TEXAS 52" at top
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|P/J}}2000
+|
+|-
+|[[File:1953 Texas license plate.jpg|150px]]
+|1953
+|As 1951 base, but with "TEXAS 53" at top
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|P/J}}4000
+|
+|-
+|[[File:1954 Texas license plate DW 9473.jpg|150px]]
+|1954
+|As 1950 base, but with "TEXAS 54" at top
+|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|P/X}}9000
+|
+|-
+|[[File:1955 Texas license plate.jpg|150px]]
+|rowspan="2"|1955
+|As 1951 base, but with "TEXAS 55" at top
+|rowspan="2"|''none''
+|{{small|A/B}}1234
+|{{small|A/A}}10 to approximately {{small|R/E}}9999
+|rowspan="2"|
+|-
+|[[File:Texas 1955 passenger license plate.jpg|150px]]
+|As above, but to 6" x 12" size, and with "TEXAS 55" centered at top
+|AB1234
+|RF10 to approximately SD3000
+|-
+|[[File:1956 Texas license plate.jpg|150px]]
+|1956
+|Embossed golden yellow serial on black plate; "TEXAS 56" centered at top
+|''none''
+|AB1234
+|AA10 to approximately SV6000
+|
+|-
+|[[File:1957 Texas license plate.JPG|150px]]
+|1957
+|Embossed black serial with star separator on white plate; "TEXAS 57" centered at top
+|''none''
+|AB-1234
+|AA-10 to approximately UR-3000
+|
+|-
+|[[File:1958 Texas license plate 01.jpg|150px]]
+|1958
+|Embossed white serial with star separator on black plate; "TEXAS 58" centered at top
+|''none''
+|AB-1234
+|AA-10 to approximately TT-6000
+|
+|-
+|[[File:Texas 1959 license plate.jpg|150px]]
+|1959
+|As 1957 base, but with "TEXAS 59" centered at top
+|''none''
+|AB-1234
+|AA-10 to approximately UK-3000
+|
+|-
+|[[File:1960 Texas license plate.jpg|150px]]
+|1960
+|As 1958 base, but with "TEXAS 60" centered at top
+|''none''
+|AB-1234
+|AA-10 to approximately UN-7000
+|
+|-
+|[[File:1961 Texas license plate FY*1392.jpg|150px]]
+|1961
+|Embossed black serial with star separator on white plate; "TEXAS" centered at top; "61" at top right
+|''none''
+|AB-1234
+|AA-10 to approximately UY-9000
+|
+|-
+|[[File:1962 Texas license plate.jpg|150px]]
+|1962
+|Embossed white serial with star separator on black plate; "TEXAS" centered at top; "62" at top right
+|''none''
+|AB-1234
+|AA-10 to approximately VZ-4000
+|
+|-
+|[[File:1963 Texas license plate.jpg|150px]]
+|1963
+|Embossed black serial with star separator on white plate; "TEXAS" and "1963" centered at top and bottom respectively
+|''none''
+|AB-1234
+|AA-10 to approximately WS-7000
+|
+|-
+|[[File:1964 Texas license plate.JPG|150px]]
+|1964
+|Embossed white serial with star separator on black plate; "TEXAS" and "1964" centered at top and bottom respectively
+|''none''
+|AB-1234
+|AA-10 to approximately YT-1000
+|
+|-
+|[[File:1965 Texas license plate HGH 869.jpg|150px]]
+|1965
+|Embossed black serial on white plate; "19 TEXAS 65" at top
+|''none''
+|ABC&nbsp;123
+|BBB 10 to approximately PHG&nbsp;999
+|Vowels and Q not used in serials; this practice continued through 1974.<ref name="allaboutlicenseplatesTX"/>
+|-
+|[[File:1966 Texas license plate JDD*52.jpg|150px]]
+|1966
+|Embossed white serial with star separator on black plate; "19 TEXAS 66" at top
+|''none''
+|ABC-123
+|BBB-10 to approximately PYK-999
+|
+|-
+|[[File:1967 Texas license plate CKK*361.jpg|150px]]
+|1967
+|Embossed black serial with star separator on white plate; "19 TEXAS 67" at top
+|''none''
+|ABC-123
+|BBB-10 to approximately RKN-999
+|
+|-
+|[[File:1968 Texas license plate GZV*411 Hemisfair.jpg|150px]]
+|1968
+|Embossed white serial with star separator on black plate; "TEXAS" centered at top; "68" at bottom left and bottom right
+|"[[HemisFair '68|HEMISFAIR]]" centered at bottom
+|ABC-123
+|BBB-10 to approximately RSM-999
+|
+|-
+|[[File:1969 Texas license plate LKT*75.jpg|150px]]
+|1969
+|Embossed black serial with star separator on reflective white plate; "19 TEXAS 69" at top
+|''none''
+|ABC-123
+|BBB-10 to approximately RWV-999
+|
+|-
+|[[File:1970 Texas license plate DFB*663.jpg|150px]]
+|1970
+|Embossed blue serial with star separator on reflective white plate; "19 TEXAS 70" at top
+|''none''
+|ABC-123
+|BBB-10 to approximately SDN-999
+|
+|-
+|[[File:1971 Texas license plate PPZ*162.jpg|150px]]
+|1971
+|Embossed black serial with star separator on reflective white plate; "TEXAS 71" at top, offset to right
+|''none''
+|ABC-123
+|BBB-10 to approximately SWD-999
+|
+|-
+|[[File:1972 Texas license plate MSZ*336.jpg|150px]]
+|1972
+|Embossed green serial with star separator on reflective white plate; "19 TEXAS 72" at top
+|''none''
+|ABC-123
+|BBB-10 to approximately TKK-999
+|
+|-
+|[[File:1973 Texas license plate SVP*903.jpg|150px]]
+|1973
+|Embossed black serial with star separator on reflective white plate; "19 TEXAS 73" at top
+|''none''
+|ABC-123
+|BBB-10 to approximately VDD-999
+|
+|-
+|[[File:1974 Texas license plate KJN 25.jpg|150px]]
+|1974
+|Embossed red serial with star separator on reflective white plate; "19 TEXAS 74" at top
+|''none''
+|ABC-123
+|BBB-10 to approximately VMG-999
+|
+|}
+
+===1975 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1975 Texas license plate FWY*332.jpg.png|150px]]
+|1975
+|Black on reflective white, star separator
+|rowspan="3"|''none''
+|rowspan="2"|ABC-123
+|AAA-10 to approximately MMV-500
+|rowspan="3"|Letters I and O not used in serials; this practice continued until 1990. Monthly staggered registration introduced 1978.
+|-
+|[[File:TEXAS 1980.jpg|150px]]
+|{{nowrap|1976–81}}
+|rowspan="2"|As above, but with state-shaped separator
+|MMV-501 to ZZZ-999
+|-
+|[[File:1975 Texas license plate, 542-FJG.jpg|150px]]
+|1982–84
+|123-ABC
+|001-AAA to 999-HEW
+|-
+|[[File:1985-86 Texas License Plate.jpg|150px]]
+|1985–86
+|Dark blue on reflective white, screened red state-shaped separator
+|Sesquicentennial
+|rowspan="2"|123-ABC
+|001-HEX to 974-PAY
+|Commemorated the 150th anniversary of the creation of the Republic of Texas.
+|-
+|[[File:Texas license plate, 1986–1989 series with November 1989 sticker.png|150px]]
+|1986–89
+|rowspan="2"|As above, but with bolder state name
+|rowspan="2"|''none''
+|975-PAY to 999-ZZZ
+|
+|-
+|[[File:TEXAS 1990.jpg|150px]]
+|1990
+|ABC-12D
+|BBB-01B to BKW-99Z
+|Vowels and Q not used in serials (as from 1965 to 1974); this practice continues today.
+|-
+|[[File:TEXAS 1991.jpg|150px]]
+|1990–91
+|rowspan="2"|Dark blue and red on reflective white, [[Flag of Texas|state flag]] screened to left of state name
+|''none''
+|rowspan="2"|ABC-12D
+|BKX-01B to GTX-99Z
+|rowspan="2"|
+|-
+|[[File:TEXAS 1993.jpg|150px]]
+|1992&nbsp;– December 28, 1995
+|The Lone Star State
+|GTY-01B to TKT-99Z 
+|-
+|[[File:TEXAS 1995.jpg|150px]]
+|December 29, 1995&nbsp;– mid<br>1996
+|State outline within abstract graphic.
+|150 Years of Statehood
+|ABC-12D
+|VJL-01K to WSJ-99F
+|Awarded "Plate of the Year" for best new standard-issue license plate of 1995 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Texas has been so honored. Co-recipient with [[Vehicle registration plates of Pennsylvania|Pennsylvania]].
+|-
+|[[File:1994 Texas license plate ZWT-54L.jpg|150px]]
+|mid<br>1996&nbsp;– February 1998
+|As 1990–95 base
+|rowspan="2"|The Lone Star State
+|ABC-12D
+|TKV-01B to VJL-99J;<br>WSJ-01G to ZZZ-99Z
+|Some late 'Z' series plates made on next series' graphic sheeting, with state flag to right of state name.
+|-
+|[[File:1994 Texas license plate C67 FLX.jpg|150px]]
+|February 1998&nbsp;–<br>mid<br>2000
+|As above, but with state flag to right of state name
+|A12-BCD
+|B01-BBB to J99-GPZ
+|Some early 'B' series plates made on previous series' graphic sheeting, with state flag to left of state name. Sticker wells at top removed in late 1998, near the end of the 'C' series (plates were validated with windshield stickers from 1994 onwards). Issued concurrently with the Space Shuttle base (below) from February 2000 until supplies were exhausted.<ref>{{cite web |last=Palmer |first=Jim |title=Dating Texas Passenger Car License Plates Issued Since 1975 |url=http://www.licenseplateinfo.com/txchart/pass-tables.html |publisher=LicensePlateInfo.com |access-date=May 9, 2019}}</ref>
+|-
+|[[File:TEXAS 2000.jpg|150px]]
+|February 2000&nbsp;– November 2004
+|rowspan="2"|Dark blue serial on reflective plate with graphic scene featuring a [[cowboy]], [[oil field]]s, a [[Space Shuttle]], stars and the [[moon]]; screened red state-shaped separator
+|rowspan="4"|The Lone Star State
+|A12-BCD
+|J01-GRB to Z99-ZZZ
+|rowspan="2"|
+|-
+|[[File:TEXAS 2005.jpg|150px]]
+|November 2004&nbsp; – October 2005
+|rowspan="2"|123-ABC
+|001-BBB to 999-HWL
+|-
+| 
+|October 2005&nbsp;– September 2007
+|rowspan="2"|As above, but with a slightly smaller cowboy, the state flag added within the state-shaped separator, the [[Flag of the United States|national flag]] added to the Space Shuttle, and seven larger stars above the shuttle
+|001-HWM to 999-ZZZ
+|rowspan="2"|The seven larger stars honored the astronauts killed in the [[Space Shuttle Columbia disaster]] of 2003, which occurred over Texas.
+|-
+|[[File:TEXAS 2008.jpg|150px]]
+|September 2007&nbsp;–<br>June<br>2009
+|ABC-123
+|BBB-001 to approximately VLZ-999
+|-
+|[[File:Texas 2009-12 license plate.jpg|150px]]
+|July<br>2009&nbsp;– June<br>2012
+|First standard-issue non-embossed license plate issued in Texas; features the [[Davis Mountains]] against a sky backdrop, with a lone star and streaks of red and blue in the upper-left corner; state motto is retained on the bottom
+|The Lone Star State
+|{{nowrap|AB1-C234}}
+|BB1-B001 to approximately DZ9-Z999
+|
+|-
+|[[File:Texas Passenger Car License Plate 2020.png|150px]]
+|July<br>2012&nbsp;– present
+|Black lettering on white sheeting design with double security thread in the sheeting
+|The Lone Star State
+|ABC-1234
+|BBB-0001 to YZS-4943 {{small|(as of March 29, 2026)}}<ref name="licenseplates.cc">{{Cite web |title=Texas License Plates |url=https://www.licenseplates.cc/TX |website=www.licenseplates.cc |access-date=December 7, 2024}}</ref>
+|Known as the "Texas Classic" plate. Serials issued on both passenger vehicles and trucks.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] Tractor
+|rowspan="2"|2013
+|rowspan="2"|As "Texas Classic" passenger base; "APPORTIONED" between state name and serial
+|rowspan="2"|The Lone Star State
+|'''R'''12-3456
+|R00-0001 to present
+|rowspan="2"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Apportioned Truck/Bus
+|'''K'''12-3456
+|K00-0001 to present
+|-
+|[[File:1988 Texas license plate 8SF NH disabled.jpg|150px]]
+|rowspan="4"|[[Disability|Disabled]]
+|1986
+|Embossed dark blue on reflective white; "TEXAS" in red centered at top
+|''none''
+|rowspan="2"|{{nowrap|1AB {{access icon|10px}} CD}}
+|1BB {{access icon|10px}} BB to approximately<br>9WT {{access icon|10px}} MZ
+|rowspan="4"|
+|-
+|[[File:2012 Texas license plate 1XF FV disabled.jpg|150px]]
+|2005
+|rowspan="2"|Screened dark blue on reflective white; state flag within state shape at top right; "TEXAS" in blue centered at top
+|rowspan="2"|The Lone Star State
+|1WT {{access icon|10px}} NB to approximately<br>9YP {{access icon|10px}} ZZ
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|rowspan="2"|{{access icon|10px}} 1ABCD
+|{{access icon|10px}} 1YTBB to<br>{{access icon|10px}} 9ZZZZ;<br>{{access icon|10px}} 1BBBB to approximately<br>{{access icon|10px}} 9HZZZ
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2013
+|As "Texas Classic" passenger base
+|The Lone Star State
+|{{access icon|10px}} 1JBBB to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="8"|Exempt
+|1969
+|Embossed black on white with star separator; "TEXAS" and "EXEMPT" centered at top and bottom respectively
+|''none''
+|rowspan="6"|123-456
+|160-001 to approximately 250–000
+|rowspan="8"|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1975
+|Embossed black on white with star separator; "TEXAS" centered at top; "EXEMPT" between state name and serial
+|rowspan="3"|''none''
+|250-001 to approximately 285–000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|c. 1977
+|As above, but with state-shaped separator
+|285-001 to approximately 556–000
+|-
+|[[File:Texas exempt license plate, c. 2002.png|150px]]
+|c. 1988
+|As above, but elements dark blue rather than black
+|556-001 to approximately 831–000
+|-
+|[[File:Texas exempt license plate, c. 2003.png|150px]]
+|c. 2000
+|Embossed dark blue on reflective white with screened red state-shaped separator; "TEXAS" in red centered at top; "EXEMPT" in dark blue between state name and serial
+|''none''
+|831-001 to approximately 850–000
+|-
+|[[File:Texas exempt license plate, c. 2008.png|150px]]
+|c. 2003
+|rowspan="2"|Screened dark blue on reflective white; "TEXAS" in dark blue centered at top; "EXEMPT" in red between state name and serial
+|rowspan="2"|''none''
+|850-001 to<br>899-999
+200–001 to approx. 299–999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2006
+|rowspan="2"|123-4567
+|100-0000 to approximately 117–9999
+|-
+|[[File:Texas exempt license plate, c. 2015.png|150px]]
+|2014
+|As "Texas Classic" passenger base; "EXEMPT" between state name and serial
+|The Lone Star State
+|118-0000 to present
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="12"|[[Truck]]
+|rowspan="2"|1975
+|Embossed black on white with star separator; "TEXAS" centered at top; "TRUCK" between state name and serial
+|rowspan="3"|''none''
+|rowspan="2"|AB-1234
+|AA-10 to approximately HQ-5200
+|rowspan="12"|
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|As above, but with state-shaped separator
+|HQ-5201 to<br>ZZ-9999
+|-
+|1983
+|1234-AB
+|100-AA to<br>9999-CQ
+|-
+|[[File:Texas 1987 truck license plate.jpg|150px]]
+|1985
+|As 1985 Sesquicentennial passenger base; "TRUCK" between state name and serial
+|Sesquicentennial
+|rowspan="2"|123-4AB
+|000-1CR to<br>299-9KK
+|-
+|rowspan="3"|[[File:Texas Truck license plate.jpg|150px]]
+|1986
+|rowspan="3"|As above, but without slogan and years
+|rowspan="3"|''none''
+|300-0KK to<br>999-9ZZ
+|-
+|1991
+|AB1-234
+|AA0-001 to<br>ZZ9-999
+|-
+|1997
+|rowspan="2"|1AB-C23
+|1BB-B01 to<br>4LL-Z99
+|-
+|rowspan="2"|[[File:1999 Texas license plate 8RY J43 truck.jpg|150px]]
+|2000
+|rowspan="2"|As Space Shuttle passenger base; "TRUCK" between state name and serial
+|rowspan="4"|The Lone Star State
+|4LM-B01 to<br>9ZZ-Z99
+|-
+|2004
+|rowspan="2"|12A-BC3
+|01B-BB1 to<br>99L-XZ3
+|-
+|rowspan="2"|[[File:TRUCK 2009.jpg|150px]]
+|2005
+|rowspan="2"|As revised Space Shuttle passenger base; "TRUCK" between state name and serial
+|01L-YB3 to<br>99Z-ZZ9
+|-
+|2009
+|123-4AB
+|000-1AA to approximately 500-0BF
+|-
+|[[File:Texas Truck Dark base.jpg|150px]]
+|2009
+|As sky passenger base; "TRUCK" between state name and serial
+|The Lone Star State
+|AB1-2345
+|AA0-0001 to approximately<br>CB1-0000
+|}
+
+==Temporary tags==
+Temporary tags are issued to unregistered vehicles and to vehicles registered in states that do not have a reciprocity agreement with Texas. These tags are printed on paper and are used mainly by dealers. {{As of|2022}}, four types are available: three are valid for 72 hours, 144 hours, and 30 days respectively; the fourth is the "one-trip" tag, which is issued only to unladen vehicles traveling from a single origin to a single destination (either of which must be in Texas) and is valid for 15 days.<ref>{{cite web |title=Temporary Vehicle Registration |url=https://www.txdmv.gov/motor-carriers/oversize-weight-permits/temporary-vehicle-registration |publisher=Texas Department of Motor Vehicles |access-date=February 21, 2022}}</ref>
+
+In February 2022, it was reported that as many as 1.2 million fraudulent temporary Texas tags were sold in the United States in 2021. Due to inadequate security standards in the dealer application process in Texas, fraudulent individuals posing as dealers could purchase licenses for less than $800. This gave them access to the Texas DMV database, which they could use to print temporary tags and sell them online for profit. Most drivers who purchased the tags did so to make their vehicles untraceable when committing crimes, or to avoid paying tolls and registration fees.<ref>{{cite news |last1=Dienst |first1=Jonathan |last2=Copenhagen |first2=Courtney |date=February 11, 2022 |title=Changes At Texas DMV Could Lead to Fewer Temporary Texas Paper Plates in NY |url=https://www.nbcnewyork.com/investigations/changes-at-texas-dmv-could-lead-to-fewer-temporary-texas-paper-plates-in-ny/3547355/ |publisher=[[WNBC]] |access-date=February 17, 2022}}</ref>
+
+==Optional plates==
+Texas has more specialty plates than any other state, with 506 available.<ref>{{Cite web |title=My Plates |url=https://www.txdmv.gov/motorists/license-plates/specialty-license-plates?limitstart=0}}</ref>
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Notes
+|-
+|<!-- Deleted image removed: [[File:4HTexas.png|150px]] -->
+|4-H Club
+|
+|
+|
+|
+|-
+|
+|A Fine Cause
+|
+|
+|
+|
+|-
+|<!-- Deleted image removed: [[File:AdoptBeachTexPlate.png|150px]] -->
+|Adopt-A-Beach
+|
+|
+|
+|
+|-
+|[[File:AerospaceTexPlate.png|150px]]
+|Aerospace Commission
+|
+|
+|
+|
+|-
+|[[File:AirForceTexPlate.png|150px]]
+|Air Force Association
+|
+|
+|
+|
+|-
+|<!-- Deleted image removed: [[File:AnimalFriendTeXPlate.png|150px]] -->
+|Animal Friendly
+|
+|
+|
+|
+|-
+|
+|Be A Blood Donor
+|
+|
+|
+|
+|-
+|[[File:OrganDonorTexPlate.png|150px]]
+|Be An Organ Donor
+|
+|
+|
+|
+|-
+|
+|Big Bend National Park
+|
+|
+|
+|
+|-
+|[[File:Texas “Scouting Teaches Values” license Plate.webp|150px]]
+|Boy Scouts (Scouts BSA)
+|
+|
+|
+|
+|-
+|
+|Buffalo Soldier Museum
+|
+|
+|
+|
+|-
+|<!-- Deleted image removed: [[File:BreaTexPlate.png|150px]] --><br><!-- Deleted image removed: [[File:CancerTexPlate.png|150px]] -->
+|Cancer Survivor
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Columbia Remembered
+|
+|
+|
+|
+|-
+|[[File:ConquerCancerTexPlate.png|150px]]
+|Conquer Cancer
+|
+|
+|
+|
+|-
+|[[File:CowboysBlueTexPlate.png|150px]]<br>[[File:CowboysSilverTexPlate.png|150px]]<br>[[File:CowboyStarTexPlate.png|150px]]<br>[[File:DallCowboysTexPlate.jpg|150px]]
+|Dallas Cowboys
+|
+|
+|
+|
+|-
+|<!-- Deleted image removed: [[File:DallasMavericksTexPlate.jpg|150px]] --><br>[[File:OtherMavTexPlate.jpg|150px]]
+|Dallas Mavericks
+|
+|
+|
+|
+|-
+|[[File:DontTreadTexPlate.png|150px]]
+|Don't Tread On Me
+|
+|
+|
+|
+|-
+|[[File:EMSTexPlate.png|150px]]
+|Emergency Medical Services
+|
+|
+|
+|
+|-
+|
+|Enjoy Texas Music
+|
+|
+|
+|
+|-
+|[[File:Fight terrorism texas licence plate.png|150px]]
+|Fight Terrorism
+|
+|
+|
+|
+|-
+|<!-- Deleted image removed: [[File:AmeriloveTexPlate.png|150px]] -->
+|God Bless America
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|God Bless Texas
+|
+|
+|
+|
+|-
+
+|[[File:HoustonTexansTexPlate.png|150px]]<br>
+|Houston Texans
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Hunt Texas
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|In God We Trust
+|
+|
+|
+|
+|-
+|[[File:KansasJayhawksTexPlate.png|150px]]
+|Kansas Jayhawks
+|
+|
+|
+|
+|-
+|[[File:TexasBeautyTexPlate.png|150px]]
+|Keep Texas Beautiful
+|
+|
+|
+|
+|-
+|[[File:KnightsColumTexPlate.png|150px]]
+|Knights of Columbus
+|
+|
+|
+|
+|-
+|
+|March of Dimes
+|
+|
+|
+|
+|-
+|
+|Master Gardener
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Mission Valley
+|
+|
+|
+|
+|-
+|
+|Mothers Against Drunk Driving
+|
+|
+|
+|
+|-
+|<br><br>[[File:Blank License Plate Shape.svg|150px]]<br>[[File:FourthNASCARTexPlate.png|150px]]
+|NASCAR
+|
+|
+|
+|Discontinued<ref>https://www.myplates.com/discontinued-plates/ Retrieved March 11, 2024</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Native Texan
+|
+|
+|
+|
+|-
+|[[File:Texan oil and gas license plate.jpg|150px]]
+|Oil and Gas
+|
+|
+|
+|
+|-
+|[[File:OlymSpiritTexPlate.png|150px]]<br>[[File:OlympicsTexPlate.png|150px]]
+|Olympic Spirit
+|
+|
+|
+|
+|-
+|[[File:ProudKidTexPlate.png|150px]]
+|Proud For Kids
+|
+|
+|
+|
+|-
+|[[File:RealtorsTexPlate.png|150px]]
+|Realtor
+|
+|
+|
+|
+|-
+|
+|Rifle Association
+|
+|
+|
+|
+|-
+|[[File:RotaryTexPlate.png|150px]]
+|Rotary Club
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Save Water, Texas!
+|
+|
+|
+|
+|-
+|[[File:TX Share The Road Y'all License Plate.jpg|150px]]
+|Share the Road
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]<br>[[File:Blank License Plate Shape.svg|150px]]
+|State Parks
+|
+|
+|
+|
+|-
+|[[File:Southern Methodist University License Plate.png|150px]]
+|Southern Methodist University
+|
+|
+|
+|
+|-
+|
+|Stop Child Abuse
+|
+|
+|
+|
+|-
+|[[File:TexPrideTexPlate.png|150px]]
+|Texas Pride
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Texas Trees
+|
+|
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Trails!
+|
+|
+|
+|
+|-
+|[[File:NormAirForceTexPlate.png|150px]]<br>[[File:AirForceRetiredTexPlate.png|150px]]<br>[[File:HonAirForceTexPlate.png|150px]]<br>[[File:DisableAirForceTexPlate.png|150px]]<br>[[File:DVDisAirForceRTexPlate.png|150px]]
+|United States Air Force
+|
+|
+|
+|
+|-
+|[[File:UnitedWeTexPlate.png|150px]]
+|United We Stand
+|
+|
+|
+|
+|-
+|[[File:YMCATexPlate.png|150px]]
+|YMCA
+|
+|
+|
+|
+|}
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*{{cite book |title=The History of Texas License Plates – 80th Anniversary Edition |url=https://100plates.txdmv.gov/docs/80th_Anniversary_of_Texas_License_Plates.pdf |archive-url=https://web.archive.org/web/20121028094927/http://ftp.dot.state.tx.us/pub/txdot-info/vtr/plate_history.pdf |url-status=live |archive-date=28 October 2012 |location=[[Austin, Texas]] |publication-date=March 1999 |publisher=[[Texas Department of Transportation]] |access-date=16 March 2024}} An extensive history and catalog of Texas license plates.
+
+==External links==
+*[http://www.15q.net/tx.html Texas license plates, 1969–present]
+{{commons category-inline|License plates of Texas}}
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Texas}}
+
+{{DEFAULTSORT:Vehicle registration plates of Texas}}
+[[Category:Vehicle registration plates of the United States by state or territory|Texas]]
+[[Category:Texas transportation-related lists]]
+[[Category:Transportation in Texas]]

@@ -16,13 +16,16 @@ struct Plate: Identifiable, Hashable, Sendable {
     let code: String
     let name: String     // full name, used in detail and accessibility
     let short: String    // tile label — abbreviated where the full name will not fit
-    let points: Int      // rarity weight, 1 (everywhere) to 10 (almost never)
+    /// National-average rarity, 1 (everywhere) to 10 (almost never).
+    ///
+    /// Only a fallback now. `PlateRarity` computes rarity against the trip's actual
+    /// route; this is what it uses before a route has been pinned. A single number
+    /// per plate can only ever describe one vantage point, and these describe the
+    /// Northeast — which is why New Jersey scores 1 and Montana 8.
+    let points: Int
     let region: PlateRegion
 
     var id: String { code }
-
-    /// The threshold the original game used for its amber "rare" treatment.
-    var isRare: Bool { points >= 8 }
 }
 
 extension Plate {

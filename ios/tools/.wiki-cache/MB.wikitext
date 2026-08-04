@@ -1,0 +1,642 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle license plate
+| image = Manitoba License Plate 2012.jpg
+| caption = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Friendly Manitoba
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 123
+| current_start_date = {{Start date|2012}}
+| designer = 
+| issuer = Manitoba Public Insurance
+| start_date = {{Start date|1911}}<br>
+}}
+
+The [[Provinces and territories of Canada|Canadian province]] of [[Manitoba]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|licence plate]]s in 1911. {{As of|2022}}, plates are issued by the [[Manitoba Public Insurance]]. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+==Passenger baseplates==
+===1911 to 1947===
+In 1956, Canada, the United States, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The first Manitoba license plate that complied with these standards was issued 25 years beforehand, in 1931.
+
+No slogans were used on passenger plates during the period covered by this subsection.
+{{-}}
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:Manitoba License Plate 1911 Rough.jpg|150px]]
+|1911
+|White serial on blue porcelain plate; vertical "MAN" and "1911" at left and right respectively
+|1234
+|1 to 1999;<br>3000 to approximately 3200
+|Serials 2000 through 2999 reserved for dealers.<ref>{{cite web |last=Taylor |first=Eric Robert |title=Manitoba Archive |url=http://www.porcelainplates.net/manitoba_archive.html |publisher=PorcelainPlates.net |access-date=July 31, 2017}}</ref>
+|-
+|[[File:Manitoba License Plate 1912.jpg|150px]]
+|1912
+|White serial on black porcelain plate; [[Coat of arms of Manitoba|provincial shield]] at left with "MAN. 1912" below
+|1234
+|1 to approximately 4500
+|
+|-
+|[[File:Manitoba License Plate 1913.jpg|150px]]
+|1913
+|Black serial on white porcelain plate; provincial shield at left with "MAN 1913" below
+|1234
+|1 to approximately 5800
+|
+|-
+|[[File:Manitoba License Plate 1914.jpg|150px]]
+|1914
+|Black serial on golden yellow porcelain plate; provincial shield at left with "MAN 1914" below
+|1234
+|1 to approximately 7400
+|
+|-
+|[[File:Manitoba License Plate 1915.jpg|150px]]
+|1915
+|Black serial on white flat metal plate; provincial shield at left with "MAN. 1915" below
+|1234
+|1 to approximately 8900
+|
+|-
+|[[File:Manitoba License Plate 1916.jpg|150px]]
+|1916
+|White serial on brown flat metal plate; provincial shield at left with "MAN. 1916" below
+|12345
+|1 to approximately 12500
+|
+|-
+|[[File:Manitoba License Plate 1917.jpg|150px]]
+|1917
+|White serial on black flat metal plate; provincial shield at left with "MAN. 1917" below
+|12345
+|1 to approximately 18600
+|
+|-
+|[[File:Manitoba License Plate 1918.jpg|150px]]<br>[[File:Manitoba License Plate 1918-19.jpg|150px]]
+|1918–19
+|Black serial on yellow flat metal plate; provincial shield at left with "MAN. 1918" below
+|12345
+|1 to approximately 33000
+|Revalidated for 1919 with dark green tabs.
+|-
+|[[File:1920 Manitoba licence plate.jpg|150px]]
+|1920
+|Embossed black serial on light green plate with border line; "MAN 1920" at left
+|12345
+|1 to approximately 33500
+|First embossed plate.
+|-
+|[[File:1921 Manitoba licence plate.jpg|150px]]
+|1921
+|Embossed gray serial on dark blue plate with border line; "MAN 1921" at left
+|{{nowrap|12-345}}
+|1 to approximately 37-500
+|
+|-
+|[[File:1922 Manitoba.jpg|150px]]
+|1922
+|Embossed white serial on black plate with border line; "MAN 1922" at left
+|12-345
+|1 to approximately 38-500
+|
+|-
+|[[File:Manitoba License Plate 1923.jpg|150px]]
+|1923
+|Embossed blue serial on gray plate with border line; "MAN 1923" at left
+|12-345
+|1 to approximately 41-000
+|
+|-
+|[[File:Manitoba License Plate 1924.jpg|150px]]
+|1924
+|Embossed white serial on black plate with border line; "MAN 1924" at left
+|12-345
+|1 to approximately 42-500
+|
+|-
+|[[File:Manitoba License Plate 1925.jpg|150px]]
+|1925
+|Embossed black serial on white plate with border line; "MAN 1925" at left
+|12-345
+|1 to approximately 41-500
+|
+|-
+|[[File:Manitoba License Plate 1926.jpg|150px]]
+|1926
+|Embossed white serial on black plate with border line; slanted "MAN" and "26" at right
+|12-345
+|1 to approximately 51-500
+|
+|-
+|[[File:Manitoba License Plate 1927.jpg|150px]]
+|1927
+|Embossed black serial on white plate with border line; "MANITOBA 27" at bottom
+|12-345
+|1 to approximately 58-500
+|First use of the full province name.
+|-
+|[[File:Manitoba License Plate 1928.jpg|150px]]
+|1928
+|Embossed black serial on turquoise plate with border line; "MANITOBA 28" at bottom
+|12-345
+|1 to approximately 59-000
+|
+|-
+|[[File:Manitoba License Plate 1929.jpg|150px]]
+|1929
+|Embossed white serial on green plate with border line; "MANITOBA 29" at bottom
+|12-345
+|1 to approximately 77-000
+|
+|-
+|[[File:Manitoba License Plate 1930.jpg|150px]]
+|1930
+|Embossed white serial on blue plate with border line; "MANITOBA 30" at bottom
+|12-345
+|1 to approximately 80-000
+|
+|-
+|[[File:Manitoba License Plate 1931.jpg|150px]]
+|1931
+|Embossed white serial on green plate with border line; "MANITOBA 31" at bottom
+|12-345
+|1 to approximately 90-000
+|First 6" x 12" plate.
+|-
+|[[File:Manitoba License Plate 1932.jpg|150px]]
+|1932
+|Embossed white serial on black plate with border line; "MANITOBA 32" at bottom
+|12-345
+|1 to approximately 78-000
+|
+|-
+|[[File:1933 Manitoba licence plate.jpg|150px]]
+|1933
+|Embossed white serial on blue plate with border line; "MANITOBA 33" at bottom
+|12-345
+|1 to approximately 65-000
+|
+|-
+|[[File:Manitoba License Plate 1934.jpg|150px]]
+|1934
+|Embossed white serial on green plate with border line; "34 MANITOBA" at bottom
+|12-345
+|1 to approximately 65-500
+|
+|-
+|[[File:Manitoba License Plate 1935.jpg|150px]]
+|1935
+|Embossed white serial on black plate with border line; "MANITOBA 35" at bottom
+|12-345
+|1 to approximately 64-500
+|
+|-
+|[[File:1936 Manitoba licence plate.jpg|150px]]
+|1936
+|Embossed white serial on blue plate with border line; "MANITOBA 36" at bottom
+|12-345
+|1 to approximately 65-500
+|
+|-
+|[[File:Manitoba License Plate 1937.jpg|150px]]
+|1937
+|Embossed white serial on green plate with border line; "MANITOBA 37" at top
+|12-345
+|1 to approximately 68-000
+|
+|-
+|[[File:Manitoba License Plate 1938.jpg|150px]]
+|1938
+|Embossed white serial on black plate with border line; "MANITOBA 38" at bottom
+|12-345
+|1 to approximately 78-500
+|
+|-
+|[[File:Manitoba License Plate 1939.jpg|150px]]
+|1939
+|Embossed white serial on blue plate with border line; "MANITOBA 39" at top
+|12-345
+|1 to approximately 85-500
+|
+|-
+|[[File:Manitoba License Plate 1940.jpg|150px]]
+|1940
+|Embossed white serial on green plate with border line; "MANITOBA 40" at bottom
+|12-345
+|1 to approximately 84-500
+|
+|-
+|[[File:Manitoba License Plate 1941.jpg|150px]]
+|1941
+|Embossed black serial on yellow plate with border line; "MANITOBA 41" at top
+|12-345
+|1 to approximately 85-000
+|
+|-
+|[[File:Manitoba License Plate 1942.jpg|150px]]<br>[[File:Manitoba License Plate 1942-43.jpg|150px]]
+|{{nowrap|1942–44}}
+|Embossed black serial on silver plate with border line; "MANITOBA 42" at bottom
+|12-345
+|1 to approximately 84-000
+|Revalidated for 1943 with red tabs, and for 1944 with windshield stickers, due to metal conservation for [[World War II]].
+|-
+|[[File:1945 Manitoba license plate.JPG|150px]]
+|1945
+|Embossed black serial on orange plate with border line; "MANITOBA 45" at bottom
+|12-345
+|1 to approximately 84-500
+|
+|-
+|[[File:Manitoba License Plate 1946.jpg|150px]]
+|1946
+|Embossed blue serial on cream plate with border line; "MANITOBA 46" at bottom
+|12-345
+|1 to approximately 84-000
+|
+|-
+|[[File:Manitoba License Plate 1947.jpg|150px]]
+|1947
+|Embossed black serial on silver plate with border line; "MANITOBA 47" at bottom
+|12-345
+|1 to approximately 85-500
+|
+|}
+
+===1948 to present===
+Manitoba is currently one of five provinces where decals are not used to show that the vehicle has valid registration.<ref>The other four provinces are Alberta, British Columbia, Saskatchewan, and Quebec.</ref><ref>{{cite web |title=Manitoba Public Insurance scrapping licence plate stickers |url=https://www.cbc.ca/news/canada/manitoba/manitoba-public-insurance-scrapping-licence-plate-stickers-1.3405512 |publisher=[[CBC News]] |date=January 15, 2016 |access-date=June 27, 2016}}</ref>
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:95px;"|Serials issued
+!Notes
+|-
+|[[File:1948 Manitoba licence plate.jpg|150px]]<br>[[File:1948 Manitoba licence plate with 1949 tab.jpg|150px]]
+|{{nowrap|1948–49}}
+|Embossed black serial on yellow plate with border line; "MANITOBA 48" at bottom
+|''none''
+|123-456
+|1 to approximately 112-000
+|Revalidated for 1949 with silver tabs.
+|-
+|[[File:1950 Manitoba licence plate.jpg|150px]]<br>[[File:1950 Manitoba licence plate with 1951 tab.jpg|150px]]
+|1950–51
+|Embossed black serial on silver plate with border line; "MANITOBA 50" at bottom
+|''none''
+|1A234
+|1A1 to approximately 9S999
+|Revalidated for 1951 with red tabs.
+|-
+|[[File:1952 Manitoba licence plate.jpg|150px]]
+|rowspan="2"|1952–57
+|rowspan="2"|Embossed black serial on yellow plate with border line; "MANITOBA 52" at bottom
+|rowspan="2"|''none''
+|1A234
+|1A1 to<br>9Y999
+|rowspan="2"|Revalidated for 1953 with black tabs, for 1954 with green tabs, for 1955 with white tabs, for 1956 with black tabs, and for 1957 with green tabs.
+|-
+|[[File:Manitoba License Plate 1956.jpg|150px]]
+|12A34
+|10A1 to approximately 70P99
+|-
+|[[File:1958 Manitoba licence plate.jpg|150px]]
+|rowspan="3"|1958–63
+|rowspan="3"|Embossed yellow serial on black plate with border line; "MANITOBA 58" at bottom, offset to right, with embossed [[American bison|bison]] graphic to left
+|rowspan="3"|''none''
+|1A234
+|1A1 to<br>9Y999
+|rowspan="3"|Revalidated for 1959 with white tabs, for 1960 with yellow tabs, for 1961 with green tabs, for 1962 with white tabs, and for 1963 with yellow tabs. Letters I, O, Q, R and Z not used in serials; this practice continued until 1976.<ref name="allaboutlicenseplatesMB">{{cite web |last=Tanner |first=Eric N. |title=Manitoba Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Manitoba&code=mb |publisher=allaboutlicenseplates.com |access-date=November 17, 2020}}</ref>
+|-
+|[[File:Manitoba License Plate 1961.jpg|150px]]
+|12A34
+|10A1 to<br>99Y99
+|-
+|[[File:1958 Manitoba licence plate with 1963 tab.jpg|150px]]
+|AB123
+|AA1 to approximately DV999
+|-
+|[[File:1964 Manitoba licence plate.jpg|150px]]
+|rowspan="3"|1964–70
+|rowspan="3"|Embossed black serial on yellow plate with border line; "MANITOBA 64" at bottom, offset to right, with embossed bison graphic to left
+|rowspan="3"|''none''
+|1A234
+|1A1 to<br>9Y999
+|rowspan="3"|Revalidated for 1965 with black tabs, for 1966 with red tabs, for 1967 with purple tabs, for 1968 with green tabs, for 1969 with black tabs, and for 1970 with purple tabs. Manitoba was thus the last jurisdiction in North America to revalidate its licence plates with tabs.
+|-
+|[[File:Manitoba License Plate 1967.jpg|150px]]
+|12A34
+|10A1 to<br>99Y99
+|-
+|[[File:Manitoba License Plate 1969.jpg|150px]]
+|AB123
+|AA1 to approximately PJ999
+|-
+|[[File:1971 Manitoba licence plate.jpg|150px]]
+|1971–75
+|Embossed black serial on reflective white plate with border line; outline of bison's head and front leg embossed at left; "71" at bottom left
+|"SUNNY MANITOBA" and "100,000 LAKES" centred at top and bottom respectively
+|AB-123<br>AB12-34
+|AA-1 to approximately DW99-99
+|Former provincial slogan coincidentally similar to the U.S. state of [[Minnesota]] slogan, "10,000 LAKES" (which is still currently used on [[Vehicle registration plates of Minnesota|its license plates]]).
+|-
+|[[File:1976 Manitoba licence plate.jpg|150px]]
+|1976–82
+|Embossed purple serial on reflective yellow plate; border lines around plate and around bottom corners; "MANITOBA" centred at bottom; "76" at top right
+|"FRIENDLY" centred at top
+|{{nowrap|ABC-123}}
+|AAA-101 to approximately GUW-999
+|Only letters A through E, G, H, K, L, N, S, T, U, W and X used in serials, and numbers 1–100 reserved in all series.<ref name="allaboutlicenseplatesMB"/>
+|-
+|[[File:1983 Manitoba farm truck licence plate.jpg|150px]]
+|1983–86
+|Embossed black serial on reflective white plate; border lines around plate and around bottom corners; "MANITOBA" screened in red centred at bottom; debossed "83" at bottom left
+|"FRIENDLY" screened in red centred at top
+|rowspan="2"|123&nbsp;ABC
+|101&nbsp;AAA to 500&nbsp;DWT
+|rowspan="2"|The 1986 design changes were made in order to cut costs. Letters initially used in serials same as those on the 1976–82 base, plus P as second and/or third letter only; all letters used from the QAA series onwards (1995).<ref name="allaboutlicenseplatesMB"/>
+|-
+|[[File:Manitoba 1997 license plate.jpg|150px]]
+|1986&nbsp;– June 16, 1997
+|As above, but non-reflective, and with province name embossed in black
+|As above, but embossed in black
+|501&nbsp;DWT to approximately 999&nbsp;QLV
+|-
+|[[File:2007 Manitoba licence plate.jpg|150px]]
+|June 17, 1997<ref>{{cite web |title=New Licence Plates Being Distributed |url=https://news.gov.mb.ca/news/index.html?item=22982&posted=1997-06-13 |publisher=Province of Manitoba |date=June 13, 1997 |access-date=June 28, 2019}}</ref>&nbsp;– late<br>2012
+|Embossed dark blue serial on reflective white plate with river scene featuring green trees on either side and yellow wheat at the bottom; blue bison graphic screened at top right; "Manitoba" screened in blue at top, offset to right, with red [[maple leaf]] over the 'i'
+|rowspan="2"|"Friendly" screened in blue to left of province name, giving "Friendly Manitoba"
+|rowspan="3"|ABC&nbsp;123
+|AAA&nbsp;101 to BZZ&nbsp;999; DAA&nbsp;101 to GLW&nbsp;999
+|rowspan="2"|Awarded "Plate of the Year" for best new standard-issue licence plate of 1997 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Manitoba has been so honored. Co-recipient with [[Vehicle registration plates of Wisconsin|Wisconsin]]. Letters I, O and Q not used in serials;<ref name="allaboutlicenseplatesMB"/> 'C' series reserved for Commercial plates and 'J' series for alternative Bienvenue plates (below).
+|-
+|[[File:Manitoba License Plate 2012.jpg|150px]]
+|late 2012&nbsp;– present
+|rowspan="2"|As above, but with bison graphic changed from blue to black
+|GLX&nbsp;101 to HZZ&nbsp;999; KAA&nbsp;101 to MCX&nbsp;825 {{small|(as of May 12, 2026)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|February 25, 2013<ref>{{cite web |title=Bilingual licence plates coming to Manitoba roads |url=https://www.cbc.ca/news/canada/manitoba/bilingual-licence-plates-coming-to-manitoba-roads-1.1349865 |publisher=[[CBC News]] |date=February 19, 2013 |access-date=July 25, 2018}}</ref>&nbsp;– present
+|As above, plus "Bienvenue" screened in blue centered at bottom
+|JBA&nbsp;101 to JCF&nbsp;708 {{small|(as of May 22, 2026)}}
+|Alternative issue.
+|}
+
+==Specialty plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Manitoba Winnipeg Blue Bombers Blue License Plate.jpg|150px]]
+|[[Winnipeg Blue Bombers]] – Blue
+|June 2011
+|Blue Text, Blue to white gradient and screened Winnipeg Blue Bombers logo
+|"Friendly" and "True Blue"
+|'''BB'''1234
+|BB0001 to BB9999
+|Serials BB0001 through BB0150 were issued only to current Bomber players, Alumni and executives.
+|-
+|[[File:Manitoba Winnipeg Blue Bombers Gold License Plate.jpg|150px]]
+|Winnipeg Blue Bombers – Gold
+|June 2012 
+|?
+|rowspan="2"|"Friendly" and "Blue Bombers"
+|rowspan="2"|'''B'''12345
+|rowspan="2"|B00001 to present
+|
+|-
+|[[File:Manitoba Winnipeg Blue Bombers Grey Cup License Plate.jpg|150px]]
+|Winnipeg Blue Bombers – Grey Cup
+|Circa 2019
+|?
+|
+|-
+|rowspan="2"|[[File:Manitoba Winnipeg Jets License Plate.jpg|150px]]
+|rowspan="2"|[[Winnipeg Jets]]
+|rowspan="2"|December 2011
+|rowspan="2"|Blue serial on white and blue gradient plate with Jets logo screened at left
+|rowspan="2"|"Friendly" and "Fuelled By Passion"
+|'''WJ'''1234
+|WJ0001 to WJ9999
+|rowspan="2"|
+|-
+|'''J'''12345
+|J00001 to present
+|-
+|[[File:Manitoba Firefighter License Plate.jpg|150px]]
+|Firefighter
+|rowspan="2"|September 2012
+|rowspan="2"|Blue serial on white and red gradient plate with Fire Department crest screened at left
+|rowspan="2"|"Friendly" and "Serving Our Community"
+|'''FF'''1234
+|FF0001&nbsp;to FF9999
+|rowspan="2"|Issued to active or retired fire fighters and their immediate family. The number in the serial usually matches the fire fighter's badge number.
+|-
+|[[File:Manitoba Winnipeg Firefighter License Plate.jpg|150px]]
+|Firefighter – Winnipeg
+|'''WF'''1234
+|WF0001&nbsp;to WF9999
+|-
+|[[File:Manitoba Goldeyes License Plate.jpg|150px]]
+|[[Winnipeg Goldeyes]]
+|March 2013
+|Blue serial on white and gold gradient plate with Goldeyes logo screened at left
+|"Friendly" and "Goldeyes"
+|'''G'''12345
+|G00001 to present
+|
+|-
+|[[File:Manitoba Curling License Plate.jpg|150px]]
+|[[Curling]] Manitoba
+|December 2013
+|Black serial on white plate with yellow curling target screened at bottom and curling stone at left
+|"Friendly" and "curlingforlife.com"
+|'''CM'''1234
+|CM0001&nbsp;to present
+|
+|-
+|[[File:Manitoba Brandon Wheat Kings License Plate.jpg|150px]]
+|[[Brandon Wheat Kings]]
+|February 2014
+|Black serial on white and yellow gradient plate with Wheat Kings logo and three wheat stalks screened at left
+|"Friendly" and "Wheat Kings"
+|'''WK'''1234
+|WK0001&nbsp;to present
+|
+|-
+|[[File:Manitoba University of Winnipeg License Plate.jpg|150px]]
+|[[University of Winnipeg]]
+|June 2014
+|Black serial on white and red plate with UWinnipeg campus screened in background and UWinnipeg crest at left
+|"Friendly" and "Discover, Achieve, Belong"
+|'''UW'''1234
+|UW0001&nbsp;to present
+|
+|-
+|
+|Basketball Manitoba
+|June 2017
+|
+|
+|
+|
+|
+|-
+|rowspan="2"|[[File:Manitoba Winnipeg Jets Heritage licence plate.jpg|150px]]
+|rowspan="2"|[[Winnipeg Jets (1972–1996)|Winnipeg Jets Heritage]]
+|rowspan="2"|September 2021
+|rowspan="2"|Blue serial on white plate with 1973 Jets logo screened at left
+|rowspan="2"|"Friendly" and "Honour the Past"
+|'''JH'''1234
+|JH0001&nbsp;to JH9999
+|rowspan="2"|
+|-
+|'''H'''12345
+|H00001 to present
+|-
+|
+|Winnipeg Humane Society
+|April 2014
+|
+|"Friendly" and "Animal Friendly"
+|
+|
+|Replaced in 2019 by the new 125th anniversary design.
+|}
+
+==Non-passenger plates==
+{|class="wikitable"
+|-
+!Image
+!Type
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Collector
+|Embossed black serial on yellow plate; "Friendly Manitoba" and black bison graphic at top; "Collector" at bottom
+|'''CL'''12345
+|CL00001 to CL12299 {{small|(as of August 25, 2024)}}
+|First issued March 2014. Issued to cars and motorcycles that are at least 25 years old and are used only for pleasure.
+|-
+|[[File:Manitoba Commercial License Plate 2002.jpg|150px]]
+|Commercial
+|As current passenger base
+|'''C'''BC&nbsp;123
+|CAA 001 to CRM&nbsp;999 {{small|(as of September 26, 2024)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer
+|As current passenger base
+|'''D'''12345
+|D00001 to D70299 {{small|(as of August 22, 2024)}}
+|
+|-
+|[[File:Manitoba livery licence plate.jpg|150px]]
+|Livery
+|As current passenger base
+|'''X'''BC&nbsp;123
+|XAA 001 to XAF&nbsp;999 {{small|(as of December 20, 2017)}}
+|
+|-
+|[[File:Manitoba motorcycle licence plate.jpg|150px]]
+|rowspan="2"|Motorcycle
+|Same design as current passenger base; "MC" embossed below serial
+|rowspan="2"|1AB23
+|1AA01 to 4EB99 {{small|(as of August 21, 2021)}}
+|
+|-
+|[[File:Manitoba Motorcycle License Plate 2015.jpg|150px]]
+|Same design as current passenger base; "MC" embossed below serial
+|5EB01 to 7GH01 {{small|(as of August 1, 2022)}}
+|New smaller size. Continues on same serial format.
+|-
+|[[File:Manitoba Recovery License Plate 2001.jpg|150px]]
+|Repairer
+|
+|'''R'''12345
+|R00001 to R19260 {{small|(as of July 1, 2022)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Remote Area
+|As current passenger base
+|'''RA''' 1234
+|RA 0001 to ???
+|Used on vehicles in communities that are not connected to the provincial highway system.
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|ORV
+|rowspan="2"|Embossed black serial on yellow plate; "MANITOBA" at top and "ORV" at bottom
+|123A4
+|1A1 to 999Z9
+|rowspan="2"|First issued 1988. 1A234 serial format commenced 2010.
+|-
+|1A234
+|1A001 to 7M878 {{small|(as of May 24, 2022)}}
+|-
+|[[File:Manitoba Apportioned License Plate 2012.jpg|150px]]
+|PSV
+|As current passenger base
+|'''P'''BC&nbsp;123
+|PAA 001 to PEB&nbsp;330 {{small|(as of November 8, 2019)}}
+|
+|-
+|[[File:Manitoba trailer licence plate.jpg|150px]] 
+|rowspan="2"|Trailer
+|rowspan="2"|Same design as current passenger base; "TL" embossed below serial
+|A123B
+|A001A to Z999Z
+|rowspan="2"|123AB serial format commenced 2017.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|123AB
+|001AA to 433GE {{small|(as of May 15, 2022)}}
+|-
+|rowspan="2"|[[File:Manitoba Amateur Radio License Plate 2007.jpg|150px]]
+|rowspan="2"|Amateur Radio
+|rowspan="2"|
+|AB1CD
+|
+|123AB serial format commenced 2017.
+|}
+
+==Vanity plates==
+The province also offers personalized vanity license plates, at a cost of $100. These plates can be affixed to passenger vehicles, non-commercial trucks, farm trucks, motorcycles, mopeds and motorhomes.<ref>{{cite web |title=Personalized licence plates |url=https://www.mpi.mb.ca/Pages/personalized-plates.aspx |website=Manitoba Public Insurance |access-date=7 September 2022}}</ref>
+[[File:1977 AMC Hornet AMX silver AMO 2015 meet 3of6.jpg|thumb|A 1977 [[AMC Hornet]] with a Manitoba vanity plate.]]
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category|License plates of Manitoba}}
+*[https://www.15q.net/mb.html Manitoba licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200322161119/https://www.15q.net/mb.html |date=2020-03-22 }}
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:1911 establishments in Manitoba]]
+[[Category:Vehicle registration plates of Canada|Manitoba]]
+[[Category:Transport in Manitoba]]
+[[Category:Manitoba transport-related lists]]

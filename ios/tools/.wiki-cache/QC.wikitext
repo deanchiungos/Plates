@@ -1,0 +1,1224 @@
+{{short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = Plaque d'immatriculation du Québec - Véhicule de promenade - 2023 - 12x6in.png
+| caption = 
+| slogan_label = Slogan
+| slogan = [[Je me souviens]]
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC 12D (late 2023 - Present)<Br>12B ACD (early 2023)<Br>B12 ACD (2009 - 2023)<Br>234 ABC (1996 - 2009)<Br>ABC 123 (1983 - 1996)
+| current_start_date = {{Start date|1983}}
+| designer = 
+| issuer = [[Société de l'assurance automobile du Québec]]
+| manufacturer = Relief Design Inc., [[Saint-Louis-de-Blandford, Quebec]]<ref name="mfg">{{cite news |last=Raymond |first=Paul-Robert |date=17 September 2018 |title=Ces fameuses plaques d'immatriculation qui pèlent |trans-title=Those famous licence plates that peel |url=https://www.lesoleil.com/affaires/auto/ces-fameuses-plaques-dimmatriculation-qui-pelent-da2f8788cdcbdf4ff4a1d6edefb03c95 |newspaper=[[Le Soleil (Quebec)|Le Soleil]] |language=fr |location=Quebec City, QC |access-date=21 October 2020}}</ref>
+| start_date = {{Start date|1908}}
+}}
+
+The [[Provinces and territories of Canada|Canadian province]] of [[Quebec]] first required its residents to register their [[motor vehicle]]s in 1906. Registrants provided their own [[Vehicle registration plate|licence plate]]s for display until 1908, when the province began to issue plates.<ref>{{cite web |last=Taylor |first=Eric Robert |title=Quebec Archive |url=http://porcelainplates.net/quebec_archive.html |publisher=PorcelainPlates.net |access-date=July 5, 2018}}</ref> Plates are currently issued by the [[Société de l'assurance automobile du Québec]] (Quebec Automobile Insurance Corporation).
+
+From 1963 to 1977 (except 1967), licence plates carried the slogan ''La Belle Province'' ("The Beautiful Province"), a nickname for Quebec. Since 1978, they have carried ''[[Je me souviens]]'' ("I remember"), the official motto of the province.
+
+Since 1979, Quebec legislation has required only rear plates, though there are certain cases where front plates are also required. Annual renewal stickers were used from 1979 to 1992; Quebec is currently one of five provinces where such stickers are not used (the others being Saskatchewan, Manitoba, British Columbia and Ontario). Dates for renewals of plates on passenger vehicles are determined based on the first letter of the registered owner's surname, while for other vehicles they are determined based on the type of vehicle: for example, plates on passenger vehicles whose owners' surnames begin with the letter 'L' are to be renewed in September, as are school bus plates.<ref name="SAAQmonth">{{cite web|url=http://www.saaq.gouv.qc.ca/en/vehicle_registration/pay_fees/month.php |title=Month for Renewal of Vehicle Registration |website=Société de l'assurance automobile du Québec |publisher=Gouvernement du Québec |access-date=18 August 2015 |archive-url=https://web.archive.org/web/20150920025136/http://www.saaq.gouv.qc.ca/en/vehicle_registration/pay_fees/month.php |archive-date=20 September 2015}}</ref> Registrations and fees may be renewed up to three months in advance. Trailer plates ("R" category) are not renewed annually: they are only registered upon initial purchase, or when transferred to another owner.<ref name="SAAQmonth"/> Enforcement is done by a variety of methods, including [[Automatic number-plate recognition|automated number plate recognition]].<ref>{{cite news |last=Frenette |first=Marie-Claude |date=31 August 2011 |title=La police de Mascouche se munit d'un lecteur de plaques |language=fr |trans-title=Mascouche Police equipped with a plate reader |url=http://www.letraitdunion.com/Actualites/2011-08-31/article-2736599/La-police-de-Mascouche-se-munit-dun-lecteur-de-plaques/1 |publisher=Le Trait d'Union |location=[[Terrebonne, Quebec]] |access-date=18 August 2015 }}{{Dead link|date=July 2025 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+Vehicles registered in Quebec can only display approved plates. Decorative designs are permitted at the front of the vehicles, but displaying a plate with a design that can be "confused" with an official plate, or an official plate from any other jurisdiction, is an offence under articles 34 and 56 of the Highway Safety Code and punishable with a fine.<ref name=codesecurout>{{cite web|url=http://legisquebec.gouv.qc.ca/en/ShowDoc/cs/C-24.2 |title=HIGHWAY SAFETY CODE |website=Publications du Québec |publisher=Éditeur officiel du Québec |access-date=18 August 2015 |quote=Art. 34 stipulates: ''No plate or sticker that may be confused with a registration plate or validation sticker issued by the Société or by any other competent administrative authority may be attached to a road vehicle or affixed to a plate, except in the case of a plate or sticker required under another law in force in Québec or of a plate attached in compliance with standards and conditions established under paragraph 19 of section 618.'' Art. 56 sets a fine between C$200 to C$300 for every infraction.}}</ref>
+
+Relief Design Inc., of [[Saint-Louis-de-Blandford, Quebec]], is the sole producer of licence plates on behalf of the [[Société de l'assurance automobile du Québec]] (SAAQ).<ref name="mfg"/><ref>{{cite web |title=Relief Design Inc. |url=https://waldale.com/relief-design-inc/ |language=fr |publisher=Waldale Manufacturing Ltd. |access-date=21 October 2020}}</ref> The company is a sister company of [[Amherst, Nova Scotia]]-based Waldale Manufacturing Ltd.<ref>{{cite web |title=About |url=https://waldale.com/about-us/ |publisher=Waldale Manufacturing Ltd. |access-date=21 October 2020}}</ref>
+
+==Size and specifications==
+Quebec vehicle registration plates come in two sizes
+* '''Standard''': 30 cm × 15 cm (12 in × 6 in)
+* '''Small''' (Motorcycles, Mopeds, and Off-road vehicles): 20 cm x 10 cm (8 in x 4 in)
+
+Quebec vehicle registration plates also come in two colours
+* '''Standard''': Blue on White (Matching the blue of [[Flag of Quebec|The provincial flag]])
+* '''Electric Vehicles''': Green on White
+
+{{multiple image
+ |align=center
+ |perrow=2
+ |image1 = Plaque d'immatriculation du Québec - Plein - 12x6in.png
+ |width1=200
+ |caption1=30 cm × 15 cm<Br>(12 in × 6 in)<Br>Blue on White<Br>Blank Plate
+
+ |image3 = Plaque d'immatriculation du Québec - Plein - Électrique - 12x6in.png
+ |width3=200
+ |caption3=30 cm × 15 cm<Br>(12 in × 6 in)<Br>Green on White (Electrical)<Br>Blank Plate
+
+ |image2 = Plaque d'immatriculation du Québec - Plein - 8x4in.png
+ |width2=140
+ |caption2=20 cm x 10 cm<Br>(8 in x 4 in)<br>Blue on White<Br>Blank Plate
+
+ |image4 = Plaque d'immatriculation du Québec - Plein - Électrique - 8x4in.png
+ |width4=140
+ |caption4=20 cm x 10 cm<Br>(8 in x 4 in)<br>White (Electrical)<Br>Blank Plate
+}}
+
+==Vehicle categories==
+Certain vehicle categories are indicated on plates by the use of prefixes:<ref name=saaqplaques>{{cite web |title=Categories of Licence Plates |url=https://saaq.gouv.qc.ca/en/vehicle-registration/categories-licence-plates/ |work=Société de l'assurance automobile du Québec |publisher=Gouvernement du Québec |access-date=18 October 2020}}</ref>
+
+===Active categories===
+{| class="wikitable"
+|-
+! Active categories !! Prefix
+|-
+| Trucks, truck-trailer, and farm vehicles over 3000&nbsp;kg  || L
+|-
+| Buses and minibuses || A, AE, AP, AU
+|-
+| Restricted use vehicles (including vehicles used in remote areas not connected to the remainder of the road network, farm tractors, snowmobiles, vintage motorcycles and automobiles restricted to roads with speed limits below 70&nbsp;km/h) || C
+|-
+| Removable plates (i.e.: garage and dealers) || X
+|-
+| Removable motorcycle and snowmobile plates || XA (only on small motorcycle plate)
+|-
+| Trailers || R
+|-
+| Vehicles used off public roadways (snowmobiles under 450&nbsp;kg, and vehicles restricted to use in harbours, train stations and airports) || V
+|-
+| Other vehicles (including commercial, farm, driving school, occasional school use, road-going machines, snow removal vehicles, hearses, ambulances, tow trucks) || F
+|-
+| Consular and diplomatic staff vehicles (e.g. CC 123, CD 123) || CC, CD
+|-
+| Licensed amateur radio operators  (e.g. VE2 AA, VE2 AAA, VA2 AA, VA2 AAA) || VE2, VA2
+|-
+|}
+
+====Taxi plates phase-out====
+The provincial government ceased the issuance of T plates on October 10, 2020, and phased out T plates on October 13, 2020, and March 31, 2021, following the enactment of a law to modernize the taxi industry.<ref name="auto">{{cite web |title=Modernisation de l'industrie du taxi |url=https://www.transports.gouv.qc.ca/fr/taxi/Pages/default.aspx |work=Transports Québec |language=fr |publisher=Gouvernement du Québec |access-date=18 October 2020}}</ref> All T plates have been converted to either regular or commercial (F) plates.<ref name="auto1">{{cite web |title=Transport rémunéré de personnes par automobile: obligations et échéances |url=https://www.transports.gouv.qc.ca/fr/entreprises-partenaires/trpa/Documents/trpa/TRPA-Napperon-Obligations-echeance.pdf |work=Transports Québec |language=fr |publisher=Gouvernement du Québec |access-date=18 October 2020}}</ref>
+
+===Retired categories===
+{|class="wikitable"
+!Description !! Expired prefix !! Replaced by
+|-
+| Farm trailers registered before 1 January 1989 || U || R
+|-
+| Government of Québec || GQ || F
+|-
+| [[Sureté du Québec]] provincial police force || GP || F
+|-
+| Government of Canada || G || F
+|-
+| Hearse || CO, H || F
+|-
+| Ambulance || AM, H || F
+|-
+| Rentals, short-term (less than one year).<ref name=assnathans18dec84>{{cite journal|title=Journal des débats (Hansard) of the Committee on Planning and Infrastructures |journal=Journal des débats |date=18 December 1984 |volume=28 |issue=15 |url=http://www.assnat.qc.ca/en/travaux-parlementaires/commissions/cae-32-5/journal-debats/CAE-841218.html |access-date=31 August 2015 |language=fr}}</ref> || ZZ || F
+|-
+| Commercial rentals/leases longer than one year.<ref name=assnathans18dec84/> || Z, FZ || F
+|}
+
+==Passenger baseplates==
+===1908 to 1978===
+In 1956, Canada, the United States and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Quebec licence plate that complied with these standards.
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{nowrap|1908–10}}
+|White serial on black rubber plate; vertical "PQ" at right
+|''none''
+|1234
+|1001 to approximately 3500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1911
+|White serial on blue porcelain plate; vertical "PQ" at right
+|''none''
+|1234
+|3501 to approximately 5400
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1912
+|Dark blue serial on white [[fiberboard]] plate; vertical "PQ" at right
+|''none''
+|1234
+|1 to approximately 3200
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1913
+|White serial on dark green fiberboard plate; "P.Q." centred at bottom
+|''none''
+|1234
+|4001 to approximately 9500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1914
+|Red serial on white fiberboard plate; vertical "PQ" at right
+|''none''
+|12345
+|9301 to approximately 16800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1915
+|Black serial on light green fiberboard plate; "QUEBEC" centred at bottom
+|''none''
+|12345
+|16901 to approximately 26500
+|First use of the full province name.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Black serial on gray fiberboard plate; "QUEBEC" centred at bottom
+|''none''
+|12345
+|26701 to approximately 42900
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1917
+|Red serial on cream fiberboard plate; "QUEBEC" centred at bottom
+|''none''
+|12345
+|43501 to approximately 66800
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1918
+|Black serial on cream fiberboard plate; "QUEBEC" centred within black bar at bottom
+|''none''
+|12345
+|64001 to approximately 67100, plus older serials
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1919
+|Red serial on light yellow fiberboard plate; "QUEBEC" centred at bottom
+|''none''
+|12345
+|1 to approximately 34000
+|
+|-
+|[[File:1920 Quebec License Plate 42320.jpg|150px]]
+|1920
+|Green serial on white fiberboard plate; "QUEBEC" centred within green bar at top
+|''none''
+|12345
+|1 to approximately 46500
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1921
+|White serial on black fiberboard plate; "QUEBEC" centred at bottom
+|''none''
+|12345<br>123-456
+|50001 to approximately 106-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1922
+|Dark blue serial on white fiberboard plate; "QUEBEC" centred within dark blue bar at bottom
+|''none''
+|12345
+|1 to approximately 59000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1923
+|Yellow serial on black fiberboard plate; [[Coat of arms of Quebec|provincial coat of arms]] used as separator; "QUEBEC 1923" centred at bottom
+|''none''
+|12-345
+|10-001 to approximately 70-000
+|First dated plate.
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1924
+|rowspan="2"|Green serial on white fiberboard plate; "QUE - 24" centred at bottom
+|rowspan="2"|''none''
+|12345
+|10001 to approximately 82000
+|rowspan="2"|All-numeric serials issued on vehicles weighing less than 3,000&nbsp;lb, and 'H' prefix serials on vehicles 3,000&nbsp;lb or greater. This practice continued through 1936.<ref name="allaboutlicenseplatesQC">{{cite web |last=Tanner |first=Eric N. |title=Québec Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=Qu%C3%A9bec&code=qc |publisher=allaboutlicenseplates.com |access-date=21 November 2020}}</ref>
+|-
+|'''H'''12345
+|H1001 to approximately H10500
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1925
+|rowspan="2"|Embossed white serial on black plate; "QUE–25" at bottom
+|rowspan="2"|''none''
+|12345
+|10001 to approximately 78000
+|rowspan="2"|First embossed plate.
+|-
+|'''H'''12345
+|H-1 to approximately H11000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1926
+|rowspan="2"|Embossed white serial on maroon plate; "QUE–26" at bottom
+|rowspan="2"|''none''
+|12345
+|10001 to approximately 81000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H16000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1927
+|rowspan="2"|Embossed black serial on yellow plate; "QUE–27" at bottom
+|rowspan="2"|''none''
+|12345
+|10001 to approximately 95000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H20000
+|-
+|rowspan="2"|[[File:1928 Quebec License Plate 77917.jpg.jpg|150px]]
+|rowspan="2"|1928
+|rowspan="2"|Embossed black serial on light green plate; "QUE–28" at bottom
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 108000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H19000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1929
+|rowspan="2"|Embossed white serial on black plate; "QUE–29" at bottom
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 116000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H27000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1930
+|rowspan="2"|Embossed black serial on yellow plate; "QUE–30" centred at top
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 124000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H33000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1931
+|rowspan="2"|Embossed white serial on maroon plate; "31–QUE" centred at bottom
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 129000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H32000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1932
+|rowspan="2"|Embossed black serial on light green plate; "32–QUE" centred at top
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 127000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H32000
+|-
+|rowspan="2"|[[File:Quebec 1933.jpg|150x150px]]
+|rowspan="2"|1933
+|rowspan="2"|Embossed white serial on dark blue plate with border line; vertical "QUE" and "33" at left and right respectively
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 113000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H30000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1934
+|rowspan="2"|Embossed black serial on gray plate with border line; vertical "34" and "QUE" at left and right respectively
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 110000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H31000
+|-
+|rowspan="2"|[[File:Quebec 1935.jpg|150x150px]]
+|rowspan="2"|1935
+|rowspan="2"|Embossed white serial on dark green plate with border line; vertical "QUE" and "35" left and right respectively
+|rowspan="2"|''none''
+|123456
+|10001 to approximately 108000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H35000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1936
+|rowspan="2"|Embossed black serial on yellow plate with border line; vertical "QUE" and "36" at left
+|rowspan="2"|''none''
+|12345
+|1 to approximately 99000
+|rowspan="2"|
+|-
+|'''H'''12345
+|H-1 to approximately H38000
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1937
+|Embossed silver serial on green plate with border line; "QUEBEC 37" at bottom
+|''none''
+|123-456
+|1 to approximately 145-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1938
+|Embossed silver serial on black plate with border line; "QUEBEC 38" at top
+|''none''
+|123-456
+|1 to approximately 167-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1939
+|Embossed silver serial on maroon plate with border line; "QUEBEC 39" at bottom
+|''none''
+|123-456
+|1 to approximately 172-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1940
+|Embossed white serial on black plate with border line; "QUEBEC 40" at top
+|''none''
+|123-456
+|1 to approximately 178-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1941
+|Embossed white serial on green plate with border line; "QUEBEC 41" at bottom
+|''none''
+|123-456
+|1 to approximately 179-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1942
+|Embossed black serial on white plate with border line; "QUEBEC 42" at top
+|''none''
+|123-456
+|1 to approximately 183-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1943
+|Embossed yellow serial on black plate with border line; "QUEBEC -43" at bottom
+|''none''
+|123-456
+|1 to approximately 164-000
+|
+|-
+|[[File:1944 Québec license plate 77-840 masonite.jpg|150px]]
+|1944
+|Black serial on gray [[Masonite]] plate; "QUEBEC-44" centred at bottom
+|''none''
+|123-456
+|1 to approximately 175-000
+|Manufactured on Masonite due to metal conservation for [[World War II]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1945
+|Embossed white serial on blue plate with border line; "QUEBEC–45" centred at top
+|''none''
+|123-456
+|1 to approximately 174-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1946
+|Embossed orange serial on black plate with border line; "QUEBEC–46" centred at bottom
+|''none''
+|123-456
+|1 to approximately 177-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1947
+|Embossed white serial on black plate with border line; "QUEBEC–47" centred at top
+|''none''
+|123-456
+|1 to approximately 188-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1948
+|Embossed green serial on white plate with border line; "QUEBEC–48" centred at top
+|''none''
+|123-456
+|1 to approximately 232-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1949
+|Embossed white serial on green plate with border line; "QUEBEC-49" at bottom
+|''none''
+|123-456
+|1 to approximately 271-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1950
+|Embossed white serial with [[Fleur-de-lis|fleur-de-lys]] separator on azure plate with border line; "QUÉBEC-50" at top
+|''none''
+|123-456
+|1 to approximately 294-000
+|First base to feature the fleur-de-lys.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1951
+|Embossed black serial with fleur-de-lys separator on unpainted aluminum plate with border line; "QUÉBEC-51" at top
+|''none''
+|123-456
+|1 to approximately 339-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1952
+|Embossed orange serial with fleur-de-lys separator on azure plate with border line; "QUÉBEC-52" at top
+|''none''
+|123-456
+|1 to approximately 386-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1953
+|Embossed black serial with fleur-de-lys separator on white plate with border line; "QUÉBEC-53" at bottom
+|''none''
+|123-456
+|2-001 to approximately 444-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1954
+|Embossed black serial with fleur-de-lys separator on yellow plate with border line; "QUÉBEC-54" at top
+|''none''
+|123-456
+|2-001 to approximately 497-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1955
+|Embossed yellow serial with fleur-de-lys separator on black plate with border line; "QUÉBEC-55" at bottom
+|''none''
+|123-456
+|2-001 to approximately 537-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1956
+|Embossed green serial with fleur-de-lys separator on white plate with border line; "QUÉBEC-56" at top
+|''none''
+|123-456
+|2-001 to approximately 624-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1957
+|Embossed white serial with fleur-de-lys separator on green plate with border line; "QUÉBEC-57" at bottom
+|''none''
+|123-456
+|2-001 to approximately 696-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1958
+|Embossed black serial with fleur-de-lys separator on unpainted aluminum plate with border line; "QUÉBEC-58" at top
+|''none''
+|123-456
+|2-001 to approximately 749-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1959
+|Embossed black serial with fleur-de-lys separator on yellow plate with border line; "QUÉBEC-59" at bottom
+|''none''
+|123-456
+|2-001 to approximately 807-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1960
+|Embossed yellow serial with fleur-de-lys separator on black plate with border line; "QUÉBEC-60" at top
+|''none''
+|123-456
+|2-001 to approximately 840-000
+|
+|-
+|[[File:1961 Quebec License Plate 214-670.jpg|150px]]
+|1961
+|Embossed black serial with fleur-de-lys separator on white plate with border line; "QUÉBEC-61" at bottom
+|''none''
+|123-456
+|2-001 to approximately 915-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1962
+|Embossed white serial with fleur-de-lys separator on black plate with border line; "QUÉBEC-62" at top
+|''none''
+|123-456
+|2-001 to approximately 998-000
+|
+|-
+|rowspan="2"|[[File:1963 Québec license plate 351⚜684.jpg|150px|1963 License plate from Quebec]]
+|rowspan="2"|1963
+|rowspan="2"|Embossed dark green serial with fleur-de-lys separator on white plate with border line; "QUÉBEC-63" at top
+|rowspan="2"|"LA BELLE PROVINCE" at bottom
+|123-456
+|2-001 to<br>999-999
+|rowspan="2"|First use of the "''La Belle Province''" slogan.
+|-
+|12-345A
+|10-001A to approximately 92-000A
+|-
+|rowspan="2"|[[File:1964 Quebec License Plate.jpg|150px]]
+|rowspan="2"|1964
+|rowspan="2"|Embossed dark green serial on yellow plate with border line; "QUÉBEC" centred above serial; fleur-de-lys and "64" at left, separated from serial by dividing line
+|rowspan="2"|"LA BELLE PROVINCE" below serial
+|123-456
+|2-001 to<br>999-999
+|rowspan="2"|
+|-
+|1A-2345
+|1A-0001 to approximately 9B-4000
+|-
+|[[File:1965 Québec license plate 7C-0392.png|150px]]
+|1965
+|Embossed white serial on dark blue plate with border line; "QUÉBEC" centred above serial; fleur-de-lys and "65" at left, separated from serial by dividing line
+|"LA BELLE PROVINCE" below serial
+|1A-2345
+|1A-0001 to approximately 4V-2000
+|Letters F, I, J, L, O, Q, T and U not used in serials.<ref name="allaboutlicenseplatesQC"/>
+|-
+|[[File:1966 Québec license plate 6D-0474.png|150px]]
+|1966
+|Embossed white serial on red plate with border line; "QUÉBEC" centred above serial; fleur-de-lys and "66" at left, separated from serial by dividing line
+|"LA BELLE PROVINCE" below serial
+|1A-2345
+|1A-0001 to approximately 3R-4500
+|Letters F, J and L added to serials.<ref name="allaboutlicenseplatesQC"/>
+|-
+|[[File:1967 Québec license plate 7H-2340 Montréal Expo 67 front.png |150px]]<br>[[File:1967 Québec license plate 7H-2340 confederation rear.png |150px]]
+|1967
+|Embossed red designs and lettering on white plate with embossed border line; Front and rear plates of different design.<br> Front plate: Centred logo of the Montreal Expo 67, with fleur-de-lys on the left and along the bottom from left to right "1967", the vehicle's registration number, and "QUÉ."<br>Rear plate:  "QUÉ." and maple leaf on the left, vehicle's registration on the right. Along the bottom from left to right "1867 CONFÉDÉRATION 1967".
+|Front plate: "MONTRÉAL EXPO67"<br>Rear plate: "CONFÉDÉRATION"
+|1A-2345
+|1A-0001 to approximately 8R-8500
+|Commemorated both the [[Expo 67|Montreal 1967 World Exposition]] and the [[Canadian Centennial|centenary of Canadian confederation]]. 
+|-
+|[[File:1968 Québec license plate 6C-0159.png|150px]]
+|1968
+|Embossed white serial on dark blue plate with border line; "QUÉBEC" centred above serial; fleur-de-lys and "68" at left, separated from serial by dividing line
+|"LA BELLE PROVINCE" below serial
+|1A-2345
+|1A-0001 to approximately 9S-0500
+|
+|-
+|[[File:1969 Québec license plate 2N-5256.png|150px]]
+|1969
+|Embossed black serial on white plate with border line; "QUÉBEC" centred above serial; fleur-de-lys and "69" at left, separated from serial by dividing line
+|"LA BELLE PROVINCE" below serial
+|1A-2345
+|1A-0001 to approximately 1V-2500
+|Letter T added to serials.
+|-
+|[[File:1970 Québec license plate 2B-0510.png|150px]]
+|1970
+|Embossed white serial on dark green plate with border line; "QUÉBEC" centred above serial; fleur-de-lys and "70" at left, separated from serial by dividing line
+|"LA BELLE PROVINCE" below serial
+|1A-2345
+|1A-0001 to<br>9Z-9999
+|Letters W and Y not used in serials.<ref name="allaboutlicenseplatesQC"/>
+|-
+|rowspan="2"|[[File:1971 Québec license plate 6A-4879.png|150px]]
+|rowspan="2"|1971
+|rowspan="2"|Embossed black serial on metallic pea green plate with border line; "QUÉBEC" centred above serial; fleur-de-lys and "71" at left, separated from serial by dividing line
+|rowspan="2"|"LA BELLE PROVINCE" below serial
+|123-456
+|100-001 to<br>999-999
+|rowspan="2"|
+|-
+|1A-2345
+|1A-0001 to approximately 8J-2500
+|-
+|rowspan="2"|[[File:1972 Québec license plate 8G-803.jpg|150px]]
+|rowspan="2"|1972
+|rowspan="2"|Embossed white serial on red plate with border line; fleur-de-lys, "QUÉBEC" and "72" at top
+|rowspan="2"|"LA BELLE PROVINCE" centred at bottom
+|123-456
+|100-001 to<br>999-999
+|rowspan="2"|
+|-
+|1A-2345
+|1A-1 to approximately 9K-5000
+|-
+|rowspan="2"|[[File:1973 Quebec license plate 776-342.jpg|150px]]
+|rowspan="2"|1973
+|rowspan="2"|Embossed red serial with fleur-de-lys separator on white plate with border line; "19 QUÉBEC 73" at top
+|rowspan="2"|"LA BELLE PROVINCE" centred at bottom
+|123-456
+|10-01 to<br>999-999
+|rowspan="2"|
+|-
+|1A-2345
+|1A-0001 to approximately 8M-1500
+|-
+|[[File:1974 Québec license plate 159A523.png|150px]]
+|1974
+|Embossed black serial on yellow plate with border line; fleur-de-lys, "QUÉBEC" and "74" at top
+|"LA BELLE PROVINCE" centred at bottom
+|123A456
+|100A001 to 999A999; 100E001 to 999E999; 100H001 to approximately 450H000
+|
+|-
+|[[File:1975 Québec license plate 965N351.png|150px]]
+|1975
+|Embossed green serial on white plate with border line; "75", "QUÉBEC" and fleur-de-lys at top
+|"LA BELLE PROVINCE" centred at bottom
+|123A456
+|A, K, N, S and B series
+|
+|-
+|[[File:1976 Québec license plate 284H887 Olympics.png|150px]]
+|1976
+|Embossed red serial on cream plate with border line; fleur-de-lys, "QUÉBEC" and "76" at top
+|"LA BELLE PROVINCE" at bottom, along with the logo of the [[1976 Summer Olympics]]
+|123A456
+|H, L, M and P series
+|
+|-
+|[[File:1977 Québec license plate 820T728.png|150px]]
+|1977
+|Embossed dark blue serial on light blue plate ("Bleu Québec") with border line; fleur-de-lys and "Québec" at top left; "77" at top right
+|"La belle province" centred at bottom
+|123A456
+|R, S, T and V series
+|
+|-
+|[[File:1978 Québec license plate 212A838.png|150px]]
+|1978
+|Embossed brown serial on beige plate with border line; "78" at top left; fleur-de-lys and "Québec" at top right
+|"[[Je me souviens]]" centred at bottom
+|123A456
+|A, B, C, E and F series
+|Last single-year plate, and first use of the provincial motto.
+|}
+
+===1979 to present===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1979 Québec license plate 421L214.jpg|150px]]
+|{{nowrap|1979–83}}
+|Embossed blue serial on reflective white plate with border line; "79" at top left; fleur-de-lys and "Québec" at top right
+| rowspan="6" |"Je me souviens" centred at bottom
+|123A456
+|H, P, L and M series;<br>100S000 to approximately 540S000
+|Front plates no longer issued.
+|-
+|[[File:A Quebec license plate from the 1980s.jpg|150x150px]]
+|1983–96
+| rowspan="5" |As above, but with wider serial [[Die (manufacturing)|die]]s, a darker shade of blue, and fleur-de-lys and "Québec" centred at top
+|ABC 123
+|AAA 001 to ZZZ&nbsp;999
+|Validated with stickers until 1992. Letters I and O not used in this serial format, and U discontinued after the DMU series (1986).<ref name="allaboutlicenseplatesQC"/> 'M' series reserved for motorcycles. Order of issuance was AAA to EZZ, JAA to KZZ, NAA to NZZ, QAA to RZZ, HAA to HBW, GAA to GZZ, HCA to HZZ, TAA to TZZ, WAA to ZZZ.
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule de promenade - 1997- 12x6in.png|150px]]
+|1996&nbsp;– September 2009
+|123 ABC
+|001 AAA to 999&nbsp;ZZZ
+|Letters I, O and U not used in serials; this practice continues today.<ref name="allaboutlicenseplatesQC"/> Series PAA through PCZ reserved for Veteran plates (below).
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule de promenade - 2008 - 12x6in.png|150px]]
+|September 2009&nbsp;– December 2022
+|B12&nbsp;CDE
+|B01 AAA to Z99&nbsp;ZZZ
+|A, C, F, L, R, T and V not used as first letters in this serial format.<ref name="allaboutlicenseplatesQC"/>
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule de promenade - 2023 - 12x6in.png|150px]]
+|December 2022&nbsp;– {{Circa}} September 15, 2023 <ref>{{Cite web |last=Raymond |first=Paul-Robert |date=2021-10-28 |title=Voici la prochaine séquence alphanumérique des plaques d'immatriculation du Québec |url=https://www.lesoleil.com/2021/10/31/voici-la-prochaine-sequence-alphanumerique-des-plaques-dimmatriculation-du-quebec-5c46b0f70fabeee64f1f0ab791878453/ |archive-url=https://web.archive.org/web/20231122234725/https://www.lesoleil.com/2021/10/31/voici-la-prochaine-sequence-alphanumerique-des-plaques-dimmatriculation-du-quebec-5c46b0f70fabeee64f1f0ab791878453/ |archive-date=2023-11-22 |access-date=2023-11-21 |website=Le Soleil |language=fr}}</ref>
+|12A BCD
+|01A AAA to 99R AHH (as of September 10, 2023)
+|B, D, Q and S not used as first letters in this serial format. Discontinued due to the possibility of too many inappropriate combinations of letters.<ref name=":1" />
+|-
+|[[File:Plaque d'immatriculation du Québec - Plein - 12x6in.png|150px]]
+|{{Circa}} September 15, 2023&nbsp;– Present <ref name=":1">{{Cite web |last=Raymond |first=Paul-Robert |date=2023-09-25 |title=Voici pourquoi la SAAQ vient de changer (de nouveau) sa séquence alphanumérique de plaques |url=https://www.lesoleil.com/consommation/auto/2023/09/25/voici-pourquoi-la-saaq-vient-de-changer-de-nouveau-sa-sequence-alphanumerique-de-plaques-AOKCGD2SCRHSPGIEIDLINNTRXM/ |access-date=2023-10-12 |website=Le Soleil |language=fr}}</ref><ref name=":0">{{Cite web |last=Raymond |first=Paul-Robert |date=2023-09-15 |title=La SAAQ lance une nouvelle séquence de numéros de plaques |url=https://www.lesoleil.com/consommation/auto/2023/09/15/la-saaq-lance-une-nouvelle-sequence-de-numeros-de-plaques-D3MD5NLYMFFMZKPX7KC5BNNTVU/ |archive-url= |access-date=2023-10-12 |website=Le Soleil |language=fr}}</ref>
+|ABC 12D
+|AAA 01A to BDA 99Z (as of June 11, 2025)
+|B, D, Q and S not used as first letters in this serial format.
+|}
+
+===Optional plates===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Description
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:2006 Québec license plate 574 PAB veteran.png|150px]]
+|rowspan="2"|Veteran
+|January 1, 2006
+|As current passenger base, but with screened [[poppy]] graphic in the centre
+|rowspan="2"|Je me souviens
+|rowspan="2"|123&nbsp;'''P'''BC
+|001 PAA to approximately 999&nbsp;PAV
+|rowspan="2"|Issued to eligible veterans, subject to vetting standards set by the [[Royal Canadian Legion]]. For use on vehicles less than 3,000&nbsp;kg.<ref>{{cite web |title=Veteran's plates for cars |url=http://www.qc.legion.ca/veteransplate-en.html |publisher=Royal Canadian Legion Quebec Command |archive-url=https://web.archive.org/web/20140814014725/http://www.qc.legion.ca/veteransplate-en.html |archive-date=14 August 2014 |access-date=14 September 2015}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2019
+|As current passenger base, but with graphics of a male and female soldier and a poppy field at right, a single poppy at bottom left, and "VÉTÉRANS" in red at top left
+|001 PAW to 515&nbsp;PBQ {{small|(as of December 20, 2020)}}
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule de promenade - Électrique - 12x6in.png|150px]]
+|Electric
+|2011
+|green on reflective white with electric vehicle pictogram on lower left corner <ref name=saawelect>{{cite web|title=Electric Vehicles|url=http://www.saaq.gouv.qc.ca/en/vehicle_registration/categories/electric_vehicles.php|website=Société de l'assurance automobile du Québec|publisher=Gouvernement du Québec|access-date=31 August 2015}}</ref>
+|Je me souviens
+|E00 VEA (passengers), A00000 (buses), FVE0000 (commercial <3000&nbsp;kg)
+|E01 VEA to present;<br /> A00001 to present;<br /> FVE0001 to present.
+|Hybrid or all-electric vehicles only
+|}
+
+==Non-passenger plates==
+Autobus plates have been simplified in the 1980s, AE (school bus),  AP & AU are all considered A plates since.
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Plaque d'immatriculation du Québec - Autobus 1 - 12x6in.png|150px]]
+|Bus
+|
+|As current passenger plates
+|'''A''' 12345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Autobus - Électrique - 12x6in.png|150px]]
+|Bus - Electric
+|2011–present
+|As current passenger plates
+|'''A 9'''2345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Plein - 12x6in.png|150px]]
+|Police car {{Dubious|date=October 2023}}
+|
+|As current passenger plates
+|'''FML'''1234
+|
+|
+
+|-
+|[[File:Plaque d'immatriculation du Québec - Plein - 12x6in.png|150px]]
+|Sureté du Québec {{Dubious|date=October 2023}}
+|
+|As current passenger plates<ref>{{Cite web | url=https://www.enbeauce.com/upload/www.enbeauce.com/evenements/2023/6/513318/appel-a-la-prudence-la-surete-du-quebec-controle-routier-quebec-133320050350767980.jpg | format=JPG | title=Picture of a police car}}</ref>
+|'''FLV'''1234
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Autobus du Police - 12x6in.png|150px]]
+|Police bus
+|
+|As current passenger plates
+|'''AP'''12345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Autobus d'urgence - 12x6in.png|150px]]
+|Bus used as Fire or Emergency Vehicle
+|
+|As current passenger plates
+|'''AU'''12345
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="4"|Commercial
+|1979–83
+|As 1979–83 passenger plates
+|'''F'''123-456
+|F100-001 to approximately F585-000
+|rowspan="4"|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule commercial - 1983 - 12x6in.png|150px]]
+|1983–86
+|rowspan="3"|As current passenger plates
+|'''F'''123456
+|F585001 to F999999
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule commercial - 1986 - 12x6in.png|150px]]
+|1986–2001
+|'''F'''B12345
+|FA 1001 to FY99999; FF10001 to FF99999
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule commercial - 2001 - 12x6in.png|150px]]
+|2001–present
+|'''F'''BC1234
+|FAA1001 to FTD1534 {{small|(as of July 30, 2023)}}
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule commercial - Électrique - 12x6in.png|150px]]
+|Commercial – Electric
+|2011–present
+|As current passenger plates
+|'''F'''123456
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule commercial légér - Électrique - 12x6in.png|150px]]
+|Commercial (Lighter than 3,000 kg) – Electric
+|2011–present
+|As current passenger plates
+|'''FV'''E1234
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Corps consulaire - 12x6in.png|150px]]
+|Consular Corps or Foreign delegation
+|
+|As current passenger plates
+|'''CC''' 1234
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Corps consulaire - Électrique - 12x6in.png|150px]]
+|Consular Corps or Foreign delegation - Electric
+|2011–Present
+|As current passenger plates
+|'''CC''' 12'''VE'''
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Corps diplomatique - 12x6in.png|150px]]
+|Diplomatic Corps or [[International Civil Aviation Organization|ICAO]]
+|
+|As current passenger plates
+|'''CD''' 1234
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Corps diplomatique - Électrique - 12x6in.png|150px]]
+|Diplomatic Corps or [[International Civil Aviation Organization|ICAO]] - Electric
+|2011–Present
+|As current passenger plates
+|'''CD''' 12'''VE'''
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule de radioamateur 1 - 12x6in.png|150px]]<Br>[[File:Plaque d'immatriculation du Québec - Véhicule de radioamateur 3 - 12x6in.png|150px]]
+|rowspan="2"|Licensed Amateur Radio Operator's Vehicle
+|
+|rowspan="2"|As current passenger plates
+|'''VA'''2 AB<Br>'''VE'''2 AB
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule de radioamateur 2 - 12x6in.png|150px]]<Br>[[File:Plaque d'immatriculation du Québec - Véhicule de radioamateur 4 - 12x6in.png|150px]]
+|
+|'''VA'''2 ABC<Br>'''VE'''2 ABC
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|120px]]
+|rowspan="2"|Moped (until 1989)
+|1979–85
+|Similar to 1979–83 passenger plates, but without slogan
+|123456
+|1001 to approximately 155000
+|rowspan="2"|Still currently revalidated.
+|-
+|[[File:Plaque d'immatriculation du Québec - Motorcyclette - 1989 - 8x4in.png|120px]]
+|1985–89
+|Similar to current passenger plates
+|123 456
+|155 001 to approximately 223&nbsp;000
+|-
+|rowspan="2"|[[File:Blank License Plate Shape.svg|120px]]
+|rowspan="3"|Motorcycle (until 1989)
+|rowspan="2"|1979–84
+|rowspan="2"|Similar to 1979–83 passenger plates, but without slogan
+|'''M'''-12345
+|M-00001 to M-99999
+|rowspan="3"|Still currently revalidated.
+|-
+|'''M'''-B1234
+|M-A0001 to M-Z9999
+|-
+|[[File:Blank License Plate Shape.svg|120px]]
+|1984–89
+|Similar to current passenger plates
+|'''M'''BC 123
+|MAA 001 to approximately MNZ&nbsp;999
+|-
+|[[File:Plaque d'immatriculation du Québec - Motorcyclette - 1989 - 8x4in.png|120px]]
+|rowspan="3"|Motorcycle/Moped (from 1989)
+|1989–92
+|rowspan="3"|Similar to current passenger plates
+|123 456
+|223 001 to approximately 307&nbsp;000
+|rowspan="3"|
+|-
+|[[File:Plaque d'immatriculation du Québec - Motorcyclette - 1992 - 8x4in.png|120px]]
+|1992–2008
+|123456
+|307001 to 999999
+|-
+|[[File:Plaque d'immatriculation du Québec - Motorcyclette - 2008 - 8x4in.png|120px]]
+|2008–present
+|12345A
+|10001A to 98555K {{small|(as of November 1, 2020)}}
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule hors route - 1ère version - 8x4in.png|120px]]
+|rowspan="2"|Off-Road Vehicles
+|
+|rowspan="2"|Similar to current passenger plates
+|'''V'''A12345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule hors route - 2ème version - 8x4in.png|120px]]
+|
+|'''V'''12345A
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule hors route - Électrique - 8x4in.png|120px]]
+|Off-Road Vehicles - Electric
+|2011–Present
+|Similar to current passenger plates
+|'''V'''123'''VE'''
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Plaque Amovible 2 - 12x6in.png|150px]]
+|rowspan="2"|Removable (Dealer)
+|
+|rowspan="2"|As current passenger plates
+|'''X''' 12345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Plaque Amovible 1 - 12x6in.png|150px]]
+|
+|'''X'''123456
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Plaque Amovible 3 - 12x6in.png|120px]]
+|Removable (Dealer)<Br><small>''(Motorcycles, Mopeds, and Off-road vehicles)''</small>
+|
+|Similar to current passenger plates
+|'''X'''A12345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule à circulation restreinte - 12x6in.png|150px]]
+|Restricted-area use Vehicle
+|
+|As current passenger plates
+|'''C'''123456
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Véhicule à circulation restreinte - Électrique - 12x6in.png|150px]]
+|Restricted-area use Vehicle - Electric
+|
+|As current passenger plates
+|'''C'''1234'''VE'''
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Tracteur - 8x4in.png|120px]]
+|Tractor
+|
+|Similar to current passenger plates
+|'''C'''012345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Remorque - 12x6in.png|150px]]
+|Trailer
+|2007–present
+|As current passenger plates
+|'''R'''B1234C
+|RA0001A to RP9670M {{small|(as of July 30, 2023)}}
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Camion - 12x6in.png|150px]]
+|Truck
+|
+|As current passenger plates
+|'''L'''123456
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Camion - Électrique - 12x6in.png|150px]]
+|Truck - Electric
+|2011–Present
+|As current passenger plates
+|'''L'''123'''VE'''
+|
+|
+|}
+===Taxis===
+The provincial government ceased the issuance of T plates on October 10, 2020, and phased out T plates on October 13, 2020, and March 31, 2021, following the enactment of a law to modernize the taxi industry.<ref name="auto"/> All T plates have been converted to either regular or commercial (F) plates.<ref name="auto1"/>
+{|class="wikitable"
+|-
+!Image
+!Type
+!Dates issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Plaque d'immatriculation du Québec - Taxi 2 - 12x6in.png|150px]]
+|City Taxi
+|–2021/03
+|As current passenger plates
+|'''T12'''3456
+|
+|The first two digits indicate the area where the taxi operates:
+* '''01''': [[Boucherville]]
+* '''02''': [[Longueuil]]{{Efn|Also includes Brossard and Saint-Lambert.|name=TaxiZone02|group=note}}
+* '''03''': [[Candiac, Quebec|Candiac]]/[[La Prairie, Quebec|La Prairie]]
+* '''04''': [[Cowansville]]
+* '''05''': [[Montreal|Montréal]] (Eastern){{Efn|Boroughs of Rivière-des-Prairies/Pointe-aux-Trembles, Saint-Léonard, Anjou & Montréal-Nord, and the town of Montréal-Est.|name=TaxiZone05|group=note}}
+* '''06''': [[Joliette]]{{Efn|Also includes Saint-Paul, Crabtree, Saint-Pierre, Notre-Dame des-Prairies, Saint-Charles-Borromée and Notre-Dame-de-Lourdes.|name=TaxiZone06|group=note}}
+* '''07''': [[Lachute]]{{Efn|Also includes Brownsburg-Chatham.|name=TaxiZone07|group=note}}
+* '''08''': [[Laval, Quebec|Laval]]
+* '''09''': [[Matane]]{{Efn|Part of the town including the former municipalities of Matane, Petit-Matane & Saint-Jérôme-de-Matane, as of September 25th 2001.|name=TaxiZone09|group=note}}
+* '''10''': [[Mont-Joli]]{{Efn|Also includes Sainte-Flavie.|name=TaxiZone10|group=note}}
+* '''11''': [[Montreal]] (Central/Downtown){{Efn|Boroughs of Outremont, Saint-Laurent, Verdun, LaSalle, Ahuntsic/Cartierville, Côte-des-Neiges/Notre-Dame-de-Grâce, Mercier/Hochelaga/Maisonneuve, Le Plateau Mont-Royal, Rosemont/La Petite-Patrie, le Sud-Ouest, Ville-Marie & Villeray/Saint-Michel/Parc-Extension, and the Towns of Mont-Royal, Westmount, Côte-Saint-Luc, Hampstead & Montréal-Ouest.|name=TaxiZone11|group=note}}
+* '''12''': [[West Island|Montreal (Western)]]{{Efn|Boroughs of L'Île-Bizard/Sainte-Geneviève & Pierrefonds/Roxboro, and the Towns of Dorval, Dollard-des-Ormeaux, Pointe-Claire, Kirkland, Beaconsfield, Senneville, Sainte-Anne-de-Bellevue & Baie-d'Urfé.|name=TaxiZone12|group=note}}
+* '''13''': [[Rivière-du-Loup]]
+* '''14''': [[Saint-Eustache, Quebec|Saint-Eustache]]{{Efn|Also includes Deux-Montagnes, Sainte-Marthe-sur-le-Lac, Pointe-Calumet & Saint-Joseph-du-Lac. Excludes Lemay Terrace area (See Zone 54).|name=TaxiZone14|group=note}}
+* '''15''': [[Saint-Jérôme]]
+* '''16''': [[Sorel-Tracy]]{{Efn|Also includes Saint-Joseph-de-Sorel & Sainte-Anne-de-Sorel.|name=TaxiZone16|group=note}}
+* '''17''': [[Terrebonne, Quebec|Terrebonne]]{{Efn|Also includes Mascouche.|name=TaxiZone17|group=note}}
+* '''18''': [[Thetford Mines]]{{Efn|Part of the City, including the former towns of Robertsonville, Thetford Mines & Thetford-Partie-Sud|name=TaxiZone18|group=note}}
+* '''19''': [[Victoriaville]]{{Efn|Also includes Saint-Christophe-d'Arthabaska|name=TaxiZone19|group=note}}
+* '''20''': [[Alma, Quebec|Alma]]{{Efn|Excluding the former Municipality of Delisle.|name=TaxiZone20|group=note}}
+* '''21''': [[Baie-Comeau]]{{Efn|Also includes Pointe-Lebel.|name=TaxiZone21|group=note}}
+* '''22''': [[Beauharnois, Quebec|Beauharnois]]
+* '''23''': [[Beloeil, Quebec|Beloeil]]{{Efn|Also includes McMasterville, Otterburn Park & Mont-Saint-Hilaire.|name=TaxiZone23|group=note}}
+* '''24''': [[Saint-Bruno-de-Montarville]]{{Efn|Also includes Saint-Basile-Le-Grand.|name=TaxiZone24|group=note}}
+* '''25''': Québec ([[Charlesbourg, Quebec City|Charlesbourg]])
+* '''26''': [[Châteauguay]]{{Efn|Also includes Mercier & Léry.|name=TaxiZone26|group=note}}
+* '''27''': Saguenay ([[La Baie]])
+* '''28''': [[Dolbeau-Mistassini]]
+* '''29''': [[Drummondville]]{{Efn|Part of the City formed by the former municipalities of Saint-Nicéphore, Drummondville & Saint-Charles-de-Drummond, and also includes Saint-Germain-de-Grantham, Saint-Cyrille-de-Wendover & Saint-Majorique-de-Grantham.|name=TaxiZone29|group=note}}
+* '''30''': Québec ([[Beauport, Quebec City|Beauport]])
+* '''31''': [[Gaspé, Quebec|Gaspé]]
+* '''32''': [[Repentigny, Quebec|Repentigny]] (Repentigny)
+* '''33''': [[Granby, Quebec|Granby]]
+* '''34''': Gatineau ([[Hull, Quebec|Hull]])
+* '''35''': [[Lévis, Quebec|Lévis]] (Central/Downtown){{Efn|Only the former territory of the City before January 1, 2002, now known as the Borough of "Desjardins".|name=TaxiZone35|group=note}}
+* '''36''': [[Quebec City|Quebec]] (Central/Downtown){{Efn|Former municipalities of Québec, Vanier & Loretteville, and the Parish Municipality of Notre-Dame-des-Anges.|name=TaxiZone36|group=note}}
+* '''37''': [[Rimouski]]{{Efn|Part of the City, including the former municipalities of Pointe-au-Père, Rimouski, Rimouski-Est & Sainte-Odile-sur-Rimouski.|name=TaxiZone37|group=note}}
+* '''38''': Quebec ([[Sainte-Foy, Quebec City|Sainte-Foy]]—[[Sillery, Quebec City|Sillery]]){{Efn|Borough of Sainte-Foy—Sillery—Cap-Rouge, and municipalities of L'Ancienne-Lorette & Saint-Augustin-de-Desmaures|name=TaxiZone38|group=note}}
+* '''39''': [[Saint-Hyacinthe]]{{Efn|Also includes La Présentation.|name=TaxiZone39|group=note}}
+* '''40''': [[Trois-Rivières]]{{Efn|Excluding the former Municipalities of Saint-Louis-de-France & Pointe-du-Lac.|name=TaxiZone40|group=note}}
+* '''41''': [[Saint-Jean-sur-Richelieu]]
+* '''42''': [[Shawinigan]]{{Efn|Excluding the former Municipalities of Saint-Gérard-des-Laurentides & Saint-Jean-des-Piles. Also includes Saint-Boniface.|name=TaxiZone42|group=note}}
+* '''43''': [[Sherbrooke]]
+* '''44''': [[Salaberry-de-Valleyfield]]{{Efn|Also includes Saint-Louis-de-Gonzague & Saint-Stanislas-de-Kostka.|name=TaxiZone44|group=note}}
+* '''45''': [[Amos, Quebec|Amos]]
+* '''46''': [[Chibougamau]]
+* '''47''': [[Matagami]]
+* '''48''': [[Rouyn-Noranda]] (Central/Downtown) {{Efn|Only the urban area (former territory of the City before January 1, 2002) is included.|name=TaxiZone48|group=note}}
+* '''49''': [[Val-d'Or]]{{Efn|Excluding the former Municipalities of Dubuisson & Vassan.|name=TaxiZone49|group=note}}
+* '''50''': [[La Tuque, Quebec|La Tuque]]{{Efn|Only the urban area (former territory of the City before March 26, 2003) is included.|name=TaxiZone50|group=note}}
+* '''51''': Saguenay ([[Jonquière]])
+* '''52''': Saguenay ([[Chicoutimi]])
+* '''53''': [[Sept-Îles, Quebec|Sept-Îles]]{{Efn|Excludes the former municipality of Gallix.|name=TaxiZone53|group=note}}
+* '''54''': [[Sainte-Thérèse, Quebec|Sainte-Thérèse]]{{Efn|Also includes Blainville, Rosemère, Lorraine, Bois-des-Filion, Boisbriand & Saint-Eustache's Lemay Terrace (who was part of Boisbriand before January 1, 2011).|name=TaxiZone55|group=note}}
+* '''55''': [[Gatineau]] (Gatineau)
+* '''56''': Repentigny ([[Le Gardeur, Quebec|Le Gardeur]]){{Efn|Also includes Charlemagne.|name=TaxiZone56|group=note}}
+* '''57''': [[Vaudreuil-Dorion]]{{Efn|Also includes Pointe-des-Cascades, L'Île-Perrot, Notre-Dame-de-l'Île-Perrot, Pincourt, Terrasse-Vaudreuil, L'Île-Cadieux & Vaudreuil-sur-le-Lac.|name=TaxiZone57|group=note}}
+|-
+|[[File:Plaque d'immatriculation du Québec - Taxi hospitalière - 12x6in.png|150px]]
+|Hospital Taxi
+|–2021/03
+|As current passenger plates
+|'''TB''' 1234
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Taxi régional - 12x6in.png|150px]]
+|Regional Taxi
+|–2021/03
+|As current passenger plates
+|'''TR'''12345
+|
+|
+|-
+|[[File:Plaque d'immatriculation du Québec - Taxi spécial - 12x6in.png|150px]]
+|Special Taxi<Br>(Limousines mainly)
+|–2021/03
+|As current passenger plates
+|'''TS''' 1234
+|
+|
+|}
+{{reflist|group=note}}
+
+==References==
+{{Reflist}}
+
+==External links==
+{{commonscat}}
+*[https://www.15q.net/qc.html Québec licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200722235229/http://www.15q.net/qc.html |date=2020-07-22 }}
+*[http://www.saaq.gouv.qc.ca/en/faq/vehicle_registration.php#q13 Vehicle Registration: Frequently Asked Questions (Société de l'assurance automobile du Québec)]
+*[https://matriculasdelmundo.com/canada.html#quebec Québec licence plates, Canada background]
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+[[Category:1912 establishments in Quebec]]
+[[Category:Vehicle registration plates of Canada|Quebec]]
+[[Category:Transport in Quebec]]
+[[Category:Quebec transport-related lists]]

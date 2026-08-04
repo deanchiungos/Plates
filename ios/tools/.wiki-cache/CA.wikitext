@@ -1,0 +1,1387 @@
+{{short description|California vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = California 2018 License Plate.jpg
+| country = [[United States]]
+| countrycode = USA
+| nickname = 
+| slogan_label = Slogan
+| slogan = None (1993-1998; 2001-2011)<br />SESQUICENTENNIAL - 150 YEARS (1998-2001)<br />dmv.ca.gov (2011-present)<ref>{{cite web|title=The History of the Department of Motor Vehicles|url=https://www.dmv.ca.gov/portal/about-the-california-department-of-motor-vehicles/the-history-of-the-department-of-motor-vehicles-dmv/#:~:text=For%20California's%20150th%20birthday%2C%20DMV,license%20plates%20beginning%20in%202011.|access-date=November 3, 2024}}</ref>
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = 1ABC123 (1980-2026)<br />123ABC1 (2026-present)
+| current_start_date = {{Start date|1993}}
+| designer = 
+| issuer = [[California Department of Motor Vehicles]]
+| manufacturer = 
+| start_date = {{Start date|1914|01|01}}<br />(pre-state plates and seals from 1905 to December 31, 1913)
+}}
+The U.S. state of [[California]] first required its residents to register their [[motor vehicle]]s in 1905. Registrants provided their own [[Vehicle registration plate|license plate]]s for display until 1914, when the state began to issue plates.<ref>{{cite web |last=Taylor |first=Eric Robert |title=California Archive - Part 1 |url=http://porcelainplates.net/california_archive.html |publisher=PorcelainPlates.net |access-date=December 6, 2015}}</ref> Plates are currently issued by the [[California Department of Motor Vehicles]].
+
+Front and rear plates are required on most types of vehicle in California, including all passenger vehicles. On motorcycles and some other non-passenger types, only rear plates are required. On all vehicle types, registration validation stickers are also required, to be displayed on the rear plate, except that truck tractors and commercial vehicles with gross vehicle weight of 10,001 pounds or more shall display them on the front plate.<ref>{{Cite web|url=http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4850&lawCode=VEH|title = Vehicle Code 4850|website=Leginfo.legislature.ca.gov}}</ref><ref>{{Cite web|url=http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5200&lawCode=VEH|title = Vehicle Code 5200|website=Leginfo.legislature.ca.gov}}</ref><ref>{{Cite web|url=https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=5204.|title = Vehicle Code 5204|website=Leginfo.legislature.ca.gov}}</ref>
+
+Since 1947, California license plates have been manufactured by inmates at [[Folsom State Prison]].<ref>{{Cite web|title=License Plates|url=https://catalog.calpia.ca.gov/services/license-plates/|website=Catalog.calpia.ca.gov}}</ref>
+
+Until around 2005, California used a reverse, or debossed, beaded edge. It was gradually phased out over the next few years in favor of a beveled edge, but still sometimes appears.<ref>{{Cite web|url=http://www.15q.net/ca.html#:~:text=California+2007+passenger+issue.,appearing+into+the+6+series|title=California|website=15q.net|access-date=July 19, 2026}}</ref>
+
+The 1ABC123 serial format was used on California's passenger license plates from 1980 to 2026. After 9ZZZ999, California adopted a new, mirrored format in March 2026: 123ABC1, maintaining the DMV's practice of flipping serial formats when they run out.<ref>{{Cite web|url=https://fox5sandiego.com/news/california-news/heres-how-californias-license-plates-will-look-different-next-year/|title=Here's how California's license plates will look different next year|first=Austin|last=Turner|work=Fox5sandiego.com|date=April 28, 2025|access-date=September 18, 2025}}</ref><ref>{{Cite web
+ |url=https://matriculasdelmundo.com/estados-unidos-california.html
+ |title=California License Plates
+ |website=Matriculas del Mundo
+ |language=es
+ |access-date=3 June 2026
+}}</ref>
+
+==Passenger baseplates==
+===Pre-state plates===
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!style="width:80px;"|Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1905-12 California License Plate.jpg|150px]]
+|{{nowrap|1905–13}}
+|Black on white; "CAL" at right
+|123456
+|1 to 122444
+|A one-time $2.00 fee is paid to register the vehicle, and the motorist must have a license plate made to hang from the rear of the vehicle (front plate also required starting in 1911). These plates were valid from the date of issuance until no longer needed for that car.  The seal (disc) that the motorist received from the state with the registration number, along with the license plate(s), was supposed to remain with the vehicle upon transfer to a new owner, but that did not always happen.  These early plates were valid through December 31, 1913.<ref name=Golden>{{cite magazine |last=Minard |first=Jeff |date=February 2000 |title=California, License Plates of the Golden State |magazine=The ALPCA Register |publisher=[[Automobile License Plate Collectors Association]] |volume=52 |number=3 |page=7}}</ref><ref name=Ears>{{cite magazine |last=Minard |first=Jeff |date=June 2006 |title=We're All Ears! California's Automobile Club Pre-States |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5 |pages=24–30}}</ref>
+|}
+
+===1914 to 1962===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first California license plate that complied with these standards.
+
+{|class="wikitable"
+|-
+!scope="col" style="width: 100px;" |Image
+!scope="col" style="width: 50px;" |Dates issued
+!scope="col" style="width: 80px;" |Design
+!scope="col" style="width: 70px;" |Serial format
+!scope="col" style="width: 100px;" |Serials issued
+!{{tooltip|2=Included validation tabs if it's multi year.|Notes}}
+|-
+|[[File:1914 Calif passenger plate.jpg|150px]]
+|1914
+|white on red porcelain
+|123456
+|1 to 122375<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=Registered Automobiles |edition=November 1914 |location=Sacramento, California |publisher=State of California  |date=1914 }}</ref>
+|Replaced all 1905–13 plates.
+|-
+|[[File:1915 Calif passenger plate.jpg|150px]]
+|1915
+|black on yellow porcelain
+|123456
+|1 to 163557<ref name="ALPCA">{{cite web |url=https://test.alpca.org/archives/search.php?r=11&g=61&y=&t=1&l=&rp=100&p=1 |title=Automobile License Plate Collectors Association |author=<!--Not stated--> |publisher=ALPCA |access-date=August 3, 2017 |url-access=subscription }}{{Dead link|date=July 2018 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+|'''Brass Seal:''' Hexagon [[File:1915 California Auto Registration (2).jpg|75px]]
+|-
+|rowspan="4"|[[File:1916 Calif passenger plate.jpg|150px]]
+|1916
+|rowspan="4"|blue on white porcelain
+|rowspan="4"|123456
+|1 to 234317<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=Registered Automobiles 1916 |edition=December 1916 |location=Sacramento, California |publisher=State of California |date=1916 |page=60 }}</ref>
+|'''Validation tab:'''<br /> 1916 Bear (Front) [[File:1916 California License Tab-Rear.jpg|70px]]<br /> 1916 Bear (Rear) [[File:1916 California License Tab-Front.jpg|70px]]
+|-
+|1917
+|234318<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=California Automobile Registration 1917 |edition=Volume 1 |location=Sacramento, California |publisher=State of California |date=1917 }}</ref> to 357299<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=Registered Automobiles |edition=December 1917 |location=Sacramento, California |publisher=State of California |date=1917 }}</ref>
+|Registered owners of plate numbers 1 to 234317 only received the Poppy tabs to place on their 1916 plates. <br />'''Validation tab:''' Poppy [[File:1917 California License Tab.jpg|70px]]
+|-
+|1918
+|357300<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=Registered Automobiles |edition=January–February 1918 |location=Sacramento, California |publisher=State of California |date=1918 }}</ref> to 485000<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=Registered Automobiles |edition=December 1918 |location=Sacramento, California |publisher=State of California |date=1918 }}</ref>
+|Registered owners of plate numbers 1 to 357299 only received the Bell tabs to place on their 1916 plates. <br />'''Validation tab:''' Bell [[File:1918 California License Tab.jpg|50px]]
+|-
+|1919
+|485001<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=Registered Automobiles |edition=January, February and March 1919 |location=Sacramento, California |publisher=State of California |date=1919 }}</ref> to 599705<ref name="ALPCA" />
+|Registered owners of plate numbers 1 to 485000 only received the Star tabs to place on their 1916 plates.<br />'''Validation tab:''' Star [[File:1919 California License TabA.jpg|50px]]
+|-
+|[[File:1920 Calif passenger plate.jpg|150px]]
+|1920
+|white on black
+|123-456
+|1 to 527–583
+|
+|-
+|[[File:1921 California license plate 478-701.jpg]]
+|1921
+|black on yellow
+|123-456
+|1 to 651-640<ref>{{cite book |author=<!--Staff writer(s); no by-line.--> |title=California Automobile Registration 1921 |edition=Volume XVI |location=Sacramento, California |publisher=State of California |date=1922 }}</ref>
+|
+|-
+|[[File:1922 California license plate2.jpg]]
+|1922
+|blue on white
+|123456
+|1 to 2000; 70001 to 881909<ref name="ALPCA" />
+|Serials 2001 through 70000 reserved for non-passenger vehicles.
+|-
+|[[File:1923 California license plate2.jpg]]
+|1923
+|white on black
+|123 456
+|1 to ?
+|
+|-
+|[[File:1924 California passenger license plate.jpg|150px]]
+|1924
+|white on green
+|123-456
+|1 to ?
+|
+|-
+|rowspan="2"|[[File:1925 California license plate2.jpg]]
+|rowspan="2"|1925
+|rowspan="2"|black on yellow
+|123 456
+|1 to 30&nbsp;00, 250&nbsp;001 to 999&nbsp;999
+|rowspan="2"|Serials 30&nbsp;01 through 250&nbsp;000 reserved for non-passenger vehicles.
+|-
+|A-12 345
+|A 1 to {{nowrap|F-99 999}}
+|-
+|rowspan="2"|[[File:1926 Calif passenger plate.jpg|150px]]
+|rowspan="2"|1926
+|rowspan="2"|white on blue
+|123 456
+|1 to 40&nbsp;00, 320&nbsp;001 to 999&nbsp;999
+|rowspan="2"|Serials 40&nbsp;01 through 320&nbsp;000 reserved for non-passenger vehicles.
+|-
+|A-12 345
+|A-1 to {{nowrap|G-99 999}}
+|-
+|[[File:1927 California license plate 1-510-891.jpg|150px]]
+|1927
+|white on maroon
+|1-234-567
+|1 to 50–00;<br />400-001 to approximately 1–860–000
+|First use of the full state name. Serials 50-01 through 400-000 reserved for non-passenger vehicles.
+|-
+|[[File:1928 California license plate 1-281-618 fade.jpg]]
+|1928
+|yellow on blue
+|1-234-567
+|1 to 3–000;<br />450-001 to approximately 2-080-000<ref name="allaboutlicenseplatesCA">{{cite web |last=Tanner |first=Eric N. |title=California Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=California&code=ca |publisher=allaboutlicenseplates.com |access-date=November 20, 2020}}</ref>
+|Serials 3-001 through 450-000 reserved for non-passenger vehicles.
+|-
+|[[File:1929 California license plate2.jpg]]
+|1929
+|orange on black
+|1''A''-12-34
+|Coded by branch office
+|Letters A through M were used in [[Northern California]], and N through Z in [[Southern California]].<ref name="allaboutlicenseplatesCA"/>
+|-
+|[[File:1930 California license plate 6J-743.jpg]]
+|1930
+|black on orange
+|1''A''-12-34
+|Coded by branch office
+|
+|-
+|[[File:1931 California licence plate.jpg|150px]]
+|1931
+|orange on black
+|1''A'' 12 34
+|Coded by branch office
+|
+|-
+|[[File:1932 California license plate2.jpg]]
+|1932
+|black on orange
+|1''A'' 12 34
+|Coded by branch office
+|
+|-
+|[[File:1933 California passenger license plate.png|150px]]
+|1933
+|orange on black
+|1''A'' 12 34
+|Coded by branch office
+|
+|-
+|[[File:1934 California passenger license plate.jpg|150px]]
+|1934
+|black on orange
+|1''A'' 12 34
+|Coded by branch office
+|
+|-
+|[[File:1935 California passenger license plate.jpg|150px]]
+|1935
+|orange on black
+|1''A'' 12 34
+|Coded by branch office
+|
+|-
+|[[File:1936 California passenger license plate.jpg|150px]]
+|1936
+|black on orange
+|1''A'' 12 34<br />10 ''A'' 123
+|Coded by branch office
+|
+|-
+|[[File:California37licenseplate.jpg|150px]]
+|1937
+|orange on black
+|1''A'' 12 34<br />{{small|''A''/A}} 12 34
+|Coded by branch office
+|
+|-
+|[[File:1938 California license plate 2T 53 20.jpg|150px]]
+|1938
+|black on yellow
+|1''A'' 12 34<br />10 ''A'' 123
+|Coded by branch office
+|
+|-
+|[[File:California39licenseplate.jpg|150px]]
+|1939
+|yellow on blue
+|1''A'' 12 34<br />10 ''A'' 123
+|Coded by branch office
+|
+|-
+|[[File:1940 California passenger license plate.jpg|150px]]
+|1940
+|black on orange
+|1''A'' 12 34<br />10 ''A'' 123
+|Coded by branch office
+|
+|-
+|rowspan="3"|[[File:1941 California passenger license plate.jpg|150px]]
+|rowspan="3"|{{nowrap|1941–44}}
+|rowspan="3"|yellow on black
+|rowspan="3"|1A 23 45<br />12 A 345
+|rowspan="3"|1A 1 to ?
+|Citizens that got the 1941 base plate in 1941 got this tab for revalidation.<br />'''Validation tab for 1942:''' [[File:1942 California license plate tab.jpg|200px]]
+|-
+|'''Validation tab for 1943:''' [[File:1943 California license plate tab.jpg|80px]]
+It was issued due to metal conservation for World War II.
+|-
+|'''Validation sticker for 1944:''' [[File:1944 California license plate window decal.jpg|60px]]
+It was issued due to metal conservation for World War II.
+|-
+|[[File:1945 California passenger license plate.jpg|150px]]
+|{{nowrap|1945–46}}
+|white on black
+|1A 23 45<br />12 A 345
+|1A 1 to ?
+|Only rear plates issued.<br />'''Validation tab for 1946:''' [[File:1946 California license plate tab.jpg|60px]]
+|-
+|rowspan="3"|[[File:1947 Calif passenger plate.jpg|150px]]
+|rowspan="3"|{{nowrap|1947–50}}
+|rowspan="3"|black on yellow
+|rowspan="3"|1A 23 456<br />12A 3 456
+|rowspan="3"|1A 1 to ?
+|'''Validation tab for 1948:''' [[File:1948 California license plate tab.jpg|60px]]
+|-
+|'''Validation tab for 1949:''' [[File:1949 California license plate tab.jpg|60px]]
+|-
+|'''Validation tab for 1950:''' [[File:1950 California license plate tab.jpg|60px]]
+|-
+|rowspan="4"|[[File:1951 California license plate 7B 82 644.jpg|150px]]
+|rowspan="4"|1951–55
+|rowspan="4"|yellow on black
+|rowspan="4"|1A 23 456<br />12 A 3 456
+|rowspan="4"|1A 1 to ?
+|'''Validation tab for 1952:''' [[File:1952 California license plate tab.jpg|60px]]
+|-
+|'''Validation tab for 1953:''' [[File:1953 California license plate tab.jpg|60px]]
+|-
+|'''Validation tab for 1954:''' [[File:1954 California license plate tab.jpg|60px]]
+|-
+|'''Validation tab for 1955:''' [[File:1955 California license plate tab.jpg|60px]]
+|-
+|rowspan="6"|[[File:1956 California license plate BBF 146.jpg|150px]]
+|rowspan="6"|1956–62
+|rowspan="6"|black on yellow
+|rowspan="6"|ABC 123
+|rowspan="6"|AAA 000 to approximately YRT&nbsp;999
+|'''Validation sticker for 1957:''' [[File:1957 California license plate decal.jpg|60px]]
+|-
+|'''Validation sticker for 1958:''' [[File:1958 California license plate decal.jpg|60px]]
+|-
+|'''Validation sticker for 1959:''' [[File:1959 California license plate decal.jpg|60px]]
+|-
+|'''Validation sticker for 1960:''' [[File:1960 California license plate decal.jpg|60px]]
+|-
+|'''Validation sticker for 1961:''' [[File:1961 California license plate decal.jpg|60px]]
+|-
+|'''Validation sticker for 1962:''' [[File:1962 California license plate decal.jpg|60px]]
+|}
+
+===1963 to present===
+All plates from 1963 until present are still valid, provided they are displayed on the vehicle to which they were originally issued and the vehicle has been continuously registered. Along with the pre-1963 plates above, these plates can be used for the year-of-manufacture program, with appropriate year sticker.
+
+The 1ABC123 serial format began in 1980. In this format, the ABC123 portion of the serial progresses from AAA000 to ZZZ999, before the leading digit advances by one and the progression begins again. All letters are used, although I, O and Q are only used as the second letter (third character in 1ABC123 format or fifth character in the new 123ABC1 format). Series 1SWD000 through 1TZZ999, 1WAA000 through 1ZYZ999, 3FMH000 through 3FZZ999, 3YAA000 through 3ZYZ999, and 3ZZH000 through 3ZZZ999, have all not been issued, while others have been reserved for non-passenger and optional plates, such as 1ZZA000 through 1ZZZ999 and 3ZZA000 through 3ZZG999 for Livery plates, and 1UAA000 through 1VZZ999 for Lake Tahoe, Yosemite and Coastal Protection ("Whale Tail") plates.
+
+The 123ABC1 serial format began in March 2026, following the exhaustion of the previous format.<ref name="sacbee">{{cite web |last1=Pedrosa |first1=Camila |title=California license plate numbers running out faster than predicted — here's what will happen |url=https://www.sacbee.com/news/california/article289218864.html |website=The Sacramento Bee |access-date=15 June 2024}}</ref>
+
+Certain three-letter strings that may be regarded as sensitive, such as [[Ku Klux Klan|KKK]] and DIE, are excluded.<ref>{{cite web|url=https://dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/special-plates/personalized-configurations-mandatory-refusal|title=Vehicle Industry Registration Procedures Manual - Chapter 21: Special Plates|publisher=California Department of Motor Vehicles|access-date=7 February 2025}}</ref> Furthermore, the letters I, O and Q are not used for the first or third alphabetical characters.<ref>{{cite web|url=https://info.sjpd.org/records/pc-13650_library/Other%20Training%20Materials/Communications/License%20Plates.pdf|title=License plates|publisher=San Jose Police Department|access-date=7 February 2025}}</ref>
+
+{| class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:1963 California license plate SAM-123.jpg|150px]]
+|{{nowrap|1963}}
+|embossed gold on black, embossed state name and debossed "63" on top right sticker box
+|''none''
+|ABC&nbsp;123
+|AAA 000 to ZZZ&nbsp;999
+|The oldest still allowed on the road today, but some older license plates have been seen.
+|-
+|[[File:1980 California license plate 002 ZZZ.jpg|150px]]
+|1969
+| rowspan="2" |embossed gold serial on blue, state name on top
+| rowspan="2" |''none''
+|123&nbsp;ABC
+|000 AAA to 999&nbsp;ZZZ
+| rowspan="2" |Monthly staggered registration introduced 1976. I, O and Q not used as first letters in the 123 ABC serial format. Narrower serial [[Die (manufacturing)|die]]s introduced at the beginning of the WLA series in late 1977, in preparation for the 1ABC123 format.<ref name="allaboutlicenseplatesCA" />
+|-
+|[[File:California 1SAM123 1980 Sample License Plate.jpg|150px]]
+|1980
+|'''1'''ABC123
+|1AAA000 to 1SWC999
+|-
+|[[File:California Golden State license plate 1982-1987 2GAT123.png|150px]]
+|1982
+|blue on reflective white with graphic [[Art Deco]] state name
+|The Golden State
+|'''2'''ABC123
+|2AAA000 to 2GPZ999
+|Extra-cost optional plate until 1987, when it briefly became the standard passenger base after the 1969 blue base was discontinued. Awarded "Plate of the Year" for best new license plate of 1983 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time California has been so honored.<br />This plate design was seen in the opening credits of the television drama ''[[L.A. Law]]'', which aired on [[NBC]] from 1986 to 1994. This is also the design which appears on the DeLorean in the 'Back to the Future' films, with the registration 'OUTATIME'. The validation sticker corresponded to the year of each episode's air date. 
+|-
+|[[File:California license plate, 1990.png|150px]]
+|1987
+|blue on reflective white with embossed red state name
+|''none''
+|1ABC123
+|2GQA000&nbsp;to 3FMG999 
+|3FMH-3FZZ not issued.
+|-
+|[[File:1995_California_license_plate.jpg|150px]]
+|1993
+| rowspan="6" |blue on reflective white with graphic red state name
+|''none''
+|'''3'''ABC123
+|3GAA000 to approximately 3JZZ999
+|The state name changed from an embossed state name to a graphic state name. Wells for month and year stickers are no longer debossed.
+|-
+|[[File:1997 California license plate.jpg|alt=White background with blue text and red text at the top of the plate reading “California”|150x150px]]
+|1995
+|''none''
+|'''3'''ABC123
+|3KAA000 to 3XZZ999 
+|3ZZA-3ZZG for livery
+3Y and all other 3Z series unissued. 
+The state name was modified to increase its size.
+|-
+|[[File:California Sesquicentennial License Plate.jpg|150px]]
+|1998
+|SESQUICENTENNIAL - 150 YEARS
+|'''4'''ABC123
+|4AAA000 to 4NOZ999
+|Slogan added to celebrate 150 years since California's statehood.
+|-
+|[[File:2009 Californian license plate.jpg|alt=A California license plate with blue text on white background. On the top reads “California” in red.|150x150px]]
+|2001
+|''none''
+| rowspan="2" |1ABC123
+|4NPA000 to 6TPV999
+|Slogan removed. Same as 1995 base.
+|-
+|[[File:California 2018 License Plate.jpg|150px]]
+|2011
+| rowspan="2" |dmv.ca.gov
+|6TPW000 to 9ZZZ999
+|DMV web address added as a slogan.
+|-
+||[[File:Blank License Plate Shape.svg|150px]]
+|2026
+|123ABC1
+|000AAA1 to 971AAA1 {{small|(as of July 13, 2026)}}<ref name=":0">{{Cite web |title=California License Plates |url=https://www.licenseplates.cc/CA |access-date=July 8, 2023 |website=Licenseplates.cc}}</ref>
+|New serial format, following exhaustion of the 1ABC123 format.
+|}
+
+==Non-passenger vehicle plates==
+{|class=wikitable
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:California license plate Amateur Radio Call Letters 1994.gif|150px]]
+|Amateur Radio
+|
+|''[[Federal Communications Commission|FCC]] call sign''
+|
+|Issued to holders of FCC amateur radio station licenses, upon request.
+|-
+|[[File:California Antique Motorcycle license plate.gif|150px]]
+|Antique Motorcycle
+|
+|{{small|ANTIQUE M/C}} 123
+|
+|Available upon request for any motorcycle manufactured in 1942 or before.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|[[International Registration Plan|Apportioned]]
+|1982
+|rowspan="3"|A'''P'''12345
+|AP00001 to approximately BP10000
+|These plates are used on non-tractor units such as charter buses, box trucks, and tow trucks. Two plates are issued.<ref name="licenseplates.cc">{{Cite web |title=California Apportioned Series History |url=https://licenseplates.cc/history.php?id=2872 |access-date=April 12, 2025 |website=licenseplates.cc |language=en-US}}</ref>
+|-
+|[[File:California Apportioned Blue License Plate.jpg|150px]]
+|1987
+|BP30001 to CP99999; EP00001 to EP09999
+|Around the CP75000 mark, the "Cal Apportioned" block letters changed from red to blue.<br />The DP series was skipped as it is already used on Disabled plates.
+|-
+|[[File:California Apportioned License Plate Red Script.jpg|150px]]
+|2020
+|EP10000 to FP04719 {{small|(as of July 8, 2026)}}
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[International Registration Plan|Apportioned]] - Tractor Unit
+|1992
+|rowspan="2"|A'''P'''12345
+|SP00001 to approximately VP69999
+|rowspan="2"|Serials with prefix SP-ZP are issued to single-plate vehicles such as truck tractors.<ref name="licenseplates.cc"/>
+|-
+|[[File:California apportioned license plate.jpg|150px]]
+|2011
+|VP70000 to ZP99999
+|-
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|[[International Registration Plan|Apportioned]] - Trailer
+|1982
+|rowspan="2"|A'''T'''12345
+|AT00001 to approximately BT99999
+|rowspan="2"|Prefixes AT-HT were used on trailer plates issued between 1982 and 2001, replaced with Permanent Trailer in 2001.<ref name="licenseplates.cc"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1987
+|CT00001 to approximately HT23411
+|-
+|[[File:California license plate Citizens Band 1994.gif|150px]]
+|Citizens Band
+|
+|ABC1234
+|
+|Were issued upon request for holders of [[Federal Communications Commission|FCC]] citizens band radio licenses until 1983. Plate numbers and letters represent the call letters assigned by the FCC.
+|-
+|[[File:California license plate H 90 224 commercial.gif|150px]]
+|rowspan="11"|[[Commercial vehicle|Commercial]]
+|1963
+|A 12 345
+|A 10 000 to V&nbsp;99&nbsp;999
+|rowspan="7"|
+|-
+|[[File:California 2017 commercial license plate late 1963 base.jpg|150px]]
+|1967
+|rowspan="2"|12 345 A
+|10 000 A to 99&nbsp;999&nbsp;J
+|-
+|[[File:California commercial license plate early 70s.png|150px]]
+|1970
+|00 000 K to 99&nbsp;999&nbsp;Z
+|-
+|[[File:California license plate 1J79500 commercial.gif|150px]]
+|1976
+|rowspan="6"|1A12345
+|1A00000 to 2Y05999 (serials 2Y06000-2Z99999 unissued)
+|-
+|[[File:3F24323.png|150px]]
+|1982
+|3A00000 to 3P59999
+|-
+|[[File:California license plate 4V80988 commercial.gif|150px]]
+|1987
+|3P60000 to 5A99999
+|-
+|[[File:California license plate 5M37250 commercial.gif|150px]]
+|1993
+|5B00000 to 5S99999
+|-
+|[[File:California truck sesquicentennial license plate.jpg|150px]]
+|1998
+|5T00000 to 6J99999
+|With "Sesquicentennial - 150 Years" slogan.
+|-
+|rowspan="2"|[[File:California truck plate 2010 series.jpg|150px]]
+|2001
+|6K00000 to 8Z99999
+|rowspan="2"|9A00000 through 9Z99999 reserved for tractor trailer units.
+|-
+|2010
+|rowspan="2"|12345A1
+|00000A1 to 99999E1
+|-
+|[[File:Californian truck plate, 12345A0.png|150px]]
+|2011
+|00000F1 to 99629M4 {{small|(as of July 9, 2026)}}<ref name=":0"/>
+|With "dmv.ca.gov" slogan.
+|-
+|[[File:California Disabled Person license plate 1994.gif|150px]]
+|rowspan="6"|[[Disability|Disabled Person]]
+|1995
+|12345{{small|'''D'''/'''P'''}}
+|00001{{small|D/P}} to 99999{{small|D/P}}
+|rowspan="6"|Before 1995, California issued only placards which were displayed on the dashboard when parking.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|late 1990s
+|{{small|'''D'''/'''P'''}}12345
+|{{small|D/P}}00001 to {{small|D/P}}99999
+|-
+|[[File:California license plate disabled DP E3210.jpg|150px]]
+|early 2000s
+|{{small|'''D'''/'''P'''}}A1234
+|{{small|D/P}}A0001 to {{small|D/P}}Z9999
+|-
+|[[File:California disabled person plate 2010 5633Wdp.jpg|150px]]
+|2006
+|1234A{{small|'''D'''/'''P'''}}
+|0001A{{small|D/P}} to 9999Z{{small|D/P}}
+|-
+|[[File:2016 California license plate DP 822BR disabled person.jpg|150px]]
+|2011
+|{{small|'''D'''/'''P'''}}123AB
+|{{small|D/P}}001AA to {{small|D/P}}999ZZ
+|-
+|[[File:California 2021 Disabled Person license plate AB123.jpg|150px]]
+|2019
+|AB123{{small|'''D'''/'''P'''}}
+|AA001{{small|D/P}} to WF106{{small|D/P}} {{small|(as of April 22, 2026)}}<ref name=":0"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="3"|Disabled Person – [[Motorcycle]]
+|rowspan="3"|
+|1234{{small|'''D'''/'''P'''}}
+|rowspan="3"|
+|rowspan="3"|
+|-
+|[[File:California-motorcycle-plate-disabled.jpg|150px]]
+|12{{small|'''D'''/'''P'''}}34
+|-
+|[[File:California Disabled Motorcycle License Plate.jpg|150px]]
+|{{small|'''D'''/'''P'''}}1234
+|-
+|[[File:California Golden State Disabled Veteran plate.png|150px]]
+|rowspan="3"|[[Disability|Disabled Veteran]]
+|1987
+|DV12345
+|DV00000-DV1xxxx
+|-
+|[[File:California Disabled Veteran license plate 1994.gif|150px]]
+|1994
+|12345{{small|'''D'''/'''V'''}}
+|00001{{small|D/V}} to 99999{{small|D/V}}
+|
+|-
+|[[File:California Disabled Vet plate 2023.jpg|150px]]
+|2023
+|{{small|'''D'''/'''V'''}}12345
+|{{small|D/V}}1xxxx to {{small|D/V}}76607 {{small|(as of July 8, 2026)}}<ref name=":0"/>
+|It is suspected that this issue began somewhere in the {{small|D/V}}1xxxx series to avoid conflicts with any remaining issues from the 1987 series. (Lowest spotted to date: {{small|D/V}}17664)
+|-
+|[[File:California Local Exempt license plate 1963.jpg|150px]]
+|rowspan="5"|[[Tax exemption|Exempt]] – Local
+|1963
+|E123456
+|E100000-E999999
+|Black plate with yellow numbering consisting of letter E in octagon and 6-digit number for district-, city- and county-owned vehicles
+|-
+|[[File:California Exempt (Local) Plate (blue and yellow).png|150px]]
+|1970
+|E123456
+|E100000-E999999
+|Blue plate with yellow numbering consisting of letter E in octagon and 6-digit number for district-, city- and county-owned vehicles
+|-
+|[[File:California Exempt (Local) Plate (Golden State).png|150px]]
+|1987
+|E123456
+|E100000-E999999
+|White plate with Golden State design and blue numbering consisting of letter E in octagon and 6-digit number for district-, city- and county-owned vehicles
+|-
+|[[File:California Exempt County License Plate.jpg|150px]]
+|1987
+|E123456
+|E100000-E999999
+|White plate with blue numbering consisting of letter E in octagon and 6-digit number for district-, city- and county-owned vehicles.  "California" is in red block font. For "E0....." plate, see below
+|-
+|[[File:California Exempt Octagon.gif|150px]]
+|1993
+|E123456
+|E100000-E999999
+|White plate with blue numbering consisting of letter E in octagon and 6-digit number for district-, city- and county-owned vehicles.  "California" is in red script font. For "E0....." plate, see below
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="5"|Exempt – State
+|1963
+|E12345
+|E00000-E99999
+|Black plate with yellow numbering consisting of letter E in diamond and 5-digit number for state-owned vehicles
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1970
+|E12345
+|E00000-E99999
+|Blue plate with yellow numbering consisting of letter E in diamond and 5-digit number for state-owned vehicles
+|-
+|[[File:California Exempt (State) Plate (Golden State).png|150px]]
+|1987
+|E123456
+|E000000-E999999
+|White plate with Golden State design and blue numbering consisting of letter E in diamond and 6-digit number for state-owned vehicles.
+|-
+|[[File:California Exempt (State) Plate (white block letter).png|150px]]
+|1987
+|E123456
+|E000000-E999999
+|White plate with blue numbering consisting of letter E in diamond and 6-digit number for state-owned vehicles. "California" is in red block font.
+|-
+|[[File:California Script Exempt License Plate (State).jpg|150px]]
+|1993
+|E123456
+|E000000-E999999
+|White plate with blue numbering consisting of letter E in diamond and 6-digit number for state-owned vehicles. "California" is in red script font.
+|-
+|[[File:CA Exempt Plate.gif|150px]]
+|Exempt
+|1998
+|1234567
+|1000001 to 1755178 {{small|(as of July 2, 2026)}}<ref name=":0"/>
+|Issued to all exempt vehicles, regardless of ownership. "CA EXEMPT" screened at top.
+Some plates were issued as "E0....." due to a surplus of prestamped octagon "E" plates.  On these plates the "E" was to be considered "1".  They still had "California" in script font.
+|-
+|[[File:California Exempt Motorcycle License Plate.png|150px]]
+|Exempt - Motorcycle
+|1998
+|'''3'''123456
+|3000001 to 3015172 {{small|(as of April 15, 2025)}}
+|
+|-
+|[[File:California Foreign Organization License Plate.gif|150px]]
+|Foreign Organization
+|
+|{{small|FOREIGN ORGANIZATION}} 123
+|
+|Issued to vehicles registered to an officer or designated employee of the [[Taipei Economic and Cultural Representative Office|Taipei Economic and Cultural Office]] pursuant to the [[Taiwan Relations Act]]. Eligibility is provided to DMV by the [[American Institute in Taiwan]].<ref>{{Cite web |title=21.110 Foreign Organization License Plates (VC §5006.5) |url=https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/special-plates/foreign-organization-license-plates/ |access-date=2024-09-25 |website=California DMV |language=en-US}}</ref>
+|-
+|[[File:California license plate Historic Vehicle.gif|150px]]
+|Historical Vehicle
+|1972<ref>{{Cite web |title=Our History - California DMV |url=https://www.dmv.ca.gov/portal/about-the-california-department-of-motor-vehicles/the-history-of-the-department-of-motor-vehicles-dmv/#:~:text=History%20of%20the%20California%20License,or%20in%20poor%20weather%20conditions/ |access-date=November 26, 2025 |website=California DMV |language=en-US}}</ref>
+|{{small|HISTORICAL VEHICLE}} 123A
+|? to 9999 <br />001A to 999Z <br />A001 to A034 {{small|(as of February 12, 2022)}}
+|Available upon request for any vehicle manufactured after 1922 that is at least 25 years old.
+|-
+|[[File:California Hon Consul Corps license plate 1982.gif|150px]]
+|rowspan="2"|Honorary Consul
+|1982
+|rowspan="2"|{{small|HON CONSUL CORPS}} 1234
+|
+|rowspan="2"|Issued to Honorary Consuls upon request.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1988
+|
+|-
+|[[File:California license plate Horseless Carriage.gif|150px]]
+|Horseless Carriage
+|1984
+|{{small|HORSELESS CARRIAGE}} 1234
+|
+|Available upon request for any vehicle manufactured in 1922 or before, or for motor vehicles with 16 or more cylinders manufactured prior to 1965.
+|-
+|[[File:California license plate Livery.gif|150px]][[File:California license plate Livery MUSIC 5.gif|150px]]
+|Livery
+|
+|1'''ZZ'''A123
+|1ZZA000 to 1ZZZ999; 3ZZA000 to 3ZZG999<ref name=":0" />
+|"LIVERY" screened at bottom. Issued to limos and fleet vehicles until program eliminated by Senate Bill 611 on September 30, 2014. Plates remain valid but cannot be replaced or reassigned.
+|-
+|[[File:California Moped license plate 1994.gif|150px]]
+|Moped
+|
+|'''C'''123456
+|C000001 to C080499 {{small|(as of March 15, 2024)}}
+|
+|-
+|[[File:1969 California Motorcycle License Plate.jpg|150px]]
+|rowspan="2"|Motorcycle
+|1970
+|1A1234
+|1A0000 to 9Z9999
+|Letter progresses before prefix number (11A–11Z, 12A–12Z, etc.). I, O and Q not used.<ref>{{cite web |last=Tanner |first=Eric N. |title=California Motorcycle License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Motorcycle&jurisdiction=California&code=ca |publisher=allaboutlicenseplates.com |access-date=November 20, 2020}}</ref><br />In 1986, the blue base finally reached 9Z9999, so to avoid conflicts with the new white baseplates, the remaining blue plates were issued with serials starting with 21A, 22A, etc. all the way to 29A. They continued on the blue base with prefixes 21B, 22B, etc. and reached 27B before the blue baseplates were exhausted in 1987.<ref name="auto">{{cite web |title=Motoplates - Vintage/Old/Antique Motorcycle License Plates |url=https://www.motoplates.com/userfiles/file/Calif-Plate-History.pdf |publisher=motoplates.com |access-date=August 24, 2025}}</ref>
+|-
+|[[File:California Motorcycle Plate.gif|150px]]
+|1982
+|12A1234
+|11A0000 to 27K0530 {{small|(as of March 29, 2026)}}
+|This series began in 1982 with prefix 11A, as an extra-cost reflective option, until January 1987, when only white plates were issued. Serials 10A0000 - 10Z9999 were not issued, but serials 20A0000 - 20Z9999 were issued. To avoid conflicting with the final run of blue baseplates above, prefixes 21A-29A and 21B-27B are not issued on white baseplates.<ref name="auto"/>
+|-
+|[[File:California license plate 4AX6888 trailer.gif|150px]]
+|Permanent [[Trailer (vehicle)|Trailer]]
+|2001
+|'''4'''AB1234
+|4AA1000 to 4XL2219 {{small|(as of June 22, 2026)}}
+|"California Perm Trailer" across top.
+|-
+|[[File:California Press Photographer license plate.gif|150px]]
+|rowspan="2"|[[News media|Press]] [[Photographer]]
+|1987
+|rowspan="2"|{{small|'''P'''/'''P'''}}&nbsp;1234
+|rowspan="2"|<small>P/P</small> ???? to
+<small>P/P</small> 4301 {{small|(as of January 3, 2024)}}
+|rowspan="2"|The letters “PP” inside a triangle.
+|-
+|[[File:California Press Photographer license plate.jpg|150px]]
+|2011
+|-
+|[[File:Prorate license plate used by interstate fleets.gif|150px]]
+|Prorate Plate
+|Unknown 
+|N/A
+|N/A
+|No longer in circulation. Used by interstate fleets to display apportioned stickers. California's stickers are placed in the third well from the top on the left side.
+|-
+|
+[[File:California public service license plate.jpg]]
+|Public Service (state representative)
+|Unknown
+|{{small|'''P'''/'''S'''}}12345
+|
+|
+|-
+|
+[[File:California 1975 Special Equipment license plate.png|150px]]
+|rowspan="2"|Special Equipment
+|1970
+|rowspan="2"|{{small|'''S'''/'''E'''}}123456
+|rowspan="2"|? to {{small|'''S'''/'''E'''}} 771123 {{small|(as of September 4, 2025)}}
+|rowspan="2"|Motorcycle-sized. Registration lasts for five years.
+|-
+|[[File:California Special Equipment license plate.gif|150px]]
+|1985
+|-
+|[[File:2023 California Temporary License Plate (VIN censored).jpg|150px]]
+|Temporary
+|2019<ref name="AB516" /><ref name=":1" /><ref name=":2" /> 
+|AB12C12<ref name=":3" />
+|AA00A00 to ES48T00 <small>(as of June 18, 2026)</small><ref name=":0" />
+|Issued to new vehicles purchased in California. Serials AU-AW, BC-BF, BM-BN, BV-BZ, CU-CX, DP-DU, ED, and EK were skipped, although some serials were issued later on. Letters I, O, and Q are not used.
+|-
+|[[File:California Tournament of Roses plate.jpg|150px]]
+|[[Tournament of Roses]]<ref>{{Cite web|url=http://bp1.blogger.com/_A6xZ_nscqCM/R3R6F5BcH0I/AAAAAAAAA20/sgMCuY6Ho3c/s1600-h/IMG_0073+copy.jpg4|title = IMG_0073+copy.jpg4 (Image)}}</ref>
+|1998
+|'''T{{small|OF}}R'''{{small|123}}
+|T{{small|OF}}R{{small|1}} to T{{small|OF}}R{{small|112}} <small>(as of December 1, 2022)</small>
+|Used on parade vehicles during the [[Tournament of Roses]] parade.
+|-
+|[[File:California 1987 Semi Truck Cab license plate.jpg|150px]]
+|rowspan="3"|[[Tractor-trailer|Tractor Trailer]]
+|1987
+|rowspan="3"|'''9'''A12345
+|9A00000 to ?
+|
+|-
+|[[File:California_tractor_trailer_license_plate.jpg|150px]]
+|1993
+|? to 9E99999 
+|
+|-
+|[[File:California DMV Semi Cab plate.jpg|150px]]
+|2011
+|9F00000 to 9H40466 {{small|(as of May 28, 2026)}}
+|With "dmv.ca.gov" slogan.
+|-
+|[[File:California license plate Trailer 1960s.jpg|150px]]
+|rowspan="8"|[[Trailer (vehicle)|Trailer]]
+|1963
+|rowspan="2"|AB 1234
+|AA 1000 to HV&nbsp;9999
+|No serials (HW 0000 to HW 9999) issued
+|-
+|[[File:1970's California Blue Trailer Plate KZ 1877.png|150px]]
+|1971
+|HX 1000 to TZ&nbsp;9999
+|The UA-YX series was reserved for commercial weight fee trailers. It was issued on the gold-on-blue base from 1971 to 1983.
+|-
+|[[File:1980s California Golden State Trailer license plate.png|150px]]
+|1983
+|rowspan="6"|1AB1234
+|1AA1000 to approximately 1BJ9999
+|
+|-
+|[[File:California license plate 1CJ8725 trailer.gif|150px]]
+|1987
+|1BP1000 to approximately 1EU9999
+|
+|-
+|[[File:California license plate 1GJ8201 trailer.gif|150px]]
+|1993
+|1FC1000 to approximately 1GS9999
+|
+|-
+|[[File:California Sesquicentennial Trailer License Plate.jpg|150px]]
+|1998
+|Approximately 1GT1000 to approximately 1JR9999
+|"Sesquicentennial" at bottom.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2001
+|Approximately 1JS1000 to approximately 1LZ9999
+|No text at bottom.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2011
+|Approximately 1MA1000 to 1PJ6034 {{small|(as of September 17, 2025)}}
+|The 1UA-1YX series is reserved for commercial weight fee trailers. Its issue began on the Golden State base in 1983 and continued onto the red-on-white "lipstick" base in use today. The highest spotted serial in this series is 1XE1140 (seen on Aug 19, 2013). The series had been expected to reach 1YX8000. The 1ZA-1ZW series is assigned to certain specialty trailers (Yosemite, Lake Tahoe, Protect our Ocean and our Coast, etc.) 1YY-1YZ and 1ZX-1ZZ will be of unknown use. These number formatted plates have also been issued to special exempted vehicles, such as full size, retitled school buses that have been converted to recreational vehicles. These vehicles are exempt from the California Air Resources Board 14001 GVWR rules.
+|-
+|[[File:VINplt.gif|150px]]
+|Vehicle Identification Number (VIN) Plate
+|
+|
+|
+|Assigned by the [[California Department of Motor Vehicles|DMV]] or [[California Highway Patrol|CHP]] when a number is removed, destroyed, or obliterated.
+|}
+
+===Occupational plates===
+On each occupational plate type, the full-size number is constant for each distributing entity, while the small suffix (or prefix on the Special Equipment Dealer/Manufacturer plate) varies. Only rear plates are required for each type.
+{|class=wikitable
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:California Dealer blue license plate.png|150px]]
+|rowspan="5"|[[Car dealership|Dealer]]
+|1970
+|{{small|DEALER}} 1234&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California Golden State Dealer license plate.png|150px]]
+|1987
+|{{small|'''D'''/'''L'''/'''R'''}}&nbsp;12345&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California white block letter dealer plate.png|150px]]
+|1987
+|{{small|'''D'''/'''L'''/'''R'''}}&nbsp;12345&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California Dealer license plate 1994.gif|150px]]
+|1993
+|{{small|'''D'''/'''L'''/'''R'''}}&nbsp;12345&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California 2011 Dealer License Plate.jpg|150px]]
+|2011
+|{{small|'''D'''/'''L'''/'''R'''}}&nbsp;12345&nbsp;{{small|1/2/A}}
+|-
+|[[File:California Dismantler license plate 1994.gif|150px]]
+|[[Vehicle recycling|Dismantler]]
+|
+|{{small|'''D'''/'''S'''/'''M'''}}&nbsp;1234&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California Manufacturer License Plate.gif|150px]]
+|[[Automotive industry|Manufacturer]]
+|
+|{{small|'''M'''/'''F'''/'''G'''}}&nbsp;1234&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California Distributor License Plate.gif|150px]]
+|New Vehicle Distributor
+|
+|{{small|'''D'''/'''S'''/'''T'''}}&nbsp;1234&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California Remanufacturer license plate 1994.gif|150px]]
+|Remanufacturer
+|
+|{{small|'''R'''/'''M'''/'''F'''}}&nbsp;1234&nbsp;{{small|1/2/A}}
+|
+|-
+|[[File:California Special Equipment Dealer Plate.png|150px]]
+|Special Equipment Dealer
+|
+|{{small|'''DLR''' 1A}}&nbsp;12345
+|Motorcycle-sized.
+|-
+|[[File:Specequipdlfmfr.gif|150px]]
+|Special Equipment Manufacturer
+|
+|{{small|1A '''MFG'''}}&nbsp;1234
+|Motorcycle-sized.
+|-
+|[[File:California Transporter license plate 1994.gif|150px]]
+|Transporter
+|
+|{{small|'''T'''/'''R'''/'''N'''}}&nbsp;1234&nbsp;{{small|1/2/A}}
+|
+|}
+
+===Legislative plates===
+{|class=wikitable
+|-
+!Image
+!Type
+!First issued
+!Serial format
+!Notes
+|-
+|[[File:Stassemblyscript.gif|150px]]
+|[[California State Assembly|Assembly Member]]
+|
+|<span style="color:red">'''A'''</span>&nbsp;12
+|Issued to current and retired members of the California State Assembly. The number in the serial corresponds to the district represented by the Assembly member. A small 'A' by the number indicates a second vehicle owned by the Assembly member. A small 'R' indicates a retired Assembly member, and a small '1' after the small 'R' indicates a second vehicle owned by the retired Assembly member.
+|-
+|[[File:California US congress license plate 1994.gif|150px]]
+|[[United States House of Representatives|Representative]]
+|
+|{{small|U.S. CONGRESS}} 1
+|Issued to current U.S. representatives. A small 'A' by the number indicates a second vehicle owned by the representative, a small 'B' indicates a third vehicle, and so on.
+|-
+|[[File:Stsenatescript.gif|150px]]
+|[[California State Senate|State Senator]]
+|
+|<span style="color:red">'''S'''</span>&nbsp;12
+|Issued to current and retired members of the California State Senate. The number in the serial corresponds to the district represented by the senator. A small 'S' by the number indicates a second vehicle owned by the senator. A small 'R' indicates a retired senator, and a small '1' after the small 'R' indicates a second vehicle owned by the retired senator.
+|-
+|[[File:California US Senate license plate 1994.gif|150px]]
+|[[United States Senate|U.S. Senator]]
+|
+|{{small|UNITED STATES SENATE}} 1
+|Issued to current U.S. senators. A small 'A' by the number indicates a second vehicle owned by the U.S. Senator, a small 'B' indicates a third vehicle, and so on.
+|}
+
+===Stickers===
+{|class="wikitable"
+!Image
+!Type
+!First issued
+!Notes
+|-
+|[[File:Ohv1.gif|150px]]
+|Emissions controlled OHV
+|
+|Assigned to motor vehicles that are used on roads not publicly maintained (e.g., in [[State park|State Park]]s and [[United States National Forest|National Forest]]s). The green sticker program existed as a means of generating revenue for the maintenance of state OHV areas.
+|-
+|[[File:Ohv2.gif|150px]]
+|Uncontrolled OHV
+|1999
+|Emissions controlled OHVs are granted Green Stickers while uncontrolled OHVs such as motocross and closed-course off-road racebikes are granted Red Stickers for seasonal use on public lands.
+|}
+
+==Optional types (specialty plates)==
+{| class="wikitable sortable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[1984 Summer Olympics|1984 Olympics]]&mdash;Motorcycle
+|1984
+|
+|{{small|'''''L'''''/'''''A'''''}}12345<br />{{small|'''''U'''''/'''''S'''''}}12345
+|{{small|''L''/''A''}}00000 to present
+|Issued until December 31, 1984. Duplicates were available until December 31, 1989. No longer issued, but still revalidated.
+|-
+|[[File:1984 Summer Olympics Californian license plate.jpg|alt=A background consisting of the colors white, red, and blue. At the top, “California” is shown in white text.|150x150px]]
+|[[1984 Summer Olympics|1984 Olympics]]&mdash;Passenger
+|1984
+|
+|{{small|'''''L'''''/'''''A'''''}}12345<br />{{small|'''''U'''''/'''''S'''''}}12345
+|{{small|''L''/''A''}}00000 to present
+|Issued until December 31, 1984. Duplicates were available until December 31, 1989. No longer issued, but still revalidated.
+|-
+|[[File:California Agriculture Specialty Plate.jpg|150px]]
+|Agriculture
+|2013
+|An image on the left of the plate with the sun on the horizon of a field
+|123ABC<br />'''A'''123B4
+|A001R0 to A813A1 <small>(as of October 25, 2025)</small>
+Using previously unused letter blocks.
+|White plate with artwork of the sun screened at left and "Agriculture" screened at bottom. With other specialty plates also using different variations of the '''A'''123B4 series, A001A1 came after A999R0 for the Agriculture plates.
+|-
+|[[File:California Arts Council license plate.jpg|150px]]
+|[[California Arts Council|Arts Council]]
+|1994
+|The sun setting over the coast
+|ABC123<br />123ABC<br />'''A'''123B'''0'''<br />'''A'''123B'''1'''
+|? to A113U1 <small>(as of April 24, 2026)</small><ref name=":0" />
+Using previously unused letter blocks.
+|"Coastline" design by [[Wayne Thiebaud]].<ref>{{cite news |title=Wayne Thiebaud's Pop art license plate design|first=Christopher|last=Knight|work=[[Los Angeles Times]]|date=June 29, 2010|access-date=September 4, 2015|url=http://latimesblogs.latimes.com/culturemonster/2010/06/license-plate-design-as-pop-art-by-wayne-thiebaud.html}}</ref><ref>{{cite web |title=Arts Plate|publisher=[[California Arts Council]]|access-date=September 4, 2015|url=https://www.artsplate.org/}}</ref>
+|-
+|[[File:California Bill of rights license plate 1991.gif|150px]]
+|[[United States Bill of Rights|Bill of Rights]]
+|1990
+|Blue on white with red [[Liberty Bell]] graphic
+|1234 '''US'''
+|0001 US to 1024&nbsp;US <small>(as of January 1, 2024)</small><ref name=":0" />
+|Issued from July 1, 1990, until December 31, 1991.<ref>{{cite web |title=21.015 Bicentennial Bill of Rights License Plates|publisher=[[California Department of Motor Vehicles]]|access-date=August 6, 2025|url=https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/special-plates/bicentennial-bill-of-rights-license-plates/}}</ref> Commemorated the 200th anniversary of the Bill's ratification.
+|-
+|[[File:California_Pink_Plate.webp|150px]]
+|[[Breast Cancer Awareness]]
+|2017
+|A pink background with a pink bow on the left
+|'''B'''123A'''1'''
+|B001A1 to B852E1 <small>(as of February 12, 2024)</small>
+|Pink plate with [[pink ribbon]] screened at left and "Early Detection Saves Lives" screened at bottom.
+|-
+|[[File:California 2017 Museums Are For Everyone license plate Snoopy.jpg|150px]]
+|California Museums ([[Snoopy]])
+|2016
+|An image of Snoopy
+|'''S'''123A'''0'''
+|S001A0 to S018N0 <small>(as of January 16, 2026)</small>
+|White plate with ''[[Peanuts]]'' character [[Snoopy]] screened at left and "museums are for everyone" screened at bottom.
+|-
+|[[File:California license plate Kids sample.jpg|150px]]
+|Children's Trust Fund
+|
+|
+|ABC123<br />'''A'''123B'''0'''
+|Using previously unused letter blocks.
+|An embossed [[Heart (symbol)|heart]], [[handprint|hand]], [[star polygon|star]], or [[plus sign]] appears to the left of the serial, or can be incorporated into "vanity" numbers.
+|-
+|[[File:California Congressional Medal of Honor Recipient license plate.gif|150px]]
+|[[Congressional Medal of Honor]] 84 &mdash;Passenger
+|1984
+|
+|12
+|?
+|Given to [[Medal of Honor]] recipients.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Congressional Medal of Honor]] 93 &mdash;Passenger
+|1993
+|
+|12
+|?
+|Given to [[Medal of Honor]] recipients.
+|-
+|[[File:California SF License Plate.jpg|150px]]
+|Faithful to State Parks ([[San Francisco 49ers]])
+|2025
+|An image of the San Francisco 49ers logo
+|'''B'''123A'''1'''
+|B001M1 to B702U1 <small>(as of April 29, 2026)</small>
+|White plate with the [[San Francisco 49ers]] logo screened at left and "Faithful to State Parks" screened at bottom.
+|-
+|[[File:California license plate Firefighter motorcycle.gif|150px]]
+|[[Firefighter]]&mdash;Motorcycle
+|
+|
+|00A12
+|00A01 to ?
+|
+|-
+|[[File:California license plate Firefighter.jpg|150px]]
+|[[Firefighter]]&mdash;Passenger
+|1995
+|
+|ABC123<br />'''A'''123B4
+|? to A184B1 <small>(as of November 18, 2025)</small><ref name=":0" />
+Using previously unused letter blocks.
+|Only active or retired firefighter can apply for this type of plate. Logo of a firefighter on a blazing background. With other specialty plates also using different variations of the '''A'''123B4 series, A001B1 came after A999J0 for the Firefighter plates.
+|-
+|
+[[File:California 2017 Gold Star Family license plate.jpg|150px]]
+|Gold Star Family &mdash;Passenger
+|2011
+|
+|123ABC
+|000HUY to 060HYE <small>(as of February 23, 2026)</small><ref name=":0" />
+Using previously unused letter blocks.
+|Given to family of fallen soldiers while in the line of duty.
+|-
+|
+|[[Lake Tahoe]] Version 1 - Commercial
+|1996
+|
+|'''2Z'''12345
+|2Z35000 to 2Z37999
+|No longer issued but still revalidated.
+|-
+|[[File:California Lake Tahoe license plate v1.jpg|150px]]
+|[[Lake Tahoe]] Version 1 - Passenger
+|1996
+|An image meant to depict Lake Tahoe as a background
+|'''1U'''AB123
+|1UEA000 to 1UE????
+|No longer issued but still revalidated.
+|-
+|[[File:California Lake Tahoe truck license plate.jpg|150px]]
+|[[Lake Tahoe]] Version 2 - Commercial
+|2011
+|A yellow sky over some mountains 
+|'''2Z'''12345
+|2Z38000 to 2Z40593 {{small|(as of February 18, 2024)}}
+|Using previously unused letter blocks.
+|-
+|[[File:California Tahoe passenger license plate.jpg|150px]]
+|[[Lake Tahoe]] Version 2 - Passenger
+|2011
+|A yellow sky over some mountains
+|'''1U'''AB123
+|1UE???? to 1URB648 {{small|(as of August 8, 2025)}}<ref name=":0" />
+|Using previously unused letter blocks.
+|-
+|
+[[File:California license plate legacy.jpg|150px]]
+|Legacy
+|2015
+|Gold on reflective black
+|A123B4
+|B001A0 to L783N1 {{small|(as of May 5, 2026)}}<ref name=":0" />
+|In the style of the 1963–69 passenger plate. 'S123A0' series of plates are reserved for California Museums (Snoopy) plate, shown above. C001A1 came after X999Z0, meaning the 'Y123A0' and 'Z123A0' series of plates were skipped. 'B123A1' series of plates are reserved for Breast Cancer Awareness and Faithful to State Parks (San Francisco 49ers) plates, shown above. The same series (A123B4) is used on both passenger and motorcycle plates. C123A0 is reserved for motorcycles.<ref name=":0" /> '''A'''123B'''0''' series of plates is reserved for many other specialty plates.<ref name=":0" /> The cycle went B001A0, B002A0, B003A0, ..., B998A0, B999A0, B001B0, ..., B998Z0, B999Z0, C001A0, ..., X998Z0, X999Z0, C001A1, and on and on and on.<ref name=":0" /> Last will probably be X999Z9.
+i.e. The A123B4 series works like 4-A123B, the "4" doesn't progress until a cycle of B001A-Z999Z completes.
+|-
+|[[File:California license plate Legion of Valor.gif|150px]]
+|[[Legion of Valor]]&mdash;Passenger
+|
+|Blue on white
+|{{small|LEGION OF VALOR}} 123
+|001 to <small>LEGION OF VALOR</small> 279 <small>(as of December 24, 2023)</small><ref name=":0" />
+|Sticker placed at right denoting the decoration held by the registrant: [[Medal of Honor]] ([[United States Army|Army]], [[United States Navy|Navy]] or [[United States Air Force|Air Force]]), [[Distinguished Service Cross (United States)|Distinguished Service Cross]], [[Navy Cross]], or [[Air Force Cross (United States)|Air Force Cross]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Olympic Training Center|Olympic Training Center]] Version 1
+|1990
+|
+|{{small|'''''C'''''/'''''A'''''}}12345<br />{{small|'''''U'''''/'''''S'''''}}12345
+|?
+|No longer issued, but still revalidated.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Olympic Training Center|Olympic Training Center]] Version 2
+|1999
+|
+|{{small|'''''C'''''/'''''A'''''}}12345<br />{{small|'''''U'''''/'''''S'''''}}12345
+|?
+|No longer issued, but still revalidated.
+|-
+|[[File:California Olympics license plate 2000 edition.png|150px]]
+|[[United States Olympic Training Center|Olympic Training Center]] Version 3
+|2000
+|
+|{{small|'''''C'''''/'''''A'''''}}12345<br />{{small|'''''U'''''/'''''S'''''}}12345
+|?
+|
+|-
+|[[File:California Pearl Harbor survivor license plate 1994.gif|150px]]
+|[[Attack on Pearl Harbor|Pearl Harbor]] Survivor &mdash;Passenger
+|
+|Blue on white; "PEARL HARBOR SURVIVOR" in blue at left
+|1234
+|0001 to 3637 <small>(as of September 5, 2022)</small><ref name=":0" />
+|Issued to members of the Armed Forces stationed within 3 miles of [[Joint Base Pearl Harbor–Hickam|Pearl Harbor Naval Base]] on Dec. 7, 1941, and honorably discharged.
+May be retained on a vehicle owned by a surviving spouse.<ref>{{cite web |title=Vehicle Industry Registration Procedures Manual, §21.175 |url=https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/special-plates/pearl-harbor-survivor-license-plates/ |publisher=[[California Department of Motor Vehicles]]|access-date=July 22, 2020}}</ref>
+|-
+|[[File:California spay & neuter license plate.jpg|150px]]
+|Pet Lover
+|2012
+|
+|123ABC
+|001END to 779PUG<small>(as of May 18, 2025)</small><ref name=":0" />
+Using previously unused letter blocks, including CAT, PUG, SAT, MUT, YES, WAG, and END
+|White plate with artwork from international actor, artist, and pet lover [[Pierce Brosnan]] screened at left and "Spay & Neuter Saves Lives" screened at bottom.
+|-
+|[[File:California Protect Our Coast Commercial Plate.jpg|150px]]
+|[[Whale|Protect Our Coast & Ocean]] Version 1 - Commercial
+|1997
+|
+|'''2Z'''12345
+|2Z50000 to 2Z5????
+|No longer issued, but still revalidated.
+|-
+|[[File:California Whale Tail 1VD-series license plate.jpg|150px]]
+|[[Whale|Protect Our Coast & Ocean]] Version 1 - Passenger
+|1997
+|
+|'''1V'''AB123
+|1VAA000 to 1VAZ999; 1VDA000 to 1VDY999
+|No longer issued, but still revalidated.
+|-
+|[[File:California whale tail truck plate.jpg|150px]]
+|[[Whale|Protect Our Coast & Ocean]] Version 2 – Commercial
+|2011
+|
+|'''2Z'''12345
+|2Z5???? to 2Z60021 {{small|(as of November 14, 2025)}}
+|
+|-
+|[[File:California 2011 whale tail license plate.png|150px]]
+|[[Whale|Protect Our Coast & Ocean]] Version 2 – Passenger
+|2011
+|
+|'''1V'''AB123
+|1VDZ000 to 1VEX057 {{small|(as of January 28, 2026)}}
+|
+|-
+|[[File:California license plate Purple Heart.gif|150px]]
+|rowspan="3"|[[Purple Heart]]
+|rowspan="3"|
+|rowspan="3"|
+|1234PH
+|0001PH to 9999PH
+|rowspan="3"|
+|-
+|[[File:California Purple Heart plate PH1234.png|150px]]
+|PH1234
+|PH0001 to PH9999
+|-
+|[[File:California Purple Heart plate 12PH34.png|150px]]
+|12PH34
+|00PH01 to 51PH06 {{small|(as of March 28, 2026)}}
+|-
+|[[File:California Purple Heart recipient motorcycle license plate 1994.gif|150px]]
+|[[Purple Heart]]&mdash;[[Motorcycle]]
+|
+|
+|1234PH<br />PH1234<br />12PH34
+|
+|
+|-
+|[[File:California Ex-POW motorcycle license plate 1994.gif|150px]]
+|[[POW]] Ex-Prisoner of War &mdash;[[Motorcycle]]
+|
+|
+|POW1234
+|
+|
+|-
+|[[File:California Ex-POW license plate 1994.gif|150px]]
+|[[POW]] Ex-Prisoner of War 93 &mdash;[[Passenger]]
+|1993
+|
+|POW1234
+|
+|
+|-
+|[[File:California Ex-POW license plate 2000.gif|150px]]
+|[[POW]] Ex-Prisoner of War 00 &mdash;[[Passenger]]
+|2000
+|
+|POW1234
+|? to POW7867 <small>(as of December 26, 2024)</small><ref name=":0" />
+|
+|-
+|[[File:California 1994 Veteran license plate.jpg|150px]]
+|[[Veteran]] Version 1
+|1994
+|
+|ABC123<br />123ABC
+|? to F105IP <small>(as of November 3, 2014)</small><ref name=":0" />
+|No longer issued.
+|-
+|[[File:California Honoring Veterans license plate 123ABC.jpg|150px]]
+|[[Veteran]] Version 2
+|2012
+|
+|123ABC<br />'''A'''123B'''0'''
+|? to A700X0 <small>(as of February 9, 2026)</small><ref name=":0" />
+Using previously unused letter blocks.
+|
+|-
+|[[File:California 9-11 memorial license plate.jpg|150px]]
+|[[September 11 attacks|We Will Never Forget]]
+|2002
+|
+|1234'''M'''A
+|0001MA to 4004MB {{small|(as of February 21, 2024)}}
+|
+|-
+|[[File:California license plate UCLA Bruins.jpg|150px]]
+|[[University of California, Los Angeles]]
+|1994
+|
+|ABC123
+|APA101 to APA999
+|
+|-
+|[[File:California commercial Yosemite license plate.jpg|150px]]
+|[[Yosemite National Park]] - Commercial
+|1993
+|
+|'''2Z'''12345
+|2Z00001 to 2Z10540 {{small|(as of April 1, 2025)}}
+|
+|-
+|[[File:California 2022 Yosemite license plate.jpg|150px]]
+|[[Yosemite National Park]] - Passenger
+|1993
+|
+|'''1U'''AB123
+|1UAA000 to 1UBU001 {{small|(as of January 28, 2024)}}
+|
+|-
+|}
+See the Passenger Baseplates section above for the 1982–87 "Golden State" plate, which was briefly issued as the standard passenger base.
+
+==Year-of-manufacture plates==
+[[File:California license plate Anarchist.jpg|thumb|right|A California car license plate saying ANRCHST (a [[vanity plate]]–speak form of [[anarchist]]) from 2006]]
+The use of [[Year of Manufacture|year-of-manufacture]] (YOM) plates is authorized by Section 5004.1<ref>{{Cite web|url=http://www.leginfo.ca.gov/cgi-bin/displaycode?section=veh&group=04001-05000&file=5000-5024|title=CA Codes (veh:5000-5024)|website=Leginfo.ca.gov|access-date=July 19, 2026}}</ref> of the California Motor Vehicle Code. It is a law that allows vintage cars to be registered to use vintage license plates. Any officially manufactured California license plates which were produced prior to 1963 can be used on a currently registered vehicle or trailer of a corresponding model year. If used on the original plate, a sticker or metal tab that corresponds to the year of the vehicle is required.
+
+As of July 2024, YOM program extends only to 1980 and older year model auto, commercial, motorcycle and trailer vehicles, as long as they are "clear" with the DMV (i.e., not used, reported stolen, or any records found, for the last 10 years). A valid sticker must be attached to the plate corresponding to the year of the vehicle that is to be registered.<ref>{{Cite web|url=https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/special-plates/year-of-manufacture-yom-license-plates/|title=21.260 Year of Manufacture (YOM) License Plates (VC §§5004.1, 4463, 4463.5, California Code of Regulations (CCR) Title 13, Article 3.3, §§205.00-205.14)|website=Dmv.ca.gov|access-date=September 18, 2025}}</ref>
+
+In August 2016, California extended the [[Year of Manufacture|year-of-manufacture]] license plate program to include vehicles through the 1980 model year.<ref>{{Cite web|url=https://leginfo.legislature.ca.gov/faces/billCompareClient.xhtml?bill_id=201520160SB1429|title = Today's Law as Amended|website=Leginfo.legislature.ca.gov}}</ref>
+
+==California Legacy License Plate program==
+[[File:California_license_plate_legacy.jpg|thumb|center|The legacy California license plate that released in 2015.]]
+The California Legacy License Plate program offers vehicle owners the opportunity to purchase replicas of California license plates similar to those issued in the 1960s. California proposed issuing plates similar to those of the 1950s, 1960s and 1970s. The original plan was to restrict the plate colors to what would have been issued to the vehicle when purchased new.  After a few months, the program was opened to all model years.  Only the 1960s (gold on black) plate reached the required 7,500 minimum orders before January 1, 2015. The 1950s (black on gold) and 1970s (gold on blue) plates did not achieve the required 7,500 minimum orders.<ref>{{Cite web|url=http://www.dmv.ca.gov/portal/dmv/detail/legacyplates/index|title = Special Interest License Plates|website=Dmv.ca.gov}}</ref> The plates were issued starting from late spring through summer 2015 and, as of 2025, are still available for order from the DMV website. Additional time is required for personalized plates.<ref>{{Cite web |title=Legacy License Plates FAQs (English) |url=http://www.dmv.ca.gov/portal/dmv/detail/legacyplates/faqs |url-status=dead |archive-url=https://web.archive.org/web/20150402101125/http://www.dmv.ca.gov/portal/dmv/detail/legacyplates/faqs |archive-date=April 2, 2015 |access-date=April 2, 2015}}</ref><ref>{{Cite web|url=https://www.latimes.com/business/autos/la-fi-hy-california-black-license-plates-20150622-story.html|title=California's black license plates are back in production|website=[[Los Angeles Times]]|date=23 June 2015}}</ref> These plates use a newer reflective black coating in contrast to the original dull black paint. Additionally, original 1960s plates utilize a wider die for the characters, originally designed for 6-character plates. New Legacy plates utilize the narrower dies of modern 7-digit plates.
+
+==Temporary license plates==
+[[File:2023 California Temporary License Plate (VIN censored).jpg|thumb|2023 California temporary license plate for a [[Mercedes-Benz GLB|Mercedes-Benz GLB-250]].]]
+[[File:Steves Mercedes.jpg|thumb|Steve Jobs' car, parked at [[Apple Infinite Loop campus]] in 2010.]]
+Prior to 2019, California was the last U.S. state to not require the display of any form of temporary license plate on new vehicles. New motor vehicle dealers were still required to electronically report sales of new vehicles to the DMV,<ref>[https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=4456. California Vehicle Code Section 4456(a)(2)], ''Leginfo.legislature.ca.gov''</ref><ref name="DMV2019">{{Cite web |title=Temporary Paper License Plates |url=https://www.dmv.ca.gov/portal/dmv/detail/vr/templp |access-date=July 16, 2019 |website=Dmv.ca.gov }}{{Dead link|date=November 2025 |bot=InternetArchiveBot }}</ref> but they were only required to print out a DMV report-of-sale form on regular paper at the time of sale.<ref name="AB516"/> The dealer was then only required to attach the DMV report-of-sale form to the inside of the car windshield in the lower right corner (from the driver's perspective).<ref>[https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=4456. California Vehicle Code Section 4456(a)(1)], ''Leginfo.legislature.ca.gov''</ref>  Before 2019, it was common for a newly purchased vehicle to be driven around for a month (or more) with nothing but a dealer's advertisement or logo on paper plate inserts in the mounting brackets where the owner was supposed to promptly install front and rear license plates when they arrived in the mail from the DMV.
+
+California's lack of a temporary license plate requirement was mocked as the "[[Steve Jobs]] loophole," due to the [[Apple Inc.|Apple]] founder's habit of continuously signing a series of six-month leases of [[Mercedes-Benz SL-Class|Mercedes-Benz SL55 AMG]]s on a rolling basis for the specific purpose of avoiding the state requirement of having to install permanent license plates on his cars.<ref>{{cite web |url=https://arstechnica.com/cars/2016/07/steve-jobs-loophole-closed-california-wants-temporary-license-plates/?comments=1 |title=California closes the Steve Jobs license plate loophole |last=Gitlin |first=Jonathan |date=July 26, 2016 |website=Arstechnica.com|access-date=June 21, 2017 }}</ref> The DMV report-of-sale forms were printed in regular type not intended to be read at a distance, meaning that it was legible only to persons leaning closely over the windshield when the car was standing still. This made the new vehicle untraceable through casual visual observation by passerby (especially for the common car models and colors), as well as automated means such as license-plate reading systems, red light cameras, and [[automatic number plate recognition]].  Thus, drivers of newly purchased vehicles who deliberately failed to carry a [[FasTrak]] electronic toll collection transponder could evade toll collection (on [[High-occupancy toll lane|tolled Express Lanes]], toll bridges, and toll roads where a transponder system was used instead of toll booths), causing the state to lose $15–19 million per year.  Vehicle owners who failed to immediately attach permanent metal license plates upon receipt might eventually get cited one way or another for that infraction, but there was no way at that point to retroactively link such vehicle owners to unpaid tolls.<ref name="AB516"/> This loophole was also deliberately exploited by criminals, who knew that a car with dealer paper inserts was untraceable and in and of itself would not raise suspicion.<ref>{{cite web |url=https://www.latimes.com/local/lanow/la-me-tv-reporter-20171105-story.html |title=TV reporter becomes the story when she's robbed at Costco while shopping |agency=Associated Press |date=November 5, 2017 |website=[[Los Angeles Times]] |access-date=November 6, 2017 }}</ref>
+
+The hit-and-run death of a pedestrian who was struck by an unidentifiable car with dealer paper inserts sparked the enactment of new legislation in 2016 to require temporary license plates in California beginning in 2019.<ref name="AB516">{{cite web |url=https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201520160AB516 |title=Assembly Bill No. 516 |agency=State of California Legislature |date=July 7, 2016 |publisher=California|access-date=February 22, 2018 }}</ref><ref name=":1">{{cite web |url=http://www.laweekly.com/news/say-goodbye-to-new-car-paper-plates-7184315 |title=Say Goodbye to New Car Paper Plates |last=Romero |first=Dennis |date=July 27, 2016 |website=Laweekly.com |access-date=June 21, 2017 }}</ref><ref name=":2">{{cite web |url=https://www.latimes.com/local/lanow/la-me-paper-license-plates-20160725-snap-story.html |title=New law will require temporary license plates in California |agency=Associated Press |date=July 25, 2016 |website=[[Los Angeles Times]] |access-date=June 21, 2017 }}</ref> The DMV's reporting system was modified to enable dealers to print out temporary license plates on special paper,<ref name="DMV2019"/> and dealers are now required to attach such temporary paper plates to a vehicle that does not already have license plates. The series that the temporary license plates use is AB12C34, and it applies to all newly purchased vehicles in the state of California since 2019.<ref name=":3">[https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=4456. California Vehicle Code Section 4456(a)(9)], ''Leginfo.legislature.ca.gov''</ref>
+
+==References==
+{{Reflist}}
+
+==Sources==
+* [https://www.dmv.ca.gov/portal/dmv/?1dmy&urile=wcm:path:/dmv_content_en/dmv/pubs/plates/standardplates CA Department of Motor Vehicles License Plate Introduction]
+* [http://www.dmv.ca.gov/vr/plates.htm Other types of Specialty Plates]
+* [http://www.dmv.ca.gov/pubs/reg_hdbk_pdf/app1e_ca_license_plate_data.pdf California License Plate Data (1914–1962)]{{Dead link|date=November 2025 |bot=InternetArchiveBot }}
+* [https://www.dmv.ca.gov/portal/dmv/?1dmy&urile=wcm:path:/dmv_content_en/dmv/pubs/plates/specialrecogplates Special Recognition Plates]
+* [http://www.dmv.ca.gov/portal/dmv/detail/legacyplates/index/ Legacy Plates]
+
+==External links==
+{{Commons category|License plates of California}}
+* [http://www.15q.net/ca.html California license plates, 1969–present]
+* [http://platesmania.com/us/california Photo library of California license plates]
+
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{California}}
+
+[[Category:Road transportation in California]]
+[[Category:Vehicle registration plates of the United States by state or territory|California]]
+[[Category:California transportation-related lists]]

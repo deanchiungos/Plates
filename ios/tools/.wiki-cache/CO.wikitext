@@ -1,0 +1,1388 @@
+{{short description|Colorado vehicle license plates}}
+{{Use American English|date=July 2025}}
+{{Use mdy dates|date=April 2025}}
+{{Infobox vehicle registration plate
+| image = Colorado 2018 License Plate.jpg
+| nickname = 
+| slogan_label = Slogan
+| slogan = 
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = ABC-D12 (2018-present)<br />ABC-123 (2015-2018)<br />123-ABC (2000-2015)
+| current_start_date = {{Start date|2000|01}}
+| designer = 
+| issuer = [[Colorado Department of Revenue]], Division of Motor Vehicles
+| manufacturer = 
+| start_date = {{Start date|1913|07|15}}
+}}
+
+The U.S. state of [[Colorado]] first required its residents to register their [[motor vehicle]]s and display [[Vehicle registration plate|license plates]] in 1913. {{As of|2024}}, plates are issued by the [[Colorado Department of Revenue]] through its Division of Motor Vehicles. Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+The basic design of Colorado's license plate, a range of mountains against a white or green background, has been in use since 1960 (except for 1973 and 1975–76). In 2000, a screened, more detailed version of the mountain range replaced the previous dark green version.
+
+==Passenger baseplates==
+===1913 to 1974===
+In 1956, the United States, Canada, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for license plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1955 (dated 1956) issue was the first Colorado license plate that fully complied with these standards: the 1954 (dated 1955) issue was 6 inches in height by 12 inches in width, but had non-standard mounting holes.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Colorado 1913 license plate - Number 2580.jpg|150px]]
+|1913
+|Black serial on white porcelain plate; vertical "COLO" and "1913" at left and right respectively
+|''none''
+|12345
+|1 to approximately 14500
+|
+|-
+|[[File:Colorado 1914 license plate - Number 501.jpg|150px]]
+|1914
+|White serial on dark blue porcelain plate; vertical "COLO" and "1914" at left and right respectively
+|''none''
+|12345
+|1 to approximately 20000
+|
+|-
+|[[File:Colorado 1915 license plate - Number 981.jpg|150px]]
+|1915
+|Black serial on yellow porcelain plate; vertical "COLO" and "1915" at left and right respectively
+|''none''
+|12345
+|1 to approximately 29000
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1916
+|Embossed white serial on brown plate with border line; vertical "COLO" and "1916" at left and right respectively
+|''none''
+|12345
+|1 to approximately 47000
+|First embossed plate. Serials issued in blocks by county; this practice continued through 1931.<ref name="allaboutlicenseplatesCO">{{cite web |last=Tanner |first=Eric N. |title=Colorado Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=US&p=Passenger&jurisdiction=Colorado&code=co |publisher=allaboutlicenseplates.com |access-date=November 10, 2020}}</ref>
+|-
+|[[File:1917 Colorado license plate.jpg|150px]]
+|1917
+|Embossed black serial on pink plate with border line; vertical "COLO" and "1917" at left and right respectively
+|''none''
+|12345
+|1 to approximately 68000
+|
+|-
+|[[File:1918 Colorado license plate.jpg|150px]]
+|1918
+|Embossed white serial on black plate with border line; vertical "COLO" and "1918" at left and right respectively
+|''none''
+|123-456
+|1 to approximately 102–000
+|
+|-
+|[[File:Colorado 1919 license plate - Number 129-600.jpg|150px]]<br />[[File:Colorado 1920 license plate - Number 54-219.png|150px]]
+|1919–20
+|Welded silver serial on dark brown plate; "COLO." centered at top
+|''none''
+|rowspan="2"|123-456
+|rowspan="2"|1 to approximately 233–000
+|Validated for 1919 with dark brown tabs, and for 1920 with dark blue tabs.
+|-
+|[[File:Colorado 1920 license plate - Number 20-647.png|150px]]
+|1920
+|Embossed silver serial on dark brown plate with border line; vertical "COLO" and "1920" at left and right respectively
+|''none''
+|Issued only to new registrants.
+|-
+|[[File:1921 Colorado license plate.jpg|150px]]
+|1921
+|Embossed silver serial on dark blue plate with border line; "COLO-1921" centered at top
+|''none''
+|123-456
+|1 to approximately 177–000
+|
+|-
+|[[File:1922 Colorado license plate.jpg|150px]]
+|1922
+|Embossed black serial on white plate with border line; stylized vertical "COLO" and "22" at right
+|''none''
+|123-456
+|1 to approximately 190–000
+|
+|-
+|[[File:Colorado 1923 license plate - Number 68-403.jpg|150px]]
+|1923
+|Embossed white serial on black plate with border line; "COLO. 1923" centered at bottom
+|''none''
+|123-456
+|1 to approximately 192–000
+|
+|-
+|[[File:1924 Colorado license plate.jpg|150px]]
+|1924
+|Embossed black serial on beige plate with border line; "COLO. 1924" centered at bottom
+|''none''
+|123-456
+|1 to approximately 224–000
+|
+|-
+|[[File:1925 Colorado license plate.jpg|150px]]
+|1925
+|Embossed white serial on maroon plate with border line; "COLO. 1925" centered at bottom
+|''none''
+|123-456
+|1 to approximately 266–000
+|
+|-
+|[[File:1926 Colorado license plate.jpg|150px]]
+|1926
+|Embossed white serial on green plate with border line; "COLO. 1926" centered at bottom
+|''none''
+|123-456
+|1 to approximately 274–000
+|
+|-
+|[[File:1927 Colorado license plate.jpg|150px]]
+|1927
+|Embossed white serial on black plate with border line; "COLO. 1927" centered at bottom
+|''none''
+|123-456
+|1 to approximately 308–000
+|
+|-
+|[[File:Colorado 1928 license plate - Number G-1-720.jpg|150px]]
+|1928
+|Embossed maroon serial on beige plate with border line; "COLO. 1928" centered at bottom
+|''none''
+|123-456
+|1 to approximately 314–000
+|
+|-
+|[[File:Colorado 1929 license plate - Number 196-190.jpg|150px]]
+|1929
+|Embossed white serial on maroon plate with border line; "COLO. 1929" centered at bottom
+|''none''
+|123-456
+|1 to approximately 326–000
+|
+|-
+|[[File:Colorado 1930 license plate - Number 21-13-90.jpg|150px]]
+|1930
+|Embossed orange serial on black plate with border line; "COLORADO-1930" at top
+|''none''
+|12-34-56
+|1 to approximately 34–40–00
+|First use of the full state name.
+|-
+|[[File:1931 Colorado license plate.JPG|150px]]
+|1931
+|Embossed black serial on orange plate; "COLORADO-1931" at bottom
+|''none''
+|123-456
+|1 to approximately 386–000
+|
+|-
+|[[File:Colorado license plate 1932 graphic.png|150px]]
+|1932
+|Embossed orange serial on black plate; "COLORADO 1932" at bottom
+|''none''
+|{{small|''1''}}-12-345<br />{{small|''10''}}-1-234
+|County-coded
+|First use of county codes.
+|-
+|[[File:1933 Colorado license plate.jpg|150px]]
+|1933
+|Embossed black serial on orange plate; "COLORADO 1933" at bottom
+|''none''
+|''1''-12345<br />''10''-1234
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1934 graphic.png|150px]]
+|1934
+|Embossed yellow serial on black plate; "COLORADO 1934" at bottom
+|''none''
+|''1''-12345<br />''10''-1234
+|County-coded
+|
+|-
+|[[File:1935 Colorado license plate.JPG|150px]]
+|1935
+|Embossed black serial on yellow plate with border line; "COLO. 1935" centered at top
+|''none''
+|''1''-12345<br />''10''-1234
+|County-coded
+|
+|-
+|[[File:1936 Colorado license plate.JPG|150px]]
+|1936
+|Embossed white serial on blue plate with border line; "COLO. 1936" centered at top
+|''none''
+|''1''-12345<br />''10''-1234
+|County-coded
+|
+|-
+|[[File:1937 Colorado license plate.JPG|150px]]
+|1937
+|Embossed black serial on silver plate with border line; "COLO. 1937" centered at top
+|''none''
+|''1''-12345<br />''10''-1234
+|County-coded
+|
+|-
+|[[File:1938 Colorado license plate.JPG|150px]]
+|1938
+|Embossed white serial on turquoise plate with border line; "19 COLORADO 38" at top
+|''none''
+|''1''-12345<br />''10''-1234
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1939 graphic.png|150px]]
+|1939
+|Embossed yellow serial on black plate with border line; "19 COLORADO 39" at top
+|''none''
+|''1''-12345<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1940 graphic.png|150px]]
+|1940
+|Embossed black serial on yellow plate with border line; "19 COLORADO 40" at top
+|''none''
+|''1''-12345<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1941 graphic.png|150px]]
+|1941
+|Embossed yellow serial on black plate with border line; "19 COLORADO 41" at top
+|''none''
+|''1''-123456<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:1942 Colorado license plate.jpg|150px]]
+|1942
+|Embossed white serial on maroon plate with border line; "19 COLORADO 42" at top
+|''none''
+|''1''-123456<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1943 graphic.png|150px]]<br />[[File:Colorado license plate 1944 graphic.png|150px]]
+|{{nowrap|1943–44}}
+|Embossed yellow serial on black plate with border line; "19 COLORADO 43" at top
+|''none''
+|''1''-123456<br />''10''-12345
+|County-coded
+|Revalidated for 1944 with yellow tabs, due to metal conservation for [[World War II]].
+|-
+|[[File:1945 Colorado license plate.jpg|150px]]
+|1945
+|Embossed white serial on black plate with border line; "19 COLORADO 45" at top
+|''none''
+|''1''-12345<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:1946 Colorado license plate.JPG|150px]]
+|1946
+|Embossed yellow serial on black plate with border line; "19 COLORADO 46" at bottom
+|''none''
+|''1''-12345<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:1947 Colorado license plate.jpg|150px]]
+|1947
+|Embossed black serial on yellow plate with border line; "19 COLORADO 47" at bottom
+|''none''
+|''1''-123456<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:1948 Colorado license plate.jpg|150px]]
+|1948
+|Embossed black serial on unpainted aluminum plate with border line; "19 COLORADO 48" at top
+|''none''
+|''1''-123456<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:1949 Colorado license plate.JPG|150px]]
+|1949
+|Embossed yellow serial on black plate with border line; "19 COLORADO 49" at bottom
+|''none''
+|''1''-123456<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1950 graphic.png|150px]]
+|1950
+|Embossed green serial on white plate with border line; "19 COLORADO 50" at bottom
+|"COLORFUL" centered at top
+|''1''-123456<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:1951 Colorado license plate.JPG|150px]]<br />[[File:Colorado 1952 license plate - Number 7-4796.png|150px]]
+|1951–52
+|Embossed white serial on green plate with border line; "19 COLORADO 51" at bottom
+|"COLORFUL" centered at top
+|''1''-123456<br />''10''-12345
+|County-coded
+|Revalidated for 1952 with yellow tabs, due to metal conservation for the [[Korean War]].
+|-
+|[[File:1953 Colorado Vehicle License Plate.jpg|150px]]
+|1953
+|Embossed green serial on yellow plate with border line; "19 COLORADO 53" at bottom
+|"COLORFUL" centered at top
+|''1''-123456<br />''10''-12345
+|County-coded
+|
+|-
+|[[File:1954 Colorado license plate.jpg|150px]]
+|1954
+|Embossed white serial on black plate with border line; "19 COLORADO 54" at bottom
+|"COLORFUL" centered at top
+|''1''-1234<br />A''1''-1234<br />''1''A-1234<br />''10''-1234<br />A''10''-123<br />''10''A-123
+|County-coded
+|
+|-
+|[[File:1955 Colorado license plate.JPG|150px]]
+|1955
+|Embossed black serial on white plate with border line; "COLORADO" at bottom, slightly offset to right; "55" at top right
+|"Colorful" at top, slightly offset to right
+|{{small|A/''1''}} 1234<br />{{small|A/''10''}}&nbsp;1234
+|County-coded
+|
+|-
+|[[File:1956 Colorado license plate type 1.jpg|150px]]
+|rowspan="3"|1956
+|rowspan="3"|Embossed white serial on black plate with border line; "19 COLORADO 56" at bottom
+|rowspan="3"|''none''
+|A:1234
+|A:1 to<br />Z:9999
+|Issued in [[Denver|Denver County]].
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{small|A/''10''}}&nbsp;1234
+|rowspan="2"|County-coded
+|Issued in [[Arapahoe County, Colorado|Arapahoe]], [[Jefferson County, Colorado|Jefferson]] and [[Adams County, Colorado|Adams]] Counties.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|''2'':12345<br />''13'':1234
+|Issued in all other counties.
+|-
+|[[File:1957 Colorado license plate type 1.jpg|150px]]
+|rowspan="3"|1957
+|rowspan="3"|Embossed black serial on orange plate with border line; "19 COLORADO 57" at bottom
+|rowspan="3"|''none''
+|123-456
+|1001 to approximately 203–000
+|Issued in Denver County.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|{{small|A/''10''}}&nbsp;1234
+|rowspan="2"|County-coded
+|Issued in Arapahoe, Jefferson, Adams, [[Logan County, Colorado|Logan]] and [[Morgan County, Colorado|Morgan]] Counties.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|''2''-12345<br />''14''-1234
+|Issued in all other counties.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|rowspan="2"|1958
+|rowspan="2"|Embossed green serial on pale green plate with border line; embossed skier graphic at right; "COLORADO 58" at bottom, offset to right
+|rowspan="2"|"Colorful" centered at top
+|{{small|A/B}} 123
+|{{small|A/A}} 1 to approximately {{small|N/R}}&nbsp;999
+|Issued in Denver County.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|''2'' 123<br />{{small|''2''/A}} 123<br />{{small|A/''2''}} 123<br />{{small|''1''/''0''}} 123<br />{{small|''10''/A}} 123<br />{{small|A/''10''}} 123
+|County-coded
+|Issued in all other counties.
+|-
+|[[File:1959 Colorado license plate.jpg|150px]]
+|1959
+|Embossed white serial on green plate with border line; "19 COLORADO 59" at bottom
+|"Colorful" centered at top
+|''AB''-1234
+|County-coded
+|Letters I, O and Q not used in serials; this practice continued until the early 1990s.<ref name="allaboutlicenseplatesCO"/>
+|-
+|[[File:1960 Colorado license plate.JPG|150px]]
+|1960–61
+|Embossed green serial on white plate with border line; mountain range graphic at top; "19 COLORADO 60" at bottom
+|''none''
+|''AB''-1234
+|County-coded
+|Revalidated for 1961 with stickers.
+|-
+|[[File:Colorado license plate 1962 graphic.png|150px]]
+|1962
+|Embossed white serial on green plate with border line; mountain range graphic at top; "19 COLORADO 62" at bottom
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1963 Colorado license plate.jpg|150px]]
+|1963
+|Embossed green serial on white plate with border line; mountain range graphic at bottom; "19 COLORADO 63" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1964 graphic.png|150px]]
+|1964
+|As 1962 base, but with "19 COLORADO 64" at bottom
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1965 graphic.png|150px]]
+|1965
+|As 1963 base, but with "19 COLORADO 65" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1966 Colorado license plate RZ-8130.jpg|150px]]
+|1966
+|As 1962 base, but with "19 COLORADO 66" at bottom
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1967 Colorado license plate.jpg|150px]]
+|1967
+|As 1963 base, but with "19 COLORADO 67" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1968 graphic.png|150px]]
+|1968
+|As 1962 base, but with "19 COLORADO 68" at bottom
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1969 Colorado license plate.JPG|150px]]
+|1969
+|As 1963 base, but with "19 COLORADO 69" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1970 graphic.png|150px]]
+|1970
+|As 1962 base, but with "19 COLORADO 70" at bottom
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:1971 Colorado license plate LY-3018.jpg|150px]]
+|1971
+|As 1963 base, but reflective, and with "19 COLORADO 71" at top
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Colorado license plate 1972 graphic.png|150px]]
+|1972
+|Debossed white serial on reflective green plate with border line; mountain range graphic at top; "19 COLORADO 72" at bottom
+|''none''
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Colorado 1973 license plate - Number TJ-8683.png|150px]]
+|1973
+|Embossed green serial on reflective white plate with border line; "19 COLORADO 73" at bottom
+|"Colorful" centered at top
+|''AB''-1234
+|County-coded
+|
+|-
+|[[File:Colorado 1974 license plate - Number UP-1705.png|150px]]
+|1974
+|Debossed white serial on reflective green plate with border line; mountain range graphic above serial; "19 COLORADO 74" at bottom
+|"Colorful" centered at top
+|''AB''-1234
+|County-coded
+|
+|}
+
+===1975 to present===
+{|class="wikitable"
+|-
+!Image
+!style="width:70px;"|Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:1976 Colorado license plate TR 1470.jpg|150px]]
+|1975–76
+|Embossed red on reflective white and blue graphic
+|Centennial
+|rowspan="2"|''AB''-1234
+|rowspan="2"|County-coded
+|Commemorated Colorado's 100 years of statehood. Awarded "Plate of the Year" for best new license plate of 1975 by the [[Automobile License Plate Collectors Association]], the first and, to date, only time Colorado has been so honored.
+|-
+|[[File:Colorado license plate 1976 graphic.png|150px]]
+|1976
+|Embossed red on reflective white
+|Centennial
+|Issued at end of Centennial graphic supply.
+|-
+|[[File:1977 Colorado license plate LU-8024.jpg|150px]]
+|1977–81
+|rowspan="3"|Embossed white on reflective green; mountains at top
+|rowspan="3"|''none''
+|''AB''-1234
+|rowspan="3"|County-coded
+|rowspan="3"|Letters I and O added to serials following the introduction of the ABC1234 format. With the addition of the letter O, the [[Die (manufacturing)|die]] for the digit '0' was changed for better differentiation.<ref name="allaboutlicenseplatesCO"/>
+|-
+|[[File:Colorado license plate, 1982–1992.png|150px]]
+|1982&nbsp;– June<br />1992
+|''ABC''-123
+|-
+|[[File:CO License Plate July 1992 - December 1999.jpg|frameless|150x150px]]
+|July 1992&nbsp;– December 1999
+|''ABC''1234
+|-
+|[[File:CO License Plate (2000-2015).jpg|150px]]
+|January 2000&nbsp;–<br />mid<br />2015
+|rowspan="4"|Embossed dark green on reflective graphic plate with white and grey mountains against dark green background
+|rowspan="4"|''none''
+|123-ABC
+|001-AAA to 999-ZZZ (see right)
+|Letter Q not used in serials until 999-ZZZ was issued. Afterwards, Q was added to each position, starting with AA'''Q'''-001 to ZZ'''Q'''-999 and A'''Q'''A-001 to Z'''Q'''Z-999, and ending with '''Q'''AA-001 to '''Q'''ZZ-999.
+|-
+|rowspan="2"| 
+|rowspan="2"|mid<br />2015&nbsp;–<br />mid<br />2018
+|rowspan="2"|ABC-123
+|Unused 1982–92 serials
+|Serials progressed from '''Q'''AA-001 to '''Q'''ZZ-999, then A'''Q'''A-001 to Z'''Q'''Z-999, then AA'''Q'''-001 to ZZ'''Q'''-999. Following this, the letter O was used in every position, with the same order of progression.
+|-
+|Reissued 1982–92 serials
+|RAA-001 to RDP-999 were issued alongside the Q serials.
+Subsequent reissues beginning with A, B, C and D followed the O serials.<ref name="licenseplates.cc"/>
+|-
+|[[File:Colorado 2018 License Plate.jpg|150x150px]]
+|mid<br />2018&nbsp;– present
+|ABC-D12
+|{{nowrap|AAA-A00 to}} FIG-W76 {{small|(as of November 2, 2025)}}<ref name="licenseplates.cc">{{Cite web |title=Colorado License Plates |url=https://www.licenseplates.cc/CO |website=www.licenseplates.cc |access-date=July 3, 2023}}</ref>
+|Manufactured, but not issued, alphabetically. The most progressive numbers are often found on low-volume special plates, as they are typically issued after being manufactured rather than kept in stock.
+Letter O not used in fourth position since 2024.
+|}
+
+==County coding==
+
+Colorado introduced numeric county codes on its passenger and motorcycle license plates in 1932, with the order of the codes based on the populations of each of the state's 63 counties at the time. These codes were used through 1958 (except in Denver, which last used code 1 in 1955).
+
+Two-letter codes replaced the numeric codes in 1959, with blocks assigned to each county in the same order. For each code, serials ran to 9999 on passenger plates, and to 999 on motorcycle plates. The move to multi-year plates in the mid-1970s resulted in several counties exhausting their blocks and being assigned new ones.
+
+In 1982, three-letter codes were introduced on passenger plates. AAA through DZZ were assigned to Denver, and GAA through TZZ to the next five most populous counties (Jefferson, El Paso, Boulder, Arapahoe and Adams); blocks of codes in the 'E', 'F', 'U', 'V' and 'W' series were then assigned to the remaining counties in roughly alphabetical order. For each code, serials ran from 001 to 999. Again, several counties exhausted their blocks and were assigned new ones, with Douglas and Elbert borrowing blocks of 'D' series codes from Denver's assignment. From July 1992, serials for each code ran from 1000 to 9999, and the previously unused letters I and O were added. Motorcycle plates continued to use two-letter codes (some of which were reassigned to other counties), with revised formats featuring three and later four digits between the letters (e.g. A123A and A1234A in Denver).
+
+The table below reflects the two- and three-letter codes that were actually issued on passenger plates, rather than what was assigned.
+
+{|class="wikitable collapsible collapsed sortable"
+|-
+!County!!Numeric code,<br />1932–58!!Two-letter codes,<br />1959–81!!Three-letter codes,<br />1982–99
+|-
+| [[Denver]] || 1 || AA–CV || AAA–BMJ
+|-
+| [[Pueblo County, Colorado|Pueblo]] || 2 || GP–HD || VEZ–VPA
+|-
+| [[Weld County, Colorado|Weld]] || 3 || HY–JM || WAA–WME
+|-
+| [[El Paso County, Colorado|El Paso]] || 4 || JX–LL, FR–FV || KAA–LGR
+|-
+| [[Las Animas County, Colorado|Las Animas]] || 5 || LM–LN || UAA–UAV
+|-
+| [[Larimer County, Colorado|Larimer]] || 6 || LU–MK, FX–FY || FHA–FXT
+|-
+| [[Boulder County, Colorado|Boulder]] || 7 || ML–NF, FH–FP || MAA–MSZ
+|-
+| [[Mesa County, Colorado|Mesa]] || 8 || NG–NT || UEJ–ULV
+|-
+| [[Otero County, Colorado|Otero]] || 9 || PA–PC || UXS–UYW
+|-
+| [[Arapahoe County, Colorado|Arapahoe]] || 10 || PH–RP, FA–FG || PAA–RHD
+|-
+| [[Jefferson County, Colorado|Jefferson]] || 11 || RS–TD, HG–HW || GAA–HKU
+|-
+| [[Adams County, Colorado|Adams]] || 12 || TE–UF, GA–GG || SAA–SZF
+|-
+| [[Logan County, Colorado|Logan]] || 13 || UG–UJ || UCB–UDE
+|-
+| [[Fremont County, Colorado|Fremont]] || 14 || UP–UT || EPV–ESU
+|-
+| [[Morgan County, Colorado|Morgan]] || 15 || UW–UY || UVA–UWJ
+|-
+| [[Huerfano County, Colorado|Huerfano]] || 16 || VE || EZF–EZU
+|-
+| [[Prowers County, Colorado|Prowers]] || 17 || VG–VH || VDN–VEJ
+|-
+| [[Delta County, Colorado|Delta]] || 18 || VL–VN || EFH–EGZ
+|-
+| [[Yuma County, Colorado|Yuma]] || 19 || VS–VT || WTL–WTY
+|-
+| [[La Plata County, Colorado|La Plata]] || 20 || VV–VY || FDF–FFL
+|-
+| [[Montrose County, Colorado|Montrose]] || 21 || WB–WD || USM–UUD
+|-
+| [[Baca County, Colorado|Baca]] || 22 || WG || EBE–EBK
+|-
+| [[Rio Grande County, Colorado|Rio Grande]] || 23 || WJ–WK || VVW–VWS
+|-
+| [[Garfield County, Colorado|Garfield]] || 24 || WM–WR || ETW–EWB
+|-
+| [[Conejos County, Colorado|Conejos]] || 25 || WS || EDV–EED
+|-
+| [[Kit Carson County, Colorado|Kit Carson]] || 26 || WU–WV || WUZ–WVJ
+|-
+| [[Washington County, Colorado|Washington]] || 27 || WW || WST–WTA
+|-
+| [[Routt County, Colorado|Routt]] || 28 || WZ–XA || VXA–VXY
+|-
+| [[Bent County, Colorado|Bent]] || 29 || XC || EBX–ECF
+|-
+| [[Alamosa County, Colorado|Alamosa]] || 30 || XE–XF || EAA–EAT
+|-
+| [[Chaffee County, Colorado|Chaffee]] || 31 || XH–XJ || FAM–FBN
+|-
+| [[Montezuma County, Colorado|Montezuma]] || 32 || XL–XM || UPY–USE
+|-
+| [[Lincoln County, Colorado|Lincoln]] || 33 || XP || UBL–UBU
+|-
+| [[Elbert County, Colorado|Elbert]] || 34 || XS || EPB–EPU, DKA–DKC
+|-
+| [[Saguache County, Colorado|Saguache]] || 35 || XU || VYP–VYX
+|-
+| [[Crowley County, Colorado|Crowley]] || 36 || XW || EET–EEZ
+|-
+| [[Phillips County, Colorado|Phillips]] || 37 || XY || VBB–VBG
+|-
+| [[Costilla County, Colorado|Costilla]] || 38 || YA || EEL–EES
+|-
+| [[Sedgwick County, Colorado|Sedgwick]] || 39 || YB || WNL–WNP
+|-
+| [[Gunnison County, Colorado|Gunnison]] || 40 || YD–YE || EYC–EYU
+|-
+| [[Lake County, Colorado|Lake]] || 41 || YF–YG || FCD–FCV
+|-
+| [[Moffat County, Colorado|Moffat]] || 42 || YJ–YK || UNS–UPG
+|-
+| [[Teller County, Colorado|Teller]] || 43 || YL || WRN–WSS, VZS–VZV
+|-
+| [[Eagle County, Colorado|Eagle]] || 44 || YM–YN, ZT || EMB–EPA
+|-
+| [[Kiowa County, Colorado|Kiowa]] || 45 || YP || WUS–WUU
+|-
+| [[Cheyenne County, Colorado|Cheyenne]] || 46 || YR || ECM–ECR
+|-
+| [[Douglas County, Colorado|Douglas]] || 47 || YS–YT, GM || EHW–EMA, FGJ–FGZ, VZZ, WVW–WWF, DAA–DAU
+|-
+| [[Archuleta County, Colorado|Archuleta]] || 48 || YU || FAA–FAK
+|-
+| [[Rio Blanco County, Colorado|Rio Blanco]] || 49 || YV || VVD–VVP
+|-
+| [[San Miguel County, Colorado|San Miguel]] || 50 || YX || VZF–VZM
+|-
+| [[Clear Creek County, Colorado|Clear Creek]] || 51 || YY–YZ || ECU–EDP
+|-
+| [[Custer County, Colorado|Custer]] || 52 || ZA || EFB–EFE
+|-
+| [[Grand County, Colorado|Grand]] || 53 || ZB–ZC || EWZ–EXU
+|-
+| [[Park County, Colorado|Park]] || 54 || ZD || VAH–VBA, EWW–EWY, EZX–EZZ, VZX–VZY, WWG–WWJ
+|-
+| [[San Juan County, Colorado|San Juan]] || 55 || ZE || VZB–VZC
+|-
+| [[Ouray County, Colorado|Ouray]] || 56 || ZF || VAA–VAE
+|-
+| [[Pitkin County, Colorado|Pitkin]] || 57 || ZG, ZP || VBS–VCY
+|-
+| [[Dolores County, Colorado|Dolores]] || 58 || ZH || EHR–EHT
+|-
+| [[Jackson County, Colorado|Jackson]] || 59 || ZJ || FGC–FGE
+|-
+| [[Gilpin County, Colorado|Gilpin]] || 60 || ZK || EWN–EWV
+|-
+| [[Summit County, Colorado|Summit]] || 61 || ZL, ZR || WNZ–WRJ
+|-
+| [[Mineral County, Colorado|Mineral]] || 62 || ZM || UNM–UNN
+|-
+| [[Hinsdale County, Colorado|Hinsdale]] || 63 || ZN || EZD–EZE
+|}
+
+==Non-passenger plates==
+When the current passenger baseplate was introduced in 2000, the state also simplified its non-passenger and specialty plates, issuing them in the same serial format (originally 123-ABC) and with similar graphic elements.
+
+===2000 to present===
+The serials on non-passenger types are embossed unless noted.
+
+{|class="wikitable"
+|-
+!Image!!Type!!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[International Registration Plan|Apportioned]] Permanent [[trailer (vehicle)|Trailer]]
+|Red background; stacked "PRM" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Apportioned [[Tractor]]
+|Red background; stacked "ATR" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Apportioned Trailer
+|Red background; stacked "ATL" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Apportioned [[Truck]]
+|Red background; stacked "ATK" prefix.
+|-
+|[[File:Colorado 1997 State Patrol license plate.jpg|150px]]
+|[[Colorado State Patrol]]
+|Black background; surface-printed serials in a format of '''CSP''' 123.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Fleet vehicle|Commercial Fleet]]
+|Red background; stacked "FLT" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Car dealership|Dealer]]
+|Blue background; stacked "DLR" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer&mdash;[[Product demonstration|Demo]]
+|Blue background; stacked "DMO" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Dealer&mdash;In Transit
+|Blue background; stacked "INT" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Depot
+|Blue background; stacked "DPT" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Disability|Disabled Person]]
+|Green background; wheelchair in center; surface-printed serials.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Farm]] Tractor
+|Green background; stacked "FTR" prefix. Personalized variant also issued, with surface-printed serial.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farm Truck
+|Green background; stacked "FTK" prefix. Personalized variant also issued, with surface-printed serial.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Government]]
+|Green background; stacked "GVT" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Gross vehicle weight rating|Gross Vehicle Weight]] Tractor
+|Red background; stacked "TVW" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Gross Vehicle Weight Truck
+|Red background; stacked "GVW" prefix. Personalized variant also issued, with surface-printed serial.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Manufacturer]]
+|Blue background; stacked "MFG" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Recreational vehicle|Recreational Truck]]
+|Green background; stacked "RTK" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Special Mobile Machine
+|Green background; stacked "SMM" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Special Mobile Machine&mdash;Exempt
+|Green background; stacked "SMX" prefix; motorcycle-sized plate.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Trailer (vehicle)|Trailer]]
+|Green background; stacked "TRL" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Transporter vehicle|Transporter]]
+|Blue background; stacked "TPR" prefix.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Truck
+|Green background; stacked "TRK" prefix.
+|}
+
+===Prior to 2000===
+{|class="wikitable"
+|-
+!Image!!Type!!Design!!Serial format!!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Person
+|Reflective white on green.
+|12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fleet
+|Reflective gold on blue.
+|1234'''IA'''5
+|
+|}
+
+==Specialty plates==
+
+===2000 to present===
+Specialty types have surface-printed serials. Some types are available in personalized format, in which case the type logo, which normally appears at the center of the plate between the numbers and the letters of the serial, is absent.
+
+{|class="wikitable"
+|-
+!'''Image'''!!'''Type'''!!'''Notes'''
+|-
+|[[File:Colorado's Sesquicentennial Over 13 License Plate Winner.png|150px]]
+|150th Statehood Anniversary (13+)
+|Available August 1, 2023 through August 1, 2027. Plate selected by popular vote.
+|-
+|[[File:Colorado's Sesquicentennial Under 13 License Plate Winner.jpg|150px]]
+|150th Statehood Anniversary (Under 13)
+|Available August 1, 2023 through August 1, 2027. Plate selected by popular vote.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[10th Mountain Division (United States)|10th Mountain Division]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[4th Infantry Division (United States)|4th Infantry Division]]
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"Adopt a [[Greyhound]]"
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"Adopt a [[Pet adoption|Shelter Pet]]"
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"Advancing [[Sustainable energy|Clean Energy]]"
+|Discontinued. See electric vehicle and Go Carbon Neutral plates.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Air Force Cross (United States)|Air Force Cross]]
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[ALS]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Amateur Radio]]&mdash;Commercial
+|Stacked "CCL" prefix. Serial is callsign.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Amateur Radio&mdash;Passenger
+|Stacked "SCL" prefix. Serial is callsign.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Native Americans in the United States|American Indian]] Scholars
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Aviation]] 
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Born To Be Wild
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Colorado Boy Scouts Of America license plate.jpg|150px]]
+|Boy Scouts
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Denver Broncos|Broncos]] Country
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Bronze Star Medal|Bronze Star]]
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Bronze Star of Valor
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Child Loss Awareness
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Childhood Cancer]] Awareness
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Civil Air Patrol]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Collector Truck/Tractor
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:COcollectorvehicle.jpg|150px]]
+|[[Antique car|Collector Vehicle]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado Avalanche]] Country
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado College]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado Mesa University]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado School of Mines]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado State University]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado Rockies]] Country
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado State University Pueblo]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"[[Breast cancer|Committed to a Cure]]"
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Denver, Colorado|Denver]] [[Firefighter]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Denver Nuggets]] Country
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Designer
+|Serial is embossed. Personalized variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Designer&mdash;Truck
+|Stacked "TRK" prefix; serial is embossed.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Veteran
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Disabled Veteran Handicapped
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Distinguished Flying Cross (United States)|Distinguished Flying Cross]]
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Distinguished Service Cross (United States)|Distinguished Service Cross]]
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Donate Life
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"[[Elks]] Care, Elks Share"
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fallen Airman
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fallen Guardsman
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fallen Marine
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fallen Sailor
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Fallen Soldier
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Firefighter
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Fort Lewis College]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Go Carbon Neutral 
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"[[Agriculture|Growing Your Future]]"
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Honorably Discharged Veteran
+|Plate is screen printed. Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Honorary Consul]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Horseless Carriage]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Italian American]]
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Kids1st
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Korean War]] Veteran
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Medal of Honor]]
+|Motorcycle variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[List of United States representatives from Colorado|Member U.S. Congress]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[List of United States senators from Colorado|Member U.S. Senate]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Mesa Verde National Park]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle Collector
+|Issued only on motorcycles. Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Metropolitan State University of Denver|MSU Denver]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[National Guard (United States)|National Guard]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Navy Cross (United States)|Navy Cross]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[North American Aerospace Defense Command|NORAD]]
+|Commemorated NORAD's 50th anniversary. Issued from July 1, 2008, through January 1, 2010.<ref>{{cite web |title=Military Plates |url=https://www.colorado.gov/cs/Satellite/Revenue-MV/RMV/1201542141638 |publisher=Colorado Department of Revenue |url-status=live |archive-url=https://web.archive.org/web/20100306125428/http://www.colorado.gov/cs/Satellite/Revenue-MV/RMV/1201542141638 |archive-date=March 6, 2010 |access-date=November 24, 2008}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Pearl Harbor Survivor]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[American pioneer|Pioneer]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Prisoner of War]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Purple Heart]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Regis University]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|"[[Columbine High School massacre|Respect Life]]"
+|Plate was made to recognize the survivors and victims of the Columbine High School massacre.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Respects [[Wildlife]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Passenger&mdash;Personalized
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Bicycle law in the United States|Share the Road]]
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Silver Star]]
+|
+|-
+|[[File:Colorado Ski Country USA plate.jpg|150px]]
+|Ski Country U.S.A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Special Olympics]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado House of Representatives|State Representative]]
+|'''R'''-000 serial format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Colorado Senate|State Senator]]
+|'''S'''-00 serial format.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Stegosaurus]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Hot rod|Street Rod]]
+|Personalized variant also issued.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Submarine Service
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support [[Education]]
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support the 10th Mountain Division
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support the Horse
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Support the Troops
+|Personalized, motorcycle, and personalized motorcycle variants also issued; neither personalized variant has the logo at the center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Colorado Boulder|University of Colorado]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Denver]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[University of Northern Colorado]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Air Force|U.S. Air Force]]
+|Available only to veterans.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|U.S. Air Force 50th Anniversary
+|Available to general public.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Air Force Academy|U.S. Air Force Academy]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Army|U.S. Army]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[U.S. Army Special Forces]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Coast Guard|U.S. Coast Guard]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Marine Corps|U.S. Marine Corps]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Navy|U.S. Navy]]
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Vietnam War|Vietnam]] Veteran
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Western Colorado University]]
+|Personalized variant also issued, with no logo at center.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[World War II]] Veteran
+|-
+|}
+
+===Prior to 2000===
+{|class="wikitable"
+|-
+!Image!!Type!!Serial format!!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[10th Mountain Division (United States)|10th Mountain Division]]
+|12345'''E'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Collector Truck/Tractor
+|12'''Z'''34
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Antique car|Collector Vehicle]]
+|12'''N'''34<br />12'''R'''34
+|
+|-
+|[[File:1994 Colorado license plate H1G5313 denim designer.jpg|150px]]
+|Denim
+|Coded by county of issuance:<br />''A1B''1234
+|Successor to Designer base; issued from July 1992 to December 1999. Still currently revalidated.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Designer
+|Coded by county of issuance:<br />''A1B''-123
+|Issued from January 1989 to June 1992. Still currently revalidated.
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Firefighter
+|12345'''F'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Honorably Discharged Veteran
+|12345'''B'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Pioneers
+|12345'''D'''
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Purple Heart]]
+|'''0'''12345
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[United States Air Force]]
+|12345'''C'''
+|
+|}
+
+==Renewal date tags==
+Colorado implemented a monthly staggered registration system in 1978, with separate stickers for the month and year of the expiration date (placed at the bottom left and bottom right of the plate respectively). {{As of|2024}}, month stickers are blue on white, while year stickers rotate through a four-color system introduced in 2002, as follows:
+{{col-begin}}
+{{col-break}}
+* <span style='font-size:medium;color:black;background-color:yellow;'>''' 02 '''</span>
+* <span style='font-size:medium;color:black;background-color:yellow;'>''' 06 '''</span>
+* <span style='font-size:medium;color:black;background-color:yellow;'>''' 10 '''</span>
+* <span style='font-size:medium;color:black;background-color:yellow;'>''' 14 '''</span>
+* <span style='font-size:medium;color:black;background-color:yellow;'>''' 18 '''</span>
+* <span style='font-size:medium;color:black;background-color:yellow;'>''' 22 '''</span>
+* <span style='font-size:medium;color:black;background-color:yellow;'>''' 26 '''</span>
+{{col-break}}
+* <span style='font-size:medium;color:black;background-color:red;'>''' 03 '''</span>
+* <span style='font-size:medium;color:black;background-color:red;'>''' 07 '''</span>
+* <span style='font-size:medium;color:black;background-color:red;'>''' 11 '''</span>
+* <span style='font-size:medium;color:black;background-color:red;'>''' 15 '''</span>
+* <span style='font-size:medium;color:black;background-color:red;'>''' 19 '''</span>
+* <span style='font-size:medium;color:black;background-color:red;'>''' 23 '''</span>
+* <span style='font-size:medium;color:black;background-color:red;'>''' 27 '''</span>
+{{col-break}}
+* <span style='font-size:medium;color:black;background-color:lightgreen;'>''' 04 '''</span>
+* <span style='font-size:medium;color:black;background-color:lightgreen;'>''' 08 '''</span>
+* <span style='font-size:medium;color:black;background-color:lightgreen;'>''' 12 '''</span>
+* <span style='font-size:medium;color:black;background-color:lightgreen;'>''' 16 '''</span>
+* <span style='font-size:medium;color:black;background-color:lightgreen;'>''' 20 '''</span>
+* <span style='font-size:medium;color:black;background-color:lightgreen;'>''' 24 '''</span>
+{{col-break}}
+* <span style='font-size:medium;color:black;background-color:orange;'>''' 05 '''</span>
+* <span style='font-size:medium;color:black;background-color:orange;'>''' 09 '''</span>
+* <span style='font-size:medium;color:black;background-color:orange;'>''' 13 '''</span>
+* <span style='font-size:medium;color:black;background-color:orange;'>''' 17 '''</span>
+* <span style='font-size:medium;color:black;background-color:orange;'>''' 21 '''</span>
+* <span style='font-size:medium;color:black;background-color:orange;'>''' 25 '''</span>
+{{col-end}}
+
+==See also==
+{{portal|Transportation|History|United States|Colorado}}
+*[[Colorado Department of Revenue]]
+*[[Colorado Department of Transportation]]
+*[[History of Colorado]]
+{{clear}}
+
+==References==
+{{reflist}}
+
+==External links==
+{{sister project links|Colorado|auto=yes}}
+*[https://www.colorado.gov/ State of Colorado]
+**[https://www.codot.gov/ Colorado Department of Transportation]
+**[https://cdor.colorado.gov/ Colorado Department of Revenue]
+***[https://dmv.colorado.gov/ Colorado Division of Motor Vehicles]
+****[https://dmv.colorado.gov/license-plates Colorado license plates]
+{{Vehicle registration plates of the United States}}
+{{North America in topic|Vehicle registration plates of}}
+{{Colorado|expanded}}
+{{authority control}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of Colorado}}
+[[Category:Vehicle registration plates of the United States by state or territory|Colorado]]
+[[Category:Symbols of Colorado]]
+[[Category:Transportation in Colorado]]
+[[Category:1913 introductions]]
+[[Category:1913 in transport]]
+[[Category:Colorado transportation-related lists]]

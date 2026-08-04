@@ -1,0 +1,1196 @@
+{{Short description|none}}
+{{Use Canadian English|date=April 2014}}
+{{Infobox vehicle registration plate
+| image = BC August 2025 License Plate.jpg
+| caption = 
+| nickname = 
+| slogan_label = Slogan
+| slogan = Beautiful British Columbia
+| size = {{convert|12|x|6|in|cm|abbr=on|disp=br}}
+| material = Aluminum
+| serial_format = A12 3BC
+| current_start_date = {{Start date|1985}}
+| designer = 
+| issuer = [[Insurance Corporation of British Columbia]]
+| manufacturer = Waldale Manufacturing Limited, [[Amherst, Nova Scotia]]
+| start_date = {{Start date|1913|01}}<br>(pre-provincial plates from February 1904 to December 1912)
+}}
+The [[Provinces and territories of Canada|Canadian province]] of [[British Columbia]] first required its residents to register their [[motor vehicle]]s in 1904. Registrants provided their own [[Vehicle registration plate|licence plate]]s for display until 1913, when the province began to issue plates.<ref>{{cite news|title=Our History: Licence plates mirror B.C.'s past |url=https://www.timescolonist.com/life/islander/our-history-licence-plates-mirror-b-c-s-past-1.977431 |newspaper=[[Times Colonist]] |location=Victoria, BC |date=April 20, 2014 |access-date=August 6, 2017}}</ref>
+
+{{As of|2022}}, plates are issued by the provincial motor vehicle insurer, the [[Insurance Corporation of British Columbia]] (ICBC). Front and rear plates are required for most classes of vehicles, while only rear plates are required for motorcycles and trailers.
+
+== Passenger baseplates ==
+=== 1913 to 1969 ===
+In 1956, Canada, the United States, and Mexico came to an agreement with the [[American Association of Motor Vehicle Administrators]], the [[Automobile Manufacturers Association]] and the [[National Safety Council]] that standardized the size for licence plates for vehicles (except those for [[motorcycle]]s) at {{convert|6|in|cm}} in height by {{convert|12|in|cm}} in width, with standardized mounting holes.<ref>{{cite magazine |last=Garrish |first=Christopher |date=October 2016 |title=Reconsidering the Standard Plate Size |magazine=Plates |publisher=[[Automobile License Plate Collectors Association]] |volume=62 |number=5}}</ref> The 1954 (dated 1955) issue was the first British Columbia licence plate that complied with these standards.
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1913
+|White serial on blue porcelain plate; vertical "B.C." and "1913" at left and right respectively
+|''none''
+|1234
+|1 to approximately 6900
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1914
+|Black serial on white porcelain plate; "BC" monogram and "1914" at left
+|''none''
+|1234
+|1 to approximately 7900
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1915
+|White serial on green flat metal plate; [[Coat of arms of British Columbia|provincial coat of arms]] at left with "B.C. 1915" below
+|''none''
+|1234
+|1 to approximately 7700
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1916
+|Black serial on yellow flat metal plate; provincial coat of arms at left with "B.C. 1916" below
+|''none''
+|1234
+|1 to approximately 9400
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1917
+|Black serial on white flat metal plate; provincial coat of arms at left with "B.C. 1917" below
+|''none''
+|12345
+|1 to approximately 13000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]] [[File:Blank License Plate Shape.svg|center|150px]]
+|{{nowrap|1918–19}}
+|Embossed yellow serial on black plate with border line; "BC" monogram and "1918" within box at left
+|''none''
+|12345
+|1 to approximately 22000
+|First embossed plate. Revalidated for 1919 with green tabs.
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]] [[File:Blank License Plate Shape.svg|center|150px]] [[File:Blank License Plate Shape.svg|center|150px]]
+|1920–22
+|As 1918–19 base, but without box and with "1920" below monogram
+|''none''
+|12345
+|1 to approximately 39500
+|Revalidated for 1921 with red tabs, and for 1922 with green tabs.
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1923
+|Embossed yellow serial on green plate with border line; "BC 1923" at left
+|''none''
+|12345
+|1 to approximately 38500
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1924
+|Embossed yellow serial on black plate with border line; "BRITISH COLUMBIA" at bottom and "24" at right
+|''none''
+|12-345
+|1 to approximately 45-000
+|First use of the full province name.
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1925
+|Embossed white serial on black plate with border line; "BRITISH COLUMBIA" at bottom and "25" at right
+|''none''
+|12-345
+|1 to approximately 57-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1926
+|Embossed black serial on white plate with border line; "BRITISH COLUMBIA" at bottom and "26" at right
+|''none''
+|12-345
+|1 to approximately 69-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1927
+|Embossed black serial on orange plate with border line; "BRITISH COLUMBIA" at bottom and "27" at right
+|''none''
+|12-345
+|1 to approximately 77-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1928
+|Embossed orange serial on black plate with border line; "BRITISH COLUMBIA" at bottom and "28" at right
+|''none''
+|12-345
+|1 to approximately 90-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1929
+|Embossed black serial on tan plate with border line; "BRITISH COLUMBIA" at bottom and "29" at right
+|''none''
+|12-345
+|1 to approximately 99-999
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1930
+|Embossed yellow serial on red plate with border line; "BRITISH COLUMBIA" at bottom and "30" at right
+|''none''
+|{{nowrap|123-456}}
+|1 to approximately 103–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1931
+|Embossed black serial on white plate with border line; "BRITISH COLUMBIA" at bottom and "31" at right
+|''none''
+|123-456
+|1 to approximately 108–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1932
+|Embossed white serial on brown plate with border line; "BRITISH COLUMBIA" at bottom and "32" at right
+|''none''
+|123-456
+|1 to approximately 120–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1933
+|Embossed brown serial on yellow plate with border line; "BRITISH COLUMBIA" at bottom and "33" at right
+|''none''
+|12-345
+|1 to approximately 99-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1934
+|Embossed white serial on blue plate with border line; "BRITISH COLUMBIA" at bottom and "34" at right
+|''none''
+|12-345
+|1 to approximately 96-000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1935
+|Embossed blue serial on white plate with border line; "BRITISH COLUMBIA" at bottom and "35" at right
+|''none''
+|123-456
+|1 to approximately 102–000
+|
+|-
+|[[File:Canada British Columbia license plate 1936 graphic.png|center|150px]]
+|1936
+|Embossed white serial on green plate with border line; "BRITISH COLUMBIA" at bottom and vertical "36" at right
+|''none''
+|12-345
+|1 to approximately 89-000
+|
+|-
+|[[File:Canada British Columbia license plate 1937 graphic.png|center|150px]]
+|1937
+|Embossed black serial on cream plate with border line; "BRITISH COLUMBIA" at bottom and vertical "37" at right
+|''none''
+|12-345
+|1 to approximately 91-000
+|
+|-
+|[[File:Canada British Columbia license plate 1938 graphic.png|center|150px]]
+|1938
+|Embossed cream serial on brown plate with border line; "BRITISH COLUMBIA" at bottom and vertical "38" at right
+|''none''
+|12-345
+|1 to approximately 97-000
+|
+|-
+|[[File:Canada British Columbia license plate 1939 graphic.png|center|150px]]
+|1939
+|Embossed black serial on yellow plate with border line; "BRITISH COLUMBIA" at bottom and vertical "39" at right
+|''none''
+|12-345
+|1 to approximately 99-000
+|
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1940 graphic.png|center|150px]]
+|rowspan="2"|1940
+|rowspan="2"|Embossed yellow serial on black plate with border line; "BRITISH COLUMBIA" at bottom and vertical "40" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|'A' prefix serials were issued from [[Vancouver Island]], 'B' prefixes from [[Vancouver]], and 'F' prefixes from [[New Westminster]]. This practice continued through 1947.<ref name="allaboutlicenseplatesBC">{{cite web |last=Tanner |first=Eric N. |title=British Columbia Passenger License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Passenger&jurisdiction=British%20Columbia&code=bc |publisher=allaboutlicenseplates.com |access-date=November 19, 2020}}</ref>
+|-
+|''A''1-234
+|Coded by branch office (see right)
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1941 graphic.png|center|150px]]
+|rowspan="2"|1941
+|rowspan="2"|Embossed blue serial on white plate with border line; "BRITISH COLUMBIA" at bottom and vertical "41" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1942 graphic.png|center|150px]]
+|rowspan="2"|1942
+|rowspan="2"|Embossed white serial on blue plate with border line; "BRITISH COLUMBIA" at bottom and vertical "42" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|Produced in pairs but only single plates issued; the remaining plates were restamped and repainted for use in 1943, due to metal conservation for [[World War II]].<ref>{{cite book|last=Garrish |first=Christopher |date=2013 |title=Tales from the Back Bumper: A Century of BC Licence Plates |publisher=Heritage House |location=Victoria, BC |page=60 |isbn=978-1-927527-03-0}}</ref>
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1943 graphic.png|center|150px]]
+|rowspan="2"|1943
+|rowspan="2"|Embossed black serial on cream plate with border line; "BRITISH COLUMBIA" at bottom and vertical "43" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|Restamped and repainted 1942 plates.
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1944 graphic.png|center|150px]]
+|rowspan="2"|1944
+|rowspan="2"|Embossed cream serial on black plate with border line; "BRITISH COLUMBIA" at bottom and vertical "44" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1945 graphic.png|center|150px]]
+|rowspan="2"|1945
+|rowspan="2"|Embossed red serial on white plate with border line; "BRITISH COLUMBIA" at bottom and vertical "45" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1946 graphic.png|center|150px]]
+|rowspan="2"|1946
+|rowspan="2"|Embossed white serial on red plate with border line; "BRITISH COLUMBIA" at bottom and vertical "46" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1947 graphic.png|center|150px]]
+|rowspan="2"|1947
+|rowspan="2"|Embossed green serial on white plate with border line; "BRITISH COLUMBIA" at bottom and vertical "47" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|rowspan="2"|[[File:Canada British Columbia license plate 1948 graphic.png|center|150px]]
+|rowspan="2"|1948
+|rowspan="2"|Embossed white serial on green plate with border line; "BRITISH COLUMBIA" at bottom and vertical "48" at right
+|rowspan="2"|''none''
+|12-345
+|1 to 99-999
+|rowspan="2"|
+|-
+|''A''1-234
+|Coded by branch office
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1949
+|Embossed black serial on yellow plate with border line; "BRITISH COLUMBIA" at bottom and vertical "49" at right
+|''none''
+|123-456
+|1 to approximately 168–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]] [[File:Blank License Plate Shape.svg|center|150px]]
+|1950–51
+|Embossed yellow serial on black plate with border line; "BRITISH COLUMBIA" at bottom and vertical "50" at right
+|''none''
+|123-456
+|1 to approximately 237–000
+|Revalidated for 1951 with white tabs.
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]] [[File:Blank License Plate Shape.svg|center|150px]] [[File:Blank License Plate Shape.svg|center|150px]]
+|1952–54
+|Embossed black serial on unpainted aluminum plate with border line; embossed [[totem]] and maple leaf graphic at right; "BRITISH COLUMBIA" at bottom, offset to left; "52" above graphic
+|''none''
+|12-345<br>A1-234<br>1A-234<br>1-234A
+|
+|Revalidated for 1953 with blue tabs, and for 1954 with black tabs. Later plates manufactured without the graphic.
+|-
+|[[File:Canada British Columbia license plate 1955 graphic.png|center|150px]]
+|1955
+|Embossed black serial on golden yellow plate with border line; "BRITISH COLUMBIA 55" at bottom
+|''none''
+|123-456
+|1 to approximately 310–000
+|First 6" x 12" plate.
+|-
+|[[File:Canada British Columbia license plate 1956 graphic.png|center|150px]]
+|1956
+|Embossed golden yellow serial on black plate with border line; "BRITISH COLUMBIA 56" at bottom
+|''none''
+|123-456
+|1 to approximately 352–000
+|
+|-
+|[[File:Canada British Columbia license plate 1957 graphic.png|center|150px]]
+|1957
+|Embossed dark blue serial on white plate with border line; "BRITISH COLUMBIA 57" at bottom
+|''none''
+|123-456
+|1 to approximately 402–000
+|
+|-
+|[[File:Canada British Columbia license plate 1958 graphic.png|center|150px]]
+|1958
+|Embossed green serial on gold plate with border line; "BRITISH COLUMBIA" centred at top
+|"1858 CENTENARY 1958" at bottom
+|123-456
+|1 to approximately 421–000
+|Commemorated the 100th anniversary of the creation of the [[Colony of British Columbia (1858–1866)|Colony of British Columbia]].
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1959
+|Embossed turquoise serial on maroon plate with border line; "BRITISH COLUMBIA 59" at bottom
+|''none''
+|123-456
+|1 to approximately 432–000
+|
+|-
+|[[File:Blank License Plate Shape.svg|center|150px]]
+|1960
+|Embossed maroon serial on turquoise plate with border line; "BRITISH COLUMBIA 60" at bottom
+|''none''
+|123-456
+|1 to approximately 453–000
+|
+|-
+|[[File:Canada British Columbia license plate 1961 graphic.png|center|150px]]
+|1961
+|Embossed maroon serial on pink plate with border line; "BRITISH COLUMBIA 61" at bottom
+|''none''
+|123-456
+|1 to approximately 471–000
+|
+|-
+|[[File:Canada British Columbia license plate 1962 graphic.png|center|150px]]
+|1962
+|Embossed pink serial on maroon plate with border line; "BRITISH COLUMBIA 62" at bottom
+|''none''
+|123-456
+|1 to approximately 509–000
+|
+|-
+|[[File:Canada British Columbia license plate 1963 graphic.png|center|150px]]
+|1963
+|Embossed white serial on blue plate with border line; "BRITISH COLUMBIA 63" at bottom
+|''none''
+|123-456
+|1 to approximately 534–000
+|
+|-
+|[[File:Canada British Columbia license plate 1964 graphic.png|center|150px]]
+|1964
+|Embossed blue serial on white plate with border line; "BRITISH COLUMBIA" centred at bottom; "64" at bottom right
+|"BEAUTIFUL" centred at top
+|123-456
+|1 to approximately 573–000
+|First use of the "Beautiful British Columbia" slogan.
+|-
+|[[File:Canada British Columbia license plate 1965 graphic.png|center|150px]]
+|1965
+|Embossed white serial on blue plate with border line; "BRITISH COLUMBIA" centred at bottom; "65" at top right
+|"BEAUTIFUL" centred at top
+|123-456
+|1 to approximately 630–000
+|
+|-
+|[[File:Canada British Columbia license plate 1966 graphic.png|center|150px]]
+|1966
+|Embossed blue serial on white plate with border line; "BRITISH COLUMBIA" centred at bottom; "66" at top right
+|"BEAUTIFUL" centred at top
+|123-456
+|1 to approximately 674–000
+|
+|-
+|[[File:Canada British Columbia license plate 1967 graphic.png|center|150px]]
+|1967
+|Embossed red serial on white plate with border line; "BRITISH COLUMBIA" centred at bottom; "67" at top right
+|"BEAUTIFUL" centred at top
+|123-456
+|1 to approximately 720–000
+|Colours chosen to commemorate the [[Canadian Centennial|centennial of Canadian Confederation]].<ref>{{cite web|last=Garrish |first=Christopher |title=British Columbia Passenger License Plates 1964-1969 |url=https://www.bcpl8s.ca/Passenger-1964-1969.html |website=www.bcpl8s.ca |access-date=March 22, 2020}}</ref>
+|-
+|[[File:Canada British Columbia license plate 1968 graphic.png|center|150px]]
+|1968
+|Embossed blue serial on white plate with border line; "BRITISH COLUMBIA" centred at bottom; "19" at top left and "68" at top right
+|"BEAUTIFUL" centred at top
+|123-456
+|1 to approximately 762–000
+|
+|-
+|[[File:Canada British Columbia license plate 1969 graphic.png|center|150px]]
+|1969
+|Embossed white serial on blue plate with border line; "BRITISH COLUMBIA" centred at bottom; "19" at top left and "69" at top right
+|"BEAUTIFUL" centred at top
+|123-456
+|1 to approximately 805–000
+|
+|}
+
+=== 1970 to present ===
+British Columbia introduced an ABC-123 serial format on its passenger plates in 1970. A split-alphabet system was used, with each letter advancing from A through K, or from L through X (the letters I, O, Q, U, Y and Z were omitted). Serials were thus issued in the following eight series: AAA–KKJ, AAL–KKX, ALA–KXK, ALL–KXX, LAA–XKK, LAL–XKX, LLA–XXK and LLL–XXX.<ref name="allaboutlicenseplatesBC"/> When the ABC-123 format was exhausted in 2001, a reversed format, 123-ABC, was introduced, with the same split-alphabet system and thus the same eight series. Upon the exhaustion of this format in 2014, an AB1-23C format was introduced, with the split-alphabet system discontinued and each letter thus advancing from A through X. In 2025, another format, A12-3BC was introduced, with a new alphabet system which allows the letters U, Y, and Z to be used (with the letters I, O, and Q still omitted).<ref>{{Cite web |last=Dicdiquin |first=Christopher |date=June 9, 2025 |title=Bulletin 33 - Changes to B.C. license plates |url=https://partners.icbc.com/assets/5GMseymkqs8E4Otb8osoGQ/bulletin-33-new-licence-plate-configurations.pdf |url-status=live |archive-url=https://web.archive.org/web/20250626034355/https://partners.icbc.com/assets/5GMseymkqs8E4Otb8osoGQ/bulletin-33-new-licence-plate-configurations.pdf |archive-date=June 26, 2025 |website=partners.icbc.com}}</ref>
+
+{|class="wikitable"
+|-
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!style="width:100px;"|Serials issued
+!Notes
+|-
+|[[File:British Columbia License Plate 1970.jpg|150px]]
+|{{nowrap|1970–72}}
+|Blue on white
+|Beautiful British Columbia
+|{{nowrap|ABC-123}}
+|AAA-000 to KKJ-999;<br>KLL-000 to KXX-999
+|Validated each year with stickers.
+|-
+|[[File:British Columbia License Plate 1973.jpg|150px]]
+|1973–78
+|Blue on white
+|Beautiful British Columbia
+|ABC 123
+|LAA 000 to XKK&nbsp;999; LLA&nbsp;000 to XXK&nbsp;999; LLL&nbsp;000 to PXX&nbsp;999
+|Later plates manufactured in Quebec using that province's serial [[Die (manufacturing)|die]]s.
+|-
+|[[File:British Columbia License Plate 1979.jpg|150px]]
+|1979–85
+|White on blue
+|Beautiful British Columbia
+|ABC-123
+|AAA-000 to KKJ-999;<br>AAL-000 to KKX-999;<br>ALL-000 to KXX-999;<br>ALA-000 to BRB-999
+|Early plates manufactured in Quebec.
+|-
+|[[File:1985 British Columbia license plate MBG 091.jpg|150px]]
+|1985–2001
+|rowspan="4" style="width: 14em"|Blue on reflective white with screened stylized provincial flag in centre
+|rowspan="4"|Beautiful British Columbia
+|ABC 123
+|LAA 000 to XXX&nbsp;999
+|
+|-
+|[[File:British Columbia License Plate 143 GKN.jpg|150px]]
+|2001– August 2014
+|123 ABC
+|000 AAA to 999&nbsp;XXX; 000&nbsp;MJG&nbsp;to 999&nbsp;MXX
+|'M' series of serials initially reserved for 2010 Winter Olympics plates; unused serials were issued on the standard base in mid-2014 following 999 XXX. 'V' series reserved for Veteran plates. Numbers 400 through 499 omitted from serials starting in 2008, due to [[Tetraphobia|problems surrounding the number 4]] among the province's [[Chinese Canadians|Chinese population]].<ref>{{cite web |last=Garrish |first=Christopher |title=British Columbia Passenger License Plates 2001-2014 |url=https://www.bcpl8s.ca/Passenger-2001-2014.html |website=www.bcpl8s.ca |access-date=March 6, 2018}}</ref>
+|-
+|[[File:British Columbia 2017 Passenger License Plate CF346E.jpg|150px]]
+|August 2014&nbsp;–August 2025
+|AB1 23C
+|AA0 00A to NX9&nbsp;99X; SA0&nbsp;00A to XX9&nbsp;99X
+|Serials PA0&nbsp;00A through RX9&nbsp;99X reserved for BC Parks plates.
+|-
+|[[File:BC August 2025 License Plate.jpg|150px]]
+|August 2025&nbsp;–present
+|A12 3BC
+|A00&nbsp;0AA to B60&nbsp;1CC {{small|(as of July 26, 2026)}}
+|Letters U, Y and Z added back to serials. Serials P00&nbsp;0AA through S99&nbsp;9ZZ reserved for BC Parks plates.
+|}
+
+== Truck plates 1973 to present ==
+The current standard truck plate is issued to both commercial and private trucks, and also to buses and taxis.<ref>{{cite web |last=Garrish |first=Christopher |title=British Columbia Commercial Truck License Plates |url=https://www.bcpl8s.ca/Commercial-Truck.html |website=www.bcpl8s.ca |access-date=May 13, 2020}}</ref>
+{|class="wikitable"
+|-
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:British Columbia Truck License Plate 1973.jpg|150px]]
+|1973
+|Black on white
+|Beautiful British Columbia
+|123-456
+|500-001 to 999-999
+|
+|-
+|[[File:British Columbia Truck License Plate 1976.jpg|150px]]
+|1976
+|Orange on white
+|Beautiful British Columbia
+|{{nowrap|12-34-AB}}
+|00-00-AA to approximately 25-00-DS
+|Letters I, O, Q, U, Y, and Z not used in serials; this practice continues today, with some letters reintroduced in 2026.<ref>{{cite web |last=Tanner |first=Eric N. |title=British Columbia Truck-Commercial License Plates |url=https://allaboutlicenseplates.com/displayPage.asp?country=CANADA&p=Truck-Commercial&jurisdiction=British%20Columbia&code=bc |publisher=allaboutlicenseplates.com |access-date=January 13, 2021}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1979
+|Green on white
+|Beautiful British Columbia
+|12-34-AB
+|00-00-FA to approximately 10-00-LY
+|
+|-
+|[[File:British Columbia Truck License Plate 4826HP.jpg|150px]]
+|1985
+|rowspan="3"|Blue on reflective white with screened stylized provincial flag used as separator
+|rowspan="3"|Beautiful British Columbia
+|1234 AB
+|0000 MB to 9999&nbsp;YY; 0000&nbsp;AA to approximately 9999&nbsp;LR
+|rowspan="2"|
+|-
+|[[File:1985 British Columbia license plate CD 7172.jpg|150px]]
+|2008
+|AB 1234
+|AL 0000 to YA&nbsp;2613 {{small|(as of July 11, 2026)}}
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2026
+|1AB 234
+|0AA 000 to 9AZ 999 {{small|(as of July 7, 2026)}}
+|U, Y, and Z reintroduced to the pool of possible combinations in serials
+|}
+
+== Non-passenger plates ==
+=== Motorcycle plates ===
+{| class="wikitable"
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:British Columbia Motorcycle License Plate 1974.jpg|150px]]
+|1974-78
+|Orange on white plate, "B.C." in top left corner; "MOTORCYCLE" screened at bottom centre.
+|''none''
+|123456
+|
+|
+|-
+|[[File:British Columbia 1979 MOTORCYCLE Baseplate.jpg|150px]]
+|1979-85
+|White on blue, "B.C." in top left corner; "MOTORCYCLE" screened at bottom centre.
+|''none''
+|A12-345
+|
+|
+|-
+|[[File:British Columbia Motorcycle License Plate 1994.jpg|150px]]
+|1985
+|Blue on reflective white with screened stylized provincial flag in centre
+|Beautiful British Columbia
+|N1-2345
+|J6-7000 to E9-9999; K4-2000 to S3-9999
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2021
+|Blue on reflective white with "M.C." in bottom left corner; BC sun logo in bottom right corner.
+|Beautiful British Columbia
+|N12345 1234A5
+|S59000 to J66999; 0000A0 to 4225B2<br>(As of July 9, 2026)
+|
+|
+|-
+|}
+
+=== Antique plates ===
+{| class="wikitable"
+!Image
+!Dates issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1966-72
+|Black serial on white plate; "VINTAGE" screened at top
+|BRITISH COLUMBIA
+|123
+|
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1972-74
+|Black serial on white plate; "VINTAGE" screened at top
+|BRITISH COLUMBIA
+|1<br> 12
+|
+|
+|-
+|[[File:British Columbia Antique Vehicle License plate 1294.jpg|150px]]
+|1974–present
+|Black serial on white plate; "VINTAGE" screened at top
+|BRITISH COLUMBIA
+|1234
+|1001 to present
+|Issued to vehicles 25 years old or older, or 15 years old or older and of a limited production run.
+|}
+
+=== Other non-passenger ===
+{|class="wikitable"
+|-
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!style="width:75px;"|Serials issued
+!Notes
+|-
+|[[File:British Columbia Amateur Radio licence plate.png|150px]]
+|[[Amateur radio]]
+|1985
+|White background with blue text (identical to standard passenger plates)
+|Beautiful British Columbia
+|'''VE7'''AB<br>'''VE7'''ABC<br>'''VA7'''ABC
+|VE7AA to VE7ZZ; VE7AAA to VE7ZZZ; VA7AAA to VA7ZZZ
+|Available to holders of a valid [[amateur radio]] licence.<ref name=":4">{{Cite web|url=https://www.icbc.com/vehicle-registration/licence-plates/Pages/Ham-radio-plates.aspx|title=ICBC - Ham radio plates |website=www.icbc.com |access-date=January 2, 2020}}</ref>
+|-
+|[[File:British Columbia Collector License Plate B45-249.jpg|150px]]
+|Collector
+|1990
+|White background with black text
+|''none''
+|'''B'''12 345 <br>1'''M'''2-345
+|B00-001 to B39-999; 0M0-000 to 9M9-999
+|New serial format introduced in 2020.
+|-
+|[[File:British Columbia Dealer License Plate 1986.jpg|150px]]
+|Dealer
+|1985
+|Blue on reflective white with screened stylized provincial flag used as separator; DEMONSTRATION screened in blue at top.
+|''none''
+|'''D'''1 2345
+|D0-0000 to D9-9999
+|
+|-
+|[[File:BC licence plate - repair.jpg|thumb|BC Repairer license plate]]☢
+|Repair
+|
+|Blue on reflective white with screened stylized provincial flag used as separator; REPAIRER screened in blue at top.
+|''none''
+|'''R'''1 2345
+|R0-0000 to R9-9999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Transporter
+|
+|Blue on reflective white with screened stylized provincial flag used as separator; TRANSPORTER screened in blue at top.
+|''none''
+|'''T'''R 1234
+|TR 0000 to TY 9999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Manufacturer 
+|
+|Blue on reflective white with screened stylized provincial flag used as separator; MANUFACTURER screened in blue at top.
+|''none''
+|'''M'''A 1234
+|MA 0000 to MA 9999
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Prorated
+|
+|Blue on reflective white with screened stylized provincial flag
+used as separator; APPORTIONED screened in blue at top.
+|''none''
+|'''P'''1 2345 1234 5'''P''' 1234 '''P'''5
+|P0 0000 to P9 9999; 0000 0P to 9999 9P; 0000 P0 to 0014 P1 (As of June 4, 2026)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Commercial Trailer
+|
+|Blue on reflective white with screened stylized provincial flag used as separator.
+|Beautiful British Columbia 
+|1234 5B
+|0000 0V to 5999 9L; 0000 0Y to 2499 9Y; 6000 0L to 6383 6L (As of June 25, 2026)
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Trailer
+|
+|Blue on reflective white with screened stylized provincial flag used as separator; TRAILER screened in blue at top (2015)
+|Beautiful British Columbia (1985 to 2015)
+|123 456 '''U'''BC 12D '''W'''BC 12D
+|000 001 to 999 999; UAA 00A to UYY 99Y; WAA 00A to WXV 00G (As of June 1, 2026)
+|
+|}
+
+== Consular plates 1967 to present ==
+{| class="wikitable"
+!Image
+!First issued
+!Design
+!Slogan
+!Notes
+!Serial format
+!Serials issued
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1967
+|The first year diplomat plates are issued with date stamped plates changing yearly from red-on-white, blue-on-white, and white-on-blue.
+|Beautiful British Columbia
+|Date stamped from 1967 to 1972
+|CONSUL 123
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1973
+|The first year for decals, small decals, in the blue-on-white colour scheme.
+|Beautiful British Columbia
+|Small decal from 1973 to 1978
+|CONSUL 123
+|101-500
+501–600
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1979
+|The first year for large decals, in the white-on-blue colour scheme.
+|Beautiful British Columbia
+|Large decal from 1979 to 1985
+|CONSUL 123
+|002-100
+601–999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|1986
+|The first year of the "flag graphic" plates with the blue-on-white colour scheme.
+|Beautiful British Columbia
+|Flag graphic
+|CONSUL 123
+|101-500
+501–999
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2001
+|Continuation of the flag graphic with a change of serial format
+|Beautiful British Columbia
+|Flag graphic
+|CONSUL A12
+|A01-D99*
+<nowiki>*</nowiki>Unconfirmed
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|Red background with white writing and rising sun logo; created by ICBC and the Department of Foreign Affairs in Ottawa
+|''none''
+|'''Diplomat-level Representative''' - Includes dependents or International Organizations
+|DL 123A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|Red background with white writing and rising sun logo; created by ICBC and the Department of Foreign Affairs in Ottawa
+|''none''
+|'''Career Consular Officers''' - Includes level foreign representatives and their dependents or Consular Post where headed by a Career Officer
+|CC 123A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|Red background with white writing and rising sun logo; created by ICBC and the Department of Foreign Affairs in Ottawa
+|''none''
+|'''Honorary Consular Officers''' - Includes Canadian citizens, level foreign representatives or a Consular Post where headed by Honorary Consular
+|HC 123A
+|
+|-
+|[[File:1985 British Columbia license plate CS 015A diplomatic.jpg|150px]]
+|2007
+|Red background with white writing and rising sun logo; created by ICBC and the Department of Foreign Affairs in Ottawa
+|''none''
+|'''Consular Staff''' - Includes administrative, technical and service level foreign representatives and their dependents
+|CS 123A
+|
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|2007
+|Red background with white writing and rising sun logo; created by ICBC and the Department of Foreign Affairs in Ottawa
+|''none''
+|'''Special Representative''' - Includes foreign officials and their dependents from Offices of Political Subdivisions of Foreign State and from other Office and for their Offices<ref>{{Cite web|last=Garrish |first=Christopher |title=British Columbia Consular License Plates |url=https://www.bcpl8s.ca/Consular.htm |website=www.bcpl8s.ca |access-date=November 19, 2016}}</ref>
+|SR 123A
+|
+|}
+
+== Specialty plates ==
+=== 2010 Olympics ===
+{| class="wikitable"
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:2007 British Columbia license plate 011 MJB Olympic.jpg|150px]]
+|Passenger
+|2007
+|Screened mountain design background with black lettering and the 2010 Winter Olympics logo in the centre
+|The Best Place On Earth
+|123&nbsp;'''M'''BC
+|000&nbsp;MAA to 999&nbsp;MJF
+|Issued from April 16, 2007, to December 31, 2010. Surcharge supported Canada's Winter Olympic team.<ref name=":0" />
+|-
+|[[File:British Columbia 2010 Olympics Truck Plate.jpg|150px]]
+|Truck
+|2007
+|Screened mountain design background with black lettering and the 2010 Winter Olympics logo in the centre
+|The Best Place On Earth
+|'''A'''B&nbsp;1234
+|AA 0000 to approximately AF&nbsp;2500
+|Issued from April 16, 2007, to December 31, 2010. Surcharge supported Canada's Winter Olympic team.<ref name=":0" />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Farm Truck
+|2007
+|Screened mountain design background with black lettering and the 2010 Winter Olympics logo in the centre
+|The Best Place On Earth
+|'''G'''1 2345
+|G9 0000 to G9 9999
+|Issued from April 16, 2007, to December 31, 2010. Surcharge supported Canada's Winter Olympic team.<ref name=":0" />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Commercial Trailer
+|2007
+|Screened mountain design background with black lettering and the 2010 Winter Olympics logo in the centre
+|The Best Place On Earth
+|1234 5'''U'''
+|0000 0U to 9999 9U
+|Issued from April 16, 2007, to December 31, 2010. Surcharge supported Canada's Winter Olympic team.<ref name=":0" />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Trailer
+|2007
+|Screened mountain design background with black lettering and the 2010 Winter Olympics logo in the centre
+|The Best Place On Earth
+|'''UYM''' 12A
+|UYM 00A to UYM 99G
+|Issued from April 16, 2007, to December 31, 2010. Surcharge supported Canada's Winter Olympic team.<ref name=":0" />
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Motorcycle
+|2007
+|Screened mountain design background with black lettering and the 2010 Winter Olympics logo in the centre
+|The Best Place On Earth
+|'''V'''1 2345
+|V2 0000 to V2 9999
+|Issued from April 16, 2007, to December 31, 2010. Surcharge supported Canada's Winter Olympic team.<ref name=":0" />
+|-
+|}
+
+=== BC Parks plates ===
+On November 28, 2016, British Columbia announced its new [[List of protected areas of British Columbia|BC Parks]] Future Strategy. This included the issuance by the ICBC of special licence plates, with the proceeds going towards preserving BC Parks.<ref>{{Cite news|title=B.C. government creating more than 1,900 new campsites |url=https://www.cbc.ca/news/canada/british-columbia/bc-parks-campsites-1.3871546 |publisher=[[CBC News]] |date=November 28, 2016 |access-date=January 24, 2017}}</ref> The three new plates were unveiled by the ICBC on January 18, 2017, and went on sale January 29, 2017, through the Autoplan broker network. Each plate costs $50 for the initial purchase, of which $33 goes towards funding BC Parks; thereafter, there is an annual renewal fee of $40, all of which goes towards funding the parks system.<ref name=":0">{{Cite news|last=Baluja |first=Tamara |date=January 18, 2017 |title=ICBC unveils new B.C. Parks licence plates |url=https://www.cbc.ca/news/canada/british-columbia/license-plates-bc-parks-1.3941983 |publisher=[[CBC News]] |access-date=January 24, 2017}}</ref> In less than eight weeks since going on sale, it was reported that 10,000 BC Parks plates had been sold; this included all three designs.<ref>{{Cite web|url=https://news.gov.bc.ca/releases/2017ENV0020-000696 |title=10,000 BC Parks specialty licence plates sold |work=BC Gov News |publisher=Government of British Columbia |date=March 19, 2017 |access-date=March 22, 2017}}</ref>
+{| class="wikitable"
+!Image
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:2017 British Columbia "Discover BC Parks".jpg|150px]]
+|2017
+|An image of a Kermode Bear as the background with black lettering. The Kermode Bear is also a [[Symbols of British Columbia|provincial symbol]]. It is a white black bear subspecies; it is not albino.<ref>{{Cite web|url=http://www.icbc.com/vehicle-registration/licence-plates/Pages/bc-parks-plates.aspx# |title=BC Parks licence plates |website=www.icbc.com |access-date=January 24, 2017}}</ref>
+|Beautiful British Columbia
+|'''P'''B123C<br>'''R'''L123C
+|PA000A to PJ999X, RK000A to RN999X
+|Secondary slogan of "Discover BC Parks"
+|-
+|[[File:2016 British Columbia license plate PK595K Purcell Mountains Parks.jpg|150px]]
+|2017
+|An image of the Purcell Mountains with the snow-capped peaks as the background with black lettering.
+|Beautiful British Columbia
+|'''P'''L123C<br>'''R'''R123C
+|PK000A to PV999X, RP000A to RX999X
+|Secondary slogan of "Discover BC Parks"
+|-
+|rowspan="2"|[[File:British Columbia BC Parks licence plate - Porteau Cove.jpg|150px]]
+|2017
+|rowspan="2"|An image of Porteau Cove overlooking Howe Sound as a background with black lettering.
+|rowspan="2"|Beautiful British Columbia
+|'''P'''X123C<br>'''R'''B123C
+|PW000A to PX999X; RA000A to RJ999X
+|rowspan="2"|Secondary slogan of "Discover BC Parks"
+|-
+|June 2025
+|'''S'''123BC
+|S000AA to S999ZZ
+|}
+
+=== Military plates ===
+{| class="wikitable"
+!Image
+!Type
+!First issued
+!Design
+!Slogan
+!Serial format
+!Serials issued
+!Notes
+|-
+|[[File:British Columbia Veteran passenger licence plate.jpg|150px]]
+|Veteran passenger
+|June&nbsp;6, 2004
+|Powder blue background with black lettering, the national flag at the upper right, and a partial image of the national war memorial in Ottawa on the left side with a red poppy overlaid
+|VETERAN
+|123'''V'''BC
+|000VAA to 540VCN {{small|(as of May 24, 2026)}}
+|Issued to veterans who must be confirmed by one of the Veterans associations recognized by the provincial government.<ref name="Veteran">{{Cite web |last=Garrish |first=Christopher |title=British Columbia Veteran License Plates |url=https://www.bcpl8s.ca/Veteran.htm |website=www.bcpl8s.ca |archive-url=https://web.archive.org/web/20180804202722/https://www.bcpl8s.ca/Veteran.htm |archive-date=August 4, 2018 |access-date=March 22, 2017}}</ref>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran truck
+|June&nbsp;6, 2004
+|Powder blue background with black lettering, the national flag at the upper right, and a partial image of the national war memorial in Ottawa on the left side with a red poppy overlaid
+|VETERAN
+|1234'''L'''V
+|0000LV to 9999LT
+|Issued to veterans who must be confirmed by one of the Veterans associations recognized by the provincial government.<ref name="Veteran"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|Veteran motorcycle
+|
+|Powder blue background with black lettering, the national flag at the upper right, and a partial image of the national war memorial in Ottawa on the left side with a red poppy overlaid
+|VETERAN
+|'''V'''12345
+|V00001 to V04790 {{small|(as of May 2, 2026)}}
+|Issued to veterans who must be confirmed by one of the Veterans associations recognized by the provincial government.<ref name="Veteran"/>
+|-
+|[[File:Blank License Plate Shape.svg|150px]]
+|[[Memorial Cross]] recipient
+|2016
+|White background with purple writing, the national flag at the upper right, and an image of the memorial cross on the left side
+|Memorial Cross Recipient
+|'''MC'''123'''R''' '''MC'''1234
+|MC000R to MC999R MC0000 to MC9999
+|As of November 10, 2016, this plate is issued to recipients of the Memorial Cross.<ref name=":1">{{Cite web|url=https://news.gov.bc.ca/releases/2016TRAN0354-002331|title=B.C. launches Memorial Cross licence plates {{!}} BC Gov News|last=Infrastructure|first=Transportation and|website=news.gov.bc.ca|access-date=2017-01-25}}</ref> They can only be obtained by contacting the Manager of Provincial Vehicle Registration & Licensing at ICBC headquarters.<ref name=":2">{{Cite web|last=Garrish |first=Christopher |title=British Columbia Memorial Cross Recipient License Plates |url=https://www.bcpl8s.ca/MemorialCross.html |website=www.bcpl8s.ca |access-date=February 26, 2017}}</ref>
+|-
+|}
+
+== Decals ==
+
+From 1970 until May 1, 2022, British Columbia required motorists to place a [[decal]] on the rear licence plate as proof of registration.
+
+Initially, all decals expired on February 28 of the following year. When monthly staggered registration commenced in 1979, longer decals were introduced displaying the month of expiration; all such decals initially expired at the end of the month displayed. Daily registration commenced in 1993, with an additional decal introduced displaying the number of the day on which the month decal expired.
+
+The decals were issued by the ICBC until the requirement was removed on May 1, 2022.<ref>{{cite web | url=https://globalnews.ca/news/8794240/icbc-decal-no-more/ | title=Insurance decals no longer needed after May 1 as ICBC renewal moves online &#124; Globalnews.ca }}</ref> Some decals may have been unofficially handed out by autoplan agents after May 2022. The following are the colour patterns used in the years from 1980 to 2022:
+
+{|class="wikitable"
+|-
+!Image
+! Year !! Colour
+|-
+|[[File:1980 British Columbia licence plate decal.png|100px]]
+|1980 || Black and white
+|-
+|[[File:British Columbia Sticker Decal October 1981.jpg|100px]]
+|1981 || Red and black
+|-
+|[[File:British Columbia Sticker Decal July 1982.jpg|100px]]
+|1982 || Green and white
+|-
+|[[File:British Columbia Sticker Decal July 1983.jpg|100px]]
+|1983 || Black and white
+|-
+|[[File:British Columbia Sticker Decal April 1984.jpg|100px]]
+|1984 || Orange and white
+|-
+|[[File:British Columbia Sticker Decal February 1985.jpg|100px]]
+|1985 || Blue and white
+|-
+|[[File:1986 British Columbia license plate registration decal July expiry.png|100px]]
+|1986 || Red and blue on white (Expo 86 Logo)
+|-
+|[[File:British Columbia Sticker Decal February 1987.jpg|100px]]
+|1987 || Red and white
+|-
+|[[File:British Columbia Sticker Decal February 1988.jpg|100px]]
+|1988 || Dark blue and white
+|-
+|[[File:British Columbia Sticker Decal July 1989.jpg|100px]]
+|1989 || Green on white (thick border)
+|-
+|[[File:British Columbia Sticker Decal January 1990.jpg|100px]]
+|1990 || Pink on white
+|-
+|[[File:British Columbia Sticker Decal January 1991.jpg|100px]]
+|1991 || Blue on white
+|-
+|[[File:British Columbia Sticker Decal December 1992.jpg|100px]]
+|1992 || Black on white
+|-
+|[[File:British Columbia Sticker Decal January 1993.jpg|100px]]
+|1993 || Green on white
+|-
+|[[File:British Columbia Sticker Decal March 1994.jpg|100px]]
+|1994 || Red on white
+|-
+|[[File:1995 British Columbia licence plate decal.png|100px]]
+|1995 || Blue on white
+|-
+|[[File:British Columbia Sticker Decal July 1996.jpg|100px]]
+|rowspan="2"|1996 || Black on white (Jan-Sep)
+|-
+|[[File:British Columbia Sticker Decal November 1996.jpg|100px]]
+|Pink on white (Oct-Dec)
+|-
+|[[File:British Columbia Sticker Decal July 1997.jpg|100px]]
+|1997 || Green on white
+|-
+|[[File:1998 British Columbia licence plate decal.png|100px]]
+|1998 || Red on white
+|-
+|[[File:British Columbia Sticker Decal January 1999.jpg|100px]]
+|1999 || Blue on white (thick or thin border)
+|-
+|
+|2000 || Black on yellow
+|-
+|[[File:British Columbia Sticker Decal September 2001.jpg|100px]]
+|2001 || Black on orange
+|-
+|[[File:British Columbia Sticker Decal April 2002.jpg|100px]]
+|2002 || Black on dark green
+|-
+|[[File:British Columbia Sticker Decal July 2003.jpg|100px]]
+|2003 || Black on pink
+|-
+|[[File:2004 British Columbia licence plate decal.png|100px]]
+|2004 || Black on yellow (no border, long decal)
+|-
+|[[File:British Columbia Sticker Decal July 2005.jpg|100px]]
+|2005 || Black on sky blue (no border, short decal)
+|-
+|[[File:ICBC Apr 2006 Registration Decal.png|100px]]
+|2006 || Black on red
+|-
+|[[File:British Columbia Sticker Decal January 2007.jpg|100px]]
+|2007 || Black on light green
+|-
+|[[File:British Columbia Sticker Decal November 2008.jpg|100px]]
+|2008 || White on baby blue
+|-
+|[[File:British Columbia Sticker Decal May 2009.jpg|100px]]
+|2009 || Black on dark orange
+|-
+|[[File:2010 British Columbia license plate registration decal December expiry.png|100px]]
+|2010 || Black on green
+|-
+|[[File:11plateBC.png|frameless]]
+|2011 || Black on yellow
+|-
+|[[File:ICBC Aug 2012 Registration Decal.png|100px]]
+|2012 || Black on pink
+|-
+|[[File:ICBC Feb 2013 Registration Decal.jpg|100px]]
+|2013 || Black on orange
+|-
+|[[File:2014 British Columbia licence plate decal.png|100px]]
+|2014 || Black on baby blue (full year shown)
+|-
+|[[File:2015 British Columbia licence plate decal.png|100px]]
+|2015 || Black on mustard yellow
+|-
+|[[File:2016 British Columbia licence plate decal.png|100px]]
+|2016 || Black on pink
+|-
+|[[File:ICBC Feb 2017 Registration Decal.png|100px]]
+|2017 || Black on green
+|-
+|[[File:ICBC Feb 2018 Registration Decal.jpg|100px]]
+|2018 || Black on orange
+|-
+|[[File:2019 British Columbia licence plate decal.jpg|100px]]
+|2019
+|Black on yellow
+|-
+|[[File:2020 British Columbia licence plate decal.jpg|100px]]
+|2020
+|Black on yellow
+|-
+|[[File:2021 British Columbia licence plate decal.jpg|100px]]
+|2021
+|Black on pink
+|-
+|[[File:2022 British Columbia licence plate decal.jpg|100px]]
+|2022
+|Black on green
+|-
+|
+|2023
+|Black on Orange
+Somewhat rare but issued until 
+Apr 30 2022 for renewals expiring in 2023
+|}
+
+== See also ==
+* [[Insurance Corporation of British Columbia|Insurance Corporation of British Columbia (ICBC)]]
+* [[Symbols of British Columbia]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+{{Commons category|Licence plates of British Columbia}}
+* [https://www.15q.net/bc.html British Columbia licence plates, 1969–present] {{Webarchive|url=https://web.archive.org/web/20200322161112/https://www.15q.net/bc.html |date=2020-03-22 }}
+* [https://www.bcpl8s.ca A Pictorial History of British Columbia Licence Plates]
+
+{{Vehicle registration plates of Canada}}
+{{North America in topic|Vehicle registration plates of}}
+
+{{DEFAULTSORT:Vehicle Registration Plates Of British Columbia}}
+[[Category:1904 establishments in British Columbia]]
+[[Category:Vehicle registration plates of Canada|British Columbia]]
+[[Category:Transport in British Columbia]]
+[[Category:British Columbia transport-related lists]]
