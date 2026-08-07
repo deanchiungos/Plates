@@ -358,6 +358,21 @@ struct VoiceModeScreen: View {
     // MARK: - Acting
 
     private func log(_ plate: Plate) {
+        // Unlimited counts every call-out. Every other mode counts a plate once, and
+        // voice has to obey that the way the grid and Siri already do.
+        //
+        // It used to record regardless, with only the recogniser's four-second
+        // cooldown in the way — so a plate mentioned four times across a drive became
+        // a ×4 in a book, and a `Book` is always `.classic` and cannot legally hold a
+        // repeat at all. Not a take-back either: the grid toggles a second tap off,
+        // but saying a plate's name out loud is never a request to un-see it. Siri
+        // has always had this right, and said so out loud.
+        guard collection.scoringMode == .unlimited || !collection.hasSeen(plate) else {
+            Haptics.repeatSighting()
+            speech.say(VoiceSpeaker.alreadySeen(plate))
+            return
+        }
+
         let outcome = PlateLogger.record(plate, in: collection, by: speaker,
                                          at: location.coordinate, context: context)
         withAnimation(.snappy(duration: 0.25)) {

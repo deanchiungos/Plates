@@ -14,6 +14,12 @@ struct PlateBook {
         /// The trip or book it was first logged against. Nil for an orphan left
         /// behind by a deleted book, which is missing provenance, not a missing find.
         let firstIn: String?
+        /// Everyone who claimed it, earliest first, each counted once.
+        ///
+        /// Carried because `count` alone cannot tell "you saw it four times" from
+        /// "four people each saw it once", and a book drew both as ×4 — which is
+        /// nonsense to anybody who logged it exactly once and knows it.
+        let spotters: [Player]
     }
 
     private(set) var entries: [String: Entry] = [:]
@@ -25,10 +31,19 @@ struct PlateBook {
         for (code, list) in grouped {
             let sorted = list.sorted { $0.spottedAt < $1.spottedAt }
             guard let first = sorted.first, let last = sorted.last else { continue }
+            // De-duplicated in place rather than through a Set, so the order stays
+            // "who got there first" — which is the order the tile draws them in.
+            var spotters: [Player] = []
+            for player in sorted.compactMap(\.player)
+            where !spotters.contains(where: { $0.id == player.id }) {
+                spotters.append(player)
+            }
+
             entries[code] = Entry(firstSeen: first.spottedAt,
                                   lastSeen: last.spottedAt,
                                   count: sorted.count,
-                                  firstIn: first.containerName)
+                                  firstIn: first.containerName,
+                                  spotters: spotters)
         }
     }
 

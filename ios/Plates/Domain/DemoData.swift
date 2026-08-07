@@ -193,6 +193,13 @@ enum DemoData {
         }
         // A repeat, so the ×N corner mark has something to draw.
         context.insert(Sighting(plateCode: "NJ", in: book, player: players[0]))
+        // And a plate two different people claimed, for the corner's *other* state:
+        // a claimant stack rather than a ×N. The two used to render identically,
+        // which is how somebody who logged a plate once ended up looking at a ×4.
+        // CA on purpose — it is high enough in the grid to be on screen without
+        // scrolling, so the case is screenshot-testable.
+        context.insert(Sighting(plateCode: "CA", in: book, player: players[1],
+                                spottedAt: book.startedAt.addingTimeInterval(86_400 * 60)))
 
         let oldBook = Book(name: "First Book")
         oldBook.startedAt = Calendar.current.date(byAdding: .day, value: -900, to: Date()) ?? Date()

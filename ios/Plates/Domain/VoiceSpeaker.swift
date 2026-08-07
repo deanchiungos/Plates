@@ -166,9 +166,16 @@ final class VoiceSpeaker: NSObject {
     /// A repeat gets a whole sentence rather than a clipped fragment. "Already had
     /// it" was two unstressed syllables tacked onto a name and came out as mush at
     /// road speed; a full clause gives the synthesiser something to put a rhythm on.
+    /// Said when a plate is called out that the collection already holds and will not
+    /// count twice. Shared with `confirmation` so the two cannot drift into telling
+    /// somebody two different things about the same situation.
+    static func alreadySeen(_ plate: Plate) -> String {
+        "\(plate.name) has already been seen."
+    }
+
     static func confirmation(for plate: Plate, outcome: PlateLogger.Outcome) -> String {
         guard outcome.isFirstFind else {
-            return "\(plate.name) has already been seen."
+            return alreadySeen(plate)
         }
         return outcome.tier >= .rare
             ? "\(plate.name). \(outcome.tier.label.capitalized)."
