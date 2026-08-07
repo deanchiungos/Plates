@@ -56,6 +56,10 @@ struct PlateIndex {
         var count = 0
         var latest: SightingOrder?
         var spotter: Player?
+        /// Everyone who has claimed this plate, in the order they first did.
+        /// One name under the old rules; several once a party lets more than one
+        /// person bank the same state.
+        var claimants: [Player] = []
     }
 
     private let entries: [String: Entry]
@@ -74,6 +78,9 @@ struct PlateIndex {
                 e.latest = order
                 e.spotter = s.player
             }
+            if let claimant = s.player, !e.claimants.contains(where: { $0.id == claimant.id }) {
+                e.claimants.append(claimant)
+            }
             built[s.plateCode] = e
         }
         entries = built
@@ -82,6 +89,7 @@ struct PlateIndex {
     func has(_ code: String) -> Bool { entries[code] != nil }
     func count(_ code: String) -> Int { entries[code]?.count ?? 0 }
     func spotter(_ code: String) -> Player? { entries[code]?.spotter }
+    func claimants(_ code: String) -> [Player] { entries[code]?.claimants ?? [] }
 }
 
 extension PlateCollection {
@@ -200,6 +208,62 @@ extension PlateCollection {
     }
 
     func rarity(of plate: Plate) -> Int { rarity(of: plate.code) }
+
+    /// The people actually on this collection.
+    ///
+    /// Not the same thing as "every `Player` in the store", and the difference is a
+    /// bug that shipped. The store's players used to *be* the car — a roster you
+    /// typed in by hand — so scoring against all of them was right. A party changed
+    /// that: joining one merges the other phones' players into your store and keeps
+    /// them, permanently and on purpose, because a trip's standings have to still
+    /// render years later. Score against the whole table after that and every new
+    /// trip opens with a strip of everyone you have ever played with, sitting at
+    /// zero, on a game they were never part of.
+    ///
+    /// Three things make somebody a participant here:
+    ///
+    /// - they have a sighting filed under this collection — the historical answer,
+    ///   which is what keeps finished trips correct;
+    /// - they are in a party that is live on this collection right now, so people
+    ///   who have joined but not yet called anything appear at zero rather than
+    ///   popping into existence on their first find;
+    /// - they are this phone, which is always playing whatever it is looking at.
+    ///
+    /// Returned in the order given, so the caller's sort (join date) survives.
+    func participants(from players: [Player],
+                      me: Player? = nil,
+                      alsoPlaying live: Set<UUID> = []) -> [Player] {
+        var wanted = Set(allSightings.compactMap { $0.player?.id }).union(live)
+        if let me { wanted.insert(me.id) }
+        return players.filter { wanted.contains($0.id) }
+    }
+
+    // MARK: - Whose plate is it
+
+    /// Has *this player* banked this plate — strictly, by id.
+    ///
+    /// Used to decide whether a tap under `sharedClaims` is a fresh claim or a
+    /// take-back, so it deliberately does not count unowned sightings: a plate
+    /// somebody logged before players existed is not evidence that you claimed it.
+    func hasClaimed(_ code: String, by player: Player?) -> Bool {
+        guard let player else { return false }
+        return allSightings.contains { $0.plateCode == code && $0.player?.id == player.id }
+    }
+
+    /// The sightings of this plate that `player` is allowed to take back.
+    ///
+    /// Unowned ones count as removable, which is the looser half of the rule and is
+    /// meant: they predate attribution or belonged to somebody since deleted, so
+    /// protecting them would leave plates on the board that nobody alive can undo.
+    func removableSightings(of code: String,
+                            by player: Player?,
+                            protected: Bool) -> [Sighting] {
+        allSightings.filter { sighting in
+            guard sighting.plateCode == code else { return false }
+            guard protected else { return true }
+            return sighting.player == nil || sighting.player?.id == player?.id
+        }
+    }
 
     /// Per-player scores, highest first. Ties keep a stable order by join date.
     func standings(among players: [Player]) -> [(player: Player, score: Int)] {

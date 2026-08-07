@@ -23,6 +23,7 @@ import CoreLocation
 /// card is tappable in its own right.
 struct TrailScreen: View {
     @Environment(PopupHost.self) private var popup
+    @Environment(Router.self) private var router
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
@@ -91,6 +92,21 @@ struct TrailScreen: View {
         }
         .navigationTitle("Trail")
         .navigationBarTitleDisplayMode(.inline)
+        // A jump from elsewhere — "View trail" on a trip's record — lands here
+        // with the scope it wants already chosen. Consumed, not just read, so a
+        // later visit through the More tab opens on the usual default.
+        .onAppear {
+            if let handed = router.pendingTrail {
+                scope = handed
+                router.pendingTrail = nil
+            }
+        }
+        .onChange(of: router.pendingTrail) { _, handed in
+            if let handed {
+                scope = handed
+                router.pendingTrail = nil
+            }
+        }
         // One sheet, two things it can be showing. Two `.sheet` modifiers on the same
         // view cannot both present, and a stop's list has to be able to push a plate's
         // detail rather than stack a second sheet on top of itself.
@@ -176,9 +192,15 @@ struct TrailScreen: View {
     private func showScopePicker() {
         // `playable`, not `collectable`. This picks what you are *looking at*, and a
         // trip you have finished is exactly the kind of thing you come here to look
-        // at. Archived trips stay out: their pins are still in All time, because
-        // archiving hides the trip, not the fact that you drove it.
+        // at.
+        //
+        // Which is why the archived trips get a group of their own below rather than
+        // staying out entirely. Marking a trip done *files it under Archived*, so
+        // excluding archived trips here meant finishing a trip removed its road from
+        // the one screen built for looking back at it. Collapsed hard, because the
+        // whole point of the archive is to stop seeing these until you ask.
         let openTrips = trips.playable.pinnedFirst
+        let archived = trips.archived
         let groups = [
             PopupPicker.Group(entries: [
                 PopupPicker.Entry(id: allTimeID,
@@ -208,7 +230,20 @@ struct TrailScreen: View {
                                       subtitle: book.sinceLabel,
                                       isSelected: effectiveScope == .book(book.id),
                                       action: { pick(.book(book.id)) })
-                })
+                }),
+            PopupPicker.Group(
+                title: archived.isEmpty ? nil : "FINISHED",
+                entries: archived.map { trip in
+                    PopupPicker.Entry(id: trip.id,
+                                      title: trip.name,
+                                      subtitle: trip.routeLabel ?? trip.startedAt
+                                          .formatted(.dateTime.month(.abbreviated).day().year()),
+                                      isSelected: effectiveScope == .trip(trip.id),
+                                      keywords: [trip.origin, trip.destination]
+                                          .compactMap { $0 }.joined(separator: " "),
+                                      action: { pick(.trip(trip.id)) })
+                },
+                collapseTo: 2)
         ].filter { !$0.entries.isEmpty }
 
         popup.present("Show which drive?") {

@@ -7,9 +7,9 @@ import SwiftUI
 /// more than five destinations, so this is the overflow: a plain list of the places
 /// that do not earn a slot of their own.
 struct MoreScreen: View {
+    @Environment(Router.self) private var router
     @State private var showTrail = false
     @State private var showSettings = false
-    @State private var showPlayers = false
     @State private var showParty = false
 
     var body: some View {
@@ -24,10 +24,6 @@ struct MoreScreen: View {
                         // as the whole of what is here, which is the truth.
                         MoreSection("While you play") {
                             MoreRow(title: "Party") { PartyScreen() }
-
-                            MoreDivider()
-
-                            MoreRow(title: "Players") { PlayersScreen(embedded: true) }
 
                             MoreDivider()
 
@@ -56,18 +52,25 @@ struct MoreScreen: View {
             .navigationBarTitleDisplayMode(.large)
             .navigationDestination(isPresented: $showTrail) { TrailScreen() }
             .navigationDestination(isPresented: $showSettings) { SettingsScreen() }
-            .navigationDestination(isPresented: $showPlayers) { PlayersScreen(embedded: true) }
             .navigationDestination(isPresented: $showParty) { PartyScreen() }
+            // The receiving end of `Router.showTrail`: something elsewhere in the
+            // app asked for the Trail, so push it. The Trail itself reads which
+            // scope to open on. `onAppear` covers the jump that switched to this
+            // tab; `onChange` covers a jump made while already standing on it.
+            .onAppear {
+                if router.pendingTrail != nil { showTrail = true }
+            }
+            .onChange(of: router.pendingTrail) { _, pending in
+                if pending != nil { showTrail = true }
+            }
             #if DEBUG
-            // `-tab more -openTrail` / `-openSettings` / `-openPlayers` / `-openParty`
-            // push straight through, which is the only way to reach any of them
-            // without a tap.
+            // `-tab more -openTrail` / `-openSettings` / `-openParty` push straight
+            // through, which is the only way to reach any of them without a tap.
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     if args.contains("-openTrail") { showTrail = true }
                     if args.contains("-openSettings") { showSettings = true }
-                    if args.contains("-openPlayers") { showPlayers = true }
                     if args.contains("-openParty") { showParty = true }
                 }
             }

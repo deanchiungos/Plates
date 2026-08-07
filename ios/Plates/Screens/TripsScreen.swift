@@ -6,6 +6,8 @@ struct TripsScreen: View {
     @Environment(PopupHost.self) private var popup
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
+    @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
+    @Query(sort: \Player.joinedAt) private var players: [Player]
     @AppStorage(TripSelection.key) private var currentTripID = ""
 
     @State private var editing: Trip?
@@ -22,9 +24,22 @@ struct TripsScreen: View {
         case delete(Trip)
         case archive(Trip)
         case finish(Trip)
+        case fold(Trip)
+        case unfold(Trip)
     }
 
     private var current: Trip? { TripSelection.current(from: trips, id: currentTripID) }
+
+    /// Who played this trip, or nothing if it was never a party.
+    ///
+    /// Gated on the ledger rather than on "more than one person has a sighting",
+    /// because that is also true of every trip from the shared-device era — and a
+    /// badge that says "party" on a trip four people took turns tapping into one
+    /// phone would be telling a small lie about what happened.
+    private func partyFaces(for trip: Trip) -> [Player] {
+        guard PartyLedger.shared.wasParty(trip.id) else { return [] }
+        return trip.participants(from: players)
+    }
 
     var body: some View {
         NavigationStack {
@@ -58,10 +73,18 @@ struct TripsScreen: View {
             #if DEBUG
             // `-tripEditor new|edit|archived` opens the sheet for screenshots.
             // `-showArchived` stands the archived section open, which is otherwise a
-            // tap away and so unreachable from a launch argument.
+            // tap away and so unreachable from a launch argument. `-foldPopup` opens
+            // the add-to-book flow for the first archived trip — it normally starts
+            // from a button inside the record sheet, which no argument can press.
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
                 if args.contains("-showArchived") { showArchived = true }
+                if args.contains("-foldPopup"), let done = trips.archived.first {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        pending = .fold(done)
+                        runPending()
+                    }
+                }
                 guard let i = args.firstIndex(of: "-tripEditor"), i + 1 < args.count else { return }
                 switch args[i + 1] {
                 case "new": creating = true
@@ -90,7 +113,11 @@ struct TripsScreen: View {
                 onClear: { pending = .clear(trip); editing = nil },
                 onDelete: { pending = .delete(trip); editing = nil },
                 onArchive: { pending = .archive(trip); editing = nil },
-                onFinish: { pending = .finish(trip); editing = nil }
+                onFinish: { pending = .finish(trip); editing = nil },
+                // Nil when there is no book to fold into — the editor hides the
+                // button rather than opening a picker with nothing in it.
+                onFold: books.isEmpty ? nil : { pending = .fold(trip); editing = nil },
+                onUnfold: { pending = .unfold(trip); editing = nil }
             )
         }
     }
@@ -104,7 +131,8 @@ struct TripsScreen: View {
                             trip: trip,
                             isCurrent: trip.id == current?.id,
                             onSelect: { select(trip) },
-                            onEdit: { editing = trip }
+                            onEdit: { editing = trip },
+                            party: partyFaces(for: trip)
                         )
                     }
                 }
@@ -184,7 +212,8 @@ struct TripsScreen: View {
                             TripRow(trip: trip,
                                     isCurrent: false,
                                     onSelect: { editing = trip },
-                                    onEdit: { editing = trip })
+                                    onEdit: { editing = trip },
+                                    party: partyFaces(for: trip))
                         }
                         // Dimming the whole row, not the card inside it. Applied to
                         // the card alone it made the card translucent *over its own
@@ -266,10 +295,11 @@ struct TripsScreen: View {
         case .finish(let trip):
             popup.present(
                 "Done with \(trip.name)?",
-                message: "It is marked finished and filed under Archived, so it stops "
-                       + "appearing everywhere you pick a trip. Its \(trip.platesFound) "
-                       + "plate\(trip.platesFound == 1 ? "" : "s") stay in your history, "
-                       + "and you can reopen it whenever you like."
+                message: partyWarning(for: trip, doing: "Finishing it")
+                    ?? "It is marked finished and filed under Archived, so it stops "
+                     + "appearing everywhere you pick a trip. Its \(trip.platesFound) "
+                     + "plate\(trip.platesFound == 1 ? "" : "s") stay in your history, "
+                     + "and you can reopen it whenever you like."
             ) {
                 PopupButton(title: "Mark as done", kind: .primary) {
                     finish(trip)
@@ -294,7 +324,8 @@ struct TripsScreen: View {
         case .delete(let trip):
             popup.present(
                 "Delete \(trip.name)?",
-                message: "The trip and its \(trip.platesFound) collected plate\(trip.platesFound == 1 ? "" : "s") are removed for good."
+                message: partyWarning(for: trip, doing: "Deleting it")
+                    ?? "The trip and its \(trip.platesFound) collected plate\(trip.platesFound == 1 ? "" : "s") are removed for good."
             ) {
                 PopupButton(title: "Delete trip", kind: .destructive) {
                     remove(trip)
@@ -302,12 +333,148 @@ struct TripsScreen: View {
                 }
                 PopupButton(title: "Cancel") { popup.dismiss() }
             }
+
+        case .fold(let trip):
+            // Straight to the how-question when there is only one book — the
+            // common case should be two taps, not three.
+            if books.count == 1, let only = books.first {
+                askFoldMode(trip, into: only)
+            } else {
+                popup.present("Add \(trip.name) to which book?") {
+                    PopupPicker(groups: [PopupPicker.Group(entries: books.map { book in
+                        PopupPicker.Entry(id: book.id,
+                                          title: book.name,
+                                          subtitle: book.sinceLabel,
+                                          action: { askFoldMode(trip, into: book) })
+                    })])
+                    PopupButton(title: "Cancel") { popup.dismiss() }
+                }
+            }
+
+        case .unfold(let trip):
+            let folded = trip.allSightings.filter { $0.book != nil }
+            guard let book = folded.first?.book else { return }
+            popup.present(
+                "Remove from \(book.name)?",
+                message: "The \(folded.count) sighting\(folded.count == 1 ? "" : "s") "
+                       + "this trip added leave the book. Plates the book collected on "
+                       + "its own stay, and the trip itself is untouched."
+            ) {
+                PopupButton(title: "Remove", kind: .destructive) {
+                    unfold(trip)
+                    popup.dismiss()
+                }
+                PopupButton(title: "Cancel") { popup.dismiss() }
+            }
+        }
+    }
+
+    /// Stack or fill — the one decision a fold needs, asked with the counts that
+    /// make it decidable.
+    private func askFoldMode(_ trip: Trip, into book: Book) {
+        let total = trip.allSightings.filter { $0.book == nil }.count
+        let missing = Set(trip.allSightings.map(\.plateCode))
+            .subtracting(book.allSightings.map(\.plateCode)).count
+        popup.present(
+            "Add \(trip.name) to \(book.name)?",
+            message: "The trip keeps its plates either way \u{2014} the book shows "
+                   + "them too, and you can take them back out whenever you like."
+        ) {
+            PopupChoice(title: "Stack everything",
+                        subtitle: "All \(total) sighting\(total == 1 ? "" : "s") carry over. "
+                                + "Plates the book already has count again.") {
+                fold(trip, into: book, gapsOnly: false)
+            }
+            PopupChoice(title: "Fill the gaps",
+                        subtitle: missing == 0
+                            ? "Nothing to add \u{2014} the book has every plate on this trip."
+                            : "Just the \(missing) plate\(missing == 1 ? "" : "s") the book is missing.") {
+                fold(trip, into: book, gapsOnly: true)
+            }
+            PopupButton(title: "Cancel") { popup.dismiss() }
+        }
+    }
+
+    /// Said before deleting or finishing a trip that a party is currently on.
+    ///
+    /// Not a block. Every other device keeps its own full copy — that is the whole
+    /// shape of the design — so the only thing at stake is this phone's copy and the
+    /// party ending mid-drive, which is a decision, not a mistake. It just should not
+    /// be a surprise.
+    private func partyWarning(for trip: Trip, doing what: String) -> String? {
+        guard PartySession.isPartying(trip) else { return nil }
+        return "\(what) ends the party on this phone. "
+             + "Everyone else keeps their own copy of the trip and the plates they spotted."
+    }
+
+    /// Folding: the trip's sightings are *shelved in* the book, not copied to it.
+    ///
+    /// One sighting, two containers. A copy would double-count every folded plate
+    /// in the all-time record and grow twin pins on the Trail; a reference keeps
+    /// `Sighting` the single fact it has always been. The book's counters need no
+    /// new code because they already count whatever `book.sightings` holds.
+    ///
+    /// Only sightings not already shelved somewhere are taken, which makes folding
+    /// idempotent — reopen the trip, find three more plates, fold again, and only
+    /// the three move.
+    private func fold(_ trip: Trip, into book: Book, gapsOnly: Bool) {
+        let loose = trip.allSightings.filter { $0.book == nil }
+
+        let chosen: [Sighting]
+        if gapsOnly {
+            // One sighting per plate the book lacks — the earliest, which is the
+            // find. Filling a gap with a plate's third repeat would put a ×1 in
+            // the book that was really a ×3 somewhere else.
+            let have = Set(book.allSightings.map(\.plateCode))
+            chosen = Dictionary(grouping: loose, by: \.plateCode)
+                .filter { !have.contains($0.key) }
+                .compactMap { $0.value.min { SightingOrder($0) < SightingOrder($1) } }
+        } else {
+            chosen = loose
+        }
+
+        for sighting in chosen { sighting.book = book }
+        try? context.save()
+
+        // A shared book's other members hear about these the same way they hear
+        // about a tap: one record per sighting, over the same wire.
+        if SharedBookLedger.shared.isShared(book.id) {
+            for sighting in chosen { SharedBookSync.shared.push(sighting, in: book) }
+        }
+        popup.dismiss()
+        Haptics.found()
+    }
+
+    /// The exact reverse: every sighting of this trip leaves whichever book holds
+    /// it. Nothing is deleted — the sightings still belong to the trip.
+    private func unfold(_ trip: Trip) {
+        let folded = trip.allSightings.filter { $0.book != nil }
+        guard let book = folded.first?.book else { return }
+        let ids = folded.map(\.id)
+        for sighting in folded { sighting.book = nil }
+        try? context.save()
+        if SharedBookLedger.shared.isShared(book.id) {
+            SharedBookSync.shared.remove(ids, in: book)
+        }
+        Haptics.undo()
+    }
+
+    /// Deleting sightings that were folded into a *shared* book has to tell the
+    /// book's other members, or their copies outlive the record. Called before any
+    /// bulk delete of a trip's sightings; a no-op for everything unshared.
+    private func pushSharedRemovals(for sightings: [Sighting]) {
+        let folded = sightings.filter { $0.book != nil }
+        for (_, group) in Dictionary(grouping: folded, by: { $0.book!.id }) {
+            guard let book = group.first?.book,
+                  SharedBookLedger.shared.isShared(book.id) else { continue }
+            SharedBookSync.shared.remove(group.map(\.id), in: book)
         }
     }
 
     /// Wipes the sightings, not the trip — `Sighting` is the only stored fact, so
     /// deleting them is all it takes to put every counter back to zero.
     private func wipe(_ trip: Trip) {
+        pushSharedRemovals(for: trip.allSightings)
         for sighting in trip.allSightings { context.delete(sighting) }
         try? context.save()
         Haptics.destructive()
@@ -325,7 +492,16 @@ struct TripsScreen: View {
         trip.archivedAt = now
         try? context.save()
         if trip.id.uuidString == currentTripID { currentTripID = "" }
+        // A finished trip takes no more plates, so a party still pointed at it would
+        // be a radio running for a game nobody can play. The goodbye goes out first,
+        // which is what stops everyone else hunting for a host that has stopped.
+        endPartyIfOn(trip)
         Haptics.milestone()
+    }
+
+    private func endPartyIfOn(_ trip: Trip) {
+        guard PartySession.isPartying(trip) else { return }
+        PartySession.shared?.leave()
     }
 
     private func setArchived(_ trip: Trip, _ archived: Bool) {
@@ -340,8 +516,16 @@ struct TripsScreen: View {
 
     private func remove(_ trip: Trip) {
         let wasCurrent = trip.id == current?.id
+        let id = trip.id
+        endPartyIfOn(trip)
+        // The cascade is about to take the sightings with it — including any that
+        // were folded into a shared book, whose members need the tombstones.
+        pushSharedRemovals(for: trip.allSightings)
         context.delete(trip)
         try? context.save()
+        // Nothing left to protect from resurrection, and keeping the ids would leak a
+        // little more every time somebody clears out an old drive.
+        PartyTombstones.shared.forget(trip: id)
         // Leave the selection to fall through to the newest remaining trip rather
         // than pointing at something that no longer exists.
         if wasCurrent { currentTripID = "" }
@@ -356,6 +540,9 @@ private struct TripRow: View {
     let isCurrent: Bool
     let onSelect: () -> Void
     let onEdit: () -> Void
+    /// Everyone who played this trip, for the party badge. Empty when it was not
+    /// one, which is what hides the badge.
+    var party: [Player] = []
 
     var body: some View {
         HStack(spacing: 10) {
@@ -385,6 +572,15 @@ private struct TripRow: View {
                                 .accessibilityLabel("Currently playing")
                         }
 
+                        if !party.isEmpty {
+                            // Its own colour rather than the route blue or the pin's
+                            // paint, both of which already mean something here.
+                            Image(systemName: "person.2.fill")
+                                .font(.system(size: 10, weight: .semibold))
+                                .foregroundStyle(Theme.found)
+                                .accessibilityLabel("Played as a party")
+                        }
+
                         if trip.pinnedAt != nil {
                             Image(systemName: "pin.fill")
                                 .font(.system(size: 10, weight: .semibold))
@@ -408,6 +604,10 @@ private struct TripRow: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
+
+            if !party.isEmpty {
+                AvatarStack(players: party, limit: 3, size: 21)
+            }
 
             VStack(alignment: .trailing, spacing: 0) {
                 Text("\(trip.statesFound)")
@@ -491,6 +691,7 @@ private struct DogEar: Shape {
 struct TripEditor: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
+    @Environment(Router.self) private var router
     @AppStorage(TripSelection.key) private var currentTripID = ""
 
     let trip: Trip?
@@ -501,6 +702,10 @@ struct TripEditor: View {
     /// Marking a trip done also archives it, so it needs the same confirm-after-
     /// dismiss dance as the others.
     var onFinish: (() -> Void)?
+    /// Folding this trip into a book, and undoing that. Nil when there is no book
+    /// to fold into, which hides the button rather than offering a dead end.
+    var onFold: (() -> Void)?
+    var onUnfold: (() -> Void)?
 
     @State private var name = ""
     @State private var origin = Place()
@@ -530,6 +735,42 @@ struct TripEditor: View {
         return trip.isArchived || !trip.isActive
     }
 
+    /// The trip's sightings in the order they happened — the story of the drive.
+    private var log: [Sighting] {
+        (trip?.allSightings ?? []).sorted { SightingOrder($0) < SightingOrder($1) }
+    }
+
+    /// The book this trip has been folded into, if any. Derived from the sightings
+    /// rather than stored anywhere, so it can never disagree with them.
+    private var foldedBook: Book? {
+        trip?.allSightings.compactMap(\.book).first
+    }
+
+    /// Spotter chips only mean something when there was more than one spotter.
+    private var showSpotters: Bool {
+        Set(log.compactMap { $0.player?.id }).count > 1
+    }
+
+    /// Whether any sighting knows where it happened — without one the Trail would
+    /// open on an empty map, so the jump is not offered.
+    private var hasTrail: Bool {
+        trip?.allSightings.contains { $0.spottedLat != nil } == true
+    }
+
+    /// The host owns the scoring rules while a party is running.
+    ///
+    /// `scoringMode` and `includesTrucks` decide what every point in the trip is
+    /// worth, so one passenger flipping either of them mid-drive would silently
+    /// rewrite everybody's game — including plates already banked on four other
+    /// phones. The host's copy is the one that counts; everyone else reads.
+    ///
+    /// Only while actually connected. A party that has ended leaves the trip fully
+    /// editable again, because at that point it is just a trip you have a copy of.
+    private var scoringIsHostOwned: Bool {
+        guard let trip, let party = PartySession.shared else { return false }
+        return party.role == .guest && party.isConnected && party.tripID == trip.id
+    }
+
     /// Says plainly what pinning a place buys you, because the difference between
     /// typed text and a dropped pin is invisible otherwise.
     /// Nil where there is nothing useful to say. A locked trip with no pinned start
@@ -557,6 +798,11 @@ struct TripEditor: View {
 
                         nameField
 
+                        // The record of the trip: what it came to, in numbers.
+                        // Meaningless on a live trip, whose numbers are on the Game
+                        // screen — this sheet only reports once it is over.
+                        if isLocked { statsStrip }
+
                         // An archived trip that never had a route has nothing to show
                         // here, and two greyed-out empty boxes are worse than no
                         // section at all.
@@ -568,11 +814,19 @@ struct TripEditor: View {
                         // controls and only controls — there is no reading of a
                         // radio button that is not "press me" — and the one line
                         // below says what the trip was scored on just as well.
-                        if isLocked {
+                        if isLocked || scoringIsHostOwned {
                             scoringSummary
+                            if scoringIsHostOwned {
+                                Text("The host sets the scoring while you are in a party.")
+                                    .font(.plates(size: 12.5))
+                                    .foregroundStyle(Theme.inkMuted)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
                         } else {
                             scoringPicker
                         }
+
+                        if isLocked, !log.isEmpty { plateLog }
 
                         if !isNew { dangerZone }
 
@@ -675,6 +929,128 @@ struct TripEditor: View {
             RoundedRectangle(cornerRadius: 12, style: .continuous)
                 .fill(Theme.unfound.opacity(0.55))
         )
+    }
+
+    /// What the trip came to. Three numbers, which is all a headline should be —
+    /// the plate-by-plate account is the log below.
+    private var statsStrip: some View {
+        HStack(spacing: 0) {
+            recordStat("\(trip?.score ?? 0)", "points")
+            statDivider
+            recordStat("\(trip?.platesFound ?? 0)",
+                       trip?.platesFound == 1 ? "plate" : "plates")
+            statDivider
+            recordStat("\(trip?.dayNumber ?? 1)",
+                       trip?.dayNumber == 1 ? "day" : "days")
+        }
+        .padding(.vertical, 13)
+        .frame(maxWidth: .infinity)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Theme.surface)
+                .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .strokeBorder(Theme.line, lineWidth: 1))
+        )
+    }
+
+    private func recordStat(_ value: String, _ label: String) -> some View {
+        VStack(spacing: 2) {
+            Text(value)
+                .font(Theme.PlateFont.condensed(24))
+                .monospacedDigit()
+                .foregroundStyle(Theme.ink)
+            Text(label)
+                .font(.plates(size: 10.5))
+                .foregroundStyle(Theme.inkMuted)
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private var statDivider: some View {
+        Rectangle().fill(Theme.line).frame(width: 1, height: 26)
+    }
+
+    /// Every plate, in the order it was called — the story of the drive. In
+    /// unlimited scoring the same plate appears once per sighting, because each
+    /// one scored.
+    private var plateLog: some View {
+        VStack(alignment: .leading, spacing: 9) {
+            Text("PLATES \u{00B7} IN ORDER FOUND")
+                .font(.plates(size: 11, weight: .bold))
+                .tracking(1.2)
+                .foregroundStyle(Theme.inkMuted)
+
+            LazyVStack(spacing: 0) {
+                ForEach(log) { sighting in
+                    logRow(sighting)
+                    if sighting.id != log.last?.id {
+                        Divider().padding(.leading, 14)
+                    }
+                }
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(Theme.surface)
+                    .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .strokeBorder(Theme.line, lineWidth: 1))
+            )
+        }
+    }
+
+    private func logRow(_ sighting: Sighting) -> some View {
+        let banked = sighting.rarityWhenSpotted
+            ?? trip.map { $0.rarity(of: sighting.plateCode) } ?? 1
+        return HStack(spacing: 10) {
+            // The tier it was claimed at. The grid hides rarity until a plate is
+            // found; here everything is found, so the record can say what each
+            // one was worth.
+            Circle()
+                .fill(RarityTier.forRarity(banked).color)
+                .frame(width: 7, height: 7)
+
+            Text(sighting.plateCode)
+                .font(Theme.PlateFont.condensed(15))
+                .foregroundStyle(Theme.ink)
+                .frame(width: 36, alignment: .leading)
+
+            Text(sighting.plate?.name ?? sighting.plateCode)
+                .font(.plates(size: 13.5, weight: .medium))
+                .foregroundStyle(Theme.ink)
+                .lineLimit(1)
+
+            Spacer(minLength: 8)
+
+            if showSpotters, let player = sighting.player {
+                Circle()
+                    .fill(Theme.playerColor(player.colorIndex))
+                    .frame(width: 17, height: 17)
+                    .overlay(
+                        Text(player.initial)
+                            .font(Theme.PlateFont.condensed(10))
+                            .foregroundStyle(Theme.ink)
+                    )
+            }
+
+            Text(logTime(sighting.spottedAt))
+                .font(.plates(size: 11.5))
+                .foregroundStyle(Theme.inkMuted)
+                .monospacedDigit()
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 9)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(sighting.plate?.name ?? sighting.plateCode), \(logTime(sighting.spottedAt))"
+                            + (sighting.player.map { ", spotted by \($0.name)" } ?? ""))
+    }
+
+    /// "Day 2 · 3:41 PM" on a trip that spanned days; just the time on one that
+    /// did not.
+    private func logTime(_ date: Date) -> String {
+        let clock = date.formatted(.dateTime.hour().minute())
+        guard let trip, trip.dayNumber > 1 else { return clock }
+        let day = (Calendar.current.dateComponents([.day],
+                                                   from: trip.startedAt, to: date).day ?? 0) + 1
+        return "Day \(max(1, day)) \u{00B7} \(clock)"
     }
 
     /// What the picker would have said, in one line.
@@ -785,6 +1161,31 @@ struct TripEditor: View {
     private var dangerZone: some View {
         VStack(spacing: 8) {
             if let trip {
+                // The two things worth doing with a record: see it on the map, and
+                // shelve it in the collection. Only once the trip is over — a live
+                // trip's map is the Trail's default already, and folding a trip
+                // still gathering plates would leave the book forever behind it.
+                if isLocked, hasTrail {
+                    Button {
+                        router.showTrail(.trip(trip.id))
+                        dismiss()
+                    } label: {
+                        rowLabel("View trail", symbol: "map", tint: Theme.route)
+                    }
+                }
+
+                if isLocked, let foldedBook, let onUnfold {
+                    Button(action: onUnfold) {
+                        rowLabel("Remove from \(foldedBook.name)",
+                                 symbol: "books.vertical", tint: Theme.paint)
+                    }
+                } else if isLocked, foldedBook == nil, let onFold {
+                    Button(action: onFold) {
+                        rowLabel("Add to book\u{2026}",
+                                 symbol: "books.vertical", tint: Theme.paint)
+                    }
+                }
+
                 // Also on a swipe, but it has to exist here too: the swipe buttons
                 // are hidden from VoiceOver, so this is the accessible route to it.
                 // Not offered on a trip that is put away — pinning sorts the main
@@ -906,7 +1307,10 @@ struct TripEditor: View {
         if let trip {
             target = trip
             trip.name = trimmedName
-            trip.scoringMode = mode
+            // Guests do not get to change what the party is scored on. The controls
+            // are already hidden for them; this is the same guard as `isLocked` above,
+            // for the same reason.
+            if !scoringIsHostOwned { trip.scoringMode = mode }
         } else {
             target = Trip(name: trimmedName, scoringMode: mode)
             context.insert(target)
@@ -920,9 +1324,13 @@ struct TripEditor: View {
         target.destination = destination.name.nilIfBlank
         target.destinationLat = destination.latitude
         target.destinationLon = destination.longitude
-        target.includesTrucks = includeTrucks
+        if !scoringIsHostOwned { target.includesTrucks = includeTrucks }
 
         try? context.save()
+
+        // Tell the party, so the rules and the route reach every phone rather than
+        // only the one they were typed on. No-op unless this trip is the party's.
+        PartySession.shared?.broadcastTrip(target)
         dismiss()
     }
 }

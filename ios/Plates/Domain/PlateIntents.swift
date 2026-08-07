@@ -147,14 +147,17 @@ struct LogPlateIntent: AppIntent {
                 "You already logged \(target.name) on \(trip.name)\(count > 1 ? ", \(count) times" : "")."))
         }
 
-        // No player attached. Siri cannot reasonably ask who spotted it mid-drive,
-        // and an unattributed sighting still counts for the trip — that is exactly
-        // what the nullify delete rule already exists to allow.
+        // Attributed to this phone's own player, like every other way in. It used to
+        // land unowned, on the reasoning that Siri cannot ask who spotted it
+        // mid-drive — true, and no longer a question anyone has to answer: the phone
+        // being spoken to *is* the person. A Siri-logged plate now shows up in the
+        // standings instead of quietly counting for nobody.
         //
         // Through `PlateLogger` like every other route in, which is what gets a
         // Siri-logged plate its banked rarity and its place on the trail. Logging it
         // here by hand is how it went without both for as long as it did.
         let outcome = PlateLogger.record(target, in: trip,
+                                         by: DevicePlayer.current(in: PlatesStore.context),
                                          at: TripLocation.shared.coordinate,
                                          context: PlatesStore.context)
         let tier = outcome.tier

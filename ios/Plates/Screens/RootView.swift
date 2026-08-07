@@ -41,7 +41,7 @@ struct RootView: View {
         #endif
     }
 
-    @State private var selection = RootView.initialTab
+    @State private var router = Router(tab: RootView.initialTab)
     @State private var popup = PopupHost()
 
     /// The popup layer sits outside the `TabView`, so a prompt covers the tab bar
@@ -53,11 +53,15 @@ struct RootView: View {
             PopupLayer(host: popup)
         }
         .environment(popup)
+        .environment(router)
     }
+
+    /// Where the More tab sits — the `Router` needs to name it to jump there.
+    static let moreTab = 4
 
     /// `-tab players` opens straight to a tab, so screens past the first can be
     /// screenshotted without driving the simulator by hand.
-    private static var initialTab: Int {
+    static var initialTab: Int {
         #if DEBUG
         let args = ProcessInfo.processInfo.arguments
         if let i = args.firstIndex(of: "-tab"), i + 1 < args.count {
@@ -74,7 +78,8 @@ struct RootView: View {
     }
 
     private var tabs: some View {
-        TabView(selection: $selection) {
+        @Bindable var router = router
+        return TabView(selection: $router.tab) {
             GameScreen()
                 .tabItem { Label("Game", systemImage: "car.fill") }
                 .tag(0)

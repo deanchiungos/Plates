@@ -44,13 +44,19 @@ struct GameScreen: View {
     // "log plates in Plates", and from nowhere else.
     @State private var listening = false
     #endif
-    @State private var addingPlayer = false
+    @State private var namingMe = false
+    @State private var notice: Notice?
     @State private var creatingTrip = false
     @State private var creatingBook = false
 
     /// The find currently being celebrated. The id restarts the animation even when
     /// the same plate is found twice in a row.
     @State private var celebrating: Celebration?
+    /// When the un-check menu last opened. The long-press fires while the finger is
+    /// still down, and the Button underneath fires when it lifts — so without a
+    /// window the same press both opens the menu and logs another sighting, which
+    /// is the exact mistake the menu exists to undo.
+    @State private var uncheckOpened: Date = .distantPast
 
     private struct Celebration: Identifiable {
         let id = UUID()
@@ -70,6 +76,18 @@ struct GameScreen: View {
     }
 
     private var collection: (any PlateCollection)? { target?.collection }
+
+    /// Who is on *this* trip or book — not everyone the store has ever heard of.
+    /// See `PlateCollection.participants`, which exists because the difference was
+    /// a bug: every new trip opened showing everybody from every past party, at
+    /// zero.
+    private var participants: [Player] {
+        guard let collection else { return [] }
+        return collection.participants(
+            from: players,
+            me: DevicePlayer.resolve(from: players),
+            alsoPlaying: PartySession.roster(for: collection.id))
+    }
 
     /// Resolved once per render rather than per tile. `PlateRarity` memoises the
     /// table too, but 65 dictionary lookups still beat 65 calls through the route.
@@ -218,6 +236,28 @@ struct GameScreen: View {
                     .transition(.opacity)
                 }
             }
+            // Somebody else's find. Deliberately a line at the top rather than the
+            // full card treatment — see `PartySession.PeerFind`.
+            .overlay(alignment: .top) {
+                if let notice {
+                    NoticeToast(text: notice.text, tint: notice.tint)
+                        .id(notice.id)
+                        .padding(.horizontal, 16)
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                }
+            }
+            .onChange(of: PartySession.shared?.latestFromPeer) { _, arrival in
+                guard let arrival else { return }
+                notice = Notice(text: "\(arrival.finder) found \(arrival.plateName)",
+                                tint: arrival.tier.color)
+            }
+            .onChange(of: notice?.id) { _, id in
+                guard let id else { return }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.6) {
+                    guard notice?.id == id else { return }
+                    withAnimation(.easeIn(duration: 0.3)) { notice = nil }
+                }
+            }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(.hidden, for: .navigationBar)
             // Siri's way in. The intent cannot present a sheet from outside the view
@@ -253,12 +293,12 @@ struct GameScreen: View {
             // happen, so the engine is armed when it is about to be used and not
             // several seconds before anything can possibly fire.
             .onAppear(perform: Haptics.warmUp)
+            .onAppear(perform: noticeTheChangeOnce)
             #if DEBUG
             // Screenshot hooks. Nothing here can be reached without a launch
             // argument, and the whole block compiles out of Release.
             //
             //   -search NEW      open the bar pre-filled
-            //   -popup who       the "who spotted it" prompt
             //   -popup switch    the trip / book switcher
             //   -celebrate CA    fire a confetti burst on that plate
             //   -filter left     only what's left
@@ -284,6 +324,14 @@ struct GameScreen: View {
                     query = args[i + 1]
                     searchOpen = true
                 }
+                // `-uncheck NJ` opens the removal menu on that plate — the menu is
+                // behind a long-press, which no launch argument can perform.
+                if let i = args.firstIndex(of: "-uncheck"), i + 1 < args.count,
+                   let plate = Plate.plate(for: args[i + 1]) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                        if let collection { uncheck(plate, in: collection) }
+                    }
+                }
                 if let i = args.firstIndex(of: "-celebrate"), i + 1 < args.count,
                    let plate = Plate.plate(for: args[i + 1]) {
                     // Re-fires on a loop: a one-shot is nearly impossible to catch
@@ -296,8 +344,6 @@ struct GameScreen: View {
                     let kind = args[i + 1]
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         switch kind {
-                        case "who":
-                            if let plate = Plate.plate(for: "NJ") { askWhoSpotted(plate) }
                         case "trips", "switch":
                             if let target { showSwitcher(current: target) }
                         default: break
@@ -307,10 +353,13 @@ struct GameScreen: View {
             }
             #endif
         }
-        .sheet(isPresented: $addingPlayer) {
-            PlayerEditor(player: nil,
-                         usedColors: Set(players.map(\.colorIndex)),
-                         onDelete: nil)
+        .sheet(isPresented: $namingMe) {
+            PlayerEditor(player: DevicePlayer.resolve(from: players),
+                         usedColors: [],
+                         onDelete: nil,
+                         title: "Who's playing?",
+                         saveLabel: "Start",
+                         onSaved: DevicePlayer.markProfileSet)
         }
         .sheet(isPresented: $creatingTrip) {
             TripEditor(trip: nil, onClear: nil, onDelete: nil)
@@ -384,17 +433,19 @@ struct GameScreen: View {
                             .padding(.top, 12)
                         }
 
-                        if players.count > 1 {
-                            PlayerStrip(standings: collection.standings(among: players))
+                        if participants.count > 1 {
+                            PlayerStrip(standings: collection.standings(among: participants))
                                 .padding(.top, 12)
                         } else {
-                            // Solo still needs a way in, or local multiplayer is
-                            // invisible to anyone who never opens the Players tab.
-                            Button { addingPlayer = true } label: {
+                            // Solo still needs a way in, or the party is invisible to
+                            // anyone who never opens the More tab. It used to offer to
+                            // add a player *to this phone*; the answer to "playing with
+                            // others?" is now that they bring their own.
+                            NavigationLink { PartyScreen() } label: {
                                 HStack(spacing: 6) {
                                     Image(systemName: "person.2")
                                         .font(.system(size: 12, weight: .semibold))
-                                    Text("Playing with others? Add players")
+                                    Text("Playing with others? Start a party")
                                         .font(.plates(size: 13, weight: .semibold))
                                 }
                                 .foregroundStyle(Theme.route)
@@ -584,12 +635,15 @@ struct GameScreen: View {
                 Button {
                     tap(plate, in: collection)
                 } label: {
-                    let spotter = players.count > 1 && found ? index.spotter(plate.code) : nil
+                    let shared = participants.count > 1 && found
+                    let spotter = shared ? index.spotter(plate.code) : nil
                     PlateTile(
                         plate: plate,
                         isFound: found,
                         spotterColor: spotter.map { Theme.playerColor($0.colorIndex) },
-                        spotterInitial: spotter?.initial,
+                        spotterInitial: spotter?.smallFace,
+                        spotterIsEmoji: spotter?.usesEmoji ?? false,
+                        claimants: shared ? index.claimants(plate.code) : [],
                         repeatCount: index.count(plate.code),
                         showsRepeats: unlimited,
                         rarity: rarities[plate.code],
@@ -597,6 +651,15 @@ struct GameScreen: View {
                     )
                 }
                 .buttonStyle(TileButtonStyle())
+                // The only way to un-count in unlimited mode, where a tap always
+                // adds. Simultaneous rather than exclusive so it cannot delay the
+                // ordinary tap, and a no-op in every other mode, where tapping the
+                // tile again is already the undo.
+                .simultaneousGesture(
+                    LongPressGesture(minimumDuration: 0.45).onEnded { _ in
+                        uncheck(plate, in: collection)
+                    }
+                )
                 // Confetti is layered on rather than built into PlateTile so the
                 // tile stays a pure presentation view. It draws outside its frame
                 // on purpose, which is why the celebrating tile takes the top
@@ -661,26 +724,99 @@ struct GameScreen: View {
     // MARK: - Actions
 
     private func tap(_ plate: Plate, in collection: any PlateCollection) {
+        // The lift at the end of the long-press that just opened the un-check menu.
+        // Not a sighting.
+        guard Date().timeIntervalSince(uncheckOpened) > 0.8 else { return }
+
         // Unlimited counts every sighting, so a tap always adds. The other modes
-        // toggle, which is how you undo a mistake.
+        // toggle, which is how you undo a mistake. Unlimited's undo is a long-press
+        // — see `uncheck`.
         if collection.scoringMode != .unlimited, collection.hasSeen(plate) {
-            clear(plate, in: collection)
+            tapFound(plate, in: collection)
             return
         }
-        if players.count > 1 {
-            askWhoSpotted(plate)
-        } else {
-            record(plate, by: players.first)
-        }
+        // Always this phone's own player. The prompt that used to stand here — "who
+        // spotted New Jersey?", listing everyone in the car — is gone with the
+        // shared-device roster it belonged to: in a party the phone answers that
+        // question by existing. See `DevicePlayer`.
+        record(plate, by: DevicePlayer.resolve(from: players))
     }
 
-    private func askWhoSpotted(_ plate: Plate) {
-        popup.present("Who spotted \(plate.name)?", message: plate.code) {
-            ForEach(players) { player in
-                PopupChoice(title: player.name,
-                            dotColor: Theme.playerColor(player.colorIndex),
-                            dotInitial: player.initial) {
-                    record(plate, by: player)
+    /// What a tap on an already-found plate means, which depends on the party.
+    ///
+    /// On one phone there was only one answer: you found it, so tapping again is
+    /// undoing a mistake. With five phones the same tap can be three different
+    /// things, and which one it is has to be the car's decision rather than ours.
+    /// See `PartyRules`.
+    private func tapFound(_ plate: Plate, in collection: any PlateCollection) {
+        let me = DevicePlayer.resolve(from: players)
+        let rules = PartySession.rules(for: collection.id)
+
+        // Shared claims: somebody else got there first, and that no longer stops you
+        // banking it too — at what it is worth from where *you* are sitting.
+        if rules.sharedClaims, !collection.hasClaimed(plate.code, by: me) {
+            record(plate, by: me)
+            return
+        }
+
+        // Otherwise a tap is a take-back, and may not be yours to make.
+        let mine = collection.removableSightings(of: plate.code, by: me,
+                                                 protected: rules.protectsClaims)
+        guard !mine.isEmpty else {
+            let who = collection.plateIndex().spotter(plate.code)?.name
+            notice = Notice(text: who.map { "\($0) spotted that one." }
+                                  ?? "That one is not yours to take back.",
+                            tint: Theme.inkMuted)
+            Haptics.undo()
+            return
+        }
+        clear(plate, in: collection, removing: mine)
+    }
+
+    /// The undo unlimited mode otherwise lacks: long-press a counted plate to take
+    /// sightings back.
+    ///
+    /// A popup rather than an instant removal, because a long-press is easy to make
+    /// by accident while scrolling a grid — and because the count is the thing you
+    /// need to see before deciding whether one sighting goes or all of them do.
+    /// "Remove one" takes the most recent, which is the one the mistaken tap made.
+    private func uncheck(_ plate: Plate, in collection: any PlateCollection) {
+        guard collection.scoringMode == .unlimited, collection.hasSeen(plate) else { return }
+        uncheckOpened = Date()
+
+        // The same ownership rules as a tap-to-clear: in a party with protected
+        // claims, the sightings you can take back are your own.
+        let me = DevicePlayer.resolve(from: players)
+        let rules = PartySession.rules(for: collection.id)
+        let mine = collection.removableSightings(of: plate.code, by: me,
+                                                 protected: rules.protectsClaims)
+        guard !mine.isEmpty else {
+            let who = collection.plateIndex().spotter(plate.code)?.name
+            notice = Notice(text: who.map { "\($0) spotted that one." }
+                                  ?? "That one is not yours to take back.",
+                            tint: Theme.inkMuted)
+            Haptics.undo()
+            return
+        }
+
+        let total = collection.sightingCount(for: plate)
+        let message = mine.count == total
+            ? "Counted \(total) time\(total == 1 ? "" : "s"). Removing takes back the "
+              + "most recent sighting and the points it scored."
+            : "Counted \(total) times, \(mine.count) of them yours. You can only take "
+              + "back your own."
+
+        popup.present(plate.name, message: message) {
+            PopupButton(title: mine.count == 1 ? "Remove it" : "Remove one",
+                        kind: .destructive) {
+                if let latest = mine.max(by: { SightingOrder($0) < SightingOrder($1) }) {
+                    clear(plate, in: collection, removing: [latest])
+                }
+                popup.dismiss()
+            }
+            if mine.count > 1 {
+                PopupButton(title: "Remove all \(mine.count)", kind: .destructive) {
+                    clear(plate, in: collection, removing: mine)
                     popup.dismiss()
                 }
             }
@@ -707,6 +843,40 @@ struct GameScreen: View {
         }
     }
 
+    /// Told once, to the only people it happens to.
+    ///
+    /// An install carrying several players was, until this version, asked on every
+    /// tap which of them had spotted the plate. That prompt is gone and everything
+    /// now lands on this phone's own player, which is a change those people would
+    /// otherwise discover by tapping a plate and watching it go to the wrong person.
+    /// Nothing about their data moves: every past attribution, score and standing is
+    /// exactly where it was.
+    private func noticeTheChangeOnce() {
+        // A fresh install has one seeded, unnamed player and nothing to explain, so
+        // it gets asked who it is instead. The two are mutually exclusive: an install
+        // with a roster to migrate has names already.
+        guard DevicePlayer.needsMigrationNotice(players: players) else {
+            if !DevicePlayer.hasProfile {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { namingMe = true }
+            }
+            return
+        }
+        DevicePlayer.migrationNoticeShown()
+
+        // After the screen has settled, or it competes with the first render.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+            popup.present(
+                "Multiplayer is now a party",
+                message: "Everyone plays from their own phone instead of sharing "
+                       + "yours, so Plates no longer asks who spotted each plate. "
+                       + "Every plate you have already collected is untouched. "
+                       + "Start a party from the More tab."
+            ) {
+                PopupButton(title: "Got it") { popup.dismiss() }
+            }
+        }
+    }
+
     private func celebrate(_ plate: Plate, in collection: (any PlateCollection)?) {
         let tier = RarityTier.forRarity(PlateRarity.rarity(plate.code, on: collection?.route))
         let party = Celebration(plate: plate,
@@ -728,18 +898,49 @@ struct GameScreen: View {
         withAnimation(.easeIn(duration: 0.28)) { celebrating = nil }
     }
 
-    private func clear(_ plate: Plate, in collection: any PlateCollection) {
+    /// Takes back `doomed`, or everything of this plate when no list is given.
+    ///
+    /// The list exists because "un-tap this plate" and "delete every sighting of it"
+    /// stopped being the same thing: under protected claims a tap takes back only
+    /// your own, and under shared claims a plate can have four owners.
+    private func clear(_ plate: Plate, in collection: any PlateCollection,
+                       removing doomed: [Sighting]? = nil) {
+        let going = doomed ?? collection.allSightings.filter { $0.plateCode == plate.code }
+        // A sighting on a reopened trip may also be shelved in a book — see
+        // `fold`. If that book is shared, its members need the tombstone, and the
+        // book reference is gone the moment the row is. So this goes first.
+        for (_, group) in Dictionary(grouping: going.filter { $0.book != nil },
+                                     by: { $0.book!.id }) {
+            if let book = group.first?.book, book.id != collection.id,
+               SharedBookLedger.shared.isShared(book.id) {
+                SharedBookSync.shared.remove(group.map(\.id), in: book)
+            }
+        }
         // Collected before the delete, because afterwards there is nothing left to
         // ask which sightings went — and a party has to name them individually so a
         // peer that never heard of them can still record that they are gone.
         var withdrawn: [UUID] = []
-        for sighting in collection.allSightings where sighting.plateCode == plate.code {
+        for sighting in going {
             withdrawn.append(sighting.id)
-            context.delete(sighting)
+            // A plate folded in from a finished trip is the trip's record, on loan
+            // to this book — un-tapping it here hands it back, it does not reach
+            // into the trip and erase what happened there. Only sightings the book
+            // itself logged are the book's to delete.
+            if collection is Book, sighting.trip != nil {
+                sighting.book = nil
+            } else {
+                context.delete(sighting)
+            }
         }
         try? context.save()
         if let trip = collection as? Trip {
             PartySession.shared?.broadcastRemoval(withdrawn, in: trip.id)
+        }
+        // The same withdrawal over the slower wire. Deleting the record *is* the
+        // tombstone here — CloudKit tells the other side about it on their next
+        // pull — so unlike the party there is nothing extra to remember.
+        if let book = collection as? Book, SharedBookLedger.shared.isShared(book.id) {
+            SharedBookSync.shared.remove(withdrawn, in: book)
         }
         Haptics.undo()
     }
@@ -820,4 +1021,50 @@ struct TileButtonStyle: ButtonStyle {
             .scaleEffect(configuration.isPressed ? 0.95 : 1)
             .animation(.snappy(duration: 0.13), value: configuration.isPressed)
     }
+}
+
+/// One line at the top of the grid, said once and quietly.
+///
+/// Two things use it and both are the same shape of message: somebody else called a
+/// plate, or a tap did not do what it usually does. Neither earns the find card —
+/// one belongs to whoever spotted it, and the other is a refusal, which should be
+/// the smallest possible interruption to a car full of people looking out of the
+/// window.
+///
+/// The colour arrives as a dot rather than a word, because the interesting thing
+/// about somebody else's plate is that it happened, not what it scored.
+private struct NoticeToast: View {
+    let text: String
+    let tint: Color
+
+    var body: some View {
+        HStack(spacing: 9) {
+            Circle()
+                .fill(tint)
+                .frame(width: 8, height: 8)
+
+            Text(text)
+                .font(.plates(size: 13.5, weight: .semibold))
+                .foregroundStyle(Theme.ink)
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 9)
+        .background(
+            Capsule()
+                .fill(Theme.surface)
+                .shadow(color: Theme.ink.opacity(0.14), radius: 8, y: 3)
+        )
+        .overlay(Capsule().strokeBorder(Theme.line, lineWidth: 1))
+        .accessibilityLabel(text)
+    }
+}
+
+/// A transient line for the grid to show. The id restarts the timer even when the
+/// same message arrives twice running.
+struct Notice: Identifiable, Equatable {
+    let id = UUID()
+    let text: String
+    let tint: Color
 }

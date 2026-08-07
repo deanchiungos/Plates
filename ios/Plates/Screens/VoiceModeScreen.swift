@@ -21,8 +21,6 @@ struct VoiceModeScreen: View {
 
     @State private var voice = VoiceLogger()
     @State private var speech = VoiceSpeaker()
-    /// True until somebody has been named. With one player there is nobody to ask.
-    @State private var askingWho = false
     @State private var logged: [Entry] = []
     /// The transcript that last triggered an undo, so its revisions cannot trigger
     /// another. See `hearUndo`.
@@ -30,8 +28,12 @@ struct VoiceModeScreen: View {
     /// A plate whose repeat guard is being held only until the app stops talking about
     /// it. See `hearUndo`.
     @State private var releaseAfterSpeech: String?
-    @State private var speaker: Player?
-    @AppStorage("voiceSpeaker") private var speakerID = ""
+
+    /// This phone's own player, exactly as the grid uses. Voice used to ask "who is
+    /// logging?" out loud and keep a chosen speaker, which was the audible half of
+    /// the shared-device roster — and asking it in a party would be stranger still
+    /// than the tap prompt was, since everyone else is holding the phone that knows.
+    private var speaker: Player? { DevicePlayer.resolve(from: players) }
 
     private let location = TripLocation.shared
 
@@ -65,7 +67,6 @@ struct VoiceModeScreen: View {
 
                 VStack(spacing: 0) {
                     listener
-                    if players.count > 1 { speakerPicker }
                     Divider().overlay(Theme.line)
                     heard
                 }
@@ -79,10 +80,8 @@ struct VoiceModeScreen: View {
             }
         }
         .task {
-            speaker = players.first { $0.id.uuidString == speakerID } ?? players.first
             voice.onHeard = { plate in log(plate) }
             voice.onPhrase = { heard in
-                hearPlayer(in: heard)
                 hearUndo(in: heard)
                 hearStop(in: heard)
             }
@@ -229,40 +228,9 @@ struct VoiceModeScreen: View {
         }
     }
 
-    // MARK: - Who is talking
-
-    /// Only when there is more than one player. Voice cannot tell who spoke, so this
-    /// is the honest version: say up front whose finds these are, and let it be
-    /// changed mid-drive when the phone gets handed over.
-    private var speakerPicker: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                Text("Logging as")
-                    .font(.plates(size: 12))
-                    .foregroundStyle(Theme.inkMuted)
-                ForEach(players) { player in
-                    let on = speaker?.id == player.id
-                    Button {
-                        speaker = player
-                        speakerID = player.id.uuidString
-                        Haptics.selection()
-                    } label: {
-                        Text(player.name)
-                            .font(.plates(size: 13, weight: on ? .bold : .regular))
-                            .foregroundStyle(on ? .white : Theme.ink)
-                            .padding(.horizontal, 12).padding(.vertical, 7)
-                            .background(
-                                Capsule().fill(on ? Theme.playerColor(player.colorIndex)
-                                                  : Theme.surface))
-                            .overlay(Capsule().strokeBorder(Theme.line, lineWidth: on ? 0 : 1))
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-            .padding(.horizontal, Theme.screenPadding)
-        }
-        .padding(.bottom, 12)
-    }
+    // NOTE: a "Logging as" strip used to sit here, letting the phone be handed round
+    // the car mid-drive. It went with the rest of the shared-device roster — voice
+    // now logs as this phone's own player, like everything else. See `DevicePlayer`.
 
     // MARK: - What it heard
 
@@ -326,42 +294,17 @@ struct VoiceModeScreen: View {
 
     // MARK: - Talking
 
-    /// The opening line, and the only place the app asks a question.
+    /// The opening line.
     ///
-    /// Two players or more and it does not know whose finds these are, so it asks.
-    /// One player and asking would be theatre — it says what it wants and starts.
+    /// It used to be a question — "who is logging?" — whenever the phone held more
+    /// than one player, and then a listener that watched every subsequent phrase for
+    /// a name in case the answer arrived late. Both are gone: this phone has one
+    /// player, so there is nothing to ask and nothing that can be misheard into
+    /// putting forty plates on the wrong person.
     private func greet() {
         guard voice.status == .listening else { return }
         voice.isMuted = true
-        if players.count > 1 && speaker == nil {
-            askingWho = true
-            speech.say("Who is logging?")
-        } else if let speaker, players.count > 1 {
-            speech.say("Logging for \(speaker.name). What did you see?")
-        } else {
-            speech.say("What did you see?")
-        }
-    }
-
-    /// Catches a player's name in the answer to "who is logging?".
-    ///
-    /// Only while that question is open. Left running it would reassign the logger
-    /// every time somebody in the back said a name, which is a very easy way to put
-    /// forty plates on the wrong person.
-    private func hearPlayer(in heard: String) {
-        guard askingWho else { return }
-        let said = PlateSpeech.normalise(heard)
-        guard let match = players.first(where: {
-            let name = PlateSpeech.normalise($0.name)
-            return !name.isEmpty && (" " + said + " ").contains(" " + name + " ")
-        }) else { return }
-
-        askingWho = false
-        speaker = match
-        speakerID = match.id.uuidString
-        Haptics.selection()
-        voice.isMuted = true
-        speech.say("Thanks \(match.name). What did you see?")
+        speech.say("What did you see?")
     }
 
     /// "Undo", and the last thing logged comes back off.
@@ -371,7 +314,7 @@ struct VoiceModeScreen: View {
     /// one thing this whole mode exists to avoid. A mishearing is now fixable in the
     /// same breath that noticed it.
     private func hearUndo(in heard: String) {
-        guard !askingWho, PlateSpeech.saysUndo(heard) else { return }
+        guard PlateSpeech.saysUndo(heard) else { return }
         // The same words, re-sent. A recogniser revises a phrase several times before
         // it settles, and every one of those revisions still ends in "undo" — without
         // this the sentence unwinds the session one plate at a time.
@@ -405,7 +348,7 @@ struct VoiceModeScreen: View {
     /// Hands-free has to include the way out, or the last thing you do every drive is
     /// pick the phone up to end something you started by talking to it.
     private func hearStop(in heard: String) {
-        guard !askingWho, PlateSpeech.saysStop(heard) else { return }
+        guard PlateSpeech.saysStop(heard) else { return }
         voice.stop()
         speech.stop()
         Haptics.undo()
@@ -441,8 +384,13 @@ struct VoiceModeScreen: View {
     /// Removes the sighting this entry created, not every sighting of the plate — a
     /// mishearing on the fourth Ohio of the day must not wipe the first three.
     private func undo(_ entry: Entry) {
-        let matches = collection.allSightings
-            .filter { $0.plateCode == entry.plate.code }
+        // Only ever your own, when the party protects claims. Voice is the easiest
+        // way in the app to take back somebody else's plate by accident — "undo"
+        // said out loud does not know whose turn it was.
+        let matches = collection
+            .removableSightings(of: entry.plate.code,
+                                by: speaker,
+                                protected: PartySession.rules(for: collection.id).protectsClaims)
             .sorted { $0.spottedAt > $1.spottedAt }
         if let newest = matches.first {
             let withdrawn = newest.id
@@ -450,6 +398,9 @@ struct VoiceModeScreen: View {
             context.delete(newest)
             try? context.save()
             if let trip { PartySession.shared?.broadcastRemoval([withdrawn], in: trip) }
+            if let book = collection as? Book, SharedBookLedger.shared.isShared(book.id) {
+                SharedBookSync.shared.remove([withdrawn], in: book)
+            }
         }
         withAnimation(.snappy(duration: 0.2)) {
             logged.removeAll { $0.id == entry.id }

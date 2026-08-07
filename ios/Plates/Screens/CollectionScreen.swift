@@ -1,3 +1,4 @@
+import CloudKit
 import SwiftUI
 import SwiftData
 
@@ -20,6 +21,7 @@ struct CollectionScreen: View {
     @Query private var sightings: [Sighting]
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
+    @Query(sort: \Player.joinedAt) private var players: [Player]
     @AppStorage(TripSelection.key) private var currentTripID = ""
     @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
     @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
@@ -61,6 +63,20 @@ struct CollectionScreen: View {
     private var showingAllTime: Bool { allTime || books.isEmpty }
 
     private var scopeName: String { showingAllTime ? "All time" : (currentBook?.name ?? "") }
+
+    /// The share this book is part of, if any. Read from the local ledger, so the
+    /// header draws correctly before any network call has finished — or ever.
+    private var sharedEntry: SharedBookLedger.Entry? {
+        guard let book = currentBook else { return nil }
+        return SharedBookLedger.shared.entry(for: book.id)
+    }
+
+    /// Everyone with a plate in this book. Reuses the same scoping the standings
+    /// strip uses, so a shared book counts people the same way a party trip does.
+    private var contributors: [Player] {
+        guard let book = currentBook else { return [] }
+        return book.participants(from: players, me: DevicePlayer.resolve(from: players))
+    }
 
     private var scoped: PlateBook {
         PlateBook(sightings: showingAllTime ? sightings : (currentBook?.allSightings ?? []))
@@ -233,9 +249,16 @@ struct CollectionScreen: View {
         VStack(alignment: .leading, spacing: 3) {
             Button { showScopeSwitcher() } label: {
                 HStack(spacing: 5) {
-                    Text(showingAllTime ? "EVERY PLATE EVER" : "BOOK")
+                    Text(showingAllTime ? "EVERY PLATE EVER"
+                                        : (sharedEntry == nil ? "BOOK" : "SHARED BOOK"))
                         .font(.plates(size: 10, weight: .bold))
                         .tracking(1.2)
+                    if sharedEntry != nil {
+                        Image(systemName: "person.2.fill")
+                            .font(.system(size: 9, weight: .bold))
+                            .foregroundStyle(Theme.found)
+                            .accessibilityLabel("Shared")
+                    }
                     Spacer(minLength: 8)
                     Text("SWITCH")
                         .font(.plates(size: 9.5, weight: .bold))
@@ -266,6 +289,16 @@ struct CollectionScreen: View {
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
+
+                // Everyone who has put a plate in this book. Drawn from the local
+                // rows rather than from `CKShare.participants`, so it is right
+                // offline and needs no round trip to render a header — a
+                // contributor exists locally the moment one of their sightings has
+                // arrived, which is exactly when they are worth showing.
+                if !showingAllTime, sharedEntry != nil, contributors.count > 1 {
+                    AvatarStack(players: contributors, limit: 4, size: 22,
+                                background: Theme.surface)
+                }
 
                 // Centred on the name and date rather than on the whole card, so it
                 // sits under SWITCH instead of drifting up against it.
@@ -463,12 +496,20 @@ struct CollectionScreen: View {
         switch pending {
         case .clear(let book):
             let count = book.platesFound
+            let hasFolded = book.allSightings.contains { $0.trip != nil }
             popup.present(
                 "Empty \(book.name)?",
                 message: "\(count) plate\(count == 1 ? "" : "s") will be removed from this book and from your all-time count. The book itself stays."
+                    + (hasFolded ? " Plates folded in from trips go back to their trips and stay in your history." : "")
             ) {
                 PopupButton(title: "Empty book", kind: .destructive) {
-                    for sighting in book.allSightings { context.delete(sighting) }
+                    for sighting in book.allSightings {
+                        // A folded sighting is the trip's record, on loan to this
+                        // shelf. Emptying the shelf hands it back; only sightings
+                        // logged straight into the book are the book's to delete.
+                        if sighting.trip != nil { sighting.book = nil }
+                        else { context.delete(sighting) }
+                    }
                     try? context.save()
                     Haptics.destructive()
                     popup.dismiss()
@@ -751,6 +792,9 @@ struct BookEditor: View {
 
     @State private var name = ""
     @FocusState private var focused: Bool
+    @State private var sharing: SharePayload?
+    @State private var shareTrouble: String?
+    @State private var preparingShare = false
 
     private var isNew: Bool { book == nil }
     private var trimmed: String { name.trimmingCharacters(in: .whitespacesAndNewlines) }
@@ -792,12 +836,17 @@ struct BookEditor: View {
                             .fixedSize(horizontal: false, vertical: true)
 
                         if let book, !isNew { stats(book) }
+                        if let book, !isNew { sharingSection(book) }
                         if !isNew { dangerZone }
 
                         Spacer(minLength: 8)
                     }
                     .padding(Theme.screenPadding)
                 }
+            }
+            .sheet(item: $sharing) { payload in
+                CloudShareSheet(share: payload.share,
+                                container: payload.container) { sharing = nil }
             }
             .navigationTitle(isNew ? "New book" : "Edit book")
             .navigationBarTitleDisplayMode(.inline)
@@ -883,4 +932,106 @@ struct BookEditor: View {
         try? context.save()
         dismiss()
     }
+}
+
+// MARK: - Sharing a book
+
+extension BookEditor {
+
+    /// Inviting somebody to fill this book with you.
+    ///
+    /// Deliberately here rather than on the party screen. A party is the car you are
+    /// in; this is a standing arrangement with somebody who might be three states
+    /// away, and the two have almost nothing in common beyond both involving another
+    /// person. Putting them together would suggest they work the same way.
+    @ViewBuilder
+    func sharingSection(_ book: Book) -> some View {
+        let entry = SharedBookLedger.shared.entry(for: book.id)
+
+        VStack(alignment: .leading, spacing: 9) {
+            Text(entry == nil ? "SHARE" : "SHARED")
+                .font(.plates(size: 11, weight: .bold))
+                .tracking(1.2)
+                .foregroundStyle(Theme.inkMuted)
+
+            if let entry {
+                Text(entry.isOwner
+                     ? "You are sharing this book. Anything they add appears here, and anything you add appears for them."
+                     : "You are filling this book with its owner. It lives in their iCloud \u{2014} if they stop sharing it, your copy of the plates stays on this phone.")
+                    .font(.plates(size: 12.5))
+                    .foregroundStyle(Theme.inkMuted)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Button(entry.isOwner ? "Stop sharing" : "Leave this book") {
+                    Task {
+                        await SharedBookSync.shared.stopSharing(book)
+                        Haptics.destructive()
+                    }
+                }
+                .font(.plates(size: 15, weight: .semibold))
+                .foregroundStyle(.red)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(Color.red.opacity(0.10)))
+            } else {
+                Text("Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are.")
+                    .font(.plates(size: 12.5))
+                    .foregroundStyle(Theme.inkMuted)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Button {
+                    prepareShare(for: book)
+                } label: {
+                    HStack(spacing: 7) {
+                        if preparingShare {
+                            ProgressView().controlSize(.small)
+                        } else {
+                            Image(systemName: "person.crop.circle.badge.plus")
+                                .font(.system(size: 14, weight: .semibold))
+                        }
+                        Text(preparingShare ? "Preparing\u{2026}" : "Share this book")
+                            .font(.plates(size: 15, weight: .semibold))
+                    }
+                    .foregroundStyle(Theme.route)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .strokeBorder(Theme.route.opacity(0.35),
+                                      style: StrokeStyle(lineWidth: 1.5, dash: [5, 4])))
+                }
+                .disabled(preparingShare)
+            }
+
+            if let shareTrouble {
+                Text(shareTrouble)
+                    .font(.plates(size: 12.5))
+                    .foregroundStyle(Theme.paint)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+    }
+
+    private func prepareShare(for book: Book) {
+        preparingShare = true
+        shareTrouble = nil
+        Task {
+            do {
+                let (share, container) = try await SharedBookSync.shared.makeShare(for: book)
+                sharing = SharePayload(share: share, container: container)
+            } catch {
+                shareTrouble = SharedBookSync.shared.trouble ?? error.localizedDescription
+            }
+            preparingShare = false
+        }
+    }
+}
+
+
+/// `.sheet(item:)` needs something `Identifiable`, and a `CKShare` is not. Carrying
+/// the container alongside it is convenient anyway — the share sheet needs both.
+struct SharePayload: Identifiable {
+    let id = UUID()
+    let share: CKShare
+    let container: CKContainer
 }

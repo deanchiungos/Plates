@@ -1,8 +1,28 @@
+import CloudKit
 import SwiftUI
 import SwiftData
+import UIKit
+
+/// Exists for exactly one callback.
+///
+/// Accepting a shared book happens outside the app's own UI: somebody taps a link
+/// in Messages, iOS launches us, and hands the invitation to the *application*
+/// delegate. There is no SwiftUI equivalent — `onOpenURL` never sees it, because a
+/// CloudKit share is not delivered as a URL — so this is the one thing the app
+/// still needs a `UIApplicationDelegate` for.
+final class PlatesAppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication,
+                     userDidAcceptCloudKitShareWith metadata: CKShare.Metadata) {
+        Task { @MainActor in
+            await SharedBookSync.shared.accept(metadata, into: PlatesStore.context)
+        }
+    }
+}
 
 @main
 struct PlatesApp: App {
+    @UIApplicationDelegateAdaptor(PlatesAppDelegate.self) private var appDelegate
+    @Environment(\.scenePhase) private var scenePhase
     let container: ModelContainer
 
     @MainActor
@@ -34,7 +54,15 @@ struct PlatesApp: App {
                 // backgrounds. Locking the scheme is the honest fix until there is a
                 // real dark palette; half a theme is worse than one.
                 .preferredColorScheme(.light)
+                // Shared books are filled over weeks, not seconds, so this pulls on
+                // arrival rather than polling. Anything a friend added while the app
+                // was closed lands the moment it is opened.
+                .task { await SharedBookSync.shared.pullAll(into: PlatesStore.context) }
         }
         .modelContainer(container)
+        .onChange(of: scenePhase) { _, phase in
+            guard phase == .active else { return }
+            Task { await SharedBookSync.shared.pullAll(into: PlatesStore.context) }
+        }
     }
 }

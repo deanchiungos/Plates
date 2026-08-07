@@ -48,6 +48,15 @@ enum PlateLogger {
         // party cannot echo. See `PartyMerge`.
         PartySession.shared?.broadcast(sighting)
 
+        // The same idea over a slower wire: a plate logged into a shared book has to
+        // reach whoever else is filling it. Same rule as the party — only what this
+        // device authored goes out, and nothing that arrives is ever re-published,
+        // because received sightings come through `SharedBookMerge` and never
+        // through here.
+        if let book = sighting.book, SharedBookLedger.shared.isShared(book.id) {
+            SharedBookSync.shared.push(sighting, in: book)
+        }
+
         return Outcome(isFirstFind: isFirstFind,
                        tier: RarityTier.forRarity(collection.rarity(of: plate.code)),
                        count: collection.sightingCount(for: plate))

@@ -1,3 +1,4 @@
+import SwiftData
 import SwiftUI
 
 /// The app's preferences, and the two permissions it can ask for.
@@ -13,9 +14,14 @@ import SwiftUI
 /// true, none of it anything a person opens Settings to read — they come here to turn
 /// something on. Every line now either reports a state or changes one.
 struct SettingsScreen: View {
+    @Environment(\.modelContext) private var context
+    @Environment(PopupHost.self) private var popup
+
     private let backup = CloudBackup.shared
     private let location = TripLocation.shared
 
+    @Query(sort: \Player.joinedAt) private var players: [Player]
+    @State private var editingMe = false
     @State private var haptics = Haptics.isOn
 
     var body: some View {
@@ -24,6 +30,8 @@ struct SettingsScreen: View {
 
             ScrollView {
                 VStack(spacing: 18) {
+                    identityCard
+                    othersCard
                     backupCard
                     locationCard
                     voiceCard
@@ -35,6 +43,138 @@ struct SettingsScreen: View {
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $editingMe) {
+            // The same editor the roster used, which is why it outlived the roster:
+            // it only ever edited one player, and one player is all there is now.
+            PlayerEditor(player: me,
+                         usedColors: Set(players.filter { $0.id != me?.id }.map(\.colorIndex)),
+                         onDelete: nil)
+        }
+    }
+
+    // MARK: - Who this phone is
+
+    /// The one identity this device plays as, and a control that changes it — which
+    /// is why it belongs here rather than reading as an explanation.
+    ///
+    /// It carries a name and a colour because both are seen by other people: in a
+    /// party this is the chip on every plate you call and the row in everyone's
+    /// standings. Setting it is the only preparation a party needs.
+    private var identityCard: some View {
+        SettingsGroup("Playing as") {
+            Button {
+                Haptics.selection()
+                editingMe = true
+            } label: {
+                HStack(spacing: 12) {
+                    Circle()
+                        .fill(Theme.playerColor(me?.colorIndex ?? 0))
+                        .frame(width: 32, height: 32)
+                        .overlay(
+                            Text(me?.face ?? "?")
+                                .font(me?.usesEmoji == true ? .system(size: 17)
+                                                        : Theme.PlateFont.condensed(15))
+                                .foregroundStyle(Theme.ink)
+                        )
+
+                    Text(me?.name ?? "Me")
+                        .font(.plates(size: 15, weight: .semibold))
+                        .foregroundStyle(Theme.ink)
+
+                    Spacer()
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(Theme.inkMuted.opacity(0.55))
+                }
+                .padding(14)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+    private var me: Player? { DevicePlayer.resolve(from: players) }
+
+    // MARK: - Everybody else
+
+    /// Other people whose names have ended up in this phone's collections, and a way
+    /// to remove one.
+    ///
+    /// Adding players by hand is gone and is not coming back — the party puts them
+    /// there now. But *removal* had nowhere to live after the roster screen was
+    /// retired, and it turns out to be needed: a party you joined once leaves its
+    /// people in your store for good, and anything that ever reached your iCloud
+    /// account stays until something deletes it. Somebody looking at a name they do
+    /// not recognise needs a way to get rid of it.
+    ///
+    /// Safe by construction. `Player`'s delete rule is `.nullify`, so removing
+    /// somebody does not un-collect a single plate — the sightings survive with no
+    /// owner and every count stays exactly where it was. Only the standings lose a
+    /// row. See `Player.sightings`.
+    @ViewBuilder
+    private var othersCard: some View {
+        let others = players.filter { $0.id != me?.id }
+        if !others.isEmpty {
+            SettingsGroup("Other people") {
+                ForEach(Array(others.enumerated()), id: \.element.id) { index, player in
+                    if index > 0 { SettingsDivider() }
+                    HStack(spacing: 12) {
+                        Circle()
+                            .fill(Theme.playerColor(player.colorIndex))
+                            .frame(width: 26, height: 26)
+                            .overlay(
+                                Text(player.face)
+                                    .font(player.usesEmoji ? .system(size: 14)
+                                                           : Theme.PlateFont.condensed(12))
+                                    .foregroundStyle(Theme.ink)
+                            )
+
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text(player.name)
+                                .font(.plates(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.ink)
+                            Text(plateCount(player))
+                                .font(.plates(size: 12))
+                                .foregroundStyle(Theme.inkMuted)
+                        }
+
+                        Spacer(minLength: 8)
+
+                        Button { confirmRemoval(of: player) } label: {
+                            Text("Remove")
+                                .font(.plates(size: 13, weight: .semibold))
+                                .foregroundStyle(.red)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    .padding(14)
+                }
+            }
+        }
+    }
+
+    private func plateCount(_ player: Player) -> String {
+        let n = player.sightings?.count ?? 0
+        return n == 0 ? "No plates on this phone"
+                      : "\(n) plate\(n == 1 ? "" : "s") they spotted"
+    }
+
+    private func confirmRemoval(of player: Player) {
+        Haptics.selection()
+        popup.present(
+            "Remove \(player.name)?",
+            message: "Plates they spotted stay collected \u{2014} every count is unchanged. "
+                   + "Only their line in the standings goes."
+        ) {
+            PopupButton(title: "Remove", kind: .destructive) {
+                context.delete(player)
+                try? context.save()
+                Haptics.destructive()
+                popup.dismiss()
+            }
+            PopupButton(title: "Cancel") { popup.dismiss() }
+        }
     }
 
     // MARK: - iCloud
