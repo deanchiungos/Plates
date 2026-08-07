@@ -32,6 +32,20 @@ final class Player {
     var colorIndex: Int = 0
     var joinedAt: Date = Date()
 
+    /// An emoji to be, instead of initials.
+    ///
+    /// Optional, and stays optional: initials are a perfectly good answer and the
+    /// grown-up in the car will often want them. But this is a game played mostly by
+    /// children, where "I'm the fox" is a more useful handle than "AD" — and in a
+    /// party, where four circles sit side by side, a picture is legible at sizes two
+    /// letters are not.
+    ///
+    /// NOTE: this is the first added property since the CloudKit schema was
+    /// deployed. Optional with no default, which is the shape CloudKit requires, but
+    /// it still needs a production deploy before any build that carries it reaches
+    /// TestFlight. See the warning at the top of `PlatesStore`.
+    var avatar: String?
+
     /// Nullify, not cascade. Removing someone from the car must not un-collect
     /// the plates they spotted — the sighting happened. Their sightings survive
     /// with no owner, so the trip's count is unchanged and only the per-player
@@ -56,6 +70,31 @@ final class Player {
     /// cost and a much smaller one than turning somebody away from the game.
 
     var initial: String { String(name.prefix(1)).uppercased() }
+
+    /// What goes in the circle: their emoji if they picked one, else initials.
+    ///
+    /// Two accessors rather than one because the sizes are genuinely different. A
+    /// 24pt avatar can hold two letters; the 12pt chip in a plate's corner cannot,
+    /// and has always shown one. An emoji is a single glyph either way, so it simply
+    /// wins in both.
+    /// Falls back to initials when the chosen emoji cannot be drawn here — see
+    /// `Glyphs`. A box is worse than a letter.
+    var face: String { usesEmoji ? (avatar ?? initials2) : initials2 }
+    var smallFace: String { usesEmoji ? (avatar ?? initial) : initial }
+
+    /// Two letters, for the overlapping avatar circles.
+    ///
+    /// Initials where there are two words to take them from — "Aunt Deb" is AD —
+    /// and the first two letters otherwise, so "Mia" is MI rather than a lonely M
+    /// in a circle sized for a pair. A single letter reads as a mistake next to
+    /// four two-letter neighbours.
+    var initials2: String {
+        let words = name.split(separator: " ").filter { !$0.isEmpty }
+        if words.count >= 2 {
+            return (words[0].prefix(1) + words[1].prefix(1)).uppercased()
+        }
+        return String(name.prefix(2)).uppercased()
+    }
 }
 
 @Model
@@ -411,9 +450,14 @@ final class Sighting {
     var plateCode: String = ""
     var spottedAt: Date = Date()
 
-    /// At most one of these is set: a sighting is filed under the trip or the book
-    /// it was logged against. Both nil is legal too — an orphan from a deleted book
-    /// still happened, and still counts all-time.
+    /// A sighting belongs to the trip it was logged on, and may *additionally* be
+    /// shelved in one book.
+    ///
+    /// Logged fresh, exactly one of these is set — the container being played.
+    /// Both set means the sighting came from a trip that was folded into a book
+    /// afterwards: one record, two containers, so the book can show a trip's
+    /// plates without the all-time count seeing them twice. Both nil is legal too
+    /// — an orphan from a deleted book still happened, and still counts all-time.
     var trip: Trip?
     var book: Book?
     var player: Player?

@@ -9,6 +9,12 @@ struct PlateTile: View {
     let isFound: Bool
     var spotterColor: Color? = nil
     var spotterInitial: String? = nil
+    /// True when `spotterInitial` is an emoji rather than a letter, so the chip can
+    /// pick a font that actually has the glyph.
+    var spotterIsEmoji: Bool = false
+    /// Everyone who has banked this plate. Empty or one under the ordinary rules;
+    /// several once a party lets more than one person claim the same state.
+    var claimants: [Player] = []
     var repeatCount: Int = 0          // shown only in unlimited scoring
     var showsRepeats: Bool = false
 
@@ -109,11 +115,26 @@ struct PlateTile: View {
             // where every motif's horizon is, and the border read as "selected"
             // rather than "Mia got this one". The chip also shows *who*, not just
             // a colour, so it works without the player strip in view.
-            if isFound, let spotterColor, let spotterInitial {
+            // Several claimants get the overlapping stack instead of one chip — a
+            // shared-claims party turns "who got this" into "who all got this", and
+            // three chips in a row would not fit a tile this size anyway. One
+            // claimant keeps exactly the chip it always had.
+            if isFound, claimants.count > 1 {
+                VStack {
+                    HStack {
+                        AvatarStack(players: claimants, limit: 3, size: 13,
+                                    background: .white.opacity(0.9))
+                        Spacer()
+                    }
+                    Spacer()
+                }
+                .padding(4)
+            } else if isFound, let spotterColor, let spotterInitial {
                 VStack {
                     HStack {
                         Text(spotterInitial)
-                            .font(.plates(size: 8, weight: .heavy))
+                            .font(spotterIsEmoji ? .system(size: 8)
+                                                 : .plates(size: 8, weight: .heavy))
                             .foregroundStyle(Theme.ink)
                             .frame(width: 12, height: 12)
                             .background(Circle().fill(spotterColor))

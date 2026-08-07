@@ -1,198 +1,17 @@
-import SwiftUI
 import SwiftData
+import SwiftUI
 
-struct PlayersScreen: View {
-    /// True when pushed from the More tab, which already supplies a navigation
-    /// stack and a title. Nesting a second one swallows the back button.
-    var embedded = false
-
-    @Environment(\.modelContext) private var context
-    @Environment(PopupHost.self) private var popup
-
-    @Query(sort: \Player.joinedAt) private var players: [Player]
-    @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
-    @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
-    @AppStorage(TripSelection.key) private var currentTripID = ""
-    @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
-    @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
-
-    @State private var editing: Player?
-    @State private var addingPlayer = false
-
-    /// Acted on after the editor sheet closes — the popup layer is at the root,
-    /// which a sheet covers, so confirming from inside the sheet would show
-    /// nothing at all.
-    @State private var pendingDelete: Player?
-
-    /// Standings are for whatever is being filled, trip or book, so the numbers
-    /// here always match the ones on the Drive screen.
-    private var target: (any PlateCollection)? {
-        PlaySelection.current(kind: targetKind, tripID: currentTripID,
-                              bookID: currentBookID, trips: trips, books: books)?.collection
-    }
-
-    var body: some View {
-        Group {
-            if embedded { content } else { NavigationStack { content } }
-        }
-        .sheet(item: $editing, onDismiss: confirmPendingDelete) { player in
-            PlayerEditor(player: player,
-                         usedColors: usedColorIndices(excluding: player),
-                         onDelete: { pendingDelete = player; editing = nil })
-        }
-        .sheet(isPresented: $addingPlayer) {
-            PlayerEditor(player: nil,
-                         usedColors: usedColorIndices(excluding: nil),
-                         onDelete: nil)
-        }
-    }
-
-    private var content: some View {
-            ZStack {
-                Theme.ground.ignoresSafeArea()
-
-                ScrollView {
-                    VStack(spacing: 10) {
-                        ForEach(players) { player in
-                            Button { editing = player } label: {
-                                PlayerRow(
-                                    player: player,
-                                    plates: target.map { platesSpotted(by: player, in: $0) } ?? 0,
-                                    score: target?.score(for: player) ?? 0
-                                )
-                            }
-                            .buttonStyle(.plain)
-                        }
-
-                        Button {
-                            addingPlayer = true
-                        } label: {
-                            HStack(spacing: 8) {
-                                Image(systemName: "plus")
-                                    .font(.system(size: 14, weight: .bold))
-                                Text("Add player")
-                                    .font(.plates(size: 15, weight: .semibold))
-                            }
-                            .foregroundStyle(Theme.route)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 14)
-                            .background(
-                                RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                    .strokeBorder(Theme.route.opacity(0.35),
-                                                  style: StrokeStyle(lineWidth: 1.5, dash: [5, 4]))
-                            )
-                        }
-                        .padding(.top, 2)
-
-                        Text(footnote)
-                            .font(.plates(size: 12.5))
-                            .foregroundStyle(Theme.inkMuted)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 18)
-                            .padding(.top, 10)
-                    }
-                    .padding(Theme.screenPadding)
-                }
-            }
-            .navigationTitle("Players")
-            .navigationBarTitleDisplayMode(embedded ? .inline : .large)
-    }
-
-    private var footnote: String {
-        // Past six the palette wraps, so two people end up the same colour. Said
-        // once, here, rather than blocking the seventh person from joining.
-        if players.count > Theme.playerColors.count {
-            return "Tap a plate on the Game screen and you will be asked who spotted it. "
-                 + "With this many playing, some colours repeat."
-        }
-        return players.count > 1
-            ? "Tap a plate on the Game screen and you will be asked who spotted it."
-            : "Add someone to play together in the car. With one player, plates are collected without asking."
-    }
-
-    private func confirmPendingDelete() {
-        guard let player = pendingDelete else { return }
-        pendingDelete = nil
-
-        popup.present(
-            "Remove \(player.name)?",
-            message: "Plates they spotted stay collected. Only their points are removed from the standings."
-        ) {
-            PopupButton(title: "Remove", kind: .destructive) {
-                remove(player)
-                popup.dismiss()
-            }
-            PopupButton(title: "Cancel") { popup.dismiss() }
-        }
-    }
-
-    private func platesSpotted(by player: Player, in collection: any PlateCollection) -> Int {
-        Set(collection.allSightings
-            .filter { $0.player?.id == player.id }
-            .map(\.plateCode)).count
-    }
-
-    private func usedColorIndices(excluding player: Player?) -> Set<Int> {
-        Set(players.filter { $0.id != player?.id }.map(\.colorIndex))
-    }
-
-    private func remove(_ player: Player) {
-        context.delete(player)
-        try? context.save()
-        Haptics.destructive()
-    }
-}
-
-private struct PlayerRow: View {
-    let player: Player
-    let plates: Int
-    let score: Int
-
-    var body: some View {
-        HStack(spacing: 12) {
-            Circle()
-                .fill(Theme.playerColor(player.colorIndex))
-                .frame(width: 34, height: 34)
-                .overlay(
-                    Text(player.initial)
-                        .font(Theme.PlateFont.condensed(17))
-                        .foregroundStyle(Theme.ink)
-                )
-
-            VStack(alignment: .leading, spacing: 1) {
-                Text(player.name)
-                    .font(.plates(size: 16, weight: .semibold))
-                    .foregroundStyle(Theme.ink)
-                Text("\(plates) plate\(plates == 1 ? "" : "s") collected")
-                    .font(.plates(size: 12.5))
-                    .foregroundStyle(Theme.inkMuted)
-            }
-
-            Spacer()
-
-            Text("\(score)")
-                .font(Theme.PlateFont.condensed(22))
-                .monospacedDigit()
-                .foregroundStyle(Theme.ink)
-
-            Image(systemName: "chevron.right")
-                .font(.system(size: 12, weight: .semibold))
-                .foregroundStyle(Theme.inkMuted.opacity(0.6))
-        }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 12)
-        .background(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(Theme.surface)
-                .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .strokeBorder(Theme.line, lineWidth: 1))
-        )
-    }
-}
-
-/// Add and edit share one sheet — the only difference is whether `player` exists.
-/// Not private: the Game screen presents it too, so you can add someone without
-/// leaving the grid mid-trip.
+/// Editing one player: a name and a colour.
+///
+/// This file used to hold a roster too — a list of everyone on the phone, an "add
+/// player" button, and a remove flow — and that is what the party replaced. The
+/// editor outlived it because it never had anything to do with the roster: it edits
+/// a single player, and a single player is now the whole of what a device has.
+/// Settings presents it as "Playing as".
+///
+/// Still handles `player == nil` by inserting a new one. Nothing reaches it that
+/// way today, and the branch is two lines that keep it honest as an editor rather
+/// than something that only works on one row.
 struct PlayerEditor: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
@@ -200,9 +19,15 @@ struct PlayerEditor: View {
     let player: Player?
     let usedColors: Set<Int>
     let onDelete: (() -> Void)?
+    /// Overrides the title, for the first-run "who's playing?" pass where "Edit
+    /// player" would be describing a screen nobody has seen yet.
+    var title: String? = nil
+    var saveLabel: String? = nil
+    var onSaved: (() -> Void)? = nil
 
     @State private var name = ""
     @State private var colorIndex = 0
+    @State private var avatar: String?
     @FocusState private var focused: Bool
 
     private var isNew: Bool { player == nil }
@@ -233,6 +58,24 @@ struct PlayerEditor: View {
                             )
                             .submitLabel(.done)
                             .onSubmit(save)
+                    }
+
+                    VStack(alignment: .leading, spacing: 9) {
+                        Text("FACE")
+                            .font(.plates(size: 11, weight: .bold))
+                            .tracking(1.2)
+                            .foregroundStyle(Theme.inkMuted)
+
+                        // Scrolls rather than wrapping. A grid of twenty emoji is a
+                        // wall to choose from and pushes the colour row off the
+                        // sheet; one row you flick through reads as a choice.
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 8) {
+                                faceOption(nil)
+                                ForEach(Self.faces.filter(Glyphs.canDraw), id: \.self) { faceOption($0) }
+                            }
+                            .padding(.horizontal, 1)
+                        }
                     }
 
                     VStack(alignment: .leading, spacing: 9) {
@@ -285,14 +128,14 @@ struct PlayerEditor: View {
                 }
                 .padding(Theme.screenPadding)
             }
-            .navigationTitle(isNew ? "Add player" : "Edit player")
+            .navigationTitle(title ?? (isNew ? "Add player" : "Edit player"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button(isNew ? "Add" : "Save", action: save)
+                    Button(saveLabel ?? (isNew ? "Add" : "Save"), action: save)
                         .fontWeight(.semibold)
                         .disabled(trimmed.isEmpty)
                 }
@@ -302,8 +145,57 @@ struct PlayerEditor: View {
         .onAppear {
             name = player?.name ?? ""
             colorIndex = player?.colorIndex ?? firstFreeColor()
+            avatar = player?.avatar
             if isNew { focused = true }
         }
+    }
+
+    /// Deliberately a short, curated list rather than the system emoji keyboard.
+    ///
+    /// The keyboard offers several thousand, most of which are illegible at twelve
+    /// points on a plate tile and a good number of which you would not want a
+    /// nine-year-old picking as their name in a shared book. These are chosen for
+    /// being distinguishable from each other as *silhouettes* — the size they are
+    /// usually seen at is too small to read detail.
+    private static let faces = ["🦊", "🐻", "🐸", "🦉", "🐙", "🦄", "🐢", "🐝",
+                                "🚗", "🚙", "🚐", "🛻", "🚀", "⭐️", "⚡️", "🌵",
+                                "🌊", "🍕", "🎸", "⚽️"]
+
+    private func faceOption(_ face: String?) -> some View {
+        let picked = avatar == face
+        return Button {
+            avatar = face
+            Haptics.selection()
+        } label: {
+            Circle()
+                .fill(Theme.playerColor(colorIndex))
+                .frame(width: 40, height: 40)
+                .overlay(
+                    Group {
+                        if let face {
+                            Text(face).font(.system(size: 20))
+                        } else {
+                            // The initials option previews itself, using whatever has
+                            // been typed so far.
+                            Text(initialsPreview)
+                                .font(Theme.PlateFont.glyph(15))
+                                .foregroundStyle(Theme.ink)
+                        }
+                    }
+                )
+                .overlay(
+                    Circle().strokeBorder(Theme.ink, lineWidth: picked ? 2.5 : 0)
+                )
+                .opacity(picked ? 1 : 0.55)
+        }
+        .accessibilityLabel(face ?? "Initials")
+        .accessibilityAddTraits(picked ? [.isSelected] : [])
+    }
+
+    private var initialsPreview: String {
+        let words = trimmed.split(separator: " ").filter { !$0.isEmpty }
+        if words.count >= 2 { return (words[0].prefix(1) + words[1].prefix(1)).uppercased() }
+        return trimmed.isEmpty ? "AB" : String(trimmed.prefix(2)).uppercased()
     }
 
     private func firstFreeColor() -> Int {
@@ -315,10 +207,14 @@ struct PlayerEditor: View {
         if let player {
             player.name = trimmed
             player.colorIndex = colorIndex
+            player.avatar = avatar
         } else {
-            context.insert(Player(name: trimmed, colorIndex: colorIndex))
+            let fresh = Player(name: trimmed, colorIndex: colorIndex)
+            fresh.avatar = avatar
+            context.insert(fresh)
         }
         try? context.save()
+        onSaved?()
         dismiss()
     }
 }
