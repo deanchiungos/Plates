@@ -93,7 +93,7 @@ struct FontLab: View {
                 .font(font(c.regular, 17))
                 .foregroundStyle(Theme.ink.opacity(0.78))
                 .fixedSize(horizontal: false, vertical: true)
-            Text("Playing with others?  Add players")
+            Text("Playing with others?  Start a party")
                 .font(font(c.semibold, 15))
                 .foregroundStyle(Theme.route)
             Text("Rarity is scored against this route.")

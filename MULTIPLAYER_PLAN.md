@@ -476,20 +476,22 @@ different pipe.
 - [x] `PartyTombstones.swift`
 - [x] `PartyMerge.swift`
 - [x] `-partyMergeCheck` harness — must pass before any networking exists
-- [ ] `PartySession.swift`
-- [ ] Info.plist: `NSLocalNetworkUsageDescription`, `NSBonjourServices` (tcp + udp)
-- [ ] `PartyScreen.swift` + entry point
-- [ ] Three broadcast hooks (`PlateLogger`, `GameScreen.clear`, voice undo)
-- [ ] Two-simulator smoke test of the Phase-1 loop
-- [ ] Roster merge + color rule + host-locked editing + peer-find toast
-- [ ] Device player: `devicePlayerID` resolution + Settings "Playing as" card
-- [ ] Route grid / voice / Siri logging through the device player
-- [ ] Delete: who-popup, add-player sheet + hint, speaker picker,
+**Phase 1 is complete and verified** (see §10).
+
+- [x] `PartySession.swift`
+- [x] Info.plist: `NSLocalNetworkUsageDescription`, `NSBonjourServices` (tcp + udp)
+- [x] `PartyScreen.swift` + entry point
+- [x] Three broadcast hooks (`PlateLogger`, `GameScreen.clear`, voice undo)
+- [x] Two-simulator smoke test of the Phase-1 loop
+- [x] Roster merge + color rule + host-locked editing + peer-find toast
+- [x] Device player: `devicePlayerID` resolution + Settings "Playing as" card
+- [x] Route grid / voice / Siri logging through the device player
+- [x] Delete: who-popup, add-player sheet + hint, speaker picker,
       `PlayersScreen` roster (keep `PlayerEditor`), `-popup who`
-- [ ] More tab: "Players" row → "Party" row; one-time migration popup
-- [ ] Legacy check: a store with 3 hand-added players and old trips still
+- [x] More tab: "Players" row → "Party" row; one-time migration popup
+- [x] Legacy check: a store with 3 hand-added players and old trips still
       renders standings, chips, and scores identically after the update
-- [ ] Reconnect loop, guard rails on trip delete/finish, `bye` handling
+- [x] Reconnect loop, guard rails on trip delete/finish, `bye` handling
 - [ ] Device test in an actual car
 
 ---
@@ -541,3 +543,233 @@ Run it with:
 ```bash
 xcrun simctl launch --console-pty <UDID> com.eggeppel.plates -partyMergeCheck -noCloud
 ```
+
+---
+
+## 10. Phase 1 as built
+
+Two new files plus the plist keys and the three one-line hooks. No schema change
+and no project-file edit, as planned.
+
+| File | What it holds |
+|---|---|
+| `Domain/Party/PartySession.swift` | `MCSession` lifecycle: advertise, browse, invite, code check, snapshot-on-connect, broadcast, leave. Plus a private `PartyTransport` delegate shim. |
+| `Screens/PartyScreen.swift` | Start / join / hosting / connected states, built from `SettingsGroup` and the app's own type. |
+
+Hooks, exactly as specced: `PlateLogger.record` (after the save),
+`GameScreen.clear` (ids collected *before* the delete), and the voice-mode undo.
+
+### The one design correction
+
+`join` originally built a **new** `PartySession` — new browser, new session — and
+immediately invited the peer the *old* browser had found. That fails silently:
+`invitePeer` is only meaningful on the browser that actually discovered that
+peer, so the invitation went nowhere, with no error and no connection, forever.
+The host sat on "Nobody has joined yet" indefinitely.
+
+Browsing and joining are now one object that mutates in place (`tripID` and
+`code` became `private(set) var`). This is not a tidiness preference —
+MultipeerConnectivity requires the `MCSession` to exist before the invitation is
+sent, so the thing that browses and the thing that joins *have* to be the same
+thing. Splitting them reads cleaner and cannot work.
+
+### Two-simulator verification
+
+iPhone 17 hosting, iPhone 17 Pro joining, guest store wiped first so counts are
+unambiguous. Verified by querying the guest's SQLite store directly rather than
+by reading its screen:
+
+| Step | Result |
+|---|---|
+| Discovery | Guest lists "Summer Roadtrip — Hosted by Dad"; trip name, host name and trip id all arrive in `discoveryInfo` |
+| Invite + code | Host admits on `TEST`, shows the joiner in "In the party" |
+| Snapshot | Guest gains the host's trip (`Newark → San Diego`, weighted), all 3 players, **23 sightings / 23 distinct plates** |
+| Banked rarity | Travels as data — `CA=1, NV=6, UT=7, AZ=3` are the *host's* values, not recomputed |
+| Coordinates | Present on every sighting that had one |
+| Live sighting | Host logs Ohio through the real `PlateLogger` path → guest reaches 24 sightings, `OH` banked at 2 |
+| Removal | Host withdraws Ohio → guest drops to 23, zero `OH` rows |
+| Tombstone | Written to the guest's `PartyTombstones.json`, keyed trip-UUID → sighting-UUID, so the next snapshot cannot resurrect it |
+
+Regression: the merge harness still passes, and an ordinary no-party launch
+renders identically (standings, spotter chips, tier dots).
+
+### Debug flags added
+
+`-openParty` (push the screen), `-hostParty` / `-joinParty` (start without a
+tap), `-partyCode ABCD` (pin the code so two devices can be driven
+non-interactively), `-partyLog OH` / `-partyUnlog` (exercise the real broadcast
+and removal hooks on connect). All DEBUG-only.
+
+### Known gaps, deliberately left to later phases
+
+- **Duplicate identities.** The guest ends up with its own "Me" *and* the host's
+  "Dad", both on `colorIndex 0`. This is exactly the collision Phase 2's
+  de-collision rule and device-player work exist to fix — the test reproduced it
+  rather than avoiding it.
+- **No reconnect loop yet.** A locked phone drops out and does not come back on
+  its own (Phase 3). The snapshot-on-connect design already makes the recovery
+  correct once something retries.
+- **Trip settings are not host-locked yet** (Phase 2).
+- **Simulator-to-simulator MC proved reliable here**, contrary to the caution in
+  §5 — but discovery did fail once on a fresh install and succeed on retry, so a
+  real two-device run is still the acceptance test.
+
+---
+
+## 11. Phase 2 as built
+
+The sunset landed with the party, in one release, as §2a required. One new file
+(`Domain/DevicePlayer.swift`); everything else was deletion or rerouting.
+
+### Retired, and confirmed gone
+
+`askWhoSpotted` and its `players.count > 1` branch, the add-player sheet and its
+"Playing with others? Add players" hint (now "Start a party"), the voice-mode
+speaker picker with its spoken "who is logging?" and the `hearPlayer` listener
+that watched every phrase for a name, the `PlayersScreen` roster, the More tab's
+Players row, and the `-popup who` flag. Grepped to zero. `PlayerEditor` survives
+and is what Settings' "Playing as" card presents.
+
+### The bug the tests found
+
+`DevicePlayer.resolve` falls back to the earliest-joined player when nothing is
+stored. That is right on a fresh install and **wrong the moment a party merges
+somebody else's people in**: a host who started playing months ago has an earlier
+`joinedAt` than your own "Me", so the fallback would hand your identity to the
+host and you would start logging plates as them, on your own phone.
+
+Fixed by pinning `devicePlayerID` at launch in `PlatesStore.seedIfNeeded`, so the
+fallback only ever runs while this device is still the only one in the store. A
+second gap turned up immediately after: the `-demoData` branch `return`ed before
+the pin, so every two-device test was exercising a path no shipping install
+takes. Both now go through `pinDevicePlayer()`.
+
+### Two-simulator verification
+
+Host on demo data (Dad/Mia/Theo, all joined before the guest existed), guest a
+clean install whose only player is "Me". The guest logs Ohio through the real
+`PlateLogger` path.
+
+| Check | Result |
+|---|---|
+| Guest's identity survives the merge | Ohio credited to **Me**, not to any of the three earlier-joined host players |
+| Party trip total | 24 (23 demo + 1 from the guest) |
+| Standings on the host | Dad 9, Mia 8, Theo 6, Me 1 |
+| Colour de-collision | Dad 0, Mia 1, Theo 2, Me 3 — "Me" moved off 0, all distinct |
+| Both devices agree on colours | Host and guest tables identical |
+| Migration notice | Fires once on a >1-player install, grid behind it unchanged |
+| Merge harness | Still PASS |
+
+Two intermediate failures were **my test being wrong, not the app** — worth
+recording because each one accidentally proved a guard works:
+
+1. Querying `WHERE plateCode='OH'` across all trips picked up DemoData's Ohio on
+   "Thanksgiving Drive" (Theo's) instead of the guest's. Scoping to the party
+   trip gave the right answer.
+2. Logging on `isConnected` fired before the snapshot arrived, so the guest was
+   still pointed at its own seeded trip. The plate landed there and `broadcast`
+   **correctly refused to send it** — the `sighting.trip?.id == tripID` guard,
+   negatively verified. The hook now waits for the party's trip to be the one
+   being filled.
+
+### Not visually verified
+
+The peer-find toast is wired and compiles, but establishing a party requires the
+Party screen to be on screen, so the Game screen it renders on was never visible
+during a live find. It will show on the first real two-device run. Everything
+else in this phase was verified by querying both stores directly.
+
+### Deliberately unchanged
+
+`PlayerStrip`, spotter chips and `standings(among:)` still key off
+`players.count > 1`, which now means "a party trip or a legacy trip" — exactly
+the intent. No legacy `Player` row is migrated, merged or deleted.
+
+---
+
+## 12. Phase 3 as built
+
+The edges. No new files — all of it landed in `PartySession` plus guard rails in
+`TripsScreen`.
+
+### Reconnect
+
+A party spends much of its life disconnected: a phone that locks or goes in a
+pocket drops out of the session entirely. Three things make that a gap rather
+than an ending.
+
+- **The radios come back.** iOS suspends the advertiser and browser with the app
+  and does not restart them, so without a `willEnterForegroundNotification` hook
+  a party survives until the first person locks their phone — about four minutes
+  on a real drive. `wakeUp()` stops and restarts both, then re-greets everyone
+  still attached (a snapshot is idempotent, so it costs kilobytes and closes the
+  window where something was logged while this phone slept).
+- **The guest re-invites itself**, silently. The cause is almost always somebody's
+  screen turning off; asking them to retype a code for that would be the app
+  blaming them for its own transport.
+- **The party is matched by trip id, not by peer.** This was the correction. An
+  `MCPeerID` is only meaningful while the process that made it lives, so a host
+  whose app restarted returns as a *different* peer with the same name —
+  comparing peers leaves a guest hunting a phone that no longer exists while the
+  actual party advertises beside it. The trip id is the party's identity; the
+  peer is just where it is answering from.
+
+Verified: host killed outright and relaunched (fresh `MCPeerID`, same seeded
+trip), guest untouched. The guest rejoined with no tapping, and the plate the
+host logged after reconnecting arrived on the guest.
+
+### Goodbye
+
+`leave()` sent `.bye` and immediately called `session.disconnect()`. That is a
+race — `send` hands off asynchronously and disconnecting tears the connection
+down, so the goodbye was being dropped. A peer that never hears it cannot tell a
+deliberate exit from a dropout, so it spends the rest of the drive politely
+trying to reconnect to somebody who has gone home. There is now a 0.4s grace
+period before the disconnect.
+
+A host leaving ends the party for its guests (`hasEnded`), who keep every plate
+and carry on alone. Re-hosting the same trip later is the same trip id, so
+everyone merges straight back together — which is the whole of "host handoff"
+that v1 needs.
+
+The ended state also needed its own UI: the screen was showing a "looking for
+parties" spinner after `stop()` had already halted the browser, which is the
+screen inventing activity that had stopped. It is now the message and a Done
+button.
+
+### Guard rails
+
+Finishing or deleting a trip mid-party says so first — "ends the party on this
+phone; everyone else keeps their own copy" — and sends the goodbye before the
+delete rather than vanishing off the air. Not a block: every other device holds a
+full copy, so the only thing at stake is this phone's, and that is a decision
+rather than a mistake. Deleting also calls `PartyTombstones.forget(trip:)`, which
+was written in Phase 0 and never wired up.
+
+### Verified
+
+| Check | Result |
+|---|---|
+| Host killed and relaunched | Guest rejoins silently; post-reconnect plate arrives |
+| Host leaves deliberately | Guest shows "The host ended the party. Your plates are all still here." |
+| Guest's data after the host leaves | All 23 sightings intact |
+| Ended-party UI | Message + Done, no phantom spinner |
+| Merge harness | Still PASS |
+| Ordinary no-party launch | Unchanged |
+
+### Still not verified
+
+The peer-find toast (as in §11 — a party can only be established from the Party
+screen, so the Game screen it draws on is never visible during a live find), and
+the *background* half of reconnect. The test kills and relaunches the host, which
+exercises peer-identity change; it does not exercise iOS suspending the radios,
+because `simctl` has no way to background an app without terminating it. The
+foreground hook is written and is the standard remedy, but a real
+lock-screen-and-return is the acceptance test, on device.
+
+---
+
+*Continued in [MULTIPLAYER_V2_PLAN.md](MULTIPLAYER_V2_PLAN.md): the
+ghost-player standings bug live testing found, player identity/onboarding,
+party rules (protected + shared claims), party-trip badging, the AvatarStack
+treatment, and shared books over CloudKit.*

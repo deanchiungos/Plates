@@ -1,0 +1,675 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@ find. %@. %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ find. %2$@. %3$@"
+          }
+        }
+      }
+    },
+    "%@ TRIP · DAY %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ TRIP · DAY %2$lld"
+          }
+        }
+      }
+    },
+    "%@, %lld points%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$lld points%3$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "%lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "%lld / %lld found" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld found"
+          }
+        }
+      }
+    },
+    "%lld of %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld"
+          }
+        }
+      }
+    },
+    "%lld of %lld regions found" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld regions found"
+          }
+        }
+      }
+    },
+    "%lld of %lld states" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld states"
+          }
+        }
+      }
+    },
+    "%lld plates" : {
+
+    },
+    "%lldd" : {
+
+    },
+    "×%lld" : {
+
+    },
+    "A book keeps going. There is no route and no finish line — you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have." : {
+
+    },
+    "A trip is one drive with a route and a finish. A book you just keep adding to." : {
+
+    },
+    "ABCD" : {
+
+    },
+    "Allow" : {
+
+    },
+    "Archived" : {
+
+    },
+    "Archived trip" : {
+
+    },
+    "Best find" : {
+
+    },
+    "Best plate so far" : {
+
+    },
+    "Book" : {
+
+    },
+    "BOOK" : {
+
+    },
+    "BOOK NAME" : {
+
+    },
+    "Canada" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Check ${plate}" : {
+
+    },
+    "Check a plate" : {
+
+    },
+    "Check plate progress" : {
+
+    },
+    "Choose which plates to show" : {
+
+    },
+    "Clear" : {
+
+    },
+    "Clear search" : {
+
+    },
+    "Closer to what is on the road, but inflates states with cheap registration rules." : {
+
+    },
+    "Collected, seen %lld time%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Collected, seen %1$lld time%2$@"
+          }
+        }
+      }
+    },
+    "Collecting" : {
+
+    },
+    "Collection" : {
+
+    },
+    "COLOUR" : {
+
+    },
+    "Colour %lld%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Colour %1$lld%2$@"
+          }
+        }
+      }
+    },
+    "Count trucks and SUVs" : {
+
+    },
+    "Currently playing" : {
+
+    },
+    "Describe the plate you saw" : {
+
+    },
+    "Done" : {
+
+    },
+    "Edit %@" : {
+
+    },
+    "Edit book" : {
+
+    },
+    "Edit trip" : {
+
+    },
+    "EVERY %@ DESIGN" : {
+
+    },
+    "EVERY PLATE EVER" : {
+
+    },
+    "Every plate in the sets you are hunting is already found." : {
+
+    },
+    "Every trip you have run, newest first. The bar compares states found." : {
+
+    },
+    "Everyone spots on their own phone" : {
+
+    },
+    "FACE" : {
+
+    },
+    "Facts unlock as you spot this plate. Every sighting reveals a new one." : {
+
+    },
+    "Filter plates" : {
+
+    },
+    "Filter, on. %lld plates left to find." : {
+
+    },
+    "Find a plate" : {
+
+    },
+    "Find a plate at this stop" : {
+
+    },
+    "Finished trip" : {
+
+    },
+    "Following the drive" : {
+
+    },
+    "Game" : {
+
+    },
+    "Hands free" : {
+
+    },
+    "Haptics" : {
+
+    },
+    "Hide the other %lld designs" : {
+
+    },
+    "Historical plates" : {
+
+    },
+    "Hosted by %@" : {
+
+    },
+    "I could not check that." : {
+
+    },
+    "I do not know that plate." : {
+
+    },
+    "IN ISSUE" : {
+
+    },
+    "Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are." : {
+
+    },
+    "Join" : {
+
+    },
+    "Join %@" : {
+
+    },
+    "Jurisdiction" : {
+
+    },
+    "Jurisdiction: %@. Change" : {
+
+    },
+    "Leave this book" : {
+
+    },
+    "Listens and logs plates as you say them" : {
+
+    },
+    "Locked" : {
+
+    },
+    "Log ${plate}" : {
+
+    },
+    "Log a plate" : {
+
+    },
+    "Looking for parties in the car…" : {
+
+    },
+    "Map" : {
+
+    },
+    "Map unavailable" : {
+
+    },
+    "More" : {
+
+    },
+    "My Plate Book" : {
+
+    },
+    "NAME" : {
+
+    },
+    "Names the rarest plate you have logged." : {
+
+    },
+    "New book" : {
+
+    },
+    "New trip" : {
+
+    },
+    "No photographs yet" : {
+
+    },
+    "No plate here matches “%@”." : {
+
+    },
+    "No trail yet" : {
+
+    },
+    "No trips yet" : {
+
+    },
+    "Nobody has photographed a %@ plate for Wikimedia Commons." : {
+
+    },
+    "Not collected" : {
+
+    },
+    "Not yet spotted" : {
+
+    },
+    "Nothing called “%@”" : {
+
+    },
+    "Nothing left to find" : {
+
+    },
+    "Nothing logged yet" : {
+
+    },
+    "Nothing matched that" : {
+
+    },
+    "Nothing matches “%@”." : {
+
+    },
+    "Nothing to fill yet" : {
+
+    },
+    "of %lld" : {
+
+    },
+    "Open Settings" : {
+
+    },
+    "Opens Plates and starts listening, so you can call out plates without touching anything." : {
+
+    },
+    "Parties are for trips. Switch to a trip on the Game screen to start one." : {
+
+    },
+    "Party" : {
+
+    },
+    "Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed." : {
+
+    },
+    "Pinned" : {
+
+    },
+    "Plate" : {
+
+    },
+    "PLATE BOOK" : {
+
+    },
+    "Plate lookup" : {
+
+    },
+    "Plate progress" : {
+
+    },
+    "PLATES" : {
+
+    },
+    "PLATES · IN ORDER FOUND" : {
+
+    },
+    "Plates %@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Plates %1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Plates are checked off on the Drive screen." : {
+
+    },
+    "Plates get a pin here when you log them with location turned on. Older ones have no pin — the app was not watching at the time." : {
+
+    },
+    "Plates in this book are checked off on the Drive screen." : {
+
+    },
+    "Played as a party" : {
+
+    },
+    "Playing with others? Start a party" : {
+
+    },
+    "Preparing…" : {
+
+    },
+    "Rarity %lld of 10%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rarity %1$lld of 10%2$@"
+          }
+        }
+      }
+    },
+    "Rarity counts cars only. Pickups, SUVs and vans are ignored." : {
+
+    },
+    "Read this out. Everyone else taps Join and types it in." : {
+
+    },
+    "Records a plate on whatever you are filling — a trip or your book — and reads back something about it." : {
+
+    },
+    "Remove" : {
+
+    },
+    "Remove player" : {
+
+    },
+    "ROAD TRIP" : {
+
+    },
+    "ROUTE" : {
+
+    },
+    "ROUTE · OPTIONAL" : {
+
+    },
+    "Save" : {
+
+    },
+    "Saw a plate you couldn't name?" : {
+
+    },
+    "Say “Hey Siri, log a plate in Plates” — or name it outright, “log New Jersey in Plates”. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say “stop” when you are done." : {
+
+    },
+    "Says how many plates you have logged on the trip or book you are filling." : {
+
+    },
+    "Says whether you have already logged a particular plate, and how rare it is." : {
+
+    },
+    "SCORING" : {
+
+    },
+    "Search %lld" : {
+
+    },
+    "Search plates" : {
+
+    },
+    "Search plates by state or code" : {
+
+    },
+    "SETS" : {
+
+    },
+    "Settings" : {
+
+    },
+    "SHARE" : {
+
+    },
+    "Share this book" : {
+
+    },
+    "Shared" : {
+
+    },
+    "SHARED" : {
+
+    },
+    "SHARED BOOK" : {
+
+    },
+    "Show all %lld" : {
+
+    },
+    "Show all %lld designs" : {
+
+    },
+    "Show everything" : {
+
+    },
+    "Spotted" : {
+
+    },
+    "Start" : {
+
+    },
+    "Start a book" : {
+
+    },
+    "Start a new book" : {
+
+    },
+    "Start a trip" : {
+
+    },
+    "Start a trip or a book in Plates first." : {
+
+    },
+    "Start voice mode" : {
+
+    },
+    "State or code" : {
+
+    },
+    "State, province, or code" : {
+
+    },
+    "states" : {
+
+    },
+    "Stop sharing" : {
+
+    },
+    "Summer roadtrip" : {
+
+    },
+    "SWITCH" : {
+
+    },
+    "Switch to a trip or another book" : {
+
+    },
+    "Switch to another trip" : {
+
+    },
+    "tap to dismiss" : {
+
+    },
+    "The code %@ is showing" : {
+
+    },
+    "The host sets the scoring while you are in a party." : {
+
+    },
+    "This trip is archived. Unarchive it below to make changes or collect more plates." : {
+
+    },
+    "This trip is done and filed away. Reopen it below to make changes or collect more plates." : {
+
+    },
+    "Trail" : {
+
+    },
+    "TRIP NAME" : {
+
+    },
+    "Trips" : {
+
+    },
+    "Trips you run will be listed here to compare." : {
+
+    },
+    "Try a colour, something drawn on it, or a word printed on it." : {
+
+    },
+    "TRY ONE" : {
+
+    },
+    "Type whatever you remember about it. Any of these work:" : {
+
+    },
+    "Undo" : {
+
+    },
+    "Voice mode" : {
+
+    },
+    "Voice sounds robotic? Download a natural one in %@, then tap the ⤓ beside a voice marked Enhanced or Premium." : {
+
+    },
+    "Which plate did you see?" : {
+
+    },
+    "Which plate shall I check?" : {
+
+    },
+    "Who is playing?" : {
+
+    },
+    "You already logged %@ on %@%@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You already logged %1$@ on %2$@%3$@."
+          }
+        }
+      }
+    },
+    "You are filling this book with its owner. It lives in their iCloud — if they stop sharing it, your copy of the plates stays on this phone." : {
+
+    },
+    "You are sharing this book. Anything they add appears here, and anything you add appears for them." : {
+
+    },
+    "You have not logged anything yet." : {
+
+    },
+    "You have not started a trip or a book yet." : {
+
+    },
+    "Your best find is %@, %@, on %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your best find is %1$@, %2$@, on %3$@."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
