@@ -109,6 +109,9 @@
     "×%lld" : {
 
     },
+    "86 · 60 · 40 · 29 pt" : {
+
+    },
     "A book keeps going. There is no route and no finish line — you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have." : {
 
     },
@@ -127,19 +130,22 @@
     "Archived trip" : {
 
     },
+    "Asking %@ to let you in…" : {
+
+    },
     "Best find" : {
 
     },
     "Best plate so far" : {
 
     },
-    "Book" : {
-
-    },
     "BOOK" : {
 
     },
     "BOOK NAME" : {
+
+    },
+    "Books" : {
 
     },
     "Canada" : {
@@ -166,26 +172,10 @@
     "Clear search" : {
 
     },
-    "Closer to what is on the road, but inflates states with cheap registration rules." : {
-
-    },
-    "Collected, seen %lld time%@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Collected, seen %1$lld time%2$@"
-          }
-        }
-      }
-    },
     "Collecting" : {
 
     },
-    "Collection" : {
-
-    },
-    "COLOUR" : {
+    "COLOR" : {
 
     },
     "Color %lld%@" : {
@@ -198,7 +188,7 @@
         }
       }
     },
-    "Count trucks and SUVs" : {
+    "Compare trips" : {
 
     },
     "Currently playing" : {
@@ -226,9 +216,6 @@
 
     },
     "Every plate in the sets you are hunting is already found." : {
-
-    },
-    "Every trip you have run, newest first. The bar compares states found." : {
 
     },
     "Everyone spots on their own phone" : {
@@ -303,6 +290,9 @@
     "Leave this book" : {
 
     },
+    "LEGENDARY" : {
+
+    },
     "Listens and logs plates as you say them" : {
 
     },
@@ -339,7 +329,13 @@
     "New book" : {
 
     },
+    "New Jersey" : {
+
+    },
     "New trip" : {
+
+    },
+    "Newest first. The bar compares states found." : {
 
     },
     "No photographs yet" : {
@@ -355,9 +351,6 @@
 
     },
     "Nobody has photographed a %@ plate for Wikimedia Commons." : {
-
-    },
-    "Not collected" : {
 
     },
     "Not yet spotted" : {
@@ -408,6 +401,9 @@
     "PLATE BOOK" : {
 
     },
+    "Plate catalogue" : {
+
+    },
     "Plate lookup" : {
 
     },
@@ -442,6 +438,9 @@
     "Played as a party" : {
 
     },
+    "Playing with others?  Start a party" : {
+
+    },
     "Playing with others? Start a party" : {
 
     },
@@ -458,7 +457,7 @@
         }
       }
     },
-    "Rarity counts cars only. Pickups, SUVs and vans are ignored." : {
+    "Rarity is scored against this route." : {
 
     },
     "Read this out. Everyone else taps Join and types it in." : {
@@ -590,6 +589,9 @@
     "The code %@ is showing" : {
 
     },
+    "The first drive-in theatre opened in Camden, New Jersey, in 1933." : {
+
+    },
     "The host sets the scoring while you are in a party." : {
 
     },
@@ -606,9 +608,6 @@
 
     },
     "Trips" : {
-
-    },
-    "Trips you run will be listed here to compare." : {
 
     },
     "Try a color, something drawn on it, or a word printed on it." : {

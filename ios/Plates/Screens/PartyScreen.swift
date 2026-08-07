@@ -82,7 +82,7 @@ struct PartyScreen: View {
         .onAppear {
             let args = ProcessInfo.processInfo.arguments
             guard party == nil else { return }
-            if args.contains("-hostParty"), let trip = hostableTrip {
+            if args.contains("-hostParty"), let trip = currentTrip {
                 party = PartySession.host(trip: trip, as: myName, context: context)
             } else if args.contains("-joinParty") {
                 party = PartySession.browse(as: myName, context: context)
@@ -122,7 +122,7 @@ struct PartyScreen: View {
             // it — so wait for the party's trip to actually be the one being filled.
             DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
                 guard let party = PartySession.shared,
-                      let trip = hostableTrip, trip.id == party.tripID else { return }
+                      let trip = currentTrip, trip.id == party.tripID else { return }
                 PlateLogger.record(plate, in: trip,
                                    by: DevicePlayer.resolve(from: players), context: context)
 
@@ -163,16 +163,17 @@ struct PartyScreen: View {
                 .padding(14)
             }
 
-            if let trip = hostableTrip {
+            if let trip = currentTrip, cannotHost == nil {
                 action("Start a party for \(trip.name)", filled: true) {
                     Haptics.selection()
                     begin(.host)
                 }
-            } else {
-                // A book is a lifetime collection with no journey, and sharing one is
-                // a different product — so the party is a trip, always.
+            } else if let reason = cannotHost {
+                // Said rather than silently hidden. A missing button is
+                // indistinguishable from a broken one, and this is a rule about
+                // whose trip it is, which nobody can guess.
                 SettingsGroup("Not this one") {
-                    Text("Parties are for trips. Switch to a trip on the Game screen to start one.")
+                    Text(reason)
                         .font(.plates(size: 13))
                         .foregroundStyle(Theme.inkMuted)
                         .fixedSize(horizontal: false, vertical: true)
@@ -197,7 +198,10 @@ struct PartyScreen: View {
     private func enter(_ entry: Entry) {
         switch entry {
         case .host:
-            guard let trip = hostableTrip else { return }
+            // Re-checked here, not just at the button. The debug launch hooks call
+            // this directly, and a rule about whose trip it is should not depend on
+            // which door you came through.
+            guard let trip = currentTrip, cannotHost == nil else { return }
             party = PartySession.host(trip: trip, as: myName, context: context)
         case .join:
             party = PartySession.browse(as: myName, context: context)
@@ -476,12 +480,30 @@ struct PartyScreen: View {
         .buttonStyle(.plain)
     }
 
-    /// Only a trip can be hosted, and only one that will still take plates.
-    private var hostableTrip: Trip? {
+    /// Whatever the Game screen is filling, if it is a trip at all.
+    private var currentTrip: Trip? {
         guard case .trip(let trip)? = PlaySelection.current(
             kind: targetKind, tripID: currentTripID, bookID: currentBookID,
             trips: trips, books: books) else { return nil }
         return trip
+    }
+
+    /// Why this phone cannot start a party for what it is looking at, or nil if it
+    /// can. Phrased as the sentence the screen shows, because there is no case where
+    /// knowing the reason is optional.
+    private var cannotHost: String? {
+        // A book is a lifetime collection with no journey, and sharing one is a
+        // different product — so the party is a trip, always.
+        guard let trip = currentTrip else {
+            return "Parties are for trips. Switch to a trip on the Game screen to start one."
+        }
+        // A trip that arrived by joining somebody else's party is not yours to host.
+        // Hosting it would advertise their trip id under your name, giving the party
+        // two hosts with two ideas of the rules. See `PartyLedger.joinedAsGuest`.
+        guard PartyLedger.shared.joinedAsGuest(trip.id) else { return nil }
+        let host = PartyLedger.shared.hostName(for: trip.id)
+        return "\(host ?? "Somebody else") started \(trip.name) and shared it with you, "
+             + "so only they can start a party for it. Start one on a trip of your own instead."
     }
 
     /// What the other phones in the car see us as — the peer's display name, and the

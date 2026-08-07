@@ -286,7 +286,8 @@ final class PartySession {
         // later. Starting from the protective default rather than the permissive one
         // means the gap cannot be used to clear somebody's plates.
         rules = PartyLedger.shared.rules(for: party.tripID)
-        PartyLedger.shared.note(trip: party.tripID, role: "guest", rules: rules)
+        PartyLedger.shared.note(trip: party.tripID, role: "guest", rules: rules,
+                                hostName: party.hostName)
         guard let payload = code.data(using: .utf8) else { return }
         browser.invitePeer(party.peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)

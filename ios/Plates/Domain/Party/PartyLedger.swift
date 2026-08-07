@@ -25,6 +25,10 @@ final class PartyLedger {
         var role: String
         var startedAt: Date
         var rules: PartyRules
+        /// Whoever was advertising the party we joined, so a guest can be told whose
+        /// trip this is by name. Optional because records written before this existed
+        /// have no answer — and because a host has nobody to name.
+        var hostName: String?
     }
 
     /// `nil` keeps everything in memory, for the harness.
@@ -42,6 +46,18 @@ final class PartyLedger {
 
     func wasParty(_ trip: UUID) -> Bool { records[trip] != nil }
 
+    /// This device joined this trip rather than starting it.
+    ///
+    /// Permanent, and meant to be: a guest who could start their own party for
+    /// somebody else's trip would be a second host of the same trip id, with its own
+    /// idea of the rules — and `setRules` is host-only precisely so two people in one
+    /// car cannot disagree about what a tap means. The party ending does not hand the
+    /// trip over; it is still Anna's drive, on a copy.
+    func joinedAsGuest(_ trip: UUID) -> Bool { records[trip]?.role == "guest" }
+
+    /// Who was hosting when we joined, if we know.
+    func hostName(for trip: UUID) -> String? { records[trip]?.hostName }
+
     /// The rules this trip is played by, or the standard ones if it was never a
     /// party. Callers do not have to know which.
     func rules(for trip: UUID) -> PartyRules {
@@ -53,9 +69,15 @@ final class PartyLedger {
     /// Called when a party starts or is joined. Keeps the original `startedAt` if
     /// the trip has been partied before, so re-hosting an old trip does not rewrite
     /// when it first happened.
-    func note(trip: UUID, role: String, rules: PartyRules) {
-        let started = records[trip]?.startedAt ?? Date()
-        records[trip] = Record(tripID: trip, role: role, startedAt: started, rules: rules)
+    func note(trip: UUID, role: String, rules: PartyRules, hostName: String? = nil) {
+        let existing = records[trip]
+        records[trip] = Record(tripID: trip,
+                               role: role,
+                               startedAt: existing?.startedAt ?? Date(),
+                               rules: rules,
+                               // Kept when this call does not carry one, so rejoining
+                               // a party does not forget whose trip it is.
+                               hostName: hostName ?? existing?.hostName)
         save()
     }
 
