@@ -188,12 +188,12 @@
     "COLOUR" : {
 
     },
-    "Colour %lld%@" : {
+    "Color %lld%@" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Colour %1$lld%2$@"
+            "value" : "Color %1$lld%2$@"
           }
         }
       }
@@ -611,7 +611,7 @@
     "Trips you run will be listed here to compare." : {
 
     },
-    "Try a colour, something drawn on it, or a word printed on it." : {
+    "Try a color, something drawn on it, or a word printed on it." : {
 
     },
     "TRY ONE" : {

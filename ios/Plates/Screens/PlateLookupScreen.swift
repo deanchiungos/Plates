@@ -125,7 +125,7 @@ struct PlateLookupScreen: View {
                 // need to know is what counts as a valid thing to type.
                 VStack(alignment: .leading, spacing: 9) {
                     Text("Type whatever you remember about it. Any of these work:")
-                    Text("• a colour, like blue or orange and black\n"
+                    Text("• a color, like blue or orange and black\n"
                          + "• something drawn on it, like a lighthouse or mountains\n"
                          + "• a word printed on it, like Vacationland\n"
                          + "• roughly when it was from, like 1970s\n"
@@ -185,7 +185,7 @@ struct PlateLookupScreen: View {
                     .multilineTextAlignment(.center)
             }
 
-            Text("Try a colour, something drawn on it, or a word printed on it.")
+            Text("Try a color, something drawn on it, or a word printed on it.")
                 .font(.plates(size: 13))
                 .foregroundStyle(Theme.inkMuted)
                 .multilineTextAlignment(.center)

@@ -79,7 +79,7 @@ struct PlayerEditor: View {
                     }
 
                     VStack(alignment: .leading, spacing: 9) {
-                        Text("COLOUR")
+                        Text("COLOR")
                             .font(.plates(size: 11, weight: .bold))
                             .tracking(1.2)
                             .foregroundStyle(Theme.inkMuted)
@@ -106,7 +106,7 @@ struct PlayerEditor: View {
                                         )
                                         .opacity(taken && colorIndex != i ? 0.4 : 1)
                                 }
-                                .accessibilityLabel("Colour \(i + 1)\(taken ? ", already taken" : "")")
+                                .accessibilityLabel("Color \(i + 1)\(taken ? ", already taken" : "")")
                             }
                         }
                     }
