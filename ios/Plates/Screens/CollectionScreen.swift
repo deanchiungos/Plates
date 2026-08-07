@@ -26,7 +26,6 @@ struct CollectionScreen: View {
     @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
     @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
 
-    @State private var page: Page = .book
     /// The all-time lens. A view, not a container — you cannot collect into it, and
     /// switching to it deliberately does *not* change what the Drive screen fills.
     @State private var allTime = false
@@ -42,12 +41,6 @@ struct CollectionScreen: View {
     private enum Pending {
         case clear(Book)
         case delete(Book)
-    }
-
-    private enum Page: String, CaseIterable, Identifiable {
-        case book, trips
-        var id: String { rawValue }
-        var label: String { self == .book ? "Book" : "History" }
     }
 
     // MARK: - Scope
@@ -99,38 +92,28 @@ struct CollectionScreen: View {
 
                 ScrollView {
                     VStack(spacing: 14) {
-                        Picker("", selection: $page) {
-                            ForEach(Page.allCases) { Text($0.label).tag($0) }
-                        }
-                        .pickerStyle(.segmented)
-
-                        if page == .book { bookPage } else { historyPage }
+                        bookPage
                     }
                     .padding(Theme.screenPadding)
                     .padding(.bottom, 24)
                 }
             }
-            .navigationTitle("Collection")
+            .navigationTitle("Books")
             .navigationBarTitleDisplayMode(.large)
             // Signed out of iCloud is the one cause of a silent no-sync that the user
             // can fix, so it is worth one round trip to distinguish it from "waiting".
             .task { await CloudBackup.shared.checkAccount() }
             .toolbar {
-                if page == .book {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button { creatingBook = true } label: { Image(systemName: "plus") }
-                            .tint(Theme.route)
-                            .accessibilityLabel("Start a new book")
-                    }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button { creatingBook = true } label: { Image(systemName: "plus") }
+                        .tint(Theme.route)
+                        .accessibilityLabel("Start a new book")
                 }
             }
             #if DEBUG
-            //   -bookPage book|trips     which page opens
             //   -bookScope alltime       open on the all-time lens
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
-                if let i = args.firstIndex(of: "-bookPage"), i + 1 < args.count,
-                   let p = Page(rawValue: args[i + 1]) { page = p }
                 if let i = args.firstIndex(of: "-bookScope"), i + 1 < args.count {
                     allTime = args[i + 1] == "alltime"
                 }
@@ -412,40 +395,6 @@ struct CollectionScreen: View {
         .padding(.top, 4)
     }
 
-    // MARK: - History
-
-    @ViewBuilder
-    private var historyPage: some View {
-        if trips.isEmpty {
-            ContentUnavailableView("No trips yet", systemImage: "suitcase",
-                                   description: Text("Trips you run will be listed here to compare."))
-                .padding(.top, 40)
-        } else {
-            let rows = trips.map(TripSummary.init)
-
-            VStack(spacing: 9) {
-                ForEach(rows) { row in
-                    TripSummaryRow(summary: row,
-                                   isCurrent: isSelectedTrip(row.id),
-                                   best: rows.map(\.statesFound).max() ?? 0)
-                }
-
-                Text("Every trip you have run, newest first. The bar compares states found.")
-                    .font(.plates(size: 11.5))
-                    .foregroundStyle(Theme.inkMuted)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 6)
-            }
-        }
-    }
-
-    /// The car glyph means "this is what Drive is filling", so a trip only gets it
-    /// while the target actually is a trip.
-    private func isSelectedTrip(_ id: UUID) -> Bool {
-        targetKind != "book"
-            && TripSelection.current(from: trips, id: currentTripID)?.id == id
-    }
-
     // MARK: - Switching
 
     private func showScopeSwitcher() {
@@ -567,100 +516,45 @@ private struct BookSlot: View {
                     )
             }
 
-            // Repeat count in the corner, as a collector would pencil it in.
-            if let entry, entry.count > 1 {
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Text("\u{00D7}\(entry.count)")
-                            .font(.plates(size: 8.5, weight: .heavy))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 3.5)
-                            .padding(.vertical, 1.5)
-                            .background(Capsule().fill(Theme.ink.opacity(0.55)))
-                    }
+            // The corner mark. Who beats how many: a plate several people claimed is
+            // a story about the car, and a ×4 told that story as though one person
+            // had driven past the same state four times.
+            if let entry, entry.spotters.count > 1 {
+                corner { AvatarStack(players: entry.spotters, limit: 3, size: 15) }
+            } else if let entry, entry.count > 1 {
+                corner {
+                    Text("\u{00D7}\(entry.count)")
+                        .font(.plates(size: 8.5, weight: .heavy))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 3.5)
+                        .padding(.vertical, 1.5)
+                        .background(Capsule().fill(Theme.ink.opacity(0.55)))
                 }
-                .padding(4)
             }
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(plate.name)
-        .accessibilityValue(entry == nil
-                            ? "Not collected"
-                            : "Collected, seen \(entry!.count) time\(entry!.count == 1 ? "" : "s")")
+        .accessibilityValue(spokenState)
     }
-}
 
-// MARK: - Trip row
-
-private struct TripSummaryRow: View {
-    let summary: TripSummary
-    let isCurrent: Bool
-    let best: Int
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 7) {
-            HStack(alignment: .firstTextBaseline, spacing: 6) {
-                Text(summary.name)
-                    .font(.plates(size: 15.5, weight: .semibold))
-                    .foregroundStyle(isCurrent ? Theme.route : Theme.ink)
-                    .lineLimit(1)
-                if isCurrent {
-                    Image(systemName: "car.fill")
-                        .font(.system(size: 10, weight: .semibold))
-                        .foregroundStyle(Theme.route)
-                }
+    /// Bottom-right of the tile, whatever is going there.
+    private func corner<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
+        VStack {
+            Spacer()
+            HStack {
                 Spacer()
-                Text("\(summary.statesFound)")
-                    .font(Theme.PlateFont.condensed(21))
-                    .monospacedDigit()
-                    .foregroundStyle(Theme.ink)
-                Text("states")
-                    .font(.plates(size: 10))
-                    .foregroundStyle(Theme.inkMuted)
+                content()
             }
-
-            // Length relative to the best trip, so the comparison is visual before
-            // anyone reads a number.
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule().fill(Theme.line).frame(height: 5)
-                    Capsule().fill(isCurrent ? Theme.route : Theme.found)
-                        .frame(width: best > 0
-                               ? max(4, geo.size.width * CGFloat(summary.statesFound) / CGFloat(best))
-                               : 4,
-                               height: 5)
-                }
-            }
-            .frame(height: 5)
-
-            HStack(spacing: 10) {
-                if let route = summary.route {
-                    Label(route, systemImage: "arrow.triangle.turn.up.right.diamond")
-                        .lineLimit(1)
-                }
-                Label("\(summary.platesFound) plates", systemImage: "square.grid.2x2")
-                Label("\(summary.days)d", systemImage: "calendar")
-                if let bf = summary.bestFind, let p = Plate.plate(for: bf.code) {
-                    Label(p.code, systemImage: "sparkles")
-                        .foregroundStyle(RarityTier.forRarity(bf.rarity).color)
-                }
-                Spacer(minLength: 0)
-            }
-            .font(.plates(size: 11))
-            .foregroundStyle(Theme.inkMuted)
-            .lineLimit(1)
         }
-        .padding(.horizontal, 13)
-        .padding(.vertical, 11)
-        .background(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(Theme.surface)
-                .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .strokeBorder(isCurrent ? Theme.route : Theme.line,
-                                  lineWidth: isCurrent ? 1.5 : 1))
-        )
+        .padding(4)
+    }
+
+    private var spokenState: String {
+        guard let entry else { return "Not collected" }
+        if entry.spotters.count > 1 {
+            return "Collected by \(entry.spotters.map(\.name).formatted(.list(type: .and)))"
+        }
+        return "Collected, seen \(entry.count) time\(entry.count == 1 ? "" : "s")"
     }
 }
 

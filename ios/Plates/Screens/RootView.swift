@@ -89,7 +89,7 @@ struct RootView: View {
                 .tag(1)
 
             CollectionScreen()
-                .tabItem { Label("Book", systemImage: "books.vertical") }
+                .tabItem { Label("Books", systemImage: "books.vertical") }
                 .tag(2)
 
             TripsScreen()

@@ -164,6 +164,11 @@ struct TripsScreen: View {
                     .padding(.top, 10)
 
                 archivedSection
+
+                // Moved here from the Book tab, where it was a "History" page that
+                // listed trips and no books whatsoever. Trips belong with trips.
+                TripComparison(summaries: trips.map(TripSummary.init),
+                               currentTripID: current?.id)
             }
             .padding(Theme.screenPadding)
         }
@@ -714,7 +719,6 @@ struct TripEditor: View {
     /// default for a new one, so the picker and the model cannot disagree about what
     /// "default" means.
     @State private var mode: ScoringMode = .weighted
-    @State private var includeTrucks = false
     @FocusState private var focused: Field?
 
     private enum Field { case name }
@@ -866,7 +870,6 @@ struct TripEditor: View {
             destination = Place(name: trip?.destination ?? "",
                                 latitude: trip?.destinationLat, longitude: trip?.destinationLon)
             mode = trip?.scoringMode ?? Trip.defaultScoringMode
-            includeTrucks = trip?.includesTrucks ?? false
             if isNew { focused = .name }
         }
     }
@@ -1061,8 +1064,7 @@ struct TripEditor: View {
                 .tracking(1.2)
                 .foregroundStyle(Theme.inkMuted)
 
-            Text(mode.label + (includeTrucks ? " \u{00B7} trucks and SUVs counted"
-                                             : " \u{00B7} cars only"))
+            Text(mode.label)
                 .font(.plates(size: 14.5, weight: .semibold))
                 .foregroundStyle(Theme.inkMuted)
         }
@@ -1111,50 +1113,8 @@ struct TripEditor: View {
                     .buttonStyle(.plain)
                 }
 
-                truckToggle
             }
         }
-    }
-
-    /// A square rather than a system Toggle, so it reads as one more option in the
-    /// same list as the scoring radios instead of as a separate kind of control.
-    private var truckToggle: some View {
-        Button {
-            includeTrucks.toggle()
-            Haptics.selection()
-        } label: {
-            HStack(spacing: 10) {
-                Image(systemName: includeTrucks ? "checkmark.square.fill" : "square")
-                    .font(.system(size: 17))
-                    .foregroundStyle(includeTrucks ? Theme.route : Theme.inkMuted.opacity(0.5))
-
-                VStack(alignment: .leading, spacing: 1) {
-                    Text("Count trucks and SUVs")
-                        .font(.plates(size: 14.5, weight: .semibold))
-                        .foregroundStyle(Theme.ink)
-                    Text(includeTrucks
-                         ? "Closer to what is on the road, but inflates states with cheap registration rules."
-                         : "Rarity counts cars only. Pickups, SUVs and vans are ignored.")
-                        .font(.plates(size: 11.5))
-                        .foregroundStyle(Theme.inkMuted)
-                        .multilineTextAlignment(.leading)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                Spacer(minLength: 0)
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 11)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(Theme.surface)
-                    .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .strokeBorder(includeTrucks ? Theme.route : Theme.line,
-                                      lineWidth: includeTrucks ? 1.5 : 1))
-            )
-        }
-        .buttonStyle(.plain)
-        .padding(.top, 3)
     }
 
     @ViewBuilder
@@ -1324,7 +1284,6 @@ struct TripEditor: View {
         target.destination = destination.name.nilIfBlank
         target.destinationLat = destination.latitude
         target.destinationLon = destination.longitude
-        if !scoringIsHostOwned { target.includesTrucks = includeTrucks }
 
         try? context.save()
 

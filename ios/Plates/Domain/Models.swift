@@ -149,11 +149,20 @@ final class Trip {
 
     /// Count pickups, SUVs and vans in the rarity model as well as cars.
     ///
-    /// Per-trip rather than a global setting: it changes what the scores on *this*
-    /// trip mean, so two trips scored differently should not be silently rewritten
-    /// by a switch flipped later. Defaults to false, which also keeps every existing
-    /// trip's numbers exactly as they were.
-    var includesTrucks: Bool = false
+    /// Per-trip rather than global, and still stored per trip, because it changes
+    /// what the scores on *this* trip mean — two trips scored differently must not be
+    /// silently rewritten by a switch flipped later.
+    ///
+    /// No longer *asked*, though. It was a checkbox in the trip editor, and a tester
+    /// put it well: nobody knows what it is for. "Should pickups count as cars" is a
+    /// modelling parameter, not a game setting, and the honest answer is yes — a
+    /// pickup is a vehicle on the road with a plate on it, and excluding them
+    /// undercounted every state where they dominate the fleet.
+    ///
+    /// Defaults to true for trips created from here on. Existing trips keep the value
+    /// already stored against them, so no score anywhere moves — the same promise
+    /// `defaultScoringMode` makes, for the same reason.
+    var includesTrucks: Bool = true
 
     /// Put away, but not deleted.
     ///
