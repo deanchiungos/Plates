@@ -112,8 +112,19 @@ enum PlatesStore {
     /// screen nor the Book tab opens on an empty state.
     static func seedIfNeeded() {
         #if DEBUG
-        if DemoData.isRequested {
-            DemoData.install(into: context)
+        // Only take the fixture path if the fixture actually ran. It refuses against
+        // an iCloud-backed store, and falling through to ordinary seeding then is the
+        // difference between "no demo data" and "no players at all".
+        if DemoData.isRequested, DemoData.install(into: context) {
+            // The fixture's players are named, so it is not a fresh install as far as
+            // the profile prompt is concerned — otherwise every screenshot run opens
+            // on a "who's playing?" sheet.
+            DevicePlayer.markProfileSet()
+            // Falls through to the device-player pin below rather than returning.
+            // The fixture is a stand-in for a real install and has to be pinned the
+            // same way, or a demo host resolves its identity by fallback and every
+            // two-device test is exercising a path no shipping install takes.
+            pinDevicePlayer()
             return
         }
         #endif
@@ -121,6 +132,11 @@ enum PlatesStore {
         let playerCount = (try? context.fetchCount(FetchDescriptor<Player>())) ?? 0
         if playerCount == 0 {
             context.insert(Player(name: "Me", colorIndex: 0))
+        } else {
+            // Players already here means this install has been played. Whoever it is
+            // has a name they chose, or chose to keep, and asking "who's playing?" on
+            // an update would be the app forgetting somebody it has known for months.
+            DevicePlayer.markProfileSet()
         }
 
         let tripCount = (try? context.fetchCount(FetchDescriptor<Trip>())) ?? 0
@@ -136,5 +152,35 @@ enum PlatesStore {
         }
 
         try? context.save()
+        pinDevicePlayer()
+    }
+
+    /// Pin who this phone is, once, before anything can shuffle the roster.
+    ///
+    /// `DevicePlayer.resolve` falls back to the earliest-joined player when no id is
+    /// stored, which is right on a fresh install and quietly wrong the moment a party
+    /// merges somebody else's people in: a host who started playing last year has an
+    /// earlier `joinedAt` than your own "Me", so the fallback would hand your identity
+    /// to them and you would start logging plates as the host, on your own phone.
+    /// Writing the id at launch means the fallback only ever runs while this device is
+    /// still the only one in the store.
+    private static func pinDevicePlayer() {
+        if UserDefaults.standard.string(forKey: DevicePlayer.key) == nil,
+           let me = DevicePlayer.current(in: context) {
+            DevicePlayer.adopt(me)
+        }
+
+        #if DEBUG
+        // `-asPlayer Mia` names this phone without typing. Two simulators both seed
+        // a player called "Me", so without it a two-device party is two identical
+        // players and the one thing the test is checking cannot be seen.
+        let args = ProcessInfo.processInfo.arguments
+        if let at = args.firstIndex(of: "-asPlayer"), at + 1 < args.count,
+           let me = DevicePlayer.current(in: context) {
+            me.name = args[at + 1]
+            try? context.save()
+            DevicePlayer.markProfileSet()
+        }
+        #endif
     }
 }

@@ -36,9 +36,10 @@ enum PartyMerge {
     static func snapshot(of trip: Trip,
                          players: [Player],
                          hostPlayerID: UUID?,
+                         rules: PartyRules,
                          tombstones: PartyTombstones) -> PartySnapshot {
         PartySnapshot(
-            trip: event(for: trip),
+            trip: event(for: trip, rules: rules),
             players: players.map(event(for:)),
             sightings: trip.allSightings.compactMap(event(for:)),
             tombstones: Array(tombstones.ids(for: trip.id)),
@@ -46,7 +47,7 @@ enum PartyMerge {
         )
     }
 
-    static func event(for trip: Trip) -> TripEvent {
+    static func event(for trip: Trip, rules: PartyRules? = nil) -> TripEvent {
         TripEvent(id: trip.id,
                   name: trip.name,
                   startedAt: trip.startedAt,
@@ -58,13 +59,15 @@ enum PartyMerge {
                   destinationLat: trip.destinationLat,
                   destinationLon: trip.destinationLon,
                   scoringModeRaw: trip.scoringModeRaw,
-                  includesTrucks: trip.includesTrucks)
+                  includesTrucks: trip.includesTrucks,
+                  rules: rules)
     }
 
     static func event(for player: Player) -> PlayerEvent {
         PlayerEvent(id: player.id,
                     name: player.name,
                     colorIndex: player.colorIndex,
+                    avatar: player.avatar,
                     joinedAt: player.joinedAt)
     }
 
@@ -203,14 +206,46 @@ enum PartyMerge {
             if let player = known[event.id] {
                 if player.name != event.name { player.name = event.name }
                 if player.colorIndex != event.colorIndex { player.colorIndex = event.colorIndex }
+                if player.avatar != event.avatar { player.avatar = event.avatar }
                 continue
             }
             let player = Player(name: event.name, colorIndex: event.colorIndex)
             player.id = event.id
+            player.avatar = event.avatar
             player.joinedAt = event.joinedAt
             context.insert(player)
             known[event.id] = player
             outcome.playersAdded += 1
+        }
+
+        settleColours(Array(known.values))
+    }
+
+    /// Two people who both picked green have to stop being both green, and every
+    /// phone has to agree on which of them moved.
+    ///
+    /// Nobody negotiates. Order everyone by when they joined, walk the list, and give
+    /// anyone whose colour an earlier player already holds the lowest free one. That
+    /// is a pure function of data every device has, so all of them land on the same
+    /// answer without a message being sent — and the person who was there first keeps
+    /// the colour they have been playing as.
+    ///
+    /// Ties on `joinedAt` break on id, for the same reason `SightingOrder` does it:
+    /// otherwise two devices could disagree about who counts as earlier and hand the
+    /// same two people opposite colours.
+    private static func settleColours(_ players: [Player]) {
+        var taken = Set<Int>()
+        let ordered = players.sorted {
+            ($0.joinedAt, $0.id.uuidString) < ($1.joinedAt, $1.id.uuidString)
+        }
+        for player in ordered {
+            if taken.insert(player.colorIndex).inserted { continue }
+            // Wraps rather than failing: past the palette colours start repeating,
+            // which is a known cost of not capping how many people can play.
+            let free = (0..<Theme.playerColors.count).first { !taken.contains($0) }
+            guard let free else { break }
+            player.colorIndex = free
+            taken.insert(free)
         }
     }
 

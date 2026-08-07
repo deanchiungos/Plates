@@ -1,4 +1,5 @@
 #if DEBUG
+import CloudKit
 import Foundation
 import SwiftData
 
@@ -33,6 +34,10 @@ enum PartyMergeCheck {
             try removalsStickThroughAResnapshot()
             try tiesResolveTheSameWhateverTheOrder()
             try datesSurviveTheWire()
+            try participantsAreScopedToTheCollection()
+            try rulesDecideWhoCanTakeAPlateBack()
+            try rulesSurviveTheWire()
+            try sharedBooksRoundTripThroughCloudKitRecords()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -162,6 +167,195 @@ enum PartyMergeCheck {
         // A newer peer's protocol must be refused, not half-understood.
         let future = try PartyEnvelope(.bye, v: PartyEnvelope.currentVersion + 1).encoded()
         check("a newer version is refused", try PartyEnvelope.decoded(from: future) == nil, true)
+    }
+
+    /// The standings strip must show the people on *this* trip, not everyone the
+    /// store has ever heard of.
+    ///
+    /// This is a regression test for a bug that shipped. Partying merges the other
+    /// phones' players in and keeps them — correctly, since a finished trip has to
+    /// still render its standings years later — so scoring against every `Player`
+    /// row meant every new trip opened with a strip of everybody from every past
+    /// party, all sitting at zero, on a game they were never part of.
+    @MainActor
+    private static func participantsAreScopedToTheCollection() throws {
+        let store = try makeStore()
+        _ = install(into: store)
+
+        // Somebody from a previous party: in the store, on none of its trips.
+        let stranger = Player(name: "Nan", colorIndex: 4)
+        store.insert(stranger)
+        let fresh = Trip(name: "A New Drive")
+        store.insert(fresh)
+        try? store.save()
+
+        let everyone = (try? store.fetch(FetchDescriptor<Player>())) ?? []
+        check("the store really does hold a stranger", everyone.count, 4)
+
+        guard let played = (try? store.fetch(FetchDescriptor<Trip>()))?
+            .first(where: { !$0.allSightings.isEmpty }) else {
+            return check("fixture trip exists", false, true)
+        }
+
+        let onTheTrip = played.participants(from: everyone).map(\.name).sorted()
+        check("a played trip lists only its own spotters", onTheTrip, ["Dad", "Mia", "Theo"])
+
+        let onTheNewOne = fresh.participants(from: everyone).map(\.name)
+        check("a brand new trip lists nobody", onTheNewOne, [])
+
+        // This phone is always playing whatever it is looking at, even before its
+        // first find — otherwise you are missing from your own standings.
+        let withMe = fresh.participants(from: everyone, me: stranger).map(\.name)
+        check("except this phone", withMe, ["Nan"])
+
+        // And anyone in a live party on it, so joiners appear at zero rather than
+        // popping into existence on their first plate.
+        let joining = Set([stranger.id])
+        let withParty = fresh.participants(from: everyone, alsoPlaying: joining).map(\.name)
+        check("and whoever has just joined the party", withParty, ["Nan"])
+    }
+
+    /// Protected claims: a tap can only take back what you put there.
+    @MainActor
+    private static func rulesDecideWhoCanTakeAPlateBack() throws {
+        let store = try makeStore()
+        _ = install(into: store)
+        let everyone = (try? store.fetch(FetchDescriptor<Player>())) ?? []
+        guard let trip = (try? store.fetch(FetchDescriptor<Trip>()))?
+                .first(where: { !$0.allSightings.isEmpty }),
+              let dad = everyone.first(where: { $0.name == "Dad" }),
+              let mia = everyone.first(where: { $0.name == "Mia" })
+        else { return check("rules fixture", false, true) }
+
+        // "CA" is Dad's in the fixture, twice over.
+        check("CA is Dad's", trip.hasClaimed("CA", by: dad), true)
+        check("CA is not Mia's", trip.hasClaimed("CA", by: mia), false)
+
+        let miaMay = trip.removableSightings(of: "CA", by: mia, protected: true)
+        check("Mia cannot take back Dad's plate", miaMay.count, 0)
+
+        let dadMay = trip.removableSightings(of: "CA", by: dad, protected: true)
+        check("Dad can take back his own", dadMay.isEmpty, false)
+
+        let unprotected = trip.removableSightings(of: "CA", by: mia, protected: false)
+        check("with the rule off, anyone can", unprotected.isEmpty, false)
+
+        // An unowned sighting is nobody's, so it must stay removable or it would be
+        // stuck on the board forever.
+        let orphan = trip.removableSightings(of: "HI", by: mia, protected: true)
+        check("an unowned plate can still be taken back", orphan.isEmpty, false)
+
+        // Shared claims lean on this: two owners, one distinct code.
+        let both = trip.plateIndex().claimants("AK").map(\.name).sorted()
+        check("a plate claimed twice lists both", both, ["Dad", "Mia"])
+        check("but the trip still counts it once", trip.seenCodes.filter { $0 == "AK" }.count, 1)
+    }
+
+    /// Rules are only rules if they reach the other phones.
+    @MainActor
+    private static func rulesSurviveTheWire() throws {
+        var rules = PartyRules.standard
+        check("protection is on by default", rules.protectsClaims, true)
+        check("shared claims are off by default", rules.sharedClaims, false)
+
+        rules.sharedClaims = true
+        let store = try makeStore()
+        let fixture = install(into: store)
+        let id = fixture.tripID
+        guard let trip = try store.fetch(
+            FetchDescriptor<Trip>(predicate: #Predicate { $0.id == id })).first else {
+            return check("trip", false, true)
+        }
+
+        let sent = PartyEnvelope(.tripUpdate(PartyMerge.event(for: trip, rules: rules)))
+        let data = try sent.encoded()
+        guard let back = try PartyEnvelope.decoded(from: data),
+              case .tripUpdate(let event) = back.payload else {
+            return check("tripUpdate decodes", false, true)
+        }
+        check("rules arrive intact", event.rules, rules)
+    }
+
+    /// A shared book, out to `CKRecord`s and back into somebody else's store.
+    ///
+    /// Records are built in memory, which is the point: the mapping and the merge
+    /// are the half of shared books that can be proven without an iCloud account,
+    /// and they are also the half where a mistake is silent. A dropped field or a
+    /// non-idempotent apply would show up as plates quietly missing from a friend's
+    /// copy, weeks later, with nothing in any log.
+    @MainActor
+    private static func sharedBooksRoundTripThroughCloudKitRecords() throws {
+        let mine = try makeStore()
+        let zone = CKRecordZone.ID(zoneName: SharedBookRecords.zoneName,
+                                   ownerName: CKCurrentUserDefaultName)
+
+        let deb = Player(name: "Aunt Deb", colorIndex: 3)
+        mine.insert(deb)
+        let book = Book(name: "Shared Book")
+        book.startedAt = Date(timeIntervalSinceReferenceDate: 800_000_000)
+        mine.insert(book)
+
+        let codes = ["NJ", "NY", "PA"]
+        for (offset, code) in codes.enumerated() {
+            let s = Sighting(plateCode: code, in: book, player: deb,
+                             spottedAt: book.startedAt.addingTimeInterval(Double(offset) * 3_600))
+            s.rarityWhenSpotted = 4 + offset
+            s.spottedLat = 40.7 + Double(offset) / 100
+            s.spottedLon = -74.1
+            mine.insert(s)
+        }
+        // One nobody owns, which must survive the trip as unowned rather than being
+        // invented an author.
+        let orphan = Sighting(plateCode: "DE", in: book, player: nil,
+                              spottedAt: book.startedAt.addingTimeInterval(9_999))
+        mine.insert(orphan)
+        try? mine.save()
+
+        // Out.
+        let outgoing = SharedBookMerge.outgoing(for: book)
+        let bookRecord = SharedBookRecords.record(for: outgoing.book, in: zone)
+        let sightingRecords = outgoing.sightings.map {
+            SharedBookRecords.record(for: $0, bookID: book.id, in: zone,
+                                     parent: bookRecord.recordID)
+        }
+        check("every sighting became a record", sightingRecords.count, 4)
+        check("sightings hang off the book, so one share covers them",
+              sightingRecords.allSatisfy { $0.parent?.recordID == bookRecord.recordID }, true)
+
+        // Back, on somebody else's phone.
+        guard let fields = SharedBookRecords.book(from: bookRecord) else {
+            return check("book record decodes", false, true)
+        }
+        let decoded = sightingRecords.compactMap(SharedBookRecords.sighting(from:))
+        check("every record decoded", decoded.count, 4)
+
+        let theirs = try makeStore()
+        SharedBookMerge.apply(book: fields, into: theirs)
+        let first = SharedBookMerge.apply(decoded, into: theirs)
+        check("all four landed", first.sightingsAdded, 4)
+        check("the contributor was created once", first.contributorsAdded, 1)
+
+        guard let copy = (try? theirs.fetch(FetchDescriptor<Book>()))?.first else {
+            return check("book exists on the other side", false, true)
+        }
+        check("book name travelled", copy.name, "Shared Book")
+        check("plates travelled", copy.seenCodes.sorted(), ["DE", "NJ", "NY", "PA"])
+        check("banked rarity travelled", copy.claimedRarity(of: "NY"), 5)
+        check("the contributor is named", copy.plateIndex().spotter("NJ")?.name, "Aunt Deb")
+        check("an unowned plate stays unowned", copy.plateIndex().spotter("DE")?.name, nil)
+        check("coordinates travelled",
+              copy.allSightings.filter { $0.spottedLat != nil }.count, 3)
+
+        // The whole batch again — every sync delivers what it already delivered.
+        let second = SharedBookMerge.apply(decoded, into: theirs)
+        check("re-applying adds nothing", second.sightingsAdded, 0)
+        check("and invents no second contributor", second.contributorsAdded, 0)
+        check("the book is unchanged", copy.seenCodes.count, 4)
+
+        // A withdrawal, which CloudKit reports as a deleted record id.
+        let removed = SharedBookMerge.apply([], removing: [orphan.id], into: theirs)
+        check("the deletion applied", removed.sightingsRemoved, 1)
+        check("and the plate is gone", copy.seenCodes.sorted(), ["NJ", "NY", "PA"])
     }
 
     // MARK: - The fixture
@@ -334,6 +528,7 @@ enum PartyMergeCheck {
         return PartyEnvelope(.hello(PartyMerge.snapshot(of: trip,
                                                         players: players,
                                                         hostPlayerID: players.first?.id,
+                                                        rules: .standard,
                                                         tombstones: PartyTombstones(url: nil))))
     }
 

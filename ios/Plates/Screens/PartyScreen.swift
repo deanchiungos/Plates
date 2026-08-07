@@ -26,6 +26,20 @@ struct PartyScreen: View {
     @State private var joining: PartySession.Nearby?
     @State private var typedCode = ""
 
+    /// What to do once this phone has said who it is.
+    ///
+    /// Every fresh install seeds the same "Me", so without this a car full of phones
+    /// is a party of three players called Me — identical in the member list, in the
+    /// standings, and on every spotter chip, with only the colour telling them
+    /// apart. The party is the one place a name genuinely matters to somebody other
+    /// than its owner, so it is the place worth insisting.
+    @State private var pendingEntry: Entry?
+
+    private enum Entry: String, Identifiable {
+        case host, join
+        var id: String { rawValue }
+    }
+
     var body: some View {
         ZStack {
             Theme.ground.ignoresSafeArea()
@@ -48,6 +62,19 @@ struct PartyScreen: View {
         .navigationTitle("Party")
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $joining) { target in codeSheet(for: target) }
+        .sheet(item: $pendingEntry) { entry in
+            PlayerEditor(player: DevicePlayer.resolve(from: players),
+                         usedColors: [],
+                         onDelete: nil,
+                         title: "Who's playing?",
+                         saveLabel: "Continue",
+                         onSaved: {
+                             DevicePlayer.markProfileSet()
+                             // Straight on into what they were trying to do, so the
+                             // sheet reads as a step rather than an interruption.
+                             enter(entry)
+                         })
+        }
         #if DEBUG
         // `-hostParty` / `-joinParty` start one without a tap, which is the only way
         // to reach either state on a simulator — and the only way to stand up the two
@@ -68,7 +95,51 @@ struct PartyScreen: View {
                   let at = args.firstIndex(of: "-partyCode"), at + 1 < args.count,
                   let found, let party, !party.isConnected else { return }
             party.join(found, code: args[at + 1])
-            self.party = PartySession.shared
+        }
+        // `-partyLog OH` logs a plate the moment somebody joins, through the real
+        // `PlateLogger` path — so a two-device test exercises the actual broadcast
+        // hook rather than a stand-in for it.
+        .onChange(of: party?.isConnected) { _, connected in
+            let args = ProcessInfo.processInfo.arguments
+            guard connected == true else { return }
+
+            // `-partyEnd` says goodbye once somebody is in, so the other phone's
+            // "the host ended the party" state is reachable without a tap. Ahead of
+            // the `-partyLog` guard, so it works on its own.
+            if args.contains("-partyEnd") {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+                    PartySession.shared?.leave()
+                    self.party = nil
+                }
+            }
+
+            guard let at = args.firstIndex(of: "-partyLog"), at + 1 < args.count,
+                  let plate = Plate.plate(for: args[at + 1].uppercased()) else { return }
+
+            // Connected is not the same as caught up: a guest is pointed at its own
+            // trip until the snapshot lands and switches it. Logging before then puts
+            // the plate on the wrong trip, where `broadcast` rightly refuses to send
+            // it — so wait for the party's trip to actually be the one being filled.
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                guard let party = PartySession.shared,
+                      let trip = hostableTrip, trip.id == party.tripID else { return }
+                PlateLogger.record(plate, in: trip,
+                                   by: DevicePlayer.resolve(from: players), context: context)
+
+                // `-partyUnlog` then takes it straight back, which is the case
+                // tombstones exist for: the peer must drop it *and* refuse to re-add
+                // it when the next snapshot still contains it.
+                guard args.contains("-partyUnlog") else { return }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    var withdrawn: [UUID] = []
+                    for sighting in trip.allSightings where sighting.plateCode == plate.code {
+                        withdrawn.append(sighting.id)
+                        context.delete(sighting)
+                    }
+                    try? context.save()
+                    PartySession.shared?.broadcastRemoval(withdrawn, in: trip.id)
+                }
+            }
         }
         #endif
     }
@@ -95,7 +166,7 @@ struct PartyScreen: View {
             if let trip = hostableTrip {
                 action("Start a party for \(trip.name)", filled: true) {
                     Haptics.selection()
-                    party = PartySession.host(trip: trip, as: myName, context: context)
+                    begin(.host)
                 }
             } else {
                 // A book is a lifetime collection with no journey, and sharing one is
@@ -112,8 +183,24 @@ struct PartyScreen: View {
 
             action("Join someone's party", filled: false) {
                 Haptics.selection()
-                party = PartySession.browse(as: myName, context: context)
+                begin(.join)
             }
+        }
+    }
+
+    /// Asks who this phone is first, if it has never said.
+    private func begin(_ entry: Entry) {
+        guard DevicePlayer.hasProfile else { return pendingEntry = entry }
+        enter(entry)
+    }
+
+    private func enter(_ entry: Entry) {
+        switch entry {
+        case .host:
+            guard let trip = hostableTrip else { return }
+            party = PartySession.host(trip: trip, as: myName, context: context)
+        case .join:
+            party = PartySession.browse(as: myName, context: context)
         }
     }
 
@@ -140,6 +227,8 @@ struct PartyScreen: View {
                 .padding(.horizontal, 14)
             }
 
+            rulesCard(party)
+
             memberCard(party, empty: "Nobody has joined yet.")
 
             action("End party", filled: false, destructive: true) {
@@ -149,12 +238,83 @@ struct PartyScreen: View {
         }
     }
 
+    /// Host only, and live: flipping one sends it to every phone in the party.
+    ///
+    /// Only the host gets these because they change what a tap *means*, and two
+    /// people in one car disagreeing about that is worse than either answer.
+    private func rulesCard(_ party: PartySession) -> some View {
+        SettingsGroup("Rules") {
+            ruleRow(
+                title: "Protect what people find",
+                detail: "Only the person who spotted a plate can take it back.",
+                isOn: party.rules.protectsClaims
+            ) { on in
+                var next = party.rules
+                next.protectsClaims = on
+                party.setRules(next)
+            }
+
+            SettingsDivider()
+
+            ruleRow(
+                title: "Everyone can claim a plate",
+                detail: "A state stays open after the first person calls it, so it counts for all of you.",
+                isOn: party.rules.sharedClaims
+            ) { on in
+                var next = party.rules
+                next.sharedClaims = on
+                party.setRules(next)
+            }
+        }
+    }
+
+    private func ruleRow(title: String, detail: String, isOn: Bool,
+                         set: @escaping (Bool) -> Void) -> some View {
+        Toggle(isOn: Binding(get: { isOn }, set: { new in Haptics.selection(); set(new) })) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.plates(size: 15, weight: .semibold))
+                    .foregroundStyle(Theme.ink)
+                Text(detail)
+                    .font(.plates(size: 12))
+                    .foregroundStyle(Theme.inkMuted)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .tint(Theme.route)
+        .padding(14)
+    }
+
     // MARK: - Joining
 
     private func guestCard(_ party: PartySession) -> some View {
         VStack(spacing: 18) {
-            if party.isConnected {
+            if party.hasEnded {
+                // Nothing to show but the way out. The trouble card above has already
+                // said what happened, and the radios are off — a "looking for
+                // parties" spinner here would be the screen inventing activity that
+                // stopped when the host left.
+                action("Done", filled: true) {
+                    Haptics.selection()
+                    self.party = nil
+                }
+            } else if party.isConnected {
                 memberCard(party, empty: "Connecting\u{2026}")
+            } else if let target = party.joining {
+                // The gap between tapping Join and hearing back is up to a dozen
+                // seconds of Bluetooth, and until this said so the screen went back to
+                // the same list of parties — so the honest reading of a correct code
+                // was "nothing happened", and people tapped it again.
+                SettingsGroup("Joining") {
+                    HStack(spacing: 10) {
+                        ProgressView()
+                        Text("Asking \(target.hostName) to let you in\u{2026}")
+                            .font(.plates(size: 13.5))
+                            .foregroundStyle(Theme.inkMuted)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(14)
+                }
             } else {
                 SettingsGroup("Nearby") {
                     if party.nearby.isEmpty {
@@ -197,10 +357,12 @@ struct PartyScreen: View {
                 }
             }
 
-            action(party.isConnected ? "Leave party" : "Stop looking",
-                   filled: false, destructive: party.isConnected) {
-                party.leave()
-                self.party = nil
+            if !party.hasEnded {
+                action(party.isConnected ? "Leave party" : "Stop looking",
+                       filled: false, destructive: party.isConnected) {
+                    party.leave()
+                    self.party = nil
+                }
             }
         }
     }
@@ -242,7 +404,6 @@ struct PartyScreen: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Join") {
                         party?.join(target, code: typedCode)
-                        party = PartySession.shared
                         joining = nil
                     }
                     .fontWeight(.semibold)
@@ -323,7 +484,16 @@ struct PartyScreen: View {
         return trip
     }
 
-    /// Phase 2 replaces this with the device player. Until then the first player is
-    /// the only "me" the app has.
-    private var myName: String { players.first?.name ?? "Me" }
+    /// What the other phones in the car see us as — the peer's display name, and the
+    /// "hosted by" line on everybody else's list.
+    ///
+    /// This was `players.first?.name`, left over from before `DevicePlayer` existed,
+    /// and it was wrong in exactly the situation the party is for. `first` is the
+    /// earliest to join, which on a phone that has ever been in a party is whoever
+    /// had the oldest `joinedAt` of everyone merged in — quite possibly a person
+    /// sitting in a different car. So you advertised under their name, and the host
+    /// list showed a party hosted by somebody who was not there.
+    private var myName: String {
+        DevicePlayer.resolve(from: players)?.name ?? "Me"
+    }
 }
