@@ -900,6 +900,22 @@ struct TripEditor: View {
                         Button("Cancel") { dismiss() }
                     }
                 }
+                // Any trip can be shared, running or finished — showing somebody
+                // where you have got to is as true halfway down the country as it is
+                // at the end. In the toolbar because that is where sharing lives;
+                // it spent one commit buried at the bottom of the sheet.
+                if let trip, !isNew {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            poster = ShareablePoster.image(for: trip, players: players)
+                                .map(PosterToShare.init)
+                        } label: {
+                            Image(systemName: "square.and.arrow.up")
+                        }
+                        .tint(Theme.route)
+                        .accessibilityLabel("Share this trip")
+                    }
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     if isLocked {
                         Button("Done") { dismiss() }
@@ -1205,17 +1221,6 @@ struct TripEditor: View {
     private var dangerZone: some View {
         VStack(spacing: 8) {
             if let trip {
-                // Any trip can be shared, running or finished — the point of a
-                // one-pager is showing somebody where you have got to, which is as
-                // true halfway down the country as it is at the end.
-                Button {
-                    poster = ShareablePoster.image(for: trip, players: players)
-                        .map(PosterToShare.init)
-                } label: {
-                    rowLabel("Share this trip", symbol: "square.and.arrow.up",
-                             tint: Theme.route)
-                }
-
                 // The two things worth doing with a record: see it on the map, and
                 // shelve it in the collection. Only once the trip is over — a live
                 // trip's map is the Trail's default already, and folding a trip

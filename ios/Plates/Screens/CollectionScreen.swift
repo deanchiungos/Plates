@@ -833,6 +833,22 @@ struct BookEditor: View {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
                 }
+                // Sharing lives where iOS puts sharing. It spent one commit at the
+                // bottom of the sheet next to Empty and Delete, which is both the
+                // wrong neighbourhood for a harmless action and far enough down that
+                // the person who asked for the feature could not find it.
+                if let book, !isNew {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            poster = ShareablePoster.image(for: book, players: players)
+                                .map(PosterToShare.init)
+                        } label: {
+                            Image(systemName: "square.and.arrow.up")
+                        }
+                        .tint(Theme.route)
+                        .accessibilityLabel("Share this book")
+                    }
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(isNew ? "Start" : "Save", action: save)
                         .fontWeight(.semibold)
@@ -867,16 +883,6 @@ struct BookEditor: View {
     @ViewBuilder
     private var dangerZone: some View {
         VStack(spacing: 8) {
-            if let book {
-                Button {
-                    poster = ShareablePoster.image(for: book, players: players)
-                        .map(PosterToShare.init)
-                } label: {
-                    rowLabel("Share this book", symbol: "square.and.arrow.up",
-                             tint: Theme.route)
-                }
-            }
-
             if let onClear {
                 Button(action: onClear) {
                     rowLabel("Empty this book", symbol: "eraser", tint: .red)
