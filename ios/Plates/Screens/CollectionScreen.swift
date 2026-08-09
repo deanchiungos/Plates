@@ -760,8 +760,14 @@ struct BookEditor: View {
     let onClear: (() -> Void)?
     let onDelete: (() -> Void)?
 
+    @Query(sort: \Player.joinedAt) private var players: [Player]
+
     @State private var name = ""
     @FocusState private var focused: Bool
+    /// The one-pager, rendered on tap rather than in `body` — see `ShareSheet`.
+    /// Distinct from `sharing`, which is the CloudKit invitation: one hands somebody
+    /// a picture, the other hands them write access.
+    @State private var poster: PosterToShare?
     @State private var sharing: SharePayload?
     @State private var shareTrouble: String?
     @State private var preparingShare = false
@@ -814,6 +820,9 @@ struct BookEditor: View {
                     .padding(Theme.screenPadding)
                 }
             }
+            .sheet(item: $poster) { ready in
+                ShareSheet(items: [ready.image])
+            }
             .sheet(item: $sharing) { payload in
                 CloudShareSheet(share: payload.share,
                                 container: payload.container) { sharing = nil }
@@ -858,6 +867,16 @@ struct BookEditor: View {
     @ViewBuilder
     private var dangerZone: some View {
         VStack(spacing: 8) {
+            if let book {
+                Button {
+                    poster = ShareablePoster.image(for: book, players: players)
+                        .map(PosterToShare.init)
+                } label: {
+                    rowLabel("Share this book", symbol: "square.and.arrow.up",
+                             tint: Theme.route)
+                }
+            }
+
             if let onClear {
                 Button(action: onClear) {
                     rowLabel("Empty this book", symbol: "eraser", tint: .red)

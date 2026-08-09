@@ -37,6 +37,11 @@ struct PlatesApp: App {
         // on a peer. Runs against its own in-memory stores, so it cannot touch
         // anything above; the app carries on launching normally afterwards.
         if PartyMergeCheck.isRequested { PartyMergeCheck.run() }
+        // `-poster` renders the share image and writes it out, so it can be looked
+        // at without driving a share sheet.
+        if ProcessInfo.processInfo.arguments.contains("-poster") {
+            print(ShareablePoster.exportForInspection())
+        }
         // Resolve the speaking voice now rather than when voice mode first opens, so
         // its inventory lands in the console of a plain debug launch — which is the
         // only way to see what `speechVoices()` returns on a physical phone.

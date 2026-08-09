@@ -765,6 +765,8 @@ struct TripEditor: View {
     /// default for a new one, so the picker and the model cannot disagree about what
     /// "default" means.
     @State private var mode: ScoringMode = .weighted
+    /// Rendered on tap rather than in `body` — see `ShareSheet`.
+    @State private var poster: PosterToShare?
     @FocusState private var focused: Field?
 
     private enum Field { case name }
@@ -909,6 +911,9 @@ struct TripEditor: View {
                     }
                 }
             }
+        }
+        .sheet(item: $poster) { ready in
+            ShareSheet(items: [ready.image])
         }
         .onAppear {
             name = trip?.name ?? ""
@@ -1200,6 +1205,17 @@ struct TripEditor: View {
     private var dangerZone: some View {
         VStack(spacing: 8) {
             if let trip {
+                // Any trip can be shared, running or finished — the point of a
+                // one-pager is showing somebody where you have got to, which is as
+                // true halfway down the country as it is at the end.
+                Button {
+                    poster = ShareablePoster.image(for: trip, players: players)
+                        .map(PosterToShare.init)
+                } label: {
+                    rowLabel("Share this trip", symbol: "square.and.arrow.up",
+                             tint: Theme.route)
+                }
+
                 // The two things worth doing with a record: see it on the map, and
                 // shelve it in the collection. Only once the trip is over — a live
                 // trip's map is the Trail's default already, and folding a trip
