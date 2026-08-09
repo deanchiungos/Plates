@@ -381,11 +381,30 @@ struct GameScreen: View {
 
     // MARK: - Content
 
+    /// The app's name, on the one screen that never says it.
+    ///
+    /// Every other tab has a large navigation title; this one hides its bar entirely
+    /// so the grid starts as high as it can, which left the home screen as the only
+    /// place in the app with nothing identifying it. Typographic rather than an
+    /// image: the plate font *is* the mark, and a bitmap would need redrawing for
+    /// every size and both colour schemes to say the same thing.
+    private var wordmark: some View {
+        Text("PLATES")
+            .font(Theme.PlateFont.condensed(15))
+            .tracking(3)
+            .foregroundStyle(Theme.inkMuted.opacity(0.75))
+            .frame(maxWidth: .infinity)
+            .padding(.top, 2)
+            .padding(.bottom, 6)
+            .accessibilityHidden(true)
+    }
+
     @ViewBuilder
     private func content(for target: PlayTarget) -> some View {
         let collection = target.collection
 
         VStack(spacing: 0) {
+            wordmark
             PlateSearchBar(query: $query,
                            isOpen: $searchOpen,
                            matchCount: PlateSearch.matchCount(query: query)) {
@@ -426,8 +445,9 @@ struct GameScreen: View {
             ScrollViewReader { proxy in
                 ScrollView {
                     VStack(spacing: 0) {
-                        // Always tappable, even with one trip — the switcher is
-                        // also where you start a new trip or book.
+                        // Always tappable, even with one trip: it is how you move
+                        // between the trip you are on and a book, which is not
+                        // obvious from a card that looks like a heading.
                         switch target {
                         case .trip(let trip):
                             TripCard(trip: trip, onSwitch: { showSwitcher(current: target) })
