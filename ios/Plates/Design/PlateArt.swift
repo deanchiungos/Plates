@@ -134,8 +134,14 @@ struct PlateStyle {
         "MO": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1B4A8C, accent: 0x1B4A8C, .stateOutline),
         // unchanged shape, ink lightened from navy to the true dark-grey serial
         "MT": .init(0xBFE0F2, 0xFFFFFF, ink: 0x3E3D46, accent: 0xE0B84B, .mountains),
-        // silver-grey field with a ghosted watermark; wheat motif from before doesn't match the current design
-        "NE": .init(0xE8ECEF, 0xD6DCE2, ink: 0x14305C, accent: 0xE0B84B, .horizon),
+        // 2023– : pale silver-grey sheeting, navy embossed serial, and a watermark
+        // scene of a robed sower, a leaping horse, clouds and a lone star that is
+        // "visible only at an angle" (research/plate-primary.csv). The gold accent
+        // here until now belonged to the 2017–2022 plate, whose state name sat in
+        // gold on a navy bar — gone from the current design entirely. Of that
+        // watermark only the star survives at tile size, so it carries the motif,
+        // tinted the pale blue-grey it actually is rather than picked out in colour.
+        "NE": .init(0xF2F4F7, 0xDDE3EA, ink: 0x1A1F5B, accent: 0xA9B7C9, .star),
         // low-poly mountain range; unchanged shape
         "NV": .init(0xBFE0F2, 0xE0C97A, ink: 0x1C1C1C, accent: 0x1F5C3A, .mountains),
         // unchanged shape — Old Man of the Mountain watermark reads as a mountain motif

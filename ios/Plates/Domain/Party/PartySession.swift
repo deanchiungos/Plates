@@ -514,6 +514,17 @@ final class PartySession {
             break
         }
 
+        // Whether a removal is news, judged *before* the merge writes its tombstone.
+        // Gating the relay on "we actually deleted something" would be wrong: a
+        // removal for a plate this device had already dropped deletes nothing, and
+        // the guests who still hold it would never be told.
+        let removalIsNews: Bool = {
+            guard case .remove(let event) = envelope.payload else { return false }
+            return !event.sightingIDs.allSatisfy {
+                tombstones.contains($0, in: event.tripID)
+            }
+        }()
+
         let wasThere = localTrip() != nil
         let outcome = PartyMerge.apply(envelope, into: context, tombstones: tombstones)
 
@@ -545,6 +556,52 @@ final class PartySession {
         if role == .host, knownPlayerIDs != knownBefore {
             for other in session.connectedPeers where other != peer { greet(other) }
         }
+
+        relay(envelope, from: peer, outcome: outcome, removalIsNews: removalIsNews)
+    }
+
+    /// A find, passed on to the guests who may not have heard it.
+    ///
+    /// Every guest invites the *host* into its own `MCSession`, so the party is
+    /// assembled as a star. MultipeerConnectivity does then link the guests to each
+    /// other — but it does so lazily, and whether that link exists by the time
+    /// somebody taps a plate is a race.
+    ///
+    /// Measured, not assumed: with three simulators and no relay, the second guest
+    /// missed the third guest's plate in roughly one run out of three, with the two
+    /// outcomes produced by *identical* code minutes apart. When the link had formed,
+    /// the find arrived directly and everything looked perfect; when it had not, the
+    /// plate simply never appeared, and nothing in the app noticed or retried. That
+    /// is the reported "the third player to join was missing the data", and it is
+    /// invisible with two devices because every pair of them contains the host.
+    ///
+    /// So the host forwards live news rather than trusting the mesh. Only the host —
+    /// a guest that relayed would be echoing into the same uncertainty — and only the
+    /// two payloads that carry news. Snapshots are excluded deliberately: they are
+    /// re-sent on every connection anyway, and forwarding one would push a guest's
+    /// whole trip at another guest for no gain.
+    ///
+    /// Costs a duplicate when the direct link *did* form, which is free: the merge is
+    /// idempotent, removals are tombstoned, and a no-op merge announces nothing — so
+    /// nobody sees "Mia got Montana" twice.
+    private func relay(_ envelope: PartyEnvelope, from peer: MCPeerID,
+                       outcome: PartyMerge.Outcome, removalIsNews: Bool) {
+        guard role == .host else { return }
+
+        // Gated on the message having been news to us, which is what stops an echo
+        // dead: something that arrives twice is a no-op the second time and is
+        // therefore never forwarded twice.
+        switch envelope.payload {
+        case .sighting where outcome.sightingsAdded > 0,
+             .remove   where removalIsNews:
+            break
+        default:
+            return
+        }
+
+        let others = session.connectedPeers.filter { $0 != peer }
+        guard !others.isEmpty else { return }
+        send(envelope.payload, to: others)
     }
 
     /// Somebody left on purpose, which is a different thing from dropping out.
