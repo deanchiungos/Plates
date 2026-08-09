@@ -39,6 +39,7 @@ enum PartyMergeCheck {
             try rulesSurviveTheWire()
             try sharedBooksRoundTripThroughCloudKitRecords()
             try closingATripKeepsWhatItShould()
+            try factsNeverRelock()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -307,6 +308,35 @@ enum PartyMergeCheck {
         let after = (try? store.fetchCount(FetchDescriptor<Sighting>())) ?? 0
         check("discarding takes its sightings with it", after < before, true)
         check("and forgets the ledger entry", PartyLedger.shared.wasParty(id), false)
+    }
+
+    /// A fact you have read stays read.
+    ///
+    /// The rotation pile empties when a region runs dry, and the detail sheet used to
+    /// read that same set to decide what was unlocked — so finishing a state's facts
+    /// put every one of them back behind a padlock. Reading past the end is exactly
+    /// the case, so the check spots a plate more times than it has facts.
+    @MainActor
+    private static func factsNeverRelock() throws {
+        // A region with several facts, so there is a cycle to run off the end of.
+        guard let code = PlateFacts.byCode.first(where: { $0.value.count > 2 })?.key else {
+            return check("facts fixture", false, true)
+        }
+        let total = FactBook.total(for: code)
+        FactBook.reset()
+        check("nothing is unlocked to begin with", FactBook.seenFacts(for: code).count, 0)
+
+        // Twice round the pile, which is where the reshuffle used to wipe it.
+        var high = 0
+        for _ in 0..<(total * 2 + 1) {
+            _ = FactBook.fact(for: code)
+            let now = FactBook.seenFacts(for: code).count
+            check("unlocked facts never decrease", now >= high, true)
+            high = max(high, now)
+        }
+        check("every fact ends up unlocked", high, total)
+        check("and stays unlocked", FactBook.seenFacts(for: code).count, total)
+        FactBook.reset()
     }
 
     /// Rules are only rules if they reach the other phones.

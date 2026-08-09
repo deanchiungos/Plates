@@ -376,6 +376,18 @@ struct CollectionScreen: View {
         Rectangle().fill(Theme.line).frame(width: 1, height: 26)
     }
 
+    /// One page of the album.
+    ///
+    /// The grid sits on a page rather than straight on the screen, which is the whole
+    /// difference between this tab and the Game tab. Two testers said the same thing
+    /// in different words — "it feels like you can play from that tab" and "make the
+    /// Book tab look more unique" — and both are about the same cause: an identical
+    /// grid of identical tiles on an identical background, where one collects on tap
+    /// and one does not.
+    ///
+    /// Deleting the grid was the suggested fix and is the wrong one. The filled album
+    /// is the reward for collecting; what needed changing is that it looked like the
+    /// counter. So: a leaf of paper, and every plate mounted on it with corners.
     private func section(_ title: String, _ plates: [Plate], _ b: PlateBook) -> some View {
         VStack(spacing: 10) {
             SectionHeader(title: title, detail: "\(b.found(in: plates)) / \(plates.count)")
@@ -396,6 +408,15 @@ struct CollectionScreen: View {
                     .buttonStyle(TileButtonStyle())
                 }
             }
+            .padding(11)
+            .background(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(Theme.surface.opacity(0.62))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .strokeBorder(Theme.line.opacity(0.9), lineWidth: 1)
+                    )
+            )
         }
         .padding(.top, 4)
     }
@@ -497,6 +518,44 @@ struct CollectionScreen: View {
 
 // MARK: - Slot
 
+/// The paper triangles a plate is held onto the page by.
+///
+/// The one detail that makes the difference between a grid and an album, and it has
+/// to be *only* on this screen — a mounted plate reads as something already put
+/// away, which is exactly what the Game grid must not look like.
+///
+/// Both along the top edge, not on a diagonal. The diagonal is the prettier mount
+/// and it put a triangle exactly where the repeat count and the claimant faces go —
+/// the badge won, being the more important thing, and the corner became a smudge
+/// behind it. Four corners is a scrapbook and eats the state name at 60pt across.
+private struct PhotoCorners: View {
+    var size: CGFloat = 11
+
+    var body: some View {
+        GeometryReader { geo in
+            ZStack {
+                corner
+                    .position(x: size / 2, y: size / 2)
+                corner
+                    .rotationEffect(.degrees(90))
+                    .position(x: geo.size.width - size / 2, y: size / 2)
+            }
+        }
+        .allowsHitTesting(false)
+    }
+
+    private var corner: some View {
+        Path { path in
+            path.move(to: .zero)
+            path.addLine(to: CGPoint(x: size, y: 0))
+            path.addLine(to: CGPoint(x: 0, y: size))
+            path.closeSubpath()
+        }
+        .fill(Theme.ink.opacity(0.22))
+        .frame(width: size, height: size)
+    }
+}
+
 /// One page of the album. Filled shows the plate; empty shows the pressing it goes
 /// into — recessed, with the code ghosted so you know what is missing.
 private struct BookSlot: View {
@@ -507,6 +566,7 @@ private struct BookSlot: View {
         ZStack {
             if entry != nil {
                 PlateTile(plate: plate, isFound: true)
+                    .overlay(PhotoCorners())
             } else {
                 RoundedRectangle(cornerRadius: Theme.tileRadius, style: .continuous)
                     .fill(
@@ -621,6 +681,17 @@ private struct BookEntryDetail: View {
 
                         VStack(alignment: .leading, spacing: 9) {
                             SectionHeader(title: "Facts", detail: "\(seen.count) of \(total)")
+                            // Said plainly, because there was no way to work it out.
+                            // A tester could not tell how facts were unlocked, and
+                            // the app had never once mentioned that spotting the
+                            // plate again is the whole of the mechanism.
+                            if seen.count < total {
+                                Text(seen.isEmpty
+                                     ? "Spot this plate to read one."
+                                     : "Spot it again for the next one.")
+                                    .font(.plates(size: 12))
+                                    .foregroundStyle(Theme.inkMuted)
+                            }
                             ForEach(Array(seen.enumerated()), id: \.offset) { _, fact in
                                 Text(fact)
                                     .font(.plates(size: 13.5))
