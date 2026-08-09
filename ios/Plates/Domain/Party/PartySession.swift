@@ -187,11 +187,12 @@ final class PartySession {
     @discardableResult
     static func host(trip: Trip, as name: String, context: ModelContext) -> PartySession {
         shared?.leave()
-        let party = PartySession(role: .host, tripID: trip.id, code: Self.freshCode(),
+        let code = Self.code(for: trip.id)
+        let party = PartySession(role: .host, tripID: trip.id, code: code,
                                  name: name, context: context)
         // Whatever this trip was played by last time, if it has been a party before.
         party.rules = PartyLedger.shared.rules(for: trip.id)
-        PartyLedger.shared.note(trip: trip.id, role: "host", rules: party.rules)
+        PartyLedger.shared.note(trip: trip.id, role: "host", rules: party.rules, code: code)
         party.startAdvertising(tripName: trip.name)
         shared = party
         return party
@@ -719,17 +720,36 @@ final class PartySession {
             FetchDescriptor<Trip>(predicate: #Predicate { $0.id == id })).first
     }
 
-    /// No `O`/`0` or `I`/`1`: the code is read off one screen and typed into another,
-    /// usually by a passenger, usually in a moving car.
-    private static func freshCode() -> String {
+    /// The code this trip is hosted under — the same one every time.
+    ///
+    /// It used to be minted fresh on every `host`, which is wrong for the case that
+    /// actually happens: a host whose app is killed mid-drive. Re-hosting handed
+    /// everyone a new code while the old one was still written on the whiteboard,
+    /// still in the passenger's head, and still what the person who had not joined
+    /// yet was typing. Reconnecting guests were fine — they hold the code from their
+    /// first join — so the failure landed entirely on whoever was late.
+    ///
+    /// Also means a trip taken every weekend keeps its code, which regulars stop
+    /// having to read out at all.
+    private static func code(for trip: UUID) -> String {
         #if DEBUG
-        // `-partyCode ABCD` pins it, which is what makes a two-device test possible
-        // without a human reading one screen and typing into the other.
+        // `-partyCode` still wins, or every two-device test would inherit whatever
+        // the previous one happened to persist.
         let args = ProcessInfo.processInfo.arguments
         if let at = args.firstIndex(of: "-partyCode"), at + 1 < args.count {
             return tidy(args[at + 1])
         }
         #endif
+        if let kept = PartyLedger.shared.code(for: trip), !kept.isEmpty { return kept }
+        return freshCode()
+    }
+
+    /// No `O`/`0` or `I`/`1`: the code is read off one screen and typed into another,
+    /// usually by a passenger, usually in a moving car.
+    private static func freshCode() -> String {
+        // `-partyCode` is handled by `code(for:)`, which is the only caller — putting
+        // it in both places would mean a test flag that silently stopped applying the
+        // day somebody called this directly.
         let alphabet = Array("ABCDEFGHJKLMNPQRSTUVWXYZ23456789")
         return String((0..<4).map { _ in alphabet.randomElement()! })
     }

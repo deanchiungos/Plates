@@ -29,6 +29,10 @@ final class PartyLedger {
         /// trip this is by name. Optional because records written before this existed
         /// have no answer — and because a host has nobody to name.
         var hostName: String?
+        /// The four characters this trip is hosted under, kept so they survive the
+        /// host's app closing. Optional for the same reason as `hostName`: files
+        /// written before it existed decode without one.
+        var code: String?
     }
 
     /// `nil` keeps everything in memory, for the harness.
@@ -58,6 +62,9 @@ final class PartyLedger {
     /// Who was hosting when we joined, if we know.
     func hostName(for trip: UUID) -> String? { records[trip]?.hostName }
 
+    /// The code this trip has been hosted under before, if it has.
+    func code(for trip: UUID) -> String? { records[trip]?.code }
+
     /// The rules this trip is played by, or the standard ones if it was never a
     /// party. Callers do not have to know which.
     func rules(for trip: UUID) -> PartyRules {
@@ -69,7 +76,8 @@ final class PartyLedger {
     /// Called when a party starts or is joined. Keeps the original `startedAt` if
     /// the trip has been partied before, so re-hosting an old trip does not rewrite
     /// when it first happened.
-    func note(trip: UUID, role: String, rules: PartyRules, hostName: String? = nil) {
+    func note(trip: UUID, role: String, rules: PartyRules,
+              hostName: String? = nil, code: String? = nil) {
         let existing = records[trip]
         records[trip] = Record(tripID: trip,
                                role: role,
@@ -77,7 +85,8 @@ final class PartyLedger {
                                rules: rules,
                                // Kept when this call does not carry one, so rejoining
                                // a party does not forget whose trip it is.
-                               hostName: hostName ?? existing?.hostName)
+                               hostName: hostName ?? existing?.hostName,
+                               code: code ?? existing?.code)
         save()
     }
 
