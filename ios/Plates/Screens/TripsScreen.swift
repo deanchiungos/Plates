@@ -13,6 +13,8 @@ struct TripsScreen: View {
     @State private var editing: Trip?
     @State private var creating = false
     @State private var showArchived = false
+    /// Open by default: a finished trip is recent news, an archived one is not.
+    @State private var showFinished = true
 
     /// Set by the editor, acted on once the sheet is gone. A popup lives at the
     /// root and a sheet is presented above it, so a confirmation raised while the
@@ -125,7 +127,7 @@ struct TripsScreen: View {
     private var list: some View {
         ScrollView {
             VStack(spacing: 10) {
-                ForEach(trips.playable.pinnedFirst) { trip in
+                ForEach(trips.running.pinnedFirst) { trip in
                     SwipeRow(actions: actions(for: trip)) {
                         TripRow(
                             trip: trip,
@@ -163,6 +165,8 @@ struct TripsScreen: View {
                     .padding(.horizontal, 18)
                     .padding(.top, 10)
 
+                finishedSection
+
                 archivedSection
 
                 // Moved here from the Book tab, where it was a "History" page that
@@ -171,6 +175,62 @@ struct TripsScreen: View {
                                currentTripID: current?.id)
             }
             .padding(Theme.screenPadding)
+        }
+    }
+
+    /// Trips that have ended but not been put away.
+    ///
+    /// Separate from the running list because they take no more plates, and separate
+    /// from the archive because "done" and "filed" are different intentions — the
+    /// drive you finished this afternoon should not need digging out of the same
+    /// place as one from two years ago. Expanded by default for that reason.
+    @ViewBuilder
+    private var finishedSection: some View {
+        let done = trips.finished
+        if !done.isEmpty {
+            VStack(spacing: 10) {
+                Button {
+                    withAnimation(.snappy(duration: 0.25)) { showFinished.toggle() }
+                } label: {
+                    HStack(spacing: 6) {
+                        Image(systemName: "flag.checkered")
+                            .font(.system(size: 12, weight: .semibold))
+                        Text("Finished")
+                            .font(.plates(size: 13, weight: .semibold))
+                        Text("\(done.count)")
+                            .font(.plates(size: 13))
+                            .monospacedDigit()
+                            .foregroundStyle(Theme.inkMuted)
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 10, weight: .bold))
+                            .rotationEffect(.degrees(showFinished ? 90 : 0))
+                        Spacer()
+                    }
+                    .foregroundStyle(Theme.inkMuted)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+
+                if showFinished {
+                    ForEach(done) { trip in
+                        SwipeRow(actions: [
+                            SwipeAction(title: "Reopen",
+                                        symbol: "arrow.uturn.backward",
+                                        tint: Theme.route) { reopen(trip) },
+                            SwipeAction(title: "Archive",
+                                        symbol: "archivebox",
+                                        tint: Theme.inkMuted) { setArchived(trip, true) }
+                        ]) {
+                            TripRow(trip: trip,
+                                    isCurrent: false,
+                                    onSelect: { editing = trip },
+                                    onEdit: { editing = trip },
+                                    party: partyFaces(for: trip))
+                        }
+                    }
+                }
+            }
+            .padding(.top, 18)
         }
     }
 

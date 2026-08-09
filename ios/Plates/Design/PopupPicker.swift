@@ -30,6 +30,11 @@ struct PopupPicker: View {
         let id = UUID()
         /// Nil for a group that needs no heading — a single ungrouped list.
         var title: String?
+        /// An SF Symbol beside the heading. Two lists of names with nothing but a
+        /// word between them read as one list; a glyph is what makes "these are
+        /// trips" and "these are books" separable at a glance rather than by
+        /// reading.
+        var symbol: String?
         var entries: [Entry]
         /// Show only this many until asked for the rest. Nil shows everything.
         ///
@@ -88,12 +93,18 @@ struct PopupPicker: View {
 
             ForEach(filtered, id: \.group.id) { group, matches in
                 if let title = group.title {
-                    Text(title)
-                        .font(.plates(size: 9.5, weight: .bold))
-                        .tracking(1.1)
-                        .foregroundStyle(Theme.inkMuted)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.top, 2)
+                    HStack(spacing: 5) {
+                        if let symbol = group.symbol {
+                            Image(systemName: symbol)
+                                .font(.system(size: 9.5, weight: .bold))
+                        }
+                        Text(title)
+                            .font(.plates(size: 9.5, weight: .bold))
+                            .tracking(1.1)
+                    }
+                    .foregroundStyle(Theme.inkMuted)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.top, 2)
                 }
 
                 let shown = visible(matches, in: group)
@@ -115,15 +126,22 @@ struct PopupPicker: View {
                     )
                 }
 
-                if shown.count < matches.count {
+                // A disclosure that only ever opens is half a control: expanding a
+                // long list left no way back to the short one without closing the
+                // popup and reopening it, so the collapse the list exists for could
+                // be spent by one stray tap.
+                if canToggle(group, matches: matches, shown: shown.count) {
+                    let isOpen = expanded.contains(group.id)
                     Button {
                         let id = group.id
-                        withAnimation(.snappy(duration: 0.22)) { expanded.insert(id) }
+                        withAnimation(.snappy(duration: 0.22)) {
+                            if isOpen { expanded.remove(id) } else { expanded.insert(id) }
+                        }
                     } label: {
                         HStack(spacing: 5) {
-                            Text("Show all \(matches.count)")
+                            Text(isOpen ? "Show fewer" : "Show all \(matches.count)")
                                 .font(.plates(size: 13, weight: .semibold))
-                            Image(systemName: "chevron.down")
+                            Image(systemName: isOpen ? "chevron.up" : "chevron.down")
                                 .font(.system(size: 10, weight: .bold))
                         }
                         .foregroundStyle(Theme.route)
@@ -135,6 +153,14 @@ struct PopupPicker: View {
                 }
             }
         }
+    }
+
+    /// Whether this group has a collapsed and an expanded state worth moving
+    /// between. Not the same as "something is hidden": once expanded, nothing is
+    /// hidden and the button still has to be there to put it back.
+    private func canToggle(_ group: Group, matches: [Entry], shown: Int) -> Bool {
+        guard let limit = group.collapseTo, trimmed.isEmpty else { return false }
+        return matches.count > limit && (shown < matches.count || expanded.contains(group.id))
     }
 
     /// The entries actually drawn: everything while searching or once expanded,

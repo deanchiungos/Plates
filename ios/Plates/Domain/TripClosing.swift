@@ -11,16 +11,19 @@ import SwiftData
 @MainActor
 enum TripClosing {
 
-    /// Finishing and archiving in one move.
+    /// Finished, which is not the same as put away.
     ///
-    /// They were two separate actions and nobody wants two. A trip you are done with
-    /// is a trip you are done seeing: leaving it finished but still in every picker
-    /// meant the list only ever grew, which is how the switcher ended up taller than
-    /// the phone. Reopening from the archive puts both halves back.
+    /// These used to be one move, on the reasoning that a trip you are done with is a
+    /// trip you are done seeing — the switcher had grown taller than the phone and
+    /// finishing was what pruned it. That reasoning is now served by `collectable`,
+    /// which excludes finished trips from every picker on its own, so the two can be
+    /// separate again without the list coming back.
+    ///
+    /// And they should be. A drive that just ended is the one you most want to look
+    /// at: a tester asked for exactly this — finished trips still visible for review,
+    /// archived ones out of the summary. Archiving stays a deliberate second step.
     static func finish(_ trip: Trip, in context: ModelContext) {
-        let now = Date()
-        trip.endedAt = now
-        trip.archivedAt = now
+        trip.endedAt = Date()
         try? context.save()
 
         // A trip that is no longer the one being played must not still be named as

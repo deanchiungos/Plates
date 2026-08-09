@@ -27,4 +27,12 @@ final class Router {
         pendingTrail = scope
         tab = RootView.moreTab
     }
+
+    /// Go and collect. The Book tab's "collect into this book" used to only change
+    /// what the Game screen was filling and leave you looking at the same album,
+    /// which is indistinguishable from nothing happening — the one thing it promised
+    /// was on another tab.
+    func showGame() {
+        tab = RootView.gameTab
+    }
 }

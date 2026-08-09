@@ -57,6 +57,7 @@ struct RootView: View {
     }
 
     /// Where the More tab sits — the `Router` needs to name it to jump there.
+    static let gameTab = 0
     static let moreTab = 4
 
     /// `-tab players` opens straight to a tab, so screens past the first can be

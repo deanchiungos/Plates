@@ -535,6 +535,14 @@ extension Array where Element == Trip {
 
     var archived: [Trip] { filter(\.isArchived) }
 
+    /// Done, but not put away — the drive that just ended, which is the one most
+    /// worth looking at. Finishing no longer archives, so these sit in their own
+    /// section rather than vanishing into the archive the moment they end.
+    var finished: [Trip] { filter { !$0.isArchived && !$0.isActive } }
+
+    /// Still taking plates. What the main list is actually about.
+    var running: [Trip] { filter { !$0.isArchived && $0.isActive } }
+
     /// Pinned trips first, most recently pinned leading; everything else keeps the
     /// newest-first order the queries already come in.
     ///

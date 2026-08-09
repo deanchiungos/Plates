@@ -332,6 +332,16 @@ struct GameScreen: View {
                         if let collection { uncheck(plate, in: collection) }
                     }
                 }
+                // `-tapPlate NJ` taps that tile through the real handler, which is
+                // the only way to reach the "remove this?" confirmation without a
+                // finger. Deliberately `tap` and not `tapFound`, so the launch
+                // argument goes through the same branch a tap does.
+                if let i = args.firstIndex(of: "-tapPlate"), i + 1 < args.count,
+                   let plate = Plate.plate(for: args[i + 1].uppercased()) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                        if let collection { tap(plate, in: collection) }
+                    }
+                }
                 if let i = args.firstIndex(of: "-celebrate"), i + 1 < args.count,
                    let plate = Plate.plate(for: args[i + 1]) {
                     // Re-fires on a loop: a one-shot is nearly impossible to catch
@@ -770,7 +780,49 @@ struct GameScreen: View {
             Haptics.undo()
             return
         }
-        clear(plate, in: collection, removing: mine)
+        askBeforeClearing(plate, in: collection, removing: mine)
+    }
+
+    /// Taking a plate off is the only thing on this grid that destroys anything.
+    ///
+    /// A tap adds a sighting and a second tap took it away again, instantly, which is
+    /// a fine undo for the tap you meant to make and a bad one for the tap you did
+    /// not. What goes with it is not just a tick: the date you first saw it, the
+    /// rarity it was banked at, and where you were standing. None of that can be
+    /// worked out again, and a book is a lifetime record where the first-seen date is
+    /// most of the point.
+    ///
+    /// So the tap now asks. It costs one extra tap on a deliberate undo, which is the
+    /// right way round: undoing is rare and losing a year-old find is permanent.
+    /// Unlimited mode is unaffected — its removals already come through a long-press
+    /// menu that asks, and a tap there means "seen another one".
+    private func askBeforeClearing(_ plate: Plate,
+                                   in collection: any PlateCollection,
+                                   removing doomed: [Sighting]) {
+        let first = collection.allSightings
+            .filter { $0.plateCode == plate.code }
+            .min { SightingOrder($0) < SightingOrder($1) }
+        let since = first.map {
+            $0.spottedAt.formatted(date: .abbreviated, time: .omitted)
+        }
+
+        let message: String
+        if collection is Book, let since {
+            message = "It has been in \(collection.name) since \(since). "
+                    + "Removing it takes that date with it, and the app cannot work it out again."
+        } else if let since {
+            message = "Spotted \(since). Removing it takes back the points it scored."
+        } else {
+            message = "Removing it takes back the points it scored."
+        }
+
+        popup.present("Remove \(plate.name)?", message: message) {
+            PopupButton(title: "Remove it", kind: .destructive) {
+                clear(plate, in: collection, removing: doomed)
+                popup.dismiss()
+            }
+            PopupButton(title: "Keep it") { popup.dismiss() }
+        }
     }
 
     /// The undo unlimited mode otherwise lacks: long-press a counted plate to take
@@ -958,6 +1010,7 @@ struct GameScreen: View {
         let groups = [
             PopupPicker.Group(
                 title: openTrips.isEmpty ? nil : "TRIPS",
+                symbol: "suitcase.fill",
                 entries: openTrips.map { candidate in
                     PopupPicker.Entry(
                         id: candidate.id,
@@ -976,6 +1029,7 @@ struct GameScreen: View {
                 collapseTo: 4),
             PopupPicker.Group(
                 title: books.isEmpty ? nil : "BOOKS",
+                symbol: "books.vertical.fill",
                 entries: books.map { candidate in
                     PopupPicker.Entry(
                         id: candidate.id,
@@ -991,18 +1045,16 @@ struct GameScreen: View {
                 collapseTo: nil)
         ].filter { !$0.entries.isEmpty }
 
+        // No "New trip" / "New book" here any more. This is the switch, and making
+        // things belongs to the tabs that own them — a picker that also creates is
+        // two controls wearing one coat, and it was the only place in the app where
+        // a trip could be made without going to Trips. The cost is real for anybody
+        // starting a drive from this screen, so both tabs keep a create button above
+        // the fold as well as at the end of their list.
         popup.present("What are you filling?",
-                      message: "Plates are saved against whichever of these is picked.") {
+                      message: "Plates are saved against whichever of these is picked. "
+                             + "New trips and books are made on the Trips and Books tabs.") {
             PopupPicker(groups: groups)
-
-            PopupButton(title: "New trip", kind: .primary) {
-                popup.dismiss()
-                creatingTrip = true
-            }
-            PopupButton(title: "New book") {
-                popup.dismiss()
-                creatingBook = true
-            }
         }
     }
 

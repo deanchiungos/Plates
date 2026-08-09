@@ -17,6 +17,7 @@ import SwiftData
 struct CollectionScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(PopupHost.self) private var popup
+    @Environment(Router.self) private var router
 
     @Query private var sightings: [Sighting]
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
@@ -167,8 +168,12 @@ struct CollectionScreen: View {
                 guard let book = currentBook else { return }
                 PlaySelection.select(.book(book))
                 Haptics.selection()
+                // And actually go there. Selecting the book without moving tabs left
+                // you on the same page of empty slots, which reads as the button
+                // having done nothing — the whole promise is on the Game tab.
+                router.showGame()
             } label: {
-                dashedRow("Collect into this book on Drive", symbol: "car.fill")
+                dashedRow("Collect plates into this book", symbol: "car.fill")
             }
         }
 

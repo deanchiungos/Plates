@@ -284,8 +284,15 @@ enum PartyMergeCheck {
         check("the fixture trip has plates", plateCount > 0, true)
         TripClosing.finish(trip, in: store)
         check("finishing ends the trip", trip.endedAt != nil, true)
-        check("finishing archives it", trip.isArchived, true)
+        // Deliberately *not* archived. Finishing used to do both, and a tester asked
+        // for the split: a drive that just ended is the one most worth looking at,
+        // so it stays in the list until it is put away on purpose.
+        check("finishing does not archive it", trip.isArchived, false)
         check("finishing keeps every plate", trip.allSightings.count, plateCount)
+        // The reason the split is safe: pickers filter on `collectable`, so a
+        // finished trip leaves them without needing to be archived.
+        check("a finished trip is out of the pickers", [trip].collectable.isEmpty, true)
+        check("but still in the list", [trip].playable.isEmpty, false)
 
         // Discarding takes the copy, the plates on it, and the sidecars keyed to it.
         let id = trip.id
