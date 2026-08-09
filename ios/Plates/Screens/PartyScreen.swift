@@ -579,7 +579,7 @@ struct PartyScreen: View {
         // Hosting it would advertise their trip id under your name, giving the party
         // two hosts with two ideas of the rules. See `PartyLedger.joinedAsGuest`.
         guard PartyLedger.shared.joinedAsGuest(trip.id) else { return nil }
-        let host = PartyLedger.shared.hostName(for: trip.id)
+        let host = PartyLedger.shared.hostLabel(for: trip.id, among: players)
         return "\(host ?? "Somebody else") started \(trip.name) and shared it with you, "
              + "so only they can start a party for it. Start one on a trip of your own instead."
     }

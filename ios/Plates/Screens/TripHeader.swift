@@ -239,6 +239,11 @@ struct PlayerStrip: View {
     /// Past this, stop dividing the width and start scrolling.
     private var scrolls: Bool { standings.count > 3 }
 
+    /// Deliberately has no "final" variant. It would never be seen: this is drawn on
+    /// the Game screen, and `TripSelection.current` resolves only to `collectable`
+    /// trips — not archived, and still active — so a finished trip cannot be the one
+    /// on display. Finishing a party trip moves the screen to the next open one,
+    /// which is the whole of what "the party is over" needs to do here.
     var body: some View {
         Group {
             if scrolls {

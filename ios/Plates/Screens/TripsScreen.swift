@@ -681,6 +681,9 @@ struct TripEditor: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(Router.self) private var router
     @AppStorage(TripSelection.key) private var currentTripID = ""
+    /// For naming the host of a joined trip — the ledger stores an id, and turning
+    /// one into a person needs the roster.
+    @Query(sort: \Player.joinedAt) private var players: [Player]
 
     let trip: Trip?
     let onClear: (() -> Void)?
@@ -782,6 +785,7 @@ struct TripEditor: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 22) {
                         if isLocked { lockedNotice }
+                        if let host = hostedBy { hostedNotice(host) }
 
                         nameField
 
@@ -891,6 +895,38 @@ struct TripEditor: View {
         }
         .animation(.snappy(duration: 0.28), value: origin.isPinned)
         .animation(.snappy(duration: 0.28), value: destination.isPinned)
+    }
+
+    /// Whose drive this was, when it was not this phone's.
+    ///
+    /// Answered from `hostPlayerID` where the ledger has it — the id the host sent in
+    /// every snapshot, which until now nothing read. A name can be changed or shared
+    /// by two people in one car; the id is the only thing that cannot.
+    private var hostedBy: String? {
+        guard let trip else { return nil }
+        return PartyLedger.shared.hostLabel(for: trip.id, among: players)
+    }
+
+    /// Whose trip this is, said where somebody looking at the record would ask.
+    /// Complements the party screen's refusal to let a guest host it.
+    private func hostedNotice(_ host: String) -> some View {
+        HStack(alignment: .top, spacing: 9) {
+            Image(systemName: "person.2.fill")
+                .font(.system(size: 12, weight: .semibold))
+                .padding(.top, 1.5)
+            Text("\(host)'s trip \u{2014} you joined their party. This is your copy of it.")
+                .font(.plates(size: 12.5))
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
+        }
+        .foregroundStyle(Theme.inkMuted)
+        .padding(.horizontal, 13)
+        .padding(.vertical, 11)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Theme.unfound.opacity(0.55))
+        )
     }
 
     /// Why the sheet is inert, said once at the top rather than left for the reader

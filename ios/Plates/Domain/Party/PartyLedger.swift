@@ -33,6 +33,10 @@ final class PartyLedger {
         /// host's app closing. Optional for the same reason as `hostName`: files
         /// written before it existed decode without one.
         var code: String?
+        /// Which `Player` the host was playing as. Arrives in every snapshot and is
+        /// the authoritative answer to "whose trip is this" — a display name can be
+        /// changed or duplicated, an id cannot.
+        var hostPlayerID: UUID?
     }
 
     /// `nil` keeps everything in memory, for the harness.
@@ -65,6 +69,21 @@ final class PartyLedger {
     /// The code this trip has been hosted under before, if it has.
     func code(for trip: UUID) -> String? { records[trip]?.code }
 
+    /// Whose trip this is, by id. Preferred over `hostName` wherever the roster is
+    /// to hand: a name can be changed or shared, an id cannot.
+    func hostPlayerID(for trip: UUID) -> UUID? { records[trip]?.hostPlayerID }
+
+    /// Whose trip this is, named — the player row if we have one, the advertised
+    /// name if not. Nil when this device started the trip itself.
+    func hostLabel(for trip: UUID, among players: [Player]) -> String? {
+        guard joinedAsGuest(trip) else { return nil }
+        if let id = hostPlayerID(for: trip),
+           let player = players.first(where: { $0.id == id }) {
+            return player.name
+        }
+        return hostName(for: trip)
+    }
+
     /// The rules this trip is played by, or the standard ones if it was never a
     /// party. Callers do not have to know which.
     func rules(for trip: UUID) -> PartyRules {
@@ -77,7 +96,8 @@ final class PartyLedger {
     /// the trip has been partied before, so re-hosting an old trip does not rewrite
     /// when it first happened.
     func note(trip: UUID, role: String, rules: PartyRules,
-              hostName: String? = nil, code: String? = nil) {
+              hostName: String? = nil, code: String? = nil,
+              hostPlayerID: UUID? = nil) {
         let existing = records[trip]
         records[trip] = Record(tripID: trip,
                                role: role,
@@ -86,7 +106,8 @@ final class PartyLedger {
                                // Kept when this call does not carry one, so rejoining
                                // a party does not forget whose trip it is.
                                hostName: hostName ?? existing?.hostName,
-                               code: code ?? existing?.code)
+                               code: code ?? existing?.code,
+                               hostPlayerID: hostPlayerID ?? existing?.hostPlayerID)
         save()
     }
 

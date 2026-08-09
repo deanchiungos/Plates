@@ -506,11 +506,12 @@ final class PartySession {
         switch envelope.payload {
         case .hello(let snapshot):
             knownPlayerIDs.formUnion(snapshot.players.map(\.id))
-            adoptRules(snapshot.trip)
+            noteHost(snapshot.hostPlayerID, peer: peer)
+            adoptRules(snapshot.trip, from: peer)
         case .roster(let events):
             knownPlayerIDs.formUnion(events.map(\.id))
         case .tripUpdate(let event):
-            adoptRules(event)
+            adoptRules(event, from: peer)
         default:
             break
         }
@@ -623,10 +624,27 @@ final class PartySession {
         }
     }
 
-    /// The host's word on how the party plays. Guests only — a host that adopted
-    /// rules from an incoming message could have its own settings overwritten by
-    /// somebody else's stale snapshot.
-    private func adoptRules(_ event: TripEvent) {
+    /// Which player id belongs to the phone hosting.
+    ///
+    /// Travelled in every snapshot since the rules did and was read by nobody, which
+    /// made "hosted by" a guess. Persisted so it survives the party — the trip editor
+    /// names the host from it months later, and `PartyLedger` is where the rest of a
+    /// party's identity already lives.
+    private func noteHost(_ id: UUID?, peer: MCPeerID) {
+        guard role == .guest, peer == hostPeer, let id else { return }
+        PartyLedger.shared.note(trip: tripID, role: "guest", rules: rules,
+                                hostName: peer.displayName, hostPlayerID: id)
+    }
+
+    /// The host's word on how the party plays.
+    ///
+    /// Guests only — a host that adopted rules from an incoming message could have
+    /// its own settings overwritten by somebody else's stale snapshot — and only from
+    /// the host's own peer. `broadcastTrip` guards the sending side, and a guarded
+    /// sender with an unguarded receiver is half a rule: nothing stopped one guest
+    /// handing another a `tripUpdate` that rewrote what a tap means for everybody.
+    private func adoptRules(_ event: TripEvent, from peer: MCPeerID) {
+        guard peer == hostPeer else { return }
         guard role == .guest, event.id == tripID, let sent = event.rules else { return }
         rules = sent
         PartyLedger.shared.setRules(sent, for: tripID)
