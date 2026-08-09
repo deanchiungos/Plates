@@ -1,5 +1,31 @@
 # Party fixes, round three
 
+> **As built.** Everything below shipped except item 6, and two items shipped for
+> different reasons than the ones written here. Corrections, since the reasoning is
+> the part worth keeping:
+>
+> - **Item 0's diagnosis was wrong, its conclusion right.** The plan says the party
+>   is a star and guests never hear each other. It is not a star —
+>   MultipeerConnectivity does link guests to each other, and a member list on the
+>   second guest proves it names the third. But it links them *lazily*, so whether
+>   the link exists when somebody taps a plate is a race. Measured: without the
+>   relay, the second guest missed the third's plate in roughly one run in three,
+>   with both outcomes from identical code minutes apart. The first mutation run
+>   passed by luck and nearly buried the bug. The relay ships, because it makes
+>   propagation deterministic rather than because the mesh does not exist.
+> - **Item 6 is dropped, not deferred.** `TripSelection.current` resolves only to
+>   `collectable` trips — not archived, still active — so the Game screen can never
+>   display a finished trip and a "final" flag on `PlayerStrip` would never have been
+>   read. Finishing already moves the screen to the next open trip, which is all the
+>   feedback needed. Noted in `PlayerStrip` so it is not re-derived.
+> - **Item 10 shipped no code, as planned.** A host killed with no goodbye leaves a
+>   tappable row in the guest's nearby list for under 35 seconds; MC's `lostPeer`
+>   fires and `lost(_:)` prunes it. No age-out needed.
+> - **One method-level lesson worth keeping:** `xcodebuild build` does not install.
+>   Several harness runs this session were silently executing a stale binary, which
+>   is how a mutation test "passed" while the mutation was live. Install before
+>   asserting.
+
 The TestFlight party feedback, items 5–11 from the triage. Numbering kept so the
 conversation and the plan agree. Items 1–4 (join failure reporting, join-in-flight
 UI, device-player identity, guest-cannot-host) are already committed on
