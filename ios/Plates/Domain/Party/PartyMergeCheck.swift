@@ -38,6 +38,7 @@ enum PartyMergeCheck {
             try rulesDecideWhoCanTakeAPlateBack()
             try rulesSurviveTheWire()
             try sharedBooksRoundTripThroughCloudKitRecords()
+            try closingATripKeepsWhatItShould()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -249,6 +250,56 @@ enum PartyMergeCheck {
         let both = trip.plateIndex().claimants("AK").map(\.name).sorted()
         check("a plate claimed twice lists both", both, ["Dad", "Mia"])
         check("but the trip still counts it once", trip.seenCodes.filter { $0 == "AK" }.count, 1)
+    }
+
+    /// What "the party is over" does to this phone's copy.
+    ///
+    /// The two outcomes are opposites and the choice between them is offered by a
+    /// popup nobody can tap from a launch argument, so the logic is checked here
+    /// instead: finishing must keep every plate, discarding must take the whole copy
+    /// and leave no sidecar behind pointing at a trip that no longer exists.
+    @MainActor
+    private static func closingATripKeepsWhatItShould() throws {
+        let store = try makeStore()
+        _ = install(into: store)
+        let everyone = (try? store.fetch(FetchDescriptor<Player>())) ?? []
+        guard let trip = (try? store.fetch(FetchDescriptor<Trip>()))?
+                .first(where: { !$0.allSightings.isEmpty }),
+              let dad = everyone.first(where: { $0.name == "Dad" })
+        else { return check("closing fixture", false, true) }
+
+        // Whose drive is it? The question the discard offer turns on.
+        DevicePlayer.adopt(dad)
+        check("a player with finds on the trip has some",
+              TripClosing.hasOwnFinds(in: trip, players: everyone), true)
+
+        let stranger = Player(name: "Nobody", colorIndex: 5)
+        store.insert(stranger)
+        DevicePlayer.adopt(stranger)
+        check("somebody who spotted nothing has none",
+              TripClosing.hasOwnFinds(in: trip, players: everyone + [stranger]), false)
+
+        // Finishing keeps everything and merely files it.
+        let plateCount = trip.allSightings.count
+        check("the fixture trip has plates", plateCount > 0, true)
+        TripClosing.finish(trip, in: store)
+        check("finishing ends the trip", trip.endedAt != nil, true)
+        check("finishing archives it", trip.isArchived, true)
+        check("finishing keeps every plate", trip.allSightings.count, plateCount)
+
+        // Discarding takes the copy, the plates on it, and the sidecars keyed to it.
+        let id = trip.id
+        let tombs = PartyTombstones(url: nil)
+        tombs.add(trip.allSightings.map(\.id), to: id)
+        let before = (try? store.fetchCount(FetchDescriptor<Sighting>())) ?? 0
+
+        TripClosing.discard(trip, in: store)
+        let remainingTrips = ((try? store.fetch(FetchDescriptor<Trip>())) ?? [])
+            .filter { $0.id == id }
+        check("discarding removes the trip", remainingTrips.isEmpty, true)
+        let after = (try? store.fetchCount(FetchDescriptor<Sighting>())) ?? 0
+        check("discarding takes its sightings with it", after < before, true)
+        check("and forgets the ledger entry", PartyLedger.shared.wasParty(id), false)
     }
 
     /// Rules are only rules if they reach the other phones.

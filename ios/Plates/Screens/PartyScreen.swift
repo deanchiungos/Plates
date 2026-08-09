@@ -9,6 +9,7 @@ import SwiftUI
 /// what it does is "show nearby peers, tap one", which is a list.
 struct PartyScreen: View {
     @Environment(\.modelContext) private var context
+    @Environment(PopupHost.self) private var popup
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
@@ -106,10 +107,12 @@ struct PartyScreen: View {
             // `-partyEnd` says goodbye once somebody is in, so the other phone's
             // "the host ended the party" state is reachable without a tap. Ahead of
             // the `-partyLog` guard, so it works on its own.
+            // Through `askOnLeaving`, not straight to `leave()`, so the thing a
+            // launch argument exercises is the thing a finger would — including the
+            // question about what happens to the copy.
             if args.contains("-partyEnd") {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
-                    PartySession.shared?.leave()
-                    self.party = nil
+                    if let live = self.party { askOnLeaving(live) }
                 }
             }
 
@@ -208,6 +211,73 @@ struct PartyScreen: View {
         }
     }
 
+    // MARK: - Leaving, and what happens to the copy
+
+    /// The trip this party is about, if this phone has it.
+    private func partyTrip(_ party: PartySession) -> Trip? {
+        trips.first { $0.id == party.tripID }
+    }
+
+    /// Leave, then decide what the copy becomes.
+    ///
+    /// Two separate things, deliberately in that order. Leaving is not in question by
+    /// the time somebody has tapped the button, and making it wait behind a popup
+    /// would leave the radios running while they think — so the goodbye goes out
+    /// immediately and the question is about the trip, not the party.
+    private func askOnLeaving(_ party: PartySession) {
+        let trip = partyTrip(party)
+        party.leave()
+        self.party = nil
+        Haptics.selection()
+        guard let trip, !trip.isArchived else { return }
+        askAboutCopy(of: trip)
+    }
+
+    /// What should happen to this phone's copy of a drive that has finished.
+    ///
+    /// The copy always survives if they want it to — that is the design, and it is
+    /// what makes the party work with no signal. But a trip left open goes on looking
+    /// live: it stays the thing the Game screen is filling, and it keeps drawing a
+    /// running scoreboard for a car that has emptied. That is the reported "I still
+    /// see multiple players on my Game tab even though the party has ended", and the
+    /// people on it are not a bug — they really did spot those plates — so the answer
+    /// is to let the drive be over rather than to erase anybody.
+    private func askAboutCopy(of trip: Trip) {
+        let mine = TripClosing.hasOwnFinds(in: trip, players: players)
+
+        popup.present(
+            "\(trip.name) is finished",
+            message: mine
+                ? "Everyone keeps their own copy. Finishing yours files it with your "
+                  + "other trips, with everything anybody spotted still on it."
+                : "You did not spot anything on this one. You can keep the copy anyway, "
+                  + "or throw it away \u{2014} everybody else keeps theirs either way."
+        ) {
+            if mine {
+                PopupChoice(title: "Finish the trip",
+                            subtitle: "Files it away. Nothing is lost.") {
+                    TripClosing.finish(trip, in: context)
+                    Haptics.milestone()
+                    popup.dismiss()
+                }
+            } else {
+                PopupChoice(title: "Discard this trip",
+                            subtitle: "Removes your copy only.") {
+                    TripClosing.discard(trip, in: context)
+                    Haptics.destructive()
+                    popup.dismiss()
+                }
+                PopupChoice(title: "Finish and keep it",
+                            subtitle: "Files it away with your trips.") {
+                    TripClosing.finish(trip, in: context)
+                    Haptics.milestone()
+                    popup.dismiss()
+                }
+            }
+            PopupButton(title: "Leave it open") { popup.dismiss() }
+        }
+    }
+
     // MARK: - Hosting
 
     private func hostCard(_ party: PartySession) -> some View {
@@ -236,8 +306,7 @@ struct PartyScreen: View {
             memberCard(party, empty: "Nobody has joined yet.")
 
             action("End party", filled: false, destructive: true) {
-                party.leave()
-                self.party = nil
+                askOnLeaving(party)
             }
         }
     }
@@ -298,9 +367,14 @@ struct PartyScreen: View {
                 // said what happened, and the radios are off — a "looking for
                 // parties" spinner here would be the screen inventing activity that
                 // stopped when the host left.
+                // The host went home, so the same decision arrives — just without a
+                // party to leave first. Never automatic: somebody whose host quit
+                // unexpectedly should not also find their trip filed away for them.
+                let trip = partyTrip(party)
                 action("Done", filled: true) {
                     Haptics.selection()
                     self.party = nil
+                    if let trip, !trip.isArchived { askAboutCopy(of: trip) }
                 }
             } else if party.isConnected {
                 memberCard(party, empty: "Connecting\u{2026}")
@@ -364,8 +438,12 @@ struct PartyScreen: View {
             if !party.hasEnded {
                 action(party.isConnected ? "Leave party" : "Stop looking",
                        filled: false, destructive: party.isConnected) {
-                    party.leave()
-                    self.party = nil
+                    // Only a party that was actually joined has a copy worth deciding
+                    // about. "Stop looking" is abandoning a search, not leaving a car.
+                    if party.isConnected { askOnLeaving(party) } else {
+                        party.leave()
+                        self.party = nil
+                    }
                 }
             }
         }

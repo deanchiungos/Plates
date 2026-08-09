@@ -485,28 +485,11 @@ struct TripsScreen: View {
         Haptics.destructive()
     }
 
-    /// Finishing and archiving in one move.
-    ///
-    /// They were two separate actions and nobody wants two. A trip you are done
-    /// with is a trip you are done seeing: leaving it finished but still in every
-    /// picker meant the list only ever grew, which is how the switcher ended up
-    /// taller than the phone. Reopening from the archive puts both halves back.
+    /// See `TripClosing.finish`, which the party screen shares — a party ending is a
+    /// drive ending, and both places have to mean the same thing by it.
     private func finish(_ trip: Trip) {
-        let now = Date()
-        trip.endedAt = now
-        trip.archivedAt = now
-        try? context.save()
-        if trip.id.uuidString == currentTripID { currentTripID = "" }
-        // A finished trip takes no more plates, so a party still pointed at it would
-        // be a radio running for a game nobody can play. The goodbye goes out first,
-        // which is what stops everyone else hunting for a host that has stopped.
-        endPartyIfOn(trip)
+        TripClosing.finish(trip, in: context)
         Haptics.milestone()
-    }
-
-    private func endPartyIfOn(_ trip: Trip) {
-        guard PartySession.isPartying(trip) else { return }
-        PartySession.shared?.leave()
     }
 
     private func setArchived(_ trip: Trip, _ archived: Bool) {
@@ -522,7 +505,7 @@ struct TripsScreen: View {
     private func remove(_ trip: Trip) {
         let wasCurrent = trip.id == current?.id
         let id = trip.id
-        endPartyIfOn(trip)
+        if PartySession.isPartying(trip) { PartySession.shared?.leave() }
         // The cascade is about to take the sightings with it — including any that
         // were folded into a shared book, whose members need the tombstones.
         pushSharedRemovals(for: trip.allSightings)
