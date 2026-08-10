@@ -189,27 +189,10 @@ struct TripsScreen: View {
         let done = trips.finished
         if !done.isEmpty {
             VStack(spacing: 10) {
-                Button {
-                    withAnimation(.snappy(duration: 0.25)) { showFinished.toggle() }
-                } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "flag.checkered")
-                            .font(.system(size: 12, weight: .semibold))
-                        Text("Finished")
-                            .font(.plates(size: 13, weight: .semibold))
-                        Text("\(done.count)")
-                            .font(.plates(size: 13))
-                            .monospacedDigit()
-                            .foregroundStyle(Theme.inkMuted)
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 10, weight: .bold))
-                            .rotationEffect(.degrees(showFinished ? 90 : 0))
-                        Spacer()
-                    }
-                    .foregroundStyle(Theme.inkMuted)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
+                DisclosureBar(symbol: "flag.checkered",
+                              title: "Finished",
+                              count: done.count,
+                              isOpen: showFinished) { showFinished.toggle() }
 
                 if showFinished {
                     ForEach(done) { trip in
@@ -245,27 +228,10 @@ struct TripsScreen: View {
         let archived = trips.archived
         if !archived.isEmpty {
             VStack(spacing: 10) {
-                Button {
-                    withAnimation(.snappy(duration: 0.25)) { showArchived.toggle() }
-                } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "archivebox")
-                            .font(.system(size: 12, weight: .semibold))
-                        Text("Archived")
-                            .font(.plates(size: 13, weight: .semibold))
-                        Text("\(archived.count)")
-                            .font(.plates(size: 13))
-                            .monospacedDigit()
-                            .foregroundStyle(Theme.inkMuted)
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 10, weight: .bold))
-                            .rotationEffect(.degrees(showArchived ? 90 : 0))
-                        Spacer()
-                    }
-                    .foregroundStyle(Theme.inkMuted)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
+                DisclosureBar(symbol: "archivebox",
+                              title: "Archived",
+                              count: archived.count,
+                              isOpen: showArchived) { showArchived.toggle() }
 
                 if showArchived {
                     ForEach(archived) { trip in

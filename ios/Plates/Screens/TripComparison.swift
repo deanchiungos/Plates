@@ -23,24 +23,13 @@ struct TripComparison: View {
     var body: some View {
         if summaries.count > 1 {
             VStack(spacing: 10) {
-                Button {
-                    withAnimation(.snappy(duration: 0.25)) { expanded.toggle() }
-                } label: {
-                    HStack(spacing: 8) {
-                        Image(systemName: "chart.bar.fill")
-                            .font(.system(size: 12, weight: .semibold))
-                        Text("Compare trips")
-                            .font(.plates(size: 14, weight: .semibold))
-                        Spacer()
-                        Image(systemName: expanded ? "chevron.up" : "chevron.down")
-                            .font(.system(size: 11, weight: .semibold))
-                    }
-                    .foregroundStyle(Theme.inkMuted)
-                    .padding(.horizontal, 13)
-                    .padding(.vertical, 11)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
+                // The same bar Finished and Archived use. This one had its own type
+                // size, its own chevron on the far right and padding the others did
+                // not have — three treatments of one control, within a thumb's width
+                // of each other.
+                DisclosureBar(symbol: "chart.bar.fill",
+                              title: "Compare trips",
+                              isOpen: expanded) { expanded.toggle() }
 
                 if expanded {
                     ForEach(summaries) { summary in
