@@ -40,7 +40,7 @@ struct PlatesApp: App {
         // `-poster` renders the share image and writes it out, so it can be looked
         // at without driving a share sheet.
         if ProcessInfo.processInfo.arguments.contains("-poster") {
-            print(ShareablePoster.exportForInspection())
+            Task { @MainActor in print(await ShareablePoster.exportForInspection()) }
         }
         // Resolve the speaking voice now rather than when voice mode first opens, so
         // its inventory lands in the console of a plain debug launch — which is the

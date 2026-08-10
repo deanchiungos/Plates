@@ -127,9 +127,6 @@
     "Allow" : {
 
     },
-    "Archived" : {
-
-    },
     "Archived trip" : {
 
     },
@@ -175,6 +172,9 @@
     "Clear search" : {
 
     },
+    "Collapsed" : {
+
+    },
     "Collecting" : {
 
     },
@@ -190,9 +190,6 @@
           }
         }
       }
-    },
-    "Compare trips" : {
-
     },
     "Currently playing" : {
 
@@ -224,6 +221,9 @@
     "Everyone spots on their own phone" : {
 
     },
+    "Expanded" : {
+
+    },
     "FACE" : {
 
     },
@@ -240,9 +240,6 @@
 
     },
     "Find a plate at this stop" : {
-
-    },
-    "Finished" : {
 
     },
     "Finished trip" : {

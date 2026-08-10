@@ -32,6 +32,7 @@ struct CollectionScreen: View {
     @State private var allTime = false
     /// The one-pager, rendered on tap — see `ShareSheet`.
     @State private var poster: PosterToShare?
+    @State private var preparingPoster = false
     @State private var selected: String?
     @State private var creatingBook = false
     @State private var editingBook: Book?
@@ -112,11 +113,20 @@ struct CollectionScreen: View {
                 // looking at is the thing you would want to send somebody.
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        poster = renderPoster().map(PosterToShare.init)
+                        preparingPoster = true
+                        Task {
+                            poster = await renderPoster().map(PosterToShare.init)
+                            preparingPoster = false
+                        }
                     } label: {
-                        Image(systemName: "square.and.arrow.up")
+                        if preparingPoster {
+                            ProgressView()
+                        } else {
+                            Image(systemName: "square.and.arrow.up")
+                        }
                     }
                     .tint(Theme.route)
+                    .disabled(preparingPoster)
                     .accessibilityLabel(showingAllTime
                                         ? "Share your all-time collection"
                                         : "Share this book")
@@ -167,10 +177,10 @@ struct CollectionScreen: View {
     /// Whatever the screen is currently showing — the book, or the all-time lens.
     /// The button shares what you are looking at, which is the only behaviour that
     /// needs no explaining.
-    private func renderPoster() -> UIImage? {
+    private func renderPoster() async -> UIImage? {
         if showingAllTime { return ShareablePoster.image(allTime: lifetime) }
         guard let book = currentBook else { return nil }
-        return ShareablePoster.image(for: book, players: players)
+        return await ShareablePoster.image(for: book, players: players)
     }
 
     // MARK: - Book
@@ -796,6 +806,7 @@ struct BookEditor: View {
     /// Distinct from `sharing`, which is the CloudKit invitation: one hands somebody
     /// a picture, the other hands them write access.
     @State private var poster: PosterToShare?
+    @State private var preparingPoster = false
     @State private var sharing: SharePayload?
     @State private var shareTrouble: String?
     @State private var preparingShare = false
@@ -868,12 +879,21 @@ struct BookEditor: View {
                 if let book, !isNew {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
-                            poster = ShareablePoster.image(for: book, players: players)
-                                .map(PosterToShare.init)
+                            preparingPoster = true
+                            Task {
+                                poster = await ShareablePoster.image(for: book, players: players)
+                                    .map(PosterToShare.init)
+                                preparingPoster = false
+                            }
                         } label: {
-                            Image(systemName: "square.and.arrow.up")
+                            if preparingPoster {
+                                ProgressView()
+                            } else {
+                                Image(systemName: "square.and.arrow.up")
+                            }
                         }
                         .tint(Theme.route)
+                        .disabled(preparingPoster)
                         .accessibilityLabel("Share this book")
                     }
                 }

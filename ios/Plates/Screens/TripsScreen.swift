@@ -733,6 +733,9 @@ struct TripEditor: View {
     @State private var mode: ScoringMode = .weighted
     /// Rendered on tap rather than in `body` — see `ShareSheet`.
     @State private var poster: PosterToShare?
+    /// A trip's poster waits on MapKit for driving directions, which is seconds, not
+    /// milliseconds. Without this the button looked broken for the whole of it.
+    @State private var preparingPoster = false
     @FocusState private var focused: Field?
 
     private enum Field { case name }
@@ -873,12 +876,21 @@ struct TripEditor: View {
                 if let trip, !isNew {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
-                            poster = ShareablePoster.image(for: trip, players: players)
-                                .map(PosterToShare.init)
+                            preparingPoster = true
+                            Task {
+                                poster = await ShareablePoster.image(for: trip, players: players)
+                                    .map(PosterToShare.init)
+                                preparingPoster = false
+                            }
                         } label: {
-                            Image(systemName: "square.and.arrow.up")
+                            if preparingPoster {
+                                ProgressView()
+                            } else {
+                                Image(systemName: "square.and.arrow.up")
+                            }
                         }
                         .tint(Theme.route)
+                        .disabled(preparingPoster)
                         .accessibilityLabel("Share this trip")
                     }
                 }

@@ -1,3 +1,5 @@
+import CoreLocation
+import MapKit
 import SwiftData
 import SwiftUI
 
@@ -32,6 +34,10 @@ struct SharePoster: View {
     /// book nobody shares, which is most of them — and the strip disappears rather
     /// than showing one person beating nobody.
     let standings: [(player: Player, score: Int)]
+    /// The trip's road, already snapshotted. Nil for a book, for a trip with no
+    /// places pinned, and whenever MapKit declined to answer — all three are normal,
+    /// and the poster simply has no map that day.
+    var route: PosterRoute?
 
     /// Wide enough that a 10-across grid of plates is legible when Messages shrinks
     /// it into a bubble.
@@ -60,6 +66,11 @@ struct SharePoster: View {
             spine
             VStack(spacing: 0) {
                 header
+                if let route {
+                    PosterMapStrip(route: route, startLabel: nil, endLabel: nil)
+                        .padding(.horizontal, 30)
+                        .padding(.bottom, 22)
+                }
                 grid
                 if standings.count > 1 { spotters }
                 footer
@@ -69,6 +80,13 @@ struct SharePoster: View {
         .frame(width: Self.width)
         .background(Theme.ground)
     }
+
+    /// Bookbinder's tan. Local to the poster rather than added to `Theme`, because
+    /// the palette has no brown on purpose — it is cream, navy and amber — and one
+    /// decorative edge is not a reason to widen it. The first version used
+    /// `Theme.route`, and a navy spine on a cream page read as a UI element that had
+    /// wandered in rather than as a binding.
+    private static let leather = Color(hex: 0x9A6B3F)
 
     /// The bound edge, so the page is a page out of something.
     ///
@@ -80,13 +98,6 @@ struct SharePoster: View {
     /// Drawn rather than shaded from an image: three bands and a gradient are enough
     /// for the eye to read "spine", and the whole thing survives being scaled into a
     /// Messages bubble, which a photographic texture would not.
-    /// Bookbinder's tan. Local to the poster rather than added to `Theme`, because
-    /// the palette has no brown on purpose — it is cream, navy and amber — and one
-    /// decorative edge is not a reason to widen it. The first version used
-    /// `Theme.route`, and a navy spine on a cream page read as a UI element that had
-    /// wandered in rather than as a binding.
-    private static let leather = Color(hex: 0x9A6B3F)
-
     private var spine: some View {
         ZStack {
             // Rolled rather than flat: dark at the outer edge where the cover turns
@@ -260,8 +271,12 @@ enum ShareablePoster {
     /// `scale: 2` rather than the screen's. The output has to be the same on every
     /// phone, and 2× of a 700pt page is a 1400px image: sharp in a Messages bubble,
     /// small enough to send over a bad connection at the end of a road trip.
+    /// Async now, and only because of the map: `MKMapSnapshotter` is the one part
+    /// of this that cannot be done inside `ImageRenderer`, which runs no tasks and
+    /// waits for nothing. The picture has to be finished before the poster is laid
+    /// out, so it is fetched here and handed in.
     static func image(for collection: any PlateCollection,
-                      players: [Player]) -> UIImage? {
+                      players: [Player]) async -> UIImage? {
         let index = collection.plateIndex()
         let people = collection.participants(from: players,
                                              me: DevicePlayer.resolve(from: players))
@@ -273,7 +288,8 @@ enum ShareablePoster {
             found: seen,
             // Only worth drawing when more than one person is on it. A book filled
             // alone and a trip driven alone both get the collection and nothing else.
-            standings: people.count > 1 ? collection.standings(among: people) : []
+            standings: people.count > 1 ? collection.standings(among: people) : [],
+            route: await road(of: collection)
         )
     }
 
@@ -284,6 +300,9 @@ enum ShareablePoster {
     /// No standings. A lifetime spans trips and books with different people on them,
     /// and a leaderboard drawn across all of it would be comparing somebody's one
     /// afternoon in the car against somebody else's four years.
+    /// Books and the lifetime lens get no map. A book is not a journey — it has no
+    /// two ends — which is the same reason `Book.route` is a single point rather
+    /// than a line.
     static func image(allTime book: PlateBook) -> UIImage? {
         image(
             title: "All time",
@@ -310,17 +329,30 @@ enum ShareablePoster {
             .max { ($0.rarity, $1.code) < ($1.rarity, $0.code) }
     }
 
+    /// The road, when there is one to draw. Only a trip with both ends pinned has
+    /// one — no places, no map, and the poster is simply shorter that day.
+    private static func road(of collection: any PlateCollection) async -> PosterRoute? {
+        guard let trip = collection as? Trip,
+              let start = trip.originCoordinate,
+              let end = trip.destinationCoordinate else { return nil }
+        return await PosterRoute.make(
+            start: start, end: end,
+            size: CGSize(width: SharePoster.width - 60, height: 190))
+    }
+
     private static func image(title: String,
                               subtitle: String?,
                               bestFind: (code: String, rarity: Int)?,
                               found: Set<String>,
-                              standings: [(player: Player, score: Int)]) -> UIImage? {
+                              standings: [(player: Player, score: Int)],
+                              route: PosterRoute? = nil) -> UIImage? {
         let poster = SharePoster(title: title,
                                  subtitle: subtitle,
                                  bestFind: bestFind,
                                  plates: everyPlate,
                                  found: found,
-                                 standings: standings)
+                                 standings: standings,
+                                 route: route)
         let renderer = ImageRenderer(content: poster)
         renderer.scale = 2
         return renderer.uiImage
@@ -330,7 +362,7 @@ enum ShareablePoster {
     /// `-poster` writes the current target's poster into Documents, which is the only
     /// way to look at the thing without a share sheet and a finger. Same code path as
     /// the real one — if this renders, so does what people send.
-    static func exportForInspection() -> String {
+    static func exportForInspection() async -> String {
         let players = (try? PlatesStore.context.fetch(FetchDescriptor<Player>())) ?? []
         let started = Date()
         // `-poster alltime` covers the lens, which is not a collection and so takes
@@ -344,7 +376,7 @@ enum ShareablePoster {
             made = image(allTime: PlateBook(sightings: all))
         } else {
             guard let target = PlatesStore.currentTarget() else { return "no target" }
-            made = image(for: target, players: players)
+            made = await image(for: target, players: players)
         }
         guard let image = made else { return "render failed" }
         let drew = Date().timeIntervalSince(started)
