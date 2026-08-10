@@ -80,20 +80,29 @@ struct SharePoster: View {
     /// Drawn rather than shaded from an image: three bands and a gradient are enough
     /// for the eye to read "spine", and the whole thing survives being scaled into a
     /// Messages bubble, which a photographic texture would not.
+    /// Bookbinder's tan. Local to the poster rather than added to `Theme`, because
+    /// the palette has no brown on purpose — it is cream, navy and amber — and one
+    /// decorative edge is not a reason to widen it. The first version used
+    /// `Theme.route`, and a navy spine on a cream page read as a UI element that had
+    /// wandered in rather than as a binding.
+    private static let leather = Color(hex: 0x9A6B3F)
+
     private var spine: some View {
         ZStack {
             // Rolled rather than flat: dark in the crease, catching the light across
             // the curve, darkening again at the outer edge where the cover turns
-            // away. Four stops is the fewest that reads as round instead of striped.
+            // away. Four stops is the fewest that reads as round instead of striped,
+            // and they sit close together — a spine is one material catching light,
+            // not a set of stripes.
             LinearGradient(
-                colors: [Theme.route.opacity(0.62), Theme.route.opacity(0.34),
-                         Theme.route.opacity(0.52), Theme.route.opacity(0.78)],
+                colors: [Self.leather.opacity(0.40), Self.leather.opacity(0.24),
+                         Self.leather.opacity(0.31), Self.leather.opacity(0.44)],
                 startPoint: .leading, endPoint: .trailing)
 
             // The shadow the page casts into the gutter. On the inner edge, which is
             // the side the light cannot reach.
             HStack(spacing: 0) {
-                LinearGradient(colors: [Theme.ink.opacity(0.34), .clear],
+                LinearGradient(colors: [Theme.ink.opacity(0.16), .clear],
                                startPoint: .leading, endPoint: .trailing)
                     .frame(width: 12)
                 Spacer(minLength: 0)
@@ -105,7 +114,7 @@ struct SharePoster: View {
                 Spacer(minLength: 0)
                 ForEach(0..<3, id: \.self) { index in
                     Rectangle()
-                        .fill(Theme.ground.opacity(0.42))
+                        .fill(Theme.ground.opacity(0.34))
                         .frame(height: 10)
                     if index < 2 { Spacer().frame(height: 52) }
                 }
