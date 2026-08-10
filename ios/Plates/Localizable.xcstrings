@@ -47,6 +47,9 @@
         }
       }
     },
+    "%@'s trip — you joined their party. This is your copy of it." : {
+
+    },
     "%lld" : {
 
     },
@@ -239,6 +242,9 @@
     "Find a plate at this stop" : {
 
     },
+    "Finished" : {
+
+    },
     "Finished trip" : {
 
     },
@@ -383,9 +389,6 @@
     "Opens Plates and starts listening, so you can call out plates without touching anything." : {
 
     },
-    "Parties are for trips. Switch to a trip on the Game screen to start one." : {
-
-    },
     "Party" : {
 
     },
@@ -520,6 +523,12 @@
     "Share this book" : {
 
     },
+    "Share this trip" : {
+
+    },
+    "Share your all-time collection" : {
+
+    },
     "Shared" : {
 
     },
@@ -536,6 +545,15 @@
 
     },
     "Show everything" : {
+
+    },
+    "Show fewer" : {
+
+    },
+    "Spot it again for the next one." : {
+
+    },
+    "Spot this plate to read one." : {
 
     },
     "Spotted" : {

@@ -324,22 +324,53 @@ private struct DesignCard: View {
     /// Plates are wider than they are tall and so is the frame, but a few of these
     /// are photographs of a plate on a car rather than a scan — `.fit` keeps those
     /// whole instead of cropping the plate out of its own picture.
-    private var photo: some View {
-        AsyncImage(url: design.url) { phase in
-            switch phase {
-            case .success(let image):
-                image.resizable().aspectRatio(contentMode: .fit)
-            case .failure:
-                ZStack {
+    private var photo: some View { DesignPhoto(design: design, glyph: 15) }
+}
+
+/// The picture for one design, from whichever of the two sources it has.
+///
+/// Shared by the card and the full sheet so the bundled-versus-fetched split is
+/// decided in one place — the alternative was the same `if let asset` in two views
+/// that are easy to update singly and then quietly disagree.
+struct DesignPhoto: View {
+    let design: PlateHistoryBook.Design
+    var glyph: CGFloat = 15
+
+    var body: some View {
+        if let asset = design.asset, let image = Self.bundled(asset) {
+            Image(uiImage: image).resizable().aspectRatio(contentMode: .fit)
+        } else {
+            AsyncImage(url: design.url) { phase in
+                switch phase {
+                case .success(let image):
+                    image.resizable().aspectRatio(contentMode: .fit)
+                case .failure:
+                    missing
+                default:
                     Theme.ground
-                    Image(systemName: "photo")
-                        .font(.system(size: 15))
-                        .foregroundStyle(Theme.inkMuted.opacity(0.6))
                 }
-            default:
-                Theme.ground
             }
         }
+    }
+
+    private var missing: some View {
+        ZStack {
+            Theme.ground
+            Image(systemName: "photo")
+                .font(.system(size: glyph))
+                .foregroundStyle(Theme.inkMuted.opacity(0.6))
+        }
+    }
+
+    /// Same lookup the lookup screen's photographs use: a loose file in a bundle
+    /// subdirectory, with a flat fallback in case the folder reference is ever
+    /// flattened by the build.
+    static func bundled(_ name: String) -> UIImage? {
+        let url = Bundle.main.url(forResource: name, withExtension: "png",
+                                  subdirectory: "CurrentPlates")
+            ?? Bundle.main.url(forResource: name, withExtension: "png")
+        guard let url else { return nil }
+        return UIImage(contentsOfFile: url.path)
     }
 }
 
@@ -415,23 +446,8 @@ struct DesignSheet: View {
     }
 
     private var photo: some View {
-        AsyncImage(url: design.url) { phase in
-            switch phase {
-            case .success(let image):
-                image.resizable().aspectRatio(contentMode: .fit)
-            case .failure:
-                ZStack {
-                    Theme.surface
-                    Image(systemName: "photo")
-                        .font(.system(size: 22))
-                        .foregroundStyle(Theme.inkMuted.opacity(0.6))
-                }
-                .aspectRatio(Theme.tileAspect, contentMode: .fit)
-            default:
-                Theme.surface.aspectRatio(Theme.tileAspect, contentMode: .fit)
-            }
-        }
-        .frame(maxWidth: .infinity)
+        DesignPhoto(design: design, glyph: 22)
+            .frame(maxWidth: .infinity)
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 10, style: .continuous)

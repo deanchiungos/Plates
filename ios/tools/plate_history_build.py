@@ -54,9 +54,23 @@ def main(path):
     by_code = {}
     for r in csv.DictReader(open(path)):
         url = r["image_url"]
-        if not url.startswith("http"):
-            continue                     # a file committed beside the research, not shipped
         if PLACEHOLDER in r["image_file"].lower():
+            continue
+
+        # `images/NAME.png` is one of our own redrawings, committed beside the
+        # research rather than fetched. These exist for the handful of current
+        # designs Wikimedia has no freely usable photograph of — the states whose
+        # plate art is actively enforced, Wyoming's Bucking Horse above all — and
+        # skipping them left those jurisdictions with a history that stopped
+        # decades ago and nothing marked in issue.
+        #
+        # They ship in the bundle as `Resources/CurrentPlates/NAME.png` and are
+        # named, not linked, so this screen's one network dependency does not
+        # extend to the row you are most likely to want.
+        asset = None
+        if url.startswith("images/"):
+            asset = url[len("images/"):].rsplit(".", 1)[0]
+        elif not url.startswith("http"):
             continue
 
         by_code.setdefault(r["code"], []).append({
@@ -64,7 +78,7 @@ def main(path):
             "year": int(r["first_issued"]) if r["first_issued"].isdigit() else 0,
             "current": r["is_current"] == "1",
             "note": r["description"][:180],
-            "url": thumbnail(url),
+            **({"asset": asset} if asset else {"url": thumbnail(url)}),
             "licence": r["licence"],
             "credit": r["credit"][:60],
             # Set when the picture belongs to a neighbouring row that Wikipedia says
@@ -84,7 +98,7 @@ def main(path):
         rows.sort(key=lambda d: (-d["year"], d["dates"]))
         seen, unique = set(), []
         for d in rows:
-            key = (d["dates"], d["url"])
+            key = (d["dates"], d.get("url") or d.get("asset"))
             if key in seen:
                 continue
             seen.add(key)

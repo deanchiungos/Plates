@@ -22,7 +22,12 @@ enum PlateHistoryBook {
         let year: Int
         let isCurrent: Bool
         let note: String
-        let url: URL
+        /// Nil when the picture ships in the bundle instead — see `asset`.
+        let url: URL?
+        /// A redrawing bundled at `Resources/CurrentPlates/<asset>.png`, used for
+        /// the current designs no free photograph exists for. Loading it needs no
+        /// network, which matters most for the row people actually look at.
+        let asset: String?
         let licence: String
         let credit: String
         /// The picture belongs to a neighbouring row that Wikipedia says is the same
@@ -62,14 +67,20 @@ enum PlateHistoryBook {
         var out: [String: [Design]] = [:]
         for (code, entries) in raw {
             out[code] = entries.compactMap { e in
-                guard let link = e["url"] as? String, let url = URL(string: link) else {
-                    return nil
-                }
+                // Exactly one of the two is present. `asset` names a picture that
+                // ships in the bundle, `url` one that has to be fetched — see the
+                // header comment for why the current designs are the ones we draw
+                // ourselves rather than link.
+                let asset = e["asset"] as? String
+                let url = (e["url"] as? String).flatMap(URL.init(string:))
+                guard asset != nil || url != nil else { return nil }
+
                 return Design(dates: e["dates"] as? String ?? "",
                               year: e["year"] as? Int ?? 0,
                               isCurrent: e["current"] as? Bool ?? false,
                               note: e["note"] as? String ?? "",
                               url: url,
+                              asset: asset,
                               licence: e["licence"] as? String ?? "",
                               credit: e["credit"] as? String ?? "",
                               isShared: e["shared"] as? Bool ?? false)
