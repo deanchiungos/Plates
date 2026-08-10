@@ -28,7 +28,7 @@ struct PosterRoute {
         // Directions first, so the frame can be drawn around the road rather than
         // around its two ends — a route detouring north around a mountain range
         // would otherwise run off the top of a map framed on the endpoints.
-        let road = await route(from: start, to: end)
+        let road = await RouteCache.shared.directions(from: start, to: end)?.path ?? []
         let framed = road.isEmpty ? [start, end] : road
 
         let options = MKMapSnapshotter.Options()
@@ -70,27 +70,6 @@ struct PosterRoute {
                         longitudeDelta: min(max((maxLon - minLon) * 1.25, 0.6), 160)))
     }
 
-    /// Nil-safe by design: no route is a legitimate answer, not a failure, so the
-    /// caller draws a dashed line between the ends instead of nothing at all.
-    private static func route(from start: CLLocationCoordinate2D,
-                              to end: CLLocationCoordinate2D) async -> [CLLocationCoordinate2D] {
-        let request = MKDirections.Request()
-        request.source = MKMapItem(placemark: MKPlacemark(coordinate: start))
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: end))
-        request.transportType = .automobile
-
-        guard let response = try? await MKDirections(request: request).calculate(),
-              let line = response.routes.first?.polyline else { return [] }
-
-        var coords = [CLLocationCoordinate2D](repeating: .init(),
-                                              count: line.pointCount)
-        line.getCoordinates(&coords, range: NSRange(location: 0, length: line.pointCount))
-        // Thinned before it is drawn. A cross-country route is thousands of points,
-        // and at poster scale every one past a few hundred is sub-pixel work that
-        // only slows the render down.
-        let stride = max(1, coords.count / 240)
-        return coords.enumerated().compactMap { $0.offset % stride == 0 ? $0.element : nil }
-    }
 }
 
 // MARK: - Drawing it

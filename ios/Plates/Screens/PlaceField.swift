@@ -445,34 +445,14 @@ struct RouteMap: View {
         "\(start.latitude),\(start.longitude)>\(end.latitude),\(end.longitude)"
     }
 
-    /// Asks MapKit for driving directions and flattens the answer to what the map
-    /// preview needs. Returns nil when no road route exists.
+    /// Through `RouteCache`, which the share poster also uses — the two were each
+    /// asking MapKit for the same road, so opening a trip's record and then sharing
+    /// it fetched the whole route twice.
     private func fetchRoute() async -> (coords: [CLLocationCoordinate2D], summary: String)? {
-        let request = MKDirections.Request()
-        request.source = MKMapItem(placemark: MKPlacemark(coordinate: start))
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: end))
-        request.transportType = .automobile
-
-        guard let response = try? await MKDirections(request: request).calculate(),
-              let route = response.routes.first else { return nil }
-
-        let line = route.polyline
-        var coords = [CLLocationCoordinate2D](repeating: .init(), count: line.pointCount)
-        line.getCoordinates(&coords, range: NSRange(location: 0, length: line.pointCount))
-
-        // A cross-country route comes back with thousands of points, and at 340pt
-        // wide most of them land on the same pixel. Thinning keeps the Path cheap
-        // without any visible loss — the first and last are always kept so the line
-        // still meets both pins.
-        let maxPoints = 400
-        if coords.count > maxPoints {
-            let step = coords.count / maxPoints
-            var thinned = stride(from: 0, to: coords.count, by: step).map { coords[$0] }
-            if let last = coords.last { thinned.append(last) }
-            coords = thinned
+        guard let found = await RouteCache.shared.directions(from: start, to: end) else {
+            return nil
         }
-
-        return (coords, Self.summarise(route))
+        return (found.path, found.summary)
     }
 
     private static func summarise(_ route: MKRoute) -> String {
