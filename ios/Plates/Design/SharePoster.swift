@@ -57,6 +57,7 @@ struct SharePoster: View {
 
     var body: some View {
         HStack(spacing: 0) {
+            spine
             VStack(spacing: 0) {
                 header
                 grid
@@ -64,7 +65,6 @@ struct SharePoster: View {
                 footer
             }
             .frame(maxWidth: .infinity)
-            spine
         }
         .frame(width: Self.width)
         .background(Theme.ground)
@@ -89,23 +89,27 @@ struct SharePoster: View {
 
     private var spine: some View {
         ZStack {
-            // Rolled rather than flat: dark in the crease, catching the light across
-            // the curve, darkening again at the outer edge where the cover turns
-            // away. Four stops is the fewest that reads as round instead of striped,
-            // and they sit close together — a spine is one material catching light,
-            // not a set of stripes.
+            // Rolled rather than flat: dark at the outer edge where the cover turns
+            // away, catching the light across the curve, darkening again into the
+            // crease. Four stops is the fewest that reads as round instead of
+            // striped, and they sit close together — a spine is one material
+            // catching light, not a set of stripes.
+            //
+            // The dark end is on the left because the spine is on the left. This is
+            // the front of a book, and a front cover's binding is on the hand you
+            // hold it by.
             LinearGradient(
-                colors: [Self.leather.opacity(0.40), Self.leather.opacity(0.24),
-                         Self.leather.opacity(0.31), Self.leather.opacity(0.44)],
+                colors: [Self.leather.opacity(0.44), Self.leather.opacity(0.31),
+                         Self.leather.opacity(0.24), Self.leather.opacity(0.40)],
                 startPoint: .leading, endPoint: .trailing)
 
-            // The shadow the page casts into the gutter. On the inner edge, which is
-            // the side the light cannot reach.
+            // The shadow the page casts into the gutter. On the inner edge — the one
+            // against the page — which is the side the light cannot reach.
             HStack(spacing: 0) {
-                LinearGradient(colors: [Theme.ink.opacity(0.16), .clear],
+                Spacer(minLength: 0)
+                LinearGradient(colors: [.clear, Theme.ink.opacity(0.16)],
                                startPoint: .leading, endPoint: .trailing)
                     .frame(width: 12)
-                Spacer(minLength: 0)
             }
 
             // Binding bands, the way a hardback is stitched. Light on dark, so they
