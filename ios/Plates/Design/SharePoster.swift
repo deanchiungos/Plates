@@ -22,8 +22,9 @@ struct SharePoster: View {
     let title: String
     /// The line under the name — a route, or how long a book has been going.
     let subtitle: String?
-    let statesFound: Int
-    let platesFound: Int
+    /// The rarest thing on it, which is the one number nobody else's poster will
+    /// have. Nil when nothing has been collected yet.
+    let bestFind: (code: String, rarity: Int)?
     /// Every plate worth drawing, in the order the app draws them.
     let plates: [Plate]
     let found: Set<String>
@@ -38,15 +39,80 @@ struct SharePoster: View {
 
     private let columns = 6
 
+    // Counted here, from the very set the grid below draws, so a number in the
+    // header cannot disagree with the plates under it.
+    //
+    // This is not theoretical. The first version asked the collection for
+    // `bonusFound`, which is `region != .state` — and that includes the Canadian
+    // provinces, so a trip with two Ontario plates reported "2 bonus" and "2 Canada"
+    // about the same two plates, while the all-time poster counting the `Plate.bonus`
+    // catalogue said 0. Two definitions of one word, disagreeing in the same row.
+    private var statesFound: Int { count(Plate.states) }
+    private var bonusFound: Int { count(Plate.bonus) }
+    private var provincesFound: Int { count(Plate.provinces) }
+
+    private func count(_ region: [Plate]) -> Int {
+        region.filter { found.contains($0.code) }.count
+    }
+
     var body: some View {
-        VStack(spacing: 0) {
-            header
-            grid
-            if standings.count > 1 { spotters }
-            footer
+        HStack(spacing: 0) {
+            VStack(spacing: 0) {
+                header
+                grid
+                if standings.count > 1 { spotters }
+                footer
+            }
+            .frame(maxWidth: .infinity)
+            spine
         }
         .frame(width: Self.width)
         .background(Theme.ground)
+    }
+
+    /// The bound edge, so the page is a page out of something.
+    ///
+    /// A trip gets one as well as a book. The app's whole idea of a collection is an
+    /// album — debossed slots, mounted plates, a shelf you fill — and a trip's plates
+    /// end up in exactly that album, so a poster that looked like a loose sheet was
+    /// the one place the metaphor stopped. It costs nothing to carry it through.
+    ///
+    /// Drawn rather than shaded from an image: three bands and a gradient are enough
+    /// for the eye to read "spine", and the whole thing survives being scaled into a
+    /// Messages bubble, which a photographic texture would not.
+    private var spine: some View {
+        ZStack {
+            // Rolled rather than flat: dark in the crease, catching the light across
+            // the curve, darkening again at the outer edge where the cover turns
+            // away. Four stops is the fewest that reads as round instead of striped.
+            LinearGradient(
+                colors: [Theme.route.opacity(0.62), Theme.route.opacity(0.34),
+                         Theme.route.opacity(0.52), Theme.route.opacity(0.78)],
+                startPoint: .leading, endPoint: .trailing)
+
+            // The shadow the page casts into the gutter. On the inner edge, which is
+            // the side the light cannot reach.
+            HStack(spacing: 0) {
+                LinearGradient(colors: [Theme.ink.opacity(0.34), .clear],
+                               startPoint: .leading, endPoint: .trailing)
+                    .frame(width: 12)
+                Spacer(minLength: 0)
+            }
+
+            // Binding bands, the way a hardback is stitched. Light on dark, so they
+            // read as raised cord under the cloth rather than as gaps in it.
+            VStack(spacing: 0) {
+                Spacer(minLength: 0)
+                ForEach(0..<3, id: \.self) { index in
+                    Rectangle()
+                        .fill(Theme.ground.opacity(0.42))
+                        .frame(height: 10)
+                    if index < 2 { Spacer().frame(height: 52) }
+                }
+                Spacer(minLength: 0)
+            }
+        }
+        .frame(width: 34)
     }
 
     // MARK: - Pieces
@@ -65,27 +131,47 @@ struct SharePoster: View {
                     .foregroundStyle(Theme.inkMuted)
             }
 
-            HStack(spacing: 22) {
+            HStack(alignment: .top, spacing: 0) {
                 stat("\(statesFound)", "of 50 states")
-                stat("\(platesFound)", platesFound == 1 ? "plate" : "plates")
+                divider
+                stat("\(bonusFound)", "bonus")
+                divider
+                stat("\(provincesFound)", "Canada")
+                if let bestFind, let plate = Plate.plate(for: bestFind.code) {
+                    divider
+                    stat(plate.code, "rarest",
+                         tint: RarityTier.forRarity(bestFind.rarity).color)
+                }
             }
-            .padding(.top, 10)
+            .padding(.top, 12)
         }
         .padding(.top, 34)
         .padding(.horizontal, 30)
         .padding(.bottom, 22)
     }
 
-    private func stat(_ value: String, _ label: String) -> some View {
+    private func stat(_ value: String, _ label: String,
+                      tint: Color = Theme.ink) -> some View {
         VStack(spacing: 1) {
             Text(value)
-                .font(Theme.PlateFont.condensed(44))
+                .font(Theme.PlateFont.condensed(40))
                 .monospacedDigit()
-                .foregroundStyle(Theme.ink)
+                .foregroundStyle(tint)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
             Text(label)
-                .font(.plates(size: 12))
+                .font(.plates(size: 11.5))
                 .foregroundStyle(Theme.inkMuted)
         }
+        .frame(maxWidth: .infinity)
+    }
+
+    /// A hairline between the numbers rather than spacing alone. Four figures set in
+    /// the same face, side by side and evenly spaced, read as one long number.
+    private var divider: some View {
+        Rectangle()
+            .fill(Theme.line)
+            .frame(width: 1, height: 34)
     }
 
     private var grid: some View {
@@ -166,12 +252,12 @@ enum ShareablePoster {
         let index = collection.plateIndex()
         let people = collection.participants(from: players,
                                              me: DevicePlayer.resolve(from: players))
+        let seen = Set(everyPlate.map(\.code).filter { index.has($0) })
         return image(
             title: collection.name,
             subtitle: subtitle(for: collection),
-            statesFound: collection.statesFound,
-            platesFound: collection.platesFound,
-            found: Set(everyPlate.map(\.code).filter { index.has($0) }),
+            bestFind: rarest(in: seen, scoredBy: collection.rarity(of:)),
+            found: seen,
             // Only worth drawing when more than one person is on it. A book filled
             // alone and a trip driven alone both get the collection and nothing else.
             standings: people.count > 1 ? collection.standings(among: people) : []
@@ -191,8 +277,9 @@ enum ShareablePoster {
             subtitle: book.firstEverSighting.map {
                 "Since \($0.formatted(.dateTime.month(.abbreviated).year()))"
             },
-            statesFound: book.statesFound,
-            platesFound: book.totalFound,
+            // Scored against the national table, since a lifetime has no one route
+            // to judge distance from.
+            bestFind: rarest(in: book.foundCodes) { PlateRarity.rarity($0, on: nil) },
             found: book.foundCodes,
             standings: []
         )
@@ -200,16 +287,24 @@ enum ShareablePoster {
 
     private static let everyPlate = Plate.states + Plate.bonus + Plate.provinces
 
+    /// The rarest plate on it, by whatever rarity the caller judges with — a trip
+    /// scores against its own route, a lifetime against the national table.
+    private static func rarest(in found: Set<String>,
+                               scoredBy rarity: (String) -> Int) -> (code: String, rarity: Int)? {
+        found.map { (code: $0, rarity: rarity($0)) }
+            // Ties broken by code so two runs of the same collection cannot disagree
+            // about which plate was the best one.
+            .max { ($0.rarity, $1.code) < ($1.rarity, $0.code) }
+    }
+
     private static func image(title: String,
                               subtitle: String?,
-                              statesFound: Int,
-                              platesFound: Int,
+                              bestFind: (code: String, rarity: Int)?,
                               found: Set<String>,
                               standings: [(player: Player, score: Int)]) -> UIImage? {
         let poster = SharePoster(title: title,
                                  subtitle: subtitle,
-                                 statesFound: statesFound,
-                                 platesFound: platesFound,
+                                 bestFind: bestFind,
                                  plates: everyPlate,
                                  found: found,
                                  standings: standings)
