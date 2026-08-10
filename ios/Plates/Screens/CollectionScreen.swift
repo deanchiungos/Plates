@@ -30,6 +30,8 @@ struct CollectionScreen: View {
     /// The all-time lens. A view, not a container — you cannot collect into it, and
     /// switching to it deliberately does *not* change what the Drive screen fills.
     @State private var allTime = false
+    /// The one-pager, rendered on tap — see `ShareSheet`.
+    @State private var poster: PosterToShare?
     @State private var selected: String?
     @State private var creatingBook = false
     @State private var editingBook: Book?
@@ -105,6 +107,20 @@ struct CollectionScreen: View {
             // can fix, so it is worth one round trip to distinguish it from "waiting".
             .task { await CloudBackup.shared.checkAccount() }
             .toolbar {
+                // Sharing what is on screen, rather than making people open the
+                // editor to reach it. This tab *is* the collection; the album you are
+                // looking at is the thing you would want to send somebody.
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        poster = renderPoster().map(PosterToShare.init)
+                    } label: {
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                    .tint(Theme.route)
+                    .accessibilityLabel(showingAllTime
+                                        ? "Share your all-time collection"
+                                        : "Share this book")
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button { creatingBook = true } label: { Image(systemName: "plus") }
                         .tint(Theme.route)
@@ -128,6 +144,9 @@ struct CollectionScreen: View {
                             elsewhere: lifetime.entry(for: pick.code),
                             scopeName: scopeName)
         }
+        .sheet(item: $poster) { ready in
+            ShareSheet(items: [ready.image])
+        }
         .sheet(isPresented: $creatingBook) {
             BookEditor(book: nil, onClear: nil, onDelete: nil)
         }
@@ -143,6 +162,15 @@ struct CollectionScreen: View {
     private struct Pick: Identifiable {
         let code: String
         var id: String { code }
+    }
+
+    /// Whatever the screen is currently showing — the book, or the all-time lens.
+    /// The button shares what you are looking at, which is the only behaviour that
+    /// needs no explaining.
+    private func renderPoster() -> UIImage? {
+        if showingAllTime { return ShareablePoster.image(allTime: lifetime) }
+        guard let book = currentBook else { return nil }
+        return ShareablePoster.image(for: book, players: players)
     }
 
     // MARK: - Book

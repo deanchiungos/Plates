@@ -164,22 +164,55 @@ enum ShareablePoster {
     static func image(for collection: any PlateCollection,
                       players: [Player]) -> UIImage? {
         let index = collection.plateIndex()
-        let plates = Plate.states + Plate.bonus + Plate.provinces
         let people = collection.participants(from: players,
                                              me: DevicePlayer.resolve(from: players))
-
-        let poster = SharePoster(
+        return image(
             title: collection.name,
             subtitle: subtitle(for: collection),
             statesFound: collection.statesFound,
             platesFound: collection.platesFound,
-            plates: plates,
-            found: Set(plates.map(\.code).filter { index.has($0) }),
+            found: Set(everyPlate.map(\.code).filter { index.has($0) }),
             // Only worth drawing when more than one person is on it. A book filled
             // alone and a trip driven alone both get the collection and nothing else.
             standings: people.count > 1 ? collection.standings(among: people) : []
         )
+    }
 
+    /// The all-time lens, which is not a `PlateCollection` and never will be — you
+    /// cannot collect into it, which is the whole distinction. It is still the most
+    /// shareable thing in the app: everything anybody has ever spotted on this phone.
+    ///
+    /// No standings. A lifetime spans trips and books with different people on them,
+    /// and a leaderboard drawn across all of it would be comparing somebody's one
+    /// afternoon in the car against somebody else's four years.
+    static func image(allTime book: PlateBook) -> UIImage? {
+        image(
+            title: "All time",
+            subtitle: book.firstEverSighting.map {
+                "Since \($0.formatted(.dateTime.month(.abbreviated).year()))"
+            },
+            statesFound: book.statesFound,
+            platesFound: book.totalFound,
+            found: book.foundCodes,
+            standings: []
+        )
+    }
+
+    private static let everyPlate = Plate.states + Plate.bonus + Plate.provinces
+
+    private static func image(title: String,
+                              subtitle: String?,
+                              statesFound: Int,
+                              platesFound: Int,
+                              found: Set<String>,
+                              standings: [(player: Player, score: Int)]) -> UIImage? {
+        let poster = SharePoster(title: title,
+                                 subtitle: subtitle,
+                                 statesFound: statesFound,
+                                 platesFound: platesFound,
+                                 plates: everyPlate,
+                                 found: found,
+                                 standings: standings)
         let renderer = ImageRenderer(content: poster)
         renderer.scale = 2
         return renderer.uiImage
@@ -190,10 +223,22 @@ enum ShareablePoster {
     /// way to look at the thing without a share sheet and a finger. Same code path as
     /// the real one — if this renders, so does what people send.
     static func exportForInspection() -> String {
-        guard let target = PlatesStore.currentTarget() else { return "no target" }
         let players = (try? PlatesStore.context.fetch(FetchDescriptor<Player>())) ?? []
         let started = Date()
-        guard let image = image(for: target, players: players) else { return "render failed" }
+        // `-poster alltime` covers the lens, which is not a collection and so takes
+        // the other entry point entirely.
+        let args = ProcessInfo.processInfo.arguments
+        let wantsAllTime = args.firstIndex(of: "-poster")
+            .map { $0 + 1 < args.count && args[$0 + 1] == "alltime" } ?? false
+        let made: UIImage?
+        if wantsAllTime {
+            let all = (try? PlatesStore.context.fetch(FetchDescriptor<Sighting>())) ?? []
+            made = image(allTime: PlateBook(sightings: all))
+        } else {
+            guard let target = PlatesStore.currentTarget() else { return "no target" }
+            made = image(for: target, players: players)
+        }
+        guard let image = made else { return "render failed" }
         let drew = Date().timeIntervalSince(started)
         guard let data = image.pngData() else { return "encode failed" }
         let url = FileManager.default
