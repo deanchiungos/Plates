@@ -41,6 +41,7 @@ enum PartyMergeCheck {
             try closingATripKeepsWhatItShould()
             try factsNeverRelock()
             try remindersOnlyNudgeLiveTrips()
+            try deepLinksAreTakenOnce()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -393,6 +394,33 @@ enum PartyMergeCheck {
                   abs(nudge.fireAt.timeIntervalSince(expected)) < 2, true)
             check("and names the trip", nudge.body.contains("Live"), true)
         }
+    }
+
+    /// The widget's way back in.
+    ///
+    /// Whether the app delegate is handed the URL at all cannot be checked from
+    /// here — `simctl openurl` raises an "Open in Plates?" confirmation that a real
+    /// widget tap does not, and there is no way to press it without a finger. What
+    /// *is* checkable is everything after: that only this app's URLs are claimed, and
+    /// that a destination is consumed once rather than re-navigating on every return
+    /// from the background.
+    @MainActor
+    private static func deepLinksAreTakenOnce() throws {
+        let link = DeepLink.shared
+        _ = link.take()
+
+        check("a foreign scheme is not ours",
+              link.receive(URL(string: "https://example.com/collect")!), false)
+        check("nor is an unknown host",
+              link.receive(URL(string: "plates://somewhere")!), false)
+        check("nothing pending after either", link.pending == nil, true)
+
+        check("the widget's URL is claimed",
+              link.receive(URL(string: "plates://collect")!), true)
+        check("and is pending", link.pending != nil, true)
+        check("taking it gives the destination", link.take() != nil, true)
+        check("and clears it", link.pending == nil, true)
+        check("a second take gives nothing", link.take() == nil, true)
     }
 
     /// Rules are only rules if they reach the other phones.

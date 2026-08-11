@@ -39,6 +39,7 @@ enum TripClosing {
 
         // A finished trip is not an abandoned one, so its reminder goes.
         TripReminders.shared.refresh(in: context)
+        WidgetData.write(from: context)
     }
 
     /// Throwing away this device's copy of somebody else's trip.
@@ -66,6 +67,7 @@ enum TripClosing {
         }
 
         TripReminders.shared.refresh(in: context)
+        WidgetData.write(from: context)
     }
 
     /// Whether this phone has anything of its own invested in a trip.

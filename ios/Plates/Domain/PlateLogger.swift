@@ -61,6 +61,7 @@ enum PlateLogger {
         // now measured from the wrong moment. Rebuilt rather than patched — see
         // `TripReminders`. No-op unless somebody has turned reminders on.
         TripReminders.shared.refresh(in: context)
+        WidgetData.write(from: context)
 
         return Outcome(isFirstFind: isFirstFind,
                        tier: RarityTier.forRarity(collection.rarity(of: plate.code)),

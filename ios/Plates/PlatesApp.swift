@@ -1,4 +1,5 @@
 import CloudKit
+import Observation
 import SwiftUI
 import SwiftData
 import UIKit
@@ -17,6 +18,43 @@ final class PlatesAppDelegate: NSObject, UIApplicationDelegate {
             await SharedBookSync.shared.accept(metadata, into: PlatesStore.context)
         }
     }
+
+    /// The widget's `plates://collect`, and now the second thing this delegate is
+    /// for. SwiftUI's `onOpenURL` is the obvious home for it and simply never fired
+    /// — with a `UIApplicationDelegateAdaptor` in place the URL arrives here instead,
+    /// and a modifier that is never called is worse than no modifier, because it
+    /// looks like the feature exists.
+    func application(_ app: UIApplication, open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        DeepLink.shared.receive(url)
+    }
+}
+
+/// Where a URL waits for the view that can act on it.
+///
+/// The delegate is outside the view hierarchy and the tab selection lives inside it,
+/// so the two need somewhere to meet. One-shot: `RootView` takes the destination and
+/// clears it, so coming back from the background does not silently re-navigate.
+@MainActor
+@Observable
+final class DeepLink {
+    static let shared = DeepLink()
+
+    enum Destination { case collect }
+
+    private(set) var pending: Destination?
+
+    @discardableResult
+    func receive(_ url: URL) -> Bool {
+        guard url.scheme == "plates", url.host == "collect" else { return false }
+        pending = .collect
+        return true
+    }
+
+    func take() -> Destination? {
+        defer { pending = nil }
+        return pending
+    }
 }
 
 @main
@@ -34,6 +72,7 @@ struct PlatesApp: App {
         // Rebuilt at launch: trips may have been finished on another device, or the
         // permission revoked in Settings while the app was away.
         TripReminders.shared.refresh(in: PlatesStore.context)
+        WidgetData.write(from: PlatesStore.context)
 
         #if DEBUG
         // `-partyMergeCheck` verifies that a party's sightings rebuild the same game

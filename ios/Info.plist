@@ -45,6 +45,22 @@
 	-->
 	<key>CKSharingSupported</key>
 	<true/>
+	<!--
+	  The widget's way back in. Tapping it opens `plates://collect`, which routes to
+	  the Game tab — the second of the two things a widget was asked to do, and the
+	  reason the scheme exists at all. Nothing else in the app publishes a URL.
+	-->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.eggeppel.plates</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>plates</string>
+			</array>
+		</dict>
+	</array>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Voice mode listens while you drive so you can call out plates instead of tapping them.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>

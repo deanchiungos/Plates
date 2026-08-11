@@ -43,6 +43,16 @@ struct RootView: View {
 
     @State private var router = Router(tab: RootView.initialTab)
     @State private var popup = PopupHost()
+    private let deepLink = DeepLink.shared
+
+    /// Taken, not read. A destination left sitting would re-navigate every time the
+    /// app came back from the background.
+    private func consumeDeepLink() {
+        switch deepLink.take() {
+        case .collect: router.tab = RootView.gameTab
+        case nil: break
+        }
+    }
 
     /// The popup layer sits outside the `TabView`, so a prompt covers the tab bar
     /// instead of floating above it. Anything inside a tab reaches it through the
@@ -54,6 +64,14 @@ struct RootView: View {
         }
         .environment(popup)
         .environment(router)
+        // The widget's one tap. `plates://collect` puts the grid up, which is the
+        // whole promise of tapping a progress bar on a home screen — anything else
+        // would be an app launch with extra steps.
+        //
+        // Watched rather than handled: the URL arrives at the app delegate, which is
+        // outside this hierarchy, so `DeepLink` is where the two meet.
+        .onChange(of: deepLink.pending) { _, _ in consumeDeepLink() }
+        .onAppear { consumeDeepLink() }
     }
 
     /// Where the More tab sits — the `Router` needs to name it to jump there.
