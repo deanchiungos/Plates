@@ -81,6 +81,9 @@ struct PlatesApp: App {
         if PartyMergeCheck.isRequested { PartyMergeCheck.run() }
         // `-poster` renders the share image and writes it out, so it can be looked
         // at without driving a share sheet.
+        if ProcessInfo.processInfo.arguments.contains("-remindersTest") {
+            Task { @MainActor in await TripReminders.shared.test(in: PlatesStore.context) }
+        }
         if ProcessInfo.processInfo.arguments.contains("-poster") {
             Task { @MainActor in print(await ShareablePoster.exportForInspection()) }
         }

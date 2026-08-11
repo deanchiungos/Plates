@@ -104,6 +104,34 @@ final class TripReminders {
         }
     }
 
+    #if DEBUG
+    /// `-remindersTest` reports what is actually queued with the system and then
+    /// schedules one ten seconds out.
+    ///
+    /// The 24-hour fuse is the whole point of the feature and hopeless to verify —
+    /// "wait a day and hope" is not a test. This goes through `schedule` unchanged,
+    /// so what arrives is the real notification with a shorter trigger, and it
+    /// compiles out of Release.
+    func test(in context: ModelContext) async {
+        let pending = await centre.pendingNotificationRequests()
+        print("[reminders] enabled=\(isEnabled) allowed=\(await systemAllows())")
+        print("[reminders] \(pending.count) queued")
+        for request in pending {
+            let seconds = (request.trigger as? UNTimeIntervalNotificationTrigger)?.timeInterval ?? 0
+            print("[reminders]   \(request.identifier) in \(Int(seconds / 3600))h — \(request.content.body)")
+        }
+
+        let trips = (try? context.fetch(FetchDescriptor<Trip>())) ?? []
+        guard var soon = Self.plan(for: trips, now: Date()).first else {
+            print("[reminders] nothing to nudge about")
+            return
+        }
+        soon.fireAt = Date().addingTimeInterval(10)
+        schedule(soon)
+        print("[reminders] scheduled a copy 10s out: \(soon.body)")
+    }
+    #endif
+
     private func schedule(_ nudge: Nudge) {
         let content = UNMutableNotificationContent()
         content.title = nudge.title
@@ -114,7 +142,10 @@ final class TripReminders {
             identifier: "trip-\(nudge.tripID.uuidString)",
             content: content,
             trigger: UNTimeIntervalNotificationTrigger(
-                timeInterval: max(60, nudge.fireAt.timeIntervalSinceNow), repeats: false))
+                // Floored at a second rather than a minute so `-remindersTest` can
+                // use a short fuse without a special path of its own; a real nudge is
+                // a day out and never comes near it.
+                timeInterval: max(1, nudge.fireAt.timeIntervalSinceNow), repeats: false))
         centre.add(request)
     }
 }
