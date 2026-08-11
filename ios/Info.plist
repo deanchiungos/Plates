@@ -37,6 +37,16 @@
 		<string>_plates-party._udp</string>
 	</array>
 	<!--
+	  Export compliance, answered once here instead of per-upload.
+	
+	  "Non-exempt" is the operative word: the app does use encryption — MCSession is
+	  created with `.required`, and CloudKit is HTTPS — but both are Apple's own, which
+	  is exempt. There is no CryptoKit, no CommonCrypto and no Security framework in
+	  the project. Without this key every TestFlight upload stops and asks.
+	-->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<!--
 	  Required before iOS will offer this app as the thing that opens a CloudKit
 	  share link. Without it the recipient taps the invitation and is told they need
 	  a newer version of the app — which is not a version problem at all, and gives
