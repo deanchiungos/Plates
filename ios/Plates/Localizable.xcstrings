@@ -118,6 +118,9 @@
     "A book keeps going. There is no route and no finish line — you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have." : {
 
     },
+    "A nudge if a trip goes a day without a plate." : {
+
+    },
     "A trip is one drive with a route and a finish. A book you just keep adding to." : {
 
     },
@@ -635,6 +638,9 @@
 
     },
     "Undo" : {
+
+    },
+    "Unfinished trips" : {
 
     },
     "Voice mode" : {

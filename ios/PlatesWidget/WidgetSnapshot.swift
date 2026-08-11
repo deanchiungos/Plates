@@ -19,7 +19,13 @@ struct WidgetSnapshot: Codable {
 
     var tripName: String?
     var tripStates: Int = 0
+    /// "trip" or "book". The app can be filling either, and calling a book a trip is
+    /// the widget describing a different app from the one on the phone.
+    var targetKind: String = "trip"
     var tripLastPlate: Date?
+    var foundCodes: [String] = []
+    var bestCode: String?
+    var bestRarity: Int = 0
 
     var lastTripName: String?
     var lastTripStates: Int = 0
@@ -48,25 +54,37 @@ struct WidgetSnapshot: Codable {
     /// filled, the one most recently finished, and a lifetime total that is always
     /// true even on a phone that has never run a trip at all.
     enum Headline {
-        case active(name: String, states: Int, lastPlate: Date?)
+        case active(name: String, states: Int, lastPlate: Date?, kind: String)
         case recent(name: String, states: Int)
         case lifetime(states: Int, plates: Int)
     }
 
     var headline: Headline {
         if let tripName { return .active(name: tripName, states: tripStates,
-                                         lastPlate: tripLastPlate) }
+                                         lastPlate: tripLastPlate, kind: targetKind) }
         if let lastTripName { return .recent(name: lastTripName, states: lastTripStates) }
         return .lifetime(states: lifetimeStates, plates: lifetimePlates)
+    }
+
+    var states: Int {
+        switch headline {
+        case .active(_, let states, _, _), .recent(_, let states): return states
+        case .lifetime(let states, _): return states
+        }
     }
 
     /// The placeholder WidgetKit draws in the gallery and while a real one loads.
     /// Plausible numbers rather than zeroes, so nobody picks the widget believing it
     /// will always look empty.
-    static let sample = WidgetSnapshot(tripName: "Summer Roadtrip",
-                                       tripStates: 21,
-                                       tripLastPlate: Date(),
-                                       lifetimeStates: 33,
-                                       lifetimePlates: 36,
-                                       updatedAt: Date())
+    static let sample = WidgetSnapshot(
+        tripName: "Summer Roadtrip",
+        tripStates: 21,
+        tripLastPlate: Date(),
+        foundCodes: ["AK", "AZ", "AR", "CA", "CO", "HI", "ID", "IL", "KS", "MO",
+                     "MT", "NE", "NV", "NM", "NY", "OK", "OR", "TX", "UT", "WA", "WY"],
+        bestCode: "AK",
+        bestRarity: 9,
+        lifetimeStates: 33,
+        lifetimePlates: 36,
+        updatedAt: Date())
 }
