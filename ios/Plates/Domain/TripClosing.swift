@@ -36,6 +36,9 @@ enum TripClosing {
         // be a radio running for a game nobody can play. The goodbye goes out first,
         // which is what stops everyone else hunting for a host that has stopped.
         if PartySession.isPartying(trip) { PartySession.shared?.leave() }
+
+        // A finished trip is not an abandoned one, so its reminder goes.
+        TripReminders.shared.refresh(in: context)
     }
 
     /// Throwing away this device's copy of somebody else's trip.
@@ -61,6 +64,8 @@ enum TripClosing {
         if UserDefaults.standard.string(forKey: TripSelection.key) == id.uuidString {
             UserDefaults.standard.set("", forKey: TripSelection.key)
         }
+
+        TripReminders.shared.refresh(in: context)
     }
 
     /// Whether this phone has anything of its own invested in a trip.

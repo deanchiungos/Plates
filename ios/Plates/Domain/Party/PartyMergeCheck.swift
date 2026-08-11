@@ -40,6 +40,7 @@ enum PartyMergeCheck {
             try sharedBooksRoundTripThroughCloudKitRecords()
             try closingATripKeepsWhatItShould()
             try factsNeverRelock()
+            try remindersOnlyNudgeLiveTrips()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -337,6 +338,61 @@ enum PartyMergeCheck {
         check("every fact ends up unlocked", high, total)
         check("and stays unlocked", FactBook.seenFacts(for: code).count, total)
         FactBook.reset()
+    }
+
+    /// Which trips earn a reminder, and when.
+    ///
+    /// Delivery needs a permission grant no launch argument can arrange, so the part
+    /// that is checked is the part that can be wrong: an unstarted trip nagging
+    /// somebody, a finished one still pending, or a long-cold trip firing the instant
+    /// reminders are switched on.
+    @MainActor
+    private static func remindersOnlyNudgeLiveTrips() throws {
+        let store = try makeStore()
+        let now = Date()
+        let player = Player(name: "Ada", colorIndex: 0)
+        store.insert(player)
+
+        func trip(_ name: String, lastSeen: TimeInterval?) -> Trip {
+            let t = Trip(name: name)
+            store.insert(t)
+            if let lastSeen {
+                let s = Sighting(plateCode: "NJ", trip: t, player: player,
+                                 spottedAt: now.addingTimeInterval(-lastSeen))
+                store.insert(s)
+            }
+            return t
+        }
+
+        let live = trip("Live", lastSeen: 60 * 60)          // an hour ago
+        let empty = trip("Never started", lastSeen: nil)
+        let cold = trip("Long cold", lastSeen: 8 * 24 * 3600)
+        let done = trip("Finished", lastSeen: 60 * 60)
+        done.endedAt = now
+        let filed = trip("Archived", lastSeen: 60 * 60)
+        filed.archivedAt = now
+        try? store.save()
+
+        let all = [live, empty, cold, done, filed]
+        let planned = TripReminders.plan(for: all, now: now)
+
+        check("only the live trip is nudged", planned.map(\.tripID), [live.id])
+        check("an unstarted trip is left alone",
+              planned.contains { $0.tripID == empty.id }, false)
+        check("a trip that went cold long ago does not fire on sight",
+              planned.contains { $0.tripID == cold.id }, false)
+        check("a finished trip is not abandoned",
+              planned.contains { $0.tripID == done.id }, false)
+        check("nor is an archived one",
+              planned.contains { $0.tripID == filed.id }, false)
+
+        // Twenty-four hours after the last plate, not after the switch was flipped.
+        if let nudge = planned.first {
+            let expected = now.addingTimeInterval(TripReminders.quiet - 3600)
+            check("it fires a day after the last plate",
+                  abs(nudge.fireAt.timeIntervalSince(expected)) < 2, true)
+            check("and names the trip", nudge.body.contains("Live"), true)
+        }
     }
 
     /// Rules are only rules if they reach the other phones.

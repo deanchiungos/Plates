@@ -31,6 +31,9 @@ struct PlatesApp: App {
         container = PlatesStore.container
         PlatesStore.seedIfNeeded()
         Theme.applyToSystemControls()
+        // Rebuilt at launch: trips may have been finished on another device, or the
+        // permission revoked in Settings while the app was away.
+        TripReminders.shared.refresh(in: PlatesStore.context)
 
         #if DEBUG
         // `-partyMergeCheck` verifies that a party's sightings rebuild the same game

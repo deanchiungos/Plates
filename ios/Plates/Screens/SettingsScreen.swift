@@ -23,6 +23,10 @@ struct SettingsScreen: View {
     @Query(sort: \Player.joinedAt) private var players: [Player]
     @State private var editingMe = false
     @State private var haptics = Haptics.isOn
+    @State private var reminders = TripReminders.shared.isEnabled
+    /// Permission can be withdrawn in Settings long after it was granted here, so
+    /// the row asks the system rather than trusting its own switch.
+    @State private var remindersBlocked = false
 
     var body: some View {
         ZStack {
@@ -34,6 +38,7 @@ struct SettingsScreen: View {
                     othersCard
                     backupCard
                     locationCard
+                    remindersCard
                     voiceCard
                     feedbackCard
                     version
@@ -243,6 +248,55 @@ struct SettingsScreen: View {
     private var locationTitle: String {
         if !location.hasBeenAsked { return "Not asked yet" }
         return location.isAuthorized ? "On while the app is open" : "Off"
+    }
+
+    // MARK: - Reminders
+
+    /// The only notification the app sends, and it is off until somebody asks for
+    /// it. See `TripReminders` for why this is a switch rather than a prompt.
+    private var remindersCard: some View {
+        SettingsGroup("Reminders") {
+            Toggle(isOn: Binding(get: { reminders },
+                                 set: { want in setReminders(want) })) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Unfinished trips")
+                        .font(.plates(size: 15, weight: .semibold))
+                        .foregroundStyle(Theme.ink)
+                    Text("A nudge if a trip goes a day without a plate.")
+                        .font(.plates(size: 12))
+                        .foregroundStyle(Theme.inkMuted)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            .tint(Theme.route)
+            .padding(14)
+
+            if remindersBlocked {
+                openSettings("Notifications are off in Settings")
+            }
+        }
+        .task {
+            // Asked on appear, so a permission revoked elsewhere shows up here
+            // rather than leaving a switch that quietly does nothing.
+            guard reminders else { return }
+            remindersBlocked = await !TripReminders.shared.systemAllows()
+        }
+    }
+
+    private func setReminders(_ want: Bool) {
+        Haptics.selection()
+        guard want else {
+            TripReminders.shared.disable()
+            reminders = false
+            remindersBlocked = false
+            return
+        }
+        Task {
+            let granted = await TripReminders.shared.enable()
+            reminders = granted
+            remindersBlocked = !granted
+            if granted { TripReminders.shared.refresh(in: context) }
+        }
     }
 
     // MARK: - Voice
