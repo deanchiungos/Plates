@@ -197,10 +197,23 @@ private struct ProgressDot: View {
     let tier: RarityTier
     let isFound: Bool
 
-    /// Legendary is drawn a point wider than the rest. At this size a point is a
-    /// seventh of the dot, which is plenty — and it is the one tier where the mark is
-    /// the point of the tile rather than a footnote on it.
-    private var size: CGFloat { isFound && tier == .legendary ? 8 : 7 }
+    /// The top two tiers are drawn wider than the rest. At this size a point is a
+    /// seventh of the dot, which is plenty — and these are the tiers where the mark
+    /// is the point of the tile rather than a footnote on it.
+    ///
+    /// Mythic used to be excluded from this and from the outer glow below, both of
+    /// which tested `== .legendary`. The crimson dot came out *smaller and dimmer*
+    /// than the gold one under it, so the rarest thing on the grid was the quietest
+    /// mark on it — and since mythic is a different colour rather than one more step
+    /// up the ramp, size and glow are the only cues left saying it outranks gold.
+    private var size: CGFloat {
+        guard isFound else { return 7 }
+        switch tier {
+        case .mythic:    return 9
+        case .legendary: return 8
+        default:         return 7
+        }
+    }
 
     var body: some View {
         ZStack {
@@ -211,7 +224,7 @@ private struct ProgressDot: View {
                                          startRadius: 0,
                                          endRadius: size * 0.85))
                     .shadow(color: tier.color.opacity(0.9), radius: tier.glowRadius)
-                    .shadow(color: tier == .legendary ? tier.color.opacity(0.55) : .clear,
+                    .shadow(color: tier >= .legendary ? tier.color.opacity(0.55) : .clear,
                             radius: tier.glowRadius * 1.9)
             }
 

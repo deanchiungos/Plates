@@ -49,6 +49,12 @@ struct RegionMapView<G: MapGeometry>: View {
     let accessibilityTitle: String
     let foundCount: Int
 
+    /// Which regions are lit, and how brightly. Nil for everything that sits still.
+    ///
+    /// The screen decides, not the map — the rule is "collected, and epic or better",
+    /// and it has to be the same rule in both modes. See `MapScreen.spotlight`.
+    var spotlight: (String) -> RarityTier? = { _ in nil }
+
     /// Thins the rarity band for this map.
     ///
     /// The band is tuned against the smooth, chunky outlines of the lower 48. Canada
@@ -103,7 +109,16 @@ struct RegionMapView<G: MapGeometry>: View {
             let rect = mapRect(in: geo.size)
             let shift = liveOffset(in: rect)
 
-            Canvas { ctx, size in
+            // Paused, not absent, when nothing is lit — which is most of the time. A
+            // fresh trip has collected nothing, so there is nothing to animate and
+            // the map costs exactly what it did before this feature existed.
+            let moving = !lit.isEmpty
+
+            TimelineView(.animation(minimumInterval: Self.frameInterval,
+                                    paused: !moving)) { tl in
+              let time = moving ? tl.date.timeIntervalSinceReferenceDate : 0
+
+              Canvas { ctx, size in
                 // Zooming inside the context rather than with `.scaleEffect` on the
                 // view: the latter magnifies an already-rasterised bitmap, and Rhode
                 // Island turns to mush at 4x. Transforming here re-runs the vectors at
@@ -145,6 +160,14 @@ struct RegionMapView<G: MapGeometry>: View {
                                 }
                             }
                         }
+                    }
+
+                    // The rare ones, lit. After every fill so a neighbour cannot
+                    // paint over a halo, before the selection ring so tapping a
+                    // legendary region still reads as selected rather than as
+                    // whatever the light happens to be doing.
+                    if moving {
+                        drawSpotlights(&layer, size: size, rect: rect, at: time)
                     }
 
                     // Selection is drawn last, and as a *centred* stroke on the
@@ -203,6 +226,7 @@ struct RegionMapView<G: MapGeometry>: View {
                     drawCallouts(&ctx, size: size, mapRect: rect)
                     ctx.opacity = 1
                 }
+              }
             }
             .contentShape(Rectangle())
             // Pinch stays live at every zoom. Two fingers never mean "scroll the
@@ -479,5 +503,271 @@ struct RegionMapView<G: MapGeometry>: View {
         let narrow = min(box.width, box.height) * scale
         guard narrow >= size.width * 0.035 else { return 0 }
         return min(asked, narrow * 0.2)
+    }
+
+    // MARK: - Lighting the rare ones
+
+    /// Every region that should be moving, resolved once per render rather than per
+    /// frame. Empty is the common case and the one worth being fast: a fresh trip has
+    /// collected nothing, so there is nothing to light and no timeline to run.
+    fileprivate var lit: [(code: String, tier: RarityTier)] {
+        G.codes.compactMap { code in spotlight(code).map { (code, $0) } }
+    }
+
+    /// Frames per second for the lighting.
+    ///
+    /// Deliberately 30 and not the display's own rate. The map redraws all 52 regions
+    /// per frame — that is the cost of `Canvas`, which has no scene graph to leave
+    /// alone — so on a 120 Hz phone an unthrottled timeline would quadruple the work
+    /// of the whole screen to turn a light around seven outlines. Nothing here moves
+    /// fast enough to show the difference: the quickest cycle is a five-second
+    /// rotation, which travels 2.4° in a 30 Hz frame.
+    fileprivate static var frameInterval: Double { 1.0 / 30.0 }
+
+    /// One rotation of the conic light, in seconds. Legendary turns; mythic turns
+    /// twice, in opposite directions, at speeds that do not divide into each other so
+    /// the two sets of lobes never settle into a pattern.
+    private static var legendaryLap: Double { 4.5 }
+    private static var mythicLap: Double { 5.0 }
+    private static var mythicCounterLap: Double { 7.0 }
+
+    /// How far apart, in seconds, two regions' clocks can be set.
+    ///
+    /// Longer than the longest cycle here, so the offsets spread across a full turn of
+    /// every effect rather than bunching within one.
+    private static var spread: Double { 12 }
+
+    /// A region's own place in the cycle, as a 0..<`spread` offset applied to the clock
+    /// before anything is derived from it.
+    ///
+    /// Without this every lit region breathes, rotates and gleams on the same beat,
+    /// and seven states flashing in unison reads as one blinking UI element rather
+    /// than as seven things each doing its own thing. Offsetting the *time* rather
+    /// than each effect separately keeps a single region internally coherent — its
+    /// glow and its gleam still belong to each other — while no two regions agree.
+    ///
+    /// Deliberately not `hashValue`: Swift seeds that per process, so the map would
+    /// deal itself a different set of offsets on every launch. FNV-1a over the code's
+    /// bytes gives the same answer forever, which means Alaska has a *character*
+    /// rather than a random draw.
+    private static func phase(_ code: String) -> Double {
+        var h: UInt64 = 14695981039346656037
+        for byte in code.utf8 { h = (h ^ UInt64(byte)) &* 1099511628211 }
+        return Double(h % 997) / 997 * spread
+    }
+
+    /// A conic gradient with `count` bright lobes evenly spaced around the turn.
+    ///
+    /// Built as stops rather than animated as a dash pattern, which is the whole
+    /// point: a dash offset that slides along the path is how marching ants are
+    /// drawn, and it reads as one. Rotating the light instead leaves the border still
+    /// and lit, and only the brightness travels.
+    private static func lobes(_ count: Int, _ color: Color,
+                              hot: Color, spread: Double) -> Gradient {
+        var stops: [Gradient.Stop] = []
+        for i in 0..<count {
+            let base = Double(i) / Double(count)
+            stops.append(.init(color: color.opacity(0), location: base))
+            stops.append(.init(color: color.opacity(0.55), location: base + spread * 0.3))
+            stops.append(.init(color: hot, location: base + spread * 0.5))
+            stops.append(.init(color: color.opacity(0.55), location: base + spread * 0.7))
+            stops.append(.init(color: color.opacity(0), location: base + spread))
+        }
+        stops.append(.init(color: color.opacity(0), location: 1))
+        return Gradient(stops: stops)
+    }
+
+    /// Lighting width for a region too small for `band` to allow anything at all.
+    ///
+    /// `band` returns zero below a few points across, and that is right for a *band*:
+    /// a band is drawn inside the outline, so on a shape that thin the two sides meet
+    /// and the fill disappears underneath. The lighting is mostly *outside* the
+    /// outline and has no such problem — but it reused the same test as a yes/no
+    /// gate, so eleven regions were excluded from the effect entirely. Hawaii and
+    /// Puerto Rico sat there as flat crimson while Alaska and Nunavut turned;
+    /// Vermont, P.E.I., Rhode Island, Delaware, Massachusetts, Connecticut, New
+    /// Hampshire, New Jersey and D.C. did the same whenever they were epic or above.
+    /// A tier you cannot see is not a tier, and a rule that quietly exempts the
+    /// smallest regions punishes exactly the plates that are hardest to catch.
+    ///
+    /// The zero is still right for one case, which is why this is not simply a lower
+    /// threshold: a *speck belonging to a larger region*. Nunavut is nineteen islands
+    /// around one enormous landmass, and lighting all nineteen is how the Arctic
+    /// became a solid blob. So this applies only when nothing in the region cleared
+    /// the bar — a region with a mainland still lights the mainland alone.
+    ///
+    /// Scaled to the shape, with a floor so a speck still reads and a ceiling so the
+    /// aura around Rhode Island cannot be the size of Rhode Island.
+    private func minimumGlow(for path: Path, in size: CGSize) -> CGFloat {
+        let box = path.boundingRect
+        let narrow = min(box.width, box.height) * scale
+        return min(max(size.width * 0.004, narrow * 0.35), size.width * 0.012)
+    }
+
+    /// The whole effect for a region small enough that `band` allowed it nothing:
+    /// an aura, and nothing else.
+    ///
+    /// The full treatment is three strokes and a sweep, all of them drawn *over* the
+    /// fill. On Texas that is a border. On Puerto Rico, six points tall, it is the
+    /// entire island — the first attempt at this turned Hawaii into a red scribble
+    /// and Puerto Rico into a smear, which is a worse answer than leaving them dark.
+    ///
+    /// So the effect degrades with the shape rather than switching off at a
+    /// threshold: large regions get the rotating lobes and the gleam, medium ones
+    /// lose the gleam, and these keep only the blurred halo. Then the fill goes back
+    /// on top, which is what makes it a halo at all — the light ends up outside the
+    /// coastline and the island stays an island.
+    private func aura(_ layer: inout GraphicsContext, over path: Path, code: String,
+                      tier: RarityTier, width w: CGFloat, opacity: Double) {
+        layer.drawLayer { glow in
+            glow.addFilter(.blur(radius: w * 1.7 / scale))
+            glow.stroke(path, with: .color(tier.color.opacity(opacity)),
+                        lineWidth: w * 2.6 / scale)
+        }
+        layer.fill(path, with: .color(fill(code)))
+        // A hairline so the coast still has an edge once the fill is back over the
+        // stroke that used to be its outline.
+        layer.stroke(path, with: .color(tier.color.opacity(0.75)),
+                     lineWidth: max(w * 0.35, 0.5) / scale)
+    }
+
+    /// Draws the lighting for every region that has earned it.
+    ///
+    /// Runs inside the same zoomed layer as the fills, so widths divide by `scale` for
+    /// the same reason the bands do — a halo that grew with the zoom would drown the
+    /// small regions at exactly the magnification you went in to see them at.
+    fileprivate func drawSpotlights(_ layer: inout GraphicsContext,
+                                    size: CGSize, rect: CGRect, at time: Double) {
+        for (code, tier) in lit {
+            let colour = tier.color
+            // Each region reads the same clock at its own offset — see `phase`. The
+            // islands of one region share it, so Hawaii pulses as a place rather than
+            // as eight unrelated flickers.
+            let clock = time + Self.phase(code)
+            let breathe = 0.30 + 0.48 * (0.5 - 0.5 * cos(clock * .pi * 2 / 3.2))
+            let throb = 0.34 + 0.58 * (0.5 - 0.5 * cos(clock * .pi * 2 / 3.4))
+            // The existing width rule, reused rather than reinvented — and reused for
+            // the *weight* of the lighting, not merely as a yes/no threshold.
+            //
+            // Fixed widths were tried first and Canada threw them out. `band` caps a
+            // line at a fifth of the shape's narrower dimension precisely so a stroke
+            // sized for Colorado cannot fill Baffin Island's fjords solid; lighting
+            // that ignored the cap did exactly that, and Nunavut came out a crimson
+            // blob with no land visible inside it. Everything below is a multiple of
+            // `w`, so a jagged ring lights itself as finely as it bands itself.
+            let asked = bandWidth(code, size) * bandScale
+            let paths = (G.outlines[code] ?? []).filter { $0.count > 2 }
+                                               .map { self.path($0, in: rect) }
+            let widths = paths.map { band(asked, for: $0, in: size, at: scale) }
+            // Whether any part of this region was big enough for `band` to allow.
+            // See `minimumGlow` for what happens when none of it was.
+            let hasMainland = widths.contains { $0 > 0 }
+
+            for (path, banded) in zip(paths, widths) {
+                // Too small for a band, and part of a region that has no larger piece
+                // to speak for it: an aura instead of the full treatment.
+                if banded == 0 {
+                    guard !hasMainland else { continue }
+                    aura(&layer, over: path, code: code, tier: tier,
+                         width: minimumGlow(for: path, in: size),
+                         opacity: tier >= .legendary ? throb : breathe)
+                    continue
+                }
+                let w = banded
+
+                let box = path.boundingRect
+                let centre = CGPoint(x: box.midX, y: box.midY)
+
+                switch tier {
+                case .epic:
+                    layer.drawLayer { glow in
+                        glow.addFilter(.blur(radius: w * 1.9 / scale))
+                        glow.stroke(path, with: .color(colour.opacity(breathe)),
+                                    lineWidth: w * 2.4 / scale)
+                    }
+
+                case .legendary, .mythic:
+                    let isMythic = tier == .mythic
+                    // A border that is always lit, so between lobes the region still
+                    // reads as special rather than blinking out.
+                    layer.drawLayer { glow in
+                        glow.addFilter(.blur(radius: w * 2.1 / scale))
+                        glow.stroke(path,
+                                    with: .color(colour.opacity(isMythic ? throb : 0.45)),
+                                    lineWidth: w * (isMythic ? 2.8 : 2.4) / scale)
+                    }
+                    layer.stroke(path, with: .color(colour.opacity(0.9)),
+                                 lineWidth: w * (isMythic ? 1.0 : 0.8) / scale)
+
+                    let turn = clock / (isMythic ? Self.mythicLap : Self.legendaryLap)
+                    layer.stroke(
+                        path,
+                        with: .conicGradient(
+                            Self.lobes(isMythic ? 4 : 3, colour,
+                                       hot: tier.highlight, spread: isMythic ? 0.10 : 0.12),
+                            center: centre,
+                            angle: .degrees(turn * 360)),
+                        lineWidth: w * (isMythic ? 1.7 : 1.6) / scale)
+
+                    // The second set, turning the other way. Only mythic gets it, and
+                    // it is what separates the two tiers: legendary rotates, mythic
+                    // interferes with itself.
+                    if isMythic {
+                        let back = -clock / Self.mythicCounterLap
+                        layer.stroke(
+                            path,
+                            with: .conicGradient(
+                                Self.lobes(3, colour, hot: tier.highlight, spread: 0.13),
+                                center: centre,
+                                angle: .degrees(back * 360)),
+                            lineWidth: w * 1.3 / scale)
+                    }
+
+                    gleam(&layer, over: path, box: box, tier: tier, at: clock, in: size)
+
+                default:
+                    break
+                }
+            }
+        }
+    }
+
+    /// A band of light crossing the fill, on a longer cycle than the rotation.
+    ///
+    /// Skipped on anything narrow: at a couple of dozen points across the sweep is one
+    /// frame of white over the whole shape, which reads as a flicker rather than a
+    /// gleam and is the most expensive thing here — a clip and a gradient fill per
+    /// region per frame.
+    private func gleam(_ layer: inout GraphicsContext, over path: Path, box: CGRect,
+                       tier: RarityTier, at time: Double, in size: CGSize) {
+        guard box.width * scale > size.width * 0.06 else { return }
+
+        let period = tier == .mythic ? 4.4 : 5.2
+        // Rests for the back half of the cycle, so it is an occasional glint rather
+        // than a windscreen wiper.
+        let t = (time.truncatingRemainder(dividingBy: period)) / period
+        guard t < 0.55 else { return }
+        let progress = t / 0.55
+
+        let width = max(box.width * 0.22, 6 / scale)
+        let travel = box.width + width * 2
+        let x = box.minX - width + travel * progress
+
+        layer.drawLayer { g in
+            g.clip(to: path)
+            let band = CGRect(x: x, y: box.minY - 1,
+                              width: width, height: box.height + 2)
+            g.fill(Path(band),
+                   with: .linearGradient(
+                    Gradient(stops: [
+                        .init(color: .white.opacity(0), location: 0),
+                        .init(color: tier.highlight.opacity(0.75), location: 0.45),
+                        .init(color: .white.opacity(0.9), location: 0.5),
+                        .init(color: tier.highlight.opacity(0.75), location: 0.55),
+                        .init(color: .white.opacity(0), location: 1),
+                    ]),
+                    startPoint: CGPoint(x: band.minX, y: band.midY),
+                    endPoint: CGPoint(x: band.maxX, y: band.midY)))
+        }
     }
 }

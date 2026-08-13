@@ -115,7 +115,7 @@ struct CollectionScreen: View {
                     Button {
                         preparingPoster = true
                         Task {
-                            poster = await renderPoster().map(PosterToShare.init)
+                            poster = await renderPoster()
                             preparingPoster = false
                         }
                     } label: {
@@ -155,7 +155,7 @@ struct CollectionScreen: View {
                             scopeName: scopeName)
         }
         .sheet(item: $poster) { ready in
-            ShareSheet(items: [ready.image])
+            ShareSheet(items: ready.activityItems)
         }
         .sheet(isPresented: $creatingBook) {
             BookEditor(book: nil, onClear: nil, onDelete: nil)
@@ -177,10 +177,10 @@ struct CollectionScreen: View {
     /// Whatever the screen is currently showing — the book, or the all-time lens.
     /// The button shares what you are looking at, which is the only behaviour that
     /// needs no explaining.
-    private func renderPoster() async -> UIImage? {
-        if showingAllTime { return ShareablePoster.image(allTime: lifetime) }
+    private func renderPoster() async -> PosterToShare? {
+        if showingAllTime { return ShareablePoster.poster(allTime: lifetime) }
         guard let book = currentBook else { return nil }
-        return await ShareablePoster.image(for: book, players: players)
+        return await ShareablePoster.poster(for: book, players: players)
     }
 
     // MARK: - Book
@@ -362,7 +362,7 @@ struct CollectionScreen: View {
             : book.sinceLabel
     }
 
-    private func dashedRow(_ title: String, symbol: String) -> some View {
+    private func dashedRow(_ title: LocalizedStringKey, symbol: String) -> some View {
         HStack(spacing: 8) {
             Image(systemName: symbol)
                 .font(.system(size: 13, weight: .bold))
@@ -395,7 +395,7 @@ struct CollectionScreen: View {
         )
     }
 
-    private func stat(_ value: String, _ label: String) -> some View {
+    private func stat(_ value: String, _ label: LocalizedStringKey) -> some View {
         VStack(spacing: 2) {
             Text(value)
                 .font(Theme.PlateFont.condensed(26))
@@ -426,7 +426,7 @@ struct CollectionScreen: View {
     /// Deleting the grid was the suggested fix and is the wrong one. The filled album
     /// is the reward for collecting; what needed changing is that it looked like the
     /// counter. So: a leaf of paper, and every plate mounted on it with corners.
-    private func section(_ title: String, _ plates: [Plate], _ b: PlateBook) -> some View {
+    private func section(_ title: LocalizedStringKey, _ plates: [Plate], _ b: PlateBook) -> some View {
         VStack(spacing: 10) {
             SectionHeader(title: title, detail: "\(b.found(in: plates)) / \(plates.count)")
 
@@ -482,7 +482,7 @@ struct CollectionScreen: View {
         }
 
         popup.present("Which book?",
-                      message: "Picking a book here changes what you are looking at, and which book Drive fills.") {
+                      message: "This changes the book you are looking at, and the one you collect into.") {
             PopupPicker(groups: [PopupPicker.Group(entries: entries)])
 
             PopupChoice(title: "All time",
@@ -512,8 +512,12 @@ struct CollectionScreen: View {
             let hasFolded = book.allSightings.contains { $0.trip != nil }
             popup.present(
                 "Empty \(book.name)?",
-                message: "\(count) plate\(count == 1 ? "" : "s") will be removed from this book and from your all-time count. The book itself stays."
-                    + (hasFolded ? " Plates folded in from trips go back to their trips and stay in your history." : "")
+                // Two whole messages rather than one with a clause appended. A
+                // key built by `+` is not a literal, so the compiler cannot see
+                // it and the catalog never learns it exists.
+                message: hasFolded
+                    ? "^[\(count) plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays. Plates folded in from trips go back to their trips and stay in your history."
+                    : "^[\(count) plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays."
             ) {
                 PopupButton(title: "Empty book", kind: .destructive) {
                     for sighting in book.allSightings {
@@ -536,7 +540,7 @@ struct CollectionScreen: View {
                 "Delete \(book.name)?",
                 message: count == 0
                     ? "The book is removed. Nothing else changes."
-                    : "The book is removed, but its \(count) plate\(count == 1 ? "" : "s") stay in your all-time count \u{2014} you did see them. Empty it first if you want them gone."
+                    : "The book is removed, but its ^[\(count) plate](inflect: true) stay in your all-time count. You did see them. Empty it first if you want them gone."
             ) {
                 PopupButton(title: "Delete book", kind: .destructive) {
                     let wasCurrent = book.id.uuidString == currentBookID
@@ -712,7 +716,7 @@ private struct BookEntryDetail: View {
                         }
 
                         if entry == nil {
-                            Text("Plates are checked off on the Drive screen.")
+                            Text("Tap a plate on the Game tab to collect it.")
                                 .font(.plates(size: 12.5))
                                 .foregroundStyle(Theme.inkMuted)
                         }
@@ -844,8 +848,8 @@ struct BookEditor: View {
                         }
 
                         Text(isNew
-                             ? "A book keeps going. There is no route and no finish line \u{2014} you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have."
-                             : "Plates in this book are checked off on the Drive screen.")
+                             ? "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have."
+                             : "Collect into this book from the Game tab.")
                             .font(.plates(size: 12.5))
                             .foregroundStyle(Theme.inkMuted)
                             .fixedSize(horizontal: false, vertical: true)
@@ -860,7 +864,7 @@ struct BookEditor: View {
                 }
             }
             .sheet(item: $poster) { ready in
-                ShareSheet(items: [ready.image])
+                ShareSheet(items: ready.activityItems)
             }
             .sheet(item: $sharing) { payload in
                 CloudShareSheet(share: payload.share,
@@ -881,8 +885,7 @@ struct BookEditor: View {
                         Button {
                             preparingPoster = true
                             Task {
-                                poster = await ShareablePoster.image(for: book, players: players)
-                                    .map(PosterToShare.init)
+                                poster = await ShareablePoster.poster(for: book, players: players)
                                 preparingPoster = false
                             }
                         } label: {
@@ -945,7 +948,7 @@ struct BookEditor: View {
         .buttonStyle(.plain)
     }
 
-    private func rowLabel(_ title: String, symbol: String, tint: Color) -> some View {
+    private func rowLabel(_ title: LocalizedStringKey, symbol: String, tint: Color) -> some View {
         HStack(spacing: 9) {
             Image(systemName: symbol)
                 .font(.system(size: 13, weight: .semibold))
@@ -1000,7 +1003,7 @@ extension BookEditor {
             if let entry {
                 Text(entry.isOwner
                      ? "You are sharing this book. Anything they add appears here, and anything you add appears for them."
-                     : "You are filling this book with its owner. It lives in their iCloud \u{2014} if they stop sharing it, your copy of the plates stays on this phone.")
+                     : "You are filling this book with its owner. It lives in their iCloud. If they stop sharing it, your copy of the plates stays on this phone.")
                     .font(.plates(size: 12.5))
                     .foregroundStyle(Theme.inkMuted)
                     .fixedSize(horizontal: false, vertical: true)

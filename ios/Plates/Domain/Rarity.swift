@@ -327,6 +327,69 @@ enum PlateRarity {
         return result
     }
 
+    // MARK: - Mythic
+
+    /// The rarity value nothing can reach by ranking. See `RarityTier.mythic`.
+    static let mythicValue = buckets.count + 1
+
+    /// Mythic wherever you are standing.
+    ///
+    /// Not a slice of the ranking, which is the point. Every other tier is "whatever
+    /// happens to land in these positions from here", so its membership changes with
+    /// the route — and a top tier that means something different in Denver than in
+    /// Boston cannot be a thing anybody brags about. These six are the regions the
+    /// model puts at the top from *everywhere*: run it from twelve cities spread
+    /// across the country and rank all 65 regions from each, and these never leave
+    /// the top eight. They are also, not coincidentally, the six you cannot drive to.
+    ///
+    /// Deliberately two US states and not three. Hawaii sits at median rank 2 and
+    /// Alaska at 4; the next state is Vermont at 15, which is two hours from Boston.
+    /// Everything below Alaska is rare for being *small* rather than unreachable,
+    /// which is a different thing and is what legendary already says.
+    static let mythicAlways: Set<String> = ["NU", "NT", "YT", "AK", "HI", "PR"]
+
+    /// The seventh slot: the rarest US state from wherever you actually are.
+    ///
+    /// The fixed six are unreachable for everybody, which makes them fair and also
+    /// makes them the same for everybody. This one is not — it is whichever state the
+    /// model ranks rarest from your position, once the two permanent ones are set
+    /// aside, so a player in New Jersey and a player in Los Angeles are chasing
+    /// different plates for the same tier.
+    ///
+    /// States only. Provinces and territories already hold five of the six permanent
+    /// slots, and letting the roaming one land on another would make the tier read as
+    /// "Canada" rather than as "the far edge of your own map".
+    private static let stateCodes: Set<String> = Set(
+        Plate.all.filter { $0.region == .state }.map(\.code))
+
+    /// Promotes the mythic regions out of the bands they were dealt into.
+    ///
+    /// After the ranking rather than inside it, because mythic is not a share of the
+    /// scale — `buckets` still deals all 65 regions into 1...10 exactly as before, and
+    /// this lifts seven of them above it. Legendary is correspondingly smaller, which
+    /// is intended: the plates that left it are the ones that made it feel cheap.
+    private static func promotingMythic(_ bands: [String: Int],
+                                        order: [String]) -> [String: Int] {
+        var out = bands
+        for code in mythicAlways where out[code] != nil { out[code] = mythicValue }
+
+        // `order` is commonest first, so the last match is the rarest one.
+        if let roaming = order.last(where: {
+            stateCodes.contains($0) && !mythicAlways.contains($0)
+        }) {
+            out[roaming] = mythicValue
+        }
+        return out
+    }
+
+    /// Which state is currently wearing the roaming slot, for anything that needs to
+    /// say so out loud rather than just colour it.
+    static func roamingMythic(on route: Route?) -> String? {
+        let table = self.table(on: route)
+        return table.first { $0.value == mythicValue && stateCodes.contains($0.key)
+            && !mythicAlways.contains($0.key) }?.key
+    }
+
     /// Commonest first, then dealt into the buckets. Ties break on the code so the
     /// same route always produces the same table.
     private static func ranked(by weights: [String: Double]) -> [String: Int] {
@@ -344,7 +407,7 @@ enum PlateRarity {
         }
         // Anything past the last bucket — if the catalogue grows — is top rarity.
         for code in order.dropFirst(index) { result[code] = buckets.count }
-        return result
+        return promotingMythic(result, order: order)
     }
 
     /// Rarity for one plate. Falls back to the hand-assigned `Plate.points` when the
@@ -353,6 +416,20 @@ enum PlateRarity {
     static func rarity(_ code: String, on route: Route?) -> Int {
         guard let route else { return nationalTable[code] ?? 5 }
         return table(for: route)[code] ?? nationalTable[code] ?? 5
+    }
+
+    /// The whole table for a collection, route or no route.
+    ///
+    /// **Use this, not `table(for:)`, from anything holding an optional route.** The
+    /// screens that wanted a whole table each wrote `route.map { table(for: $0) } ??
+    /// [:]` and then fell back to `Plate.points` per lookup, which is wrong twice
+    /// over: `points` is the old squashed hand-assigned scale, and it stops at 10, so
+    /// a collection with nothing pinned had no mythic in it at all — the Map drew
+    /// Alaska legendary gold and the crimson swatch in its own key matched nothing on
+    /// the map. `rarity(_:on:)` had the fallback right all along; this is the same
+    /// answer for callers that need every code at once.
+    static func table(on route: Route?) -> [String: Int] {
+        route.map { table(for: $0) } ?? nationalTable
     }
 
     /// The no-route fallback, put through the same buckets as a real route.

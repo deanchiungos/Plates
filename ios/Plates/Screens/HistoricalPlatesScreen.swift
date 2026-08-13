@@ -135,7 +135,10 @@ struct HistoricalPlatesScreen: View {
     }
 
     private var credit: some View {
-        Text("Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed.")
+        // The old second sentence — "Designs without a photograph are not listed" —
+        // was a note about the dataset's gaps, which is a thing to tell whoever
+        // builds the dataset, not somebody browsing old plates.
+        Text("Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card.")
             .font(.plates(size: 11))
             .foregroundStyle(Theme.inkMuted.opacity(0.85))
             .multilineTextAlignment(.center)
@@ -179,9 +182,9 @@ private struct JurisdictionPicker: View {
     private var groups: [(String, [Plate])] {
         let all = PlateHistoryBook.jurisdictions.filter { PlateSearch.matches($0, query: query) }
         return [
-            ("States", all.filter { $0.region == .state }),
-            ("Canada", all.filter { $0.region == .province }),
-            ("Other",  all.filter { $0.region == .federal || $0.region == .territory }),
+            (String(localized: "States"), all.filter { $0.region == .state }),
+            (String(localized: "Canada"), all.filter { $0.region == .province }),
+            (String(localized: "Other"), all.filter { $0.region == .federal || $0.region == .territory }),
         ].filter { !$0.1.isEmpty }
     }
 
@@ -406,11 +409,11 @@ struct DesignSheet: View {
                             row("Issued", design.dates)
                             if design.isCurrent {
                                 divider
-                                row("Status", "Still in issue")
+                                row("Status", String(localized: "Still in issue"))
                             }
                             if design.isShared {
                                 divider
-                                row("Photograph", "Wikipedia gives this era the design above it, so this is that plate")
+                                row("Photograph", String(localized: "Wikipedia gives this era the design above it, so this is that plate"))
                             }
                             if !design.credit.isEmpty {
                                 divider
@@ -459,7 +462,7 @@ struct DesignSheet: View {
         Rectangle().fill(Theme.line).frame(height: 1).padding(.leading, 14)
     }
 
-    private func row(_ label: String, _ value: String) -> some View {
+    private func row(_ label: LocalizedStringKey, _ value: String) -> some View {
         HStack(alignment: .top, spacing: 12) {
             Text(label)
                 .font(.plates(size: 13))

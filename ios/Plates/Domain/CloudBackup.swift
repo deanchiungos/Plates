@@ -136,25 +136,27 @@ final class CloudBackup {
 
         switch ck.code {
         case .networkUnavailable, .networkFailure:
-            return "No connection to iCloud. Your plates will copy over once you are back online."
+            return String(localized: "No connection to iCloud. Your plates will copy over once you are back online.")
         case .notAuthenticated:
-            return "Sign in to iCloud in Settings to back up your plates."
+            return String(localized: "Sign in to iCloud in Settings to back up your plates.")
         case .quotaExceeded:
-            return "Your iCloud storage is full, so nothing new can be copied over."
+            return String(localized: "Your iCloud storage is full, so nothing new can be copied over.")
         case .permissionFailure, .managedAccountRestricted:
-            return "This iCloud account is not allowed to store app data."
+            return String(localized: "This iCloud account is not allowed to store app data.")
         case .serviceUnavailable, .requestRateLimited, .zoneBusy:
-            return "iCloud is busy. This will retry on its own."
+            return String(localized: "iCloud is busy. This will retry on its own.")
         case .invalidArguments, .unknownItem, .serverRejectedRequest, .constraintViolation:
             // Almost always the schema: a TestFlight or App Store build talks to the
             // *production* CloudKit environment, which never creates record types on
             // demand the way the development one does. Deploying the schema in the
             // CloudKit Console fixes it, and no new build is needed.
             #if DEBUG
+            // Not localised: this branch only exists in a developer build, and it
+            // is a note to whoever is holding the phone at their own desk.
             return "iCloud rejected the data (\(ck.code.rawValue)). "
                  + "The production CloudKit schema is probably not deployed."
             #else
-            return "Your plates could not be copied to iCloud. This is being looked into."
+            return String(localized: "Your plates could not be copied to iCloud. This is being looked into.")
             #endif
         default:
             return ck.localizedDescription
@@ -182,28 +184,31 @@ final class CloudBackup {
 extension CloudBackup.State {
     var title: String {
         switch self {
-        case .off:                return "Not backed up"
-        case .noAccount:          return "Sign in to iCloud"
-        case .waiting, .working:  return "Backing up to iCloud"
-        case .backedUp:           return "Backed up to iCloud"
-        case .failed:             return "Backup problem"
+        case .off:                return String(localized: "Not backed up")
+        case .noAccount:          return String(localized: "Sign in to iCloud")
+        case .waiting, .working:  return String(localized: "Backing up to iCloud")
+        case .backedUp:           return String(localized: "Backed up to iCloud")
+        case .failed:             return String(localized: "Backup problem")
         }
     }
 
     var detail: String {
         switch self {
         case .off(let reason):
-            return reason == nil
-                ? "Your plates live on this phone only. Losing it loses the book."
-                : "Your plates live on this phone only. \(reason!)"
+            // `reason` is CloudKit's own words, not the app's, so it is dropped in
+            // rather than localised — there is nothing here to translate it to.
+            guard let reason else {
+                return String(localized: "Your plates live on this phone only. Losing it loses the book.")
+            }
+            return String(localized: "Your plates live on this phone only. \(reason)")
         case .noAccount:
-            return "Your plates are on this phone only until you sign in, in Settings."
+            return String(localized: "Your plates are on this phone only until you sign in, in Settings.")
         case .waiting:
-            return "Your plates will copy to iCloud shortly."
+            return String(localized: "Your plates will copy to iCloud shortly.")
         case .working:
-            return "Copying now\u{2026}"
+            return String(localized: "Copying now\u{2026}")
         case .backedUp(let when):
-            return "Last copied \(when.formatted(.relative(presentation: .named)))."
+            return String(localized: "Last copied \(when.formatted(.relative(presentation: .named))).")
         case .failed(let reason):
             return reason
         }

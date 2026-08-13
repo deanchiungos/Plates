@@ -309,8 +309,8 @@ struct PlayerStrip: View {
 }
 
 struct SectionHeader: View {
-    let title: String
-    let detail: String
+    let title: LocalizedStringKey
+    let detail: LocalizedStringKey
 
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
@@ -349,6 +349,11 @@ struct TrackingHintCard: View {
     /// asked for in different words: what it buys there is rarity, and nothing else.
     var isBook: Bool = false
     let onAllow: () -> Void
+    /// Wave it away. Required, not optional: a card that explains a missing feature
+    /// is a card somebody may simply not want the feature explained by, and it sits
+    /// above the grid on every visit until the condition clears — which for "no
+    /// destination pinned" can be the whole trip. See `TrackingHints`.
+    let onDismiss: () -> Void
 
     var body: some View {
         HStack(spacing: 11) {
@@ -380,8 +385,24 @@ struct TrackingHintCard: View {
                 }
                 .buttonStyle(.plain)
             }
+
+            // Small and grey, and to the right of the action rather than above it.
+            // Dismissing is the secondary move on every one of these — the card is
+            // offering something — so it gets the weight of a close box and not of a
+            // second button.
+            Button(action: onDismiss) {
+                Image(systemName: "xmark")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(Theme.inkMuted)
+                    .frame(width: 30, height: 30)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Dismiss")
         }
-        .padding(12)
+        .padding(.vertical, 12)
+        .padding(.leading, 12)
+        .padding(.trailing, 4)
         .background(
             RoundedRectangle(cornerRadius: 13, style: .continuous)
                 .fill(Theme.surface)
@@ -399,7 +420,7 @@ struct TrackingHintCard: View {
         }
     }
 
-    private var title: String {
+    private var title: LocalizedStringKey {
         switch state {
         case .needsPermission: return isBook ? "Score by where you are?" : "Follow the drive?"
         case .denied:          return "Location is off"
@@ -408,7 +429,7 @@ struct TrackingHintCard: View {
         }
     }
 
-    private var detail: String {
+    private var detail: LocalizedStringKey {
         switch state {
         case .needsPermission:
             return isBook
@@ -419,11 +440,77 @@ struct TrackingHintCard: View {
                 ? "Turn it on for Plates in Settings and rarity follows you instead of using national averages."
                 : "Turn it on for Plates in Settings to see the car and have rarity follow you."
         case .needsDestination:
-            return "Pin a destination on this trip and the rail will show how far is left."
+            // "The rail" is what this file calls the progress bar. Nobody outside
+            // this file has ever heard the word.
+            return "Add where you are going, and this trip will show how far you have left."
         case .locating:
             return isBook
-                ? "Rarity re-ranks as soon as your first location comes in."
-                : "The car appears as soon as your first location comes in."
+                ? "Plates from far away start scoring higher as soon as we find you."
+                : "Your car appears on the route as soon as we find you."
+        }
+    }
+}
+
+/// Which hint cards have been waved away, and for what.
+///
+/// Kept rather than forgotten on the next launch, because a card that comes back is
+/// not dismissible — it is snoozed, and that difference is the whole of the
+/// complaint. Stored as one joined string so a `@AppStorage` in the view redraws
+/// when it changes; a `Set` in `UserDefaults` read from a computed property would
+/// update the defaults and leave the card on screen.
+///
+/// Two scopes, because the four states are two different kinds of fact. Permission
+/// is true of the phone: refusing the ask once refuses it for every trip and every
+/// book, which is the only reading of "no" that is not nagging. A pinned destination
+/// is true of one trip, so dismissing it on the drive you never pinned must not hide
+/// it on next summer's.
+enum TrackingHints {
+
+    /// The `@AppStorage` key. Named here so the view and this file cannot drift.
+    static let storeKey = "dismissedTrackingHints"
+
+    static func token(for state: TrackingHintCard.State, collection: UUID?) -> String {
+        switch state {
+        case .needsPermission, .denied:
+            return state.name
+        case .needsDestination, .locating:
+            return "\(state.name):\(collection?.uuidString ?? "-")"
+        }
+    }
+
+    static func isDismissed(_ state: TrackingHintCard.State,
+                            collection: UUID?, in store: String) -> Bool {
+        parse(store).contains(token(for: state, collection: collection))
+    }
+
+    /// The new store value, or nil when it was already in there and nothing needs
+    /// writing — a redundant write to `@AppStorage` is a redundant redraw.
+    static func adding(_ state: TrackingHintCard.State,
+                       collection: UUID?, to store: String) -> String? {
+        var tokens = parse(store)
+        guard tokens.insert(token(for: state, collection: collection)).inserted else { return nil }
+        // Sorted so the stored string is stable, which makes it diffable by eye when
+        // something is being debugged out of a defaults dump.
+        return tokens.sorted().joined(separator: "\n")
+    }
+
+    /// Newline-separated, not comma: a UUID cannot contain one and neither can a
+    /// state name, so no token ever needs escaping.
+    private static func parse(_ store: String) -> Set<String> {
+        Set(store.split(separator: "\n").map(String.init))
+    }
+}
+
+extension TrackingHintCard.State {
+    /// Stable across releases — these go into `UserDefaults` and outlive the build
+    /// that wrote them, so they are spelled out rather than taken from a raw value
+    /// that renaming a case would silently change.
+    var name: String {
+        switch self {
+        case .needsPermission:  return "permission"
+        case .denied:           return "denied"
+        case .needsDestination: return "destination"
+        case .locating:         return "locating"
         }
     }
 }

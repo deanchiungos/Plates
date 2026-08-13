@@ -103,6 +103,14 @@ OVERRIDE = {
     # white serial on a white field is not a contrast problem to be softened,
     # it is invisible — so the serial inverts with the field it now sits on.
     "VT": (0x0B6647, "inverted — art is green-on-white, so the serial is green"),
+
+    # A third kind of failure, and the only one of it: there is no photograph at
+    # all. Yukon's master is drawn from the prose in plate-history.csv rather than
+    # off a picture, so sample_ink has nothing to open and the row would otherwise
+    # come out 0x000000 marked "?" — right by luck, unexplained, and silently
+    # rewritten to something else the day a reference photo does appear.
+    "YT": (0x1A1A1A, "no photograph — 'black on reflective white' is the whole "
+                     "source; see PROMPTS['YT'] in plate_art_generate.py"),
 }
 
 
@@ -165,6 +173,15 @@ def inks():
             continue
         out[code] = ((rgb[0] << 16) | (rgb[1] << 8) | rgb[2],
                      f"sampled — {r['serial_colour']}")
+
+    # An override also stands in for a row that does not exist. Yukon has an art
+    # master but no line in PRIMARY_CSV, because that file describes reference
+    # photographs and there is no Yukon photograph to describe. Without this the
+    # loop above never reaches the code and the Swift row falls through to
+    # 0x000000 marked "?" — the right colour by accident, recording no reason.
+    for code, entry in OVERRIDE.items():
+        if code not in out and os.path.exists(os.path.join(ART_SRC, f"{code}.png")):
+            out[code] = entry
     return out
 
 
@@ -429,8 +446,12 @@ def emit_swift(rows, halo, review):
         "// `offset` is a fraction of the tile's own width/height, not points, so it",
         "// holds at every size the tile renders at — the Game grid, the trail map pin.",
         "//",
-        "// Wyoming and Yukon are absent: no free photograph of either exists, so",
-        "// they keep PlateStyle's vector art and PlateStyle's ink.",
+        "// Every jurisdiction has a tile. Yukon was the last without one and is",
+        "// the only whose master was drawn from a written description rather than",
+        "// against a photograph — Commons has no Yukon plate newer than 1979 — so",
+        "// its ink is hand-set in OVERRIDE instead of sampled. No jurisdiction now",
+        "// falls through to PlateStyle's vector motifs: they survive only as the",
+        "// `?? .fallback` safety net and in PlateBench.",
         "enum PlateArtwork {",
         "    struct Entry {",
         "        let ink: UInt32",

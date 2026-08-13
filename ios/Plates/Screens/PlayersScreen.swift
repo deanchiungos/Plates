@@ -1,6 +1,166 @@
 import SwiftData
 import SwiftUI
 
+/// Settling who this phone is, once.
+///
+/// There are two ways a device arrives here with nobody claimed, and they need
+/// different questions.
+///
+/// A genuinely new install has an empty store, so there is nothing to ask about: it
+/// goes straight to the editor and types a name. That is the common case and it is
+/// unchanged from when this was a bare `PlayerEditor`.
+///
+/// A *restored* install is the case this exists for. Nothing is seeded any more, so
+/// the store fills from iCloud instead — and by the time there is a trip on screen to
+/// prompt against, the people are usually there too. Those people include the person
+/// this phone has always been. Offering them beats both of the alternatives: typing a
+/// name again would fork the collection in two, and adopting one automatically would
+/// mean guessing, which is how the old code handed somebody their party host's
+/// identity. One tap on a face you recognise is the whole interaction.
+///
+/// "Someone else" is always available, because a shared book can put people in your
+/// store who are not you and never were.
+struct IdentityPrompt: View {
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
+    @Query(sort: \Player.joinedAt) private var players: [Player]
+
+    /// What the confirm button says. The Game screen is starting a game; the party is
+    /// on its way somewhere and says so.
+    var saveLabel: LocalizedStringKey = "Start"
+    var onDone: () -> Void = {}
+
+    @State private var typingName = false
+
+    var body: some View {
+        if players.isEmpty || typingName {
+            PlayerEditor(player: nil,
+                         usedColors: Set(players.map(\.colorIndex)),
+                         onDelete: nil,
+                         title: "Who's playing?",
+                         saveLabel: saveLabel,
+                         // No `dismiss` here — the editor closes itself once it has
+                         // saved, and asking the same sheet to go away twice is how
+                         // you dismiss the screen behind it as well.
+                         onSaved: adopt)
+        } else {
+            chooser
+        }
+    }
+
+    // MARK: - Picking a face
+
+    private var chooser: some View {
+        NavigationStack {
+            ZStack {
+                Theme.ground.ignoresSafeArea()
+
+                ScrollView {
+                    VStack(spacing: 10) {
+                        Text(players.count == 1
+                             ? "This phone found somebody in your iCloud. Tap them to play as them."
+                             : "These people are already in your iCloud. Tap whichever one is you.")
+                            .font(.plates(size: 14))
+                            .foregroundStyle(Theme.inkMuted)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.bottom, 4)
+
+                        ForEach(players) { player in
+                            Button {
+                                Haptics.selection()
+                                claim(player)
+                            } label: {
+                                row(player)
+                            }
+                            .buttonStyle(.plain)
+                        }
+
+                        Button {
+                            Haptics.selection()
+                            typingName = true
+                        } label: {
+                            Text("Someone else")
+                                .font(.plates(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.route)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 14)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    .padding(Theme.screenPadding)
+                    .padding(.bottom, 8)
+                }
+            }
+            .navigationTitle("Who's playing?")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        // Sized to the roster rather than fixed. At the editor's 360 the "Someone
+        // else" row sat half off the bottom edge, which reads as a sheet that failed
+        // to load rather than one with a list in it. Capped, and the second detent
+        // lets a long roster fill the screen — a family that has been in six parties
+        // has more people in here than a phone is tall.
+        .presentationDetents([.height(min(560, 200 + 72 * CGFloat(players.count))), .large])
+    }
+
+    private func row(_ player: Player) -> some View {
+        HStack(spacing: 12) {
+            Circle()
+                .fill(Theme.playerColor(player.colorIndex))
+                .frame(width: 34, height: 34)
+                .overlay(
+                    Text(player.face)
+                        .font(player.usesEmoji ? .system(size: 17)
+                                               : Theme.PlateFont.condensed(15))
+                        .foregroundStyle(Theme.ink)
+                )
+
+            VStack(alignment: .leading, spacing: 1) {
+                Text(player.name)
+                    .font(.plates(size: 16, weight: .semibold))
+                    .foregroundStyle(Theme.ink)
+
+                // The deciding detail. Two people called Sam are told apart by which
+                // one has the four hundred plates.
+                Text(plateCount(player))
+                    .font(.plates(size: 12))
+                    .foregroundStyle(Theme.inkMuted)
+            }
+
+            Spacer(minLength: 8)
+
+            Image(systemName: "chevron.right")
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundStyle(Theme.inkMuted.opacity(0.55))
+        }
+        .padding(14)
+        .background(
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .fill(Theme.surface)
+                .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous)
+                    .strokeBorder(Theme.line, lineWidth: 1))
+        )
+        .contentShape(Rectangle())
+    }
+
+    private func plateCount(_ player: Player) -> String {
+        let n = player.sightings?.count ?? 0
+        return n == 0 ? String(localized: "No plates yet")
+                      : .inflected("^[\(n) plate](inflect: true)")
+    }
+
+    /// The one write this whole flow exists to make.
+    private func adopt(_ player: Player) {
+        DevicePlayer.adopt(player)
+        DevicePlayer.markProfileSet()
+        onDone()
+    }
+
+    private func claim(_ player: Player) {
+        adopt(player)
+        dismiss()
+    }
+}
+
 /// Editing one player: a name and a colour.
 ///
 /// This file used to hold a roster too — a list of everyone on the phone, an "add
@@ -21,9 +181,12 @@ struct PlayerEditor: View {
     let onDelete: (() -> Void)?
     /// Overrides the title, for the first-run "who's playing?" pass where "Edit
     /// player" would be describing a screen nobody has seen yet.
-    var title: String? = nil
-    var saveLabel: String? = nil
-    var onSaved: (() -> Void)? = nil
+    var title: LocalizedStringKey?
+    var saveLabel: LocalizedStringKey?
+    /// Handed the player that was saved, which for the first-run pass is the one it
+    /// just inserted — `IdentityPrompt` has no other way to learn which row to pin
+    /// this device to.
+    var onSaved: ((Player) -> Void)? = nil
 
     @State private var name = ""
     @State private var colorIndex = 0
@@ -204,17 +367,20 @@ struct PlayerEditor: View {
 
     private func save() {
         guard !trimmed.isEmpty else { return }
+        let saved: Player
         if let player {
             player.name = trimmed
             player.colorIndex = colorIndex
             player.avatar = avatar
+            saved = player
         } else {
             let fresh = Player(name: trimmed, colorIndex: colorIndex)
             fresh.avatar = avatar
             context.insert(fresh)
+            saved = fresh
         }
         try? context.save()
-        onSaved?()
+        onSaved?(saved)
         dismiss()
     }
 }

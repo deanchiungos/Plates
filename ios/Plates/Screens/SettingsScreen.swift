@@ -39,7 +39,6 @@ struct SettingsScreen: View {
                     backupCard
                     locationCard
                     remindersCard
-                    voiceCard
                     feedbackCard
                     version
                 }
@@ -159,18 +158,21 @@ struct SettingsScreen: View {
         }
     }
 
+    /// `String(localized:)` rather than a bare literal. This returns a `String`, so
+    /// the compiler would otherwise harvest nothing from it — the same blind spot
+    /// the popups had. Anything in this file that computes words for the screen goes
+    /// through it.
     private func plateCount(_ player: Player) -> String {
         let n = player.sightings?.count ?? 0
-        return n == 0 ? "No plates on this phone"
-                      : "\(n) plate\(n == 1 ? "" : "s") they spotted"
+        return n == 0 ? String(localized: "No plates on this phone")
+                      : .inflected("^[\(n) plate](inflect: true) they spotted")
     }
 
     private func confirmRemoval(of player: Player) {
         Haptics.selection()
         popup.present(
             "Remove \(player.name)?",
-            message: "Plates they spotted stay collected \u{2014} every count is unchanged. "
-                   + "Only their line in the standings goes."
+            message: "Plates they spotted stay collected, and every count is unchanged. Only their line in the standings goes."
         ) {
             PopupButton(title: "Remove", kind: .destructive) {
                 context.delete(player)
@@ -245,7 +247,7 @@ struct SettingsScreen: View {
         }
     }
 
-    private var locationTitle: String {
+    private var locationTitle: LocalizedStringKey {
         if !location.hasBeenAsked { return "Not asked yet" }
         return location.isAuthorized ? "On while the app is open" : "Off"
     }
@@ -299,28 +301,13 @@ struct SettingsScreen: View {
         }
     }
 
-    // MARK: - Voice
-
-    /// Not a setting — there is nothing to configure. It is here because a hands-free
-    /// feature nobody knows the phrase for is a feature nobody uses, and Settings is
-    /// where people go looking. The toggle that used to live here ("start listening
-    /// when Plates opens") is gone: a plain launch cannot be told apart from tapping
-    /// the icon, so honouring it meant opening the microphone every single time.
-    private var voiceCard: some View {
-        SettingsGroup("Voice") {
-            VStack(alignment: .leading, spacing: 6) {
-                Text("Hands free")
-                    .font(.plates(size: 15, weight: .semibold))
-                    .foregroundStyle(Theme.ink)
-                Text("Say \u{201C}Hey Siri, log a plate in Plates\u{201D} \u{2014} or name it outright, \u{201C}log New Jersey in Plates\u{201D}. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say \u{201C}stop\u{201D} when you are done.")
-                    .font(.plates(size: 12))
-                    .foregroundStyle(Theme.inkMuted)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(14)
-        }
-    }
+    // NOTE: a "Voice" card used to sit here, carrying the Siri phrases verbatim. It
+    // was never a setting — there was nothing on it to turn on or off — and it was
+    // here only because a hands-free feature nobody knows the phrase for is a
+    // feature nobody uses, and Settings was the only page anyone would look. It is
+    // on the "How to play" page now, one row away in the same menu, alongside
+    // everything else that explains rather than configures. Do not put it back on
+    // the assumption that the phrases went missing.
 
     // MARK: - Haptics
 
@@ -342,6 +329,14 @@ struct SettingsScreen: View {
         }
     }
 
+    // NOTE: "Replay the tour" used to sit here, and is now the last card on the
+    // "How to play" page. It ships in Release on purpose and that has not changed:
+    // every other way to see the onboarding — the launch arguments, a wiped
+    // simulator — needs a Mac and a debug build, so the one audience who cannot
+    // check what a new player sees is anybody holding a real phone with a real
+    // collection on it. That includes whoever is deciding whether the copy is any
+    // good. See `HowToPlayScreen.replay`.
+
     // NOTE: a "Where the numbers come from" card used to sit here, carrying the data
     // sources, the limits of the rarity model, and a note that the plate artwork is
     // original. It is gone because Settings is for controls — but one line of it was
@@ -362,7 +357,7 @@ struct SettingsScreen: View {
 
     // MARK: - Bits
 
-    private func openSettings(_ title: String) -> some View {
+    private func openSettings(_ title: LocalizedStringKey) -> some View {
         Group {
             SettingsDivider()
             Button {
@@ -375,7 +370,7 @@ struct SettingsScreen: View {
         }
     }
 
-    private func rowLabel(_ title: String, tint: Color) -> some View {
+    private func rowLabel(_ title: LocalizedStringKey, tint: Color) -> some View {
         HStack {
             Text(title)
                 .font(.plates(size: 14, weight: .semibold))
@@ -393,17 +388,20 @@ struct SettingsScreen: View {
 
 /// A titled card, in the shape the rest of the app already uses.
 struct SettingsGroup<Content: View>: View {
-    let title: String
+    let title: LocalizedStringKey
     @ViewBuilder var content: Content
 
-    init(_ title: String, @ViewBuilder content: () -> Content) {
+    init(_ title: LocalizedStringKey, @ViewBuilder content: () -> Content) {
         self.title = title
         self.content = content()
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 7) {
-            Text(title.uppercased())
+            // `.textCase`, not `.uppercased()` — a key has no letters to raise
+            // until it is resolved, and the modifier uppercases the *translation*.
+            Text(title)
+                .textCase(.uppercase)
                 .font(Theme.PlateFont.condensed(12))
                 .tracking(1.1)
                 .foregroundStyle(Theme.inkMuted)

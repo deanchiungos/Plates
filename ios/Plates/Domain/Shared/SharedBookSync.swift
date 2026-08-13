@@ -304,7 +304,7 @@ final class SharedBookSync {
         switch ck.code {
         case .notAuthenticated:   return "Sign in to iCloud to share books."
         case .networkUnavailable,
-             .networkFailure:     return "No connection \u{2014} this will catch up later."
+             .networkFailure:     return "No connection. This will catch up later."
         case .quotaExceeded:      return "Your iCloud storage is full."
         case .zoneNotFound,
              .unknownItem:        return "That shared book is no longer available."

@@ -69,6 +69,11 @@ struct PlatesApp: App {
         container = PlatesStore.container
         PlatesStore.seedIfNeeded()
         Theme.applyToSystemControls()
+        Coach.beginSession()
+        #if DEBUG
+        // `-coachReset`, before any screen can ask what it has already shown.
+        Coach.applyLaunchArguments()
+        #endif
         // Rebuilt at launch: trips may have been finished on another device, or the
         // permission revoked in Settings while the app was away.
         TripReminders.shared.refresh(in: PlatesStore.context)

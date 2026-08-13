@@ -15,7 +15,7 @@ import SwiftUI
 /// `chevron.down` just blinks.
 struct DisclosureBar: View {
     let symbol: String
-    let title: String
+    let title: LocalizedStringKey
     /// Nil where there is nothing worth counting — "Compare trips" is not a pile of
     /// anything, it is a view of one.
     var count: Int?

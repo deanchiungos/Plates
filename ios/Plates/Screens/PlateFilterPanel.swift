@@ -44,10 +44,10 @@ struct PlateFilterChip: View {
 
     /// Nil means icon-only: with nothing filtered there is no state to report.
     private var label: String? {
-        if filter.hideFound { return "\(leftCount) left" }
+        if filter.hideFound { return String(localized: "\(leftCount) left") }
         guard filter.isActive else { return nil }
         if filter.sets.count == 1, let only = filter.sets.first { return only.filterLabel }
-        return "\(filter.sets.count) sets"
+        return .inflected("^[\(filter.sets.count) set](inflect: true)")
     }
 }
 
@@ -89,10 +89,15 @@ struct PlateFilterPanel: View {
 
             ForEach(PlateRegion.allCases, id: \.self) { region in
                 let on = filter.includes(region)
-                PopupChoice(title: region.filterLabel,
-                            subtitle: on
-                                ? "\(leftInRegion(region)) left of \(region.plates.count)"
-                                : region.filterDetail,
+                // `verbatim…` because both of these are already resolved strings:
+                // `filterLabel` and `filterDetail` localise themselves on the way
+                // out, so handing them back as catalog keys would look them up a
+                // second time.
+                let detail = on
+                    ? String(localized: "\(leftInRegion(region)) left of \(region.plates.count)")
+                    : region.filterDetail
+                PopupChoice(verbatimTitle: region.filterLabel,
+                            verbatimSubtitle: detail,
                             isSelected: on,
                             trailing: { Tick(on: on) },
                             action: {

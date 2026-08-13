@@ -4,6 +4,7 @@ import SwiftData
 struct GameScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(PopupHost.self) private var popup
+    @Environment(CoachPresenter.self) private var coach
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
@@ -14,6 +15,9 @@ struct GameScreen: View {
     @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
 
     @AppStorage(PlateFilter.key) private var filter = PlateFilter()
+    /// See `TrackingHints`. A joined string rather than a set, so the view redraws
+    /// the moment a card is dismissed.
+    @AppStorage(TrackingHints.storeKey) private var dismissedHints = ""
 
     private let location = TripLocation.shared
     private let handoff = VoiceHandoff.shared
@@ -45,6 +49,13 @@ struct GameScreen: View {
     @State private var listening = false
     #endif
     @State private var namingMe = false
+    /// Whether the "who's playing?" sheet has already had its turn this launch.
+    ///
+    /// The ask used to hang off `onAppear` alone, and `onAppear` fires every time
+    /// this tab comes back — so cancelling the sheet and tapping Books bought you
+    /// about four seconds of peace. A question you decline should stay declined
+    /// until you have at least left and come back to the app.
+    @State private var askedWhoIsPlaying = false
     @State private var notice: Notice?
     @State private var creatingTrip = false
     @State private var creatingBook = false
@@ -102,7 +113,10 @@ struct GameScreen: View {
     /// it was claimed, and that is the number the found tile's pip is coloured by.
     private var rarities: [String: Int] {
         guard let collection else { return [:] }
-        var table = collection.route.map { PlateRarity.table(for: $0) } ?? [:]
+        // Was `?? [:]` with no route, which left every unbanked plate to fall through
+        // to `Plate.points` at the tile — a scale that stops at 10, so nothing could
+        // ever come out mythic. See `PlateRarity.table(on:)`.
+        var table = PlateRarity.table(on: collection.route)
         for code in collection.seenCodes {
             if let claimed = collection.claimedRarity(of: code) { table[code] = claimed }
         }
@@ -121,6 +135,16 @@ struct GameScreen: View {
     /// permission is worth granting at all — so the ask has to be offered somewhere,
     /// and this is the only place it exists.
     private var trackingState: TrackingHintCard.State? {
+        guard let state = trackingNeed else { return nil }
+        guard !TrackingHints.isDismissed(state, collection: collection?.id,
+                                         in: dismissedHints) else { return nil }
+        return state
+    }
+
+    /// What is actually missing, before asking whether anybody wants to hear about
+    /// it. Split from `trackingState` so the dismissal check has one place to live
+    /// and cannot be forgotten by a fifth case added below.
+    private var trackingNeed: TrackingHintCard.State? {
         guard let target else { return nil }
         if !location.hasBeenAsked { return .needsPermission }
         if !location.isAuthorized { return .denied }
@@ -133,6 +157,13 @@ struct GameScreen: View {
             if book.currentLat == nil { return .locating }
         }
         return nil          // everything is in place; the rail speaks for itself
+    }
+
+    private func dismissTrackingHint(_ state: TrackingHintCard.State) {
+        guard let next = TrackingHints.adding(state, collection: collection?.id,
+                                              to: dismissedHints) else { return }
+        dismissedHints = next
+        Haptics.undo()
     }
 
     /// Started while the Drive screen is up and stopped when it is not, so the GPS
@@ -189,63 +220,118 @@ struct GameScreen: View {
         try? context.save()
     }
 
+    // The screen is assembled in three pieces rather than one chain: what is on
+    // it (`screen`), what it listens to (`wired`), and what it presents (here).
+    // Not a style choice — as one expression this hit the type-checker's ceiling
+    // and stopped compiling. Anything long added below belongs in a piece, not in
+    // the chain.
     var body: some View {
         NavigationStack {
+            wired(screen)
+        }
+        .sheet(isPresented: $namingMe) {
+            IdentityPrompt(saveLabel: "Start")
+        }
+        .sheet(isPresented: $creatingTrip) {
+            TripEditor(trip: nil, onClear: nil, onDelete: nil)
+        }
+        .sheet(isPresented: $creatingBook) {
+            BookEditor(book: nil, onClear: nil, onDelete: nil)
+        }
+        // Last in the chain, so the balloon draws over the grid and under the tab
+        // bar. The copy sits here rather than in a table elsewhere: whoever changes
+        // what the tip says is the person looking at the screen it appears on.
+        .coachLayer(Self.coachCopy)
+    }
+
+    /// The grid, or the fork that offers to make something to fill.
+    private var screen: some View {
+        ZStack {
+            Theme.ground.ignoresSafeArea()
+
+            if let target {
+                content(for: target)
+            } else {
+                emptyState
+            }
+        }
+        .overlay { celebration }
+        // Somebody else's find. Deliberately a line at the top rather than the
+        // full card treatment — see `PartySession.PeerFind`.
+        .overlay(alignment: .top) { peerNotice }
+    }
+
+    private var emptyState: some View {
+        ContentUnavailableView {
+            Label("Nothing to fill yet", systemImage: "car")
+        } description: {
+            // Two whole sentences rather than one plus a conditional
+            // fragment. A `LocalizedStringKey` has to be a single literal
+            // to be harvested into the catalog, so a line assembled from
+            // parts is a line no translator ever sees.
+            //
+            // The extra sentence is for the first launch only: somebody
+            // who has been here before knows they can have both, and by
+            // then the choice is a choice rather than a fork in a
+            // tutorial.
+            if Coach.seen(.fork) {
+                Text("A trip is one drive with a route and a finish. A book you just keep adding to.")
+            } else {
+                Text("A trip is one drive with a route and a finish. A book you just keep adding to. Pick one to start collecting. You can have both later.")
+            }
+        } actions: {
+            VStack(spacing: 8) {
+                Button("Start a trip") { creatingTrip = true }
+                    .buttonStyle(.borderedProminent)
+                    .tint(Theme.route)
+                Button("Start a book") { creatingBook = true }
+            }
+        }
+    }
+
+    /// Above the grid but inside the tab. It clears itself on a timer, and a tap
+    /// anywhere dismisses it early — a fact card you cannot skip becomes an
+    /// obstacle the moment you have already read it.
+    @ViewBuilder
+    private var celebration: some View {
+        if let party = celebrating {
             ZStack {
-                Theme.ground.ignoresSafeArea()
-
-                if let target {
-                    content(for: target)
-                } else {
-                    ContentUnavailableView {
-                        Label("Nothing to fill yet", systemImage: "car")
-                    } description: {
-                        Text("A trip is one drive with a route and a finish. A book you just keep adding to.")
-                    } actions: {
-                        VStack(spacing: 8) {
-                            Button("Start a trip") { creatingTrip = true }
-                                .buttonStyle(.borderedProminent)
-                                .tint(Theme.route)
-                            Button("Start a book") { creatingBook = true }
-                        }
-                    }
+                if party.tier.flashesScreen {
+                    RarityFlash(tier: party.tier).id(party.id)
                 }
-            }
-            // Above the grid but inside the tab. It clears itself on a timer, and a
-            // tap anywhere dismisses it early — a fact card you cannot skip becomes
-            // an obstacle the moment you have already read it.
-            .overlay {
-                if let party = celebrating {
-                    ZStack {
-                        if party.tier.flashesScreen {
-                            RarityFlash(tier: party.tier).id(party.id)
-                        }
 
-                        Color.black.opacity(0.001)
-                            .ignoresSafeArea()
-                            .contentShape(Rectangle())
-                            .onTapGesture { dismissCelebration() }
+                Color.black.opacity(0.001)
+                    .ignoresSafeArea()
+                    .contentShape(Rectangle())
+                    .onTapGesture { dismissCelebration() }
 
-                        FindBanner(tier: party.tier,
-                                   plateName: party.plate.name,
-                                   fact: party.fact)
-                            .id(party.id)
-                            .padding(.horizontal, 22)
-                            .allowsHitTesting(false)
-                    }
-                    .transition(.opacity)
-                }
+                FindBanner(tier: party.tier,
+                           plateName: party.plate.name,
+                           fact: party.fact)
+                    .id(party.id)
+                    .padding(.horizontal, 22)
+                    .allowsHitTesting(false)
             }
-            // Somebody else's find. Deliberately a line at the top rather than the
-            // full card treatment — see `PartySession.PeerFind`.
-            .overlay(alignment: .top) {
-                if let notice {
-                    NoticeToast(text: notice.text, tint: notice.tint)
-                        .id(notice.id)
-                        .padding(.horizontal, 16)
-                        .transition(.move(edge: .top).combined(with: .opacity))
-                }
-            }
+            .transition(.opacity)
+        }
+    }
+
+    @ViewBuilder
+    private var peerNotice: some View {
+        if let notice {
+            NoticeToast(text: notice.text, tint: notice.tint)
+                .id(notice.id)
+                .padding(.horizontal, 16)
+                .transition(.move(edge: .top).combined(with: .opacity))
+        }
+    }
+
+    // MARK: - Wiring
+
+    /// Everything the screen listens to: arrivals from a peer, Siri, the location
+    /// feed, and the coach.
+    private func wired(_ view: some View) -> some View {
+        view
             .onChange(of: PartySession.shared?.latestFromPeer) { _, arrival in
                 guard let arrival else { return }
                 notice = Notice(text: "\(arrival.finder) found \(arrival.plateName)",
@@ -288,96 +374,111 @@ struct GameScreen: View {
             .onAppear(perform: beginTracking)
             .onDisappear { location.stop() }
             .onChange(of: location.updatedAt) { _, _ in persistLocation() }
-            .onChange(of: collection?.id) { _, _ in beginTracking() }
+            .onChange(of: collection?.id) { _, _ in
+                beginTracking()
+                // The other half of the ask's trigger. On a fresh install there is
+                // nothing to fill when this screen first appears, so the question
+                // waits here for a trip or a book to exist.
+                introduceThisPhoneOnce()
+                offerGridTips()
+                // Something exists to fill, so the fork has been used and its extra
+                // line has done its job. Marked here rather than while the empty
+                // state is on screen, which would delete the sentence out from under
+                // somebody mid-read.
+                if collection != nil { Coach.markSeen(.fork) }
+            }
             // Warmed here rather than at launch: this is the screen where taps
             // happen, so the engine is armed when it is about to be used and not
             // several seconds before anything can possibly fire.
             .onAppear(perform: Haptics.warmUp)
-            .onAppear(perform: noticeTheChangeOnce)
+            .onAppear(perform: introduceThisPhoneOnce)
+            .onAppear(perform: offerGridTips)
+            // A party joining, or a shared book delivering, changes the roster
+            // under a screen nobody has left. That is the whole occasion for the
+            // spotter tip, and no other trigger on this screen would notice it.
+            .onChange(of: participants.count) { _, _ in offerGridTips() }
+            // Leaving counts as shown. See `CoachPresenter.withdraw`.
+            .onDisappear(perform: withdrawGridTips)
             #if DEBUG
-            // Screenshot hooks. Nothing here can be reached without a launch
-            // argument, and the whole block compiles out of Release.
-            //
-            //   -search NEW      open the bar pre-filled
-            //   -popup switch    the trip / book switcher
-            //   -celebrate CA    fire a confetti burst on that plate
-            //   -filter left     only what's left
-            //   -filter states   states set only
-            //   -filter panel    open the filter panel
-            //   -filter done     hide found with everything found
-            .onAppear {
-                let args = ProcessInfo.processInfo.arguments
-                if let i = args.firstIndex(of: "-filter"), i + 1 < args.count {
-                    switch args[i + 1] {
-                    case "left":   filter = .init(hideFound: true, sets: Set(PlateRegion.allCases))
-                    case "states": filter = .init(hideFound: false, sets: [.state])
-                    // Pair with -foundAll, or there is always something left.
-                    case "done":   filter = .init(hideFound: true, sets: [.state])
-                    case "panel":
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                            if let collection { showFilter(for: collection) }
-                        }
-                    default: break
-                    }
+            .onAppear(perform: applyLaunchArguments)
+            #endif
+    }
+
+    #if DEBUG
+    /// Screenshot hooks. Nothing here can be reached without a launch argument,
+    /// and the whole thing compiles out of Release.
+    ///
+    ///   -search NEW      open the bar pre-filled
+    ///   -popup switch    the trip / book switcher
+    ///   -celebrate CA    fire a confetti burst on that plate
+    ///   -filter left     only what's left
+    ///   -filter states   states set only
+    ///   -filter bonus    D.C. and Puerto Rico only
+    ///   -filter panel    open the filter panel
+    ///   -filter done     hide found with everything found
+    private func applyLaunchArguments() {
+        let args = ProcessInfo.processInfo.arguments
+        if let i = args.firstIndex(of: "-filter"), i + 1 < args.count {
+            switch args[i + 1] {
+            case "left":   filter = .init(hideFound: true, sets: Set(PlateRegion.allCases))
+            case "states": filter = .init(hideFound: false, sets: [.state])
+            // The Bonus section on its own, which is otherwise fifty tiles down.
+            case "bonus":  filter = .init(hideFound: false, sets: [.federal, .territory])
+            // Two sets, so the chip has to pluralise. The only spot where
+            // automatic grammar agreement shows up somewhere a screenshot
+            // can see it without first opening a popup.
+            case "sets":   filter = .init(hideFound: false, sets: [.state, .province])
+            // Pair with -foundAll, or there is always something left.
+            case "done":   filter = .init(hideFound: true, sets: [.state])
+            case "panel":
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    if let collection { showFilter(for: collection) }
                 }
-                if let i = args.firstIndex(of: "-search"), i + 1 < args.count {
-                    query = args[i + 1]
-                    searchOpen = true
-                }
-                // `-uncheck NJ` opens the removal menu on that plate — the menu is
-                // behind a long-press, which no launch argument can perform.
-                if let i = args.firstIndex(of: "-uncheck"), i + 1 < args.count,
-                   let plate = Plate.plate(for: args[i + 1]) {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                        if let collection { uncheck(plate, in: collection) }
-                    }
-                }
-                // `-tapPlate NJ` taps that tile through the real handler, which is
-                // the only way to reach the "remove this?" confirmation without a
-                // finger. Deliberately `tap` and not `tapFound`, so the launch
-                // argument goes through the same branch a tap does.
-                if let i = args.firstIndex(of: "-tapPlate"), i + 1 < args.count,
-                   let plate = Plate.plate(for: args[i + 1].uppercased()) {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                        if let collection { tap(plate, in: collection) }
-                    }
-                }
-                if let i = args.firstIndex(of: "-celebrate"), i + 1 < args.count,
-                   let plate = Plate.plate(for: args[i + 1]) {
-                    // Re-fires on a loop: a one-shot is nearly impossible to catch
-                    // in a screenshot.
-                    Timer.scheduledTimer(withTimeInterval: 7.5, repeats: true) { _ in
-                        Task { @MainActor in celebrate(plate, in: collection) }
-                    }.fire()
-                }
-                if let i = args.firstIndex(of: "-popup"), i + 1 < args.count {
-                    let kind = args[i + 1]
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        switch kind {
-                        case "trips", "switch":
-                            if let target { showSwitcher(current: target) }
-                        default: break
-                        }
-                    }
+            default: break
+            }
+        }
+        if let i = args.firstIndex(of: "-search"), i + 1 < args.count {
+            query = args[i + 1]
+            searchOpen = true
+        }
+        // `-uncheck NJ` opens the removal menu on that plate — the menu is
+        // behind a long-press, which no launch argument can perform.
+        if let i = args.firstIndex(of: "-uncheck"), i + 1 < args.count,
+           let plate = Plate.plate(for: args[i + 1]) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                if let collection { uncheck(plate, in: collection) }
+            }
+        }
+        // `-tapPlate NJ` taps that tile through the real handler, which is
+        // the only way to reach the "remove this?" confirmation without a
+        // finger. Deliberately `tap` and not `tapFound`, so the launch
+        // argument goes through the same branch a tap does.
+        if let i = args.firstIndex(of: "-tapPlate"), i + 1 < args.count,
+           let plate = Plate.plate(for: args[i + 1].uppercased()) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                if let collection { tap(plate, in: collection) }
+            }
+        }
+        if let i = args.firstIndex(of: "-celebrate"), i + 1 < args.count,
+           let plate = Plate.plate(for: args[i + 1]) {
+            // Re-fires on a loop: a one-shot is nearly impossible to catch
+            // in a screenshot.
+            Timer.scheduledTimer(withTimeInterval: 7.5, repeats: true) { _ in
+                Task { @MainActor in celebrate(plate, in: collection) }
+            }.fire()
+        }
+        if let i = args.firstIndex(of: "-popup"), i + 1 < args.count {
+            let kind = args[i + 1]
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                switch kind {
+                case "trips", "switch":
+                    if let target { showSwitcher(current: target) }
+                default: break
                 }
             }
-            #endif
-        }
-        .sheet(isPresented: $namingMe) {
-            PlayerEditor(player: DevicePlayer.resolve(from: players),
-                         usedColors: [],
-                         onDelete: nil,
-                         title: "Who's playing?",
-                         saveLabel: "Start",
-                         onSaved: DevicePlayer.markProfileSet)
-        }
-        .sheet(isPresented: $creatingTrip) {
-            TripEditor(trip: nil, onClear: nil, onDelete: nil)
-        }
-        .sheet(isPresented: $creatingBook) {
-            BookEditor(book: nil, onClear: nil, onDelete: nil)
         }
     }
+    #endif
 
     // MARK: - Content
 
@@ -438,9 +539,9 @@ struct GameScreen: View {
 
                         if let state = trackingState {
                             TrackingHintCard(state: state,
-                                             isBook: target.isBook) {
-                                location.requestAccess()
-                            }
+                                             isBook: target.isBook,
+                                             onAllow: { location.requestAccess() },
+                                             onDismiss: { dismissTrackingHint(state) })
                             .padding(.top, 12)
                         }
 
@@ -489,7 +590,8 @@ struct GameScreen: View {
                                 title: "States",
                                 detail: "\(collection.statesFound) / \(Plate.stateTotal) found",
                                 plates: states,
-                                in: collection
+                                in: collection,
+                                hostsCoachMarks: true
                             )
                             .padding(.top, 18)
                         }
@@ -545,11 +647,12 @@ struct GameScreen: View {
         }
     }
 
-    private func section(title: String, detail: String,
-                         plates: [Plate], in collection: any PlateCollection) -> some View {
+    private func section(title: LocalizedStringKey, detail: LocalizedStringKey,
+                         plates: [Plate], in collection: any PlateCollection,
+                         hostsCoachMarks: Bool = false) -> some View {
         VStack(spacing: 10) {
             SectionHeader(title: title, detail: detail)
-            grid(plates: plates, in: collection)
+            grid(plates: plates, in: collection, hostsCoachMarks: hostsCoachMarks)
         }
     }
 
@@ -606,7 +709,7 @@ struct GameScreen: View {
                 Text("Nothing left to find")
                     .font(.plates(size: 18, weight: .bold))
                     .foregroundStyle(Theme.ink)
-                Text("Every plate in the sets you are hunting is already found.")
+                Text("You have found every plate you are hunting for.")
                     .font(.plates(size: 13.5))
                     .foregroundStyle(Theme.inkMuted)
                     .multilineTextAlignment(.center)
@@ -626,12 +729,48 @@ struct GameScreen: View {
         .frame(maxWidth: .infinity)
     }
 
-    private func grid(plates: [Plate], in collection: any PlateCollection) -> some View {
+    /// The first tile actually wearing somebody else's colour.
+    ///
+    /// Not merely the first found tile: the corner chip only appears on a plate
+    /// somebody else called, so anchoring anywhere else would be describing a mark
+    /// that is not on the thing being pointed at.
+    private func firstSpottedByAnother(among plates: [Plate],
+                                       using index: PlateIndex) -> String? {
+        guard participants.count > 1 else { return nil }
+        let mine = DevicePlayer.resolve(from: players)?.id
+        for plate in plates where index.has(plate.code) {
+            if let who = index.spotter(plate.code), who.id != mine { return plate.code }
+        }
+        return nil
+    }
+
+    /// `hostsCoachMarks` is set by exactly one caller — the states section — and this
+    /// is not decoration. Every section draws through this same function, so without
+    /// it all three register the same anchors. The key's reduce keeps the first,
+    /// which looks correct right up until Alabama recycles out of the lazy grid: its
+    /// anchor disappears, the bonus grid's is the only one left, and the balloon
+    /// silently relocates to Washington D.C. halfway down the page.
+    private func grid(plates: [Plate], in collection: any PlateCollection,
+                      hostsCoachMarks: Bool = false) -> some View {
         // One pass over the sightings for the whole grid. Asking the collection
         // per tile was three linear scans each, so a full grid was O(plates x
         // sightings) and got slower the more you had spotted.
         let index = collection.plateIndex()
         let unlimited = collection.scoringMode == .unlimited
+        // What the "tap one" balloon points at. The first tile still to be found,
+        // which on the grid this tip fires against is simply the first tile.
+        let firstUnfound = hostsCoachMarks ? plates.first { !index.has($0.code) }?.code : nil
+        // And what the long-press balloon points at: a plate that has actually been
+        // counted, since the tip is about taking a count back. The two are mutually
+        // exclusive by construction — `firstTap` needs an empty collection and this
+        // one needs a non-empty one — so the grid never registers both.
+        let firstCounted = hostsCoachMarks && unlimited
+            ? plates.first { index.has($0.code) }?.code : nil
+        // And what the "who called it" balloon points at. Computed outside the view
+        // builder rather than inline: a third `let` with a closure in it was enough
+        // to tip this function past what the type checker will attempt.
+        let firstBySomebodyElse = hostsCoachMarks
+            ? firstSpottedByAnother(among: plates, using: index) : nil
 
         return LazyVGrid(
             columns: [GridItem(.adaptive(minimum: Theme.tileMinWidth,
@@ -695,6 +834,9 @@ struct GameScreen: View {
                 .scaleEffect(searching && hit ? 1.05 : 1)
                 .zIndex(celebrating?.plate.code == plate.code ? 2 : (searching && hit ? 1 : 0))
                 .id(plate.code)
+                .coachAnchor(.firstTap, active: plate.code == firstUnfound)
+                .coachAnchor(.uncheck, active: plate.code == firstCounted)
+                .coachAnchor(.spotterChip, active: plate.code == firstBySomebodyElse)
                 // Non-matches fade back rather than disappearing, so the grid
                 // never reflows under your thumb mid-search.
                 .opacity(hit ? 1 : 0.18)
@@ -716,7 +858,9 @@ struct GameScreen: View {
     }
 
     private func showFilter(for collection: any PlateCollection) {
-        popup.present("Show", message: "Choose what the grid draws.") {
+        // Matches the panel's own VoiceOver hint word for word, so the same
+        // control is not called two things.
+        popup.present("Show", message: "Choose which plates to show.") {
             // `leftInRegion` is a closure rather than a snapshot so the per-set counts
             // stay live while the panel is open — collecting via Siri or a repeat tap
             // behind the popup should not leave stale numbers on screen. Indexing
@@ -774,10 +918,17 @@ struct GameScreen: View {
         let mine = collection.removableSightings(of: plate.code, by: me,
                                                  protected: rules.protectsClaims)
         guard !mine.isEmpty else {
-            let who = collection.plateIndex().spotter(plate.code)?.name
-            notice = Notice(text: who.map { "\($0) spotted that one." }
-                                  ?? "That one is not yours to take back.",
-                            tint: Theme.inkMuted)
+            // Spelled out rather than `who.map { … } ?? …`: a literal inside a
+            // closure is not somewhere the compiler reliably looks for catalog
+            // keys, and both of these are sentences somebody has to be able to
+            // reword.
+            let text: LocalizedStringKey
+            if let who = collection.plateIndex().spotter(plate.code)?.name {
+                text = "\(who) spotted that one."
+            } else {
+                text = "That one is not yours to take back."
+            }
+            notice = Notice(text: text, tint: Theme.inkMuted)
             Haptics.undo()
             return
         }
@@ -807,10 +958,9 @@ struct GameScreen: View {
             $0.spottedAt.formatted(date: .abbreviated, time: .omitted)
         }
 
-        let message: String
+        let message: LocalizedStringKey
         if collection is Book, let since {
-            message = "It has been in \(collection.name) since \(since). "
-                    + "Removing it takes that date with it, and the app cannot work it out again."
+            message = "It has been in \(collection.name) since \(since). Removing it takes that date with it, and the app cannot work it out again."
         } else if let since {
             message = "Spotted \(since). Removing it takes back the points it scored."
         } else {
@@ -835,6 +985,8 @@ struct GameScreen: View {
     /// "Remove one" takes the most recent, which is the one the mistaken tap made.
     private func uncheck(_ plate: Plate, in collection: any PlateCollection) {
         guard collection.scoringMode == .unlimited, collection.hasSeen(plate) else { return }
+        // Held a plate — which is the whole of what the tip was going to say.
+        coach.dismiss(.uncheck)
         uncheckOpened = Date()
 
         // The same ownership rules as a tap-to-clear: in a party with protected
@@ -844,22 +996,31 @@ struct GameScreen: View {
         let mine = collection.removableSightings(of: plate.code, by: me,
                                                  protected: rules.protectsClaims)
         guard !mine.isEmpty else {
-            let who = collection.plateIndex().spotter(plate.code)?.name
-            notice = Notice(text: who.map { "\($0) spotted that one." }
-                                  ?? "That one is not yours to take back.",
-                            tint: Theme.inkMuted)
+            // Spelled out rather than `who.map { … } ?? …`: a literal inside a
+            // closure is not somewhere the compiler reliably looks for catalog
+            // keys, and both of these are sentences somebody has to be able to
+            // reword.
+            let text: LocalizedStringKey
+            if let who = collection.plateIndex().spotter(plate.code)?.name {
+                text = "\(who) spotted that one."
+            } else {
+                text = "That one is not yours to take back."
+            }
+            notice = Notice(text: text, tint: Theme.inkMuted)
             Haptics.undo()
             return
         }
 
         let total = collection.sightingCount(for: plate)
-        let message = mine.count == total
-            ? "Counted \(total) time\(total == 1 ? "" : "s"). Removing takes back the "
-              + "most recent sighting and the points it scored."
-            : "Counted \(total) times, \(mine.count) of them yours. You can only take "
-              + "back your own."
+        let message: LocalizedStringKey = mine.count == total
+            ? "Counted ^[\(total) time](inflect: true). Removing takes back the most recent sighting and the points it scored."
+            : "Counted \(total) times, \(mine.count) of them yours. You can only take back your own."
 
-        popup.present(plate.name, message: message) {
+        // `verbatim:` — the title here is the plate's own name, which is data and
+        // not one of the app's phrases. Passed as a key it would be looked up in
+        // the catalog, and in another language a plate called "More" would come
+        // back as the translation of the tab.
+        popup.present(verbatim: plate.name, message: message) {
             PopupButton(title: mine.count == 1 ? "Remove it" : "Remove one",
                         kind: .destructive) {
                 if let latest = mine.max(by: { SightingOrder($0) < SightingOrder($1) }) {
@@ -880,6 +1041,11 @@ struct GameScreen: View {
     private func record(_ plate: Plate, by player: Player?) {
         guard let collection else { return }
 
+        // Doing the thing dismisses the tip about doing the thing — and the
+        // celebration that follows is a far better explanation than the balloon was.
+        // A no-op unless that balloon is actually up.
+        coach.dismiss(.firstTap)
+
         let outcome = PlateLogger.record(plate, in: collection, by: player,
                                          at: location.coordinate, context: context)
 
@@ -894,40 +1060,112 @@ struct GameScreen: View {
         if plate.region == .state, collection.statesFound == Plate.stateTotal {
             Haptics.milestone()
         }
+
     }
 
-    /// Told once, to the only people it happens to.
+    /// Ask a phone that has never said who it is, at the first moment the answer
+    /// could matter, and not again until it is relaunched.
     ///
-    /// An install carrying several players was, until this version, asked on every
-    /// tap which of them had spotted the plate. That prompt is gone and everything
-    /// now lands on this phone's own player, which is a change those people would
-    /// otherwise discover by tapping a plate and watching it go to the wrong person.
-    /// Nothing about their data moves: every past attribution, score and standing is
-    /// exactly where it was.
-    private func noticeTheChangeOnce() {
-        // A fresh install has one seeded, unnamed player and nothing to explain, so
-        // it gets asked who it is instead. The two are mutually exclusive: an install
-        // with a roster to migrate has names already.
-        guard DevicePlayer.needsMigrationNotice(players: players) else {
-            if !DevicePlayer.hasProfile {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { namingMe = true }
-            }
-            return
-        }
-        DevicePlayer.migrationNoticeShown()
+    /// Anything with players already in the store had `markProfileSet` called at
+    /// launch — those people chose their names months ago and asking again would be
+    /// the app forgetting somebody it knows.
+    ///
+    /// Waiting for a collection is not politeness, it is what makes the answer
+    /// trustworthy. A fresh install opens on the trip-or-book fork with an empty
+    /// store, and asking a stranger their name over the top of the first choice the
+    /// app has offered them is an ambush. More usefully, a *restored* install opens
+    /// on that same empty fork because iCloud has not delivered anything yet — so
+    /// holding the question until there is something to fill means it is asked at
+    /// roughly the moment the rest of the account has landed, which is the difference
+    /// between offering somebody their own name and inventing them a second one.
+    /// `IdentityPrompt` is what does the offering.
+    ///
+    /// This used to also carry a one-time notice that the "who spotted it?" prompt
+    /// had become the party, shown to installs with more than one player. It is gone:
+    /// a popup explaining a prompt that no longer exists is itself the interruption it
+    /// was apologising for, and it landed on people the moment they opened the screen
+    /// they came to play on.
+    /// Offer "tap one" to a grid that has never had a plate on it.
+    ///
+    /// The condition is the whole trigger: something to fill, and nothing filled in.
+    /// It is a fact about state rather than a step in a sequence, which is why it can
+    /// be called from two places and called repeatedly — `CoachPresenter.request`
+    /// makes a redundant ask free. That also means it is right for somebody who
+    /// starts a *second* collection a year in: an empty grid is an empty grid. The
+    /// ledger, not the trigger, is what stops it happening twice.
+    /// What this screen's three marks say.
+    ///
+    /// Beside the triggers that fire them rather than in a table in another file, so
+    /// changing what a tip says never means editing two places. A stored property
+    /// rather than a literal in the modifier chain for the same reason
+    /// `offerGridTips` exists: three dictionary entries inline were enough to put
+    /// `body` past what the type checker will attempt.
+    private static let coachCopy: [Coach.Tip: LocalizedStringResource] = [
+        .firstTap: "See one of these on the road? Tap it.",
+        .uncheck: "Every tap counts again here. Hold a plate to take one back.",
+        .spotterChip: "The colored corner is who called it."
+    ]
 
+    /// Ask on behalf of all three of this screen's marks, in the order they matter.
+    ///
+    /// One call site rather than three modifiers, which is not only tidiness: the
+    /// body of this view is close enough to the type checker's ceiling that adding a
+    /// third `.onAppear` to the chain was the change that pushed it over. Each ask is
+    /// free when its trigger is false, so calling all three every time costs nothing.
+    private func offerGridTips() {
+        offerFirstTapTip()
+        offerUncheckTip()
+        offerSpotterTip()
+    }
+
+    private func withdrawGridTips() {
+        coach.withdraw(.firstTap)
+        coach.withdraw(.uncheck)
+        coach.withdraw(.spotterChip)
+    }
+
+    private func offerFirstTapTip() {
+        guard let collection else { return }
+        coach.request(.firstTap, when: collection.allSightings.isEmpty)
+    }
+
+    /// The long press is the only gesture in the app with nothing on screen to
+    /// suggest it, and it only exists in one scoring mode.
+    ///
+    /// Deliberately not offered the moment unlimited mode is chosen — offered after
+    /// something has been counted. The tip is "take one back", and taking one back
+    /// is meaningless until there is one. That is also the moment it starts
+    /// mattering: the second tap on the same plate is when somebody first wonders
+    /// whether they can undo the first.
+    private func offerUncheckTip() {
+        guard let collection, collection.scoringMode == .unlimited else { return }
+        coach.request(.uncheck, when: !collection.allSightings.isEmpty)
+    }
+
+    /// The coloured corner, explained the first time one is on screen.
+    ///
+    /// This is the only tip in the app about something that arrived rather than
+    /// something you can do — a party landed, or a shared book synced, and suddenly
+    /// tiles are wearing marks that were not there yesterday. There is no action to
+    /// take and no "done" to reach, so it is spent by being shown and nothing else.
+    ///
+    /// Gated on a sighting by *somebody else*, not on the party being open. Your own
+    /// chip needs no explaining, and in a two-person party the chips are invisible
+    /// until the other person actually calls something.
+    private func offerSpotterTip() {
+        guard let collection, participants.count > 1 else { return }
+        let me = DevicePlayer.resolve(from: players)
+        coach.request(.spotterChip,
+                      when: collection.allSightings.contains {
+                          $0.player != nil && $0.player?.id != me?.id
+                      })
+    }
+
+    private func introduceThisPhoneOnce() {
+        guard !DevicePlayer.hasProfile, !askedWhoIsPlaying, collection != nil else { return }
+        askedWhoIsPlaying = true
         // After the screen has settled, or it competes with the first render.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-            popup.present(
-                "Multiplayer is now a party",
-                message: "Everyone plays from their own phone instead of sharing "
-                       + "yours, so Plates no longer asks who spotted each plate. "
-                       + "Every plate you have already collected is untouched. "
-                       + "Start a party from the More tab."
-            ) {
-                PopupButton(title: "Got it") { popup.dismiss() }
-            }
-        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { namingMe = true }
     }
 
     private func celebrate(_ plate: Plate, in collection: (any PlateCollection)?) {
@@ -949,6 +1187,12 @@ struct GameScreen: View {
 
     private func dismissCelebration() {
         withAnimation(.easeIn(duration: 0.28)) { celebrating = nil }
+        // The first find in an unlimited collection is the moment the long-press
+        // tip becomes worth showing, and this is the moment that find is finished
+        // being celebrated. Asked here rather than in `record` so the balloon
+        // cannot arrive beside the find card — that card is not a popup, so
+        // `CoachLayer` has no way to stand down under it.
+        offerUncheckTip()
     }
 
     /// Takes back `doomed`, or everything of this plate when no list is given.
@@ -1053,8 +1297,7 @@ struct GameScreen: View {
         // starting a drive from this screen, so both tabs keep a create button above
         // the fold as well as at the end of their list.
         popup.present("What are you filling?",
-                      message: "Plates are saved against whichever of these is picked. "
-                             + "New trips and books are made on the Trips and Books tabs.") {
+                      message: "Plates you tap go into whichever one you pick. Start new ones on the Trips and Books tabs.") {
             PopupPicker(groups: groups)
         }
     }
@@ -1087,7 +1330,7 @@ struct TileButtonStyle: ButtonStyle {
 /// The colour arrives as a dot rather than a word, because the interesting thing
 /// about somebody else's plate is that it happened, not what it scored.
 private struct NoticeToast: View {
-    let text: String
+    let text: LocalizedStringKey
     let tint: Color
 
     var body: some View {
@@ -1118,6 +1361,9 @@ private struct NoticeToast: View {
 /// same message arrives twice running.
 struct Notice: Identifiable, Equatable {
     let id = UUID()
-    let text: String
+    /// A key, like everything else the app says. `Equatable` still works —
+    /// `LocalizedStringKey` compares by key and arguments, which is what the
+    /// toast's animation identity needs anyway.
+    let text: LocalizedStringKey
     let tint: Color
 }

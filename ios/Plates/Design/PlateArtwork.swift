@@ -22,8 +22,12 @@ import SwiftUI
 // `offset` is a fraction of the tile's own width/height, not points, so it
 // holds at every size the tile renders at — the Game grid, the trail map pin.
 //
-// Wyoming and Yukon are absent: no free photograph of either exists, so
-// they keep PlateStyle's vector art and PlateStyle's ink.
+// Every jurisdiction has a tile. Yukon was the last without one and is
+// the only whose master was drawn from a written description rather than
+// against a photograph — Commons has no Yukon plate newer than 1979 — so
+// its ink is hand-set in OVERRIDE instead of sampled. No jurisdiction now
+// falls through to PlateStyle's vector motifs: they survive only as the
+// `?? .fallback` safety net and in PlateBench.
 enum PlateArtwork {
     struct Entry {
         let ink: UInt32
@@ -104,6 +108,7 @@ enum PlateArtwork {
         "WI": Entry(ink: 0x21272A, field: 0xFEFEFE, halo: false, scrim: 0.0, offsetX: 0.022, offsetY: 0.094, embossHex: 0xFFFFFF, asset: "PlateArt/WI"),   // sampled — black
         "WV": Entry(ink: 0x112356, field: 0xF9F7F6, halo: false, scrim: 0.0, offsetX: 0.013, offsetY: 0.035, embossHex: 0xFFFFFF, asset: "PlateArt/WV"),   // sampled — navy
         "WY": Entry(ink: 0xF0EEE5, field: 0x293857, halo: true , scrim: 0.0, offsetX: 0.0, offsetY: 0.0, embossHex: 0x000000, asset: "PlateArt/WY"),   // sampled — white
+        "YT": Entry(ink: 0x1A1A1A, field: 0xEDEDEB, halo: false, scrim: 0.0, offsetX: 0.001, offsetY: -0.007, embossHex: 0xFFFFFF, asset: "PlateArt/YT"),   // no photograph — 'black on reflective white' is the whole source; see PROMPTS['YT'] in plate_art_generate.py
     ]
 
     static func has(_ code: String) -> Bool { table[code] != nil }

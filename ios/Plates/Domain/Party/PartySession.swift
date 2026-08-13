@@ -128,9 +128,36 @@ final class PartySession {
     /// to give up waiting ourselves.
     private var joinWatch: Task<Void, Never>?
 
-    /// Long enough for a phone to answer over a car's worth of Bluetooth, short
-    /// enough that a wrong code is a mistake rather than an outage.
-    private static let inviteTimeout: TimeInterval = 12
+    /// When the current invitation left, so a failure can be dated against the
+    /// deadline. See `disconnected` for why the date matters.
+    private var invitedAt: Date?
+
+    /// How long to wait for the host's phone to answer at all.
+    ///
+    /// Thirty seconds, which is Apple's own default on `invitePeer`, and it used to
+    /// be twelve. Twelve is generous between two simulators — they talk over the
+    /// Mac's loopback and connect almost instantly — and every party test this
+    /// feature has had was simulator to simulator. On real phones the first
+    /// connection has to bring up peer-to-peer Wi-Fi, which routinely takes ten to
+    /// twenty seconds, so twelve was a coin toss that the app reported as a wrong
+    /// code. Waiting is cheap and the guest is watching a spinner either way;
+    /// telling somebody their code is wrong when it is not costs them the drive.
+    private static let inviteTimeout: TimeInterval = 30
+
+    /// Why a join did not happen. The three are genuinely different situations with
+    /// genuinely different fixes, and the app used to say the same sentence for all
+    /// of them — the one about checking the code, which is the right advice for
+    /// exactly one.
+    enum JoinFailure: Equatable {
+        /// The host's phone answered, and said no. It is the only phone that knows
+        /// the code, so this is as close to "wrong code" as the transport can get.
+        case refused
+        /// Nothing came back before the deadline. The host may be out of range, may
+        /// have closed the party, or may never have heard the invitation.
+        case silence
+        /// The host stopped advertising while we were waiting.
+        case vanished
+    }
 
     /// The host said goodbye. Distinct from merely being disconnected — one is
     /// waiting to reconnect, the other is over, and re-inviting after the second
@@ -286,10 +313,16 @@ final class PartySession {
         // Provisional until the host's snapshot says otherwise, which is a moment
         // later. Starting from the protective default rather than the permissive one
         // means the gap cannot be used to clear somebody's plates.
+        //
+        // Read from the ledger, but no longer written to it here. Writing on the
+        // attempt meant a wrong code, a mistyped tap or a host out of range left a
+        // permanent record that this device had been a guest of a trip it never
+        // reached — `wasParty` true, a party badge, and rules for a party that
+        // never happened. The record is written in `connected`, which is the moment
+        // it becomes a fact.
         rules = PartyLedger.shared.rules(for: party.tripID)
-        PartyLedger.shared.note(trip: party.tripID, role: "guest", rules: rules,
-                                hostName: party.hostName)
         guard let payload = code.data(using: .utf8) else { return }
+        invitedAt = Date()
         browser.invitePeer(party.peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)
 
@@ -300,23 +333,43 @@ final class PartySession {
             // where it says nothing at all.
             try? await Task.sleep(for: .seconds(Self.inviteTimeout + 1))
             guard !Task.isCancelled else { return }
-            self?.joinFailed()
+            self?.joinFailed(.silence)
         }
     }
 
-    /// The host never let us in — wrong code, or out of range, and nothing in the
-    /// transport can tell us which.
+    /// The host never let us in, and *why* is the whole of what the guest needs.
     ///
-    /// Both are worth saying out loud and both are worth retrying, so the party goes
-    /// back in the list and the message leads with the cause that is actually somebody
-    /// in the car's to fix.
-    private func joinFailed() {
+    /// This used to say one sentence — check the four characters — no matter what
+    /// had happened. That is correct advice for a refusal and actively misleading
+    /// for the other two: somebody whose phone simply never heard the invitation
+    /// spent the drive retyping a code that was right all along. The transport
+    /// cannot hand us a reason, but the *call site* is the reason: a refusal comes
+    /// back as a disconnection, silence comes from our own watchdog, and a host that
+    /// stops advertising comes from the browser. See `JoinFailure`.
+    ///
+    /// The party goes back in the list either way, because all three are worth
+    /// trying again.
+    private func joinFailed(_ why: JoinFailure) {
         guard let target = joining else { return }
         settleJoin()
         hostPeer = nil
-        if !nearby.contains(where: { $0.peer == target.peer }) { nearby.append(target) }
-        trouble = "Could not join \(target.tripName). Check the four characters on "
-                + "\(target.hostName)'s phone and tap the trip again."
+        // Back in the list to be tapped again — except when the host has stopped
+        // advertising, where re-adding it would put a row on screen that cannot
+        // work. `lost` has just taken it out, and `found` puts it straight back if
+        // the party returns; listing a phone that is not there is how this screen
+        // got its reputation.
+        if why != .vanished, !nearby.contains(where: { $0.peer == target.peer }) {
+            nearby.append(target)
+        }
+
+        switch why {
+        case .refused:
+            trouble = String(localized: "\(target.hostName)'s phone turned you away, which almost always means the four characters did not match. Check the code showing on it and tap \(target.tripName) again.")
+        case .silence:
+            trouble = String(localized: "No answer from \(target.hostName)'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap \(target.tripName) again.")
+        case .vanished:
+            trouble = String(localized: "\(target.hostName)'s phone stopped advertising \(target.tripName). If the party is still running, wait a moment and tap it again.")
+        }
     }
 
     /// The invitation is no longer outstanding, however it ended.
@@ -324,6 +377,7 @@ final class PartySession {
         joinWatch?.cancel()
         joinWatch = nil
         joining = nil
+        invitedAt = nil
     }
 
     /// Back again after a drop.
@@ -335,7 +389,8 @@ final class PartySession {
     private func rejoin(_ peer: MCPeerID) {
         guard role == .guest, hasJoined, !hasEnded, !isConnected,
               let browser, let payload = code.data(using: .utf8) else { return }
-        browser.invitePeer(peer, to: session, withContext: payload, timeout: 20)
+        browser.invitePeer(peer, to: session, withContext: payload,
+                           timeout: Self.inviteTimeout)
     }
 
     /// Back from the background: start the radios again, and catch up anyone still
@@ -527,8 +582,15 @@ final class PartySession {
             }
         }()
 
+        // Whether this peer gets to say what the trip *is* — its name, its scoring,
+        // whether it has ended. A host is never told any of that by a guest, and a
+        // guest only listens to the host it actually joined. The same test
+        // `adoptRules` makes, applied to the rest of the trip's settings.
+        let fromHost = role == .guest && peer == hostPeer
+
         let wasThere = localTrip() != nil
-        let outcome = PartyMerge.apply(envelope, into: context, tombstones: tombstones)
+        let outcome = PartyMerge.apply(envelope, into: context,
+                                       tombstones: tombstones, fromHost: fromHost)
 
         // A guest that has just been handed the trip should be *looking* at it.
         // Joining a party and still seeing your own unrelated trip would make the
@@ -668,9 +730,16 @@ final class PartySession {
         if !members.contains(peer.displayName) { members.append(peer.displayName) }
         isConnected = !session.connectedPeers.isEmpty
         trouble = nil
-        // We are in. Only now is this a party worth silently reconnecting to.
+        // We are in. Only now is this a party worth silently reconnecting to —
+        // and only now is "this device was a guest of that trip" true enough to
+        // write down. `joining` still holds the advertisement for another line or
+        // two, which is where the host's name comes from.
         if role == .guest, peer == hostPeer {
             hasJoined = true
+            if let target = joining {
+                PartyLedger.shared.note(trip: tripID, role: "guest", rules: rules,
+                                        hostName: target.hostName)
+            }
             settleJoin()
         }
         greet(peer)
@@ -683,13 +752,26 @@ final class PartySession {
         // A refused invitation arrives here rather than as an error, and it is the
         // one disconnection that is not a dropout: we were never in. Checked first,
         // because the two want opposite things said and opposite things done.
-        if let target = joining, peer == target.peer, !hasJoined { return joinFailed() }
+        //
+        // But not every not-connected is a refusal. When `invitePeer`'s own timeout
+        // expires the framework delivers this same callback, and reading that as
+        // "the host said no" tells somebody their code is wrong because nothing
+        // answered — the exact misdiagnosis the failure split exists to kill, kept
+        // alive on the one path a simulator cannot exercise. A refusal is quick; the
+        // framework's own timeout is by definition at the deadline. So a
+        // disconnection in the deadline's last breath is reported as silence.
+        if let target = joining, peer == target.peer, !hasJoined {
+            let ranOutTheClock = invitedAt.map {
+                Date().timeIntervalSince($0) >= Self.inviteTimeout - 2
+            } ?? false
+            return joinFailed(ranOutTheClock ? .silence : .refused)
+        }
 
         // Not an error, and deliberately not reported as one. Dropping out is the
         // normal state of a phone in a pocket; the browser is still running and
         // `found` puts it straight back the moment the host is in range again.
         if role == .guest, peer == hostPeer, hasJoined, !hasEnded {
-            trouble = "Lost the party \u{2014} looking for it again\u{2026}"
+            trouble = "Lost the party. Looking for it again\u{2026}"
         }
     }
 
@@ -710,22 +792,58 @@ final class PartySession {
             return rejoin(peer)
         }
 
-        guard !nearby.contains(where: { $0.peer == peer }) else { return }
-        nearby.append(Nearby(peer: peer, tripID: id,
-                             tripName: info?["trip"] ?? "A trip",
-                             hostName: info?["host"] ?? peer.displayName))
+        let fresh = Nearby(peer: peer, tripID: id,
+                           tripName: info?["trip"] ?? "A trip",
+                           hostName: info?["host"] ?? peer.displayName)
+        // Replace, keyed on the trip, not the peer. The rejoin path above already
+        // knows a peer id dies with its process; this list forgot. A host whose app
+        // restarted came back as a new peer advertising the same trip, and until the
+        // framework got around to `lostPeer` — which it does lazily, sometimes not
+        // for minutes — the list held both. Worse, the two rows shared a `Nearby.id`,
+        // so the `ForEach` drew only the first: the dead one. The guest tapped the
+        // party in front of them, invited a phone that no longer existed, and got
+        // thirty seconds of spinner for it — with nothing to see on the host's
+        // screen, because the host was never asked. One trip, one row, and a fresh
+        // advertisement always wins the seat.
+        if let stale = nearby.firstIndex(where: { $0.tripID == id || $0.peer == peer }) {
+            nearby[stale] = fresh
+        } else {
+            nearby.append(fresh)
+        }
     }
 
     fileprivate func lost(_ peer: MCPeerID) {
         nearby.removeAll { $0.peer == peer }
+        // Waiting on a phone that has just stopped advertising. Said now rather than
+        // left to the watchdog, which would sit there for another half a minute and
+        // then blame the code.
+        if let target = joining, peer == target.peer, !hasJoined {
+            joinFailed(.vanished)
+        }
     }
 
     /// The host is the only side that can answer this, because it is the only side
     /// that knows the code.
+    ///
+    /// It is also, until now, the only side that stayed silent about it. A wrong code
+    /// was rejected here without a word, so the phone that *knew* what had gone wrong
+    /// said nothing and the phone that could only guess did all the talking. Saying
+    /// it on the host turns a minute of retyping into somebody in the front seat
+    /// reading the code out again.
+    ///
+    /// Deliberately not a prompt, and not a decision. Nobody is being asked to admit
+    /// anybody: the code is the door, and this is a notice that somebody tried the
+    /// handle with the wrong key.
     fileprivate func shouldAdmit(_ peer: MCPeerID, offering context: Data?) -> Bool {
         guard role == .host else { return false }
         let offered = context.flatMap { String(data: $0, encoding: .utf8) } ?? ""
-        return Self.tidy(offered) == code
+        guard Self.tidy(offered) == code else {
+            trouble = String(localized: "\(peer.displayName) tried to join with the wrong code. The code for this party is \(code).")
+            return false
+        }
+        // A previous wrong attempt, cleared by somebody getting it right.
+        if trouble != nil { trouble = nil }
+        return true
     }
 
     fileprivate func failed(_ what: String) { trouble = what }
@@ -821,7 +939,16 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
                     withContext context: Data?,
                     invitationHandler: @escaping (Bool, MCSession?) -> Void) {
         Task { @MainActor [weak owner] in
-            guard let owner, owner.shouldAdmit(peerID, offering: context) else {
+            guard let owner else { return invitationHandler(false, nil) }
+            #if DEBUG
+            // `-partyIgnore` drops the invitation without answering it, which is
+            // exactly what a host out of range looks like from the other phone.
+            // Without it the guest's "no answer" message can only be reached by
+            // physically walking away mid-join, so it would ship untested — and it
+            // is one of the two the whole `JoinFailure` split exists to separate.
+            if ProcessInfo.processInfo.arguments.contains("-partyIgnore") { return }
+            #endif
+            guard owner.shouldAdmit(peerID, offering: context) else {
                 return invitationHandler(false, nil)
             }
             invitationHandler(true, owner.mcSession)

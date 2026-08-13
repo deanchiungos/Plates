@@ -91,6 +91,42 @@ opaque, the sharpest thing on the plate.
 
 The upper and lower edges of the navy field are clear.""",
 
+    # THE ONE PROMPT NOT WRITTEN AGAINST A PHOTOGRAPH. There is no
+    # research/images/primary/YT.jpg: Commons has no Yukon plate newer than 1979, which
+    # is the same hole that left YT falling back to a vector motif while the other 64
+    # got masters. This is written from the design description in
+    # research/plate-history.csv instead —
+    #
+    #   "Black on reflective white with border line; screened prospector at left;
+    #    screened red 'Yukon' centred on sky blue band at bottom"
+    #
+    # The souvenir photograph in Resources/CurrentPlates is a novelty reproduction
+    # carrying an invented serial, and it is not a source for this: copying its
+    # proportions would be tracing a product shot rather than illustrating a design.
+    "YT": """\
+A Canadian licence plate face for Yukon, the 1990-to-present design.
+
+The field is flat reflective off-white, very slightly cool rather than pure white. A
+single thin black line runs around the whole plate a short distance inside its edge,
+following the rounded corners.
+
+Over the left third, a screen-printed gold prospector, kneeling on one knee and
+tilting a shallow pan toward the viewer. He is drawn as flat two-tone shapes with no
+shading at all: burnt orange for his broad-brimmed hat, coat and boots, solid black
+for the shadowed side of the figure and for his beard, and a small dull-gold ellipse
+of gravel in the pan. Printed directly onto the white with no outline box around him.
+
+Along the bottom edge, a sky-blue horizontal band spanning the full width of the
+plate, about a sixth of its height, with one fine white pinstripe running through it
+lengthwise. This band is completely empty.
+
+Near the top, two thin horizontal rules in red over orange — one reaching in from the
+left edge, one from the right — each stopping well short of the middle and ending in
+a small red diamond. The wide gap between the two diamonds is plain white.
+
+The whole centre of the plate, between the prospector and the right edge, is clear
+off-white.""",
+
     "KS": """\
 A US licence plate face for Kansas, 2024 "To the Stars" design.
 

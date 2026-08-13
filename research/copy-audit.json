@@ -1,1940 +1,2606 @@
-[
- {
-  "file": "Design/PlateTile.swift",
-  "line": 154,
-  "kind": "Text",
-  "text": "\\(repeatCount)"
- },
- {
-  "file": "Design/PopupPicker.swift",
-  "line": 82,
-  "kind": "Text",
-  "text": "Nothing called \\u{201C}\\(query)\\u{201D}"
- },
- {
-  "file": "Design/PopupPicker.swift",
-  "line": 108,
-  "kind": "Text",
-  "text": "\\(count)"
- },
- {
-  "file": "Design/PopupPicker.swift",
-  "line": 124,
-  "kind": "Text",
-  "text": "Show all \\(matches.count)"
- },
- {
-  "file": "Design/PopupPicker.swift",
-  "line": 167,
-  "kind": "TextField",
-  "text": "Search \\(total)"
- },
- {
-  "file": "Design/PopupPicker.swift",
-  "line": 182,
-  "kind": "a11yLabel",
-  "text": "Clear search"
- },
- {
-  "file": "Design/RarityTier.swift",
-  "line": 38,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "COMMON"
- },
- {
-  "file": "Design/RarityTier.swift",
-  "line": 39,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "UNCOMMON"
- },
- {
-  "file": "Design/RarityTier.swift",
-  "line": 40,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "RARE"
- },
- {
-  "file": "Design/RarityTier.swift",
-  "line": 41,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "EPIC"
- },
- {
-  "file": "Design/RarityTier.swift",
-  "line": 42,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "LEGENDARY"
- },
- {
-  "file": "Design/RarityTier.swift",
-  "line": 220,
-  "kind": "Text",
-  "text": "tap to dismiss"
- },
- {
-  "file": "Design/RarityTier.swift",
-  "line": 237,
-  "kind": "a11yLabel",
-  "text": "\\(tier.label) find. \\(plateName). \\(fact ?? "
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 113,
-  "kind": "navTitle",
-  "text": "Collection"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 123,
-  "kind": "a11yLabel",
-  "text": "Start a new book"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 260,
-  "kind": "a11yLabel",
-  "text": "Shared"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 263,
-  "kind": "Text",
-  "text": "SWITCH"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 314,
-  "kind": "a11yLabel",
-  "text": "Edit \\(book.name)"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 331,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Across every book and trip"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 393,
-  "kind": "detail:",
-  "text": "\\(b.found(in: plates)) / \\(plates.count)"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 421,
-  "kind": "Text",
-  "text": "Trips you run will be listed here to compare."
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 433,
-  "kind": "Text",
-  "text": "Every trip you have run, newest first. The bar compares states found."
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 471,
-  "kind": "popup.present",
-  "text": "Which book?"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 472,
-  "kind": "popup message",
-  "text": "Picking a book here changes what you are looking at, and which book Drive fills."
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 475,
-  "kind": "PopupChoice",
-  "text": "All time"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 476,
-  "kind": "subtitle:",
-  "text": "Every plate ever, across all books and trips"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 483,
-  "kind": "PopupButton",
-  "text": "New book"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 502,
-  "kind": "popup message",
-  "text": "\\(count) plate\\(count == 1 ? "
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 505,
-  "kind": "PopupButton",
-  "text": "Empty book"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 517,
-  "kind": "PopupButton",
-  "text": "Keep them"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 528,
-  "kind": "PopupButton",
-  "text": "Delete book"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 538,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 576,
-  "kind": "Text",
-  "text": "\\u{00D7}\\(entry.count)"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 615,
-  "kind": "Text",
-  "text": "\\(summary.statesFound)"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 619,
-  "kind": "Text",
-  "text": "states"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 643,
-  "kind": "Label",
-  "text": "\\(summary.platesFound) plates"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 644,
-  "kind": "Label",
-  "text": "\\(summary.days)d"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 718,
-  "kind": "Text",
-  "text": "Plates are checked off on the Drive screen."
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 724,
-  "kind": "title:",
-  "text": "Facts"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 724,
-  "kind": "detail:",
-  "text": "\\(seen.count) of \\(total)"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 738,
-  "kind": "Text",
-  "text": "Locked"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 757,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 810,
-  "kind": "Text",
-  "text": "BOOK NAME"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 815,
-  "kind": "TextField",
-  "text": "My Plate Book"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 855,
-  "kind": "Button",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 874,
-  "kind": "Text",
-  "text": "\\(book.statesFound) of \\(Plate.stateTotal) states"
- },
- {
-  "file": "Screens/CollectionScreen.swift",
-  "line": 978,
-  "kind": "Text",
-  "text": "Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are."
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 201,
-  "kind": "Label",
-  "text": "Nothing to fill yet"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 203,
-  "kind": "Text",
-  "text": "A trip is one drive with a route and a finish. A book you just keep adding to."
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 206,
-  "kind": "Button",
-  "text": "Start a trip"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 209,
-  "kind": "Button",
-  "text": "Start a book"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 360,
-  "kind": "title:",
-  "text": "Who's playing?"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 399,
-  "kind": "a11yLabel",
-  "text": "Voice mode"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 400,
-  "kind": "a11yHint",
-  "text": "Listens and logs plates as you say them"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 448,
-  "kind": "Text",
-  "text": "Playing with others? Start a party"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 478,
-  "kind": "title:",
-  "text": "States"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 479,
-  "kind": "detail:",
-  "text": "\\(collection.statesFound) / \\(Plate.stateTotal) found"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 490,
-  "kind": "title:",
-  "text": "Bonus plates"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 491,
-  "kind": "detail:",
-  "text": "\\(collection.bonusFound) / \\(Plate.bonus.count) found"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 555,
-  "kind": "Text",
-  "text": "Canada"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 564,
-  "kind": "Text",
-  "text": "\\(collection.provincesFound) / \\(Plate.provinces.count) found"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 595,
-  "kind": "Text",
-  "text": "Nothing left to find"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 598,
-  "kind": "Text",
-  "text": "Every plate in the sets you are hunting is already found."
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 604,
-  "kind": "Button",
-  "text": "Show everything"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 708,
-  "kind": "popup.present",
-  "text": "Show"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 708,
-  "kind": "popup message",
-  "text": "Choose what the grid draws."
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 818,
-  "kind": "PopupButton",
-  "text": "Remove all \\(mine.count)"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 823,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 870,
-  "kind": "popup message",
-  "text": "Everyone plays from their own phone instead of sharing "
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 875,
-  "kind": "PopupButton",
-  "text": "Got it"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 994,
-  "kind": "popup.present",
-  "text": "What are you filling?"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 995,
-  "kind": "popup message",
-  "text": "Plates are saved against whichever of these is picked."
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 998,
-  "kind": "PopupButton",
-  "text": "New trip"
- },
- {
-  "file": "Screens/GameScreen.swift",
-  "line": 1002,
-  "kind": "PopupButton",
-  "text": "New book"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 45,
-  "kind": "navTitle",
-  "text": "Historical plates"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 99,
-  "kind": "a11yLabel",
-  "text": "Jurisdiction: \\(plate?.name ?? code). Change"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 134,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(count), \\(first)\\u{2013}\\(last)"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 138,
-  "kind": "Text",
-  "text": "Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed."
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 151,
-  "kind": "Text",
-  "text": "No photographs yet"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 154,
-  "kind": "Text",
-  "text": "Nobody has photographed a \\(plate?.name ?? code) plate for Wikimedia Commons."
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 205,
-  "kind": "Text",
-  "text": "Nothing matches \\u{201C}\\(query)\\u{201D}."
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 214,
-  "kind": "navTitle",
-  "text": "Jurisdiction"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 223,
-  "kind": "Button",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 248,
-  "kind": "Text",
-  "text": "\\(PlateHistoryBook.designs(for: plate.code).count)"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 286,
-  "kind": "Text",
-  "text": "IN ISSUE"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 405,
-  "kind": "navTitle",
-  "text": "\\(jurisdiction) \\(PlateDates.start(design.dates))"
- },
- {
-  "file": "Screens/HistoricalPlatesScreen.swift",
-  "line": 409,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 104,
-  "kind": "navTitle",
-  "text": "Map"
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 319,
-  "kind": "Text",
-  "text": "\\(found) / \\(total)"
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 386,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 405,
-  "kind": "Text",
-  "text": "Rarity \\(rarity) of 10\\(trip?.route == nil ? "
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 421,
-  "kind": "title:",
-  "text": "Facts"
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 421,
-  "kind": "detail:",
-  "text": "\\(seen.count) of \\(total)"
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 427,
-  "kind": "Text",
-  "text": "Facts unlock as you spot this plate. Every sighting reveals a new one."
- },
- {
-  "file": "Screens/MapScreen.swift",
-  "line": 452,
-  "kind": "Text",
-  "text": "Locked"
- },
- {
-  "file": "Screens/MoreScreen.swift",
-  "line": 26,
-  "kind": "title:",
-  "text": "Party"
- },
- {
-  "file": "Screens/MoreScreen.swift",
-  "line": 30,
-  "kind": "title:",
-  "text": "Plate lookup"
- },
- {
-  "file": "Screens/MoreScreen.swift",
-  "line": 34,
-  "kind": "title:",
-  "text": "Trail"
- },
- {
-  "file": "Screens/MoreScreen.swift",
-  "line": 38,
-  "kind": "title:",
-  "text": "Historical plates"
- },
- {
-  "file": "Screens/MoreScreen.swift",
-  "line": 42,
-  "kind": "title:",
-  "text": "Settings"
- },
- {
-  "file": "Screens/MoreScreen.swift",
-  "line": 51,
-  "kind": "navTitle",
-  "text": "More"
- },
- {
-  "file": "Screens/MoreScreen.swift",
-  "line": 87,
-  "kind": "Text",
-  "text": "PLATES"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 62,
-  "kind": "navTitle",
-  "text": "Party"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 69,
-  "kind": "title:",
-  "text": "Who's playing?"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 153,
-  "kind": "Text",
-  "text": "Everyone spots on their own phone"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 156,
-  "kind": "Text",
-  "text": "One person starts the party and reads out the code. "
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 175,
-  "kind": "Text",
-  "text": "Parties are for trips. Switch to a trip on the Game screen to start one."
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 220,
-  "kind": "Text",
-  "text": "Read this out. Everyone else taps Join and types it in."
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 248,
-  "kind": "title:",
-  "text": "Protect what people find"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 249,
-  "kind": "detail:",
-  "text": "Only the person who spotted a plate can take it back."
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 260,
-  "kind": "title:",
-  "text": "Everyone can claim a plate"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 261,
-  "kind": "detail:",
-  "text": "A state stays open after the first person calls it, so it counts for all of you."
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 308,
-  "kind": "Text",
-  "text": "Looking for parties in the car\\u{2026}"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 327,
-  "kind": "Text",
-  "text": "Hosted by \\(found.hostName)"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 360,
-  "kind": "Text",
-  "text": "The code \\(target.hostName) is showing"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 364,
-  "kind": "TextField",
-  "text": "ABCD"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 383,
-  "kind": "navTitle",
-  "text": "Join \\(target.tripName)"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 387,
-  "kind": "Button",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/PartyScreen.swift",
-  "line": 390,
-  "kind": "Button",
-  "text": "Join"
- },
- {
-  "file": "Screens/PlaceField.swift",
-  "line": 295,
-  "kind": "Label",
-  "text": "Map unavailable"
- },
- {
-  "file": "Screens/PlaceField.swift",
-  "line": 486,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(distance.string(fromDistance: route.distance)) \\u{00B7} \\(time)"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 42,
-  "kind": "a11yHint",
-  "text": "Choose which plates to show"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 47,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(leftCount) left"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 50,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(filter.sets.count) sets"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 73,
-  "kind": "PopupChoice",
-  "text": "Only what's left"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 74,
-  "kind": "subtitle:",
-  "text": "Hide plates you have already found"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 82,
-  "kind": "Text",
-  "text": "SETS"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 105,
-  "kind": "PopupButton",
-  "text": "Show everything"
- },
- {
-  "file": "Screens/PlateFilterPanel.swift",
-  "line": 112,
-  "kind": "PopupButton",
-  "text": "Done"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 44,
-  "kind": "navTitle",
-  "text": "Plate lookup"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 85,
-  "kind": "TextField",
-  "text": "Describe the plate you saw"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 100,
-  "kind": "a11yLabel",
-  "text": "Clear"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 118,
-  "kind": "Text",
-  "text": "Saw a plate you couldn't name?"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 127,
-  "kind": "Text",
-  "text": "Type whatever you remember about it. Any of these work:"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 128,
-  "kind": "Text",
-  "text": "\u2022 a colour, like blue or orange and black\\n"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 133,
-  "kind": "Text",
-  "text": "Mixing them works best: green plate with a lighthouse. "
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 142,
-  "kind": "Text",
-  "text": "TRY ONE"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 153,
-  "kind": "Text",
-  "text": "\\(PlateLookup.designs.count) designs, current and historic, "
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 175,
-  "kind": "Text",
-  "text": "Nothing matched that"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 180,
-  "kind": "Text",
-  "text": "No plate description mentions "
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 188,
-  "kind": "Text",
-  "text": "Try a colour, something drawn on it, or a word printed on it."
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 383,
-  "kind": "Text",
-  "text": "\\(variantCount)"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 481,
-  "kind": "Text",
-  "text": "EVERY \\(design.jurisdiction.uppercased()) DESIGN"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 521,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/PlateLookupScreen.swift",
-  "line": 552,
-  "kind": "Text",
-  "text": "Photo: "
- },
- {
-  "file": "Screens/PlateSearch.swift",
-  "line": 78,
-  "kind": "TextField",
-  "text": "State or code"
- },
- {
-  "file": "Screens/PlateSearch.swift",
-  "line": 88,
-  "kind": "a11yLabel",
-  "text": "Search plates by state or code"
- },
- {
-  "file": "Screens/PlateSearch.swift",
-  "line": 91,
-  "kind": "Text",
-  "text": "\\(matchCount)"
- },
- {
-  "file": "Screens/PlateSearch.swift",
-  "line": 104,
-  "kind": "a11yLabel",
-  "text": "Clear search"
- },
- {
-  "file": "Screens/PlateSearch.swift",
-  "line": 121,
-  "kind": "Button",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/PlayersScreen.swift",
-  "line": 43,
-  "kind": "Text",
-  "text": "NAME"
- },
- {
-  "file": "Screens/PlayersScreen.swift",
-  "line": 48,
-  "kind": "TextField",
-  "text": "Who is playing?"
- },
- {
-  "file": "Screens/PlayersScreen.swift",
-  "line": 64,
-  "kind": "Text",
-  "text": "FACE"
- },
- {
-  "file": "Screens/PlayersScreen.swift",
-  "line": 82,
-  "kind": "Text",
-  "text": "COLOUR"
- },
- {
-  "file": "Screens/PlayersScreen.swift",
-  "line": 109,
-  "kind": "a11yLabel",
-  "text": "Colour \\(i + 1)\\(taken ? "
- },
- {
-  "file": "Screens/PlayersScreen.swift",
-  "line": 116,
-  "kind": "Text",
-  "text": "Remove player"
- },
- {
-  "file": "Screens/PlayersScreen.swift",
-  "line": 135,
-  "kind": "Button",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/RegionMapView.swift",
-  "line": 303,
-  "kind": "a11yValue",
-  "text": "\\(foundCount) of \\(G.codes.count) regions found"
- },
- {
-  "file": "Screens/RootView.swift",
-  "line": 84,
-  "kind": "Label",
-  "text": "Game"
- },
- {
-  "file": "Screens/RootView.swift",
-  "line": 88,
-  "kind": "Label",
-  "text": "Map"
- },
- {
-  "file": "Screens/RootView.swift",
-  "line": 92,
-  "kind": "Label",
-  "text": "Book"
- },
- {
-  "file": "Screens/RootView.swift",
-  "line": 96,
-  "kind": "Label",
-  "text": "Trips"
- },
- {
-  "file": "Screens/RootView.swift",
-  "line": 100,
-  "kind": "Label",
-  "text": "More"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 44,
-  "kind": "navTitle",
-  "text": "Settings"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 145,
-  "kind": "Text",
-  "text": "Remove"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 167,
-  "kind": "popup message",
-  "text": "Plates they spotted stay collected \\u{2014} every count is unchanged. "
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 170,
-  "kind": "PopupButton",
-  "text": "Remove"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 176,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 218,
-  "kind": "Text",
-  "text": "Following the drive"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 244,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Not asked yet"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 258,
-  "kind": "Text",
-  "text": "Hands free"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 261,
-  "kind": "Text",
-  "text": "Say \\u{201C}Hey Siri, log a plate in Plates\\u{201D} \\u{2014} or name it outright, \\u{201C}log New Jersey in Plates\\u{201D}. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say \\u{201C}stop\\u{201D} when you are done."
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 276,
-  "kind": "Text",
-  "text": "Haptics"
- },
- {
-  "file": "Screens/SettingsScreen.swift",
-  "line": 303,
-  "kind": "Text",
-  "text": "Plates \\(short) (\\(build))"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 93,
-  "kind": "navTitle",
-  "text": "Trail"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 140,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "pin-"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 141,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "stop-"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 207,
-  "kind": "title:",
-  "text": "All time"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 208,
-  "kind": "subtitle:",
-  "text": "Every plate ever logged"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 249,
-  "kind": "popup.present",
-  "text": "Show which drive?"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 251,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 269,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "All time"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 355,
-  "kind": "Text",
-  "text": "No trail yet"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 358,
-  "kind": "Text",
-  "text": "Plates get a pin here when you log them with location turned on. Older ones have no pin \\u{2014} the app was not watching at the time."
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 870,
-  "kind": "Text",
-  "text": "\\(pins.count)"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 1112,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 1310,
-  "kind": "Text",
-  "text": "No plate here matches \\u{201C}\\(query)\\u{201D}."
- },
- {
-  "file": "Screens/Trail.swift",
-  "line": 1323,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 82,
-  "kind": "Text",
-  "text": "\\(trip.isActive ? "
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 88,
-  "kind": "Text",
-  "text": "SWITCH"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 123,
-  "kind": "Text",
-  "text": "\\(trip.statesFound) of \\(Plate.stateTotal)"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 162,
-  "kind": "Text",
-  "text": "PLATE BOOK"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 168,
-  "kind": "Text",
-  "text": "SWITCH"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 194,
-  "kind": "Text",
-  "text": "Collecting"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 196,
-  "kind": "Text",
-  "text": "\\(book.statesFound) of \\(Plate.stateTotal)"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 282,
-  "kind": "Text",
-  "text": "\\(entry.score)"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 301,
-  "kind": "a11yLabel",
-  "text": "\\(entry.player.name), \\(entry.score) points\\(isLeader ? "
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 369,
-  "kind": "Text",
-  "text": "Allow"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 390,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "location.circle.fill"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 391,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "location.slash"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 392,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "mappin.and.ellipse"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 393,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "location.magnifyingglass"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 400,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Location is off"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 401,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Where are you heading?"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 402,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Finding you\\u{2026}"
- },
- {
-  "file": "Screens/TripHeader.swift",
-  "line": 417,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Pin a destination on this trip and the rail will show how far is left."
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 51,
-  "kind": "Label",
-  "text": "No trips yet"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 59,
-  "kind": "Text",
-  "text": "A trip is one journey \\u{2014} it has a route, and it ends. "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 63,
-  "kind": "Button",
-  "text": "New trip"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 71,
-  "kind": "navTitle",
-  "text": "Trips"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 144,
-  "kind": "Text",
-  "text": "New trip"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 158,
-  "kind": "Text",
-  "text": "Tap a trip to play it, or swipe one left to pin it or mark it done. "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 189,
-  "kind": "Text",
-  "text": "Archived"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 191,
-  "kind": "Text",
-  "text": "\\(archived.count)"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 208,
-  "kind": "title:",
-  "text": "Reopen"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 286,
-  "kind": "popup message",
-  "text": "\\(trip.platesFound) plate\\(trip.platesFound == 1 ? "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 288,
-  "kind": "PopupButton",
-  "text": "Clear plates"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 292,
-  "kind": "PopupButton",
-  "text": "Keep them"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 304,
-  "kind": "PopupButton",
-  "text": "Mark as done"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 308,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 315,
-  "kind": "popup message",
-  "text": "It stops appearing anywhere you pick a trip. Nothing is deleted \\u{2014} its \\(trip.platesFound) plate\\(trip.platesFound == 1 ? "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 317,
-  "kind": "PopupButton",
-  "text": "Archive"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 321,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 330,
-  "kind": "PopupButton",
-  "text": "Delete trip"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 334,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 343,
-  "kind": "popup.present",
-  "text": "Add \\(trip.name) to which book?"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 350,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 359,
-  "kind": "popup message",
-  "text": "The \\(folded.count) sighting\\(folded.count == 1 ? "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 363,
-  "kind": "PopupButton",
-  "text": "Remove"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 367,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 380,
-  "kind": "popup message",
-  "text": "The trip keeps its plates either way \\u{2014} the book shows "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 383,
-  "kind": "PopupChoice",
-  "text": "Stack everything"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 384,
-  "kind": "subtitle:",
-  "text": "All \\(total) sighting\\(total == 1 ? "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 388,
-  "kind": "PopupChoice",
-  "text": "Fill the gaps"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 394,
-  "kind": "PopupButton",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 406,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(what) ends the party on this phone. "
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 572,
-  "kind": "a11yLabel",
-  "text": "Currently playing"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 581,
-  "kind": "a11yLabel",
-  "text": "Played as a party"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 588,
-  "kind": "a11yLabel",
-  "text": "Pinned"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 613,
-  "kind": "Text",
-  "text": "\\(trip.statesFound)"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 617,
-  "kind": "Text",
-  "text": "of \\(Plate.stateTotal)"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 630,
-  "kind": "a11yLabel",
-  "text": "Edit \\(trip.name)"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 662,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(start) \\u{2013} \\(ended.formatted(.dateTime.month(.abbreviated).day()))"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 664,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(start) \\u{00B7} day \\(trip.dayNumber)"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 820,
-  "kind": "Text",
-  "text": "The host sets the scoring while you are in a party."
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 847,
-  "kind": "Button",
-  "text": "Cancel"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 852,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 978,
-  "kind": "Text",
-  "text": "PLATES \\u{00B7} IN ORDER FOUND"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 1042,
-  "kind": "a11yLabel",
-  "text": "\\(sighting.plate?.name ?? sighting.plateCode), \\(logTime(sighting.spottedAt))"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 1053,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Day \\(max(1, day)) \\u{00B7} \\(clock)"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 1059,
-  "kind": "Text",
-  "text": "SCORING"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 1073,
-  "kind": "Text",
-  "text": "SCORING"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 1132,
-  "kind": "Text",
-  "text": "Count trucks and SUVs"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 1279,
-  "kind": "Text",
-  "text": "TRIP NAME"
- },
- {
-  "file": "Screens/TripsScreen.swift",
-  "line": 1284,
-  "kind": "TextField",
-  "text": "Summer roadtrip"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 74,
-  "kind": "navTitle",
-  "text": "Voice mode"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 78,
-  "kind": "Button",
-  "text": "Done"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 174,
-  "kind": "Button",
-  "text": "Open Settings"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 191,
-  "kind": "Text",
-  "text": "Voice sounds robotic? Download a natural one in \\(VoiceSpeaker.voiceSettingsPath), then tap the \\u{2913} beside a voice marked Enhanced or Premium."
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 206,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Listening"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 207,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Starting\u2026"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 208,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Paused"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 209,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Microphone is off"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 210,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Could not listen"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 222,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Just say the states as you see them \u2014 \\u{201C}New Jersey\\u{201D}, \\u{201C}Ohio\\u{201D}, \\u{201C}that\\u{2019}s a Texas\\u{201D}."
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 224,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\u{201C}"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 245,
-  "kind": "Text",
-  "text": "Nothing logged yet"
- },
- {
-  "file": "Screens/VoiceModeScreen.swift",
-  "line": 283,
-  "kind": "Button",
-  "text": "Undo"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 139,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "No connection to iCloud. Your plates will copy over once you are back online."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 141,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Sign in to iCloud in Settings to back up your plates."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 143,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Your iCloud storage is full, so nothing new can be copied over."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 145,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "This iCloud account is not allowed to store app data."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 147,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "iCloud is busy. This will retry on its own."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 154,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "iCloud rejected the data (\\(ck.code.rawValue)). "
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 157,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Your plates could not be copied to iCloud. This is being looked into."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 185,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Not backed up"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 186,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Sign in to iCloud"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 187,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Backing up to iCloud"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 188,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Backed up to iCloud"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 189,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Backup problem"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 200,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Your plates are on this phone only until you sign in, in Settings."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 202,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Your plates will copy to iCloud shortly."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 204,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Copying now\\u{2026}"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 206,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Last copied \\(when.formatted(.relative(presentation: .named)))."
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 221,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "checkmark.icloud.fill"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 222,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "arrow.trianglehead.2.clockwise.rotate.90.icloud"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 223,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "person.icloud"
- },
- {
-  "file": "Domain/CloudBackup.swift",
-  "line": 224,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "exclamationmark.icloud"
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 11,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Classic scoring"
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 12,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Weighted scoring"
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 13,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Unlimited scoring"
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 19,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "One point per state, however many times you see it."
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 20,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Rarer plates are worth more, judged against your route."
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 21,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Every sighting scores, so keep counting."
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 230,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(from) \\u{2192} \\(to)"
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 231,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "From \\(from)"
- },
- {
-  "file": "Domain/Models.swift",
-  "line": 232,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "To \\(to)"
- },
- {
-  "file": "Domain/PlateDates.swift",
-  "line": 61,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(first) \u2013 now"
- },
- {
-  "file": "Domain/PlateDates.swift",
-  "line": 62,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(first)"
- },
- {
-  "file": "Domain/PlateDates.swift",
-  "line": 63,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(first) \u2013 \\(last)"
- },
- {
-  "file": "Domain/PlateDates.swift",
-  "line": 81,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(span) year\\(span == 1 ? "
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 75,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "States"
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 76,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "D.C."
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 77,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Territories"
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 78,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Canada"
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 87,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "All 50"
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 88,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "District of Columbia"
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 89,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Puerto Rico"
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 90,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(n) provinces and territories"
- },
- {
-  "file": "Domain/PlateFilter.swift",
-  "line": 124,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(hideFound ? "
- },
- {
-  "file": "Domain/PlateIntents.swift",
-  "line": 26,
-  "kind": "subtitle:",
-  "text": "\\(id)"
- },
- {
-  "file": "Domain/PlateIntents.swift",
-  "line": 26,
-  "kind": "title:",
-  "text": "\\(name)"
- },
- {
-  "file": "Domain/PlateIntents.swift",
-  "line": 127,
-  "kind": "title:",
-  "text": "Plate"
- },
- {
-  "file": "Domain/PlateIntents.swift",
-  "line": 210,
-  "kind": "title:",
-  "text": "Plate"
- },
- {
-  "file": "Domain/PlateIntents.swift",
-  "line": 291,
-  "kind": "title:",
-  "text": "Plate"
- },
- {
-  "file": "Domain/VoiceSpeaker.swift",
-  "line": 104,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Settings \\u{203A} Accessibility \\u{203A} Read & Speak \\u{203A} Voices \\u{203A} English"
- },
- {
-  "file": "Domain/VoiceSpeaker.swift",
-  "line": 106,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Settings \\u{203A} Accessibility \\u{203A} Spoken Content \\u{203A} Voices \\u{203A} English"
- },
- {
-  "file": "Domain/VoiceSpeaker.swift",
-  "line": 171,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "\\(plate.name) has already been seen."
- },
- {
-  "file": "Domain/Shared/SharedBookSync.swift",
-  "line": 305,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Sign in to iCloud to share books."
- },
- {
-  "file": "Domain/Shared/SharedBookSync.swift",
-  "line": 307,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "No connection \\u{2014} this will catch up later."
- },
- {
-  "file": "Domain/Shared/SharedBookSync.swift",
-  "line": 308,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "Your iCloud storage is full."
- },
- {
-  "file": "Domain/Shared/SharedBookSync.swift",
-  "line": 310,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "That shared book is no longer available."
- },
- {
-  "file": "Domain/Shared/SharedBookSync.swift",
-  "line": 311,
-  "kind": "return \"\u2026\" (copy)",
-  "text": "You do not have permission to change that book."
- }
-]
+{
+  "strings": [
+    {
+      "file": "ios/Plates/Design/AppIconArt.swift",
+      "line": 187,
+      "context": "Text",
+      "text": "ROAD TRIP",
+      "key": "ROAD TRIP",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/AppIconArt.swift",
+      "line": 233,
+      "context": "Text",
+      "text": "86 \\u{00B7} 60 \\u{00B7} 40 \\u{00B7} 29 pt",
+      "key": "86 \u00b7 60 \u00b7 40 \u00b7 29 pt",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/DisclosureBar.swift",
+      "line": 35,
+      "context": "Text",
+      "text": "\\(count)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/FontLab.swift",
+      "line": 102,
+      "context": "Text",
+      "text": "LEGENDARY",
+      "key": "LEGENDARY",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/FontLab.swift",
+      "line": 105,
+      "context": "Text",
+      "text": "New Jersey",
+      "key": "New Jersey",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/FontLab.swift",
+      "line": 108,
+      "context": "Text",
+      "text": "The first drive-in theatre opened in Camden, New Jersey, in 1933.",
+      "key": "The first drive-in theatre opened in Camden, New Jersey, in 1933.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/FontLab.swift",
+      "line": 112,
+      "context": "Text",
+      "text": "Playing with others?  Start a party",
+      "key": "Playing with others?  Start a party",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/FontLab.swift",
+      "line": 115,
+      "context": "Text",
+      "text": "Rarity is scored against this route.",
+      "key": "Rarity is scored against this route.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/PlateGallery.swift",
+      "line": 88,
+      "context": "Text",
+      "text": "Plate catalogue",
+      "key": "Plate catalogue",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/PlateTile.swift",
+      "line": 154,
+      "context": "Text",
+      "text": "\\(repeatCount)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/PopupPicker.swift",
+      "line": 95,
+      "context": "Text",
+      "text": "Nothing called \\u{201C}\\(query)\\u{201D}",
+      "key": "Nothing called \u201c%@\u201d",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/PopupPicker.swift",
+      "line": 127,
+      "context": "Text",
+      "text": "\\(count)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/PopupPicker.swift",
+      "line": 201,
+      "context": "placeholder",
+      "text": "Search \\(total)",
+      "key": "Search %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/PopupPicker.swift",
+      "line": 216,
+      "context": "accessibility",
+      "text": "Clear search",
+      "key": "Clear search",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/RarityTier.swift",
+      "line": 41,
+      "context": "localized",
+      "text": "COMMON",
+      "key": "COMMON",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/RarityTier.swift",
+      "line": 42,
+      "context": "localized",
+      "text": "UNCOMMON",
+      "key": "UNCOMMON",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/RarityTier.swift",
+      "line": 43,
+      "context": "localized",
+      "text": "RARE",
+      "key": "RARE",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/RarityTier.swift",
+      "line": 44,
+      "context": "localized",
+      "text": "EPIC",
+      "key": "EPIC",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/RarityTier.swift",
+      "line": 45,
+      "context": "localized",
+      "text": "LEGENDARY",
+      "key": "LEGENDARY",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/RarityTier.swift",
+      "line": 223,
+      "context": "Text",
+      "text": "tap to dismiss",
+      "key": "tap to dismiss",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/RarityTier.swift",
+      "line": 240,
+      "context": "accessibility",
+      "text": "\\(tier.label) find. \\(plateName). \\(fact ?? ",
+      "key": "%@ find. %@. %@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/SharePoster.swift",
+      "line": 241,
+      "context": "Text",
+      "text": "\\(entry.score)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/SharePoster.swift",
+      "line": 253,
+      "context": "Text",
+      "text": "PLATES",
+      "key": "PLATES",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Design/SharePoster.swift",
+      "line": 308,
+      "context": "popup choice",
+      "text": "All time",
+      "key": "All time",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 139,
+      "context": "localized",
+      "text": "No connection to iCloud. Your plates will copy over once you are back online.",
+      "key": "No connection to iCloud. Your plates will copy over once you are back online.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 141,
+      "context": "localized",
+      "text": "Sign in to iCloud in Settings to back up your plates.",
+      "key": "Sign in to iCloud in Settings to back up your plates.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 143,
+      "context": "localized",
+      "text": "Your iCloud storage is full, so nothing new can be copied over.",
+      "key": "Your iCloud storage is full, so nothing new can be copied over.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 145,
+      "context": "localized",
+      "text": "This iCloud account is not allowed to store app data.",
+      "key": "This iCloud account is not allowed to store app data.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 147,
+      "context": "localized",
+      "text": "iCloud is busy. This will retry on its own.",
+      "key": "iCloud is busy. This will retry on its own.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 159,
+      "context": "localized",
+      "text": "Your plates could not be copied to iCloud. This is being looked into.",
+      "key": "Your plates could not be copied to iCloud. This is being looked into.",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 187,
+      "context": "localized",
+      "text": "Not backed up",
+      "key": "Not backed up",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 188,
+      "context": "localized",
+      "text": "Sign in to iCloud",
+      "key": "Sign in to iCloud",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 189,
+      "context": "localized",
+      "text": "Backing up to iCloud",
+      "key": "Backing up to iCloud",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 190,
+      "context": "localized",
+      "text": "Backed up to iCloud",
+      "key": "Backed up to iCloud",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 191,
+      "context": "localized",
+      "text": "Backup problem",
+      "key": "Backup problem",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 201,
+      "context": "localized",
+      "text": "Your plates live on this phone only. Losing it loses the book.",
+      "key": "Your plates live on this phone only. Losing it loses the book.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 203,
+      "context": "localized",
+      "text": "Your plates live on this phone only. \\(reason)",
+      "key": "Your plates live on this phone only. %@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 205,
+      "context": "localized",
+      "text": "Your plates are on this phone only until you sign in, in Settings.",
+      "key": "Your plates are on this phone only until you sign in, in Settings.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 207,
+      "context": "localized",
+      "text": "Your plates will copy to iCloud shortly.",
+      "key": "Your plates will copy to iCloud shortly.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 209,
+      "context": "localized",
+      "text": "Copying now\\u{2026}",
+      "key": "Copying now\u2026",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/CloudBackup.swift",
+      "line": 211,
+      "context": "localized",
+      "text": "Last copied \\(when.formatted(.relative(presentation: .named))).",
+      "key": "Last copied %@.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/Models.swift",
+      "line": 11,
+      "context": "localized",
+      "text": "Classic scoring",
+      "key": "Classic scoring",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/Models.swift",
+      "line": 12,
+      "context": "localized",
+      "text": "Weighted scoring",
+      "key": "Weighted scoring",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/Models.swift",
+      "line": 13,
+      "context": "localized",
+      "text": "Unlimited scoring",
+      "key": "Unlimited scoring",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/Models.swift",
+      "line": 19,
+      "context": "localized",
+      "text": "One point per state, however many times you see it.",
+      "key": "One point per state, however many times you see it.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/Models.swift",
+      "line": 20,
+      "context": "localized",
+      "text": "Rarer plates are worth more, judged against your route.",
+      "key": "Rarer plates are worth more, judged against your route.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/Models.swift",
+      "line": 21,
+      "context": "localized",
+      "text": "Every sighting scores, so keep counting.",
+      "key": "Every sighting scores, so keep counting.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/Party/PartySession.swift",
+      "line": 318,
+      "context": "localized",
+      "text": "Could not join \\(target.tripName). Check the four characters on \\(target.hostName)'s phone and tap the trip again.",
+      "key": "Could not join %@. Check the four characters on %@'s phone and tap the trip again.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateFilter.swift",
+      "line": 79,
+      "context": "localized",
+      "text": "States",
+      "key": "States",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateFilter.swift",
+      "line": 81,
+      "context": "localized",
+      "text": "Territories",
+      "key": "Territories",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateFilter.swift",
+      "line": 82,
+      "context": "localized",
+      "text": "Canada",
+      "key": "Canada",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateFilter.swift",
+      "line": 91,
+      "context": "localized",
+      "text": "All 50",
+      "key": "All 50",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateFilter.swift",
+      "line": 92,
+      "context": "localized",
+      "text": "District of Columbia",
+      "key": "District of Columbia",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateFilter.swift",
+      "line": 93,
+      "context": "localized",
+      "text": "Puerto Rico",
+      "key": "Puerto Rico",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateFilter.swift",
+      "line": 94,
+      "context": "localized",
+      "text": "\\(n) provinces and territories",
+      "key": "%lld provinces and territories",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateIntents.swift",
+      "line": 26,
+      "context": "popup choice",
+      "text": "\\(name)",
+      "key": "%@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateIntents.swift",
+      "line": 26,
+      "context": "popup choice",
+      "text": "\\(id)",
+      "key": "%@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateIntents.swift",
+      "line": 127,
+      "context": "popup choice",
+      "text": "Plate",
+      "key": "Plate",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateIntents.swift",
+      "line": 210,
+      "context": "popup choice",
+      "text": "Plate",
+      "key": "Plate",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/PlateIntents.swift",
+      "line": 291,
+      "context": "popup choice",
+      "text": "Plate",
+      "key": "Plate",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/TripReminders.swift",
+      "line": 102,
+      "context": "localized",
+      "text": "Still traveling?",
+      "key": "Still traveling?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/TripReminders.swift",
+      "line": 103,
+      "context": "localized",
+      "text": "You have \\(trip.statesFound) of 50 states on \\(trip.name).",
+      "key": "You have %lld of 50 states on %@.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Domain/VoiceLogger.swift",
+      "line": 106,
+      "context": "localized",
+      "text": "Voice mode needs the microphone and speech recognition. Both can be turned on in Settings.",
+      "key": "Voice mode needs the microphone and speech recognition. Both can be turned on in Settings.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 105,
+      "context": "nav title",
+      "text": "Books",
+      "key": "Books",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 137,
+      "context": "accessibility",
+      "text": "Start a new book",
+      "key": "Start a new book",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 286,
+      "context": "accessibility",
+      "text": "Shared",
+      "key": "Shared",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 289,
+      "context": "Text",
+      "text": "SWITCH",
+      "key": "SWITCH",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 340,
+      "context": "accessibility",
+      "text": "Edit \\(book.name)",
+      "key": "Edit %@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 431,
+      "context": "detail",
+      "text": "\\(b.found(in: plates)) / \\(plates.count)",
+      "key": "%lld / %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 484,
+      "context": "popup title",
+      "text": "Which book?",
+      "key": "Which book?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 485,
+      "context": "popup message",
+      "text": "Picking a book here changes what you are looking at, and which book Drive fills.",
+      "key": "Picking a book here changes what you are looking at, and which book Drive fills.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 488,
+      "context": "popup choice",
+      "text": "All time",
+      "key": "All time",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 489,
+      "context": "subtitle",
+      "text": "Every plate ever, across all books and trips",
+      "key": "Every plate ever, across all books and trips",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 496,
+      "context": "popup button",
+      "text": "New book",
+      "key": "New book",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 522,
+      "context": "popup button",
+      "text": "Empty book",
+      "key": "Empty book",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 534,
+      "context": "popup button",
+      "text": "Keep them",
+      "key": "Keep them",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 545,
+      "context": "popup button",
+      "text": "Delete book",
+      "key": "Delete book",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 555,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 633,
+      "context": "Text",
+      "text": "\\u{00D7}\\(entry.count)",
+      "key": "\\u{00D7}%lld",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 719,
+      "context": "Text",
+      "text": "Plates are checked off on the Drive screen.",
+      "key": "Plates are checked off on the Drive screen.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 725,
+      "context": "popup choice",
+      "text": "Facts",
+      "key": "Facts",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 725,
+      "context": "popup choice",
+      "text": "\\(seen.count) of \\(total)",
+      "key": "%lld of %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 769,
+      "context": "button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 829,
+      "context": "Text",
+      "text": "BOOK NAME",
+      "key": "BOOK NAME",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 834,
+      "context": "placeholder",
+      "text": "My Plate Book",
+      "key": "My Plate Book",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 877,
+      "context": "button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 901,
+      "context": "accessibility",
+      "text": "Share this book",
+      "key": "Share this book",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 921,
+      "context": "Text",
+      "text": "\\(book.statesFound) of \\(Plate.stateTotal) states",
+      "key": "%lld of %lld states",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/CollectionScreen.swift",
+      "line": 1025,
+      "context": "Text",
+      "text": "Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are.",
+      "key": "Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 203,
+      "context": "Text",
+      "text": "A trip is one drive with a route and a finish. A book you just keep adding to.",
+      "key": "A trip is one drive with a route and a finish. A book you just keep adding to.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 206,
+      "context": "button",
+      "text": "Start a trip",
+      "key": "Start a trip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 209,
+      "context": "button",
+      "text": "Start a book",
+      "key": "Start a book",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 374,
+      "context": "popup choice",
+      "text": "Who's playing?",
+      "key": "Who's playing?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 413,
+      "context": "accessibility",
+      "text": "Voice mode",
+      "key": "Voice mode",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 414,
+      "context": "accessibility",
+      "text": "Listens and logs plates as you say them",
+      "key": "Listens and logs plates as you say them",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 463,
+      "context": "Text",
+      "text": "Playing with others? Start a party",
+      "key": "Playing with others? Start a party",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 493,
+      "context": "popup choice",
+      "text": "States",
+      "key": "States",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 494,
+      "context": "detail",
+      "text": "\\(collection.statesFound) / \\(Plate.stateTotal) found",
+      "key": "%lld / %lld found",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 505,
+      "context": "popup choice",
+      "text": "Bonus plates",
+      "key": "Bonus plates",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 506,
+      "context": "detail",
+      "text": "\\(collection.bonusFound) / \\(Plate.bonus.count) found",
+      "key": "%lld / %lld found",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 570,
+      "context": "Text",
+      "text": "Canada",
+      "key": "Canada",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 579,
+      "context": "Text",
+      "text": "\\(collection.provincesFound) / \\(Plate.provinces.count) found",
+      "key": "%lld / %lld found",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 610,
+      "context": "Text",
+      "text": "Nothing left to find",
+      "key": "Nothing left to find",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 613,
+      "context": "Text",
+      "text": "Every plate in the sets you are hunting is already found.",
+      "key": "Every plate in the sets you are hunting is already found.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 619,
+      "context": "button",
+      "text": "Show everything",
+      "key": "Show everything",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 723,
+      "context": "popup title",
+      "text": "Show",
+      "key": "Show",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 723,
+      "context": "popup title",
+      "text": "Choose what the grid draws.",
+      "key": "Choose what the grid draws.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 830,
+      "context": "popup title",
+      "text": "Remove \\(plate.name)?",
+      "key": "Remove %@?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 831,
+      "context": "popup button",
+      "text": "Remove it",
+      "key": "Remove it",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 835,
+      "context": "popup button",
+      "text": "Keep it",
+      "key": "Keep it",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 890,
+      "context": "popup button",
+      "text": "Remove all \\(mine.count)",
+      "key": "Remove all %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 895,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 942,
+      "context": "popup message",
+      "text": "Everyone plays from their own phone instead of sharing yours, so Plates no longer asks who spotted each plate. Every plate you have already collected is untouched. Start a party from the More tab.",
+      "key": "Everyone plays from their own phone instead of sharing yours, so Plates no longer asks who spotted each plate. Every plate you have already collected is untouched. Start a party from the More tab.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 944,
+      "context": "popup button",
+      "text": "Got it",
+      "key": "Got it",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 1071,
+      "context": "popup title",
+      "text": "What are you filling?",
+      "key": "What are you filling?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/GameScreen.swift",
+      "line": 1072,
+      "context": "popup message",
+      "text": "Plates are saved against whichever of these is picked. New trips and books are made on the Trips and Books tabs.",
+      "key": "Plates are saved against whichever of these is picked. New trips and books are made on the Trips and Books tabs.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 45,
+      "context": "nav title",
+      "text": "Historical plates",
+      "key": "Historical plates",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 99,
+      "context": "accessibility",
+      "text": "Jurisdiction: \\(plate?.name ?? code). Change",
+      "key": "Jurisdiction: %@. Change",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 138,
+      "context": "Text",
+      "text": "Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed.",
+      "key": "Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 151,
+      "context": "Text",
+      "text": "No photographs yet",
+      "key": "No photographs yet",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 154,
+      "context": "Text",
+      "text": "Nobody has photographed a \\(plate?.name ?? code) plate for Wikimedia Commons.",
+      "key": "Nobody has photographed a %@ plate for Wikimedia Commons.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 182,
+      "context": "localized",
+      "text": "States",
+      "key": "States",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 183,
+      "context": "localized",
+      "text": "Canada",
+      "key": "Canada",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 184,
+      "context": "localized",
+      "text": "Other",
+      "key": "Other",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 205,
+      "context": "Text",
+      "text": "Nothing matches \\u{201C}\\(query)\\u{201D}.",
+      "key": "Nothing matches \u201c%@\u201d.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 214,
+      "context": "nav title",
+      "text": "Jurisdiction",
+      "key": "Jurisdiction",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 223,
+      "context": "button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 248,
+      "context": "Text",
+      "text": "\\(PlateHistoryBook.designs(for: plate.code).count)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 286,
+      "context": "Text",
+      "text": "IN ISSUE",
+      "key": "IN ISSUE",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 409,
+      "context": "localized",
+      "text": "Status",
+      "key": "Status",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 409,
+      "context": "localized",
+      "text": "Still in issue",
+      "key": "Still in issue",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 413,
+      "context": "localized",
+      "text": "Photograph",
+      "key": "Photograph",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 413,
+      "context": "localized",
+      "text": "Wikipedia gives this era the design above it, so this is that plate",
+      "key": "Wikipedia gives this era the design above it, so this is that plate",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 436,
+      "context": "nav title",
+      "text": "\\(jurisdiction) \\(PlateDates.start(design.dates))",
+      "key": "%@ %@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/HistoricalPlatesScreen.swift",
+      "line": 440,
+      "context": "button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 39,
+      "context": "localized",
+      "text": "Found",
+      "key": "Found",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 40,
+      "context": "localized",
+      "text": "Rarity",
+      "key": "Rarity",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 105,
+      "context": "nav title",
+      "text": "Map",
+      "key": "Map",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 320,
+      "context": "Text",
+      "text": "\\(found) / \\(total)",
+      "key": "%lld / %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 387,
+      "context": "button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 406,
+      "context": "Text",
+      "text": "Rarity \\(rarity) of 10\\(trip?.route == nil ? ",
+      "key": "Rarity %lld of 10%@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 422,
+      "context": "popup choice",
+      "text": "Facts",
+      "key": "Facts",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 422,
+      "context": "popup choice",
+      "text": "\\(seen.count) of \\(total)",
+      "key": "%lld of %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 428,
+      "context": "Text",
+      "text": "Facts unlock as you spot this plate. Every sighting reveals a new one.",
+      "key": "Facts unlock as you spot this plate. Every sighting reveals a new one.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MapScreen.swift",
+      "line": 453,
+      "context": "Text",
+      "text": "Locked",
+      "key": "Locked",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 25,
+      "context": "localized",
+      "text": "While you play",
+      "key": "While you play",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 26,
+      "context": "popup choice",
+      "text": "Party",
+      "key": "Party",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 30,
+      "context": "popup choice",
+      "text": "Plate lookup",
+      "key": "Plate lookup",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 33,
+      "context": "localized",
+      "text": "Looking back",
+      "key": "Looking back",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 34,
+      "context": "popup choice",
+      "text": "Trail",
+      "key": "Trail",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 38,
+      "context": "popup choice",
+      "text": "Historical plates",
+      "key": "Historical plates",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 41,
+      "context": "localized",
+      "text": "App",
+      "key": "App",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 42,
+      "context": "popup choice",
+      "text": "Settings",
+      "key": "Settings",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 51,
+      "context": "nav title",
+      "text": "More",
+      "key": "More",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/MoreScreen.swift",
+      "line": 87,
+      "context": "Text",
+      "text": "PLATES",
+      "key": "PLATES",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 63,
+      "context": "nav title",
+      "text": "Party",
+      "key": "Party",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 70,
+      "context": "popup choice",
+      "text": "Who's playing?",
+      "key": "Who's playing?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 154,
+      "context": "section",
+      "text": "Play together",
+      "key": "Play together",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 156,
+      "context": "Text",
+      "text": "Everyone spots on their own phone",
+      "key": "Everyone spots on their own phone",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 159,
+      "context": "Text",
+      "text": "One person starts the party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal.",
+      "key": "One person starts the party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 177,
+      "context": "section",
+      "text": "Not this one",
+      "key": "Not this one",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 254,
+      "context": "popup choice",
+      "text": "Finish the trip",
+      "key": "Finish the trip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 255,
+      "context": "subtitle",
+      "text": "Files it away. Nothing is lost.",
+      "key": "Files it away. Nothing is lost.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 261,
+      "context": "popup choice",
+      "text": "Discard this trip",
+      "key": "Discard this trip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 262,
+      "context": "subtitle",
+      "text": "Removes your copy only.",
+      "key": "Removes your copy only.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 267,
+      "context": "popup choice",
+      "text": "Finish and keep it",
+      "key": "Finish and keep it",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 268,
+      "context": "subtitle",
+      "text": "Files it away with your trips.",
+      "key": "Files it away with your trips.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 274,
+      "context": "popup button",
+      "text": "Leave it open",
+      "key": "Leave it open",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 282,
+      "context": "section",
+      "text": "Your code",
+      "key": "Your code",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 291,
+      "context": "Text",
+      "text": "Read this out. Everyone else taps Join and types it in.",
+      "key": "Read this out. Everyone else taps Join and types it in.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 316,
+      "context": "section",
+      "text": "Rules",
+      "key": "Rules",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 318,
+      "context": "popup choice",
+      "text": "Protect what people find",
+      "key": "Protect what people find",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 319,
+      "context": "detail",
+      "text": "Only the person who spotted a plate can take it back.",
+      "key": "Only the person who spotted a plate can take it back.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 330,
+      "context": "popup choice",
+      "text": "Everyone can claim a plate",
+      "key": "Everyone can claim a plate",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 331,
+      "context": "detail",
+      "text": "A state stays open after the first person calls it, so it counts for all of you.",
+      "key": "A state stays open after the first person calls it, so it counts for all of you.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 383,
+      "context": "section",
+      "text": "Joining",
+      "key": "Joining",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 386,
+      "context": "Text",
+      "text": "Asking \\(target.hostName) to let you in\\u{2026}",
+      "key": "Asking %@ to let you in\u2026",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 394,
+      "context": "section",
+      "text": "Nearby",
+      "key": "Nearby",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 398,
+      "context": "Text",
+      "text": "Looking for parties in the car\\u{2026}",
+      "key": "Looking for parties in the car\u2026",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 417,
+      "context": "Text",
+      "text": "Hosted by \\(found.hostName)",
+      "key": "Hosted by %lld",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 454,
+      "context": "Text",
+      "text": "The code \\(target.hostName) is showing",
+      "key": "The code %@ is showing",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 458,
+      "context": "placeholder",
+      "text": "ABCD",
+      "key": "ABCD",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 477,
+      "context": "nav title",
+      "text": "Join \\(target.tripName)",
+      "key": "Join %@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 481,
+      "context": "button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 484,
+      "context": "button",
+      "text": "Join",
+      "key": "Join",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 499,
+      "context": "section",
+      "text": "In the party",
+      "key": "In the party",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 525,
+      "context": "section",
+      "text": "Trouble",
+      "key": "Trouble",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 580,
+      "context": "localized",
+      "text": "\\(host ?? String(localized: ",
+      "key": "%@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PartyScreen.swift",
+      "line": 580,
+      "context": "localized",
+      "text": ")) started \\(trip.name) and shared it with you, so only they can start a party for it. Start one on a trip of your own instead.",
+      "key": ")) started %@ and shared it with you, so only they can start a party for it. Start one on a trip of your own instead.",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 42,
+      "context": "accessibility",
+      "text": "Choose which plates to show",
+      "key": "Choose which plates to show",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 47,
+      "context": "localized",
+      "text": "\\(leftCount) left",
+      "key": "%lld left",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 50,
+      "context": "localized",
+      "text": "^[\\(filter.sets.count) set](inflect: true)",
+      "key": "^[%lld set](inflect: true)",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 73,
+      "context": "popup choice",
+      "text": "Only what's left",
+      "key": "Only what's left",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 74,
+      "context": "subtitle",
+      "text": "Hide plates you have already found",
+      "key": "Hide plates you have already found",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 82,
+      "context": "Text",
+      "text": "SETS",
+      "key": "SETS",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 97,
+      "context": "localized",
+      "text": "\\(leftInRegion(region)) left of \\(region.plates.count)",
+      "key": "%@ left of %lld",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 110,
+      "context": "popup button",
+      "text": "Show everything",
+      "key": "Show everything",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateFilterPanel.swift",
+      "line": 117,
+      "context": "popup button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 53,
+      "context": "nav title",
+      "text": "Plate lookup",
+      "key": "Plate lookup",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 94,
+      "context": "placeholder",
+      "text": "Describe the plate you saw",
+      "key": "Describe the plate you saw",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 109,
+      "context": "accessibility",
+      "text": "Clear",
+      "key": "Clear",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 127,
+      "context": "Text",
+      "text": "Saw a plate you couldn't name?",
+      "key": "Saw a plate you couldn't name?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 136,
+      "context": "Text",
+      "text": "Type whatever you remember about it. Any of these work:",
+      "key": "Type whatever you remember about it. Any of these work:",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 147,
+      "context": "Text",
+      "text": "Mixing them works best: green plate with a lighthouse. Results come back one row per state, newest design first. Tap any of them to see the photo big, next to every other plate that state has issued.",
+      "key": "Mixing them works best: green plate with a lighthouse. Results come back one row per state, newest design first. Tap any of them to see the photo big, next to every other plate that state has issued.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 153,
+      "context": "Text",
+      "text": "TRY ONE",
+      "key": "TRY ONE",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 164,
+      "context": "Text",
+      "text": "\\(PlateLookup.designs.count) designs, current and historic, each with a photograph.",
+      "key": "%lld designs, current and historic, each with a photograph.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 185,
+      "context": "Text",
+      "text": "Nothing matched that",
+      "key": "Nothing matched that",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 192,
+      "context": "Text",
+      "text": "No plate description mentions \\(unknown.map { ",
+      "key": "No plate description mentions %@",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 192,
+      "context": "Text",
+      "text": " }.joined(separator: ",
+      "key": " }.joined(separator: ",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 198,
+      "context": "Text",
+      "text": "Try a color, something drawn on it, or a word printed on it.",
+      "key": "Try a color, something drawn on it, or a word printed on it.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 393,
+      "context": "Text",
+      "text": "\\(variantCount)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 491,
+      "context": "Text",
+      "text": "EVERY \\(design.jurisdiction.uppercased()) DESIGN",
+      "key": "EVERY %@ DESIGN",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 531,
+      "context": "button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateLookupScreen.swift",
+      "line": 562,
+      "context": "Text",
+      "text": "Photo: \\(attribution)",
+      "key": "Photo: %@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateSearch.swift",
+      "line": 78,
+      "context": "placeholder",
+      "text": "State or code",
+      "key": "State or code",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateSearch.swift",
+      "line": 88,
+      "context": "accessibility",
+      "text": "Search plates by state or code",
+      "key": "Search plates by state or code",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateSearch.swift",
+      "line": 91,
+      "context": "Text",
+      "text": "\\(matchCount)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateSearch.swift",
+      "line": 104,
+      "context": "accessibility",
+      "text": "Clear search",
+      "key": "Clear search",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlateSearch.swift",
+      "line": 121,
+      "context": "button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlayersScreen.swift",
+      "line": 43,
+      "context": "Text",
+      "text": "NAME",
+      "key": "NAME",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlayersScreen.swift",
+      "line": 48,
+      "context": "placeholder",
+      "text": "Who is playing?",
+      "key": "Who is playing?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlayersScreen.swift",
+      "line": 64,
+      "context": "Text",
+      "text": "FACE",
+      "key": "FACE",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlayersScreen.swift",
+      "line": 82,
+      "context": "Text",
+      "text": "COLOR",
+      "key": "COLOR",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlayersScreen.swift",
+      "line": 109,
+      "context": "accessibility",
+      "text": "Color \\(i + 1)\\(taken ? ",
+      "key": "Color %@%@",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/PlayersScreen.swift",
+      "line": 116,
+      "context": "Text",
+      "text": "Remove player",
+      "key": "Remove player",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/PlayersScreen.swift",
+      "line": 135,
+      "context": "button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/RegionMapView.swift",
+      "line": 303,
+      "context": "accessibility",
+      "text": "\\(foundCount) of \\(G.codes.count) regions found",
+      "key": "%lld of %lld regions found",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 49,
+      "context": "nav title",
+      "text": "Settings",
+      "key": "Settings",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 69,
+      "context": "section",
+      "text": "Playing as",
+      "key": "Playing as",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 124,
+      "context": "section",
+      "text": "Other people",
+      "key": "Other people",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 150,
+      "context": "Text",
+      "text": "Remove",
+      "key": "Remove",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 168,
+      "context": "localized",
+      "text": "No plates on this phone",
+      "key": "No plates on this phone",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 169,
+      "context": "localized",
+      "text": "^[\\(n) plate](inflect: true) they spotted",
+      "key": "^[%lld plate](inflect: true) they spotted",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 176,
+      "context": "popup message",
+      "text": "Plates they spotted stay collected, and every count is unchanged. Only their line in the standings goes.",
+      "key": "Plates they spotted stay collected, and every count is unchanged. Only their line in the standings goes.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 178,
+      "context": "popup button",
+      "text": "Remove",
+      "key": "Remove",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 184,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 197,
+      "context": "section",
+      "text": "Your collection",
+      "key": "Your collection",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 224,
+      "context": "section",
+      "text": "Location",
+      "key": "Location",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 226,
+      "context": "Text",
+      "text": "Following the drive",
+      "key": "Following the drive",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 261,
+      "context": "section",
+      "text": "Reminders",
+      "key": "Reminders",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 265,
+      "context": "Text",
+      "text": "Unfinished trips",
+      "key": "Unfinished trips",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 268,
+      "context": "Text",
+      "text": "A nudge if a trip goes a day without a plate.",
+      "key": "A nudge if a trip goes a day without a plate.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 313,
+      "context": "section",
+      "text": "Voice",
+      "key": "Voice",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 315,
+      "context": "Text",
+      "text": "Hands free",
+      "key": "Hands free",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 318,
+      "context": "Text",
+      "text": "Say \\u{201C}Hey Siri, log a plate in Plates\\u{201D}, or name it outright: \\u{201C}log New Jersey in Plates\\u{201D}. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say \\u{201C}stop\\u{201D} when you are done.",
+      "key": "Say \u201cHey Siri, log a plate in Plates\u201d, or name it outright: \u201clog New Jersey in Plates\u201d. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say \u201cstop\u201d when you are done.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 331,
+      "context": "section",
+      "text": "Feedback",
+      "key": "Feedback",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 333,
+      "context": "Text",
+      "text": "Haptics",
+      "key": "Haptics",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/SettingsScreen.swift",
+      "line": 360,
+      "context": "Text",
+      "text": "Plates \\(short) (\\(build))",
+      "key": "Plates %@ (%@)",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 93,
+      "context": "nav title",
+      "text": "Trail",
+      "key": "Trail",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 211,
+      "context": "localized",
+      "text": "All time",
+      "key": "All time",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 212,
+      "context": "localized",
+      "text": "Every plate ever logged",
+      "key": "Every plate ever logged",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 253,
+      "context": "popup title",
+      "text": "Show which drive?",
+      "key": "Show which drive?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 255,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 359,
+      "context": "Text",
+      "text": "No trail yet",
+      "key": "No trail yet",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 362,
+      "context": "Text",
+      "text": "Plates get a pin here when you log them with location turned on. Older ones have no pin. The app was not watching at the time.",
+      "key": "Plates get a pin here when you log them with location turned on. Older ones have no pin. The app was not watching at the time.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 874,
+      "context": "Text",
+      "text": "\\(pins.count)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 1116,
+      "context": "button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 1314,
+      "context": "Text",
+      "text": "No plate here matches \\u{201C}\\(query)\\u{201D}.",
+      "key": "No plate here matches \u201c%@\u201d.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/Trail.swift",
+      "line": 1327,
+      "context": "button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripComparison.swift",
+      "line": 31,
+      "context": "popup choice",
+      "text": "Compare trips",
+      "key": "Compare trips",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripComparison.swift",
+      "line": 41,
+      "context": "Text",
+      "text": "Newest first. The bar compares states found.",
+      "key": "Newest first. The bar compares states found.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripComparison.swift",
+      "line": 73,
+      "context": "Text",
+      "text": "\\(summary.statesFound)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripComparison.swift",
+      "line": 77,
+      "context": "Text",
+      "text": "states",
+      "key": "states",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 82,
+      "context": "Text",
+      "text": "\\(trip.isActive ? ",
+      "key": "%@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 82,
+      "context": "Text",
+      "text": ") TRIP \\u{00B7} DAY \\(trip.dayNumber)",
+      "key": ") TRIP \u00b7 DAY %lld",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 88,
+      "context": "Text",
+      "text": "SWITCH",
+      "key": "SWITCH",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 123,
+      "context": "Text",
+      "text": "\\(trip.statesFound) of \\(Plate.stateTotal)",
+      "key": "%lld of %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 162,
+      "context": "Text",
+      "text": "PLATE BOOK",
+      "key": "PLATE BOOK",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 168,
+      "context": "Text",
+      "text": "SWITCH",
+      "key": "SWITCH",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 194,
+      "context": "Text",
+      "text": "Collecting",
+      "key": "Collecting",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 196,
+      "context": "Text",
+      "text": "\\(book.statesFound) of \\(Plate.stateTotal)",
+      "key": "%lld of %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 287,
+      "context": "Text",
+      "text": "\\(entry.score)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 306,
+      "context": "accessibility",
+      "text": "\\(entry.player.name), \\(entry.score) points\\(isLeader ? ",
+      "key": "%@, %lld points%@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripHeader.swift",
+      "line": 374,
+      "context": "Text",
+      "text": "Allow",
+      "key": "Allow",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 61,
+      "context": "Text",
+      "text": "A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going.",
+      "key": "A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 63,
+      "context": "button",
+      "text": "New trip",
+      "key": "New trip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 71,
+      "context": "nav title",
+      "text": "Trips",
+      "key": "Trips",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 163,
+      "context": "Text",
+      "text": "New trip",
+      "key": "New trip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 177,
+      "context": "Text",
+      "text": "Tap a trip to play it, or swipe one left to pin it or mark it done. A trip is one journey; for everyday spotting, fill a book instead.",
+      "key": "Tap a trip to play it, or swipe one left to pin it or mark it done. A trip is one journey; for everyday spotting, fill a book instead.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 209,
+      "context": "popup choice",
+      "text": "Finished",
+      "key": "Finished",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 216,
+      "context": "popup choice",
+      "text": "Reopen",
+      "key": "Reopen",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 219,
+      "context": "popup choice",
+      "text": "Archive",
+      "key": "Archive",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 248,
+      "context": "popup choice",
+      "text": "Archived",
+      "key": "Archived",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 255,
+      "context": "popup choice",
+      "text": "Reopen",
+      "key": "Reopen",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 339,
+      "context": "popup message",
+      "text": "^[\\(trip.platesFound) plate](inflect: true) found on \\(trip.name) will be un-collected. The trip itself stays.",
+      "key": "^[%lld plate](inflect: true) found on %@ will be un-collected. The trip itself stays.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 341,
+      "context": "popup button",
+      "text": "Clear plates",
+      "key": "Clear plates",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 345,
+      "context": "popup button",
+      "text": "Keep them",
+      "key": "Keep them",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 354,
+      "context": "popup button",
+      "text": "Mark as done",
+      "key": "Mark as done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 358,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 365,
+      "context": "popup message",
+      "text": "It stops appearing anywhere you pick a trip. Nothing is deleted. Its ^[\\(trip.platesFound) plate](inflect: true) stay in your history, and you can bring it back.",
+      "key": "It stops appearing anywhere you pick a trip. Nothing is deleted. Its ^[%lld plate](inflect: true) stay in your history, and you can bring it back.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 367,
+      "context": "popup button",
+      "text": "Archive",
+      "key": "Archive",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 371,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 380,
+      "context": "popup button",
+      "text": "Delete trip",
+      "key": "Delete trip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 384,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 393,
+      "context": "popup title",
+      "text": "Add \\(trip.name) to which book?",
+      "key": "Add %@ to which book?",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 400,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 409,
+      "context": "popup message",
+      "text": "The ^[\\(folded.count) sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched.",
+      "key": "The ^[%lld sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 411,
+      "context": "popup button",
+      "text": "Remove",
+      "key": "Remove",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 415,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 428,
+      "context": "popup message",
+      "text": "The trip keeps its plates either way. The book just shows them too, and you can take them back out whenever you like.",
+      "key": "The trip keeps its plates either way. The book just shows them too, and you can take them back out whenever you like.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 430,
+      "context": "popup choice",
+      "text": "Stack everything",
+      "key": "Stack everything",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 431,
+      "context": "subtitle",
+      "text": "All ^[\\(total) sighting](inflect: true) carry over. Plates the book already has count again.",
+      "key": "All ^[%lld sighting](inflect: true) carry over. Plates the book already has count again.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 434,
+      "context": "popup choice",
+      "text": "Fill the gaps",
+      "key": "Fill the gaps",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 440,
+      "context": "popup button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 607,
+      "context": "accessibility",
+      "text": "Currently playing",
+      "key": "Currently playing",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 616,
+      "context": "accessibility",
+      "text": "Played as a party",
+      "key": "Played as a party",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 623,
+      "context": "accessibility",
+      "text": "Pinned",
+      "key": "Pinned",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 648,
+      "context": "Text",
+      "text": "\\(trip.statesFound)",
+      "key": "%lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 652,
+      "context": "Text",
+      "text": "of \\(Plate.stateTotal)",
+      "key": "of %lld",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 665,
+      "context": "accessibility",
+      "text": "Edit \\(trip.name)",
+      "key": "Edit %@",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 863,
+      "context": "Text",
+      "text": "The host sets the scoring while you are in a party.",
+      "key": "The host sets the scoring while you are in a party.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 890,
+      "context": "button",
+      "text": "Cancel",
+      "key": "Cancel",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 915,
+      "context": "accessibility",
+      "text": "Share this trip",
+      "key": "Share this trip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 920,
+      "context": "button",
+      "text": "Done",
+      "key": "Done",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 997,
+      "context": "Text",
+      "text": "\\(host)'s trip, from their party. This is your copy of it.",
+      "key": "%@'s trip, from their party. This is your copy of it.",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 1083,
+      "context": "Text",
+      "text": "PLATES \\u{00B7} IN ORDER FOUND",
+      "key": "PLATES \u00b7 IN ORDER FOUND",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 1168,
+      "context": "Text",
+      "text": "SCORING",
+      "key": "SCORING",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 1181,
+      "context": "Text",
+      "text": "SCORING",
+      "key": "SCORING",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 1345,
+      "context": "Text",
+      "text": "TRIP NAME",
+      "key": "TRIP NAME",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/TripsScreen.swift",
+      "line": 1350,
+      "context": "placeholder",
+      "text": "Summer roadtrip",
+      "key": "Summer roadtrip",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/VoiceModeScreen.swift",
+      "line": 74,
+      "context": "nav title",
+      "text": "Voice mode",
+      "key": "Voice mode",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/VoiceModeScreen.swift",
+      "line": 174,
+      "context": "button",
+      "text": "Open Settings",
+      "key": "Open Settings",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/VoiceModeScreen.swift",
+      "line": 191,
+      "context": "Text",
+      "text": "Voice sounds robotic? Download a natural one in \\(VoiceSpeaker.voiceSettingsPath), then tap the \\u{2913} beside a voice marked Enhanced or Premium.",
+      "key": "Voice sounds robotic? Download a natural one in %@, then tap the \\u{2913} beside a voice marked Enhanced or Premium.",
+      "inCatalog": false
+    },
+    {
+      "file": "ios/Plates/Screens/VoiceModeScreen.swift",
+      "line": 247,
+      "context": "Text",
+      "text": "Nothing logged yet",
+      "key": "Nothing logged yet",
+      "inCatalog": true
+    },
+    {
+      "file": "ios/Plates/Screens/VoiceModeScreen.swift",
+      "line": 285,
+      "context": "button",
+      "text": "Undo",
+      "key": "Undo",
+      "inCatalog": true
+    }
+  ],
+  "catalogEntries": 427,
+  "sourceOnly": 10
+}

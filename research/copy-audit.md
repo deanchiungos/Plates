@@ -1,474 +1,511 @@
-# User-facing copy
+# Copy audit
 
-Every string the app shows a person, with its source line.
+Every user-facing string in the app: **325** of them across **32** files.
 
-Edit the text at `file:line`. Strings containing `\(…)` splice in a value at
-runtime — reword around them, but keep the `\(…)` parts exactly as they are.
+**Edit copy in Xcode**, in `Plates/Localizable.xcstrings` — **427** entries. This file is the cross-check, not the source.
 
-- **323 strings** across **28 files**
-- **77** contain `\(…)` interpolation
-- **270** unique (so 53 are duplicated — reword one, search for the rest)
+✓ in the String Catalog · ✗ source-only (**10**)
+
+The ✗ rows are expected to be a short list with reasons — search photographs, plate names, and CloudKit's own error text. A ✗ on an ordinary sentence is a bug in the source, not in this report.
+
+| context | count |
+| --- | --- |
+| Text | 101 |
+| localized | 60 |
+| popup choice | 34 |
+| popup button | 28 |
+| accessibility | 21 |
+| button | 20 |
+| section | 15 |
+| nav title | 13 |
+| popup message | 8 |
+| placeholder | 7 |
+| popup title | 7 |
+| subtitle | 6 |
+| detail | 5 |
 
 
-## Screens/GameScreen.swift
+## ios/Plates/Design/AppIconArt.swift
 
-| line | where | text |
-|---|---|---|
-| 201 | Label | Nothing to fill yet |
-| 203 | Text | A trip is one drive with a route and a finish. A book you just keep adding to. |
-| 206 | Button | Start a trip |
-| 209 | Button | Start a book |
-| 360 | title: | Who's playing? |
-| 399 | a11yLabel | Voice mode |
-| 400 | a11yHint | Listens and logs plates as you say them |
-| 448 | Text | Playing with others? Start a party |
-| 478 | title: | States |
-| 479 | detail: | \(collection.statesFound) / \(Plate.stateTotal) found |
-| 490 | title: | Bonus plates |
-| 491 | detail: | \(collection.bonusFound) / \(Plate.bonus.count) found |
-| 555 | Text | Canada |
-| 564 | Text | \(collection.provincesFound) / \(Plate.provinces.count) found |
-| 595 | Text | Nothing left to find |
-| 598 | Text | Every plate in the sets you are hunting is already found. |
-| 604 | Button | Show everything |
-| 708 | popup.present | Show |
-| 708 | popup message | Choose what the grid draws. |
-| 818 | PopupButton | Remove all \(mine.count) |
-| 823 | PopupButton | Cancel |
-| 870 | popup message | Everyone plays from their own phone instead of sharing  |
-| 875 | PopupButton | Got it |
-| 994 | popup.present | What are you filling? |
-| 995 | popup message | Plates are saved against whichever of these is picked. |
-| 998 | PopupButton | New trip |
-| 1002 | PopupButton | New book |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 187 | ✓ | Text | ROAD TRIP |
+| 233 | ✓ | Text | 86 \u{00B7} 60 \u{00B7} 40 \u{00B7} 29 pt |
 
-## Screens/TripHeader.swift
+## ios/Plates/Design/DisclosureBar.swift
 
-| line | where | text |
-|---|---|---|
-| 82 | Text | \(trip.isActive ?  |
-| 88 | Text | SWITCH |
-| 123 | Text | \(trip.statesFound) of \(Plate.stateTotal) |
-| 162 | Text | PLATE BOOK |
-| 168 | Text | SWITCH |
-| 194 | Text | Collecting |
-| 196 | Text | \(book.statesFound) of \(Plate.stateTotal) |
-| 282 | Text | \(entry.score) |
-| 301 | a11yLabel | \(entry.player.name), \(entry.score) points\(isLeader ?  |
-| 369 | Text | Allow |
-| 390 | return "…" (copy) | location.circle.fill |
-| 391 | return "…" (copy) | location.slash |
-| 392 | return "…" (copy) | mappin.and.ellipse |
-| 393 | return "…" (copy) | location.magnifyingglass |
-| 400 | return "…" (copy) | Location is off |
-| 401 | return "…" (copy) | Where are you heading? |
-| 402 | return "…" (copy) | Finding you\u{2026} |
-| 417 | return "…" (copy) | Pin a destination on this trip and the rail will show how far is left. |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 35 | ✓ | Text | \(count) |
 
-## Screens/CollectionScreen.swift
+## ios/Plates/Design/FontLab.swift
 
-| line | where | text |
-|---|---|---|
-| 113 | navTitle | Collection |
-| 123 | a11yLabel | Start a new book |
-| 260 | a11yLabel | Shared |
-| 263 | Text | SWITCH |
-| 314 | a11yLabel | Edit \(book.name) |
-| 331 | return "…" (copy) | Across every book and trip |
-| 393 | detail: | \(b.found(in: plates)) / \(plates.count) |
-| 421 | Text | Trips you run will be listed here to compare. |
-| 433 | Text | Every trip you have run, newest first. The bar compares states found. |
-| 471 | popup.present | Which book? |
-| 472 | popup message | Picking a book here changes what you are looking at, and which book Drive fills. |
-| 475 | PopupChoice | All time |
-| 476 | subtitle: | Every plate ever, across all books and trips |
-| 483 | PopupButton | New book |
-| 502 | popup message | \(count) plate\(count == 1 ?  |
-| 505 | PopupButton | Empty book |
-| 517 | PopupButton | Keep them |
-| 528 | PopupButton | Delete book |
-| 538 | PopupButton | Cancel |
-| 576 | Text | \u{00D7}\(entry.count) |
-| 615 | Text | \(summary.statesFound) |
-| 619 | Text | states |
-| 643 | Label | \(summary.platesFound) plates |
-| 644 | Label | \(summary.days)d |
-| 718 | Text | Plates are checked off on the Drive screen. |
-| 724 | title: | Facts |
-| 724 | detail: | \(seen.count) of \(total) |
-| 738 | Text | Locked |
-| 757 | Button | Done |
-| 810 | Text | BOOK NAME |
-| 815 | TextField | My Plate Book |
-| 855 | Button | Cancel |
-| 874 | Text | \(book.statesFound) of \(Plate.stateTotal) states |
-| 978 | Text | Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are. |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 102 | ✓ | Text | LEGENDARY |
+| 105 | ✓ | Text | New Jersey |
+| 108 | ✓ | Text | The first drive-in theatre opened in Camden, New Jersey, in 1933. |
+| 112 | ✓ | Text | Playing with others?  Start a party |
+| 115 | ✓ | Text | Rarity is scored against this route. |
 
-## Screens/TripsScreen.swift
+## ios/Plates/Design/PlateGallery.swift
 
-| line | where | text |
-|---|---|---|
-| 51 | Label | No trips yet |
-| 59 | Text | A trip is one journey \u{2014} it has a route, and it ends.  |
-| 63 | Button | New trip |
-| 71 | navTitle | Trips |
-| 144 | Text | New trip |
-| 158 | Text | Tap a trip to play it, or swipe one left to pin it or mark it done.  |
-| 189 | Text | Archived |
-| 191 | Text | \(archived.count) |
-| 208 | title: | Reopen |
-| 286 | popup message | \(trip.platesFound) plate\(trip.platesFound == 1 ?  |
-| 288 | PopupButton | Clear plates |
-| 292 | PopupButton | Keep them |
-| 304 | PopupButton | Mark as done |
-| 308 | PopupButton | Cancel |
-| 315 | popup message | It stops appearing anywhere you pick a trip. Nothing is deleted \u{2014} its \(trip.platesFound) plate\(trip.platesFound == 1 ?  |
-| 317 | PopupButton | Archive |
-| 321 | PopupButton | Cancel |
-| 330 | PopupButton | Delete trip |
-| 334 | PopupButton | Cancel |
-| 343 | popup.present | Add \(trip.name) to which book? |
-| 350 | PopupButton | Cancel |
-| 359 | popup message | The \(folded.count) sighting\(folded.count == 1 ?  |
-| 363 | PopupButton | Remove |
-| 367 | PopupButton | Cancel |
-| 380 | popup message | The trip keeps its plates either way \u{2014} the book shows  |
-| 383 | PopupChoice | Stack everything |
-| 384 | subtitle: | All \(total) sighting\(total == 1 ?  |
-| 388 | PopupChoice | Fill the gaps |
-| 394 | PopupButton | Cancel |
-| 406 | return "…" (copy) | \(what) ends the party on this phone.  |
-| 572 | a11yLabel | Currently playing |
-| 581 | a11yLabel | Played as a party |
-| 588 | a11yLabel | Pinned |
-| 613 | Text | \(trip.statesFound) |
-| 617 | Text | of \(Plate.stateTotal) |
-| 630 | a11yLabel | Edit \(trip.name) |
-| 662 | return "…" (copy) | \(start) \u{2013} \(ended.formatted(.dateTime.month(.abbreviated).day())) |
-| 664 | return "…" (copy) | \(start) \u{00B7} day \(trip.dayNumber) |
-| 820 | Text | The host sets the scoring while you are in a party. |
-| 847 | Button | Cancel |
-| 852 | Button | Done |
-| 978 | Text | PLATES \u{00B7} IN ORDER FOUND |
-| 1042 | a11yLabel | \(sighting.plate?.name ?? sighting.plateCode), \(logTime(sighting.spottedAt)) |
-| 1053 | return "…" (copy) | Day \(max(1, day)) \u{00B7} \(clock) |
-| 1059 | Text | SCORING |
-| 1073 | Text | SCORING |
-| 1132 | Text | Count trucks and SUVs |
-| 1279 | Text | TRIP NAME |
-| 1284 | TextField | Summer roadtrip |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 88 | ✓ | Text | Plate catalogue |
 
-## Screens/MapScreen.swift
+## ios/Plates/Design/PlateTile.swift
 
-| line | where | text |
-|---|---|---|
-| 104 | navTitle | Map |
-| 319 | Text | \(found) / \(total) |
-| 386 | Button | Done |
-| 405 | Text | Rarity \(rarity) of 10\(trip?.route == nil ?  |
-| 421 | title: | Facts |
-| 421 | detail: | \(seen.count) of \(total) |
-| 427 | Text | Facts unlock as you spot this plate. Every sighting reveals a new one. |
-| 452 | Text | Locked |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 154 | ✓ | Text | \(repeatCount) |
 
-## Screens/PlayersScreen.swift
+## ios/Plates/Design/PopupPicker.swift
 
-| line | where | text |
-|---|---|---|
-| 43 | Text | NAME |
-| 48 | TextField | Who is playing? |
-| 64 | Text | FACE |
-| 82 | Text | COLOUR |
-| 109 | a11yLabel | Colour \(i + 1)\(taken ?  |
-| 116 | Text | Remove player |
-| 135 | Button | Cancel |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 95 | ✓ | Text | Nothing called \u{201C}\(query)\u{201D} |
+| 127 | ✓ | Text | \(count) |
+| 201 | ✓ | placeholder | Search \(total) |
+| 216 | ✓ | accessibility | Clear search |
 
-## Screens/PartyScreen.swift
+## ios/Plates/Design/RarityTier.swift
 
-| line | where | text |
-|---|---|---|
-| 62 | navTitle | Party |
-| 69 | title: | Who's playing? |
-| 153 | Text | Everyone spots on their own phone |
-| 156 | Text | One person starts the party and reads out the code.  |
-| 175 | Text | Parties are for trips. Switch to a trip on the Game screen to start one. |
-| 220 | Text | Read this out. Everyone else taps Join and types it in. |
-| 248 | title: | Protect what people find |
-| 249 | detail: | Only the person who spotted a plate can take it back. |
-| 260 | title: | Everyone can claim a plate |
-| 261 | detail: | A state stays open after the first person calls it, so it counts for all of you. |
-| 308 | Text | Looking for parties in the car\u{2026} |
-| 327 | Text | Hosted by \(found.hostName) |
-| 360 | Text | The code \(target.hostName) is showing |
-| 364 | TextField | ABCD |
-| 383 | navTitle | Join \(target.tripName) |
-| 387 | Button | Cancel |
-| 390 | Button | Join |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 41 | ✓ | localized | COMMON |
+| 42 | ✓ | localized | UNCOMMON |
+| 43 | ✓ | localized | RARE |
+| 44 | ✓ | localized | EPIC |
+| 45 | ✓ | localized | LEGENDARY |
+| 223 | ✓ | Text | tap to dismiss |
+| 240 | ✓ | accessibility | \(tier.label) find. \(plateName). \(fact ??  |
 
-## Screens/VoiceModeScreen.swift
+## ios/Plates/Design/SharePoster.swift
 
-| line | where | text |
-|---|---|---|
-| 74 | navTitle | Voice mode |
-| 78 | Button | Done |
-| 174 | Button | Open Settings |
-| 191 | Text | Voice sounds robotic? Download a natural one in \(VoiceSpeaker.voiceSettingsPath), then tap the \u{2913} beside a voice marked Enhanced or Premium. |
-| 206 | return "…" (copy) | Listening |
-| 207 | return "…" (copy) | Starting… |
-| 208 | return "…" (copy) | Paused |
-| 209 | return "…" (copy) | Microphone is off |
-| 210 | return "…" (copy) | Could not listen |
-| 222 | return "…" (copy) | Just say the states as you see them — \u{201C}New Jersey\u{201D}, \u{201C}Ohio\u{201D}, \u{201C}that\u{2019}s a Texas\u{201D}. |
-| 224 | return "…" (copy) | \u{201C} |
-| 245 | Text | Nothing logged yet |
-| 283 | Button | Undo |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 241 | ✓ | Text | \(entry.score) |
+| 253 | ✓ | Text | PLATES |
+| 308 | ✓ | popup choice | All time |
 
-## Screens/SettingsScreen.swift
+## ios/Plates/Domain/CloudBackup.swift
 
-| line | where | text |
-|---|---|---|
-| 44 | navTitle | Settings |
-| 145 | Text | Remove |
-| 167 | popup message | Plates they spotted stay collected \u{2014} every count is unchanged.  |
-| 170 | PopupButton | Remove |
-| 176 | PopupButton | Cancel |
-| 218 | Text | Following the drive |
-| 244 | return "…" (copy) | Not asked yet |
-| 258 | Text | Hands free |
-| 261 | Text | Say \u{201C}Hey Siri, log a plate in Plates\u{201D} \u{2014} or name it outright, \u{201C}log New Jersey in Plates\u{201D}. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say \u{201C}stop\u{201D} when you are done. |
-| 276 | Text | Haptics |
-| 303 | Text | Plates \(short) (\(build)) |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 139 | ✓ | localized | No connection to iCloud. Your plates will copy over once you are back online. |
+| 141 | ✓ | localized | Sign in to iCloud in Settings to back up your plates. |
+| 143 | ✓ | localized | Your iCloud storage is full, so nothing new can be copied over. |
+| 145 | ✓ | localized | This iCloud account is not allowed to store app data. |
+| 147 | ✓ | localized | iCloud is busy. This will retry on its own. |
+| 159 | ✗ | localized | Your plates could not be copied to iCloud. This is being looked into. |
+| 187 | ✓ | localized | Not backed up |
+| 188 | ✓ | localized | Sign in to iCloud |
+| 189 | ✓ | localized | Backing up to iCloud |
+| 190 | ✓ | localized | Backed up to iCloud |
+| 191 | ✓ | localized | Backup problem |
+| 201 | ✓ | localized | Your plates live on this phone only. Losing it loses the book. |
+| 203 | ✓ | localized | Your plates live on this phone only. \(reason) |
+| 205 | ✓ | localized | Your plates are on this phone only until you sign in, in Settings. |
+| 207 | ✓ | localized | Your plates will copy to iCloud shortly. |
+| 209 | ✓ | localized | Copying now\u{2026} |
+| 211 | ✓ | localized | Last copied \(when.formatted(.relative(presentation: .named))). |
 
-## Screens/MoreScreen.swift
+## ios/Plates/Domain/Models.swift
 
-| line | where | text |
-|---|---|---|
-| 26 | title: | Party |
-| 30 | title: | Plate lookup |
-| 34 | title: | Trail |
-| 38 | title: | Historical plates |
-| 42 | title: | Settings |
-| 51 | navTitle | More |
-| 87 | Text | PLATES |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 11 | ✓ | localized | Classic scoring |
+| 12 | ✓ | localized | Weighted scoring |
+| 13 | ✓ | localized | Unlimited scoring |
+| 19 | ✓ | localized | One point per state, however many times you see it. |
+| 20 | ✓ | localized | Rarer plates are worth more, judged against your route. |
+| 21 | ✓ | localized | Every sighting scores, so keep counting. |
 
-## Design/PlateTile.swift
+## ios/Plates/Domain/Party/PartySession.swift
 
-| line | where | text |
-|---|---|---|
-| 154 | Text | \(repeatCount) |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 318 | ✓ | localized | Could not join \(target.tripName). Check the four characters on \(target.hostName)'s phone and tap the trip again. |
 
-## Design/PopupPicker.swift
+## ios/Plates/Domain/PlateFilter.swift
 
-| line | where | text |
-|---|---|---|
-| 82 | Text | Nothing called \u{201C}\(query)\u{201D} |
-| 108 | Text | \(count) |
-| 124 | Text | Show all \(matches.count) |
-| 167 | TextField | Search \(total) |
-| 182 | a11yLabel | Clear search |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 79 | ✓ | localized | States |
+| 81 | ✓ | localized | Territories |
+| 82 | ✓ | localized | Canada |
+| 91 | ✓ | localized | All 50 |
+| 92 | ✓ | localized | District of Columbia |
+| 93 | ✓ | localized | Puerto Rico |
+| 94 | ✓ | localized | \(n) provinces and territories |
 
-## Design/RarityTier.swift
+## ios/Plates/Domain/PlateIntents.swift
 
-| line | where | text |
-|---|---|---|
-| 38 | return "…" (copy) | COMMON |
-| 39 | return "…" (copy) | UNCOMMON |
-| 40 | return "…" (copy) | RARE |
-| 41 | return "…" (copy) | EPIC |
-| 42 | return "…" (copy) | LEGENDARY |
-| 220 | Text | tap to dismiss |
-| 237 | a11yLabel | \(tier.label) find. \(plateName). \(fact ??  |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 26 | ✓ | popup choice | \(name) |
+| 26 | ✓ | popup choice | \(id) |
+| 127 | ✓ | popup choice | Plate |
+| 210 | ✓ | popup choice | Plate |
+| 291 | ✓ | popup choice | Plate |
 
-## Domain/CloudBackup.swift
+## ios/Plates/Domain/TripReminders.swift
 
-| line | where | text |
-|---|---|---|
-| 139 | return "…" (copy) | No connection to iCloud. Your plates will copy over once you are back online. |
-| 141 | return "…" (copy) | Sign in to iCloud in Settings to back up your plates. |
-| 143 | return "…" (copy) | Your iCloud storage is full, so nothing new can be copied over. |
-| 145 | return "…" (copy) | This iCloud account is not allowed to store app data. |
-| 147 | return "…" (copy) | iCloud is busy. This will retry on its own. |
-| 154 | return "…" (copy) | iCloud rejected the data (\(ck.code.rawValue)).  |
-| 157 | return "…" (copy) | Your plates could not be copied to iCloud. This is being looked into. |
-| 185 | return "…" (copy) | Not backed up |
-| 186 | return "…" (copy) | Sign in to iCloud |
-| 187 | return "…" (copy) | Backing up to iCloud |
-| 188 | return "…" (copy) | Backed up to iCloud |
-| 189 | return "…" (copy) | Backup problem |
-| 200 | return "…" (copy) | Your plates are on this phone only until you sign in, in Settings. |
-| 202 | return "…" (copy) | Your plates will copy to iCloud shortly. |
-| 204 | return "…" (copy) | Copying now\u{2026} |
-| 206 | return "…" (copy) | Last copied \(when.formatted(.relative(presentation: .named))). |
-| 221 | return "…" (copy) | checkmark.icloud.fill |
-| 222 | return "…" (copy) | arrow.trianglehead.2.clockwise.rotate.90.icloud |
-| 223 | return "…" (copy) | person.icloud |
-| 224 | return "…" (copy) | exclamationmark.icloud |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 102 | ✓ | localized | Still traveling? |
+| 103 | ✓ | localized | You have \(trip.statesFound) of 50 states on \(trip.name). |
 
-## Domain/Models.swift
+## ios/Plates/Domain/VoiceLogger.swift
 
-| line | where | text |
-|---|---|---|
-| 11 | return "…" (copy) | Classic scoring |
-| 12 | return "…" (copy) | Weighted scoring |
-| 13 | return "…" (copy) | Unlimited scoring |
-| 19 | return "…" (copy) | One point per state, however many times you see it. |
-| 20 | return "…" (copy) | Rarer plates are worth more, judged against your route. |
-| 21 | return "…" (copy) | Every sighting scores, so keep counting. |
-| 230 | return "…" (copy) | \(from) \u{2192} \(to) |
-| 231 | return "…" (copy) | From \(from) |
-| 232 | return "…" (copy) | To \(to) |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 106 | ✓ | localized | Voice mode needs the microphone and speech recognition. Both can be turned on in Settings. |
 
-## Domain/PlateDates.swift
+## ios/Plates/Screens/CollectionScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 61 | return "…" (copy) | \(first) – now |
-| 62 | return "…" (copy) | \(first) |
-| 63 | return "…" (copy) | \(first) – \(last) |
-| 81 | return "…" (copy) | \(span) year\(span == 1 ?  |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 105 | ✓ | nav title | Books |
+| 137 | ✓ | accessibility | Start a new book |
+| 286 | ✓ | accessibility | Shared |
+| 289 | ✓ | Text | SWITCH |
+| 340 | ✓ | accessibility | Edit \(book.name) |
+| 431 | ✓ | detail | \(b.found(in: plates)) / \(plates.count) |
+| 484 | ✓ | popup title | Which book? |
+| 485 | ✓ | popup message | Picking a book here changes what you are looking at, and which book Drive fills. |
+| 488 | ✓ | popup choice | All time |
+| 489 | ✓ | subtitle | Every plate ever, across all books and trips |
+| 496 | ✓ | popup button | New book |
+| 522 | ✓ | popup button | Empty book |
+| 534 | ✓ | popup button | Keep them |
+| 545 | ✓ | popup button | Delete book |
+| 555 | ✓ | popup button | Cancel |
+| 633 | ✗ | Text | \u{00D7}\(entry.count) |
+| 719 | ✓ | Text | Plates are checked off on the Drive screen. |
+| 725 | ✓ | popup choice | Facts |
+| 725 | ✓ | popup choice | \(seen.count) of \(total) |
+| 769 | ✓ | button | Done |
+| 829 | ✓ | Text | BOOK NAME |
+| 834 | ✓ | placeholder | My Plate Book |
+| 877 | ✓ | button | Cancel |
+| 901 | ✓ | accessibility | Share this book |
+| 921 | ✓ | Text | \(book.statesFound) of \(Plate.stateTotal) states |
+| 1025 | ✓ | Text | Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are. |
 
-## Domain/PlateFilter.swift
+## ios/Plates/Screens/GameScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 75 | return "…" (copy) | States |
-| 76 | return "…" (copy) | D.C. |
-| 77 | return "…" (copy) | Territories |
-| 78 | return "…" (copy) | Canada |
-| 87 | return "…" (copy) | All 50 |
-| 88 | return "…" (copy) | District of Columbia |
-| 89 | return "…" (copy) | Puerto Rico |
-| 90 | return "…" (copy) | \(n) provinces and territories |
-| 124 | return "…" (copy) | \(hideFound ?  |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 203 | ✓ | Text | A trip is one drive with a route and a finish. A book you just keep adding to. |
+| 206 | ✓ | button | Start a trip |
+| 209 | ✓ | button | Start a book |
+| 374 | ✓ | popup choice | Who's playing? |
+| 413 | ✓ | accessibility | Voice mode |
+| 414 | ✓ | accessibility | Listens and logs plates as you say them |
+| 463 | ✓ | Text | Playing with others? Start a party |
+| 493 | ✓ | popup choice | States |
+| 494 | ✓ | detail | \(collection.statesFound) / \(Plate.stateTotal) found |
+| 505 | ✓ | popup choice | Bonus plates |
+| 506 | ✓ | detail | \(collection.bonusFound) / \(Plate.bonus.count) found |
+| 570 | ✓ | Text | Canada |
+| 579 | ✓ | Text | \(collection.provincesFound) / \(Plate.provinces.count) found |
+| 610 | ✓ | Text | Nothing left to find |
+| 613 | ✓ | Text | Every plate in the sets you are hunting is already found. |
+| 619 | ✓ | button | Show everything |
+| 723 | ✓ | popup title | Show |
+| 723 | ✓ | popup title | Choose what the grid draws. |
+| 830 | ✓ | popup title | Remove \(plate.name)? |
+| 831 | ✓ | popup button | Remove it |
+| 835 | ✓ | popup button | Keep it |
+| 890 | ✓ | popup button | Remove all \(mine.count) |
+| 895 | ✓ | popup button | Cancel |
+| 942 | ✓ | popup message | Everyone plays from their own phone instead of sharing yours, so Plates no longer asks who spotted each plate. Every plate you have already collected is untouched. Start a party from the More tab. |
+| 944 | ✓ | popup button | Got it |
+| 1071 | ✓ | popup title | What are you filling? |
+| 1072 | ✓ | popup message | Plates are saved against whichever of these is picked. New trips and books are made on the Trips and Books tabs. |
 
-## Domain/PlateIntents.swift
+## ios/Plates/Screens/HistoricalPlatesScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 26 | subtitle: | \(id) |
-| 26 | title: | \(name) |
-| 127 | title: | Plate |
-| 210 | title: | Plate |
-| 291 | title: | Plate |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 45 | ✓ | nav title | Historical plates |
+| 99 | ✓ | accessibility | Jurisdiction: \(plate?.name ?? code). Change |
+| 138 | ✓ | Text | Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed. |
+| 151 | ✓ | Text | No photographs yet |
+| 154 | ✓ | Text | Nobody has photographed a \(plate?.name ?? code) plate for Wikimedia Commons. |
+| 182 | ✓ | localized | States |
+| 183 | ✓ | localized | Canada |
+| 184 | ✓ | localized | Other |
+| 205 | ✓ | Text | Nothing matches \u{201C}\(query)\u{201D}. |
+| 214 | ✓ | nav title | Jurisdiction |
+| 223 | ✓ | button | Cancel |
+| 248 | ✓ | Text | \(PlateHistoryBook.designs(for: plate.code).count) |
+| 286 | ✓ | Text | IN ISSUE |
+| 409 | ✓ | localized | Status |
+| 409 | ✓ | localized | Still in issue |
+| 413 | ✓ | localized | Photograph |
+| 413 | ✓ | localized | Wikipedia gives this era the design above it, so this is that plate |
+| 436 | ✓ | nav title | \(jurisdiction) \(PlateDates.start(design.dates)) |
+| 440 | ✓ | button | Done |
 
-## Domain/Shared/SharedBookSync.swift
+## ios/Plates/Screens/MapScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 305 | return "…" (copy) | Sign in to iCloud to share books. |
-| 307 | return "…" (copy) | No connection \u{2014} this will catch up later. |
-| 308 | return "…" (copy) | Your iCloud storage is full. |
-| 310 | return "…" (copy) | That shared book is no longer available. |
-| 311 | return "…" (copy) | You do not have permission to change that book. |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 39 | ✓ | localized | Found |
+| 40 | ✓ | localized | Rarity |
+| 105 | ✓ | nav title | Map |
+| 320 | ✓ | Text | \(found) / \(total) |
+| 387 | ✓ | button | Done |
+| 406 | ✓ | Text | Rarity \(rarity) of 10\(trip?.route == nil ?  |
+| 422 | ✓ | popup choice | Facts |
+| 422 | ✓ | popup choice | \(seen.count) of \(total) |
+| 428 | ✓ | Text | Facts unlock as you spot this plate. Every sighting reveals a new one. |
+| 453 | ✓ | Text | Locked |
 
-## Domain/VoiceSpeaker.swift
+## ios/Plates/Screens/MoreScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 104 | return "…" (copy) | Settings \u{203A} Accessibility \u{203A} Read & Speak \u{203A} Voices \u{203A} English |
-| 106 | return "…" (copy) | Settings \u{203A} Accessibility \u{203A} Spoken Content \u{203A} Voices \u{203A} English |
-| 171 | return "…" (copy) | \(plate.name) has already been seen. |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 25 | ✓ | localized | While you play |
+| 26 | ✓ | popup choice | Party |
+| 30 | ✓ | popup choice | Plate lookup |
+| 33 | ✓ | localized | Looking back |
+| 34 | ✓ | popup choice | Trail |
+| 38 | ✓ | popup choice | Historical plates |
+| 41 | ✓ | localized | App |
+| 42 | ✓ | popup choice | Settings |
+| 51 | ✓ | nav title | More |
+| 87 | ✓ | Text | PLATES |
 
-## Screens/HistoricalPlatesScreen.swift
+## ios/Plates/Screens/PartyScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 45 | navTitle | Historical plates |
-| 99 | a11yLabel | Jurisdiction: \(plate?.name ?? code). Change |
-| 134 | return "…" (copy) | \(count), \(first)\u{2013}\(last) |
-| 138 | Text | Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed. |
-| 151 | Text | No photographs yet |
-| 154 | Text | Nobody has photographed a \(plate?.name ?? code) plate for Wikimedia Commons. |
-| 205 | Text | Nothing matches \u{201C}\(query)\u{201D}. |
-| 214 | navTitle | Jurisdiction |
-| 223 | Button | Cancel |
-| 248 | Text | \(PlateHistoryBook.designs(for: plate.code).count) |
-| 286 | Text | IN ISSUE |
-| 405 | navTitle | \(jurisdiction) \(PlateDates.start(design.dates)) |
-| 409 | Button | Done |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 63 | ✓ | nav title | Party |
+| 70 | ✓ | popup choice | Who's playing? |
+| 154 | ✓ | section | Play together |
+| 156 | ✓ | Text | Everyone spots on their own phone |
+| 159 | ✓ | Text | One person starts the party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal. |
+| 177 | ✓ | section | Not this one |
+| 254 | ✓ | popup choice | Finish the trip |
+| 255 | ✓ | subtitle | Files it away. Nothing is lost. |
+| 261 | ✓ | popup choice | Discard this trip |
+| 262 | ✓ | subtitle | Removes your copy only. |
+| 267 | ✓ | popup choice | Finish and keep it |
+| 268 | ✓ | subtitle | Files it away with your trips. |
+| 274 | ✓ | popup button | Leave it open |
+| 282 | ✓ | section | Your code |
+| 291 | ✓ | Text | Read this out. Everyone else taps Join and types it in. |
+| 316 | ✓ | section | Rules |
+| 318 | ✓ | popup choice | Protect what people find |
+| 319 | ✓ | detail | Only the person who spotted a plate can take it back. |
+| 330 | ✓ | popup choice | Everyone can claim a plate |
+| 331 | ✓ | detail | A state stays open after the first person calls it, so it counts for all of you. |
+| 383 | ✓ | section | Joining |
+| 386 | ✓ | Text | Asking \(target.hostName) to let you in\u{2026} |
+| 394 | ✓ | section | Nearby |
+| 398 | ✓ | Text | Looking for parties in the car\u{2026} |
+| 417 | ✗ | Text | Hosted by \(found.hostName) |
+| 454 | ✓ | Text | The code \(target.hostName) is showing |
+| 458 | ✓ | placeholder | ABCD |
+| 477 | ✓ | nav title | Join \(target.tripName) |
+| 481 | ✓ | button | Cancel |
+| 484 | ✓ | button | Join |
+| 499 | ✓ | section | In the party |
+| 525 | ✓ | section | Trouble |
+| 580 | ✓ | localized | \(host ?? String(localized:  |
+| 580 | ✗ | localized | )) started \(trip.name) and shared it with you, so only they can start a party for it. Start one on a trip of your own instead. |
 
-## Screens/PlaceField.swift
+## ios/Plates/Screens/PlateFilterPanel.swift
 
-| line | where | text |
-|---|---|---|
-| 295 | Label | Map unavailable |
-| 486 | return "…" (copy) | \(distance.string(fromDistance: route.distance)) \u{00B7} \(time) |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 42 | ✓ | accessibility | Choose which plates to show |
+| 47 | ✓ | localized | \(leftCount) left |
+| 50 | ✓ | localized | ^[\(filter.sets.count) set](inflect: true) |
+| 73 | ✓ | popup choice | Only what's left |
+| 74 | ✓ | subtitle | Hide plates you have already found |
+| 82 | ✓ | Text | SETS |
+| 97 | ✗ | localized | \(leftInRegion(region)) left of \(region.plates.count) |
+| 110 | ✓ | popup button | Show everything |
+| 117 | ✓ | popup button | Done |
 
-## Screens/PlateFilterPanel.swift
+## ios/Plates/Screens/PlateLookupScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 42 | a11yHint | Choose which plates to show |
-| 47 | return "…" (copy) | \(leftCount) left |
-| 50 | return "…" (copy) | \(filter.sets.count) sets |
-| 73 | PopupChoice | Only what's left |
-| 74 | subtitle: | Hide plates you have already found |
-| 82 | Text | SETS |
-| 105 | PopupButton | Show everything |
-| 112 | PopupButton | Done |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 53 | ✓ | nav title | Plate lookup |
+| 94 | ✓ | placeholder | Describe the plate you saw |
+| 109 | ✓ | accessibility | Clear |
+| 127 | ✓ | Text | Saw a plate you couldn't name? |
+| 136 | ✓ | Text | Type whatever you remember about it. Any of these work: |
+| 147 | ✓ | Text | Mixing them works best: green plate with a lighthouse. Results come back one row per state, newest design first. Tap any of them to see the photo big, next to every other plate that state has issued. |
+| 153 | ✓ | Text | TRY ONE |
+| 164 | ✓ | Text | \(PlateLookup.designs.count) designs, current and historic, each with a photograph. |
+| 185 | ✓ | Text | Nothing matched that |
+| 192 | ✗ | Text | No plate description mentions \(unknown.map {  |
+| 192 | ✗ | Text |  }.joined(separator:  |
+| 198 | ✓ | Text | Try a color, something drawn on it, or a word printed on it. |
+| 393 | ✓ | Text | \(variantCount) |
+| 491 | ✓ | Text | EVERY \(design.jurisdiction.uppercased()) DESIGN |
+| 531 | ✓ | button | Done |
+| 562 | ✓ | Text | Photo: \(attribution) |
 
-## Screens/PlateLookupScreen.swift
+## ios/Plates/Screens/PlateSearch.swift
 
-| line | where | text |
-|---|---|---|
-| 44 | navTitle | Plate lookup |
-| 85 | TextField | Describe the plate you saw |
-| 100 | a11yLabel | Clear |
-| 118 | Text | Saw a plate you couldn't name? |
-| 127 | Text | Type whatever you remember about it. Any of these work: |
-| 128 | Text | • a colour, like blue or orange and black\n |
-| 133 | Text | Mixing them works best: green plate with a lighthouse.  |
-| 142 | Text | TRY ONE |
-| 153 | Text | \(PlateLookup.designs.count) designs, current and historic,  |
-| 175 | Text | Nothing matched that |
-| 180 | Text | No plate description mentions  |
-| 188 | Text | Try a colour, something drawn on it, or a word printed on it. |
-| 383 | Text | \(variantCount) |
-| 481 | Text | EVERY \(design.jurisdiction.uppercased()) DESIGN |
-| 521 | Button | Done |
-| 552 | Text | Photo:  |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 78 | ✓ | placeholder | State or code |
+| 88 | ✓ | accessibility | Search plates by state or code |
+| 91 | ✓ | Text | \(matchCount) |
+| 104 | ✓ | accessibility | Clear search |
+| 121 | ✓ | button | Cancel |
 
-## Screens/PlateSearch.swift
+## ios/Plates/Screens/PlayersScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 78 | TextField | State or code |
-| 88 | a11yLabel | Search plates by state or code |
-| 91 | Text | \(matchCount) |
-| 104 | a11yLabel | Clear search |
-| 121 | Button | Cancel |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 43 | ✓ | Text | NAME |
+| 48 | ✓ | placeholder | Who is playing? |
+| 64 | ✓ | Text | FACE |
+| 82 | ✓ | Text | COLOR |
+| 109 | ✗ | accessibility | Color \(i + 1)\(taken ?  |
+| 116 | ✓ | Text | Remove player |
+| 135 | ✓ | button | Cancel |
 
-## Screens/RegionMapView.swift
+## ios/Plates/Screens/RegionMapView.swift
 
-| line | where | text |
-|---|---|---|
-| 303 | a11yValue | \(foundCount) of \(G.codes.count) regions found |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 303 | ✓ | accessibility | \(foundCount) of \(G.codes.count) regions found |
 
-## Screens/RootView.swift
+## ios/Plates/Screens/SettingsScreen.swift
 
-| line | where | text |
-|---|---|---|
-| 84 | Label | Game |
-| 88 | Label | Map |
-| 92 | Label | Book |
-| 96 | Label | Trips |
-| 100 | Label | More |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 49 | ✓ | nav title | Settings |
+| 69 | ✓ | section | Playing as |
+| 124 | ✓ | section | Other people |
+| 150 | ✓ | Text | Remove |
+| 168 | ✓ | localized | No plates on this phone |
+| 169 | ✓ | localized | ^[\(n) plate](inflect: true) they spotted |
+| 176 | ✓ | popup message | Plates they spotted stay collected, and every count is unchanged. Only their line in the standings goes. |
+| 178 | ✓ | popup button | Remove |
+| 184 | ✓ | popup button | Cancel |
+| 197 | ✓ | section | Your collection |
+| 224 | ✓ | section | Location |
+| 226 | ✓ | Text | Following the drive |
+| 261 | ✓ | section | Reminders |
+| 265 | ✓ | Text | Unfinished trips |
+| 268 | ✓ | Text | A nudge if a trip goes a day without a plate. |
+| 313 | ✓ | section | Voice |
+| 315 | ✓ | Text | Hands free |
+| 318 | ✓ | Text | Say \u{201C}Hey Siri, log a plate in Plates\u{201D}, or name it outright: \u{201C}log New Jersey in Plates\u{201D}. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say \u{201C}stop\u{201D} when you are done. |
+| 331 | ✓ | section | Feedback |
+| 333 | ✓ | Text | Haptics |
+| 360 | ✓ | Text | Plates \(short) (\(build)) |
 
-## Screens/Trail.swift
+## ios/Plates/Screens/Trail.swift
 
-| line | where | text |
-|---|---|---|
-| 93 | navTitle | Trail |
-| 140 | return "…" (copy) | pin- |
-| 141 | return "…" (copy) | stop- |
-| 207 | title: | All time |
-| 208 | subtitle: | Every plate ever logged |
-| 249 | popup.present | Show which drive? |
-| 251 | PopupButton | Cancel |
-| 269 | return "…" (copy) | All time |
-| 355 | Text | No trail yet |
-| 358 | Text | Plates get a pin here when you log them with location turned on. Older ones have no pin \u{2014} the app was not watching at the time. |
-| 870 | Text | \(pins.count) |
-| 1112 | Button | Done |
-| 1310 | Text | No plate here matches \u{201C}\(query)\u{201D}. |
-| 1323 | Button | Done |
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 93 | ✓ | nav title | Trail |
+| 211 | ✓ | localized | All time |
+| 212 | ✓ | localized | Every plate ever logged |
+| 253 | ✓ | popup title | Show which drive? |
+| 255 | ✓ | popup button | Cancel |
+| 359 | ✓ | Text | No trail yet |
+| 362 | ✓ | Text | Plates get a pin here when you log them with location turned on. Older ones have no pin. The app was not watching at the time. |
+| 874 | ✓ | Text | \(pins.count) |
+| 1116 | ✓ | button | Done |
+| 1314 | ✓ | Text | No plate here matches \u{201C}\(query)\u{201D}. |
+| 1327 | ✓ | button | Done |
+
+## ios/Plates/Screens/TripComparison.swift
+
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 31 | ✓ | popup choice | Compare trips |
+| 41 | ✓ | Text | Newest first. The bar compares states found. |
+| 73 | ✓ | Text | \(summary.statesFound) |
+| 77 | ✓ | Text | states |
+
+## ios/Plates/Screens/TripHeader.swift
+
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 82 | ✓ | Text | \(trip.isActive ?  |
+| 82 | ✗ | Text | ) TRIP \u{00B7} DAY \(trip.dayNumber) |
+| 88 | ✓ | Text | SWITCH |
+| 123 | ✓ | Text | \(trip.statesFound) of \(Plate.stateTotal) |
+| 162 | ✓ | Text | PLATE BOOK |
+| 168 | ✓ | Text | SWITCH |
+| 194 | ✓ | Text | Collecting |
+| 196 | ✓ | Text | \(book.statesFound) of \(Plate.stateTotal) |
+| 287 | ✓ | Text | \(entry.score) |
+| 306 | ✓ | accessibility | \(entry.player.name), \(entry.score) points\(isLeader ?  |
+| 374 | ✓ | Text | Allow |
+
+## ios/Plates/Screens/TripsScreen.swift
+
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 61 | ✓ | Text | A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going. |
+| 63 | ✓ | button | New trip |
+| 71 | ✓ | nav title | Trips |
+| 163 | ✓ | Text | New trip |
+| 177 | ✓ | Text | Tap a trip to play it, or swipe one left to pin it or mark it done. A trip is one journey; for everyday spotting, fill a book instead. |
+| 209 | ✓ | popup choice | Finished |
+| 216 | ✓ | popup choice | Reopen |
+| 219 | ✓ | popup choice | Archive |
+| 248 | ✓ | popup choice | Archived |
+| 255 | ✓ | popup choice | Reopen |
+| 339 | ✓ | popup message | ^[\(trip.platesFound) plate](inflect: true) found on \(trip.name) will be un-collected. The trip itself stays. |
+| 341 | ✓ | popup button | Clear plates |
+| 345 | ✓ | popup button | Keep them |
+| 354 | ✓ | popup button | Mark as done |
+| 358 | ✓ | popup button | Cancel |
+| 365 | ✓ | popup message | It stops appearing anywhere you pick a trip. Nothing is deleted. Its ^[\(trip.platesFound) plate](inflect: true) stay in your history, and you can bring it back. |
+| 367 | ✓ | popup button | Archive |
+| 371 | ✓ | popup button | Cancel |
+| 380 | ✓ | popup button | Delete trip |
+| 384 | ✓ | popup button | Cancel |
+| 393 | ✓ | popup title | Add \(trip.name) to which book? |
+| 400 | ✓ | popup button | Cancel |
+| 409 | ✓ | popup message | The ^[\(folded.count) sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched. |
+| 411 | ✓ | popup button | Remove |
+| 415 | ✓ | popup button | Cancel |
+| 428 | ✓ | popup message | The trip keeps its plates either way. The book just shows them too, and you can take them back out whenever you like. |
+| 430 | ✓ | popup choice | Stack everything |
+| 431 | ✓ | subtitle | All ^[\(total) sighting](inflect: true) carry over. Plates the book already has count again. |
+| 434 | ✓ | popup choice | Fill the gaps |
+| 440 | ✓ | popup button | Cancel |
+| 607 | ✓ | accessibility | Currently playing |
+| 616 | ✓ | accessibility | Played as a party |
+| 623 | ✓ | accessibility | Pinned |
+| 648 | ✓ | Text | \(trip.statesFound) |
+| 652 | ✓ | Text | of \(Plate.stateTotal) |
+| 665 | ✓ | accessibility | Edit \(trip.name) |
+| 863 | ✓ | Text | The host sets the scoring while you are in a party. |
+| 890 | ✓ | button | Cancel |
+| 915 | ✓ | accessibility | Share this trip |
+| 920 | ✓ | button | Done |
+| 997 | ✓ | Text | \(host)'s trip, from their party. This is your copy of it. |
+| 1083 | ✓ | Text | PLATES \u{00B7} IN ORDER FOUND |
+| 1168 | ✓ | Text | SCORING |
+| 1181 | ✓ | Text | SCORING |
+| 1345 | ✓ | Text | TRIP NAME |
+| 1350 | ✓ | placeholder | Summer roadtrip |
+
+## ios/Plates/Screens/VoiceModeScreen.swift
+
+| line | ✓ | context | string |
+| --- | --- | --- | --- |
+| 74 | ✓ | nav title | Voice mode |
+| 174 | ✓ | button | Open Settings |
+| 191 | ✗ | Text | Voice sounds robotic? Download a natural one in \(VoiceSpeaker.voiceSettingsPath), then tap the \u{2913} beside a voice marked Enhanced or Premium. |
+| 247 | ✓ | Text | Nothing logged yet |
+| 285 | ✓ | button | Undo |

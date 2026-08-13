@@ -15,6 +15,15 @@ struct PlateLookupScreen: View {
 
     /// Starters, for the blank state. Chosen to show the range of what works:
     /// an object, a colour, a landscape, an era.
+    /// Deliberately *not* localised, and the only user-facing text in the app that
+    /// is deliberately left out of the String Catalog.
+    ///
+    /// Tapping one of these puts it in the search field verbatim, and the corpus it
+    /// searches — `PlateLookup.designs`, built from the plate-history CSV — is
+    /// written in English. Translating the chip would translate the query with it
+    /// and every one of these eight would return nothing. Making them searchable in
+    /// another language means translating the corpus first, which is a much larger
+    /// job than translating a label.
     private let starters = ["lighthouse", "cactus", "covered bridge", "palm tree",
                             "yellow with a bison", "mountains at sunset",
                             "green gradient", "1970s"]
@@ -125,15 +134,17 @@ struct PlateLookupScreen: View {
                 // need to know is what counts as a valid thing to type.
                 VStack(alignment: .leading, spacing: 9) {
                     Text("Type whatever you remember about it. Any of these work:")
-                    Text("• a color, like blue or orange and black\n"
-                         + "• something drawn on it, like a lighthouse or mountains\n"
-                         + "• a word printed on it, like Vacationland\n"
-                         + "• roughly when it was from, like 1970s\n"
-                         + "• the state or province name, if you got that much")
-                    Text("Mixing them works best: green plate with a lighthouse. "
-                         + "Results come back one row per state, newest design first. "
-                         + "Tap any of them to see the photo big, next to every other "
-                         + "plate that state has issued.")
+                    // One key, newlines and all. Split across five `+` fragments it
+                    // was five `String`s the catalog never saw; as one literal it is
+                    // a single entry a translator can reorder and re-bullet.
+                    Text("""
+                         • a color, like blue or orange and black
+                         • something drawn on it, like a lighthouse or mountains
+                         • a word printed on it, like Vacationland
+                         • roughly when it was from, like 1970s
+                         • the state or province name, if you got that much
+                         """)
+                    Text("Mixing them works best: green plate with a lighthouse. Tap any result to see the photo big, alongside every other plate that state has issued.")
                 }
                 .font(.plates(size: 14))
                 .foregroundStyle(Theme.inkMuted)
@@ -150,8 +161,7 @@ struct PlateLookupScreen: View {
                     focused = false
                 }
 
-                Text("\(PlateLookup.designs.count) designs, current and historic, "
-                     + "each with a photograph.")
+                Text("\(PlateLookup.designs.count) designs, current and historic, each with a photograph.")
                     .font(.plates(size: 11.5))
                     .foregroundStyle(Theme.inkMuted.opacity(0.75))
                     .padding(.top, 6)
@@ -177,9 +187,9 @@ struct PlateLookupScreen: View {
                 .foregroundStyle(Theme.ink)
 
             if !unknown.isEmpty {
-                Text("No plate description mentions "
-                     + unknown.map { "“\($0)”" }.joined(separator: " or ")
-                     + ".")
+                // The joined list is built first so the sentence around it is one
+                // key rather than three fragments glued together at runtime.
+                Text("No plate description mentions \(unknown.map { "“\($0)”" }.joined(separator: " or ")).")
                     .font(.plates(size: 13))
                     .foregroundStyle(Theme.inkMuted)
                     .multilineTextAlignment(.center)
@@ -549,7 +559,7 @@ struct PlateDesignDetail: View {
     @ViewBuilder
     private var credit: some View {
         if let attribution = shown.attribution {
-            Text("Photo: " + attribution)
+            Text("Photo: \(attribution)")
                 .font(.plates(size: 11))
                 .foregroundStyle(Theme.inkMuted.opacity(0.8))
                 .fixedSize(horizontal: false, vertical: true)

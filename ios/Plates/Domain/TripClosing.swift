@@ -22,8 +22,17 @@ enum TripClosing {
     /// And they should be. A drive that just ended is the one you most want to look
     /// at: a tester asked for exactly this — finished trips still visible for review,
     /// archived ones out of the summary. Archiving stays a deliberate second step.
+    /// Set by `finish`, read by the `doneTrip` coach mark, never persisted.
+    ///
+    /// In memory on purpose. The tip is a follow-through on something you just did —
+    /// "that trip went *there*" — and a flag that survived a relaunch would turn it
+    /// into archaeology about a drive from last month, explained to somebody who
+    /// opened the Trips tab for an unrelated reason.
+    private(set) static var finishedSomethingThisSession = false
+
     static func finish(_ trip: Trip, in context: ModelContext) {
         trip.endedAt = Date()
+        finishedSomethingThisSession = true
         try? context.save()
 
         // A trip that is no longer the one being played must not still be named as

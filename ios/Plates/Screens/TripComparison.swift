@@ -38,14 +38,20 @@ struct TripComparison: View {
                                        best: best)
                     }
 
-                    Text("Newest first. The bar compares states found.")
+                    Text("Newest trip first. The longer the bar, the more states you found.")
                         .font(.plates(size: 11.5))
                         .foregroundStyle(Theme.inkMuted)
                         .multilineTextAlignment(.center)
                         .padding(.top, 2)
                 }
             }
-            .padding(.top, 4)
+            // The same 18 the Finished and Archived sections carry. Those two and
+            // this one are siblings in a `VStack(spacing: 10)`, so a section's own
+            // top padding is the whole difference between the gaps — 4 here put this
+            // bar 14pt below Archived while Archived sat 28pt below Finished, and
+            // three evenly-weighted headers at two different spacings read as
+            // Compare belonging to Archived rather than standing beside it.
+            .padding(.top, 18)
         }
     }
 }
@@ -101,8 +107,16 @@ struct TripSummaryRow: View {
                 Label("\(summary.platesFound) plates", systemImage: "square.grid.2x2")
                 Label("\(summary.days)d", systemImage: "calendar")
                 if let bf = summary.bestFind, let p = Plate.plate(for: bf.code) {
-                    Label(p.code, systemImage: "sparkles")
-                        .foregroundStyle(RarityTier.forRarity(bf.rarity).color)
+                    // The best find wears its tier dot, not a sparkle. The dot is
+                    // how rarity is drawn everywhere else in the app, and its
+                    // colour already says how good the find was.
+                    HStack(spacing: 4) {
+                        Circle()
+                            .fill(RarityTier.forRarity(bf.rarity).color)
+                            .frame(width: 6, height: 6)
+                        Text(p.code)
+                    }
+                    .foregroundStyle(RarityTier.forRarity(bf.rarity).color)
                 }
                 Spacer(minLength: 0)
             }

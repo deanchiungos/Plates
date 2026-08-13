@@ -8,17 +8,17 @@ enum ScoringMode: String, Codable, CaseIterable, Identifiable, Sendable {
 
     var label: String {
         switch self {
-        case .classic:   return "Classic scoring"
-        case .weighted:  return "Weighted scoring"
-        case .unlimited: return "Unlimited scoring"
+        case .classic:   return String(localized: "Classic scoring")
+        case .weighted:  return String(localized: "Weighted scoring")
+        case .unlimited: return String(localized: "Unlimited scoring")
         }
     }
 
     var blurb: String {
         switch self {
-        case .classic:   return "One point per state, however many times you see it."
-        case .weighted:  return "Rarer plates are worth more, judged against your route."
-        case .unlimited: return "Every sighting scores, so keep counting."
+        case .classic:   return String(localized: "One point per state, however many times you see it.")
+        case .weighted:  return String(localized: "Rarer plates are worth more, judged against your route.")
+        case .unlimited: return String(localized: "Every sighting scores, so keep counting.")
         }
     }
 }

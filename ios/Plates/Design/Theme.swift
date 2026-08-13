@@ -83,26 +83,27 @@ enum Theme {
 
     // MARK: Type
     //
-    // Two faces. DIN Condensed is the road-sign face real plates are set in — it is
-    // the subject's own vernacular, and it is restricted to plate glyphs, numerals
-    // and eyebrows. Everything read as a sentence is Avenir Next.
+    // Two faces, both from the road. DIN Condensed is the sign face real plates are
+    // set in — the subject's own vernacular, restricted to plate glyphs, numerals
+    // and eyebrows. Everything read as a sentence is Overpass, a free digitisation
+    // of Highway Gothic, the face on every U.S. interstate sign: signage for the
+    // prose, plate dies for the serials, so the whole app speaks one dialect.
     //
-    // Both ship with iOS, so neither costs bundle size or a licence. Avenir replaced
-    // the system face because SF Pro is what an app uses when nobody chose a font,
-    // and it makes every iOS app look like the same app.
-    /// Avenir Next, in the six weights iOS actually ships.
+    // Overpass is bundled (see Info.plist and Resources/Fonts, licence alongside).
+    // It replaced Avenir Next, which had replaced SF Pro — Avenir was the best face
+    // that ships with iOS, and also the one every app that fled SF Pro landed on.
+    // Beating that sameness is worth ~270KB of bundle.
+    /// Overpass, in the four weights the app actually sets.
     ///
-    /// There is no Light and no face literally called SemiBold — Demi Bold is the
-    /// semibold — so `.light` borrows Ultra Light and `.semibold` maps to Demi Bold.
-    /// Anything heavier than bold lands on Heavy.
-    static func avenir(_ weight: Font.Weight) -> String {
+    /// The family has no Medium, so `.medium` rounds up to SemiBold — seven call
+    /// sites, all wanting "slightly more than body", and up reads better than
+    /// down against Overpass's light-side regular. Anything past bold is Heavy.
+    static func overpass(_ weight: Font.Weight) -> String {
         switch weight {
-        case .ultraLight, .thin, .light: return "AvenirNext-UltraLight"
-        case .medium:                    return "AvenirNext-Medium"
-        case .semibold:                  return "AvenirNext-DemiBold"
-        case .bold:                      return "AvenirNext-Bold"
-        case .heavy, .black:             return "AvenirNext-Heavy"
-        default:                         return "AvenirNext-Regular"
+        case .medium, .semibold: return "Overpass-SemiBold"
+        case .bold:              return "Overpass-Bold"
+        case .heavy, .black:     return "Overpass-Heavy"
+        default:                 return "Overpass-Regular"
         }
     }
 
@@ -207,21 +208,20 @@ extension Color {
 }
 
 extension Font {
-    /// The app's text face: Avenir Next, sized in points, scaling with Dynamic Type.
+    /// The app's text face: Overpass, sized in points, scaling with Dynamic Type.
     ///
     /// A drop-in replacement for `.system(size:weight:)`, which is what every call
-    /// site used before — chosen so the switch could be mechanical and so the sizes
-    /// already tuned against each layout did not have to be re-picked.
+    /// site used originally — chosen so a face swap is one line here rather than a
+    /// re-pick of sizes tuned against each layout. That is also what made the
+    /// Avenir → Overpass change safe to make.
     ///
-    /// Two things it fixes at once. Avenir Next is not the system face, so the app
-    /// stops looking like every other iOS app; and `relativeTo:` means text finally
-    /// responds to the reader's text-size setting, which nothing in the app did while
-    /// every size was an absolute point value.
+    /// `relativeTo:` means text responds to the reader's text-size setting, which
+    /// nothing in the app did while every size was an absolute point value.
     ///
     /// SF Symbols deliberately still use `.system` — a symbol takes its stroke weight
     /// from the font it is given, and handing one a text face loses that.
     static func plates(size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        .custom(Theme.avenir(weight),
+        .custom(Theme.overpass(weight),
                 size: size,
                 relativeTo: Theme.textStyle(for: size))
     }

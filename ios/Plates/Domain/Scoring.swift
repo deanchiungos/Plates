@@ -127,8 +127,15 @@ extension PlateCollection {
         seenCodes.filter { Plate.plate(for: $0)?.region == .state }.count
     }
 
+    /// The numerator of "N / 2" under Bonus plates — D.C. and Puerto Rico, and
+    /// nothing else.
+    ///
+    /// Counted against `Plate.bonusCodes`, the very array the section draws, so the
+    /// number and the tiles beneath it cannot disagree. This used to ask
+    /// `region.isBonus`, which means `region != .state` and so counted all thirteen
+    /// provinces: a full collection reported "15 / 2 found".
     var bonusFound: Int {
-        seenCodes.filter { Plate.plate(for: $0)?.region.isBonus == true }.count
+        seenCodes.filter(Plate.bonusCodes.contains).count
     }
 
     var provincesFound: Int {

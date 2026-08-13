@@ -11,12 +11,22 @@ import SwiftUI
 /// sliders, scroll the editor, tap, confirm. Four steps to say "that one's over" is
 /// enough friction that nobody does it, which is how the list gets long in the first
 /// place. One swipe and one tap makes tidying up cheap enough to actually happen.
+/// **What the content may not be: a full-width `Button`.** A button cancels its own
+/// press when the finger leaves its frame, and a row-sized button has no frame worth
+/// leaving — a 78pt sideways swipe is still well inside it. The press survives the
+/// whole gesture and fires on touch-up, so the swipe opens the row *and* whatever
+/// tapping the row does. Neither guard below can help: the drag is simultaneous by
+/// necessity, so it never wins the way an exclusive gesture would, and
+/// `allowsHitTesting` does not retract a press already in flight. Give the card a
+/// `.onTapGesture` instead — a tap gesture cancels on movement, which is the thing
+/// actually wanted. See `TripRow`.
+///
 /// Declared outside `SwipeRow` rather than nested in it. A type nested in a generic
 /// can only be named with the generic's arguments filled in, so `SwipeRow.Action`
 /// is unspellable at the call site that has to build the array *before* the row.
 struct SwipeAction: Identifiable {
     let id = UUID()
-    let title: String
+    let title: LocalizedStringKey
     let symbol: String
     let tint: Color
     let perform: () -> Void
@@ -25,6 +35,10 @@ struct SwipeAction: Identifiable {
 struct SwipeRow<Content: View>: View {
 
     let actions: [SwipeAction]
+    /// Fired when the row settles open, not when an action is chosen. The two are
+    /// different facts and only one of them is "this person knows the gesture
+    /// exists" — which is all the `swipeTrip` coach mark is waiting to hear.
+    var onOpen: (() -> Void)?
     @ViewBuilder var content: Content
 
     /// Per-button width. Two buttons is the practical ceiling on a phone — three
@@ -89,6 +103,7 @@ struct SwipeRow<Content: View>: View {
                     let projected = settled + value.predictedEndTranslation.width
                     withAnimation(.snappy(duration: 0.24)) {
                         if projected < -openWidth / 2 {
+                            if settled == 0 { onOpen?() }
                             offset = -openWidth
                             settled = -openWidth
                         } else {

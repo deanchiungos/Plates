@@ -99,8 +99,8 @@ final class TripReminders {
 
             return Nudge(tripID: trip.id,
                          fireAt: fireAt,
-                         title: "Still traveling?",
-                         body: "You have \(trip.statesFound) of 50 states on \(trip.name).")
+                         title: String(localized: "Still traveling?"),
+                         body: String(localized: "You have \(trip.statesFound) of 50 states on \(trip.name)."))
         }
     }
 

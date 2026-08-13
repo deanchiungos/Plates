@@ -11,6 +11,7 @@ struct MoreScreen: View {
     @State private var showTrail = false
     @State private var showSettings = false
     @State private var showParty = false
+    @State private var showHowToPlay = false
 
     var body: some View {
         NavigationStack {
@@ -22,7 +23,7 @@ struct MoreScreen: View {
                         // Grouped rather than one undifferentiated list. Three rows on
                         // an empty screen read as an oversight; two named groups read
                         // as the whole of what is here, which is the truth.
-                        MoreSection("While you play") {
+                        MoreSection(String(localized: "While you play")) {
                             MoreRow(title: "Party") { PartyScreen() }
 
                             MoreDivider()
@@ -30,7 +31,7 @@ struct MoreScreen: View {
                             MoreRow(title: "Plate lookup") { PlateLookupScreen() }
                         }
 
-                        MoreSection("Looking back") {
+                        MoreSection(String(localized: "Looking back")) {
                             MoreRow(title: "Trail") { TrailScreen() }
 
                             MoreDivider()
@@ -38,7 +39,14 @@ struct MoreScreen: View {
                             MoreRow(title: "Historical plates") { HistoricalPlatesScreen() }
                         }
 
-                        MoreSection("App") {
+                        MoreSection(String(localized: "App")) {
+                            // Above Settings, because it is the row somebody with a
+                            // question wants and Settings is the row somebody with
+                            // an intention wants. Questions come first.
+                            MoreRow(title: "How to play") { HowToPlayScreen() }
+
+                            MoreDivider()
+
                             MoreRow(title: "Settings") { SettingsScreen() }
                         }
 
@@ -53,6 +61,7 @@ struct MoreScreen: View {
             .navigationDestination(isPresented: $showTrail) { TrailScreen() }
             .navigationDestination(isPresented: $showSettings) { SettingsScreen() }
             .navigationDestination(isPresented: $showParty) { PartyScreen() }
+            .navigationDestination(isPresented: $showHowToPlay) { HowToPlayScreen() }
             // The receiving end of `Router.showTrail`: something elsewhere in the
             // app asked for the Trail, so push it. The Trail itself reads which
             // scope to open on. `onAppear` covers the jump that switched to this
@@ -64,14 +73,16 @@ struct MoreScreen: View {
                 if pending != nil { showTrail = true }
             }
             #if DEBUG
-            // `-tab more -openTrail` / `-openSettings` / `-openParty` push straight
-            // through, which is the only way to reach any of them without a tap.
+            // `-tab more -openTrail` / `-openSettings` / `-openParty` /
+            // `-howToPlay` push straight through, which is the only way to reach
+            // any of them without a tap.
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     if args.contains("-openTrail") { showTrail = true }
                     if args.contains("-openSettings") { showSettings = true }
                     if args.contains("-openParty") { showParty = true }
+                    if args.contains("-howToPlay") { showHowToPlay = true }
                 }
             }
             #endif
@@ -153,7 +164,7 @@ struct MoreDivider: View {
 /// menu that does not trust its own labels. "Players" and "Settings" need no gloss,
 /// and the group headings above them already say which part of the app you are in.
 struct MoreRow<Destination: View>: View {
-    let title: String
+    let title: LocalizedStringKey
     @ViewBuilder var destination: () -> Destination
 
     var body: some View {

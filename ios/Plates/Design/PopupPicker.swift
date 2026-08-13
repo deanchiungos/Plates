@@ -15,6 +15,12 @@ struct PopupPicker: View {
 
     struct Entry: Identifiable {
         let id: UUID
+        /// Plain `String`, deliberately, where everything else in a popup is now a
+        /// `LocalizedStringKey`: an entry is a trip or a book the reader named, and
+        /// the search field below matches against these words. A key cannot be read
+        /// back as text, so making these keys would break the search this component
+        /// exists for. The two literal entries in the app — "All time" and its
+        /// subtitle — go through `String(localized:)` at their call sites instead.
         let title: String
         var subtitle: String?
         /// The number on the right — states found, usually. Nil draws nothing.
@@ -29,7 +35,9 @@ struct PopupPicker: View {
     struct Group: Identifiable {
         let id = UUID()
         /// Nil for a group that needs no heading — a single ungrouped list.
-        var title: String?
+        /// Unlike an entry's title this is the app's own word ("TRIPS", "BOOKS"),
+        /// so it is a catalog key.
+        var title: LocalizedStringKey?
         /// An SF Symbol beside the heading. Two lists of names with nothing but a
         /// word between them read as one list; a glyph is what makes "these are
         /// trips" and "these are books" separable at a glance rather than by
@@ -111,8 +119,8 @@ struct PopupPicker: View {
 
                 ForEach(shown) { entry in
                     PopupChoice(
-                        title: entry.title,
-                        subtitle: entry.subtitle,
+                        verbatimTitle: entry.title,
+                        verbatimSubtitle: entry.subtitle,
                         isSelected: entry.isSelected,
                         trailing: {
                             if let count = entry.count {

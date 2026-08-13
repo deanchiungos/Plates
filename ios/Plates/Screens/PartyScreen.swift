@@ -64,17 +64,9 @@ struct PartyScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $joining) { target in codeSheet(for: target) }
         .sheet(item: $pendingEntry) { entry in
-            PlayerEditor(player: DevicePlayer.resolve(from: players),
-                         usedColors: [],
-                         onDelete: nil,
-                         title: "Who's playing?",
-                         saveLabel: "Continue",
-                         onSaved: {
-                             DevicePlayer.markProfileSet()
-                             // Straight on into what they were trying to do, so the
-                             // sheet reads as a step rather than an interruption.
-                             enter(entry)
-                         })
+            // Straight on into what they were trying to do once it has an answer, so
+            // the sheet reads as a step rather than an interruption.
+            IdentityPrompt(saveLabel: "Continue") { enter(entry) }
         }
         #if DEBUG
         // `-hostParty` / `-joinParty` start one without a tap, which is the only way
@@ -156,8 +148,7 @@ struct PartyScreen: View {
                     Text("Everyone spots on their own phone")
                         .font(.plates(size: 15, weight: .semibold))
                         .foregroundStyle(Theme.ink)
-                    Text("One person starts the party and reads out the code. "
-                         + "Plates anyone calls show up on every screen, and it all works with no signal.")
+                    Text("One person starts the party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal.")
                         .font(.plates(size: 12.5))
                         .foregroundStyle(Theme.inkMuted)
                         .fixedSize(horizontal: false, vertical: true)
@@ -248,10 +239,8 @@ struct PartyScreen: View {
         popup.present(
             "\(trip.name) is finished",
             message: mine
-                ? "Everyone keeps their own copy. Finishing yours files it with your "
-                  + "other trips, with everything anybody spotted still on it."
-                : "You did not spot anything on this one. You can keep the copy anyway, "
-                  + "or throw it away \u{2014} everybody else keeps theirs either way."
+                ? "Everyone keeps their own copy. Finishing yours files it with your other trips, with everything anybody spotted still on it."
+                : "You did not spot anything on this one. You can keep the copy anyway, or throw it away. Everybody else keeps theirs either way."
         ) {
             if mine {
                 PopupChoice(title: "Finish the trip",
@@ -341,7 +330,7 @@ struct PartyScreen: View {
         }
     }
 
-    private func ruleRow(title: String, detail: String, isOn: Bool,
+    private func ruleRow(title: LocalizedStringKey, detail: LocalizedStringKey, isOn: Bool,
                          set: @escaping (Bool) -> Void) -> some View {
         Toggle(isOn: Binding(get: { isOn }, set: { new in Haptics.selection(); set(new) })) {
             VStack(alignment: .leading, spacing: 2) {
@@ -379,14 +368,22 @@ struct PartyScreen: View {
             } else if party.isConnected {
                 memberCard(party, empty: "Connecting\u{2026}")
             } else if let target = party.joining {
-                // The gap between tapping Join and hearing back is up to a dozen
-                // seconds of Bluetooth, and until this said so the screen went back to
-                // the same list of parties — so the honest reading of a correct code
-                // was "nothing happened", and people tapped it again.
+                // The gap between tapping Join and hearing back is half a minute of
+                // Bluetooth, and until this said so the screen went back to the same
+                // list of parties — so the honest reading of a correct code was
+                // "nothing happened", and people tapped it again.
+                //
+                // It used to read "Asking Anna to let you in…", which was a lie with
+                // a cost. Nothing appears on the host's phone — admission is a silent
+                // string compare against the code, see `PartySession.shouldAdmit` —
+                // so the sentence promised a prompt that does not exist, and people
+                // sat waiting for somebody who did not know they had been asked. What
+                // is actually uncertain in these seconds is the radio and the code,
+                // and neither is anything the host can act on while it happens.
                 SettingsGroup("Joining") {
                     HStack(spacing: 10) {
                         ProgressView()
-                        Text("Asking \(target.hostName) to let you in\u{2026}")
+                        Text("Connecting to \(target.hostName)'s party\u{2026}")
                             .font(.plates(size: 13.5))
                             .foregroundStyle(Theme.inkMuted)
                     }
@@ -498,7 +495,7 @@ struct PartyScreen: View {
 
     // MARK: - Bits
 
-    private func memberCard(_ party: PartySession, empty: String) -> some View {
+    private func memberCard(_ party: PartySession, empty: LocalizedStringKey) -> some View {
         SettingsGroup("In the party") {
             if party.members.isEmpty {
                 Text(empty)
@@ -580,8 +577,7 @@ struct PartyScreen: View {
         // two hosts with two ideas of the rules. See `PartyLedger.joinedAsGuest`.
         guard PartyLedger.shared.joinedAsGuest(trip.id) else { return nil }
         let host = PartyLedger.shared.hostLabel(for: trip.id, among: players)
-        return "\(host ?? "Somebody else") started \(trip.name) and shared it with you, "
-             + "so only they can start a party for it. Start one on a trip of your own instead."
+        return String(localized: "\(host ?? String(localized: "Somebody else")) started \(trip.name) and shared it with you, so only they can start a party for it. Start one on a trip of your own instead.")
     }
 
     /// What the other phones in the car see us as — the peer's display name, and the

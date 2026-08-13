@@ -36,7 +36,8 @@ struct MapScreen: View {
     private enum Mode: String, CaseIterable, Identifiable {
         case progress, rarity
         var id: String { rawValue }
-        var label: String { self == .progress ? "Found" : "Rarity" }
+        var label: String { self == .progress ? String(localized: "Found")
+                                                : String(localized: "Rarity") }
     }
 
     /// The map reflects whatever the Drive screen is filling — a trip or a book —
@@ -46,9 +47,12 @@ struct MapScreen: View {
                               bookID: currentBookID, trips: trips, books: books)?.collection
     }
 
+    /// Scored against the trip's route where there is one, and against the national
+    /// ranking where there is not — which used to be an empty table, so every lookup
+    /// below fell through to `Plate.points` and the map lost its top tier entirely on
+    /// any collection without a destination pinned. See `PlateRarity.table(on:)`.
     private var rarities: [String: Int] {
-        guard let route = trip?.route else { return [:] }
-        return PlateRarity.table(for: route)
+        PlateRarity.table(on: trip?.route)
     }
 
     var body: some View {
@@ -84,17 +88,20 @@ struct MapScreen: View {
                         unitedStatesMap(palette)
 
                         legend
+                            .id("legend")
 
                     }
                     .padding(Theme.screenPadding)
                     .padding(.bottom, 20)
                     #if DEBUG
-                    // `-mapSection log` opens on the log map, which otherwise sits
-                    // two full maps below the fold.
+                    // `-mapSection legend` opens on the key, which sits two full maps
+                    // below the fold and is otherwise only reachable by scrolling.
+                    // (It used to aim at "logmap", an anchor that no longer exists —
+                    // so the flag had quietly become a no-op.)
                     .onAppear {
                         guard ProcessInfo.processInfo.arguments.contains("-mapSection") else { return }
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                            withAnimation { scroller.scrollTo("logmap", anchor: .top) }
+                            withAnimation { scroller.scrollTo("legend", anchor: .bottom) }
                         }
                     }
                     #endif
@@ -212,11 +219,21 @@ struct MapScreen: View {
             switch mode {
             case .progress:
                 let isFound = found.contains(code)
-                fill[code] = isFound ? Theme.found : Theme.unfound
+                // Found used to be one green for everything, with rarity carried by
+                // the animated outline alone. That put the whole reward in a border a
+                // few points wide — on Rhode Island, essentially nowhere. A collected
+                // epic, legendary or mythic region now wears its own colour, so the
+                // thing you earned is the size of the state rather than the size of
+                // its edge. Everything below epic stays green, and *nothing* uncollected
+                // changes: an unfound mythic plate is the same sand as an unfound
+                // common one, because the map still must not tell you what to chase.
+                let tier = RarityTier.forRarity(table[code] ?? plate.points)
+                let lit = isFound && tier >= .epic
+                fill[code] = lit ? tier.mapFill : (isFound ? Theme.found : Theme.unfound)
                 stroke[code] = Theme.ink.opacity(0.45)
-                // Green fill is dark enough to need white on it; every other fill
-                // is pale.
-                label[code] = isFound ? .white : Theme.ink
+                // Green is dark enough to need white on it. The tier fills are not —
+                // pale gold and lilac take white badly — so those keep ink.
+                label[code] = (isFound && !lit) ? .white : Theme.ink
             case .rarity:
                 // Rarity only. Varying this by found-state as well meant two signals
                 // fighting over one fill, and the map read as neither — which is what
@@ -270,6 +287,7 @@ struct MapScreen: View {
             highlighted: highlighted,
             accessibilityTitle: "Map of the United States",
             foundCount: palette.foundCount(among: USMap.codes),
+            spotlight: spotlight,
             initialZoom: debugZoom,
             initialPan: debugPan
         )
@@ -302,14 +320,33 @@ struct MapScreen: View {
             // directly below it, which reads as one map being drawn wrong rather than
             // as a deliberate difference. Two maps of the same thing on the same
             // screen have to share a line weight.
+            spotlight: spotlight,
             bandScale: mode == .progress ? 1 : 0.5
         )
+    }
+
+    /// Which regions the map should light up, and how brightly.
+    ///
+    /// Two conditions, and the second one is the whole design. **Epic or better**,
+    /// because a third of the map is rare from any given spot and a third of the map
+    /// glowing is not a highlight, it is weather. And **collected**, because the
+    /// animation is a reward rather than a signpost: it says "look what you got", not
+    /// "go and get this". An uncollected mythic plate sits as still as Kansas.
+    ///
+    /// The same rule in both modes on purpose. Found mode used to strip rarity out
+    /// entirely — the argument being that a map answering "how much is left" and
+    /// "what is worth finding" at once answers neither. Gating on *found* settles
+    /// that: nothing here tells you what to chase, so the two answers cannot fight.
+    private func spotlight(_ code: String) -> RarityTier? {
+        guard let trip, trip.seenCodes.contains(code) else { return nil }
+        let tier = RarityTier.forRarity(rarities[code] ?? Plate.plate(for: code)?.points ?? 5)
+        return tier >= .epic ? tier : nil
     }
 
     /// Names each map and carries its own count. With one map the navigation title
     /// said everything; with two, an unlabelled pair of outlines makes you work out
     /// which country you are looking at and which total belongs to it.
-    private func mapHeader(_ title: String, found: Int, total: Int) -> some View {
+    private func mapHeader(_ title: LocalizedStringKey, found: Int, total: Int) -> some View {
         HStack(alignment: .firstTextBaseline) {
             Text(title)
                 .font(.plates(size: 16, weight: .bold))
@@ -326,16 +363,52 @@ struct MapScreen: View {
 
     // MARK: - Legend
 
+    /// One entry in the key: the colour, and the word for what it means.
+    private struct Key: Identifiable {
+        let id: String
+        let colour: Color
+        let label: String
+    }
+
+    /// What the map is currently painted with. Not what it used to be painted with.
+    ///
+    /// This drifted, and a wrong key is worse than no key. Found mode signalled rarity
+    /// with a coloured outline once; that outline was removed — every region now takes
+    /// a plain dark edge — but the key kept listing all six tiers as thin coloured
+    /// lines, so it named a channel the map no longer has. Worse, it implied common,
+    /// uncommon and rare were three different colours out there when all three are
+    /// simply green, and that grey was a tier rather than "not found yet".
+    ///
+    /// So each mode describes itself, and both read their swatch straight off the
+    /// same `mapFill` the regions are drawn with.
+    private var keys: [Key] {
+        let tiers = [RarityTier.common, .uncommon, .rare, .epic, .legendary, .mythic]
+        switch mode {
+        case .rarity:
+            // Every region is filled by tier, so all six belong.
+            return tiers.map { Key(id: $0.label, colour: $0.mapFill,
+                                   label: $0.label.capitalized) }
+        case .progress:
+            // Two states plus the three tiers that keep their own colour when found.
+            // Common, uncommon and rare are all just green here, so listing them
+            // separately would invent three distinctions the map does not draw.
+            return [Key(id: "unfound", colour: Theme.unfound, label: "Not found"),
+                    Key(id: "found", colour: Theme.found, label: "Found")]
+                + tiers.filter { $0 >= .epic }.map {
+                    Key(id: $0.label, colour: $0.mapFill, label: $0.label.capitalized)
+                }
+        }
+    }
+
     private var legend: some View {
-        HStack(spacing: 8) {
-            ForEach([RarityTier.common, .uncommon, .rare, .epic, .legendary], id: \.self) { tier in
+        // Six across on a phone is tight, so the gap gives way before the labels do.
+        HStack(spacing: 6) {
+            ForEach(keys) { key in
                 VStack(spacing: 4) {
-                    // Matches whichever channel is carrying rarity in this mode:
-                    // the outline in Found, the fill in Rarity.
                     RoundedRectangle(cornerRadius: 3, style: .continuous)
-                        .fill(mode == .progress ? tier.color : tier.mapFill)
-                        .frame(height: mode == .progress ? 4 : 9)
-                    Text(tier.label.capitalized)
+                        .fill(key.colour)
+                        .frame(height: 9)
+                    Text(key.label)
                         .font(.plates(size: 9, weight: .semibold))
                         .foregroundStyle(Theme.inkMuted)
                         .lineLimit(1)

@@ -4,6 +4,7 @@ import SwiftData
 struct TripsScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(PopupHost.self) private var popup
+    @Environment(CoachPresenter.self) private var coach
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
@@ -58,9 +59,7 @@ struct TripsScreen: View {
                         // for everyday spotting it becomes a list nobody can face.
                         // The book is the answer for that, and this is the first
                         // place anyone would otherwise not find out.
-                        Text("A trip is one journey \u{2014} it has a route, and it ends. "
-                             + "For everyday spotting on the way to school or the shops, "
-                             + "use a plate book instead: it just keeps going.")
+                        Text("A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going.")
                     } actions: {
                         Button("New trip") { creating = true }
                             .buttonStyle(.borderedProminent)
@@ -72,6 +71,18 @@ struct TripsScreen: View {
             }
             .navigationTitle("Trips")
             .navigationBarTitleDisplayMode(.large)
+            .onAppear(perform: offerTripTips)
+            // A trip finished from the record sheet lands back here with the
+            // Finished section newly populated, which is the exact moment
+            // `doneTrip` is worth saying.
+            .onChange(of: trips.count) { _, _ in offerTripTips() }
+            .onChange(of: trips.finished.count) { _, _ in offerTripTips() }
+            // Leaving counts as shown. See `CoachPresenter.withdraw`.
+            .onDisappear {
+                coach.withdraw(.swipeTrip)
+                coach.withdraw(.doneTrip)
+                coach.withdraw(.listLength)
+            }
             #if DEBUG
             // `-tripEditor new|edit|archived` opens the sheet for screenshots.
             // `-showArchived` stands the archived section open, which is otherwise a
@@ -84,6 +95,25 @@ struct TripsScreen: View {
                 if args.contains("-foldPopup"), let done = trips.archived.first {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         pending = .fold(done)
+                        runPending()
+                    }
+                }
+                // The other five confirmations, on the current trip. Same reason as
+                // `-foldPopup`: they all start from a button inside the record
+                // sheet, so nothing a launch argument can reach opens them, and
+                // their messages are the longest sentences in the app.
+                if let i = args.firstIndex(of: "-tripPopup"), i + 1 < args.count,
+                   let trip = current ?? trips.playable.first {
+                    let kind = args[i + 1]
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        switch kind {
+                        case "clear":   pending = .clear(trip)
+                        case "delete":  pending = .delete(trip)
+                        case "archive": pending = .archive(trip)
+                        case "finish":  pending = .finish(trip)
+                        case "unfold":  pending = .unfold(trip)
+                        default:        return
+                        }
                         runPending()
                     }
                 }
@@ -122,13 +152,23 @@ struct TripsScreen: View {
                 onUnfold: { pending = .unfold(trip); editing = nil }
             )
         }
+        // Last in the chain, so the balloon draws over the list and under the tab
+        // bar. Copy lives here rather than in a table elsewhere: whoever changes
+        // what a tip says is the person looking at the screen it appears on.
+        .coachLayer([
+            .swipeTrip: "Swipe a trip left to pin it, or to mark it done.",
+            .doneTrip: "Finished trips file themselves here. Open one for its story, or to add its plates to a book.",
+            .listLength: "That's a lot of trips going at once. Mark the old ones done and they file themselves away."
+        ])
     }
 
     private var list: some View {
         ScrollView {
             VStack(spacing: 10) {
-                ForEach(trips.running.pinnedFirst) { trip in
-                    SwipeRow(actions: actions(for: trip)) {
+                let rows = trips.running.pinnedFirst
+                ForEach(rows) { trip in
+                    SwipeRow(actions: actions(for: trip),
+                             onOpen: { coach.dismiss(.swipeTrip) }) {
                         TripRow(
                             trip: trip,
                             isCurrent: trip.id == current?.id,
@@ -137,6 +177,21 @@ struct TripsScreen: View {
                             party: partyFaces(for: trip)
                         )
                     }
+                    .coachAnchor(.swipeTrip,
+                                 active: trip.id == rows.first?.id,
+                                 prefersAbove: true)
+                    // The top of the list, and deliberately not the oldest trip or
+                    // the Finished header. Both of those are the better *subject* —
+                    // the tip is about old trips and where they file to — and both
+                    // are wrong as a target: the oldest row of a list this long is
+                    // below the fold, and somebody with nine running trips and
+                    // nothing finished has no Finished header at all. That is
+                    // precisely the person the tip is for.
+                    //
+                    // The balloon is the only mark here that is about the list
+                    // rather than about a row, so it hangs off the head of the list
+                    // and the copy names the list in its first clause.
+                    .coachAnchor(.listLength, active: trip.id == rows.first?.id)
                 }
 
                 Button { creating = true } label: {
@@ -157,8 +212,20 @@ struct TripsScreen: View {
                 }
                 .padding(.top, 2)
 
-                Text("Tap a trip to play it, or swipe one left to pin it or mark it done. "
-                     + "A trip is one journey; for everyday spotting, fill a book instead.")
+                // One gesture now, not two. The sentence that used to follow
+                // explained what a trip is *for*, which belongs on the empty screen
+                // you see before you have one — repeating it under a list of trips
+                // you already made reads as the app justifying itself.
+                //
+                // The swipe half went the same way for the same reason. The
+                // `swipeTrip` mark points at the actual row and arrives at the one
+                // moment there is more than one trip to organise; a permanent line
+                // three inches below it saying the same words is the app talking
+                // over itself, which is the one thing the coach marks were not
+                // allowed to cause. The durable copy for the gesture lives on the
+                // "How to play" page, where somebody who missed the balloon can go
+                // looking for it.
+                Text("Tap a trip to play it.")
                     .font(.plates(size: 12.5))
                     .foregroundStyle(Theme.inkMuted)
                     .multilineTextAlignment(.center)
@@ -193,6 +260,7 @@ struct TripsScreen: View {
                               title: "Finished",
                               count: done.count,
                               isOpen: showFinished) { showFinished.toggle() }
+                    .coachAnchor(.doneTrip, prefersAbove: true)
 
                 if showFinished {
                     ForEach(done) { trip in
@@ -206,8 +274,8 @@ struct TripsScreen: View {
                         ]) {
                             TripRow(trip: trip,
                                     isCurrent: false,
-                                    onSelect: { editing = trip },
-                                    onEdit: { editing = trip },
+                                    onSelect: { openRecord(trip) },
+                                    onEdit: { openRecord(trip) },
                                     party: partyFaces(for: trip))
                         }
                     }
@@ -262,9 +330,10 @@ struct TripsScreen: View {
 
     /// The two things worth a swipe: get it out of the list, or keep it at the top.
     ///
-    /// Deliberately not archive or delete. Archiving is what "done" already does,
-    /// and putting delete one careless swipe from a trip's worth of plates is how
-    /// people lose data. Both still live in the editor.
+    /// Deliberately not archive or delete. Putting either one careless swipe from a
+    /// trip's worth of plates is how people lose data, and both still live in the
+    /// editor. This said archiving was "what done already does" back when finishing
+    /// archived as well; it has not since `TripClosing.finish` split the two.
     private func actions(for trip: Trip) -> [SwipeAction] {
         let pinned = trip.pinnedAt != nil
         return [
@@ -314,7 +383,13 @@ struct TripsScreen: View {
         case .clear(let trip):
             popup.present(
                 "Clear every plate?",
-                message: "\(trip.platesFound) plate\(trip.platesFound == 1 ? "" : "s") found on \(trip.name) will be un-collected. The trip itself stays."
+                // `^[…](inflect: true)` in place of the `n == 1 ? "" : "s"` this
+                // used to splice in. The old form produced a catalog key reading
+                // "%lld plate%@ found on %@" — two arguments where there is one
+                // idea, and no way for a translator to give a language its own
+                // plural rules. Automatic grammar agreement puts the whole phrase
+                // in one entry and picks the form from the number beside it.
+                message: "^[\(trip.platesFound) plate](inflect: true) found on \(trip.name) will be un-collected. The trip itself stays."
             ) {
                 PopupButton(title: "Clear plates", kind: .destructive) {
                     wipe(trip)
@@ -326,11 +401,12 @@ struct TripsScreen: View {
         case .finish(let trip):
             popup.present(
                 "Done with \(trip.name)?",
-                message: partyWarning(for: trip, doing: "Finishing it")
-                    ?? "It is marked finished and filed under Archived, so it stops "
-                     + "appearing everywhere you pick a trip. Its \(trip.platesFound) "
-                     + "plate\(trip.platesFound == 1 ? "" : "s") stay in your history, "
-                     + "and you can reopen it whenever you like."
+                message: partyWarning(for: trip, finishing: true)
+                    // Said "filed under Archived" until finishing and archiving
+                    // became two moves — see `TripClosing.finish`. Finished trips
+                    // now stay on this screen under their own heading, and only
+                    // `collectable` hides them from the pickers.
+                    ?? "It stops collecting and files itself under Finished, so it is out of every trip picker but still here to open. Its ^[\(trip.platesFound) plate](inflect: true) stay in your history, and you can reopen it whenever you like."
             ) {
                 PopupButton(title: "Mark as done", kind: .primary) {
                     finish(trip)
@@ -343,7 +419,7 @@ struct TripsScreen: View {
             guard !trip.isArchived else { setArchived(trip, false); return }
             popup.present(
                 "Archive \(trip.name)?",
-                message: "It stops appearing anywhere you pick a trip. Nothing is deleted \u{2014} its \(trip.platesFound) plate\(trip.platesFound == 1 ? "" : "s") stay in your history, and you can bring it back."
+                message: "It stops appearing anywhere you pick a trip. Nothing is deleted. Its ^[\(trip.platesFound) plate](inflect: true) stay in your history, and you can bring it back."
             ) {
                 PopupButton(title: "Archive", kind: .primary) {
                     setArchived(trip, true)
@@ -355,8 +431,8 @@ struct TripsScreen: View {
         case .delete(let trip):
             popup.present(
                 "Delete \(trip.name)?",
-                message: partyWarning(for: trip, doing: "Deleting it")
-                    ?? "The trip and its \(trip.platesFound) collected plate\(trip.platesFound == 1 ? "" : "s") are removed for good."
+                message: partyWarning(for: trip, finishing: false)
+                    ?? "The trip and its ^[\(trip.platesFound) collected plate](inflect: true) are removed for good."
             ) {
                 PopupButton(title: "Delete trip", kind: .destructive) {
                     remove(trip)
@@ -387,9 +463,7 @@ struct TripsScreen: View {
             guard let book = folded.first?.book else { return }
             popup.present(
                 "Remove from \(book.name)?",
-                message: "The \(folded.count) sighting\(folded.count == 1 ? "" : "s") "
-                       + "this trip added leave the book. Plates the book collected on "
-                       + "its own stay, and the trip itself is untouched."
+                message: "The ^[\(folded.count) sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched."
             ) {
                 PopupButton(title: "Remove", kind: .destructive) {
                     unfold(trip)
@@ -408,18 +482,16 @@ struct TripsScreen: View {
             .subtracting(book.allSightings.map(\.plateCode)).count
         popup.present(
             "Add \(trip.name) to \(book.name)?",
-            message: "The trip keeps its plates either way \u{2014} the book shows "
-                   + "them too, and you can take them back out whenever you like."
+            message: "The trip keeps its plates either way. The book just shows them too, and you can take them back out whenever you like."
         ) {
             PopupChoice(title: "Stack everything",
-                        subtitle: "All \(total) sighting\(total == 1 ? "" : "s") carry over. "
-                                + "Plates the book already has count again.") {
+                        subtitle: "All ^[\(total) sighting](inflect: true) carry over. Plates the book already has count again.") {
                 fold(trip, into: book, gapsOnly: false)
             }
             PopupChoice(title: "Fill the gaps",
                         subtitle: missing == 0
-                            ? "Nothing to add \u{2014} the book has every plate on this trip."
-                            : "Just the \(missing) plate\(missing == 1 ? "" : "s") the book is missing.") {
+                            ? "Nothing to add. The book has every plate on this trip."
+                            : "Just the ^[\(missing) plate](inflect: true) the book is missing.") {
                 fold(trip, into: book, gapsOnly: true)
             }
             PopupButton(title: "Cancel") { popup.dismiss() }
@@ -432,10 +504,16 @@ struct TripsScreen: View {
     /// shape of the design — so the only thing at stake is this phone's copy and the
     /// party ending mid-drive, which is a decision, not a mistake. It just should not
     /// be a surprise.
-    private func partyWarning(for trip: Trip, doing what: String) -> String? {
+    /// Two whole sentences rather than one with the verb interpolated in. The verb
+    /// used to be a parameter — `"\(what) ends the party…"` — which reads as a saving
+    /// right up until the sentence has to exist in another language, where the word
+    /// order it assumes may not survive. A catalog entry a translator can actually
+    /// move around is worth the duplicated clause.
+    private func partyWarning(for trip: Trip, finishing: Bool) -> LocalizedStringKey? {
         guard PartySession.isPartying(trip) else { return nil }
-        return "\(what) ends the party on this phone. "
-             + "Everyone else keeps their own copy of the trip and the plates they spotted."
+        return finishing
+            ? "Finishing it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted."
+            : "Deleting it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted."
     }
 
     /// Folding: the trip's sightings are *shelved in* the book, not copied to it.
@@ -511,14 +589,51 @@ struct TripsScreen: View {
         Haptics.destructive()
     }
 
+    /// Opening a finished trip's record — which is exactly what the `doneTrip` mark
+    /// was pointing people towards, so doing it retires the mark.
+    private func openRecord(_ trip: Trip) {
+        coach.dismiss(.doneTrip)
+        editing = trip
+    }
+
+    /// Whether either of this screen's marks has anything to say, asked on arrival
+    /// and whenever the list changes underneath it.
+    ///
+    /// Order matters only in the sense that the arbiter takes the first asker, and
+    /// `doneTrip` goes first deliberately: it is a follow-through on something that
+    /// just happened, while `swipeTrip` is standing housekeeping advice that will
+    /// still be true tomorrow.
+    private func offerTripTips() {
+        coach.request(.doneTrip,
+                      when: TripClosing.finishedSomethingThisSession
+                            && !trips.finished.isEmpty)
+        // Eight open trips is the point where the list stops being scannable and
+        // starts being scrolled, which is when there is a problem worth naming.
+        // Above `swipeTrip` in this order because somebody with eight trips has the
+        // more urgent version of the same advice.
+        coach.request(.listLength, when: trips.running.count >= Self.tooManyTrips)
+        // Not on day one. See `Coach.launchCount`: a list of one trip made ninety
+        // seconds ago has nothing in it to pin or file away.
+        coach.request(.swipeTrip,
+                      when: Coach.isReturningSession && !trips.running.isEmpty)
+    }
+
+    /// Where a list of drives stops being a list you read and starts being one you
+    /// search. Eight is roughly a phone screen of rows.
+    private static let tooManyTrips = 8
+
     /// See `TripClosing.finish`, which the party screen shares — a party ending is a
     /// drive ending, and both places have to mean the same thing by it.
     private func finish(_ trip: Trip) {
+        // Doing the thing the tip asked for. Both of the ways to shorten the list
+        // count, which is why this is not hung on `swipeTrip`'s row callback.
+        coach.dismiss(.listLength)
         TripClosing.finish(trip, in: context)
         Haptics.milestone()
     }
 
     private func setArchived(_ trip: Trip, _ archived: Bool) {
+        if archived { coach.dismiss(.listLength) }
         trip.archivedAt = archived ? Date() : nil
         try? context.save()
         // `TripSelection.current` skips archived trips, so simply clearing the saved
@@ -571,7 +686,16 @@ private struct TripRow: View {
                 .padding(.leading, -14)
                 .padding(.trailing, 2)
 
-            Button(action: onSelect) {
+            // A tap gesture and not a `Button`, which is what this was until a swipe
+            // on a finished trip was found to open its record as well as the row's
+            // actions — and to open it again on the way back. A button this wide
+            // never sees the finger leave it, so it never cancels its own press and
+            // fires on touch-up at the end of the swipe. A `TapGesture` cancels the
+            // moment the touch travels. See `SwipeRow`.
+            //
+            // The traits are restored by hand below, because what VoiceOver should
+            // hear has not changed: one element, named, that behaves like a button.
+            Group {
                 VStack(alignment: .leading, spacing: 3) {
                     HStack(spacing: 6) {
                         Text(trip.name)
@@ -617,7 +741,10 @@ private struct TripRow: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .contentShape(Rectangle())
             }
-            .buttonStyle(.plain)
+            .onTapGesture(perform: onSelect)
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAction(.default, onSelect)
 
             if !party.isEmpty {
                 AvatarStack(players: party, limit: 3, size: 21)
@@ -796,11 +923,11 @@ struct TripEditor: View {
     /// typed text and a dropped pin is invisible otherwise.
     /// Nil where there is nothing useful to say. A locked trip with no pinned start
     /// would otherwise be told to go and pick one, which it cannot do.
-    private var rarityNote: String? {
+    private var rarityNote: LocalizedStringKey? {
         if origin.isPinned {
             return isLocked
                 ? "Rarity was scored against this route."
-                : "Rarity is scored against this route \u{2014} plates from far away are worth more."
+                : "Rarity is scored against this route. Plates from far away are worth more."
         }
         return isLocked
             ? nil
@@ -878,8 +1005,7 @@ struct TripEditor: View {
                         Button {
                             preparingPoster = true
                             Task {
-                                poster = await ShareablePoster.image(for: trip, players: players)
-                                    .map(PosterToShare.init)
+                                poster = await ShareablePoster.poster(for: trip, players: players)
                                 preparingPoster = false
                             }
                         } label: {
@@ -907,7 +1033,7 @@ struct TripEditor: View {
             }
         }
         .sheet(item: $poster) { ready in
-            ShareSheet(items: [ready.image])
+            ShareSheet(items: ready.activityItems)
         }
         .onAppear {
             name = trip?.name ?? ""
@@ -973,7 +1099,7 @@ struct TripEditor: View {
             Image(systemName: "person.2.fill")
                 .font(.system(size: 12, weight: .semibold))
                 .padding(.top, 1.5)
-            Text("\(host)'s trip \u{2014} you joined their party. This is your copy of it.")
+            Text("\(host)'s trip, from their party. This is your copy of it.")
                 .font(.plates(size: 12.5))
                 .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
@@ -1023,6 +1149,9 @@ struct TripEditor: View {
             statDivider
             recordStat("\(trip?.dayNumber ?? 1)",
                        trip?.dayNumber == 1 ? "day" : "days")
+            // Left as ternaries rather than folded into `^[…](inflect:)`: the number
+            // is in the *other* half of this pair, so there is nothing beside the
+            // word for the agreement engine to agree with. Four short keys instead.
         }
         .padding(.vertical, 13)
         .frame(maxWidth: .infinity)
@@ -1034,7 +1163,7 @@ struct TripEditor: View {
         )
     }
 
-    private func recordStat(_ value: String, _ label: String) -> some View {
+    private func recordStat(_ value: String, _ label: LocalizedStringKey) -> some View {
         VStack(spacing: 2) {
             Text(value)
                 .font(Theme.PlateFont.condensed(24))
@@ -1120,8 +1249,12 @@ struct TripEditor: View {
         .padding(.horizontal, 14)
         .padding(.vertical, 9)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(sighting.plate?.name ?? sighting.plateCode), \(logTime(sighting.spottedAt))"
-                            + (sighting.player.map { ", spotted by \($0.name)" } ?? ""))
+        // Two whole labels rather than one with a clause `+`-ed on. The concatenation
+        // made this a `String`, so VoiceOver's only line about a logged plate was the
+        // last piece of copy in the app the String Catalog could not see.
+        .accessibilityLabel(sighting.player.map {
+            LocalizedStringKey("\(sighting.plate?.name ?? sighting.plateCode), \(logTime(sighting.spottedAt)), spotted by \($0.name)")
+        } ?? "\(sighting.plate?.name ?? sighting.plateCode), \(logTime(sighting.spottedAt))")
     }
 
     /// "Day 2 · 3:41 PM" on a trip that spanned days; just the time on one that
@@ -1295,7 +1428,7 @@ struct TripEditor: View {
         .buttonStyle(.plain)
     }
 
-    private func rowLabel(_ title: String, symbol: String, tint: Color) -> some View {
+    private func rowLabel(_ title: LocalizedStringKey, symbol: String, tint: Color) -> some View {
         HStack(spacing: 9) {
             Image(systemName: symbol)
                 .font(.system(size: 13, weight: .semibold))

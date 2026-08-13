@@ -63,3 +63,4 @@ WA,#222A38,sampled — navy
 WI,#21272A,sampled — black
 WV,#112356,sampled — navy
 WY,#F0EEE5,sampled — white
+YT,#1A1A1A,no photograph — 'black on reflective white' is the whole source; see PROMPTS['YT'] in plate_art_generate.py

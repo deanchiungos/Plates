@@ -103,8 +103,7 @@ final class VoiceLogger {
         status = .starting
 
         guard await Self.requestAuthorisation() else {
-            status = .denied("Voice mode needs the microphone and speech recognition. "
-                             + "Both can be turned on in Settings.")
+            status = .denied(String(localized: "Voice mode needs the microphone and speech recognition. Both can be turned on in Settings."))
             return
         }
         guard let recogniser, recogniser.isAvailable else {

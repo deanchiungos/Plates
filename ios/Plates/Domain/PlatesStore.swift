@@ -108,18 +108,68 @@ enum PlatesStore {
         return fresh
     }
 
-    /// First launch gets one player, one trip and one book, so neither the Drive
-    /// screen nor the Book tab opens on an empty state.
+    /// Deliberately seeds nothing.
+    ///
+    /// This used to hand every first launch a player called "Me", a trip called
+    /// "Summer Roadtrip" and a book called "My Plate Book", on the reasoning that an
+    /// empty screen is a bad welcome. All three were wrong, for different reasons.
+    ///
+    /// The trip and the book were wrong because they were *somebody else's*. The Game
+    /// tab has a considered empty state — "Nothing to fill yet", and a choice between
+    /// a trip and a book with one line on the difference — and the seed meant nobody
+    /// ever saw it. A new player landed on a grid belonging to a drive they had not
+    /// taken, named after a season it might not be, and the first thing the app asked
+    /// them to understand was why it had already decided for them. An empty state that
+    /// asks a question beats a full one that answers the wrong one.
+    ///
+    /// The player was wrong because of the clock. This runs synchronously in
+    /// `PlatesApp.init`, and CloudKit syncs asynchronously some seconds or minutes
+    /// later — so on a reinstall or a new phone the player count here is zero even
+    /// though the account has a perfectly good player, and seeding inserted a second
+    /// one and pinned the device to it. The real person then arrived from iCloud with
+    /// every plate they had ever logged and landed in Settings under "Other people",
+    /// as a stranger. Nothing on this device can tell the difference between "new" and
+    /// "not synced yet", so it no longer guesses: `DevicePlayer` tolerates having
+    /// nobody, and the identity prompt creates or adopts one once there is enough on
+    /// screen to be sure. See `IdentityPrompt`.
+    ///
+    /// What is left is the one thing that is safe to decide alone: an install that
+    /// already has players has been played, so it is not asked who it is.
     static func seedIfNeeded() {
         #if DEBUG
+        // `-forgetMe` throws away this device's claim on a player without touching the
+        // store. It is the only way to reach the identity prompt twice: the flags are
+        // one-shot by nature, and reinstalling to clear the keys also clears the very
+        // people the prompt is supposed to offer. With `-demoData` it stands in for a
+        // restored install exactly — a full account, and a phone that has never said
+        // which of these it is.
+        if ProcessInfo.processInfo.arguments.contains("-forgetMe") {
+            DevicePlayer.forgetThisDevice()
+        }
+
+        // `-emptyTrip` is the state a first launch reaches one tap after the fork:
+        // something to fill, and nothing in it. Nothing seeds that any more, and it
+        // is the only state several onboarding marks fire against — reaching it
+        // otherwise means typing a trip name into the simulator by hand.
+        if ProcessInfo.processInfo.arguments.contains("-emptyTrip"),
+           (try? context.fetchCount(FetchDescriptor<Trip>())) == 0 {
+            let fresh = Trip(name: "Roadtrip")
+            context.insert(fresh)
+            try? context.save()
+            PlaySelection.select(.trip(fresh))
+        }
+
         // Only take the fixture path if the fixture actually ran. It refuses against
         // an iCloud-backed store, and falling through to ordinary seeding then is the
         // difference between "no demo data" and "no players at all".
         if DemoData.isRequested, DemoData.install(into: context) {
             // The fixture's players are named, so it is not a fresh install as far as
             // the profile prompt is concerned — otherwise every screenshot run opens
-            // on a "who's playing?" sheet.
-            DevicePlayer.markProfileSet()
+            // on a "who's playing?" sheet. Unless that is exactly what is being
+            // tested, which is what `-forgetMe` alongside it means.
+            if !ProcessInfo.processInfo.arguments.contains("-forgetMe") {
+                DevicePlayer.markProfileSet()
+            }
             // Falls through to the device-player pin below rather than returning.
             // The fixture is a stand-in for a real install and has to be pinned the
             // same way, or a demo host resolves its identity by fallback and every
@@ -129,29 +179,16 @@ enum PlatesStore {
         }
         #endif
 
+        // Players already here means this install has been played. Whoever it is has a
+        // name they chose, or chose to keep, and asking "who's playing?" on an update
+        // would be the app forgetting somebody it has known for months.
+        //
+        // Note this is only ever *true* for an install that has genuinely run before —
+        // a restore reaches here with a count of zero, having synced nothing yet, and
+        // is left unmarked so the identity prompt can settle it properly.
         let playerCount = (try? context.fetchCount(FetchDescriptor<Player>())) ?? 0
-        if playerCount == 0 {
-            context.insert(Player(name: "Me", colorIndex: 0))
-        } else {
-            // Players already here means this install has been played. Whoever it is
-            // has a name they chose, or chose to keep, and asking "who's playing?" on
-            // an update would be the app forgetting somebody it has known for months.
-            DevicePlayer.markProfileSet()
-        }
+        if playerCount > 0 { DevicePlayer.markProfileSet() }
 
-        let tripCount = (try? context.fetchCount(FetchDescriptor<Trip>())) ?? 0
-        if tripCount == 0 {
-            context.insert(Trip(name: "Summer Roadtrip"))
-        }
-
-        // Also runs for installs that predate books, which is the point — everyone
-        // gets a shelf to collect onto without having to create one first.
-        let bookCount = (try? context.fetchCount(FetchDescriptor<Book>())) ?? 0
-        if bookCount == 0 {
-            context.insert(Book(name: "My Plate Book"))
-        }
-
-        try? context.save()
         pinDevicePlayer()
     }
 
@@ -164,21 +201,35 @@ enum PlatesStore {
     /// to them and you would start logging plates as the host, on your own phone.
     /// Writing the id at launch means the fallback only ever runs while this device is
     /// still the only one in the store.
+    ///
+    /// Only for installs that have already said who they are. A device that has not
+    /// been introduced yet must not pin anybody, because on a restore the roster it
+    /// would be choosing from is whatever iCloud happens to have delivered so far —
+    /// and "earliest to join" among *that* is as likely to be a party host from last
+    /// summer as it is to be you. Left unpinned, `IdentityPrompt` asks.
     private static func pinDevicePlayer() {
-        if UserDefaults.standard.string(forKey: DevicePlayer.key) == nil,
+        if DevicePlayer.hasProfile,
+           UserDefaults.standard.string(forKey: DevicePlayer.key) == nil,
            let me = DevicePlayer.current(in: context) {
             DevicePlayer.adopt(me)
         }
 
         #if DEBUG
-        // `-asPlayer Mia` names this phone without typing. Two simulators both seed
-        // a player called "Me", so without it a two-device party is two identical
-        // players and the one thing the test is checking cannot be seen.
+        // `-asPlayer Mia` names this phone without typing. Two simulators otherwise
+        // reach a party as two players called the same thing — or, now that nothing is
+        // seeded, as two players called nothing at all — and the one thing a two-device
+        // test is checking cannot be seen. Inserts rather than renames, because on a
+        // fresh simulator there is no longer anybody here to rename.
         let args = ProcessInfo.processInfo.arguments
-        if let at = args.firstIndex(of: "-asPlayer"), at + 1 < args.count,
-           let me = DevicePlayer.current(in: context) {
+        if let at = args.firstIndex(of: "-asPlayer"), at + 1 < args.count {
+            let me = DevicePlayer.current(in: context) ?? {
+                let fresh = Player(name: args[at + 1], colorIndex: 0)
+                context.insert(fresh)
+                return fresh
+            }()
             me.name = args[at + 1]
             try? context.save()
+            DevicePlayer.adopt(me)
             DevicePlayer.markProfileSet()
         }
         #endif

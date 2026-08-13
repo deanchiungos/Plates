@@ -18,7 +18,9 @@ struct ProgressWidget: Widget {
                 .containerBackground(WidgetPalette.ground, for: .widget)
         }
         .configurationDisplayName("Collection")
-        .description("How far along whatever you are filling is.")
+        // "Whatever you are filling" is how the code talks about a trip-or-book.
+        // On the widget gallery card it just sounds vague.
+        .description("Your progress on the trip or book you are collecting into.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

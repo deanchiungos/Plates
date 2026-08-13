@@ -24,6 +24,7 @@ import CoreLocation
 struct TrailScreen: View {
     @Environment(PopupHost.self) private var popup
     @Environment(Router.self) private var router
+    @Environment(CoachPresenter.self) private var coach
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
@@ -107,6 +108,9 @@ struct TrailScreen: View {
                 router.pendingTrail = nil
             }
         }
+        .onAppear(perform: offerScopeTip)
+        // Leaving counts as shown. See `CoachPresenter.withdraw`.
+        .onDisappear { coach.withdraw(.trailScope) }
         // One sheet, two things it can be showing. Two `.sheet` modifiers on the same
         // view cannot both present, and a stop's list has to be able to push a plate's
         // detail rather than stack a second sheet on top of itself.
@@ -128,6 +132,12 @@ struct TrailScreen: View {
             }
         }
         #endif
+        // Last in the chain, so the balloon draws over the map and under the tab
+        // bar. Copy lives here rather than in a table elsewhere: whoever changes
+        // what the tip says is the person looking at the screen it appears on.
+        .coachLayer([
+            .trailScope: "This is one drive. Tap here to see another, or everything ever."
+        ])
     }
 
     /// What the one sheet is showing, if anything.
@@ -185,11 +195,25 @@ struct TrailScreen: View {
             )
         }
         .buttonStyle(.plain)
+        .coachAnchor(.trailScope)
         .padding(.horizontal, Theme.screenPadding)
         .padding(.bottom, 10)
     }
 
+    /// The bar names what you are looking at, which is exactly why it does not read
+    /// as a control — "Summer Roadtrip" in a capsule is a title until you learn it
+    /// is a button. The tip is the one thing that says so.
+    ///
+    /// Only worth saying when there is somewhere else to go: all-time plus one trip
+    /// is two scopes and a real choice; a phone with nothing on it is neither.
+    private func offerScopeTip() {
+        coach.request(.trailScope,
+                      when: !pins.isEmpty && trips.count + books.count >= 1)
+    }
+
     private func showScopePicker() {
+        // Opening the picker is the whole of what the tip was asking for.
+        coach.dismiss(.trailScope)
         // `playable`, not `collectable`. This picks what you are *looking at*, and a
         // trip you have finished is exactly the kind of thing you come here to look
         // at.
@@ -203,9 +227,13 @@ struct TrailScreen: View {
         let archived = trips.archived
         let groups = [
             PopupPicker.Group(entries: [
+                // The one entry in this picker that is the app's words rather than
+                // a trip somebody named, so it localises itself before going in.
+                // `Entry.title` stays a plain `String` because the search field
+                // matches against it.
                 PopupPicker.Entry(id: allTimeID,
-                                  title: "All time",
-                                  subtitle: "Every plate ever logged",
+                                  title: String(localized: "All time"),
+                                  subtitle: String(localized: "Every plate ever logged"),
                                   isSelected: effectiveScope == .allTime,
                                   action: { pick(.allTime) })
             ]),
@@ -355,7 +383,7 @@ struct TrailScreen: View {
             Text("No trail yet")
                 .font(.plates(size: 17, weight: .bold))
                 .foregroundStyle(Theme.ink)
-            Text("Plates get a pin here when you log them with location turned on. Older ones have no pin \u{2014} the app was not watching at the time.")
+            Text("Turn on location and every plate you spot drops a pin here. Ones you collected before then have no pin to show.")
                 .font(.plates(size: 13))
                 .foregroundStyle(Theme.inkMuted)
                 .multilineTextAlignment(.center)
@@ -1192,7 +1220,7 @@ struct TrailPinDetailBody: View {
         Rectangle().fill(Theme.line).frame(height: 1).padding(.leading, 44)
     }
 
-    private func row(_ symbol: String, _ label: String, _ value: String,
+    private func row(_ symbol: String, _ label: LocalizedStringKey, _ value: String,
                      isPending: Bool = false) -> some View {
         HStack(spacing: 12) {
             Image(systemName: symbol)

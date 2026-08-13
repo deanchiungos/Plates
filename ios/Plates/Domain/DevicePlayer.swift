@@ -79,20 +79,13 @@ enum DevicePlayer {
         UserDefaults.standard.set(true, forKey: profileSetKey)
     }
 
-    /// Whether this install still carries a roster from before the party existed.
+    #if DEBUG
+    /// Un-claim this device, leaving every player where they are.
     ///
-    /// Used once, to tell those people that the "who spotted it?" prompt has gone
-    /// rather than letting them discover it by tapping a plate and watching it land
-    /// on the wrong person. Nothing about their data changes — every past
-    /// attribution, score and standing is exactly as it was.
-    static let migrationNoticeKey = "partyMigrationNoticeShown"
-
-    static func needsMigrationNotice(players: [Player]) -> Bool {
-        players.count > 1
-            && !UserDefaults.standard.bool(forKey: migrationNoticeKey)
+    /// Behind `-forgetMe`. See the note at the top of `PlatesStore.seedIfNeeded`.
+    static func forgetThisDevice() {
+        UserDefaults.standard.removeObject(forKey: key)
+        UserDefaults.standard.removeObject(forKey: profileSetKey)
     }
-
-    static func migrationNoticeShown() {
-        UserDefaults.standard.set(true, forKey: migrationNoticeKey)
-    }
+    #endif
 }

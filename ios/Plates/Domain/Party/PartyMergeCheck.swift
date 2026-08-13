@@ -42,6 +42,8 @@ enum PartyMergeCheck {
             try factsNeverRelock()
             try remindersOnlyNudgeLiveTrips()
             try deepLinksAreTakenOnce()
+            try onlyTheHostCanRewriteTheTrip()
+            try mythicIsAboveTheScaleAndRoams()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -446,6 +448,123 @@ enum PartyMergeCheck {
             return check("tripUpdate decodes", false, true)
         }
         check("rules arrive intact", event.rules, rules)
+    }
+
+    /// Restarting a party must not let a guest close the trip you just reopened.
+    ///
+    /// The case that motivated the guard, in order: you finish a party trip, later
+    /// reopen it from the Trips tab and host it again. A guest joins whose own copy
+    /// is still finished. Their greeting carries a whole snapshot — including
+    /// `endedAt` from last week — and the merge used to write it straight onto your
+    /// row, so your trip closed underneath a party that had only just started and
+    /// stopped accepting plates.
+    ///
+    /// The second half matters as much as the first: the snapshot has to keep landing.
+    /// Refusing a guest's whole greeting would fix the rename and lose every plate
+    /// they spotted while they were away.
+    @MainActor
+    private static func onlyTheHostCanRewriteTheTrip() throws {
+        let source = try makeStore()
+        let fixture = install(into: source)
+        let peer = try makeStore()
+        let tombstones = PartyTombstones(url: nil)
+
+        PartyMerge.apply(try wire(snapshotOf: fixture, in: source),
+                         into: peer, tombstones: tombstones)
+
+        let id = fixture.tripID
+        guard let theirs = try source.fetch(
+            FetchDescriptor<Trip>(predicate: #Predicate { $0.id == id })).first,
+              let mine = try peer.fetch(
+            FetchDescriptor<Trip>(predicate: #Predicate { $0.id == id })).first else {
+            return check("both stores hold the trip", false, true)
+        }
+
+        // The sender's copy diverges the way a guest's does: finished, under the name
+        // it had before the rename, and carrying a plate found while they were away.
+        theirs.endedAt = Date(timeIntervalSinceReferenceDate: 780_000_000)
+        theirs.name = "Their stale copy"
+        theirs.includesTrucks.toggle()
+        let alone = Sighting(plateCode: "ME", trip: theirs, player: nil,
+                             spottedAt: theirs.startedAt.addingTimeInterval(20_000))
+        alone.rarityWhenSpotted = 7
+        source.insert(alone)
+        try? source.save()
+
+        let stale = try wire(snapshotOf: fixture, in: source)
+        let name = mine.name
+        let trucks = mine.includesTrucks
+
+        PartyMerge.apply(stale, into: peer, tombstones: tombstones, fromHost: false)
+        check("a guest cannot end the trip", mine.endedAt, nil)
+        check("a guest cannot rename the trip", mine.name, name)
+        check("a guest cannot change the rules", mine.includesTrucks, trucks)
+        check("a guest's plates land anyway", codes(in: peer).contains("ME"), true)
+
+        // The other door into the same columns. `broadcastTrip` is host-only, so a
+        // guest sending one is a guest that has gone around it.
+        let pushed = PartyEnvelope(.tripUpdate(PartyMerge.event(for: theirs, rules: .standard)))
+        PartyMerge.apply(pushed, into: peer, tombstones: tombstones, fromHost: false)
+        check("a guest cannot push a trip update", mine.endedAt, nil)
+
+        // The host says the same thing and it takes — this is how a guest holding a
+        // finished copy gets reopened when the host restarts the party.
+        PartyMerge.apply(stale, into: peer, tombstones: tombstones, fromHost: true)
+        check("the host can end the trip", mine.endedAt, theirs.endedAt)
+        check("the host can rename the trip", mine.name, "Their stale copy")
+    }
+
+    /// Mythic is a promotion, not a band, and one of its seven slots moves.
+    ///
+    /// Three separate things can break here and none of them shows up as a crash: the
+    /// six permanent regions could fall back into legendary, the roaming slot could
+    /// pick a province or one of the permanent six, and — the quiet one — the
+    /// routeless fallback table could top out at 10 and never produce a mythic plate
+    /// at all for anybody who has not pinned a destination.
+    @MainActor
+    private static func mythicIsAboveTheScaleAndRoams() throws {
+        let newark = PlateRarity.Route(oLat: 40.7, oLon: -74.2)
+        let losAngeles = PlateRarity.Route(oLat: 34.05, oLon: -118.25)
+
+        for route in [newark, losAngeles] {
+            for code in PlateRarity.mythicAlways {
+                check("\(code) is mythic",
+                      RarityTier.forRarity(PlateRarity.rarity(code, on: route)), .mythic)
+            }
+        }
+
+        // The seventh slot: a state, never one of the permanent six, and it has to
+        // actually differ somewhere or it is not roaming at all.
+        let east = PlateRarity.roamingMythic(on: newark)
+        let west = PlateRarity.roamingMythic(on: losAngeles)
+        check("east has a roaming mythic", east != nil, true)
+        check("west has a roaming mythic", west != nil, true)
+        check("roaming pick is a state",
+              Plate.plate(for: east ?? "")?.region, .state)
+        check("roaming pick is not already mythic",
+              PlateRarity.mythicAlways.contains(east ?? ""), false)
+        check("roaming pick actually moves with you", east == west, false)
+
+        // Exactly seven, or the promotion is leaking.
+        for (label, route) in [("east", newark), ("west", losAngeles)] {
+            let count = Plate.all.filter {
+                RarityTier.forRarity(PlateRarity.rarity($0.code, on: route)) == .mythic
+            }.count
+            check("\(label) has seven mythic plates", count, 7)
+        }
+
+        // The fallback, which is the one nobody would notice was missing: a trip with
+        // no route set still has to be able to show a mythic plate.
+        let routeless = Plate.all.filter {
+            RarityTier.forRarity(PlateRarity.rarity($0.code, on: nil)) == .mythic
+        }.count
+        check("routeless trips still reach mythic", routeless, 7)
+
+        // Legendary must survive losing seven regions to the tier above it.
+        let legendary = Plate.all.filter {
+            RarityTier.forRarity(PlateRarity.rarity($0.code, on: newark)) == .legendary
+        }.count
+        check("legendary is not emptied", legendary > 5, true)
     }
 
     /// A shared book, out to `CKRecord`s and back into somebody else's store.

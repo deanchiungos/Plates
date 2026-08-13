@@ -201,7 +201,7 @@ struct VoiceModeScreen: View {
 
     private var isListening: Bool { voice.status == .listening }
 
-    private var headline: String {
+    private var headline: LocalizedStringKey {
         switch voice.status {
         case .listening: return "Listening"
         case .starting:  return "Starting…"
@@ -214,16 +214,18 @@ struct VoiceModeScreen: View {
     /// Shows the live transcript once there is one, and instructions before that.
     /// Both matter: the instruction teaches the interaction, and the transcript is
     /// what makes a silent microphone believable.
-    private var subhead: String {
+    private var subhead: LocalizedStringKey {
         switch voice.status {
         case .listening:
             let heard = voice.transcript.trimmingCharacters(in: .whitespacesAndNewlines)
             if heard.isEmpty {
                 return "Just say the states as you see them — \u{201C}New Jersey\u{201D}, \u{201C}Ohio\u{201D}, \u{201C}that\u{2019}s a Texas\u{201D}."
             }
-            return "\u{201C}" + String(heard.suffix(70)) + "\u{201D}"
-        case .denied(let why):  return why
-        case .failed(let why):  return why
+            // Interpolated rather than concatenated: a key is built from a literal,
+            // and `"“%@”"` is the one catalog entry every transcript flows through.
+            return "\u{201C}\(String(heard.suffix(70)))\u{201D}"
+        case .denied(let why):  return "\(why)"
+        case .failed(let why):  return "\(why)"
         default:                return ""
         }
     }

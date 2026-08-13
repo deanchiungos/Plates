@@ -71,6 +71,21 @@
 			</array>
 		</dict>
 	</array>
+	<!--
+	  Overpass — the app's text face, bundled. A free (OFL/LGPL) digitisation of
+	  Highway Gothic, the U.S. interstate signage face, so the prose is set in road
+	  signage the way the plate glyphs are set in DIN. Chosen over Avenir Next in
+	  the FontLab duel (`-fontLab duel` still shows the comparison). The four
+	  weights are exactly the ones `Theme.overpass` maps to; the licence sits next
+	  to the files in Resources/Fonts.
+	-->
+	<key>UIAppFonts</key>
+	<array>
+		<string>overpass-regular.otf</string>
+		<string>overpass-semibold.otf</string>
+		<string>overpass-bold.otf</string>
+		<string>overpass-heavy.otf</string>
+	</array>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Voice mode listens while you drive so you can call out plates instead of tapping them.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>

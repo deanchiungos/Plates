@@ -1,3 +1,4 @@
+import SwiftData
 import SwiftUI
 
 struct RootView: View {
@@ -43,7 +44,60 @@ struct RootView: View {
 
     @State private var router = Router(tab: RootView.initialTab)
     @State private var popup = PopupHost()
+    /// Only the arbiter lives at the root. The balloons themselves are drawn by a
+    /// `CoachLayer` inside each screen, because a mark has to move with the row or
+    /// tile it points at — see the note on `CoachLayer`.
+    @State private var coach = CoachPresenter()
     private let deepLink = DeepLink.shared
+
+    @State private var welcoming = false
+    @State private var namingAfterWelcome = false
+    /// Whether the card was dismissed with Skip, read once by `afterWelcome`.
+    @State private var skipped = false
+
+    /// Whether this launch is somebody's first.
+    ///
+    /// Three conditions, and the third is not redundant. `hasProfile` is false on a
+    /// *restored* install too — a new phone signed into an old iCloud account has
+    /// never said who it is on this device — and that person is emphatically not new
+    /// to the app. Their players arrive from sync, so an empty roster is the thing
+    /// that actually separates "new" from "not delivered yet", and `IdentityPrompt`
+    /// handles the second case on its own.
+    ///
+    /// Read from the store directly rather than through a `@Query`, because this is
+    /// asked once, at launch, and a live query on the root would re-evaluate the
+    /// whole shell every time anybody joined a party.
+    private var shouldWelcome: Bool {
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-welcome") { return true }
+        #endif
+        guard !Coach.seen(.welcome), !DevicePlayer.hasProfile else { return false }
+        return ((try? PlatesStore.context.fetchCount(FetchDescriptor<Player>())) ?? 0) == 0
+    }
+
+    private func closeWelcome(skipping: Bool) {
+        skipped = skipping
+        Coach.markSeen(.welcome)
+        // Skip stands down the fork's extra line too. Somebody who declined the one
+        // sentence of introduction is not asking for a second one.
+        if skipping { Coach.markSeen(.fork) }
+        welcoming = false
+    }
+
+    /// The second beat, once the card is off screen.
+    ///
+    /// A sheet cannot be presented while a `fullScreenCover` is still going away, so
+    /// this hangs off `onDismiss` rather than following the button.
+    ///
+    /// Skipping does not skip the name — it only skips being asked *here*. The Game
+    /// screen asks anyway the moment there is a trip or a book to fill, which is a
+    /// better moment for it, and this is simply the one place the flow can offer it
+    /// before that. Nothing depends on having a name: a sighting with no owner is a
+    /// legal, ordinary thing in this app.
+    private func afterWelcome() {
+        guard !skipped, !DevicePlayer.hasProfile else { return }
+        namingAfterWelcome = true
+    }
 
     /// Taken, not read. A destination left sitting would re-navigate every time the
     /// app came back from the background.
@@ -64,6 +118,25 @@ struct RootView: View {
         }
         .environment(popup)
         .environment(router)
+        .environment(coach)
+        // Full-screen rather than a sheet: a card you can swipe away by accident
+        // before reading the one sentence it exists to show is not a welcome, and a
+        // sheet leaves the tab bar visible underneath, which gives away the whole
+        // shape of the app before anybody has been told what it is for.
+        .fullScreenCover(isPresented: $welcoming, onDismiss: afterWelcome) {
+            WelcomeCard(onPlay: { closeWelcome(skipping: false) },
+                        onSkip: { closeWelcome(skipping: true) })
+        }
+        .sheet(isPresented: $namingAfterWelcome) {
+            IdentityPrompt(saveLabel: "Continue")
+        }
+        .onAppear { if shouldWelcome { welcoming = true } }
+        // "Replay the tour", from Settings. Watched rather than called, because the
+        // card belongs to the root and the button is four levels down a tab.
+        .onChange(of: coach.replayRequest) { _, _ in
+            router.tab = RootView.gameTab
+            welcoming = true
+        }
         // The widget's one tap. `plates://collect` puts the grid up, which is the
         // whole promise of tapping a progress bar on a home screen — anything else
         // would be an app launch with extra steps.
@@ -123,22 +196,3 @@ struct RootView: View {
     }
 }
 
-struct ComingSoon: View {
-    let title: String
-    let symbol: String
-    let note: String
-
-    var body: some View {
-        NavigationStack {
-            ZStack {
-                Theme.ground.ignoresSafeArea()
-                ContentUnavailableView {
-                    Label(title, systemImage: symbol)
-                } description: {
-                    Text(note)
-                }
-            }
-            .navigationTitle(title)
-        }
-    }
-}
