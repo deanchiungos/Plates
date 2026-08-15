@@ -63,6 +63,8 @@ struct TripSummaryRow: View {
     let isCurrent: Bool
     let best: Int
 
+    @Environment(\.dynamicTypeSize) private var typeSize
+
     var body: some View {
         VStack(alignment: .leading, spacing: 7) {
             HStack(alignment: .firstTextBaseline, spacing: 6) {
@@ -99,26 +101,19 @@ struct TripSummaryRow: View {
             }
             .frame(height: 5)
 
-            HStack(spacing: 10) {
-                if let route = summary.route {
-                    Label(route, systemImage: "arrow.triangle.turn.up.right.diamond")
-                        .lineLimit(1)
-                }
-                Label("\(summary.platesFound) plates", systemImage: "square.grid.2x2")
-                Label("\(summary.days)d", systemImage: "calendar")
-                if let bf = summary.bestFind, let p = Plate.plate(for: bf.code) {
-                    // The best find wears its tier dot, not a sparkle. The dot is
-                    // how rarity is drawn everywhere else in the app, and its
-                    // colour already says how good the find was.
-                    HStack(spacing: 4) {
-                        Circle()
-                            .fill(RarityTier.forRarity(bf.rarity).color)
-                            .frame(width: 6, height: 6)
-                        Text(p.code)
+            // Four facts on one line is a bet on width, and at an accessibility text
+            // size the bet loses: every label truncated at once and the row became a
+            // string of icons and ellipses that said nothing at all. Stacking them
+            // costs height, which a reader at that size is already spending.
+            Group {
+                if typeSize.isAccessibilitySize {
+                    VStack(alignment: .leading, spacing: 5) { stats }
+                } else {
+                    HStack(spacing: 10) {
+                        stats
+                        Spacer(minLength: 0)
                     }
-                    .foregroundStyle(RarityTier.forRarity(bf.rarity).color)
                 }
-                Spacer(minLength: 0)
             }
             .font(.plates(size: 11))
             .foregroundStyle(Theme.inkMuted)
@@ -133,5 +128,32 @@ struct TripSummaryRow: View {
                     .strokeBorder(isCurrent ? Theme.route : Theme.line,
                                   lineWidth: isCurrent ? 1.5 : 1))
         )
+    }
+
+    /// The facts under the bar, in either layout.
+    @ViewBuilder
+    private var stats: some View {
+        if let route = summary.route {
+            Label(route, systemImage: "arrow.triangle.turn.up.right.diamond")
+                // The only one of these that grows with what somebody typed, so it
+                // is the one that gives up width. Without this the plate count and
+                // the day count truncated alongside it, and "0 plates" losing its
+                // word is a fact deleted rather than a fact shortened.
+                .layoutPriority(-1)
+        }
+        Label("\(summary.platesFound) plates", systemImage: "square.grid.2x2")
+        Label("\(summary.days)d", systemImage: "calendar")
+        if let bf = summary.bestFind, let p = Plate.plate(for: bf.code) {
+            // The best find wears its tier dot, not a sparkle. The dot is how
+            // rarity is drawn everywhere else in the app, and its color already
+            // says how good the find was.
+            HStack(spacing: 4) {
+                Circle()
+                    .fill(RarityTier.forRarity(bf.rarity).color)
+                    .frame(width: 6, height: 6)
+                Text(p.code)
+            }
+            .foregroundStyle(RarityTier.forRarity(bf.rarity).color)
+        }
     }
 }

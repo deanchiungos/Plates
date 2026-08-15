@@ -15,7 +15,7 @@ import CoreLocation
 /// over Pennsylvania.
 ///
 /// **Every sighting gets its own plate on the map.** An earlier version bucketed
-/// pins to a kilometre and drew "2" in a coloured bubble wherever two landed in the
+/// pins to a kilometre and drew "2" in a colored bubble wherever two landed in the
 /// same bucket, which threw away the only thing worth looking at — *which* plates.
 /// Two plates a kilometre apart are separate pins at any zoom you would actually
 /// read them at, so the merge was solving a problem the map did not have. Sightings
@@ -25,6 +25,7 @@ struct TrailScreen: View {
     @Environment(PopupHost.self) private var popup
     @Environment(Router.self) private var router
     @Environment(CoachPresenter.self) private var coach
+    @Environment(TourGuide.self) private var tour
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
@@ -78,6 +79,7 @@ struct TrailScreen: View {
 
             VStack(spacing: 0) {
                 scopeBar
+                    .tourAnchor(.trailScopeBar)
 
                 if pins.isEmpty {
                     Spacer()
@@ -87,7 +89,12 @@ struct TrailScreen: View {
                     TrailMap(pins: pins, path: pathCoordinates,
                              selected: $selected, stop: $stop)
                         .ignoresSafeArea(edges: .bottom)
-                        .overlay(alignment: .bottom) { summary }
+                        .tourAnchor(.trailMap)
+                        // The summary is drawn as an overlay on the map, so it is
+                        // anchored where it is drawn rather than where it reads.
+                        .overlay(alignment: .bottom) {
+                            summary.tourAnchor(.trailSummary, prefersAbove: true)
+                        }
                 }
             }
         }
@@ -109,6 +116,8 @@ struct TrailScreen: View {
             }
         }
         .onAppear(perform: offerScopeTip)
+        .onAppear { tour.offer(.trail, stops: tourStops) }
+        .onDisappear { tour.left(.trail) }
         // Leaving counts as shown. See `CoachPresenter.withdraw`.
         .onDisappear { coach.withdraw(.trailScope) }
         // One sheet, two things it can be showing. Two `.sheet` modifiers on the same
@@ -138,6 +147,22 @@ struct TrailScreen: View {
         .coachLayer([
             .trailScope: "This is one drive. Tap here to see another, or everything ever."
         ])
+        .tourLayer(.trail, [
+            .trailScopeBar: "The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever.",
+            .trailMap: "One pin for every plate, dropped where you were standing when you called it. Plates spotted in the same place stack into a deck you can open.",
+            .trailSummary: "How far the drive ran, and how much of it you were spotting on."
+        ])
+    }
+
+    /// Which stops this screen can host.
+    ///
+    /// No map means no pins and no summary, and there is nothing gained by pointing at
+    /// the empty state: it is a sentence explaining itself already. The scope bar is
+    /// still worth one stop, because it is the control that finds the drive that *does*
+    /// have pins on it.
+    private var tourStops: [Tour.Stop] {
+        pins.isEmpty ? [.trailScopeBar]
+                     : [.trailScopeBar, .trailMap, .trailSummary]
     }
 
     /// What the one sheet is showing, if anything.
@@ -517,7 +542,7 @@ struct TrailMap: View {
             // Apple's standard map is built to be read on its own, so every park,
             // river and motorway is at full strength, and a 48pt plate has to compete
             // with cartography that was not expecting company. A sheet of the app's
-            // own paper colour knocks it back to a ghost of itself: coastlines and
+            // own paper color knocks it back to a ghost of itself: coastlines and
             // motorways still legible enough to place a pin, nothing loud enough to
             // fight one.
             //
@@ -583,7 +608,7 @@ struct TrailMap: View {
         // shop competing with a 48pt plate — and `pointsOfInterest: .excludingAll`
         // does that on its own, without draining the green out of the continent.
         //
-        // So the colour comes from MapKit at full strength and the cream wash is the
+        // So the color comes from MapKit at full strength and the cream wash is the
         // only thing softening it. The wash is the dial: at 0.34 the map came back
         // fully saturated and read as raw Apple Maps with plates dropped on it; 0.5
         // keeps land green and water blue while still holding them a step behind. The
@@ -979,10 +1004,10 @@ struct TrailBundleView: View {
 
     /// The pin is the plate.
     ///
-    /// The old marker was a coloured capsule with a state code or a count in it,
+    /// The old marker was a colored capsule with a state code or a count in it,
     /// which is a legend rather than a thing — the map told you a rarity band and
-    /// made you remember what the colour meant. A plate needs no legend: it is the
-    /// object being collected, in its own colours. Rarity survives as a hairline
+    /// made you remember what the color meant. A plate needs no legend: it is the
+    /// object being collected, in its own colors. Rarity survives as a hairline
     /// along the bottom edge, enough to spot the gold one without the marker becoming
     /// a badge.
     private func card(_ pin: TrailPin) -> some View {
@@ -1380,7 +1405,7 @@ struct TrailStopSheet: View {
                     .font(.plates(size: 15, weight: .semibold))
                     .foregroundStyle(Theme.ink)
                 // Time only. Who called it belongs on the plate's own card, not on
-                // every row of a list — twelve name tags down one column is a colour
+                // every row of a list — twelve name tags down one column is a color
                 // chart, and it competes with the plate art for the same glance.
                 Text(pin.spottedAt.formatted(date: .omitted, time: .shortened))
                     .font(.plates(size: 12))
@@ -1399,13 +1424,13 @@ struct TrailStopSheet: View {
 
 /// Who called it.
 ///
-/// This was a coloured dot beside a name, and a 6pt dot is not a design — it reads as
+/// This was a colored dot beside a name, and a 6pt dot is not a design — it reads as
 /// a bullet point that happens to be green, and against a row of muted grey text the
 /// player palette's greens and oranges look like status lights rather than people.
 ///
 /// A filled capsule with the name inside it does the same job with none of that: the
-/// colour is the whole shape rather than a speck, dark ink keeps it legible on every
-/// one of the six player colours, and it reads as a tag with somebody's name on it —
+/// color is the whole shape rather than a speck, dark ink keeps it legible on every
+/// one of the six player colors, and it reads as a tag with somebody's name on it —
 /// which is what the player markers are everywhere else in the app.
 struct SpotterChip: View {
     let name: String

@@ -44,6 +44,7 @@ enum PartyMergeCheck {
             try deepLinksAreTakenOnce()
             try onlyTheHostCanRewriteTheTrip()
             try mythicIsAboveTheScaleAndRoams()
+            try myOwnNameSurvivesAPeersStaleCopy()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -649,6 +650,60 @@ enum PartyMergeCheck {
         check("and the plate is gone", copy.seenCodes.sorted(), ["NJ", "NY", "PA"])
     }
 
+    /// A rename must not be undone by somebody else's memory of you.
+    ///
+    /// Every peer's copy of your name is stale the instant you change it — you are
+    /// the only device that saw it happen — so a roster arriving from any of them
+    /// used to write the old one straight back. The reported symptom was a rename
+    /// that reverted itself whenever a new party started on the same trip, which is
+    /// simply the next time a snapshot goes out.
+    @MainActor
+    private static func myOwnNameSurvivesAPeersStaleCopy() throws {
+        let source = try makeStore()
+        let fixture = install(into: source)
+        let peer = try makeStore()
+        let tombstones = PartyTombstones(url: nil)
+
+        PartyMerge.apply(try wire(snapshotOf: fixture, in: source),
+                         into: peer, tombstones: tombstones)
+
+        let roster = try source.fetch(FetchDescriptor<Player>())
+        guard let dad = roster.first(where: { $0.name == "Dad" }),
+              let mia = roster.first(where: { $0.name == "Mia" }) else {
+            return check("fixture roster", false, true)
+        }
+        // On this device, "Dad" is me and "Mia" is somebody else in the car.
+        let me = dad.id, them = mia.id
+        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
+        UserDefaults.standard.set(me.uuidString, forKey: DevicePlayer.key)
+        defer {
+            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
+            else { UserDefaults.standard.removeObject(forKey: DevicePlayer.key) }
+        }
+
+        guard let mine = try peer.fetch(
+                FetchDescriptor<Player>(predicate: #Predicate { $0.id == me })).first,
+              let other = try peer.fetch(
+                FetchDescriptor<Player>(predicate: #Predicate { $0.id == them })).first else {
+            return check("both players merged", false, true)
+        }
+
+        // I rename myself mid-party. Nobody else has heard yet.
+        mine.name = "Ethan"
+        try? peer.save()
+
+        // A fresh party on the same trip: the host sends everything it remembers,
+        // including its out-of-date copy of me — and its up-to-date copy of Mia,
+        // who really did change her name on her own phone.
+        mia.name = "Mia B"
+        try? source.save()
+        PartyMerge.apply(try wire(snapshotOf: fixture, in: source),
+                         into: peer, tombstones: tombstones)
+
+        check("my rename survives a peer's stale roster", mine.name, "Ethan")
+        check("somebody else's rename still lands", other.name, "Mia B")
+    }
+
     // MARK: - The fixture
 
     private struct Fixture {
@@ -763,7 +818,7 @@ enum PartyMergeCheck {
         }
 
         for player in players {
-            lines.append("player \(player.name) colour=\(player.colorIndex) "
+            lines.append("player \(player.name) color=\(player.colorIndex) "
                          + "score=\(trip.score(for: player))")
         }
 

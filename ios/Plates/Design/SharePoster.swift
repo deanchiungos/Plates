@@ -19,7 +19,7 @@ import SwiftUI
 /// Laid out in points at a fixed width and rendered at `scale`, so the output is a
 /// predictable size whatever phone it came from. Nothing in the poster reads the
 /// environment: an `ImageRenderer` draws outside the view hierarchy and gets no
-/// `@Environment`, no safe area and no colour scheme, so everything it needs is
+/// `@Environment`, no safe area and no color scheme, so everything it needs is
 /// passed in.
 
 // MARK: - Making one
@@ -57,8 +57,39 @@ enum ShareablePoster {
             found: seen,
             standings: shared ? collection.standings(among: people) : [],
             claims: shared ? claims(from: index, over: seen) : [:],
+            logged: collection.sightings?.count ?? 0,
+            newHere: firsts(in: collection, over: seen),
             route: await road(of: collection)
         )
+    }
+
+    /// How many of these plates this phone had never logged anywhere before.
+    ///
+    /// The one number on the poster that needs more than the collection it is about:
+    /// "new" is a claim against everything else you have ever done, so it is answered
+    /// against every sighting in the store rather than against this trip's. A drive
+    /// that turned up twenty states and one you had not already banked is a different
+    /// afternoon from one that turned up four fresh ones, and the collection's own
+    /// count cannot tell them apart.
+    ///
+    /// Provenance is by container name, which is what `PlateBook` already records and
+    /// what the app shows everywhere else it says where a plate came from. Two
+    /// collections sharing a name would confuse it; the failure is a count that is
+    /// slightly generous on a poster, which is the right way for this to be wrong.
+    ///
+    /// Returns nil when there is nothing to say, so the pill, the middle card and the
+    /// closing line all stand down together rather than one of them printing a zero.
+    private static func firsts(in collection: any PlateCollection,
+                               over seen: Set<String>) -> (count: Int, label: String)? {
+        let all = (try? PlatesStore.context.fetch(FetchDescriptor<Sighting>())) ?? []
+        guard !all.isEmpty else { return nil }
+        let everything = PlateBook(sightings: all)
+        let mine = collection.name
+        let count = seen.count { everything.entry(for: $0)?.firstIn == mine }
+        guard count > 0 else { return nil }
+        return (count, collection is Trip
+                ? String(localized: "NEW THIS DRIVE")
+                : String(localized: "NEW IN THIS BOOK"))
     }
 
     /// Who banked each plate. Built once from the index rather than scanned per tile,
@@ -118,7 +149,8 @@ enum ShareablePoster {
             standings: [],
             // No standings here, so no chips either: the same rule as a solo trip.
             // A lifetime's claimants also span parties that never met.
-            claims: [:]
+            claims: [:],
+            logged: book.totalSightings
         )
     }
 
@@ -141,12 +173,18 @@ enum ShareablePoster {
               let start = trip.originCoordinate,
               let end = trip.destinationCoordinate else { return nil }
         // Sized to land exactly inside the card that mounts it: the poster is 700
-        // wide, the card stack is inset 30 a side, and the card pads the strip by 10.
+        // wide, the card stack is inset 16 a side, and the card pads the strip by 10.
         // Asked for here rather than measured there, because a snapshot has to be
         // ordered at a size before anything is laid out. See `ScenicPoster.mapCard`.
+        //
+        // These numbers have to be kept in step by hand, and the last time the page
+        // margin moved they were not: the strip stayed 620 wide inside a slot that had
+        // grown to 648, and MapKit's own scale bar and logo were being stretched 4%
+        // across to fill it. Taller as well as wider — a road across a continent in a
+        // 3.6:1 letterbox is mostly two oceans.
         return await PosterRoute.make(
             start: start, end: end,
-            size: CGSize(width: ScenicPoster.width - 80, height: 170))
+            size: CGSize(width: ScenicPoster.width - 52, height: 200))
     }
 
     private static func image(title: String,
@@ -156,6 +194,8 @@ enum ShareablePoster {
                               found: Set<String>,
                               standings: [(player: Player, score: Int)],
                               claims: [String: ScenicPoster.Claim],
+                              logged: Int,
+                              newHere: (count: Int, label: String)? = nil,
                               route: PosterRoute? = nil) -> UIImage? {
         let poster = ScenicPoster(title: title,
                                   subtitle: subtitle,
@@ -164,6 +204,8 @@ enum ShareablePoster {
                                   plates: everyPlate,
                                   found: found,
                                   standings: standings,
+                                  newHere: newHere,
+                                  logged: logged,
                                   claims: claims,
                                   route: route)
         let renderer = ImageRenderer(content: poster)
@@ -216,7 +258,7 @@ enum ShareablePoster {
             if let route = trip.routeLabel { return route }
             let started = trip.startedAt.formatted(.dateTime.month(.abbreviated).day().year())
             guard let ended = trip.endedAt else { return "Since \(started)" }
-            return "\(started) \u{2013} \(ended.formatted(.dateTime.month(.abbreviated).day().year()))"
+            return "\(started) to \(ended.formatted(.dateTime.month(.abbreviated).day().year()))"
         }
         return (collection as? Book)?.sinceLabel
     }

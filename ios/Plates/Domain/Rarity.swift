@@ -265,17 +265,59 @@ enum PlateRarity {
     /// `includeTrucks` rides along here rather than being a separate argument so
     /// that it is part of the memoisation key: flipping the switch has to produce a
     /// different table, not a stale cached one.
+    /// One point on the road, in the shape the cache stores.
+    struct Waypoint: Hashable {
+        let lat: Double
+        let lon: Double
+    }
+
     struct Route: Hashable {
         let oLat: Double
         let oLon: Double
         let dLat: Double?
         let dLon: Double?
 
+        /// The actual driving route, when it is known. Empty falls back to the
+        /// straight segment between the two ends.
+        ///
+        /// THE STRAIGHT LINE IS NOT THE ROAD. Measured against the route MapKit
+        /// actually returns for Newark to San Diego — I-40, 2,748 miles — ten of the
+        /// sixty-five regions change band:
+        ///
+        ///     Oklahoma    110 km off the straight line  ->   22 km off the road
+        ///     Arizona      35                           ->    9
+        ///     Michigan    463                           ->  358
+        ///     Kentucky     93                           ->  224
+        ///     West Va.     79                           ->  143
+        ///
+        /// The error is signed, not random. A straight line cuts the corner every
+        /// road takes, so it drifts toward whatever lies on the chord — here the Ohio
+        /// valley, which it rates as country you drive through and you do not — and
+        /// away from the states the interstate actually threads.
+        ///
+        /// How much it matters depends on how much the road bends. This pair is a
+        /// mild case, because I-40 runs fairly straight; a drive that detours around
+        /// mountains or the Great Lakes diverges much further, and there is no way to
+        /// know which kind a trip is without asking for the road.
+        var path: [Waypoint] = []
+
         /// Where the car is now, if the trip is tracking. Quantised on the way in.
         var currentLat: Double?
         var currentLon: Double?
 
         var includeTrucks: Bool = false
+
+        /// November through April, when the snowbird term is live. Part of the route
+        /// — and therefore of the memo key — rather than read from the clock inside
+        /// `table(for:)`, because a cached table must never disagree with what the
+        /// same route would compute fresh.
+        var isWinter: Bool = false
+
+        /// Whether now is snowbird season, for callers building a route.
+        static var snowbirdSeason: Bool {
+            let month = Calendar.current.component(.month, from: Date())
+            return month >= 11 || month <= 4
+        }
 
         /// Rounded to a quarter of a degree — roughly 25 km — before it is stored.
         ///
@@ -292,7 +334,9 @@ enum PlateRarity {
         init(oLat: Double, oLon: Double,
              dLat: Double? = nil, dLon: Double? = nil,
              currentLat: Double? = nil, currentLon: Double? = nil,
-             includeTrucks: Bool = false) {
+             includeTrucks: Bool = false,
+             isWinter: Bool = false,
+             path: [Waypoint] = []) {
             self.oLat = oLat
             self.oLon = oLon
             self.dLat = dLat
@@ -300,7 +344,32 @@ enum PlateRarity {
             self.currentLat = currentLat.map(Self.quantise)
             self.currentLon = currentLon.map(Self.quantise)
             self.includeTrucks = includeTrucks
+            self.isWinter = isWinter
+            self.path = Self.thin(path)
         }
+
+        /// Down to at most `pathLimit` points before it is stored.
+        ///
+        /// The cache keeps 400, which is the resolution the map preview needs to draw
+        /// a smooth line. This is not drawing anything: it is measuring against a
+        /// friction scale of 600 km, and 48 points across a continental route is a
+        /// vertex every ~85 km. Nothing in a ten-band ranking can see finer than that.
+        ///
+        /// It matters because `Route` is the memo key for `table(for:)`, which every
+        /// tile asks on every render. Hashing 400 coordinate pairs to answer "have I
+        /// computed this already" would cost more than recomputing the sixty-five
+        /// weights it is trying to avoid.
+        static func thin(_ path: [Waypoint]) -> [Waypoint] {
+            guard path.count > pathLimit else { return path }
+            let step = max(1, path.count / pathLimit)
+            var kept = stride(from: 0, to: path.count, by: step).map { path[$0] }
+            // The last point is the destination. Dropping it would end the road
+            // wherever the stride happened to stop, short of the pin.
+            if let last = path.last, kept.last != last { kept.append(last) }
+            return kept
+        }
+
+        private static let pathLimit = 48
     }
 
     // MARK: - Scoring
@@ -318,13 +387,204 @@ enum PlateRarity {
             weights[code] = pow(fleet, fleetExponent) * origin.reach
                 * exp(-d / decayScale)
         }
+        addCorridors(into: &weights, for: route)
+        blendMigration(into: &weights, for: route)
 
-        let result = ranked(by: weights)
+        var result = ranked(by: weights)
+        floorHome(&result, for: route)
         // Driving across a continent mints a new quantised position every ~25 km, so
         // the memo has to be bounded or it grows for the length of the trip.
         if cache.count > 40 { cache.removeAll() }
         cache[route] = result
         return result
+    }
+
+    // MARK: - The corridor term
+
+    /// Through-traffic on the road you are actually standing on.
+    ///
+    /// Distance decay treats traffic as seeping outward evenly, and mid-route that
+    /// is exactly wrong: on rural I-80 most of what passes was funnelled there from
+    /// every state I-80 serves, so Wyoming plates are ordinary in Nebraska while
+    /// South Dakota's — from a *nearer* population centre — are not. This term adds
+    /// that flow for states sharing an interstate with the current fix.
+    ///
+    /// Three deliberate shapes:
+    ///
+    /// - **Additive, unlike the migration mixture.** The through-share of what you
+    ///   see genuinely varies with local dilution — enormous on rural corridor
+    ///   miles, negligible in a city that happens to have an interstate through it,
+    ///   which is every city. An additive term in fleet units gets that for free.
+    /// - **Ramped in from 300 to 600 km.** For a state you are nearly inside,
+    ///   "through-traffic" double-counts the local term — an early draft handed
+    ///   Pennsylvania a corridor bonus *in Newark* and pushed New Jersey out of
+    ///   band 1 in its own driveway.
+    /// - **Live fix only.** From endpoints alone, the honest traffic-assignment
+    ///   prototype showed the funnel cancels out — corridor structure is a property
+    ///   of where you are standing along a road, not of your home city.
+    ///
+    /// Tuned, not derived (compare `decayScale`), against street-level anchors: on
+    /// I-80 at North Platte, Wyoming must outrank South Dakota — whose population
+    /// centre is 110 km *nearer* — and the Dakotas stay rare; on I-90 at Sioux
+    /// Falls, North Dakota comes in and New York must not outrank South Dakota; at
+    /// a live fix in Newark the home neighbours must not move; off the interstate
+    /// at Pierre, nothing changes at all. Accepted miss: Ohio gains one band at an
+    /// urban I-80 fix in New Jersey, which the road arguably justifies.
+    ///
+    /// Two earlier shapes failed those anchors and the failures are worth keeping:
+    /// an additive term in fleet units let New York's mass ride I-90 to band 2 in
+    /// Sioux Falls, and no exponential scale could carry Wyoming 500 km without
+    /// also carrying a fleet 23 times its size 1,900 km. Multiplying instead means
+    /// a corridor makes a state commoner *than its distance says*, never simply
+    /// big; dilution then decides how much of the road's traffic is through-flow
+    /// at all.
+    private static let corridorCoupling = 5.0
+
+    /// The local pot at the anchor fix — I-80 at North Platte, Nebraska, autos
+    /// only, the sum of every region's undecorated gravity weight from there.
+    /// Dilution is `potRef / pot(here)`, capped at 1: a fix whose surroundings
+    /// carry North Platte's traffic or less is rural corridor mile and gets the
+    /// full coupling; Newark, at roughly five times the pot, gets a fifth of it.
+    /// Location-only on purpose — the trucks toggle changes what a trip counts,
+    /// not where the observer is standing — which is why the pot below is summed
+    /// over autos regardless of `includeTrucks`.
+    private static let corridorPotRef = 1_113_256.0
+
+    private static func addCorridors(into weights: inout [String: Double],
+                                     for route: Route) {
+        guard let lat = route.currentLat, let lon = route.currentLon else { return }
+        let mine = PlateCorridors.roads(nearLat: lat, lon: lon)
+        guard !mine.isEmpty else { return }
+        let here = project(lat, lon)
+
+        var pot = 0.0
+        var dist: [String: Double] = [:]
+        for (code, origin) in origins {
+            let p = project(origin.lat, origin.lon)
+            let d = hypot(p.x - here.x, p.y - here.y)
+            dist[code] = d
+            pot += pow(Double(origin.autos), fleetExponent) * origin.reach
+                * exp(-d / decayScale)
+        }
+        let dilution = min(1.0, corridorPotRef / pot)
+
+        for (code, origin) in origins {
+            guard let roads = PlateCorridors.serves[code],
+                  !roads.isDisjoint(with: mine),
+                  let d = dist[code] else { continue }
+            // The ramp: no through-traffic credit inside 300 km — for a state you
+            // are nearly inside, "through-traffic" double-counts the local term —
+            // rising to full past 600.
+            let ramp = min(1, max(0, (d - 300) / 300))
+            guard ramp > 0 else { continue }
+            weights[code, default: 0] *=
+                1 + corridorCoupling * dilution * ramp * exp(-d / decayScale)
+        }
+    }
+
+    // MARK: - The long-haul tail
+
+    /// Share of what you see that is ties rather than proximity — movers who kept
+    /// their plates, and the visiting traffic the same ties generate.
+    ///
+    /// Six per cent, set by sweeping and looking rather than derived, like
+    /// `decayScale`, and honestly flagged like it. The constraint that chose it: at
+    /// 0.06 no region moves more than one band from almost any observer, and the
+    /// moves it does make are the ones street reality agrees with — New York
+    /// commoner in Los Angeles and Miami, North Dakota commoner in Minneapolis,
+    /// Washington a shade commoner everywhere, the Dakotas still legendary from
+    /// New Jersey. At 0.10 California started climbing to band 6 from Newark,
+    /// which is past what any car park there looks like.
+    ///
+    /// A *mixture*, not an additive bonus — both components are normalised before
+    /// blending. This is what earlier drafts got wrong: an additive tail is
+    /// invisible where local traffic is heavy and overwhelming where it is thin, so
+    /// no single constant worked in both New Jersey and Montana. As a share of the
+    /// observer's total traffic it means the same thing everywhere.
+    private static let migrationShare = 0.06
+
+    /// Folds migration ties into the gravity weights, in place.
+    ///
+    /// The observer is where the route actually is: the tracked position when there
+    /// is one, otherwise both endpoints, averaged — a Newark-to-Miami trip sees
+    /// both cities' diasporas. Each point resolves to the nearest region centre; a
+    /// route through Canada resolves to a province, which has no IRS rows and
+    /// contributes nothing, so the model degrades to plain gravity rather than
+    /// borrowing a wrong state's table.
+    private static func blendMigration(into weights: inout [String: Double],
+                                       for route: Route) {
+        var points: [(Double, Double)] = []
+        if let lat = route.currentLat, let lon = route.currentLon {
+            points = [(lat, lon)]
+        } else {
+            points = [(route.oLat, route.oLon)]
+            if let dLat = route.dLat, let dLon = route.dLon { points.append((dLat, dLon)) }
+        }
+        var observers = Set<String>()
+        for (lat, lon) in points {
+            let here = project(lat, lon)
+            if let nearest = origins.min(by: {
+                let a = project($0.value.lat, $0.value.lon)
+                let b = project($1.value.lat, $1.value.lon)
+                return hypot(a.x - here.x, a.y - here.y) < hypot(b.x - here.x, b.y - here.y)
+            }) { observers.insert(nearest.key) }
+        }
+        guard !observers.isEmpty else { return }
+
+        var ties: [String: Double] = [:]
+        for code in weights.keys {
+            var t = 0.0
+            for observer in observers {
+                t += PlateMigration.ties(of: code, near: observer)
+                t += PlateMigration.snowbirdTies(of: code, near: observer,
+                                                winter: route.isWinter)
+            }
+            ties[code] = t / Double(observers.count)
+        }
+
+        let localSum = weights.values.reduce(0, +)
+        let tieSum = ties.values.reduce(0, +)
+        guard localSum > 0, tieSum > 0 else { return }
+        for (code, w) in weights {
+            weights[code] = (1 - migrationShare) * w / localSum
+                + migrationShare * (ties[code] ?? 0) / tieSum
+        }
+    }
+
+    // MARK: - The home-state floor
+
+    /// The band the state you are standing in can never be rarer than.
+    static let homeFloorBand = 2
+
+    /// Whatever the model says, the plates of the state you are driving through are
+    /// all around you — registered there, garaged there, parked on every street.
+    /// That is the one fact about plate frequency that needs no model, and it is
+    /// exactly the fact position-based gravity gets wrong from inside a small state:
+    /// the corridor term hands far competitors a boost the home state cannot earn
+    /// (nothing is "through-traffic" in its own state), so Wyoming scored *rare* in
+    /// Cheyenne while every parking lot there says otherwise.
+    ///
+    /// Containment, not nearest centre — Cheyenne's nearest population centre is
+    /// Colorado's, and a floor keyed on it would crown the wrong state in the exact
+    /// city that motivated it. Live fixes only: a parked route scores the whole
+    /// line, and "the state you are standing in" is only a fact while you are
+    /// standing in it. The fix is quantised to a quarter degree and the outline is
+    /// the 20m one, so within a few kilometres of a border the floor can land on
+    /// the neighbour — whose plate is genuinely common where you stand — and a miss
+    /// (offshore, abroad, a dropped coastal sliver) simply means no floor, which is
+    /// the behaviour this replaces. Canadian provinces get no floor yet: the
+    /// containment table only covers the US, and near the border the local term
+    /// already keeps the home province common.
+    ///
+    /// Deliberately applied after mythic promotion and allowed to beat it. The
+    /// mythic six are mythic because nobody can drive to them — but a player in
+    /// Anchorage *lives* there, and a tier meaning "unreachable" cannot honestly
+    /// include the plate on their own car.
+    private static func floorHome(_ bands: inout [String: Int], for route: Route) {
+        guard let lat = route.currentLat, let lon = route.currentLon,
+              let home = USMap.region(atLat: lat, lon: lon),
+              let band = bands[home], band > homeFloorBand else { return }
+        bands[home] = homeFloorBand
     }
 
     // MARK: - Mythic
@@ -383,7 +643,7 @@ enum PlateRarity {
     }
 
     /// Which state is currently wearing the roaming slot, for anything that needs to
-    /// say so out loud rather than just colour it.
+    /// say so out loud rather than just color it.
     static func roamingMythic(on route: Route?) -> String? {
         let table = self.table(on: route)
         return table.first { $0.value == mythicValue && stateCodes.contains($0.key)
@@ -472,17 +732,38 @@ enum PlateRarity {
 
         let a = project(route.oLat, route.oLon)
 
+        // The road, if the trip has one. Nearest approach over every leg, which for a
+        // straight two-point path is exactly the old calculation — so a route whose
+        // directions have not been fetched, or for which there are none, behaves
+        // exactly as before rather than differently and silently.
+        if route.path.count >= 2 {
+            var best = Double.greatestFiniteMagnitude
+            var previous = project(route.path[0].lat, route.path[0].lon)
+            for point in route.path.dropFirst() {
+                let next = project(point.lat, point.lon)
+                best = min(best, distance(from: p, toSegment: previous, next))
+                previous = next
+            }
+            return best
+        }
+
         guard let dLat = route.dLat, let dLon = route.dLon else {
             return hypot(p.x - a.x, p.y - a.y)
         }
 
-        let b = project(dLat, dLon)
+        return distance(from: p, toSegment: a, project(dLat, dLon))
+    }
+
+    /// Nearest approach from a point to one leg, in kilometres.
+    ///
+    /// Clamped to the leg, so a region beyond either end measures from that end
+    /// rather than from an imaginary extension of the road.
+    private static func distance(from p: (x: Double, y: Double),
+                                 toSegment a: (x: Double, y: Double),
+                                 _ b: (x: Double, y: Double)) -> Double {
         let vx = b.x - a.x, vy = b.y - a.y
         let lengthSquared = vx * vx + vy * vy
         guard lengthSquared > 0 else { return hypot(p.x - a.x, p.y - a.y) }
-
-        // Clamped so a region beyond either end measures from that end, not from
-        // an imaginary extension of the road.
         let t = min(max(((p.x - a.x) * vx + (p.y - a.y) * vy) / lengthSquared, 0), 1)
         return hypot(p.x - (a.x + t * vx), p.y - (a.y + t * vy))
     }

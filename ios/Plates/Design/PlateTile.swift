@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// The core component. 5:3 plate proportions, an inner light ring standing in for
-/// the embossed edge, and — when several people are playing — a colour bar along
+/// the embossed edge, and — when several people are playing — a color bar along
 /// the bottom showing who called it. The bar rather than a full tint, so the tile
 /// still reads as a plate.
 struct PlateTile: View {
@@ -31,13 +31,13 @@ struct PlateTile: View {
         RarityTier.forRarity(rarity ?? plate.points)
     }
 
-    /// Spotting a plate reveals its own colours. Unfound stays paper, so the
+    /// Spotting a plate reveals its own colors. Unfound stays paper, so the
     /// found/unfound read is still instant even once every state is styled.
     private var style: PlateStyle? {
         isFound ? (PlateStyle.style(for: plate.code) ?? .fallback) : nil
     }
 
-    /// The colour the plate itself paints its serial, once found. Anything drawn
+    /// The color the plate itself paints its serial, once found. Anything drawn
     /// over the artwork — the repeat count as much as the code — reads as part
     /// of the plate, so it all takes the same ink.
     private var ink: Color? {
@@ -65,7 +65,7 @@ struct PlateTile: View {
             if let style {
                 PlateLettering(code: plate.code, style: style, name: plate.short)
             } else {
-                // Unfound stays paper: the plate's own colours are the reward for
+                // Unfound stays paper: the plate's own colors are the reward for
                 // spotting it, so they cannot leak into the not-yet state.
                 VStack(spacing: 2) {
                     Text(plate.code)
@@ -85,7 +85,7 @@ struct PlateTile: View {
 
             // Progress pip — top right. Empty ring until you spot it, then filled.
             //
-            // The *empty* one is deliberately neutral. It was once tier-coloured on
+            // The *empty* one is deliberately neutral. It was once tier-colored on
             // both states, which told you what a plate was worth before you had any
             // right to know: the grid pre-announced the good ones and the reveal on
             // the find card had nothing left to reveal.
@@ -111,10 +111,10 @@ struct PlateTile: View {
             }
 
             // Who spotted it: a chip in the top-left, opposite the rarity pip.
-            // Tried a bottom bar and a coloured border first — the bar sat exactly
+            // Tried a bottom bar and a colored border first — the bar sat exactly
             // where every motif's horizon is, and the border read as "selected"
             // rather than "Mia got this one". The chip also shows *who*, not just
-            // a colour, so it works without the player strip in view.
+            // a color, so it works without the player strip in view.
             // Several claimants get the overlapping stack instead of one chip — a
             // shared-claims party turns "who got this" into "who all got this", and
             // three chips in a row would not fit a tile this size anyway. One
@@ -181,17 +181,17 @@ struct PlateTile: View {
 /// The mark in the tile's top corner: an empty ring until you spot the plate, then a
 /// lit bead in the tier it was banked at.
 ///
-/// It was a flat disc of tier colour, and at seven points across that is a sticker —
+/// It was a flat disc of tier color, and at seven points across that is a sticker —
 /// legible, and completely uninteresting. Three things now separate it from the
 /// artwork it sits on and from the tiers below it: an off-centre highlight so the
-/// light has a direction, a bloom of the tier's own colour past the edge, and, for
+/// light has a direction, a bloom of the tier's own color past the edge, and, for
 /// legendary alone, a second wider bloom on top of the first. Compounding two shadows
 /// rather than widening one keeps a hot core with a soft falloff, which is what
 /// actually reads as *lit* — a single large-radius shadow just makes a bigger,
 /// flatter smudge.
 ///
 /// The empty state is untouched, and deliberately. It is neutral because a
-/// tier-coloured ring would pre-announce which unfound plates are worth having, and
+/// tier-colored ring would pre-announce which unfound plates are worth having, and
 /// nothing about making the found ones brighter changes that.
 private struct ProgressDot: View {
     let tier: RarityTier
@@ -204,7 +204,7 @@ private struct ProgressDot: View {
     /// Mythic used to be excluded from this and from the outer glow below, both of
     /// which tested `== .legendary`. The crimson dot came out *smaller and dimmer*
     /// than the gold one under it, so the rarest thing on the grid was the quietest
-    /// mark on it — and since mythic is a different colour rather than one more step
+    /// mark on it — and since mythic is a different color rather than one more step
     /// up the ramp, size and glow are the only cues left saying it outranks gold.
     private var size: CGFloat {
         guard isFound else { return 7 }

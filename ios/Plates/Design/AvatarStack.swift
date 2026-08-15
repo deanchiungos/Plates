@@ -8,9 +8,9 @@ import SwiftUI
 /// them says "a group" at a glance and costs about half the space — which is why
 /// every app that has to show a team in a table row ends up here.
 ///
-/// The ring is what makes it work. Two circles in similar colours, or two dark
+/// The ring is what makes it work. Two circles in similar colors, or two dark
 /// avatars on a dark row, merge into one blob without a stroke between them; the
-/// ring is drawn in the *background* colour so it reads as a gap rather than as a
+/// ring is drawn in the *background* color so it reads as a gap rather than as a
 /// border, and each circle stays a circle whatever it is sitting on.
 struct AvatarStack: View {
     let players: [Player]
@@ -19,7 +19,7 @@ struct AvatarStack: View {
     /// becomes "+N" — so a limit of 4 shows three faces and a count.
     var limit: Int = 4
     var size: CGFloat = 24
-    /// The colour the ring is cut out of. Whatever the stack is sitting on.
+    /// The color the ring is cut out of. Whatever the stack is sitting on.
     var background: Color = Theme.surface
 
     private var shown: [Player] {

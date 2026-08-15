@@ -11,6 +11,8 @@ struct TripsScreen: View {
     @Query(sort: \Player.joinedAt) private var players: [Player]
     @AppStorage(TripSelection.key) private var currentTripID = ""
 
+    @Environment(TourGuide.self) private var tour
+
     @State private var editing: Trip?
     @State private var creating = false
     @State private var showArchived = false
@@ -64,6 +66,8 @@ struct TripsScreen: View {
                         Button("New trip") { creating = true }
                             .buttonStyle(.borderedProminent)
                             .tint(Theme.route)
+                            .tourAnchor(.tripsNew)
+                            .tourStop(.tripsNew)
                     }
                 } else {
                     list
@@ -72,6 +76,8 @@ struct TripsScreen: View {
             .navigationTitle("Trips")
             .navigationBarTitleDisplayMode(.large)
             .onAppear(perform: offerTripTips)
+            .onAppear { tour.offer(.trips, stops: tourStops) }
+            .onDisappear { tour.left(.trips) }
             // A trip finished from the record sheet lands back here with the
             // Finished section newly populated, which is the exact moment
             // `doneTrip` is worth saying.
@@ -160,10 +166,32 @@ struct TripsScreen: View {
             .doneTrip: "Finished trips file themselves here. Open one for its story, or to add its plates to a book.",
             .listLength: "That's a lot of trips going at once. Mark the old ones done and they file themselves away."
         ])
+        .tourLayer(.trips, [
+            .tripsRow: "Every drive you have going. Tap one to play it, or swipe it left to pin it or mark it done.",
+            .tripsNew: "A trip is one journey: it has a route, and it ends. The route is what decides how rare each plate is, so a Florida plate is worth more in Oregon.",
+            .tripsFinished: "Finished trips file themselves down here. Open one for its story, or to add everything it collected into a book."
+        ])
+    }
+
+    /// Which stops this screen can actually host right now.
+    ///
+    /// In screen order rather than declaration order, because the tour scrolls between
+    /// them: the running list is at the top, the button to add to it sits under the
+    /// list, and Finished is below both. A route that reads top to bottom is a route
+    /// that never scrolls backwards, and a tour that scrolls backwards looks broken
+    /// even when it is pointing at exactly the right thing.
+    private var tourStops: [Tour.Stop] {
+        guard !trips.isEmpty else { return [.tripsNew] }
+        var route: [Tour.Stop] = []
+        if !trips.running.isEmpty { route.append(.tripsRow) }
+        route.append(.tripsNew)
+        if !trips.finished.isEmpty { route.append(.tripsFinished) }
+        return route
     }
 
     private var list: some View {
         ScrollView {
+          ScrollViewReader { scroller in
             VStack(spacing: 10) {
                 let rows = trips.running.pinnedFirst
                 ForEach(rows) { trip in
@@ -192,7 +220,11 @@ struct TripsScreen: View {
                     // rather than about a row, so it hangs off the head of the list
                     // and the copy names the list in its first clause.
                     .coachAnchor(.listLength, active: trip.id == rows.first?.id)
+                    .tourAnchor(.tripsRow,
+                                active: trip.id == rows.first?.id,
+                                prefersAbove: true)
                 }
+                .tourStop(.tripsRow)
 
                 Button { creating = true } label: {
                     HStack(spacing: 8) {
@@ -211,6 +243,8 @@ struct TripsScreen: View {
                     )
                 }
                 .padding(.top, 2)
+                .tourAnchor(.tripsNew, prefersAbove: true)
+                .tourStop(.tripsNew)
 
                 // One gesture now, not two. The sentence that used to follow
                 // explained what a trip is *for*, which belongs on the empty screen
@@ -242,6 +276,8 @@ struct TripsScreen: View {
                                currentTripID: current?.id)
             }
             .padding(Theme.screenPadding)
+            .tourScrolling(scroller)
+          }
         }
     }
 
@@ -261,6 +297,7 @@ struct TripsScreen: View {
                               count: done.count,
                               isOpen: showFinished) { showFinished.toggle() }
                     .coachAnchor(.doneTrip, prefersAbove: true)
+                    .tourAnchor(.tripsFinished, prefersAbove: true)
 
                 if showFinished {
                     ForEach(done) { trip in
@@ -282,6 +319,7 @@ struct TripsScreen: View {
                 }
             }
             .padding(.top, 18)
+            .tourStop(.tripsFinished)
         }
     }
 
@@ -664,7 +702,7 @@ struct TripsScreen: View {
 
 // MARK: - Row
 
-private struct TripRow: View {
+struct TripRow: View {
     let trip: Trip
     let isCurrent: Bool
     let onSelect: () -> Void
@@ -672,6 +710,8 @@ private struct TripRow: View {
     /// Everyone who played this trip, for the party badge. Empty when it was not
     /// one, which is what hides the badge.
     var party: [Player] = []
+
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
         HStack(spacing: 10) {
@@ -686,89 +726,34 @@ private struct TripRow: View {
                 .padding(.leading, -14)
                 .padding(.trailing, 2)
 
-            // A tap gesture and not a `Button`, which is what this was until a swipe
-            // on a finished trip was found to open its record as well as the row's
-            // actions — and to open it again on the way back. A button this wide
-            // never sees the finger leave it, so it never cancels its own press and
-            // fires on touch-up at the end of the swipe. A `TapGesture` cancels the
-            // moment the touch travels. See `SwipeRow`.
+            // One line of four columns, until there is not room for four columns.
             //
-            // The traits are restored by hand below, because what VoiceOver should
-            // hear has not changed: one element, named, that behaves like a button.
-            Group {
-                VStack(alignment: .leading, spacing: 3) {
-                    HStack(spacing: 6) {
-                        Text(trip.name)
-                            .font(.plates(size: 16, weight: .semibold))
-                            .foregroundStyle(isCurrent ? Theme.route : Theme.ink)
-                            .lineLimit(1)
-
-                        if isCurrent {
-                            Image(systemName: "car.fill")
-                                .font(.system(size: 11, weight: .semibold))
-                                .foregroundStyle(Theme.route)
-                                .accessibilityLabel("Currently playing")
-                        }
-
-                        if !party.isEmpty {
-                            // Its own colour rather than the route blue or the pin's
-                            // paint, both of which already mean something here.
-                            Image(systemName: "person.2.fill")
-                                .font(.system(size: 10, weight: .semibold))
-                                .foregroundStyle(Theme.found)
-                                .accessibilityLabel("Played as a party")
-                        }
-
-                        if trip.pinnedAt != nil {
-                            Image(systemName: "pin.fill")
-                                .font(.system(size: 10, weight: .semibold))
-                                .foregroundStyle(Theme.paint)
-                                .accessibilityLabel("Pinned")
-                        }
+            // The row holds a name, a party, a score and a button, and three of those
+            // are fixed width while only the name can yield — so as the text grows the
+            // name is the only thing that pays, and it pays all of it. At
+            // accessibility sizes on a narrow phone it was rendering as a bare "…":
+            // a list of trips where no trip has a name. Nothing overlapped, which is
+            // what made it easy to miss.
+            //
+            // Above that threshold the same four pieces stack instead. The name gets
+            // the full width of the card, and the party, score and button take a line
+            // of their own underneath. See `LayoutStress`, which is what found this.
+            if typeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 12) {
+                    details
+                    HStack(spacing: 10) {
+                        avatars
+                        Spacer(minLength: 0)
+                        score
+                        editButton
                     }
-
-                    if let route = trip.routeLabel {
-                        Text(route)
-                            .font(.plates(size: 12.5))
-                            .foregroundStyle(Theme.route.opacity(0.85))
-                            .lineLimit(1)
-                    }
-
-                    Text(dateLabel)
-                        .font(.plates(size: 11.5))
-                        .foregroundStyle(Theme.inkMuted)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .contentShape(Rectangle())
+            } else {
+                details
+                avatars
+                score
+                editButton
             }
-            .onTapGesture(perform: onSelect)
-            .accessibilityElement(children: .combine)
-            .accessibilityAddTraits(.isButton)
-            .accessibilityAction(.default, onSelect)
-
-            if !party.isEmpty {
-                AvatarStack(players: party, limit: 3, size: 21)
-            }
-
-            VStack(alignment: .trailing, spacing: 0) {
-                Text("\(trip.statesFound)")
-                    .font(Theme.PlateFont.condensed(24))
-                    .monospacedDigit()
-                    .foregroundStyle(Theme.ink)
-                Text("of \(Plate.stateTotal)")
-                    .font(.plates(size: 10.5))
-                    .foregroundStyle(Theme.inkMuted)
-            }
-
-            Button(action: onEdit) {
-                Image(systemName: "slider.horizontal.3")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(Theme.inkMuted)
-                    .frame(width: 34, height: 34)
-                    .background(Circle().fill(Theme.ground))
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Edit \(trip.name)")
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 12)
@@ -793,6 +778,118 @@ private struct TripRow: View {
         )
         .accessibilityElement(children: .contain)
         .accessibilityLabel(trip.isActive ? trip.name : "\(trip.name), finished")
+    }
+
+    // MARK: - The pieces
+
+    private var details: some View {
+            // A tap gesture and not a `Button`, which is what this was until a swipe
+            // on a finished trip was found to open its record as well as the row's
+            // actions — and to open it again on the way back. A button this wide
+            // never sees the finger leave it, so it never cancels its own press and
+            // fires on touch-up at the end of the swipe. A `TapGesture` cancels the
+            // moment the touch travels. See `SwipeRow`.
+            //
+            // The traits are restored by hand below, because what VoiceOver should
+            // hear has not changed: one element, named, that behaves like a button.
+            Group {
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack(spacing: 6) {
+                        // Wins the line against the badges beside it. Without the
+                        // priority the three icons are fixed-size and the name is the
+                        // only thing that can yield, so at accessibility text sizes a
+                        // trip with all three badges rendered its name as a bare "…".
+                        // The badges are worth less than knowing which trip this is,
+                        // and they truncate to nothing gracefully because they are
+                        // never the only copy of what they say.
+                        Text(trip.name)
+                            .font(.plates(size: 16, weight: .semibold))
+                            .foregroundStyle(isCurrent ? Theme.route : Theme.ink)
+                            .lineLimit(1)
+                            .layoutPriority(1)
+
+                        if isCurrent {
+                            Image(systemName: "car.fill")
+                                .font(.system(size: 11, weight: .semibold))
+                                .foregroundStyle(Theme.route)
+                                .accessibilityLabel("Currently playing")
+                        }
+
+                        if !party.isEmpty {
+                            // Its own color rather than the route blue or the pin's
+                            // paint, both of which already mean something here.
+                            Image(systemName: "person.2.fill")
+                                .font(.system(size: 10, weight: .semibold))
+                                .foregroundStyle(Theme.found)
+                                .accessibilityLabel("Played as a party")
+                        }
+
+                        if trip.pinnedAt != nil {
+                            Image(systemName: "pin.fill")
+                                .font(.system(size: 10, weight: .semibold))
+                                .foregroundStyle(Theme.paint)
+                                .accessibilityLabel("Pinned")
+                        }
+                    }
+
+                    if let route = trip.routeLabel {
+                        Text(route)
+                            .font(.plates(size: 12.5))
+                            .foregroundStyle(Theme.route.opacity(0.85))
+                            .lineLimit(1)
+                    }
+
+                    // One line, like the two above it. It was the only label in the
+                    // row without a limit, so at large text sizes "Aug 15 · day 1"
+                    // wrapped and made the card half again as tall as its neighbours
+                    // for no information at all.
+                    Text(dateLabel)
+                        .font(.plates(size: 11.5))
+                        .foregroundStyle(Theme.inkMuted)
+                        .lineLimit(1)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .contentShape(Rectangle())
+            }
+            .onTapGesture(perform: onSelect)
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAction(.default, onSelect)
+    }
+
+    /// Who was in the car. Capped at three circles however many people played, so
+    /// this is a fixed width and cannot be what squeezes the name.
+    @ViewBuilder
+    private var avatars: some View {
+        if !party.isEmpty {
+            AvatarStack(players: party, limit: 3, size: 21)
+        }
+    }
+
+    private var score: some View {
+        VStack(alignment: .trailing, spacing: 0) {
+            Text("\(trip.statesFound)")
+                .font(Theme.PlateFont.condensed(24))
+                .monospacedDigit()
+                .foregroundStyle(Theme.ink)
+            Text("of \(Plate.stateTotal)")
+                .font(.plates(size: 10.5))
+                .foregroundStyle(Theme.inkMuted)
+                .lineLimit(1)
+        }
+        .fixedSize(horizontal: true, vertical: false)
+    }
+
+    private var editButton: some View {
+        Button(action: onEdit) {
+            Image(systemName: "slider.horizontal.3")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Theme.inkMuted)
+                .frame(width: 34, height: 34)
+                .background(Circle().fill(Theme.ground))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Edit \(trip.name)")
     }
 
     /// The date the trip ran. It used to end in "· finished", which the green fold
@@ -1400,7 +1497,7 @@ struct TripEditor: View {
             // still unable to take a plate, which is a state with no name.
             if let onArchive, trip?.isActive != false {
                 Button(action: onArchive) {
-                    // Not tinted red. Archiving loses nothing, and colouring it like
+                    // Not tinted red. Archiving loses nothing, and coloring it like
                     // the two below would imply it does. Separate from "done"
                     // because they are different intentions: this one is "out of my
                     // way for now", with no claim that the trip is over.

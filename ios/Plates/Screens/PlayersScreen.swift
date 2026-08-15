@@ -161,7 +161,7 @@ struct IdentityPrompt: View {
     }
 }
 
-/// Editing one player: a name and a colour.
+/// Editing one player: a name and a color.
 ///
 /// This file used to hold a roster too — a list of everyone on the phone, an "add
 /// player" button, and a remove flow — and that is what the party replaced. The
@@ -230,7 +230,7 @@ struct PlayerEditor: View {
                             .foregroundStyle(Theme.inkMuted)
 
                         // Scrolls rather than wrapping. A grid of twenty emoji is a
-                        // wall to choose from and pushes the colour row off the
+                        // wall to choose from and pushes the color row off the
                         // sheet; one row you flick through reads as a choice.
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 8) {
@@ -261,7 +261,7 @@ struct PlayerEditor: View {
                                                                   lineWidth: colorIndex == i ? 2.5 : 0)
                                         )
                                         .overlay(
-                                            // already someone else's colour
+                                            // already someone else's color
                                             Image(systemName: "person.fill")
                                                 .font(.system(size: 12, weight: .bold))
                                                 .foregroundStyle(Theme.ink.opacity(0.45))
@@ -380,6 +380,10 @@ struct PlayerEditor: View {
             saved = fresh
         }
         try? context.save()
+        // Everyone in the car, right away. A rename used to sit on this phone until
+        // the next connection handshake, which in a running party is never — so the
+        // scoreboard beside you kept calling you by a name you had just changed.
+        PartySession.shared?.announceMe(saved)
         onSaved?(saved)
         dismiss()
     }

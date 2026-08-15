@@ -64,7 +64,7 @@ struct WelcomeCard: View {
     ///
     /// Reusing `PlateTile` rather than drawing something prettier for this screen is
     /// the point: the first plate somebody sees is exactly the object they will be
-    /// tapping a minute later, in the same shape and the same colours. An onboarding
+    /// tapping a minute later, in the same shape and the same colors. An onboarding
     /// illustration that does not appear anywhere else in the app teaches nothing and
     /// has to be maintained forever.
     ///

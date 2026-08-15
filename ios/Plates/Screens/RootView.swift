@@ -22,12 +22,12 @@ struct RootView: View {
             // `-lookup "palm tree"` opens the lookup with the query already
             // typed. The screen is three taps deep and the results depend on
             // text input, neither of which a launch argument can otherwise reach.
-            NavigationStack {
+            harness(NavigationStack {
                 PlateLookupScreen(initialQuery: Self.launchQuery)
-            }
+            })
         } else if ProcessInfo.processInfo.arguments.contains("-history") {
             // Two taps deep, behind More. Same reason as `-lookup`.
-            NavigationStack { HistoricalPlatesScreen() }
+            harness(NavigationStack { HistoricalPlatesScreen() })
         } else if ProcessInfo.processInfo.arguments.contains("-iconLab") {
             IconLab()
         } else if ProcessInfo.processInfo.arguments.contains("-fontLab") {
@@ -48,7 +48,28 @@ struct RootView: View {
     /// `CoachLayer` inside each screen, because a mark has to move with the row or
     /// tile it points at — see the note on `CoachLayer`.
     @State private var coach = CoachPresenter()
+    /// The guided walk, one tab at a time. Lives beside the coach rather than inside
+    /// it because they are opposites that happen to share a subject — see `Tour`.
+    @State private var tour = TourGuide()
     private let deepLink = DeepLink.shared
+
+    #if DEBUG
+    /// The environment a screen needs, for the debug branches that render one directly
+    /// instead of through `shell`.
+    ///
+    /// These used to be plain screens with no dependencies, so the branches above could
+    /// hand back a bare `NavigationStack`. They are not any more: a screen that hosts a
+    /// tour reads the guide and the popup host out of the environment, and a missing
+    /// `@Environment` of an observable type is a crash on the first render rather than a
+    /// nil. So the flags get the same furniture the app does.
+    private func harness(_ screen: some View) -> some View {
+        screen
+            .environment(popup)
+            .environment(router)
+            .environment(coach)
+            .environment(tour)
+    }
+    #endif
 
     @State private var welcoming = false
     @State private var namingAfterWelcome = false
@@ -119,6 +140,7 @@ struct RootView: View {
         .environment(popup)
         .environment(router)
         .environment(coach)
+        .environment(tour)
         // Full-screen rather than a sheet: a card you can swipe away by accident
         // before reading the one sentence it exists to show is not a welcome, and a
         // sheet leaves the tab bar visible underneath, which gives away the whole
@@ -131,11 +153,30 @@ struct RootView: View {
             IdentityPrompt(saveLabel: "Continue")
         }
         .onAppear { if shouldWelcome { welcoming = true } }
+        // No tour underneath the welcome card, or the name sheet that follows it. The
+        // card is the app introducing itself and the sheet is it asking who you are;
+        // the tour is the app showing you around. In that order, or they talk over
+        // each other on the one screen where a first impression is made.
+        //
+        // The tour is deferred rather than dropped, and picks itself up the moment
+        // this goes false. See `TourGuide.deferred`.
+        .onChange(of: welcoming || namingAfterWelcome, initial: true) { _, busy in
+            tour.isSuspended = busy
+        }
         // "Replay the tour", from Settings. Watched rather than called, because the
         // card belongs to the root and the button is four levels down a tab.
         .onChange(of: coach.replayRequest) { _, _ in
+            tour.replay()
             router.tab = RootView.gameTab
             welcoming = true
+        }
+        // The clean slate at the end of the last tab's tour. Each tour puts its own
+        // screen back where it found it; this is the one extra beat the whole
+        // sequence gets, and only once every tab has actually been walked through.
+        .onChange(of: tour.finishedEverything) { _, done in
+            guard done else { return }
+            tour.clearFinishedFlag()
+            withAnimation(.snappy(duration: 0.35)) { router.tab = RootView.gameTab }
         }
         // The widget's one tap. `plates://collect` puts the grid up, which is the
         // whole promise of tapping a progress bar on a home screen — anything else

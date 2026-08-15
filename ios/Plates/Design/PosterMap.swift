@@ -99,7 +99,7 @@ struct PosterMapStrip: View {
         )
     }
 
-    /// White casing under the colour, the trick every map app uses so a line stays
+    /// White casing under the color, the trick every map app uses so a line stays
     /// readable where it crosses a motorway or a coast.
     @ViewBuilder
     private var road: some View {

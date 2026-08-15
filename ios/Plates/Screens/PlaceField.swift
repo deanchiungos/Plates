@@ -139,7 +139,7 @@ struct PlaceField: View {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                     // Filled with the paper rather than the card white. A white box
                     // on cream reads as somewhere to type; the same box in the
-                    // background colour reads as a label, which is what it now is.
+                    // background color reads as a label, which is what it now is.
                     .fill(isLocked ? Theme.unfound.opacity(0.55) : Theme.surface)
                     .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
                         .strokeBorder(focused ? Theme.route.opacity(0.5) : Theme.line,

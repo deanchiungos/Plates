@@ -182,6 +182,7 @@ extension View {
 struct CoachLayer<Content: View>: View {
     @Environment(CoachPresenter.self) private var coach
     @Environment(PopupHost.self) private var popup
+    @Environment(TourGuide.self) private var tour
 
     /// The words for each tip, supplied by the screen that owns them. Copy lives
     /// next to the trigger that fires it rather than in a table far away, so
@@ -207,6 +208,12 @@ struct CoachLayer<Content: View>: View {
                    // A balloon under a popup's scrim is furniture. It stands down
                    // rather than being dismissed, and returns when the popup goes.
                    popup.item == nil,
+                   // And the same under a tour's, which covers the sliver between the
+                   // two settle delays where a mark can be promoted a fraction before
+                   // a tour arms over the top of it. Read through the guide rather
+                   // than `TourGuide.isRunning` because a static is not observable,
+                   // and this has to redraw when it changes.
+                   tour.screen == nil,
                    onScreen(proxy[target.anchor], in: proxy.size) {
                     balloon(tip, words,
                             target: proxy[target.anchor],

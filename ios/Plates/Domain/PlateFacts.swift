@@ -8,22 +8,52 @@ import Foundation
 /// file is only the reader.
 ///
 /// **To add or change a fact, edit `Plates/Resources/PlateFacts.json`.** Keys are
-/// `Plate.code`; each value is an array of sentences. Adding, deleting and
+/// `Plate.code`; each value is an array of `{ text, source }`. Adding, deleting and
 /// reordering are all safe — `FactBook` tracks what has been read by content, not
 /// by position.
 ///
-/// Editorial conventions, for anything added later: one sentence, at most about 120
-/// characters, aimed at a kid reading it aloud in a back seat. Dry and specific, no
-/// exclamation marks, no claim that cannot be checked. Not only about plates —
-/// slogans run out fast, so roads, bridges, car history and landmarks all count, as
-/// long as the fact belongs to that region.
+/// THE EDITORIAL BAR, and it is a bar rather than a style note. A fact earns its
+/// place only if it changes what the reader *notices from now on*. Learning that
+/// California's plates are stamped by inmates at Folsom rewrites an object seen a
+/// hundred times a day; learning that Alabama's first digit is the county rank by
+/// 1941 population hands over a decoder usable at the next red light. Both stick.
+///
+/// What does not: a thing exists, it is large or old, here is the year it opened.
+/// An earlier version of this comment invited "roads, bridges, car history and
+/// landmarks", and the corpus duly filled with bridge opening dates until 59% of it
+/// was not about plates and only 6% was worth reading aloud. Subject matter was
+/// never the problem — anything about the region qualifies — so the invitation is
+/// withdrawn and replaced with the test above.
+///
+/// Mechanically: one sentence, at most 120 characters, dry and specific, no
+/// exclamation marks, aimed at a kid reading it aloud in a back seat. Every fact
+/// carries a `source` it was actually checked against; `tools/facts.py check`
+/// enforces the length and refuses an import that drops one.
 ///
 /// `FactBook` decides which one you actually see, and remembers the ones already read.
 enum PlateFacts {
 
+    /// One fact and where it was checked. The source is never shown to a reader —
+    /// it exists so a fact someone disputes can be re-checked instead of argued
+    /// about, and so a bad one can be traced to whatever produced it.
+    /// `tools/facts.py` refuses to import a fact without a source.
+    private struct Entry: Decodable {
+        let text: String
+        let source: String
+    }
+
+    private static let entries: [String: [Entry]] = load()
+
     /// Keyed by `Plate.code`. Empty only if the bundled JSON is missing or broken,
     /// which in a debug build stops the app instead.
-    static let byCode: [String: [String]] = load()
+    static let byCode: [String: [String]] = entries.mapValues { $0.map(\.text) }
+
+    /// Where a fact was checked, keyed by the fact's own words. Nothing in the UI
+    /// reads this yet; it is here so provenance travels with the app rather than
+    /// living in a research file that silently drifts out of step.
+    static let sourceByFact: [String: String] = Dictionary(
+        entries.values.flatMap { $0 }.map { ($0.text, $0.source) },
+        uniquingKeysWith: { first, _ in first })
 
     static func facts(for code: String) -> [String] { byCode[code] ?? [] }
 
@@ -60,7 +90,7 @@ enum PlateFacts {
     ///
     /// Release never crashes either way: a broken resource must not take down a
     /// shipped app over what is, in the end, decoration.
-    private static func load() -> [String: [String]] {
+    private static func load() -> [String: [Entry]] {
         guard let url = Bundle.main.url(forResource: "PlateFacts", withExtension: "json") else {
             #if DEBUG
             print("[PlateFacts] PlateFacts.json is not in the bundle — no trivia will "
@@ -71,7 +101,7 @@ enum PlateFacts {
 
         do {
             let data = try Data(contentsOf: url)
-            let decoded = try JSONDecoder().decode([String: [String]].self, from: data)
+            let decoded = try JSONDecoder().decode([String: [Entry]].self, from: data)
             #if DEBUG
             audit(decoded)
             #endif
@@ -89,7 +119,7 @@ enum PlateFacts {
     /// Debug-only sanity check on hand-edited content. Complains in the console
     /// rather than crashing: a region briefly left empty mid-edit should not stop
     /// you running the app.
-    private static func audit(_ facts: [String: [String]]) {
+    private static func audit(_ facts: [String: [Entry]]) {
         let known = Set(Plate.all.map(\.code))
 
         for code in known.subtracting(facts.keys).sorted() {
@@ -102,11 +132,11 @@ enum PlateFacts {
             if lines.isEmpty {
                 print("[PlateFacts] \(code) has an empty list")
             }
-            if Set(lines).count != lines.count {
+            if Set(lines.map(\.text)).count != lines.count {
                 print("[PlateFacts] \(code) repeats a fact")
             }
-            for line in lines where line.count > 120 {
-                print("[PlateFacts] \(code) is \(line.count) chars, over the 120 guide: \(line)")
+            for line in lines where line.text.count > 120 {
+                print("[PlateFacts] \(code) is \(line.text.count) chars, over the 120 guide: \(line.text)")
             }
         }
     }

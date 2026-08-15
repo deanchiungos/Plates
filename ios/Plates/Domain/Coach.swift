@@ -75,6 +75,16 @@ enum Coach {
         UserDefaults.standard.set(true, forKey: key(tip))
     }
 
+    /// Spend every tip at once, without showing any of them.
+    ///
+    /// The other half of "skip all". Somebody who has just held a button down to stop
+    /// being taught has not asked to be taught in smaller pieces instead, and the
+    /// balloons are the same lesson delivered one control at a time. "Replay the tour"
+    /// hands them all back, which is what makes this safe to be so total.
+    static func markAllSeen() {
+        for tip in Tip.allCases { markSeen(tip) }
+    }
+
     /// Hand every tip back its turn.
     ///
     /// `includingWelcome` is off by default, and that default is the interesting
@@ -170,6 +180,10 @@ final class CoachPresenter {
     /// about state rather than as an event somebody has to fire exactly once.
     func request(_ tip: Coach.Tip, when trigger: Bool = true) {
         guard showing == nil, pending == nil else { return }
+        // A balloon under a tour's scrim is a balloon nobody can read, and it would be
+        // spent on the way past — `promote` marks a tip the moment it appears. The tip
+        // keeps its turn instead, and gets it on a visit when nothing else is talking.
+        guard !TourGuide.isRunning else { return }
         #if DEBUG
         if let forced = Coach.forced {
             guard tip == forced else { return }
@@ -210,6 +224,10 @@ final class CoachPresenter {
     /// literally true rather than true-if-dismissed-politely.
     private func promote(_ tip: Coach.Tip) {
         guard pending == tip, showing == nil else { return }
+        // A tour armed during the settle. Cancelled rather than spent, exactly as
+        // `withdraw` does it: the balloon never appeared, so it has not been ignored,
+        // and its trigger gets another chance on a visit when nothing else is talking.
+        guard !TourGuide.isRunning else { return pending = nil }
         pending = nil
         Coach.markSeen(tip)
         withAnimation(.snappy(duration: 0.24)) { showing = tip }

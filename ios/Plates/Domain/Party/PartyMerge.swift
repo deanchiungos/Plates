@@ -227,8 +227,29 @@ enum PartyMerge {
         guard !events.isEmpty else { return }
         var known = allPlayers(in: context)
 
+        // This device is the last word on who *it* is.
+        //
+        // Without this, applying a roster was last-writer-wins on a field only one
+        // device can be right about. Rename yourself mid-drive and every other phone
+        // still holds your old name; the next snapshot any of them sends — a fresh
+        // party on the same trip is the reliable way to trigger one — writes it back
+        // over you, and the rename you just made undoes itself. It reads as the app
+        // refusing to let you be called what you asked to be called, and doing it
+        // again every time somebody starts a party.
+        //
+        // Ownership rather than a timestamp because `Player` is a `@Model`: a
+        // `renamedAt` field would mean a new CloudKit attribute and the
+        // additive-and-permanent production deploy `PlatesStore` warns about, to
+        // arbitrate a conflict that has an obvious owner. Read from `UserDefaults`
+        // rather than resolved, so this stays free of a fetch.
+        let mine = UserDefaults.standard.string(forKey: DevicePlayer.key)
+
         for event in events {
             if let player = known[event.id] {
+                // Their copy of me is stale by construction — I am the only device
+                // that saw me change it. See `PartySession.announceMe` for how the
+                // rename gets *out*.
+                guard player.id.uuidString != mine else { continue }
                 if player.name != event.name { player.name = event.name }
                 if player.colorIndex != event.colorIndex { player.colorIndex = event.colorIndex }
                 if player.avatar != event.avatar { player.avatar = event.avatar }
@@ -243,29 +264,29 @@ enum PartyMerge {
             outcome.playersAdded += 1
         }
 
-        settleColours(Array(known.values))
+        settleColors(Array(known.values))
     }
 
     /// Two people who both picked green have to stop being both green, and every
     /// phone has to agree on which of them moved.
     ///
     /// Nobody negotiates. Order everyone by when they joined, walk the list, and give
-    /// anyone whose colour an earlier player already holds the lowest free one. That
+    /// anyone whose color an earlier player already holds the lowest free one. That
     /// is a pure function of data every device has, so all of them land on the same
     /// answer without a message being sent — and the person who was there first keeps
-    /// the colour they have been playing as.
+    /// the color they have been playing as.
     ///
     /// Ties on `joinedAt` break on id, for the same reason `SightingOrder` does it:
     /// otherwise two devices could disagree about who counts as earlier and hand the
-    /// same two people opposite colours.
-    private static func settleColours(_ players: [Player]) {
+    /// same two people opposite colors.
+    private static func settleColors(_ players: [Player]) {
         var taken = Set<Int>()
         let ordered = players.sorted {
             ($0.joinedAt, $0.id.uuidString) < ($1.joinedAt, $1.id.uuidString)
         }
         for player in ordered {
             if taken.insert(player.colorIndex).inserted { continue }
-            // Wraps rather than failing: past the palette colours start repeating,
+            // Wraps rather than failing: past the palette colors start repeating,
             // which is a known cost of not capping how many people can play.
             let free = (0..<Theme.playerColors.count).first { !taken.contains($0) }
             guard let free else { break }

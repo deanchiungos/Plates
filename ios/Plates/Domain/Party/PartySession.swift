@@ -58,7 +58,23 @@ final class PartySession {
     /// nothing. It is sent with the invitation and checked by the host.
     private(set) var code: String
 
-    private(set) var members: [String] = []
+    /// Who else is connected right now.
+    ///
+    /// Presence still comes from the session — connect adds, disconnect removes —
+    /// but each one carries a player id where the sender has told us one, so the
+    /// screen can show the name they go by *now* rather than the one their peer id
+    /// was minted with. See `PartyEnvelope.from`.
+    private(set) var members: [Member] = []
+
+    struct Member: Identifiable, Equatable {
+        let peer: MCPeerID
+        /// The name their `MCPeerID` was created with. A fallback, and a frozen one.
+        let peerName: String
+        /// Nil until they have said something. See `PartyEnvelope.from`.
+        var playerID: UUID?
+
+        var id: String { peer.displayName }
+    }
     private(set) var nearby: [Nearby] = []
     private(set) var isConnected = false
 
@@ -132,6 +148,25 @@ final class PartySession {
     /// deadline. See `disconnected` for why the date matters.
     private var invitedAt: Date?
 
+    /// How many times a join is tried before the guest is told it failed.
+    ///
+    /// Three, and each on a session of its own. One attempt was never enough for the
+    /// case that actually happens: a connection accepted and then lost leaves state
+    /// behind that only a new session clears, so the first failure used to guarantee
+    /// every subsequent one.
+    private static let joinAttempts = 3
+    private var attemptsLeft = 0
+
+    /// Peers that have reached `.connecting`.
+    ///
+    /// The one thing that tells a declined invitation apart from an accepted one
+    /// whose connection then failed, and it was being thrown away. See
+    /// `disconnected`.
+    private var handshaking: Set<MCPeerID> = []
+
+    /// Takes a passing complaint back down. See `sayBriefly`.
+    private var troubleFade: Task<Void, Never>?
+
     /// How long to wait for the host's phone to answer at all.
     ///
     /// Thirty seconds, which is Apple's own default on `invitePeer`, and it used to
@@ -157,6 +192,9 @@ final class PartySession {
         case silence
         /// The host stopped advertising while we were waiting.
         case vanished
+        /// The host let us in and the connection did not survive being made. Nothing
+        /// to do with the code — it was accepted.
+        case dropped
     }
 
     /// The host said goodbye. Distinct from merely being disconnected — one is
@@ -249,7 +287,12 @@ final class PartySession {
         self.tombstones = tombstones
         // Trimmed to what `MCPeerID` accepts: non-empty, and 63 bytes at the outside.
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        self.myName = trimmed.isEmpty ? "Someone" : String(trimmed.prefix(30))
+        // Trimmed by *bytes*, not characters. `MCPeerID` rejects a display name over
+        // 63 UTF-8 bytes by throwing, and thirty characters of emoji is comfortably
+        // past that — a name like "Dean🗡️🍫" is fifteen bytes for eight characters.
+        // A crash on entering the party screen is not a thing to leave to taste in
+        // nicknames.
+        self.myName = trimmed.isEmpty ? "Someone" : Self.fitting(trimmed)
         self.peerID = MCPeerID(displayName: self.myName)
 
         transport = PartyTransport(owner: self)
@@ -321,9 +364,25 @@ final class PartySession {
         // never happened. The record is written in `connected`, which is the moment
         // it becomes a fact.
         rules = PartyLedger.shared.rules(for: party.tripID)
-        guard let payload = code.data(using: .utf8) else { return }
+        attemptsLeft = Self.joinAttempts
+        invite(party)
+    }
+
+    /// Sends the invitation, on a session that has never failed.
+    ///
+    /// The rebuild is the point. `MCSession` does not recover from a connection that
+    /// was accepted and then collapsed: every later `invitePeer` into the same
+    /// session collapses the same way, which is why the report was "it kept failing
+    /// every time they tried it" rather than "it was flaky". Tapping the party again
+    /// looked like a fresh attempt and was not one. The browser is deliberately left
+    /// alone: `invitePeer` only works on the browser that discovered the peer, so
+    /// rebuilding that would throw away the discovery this is about to use.
+    private func invite(_ target: Nearby) {
+        guard role == .guest, let browser,
+              let payload = code.data(using: .utf8) else { return }
+        rebuildSession()
         invitedAt = Date()
-        browser.invitePeer(party.peer, to: session, withContext: payload,
+        browser.invitePeer(target.peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)
 
         joinWatch?.cancel()
@@ -335,6 +394,21 @@ final class PartySession {
             guard !Task.isCancelled else { return }
             self?.joinFailed(.silence)
         }
+    }
+
+    /// A brand new `MCSession`, because the old one cannot be trusted to connect.
+    ///
+    /// Guest only, and only while nothing is connected. On a host the session holds
+    /// everybody in the car, and throwing it away to fix one joiner would drop them
+    /// all.
+    private func rebuildSession() {
+        guard role == .guest, !isConnected else { return }
+        session.disconnect()
+        session = MCSession(peer: peerID, securityIdentity: nil,
+                            encryptionPreference: .required)
+        session.delegate = transport
+        handshaking.removeAll()
+        members = []
     }
 
     /// The host never let us in, and *why* is the whole of what the guest needs.
@@ -369,6 +443,12 @@ final class PartySession {
             trouble = String(localized: "No answer from \(target.hostName)'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap \(target.tripName) again.")
         case .vanished:
             trouble = String(localized: "\(target.hostName)'s phone stopped advertising \(target.tripName). If the party is still running, wait a moment and tap it again.")
+        case .dropped:
+            // Names the thing that actually causes this once retrying has failed.
+            // Local Network is the one setting that lets two phones see each other
+            // and refuse to connect, it is off by accident more often than not, and
+            // nothing in the transport reports it, so the app has to say it out loud.
+            trouble = String(localized: "Your code was right and \(target.hostName)'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap \(target.tripName) again.")
         }
     }
 
@@ -389,6 +469,9 @@ final class PartySession {
     private func rejoin(_ peer: MCPeerID) {
         guard role == .guest, hasJoined, !hasEnded, !isConnected,
               let browser, let payload = code.data(using: .utf8) else { return }
+        // Same reason as `invite`: the session we just dropped out of is the one
+        // least likely to let us back in.
+        rebuildSession()
         browser.invitePeer(peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)
     }
@@ -495,7 +578,11 @@ final class PartySession {
 
     private func send(_ payload: PartyEnvelope.Payload, to peers: [MCPeerID]? = nil) {
         let targets = peers ?? session.connectedPeers
-        guard !targets.isEmpty, let data = try? PartyEnvelope(payload).encoded() else { return }
+        // Resolved per send rather than cached, because the whole point is that it
+        // can change: adopting a profile mid-party is exactly when this moves.
+        let me = DevicePlayer.resolve(from: (try? context.fetch(FetchDescriptor<Player>())) ?? [])
+        guard !targets.isEmpty,
+              let data = try? PartyEnvelope(payload, from: me?.id).encoded() else { return }
         try? session.send(data, toPeers: targets, with: .reliable)
     }
 
@@ -556,6 +643,14 @@ final class PartySession {
         // Handled here rather than in the merge, because it is about the party and
         // not about the data — there is nothing in a goodbye to write down.
         if case .bye = envelope.payload { return saidGoodbye(peer) }
+
+        // Anything they send tells us who they are, so the list can stop calling
+        // them by the name their peer id was minted with.
+        if let sender = envelope.from,
+           let at = members.firstIndex(where: { $0.peer == peer }),
+           members[at].playerID != sender {
+            members[at].playerID = sender
+        }
 
         let knownBefore = knownPlayerIDs
         switch envelope.payload {
@@ -726,8 +821,15 @@ final class PartySession {
             tier: RarityTier.forRarity(event.rarityWhenSpotted ?? plate.points))
     }
 
+    fileprivate func connecting(_ peer: MCPeerID) {
+        handshaking.insert(peer)
+    }
+
     fileprivate func connected(_ peer: MCPeerID) {
-        if !members.contains(peer.displayName) { members.append(peer.displayName) }
+        handshaking.remove(peer)
+        if !members.contains(where: { $0.peer == peer }) {
+            members.append(Member(peer: peer, peerName: peer.displayName))
+        }
         isConnected = !session.connectedPeers.isEmpty
         trouble = nil
         // We are in. Only now is this a party worth silently reconnecting to —
@@ -746,7 +848,7 @@ final class PartySession {
     }
 
     fileprivate func disconnected(_ peer: MCPeerID) {
-        members.removeAll { $0 == peer.displayName }
+        members.removeAll { $0.peer == peer }
         isConnected = !session.connectedPeers.isEmpty
 
         // A refused invitation arrives here rather than as an error, and it is the
@@ -761,11 +863,29 @@ final class PartySession {
         // framework's own timeout is by definition at the deadline. So a
         // disconnection in the deadline's last breath is reported as silence.
         if let target = joining, peer == target.peer, !hasJoined {
+            // A declined invitation goes straight to `.notConnected`; one that was
+            // *accepted* passes through `.connecting` first and only lands here if
+            // the connection then failed to hold. Reading both as a refusal is how
+            // somebody who typed the right code — and whose code the host accepted —
+            // got told the four characters did not match. The radio failing is not
+            // the passenger's spelling.
+            let reached = handshaking.remove(peer) != nil
             let ranOutTheClock = invitedAt.map {
                 Date().timeIntervalSince($0) >= Self.inviteTimeout - 2
             } ?? false
+
+            // Accepted and then lost. Worth another go on a clean session, silently:
+            // the guest is already watching a spinner, and a retry that works is a
+            // better answer than a sentence explaining why it did not.
+            if reached, attemptsLeft > 1, !hasEnded {
+                attemptsLeft -= 1
+                joinWatch?.cancel()
+                return invite(target)
+            }
+            if reached { return joinFailed(.dropped) }
             return joinFailed(ranOutTheClock ? .silence : .refused)
         }
+        handshaking.remove(peer)
 
         // Not an error, and deliberately not reported as one. Dropping out is the
         // normal state of a phone in a pocket; the browser is still running and
@@ -838,7 +958,16 @@ final class PartySession {
         guard role == .host else { return false }
         let offered = context.flatMap { String(data: $0, encoding: .utf8) } ?? ""
         guard Self.tidy(offered) == code else {
-            trouble = String(localized: "\(peer.displayName) tried to join with the wrong code. The code for this party is \(code).")
+            // Only worth saying while the car is still trying to get in, and only for
+            // a moment. MultipeerConnectivity retries invitations across transports
+            // and can re-deliver a declined one *after* a later attempt succeeded, so
+            // a permanent card meant one mistyped code could leave an accusation on
+            // screen for the rest of the drive — naming, by peer display name,
+            // somebody sitting in the same car who is already in the party. A notice
+            // that outlives the problem it describes is worse than no notice.
+            if members.isEmpty {
+                sayBriefly(String(localized: "Someone tried to join with the wrong code. The code for this party is \(code)."))
+            }
             return false
         }
         // A previous wrong attempt, cleared by somebody getting it right.
@@ -846,7 +975,40 @@ final class PartySession {
         return true
     }
 
+    #if DEBUG
+    /// Whether `-partyDropOnce` has spent its one failure.
+    fileprivate var hasDroppedOne = false
+    #endif
+
     fileprivate func failed(_ what: String) { trouble = what }
+
+    /// Says something that stops being true, and takes it back.
+    ///
+    /// `trouble` is one slot shared by everything that can go wrong, and most of what
+    /// goes wrong in a party is momentary. Anything that describes a passing event
+    /// rather than a standing state belongs here, or it sits on screen long after the
+    /// car has stopped caring.
+    private func sayBriefly(_ message: String) {
+        trouble = message
+        troubleFade?.cancel()
+        troubleFade = Task { @MainActor [weak self] in
+            try? await Task.sleep(for: .seconds(8))
+            // Only clears its own message: anything said since is somebody else's to
+            // take down.
+            guard !Task.isCancelled, let self, self.trouble == message else { return }
+            self.trouble = nil
+        }
+    }
+
+    /// Tell the party who I am now.
+    ///
+    /// A rename used to reach nobody. The roster only ever went out inside `greet`,
+    /// which happens on connection — so changing your name mid-drive left every other
+    /// phone showing the old one, and the scoreboard disagreed with the person
+    /// sitting next to it.
+    func announceMe(_ player: Player) {
+        send(.roster([PartyMerge.event(for: player)]))
+    }
 
     // MARK: - Bits
 
@@ -890,6 +1052,17 @@ final class PartySession {
         return String((0..<4).map { _ in alphabet.randomElement()! })
     }
 
+    /// The longest prefix of `name` that fits an `MCPeerID`, cut on a character
+    /// boundary so an emoji is never sliced into rubble.
+    private static func fitting(_ name: String, limit: Int = 60) -> String {
+        var out = ""
+        for character in name {
+            if out.utf8.count + String(character).utf8.count > limit { break }
+            out.append(character)
+        }
+        return out.isEmpty ? "Someone" : out
+    }
+
     private static func tidy(_ code: String) -> String {
         code.uppercased().filter { $0.isLetter || $0.isNumber }
     }
@@ -914,8 +1087,9 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
         Task { @MainActor [weak owner] in
             switch state {
             case .connected:    owner?.connected(peerID)
+            case .connecting:   owner?.connecting(peerID)
             case .notConnected: owner?.disconnected(peerID)
-            default:            break
+            @unknown default:   break
             }
         }
     }
@@ -947,6 +1121,29 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
             // physically walking away mid-join, so it would ship untested — and it
             // is one of the two the whole `JoinFailure` split exists to separate.
             if ProcessInfo.processInfo.arguments.contains("-partyIgnore") { return }
+            // `-partyDrop` accepts the invitation — the code is checked and passes —
+            // and hands back a session that is released the moment this returns, so
+            // the guest reaches `.connecting` and then fails. That is the shape of
+            // the reported bug: a correct code, admitted, and a connection that did
+            // not hold.
+            // `-partyDropOnce` fails the first connection and accepts the next,
+            // which is the case the retry exists for: a transient collapse that a
+            // clean session gets past. `-partyDrop` never accepts, for the case it
+            // does not.
+            if ProcessInfo.processInfo.arguments.contains("-partyDropOnce"),
+               !owner.hasDroppedOne {
+                guard owner.shouldAdmit(peerID, offering: context) else {
+                    return invitationHandler(false, nil)
+                }
+                owner.hasDroppedOne = true
+                return invitationHandler(true, MCSession(peer: owner.mcSession.myPeerID))
+            }
+            if ProcessInfo.processInfo.arguments.contains("-partyDrop") {
+                guard owner.shouldAdmit(peerID, offering: context) else {
+                    return invitationHandler(false, nil)
+                }
+                return invitationHandler(true, MCSession(peer: owner.mcSession.myPeerID))
+            }
             #endif
             guard owner.shouldAdmit(peerID, offering: context) else {
                 return invitationHandler(false, nil)

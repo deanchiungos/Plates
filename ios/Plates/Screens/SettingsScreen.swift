@@ -14,6 +14,7 @@ import SwiftUI
 /// true, none of it anything a person opens Settings to read — they come here to turn
 /// something on. Every line now either reports a state or changes one.
 struct SettingsScreen: View {
+    @Environment(TourGuide.self) private var tour
     @Environment(\.modelContext) private var context
     @Environment(PopupHost.self) private var popup
 
@@ -33,20 +34,31 @@ struct SettingsScreen: View {
             Theme.ground.ignoresSafeArea()
 
             ScrollView {
+              ScrollViewReader { scroller in
                 VStack(spacing: 18) {
                     identityCard
+                        .tourAnchor(.settingsIdentity)
+                        .tourStop(.settingsIdentity)
                     othersCard
                     backupCard
+                        .tourAnchor(.settingsBackup)
+                        .tourStop(.settingsBackup)
                     locationCard
                     remindersCard
+                        .tourAnchor(.settingsReminders, prefersAbove: true)
+                        .tourStop(.settingsReminders)
                     feedbackCard
                     version
                 }
                 .padding(Theme.screenPadding)
+                .tourScrolling(scroller)
+              }
             }
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { tour.offer(.settings, stops: Tour.stops(of: .settings)) }
+        .onDisappear { tour.left(.settings) }
         .sheet(isPresented: $editingMe) {
             // The same editor the roster used, which is why it outlived the roster:
             // it only ever edited one player, and one player is all there is now.
@@ -54,6 +66,11 @@ struct SettingsScreen: View {
                          usedColors: Set(players.filter { $0.id != me?.id }.map(\.colorIndex)),
                          onDelete: nil)
         }
+        .tourLayer(.settings, [
+            .settingsIdentity: "Who this phone plays as. In a party this is the name and the colored corner everyone else sees on the plates you call.",
+            .settingsBackup: "Whether your collection exists anywhere but this phone. A book is years of spotting, so this is the row worth looking at.",
+            .settingsReminders: "A quiet nudge if a trip goes untouched, so a drive you meant to finish does not sit open forever."
+        ])
     }
 
     // MARK: - Who this phone is
@@ -61,7 +78,7 @@ struct SettingsScreen: View {
     /// The one identity this device plays as, and a control that changes it — which
     /// is why it belongs here rather than reading as an explanation.
     ///
-    /// It carries a name and a colour because both are seen by other people: in a
+    /// It carries a name and a color because both are seen by other people: in a
     /// party this is the chip on every plate you call and the row in everyone's
     /// standings. Setting it is the only preparation a party needs.
     private var identityCard: some View {

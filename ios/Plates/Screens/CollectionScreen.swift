@@ -29,6 +29,8 @@ struct CollectionScreen: View {
 
     /// The all-time lens. A view, not a container — you cannot collect into it, and
     /// switching to it deliberately does *not* change what the Drive screen fills.
+    @Environment(TourGuide.self) private var tour
+
     @State private var allTime = false
     /// The one-pager, rendered on tap — see `ShareSheet`.
     @State private var poster: PosterToShare?
@@ -95,11 +97,14 @@ struct CollectionScreen: View {
                 Theme.ground.ignoresSafeArea()
 
                 ScrollView {
+                  ScrollViewReader { scroller in
                     VStack(spacing: 14) {
                         bookPage
                     }
                     .padding(Theme.screenPadding)
                     .padding(.bottom, 24)
+                    .tourScrolling(scroller)
+                  }
                 }
             }
             .navigationTitle("Books")
@@ -107,6 +112,8 @@ struct CollectionScreen: View {
             // Signed out of iCloud is the one cause of a silent no-sync that the user
             // can fix, so it is worth one round trip to distinguish it from "waiting".
             .task { await CloudBackup.shared.checkAccount() }
+            .onAppear { tour.offer(.books, stops: Tour.stops(of: .books)) }
+            .onDisappear { tour.left(.books) }
             .toolbar {
                 // Sharing what is on screen, rather than making people open the
                 // editor to reach it. This tab *is* the collection; the album you are
@@ -130,6 +137,7 @@ struct CollectionScreen: View {
                     .accessibilityLabel(showingAllTime
                                         ? "Share your all-time collection"
                                         : "Share this book")
+                    .tourAnchor(.booksShare)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button { creatingBook = true } label: { Image(systemName: "plus") }
@@ -167,6 +175,11 @@ struct CollectionScreen: View {
                 onDelete: { pending = .delete(book); editingBook = nil }
             )
         }
+        .tourLayer(.books, [
+            .booksScope: "A book never ends. This says which one you are looking at, and Switch moves between your books and every plate you have ever logged.",
+            .booksShare: "Turns whatever is on screen into a poster you can send to anyone.",
+            .booksAlbum: "The album itself. Every slot you have filled keeps the date you filled it, so tapping one tells you where you were."
+        ])
     }
 
     private struct Pick: Identifiable {
@@ -190,6 +203,8 @@ struct CollectionScreen: View {
         let b = scoped
 
         scopeCard
+            .tourAnchor(.booksScope)
+            .tourStop(.booksScope)
 
         summary(b)
 
@@ -211,11 +226,13 @@ struct CollectionScreen: View {
                 // having done nothing — the whole promise is on the Game tab.
                 router.showGame()
             } label: {
-                dashedRow("Collect plates into this book", symbol: "car.fill")
+                dashedRow("Add plates to this Book", symbol: "car.fill")
             }
         }
 
         section("States", Plate.states, b)
+            .tourAnchor(.booksAlbum)
+            .tourStop(.booksAlbum)
         section("Bonus", Plate.bonus, b)
         section("Canada", Plate.provinces, b)
     }
@@ -267,89 +284,23 @@ struct CollectionScreen: View {
     /// Which book you are looking at, and the way to change it. Same tap-to-switch
     /// affordance as the Drive screen's header, so the gesture transfers.
     private var scopeCard: some View {
-        // Two trailing controls, one trailing edge. Previously SWITCH was pinned to
-        // the trailing edge of the *inner* button, which stops short of the card
-        // wherever the edit circle sits — so it floated in from the edge and lined up
-        // with nothing. Hoisting it to its own full-width row puts both controls flush
-        // right, in a clean stack: label above, circle below.
-        VStack(alignment: .leading, spacing: 3) {
-            Button { showScopeSwitcher() } label: {
-                HStack(spacing: 5) {
-                    Text(showingAllTime ? "EVERY PLATE EVER"
-                                        : (sharedEntry == nil ? "BOOK" : "SHARED BOOK"))
-                        .font(.plates(size: 10, weight: .bold))
-                        .tracking(1.2)
-                    if sharedEntry != nil {
-                        Image(systemName: "person.2.fill")
-                            .font(.system(size: 9, weight: .bold))
-                            .foregroundStyle(Theme.found)
-                            .accessibilityLabel("Shared")
-                    }
-                    Spacer(minLength: 8)
-                    Text("SWITCH")
-                        .font(.plates(size: 9.5, weight: .bold))
-                        .tracking(0.9)
-                    Image(systemName: "chevron.up.chevron.down")
-                        .font(.system(size: 8.5, weight: .bold))
-                }
-                .foregroundStyle(Theme.route)
-                .contentShape(Rectangle())
-            }
-            .buttonStyle(.plain)
-
-            HStack(spacing: 10) {
-                Button { showScopeSwitcher() } label: {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(scopeName)
-                            .font(.plates(size: 18, weight: .bold))
-                            .tracking(-0.3)
-                            .foregroundStyle(Theme.ink)
-                            .lineLimit(1)
-
-                        Text(scopeSubtitle)
-                            .font(.plates(size: 11.5))
-                            .foregroundStyle(Theme.inkMuted)
-                            .lineLimit(1)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-
-                // Everyone who has put a plate in this book. Drawn from the local
-                // rows rather than from `CKShare.participants`, so it is right
-                // offline and needs no round trip to render a header — a
-                // contributor exists locally the moment one of their sightings has
-                // arrived, which is exactly when they are worth showing.
-                if !showingAllTime, sharedEntry != nil, contributors.count > 1 {
-                    AvatarStack(players: contributors, limit: 4, size: 22,
-                                background: Theme.surface)
-                }
-
-                // Centred on the name and date rather than on the whole card, so it
-                // sits under SWITCH instead of drifting up against it.
-                if !showingAllTime, let book = currentBook {
-                    Button { editingBook = book } label: {
-                        Image(systemName: "slider.horizontal.3")
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundStyle(Theme.inkMuted)
-                            .frame(width: 34, height: 34)
-                            .background(Circle().fill(Theme.ground))
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Edit \(book.name)")
-                }
-            }
-        }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 12)
-        .background(
-            RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
-                .fill(Theme.surface)
-                .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
-                    .strokeBorder(isFillingThisBook ? Theme.route : Theme.line,
-                                  lineWidth: isFillingThisBook ? 1.5 : 1))
-        )
+        ScopeCard(
+            kind: showingAllTime ? "EVERY PLATE EVER"
+                                 : (sharedEntry == nil ? "BOOK" : "SHARED BOOK"),
+            isShared: sharedEntry != nil,
+            name: scopeName,
+            subtitle: scopeSubtitle,
+            // Everyone who has put a plate in this book. Drawn from the local rows
+            // rather than from `CKShare.participants`, so it is right offline and
+            // needs no round trip to render a header — a contributor exists locally
+            // the moment one of their sightings has arrived, which is exactly when
+            // they are worth showing.
+            contributors: (!showingAllTime && sharedEntry != nil && contributors.count > 1)
+                ? contributors : [],
+            isFilling: isFillingThisBook,
+            onSwitch: showScopeSwitcher,
+            onEdit: (!showingAllTime && currentBook != nil)
+                ? { editingBook = currentBook } : nil)
     }
 
     private var scopeSubtitle: String {
@@ -554,6 +505,159 @@ struct CollectionScreen: View {
                 }
                 PopupButton(title: "Cancel") { popup.dismiss() }
             }
+        }
+    }
+}
+
+// MARK: - Scope card
+
+/// The header of the Book tab: what you are looking at, who has contributed to it,
+/// and the two ways to change it.
+///
+/// Its own view rather than a slice of `CollectionScreen` for one reason beyond
+/// tidiness — it is the widest four-column row in the app (name, subtitle, four
+/// faces, an edit circle), and a row that cannot be handed values cannot be drawn
+/// at a width and a text size that break it. See `LayoutStress`, which does exactly
+/// that and is what put the accessibility reflow below here.
+struct ScopeCard: View {
+    /// The small caps line: BOOK, SHARED BOOK, EVERY PLATE EVER.
+    let kind: String
+    let isShared: Bool
+    let name: String
+    let subtitle: String
+    /// Empty when there is nobody to show; the stack is only worth its width when
+    /// more than one person has filled the book.
+    var contributors: [Player] = []
+    let isFilling: Bool
+    let onSwitch: () -> Void
+    /// Nil on All time, which is not a book and has nothing to edit.
+    var onEdit: (() -> Void)?
+
+    @Environment(\.dynamicTypeSize) private var typeSize
+
+    var body: some View {
+        // Two trailing controls, one trailing edge. Previously SWITCH was pinned to
+        // the trailing edge of the *inner* button, which stops short of the card
+        // wherever the edit circle sits — so it floated in from the edge and lined up
+        // with nothing. Hoisting it to its own full-width row puts both controls flush
+        // right, in a clean stack: label above, circle below.
+        VStack(alignment: .leading, spacing: 3) {
+            kindRow
+
+            // At accessibility sizes the name is set in a font roughly twice this
+            // one, and the faces and the edit circle grow with it: three columns
+            // that all still want the same line leave the name a few letters. The
+            // controls drop to their own row instead, which costs height — the one
+            // thing a reader at that size has plenty of, since the screen is
+            // already scrolling.
+            if typeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 10) {
+                    title
+                    HStack(spacing: 10) {
+                        avatars
+                        Spacer(minLength: 0)
+                        editButton
+                    }
+                }
+            } else {
+                HStack(spacing: 10) {
+                    title
+                    avatars
+                    editButton
+                }
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
+                .fill(Theme.surface)
+                .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
+                    .strokeBorder(isFilling ? Theme.route : Theme.line,
+                                  lineWidth: isFilling ? 1.5 : 1))
+        )
+    }
+
+    private var kindRow: some View {
+        Button(action: onSwitch) {
+            HStack(spacing: 5) {
+                Text(kind)
+                    .font(.plates(size: 10, weight: .bold))
+                    .tracking(1.2)
+                    // SHARED BOOK at an accessibility size is wide enough on its
+                    // own to push SWITCH off the card, and a switch control you
+                    // cannot see is a book you cannot leave. It wrapped mid-word
+                    // — "SHARE / D BOOK" — before this, on the 320pt phone.
+                    //
+                    // 0.6 rather than a smaller floor because 0.6 of an
+                    // accessibility size is still larger than the 10pt this is set
+                    // at by default: the label shrinks relative to the reader's
+                    // choice without ever going below what everyone else sees.
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
+                if isShared {
+                    Image(systemName: "person.2.fill")
+                        .font(.system(size: 9, weight: .bold))
+                        .foregroundStyle(Theme.found)
+                        .accessibilityLabel("Shared")
+                }
+                Spacer(minLength: 8)
+                Text("SWITCH")
+                    .font(.plates(size: 9.5, weight: .bold))
+                    .tracking(0.9)
+                    .lineLimit(1)
+                    .fixedSize(horizontal: true, vertical: false)
+                Image(systemName: "chevron.up.chevron.down")
+                    .font(.system(size: 8.5, weight: .bold))
+            }
+            .foregroundStyle(Theme.route)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var title: some View {
+        Button(action: onSwitch) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(name)
+                    .font(.plates(size: 18, weight: .bold))
+                    .tracking(-0.3)
+                    .foregroundStyle(Theme.ink)
+                    .lineLimit(1)
+
+                Text(subtitle)
+                    .font(.plates(size: 11.5))
+                    .foregroundStyle(Theme.inkMuted)
+                    .lineLimit(1)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    @ViewBuilder
+    private var avatars: some View {
+        if !contributors.isEmpty {
+            AvatarStack(players: contributors, limit: 4, size: 22,
+                        background: Theme.surface)
+        }
+    }
+
+    /// Centred on the name and date rather than on the whole card, so it sits under
+    /// SWITCH instead of drifting up against it.
+    @ViewBuilder
+    private var editButton: some View {
+        if let onEdit {
+            Button(action: onEdit) {
+                Image(systemName: "slider.horizontal.3")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Theme.inkMuted)
+                    .frame(width: 34, height: 34)
+                    .background(Circle().fill(Theme.ground))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Edit \(name)")
         }
     }
 }

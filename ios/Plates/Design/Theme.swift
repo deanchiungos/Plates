@@ -15,10 +15,10 @@ import UIKit
 /// how a card is told apart from the page it is on — when both were cream the
 /// two ran together and the app lost the shape of its own layout. The page is
 /// still only a few percent off white; it just no longer has to carry the
-/// separation as well as the colour.
+/// separation as well as the color.
 enum Theme {
 
-    // MARK: Colour
+    // MARK: Color
     static let ground     = Color(hex: 0xFAF7EF)
     static let surface    = Color(hex: 0xFFFFFF)
     static let route      = Color(hex: 0x12395E)
@@ -27,12 +27,12 @@ enum Theme {
     static let paint      = Color(hex: 0xF0B429)
     static let ink        = Color(hex: 0x1B2231)
     /// Warm grey, not blue-grey. On cream the old cool muted text read as
-    /// faintly purple, which is the usual tell that a palette was recoloured
+    /// faintly purple, which is the usual tell that a palette was recolored
     /// halfway.
     static let inkMuted   = Color(hex: 0x8A8377)
     static let line       = Color(hex: 0xE7E1D1)
     /// Map only. Green is not otherwise in the palette, and it earns its place
-    /// there: on a map, filled-in means collected in a way no accent colour does.
+    /// there: on a map, filled-in means collected in a way no accent color does.
     static let found      = Color(hex: 0x2FB574)
     static let unfound    = Color(hex: 0xE9E3D5)
     /// The recessed pressing an uncollected plate goes into, in the book. Darker
@@ -50,8 +50,8 @@ enum Theme {
     ///
     /// It gets away with it because the ring is far more saturated than any fill and
     /// carries a glow, so the two read as different objects rather than the same
-    /// colour twice. If that ever stops being true, the fix is to darken the
-    /// legendary map fill rather than to move the selection colour again.
+    /// color twice. If that ever stops being true, the fix is to darken the
+    /// legendary map fill rather than to move the selection color again.
     static let mapSelection = Color(hex: 0xFFC400)
 
     /// The serial and state name on a plate nobody has spotted yet.
@@ -66,7 +66,7 @@ enum Theme {
     static let plateSub   = Color(hex: 0x6C6455)
     static let plateOnSub = Color(hex: 0x8FB4D6)
 
-    /// Player colours, chosen to stay distinguishable against the route-blue fill
+    /// Player colors, chosen to stay distinguishable against the route-blue fill
     /// and from each other. Players store an index into this array.
     static let playerColors: [Color] = [
         Color(hex: 0x3DDC84),   // green
@@ -176,7 +176,7 @@ enum Theme {
 
     // MARK: System controls
 
-    /// Repaint the UIKit controls SwiftUI has no colour hooks for.
+    /// Repaint the UIKit controls SwiftUI has no color hooks for.
     ///
     /// A segmented control draws its own track and its own selected pill, and
     /// both are system greys — cool ones. Against a warm page they were the two

@@ -11,6 +11,8 @@ struct MapScreen: View {
     @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
     @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
 
+    @Environment(TourGuide.self) private var tour
+
     @State private var mode: Mode = .progress
     @State private var selected: String?
 
@@ -71,6 +73,8 @@ struct MapScreen: View {
                             ForEach(Mode.allCases) { Text($0.label).tag($0) }
                         }
                         .pickerStyle(.segmented)
+                        .tourAnchor(.mapMode)
+                        .tourStop(.mapMode)
 
                         // Canada first, which is also where it is: the provinces sit
                         // above the states on any real map of North America. Two maps
@@ -86,11 +90,18 @@ struct MapScreen: View {
                                   found: palette.foundCount(among: USMap.codes),
                                   total: USMap.codes.count)
                         unitedStatesMap(palette)
+                            .tourAnchor(.mapRegion, prefersAbove: true)
+                            .tourStop(.mapRegion)
 
+                        // One id, not two. The tour's scroll target and `-mapSection`'s
+                        // want the same view, and stacking a second `.id` on it makes
+                        // which one a `ScrollViewProxy` resolves a matter of luck.
                         legend
-                            .id("legend")
+                            .tourAnchor(.mapLegend, prefersAbove: true)
+                            .tourStop(.mapLegend)
 
                     }
+                    .tourScrolling(scroller)
                     .padding(Theme.screenPadding)
                     .padding(.bottom, 20)
                     #if DEBUG
@@ -101,7 +112,9 @@ struct MapScreen: View {
                     .onAppear {
                         guard ProcessInfo.processInfo.arguments.contains("-mapSection") else { return }
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                            withAnimation { scroller.scrollTo("legend", anchor: .bottom) }
+                            withAnimation {
+                                scroller.scrollTo(Tour.Stop.mapLegend.scrollID, anchor: .bottom)
+                            }
                         }
                     }
                     #endif
@@ -110,6 +123,8 @@ struct MapScreen: View {
             }
             .navigationTitle("Map")
             .navigationBarTitleDisplayMode(.large)
+            .onAppear { tour.offer(.map, stops: Tour.stops(of: .map)) }
+            .onDisappear { tour.left(.map) }
             #if DEBUG
             // `-mapMode rarity` and `-mapState VT` open states the tap gesture
             // would otherwise be the only way to reach.
@@ -153,6 +168,12 @@ struct MapScreen: View {
                          trip: trip,
                          rarity: rarity(sel.code))
         }
+        // Last in the chain, so the scrim covers the maps and nothing else.
+        .tourLayer(.map, [
+            .mapMode: "Two ways to read the map. Found shows what you have collected. Rarity colors every state by how hard it is to spot from here.",
+            .mapRegion: "Tap any state or province to see its plate, how rare it is from where you are, and a fact or two about it.",
+            .mapLegend: "This is the key. Legendary and mythic are the ones worth shouting about when you see them."
+        ])
     }
 
     private struct Selection: Identifiable {
@@ -166,7 +187,7 @@ struct MapScreen: View {
 
     // MARK: - Palette
 
-    /// Every per-region colour decision, answered once instead of once per ring per
+    /// Every per-region color decision, answered once instead of once per ring per
     /// frame.
     ///
     /// `RegionMapView` is handed closures and calls them from inside its `Canvas`,
@@ -207,7 +228,7 @@ struct MapScreen: View {
         label.reserveCapacity(Plate.all.count)
 
         // The outline is a plain dark edge on every region, found or not. It used to
-        // be the rarity tier's colour at a thickness that varied by tier, which made
+        // be the rarity tier's color at a thickness that varied by tier, which made
         // the map carry two answers at once — how much is left, and what is worth
         // finding — and read as neither. Rarity has its own mode; Found can just be
         // found.
@@ -222,7 +243,7 @@ struct MapScreen: View {
                 // Found used to be one green for everything, with rarity carried by
                 // the animated outline alone. That put the whole reward in a border a
                 // few points wide — on Rhode Island, essentially nowhere. A collected
-                // epic, legendary or mythic region now wears its own colour, so the
+                // epic, legendary or mythic region now wears its own color, so the
                 // thing you earned is the size of the state rather than the size of
                 // its edge. Everything below epic stays green, and *nothing* uncollected
                 // changes: an unfound mythic plate is the same sand as an unfound
@@ -252,7 +273,7 @@ struct MapScreen: View {
     ///
     /// Uniform now. It used to vary by rarity tier in Found mode, which meant a
     /// found state had no outline at all while its unfound neighbour had a heavy
-    /// coloured one — the border between two regions changed weight depending on
+    /// colored one — the border between two regions changed weight depending on
     /// which side you had collected, and the map looked ragged rather than
     /// informative.
     ///
@@ -363,20 +384,20 @@ struct MapScreen: View {
 
     // MARK: - Legend
 
-    /// One entry in the key: the colour, and the word for what it means.
+    /// One entry in the key: the color, and the word for what it means.
     private struct Key: Identifiable {
         let id: String
-        let colour: Color
+        let color: Color
         let label: String
     }
 
     /// What the map is currently painted with. Not what it used to be painted with.
     ///
     /// This drifted, and a wrong key is worse than no key. Found mode signalled rarity
-    /// with a coloured outline once; that outline was removed — every region now takes
-    /// a plain dark edge — but the key kept listing all six tiers as thin coloured
+    /// with a colored outline once; that outline was removed — every region now takes
+    /// a plain dark edge — but the key kept listing all six tiers as thin colored
     /// lines, so it named a channel the map no longer has. Worse, it implied common,
-    /// uncommon and rare were three different colours out there when all three are
+    /// uncommon and rare were three different colors out there when all three are
     /// simply green, and that grey was a tier rather than "not found yet".
     ///
     /// So each mode describes itself, and both read their swatch straight off the
@@ -386,16 +407,16 @@ struct MapScreen: View {
         switch mode {
         case .rarity:
             // Every region is filled by tier, so all six belong.
-            return tiers.map { Key(id: $0.label, colour: $0.mapFill,
+            return tiers.map { Key(id: $0.label, color: $0.mapFill,
                                    label: $0.label.capitalized) }
         case .progress:
-            // Two states plus the three tiers that keep their own colour when found.
+            // Two states plus the three tiers that keep their own color when found.
             // Common, uncommon and rare are all just green here, so listing them
             // separately would invent three distinctions the map does not draw.
-            return [Key(id: "unfound", colour: Theme.unfound, label: "Not found"),
-                    Key(id: "found", colour: Theme.found, label: "Found")]
+            return [Key(id: "unfound", color: Theme.unfound, label: "Not found"),
+                    Key(id: "found", color: Theme.found, label: "Found")]
                 + tiers.filter { $0 >= .epic }.map {
-                    Key(id: $0.label, colour: $0.mapFill, label: $0.label.capitalized)
+                    Key(id: $0.label, color: $0.mapFill, label: $0.label.capitalized)
                 }
         }
     }
@@ -406,7 +427,7 @@ struct MapScreen: View {
             ForEach(keys) { key in
                 VStack(spacing: 4) {
                     RoundedRectangle(cornerRadius: 3, style: .continuous)
-                        .fill(key.colour)
+                        .fill(key.color)
                         .frame(height: 9)
                     Text(key.label)
                         .font(.plates(size: 9, weight: .semibold))

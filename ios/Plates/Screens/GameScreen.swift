@@ -22,6 +22,8 @@ struct GameScreen: View {
     private let location = TripLocation.shared
     private let handoff = VoiceHandoff.shared
 
+    @Environment(TourGuide.self) private var tour
+
     @State private var canadaExpanded = false
     @State private var query = ""
     @State private var searchOpen = false
@@ -110,7 +112,7 @@ struct GameScreen: View {
     ///
     /// The banked half is applied even with no route to speak of — a book that has
     /// never had a location fix still knows what each plate was worth at the moment
-    /// it was claimed, and that is the number the found tile's pip is coloured by.
+    /// it was claimed, and that is the number the found tile's pip is colored by.
     private var rarities: [String: Int] {
         guard let collection else { return [:] }
         // Was `?? [:]` with no route, which left every unbanked plate to fall through
@@ -191,6 +193,15 @@ struct GameScreen: View {
             // entirely on how long the drive is.
             if let origin = trip.originCoordinate, let destination = trip.destinationCoordinate {
                 location.tune(forRouteLength: GreatCircle.metres(origin, destination))
+                // Warm the road for the rarity model, which cannot ask for it itself:
+                // it runs inside a render and only reads what is already cached. Until
+                // something fetches it, the trip is scored against the straight line
+                // between the pins, which cuts every corner the road takes. See
+                // `PlateRarity.Route.path` for what that costs.
+                //
+                // Nothing here uses the result. It lands in `RouteCache`, and the next
+                // time the grid renders, `Trip.route` finds it there.
+                Task { _ = await RouteCache.shared.directions(from: origin, to: destination) }
             }
         case .book:
             // No route, so no length to tune against — the default filter is the
@@ -242,7 +253,32 @@ struct GameScreen: View {
         // bar. The copy sits here rather than in a table elsewhere: whoever changes
         // what the tip says is the person looking at the screen it appears on.
         .coachLayer(Self.coachCopy)
+        .tourLayer(.game, Self.tourCopy)
+        .onAppear { tour.offer(.game, stops: tourStops) }
+        .onDisappear { tour.left(.game) }
     }
+
+    /// Which stops this screen can host, in the order they sit on it.
+    ///
+    /// The fork is a different screen wearing the same tab, and it has exactly one
+    /// thing to say. Offering the other four would be pointing at a search field, a
+    /// filter and a grid that are not drawn.
+    private var tourStops: [Tour.Stop] {
+        guard target != nil else { return [.gameTarget] }
+        // Voice and the filter ride in the fixed header above the scroll view, so
+        // they cost no scrolling wherever they fall in the route. The grid goes last
+        // on purpose: tapping a plate is the whole game, and it is the sentence
+        // somebody should still have in their head when the scrim lifts.
+        return [.gameTarget, .gameVoice, .gameFilter, .gameParty, .gameGrid]
+    }
+
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .gameTarget: "This is what you are filling right now. Tap it to switch between a trip and a book, or to start another one.",
+        .gameVoice: "Driving, or hands full of snacks? Tap this and just say the states out loud as you see them.",
+        .gameFilter: "Hide the ones you have already found, or turn whole sets off. Canada and the bonus plates live in here.",
+        .gameParty: "Everyone in the car keeps their own phone. Start a Party and every plate anybody spots lands in the same score.",
+        .gameGrid: "And that is the game. See one on the road, tap its plate. The rarer it is where you're heading, the more it is worth."
+    ]
 
     /// The grid, or the fork that offers to make something to fill.
     private var screen: some View {
@@ -286,6 +322,7 @@ struct GameScreen: View {
                     .tint(Theme.route)
                 Button("Start a book") { creatingBook = true }
             }
+            .tourAnchor(.gameTarget, prefersAbove: true)
         }
     }
 
@@ -509,11 +546,13 @@ struct GameScreen: View {
                     .buttonStyle(.plain)
                     .accessibilityLabel("Voice mode")
                     .accessibilityHint("Listens and logs plates as you say them")
+                    .tourAnchor(.gameVoice)
 
                     PlateFilterChip(filter: filter,
                                     leftCount: leftCount(in: collection)) {
                         showFilter(for: collection)
                     }
+                    .tourAnchor(.gameFilter)
                 }
             }
             #if DEBUG
@@ -530,12 +569,16 @@ struct GameScreen: View {
                         // Always tappable, even with one trip: it is how you move
                         // between the trip you are on and a book, which is not
                         // obvious from a card that looks like a heading.
-                        switch target {
-                        case .trip(let trip):
-                            TripCard(trip: trip, onSwitch: { showSwitcher(current: target) })
-                        case .book(let book):
-                            BookCard(book: book, onSwitch: { showSwitcher(current: target) })
+                        Group {
+                            switch target {
+                            case .trip(let trip):
+                                TripCard(trip: trip, onSwitch: { showSwitcher(current: target) })
+                            case .book(let book):
+                                BookCard(book: book, onSwitch: { showSwitcher(current: target) })
+                            }
                         }
+                        .tourAnchor(.gameTarget)
+                        .tourStop(.gameTarget)
 
                         if let state = trackingState {
                             TrackingHintCard(state: state,
@@ -548,6 +591,8 @@ struct GameScreen: View {
                         if participants.count > 1 {
                             PlayerStrip(standings: collection.standings(among: participants))
                                 .padding(.top, 12)
+                                .tourAnchor(.gameParty)
+                                .tourStop(.gameParty)
                         } else {
                             // Solo still needs a way in, or the party is invisible to
                             // anyone who never opens the More tab. It used to offer to
@@ -557,7 +602,7 @@ struct GameScreen: View {
                                 HStack(spacing: 6) {
                                     Image(systemName: "person.2")
                                         .font(.system(size: 12, weight: .semibold))
-                                    Text("Playing with others? Start a party")
+                                    Text("Playing with others? Start a Party")
                                         .font(.plates(size: 13, weight: .semibold))
                                 }
                                 .foregroundStyle(Theme.route)
@@ -571,6 +616,8 @@ struct GameScreen: View {
                                 )
                             }
                             .padding(.top, 12)
+                            .tourAnchor(.gameParty)
+                            .tourStop(.gameParty)
                         }
 
                         // A section renders exactly when it has tiles to draw, which
@@ -594,6 +641,7 @@ struct GameScreen: View {
                                 hostsCoachMarks: true
                             )
                             .padding(.top, 18)
+                            .tourStop(.gameGrid)
                         }
 
                         // D.C. and Puerto Rico are one section on screen but two sets
@@ -622,6 +670,7 @@ struct GameScreen: View {
                     .padding(.bottom, 28)
                 }
                 .scrollIndicators(.hidden)
+                .tourScrolling(proxy)
                 .onChange(of: query) { _, q in
                     guard let hit = PlateSearch.firstMatch(query: q),
                           !q.trimmingCharacters(in: .whitespaces).isEmpty else { return }
@@ -729,7 +778,7 @@ struct GameScreen: View {
         .frame(maxWidth: .infinity)
     }
 
-    /// The first tile actually wearing somebody else's colour.
+    /// The first tile actually wearing somebody else's color.
     ///
     /// Not merely the first found tile: the corner chip only appears on a plate
     /// somebody else called, so anchoring anywhere else would be describing a mark
@@ -835,6 +884,10 @@ struct GameScreen: View {
                 .zIndex(celebrating?.plate.code == plate.code ? 2 : (searching && hit ? 1 : 0))
                 .id(plate.code)
                 .coachAnchor(.firstTap, active: plate.code == firstUnfound)
+                // Rides on the same "first still to find" tile the `firstTap` balloon
+                // uses, and for the same reason: on a grid nobody has touched yet that
+                // is simply the first tile, which is where the eye already is.
+                .tourAnchor(.gameGrid, active: plate.code == firstUnfound)
                 .coachAnchor(.uncheck, active: plate.code == firstCounted)
                 .coachAnchor(.spotterChip, active: plate.code == firstBySomebodyElse)
                 // Non-matches fade back rather than disappearing, so the grid
@@ -1142,7 +1195,7 @@ struct GameScreen: View {
         coach.request(.uncheck, when: !collection.allSightings.isEmpty)
     }
 
-    /// The coloured corner, explained the first time one is on screen.
+    /// The colored corner, explained the first time one is on screen.
     ///
     /// This is the only tip in the app about something that arrived rather than
     /// something you can do — a party landed, or a shared book synced, and suddenly
@@ -1327,7 +1380,7 @@ struct TileButtonStyle: ButtonStyle {
 /// the smallest possible interruption to a car full of people looking out of the
 /// window.
 ///
-/// The colour arrives as a dot rather than a word, because the interesting thing
+/// The color arrives as a dot rather than a word, because the interesting thing
 /// about somebody else's plate is that it happened, not what it scored.
 private struct NoticeToast: View {
     let text: LocalizedStringKey

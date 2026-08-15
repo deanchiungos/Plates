@@ -25,7 +25,7 @@ extension CanadaMap: MapGeometry {}
 /// One interactive map: fills, rarity bands, callout chips for the regions too small
 /// to hit, pinch to zoom, drag to pan, double-tap to reset.
 ///
-/// Every colour decision is passed in rather than decided here — the screen owns what
+/// Every color decision is passed in rather than decided here — the screen owns what
 /// Found and Rarity mode mean, and two maps on the same screen must not be able to
 /// disagree about it. Zoom state, by contrast, lives *here*: each map is its own
 /// viewport, and pinching Canada should not drag the United States with it.
@@ -143,7 +143,7 @@ struct RegionMapView<G: MapGeometry>: View {
                             // Each region carries its band *inside* its own outline
                             // rather than as a stroke on the shared boundary. A stroke
                             // on the border belongs to both neighbours at once, so
-                            // where two rarities meet the colours overdraw each other
+                            // where two rarities meet the colors overdraw each other
                             // and neither is readable. Clipping and stroking at double
                             // width leaves exactly the inner half.
                             //
@@ -174,7 +174,7 @@ struct RegionMapView<G: MapGeometry>: View {
                     // boundary rather than as a band clipped inside the region.
                     //
                     // Inside was wrong for this one job. Every other band is inset so
-                    // neighbouring colours cannot overdraw each other, but a band
+                    // neighbouring colors cannot overdraw each other, but a band
                     // thick enough to read as "selected" is thick enough to swallow
                     // anything narrow: at 3.4x it closed up the Texas panhandle and
                     // the state came out a black blob. A centred stroke keeps its
@@ -194,7 +194,7 @@ struct RegionMapView<G: MapGeometry>: View {
                         // attention to came out muddy. Re-filling the interior clips
                         // the glow to the outside, which is also where a glow belongs:
                         // it should look like the region is lit from behind, not like
-                        // someone has coloured it in.
+                        // someone has colored it in.
                         //
                         // Widths and the blur radius are divided by the zoom so the
                         // halo holds its size on screen. A glow that grew with the map
@@ -639,7 +639,7 @@ struct RegionMapView<G: MapGeometry>: View {
     fileprivate func drawSpotlights(_ layer: inout GraphicsContext,
                                     size: CGSize, rect: CGRect, at time: Double) {
         for (code, tier) in lit {
-            let colour = tier.color
+            let color = tier.color
             // Each region reads the same clock at its own offset — see `phase`. The
             // islands of one region share it, so Hawaii pulses as a place rather than
             // as eight unrelated flickers.
@@ -682,7 +682,7 @@ struct RegionMapView<G: MapGeometry>: View {
                 case .epic:
                     layer.drawLayer { glow in
                         glow.addFilter(.blur(radius: w * 1.9 / scale))
-                        glow.stroke(path, with: .color(colour.opacity(breathe)),
+                        glow.stroke(path, with: .color(color.opacity(breathe)),
                                     lineWidth: w * 2.4 / scale)
                     }
 
@@ -693,17 +693,17 @@ struct RegionMapView<G: MapGeometry>: View {
                     layer.drawLayer { glow in
                         glow.addFilter(.blur(radius: w * 2.1 / scale))
                         glow.stroke(path,
-                                    with: .color(colour.opacity(isMythic ? throb : 0.45)),
+                                    with: .color(color.opacity(isMythic ? throb : 0.45)),
                                     lineWidth: w * (isMythic ? 2.8 : 2.4) / scale)
                     }
-                    layer.stroke(path, with: .color(colour.opacity(0.9)),
+                    layer.stroke(path, with: .color(color.opacity(0.9)),
                                  lineWidth: w * (isMythic ? 1.0 : 0.8) / scale)
 
                     let turn = clock / (isMythic ? Self.mythicLap : Self.legendaryLap)
                     layer.stroke(
                         path,
                         with: .conicGradient(
-                            Self.lobes(isMythic ? 4 : 3, colour,
+                            Self.lobes(isMythic ? 4 : 3, color,
                                        hot: tier.highlight, spread: isMythic ? 0.10 : 0.12),
                             center: centre,
                             angle: .degrees(turn * 360)),
@@ -717,7 +717,7 @@ struct RegionMapView<G: MapGeometry>: View {
                         layer.stroke(
                             path,
                             with: .conicGradient(
-                                Self.lobes(3, colour, hot: tier.highlight, spread: 0.13),
+                                Self.lobes(3, color, hot: tier.highlight, spread: 0.13),
                                 center: centre,
                                 angle: .degrees(back * 360)),
                             lineWidth: w * 1.3 / scale)

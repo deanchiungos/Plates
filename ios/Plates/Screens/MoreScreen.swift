@@ -8,6 +8,7 @@ import SwiftUI
 /// that do not earn a slot of their own.
 struct MoreScreen: View {
     @Environment(Router.self) private var router
+    @Environment(TourGuide.self) private var tour
     @State private var showTrail = false
     @State private var showSettings = false
     @State private var showParty = false
@@ -19,41 +20,50 @@ struct MoreScreen: View {
                 Theme.ground.ignoresSafeArea()
 
                 ScrollView {
+                  ScrollViewReader { scroller in
                     VStack(spacing: 20) {
                         // Grouped rather than one undifferentiated list. Three rows on
                         // an empty screen read as an oversight; two named groups read
                         // as the whole of what is here, which is the truth.
                         MoreSection(String(localized: "While you play")) {
                             MoreRow(title: "Party") { PartyScreen() }
+                                .tourAnchor(.moreParty)
 
                             MoreDivider()
 
                             MoreRow(title: "Plate lookup") { PlateLookupScreen() }
                         }
+                        .tourStop(.moreParty)
 
                         MoreSection(String(localized: "Looking back")) {
                             MoreRow(title: "Trail") { TrailScreen() }
+                                .tourAnchor(.moreTrail)
 
                             MoreDivider()
 
                             MoreRow(title: "Historical plates") { HistoricalPlatesScreen() }
                         }
+                        .tourStop(.moreTrail)
 
                         MoreSection(String(localized: "App")) {
                             // Above Settings, because it is the row somebody with a
                             // question wants and Settings is the row somebody with
                             // an intention wants. Questions come first.
                             MoreRow(title: "How to play") { HowToPlayScreen() }
+                                .tourAnchor(.moreHowTo, prefersAbove: true)
 
                             MoreDivider()
 
                             MoreRow(title: "Settings") { SettingsScreen() }
                         }
+                        .tourStop(.moreHowTo)
 
                         footer
                     }
                     .padding(Theme.screenPadding)
                     .padding(.bottom, 8)
+                    .tourScrolling(scroller)
+                  }
                 }
             }
             .navigationTitle("More")
@@ -68,7 +78,11 @@ struct MoreScreen: View {
             // tab; `onChange` covers a jump made while already standing on it.
             .onAppear {
                 if router.pendingTrail != nil { showTrail = true }
+                // Every stop here is a permanent row, so this tour is the one that
+                // never has to ask what is on screen.
+                tour.offer(.more, stops: Tour.stops(of: .more))
             }
+            .onDisappear { tour.left(.more) }
             .onChange(of: router.pendingTrail) { _, pending in
                 if pending != nil { showTrail = true }
             }
@@ -87,6 +101,12 @@ struct MoreScreen: View {
             }
             #endif
         }
+        // Last in the chain, so the scrim covers this screen and nothing else.
+        .tourLayer(.more, [
+            .moreParty: "Everyone in the car keeps their own phone. Start a Party here and your plates pool into one score.",
+            .moreTrail: "The Trail is the map of where you actually were when you spotted each plate.",
+            .moreHowTo: "That is the whole app. Everything you have just been shown lives in here, any time you want it again."
+        ])
     }
 
     /// The wordmark, and the thing that stops the last card floating in space.

@@ -79,6 +79,23 @@ final class RouteCache {
         return found
     }
 
+    /// The road for these two ends **if it is already known**, without asking for it.
+    ///
+    /// For `PlateRarity`, which is synchronous, runs inside a `View` body, and is
+    /// asked sixty-five times per render. It cannot await a network round trip and it
+    /// must not start one: rarity has a correct answer without the road — the straight
+    /// segment — and the road only sharpens it.
+    ///
+    /// So this reports what the disk cache already holds and nothing more. A trip
+    /// whose directions have never been fetched scores off the straight line until
+    /// something that *can* wait — the editor preview, the share poster — fetches them
+    /// and the next render picks them up.
+    func knownPath(from start: CLLocationCoordinate2D,
+                   to end: CLLocationCoordinate2D) -> [PlateRarity.Waypoint] {
+        (entries[Self.key(start, end)]?.coordinates ?? [])
+            .map { .init(lat: $0.lat, lon: $0.lon) }
+    }
+
     /// Rounded to about a hundred metres. The endpoints come from a place the user
     /// tapped in a picker, so they are already identical between the two callers —
     /// but a coordinate that arrived by a different route should not miss the cache

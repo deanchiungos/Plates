@@ -258,7 +258,7 @@ private struct CodeGrid: View {
 /// The app's palette, by value.
 ///
 /// Mirrored rather than shared for the same reason `WidgetSnapshot` is: a whole
-/// framework target to carry a handful of colours across is a worse trade than a
+/// framework target to carry a handful of colors across is a worse trade than a
 /// handful of literals. They are the same hexes as `Theme` — if those ever move,
 /// these follow.
 enum WidgetPalette {
@@ -269,7 +269,7 @@ enum WidgetPalette {
     static let line = Color(red: 0xE7 / 255, green: 0xE1 / 255, blue: 0xD1 / 255)
     static let paint = Color(red: 0xF0 / 255, green: 0xB4 / 255, blue: 0x29 / 255)
 
-    /// Only the top of the scale gets a colour. `RarityTier` has five bands and the
+    /// Only the top of the scale gets a color. `RarityTier` has five bands and the
     /// widget has room for one distinction: worth remarking on, or not.
     static func rarity(_ value: Int) -> Color { value >= 8 ? paint : ink }
 }

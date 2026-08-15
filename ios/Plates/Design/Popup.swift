@@ -233,7 +233,7 @@ struct PopupButton: View {
 }
 
 /// A pickable row inside a popup — a player, a trip. The leading dot carries the
-/// identity colour so "who spotted it" can be answered by colour alone.
+/// identity color so "who spotted it" can be answered by color alone.
 struct PopupChoice<Trailing: View>: View {
     /// Resolved `Text`, because these rows carry both kinds of words: "Stack
     /// everything" is the app talking and belongs in the catalog, while the trip

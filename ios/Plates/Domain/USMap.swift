@@ -132,6 +132,77 @@ enum USMap {
         CGPoint(x: rect.minX + p.x * rect.width, y: rect.minY + p.y * rect.height)
     }
 
+    // MARK: - Geography
+
+    /// The region a lat/lon fix is standing in, or nil offshore or abroad.
+    ///
+    /// The same outlines that draw the map, entered from geography instead of
+    /// screen space. The stored coordinates are spherical Albers equal-area —
+    /// standard parallels 29.5 and 45.5, central meridian 96°W, the albersUsa
+    /// constants — under an affine onto the grid. The generator script was never
+    /// committed, so both were recovered by least squares against the corners that
+    /// statute pins to exact parallels and meridians (the Colorado and Wyoming
+    /// rectangles, the 49th parallel, the four-corners point); the canonical
+    /// parameters fit those anchors to under a kilometre, so this is the original
+    /// transform, not an approximation of it.
+    ///
+    /// Honest about its limits, which are the 20m outline's limits: a point within
+    /// a few kilometres of a border can resolve to the neighbour (the simplified
+    /// Hudson bank hands Jersey City to New York), and a coastal sliver the
+    /// simplification dropped resolves to nothing (Key West). Callers get the
+    /// containing region or nil — never a nearest guess, because "nearest outline"
+    /// would hand Windsor, Ontario to Michigan.
+    ///
+    /// Alaska, Hawaii and Puerto Rico are drawn as insets, so the projection
+    /// cannot land on them; they are isolated enough that boxes are exact.
+    static func region(atLat lat: Double, lon: Double) -> String? {
+        if lat >= 51, lon <= -129 || lon >= 172 { return "AK" }
+        if (18...23).contains(lat), (-161)...(-154) ~= lon { return "HI" }
+        if (17.4...18.6).contains(lat), (-68.1)...(-65.1) ~= lon { return "PR" }
+
+        let p = gridPoint(lat: lat, lon: lon)
+        // Smallest region first, so DC beats any overlap with Maryland's ring.
+        for code in codes.reversed() where code != "AK" && code != "HI" && code != "PR" {
+            guard let rings = outlines[code] else { continue }
+            let crossings = rings.reduce(0) { $0 + ($1.count > 2 && contains(p, in: $1) ? 1 : 0) }
+            if crossings % 2 == 1 { return code }
+        }
+        return nil
+    }
+
+    /// Albers cone constant and pot, from the standard parallels.
+    private static let albersN = (sin(29.5 * .pi / 180) + sin(45.5 * .pi / 180)) / 2
+    private static let albersC = pow(cos(29.5 * .pi / 180), 2)
+        + 2 * albersN * sin(29.5 * .pi / 180)
+
+    /// Projection output onto the normalised 0...1 grid the outlines are stored in.
+    /// The affine was fitted in grid units of 10000, hence the divide.
+    private static func gridPoint(lat: Double, lon: Double) -> CGPoint {
+        let phi = lat * .pi / 180
+        let rho = (albersC - 2 * albersN * sin(phi)).squareRoot() / albersN
+        let theta = albersN * (lon + 96) * .pi / 180
+        let x = rho * sin(theta)
+        let y = rho * cos(theta)   // grows southward, like the grid
+        return CGPoint(x: (13839.260308 * x + 5105.787884) / 10000,
+                       y: (15679.300741 * y - 16596.656446) / 10000)
+    }
+
+    /// Even-odd ray cast. `Path.contains` needs a rect and a render pass; this is
+    /// sixty-five polygons of plane geometry, called from the rarity model.
+    private static func contains(_ p: CGPoint, in ring: [CGPoint]) -> Bool {
+        var inside = false
+        var j = ring.count - 1
+        for i in ring.indices {
+            let a = ring[i], b = ring[j]
+            if (a.y > p.y) != (b.y > p.y),
+               p.x < (b.x - a.x) * (p.y - a.y) / (b.y - a.y) + a.x {
+                inside.toggle()
+            }
+            j = i
+        }
+        return inside
+    }
+
     private static func area(of code: String) -> CGFloat {
         guard let ring = outlines[code]?.first else { return 0 }
         var sum: CGFloat = 0

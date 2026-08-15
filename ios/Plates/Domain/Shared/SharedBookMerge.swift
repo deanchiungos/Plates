@@ -103,7 +103,7 @@ enum SharedBookMerge {
     /// Whoever spotted it, as a local `Player` row.
     ///
     /// A contributor to a shared book is not somebody you have ever sat in a car
-    /// with, so there is no roster they arrive on. Their name and colour come
+    /// with, so there is no roster they arrive on. Their name and color come
     /// attached to each sighting instead, and the first one creates the row — which
     /// is what makes spotter chips and avatar stacks work on a book filled by
     /// somebody in another state.

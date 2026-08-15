@@ -7,6 +7,7 @@ import SwiftUI
 /// candidate pictures in front of them fast — the description underneath is
 /// there to confirm a hunch, not to be read first.
 struct PlateLookupScreen: View {
+    @Environment(TourGuide.self) private var tour
     var initialQuery: String = ""
 
     @State private var query = ""
@@ -14,7 +15,7 @@ struct PlateLookupScreen: View {
     @FocusState private var focused: Bool
 
     /// Starters, for the blank state. Chosen to show the range of what works:
-    /// an object, a colour, a landscape, an era.
+    /// an object, a color, a landscape, an era.
     /// Deliberately *not* localised, and the only user-facing text in the app that
     /// is deliberately left out of the String Catalog.
     ///
@@ -40,9 +41,11 @@ struct PlateLookupScreen: View {
 
             VStack(spacing: 0) {
                 field
+                    .tourAnchor(.lookupField)
 
                 if query.trimmingCharacters(in: .whitespaces).isEmpty {
                     blank
+                        .tourAnchor(.lookupHints)
                 } else if groups.isEmpty {
                     noResults
                 } else {
@@ -54,6 +57,13 @@ struct PlateLookupScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $selected) { PlateDesignDetail(design: $0) }
         .onAppear { if query.isEmpty { query = initialQuery } }
+        // Only on the blank screen. Arriving with a query already typed means somebody
+        // came here from a deep link or a previous search, and dimming their results to
+        // explain the field they have already used is the app talking over itself.
+        .onAppear {
+            tour.offer(.lookup, stops: query.isEmpty ? Tour.stops(of: .lookup) : [])
+        }
+        .onDisappear { tour.left(.lookup) }
         .onChange(of: query) {
             groups = PlateLookup.grouped(query)
             // A new search should not inherit the last one's open rows.
@@ -75,6 +85,10 @@ struct PlateLookupScreen: View {
             }
             #endif
         }
+        .tourLayer(.lookup, [
+            .lookupField: "For the one that went past too fast. Describe it in plain words: colors, a mountain, a bird, half a slogan.",
+            .lookupHints: "These are what is worth mentioning. You do not need all of them, and you do not need the state."
+        ])
     }
 
     // MARK: - Field
@@ -376,7 +390,7 @@ private struct PlateResultRow: View {
                     .lineLimit(1)
 
                 // The graphic is what someone remembers, so it is the line that
-                // gets the room — falling back to the base colour when a design
+                // gets the room — falling back to the base color when a design
                 // has no picture on it at all.
                 Text(design.graphics.isEmpty ? design.base : design.graphics)
                     .font(.plates(size: 12))

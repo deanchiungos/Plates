@@ -112,7 +112,7 @@ extension PlateCollection {
         allSightings.filter { $0.plateCode == plate.code }.count
     }
 
-    /// Most recent spotter of a plate — drives the colour bar on a found tile.
+    /// Most recent spotter of a plate — drives the color bar on a found tile.
     func spotter(of plate: Plate) -> Player? {
         allSightings
             .filter { $0.plateCode == plate.code }

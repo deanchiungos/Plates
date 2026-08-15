@@ -67,7 +67,7 @@ enum DevicePlayer {
     ///
     /// This matters most in a party. Every fresh install seeds the same "Me", so
     /// three phones in a car were three players called Me: identical in the member
-    /// list, the standings and the spotter chips, with only the colour telling them
+    /// list, the standings and the spotter chips, with only the color telling them
     /// apart. Names are the fix, and the party is where they are worth insisting on.
     static let profileSetKey = "devicePlayerNamed"
 

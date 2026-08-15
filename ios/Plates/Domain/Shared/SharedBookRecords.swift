@@ -68,7 +68,7 @@ enum SharedBookRecords {
 
     /// One sighting, filed under a book.
     ///
-    /// The contributor's name and colour ride along rather than being looked up.
+    /// The contributor's name and color ride along rather than being looked up.
     /// There is no roster to look them up *in*: CloudKit participants are Apple
     /// accounts, not rows in your `Player` table, and the whole point of a shared
     /// book is that the other person is somebody you may never sit in a car with.

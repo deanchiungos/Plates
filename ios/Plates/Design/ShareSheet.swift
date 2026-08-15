@@ -101,7 +101,7 @@ enum ShareInvite {
     /// One sentence, then the link on its own line so it is not swallowed by
     /// punctuation when a messaging app auto-detects it.
     static func line(for title: String, states: Int) -> String {
-        let sentence = String(localized: "\(title) — \(states) states spotted on Plates.")
+        let sentence = String(localized: "\(title): \(states) states spotted on Plates.")
         guard let storeURL else { return sentence }
         return sentence + "\n" + storeURL
     }

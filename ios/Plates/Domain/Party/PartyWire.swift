@@ -34,9 +34,26 @@ struct PartyEnvelope: Codable {
     var v: Int
     var payload: Payload
 
-    init(_ payload: Payload, v: Int = PartyEnvelope.currentVersion) {
+    /// Which player the *sending device* is playing as.
+    ///
+    /// An `MCPeerID`'s display name is fixed for the life of the process — the
+    /// framework has no way to rename one — so a party that identified people by it
+    /// was showing a name from whenever the session started, and no amount of fixing
+    /// the roster underneath could move it. This is the identity that does not go
+    /// stale: a player id resolves to a live `Player` row, and the row is what a
+    /// rename changes.
+    ///
+    /// Optional, and therefore not a version bump — the rule at `currentVersion`.
+    /// A message without one falls back to the peer's display name, which is what
+    /// every message did before, so an older phone in the car degrades to exactly
+    /// the old behaviour instead of breaking.
+    var from: UUID?
+
+    init(_ payload: Payload, from: UUID? = nil,
+         v: Int = PartyEnvelope.currentVersion) {
         self.v = v
         self.payload = payload
+        self.from = from
     }
 
     enum Payload: Codable {
@@ -117,7 +134,7 @@ struct PlayerEvent: Codable, Identifiable, Equatable {
     /// a broken one — so this needed no version bump, unlike `PartyRules`.
     var avatar: String?
     /// Kept because it is the stable tie-break for standings order, and for the
-    /// colour de-collision rule: both need every device to sort players the same
+    /// color de-collision rule: both need every device to sort players the same
     /// way, and join order is the only ordering that is a fact rather than a
     /// preference.
     var joinedAt: Date

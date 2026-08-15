@@ -79,7 +79,7 @@ enum DemoData {
 
         // `-fullCar` tops the car up to the six-player cap. Three people read fine
         // in the standings strip and six is where it has to hold up, so the fixture
-        // needs both. Named after the last three colours in the palette, since the
+        // needs both. Named after the last three colors in the palette, since the
         // cap exists because the palette runs out.
         if ProcessInfo.processInfo.arguments.contains("-fullCar") {
             for (offset, name) in ["Nan", "Sam", "Jo"].enumerated() {

@@ -17,7 +17,7 @@ import SwiftUI
 /// rots the first time a control moves, and the rot is invisible — nothing fails to
 /// compile, the page just quietly starts lying. So every drawing on this page is
 /// built from the app's own live vocabulary instead: real `PlateTile`s with real
-/// artwork, the actual tab-bar symbols, `RarityTier`'s actual colours. A picture
+/// artwork, the actual tab-bar symbols, `RarityTier`'s actual colors. A picture
 /// here cannot disagree with the app, because it *is* the app — restyle a tile and
 /// this page restyles with it.
 ///
@@ -57,66 +57,72 @@ struct HowToPlayScreen: View {
     private var game: some View {
         SettingsGroup("The game") {
             Illustration { Art.tiles }
-            Paragraph("Spot a plate through the window, then tap it on the Game tab. The tile turns over to that state's artwork and the plate is yours for this trip.")
-            Paragraph("How it scores depends on the trip. Classic gives a point a state, however many times you see it. Weighted gives more for plates from far away. Unlimited counts every single sighting, so the same state can keep earning \u{2014} hold a plate there to take a count back.")
+            Paragraph("See a plate out the window, then tap it on the Game tab. The tile flips over to that state's real artwork, and it is yours for the rest of the trip.")
+            Paragraph("Each trip decides how it scores. Classic gives you one point per state, however many times you see it. Weighted is worth more for plates from far away from your route. Unlimited counts every sighting, so the same state keeps earning all drive.")
+            Paragraph("Tapped one by accident? In Classic and Weighted, tap it again and the app asks before it comes off. In Unlimited, press and hold it instead, because a tap there means you saw another one.")
         }
     }
 
     private var tripsAndBooks: some View {
         SettingsGroup("Trips and books") {
             Illustration { Art.tripAndBook }
-            Paragraph("A trip is one drive. It has a route, it has a finish, and its score is about that journey. A book never ends \u{2014} it is the one you keep in the car and fill over years.")
-            Paragraph("Make either from its own tab, and use SWITCH at the top of the Game tab to choose which one your taps go into.")
-            Paragraph("Swipe a trip left in the list to pin it to the top, or to mark it done. A finished trip stops collecting and files itself under Finished, where you can open it for its map and its story. Reopen it whenever you like.")
+            Paragraph("A trip is one drive. You give it a start and a destination, and it scores what you spot on the way. A book never ends. It is the one you keep in the car and fill in over years.")
+            Paragraph("Start either one from its own tab. Tap SWITCH at the top of the Game tab to choose which one your taps go into.")
+            Paragraph("Swipe a trip to the left for its quick actions. You can pin it to the top of the list, or mark it Done when you arrive. A trip you have marked done stops collecting and moves to the Finished section, where its map and its story are still there to open. You can reopen it any time.")
         }
     }
 
     private var folding: some View {
         SettingsGroup("Adding a trip to a book") {
             Illustration { Art.fold }
-            Paragraph("Open a finished trip and choose Add to book. Stack everything, and every sighting carries over; fill the gaps, and only the plates the book is missing do.")
-            Paragraph("The trip keeps its own plates either way \u{2014} the book is showing them, not taking them. Take them back out whenever you like.")
+            Paragraph("Finish a trip, open it, and choose Add to book. There are two ways to do it. Stack everything brings across every plate you saw, even the ones the book already has. Fill the gaps adds only the ones it is missing.")
+            Paragraph("Either way, the trip keeps its own plates. The book is showing them, not taking them, and you can pull them back out whenever you want.")
         }
     }
 
     private var rarity: some View {
         SettingsGroup("Rarity") {
             Illustration { Art.rarityRamp }
-            Paragraph("Every plate is scored from common to legendary against where you are driving, using how many of that state's cars are actually on the road. A New Jersey plate is nothing in Newark and a banner in Sacramento.")
-            Paragraph("A plate keeps the value it had when you called it. Driving on afterwards never quietly rewrites what a find was worth.")
+            Paragraph("Every plate is rated from common up to mythic, based on where you are driving and how many of that state's cars are really on the road. The same New Jersey plate is ordinary around Newark and a great find out in California.")
+            Paragraph("Six places are always mythic, because you cannot drive to any of them: Alaska, Hawaii, Puerto Rico, Yukon, the Northwest Territories and Nunavut. One more mythic spot goes to whichever state is hardest to see from where you are, so it changes as you travel.")
+            Paragraph("A plate keeps whatever it was worth the moment you called it. Driving on later never changes what an earlier find scored.")
         }
     }
 
     private var mapAndTrail: some View {
         SettingsGroup("The Map and the Trail") {
             Illustration { Art.mapAndTrail }
-            Paragraph("The Map answers which states you have collected. The Trail answers where you were when you collected them \u{2014} it needs location, which the Game tab offers to turn on.")
+            Paragraph("The Map shows which states you have collected, and it can also color them in by how rare each one is where you are.")
+            Paragraph("The Trail shows where you were when you collected them, so it needs your location. The Game tab offers to turn that on the first time it would help.")
         }
     }
 
     private var together: some View {
         SettingsGroup("Playing together") {
             Illustration { Art.together }
-            Paragraph("A party is for one car. Everybody opens Plates, one person starts it, the rest join over the local network, and the same drive is scored on every phone with a colored corner on each tile showing who called it. No account and no signal needed.")
-            Paragraph("A shared book is for people who are not together. Invite somebody from a book you own and you both add plates to it from wherever you are, over iCloud.")
+            Paragraph("A party is for everyone in one car. Each person opens Plates on their own phone, one of you starts the party, and the rest join over the local network. From then on the same drive is scored on every phone, and a small colored circle on each tile shows who called it. No accounts, and no cell signal needed.")
+            Paragraph("A shared book is for people who are not in the same car. Invite someone to a book you own and you can both add plates to it from wherever you are, through iCloud.")
         }
     }
 
     private var handsFree: some View {
         SettingsGroup("Hands free") {
             Illustration { Art.voice }
+            Paragraph("Tap the waveform button at the top of the Game tab to start voice mode, then just say the states as you see them. It keeps listening, so a whole stretch of driving can go by without anyone picking up the phone. Say \u{201C}stop\u{201D} when you are done.")
             // Verbatim, and staying verbatim. A Siri phrase that is nearly right does
-            // nothing at all, so this is the one section on the page where the exact
-            // wording is load-bearing rather than editorial.
-            Paragraph("Say \u{201C}Hey Siri, log a plate in Plates\u{201D}, or name it outright: \u{201C}log New Jersey in Plates\u{201D}. Either one opens voice mode and keeps listening, so the rest of the trip needs no phone at all. Say \u{201C}stop\u{201D} when you are done.")
+            // nothing at all, so these two sentences are load-bearing rather than
+            // editorial: they must match `PlatesShortcuts` exactly, and if a phrase
+            // is changed there it has to be changed here in the same commit.
+            Paragraph("You can also start it without touching anything. Say \u{201C}Hey Siri, start voice mode in Plates\u{201D}, or just \u{201C}Hey Siri, Plates voice mode\u{201D}.")
+            Paragraph("If the voice reading plates back sounds robotic, that is the basic voice your iPhone comes with. Open \(VoiceSpeaker.voiceSettingsPath), download one marked Enhanced or Premium, and Plates will start using it right away.")
         }
     }
 
     private var widgetAndLookup: some View {
         SettingsGroup("The widget and the lookup") {
             Illustration { Art.widgetAndLookup }
-            Paragraph("Add the Collection widget to your Home Screen to see how the trip or book you are filling is doing without opening the app.")
-            Paragraph("Plate lookup, under More, is for the one you could not read in time: describe the colors and what was on it, and it shows you the designs that match.")
+            Paragraph("Add the Collection widget to your Home Screen and you can see how the trip or book you are filling is doing without opening the app.")
+            Paragraph("Plate lookup, under More, is for the one that went past too fast. Describe the colors and whatever you remember on it, and it shows you the designs that match.")
         }
     }
 
@@ -128,7 +134,7 @@ struct HowToPlayScreen: View {
     /// somebody who came here with a question, and the most useful for somebody
     /// deciding whether the tips are any good.
     private var replay: some View {
-        SettingsGroup("The tips") {
+        SettingsGroup("The tour") {
             Button {
                 Haptics.selection()
                 coach.replayTour()
@@ -142,7 +148,7 @@ struct HowToPlayScreen: View {
                         .font(.plates(size: 15, weight: .semibold))
                         .foregroundStyle(Theme.ink)
 
-                    Text("Tips appear once, as things come up. This brings them back, along with the introduction. Nothing you have collected changes.")
+                    Text("Each tab walks you round itself the first time you open it, and the smaller tips show up once each when the thing they are about is in front of you. This brings all of it back, along with the opening card. Nothing you have collected is affected.")
                         .font(.plates(size: 12))
                         .foregroundStyle(Theme.inkMuted)
                         .fixedSize(horizontal: false, vertical: true)
@@ -268,22 +274,29 @@ private enum Art {
         }
     }
 
-    /// Five plates climbing, in the five tier colours.
+    /// Six plates climbing, in the six tier colors.
     ///
-    /// The colours come from `RarityTier` itself, so this ramp is the same ladder the
-    /// find card and the map are using — grey, green, blue, violet, gold. Growing
-    /// rather than just recolouring, because colour alone is not a scale to somebody
-    /// who cannot separate green from blue.
+    /// The colors come from `RarityTier` itself, so this ramp is the same ladder the
+    /// find card and the map are using — grey, green, blue, violet, gold, and then
+    /// crimson, which steps off the ramp rather than extending it. Growing rather
+    /// than just recoloring, because color alone is not a scale to somebody who
+    /// cannot separate green from blue.
+    ///
+    /// Mythic is drawn here because the paragraph beside it names mythic. It was five
+    /// while the copy said "common to legendary", and the two have to move together
+    /// or the picture starts contradicting the sentence it illustrates.
     static var rarityRamp: some View {
-        let tiers: [RarityTier] = [.common, .uncommon, .rare, .epic, .legendary]
-        return HStack(alignment: .bottom, spacing: 7) {
+        let tiers: [RarityTier] = [.common, .uncommon, .rare, .epic, .legendary, .mythic]
+        return HStack(alignment: .bottom, spacing: 6) {
             ForEach(Array(tiers.enumerated()), id: \.offset) { index, tier in
-                let width = 22 + CGFloat(index) * 7
+                // Shallower steps than the five-tier version, so the sixth plate fits
+                // the band on the narrowest phone rather than being clipped off it.
+                let width = 20 + CGFloat(index) * 6
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .fill(tier.color)
                     .frame(width: width, height: width / Theme.tileAspect)
                     // The inset hairline every real plate has. Without it these are
-                    // five coloured rectangles; with it they are five plates, which
+                    // five colored rectangles; with it they are five plates, which
                     // is the difference between a legend and a picture.
                     .overlay(
                         RoundedRectangle(cornerRadius: 2.5, style: .continuous)
@@ -345,7 +358,7 @@ private enum Art {
     /// A car full of people, and two people who are not in it.
     ///
     /// Overlapping for the party — one car, shoulder to shoulder — and separated
-    /// across a cloud for the shared book. The colours are the app's real player
+    /// across a cloud for the shared book. The colors are the app's real player
     /// palette, so these are the same discs that appear on a tile's corner.
     static var together: some View {
         HStack(spacing: 20) {

@@ -43,7 +43,7 @@ enum RarityTier: Int, Comparable {
     /// Every tier is named, including the dull ones. Naming only the top three hid
     /// the scale that gives them meaning — "RARE" lands harder when you have seen
     /// "COMMON" and "UNCOMMON" go past and know where it sits on the ramp. What
-    /// escalates is the size and the colour, not whether the word appears at all.
+    /// escalates is the size and the color, not whether the word appears at all.
     /// `String(localized:)` and not a key, because the Map capitalises this one
     /// (`tier.label.capitalized`) and a `LocalizedStringKey` has no characters to
     /// capitalise. Wrapping still puts them all in the String Catalog.
@@ -74,7 +74,7 @@ enum RarityTier: Int, Comparable {
         case .epic:      return Color(hex: 0xA45BE8)
         case .legendary: return Color(hex: 0xF0B429)
         // Crimson, and deliberately off the grey/green/blue/violet/gold ladder
-        // rather than one more step along it. There is no colour past gold that
+        // rather than one more step along it. There is no color past gold that
         // still reads as "more"; going somewhere else entirely is what makes the
         // sixth tier look like a different kind of thing instead of a brighter
         // version of the fifth.
@@ -82,10 +82,10 @@ enum RarityTier: Int, Comparable {
         }
     }
 
-    /// The lit face of the tier — its own colour with the light on it.
+    /// The lit face of the tier — its own color with the light on it.
     ///
     /// Only ever the near side of a gradient, never a fill in its own right. A disc
-    /// of flat colour seven points across reads as a printed sticker at any
+    /// of flat color seven points across reads as a printed sticker at any
     /// saturation; the same disc with a highlight off one shoulder reads as a bead,
     /// and that is the whole difference between a mark you scan past and one you look
     /// at.
@@ -100,13 +100,13 @@ enum RarityTier: Int, Comparable {
         }
     }
 
-    /// How far the tier's colour bleeds past the edge of its dot.
+    /// How far the tier's color bleeds past the edge of its dot.
     ///
     /// Steeply weighted rather than evenly spaced, because a grid where every dot
     /// glows is a grid where none of them does. Common gets nothing at all — a plate
     /// that was wallpaper where you caught it should not be lit up about it — and
     /// legendary gets enough to find from across the screen without reading its
-    /// colour.
+    /// color.
     var glowRadius: CGFloat {
         switch self {
         case .common:    return 0
@@ -130,7 +130,7 @@ enum RarityTier: Int, Comparable {
         }
     }
 
-    /// Fill colour for the map, which needs a different ramp from the pips.
+    /// Fill color for the map, which needs a different ramp from the pips.
     ///
     /// `color` is tuned to read at four points on a white tile, and there the dark
     /// route blue of "uncommon" is simply a dot. Filling whole states with it made
@@ -194,7 +194,7 @@ enum RarityTier: Int, Comparable {
 /// Shown on every *first* find, not just rare ones, because the fun fact is the
 /// reward as much as the confetti is — and a fact you only ever see for Nunavut is
 /// a fact nobody sees. What escalates is the volume: the tier word grows and
-/// changes colour as the plate gets rarer, and a legendary one is big enough to
+/// changes color as the plate gets rarer, and a legendary one is big enough to
 /// read from the back seat.
 ///
 /// Deliberately not a popup: it must not need dismissing, must not block the next
@@ -269,7 +269,7 @@ struct FindBanner: View {
     }
 }
 
-/// A single wash of tier colour over the whole screen. Legendary only.
+/// A single wash of tier color over the whole screen. Legendary only.
 struct RarityFlash: View {
     let tier: RarityTier
     @State private var on = false

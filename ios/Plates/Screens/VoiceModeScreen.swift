@@ -219,7 +219,7 @@ struct VoiceModeScreen: View {
         case .listening:
             let heard = voice.transcript.trimmingCharacters(in: .whitespacesAndNewlines)
             if heard.isEmpty {
-                return "Just say the states as you see them — \u{201C}New Jersey\u{201D}, \u{201C}Ohio\u{201D}, \u{201C}that\u{2019}s a Texas\u{201D}."
+                return "Just say the states as you see them. \u{201C}New Jersey\u{201D}, \u{201C}Ohio\u{201D}, \u{201C}that\u{2019}s a Texas\u{201D}."
             }
             // Interpolated rather than concatenated: a key is built from a literal,
             // and `"“%@”"` is the one catalog entry every transcript flows through.

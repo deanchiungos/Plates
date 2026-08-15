@@ -83,11 +83,21 @@ struct TripCard: View {
                         .font(.plates(size: 10.5, weight: .bold))
                         .tracking(1.3)
                         .foregroundStyle(Theme.inkMuted)
-                    Spacer()
+                        // At an accessibility size this ran to three lines on a
+                        // 320pt phone — "ACTIVE / TRIP · / DAY 1" stacked under a
+                        // SWITCH sitting on the first of them — which reads as the
+                        // card having come apart. One line, shrunk to fit.
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
+                    Spacer(minLength: 8)
                     if onSwitch != nil {
                         Text("SWITCH")
                             .font(.plates(size: 10, weight: .bold))
                             .tracking(0.9)
+                            // The one control on this card. It gives up no width to
+                            // the eyebrow beside it.
+                            .lineLimit(1)
+                            .fixedSize(horizontal: true, vertical: false)
                         Image(systemName: "chevron.up.chevron.down")
                             .font(.system(size: 9, weight: .bold))
                     }
@@ -119,9 +129,19 @@ struct TripCard: View {
                     // scoring mode has not changed since you set it.
                     Text(trip.remainingLabel ?? (trip.routeLabel == nil ? "Start" : trip.scoringMode.label))
                         .foregroundStyle(trip.remainingLabel == nil ? Theme.inkMuted : Theme.route)
-                    Spacer()
+                        // "Weighted scoring" wrapped onto two lines at accessibility
+                        // sizes and left the count floating between them. One line;
+                        // it truncates rather than shrinking, because a
+                        // `minimumScaleFactor` here also shaved a percent off the
+                        // label at the *default* size, and a footer set a hair
+                        // smaller than the rest of the card is a change everybody
+                        // pays for to fix a size almost nobody uses.
+                        .lineLimit(1)
+                    Spacer(minLength: 8)
                     Text("\(trip.statesFound) of \(Plate.stateTotal)")
                         .monospacedDigit()
+                        .lineLimit(1)
+                        .fixedSize(horizontal: true, vertical: false)
                 }
                 .font(.plates(size: 11))
                 .foregroundStyle(Theme.inkMuted)
@@ -163,11 +183,17 @@ struct BookCard: View {
                         .font(.plates(size: 10.5, weight: .bold))
                         .tracking(1.3)
                         .foregroundStyle(Theme.inkMuted)
-                    Spacer()
+                        // As on `TripCard`, and for the same reason: two words are
+                        // enough to wrap at an accessibility size.
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
+                    Spacer(minLength: 8)
                     if onSwitch != nil {
                         Text("SWITCH")
                             .font(.plates(size: 10, weight: .bold))
                             .tracking(0.9)
+                            .lineLimit(1)
+                            .fixedSize(horizontal: true, vertical: false)
                         Image(systemName: "chevron.up.chevron.down")
                             .font(.system(size: 9, weight: .bold))
                     }
@@ -192,9 +218,12 @@ struct BookCard: View {
 
                 HStack {
                     Text("Collecting")
-                    Spacer()
+                        .lineLimit(1)
+                    Spacer(minLength: 8)
                     Text("\(book.statesFound) of \(Plate.stateTotal)")
                         .monospacedDigit()
+                        .lineLimit(1)
+                        .fixedSize(horizontal: true, vertical: false)
                 }
                 .font(.plates(size: 11))
                 .foregroundStyle(Theme.inkMuted)
@@ -276,7 +305,16 @@ struct PlayerStrip: View {
                         .frame(width: 16, height: 16)
                         .overlay(
                             Text(entry.player.initial)
-                                .font(Theme.PlateFont.condensed(10))
+                                // `glyph`, not `condensed`: the circle around it is
+                                // a fixed 16pt, so a letter that scaled with the
+                                // reader's text size grew straight out of it — at
+                                // accessibility sizes the initial was visibly taller
+                                // than the disc it sits in. Same rule `AvatarStack`
+                                // already follows. The name beside it still scales,
+                                // which is the part that is being read.
+                                .font(Theme.PlateFont.glyph(10))
+                                .minimumScaleFactor(0.7)
+                                .lineLimit(1)
                                 .foregroundStyle(Theme.ink)
                         )
                     Text(entry.player.name)

@@ -2,64 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!--
-	  A deliberately near-empty Info.plist.
-
-	  The target still has GENERATE_INFOPLIST_FILE = YES and keeps declaring the scene
-	  manifest, orientations and launch screen through INFOPLIST_KEY_* build settings;
-	  Xcode merges those into this file rather than replacing it. This exists only for
-	  the one key that has no INFOPLIST_KEY_ equivalent — the build system silently
-	  drops INFOPLIST_KEY_UIBackgroundModes, since background modes are normally
-	  written here by the Signing & Capabilities editor.
-
-	  remote-notification is what lets CloudKit wake the app on a silent push and pull
-	  changes down in the background. Without it sync still works, but only while the
-	  app is in the foreground.
-	-->
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
-	<!--
-	  A party is the phones in one car talking to each other directly, so iOS asks
-	  for local network access the first time one is started or looked for.
-
-	  Both _tcp and _udp are required. MultipeerConnectivity uses both, and
-	  declaring only the tcp half is the classic way to end up with a browser that
-	  runs happily and simply never finds anybody — no error, no prompt, nothing.
-	  The service name must match `PartySession.service` exactly.
-	-->
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>Plates uses the local network to find the other phones in your car, so everyone can share the plates they spot.</string>
-	<key>NSBonjourServices</key>
-	<array>
-		<string>_plates-party._tcp</string>
-		<string>_plates-party._udp</string>
-	</array>
-	<!--
-	  Export compliance, answered once here instead of per-upload.
-	
-	  "Non-exempt" is the operative word: the app does use encryption — MCSession is
-	  created with `.required`, and CloudKit is HTTPS — but both are Apple's own, which
-	  is exempt. There is no CryptoKit, no CommonCrypto and no Security framework in
-	  the project. Without this key every TestFlight upload stops and asks.
-	-->
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
-	<!--
-	  Required before iOS will offer this app as the thing that opens a CloudKit
-	  share link. Without it the recipient taps the invitation and is told they need
-	  a newer version of the app — which is not a version problem at all, and gives
-	  no hint that a missing plist key is the cause. Sharing a book cannot work
-	  without this, and nothing in the code can compensate for its absence.
-	-->
-	<key>CKSharingSupported</key>
-	<true/>
-	<!--
-	  The widget's way back in. Tapping it opens `plates://collect`, which routes to
-	  the Game tab — the second of the two things a widget was asked to do, and the
-	  reason the scheme exists at all. Nothing else in the app publishes a URL.
-	-->
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -71,14 +13,32 @@
 			</array>
 		</dict>
 	</array>
-	<!--
-	  Overpass — the app's text face, bundled. A free (OFL/LGPL) digitisation of
-	  Highway Gothic, the U.S. interstate signage face, so the prose is set in road
-	  signage the way the plate glyphs are set in DIN. Chosen over Avenir Next in
-	  the FontLab duel (`-fontLab duel` still shows the comparison). The four
-	  weights are exactly the ones `Theme.overpass` maps to; the licence sits next
-	  to the files in Resources/Fonts.
-	-->
+	<key>CKSharingSupported</key>
+	<true/>
+	<key>INAlternativeAppNames</key>
+	<array>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>Plate Game</string>
+		</dict>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>License Plates</string>
+		</dict>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_plates-party._tcp</string>
+		<string>_plates-party._udp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Plates uses the local network to find the other phones in your car, so everyone can share the plates they spot.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Voice mode listens while you drive so you can call out plates instead of tapping them.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Voice mode turns what you say into plate sightings. Recognition runs on your iPhone wherever the device supports it, so your speech does not leave it.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>overpass-regular.otf</string>
@@ -86,9 +46,9 @@
 		<string>overpass-bold.otf</string>
 		<string>overpass-heavy.otf</string>
 	</array>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Voice mode listens while you drive so you can call out plates instead of tapping them.</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Voice mode turns what you say into plate sightings. Recognition runs on your iPhone wherever the device supports it, so your speech does not leave it.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>

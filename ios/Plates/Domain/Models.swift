@@ -63,10 +63,10 @@ final class Player {
     /// How many people can be in the car: as many as you like.
     ///
     /// There was briefly a cap of six, on the reasoning that six is how many
-    /// identity colours there are and the standings strip ran out of width past
+    /// identity colors there are and the standings strip ran out of width past
     /// that. The width was the real problem and a cap was the wrong fix for it —
     /// the strip scrolls now, so each person keeps a readable card however many
-    /// there are. Colours do start repeating after the sixth, which is a genuine
+    /// there are. Colors do start repeating after the sixth, which is a genuine
     /// cost and a much smaller one than turning somebody away from the game.
 
     var initial: String { String(name.prefix(1)).uppercased() }
@@ -110,7 +110,7 @@ final class Trip {
     /// version of the game everyone already knows from the back seat — one point a
     /// state, nothing to explain. But the app's own answer to "what is this plate
     /// worth" is the route-aware rarity model, and under Classic that entire machine
-    /// is decoration: the tiers still flash, the map still colours, and none of it
+    /// is decoration: the tiers still flash, the map still colors, and none of it
     /// reaches the score. A default that ignores the best thing the app does is the
     /// wrong default.
     ///
@@ -225,12 +225,23 @@ final class Trip {
 
     /// What the rarity model needs from this trip, or nil if no start has been
     /// pinned yet — in which case rarity falls back to the national defaults.
+    @MainActor
     var route: PlateRarity.Route? {
         guard let oLat = originLat, let oLon = originLon else { return nil }
+        // The road between the pins, when it has already been fetched for something
+        // else — the editor's preview or the share poster. Never fetched from here:
+        // this is read during a render, and rarity has a correct answer without it.
+        var path: [PlateRarity.Waypoint] = []
+        if let dLat = destinationLat, let dLon = destinationLon {
+            path = RouteCache.shared.knownPath(from: .init(latitude: oLat, longitude: oLon),
+                                               to: .init(latitude: dLat, longitude: dLon))
+        }
         return .init(oLat: oLat, oLon: oLon,
                      dLat: destinationLat, dLon: destinationLon,
                      currentLat: currentLat, currentLon: currentLon,
-                     includeTrucks: includesTrucks)
+                     includeTrucks: includesTrucks,
+                     isWinter: PlateRarity.Route.snowbirdSeason,
+                     path: path)
     }
 
     /// "Newark → Orlando", or whichever half was filled in. Nil when neither was.
@@ -338,7 +349,8 @@ extension Book: PlateCollection {
     /// once.
     var route: PlateRarity.Route? {
         guard let lat = currentLat, let lon = currentLon else { return nil }
-        return .init(oLat: lat, oLon: lon, currentLat: lat, currentLon: lon)
+        return .init(oLat: lat, oLon: lon, currentLat: lat, currentLon: lon,
+                     isWinter: PlateRarity.Route.snowbirdSeason)
     }
 
     /// One point per state, permanently. Weighting a lifetime collection against a

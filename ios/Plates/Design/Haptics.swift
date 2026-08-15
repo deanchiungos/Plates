@@ -88,7 +88,7 @@ enum Haptics {
         }
     }
 
-    /// Moving between discrete choices: colours, scoring modes, trips, map regions.
+    /// Moving between discrete choices: colors, scoring modes, trips, map regions.
     static func selection() {
         guard allowed else { return }
         select.selectionChanged()
@@ -98,6 +98,19 @@ enum Haptics {
     static func popup() {
         guard allowed else { return }
         light.impactOccurred(intensity: 0.5)
+    }
+
+    /// A press-and-hold that reached its end and fired.
+    ///
+    /// Deliberately not `destructive()`: that is a `.warning`, and warning somebody
+    /// about skipping a tutorial is absurd. Nor `selection()`, which is the tick of
+    /// moving between choices and far too slight to answer a finger that has been held
+    /// down for a second. This is the one thing in the app that confirms a *held*
+    /// gesture, so it gets the one firm impact — the same feel iOS gives its own
+    /// press-and-hold confirmations, which is where the expectation comes from.
+    static func holdConfirmed() {
+        guard allowed else { return }
+        medium.impactOccurred(intensity: 1.0)
     }
 
     /// Confirming something destructive — a wipe, a deletion.

@@ -10,6 +10,7 @@ import SwiftUI
 struct PartyScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(PopupHost.self) private var popup
+    @Environment(TourGuide.self) private var tour
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
@@ -31,7 +32,7 @@ struct PartyScreen: View {
     ///
     /// Every fresh install seeds the same "Me", so without this a car full of phones
     /// is a party of three players called Me — identical in the member list, in the
-    /// standings, and on every spotter chip, with only the colour telling them
+    /// standings, and on every spotter chip, with only the color telling them
     /// apart. The party is the one place a name genuinely matters to somebody other
     /// than its owner, so it is the place worth insisting.
     @State private var pendingEntry: Entry?
@@ -46,6 +47,7 @@ struct PartyScreen: View {
             Theme.ground.ignoresSafeArea()
 
             ScrollView {
+              ScrollViewReader { scroller in
                 VStack(spacing: 18) {
                     if let party {
                         if let trouble = party.trouble { troubleCard(trouble) }
@@ -58,9 +60,22 @@ struct PartyScreen: View {
                     }
                 }
                 .padding(Theme.screenPadding)
+                .tourScrolling(scroller)
+              }
             }
         }
         .navigationTitle("Party")
+        .onAppear { tour.offer(.party, stops: tourStops) }
+        .onDisappear { tour.left(.party) }
+        // A party starting pulls every stop out from under a tour that is mid-walk:
+        // the three things it points at all belong to `startCard`, which is no longer
+        // drawn. Ended rather than restored, because the screen it was touring is gone
+        // and there is nothing left to put back. In practice the scrim blocks the taps
+        // that would do this, so it is the debug launch hooks and any future path into
+        // a party that this actually catches.
+        .onChange(of: party == nil) { _, none in
+            if !none { tour.left(.party) }
+        }
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $joining) { target in codeSheet(for: target) }
         .sheet(item: $pendingEntry) { entry in
@@ -108,6 +123,19 @@ struct PartyScreen: View {
                 }
             }
 
+            // `-renameMe Ethan` changes this phone's player mid-party, the same two
+            // steps `PlayersScreen.save` takes. The only way to reach the case
+            // without a keyboard, and the case is the reported bug: a rename has to
+            // reach the other phones, and it must not be undone by their stale copy.
+            if let at = args.firstIndex(of: "-renameMe"), at + 1 < args.count {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    guard let me = DevicePlayer.resolve(from: players) else { return }
+                    me.name = args[at + 1]
+                    try? context.save()
+                    PartySession.shared?.announceMe(me)
+                }
+            }
+
             guard let at = args.firstIndex(of: "-partyLog"), at + 1 < args.count,
                   let plate = Plate.plate(for: args[at + 1].uppercased()) else { return }
 
@@ -137,6 +165,12 @@ struct PartyScreen: View {
             }
         }
         #endif
+        // Last in the chain, so the scrim covers this screen and nothing else.
+        .tourLayer(.party, [
+            .partyWhat: "A party pools what everyone spots. Nobody has to hand their phone around, and it works with no signal at all.",
+            .partyHost: "One person starts it and reads the four character code out loud.",
+            .partyJoin: "Everyone else taps here, picks the party they can see, and types that code in."
+        ])
     }
 
     // MARK: - Nothing running yet
@@ -148,7 +182,7 @@ struct PartyScreen: View {
                     Text("Everyone spots on their own phone")
                         .font(.plates(size: 15, weight: .semibold))
                         .foregroundStyle(Theme.ink)
-                    Text("One person starts the party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal.")
+                    Text("One person starts the Party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal.")
                         .font(.plates(size: 12.5))
                         .foregroundStyle(Theme.inkMuted)
                         .fixedSize(horizontal: false, vertical: true)
@@ -156,12 +190,16 @@ struct PartyScreen: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(14)
             }
+            .tourAnchor(.partyWhat)
+            .tourStop(.partyWhat)
 
             if let trip = currentTrip, cannotHost == nil {
-                action("Start a party for \(trip.name)", filled: true) {
+                action("Start a Party for \(trip.name)", filled: true) {
                     Haptics.selection()
                     begin(.host)
                 }
+                .tourAnchor(.partyHost)
+                .tourStop(.partyHost)
             } else if let reason = cannotHost {
                 // Said rather than silently hidden. A missing button is
                 // indistinguishable from a broken one, and this is a rule about
@@ -176,11 +214,28 @@ struct PartyScreen: View {
                 }
             }
 
-            action("Join someone's party", filled: false) {
+            action("Join someone's Party", filled: false) {
                 Haptics.selection()
                 begin(.join)
             }
+            .tourAnchor(.partyJoin, prefersAbove: true)
+            .tourStop(.partyJoin)
         }
+    }
+
+    /// Which stops this screen can host.
+    ///
+    /// Empty while a party is actually running, which stands the tour down rather than
+    /// spending it: the live screen is a code, a member list and a way out, all of
+    /// which are self-describing and none of which should be behind a scrim while
+    /// somebody is trying to read four characters out loud to a car. It runs on the
+    /// next visit, when the screen is the one that needs explaining.
+    private var tourStops: [Tour.Stop] {
+        guard party == nil else { return [] }
+        var route: [Tour.Stop] = [.partyWhat]
+        if currentTrip != nil, cannotHost == nil { route.append(.partyHost) }
+        route.append(.partyJoin)
+        return route
     }
 
     /// Asks who this phone is first, if it has never said.
@@ -495,6 +550,23 @@ struct PartyScreen: View {
 
     // MARK: - Bits
 
+    /// What to call somebody in the party.
+    ///
+    /// Their live `Player` row if they have told us which one they are, and the name
+    /// their peer id was minted with if they have not. The fallback is what the whole
+    /// list used to be, and it is frozen: an `MCPeerID` display name is fixed for the
+    /// life of the sending process, so renaming yourself mid-drive left everybody
+    /// else's copy of this list calling you the old thing until the party restarted.
+    /// Reading a `Player` through the query means a rename lands here the moment the
+    /// roster carrying it does.
+    private func name(of member: PartySession.Member) -> String {
+        guard let id = member.playerID,
+              let player = players.first(where: { $0.id == id }) else {
+            return member.peerName
+        }
+        return player.name
+    }
+
     private func memberCard(_ party: PartySession, empty: LocalizedStringKey) -> some View {
         SettingsGroup("In the party") {
             if party.members.isEmpty {
@@ -504,13 +576,13 @@ struct PartyScreen: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(14)
             } else {
-                ForEach(Array(party.members.enumerated()), id: \.offset) { index, name in
+                ForEach(Array(party.members.enumerated()), id: \.offset) { index, member in
                     if index > 0 { SettingsDivider() }
                     HStack(spacing: 10) {
                         Image(systemName: "iphone")
                             .font(.system(size: 15))
                             .foregroundStyle(Theme.found)
-                        Text(name)
+                        Text(name(of: member))
                             .font(.plates(size: 15, weight: .semibold))
                             .foregroundStyle(Theme.ink)
                         Spacer()
