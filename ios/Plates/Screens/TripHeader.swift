@@ -262,11 +262,23 @@ struct BookCard: View {
 struct PlayerStrip: View {
     let standings: [(player: Player, score: Int)]
 
-    /// Wide enough for a real name at 11pt without truncating.
-    private let cardWidth: CGFloat = 104
+    /// Wide enough for a real name at 11pt without truncating — and it has to grow
+    /// with the text, or the promise in that sentence only holds at one text size.
+    /// A fixed 104 was a card sized for 11pt still being handed a 21pt name.
+    @ScaledMetric(relativeTo: .caption2) private var cardWidth: CGFloat = 104
+
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     /// Past this, stop dividing the width and start scrolling.
-    private var scrolls: Bool { standings.count > 3 }
+    ///
+    /// Two at accessibility sizes rather than three. Three cards splitting a 320pt
+    /// phone leave about 96pt each, which at those sizes is a name arriving as
+    /// "T…" — the same starvation the strip was rewritten to avoid, just reached by
+    /// text size instead of by party size. Two still divide, because 144pt holds a
+    /// real name even set that large.
+    private var scrolls: Bool {
+        standings.count > (typeSize.isAccessibilitySize ? 2 : 3)
+    }
 
     /// Deliberately has no "final" variant. It would never be seen: this is drawn on
     /// the Game screen, and `TripSelection.current` resolves only to `collectable`
