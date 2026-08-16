@@ -108,7 +108,7 @@ enum FactBook {
     }
 
     private static func seenIDs(for code: String) -> Set<Int> {
-        Set(seenStore[code] ?? [])
+        Set((seenStore[code] ?? []).map(PlateFacts.canonical))
     }
 
     private static func setSeen(_ ids: Set<Int>, for code: String) {
@@ -119,6 +119,7 @@ enum FactBook {
 
     private static func lastID(for code: String) -> Int? {
         (UserDefaults.standard.dictionary(forKey: lastKey) as? [String: Int])?[code]
+            .map(PlateFacts.canonical)
     }
 
     private static func setLast(_ id: Int, for code: String) {
@@ -149,7 +150,7 @@ enum FactBook {
     }
 
     private static func unlockedIDs(for code: String) -> Set<Int> {
-        Set(unlockedStore[code] ?? [])
+        Set((unlockedStore[code] ?? []).map(PlateFacts.canonical))
     }
 
     private static func unlock(_ id: Int, for code: String) {

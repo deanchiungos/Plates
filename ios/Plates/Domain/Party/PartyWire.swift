@@ -197,6 +197,15 @@ struct PartyRules: Codable, Equatable {
     var sharedClaims: Bool = false
 
     static let standard = PartyRules()
+
+    /// How a collection plays when no party is running on it.
+    ///
+    /// Deliberately *not* `standard`. `standard` is the default a host starts a
+    /// party with, and it protects claims — which is right in a car with four
+    /// people in it and wrong the moment they get out. Off a party, the trip on
+    /// this phone is your copy, and a plate you can never take back because
+    /// somebody who is no longer here tapped it once is a board with a stuck key.
+    static let solo = PartyRules(protectsClaims: false)
 }
 
 // MARK: - Coding

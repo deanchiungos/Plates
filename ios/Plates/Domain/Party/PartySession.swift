@@ -227,9 +227,22 @@ final class PartySession {
     /// against its only remaining player. Deliberately keyed on the session rather
     /// than on being connected, so a phone that drops out for a minute does not
     /// briefly get permission to strip the board.
+    ///
+    /// The fallback is `.solo`, not `.standard`. They differ in exactly the way that
+    /// matters here: `.standard` protects claims, and returning it off a party meant
+    /// every collection with no live session — every book, every finished trip, every
+    /// launch before anybody hosts anything — quietly enforced party protection, so a
+    /// plate anybody else had ever claimed could never be taken back again.
+    ///
+    /// A guest also has to have actually got in. `join` writes `tripID` and `rules`
+    /// before the invitation goes out, and a refusal leaves both set — so without
+    /// `hasJoined` a mistyped code would put a party's rules in force on a party
+    /// that never formed. The host has no equivalent test and needs none: hosting
+    /// is live from the moment it starts.
     static func rules(for collection: UUID) -> PartyRules {
-        guard let party = shared, party.tripID == collection, !party.hasEnded else {
-            return .standard
+        guard let party = shared, party.tripID == collection, !party.hasEnded,
+              party.role == .host || party.hasJoined else {
+            return .solo
         }
         return party.rules
     }

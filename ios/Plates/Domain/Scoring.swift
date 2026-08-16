@@ -169,8 +169,24 @@ extension PlateCollection {
 
         case .weighted:
             // Rarity points, once per distinct plate. Bonus plates count here.
-            let codes = Set(relevant.map(\.plateCode))
-            return codes.reduce(0) { $0 + rarity(of: $1) }
+            //
+            // Scored from the sightings in hand rather than through `rarity(of:)`,
+            // which answers the *collection's* question — what is this plate worth on
+            // this trip — and therefore always the first claim's value. That is right
+            // for the trip and wrong for a person: under shared claims four people can
+            // each bank Montana, and crediting them all with whatever the earliest one
+            // happened to be sitting next to takes back the thing shared claims
+            // promises. Grouping by code keeps "once per distinct plate" intact.
+            //
+            // For the whole collection (`player == nil`) `relevant` is every sighting,
+            // so the earliest row per code is the first claim and this is exactly what
+            // `claimedRarity` returned — same answer, one pass instead of one full
+            // scan per code.
+            return Dictionary(grouping: relevant, by: \.plateCode)
+                .reduce(0) { total, entry in
+                    let earliest = entry.value.min { SightingOrder($0) < SightingOrder($1) }
+                    return total + (earliest?.rarityWhenSpotted ?? rarity(of: entry.key))
+                }
 
         case .unlimited:
             // Every sighting scores what it was worth when it was logged, so two

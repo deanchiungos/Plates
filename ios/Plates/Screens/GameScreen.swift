@@ -1256,42 +1256,7 @@ struct GameScreen: View {
     private func clear(_ plate: Plate, in collection: any PlateCollection,
                        removing doomed: [Sighting]? = nil) {
         let going = doomed ?? collection.allSightings.filter { $0.plateCode == plate.code }
-        // A sighting on a reopened trip may also be shelved in a book — see
-        // `fold`. If that book is shared, its members need the tombstone, and the
-        // book reference is gone the moment the row is. So this goes first.
-        for (_, group) in Dictionary(grouping: going.filter { $0.book != nil },
-                                     by: { $0.book!.id }) {
-            if let book = group.first?.book, book.id != collection.id,
-               SharedBookLedger.shared.isShared(book.id) {
-                SharedBookSync.shared.remove(group.map(\.id), in: book)
-            }
-        }
-        // Collected before the delete, because afterwards there is nothing left to
-        // ask which sightings went — and a party has to name them individually so a
-        // peer that never heard of them can still record that they are gone.
-        var withdrawn: [UUID] = []
-        for sighting in going {
-            withdrawn.append(sighting.id)
-            // A plate folded in from a finished trip is the trip's record, on loan
-            // to this book — un-tapping it here hands it back, it does not reach
-            // into the trip and erase what happened there. Only sightings the book
-            // itself logged are the book's to delete.
-            if collection is Book, sighting.trip != nil {
-                sighting.book = nil
-            } else {
-                context.delete(sighting)
-            }
-        }
-        try? context.save()
-        if let trip = collection as? Trip {
-            PartySession.shared?.broadcastRemoval(withdrawn, in: trip.id)
-        }
-        // The same withdrawal over the slower wire. Deleting the record *is* the
-        // tombstone here — CloudKit tells the other side about it on their next
-        // pull — so unlike the party there is nothing extra to remember.
-        if let book = collection as? Book, SharedBookLedger.shared.isShared(book.id) {
-            SharedBookSync.shared.remove(withdrawn, in: book)
-        }
+        PlateLogger.withdraw(going, from: collection, context: context)
         Haptics.undo()
     }
 

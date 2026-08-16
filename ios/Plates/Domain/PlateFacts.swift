@@ -79,6 +79,33 @@ enum PlateFacts {
         return Int(bitPattern: UInt(truncatingIfNeeded: hash))
     }
 
+    /// Facts whose spelling changed but whose sentence did not.
+    ///
+    /// "Rewording one makes it unread again" is the right rule and these are the
+    /// exception that proves it: four Canadian facts had `licence` normalised to
+    /// `license` to match the spelling used everywhere else in the app. Nothing was
+    /// said differently, so telling somebody they had not read a sentence they
+    /// plainly had would be the reading that is wrong.
+    ///
+    /// Only respellings belong here. A fact that was genuinely rewritten is a
+    /// different fact and re-locks on purpose; a fact that was replaced outright is
+    /// simply gone, and the id stored against it falls out of `live` on its own.
+    ///
+    /// Old id to new id. Append-only — an id absent from the table is already
+    /// current, so reading through it is safe for every fact including future ones.
+    private static let aliases: [Int: Int] = [
+        4_520_807_808_077_570_484: 6_617_142_944_412_410_980,    // ON
+        7_601_569_965_746_654_469: 3_295_329_996_944_884_117,    // NS
+        1_862_550_220_119_624_026: -6_872_094_558_759_850_582,   // NL
+        3_090_486_213_346_438_680: 2_333_505_581_130_656_040,    // YT
+    ]
+
+    /// What a stored id means today.
+    ///
+    /// Everything that reads the fact ledger goes through this, so a respelling
+    /// costs one line in `aliases` rather than a migration pass over `UserDefaults`.
+    static func canonical(_ id: Int) -> Int { aliases[id] ?? id }
+
     // MARK: - Loading
 
     /// Two different failures, treated differently.

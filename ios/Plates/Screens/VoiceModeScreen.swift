@@ -369,7 +369,15 @@ struct VoiceModeScreen: View {
         // repeat at all. Not a take-back either: the grid toggles a second tap off,
         // but saying a plate's name out loud is never a request to un-see it. Siri
         // has always had this right, and said so out loud.
-        guard collection.scoringMode == .unlimited || !collection.hasSeen(plate) else {
+        // Shared claims are the third way this can be a real find: somebody else
+        // called it, and the rules say that does not use it up. Without this the car
+        // is playing a game the grid understands and voice mode does not — say a
+        // plate a passenger already called and be told you have already seen it.
+        let sharedClaim = PartySession.rules(for: collection.id).sharedClaims
+            && !collection.hasClaimed(plate.code, by: speaker)
+        guard collection.scoringMode == .unlimited
+                || !collection.hasSeen(plate)
+                || sharedClaim else {
             Haptics.repeatSighting()
             speech.say(VoiceSpeaker.alreadySeen(plate))
             return
@@ -410,14 +418,7 @@ struct VoiceModeScreen: View {
                                 protected: PartySession.rules(for: collection.id).protectsClaims)
             .sorted { $0.spottedAt > $1.spottedAt }
         if let newest = matches.first {
-            let withdrawn = newest.id
-            let trip = newest.trip?.id
-            context.delete(newest)
-            try? context.save()
-            if let trip { PartySession.shared?.broadcastRemoval([withdrawn], in: trip) }
-            if let book = collection as? Book, SharedBookLedger.shared.isShared(book.id) {
-                SharedBookSync.shared.remove([withdrawn], in: book)
-            }
+            PlateLogger.withdraw([newest], from: collection, context: context)
         }
         withAnimation(.snappy(duration: 0.2)) {
             logged.removeAll { $0.id == entry.id }

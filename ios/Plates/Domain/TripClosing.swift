@@ -62,6 +62,16 @@ enum TripClosing {
         let id = trip.id
         if PartySession.isPartying(trip) { PartySession.shared?.leave() }
 
+        // A folded sighting lives in two containers and the cascade only knows about
+        // one of them. `Trip.sightings` cascades where `Book.sightings` nullifies, so
+        // left alone this would reach through the trip and take plates out of a book
+        // somebody deliberately filed them in — and, if that book is shared, leave
+        // every other member holding a copy this phone no longer has. Unshelving them
+        // from the trip first is the same rule the grid applies when a plate is
+        // un-tapped in a book a trip still owns: drop it from this container, leave it
+        // in the other. Discarding the drive is not disowning the shelf.
+        for sighting in trip.allSightings where sighting.book != nil { sighting.trip = nil }
+
         context.delete(trip)
         try? context.save()
 

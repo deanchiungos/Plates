@@ -141,7 +141,13 @@ struct LogPlateIntent: AppIntent {
             return .result(dialog: "Start a trip or a book in Plates first.")
         }
 
-        if trip.hasSeen(target) {
+        // Unless the car is playing shared claims and this phone has not banked it
+        // yet, in which case somebody else having called it is not an objection —
+        // the same third case the grid and voice mode allow.
+        let me = DevicePlayer.current(in: PlatesStore.context)
+        let sharedClaim = PartySession.rules(for: trip.id).sharedClaims
+            && !trip.hasClaimed(target.code, by: me)
+        if trip.hasSeen(target), !sharedClaim {
             let count = trip.sightingCount(for: target)
             return .result(dialog: IntentDialog(
                 "You already logged \(target.name) on \(trip.name)\(count > 1 ? ", \(count) times" : "")."))
@@ -157,7 +163,7 @@ struct LogPlateIntent: AppIntent {
         // Siri-logged plate its banked rarity and its place on the trail. Logging it
         // here by hand is how it went without both for as long as it did.
         let outcome = PlateLogger.record(target, in: trip,
-                                         by: DevicePlayer.current(in: PlatesStore.context),
+                                         by: me,
                                          at: TripLocation.shared.coordinate,
                                          context: PlatesStore.context)
         let tier = outcome.tier

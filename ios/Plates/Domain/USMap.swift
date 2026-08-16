@@ -153,10 +153,31 @@ enum USMap {
     /// containing region or nil — never a nearest guess, because "nearest outline"
     /// would hand Windsor, Ontario to Michigan.
     ///
-    /// Alaska, Hawaii and Puerto Rico are drawn as insets, so the projection
-    /// cannot land on them; they are isolated enough that boxes are exact.
+    /// Alaska, Hawaii and Puerto Rico are drawn as insets, so the projection cannot
+    /// land on them and they are answered by box instead. Hawaii and Puerto Rico are
+    /// islands in open ocean, so their boxes really are exact. Alaska is not: it has
+    /// a 2,475 km land border with Canada, and one box drawn loosely enough to hold
+    /// it held far more of Canada than of Alaska. `lat >= 51, lon <= -129` put
+    /// Whitehorse, Dawson City, Inuvik and Prince Rupert in Alaska — which then
+    /// floored the Alaska plate to *home* rarity, so driving the Alaska Highway
+    /// reported Alaska plates as ordinary while the Yukon's own stayed legendary.
+    ///
+    /// Cut instead along the border statute actually draws. North of 60°N that is
+    /// the 141st meridian and nothing else, so it is exact. The panhandle below it
+    /// is a treaty line following the crest of the coastal mountains, which no
+    /// rectangle follows, so it is approximated in two steps and deliberately cut
+    /// tight: the British Columbia side resolves to nil rather than to Alaska.
+    /// A region this cannot name is a case every caller already handles — a region
+    /// it names wrongly is not, which is the same reason the outlines below never
+    /// guess at the nearest.
     static func region(atLat lat: Double, lon: Double) -> String? {
-        if lat >= 51, lon <= -129 || lon >= 172 { return "AK" }
+        // Mainland, the peninsula and the Aleutians, which run past the antimeridian.
+        if lat >= 51, lon <= -141 || lon >= 172 { return "AK" }
+        // The panhandle. Southern step keeps Ketchikan and leaves Prince Rupert and
+        // Haida Gwaii out; northern step keeps Sitka, Juneau and Skagway and leaves
+        // Atlin, 120 km from Skagway on the British Columbia side, out.
+        if (54.7...57).contains(lat), (-141)...(-130.6) ~= lon { return "AK" }
+        if (57...60).contains(lat), (-141)...(-134.0) ~= lon { return "AK" }
         if (18...23).contains(lat), (-161)...(-154) ~= lon { return "HI" }
         if (17.4...18.6).contains(lat), (-68.1)...(-65.1) ~= lon { return "PR" }
 

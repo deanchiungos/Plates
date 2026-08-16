@@ -471,14 +471,7 @@ struct CollectionScreen: View {
                     : "^[\(count) plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays."
             ) {
                 PopupButton(title: "Empty book", kind: .destructive) {
-                    for sighting in book.allSightings {
-                        // A folded sighting is the trip's record, on loan to this
-                        // shelf. Emptying the shelf hands it back; only sightings
-                        // logged straight into the book are the book's to delete.
-                        if sighting.trip != nil { sighting.book = nil }
-                        else { context.delete(sighting) }
-                    }
-                    try? context.save()
+                    PlateLogger.withdraw(book.allSightings, from: book, context: context)
                     Haptics.destructive()
                     popup.dismiss()
                 }

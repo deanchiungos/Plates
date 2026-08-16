@@ -66,7 +66,17 @@ enum SharedBookMerge {
             let doomed = Set(deleted)
             for row in (try? context.fetch(FetchDescriptor<Sighting>())) ?? []
             where doomed.contains(row.id) {
-                context.delete(row)
+                // The same rule the grid applies locally: a sighting folded in from a
+                // trip is the trip's record, on loan to this shelf. A peer taking it
+                // off the shared book takes it off the shelf — it does not reach
+                // across the wire into a drive they were never on and erase what
+                // happened there. Only rows the book itself owns are the book's to
+                // delete. See `PlateLogger.withdraw`.
+                if row.trip != nil {
+                    row.book = nil
+                } else {
+                    context.delete(row)
+                }
                 outcome.sightingsRemoved += 1
             }
         }
