@@ -359,6 +359,23 @@ final class PartySession {
     /// object because MultipeerConnectivity requires them to be.
     func join(_ party: Nearby, code entered: String) {
         guard role == .guest, let browser else { return }
+
+        // Everything a fresh session used to get for free. Joining once built a new
+        // `PartySession`, so every per-attempt flag started clear by construction;
+        // mutating the live one instead means each has to be cleared by hand, and the
+        // ones missed here are not cosmetic. `hasJoined` is what tells a refusal from
+        // a dropout, so carrying it over from a previous party makes a mistyped code
+        // report as "Lost the party" and then time out saying nothing answered.
+        // `knownPlayerIDs` is the roster: carried over, the last party's people appear
+        // in this trip's standings on zero, and `greet` pushes them to this host, who
+        // relays them to everybody. `hasEnded` would leave the new party looking over
+        // before it started. `members` is rebuilt by `invite`, and `latestFromPeer` is
+        // cleared so a stale find cannot be read as this party's first.
+        hasJoined = false
+        hasEnded = false
+        knownPlayerIDs = []
+        latestFromPeer = nil
+
         tripID = party.tripID
         code = Self.tidy(entered)
         hostPeer = party.peer
@@ -414,6 +431,10 @@ final class PartySession {
     /// Guest only, and only while nothing is connected. On a host the session holds
     /// everybody in the car, and throwing it away to fix one joiner would drop them
     /// all.
+    /// Whether a delegate callback belongs to the session in use, rather than one
+    /// `rebuildSession` has already discarded. See `PartyTransport`.
+    func isCurrent(_ candidate: MCSession) -> Bool { candidate === session }
+
     private func rebuildSession() {
         guard role == .guest, !isConnected else { return }
         session.disconnect()
@@ -439,13 +460,29 @@ final class PartySession {
     private func joinFailed(_ why: JoinFailure) {
         guard let target = joining else { return }
         settleJoin()
-        hostPeer = nil
+        // `hostPeer` deliberately survives. Clearing it here looked like tidying up
+        // and was the opposite: `connected` gates every join side effect on
+        // `peer == hostPeer`, so an invitation that lands a second after the watchdog
+        // gave up — which peer-to-peer Wi-Fi does routinely — produced a guest who was
+        // genuinely in the party and receiving plates, but never *joined*: no ledger
+        // record, no rules adopted, no badge, no automatic rejoin after the first
+        // pocket-drop, and offered "Start a Party" for a trip somebody else is already
+        // hosting. Nothing needs it nil. Everything that could misread a stale
+        // `hostPeer` is already gated on `hasJoined`, which is false until a
+        // connection actually arrives.
+        //
         // Back in the list to be tapped again — except when the host has stopped
         // advertising, where re-adding it would put a row on screen that cannot
         // work. `lost` has just taken it out, and `found` puts it straight back if
         // the party returns; listing a phone that is not there is how this screen
         // got its reputation.
-        if why != .vanished, !nearby.contains(where: { $0.peer == target.peer }) {
+        //
+        // Matched on the trip, not the peer, for the same reason `found` is: a host
+        // whose app restarted comes back under a new `MCPeerID` with the same name,
+        // and `found` has already swapped the row. Asking whether this dead *peer* is
+        // listed then says no, and appending it puts two rows on screen whose
+        // `Identifiable` id — name and trip — is byte-identical.
+        if why != .vanished, !nearby.contains(where: { $0.tripID == target.tripID }) {
             nearby.append(target)
         }
 
@@ -516,6 +553,13 @@ final class PartySession {
     // MARK: - Leaving
 
     func leave() {
+        // Marked over before the radios go, exactly as `saidGoodbye` does when the
+        // host ends it. Without this the deferred `disconnect()` below arrives 0.4s
+        // later as an ordinary drop and writes "Lost the party. Looking for it
+        // again…" onto a party the user deliberately walked out of — reachable from
+        // the Trips tab, where finishing or deleting a party trip calls this while
+        // the Party screen is still holding the session.
+        hasEnded = true
         send(.bye)
         // The goodbye needs a moment to actually leave the device. `send` hands the
         // data off asynchronously and `disconnect()` tears the connection down, so
@@ -763,9 +807,23 @@ final class PartySession {
         // Gated on the message having been news to us, which is what stops an echo
         // dead: something that arrives twice is a no-op the second time and is
         // therefore never forwarded twice.
+        //
+        // `.roster` is forwarded ungated, and has to be. It is how somebody's rename
+        // travels, and it was reaching the host and going no further: guests are
+        // linked to each other only by the same lazy mesh this whole function exists
+        // to stop trusting, and the host's re-greet fires only when the roster *grew*
+        // — which renaming a player everybody already knows never does. So in any
+        // party past two phones, the third one kept calling somebody by their old
+        // name for the rest of the drive.
+        //
+        // Ungated because the news test cannot see it: `Outcome` counts inserts, not
+        // edits, so a rename merges to an empty outcome. Cheap to forward anyway —
+        // `announceMe` only fires when somebody actually changes their name or avatar,
+        // and the merge on the far side is idempotent.
         switch envelope.payload {
         case .sighting where outcome.sightingsAdded > 0,
-             .remove   where removalIsNews:
+             .remove   where removalIsNews,
+             .roster:
             break
         default:
             return
@@ -1096,19 +1154,36 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
 
     // MARK: Session
 
+    /// Callbacks are keyed to the session they came from, because a guest can be
+    /// holding two at once.
+    ///
+    /// `rebuildSession` throws the old `MCSession` away and makes a new one for every
+    /// invitation — deliberately, since a collapsed session never recovers. But the
+    /// discarded one still delivers its terminal `.notConnected`, and the hop to the
+    /// main actor means it lands *after* the new attempt is already under way. Passed
+    /// on blind, that reads as the current attempt failing: a guest whose code was
+    /// right, mid-reconnect, gets told the host turned them away.
+    ///
+    /// So every callback is checked against the session the party is actually using
+    /// and dropped if it is not. The framework hands us the answer in the argument
+    /// this used to ignore.
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         Task { @MainActor [weak owner] in
+            guard let owner, owner.isCurrent(session) else { return }
             switch state {
-            case .connected:    owner?.connected(peerID)
-            case .connecting:   owner?.connecting(peerID)
-            case .notConnected: owner?.disconnected(peerID)
+            case .connected:    owner.connected(peerID)
+            case .connecting:   owner.connecting(peerID)
+            case .notConnected: owner.disconnected(peerID)
             @unknown default:   break
             }
         }
     }
 
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        Task { @MainActor [weak owner] in owner?.received(data, from: peerID) }
+        Task { @MainActor [weak owner] in
+            guard let owner, owner.isCurrent(session) else { return }
+            owner.received(data, from: peerID)
+        }
     }
 
     // Unused, and required. The party sends small messages and nothing else.
