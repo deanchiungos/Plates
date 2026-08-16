@@ -30,23 +30,9 @@ import SwiftData
 enum DevicePlayer {
     static let key = "devicePlayerID"
 
-    /// Where the claim is written.
-    ///
-    /// `UserDefaults.standard`, in the app, always. The merge check points it at a
-    /// scratch suite for the length of a run — it has to answer "is this row me?"
-    /// from four different angles, and doing that against the real defaults meant a
-    /// debug run that died halfway through left the phone claiming a player that does
-    /// not exist, with no way to tell that had happened.
-    ///
-    /// Swappable only in DEBUG, so a shipped build has no path to it. `nonisolated
-    /// (unsafe)` because the one thing that writes it is the harness, before any of
-    /// this is running concurrently, and the alternative is isolating a property that
-    /// every view body reads.
-    #if DEBUG
-    nonisolated(unsafe) static var store: UserDefaults = .standard
-    #else
-    static let store: UserDefaults = .standard
-    #endif
+    /// Where the claim is written. See `AppDefaults` for why this is not
+    /// `UserDefaults.standard` directly.
+    private static var store: UserDefaults { AppDefaults.store }
 
     /// Pure. No writes, no inserts — safe to call from a view body, which is where
     /// most callers are.

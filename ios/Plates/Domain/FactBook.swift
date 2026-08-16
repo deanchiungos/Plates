@@ -96,15 +96,15 @@ enum FactBook {
     }
 
     static func reset() {
-        UserDefaults.standard.removeObject(forKey: seenKey)
-        UserDefaults.standard.removeObject(forKey: lastKey)
-        UserDefaults.standard.removeObject(forKey: unlockedKey)
+        AppDefaults.store.removeObject(forKey: seenKey)
+        AppDefaults.store.removeObject(forKey: lastKey)
+        AppDefaults.store.removeObject(forKey: unlockedKey)
     }
 
     // MARK: - Storage
 
     private static var seenStore: [String: [Int]] {
-        UserDefaults.standard.dictionary(forKey: seenKey) as? [String: [Int]] ?? [:]
+        AppDefaults.store.dictionary(forKey: seenKey) as? [String: [Int]] ?? [:]
     }
 
     private static func seenIDs(for code: String) -> Set<Int> {
@@ -114,18 +114,18 @@ enum FactBook {
     private static func setSeen(_ ids: Set<Int>, for code: String) {
         var store = seenStore
         store[code] = Array(ids)
-        UserDefaults.standard.set(store, forKey: seenKey)
+        AppDefaults.store.set(store, forKey: seenKey)
     }
 
     private static func lastID(for code: String) -> Int? {
-        (UserDefaults.standard.dictionary(forKey: lastKey) as? [String: Int])?[code]
+        (AppDefaults.store.dictionary(forKey: lastKey) as? [String: Int])?[code]
             .map(PlateFacts.canonical)
     }
 
     private static func setLast(_ id: Int, for code: String) {
-        var store = (UserDefaults.standard.dictionary(forKey: lastKey) as? [String: Int]) ?? [:]
+        var store = (AppDefaults.store.dictionary(forKey: lastKey) as? [String: Int]) ?? [:]
         store[code] = id
-        UserDefaults.standard.set(store, forKey: lastKey)
+        AppDefaults.store.set(store, forKey: lastKey)
     }
 
     private static func record(_ id: Int, for code: String) {
@@ -141,11 +141,11 @@ enum FactBook {
     /// already lost to a reshuffle before this existed and cannot be recovered —
     /// the facts are still there to be read again, they just show as locked once.
     private static var unlockedStore: [String: [Int]] {
-        if let stored = UserDefaults.standard.dictionary(forKey: unlockedKey) as? [String: [Int]] {
+        if let stored = AppDefaults.store.dictionary(forKey: unlockedKey) as? [String: [Int]] {
             return stored
         }
         let carried = seenStore
-        UserDefaults.standard.set(carried, forKey: unlockedKey)
+        AppDefaults.store.set(carried, forKey: unlockedKey)
         return carried
     }
 
@@ -156,6 +156,6 @@ enum FactBook {
     private static func unlock(_ id: Int, for code: String) {
         var store = unlockedStore
         store[code] = Array(Set(store[code] ?? []).union([id]))
-        UserDefaults.standard.set(store, forKey: unlockedKey)
+        AppDefaults.store.set(store, forKey: unlockedKey)
     }
 }

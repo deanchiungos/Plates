@@ -68,16 +68,24 @@ enum PartyMergeCheck {
         failures = []
         print("── party merge check ──")
 
-        // Nothing this run writes touches the real defaults. Four cases have to say
-        // who this device is, and doing that to `UserDefaults.standard` meant a run
-        // that died in the middle left the phone claiming a player that does not
-        // exist — on a developer's own device, silently, with the app then resolving
-        // to whoever happened to be earliest.
+        // Nothing this run writes reaches the real preferences.
+        //
+        // The header above promises this file never touches real state, and it was
+        // breaking that promise twice. Four cases have to say who this device is,
+        // and writing that to `UserDefaults.standard` meant a run that died in the
+        // middle left the phone claiming a player that does not exist. Worse,
+        // `factsNeverRelock` calls `FactBook.reset()` — which wipes every fact the
+        // person holding the phone has ever unlocked, permanently, with nothing to
+        // say it happened.
+        //
+        // So the whole run is pointed at a scratch suite that is thrown away at the
+        // end, and each case sets what it needs on the way in rather than restoring
+        // on the way out.
         let suite = "com.eggeppel.plates.mergecheck"
-        DevicePlayer.store = UserDefaults(suiteName: suite) ?? .standard
+        AppDefaults.store = UserDefaults(suiteName: suite) ?? .standard
         defer {
-            DevicePlayer.store.removePersistentDomain(forName: suite)
-            DevicePlayer.store = .standard
+            AppDefaults.store.removePersistentDomain(forName: suite)
+            AppDefaults.store = .standard
         }
 
         for (name, body) in cases {
@@ -1253,8 +1261,8 @@ enum PartyMergeCheck {
     /// through the identity prompt.
     @MainActor
     private static func claiming(_ id: String?) {
-        if let id { DevicePlayer.store.set(id, forKey: DevicePlayer.key) }
-        else { DevicePlayer.store.removeObject(forKey: DevicePlayer.key) }
+        if let id { AppDefaults.store.set(id, forKey: DevicePlayer.key) }
+        else { AppDefaults.store.removeObject(forKey: DevicePlayer.key) }
     }
 
     // MARK: - Assertions
