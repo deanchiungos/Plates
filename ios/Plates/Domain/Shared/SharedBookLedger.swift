@@ -57,9 +57,21 @@ final class SharedBookLedger {
         save()
     }
 
+    /// Drops the token only when nothing is left reading that zone.
+    ///
+    /// Entries are per book and tokens are per zone, and books can share one — every
+    /// book this device shares out lives in its own single zone. Dropping the token
+    /// whenever any one of them was unshared meant the survivors' next pull started
+    /// from nothing, which is not merely slow: a pull with no token is told what
+    /// exists, never what was deleted. So the other books in that zone would never
+    /// hear about a withdrawal again, and would go on re-uploading rows the far side
+    /// had removed.
     func forget(book: UUID) {
         guard let gone = entries.removeValue(forKey: book) else { return }
-        tokens.removeValue(forKey: key(zone: gone.zoneName, owner: gone.zoneOwner))
+        let zone = key(zone: gone.zoneName, owner: gone.zoneOwner)
+        if !entries.values.contains(where: { key(zone: $0.zoneName, owner: $0.zoneOwner) == zone }) {
+            tokens.removeValue(forKey: zone)
+        }
         save()
     }
 

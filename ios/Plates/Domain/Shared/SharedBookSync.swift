@@ -63,9 +63,28 @@ final class SharedBookSync {
     /// The share is saved together with the root record in one operation, which is
     /// required: CloudKit will not accept a share whose root does not exist yet, and
     /// doing it in two steps leaves a window where a crash orphans one of them.
+    /// Translates before it rethrows, which is not decoration.
+    ///
+    /// Everything else here reports through `trouble`, so `explain` is the single
+    /// place raw CloudKit text is stopped. This one throws instead — the caller needs
+    /// to know not to present a share sheet — and it left `trouble` nil, so the
+    /// screen's fallback printed `localizedDescription` and the first thing anybody
+    /// sharing a book without being signed in actually read was "This request
+    /// requires an authenticated account". Found by tapping the button on a simulator
+    /// with no iCloud account, which is the state every first run is in.
     func makeShare(for book: Book) async throws -> (CKShare, CKContainer) {
         isBusy = true
         defer { isBusy = false }
+        do {
+            return try await buildShare(for: book)
+        } catch {
+            trouble = Self.explain(error)
+            log("share failed: \(error)")
+            throw error
+        }
+    }
+
+    private func buildShare(for book: Book) async throws -> (CKShare, CKContainer) {
         try await ensureZone()
 
         let db = container.privateCloudDatabase
@@ -96,8 +115,21 @@ final class SharedBookSync {
 
     /// Everything currently in the book. Used right after sharing, and as the
     /// repair path if a device thinks it has fallen behind.
+    ///
+    /// Pulls before it pushes, and has to. This uploads every row the book holds
+    /// locally, so a plate somebody else took back while this device was not
+    /// listening is still here — and re-uploading it undoes their deletion on every
+    /// phone at once. Two taps in the sharing card, stop and share again, was enough
+    /// to do it. Pulling first applies the withdrawal locally, so what goes up is
+    /// the book as it actually stands rather than as this device last saw it.
+    ///
+    /// Nothing is lost when there is no context to merge into: the push still runs,
+    /// and the next pull reconciles. That is the same bargain the rest of this file
+    /// makes with a flaky network.
     func pushAll(_ book: Book) async throws {
         guard let entry = ledger.entry(for: book.id) else { return }
+        if let context = book.modelContext { await pull(entry, into: context) }
+
         let zone = CKRecordZone.ID(zoneName: entry.zoneName, ownerName: entry.zoneOwner)
         let root = SharedBookRecords.recordID(for: book.id, in: zone)
         let records = book.allSightings.map {
@@ -157,7 +189,14 @@ final class SharedBookSync {
     /// filled over weeks, not seconds, and polling would spend battery to shorten a
     /// wait nobody is sitting through.
     func pullAll(into context: ModelContext) async {
-        for entry in ledger.allShared {
+        // One pull per zone rather than per book. Books can share a zone and the
+        // change token belongs to the zone, so the second book's pull asks what has
+        // changed since the first one — which is nothing. Any entry in a zone
+        // describes it as well as any other: they agree on owner and on which
+        // database it is reached through.
+        var pulled = Set<String>()
+        for entry in ledger.allShared
+        where pulled.insert("\(entry.zoneOwner)/\(entry.zoneName)").inserted {
             await pull(entry, into: context)
         }
     }
@@ -243,6 +282,13 @@ final class SharedBookSync {
     /// Either way the local rows stay put — deleting somebody's plates because a
     /// share ended would be the app throwing away a collection on a technicality.
     /// The book simply becomes an ordinary local one again.
+    ///
+    /// The ledger entry is forgotten only if the revoke actually happened. It used
+    /// to be forgotten either way, which turned a dropped connection into a share
+    /// nobody could ever revoke: the card flipped back to "Share this book", the
+    /// participants kept full access to a book its owner believed was private, and
+    /// the retry returned at the first line because the entry it needed was gone.
+    /// Keeping it is what makes tapping the button again mean something.
     func stopSharing(_ book: Book) async {
         guard let entry = ledger.entry(for: book.id) else { return }
         let zone = CKRecordZone.ID(zoneName: entry.zoneName, ownerName: entry.zoneOwner)
@@ -264,12 +310,22 @@ final class SharedBookSync {
                 // which detaches you without touching the owner's copy.
                 _ = try await db.modifyRecordZones(saving: [], deleting: [zone])
             }
+        } catch let error where CloudErrors.isAlreadyGone(error) {
+            // Nothing up there to revoke, which is the state we were asking for.
+            // Falls through and forgets, or the book would be stuck advertising a
+            // share that does not exist.
+            log("stop sharing: already gone")
         } catch {
             trouble = Self.explain(error)
             log("stop sharing failed: \(error)")
+            return
         }
         ledger.forget(book: book.id)
     }
+
+    /// Cleared when a new attempt starts, so a message from the last one is never
+    /// read as a verdict on this one.
+    func clearTrouble() { trouble = nil }
 
     // MARK: - Bits
 
@@ -303,17 +359,31 @@ final class SharedBookSync {
 
     /// CloudKit's own messages are written for developers. These are the handful a
     /// person can actually do something about.
+    ///
+    /// Unwrapped through `CloudErrors` first. Without that, the most common failure
+    /// a batch write can return — `.partialFailure`, which is what a full iCloud
+    /// account or a rejected schema looks like on the way out — fell to `default`
+    /// and reached the sharing card as "error 2".
+    ///
+    /// Localized, unlike the version this grew out of. These are sentences a player
+    /// reads on a screen, not log lines.
     private static func explain(_ error: Error) -> String {
-        guard let ck = error as? CKError else { return error.localizedDescription }
+        guard let ck = CloudErrors.meaningful(error) else { return error.localizedDescription }
         switch ck.code {
-        case .notAuthenticated:   return "Sign in to iCloud to share books."
-        case .networkUnavailable,
-             .networkFailure:     return "No connection. This will catch up later."
-        case .quotaExceeded:      return "Your iCloud storage is full."
-        case .zoneNotFound,
-             .unknownItem:        return "That shared book is no longer available."
-        case .permissionFailure:  return "You do not have permission to change that book."
-        default:                  return ck.localizedDescription
+        case .notAuthenticated:
+            return String(localized: "Sign in to iCloud to share books.")
+        case .networkUnavailable, .networkFailure:
+            return String(localized: "No connection. This will catch up later.")
+        case .quotaExceeded:
+            return String(localized: "Your iCloud storage is full.")
+        case .zoneNotFound, .unknownItem, .userDeletedZone:
+            return String(localized: "That shared book is no longer available.")
+        case .permissionFailure, .managedAccountRestricted:
+            return String(localized: "You do not have permission to change that book.")
+        case .serviceUnavailable, .requestRateLimited, .zoneBusy:
+            return String(localized: "iCloud is busy. This will try again on its own.")
+        default:
+            return ck.localizedDescription
         }
     }
 }

@@ -1107,8 +1107,14 @@ extension BookEditor {
 
                 Button(entry.isOwner ? "Stop sharing" : "Leave this book") {
                     Task {
+                        shareTrouble = nil
+                        SharedBookSync.shared.clearTrouble()
                         await SharedBookSync.shared.stopSharing(book)
-                        Haptics.destructive()
+                        // Only if it worked. A revoke that failed leaves the book
+                        // shared and says so below; confirming it with the haptic
+                        // for a destructive action would be the app telling you it
+                        // did something it did not do.
+                        if SharedBookSync.shared.trouble == nil { Haptics.destructive() }
                     }
                 }
                 .font(.plates(size: 15, weight: .semibold))
@@ -1146,8 +1152,13 @@ extension BookEditor {
                 .disabled(preparingShare)
             }
 
-            if let shareTrouble {
-                Text(shareTrouble)
+            // The sync's own last complaint, not only this sheet's. Everything that
+            // fills a shared book is fire-and-forget — a push, a withdrawal, a pull
+            // on foreground — and `trouble` was the only record any of them left.
+            // Nothing read it outside the one catch below, so "sign in to iCloud"
+            // sat in a property while the book quietly stopped syncing.
+            if let trouble = shareTrouble ?? SharedBookSync.shared.trouble {
+                Text(trouble)
                     .font(.plates(size: 12.5))
                     .foregroundStyle(Theme.paint)
                     .fixedSize(horizontal: false, vertical: true)
@@ -1158,6 +1169,7 @@ extension BookEditor {
     private func prepareShare(for book: Book) {
         preparingShare = true
         shareTrouble = nil
+        SharedBookSync.shared.clearTrouble()
         Task {
             do {
                 let (share, container) = try await SharedBookSync.shared.makeShare(for: book)

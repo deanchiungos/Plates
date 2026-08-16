@@ -119,20 +119,13 @@ final class CloudBackup {
     /// Turns a CloudKit failure into something worth reading.
     ///
     /// `localizedDescription` is close to useless for the errors that actually happen
-    /// here. The common one is `.partialFailure` — CloudKit's umbrella for "some
-    /// records failed" — whose description is the bare "The operation couldn't be
-    /// completed (CKErrorDomain error 2.)". The real cause is buried in
-    /// `partialErrorsByItemID`, so unwrap one level and describe *that*.
+    /// here, starting with `.partialFailure` — see `CloudErrors`, which does the
+    /// unwrapping for this and for the sharing side.
     ///
     /// This file exists to avoid unactionable messages; passing error 2 straight
     /// through would have been exactly that.
     private static func describe(_ error: Error) -> String {
-        guard let ck = error as? CKError else { return error.localizedDescription }
-
-        if ck.code == .partialFailure,
-           let underlying = ck.partialErrorsByItemID?.values.first {
-            return describe(underlying)
-        }
+        guard let ck = CloudErrors.meaningful(error) else { return error.localizedDescription }
 
         switch ck.code {
         case .networkUnavailable, .networkFailure:

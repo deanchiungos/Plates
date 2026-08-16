@@ -49,6 +49,7 @@ enum PartyMergeCheck {
             try aContributorsEditIsWorthSavingToo()
             try aBookOnlyPageStillGetsSaved()
             try iAmStillMeBeforeIHaveSaidWhoIAm()
+            try aZonesTokenOutlivesOneOfItsBooks()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -900,6 +901,54 @@ enum PartyMergeCheck {
                               into: theirs, carrying: opening)
 
         check("my own stale record does not rename me", me.name, "Ethan")
+    }
+
+    /// Unsharing one book must not break the next one's sync.
+    ///
+    /// Ledger entries are per book; change tokens are per zone; and every book this
+    /// device shares out lives in the same zone. So forgetting a book used to drop a
+    /// token its neighbours were still reading — and a pull with no token is told
+    /// what exists, never what was deleted, so those books would never hear about a
+    /// withdrawal again and would go on re-uploading rows the far side removed.
+    ///
+    /// Driven through the ledger's own file rather than its API because a
+    /// `CKServerChangeToken` cannot be built outside CloudKit. Nothing here needs it
+    /// to be a real one: the question is whether the key survives, and the ledger
+    /// treats the value as an opaque blob until something asks it to unarchive one.
+    @MainActor
+    private static func aZonesTokenOutlivesOneOfItsBooks() throws {
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent("SharedBooksCheck.json")
+        defer { try? FileManager.default.removeItem(at: url) }
+
+        let first = UUID(), second = UUID()
+        let zone = "__defaultOwner__/PlatesShared"
+        try JSONSerialization.data(withJSONObject: [
+            "entries": [
+                ["bookID": first.uuidString, "isOwner": true,
+                 "zoneName": "PlatesShared", "zoneOwner": "__defaultOwner__"],
+                ["bookID": second.uuidString, "isOwner": true,
+                 "zoneName": "PlatesShared", "zoneOwner": "__defaultOwner__"]
+            ],
+            "tokens": [zone: Data("a token".utf8).base64EncodedString()]
+        ]).write(to: url)
+
+        let ledger = SharedBookLedger(url: url)
+        check("both books loaded", ledger.allShared.count, 2)
+
+        ledger.forget(book: first)
+        check("the zone keeps its token while another book reads it",
+              tokenKeys(in: url), [zone])
+
+        ledger.forget(book: second)
+        check("and drops it once the last one is gone", tokenKeys(in: url), [])
+    }
+
+    private static func tokenKeys(in url: URL) -> [String] {
+        guard let data = try? Data(contentsOf: url),
+              let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let tokens = json["tokens"] as? [String: Any] else { return [] }
+        return tokens.keys.sorted()
     }
 
     // MARK: - The fixture
