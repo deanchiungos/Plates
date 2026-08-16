@@ -33,7 +33,7 @@ final class SharedBookLedger {
         var zoneOwner: String
     }
 
-    private let url: URL?
+    private let file: SidecarFile
     private var entries: [UUID: Entry] = [:]
     /// Server change tokens, per zone, so a pull asks for what is new rather than
     /// everything. Kept separate from `entries` because they are opaque blobs with
@@ -42,14 +42,17 @@ final class SharedBookLedger {
     private var tokens: [String: Data] = [:]
 
     init(url: URL?) {
-        self.url = url
+        file = SidecarFile(url: url, holding: "which books are shared")
         load()
     }
 
     // MARK: - Books
 
     func entry(for book: UUID) -> Entry? { entries[book] }
-    func isShared(_ book: UUID) -> Bool { entries[book] != nil }
+    // An `isShared(_:)` sat here, asking `entry(for:) != nil`. Its six callers each
+    // guarded a `SharedBookSync` call that opens by asking the same thing, so all it
+    // ever did was let a caller decide for itself what "shared" means. Nothing calls
+    // it now. `entry(for:)` returning nil is the one answer.
     var allShared: [Entry] { Array(entries.values) }
 
     func note(_ entry: Entry) {
@@ -106,23 +109,20 @@ final class SharedBookLedger {
     }
 
     private static var defaultURL: URL? {
-        try? FileManager.default
-            .url(for: .applicationSupportDirectory, in: .userDomainMask,
-                 appropriateFor: nil, create: true)
-            .appendingPathComponent("SharedBooks.json")
+        SidecarFile.inApplicationSupport("SharedBooks.json",
+                                         holding: "which books are shared").url
     }
 
     private func load() {
-        guard let url, let data = try? Data(contentsOf: url),
-              let stored = try? JSONDecoder().decode(Stored.self, from: data) else { return }
+        guard let stored: Stored = file.read() else { return }
         entries = Dictionary(stored.entries.map { ($0.bookID, $0) }, uniquingKeysWith: { a, _ in a })
         tokens = stored.tokens
     }
 
+    /// Losing this is worse than it looks: the entries can be rebuilt by asking
+    /// CloudKit, but a dropped change token means the next pull is told what exists
+    /// and never what was deleted.
     private func save() {
-        guard let url,
-              let data = try? JSONEncoder().encode(
-                Stored(entries: Array(entries.values), tokens: tokens)) else { return }
-        try? data.write(to: url, options: .atomic)
+        file.write(Stored(entries: Array(entries.values), tokens: tokens))
     }
 }

@@ -63,9 +63,13 @@ enum PlateLogger {
         // device authored goes out, and nothing that arrives is ever re-published,
         // because received sightings come through `SharedBookMerge` and never
         // through here.
-        if let book = sighting.book, SharedBookLedger.shared.isShared(book.id) {
-            SharedBookSync.shared.push(sighting, in: book)
-        }
+        // No `isShared` check here, or at the five other call sites of `push` and
+        // `remove`. Every one of them asked the ledger the same question the sync
+        // itself asks on the first line of both methods, which put the definition of
+        // "this book is shared" in seven places and made six of them able to drift
+        // from the one that decides. `SharedBookSync` is a no-op for a book nobody
+        // is sharing.
+        if let book = sighting.book { SharedBookSync.shared.push(sighting, in: book) }
 
         // The trip just took a plate, so whatever reminder was pending for it is
         // now measured from the wrong moment. Rebuilt rather than patched — see
@@ -109,8 +113,7 @@ enum PlateLogger {
         // the tombstone — the reference is gone the moment the row is.
         for (_, group) in Dictionary(grouping: sightings.filter { $0.book != nil },
                                      by: { $0.book!.id }) {
-            if let book = group.first?.book, book.id != collection.id,
-               SharedBookLedger.shared.isShared(book.id) {
+            if let book = group.first?.book, book.id != collection.id {
                 SharedBookSync.shared.remove(group.map(\.id), in: book)
             }
         }
@@ -139,7 +142,7 @@ enum PlateLogger {
         // The same withdrawal over the slower wire. Deleting the record *is* the
         // tombstone here — CloudKit tells the other side on their next pull — so
         // unlike the party there is nothing extra to remember.
-        if let book = collection as? Book, SharedBookLedger.shared.isShared(book.id) {
+        if let book = collection as? Book {
             SharedBookSync.shared.remove(withdrawn, in: book)
         }
 

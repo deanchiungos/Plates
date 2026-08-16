@@ -130,17 +130,15 @@ struct MapScreen: View {
             // would otherwise be the only way to reach.
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
-                if let i = args.firstIndex(of: "-mapMode"), i + 1 < args.count,
-                   let m = Mode(rawValue: args[i + 1]) { mode = m }
+                if let m = LaunchFlags.value(after: "-mapMode")
+                    .flatMap(Mode.init(rawValue:)) { mode = m }
                 // `-mapZoom 3` renders as if pinched, so the zoomed drawing can be
                 // checked without a pinch gesture.
-                if let i = args.firstIndex(of: "-mapZoom"), i + 1 < args.count,
-                   let z = Double(args[i + 1]) {
+                if let z = LaunchFlags.value(after: "-mapZoom").flatMap(Double.init) {
                     debugZoom = CGFloat(z)
                     debugPan = CGSize(width: -60 * z, height: -20 * z)
                 }
-                if let i = args.firstIndex(of: "-mapState"), i + 1 < args.count {
-                    let code = args[i + 1]
+                if let code = LaunchFlags.value(after: "-mapState") {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                         selected = code; highlighted = code
                     }
@@ -148,8 +146,8 @@ struct MapScreen: View {
                 // `-mapHighlight ON` rings a region without opening the sheet, which
                 // is the only way to actually look at the ring: the sheet covers the
                 // map and dims whatever is left of it.
-                if let i = args.firstIndex(of: "-mapHighlight"), i + 1 < args.count {
-                    highlighted = args[i + 1]
+                if let code = LaunchFlags.value(after: "-mapHighlight") {
+                    highlighted = code
                 }
             }
             #endif

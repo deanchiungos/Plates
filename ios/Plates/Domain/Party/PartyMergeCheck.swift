@@ -60,7 +60,9 @@ enum PartyMergeCheck {
          ("two screens agree", twoScreensAgreeOnWhoFoundIt),
          ("the best find holds still", theBestFindDoesNotMoveBetweenLaunches),
          ("thinning respects its cap", aThinnedPathRespectsItsCap),
-         ("suppressed rows", suppressedRowsAreNotCounts)]
+         ("suppressed rows", suppressedRowsAreNotCounts),
+         ("a flag's value is its own", aFlagsValueBelongsToThatFlag),
+         ("a spared card stays spent", aSparedCardStaysSpent)]
     }
 
     @MainActor
@@ -1052,6 +1054,59 @@ enum PartyMergeCheck {
     /// The IRS writes -1 where a cell is too small to disclose. Parsed as a number it
     /// subtracts from a tie strength that has no meaning below zero.
     @MainActor
+    /// The bug this exists for: `-target past` selected the finished trip by asking
+    /// whether the *word* "past" appeared anywhere in the command line. It does not
+    /// have to belong to `-target`, or to any flag — `-tab past` did it, and so did a
+    /// value meant for something else entirely. Reading the token after the flag is
+    /// the whole fix, and this is the case that would have caught it: "past" is in
+    /// the arguments both times, and only one of them is `-target`'s.
+    private static func aFlagsValueBelongsToThatFlag() throws {
+        let mine = ["Plates", "-target", "past", "-tab", "map"]
+        check("the value after the flag",
+              LaunchFlags.value(after: "-target", in: mine), "past")
+        check("and not somebody else's",
+              LaunchFlags.value(after: "-tab", in: mine), "map")
+
+        let borrowed = ["Plates", "-tab", "past"]
+        check("a bare token belongs to no flag",
+              LaunchFlags.value(after: "-target", in: borrowed), nil)
+
+        check("a flag with nothing after it",
+              LaunchFlags.value(after: "-target", in: ["Plates", "-target"]), nil)
+        check("a flag that is not there",
+              LaunchFlags.value(after: "-target", in: ["Plates"]), nil)
+        check("a value that looks like a flag is still a value",
+              LaunchFlags.value(after: "-rarityDump", in: ["Plates", "-rarityDump", "-33.9,18.4"]),
+              "-33.9,18.4")
+        check("a flag on its own", LaunchFlags.isSet("-foundAll", in: ["Plates", "-foundAll"]), true)
+        check("and one that is not", LaunchFlags.isSet("-foundAll", in: ["Plates"]), false)
+    }
+
+    /// `Coach` and `Tour` keep their ledgers in the same drawer now, and the one
+    /// behaviour that is not shared is the welcome card: replaying the tips must not
+    /// re-run the first-launch card over an app somebody has used for a year, and
+    /// "Replay the tour" must. Both directions, because a `sparing:` set that is
+    /// ignored and one that is always applied each break exactly one of them.
+    private static func aSparedCardStaysSpent() throws {
+        Coach.markAllSeen()
+        check("every tip is spent", Coach.Tip.allCases.allSatisfy(Coach.seen), true)
+
+        Coach.reset()
+        check("the welcome card is not handed back", Coach.seen(.welcome), true)
+        check("but the tips are", Coach.seen(.firstTap), false)
+
+        Coach.markAllSeen()
+        Coach.reset(includingWelcome: true)
+        check("and Replay the tour hands back everything", Coach.seen(.welcome), false)
+
+        // Two ledgers, one drawer: they must not be able to read each other's keys.
+        Tour.markAllSeen()
+        Coach.reset(includingWelcome: true)
+        check("Coach's reset leaves the tours alone", Tour.seen(.game), true)
+        Tour.reset()
+        check("and the tours can be handed back on their own", Tour.seen(.game), false)
+    }
+
     private static func suppressedRowsAreNotCounts() throws {
         // The three rows that carry it, from the packed table.
         for (from, to) in [("VT", "ND"), ("WY", "DE"), ("WY", "RI")] {

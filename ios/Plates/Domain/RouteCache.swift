@@ -42,7 +42,7 @@ final class RouteCache {
         var path: [CLLocationCoordinate2D] { coordinates.map(\.coordinate) }
     }
 
-    private let url: URL?
+    private let file: SidecarFile
     private var entries: [String: Directions] = [:]
     /// In-flight requests, so two callers asking at the same moment — which is
     /// exactly what a share tapped from an open trip editor looks like — share one
@@ -54,7 +54,7 @@ final class RouteCache {
     private static let limit = 40
 
     init(url: URL?) {
-        self.url = url
+        file = SidecarFile(url: url, holding: "cached routes")
         load()
     }
 
@@ -177,22 +177,15 @@ final class RouteCache {
     // MARK: - Disk
 
     private static var defaultURL: URL? {
-        try? FileManager.default
-            .url(for: .applicationSupportDirectory, in: .userDomainMask,
-                 appropriateFor: nil, create: true)
-            .appendingPathComponent("Routes.json")
+        SidecarFile.inApplicationSupport("Routes.json", holding: "cached routes").url
     }
 
     private func load() {
-        guard let url, let data = try? Data(contentsOf: url),
-              let stored = try? JSONDecoder().decode([String: Directions].self, from: data)
-        else { return }
+        guard let stored: [String: Directions] = file.read() else { return }
         entries = stored
     }
 
-    /// Failures are swallowed. The worst case is asking MapKit again.
-    private func save() {
-        guard let url, let data = try? JSONEncoder().encode(entries) else { return }
-        try? data.write(to: url, options: .atomic)
-    }
+    /// Failures cost one more round trip to MapKit, which is the cheapest recovery
+    /// of any of the sidecars.
+    private func save() { file.write(entries) }
 }

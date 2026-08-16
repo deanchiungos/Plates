@@ -689,11 +689,11 @@ final class PartySession {
         do {
             envelope = try PartyEnvelope.decoded(from: data)
         } catch {
-            trouble = "Could not read a message from \(peer.displayName)."
+            trouble = String(localized: "Could not read a message from \(peer.displayName).")
             return
         }
         guard let envelope else {
-            trouble = "\(peer.displayName) is running a different version of Plates."
+            trouble = String(localized: "\(peer.displayName) is running a different version of Plates.")
             return
         }
 
@@ -845,7 +845,7 @@ final class PartySession {
     private func saidGoodbye(_ peer: MCPeerID) {
         if role == .guest, peer == hostPeer {
             hasEnded = true
-            trouble = "The host ended the party. Your plates are all still here."
+            trouble = String(localized: "The host ended the party. Your plates are all still here.")
             stop()
         } else {
             disconnected(peer)
@@ -974,7 +974,7 @@ final class PartySession {
         // normal state of a phone in a pocket; the browser is still running and
         // `found` puts it straight back the moment the host is in range again.
         if role == .guest, peer == hostPeer, hasJoined, !hasEnded {
-            trouble = "Lost the party. Looking for it again\u{2026}"
+            trouble = String(localized: "Lost the party. Looking for it again\u{2026}")
         }
     }
 
@@ -1117,9 +1117,7 @@ final class PartySession {
         // `-partyCode` still wins, or every two-device test would inherit whatever
         // the previous one happened to persist.
         let args = ProcessInfo.processInfo.arguments
-        if let at = args.firstIndex(of: "-partyCode"), at + 1 < args.count {
-            return tidy(args[at + 1])
-        }
+        if let given = LaunchFlags.value(after: "-partyCode") { return tidy(given) }
         #endif
         if let kept = PartyLedger.shared.code(for: trip), !kept.isEmpty { return kept }
         return freshCode()

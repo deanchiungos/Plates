@@ -48,12 +48,11 @@ enum PlateFacts {
     /// which in a debug build stops the app instead.
     static let byCode: [String: [String]] = entries.mapValues { $0.map(\.text) }
 
-    /// Where a fact was checked, keyed by the fact's own words. Nothing in the UI
-    /// reads this yet; it is here so provenance travels with the app rather than
-    /// living in a research file that silently drifts out of step.
-    static let sourceByFact: [String: String] = Dictionary(
-        entries.values.flatMap { $0 }.map { ($0.text, $0.source) },
-        uniquingKeysWith: { first, _ in first })
+    // A `sourceByFact` index used to sit here, keyed by a fact's own words, with a
+    // note saying nothing read it yet. Nothing ever did. Provenance has not gone
+    // anywhere — every entry still carries its `source`, which is where it belongs —
+    // so anything that wants to show it can ask the fact rather than a second table
+    // that has to be kept in step with the first.
 
     static func facts(for code: String) -> [String] { byCode[code] ?? [] }
 

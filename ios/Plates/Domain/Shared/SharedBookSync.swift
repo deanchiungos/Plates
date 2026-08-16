@@ -263,7 +263,7 @@ final class SharedBookSync {
             _ = try await container.accept(metadata)
             let zone = metadata.share.recordID.zoneID
             guard let bookID = UUID(uuidString: metadata.hierarchicalRootRecordID?.recordName ?? "")
-            else { return trouble = "That invitation did not name a book." }
+            else { return trouble = String(localized: "That invitation did not name a book.") }
 
             log("accepted share for book \(bookID) in \(zone.ownerName)/\(zone.zoneName)")
             ledger.note(.init(bookID: bookID, isOwner: false,

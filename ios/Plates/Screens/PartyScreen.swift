@@ -100,9 +100,9 @@ struct PartyScreen: View {
         .onChange(of: party?.nearby.first) { _, found in
             let args = ProcessInfo.processInfo.arguments
             guard args.contains("-joinParty"),
-                  let at = args.firstIndex(of: "-partyCode"), at + 1 < args.count,
+                  let given = LaunchFlags.value(after: "-partyCode"),
                   let found, let party, !party.isConnected else { return }
-            party.join(found, code: args[at + 1])
+            party.join(found, code: given)
         }
         // `-partyLog OH` logs a plate the moment somebody joins, through the real
         // `PlateLogger` path — so a two-device test exercises the actual broadcast
@@ -127,17 +127,17 @@ struct PartyScreen: View {
             // steps `PlayersScreen.save` takes. The only way to reach the case
             // without a keyboard, and the case is the reported bug: a rename has to
             // reach the other phones, and it must not be undone by their stale copy.
-            if let at = args.firstIndex(of: "-renameMe"), at + 1 < args.count {
+            if let named = LaunchFlags.value(after: "-renameMe") {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                     guard let me = DevicePlayer.resolve(from: players) else { return }
-                    me.name = args[at + 1]
+                    me.name = named
                     try? context.save()
                     PartySession.shared?.announceMe(me)
                 }
             }
 
-            guard let at = args.firstIndex(of: "-partyLog"), at + 1 < args.count,
-                  let plate = Plate.plate(for: args[at + 1].uppercased()) else { return }
+            guard let code = LaunchFlags.value(after: "-partyLog"),
+                  let plate = Plate.plate(for: code.uppercased()) else { return }
 
             // Connected is not the same as caught up: a guest is pointed at its own
             // trip until the snapshot lands and switches it. Logging before then puts

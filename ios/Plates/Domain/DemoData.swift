@@ -228,14 +228,17 @@ enum DemoData {
         // so the book-filling grid can be screenshotted.
         // `-target past` selects the short finished trip instead, which is the
         // case that matters for the log map: a few sightings inside one state.
-        let argv = ProcessInfo.processInfo.arguments
-        let chosen = argv.contains("past") ? past
-                   : argv.contains("short") ? hop
+        // Read as the value after `-target`, not as a bare token anywhere in argv.
+        // `contains("past")` matched any argument equal to "past" — including one
+        // meant for something else entirely — and the book half of the same option
+        // was already read properly two lines below, so the file disagreed with
+        // itself about how its own flag is spelled.
+        let target = LaunchFlags.value(after: "-target")
+        let chosen = target == "past" ? past
+                   : target == "short" ? hop
                    : trip
-        UserDefaults.standard.set(chosen.id.uuidString, forKey: TripSelection.key)
-        let args = ProcessInfo.processInfo.arguments
-        let wantsBook = (args.firstIndex(of: "-target").map { $0 + 1 < args.count && args[$0 + 1] == "book" }) ?? false
-        UserDefaults.standard.set(wantsBook ? "book" : "trip", forKey: PlaySelection.kindKey)
+        AppDefaults.store.set(chosen.id.uuidString, forKey: TripSelection.key)
+        AppDefaults.store.set(target == "book" ? "book" : "trip", forKey: PlaySelection.kindKey)
 
         // `-manyTrips` stands up a full list, which is the case the fixture had no
         // answer for. Everything here is sized for one trip and reads fine at that
@@ -243,7 +246,7 @@ enum DemoData {
         // somewhere past ten, and there was no way to get there without tapping
         // "New trip" a dozen times by hand. Half of them finished, so the archive
         // has both kinds in it.
-        if argv.contains("-manyTrips") {
+        if LaunchFlags.isSet("-manyTrips") {
             let names = ["Thanksgiving", "Cape Cod", "Blue Ridge", "Route 66",
                          "Maine in Fall", "Florida Keys", "Big Sur", "Yellowstone",
                          "Nova Scotia", "Great Lakes", "Texas Loop", "Utah Parks"]
@@ -291,10 +294,10 @@ enum DemoData {
             // `-trailStack3` makes it three instead. An odd count with a card exactly
             // on the centre line behaves differently from an even spread, and three is
             // the smallest group that shows it.
-            let stackSize = args.contains("-trailStack3") ? 3
-                          : args.contains("-trailStackBig") ? 12 : 5
-            if args.contains("-trailStack") || args.contains("-trailStack3")
-                || args.contains("-trailStackBig"),
+            let stackSize = LaunchFlags.isSet("-trailStack3") ? 3
+                          : LaunchFlags.isSet("-trailStackBig") ? 12 : 5
+            if LaunchFlags.isSet("-trailStack") || LaunchFlags.isSet("-trailStack3")
+                || LaunchFlags.isSet("-trailStackBig"),
                (5..<(5 + stackSize)).contains(offset) {
                 sighting.spottedLat = 39.7392
                 sighting.spottedLon = -104.9903
@@ -314,7 +317,7 @@ enum DemoData {
         // `-foundAll` tops the live trip up to the whole catalog. Reaching the states
         // where everything is found — the all-fifty milestone, a fully green map, the
         // filter's "nothing left" card — otherwise means tapping 65 tiles by hand.
-        if args.contains("-foundAll") {
+        if LaunchFlags.isSet("-foundAll") {
             let already = Set(script.map(\.code))
             for (offset, plate) in Plate.all.filter({ !already.contains($0.code) }).enumerated() {
                 context.insert(

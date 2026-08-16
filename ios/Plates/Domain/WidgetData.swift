@@ -70,12 +70,7 @@ struct WidgetData: Codable, Equatable {
         let sightings = (try? context.fetch(FetchDescriptor<Sighting>())) ?? []
         let lifetime = PlateBook(sightings: sightings)
 
-        let defaults = UserDefaults.standard
-        let target = PlaySelection.current(
-            kind: defaults.string(forKey: PlaySelection.kindKey) ?? "trip",
-            tripID: defaults.string(forKey: TripSelection.key) ?? "",
-            bookID: defaults.string(forKey: PlaySelection.bookKey) ?? "",
-            trips: trips, books: books)
+        let target = PlaySelection.current(trips: trips, books: books)
         let current = target?.collection
 
         // Scored the way the collection itself scores, so a trip's rarest is judged
@@ -107,12 +102,10 @@ struct WidgetData: Codable, Equatable {
     }
 
     private func save() {
-        guard let url = Self.url,
-              let data = try? JSONEncoder().encode(self) else { return }
         // Only when something actually changed. A widget reload is not free, and
         // rewriting an identical file on every launch would spend that for nothing.
         if let existing = Self.read(), existing.matches(self) { return }
-        try? data.write(to: url, options: .atomic)
+        Self.file.write(self)
         WidgetRefresh.request()
     }
 
@@ -127,9 +120,14 @@ struct WidgetData: Codable, Equatable {
 
     // MARK: - Reading
 
-    static func read() -> WidgetData? {
-        guard let url, let data = try? Data(contentsOf: url) else { return nil }
-        return try? JSONDecoder().decode(WidgetData.self, from: data)
+    static func read() -> WidgetData? { file.read() }
+
+    /// The same shape as the four sidecars in Application Support, and it earns the
+    /// shared reader for a reason of its own: this file is read by the *widget*, in
+    /// another process, and a version of the app that changed the shape of it would
+    /// otherwise leave the widget silently drawing nothing.
+    private static var file: SidecarFile {
+        SidecarFile(url: url, holding: "the widget's copy of the game")
     }
 
     /// The shared container if the entitlement is in place, the app's own if not.

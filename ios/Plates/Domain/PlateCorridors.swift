@@ -51,25 +51,21 @@ enum PlateCorridors {
 
     private static let tolerance = 45.0
 
-    // Same equirectangular plane as `PlateRarity.project`, restated here so this
-    // file stands alone; the constant is the 40°N reference latitude.
-    private static let kmPerLon = cos(40 * Double.pi / 180) * 111.0
-    private static func project(_ lat: Double, _ lon: Double) -> (x: Double, y: Double) {
-        (x: lon * kmPerLon, y: lat * 111.0)
+    // The same plane `PlateRarity` scores on, and deliberately not a second copy of
+    // it: `tolerance` above is 45 km *on this map*, so the two cannot be allowed to
+    // drift apart. See `GroundPlane`.
+    private static func project(_ lat: Double, _ lon: Double) -> GroundPlane.Point {
+        GroundPlane.project(lat, lon)
     }
 
-    private static func distance(_ p: (x: Double, y: Double),
-                                 toSegment a: (x: Double, y: Double),
-                                 _ b: (x: Double, y: Double)) -> Double {
-        let vx = b.x - a.x, vy = b.y - a.y
-        let l2 = vx * vx + vy * vy
-        guard l2 > 0 else { return hypot(p.x - a.x, p.y - a.y) }
-        let t = min(max(((p.x - a.x) * vx + (p.y - a.y) * vy) / l2, 0), 1)
-        return hypot(p.x - (a.x + t * vx), p.y - (a.y + t * vy))
+    private static func distance(_ p: GroundPlane.Point,
+                                 toSegment a: GroundPlane.Point,
+                                 _ b: GroundPlane.Point) -> Double {
+        GroundPlane.distance(from: p, toSegment: a, b)
     }
 
-    private static let polylines: [String: [(x: Double, y: Double)]] = {
-        var out: [String: [(x: Double, y: Double)]] = [:]
+    private static let polylines: [String: [GroundPlane.Point]] = {
+        var out: [String: [GroundPlane.Point]] = [:]
         for line in packedRoads.split(separator: "\n") {
             let f = line.split(separator: " ")
             guard f.count > 2 else { continue }

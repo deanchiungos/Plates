@@ -6,9 +6,11 @@ struct RootView: View {
     /// The text after `-lookup`, if any.
     static var launchQuery: String {
         let args = ProcessInfo.processInfo.arguments
-        guard let i = args.firstIndex(of: "-lookup"), i + 1 < args.count,
-              !args[i + 1].hasPrefix("-") else { return "" }
-        return args[i + 1]
+        // The "-" rule, for the same reason as `-search`: a description that starts
+        // like a flag is the next flag. See `LaunchFlags.value`.
+        guard let described = LaunchFlags.value(after: "-lookup"),
+              !described.hasPrefix("-") else { return "" }
+        return described
     }
     #endif
 
@@ -197,8 +199,8 @@ struct RootView: View {
     static var initialTab: Int {
         #if DEBUG
         let args = ProcessInfo.processInfo.arguments
-        if let i = args.firstIndex(of: "-tab"), i + 1 < args.count {
-            switch args[i + 1].lowercased() {
+        if let named = LaunchFlags.value(after: "-tab") {
+            switch named.lowercased() {
             case "map": return 1
             case "book", "badges": return 2
             case "trips": return 3

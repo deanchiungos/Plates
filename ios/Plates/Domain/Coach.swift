@@ -40,7 +40,7 @@ enum Coach {
         case listLength     // mark old trips done once the list is long
     }
 
-    private static func key(_ tip: Tip) -> String { "coach.\(tip.rawValue)" }
+    private static let ledger = SeenLedger<Tip>(prefix: "coach")
 
     // MARK: - Sessions
 
@@ -59,21 +59,17 @@ enum Coach {
 
     /// Called once, before any screen asks anything.
     static func beginSession() {
-        let next = UserDefaults.standard.integer(forKey: launchesKey) + 1
-        UserDefaults.standard.set(next, forKey: launchesKey)
+        let next = AppDefaults.store.integer(forKey: launchesKey) + 1
+        AppDefaults.store.set(next, forKey: launchesKey)
         launchCount = next
     }
 
     /// True from the second time the app is opened onward.
     static var isReturningSession: Bool { launchCount > 1 }
 
-    static func seen(_ tip: Tip) -> Bool {
-        UserDefaults.standard.bool(forKey: key(tip))
-    }
+    static func seen(_ tip: Tip) -> Bool { ledger.seen(tip) }
 
-    static func markSeen(_ tip: Tip) {
-        UserDefaults.standard.set(true, forKey: key(tip))
-    }
+    static func markSeen(_ tip: Tip) { ledger.markSeen(tip) }
 
     /// Spend every tip at once, without showing any of them.
     ///
@@ -81,9 +77,7 @@ enum Coach {
     /// being taught has not asked to be taught in smaller pieces instead, and the
     /// balloons are the same lesson delivered one control at a time. "Replay the tour"
     /// hands them all back, which is what makes this safe to be so total.
-    static func markAllSeen() {
-        for tip in Tip.allCases { markSeen(tip) }
-    }
+    static func markAllSeen() { ledger.markSeen(Tip.allCases) }
 
     /// Hand every tip back its turn.
     ///
@@ -97,9 +91,7 @@ enum Coach {
     /// data. That is a deliberate override of the rule above rather than an
     /// exception to it — see `CoachPresenter.replayTour`.
     static func reset(includingWelcome: Bool = false) {
-        for tip in Tip.allCases where includingWelcome || tip != .welcome {
-            UserDefaults.standard.removeObject(forKey: key(tip))
-        }
+        ledger.reset(sparing: includingWelcome ? [] : [.welcome])
     }
 
     #if DEBUG
@@ -107,14 +99,19 @@ enum Coach {
     /// to photograph a balloon whose trigger needs a state that takes ten taps to
     /// reach. `-coachReset` wipes the ledger at launch, which is how the sequence is
     /// run twice without reinstalling.
-    static var forced: Tip? {
-        let args = ProcessInfo.processInfo.arguments
-        guard let at = args.firstIndex(of: "-coach"), at + 1 < args.count else { return nil }
-        return Tip(rawValue: args[at + 1])
-    }
+    static var forced: Tip? { ledger.forced(by: "-coach") }
 
     static func applyLaunchArguments() {
-        if ProcessInfo.processInfo.arguments.contains("-coachReset") { reset() }
+        guard LaunchFlags.isSet("-coachReset") else { return }
+        // Including the welcome card, and the launch counter that gates it. `reset()`
+        // defaults to sparing the welcome — which is right for the in-app control,
+        // where somebody asking to see the tips again does not mean the introduction
+        // — and left this flag unable to reset the one card it exists to show twice.
+        reset(includingWelcome: true)
+        AppDefaults.store.removeObject(forKey: launchesKey)
+        // Handing the welcome card back is not the same as seeing it: `RootView`
+        // also requires an empty roster, so `-coachReset` alongside `-demoData`
+        // still shows nothing. `-welcome` is the flag for looking at the card.
     }
     #endif
 }

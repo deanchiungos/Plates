@@ -149,8 +149,8 @@ struct CollectionScreen: View {
             //   -bookScope alltime       open on the all-time lens
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
-                if let i = args.firstIndex(of: "-bookScope"), i + 1 < args.count {
-                    allTime = args[i + 1] == "alltime"
+                if let scope = LaunchFlags.value(after: "-bookScope") {
+                    allTime = scope == "alltime"
                 }
             }
             #endif

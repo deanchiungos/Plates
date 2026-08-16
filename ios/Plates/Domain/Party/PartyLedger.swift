@@ -40,11 +40,11 @@ final class PartyLedger {
     }
 
     /// `nil` keeps everything in memory, for the harness.
-    private let url: URL?
+    private let file: SidecarFile
     private var records: [UUID: Record] = [:]
 
     init(url: URL?) {
-        self.url = url
+        file = SidecarFile(url: url, holding: "party rules")
         load()
     }
 
@@ -127,23 +127,16 @@ final class PartyLedger {
     // MARK: - Disk
 
     private static var defaultURL: URL? {
-        try? FileManager.default
-            .url(for: .applicationSupportDirectory, in: .userDomainMask,
-                 appropriateFor: nil, create: true)
-            .appendingPathComponent("PartyLedger.json")
+        SidecarFile.inApplicationSupport("PartyLedger.json", holding: "party rules").url
     }
 
     private func load() {
-        guard let url, let data = try? Data(contentsOf: url),
-              let raw = try? JSONDecoder().decode([Record].self, from: data) else { return }
+        guard let raw: [Record] = file.read() else { return }
         records = Dictionary(raw.map { ($0.tripID, $0) }, uniquingKeysWith: { a, _ in a })
     }
 
-    /// Failures are swallowed. The worst case is a badge that does not appear and a
-    /// rule that falls back to its default — neither is worth interrupting a drive.
-    private func save() {
-        guard let url,
-              let data = try? JSONEncoder().encode(Array(records.values)) else { return }
-        try? data.write(to: url, options: .atomic)
-    }
+    /// Failures are not raised to anybody. The worst case is a badge that does not
+    /// appear and a rule that falls back to its default — neither is worth
+    /// interrupting a drive.
+    private func save() { file.write(Array(records.values)) }
 }

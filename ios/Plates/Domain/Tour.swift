@@ -155,15 +155,11 @@ enum Tour {
 
     // MARK: - Ledger
 
-    private static func key(_ screen: Screen) -> String { "tour.\(screen.rawValue)" }
+    private static let ledger = SeenLedger<Screen>(prefix: "tour")
 
-    static func seen(_ screen: Screen) -> Bool {
-        UserDefaults.standard.bool(forKey: key(screen))
-    }
+    static func seen(_ screen: Screen) -> Bool { ledger.seen(screen) }
 
-    static func markSeen(_ screen: Screen) {
-        UserDefaults.standard.set(true, forKey: key(screen))
-    }
+    static func markSeen(_ screen: Screen) { ledger.markSeen(screen) }
 
     /// True once every *tab* has been walked through.
     ///
@@ -179,38 +175,25 @@ enum Tour {
     static var isComplete: Bool { Screen.tabs.allSatisfy(seen) }
 
     /// Every screen, tabs and pushed alike.
-    static func markAllSeen() {
-        for screen in Screen.allCases { markSeen(screen) }
-    }
+    static func markAllSeen() { ledger.markSeen(Screen.allCases) }
 
-    static func reset() {
-        for screen in Screen.allCases {
-            UserDefaults.standard.removeObject(forKey: key(screen))
-        }
-    }
+    static func reset() { ledger.reset() }
 
     #if DEBUG
     /// `-tour map` forces one screen's tour to run whatever the ledger says, which is
     /// the only way to photograph a sequence that by definition happens once.
     /// `-tourReset` wipes the ledger at launch, for running the whole thing again
     /// without reinstalling.
-    static var forced: Screen? {
-        let args = ProcessInfo.processInfo.arguments
-        guard let at = args.firstIndex(of: "-tour"), at + 1 < args.count else { return nil }
-        return Screen(rawValue: args[at + 1])
-    }
+    static var forced: Screen? { ledger.forced(by: "-tour") }
 
     /// `-tourStep 3` opens a tour already advanced, so a stop in the middle of a
     /// sequence can be looked at without tapping Next to reach it.
     static var forcedStep: Int {
-        let args = ProcessInfo.processInfo.arguments
-        guard let at = args.firstIndex(of: "-tourStep"), at + 1 < args.count,
-              let n = Int(args[at + 1]) else { return 0 }
-        return max(0, n)
+        max(0, LaunchFlags.value(after: "-tourStep").flatMap(Int.init) ?? 0)
     }
 
     static func applyLaunchArguments() {
-        if ProcessInfo.processInfo.arguments.contains("-tourReset") { reset() }
+        if LaunchFlags.isSet("-tourReset") { reset() }
     }
     #endif
 }

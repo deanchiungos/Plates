@@ -102,15 +102,7 @@ enum PlatesStore {
         let books = (try? context.fetch(FetchDescriptor<Book>(
             sortBy: [SortDescriptor(\.startedAt, order: .reverse)]))) ?? []
 
-        let defaults = UserDefaults.standard
-        if let target = PlaySelection.current(
-            kind: defaults.string(forKey: PlaySelection.kindKey) ?? "trip",
-            tripID: defaults.string(forKey: TripSelection.key) ?? "",
-            bookID: defaults.string(forKey: PlaySelection.bookKey) ?? "",
-            trips: trips, books: books) {
-            return target.collection
-        }
-        return nil
+        return PlaySelection.current(trips: trips, books: books)?.collection
     }
 
     /// Deliberately seeds nothing.
@@ -225,14 +217,13 @@ enum PlatesStore {
         // seeded, as two players called nothing at all — and the one thing a two-device
         // test is checking cannot be seen. Inserts rather than renames, because on a
         // fresh simulator there is no longer anybody here to rename.
-        let args = ProcessInfo.processInfo.arguments
-        if let at = args.firstIndex(of: "-asPlayer"), at + 1 < args.count {
+        if let named = LaunchFlags.value(after: "-asPlayer") {
             let me = DevicePlayer.current(in: context) ?? {
-                let fresh = Player(name: args[at + 1], colorIndex: 0)
+                let fresh = Player(name: named, colorIndex: 0)
                 context.insert(fresh)
                 return fresh
             }()
-            me.name = args[at + 1]
+            me.name = named
             try? context.save()
             DevicePlayer.adopt(me)
             DevicePlayer.markProfileSet()

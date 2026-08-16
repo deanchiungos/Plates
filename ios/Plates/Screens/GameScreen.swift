@@ -34,9 +34,11 @@ struct GameScreen: View {
     /// exercises is the whole reason the field stopped forcing capitals.
     private static var launchSearch: String {
         let args = ProcessInfo.processInfo.arguments
-        guard let i = args.firstIndex(of: "-search"), i + 1 < args.count,
-              !args[i + 1].hasPrefix("-") else { return "" }
-        return args[i + 1]
+        // The one place the "-" rule is applied, because a search term that looks
+        // like a flag is far more likely to be the next flag. See `LaunchFlags.value`.
+        guard let term = LaunchFlags.value(after: "-search"),
+              !term.hasPrefix("-") else { return "" }
+        return term
     }
     #endif
     #if DEBUG
@@ -455,8 +457,8 @@ struct GameScreen: View {
     ///   -filter done     hide found with everything found
     private func applyLaunchArguments() {
         let args = ProcessInfo.processInfo.arguments
-        if let i = args.firstIndex(of: "-filter"), i + 1 < args.count {
-            switch args[i + 1] {
+        if let named = LaunchFlags.value(after: "-filter") {
+            switch named {
             case "left":   filter = .init(hideFound: true, sets: Set(PlateRegion.allCases))
             case "states": filter = .init(hideFound: false, sets: [.state])
             // The Bonus section on its own, which is otherwise fifty tiles down.
@@ -474,14 +476,13 @@ struct GameScreen: View {
             default: break
             }
         }
-        if let i = args.firstIndex(of: "-search"), i + 1 < args.count {
-            query = args[i + 1]
+        if let term = LaunchFlags.value(after: "-search") {
+            query = term
             searchOpen = true
         }
         // `-uncheck NJ` opens the removal menu on that plate — the menu is
         // behind a long-press, which no launch argument can perform.
-        if let i = args.firstIndex(of: "-uncheck"), i + 1 < args.count,
-           let plate = Plate.plate(for: args[i + 1]) {
+        if let plate = LaunchFlags.value(after: "-uncheck").flatMap(Plate.plate(for:)) {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 if let collection { uncheck(plate, in: collection) }
             }
@@ -490,22 +491,20 @@ struct GameScreen: View {
         // the only way to reach the "remove this?" confirmation without a
         // finger. Deliberately `tap` and not `tapFound`, so the launch
         // argument goes through the same branch a tap does.
-        if let i = args.firstIndex(of: "-tapPlate"), i + 1 < args.count,
-           let plate = Plate.plate(for: args[i + 1].uppercased()) {
+        if let plate = LaunchFlags.value(after: "-tapPlate")
+            .flatMap({ Plate.plate(for: $0.uppercased()) }) {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                 if let collection { tap(plate, in: collection) }
             }
         }
-        if let i = args.firstIndex(of: "-celebrate"), i + 1 < args.count,
-           let plate = Plate.plate(for: args[i + 1]) {
+        if let plate = LaunchFlags.value(after: "-celebrate").flatMap(Plate.plate(for:)) {
             // Re-fires on a loop: a one-shot is nearly impossible to catch
             // in a screenshot.
             Timer.scheduledTimer(withTimeInterval: 7.5, repeats: true) { _ in
                 Task { @MainActor in celebrate(plate, in: collection) }
             }.fire()
         }
-        if let i = args.firstIndex(of: "-popup"), i + 1 < args.count {
-            let kind = args[i + 1]
+        if let kind = LaunchFlags.value(after: "-popup") {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 switch kind {
                 case "trips", "switch":

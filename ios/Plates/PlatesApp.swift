@@ -109,8 +109,8 @@ struct PlatesApp: App {
         // change to the model can be verified against the Python prototype it was
         // ported from instead of against a screenshot of some tiles.
         let args = ProcessInfo.processInfo.arguments
-        if let i = args.firstIndex(of: "-rarityDump"), i + 1 < args.count {
-            let f = args[i + 1].split(separator: ",")
+        if let point = LaunchFlags.value(after: "-rarityDump") {
+            let f = point.split(separator: ",")
             if f.count >= 2, let lat = Double(f[0]), let lon = Double(f[1]) {
                 // "current" makes the point a live tracking fix, which is what arms
                 // the corridor term; bare coordinates are a parked route origin.

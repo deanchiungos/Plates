@@ -757,50 +757,16 @@ enum PlateRarity {
         return distance(from: p, toSegment: a, project(dLat, dLon))
     }
 
-    /// Nearest approach from a point to one leg, in kilometres.
-    ///
-    /// Clamped to the leg, so a region beyond either end measures from that end
-    /// rather than from an imaginary extension of the road.
-    private static func distance(from p: (x: Double, y: Double),
-                                 toSegment a: (x: Double, y: Double),
-                                 _ b: (x: Double, y: Double)) -> Double {
-        let vx = b.x - a.x, vy = b.y - a.y
-        let lengthSquared = vx * vx + vy * vy
-        guard lengthSquared > 0 else { return hypot(p.x - a.x, p.y - a.y) }
-        let t = min(max(((p.x - a.x) * vx + (p.y - a.y) * vy) / lengthSquared, 0), 1)
-        return hypot(p.x - (a.x + t * vx), p.y - (a.y + t * vy))
+    /// The plane, the projection and the point-to-segment distance all live in
+    /// `GroundPlane` — shared with `PlateCorridors`, whose 45 km tolerance is
+    /// calibrated against this exact map.
+    private static func distance(from p: GroundPlane.Point,
+                                 toSegment a: GroundPlane.Point,
+                                 _ b: GroundPlane.Point) -> Double {
+        GroundPlane.distance(from: p, toSegment: a, b)
     }
 
-    /// Kilometres per degree of longitude, taken at one fixed reference latitude.
-    ///
-    /// 40°N — Philadelphia, Denver, Salt Lake City — is the middle of the band this
-    /// game is actually played in.
-    private static let kmPerLon = cos(40 * Double.pi / 180) * 111.0
-
-    /// Latitude and longitude onto a flat plane, in kilometres.
-    ///
-    /// **The longitude scale has to be a constant.** It used to be `cos(lat)` of each
-    /// point's *own* latitude, which is not a projection at all: it gives every point
-    /// its own x-axis. Because the whole continent sits at negative longitude, that
-    /// dragged northern regions east — toward the Atlantic seaboard — and pushed
-    /// southern ones west, and the error grew with the longitude itself. Measured
-    /// from Newark it made North Dakota 1,467 km away instead of 2,181, Manitoba
-    /// 1,241 instead of 2,065, Saskatchewan 1,592 instead of 2,690, Washington 3,027
-    /// instead of 3,893 — while Texas came out 3,203 instead of 2,346 and Florida
-    /// 2,218 instead of 1,538. Errors of 30 to 45 per cent, systematically signed by
-    /// latitude.
-    ///
-    /// The model then did exactly what it was told. The empty northern states looked
-    /// close and scored common — North Dakota, with 211,000 cars, outranked
-    /// Washington's 2.5 million — while Texas and Florida looked far and scored rare.
-    /// It read as the fleet term being broken. It was the ruler.
-    ///
-    /// One reference latitude makes this a real equirectangular projection: distances
-    /// are uniformly scaled rather than individually distorted, and the residual
-    /// error over the populated band runs to about ±9%, which a ten-step ranking does
-    /// not notice. It stays plane geometry, so the point-to-segment projection in
-    /// `distance(from:to:)` is unchanged.
-    private static func project(_ lat: Double, _ lon: Double) -> (x: Double, y: Double) {
-        (x: lon * kmPerLon, y: lat * 111.0)
+    private static func project(_ lat: Double, _ lon: Double) -> GroundPlane.Point {
+        GroundPlane.project(lat, lon)
     }
 }

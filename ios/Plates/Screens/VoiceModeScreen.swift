@@ -46,10 +46,9 @@ struct VoiceModeScreen: View {
     static var launchPlate: String? { Self.argument("-siri") }
 
     private static func argument(_ flag: String) -> String? {
-        let args = ProcessInfo.processInfo.arguments
-        guard let i = args.firstIndex(of: flag), i + 1 < args.count,
-              !args[i + 1].hasPrefix("-") else { return nil }
-        return args[i + 1]
+        // The "-" rule, as in `-search`: a plate code cannot start with one, so a
+        // value that does is the next flag. See `LaunchFlags.value`.
+        LaunchFlags.value(after: flag).flatMap { $0.hasPrefix("-") ? nil : $0 }
     }
     #endif
 

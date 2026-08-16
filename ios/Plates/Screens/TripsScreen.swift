@@ -108,9 +108,8 @@ struct TripsScreen: View {
                 // `-foldPopup`: they all start from a button inside the record
                 // sheet, so nothing a launch argument can reach opens them, and
                 // their messages are the longest sentences in the app.
-                if let i = args.firstIndex(of: "-tripPopup"), i + 1 < args.count,
+                if let kind = LaunchFlags.value(after: "-tripPopup"),
                    let trip = current ?? trips.playable.first {
-                    let kind = args[i + 1]
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         switch kind {
                         case "clear":   pending = .clear(trip)
@@ -123,8 +122,8 @@ struct TripsScreen: View {
                         runPending()
                     }
                 }
-                guard let i = args.firstIndex(of: "-tripEditor"), i + 1 < args.count else { return }
-                switch args[i + 1] {
+                guard let which = LaunchFlags.value(after: "-tripEditor") else { return }
+                switch which {
                 case "new": creating = true
                 case "archived": editing = trips.archived.first
                 default: editing = current
@@ -585,9 +584,7 @@ struct TripsScreen: View {
 
         // A shared book's other members hear about these the same way they hear
         // about a tap: one record per sighting, over the same wire.
-        if SharedBookLedger.shared.isShared(book.id) {
-            for sighting in chosen { SharedBookSync.shared.push(sighting, in: book) }
-        }
+        for sighting in chosen { SharedBookSync.shared.push(sighting, in: book) }
         popup.dismiss()
         Haptics.found()
     }
@@ -600,9 +597,7 @@ struct TripsScreen: View {
         let ids = folded.map(\.id)
         for sighting in folded { sighting.book = nil }
         try? context.save()
-        if SharedBookLedger.shared.isShared(book.id) {
-            SharedBookSync.shared.remove(ids, in: book)
-        }
+        SharedBookSync.shared.remove(ids, in: book)
         Haptics.undo()
     }
 
@@ -612,8 +607,7 @@ struct TripsScreen: View {
     private func pushSharedRemovals(for sightings: [Sighting]) {
         let folded = sightings.filter { $0.book != nil }
         for (_, group) in Dictionary(grouping: folded, by: { $0.book!.id }) {
-            guard let book = group.first?.book,
-                  SharedBookLedger.shared.isShared(book.id) else { continue }
+            guard let book = group.first?.book else { continue }
             SharedBookSync.shared.remove(group.map(\.id), in: book)
         }
     }

@@ -446,12 +446,26 @@ enum PlaySelection {
         return nil
     }
 
+    /// The saved answer, read from the defaults.
+    ///
+    /// For the callers that have no view to hang `@AppStorage` on — Siri and the
+    /// widget. Both restated the same three reads with their own `"trip"` default,
+    /// which is a coin-flip waiting to happen: if either copy drifts, the widget
+    /// describes one collection while Siri logs into another, on one phone, with
+    /// nothing obviously wrong on either screen.
+    static func current(trips: [Trip], books: [Book]) -> PlayTarget? {
+        current(kind: AppDefaults.store.string(forKey: kindKey) ?? "trip",
+                tripID: AppDefaults.store.string(forKey: TripSelection.key) ?? "",
+                bookID: AppDefaults.store.string(forKey: bookKey) ?? "",
+                trips: trips, books: books)
+    }
+
     /// Written straight to `UserDefaults` rather than through the `@AppStorage`
     /// properties — `@AppStorage` observes the store, so every screen still updates,
     /// and one call site can set the pair atomically instead of each screen
     /// remembering to set both.
     static func select(_ target: PlayTarget) {
-        let defaults = UserDefaults.standard
+        let defaults = AppDefaults.store
         switch target {
         case .trip(let trip):
             defaults.set("trip", forKey: kindKey)
@@ -465,7 +479,7 @@ enum PlaySelection {
     /// Marks a book as "your book" without changing what the Drive screen is
     /// filling. Browsing the Book tab should not interrupt a trip in progress.
     static func selectBookOnly(_ book: Book) {
-        UserDefaults.standard.set(book.id.uuidString, forKey: bookKey)
+        AppDefaults.store.set(book.id.uuidString, forKey: bookKey)
     }
 }
 
