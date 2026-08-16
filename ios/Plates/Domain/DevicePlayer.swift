@@ -30,10 +30,28 @@ import SwiftData
 enum DevicePlayer {
     static let key = "devicePlayerID"
 
+    /// Where the claim is written.
+    ///
+    /// `UserDefaults.standard`, in the app, always. The merge check points it at a
+    /// scratch suite for the length of a run — it has to answer "is this row me?"
+    /// from four different angles, and doing that against the real defaults meant a
+    /// debug run that died halfway through left the phone claiming a player that does
+    /// not exist, with no way to tell that had happened.
+    ///
+    /// Swappable only in DEBUG, so a shipped build has no path to it. `nonisolated
+    /// (unsafe)` because the one thing that writes it is the harness, before any of
+    /// this is running concurrently, and the alternative is isolating a property that
+    /// every view body reads.
+    #if DEBUG
+    nonisolated(unsafe) static var store: UserDefaults = .standard
+    #else
+    static let store: UserDefaults = .standard
+    #endif
+
     /// Pure. No writes, no inserts — safe to call from a view body, which is where
     /// most callers are.
     static func resolve(from players: [Player]) -> Player? {
-        if let stored = UserDefaults.standard.string(forKey: key),
+        if let stored = store.string(forKey: key),
            let named = players.first(where: { $0.id.uuidString == stored }) {
             return named
         }
@@ -59,11 +77,11 @@ enum DevicePlayer {
     /// tell", never as "not me" — comparing an id against nil is always unequal,
     /// which is how the party's ownership guard came to do nothing on fresh installs.
     static var currentID: String? {
-        UserDefaults.standard.string(forKey: key)
+        store.string(forKey: key)
     }
 
     static func adopt(_ player: Player) {
-        UserDefaults.standard.set(player.id.uuidString, forKey: key)
+        store.set(player.id.uuidString, forKey: key)
     }
 
     // MARK: - Having a name
@@ -83,11 +101,11 @@ enum DevicePlayer {
     static let profileSetKey = "devicePlayerNamed"
 
     static var hasProfile: Bool {
-        UserDefaults.standard.bool(forKey: profileSetKey)
+        store.bool(forKey: profileSetKey)
     }
 
     static func markProfileSet() {
-        UserDefaults.standard.set(true, forKey: profileSetKey)
+        store.set(true, forKey: profileSetKey)
     }
 
     #if DEBUG
@@ -95,8 +113,8 @@ enum DevicePlayer {
     ///
     /// Behind `-forgetMe`. See the note at the top of `PlatesStore.seedIfNeeded`.
     static func forgetThisDevice() {
-        UserDefaults.standard.removeObject(forKey: key)
-        UserDefaults.standard.removeObject(forKey: profileSetKey)
+        store.removeObject(forKey: key)
+        store.removeObject(forKey: profileSetKey)
     }
     #endif
 }

@@ -23,45 +23,72 @@ enum PartyMergeCheck {
 
     private static var failures: [String] = []
 
+    /// Every case, each run on its own.
+    ///
+    /// They used to sit in one `do` block, which made the first `throw` silently the
+    /// last thing that happened: a store that failed to open in case three took the
+    /// other twenty-two with it and printed a single line about case three. Nothing
+    /// said how many had been skipped, so a run that checked a tenth of what it
+    /// claims to check looked exactly like a run that checked all of it.
+    ///
+    /// Named here rather than derived, because a case that is written and never
+    /// listed is the other way this goes quiet, and the count below is what makes
+    /// that visible.
+    @MainActor
+    private static var cases: [(String, () throws -> Void)] {
+        [("round trip", roundTripPreservesEveryDerivedNumber),
+         ("applying twice", applyingTwiceChangesNothing),
+         ("removals stick", removalsStickThroughAResnapshot),
+         ("ties resolve", tiesResolveTheSameWhateverTheOrder),
+         ("dates survive", datesSurviveTheWire),
+         ("participants are scoped", participantsAreScopedToTheCollection),
+         ("rules decide removal", rulesDecideWhoCanTakeAPlateBack),
+         ("rules survive the wire", rulesSurviveTheWire),
+         ("shared books round trip", sharedBooksRoundTripThroughCloudKitRecords),
+         ("closing a trip", closingATripKeepsWhatItShould),
+         ("facts never relock", factsNeverRelock),
+         ("reminders", remindersOnlyNudgeLiveTrips),
+         ("deep links", deepLinksAreTakenOnce),
+         ("only the host rewrites", onlyTheHostCanRewriteTheTrip),
+         ("mythic roams", mythicIsAboveTheScaleAndRoams),
+         ("my name survives", myOwnNameSurvivesAPeersStaleCopy),
+         ("an edit is worth saving", anEditIsAChangeWorthSaving),
+         ("a contributor's edit", aContributorsEditIsWorthSavingToo),
+         ("a book-only page", aBookOnlyPageStillGetsSaved),
+         ("me before I have said who I am", iAmStillMeBeforeIHaveSaidWhoIAm),
+         ("a zone's token", aZonesTokenOutlivesOneOfItsBooks),
+         ("two screens agree", twoScreensAgreeOnWhoFoundIt),
+         ("the best find holds still", theBestFindDoesNotMoveBetweenLaunches),
+         ("thinning respects its cap", aThinnedPathRespectsItsCap),
+         ("suppressed rows", suppressedRowsAreNotCounts)]
+    }
+
     @MainActor
     static func run() {
         failures = []
         print("── party merge check ──")
 
-        do {
-            try roundTripPreservesEveryDerivedNumber()
-            try applyingTwiceChangesNothing()
-            try removalsStickThroughAResnapshot()
-            try tiesResolveTheSameWhateverTheOrder()
-            try datesSurviveTheWire()
-            try participantsAreScopedToTheCollection()
-            try rulesDecideWhoCanTakeAPlateBack()
-            try rulesSurviveTheWire()
-            try sharedBooksRoundTripThroughCloudKitRecords()
-            try closingATripKeepsWhatItShould()
-            try factsNeverRelock()
-            try remindersOnlyNudgeLiveTrips()
-            try deepLinksAreTakenOnce()
-            try onlyTheHostCanRewriteTheTrip()
-            try mythicIsAboveTheScaleAndRoams()
-            try myOwnNameSurvivesAPeersStaleCopy()
-            try anEditIsAChangeWorthSaving()
-            try aContributorsEditIsWorthSavingToo()
-            try aBookOnlyPageStillGetsSaved()
-            try iAmStillMeBeforeIHaveSaidWhoIAm()
-            try aZonesTokenOutlivesOneOfItsBooks()
-            try twoScreensAgreeOnWhoFoundIt()
-            try theBestFindDoesNotMoveBetweenLaunches()
-            try aThinnedPathRespectsItsCap()
-            try suppressedRowsAreNotCounts()
-        } catch {
-            failures.append("threw: \(error)")
+        // Nothing this run writes touches the real defaults. Four cases have to say
+        // who this device is, and doing that to `UserDefaults.standard` meant a run
+        // that died in the middle left the phone claiming a player that does not
+        // exist — on a developer's own device, silently, with the app then resolving
+        // to whoever happened to be earliest.
+        let suite = "com.eggeppel.plates.mergecheck"
+        DevicePlayer.store = UserDefaults(suiteName: suite) ?? .standard
+        defer {
+            DevicePlayer.store.removePersistentDomain(forName: suite)
+            DevicePlayer.store = .standard
+        }
+
+        for (name, body) in cases {
+            do { try body() }
+            catch { failures.append("\(name) threw: \(error)") }
         }
 
         if failures.isEmpty {
-            print("── party merge check: PASS ──")
+            print("── party merge check: PASS (\(cases.count) cases) ──")
         } else {
-            print("── party merge check: FAIL (\(failures.count)) ──")
+            print("── party merge check: FAIL (\(failures.count) in \(cases.count) cases) ──")
             failures.forEach { print("   ✗ \($0)") }
         }
     }
@@ -685,12 +712,7 @@ enum PartyMergeCheck {
         }
         // On this device, "Dad" is me and "Mia" is somebody else in the car.
         let me = dad.id, them = mia.id
-        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
-        UserDefaults.standard.set(me.uuidString, forKey: DevicePlayer.key)
-        defer {
-            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
-            else { UserDefaults.standard.removeObject(forKey: DevicePlayer.key) }
-        }
+        claiming(me.uuidString)
 
         guard let mine = try peer.fetch(
                 FetchDescriptor<Player>(predicate: #Predicate { $0.id == me })).first,
@@ -744,12 +766,7 @@ enum PartyMergeCheck {
         }
         // Nobody this device could mistake for itself, or the ownership guard would
         // drop the edit and this would pass for the wrong reason.
-        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
-        UserDefaults.standard.set(UUID().uuidString, forKey: DevicePlayer.key)
-        defer {
-            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
-            else { UserDefaults.standard.removeObject(forKey: DevicePlayer.key) }
-        }
+        claiming(UUID().uuidString)
 
         // A roster and nothing else: no trip, no sightings, nobody new. And one field
         // at a time, because each is its own branch and each has to open the gate on
@@ -799,12 +816,7 @@ enum PartyMergeCheck {
         let bookID = UUID(), contributor = UUID()
         let start = Date(timeIntervalSinceReferenceDate: 774_000_000)
 
-        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
-        UserDefaults.standard.set(UUID().uuidString, forKey: DevicePlayer.key)
-        defer {
-            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
-            else { UserDefaults.standard.removeObject(forKey: DevicePlayer.key) }
-        }
+        claiming(UUID().uuidString)
 
         func sighting(_ code: String, name: String?, avatar: String?) -> SharedSighting {
             SharedSighting(id: UUID(), bookID: bookID, plateCode: code,
@@ -887,11 +899,7 @@ enum PartyMergeCheck {
         theirs.insert(me)
         try? theirs.save()
 
-        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
-        UserDefaults.standard.removeObject(forKey: DevicePlayer.key)
-        defer {
-            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
-        }
+        claiming(nil)
 
         var opening = SharedBookMerge.Outcome()
         SharedBookMerge.apply(book: SharedBookRecords.BookFields(id: bookID, name: "Shared Book",
@@ -1234,6 +1242,20 @@ enum PartyMergeCheck {
     }
 
     private enum CheckError: Error { case missingTrip, refusedItsOwnEnvelope }
+
+    /// Says who this device is, for the rest of the case.
+    ///
+    /// Four cases need it and each had its own copy: read the old value, write a new
+    /// one, restore it in a `defer`. Not restoring it here at all is the point — the
+    /// whole run is pointed at a scratch suite that `run()` throws away, and each
+    /// case sets what it needs on the way in. Passing nil is a real state and the one
+    /// the ownership guard was silently broken on: a device that has never been
+    /// through the identity prompt.
+    @MainActor
+    private static func claiming(_ id: String?) {
+        if let id { DevicePlayer.store.set(id, forKey: DevicePlayer.key) }
+        else { DevicePlayer.store.removeObject(forKey: DevicePlayer.key) }
+    }
 
     // MARK: - Assertions
 

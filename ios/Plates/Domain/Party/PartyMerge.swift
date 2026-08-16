@@ -259,7 +259,7 @@ enum PartyMerge {
         // nothing on exactly the installs it most needed to protect — a peer's stale
         // roster would rewrite the user's own name, color and avatar. Resolving costs
         // nothing here because `known` is the fetch it would otherwise have to make.
-        let mine = UserDefaults.standard.string(forKey: DevicePlayer.key)
+        let mine = DevicePlayer.currentID
             ?? DevicePlayer.resolve(from: Array(known.values))?.id.uuidString
 
         for event in events {
