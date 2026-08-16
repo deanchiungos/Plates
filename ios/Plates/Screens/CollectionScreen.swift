@@ -487,6 +487,28 @@ struct CollectionScreen: View {
             ) {
                 PopupButton(title: "Delete book", kind: .destructive) {
                     let wasCurrent = book.id.uuidString == currentBookID
+                    // Revoke the share before the row goes, and forget the ledger
+                    // entry whether or not the revoke lands.
+                    //
+                    // Deleting the book used to do neither. The `CKShare` stayed
+                    // live, so everybody invited kept read-write access to a book
+                    // its owner believed was gone — and the ledger entry survived
+                    // too, so `pullAll` went on fetching that zone on every
+                    // foreground and `SharedBookMerge` re-inserted the Book the
+                    // moment anything in it changed. The book came back.
+                    //
+                    // `stopSharing` deliberately keeps its entry when the revoke
+                    // fails, so a retry can mean something. There is nothing left
+                    // here to retry against, so this forgets regardless: a failed
+                    // revoke is reported through `trouble`, and a zone nobody is
+                    // pulling can no longer resurrect a book nobody has.
+                    let id = book.id
+                    if SharedBookLedger.shared.entry(for: id) != nil {
+                        Task { @MainActor in
+                            await SharedBookSync.shared.stopSharing(bookID: id)
+                            SharedBookLedger.shared.forget(book: id)
+                        }
+                    }
                     context.delete(book)
                     try? context.save()
                     // Fall through to whichever book remains rather than pointing at

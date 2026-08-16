@@ -62,7 +62,9 @@ enum PartyMergeCheck {
          ("thinning respects its cap", aThinnedPathRespectsItsCap),
          ("suppressed rows", suppressedRowsAreNotCounts),
          ("a flag's value is its own", aFlagsValueBelongsToThatFlag),
-         ("a spared card stays spent", aSparedCardStaysSpent)]
+         ("a spared card stays spent", aSparedCardStaysSpent),
+         ("clearing a trip is a withdrawal", clearingATripIsARealWithdrawal),
+         ("a folded plate is not the trip's to delete", aFoldedPlateSurvivesItsTrip)]
     }
 
     @MainActor
@@ -1106,6 +1108,65 @@ enum PartyMergeCheck {
         Tour.reset()
         check("and the tours can be handed back on their own", Tour.seen(.game), false)
     }
+
+    /// "Clear plates" was the fourth copy of "delete some sightings" and the one
+    /// the consolidation missed. Without the tombstones the wipe did not even hold:
+    /// the next snapshot from any peer put every plate back, because nothing on this
+    /// phone could say they had been taken away on purpose.
+    @MainActor
+    private static func clearingATripIsARealWithdrawal() throws {
+        let store = try makeStore()
+        let fixture = install(into: store)
+        let trip = try tripOf(store, fixture.tripID)
+
+        check("the fixture has plates to clear", trip.allSightings.count > 0, true)
+
+        PlateLogger.withdraw(trip.allSightings, from: trip, context: store)
+        check("and the trip is empty", trip.allSightings.count, 0)
+        // The only assertion that separates "the rows were unlinked" from "it
+        // reached the disk" — the harness's own contexts do not autosave.
+        check("and the emptying was saved", store.hasChanges, false)
+
+        // What this case cannot reach: the party broadcast and the tombstones it
+        // writes both go through `PartySession.shared`, which is nil with no party
+        // running, so the half of the bug that made a wipe undo itself is verified
+        // by reading rather than here. That unreachability is a fair part of why it
+        // survived four passes.
+    }
+
+    /// A folded plate lives in two containers, and taking it out of one is not
+    /// permission to reach into the other. `TripClosing.discard` wrote that rule out
+    /// in full; it applied on one side only, so emptying a trip silently shrank
+    /// every book its plates had been filed in.
+    @MainActor
+    private static func aFoldedPlateSurvivesItsTrip() throws {
+        let store = try makeStore()
+        let fixture = install(into: store)
+        let trip = try tripOf(store, fixture.tripID)
+
+        let book = Book(name: "The Shelf")
+        store.insert(book)
+        let folded = Array(trip.allSightings.prefix(2))
+        for sighting in folded { sighting.book = book }
+        try? store.save()
+        check("two plates are on the shelf", book.allSightings.count, 2)
+
+        PlateLogger.withdraw(trip.allSightings, from: trip, context: store)
+        check("the trip gave up everything", trip.allSightings.count, 0)
+        check("but the book kept what was filed in it", book.allSightings.count, 2)
+        check("and those rows belong to nobody else now",
+              book.allSightings.allSatisfy { $0.trip == nil }, true)
+    }
+
+    /// `first` where the fetch is by id, so a case reads as one line.
+    @MainActor
+    private static func tripOf(_ store: ModelContext, _ id: UUID) throws -> Trip {
+        let found = (try? store.fetch(FetchDescriptor<Trip>()))?.first { $0.id == id }
+        guard let found else { throw CheckTrouble.noTrip }
+        return found
+    }
+
+    private enum CheckTrouble: Error { case noTrip }
 
     private static func suppressedRowsAreNotCounts() throws {
         // The three rows that carry it, from the packed table.

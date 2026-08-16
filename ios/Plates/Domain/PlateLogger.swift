@@ -124,12 +124,22 @@ enum PlateLogger {
         var withdrawn: [UUID] = []
         for sighting in sightings {
             withdrawn.append(sighting.id)
-            // A plate folded in from a finished trip is the trip's record, on loan to
-            // this book. Taking it off the shelf hands it back; it does not reach into
-            // the trip and erase what happened there. Only sightings the book itself
-            // logged are the book's to delete.
+            // A folded plate lives in two containers, and taking it out of one is
+            // not permission to reach into the other. A plate folded in from a
+            // finished trip is the trip's record, on loan to this book: taking it
+            // off the shelf hands it back. And the mirror, which was missing — a
+            // trip clearing its plates hands the folded ones back to the *book*
+            // rather than deleting them out of somebody's album. `TripClosing`
+            // already writes that rule out in full ("Discarding the drive is not
+            // disowning the shelf"); it applied on one side only, so emptying a
+            // trip silently shrank every book its plates had been filed in.
+            //
+            // Only a row that belongs to this container alone is this container's
+            // to delete.
             if collection is Book, sighting.trip != nil {
                 sighting.book = nil
+            } else if collection is Trip, sighting.book != nil {
+                sighting.trip = nil
             } else {
                 context.delete(sighting)
             }

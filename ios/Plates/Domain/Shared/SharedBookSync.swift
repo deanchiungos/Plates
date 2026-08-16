@@ -289,8 +289,14 @@ final class SharedBookSync {
     /// participants kept full access to a book its owner believed was private, and
     /// the retry returned at the first line because the entry it needed was gone.
     /// Keeping it is what makes tapping the button again mean something.
-    func stopSharing(_ book: Book) async {
-        guard let entry = ledger.entry(for: book.id) else { return }
+    func stopSharing(_ book: Book) async { await stopSharing(bookID: book.id) }
+
+    /// By id, because one caller has to revoke a share for a book it is deleting in
+    /// the same breath — and a `Book` captured into a `Task` that runs after
+    /// `context.delete` is an invalidated model, not a book.
+    func stopSharing(bookID: UUID) async {
+        let book = bookID
+        guard let entry = ledger.entry(for: book) else { return }
         let zone = CKRecordZone.ID(zoneName: entry.zoneName, ownerName: entry.zoneOwner)
         let db = database(for: entry)
         do {
@@ -301,7 +307,7 @@ final class SharedBookSync {
                 // participant mid-sync would see the book vanish rather than simply
                 // stop updating. Removing the share revokes access and leaves the
                 // data exactly where it is.
-                let rootID = SharedBookRecords.recordID(for: book.id, in: zone)
+                let rootID = SharedBookRecords.recordID(for: book, in: zone)
                 if let shareID = try await db.record(for: rootID).share?.recordID {
                     _ = try await db.modifyRecords(saving: [], deleting: [shareID])
                 }
@@ -320,7 +326,7 @@ final class SharedBookSync {
             log("stop sharing failed: \(error)")
             return
         }
-        ledger.forget(book: book.id)
+        ledger.forget(book: book)
     }
 
     /// Cleared when a new attempt starts, so a message from the last one is never

@@ -592,32 +592,43 @@ struct TripsScreen: View {
     /// The exact reverse: every sighting of this trip leaves whichever book holds
     /// it. Nothing is deleted — the sightings still belong to the trip.
     private func unfold(_ trip: Trip) {
+        // Grouped by book, like `pushSharedRemovals` ten lines down. Taking the
+        // first sighting's book and using it for all of them was right only while a
+        // trip could be folded into exactly one book: with two, everyone sharing the
+        // second book kept their copies, and the first book was sent tombstones for
+        // rows that were never in it.
         let folded = trip.allSightings.filter { $0.book != nil }
-        guard let book = folded.first?.book else { return }
-        let ids = folded.map(\.id)
+        guard !folded.isEmpty else { return }
+        let byBook = Dictionary(grouping: folded, by: { $0.book!.id })
         for sighting in folded { sighting.book = nil }
         try? context.save()
-        SharedBookSync.shared.remove(ids, in: book)
-        Haptics.undo()
-    }
-
-    /// Deleting sightings that were folded into a *shared* book has to tell the
-    /// book's other members, or their copies outlive the record. Called before any
-    /// bulk delete of a trip's sightings; a no-op for everything unshared.
-    private func pushSharedRemovals(for sightings: [Sighting]) {
-        let folded = sightings.filter { $0.book != nil }
-        for (_, group) in Dictionary(grouping: folded, by: { $0.book!.id }) {
+        for (_, group) in byBook {
             guard let book = group.first?.book else { continue }
             SharedBookSync.shared.remove(group.map(\.id), in: book)
         }
+        Haptics.undo()
     }
 
+    // A `pushSharedRemovals` sat here, and both of its callers were wrong to want
+    // it. Emptying a trip goes through `PlateLogger.withdraw` now, which does this
+    // itself for the books a row is genuinely leaving; deleting a trip unshelves
+    // instead, so there is nothing to tell anybody about. Pushing a CloudKit
+    // deletion for a plate that is still sitting in somebody's book is not a
+    // tombstone, it is reaching across the wire to take it.
+
     /// Wipes the sightings, not the trip — `Sighting` is the only stored fact, so
-    /// deleting them is all it takes to put every counter back to zero.
+    /// emptying them is all it takes to put every counter back to zero.
+    ///
+    /// Through `PlateLogger.withdraw`, which is the whole point of that function
+    /// existing. This was the fourth copy of "delete some sightings" and the one the
+    /// consolidation missed, so it alone skipped all four of the things a removal
+    /// owes: the party broadcast, the tombstones that broadcast writes, the reminder
+    /// measured from a plate that is now gone, and the widget still showing the
+    /// count. Without the tombstones the wipe did not even hold — the next snapshot
+    /// from any peer put every plate back, because nothing on this phone could say
+    /// they had been taken away on purpose.
     private func wipe(_ trip: Trip) {
-        pushSharedRemovals(for: trip.allSightings)
-        for sighting in trip.allSightings { context.delete(sighting) }
-        try? context.save()
+        PlateLogger.withdraw(trip.allSightings, from: trip, context: context)
         Haptics.destructive()
     }
 
@@ -679,9 +690,15 @@ struct TripsScreen: View {
         let wasCurrent = trip.id == current?.id
         let id = trip.id
         if PartySession.isPartying(trip) { PartySession.shared?.leave() }
-        // The cascade is about to take the sightings with it — including any that
-        // were folded into a shared book, whose members need the tombstones.
-        pushSharedRemovals(for: trip.allSightings)
+        // Unshelve before the cascade, exactly as `TripClosing.discard` does — the
+        // two are the same operation reached from different screens and had opposite
+        // answers to the same question. `Trip.sightings` cascades where
+        // `Book.sightings` nullifies, so deleting the trip reaches through folded
+        // rows and takes plates out of a book somebody deliberately filed them in.
+        // This screen went further and *pushed those deletions to CloudKit*, so
+        // deleting your own trip deleted plates out of a friend's copy of a shared
+        // book — and the confirmation said nothing about any book at all.
+        for sighting in trip.allSightings where sighting.book != nil { sighting.trip = nil }
         context.delete(trip)
         try? context.save()
         // Nothing left to protect from resurrection, and keeping the ids would leak a
