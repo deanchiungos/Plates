@@ -886,10 +886,22 @@ final class PartySession {
                     FetchDescriptor<Player>(predicate: #Predicate { $0.id == id })).first
             }?
             .name ?? peer.displayName
+        // The trip's own rarity when the sender did not bank one, rather than
+        // `plate.points`. Those are the hand-assigned national numbers written from a
+        // Northeast vantage point, which `PlateRarity` exists to replace — so the
+        // toast announced an Alaska call-out as legendary while the grid an inch
+        // below it said mythic. Reached only for a sender old enough not to send the
+        // banked value, and it should still agree with the screen.
+        let trip = try? context.fetch(
+            FetchDescriptor<Trip>(predicate: #Predicate { $0.id == event.tripID })).first
+        let rarity = event.rarityWhenSpotted
+            ?? trip?.rarity(of: event.plateCode)
+            ?? plate.points
+
         latestFromPeer = PeerFind(
             plateName: plate.name,
             finder: finder,
-            tier: RarityTier.forRarity(event.rarityWhenSpotted ?? plate.points))
+            tier: RarityTier.forRarity(rarity))
     }
 
     fileprivate func connecting(_ peer: MCPeerID) {

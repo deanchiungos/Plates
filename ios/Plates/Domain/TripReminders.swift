@@ -48,7 +48,7 @@ final class TripReminders {
 
     func disable() {
         UserDefaults.standard.set(false, forKey: Self.enabledKey)
-        centre.removeAllPendingNotificationRequests()
+        Task { await replacePending(with: []) }
     }
 
     /// Whether the system would actually deliver one. Distinct from `isEnabled`:
@@ -64,12 +64,30 @@ final class TripReminders {
     /// trip is finished, and when the app comes forward — all the moments the answer
     /// could have changed.
     func refresh(in context: ModelContext) {
-        centre.removeAllPendingNotificationRequests()
-        guard isEnabled else { return }
-
-        let trips = (try? context.fetch(FetchDescriptor<Trip>())) ?? []
-        for nudge in Self.plan(for: trips, now: Date()) { schedule(nudge) }
+        let trips = isEnabled ? (try? context.fetch(FetchDescriptor<Trip>())) ?? [] : []
+        let nudges = Self.plan(for: trips, now: Date())
+        Task { await replacePending(with: nudges) }
     }
+
+    /// Clears only what this file scheduled, then rebuilds it.
+    ///
+    /// `removeAllPendingNotificationRequests` was doing the clearing, above the
+    /// `isEnabled` guard, so every plate logged wiped the whole queue whether or not
+    /// reminders were even on. Nothing suffers today because trip nudges are the only
+    /// notifications the app schedules — which is exactly the kind of assumption that
+    /// stops being true quietly, and the second one to arrive would have been deleted
+    /// by the next tap with nothing to show for it.
+    private func replacePending(with nudges: [Nudge]) async {
+        let ours = await centre.pendingNotificationRequests()
+            .map(\.identifier)
+            .filter { $0.hasPrefix(Self.idPrefix) }
+        if !ours.isEmpty { centre.removePendingNotificationRequests(withIdentifiers: ours) }
+        for nudge in nudges { schedule(nudge) }
+    }
+
+    /// One reminder per trip, keyed by its id. Also what marks a pending request as
+    /// this file's own.
+    private static let idPrefix = "trip-"
 
     /// What *would* be scheduled, as plain values.
     ///
@@ -139,7 +157,7 @@ final class TripReminders {
         content.sound = .default
 
         let request = UNNotificationRequest(
-            identifier: "trip-\(nudge.tripID.uuidString)",
+            identifier: "\(Self.idPrefix)\(nudge.tripID.uuidString)",
             content: content,
             trigger: UNTimeIntervalNotificationTrigger(
                 // Floored at a second rather than a minute so `-remindersTest` can

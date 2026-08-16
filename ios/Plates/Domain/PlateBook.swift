@@ -29,7 +29,11 @@ struct PlateBook {
         for s in sightings { grouped[s.plateCode, default: []].append(s) }
 
         for (code, list) in grouped {
-            let sorted = list.sorted { $0.spottedAt < $1.spottedAt }
+            // Through `SightingOrder`, whose tie-break is an id: `sorted(by:)` is not
+            // a stable sort, so two claims at the same instant could come out either
+            // way on either run. `PlateIndex` orders its claimants the same way, and
+            // the two draw the same people on two screens.
+            let sorted = list.sorted { SightingOrder($0) < SightingOrder($1) }
             guard let first = sorted.first, let last = sorted.last else { continue }
             // De-duplicated in place rather than through a Set, so the order stays
             // "who got there first" — which is the order the tile draws them in.
@@ -114,8 +118,6 @@ struct TripSummary: Identifiable {
         platesFound = codes.count
         sightings = all.count
 
-        bestFind = codes
-            .map { (code: $0, rarity: trip.rarity(of: $0)) }
-            .max { $0.rarity < $1.rarity }
+        bestFind = rarestPlate(in: codes, scoredBy: trip.rarity(of:))
     }
 }

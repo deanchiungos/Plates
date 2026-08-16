@@ -53,7 +53,7 @@ enum ShareablePoster {
             title: collection.name,
             subtitle: subtitle(for: collection),
             statesFound: Plate.states.count { seen.contains($0.code) },
-            bestFind: rarest(in: seen, scoredBy: collection.rarity(of:)),
+            bestFind: rarestPlate(in: seen, scoredBy: collection.rarity(of:)),
             found: seen,
             standings: shared ? collection.standings(among: people) : [],
             claims: shared ? claims(from: index, over: seen) : [:],
@@ -144,7 +144,7 @@ enum ShareablePoster {
             statesFound: Plate.states.count { book.foundCodes.contains($0.code) },
             // Scored against the national table, since a lifetime has no one route
             // to judge distance from.
-            bestFind: rarest(in: book.foundCodes) { PlateRarity.rarity($0, on: nil) },
+            bestFind: rarestPlate(in: book.foundCodes) { PlateRarity.rarity($0, on: nil) },
             found: book.foundCodes,
             standings: [],
             // No standings here, so no chips either: the same rule as a solo trip.
@@ -155,16 +155,6 @@ enum ShareablePoster {
     }
 
     private static let everyPlate = Plate.states + Plate.bonus + Plate.provinces
-
-    /// The rarest plate on it, by whatever rarity the caller judges with — a trip
-    /// scores against its own route, a lifetime against the national table.
-    private static func rarest(in found: Set<String>,
-                               scoredBy rarity: (String) -> Int) -> (code: String, rarity: Int)? {
-        found.map { (code: $0, rarity: rarity($0)) }
-            // Ties broken by code so two runs of the same collection cannot disagree
-            // about which plate was the best one.
-            .max { ($0.rarity, $1.code) < ($1.rarity, $0.code) }
-    }
 
     /// The road, when there is one to draw. Only a trip with both ends pinned has
     /// one — no places, no map, and the poster is simply shorter that day.

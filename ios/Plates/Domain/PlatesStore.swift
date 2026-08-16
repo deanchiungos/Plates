@@ -84,8 +84,18 @@ enum PlatesStore {
 
     /// What Siri should log against — the same trip or book the Drive screen is on.
     ///
-    /// Creates a trip if the store is somehow empty, because "I saw a Wyoming plate"
-    /// failing on a technicality is a worse answer than starting one.
+    /// Returns nil when there is nothing to log against, and creates nothing. It used
+    /// to start a trip called "Roadtrip" on the reasoning that failing on a
+    /// technicality is worse — which is the identical argument `seedIfNeeded` below
+    /// spends five paragraphs rejecting, surviving in the one place nobody looked.
+    /// It fires without a tap: the Shortcuts app asks for suggested entities the
+    /// moment it lists the app's actions, so browsing Shortcuts on a fresh install
+    /// silently created somebody's first trip, named it, selected it, and made the
+    /// considered empty state — the fork between a trip and a book — unreachable
+    /// forever.
+    ///
+    /// Every caller already handles nil, and says something better than a trip
+    /// nobody asked for: "Start a trip or a book in Plates first."
     static func currentTarget() -> (any PlateCollection)? {
         let trips = (try? context.fetch(FetchDescriptor<Trip>(
             sortBy: [SortDescriptor(\.startedAt, order: .reverse)]))) ?? []
@@ -100,12 +110,7 @@ enum PlatesStore {
             trips: trips, books: books) {
             return target.collection
         }
-
-        let fresh = Trip(name: "Roadtrip")
-        context.insert(fresh)
-        PlaySelection.select(.trip(fresh))
-        try? context.save()
-        return fresh
+        return nil
     }
 
     /// Deliberately seeds nothing.

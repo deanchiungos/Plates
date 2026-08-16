@@ -39,30 +39,31 @@ enum PlateHistoryBook {
     /// Loaded once, on first use, and held. A megabyte of JSON parsed on the main
     /// thread the first time someone opens the screen is a visible stutter, so the
     /// call site does it in a task.
-    private static var cache: [String: [Design]]?
+    ///
+    /// A `static let` and not a checked-and-assigned `var`, which is the whole fix
+    /// for a data race that was reachable on the first visit to the screen: the
+    /// picker parses in a detached task while main-actor view bodies ask the same
+    /// loader for their row counts, so both could miss the cache and both could
+    /// write it. Swift guarantees a static's initializer runs exactly once and that
+    /// every other thread waits for it, which is precisely the contract the hand
+    /// -rolled version was reaching for and could not keep.
+    private static let book: [String: [Design]] = parse()
 
     static func designs(for code: String) -> [Design] {
-        load()[code] ?? []
+        book[code] ?? []
     }
 
     /// Jurisdictions that have at least one photographed design, in the order the
     /// rest of the app lists plates.
     static var jurisdictions: [Plate] {
-        let book = load()
-        return Plate.all.filter { !(book[$0.code]?.isEmpty ?? true) }
+        Plate.all.filter { !(book[$0.code]?.isEmpty ?? true) }
     }
 
-    @discardableResult
-    static func load() -> [String: [Design]] {
-        if let cache { return cache }
-
+    private static func parse() -> [String: [Design]] {
         guard let url = Bundle.main.url(forResource: "PlateHistory", withExtension: "json"),
               let data = try? Data(contentsOf: url),
               let raw = try? JSONSerialization.jsonObject(with: data) as? [String: [[String: Any]]]
-        else {
-            cache = [:]
-            return [:]
-        }
+        else { return [:] }
 
         var out: [String: [Design]] = [:]
         for (code, entries) in raw {
@@ -86,7 +87,6 @@ enum PlateHistoryBook {
                               isShared: e["shared"] as? Bool ?? false)
             }
         }
-        cache = out
         return out
     }
 }

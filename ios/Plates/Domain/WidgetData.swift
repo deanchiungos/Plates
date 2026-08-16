@@ -80,10 +80,8 @@ struct WidgetData: Codable, Equatable {
 
         // Scored the way the collection itself scores, so a trip's rarest is judged
         // against its own route rather than a national average it never used.
-        let best = current.flatMap { collection -> (String, Int)? in
-            collection.seenCodes
-                .map { ($0, collection.rarity(of: $0)) }
-                .max { ($0.1, $1.0) < ($1.1, $0.0) }
+        let best = current.flatMap { collection in
+            rarestPlate(in: collection.seenCodes, scoredBy: collection.rarity(of:))
         }
 
         // Newest first, so "recently finished" means the drive you just got back

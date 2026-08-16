@@ -50,6 +50,10 @@ enum PartyMergeCheck {
             try aBookOnlyPageStillGetsSaved()
             try iAmStillMeBeforeIHaveSaidWhoIAm()
             try aZonesTokenOutlivesOneOfItsBooks()
+            try twoScreensAgreeOnWhoFoundIt()
+            try theBestFindDoesNotMoveBetweenLaunches()
+            try aThinnedPathRespectsItsCap()
+            try suppressedRowsAreNotCounts()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -951,6 +955,97 @@ enum PartyMergeCheck {
         return tokens.keys.sorted()
     }
 
+    /// Two screens drawing the same plate have to name the same people in the same
+    /// order, and the answer has to be the same one next launch.
+    ///
+    /// `PlateIndex` fed the Game grid and `PlateBook` fed the Book screen, and only
+    /// one of them ordered the sightings first — so the same two avatars came out in
+    /// opposite orders on one device, and the poster baked whichever it was handed
+    /// into an image. Both go through `SightingOrder` now, which also settles the
+    /// same-instant case that `sorted(by:)` leaves undefined.
+    @MainActor
+    private static func twoScreensAgreeOnWhoFoundIt() throws {
+        let source = try makeStore()
+        let fixture = install(into: source)
+        let sightings = try source.fetch(FetchDescriptor<Sighting>())
+
+        let index = PlateIndex(sightings)
+        let book = PlateBook(sightings: sightings)
+
+        // "WY" is the fixture's deliberate collision: two people at one instant.
+        for code in ["WY", "AK", "CA"] {
+            check("\(code): the grid and the book agree on the claimants",
+                  index.claimants(code).map(\.name),
+                  book.entry(for: code)?.spotters.map(\.name) ?? [])
+        }
+
+        // Same rows, opposite order in, same answer out. The store hands a
+        // relationship back in whatever order it likes, and that is what this used to
+        // be a function of.
+        check("and the order they arrive in does not decide it",
+              PlateIndex(sightings.reversed()).claimants("WY").map(\.name),
+              index.claimants("WY").map(\.name))
+        _ = fixture
+    }
+
+    /// The best find has to be the same plate twice.
+    ///
+    /// Candidates come out of a `Set`, whose iteration order is seeded per process,
+    /// and six plates sit at mythic by design — so two of the four implementations,
+    /// the ones with no tie-break, named a different plate between launches and
+    /// disagreed with the widget and the poster, which had one. There is one
+    /// implementation now.
+    @MainActor
+    private static func theBestFindDoesNotMoveBetweenLaunches() throws {
+        let tied = ["MT", "AK", "HI", "WY"]
+        let flat: (String) -> Int = { _ in 9 }
+
+        check("ties resolve to the same plate whatever the order",
+              rarestPlate(in: Set(tied), scoredBy: flat)?.code,
+              rarestPlate(in: Set(tied.reversed()), scoredBy: flat)?.code)
+        check("and it is the one every implementation would pick",
+              rarestPlate(in: Set(tied), scoredBy: flat)?.code, "AK")
+        check("a clear winner still wins",
+              rarestPlate(in: Set(tied)) { $0 == "MT" ? 10 : 9 }?.code, "MT")
+        check("nothing found, nothing named",
+              rarestPlate(in: Set<String>(), scoredBy: flat)?.code, nil)
+    }
+
+    /// Thinning that does not thin.
+    ///
+    /// `count / limit` is 1 for everything from one over the limit to one under
+    /// twice it, so the whole band came through untouched — and `Route` is the memo
+    /// key for the rarity table, hashed on every tile of every render.
+    @MainActor
+    private static func aThinnedPathRespectsItsCap() throws {
+        func path(_ n: Int) -> [PlateRarity.Waypoint] {
+            (0..<n).map { .init(lat: 40 + Double($0) / 100, lon: -74 - Double($0) / 100) }
+        }
+        for n in [47, 48, 49, 60, 95, 96, 400] {
+            let kept = PlateRarity.Route.thin(path(n))
+            check("\(n) points thin to at most the cap", kept.count <= 49, true)
+            check("\(n) points keep the destination", kept.last, path(n).last)
+            check("\(n) points keep the start", kept.first, path(n).first)
+        }
+        check("a path already under the cap is untouched",
+              PlateRarity.Route.thin(path(20)).count, 20)
+    }
+
+    /// A suppression marker is not a household count.
+    ///
+    /// The IRS writes -1 where a cell is too small to disclose. Parsed as a number it
+    /// subtracts from a tie strength that has no meaning below zero.
+    @MainActor
+    private static func suppressedRowsAreNotCounts() throws {
+        // The three rows that carry it, from the packed table.
+        for (from, to) in [("VT", "ND"), ("WY", "DE"), ("WY", "RI")] {
+            check("\(from)->\(to) is not a count", PlateMigration.flows[from]?[to], nil)
+        }
+        check("so no tie strength goes negative",
+              PlateMigration.ties(of: "WY", near: "DE") >= 0, true)
+        check("and real flows still parsed", PlateMigration.flows["CA"]?["NJ"] != nil, true)
+    }
+
     // MARK: - The fixture
 
     private struct Fixture {
@@ -1151,6 +1246,14 @@ enum PartyMergeCheck {
         guard got != want else { return }
         let extra = Set(got).subtracting(want).sorted()
         let missing = Set(want).subtracting(got).sorted()
+        // Said outright, because the set difference cannot say it: two lists holding
+        // the same names in different orders reported "0 missing, 0 unexpected",
+        // which reads like a passing check that failed anyway. Order is the whole
+        // point of some of these.
+        guard !missing.isEmpty || !extra.isEmpty else {
+            return failures.append(
+                "\(label): same entries, different order — got \(got), want \(want)")
+        }
         failures.append("\(label): \(missing.count) missing, \(extra.count) unexpected")
         missing.prefix(6).forEach { failures.append("      want: \($0)") }
         extra.prefix(6).forEach { failures.append("      got:  \($0)") }

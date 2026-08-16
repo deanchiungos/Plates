@@ -43,6 +43,23 @@ struct SightingOrder: Comparable {
     }
 }
 
+/// The best plate in a collection, by whatever rarity the caller judges with — a
+/// trip scores against its own route, a lifetime against the national table.
+///
+/// One function because four screens answer this question and two of them used to
+/// answer it differently. The tie-break is the reason it is worth sharing: the
+/// candidates come out of a `Set`, whose iteration order is seeded per process, and
+/// six plates sit at mythic by design. Without a tie-break the trip card and Siri
+/// each named whichever one they happened to see first — a different answer between
+/// launches, and a different answer from the widget and the poster, which did break
+/// ties. Alphabetical by code, which is arbitrary but is the same arbitrary
+/// everywhere.
+func rarestPlate(in found: some Sequence<String>,
+                 scoredBy rarity: (String) -> Int) -> (code: String, rarity: Int)? {
+    found.map { (code: $0, rarity: rarity($0)) }
+        .max { ($0.rarity, $1.code) < ($1.rarity, $0.code) }
+}
+
 /// Every per-plate answer the grid needs, from one pass over `sightings`.
 ///
 /// The accessors below — `hasSeen`, `sightingCount`, `spotter` — are each a full
@@ -67,7 +84,14 @@ struct PlateIndex {
     init(_ sightings: [Sighting]) {
         var built: [String: Entry] = [:]
         built.reserveCapacity(sightings.count)
-        for s in sightings {
+        // Ordered before the pass, because `claimants` is documented as "the order
+        // they first did" and a relationship arrives in whatever order the store
+        // hands it back. `PlateBook` sorts the same list by time and draws the same
+        // people, so the Game grid and the Book screen were putting the same two
+        // avatars in opposite orders on one device — and the poster baked whichever
+        // it got into an image. Through `SightingOrder` rather than `spottedAt`
+        // alone, so two claims at one instant also land the same way twice.
+        for s in sightings.sorted(by: { SightingOrder($0) < SightingOrder($1) }) {
             var e = built[s.plateCode] ?? Entry()
             e.count += 1
             // Most recent spotter wins, matching `spotter(of:)` — and ties are
@@ -153,9 +177,11 @@ extension PlateCollection {
 
     // MARK: - Score
 
+    @MainActor
     var score: Int { score(for: nil) }
 
     /// Score for one player, or for everyone when `player` is nil.
+    @MainActor
     func score(for player: Player?) -> Int {
         let relevant = player == nil
             ? allSightings
@@ -207,6 +233,7 @@ extension PlateCollection {
     ///
     /// Falls back to the live model for sightings logged before rarity was recorded,
     /// and for every plate on a book, which has no route.
+    @MainActor
     func rarity(of code: String) -> Int {
         claimedRarity(of: code) ?? PlateRarity.rarity(code, on: route)
     }
@@ -226,10 +253,12 @@ extension PlateCollection {
 
     /// What a plate is worth if you claim it *right now*. Used at the moment of the
     /// tap, to decide the celebration and to bank onto the sighting.
+    @MainActor
     func liveRarity(of code: String) -> Int {
         PlateRarity.rarity(code, on: route)
     }
 
+    @MainActor
     func rarity(of plate: Plate) -> Int { rarity(of: plate.code) }
 
     /// The people actually on this collection.
@@ -289,6 +318,7 @@ extension PlateCollection {
     }
 
     /// Per-player scores, highest first. Ties keep a stable order by join date.
+    @MainActor
     func standings(among players: [Player]) -> [(player: Player, score: Int)] {
         players
             .map { (player: $0, score: score(for: $0)) }

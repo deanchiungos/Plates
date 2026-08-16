@@ -140,9 +140,20 @@ final class RouteCache {
         // last are always kept so the line still meets both pins.
         let maxPoints = 400
         if coords.count > maxPoints {
-            let step = max(1, coords.count / maxPoints)
+            // Rounded up, not down. Integer division gave a stride of 1 for anything
+            // from 401 to 799 points, so the thinning did nothing at all across that
+            // whole band and the cache held up to twice the cap it documents — an
+            // array rebuilt on every read of `Trip.route`, which is every render of
+            // the grid.
+            let step = (coords.count + maxPoints - 1) / maxPoints
             var thinned = stride(from: 0, to: coords.count, by: step).map { coords[$0] }
-            if let last = coords.last, thinned.last?.latitude != last.latitude {
+            // Both halves of the coordinate. Comparing latitude alone kept the last
+            // point only when the road happened to end at a different latitude, so a
+            // final leg running east or west — the whole width of Texas, say — ended
+            // the drawn line wherever the stride stopped, short of the pin, on the
+            // poster map and in the rarity model both.
+            if let last = coords.last, let end = thinned.last,
+               end.latitude != last.latitude || end.longitude != last.longitude {
                 thinned.append(last)
             }
             coords = thinned

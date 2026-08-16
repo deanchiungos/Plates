@@ -320,7 +320,12 @@ protocol PlateCollection: AnyObject, Identifiable where ID == UUID {
 
     /// The route rarity is judged against, or nil to fall back to the national
     /// table. Always nil for a book, which is not a journey.
-    var route: PlateRarity.Route? { get }
+    ///
+    /// Main-actor because `Trip.route` reads `RouteCache.shared`, which is. The
+    /// requirement said nothing about isolation while the conformance claimed it,
+    /// which Swift 5 accepts silently and Swift 6 does not — and in the meantime the
+    /// rule was kept by nothing but every caller happening to be on the main actor.
+    @MainActor var route: PlateRarity.Route? { get }
     var scoringMode: ScoringMode { get }
 
     /// Files a fresh sighting under this collection.
@@ -347,6 +352,7 @@ extension Book: PlateCollection {
     /// Trucks stay out of it — that switch is a per-trip decision about what a
     /// particular drive's scores mean, and a book spans too many drives to answer it
     /// once.
+    @MainActor
     var route: PlateRarity.Route? {
         guard let lat = currentLat, let lon = currentLon else { return nil }
         return .init(oLat: lat, oLon: lon, currentLat: lat, currentLon: lon,

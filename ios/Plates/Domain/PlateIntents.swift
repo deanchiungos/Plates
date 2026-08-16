@@ -252,17 +252,14 @@ struct RarestFindIntent: AppIntent {
             return .result(dialog: "You have not started a trip or a book yet.")
         }
 
-        let best = trip.seenCodes
-            .compactMap { Plate.plate(for: $0) }
-            .max { trip.rarity(of: $0) < trip.rarity(of: $1) }
-
-        guard let best else {
+        guard let best = rarestPlate(in: trip.seenCodes, scoredBy: trip.rarity(of:)),
+              let plate = Plate.plate(for: best.code) else {
             return .result(dialog: "You have not logged anything yet.")
         }
 
-        let tier = RarityTier.forRarity(trip.rarity(of: best))
+        let tier = RarityTier.forRarity(best.rarity)
         return .result(dialog: IntentDialog(
-            "Your best find is \(best.name), \(tier.label.lowercased()), on \(trip.name)."))
+            "Your best find is \(plate.name), \(tier.label.lowercased()), on \(trip.name)."))
     }
 }
 

@@ -59,7 +59,11 @@ enum PlateMigration {
         var out: [String: [String: Double]] = [:]
         for line in packed.split(separator: "\n") {
             let f = line.split(separator: " ")
-            guard f.count == 3, let n = Double(f[2]) else { continue }
+            // Positive only. Three rows carry -1, which is the SOI's marker for a
+            // cell too small to disclose, not a count — taken literally it subtracts
+            // from a tie strength that cannot be negative. Small in magnitude, wrong
+            // in sign, and it would come back with every regeneration of this file.
+            guard f.count == 3, let n = Double(f[2]), n > 0 else { continue }
             out[String(f[0]), default: [:]][String(f[1])] = n
         }
         return out

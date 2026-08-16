@@ -361,7 +361,10 @@ enum PlateRarity {
         /// weights it is trying to avoid.
         static func thin(_ path: [Waypoint]) -> [Waypoint] {
             guard path.count > pathLimit else { return path }
-            let step = max(1, path.count / pathLimit)
+            // Rounded up, for the reason `RouteCache` rounds up: dividing down made
+            // the stride 1 for anything from 49 to 95 points, which is thinning that
+            // does nothing.
+            let step = (path.count + pathLimit - 1) / pathLimit
             var kept = stride(from: 0, to: path.count, by: step).map { path[$0] }
             // The last point is the destination. Dropping it would end the road
             // wherever the stride happened to stop, short of the pin.
