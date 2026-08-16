@@ -5,7 +5,6 @@ struct RootView: View {
     #if DEBUG
     /// The text after `-lookup`, if any.
     static var launchQuery: String {
-        let args = ProcessInfo.processInfo.arguments
         // The "-" rule, for the same reason as `-search`: a description that starts
         // like a flag is the next flag. See `LaunchFlags.value`.
         guard let described = LaunchFlags.value(after: "-lookup"),
@@ -198,7 +197,6 @@ struct RootView: View {
     /// screenshotted without driving the simulator by hand.
     static var initialTab: Int {
         #if DEBUG
-        let args = ProcessInfo.processInfo.arguments
         if let named = LaunchFlags.value(after: "-tab") {
             switch named.lowercased() {
             case "map": return 1

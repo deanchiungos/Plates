@@ -69,13 +69,19 @@ struct PlatesApp: App {
         container = PlatesStore.container
         PlatesStore.seedIfNeeded()
         Theme.applyToSystemControls()
-        Coach.beginSession()
         #if DEBUG
-        // `-coachReset` / `-tourReset`, before any screen can ask what it has
-        // already shown or already walked through.
+        // Before `beginSession`, not after it. `-coachReset` clears the launch
+        // counter, and `beginSession` reads that counter into a static and keeps it
+        // for the rest of the process — so run the other way round, the flag wiped
+        // the stored value while `Coach.launchCount` stayed at whatever this phone
+        // had reached, `isReturningSession` stayed true, and the one tip gated on a
+        // second launch still fired on the launch that asked for a first one. The
+        // reset only landed on the *next* run, which is the launch nobody was
+        // watching. Both flags still run before any screen can ask.
         Coach.applyLaunchArguments()
         Tour.applyLaunchArguments()
         #endif
+        Coach.beginSession()
         // Rebuilt at launch: trips may have been finished on another device, or the
         // permission revoked in Settings while the app was away.
         TripReminders.shared.refresh(in: PlatesStore.context)
@@ -88,10 +94,10 @@ struct PlatesApp: App {
         if PartyMergeCheck.isRequested { PartyMergeCheck.run() }
         // `-poster` renders the share image and writes it out, so it can be looked
         // at without driving a share sheet.
-        if ProcessInfo.processInfo.arguments.contains("-remindersTest") {
+        if LaunchFlags.isSet("-remindersTest") {
             Task { @MainActor in await TripReminders.shared.test(in: PlatesStore.context) }
         }
-        if ProcessInfo.processInfo.arguments.contains("-poster") {
+        if LaunchFlags.isSet("-poster") {
             Task { @MainActor in print(await ShareablePoster.exportForInspection()) }
         }
         // `-layoutStress` draws the app's crowded rows — the trips list, the book
@@ -108,7 +114,6 @@ struct PlatesApp: App {
         // `-rarityDump lat,lon[,winter]` prints the full table from that point, so a
         // change to the model can be verified against the Python prototype it was
         // ported from instead of against a screenshot of some tiles.
-        let args = ProcessInfo.processInfo.arguments
         if let point = LaunchFlags.value(after: "-rarityDump") {
             let f = point.split(separator: ",")
             if f.count >= 2, let lat = Double(f[0]), let lon = Double(f[1]) {

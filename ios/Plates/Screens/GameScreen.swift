@@ -33,7 +33,6 @@ struct GameScreen: View {
     /// needs a keyboard to reach otherwise, and the appearance matching this
     /// exercises is the whole reason the field stopped forcing capitals.
     private static var launchSearch: String {
-        let args = ProcessInfo.processInfo.arguments
         // The one place the "-" rule is applied, because a search term that looks
         // like a flag is far more likely to be the next flag. See `LaunchFlags.value`.
         guard let term = LaunchFlags.value(after: "-search"),
@@ -456,7 +455,6 @@ struct GameScreen: View {
     ///   -filter panel    open the filter panel
     ///   -filter done     hide found with everything found
     private func applyLaunchArguments() {
-        let args = ProcessInfo.processInfo.arguments
         if let named = LaunchFlags.value(after: "-filter") {
             switch named {
             case "left":   filter = .init(hideFound: true, sets: Set(PlateRegion.allCases))

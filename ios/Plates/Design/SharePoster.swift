@@ -212,7 +212,6 @@ enum ShareablePoster {
         let started = Date()
         // `-poster alltime` covers the lens, which is not a collection and so takes
         // the other entry point entirely.
-        let args = ProcessInfo.processInfo.arguments
         let wantsAllTime = LaunchFlags.value(after: "-poster") == "alltime"
         // `-poster scenic` used to render the draft here alongside the old album
         // page. The draft is the poster now, so there is one path again.

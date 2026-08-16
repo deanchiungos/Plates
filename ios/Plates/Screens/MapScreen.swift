@@ -129,7 +129,6 @@ struct MapScreen: View {
             // `-mapMode rarity` and `-mapState VT` open states the tap gesture
             // would otherwise be the only way to reach.
             .onAppear {
-                let args = ProcessInfo.processInfo.arguments
                 if let m = LaunchFlags.value(after: "-mapMode")
                     .flatMap(Mode.init(rawValue:)) { mode = m }
                 // `-mapZoom 3` renders as if pinched, so the zoomed drawing can be
