@@ -45,6 +45,10 @@ enum PartyMergeCheck {
             try onlyTheHostCanRewriteTheTrip()
             try mythicIsAboveTheScaleAndRoams()
             try myOwnNameSurvivesAPeersStaleCopy()
+            try anEditIsAChangeWorthSaving()
+            try aContributorsEditIsWorthSavingToo()
+            try aBookOnlyPageStillGetsSaved()
+            try iAmStillMeBeforeIHaveSaidWhoIAm()
         } catch {
             failures.append("threw: \(error)")
         }
@@ -622,8 +626,10 @@ enum PartyMergeCheck {
         check("every record decoded", decoded.count, 4)
 
         let theirs = try makeStore()
-        SharedBookMerge.apply(book: fields, into: theirs)
-        let first = SharedBookMerge.apply(decoded, into: theirs)
+        var bookOutcome = SharedBookMerge.Outcome()
+        SharedBookMerge.apply(book: fields, into: theirs, outcome: &bookOutcome)
+        check("a book arriving is a change worth saving", bookOutcome.bookChanged, true)
+        let first = SharedBookMerge.apply(decoded, into: theirs, carrying: bookOutcome)
         check("all four landed", first.sightingsAdded, 4)
         check("the contributor was created once", first.contributorsAdded, 1)
 
@@ -702,6 +708,198 @@ enum PartyMergeCheck {
 
         check("my rename survives a peer's stale roster", mine.name, "Ethan")
         check("somebody else's rename still lands", other.name, "Mia B")
+    }
+
+    /// The save gate has to be able to see an edit.
+    ///
+    /// Both merges save once per envelope, at the end, and only if the outcome says
+    /// something happened — so an outcome that counts inserts and nothing else cannot
+    /// see a rename at all. A roster whose whole effect was somebody's new name left
+    /// the context dirty, reported empty, and skipped its save; whether the rename
+    /// survived came down to whether autosave happened to fire before the process
+    /// died. These stores do not have autosave, which is the point: it is the same
+    /// guarantee the merge's own contract claims, so the check can hold it to it.
+    ///
+    /// `hasChanges` is the assertion that matters. The name landing on the object
+    /// proves only that the assignment ran; `hasChanges` being false proves it
+    /// reached the disk.
+    @MainActor
+    private static func anEditIsAChangeWorthSaving() throws {
+        let source = try makeStore()
+        let fixture = install(into: source)
+        let peer = try makeStore()
+        let tombstones = PartyTombstones(url: nil)
+
+        PartyMerge.apply(try wire(snapshotOf: fixture, in: source),
+                         into: peer, tombstones: tombstones)
+
+        guard let mia = try source.fetch(FetchDescriptor<Player>())
+            .first(where: { $0.name == "Mia" }) else {
+            return check("fixture roster", false, true)
+        }
+        // Nobody this device could mistake for itself, or the ownership guard would
+        // drop the edit and this would pass for the wrong reason.
+        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
+        UserDefaults.standard.set(UUID().uuidString, forKey: DevicePlayer.key)
+        defer {
+            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
+            else { UserDefaults.standard.removeObject(forKey: DevicePlayer.key) }
+        }
+
+        // A roster and nothing else: no trip, no sightings, nobody new. And one field
+        // at a time, because each is its own branch and each has to open the gate on
+        // its own — changing two at once passes whichever of them is still broken.
+        mia.name = "Mia B"
+        let renamed = PartyMerge.apply(PartyEnvelope(.roster([PartyMerge.event(for: mia)])),
+                                       into: peer, tombstones: tombstones)
+
+        check("a rename is not an insert", renamed.playersAdded, 0)
+        check("but it is a change", renamed.playersChanged, true)
+        check("so the envelope is not empty", renamed.isEmpty, false)
+        check("and the merge saved it", peer.hasChanges, false)
+
+        var after = try peer.fetch(FetchDescriptor<Player>())
+        check("the new name is on the row", after.first { $0.id == mia.id }?.name, "Mia B")
+
+        mia.avatar = "🦊"
+        let face = PartyMerge.apply(PartyEnvelope(.roster([PartyMerge.event(for: mia)])),
+                                    into: peer, tombstones: tombstones)
+        check("picking a face is a change too", face.playersChanged, true)
+        check("which also saved", peer.hasChanges, false)
+        after = try peer.fetch(FetchDescriptor<Player>())
+        check("and the face is on the row", after.first { $0.id == mia.id }?.avatar, "🦊")
+
+        mia.colorIndex = 4
+        let recolored = PartyMerge.apply(PartyEnvelope(.roster([PartyMerge.event(for: mia)])),
+                                         into: peer, tombstones: tombstones)
+        check("so is a color", recolored.playersChanged, true)
+        check("which also saved", peer.hasChanges, false)
+
+        // The same roster again. Nothing left to change, so nothing to save.
+        let again = PartyMerge.apply(PartyEnvelope(.roster([PartyMerge.event(for: mia)])),
+                                     into: peer, tombstones: tombstones)
+        check("re-applying a roster changes nothing", again.isEmpty, true)
+    }
+
+    /// The same gate on the slower wire, plus the two things a contributor's name
+    /// travels through that a party roster does not.
+    ///
+    /// A shared book has no roster: a contributor's name and face ride on each
+    /// sighting instead. That makes the edit path the only path, and it makes the
+    /// order records arrive in — dictionary order within a page, which is to say
+    /// arbitrary — something the merge has to survive rather than depend on.
+    @MainActor
+    private static func aContributorsEditIsWorthSavingToo() throws {
+        let theirs = try makeStore()
+        let bookID = UUID(), contributor = UUID()
+        let start = Date(timeIntervalSinceReferenceDate: 774_000_000)
+
+        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
+        UserDefaults.standard.set(UUID().uuidString, forKey: DevicePlayer.key)
+        defer {
+            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
+            else { UserDefaults.standard.removeObject(forKey: DevicePlayer.key) }
+        }
+
+        func sighting(_ code: String, name: String?, avatar: String?) -> SharedSighting {
+            SharedSighting(id: UUID(), bookID: bookID, plateCode: code,
+                           spottedAt: start, playerID: contributor,
+                           playerName: name, playerColorIndex: 2, playerAvatar: avatar)
+        }
+
+        var opening = SharedBookMerge.Outcome()
+        SharedBookMerge.apply(book: SharedBookRecords.BookFields(id: bookID,
+                                                                name: "Shared Book",
+                                                                startedAt: start),
+                              into: theirs, outcome: &opening)
+        SharedBookMerge.apply([sighting("NJ", name: "Deb", avatar: "🦊")],
+                              into: theirs, carrying: opening)
+
+        // She renames herself. The next record she pushes carries the new name and
+        // nothing else is new.
+        let renamed = SharedBookMerge.apply([sighting("NY", name: "Aunt Deb", avatar: "🦊")],
+                                            into: theirs)
+        check("a contributor's rename is a change", renamed.contributorsChanged, true)
+        check("without being a new contributor", renamed.contributorsAdded, 0)
+        check("and the page saved", theirs.hasChanges, false)
+
+        guard let deb = try theirs.fetch(FetchDescriptor<Player>()).first else {
+            return check("the contributor exists", false, true)
+        }
+        check("the name landed", deb.name, "Aunt Deb")
+
+        // A record she pushed *before* picking a face. It is older than the emoji but
+        // there is no ordering on a page, so the merge cannot let a nil erase one.
+        let stale = SharedBookMerge.apply([sighting("PA", name: "Aunt Deb", avatar: nil)],
+                                          into: theirs)
+        check("an older record does not erase the face", deb.avatar, "🦊")
+        check("and is not counted as an edit", stale.contributorsChanged, false)
+    }
+
+    /// A page that carries a renamed book and no sightings still has to reach the
+    /// disk, because the caller advances the change token past it either way — and
+    /// CloudKit will not send that record again.
+    @MainActor
+    private static func aBookOnlyPageStillGetsSaved() throws {
+        let theirs = try makeStore()
+        let bookID = UUID()
+        let start = Date(timeIntervalSinceReferenceDate: 774_000_000)
+
+        var first = SharedBookMerge.Outcome()
+        SharedBookMerge.apply(book: SharedBookRecords.BookFields(id: bookID, name: "Book",
+                                                                startedAt: start),
+                              into: theirs, outcome: &first)
+        SharedBookMerge.apply([], into: theirs, carrying: first)
+
+        var renamed = SharedBookMerge.Outcome()
+        SharedBookMerge.apply(book: SharedBookRecords.BookFields(id: bookID, name: "Our Book",
+                                                                startedAt: start),
+                              into: theirs, outcome: &renamed)
+        check("the rename is a change worth saving", renamed.bookChanged, true)
+        let carried = SharedBookMerge.apply([], into: theirs, carrying: renamed)
+        check("which the empty page carries", carried.isEmpty, false)
+        check("and saves", theirs.hasChanges, false)
+        check("the name landed",
+              try theirs.fetch(FetchDescriptor<Book>()).first?.name, "Our Book")
+    }
+
+    /// The ownership guard has to work on an install that has never been through the
+    /// identity prompt, which is exactly where it used to do nothing.
+    ///
+    /// `devicePlayerID` is written when a profile is adopted, so before that it is
+    /// unset — and an id compared against nil is always unequal, so "is this row me?"
+    /// answered no about everybody. A shared book coming back down a zone this
+    /// account owns then renamed the user from their own stale record.
+    @MainActor
+    private static func iAmStillMeBeforeIHaveSaidWhoIAm() throws {
+        let theirs = try makeStore()
+        let bookID = UUID()
+        let start = Date(timeIntervalSinceReferenceDate: 774_000_000)
+
+        // The only player on this install, so `DevicePlayer.resolve` lands on them
+        // whatever the key says.
+        let me = Player(name: "Ethan", colorIndex: 0)
+        theirs.insert(me)
+        try? theirs.save()
+
+        let remembered = UserDefaults.standard.string(forKey: DevicePlayer.key)
+        UserDefaults.standard.removeObject(forKey: DevicePlayer.key)
+        defer {
+            if let remembered { UserDefaults.standard.set(remembered, forKey: DevicePlayer.key) }
+        }
+
+        var opening = SharedBookMerge.Outcome()
+        SharedBookMerge.apply(book: SharedBookRecords.BookFields(id: bookID, name: "Shared Book",
+                                                                startedAt: start),
+                              into: theirs, outcome: &opening)
+        // My own record, pushed back at me under the name I used to have.
+        SharedBookMerge.apply([SharedSighting(id: UUID(), bookID: bookID, plateCode: "NJ",
+                                              spottedAt: start, playerID: me.id,
+                                              playerName: "Me", playerColorIndex: 0,
+                                              playerAvatar: nil)],
+                              into: theirs, carrying: opening)
+
+        check("my own stale record does not rename me", me.name, "Ethan")
     }
 
     // MARK: - The fixture

@@ -24,10 +24,20 @@ enum PartyMerge {
         var sightingsRemoved = 0
         var playersAdded = 0
         var tripChanged = false
+        /// A player already on this device was edited — renamed, recolored, or given
+        /// an avatar. Separate from `playersAdded`, which counts inserts only.
+        ///
+        /// Without this the save gate below could not see an edit at all: an envelope
+        /// whose whole effect was somebody's rename left the context dirty and
+        /// returned an empty outcome, so `apply` skipped its one save and the change
+        /// survived only if SwiftData's autosave happened to fire before the process
+        /// died — which the "one save per envelope, at the end" contract explicitly
+        /// does not rely on, and which the merge harness's own store disables.
+        var playersChanged = false
 
         var isEmpty: Bool {
             sightingsAdded == 0 && sightingsRemoved == 0
-                && playersAdded == 0 && !tripChanged
+                && playersAdded == 0 && !tripChanged && !playersChanged
         }
     }
 
@@ -240,9 +250,17 @@ enum PartyMerge {
         // Ownership rather than a timestamp because `Player` is a `@Model`: a
         // `renamedAt` field would mean a new CloudKit attribute and the
         // additive-and-permanent production deploy `PlatesStore` warns about, to
-        // arbitrate a conflict that has an obvious owner. Read from `UserDefaults`
-        // rather than resolved, so this stays free of a fetch.
+        // arbitrate a conflict that has an obvious owner.
+        //
+        // Falls back to resolving when the key is unset, which is not a rare state:
+        // `pinDevicePlayer` writes it only once a profile exists, so a fresh install
+        // or a restore whose sync has not landed reaches a party with nothing there.
+        // Comparing against nil is always unequal, so the guard below silently did
+        // nothing on exactly the installs it most needed to protect — a peer's stale
+        // roster would rewrite the user's own name, color and avatar. Resolving costs
+        // nothing here because `known` is the fetch it would otherwise have to make.
         let mine = UserDefaults.standard.string(forKey: DevicePlayer.key)
+            ?? DevicePlayer.resolve(from: Array(known.values))?.id.uuidString
 
         for event in events {
             if let player = known[event.id] {
@@ -250,9 +268,18 @@ enum PartyMerge {
                 // that saw me change it. See `PartySession.announceMe` for how the
                 // rename gets *out*.
                 guard player.id.uuidString != mine else { continue }
-                if player.name != event.name { player.name = event.name }
-                if player.colorIndex != event.colorIndex { player.colorIndex = event.colorIndex }
-                if player.avatar != event.avatar { player.avatar = event.avatar }
+                if player.name != event.name {
+                    player.name = event.name
+                    outcome.playersChanged = true
+                }
+                if player.colorIndex != event.colorIndex {
+                    player.colorIndex = event.colorIndex
+                    outcome.playersChanged = true
+                }
+                if player.avatar != event.avatar {
+                    player.avatar = event.avatar
+                    outcome.playersChanged = true
+                }
                 continue
             }
             let player = Player(name: event.name, colorIndex: event.colorIndex)
@@ -264,7 +291,22 @@ enum PartyMerge {
             outcome.playersAdded += 1
         }
 
-        settleColors(Array(known.values))
+        // The party, not the address book. `known` is every `Player` this install has
+        // ever created, so de-colliding across it made the answer a function of each
+        // device's private history: a phone holding five players from past drives
+        // consumed the palette on people who are not in the car, and the person
+        // sitting next to you came out a different color on your phone than on
+        // theirs. It also rewrote those historical players — persisted, and
+        // retroactively repainting last summer's standings — and could move this
+        // device's own player, three lines after the guard that exists to stop
+        // exactly that.
+        //
+        // The events are the roster, and every device receives the same ones, so
+        // scoping to them is what makes this the pure function it is documented to
+        // be. A lone `.roster` naming one person settles nothing, which is correct;
+        // the full roster arrives with every `.hello`, which is when collisions are
+        // worth resolving.
+        settleColors(events.compactMap { known[$0.id] }, outcome: &outcome)
     }
 
     /// Two people who both picked green have to stop being both green, and every
@@ -279,19 +321,26 @@ enum PartyMerge {
     /// Ties on `joinedAt` break on id, for the same reason `SightingOrder` does it:
     /// otherwise two devices could disagree about who counts as earlier and hand the
     /// same two people opposite colors.
-    private static func settleColors(_ players: [Player]) {
+    private static func settleColors(_ players: [Player], outcome: inout Outcome) {
         var taken = Set<Int>()
         let ordered = players.sorted {
             ($0.joinedAt, $0.id.uuidString) < ($1.joinedAt, $1.id.uuidString)
         }
         for player in ordered {
             if taken.insert(player.colorIndex).inserted { continue }
-            // Wraps rather than failing: past the palette colors start repeating,
-            // which is a known cost of not capping how many people can play.
-            let free = (0..<Theme.playerColors.count).first { !taken.contains($0) }
-            guard let free else { break }
+            guard let free = (0..<Theme.playerColors.count).first(where: { !taken.contains($0) })
+            else {
+                // More people than colors. Everybody past the sixth keeps whatever
+                // they arrived with and colors start repeating, which is the known
+                // cost of not capping how many can play. `continue`, not `break`:
+                // the palette is full for everyone remaining, so there is nothing
+                // left to settle, but stopping the loop here used to read as a
+                // decision rather than as running out.
+                continue
+            }
             player.colorIndex = free
             taken.insert(free)
+            outcome.playersChanged = true
         }
     }
 

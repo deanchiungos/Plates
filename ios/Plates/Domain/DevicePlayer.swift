@@ -51,6 +51,17 @@ enum DevicePlayer {
         resolve(from: (try? context.fetch(FetchDescriptor<Player>())) ?? [])
     }
 
+    /// Who this device says it is, without touching the store.
+    ///
+    /// For the merges, which need to answer "is this row me?" about an id they were
+    /// handed and must not rewrite their own user from somebody else's stale copy.
+    /// Nil until a profile is adopted, and a nil here has to be read as "cannot
+    /// tell", never as "not me" — comparing an id against nil is always unequal,
+    /// which is how the party's ownership guard came to do nothing on fresh installs.
+    static var currentID: String? {
+        UserDefaults.standard.string(forKey: key)
+    }
+
     static func adopt(_ player: Player) {
         UserDefaults.standard.set(player.id.uuidString, forKey: key)
     }

@@ -187,8 +187,12 @@ final class SharedBookSync {
                 let deleted = page.deletions.map(\.recordID)
                     .compactMap { UUID(uuidString: $0.recordName) }
 
-                for fields in books { SharedBookMerge.apply(book: fields, into: context) }
-                let outcome = SharedBookMerge.apply(sightings, removing: deleted, into: context)
+                var booksOutcome = SharedBookMerge.Outcome()
+                for fields in books {
+                    SharedBookMerge.apply(book: fields, into: context, outcome: &booksOutcome)
+                }
+                let outcome = SharedBookMerge.apply(sightings, removing: deleted,
+                                                    into: context, carrying: booksOutcome)
                 log("pulled \(entry.zoneName): +\(outcome.sightingsAdded) "
                     + "-\(outcome.sightingsRemoved) people:\(outcome.contributorsAdded) "
                     + "more:\(page.moreComing)")
