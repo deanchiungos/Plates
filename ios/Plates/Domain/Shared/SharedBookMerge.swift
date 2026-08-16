@@ -87,7 +87,7 @@ enum SharedBookMerge {
             // Nothing of our own to do, but the book pass may have left an edit
             // sitting in the context — and the caller is about to advance the change
             // token past this page either way.
-            if !outcome.isEmpty { try? context.save() }
+            if !outcome.isEmpty { try? context.save(); WidgetData.write(from: context) }
             return outcome
         }
 
@@ -143,7 +143,14 @@ enum SharedBookMerge {
             outcome.sightingsAdded += 1
         }
 
-        if !outcome.isEmpty { try? context.save() }
+        if !outcome.isEmpty {
+            try? context.save()
+            // As in `PartyMerge`: a plate a friend added to a shared book is a plate
+            // this phone now has, and the home screen has to hear about it. Nothing
+            // that arrives from another device goes through `PlateLogger`, which is
+            // where the widget used to be rebuilt.
+            WidgetData.write(from: context)
+        }
         return outcome
     }
 

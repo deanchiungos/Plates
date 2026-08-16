@@ -139,7 +139,14 @@ enum PartyMerge {
             break
         }
 
-        if !outcome.isEmpty { try? context.save() }
+        if !outcome.isEmpty {
+            try? context.save()
+            // A passenger's find is a find. Nothing that arrives from another device
+            // goes through `PlateLogger`, which is where the widget was rebuilt — so
+            // the grid climbed while the home screen sat at the count it had when
+            // the drive started.
+            WidgetData.write(from: context)
+        }
         return outcome
     }
 

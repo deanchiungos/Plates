@@ -33,6 +33,7 @@ final class SharedBookSync {
     private(set) var isBusy = false
 
     private var zoneEnsured = false
+    private var isPulling = false
 
     // MARK: - The zone
 
@@ -189,6 +190,20 @@ final class SharedBookSync {
     /// filled over weeks, not seconds, and polling would spend battery to shorten a
     /// wait nobody is sitting through.
     func pullAll(into context: ModelContext) async {
+        // One pull at a time, whoever asks.
+        //
+        // A cold launch asks twice — `RootView`'s `.task` and the scenePhase
+        // transition to `.active` both fire — and with no guard both passes read the
+        // same change token before their first `await`, fetched the same pages, ran
+        // the same merge twice, and both wrote a token back. Whichever finished last
+        // won, so the other pull's page-by-page progress was discarded: the exact
+        // resume-where-it-stopped behaviour the token exists for, defeated by asking
+        // for it twice. Returning rather than queueing is right because the second
+        // caller wants "the books are up to date", and the first one is doing that.
+        guard !isPulling else { return }
+        isPulling = true
+        defer { isPulling = false }
+
         // One pull per zone rather than per book. Books can share a zone and the
         // change token belongs to the zone, so the second book's pull asks what has
         // changed since the first one — which is nothing. Any entry in a zone

@@ -82,10 +82,15 @@ struct PlatesApp: App {
         Tour.applyLaunchArguments()
         #endif
         Coach.beginSession()
-        // Rebuilt at launch: trips may have been finished on another device, or the
-        // permission revoked in Settings while the app was away.
-        TripReminders.shared.refresh(in: PlatesStore.context)
-        WidgetData.write(from: PlatesStore.context)
+        // The two launch rebuilds used to run here, synchronously, before the first
+        // frame: `TripReminders.refresh` fetches every trip and `WidgetData.write`
+        // fetches every trip, book and sighting, builds a lifetime index over all of
+        // them, scores the rarest plate across the collection, then reads, decodes
+        // and possibly rewrites the sidecar. On a CloudKit-mirrored store with a few
+        // years of logging that is the whole database materialised on the main
+        // thread inside `init()`, on the launch watchdog's path, for two numbers
+        // nothing on screen is waiting for. They run from `RootView` now, after
+        // there is something to look at. See the `.task` below.
 
         #if DEBUG
         // `-partyMergeCheck` verifies that a party's sightings rebuild the same game
@@ -146,7 +151,15 @@ struct PlatesApp: App {
                 // Shared books are filled over weeks, not seconds, so this pulls on
                 // arrival rather than polling. Anything a friend added while the app
                 // was closed lands the moment it is opened.
-                .task { await SharedBookSync.shared.pullAll(into: PlatesStore.context) }
+                .task {
+                    // The launch rebuilds, off the critical path. Both are cheap to
+                    // be late for: the reminder is a notification days out, and the
+                    // widget is a mirror that was already correct when the app was
+                    // last closed. Neither is worth a white screen.
+                    TripReminders.shared.refresh(in: PlatesStore.context)
+                    WidgetData.write(from: PlatesStore.context)
+                    await SharedBookSync.shared.pullAll(into: PlatesStore.context)
+                }
         }
         .modelContainer(container)
         .onChange(of: scenePhase) { _, phase in

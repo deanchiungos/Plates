@@ -44,13 +44,32 @@ struct Provider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (Entry) -> Void) {
+        // `.sample` only for the gallery. WidgetKit also asks for non-preview
+        // snapshots, and answering those with the fabricated trip put "Summer
+        // Roadtrip, 21 of 50" on the home screen of somebody who had never taken it
+        // — then flipped to 0 of 50 the moment `getTimeline` ran, because that one
+        // already fell back to an empty snapshot. The two have to agree, and empty
+        // is the honest half.
         completion(Entry(date: Date(),
-                         snapshot: context.isPreview ? .sample : (WidgetSnapshot.read() ?? .sample)))
+                         snapshot: context.isPreview ? .sample
+                                                     : (WidgetSnapshot.read() ?? WidgetSnapshot())))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
         let entry = Entry(date: Date(), snapshot: WidgetSnapshot.read() ?? WidgetSnapshot())
-        completion(Timeline(entries: [entry], policy: .never))
+        // Refreshed at the next midnight rather than never.
+        //
+        // `.never` was paired with a caption computed from `Date()` at render time,
+        // and the only thing that could ask for a new timeline was the app writing a
+        // changed snapshot — which happens because a plate was just logged, which
+        // sets the clock this caption measures back to zero. So "6 days quiet" could
+        // not render: the widget was only ever redrawn on the one day it had nothing
+        // to say. A day boundary is the granularity the line is written in, so that
+        // is what it waits for.
+        let tomorrow = Calendar.current.nextDate(
+            after: Date(), matching: DateComponents(hour: 0, minute: 1),
+            matchingPolicy: .nextTime) ?? Date().addingTimeInterval(86_400)
+        completion(Timeline(entries: [entry], policy: .after(tomorrow)))
     }
 }
 
@@ -114,7 +133,7 @@ struct ProgressWidgetView: View {
 
     // MARK: Parts
 
-    private var kindLabel: String {
+    private var kindLabel: LocalizedStringKey {
         switch snapshot.headline {
         case .active(_, _, _, let kind): return kind == "book" ? "BOOK" : "ON THE ROAD"
         case .recent: return "LAST TRIP"
@@ -122,10 +141,13 @@ struct ProgressWidgetView: View {
         }
     }
 
-    private var name: String {
+    /// Verbatim on purpose where it is a trip or book name — that is the person's
+    /// own words and has no business being looked up in a catalog — and a key for
+    /// the one case where the app is doing the naming.
+    private var name: Text {
         switch snapshot.headline {
-        case .active(let name, _, _, _), .recent(let name, _): return name
-        case .lifetime: return "Your collection"
+        case .active(let name, _, _, _), .recent(let name, _): return Text(verbatim: name)
+        case .lifetime: return Text("Your collection")
         }
     }
 
@@ -136,7 +158,10 @@ struct ProgressWidgetView: View {
         switch snapshot.headline {
         case .active(_, _, let lastPlate, _):
             if let lastPlate, days(since: lastPlate) > 0 {
-                caption("\(days(since: lastPlate)) day\(days(since: lastPlate) == 1 ? "" : "s") quiet")
+                // `^[…](inflect: true)` rather than splicing an "s" on by hand. The
+                // hand-rolled form is untranslatable — Slavic and Arabic plurals need
+                // three to six forms — and it produced no catalog entry at all.
+                caption("^[\(days(since: lastPlate)) day](inflect: true) quiet")
             } else if let best = snapshot.bestCode {
                 rarest(best)
             } else {
@@ -145,7 +170,7 @@ struct ProgressWidgetView: View {
         case .recent:
             if let best = snapshot.bestCode { rarest(best) }
         case .lifetime(_, let plates):
-            caption("\(plates) plates in all")
+            caption("^[\(plates) plate](inflect: true) in all")
         }
     }
 
@@ -153,29 +178,33 @@ struct ProgressWidgetView: View {
         HStack(spacing: 4) {
             Text(code)
                 .font(.system(size: 12, weight: .heavy, design: .rounded))
-                .foregroundStyle(WidgetPalette.rarity(snapshot.bestRarity))
+                .foregroundStyle(WidgetPalette.rarity(snapshot.bestIsRemarkable))
             Text("rarest")
                 .font(.system(size: 11))
                 .foregroundStyle(WidgetPalette.inkMuted)
         }
     }
 
-    private func caption(_ text: String) -> some View {
+    /// `LocalizedStringKey`, not `String`. Taking a `String` bound every one of
+    /// these to `Text(some StringProtocol)` — the verbatim initializer — so nothing
+    /// routed through these three helpers was ever harvested for translation, while
+    /// the literals written inline a few lines up were. One widget, two languages.
+    private func caption(_ text: LocalizedStringKey) -> some View {
         Text(text)
             .font(.system(size: 11))
             .foregroundStyle(WidgetPalette.inkMuted)
             .lineLimit(1)
     }
 
-    private func label(_ text: String) -> some View {
+    private func label(_ text: LocalizedStringKey) -> some View {
         Text(text)
             .font(.system(size: 9, weight: .bold))
             .tracking(1.1)
             .foregroundStyle(WidgetPalette.inkMuted)
     }
 
-    private func title(_ text: String) -> some View {
-        Text(text)
+    private func title(_ text: Text) -> some View {
+        text
             .font(.system(size: 15, weight: .semibold))
             .foregroundStyle(WidgetPalette.ink)
             .lineLimit(1)
@@ -271,5 +300,8 @@ enum WidgetPalette {
 
     /// Only the top of the scale gets a color. `RarityTier` has five bands and the
     /// widget has room for one distinction: worth remarking on, or not.
-    static func rarity(_ value: Int) -> Color { value >= 8 ? paint : ink }
+    /// Takes the app's verdict rather than re-deriving one. `value >= 8` was a cut
+    /// that matched no band in `RarityTier` — epic is 7...8 — so the home screen
+    /// disagreed with the grid it links to, and mythic was painted as an epic.
+    static func rarity(_ isRemarkable: Bool) -> Color { isRemarkable ? paint : ink }
 }

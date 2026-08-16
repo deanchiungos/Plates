@@ -45,6 +45,8 @@ struct WidgetData: Codable, Equatable {
     /// nobody else's home screen has.
     var bestCode: String?
     var bestRarity: Int = 0
+    /// Whether `bestRarity` is worth painting. See the note where it is written.
+    var bestIsRemarkable: Bool = false
 
     /// The most recently finished trip, for the gap between drives.
     var lastTripName: String?
@@ -73,25 +75,43 @@ struct WidgetData: Codable, Equatable {
         let target = PlaySelection.current(trips: trips, books: books)
         let current = target?.collection
 
-        // Scored the way the collection itself scores, so a trip's rarest is judged
-        // against its own route rather than a national average it never used.
-        let best = current.flatMap { collection in
-            rarestPlate(in: collection.seenCodes, scoredBy: collection.rarity(of:))
-        }
-
         // Newest first, so "recently finished" means the drive you just got back
         // from rather than whichever one the store happened to return first.
         let finished = trips.filter { !$0.isActive }
             .sorted { ($0.endedAt ?? .distantPast) > ($1.endedAt ?? .distantPast) }
+
+        // What the widget will actually be describing, which is not always what is
+        // being filled. The headline falls back to the last finished trip and then
+        // to the lifetime total, and the album and the rarest find were both being
+        // taken from the active collection alone — so on a phone with no open trip
+        // and no book, the medium widget drew "LAST TRIP / 24 of 50" beside fifty
+        // grey cells, and the caption under the bar rendered nothing at all. Both
+        // now follow the same subject the headline does.
+        let subject: (any PlateCollection)? = current ?? finished.first
+        let seen = subject?.seenCodes ?? Set(sightings.map(\.plateCode))
+
+        // Scored the way the collection itself scores, so a trip's rarest is judged
+        // against its own route rather than a national average it never used. The
+        // lifetime tier has no route of its own, so it is scored nationally.
+        let best = subject.map { collection in
+            rarestPlate(in: seen, scoredBy: collection.rarity(of:))
+        } ?? rarestPlate(in: seen) { PlateRarity.rarity($0, on: nil) }
 
         let snapshot = WidgetData(
             tripName: current?.name,
             tripStates: current?.statesFound ?? 0,
             targetKind: (target?.isBook ?? false) ? "book" : "trip",
             tripLastPlate: current?.allSightings.map(\.spottedAt).max(),
-            foundCodes: Array(current?.seenCodes ?? []).sorted(),
+            foundCodes: seen.sorted(),
             bestCode: best?.0,
             bestRarity: best?.1 ?? 0,
+            // Resolved here, where `RarityTier` is in scope. The widget target
+            // cannot import it and was inventing its own `>= 8` cut, which matches
+            // no band — epic is 7...8 — so an 8 was painted remarkable on the home
+            // screen while the grid called it epic, and mythic came out the same
+            // amber as an epic. Everything on this sidecar is a number the app has
+            // already worked out; this is one more.
+            bestIsRemarkable: (best?.1).map { RarityTier.forRarity($0) >= .epic } ?? false,
             lastTripName: finished.first?.name,
             lastTripStates: finished.first?.statesFound ?? 0,
             lifetimeStates: lifetime.statesFound,

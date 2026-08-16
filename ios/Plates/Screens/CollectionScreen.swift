@@ -514,6 +514,8 @@ struct CollectionScreen: View {
                     // Fall through to whichever book remains rather than pointing at
                     // one that no longer exists.
                     if wasCurrent { currentBookID = "" }
+                    // The home screen was still naming it.
+                    WidgetData.write(from: context)
                     Haptics.destructive()
                     popup.dismiss()
                 }

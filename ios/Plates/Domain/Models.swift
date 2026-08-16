@@ -464,6 +464,18 @@ enum PlaySelection {
     /// properties — `@AppStorage` observes the store, so every screen still updates,
     /// and one call site can set the pair atomically instead of each screen
     /// remembering to set both.
+    ///
+    /// Rewrites the widget's sidecar on the way out, and that is not an aside.
+    /// `WidgetData.write` resolves its whole subject through `PlaySelection.current`
+    /// — these exact three keys — so this function changes the answer to every
+    /// question the home screen is displaying. It had eight call sites and none of
+    /// them rewrote the file, so switching from a trip to a book left the widget
+    /// naming the trip, counting the trip, drawing the trip's album and labelling it
+    /// ON THE ROAD, until something unrelated happened to log a plate.
+    ///
+    /// Here rather than at the call sites for the reason the sidecar exists at all:
+    /// eight places that must each remember is the shape the bug came in.
+    @MainActor
     static func select(_ target: PlayTarget) {
         let defaults = AppDefaults.store
         switch target {
@@ -474,12 +486,15 @@ enum PlaySelection {
             defaults.set("book", forKey: kindKey)
             defaults.set(book.id.uuidString, forKey: bookKey)
         }
+        WidgetData.write(from: PlatesStore.context)
     }
 
     /// Marks a book as "your book" without changing what the Drive screen is
     /// filling. Browsing the Book tab should not interrupt a trip in progress.
+    @MainActor
     static func selectBookOnly(_ book: Book) {
         AppDefaults.store.set(book.id.uuidString, forKey: bookKey)
+        WidgetData.write(from: PlatesStore.context)
     }
 }
 

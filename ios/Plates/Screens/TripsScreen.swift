@@ -402,6 +402,11 @@ struct TripsScreen: View {
         trip.endedAt = nil
         trip.archivedAt = nil
         try? context.save()
+        // Reopening changes what `TripSelection.current` resolves to — it falls
+        // through to the newest collectable trip — so the two mirrors `TripClosing`
+        // rebuilds when a trip *closes* have to be rebuilt when one opens again.
+        TripReminders.shared.refresh(in: context)
+        WidgetData.write(from: context)
         Haptics.selection()
     }
 
@@ -683,6 +688,9 @@ struct TripsScreen: View {
         // id lets it fall through to the next playable one rather than leaving the
         // Drive screen pointed at something that is no longer on offer.
         if archived, trip.id.uuidString == currentTripID { currentTripID = "" }
+        // Archived trips are invisible to `TripSelection.current`, so this moves the
+        // widget's subject without going through `PlaySelection.select`.
+        WidgetData.write(from: context)
         Haptics.selection()
     }
 
@@ -707,6 +715,10 @@ struct TripsScreen: View {
         // Leave the selection to fall through to the newest remaining trip rather
         // than pointing at something that no longer exists.
         if wasCurrent { currentTripID = "" }
+        // And tell the home screen, which was still advertising the trip — and
+        // deep-linking to a Game tab that had fallen through to something else.
+        TripReminders.shared.refresh(in: context)
+        WidgetData.write(from: context)
         Haptics.destructive()
     }
 }
