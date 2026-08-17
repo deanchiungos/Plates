@@ -1,824 +1,1809 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "": {},
-    "%@": {},
-    "%@ %@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@ %2$@"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "“%@”" : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
           }
         }
       }
     },
-    "%@ TRIP · DAY %lld": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@ TRIP · DAY %2$lld"
+    "%@ find. %@. %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ find. %2$@. %3$@"
           }
         }
       }
     },
-    "%@ find. %@. %@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@ find. %2$@. %3$@"
+    "%@ found %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ found %2$@"
           }
         }
       }
     },
-    "%@ found %@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@ found %2$@"
+    "%@ is finished" : {
+
+    },
+    "%@ is running a different version of Plates." : {
+
+    },
+    "%@ spotted that one." : {
+
+    },
+    "%@ started %@ and shared it with you, so only they can start a party for it. Start one on a trip of your own instead." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ started %2$@ and shared it with you, so only they can start a party for it. Start one on a trip of your own instead."
           }
         }
       }
     },
-    "%@ is finished": {},
-    "%@ spotted that one.": {},
-    "%@ started %@ and shared it with you, so only they can start a party for it. Start one on a trip of your own instead.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@ started %2$@ and shared it with you, so only they can start a party for it. Start one on a trip of your own instead."
+    "%@ TRIP · DAY %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ TRIP · DAY %2$lld"
           }
         }
       }
     },
-    "%@'s phone stopped advertising %@. If the party is still running, wait a moment and tap it again.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@'s phone stopped advertising %2$@. If the party is still running, wait a moment and tap it again."
+    "%@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@"
           }
         }
       }
     },
-    "%@'s phone turned you away, which almost always means the four characters did not match. Check the code showing on it and tap %@ again.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@'s phone turned you away, which almost always means the four characters did not match. Check the code showing on it and tap %2$@ again."
+    "%@, %@, spotted by %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@, spotted by %3$@"
           }
         }
       }
     },
-    "%@'s trip, from their party. This is your copy of it.": {},
-    "%@, %@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@, %2$@"
+    "%@, %lld points%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$lld points%3$@"
           }
         }
       }
     },
-    "%@, %@, spotted by %@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@, %2$@, spotted by %3$@"
+    "%@: %lld states spotted on Plates." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$lld states spotted on Plates."
           }
         }
       }
     },
-    "%@, %lld": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@, %2$lld"
+    "%@'s phone stopped advertising %@. If the party is still running, wait a moment and tap it again." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@'s phone stopped advertising %2$@. If the party is still running, wait a moment and tap it again."
           }
         }
       }
     },
-    "%@, %lld points%@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@, %2$lld points%3$@"
+    "%@'s phone turned you away, which almost always means the four characters did not match. Check the code showing on it and tap %@ again." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@'s phone turned you away, which almost always means the four characters did not match. Check the code showing on it and tap %2$@ again."
           }
         }
       }
     },
-    "%@: %lld states spotted on Plates.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$@: %2$lld states spotted on Plates."
+    "%@'s trip, from their party. This is your copy of it." : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
           }
         }
       }
     },
-    "%lld": {},
-    "%lld / %lld": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$lld / %2$lld"
+    "%lld / %lld found" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld found"
           }
         }
       }
     },
-    "%lld / %lld found": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$lld / %2$lld found"
+    "%lld designs, current and historic, each with a photograph." : {
+
+    },
+    "%lld left" : {
+
+    },
+    "%lld left of %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld left of %2$lld"
           }
         }
       }
     },
-    "%lld designs, current and historic, each with a photograph.": {},
-    "%lld left": {},
-    "%lld left of %lld": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$lld left of %2$lld"
+    "%lld of %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld"
           }
         }
       }
     },
-    "%lld of %lld": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$lld of %2$lld"
+    "%lld of %lld regions found" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld regions found"
           }
         }
       }
     },
-    "%lld of %lld regions found": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$lld of %2$lld regions found"
+    "%lld of %lld states" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld states"
           }
         }
       }
     },
-    "%lld of %lld states": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$lld of %2$lld states"
+    "%lld plates" : {
+
+    },
+    "%lld provinces and territories" : {
+
+    },
+    "%lld to go" : {
+
+    },
+    "%lldd" : {
+
+    },
+    "• a color, like blue or orange and black\n• something drawn on it, like a lighthouse or mountains\n• a word printed on it, like Vacationland\n• roughly when it was from, like 1970s\n• the state or province name, if you got that much" : {
+
+    },
+    "^[%lld plate](inflect: true)" : {
+
+    },
+    "^[%lld plate](inflect: true) found on %@ will be un-collected. The trip itself stays." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "^[%1$lld plate](inflect: true) found on %2$@ will be un-collected. The trip itself stays."
           }
         }
       }
     },
-    "%lld plates": {},
-    "%lld provinces and territories": {},
-    "%lld to go": {},
-    "%lldd": {},
-    "+%lld": {},
-    "86 · 60 · 40 · 29 pt": {},
-    "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have.": {},
-    "A book never ends. This says which one you are looking at, and Switch moves between your books and every plate you have ever logged.": {},
-    "A nudge if a trip goes a day without a plate.": {},
-    "A party is for everyone in one car. Each person opens Plates on their own phone, one of you starts the party, and the rest join over the local network. From then on the same drive is scored on every phone, and a small colored circle on each tile shows who called it. No accounts, and no cell signal needed.": {},
-    "A party pools what everyone spots. Nobody has to hand their phone around, and it works with no signal at all.": {},
-    "A plate keeps whatever it was worth the moment you called it. Driving on later never changes what an earlier find scored.": {},
-    "A quiet nudge if a trip goes untouched, so a drive you meant to finish does not sit open forever.": {},
-    "A shared book is for people who are not in the same car. Invite someone to a book you own and you can both add plates to it from wherever you are, through iCloud.": {},
-    "A state stays open after the first person calls it, so it counts for all of you.": {},
-    "A trip is one drive with a route and a finish. A book you just keep adding to.": {},
-    "A trip is one drive with a route and a finish. A book you just keep adding to. Pick one to start collecting. You can have both later.": {},
-    "A trip is one drive. You give it a start and a destination, and it scores what you spot on the way. A book never ends. It is the one you keep in the car and fill in over years.": {},
-    "A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going.": {},
-    "A trip is one journey: it has a route, and it ends. The route is what decides how rare each plate is, so a Florida plate is worth more in Oregon.": {},
-    "ABCD": {},
-    "Add": {},
-    "Add %@ to %@?": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Add %1$@ to %2$@?"
+    "^[%lld plate](inflect: true) they spotted" : {
+
+    },
+    "^[%lld plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays." : {
+
+    },
+    "^[%lld plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays. Plates folded in from trips go back to their trips and stay in your history." : {
+
+    },
+    "^[%lld set](inflect: true)" : {
+
+    },
+    "+%lld" : {
+
+    },
+    "×%lld" : {
+
+    },
+    "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have." : {
+
+    },
+    "A book never ends. This says which one you are looking at, and Switch moves between your books and every plate you have ever logged." : {
+
+    },
+    "A nudge if a trip goes a day without a plate." : {
+
+    },
+    "A party is for everyone in one car. Each person opens Plates on their own phone, one of you starts the party, and the rest join over the local network. From then on the same drive is scored on every phone, and a small colored circle on each tile shows who called it. No accounts, and no cell signal needed." : {
+
+    },
+    "A party pools what everyone spots. Nobody has to hand their phone around, and it works with no signal at all." : {
+
+    },
+    "A plate keeps whatever it was worth the moment you called it. Driving on later never changes what an earlier find scored." : {
+
+    },
+    "A quiet nudge if a trip goes untouched, so a drive you meant to finish does not sit open forever." : {
+
+    },
+    "A shared book is for people who are not in the same car. Invite someone to a book you own and you can both add plates to it from wherever you are, through iCloud." : {
+
+    },
+    "A state stays open after the first person calls it, so it counts for all of you." : {
+
+    },
+    "A trip is one drive with a route and a finish. A book you just keep adding to." : {
+
+    },
+    "A trip is one drive with a route and a finish. A book you just keep adding to. Pick one to start collecting. You can have both later." : {
+
+    },
+    "A trip is one drive. You give it a start and a destination, and it scores what you spot on the way. A book never ends. It is the one you keep in the car and fill in over years." : {
+
+    },
+    "A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going." : {
+
+    },
+    "A trip is one journey: it has a route, and it ends. The route is what decides how rare each plate is, so a Florida plate is worth more in Oregon." : {
+
+    },
+    "ABCD" : {
+
+    },
+    "Add" : {
+
+    },
+    "Add %@ to %@?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add %1$@ to %2$@?"
           }
         }
       }
     },
-    "Add %@ to which book?": {},
-    "Add plates to this Book": {},
-    "Add player": {},
-    "Add the Collection widget to your Home Screen and you can see how the trip or book you are filling is doing without opening the app.": {},
-    "Add to book…": {},
-    "Add where you are going, and this trip will show how far you have left.": {},
-    "Adding a trip to a book": {},
-    "All 50": {},
-    "All ^[%lld sighting](inflect: true) carry over. Plates the book already has count again.": {},
-    "All fifty found": {},
-    "All time": {},
-    "Allow": {},
-    "Allow while using the app": {},
-    "And that is the game. See one on the road, tap its plate. The rarer it is where you're heading, the more it is worth.": {},
-    "App": {},
-    "Archive": {},
-    "Archive %@?": {},
-    "Archive trip": {},
-    "Archived": {},
-    "Archived trip": {},
-    "BEYOND THE 50": {},
-    "BOOK": {},
-    "BOOK NAME": {},
-    "BOOKS": {},
-    "Backed up to iCloud": {},
-    "Backing up to iCloud": {},
-    "Backup problem": {},
-    "Best find": {},
-    "Best plate so far": {},
-    "Bonus": {},
-    "Bonus plates": {},
-    "Books": {},
-    "COLOR": {},
-    "COMMON": {},
-    "COMPLETE": {},
-    "Canada": {},
-    "Cancel": {},
-    "Check ${plate}": {},
-    "Check a plate": {},
-    "Check plate progress": {},
-    "Choose which plates to show": {},
-    "Choose which plates to show.": {},
-    "Classic scoring": {},
-    "Clear": {},
-    "Clear all plates": {},
-    "Clear every plate?": {},
-    "Clear plates": {},
-    "Clear search": {},
-    "Collapsed": {},
-    "Collect into this book from the Game tab.": {},
-    "Collecting": {},
-    "Color %lld%@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Color %1$lld%2$@"
+    "Add %@ to which book?" : {
+
+    },
+    "Add plates to this Book" : {
+
+    },
+    "Add player" : {
+
+    },
+    "Add the Collection widget to your Home Screen and you can see how the trip or book you are filling is doing without opening the app." : {
+
+    },
+    "Add to book…" : {
+
+    },
+    "Add where you are going, and this trip will show how far you have left." : {
+
+    },
+    "Adding a trip to a book" : {
+
+    },
+    "All ^[%lld sighting](inflect: true) carry over. Plates the book already has count again." : {
+
+    },
+    "All 50" : {
+
+    },
+    "All fifty found" : {
+
+    },
+    "All time" : {
+
+    },
+    "Allow" : {
+
+    },
+    "Allow while using the app" : {
+
+    },
+    "And that is the game. See one on the road, tap its plate. The rarer it is where you're heading, the more it is worth." : {
+
+    },
+    "App" : {
+
+    },
+    "Archive" : {
+
+    },
+    "Archive %@?" : {
+
+    },
+    "Archive trip" : {
+
+    },
+    "Archived" : {
+
+    },
+    "Archived trip" : {
+
+    },
+    "Backed up to iCloud" : {
+
+    },
+    "Backing up to iCloud" : {
+
+    },
+    "Backup problem" : {
+
+    },
+    "Best find" : {
+
+    },
+    "Best plate so far" : {
+
+    },
+    "BEYOND THE 50" : {
+
+    },
+    "Bonus" : {
+
+    },
+    "Bonus plates" : {
+
+    },
+    "BOOK" : {
+
+    },
+    "BOOK NAME" : {
+
+    },
+    "Books" : {
+
+    },
+    "BOOKS" : {
+
+    },
+    "Canada" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Check ${plate}" : {
+
+    },
+    "Check a plate" : {
+
+    },
+    "Check plate progress" : {
+
+    },
+    "Choose which plates to show" : {
+
+    },
+    "Choose which plates to show." : {
+
+    },
+    "Classic scoring" : {
+
+    },
+    "Clear" : {
+
+    },
+    "Clear all plates" : {
+
+    },
+    "Clear every plate?" : {
+
+    },
+    "Clear plates" : {
+
+    },
+    "Clear search" : {
+
+    },
+    "Collapsed" : {
+
+    },
+    "Collect into this book from the Game tab." : {
+
+    },
+    "Collecting" : {
+
+    },
+    "COLOR" : {
+
+    },
+    "Color %lld%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Color %1$lld%2$@"
           }
         }
       }
     },
-    "Compare trips": {},
-    "Connecting to %@'s party…": {},
-    "Connecting…": {},
-    "Continue": {},
-    "Copying now…": {},
-    "Could not listen": {},
-    "Could not read a message from %@.": {},
-    "Counted %lld times, %lld of them yours. You can only take back your own.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Counted %1$lld times, %2$lld of them yours. You can only take back your own."
+    "COMMON" : {
+
+    },
+    "Compare trips" : {
+
+    },
+    "COMPLETE" : {
+
+    },
+    "Connecting to %@'s party…" : {
+
+    },
+    "Connecting…" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Copying now…" : {
+
+    },
+    "Could not listen" : {
+
+    },
+    "Could not read a message from %@." : {
+
+    },
+    "Counted %lld times, %lld of them yours. You can only take back your own." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Counted %1$lld times, %2$lld of them yours. You can only take back your own."
           }
         }
       }
     },
-    "Counted ^[%lld time](inflect: true). Removing takes back the most recent sighting and the points it scored.": {},
-    "Currently playing": {},
-    "D.C.": {},
-    "Delete %@?": {},
-    "Delete book": {},
-    "Delete trip": {},
-    "Deleting it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted.": {},
-    "Describe the plate you saw": {},
-    "Discard this trip": {},
-    "Dismiss": {},
-    "Dismisses this tip": {},
-    "District of Columbia": {},
-    "Done": {},
-    "Done with %@?": {},
-    "Driving, or hands full of snacks? Tap this and just say the states out loud as you see them.": {},
-    "EPIC": {},
-    "EVERY %@ DESIGN": {},
-    "EVERY PLATE EVER": {},
-    "Each tab walks you round itself the first time you open it, and the smaller tips show up once each when the thing they are about is in front of you. This brings all of it back, along with the opening card. Nothing you have collected is affected.": {},
-    "Each trip decides how it scores. Classic gives you one point per state, however many times you see it. Weighted is worth more for plates from far away from your route. Unlimited counts every sighting, so the same state keeps earning all drive.": {},
-    "Edit %@": {},
-    "Edit book": {},
-    "Edit player": {},
-    "Edit trip": {},
-    "Either way, the trip keeps its own plates. The book is showing them, not taking them, and you can pull them back out whenever you want.": {},
-    "Empty %@?": {},
-    "Empty book": {},
-    "Empty this book": {},
-    "Ends the walkthrough on every screen": {},
-    "Every drive you have going. Tap one to play it, or swipe it left to pin it or mark it done.": {},
-    "Every plate ever logged": {},
-    "Every plate ever, across all books and trips": {},
-    "Every plate is rated from common up to mythic, based on where you are driving and how many of that state's cars are really on the road. The same New Jersey plate is ordinary around Newark and a great find out in California.": {},
-    "Every plate so far": {},
-    "Every sighting scores, so keep counting.": {},
-    "Every tap counts again here. Hold a plate to take one back.": {},
-    "Everyone can claim a plate": {},
-    "Everyone else taps here, picks the party they can see, and types that code in.": {},
-    "Everyone in the car keeps their own phone. Start a Party and every plate anybody spots lands in the same score.": {},
-    "Everyone in the car keeps their own phone. Start a Party here and your plates pool into one score.": {},
-    "Everyone keeps their own copy. Finishing yours files it with your other trips, with everything anybody spotted still on it.": {},
-    "Everyone spots on their own phone": {},
-    "Expanded": {},
-    "FACE": {},
-    "FINISHED": {},
-    "Facts": {},
-    "Facts unlock as you spot this plate. Every sighting reveals a new one.": {},
-    "Feedback": {},
-    "Files it away with your trips.": {},
-    "Files it away. Nothing is lost.": {},
-    "Fill the gaps": {},
-    "Filter plates": {},
-    "Filter, on. %lld plates left to find.": {},
-    "Find a plate": {},
-    "Find a plate at this stop": {},
-    "Finding you…": {},
-    "Finish a trip, open it, and choose Add to book. There are two ways to do it. Stack everything brings across every plate you saw, even the ones the book already has. Fill the gaps adds only the ones it is missing.": {},
-    "Finish and keep it": {},
-    "Finish the trip": {},
-    "Finished": {},
-    "Finished trip": {},
-    "Finished trips file themselves down here. Open one for its story, or to add everything it collected into a book.": {},
-    "Finished trips file themselves here. Open one for its story, or to add its plates to a book.": {},
-    "Finishing it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted.": {},
-    "Follow the drive?": {},
-    "Following the drive": {},
-    "For the one that went past too fast. Describe it in plain words: colors, a mountain, a bird, half a slogan.": {},
-    "Found": {},
-    "Game": {},
-    "Go to %@": {},
-    "Hands free": {},
-    "Haptics": {},
-    "Hide plates you have already found": {},
-    "Hide the ones you have already found, or turn whole sets off. Canada and the bonus plates live in here.": {},
-    "Hide the other %lld designs": {},
-    "Historical plates": {},
-    "Hold to skip all": {},
-    "Hosted by %@": {},
-    "How far the drive ran, and how much of it you were spotting on.": {},
-    "How to play": {},
-    "I could not check that.": {},
-    "I do not know that plate.": {},
-    "IN ISSUE": {},
-    "If the voice reading plates back sounds robotic, that is the basic voice your iPhone comes with. Open %@, download one marked Enhanced or Premium, and Plates will start using it right away.": {},
-    "In the party": {},
-    "Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are.": {},
-    "Issued": {},
-    "It has been in %@ since %@. Removing it takes that date with it, and the app cannot work it out again.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "It has been in %1$@ since %2$@. Removing it takes that date with it, and the app cannot work it out again."
+    "Counted ^[%lld time](inflect: true). Removing takes back the most recent sighting and the points it scored." : {
+
+    },
+    "Currently playing" : {
+
+    },
+    "D.C." : {
+
+    },
+    "day" : {
+
+    },
+    "days" : {
+
+    },
+    "Delete %@?" : {
+
+    },
+    "Delete book" : {
+
+    },
+    "Delete trip" : {
+
+    },
+    "Deleting it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted." : {
+
+    },
+    "Describe the plate you saw" : {
+
+    },
+    "Discard this trip" : {
+
+    },
+    "Dismiss" : {
+
+    },
+    "Dismisses this tip" : {
+
+    },
+    "District of Columbia" : {
+
+    },
+    "Done" : {
+
+    },
+    "Done with %@?" : {
+
+    },
+    "Driving, or hands full of snacks? Tap this and just say the states out loud as you see them." : {
+
+    },
+    "Each tab walks you round itself the first time you open it, and the smaller tips show up once each when the thing they are about is in front of you. This brings all of it back, along with the opening card. Nothing you have collected is affected." : {
+
+    },
+    "Each trip decides how it scores. Classic gives you one point per state, however many times you see it. Weighted is worth more for plates from far away from your route. Unlimited counts every sighting, so the same state keeps earning all drive." : {
+
+    },
+    "Edit %@" : {
+
+    },
+    "Edit book" : {
+
+    },
+    "Edit player" : {
+
+    },
+    "Edit trip" : {
+
+    },
+    "Either way, the trip keeps its own plates. The book is showing them, not taking them, and you can pull them back out whenever you want." : {
+
+    },
+    "Empty %@?" : {
+
+    },
+    "Empty book" : {
+
+    },
+    "Empty this book" : {
+
+    },
+    "Ends the walkthrough on every screen" : {
+
+    },
+    "EPIC" : {
+
+    },
+    "EVERY %@ DESIGN" : {
+
+    },
+    "Every drive you have going. Tap one to play it, or swipe it left to pin it or mark it done." : {
+
+    },
+    "EVERY PLATE EVER" : {
+
+    },
+    "Every plate ever logged" : {
+
+    },
+    "Every plate ever, across all books and trips" : {
+
+    },
+    "Every plate is rated from common up to mythic, based on where you are driving and how many of that state's cars are really on the road. The same New Jersey plate is ordinary around Newark and a great find out in California." : {
+
+    },
+    "Every plate so far" : {
+
+    },
+    "Every sighting scores, so keep counting." : {
+
+    },
+    "Every tap counts again here. Hold a plate to take one back." : {
+
+    },
+    "Everyone can claim a plate" : {
+
+    },
+    "Everyone else taps here, picks the party they can see, and types that code in." : {
+
+    },
+    "Everyone in the car keeps their own phone. Start a Party and every plate anybody spots lands in the same score." : {
+
+    },
+    "Everyone in the car keeps their own phone. Start a Party here and your plates pool into one score." : {
+
+    },
+    "Everyone keeps their own copy. Finishing yours files it with your other trips, with everything anybody spotted still on it." : {
+
+    },
+    "Everyone spots on their own phone" : {
+
+    },
+    "Expanded" : {
+
+    },
+    "FACE" : {
+
+    },
+    "Facts" : {
+
+    },
+    "Facts unlock as you spot this plate. Every sighting reveals a new one." : {
+
+    },
+    "Feedback" : {
+
+    },
+    "Files it away with your trips." : {
+
+    },
+    "Files it away. Nothing is lost." : {
+
+    },
+    "Fill the gaps" : {
+
+    },
+    "Filter plates" : {
+
+    },
+    "Filter, on. %lld plates left to find." : {
+
+    },
+    "Find a plate" : {
+
+    },
+    "Find a plate at this stop" : {
+
+    },
+    "Finding you…" : {
+
+    },
+    "Finish a trip, open it, and choose Add to book. There are two ways to do it. Stack everything brings across every plate you saw, even the ones the book already has. Fill the gaps adds only the ones it is missing." : {
+
+    },
+    "Finish and keep it" : {
+
+    },
+    "Finish the trip" : {
+
+    },
+    "Finished" : {
+
+    },
+    "FINISHED" : {
+
+    },
+    "Finished trip" : {
+
+    },
+    "Finished trips file themselves down here. Open one for its story, or to add everything it collected into a book." : {
+
+    },
+    "Finished trips file themselves here. Open one for its story, or to add its plates to a book." : {
+
+    },
+    "Finishing it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted." : {
+
+    },
+    "Follow the drive?" : {
+
+    },
+    "Following the drive" : {
+
+    },
+    "For the one that went past too fast. Describe it in plain words: colors, a mountain, a bird, half a slogan." : {
+
+    },
+    "Found" : {
+
+    },
+    "Game" : {
+
+    },
+    "Go to %@" : {
+
+    },
+    "Hands free" : {
+
+    },
+    "Haptics" : {
+
+    },
+    "Hide plates you have already found" : {
+
+    },
+    "Hide the ones you have already found, or turn whole sets off. Canada and the bonus plates live in here." : {
+
+    },
+    "Hide the other %lld designs" : {
+
+    },
+    "Historical plates" : {
+
+    },
+    "Hold to skip all" : {
+
+    },
+    "Hosted by %@" : {
+
+    },
+    "How far the drive ran, and how much of it you were spotting on." : {
+
+    },
+    "How to play" : {
+
+    },
+    "I could not check that." : {
+
+    },
+    "I do not know that plate." : {
+
+    },
+    "iCloud is busy. This will retry on its own." : {
+
+    },
+    "iCloud is busy. This will try again on its own." : {
+
+    },
+    "If the voice reading plates back sounds robotic, that is the basic voice your iPhone comes with. Open %@, download one marked Enhanced or Premium, and Plates will start using it right away." : {
+
+    },
+    "IN ISSUE" : {
+
+    },
+    "In the party" : {
+
+    },
+    "including repeats" : {
+
+    },
+    "Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are." : {
+
+    },
+    "Issued" : {
+
+    },
+    "It has been in %@ since %@. Removing it takes that date with it, and the app cannot work it out again." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "It has been in %1$@ since %2$@. Removing it takes that date with it, and the app cannot work it out again."
           }
         }
       }
     },
-    "It stops appearing anywhere you pick a trip. Nothing is deleted. Its ^[%lld plate](inflect: true) stay in your history, and you can bring it back.": {},
-    "It stops collecting and files itself under Finished, so it is out of every trip picker but still here to open. Its ^[%lld plate](inflect: true) stay in your history, and you can reopen it whenever you like.": {},
-    "Join": {},
-    "Join %@": {},
-    "Joining": {},
-    "Jurisdiction": {},
-    "Jurisdiction: %@. Change": {},
-    "Just say the states as you see them. “New Jersey”, “Ohio”, “that’s a Texas”.": {},
-    "Just the ^[%lld plate](inflect: true) the book is missing.": {},
-    "Keep it": {},
-    "Keep them": {},
-    "LEGENDARY": {},
-    "Last copied %@.": {},
-    "Leave it open": {},
-    "Leave this book": {},
-    "Licence": {},
-    "Listening": {},
-    "Listens and logs plates as you say them": {},
-    "Location": {},
-    "Location is off": {},
-    "Locked": {},
-    "Log ${plate}": {},
-    "Log a plate": {},
-    "Logged on": {},
-    "Looking back": {},
-    "Looking for parties in the car…": {},
-    "Lost the party. Looking for it again…": {},
-    "MYTHIC": {},
-    "Makes plates from far away worth more, wherever you happen to open the book. Only while the app is open.": {},
-    "Map": {},
-    "Map unavailable": {},
-    "Mark as done": {},
-    "Me": {},
-    "Microphone is off": {},
-    "Mixing them works best: green plate with a lighthouse. Tap any result to see the photo big, alongside every other plate that state has issued.": {},
-    "More": {},
-    "Moves the car along your route and makes plates from far away worth more. Only while the app is open.": {},
-    "My Plate Book": {},
-    "NAME": {},
-    "NEW IN THIS BOOK": {},
-    "NEW THIS DRIVE": {},
-    "Names the rarest plate you have logged.": {},
-    "Nearby": {},
-    "New Jersey": {},
-    "New book": {},
-    "New trip": {},
-    "Newest trip first. The longer the bar, the more states you found.": {},
-    "Next": {},
-    "No answer from %@'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap %@ again.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "No answer from %1$@'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap %2$@ again."
+    "It stops appearing anywhere you pick a trip. Nothing is deleted. Its ^[%lld plate](inflect: true) stay in your history, and you can bring it back." : {
+
+    },
+    "It stops collecting and files itself under Finished, so it is out of every trip picker but still here to open. Its ^[%lld plate](inflect: true) stay in your history, and you can reopen it whenever you like." : {
+
+    },
+    "Join" : {
+
+    },
+    "Join %@" : {
+
+    },
+    "Joining" : {
+
+    },
+    "Jurisdiction" : {
+
+    },
+    "Jurisdiction: %@. Change" : {
+
+    },
+    "Just say the states as you see them. “New Jersey”, “Ohio”, “that’s a Texas”." : {
+
+    },
+    "Just the ^[%lld plate](inflect: true) the book is missing." : {
+
+    },
+    "Keep it" : {
+
+    },
+    "Keep them" : {
+
+    },
+    "Last copied %@." : {
+
+    },
+    "Leave it open" : {
+
+    },
+    "Leave this book" : {
+
+    },
+    "LEGENDARY" : {
+
+    },
+    "Licence" : {
+
+    },
+    "Listening" : {
+
+    },
+    "Listens and logs plates as you say them" : {
+
+    },
+    "Location" : {
+
+    },
+    "Location is off" : {
+
+    },
+    "Locked" : {
+
+    },
+    "Log ${plate}" : {
+
+    },
+    "Log a plate" : {
+
+    },
+    "Logged on" : {
+
+    },
+    "Looking back" : {
+
+    },
+    "Looking for parties in the car…" : {
+
+    },
+    "Lost the party. Looking for it again…" : {
+
+    },
+    "Makes plates from far away worth more, wherever you happen to open the book. Only while the app is open." : {
+
+    },
+    "Map" : {
+
+    },
+    "Map unavailable" : {
+
+    },
+    "Mark as done" : {
+
+    },
+    "Me" : {
+
+    },
+    "Microphone is off" : {
+
+    },
+    "Mixing them works best: green plate with a lighthouse. Tap any result to see the photo big, alongside every other plate that state has issued." : {
+
+    },
+    "More" : {
+
+    },
+    "Moves the car along your route and makes plates from far away worth more. Only while the app is open." : {
+
+    },
+    "My Plate Book" : {
+
+    },
+    "MYTHIC" : {
+
+    },
+    "NAME" : {
+
+    },
+    "Names the rarest plate you have logged." : {
+
+    },
+    "Nearby" : {
+
+    },
+    "New book" : {
+
+    },
+    "NEW IN THIS BOOK" : {
+
+    },
+    "NEW THIS DRIVE" : {
+
+    },
+    "New trip" : {
+
+    },
+    "Newest trip first. The longer the bar, the more states you found." : {
+
+    },
+    "Next" : {
+
+    },
+    "No answer from %@'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap %@ again." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No answer from %1$@'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap %2$@ again."
           }
         }
       }
     },
-    "No connection to iCloud. Your plates will copy over once you are back online.": {},
-    "No connection. This will catch up later.": {},
-    "No photographs yet": {},
-    "No plate description mentions %@.": {},
-    "No plate here matches “%@”.": {},
-    "No plates on this phone": {},
-    "No plates yet": {},
-    "No trail yet": {},
-    "No trips yet": {},
-    "Nobody has joined yet.": {},
-    "Nobody has photographed a %@ plate for Wikimedia Commons.": {},
-    "None yet": {},
-    "Not asked yet": {},
-    "Not backed up": {},
-    "Not this one": {},
-    "Not yet spotted": {},
-    "Nothing called “%@”": {},
-    "Nothing left to find": {},
-    "Nothing logged yet": {},
-    "Nothing matched that": {},
-    "Nothing matches “%@”.": {},
-    "Nothing to add. The book has every plate on this trip.": {},
-    "Nothing to fill yet": {},
-    "Notifications are off in Settings": {},
-    "OF %lld STATES": {},
-    "Off": {},
-    "On while the app is open": {},
-    "One person starts it and reads the four character code out loud.": {},
-    "One person starts the Party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal.": {},
-    "One pin for every plate, dropped where you were standing when you called it. Plates spotted in the same place stack into a deck you can open.": {},
-    "One point per state, however many times you see it.": {},
-    "Only the person who spotted a plate can take it back.": {},
-    "Only what's left": {},
-    "Open Settings": {},
-    "Open iCloud settings": {},
-    "Opens Plates and starts listening, so you can call out plates without touching anything.": {},
-    "Other": {},
-    "Other people": {},
-    "PLATE BOOK": {},
-    "PLATES": {},
-    "PLATES LOGGED": {},
-    "PLATES · IN ORDER FOUND": {},
-    "Party": {},
-    "Paused": {},
-    "Photo: %@": {},
-    "Photograph": {},
-    "Photographer": {},
-    "Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card.": {},
-    "Pick a place from the list to score rarity by where you are driving.": {},
-    "Pin": {},
-    "Pin to top": {},
-    "Pinned": {},
-    "Plate": {},
-    "Plate catalogue": {},
-    "Plate lookup": {},
-    "Plate lookup, under More, is for the one that went past too fast. Describe the colors and whatever you remember on it, and it shows you the designs that match.": {},
-    "Plate progress": {},
-    "Plates %@ (%@)": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Plates %1$@ (%2$@)"
+    "No connection to iCloud. Your plates will copy over once you are back online." : {
+
+    },
+    "No connection. This will catch up later." : {
+
+    },
+    "No photographs yet" : {
+
+    },
+    "No plate description mentions %@." : {
+
+    },
+    "No plate here matches “%@”." : {
+
+    },
+    "No plates on this phone" : {
+
+    },
+    "No plates yet" : {
+
+    },
+    "No trail yet" : {
+
+    },
+    "No trips yet" : {
+
+    },
+    "Nobody has joined yet." : {
+
+    },
+    "Nobody has photographed a %@ plate for Wikimedia Commons." : {
+
+    },
+    "None yet" : {
+
+    },
+    "Not asked yet" : {
+
+    },
+    "Not backed up" : {
+
+    },
+    "Not found" : {
+
+    },
+    "Not this one" : {
+
+    },
+    "Not yet spotted" : {
+
+    },
+    "Nothing called “%@”" : {
+
+    },
+    "Nothing left to find" : {
+
+    },
+    "Nothing logged yet" : {
+
+    },
+    "Nothing matched that" : {
+
+    },
+    "Nothing matches “%@”." : {
+
+    },
+    "Nothing to add. The book has every plate on this trip." : {
+
+    },
+    "Nothing to fill yet" : {
+
+    },
+    "Notifications are off in Settings" : {
+
+    },
+    "of %lld" : {
+
+    },
+    "of %lld outside the states" : {
+
+    },
+    "of %lld states" : {
+
+    },
+    "OF %lld STATES" : {
+
+    },
+    "of %lld total" : {
+
+    },
+    "Off" : {
+
+    },
+    "On while the app is open" : {
+
+    },
+    "One person starts it and reads the four character code out loud." : {
+
+    },
+    "One person starts the Party and reads out the code. Plates anyone calls show up on every screen, and it all works with no signal." : {
+
+    },
+    "One pin for every plate, dropped where you were standing when you called it. Plates spotted in the same place stack into a deck you can open." : {
+
+    },
+    "One point per state, however many times you see it." : {
+
+    },
+    "Only the person who spotted a plate can take it back." : {
+
+    },
+    "Only what's left" : {
+
+    },
+    "Open iCloud settings" : {
+
+    },
+    "Open Settings" : {
+
+    },
+    "Opens Plates and starts listening, so you can call out plates without touching anything." : {
+
+    },
+    "Other" : {
+
+    },
+    "Other people" : {
+
+    },
+    "Party" : {
+
+    },
+    "Paused" : {
+
+    },
+    "Photo: %@" : {
+
+    },
+    "Photograph" : {
+
+    },
+    "Photographer" : {
+
+    },
+    "Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card." : {
+
+    },
+    "Pick a place from the list to score rarity by where you are driving." : {
+
+    },
+    "Pin" : {
+
+    },
+    "Pin to top" : {
+
+    },
+    "Pinned" : {
+
+    },
+    "plate" : {
+
+    },
+    "Plate" : {
+
+    },
+    "PLATE BOOK" : {
+
+    },
+    "Plate lookup" : {
+
+    },
+    "Plate lookup, under More, is for the one that went past too fast. Describe the colors and whatever you remember on it, and it shows you the designs that match." : {
+
+    },
+    "Plate progress" : {
+
+    },
+    "plates" : {
+
+    },
+    "PLATES" : {
+
+    },
+    "PLATES · IN ORDER FOUND" : {
+
+    },
+    "Plates %@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Plates %1$@ (%2$@)"
           }
         }
       }
     },
-    "Plates from far away start scoring higher as soon as we find you.": {},
-    "Plates they spotted stay collected, and every count is unchanged. Only their line in the standings goes.": {},
-    "Plates you tap go into whichever one you pick. Start new ones on the Trips and Books tabs.": {},
-    "Play": {},
-    "Play together": {},
-    "Played as a party": {},
-    "Playing as": {},
-    "Playing together": {},
-    "Playing with others?  Start a party": {},
-    "Playing with others? Start a Party": {},
-    "Preparing…": {},
-    "Previous step": {},
-    "Protect what people find": {},
-    "Puerto Rico": {},
-    "RARE": {},
-    "RAREST": {},
-    "RAREST FIND": {},
-    "ROAD TRIP": {},
-    "ROUTE": {},
-    "ROUTE · OPTIONAL": {},
-    "Rarer plates are worth more, judged against your route.": {},
-    "Rarity": {},
-    "Rarity %lld of 10%@": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Rarity %1$lld of 10%2$@"
+    "Plates from far away start scoring higher as soon as we find you." : {
+
+    },
+    "plates logged" : {
+
+    },
+    "PLATES LOGGED" : {
+
+    },
+    "Plates they spotted stay collected, and every count is unchanged. Only their line in the standings goes." : {
+
+    },
+    "Plates you tap go into whichever one you pick. Start new ones on the Trips and Books tabs." : {
+
+    },
+    "Play" : {
+
+    },
+    "Play together" : {
+
+    },
+    "Played as a party" : {
+
+    },
+    "Playing as" : {
+
+    },
+    "Playing together" : {
+
+    },
+    "Playing with others? Start a Party" : {
+
+    },
+    "points" : {
+
+    },
+    "Preparing…" : {
+
+    },
+    "Previous step" : {
+
+    },
+    "Protect what people find" : {
+
+    },
+    "Puerto Rico" : {
+
+    },
+    "RARE" : {
+
+    },
+    "Rarer plates are worth more, judged against your route." : {
+
+    },
+    "RAREST FIND" : {
+
+    },
+    "Rarity" : {
+
+    },
+    "Rarity %lld of 10%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rarity %1$lld of 10%2$@"
           }
         }
       }
     },
-    "Rarity is scored against this route.": {},
-    "Rarity is scored against this route. Plates from far away are worth more.": {},
-    "Rarity was scored against this route.": {},
-    "Read this out. Everyone else taps Join and types it in.": {},
-    "Records a plate on whatever you are filling, a trip or your book, and reads back something about it.": {},
-    "Reminders": {},
-    "Remove": {},
-    "Remove %@?": {},
-    "Remove all %lld": {},
-    "Remove from %@": {},
-    "Remove from %@?": {},
-    "Remove it": {},
-    "Remove one": {},
-    "Remove player": {},
-    "Removes your copy only.": {},
-    "Removing it takes back the points it scored.": {},
-    "Reopen": {},
-    "Reopen this trip": {},
-    "Replay the tour": {},
-    "Rules": {},
-    "SCORING": {},
-    "SETS": {},
-    "SHARE": {},
-    "SHARED": {},
-    "SHARED BOOK": {},
-    "SWITCH": {},
-    "Save": {},
-    "Saw a plate you couldn't name?": {},
-    "Says how many plates you have logged on the trip or book you are filling.": {},
-    "Says whether you have already logged a particular plate, and how rare it is.": {},
-    "Score by where you are?": {},
-    "Search %lld": {},
-    "Search plates": {},
-    "Search plates by state or code": {},
-    "See a plate out the window, then tap it on the Game tab. The tile flips over to that state's real artwork, and it is yours for the rest of the trip.": {},
-    "See one of these on the road? Tap it.": {},
-    "Settings": {},
-    "Share this book": {},
-    "Share this trip": {},
-    "Share your all-time collection": {},
-    "Shared": {},
-    "Show": {},
-    "Show all %lld": {},
-    "Show all %lld designs": {},
-    "Show everything": {},
-    "Show fewer": {},
-    "Show which drive?": {},
-    "Sign in to iCloud": {},
-    "Sign in to iCloud in Settings to back up your plates.": {},
-    "Sign in to iCloud to share books.": {},
-    "Six places are always mythic, because you cannot drive to any of them: Alaska, Hawaii, Puerto Rico, Yukon, the Northwest Territories and Nunavut. One more mythic spot goes to whichever state is hardest to see from where you are, so it changes as you travel.": {},
-    "Skip": {},
-    "Skip all tours": {},
-    "Skip the tour": {},
-    "Skip this tour": {},
-    "Somebody else": {},
-    "Someone else": {},
-    "Someone tried to join with the wrong code. The code for this party is %@.": {},
-    "Spot it again for the next one.": {},
-    "Spot license plates on the road. Tap them here, and try to collect all 50 states.": {},
-    "Spot this plate to read one.": {},
-    "Spotted": {},
-    "Spotted %@. Removing it takes back the points it scored.": {},
-    "Stack everything": {},
-    "Start": {},
-    "Start a book": {},
-    "Start a new book": {},
-    "Start a trip": {},
-    "Start a trip or a book in Plates first.": {},
-    "Start either one from its own tab. Tap SWITCH at the top of the Game tab to choose which one your taps go into.": {},
-    "Start voice mode": {},
-    "Starting…": {},
-    "State or code": {},
-    "State, province, or code": {},
-    "States": {},
-    "Status": {},
-    "Step %lld of %lld": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Step %1$lld of %2$lld"
+    "Rarity is scored against this route. Plates from far away are worth more." : {
+
+    },
+    "Rarity was scored against this route." : {
+
+    },
+    "Read this out. Everyone else taps Join and types it in." : {
+
+    },
+    "Records a plate on whatever you are filling, a trip or your book, and reads back something about it." : {
+
+    },
+    "Reminders" : {
+
+    },
+    "Remove" : {
+
+    },
+    "Remove %@?" : {
+
+    },
+    "Remove all %lld" : {
+
+    },
+    "Remove from %@" : {
+
+    },
+    "Remove from %@?" : {
+
+    },
+    "Remove it" : {
+
+    },
+    "Remove one" : {
+
+    },
+    "Remove player" : {
+
+    },
+    "Removes your copy only." : {
+
+    },
+    "Removing it takes back the points it scored." : {
+
+    },
+    "Reopen" : {
+
+    },
+    "Reopen this trip" : {
+
+    },
+    "Replay the tour" : {
+
+    },
+    "ROAD TRIP" : {
+
+    },
+    "ROUTE" : {
+
+    },
+    "ROUTE · OPTIONAL" : {
+
+    },
+    "Rules" : {
+
+    },
+    "Save" : {
+
+    },
+    "Saw a plate you couldn't name?" : {
+
+    },
+    "Says how many plates you have logged on the trip or book you are filling." : {
+
+    },
+    "Says whether you have already logged a particular plate, and how rare it is." : {
+
+    },
+    "Score by where you are?" : {
+
+    },
+    "SCORING" : {
+
+    },
+    "Search %lld" : {
+
+    },
+    "Search plates" : {
+
+    },
+    "Search plates by state or code" : {
+
+    },
+    "See a plate out the window, then tap it on the Game tab. The tile flips over to that state's real artwork, and it is yours for the rest of the trip." : {
+
+    },
+    "See one of these on the road? Tap it." : {
+
+    },
+    "SETS" : {
+
+    },
+    "Settings" : {
+
+    },
+    "SHARE" : {
+
+    },
+    "Share this book" : {
+
+    },
+    "Share this trip" : {
+
+    },
+    "Share your all-time collection" : {
+
+    },
+    "Shared" : {
+
+    },
+    "SHARED" : {
+
+    },
+    "SHARED BOOK" : {
+
+    },
+    "Show" : {
+
+    },
+    "Show all %lld" : {
+
+    },
+    "Show all %lld designs" : {
+
+    },
+    "Show everything" : {
+
+    },
+    "Show fewer" : {
+
+    },
+    "Show which drive?" : {
+
+    },
+    "Sign in to iCloud" : {
+
+    },
+    "Sign in to iCloud in Settings to back up your plates." : {
+
+    },
+    "Sign in to iCloud to share books." : {
+
+    },
+    "Six places are always mythic, because you cannot drive to any of them: Alaska, Hawaii, Puerto Rico, Yukon, the Northwest Territories and Nunavut. One more mythic spot goes to whichever state is hardest to see from where you are, so it changes as you travel." : {
+
+    },
+    "Skip" : {
+
+    },
+    "Skip all tours" : {
+
+    },
+    "Skip this tour" : {
+
+    },
+    "Somebody else" : {
+
+    },
+    "Someone else" : {
+
+    },
+    "Someone tried to join with the wrong code. The code for this party is %@." : {
+
+    },
+    "Spot it again for the next one." : {
+
+    },
+    "Spot license plates on the road. Tap them here, and try to collect all 50 states." : {
+
+    },
+    "Spot this plate to read one." : {
+
+    },
+    "Spotted" : {
+
+    },
+    "Spotted %@. Removing it takes back the points it scored." : {
+
+    },
+    "Stack everything" : {
+
+    },
+    "Start" : {
+
+    },
+    "Start a book" : {
+
+    },
+    "Start a new book" : {
+
+    },
+    "Start a trip" : {
+
+    },
+    "Start a trip or a book in Plates first." : {
+
+    },
+    "Start either one from its own tab. Tap SWITCH at the top of the Game tab to choose which one your taps go into." : {
+
+    },
+    "Start voice mode" : {
+
+    },
+    "Starting…" : {
+
+    },
+    "State or code" : {
+
+    },
+    "State, province, or code" : {
+
+    },
+    "states" : {
+
+    },
+    "States" : {
+
+    },
+    "Status" : {
+
+    },
+    "Step %lld of %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Step %1$lld of %2$lld"
           }
         }
       }
     },
-    "Still in issue": {},
-    "Still traveling?": {},
-    "Stop sharing": {},
-    "Summer roadtrip": {},
-    "Swipe a trip left to pin it, or to mark it done.": {},
-    "Swipe a trip to the left for its quick actions. You can pin it to the top of the list, or mark it Done when you arrive. A trip you have marked done stops collecting and moves to the Finished section, where its map and its story are still there to open. You can reopen it any time.": {},
-    "Switch to a trip or another book": {},
-    "Switch to another trip": {},
-    "TRIP NAME": {},
-    "TRIPS": {},
-    "TRY ONE": {},
-    "Tap a plate on the Game tab to collect it.": {},
-    "Tap a trip to play it.": {},
-    "Tap any state or province to see its plate, how rare it is from where you are, and a fact or two about it.": {},
-    "Tap the waveform button at the top of the Game tab to start voice mode, then just say the states as you see them. It keeps listening, so a whole stretch of driving can go by without anyone picking up the phone. Say “stop” when you are done.": {},
-    "Tapped one by accident? In Classic and Weighted, tap it again and the app asks before it comes off. In Unlimited, press and hold it instead, because a tap there means you saw another one.": {},
-    "Territories": {},
-    "That invitation did not name a book.": {},
-    "That is the whole app. Everything you have just been shown lives in here, any time you want it again.": {},
-    "That one is not yours to take back.": {},
-    "That shared book is no longer available.": {},
-    "That's a lot of trips going at once. Mark the old ones done and they file themselves away.": {},
-    "The Map and the Trail": {},
-    "The Map shows which states you have collected, and it can also color them in by how rare each one is where you are.": {},
-    "The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever.": {},
-    "The Trail is the map of where you actually were when you spotted each plate.": {},
-    "The Trail shows where you were when you collected them, so it needs your location. The Game tab offers to turn that on the first time it would help.": {},
-    "The ^[%lld sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched.": {},
-    "The album itself. Every slot you have filled keeps the date you filled it, so tapping one tells you where you were.": {},
-    "The book is removed, but its ^[%lld plate](inflect: true) stay in your all-time count. You did see them. Empty it first if you want them gone.": {},
-    "The book is removed. Nothing else changes.": {},
-    "The code %@ is showing": {},
-    "The colored corner is who called it.": {},
-    "The first drive-in theatre opened in Camden, New Jersey, in 1933.": {},
-    "The game": {},
-    "The host ended the party. Your plates are all still here.": {},
-    "The host sets the scoring while you are in a party.": {},
-    "The tour": {},
-    "The trip and its ^[%lld collected plate](inflect: true) are removed for good.": {},
-    "The trip keeps its plates either way. The book just shows them too, and you can take them back out whenever you like.": {},
-    "The widget and the lookup": {},
-    "These are what is worth mentioning. You do not need all of them, and you do not need the state.": {},
-    "These people are already in your iCloud. Tap whichever one is you.": {},
-    "This changes the book you are looking at, and the one you collect into.": {},
-    "This iCloud account is not allowed to store app data.": {},
-    "This is one drive. Tap here to see another, or everything ever.": {},
-    "This is the key. Gold and violet are the ones worth shouting about when you see them.": {},
-    "This is the key. Legendary and mythic are the ones worth shouting about when you see them.": {},
-    "This is what you are filling right now. Tap it to switch between a trip and a book, or to start another one.": {},
-    "This phone found somebody in your iCloud. Tap them to play as them.": {},
-    "This trip is archived. Unarchive it below to make changes or collect more plates.": {},
-    "This trip is done and filed away. Reopen it below to make changes or collect more plates.": {},
-    "Trail": {},
-    "Trips": {},
-    "Trips and books": {},
-    "Trouble": {},
-    "Try a color, something drawn on it, or a word printed on it.": {},
-    "Turn it on for Plates in Settings and rarity follows you instead of using national averages.": {},
-    "Turn it on for Plates in Settings to see the car and have rarity follow you.": {},
-    "Turn on in Settings": {},
-    "Turn on location and every plate you spot drops a pin here. Ones you collected before then have no pin to show.": {},
-    "Turns whatever is on screen into a poster you can send to anyone.": {},
-    "Two ways to read the map. Found shows what you have collected. Rarity colors every state by how hard it is to spot from here.": {},
-    "Type whatever you remember about it. Any of these work:": {},
-    "UNCOMMON": {},
-    "Unarchive trip": {},
-    "Undo": {},
-    "Unfinished trips": {},
-    "United States": {},
-    "Unlimited scoring": {},
-    "Unpin": {},
-    "View trail": {},
-    "Voice mode": {},
-    "Voice mode needs the microphone and speech recognition. Both can be turned on in Settings.": {},
-    "Voice sounds robotic? Download a natural one in %@, then tap the ⤓ beside a voice marked Enhanced or Premium.": {},
-    "Weighted scoring": {},
-    "What are you filling?": {},
-    "Where": {},
-    "Where are you heading?": {},
-    "Whether your collection exists anywhere but this phone. A book is years of spotting, so this is the row worth looking at.": {},
-    "Which book?": {},
-    "Which plate did you see?": {},
-    "Which plate shall I check?": {},
-    "While you play": {},
-    "Who is playing?": {},
-    "Who this phone plays as. In a party this is the name and the colored corner everyone else sees on the plates you call.": {},
-    "Who's playing?": {},
-    "Wikipedia gives this era the design above it, so this is that plate": {},
-    "You already logged %@ on %@%@.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "You already logged %1$@ on %2$@%3$@."
+    "Still in issue" : {
+
+    },
+    "Still traveling?" : {
+
+    },
+    "Stop sharing" : {
+
+    },
+    "Summer roadtrip" : {
+
+    },
+    "Swipe a trip left to pin it, or to mark it done." : {
+
+    },
+    "Swipe a trip to the left for its quick actions. You can pin it to the top of the list, or mark it Done when you arrive. A trip you have marked done stops collecting and moves to the Finished section, where its map and its story are still there to open. You can reopen it any time." : {
+
+    },
+    "SWITCH" : {
+
+    },
+    "Switch to a trip or another book" : {
+
+    },
+    "Switch to another trip" : {
+
+    },
+    "Tap a plate on the Game tab to collect it." : {
+
+    },
+    "Tap a trip to play it." : {
+
+    },
+    "Tap any state or province to see its plate, how rare it is from where you are, and a fact or two about it." : {
+
+    },
+    "Tap the waveform button at the top of the Game tab to start voice mode, then just say the states as you see them. It keeps listening, so a whole stretch of driving can go by without anyone picking up the phone. Say “stop” when you are done." : {
+
+    },
+    "tap to dismiss" : {
+
+    },
+    "Tapped one by accident? In Classic and Weighted, tap it again and the app asks before it comes off. In Unlimited, press and hold it instead, because a tap there means you saw another one." : {
+
+    },
+    "Territories" : {
+
+    },
+    "That invitation did not name a book." : {
+
+    },
+    "That is the whole app. Everything you have just been shown lives in here, any time you want it again." : {
+
+    },
+    "That one is not yours to take back." : {
+
+    },
+    "That shared book is no longer available." : {
+
+    },
+    "That's a lot of trips going at once. Mark the old ones done and they file themselves away." : {
+
+    },
+    "The ^[%lld sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched." : {
+
+    },
+    "The album itself. Every slot you have filled keeps the date you filled it, so tapping one tells you where you were." : {
+
+    },
+    "The book is removed, but its ^[%lld plate](inflect: true) stay in your all-time count. You did see them. Empty it first if you want them gone." : {
+
+    },
+    "The book is removed. Nothing else changes." : {
+
+    },
+    "The code %@ is showing" : {
+
+    },
+    "The colored corner is who called it." : {
+
+    },
+    "the first one counts" : {
+
+    },
+    "The game" : {
+
+    },
+    "The host ended the party. Your plates are all still here." : {
+
+    },
+    "The host sets the scoring while you are in a party." : {
+
+    },
+    "The Map and the Trail" : {
+
+    },
+    "The Map shows which states you have collected, and it can also color them in by how rare each one is where you are." : {
+
+    },
+    "The tour" : {
+
+    },
+    "The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever." : {
+
+    },
+    "The Trail is the map of where you actually were when you spotted each plate." : {
+
+    },
+    "The Trail shows where you were when you collected them, so it needs your location. The Game tab offers to turn that on the first time it would help." : {
+
+    },
+    "The trip and its ^[%lld collected plate](inflect: true) are removed for good." : {
+
+    },
+    "The trip keeps its plates either way. The book just shows them too, and you can take them back out whenever you like." : {
+
+    },
+    "The widget and the lookup" : {
+
+    },
+    "These are what is worth mentioning. You do not need all of them, and you do not need the state." : {
+
+    },
+    "These people are already in your iCloud. Tap whichever one is you." : {
+
+    },
+    "This changes the book you are looking at, and the one you collect into." : {
+
+    },
+    "This iCloud account is not allowed to store app data." : {
+
+    },
+    "This is one drive. Tap here to see another, or everything ever." : {
+
+    },
+    "This is the key. Legendary and mythic are the ones worth shouting about when you see them." : {
+
+    },
+    "This is what you are filling right now. Tap it to switch between a trip and a book, or to start another one." : {
+
+    },
+    "This phone found somebody in your iCloud. Tap them to play as them." : {
+
+    },
+    "This trip is archived. Unarchive it below to make changes or collect more plates." : {
+
+    },
+    "This trip is done and filed away. Reopen it below to make changes or collect more plates." : {
+
+    },
+    "Trail" : {
+
+    },
+    "TRIP NAME" : {
+
+    },
+    "Trips" : {
+
+    },
+    "TRIPS" : {
+
+    },
+    "Trips and books" : {
+
+    },
+    "Trouble" : {
+
+    },
+    "Try a color, something drawn on it, or a word printed on it." : {
+
+    },
+    "TRY ONE" : {
+
+    },
+    "Turn it on for Plates in Settings and rarity follows you instead of using national averages." : {
+
+    },
+    "Turn it on for Plates in Settings to see the car and have rarity follow you." : {
+
+    },
+    "Turn on in Settings" : {
+
+    },
+    "Turn on location and every plate you spot drops a pin here. Ones you collected before then have no pin to show." : {
+
+    },
+    "Turns whatever is on screen into a poster you can send to anyone." : {
+
+    },
+    "Two ways to read the map. Found shows what you have collected. Rarity colors every state by how hard it is to spot from here." : {
+
+    },
+    "Type whatever you remember about it. Any of these work:" : {
+
+    },
+    "Unarchive trip" : {
+
+    },
+    "UNCOMMON" : {
+
+    },
+    "Undo" : {
+
+    },
+    "Unfinished trips" : {
+
+    },
+    "United States" : {
+
+    },
+    "Unlimited scoring" : {
+
+    },
+    "Unpin" : {
+
+    },
+    "View trail" : {
+
+    },
+    "Voice mode" : {
+
+    },
+    "Voice mode needs the microphone and speech recognition. Both can be turned on in Settings." : {
+
+    },
+    "Voice sounds robotic? Download a natural one in %@, then tap the ⤓ beside a voice marked Enhanced or Premium." : {
+
+    },
+    "Weighted scoring" : {
+
+    },
+    "What are you filling?" : {
+
+    },
+    "Where" : {
+
+    },
+    "Where are you heading?" : {
+
+    },
+    "Whether your collection exists anywhere but this phone. A book is years of spotting, so this is the row worth looking at." : {
+
+    },
+    "Which book?" : {
+
+    },
+    "Which plate did you see?" : {
+
+    },
+    "Which plate shall I check?" : {
+
+    },
+    "While you play" : {
+
+    },
+    "Who is playing?" : {
+
+    },
+    "Who this phone plays as. In a party this is the name and the colored corner everyone else sees on the plates you call." : {
+
+    },
+    "Who's playing?" : {
+
+    },
+    "Wikipedia gives this era the design above it, so this is that plate" : {
+
+    },
+    "You already logged %@ on %@%@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You already logged %1$@ on %2$@%3$@."
           }
         }
       }
     },
-    "You are filling this book with its owner. It lives in their iCloud. If they stop sharing it, your copy of the plates stays on this phone.": {},
-    "You are sharing this book. Anything they add appears here, and anything you add appears for them.": {},
-    "You can also start it without touching anything. Say “Hey Siri, start voice mode in Plates”, or just “Hey Siri, Plates voice mode”.": {},
-    "You did not spot anything on this one. You can keep the copy anyway, or throw it away. Everybody else keeps theirs either way.": {},
-    "You do not have permission to change that book.": {},
-    "You have %lld of 50 states on %@.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "You have %1$lld of 50 states on %2$@."
+    "You are filling this book with its owner. It lives in their iCloud. If they stop sharing it, your copy of the plates stays on this phone." : {
+
+    },
+    "You are sharing this book. Anything they add appears here, and anything you add appears for them." : {
+
+    },
+    "You can also start it without touching anything. Say “Hey Siri, start voice mode in Plates”, or just “Hey Siri, Plates voice mode”." : {
+
+    },
+    "You did not spot anything on this one. You can keep the copy anyway, or throw it away. Everybody else keeps theirs either way." : {
+
+    },
+    "You do not have permission to change that book." : {
+
+    },
+    "You have %lld of 50 states on %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You have %1$lld of 50 states on %2$@."
           }
         }
       }
     },
-    "You have found every plate you are hunting for.": {},
-    "You have not logged anything yet.": {},
-    "You have not started a trip or a book yet.": {},
-    "Your best find is %@, %@, on %@.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Your best find is %1$@, %2$@, on %3$@."
+    "You have found every plate you are hunting for." : {
+
+    },
+    "You have not logged anything yet." : {
+
+    },
+    "You have not started a trip or a book yet." : {
+
+    },
+    "Your best find is %@, %@, on %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your best find is %1$@, %2$@, on %3$@."
           }
         }
       }
     },
-    "Your car appears on the route as soon as we find you.": {},
-    "Your code": {},
-    "Your code was right and %@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap %@ again.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "Your code was right and %1$@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap %2$@ again."
+    "Your car appears on the route as soon as we find you." : {
+
+    },
+    "Your code" : {
+
+    },
+    "Your code was right and %@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap %@ again." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your code was right and %1$@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap %2$@ again."
           }
         }
       }
     },
-    "Your collection": {},
-    "Your iCloud storage is full, so nothing new can be copied over.": {},
-    "Your iCloud storage is full.": {},
-    "Your plates are on this phone only until you sign in, in Settings.": {},
-    "Your plates could not be copied to iCloud. This is being looked into.": {},
-    "Your plates live on this phone only. %@": {},
-    "Your plates live on this phone only. Losing it loses the book.": {},
-    "Your plates will copy to iCloud shortly.": {},
-    "^[%lld plate](inflect: true)": {},
-    "^[%lld plate](inflect: true) found on %@ will be un-collected. The trip itself stays.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "^[%1$lld plate](inflect: true) found on %2$@ will be un-collected. The trip itself stays."
-          }
-        }
-      }
+    "Your collection" : {
+
     },
-    "^[%lld plate](inflect: true) they spotted": {},
-    "^[%lld plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays.": {},
-    "^[%lld plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays. Plates folded in from trips go back to their trips and stay in your history.": {},
-    "^[%lld set](inflect: true)": {},
-    "day": {},
-    "days": {},
-    "iCloud is busy. This will retry on its own.": {},
-    "iCloud is busy. This will try again on its own.": {},
-    "including repeats": {},
-    "of %lld": {},
-    "of %lld outside the states": {},
-    "of %lld states": {},
-    "of %lld total": {},
-    "plate": {},
-    "plates": {},
-    "plates logged": {},
-    "points": {},
-    "states": {},
-    "tap to dismiss": {},
-    "the first one counts": {},
-    "×%lld": {},
-    "“%@”": {},
-    "• a color, like blue or orange and black\n• something drawn on it, like a lighthouse or mountains\n• a word printed on it, like Vacationland\n• roughly when it was from, like 1970s\n• the state or province name, if you got that much": {}
+    "Your iCloud storage is full, so nothing new can be copied over." : {
+
+    },
+    "Your iCloud storage is full." : {
+
+    },
+    "Your plates are on this phone only until you sign in, in Settings." : {
+
+    },
+    "Your plates could not be copied to iCloud. This is being looked into." : {
+
+    },
+    "Your plates live on this phone only. %@" : {
+
+    },
+    "Your plates live on this phone only. Losing it loses the book." : {
+
+    },
+    "Your plates will copy to iCloud shortly." : {
+
+    }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

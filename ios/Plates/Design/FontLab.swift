@@ -99,20 +99,26 @@ struct FontLab: View {
             }
 
             // The same four roles the app actually uses, at the sizes it uses them.
-            Text("LEGENDARY")
+            //
+            // `verbatim` because these are type specimens, not copy. Written as
+            // plain literals they extract into the String Catalog like any other
+            // sentence, so a translator opening the catalogue finds "LEGENDARY"
+            // and a fact about a drive-in theatre sitting beside the real UI.
+            // This screen only exists in a DEBUG build; the catalogue ships.
+            Text(verbatim: "LEGENDARY")
                 .font(font(c.bold, 30))
                 .foregroundStyle(Theme.paint)
-            Text("New Jersey")
+            Text(verbatim: "New Jersey")
                 .font(font(c.bold, 19))
                 .foregroundStyle(Theme.ink)
-            Text("The first drive-in theatre opened in Camden, New Jersey, in 1933.")
+            Text(verbatim: "The first drive-in theatre opened in Camden, New Jersey, in 1933.")
                 .font(font(c.regular, 17))
                 .foregroundStyle(Theme.ink.opacity(0.78))
                 .fixedSize(horizontal: false, vertical: true)
-            Text("Playing with others?  Start a party")
+            Text(verbatim: "Playing with others?  Start a party")
                 .font(font(c.semibold, 15))
                 .foregroundStyle(Theme.route)
-            Text("Rarity is scored against this route.")
+            Text(verbatim: "Rarity is scored against this route.")
                 .font(font(c.regular, 12.5))
                 .foregroundStyle(Theme.inkMuted)
         }

@@ -230,7 +230,7 @@ struct IconLab: View {
                     AppIconArt.preset(forPointSize: Double($0), size: $0, rounded: true)
                 }
 
-                Text("86 \u{00B7} 60 \u{00B7} 40 \u{00B7} 29 pt")
+                Text(verbatim: "86 \u{00B7} 60 \u{00B7} 40 \u{00B7} 29 pt")
                     .font(.plates(size: 10))
                     .foregroundStyle(Theme.inkMuted)
             }

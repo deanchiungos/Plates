@@ -142,13 +142,19 @@ final class CloudBackup {
             // *production* CloudKit environment, which never creates record types on
             // demand the way the development one does. Deploying the schema in the
             // CloudKit Console fixes it, and no new build is needed.
+            // Compiled in both configurations, deliberately. String extraction only
+            // sees the configuration you build, so a shipping-only literal is
+            // dropped from the catalogue by the next Debug build that merges it —
+            // and this is the one message a real App Store user reads when the
+            // production schema is missing. The developer note is appended rather
+            // than substituted, which keeps the diagnosis and keeps the key.
+            let message = String(localized: "Your plates could not be copied to iCloud. This is being looked into.")
             #if DEBUG
-            // Not localised: this branch only exists in a developer build, and it
-            // is a note to whoever is holding the phone at their own desk.
-            return "iCloud rejected the data (\(ck.code.rawValue)). "
-                 + "The production CloudKit schema is probably not deployed."
+            return message
+                 + " [dev: iCloud rejected the data (\(ck.code.rawValue)):"
+                 + " the production CloudKit schema is probably not deployed.]"
             #else
-            return String(localized: "Your plates could not be copied to iCloud. This is being looked into.")
+            return message
             #endif
         default:
             return ck.localizedDescription

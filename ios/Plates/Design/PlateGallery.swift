@@ -85,7 +85,7 @@ struct PlateGallery: View {
 
     private func header(failures: [String: Double]) -> some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text("Plate catalogue")
+            Text(verbatim: "Plate catalogue")
                 .font(.plates(size: 20, weight: .bold))
             Text(summary(failures: failures))
                 .font(.plates(size: 12))
