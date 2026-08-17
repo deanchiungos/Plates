@@ -47,7 +47,10 @@ final class VoiceSpeaker: NSObject {
     /// devices where the first notification is missed or predates iOS 17, returning
     /// to the app is the moment the inventory is worth another look.
     private static let noteWhenVoicesChange: Void = {
-        let refresh: (Notification) -> Void = { _ in
+        // `@Sendable` because that is what `addObserver` takes, and because it is
+        // true: the closure captures nothing and does nothing but hop to the main
+        // actor. Written without it, the conversion happened anyway, silently.
+        let refresh: @Sendable (Notification) -> Void = { _ in
             Task { @MainActor in VoiceSpeaker.refreshVoice() }
         }
         if #available(iOS 17.0, *) {

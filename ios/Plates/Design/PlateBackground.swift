@@ -82,11 +82,17 @@ struct PlateLettering: View {
         // hands you the same proxy at *render* time and can only do things that
         // don't affect layout — offset being exactly one of them. Filling the
         // tile first is what makes proxy.size the tile rather than the glyphs.
-        block
+        //
+        // Read out here rather than inside the closure: `visualEffect` takes a
+        // `@Sendable` closure and `offset` is a property of this main-actor view,
+        // so reaching for it at render time is exactly what that annotation
+        // forbids. Two Doubles cross the boundary instead.
+        let shift = offset
+        return block
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .visualEffect { content, proxy in
-                content.offset(x: proxy.size.width * offset.x,
-                              y: proxy.size.height * offset.y)
+                content.offset(x: proxy.size.width * shift.x,
+                              y: proxy.size.height * shift.y)
             }
     }
 

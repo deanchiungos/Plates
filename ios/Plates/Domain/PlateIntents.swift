@@ -252,7 +252,9 @@ struct RarestFindIntent: AppIntent {
             return .result(dialog: "You have not started a trip or a book yet.")
         }
 
-        guard let best = rarestPlate(in: trip.seenCodes, scoredBy: trip.rarity(of:)),
+        let index = trip.plateIndex()
+        guard let best = rarestPlate(in: trip.seenCodes,
+                                     scoredBy: { trip.rarity(of: $0, using: index) }),
               let plate = Plate.plate(for: best.code) else {
             return .result(dialog: "You have not logged anything yet.")
         }

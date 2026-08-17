@@ -290,14 +290,19 @@ final class PartySession {
         return party
     }
 
+    // `tombstones` is resolved in the body rather than defaulted in the signature.
+    // A default argument expression is evaluated in the *caller's* isolation, which
+    // for a `@MainActor` singleton means the compiler cannot prove it is safe —
+    // Swift 6 rejects it outright. The body is main-actor by construction. No
+    // caller ever passed one, so the parameter is gone with it; the harness injects
+    // its memory-only ledger into `PartyMerge.apply`, not into a session.
     private init(role: Role, tripID: UUID, code: String,
-                 name: String, context: ModelContext,
-                 tombstones: PartyTombstones = .shared) {
+                 name: String, context: ModelContext) {
         self.role = role
         self.tripID = tripID
         self.code = code
         self.context = context
-        self.tombstones = tombstones
+        self.tombstones = .shared
         // Trimmed to what `MCPeerID` accepts: non-empty, and 63 bytes at the outside.
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
         // Trimmed by *bytes*, not characters. `MCPeerID` rejects a display name over
@@ -358,7 +363,7 @@ final class PartySession {
     /// silently, no error, no connection, forever. Browsing and joining are one
     /// object because MultipeerConnectivity requires them to be.
     func join(_ party: Nearby, code entered: String) {
-        guard role == .guest, let browser else { return }
+        guard role == .guest, browser != nil else { return }
 
         // Everything a fresh session used to get for free. Joining once built a new
         // `PartySession`, so every per-attempt flag started clear by construction;

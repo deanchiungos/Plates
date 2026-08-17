@@ -273,7 +273,15 @@ final class CoachPresenter {
         AccessibilityNotification.Announcement(String(localized: words)).post()
     }
 
-    private func after(_ delay: TimeInterval, _ work: @escaping () -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: work)
+    /// A `Task` rather than `DispatchQueue.main.asyncAfter`, which wanted a
+    /// `@Sendable` closure and was being handed one that closes over this
+    /// main-actor presenter. Both hop to the main actor and both always fire —
+    /// nothing holds this task, so nothing cancels it — so the timing is unchanged
+    /// and the closure no longer has to pretend it can cross an isolation boundary.
+    private func after(_ delay: TimeInterval, _ work: @escaping @MainActor () -> Void) {
+        Task { @MainActor in
+            try? await Task.sleep(for: .seconds(delay))
+            work()
+        }
     }
 }

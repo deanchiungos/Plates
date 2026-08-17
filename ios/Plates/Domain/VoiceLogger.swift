@@ -146,6 +146,13 @@ final class VoiceLogger {
     /// Shared by `configureSession` and `duckOthers`, so that ducking cannot quietly
     /// drop one of them — losing `.defaultToSpeaker` mid-drive would move every
     /// confirmation to the earpiece, which in a car is the same as losing it.
+    ///
+    /// `.allowBluetooth` warns as deprecated and stays anyway. Its replacement,
+    /// `.allowBluetoothHFP`, is iOS 26 and up; this app deploys to 18, so the old
+    /// spelling is the only one that compiles across the whole supported range.
+    /// It is a pure rename onto the same raw value, and an availability fork would
+    /// still have to name the deprecated case in its `else` branch, so the fork
+    /// buys a longer file and the same warning.
     private static let baseOptions: AVAudioSession.CategoryOptions =
         [.mixWithOthers, .allowBluetooth, .defaultToSpeaker]
 
@@ -238,7 +245,9 @@ final class VoiceLogger {
         ticker = Task { [weak self] in
             while !Task.isCancelled {
                 try? await Task.sleep(for: .milliseconds(200))
-                await self?.settleHeld()
+                // Not awaited: the task inherits this class's main-actor isolation,
+                // so the call is direct. The `await` read as a hop that never was.
+                self?.settleHeld()
             }
         }
     }

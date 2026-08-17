@@ -104,6 +104,10 @@ struct TripSummary: Identifiable {
     /// find only means anything relative to where that trip went.
     let bestFind: (code: String, rarity: Int)?
 
+    /// `@MainActor` because it reads a SwiftData model, which is main-actor state,
+    /// and because the rarity it works out is. It was already only ever built from a
+    /// view body; the annotation says so rather than leaving it to be true by luck.
+    @MainActor
     init(trip: Trip) {
         let all = trip.allSightings
         let codes = Set(all.map(\.plateCode))
@@ -118,6 +122,10 @@ struct TripSummary: Identifiable {
         platesFound = codes.count
         sightings = all.count
 
-        bestFind = rarestPlate(in: codes, scoredBy: trip.rarity(of:))
+        // Through the index, like the grid, the poster and the widget. Passed as a
+        // function value, `trip.rarity(of:)` also silently dropped its `@MainActor`
+        // — which the compiler now warns about and Swift 6 will refuse.
+        let index = trip.plateIndex()
+        bestFind = rarestPlate(in: codes) { trip.rarity(of: $0, using: index) }
     }
 }

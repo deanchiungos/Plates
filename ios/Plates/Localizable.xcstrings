@@ -288,6 +288,7 @@
     "Continue": {},
     "Copying now…": {},
     "Could not listen": {},
+    "Could not read a message from %@.": {},
     "Counted %lld times, %lld of them yours. You can only take back your own.": {
       "localizations": {
         "en": {
@@ -421,11 +422,13 @@
     "Logged on": {},
     "Looking back": {},
     "Looking for parties in the car…": {},
+    "Lost the party. Looking for it again…": {},
     "MYTHIC": {},
     "Makes plates from far away worth more, wherever you happen to open the book. Only while the app is open.": {},
     "Map": {},
     "Map unavailable": {},
     "Mark as done": {},
+    "Me": {},
     "Microphone is off": {},
     "Mixing them works best: green plate with a lighthouse. Tap any result to see the photo big, alongside every other plate that state has issued.": {},
     "More": {},
@@ -452,6 +455,7 @@
       }
     },
     "No connection to iCloud. Your plates will copy over once you are back online.": {},
+    "No connection. This will catch up later.": {},
     "No photographs yet": {},
     "No plate description mentions %@.": {},
     "No plate here matches “%@”.": {},
@@ -598,6 +602,7 @@
     "Show which drive?": {},
     "Sign in to iCloud": {},
     "Sign in to iCloud in Settings to back up your plates.": {},
+    "Sign in to iCloud to share books.": {},
     "Six places are always mythic, because you cannot drive to any of them: Alaska, Hawaii, Puerto Rico, Yukon, the Northwest Territories and Nunavut. One more mythic spot goes to whichever state is hardest to see from where you are, so it changes as you travel.": {},
     "Skip": {},
     "Skip all tours": {},
@@ -651,8 +656,10 @@
     "Tap the waveform button at the top of the Game tab to start voice mode, then just say the states as you see them. It keeps listening, so a whole stretch of driving can go by without anyone picking up the phone. Say “stop” when you are done.": {},
     "Tapped one by accident? In Classic and Weighted, tap it again and the app asks before it comes off. In Unlimited, press and hold it instead, because a tap there means you saw another one.": {},
     "Territories": {},
+    "That invitation did not name a book.": {},
     "That is the whole app. Everything you have just been shown lives in here, any time you want it again.": {},
     "That one is not yours to take back.": {},
+    "That shared book is no longer available.": {},
     "That's a lot of trips going at once. Mark the old ones done and they file themselves away.": {},
     "The Map and the Trail": {},
     "The Map shows which states you have collected, and it can also color them in by how rare each one is where you are.": {},
@@ -667,6 +674,7 @@
     "The colored corner is who called it.": {},
     "The first drive-in theatre opened in Camden, New Jersey, in 1933.": {},
     "The game": {},
+    "The host ended the party. Your plates are all still here.": {},
     "The host sets the scoring while you are in a party.": {},
     "The tour": {},
     "The trip and its ^[%lld collected plate](inflect: true) are removed for good.": {},
@@ -733,6 +741,7 @@
     "You are sharing this book. Anything they add appears here, and anything you add appears for them.": {},
     "You can also start it without touching anything. Say “Hey Siri, start voice mode in Plates”, or just “Hey Siri, Plates voice mode”.": {},
     "You did not spot anything on this one. You can keep the copy anyway, or throw it away. Everybody else keeps theirs either way.": {},
+    "You do not have permission to change that book.": {},
     "You have %lld of 50 states on %@.": {
       "localizations": {
         "en": {
@@ -770,7 +779,9 @@
     },
     "Your collection": {},
     "Your iCloud storage is full, so nothing new can be copied over.": {},
+    "Your iCloud storage is full.": {},
     "Your plates are on this phone only until you sign in, in Settings.": {},
+    "Your plates could not be copied to iCloud. This is being looked into.": {},
     "Your plates live on this phone only. %@": {},
     "Your plates live on this phone only. Losing it loses the book.": {},
     "Your plates will copy to iCloud shortly.": {},
@@ -792,6 +803,7 @@
     "day": {},
     "days": {},
     "iCloud is busy. This will retry on its own.": {},
+    "iCloud is busy. This will try again on its own.": {},
     "including repeats": {},
     "of %lld": {},
     "of %lld outside the states": {},

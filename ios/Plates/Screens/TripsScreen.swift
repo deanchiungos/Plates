@@ -279,7 +279,7 @@ struct TripsScreen: View {
 
                 // Moved here from the Book tab, where it was a "History" page that
                 // listed trips and no books whatsoever. Trips belong with trips.
-                TripComparison(summaries: trips.map(TripSummary.init),
+                TripComparison(summaries: trips.map { TripSummary(trip: $0) },
                                currentTripID: current?.id)
             }
             .padding(Theme.screenPadding)

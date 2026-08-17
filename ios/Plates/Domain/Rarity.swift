@@ -471,7 +471,7 @@ enum PlateRarity {
         }
         let dilution = min(1.0, corridorPotRef / pot)
 
-        for (code, origin) in origins {
+        for code in origins.keys {
             guard let roads = PlateCorridors.serves[code],
                   !roads.isDisjoint(with: mine),
                   let d = dist[code] else { continue }
