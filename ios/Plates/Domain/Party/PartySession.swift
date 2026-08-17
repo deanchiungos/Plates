@@ -1116,7 +1116,6 @@ final class PartySession {
         #if DEBUG
         // `-partyCode` still wins, or every two-device test would inherit whatever
         // the previous one happened to persist.
-        let args = ProcessInfo.processInfo.arguments
         if let given = LaunchFlags.value(after: "-partyCode") { return tidy(given) }
         #endif
         if let kept = PartyLedger.shared.code(for: trip), !kept.isEmpty { return kept }

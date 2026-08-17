@@ -191,7 +191,7 @@ struct CoachLayer<Content: View>: View {
                    // than `TourGuide.isRunning` because a static is not observable,
                    // and this has to redraw when it changes.
                    tour.screen == nil,
-                   onScreen(proxy[target.anchor], in: proxy.size) {
+                   GuidePlacement.onScreen(proxy[target.anchor], in: proxy.size) {
                     balloon(tip, words,
                             target: proxy[target.anchor],
                             prefersAbove: target.prefersAbove,
@@ -201,67 +201,21 @@ struct CoachLayer<Content: View>: View {
         }
     }
 
-    /// Is the target actually on the page right now?
-    ///
-    /// The anchor doc says a scrolled-away target makes its balloon fade, and in a
-    /// *lazy* container that is simply true — the view stops existing and takes its
-    /// anchor with it. A plain `ForEach` in a `ScrollView` is not lazy. Every trip
-    /// row is realised at all times, so the ninth one reports a rect a few hundred
-    /// points below the page, and the placement arithmetic below happily clamps the
-    /// balloon to the bottom edge and aims it at the tab bar.
-    ///
-    /// Nothing is dismissed by failing this. The tip keeps its turn and draws the
-    /// moment its subject is scrolled into view, which is the only moment it means
-    /// anything.
-    private func onScreen(_ target: CGRect, in bounds: CGSize) -> Bool {
-        target.maxY > 0 && target.minY < bounds.height
-    }
-
     private func balloon(_ tip: Coach.Tip,
                          _ words: LocalizedStringResource,
                          target: CGRect,
                          prefersAbove: Bool,
                          in bounds: CGSize) -> some View {
-        // Below the target unless the caller asked otherwise, and above it anyway
-        // when there is not room below — reading downward from the thing being
-        // described is the natural direction for a grid, and a balloon above a
-        // target covers whatever heading introduced it. See `GuideTarget` for why a
-        // list wants the opposite.
-        //
-        // Judged on room, not on which half of the screen the target sits in. That
-        // was the first attempt and it put the balloon above a tile with 270pt of
-        // empty grid below it, because a tile 59% of the way down a screen is not
-        // near the bottom of anything. `roomNeeded` is a deliberate over-estimate of
-        // the balloon's height — flipping a little early costs nothing, and clipping
-        // one against the tab bar costs the whole tip.
-        //
-        // A preference for above is honoured only when above is actually habitable,
-        // for the same reason: a row near the top of a screen has nothing over it.
-        let roomBelow = target.maxY + gap + roomNeeded <= bounds.height
-        let roomAbove = target.minY - gap - roomNeeded >= 0
-        let above = prefersAbove ? roomAbove || !roomBelow : !roomBelow
-        let width = min(260, bounds.width - margin * 2)
+        // The placement itself is `GuidePlacement`, shared with the tour. Every
+        // line of it used to be written out here and again there, under a comment in
+        // each saying the two matched.
+        let placed = GuidePlacement.place(target: target, in: bounds,
+                                          prefersAbove: prefersAbove,
+                                          gap: gap, margin: margin,
+                                          roomNeeded: roomNeeded,
+                                          widthCap: 260, notchInset: 18)
 
-        // Centred on the target, then pulled back inside the margins. A tile in the
-        // first or last column would otherwise hang the balloon off the page.
-        let left = min(max(target.midX - width / 2, margin),
-                       bounds.width - margin - width)
-
-        // The notch tracks the target even after the box has been clamped, which is
-        // the whole point of clamping the two separately: the balloon slides back on
-        // screen, the finger stays pointed at the tile. Held clear of the corner
-        // radius at either end.
-        let notchX = min(max(target.midX - left, 18), width - 18)
-
-        // Aligned and padded rather than centred with `.position`, which is the one
-        // thing worth reading twice here. `.position` needs the balloon's height to
-        // put its *edge* against the target, and the obvious way to learn that — a
-        // size preference read back out — does not work from inside
-        // `overlayPreferenceValue`: the nested preference never propagates, `size`
-        // stays zero, and the balloon renders half a box out of place forever.
-        // Pinning an edge and pushing it away from the opposite side needs no
-        // measurement at all.
-        return ZStack(alignment: above ? .bottomLeading : .topLeading) {
+        return ZStack(alignment: placed.above ? .bottomLeading : .topLeading) {
             // `Color.clear` is hit-testable — it is a view, not a hole — so this
             // full-screen spacer silently ate every touch on whatever screen a mark
             // was showing on. The grid would not scroll and no plate could be tapped
@@ -271,16 +225,13 @@ struct CoachLayer<Content: View>: View {
             Color.clear.allowsHitTesting(false)
 
             CoachMark(text: words,
-                      pointing: above ? .bottom : .top,
-                      notchX: notchX) {
+                      pointing: placed.above ? .bottom : .top,
+                      notchX: placed.notchX) {
                 Haptics.selection()
                 coach.dismiss(tip)
             }
             .onAppear { coach.didDraw(tip, saying: words) }
-            .frame(width: width, alignment: .leading)
-            .padding(.leading, left)
-            .padding(.top, above ? 0 : max(0, target.maxY + gap))
-            .padding(.bottom, above ? max(0, bounds.height - target.minY + gap) : 0)
+            .guidePlaced(placed, target: target, in: bounds, gap: gap)
         }
     }
 }

@@ -65,17 +65,23 @@ struct PlayerDot: View {
         self.glyphSize = glyphSize
     }
 
-    /// For the two callers that have no `Player` to hand: the "+N" circle, and the
-    /// stand-in shown before this phone has been introduced.
+    /// For the callers that have no `Player` to hand: the "+N" circle, the stand-in
+    /// shown before this phone has been introduced, and the avatar picker previewing
+    /// a face nobody has chosen yet.
+    ///
+    /// `glyphSize` is deliberately not offered here. It is an override for a caller
+    /// that has measured a specific layout, and the one such caller has a `Player`;
+    /// offering it on this initializer too would be a second way to spell something
+    /// nobody was asking for.
     init(color: Color, text: String, isEmoji: Bool = false,
-         size: CGFloat = 24, ring: Color? = nil, glyphSize: CGFloat? = nil,
+         size: CGFloat = 24, ring: Color? = nil,
          ink: Color = Theme.ink) {
         self.color = color
         self.text = text
         self.isEmoji = isEmoji
         self.size = size
         self.ring = ring
-        self.glyphSize = glyphSize
+        self.glyphSize = nil
         self.ink = ink
     }
 

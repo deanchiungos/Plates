@@ -406,16 +406,12 @@ struct TourLayer<Content: View>: View {
                     let target = anchors[stop].map { proxy[$0.anchor] }
                     let prefersAbove = anchors[stop]?.prefersAbove ?? false
                     stage(stop, words,
-                          target: target.flatMap { onScreen($0, in: proxy.size) ? $0 : nil },
+                          target: target.flatMap { GuidePlacement.onScreen($0, in: proxy.size) ? $0 : nil },
                           prefersAbove: prefersAbove,
                           in: proxy.size)
                 }
             }
         }
-    }
-
-    private func onScreen(_ target: CGRect, in bounds: CGSize) -> Bool {
-        target.maxY > 0 && target.minY < bounds.height && target.height > 0
     }
 
     /// Scrim, spotlight and bubble.
@@ -503,23 +499,19 @@ struct TourLayer<Content: View>: View {
                         target: CGRect,
                         prefersAbove: Bool,
                         in bounds: CGSize) -> some View {
-        // Identical arithmetic to `CoachLayer.balloon`, and identical for a reason:
-        // that placement was worked out against real screens, including the two
-        // mistakes its comments record. See it for why room is judged by measurement
-        // rather than by which half of the screen the target sits in, and why this
-        // pins an edge instead of using `.position`.
-        let roomBelow = target.maxY + gap + roomNeeded <= bounds.height
-        let roomAbove = target.minY - gap - roomNeeded >= 0
-        let above = prefersAbove ? roomAbove || !roomBelow : !roomBelow
-        let width = min(300, bounds.width - margin * 2)
-        let left = min(max(target.midX - width / 2, margin),
-                       bounds.width - margin - width)
-        let notchX = min(max(target.midX - left, 20), width - 20)
+        // The placement itself is `GuidePlacement`, shared with the coach. It was
+        // written out here as well, character for character, under a comment saying
+        // it matched — which is not a mechanism.
+        let placed = GuidePlacement.place(target: target, in: bounds,
+                                          prefersAbove: prefersAbove,
+                                          gap: gap, margin: margin,
+                                          roomNeeded: roomNeeded,
+                                          widthCap: 300, notchInset: 20)
 
         // Only the final stop hands off, and only when there is a tab left to hand to.
         let handoff = tour.isLast ? tour.nextTab : nil
 
-        return ZStack(alignment: above ? .bottomLeading : .topLeading) {
+        return ZStack(alignment: placed.above ? .bottomLeading : .topLeading) {
             Color.clear.allowsHitTesting(false)
 
             TourBubble(
@@ -528,18 +520,15 @@ struct TourLayer<Content: View>: View {
                 total: tour.total,
                 actionTitle: handoff.map { String(localized: "Go to \($0.tabName)") }
                     ?? (tour.isLast ? String(localized: "Done") : String(localized: "Next")),
-                pointing: above ? .bottom : .top,
-                notchX: notchX,
+                pointing: placed.above ? .bottom : .top,
+                notchX: placed.notchX,
                 onNext: { Haptics.selection(); advance(to: handoff) },
                 onBack: { Haptics.selection(); tour.back() },
                 onSkip: { Haptics.undo(); tour.stop(restoring: true) },
                 onSkipAll: { tour.skipAll() }
             )
             .id(stop)
-            .frame(width: width, alignment: .leading)
-            .padding(.leading, left)
-            .padding(.top, above ? 0 : max(0, target.maxY + gap))
-            .padding(.bottom, above ? max(0, bounds.height - target.minY + gap) : 0)
+            .guidePlaced(placed, target: target, in: bounds, gap: gap)
         }
     }
 }

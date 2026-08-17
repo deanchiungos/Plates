@@ -45,7 +45,7 @@ struct SidecarFile {
     /// and says nothing. Also nil when the file exists and cannot be read — and that
     /// one is worth a line, because every caller's recovery is to behave as though
     /// the thing never happened.
-    func read<Value: Decodable>(_ type: Value.Type = Value.self) -> Value? {
+    func read<Value: Decodable>() -> Value? {
         guard let url else { return nil }
         guard let data = try? Data(contentsOf: url) else { return nil }
         do {

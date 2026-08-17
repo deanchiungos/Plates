@@ -56,7 +56,6 @@ final class CloudBackup {
 
     #if DEBUG
     private static var forcedState: State? {
-        let args = ProcessInfo.processInfo.arguments
         guard let named = LaunchFlags.value(after: "-backup") else { return nil }
         switch named {
         case "off":       return .off(nil)

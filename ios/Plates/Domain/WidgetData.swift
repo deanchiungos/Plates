@@ -44,8 +44,7 @@ struct WidgetData: Codable, Equatable {
     /// The rarest thing on it and what that was worth, which is the one number
     /// nobody else's home screen has.
     var bestCode: String?
-    var bestRarity: Int = 0
-    /// Whether `bestRarity` is worth painting. See the note where it is written.
+    /// Whether the best find is worth painting. See the note where it is written.
     var bestIsRemarkable: Bool = false
 
     /// The most recently finished trip, for the gap between drives.
@@ -162,7 +161,6 @@ struct WidgetData: Codable, Equatable {
             tripLastPlate: current?.allSightings.map(\.spottedAt).max(),
             foundCodes: seen.sorted(),
             bestCode: best?.0,
-            bestRarity: best?.1 ?? 0,
             // Resolved here, where `RarityTier` is in scope. The widget target
             // cannot import it and was inventing its own `>= 8` cut, which matches
             // no band — epic is 7...8 — so an 8 was painted remarkable on the home

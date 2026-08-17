@@ -22,13 +22,6 @@ protocol MapGeometry {
 extension USMap: MapGeometry {}
 extension CanadaMap: MapGeometry {}
 
-/// One interactive map: fills, rarity bands, callout chips for the regions too small
-/// to hit, pinch to zoom, drag to pan, double-tap to reset.
-///
-/// Every color decision is passed in rather than decided here — the screen owns what
-/// Found and Rarity mode mean, and two maps on the same screen must not be able to
-/// disagree about it. Zoom state, by contrast, lives *here*: each map is its own
-/// viewport, and pinching Canada should not drag the United States with it.
 /// Every region's rings as `Path`s, rebuilt only when the rect changes.
 ///
 /// A reference type held in `@State`, so reading and refilling it during `body` is
@@ -53,10 +46,16 @@ final class MapPathCache {
     }
 }
 
+/// One interactive map: fills, rarity bands, callout chips for the regions too small
+/// to hit, pinch to zoom, drag to pan, double-tap to reset.
+///
+/// Every color decision is passed in rather than decided here — the screen owns what
+/// Found and Rarity mode mean, and two maps on the same screen must not be able to
+/// disagree about it. Zoom state, by contrast, lives *here*: each map is its own
+/// viewport, and pinching Canada should not drag the United States with it.
 struct RegionMapView<G: MapGeometry>: View {
 
     @State private var pathCache = MapPathCache()
-
 
     /// Regions a few points across at phone size, effectively impossible to see or
     /// hit. Order them north to south so the leader lines stay roughly parallel and

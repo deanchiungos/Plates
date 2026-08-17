@@ -322,22 +322,17 @@ struct PlayerEditor: View {
             avatar = face
             Haptics.selection()
         } label: {
-            Circle()
-                .fill(Theme.playerColor(colorIndex))
-                .frame(width: 40, height: 40)
-                .overlay(
-                    Group {
-                        if let face {
-                            Text(face).font(.system(size: 20))
-                        } else {
-                            // The initials option previews itself, using whatever has
-                            // been typed so far.
-                            Text(initialsPreview)
-                                .font(Theme.PlateFont.glyph(15))
-                                .foregroundStyle(Theme.ink)
-                        }
-                    }
-                )
+            // Through `PlayerDot`, like the other seven. This one is the avatar
+            // *picker*, so drawing it by hand was the disagreement you could see
+            // without leaving the screen: it used 20pt for an emoji and 15pt for an
+            // initial where the component derives 22 and 24.8 at this diameter, so
+            // the face you chose came out bigger than the face you were shown.
+            // The initials option previews itself, using whatever has been typed so
+            // far.
+            PlayerDot(color: Theme.playerColor(colorIndex),
+                      text: face ?? initialsPreview,
+                      isEmoji: face != nil,
+                      size: 40)
                 .overlay(
                     Circle().strokeBorder(Theme.ink, lineWidth: picked ? 2.5 : 0)
                 )
