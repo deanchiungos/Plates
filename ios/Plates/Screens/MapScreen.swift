@@ -166,12 +166,16 @@ struct MapScreen: View {
                          rarity: rarity(sel.code))
         }
         // Last in the chain, so the scrim covers the maps and nothing else.
-        .tourLayer(.map, [
-            .mapMode: "Two ways to read the map. Found shows what you have collected. Rarity colors every state by how hard it is to spot from here.",
-            .mapRegion: "Tap any state or province to see its plate, how rare it is from where you are, and a fact or two about it.",
-            .mapLegend: "This is the key. Legendary and mythic are the ones worth shouting about when you see them."
-        ])
+        .tourLayer(.map, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .mapMode: "Two ways to read the map. Found shows what you have collected. Rarity colors every state by how hard it is to spot from here.",
+        .mapRegion: "Tap any state or province to see its plate, how rare it is from where you are, and a fact or two about it.",
+        .mapLegend: "This is the key. Legendary and mythic are the ones worth shouting about when you see them."
+    ]
 
     private struct Selection: Identifiable {
         let code: String

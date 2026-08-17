@@ -123,14 +123,14 @@ struct GameScreen: View {
     /// The banked half is applied even with no route to speak of — a book that has
     /// never had a location fix still knows what each plate was worth at the moment
     /// it was claimed, and that is the number the found tile's pip is colored by.
-    private var rarities: [String: Int] {
+    private func rarities(using index: PlateIndex) -> [String: Int] {
         guard let collection else { return [:] }
         // Was `?? [:]` with no route, which left every unbanked plate to fall through
         // to `Plate.points` at the tile — a scale that stops at 10, so nothing could
         // ever come out mythic. See `PlateRarity.table(on:)`.
         var table = PlateRarity.table(on: collection.route)
         for code in collection.seenCodes {
-            if let claimed = collection.claimedRarity(of: code) { table[code] = claimed }
+            if let claimed = index.banked(code) { table[code] = claimed }
         }
         return table
     }
@@ -811,6 +811,12 @@ struct GameScreen: View {
         // per tile was three linear scans each, so a full grid was O(plates x
         // sightings) and got slower the more you had spotted.
         let index = collection.plateIndex()
+        // Built for the whole grid off the same index, for the same reason the index
+        // itself is. This was a computed property read inside the tile builder, so the
+        // entire table was rebuilt once per tile — sixty-five times a grid — and each
+        // rebuild walked `seenCodes` calling `claimedRarity`, which filters every
+        // sighting the collection has. Through the index it is a dictionary hit.
+        let rarities = rarities(using: index)
         let unlimited = collection.scoringMode == .unlimited
         // What the "tap one" balloon points at. The first tile still to be found,
         // which on the grid this tip fires against is simply the first tile.

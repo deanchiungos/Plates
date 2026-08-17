@@ -77,12 +77,16 @@ struct SettingsScreen: View {
                              DevicePlayer.markProfileSet()
                          })
         }
-        .tourLayer(.settings, [
-            .settingsIdentity: "Who this phone plays as. In a party this is the name and the colored corner everyone else sees on the plates you call.",
-            .settingsBackup: "Whether your collection exists anywhere but this phone. A book is years of spotting, so this is the row worth looking at.",
-            .settingsReminders: "A quiet nudge if a trip goes untouched, so a drive you meant to finish does not sit open forever."
-        ])
+        .tourLayer(.settings, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .settingsIdentity: "Who this phone plays as. In a party this is the name and the colored corner everyone else sees on the plates you call.",
+        .settingsBackup: "Whether your collection exists anywhere but this phone. A book is years of spotting, so this is the row worth looking at.",
+        .settingsReminders: "A quiet nudge if a trip goes untouched, so a drive you meant to finish does not sit open forever."
+    ]
 
     // MARK: - Who this phone is
 

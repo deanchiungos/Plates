@@ -177,12 +177,16 @@ struct CollectionScreen: View {
                 onDelete: { pending = .delete(book); editingBook = nil }
             )
         }
-        .tourLayer(.books, [
-            .booksScope: "A book never ends. This says which one you are looking at, and Switch moves between your books and every plate you have ever logged.",
-            .booksShare: "Turns whatever is on screen into a poster you can send to anyone.",
-            .booksAlbum: "The album itself. Every slot you have filled keeps the date you filled it, so tapping one tells you where you were."
-        ])
+        .tourLayer(.books, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .booksScope: "A book never ends. This says which one you are looking at, and Switch moves between your books and every plate you have ever logged.",
+        .booksShare: "Turns whatever is on screen into a poster you can send to anyone.",
+        .booksAlbum: "The album itself. Every slot you have filled keeps the date you filled it, so tapping one tells you where you were."
+    ]
 
     private struct Pick: Identifiable {
         let code: String

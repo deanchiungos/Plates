@@ -40,6 +40,21 @@ enum ShareablePoster {
     /// out, so it is fetched here and handed in.
     static func image(for collection: any PlateCollection,
                       players: [Player]) async -> UIImage? {
+        await render(for: collection, players: players)?.image
+    }
+
+    /// The poster and the one number its caption also needs.
+    ///
+    /// Both public entry points went through the drawing separately, and `poster`
+    /// then rebuilt the plate index a second time purely to count states for the
+    /// sentence — a full pass over every sighting to re-derive a number the render
+    /// had already worked out. One pass, both answers.
+    private static func render(for collection: any PlateCollection,
+                               players: [Player]) async -> (image: UIImage, states: Int)? {
+        // Started before the work below rather than awaited after it. The snapshotter
+        // is a round trip to the map servers and everything here is arithmetic, so
+        // there is no reason for the arithmetic to wait its turn.
+        async let route = road(of: collection)
         let index = collection.plateIndex()
         let people = collection.participants(from: players,
                                              me: DevicePlayer.resolve(from: players))
@@ -49,18 +64,22 @@ enum ShareablePoster {
         // same test gates the chips on the tiles, so the standings and the marks that
         // let you check them appear and disappear together.
         let shared = people.count > 1
-        return image(
+        let states = Plate.states.count { seen.contains($0.code) }
+        guard let made = image(
             title: collection.name,
             subtitle: subtitle(for: collection),
-            statesFound: Plate.states.count { seen.contains($0.code) },
-            bestFind: rarestPlate(in: seen, scoredBy: collection.rarity(of:)),
+            statesFound: states,
+            // Through the index rather than `collection.rarity(of:)`, which filters
+            // every sighting per code — fifty codes against a season's driving.
+            bestFind: rarestPlate(in: seen) { collection.rarity(of: $0, using: index) },
             found: seen,
             standings: shared ? collection.standings(among: people) : [],
             claims: shared ? claims(from: index, over: seen) : [:],
             logged: collection.sightings?.count ?? 0,
             newHere: firsts(in: collection, over: seen),
-            route: await road(of: collection)
-        )
+            route: await route
+        ) else { return nil }
+        return (made, states)
     }
 
     /// How many of these plates this phone had never logged anywhere before.
@@ -81,10 +100,20 @@ enum ShareablePoster {
     /// closing line all stand down together rather than one of them printing a zero.
     private static func firsts(in collection: any PlateCollection,
                                over seen: Set<String>) -> (count: Int, label: String)? {
-        let all = (try? PlatesStore.context.fetch(FetchDescriptor<Sighting>())) ?? []
+        // Only the codes this poster is about. "First ever" for a plate is settled by
+        // that plate's own history and nothing else, so fetching a lifetime of every
+        // other state to answer a question about twelve of them was work with no
+        // bearing on the answer — and it is the poster's slowest step on the phone
+        // that has been playing longest, which is exactly the phone with the most to
+        // put on a poster.
+        let codes = Array(seen)
+        guard !codes.isEmpty else { return nil }
+        let mine = collection.name
+        let all = (try? PlatesStore.context.fetch(
+            FetchDescriptor<Sighting>(predicate: #Predicate { codes.contains($0.plateCode) })
+        )) ?? []
         guard !all.isEmpty else { return nil }
         let everything = PlateBook(sightings: all)
-        let mine = collection.name
         let count = seen.count { everything.entry(for: $0)?.firstIn == mine }
         guard count > 0 else { return nil }
         return (count, collection is Trip
@@ -107,12 +136,10 @@ enum ShareablePoster {
     /// three call sites to remember to pair up.
     static func poster(for collection: any PlateCollection,
                        players: [Player]) async -> PosterToShare? {
-        guard let image = await image(for: collection, players: players) else { return nil }
-        let index = collection.plateIndex()
+        guard let made = await render(for: collection, players: players) else { return nil }
         return PosterToShare(
-            image: image,
-            caption: ShareInvite.line(for: collection.name,
-                                      states: Plate.states.count { index.has($0.code) }))
+            image: made.image,
+            caption: ShareInvite.line(for: collection.name, states: made.states))
     }
 
     static func poster(allTime book: PlateBook) -> PosterToShare? {

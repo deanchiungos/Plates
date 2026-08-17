@@ -102,12 +102,16 @@ struct MoreScreen: View {
             #endif
         }
         // Last in the chain, so the scrim covers this screen and nothing else.
-        .tourLayer(.more, [
-            .moreParty: "Everyone in the car keeps their own phone. Start a Party here and your plates pool into one score.",
-            .moreTrail: "The Trail is the map of where you actually were when you spotted each plate.",
-            .moreHowTo: "That is the whole app. Everything you have just been shown lives in here, any time you want it again."
-        ])
+        .tourLayer(.more, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .moreParty: "Everyone in the car keeps their own phone. Start a Party here and your plates pool into one score.",
+        .moreTrail: "The Trail is the map of where you actually were when you spotted each plate.",
+        .moreHowTo: "That is the whole app. Everything you have just been shown lives in here, any time you want it again."
+    ]
 
     /// The wordmark, and the thing that stops the last card floating in space.
     ///

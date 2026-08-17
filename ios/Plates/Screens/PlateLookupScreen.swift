@@ -85,11 +85,15 @@ struct PlateLookupScreen: View {
             }
             #endif
         }
-        .tourLayer(.lookup, [
-            .lookupField: "For the one that went past too fast. Describe it in plain words: colors, a mountain, a bird, half a slogan.",
-            .lookupHints: "These are what is worth mentioning. You do not need all of them, and you do not need the state."
-        ])
+        .tourLayer(.lookup, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .lookupField: "For the one that went past too fast. Describe it in plain words: colors, a mountain, a bird, half a slogan.",
+        .lookupHints: "These are what is worth mentioning. You do not need all of them, and you do not need the state."
+    ]
 
     // MARK: - Field
 

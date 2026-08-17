@@ -198,6 +198,7 @@ final class CoachPresenter {
     func dismiss(_ tip: Coach.Tip) {
         guard showing == tip || pending == tip else { return }
         pending = nil
+        if announced == tip { announced = nil }
         withAnimation(.easeIn(duration: 0.22)) { showing = nil }
     }
 
@@ -209,16 +210,10 @@ final class CoachPresenter {
     func withdraw(_ tip: Coach.Tip) {
         if showing == tip { showing = nil }
         if pending == tip { pending = nil }
+        if announced == tip { announced = nil }
     }
 
-    /// Spent at the moment it appears, not when it is dismissed.
-    ///
-    /// The difference matters exactly once, and it is the case that would otherwise
-    /// look like a bug: kill the app with a balloon on screen — which is what force
-    /// quitting, or a crash, or iOS reclaiming memory in a car with the navigation
-    /// running all do — and a tip marked on dismissal was never marked at all, so it
-    /// returns on the next launch. Writing it here is what makes "shows at most once"
-    /// literally true rather than true-if-dismissed-politely.
+    /// Given its turn. Not yet spent — see `didDraw`.
     private func promote(_ tip: Coach.Tip) {
         guard pending == tip, showing == nil else { return }
         // A tour armed during the settle. Cancelled rather than spent, exactly as
@@ -226,8 +221,43 @@ final class CoachPresenter {
         // and its trigger gets another chance on a visit when nothing else is talking.
         guard !TourGuide.isRunning else { return pending = nil }
         pending = nil
-        Coach.markSeen(tip)
         withAnimation(.snappy(duration: 0.24)) { showing = tip }
+    }
+
+    /// The last tip actually put on the page. Guards the announcement below.
+    private var announced: Coach.Tip?
+
+    /// The balloon is on screen. Called by the layer, which is the only thing that
+    /// knows — and that is the whole reason this exists.
+    ///
+    /// Spent at the moment it appears, not when it is dismissed. The difference
+    /// matters exactly once, and it is the case that would otherwise look like a bug:
+    /// kill the app with a balloon on screen — which is what force quitting, or a
+    /// crash, or iOS reclaiming memory in a car with the navigation running all do —
+    /// and a tip marked on dismissal was never marked at all, so it returns on the
+    /// next launch. Marking on appearance is what makes "shows at most once"
+    /// literally true rather than true-if-dismissed-politely.
+    ///
+    /// But `promote` is not appearance, which is where this was written before.
+    /// Setting `showing` is a request to the layer, and the layer draws nothing
+    /// unless a view registered an anchor for the tip and that view is currently on
+    /// the page. Both fail routinely: a screen that requests a tip for a control it
+    /// only sometimes shows registers no anchor at all, and a target below the fold
+    /// is held back on purpose until it is scrolled to. Every one of those spent the
+    /// tip anyway — marked seen, never drawn, gone for good. The tip a first-time
+    /// player is least likely to have scrolled to is exactly the one they never get.
+    ///
+    /// Also the one honest place to speak. VoiceOver is told when the balloon is
+    /// really there, and told once: the layer drops the balloon whenever its target
+    /// scrolls off and rebuilds it on the way back, so an `onAppear` that announces
+    /// unconditionally reads the same sentence out on every pass of a list.
+    func didDraw(_ tip: Coach.Tip, saying words: LocalizedStringResource) {
+        Coach.markSeen(tip)
+        guard announced != tip else { return }
+        announced = tip
+        // Nothing moved focus, so without this a VoiceOver user is simply not told
+        // that the app said something.
+        AccessibilityNotification.Announcement(String(localized: words)).post()
     }
 
     private func after(_ delay: TimeInterval, _ work: @escaping () -> Void) {

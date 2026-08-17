@@ -29,7 +29,34 @@ extension CanadaMap: MapGeometry {}
 /// Found and Rarity mode mean, and two maps on the same screen must not be able to
 /// disagree about it. Zoom state, by contrast, lives *here*: each map is its own
 /// viewport, and pinching Canada should not drag the United States with it.
+/// Every region's rings as `Path`s, rebuilt only when the rect changes.
+///
+/// A reference type held in `@State`, so reading and refilling it during `body` is
+/// not a state change and cannot drive another render. See the note where it is
+/// used: the shapes depend on the rect alone, and the rect changes on rotation and
+/// on the callout strip appearing — not thirty times a second.
+@MainActor
+final class MapPathCache {
+    private var rect: CGRect = .null
+    private var byCode: [String: [Path]] = [:]
+
+    func rings<G: MapGeometry>(for rect: CGRect,
+                               of geometry: G.Type,
+                               build: ([CGPoint]) -> Path) -> [String: [Path]] {
+        if rect != self.rect {
+            self.rect = rect
+            byCode = G.codes.reduce(into: [:]) { out, code in
+                out[code] = (G.outlines[code] ?? []).filter { $0.count > 2 }.map(build)
+            }
+        }
+        return byCode
+    }
+}
+
 struct RegionMapView<G: MapGeometry>: View {
+
+    @State private var pathCache = MapPathCache()
+
 
     /// Regions a few points across at phone size, effectively impossible to see or
     /// hit. Order them north to south so the leader lines stay roughly parallel and
@@ -109,6 +136,28 @@ struct RegionMapView<G: MapGeometry>: View {
             let rect = mapRect(in: geo.size)
             let shift = liveOffset(in: rect)
 
+            // Every region's rings, built once per rect rather than per frame.
+            //
+            // The outlines are 65 regions, 103 rings, 3,125 points, and the Canvas
+            // was rebuilding all of them from raw coordinates on every tick — then
+            // `drawSpotlights` rebuilt the lit ones again. At 30fps that is roughly
+            // 93,750 point transforms and 3,000 path allocations a second for shapes
+            // that cannot move: `path(_:in:)` depends only on `rect`, and the pan and
+            // zoom are applied by the layer transform below, not by the geometry.
+            //
+            // Held in a reference type so re-reading it is not a state change. `rect`
+            // changes on rotation and on the callout strip appearing, and that is the
+            // whole of when this has to be rebuilt.
+            let rings = pathCache.rings(for: rect, of: G.self) { ring in
+                self.path(ring, in: rect)
+            }
+
+            // Resolved once per render, which is what the comment on `lit` always
+            // claimed and what the `moving` line below was doing — while
+            // `drawSpotlights` re-read the property inside the draw closure and paid
+            // for all 52 codes again every frame, each one rebuilding `seenCodes` as
+            // a fresh Set over every sighting in the collection.
+            let lit = self.lit
             // Paused, not absent, when nothing is lit — which is most of the time. A
             // fresh trip has collected nothing, so there is nothing to animate and
             // the map costs exactly what it did before this feature existed.
@@ -137,8 +186,7 @@ struct RegionMapView<G: MapGeometry>: View {
                         // band sized for Texas is wider than several of Nunavut's
                         // islands, while Nunavut as a whole is enormous — so capping
                         // per region would still leave the Arctic a bar of solid gold.
-                        for ring in G.outlines[code] ?? [] where ring.count > 2 {
-                            let path = self.path(ring, in: rect)
+                        for path in rings[code] ?? [] {
 
                             // Each region carries its band *inside* its own outline
                             // rather than as a stroke on the shared boundary. A stroke
@@ -167,7 +215,8 @@ struct RegionMapView<G: MapGeometry>: View {
                     // legendary region still reads as selected rather than as
                     // whatever the light happens to be doing.
                     if moving {
-                        drawSpotlights(&layer, size: size, rect: rect, at: time)
+                        drawSpotlights(&layer, lit: lit, rings: rings,
+                                       size: size, at: time)
                     }
 
                     // Selection is drawn last, and as a *centred* stroke on the
@@ -181,9 +230,7 @@ struct RegionMapView<G: MapGeometry>: View {
                     // width whatever the shape is, and overdrawing the neighbour by
                     // half a line is not merely harmless here — it is what makes the
                     // selected region read as being on top.
-                    if let highlighted, let rings = G.outlines[highlighted] {
-                        let paths = rings.filter { $0.count > 2 }
-                            .map { self.path($0, in: rect) }
+                    if let highlighted, let paths = rings[highlighted] {
 
                         // Three passes: blurred halo, the region's own fill painted
                         // back over the inside of it, then the crisp line.
@@ -637,7 +684,9 @@ struct RegionMapView<G: MapGeometry>: View {
     /// the same reason the bands do — a halo that grew with the zoom would drown the
     /// small regions at exactly the magnification you went in to see them at.
     fileprivate func drawSpotlights(_ layer: inout GraphicsContext,
-                                    size: CGSize, rect: CGRect, at time: Double) {
+                                    lit: [(code: String, tier: RarityTier)],
+                                    rings: [String: [Path]],
+                                    size: CGSize, at time: Double) {
         for (code, tier) in lit {
             let color = tier.color
             // Each region reads the same clock at its own offset — see `phase`. The
@@ -656,8 +705,7 @@ struct RegionMapView<G: MapGeometry>: View {
             // blob with no land visible inside it. Everything below is a multiple of
             // `w`, so a jagged ring lights itself as finely as it bands itself.
             let asked = bandWidth(code, size) * bandScale
-            let paths = (G.outlines[code] ?? []).filter { $0.count > 2 }
-                                               .map { self.path($0, in: rect) }
+            let paths = rings[code] ?? []
             let widths = paths.map { band(asked, for: $0, in: size, at: scale) }
             // Whether any part of this region was big enough for `band` to allow.
             // See `minimumGlow` for what happens when none of it was.

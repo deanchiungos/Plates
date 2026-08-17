@@ -68,11 +68,6 @@ struct CoachMark: View {
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(.isButton)
         .accessibilityHint("Dismisses this tip")
-        .onAppear {
-            // Read out on arrival. Nothing moved focus, so without this a VoiceOver
-            // user is simply not told that the app said something.
-            AccessibilityNotification.Announcement(String(localized: text)).post()
-        }
         .transition(reduceMotion
                     ? .opacity
                     : .scale(scale: 0.92).combined(with: .opacity))
@@ -163,6 +158,16 @@ extension View {
 
     /// Hosts the balloons for one screen. Goes last in a screen's modifier chain, so
     /// the mark draws above that screen's own content and below the tab bar.
+    ///
+    /// Pass `copy` as a stored property, not as a literal written out here. Every screen used to spell its copy out inline here, which reads well and
+    /// costs more than it looks: a dictionary literal in a modifier chain is solved
+    /// as part of the chain, so each entry is another term in the same constraint
+    /// system as every modifier around it. `GameScreen` is where that stopped being
+    /// theoretical — a third entry was the change that put its `body` past what the
+    /// type checker will attempt, and the fix was moving the words to a `static let`
+    /// in the same type. The words stay beside the screen they describe, which was
+    /// always the reason not to file them in a table somewhere else; they just stop
+    /// being part of an expression that has better things to solve.
     func coachLayer(_ copy: [Coach.Tip: LocalizedStringResource]) -> some View {
         CoachLayer(copy: copy) { self }
     }
@@ -299,6 +304,7 @@ struct CoachLayer<Content: View>: View {
                 Haptics.selection()
                 coach.dismiss(tip)
             }
+            .onAppear { coach.didDraw(tip, saying: words) }
             .frame(width: width, alignment: .leading)
             .padding(.leading, left)
             .padding(.top, above ? 0 : max(0, target.maxY + gap))

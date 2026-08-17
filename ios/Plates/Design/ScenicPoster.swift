@@ -600,13 +600,26 @@ struct ScenicPoster: View {
                     // and the poster stops being a scoreboard and starts being a
                     // record of who caught what.
                     let claim = claims[plate.code]
+                    let others = (claim?.all.count ?? 0) > 1 ? claim?.all ?? [] : []
+                    // Exactly the test `PlateTile` uses to draw its chip, which is the
+                    // point: this asks whether the corner is taken, and only the tile
+                    // knows. Asking `claim == nil` instead — which is what stood here —
+                    // is a different question with the same answer most of the time.
+                    // A claim with no spotter is an ordinary thing: every sighting
+                    // logged before anybody made a player has one, and so does every
+                    // plate pulled in from a shared book whose owner is not on this
+                    // phone. Those tiles drew no chip, because there is nobody to draw,
+                    // *and* no tick, because there was a claim. A found plate with
+                    // nothing on it at all, on the one artifact whose whole job is
+                    // showing what was found.
+                    let cornerTaken = others.count > 1 || claim?.spotter != nil
                     PlateTile(
                         plate: plate,
                         isFound: true,
                         spotterColor: claim?.spotter.map { Theme.playerColor($0.colorIndex) },
                         spotterInitial: claim?.spotter?.smallFace,
                         spotterIsEmoji: claim?.spotter?.usesEmoji ?? false,
-                        claimants: (claim?.all.count ?? 0) > 1 ? claim?.all ?? [] : [])
+                        claimants: others)
                     // A tick in the corner, but only where the corner is free.
                     //
                     // On a shared collection that corner already carries the spotter's
@@ -615,7 +628,7 @@ struct ScenicPoster: View {
                     // there are no chips at all, and the grid was relying entirely on
                     // colored artwork against grey slots to show what had been caught.
                     .overlay(alignment: .topLeading) {
-                        if claim == nil { foundTick.padding(3) }
+                        if !cornerTaken { foundTick.padding(3) }
                     }
                 } else {
                     RoundedRectangle(cornerRadius: Theme.tileRadius, style: .continuous)

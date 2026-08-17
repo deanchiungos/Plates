@@ -144,15 +144,23 @@ struct TrailScreen: View {
         // Last in the chain, so the balloon draws over the map and under the tab
         // bar. Copy lives here rather than in a table elsewhere: whoever changes
         // what the tip says is the person looking at the screen it appears on.
-        .coachLayer([
-            .trailScope: "This is one drive. Tap here to see another, or everything ever."
-        ])
-        .tourLayer(.trail, [
-            .trailScopeBar: "The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever.",
-            .trailMap: "One pin for every plate, dropped where you were standing when you called it. Plates spotted in the same place stack into a deck you can open.",
-            .trailSummary: "How far the drive ran, and how much of it you were spotting on."
-        ])
+        .coachLayer(Self.coachCopy)
+        .tourLayer(.trail, Self.tourCopy)
     }
+
+    /// What this screen's tips say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let coachCopy: [Coach.Tip: LocalizedStringResource] = [
+        .trailScope: "This is one drive. Tap here to see another, or everything ever."
+    ]
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .trailScopeBar: "The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever.",
+        .trailMap: "One pin for every plate, dropped where you were standing when you called it. Plates spotted in the same place stack into a deck you can open.",
+        .trailSummary: "How far the drive ran, and how much of it you were spotting on."
+    ]
 
     /// Which stops this screen can host.
     ///

@@ -160,17 +160,25 @@ struct TripsScreen: View {
         // Last in the chain, so the balloon draws over the list and under the tab
         // bar. Copy lives here rather than in a table elsewhere: whoever changes
         // what a tip says is the person looking at the screen it appears on.
-        .coachLayer([
-            .swipeTrip: "Swipe a trip left to pin it, or to mark it done.",
-            .doneTrip: "Finished trips file themselves here. Open one for its story, or to add its plates to a book.",
-            .listLength: "That's a lot of trips going at once. Mark the old ones done and they file themselves away."
-        ])
-        .tourLayer(.trips, [
-            .tripsRow: "Every drive you have going. Tap one to play it, or swipe it left to pin it or mark it done.",
-            .tripsNew: "A trip is one journey: it has a route, and it ends. The route is what decides how rare each plate is, so a Florida plate is worth more in Oregon.",
-            .tripsFinished: "Finished trips file themselves down here. Open one for its story, or to add everything it collected into a book."
-        ])
+        .coachLayer(Self.coachCopy)
+        .tourLayer(.trips, Self.tourCopy)
     }
+
+    /// What this screen's tips say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let coachCopy: [Coach.Tip: LocalizedStringResource] = [
+        .swipeTrip: "Swipe a trip left to pin it, or to mark it done.",
+        .doneTrip: "Finished trips file themselves here. Open one for its story, or to add its plates to a book.",
+        .listLength: "That's a lot of trips going at once. Mark the old ones done and they file themselves away."
+    ]
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
+        .tripsRow: "Every drive you have going. Tap one to play it, or swipe it left to pin it or mark it done.",
+        .tripsNew: "A trip is one journey: it has a route, and it ends. The route is what decides how rare each plate is, so a Florida plate is worth more in Oregon.",
+        .tripsFinished: "Finished trips file themselves down here. Open one for its story, or to add everything it collected into a book."
+    ]
 
     /// Which stops this screen can actually host right now.
     ///
@@ -1015,8 +1023,10 @@ struct TripEditor: View {
     }
 
     /// Spotter chips only mean something when there was more than one spotter.
-    private var showSpotters: Bool {
-        Set(log.compactMap { $0.player?.id }).count > 1
+    ///
+    /// Takes the already-sorted rows rather than re-reading `log`, which sorts.
+    private func showSpotters(in entries: [Sighting]) -> Bool {
+        Set(entries.compactMap { $0.player?.id }).count > 1
     }
 
     /// Whether any sighting knows where it happened — without one the Trail would
@@ -1317,10 +1327,18 @@ struct TripEditor: View {
                 .tracking(1.2)
                 .foregroundStyle(Theme.inkMuted)
 
+            // Sorted once. `log` is a computed property that sorts every sighting
+            // the trip has, and it was being read again inside its own `ForEach` for
+            // the divider test and a third time per row through `showSpotters` — so
+            // a 300-plate drive did roughly 600 full sorts per render of this sheet,
+            // on the main thread, and the sheet visibly stalled on opening.
+            let entries = log
+            let lastID = entries.last?.id
+            let spotters = showSpotters(in: entries)
             LazyVStack(spacing: 0) {
-                ForEach(log) { sighting in
-                    logRow(sighting)
-                    if sighting.id != log.last?.id {
+                ForEach(entries) { sighting in
+                    logRow(sighting, showingSpotter: spotters)
+                    if sighting.id != lastID {
                         Divider().padding(.leading, 14)
                     }
                 }
@@ -1334,7 +1352,7 @@ struct TripEditor: View {
         }
     }
 
-    private func logRow(_ sighting: Sighting) -> some View {
+    private func logRow(_ sighting: Sighting, showingSpotter: Bool) -> some View {
         let banked = sighting.rarityWhenSpotted
             ?? trip.map { $0.rarity(of: sighting.plateCode) } ?? 1
         return HStack(spacing: 10) {
@@ -1357,7 +1375,7 @@ struct TripEditor: View {
 
             Spacer(minLength: 8)
 
-            if showSpotters, let player = sighting.player {
+            if showingSpotter, let player = sighting.player {
                 Circle()
                     .fill(Theme.playerColor(player.colorIndex))
                     .frame(width: 17, height: 17)

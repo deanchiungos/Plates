@@ -77,6 +77,10 @@ struct PlateIndex {
         /// One name under the old rules; several once a party lets more than one
         /// person bank the same state.
         var claimants: [Player] = []
+        /// What the *first* claim was worth, when a value was recorded. The same
+        /// answer `claimedRarity(of:)` gives, taken from the pass this already makes
+        /// rather than from a fresh filter of every sighting per code.
+        var banked: Int?
     }
 
     private let entries: [String: Entry]
@@ -105,6 +109,10 @@ struct PlateIndex {
             if let claimant = s.player, !e.claimants.contains(where: { $0.id == claimant.id }) {
                 e.claimants.append(claimant)
             }
+            // First one seen, and the loop is in `SightingOrder` — so this is the
+            // earliest claim, which is the one that sets the value. Later sightings
+            // do not revalue it; see `claimedRarity(of:)`.
+            if e.count == 1 { e.banked = s.rarityWhenSpotted }
             built[s.plateCode] = e
         }
         entries = built
@@ -114,6 +122,7 @@ struct PlateIndex {
     func count(_ code: String) -> Int { entries[code]?.count ?? 0 }
     func spotter(_ code: String) -> Player? { entries[code]?.spotter }
     func claimants(_ code: String) -> [Player] { entries[code]?.claimants ?? [] }
+    func banked(_ code: String) -> Int? { entries[code]?.banked }
 }
 
 extension PlateCollection {
@@ -260,6 +269,18 @@ extension PlateCollection {
 
     @MainActor
     func rarity(of plate: Plate) -> Int { rarity(of: plate.code) }
+
+    /// The same answer as `rarity(of:)`, for callers that are asking about more than
+    /// one plate and already hold an index.
+    ///
+    /// `claimedRarity` filters the whole sightings array, so asking it per code is
+    /// the quadratic shape `PlateIndex` was built to end — and the two places that
+    /// wanted a value for every plate at once, the grid's pips and the poster's best
+    /// find, were both doing exactly that.
+    @MainActor
+    func rarity(of code: String, using index: PlateIndex) -> Int {
+        index.banked(code) ?? PlateRarity.rarity(code, on: route)
+    }
 
     /// The people actually on this collection.
     ///
