@@ -28,7 +28,7 @@ final class PartySession {
     /// `nil` means "no party", which is the state the app is in essentially always.
     /// Every hook into the rest of the app is a one-line optional call on this, so
     /// the whole feature costs nothing when it is not running.
-    static private(set) var shared: PartySession?
+    static var shared: PartySession? { PartyHost.shared.session }
 
     enum Role { case host, guest }
 
@@ -126,7 +126,7 @@ final class PartySession {
     /// sighting of the host into a silent re-invite, the party could never go back
     /// into `nearby`, and one lost/found cycle emptied the list for good — leaving a
     /// "looking for parties" spinner over a party sitting two feet away.
-    private var hasJoined = false
+    private(set) var hasJoined = false
 
     /// The party we have asked to join and are still waiting on.
     ///
@@ -272,7 +272,7 @@ final class PartySession {
         party.rules = PartyLedger.shared.rules(for: trip.id)
         PartyLedger.shared.note(trip: trip.id, role: "host", rules: party.rules, code: code)
         party.startAdvertising(tripName: trip.name)
-        shared = party
+        PartyHost.shared.session = party
         return party
     }
 
@@ -286,7 +286,7 @@ final class PartySession {
         let party = PartySession(role: .guest, tripID: UUID(), code: "",
                                  name: name, context: context)
         party.startBrowsing()
-        shared = party
+        PartyHost.shared.session = party
         return party
     }
 
@@ -567,7 +567,7 @@ final class PartySession {
         // it cannot tell a deliberate exit from a dropout, so it spends the rest of
         // the drive politely trying to reconnect to somebody who has gone home.
         stop(gracePeriod: 0.4)
-        if PartySession.shared === self { PartySession.shared = nil }
+        if PartySession.shared === self { PartyHost.shared.session = nil }
     }
 
     private func stop(gracePeriod: TimeInterval = 0) {

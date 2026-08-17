@@ -24,7 +24,10 @@ struct PartyScreen: View {
     /// read them, but swapping which object is current is not a change SwiftUI can
     /// see. This screen is the only place a party starts or ends, so holding it here
     /// is honest as well as convenient.
-    @State private var party: PartySession? = PartySession.shared
+    /// Read, not mirrored. See `PartyHost` for what the `@State` copy that used to
+    /// live here cost: a party ended from the Trips tab left this screen drawing a
+    /// live host card for a session that was over.
+    private var party: PartySession? { PartySession.shared }
     @State private var joining: PartySession.Nearby?
     @State private var typedCode = ""
 
@@ -91,9 +94,9 @@ struct PartyScreen: View {
             let args = ProcessInfo.processInfo.arguments
             guard party == nil else { return }
             if args.contains("-hostParty"), let trip = currentTrip {
-                party = PartySession.host(trip: trip, as: myName, context: context)
+                _ = PartySession.host(trip: trip, as: myName, context: context)
             } else if args.contains("-joinParty") {
-                party = PartySession.browse(as: myName, context: context)
+                _ = PartySession.browse(as: myName, context: context)
             }
         }
         // With `-partyCode`, join the first party found rather than waiting for a tap.
@@ -251,9 +254,9 @@ struct PartyScreen: View {
             // this directly, and a rule about whose trip it is should not depend on
             // which door you came through.
             guard let trip = currentTrip, cannotHost == nil else { return }
-            party = PartySession.host(trip: trip, as: myName, context: context)
+            _ = PartySession.host(trip: trip, as: myName, context: context)
         case .join:
-            party = PartySession.browse(as: myName, context: context)
+            _ = PartySession.browse(as: myName, context: context)
         }
     }
 
@@ -272,8 +275,9 @@ struct PartyScreen: View {
     /// immediately and the question is about the trip, not the party.
     private func askOnLeaving(_ party: PartySession) {
         let trip = partyTrip(party)
+        // `leave()` clears the shared session itself, which is the whole point of
+        // it being shared: nothing here has a private copy to keep in step.
         party.leave()
-        self.party = nil
         Haptics.selection()
         guard let trip, !trip.isArchived else { return }
         askAboutCopy(of: trip)
@@ -417,7 +421,12 @@ struct PartyScreen: View {
                 let trip = partyTrip(party)
                 action("Done", filled: true) {
                     Haptics.selection()
-                    self.party = nil
+                    // `leave()`, not a local nil. Clearing the screen's own copy left
+                    // `PartySession.shared` holding the ended session forever — a
+                    // static outlives every view — so coming back to this screen
+                    // re-adopted it, showed "The host ended the party" again, and
+                    // re-asked what to do with a trip that had already been finished.
+                    party.leave()
                     if let trip, !trip.isArchived { askAboutCopy(of: trip) }
                 }
             } else if party.isConnected {
@@ -488,13 +497,17 @@ struct PartyScreen: View {
             }
 
             if !party.hasEnded {
-                action(party.isConnected ? "Leave party" : "Stop looking",
-                       filled: false, destructive: party.isConnected) {
-                    // Only a party that was actually joined has a copy worth deciding
-                    // about. "Stop looking" is abandoning a search, not leaving a car.
-                    if party.isConnected { askOnLeaving(party) } else {
+                // `hasJoined`, not `isConnected`. A guest whose host has locked their
+                // phone is disconnected and still very much in the party — that is
+                // the case the whole reconnect path exists for — and asking
+                // `isConnected` relabelled the button "Stop looking" and skipped the
+                // question about their copy of the trip. So an hour of collected
+                // plates was left on a live trip with a scoreboard for a car that had
+                // emptied, which is the report `askAboutCopy` was added to answer.
+                action(party.hasJoined ? "Leave party" : "Stop looking",
+                       filled: false, destructive: party.hasJoined) {
+                    if party.hasJoined { askOnLeaving(party) } else {
                         party.leave()
-                        self.party = nil
                     }
                 }
             }
@@ -576,7 +589,12 @@ struct PartyScreen: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(14)
             } else {
-                ForEach(Array(party.members.enumerated()), id: \.offset) { index, member in
+                // Keyed on the member, not on where they are sitting in the array.
+                // `members` mutates as peers come and go, so an offset key told
+                // SwiftUI that row 1 was the same row it had been: dropping the
+                // middle peer renamed that row to the person below them and removed
+                // the last one instead. The sibling list above already does this.
+                ForEach(Array(party.members.enumerated()), id: \.element.id) { index, member in
                     if index > 0 { SettingsDivider() }
                     HStack(spacing: 10) {
                         Image(systemName: "iphone")
@@ -661,7 +679,20 @@ struct PartyScreen: View {
     /// had the oldest `joinedAt` of everyone merged in — quite possibly a person
     /// sitting in a different car. So you advertised under their name, and the host
     /// list showed a party hosted by somebody who was not there.
+    /// Fetched, not read off this screen's `@Query`.
+    ///
+    /// The identity sheet's completion runs `enter` synchronously inside
+    /// `PlayerEditor.save()` — insert, save, `onSaved`, `adopt`, `onDone` — all in
+    /// one call stack with no SwiftUI update in between, so `players` here is still
+    /// the array from before the insert. `resolve` then found neither the id just
+    /// written nor any row at all and returned nil, so a first-ever party advertised
+    /// itself as "Me". Worse on a restored install: the fallback is earliest-joined,
+    /// so it would have hosted under the name of somebody in a different car. The
+    /// display name is frozen into the `MCPeerID` for the life of the process and
+    /// persisted by `PartyLedger`, so there is no second chance at it.
     private var myName: String {
-        DevicePlayer.resolve(from: players)?.name ?? "Me"
+        DevicePlayer.current(in: context)?.name
+            ?? DevicePlayer.resolve(from: players)?.name
+            ?? String(localized: "Me")
     }
 }

@@ -87,9 +87,13 @@ enum PartyMergeCheck {
         // on the way out.
         let suite = "com.eggeppel.plates.mergecheck"
         AppDefaults.store = UserDefaults(suiteName: suite) ?? .standard
+        // And the widget's file, which is not a preference and so is not covered by
+        // the suite above. See `WidgetData.isSuspended`.
+        WidgetData.isSuspended = true
         defer {
             AppDefaults.store.removePersistentDomain(forName: suite)
             AppDefaults.store = .standard
+            WidgetData.isSuspended = false
         }
 
         for (name, body) in cases {

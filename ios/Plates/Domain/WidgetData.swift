@@ -65,8 +65,24 @@ struct WidgetData: Codable, Equatable {
     /// Rebuilt from the store rather than accumulated, for the same reason every
     /// other derived number in this app is: `Sighting` is the only stored fact, and
     /// a counter kept alongside it is a second source of truth waiting to disagree.
+    #if DEBUG
+    /// Set while a debug harness is running against a throwaway store.
+    ///
+    /// The sidecar lives at one fixed path in the App Group and takes no store
+    /// parameter, so a `write` driven by fixture data overwrites the real home
+    /// screen and reloads the widget to show it. `PartyMergeCheck` has always called
+    /// `TripClosing`, which rebuilds this — and it now also runs `PartyMerge`, which
+    /// does too — so on a real phone the check would replace somebody's widget with
+    /// the fixture's trip. `AppDefaults` solved the same problem for preferences by
+    /// swapping the store; this file has no equivalent, so the harness suspends it.
+    nonisolated(unsafe) static var isSuspended = false
+    #endif
+
     @MainActor
     static func write(from context: ModelContext) {
+        #if DEBUG
+        if isSuspended { return }
+        #endif
         let trips = (try? context.fetch(FetchDescriptor<Trip>())) ?? []
         let books = (try? context.fetch(FetchDescriptor<Book>())) ?? []
         let sightings = (try? context.fetch(FetchDescriptor<Sighting>())) ?? []

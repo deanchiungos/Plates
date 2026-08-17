@@ -1036,7 +1036,14 @@ struct TripEditor: View {
     /// editable again, because at that point it is just a trip you have a copy of.
     private var scoringIsHostOwned: Bool {
         guard let trip, let party = PartySession.shared else { return false }
-        return party.role == .guest && party.isConnected && party.tripID == trip.id
+        // Keyed on the party still running, not on this moment's connection — the
+        // same rule and the same reason as `PartySession.rules(for:)`, which spells
+        // it out: a phone that drops out for a minute must not briefly get
+        // permission to change the game. The host's phone locking reopened the
+        // scoring picker mid-sheet, and Save then rewrote `scoringMode` on the
+        // guest's copy, where `broadcastTrip` refuses to send it — so every plate on
+        // that phone was quietly worth something different from everyone else's.
+        return party.role == .guest && !party.hasEnded && party.tripID == trip.id
     }
 
     /// Says plainly what pinning a place buys you, because the difference between
