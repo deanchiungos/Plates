@@ -601,18 +601,18 @@ struct ScenicPoster: View {
                     // record of who caught what.
                     let claim = claims[plate.code]
                     let others = (claim?.all.count ?? 0) > 1 ? claim?.all ?? [] : []
-                    // Exactly the test `PlateTile` uses to draw its chip, which is the
-                    // point: this asks whether the corner is taken, and only the tile
-                    // knows. Asking `claim == nil` instead — which is what stood here —
-                    // is a different question with the same answer most of the time.
-                    // A claim with no spotter is an ordinary thing: every sighting
+                    // Asked of the tile, because only the tile knows. Asking
+                    // `claim == nil` instead — which is what stood here — is a
+                    // different question with the same answer most of the time. A
+                    // claim with no spotter is an ordinary thing: every sighting
                     // logged before anybody made a player has one, and so does every
                     // plate pulled in from a shared book whose owner is not on this
-                    // phone. Those tiles drew no chip, because there is nobody to draw,
-                    // *and* no tick, because there was a claim. A found plate with
-                    // nothing on it at all, on the one artifact whose whole job is
-                    // showing what was found.
-                    let cornerTaken = !others.isEmpty || claim?.spotter != nil
+                    // phone. Those tiles drew no chip, because there is nobody to
+                    // draw, *and* no tick, because there was a claim. A found plate
+                    // with nothing on it at all, on the one artifact whose whole job
+                    // is showing what was found.
+                    let cornerTaken = PlateTile.showsCornerChip(spotter: claim?.spotter,
+                                                                claimants: others)
                     PlateTile(
                         plate: plate,
                         isFound: true,

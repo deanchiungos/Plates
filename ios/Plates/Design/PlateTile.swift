@@ -45,6 +45,16 @@ struct PlateTile: View {
         return PlateArtwork.ink(plate.code) ?? style.ink
     }
 
+    /// Whether the top-left corner will carry a chip.
+    ///
+    /// Exported because the poster asks the same question about the same tile, to
+    /// decide whether it has room for its found-tick — and it was asking a different
+    /// question that happened to give the same answer most of the time. The rule
+    /// lives here, where the chip is drawn, so a change to one is a change to both.
+    static func showsCornerChip(spotter: Player?, claimants: [Player]) -> Bool {
+        claimants.count > 1 || spotter != nil
+    }
+
     var body: some View {
         ZStack {
             if let style {
@@ -114,15 +124,15 @@ struct PlateTile: View {
             // shared-claims party turns "who got this" into "who all got this", and
             // three chips in a row would not fit a tile this size anyway. One
             // claimant keeps exactly the chip it always had.
-            if isFound, claimants.count > 1 {
+            if isFound, Self.showsCornerChip(spotter: spotter, claimants: claimants) {
                 pinned(.topLeading, inset: 4) {
-                    AvatarStack(players: claimants, limit: 3, size: 13,
-                                background: .white.opacity(0.9))
-                }
-            } else if isFound, let spotter {
-                pinned(.topLeading, inset: 4) {
-                    PlayerDot(spotter, showing: .small, size: 12,
-                              ring: .white.opacity(0.85))
+                    if claimants.count > 1 {
+                        AvatarStack(players: claimants, limit: 3, size: 13,
+                                    background: .white.opacity(0.9))
+                    } else if let spotter {
+                        PlayerDot(spotter, showing: .small, size: 12,
+                                  ring: .white.opacity(0.85))
+                    }
                 }
             }
 

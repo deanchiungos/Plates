@@ -87,28 +87,14 @@ struct PosterMapStrip: View {
         )
     }
 
-    /// White casing under the color, the trick every map app uses so a line stays
-    /// readable where it crosses a motorway or a coast.
-    @ViewBuilder
+    /// Thicker than the editor's, because this is printed rather than glanced at:
+    /// the poster is shared at 1400px and looked at properly, so the road can carry
+    /// more weight without crowding a strip that is mostly map.
     private var road: some View {
-        if route.routePoints.count > 1 {
-            let path = Path { p in
-                p.move(to: route.routePoints[0])
-                for point in route.routePoints.dropFirst() { p.addLine(to: point) }
-            }
-            path.stroke(.white.opacity(0.9),
-                        style: StrokeStyle(lineWidth: 7, lineCap: .round, lineJoin: .round))
-            path.stroke(Theme.route,
-                        style: StrokeStyle(lineWidth: 3.6, lineCap: .round, lineJoin: .round))
-        } else {
-            // Dashed, because a solid line would assert a road that does not exist.
-            Path { p in
-                p.move(to: route.startPoint)
-                p.addLine(to: route.endPoint)
-            }
-            .stroke(Theme.route.opacity(0.6),
-                    style: StrokeStyle(lineWidth: 3, lineCap: .round, dash: [7, 7]))
-        }
+        MapRoadLine(points: route.routePoints,
+                    start: route.startPoint,
+                    end: route.endPoint,
+                    width: 3.6, dashWidth: 3, dash: [7, 7])
     }
 
     /// A marker shaped like a plate, because on this poster everything else is.

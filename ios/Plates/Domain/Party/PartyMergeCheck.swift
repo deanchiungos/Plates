@@ -1383,11 +1383,7 @@ enum PartyMergeCheck {
     @MainActor
     private static func snapshotEnvelope(of fixture: Fixture,
                                          in context: ModelContext) throws -> PartyEnvelope {
-        let id = fixture.tripID
-        guard let trip = try context.fetch(
-            FetchDescriptor<Trip>(predicate: #Predicate { $0.id == id })).first else {
-            throw CheckError.missingTrip
-        }
+        let trip = try tripOf(context, fixture.tripID)
         let players = (try? context.fetch(FetchDescriptor<Player>())) ?? []
         return PartyEnvelope(.hello(PartyMerge.snapshot(of: trip,
                                                         players: players,

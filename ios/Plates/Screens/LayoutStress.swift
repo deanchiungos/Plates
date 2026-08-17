@@ -64,7 +64,10 @@ enum LayoutStress {
                 // A fresh store per sheet: the cases insert dozens of throwaway
                 // players, and a sheet that accidentally saw the previous sheet's
                 // would be testing something nobody wrote.
-                let context = try makeStore()
+                // `PlatesStore.scratchContext` directly: the schema lives with the
+                // store, so this harness cannot end up rendering against a different
+                // one than the app ships.
+                let context = try PlatesStore.scratchContext()
                 let content = try build(context)
                 for width in widths {
                     for (sizeName, size) in sizes {
@@ -348,11 +351,6 @@ enum LayoutStress {
         return renderer.uiImage
     }
 
-    /// See `PlatesStore.scratchContext` — the schema lives with the store, so this
-    /// harness cannot end up checking a different one than the app ships.
-    private static func makeStore() throws -> ModelContext {
-        try PlatesStore.scratchContext()
-    }
 }
 
 #endif

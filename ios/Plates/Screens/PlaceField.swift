@@ -341,24 +341,9 @@ struct RouteMap: View {
     /// does not exist.
     @ViewBuilder
     private func routeLine(on snapshot: MKMapSnapshotter.Snapshot) -> some View {
-        if routeCoords.count > 1 {
-            let path = Path { p in
-                let points = routeCoords.map { snapshot.point(for: $0) }
-                p.move(to: points[0])
-                for point in points.dropFirst() { p.addLine(to: point) }
-            }
-            path.stroke(.white.opacity(0.9),
-                        style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
-            path.stroke(Theme.route,
-                        style: StrokeStyle(lineWidth: 2.6, lineCap: .round, lineJoin: .round))
-        } else {
-            Path { p in
-                p.move(to: snapshot.point(for: start))
-                p.addLine(to: snapshot.point(for: end))
-            }
-            .stroke(Theme.route.opacity(0.55),
-                    style: StrokeStyle(lineWidth: 2.4, lineCap: .round, dash: [5, 5]))
-        }
+        MapRoadLine(points: routeCoords.map { snapshot.point(for: $0) },
+                    start: snapshot.point(for: start),
+                    end: snapshot.point(for: end))
     }
 
     private func pin(systemImage: String, tint: Color, at point: CGPoint) -> some View {
