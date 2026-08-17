@@ -20,10 +20,13 @@ struct CollectionScreen: View {
     @Environment(Router.self) private var router
 
     @Query private var sightings: [Sighting]
-    @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
+    // The History page and `isSelectedTrip` were the only readers of a `@Query` over
+    // every Trip and of `currentTripID`; both were deleted and both declarations
+    // stayed. A live SwiftData query is not free to leave lying about — it kept
+    // invalidating the whole Books tab on every trip write, which during a party is
+    // every plate anybody in the car calls.
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
     @Query(sort: \Player.joinedAt) private var players: [Player]
-    @AppStorage(TripSelection.key) private var currentTripID = ""
     @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
     @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
 
@@ -537,7 +540,13 @@ struct CollectionScreen: View {
 /// that and is what put the accessibility reflow below here.
 struct ScopeCard: View {
     /// The small caps line: BOOK, SHARED BOOK, EVERY PLATE EVER.
-    let kind: String
+    ///
+    /// `LocalizedStringKey`. Hoisting these three out of the call site and into a
+    /// `String` moved `Text(kind)` onto the verbatim initializer, so the Books tab
+    /// header rendered English in every locale — and none of the three words was in
+    /// the catalog to be translated even if it had been looked up. Checked: absent
+    /// from all 527 keys.
+    let kind: LocalizedStringKey
     let isShared: Bool
     let name: String
     let subtitle: String

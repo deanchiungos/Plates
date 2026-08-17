@@ -174,7 +174,7 @@ enum LayoutStress {
     /// `ScopeCard`, which carries one more column than the trip row does: the avatar
     /// stack here takes four faces rather than three, so it starves the name sooner.
     private static func bookSheet(in context: ModelContext) throws -> some View {
-        func card(_ label: String, kind: String = "BOOK", shared: Bool = false,
+        func card(_ label: String, kind: LocalizedStringKey = "BOOK", shared: Bool = false,
                   name: String, subtitle: String, people: Int = 0,
                   filling: Bool = false, editable: Bool = true,
                   emoji: Bool = false, longNames: Bool = false)

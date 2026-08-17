@@ -70,7 +70,16 @@ struct GameScreen: View {
     /// still down, and the Button underneath fires when it lifts — so without a
     /// window the same press both opens the menu and logs another sighting, which
     /// is the exact mistake the menu exists to undo.
-    @State private var uncheckOpened: Date = .distantPast
+    /// The lift at the end of a long press that opened the un-check menu, waiting
+    /// to be swallowed by the tap it would otherwise become.
+    ///
+    /// A one-shot rather than a window. It was a `Date` compared against 0.8s, and
+    /// measured from when the menu *opened* — so a hold of more than about 1.25s
+    /// fell outside it and logged a second sighting at the exact moment the user was
+    /// being asked whether to take one away. It was also stamped before the
+    /// ownership check, so a long press on somebody else's plate opened nothing and
+    /// still ate the next tap anywhere on the grid.
+    @State private var pressToSwallow: Date?
 
     private struct Celebration: Identifiable {
         let id = UUID()
@@ -931,7 +940,12 @@ struct GameScreen: View {
     private func tap(_ plate: Plate, in collection: any PlateCollection) {
         // The lift at the end of the long-press that just opened the un-check menu.
         // Not a sighting.
-        guard Date().timeIntervalSince(uncheckOpened) > 0.8 else { return }
+        if let opened = pressToSwallow {
+            pressToSwallow = nil
+            // Consumed once, and only for a lift that could plausibly belong to that
+            // press — so a stale one cannot sit around eating a tap minutes later.
+            if Date().timeIntervalSince(opened) < 5 { return }
+        }
 
         // Unlimited counts every sighting, so a tap always adds. The other modes
         // toggle, which is how you undo a mistake. Unlimited's undo is a long-press
@@ -1037,7 +1051,6 @@ struct GameScreen: View {
         guard collection.scoringMode == .unlimited, collection.hasSeen(plate) else { return }
         // Held a plate — which is the whole of what the tip was going to say.
         coach.dismiss(.uncheck)
-        uncheckOpened = Date()
 
         // The same ownership rules as a tap-to-clear: in a party with protected
         // claims, the sightings you can take back are your own.
@@ -1070,6 +1083,8 @@ struct GameScreen: View {
         // not one of the app's phrases. Passed as a key it would be looked up in
         // the catalog, and in another language a plate called "More" would come
         // back as the translation of the tab.
+        // Armed here, where a menu is actually about to open. See `pressToSwallow`.
+        pressToSwallow = Date()
         popup.present(verbatim: plate.name, message: message) {
             PopupButton(title: mine.count == 1 ? "Remove it" : "Remove one",
                         kind: .destructive) {

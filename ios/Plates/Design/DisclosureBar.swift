@@ -46,7 +46,14 @@ struct DisclosureBar: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(count.map { "\(title), \($0)" } ?? title)
+        // Built as `Text`, not by interpolating one `LocalizedStringKey` into
+        // another. That interpolation has no dedicated overload, so it fell through
+        // to the describing one and VoiceOver read out
+        // `LocalizedStringKey(key: "Finished", hasFormatting: false, arguments: [])`
+        // before the count — on two of this control's three call sites. It also put
+        // a junk "%@, %lld" key into the catalog. The compiler warns about it.
+        .accessibilityLabel(
+            count.map { Text(title) + Text(verbatim: ", \($0)") } ?? Text(title))
         .accessibilityValue(isOpen ? "Expanded" : "Collapsed")
     }
 }

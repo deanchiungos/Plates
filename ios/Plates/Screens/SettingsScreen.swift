@@ -62,9 +62,20 @@ struct SettingsScreen: View {
         .sheet(isPresented: $editingMe) {
             // The same editor the roster used, which is why it outlived the roster:
             // it only ever edited one player, and one player is all there is now.
+            // `onSaved` matters when `me` is nil, which is reachable: a fresh
+            // install that skipped the welcome card has an empty roster, so this
+            // sheet takes the editor's *insert* branch. Without adopting, the device
+            // key is never written and `hasProfile` stays false — the identity
+            // prompt returns on the next launch, and `resolve` keeps falling back to
+            // earliest-joined, so the first party or shared book to deliver an older
+            // player silently makes this phone into them.
             PlayerEditor(player: me,
                          usedColors: Set(players.filter { $0.id != me?.id }.map(\.colorIndex)),
-                         onDelete: nil)
+                         onDelete: nil,
+                         onSaved: { saved in
+                             DevicePlayer.adopt(saved)
+                             DevicePlayer.markProfileSet()
+                         })
         }
         .tourLayer(.settings, [
             .settingsIdentity: "Who this phone plays as. In a party this is the name and the colored corner everyone else sees on the plates you call.",

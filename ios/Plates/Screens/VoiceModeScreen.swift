@@ -416,9 +416,19 @@ struct VoiceModeScreen: View {
                                 by: speaker,
                                 protected: PartySession.rules(for: collection.id).protectsClaims)
             .sorted { $0.spottedAt > $1.spottedAt }
-        if let newest = matches.first {
-            PlateLogger.withdraw([newest], from: collection, context: context)
+        // Nothing to take back is a real answer, and it used to be told as the
+        // opposite one: the row slid away, the repeat guard released and the haptic
+        // fired whether or not anything was withdrawn. In a party with protected
+        // claims that is a driver being told their undo worked when it was refused,
+        // with the transcript row that was their only evidence now gone. The two
+        // sibling paths on the Game screen both say so out loud; this one says it
+        // out loud too, because in voice mode nobody is looking at the screen.
+        guard let newest = matches.first else {
+            speech.say(String(localized: "That one is not yours to take back."))
+            Haptics.undo()
+            return
         }
+        PlateLogger.withdraw([newest], from: collection, context: context)
         withAnimation(.snappy(duration: 0.2)) {
             logged.removeAll { $0.id == entry.id }
         }

@@ -1389,8 +1389,15 @@ struct TripEditor: View {
     private func logTime(_ date: Date) -> String {
         let clock = date.formatted(.dateTime.hour().minute())
         guard let trip, trip.dayNumber > 1 else { return clock }
-        let day = (Calendar.current.dateComponents([.day],
-                                                   from: trip.startedAt, to: date).day ?? 0) + 1
+        // From midnight to midnight, not start-time to start-time. Counting raw
+        // 24-hour spans meant a trip that began at 22:00 called 08:00 the next
+        // morning "Day 1" and 23:00 that same evening "Day 2" — two sightings on one
+        // calendar day, labelled differently, with the whole column drifting from
+        // the wall calendar by however late the drive started.
+        let calendar = Calendar.current
+        let day = (calendar.dateComponents([.day],
+                                           from: calendar.startOfDay(for: trip.startedAt),
+                                           to: calendar.startOfDay(for: date)).day ?? 0) + 1
         return "Day \(max(1, day)) \u{00B7} \(clock)"
     }
 

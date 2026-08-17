@@ -36,7 +36,14 @@ enum RarityTier: Int, Comparable {
         case 5...6:  return .rare
         case 7...8:  return .epic
         case 9...10: return .legendary
-        default:     return .mythic
+        // Read from the Domain rather than restated. `mythicValue` is
+        // `buckets.count + 1`, derived so it tracks a band table that has already
+        // been retuned once — and `ranked()` hands ordinary leftover regions
+        // `buckets.count`. A `default:` here meant adding an eleventh bucket would
+        // have promoted a whole band of common plates to the crimson dot, the
+        // widest glow, the screen flash and the word MYTHIC, with no compile error.
+        case PlateRarity.mythicValue...: return .mythic
+        default:     return .legendary
         }
     }
 

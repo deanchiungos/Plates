@@ -23,6 +23,7 @@ import Foundation
 /// guard covers the case it was written for — a font that has never heard of the
 /// character — and cannot cover a font that has heard of it and is missing the
 /// artwork. On a real device the second case does not arise.
+@MainActor
 enum Glyphs {
 
     /// Cached: this is asked once per avatar per render pass, and the answer cannot
@@ -47,6 +48,13 @@ enum Glyphs {
 
 extension Player {
     /// True when this player's chosen face will actually draw here.
+    ///
+    /// `@MainActor` because `Glyphs` is: the cache behind it is a plain mutable
+    /// dictionary, and this is reached through a `@Model` class that carries no
+    /// isolation of its own. Every caller today is a SwiftUI body, so saying so
+    /// costs nothing and closes the door on a poster render moved off the main
+    /// thread finding a torn dictionary rather than a stale answer.
+    @MainActor
     var usesEmoji: Bool {
         guard let avatar, !avatar.isEmpty else { return false }
         return Glyphs.canDraw(avatar)

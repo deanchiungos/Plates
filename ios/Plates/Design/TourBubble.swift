@@ -240,6 +240,12 @@ private struct HoldToSkipAll: View {
                 }
                 .onEnded { _ in release() }
         )
+        // A cancelled touch delivers no `onEnded`, and destroying the `@State` that
+        // holds the Task does not cancel it. So a hold interrupted by an incoming
+        // call, by a popup being presented, or by the bubble being rebuilt when the
+        // stop changes, ran to completion with nothing on screen — and ended every
+        // tour and every coach mark in the app, recoverable only from Settings.
+        .onDisappear { release() }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("Skip all tours")
         .accessibilityHint("Ends the walkthrough on every screen")

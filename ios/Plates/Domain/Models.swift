@@ -79,7 +79,12 @@ final class Player {
     /// wins in both.
     /// Falls back to initials when the chosen emoji cannot be drawn here — see
     /// `Glyphs`. A box is worse than a letter.
+    ///
+    /// `@MainActor` follows `usesEmoji`, which follows the `Glyphs` cache behind it.
+    /// Every reader of these is a view.
+    @MainActor
     var face: String { usesEmoji ? (avatar ?? initials2) : initials2 }
+    @MainActor
     var smallFace: String { usesEmoji ? (avatar ?? initial) : initial }
 
     /// Two letters, for the overlapping avatar circles.

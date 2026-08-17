@@ -385,7 +385,10 @@ struct MapScreen: View {
     private struct Key: Identifiable {
         let id: String
         let color: Color
-        let label: String
+        /// `LocalizedStringKey`, so the two literal rows below are looked up. As a
+        /// `String` they bound to the verbatim `Text` initializer and "Not found" /
+        /// "Found" never entered the catalog at all.
+        let label: LocalizedStringKey
     }
 
     /// What the map is currently painted with. Not what it used to be painted with.
@@ -404,8 +407,11 @@ struct MapScreen: View {
         switch mode {
         case .rarity:
             // Every region is filled by tier, so all six belong.
-            return tiers.map { Key(id: $0.label, color: $0.mapFill,
-                                   label: $0.label.capitalized) }
+            // Identified by the tier, not by the word for it. `label` is localized
+            // now, so a language that renders two adjacent tiers with one adjective
+            // would collide two ids and `ForEach` would silently drop a row.
+            return tiers.map { Key(id: "tier.\($0.rawValue)", color: $0.mapFill,
+                                   label: LocalizedStringKey($0.label.capitalized)) }
         case .progress:
             // Two states plus the three tiers that keep their own color when found.
             // Common, uncommon and rare are all just green here, so listing them
@@ -413,7 +419,8 @@ struct MapScreen: View {
             return [Key(id: "unfound", color: Theme.unfound, label: "Not found"),
                     Key(id: "found", color: Theme.found, label: "Found")]
                 + tiers.filter { $0 >= .epic }.map {
-                    Key(id: $0.label, color: $0.mapFill, label: $0.label.capitalized)
+                    Key(id: "tier.\($0.rawValue)", color: $0.mapFill,
+                        label: LocalizedStringKey($0.label.capitalized))
                 }
         }
     }

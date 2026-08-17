@@ -450,6 +450,14 @@ struct DesignSheet: View {
 
     private var photo: some View {
         DesignPhoto(design: design, glyph: 22)
+            // Restored with the shared `DesignPhoto`. Both of its placeholders used
+            // to carry this; folding them into one view dropped it, and a bare
+            // `Color` with only a width proposal collapses to about 10pt — so a
+            // remote design on a slow connection showed a sliver, then jumped, and
+            // a failed one stayed a sliver with its glyph clipped out. `DesignCard`
+            // was unaffected because it sets its own frame, which is exactly why
+            // this was invisible in the list.
+            .aspectRatio(Theme.tileAspect, contentMode: .fit)
             .frame(maxWidth: .infinity)
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
         .overlay(

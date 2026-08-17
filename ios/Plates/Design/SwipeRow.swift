@@ -98,6 +98,20 @@ struct SwipeRow<Content: View>: View {
                         : min(0, raw)
                 }
                 .onEnded { value in
+                    // The same horizontal test `onChanged` applies, and it has to be
+                    // here too. Without it a fast diagonal scroll flick — every
+                    // sample rejected above, so the row never visibly moved — still
+                    // projected far enough sideways to snap fully open, showing Edit
+                    // and Finish to somebody who was scrolling the list. And because
+                    // `settled` was 0, it also spent the swipe coach mark that was
+                    // waiting to hear the gesture had been found deliberately.
+                    guard abs(value.predictedEndTranslation.width)
+                            > abs(value.predictedEndTranslation.height) else {
+                        withAnimation(.snappy(duration: 0.24)) {
+                            offset = settled
+                        }
+                        return
+                    }
                     // Predicted end, not where the finger left: a quick flick should
                     // open the row even though it barely moved.
                     let projected = settled + value.predictedEndTranslation.width
