@@ -145,7 +145,10 @@ enum PartyMerge {
             // goes through `PlateLogger`, which is where the widget was rebuilt — so
             // the grid climbed while the home screen sat at the count it had when
             // the drive started.
-            WidgetData.write(from: context)
+            //
+            // Asked for rather than done: this runs once per envelope, and a car
+            // full of phones calling plates is a steady stream of them.
+            WidgetData.setNeedsWrite(from: context)
         }
         return outcome
     }

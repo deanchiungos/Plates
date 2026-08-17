@@ -439,16 +439,47 @@ enum PlateLookup {
 
     private static let cache = NSCache<NSString, UIImage>()
 
-    /// The plate's photograph. Files land either in a `PlateShots` subdirectory
-    /// or flattened into the bundle root depending on how Xcode copies the
-    /// resource folder, so try both rather than depending on one.
-    static func photo(_ key: String) -> UIImage? {
+    /// Names that were looked for and are not in the bundle.
+    ///
+    /// A miss is worth remembering for the same reason a hit is. Without this, a
+    /// design naming an asset that did not ship is two bundle lookups on every
+    /// layout pass, forever — and the only rows that behave that way are the broken
+    /// ones, so it is invisible until the one phone that shows them scrolls.
+    private static var absent: Set<String> = []
+
+    /// A loose image file out of the bundle, cached.
+    ///
+    /// Files land either in a subdirectory or flattened into the bundle root
+    /// depending on how Xcode copies the resource folder, so try both rather than
+    /// depending on one.
+    ///
+    /// `NSCache` rather than a dictionary because these are photographs: it hands
+    /// the memory back when the system asks, which is what you want for something
+    /// rebuildable from a file in the app's own bundle.
+    ///
+    /// Keyed by name and extension together, because the two callers use the same
+    /// stems in different folders. They were two copies of this function for a
+    /// while, with two caches and two eviction lifetimes, and only one of them had
+    /// learned to remember a miss.
+    static func bundledImage(_ name: String,
+                             ext: String,
+                             in subdirectory: String) -> UIImage? {
+        let key = "\(subdirectory)/\(name).\(ext)"
         if let hit = cache.object(forKey: key as NSString) { return hit }
-        let url = Bundle.main.url(forResource: key, withExtension: "jpg",
-                                  subdirectory: "PlateShots")
-            ?? Bundle.main.url(forResource: key, withExtension: "jpg")
-        guard let url, let image = UIImage(contentsOfFile: url.path) else { return nil }
+        guard !absent.contains(key) else { return nil }
+        let url = Bundle.main.url(forResource: name, withExtension: ext,
+                                  subdirectory: subdirectory)
+            ?? Bundle.main.url(forResource: name, withExtension: ext)
+        guard let url, let image = UIImage(contentsOfFile: url.path) else {
+            absent.insert(key)
+            return nil
+        }
         cache.setObject(image, forKey: key as NSString)
         return image
+    }
+
+    /// The plate's photograph.
+    static func photo(_ key: String) -> UIImage? {
+        bundledImage(key, ext: "jpg", in: "PlateShots")
     }
 }

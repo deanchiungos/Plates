@@ -483,23 +483,28 @@ enum PlaySelection {
     @MainActor
     static func select(_ target: PlayTarget) {
         let defaults = AppDefaults.store
-        switch target {
-        case .trip(let trip):
-            defaults.set("trip", forKey: kindKey)
-            defaults.set(trip.id.uuidString, forKey: TripSelection.key)
-        case .book(let book):
-            defaults.set("book", forKey: kindKey)
-            defaults.set(book.id.uuidString, forKey: bookKey)
+        // Nothing to say when nothing changed. Tapping the trip you are already on
+        // is the ordinary way to open it, and it was paying for a full widget
+        // rebuild every time — including on the join path, where `PartySession`
+        // calls this straight after `PartyMerge` has already asked for one.
+        let (kind, key, id): (String, String, String) = switch target {
+        case .trip(let trip): ("trip", TripSelection.key, trip.id.uuidString)
+        case .book(let book): ("book", bookKey, book.id.uuidString)
         }
-        WidgetData.write(from: PlatesStore.context)
+        guard defaults.string(forKey: kindKey) != kind
+                || defaults.string(forKey: key) != id else { return }
+        defaults.set(kind, forKey: kindKey)
+        defaults.set(id, forKey: key)
+        WidgetData.setNeedsWrite(from: PlatesStore.context)
     }
 
     /// Marks a book as "your book" without changing what the Drive screen is
     /// filling. Browsing the Book tab should not interrupt a trip in progress.
     @MainActor
     static func selectBookOnly(_ book: Book) {
+        guard AppDefaults.store.string(forKey: bookKey) != book.id.uuidString else { return }
         AppDefaults.store.set(book.id.uuidString, forKey: bookKey)
-        WidgetData.write(from: PlatesStore.context)
+        WidgetData.setNeedsWrite(from: PlatesStore.context)
     }
 }
 

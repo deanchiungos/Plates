@@ -78,6 +78,42 @@ struct WidgetData: Codable, Equatable {
     nonisolated(unsafe) static var isSuspended = false
     #endif
 
+    /// A rebuild is wanted, at some point this turn of the run loop.
+    ///
+    /// `write` is a three-table fetch, a lifetime `PlateBook`, a rarest-find and a
+    /// read of the sidecar to compare — cheap enough for a tap and not for a loop.
+    /// The paths that arrive from elsewhere are loops: `SharedBookSync.pull` calls
+    /// the merge once per CloudKit page and a first sync of a full book is several
+    /// pages, and `PartyMerge` runs once per envelope, which in a four-phone car is
+    /// once per plate anybody calls plus every relay. Each of those did the whole
+    /// rebuild, on the main actor, for a file that only needs its final value.
+    ///
+    /// Coalesced rather than throttled, so the last state always wins and nothing
+    /// has to guess a delay. The trailing edge is what matters here: nobody is
+    /// looking at the home screen during a merge.
+    @MainActor
+    static func setNeedsWrite(from context: ModelContext) {
+        #if DEBUG
+        // Checked at the ask, not only at the write. A deferred write scheduled
+        // during `-partyMergeCheck` would land after the run's `defer` had cleared
+        // the flag, and put fixture data on the real home screen — which is the one
+        // thing `isSuspended` exists to prevent.
+        if isSuspended { return }
+        #endif
+        pending = context
+        guard !scheduled else { return }
+        scheduled = true
+        Task { @MainActor in
+            scheduled = false
+            guard let context = pending else { return }
+            pending = nil
+            write(from: context)
+        }
+    }
+
+    @MainActor private static var scheduled = false
+    @MainActor private static var pending: ModelContext?
+
     @MainActor
     static func write(from context: ModelContext) {
         #if DEBUG

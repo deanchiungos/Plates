@@ -127,12 +127,21 @@ struct PosterShareButton: View {
 
     @State private var poster: PosterToShare?
     @State private var preparing = false
+    /// Held so it can be cancelled. A poster is the most expensive thing the app
+    /// renders — driving directions, a map snapshot, then the whole page through
+    /// `ImageRenderer` — and left unstructured it kept running after the screen it
+    /// was started from had gone, to set a `@State` nobody would ever see.
+    /// Cancellation is cooperative, so this does not stop MapKit mid-request; it
+    /// stops everything after the first await that checks, and it stops the write.
+    @State private var job: Task<Void, Never>?
 
     var body: some View {
         Button {
             preparing = true
-            Task {
-                poster = await make()
+            job = Task {
+                let made = await make()
+                guard !Task.isCancelled else { return }
+                poster = made
                 preparing = false
             }
         } label: {
@@ -147,6 +156,10 @@ struct PosterShareButton: View {
         .accessibilityLabel(label)
         .sheet(item: $poster) { ready in
             ShareSheet(items: ready.activityItems)
+        }
+        .onDisappear {
+            job?.cancel()
+            preparing = false
         }
     }
 }

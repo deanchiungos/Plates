@@ -40,4 +40,18 @@ enum CloudErrors {
         default: return false
         }
     }
+
+    /// Specifically: the *zone* is gone, not just one record in it.
+    ///
+    /// Narrower than `isAlreadyGone`, and the difference matters to anything holding
+    /// a memo that a zone exists — `unknownItem` is one missing record and says
+    /// nothing about the zone around it, while these two say the container the memo
+    /// was about is not there any more.
+    static func zoneIsGone(_ error: Error) -> Bool {
+        guard let ck = meaningful(error) else { return false }
+        switch ck.code {
+        case .zoneNotFound, .userDeletedZone: return true
+        default: return false
+        }
+    }
 }

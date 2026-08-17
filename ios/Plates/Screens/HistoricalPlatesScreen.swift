@@ -365,38 +365,12 @@ struct DesignPhoto: View {
         }
     }
 
-    /// What has already been loaded, so scrolling does not re-read the disk.
-    ///
-    /// `body` runs on every layout pass, and every one of those was doing two bundle
-    /// lookups and a fresh `UIImage` off a file. In a list of two hundred designs
-    /// scrolled at speed that is a file read per row per frame, and the reads are the
-    /// visible part — the images also stack up as separate objects the decoder has to
-    /// treat as unrelated, so the same plate is decoded again each time it is built.
-    ///
-    /// `NSCache` rather than a dictionary because these are photographs: it hands the
-    /// memory back when the system asks, which is the behaviour you want for something
-    /// that can be rebuilt from a file in the app's own bundle. Misses are cached too,
-    /// as a sentinel — a design naming an asset that did not ship would otherwise be
-    /// the one row that keeps hitting the disk forever.
-    @MainActor private static let cache = NSCache<NSString, UIImage>()
-    @MainActor private static var absent: Set<String> = []
-
-    /// Same lookup the lookup screen's photographs use: a loose file in a bundle
-    /// subdirectory, with a flat fallback in case the folder reference is ever
-    /// flattened by the build.
-    @MainActor
+    /// Same lookup the lookup screen's photographs use, and now literally the same
+    /// function: a loose file in a bundle subdirectory, with a flat fallback in case
+    /// the folder reference is ever flattened by the build. Cached there, because
+    /// `body` runs on every layout pass and this was a file read per row per frame.
     static func bundled(_ name: String) -> UIImage? {
-        if let hit = cache.object(forKey: name as NSString) { return hit }
-        guard !absent.contains(name) else { return nil }
-        let url = Bundle.main.url(forResource: name, withExtension: "png",
-                                  subdirectory: "CurrentPlates")
-            ?? Bundle.main.url(forResource: name, withExtension: "png")
-        guard let url, let image = UIImage(contentsOfFile: url.path) else {
-            absent.insert(name)
-            return nil
-        }
-        cache.setObject(image, forKey: name as NSString)
-        return image
+        PlateLookup.bundledImage(name, ext: "png", in: "CurrentPlates")
     }
 }
 

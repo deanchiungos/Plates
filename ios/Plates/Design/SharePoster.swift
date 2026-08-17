@@ -51,10 +51,6 @@ enum ShareablePoster {
     /// had already worked out. One pass, both answers.
     private static func render(for collection: any PlateCollection,
                                players: [Player]) async -> (image: UIImage, states: Int)? {
-        // Started before the work below rather than awaited after it. The snapshotter
-        // is a round trip to the map servers and everything here is arithmetic, so
-        // there is no reason for the arithmetic to wait its turn.
-        async let route = road(of: collection)
         let index = collection.plateIndex()
         let people = collection.participants(from: players,
                                              me: DevicePlayer.resolve(from: players))
@@ -77,7 +73,14 @@ enum ShareablePoster {
             claims: shared ? claims(from: index, over: seen) : [:],
             logged: collection.sightings?.count ?? 0,
             newHere: firsts(in: collection, over: seen),
-            route: await route
+            // Awaited here, at the end, and not started earlier with `async let`.
+            // That was tried, with a comment saying the arithmetic above had no
+            // reason to wait its turn — and it does not overlap. This type is
+            // `@MainActor`, so `road` is too, and a child task enqueued on an actor
+            // the parent is still holding cannot start until the parent suspends.
+            // The parent suspends here. The saving was zero and the code read as
+            // though it were not, which is worse than the plain await.
+            route: await road(of: collection)
         ) else { return nil }
         return (made, states)
     }

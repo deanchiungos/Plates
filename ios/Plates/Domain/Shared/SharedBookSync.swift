@@ -33,12 +33,25 @@ final class SharedBookSync {
     private(set) var isBusy = false
 
     private var zoneEnsured = false
-    private var isPulling = false
+
+    /// Zones with a pull in flight, so a second ask for the same one returns rather
+    /// than racing it. See `pull`.
+    private var pulling: Set<String> = []
 
     // MARK: - The zone
 
     /// Created once, lazily. Records in the default zone cannot be shared at all,
     /// so everything a shared book touches lives here.
+    /// Forget that the zone was ever made.
+    ///
+    /// `zoneEnsured` was a one-way latch: once set, nothing cleared it, so a zone
+    /// that went away mid-session — the user wiping the app's iCloud data in
+    /// Settings, or CloudKit reporting `userDeletedZone` — could not be recreated
+    /// until the app was relaunched. Every later share attempt returned at the guard
+    /// and then failed against a zone that was not there, telling the user a book
+    /// they had never shared was no longer available.
+    func forgetZone() { zoneEnsured = false }
+
     private func ensureZone() async throws {
         guard !zoneEnsured else { return }
         let zone = CKRecordZone(zoneName: SharedBookRecords.zoneName)
@@ -79,7 +92,7 @@ final class SharedBookSync {
         do {
             return try await buildShare(for: book)
         } catch {
-            trouble = Self.explain(error)
+            report(error)
             log("share failed: \(error)")
             throw error
         }
@@ -156,7 +169,7 @@ final class SharedBookSync {
                 try await self?.save([record], to: self?.database(for: entry))
                 self?.log("pushed \(sighting.plateCode)")
             } catch {
-                self?.trouble = Self.explain(error)
+                self?.report(error)
                 self?.log("push failed for \(sighting.plateCode): \(error)")
             }
         }
@@ -176,7 +189,7 @@ final class SharedBookSync {
                 _ = try await db.modifyRecords(saving: [], deleting: doomed)
                 self?.log("withdrew \(doomed.count)")
             } catch {
-                self?.trouble = Self.explain(error)
+                self?.report(error)
                 self?.log("withdraw failed: \(error)")
             }
         }
@@ -190,20 +203,6 @@ final class SharedBookSync {
     /// filled over weeks, not seconds, and polling would spend battery to shorten a
     /// wait nobody is sitting through.
     func pullAll(into context: ModelContext) async {
-        // One pull at a time, whoever asks.
-        //
-        // A cold launch asks twice — `RootView`'s `.task` and the scenePhase
-        // transition to `.active` both fire — and with no guard both passes read the
-        // same change token before their first `await`, fetched the same pages, ran
-        // the same merge twice, and both wrote a token back. Whichever finished last
-        // won, so the other pull's page-by-page progress was discarded: the exact
-        // resume-where-it-stopped behaviour the token exists for, defeated by asking
-        // for it twice. Returning rather than queueing is right because the second
-        // caller wants "the books are up to date", and the first one is doing that.
-        guard !isPulling else { return }
-        isPulling = true
-        defer { isPulling = false }
-
         // One pull per zone rather than per book. Books can share a zone and the
         // change token belongs to the zone, so the second book's pull asks what has
         // changed since the first one — which is nothing. Any entry in a zone
@@ -216,7 +215,26 @@ final class SharedBookSync {
         }
     }
 
+    /// One pull per zone at a time, whoever asks.
+    ///
+    /// A cold launch asks twice — `RootView`'s `.task` and the scenePhase transition
+    /// to `.active` both fire — and with no guard both passes read the same change
+    /// token before their first `await`, fetched the same pages, ran the same merge
+    /// twice, and both wrote a token back. Whichever finished last won, so the other
+    /// pull's page-by-page progress was discarded: the exact resume-where-it-stopped
+    /// behaviour the token exists for, defeated by asking for it twice. Returning
+    /// rather than queueing is right because the second caller wants "the books are
+    /// up to date", and the first one is doing that.
+    ///
+    /// The guard is here rather than on `pullAll`, which is where it was written and
+    /// which is the door two of the three callers do not come through: `pushAll`
+    /// pulls before it pushes, and `accept` pulls the zone it has just joined. Both
+    /// reached straight past it into the same token.
     private func pull(_ entry: SharedBookLedger.Entry, into context: ModelContext) async {
+        let key = "\(entry.zoneOwner)/\(entry.zoneName)"
+        guard pulling.insert(key).inserted else { return }
+        defer { pulling.remove(key) }
+
         let zone = CKRecordZone.ID(zoneName: entry.zoneName, ownerName: entry.zoneOwner)
         let db = database(for: entry)
 
@@ -265,7 +283,7 @@ final class SharedBookSync {
             // merge is idempotent.
             ledger.setToken(nil, zone: entry.zoneName, owner: entry.zoneOwner)
         } catch {
-            trouble = Self.explain(error)
+            report(error)
         }
     }
 
@@ -285,7 +303,7 @@ final class SharedBookSync {
                               zoneName: zone.zoneName, zoneOwner: zone.ownerName))
             await pull(ledger.entry(for: bookID)!, into: context)
         } catch {
-            trouble = Self.explain(error)
+            report(error)
         }
     }
 
@@ -310,8 +328,7 @@ final class SharedBookSync {
     /// the same breath — and a `Book` captured into a `Task` that runs after
     /// `context.delete` is an invalidated model, not a book.
     func stopSharing(bookID: UUID) async {
-        let book = bookID
-        guard let entry = ledger.entry(for: book) else { return }
+        guard let entry = ledger.entry(for: bookID) else { return }
         let zone = CKRecordZone.ID(zoneName: entry.zoneName, ownerName: entry.zoneOwner)
         let db = database(for: entry)
         do {
@@ -322,14 +339,30 @@ final class SharedBookSync {
                 // participant mid-sync would see the book vanish rather than simply
                 // stop updating. Removing the share revokes access and leaves the
                 // data exactly where it is.
-                let rootID = SharedBookRecords.recordID(for: book, in: zone)
+                let rootID = SharedBookRecords.recordID(for: bookID, in: zone)
                 if let shareID = try await db.record(for: rootID).share?.recordID {
                     _ = try await db.modifyRecords(saving: [], deleting: [shareID])
                 }
             } else {
-                // Leaving is deleting the whole zone from *your* shared database,
-                // which detaches you without touching the owner's copy.
-                _ = try await db.modifyRecordZones(saving: [], deleting: [zone])
+                // Leaving deletes *this book's* share from your shared database,
+                // which detaches you from it without touching the owner's copy.
+                //
+                // Deleting the whole zone was the original reading, and it is right
+                // only when the zone holds one book. It does not have to: every book
+                // an owner shares out lives in their single `SharedBooks` zone, so a
+                // friend who shares two books with you puts both in one zone in your
+                // shared database. Leaving one then detached you from the other as
+                // well — its card still offered to leave a book you were no longer
+                // in, and every pull for that zone failed from then on. The zone
+                // deletion is kept for the case it was actually written for, which
+                // is the last book you are in from that owner.
+                let rootID = SharedBookRecords.recordID(for: bookID, in: zone)
+                let shareID = try await db.record(for: rootID).share?.recordID
+                if let shareID {
+                    _ = try await db.modifyRecords(saving: [], deleting: [shareID])
+                } else if othersInZone(entry).isEmpty {
+                    _ = try await db.modifyRecordZones(saving: [], deleting: [zone])
+                }
             }
         } catch let error where CloudErrors.isAlreadyGone(error) {
             // Nothing up there to revoke, which is the state we were asking for.
@@ -337,11 +370,20 @@ final class SharedBookSync {
             // share that does not exist.
             log("stop sharing: already gone")
         } catch {
-            trouble = Self.explain(error)
+            report(error)
             log("stop sharing failed: \(error)")
             return
         }
-        ledger.forget(book: book)
+        ledger.forget(book: bookID)
+    }
+
+    /// The other books this device is in that live in the same zone as `entry`.
+    private func othersInZone(_ entry: SharedBookLedger.Entry) -> [SharedBookLedger.Entry] {
+        ledger.allShared.filter {
+            $0.bookID != entry.bookID
+                && $0.zoneName == entry.zoneName
+                && $0.zoneOwner == entry.zoneOwner
+        }
     }
 
     /// Cleared when a new attempt starts, so a message from the last one is never
@@ -376,6 +418,18 @@ final class SharedBookSync {
         #if DEBUG
         print("[sharedbook] \(message)")
         #endif
+    }
+
+    /// Report a failure, and forget anything the failure proves is no longer true.
+    ///
+    /// The one thing worth acting on rather than only describing is a zone that has
+    /// gone: `zoneEnsured` is a memo saying the zone was made, and a memo nothing
+    /// ever clears outlives the thing it describes. Routed through here, every
+    /// zone-scoped operation that fails with `zoneNotFound` or `userDeletedZone`
+    /// puts the next share attempt back on the path that creates it.
+    private func report(_ error: Error) {
+        if CloudErrors.zoneIsGone(error) { forgetZone() }
+        trouble = Self.explain(error)
     }
 
     /// CloudKit's own messages are written for developers. These are the handful a
