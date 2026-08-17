@@ -37,9 +37,7 @@ enum TripClosing {
 
         // A trip that is no longer the one being played must not still be named as
         // it, or the Game screen opens on something it cannot collect into.
-        if UserDefaults.standard.string(forKey: TripSelection.key) == trip.id.uuidString {
-            UserDefaults.standard.set("", forKey: TripSelection.key)
-        }
+        deselect(trip.id)
 
         // A finished trip takes no more plates, so a party still pointed at it would
         // be a radio running for a game nobody can play. The goodbye goes out first,
@@ -81,12 +79,22 @@ enum TripClosing {
         PartyTombstones.shared.forget(trip: id)
         PartyLedger.shared.forget(trip: id)
 
-        if UserDefaults.standard.string(forKey: TripSelection.key) == id.uuidString {
-            UserDefaults.standard.set("", forKey: TripSelection.key)
-        }
+        deselect(id)
 
         TripReminders.shared.refresh(in: context)
         WidgetData.write(from: context)
+    }
+
+    /// Stop naming this trip as the one being played, if it still is.
+    ///
+    /// Through `AppDefaults` like every other preference the app owns. Written out
+    /// twice against `UserDefaults.standard`, it was the one key `PlaySelection`
+    /// writes through the swappable store and this file read through the real one —
+    /// so `-partyMergeCheck`, which calls both functions above, reached past the
+    /// scratch suite and into the phone's actual selection.
+    private static func deselect(_ id: UUID) {
+        guard AppDefaults.store.string(forKey: TripSelection.key) == id.uuidString else { return }
+        AppDefaults.store.set("", forKey: TripSelection.key)
     }
 
     /// Whether this phone has anything of its own invested in a trip.

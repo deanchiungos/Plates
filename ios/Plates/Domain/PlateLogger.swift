@@ -107,21 +107,22 @@ enum PlateLogger {
                          context: ModelContext) {
         guard !sightings.isEmpty else { return }
 
-        // Other people's shelves first, while the rows are still here to be asked
-        // which book they were on. A sighting can be folded into a book that is not
-        // the collection being emptied, and if that book is shared its members need
-        // the tombstone — the reference is gone the moment the row is.
-        for (_, group) in Dictionary(grouping: sightings.filter { $0.book != nil },
-                                     by: { $0.book!.id }) {
-            if let book = group.first?.book, book.id != collection.id {
-                SharedBookSync.shared.remove(group.map(\.id), in: book)
-            }
-        }
-
         // Named individually, and collected before the delete, because afterwards
         // there is nothing left to ask which rows went — and a peer that never heard
         // of a sighting still has to be able to record that it is gone.
         var withdrawn: [UUID] = []
+        // Other people's shelves, gathered as the disposition is decided rather than
+        // before it. This loop used to run first, over every row with a book on it,
+        // and that was correct only while every row here was about to be deleted.
+        // It is not: the folded-plate rule below deliberately keeps a trip's folded
+        // rows in their book. So emptying a trip pushed a CloudKit deletion for
+        // plates it then kept — the phone that did it still shows them, and every
+        // other member of the shared book loses them for good. That is precisely
+        // what `TripsScreen` says of the removals it stopped pushing: a deletion for
+        // a plate still sitting in somebody's book is not a tombstone, it is
+        // reaching across the wire to take it. Only a row actually leaving the book
+        // gets one.
+        var leaving: [UUID: (book: Book, ids: [UUID])] = [:]
         for sighting in sightings {
             withdrawn.append(sighting.id)
             // A folded plate lives in two containers, and taking it out of one is
@@ -141,10 +142,17 @@ enum PlateLogger {
             } else if collection is Trip, sighting.book != nil {
                 sighting.trip = nil
             } else {
+                if let book = sighting.book, book.id != collection.id {
+                    leaving[book.id, default: (book, [])].ids.append(sighting.id)
+                }
                 context.delete(sighting)
             }
         }
         try? context.save()
+
+        for (_, entry) in leaving {
+            SharedBookSync.shared.remove(entry.ids, in: entry.book)
+        }
 
         if let trip = collection as? Trip {
             PartySession.shared?.broadcastRemoval(withdrawn, in: trip.id)

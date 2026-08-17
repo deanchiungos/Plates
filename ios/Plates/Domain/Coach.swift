@@ -222,6 +222,19 @@ final class CoachPresenter {
         guard !TourGuide.isRunning else { return pending = nil }
         pending = nil
         withAnimation(.snappy(duration: 0.24)) { showing = tip }
+        // And handed back if the layer declines to draw it.
+        //
+        // Not spending an undrawn tip is right; holding the slot with it is not.
+        // `showing` is what stops a second tip asking, so a tip whose anchor is
+        // never registered would sit in the slot for the whole visit, get cleared by
+        // `withdraw` on the way out, and take the slot again next visit — every
+        // visit, for the life of the install. The screen's other tips would never
+        // get a turn. Releasing it costs the undrawn tip nothing: it was not marked,
+        // so it is still owed a turn, and it will ask again.
+        after(settle) { [self] in
+            guard showing == tip, announced != tip else { return }
+            showing = nil
+        }
     }
 
     /// The last tip actually put on the page. Guards the announcement below.

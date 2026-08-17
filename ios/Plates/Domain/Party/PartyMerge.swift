@@ -417,7 +417,19 @@ enum PartyMerge {
         let doomed = Set(event.sightingIDs)
         let existing = (try? context.fetch(FetchDescriptor<Sighting>())) ?? []
         for sighting in existing where doomed.contains(sighting.id) {
-            context.delete(sighting)
+            // The same rule every other removal path applies, and the one path that
+            // never had it. A peer un-tapping a plate is a statement about the trip;
+            // it is not permission to reach into a book on this phone. A row folded
+            // into a book hands itself back to the book instead of being deleted —
+            // and this matters more here than anywhere, because a reconnect replays
+            // the whole accumulated tombstone set, so one un-tap last Tuesday could
+            // empty a shelf today. See `PlateLogger.withdraw` and the mirror in
+            // `SharedBookMerge.apply`.
+            if sighting.book != nil {
+                sighting.trip = nil
+            } else {
+                context.delete(sighting)
+            }
             outcome.sightingsRemoved += 1
         }
     }

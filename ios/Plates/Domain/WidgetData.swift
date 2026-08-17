@@ -109,8 +109,14 @@ struct WidgetData: Codable, Equatable {
         // Scored the way the collection itself scores, so a trip's rarest is judged
         // against its own route rather than a national average it never used. The
         // lifetime tier has no route of its own, so it is scored nationally.
+        // Through the index, not `collection.rarity(of:)` per code, which filters
+        // every sighting the collection has once for each code. This function is
+        // called from the party merge, both shared-book merge exits and both play
+        // selectors, so on a phone in a party it runs whenever anybody in the car
+        // calls a plate.
         let best = subject.map { collection in
-            rarestPlate(in: seen, scoredBy: collection.rarity(of:))
+            let index = collection.plateIndex()
+            return rarestPlate(in: seen) { collection.rarity(of: $0, using: index) }
         } ?? rarestPlate(in: seen) { PlateRarity.rarity($0, on: nil) }
 
         let snapshot = WidgetData(

@@ -64,7 +64,8 @@ enum PartyMergeCheck {
          ("a flag's value is its own", aFlagsValueBelongsToThatFlag),
          ("a spared card stays spent", aSparedCardStaysSpent),
          ("clearing a trip is a withdrawal", clearingATripIsARealWithdrawal),
-         ("a folded plate is not the trip's to delete", aFoldedPlateSurvivesItsTrip)]
+         ("a folded plate is not the trip's to delete", aFoldedPlateSurvivesItsTrip),
+         ("nor a peer's to delete", aPeersRemovalLeavesTheShelfAlone)]
     }
 
     @MainActor
@@ -87,13 +88,17 @@ enum PartyMergeCheck {
         // on the way out.
         let suite = "com.eggeppel.plates.mergecheck"
         AppDefaults.store = UserDefaults(suiteName: suite) ?? .standard
-        // And the widget's file, which is not a preference and so is not covered by
-        // the suite above. See `WidgetData.isSuspended`.
+        // And the two pieces of device state that are not preferences, so the suite
+        // above does not cover them: the widget's file, and the notification queue.
+        // Both are rebuilt at the end of `PlateLogger.withdraw`, which cases here
+        // call. See `WidgetData.isSuspended` and `TripReminders.isSuspended`.
         WidgetData.isSuspended = true
+        TripReminders.isSuspended = true
         defer {
             AppDefaults.store.removePersistentDomain(forName: suite)
             AppDefaults.store = .standard
             WidgetData.isSuspended = false
+            TripReminders.isSuspended = false
         }
 
         for (name, body) in cases {
@@ -1162,15 +1167,52 @@ enum PartyMergeCheck {
               book.allSightings.allSatisfy { $0.trip == nil }, true)
     }
 
+    /// The same rule from the other side of the wire.
+    ///
+    /// `PlateLogger.withdraw` learned that a folded plate is not the trip's to
+    /// delete; the party's removal merge is the path that applies somebody *else's*
+    /// withdrawal, and it deleted the row outright. So a plate you had filed on your
+    /// own shelf could be taken off it by a passenger un-tapping something in the
+    /// car — and worse on a reconnect, which replays every tombstone the party has
+    /// accumulated, so one un-tap last Tuesday empties a shelf today.
+    @MainActor
+    private static func aPeersRemovalLeavesTheShelfAlone() throws {
+        let store = try makeStore()
+        let fixture = install(into: store)
+        let trip = try tripOf(store, fixture.tripID)
+        let tombstones = PartyTombstones(url: nil)
+
+        let book = Book(name: "The Shelf")
+        store.insert(book)
+        let folded = Array(trip.allSightings.prefix(2))
+        let shelved = folded.map(\.id)
+        for sighting in folded { sighting.book = book }
+        // And one that is the trip's alone, so the case also proves the ordinary
+        // removal still deletes.
+        guard let loose = trip.allSightings.first(where: { $0.book == nil }) else {
+            throw CheckError.missingTrip
+        }
+        let looseID = loose.id
+        try? store.save()
+        check("two plates are on the shelf", book.allSightings.count, 2)
+
+        let removal = PartyEnvelope(.remove(RemovalEvent(tripID: fixture.tripID,
+                                                         sightingIDs: shelved + [looseID])))
+        _ = PartyMerge.apply(removal, into: store, tombstones: tombstones)
+
+        check("the shelved plates stayed on the shelf", book.allSightings.count, 2)
+        check("and left the trip", book.allSightings.allSatisfy { $0.trip == nil }, true)
+        check("the unshelved one was deleted",
+              trip.allSightings.contains { $0.id == looseID }, false)
+    }
+
     /// `first` where the fetch is by id, so a case reads as one line.
     @MainActor
     private static func tripOf(_ store: ModelContext, _ id: UUID) throws -> Trip {
         let found = (try? store.fetch(FetchDescriptor<Trip>()))?.first { $0.id == id }
-        guard let found else { throw CheckTrouble.noTrip }
+        guard let found else { throw CheckError.missingTrip }
         return found
     }
-
-    private enum CheckTrouble: Error { case noTrip }
 
     private static func suppressedRowsAreNotCounts() throws {
         // The three rows that carry it, from the packed table.

@@ -26,8 +26,8 @@ enum Haptics {
     static let offKey = "hapticsOff"
 
     static var isOn: Bool {
-        get { !UserDefaults.standard.bool(forKey: offKey) }
-        set { UserDefaults.standard.set(!newValue, forKey: offKey) }
+        get { !AppDefaults.store.bool(forKey: offKey) }
+        set { AppDefaults.store.set(!newValue, forKey: offKey) }
     }
 
     /// Every haptic below is gated on both: the hardware being able, and the user

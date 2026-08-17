@@ -1055,6 +1055,13 @@ struct GameScreen: View {
         guard collection.scoringMode == .unlimited, collection.hasSeen(plate) else { return }
         // Held a plate — which is the whole of what the tip was going to say.
         coach.dismiss(.uncheck)
+        // Armed here, at the top, because the lift has to be swallowed whatever this
+        // function decides. Armed just before `popup.present` instead — which is
+        // where it read, and which is the tidier-looking place — the refusal path
+        // below returns without arming, so the finger comes up onto the tile's own
+        // Button and logs a brand new sighting. The user is told the plate is not
+        // theirs to take back and is given another one.
+        pressToSwallow = Date()
 
         // The same ownership rules as a tap-to-clear: in a party with protected
         // claims, the sightings you can take back are your own.
@@ -1087,8 +1094,6 @@ struct GameScreen: View {
         // not one of the app's phrases. Passed as a key it would be looked up in
         // the catalog, and in another language a plate called "More" would come
         // back as the translation of the tab.
-        // Armed here, where a menu is actually about to open. See `pressToSwallow`.
-        pressToSwallow = Date()
         popup.present(verbatim: plate.name, message: message) {
             PopupButton(title: mine.count == 1 ? "Remove it" : "Remove one",
                         kind: .destructive) {

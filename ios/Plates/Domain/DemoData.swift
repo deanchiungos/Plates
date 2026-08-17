@@ -212,7 +212,7 @@ enum DemoData {
                          spottedAt: oldBook.startedAt.addingTimeInterval(Double(offset) * 86_400 * 20))
             )
         }
-        UserDefaults.standard.set(book.id.uuidString, forKey: PlaySelection.bookKey)
+        AppDefaults.store.set(book.id.uuidString, forKey: PlaySelection.bookKey)
 
         // `-folded` seeds the shelved-in-a-book state — the finished trip's
         // sightings gain a book reference exactly as `TripsScreen.fold` leaves

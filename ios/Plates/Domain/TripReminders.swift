@@ -31,8 +31,25 @@ final class TripReminders {
 
     private let centre = UNUserNotificationCenter.current()
 
+    #if DEBUG
+    /// Set while `-partyMergeCheck` runs, for the same reason `WidgetData.isSuspended`
+    /// exists and read the same way.
+    ///
+    /// The notification queue is device state, not a preference, so pointing
+    /// `AppDefaults` at a scratch suite does not fence it off — and `refresh` is
+    /// called at the end of `PlateLogger.withdraw` and by `TripClosing`, both of
+    /// which the check drives against a fixture store. `replacePending` removes
+    /// every pending trip nudge it finds and schedules from what it was given, so a
+    /// run on a real phone deleted somebody's actual reminders and replaced them
+    /// with one for a trip called "Party Test". Nothing restored them, and nothing
+    /// on screen said it had happened.
+    nonisolated(unsafe) static var isSuspended = false
+    #endif
+
+    /// Through `AppDefaults` like every other preference the app owns, so the check
+    /// reads the scratch suite rather than the phone's real answer.
     var isEnabled: Bool {
-        UserDefaults.standard.bool(forKey: Self.enabledKey)
+        AppDefaults.store.bool(forKey: Self.enabledKey)
     }
 
     // MARK: - Turning it on
@@ -42,12 +59,12 @@ final class TripReminders {
     @discardableResult
     func enable() async -> Bool {
         let granted = (try? await centre.requestAuthorization(options: [.alert, .sound])) ?? false
-        UserDefaults.standard.set(granted, forKey: Self.enabledKey)
+        AppDefaults.store.set(granted, forKey: Self.enabledKey)
         return granted
     }
 
     func disable() {
-        UserDefaults.standard.set(false, forKey: Self.enabledKey)
+        AppDefaults.store.set(false, forKey: Self.enabledKey)
         Task { await replacePending(with: []) }
     }
 
@@ -64,6 +81,9 @@ final class TripReminders {
     /// trip is finished, and when the app comes forward — all the moments the answer
     /// could have changed.
     func refresh(in context: ModelContext) {
+        #if DEBUG
+        if Self.isSuspended { return }
+        #endif
         let trips = isEnabled ? (try? context.fetch(FetchDescriptor<Trip>())) ?? [] : []
         let nudges = Self.plan(for: trips, now: Date())
         Task { await replacePending(with: nudges) }

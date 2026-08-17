@@ -105,8 +105,17 @@ struct SwipeRow<Content: View>: View {
                     // and Finish to somebody who was scrolling the list. And because
                     // `settled` was 0, it also spent the swipe coach mark that was
                     // waiting to hear the gesture had been found deliberately.
-                    guard abs(value.predictedEndTranslation.width)
-                            > abs(value.predictedEndTranslation.height) else {
+                    // `translation`, not `predictedEndTranslation` — the same
+                    // vector `onChanged` tests, which is what "the same test" has to
+                    // mean. Against the predicted end it is a different question:
+                    // velocity is projected on both axes, so a deliberate 100pt
+                    // sideways drag released with a small upward flick comes back
+                    // taller than it is wide and the row the user watched slide open
+                    // snaps shut. The projection below still uses the predicted end,
+                    // because that decides how far the row goes, not whether the
+                    // gesture was horizontal.
+                    guard abs(value.translation.width)
+                            > abs(value.translation.height) else {
                         withAnimation(.snappy(duration: 0.24)) {
                             offset = settled
                         }

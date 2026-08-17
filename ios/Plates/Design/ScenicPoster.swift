@@ -612,7 +612,7 @@ struct ScenicPoster: View {
                     // *and* no tick, because there was a claim. A found plate with
                     // nothing on it at all, on the one artifact whose whole job is
                     // showing what was found.
-                    let cornerTaken = others.count > 1 || claim?.spotter != nil
+                    let cornerTaken = !others.isEmpty || claim?.spotter != nil
                     PlateTile(
                         plate: plate,
                         isFound: true,

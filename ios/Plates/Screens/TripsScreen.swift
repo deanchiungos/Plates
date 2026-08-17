@@ -612,12 +612,22 @@ struct TripsScreen: View {
         // rows that were never in it.
         let folded = trip.allSightings.filter { $0.book != nil }
         guard !folded.isEmpty else { return }
-        let byBook = Dictionary(grouping: folded, by: { $0.book!.id })
+        //
+        // The book object comes out with the ids, not looked up again afterwards.
+        // Grouping by `book!.id` and then reading `group.first?.book` back is asking
+        // a row a question whose answer the next line erases: by the time the loop
+        // runs, every sighting's `book` is nil, so the guard fails for every group
+        // and not one removal is pushed. The grouping key is a UUID and survives;
+        // the reference does not.
+        var byBook: [UUID: (book: Book, ids: [UUID])] = [:]
+        for sighting in folded {
+            guard let book = sighting.book else { continue }
+            byBook[book.id, default: (book, [])].ids.append(sighting.id)
+        }
         for sighting in folded { sighting.book = nil }
         try? context.save()
-        for (_, group) in byBook {
-            guard let book = group.first?.book else { continue }
-            SharedBookSync.shared.remove(group.map(\.id), in: book)
+        for (_, entry) in byBook {
+            SharedBookSync.shared.remove(entry.ids, in: entry.book)
         }
         Haptics.undo()
     }

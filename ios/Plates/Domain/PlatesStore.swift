@@ -205,8 +205,11 @@ enum PlatesStore {
     /// and "earliest to join" among *that* is as likely to be a party host from last
     /// summer as it is to be you. Left unpinned, `IdentityPrompt` asks.
     private static func pinDevicePlayer() {
+        // Through `DevicePlayer.currentID`, which is the accessor for this, rather
+        // than reaching around it to the key. The two clauses here read the same
+        // fact and were reading it from two different stores.
         if DevicePlayer.hasProfile,
-           UserDefaults.standard.string(forKey: DevicePlayer.key) == nil,
+           DevicePlayer.currentID == nil,
            let me = DevicePlayer.current(in: context) {
             DevicePlayer.adopt(me)
         }
