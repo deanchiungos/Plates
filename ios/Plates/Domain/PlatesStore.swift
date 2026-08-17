@@ -37,7 +37,7 @@ enum PlatesStore {
         //
         // Deployment is additive and permanent: record types and fields can never be
         // removed from production, so read the diff before confirming it.
-        let schema = Schema([Trip.self, Book.self, Player.self, Sighting.self])
+        let schema = Schema(models)
 
         // iCloud first. Both configurations point at the same default store file, so
         // this is genuinely a fallback and not a second database: a install that opens
@@ -230,4 +230,30 @@ enum PlatesStore {
         }
         #endif
     }
+
+    /// Every model this app stores.
+    ///
+    /// One list because three places need it, and two of them are check harnesses
+    /// that build their own in-memory container. A model added to the app and not to
+    /// them leaves the harnesses quietly checking a different schema than the one
+    /// that ships — they would still pass, which is the worst way for that to be
+    /// wrong.
+    static let models: [any PersistentModel.Type] = [
+        Trip.self, Book.self, Player.self, Sighting.self
+    ]
+
+    #if DEBUG
+    /// A throwaway store, held in memory and gone when it is released.
+    ///
+    /// For the checks, which need somewhere to build a fixture that is not the
+    /// player's own collection. Emphatically not for anything that ships: nothing
+    /// written here survives, which is the point.
+    static func scratchContext() throws -> ModelContext {
+        let schema = Schema(models)
+        let container = try ModelContainer(
+            for: schema,
+            configurations: ModelConfiguration(schema: schema, isStoredInMemoryOnly: true))
+        return ModelContext(container)
+    }
+    #endif
 }

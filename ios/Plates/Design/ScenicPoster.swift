@@ -232,35 +232,35 @@ struct ScenicPoster: View {
                     // taller than the road it sits next to; set alongside, the three read
                     // as one statement and the two halves of the card are the same height.
                     VStack(alignment: .leading, spacing: 0) {
-                    Text("OF \(Plate.stateTotal) STATES")
-                        .font(Theme.PlateFont.condensed(15))
-                        .tracking(1.5)
-                        .foregroundStyle(Theme.inkMuted)
+                        Text("OF \(Plate.stateTotal) STATES")
+                            .font(Theme.PlateFont.condensed(15))
+                            .tracking(1.5)
+                            .foregroundStyle(Theme.inkMuted)
 
-                    // The mock's green pill, and the one number on the poster that
-                    // says something the big one cannot: how much of this was new.
-                    // Twenty-one states on a drive is impressive until you learn that
-                    // twenty of them were already in the book.
-                    if let newHere, newHere.count > 0 {
-                        HStack(spacing: 5) {
-                            Text("+\(newHere.count)")
-                                .font(Theme.PlateFont.condensed(15))
-                                .monospacedDigit()
-                                .foregroundStyle(Self.fresh)
-                            Text(newHere.label)
-                                .font(Theme.PlateFont.condensed(11))
-                                .tracking(1.1)
-                                .foregroundStyle(Theme.inkMuted)
+                        // The mock's green pill, and the one number on the poster that
+                        // says something the big one cannot: how much of this was new.
+                        // Twenty-one states on a drive is impressive until you learn that
+                        // twenty of them were already in the book.
+                        if let newHere, newHere.count > 0 {
+                            HStack(spacing: 5) {
+                                Text("+\(newHere.count)")
+                                    .font(Theme.PlateFont.condensed(15))
+                                    .monospacedDigit()
+                                    .foregroundStyle(Self.fresh)
+                                Text(newHere.label)
+                                    .font(Theme.PlateFont.condensed(11))
+                                    .tracking(1.1)
+                                    .foregroundStyle(Theme.inkMuted)
+                            }
+                            .padding(.horizontal, 9)
+                            .padding(.vertical, 4)
+                            .background(
+                                Capsule().fill(Self.fresh.opacity(0.13))
+                                    .overlay(Capsule().strokeBorder(Self.fresh.opacity(0.34),
+                                                                    lineWidth: 1))
+                            )
+                            .padding(.top, 7)
                         }
-                        .padding(.horizontal, 9)
-                        .padding(.vertical, 4)
-                        .background(
-                            Capsule().fill(Self.fresh.opacity(0.13))
-                                .overlay(Capsule().strokeBorder(Self.fresh.opacity(0.34),
-                                                                lineWidth: 1))
-                        )
-                        .padding(.top, 7)
-                    }
                     }
                 }
 
@@ -570,7 +570,7 @@ struct ScenicPoster: View {
     /// Its width is fixed at render time by whoever asked for the snapshot — see
     /// `ShareablePoster.road(of:)`, which sizes it to fit exactly this inset.
     private func mapCard(_ route: PosterRoute) -> some View {
-        PosterMapStrip(route: route, startLabel: nil, endLabel: nil)
+        PosterMapStrip(route: route)
             .padding(10)
             .frame(maxWidth: .infinity)
             // Pale blue rather than cream, which is the mock's one departure from the
@@ -616,9 +616,7 @@ struct ScenicPoster: View {
                     PlateTile(
                         plate: plate,
                         isFound: true,
-                        spotterColor: claim?.spotter.map { Theme.playerColor($0.colorIndex) },
-                        spotterInitial: claim?.spotter?.smallFace,
-                        spotterIsEmoji: claim?.spotter?.usesEmoji ?? false,
+                        spotter: claim?.spotter,
                         claimants: others)
                     // A tick in the corner, but only where the corner is free.
                     //
@@ -667,16 +665,11 @@ struct ScenicPoster: View {
         HStack(spacing: 16) {
             ForEach(Array(standings.enumerated()), id: \.element.player.id) { index, entry in
                 HStack(spacing: 7) {
-                    Circle()
-                        .fill(Theme.playerColor(entry.player.colorIndex))
-                        .frame(width: 22, height: 22)
-                        .overlay(
-                            Text(entry.player.face)
-                                .font(entry.player.usesEmoji
-                                      ? .system(size: 12)
-                                      : Theme.PlateFont.condensed(13))
-                                .foregroundStyle(Theme.ink)
-                        )
+                    // Keeps its own type size. The poster is drawn at a fixed
+                    // scale into an image, so it has no overflow to fix — only a
+                    // look to hold still.
+                    PlayerDot(entry.player, size: 22,
+                              glyphSize: entry.player.usesEmoji ? 12 : 13)
                     Text(entry.player.name)
                         .font(.plates(size: 14, weight: .semibold))
                         .foregroundStyle(Theme.ink)

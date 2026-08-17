@@ -104,15 +104,7 @@ struct IdentityPrompt: View {
 
     private func row(_ player: Player) -> some View {
         HStack(spacing: 12) {
-            Circle()
-                .fill(Theme.playerColor(player.colorIndex))
-                .frame(width: 34, height: 34)
-                .overlay(
-                    Text(player.face)
-                        .font(player.usesEmoji ? .system(size: 17)
-                                               : Theme.PlateFont.condensed(15))
-                        .foregroundStyle(Theme.ink)
-                )
+            PlayerDot(player, size: 34)
 
             VStack(alignment: .leading, spacing: 1) {
                 Text(player.name)

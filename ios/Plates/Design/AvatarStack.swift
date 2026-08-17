@@ -33,41 +33,18 @@ struct AvatarStack: View {
         // read as a group and still leaves both initials legible.
         HStack(spacing: -size * 0.32) {
             ForEach(shown) { player in
-                circle(fill: Theme.playerColor(player.colorIndex),
-                       text: player.face,
-                       ink: Theme.ink,
-                       isEmoji: player.usesEmoji)
+                PlayerDot(player, size: size, ring: background)
             }
             if overflow > 0 {
-                circle(fill: background,
-                       text: "+\(overflow)",
-                       ink: Theme.inkMuted,
-                       isEmoji: false)
-                // A neutral circle with no ring would vanish into the background it
-                // is cut from, so it keeps a hairline of its own.
-                .overlay(Circle().strokeBorder(Theme.line, lineWidth: 1))
+                PlayerDot(color: background, text: "+\(overflow)",
+                          size: size, ring: background, ink: Theme.inkMuted)
+                    // A neutral circle with no ring would vanish into the background
+                    // it is cut from, so it keeps a hairline of its own.
+                    .overlay(Circle().strokeBorder(Theme.line, lineWidth: 1))
             }
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(label)
-    }
-
-    private func circle(fill: Color, text: String, ink: Color, isEmoji: Bool) -> some View {
-        Circle()
-            .fill(fill)
-            .frame(width: size, height: size)
-            .overlay(
-                Text(text)
-                    // Emoji get the system face at a slightly larger size: the
-                    // condensed plate font does not carry them, and a glyph drawn
-                    // from a fallback at letter-size sits small in the circle.
-                    .font(isEmoji ? .system(size: size * 0.55)
-                                  : Theme.PlateFont.glyph(size * 0.42))
-                    .foregroundStyle(ink)
-                    .minimumScaleFactor(0.7)
-                    .lineLimit(1)
-            )
-            .overlay(Circle().strokeBorder(background, lineWidth: size * 0.08))
     }
 
     private var label: String {

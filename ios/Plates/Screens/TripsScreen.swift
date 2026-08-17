@@ -986,11 +986,6 @@ struct TripEditor: View {
     /// default for a new one, so the picker and the model cannot disagree about what
     /// "default" means.
     @State private var mode: ScoringMode = .weighted
-    /// Rendered on tap rather than in `body` — see `ShareSheet`.
-    @State private var poster: PosterToShare?
-    /// A trip's poster waits on MapKit for driving directions, which is seconds, not
-    /// milliseconds. Without this the button looked broken for the whole of it.
-    @State private var preparingPoster = false
     @FocusState private var focused: Field?
 
     private enum Field { case name }
@@ -1139,22 +1134,9 @@ struct TripEditor: View {
                 // it spent one commit buried at the bottom of the sheet.
                 if let trip, !isNew {
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button {
-                            preparingPoster = true
-                            Task {
-                                poster = await ShareablePoster.poster(for: trip, players: players)
-                                preparingPoster = false
-                            }
-                        } label: {
-                            if preparingPoster {
-                                ProgressView()
-                            } else {
-                                Image(systemName: "square.and.arrow.up")
-                            }
+                        PosterShareButton(label: "Share this trip") {
+                            await ShareablePoster.poster(for: trip, players: players)
                         }
-                        .tint(Theme.route)
-                        .disabled(preparingPoster)
-                        .accessibilityLabel("Share this trip")
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {
@@ -1168,9 +1150,6 @@ struct TripEditor: View {
                     }
                 }
             }
-        }
-        .sheet(item: $poster) { ready in
-            ShareSheet(items: ready.activityItems)
         }
         .onAppear {
             name = trip?.name ?? ""
@@ -1376,14 +1355,7 @@ struct TripEditor: View {
             Spacer(minLength: 8)
 
             if showingSpotter, let player = sighting.player {
-                Circle()
-                    .fill(Theme.playerColor(player.colorIndex))
-                    .frame(width: 17, height: 17)
-                    .overlay(
-                        Text(player.initial)
-                            .font(Theme.PlateFont.condensed(10))
-                            .foregroundStyle(Theme.ink)
-                    )
+                PlayerDot(player, showing: .initial, size: 17)
             }
 
             Text(logTime(sighting.spottedAt))

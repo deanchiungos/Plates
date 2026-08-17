@@ -7,11 +7,11 @@ import SwiftUI
 struct PlateTile: View {
     let plate: Plate
     let isFound: Bool
-    var spotterColor: Color? = nil
-    var spotterInitial: String? = nil
-    /// True when `spotterInitial` is an emoji rather than a letter, so the chip can
-    /// pick a font that actually has the glyph.
-    var spotterIsEmoji: Bool = false
+    /// Who called it, when exactly one person did. Three parameters before — a
+    /// color, a glyph and a flag saying whether that glyph was an emoji — which is
+    /// the same person taken apart, and every call site put them back together the
+    /// same way. `PlayerDot` takes a player, so the tile can too.
+    var spotter: Player? = nil
     /// Everyone who has banked this plate. Empty or one under the ordinary rules;
     /// several once a party lets more than one person claim the same state.
     var claimants: [Player] = []
@@ -100,14 +100,9 @@ struct PlateTile: View {
             // The white ring is what keeps it legible once the tile is wearing the
             // plate's own artwork behind it.
             if showsProgressDot {
-                VStack {
-                    HStack {
-                        Spacer()
-                        ProgressDot(tier: tier, isFound: isFound)
-                    }
-                    Spacer()
+                pinned(.topTrailing, inset: 5) {
+                    ProgressDot(tier: tier, isFound: isFound)
                 }
-                .padding(5)
             }
 
             // Who spotted it: a chip in the top-left, opposite the rarity pip.
@@ -120,44 +115,24 @@ struct PlateTile: View {
             // three chips in a row would not fit a tile this size anyway. One
             // claimant keeps exactly the chip it always had.
             if isFound, claimants.count > 1 {
-                VStack {
-                    HStack {
-                        AvatarStack(players: claimants, limit: 3, size: 13,
-                                    background: .white.opacity(0.9))
-                        Spacer()
-                    }
-                    Spacer()
+                pinned(.topLeading, inset: 4) {
+                    AvatarStack(players: claimants, limit: 3, size: 13,
+                                background: .white.opacity(0.9))
                 }
-                .padding(4)
-            } else if isFound, let spotterColor, let spotterInitial {
-                VStack {
-                    HStack {
-                        Text(spotterInitial)
-                            .font(spotterIsEmoji ? .system(size: 8)
-                                                 : .plates(size: 8, weight: .heavy))
-                            .foregroundStyle(Theme.ink)
-                            .frame(width: 12, height: 12)
-                            .background(Circle().fill(spotterColor))
-                            .overlay(Circle().strokeBorder(.white.opacity(0.85), lineWidth: 1))
-                        Spacer()
-                    }
-                    Spacer()
+            } else if isFound, let spotter {
+                pinned(.topLeading, inset: 4) {
+                    PlayerDot(spotter, showing: .small, size: 12,
+                              ring: .white.opacity(0.85))
                 }
-                .padding(4)
             }
 
             // bottom-left, so it never collides with the spotter chip above it
             if showsRepeats, repeatCount > 1 {
-                VStack {
-                    Spacer()
-                    HStack {
-                        Text("\(repeatCount)")
-                            .font(.plates(size: 8.5, weight: .heavy))
-                            .foregroundStyle((ink ?? Theme.plateSub).opacity(0.75))
-                        Spacer()
-                    }
+                pinned(.bottomLeading, inset: 5) {
+                    Text("\(repeatCount)")
+                        .font(.plates(size: 8.5, weight: .heavy))
+                        .foregroundStyle((ink ?? Theme.plateSub).opacity(0.75))
                 }
-                .padding(5)
             }
         }
         .aspectRatio(Theme.tileAspect, contentMode: .fit)
@@ -166,6 +141,20 @@ struct PlateTile: View {
         .accessibilityLabel(plate.name)
         .accessibilityValue(accessibilityValue)
         .accessibilityAddTraits(.isButton)
+    }
+
+    /// One small thing in one corner of the tile.
+    ///
+    /// Written out four times as a `VStack` of an `HStack` of the thing and two
+    /// `Spacer`s, which is the pre-alignment way of doing this and reads as three
+    /// nested containers rather than as "top left". Whichever corner is asked for,
+    /// the view still fills the tile, so the ZStack's own sizing is unchanged.
+    private func pinned<Content: View>(_ corner: Alignment,
+                                       inset: CGFloat,
+                                       @ViewBuilder content: () -> Content) -> some View {
+        content()
+            .padding(inset)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: corner)
     }
 
     private var accessibilityValue: String {
@@ -248,7 +237,7 @@ private struct ProgressDot: View {
         PlateTile(plate: Plate.plate(for: "CO")!, isFound: true)
         PlateTile(plate: Plate.plate(for: "AK")!, isFound: false)
         PlateTile(plate: Plate.plate(for: "MT")!, isFound: true,
-                  spotterColor: Theme.playerColor(1))
+                  spotter: Player(name: "Mia", colorIndex: 1))
     }
     .padding()
     .background(Theme.ground)

@@ -106,36 +106,8 @@ struct CoachMark: View {
 
 // MARK: - Anchoring
 
-/// A tip's target: where it is, and which way it wants to be read.
-struct CoachTarget {
-    let anchor: Anchor<CGRect>
-    /// Sit above the target and point down at it, rather than the default below.
-    ///
-    /// For a tile in a grid, below is right: the eye reads downward from the thing
-    /// being described, and what gets covered is more of the same grid. For a row in
-    /// a list it is exactly wrong — the space below a row is the *next* row, so a
-    /// balloon about the Finished section lands squarely on the trip that was just
-    /// filed there, hiding its own evidence. The layer still overrides this when
-    /// there is not room; a preference is not a promise.
-    let prefersAbove: Bool
-}
-
-/// Where each tip's balloon should point, collected from wherever the target is.
-///
-/// A dictionary rather than one anchor because a screen can host several targets at
-/// once — the grid registers a tile for `firstTap` and another for `uncheck` — and
-/// the layer picks whichever the presenter has actually chosen to show.
-struct CoachAnchorKey: PreferenceKey {
-    static let defaultValue: [Coach.Tip: CoachTarget] = [:]
-
-    static func reduce(value: inout [Coach.Tip: CoachTarget],
-                       nextValue: () -> [Coach.Tip: CoachTarget]) {
-        // First one wins. Preference order follows view order, so for a grid this is
-        // the earliest matching tile — and a caller that marks exactly one view (the
-        // usual case) is unaffected either way.
-        value.merge(nextValue()) { existing, _ in existing }
-    }
-}
+/// See `GuideAnchorKey`, which the tour shares.
+typealias CoachAnchorKey = GuideAnchorKey<Coach.Tip>
 
 extension View {
     /// Marks this view as what a tip's balloon points at.
@@ -152,7 +124,7 @@ extension View {
                      active: Bool = true,
                      prefersAbove: Bool = false) -> some View {
         anchorPreference(key: CoachAnchorKey.self, value: .bounds) {
-            active ? [tip: CoachTarget(anchor: $0, prefersAbove: prefersAbove)] : [:]
+            active ? [tip: GuideTarget(anchor: $0, prefersAbove: prefersAbove)] : [:]
         }
     }
 
@@ -253,7 +225,7 @@ struct CoachLayer<Content: View>: View {
         // Below the target unless the caller asked otherwise, and above it anyway
         // when there is not room below — reading downward from the thing being
         // described is the natural direction for a grid, and a balloon above a
-        // target covers whatever heading introduced it. See `CoachTarget` for why a
+        // target covers whatever heading introduced it. See `GuideTarget` for why a
         // list wants the opposite.
         //
         // Judged on room, not on which half of the screen the target sits in. That

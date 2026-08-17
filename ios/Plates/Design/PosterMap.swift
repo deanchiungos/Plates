@@ -31,20 +31,7 @@ struct PosterRoute {
         let road = await RouteCache.shared.directions(from: start, to: end)?.path ?? []
         let framed = road.isEmpty ? [start, end] : road
 
-        let options = MKMapSnapshotter.Options()
-        options.region = region(fitting: framed)
-        options.size = size
-        options.pointOfInterestFilter = .excludingAll
-        // Pinned light. The poster is cream and the app is light-only; a dark map
-        // dropped into it would read as a rendering fault.
-        options.traitCollection = UITraitCollection(userInterfaceStyle: .light)
-
-        let snapshotter = MKMapSnapshotter(options: options)
-        let snapshot: MKMapSnapshotter.Snapshot? = await withCheckedContinuation { cont in
-            snapshotter.start(with: .global(qos: .userInitiated)) { snapshot, _ in
-                cont.resume(returning: snapshot)
-            }
-        }
+        let snapshot = await MapSnapshot.take(of: region(fitting: framed), size: size)
         guard let snapshot else { return nil }
 
         return PosterRoute(image: snapshot.image,
@@ -54,9 +41,12 @@ struct PosterRoute {
                            size: size)
     }
 
-    /// The same asymmetric margin `RouteMap` uses: a strip this shape has MapKit
-    /// grow the latitude span to match the aspect ratio, so vertical padding comes
-    /// free and only the horizontal has to be asked for.
+    /// An asymmetric margin, on the same reasoning `RouteMap` uses and not with the
+    /// same numbers: MapKit grows whichever span the view's aspect ratio needs, so in
+    /// a strip vertical padding comes free and only the horizontal has to be asked
+    /// for. The poster's strip is not the editor's shape, so the two were tuned
+    /// separately and the constants below are this one's. A comment here used to
+    /// claim they matched; they never have.
     private static func region(fitting coords: [CLLocationCoordinate2D]) -> MKCoordinateRegion {
         let lats = coords.map(\.latitude), lons = coords.map(\.longitude)
         guard let minLat = lats.min(), let maxLat = lats.max(),
@@ -77,8 +67,6 @@ struct PosterRoute {
 /// The map strip on a trip's poster: the road, and a plate at each end of it.
 struct PosterMapStrip: View {
     let route: PosterRoute
-    let startLabel: String?
-    let endLabel: String?
 
     var body: some View {
         ZStack {

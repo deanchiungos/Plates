@@ -76,15 +76,95 @@ struct TripCard: View {
     var onSwitch: (() -> Void)?
 
     var body: some View {
+        PlayCard(
+            eyebrow: Text("\(trip.isActive ? "ACTIVE" : "FINISHED") TRIP \u{00B7} DAY \(trip.dayNumber)"),
+            name: trip.name,
+            // The route, when there is one, earns the line that would otherwise
+            // state the scoring mode — where you are going is the more interesting
+            // fact, and the mode still shows in the editor.
+            detail: Text(trip.routeLabel ?? trip.scoringMode.label),
+            detailTint: trip.routeLabel == nil ? Theme.inkMuted : Theme.route.opacity(0.85),
+            // The distance takes this slot when there is one: while you are actually
+            // driving it is the more useful of the two, and the scoring mode has not
+            // changed since you set it.
+            footer: Text(trip.remainingLabel
+                         ?? (trip.routeLabel == nil ? "Start" : trip.scoringMode.label)),
+            footerTint: trip.remainingLabel == nil ? Theme.inkMuted : Theme.route,
+            found: trip.statesFound,
+            switchHint: "Switch to another trip",
+            onSwitch: onSwitch
+        ) {
+            RoadRail(progress: trip.progress, journey: trip.journeyProgress)
+        }
+    }
+}
+
+/// The book's turn at the top of the Drive screen.
+///
+/// Deliberately the same shape and the same rail as `TripCard` — the grid below it
+/// behaves identically either way, so a different-looking header would imply a
+/// difference that isn't there. What changes is the framing: no day counter, no
+/// route, no finish line. A book is open-ended, and the card says so.
+struct BookCard: View {
+    let book: Book
+    /// Tapping the card switches what you are filling. Nil leaves it inert.
+    var onSwitch: (() -> Void)?
+
+    var body: some View {
+        PlayCard(
+            eyebrow: Text("PLATE BOOK"),
+            name: book.name,
+            detail: Text(book.sinceLabel),
+            detailTint: Theme.inkMuted,
+            footer: Text("Collecting"),
+            footerTint: Theme.inkMuted,
+            found: book.statesFound,
+            switchHint: "Switch to a trip or another book",
+            onSwitch: onSwitch
+        ) {
+            RoadRail(progress: book.progress)
+        }
+    }
+}
+
+/// The card at the top of the Drive screen, whichever thing is being filled.
+///
+/// "Deliberately the same shape and the same rail" is what `BookCard` said about
+/// `TripCard`, and it was true twice over: the two were the same sixty lines with
+/// five different strings in them. Two of those lines are accessibility fixes — the
+/// eyebrow that ran to three lines on a small phone at a large text size, the footer
+/// that wrapped and left the count floating — and the book's copy carries a comment
+/// saying it matches the trip's, which is how a fix applied by hand in two places
+/// looks just before somebody fixes only one of them.
+///
+/// Every parameter here is a real difference between a journey and a collection.
+/// Everything not in the list is the same by design, and now by construction.
+private struct PlayCard<Rail: View>: View {
+    /// The small tracked line above the name.
+    let eyebrow: Text
+    let name: String
+    /// The line under the name: where the trip is going, or when the book was begun.
+    let detail: Text
+    let detailTint: Color
+    /// The bottom-left line, opposite the count.
+    let footer: Text
+    let footerTint: Color
+    let found: Int
+    /// Read to VoiceOver in place of "button" — "Switch to another trip".
+    let switchHint: LocalizedStringKey
+    let onSwitch: (() -> Void)?
+    @ViewBuilder var rail: Rail
+
+    var body: some View {
         Button { onSwitch?() } label: {
             VStack(alignment: .leading, spacing: 0) {
                 HStack(alignment: .firstTextBaseline, spacing: 5) {
-                    Text("\(trip.isActive ? "ACTIVE" : "FINISHED") TRIP \u{00B7} DAY \(trip.dayNumber)")
+                    eyebrow
                         .font(.plates(size: 10.5, weight: .bold))
                         .tracking(1.3)
                         .foregroundStyle(Theme.inkMuted)
                         // At an accessibility size this ran to three lines on a
-                        // 320pt phone — "ACTIVE / TRIP · / DAY 1" stacked under a
+                        // 320pt phone — "ACTIVE / TRIP \u{00B7} / DAY 1" stacked under a
                         // SWITCH sitting on the first of them — which reads as the
                         // card having come apart. One line, shrunk to fit.
                         .lineLimit(1)
@@ -104,31 +184,25 @@ struct TripCard: View {
                 }
                 .foregroundStyle(onSwitch != nil ? Theme.route : Theme.inkMuted)
 
-                Text(trip.name)
+                Text(name)
                     .font(.plates(size: 20, weight: .bold))
                     .tracking(-0.3)
                     .foregroundStyle(Theme.ink)
                     .lineLimit(1)
                     .padding(.top, 2)
 
-                // The route, when there is one, earns the line that would
-                // otherwise state the scoring mode — where you are going is the
-                // more interesting fact, and the mode still shows in the editor.
-                Text(trip.routeLabel ?? trip.scoringMode.label)
+                detail
                     .font(.plates(size: 12.5))
-                    .foregroundStyle(trip.routeLabel == nil ? Theme.inkMuted : Theme.route.opacity(0.85))
+                    .foregroundStyle(detailTint)
                     .lineLimit(1)
                     .padding(.top, 1)
 
-                RoadRail(progress: trip.progress, journey: trip.journeyProgress)
+                rail
                     .padding(.top, 14)
 
                 HStack {
-                    // The distance takes this slot when there is one: while you are
-                    // actually driving it is the more useful of the two, and the
-                    // scoring mode has not changed since you set it.
-                    Text(trip.remainingLabel ?? (trip.routeLabel == nil ? "Start" : trip.scoringMode.label))
-                        .foregroundStyle(trip.remainingLabel == nil ? Theme.inkMuted : Theme.route)
+                    footer
+                        .foregroundStyle(footerTint)
                         // "Weighted scoring" wrapped onto two lines at accessibility
                         // sizes and left the count floating between them. One line;
                         // it truncates rather than shrinking, because a
@@ -138,7 +212,7 @@ struct TripCard: View {
                         // pays for to fix a size almost nobody uses.
                         .lineLimit(1)
                     Spacer(minLength: 8)
-                    Text("\(trip.statesFound) of \(Plate.stateTotal)")
+                    Text("\(found) of \(Plate.stateTotal)")
                         .monospacedDigit()
                         .lineLimit(1)
                         .fixedSize(horizontal: true, vertical: false)
@@ -160,89 +234,7 @@ struct TripCard: View {
         .buttonStyle(.plain)
         .disabled(onSwitch == nil)
         .accessibilityElement(children: .combine)
-        .accessibilityHint(onSwitch != nil ? "Switch to another trip" : "")
-    }
-}
-
-/// The book's turn at the top of the Drive screen.
-///
-/// Deliberately the same shape and the same rail as `TripCard` — the grid below it
-/// behaves identically either way, so a different-looking header would imply a
-/// difference that isn't there. What changes is the framing: no day counter, no
-/// route, no finish line. A book is open-ended, and the card says so.
-struct BookCard: View {
-    let book: Book
-    /// Tapping the card switches what you are filling. Nil leaves it inert.
-    var onSwitch: (() -> Void)?
-
-    var body: some View {
-        Button { onSwitch?() } label: {
-            VStack(alignment: .leading, spacing: 0) {
-                HStack(alignment: .firstTextBaseline, spacing: 5) {
-                    Text("PLATE BOOK")
-                        .font(.plates(size: 10.5, weight: .bold))
-                        .tracking(1.3)
-                        .foregroundStyle(Theme.inkMuted)
-                        // As on `TripCard`, and for the same reason: two words are
-                        // enough to wrap at an accessibility size.
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.6)
-                    Spacer(minLength: 8)
-                    if onSwitch != nil {
-                        Text("SWITCH")
-                            .font(.plates(size: 10, weight: .bold))
-                            .tracking(0.9)
-                            .lineLimit(1)
-                            .fixedSize(horizontal: true, vertical: false)
-                        Image(systemName: "chevron.up.chevron.down")
-                            .font(.system(size: 9, weight: .bold))
-                    }
-                }
-                .foregroundStyle(onSwitch != nil ? Theme.route : Theme.inkMuted)
-
-                Text(book.name)
-                    .font(.plates(size: 20, weight: .bold))
-                    .tracking(-0.3)
-                    .foregroundStyle(Theme.ink)
-                    .lineLimit(1)
-                    .padding(.top, 2)
-
-                Text(book.sinceLabel)
-                    .font(.plates(size: 12.5))
-                    .foregroundStyle(Theme.inkMuted)
-                    .lineLimit(1)
-                    .padding(.top, 1)
-
-                RoadRail(progress: book.progress)
-                    .padding(.top, 14)
-
-                HStack {
-                    Text("Collecting")
-                        .lineLimit(1)
-                    Spacer(minLength: 8)
-                    Text("\(book.statesFound) of \(Plate.stateTotal)")
-                        .monospacedDigit()
-                        .lineLimit(1)
-                        .fixedSize(horizontal: true, vertical: false)
-                }
-                .font(.plates(size: 11))
-                .foregroundStyle(Theme.inkMuted)
-                .padding(.top, 2)
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
-            .background(
-                RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
-                    .fill(Theme.surface)
-                    .shadow(color: Theme.ink.opacity(0.06), radius: 1, y: 1)
-                    .shadow(color: Theme.ink.opacity(0.10), radius: 9, y: 4)
-            )
-            .contentShape(Rectangle())
-        }
-        .buttonStyle(.plain)
-        .disabled(onSwitch == nil)
-        .accessibilityElement(children: .combine)
-        .accessibilityHint(onSwitch != nil ? "Switch to a trip or another book" : "")
+        .accessibilityHint(onSwitch != nil ? switchHint : "")
     }
 }
 
@@ -312,23 +304,7 @@ struct PlayerStrip: View {
 
             VStack(spacing: 3) {
                 HStack(spacing: 5) {
-                    Circle()
-                        .fill(color)
-                        .frame(width: 16, height: 16)
-                        .overlay(
-                            Text(entry.player.initial)
-                                // `glyph`, not `condensed`: the circle around it is
-                                // a fixed 16pt, so a letter that scaled with the
-                                // reader's text size grew straight out of it — at
-                                // accessibility sizes the initial was visibly taller
-                                // than the disc it sits in. Same rule `AvatarStack`
-                                // already follows. The name beside it still scales,
-                                // which is the part that is being read.
-                                .font(Theme.PlateFont.glyph(10))
-                                .minimumScaleFactor(0.7)
-                                .lineLimit(1)
-                                .foregroundStyle(Theme.ink)
-                        )
+                    PlayerDot(entry.player, showing: .initial, size: 16)
                     Text(entry.player.name)
                         .font(.plates(size: 11, weight: .semibold))
                         .foregroundStyle(Theme.inkMuted)

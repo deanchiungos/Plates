@@ -285,21 +285,8 @@ private struct HoldToSkipAll: View {
 
 // MARK: - Anchoring
 
-struct TourTarget {
-    let anchor: Anchor<CGRect>
-    let prefersAbove: Bool
-}
-
-struct TourAnchorKey: PreferenceKey {
-    static let defaultValue: [Tour.Stop: TourTarget] = [:]
-
-    static func reduce(value: inout [Tour.Stop: TourTarget],
-                       nextValue: () -> [Tour.Stop: TourTarget]) {
-        // First wins, matching `CoachAnchorKey`: preference order follows view order,
-        // so in a grid this is the earliest matching tile.
-        value.merge(nextValue()) { existing, _ in existing }
-    }
-}
+/// See `GuideAnchorKey`, which the coach marks share.
+typealias TourAnchorKey = GuideAnchorKey<Tour.Stop>
 
 extension View {
     /// Marks this view as what a tour stop points at and cuts the spotlight around.
@@ -307,7 +294,7 @@ extension View {
                     active: Bool = true,
                     prefersAbove: Bool = false) -> some View {
         anchorPreference(key: TourAnchorKey.self, value: .bounds) {
-            active ? [stop: TourTarget(anchor: $0, prefersAbove: prefersAbove)] : [:]
+            active ? [stop: GuideTarget(anchor: $0, prefersAbove: prefersAbove)] : [:]
         }
     }
 

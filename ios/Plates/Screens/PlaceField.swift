@@ -387,20 +387,9 @@ struct RouteMap: View {
             routedEndpoints = key
         }
 
-        let options = MKMapSnapshotter.Options()
-        options.region = routeCoords.count > 1 ? region(fitting: routeCoords) : region
-        options.size = CGSize(width: width, height: Self.height)
-        options.pointOfInterestFilter = .excludingAll
-        // Pinned light: the rest of the app is light-only, and a dark map inside a
-        // white form reads as a rendering bug.
-        options.traitCollection = UITraitCollection(userInterfaceStyle: .light)
-
-        let snapshotter = MKMapSnapshotter(options: options)
-        let result: MKMapSnapshotter.Snapshot? = await withCheckedContinuation { continuation in
-            snapshotter.start(with: .global(qos: .userInitiated)) { snapshot, _ in
-                continuation.resume(returning: snapshot)
-            }
-        }
+        let result = await MapSnapshot.take(
+            of: routeCoords.count > 1 ? region(fitting: routeCoords) : region,
+            size: CGSize(width: width, height: Self.height))
 
         guard !Task.isCancelled else { return }
         if let result { snapshot = result } else { failed = true }
@@ -453,16 +442,5 @@ struct RouteMap: View {
             return nil
         }
         return (found.path, found.summary)
-    }
-
-    private static func summarise(_ route: MKRoute) -> String {
-        let distance = MKDistanceFormatter()
-        distance.unitStyle = .abbreviated
-
-        let hours = Int(route.expectedTravelTime) / 3600
-        let minutes = (Int(route.expectedTravelTime) % 3600) / 60
-        let time = hours > 0 ? "\(hours) hr \(minutes) min" : "\(minutes) min"
-
-        return "\(distance.string(fromDistance: route.distance)) \u{00B7} \(time)"
     }
 }

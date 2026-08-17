@@ -94,6 +94,15 @@ struct ProgressWidgetView: View {
     /// legible. The rarest find earns its line here over a second count: two totals
     /// side by side is what every other app's widget looks like.
     private var small: some View {
+        column
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+    }
+
+    /// The four lines and the bar, which are the whole of the small widget and the
+    /// left-hand third of the medium one. Written out twice before, identically —
+    /// and the medium widget's own doc says its left column *is* the small widget,
+    /// so the two were always meant to stay in step.
+    private var column: some View {
         VStack(alignment: .leading, spacing: 5) {
             label(kindLabel)
             title(name)
@@ -102,7 +111,6 @@ struct ProgressWidgetView: View {
             Spacer(minLength: 0)
             detail
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
     }
 
     // MARK: Medium
@@ -116,15 +124,8 @@ struct ProgressWidgetView: View {
     /// thing a number can never tell you.
     private var medium: some View {
         HStack(alignment: .top, spacing: 14) {
-            VStack(alignment: .leading, spacing: 5) {
-                label(kindLabel)
-                title(name)
-                count(snapshot.states)
-                bar(snapshot.states)
-                Spacer(minLength: 0)
-                detail
-            }
-            .frame(width: 118, alignment: .topLeading)
+            column
+                .frame(width: 118, alignment: .topLeading)
 
             CodeGrid(found: Set(snapshot.foundCodes))
         }

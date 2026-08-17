@@ -35,9 +35,6 @@ struct CollectionScreen: View {
     @Environment(TourGuide.self) private var tour
 
     @State private var allTime = false
-    /// The one-pager, rendered on tap — see `ShareSheet`.
-    @State private var poster: PosterToShare?
-    @State private var preparingPoster = false
     @State private var selected: String?
     @State private var creatingBook = false
     @State private var editingBook: Book?
@@ -122,24 +119,11 @@ struct CollectionScreen: View {
                 // editor to reach it. This tab *is* the collection; the album you are
                 // looking at is the thing you would want to send somebody.
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        preparingPoster = true
-                        Task {
-                            poster = await renderPoster()
-                            preparingPoster = false
-                        }
-                    } label: {
-                        if preparingPoster {
-                            ProgressView()
-                        } else {
-                            Image(systemName: "square.and.arrow.up")
-                        }
+                    PosterShareButton(label: showingAllTime
+                                      ? "Share your all-time collection"
+                                      : "Share this book") {
+                        await renderPoster()
                     }
-                    .tint(Theme.route)
-                    .disabled(preparingPoster)
-                    .accessibilityLabel(showingAllTime
-                                        ? "Share your all-time collection"
-                                        : "Share this book")
                     .tourAnchor(.booksShare)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
@@ -163,9 +147,6 @@ struct CollectionScreen: View {
                             entry: scoped.entry(for: pick.code),
                             elsewhere: lifetime.entry(for: pick.code),
                             scopeName: scopeName)
-        }
-        .sheet(item: $poster) { ready in
-            ShareSheet(items: ready.activityItems)
         }
         .sheet(isPresented: $creatingBook) {
             BookEditor(book: nil, onClear: nil, onDelete: nil)
@@ -939,11 +920,8 @@ struct BookEditor: View {
 
     @State private var name = ""
     @FocusState private var focused: Bool
-    /// The one-pager, rendered on tap rather than in `body` — see `ShareSheet`.
-    /// Distinct from `sharing`, which is the CloudKit invitation: one hands somebody
-    /// a picture, the other hands them write access.
-    @State private var poster: PosterToShare?
-    @State private var preparingPoster = false
+    /// The CloudKit invitation, which is a different thing from the poster button
+    /// beside it: one hands somebody a picture, the other hands them write access.
     @State private var sharing: SharePayload?
     @State private var shareTrouble: String?
     @State private var preparingShare = false
@@ -996,9 +974,6 @@ struct BookEditor: View {
                     .padding(Theme.screenPadding)
                 }
             }
-            .sheet(item: $poster) { ready in
-                ShareSheet(items: ready.activityItems)
-            }
             .sheet(item: $sharing) { payload in
                 CloudShareSheet(share: payload.share,
                                 container: payload.container) { sharing = nil }
@@ -1015,22 +990,9 @@ struct BookEditor: View {
                 // the person who asked for the feature could not find it.
                 if let book, !isNew {
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button {
-                            preparingPoster = true
-                            Task {
-                                poster = await ShareablePoster.poster(for: book, players: players)
-                                preparingPoster = false
-                            }
-                        } label: {
-                            if preparingPoster {
-                                ProgressView()
-                            } else {
-                                Image(systemName: "square.and.arrow.up")
-                            }
+                        PosterShareButton(label: "Share this book") {
+                            await ShareablePoster.poster(for: book, players: players)
                         }
-                        .tint(Theme.route)
-                        .disabled(preparingPoster)
-                        .accessibilityLabel("Share this book")
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {

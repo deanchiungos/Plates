@@ -103,15 +103,11 @@ struct SettingsScreen: View {
                 editingMe = true
             } label: {
                 HStack(spacing: 12) {
-                    Circle()
-                        .fill(Theme.playerColor(me?.colorIndex ?? 0))
-                        .frame(width: 32, height: 32)
-                        .overlay(
-                            Text(me?.face ?? "?")
-                                .font(me?.usesEmoji == true ? .system(size: 17)
-                                                        : Theme.PlateFont.condensed(15))
-                                .foregroundStyle(Theme.ink)
-                        )
+                    if let me {
+                        PlayerDot(me, size: 32)
+                    } else {
+                        PlayerDot(color: Theme.playerColor(0), text: "?", size: 32)
+                    }
 
                     Text(me?.name ?? "Me")
                         .font(.plates(size: 15, weight: .semibold))
@@ -156,15 +152,7 @@ struct SettingsScreen: View {
                 ForEach(Array(others.enumerated()), id: \.element.id) { index, player in
                     if index > 0 { SettingsDivider() }
                     HStack(spacing: 12) {
-                        Circle()
-                            .fill(Theme.playerColor(player.colorIndex))
-                            .frame(width: 26, height: 26)
-                            .overlay(
-                                Text(player.face)
-                                    .font(player.usesEmoji ? .system(size: 14)
-                                                           : Theme.PlateFont.condensed(12))
-                                    .foregroundStyle(Theme.ink)
-                            )
+                        PlayerDot(player, size: 26)
 
                         VStack(alignment: .leading, spacing: 1) {
                             Text(player.name)

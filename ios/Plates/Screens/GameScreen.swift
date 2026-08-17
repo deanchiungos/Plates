@@ -851,9 +851,7 @@ struct GameScreen: View {
                     PlateTile(
                         plate: plate,
                         isFound: found,
-                        spotterColor: spotter.map { Theme.playerColor($0.colorIndex) },
-                        spotterInitial: spotter?.smallFace,
-                        spotterIsEmoji: spotter?.usesEmoji ?? false,
+                        spotter: spotter,
                         claimants: shared ? index.claimants(plate.code) : [],
                         repeatCount: index.count(plate.code),
                         showsRepeats: unlimited,

@@ -106,3 +106,47 @@ enum ShareInvite {
         return sentence + "\n" + storeURL
     }
 }
+
+/// The share button, everywhere sharing a poster is offered.
+///
+/// Three screens had this written out: the Books tab, the book editor and the trip
+/// editor. Each carried two pieces of state, a `Task` that flipped one of them either
+/// side of an await, a button that swapped its icon for a spinner, and a `.sheet`
+/// somewhere else in the file bound to the other. Four separate things that only make
+/// sense together, kept in sync by hand in three places.
+///
+/// The spinner is not decoration. A trip's poster waits on MapKit for driving
+/// directions, which is seconds rather than milliseconds, and without it the button
+/// simply looked broken for the whole of that.
+struct PosterShareButton: View {
+    /// What this shares, said the way VoiceOver should read it: "Share this trip".
+    let label: LocalizedStringKey
+    /// Deferred rather than rendered up front, because rendering costs a map
+    /// snapshot and most people never tap it. See `ShareSheet`.
+    let make: () async -> PosterToShare?
+
+    @State private var poster: PosterToShare?
+    @State private var preparing = false
+
+    var body: some View {
+        Button {
+            preparing = true
+            Task {
+                poster = await make()
+                preparing = false
+            }
+        } label: {
+            if preparing {
+                ProgressView()
+            } else {
+                Image(systemName: "square.and.arrow.up")
+            }
+        }
+        .tint(Theme.route)
+        .disabled(preparing)
+        .accessibilityLabel(label)
+        .sheet(item: $poster) { ready in
+            ShareSheet(items: ready.activityItems)
+        }
+    }
+}

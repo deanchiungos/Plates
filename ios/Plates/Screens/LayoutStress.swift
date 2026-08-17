@@ -348,12 +348,10 @@ enum LayoutStress {
         return renderer.uiImage
     }
 
+    /// See `PlatesStore.scratchContext` — the schema lives with the store, so this
+    /// harness cannot end up checking a different one than the app ships.
     private static func makeStore() throws -> ModelContext {
-        let schema = Schema([Trip.self, Book.self, Player.self, Sighting.self])
-        let container = try ModelContainer(
-            for: schema,
-            configurations: ModelConfiguration(schema: schema, isStoredInMemoryOnly: true))
-        return ModelContext(container)
+        try PlatesStore.scratchContext()
     }
 }
 
