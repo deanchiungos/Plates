@@ -119,7 +119,7 @@ struct MoreScreen: View {
     /// anyone reads that, and it made the bottom of the screen look like the end of a
     /// pamphlet rather than the end of a list.
     private var footer: some View {
-        Text("PLATES")
+        Text("TAGS")
             .font(Theme.PlateFont.condensed(15))
             .tracking(3)
             .foregroundStyle(Theme.inkMuted.opacity(0.75))

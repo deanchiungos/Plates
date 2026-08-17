@@ -95,7 +95,7 @@ enum PlatesStore {
     /// forever.
     ///
     /// Every caller already handles nil, and says something better than a trip
-    /// nobody asked for: "Start a trip or a book in Plates first."
+    /// nobody asked for: "Start a trip or a book in Tags first."
     static func currentTarget() -> (any PlateCollection)? {
         let trips = (try? context.fetch(FetchDescriptor<Trip>(
             sortBy: [SortDescriptor(\.startedAt, order: .reverse)]))) ?? []

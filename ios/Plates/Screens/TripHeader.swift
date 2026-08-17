@@ -463,8 +463,8 @@ struct TrackingHintCard: View {
                 : "Moves the car along your route and makes plates from far away worth more. Only while the app is open."
         case .denied:
             return isBook
-                ? "Turn it on for Plates in Settings and rarity follows you instead of using national averages."
-                : "Turn it on for Plates in Settings to see the car and have rarity follow you."
+                ? "Turn it on for Tags in Settings and rarity follows you instead of using national averages."
+                : "Turn it on for Tags in Settings to see the car and have rarity follow you."
         case .needsDestination:
             // "The rail" is what this file calls the progress bar. Nobody outside
             // this file has ever heard the word.

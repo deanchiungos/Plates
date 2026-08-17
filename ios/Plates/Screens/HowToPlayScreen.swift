@@ -100,7 +100,7 @@ struct HowToPlayScreen: View {
     private var together: some View {
         SettingsGroup("Playing together") {
             Illustration { Art.together }
-            Paragraph("A party is for everyone in one car. Each person opens Plates on their own phone, one of you starts the party, and the rest join over the local network. From then on the same drive is scored on every phone, and a small colored circle on each tile shows who called it. No accounts, and no cell signal needed.")
+            Paragraph("A party is for everyone in one car. Each person opens Tags on their own phone, one of you starts the party, and the rest join over the local network. From then on the same drive is scored on every phone, and a small colored circle on each tile shows who called it. No accounts, and no cell signal needed.")
             Paragraph("A shared book is for people who are not in the same car. Invite someone to a book you own and you can both add plates to it from wherever you are, through iCloud.")
         }
     }
@@ -113,8 +113,8 @@ struct HowToPlayScreen: View {
             // nothing at all, so these two sentences are load-bearing rather than
             // editorial: they must match `PlatesShortcuts` exactly, and if a phrase
             // is changed there it has to be changed here in the same commit.
-            Paragraph("You can also start it without touching anything. Say \u{201C}Hey Siri, start voice mode in Plates\u{201D}, or just \u{201C}Hey Siri, Plates voice mode\u{201D}.")
-            Paragraph("If the voice reading plates back sounds robotic, that is the basic voice your iPhone comes with. Open \(VoiceSpeaker.voiceSettingsPath), download one marked Enhanced or Premium, and Plates will start using it right away.")
+            Paragraph("You can also start it without touching anything. Say \u{201C}Hey Siri, start voice mode in Tags\u{201D}, or just \u{201C}Hey Siri, Tags voice mode\u{201D}.")
+            Paragraph("If the voice reading plates back sounds robotic, that is the basic voice your iPhone comes with. Open \(VoiceSpeaker.voiceSettingsPath), download one marked Enhanced or Premium, and Tags will start using it right away.")
         }
     }
 

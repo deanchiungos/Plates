@@ -38,7 +38,7 @@ struct WelcomeCard: View {
 
                 // The More tab's wordmark treatment, at the size it would be if it
                 // were ever the subject rather than a footer.
-                Text("PLATES")
+                Text("TAGS")
                     .font(Theme.PlateFont.condensed(44))
                     .tracking(7)
                     .foregroundStyle(Theme.ink)

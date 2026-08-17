@@ -503,7 +503,7 @@ final class PartySession {
             // Local Network is the one setting that lets two phones see each other
             // and refuse to connect, it is off by accident more often than not, and
             // nothing in the transport reports it, so the app has to say it out loud.
-            trouble = String(localized: "Your code was right and \(target.hostName)'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap \(target.tripName) again.")
+            trouble = String(localized: "Your code was right and \(target.hostName)'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Tags, and check that Local Network is on. Then tap \(target.tripName) again.")
         }
     }
 
@@ -698,7 +698,7 @@ final class PartySession {
             return
         }
         guard let envelope else {
-            trouble = String(localized: "\(peer.displayName) is running a different version of Plates.")
+            trouble = String(localized: "\(peer.displayName) is running a different version of Tags.")
             return
         }
 

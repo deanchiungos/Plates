@@ -282,7 +282,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Plates uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Tags uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,6 +294,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 0.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eggeppel.plates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -314,7 +315,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Plates uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Tags uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,6 +327,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 0.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eggeppel.plates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -343,7 +345,7 @@
 				DEVELOPMENT_TEAM = 62ACKJXLHH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlatesWidgetInfo.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Plates;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -370,7 +372,7 @@
 				DEVELOPMENT_TEAM = 62ACKJXLHH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlatesWidgetInfo.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Plates;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (

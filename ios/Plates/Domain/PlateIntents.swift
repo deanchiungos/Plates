@@ -10,7 +10,7 @@ import SwiftData
 //
 // One platform constraint worth knowing: an App Shortcut phrase **must** contain the
 // app name. "Hey Siri, log a New Jersey plate" cannot be registered by an app; it has
-// to be "…in Plates". Users can rename any of these to whatever they like in the
+// to be "…in Tags". Users can rename any of these to whatever they like in the
 // Shortcuts app, which is the supported way to get a shorter phrase.
 
 // MARK: - The plate as something Siri can name
@@ -138,7 +138,7 @@ struct LogPlateIntent: AppIntent {
             return .result(dialog: "I do not know that plate.")
         }
         guard let trip = PlatesStore.currentTarget() else {
-            return .result(dialog: "Start a trip or a book in Plates first.")
+            return .result(dialog: "Start a trip or a book in Tags first.")
         }
 
         // Unless the car is playing shared claims and this phone has not banked it
@@ -268,7 +268,7 @@ struct RarestFindIntent: AppIntent {
 
 // MARK: - Hands free
 
-/// "Hey Siri, start voice mode in Plates" — and then stop talking to Siri.
+/// "Hey Siri, start voice mode in Tags" — and then stop talking to Siri.
 ///
 /// The other intents here each do one thing per invocation, which is right for "have
 /// I logged Ohio" and wrong for a drive. This one opens the app's own voice mode and
@@ -282,7 +282,7 @@ struct RarestFindIntent: AppIntent {
 struct StartVoiceModeIntent: AppIntent {
     static var title: LocalizedStringResource = "Start voice mode"
     static var description = IntentDescription(
-        "Opens Plates and starts listening, so you can call out plates without touching anything.")
+        "Opens Tags and starts listening, so you can call out plates without touching anything.")
     static var openAppWhenRun = true
 
     /// Optional, and never in a spoken phrase any more — see `PlatesShortcuts` for

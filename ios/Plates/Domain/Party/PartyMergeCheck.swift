@@ -459,7 +459,7 @@ enum PartyMergeCheck {
     /// The widget's way back in.
     ///
     /// Whether the app delegate is handed the URL at all cannot be checked from
-    /// here — `simctl openurl` raises an "Open in Plates?" confirmation that a real
+    /// here — `simctl openurl` raises an "Open in Tags?" confirmation that a real
     /// widget tap does not, and there is no way to press it without a finger. What
     /// *is* checkable is everything after: that only this app's URLs are claimed, and
     /// that a destination is consumed once rather than re-navigating on every return

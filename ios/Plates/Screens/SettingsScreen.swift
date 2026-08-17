@@ -369,7 +369,7 @@ struct SettingsScreen: View {
         let bundle = Bundle.main.infoDictionary
         let short = bundle?["CFBundleShortVersionString"] as? String ?? "1.0"
         let build = bundle?["CFBundleVersion"] as? String ?? "1"
-        return Text("Plates \(short) (\(build))")
+        return Text("Tags \(short) (\(build))")
             .font(.plates(size: 11.5))
             .foregroundStyle(Theme.inkMuted.opacity(0.8))
             .padding(.top, 2)

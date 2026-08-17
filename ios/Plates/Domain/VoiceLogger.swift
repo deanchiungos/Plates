@@ -366,7 +366,7 @@ final class VoiceLogger {
 
     /// Marks a plate as just logged without logging it.
     ///
-    /// For the one that arrived through Siri — "log New Jersey in Plates". It is on
+    /// For the one that arrived through Siri — "log New Jersey in Tags". It is on
     /// the board before the microphone opens, and the person who said it is quite
     /// likely to say it again while watching to see whether it worked. Putting it
     /// straight into the cooldown makes that second call-out a no-op rather than a

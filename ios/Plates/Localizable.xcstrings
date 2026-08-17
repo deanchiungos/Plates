@@ -43,7 +43,7 @@
     "%@ is finished" : {
 
     },
-    "%@ is running a different version of Plates." : {
+    "%@ is running a different version of Tags." : {
 
     },
     "%@ spotted that one." : {
@@ -99,12 +99,12 @@
         }
       }
     },
-    "%@: %lld states spotted on Plates." : {
+    "%@: %lld states spotted on Tags." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "%1$@: %2$lld states spotted on Plates."
+            "value" : "%1$@: %2$lld states spotted on Tags."
           }
         }
       }
@@ -256,7 +256,7 @@
     "A nudge if a trip goes a day without a plate." : {
 
     },
-    "A party is for everyone in one car. Each person opens Plates on their own phone, one of you starts the party, and the rest join over the local network. From then on the same drive is scored on every phone, and a small colored circle on each tile shows who called it. No accounts, and no cell signal needed." : {
+    "A party is for everyone in one car. Each person opens Tags on their own phone, one of you starts the party, and the rest join over the local network. From then on the same drive is scored on every phone, and a small colored circle on each tile shows who called it. No accounts, and no cell signal needed." : {
 
     },
     "A party pools what everyone spots. Nobody has to hand their phone around, and it works with no signal at all." : {
@@ -757,7 +757,7 @@
     "iCloud is busy. This will try again on its own." : {
 
     },
-    "If the voice reading plates back sounds robotic, that is the basic voice your iPhone comes with. Open %@, download one marked Enhanced or Premium, and Plates will start using it right away." : {
+    "If the voice reading plates back sounds robotic, that is the basic voice your iPhone comes with. Open %@, download one marked Enhanced or Premium, and Tags will start using it right away." : {
 
     },
     "IN ISSUE" : {
@@ -1056,7 +1056,7 @@
     "Open Settings" : {
 
     },
-    "Opens Plates and starts listening, so you can call out plates without touching anything." : {
+    "Opens Tags and starts listening, so you can call out plates without touching anything." : {
 
     },
     "Other" : {
@@ -1116,21 +1116,8 @@
     "plates" : {
 
     },
-    "PLATES" : {
-
-    },
     "PLATES · IN ORDER FOUND" : {
 
-    },
-    "Plates %@ (%@)" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Plates %1$@ (%2$@)"
-          }
-        }
-      }
     },
     "Plates from far away start scoring higher as soon as we find you." : {
 
@@ -1406,7 +1393,7 @@
     "Start a trip" : {
 
     },
-    "Start a trip or a book in Plates first." : {
+    "Start a trip or a book in Tags first." : {
 
     },
     "Start either one from its own tab. Tap SWITCH at the top of the Game tab to choose which one your taps go into." : {
@@ -1469,6 +1456,19 @@
     },
     "Switch to another trip" : {
 
+    },
+    "TAGS" : {
+
+    },
+    "Tags %@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Tags %1$@ (%2$@)"
+          }
+        }
+      }
     },
     "Tap a plate on the Game tab to collect it." : {
 
@@ -1617,10 +1617,10 @@
     "TRY ONE" : {
 
     },
-    "Turn it on for Plates in Settings and rarity follows you instead of using national averages." : {
+    "Turn it on for Tags in Settings and rarity follows you instead of using national averages." : {
 
     },
-    "Turn it on for Plates in Settings to see the car and have rarity follow you." : {
+    "Turn it on for Tags in Settings to see the car and have rarity follow you." : {
 
     },
     "Turn on in Settings" : {
@@ -1726,7 +1726,7 @@
     "You are sharing this book. Anything they add appears here, and anything you add appears for them." : {
 
     },
-    "You can also start it without touching anything. Say “Hey Siri, start voice mode in Plates”, or just “Hey Siri, Plates voice mode”." : {
+    "You can also start it without touching anything. Say “Hey Siri, start voice mode in Tags”, or just “Hey Siri, Tags voice mode”." : {
 
     },
     "You did not spot anything on this one. You can keep the copy anyway, or throw it away. Everybody else keeps theirs either way." : {
@@ -1770,12 +1770,12 @@
     "Your code" : {
 
     },
-    "Your code was right and %@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap %@ again." : {
+    "Your code was right and %@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Tags, and check that Local Network is on. Then tap %@ again." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Your code was right and %1$@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Plates, and check that Local Network is on. Then tap %2$@ again."
+            "value" : "Your code was right and %1$@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Tags, and check that Local Network is on. Then tap %2$@ again."
           }
         }
       }

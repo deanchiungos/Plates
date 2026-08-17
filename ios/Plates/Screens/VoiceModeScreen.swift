@@ -41,7 +41,7 @@ struct VoiceModeScreen: View {
     /// `-voice "new jersey ohio thats a texas"`.
     static var launchTranscript: String? { Self.argument("-voice") }
 
-    /// `-siri NJ` stands in for "Hey Siri, log New Jersey in Plates", which is
+    /// `-siri NJ` stands in for "Hey Siri, log New Jersey in Tags", which is
     /// otherwise only reachable by actually talking to Siri on a real phone.
     static var launchPlate: String? { Self.argument("-siri") }
 
@@ -116,7 +116,7 @@ struct VoiceModeScreen: View {
             #endif
             await voice.start()
 
-            // "Log New Jersey in Plates" arrives with the plate already named. Log it
+            // "Log New Jersey in Tags" arrives with the plate already named. Log it
             // and let the confirmation stand in for the greeting — being asked "what
             // did you see?" immediately after saying what you saw is the kind of thing
             // that makes people stop trusting a voice interface.

@@ -48,7 +48,7 @@ struct GameScreen: View {
                                 || VoiceModeScreen.launchPlate != nil
     #else
     // Never on launch. Voice mode opens from the waveform button or from Siri's
-    // "log plates in Plates", and from nowhere else.
+    // "log plates in Tags", and from nowhere else.
     @State private var listening = false
     #endif
     @State private var namingMe = false
@@ -408,7 +408,7 @@ struct GameScreen: View {
                     listening = true
                 }
                 // Nothing else opens the microphone. Launching the app by tapping its
-                // icon is indistinguishable from launching it by saying "open Plates"
+                // icon is indistinguishable from launching it by saying "open Tags"
                 // — no intent runs in either case — so an auto-start keyed on launch
                 // would open the microphone every time the app is opened at all. The
                 // Siri phrase below is the route that can actually tell the difference.
