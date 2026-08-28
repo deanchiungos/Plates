@@ -83,6 +83,7 @@ enum Tour {
         case booksAlbum         // the album itself
 
         // Trips
+        case tripsIntro         // what a Trip is, before any of the controls
         case tripsNew           // start one
         case tripsRow           // swipe for pin and done
         case tripsFinished      // where they file themselves
@@ -116,7 +117,7 @@ enum Tour {
             case .gameTarget, .gameVoice, .gameFilter, .gameGrid, .gameParty: .game
             case .mapMode, .mapRegion, .mapLegend: .map
             case .booksScope, .booksShare, .booksAlbum: .books
-            case .tripsNew, .tripsRow, .tripsFinished: .trips
+            case .tripsIntro, .tripsNew, .tripsRow, .tripsFinished: .trips
             case .moreParty, .moreTrail, .moreHowTo: .more
             case .partyWhat, .partyHost, .partyJoin: .party
             case .trailScopeBar, .trailMap, .trailSummary: .trail

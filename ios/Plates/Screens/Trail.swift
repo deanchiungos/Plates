@@ -156,10 +156,10 @@ struct TrailScreen: View {
 
     /// What this screen's tour stops say. Out of the chain, not out of the
     /// file — see `coachLayer`.
-    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
-        .trailScopeBar: "The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever.",
-        .trailMap: "One pin for every plate, dropped where you were standing when you called it. Plates spotted in the same place stack into a deck you can open.",
-        .trailSummary: "How far the drive ran, and how much of it you were spotting on."
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .trailScopeBar: TourWords("The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever."),
+        .trailMap: TourWords("One pin for every plate, dropped where you were standing when you called it. Plates spotted in the same place stack into a deck you can open."),
+        .trailSummary: TourWords("How far the drive ran, and how much of it you were spotting on.")
     ]
 
     /// Which stops this screen can host.

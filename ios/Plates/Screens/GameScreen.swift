@@ -282,12 +282,12 @@ struct GameScreen: View {
         return [.gameTarget, .gameVoice, .gameFilter, .gameParty, .gameGrid]
     }
 
-    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
-        .gameTarget: "This is what you are filling right now. Tap it to switch between a trip and a book, or to start another one.",
-        .gameVoice: "Driving, or hands full of snacks? Tap this and just say the states out loud as you see them.",
-        .gameFilter: "Hide the ones you have already found, or turn whole sets off. Canada and the bonus plates live in here.",
-        .gameParty: "Everyone in the car keeps their own phone. Start a Party and every plate anybody spots lands in the same score.",
-        .gameGrid: "And that is the game. See one on the road, tap its plate. The rarer it is where you're heading, the more it is worth."
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .gameTarget: TourWords("This is your active Game. Tap Switch to choose a different Book or Trip to collect into."),
+        .gameVoice: TourWords("Driving, or hands full of snacks? Tap this and use your voice to collect into your active Game."),
+        .gameFilter: TourWords("Too many plates? Hide plates you've already collected, or choose which plate sets to show."),
+        .gameParty: TourWords("Start a Party! Anyone in the car can join from their own phone and compete to collect plates into the same Game."),
+        .gameGrid: TourWords("See a plate on the road? Tap the state to collect it into your active Game. Tap it again if you need to take it back.")
     ]
 
     /// The grid, or the fork that offers to make something to fill.

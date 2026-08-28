@@ -18,7 +18,32 @@ import SwiftUI
 /// the tour you are standing in and is a tap, because it costs you one screen's worth
 /// of explanation and the next tab will offer its own. "Hold to skip all" ends every
 /// tour and every balloon, so it is a hold — see `HoldToSkipAll`.
+/// What one stop says.
+///
+/// A headline and a sentence rather than one paragraph. The bubble covers the screen
+/// it is describing, so the first thing read has to name the subject — "Explore your
+/// Trail" tells you what you are looking at before the sentence explains it, and a
+/// reader who is only skimming to get the tour over with still leaves knowing what
+/// the thing was called.
+///
+/// The title is optional because a few stops answer a question rather than naming a
+/// thing, and a headline over those would be a label on a label.
+struct TourWords {
+    var title: LocalizedStringResource?
+    var body: LocalizedStringResource
+
+    init(_ title: LocalizedStringResource, _ body: LocalizedStringResource) {
+        self.title = title
+        self.body = body
+    }
+
+    init(_ body: LocalizedStringResource) {
+        self.body = body
+    }
+}
+
 struct TourBubble: View {
+    var title: LocalizedStringResource?
     let text: LocalizedStringResource
     let step: Int
     let total: Int
@@ -43,12 +68,21 @@ struct TourBubble: View {
             if pointing == .top { notch(up: true) }
 
             VStack(alignment: .leading, spacing: 11) {
-                Text(text)
-                    .font(.plates(size: 14, weight: .medium))
-                    .foregroundStyle(.white)
-                    .multilineTextAlignment(.leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                VStack(alignment: .leading, spacing: 5) {
+                    if let title {
+                        Text(title)
+                            .font(.plates(size: 15, weight: .bold))
+                            .foregroundStyle(.white)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    Text(text)
+                        .font(.plates(size: 14, weight: .medium))
+                        .foregroundStyle(.white.opacity(0.92))
+                        .multilineTextAlignment(.leading)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
 
                 controls
             }
@@ -312,7 +346,7 @@ extension View {
 
     /// Hosts the tour for one screen. Goes last in the screen's modifier chain.
     func tourLayer(_ screen: Tour.Screen,
-                   _ copy: [Tour.Stop: LocalizedStringResource]) -> some View {
+                   _ copy: [Tour.Stop: TourWords]) -> some View {
         TourLayer(screen: screen, copy: copy) { self }
     }
 }
@@ -385,7 +419,7 @@ struct TourLayer<Content: View>: View {
     @Environment(Router.self) private var router
 
     let screen: Tour.Screen
-    let copy: [Tour.Stop: LocalizedStringResource]
+    let copy: [Tour.Stop: TourWords]
     @ViewBuilder var content: Content
 
     private let gap: CGFloat = 10
@@ -393,8 +427,8 @@ struct TourLayer<Content: View>: View {
 
     /// A deliberate over-estimate of the bubble's height, scaled for text size. Same
     /// reasoning as `CoachLayer.roomNeeded`, with more to reserve: this bubble carries
-    /// two rows of controls under its sentence.
-    @ScaledMetric(relativeTo: .footnote) private var roomNeeded: CGFloat = 215
+    /// two rows of controls under its sentence, and now a headline over it.
+    @ScaledMetric(relativeTo: .footnote) private var roomNeeded: CGFloat = 245
 
     var body: some View {
         content.overlayPreferenceValue(TourAnchorKey.self) { anchors in
@@ -424,7 +458,7 @@ struct TourLayer<Content: View>: View {
     /// is a bug report.
     @ViewBuilder
     private func stage(_ stop: Tour.Stop,
-                       _ words: LocalizedStringResource,
+                       _ words: TourWords,
                        target: CGRect?,
                        prefersAbove: Bool,
                        in bounds: CGSize) -> some View {
@@ -495,7 +529,7 @@ struct TourLayer<Content: View>: View {
     }
 
     private func bubble(_ stop: Tour.Stop,
-                        _ words: LocalizedStringResource,
+                        _ words: TourWords,
                         target: CGRect,
                         prefersAbove: Bool,
                         in bounds: CGSize) -> some View {
@@ -515,7 +549,8 @@ struct TourLayer<Content: View>: View {
             Color.clear.allowsHitTesting(false)
 
             TourBubble(
-                text: words,
+                title: words.title,
+                text: words.body,
                 step: tour.step,
                 total: tour.total,
                 actionTitle: handoff.map { String(localized: "Go to \($0.tabName)") }

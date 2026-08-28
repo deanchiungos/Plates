@@ -107,10 +107,13 @@ struct MoreScreen: View {
 
     /// What this screen's tour stops say. Out of the chain, not out of the
     /// file — see `coachLayer`.
-    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
-        .moreParty: "Everyone in the car keeps their own phone. Start a Party here and your plates pool into one score.",
-        .moreTrail: "The Trail is the map of where you actually were when you spotted each plate.",
-        .moreHowTo: "That is the whole app. Everything you have just been shown lives in here, any time you want it again."
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .moreParty: TourWords("Party is here too",
+                              "You can also start a Party here whenever you want to play with others. Everyone keeps their own phone, and what you all spot pools into one game."),
+        .moreTrail: TourWords("Explore your Trail",
+                              "See where you were when you collected each plate and look back on where the game has taken you."),
+        .moreHowTo: TourWords("Need a refresher?",
+                              "How to play is always here anytime you need a quick reminder.")
     ]
 
     /// The wordmark, and the thing that stops the last card floating in space.

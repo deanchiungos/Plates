@@ -163,10 +163,13 @@ struct CollectionScreen: View {
 
     /// What this screen's tour stops say. Out of the chain, not out of the
     /// file — see `coachLayer`.
-    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
-        .booksScope: "A book never ends. This says which one you are looking at, and Switch moves between your books and every plate you have ever logged.",
-        .booksShare: "Turns whatever is on screen into a poster you can send to anyone.",
-        .booksAlbum: "The album itself. Every slot you have filled keeps the date you filled it, so tapping one tells you where you were."
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .booksScope: TourWords("Books are plate collections",
+                               "Create a Book for the plates you want to collect over time: by location, challenge, theme, or however you want to play. Collect plates into your Book from the Game tab."),
+        .booksShare: TourWords("Show off your collection",
+                               "Turn your Book into a collection card you can save or share with friends."),
+        .booksAlbum: TourWords("Your Book collection, at a glance",
+                               "Every plate you collect becomes part of your Book. Tap a plate to see when and where you found it.")
     ]
 
     private struct Pick: Identifiable {
@@ -958,8 +961,12 @@ struct BookEditor: View {
                                 )
                         }
 
+                        // The examples used to sit in the Books tour, six lines into
+                        // the longest bubble in the app, read by somebody who was not
+                        // naming anything at the time. They belong here, beside the
+                        // empty field they are examples for.
                         Text(isNew
-                             ? "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have."
+                             ? "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Name it for a place, a challenge, a theme, or however you want to play: East Coast, Summer Challenge, Coastal Plates. Starting one never touches the books you already have."
                              : "Collect into this book from the Game tab.")
                             .font(.plates(size: 12.5))
                             .foregroundStyle(Theme.inkMuted)

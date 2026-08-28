@@ -171,10 +171,12 @@ struct MapScreen: View {
 
     /// What this screen's tour stops say. Out of the chain, not out of the
     /// file — see `coachLayer`.
-    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
-        .mapMode: "Two ways to read the map. Found shows what you have collected. Rarity colors every state by how hard it is to spot from here.",
-        .mapRegion: "Tap any state or province to see its plate, how rare it is from where you are, and a fact or two about it.",
-        .mapLegend: "This is the key. Legendary and mythic are the ones worth shouting about when you see them."
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .mapMode: TourWords("Explore your map two ways",
+                            "Found shows the plates you have collected. Rarity shows which plates are easiest or hardest to spot from your location."),
+        .mapRegion: TourWords("Tap any state or province to see its plate, how rare it is where you are, and a few fun facts about it."),
+        .mapLegend: TourWords("This is your rarity scale",
+                              "Epic plates are hard to find. Legendary and Mythic are even rarer, and worth shouting about when you spot one.")
     ]
 
     private struct Selection: Identifiable {
@@ -418,10 +420,16 @@ struct MapScreen: View {
                                    label: LocalizedStringKey($0.label.capitalized)) }
         case .progress:
             // Two states plus the three tiers that keep their own color when found.
-            // Common, uncommon and rare are all just green here, so listing them
-            // separately would invent three distinctions the map does not draw.
+            //
+            // The green used to be labelled "Found", which read as a category beside
+            // Epic, Legendary and Mythic rather than above them — and since those
+            // three are found too, the key implied a distinction that was not there.
+            // It now says what the green actually covers. Common, uncommon and rare
+            // are one green on this map, so they get one swatch: three chips of the
+            // same color under three names would be the same mistake pointing the
+            // other way.
             return [Key(id: "unfound", color: Theme.unfound, label: "Not found"),
-                    Key(id: "found", color: Theme.found, label: "Found")]
+                    Key(id: "found", color: Theme.found, label: "Common to rare")]
                 + tiers.filter { $0 >= .epic }.map {
                     Key(id: "tier.\($0.rawValue)", color: $0.mapFill,
                         label: LocalizedStringKey($0.label.capitalized))

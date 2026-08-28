@@ -174,10 +174,10 @@ struct PartyScreen: View {
 
     /// What this screen's tour stops say. Out of the chain, not out of the
     /// file — see `coachLayer`.
-    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
-        .partyWhat: "A party pools what everyone spots. Nobody has to hand their phone around, and it works with no signal at all.",
-        .partyHost: "One person starts it and reads the four character code out loud.",
-        .partyJoin: "Everyone else taps here, picks the party they can see, and types that code in."
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .partyWhat: TourWords("A party pools what everyone spots. Nobody has to hand their phone around, and it works with no signal at all."),
+        .partyHost: TourWords("One person starts it and reads the four character code out loud."),
+        .partyJoin: TourWords("Everyone else taps here, picks the party they can see, and types that code in.")
     ]
 
     // MARK: - Nothing running yet

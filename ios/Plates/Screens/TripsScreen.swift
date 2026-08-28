@@ -174,10 +174,15 @@ struct TripsScreen: View {
 
     /// What this screen's tour stops say. Out of the chain, not out of the
     /// file — see `coachLayer`.
-    private static let tourCopy: [Tour.Stop: LocalizedStringResource] = [
-        .tripsRow: "Every drive you have going. Tap one to play it, or swipe it left to pin it or mark it done.",
-        .tripsNew: "A trip is one journey: it has a route, and it ends. The route is what decides how rare each plate is, so a Florida plate is worth more in Oregon.",
-        .tripsFinished: "Finished trips file themselves down here. Open one for its story, or to add everything it collected into a book."
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .tripsIntro: TourWords("Trips are point-to-point collections",
+                               "Create a Trip for your drive from Point A to Point B and collect plates along the way in the Game tab. Unlike Books, Trips have a beginning and an end."),
+        .tripsRow: TourWords("Choose your Trip",
+                             "Tap a Trip to make it your active Game and collect plates in the Game tab. Swipe left to Pin it or tap Done when your drive is over."),
+        .tripsNew: TourWords("Create your Trip",
+                             "Add your starting point and destination to set your route. Tags uses your route to determine how rare each plate is along the way."),
+        .tripsFinished: TourWords("Your finished Trips",
+                                  "Completed Trips stay here so you can revisit where you went and what you found. You can also add the plates you collected to a Book.")
     ]
 
     /// Which stops this screen can actually host right now.
@@ -188,8 +193,12 @@ struct TripsScreen: View {
     /// that never scrolls backwards, and a tour that scrolls backwards looks broken
     /// even when it is pointing at exactly the right thing.
     private var tourStops: [Tour.Stop] {
-        guard !trips.isEmpty else { return [.tripsNew] }
-        var route: [Tour.Stop] = []
+        // The intro names the thing before the tour starts pointing at parts of it,
+        // so it leads whether or not there is a single trip to point at yet. It
+        // carries no anchor: a stop with no target gets a centred bubble and no
+        // cutout, which is the right shape for a sentence about the whole screen.
+        guard !trips.isEmpty else { return [.tripsIntro, .tripsNew] }
+        var route: [Tour.Stop] = [.tripsIntro]
         if !trips.running.isEmpty { route.append(.tripsRow) }
         route.append(.tripsNew)
         if !trips.finished.isEmpty { route.append(.tripsFinished) }
