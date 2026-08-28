@@ -1,3 +1,4 @@
+import CloudKit
 import SwiftUI
 import SwiftData
 
@@ -16,17 +17,23 @@ import SwiftData
 struct CollectionScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(PopupHost.self) private var popup
+    @Environment(Router.self) private var router
 
     @Query private var sightings: [Sighting]
-    @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
+    // The History page and `isSelectedTrip` were the only readers of a `@Query` over
+    // every Trip and of `currentTripID`; both were deleted and both declarations
+    // stayed. A live SwiftData query is not free to leave lying about — it kept
+    // invalidating the whole Books tab on every trip write, which during a party is
+    // every plate anybody in the car calls.
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
-    @AppStorage(TripSelection.key) private var currentTripID = ""
+    @Query(sort: \Player.joinedAt) private var players: [Player]
     @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
     @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
 
-    @State private var page: Page = .book
     /// The all-time lens. A view, not a container — you cannot collect into it, and
     /// switching to it deliberately does *not* change what the Drive screen fills.
+    @Environment(TourGuide.self) private var tour
+
     @State private var allTime = false
     @State private var selected: String?
     @State private var creatingBook = false
@@ -42,12 +49,6 @@ struct CollectionScreen: View {
         case delete(Book)
     }
 
-    private enum Page: String, CaseIterable, Identifiable {
-        case book, trips
-        var id: String { rawValue }
-        var label: String { self == .book ? "Book" : "History" }
-    }
-
     // MARK: - Scope
 
     /// Whichever book is yours. Read straight from `currentBookID` rather than
@@ -61,6 +62,20 @@ struct CollectionScreen: View {
     private var showingAllTime: Bool { allTime || books.isEmpty }
 
     private var scopeName: String { showingAllTime ? "All time" : (currentBook?.name ?? "") }
+
+    /// The share this book is part of, if any. Read from the local ledger, so the
+    /// header draws correctly before any network call has finished — or ever.
+    private var sharedEntry: SharedBookLedger.Entry? {
+        guard let book = currentBook else { return nil }
+        return SharedBookLedger.shared.entry(for: book.id)
+    }
+
+    /// Everyone with a plate in this book. Reuses the same scoping the standings
+    /// strip uses, so a shared book counts people the same way a party trip does.
+    private var contributors: [Player] {
+        guard let book = currentBook else { return [] }
+        return book.participants(from: players, me: DevicePlayer.resolve(from: players))
+    }
 
     private var scoped: PlateBook {
         PlateBook(sightings: showingAllTime ? sightings : (currentBook?.allSightings ?? []))
@@ -82,41 +97,46 @@ struct CollectionScreen: View {
                 Theme.ground.ignoresSafeArea()
 
                 ScrollView {
+                  ScrollViewReader { scroller in
                     VStack(spacing: 14) {
-                        Picker("", selection: $page) {
-                            ForEach(Page.allCases) { Text($0.label).tag($0) }
-                        }
-                        .pickerStyle(.segmented)
-
-                        if page == .book { bookPage } else { historyPage }
+                        bookPage
                     }
                     .padding(Theme.screenPadding)
                     .padding(.bottom, 24)
+                    .tourScrolling(scroller)
+                  }
                 }
             }
-            .navigationTitle("Collection")
+            .navigationTitle("Books")
             .navigationBarTitleDisplayMode(.large)
             // Signed out of iCloud is the one cause of a silent no-sync that the user
             // can fix, so it is worth one round trip to distinguish it from "waiting".
             .task { await CloudBackup.shared.checkAccount() }
+            .onAppear { tour.offer(.books, stops: Tour.stops(of: .books)) }
+            .onDisappear { tour.left(.books) }
             .toolbar {
-                if page == .book {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button { creatingBook = true } label: { Image(systemName: "plus") }
-                            .tint(Theme.route)
-                            .accessibilityLabel("Start a new book")
+                // Sharing what is on screen, rather than making people open the
+                // editor to reach it. This tab *is* the collection; the album you are
+                // looking at is the thing you would want to send somebody.
+                ToolbarItem(placement: .topBarTrailing) {
+                    PosterShareButton(label: showingAllTime
+                                      ? "Share your all-time collection"
+                                      : "Share this book") {
+                        await renderPoster()
                     }
+                    .tourAnchor(.booksShare)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button { creatingBook = true } label: { Image(systemName: "plus") }
+                        .tint(Theme.route)
+                        .accessibilityLabel("Start a new book")
                 }
             }
             #if DEBUG
-            //   -bookPage book|trips     which page opens
             //   -bookScope alltime       open on the all-time lens
             .onAppear {
-                let args = ProcessInfo.processInfo.arguments
-                if let i = args.firstIndex(of: "-bookPage"), i + 1 < args.count,
-                   let p = Page(rawValue: args[i + 1]) { page = p }
-                if let i = args.firstIndex(of: "-bookScope"), i + 1 < args.count {
-                    allTime = args[i + 1] == "alltime"
+                if let scope = LaunchFlags.value(after: "-bookScope") {
+                    allTime = scope == "alltime"
                 }
             }
             #endif
@@ -138,11 +158,32 @@ struct CollectionScreen: View {
                 onDelete: { pending = .delete(book); editingBook = nil }
             )
         }
+        .tourLayer(.books, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .booksScope: TourWords("Books are plate collections",
+                               "Create a Book for the plates you want to collect over time: by location, challenge, theme, or however you want to play. Collect plates into your Book from the Game tab."),
+        .booksShare: TourWords("Show off your collection",
+                               "Turn your Book into a collection card you can save or share with friends."),
+        .booksAlbum: TourWords("Your Book collection, at a glance",
+                               "Every plate you collect becomes part of your Book. Tap a plate to see when and where you found it.")
+    ]
 
     private struct Pick: Identifiable {
         let code: String
         var id: String { code }
+    }
+
+    /// Whatever the screen is currently showing — the book, or the all-time lens.
+    /// The button shares what you are looking at, which is the only behaviour that
+    /// needs no explaining.
+    private func renderPoster() async -> PosterToShare? {
+        if showingAllTime { return ShareablePoster.poster(allTime: lifetime) }
+        guard let book = currentBook else { return nil }
+        return await ShareablePoster.poster(for: book, players: players)
     }
 
     // MARK: - Book
@@ -152,6 +193,8 @@ struct CollectionScreen: View {
         let b = scoped
 
         scopeCard
+            .tourAnchor(.booksScope)
+            .tourStop(.booksScope)
 
         summary(b)
 
@@ -168,12 +211,18 @@ struct CollectionScreen: View {
                 guard let book = currentBook else { return }
                 PlaySelection.select(.book(book))
                 Haptics.selection()
+                // And actually go there. Selecting the book without moving tabs left
+                // you on the same page of empty slots, which reads as the button
+                // having done nothing — the whole promise is on the Game tab.
+                router.showGame()
             } label: {
-                dashedRow("Collect into this book on Drive", symbol: "car.fill")
+                dashedRow("Add plates to this Book", symbol: "car.fill")
             }
         }
 
         section("States", Plate.states, b)
+            .tourAnchor(.booksAlbum)
+            .tourStop(.booksAlbum)
         section("Bonus", Plate.bonus, b)
         section("Canada", Plate.provinces, b)
     }
@@ -225,72 +274,23 @@ struct CollectionScreen: View {
     /// Which book you are looking at, and the way to change it. Same tap-to-switch
     /// affordance as the Drive screen's header, so the gesture transfers.
     private var scopeCard: some View {
-        // Two trailing controls, one trailing edge. Previously SWITCH was pinned to
-        // the trailing edge of the *inner* button, which stops short of the card
-        // wherever the edit circle sits — so it floated in from the edge and lined up
-        // with nothing. Hoisting it to its own full-width row puts both controls flush
-        // right, in a clean stack: label above, circle below.
-        VStack(alignment: .leading, spacing: 3) {
-            Button { showScopeSwitcher() } label: {
-                HStack(spacing: 5) {
-                    Text(showingAllTime ? "EVERY PLATE EVER" : "BOOK")
-                        .font(.plates(size: 10, weight: .bold))
-                        .tracking(1.2)
-                    Spacer(minLength: 8)
-                    Text("SWITCH")
-                        .font(.plates(size: 9.5, weight: .bold))
-                        .tracking(0.9)
-                    Image(systemName: "chevron.up.chevron.down")
-                        .font(.system(size: 8.5, weight: .bold))
-                }
-                .foregroundStyle(Theme.route)
-                .contentShape(Rectangle())
-            }
-            .buttonStyle(.plain)
-
-            HStack(spacing: 10) {
-                Button { showScopeSwitcher() } label: {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(scopeName)
-                            .font(.plates(size: 18, weight: .bold))
-                            .tracking(-0.3)
-                            .foregroundStyle(Theme.ink)
-                            .lineLimit(1)
-
-                        Text(scopeSubtitle)
-                            .font(.plates(size: 11.5))
-                            .foregroundStyle(Theme.inkMuted)
-                            .lineLimit(1)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-
-                // Centred on the name and date rather than on the whole card, so it
-                // sits under SWITCH instead of drifting up against it.
-                if !showingAllTime, let book = currentBook {
-                    Button { editingBook = book } label: {
-                        Image(systemName: "slider.horizontal.3")
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundStyle(Theme.inkMuted)
-                            .frame(width: 34, height: 34)
-                            .background(Circle().fill(Theme.ground))
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Edit \(book.name)")
-                }
-            }
-        }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 12)
-        .background(
-            RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
-                .fill(Theme.surface)
-                .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
-                    .strokeBorder(isFillingThisBook ? Theme.route : Theme.line,
-                                  lineWidth: isFillingThisBook ? 1.5 : 1))
-        )
+        ScopeCard(
+            kind: showingAllTime ? "EVERY PLATE EVER"
+                                 : (sharedEntry == nil ? "BOOK" : "SHARED BOOK"),
+            isShared: sharedEntry != nil,
+            name: scopeName,
+            subtitle: scopeSubtitle,
+            // Everyone who has put a plate in this book. Drawn from the local rows
+            // rather than from `CKShare.participants`, so it is right offline and
+            // needs no round trip to render a header — a contributor exists locally
+            // the moment one of their sightings has arrived, which is exactly when
+            // they are worth showing.
+            contributors: (!showingAllTime && sharedEntry != nil && contributors.count > 1)
+                ? contributors : [],
+            isFilling: isFillingThisBook,
+            onSwitch: showScopeSwitcher,
+            onEdit: (!showingAllTime && currentBook != nil)
+                ? { editingBook = currentBook } : nil)
     }
 
     private var scopeSubtitle: String {
@@ -303,7 +303,7 @@ struct CollectionScreen: View {
             : book.sinceLabel
     }
 
-    private func dashedRow(_ title: String, symbol: String) -> some View {
+    private func dashedRow(_ title: LocalizedStringKey, symbol: String) -> some View {
         HStack(spacing: 8) {
             Image(systemName: symbol)
                 .font(.system(size: 13, weight: .bold))
@@ -336,7 +336,7 @@ struct CollectionScreen: View {
         )
     }
 
-    private func stat(_ value: String, _ label: String) -> some View {
+    private func stat(_ value: String, _ label: LocalizedStringKey) -> some View {
         VStack(spacing: 2) {
             Text(value)
                 .font(Theme.PlateFont.condensed(26))
@@ -355,7 +355,19 @@ struct CollectionScreen: View {
         Rectangle().fill(Theme.line).frame(width: 1, height: 26)
     }
 
-    private func section(_ title: String, _ plates: [Plate], _ b: PlateBook) -> some View {
+    /// One page of the album.
+    ///
+    /// The grid sits on a page rather than straight on the screen, which is the whole
+    /// difference between this tab and the Game tab. Two testers said the same thing
+    /// in different words — "it feels like you can play from that tab" and "make the
+    /// Book tab look more unique" — and both are about the same cause: an identical
+    /// grid of identical tiles on an identical background, where one collects on tap
+    /// and one does not.
+    ///
+    /// Deleting the grid was the suggested fix and is the wrong one. The filled album
+    /// is the reward for collecting; what needed changing is that it looked like the
+    /// counter. So: a leaf of paper, and every plate mounted on it with corners.
+    private func section(_ title: LocalizedStringKey, _ plates: [Plate], _ b: PlateBook) -> some View {
         VStack(spacing: 10) {
             SectionHeader(title: title, detail: "\(b.found(in: plates)) / \(plates.count)")
 
@@ -375,42 +387,17 @@ struct CollectionScreen: View {
                     .buttonStyle(TileButtonStyle())
                 }
             }
+            .padding(11)
+            .background(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(Theme.surface.opacity(0.62))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .strokeBorder(Theme.line.opacity(0.9), lineWidth: 1)
+                    )
+            )
         }
         .padding(.top, 4)
-    }
-
-    // MARK: - History
-
-    @ViewBuilder
-    private var historyPage: some View {
-        if trips.isEmpty {
-            ContentUnavailableView("No trips yet", systemImage: "suitcase",
-                                   description: Text("Trips you run will be listed here to compare."))
-                .padding(.top, 40)
-        } else {
-            let rows = trips.map(TripSummary.init)
-
-            VStack(spacing: 9) {
-                ForEach(rows) { row in
-                    TripSummaryRow(summary: row,
-                                   isCurrent: isSelectedTrip(row.id),
-                                   best: rows.map(\.statesFound).max() ?? 0)
-                }
-
-                Text("Every trip you have run, newest first. The bar compares states found.")
-                    .font(.plates(size: 11.5))
-                    .foregroundStyle(Theme.inkMuted)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 6)
-            }
-        }
-    }
-
-    /// The car glyph means "this is what Drive is filling", so a trip only gets it
-    /// while the target actually is a trip.
-    private func isSelectedTrip(_ id: UUID) -> Bool {
-        targetKind != "book"
-            && TripSelection.current(from: trips, id: currentTripID)?.id == id
     }
 
     // MARK: - Switching
@@ -436,7 +423,7 @@ struct CollectionScreen: View {
         }
 
         popup.present("Which book?",
-                      message: "Picking a book here changes what you are looking at, and which book Drive fills.") {
+                      message: "This changes the book you are looking at, and the one you collect into.") {
             PopupPicker(groups: [PopupPicker.Group(entries: entries)])
 
             PopupChoice(title: "All time",
@@ -463,13 +450,18 @@ struct CollectionScreen: View {
         switch pending {
         case .clear(let book):
             let count = book.platesFound
+            let hasFolded = book.allSightings.contains { $0.trip != nil }
             popup.present(
                 "Empty \(book.name)?",
-                message: "\(count) plate\(count == 1 ? "" : "s") will be removed from this book and from your all-time count. The book itself stays."
+                // Two whole messages rather than one with a clause appended. A
+                // key built by `+` is not a literal, so the compiler cannot see
+                // it and the catalog never learns it exists.
+                message: hasFolded
+                    ? "^[\(count) plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays. Plates folded in from trips go back to their trips and stay in your history."
+                    : "^[\(count) plate](inflect: true) will be removed from this book and from your all-time count. The book itself stays."
             ) {
                 PopupButton(title: "Empty book", kind: .destructive) {
-                    for sighting in book.allSightings { context.delete(sighting) }
-                    try? context.save()
+                    PlateLogger.withdraw(book.allSightings, from: book, context: context)
                     Haptics.destructive()
                     popup.dismiss()
                 }
@@ -482,15 +474,39 @@ struct CollectionScreen: View {
                 "Delete \(book.name)?",
                 message: count == 0
                     ? "The book is removed. Nothing else changes."
-                    : "The book is removed, but its \(count) plate\(count == 1 ? "" : "s") stay in your all-time count \u{2014} you did see them. Empty it first if you want them gone."
+                    : "The book is removed, but its ^[\(count) plate](inflect: true) stay in your all-time count. You did see them. Empty it first if you want them gone."
             ) {
                 PopupButton(title: "Delete book", kind: .destructive) {
                     let wasCurrent = book.id.uuidString == currentBookID
+                    // Revoke the share before the row goes, and forget the ledger
+                    // entry whether or not the revoke lands.
+                    //
+                    // Deleting the book used to do neither. The `CKShare` stayed
+                    // live, so everybody invited kept read-write access to a book
+                    // its owner believed was gone — and the ledger entry survived
+                    // too, so `pullAll` went on fetching that zone on every
+                    // foreground and `SharedBookMerge` re-inserted the Book the
+                    // moment anything in it changed. The book came back.
+                    //
+                    // `stopSharing` deliberately keeps its entry when the revoke
+                    // fails, so a retry can mean something. There is nothing left
+                    // here to retry against, so this forgets regardless: a failed
+                    // revoke is reported through `trouble`, and a zone nobody is
+                    // pulling can no longer resurrect a book nobody has.
+                    let id = book.id
+                    if SharedBookLedger.shared.entry(for: id) != nil {
+                        Task { @MainActor in
+                            await SharedBookSync.shared.stopSharing(bookID: id)
+                            SharedBookLedger.shared.forget(book: id)
+                        }
+                    }
                     context.delete(book)
                     try? context.save()
                     // Fall through to whichever book remains rather than pointing at
                     // one that no longer exists.
                     if wasCurrent { currentBookID = "" }
+                    // The home screen was still naming it.
+                    WidgetData.write(from: context)
                     Haptics.destructive()
                     popup.dismiss()
                 }
@@ -500,7 +516,204 @@ struct CollectionScreen: View {
     }
 }
 
+// MARK: - Scope card
+
+/// The header of the Book tab: what you are looking at, who has contributed to it,
+/// and the two ways to change it.
+///
+/// Its own view rather than a slice of `CollectionScreen` for one reason beyond
+/// tidiness — it is the widest four-column row in the app (name, subtitle, four
+/// faces, an edit circle), and a row that cannot be handed values cannot be drawn
+/// at a width and a text size that break it. See `LayoutStress`, which does exactly
+/// that and is what put the accessibility reflow below here.
+struct ScopeCard: View {
+    /// The small caps line: BOOK, SHARED BOOK, EVERY PLATE EVER.
+    ///
+    /// `LocalizedStringKey`. Hoisting these three out of the call site and into a
+    /// `String` moved `Text(kind)` onto the verbatim initializer, so the Books tab
+    /// header rendered English in every locale — and none of the three words was in
+    /// the catalog to be translated even if it had been looked up. Checked: absent
+    /// from all 527 keys.
+    let kind: LocalizedStringKey
+    let isShared: Bool
+    let name: String
+    let subtitle: String
+    /// Empty when there is nobody to show; the stack is only worth its width when
+    /// more than one person has filled the book.
+    var contributors: [Player] = []
+    let isFilling: Bool
+    let onSwitch: () -> Void
+    /// Nil on All time, which is not a book and has nothing to edit.
+    var onEdit: (() -> Void)?
+
+    @Environment(\.dynamicTypeSize) private var typeSize
+
+    var body: some View {
+        // Two trailing controls, one trailing edge. Previously SWITCH was pinned to
+        // the trailing edge of the *inner* button, which stops short of the card
+        // wherever the edit circle sits — so it floated in from the edge and lined up
+        // with nothing. Hoisting it to its own full-width row puts both controls flush
+        // right, in a clean stack: label above, circle below.
+        VStack(alignment: .leading, spacing: 3) {
+            kindRow
+
+            // At accessibility sizes the name is set in a font roughly twice this
+            // one, and the faces and the edit circle grow with it: three columns
+            // that all still want the same line leave the name a few letters. The
+            // controls drop to their own row instead, which costs height — the one
+            // thing a reader at that size has plenty of, since the screen is
+            // already scrolling.
+            if typeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 10) {
+                    title
+                    HStack(spacing: 10) {
+                        avatars
+                        Spacer(minLength: 0)
+                        editButton
+                    }
+                }
+            } else {
+                HStack(spacing: 10) {
+                    title
+                    avatars
+                    editButton
+                }
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
+                .fill(Theme.surface)
+                .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
+                    .strokeBorder(isFilling ? Theme.route : Theme.line,
+                                  lineWidth: isFilling ? 1.5 : 1))
+        )
+    }
+
+    private var kindRow: some View {
+        Button(action: onSwitch) {
+            HStack(spacing: 5) {
+                Text(kind)
+                    .font(.plates(size: 10, weight: .bold))
+                    .tracking(1.2)
+                    // SHARED BOOK at an accessibility size is wide enough on its
+                    // own to push SWITCH off the card, and a switch control you
+                    // cannot see is a book you cannot leave. It wrapped mid-word
+                    // — "SHARE / D BOOK" — before this, on the 320pt phone.
+                    //
+                    // 0.6 rather than a smaller floor because 0.6 of an
+                    // accessibility size is still larger than the 10pt this is set
+                    // at by default: the label shrinks relative to the reader's
+                    // choice without ever going below what everyone else sees.
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
+                if isShared {
+                    Image(systemName: "person.2.fill")
+                        .font(.system(size: 9, weight: .bold))
+                        .foregroundStyle(Theme.found)
+                        .accessibilityLabel("Shared")
+                }
+                Spacer(minLength: 8)
+                Text("SWITCH")
+                    .font(.plates(size: 9.5, weight: .bold))
+                    .tracking(0.9)
+                    .lineLimit(1)
+                    .fixedSize(horizontal: true, vertical: false)
+                Image(systemName: "chevron.up.chevron.down")
+                    .font(.system(size: 8.5, weight: .bold))
+            }
+            .foregroundStyle(Theme.route)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var title: some View {
+        Button(action: onSwitch) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(name)
+                    .font(.plates(size: 18, weight: .bold))
+                    .tracking(-0.3)
+                    .foregroundStyle(Theme.ink)
+                    .lineLimit(1)
+
+                Text(subtitle)
+                    .font(.plates(size: 11.5))
+                    .foregroundStyle(Theme.inkMuted)
+                    .lineLimit(1)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    @ViewBuilder
+    private var avatars: some View {
+        if !contributors.isEmpty {
+            AvatarStack(players: contributors, limit: 4, size: 22,
+                        background: Theme.surface)
+        }
+    }
+
+    /// Centred on the name and date rather than on the whole card, so it sits under
+    /// SWITCH instead of drifting up against it.
+    @ViewBuilder
+    private var editButton: some View {
+        if let onEdit {
+            Button(action: onEdit) {
+                Image(systemName: "slider.horizontal.3")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Theme.inkMuted)
+                    .frame(width: 34, height: 34)
+                    .background(Circle().fill(Theme.ground))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Edit \(name)")
+        }
+    }
+}
+
 // MARK: - Slot
+
+/// The paper triangles a plate is held onto the page by.
+///
+/// The one detail that makes the difference between a grid and an album, and it has
+/// to be *only* on this screen — a mounted plate reads as something already put
+/// away, which is exactly what the Game grid must not look like.
+///
+/// Both along the top edge, not on a diagonal. The diagonal is the prettier mount
+/// and it put a triangle exactly where the repeat count and the claimant faces go —
+/// the badge won, being the more important thing, and the corner became a smudge
+/// behind it. Four corners is a scrapbook and eats the state name at 60pt across.
+private struct PhotoCorners: View {
+    var size: CGFloat = 11
+
+    var body: some View {
+        GeometryReader { geo in
+            ZStack {
+                corner
+                    .position(x: size / 2, y: size / 2)
+                corner
+                    .rotationEffect(.degrees(90))
+                    .position(x: geo.size.width - size / 2, y: size / 2)
+            }
+        }
+        .allowsHitTesting(false)
+    }
+
+    private var corner: some View {
+        Path { path in
+            path.move(to: .zero)
+            path.addLine(to: CGPoint(x: size, y: 0))
+            path.addLine(to: CGPoint(x: 0, y: size))
+            path.closeSubpath()
+        }
+        .fill(Theme.ink.opacity(0.22))
+        .frame(width: size, height: size)
+    }
+}
 
 /// One page of the album. Filled shows the plate; empty shows the pressing it goes
 /// into — recessed, with the code ghosted so you know what is missing.
@@ -512,6 +725,7 @@ private struct BookSlot: View {
         ZStack {
             if entry != nil {
                 PlateTile(plate: plate, isFound: true)
+                    .overlay(PhotoCorners())
             } else {
                 RoundedRectangle(cornerRadius: Theme.tileRadius, style: .continuous)
                     .fill(
@@ -526,100 +740,45 @@ private struct BookSlot: View {
                     )
             }
 
-            // Repeat count in the corner, as a collector would pencil it in.
-            if let entry, entry.count > 1 {
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Text("\u{00D7}\(entry.count)")
-                            .font(.plates(size: 8.5, weight: .heavy))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 3.5)
-                            .padding(.vertical, 1.5)
-                            .background(Capsule().fill(Theme.ink.opacity(0.55)))
-                    }
+            // The corner mark. Who beats how many: a plate several people claimed is
+            // a story about the car, and a ×4 told that story as though one person
+            // had driven past the same state four times.
+            if let entry, entry.spotters.count > 1 {
+                corner { AvatarStack(players: entry.spotters, limit: 3, size: 15) }
+            } else if let entry, entry.count > 1 {
+                corner {
+                    Text("\u{00D7}\(entry.count)")
+                        .font(.plates(size: 8.5, weight: .heavy))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 3.5)
+                        .padding(.vertical, 1.5)
+                        .background(Capsule().fill(Theme.ink.opacity(0.55)))
                 }
-                .padding(4)
             }
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(plate.name)
-        .accessibilityValue(entry == nil
-                            ? "Not collected"
-                            : "Collected, seen \(entry!.count) time\(entry!.count == 1 ? "" : "s")")
+        .accessibilityValue(spokenState)
     }
-}
 
-// MARK: - Trip row
-
-private struct TripSummaryRow: View {
-    let summary: TripSummary
-    let isCurrent: Bool
-    let best: Int
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 7) {
-            HStack(alignment: .firstTextBaseline, spacing: 6) {
-                Text(summary.name)
-                    .font(.plates(size: 15.5, weight: .semibold))
-                    .foregroundStyle(isCurrent ? Theme.route : Theme.ink)
-                    .lineLimit(1)
-                if isCurrent {
-                    Image(systemName: "car.fill")
-                        .font(.system(size: 10, weight: .semibold))
-                        .foregroundStyle(Theme.route)
-                }
+    /// Bottom-right of the tile, whatever is going there.
+    private func corner<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
+        VStack {
+            Spacer()
+            HStack {
                 Spacer()
-                Text("\(summary.statesFound)")
-                    .font(Theme.PlateFont.condensed(21))
-                    .monospacedDigit()
-                    .foregroundStyle(Theme.ink)
-                Text("states")
-                    .font(.plates(size: 10))
-                    .foregroundStyle(Theme.inkMuted)
+                content()
             }
-
-            // Length relative to the best trip, so the comparison is visual before
-            // anyone reads a number.
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    Capsule().fill(Theme.line).frame(height: 5)
-                    Capsule().fill(isCurrent ? Theme.route : Theme.found)
-                        .frame(width: best > 0
-                               ? max(4, geo.size.width * CGFloat(summary.statesFound) / CGFloat(best))
-                               : 4,
-                               height: 5)
-                }
-            }
-            .frame(height: 5)
-
-            HStack(spacing: 10) {
-                if let route = summary.route {
-                    Label(route, systemImage: "arrow.triangle.turn.up.right.diamond")
-                        .lineLimit(1)
-                }
-                Label("\(summary.platesFound) plates", systemImage: "square.grid.2x2")
-                Label("\(summary.days)d", systemImage: "calendar")
-                if let bf = summary.bestFind, let p = Plate.plate(for: bf.code) {
-                    Label(p.code, systemImage: "sparkles")
-                        .foregroundStyle(RarityTier.forRarity(bf.rarity).color)
-                }
-                Spacer(minLength: 0)
-            }
-            .font(.plates(size: 11))
-            .foregroundStyle(Theme.inkMuted)
-            .lineLimit(1)
         }
-        .padding(.horizontal, 13)
-        .padding(.vertical, 11)
-        .background(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(Theme.surface)
-                .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .strokeBorder(isCurrent ? Theme.route : Theme.line,
-                                  lineWidth: isCurrent ? 1.5 : 1))
-        )
+        .padding(4)
+    }
+
+    private var spokenState: String {
+        guard let entry else { return "Not collected" }
+        if entry.spotters.count > 1 {
+            return "Collected by \(entry.spotters.map(\.name).formatted(.list(type: .and)))"
+        }
+        return "Collected, seen \(entry.count) time\(entry.count == 1 ? "" : "s")"
     }
 }
 
@@ -674,13 +833,24 @@ private struct BookEntryDetail: View {
                         }
 
                         if entry == nil {
-                            Text("Plates are checked off on the Drive screen.")
+                            Text("Tap a plate on the Game tab to collect it.")
                                 .font(.plates(size: 12.5))
                                 .foregroundStyle(Theme.inkMuted)
                         }
 
                         VStack(alignment: .leading, spacing: 9) {
                             SectionHeader(title: "Facts", detail: "\(seen.count) of \(total)")
+                            // Said plainly, because there was no way to work it out.
+                            // A tester could not tell how facts were unlocked, and
+                            // the app had never once mentioned that spotting the
+                            // plate again is the whole of the mechanism.
+                            if seen.count < total {
+                                Text(seen.isEmpty
+                                     ? "Spot this plate to read one."
+                                     : "Spot it again for the next one.")
+                                    .font(.plates(size: 12))
+                                    .foregroundStyle(Theme.inkMuted)
+                            }
                             ForEach(Array(seen.enumerated()), id: \.offset) { _, fact in
                                 Text(fact)
                                     .font(.plates(size: 13.5))
@@ -749,8 +919,15 @@ struct BookEditor: View {
     let onClear: (() -> Void)?
     let onDelete: (() -> Void)?
 
+    @Query(sort: \Player.joinedAt) private var players: [Player]
+
     @State private var name = ""
     @FocusState private var focused: Bool
+    /// The CloudKit invitation, which is a different thing from the poster button
+    /// beside it: one hands somebody a picture, the other hands them write access.
+    @State private var sharing: SharePayload?
+    @State private var shareTrouble: String?
+    @State private var preparingShare = false
 
     private var isNew: Bool { book == nil }
     private var trimmed: String { name.trimmingCharacters(in: .whitespacesAndNewlines) }
@@ -784,14 +961,19 @@ struct BookEditor: View {
                                 )
                         }
 
+                        // The examples used to sit in the Books tour, six lines into
+                        // the longest bubble in the app, read by somebody who was not
+                        // naming anything at the time. They belong here, beside the
+                        // empty field they are examples for.
                         Text(isNew
-                             ? "A book keeps going. There is no route and no finish line \u{2014} you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have."
-                             : "Plates in this book are checked off on the Drive screen.")
+                             ? "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Name it for a place, a challenge, a theme, or however you want to play: East Coast, Summer Challenge, Coastal Plates. Starting one never touches the books you already have."
+                             : "Collect into this book from the Game tab.")
                             .font(.plates(size: 12.5))
                             .foregroundStyle(Theme.inkMuted)
                             .fixedSize(horizontal: false, vertical: true)
 
                         if let book, !isNew { stats(book) }
+                        if let book, !isNew { sharingSection(book) }
                         if !isNew { dangerZone }
 
                         Spacer(minLength: 8)
@@ -799,11 +981,26 @@ struct BookEditor: View {
                     .padding(Theme.screenPadding)
                 }
             }
+            .sheet(item: $sharing) { payload in
+                CloudShareSheet(share: payload.share,
+                                container: payload.container) { sharing = nil }
+            }
             .navigationTitle(isNew ? "New book" : "Edit book")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
+                }
+                // Sharing lives where iOS puts sharing. It spent one commit at the
+                // bottom of the sheet next to Empty and Delete, which is both the
+                // wrong neighbourhood for a harmless action and far enough down that
+                // the person who asked for the feature could not find it.
+                if let book, !isNew {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        PosterShareButton(label: "Share this book") {
+                            await ShareablePoster.poster(for: book, players: players)
+                        }
+                    }
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(isNew ? "Start" : "Save", action: save)
@@ -853,7 +1050,7 @@ struct BookEditor: View {
         .buttonStyle(.plain)
     }
 
-    private func rowLabel(_ title: String, symbol: String, tint: Color) -> some View {
+    private func rowLabel(_ title: LocalizedStringKey, symbol: String, tint: Color) -> some View {
         HStack(spacing: 9) {
             Image(systemName: symbol)
                 .font(.system(size: 13, weight: .semibold))
@@ -883,4 +1080,118 @@ struct BookEditor: View {
         try? context.save()
         dismiss()
     }
+}
+
+// MARK: - Sharing a book
+
+extension BookEditor {
+
+    /// Inviting somebody to fill this book with you.
+    ///
+    /// Deliberately here rather than on the party screen. A party is the car you are
+    /// in; this is a standing arrangement with somebody who might be three states
+    /// away, and the two have almost nothing in common beyond both involving another
+    /// person. Putting them together would suggest they work the same way.
+    @ViewBuilder
+    func sharingSection(_ book: Book) -> some View {
+        let entry = SharedBookLedger.shared.entry(for: book.id)
+
+        VStack(alignment: .leading, spacing: 9) {
+            Text(entry == nil ? "SHARE" : "SHARED")
+                .font(.plates(size: 11, weight: .bold))
+                .tracking(1.2)
+                .foregroundStyle(Theme.inkMuted)
+
+            if let entry {
+                Text(entry.isOwner
+                     ? "You are sharing this book. Anything they add appears here, and anything you add appears for them."
+                     : "You are filling this book with its owner. It lives in their iCloud. If they stop sharing it, your copy of the plates stays on this phone.")
+                    .font(.plates(size: 12.5))
+                    .foregroundStyle(Theme.inkMuted)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Button(entry.isOwner ? "Stop sharing" : "Leave this book") {
+                    Task {
+                        shareTrouble = nil
+                        SharedBookSync.shared.clearTrouble()
+                        await SharedBookSync.shared.stopSharing(book)
+                        // Only if it worked. A revoke that failed leaves the book
+                        // shared and says so below; confirming it with the haptic
+                        // for a destructive action would be the app telling you it
+                        // did something it did not do.
+                        if SharedBookSync.shared.trouble == nil { Haptics.destructive() }
+                    }
+                }
+                .font(.plates(size: 15, weight: .semibold))
+                .foregroundStyle(.red)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(Color.red.opacity(0.10)))
+            } else {
+                Text("Invite somebody to fill this book with you. You both add plates to the same book, from wherever you are.")
+                    .font(.plates(size: 12.5))
+                    .foregroundStyle(Theme.inkMuted)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Button {
+                    prepareShare(for: book)
+                } label: {
+                    HStack(spacing: 7) {
+                        if preparingShare {
+                            ProgressView().controlSize(.small)
+                        } else {
+                            Image(systemName: "person.crop.circle.badge.plus")
+                                .font(.system(size: 14, weight: .semibold))
+                        }
+                        Text(preparingShare ? "Preparing\u{2026}" : "Share this book")
+                            .font(.plates(size: 15, weight: .semibold))
+                    }
+                    .foregroundStyle(Theme.route)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .strokeBorder(Theme.route.opacity(0.35),
+                                      style: StrokeStyle(lineWidth: 1.5, dash: [5, 4])))
+                }
+                .disabled(preparingShare)
+            }
+
+            // The sync's own last complaint, not only this sheet's. Everything that
+            // fills a shared book is fire-and-forget — a push, a withdrawal, a pull
+            // on foreground — and `trouble` was the only record any of them left.
+            // Nothing read it outside the one catch below, so "sign in to iCloud"
+            // sat in a property while the book quietly stopped syncing.
+            if let trouble = shareTrouble ?? SharedBookSync.shared.trouble {
+                Text(trouble)
+                    .font(.plates(size: 12.5))
+                    .foregroundStyle(Theme.paint)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+    }
+
+    private func prepareShare(for book: Book) {
+        preparingShare = true
+        shareTrouble = nil
+        SharedBookSync.shared.clearTrouble()
+        Task {
+            do {
+                let (share, container) = try await SharedBookSync.shared.makeShare(for: book)
+                sharing = SharePayload(share: share, container: container)
+            } catch {
+                shareTrouble = SharedBookSync.shared.trouble ?? error.localizedDescription
+            }
+            preparingShare = false
+        }
+    }
+}
+
+
+/// `.sheet(item:)` needs something `Identifiable`, and a `CKShare` is not. Carrying
+/// the container alongside it is convenient anyway — the share sheet needs both.
+struct SharePayload: Identifiable {
+    let id = UUID()
+    let share: CKShare
+    let container: CKContainer
 }

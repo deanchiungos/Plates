@@ -139,7 +139,7 @@ struct PlaceField: View {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                     // Filled with the paper rather than the card white. A white box
                     // on cream reads as somewhere to type; the same box in the
-                    // background colour reads as a label, which is what it now is.
+                    // background color reads as a label, which is what it now is.
                     .fill(isLocked ? Theme.unfound.opacity(0.55) : Theme.surface)
                     .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
                         .strokeBorder(focused ? Theme.route.opacity(0.5) : Theme.line,
@@ -341,24 +341,9 @@ struct RouteMap: View {
     /// does not exist.
     @ViewBuilder
     private func routeLine(on snapshot: MKMapSnapshotter.Snapshot) -> some View {
-        if routeCoords.count > 1 {
-            let path = Path { p in
-                let points = routeCoords.map { snapshot.point(for: $0) }
-                p.move(to: points[0])
-                for point in points.dropFirst() { p.addLine(to: point) }
-            }
-            path.stroke(.white.opacity(0.9),
-                        style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
-            path.stroke(Theme.route,
-                        style: StrokeStyle(lineWidth: 2.6, lineCap: .round, lineJoin: .round))
-        } else {
-            Path { p in
-                p.move(to: snapshot.point(for: start))
-                p.addLine(to: snapshot.point(for: end))
-            }
-            .stroke(Theme.route.opacity(0.55),
-                    style: StrokeStyle(lineWidth: 2.4, lineCap: .round, dash: [5, 5]))
-        }
+        MapRoadLine(points: routeCoords.map { snapshot.point(for: $0) },
+                    start: snapshot.point(for: start),
+                    end: snapshot.point(for: end))
     }
 
     private func pin(systemImage: String, tint: Color, at point: CGPoint) -> some View {
@@ -387,20 +372,9 @@ struct RouteMap: View {
             routedEndpoints = key
         }
 
-        let options = MKMapSnapshotter.Options()
-        options.region = routeCoords.count > 1 ? region(fitting: routeCoords) : region
-        options.size = CGSize(width: width, height: Self.height)
-        options.pointOfInterestFilter = .excludingAll
-        // Pinned light: the rest of the app is light-only, and a dark map inside a
-        // white form reads as a rendering bug.
-        options.traitCollection = UITraitCollection(userInterfaceStyle: .light)
-
-        let snapshotter = MKMapSnapshotter(options: options)
-        let result: MKMapSnapshotter.Snapshot? = await withCheckedContinuation { continuation in
-            snapshotter.start(with: .global(qos: .userInitiated)) { snapshot, _ in
-                continuation.resume(returning: snapshot)
-            }
-        }
+        let result = await MapSnapshot.take(
+            of: routeCoords.count > 1 ? region(fitting: routeCoords) : region,
+            size: CGSize(width: width, height: Self.height))
 
         guard !Task.isCancelled else { return }
         if let result { snapshot = result } else { failed = true }
@@ -445,44 +419,13 @@ struct RouteMap: View {
         "\(start.latitude),\(start.longitude)>\(end.latitude),\(end.longitude)"
     }
 
-    /// Asks MapKit for driving directions and flattens the answer to what the map
-    /// preview needs. Returns nil when no road route exists.
+    /// Through `RouteCache`, which the share poster also uses — the two were each
+    /// asking MapKit for the same road, so opening a trip's record and then sharing
+    /// it fetched the whole route twice.
     private func fetchRoute() async -> (coords: [CLLocationCoordinate2D], summary: String)? {
-        let request = MKDirections.Request()
-        request.source = MKMapItem(placemark: MKPlacemark(coordinate: start))
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: end))
-        request.transportType = .automobile
-
-        guard let response = try? await MKDirections(request: request).calculate(),
-              let route = response.routes.first else { return nil }
-
-        let line = route.polyline
-        var coords = [CLLocationCoordinate2D](repeating: .init(), count: line.pointCount)
-        line.getCoordinates(&coords, range: NSRange(location: 0, length: line.pointCount))
-
-        // A cross-country route comes back with thousands of points, and at 340pt
-        // wide most of them land on the same pixel. Thinning keeps the Path cheap
-        // without any visible loss — the first and last are always kept so the line
-        // still meets both pins.
-        let maxPoints = 400
-        if coords.count > maxPoints {
-            let step = coords.count / maxPoints
-            var thinned = stride(from: 0, to: coords.count, by: step).map { coords[$0] }
-            if let last = coords.last { thinned.append(last) }
-            coords = thinned
+        guard let found = await RouteCache.shared.directions(from: start, to: end) else {
+            return nil
         }
-
-        return (coords, Self.summarise(route))
-    }
-
-    private static func summarise(_ route: MKRoute) -> String {
-        let distance = MKDistanceFormatter()
-        distance.unitStyle = .abbreviated
-
-        let hours = Int(route.expectedTravelTime) / 3600
-        let minutes = (Int(route.expectedTravelTime) % 3600) / 60
-        let time = hours > 0 ? "\(hours) hr \(minutes) min" : "\(minutes) min"
-
-        return "\(distance.string(fromDistance: route.distance)) \u{00B7} \(time)"
+        return (found.path, found.summary)
     }
 }

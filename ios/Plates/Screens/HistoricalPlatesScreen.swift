@@ -135,7 +135,10 @@ struct HistoricalPlatesScreen: View {
     }
 
     private var credit: some View {
-        Text("Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card. Designs without a photograph are not listed.")
+        // The old second sentence — "Designs without a photograph are not listed" —
+        // was a note about the dataset's gaps, which is a thing to tell whoever
+        // builds the dataset, not somebody browsing old plates.
+        Text("Photographs from Wikimedia Commons and the jurisdictions' own sites, each credited on its card.")
             .font(.plates(size: 11))
             .foregroundStyle(Theme.inkMuted.opacity(0.85))
             .multilineTextAlignment(.center)
@@ -179,9 +182,9 @@ private struct JurisdictionPicker: View {
     private var groups: [(String, [Plate])] {
         let all = PlateHistoryBook.jurisdictions.filter { PlateSearch.matches($0, query: query) }
         return [
-            ("States", all.filter { $0.region == .state }),
-            ("Canada", all.filter { $0.region == .province }),
-            ("Other",  all.filter { $0.region == .federal || $0.region == .territory }),
+            (String(localized: "States"), all.filter { $0.region == .state }),
+            (String(localized: "Canada"), all.filter { $0.region == .province }),
+            (String(localized: "Other"), all.filter { $0.region == .federal || $0.region == .territory }),
         ].filter { !$0.1.isEmpty }
     }
 
@@ -324,22 +327,50 @@ private struct DesignCard: View {
     /// Plates are wider than they are tall and so is the frame, but a few of these
     /// are photographs of a plate on a car rather than a scan — `.fit` keeps those
     /// whole instead of cropping the plate out of its own picture.
-    private var photo: some View {
-        AsyncImage(url: design.url) { phase in
-            switch phase {
-            case .success(let image):
-                image.resizable().aspectRatio(contentMode: .fit)
-            case .failure:
-                ZStack {
+    private var photo: some View { DesignPhoto(design: design, glyph: 15) }
+}
+
+/// The picture for one design, from whichever of the two sources it has.
+///
+/// Shared by the card and the full sheet so the bundled-versus-fetched split is
+/// decided in one place — the alternative was the same `if let asset` in two views
+/// that are easy to update singly and then quietly disagree.
+struct DesignPhoto: View {
+    let design: PlateHistoryBook.Design
+    var glyph: CGFloat = 15
+
+    var body: some View {
+        if let asset = design.asset, let image = Self.bundled(asset) {
+            Image(uiImage: image).resizable().aspectRatio(contentMode: .fit)
+        } else {
+            AsyncImage(url: design.url) { phase in
+                switch phase {
+                case .success(let image):
+                    image.resizable().aspectRatio(contentMode: .fit)
+                case .failure:
+                    missing
+                default:
                     Theme.ground
-                    Image(systemName: "photo")
-                        .font(.system(size: 15))
-                        .foregroundStyle(Theme.inkMuted.opacity(0.6))
                 }
-            default:
-                Theme.ground
             }
         }
+    }
+
+    private var missing: some View {
+        ZStack {
+            Theme.ground
+            Image(systemName: "photo")
+                .font(.system(size: glyph))
+                .foregroundStyle(Theme.inkMuted.opacity(0.6))
+        }
+    }
+
+    /// Same lookup the lookup screen's photographs use, and now literally the same
+    /// function: a loose file in a bundle subdirectory, with a flat fallback in case
+    /// the folder reference is ever flattened by the build. Cached there, because
+    /// `body` runs on every layout pass and this was a file read per row per frame.
+    static func bundled(_ name: String) -> UIImage? {
+        PlateLookup.bundledImage(name, ext: "png", in: "CurrentPlates")
     }
 }
 
@@ -375,11 +406,11 @@ struct DesignSheet: View {
                             row("Issued", design.dates)
                             if design.isCurrent {
                                 divider
-                                row("Status", "Still in issue")
+                                row("Status", String(localized: "Still in issue"))
                             }
                             if design.isShared {
                                 divider
-                                row("Photograph", "Wikipedia gives this era the design above it, so this is that plate")
+                                row("Photograph", String(localized: "Wikipedia gives this era the design above it, so this is that plate"))
                             }
                             if !design.credit.isEmpty {
                                 divider
@@ -415,23 +446,16 @@ struct DesignSheet: View {
     }
 
     private var photo: some View {
-        AsyncImage(url: design.url) { phase in
-            switch phase {
-            case .success(let image):
-                image.resizable().aspectRatio(contentMode: .fit)
-            case .failure:
-                ZStack {
-                    Theme.surface
-                    Image(systemName: "photo")
-                        .font(.system(size: 22))
-                        .foregroundStyle(Theme.inkMuted.opacity(0.6))
-                }
-                .aspectRatio(Theme.tileAspect, contentMode: .fit)
-            default:
-                Theme.surface.aspectRatio(Theme.tileAspect, contentMode: .fit)
-            }
-        }
-        .frame(maxWidth: .infinity)
+        DesignPhoto(design: design, glyph: 22)
+            // Restored with the shared `DesignPhoto`. Both of its placeholders used
+            // to carry this; folding them into one view dropped it, and a bare
+            // `Color` with only a width proposal collapses to about 10pt — so a
+            // remote design on a slow connection showed a sliver, then jumped, and
+            // a failed one stayed a sliver with its glyph clipped out. `DesignCard`
+            // was unaffected because it sets its own frame, which is exactly why
+            // this was invisible in the list.
+            .aspectRatio(Theme.tileAspect, contentMode: .fit)
+            .frame(maxWidth: .infinity)
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
@@ -443,7 +467,7 @@ struct DesignSheet: View {
         Rectangle().fill(Theme.line).frame(height: 1).padding(.leading, 14)
     }
 
-    private func row(_ label: String, _ value: String) -> some View {
+    private func row(_ label: LocalizedStringKey, _ value: String) -> some View {
         HStack(alignment: .top, spacing: 12) {
             Text(label)
                 .font(.plates(size: 13))

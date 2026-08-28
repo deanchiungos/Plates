@@ -70,12 +70,16 @@ struct PlateFilter: Equatable, Sendable {
 extension PlateRegion {
     /// Display names for the filter. `PlateRegion`'s own cases are modelling terms
     /// (`.federal` is one plate, D.C.) and would read as jargon on a chip.
+    /// `String(localized:)` and not a bare literal, so these four reach the String
+    /// Catalog. A `String` returned from a computed property is invisible to the
+    /// compiler's harvest; wrapping it is the whole difference between a word that
+    /// can be reworded in Xcode and one that can only be reworded here.
     var filterLabel: String {
         switch self {
-        case .state:     return "States"
-        case .federal:   return "D.C."
-        case .territory: return "Territories"
-        case .province:  return "Canada"
+        case .state:     return String(localized: "States")
+        case .federal:   return String(localized: "D.C.")
+        case .territory: return String(localized: "Territories")
+        case .province:  return String(localized: "Canada")
         }
     }
 
@@ -84,10 +88,10 @@ extension PlateRegion {
     var filterDetail: String {
         let n = Self.byRegion[self]?.count ?? 0
         switch self {
-        case .state:     return "All 50"
-        case .federal:   return "District of Columbia"
-        case .territory: return "Puerto Rico"
-        case .province:  return "\(n) provinces and territories"
+        case .state:     return String(localized: "All 50")
+        case .federal:   return String(localized: "District of Columbia")
+        case .territory: return String(localized: "Puerto Rico")
+        case .province:  return String(localized: "\(n) provinces and territories")
         }
     }
 

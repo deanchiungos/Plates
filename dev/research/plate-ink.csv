@@ -1,0 +1,66 @@
+code,ink,source
+AB,#BD1E24,sampled — red with a white outline
+AK,#262D46,sampled — navy
+AL,#0A1003,sampled — black
+AR,#13151A,sampled — black
+AZ,#272729,sampled — near-black
+BC,#142C54,sampled — navy
+CA,#1D2E4D,sampled — navy
+CO,#0D2C30,sampled — dark green
+CT,#102547,sampled — navy
+DC,#001F8B,sampled — navy
+DE,#C2A54E,sampled — gold
+FL,#1F5C3E,blended — embossed green read as grey-green
+GA,#050504,sampled — black
+HI,#040405,sampled — black
+IA,#1E1E1E,blended — read as olive-grey
+ID,#08090A,sampled — black
+IL,#8C1F2E,blended — red glyph over the blue gradient read as plum
+IN,#252868,sampled — navy
+KS,#040303,sampled — black
+KY,#21679F,sampled — navy
+LA,#0D1012,sampled — black
+MA,#C8292C,sampled — red
+MB,#1C1F43,sampled — navy
+MD,#151110,sampled — black
+ME,#152F48,sampled — navy
+MI,#0842A8,sampled — blue
+MN,#030202,sampled — black
+MO,#072D69,sampled — blue
+MS,#26365E,blended — read as slate
+MT,#414856,sampled — dark grey
+NB,#9E2A42,sampled — deep red
+NC,#0E25A0,sampled — deep blue
+ND,#12181B,sampled — black
+NE,#1A1F5B,sampled — navy
+NH,#143A32,sampled — dark green
+NJ,#151318,sampled — black
+NL,#0D136C,sampled — deep blue
+NM,#E6BF3C,sampled — yellow
+NS,#1A3D99,sampled — blue
+NT,#143063,sampled — navy
+NU,#1C1C1C,blended — read as mid grey
+NV,#141113,sampled — black
+NY,#1F2A45,blended — read as near-black; the plate is navy
+OH,#C1272D,no serial — template shows the wordmark only; serial is red
+OK,#FFFBFD,sampled — white
+ON,#003A8B,sampled — blue
+OR,#24304C,blended — read as charcoal; the plate is navy
+PA,#092550,sampled — navy
+PE,#138142,sampled — green
+PR,#111114,sampled — black
+QC,#16277A,"no serial — blank template, colour taken from the wordmark"
+RI,#023564,sampled — navy
+SC,#0F1414,pinned — the tile keeps the pre-2026 palmetto base; see the note above
+SD,#0F161F,sampled — black
+SK,#105C56,sampled — green
+TN,#FFFFFF,no serial — blank template; white on navy
+TX,#040404,sampled — black
+UT,#10254D,sampled — navy
+VA,#0E254A,sampled — navy
+VT,#0B6647,"inverted — art is green-on-white, so the serial is green"
+WA,#222A38,sampled — navy
+WI,#21272A,sampled — black
+WV,#112356,sampled — navy
+WY,#F0EEE5,sampled — white
+YT,#1A1A1A,no photograph — 'black on reflective white' is the whole source; see PROMPTS['YT'] in plate_art_generate.py

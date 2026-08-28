@@ -19,8 +19,11 @@ final class PopupHost {
 
     struct Item: Identifiable {
         let id = UUID()
-        let title: String
-        let message: String?
+        /// Already-resolved `Text` rather than the words themselves, so the two
+        /// `present` overloads below can decide *how* a string becomes text —
+        /// through the String Catalog, or as-is — and the card need not care.
+        let title: Text
+        let message: Text?
         let dismissOnScrimTap: Bool
         let content: AnyView
     }
@@ -30,10 +33,38 @@ final class PopupHost {
     /// The content closure is evaluated once, at presentation. That is deliberate
     /// — these prompts are decisions about a fixed set of options, and a list that
     /// reshuffled itself under your thumb would be worse than a stale one.
-    func present(_ title: String,
-                 message: String? = nil,
+    ///
+    /// `LocalizedStringKey` and not `String`, which is the whole reason this file
+    /// changed: the compiler harvests every `LocalizedStringKey` literal into the
+    /// String Catalog, and harvests nothing at all from a `String`. Every popup in
+    /// the app used to be invisible to `Localizable.xcstrings` for exactly that
+    /// reason — a hundred-odd sentences that could not be reworded without going
+    /// back into the source. Interpolation still works and is in fact better here:
+    /// `"Remove \(plate.name)?"` becomes the key `"Remove %@?"`, one catalog entry
+    /// covering all sixty-five plates.
+    func present(_ title: LocalizedStringKey,
+                 message: LocalizedStringKey? = nil,
                  dismissOnScrimTap: Bool = true,
                  @ViewBuilder content: () -> some View) {
+        // A closure, not `Text.init`: the bare initializer reference resolves to
+        // the generic `StringProtocol` overload, which a key does not satisfy.
+        show(Text(title), message.map { Text($0) }, dismissOnScrimTap, content)
+    }
+
+    /// For a title that is somebody's data rather than the app's words — a plate
+    /// name, a trip name. Passing one of those as a key would look it up in the
+    /// catalog, so a book called "Cancel" would come out translated.
+    func present(verbatim title: String,
+                 message: LocalizedStringKey? = nil,
+                 dismissOnScrimTap: Bool = true,
+                 @ViewBuilder content: () -> some View) {
+        show(Text(verbatim: title), message.map { Text($0) }, dismissOnScrimTap, content)
+    }
+
+    private func show(_ title: Text,
+                      _ message: Text?,
+                      _ dismissOnScrimTap: Bool,
+                      @ViewBuilder _ content: () -> some View) {
         // Stacked here rather than in the layer: an `AnyView` wrapping a tuple of
         // buttons is one opaque child to whatever contains it, so the spacing has
         // to be applied on this side of the erasure.
@@ -111,14 +142,14 @@ private struct PopupCard: View {
     var body: some View {
         VStack(spacing: 0) {
             VStack(spacing: 0) {
-                Text(item.title)
+                item.title
                     .font(.plates(size: 17, weight: .bold))
                     .tracking(-0.2)
                     .foregroundStyle(Theme.ink)
                     .multilineTextAlignment(.center)
 
                 if let message = item.message {
-                    Text(message)
+                    message
                         .font(.plates(size: 13))
                         .foregroundStyle(Theme.inkMuted)
                         .multilineTextAlignment(.center)
@@ -163,7 +194,9 @@ private struct PopupCard: View {
 struct PopupButton: View {
     enum Kind { case primary, destructive, quiet }
 
-    let title: String
+    /// Every button in the app says one of about thirty fixed things — "Cancel",
+    /// "Remove it", "Keep them". A key, so all thirty are in the String Catalog.
+    let title: LocalizedStringKey
     var kind: Kind = .quiet
     let action: () -> Void
 
@@ -200,15 +233,60 @@ struct PopupButton: View {
 }
 
 /// A pickable row inside a popup — a player, a trip. The leading dot carries the
-/// identity colour so "who spotted it" can be answered by colour alone.
+/// identity color so "who spotted it" can be answered by color alone.
 struct PopupChoice<Trailing: View>: View {
-    let title: String
-    var subtitle: String?
+    /// Resolved `Text`, because these rows carry both kinds of words: "Stack
+    /// everything" is the app talking and belongs in the catalog, while the trip
+    /// named "Cape Cod" in the switcher below it is the reader's own. The two
+    /// initialisers underneath are the fork; nothing else has to know.
+    let title: Text
+    var subtitle: Text?
     var dotColor: Color?
     var dotInitial: String?
     var isSelected: Bool = false
     @ViewBuilder var trailing: () -> Trailing
     let action: () -> Void
+
+    init(title: LocalizedStringKey,
+         subtitle: LocalizedStringKey? = nil,
+         dotColor: Color? = nil,
+         dotInitial: String? = nil,
+         isSelected: Bool = false,
+         @ViewBuilder trailing: @escaping () -> Trailing,
+         action: @escaping () -> Void) {
+        self.init(text: Text(title), subtitle: subtitle.map { Text($0) },
+                  dotColor: dotColor, dotInitial: dotInitial,
+                  isSelected: isSelected, trailing: trailing, action: action)
+    }
+
+    init(verbatimTitle: String,
+         verbatimSubtitle: String? = nil,
+         dotColor: Color? = nil,
+         dotInitial: String? = nil,
+         isSelected: Bool = false,
+         @ViewBuilder trailing: @escaping () -> Trailing,
+         action: @escaping () -> Void) {
+        self.init(text: Text(verbatim: verbatimTitle),
+                  subtitle: verbatimSubtitle.map { Text(verbatim: $0) },
+                  dotColor: dotColor, dotInitial: dotInitial,
+                  isSelected: isSelected, trailing: trailing, action: action)
+    }
+
+    private init(text: Text,
+                 subtitle: Text?,
+                 dotColor: Color?,
+                 dotInitial: String?,
+                 isSelected: Bool,
+                 @ViewBuilder trailing: @escaping () -> Trailing,
+                 action: @escaping () -> Void) {
+        self.title = text
+        self.subtitle = subtitle
+        self.dotColor = dotColor
+        self.dotInitial = dotInitial
+        self.isSelected = isSelected
+        self.trailing = trailing
+        self.action = action
+    }
 
     var body: some View {
         Button(action: action) {
@@ -225,12 +303,12 @@ struct PopupChoice<Trailing: View>: View {
                 }
 
                 VStack(alignment: .leading, spacing: 1) {
-                    Text(title)
+                    title
                         .font(.plates(size: 15.5, weight: .semibold))
                         .foregroundStyle(Theme.ink)
                         .lineLimit(1)
                     if let subtitle {
-                        Text(subtitle)
+                        subtitle
                             .font(.plates(size: 11.5))
                             .foregroundStyle(Theme.inkMuted)
                             .lineLimit(1)
@@ -257,8 +335,8 @@ struct PopupChoice<Trailing: View>: View {
 }
 
 extension PopupChoice where Trailing == EmptyView {
-    init(title: String,
-         subtitle: String? = nil,
+    init(title: LocalizedStringKey,
+         subtitle: LocalizedStringKey? = nil,
          dotColor: Color? = nil,
          dotInitial: String? = nil,
          isSelected: Bool = false,
@@ -266,6 +344,17 @@ extension PopupChoice where Trailing == EmptyView {
         self.init(title: title, subtitle: subtitle, dotColor: dotColor,
                   dotInitial: dotInitial, isSelected: isSelected,
                   trailing: { EmptyView() }, action: action)
+    }
+
+    init(verbatimTitle: String,
+         verbatimSubtitle: String? = nil,
+         dotColor: Color? = nil,
+         dotInitial: String? = nil,
+         isSelected: Bool = false,
+         action: @escaping () -> Void) {
+        self.init(verbatimTitle: verbatimTitle, verbatimSubtitle: verbatimSubtitle,
+                  dotColor: dotColor, dotInitial: dotInitial,
+                  isSelected: isSelected, trailing: { EmptyView() }, action: action)
     }
 }
 

@@ -49,9 +49,9 @@ enum PlateLookup {
         /// length normalisation and needs the raw numbers.
         let terms: [String: Double]
         let length: Double
-        /// Colour coverage measured from the photograph by plate_colours.py —
-        /// what fraction of the plate each colour actually occupies.
-        let colours: [String: Double]
+        /// Color coverage measured from the photograph by plate_colors.py —
+        /// what fraction of the plate each color actually occupies.
+        let colors: [String: Double]
         /// The design on the road today, per the curated pick in
         /// research/plate-primary.csv.
         let isCurrent: Bool
@@ -166,8 +166,8 @@ enum PlateLookup {
         let idf: [String: Double]
         let synonyms: [String: [String]]
         let stop: [String]
-        let colourIdf: [String: Double]
-        let colourQuery: [String: [String: Double]]
+        let colorIdf: [String: Double]
+        let colorQuery: [String: [String: Double]]
         let current: [String: [String]]
         let designs: [Raw]
 
@@ -198,7 +198,7 @@ enum PlateLookup {
             Design(key: $0.k, code: $0.c, jurisdiction: $0.j, years: $0.y,
                    caption: $0.cap, base: $0.base, ink: $0.ink, graphics: $0.gfx,
                    topLegend: $0.top, bottomLegend: $0.bot,
-                   terms: $0.v, length: $0.dl, colours: $0.col,
+                   terms: $0.v, length: $0.dl, colors: $0.col,
                    isCurrent: $0.cur, credit: $0.cred, licence: $0.lic)
         }
     }()
@@ -252,15 +252,15 @@ enum PlateLookup {
     /// offline evaluation, not the textbook defaults.
     private static let k1 = 1.4
     private static let b = 0.55
-    /// How much measured colour counts against the text score. Tuned on the
+    /// How much measured color counts against the text score. Tuned on the
     /// query that prompted it: at 0 New York's amber plate sat 18th of 60 for
     /// "orange and black"; at 10 it is 6th, behind five plates that genuinely
     /// are more orange and black than it is.
-    private static let colourWeight = 10.0
+    private static let colorWeight = 10.0
 
-    private static var colourIdf: [String: Double] { payload?.colourIdf ?? [:] }
-    private static var colourQuery: [String: [String: Double]] {
-        payload?.colourQuery ?? [:]
+    private static var colorIdf: [String: Double] { payload?.colorIdf ?? [:] }
+    private static var colorQuery: [String: [String: Double]] {
+        payload?.colorQuery ?? [:]
     }
 
     /// Every jurisdiction code, so a two-letter query can be recognised.
@@ -358,7 +358,7 @@ enum PlateLookup {
         for term in typed {
             // Synonyms fire whether or not the typed word is itself indexed.
             // Gating them on "is it in the vocabulary" meant "amber" could never
-            // reach "gold" — the one case a colour bridge exists for. Fuzzy
+            // reach "gold" — the one case a color bridge exists for. Fuzzy
             // matching is the last resort, only when nothing else lands.
             var hit = false
             if idf[term] != nil {
@@ -382,27 +382,27 @@ enum PlateLookup {
         }
         guard !q.isEmpty || !typedCodes.isEmpty else { return [] }
 
-        // Colour, measured off the photograph rather than read out of a caption.
+        // Color, measured off the photograph rather than read out of a caption.
         // Scored by how much of the plate it covers, because area is what
-        // survives a car going past — see plate_colours.py.
+        // survives a car going past — see plate_colors.py.
         let words = query.lowercased().split(whereSeparator: { !$0.isLetter })
             .map(String.init)
-        var wantedColours: [String: Double] = [:]
+        var wantedColors: [String: Double] = [:]
         for word in words {
-            for (name, weight) in colourQuery[word] ?? [:] {
-                wantedColours[name] = Swift.max(wantedColours[name] ?? 0, weight)
+            for (name, weight) in colorQuery[word] ?? [:] {
+                wantedColors[name] = Swift.max(wantedColors[name] ?? 0, weight)
             }
         }
-        // How much colour is allowed to matter depends on what else was typed.
-        // "orange and black" is all a person has, so colour decides it. "green
+        // How much color is allowed to matter depends on what else was typed.
+        // "orange and black" is all a person has, so color decides it. "green
         // plate with a lighthouse" names a thing, and a lighthouse is far more
         // identifying than green — weighing them equally put Colorado above
         // Mississippi and cost ten points of top-1 accuracy.
         let contentIdf = words
-            .filter { colourQuery[$0] == nil }
+            .filter { colorQuery[$0] == nil }
             .compactMap { tokenize($0).first.flatMap { idf[$0] } }
             .max() ?? 0
-        let colourK = colourWeight / (1 + 1.6 * contentIdf)
+        let colorK = colorWeight / (1 + 1.6 * contentIdf)
 
         let avg = averageLength
         var out: [Match] = []
@@ -416,9 +416,9 @@ enum PlateLookup {
                 score += weight * (f * (k1 + 1))
                     / (f + k1 * (1 - b + b * design.length / avg))
             }
-            for (name, weight) in wantedColours {
-                if let cover = design.colours[name], cover > 0 {
-                    score += colourK * weight * cover * (colourIdf[name] ?? 1)
+            for (name, weight) in wantedColors {
+                if let cover = design.colors[name], cover > 0 {
+                    score += colorK * weight * cover * (colorIdf[name] ?? 1)
                 }
             }
             // An explicit code outranks anything the words could say.
@@ -439,16 +439,47 @@ enum PlateLookup {
 
     private static let cache = NSCache<NSString, UIImage>()
 
-    /// The plate's photograph. Files land either in a `PlateShots` subdirectory
-    /// or flattened into the bundle root depending on how Xcode copies the
-    /// resource folder, so try both rather than depending on one.
-    static func photo(_ key: String) -> UIImage? {
+    /// Names that were looked for and are not in the bundle.
+    ///
+    /// A miss is worth remembering for the same reason a hit is. Without this, a
+    /// design naming an asset that did not ship is two bundle lookups on every
+    /// layout pass, forever — and the only rows that behave that way are the broken
+    /// ones, so it is invisible until the one phone that shows them scrolls.
+    private static var absent: Set<String> = []
+
+    /// A loose image file out of the bundle, cached.
+    ///
+    /// Files land either in a subdirectory or flattened into the bundle root
+    /// depending on how Xcode copies the resource folder, so try both rather than
+    /// depending on one.
+    ///
+    /// `NSCache` rather than a dictionary because these are photographs: it hands
+    /// the memory back when the system asks, which is what you want for something
+    /// rebuildable from a file in the app's own bundle.
+    ///
+    /// Keyed by name and extension together, because the two callers use the same
+    /// stems in different folders. They were two copies of this function for a
+    /// while, with two caches and two eviction lifetimes, and only one of them had
+    /// learned to remember a miss.
+    static func bundledImage(_ name: String,
+                             ext: String,
+                             in subdirectory: String) -> UIImage? {
+        let key = "\(subdirectory)/\(name).\(ext)"
         if let hit = cache.object(forKey: key as NSString) { return hit }
-        let url = Bundle.main.url(forResource: key, withExtension: "jpg",
-                                  subdirectory: "PlateShots")
-            ?? Bundle.main.url(forResource: key, withExtension: "jpg")
-        guard let url, let image = UIImage(contentsOfFile: url.path) else { return nil }
+        guard !absent.contains(key) else { return nil }
+        let url = Bundle.main.url(forResource: name, withExtension: ext,
+                                  subdirectory: subdirectory)
+            ?? Bundle.main.url(forResource: name, withExtension: ext)
+        guard let url, let image = UIImage(contentsOfFile: url.path) else {
+            absent.insert(key)
+            return nil
+        }
         cache.setObject(image, forKey: key as NSString)
         return image
+    }
+
+    /// The plate's photograph.
+    static func photo(_ key: String) -> UIImage? {
+        bundledImage(key, ext: "jpg", in: "PlateShots")
     }
 }

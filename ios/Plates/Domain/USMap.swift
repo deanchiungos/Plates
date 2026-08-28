@@ -132,6 +132,98 @@ enum USMap {
         CGPoint(x: rect.minX + p.x * rect.width, y: rect.minY + p.y * rect.height)
     }
 
+    // MARK: - Geography
+
+    /// The region a lat/lon fix is standing in, or nil offshore or abroad.
+    ///
+    /// The same outlines that draw the map, entered from geography instead of
+    /// screen space. The stored coordinates are spherical Albers equal-area —
+    /// standard parallels 29.5 and 45.5, central meridian 96°W, the albersUsa
+    /// constants — under an affine onto the grid. The generator script was never
+    /// committed, so both were recovered by least squares against the corners that
+    /// statute pins to exact parallels and meridians (the Colorado and Wyoming
+    /// rectangles, the 49th parallel, the four-corners point); the canonical
+    /// parameters fit those anchors to under a kilometre, so this is the original
+    /// transform, not an approximation of it.
+    ///
+    /// Honest about its limits, which are the 20m outline's limits: a point within
+    /// a few kilometres of a border can resolve to the neighbour (the simplified
+    /// Hudson bank hands Jersey City to New York), and a coastal sliver the
+    /// simplification dropped resolves to nothing (Key West). Callers get the
+    /// containing region or nil — never a nearest guess, because "nearest outline"
+    /// would hand Windsor, Ontario to Michigan.
+    ///
+    /// Alaska, Hawaii and Puerto Rico are drawn as insets, so the projection cannot
+    /// land on them and they are answered by box instead. Hawaii and Puerto Rico are
+    /// islands in open ocean, so their boxes really are exact. Alaska is not: it has
+    /// a 2,475 km land border with Canada, and one box drawn loosely enough to hold
+    /// it held far more of Canada than of Alaska. `lat >= 51, lon <= -129` put
+    /// Whitehorse, Dawson City, Inuvik and Prince Rupert in Alaska — which then
+    /// floored the Alaska plate to *home* rarity, so driving the Alaska Highway
+    /// reported Alaska plates as ordinary while the Yukon's own stayed legendary.
+    ///
+    /// Cut instead along the border statute actually draws. North of 60°N that is
+    /// the 141st meridian and nothing else, so it is exact. The panhandle below it
+    /// is a treaty line following the crest of the coastal mountains, which no
+    /// rectangle follows, so it is approximated in two steps and deliberately cut
+    /// tight: the British Columbia side resolves to nil rather than to Alaska.
+    /// A region this cannot name is a case every caller already handles — a region
+    /// it names wrongly is not, which is the same reason the outlines below never
+    /// guess at the nearest.
+    static func region(atLat lat: Double, lon: Double) -> String? {
+        // Mainland, the peninsula and the Aleutians, which run past the antimeridian.
+        if lat >= 51, lon <= -141 || lon >= 172 { return "AK" }
+        // The panhandle. Southern step keeps Ketchikan and leaves Prince Rupert and
+        // Haida Gwaii out; northern step keeps Sitka, Juneau and Skagway and leaves
+        // Atlin, 120 km from Skagway on the British Columbia side, out.
+        if (54.7...57).contains(lat), (-141)...(-130.6) ~= lon { return "AK" }
+        if (57...60).contains(lat), (-141)...(-134.0) ~= lon { return "AK" }
+        if (18...23).contains(lat), (-161)...(-154) ~= lon { return "HI" }
+        if (17.4...18.6).contains(lat), (-68.1)...(-65.1) ~= lon { return "PR" }
+
+        let p = gridPoint(lat: lat, lon: lon)
+        // Smallest region first, so DC beats any overlap with Maryland's ring.
+        for code in codes.reversed() where code != "AK" && code != "HI" && code != "PR" {
+            guard let rings = outlines[code] else { continue }
+            let crossings = rings.reduce(0) { $0 + ($1.count > 2 && contains(p, in: $1) ? 1 : 0) }
+            if crossings % 2 == 1 { return code }
+        }
+        return nil
+    }
+
+    /// Albers cone constant and pot, from the standard parallels.
+    private static let albersN = (sin(29.5 * .pi / 180) + sin(45.5 * .pi / 180)) / 2
+    private static let albersC = pow(cos(29.5 * .pi / 180), 2)
+        + 2 * albersN * sin(29.5 * .pi / 180)
+
+    /// Projection output onto the normalised 0...1 grid the outlines are stored in.
+    /// The affine was fitted in grid units of 10000, hence the divide.
+    private static func gridPoint(lat: Double, lon: Double) -> CGPoint {
+        let phi = lat * .pi / 180
+        let rho = (albersC - 2 * albersN * sin(phi)).squareRoot() / albersN
+        let theta = albersN * (lon + 96) * .pi / 180
+        let x = rho * sin(theta)
+        let y = rho * cos(theta)   // grows southward, like the grid
+        return CGPoint(x: (13839.260308 * x + 5105.787884) / 10000,
+                       y: (15679.300741 * y - 16596.656446) / 10000)
+    }
+
+    /// Even-odd ray cast. `Path.contains` needs a rect and a render pass; this is
+    /// sixty-five polygons of plane geometry, called from the rarity model.
+    private static func contains(_ p: CGPoint, in ring: [CGPoint]) -> Bool {
+        var inside = false
+        var j = ring.count - 1
+        for i in ring.indices {
+            let a = ring[i], b = ring[j]
+            if (a.y > p.y) != (b.y > p.y),
+               p.x < (b.x - a.x) * (p.y - a.y) / (b.y - a.y) + a.x {
+                inside.toggle()
+            }
+            j = i
+        }
+        return inside
+    }
+
     private static func area(of code: String) -> CGFloat {
         guard let ring = outlines[code]?.first else { return 0 }
         var sum: CGFloat = 0

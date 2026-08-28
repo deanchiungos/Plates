@@ -76,71 +76,26 @@ struct TripCard: View {
     var onSwitch: (() -> Void)?
 
     var body: some View {
-        Button { onSwitch?() } label: {
-            VStack(alignment: .leading, spacing: 0) {
-                HStack(alignment: .firstTextBaseline, spacing: 5) {
-                    Text("\(trip.isActive ? "ACTIVE" : "FINISHED") TRIP \u{00B7} DAY \(trip.dayNumber)")
-                        .font(.plates(size: 10.5, weight: .bold))
-                        .tracking(1.3)
-                        .foregroundStyle(Theme.inkMuted)
-                    Spacer()
-                    if onSwitch != nil {
-                        Text("SWITCH")
-                            .font(.plates(size: 10, weight: .bold))
-                            .tracking(0.9)
-                        Image(systemName: "chevron.up.chevron.down")
-                            .font(.system(size: 9, weight: .bold))
-                    }
-                }
-                .foregroundStyle(onSwitch != nil ? Theme.route : Theme.inkMuted)
-
-                Text(trip.name)
-                    .font(.plates(size: 20, weight: .bold))
-                    .tracking(-0.3)
-                    .foregroundStyle(Theme.ink)
-                    .lineLimit(1)
-                    .padding(.top, 2)
-
-                // The route, when there is one, earns the line that would
-                // otherwise state the scoring mode — where you are going is the
-                // more interesting fact, and the mode still shows in the editor.
-                Text(trip.routeLabel ?? trip.scoringMode.label)
-                    .font(.plates(size: 12.5))
-                    .foregroundStyle(trip.routeLabel == nil ? Theme.inkMuted : Theme.route.opacity(0.85))
-                    .lineLimit(1)
-                    .padding(.top, 1)
-
-                RoadRail(progress: trip.progress, journey: trip.journeyProgress)
-                    .padding(.top, 14)
-
-                HStack {
-                    // The distance takes this slot when there is one: while you are
-                    // actually driving it is the more useful of the two, and the
-                    // scoring mode has not changed since you set it.
-                    Text(trip.remainingLabel ?? (trip.routeLabel == nil ? "Start" : trip.scoringMode.label))
-                        .foregroundStyle(trip.remainingLabel == nil ? Theme.inkMuted : Theme.route)
-                    Spacer()
-                    Text("\(trip.statesFound) of \(Plate.stateTotal)")
-                        .monospacedDigit()
-                }
-                .font(.plates(size: 11))
-                .foregroundStyle(Theme.inkMuted)
-                .padding(.top, 2)
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
-            .background(
-                RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
-                    .fill(Theme.surface)
-                    .shadow(color: Theme.ink.opacity(0.06), radius: 1, y: 1)
-                    .shadow(color: Theme.ink.opacity(0.10), radius: 9, y: 4)
-            )
-            .contentShape(Rectangle())
+        PlayCard(
+            eyebrow: Text("\(trip.isActive ? "ACTIVE" : "FINISHED") TRIP \u{00B7} DAY \(trip.dayNumber)"),
+            name: trip.name,
+            // The route, when there is one, earns the line that would otherwise
+            // state the scoring mode — where you are going is the more interesting
+            // fact, and the mode still shows in the editor.
+            detail: Text(trip.routeLabel ?? trip.scoringMode.label),
+            detailTint: trip.routeLabel == nil ? Theme.inkMuted : Theme.route.opacity(0.85),
+            // The distance takes this slot when there is one: while you are actually
+            // driving it is the more useful of the two, and the scoring mode has not
+            // changed since you set it.
+            footer: Text(trip.remainingLabel
+                         ?? (trip.routeLabel == nil ? "Start" : trip.scoringMode.label)),
+            footerTint: trip.remainingLabel == nil ? Theme.inkMuted : Theme.route,
+            found: trip.statesFound,
+            switchHint: "Switch to another trip",
+            onSwitch: onSwitch
+        ) {
+            RoadRail(progress: trip.progress, journey: trip.journeyProgress)
         }
-        .buttonStyle(.plain)
-        .disabled(onSwitch == nil)
-        .accessibilityElement(children: .combine)
-        .accessibilityHint(onSwitch != nil ? "Switch to another trip" : "")
     }
 }
 
@@ -156,45 +111,111 @@ struct BookCard: View {
     var onSwitch: (() -> Void)?
 
     var body: some View {
+        PlayCard(
+            eyebrow: Text("PLATE BOOK"),
+            name: book.name,
+            detail: Text(book.sinceLabel),
+            detailTint: Theme.inkMuted,
+            footer: Text("Collecting"),
+            footerTint: Theme.inkMuted,
+            found: book.statesFound,
+            switchHint: "Switch to a trip or another book",
+            onSwitch: onSwitch
+        ) {
+            RoadRail(progress: book.progress)
+        }
+    }
+}
+
+/// The card at the top of the Drive screen, whichever thing is being filled.
+///
+/// "Deliberately the same shape and the same rail" is what `BookCard` said about
+/// `TripCard`, and it was true twice over: the two were the same sixty lines with
+/// five different strings in them. Two of those lines are accessibility fixes — the
+/// eyebrow that ran to three lines on a small phone at a large text size, the footer
+/// that wrapped and left the count floating — and the book's copy carries a comment
+/// saying it matches the trip's, which is how a fix applied by hand in two places
+/// looks just before somebody fixes only one of them.
+///
+/// Every parameter here is a real difference between a journey and a collection.
+/// Everything not in the list is the same by design, and now by construction.
+private struct PlayCard<Rail: View>: View {
+    /// The small tracked line above the name.
+    let eyebrow: Text
+    let name: String
+    /// The line under the name: where the trip is going, or when the book was begun.
+    let detail: Text
+    let detailTint: Color
+    /// The bottom-left line, opposite the count.
+    let footer: Text
+    let footerTint: Color
+    let found: Int
+    /// Read to VoiceOver in place of "button" — "Switch to another trip".
+    let switchHint: LocalizedStringKey
+    let onSwitch: (() -> Void)?
+    @ViewBuilder var rail: Rail
+
+    var body: some View {
         Button { onSwitch?() } label: {
             VStack(alignment: .leading, spacing: 0) {
                 HStack(alignment: .firstTextBaseline, spacing: 5) {
-                    Text("PLATE BOOK")
+                    eyebrow
                         .font(.plates(size: 10.5, weight: .bold))
                         .tracking(1.3)
                         .foregroundStyle(Theme.inkMuted)
-                    Spacer()
+                        // At an accessibility size this ran to three lines on a
+                        // 320pt phone — "ACTIVE / TRIP \u{00B7} / DAY 1" stacked under a
+                        // SWITCH sitting on the first of them — which reads as the
+                        // card having come apart. One line, shrunk to fit.
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
+                    Spacer(minLength: 8)
                     if onSwitch != nil {
                         Text("SWITCH")
                             .font(.plates(size: 10, weight: .bold))
                             .tracking(0.9)
+                            // The one control on this card. It gives up no width to
+                            // the eyebrow beside it.
+                            .lineLimit(1)
+                            .fixedSize(horizontal: true, vertical: false)
                         Image(systemName: "chevron.up.chevron.down")
                             .font(.system(size: 9, weight: .bold))
                     }
                 }
                 .foregroundStyle(onSwitch != nil ? Theme.route : Theme.inkMuted)
 
-                Text(book.name)
+                Text(name)
                     .font(.plates(size: 20, weight: .bold))
                     .tracking(-0.3)
                     .foregroundStyle(Theme.ink)
                     .lineLimit(1)
                     .padding(.top, 2)
 
-                Text(book.sinceLabel)
+                detail
                     .font(.plates(size: 12.5))
-                    .foregroundStyle(Theme.inkMuted)
+                    .foregroundStyle(detailTint)
                     .lineLimit(1)
                     .padding(.top, 1)
 
-                RoadRail(progress: book.progress)
+                rail
                     .padding(.top, 14)
 
                 HStack {
-                    Text("Collecting")
-                    Spacer()
-                    Text("\(book.statesFound) of \(Plate.stateTotal)")
+                    footer
+                        .foregroundStyle(footerTint)
+                        // "Weighted scoring" wrapped onto two lines at accessibility
+                        // sizes and left the count floating between them. One line;
+                        // it truncates rather than shrinking, because a
+                        // `minimumScaleFactor` here also shaved a percent off the
+                        // label at the *default* size, and a footer set a hair
+                        // smaller than the rest of the card is a change everybody
+                        // pays for to fix a size almost nobody uses.
+                        .lineLimit(1)
+                    Spacer(minLength: 8)
+                    Text("\(found) of \(Plate.stateTotal)")
                         .monospacedDigit()
+                        .lineLimit(1)
+                        .fixedSize(horizontal: true, vertical: false)
                 }
                 .font(.plates(size: 11))
                 .foregroundStyle(Theme.inkMuted)
@@ -213,7 +234,7 @@ struct BookCard: View {
         .buttonStyle(.plain)
         .disabled(onSwitch == nil)
         .accessibilityElement(children: .combine)
-        .accessibilityHint(onSwitch != nil ? "Switch to a trip or another book" : "")
+        .accessibilityHint(onSwitch != nil ? switchHint : "")
     }
 }
 
@@ -233,12 +254,29 @@ struct BookCard: View {
 struct PlayerStrip: View {
     let standings: [(player: Player, score: Int)]
 
-    /// Wide enough for a real name at 11pt without truncating.
-    private let cardWidth: CGFloat = 104
+    /// Wide enough for a real name at 11pt without truncating — and it has to grow
+    /// with the text, or the promise in that sentence only holds at one text size.
+    /// A fixed 104 was a card sized for 11pt still being handed a 21pt name.
+    @ScaledMetric(relativeTo: .caption2) private var cardWidth: CGFloat = 104
+
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     /// Past this, stop dividing the width and start scrolling.
-    private var scrolls: Bool { standings.count > 3 }
+    ///
+    /// Two at accessibility sizes rather than three. Three cards splitting a 320pt
+    /// phone leave about 96pt each, which at those sizes is a name arriving as
+    /// "T…" — the same starvation the strip was rewritten to avoid, just reached by
+    /// text size instead of by party size. Two still divide, because 144pt holds a
+    /// real name even set that large.
+    private var scrolls: Bool {
+        standings.count > (typeSize.isAccessibilitySize ? 2 : 3)
+    }
 
+    /// Deliberately has no "final" variant. It would never be seen: this is drawn on
+    /// the Game screen, and `TripSelection.current` resolves only to `collectable`
+    /// trips — not archived, and still active — so a finished trip cannot be the one
+    /// on display. Finishing a party trip moves the screen to the next open one,
+    /// which is the whole of what "the party is over" needs to do here.
     var body: some View {
         Group {
             if scrolls {
@@ -266,14 +304,7 @@ struct PlayerStrip: View {
 
             VStack(spacing: 3) {
                 HStack(spacing: 5) {
-                    Circle()
-                        .fill(color)
-                        .frame(width: 16, height: 16)
-                        .overlay(
-                            Text(entry.player.initial)
-                                .font(Theme.PlateFont.condensed(10))
-                                .foregroundStyle(Theme.ink)
-                        )
+                    PlayerDot(entry.player, showing: .initial, size: 16)
                     Text(entry.player.name)
                         .font(.plates(size: 11, weight: .semibold))
                         .foregroundStyle(Theme.inkMuted)
@@ -304,8 +335,8 @@ struct PlayerStrip: View {
 }
 
 struct SectionHeader: View {
-    let title: String
-    let detail: String
+    let title: LocalizedStringKey
+    let detail: LocalizedStringKey
 
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
@@ -344,6 +375,11 @@ struct TrackingHintCard: View {
     /// asked for in different words: what it buys there is rarity, and nothing else.
     var isBook: Bool = false
     let onAllow: () -> Void
+    /// Wave it away. Required, not optional: a card that explains a missing feature
+    /// is a card somebody may simply not want the feature explained by, and it sits
+    /// above the grid on every visit until the condition clears — which for "no
+    /// destination pinned" can be the whole trip. See `TrackingHints`.
+    let onDismiss: () -> Void
 
     var body: some View {
         HStack(spacing: 11) {
@@ -375,8 +411,24 @@ struct TrackingHintCard: View {
                 }
                 .buttonStyle(.plain)
             }
+
+            // Small and grey, and to the right of the action rather than above it.
+            // Dismissing is the secondary move on every one of these — the card is
+            // offering something — so it gets the weight of a close box and not of a
+            // second button.
+            Button(action: onDismiss) {
+                Image(systemName: "xmark")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(Theme.inkMuted)
+                    .frame(width: 30, height: 30)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Dismiss")
         }
-        .padding(12)
+        .padding(.vertical, 12)
+        .padding(.leading, 12)
+        .padding(.trailing, 4)
         .background(
             RoundedRectangle(cornerRadius: 13, style: .continuous)
                 .fill(Theme.surface)
@@ -394,7 +446,7 @@ struct TrackingHintCard: View {
         }
     }
 
-    private var title: String {
+    private var title: LocalizedStringKey {
         switch state {
         case .needsPermission: return isBook ? "Score by where you are?" : "Follow the drive?"
         case .denied:          return "Location is off"
@@ -403,7 +455,7 @@ struct TrackingHintCard: View {
         }
     }
 
-    private var detail: String {
+    private var detail: LocalizedStringKey {
         switch state {
         case .needsPermission:
             return isBook
@@ -411,14 +463,80 @@ struct TrackingHintCard: View {
                 : "Moves the car along your route and makes plates from far away worth more. Only while the app is open."
         case .denied:
             return isBook
-                ? "Turn it on for Plates in Settings and rarity follows you instead of using national averages."
-                : "Turn it on for Plates in Settings to see the car and have rarity follow you."
+                ? "Turn it on for Tags in Settings and rarity follows you instead of using national averages."
+                : "Turn it on for Tags in Settings to see the car and have rarity follow you."
         case .needsDestination:
-            return "Pin a destination on this trip and the rail will show how far is left."
+            // "The rail" is what this file calls the progress bar. Nobody outside
+            // this file has ever heard the word.
+            return "Add where you are going, and this trip will show how far you have left."
         case .locating:
             return isBook
-                ? "Rarity re-ranks as soon as your first location comes in."
-                : "The car appears as soon as your first location comes in."
+                ? "Plates from far away start scoring higher as soon as we find you."
+                : "Your car appears on the route as soon as we find you."
+        }
+    }
+}
+
+/// Which hint cards have been waved away, and for what.
+///
+/// Kept rather than forgotten on the next launch, because a card that comes back is
+/// not dismissible — it is snoozed, and that difference is the whole of the
+/// complaint. Stored as one joined string so a `@AppStorage` in the view redraws
+/// when it changes; a `Set` in `UserDefaults` read from a computed property would
+/// update the defaults and leave the card on screen.
+///
+/// Two scopes, because the four states are two different kinds of fact. Permission
+/// is true of the phone: refusing the ask once refuses it for every trip and every
+/// book, which is the only reading of "no" that is not nagging. A pinned destination
+/// is true of one trip, so dismissing it on the drive you never pinned must not hide
+/// it on next summer's.
+enum TrackingHints {
+
+    /// The `@AppStorage` key. Named here so the view and this file cannot drift.
+    static let storeKey = "dismissedTrackingHints"
+
+    static func token(for state: TrackingHintCard.State, collection: UUID?) -> String {
+        switch state {
+        case .needsPermission, .denied:
+            return state.name
+        case .needsDestination, .locating:
+            return "\(state.name):\(collection?.uuidString ?? "-")"
+        }
+    }
+
+    static func isDismissed(_ state: TrackingHintCard.State,
+                            collection: UUID?, in store: String) -> Bool {
+        parse(store).contains(token(for: state, collection: collection))
+    }
+
+    /// The new store value, or nil when it was already in there and nothing needs
+    /// writing — a redundant write to `@AppStorage` is a redundant redraw.
+    static func adding(_ state: TrackingHintCard.State,
+                       collection: UUID?, to store: String) -> String? {
+        var tokens = parse(store)
+        guard tokens.insert(token(for: state, collection: collection)).inserted else { return nil }
+        // Sorted so the stored string is stable, which makes it diffable by eye when
+        // something is being debugged out of a defaults dump.
+        return tokens.sorted().joined(separator: "\n")
+    }
+
+    /// Newline-separated, not comma: a UUID cannot contain one and neither can a
+    /// state name, so no token ever needs escaping.
+    private static func parse(_ store: String) -> Set<String> {
+        Set(store.split(separator: "\n").map(String.init))
+    }
+}
+
+extension TrackingHintCard.State {
+    /// Stable across releases — these go into `UserDefaults` and outlive the build
+    /// that wrote them, so they are spelled out rather than taken from a raw value
+    /// that renaming a case would silently change.
+    var name: String {
+        switch self {
+        case .needsPermission:  return "permission"
+        case .denied:           return "denied"
+        case .needsDestination: return "destination"
+        case .locating:         return "locating"
         }
     }
 }

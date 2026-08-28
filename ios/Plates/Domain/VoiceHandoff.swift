@@ -5,7 +5,7 @@ import Observation
 /// An App Intent runs inside the app's process but nowhere near its views, so it
 /// cannot present a sheet. It sets a flag here instead and the Game screen, which is
 /// watching, opens voice mode when it next appears. That indirection is also what
-/// makes "Hey Siri, open Plates" work: launching the app normally goes through the
+/// makes "Hey Siri, open Tags" work: launching the app normally goes through the
 /// same door, it just arrives by a different route.
 @Observable
 @MainActor
@@ -14,7 +14,7 @@ final class VoiceHandoff {
     private init() {}
 
     /// Whether voice mode should open by itself when the app launches, so that
-    /// "Hey Siri, open Plates" is enough to start logging.
+    /// "Hey Siri, open Tags" is enough to start logging.
     ///
     /// The key lives here rather than on the screen that toggles it because it is
     /// about the handoff, not about Settings: the preference and the flag above are
@@ -33,7 +33,7 @@ final class VoiceHandoff {
     /// Set by `StartVoiceModeIntent`, cleared by the screen that acts on it.
     var wantsVoiceMode = false
 
-    /// A plate the user already named on the way in — "log New Jersey in Plates".
+    /// A plate the user already named on the way in — "log New Jersey in Tags".
     ///
     /// Every spoken route now ends up in voice mode, but a plate that was said out
     /// loud should not have to be said twice, so the name rides along and is logged

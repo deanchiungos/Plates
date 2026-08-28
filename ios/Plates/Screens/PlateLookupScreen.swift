@@ -7,6 +7,7 @@ import SwiftUI
 /// candidate pictures in front of them fast — the description underneath is
 /// there to confirm a hunch, not to be read first.
 struct PlateLookupScreen: View {
+    @Environment(TourGuide.self) private var tour
     var initialQuery: String = ""
 
     @State private var query = ""
@@ -14,7 +15,16 @@ struct PlateLookupScreen: View {
     @FocusState private var focused: Bool
 
     /// Starters, for the blank state. Chosen to show the range of what works:
-    /// an object, a colour, a landscape, an era.
+    /// an object, a color, a landscape, an era.
+    /// Deliberately *not* localised, and the only user-facing text in the app that
+    /// is deliberately left out of the String Catalog.
+    ///
+    /// Tapping one of these puts it in the search field verbatim, and the corpus it
+    /// searches — `PlateLookup.designs`, built from the plate-history CSV — is
+    /// written in English. Translating the chip would translate the query with it
+    /// and every one of these eight would return nothing. Making them searchable in
+    /// another language means translating the corpus first, which is a much larger
+    /// job than translating a label.
     private let starters = ["lighthouse", "cactus", "covered bridge", "palm tree",
                             "yellow with a bison", "mountains at sunset",
                             "green gradient", "1970s"]
@@ -31,9 +41,11 @@ struct PlateLookupScreen: View {
 
             VStack(spacing: 0) {
                 field
+                    .tourAnchor(.lookupField)
 
                 if query.trimmingCharacters(in: .whitespaces).isEmpty {
                     blank
+                        .tourAnchor(.lookupHints)
                 } else if groups.isEmpty {
                     noResults
                 } else {
@@ -45,6 +57,13 @@ struct PlateLookupScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $selected) { PlateDesignDetail(design: $0) }
         .onAppear { if query.isEmpty { query = initialQuery } }
+        // Only on the blank screen. Arriving with a query already typed means somebody
+        // came here from a deep link or a previous search, and dimming their results to
+        // explain the field they have already used is the app talking over itself.
+        .onAppear {
+            tour.offer(.lookup, stops: query.isEmpty ? Tour.stops(of: .lookup) : [])
+        }
+        .onDisappear { tour.left(.lookup) }
         .onChange(of: query) {
             groups = PlateLookup.grouped(query)
             // A new search should not inherit the last one's open rows.
@@ -66,7 +85,15 @@ struct PlateLookupScreen: View {
             }
             #endif
         }
+        .tourLayer(.lookup, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .lookupField: TourWords("For the one that went past too fast. Describe it in plain words: colors, a mountain, a bird, half a slogan."),
+        .lookupHints: TourWords("These are what is worth mentioning. You do not need all of them, and you do not need the state.")
+    ]
 
     // MARK: - Field
 
@@ -125,15 +152,17 @@ struct PlateLookupScreen: View {
                 // need to know is what counts as a valid thing to type.
                 VStack(alignment: .leading, spacing: 9) {
                     Text("Type whatever you remember about it. Any of these work:")
-                    Text("• a colour, like blue or orange and black\n"
-                         + "• something drawn on it, like a lighthouse or mountains\n"
-                         + "• a word printed on it, like Vacationland\n"
-                         + "• roughly when it was from, like 1970s\n"
-                         + "• the state or province name, if you got that much")
-                    Text("Mixing them works best: green plate with a lighthouse. "
-                         + "Results come back one row per state, newest design first. "
-                         + "Tap any of them to see the photo big, next to every other "
-                         + "plate that state has issued.")
+                    // One key, newlines and all. Split across five `+` fragments it
+                    // was five `String`s the catalog never saw; as one literal it is
+                    // a single entry a translator can reorder and re-bullet.
+                    Text("""
+                         • a color, like blue or orange and black
+                         • something drawn on it, like a lighthouse or mountains
+                         • a word printed on it, like Vacationland
+                         • roughly when it was from, like 1970s
+                         • the state or province name, if you got that much
+                         """)
+                    Text("Mixing them works best: green plate with a lighthouse. Tap any result to see the photo big, alongside every other plate that state has issued.")
                 }
                 .font(.plates(size: 14))
                 .foregroundStyle(Theme.inkMuted)
@@ -150,8 +179,7 @@ struct PlateLookupScreen: View {
                     focused = false
                 }
 
-                Text("\(PlateLookup.designs.count) designs, current and historic, "
-                     + "each with a photograph.")
+                Text("\(PlateLookup.designs.count) designs, current and historic, each with a photograph.")
                     .font(.plates(size: 11.5))
                     .foregroundStyle(Theme.inkMuted.opacity(0.75))
                     .padding(.top, 6)
@@ -177,15 +205,15 @@ struct PlateLookupScreen: View {
                 .foregroundStyle(Theme.ink)
 
             if !unknown.isEmpty {
-                Text("No plate description mentions "
-                     + unknown.map { "“\($0)”" }.joined(separator: " or ")
-                     + ".")
+                // The joined list is built first so the sentence around it is one
+                // key rather than three fragments glued together at runtime.
+                Text("No plate description mentions \(unknown.map { "“\($0)”" }.joined(separator: " or ")).")
                     .font(.plates(size: 13))
                     .foregroundStyle(Theme.inkMuted)
                     .multilineTextAlignment(.center)
             }
 
-            Text("Try a colour, something drawn on it, or a word printed on it.")
+            Text("Try a color, something drawn on it, or a word printed on it.")
                 .font(.plates(size: 13))
                 .foregroundStyle(Theme.inkMuted)
                 .multilineTextAlignment(.center)
@@ -366,7 +394,7 @@ private struct PlateResultRow: View {
                     .lineLimit(1)
 
                 // The graphic is what someone remembers, so it is the line that
-                // gets the room — falling back to the base colour when a design
+                // gets the room — falling back to the base color when a design
                 // has no picture on it at all.
                 Text(design.graphics.isEmpty ? design.base : design.graphics)
                     .font(.plates(size: 12))
@@ -549,7 +577,7 @@ struct PlateDesignDetail: View {
     @ViewBuilder
     private var credit: some View {
         if let attribution = shown.attribution {
-            Text("Photo: " + attribution)
+            Text("Photo: \(attribution)")
                 .font(.plates(size: 11))
                 .foregroundStyle(Theme.inkMuted.opacity(0.8))
                 .fixedSize(horizontal: false, vertical: true)

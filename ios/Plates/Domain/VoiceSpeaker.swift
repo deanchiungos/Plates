@@ -1,5 +1,6 @@
 import AVFoundation
 import Observation
+import UIKit
 
 /// The app's own voice.
 ///
@@ -34,7 +35,33 @@ final class VoiceSpeaker: NSObject {
     override init() {
         super.init()
         synth.delegate = self
+        Self.noteWhenVoicesChange
     }
+
+    /// One observation per process, set up by the first speaker.
+    ///
+    /// Two triggers, both cheap and both needed. The voices-changed notification is
+    /// the precise one, posted when a download lands while the app is running. The
+    /// foregrounding one is the belt to that suspender: the common sequence is
+    /// "background the app, download the voice in Settings, come back", and on
+    /// devices where the first notification is missed or predates iOS 17, returning
+    /// to the app is the moment the inventory is worth another look.
+    private static let noteWhenVoicesChange: Void = {
+        // `@Sendable` because that is what `addObserver` takes, and because it is
+        // true: the closure captures nothing and does nothing but hop to the main
+        // actor. Written without it, the conversion happened anyway, silently.
+        let refresh: @Sendable (Notification) -> Void = { _ in
+            Task { @MainActor in VoiceSpeaker.refreshVoice() }
+        }
+        if #available(iOS 17.0, *) {
+            NotificationCenter.default.addObserver(
+                forName: AVSpeechSynthesizer.availableVoicesDidChangeNotification,
+                object: nil, queue: .main, using: refresh)
+        }
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.willEnterForegroundNotification,
+            object: nil, queue: .main, using: refresh)
+    }()
 
     /// Normalised forms of everything said in the last few seconds, for the recogniser
     /// to subtract from what it hears. See `VoiceLogger.ingest`.
@@ -82,9 +109,22 @@ final class VoiceSpeaker: NSObject {
     /// in Accessibility and hands back the system default regardless (FB20271264).
     /// Choosing by identifier is the documented way round it, and is what this does.
     ///
-    /// Resolved lazily and kept, because `speechVoices()` enumerates every installed
-    /// voice and this is read on every confirmation.
-    static let voice: AVSpeechSynthesisVoice? = bestVoice()
+    /// Memoised, because `speechVoices()` enumerates every installed voice and this
+    /// is read on every confirmation — but *not* a `let`. It was, and that was a
+    /// user-visible bug: the screen says "download a natural voice in Settings", the
+    /// user does exactly that, comes back, and the app keeps the compact voice until
+    /// the process actually dies — which iOS may not do for days. The advice looked
+    /// broken. `noteWhenVoicesChange` empties the memo the moment the system says
+    /// the inventory moved, so the next sentence is spoken by the new voice.
+    static var voice: AVSpeechSynthesisVoice? {
+        if !resolved { cached = bestVoice(); resolved = true }
+        return cached
+    }
+    private static var cached: AVSpeechSynthesisVoice?
+    private static var resolved = false
+
+    /// Re-pick on the next utterance. Cheap: nothing is enumerated until then.
+    static func refreshVoice() { resolved = false }
 
     /// True when the device has nothing better than compact installed — which is the
     /// out-of-the-box state, and worth telling the user about, since the fix is a
@@ -166,9 +206,16 @@ final class VoiceSpeaker: NSObject {
     /// A repeat gets a whole sentence rather than a clipped fragment. "Already had
     /// it" was two unstressed syllables tacked onto a name and came out as mush at
     /// road speed; a full clause gives the synthesiser something to put a rhythm on.
+    /// Said when a plate is called out that the collection already holds and will not
+    /// count twice. Shared with `confirmation` so the two cannot drift into telling
+    /// somebody two different things about the same situation.
+    static func alreadySeen(_ plate: Plate) -> String {
+        "\(plate.name) has already been seen."
+    }
+
     static func confirmation(for plate: Plate, outcome: PlateLogger.Outcome) -> String {
         guard outcome.isFirstFind else {
-            return "\(plate.name) has already been seen."
+            return alreadySeen(plate)
         }
         return outcome.tier >= .rare
             ? "\(plate.name). \(outcome.tier.label.capitalized)."

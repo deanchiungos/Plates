@@ -7,10 +7,12 @@ import SwiftUI
 /// more than five destinations, so this is the overflow: a plain list of the places
 /// that do not earn a slot of their own.
 struct MoreScreen: View {
+    @Environment(Router.self) private var router
+    @Environment(TourGuide.self) private var tour
     @State private var showTrail = false
     @State private var showSettings = false
-    @State private var showPlayers = false
     @State private var showParty = false
+    @State private var showHowToPlay = false
 
     var body: some View {
         NavigationStack {
@@ -18,62 +20,101 @@ struct MoreScreen: View {
                 Theme.ground.ignoresSafeArea()
 
                 ScrollView {
+                  ScrollViewReader { scroller in
                     VStack(spacing: 20) {
                         // Grouped rather than one undifferentiated list. Three rows on
                         // an empty screen read as an oversight; two named groups read
                         // as the whole of what is here, which is the truth.
-                        MoreSection("While you play") {
+                        MoreSection(String(localized: "While you play")) {
                             MoreRow(title: "Party") { PartyScreen() }
-
-                            MoreDivider()
-
-                            MoreRow(title: "Players") { PlayersScreen(embedded: true) }
+                                .tourAnchor(.moreParty)
 
                             MoreDivider()
 
                             MoreRow(title: "Plate lookup") { PlateLookupScreen() }
                         }
+                        .tourStop(.moreParty)
 
-                        MoreSection("Looking back") {
+                        MoreSection(String(localized: "Looking back")) {
                             MoreRow(title: "Trail") { TrailScreen() }
+                                .tourAnchor(.moreTrail)
 
                             MoreDivider()
 
                             MoreRow(title: "Historical plates") { HistoricalPlatesScreen() }
                         }
+                        .tourStop(.moreTrail)
 
-                        MoreSection("App") {
+                        MoreSection(String(localized: "App")) {
+                            // Above Settings, because it is the row somebody with a
+                            // question wants and Settings is the row somebody with
+                            // an intention wants. Questions come first.
+                            MoreRow(title: "How to play") { HowToPlayScreen() }
+                                .tourAnchor(.moreHowTo, prefersAbove: true)
+
+                            MoreDivider()
+
                             MoreRow(title: "Settings") { SettingsScreen() }
                         }
+                        .tourStop(.moreHowTo)
 
                         footer
                     }
                     .padding(Theme.screenPadding)
                     .padding(.bottom, 8)
+                    .tourScrolling(scroller)
+                  }
                 }
             }
             .navigationTitle("More")
             .navigationBarTitleDisplayMode(.large)
             .navigationDestination(isPresented: $showTrail) { TrailScreen() }
             .navigationDestination(isPresented: $showSettings) { SettingsScreen() }
-            .navigationDestination(isPresented: $showPlayers) { PlayersScreen(embedded: true) }
             .navigationDestination(isPresented: $showParty) { PartyScreen() }
+            .navigationDestination(isPresented: $showHowToPlay) { HowToPlayScreen() }
+            // The receiving end of `Router.showTrail`: something elsewhere in the
+            // app asked for the Trail, so push it. The Trail itself reads which
+            // scope to open on. `onAppear` covers the jump that switched to this
+            // tab; `onChange` covers a jump made while already standing on it.
+            .onAppear {
+                if router.pendingTrail != nil { showTrail = true }
+                // Every stop here is a permanent row, so this tour is the one that
+                // never has to ask what is on screen.
+                tour.offer(.more, stops: Tour.stops(of: .more))
+            }
+            .onDisappear { tour.left(.more) }
+            .onChange(of: router.pendingTrail) { _, pending in
+                if pending != nil { showTrail = true }
+            }
             #if DEBUG
-            // `-tab more -openTrail` / `-openSettings` / `-openPlayers` / `-openParty`
-            // push straight through, which is the only way to reach any of them
-            // without a tap.
+            // `-tab more -openTrail` / `-openSettings` / `-openParty` /
+            // `-howToPlay` push straight through, which is the only way to reach
+            // any of them without a tap.
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     if args.contains("-openTrail") { showTrail = true }
                     if args.contains("-openSettings") { showSettings = true }
-                    if args.contains("-openPlayers") { showPlayers = true }
                     if args.contains("-openParty") { showParty = true }
+                    if args.contains("-howToPlay") { showHowToPlay = true }
                 }
             }
             #endif
         }
+        // Last in the chain, so the scrim covers this screen and nothing else.
+        .tourLayer(.more, Self.tourCopy)
     }
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .moreParty: TourWords("Party is here too",
+                              "You can also start a Party here whenever you want to play with others. Everyone keeps their own phone, and what you all spot pools into one game."),
+        .moreTrail: TourWords("Explore your Trail",
+                              "See where you were when you collected each plate and look back on where the game has taken you."),
+        .moreHowTo: TourWords("Need a refresher?",
+                              "How to play is always here anytime you need a quick reminder.")
+    ]
 
     /// The wordmark, and the thing that stops the last card floating in space.
     ///
@@ -81,7 +122,7 @@ struct MoreScreen: View {
     /// anyone reads that, and it made the bottom of the screen look like the end of a
     /// pamphlet rather than the end of a list.
     private var footer: some View {
-        Text("PLATES")
+        Text("TAGS")
             .font(Theme.PlateFont.condensed(15))
             .tracking(3)
             .foregroundStyle(Theme.inkMuted.opacity(0.75))
@@ -150,7 +191,7 @@ struct MoreDivider: View {
 /// menu that does not trust its own labels. "Players" and "Settings" need no gloss,
 /// and the group headings above them already say which part of the app you are in.
 struct MoreRow<Destination: View>: View {
-    let title: String
+    let title: LocalizedStringKey
     @ViewBuilder var destination: () -> Destination
 
     var body: some View {

@@ -4,15 +4,15 @@ import SwiftUI
 //
 // Each entry is a jurisdiction whose tile is drawn from photo-grounded
 // artwork in Assets.xcassets/PlateArt rather than from PlateStyle's vector
-// motifs. `ink` is the serial colour sampled off the real plate, because
+// motifs. `ink` is the serial color sampled off the real plate, because
 // the code and state name on a tile stand in for the serial and should be
-// painted the same colour the plate paints it. `field` is the colour the
+// painted the same color the plate paints it. `field` is the color the
 // artwork actually puts behind that text — the raster bypasses the vector
 // catalogue entirely, so it is the only thing left to audit against.
 //
 // `halo` marks the handful where the two do not clear WCAG AA. Mostly
 // these are honest: New Mexico really is yellow on turquoise and Ontario
-// really is white on blue. Rather than repaint a plate into a colour it
+// really is white on blue. Rather than repaint a plate into a color it
 // does not have, the tile draws those with a soft opposite-luminance ring
 // behind the text — which is roughly what the emboss does in daylight.
 //
@@ -22,8 +22,12 @@ import SwiftUI
 // `offset` is a fraction of the tile's own width/height, not points, so it
 // holds at every size the tile renders at — the Game grid, the trail map pin.
 //
-// Wyoming and Yukon are absent: no free photograph of either exists, so
-// they keep PlateStyle's vector art and PlateStyle's ink.
+// Every jurisdiction has a tile. Yukon was the last without one and is
+// the only whose master was drawn from a written description rather than
+// against a photograph — Commons has no Yukon plate newer than 1979 — so
+// its ink is hand-set in OVERRIDE instead of sampled. No jurisdiction now
+// falls through to PlateStyle's vector motifs: they survive only as the
+// `?? .fallback` safety net and in PlateBench.
 enum PlateArtwork {
     struct Entry {
         let ink: UInt32
@@ -90,7 +94,7 @@ enum PlateArtwork {
         "PA": Entry(ink: 0x092550, field: 0xFEFEFE, halo: false, scrim: 0.0, offsetX: 0.008, offsetY: 0.046, embossHex: 0xFFFFFF, asset: "PlateArt/PA"),   // sampled — navy
         "PE": Entry(ink: 0x138142, field: 0xFEFEFE, halo: false, scrim: 0.0, offsetX: 0.006, offsetY: 0.164, embossHex: 0xFFFFFF, asset: "PlateArt/PE"),   // sampled — green
         "PR": Entry(ink: 0x111114, field: 0xBBDBF4, halo: true , scrim: 0.0, offsetX: -0.0, offsetY: 0.106, embossHex: 0xFFFFFF, asset: "PlateArt/PR"),   // sampled — black
-        "QC": Entry(ink: 0x16277A, field: 0xFEFEFE, halo: false, scrim: 0.0, offsetX: -0.001, offsetY: 0.109, embossHex: 0xFFFFFF, asset: "PlateArt/QC"),   // no serial — blank template, colour taken from the wordmark
+        "QC": Entry(ink: 0x16277A, field: 0xFEFEFE, halo: false, scrim: 0.0, offsetX: -0.001, offsetY: 0.109, embossHex: 0xFFFFFF, asset: "PlateArt/QC"),   // no serial — blank template, color taken from the wordmark
         "RI": Entry(ink: 0x023564, field: 0xDBEEF9, halo: false, scrim: 0.0, offsetX: 0.001, offsetY: 0.074, embossHex: 0xFFFFFF, asset: "PlateArt/RI"),   // sampled — navy
         "SC": Entry(ink: 0x0F1414, field: 0xF9F6F0, halo: false, scrim: 0.0, offsetX: -0.007, offsetY: 0.157, embossHex: 0xFFFFFF, asset: "PlateArt/SC"),   // pinned — the tile keeps the pre-2026 palmetto base; see the note above
         "SD": Entry(ink: 0x0F161F, field: 0xBCD4E6, halo: false, scrim: 0.12, offsetX: 0.031, offsetY: 0.029, embossHex: 0xFFFFFF, asset: "PlateArt/SD"),   // sampled — black
@@ -104,6 +108,7 @@ enum PlateArtwork {
         "WI": Entry(ink: 0x21272A, field: 0xFEFEFE, halo: false, scrim: 0.0, offsetX: 0.022, offsetY: 0.094, embossHex: 0xFFFFFF, asset: "PlateArt/WI"),   // sampled — black
         "WV": Entry(ink: 0x112356, field: 0xF9F7F6, halo: false, scrim: 0.0, offsetX: 0.013, offsetY: 0.035, embossHex: 0xFFFFFF, asset: "PlateArt/WV"),   // sampled — navy
         "WY": Entry(ink: 0xF0EEE5, field: 0x293857, halo: true , scrim: 0.0, offsetX: 0.0, offsetY: 0.0, embossHex: 0x000000, asset: "PlateArt/WY"),   // sampled — white
+        "YT": Entry(ink: 0x1A1A1A, field: 0xEDEDEB, halo: false, scrim: 0.0, offsetX: 0.001, offsetY: -0.007, embossHex: 0xFFFFFF, asset: "PlateArt/YT"),   // no photograph — 'black on reflective white' is the whole source; see PROMPTS['YT'] in plate_art_generate.py
     ]
 
     static func has(_ code: String) -> Bool { table[code] != nil }
@@ -113,13 +118,13 @@ enum PlateArtwork {
         table[code]?.asset ?? "PlateArt/\(code)"
     }
 
-    /// The serial colour, when this plate has artwork.
+    /// The serial color, when this plate has artwork.
     static func ink(_ code: String) -> Color? {
         table[code].map { Color(hex: $0.ink) }
     }
 
     /// The ring drawn behind the text, on the four plates whose own two
-    /// colours do not clear WCAG AA.
+    /// colors do not clear WCAG AA.
     ///
     /// Every plate used to get a faint one too, on the theory that two lines
     /// of type could not fit inside the artwork's clear band. The review pass
@@ -132,7 +137,7 @@ enum PlateArtwork {
         return Color(hex: e.embossHex)
     }
 
-    /// The scrim's colour — the same opposite-luminance value the halo uses,
+    /// The scrim's color — the same opposite-luminance value the halo uses,
     /// so turning the dim up deepens one effect rather than adding a second.
     static func scrimColor(_ code: String) -> Color? {
         guard let e = table[code], e.scrim > 0 else { return nil }

@@ -6,14 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BB0000000000000000000B /* PlatesWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BB00000000000000000001 /* PlatesWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB0000000000000000000D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0000000000000000000A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB00000000000000000006;
+			remoteInfo = PlatesWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB0000000000000000000A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB0000000000000000000B /* PlatesWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AA00000000000000000001 /* Plates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00000000000000000001 /* PlatesWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PlatesWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AA00000000000000000002 /* Plates */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Plates;
+			sourceTree = "<group>";
+		};
+		BB00000000000000000002 /* PlatesWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PlatesWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,14 +60,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB00000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C1F3FA7302AA42E00708A71 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000000000000000002 /* PlatesWidget */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		AA00000000000000000004 = {
 			isa = PBXGroup;
 			children = (
 				AA00000000000000000002 /* Plates */,
 				AA00000000000000000005 /* Products */,
+				7C1F3FA7302AA42E00708A71 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				AA00000000000000000001 /* Plates.app */,
+				BB00000000000000000001 /* PlatesWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +106,12 @@
 				AA00000000000000000008 /* Sources */,
 				AA00000000000000000003 /* Frameworks */,
 				AA00000000000000000009 /* Resources */,
+				BB0000000000000000000A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BB0000000000000000000C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AA00000000000000000002 /* Plates */,
@@ -69,6 +122,28 @@
 			productName = Plates;
 			productReference = AA00000000000000000001 /* Plates.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BB00000000000000000006 /* PlatesWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB00000000000000000007 /* Build configuration list for PBXNativeTarget "PlatesWidget" */;
+			buildPhases = (
+				BB00000000000000000004 /* Sources */,
+				BB00000000000000000003 /* Frameworks */,
+				BB00000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BB00000000000000000002 /* PlatesWidget */,
+			);
+			name = PlatesWidget;
+			packageProductDependencies = (
+			);
+			productName = PlatesWidget;
+			productReference = BB00000000000000000001 /* PlatesWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +156,9 @@
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					AA00000000000000000006 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					BB00000000000000000006 = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
@@ -100,12 +178,20 @@
 			projectRoot = "";
 			targets = (
 				AA00000000000000000006 /* Plates */,
+				BB00000000000000000006 /* PlatesWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AA00000000000000000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00000000000000000005 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +208,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB00000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB0000000000000000000C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB00000000000000000006 /* PlatesWidget */;
+			targetProxy = BB0000000000000000000D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AA0000000000000000000C /* Debug */ = {
@@ -182,7 +283,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Plates uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Tags uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -192,7 +293,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 0.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eggeppel.plates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -214,7 +317,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Plates uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Tags uses your location while a trip is open to move the car along your route and to judge how rare each plate is from where you are. Nothing is stored but your latest position, and nothing leaves your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -224,9 +327,65 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 0.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eggeppel.plates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB00000000000000000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PlatesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 62ACKJXLHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlatesWidgetInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eggeppel.plates.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB00000000000000000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PlatesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 62ACKJXLHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlatesWidgetInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tags;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eggeppel.plates.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -250,6 +409,15 @@
 			buildConfigurations = (
 				AA0000000000000000000C /* Debug */,
 				AA0000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB00000000000000000007 /* Build configuration list for PBXNativeTarget "PlatesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00000000000000000008 /* Debug */,
+				BB00000000000000000009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

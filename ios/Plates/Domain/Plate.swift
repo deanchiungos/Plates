@@ -6,8 +6,6 @@ enum PlateRegion: String, Codable, Hashable, CaseIterable {
     case federal      // District of Columbia
     case territory    // Puerto Rico
     case province     // Canada
-
-    var isBonus: Bool { self != .state }
 }
 
 /// A plate is a fact about the world, not user data — it never changes, so it is a
@@ -112,4 +110,12 @@ extension Plate {
 
     /// The denominator behind "N/50". Derived, so it can never drift from the catalog.
     static let stateTotal = states.count
+
+    /// Membership of the Bonus section, for counting finds against it.
+    ///
+    /// Derived from `bonus` rather than from a region test, because "bonus" is a
+    /// *section of the screen* — D.C. and Puerto Rico — and not a property of a
+    /// plate. `PlateRegion` has four cases and three of them are non-state, so any
+    /// `region != .state` test sweeps in all thirteen provinces.
+    static let bonusCodes: Set<String> = Set(bonus.map(\.code))
 }

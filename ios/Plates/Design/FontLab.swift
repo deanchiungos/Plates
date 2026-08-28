@@ -2,10 +2,15 @@
 import SwiftUI
 import UIKit
 
-/// Debug-only typeface comparison. Launch with `-fontLab`.
+/// Debug-only typeface comparison. Launch with `-fontLab`; `-fontLab duel` shows
+/// only the current face and its bundled challenger, side by side.
 ///
-/// Every candidate here already ships with iOS, so switching to one costs no bundle
-/// size, no licence and no `UIAppFonts` entry.
+/// Every candidate here ships with iOS except Overpass, which is bundled (see
+/// Info.plist). The shipping-fonts constraint was the original brief and is what
+/// produced Avenir Next; Overpass is the question of whether escaping that
+/// constraint buys anything — it is a free digitisation of Highway Gothic, the
+/// U.S. interstate signage face, which makes it the text-face sibling of the DIN
+/// the plates are already set in.
 ///
 /// The row header resolves each PostScript name through `UIFont` and says so. That
 /// check is the point of the screen as much as the samples are: `Font.custom(_:size:)`
@@ -23,11 +28,16 @@ struct FontLab: View {
     }
 
     private let candidates: [Candidate] = [
-        .init(name: "SF Pro — current", regular: "", semibold: "", bold: ""),
-        .init(name: "Avenir Next",
+        // The label used to say current, from before the app switched to Avenir.
+        .init(name: "SF Pro — system", regular: "", semibold: "", bold: ""),
+        .init(name: "Avenir Next — previous",
               regular: "AvenirNext-Regular",
               semibold: "AvenirNext-DemiBold",
               bold: "AvenirNext-Bold"),
+        .init(name: "Overpass — current",
+              regular: "Overpass-Regular",
+              semibold: "Overpass-SemiBold",
+              bold: "Overpass-Bold"),
         .init(name: "Seravek",
               regular: "Seravek",
               semibold: "Seravek-Medium",
@@ -52,6 +62,12 @@ struct FontLab: View {
 
     private var page: [Candidate] {
         let args = ProcessInfo.processInfo.arguments
+        // The decision as it will actually be made: incumbent against challenger,
+        // nothing else on the page.
+        if args.contains("duel") {
+            return candidates.filter { $0.name.hasSuffix("current") || $0.name.hasSuffix("previous") }
+                .filter { !$0.regular.isEmpty }
+        }
         let second = args.contains("2")
         return second ? Array(candidates.dropFirst(4)) : Array(candidates.prefix(4))
     }
@@ -83,20 +99,26 @@ struct FontLab: View {
             }
 
             // The same four roles the app actually uses, at the sizes it uses them.
-            Text("LEGENDARY")
+            //
+            // `verbatim` because these are type specimens, not copy. Written as
+            // plain literals they extract into the String Catalog like any other
+            // sentence, so a translator opening the catalogue finds "LEGENDARY"
+            // and a fact about a drive-in theatre sitting beside the real UI.
+            // This screen only exists in a DEBUG build; the catalogue ships.
+            Text(verbatim: "LEGENDARY")
                 .font(font(c.bold, 30))
                 .foregroundStyle(Theme.paint)
-            Text("New Jersey")
+            Text(verbatim: "New Jersey")
                 .font(font(c.bold, 19))
                 .foregroundStyle(Theme.ink)
-            Text("The first drive-in theatre opened in Camden, New Jersey, in 1933.")
+            Text(verbatim: "The first drive-in theatre opened in Camden, New Jersey, in 1933.")
                 .font(font(c.regular, 17))
                 .foregroundStyle(Theme.ink.opacity(0.78))
                 .fixedSize(horizontal: false, vertical: true)
-            Text("Playing with others?  Add players")
+            Text(verbatim: "Playing with others?  Start a party")
                 .font(font(c.semibold, 15))
                 .foregroundStyle(Theme.route)
-            Text("Rarity is scored against this route.")
+            Text(verbatim: "Rarity is scored against this route.")
                 .font(font(c.regular, 12.5))
                 .foregroundStyle(Theme.inkMuted)
         }

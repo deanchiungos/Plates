@@ -37,7 +37,7 @@ struct PlateBackground: View {
 
                     // Set by hand per plate in the review tool, for the busy
                     // designs where moving the text wasn't enough on its own —
-                    // Rushmore, an aurora. Same opposite-luminance colour as the
+                    // Rushmore, an aurora. Same opposite-luminance color as the
                     // halo, so dialling it up just deepens the same effect rather
                     // than introducing a second treatment.
                     if art.scrim > 0 {
@@ -53,7 +53,7 @@ struct PlateBackground: View {
     }
 }
 
-/// The lettering, in the colour the real plate paints its serial.
+/// The lettering, in the color the real plate paints its serial.
 ///
 /// Split out of PlateTile because the trail map draws the same thing at a third
 /// of the size, and the two were already drifting: the map had lost the state
@@ -82,11 +82,17 @@ struct PlateLettering: View {
         // hands you the same proxy at *render* time and can only do things that
         // don't affect layout — offset being exactly one of them. Filling the
         // tile first is what makes proxy.size the tile rather than the glyphs.
-        block
+        //
+        // Read out here rather than inside the closure: `visualEffect` takes a
+        // `@Sendable` closure and `offset` is a property of this main-actor view,
+        // so reaching for it at render time is exactly what that annotation
+        // forbids. Two Doubles cross the boundary instead.
+        let shift = offset
+        return block
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .visualEffect { content, proxy in
-                content.offset(x: proxy.size.width * offset.x,
-                              y: proxy.size.height * offset.y)
+                content.offset(x: proxy.size.width * shift.x,
+                              y: proxy.size.height * shift.y)
             }
     }
 
@@ -109,7 +115,7 @@ struct PlateLettering: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
                     .padding(.horizontal, 3)
-                    // The fade lives in the colour, not in .opacity(). A view-level
+                    // The fade lives in the color, not in .opacity(). A view-level
                     // opacity below 1 makes SwiftUI composite that view through its
                     // own layer; folding it into the paint is the same pixels for
                     // free.
@@ -120,9 +126,9 @@ struct PlateLettering: View {
     }
 }
 
-/// A soft ring behind the type, on the four plates whose own two colours do not
+/// A soft ring behind the type, on the four plates whose own two colors do not
 /// clear WCAG AA: New Mexico is genuinely yellow on turquoise, Ontario genuinely
-/// white on blue. Repainting them into colours they do not have would be the
+/// white on blue. Repainting them into colors they do not have would be the
 /// worse lie, so they get a ring instead.
 ///
 /// It used to be two rings on every plate with artwork. That is 130 offscreen

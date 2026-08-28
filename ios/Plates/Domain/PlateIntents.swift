@@ -10,7 +10,7 @@ import SwiftData
 //
 // One platform constraint worth knowing: an App Shortcut phrase **must** contain the
 // app name. "Hey Siri, log a New Jersey plate" cannot be registered by an app; it has
-// to be "…in Plates". Users can rename any of these to whatever they like in the
+// to be "…in Tags". Users can rename any of these to whatever they like in the
 // Shortcuts app, which is the supported way to get a shorter phrase.
 
 // MARK: - The plate as something Siri can name
@@ -114,7 +114,7 @@ struct PlateQuery: EntityStringQuery {
 struct LogPlateIntent: AppIntent {
     static var title: LocalizedStringResource = "Log a plate"
     static var description = IntentDescription(
-        "Records a plate on whatever you are filling — a trip or your book — and reads back something about it.")
+        "Records a plate on whatever you are filling, a trip or your book, and reads back something about it.")
     static var openAppWhenRun = false
 
     /// `requestValueDialog` is the whole fix for "log a plate".
@@ -138,23 +138,32 @@ struct LogPlateIntent: AppIntent {
             return .result(dialog: "I do not know that plate.")
         }
         guard let trip = PlatesStore.currentTarget() else {
-            return .result(dialog: "Start a trip or a book in Plates first.")
+            return .result(dialog: "Start a trip or a book in Tags first.")
         }
 
-        if trip.hasSeen(target) {
+        // Unless the car is playing shared claims and this phone has not banked it
+        // yet, in which case somebody else having called it is not an objection —
+        // the same third case the grid and voice mode allow.
+        let me = DevicePlayer.current(in: PlatesStore.context)
+        let sharedClaim = PartySession.rules(for: trip.id).sharedClaims
+            && !trip.hasClaimed(target.code, by: me)
+        if trip.hasSeen(target), !sharedClaim {
             let count = trip.sightingCount(for: target)
             return .result(dialog: IntentDialog(
                 "You already logged \(target.name) on \(trip.name)\(count > 1 ? ", \(count) times" : "")."))
         }
 
-        // No player attached. Siri cannot reasonably ask who spotted it mid-drive,
-        // and an unattributed sighting still counts for the trip — that is exactly
-        // what the nullify delete rule already exists to allow.
+        // Attributed to this phone's own player, like every other way in. It used to
+        // land unowned, on the reasoning that Siri cannot ask who spotted it
+        // mid-drive — true, and no longer a question anyone has to answer: the phone
+        // being spoken to *is* the person. A Siri-logged plate now shows up in the
+        // standings instead of quietly counting for nobody.
         //
         // Through `PlateLogger` like every other route in, which is what gets a
         // Siri-logged plate its banked rarity and its place on the trail. Logging it
         // here by hand is how it went without both for as long as it did.
         let outcome = PlateLogger.record(target, in: trip,
+                                         by: me,
                                          at: TripLocation.shared.coordinate,
                                          context: PlatesStore.context)
         let tier = outcome.tier
@@ -243,24 +252,23 @@ struct RarestFindIntent: AppIntent {
             return .result(dialog: "You have not started a trip or a book yet.")
         }
 
-        let best = trip.seenCodes
-            .compactMap { Plate.plate(for: $0) }
-            .max { trip.rarity(of: $0) < trip.rarity(of: $1) }
-
-        guard let best else {
+        let index = trip.plateIndex()
+        guard let best = rarestPlate(in: trip.seenCodes,
+                                     scoredBy: { trip.rarity(of: $0, using: index) }),
+              let plate = Plate.plate(for: best.code) else {
             return .result(dialog: "You have not logged anything yet.")
         }
 
-        let tier = RarityTier.forRarity(trip.rarity(of: best))
+        let tier = RarityTier.forRarity(best.rarity)
         return .result(dialog: IntentDialog(
-            "Your best find is \(best.name), \(tier.label.lowercased()), on \(trip.name)."))
+            "Your best find is \(plate.name), \(tier.label.lowercased()), on \(trip.name)."))
     }
 }
 
 
 // MARK: - Hands free
 
-/// "Hey Siri, log some plates in Plates" — and then stop talking to Siri.
+/// "Hey Siri, start voice mode in Tags" — and then stop talking to Siri.
 ///
 /// The other intents here each do one thing per invocation, which is right for "have
 /// I logged Ohio" and wrong for a drive. This one opens the app's own voice mode and
@@ -274,17 +282,15 @@ struct RarestFindIntent: AppIntent {
 struct StartVoiceModeIntent: AppIntent {
     static var title: LocalizedStringResource = "Start voice mode"
     static var description = IntentDescription(
-        "Opens Plates and starts listening, so you can call out plates without touching anything.")
+        "Opens Tags and starts listening, so you can call out plates without touching anything.")
     static var openAppWhenRun = true
 
-    /// Optional, and that is the whole trick.
-    ///
-    /// It lets one intent answer both "log a plate in Plates" and "log New Jersey in
-    /// Plates". Optional parameters are never prompted for, so the bare phrase does
-    /// not turn into Siri asking "which plate?" — it just opens the microphone. When
-    /// a plate *was* named, it rides along and is logged as the screen opens, because
-    /// making somebody repeat a word they already said is the thing voice mode exists
-    /// to avoid.
+    /// Optional, and never in a spoken phrase any more — see `PlatesShortcuts` for
+    /// why the slot-bearing phrases are gone. It stays because the Shortcuts app can
+    /// still fill it: an automation built there can open voice mode with a plate
+    /// already logged. Optional parameters are never prompted for, so the ordinary
+    /// spoken route does not turn into Siri asking "which plate?" — it just opens
+    /// the microphone.
     @Parameter(title: "Plate")
     var plate: PlateEntity?
 
@@ -303,19 +309,24 @@ struct StartVoiceModeIntent: AppIntent {
 
 // MARK: - Phrases
 
-/// EVERY SPOKEN ROUTE THAT INVOLVES LOGGING NOW OPENS VOICE MODE.
+/// THE SPOKEN ROUTE INTO LOGGING IS VOICE MODE, AND IT HAS EXACTLY TWO PHRASES.
 ///
-/// It used to be split: naming a plate ran `LogPlateIntent` without opening the app,
-/// which is lovely when it works and is the exact thing that kept not working — Siri
-/// has to match a phrase *and* resolve a state name inside it, and it would drop the
-/// whole request rather than get half of it right. One plate per invocation also meant
-/// saying "in Plates" again for the next one.
+/// There were ten, and the shortcut never fired. Two causes, both structural. Half
+/// the phrases carried a `\(\.$plate)` entity slot, and a parameterised phrase only
+/// registers with Siri if the app pushes the parameter's possible values via
+/// `updateAppShortcutParameters()` — which nothing did, so those phrases were dead on
+/// arrival, and Siri's matcher does not degrade gracefully around a slot it cannot
+/// bind: it drops the request. The rest were built on everyday verbs — "log", "add",
+/// "listen" — attached to an app named after an ordinary English noun, and Siri
+/// resolved the collision by doing a web search about plates.
 ///
-/// So all of it — "log a plate", "log New Jersey", "I saw a plate", "start voice mode"
-/// — lands on `StartVoiceModeIntent`. Siri only has to match the phrase; the state
-/// name is then heard by the app's own recogniser, which knows sixty-five candidates
-/// instead of the entire language. And you are left in a mode that takes the next
-/// twenty plates without being spoken to again.
+/// So: two phrases, no slots, both anchored on "voice mode" — a compound unusual
+/// enough to be the strongest signal in the sentence. Fewer distinct phrasings is
+/// also *better* matching, not worse: each one is a separate pattern competing for
+/// Siri's guess, and the way to be found is to be unambiguous, not numerous. A plate
+/// named mid-sentence is not needed anyway — the app's own recogniser takes over the
+/// moment the screen opens, and it knows sixty-five candidates instead of the entire
+/// language.
 ///
 /// "OPEN PLATES" IS DELIBERATELY NOT HERE, and no phrase below may begin with "Open
 /// \(.applicationName)". A plain launch has to stay a plain launch: it is
@@ -331,15 +342,7 @@ struct PlatesShortcuts: AppShortcutsProvider {
         AppShortcut(
             intent: StartVoiceModeIntent(),
             phrases: [
-                "Log \(\.$plate) in \(.applicationName)",
-                "Log a plate in \(.applicationName)",
-                "Log plates in \(.applicationName)",
-                "Log something in \(.applicationName)",
-                "I saw \(\.$plate) in \(.applicationName)",
-                "Add a plate in \(.applicationName)",
                 "Start voice mode in \(.applicationName)",
-                "Start logging in \(.applicationName)",
-                "Listen in \(.applicationName)",
                 "\(.applicationName) voice mode"
             ],
             shortTitle: "Voice mode",

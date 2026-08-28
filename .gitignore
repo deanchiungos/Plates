@@ -1,0 +1,18 @@
+# Build output. Xcode writes here when -derivedDataPath is pointed at the repo,
+# and there is no reason for any of it to be committed.
+ios/build/
+ios/build-rel/
+DerivedData/
+*.xcuserdatad/
+xcuserdata/
+
+# Xcode's own scratch
+*.xcworkspace/xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store

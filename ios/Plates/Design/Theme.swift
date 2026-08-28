@@ -15,10 +15,10 @@ import UIKit
 /// how a card is told apart from the page it is on — when both were cream the
 /// two ran together and the app lost the shape of its own layout. The page is
 /// still only a few percent off white; it just no longer has to carry the
-/// separation as well as the colour.
+/// separation as well as the color.
 enum Theme {
 
-    // MARK: Colour
+    // MARK: Color
     static let ground     = Color(hex: 0xFAF7EF)
     static let surface    = Color(hex: 0xFFFFFF)
     static let route      = Color(hex: 0x12395E)
@@ -27,12 +27,12 @@ enum Theme {
     static let paint      = Color(hex: 0xF0B429)
     static let ink        = Color(hex: 0x1B2231)
     /// Warm grey, not blue-grey. On cream the old cool muted text read as
-    /// faintly purple, which is the usual tell that a palette was recoloured
+    /// faintly purple, which is the usual tell that a palette was recolored
     /// halfway.
     static let inkMuted   = Color(hex: 0x8A8377)
     static let line       = Color(hex: 0xE7E1D1)
     /// Map only. Green is not otherwise in the palette, and it earns its place
-    /// there: on a map, filled-in means collected in a way no accent colour does.
+    /// there: on a map, filled-in means collected in a way no accent color does.
     static let found      = Color(hex: 0x2FB574)
     static let unfound    = Color(hex: 0xE9E3D5)
     /// The recessed pressing an uncollected plate goes into, in the book. Darker
@@ -50,8 +50,8 @@ enum Theme {
     ///
     /// It gets away with it because the ring is far more saturated than any fill and
     /// carries a glow, so the two read as different objects rather than the same
-    /// colour twice. If that ever stops being true, the fix is to darken the
-    /// legendary map fill rather than to move the selection colour again.
+    /// color twice. If that ever stops being true, the fix is to darken the
+    /// legendary map fill rather than to move the selection color again.
     static let mapSelection = Color(hex: 0xFFC400)
 
     /// The serial and state name on a plate nobody has spotted yet.
@@ -66,7 +66,7 @@ enum Theme {
     static let plateSub   = Color(hex: 0x6C6455)
     static let plateOnSub = Color(hex: 0x8FB4D6)
 
-    /// Player colours, chosen to stay distinguishable against the route-blue fill
+    /// Player colors, chosen to stay distinguishable against the route-blue fill
     /// and from each other. Players store an index into this array.
     static let playerColors: [Color] = [
         Color(hex: 0x3DDC84),   // green
@@ -83,26 +83,27 @@ enum Theme {
 
     // MARK: Type
     //
-    // Two faces. DIN Condensed is the road-sign face real plates are set in — it is
-    // the subject's own vernacular, and it is restricted to plate glyphs, numerals
-    // and eyebrows. Everything read as a sentence is Avenir Next.
+    // Two faces, both from the road. DIN Condensed is the sign face real plates are
+    // set in — the subject's own vernacular, restricted to plate glyphs, numerals
+    // and eyebrows. Everything read as a sentence is Overpass, a free digitisation
+    // of Highway Gothic, the face on every U.S. interstate sign: signage for the
+    // prose, plate dies for the serials, so the whole app speaks one dialect.
     //
-    // Both ship with iOS, so neither costs bundle size or a licence. Avenir replaced
-    // the system face because SF Pro is what an app uses when nobody chose a font,
-    // and it makes every iOS app look like the same app.
-    /// Avenir Next, in the six weights iOS actually ships.
+    // Overpass is bundled (see Info.plist and Resources/Fonts, licence alongside).
+    // It replaced Avenir Next, which had replaced SF Pro — Avenir was the best face
+    // that ships with iOS, and also the one every app that fled SF Pro landed on.
+    // Beating that sameness is worth ~270KB of bundle.
+    /// Overpass, in the four weights the app actually sets.
     ///
-    /// There is no Light and no face literally called SemiBold — Demi Bold is the
-    /// semibold — so `.light` borrows Ultra Light and `.semibold` maps to Demi Bold.
-    /// Anything heavier than bold lands on Heavy.
-    static func avenir(_ weight: Font.Weight) -> String {
+    /// The family has no Medium, so `.medium` rounds up to SemiBold — seven call
+    /// sites, all wanting "slightly more than body", and up reads better than
+    /// down against Overpass's light-side regular. Anything past bold is Heavy.
+    static func overpass(_ weight: Font.Weight) -> String {
         switch weight {
-        case .ultraLight, .thin, .light: return "AvenirNext-UltraLight"
-        case .medium:                    return "AvenirNext-Medium"
-        case .semibold:                  return "AvenirNext-DemiBold"
-        case .bold:                      return "AvenirNext-Bold"
-        case .heavy, .black:             return "AvenirNext-Heavy"
-        default:                         return "AvenirNext-Regular"
+        case .medium, .semibold: return "Overpass-SemiBold"
+        case .bold:              return "Overpass-Bold"
+        case .heavy, .black:     return "Overpass-Heavy"
+        default:                 return "Overpass-Regular"
         }
     }
 
@@ -175,7 +176,7 @@ enum Theme {
 
     // MARK: System controls
 
-    /// Repaint the UIKit controls SwiftUI has no colour hooks for.
+    /// Repaint the UIKit controls SwiftUI has no color hooks for.
     ///
     /// A segmented control draws its own track and its own selected pill, and
     /// both are system greys — cool ones. Against a warm page they were the two
@@ -207,21 +208,20 @@ extension Color {
 }
 
 extension Font {
-    /// The app's text face: Avenir Next, sized in points, scaling with Dynamic Type.
+    /// The app's text face: Overpass, sized in points, scaling with Dynamic Type.
     ///
     /// A drop-in replacement for `.system(size:weight:)`, which is what every call
-    /// site used before — chosen so the switch could be mechanical and so the sizes
-    /// already tuned against each layout did not have to be re-picked.
+    /// site used originally — chosen so a face swap is one line here rather than a
+    /// re-pick of sizes tuned against each layout. That is also what made the
+    /// Avenir → Overpass change safe to make.
     ///
-    /// Two things it fixes at once. Avenir Next is not the system face, so the app
-    /// stops looking like every other iOS app; and `relativeTo:` means text finally
-    /// responds to the reader's text-size setting, which nothing in the app did while
-    /// every size was an absolute point value.
+    /// `relativeTo:` means text responds to the reader's text-size setting, which
+    /// nothing in the app did while every size was an absolute point value.
     ///
     /// SF Symbols deliberately still use `.system` — a symbol takes its stroke weight
     /// from the font it is given, and handing one a text face loses that.
     static func plates(size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        .custom(Theme.avenir(weight),
+        .custom(Theme.overpass(weight),
                 size: size,
                 relativeTo: Theme.textStyle(for: size))
     }

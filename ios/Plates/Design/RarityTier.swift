@@ -4,8 +4,10 @@ import SwiftUI
 ///
 /// Bands of the 1...10 rarity scale rather than a continuous curve, because the
 /// reward has to be legible: a kid should learn after two or three finds that gold
-/// letters mean something genuinely unusual just went past the window. Five tiers
-/// is the most that stays distinguishable at a glance.
+/// letters mean something genuinely unusual just went past the window. Five bands
+/// is the most that stays distinguishable at a glance, which is why the sixth is
+/// not a band: mythic is a fixed short list rather than a slice of the scale, so it
+/// adds a name to learn without making any of the other five harder to tell apart.
 ///
 /// The bands are read off the *geographic* rarity, so the same plate escalates
 /// differently depending on the trip. A New Jersey plate is silent in Newark and a
@@ -16,35 +18,56 @@ enum RarityTier: Int, Comparable {
     case rare        // 5-6
     case epic        // 7-8
     case legendary   // 9-10
+    /// 11, and 11 is not a band — see `PlateRarity.mythic`.
+    ///
+    /// Every other tier is a slice of the ranking: whatever happens to land in those
+    /// positions from where you are standing. Mythic is not. It is six named regions
+    /// you cannot drive to plus one that depends on where you are, promoted above the
+    /// scale after the ranking is done. That is why it has a rarity value nothing
+    /// else can reach rather than a share of the buckets.
+    case mythic      // 11
 
     static func < (a: RarityTier, b: RarityTier) -> Bool { a.rawValue < b.rawValue }
 
     static func forRarity(_ rarity: Int) -> RarityTier {
         switch rarity {
-        case ...2:  return .common
-        case 3...4: return .uncommon
-        case 5...6: return .rare
-        case 7...8: return .epic
-        default:    return .legendary
+        case ...2:   return .common
+        case 3...4:  return .uncommon
+        case 5...6:  return .rare
+        case 7...8:  return .epic
+        case 9...10: return .legendary
+        // Read from the Domain rather than restated. `mythicValue` is
+        // `buckets.count + 1`, derived so it tracks a band table that has already
+        // been retuned once — and `ranked()` hands ordinary leftover regions
+        // `buckets.count`. A `default:` here meant adding an eleventh bucket would
+        // have promoted a whole band of common plates to the crimson dot, the
+        // widest glow, the screen flash and the word MYTHIC, with no compile error.
+        case PlateRarity.mythicValue...: return .mythic
+        default:     return .legendary
         }
     }
 
     /// Every tier is named, including the dull ones. Naming only the top three hid
     /// the scale that gives them meaning — "RARE" lands harder when you have seen
     /// "COMMON" and "UNCOMMON" go past and know where it sits on the ramp. What
-    /// escalates is the size and the colour, not whether the word appears at all.
+    /// escalates is the size and the color, not whether the word appears at all.
+    /// `String(localized:)` and not a key, because the Map capitalises this one
+    /// (`tier.label.capitalized`) and a `LocalizedStringKey` has no characters to
+    /// capitalise. Wrapping still puts them all in the String Catalog.
     var label: String {
         switch self {
-        case .common:    return "COMMON"
-        case .uncommon:  return "UNCOMMON"
-        case .rare:      return "RARE"
-        case .epic:      return "EPIC"
-        case .legendary: return "LEGENDARY"
+        case .common:    return String(localized: "COMMON")
+        case .uncommon:  return String(localized: "UNCOMMON")
+        case .rare:      return String(localized: "RARE")
+        case .epic:      return String(localized: "EPIC")
+        case .legendary: return String(localized: "LEGENDARY")
+        case .mythic:    return String(localized: "MYTHIC")
         }
     }
 
-    /// Grey to navy to blue to violet to gold — a ramp that reads as escalating even
-    /// if you never learn which word means what.
+    /// Grey to green to blue to violet to gold — a ramp that reads as escalating
+    /// even if you never learn which word means what. Mythic steps off the ramp
+    /// rather than extending it.
     var color: Color {
         switch self {
         case .common:    return Theme.inkMuted
@@ -57,13 +80,19 @@ enum RarityTier: Int, Comparable {
         case .rare:      return Color(hex: 0x2F8FE0)
         case .epic:      return Color(hex: 0xA45BE8)
         case .legendary: return Color(hex: 0xF0B429)
+        // Crimson, and deliberately off the grey/green/blue/violet/gold ladder
+        // rather than one more step along it. There is no color past gold that
+        // still reads as "more"; going somewhere else entirely is what makes the
+        // sixth tier look like a different kind of thing instead of a brighter
+        // version of the fifth.
+        case .mythic:    return Color(hex: 0xBD223C)
         }
     }
 
-    /// The lit face of the tier — its own colour with the light on it.
+    /// The lit face of the tier — its own color with the light on it.
     ///
     /// Only ever the near side of a gradient, never a fill in its own right. A disc
-    /// of flat colour seven points across reads as a printed sticker at any
+    /// of flat color seven points across reads as a printed sticker at any
     /// saturation; the same disc with a highlight off one shoulder reads as a bead,
     /// and that is the whole difference between a mark you scan past and one you look
     /// at.
@@ -74,16 +103,17 @@ enum RarityTier: Int, Comparable {
         case .rare:      return Color(hex: 0x9AD2F8)
         case .epic:      return Color(hex: 0xD8B8FB)
         case .legendary: return Color(hex: 0xFFE9A8)
+        case .mythic:    return Color(hex: 0xFFE3E8)
         }
     }
 
-    /// How far the tier's colour bleeds past the edge of its dot.
+    /// How far the tier's color bleeds past the edge of its dot.
     ///
     /// Steeply weighted rather than evenly spaced, because a grid where every dot
     /// glows is a grid where none of them does. Common gets nothing at all — a plate
     /// that was wallpaper where you caught it should not be lit up about it — and
     /// legendary gets enough to find from across the screen without reading its
-    /// colour.
+    /// color.
     var glowRadius: CGFloat {
         switch self {
         case .common:    return 0
@@ -91,6 +121,7 @@ enum RarityTier: Int, Comparable {
         case .rare:      return 3.5
         case .epic:      return 5
         case .legendary: return 7
+        case .mythic:    return 9
         }
     }
 
@@ -102,10 +133,11 @@ enum RarityTier: Int, Comparable {
         case .rare:      return 52
         case .epic:      return 60
         case .legendary: return 68
+        case .mythic:    return 74
         }
     }
 
-    /// Fill colour for the map, which needs a different ramp from the pips.
+    /// Fill color for the map, which needs a different ramp from the pips.
     ///
     /// `color` is tuned to read at four points on a white tile, and there the dark
     /// route blue of "uncommon" is simply a dot. Filling whole states with it made
@@ -121,6 +153,7 @@ enum RarityTier: Int, Comparable {
         case .rare:      return Color(hex: 0x86BCEC)
         case .epic:      return Color(hex: 0xC79BF0)
         case .legendary: return Color(hex: 0xF5C651)
+        case .mythic:    return Color(hex: 0xD9556B)
         }
     }
 
@@ -133,6 +166,7 @@ enum RarityTier: Int, Comparable {
         case .rare:      return 18
         case .epic:      return 26
         case .legendary: return 40
+        case .mythic:    return 56
         }
     }
 
@@ -143,12 +177,13 @@ enum RarityTier: Int, Comparable {
         case .rare:      return 62...130
         case .epic:      return 74...170
         case .legendary: return 90...240
+        case .mythic:    return 110...300
         }
     }
 
     /// Only the top tier gets the full-screen wash. Used sparingly it lands; used
     /// on every find it would be exhausting.
-    var flashesScreen: Bool { self == .legendary }
+    var flashesScreen: Bool { self >= .legendary }
 
     @MainActor
     func playHaptic() {
@@ -156,7 +191,7 @@ enum RarityTier: Int, Comparable {
         case .common:    Haptics.repeatSighting()
         case .uncommon:  Haptics.found()
         case .rare:      Haptics.found()
-        case .epic, .legendary: Haptics.milestone()
+        case .epic, .legendary, .mythic: Haptics.milestone()
         }
     }
 }
@@ -166,7 +201,7 @@ enum RarityTier: Int, Comparable {
 /// Shown on every *first* find, not just rare ones, because the fun fact is the
 /// reward as much as the confetti is — and a fact you only ever see for Nunavut is
 /// a fact nobody sees. What escalates is the volume: the tier word grows and
-/// changes colour as the plate gets rarer, and a legendary one is big enough to
+/// changes color as the plate gets rarer, and a legendary one is big enough to
 /// read from the back seat.
 ///
 /// Deliberately not a popup: it must not need dismissing, must not block the next
@@ -194,7 +229,7 @@ struct FindBanner: View {
         VStack(spacing: 6) {
             Text(tier.label)
                 .font(Theme.PlateFont.condensed(tier.titleSize))
-                .tracking(tier == .legendary ? 3.5 : 2.5)
+                .tracking(tier >= .legendary ? 3.5 : 2.5)
                 .foregroundStyle(tier.color)
                 .minimumScaleFactor(0.6)
                 .lineLimit(1)
@@ -241,7 +276,7 @@ struct FindBanner: View {
     }
 }
 
-/// A single wash of tier colour over the whole screen. Legendary only.
+/// A single wash of tier color over the whole screen. Legendary only.
 struct RarityFlash: View {
     let tier: RarityTier
     @State private var on = false

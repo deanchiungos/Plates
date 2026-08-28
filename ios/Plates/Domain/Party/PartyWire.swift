@@ -22,14 +22,38 @@ import Foundation
 struct PartyEnvelope: Codable {
     /// Bump whenever a payload's meaning changes. Adding an optional field does not
     /// count — decoding tolerates those — but removing or repurposing one does.
-    static let currentVersion = 1
+    ///
+    /// v2 added `TripEvent.rules`. It is an optional field and would have decoded
+    /// against v1 without complaint, which is exactly the problem: a v1 phone would
+    /// have ignored the rules and happily un-tapped plates the rest of the party had
+    /// agreed were protected. A rule everybody does not enforce is not a rule. The
+    /// app is unreleased so there is no v1 population to strand; after release,
+    /// prefer optional fields over bumps wherever the old behaviour stays *safe*.
+    static let currentVersion = 2
 
     var v: Int
     var payload: Payload
 
-    init(_ payload: Payload, v: Int = PartyEnvelope.currentVersion) {
+    /// Which player the *sending device* is playing as.
+    ///
+    /// An `MCPeerID`'s display name is fixed for the life of the process — the
+    /// framework has no way to rename one — so a party that identified people by it
+    /// was showing a name from whenever the session started, and no amount of fixing
+    /// the roster underneath could move it. This is the identity that does not go
+    /// stale: a player id resolves to a live `Player` row, and the row is what a
+    /// rename changes.
+    ///
+    /// Optional, and therefore not a version bump — the rule at `currentVersion`.
+    /// A message without one falls back to the peer's display name, which is what
+    /// every message did before, so an older phone in the car degrades to exactly
+    /// the old behaviour instead of breaking.
+    var from: UUID?
+
+    init(_ payload: Payload, from: UUID? = nil,
+         v: Int = PartyEnvelope.currentVersion) {
         self.v = v
         self.payload = payload
+        self.from = from
     }
 
     enum Payload: Codable {
@@ -105,8 +129,12 @@ struct PlayerEvent: Codable, Identifiable, Equatable {
     var id: UUID
     var name: String
     var colorIndex: Int
+    /// Their emoji, if they picked one. Optional and additive: a build that does
+    /// not know about it falls back to initials, which is a real face rather than
+    /// a broken one — so this needed no version bump, unlike `PartyRules`.
+    var avatar: String?
     /// Kept because it is the stable tie-break for standings order, and for the
-    /// colour de-collision rule: both need every device to sort players the same
+    /// color de-collision rule: both need every device to sort players the same
     /// way, and join order is the only ordering that is a fact rather than a
     /// preference.
     var joinedAt: Date
@@ -136,6 +164,48 @@ struct TripEvent: Codable, Equatable {
     /// guard instead of failing the whole decode.
     var scoringModeRaw: String
     var includesTrucks: Bool
+    /// How the party plays. Optional so a `TripEvent` built outside a party (or by
+    /// a future build that drops them) still decodes; `nil` means the defaults.
+    var rules: PartyRules?
+}
+
+/// What the host has decided about how the game is played.
+///
+/// Both of these are about the same underlying awkwardness: the grid was designed
+/// for one phone, where every plate on it was yours and a tap that took one back
+/// could only ever be undoing your own mistake. With five phones on one trip, the
+/// same tap can undo somebody else's afternoon.
+struct PartyRules: Codable, Equatable {
+
+    /// You can only take back plates you claimed yourself. On by default.
+    ///
+    /// Off is the old behaviour, and it is a real choice rather than a legacy
+    /// setting: a couple playing together may well want either of them to fix a
+    /// mistap without passing a phone around. On is the default because the failure
+    /// it prevents — one bored passenger clearing the board — is worse than the
+    /// inconvenience it causes.
+    var protectsClaims: Bool = true
+
+    /// Everybody who calls a plate gets it, instead of the first person taking it
+    /// off the board for the rest of the car. Off by default.
+    ///
+    /// Off, the game is a race: the plate is spotted, it is on the board, and the
+    /// next person to tap it is trying to take it back. On, it is a shared hunt —
+    /// four people can each bank Montana, each at what it was worth from where they
+    /// were sitting, and the trip still counts it once. Which of those two games a
+    /// car wants is genuinely a matter of who is in it.
+    var sharedClaims: Bool = false
+
+    static let standard = PartyRules()
+
+    /// How a collection plays when no party is running on it.
+    ///
+    /// Deliberately *not* `standard`. `standard` is the default a host starts a
+    /// party with, and it protects claims — which is right in a car with four
+    /// people in it and wrong the moment they get out. Off a party, the trip on
+    /// this phone is your copy, and a plate you can never take back because
+    /// somebody who is no longer here tapped it once is a board with a stuck key.
+    static let solo = PartyRules(protectsClaims: false)
 }
 
 // MARK: - Coding

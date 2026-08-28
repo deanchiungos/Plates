@@ -1,14 +1,20 @@
 import SwiftUI
 
 /// The core component. 5:3 plate proportions, an inner light ring standing in for
-/// the embossed edge, and — when several people are playing — a colour bar along
+/// the embossed edge, and — when several people are playing — a color bar along
 /// the bottom showing who called it. The bar rather than a full tint, so the tile
 /// still reads as a plate.
 struct PlateTile: View {
     let plate: Plate
     let isFound: Bool
-    var spotterColor: Color? = nil
-    var spotterInitial: String? = nil
+    /// Who called it, when exactly one person did. Three parameters before — a
+    /// color, a glyph and a flag saying whether that glyph was an emoji — which is
+    /// the same person taken apart, and every call site put them back together the
+    /// same way. `PlayerDot` takes a player, so the tile can too.
+    var spotter: Player? = nil
+    /// Everyone who has banked this plate. Empty or one under the ordinary rules;
+    /// several once a party lets more than one person claim the same state.
+    var claimants: [Player] = []
     var repeatCount: Int = 0          // shown only in unlimited scoring
     var showsRepeats: Bool = false
 
@@ -25,18 +31,28 @@ struct PlateTile: View {
         RarityTier.forRarity(rarity ?? plate.points)
     }
 
-    /// Spotting a plate reveals its own colours. Unfound stays paper, so the
+    /// Spotting a plate reveals its own colors. Unfound stays paper, so the
     /// found/unfound read is still instant even once every state is styled.
     private var style: PlateStyle? {
         isFound ? (PlateStyle.style(for: plate.code) ?? .fallback) : nil
     }
 
-    /// The colour the plate itself paints its serial, once found. Anything drawn
+    /// The color the plate itself paints its serial, once found. Anything drawn
     /// over the artwork — the repeat count as much as the code — reads as part
     /// of the plate, so it all takes the same ink.
     private var ink: Color? {
         guard let style else { return nil }
         return PlateArtwork.ink(plate.code) ?? style.ink
+    }
+
+    /// Whether the top-left corner will carry a chip.
+    ///
+    /// Exported because the poster asks the same question about the same tile, to
+    /// decide whether it has room for its found-tick — and it was asking a different
+    /// question that happened to give the same answer most of the time. The rule
+    /// lives here, where the chip is drawn, so a change to one is a change to both.
+    static func showsCornerChip(spotter: Player?, claimants: [Player]) -> Bool {
+        claimants.count > 1 || spotter != nil
     }
 
     var body: some View {
@@ -59,7 +75,7 @@ struct PlateTile: View {
             if let style {
                 PlateLettering(code: plate.code, style: style, name: plate.short)
             } else {
-                // Unfound stays paper: the plate's own colours are the reward for
+                // Unfound stays paper: the plate's own colors are the reward for
                 // spotting it, so they cannot leak into the not-yet state.
                 VStack(spacing: 2) {
                     Text(plate.code)
@@ -79,7 +95,7 @@ struct PlateTile: View {
 
             // Progress pip — top right. Empty ring until you spot it, then filled.
             //
-            // The *empty* one is deliberately neutral. It was once tier-coloured on
+            // The *empty* one is deliberately neutral. It was once tier-colored on
             // both states, which told you what a plate was worth before you had any
             // right to know: the grid pre-announced the good ones and the reveal on
             // the find card had nothing left to reveal.
@@ -94,49 +110,39 @@ struct PlateTile: View {
             // The white ring is what keeps it legible once the tile is wearing the
             // plate's own artwork behind it.
             if showsProgressDot {
-                VStack {
-                    HStack {
-                        Spacer()
-                        ProgressDot(tier: tier, isFound: isFound)
-                    }
-                    Spacer()
+                pinned(.topTrailing, inset: 5) {
+                    ProgressDot(tier: tier, isFound: isFound)
                 }
-                .padding(5)
             }
 
             // Who spotted it: a chip in the top-left, opposite the rarity pip.
-            // Tried a bottom bar and a coloured border first — the bar sat exactly
+            // Tried a bottom bar and a colored border first — the bar sat exactly
             // where every motif's horizon is, and the border read as "selected"
             // rather than "Mia got this one". The chip also shows *who*, not just
-            // a colour, so it works without the player strip in view.
-            if isFound, let spotterColor, let spotterInitial {
-                VStack {
-                    HStack {
-                        Text(spotterInitial)
-                            .font(.plates(size: 8, weight: .heavy))
-                            .foregroundStyle(Theme.ink)
-                            .frame(width: 12, height: 12)
-                            .background(Circle().fill(spotterColor))
-                            .overlay(Circle().strokeBorder(.white.opacity(0.85), lineWidth: 1))
-                        Spacer()
+            // a color, so it works without the player strip in view.
+            // Several claimants get the overlapping stack instead of one chip — a
+            // shared-claims party turns "who got this" into "who all got this", and
+            // three chips in a row would not fit a tile this size anyway. One
+            // claimant keeps exactly the chip it always had.
+            if isFound, Self.showsCornerChip(spotter: spotter, claimants: claimants) {
+                pinned(.topLeading, inset: 4) {
+                    if claimants.count > 1 {
+                        AvatarStack(players: claimants, limit: 3, size: 13,
+                                    background: .white.opacity(0.9))
+                    } else if let spotter {
+                        PlayerDot(spotter, showing: .small, size: 12,
+                                  ring: .white.opacity(0.85))
                     }
-                    Spacer()
                 }
-                .padding(4)
             }
 
             // bottom-left, so it never collides with the spotter chip above it
             if showsRepeats, repeatCount > 1 {
-                VStack {
-                    Spacer()
-                    HStack {
-                        Text("\(repeatCount)")
-                            .font(.plates(size: 8.5, weight: .heavy))
-                            .foregroundStyle((ink ?? Theme.plateSub).opacity(0.75))
-                        Spacer()
-                    }
+                pinned(.bottomLeading, inset: 5) {
+                    Text("\(repeatCount)")
+                        .font(.plates(size: 8.5, weight: .heavy))
+                        .foregroundStyle((ink ?? Theme.plateSub).opacity(0.75))
                 }
-                .padding(5)
             }
         }
         .aspectRatio(Theme.tileAspect, contentMode: .fit)
@@ -145,6 +151,20 @@ struct PlateTile: View {
         .accessibilityLabel(plate.name)
         .accessibilityValue(accessibilityValue)
         .accessibilityAddTraits(.isButton)
+    }
+
+    /// One small thing in one corner of the tile.
+    ///
+    /// Written out four times as a `VStack` of an `HStack` of the thing and two
+    /// `Spacer`s, which is the pre-alignment way of doing this and reads as three
+    /// nested containers rather than as "top left". Whichever corner is asked for,
+    /// the view still fills the tile, so the ZStack's own sizing is unchanged.
+    private func pinned<Content: View>(_ corner: Alignment,
+                                       inset: CGFloat,
+                                       @ViewBuilder content: () -> Content) -> some View {
+        content()
+            .padding(inset)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: corner)
     }
 
     private var accessibilityValue: String {
@@ -160,26 +180,39 @@ struct PlateTile: View {
 /// The mark in the tile's top corner: an empty ring until you spot the plate, then a
 /// lit bead in the tier it was banked at.
 ///
-/// It was a flat disc of tier colour, and at seven points across that is a sticker —
+/// It was a flat disc of tier color, and at seven points across that is a sticker —
 /// legible, and completely uninteresting. Three things now separate it from the
 /// artwork it sits on and from the tiers below it: an off-centre highlight so the
-/// light has a direction, a bloom of the tier's own colour past the edge, and, for
+/// light has a direction, a bloom of the tier's own color past the edge, and, for
 /// legendary alone, a second wider bloom on top of the first. Compounding two shadows
 /// rather than widening one keeps a hot core with a soft falloff, which is what
 /// actually reads as *lit* — a single large-radius shadow just makes a bigger,
 /// flatter smudge.
 ///
 /// The empty state is untouched, and deliberately. It is neutral because a
-/// tier-coloured ring would pre-announce which unfound plates are worth having, and
+/// tier-colored ring would pre-announce which unfound plates are worth having, and
 /// nothing about making the found ones brighter changes that.
 private struct ProgressDot: View {
     let tier: RarityTier
     let isFound: Bool
 
-    /// Legendary is drawn a point wider than the rest. At this size a point is a
-    /// seventh of the dot, which is plenty — and it is the one tier where the mark is
-    /// the point of the tile rather than a footnote on it.
-    private var size: CGFloat { isFound && tier == .legendary ? 8 : 7 }
+    /// The top two tiers are drawn wider than the rest. At this size a point is a
+    /// seventh of the dot, which is plenty — and these are the tiers where the mark
+    /// is the point of the tile rather than a footnote on it.
+    ///
+    /// Mythic used to be excluded from this and from the outer glow below, both of
+    /// which tested `== .legendary`. The crimson dot came out *smaller and dimmer*
+    /// than the gold one under it, so the rarest thing on the grid was the quietest
+    /// mark on it — and since mythic is a different color rather than one more step
+    /// up the ramp, size and glow are the only cues left saying it outranks gold.
+    private var size: CGFloat {
+        guard isFound else { return 7 }
+        switch tier {
+        case .mythic:    return 9
+        case .legendary: return 8
+        default:         return 7
+        }
+    }
 
     var body: some View {
         ZStack {
@@ -190,7 +223,7 @@ private struct ProgressDot: View {
                                          startRadius: 0,
                                          endRadius: size * 0.85))
                     .shadow(color: tier.color.opacity(0.9), radius: tier.glowRadius)
-                    .shadow(color: tier == .legendary ? tier.color.opacity(0.55) : .clear,
+                    .shadow(color: tier >= .legendary ? tier.color.opacity(0.55) : .clear,
                             radius: tier.glowRadius * 1.9)
             }
 
@@ -214,7 +247,7 @@ private struct ProgressDot: View {
         PlateTile(plate: Plate.plate(for: "CO")!, isFound: true)
         PlateTile(plate: Plate.plate(for: "AK")!, isFound: false)
         PlateTile(plate: Plate.plate(for: "MT")!, isFound: true,
-                  spotterColor: Theme.playerColor(1))
+                  spotter: Player(name: "Mia", colorIndex: 1))
     }
     .padding()
     .background(Theme.ground)

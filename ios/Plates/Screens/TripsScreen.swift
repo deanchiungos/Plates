@@ -4,13 +4,20 @@ import SwiftData
 struct TripsScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(PopupHost.self) private var popup
+    @Environment(CoachPresenter.self) private var coach
 
     @Query(sort: \Trip.startedAt, order: .reverse) private var trips: [Trip]
+    @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
+    @Query(sort: \Player.joinedAt) private var players: [Player]
     @AppStorage(TripSelection.key) private var currentTripID = ""
+
+    @Environment(TourGuide.self) private var tour
 
     @State private var editing: Trip?
     @State private var creating = false
     @State private var showArchived = false
+    /// Open by default: a finished trip is recent news, an archived one is not.
+    @State private var showFinished = true
 
     /// Set by the editor, acted on once the sheet is gone. A popup lives at the
     /// root and a sheet is presented above it, so a confirmation raised while the
@@ -22,9 +29,22 @@ struct TripsScreen: View {
         case delete(Trip)
         case archive(Trip)
         case finish(Trip)
+        case fold(Trip)
+        case unfold(Trip)
     }
 
     private var current: Trip? { TripSelection.current(from: trips, id: currentTripID) }
+
+    /// Who played this trip, or nothing if it was never a party.
+    ///
+    /// Gated on the ledger rather than on "more than one person has a sighting",
+    /// because that is also true of every trip from the shared-device era — and a
+    /// badge that says "party" on a trip four people took turns tapping into one
+    /// phone would be telling a small lie about what happened.
+    private func partyFaces(for trip: Trip) -> [Player] {
+        guard PartyLedger.shared.wasParty(trip.id) else { return [] }
+        return trip.participants(from: players)
+    }
 
     var body: some View {
         NavigationStack {
@@ -41,13 +61,13 @@ struct TripsScreen: View {
                         // for everyday spotting it becomes a list nobody can face.
                         // The book is the answer for that, and this is the first
                         // place anyone would otherwise not find out.
-                        Text("A trip is one journey \u{2014} it has a route, and it ends. "
-                             + "For everyday spotting on the way to school or the shops, "
-                             + "use a plate book instead: it just keeps going.")
+                        Text("A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going.")
                     } actions: {
                         Button("New trip") { creating = true }
                             .buttonStyle(.borderedProminent)
                             .tint(Theme.route)
+                            .tourAnchor(.tripsNew)
+                            .tourStop(.tripsNew)
                     }
                 } else {
                     list
@@ -55,15 +75,55 @@ struct TripsScreen: View {
             }
             .navigationTitle("Trips")
             .navigationBarTitleDisplayMode(.large)
+            .onAppear(perform: offerTripTips)
+            .onAppear { tour.offer(.trips, stops: tourStops) }
+            .onDisappear { tour.left(.trips) }
+            // A trip finished from the record sheet lands back here with the
+            // Finished section newly populated, which is the exact moment
+            // `doneTrip` is worth saying.
+            .onChange(of: trips.count) { _, _ in offerTripTips() }
+            .onChange(of: trips.finished.count) { _, _ in offerTripTips() }
+            // Leaving counts as shown. See `CoachPresenter.withdraw`.
+            .onDisappear {
+                coach.withdraw(.swipeTrip)
+                coach.withdraw(.doneTrip)
+                coach.withdraw(.listLength)
+            }
             #if DEBUG
             // `-tripEditor new|edit|archived` opens the sheet for screenshots.
             // `-showArchived` stands the archived section open, which is otherwise a
-            // tap away and so unreachable from a launch argument.
+            // tap away and so unreachable from a launch argument. `-foldPopup` opens
+            // the add-to-book flow for the first archived trip — it normally starts
+            // from a button inside the record sheet, which no argument can press.
             .onAppear {
                 let args = ProcessInfo.processInfo.arguments
                 if args.contains("-showArchived") { showArchived = true }
-                guard let i = args.firstIndex(of: "-tripEditor"), i + 1 < args.count else { return }
-                switch args[i + 1] {
+                if args.contains("-foldPopup"), let done = trips.archived.first {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        pending = .fold(done)
+                        runPending()
+                    }
+                }
+                // The other five confirmations, on the current trip. Same reason as
+                // `-foldPopup`: they all start from a button inside the record
+                // sheet, so nothing a launch argument can reach opens them, and
+                // their messages are the longest sentences in the app.
+                if let kind = LaunchFlags.value(after: "-tripPopup"),
+                   let trip = current ?? trips.playable.first {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        switch kind {
+                        case "clear":   pending = .clear(trip)
+                        case "delete":  pending = .delete(trip)
+                        case "archive": pending = .archive(trip)
+                        case "finish":  pending = .finish(trip)
+                        case "unfold":  pending = .unfold(trip)
+                        default:        return
+                        }
+                        runPending()
+                    }
+                }
+                guard let which = LaunchFlags.value(after: "-tripEditor") else { return }
+                switch which {
                 case "new": creating = true
                 case "archived": editing = trips.archived.first
                 default: editing = current
@@ -90,24 +150,97 @@ struct TripsScreen: View {
                 onClear: { pending = .clear(trip); editing = nil },
                 onDelete: { pending = .delete(trip); editing = nil },
                 onArchive: { pending = .archive(trip); editing = nil },
-                onFinish: { pending = .finish(trip); editing = nil }
+                onFinish: { pending = .finish(trip); editing = nil },
+                // Nil when there is no book to fold into — the editor hides the
+                // button rather than opening a picker with nothing in it.
+                onFold: books.isEmpty ? nil : { pending = .fold(trip); editing = nil },
+                onUnfold: { pending = .unfold(trip); editing = nil }
             )
         }
+        // Last in the chain, so the balloon draws over the list and under the tab
+        // bar. Copy lives here rather than in a table elsewhere: whoever changes
+        // what a tip says is the person looking at the screen it appears on.
+        .coachLayer(Self.coachCopy)
+        .tourLayer(.trips, Self.tourCopy)
+    }
+
+    /// What this screen's tips say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let coachCopy: [Coach.Tip: LocalizedStringResource] = [
+        .swipeTrip: "Swipe a trip left to pin it, or to mark it done.",
+        .doneTrip: "Finished trips file themselves here. Open one for its story, or to add its plates to a book.",
+        .listLength: "That's a lot of trips going at once. Mark the old ones done and they file themselves away."
+    ]
+
+    /// What this screen's tour stops say. Out of the chain, not out of the
+    /// file — see `coachLayer`.
+    private static let tourCopy: [Tour.Stop: TourWords] = [
+        .tripsIntro: TourWords("Trips are point-to-point collections",
+                               "Create a Trip for your drive from Point A to Point B and collect plates along the way in the Game tab. Unlike Books, Trips have a beginning and an end."),
+        .tripsRow: TourWords("Choose your Trip",
+                             "Tap a Trip to make it your active Game and collect plates in the Game tab. Swipe left to Pin it or tap Done when your drive is over."),
+        .tripsNew: TourWords("Create your Trip",
+                             "Add your starting point and destination to set your route. Tags uses your route to determine how rare each plate is along the way."),
+        .tripsFinished: TourWords("Your finished Trips",
+                                  "Completed Trips stay here so you can revisit where you went and what you found. You can also add the plates you collected to a Book.")
+    ]
+
+    /// Which stops this screen can actually host right now.
+    ///
+    /// In screen order rather than declaration order, because the tour scrolls between
+    /// them: the running list is at the top, the button to add to it sits under the
+    /// list, and Finished is below both. A route that reads top to bottom is a route
+    /// that never scrolls backwards, and a tour that scrolls backwards looks broken
+    /// even when it is pointing at exactly the right thing.
+    private var tourStops: [Tour.Stop] {
+        // The intro names the thing before the tour starts pointing at parts of it,
+        // so it leads whether or not there is a single trip to point at yet. It
+        // carries no anchor: a stop with no target gets a centred bubble and no
+        // cutout, which is the right shape for a sentence about the whole screen.
+        guard !trips.isEmpty else { return [.tripsIntro, .tripsNew] }
+        var route: [Tour.Stop] = [.tripsIntro]
+        if !trips.running.isEmpty { route.append(.tripsRow) }
+        route.append(.tripsNew)
+        if !trips.finished.isEmpty { route.append(.tripsFinished) }
+        return route
     }
 
     private var list: some View {
         ScrollView {
+          ScrollViewReader { scroller in
             VStack(spacing: 10) {
-                ForEach(trips.playable.pinnedFirst) { trip in
-                    SwipeRow(actions: actions(for: trip)) {
+                let rows = trips.running.pinnedFirst
+                ForEach(rows) { trip in
+                    SwipeRow(actions: actions(for: trip),
+                             onOpen: { coach.dismiss(.swipeTrip) }) {
                         TripRow(
                             trip: trip,
                             isCurrent: trip.id == current?.id,
                             onSelect: { select(trip) },
-                            onEdit: { editing = trip }
+                            onEdit: { editing = trip },
+                            party: partyFaces(for: trip)
                         )
                     }
+                    .coachAnchor(.swipeTrip,
+                                 active: trip.id == rows.first?.id,
+                                 prefersAbove: true)
+                    // The top of the list, and deliberately not the oldest trip or
+                    // the Finished header. Both of those are the better *subject* —
+                    // the tip is about old trips and where they file to — and both
+                    // are wrong as a target: the oldest row of a list this long is
+                    // below the fold, and somebody with nine running trips and
+                    // nothing finished has no Finished header at all. That is
+                    // precisely the person the tip is for.
+                    //
+                    // The balloon is the only mark here that is about the list
+                    // rather than about a row, so it hangs off the head of the list
+                    // and the copy names the list in its first clause.
+                    .coachAnchor(.listLength, active: trip.id == rows.first?.id)
+                    .tourAnchor(.tripsRow,
+                                active: trip.id == rows.first?.id,
+                                prefersAbove: true)
                 }
+                .tourStop(.tripsRow)
 
                 Button { creating = true } label: {
                     HStack(spacing: 8) {
@@ -126,18 +259,83 @@ struct TripsScreen: View {
                     )
                 }
                 .padding(.top, 2)
+                .tourAnchor(.tripsNew, prefersAbove: true)
+                .tourStop(.tripsNew)
 
-                Text("Tap a trip to play it, or swipe one left to pin it or mark it done. "
-                     + "A trip is one journey; for everyday spotting, fill a book instead.")
+                // One gesture now, not two. The sentence that used to follow
+                // explained what a trip is *for*, which belongs on the empty screen
+                // you see before you have one — repeating it under a list of trips
+                // you already made reads as the app justifying itself.
+                //
+                // The swipe half went the same way for the same reason. The
+                // `swipeTrip` mark points at the actual row and arrives at the one
+                // moment there is more than one trip to organise; a permanent line
+                // three inches below it saying the same words is the app talking
+                // over itself, which is the one thing the coach marks were not
+                // allowed to cause. The durable copy for the gesture lives on the
+                // "How to play" page, where somebody who missed the balloon can go
+                // looking for it.
+                Text("Tap a trip to play it.")
                     .font(.plates(size: 12.5))
                     .foregroundStyle(Theme.inkMuted)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 18)
                     .padding(.top, 10)
 
+                finishedSection
+
                 archivedSection
+
+                // Moved here from the Book tab, where it was a "History" page that
+                // listed trips and no books whatsoever. Trips belong with trips.
+                TripComparison(summaries: trips.map { TripSummary(trip: $0) },
+                               currentTripID: current?.id)
             }
             .padding(Theme.screenPadding)
+            .tourScrolling(scroller)
+          }
+        }
+    }
+
+    /// Trips that have ended but not been put away.
+    ///
+    /// Separate from the running list because they take no more plates, and separate
+    /// from the archive because "done" and "filed" are different intentions — the
+    /// drive you finished this afternoon should not need digging out of the same
+    /// place as one from two years ago. Expanded by default for that reason.
+    @ViewBuilder
+    private var finishedSection: some View {
+        let done = trips.finished
+        if !done.isEmpty {
+            VStack(spacing: 10) {
+                DisclosureBar(symbol: "flag.checkered",
+                              title: "Finished",
+                              count: done.count,
+                              isOpen: showFinished) { showFinished.toggle() }
+                    .coachAnchor(.doneTrip, prefersAbove: true)
+                    .tourAnchor(.tripsFinished, prefersAbove: true)
+
+                if showFinished {
+                    ForEach(done) { trip in
+                        SwipeRow(actions: [
+                            SwipeAction(title: "Reopen",
+                                        symbol: "arrow.uturn.backward",
+                                        tint: Theme.route) { reopen(trip) },
+                            SwipeAction(title: "Archive",
+                                        symbol: "archivebox",
+                                        tint: Theme.inkMuted) { setArchived(trip, true) }
+                        ]) {
+                            TripRow(trip: trip,
+                                    isCurrent: false,
+                                    onSelect: { openRecord(trip) },
+                                    onEdit: { openRecord(trip) },
+                                    party: partyFaces(for: trip))
+                        }
+                    }
+                }
+            }
+            .padding(.top, 18)
+            .tourStop(.tripsFinished)
         }
     }
 
@@ -152,27 +350,10 @@ struct TripsScreen: View {
         let archived = trips.archived
         if !archived.isEmpty {
             VStack(spacing: 10) {
-                Button {
-                    withAnimation(.snappy(duration: 0.25)) { showArchived.toggle() }
-                } label: {
-                    HStack(spacing: 6) {
-                        Image(systemName: "archivebox")
-                            .font(.system(size: 12, weight: .semibold))
-                        Text("Archived")
-                            .font(.plates(size: 13, weight: .semibold))
-                        Text("\(archived.count)")
-                            .font(.plates(size: 13))
-                            .monospacedDigit()
-                            .foregroundStyle(Theme.inkMuted)
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 10, weight: .bold))
-                            .rotationEffect(.degrees(showArchived ? 90 : 0))
-                        Spacer()
-                    }
-                    .foregroundStyle(Theme.inkMuted)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
+                DisclosureBar(symbol: "archivebox",
+                              title: "Archived",
+                              count: archived.count,
+                              isOpen: showArchived) { showArchived.toggle() }
 
                 if showArchived {
                     ForEach(archived) { trip in
@@ -184,7 +365,8 @@ struct TripsScreen: View {
                             TripRow(trip: trip,
                                     isCurrent: false,
                                     onSelect: { editing = trip },
-                                    onEdit: { editing = trip })
+                                    onEdit: { editing = trip },
+                                    party: partyFaces(for: trip))
                         }
                         // Dimming the whole row, not the card inside it. Applied to
                         // the card alone it made the card translucent *over its own
@@ -202,9 +384,10 @@ struct TripsScreen: View {
 
     /// The two things worth a swipe: get it out of the list, or keep it at the top.
     ///
-    /// Deliberately not archive or delete. Archiving is what "done" already does,
-    /// and putting delete one careless swipe from a trip's worth of plates is how
-    /// people lose data. Both still live in the editor.
+    /// Deliberately not archive or delete. Putting either one careless swipe from a
+    /// trip's worth of plates is how people lose data, and both still live in the
+    /// editor. This said archiving was "what done already does" back when finishing
+    /// archived as well; it has not since `TripClosing.finish` split the two.
     private func actions(for trip: Trip) -> [SwipeAction] {
         let pinned = trip.pinnedAt != nil
         return [
@@ -236,6 +419,11 @@ struct TripsScreen: View {
         trip.endedAt = nil
         trip.archivedAt = nil
         try? context.save()
+        // Reopening changes what `TripSelection.current` resolves to — it falls
+        // through to the newest collectable trip — so the two mirrors `TripClosing`
+        // rebuilds when a trip *closes* have to be rebuilt when one opens again.
+        TripReminders.shared.refresh(in: context)
+        WidgetData.write(from: context)
         Haptics.selection()
     }
 
@@ -254,7 +442,13 @@ struct TripsScreen: View {
         case .clear(let trip):
             popup.present(
                 "Clear every plate?",
-                message: "\(trip.platesFound) plate\(trip.platesFound == 1 ? "" : "s") found on \(trip.name) will be un-collected. The trip itself stays."
+                // `^[…](inflect: true)` in place of the `n == 1 ? "" : "s"` this
+                // used to splice in. The old form produced a catalog key reading
+                // "%lld plate%@ found on %@" — two arguments where there is one
+                // idea, and no way for a translator to give a language its own
+                // plural rules. Automatic grammar agreement puts the whole phrase
+                // in one entry and picks the form from the number beside it.
+                message: "^[\(trip.platesFound) plate](inflect: true) found on \(trip.name) will be un-collected. The trip itself stays."
             ) {
                 PopupButton(title: "Clear plates", kind: .destructive) {
                     wipe(trip)
@@ -266,10 +460,12 @@ struct TripsScreen: View {
         case .finish(let trip):
             popup.present(
                 "Done with \(trip.name)?",
-                message: "It is marked finished and filed under Archived, so it stops "
-                       + "appearing everywhere you pick a trip. Its \(trip.platesFound) "
-                       + "plate\(trip.platesFound == 1 ? "" : "s") stay in your history, "
-                       + "and you can reopen it whenever you like."
+                message: partyWarning(for: trip, finishing: true)
+                    // Said "filed under Archived" until finishing and archiving
+                    // became two moves — see `TripClosing.finish`. Finished trips
+                    // now stay on this screen under their own heading, and only
+                    // `collectable` hides them from the pickers.
+                    ?? "It stops collecting and files itself under Finished, so it is out of every trip picker but still here to open. Its ^[\(trip.platesFound) plate](inflect: true) stay in your history, and you can reopen it whenever you like."
             ) {
                 PopupButton(title: "Mark as done", kind: .primary) {
                     finish(trip)
@@ -282,7 +478,7 @@ struct TripsScreen: View {
             guard !trip.isArchived else { setArchived(trip, false); return }
             popup.present(
                 "Archive \(trip.name)?",
-                message: "It stops appearing anywhere you pick a trip. Nothing is deleted \u{2014} its \(trip.platesFound) plate\(trip.platesFound == 1 ? "" : "s") stay in your history, and you can bring it back."
+                message: "It stops appearing anywhere you pick a trip. Nothing is deleted. Its ^[\(trip.platesFound) plate](inflect: true) stay in your history, and you can bring it back."
             ) {
                 PopupButton(title: "Archive", kind: .primary) {
                     setArchived(trip, true)
@@ -294,7 +490,8 @@ struct TripsScreen: View {
         case .delete(let trip):
             popup.present(
                 "Delete \(trip.name)?",
-                message: "The trip and its \(trip.platesFound) collected plate\(trip.platesFound == 1 ? "" : "s") are removed for good."
+                message: partyWarning(for: trip, finishing: false)
+                    ?? "The trip and its ^[\(trip.platesFound) collected plate](inflect: true) are removed for good."
             ) {
                 PopupButton(title: "Delete trip", kind: .destructive) {
                     remove(trip)
@@ -302,60 +499,269 @@ struct TripsScreen: View {
                 }
                 PopupButton(title: "Cancel") { popup.dismiss() }
             }
+
+        case .fold(let trip):
+            // Straight to the how-question when there is only one book — the
+            // common case should be two taps, not three.
+            if books.count == 1, let only = books.first {
+                askFoldMode(trip, into: only)
+            } else {
+                popup.present("Add \(trip.name) to which book?") {
+                    PopupPicker(groups: [PopupPicker.Group(entries: books.map { book in
+                        PopupPicker.Entry(id: book.id,
+                                          title: book.name,
+                                          subtitle: book.sinceLabel,
+                                          action: { askFoldMode(trip, into: book) })
+                    })])
+                    PopupButton(title: "Cancel") { popup.dismiss() }
+                }
+            }
+
+        case .unfold(let trip):
+            let folded = trip.allSightings.filter { $0.book != nil }
+            guard let book = folded.first?.book else { return }
+            popup.present(
+                "Remove from \(book.name)?",
+                message: "The ^[\(folded.count) sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched."
+            ) {
+                PopupButton(title: "Remove", kind: .destructive) {
+                    unfold(trip)
+                    popup.dismiss()
+                }
+                PopupButton(title: "Cancel") { popup.dismiss() }
+            }
         }
     }
 
-    /// Wipes the sightings, not the trip — `Sighting` is the only stored fact, so
-    /// deleting them is all it takes to put every counter back to zero.
-    private func wipe(_ trip: Trip) {
-        for sighting in trip.allSightings { context.delete(sighting) }
+    /// Stack or fill — the one decision a fold needs, asked with the counts that
+    /// make it decidable.
+    private func askFoldMode(_ trip: Trip, into book: Book) {
+        let total = trip.allSightings.filter { $0.book == nil }.count
+        let missing = Set(trip.allSightings.map(\.plateCode))
+            .subtracting(book.allSightings.map(\.plateCode)).count
+        popup.present(
+            "Add \(trip.name) to \(book.name)?",
+            message: "The trip keeps its plates either way. The book just shows them too, and you can take them back out whenever you like."
+        ) {
+            PopupChoice(title: "Stack everything",
+                        subtitle: "All ^[\(total) sighting](inflect: true) carry over. Plates the book already has count again.") {
+                fold(trip, into: book, gapsOnly: false)
+            }
+            PopupChoice(title: "Fill the gaps",
+                        subtitle: missing == 0
+                            ? "Nothing to add. The book has every plate on this trip."
+                            : "Just the ^[\(missing) plate](inflect: true) the book is missing.") {
+                fold(trip, into: book, gapsOnly: true)
+            }
+            PopupButton(title: "Cancel") { popup.dismiss() }
+        }
+    }
+
+    /// Said before deleting or finishing a trip that a party is currently on.
+    ///
+    /// Not a block. Every other device keeps its own full copy — that is the whole
+    /// shape of the design — so the only thing at stake is this phone's copy and the
+    /// party ending mid-drive, which is a decision, not a mistake. It just should not
+    /// be a surprise.
+    /// Two whole sentences rather than one with the verb interpolated in. The verb
+    /// used to be a parameter — `"\(what) ends the party…"` — which reads as a saving
+    /// right up until the sentence has to exist in another language, where the word
+    /// order it assumes may not survive. A catalog entry a translator can actually
+    /// move around is worth the duplicated clause.
+    private func partyWarning(for trip: Trip, finishing: Bool) -> LocalizedStringKey? {
+        guard PartySession.isPartying(trip) else { return nil }
+        return finishing
+            ? "Finishing it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted."
+            : "Deleting it ends the party on this phone. Everyone else keeps their own copy of the trip and the plates they spotted."
+    }
+
+    /// Folding: the trip's sightings are *shelved in* the book, not copied to it.
+    ///
+    /// One sighting, two containers. A copy would double-count every folded plate
+    /// in the all-time record and grow twin pins on the Trail; a reference keeps
+    /// `Sighting` the single fact it has always been. The book's counters need no
+    /// new code because they already count whatever `book.sightings` holds.
+    ///
+    /// Only sightings not already shelved somewhere are taken, which makes folding
+    /// idempotent — reopen the trip, find three more plates, fold again, and only
+    /// the three move.
+    private func fold(_ trip: Trip, into book: Book, gapsOnly: Bool) {
+        let loose = trip.allSightings.filter { $0.book == nil }
+
+        let chosen: [Sighting]
+        if gapsOnly {
+            // One sighting per plate the book lacks — the earliest, which is the
+            // find. Filling a gap with a plate's third repeat would put a ×1 in
+            // the book that was really a ×3 somewhere else.
+            let have = Set(book.allSightings.map(\.plateCode))
+            chosen = Dictionary(grouping: loose, by: \.plateCode)
+                .filter { !have.contains($0.key) }
+                .compactMap { $0.value.min { SightingOrder($0) < SightingOrder($1) } }
+        } else {
+            chosen = loose
+        }
+
+        for sighting in chosen { sighting.book = book }
         try? context.save()
+
+        // A shared book's other members hear about these the same way they hear
+        // about a tap: one record per sighting, over the same wire.
+        for sighting in chosen { SharedBookSync.shared.push(sighting, in: book) }
+        popup.dismiss()
+        Haptics.found()
+    }
+
+    /// The exact reverse: every sighting of this trip leaves whichever book holds
+    /// it. Nothing is deleted — the sightings still belong to the trip.
+    private func unfold(_ trip: Trip) {
+        // Grouped by book, like `pushSharedRemovals` ten lines down. Taking the
+        // first sighting's book and using it for all of them was right only while a
+        // trip could be folded into exactly one book: with two, everyone sharing the
+        // second book kept their copies, and the first book was sent tombstones for
+        // rows that were never in it.
+        let folded = trip.allSightings.filter { $0.book != nil }
+        guard !folded.isEmpty else { return }
+        //
+        // The book object comes out with the ids, not looked up again afterwards.
+        // Grouping by `book!.id` and then reading `group.first?.book` back is asking
+        // a row a question whose answer the next line erases: by the time the loop
+        // runs, every sighting's `book` is nil, so the guard fails for every group
+        // and not one removal is pushed. The grouping key is a UUID and survives;
+        // the reference does not.
+        var byBook: [UUID: (book: Book, ids: [UUID])] = [:]
+        for sighting in folded {
+            guard let book = sighting.book else { continue }
+            byBook[book.id, default: (book, [])].ids.append(sighting.id)
+        }
+        for sighting in folded { sighting.book = nil }
+        try? context.save()
+        for (_, entry) in byBook {
+            SharedBookSync.shared.remove(entry.ids, in: entry.book)
+        }
+        Haptics.undo()
+    }
+
+    // A `pushSharedRemovals` sat here, and both of its callers were wrong to want
+    // it. Emptying a trip goes through `PlateLogger.withdraw` now, which does this
+    // itself for the books a row is genuinely leaving; deleting a trip unshelves
+    // instead, so there is nothing to tell anybody about. Pushing a CloudKit
+    // deletion for a plate that is still sitting in somebody's book is not a
+    // tombstone, it is reaching across the wire to take it.
+
+    /// Wipes the sightings, not the trip — `Sighting` is the only stored fact, so
+    /// emptying them is all it takes to put every counter back to zero.
+    ///
+    /// Through `PlateLogger.withdraw`, which is the whole point of that function
+    /// existing. This was the fourth copy of "delete some sightings" and the one the
+    /// consolidation missed, so it alone skipped all four of the things a removal
+    /// owes: the party broadcast, the tombstones that broadcast writes, the reminder
+    /// measured from a plate that is now gone, and the widget still showing the
+    /// count. Without the tombstones the wipe did not even hold — the next snapshot
+    /// from any peer put every plate back, because nothing on this phone could say
+    /// they had been taken away on purpose.
+    private func wipe(_ trip: Trip) {
+        PlateLogger.withdraw(trip.allSightings, from: trip, context: context)
         Haptics.destructive()
     }
 
-    /// Finishing and archiving in one move.
+    /// Opening a finished trip's record — which is exactly what the `doneTrip` mark
+    /// was pointing people towards, so doing it retires the mark.
+    private func openRecord(_ trip: Trip) {
+        coach.dismiss(.doneTrip)
+        editing = trip
+    }
+
+    /// Whether either of this screen's marks has anything to say, asked on arrival
+    /// and whenever the list changes underneath it.
     ///
-    /// They were two separate actions and nobody wants two. A trip you are done
-    /// with is a trip you are done seeing: leaving it finished but still in every
-    /// picker meant the list only ever grew, which is how the switcher ended up
-    /// taller than the phone. Reopening from the archive puts both halves back.
+    /// Order matters only in the sense that the arbiter takes the first asker, and
+    /// `doneTrip` goes first deliberately: it is a follow-through on something that
+    /// just happened, while `swipeTrip` is standing housekeeping advice that will
+    /// still be true tomorrow.
+    private func offerTripTips() {
+        coach.request(.doneTrip,
+                      when: TripClosing.finishedSomethingThisSession
+                            && !trips.finished.isEmpty)
+        // Eight open trips is the point where the list stops being scannable and
+        // starts being scrolled, which is when there is a problem worth naming.
+        // Above `swipeTrip` in this order because somebody with eight trips has the
+        // more urgent version of the same advice.
+        coach.request(.listLength, when: trips.running.count >= Self.tooManyTrips)
+        // Not on day one. See `Coach.launchCount`: a list of one trip made ninety
+        // seconds ago has nothing in it to pin or file away.
+        coach.request(.swipeTrip,
+                      when: Coach.isReturningSession && !trips.running.isEmpty)
+    }
+
+    /// Where a list of drives stops being a list you read and starts being one you
+    /// search. Eight is roughly a phone screen of rows.
+    private static let tooManyTrips = 8
+
+    /// See `TripClosing.finish`, which the party screen shares — a party ending is a
+    /// drive ending, and both places have to mean the same thing by it.
     private func finish(_ trip: Trip) {
-        let now = Date()
-        trip.endedAt = now
-        trip.archivedAt = now
-        try? context.save()
-        if trip.id.uuidString == currentTripID { currentTripID = "" }
+        // Doing the thing the tip asked for. Both of the ways to shorten the list
+        // count, which is why this is not hung on `swipeTrip`'s row callback.
+        coach.dismiss(.listLength)
+        TripClosing.finish(trip, in: context)
         Haptics.milestone()
     }
 
     private func setArchived(_ trip: Trip, _ archived: Bool) {
+        if archived { coach.dismiss(.listLength) }
         trip.archivedAt = archived ? Date() : nil
         try? context.save()
         // `TripSelection.current` skips archived trips, so simply clearing the saved
         // id lets it fall through to the next playable one rather than leaving the
         // Drive screen pointed at something that is no longer on offer.
         if archived, trip.id.uuidString == currentTripID { currentTripID = "" }
+        // Archived trips are invisible to `TripSelection.current`, so this moves the
+        // widget's subject without going through `PlaySelection.select`.
+        WidgetData.write(from: context)
         Haptics.selection()
     }
 
     private func remove(_ trip: Trip) {
         let wasCurrent = trip.id == current?.id
+        let id = trip.id
+        if PartySession.isPartying(trip) { PartySession.shared?.leave() }
+        // Unshelve before the cascade, exactly as `TripClosing.discard` does — the
+        // two are the same operation reached from different screens and had opposite
+        // answers to the same question. `Trip.sightings` cascades where
+        // `Book.sightings` nullifies, so deleting the trip reaches through folded
+        // rows and takes plates out of a book somebody deliberately filed them in.
+        // This screen went further and *pushed those deletions to CloudKit*, so
+        // deleting your own trip deleted plates out of a friend's copy of a shared
+        // book — and the confirmation said nothing about any book at all.
+        for sighting in trip.allSightings where sighting.book != nil { sighting.trip = nil }
         context.delete(trip)
         try? context.save()
+        // Nothing left to protect from resurrection, and keeping the ids would leak a
+        // little more every time somebody clears out an old drive.
+        PartyTombstones.shared.forget(trip: id)
         // Leave the selection to fall through to the newest remaining trip rather
         // than pointing at something that no longer exists.
         if wasCurrent { currentTripID = "" }
+        // And tell the home screen, which was still advertising the trip — and
+        // deep-linking to a Game tab that had fallen through to something else.
+        TripReminders.shared.refresh(in: context)
+        WidgetData.write(from: context)
         Haptics.destructive()
     }
 }
 
 // MARK: - Row
 
-private struct TripRow: View {
+struct TripRow: View {
     let trip: Trip
     let isCurrent: Bool
     let onSelect: () -> Void
     let onEdit: () -> Void
+    /// Everyone who played this trip, for the party badge. Empty when it was not
+    /// one, which is what hides the badge.
+    var party: [Player] = []
+
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
         HStack(spacing: 10) {
@@ -370,64 +776,34 @@ private struct TripRow: View {
                 .padding(.leading, -14)
                 .padding(.trailing, 2)
 
-            Button(action: onSelect) {
-                VStack(alignment: .leading, spacing: 3) {
-                    HStack(spacing: 6) {
-                        Text(trip.name)
-                            .font(.plates(size: 16, weight: .semibold))
-                            .foregroundStyle(isCurrent ? Theme.route : Theme.ink)
-                            .lineLimit(1)
-
-                        if isCurrent {
-                            Image(systemName: "car.fill")
-                                .font(.system(size: 11, weight: .semibold))
-                                .foregroundStyle(Theme.route)
-                                .accessibilityLabel("Currently playing")
-                        }
-
-                        if trip.pinnedAt != nil {
-                            Image(systemName: "pin.fill")
-                                .font(.system(size: 10, weight: .semibold))
-                                .foregroundStyle(Theme.paint)
-                                .accessibilityLabel("Pinned")
-                        }
+            // One line of four columns, until there is not room for four columns.
+            //
+            // The row holds a name, a party, a score and a button, and three of those
+            // are fixed width while only the name can yield — so as the text grows the
+            // name is the only thing that pays, and it pays all of it. At
+            // accessibility sizes on a narrow phone it was rendering as a bare "…":
+            // a list of trips where no trip has a name. Nothing overlapped, which is
+            // what made it easy to miss.
+            //
+            // Above that threshold the same four pieces stack instead. The name gets
+            // the full width of the card, and the party, score and button take a line
+            // of their own underneath. See `LayoutStress`, which is what found this.
+            if typeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 12) {
+                    details
+                    HStack(spacing: 10) {
+                        avatars
+                        Spacer(minLength: 0)
+                        score
+                        editButton
                     }
-
-                    if let route = trip.routeLabel {
-                        Text(route)
-                            .font(.plates(size: 12.5))
-                            .foregroundStyle(Theme.route.opacity(0.85))
-                            .lineLimit(1)
-                    }
-
-                    Text(dateLabel)
-                        .font(.plates(size: 11.5))
-                        .foregroundStyle(Theme.inkMuted)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .contentShape(Rectangle())
+            } else {
+                details
+                avatars
+                score
+                editButton
             }
-            .buttonStyle(.plain)
-
-            VStack(alignment: .trailing, spacing: 0) {
-                Text("\(trip.statesFound)")
-                    .font(Theme.PlateFont.condensed(24))
-                    .monospacedDigit()
-                    .foregroundStyle(Theme.ink)
-                Text("of \(Plate.stateTotal)")
-                    .font(.plates(size: 10.5))
-                    .foregroundStyle(Theme.inkMuted)
-            }
-
-            Button(action: onEdit) {
-                Image(systemName: "slider.horizontal.3")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(Theme.inkMuted)
-                    .frame(width: 34, height: 34)
-                    .background(Circle().fill(Theme.ground))
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Edit \(trip.name)")
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 12)
@@ -452,6 +828,118 @@ private struct TripRow: View {
         )
         .accessibilityElement(children: .contain)
         .accessibilityLabel(trip.isActive ? trip.name : "\(trip.name), finished")
+    }
+
+    // MARK: - The pieces
+
+    private var details: some View {
+            // A tap gesture and not a `Button`, which is what this was until a swipe
+            // on a finished trip was found to open its record as well as the row's
+            // actions — and to open it again on the way back. A button this wide
+            // never sees the finger leave it, so it never cancels its own press and
+            // fires on touch-up at the end of the swipe. A `TapGesture` cancels the
+            // moment the touch travels. See `SwipeRow`.
+            //
+            // The traits are restored by hand below, because what VoiceOver should
+            // hear has not changed: one element, named, that behaves like a button.
+            Group {
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack(spacing: 6) {
+                        // Wins the line against the badges beside it. Without the
+                        // priority the three icons are fixed-size and the name is the
+                        // only thing that can yield, so at accessibility text sizes a
+                        // trip with all three badges rendered its name as a bare "…".
+                        // The badges are worth less than knowing which trip this is,
+                        // and they truncate to nothing gracefully because they are
+                        // never the only copy of what they say.
+                        Text(trip.name)
+                            .font(.plates(size: 16, weight: .semibold))
+                            .foregroundStyle(isCurrent ? Theme.route : Theme.ink)
+                            .lineLimit(1)
+                            .layoutPriority(1)
+
+                        if isCurrent {
+                            Image(systemName: "car.fill")
+                                .font(.system(size: 11, weight: .semibold))
+                                .foregroundStyle(Theme.route)
+                                .accessibilityLabel("Currently playing")
+                        }
+
+                        if !party.isEmpty {
+                            // Its own color rather than the route blue or the pin's
+                            // paint, both of which already mean something here.
+                            Image(systemName: "person.2.fill")
+                                .font(.system(size: 10, weight: .semibold))
+                                .foregroundStyle(Theme.found)
+                                .accessibilityLabel("Played as a party")
+                        }
+
+                        if trip.pinnedAt != nil {
+                            Image(systemName: "pin.fill")
+                                .font(.system(size: 10, weight: .semibold))
+                                .foregroundStyle(Theme.paint)
+                                .accessibilityLabel("Pinned")
+                        }
+                    }
+
+                    if let route = trip.routeLabel {
+                        Text(route)
+                            .font(.plates(size: 12.5))
+                            .foregroundStyle(Theme.route.opacity(0.85))
+                            .lineLimit(1)
+                    }
+
+                    // One line, like the two above it. It was the only label in the
+                    // row without a limit, so at large text sizes "Aug 15 · day 1"
+                    // wrapped and made the card half again as tall as its neighbours
+                    // for no information at all.
+                    Text(dateLabel)
+                        .font(.plates(size: 11.5))
+                        .foregroundStyle(Theme.inkMuted)
+                        .lineLimit(1)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .contentShape(Rectangle())
+            }
+            .onTapGesture(perform: onSelect)
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAction(.default, onSelect)
+    }
+
+    /// Who was in the car. Capped at three circles however many people played, so
+    /// this is a fixed width and cannot be what squeezes the name.
+    @ViewBuilder
+    private var avatars: some View {
+        if !party.isEmpty {
+            AvatarStack(players: party, limit: 3, size: 21)
+        }
+    }
+
+    private var score: some View {
+        VStack(alignment: .trailing, spacing: 0) {
+            Text("\(trip.statesFound)")
+                .font(Theme.PlateFont.condensed(24))
+                .monospacedDigit()
+                .foregroundStyle(Theme.ink)
+            Text("of \(Plate.stateTotal)")
+                .font(.plates(size: 10.5))
+                .foregroundStyle(Theme.inkMuted)
+                .lineLimit(1)
+        }
+        .fixedSize(horizontal: true, vertical: false)
+    }
+
+    private var editButton: some View {
+        Button(action: onEdit) {
+            Image(systemName: "slider.horizontal.3")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Theme.inkMuted)
+                .frame(width: 34, height: 34)
+                .background(Circle().fill(Theme.ground))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Edit \(trip.name)")
     }
 
     /// The date the trip ran. It used to end in "· finished", which the green fold
@@ -491,7 +979,11 @@ private struct DogEar: Shape {
 struct TripEditor: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
+    @Environment(Router.self) private var router
     @AppStorage(TripSelection.key) private var currentTripID = ""
+    /// For naming the host of a joined trip — the ledger stores an id, and turning
+    /// one into a person needs the roster.
+    @Query(sort: \Player.joinedAt) private var players: [Player]
 
     let trip: Trip?
     let onClear: (() -> Void)?
@@ -501,6 +993,10 @@ struct TripEditor: View {
     /// Marking a trip done also archives it, so it needs the same confirm-after-
     /// dismiss dance as the others.
     var onFinish: (() -> Void)?
+    /// Folding this trip into a book, and undoing that. Nil when there is no book
+    /// to fold into, which hides the button rather than offering a dead end.
+    var onFold: (() -> Void)?
+    var onUnfold: (() -> Void)?
 
     @State private var name = ""
     @State private var origin = Place()
@@ -509,7 +1005,6 @@ struct TripEditor: View {
     /// default for a new one, so the picker and the model cannot disagree about what
     /// "default" means.
     @State private var mode: ScoringMode = .weighted
-    @State private var includeTrucks = false
     @FocusState private var focused: Field?
 
     private enum Field { case name }
@@ -530,15 +1025,60 @@ struct TripEditor: View {
         return trip.isArchived || !trip.isActive
     }
 
+    /// The trip's sightings in the order they happened — the story of the drive.
+    private var log: [Sighting] {
+        (trip?.allSightings ?? []).sorted { SightingOrder($0) < SightingOrder($1) }
+    }
+
+    /// The book this trip has been folded into, if any. Derived from the sightings
+    /// rather than stored anywhere, so it can never disagree with them.
+    private var foldedBook: Book? {
+        trip?.allSightings.compactMap(\.book).first
+    }
+
+    /// Spotter chips only mean something when there was more than one spotter.
+    ///
+    /// Takes the already-sorted rows rather than re-reading `log`, which sorts.
+    private func showSpotters(in entries: [Sighting]) -> Bool {
+        Set(entries.compactMap { $0.player?.id }).count > 1
+    }
+
+    /// Whether any sighting knows where it happened — without one the Trail would
+    /// open on an empty map, so the jump is not offered.
+    private var hasTrail: Bool {
+        trip?.allSightings.contains { $0.spottedLat != nil } == true
+    }
+
+    /// The host owns the scoring rules while a party is running.
+    ///
+    /// `scoringMode` and `includesTrucks` decide what every point in the trip is
+    /// worth, so one passenger flipping either of them mid-drive would silently
+    /// rewrite everybody's game — including plates already banked on four other
+    /// phones. The host's copy is the one that counts; everyone else reads.
+    ///
+    /// Only while actually connected. A party that has ended leaves the trip fully
+    /// editable again, because at that point it is just a trip you have a copy of.
+    private var scoringIsHostOwned: Bool {
+        guard let trip, let party = PartySession.shared else { return false }
+        // Keyed on the party still running, not on this moment's connection — the
+        // same rule and the same reason as `PartySession.rules(for:)`, which spells
+        // it out: a phone that drops out for a minute must not briefly get
+        // permission to change the game. The host's phone locking reopened the
+        // scoring picker mid-sheet, and Save then rewrote `scoringMode` on the
+        // guest's copy, where `broadcastTrip` refuses to send it — so every plate on
+        // that phone was quietly worth something different from everyone else's.
+        return party.role == .guest && !party.hasEnded && party.tripID == trip.id
+    }
+
     /// Says plainly what pinning a place buys you, because the difference between
     /// typed text and a dropped pin is invisible otherwise.
     /// Nil where there is nothing useful to say. A locked trip with no pinned start
     /// would otherwise be told to go and pick one, which it cannot do.
-    private var rarityNote: String? {
+    private var rarityNote: LocalizedStringKey? {
         if origin.isPinned {
             return isLocked
                 ? "Rarity was scored against this route."
-                : "Rarity is scored against this route \u{2014} plates from far away are worth more."
+                : "Rarity is scored against this route. Plates from far away are worth more."
         }
         return isLocked
             ? nil
@@ -554,8 +1094,14 @@ struct TripEditor: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 22) {
                         if isLocked { lockedNotice }
+                        if let host = hostedBy { hostedNotice(host) }
 
                         nameField
+
+                        // The record of the trip: what it came to, in numbers.
+                        // Meaningless on a live trip, whose numbers are on the Game
+                        // screen — this sheet only reports once it is over.
+                        if isLocked { statsStrip }
 
                         // An archived trip that never had a route has nothing to show
                         // here, and two greyed-out empty boxes are worse than no
@@ -568,11 +1114,19 @@ struct TripEditor: View {
                         // controls and only controls — there is no reading of a
                         // radio button that is not "press me" — and the one line
                         // below says what the trip was scored on just as well.
-                        if isLocked {
+                        if isLocked || scoringIsHostOwned {
                             scoringSummary
+                            if scoringIsHostOwned {
+                                Text("The host sets the scoring while you are in a party.")
+                                    .font(.plates(size: 12.5))
+                                    .foregroundStyle(Theme.inkMuted)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
                         } else {
                             scoringPicker
                         }
+
+                        if isLocked, !log.isEmpty { plateLog }
 
                         if !isNew { dangerZone }
 
@@ -591,6 +1145,17 @@ struct TripEditor: View {
                 if !isLocked {
                     ToolbarItem(placement: .cancellationAction) {
                         Button("Cancel") { dismiss() }
+                    }
+                }
+                // Any trip can be shared, running or finished — showing somebody
+                // where you have got to is as true halfway down the country as it is
+                // at the end. In the toolbar because that is where sharing lives;
+                // it spent one commit buried at the bottom of the sheet.
+                if let trip, !isNew {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        PosterShareButton(label: "Share this trip") {
+                            await ShareablePoster.poster(for: trip, players: players)
+                        }
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {
@@ -612,7 +1177,6 @@ struct TripEditor: View {
             destination = Place(name: trip?.destination ?? "",
                                 latitude: trip?.destinationLat, longitude: trip?.destinationLon)
             mode = trip?.scoringMode ?? Trip.defaultScoringMode
-            includeTrucks = trip?.includesTrucks ?? false
             if isNew { focused = .name }
         }
     }
@@ -653,6 +1217,38 @@ struct TripEditor: View {
         .animation(.snappy(duration: 0.28), value: destination.isPinned)
     }
 
+    /// Whose drive this was, when it was not this phone's.
+    ///
+    /// Answered from `hostPlayerID` where the ledger has it — the id the host sent in
+    /// every snapshot, which until now nothing read. A name can be changed or shared
+    /// by two people in one car; the id is the only thing that cannot.
+    private var hostedBy: String? {
+        guard let trip else { return nil }
+        return PartyLedger.shared.hostLabel(for: trip.id, among: players)
+    }
+
+    /// Whose trip this is, said where somebody looking at the record would ask.
+    /// Complements the party screen's refusal to let a guest host it.
+    private func hostedNotice(_ host: String) -> some View {
+        HStack(alignment: .top, spacing: 9) {
+            Image(systemName: "person.2.fill")
+                .font(.system(size: 12, weight: .semibold))
+                .padding(.top, 1.5)
+            Text("\(host)'s trip, from their party. This is your copy of it.")
+                .font(.plates(size: 12.5))
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
+        }
+        .foregroundStyle(Theme.inkMuted)
+        .padding(.horizontal, 13)
+        .padding(.vertical, 11)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Theme.unfound.opacity(0.55))
+        )
+    }
+
     /// Why the sheet is inert, said once at the top rather than left for the reader
     /// to work out from four greyed-out fields.
     private var lockedNotice: some View {
@@ -677,6 +1273,143 @@ struct TripEditor: View {
         )
     }
 
+    /// What the trip came to. Three numbers, which is all a headline should be —
+    /// the plate-by-plate account is the log below.
+    private var statsStrip: some View {
+        HStack(spacing: 0) {
+            recordStat("\(trip?.score ?? 0)", "points")
+            statDivider
+            recordStat("\(trip?.platesFound ?? 0)",
+                       trip?.platesFound == 1 ? "plate" : "plates")
+            statDivider
+            recordStat("\(trip?.dayNumber ?? 1)",
+                       trip?.dayNumber == 1 ? "day" : "days")
+            // Left as ternaries rather than folded into `^[…](inflect:)`: the number
+            // is in the *other* half of this pair, so there is nothing beside the
+            // word for the agreement engine to agree with. Four short keys instead.
+        }
+        .padding(.vertical, 13)
+        .frame(maxWidth: .infinity)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Theme.surface)
+                .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .strokeBorder(Theme.line, lineWidth: 1))
+        )
+    }
+
+    private func recordStat(_ value: String, _ label: LocalizedStringKey) -> some View {
+        VStack(spacing: 2) {
+            Text(value)
+                .font(Theme.PlateFont.condensed(24))
+                .monospacedDigit()
+                .foregroundStyle(Theme.ink)
+            Text(label)
+                .font(.plates(size: 10.5))
+                .foregroundStyle(Theme.inkMuted)
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private var statDivider: some View {
+        Rectangle().fill(Theme.line).frame(width: 1, height: 26)
+    }
+
+    /// Every plate, in the order it was called — the story of the drive. In
+    /// unlimited scoring the same plate appears once per sighting, because each
+    /// one scored.
+    private var plateLog: some View {
+        VStack(alignment: .leading, spacing: 9) {
+            Text("PLATES \u{00B7} IN ORDER FOUND")
+                .font(.plates(size: 11, weight: .bold))
+                .tracking(1.2)
+                .foregroundStyle(Theme.inkMuted)
+
+            // Sorted once. `log` is a computed property that sorts every sighting
+            // the trip has, and it was being read again inside its own `ForEach` for
+            // the divider test and a third time per row through `showSpotters` — so
+            // a 300-plate drive did roughly 600 full sorts per render of this sheet,
+            // on the main thread, and the sheet visibly stalled on opening.
+            let entries = log
+            let lastID = entries.last?.id
+            let spotters = showSpotters(in: entries)
+            LazyVStack(spacing: 0) {
+                ForEach(entries) { sighting in
+                    logRow(sighting, showingSpotter: spotters)
+                    if sighting.id != lastID {
+                        Divider().padding(.leading, 14)
+                    }
+                }
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(Theme.surface)
+                    .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .strokeBorder(Theme.line, lineWidth: 1))
+            )
+        }
+    }
+
+    private func logRow(_ sighting: Sighting, showingSpotter: Bool) -> some View {
+        let banked = sighting.rarityWhenSpotted
+            ?? trip.map { $0.rarity(of: sighting.plateCode) } ?? 1
+        return HStack(spacing: 10) {
+            // The tier it was claimed at. The grid hides rarity until a plate is
+            // found; here everything is found, so the record can say what each
+            // one was worth.
+            Circle()
+                .fill(RarityTier.forRarity(banked).color)
+                .frame(width: 7, height: 7)
+
+            Text(sighting.plateCode)
+                .font(Theme.PlateFont.condensed(15))
+                .foregroundStyle(Theme.ink)
+                .frame(width: 36, alignment: .leading)
+
+            Text(sighting.plate?.name ?? sighting.plateCode)
+                .font(.plates(size: 13.5, weight: .medium))
+                .foregroundStyle(Theme.ink)
+                .lineLimit(1)
+
+            Spacer(minLength: 8)
+
+            if showingSpotter, let player = sighting.player {
+                PlayerDot(player, showing: .initial, size: 17)
+            }
+
+            Text(logTime(sighting.spottedAt))
+                .font(.plates(size: 11.5))
+                .foregroundStyle(Theme.inkMuted)
+                .monospacedDigit()
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 9)
+        .accessibilityElement(children: .ignore)
+        // Two whole labels rather than one with a clause `+`-ed on. The concatenation
+        // made this a `String`, so VoiceOver's only line about a logged plate was the
+        // last piece of copy in the app the String Catalog could not see.
+        .accessibilityLabel(sighting.player.map {
+            LocalizedStringKey("\(sighting.plate?.name ?? sighting.plateCode), \(logTime(sighting.spottedAt)), spotted by \($0.name)")
+        } ?? "\(sighting.plate?.name ?? sighting.plateCode), \(logTime(sighting.spottedAt))")
+    }
+
+    /// "Day 2 · 3:41 PM" on a trip that spanned days; just the time on one that
+    /// did not.
+    private func logTime(_ date: Date) -> String {
+        let clock = date.formatted(.dateTime.hour().minute())
+        guard let trip, trip.dayNumber > 1 else { return clock }
+        // From midnight to midnight, not start-time to start-time. Counting raw
+        // 24-hour spans meant a trip that began at 22:00 called 08:00 the next
+        // morning "Day 1" and 23:00 that same evening "Day 2" — two sightings on one
+        // calendar day, labelled differently, with the whole column drifting from
+        // the wall calendar by however late the drive started.
+        let calendar = Calendar.current
+        let day = (calendar.dateComponents([.day],
+                                           from: calendar.startOfDay(for: trip.startedAt),
+                                           to: calendar.startOfDay(for: date)).day ?? 0) + 1
+        return "Day \(max(1, day)) \u{00B7} \(clock)"
+    }
+
     /// What the picker would have said, in one line.
     private var scoringSummary: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -685,8 +1418,7 @@ struct TripEditor: View {
                 .tracking(1.2)
                 .foregroundStyle(Theme.inkMuted)
 
-            Text(mode.label + (includeTrucks ? " \u{00B7} trucks and SUVs counted"
-                                             : " \u{00B7} cars only"))
+            Text(mode.label)
                 .font(.plates(size: 14.5, weight: .semibold))
                 .foregroundStyle(Theme.inkMuted)
         }
@@ -735,56 +1467,39 @@ struct TripEditor: View {
                     .buttonStyle(.plain)
                 }
 
-                truckToggle
             }
         }
-    }
-
-    /// A square rather than a system Toggle, so it reads as one more option in the
-    /// same list as the scoring radios instead of as a separate kind of control.
-    private var truckToggle: some View {
-        Button {
-            includeTrucks.toggle()
-            Haptics.selection()
-        } label: {
-            HStack(spacing: 10) {
-                Image(systemName: includeTrucks ? "checkmark.square.fill" : "square")
-                    .font(.system(size: 17))
-                    .foregroundStyle(includeTrucks ? Theme.route : Theme.inkMuted.opacity(0.5))
-
-                VStack(alignment: .leading, spacing: 1) {
-                    Text("Count trucks and SUVs")
-                        .font(.plates(size: 14.5, weight: .semibold))
-                        .foregroundStyle(Theme.ink)
-                    Text(includeTrucks
-                         ? "Closer to what is on the road, but inflates states with cheap registration rules."
-                         : "Rarity counts cars only. Pickups, SUVs and vans are ignored.")
-                        .font(.plates(size: 11.5))
-                        .foregroundStyle(Theme.inkMuted)
-                        .multilineTextAlignment(.leading)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                Spacer(minLength: 0)
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 11)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(Theme.surface)
-                    .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .strokeBorder(includeTrucks ? Theme.route : Theme.line,
-                                      lineWidth: includeTrucks ? 1.5 : 1))
-            )
-        }
-        .buttonStyle(.plain)
-        .padding(.top, 3)
     }
 
     @ViewBuilder
     private var dangerZone: some View {
         VStack(spacing: 8) {
             if let trip {
+                // The two things worth doing with a record: see it on the map, and
+                // shelve it in the collection. Only once the trip is over — a live
+                // trip's map is the Trail's default already, and folding a trip
+                // still gathering plates would leave the book forever behind it.
+                if isLocked, hasTrail {
+                    Button {
+                        router.showTrail(.trip(trip.id))
+                        dismiss()
+                    } label: {
+                        rowLabel("View trail", symbol: "map", tint: Theme.route)
+                    }
+                }
+
+                if isLocked, let foldedBook, let onUnfold {
+                    Button(action: onUnfold) {
+                        rowLabel("Remove from \(foldedBook.name)",
+                                 symbol: "books.vertical", tint: Theme.paint)
+                    }
+                } else if isLocked, foldedBook == nil, let onFold {
+                    Button(action: onFold) {
+                        rowLabel("Add to book\u{2026}",
+                                 symbol: "books.vertical", tint: Theme.paint)
+                    }
+                }
+
                 // Also on a swipe, but it has to exist here too: the swipe buttons
                 // are hidden from VoiceOver, so this is the accessible route to it.
                 // Not offered on a trip that is put away — pinning sorts the main
@@ -828,7 +1543,7 @@ struct TripEditor: View {
             // still unable to take a plate, which is a state with no name.
             if let onArchive, trip?.isActive != false {
                 Button(action: onArchive) {
-                    // Not tinted red. Archiving loses nothing, and colouring it like
+                    // Not tinted red. Archiving loses nothing, and coloring it like
                     // the two below would imply it does. Separate from "done"
                     // because they are different intentions: this one is "out of my
                     // way for now", with no claim that the trip is over.
@@ -856,7 +1571,7 @@ struct TripEditor: View {
         .buttonStyle(.plain)
     }
 
-    private func rowLabel(_ title: String, symbol: String, tint: Color) -> some View {
+    private func rowLabel(_ title: LocalizedStringKey, symbol: String, tint: Color) -> some View {
         HStack(spacing: 9) {
             Image(systemName: symbol)
                 .font(.system(size: 13, weight: .semibold))
@@ -906,7 +1621,10 @@ struct TripEditor: View {
         if let trip {
             target = trip
             trip.name = trimmedName
-            trip.scoringMode = mode
+            // Guests do not get to change what the party is scored on. The controls
+            // are already hidden for them; this is the same guard as `isLocked` above,
+            // for the same reason.
+            if !scoringIsHostOwned { trip.scoringMode = mode }
         } else {
             target = Trip(name: trimmedName, scoringMode: mode)
             context.insert(target)
@@ -920,9 +1638,12 @@ struct TripEditor: View {
         target.destination = destination.name.nilIfBlank
         target.destinationLat = destination.latitude
         target.destinationLon = destination.longitude
-        target.includesTrucks = includeTrucks
 
         try? context.save()
+
+        // Tell the party, so the rules and the route reach every phone rather than
+        // only the one they were typed on. No-op unless this trip is the party's.
+        PartySession.shared?.broadcastTrip(target)
         dismiss()
     }
 }

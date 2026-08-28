@@ -1,0 +1,45 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld" : {
+
+    },
+    "^[%lld day](inflect: true) quiet" : {
+
+    },
+    "^[%lld plate](inflect: true) in all" : {
+
+    },
+    "ALL TIME" : {
+
+    },
+    "BOOK" : {
+
+    },
+    "Collection" : {
+
+    },
+    "LAST TRIP" : {
+
+    },
+    "Nothing spotted yet" : {
+
+    },
+    "of %lld" : {
+
+    },
+    "ON THE ROAD" : {
+
+    },
+    "rarest" : {
+
+    },
+    "Your collection" : {
+
+    },
+    "Your progress on the trip or book you are collecting into." : {
+
+    }
+  },
+  "version" : "1.0"
+}

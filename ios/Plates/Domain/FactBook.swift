@@ -19,8 +19,20 @@ import Foundation
 @MainActor
 enum FactBook {
 
+    /// The rotation pile: which facts this cycle has already dealt. Emptied when a
+    /// region runs dry, because that is what "reshuffle" means.
     private static let seenKey = "seenFactIDs"
     private static let lastKey = "lastFactID"
+
+    /// Everything this player has ever read, which only ever grows.
+    ///
+    /// Split out from `seenKey`, which was doing both jobs and could not do both:
+    /// the pile has to empty on a reshuffle, and the detail sheet reads the same set
+    /// to decide which facts are unlocked. So reading the last fact for a state
+    /// reset the pile and every fact for it went back to showing "Locked" — the
+    /// collection visibly un-collecting itself. A tester reported it as not being
+    /// able to tell how facts are unlocked, which is exactly how that would look.
+    private static let unlockedKey = "unlockedFactIDs"
 
     /// A fact for this plate, preferring one that has not been shown before.
     /// Nil only if the region has no facts at all.
@@ -50,6 +62,7 @@ enum FactBook {
 
         seen.insert(PlateFacts.id(of: pick))
         setSeen(seen, for: code)
+        unlock(PlateFacts.id(of: pick), for: code)
         setLast(PlateFacts.id(of: pick), for: code)
         return pick
     }
@@ -58,7 +71,7 @@ enum FactBook {
     /// behind a future "41 of 390 facts" line. Counts only facts that still exist,
     /// so deleting one does not leave the total stranded above the maximum.
     static var seenCount: Int {
-        let store = seenStore
+        let store = unlockedStore
         return PlateFacts.byCode.reduce(0) { running, entry in
             let live = Set(entry.value.map(PlateFacts.id(of:)))
             return running + Set(store[entry.key] ?? []).intersection(live).count
@@ -74,8 +87,8 @@ enum FactBook {
     /// are themselves something to collect.
     static func seenFacts(for code: String) -> [String] {
         let facts = PlateFacts.byCode[code] ?? []
-        let seen = seenIDs(for: code)
-        return facts.filter { seen.contains(PlateFacts.id(of: $0)) }
+        let unlocked = unlockedIDs(for: code)
+        return facts.filter { unlocked.contains(PlateFacts.id(of: $0)) }
     }
 
     static func total(for code: String) -> Int {
@@ -83,38 +96,66 @@ enum FactBook {
     }
 
     static func reset() {
-        UserDefaults.standard.removeObject(forKey: seenKey)
-        UserDefaults.standard.removeObject(forKey: lastKey)
+        AppDefaults.store.removeObject(forKey: seenKey)
+        AppDefaults.store.removeObject(forKey: lastKey)
+        AppDefaults.store.removeObject(forKey: unlockedKey)
     }
 
     // MARK: - Storage
 
     private static var seenStore: [String: [Int]] {
-        UserDefaults.standard.dictionary(forKey: seenKey) as? [String: [Int]] ?? [:]
+        AppDefaults.store.dictionary(forKey: seenKey) as? [String: [Int]] ?? [:]
     }
 
     private static func seenIDs(for code: String) -> Set<Int> {
-        Set(seenStore[code] ?? [])
+        Set((seenStore[code] ?? []).map(PlateFacts.canonical))
     }
 
     private static func setSeen(_ ids: Set<Int>, for code: String) {
         var store = seenStore
         store[code] = Array(ids)
-        UserDefaults.standard.set(store, forKey: seenKey)
+        AppDefaults.store.set(store, forKey: seenKey)
     }
 
     private static func lastID(for code: String) -> Int? {
-        (UserDefaults.standard.dictionary(forKey: lastKey) as? [String: Int])?[code]
+        (AppDefaults.store.dictionary(forKey: lastKey) as? [String: Int])?[code]
+            .map(PlateFacts.canonical)
     }
 
     private static func setLast(_ id: Int, for code: String) {
-        var store = (UserDefaults.standard.dictionary(forKey: lastKey) as? [String: Int]) ?? [:]
+        var store = (AppDefaults.store.dictionary(forKey: lastKey) as? [String: Int]) ?? [:]
         store[code] = id
-        UserDefaults.standard.set(store, forKey: lastKey)
+        AppDefaults.store.set(store, forKey: lastKey)
     }
 
     private static func record(_ id: Int, for code: String) {
         setSeen(seenIDs(for: code).union([id]), for: code)
+        unlock(id, for: code)
         setLast(id, for: code)
+    }
+
+    // MARK: - What has ever been read
+
+    /// Seeded from the rotation pile the first time it is asked for, so anybody
+    /// upgrading keeps whatever their pile happened to be holding. Some of it was
+    /// already lost to a reshuffle before this existed and cannot be recovered —
+    /// the facts are still there to be read again, they just show as locked once.
+    private static var unlockedStore: [String: [Int]] {
+        if let stored = AppDefaults.store.dictionary(forKey: unlockedKey) as? [String: [Int]] {
+            return stored
+        }
+        let carried = seenStore
+        AppDefaults.store.set(carried, forKey: unlockedKey)
+        return carried
+    }
+
+    private static func unlockedIDs(for code: String) -> Set<Int> {
+        Set((unlockedStore[code] ?? []).map(PlateFacts.canonical))
+    }
+
+    private static func unlock(_ id: Int, for code: String) {
+        var store = unlockedStore
+        store[code] = Array(Set(store[code] ?? []).union([id]))
+        AppDefaults.store.set(store, forKey: unlockedKey)
     }
 }

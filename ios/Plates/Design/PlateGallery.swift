@@ -33,7 +33,7 @@ enum ContrastAudit {
     /// what is behind the type.
     ///
     /// A vector plate has a gradient, so the ink has to survive both stops. A
-    /// plate with artwork has one measured field colour — the raster never
+    /// plate with artwork has one measured field color — the raster never
     /// reaches PlateStyle, so auditing bgHex there would be auditing a
     /// background that is no longer drawn.
     static func check(_ code: String, _ style: PlateStyle) -> Double {
@@ -85,7 +85,7 @@ struct PlateGallery: View {
 
     private func header(failures: [String: Double]) -> some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text("Plate catalogue")
+            Text(verbatim: "Plate catalogue")
                 .font(.plates(size: 20, weight: .bold))
             Text(summary(failures: failures))
                 .font(.plates(size: 12))

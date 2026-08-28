@@ -26,11 +26,11 @@ final class PartyTombstones {
     /// `nil` keeps everything in memory and never touches disk — the harness runs
     /// against one of these so a verification pass cannot leave residue in the real
     /// file, or read somebody's actual party out of it.
-    private let url: URL?
+    private let file: SidecarFile
     private var byTrip: [UUID: Set<UUID>] = [:]
 
     init(url: URL?) {
-        self.url = url
+        file = SidecarFile(url: url, holding: "withdrawn plates")
         load()
     }
 
@@ -61,18 +61,14 @@ final class PartyTombstones {
     // MARK: - Disk
 
     private static var defaultURL: URL? {
-        try? FileManager.default
-            .url(for: .applicationSupportDirectory, in: .userDomainMask,
-                 appropriateFor: nil, create: true)
-            .appendingPathComponent("PartyTombstones.json")
+        SidecarFile.inApplicationSupport("PartyTombstones.json",
+                                         holding: "withdrawn plates").url
     }
 
     /// Stored as strings rather than `UUID`s because the top level is a dictionary
     /// key, and JSON keys are strings whatever Swift would prefer.
     private func load() {
-        guard let url, let data = try? Data(contentsOf: url),
-              let raw = try? JSONDecoder().decode([String: [String]].self, from: data)
-        else { return }
+        guard let raw: [String: [String]] = file.read() else { return }
 
         for (trip, ids) in raw {
             guard let tripID = UUID(uuidString: trip) else { continue }
@@ -80,15 +76,13 @@ final class PartyTombstones {
         }
     }
 
-    /// Failures are swallowed on purpose. The worst case is a plate somebody
+    /// Failures are not raised to anybody. The worst case is a plate somebody
     /// un-tapped coming back on a later reconnect — annoying, one tap to fix, and
-    /// not worth interrupting a car full of people to report.
+    /// not worth interrupting a car full of people to report. `SidecarFile` prints
+    /// it, which is the difference between quiet and invisible.
     private func save() {
-        guard let url else { return }
-        let raw = byTrip.reduce(into: [String: [String]]()) { out, entry in
+        file.write(byTrip.reduce(into: [String: [String]]()) { out, entry in
             out[entry.key.uuidString] = entry.value.map(\.uuidString).sorted()
-        }
-        guard let data = try? JSONEncoder().encode(raw) else { return }
-        try? data.write(to: url, options: .atomic)
+        })
     }
 }

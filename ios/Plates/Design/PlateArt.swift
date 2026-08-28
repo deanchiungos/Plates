@@ -18,7 +18,7 @@ import SwiftUI
 // The palette below is grounded, not guessed: `research/plate-primary.csv` has
 // one real, described photograph per jurisdiction (plate_vision.py), and every
 // entry here except WY and YT — no free photo exists for either — was checked
-// against it and adjusted where the two disagreed. Colours were then pushed
+// against it and adjusted where the two disagreed. Colors were then pushed
 // through a WCAG-AA check against both gradient stops; a few (marked below)
 // had to be pulled off the literal photographed hue to stay legible, the same
 // tradeoff CO/MT/AZ already made before any of this data existed.
@@ -75,8 +75,8 @@ struct PlateStyle {
 
     // MARK: - The catalog
     //
-    // Each entry takes the plate's dominant colours and one evocative shape.
-    // Where a real plate is plain white-on-dark, the state's own accent colour
+    // Each entry takes the plate's dominant colors and one evocative shape.
+    // Where a real plate is plain white-on-dark, the state's own accent color
     // does the distinguishing so neighbouring tiles never read as identical.
 
     static let catalog: [String: PlateStyle] = [
@@ -86,7 +86,7 @@ struct PlateStyle {
         "AL": .init(0xE0C97A, 0x7FA9C4, ink: 0x1C1C1C, accent: 0xB3282D, .wave),
         // Big Dipper flag, not a sun — kept sunDisc as the closest existing shape
         "AK": .init(0xF6C544, 0xE0A32A, ink: 0x14305C, accent: 0xC8623E, .sunDisc),
-        // saguaro + purple mountains desert scene (colours adjusted from the raw photo to clear WCAG AA)
+        // saguaro + purple mountains desert scene (colors adjusted from the raw photo to clear WCAG AA)
         "AZ": .init(0xBFE0EE, 0xF2D9A0, ink: 0x0E4E4B, accent: 0xE0876A, .cactus),
         // pale blue-to-white gradient, faint diamond watermark
         "AR": .init(0xE8F0F6, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1F5C3A, .horizon),
@@ -106,7 +106,7 @@ struct PlateStyle {
         "HI": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1C1C1C, accent: nil, .rainbow),
         // red/white/blue banded potato-and-mountains plate
         "ID": .init(0xE8A0A0, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1B7D78, .mountains),
-        // was white bg / navy ink: real plate is a blue gradient with a red serial (colours adjusted from the raw photo to clear WCAG AA)
+        // was white bg / navy ink: real plate is a blue gradient with a red serial (colors adjusted from the raw photo to clear WCAG AA)
         "IL": .init(0xD9E9F5, 0xEFF6FB, ink: 0x9E1A24, accent: 0x9E1A24, .skyline),
         // covered bridge + pine trees; no bridge motif, pine is the closest fit
         "IN": .init(0xBFE0F2, 0x8FB4D6, ink: 0x14305C, accent: 0xB3282D, .pine),
@@ -134,8 +134,14 @@ struct PlateStyle {
         "MO": .init(0xFFFFFF, 0xF2F6FA, ink: 0x1B4A8C, accent: 0x1B4A8C, .stateOutline),
         // unchanged shape, ink lightened from navy to the true dark-grey serial
         "MT": .init(0xBFE0F2, 0xFFFFFF, ink: 0x3E3D46, accent: 0xE0B84B, .mountains),
-        // silver-grey field with a ghosted watermark; wheat motif from before doesn't match the current design
-        "NE": .init(0xE8ECEF, 0xD6DCE2, ink: 0x14305C, accent: 0xE0B84B, .horizon),
+        // 2023– : pale silver-grey sheeting, navy embossed serial, and a watermark
+        // scene of a robed sower, a leaping horse, clouds and a lone star that is
+        // "visible only at an angle" (research/plate-primary.csv). The gold accent
+        // here until now belonged to the 2017–2022 plate, whose state name sat in
+        // gold on a navy bar — gone from the current design entirely. Of that
+        // watermark only the star survives at tile size, so it carries the motif,
+        // tinted the pale blue-grey it actually is rather than picked out in color.
+        "NE": .init(0xF2F4F7, 0xDDE3EA, ink: 0x1A1F5B, accent: 0xA9B7C9, .star),
         // low-poly mountain range; unchanged shape
         "NV": .init(0xBFE0F2, 0xE0C97A, ink: 0x1C1C1C, accent: 0x1F5C3A, .mountains),
         // unchanged shape — Old Man of the Mountain watermark reads as a mountain motif
@@ -150,17 +156,17 @@ struct PlateStyle {
         "NC": .init(0xF2EFE6, 0xFFFFFF, ink: 0x1B3A9E, accent: 0xB3282D, .wave),
         // badlands sunset with a bison; mountains is the closest existing shape
         "ND": .init(0xBFE0F2, 0xE0A05A, ink: 0x1C1C1C, accent: 0xC8623E, .mountains),
-        // was white bg / navy ink / orange accent: real current plate is flat gold with a red serial (colours adjusted from the raw photo to clear WCAG AA)
+        // was white bg / navy ink / orange accent: real current plate is flat gold with a red serial (colors adjusted from the raw photo to clear WCAG AA)
         "OH": .init(0xF6C544, 0xE0A32A, ink: 0x7A1015, accent: 0xB3282D, nil),
         // was pale blue / navy: the Sept-2024 design is solid saturated red with a white serial and star device
         "OK": .init(0xB3282D, 0x9E1A24, ink: 0xFFFFFF, accent: 0xFFFFFF, .star),
         // unchanged — matched already
         "OR": .init(0xBFE0F2, 0xFFFFFF, ink: 0x14305C, accent: 0x1F5C3A, .pine),
-        // banded blue/white/gold; added state-outline for its corner mark (colours adjusted from the raw photo to clear WCAG AA)
+        // banded blue/white/gold; added state-outline for its corner mark (colors adjusted from the raw photo to clear WCAG AA)
         "PA": .init(0x6FA8DC, 0xE0B84B, ink: 0x14305C, accent: 0x6FA8DC, .stateOutline),
         // unchanged — matched already
         "RI": .init(0xBFE0F2, 0xDCEBF5, ink: 0x14305C, accent: 0x6FA8DC, .wave),
-        // was dark-teal bg / near-white ink: real plate is light (blue-to-white gradient) with a black serial — inverted brightness (colours adjusted from the raw photo to clear WCAG AA)
+        // was dark-teal bg / near-white ink: real plate is light (blue-to-white gradient) with a black serial — inverted brightness (colors adjusted from the raw photo to clear WCAG AA)
         "SC": .init(0x6FA8DC, 0xFFFFFF, ink: 0x1C1C1C, accent: 0x1B4A8C, .pine),
         // photographic Rushmore scene; mountains is the closest existing shape
         "SD": .init(0xBFE0F2, 0x8A8580, ink: 0x1C1C1C, accent: 0xE0B84B, .mountains),
@@ -190,7 +196,7 @@ struct PlateStyle {
         "PR": .init(0xBFE0F2, 0x8FB4D6, ink: 0x1C1C1C, accent: 0x9E1A24, .wave),
 
         // ---- Canada ----
-        // was white bg / navy ink: the 2020 redesign (A Place to Grow) is solid blue with a white serial — the old white/navy values belonged to the previous design (colours adjusted from the raw photo to clear WCAG AA)
+        // was white bg / navy ink: the 2020 redesign (A Place to Grow) is solid blue with a white serial — the old white/navy values belonged to the previous design (colors adjusted from the raw photo to clear WCAG AA)
         "ON": .init(0x1B4A8C, 0x2E6BB0, ink: 0xFFFFFF, accent: 0xFFFFFF, .maple),
         // was sharing Ontario's maple motif — fleur-de-lis is Quebec's actual mark and now reads distinctly from Ontario at tile size
         "QC": .init(0xFFFFFF, 0xE9EFF7, ink: 0x14305C, accent: 0x4A78C4, .fleurDeLis),
@@ -214,7 +220,7 @@ struct PlateStyle {
         "NT": .init(0xBFE0F2, 0xFFFFFF, ink: 0x14305C, accent: 0x6FA8DC, .mountains),
         // no photo yet — the 1990 design has never had a free-licensed photo turn up
         "YT": .init(0xFDF6E0, 0xEDD9A8, ink: 0x6B4A1E, accent: 0xC8A02E, .mountains),
-        // aurora-over-snow scene; no aurora motif exists, horizon is the neutral fallback (colours adjusted from the raw photo to clear WCAG AA)
+        // aurora-over-snow scene; no aurora motif exists, horizon is the neutral fallback (colors adjusted from the raw photo to clear WCAG AA)
         "NU": .init(0xC2B4DC, 0xBFE0F2, ink: 0x1C1C1C, accent: 0x2E8B8B, .horizon)
     ]
 }

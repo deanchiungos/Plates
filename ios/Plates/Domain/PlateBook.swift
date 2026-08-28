@@ -14,6 +14,12 @@ struct PlateBook {
         /// The trip or book it was first logged against. Nil for an orphan left
         /// behind by a deleted book, which is missing provenance, not a missing find.
         let firstIn: String?
+        /// Everyone who claimed it, earliest first, each counted once.
+        ///
+        /// Carried because `count` alone cannot tell "you saw it four times" from
+        /// "four people each saw it once", and a book drew both as ×4 — which is
+        /// nonsense to anybody who logged it exactly once and knows it.
+        let spotters: [Player]
     }
 
     private(set) var entries: [String: Entry] = [:]
@@ -23,12 +29,25 @@ struct PlateBook {
         for s in sightings { grouped[s.plateCode, default: []].append(s) }
 
         for (code, list) in grouped {
-            let sorted = list.sorted { $0.spottedAt < $1.spottedAt }
+            // Through `SightingOrder`, whose tie-break is an id: `sorted(by:)` is not
+            // a stable sort, so two claims at the same instant could come out either
+            // way on either run. `PlateIndex` orders its claimants the same way, and
+            // the two draw the same people on two screens.
+            let sorted = list.sorted { SightingOrder($0) < SightingOrder($1) }
             guard let first = sorted.first, let last = sorted.last else { continue }
+            // De-duplicated in place rather than through a Set, so the order stays
+            // "who got there first" — which is the order the tile draws them in.
+            var spotters: [Player] = []
+            for player in sorted.compactMap(\.player)
+            where !spotters.contains(where: { $0.id == player.id }) {
+                spotters.append(player)
+            }
+
             entries[code] = Entry(firstSeen: first.spottedAt,
                                   lastSeen: last.spottedAt,
                                   count: sorted.count,
-                                  firstIn: first.containerName)
+                                  firstIn: first.containerName,
+                                  spotters: spotters)
         }
     }
 
@@ -85,6 +104,10 @@ struct TripSummary: Identifiable {
     /// find only means anything relative to where that trip went.
     let bestFind: (code: String, rarity: Int)?
 
+    /// `@MainActor` because it reads a SwiftData model, which is main-actor state,
+    /// and because the rarity it works out is. It was already only ever built from a
+    /// view body; the annotation says so rather than leaving it to be true by luck.
+    @MainActor
     init(trip: Trip) {
         let all = trip.allSightings
         let codes = Set(all.map(\.plateCode))
@@ -99,8 +122,10 @@ struct TripSummary: Identifiable {
         platesFound = codes.count
         sightings = all.count
 
-        bestFind = codes
-            .map { (code: $0, rarity: trip.rarity(of: $0)) }
-            .max { $0.rarity < $1.rarity }
+        // Through the index, like the grid, the poster and the widget. Passed as a
+        // function value, `trip.rarity(of:)` also silently dropped its `@MainActor`
+        // — which the compiler now warns about and Swift 6 will refuse.
+        let index = trip.plateIndex()
+        bestFind = rarestPlate(in: codes) { trip.rarity(of: $0, using: index) }
     }
 }

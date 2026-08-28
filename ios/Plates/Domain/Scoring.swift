@@ -43,6 +43,23 @@ struct SightingOrder: Comparable {
     }
 }
 
+/// The best plate in a collection, by whatever rarity the caller judges with — a
+/// trip scores against its own route, a lifetime against the national table.
+///
+/// One function because four screens answer this question and two of them used to
+/// answer it differently. The tie-break is the reason it is worth sharing: the
+/// candidates come out of a `Set`, whose iteration order is seeded per process, and
+/// six plates sit at mythic by design. Without a tie-break the trip card and Siri
+/// each named whichever one they happened to see first — a different answer between
+/// launches, and a different answer from the widget and the poster, which did break
+/// ties. Alphabetical by code, which is arbitrary but is the same arbitrary
+/// everywhere.
+func rarestPlate(in found: some Sequence<String>,
+                 scoredBy rarity: (String) -> Int) -> (code: String, rarity: Int)? {
+    found.map { (code: $0, rarity: rarity($0)) }
+        .max { ($0.rarity, $1.code) < ($1.rarity, $0.code) }
+}
+
 /// Every per-plate answer the grid needs, from one pass over `sightings`.
 ///
 /// The accessors below — `hasSeen`, `sightingCount`, `spotter` — are each a full
@@ -56,6 +73,14 @@ struct PlateIndex {
         var count = 0
         var latest: SightingOrder?
         var spotter: Player?
+        /// Everyone who has claimed this plate, in the order they first did.
+        /// One name under the old rules; several once a party lets more than one
+        /// person bank the same state.
+        var claimants: [Player] = []
+        /// What the *first* claim was worth, when a value was recorded. The same
+        /// answer `claimedRarity(of:)` gives, taken from the pass this already makes
+        /// rather than from a fresh filter of every sighting per code.
+        var banked: Int?
     }
 
     private let entries: [String: Entry]
@@ -63,7 +88,14 @@ struct PlateIndex {
     init(_ sightings: [Sighting]) {
         var built: [String: Entry] = [:]
         built.reserveCapacity(sightings.count)
-        for s in sightings {
+        // Ordered before the pass, because `claimants` is documented as "the order
+        // they first did" and a relationship arrives in whatever order the store
+        // hands it back. `PlateBook` sorts the same list by time and draws the same
+        // people, so the Game grid and the Book screen were putting the same two
+        // avatars in opposite orders on one device — and the poster baked whichever
+        // it got into an image. Through `SightingOrder` rather than `spottedAt`
+        // alone, so two claims at one instant also land the same way twice.
+        for s in sightings.sorted(by: { SightingOrder($0) < SightingOrder($1) }) {
             var e = built[s.plateCode] ?? Entry()
             e.count += 1
             // Most recent spotter wins, matching `spotter(of:)` — and ties are
@@ -74,6 +106,13 @@ struct PlateIndex {
                 e.latest = order
                 e.spotter = s.player
             }
+            if let claimant = s.player, !e.claimants.contains(where: { $0.id == claimant.id }) {
+                e.claimants.append(claimant)
+            }
+            // First one seen, and the loop is in `SightingOrder` — so this is the
+            // earliest claim, which is the one that sets the value. Later sightings
+            // do not revalue it; see `claimedRarity(of:)`.
+            if e.count == 1 { e.banked = s.rarityWhenSpotted }
             built[s.plateCode] = e
         }
         entries = built
@@ -82,6 +121,8 @@ struct PlateIndex {
     func has(_ code: String) -> Bool { entries[code] != nil }
     func count(_ code: String) -> Int { entries[code]?.count ?? 0 }
     func spotter(_ code: String) -> Player? { entries[code]?.spotter }
+    func claimants(_ code: String) -> [Player] { entries[code]?.claimants ?? [] }
+    func banked(_ code: String) -> Int? { entries[code]?.banked }
 }
 
 extension PlateCollection {
@@ -104,7 +145,7 @@ extension PlateCollection {
         allSightings.filter { $0.plateCode == plate.code }.count
     }
 
-    /// Most recent spotter of a plate — drives the colour bar on a found tile.
+    /// Most recent spotter of a plate — drives the color bar on a found tile.
     func spotter(of plate: Plate) -> Player? {
         allSightings
             .filter { $0.plateCode == plate.code }
@@ -119,8 +160,15 @@ extension PlateCollection {
         seenCodes.filter { Plate.plate(for: $0)?.region == .state }.count
     }
 
+    /// The numerator of "N / 2" under Bonus plates — D.C. and Puerto Rico, and
+    /// nothing else.
+    ///
+    /// Counted against `Plate.bonusCodes`, the very array the section draws, so the
+    /// number and the tiles beneath it cannot disagree. This used to ask
+    /// `region.isBonus`, which means `region != .state` and so counted all thirteen
+    /// provinces: a full collection reported "15 / 2 found".
     var bonusFound: Int {
-        seenCodes.filter { Plate.plate(for: $0)?.region.isBonus == true }.count
+        seenCodes.filter(Plate.bonusCodes.contains).count
     }
 
     var provincesFound: Int {
@@ -138,9 +186,11 @@ extension PlateCollection {
 
     // MARK: - Score
 
+    @MainActor
     var score: Int { score(for: nil) }
 
     /// Score for one player, or for everyone when `player` is nil.
+    @MainActor
     func score(for player: Player?) -> Int {
         let relevant = player == nil
             ? allSightings
@@ -154,8 +204,24 @@ extension PlateCollection {
 
         case .weighted:
             // Rarity points, once per distinct plate. Bonus plates count here.
-            let codes = Set(relevant.map(\.plateCode))
-            return codes.reduce(0) { $0 + rarity(of: $1) }
+            //
+            // Scored from the sightings in hand rather than through `rarity(of:)`,
+            // which answers the *collection's* question — what is this plate worth on
+            // this trip — and therefore always the first claim's value. That is right
+            // for the trip and wrong for a person: under shared claims four people can
+            // each bank Montana, and crediting them all with whatever the earliest one
+            // happened to be sitting next to takes back the thing shared claims
+            // promises. Grouping by code keeps "once per distinct plate" intact.
+            //
+            // For the whole collection (`player == nil`) `relevant` is every sighting,
+            // so the earliest row per code is the first claim and this is exactly what
+            // `claimedRarity` returned — same answer, one pass instead of one full
+            // scan per code.
+            return Dictionary(grouping: relevant, by: \.plateCode)
+                .reduce(0) { total, entry in
+                    let earliest = entry.value.min { SightingOrder($0) < SightingOrder($1) }
+                    return total + (earliest?.rarityWhenSpotted ?? rarity(of: entry.key))
+                }
 
         case .unlimited:
             // Every sighting scores what it was worth when it was logged, so two
@@ -176,6 +242,7 @@ extension PlateCollection {
     ///
     /// Falls back to the live model for sightings logged before rarity was recorded,
     /// and for every plate on a book, which has no route.
+    @MainActor
     func rarity(of code: String) -> Int {
         claimedRarity(of: code) ?? PlateRarity.rarity(code, on: route)
     }
@@ -195,13 +262,84 @@ extension PlateCollection {
 
     /// What a plate is worth if you claim it *right now*. Used at the moment of the
     /// tap, to decide the celebration and to bank onto the sighting.
+    @MainActor
     func liveRarity(of code: String) -> Int {
         PlateRarity.rarity(code, on: route)
     }
 
+    @MainActor
     func rarity(of plate: Plate) -> Int { rarity(of: plate.code) }
 
+    /// The same answer as `rarity(of:)`, for callers that are asking about more than
+    /// one plate and already hold an index.
+    ///
+    /// `claimedRarity` filters the whole sightings array, so asking it per code is
+    /// the quadratic shape `PlateIndex` was built to end — and the two places that
+    /// wanted a value for every plate at once, the grid's pips and the poster's best
+    /// find, were both doing exactly that.
+    @MainActor
+    func rarity(of code: String, using index: PlateIndex) -> Int {
+        index.banked(code) ?? PlateRarity.rarity(code, on: route)
+    }
+
+    /// The people actually on this collection.
+    ///
+    /// Not the same thing as "every `Player` in the store", and the difference is a
+    /// bug that shipped. The store's players used to *be* the car — a roster you
+    /// typed in by hand — so scoring against all of them was right. A party changed
+    /// that: joining one merges the other phones' players into your store and keeps
+    /// them, permanently and on purpose, because a trip's standings have to still
+    /// render years later. Score against the whole table after that and every new
+    /// trip opens with a strip of everyone you have ever played with, sitting at
+    /// zero, on a game they were never part of.
+    ///
+    /// Three things make somebody a participant here:
+    ///
+    /// - they have a sighting filed under this collection — the historical answer,
+    ///   which is what keeps finished trips correct;
+    /// - they are in a party that is live on this collection right now, so people
+    ///   who have joined but not yet called anything appear at zero rather than
+    ///   popping into existence on their first find;
+    /// - they are this phone, which is always playing whatever it is looking at.
+    ///
+    /// Returned in the order given, so the caller's sort (join date) survives.
+    func participants(from players: [Player],
+                      me: Player? = nil,
+                      alsoPlaying live: Set<UUID> = []) -> [Player] {
+        var wanted = Set(allSightings.compactMap { $0.player?.id }).union(live)
+        if let me { wanted.insert(me.id) }
+        return players.filter { wanted.contains($0.id) }
+    }
+
+    // MARK: - Whose plate is it
+
+    /// Has *this player* banked this plate — strictly, by id.
+    ///
+    /// Used to decide whether a tap under `sharedClaims` is a fresh claim or a
+    /// take-back, so it deliberately does not count unowned sightings: a plate
+    /// somebody logged before players existed is not evidence that you claimed it.
+    func hasClaimed(_ code: String, by player: Player?) -> Bool {
+        guard let player else { return false }
+        return allSightings.contains { $0.plateCode == code && $0.player?.id == player.id }
+    }
+
+    /// The sightings of this plate that `player` is allowed to take back.
+    ///
+    /// Unowned ones count as removable, which is the looser half of the rule and is
+    /// meant: they predate attribution or belonged to somebody since deleted, so
+    /// protecting them would leave plates on the board that nobody alive can undo.
+    func removableSightings(of code: String,
+                            by player: Player?,
+                            protected: Bool) -> [Sighting] {
+        allSightings.filter { sighting in
+            guard sighting.plateCode == code else { return false }
+            guard protected else { return true }
+            return sighting.player == nil || sighting.player?.id == player?.id
+        }
+    }
+
     /// Per-player scores, highest first. Ties keep a stable order by join date.
+    @MainActor
     func standings(among players: [Player]) -> [(player: Player, score: Int)] {
         players
             .map { (player: $0, score: score(for: $0)) }

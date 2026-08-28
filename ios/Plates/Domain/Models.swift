@@ -8,17 +8,17 @@ enum ScoringMode: String, Codable, CaseIterable, Identifiable, Sendable {
 
     var label: String {
         switch self {
-        case .classic:   return "Classic scoring"
-        case .weighted:  return "Weighted scoring"
-        case .unlimited: return "Unlimited scoring"
+        case .classic:   return String(localized: "Classic scoring")
+        case .weighted:  return String(localized: "Weighted scoring")
+        case .unlimited: return String(localized: "Unlimited scoring")
         }
     }
 
     var blurb: String {
         switch self {
-        case .classic:   return "One point per state, however many times you see it."
-        case .weighted:  return "Rarer plates are worth more, judged against your route."
-        case .unlimited: return "Every sighting scores, so keep counting."
+        case .classic:   return String(localized: "One point per state, however many times you see it.")
+        case .weighted:  return String(localized: "Rarer plates are worth more, judged against your route.")
+        case .unlimited: return String(localized: "Every sighting scores, so keep counting.")
         }
     }
 }
@@ -31,6 +31,20 @@ final class Player {
     /// keeps players correct if the palette is ever retuned.
     var colorIndex: Int = 0
     var joinedAt: Date = Date()
+
+    /// An emoji to be, instead of initials.
+    ///
+    /// Optional, and stays optional: initials are a perfectly good answer and the
+    /// grown-up in the car will often want them. But this is a game played mostly by
+    /// children, where "I'm the fox" is a more useful handle than "AD" — and in a
+    /// party, where four circles sit side by side, a picture is legible at sizes two
+    /// letters are not.
+    ///
+    /// NOTE: this is the first added property since the CloudKit schema was
+    /// deployed. Optional with no default, which is the shape CloudKit requires, but
+    /// it still needs a production deploy before any build that carries it reaches
+    /// TestFlight. See the warning at the top of `PlatesStore`.
+    var avatar: String?
 
     /// Nullify, not cascade. Removing someone from the car must not un-collect
     /// the plates they spotted — the sighting happened. Their sightings survive
@@ -49,13 +63,43 @@ final class Player {
     /// How many people can be in the car: as many as you like.
     ///
     /// There was briefly a cap of six, on the reasoning that six is how many
-    /// identity colours there are and the standings strip ran out of width past
+    /// identity colors there are and the standings strip ran out of width past
     /// that. The width was the real problem and a cap was the wrong fix for it —
     /// the strip scrolls now, so each person keeps a readable card however many
-    /// there are. Colours do start repeating after the sixth, which is a genuine
+    /// there are. Colors do start repeating after the sixth, which is a genuine
     /// cost and a much smaller one than turning somebody away from the game.
 
     var initial: String { String(name.prefix(1)).uppercased() }
+
+    /// What goes in the circle: their emoji if they picked one, else initials.
+    ///
+    /// Two accessors rather than one because the sizes are genuinely different. A
+    /// 24pt avatar can hold two letters; the 12pt chip in a plate's corner cannot,
+    /// and has always shown one. An emoji is a single glyph either way, so it simply
+    /// wins in both.
+    /// Falls back to initials when the chosen emoji cannot be drawn here — see
+    /// `Glyphs`. A box is worse than a letter.
+    ///
+    /// `@MainActor` follows `usesEmoji`, which follows the `Glyphs` cache behind it.
+    /// Every reader of these is a view.
+    @MainActor
+    var face: String { usesEmoji ? (avatar ?? initials2) : initials2 }
+    @MainActor
+    var smallFace: String { usesEmoji ? (avatar ?? initial) : initial }
+
+    /// Two letters, for the overlapping avatar circles.
+    ///
+    /// Initials where there are two words to take them from — "Aunt Deb" is AD —
+    /// and the first two letters otherwise, so "Mia" is MI rather than a lonely M
+    /// in a circle sized for a pair. A single letter reads as a mistake next to
+    /// four two-letter neighbours.
+    var initials2: String {
+        let words = name.split(separator: " ").filter { !$0.isEmpty }
+        if words.count >= 2 {
+            return (words[0].prefix(1) + words[1].prefix(1)).uppercased()
+        }
+        return String(name.prefix(2)).uppercased()
+    }
 }
 
 @Model
@@ -71,7 +115,7 @@ final class Trip {
     /// version of the game everyone already knows from the back seat — one point a
     /// state, nothing to explain. But the app's own answer to "what is this plate
     /// worth" is the route-aware rarity model, and under Classic that entire machine
-    /// is decoration: the tiers still flash, the map still colours, and none of it
+    /// is decoration: the tiers still flash, the map still colors, and none of it
     /// reaches the score. A default that ignores the best thing the app does is the
     /// wrong default.
     ///
@@ -110,11 +154,20 @@ final class Trip {
 
     /// Count pickups, SUVs and vans in the rarity model as well as cars.
     ///
-    /// Per-trip rather than a global setting: it changes what the scores on *this*
-    /// trip mean, so two trips scored differently should not be silently rewritten
-    /// by a switch flipped later. Defaults to false, which also keeps every existing
-    /// trip's numbers exactly as they were.
-    var includesTrucks: Bool = false
+    /// Per-trip rather than global, and still stored per trip, because it changes
+    /// what the scores on *this* trip mean — two trips scored differently must not be
+    /// silently rewritten by a switch flipped later.
+    ///
+    /// No longer *asked*, though. It was a checkbox in the trip editor, and a tester
+    /// put it well: nobody knows what it is for. "Should pickups count as cars" is a
+    /// modelling parameter, not a game setting, and the honest answer is yes — a
+    /// pickup is a vehicle on the road with a plate on it, and excluding them
+    /// undercounted every state where they dominate the fleet.
+    ///
+    /// Defaults to true for trips created from here on. Existing trips keep the value
+    /// already stored against them, so no score anywhere moves — the same promise
+    /// `defaultScoringMode` makes, for the same reason.
+    var includesTrucks: Bool = true
 
     /// Put away, but not deleted.
     ///
@@ -177,12 +230,23 @@ final class Trip {
 
     /// What the rarity model needs from this trip, or nil if no start has been
     /// pinned yet — in which case rarity falls back to the national defaults.
+    @MainActor
     var route: PlateRarity.Route? {
         guard let oLat = originLat, let oLon = originLon else { return nil }
+        // The road between the pins, when it has already been fetched for something
+        // else — the editor's preview or the share poster. Never fetched from here:
+        // this is read during a render, and rarity has a correct answer without it.
+        var path: [PlateRarity.Waypoint] = []
+        if let dLat = destinationLat, let dLon = destinationLon {
+            path = RouteCache.shared.knownPath(from: .init(latitude: oLat, longitude: oLon),
+                                               to: .init(latitude: dLat, longitude: dLon))
+        }
         return .init(oLat: oLat, oLon: oLon,
                      dLat: destinationLat, dLon: destinationLon,
                      currentLat: currentLat, currentLon: currentLon,
-                     includeTrucks: includesTrucks)
+                     includeTrucks: includesTrucks,
+                     isWinter: PlateRarity.Route.snowbirdSeason,
+                     path: path)
     }
 
     /// "Newark → Orlando", or whichever half was filled in. Nil when neither was.
@@ -261,7 +325,12 @@ protocol PlateCollection: AnyObject, Identifiable where ID == UUID {
 
     /// The route rarity is judged against, or nil to fall back to the national
     /// table. Always nil for a book, which is not a journey.
-    var route: PlateRarity.Route? { get }
+    ///
+    /// Main-actor because `Trip.route` reads `RouteCache.shared`, which is. The
+    /// requirement said nothing about isolation while the conformance claimed it,
+    /// which Swift 5 accepts silently and Swift 6 does not — and in the meantime the
+    /// rule was kept by nothing but every caller happening to be on the main actor.
+    @MainActor var route: PlateRarity.Route? { get }
     var scoringMode: ScoringMode { get }
 
     /// Files a fresh sighting under this collection.
@@ -288,9 +357,11 @@ extension Book: PlateCollection {
     /// Trucks stay out of it — that switch is a per-trip decision about what a
     /// particular drive's scores mean, and a book spans too many drives to answer it
     /// once.
+    @MainActor
     var route: PlateRarity.Route? {
         guard let lat = currentLat, let lon = currentLon else { return nil }
-        return .init(oLat: lat, oLon: lon, currentLat: lat, currentLon: lon)
+        return .init(oLat: lat, oLon: lon, currentLat: lat, currentLon: lon,
+                     isWinter: PlateRarity.Route.snowbirdSeason)
     }
 
     /// One point per state, permanently. Weighting a lifetime collection against a
@@ -380,26 +451,60 @@ enum PlaySelection {
         return nil
     }
 
+    /// The saved answer, read from the defaults.
+    ///
+    /// For the callers that have no view to hang `@AppStorage` on — Siri and the
+    /// widget. Both restated the same three reads with their own `"trip"` default,
+    /// which is a coin-flip waiting to happen: if either copy drifts, the widget
+    /// describes one collection while Siri logs into another, on one phone, with
+    /// nothing obviously wrong on either screen.
+    static func current(trips: [Trip], books: [Book]) -> PlayTarget? {
+        current(kind: AppDefaults.store.string(forKey: kindKey) ?? "trip",
+                tripID: AppDefaults.store.string(forKey: TripSelection.key) ?? "",
+                bookID: AppDefaults.store.string(forKey: bookKey) ?? "",
+                trips: trips, books: books)
+    }
+
     /// Written straight to `UserDefaults` rather than through the `@AppStorage`
     /// properties — `@AppStorage` observes the store, so every screen still updates,
     /// and one call site can set the pair atomically instead of each screen
     /// remembering to set both.
+    ///
+    /// Rewrites the widget's sidecar on the way out, and that is not an aside.
+    /// `WidgetData.write` resolves its whole subject through `PlaySelection.current`
+    /// — these exact three keys — so this function changes the answer to every
+    /// question the home screen is displaying. It had eight call sites and none of
+    /// them rewrote the file, so switching from a trip to a book left the widget
+    /// naming the trip, counting the trip, drawing the trip's album and labelling it
+    /// ON THE ROAD, until something unrelated happened to log a plate.
+    ///
+    /// Here rather than at the call sites for the reason the sidecar exists at all:
+    /// eight places that must each remember is the shape the bug came in.
+    @MainActor
     static func select(_ target: PlayTarget) {
-        let defaults = UserDefaults.standard
-        switch target {
-        case .trip(let trip):
-            defaults.set("trip", forKey: kindKey)
-            defaults.set(trip.id.uuidString, forKey: TripSelection.key)
-        case .book(let book):
-            defaults.set("book", forKey: kindKey)
-            defaults.set(book.id.uuidString, forKey: bookKey)
+        let defaults = AppDefaults.store
+        // Nothing to say when nothing changed. Tapping the trip you are already on
+        // is the ordinary way to open it, and it was paying for a full widget
+        // rebuild every time — including on the join path, where `PartySession`
+        // calls this straight after `PartyMerge` has already asked for one.
+        let (kind, key, id): (String, String, String) = switch target {
+        case .trip(let trip): ("trip", TripSelection.key, trip.id.uuidString)
+        case .book(let book): ("book", bookKey, book.id.uuidString)
         }
+        guard defaults.string(forKey: kindKey) != kind
+                || defaults.string(forKey: key) != id else { return }
+        defaults.set(kind, forKey: kindKey)
+        defaults.set(id, forKey: key)
+        WidgetData.setNeedsWrite(from: PlatesStore.context)
     }
 
     /// Marks a book as "your book" without changing what the Drive screen is
     /// filling. Browsing the Book tab should not interrupt a trip in progress.
+    @MainActor
     static func selectBookOnly(_ book: Book) {
-        UserDefaults.standard.set(book.id.uuidString, forKey: bookKey)
+        guard AppDefaults.store.string(forKey: bookKey) != book.id.uuidString else { return }
+        AppDefaults.store.set(book.id.uuidString, forKey: bookKey)
+        WidgetData.setNeedsWrite(from: PlatesStore.context)
     }
 }
 
@@ -411,9 +516,14 @@ final class Sighting {
     var plateCode: String = ""
     var spottedAt: Date = Date()
 
-    /// At most one of these is set: a sighting is filed under the trip or the book
-    /// it was logged against. Both nil is legal too — an orphan from a deleted book
-    /// still happened, and still counts all-time.
+    /// A sighting belongs to the trip it was logged on, and may *additionally* be
+    /// shelved in one book.
+    ///
+    /// Logged fresh, exactly one of these is set — the container being played.
+    /// Both set means the sighting came from a trip that was folded into a book
+    /// afterwards: one record, two containers, so the book can show a trip's
+    /// plates without the all-time count seeing them twice. Both nil is legal too
+    /// — an orphan from a deleted book still happened, and still counts all-time.
     var trip: Trip?
     var book: Book?
     var player: Player?
@@ -481,6 +591,14 @@ extension Array where Element == Trip {
     var collectable: [Trip] { filter { !$0.isArchived && $0.isActive } }
 
     var archived: [Trip] { filter(\.isArchived) }
+
+    /// Done, but not put away — the drive that just ended, which is the one most
+    /// worth looking at. Finishing no longer archives, so these sit in their own
+    /// section rather than vanishing into the archive the moment they end.
+    var finished: [Trip] { filter { !$0.isArchived && !$0.isActive } }
+
+    /// Still taking plates. What the main list is actually about.
+    var running: [Trip] { filter { !$0.isArchived && $0.isActive } }
 
     /// Pinned trips first, most recently pinned leading; everything else keeps the
     /// newest-first order the queries already come in.
