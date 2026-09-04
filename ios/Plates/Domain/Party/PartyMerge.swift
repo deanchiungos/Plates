@@ -90,9 +90,7 @@ enum PartyMerge {
                              spottedAt: sighting.spottedAt,
                              tripID: tripID,
                              playerID: sighting.player?.id,
-                             rarityWhenSpotted: sighting.rarityWhenSpotted,
-                             spottedLat: sighting.spottedLat,
-                             spottedLon: sighting.spottedLon)
+                             rarityWhenSpotted: sighting.rarityWhenSpotted)
     }
 
     // MARK: - Applying what we hear
@@ -389,14 +387,20 @@ enum PartyMerge {
                 player = table[playerID]
             }
 
+            // The same door the shared-book merge closes. A blocked peer can still
+            // reach this phone over the local network — Multipeer has no notion of
+            // a block list — so the refusal has to happen where their events land.
+            if player?.blockedAt != nil {
+                seen.insert(event.id)
+                continue
+            }
+
             let sighting = Sighting(plateCode: event.plateCode,
                                     trip: trip,
                                     player: player,
                                     spottedAt: event.spottedAt)
             sighting.id = event.id
             sighting.rarityWhenSpotted = event.rarityWhenSpotted
-            sighting.spottedLat = event.spottedLat
-            sighting.spottedLon = event.spottedLon
             context.insert(sighting)
 
             seen.insert(event.id)

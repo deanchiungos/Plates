@@ -39,6 +39,8 @@ struct PartyScreen: View {
     /// apart. The party is the one place a name genuinely matters to somebody other
     /// than its owner, so it is the place worth insisting.
     @State private var pendingEntry: Entry?
+    /// Whoever's row was tapped in the roster. See `PersonSheet`.
+    @State private var person: Player?
 
     private enum Entry: String, Identifiable {
         case host, join
@@ -68,6 +70,7 @@ struct PartyScreen: View {
             }
         }
         .navigationTitle("Party")
+        .sheet(item: $person) { PersonSheet(player: $0) }
         .onAppear { tour.offer(.party, stops: tourStops) }
         .onDisappear { tour.left(.party) }
         // A party starting pulls every stop out from under a tour that is mid-walk:
@@ -584,6 +587,12 @@ struct PartyScreen: View {
         return player.name
     }
 
+    /// The stored player behind a peer, once the handshake has named them.
+    private func person(for member: PartySession.Member) -> Player? {
+        guard let id = member.playerID else { return nil }
+        return players.first { $0.id == id }
+    }
+
     private func memberCard(_ party: PartySession, empty: LocalizedStringKey) -> some View {
         SettingsGroup("In the party") {
             if party.members.isEmpty {
@@ -600,6 +609,7 @@ struct PartyScreen: View {
                 // the last one instead. The sibling list above already does this.
                 ForEach(Array(party.members.enumerated()), id: \.element.id) { index, member in
                     if index > 0 { SettingsDivider() }
+                    let known = person(for: member)
                     HStack(spacing: 10) {
                         Image(systemName: "iphone")
                             .font(.system(size: 15))
@@ -608,8 +618,19 @@ struct PartyScreen: View {
                             .font(.plates(size: 15, weight: .semibold))
                             .foregroundStyle(Theme.ink)
                         Spacer()
+                        // Only once a peer has resolved to somebody this phone has
+                        // a record of. Until the handshake names them there is no
+                        // `Player` to block, and a control that could not act would
+                        // be worse than none.
+                        if known != nil {
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 11, weight: .semibold))
+                                .foregroundStyle(Theme.inkMuted.opacity(0.55))
+                        }
                     }
                     .padding(14)
+                    .contentShape(Rectangle())
+                    .onTapGesture { if let known { person = known } }
                 }
             }
         }

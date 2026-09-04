@@ -34,11 +34,11 @@
 		<string>_plates-party._udp</string>
 	</array>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>Plates uses the local network to find the other phones in your car, so everyone can share the plates they spot.</string>
+	<string>Tags uses the local network to find the other phones in your car, so everyone can share the plates they spot. What you spot goes straight to them and never through us.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Voice mode listens while you drive so you can call out plates instead of tapping them.</string>
+	<string>Tags listens so a passenger can call out plates instead of tapping them. It only listens while voice mode is open.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Voice mode turns what you say into plate sightings. Recognition runs on your iPhone wherever the device supports it, so your speech does not leave it.</string>
+	<string>Tags turns what you say into plate sightings. Where your iPhone can do the recognition itself it does, and your speech stays on it. Where it cannot, Apple transcribes it.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>overpass-regular.otf</string>

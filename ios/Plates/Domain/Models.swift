@@ -46,6 +46,27 @@ final class Player {
     /// TestFlight. See the warning at the top of `PlatesStore`.
     var avatar: String?
 
+    /// When this device blocked them, or nil for everybody else.
+    ///
+    /// A date rather than a flag because the report that usually accompanies a block
+    /// wants to say *when*, and because a flag would have to be `false` on every
+    /// player who has never been near a shared book — see the CloudKit note below.
+    ///
+    /// Blocking hides rather than deletes. Every sighting they contributed stays on
+    /// disk untouched; `PlateCollection.allSightings` simply stops returning them,
+    /// which takes them out of the grid, the counts, the standings, the comparison,
+    /// the poster and the widget in one move. Unblocking puts all of it back, and
+    /// that reversibility is the whole reason it works this way: a block made in
+    /// annoyance should not cost somebody their collection.
+    ///
+    /// NOTE: the second added property since the CloudKit schema was deployed.
+    /// Optional with no default, the shape CloudKit requires, and like `avatar` it
+    /// needs a production schema deploy before any build carrying it reaches
+    /// TestFlight. See the warning at the top of `PlatesStore`.
+    var blockedAt: Date?
+
+    var isBlocked: Bool { blockedAt != nil }
+
     /// Nullify, not cascade. Removing someone from the car must not un-collect
     /// the plates they spotted — the sighting happened. Their sightings survive
     /// with no owner, so the trip's count is unchanged and only the per-player

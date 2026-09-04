@@ -284,7 +284,10 @@ struct GameScreen: View {
 
     private static let tourCopy: [Tour.Stop: TourWords] = [
         .gameTarget: TourWords("This is your active Game. Tap Switch to choose a different Book or Trip to collect into."),
-        .gameVoice: TourWords("Driving, or hands full of snacks? Tap this and use your voice to collect into your active Game."),
+        // Not "Driving, or hands full of snacks?". The Terms say never while driving,
+        // and a tip that greets the driver by name is the slide a plaintiff's lawyer
+        // would open with.
+        .gameVoice: TourWords("Hands full of snacks? Tap this and use your voice to collect into your active Game."),
         .gameFilter: TourWords("Too many plates? Hide plates you've already collected, or choose which plate sets to show."),
         .gameParty: TourWords("Start a Party! Anyone in the car can join from their own phone and compete to collect plates into the same Game."),
         .gameGrid: TourWords("See a plate on the road? Tap the state to collect it into your active Game. Tap it again if you need to take it back.")

@@ -31,6 +31,9 @@ struct TrailScreen: View {
     @Query(sort: \Book.startedAt, order: .reverse) private var books: [Book]
     @Query(sort: \Sighting.spottedAt) private var allSightings: [Sighting]
 
+    /// See the note in `sightings(for:)`.
+    private var visible: [Sighting] { allSightings.filter { $0.player?.blockedAt == nil } }
+
     @AppStorage(TripSelection.key) private var currentTripID = ""
     @AppStorage(PlaySelection.bookKey) private var currentBookID = ""
     @AppStorage(PlaySelection.kindKey) private var targetKind = "trip"
@@ -335,9 +338,13 @@ struct TrailScreen: View {
 
     private var scopedSightings: [Sighting] {
         switch effectiveScope {
-        case .allTime:      return allSightings
-        case .trip(let id): return allSightings.filter { $0.trip?.id == id }
-        case .book(let id): return allSightings.filter { $0.book?.id == id }
+        // A `@Query` reaches past `PlateCollection.allSightings`, so the block is
+        // reapplied here. Mostly belt and braces: a contributor's coordinates are
+        // stripped before they ever leave their phone, so a blocked person has
+        // nothing to plot. Somebody blocked who once shared this device does.
+        case .allTime:      return visible
+        case .trip(let id): return visible.filter { $0.trip?.id == id }
+        case .book(let id): return visible.filter { $0.book?.id == id }
         }
     }
 

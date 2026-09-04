@@ -127,7 +127,20 @@ struct PlateIndex {
 
 extension PlateCollection {
 
-    var allSightings: [Sighting] { sightings ?? [] }
+    /// Everything filed under this collection, minus anyone blocked.
+    ///
+    /// The block is applied *here*, once, rather than at each of the thirty-odd
+    /// readers below and beyond. Every count, the plate grid, the standings strip,
+    /// the trip comparison, the share poster and the widget all reach their
+    /// sightings through this property, so one filter takes a blocked contributor
+    /// out of every one of them and cannot be forgotten at a new call site.
+    ///
+    /// A filter and not a delete. Their rows are still on disk with their plates
+    /// and their timestamps intact, which is what makes unblocking a single write
+    /// instead of an apology. See `Player.blockedAt`.
+    var allSightings: [Sighting] {
+        (sightings ?? []).filter { $0.player?.blockedAt == nil }
+    }
 
     /// See `PlateIndex`. Build once per grid, not once per tile.
     func plateIndex() -> PlateIndex { PlateIndex(allSightings) }

@@ -73,6 +73,7 @@ struct RootView: View {
     #endif
 
     @State private var welcoming = false
+    @State private var consenting = false
     @State private var namingAfterWelcome = false
     /// Whether the card was dismissed with Skip, read once by `afterWelcome`.
     @State private var skipped = false
@@ -95,6 +96,18 @@ struct RootView: View {
         #endif
         guard !Coach.seen(.welcome), !DevicePlayer.hasProfile else { return false }
         return ((try? PlatesStore.context.fetchCount(FetchDescriptor<Player>())) ?? 0) == 0
+    }
+
+    /// The second thing this decides at launch, and it goes first: nothing else is
+    /// shown until the current Terms have been agreed to. Existing users see it too
+    /// on the first launch that carries a new edition, which is the point.
+    private var shouldConsent: Bool { !Consent.isCurrent }
+
+    /// The welcome card waits behind the gate, for the same reason the name sheet
+    /// waits behind the welcome card: one cover cannot present another while it is
+    /// still going away, so the next beat hangs off `onDismiss`.
+    private func afterConsent() {
+        if shouldWelcome { welcoming = true }
     }
 
     private func closeWelcome(skipping: Bool) {
@@ -146,6 +159,9 @@ struct RootView: View {
         // before reading the one sentence it exists to show is not a welcome, and a
         // sheet leaves the tab bar visible underneath, which gives away the whole
         // shape of the app before anybody has been told what it is for.
+        .fullScreenCover(isPresented: $consenting, onDismiss: afterConsent) {
+            ConsentGate(onAgree: { consenting = false })
+        }
         .fullScreenCover(isPresented: $welcoming, onDismiss: afterWelcome) {
             WelcomeCard(onPlay: { closeWelcome(skipping: false) },
                         onSkip: { closeWelcome(skipping: true) })
@@ -153,7 +169,9 @@ struct RootView: View {
         .sheet(isPresented: $namingAfterWelcome) {
             IdentityPrompt(saveLabel: "Continue")
         }
-        .onAppear { if shouldWelcome { welcoming = true } }
+        .onAppear {
+            if shouldConsent { consenting = true } else if shouldWelcome { welcoming = true }
+        }
         // No tour underneath the welcome card, or the name sheet that follows it. The
         // card is the app introducing itself and the sheet is it asking who you are;
         // the tour is the app showing you around. In that order, or they talk over
@@ -161,7 +179,7 @@ struct RootView: View {
         //
         // The tour is deferred rather than dropped, and picks itself up the moment
         // this goes false. See `TourGuide.deferred`.
-        .onChange(of: welcoming || namingAfterWelcome, initial: true) { _, busy in
+        .onChange(of: consenting || welcoming || namingAfterWelcome, initial: true) { _, busy in
             tour.isSuspended = busy
         }
         // "Replay the tour", from Settings. Watched rather than called, because the

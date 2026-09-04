@@ -247,10 +247,7 @@
     "×%lld" : {
 
     },
-    "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Starting one never touches the books you already have." : {
-
-    },
-    "A book never ends. This says which one you are looking at, and Switch moves between your books and every plate you have ever logged." : {
+    "A book keeps going. There is no route and no finish line; you just add plates to it, on a road trip or on the way to work. Name it for a place, a challenge, a theme, or however you want to play: East Coast, Summer Challenge, Coastal Plates. Starting one never touches the books you already have." : {
 
     },
     "A nudge if a trip goes a day without a plate." : {
@@ -284,9 +281,6 @@
 
     },
     "A trip is one journey: it has a route, and it ends. For everyday spotting on the way to school or the shops, use a plate book instead: it just keeps going." : {
-
-    },
-    "A trip is one journey: it has a route, and it ends. The route is what decides how rare each plate is, so a Florida plate is worth more in Oregon." : {
 
     },
     "ABCD" : {
@@ -323,6 +317,9 @@
     "Add where you are going, and this trip will show how far you have left." : {
 
     },
+    "Add your starting point and destination to set your route. Tags uses your route to determine how rare each plate is along the way." : {
+
+    },
     "Adding a trip to a book" : {
 
     },
@@ -342,9 +339,6 @@
 
     },
     "Allow while using the app" : {
-
-    },
-    "And that is the game. See one on the road, tap its plate. The rarer it is where you're heading, the more it is worth." : {
 
     },
     "App" : {
@@ -401,6 +395,9 @@
     "BOOKS" : {
 
     },
+    "Books are plate collections" : {
+
+    },
     "Canada" : {
 
     },
@@ -420,6 +417,9 @@
 
     },
     "Choose which plates to show." : {
+
+    },
+    "Choose your Trip" : {
 
     },
     "Classic scoring" : {
@@ -465,10 +465,16 @@
     "COMMON" : {
 
     },
+    "Common to rare" : {
+
+    },
     "Compare trips" : {
 
     },
     "COMPLETE" : {
+
+    },
+    "Completed Trips stay here so you can revisit where you went and what you found. You can also add the plates you collected to a Book." : {
 
     },
     "Connecting to %@'s party…" : {
@@ -500,6 +506,15 @@
       }
     },
     "Counted ^[%lld time](inflect: true). Removing takes back the most recent sighting and the points it scored." : {
+
+    },
+    "Create a Book for the plates you want to collect over time: by location, challenge, theme, or however you want to play. Collect plates into your Book from the Game tab." : {
+
+    },
+    "Create a Trip for your drive from Point A to Point B and collect plates along the way in the Game tab. Unlike Books, Trips have a beginning and an end." : {
+
+    },
+    "Create your Trip" : {
 
     },
     "Currently playing" : {
@@ -547,7 +562,7 @@
     "Done with %@?" : {
 
     },
-    "Driving, or hands full of snacks? Tap this and just say the states out loud as you see them." : {
+    "Driving, or hands full of snacks? Tap this and use your voice to collect into your active Game." : {
 
     },
     "Each tab walks you round itself the first time you open it, and the smaller tips show up once each when the thing they are about is in front of you. This brings all of it back, along with the opening card. Nothing you have collected is affected." : {
@@ -586,10 +601,10 @@
     "EPIC" : {
 
     },
-    "EVERY %@ DESIGN" : {
+    "Epic plates are hard to find. Legendary and Mythic are even rarer, and worth shouting about when you spot one." : {
 
     },
-    "Every drive you have going. Tap one to play it, or swipe it left to pin it or mark it done." : {
+    "EVERY %@ DESIGN" : {
 
     },
     "EVERY PLATE EVER" : {
@@ -607,6 +622,9 @@
     "Every plate so far" : {
 
     },
+    "Every plate you collect becomes part of your Book. Tap a plate to see when and where you found it." : {
+
+    },
     "Every sighting scores, so keep counting." : {
 
     },
@@ -619,12 +637,6 @@
     "Everyone else taps here, picks the party they can see, and types that code in." : {
 
     },
-    "Everyone in the car keeps their own phone. Start a Party and every plate anybody spots lands in the same score." : {
-
-    },
-    "Everyone in the car keeps their own phone. Start a Party here and your plates pool into one score." : {
-
-    },
     "Everyone keeps their own copy. Finishing yours files it with your other trips, with everything anybody spotted still on it." : {
 
     },
@@ -632,6 +644,12 @@
 
     },
     "Expanded" : {
+
+    },
+    "Explore your map two ways" : {
+
+    },
+    "Explore your Trail" : {
 
     },
     "FACE" : {
@@ -688,9 +706,6 @@
     "Finished trip" : {
 
     },
-    "Finished trips file themselves down here. Open one for its story, or to add everything it collected into a book." : {
-
-    },
     "Finished trips file themselves here. Open one for its story, or to add its plates to a book." : {
 
     },
@@ -709,6 +724,9 @@
     "Found" : {
 
     },
+    "Found shows the plates you have collected. Rarity shows which plates are easiest or hardest to spot from your location." : {
+
+    },
     "Game" : {
 
     },
@@ -722,9 +740,6 @@
 
     },
     "Hide plates you have already found" : {
-
-    },
-    "Hide the ones you have already found, or turn whole sets off. Canada and the bonus plates live in here." : {
 
     },
     "Hide the other %lld designs" : {
@@ -743,6 +758,9 @@
 
     },
     "How to play" : {
+
+    },
+    "How to play is always here anytime you need a quick reminder." : {
 
     },
     "I could not check that." : {
@@ -908,6 +926,9 @@
     "Nearby" : {
 
     },
+    "Need a refresher?" : {
+
+    },
     "New book" : {
 
     },
@@ -1066,6 +1087,9 @@
 
     },
     "Party" : {
+
+    },
+    "Party is here too" : {
 
     },
     "Paused" : {
@@ -1282,10 +1306,16 @@
     "Search plates by state or code" : {
 
     },
+    "See a plate on the road? Tap the state to collect it into your active Game. Tap it again if you need to take it back." : {
+
+    },
     "See a plate out the window, then tap it on the Game tab. The tile flips over to that state's real artwork, and it is yours for the rest of the trip." : {
 
     },
     "See one of these on the road? Tap it." : {
+
+    },
+    "See where you were when you collected each plate and look back on where the game has taken you." : {
 
     },
     "SETS" : {
@@ -1328,6 +1358,9 @@
 
     },
     "Show fewer" : {
+
+    },
+    "Show off your collection" : {
 
     },
     "Show which drive?" : {
@@ -1388,6 +1421,9 @@
 
     },
     "Start a new book" : {
+
+    },
+    "Start a Party! Anyone in the car can join from their own phone and compete to collect plates into the same Game." : {
 
     },
     "Start a trip" : {
@@ -1473,10 +1509,13 @@
     "Tap a plate on the Game tab to collect it." : {
 
     },
+    "Tap a Trip to make it your active Game and collect plates in the Game tab. Swipe left to Pin it or tap Done when your drive is over." : {
+
+    },
     "Tap a trip to play it." : {
 
     },
-    "Tap any state or province to see its plate, how rare it is from where you are, and a fact or two about it." : {
+    "Tap any state or province to see its plate, how rare it is where you are, and a few fun facts about it." : {
 
     },
     "Tap the waveform button at the top of the Game tab to start voice mode, then just say the states as you see them. It keeps listening, so a whole stretch of driving can go by without anyone picking up the phone. Say “stop” when you are done." : {
@@ -1494,9 +1533,6 @@
     "That invitation did not name a book." : {
 
     },
-    "That is the whole app. Everything you have just been shown lives in here, any time you want it again." : {
-
-    },
     "That one is not yours to take back." : {
 
     },
@@ -1507,9 +1543,6 @@
 
     },
     "The ^[%lld sighting](inflect: true) this trip added leave the book. Plates the book collected on its own stay, and the trip itself is untouched." : {
-
-    },
-    "The album itself. Every slot you have filled keeps the date you filled it, so tapping one tells you where you were." : {
 
     },
     "The book is removed, but its ^[%lld plate](inflect: true) stay in your all-time count. You did see them. Empty it first if you want them gone." : {
@@ -1548,9 +1581,6 @@
     "The Trail is a map of where you actually were. This says which drive it is showing, and it switches to any other, or to everything ever." : {
 
     },
-    "The Trail is the map of where you actually were when you spotted each plate." : {
-
-    },
     "The Trail shows where you were when you collected them, so it needs your location. The Game tab offers to turn that on the first time it would help." : {
 
     },
@@ -1578,10 +1608,10 @@
     "This is one drive. Tap here to see another, or everything ever." : {
 
     },
-    "This is the key. Legendary and mythic are the ones worth shouting about when you see them." : {
+    "This is your active Game. Tap Switch to choose a different Book or Trip to collect into." : {
 
     },
-    "This is what you are filling right now. Tap it to switch between a trip and a book, or to start another one." : {
+    "This is your rarity scale" : {
 
     },
     "This phone found somebody in your iCloud. Tap them to play as them." : {
@@ -1591,6 +1621,9 @@
 
     },
     "This trip is done and filed away. Reopen it below to make changes or collect more plates." : {
+
+    },
+    "Too many plates? Hide plates you've already collected, or choose which plate sets to show." : {
 
     },
     "Trail" : {
@@ -1606,6 +1639,9 @@
 
     },
     "Trips and books" : {
+
+    },
+    "Trips are point-to-point collections" : {
 
     },
     "Trouble" : {
@@ -1629,10 +1665,7 @@
     "Turn on location and every plate you spot drops a pin here. Ones you collected before then have no pin to show." : {
 
     },
-    "Turns whatever is on screen into a poster you can send to anyone." : {
-
-    },
-    "Two ways to read the map. Found shows what you have collected. Rarity colors every state by how hard it is to spot from here." : {
+    "Turn your Book into a collection card you can save or share with friends." : {
 
     },
     "Type whatever you remember about it. Any of these work:" : {
@@ -1726,6 +1759,9 @@
     "You are sharing this book. Anything they add appears here, and anything you add appears for them." : {
 
     },
+    "You can also start a Party here whenever you want to play with others. Everyone keeps their own phone, and what you all spot pools into one game." : {
+
+    },
     "You can also start it without touching anything. Say “Hey Siri, start voice mode in Tags”, or just “Hey Siri, Tags voice mode”." : {
 
     },
@@ -1764,6 +1800,9 @@
         }
       }
     },
+    "Your Book collection, at a glance" : {
+
+    },
     "Your car appears on the route as soon as we find you." : {
 
     },
@@ -1781,6 +1820,9 @@
       }
     },
     "Your collection" : {
+
+    },
+    "Your finished Trips" : {
 
     },
     "Your iCloud storage is full, so nothing new can be copied over." : {

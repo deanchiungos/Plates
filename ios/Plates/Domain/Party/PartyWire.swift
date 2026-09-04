@@ -110,8 +110,11 @@ struct SightingEvent: Codable, Identifiable, Equatable {
     /// peer recomputing it from *their* fix would bank a different number for the
     /// same find and the two phones would disagree about the score.
     var rarityWhenSpotted: Int?
-    var spottedLat: Double?
-    var spottedLon: Double?
+
+    // No coordinates. Rarity has to travel because both phones must agree on the
+    // score; *where the other person was standing* does not, and everyone in the
+    // car is in the same place anyway. Each phone draws its own Trail from its own
+    // fixes. See `Sighting.spottedLat`.
 }
 
 /// Sightings withdrawn, and which trip they belonged to.

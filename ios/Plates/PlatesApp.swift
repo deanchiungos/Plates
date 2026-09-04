@@ -80,6 +80,7 @@ struct PlatesApp: App {
         // watching. Both flags still run before any screen can ask.
         Coach.applyLaunchArguments()
         Tour.applyLaunchArguments()
+        Consent.applyLaunchArguments()
         #endif
         Coach.beginSession()
         // The two launch rebuilds used to run here, synchronously, before the first
@@ -102,6 +103,10 @@ struct PlatesApp: App {
         if LaunchFlags.isSet("-remindersTest") {
             Task { @MainActor in await TripReminders.shared.test(in: PlatesStore.context) }
         }
+        // `-legalHTML` writes the Privacy Policy and the Terms out as web pages,
+        // generated from the same arrays the app renders, so the website and the
+        // app cannot drift apart. See `LegalExport`.
+        if LegalExport.isRequested { print(LegalExport.run()) }
         if LaunchFlags.isSet("-poster") {
             Task { @MainActor in print(await ShareablePoster.exportForInspection()) }
         }

@@ -28,6 +28,8 @@ struct SettingsScreen: View {
     /// Permission can be withdrawn in Settings long after it was granted here, so
     /// the row asks the system rather than trusting its own switch.
     @State private var remindersBlocked = false
+    /// Whoever's row was tapped in "Other people". See `PersonSheet`.
+    @State private var person: Player?
 
     var body: some View {
         ZStack {
@@ -57,6 +59,7 @@ struct SettingsScreen: View {
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(item: $person) { PersonSheet(player: $0) }
         .onAppear { tour.offer(.settings, stops: Tour.stops(of: .settings)) }
         .onDisappear { tour.left(.settings) }
         .sheet(isPresented: $editingMe) {
@@ -152,18 +155,35 @@ struct SettingsScreen: View {
                 ForEach(Array(others.enumerated()), id: \.element.id) { index, player in
                     if index > 0 { SettingsDivider() }
                     HStack(spacing: 12) {
-                        PlayerDot(player, size: 26)
+                        // Two targets in one row, which is what the two actions
+                        // deserve. Remove is a decision about this list; report and
+                        // block are decisions about a person, and those live behind
+                        // the name because that is what somebody taps when the name
+                        // is the thing bothering them.
+                        Button { person = player } label: {
+                            HStack(spacing: 12) {
+                                PlayerDot(player, size: 26)
 
-                        VStack(alignment: .leading, spacing: 1) {
-                            Text(player.name)
-                                .font(.plates(size: 15, weight: .semibold))
-                                .foregroundStyle(Theme.ink)
-                            Text(plateCount(player))
-                                .font(.plates(size: 12))
-                                .foregroundStyle(Theme.inkMuted)
+                                VStack(alignment: .leading, spacing: 1) {
+                                    Text(player.name)
+                                        .font(.plates(size: 15, weight: .semibold))
+                                        .foregroundStyle(Theme.ink)
+                                    Text(player.isBlocked
+                                         ? String(localized: "Blocked")
+                                         : plateCount(player))
+                                        .font(.plates(size: 12))
+                                        .foregroundStyle(player.isBlocked ? .red : Theme.inkMuted)
+                                }
+
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 11, weight: .semibold))
+                                    .foregroundStyle(Theme.inkMuted.opacity(0.55))
+
+                                Spacer(minLength: 8)
+                            }
+                            .contentShape(Rectangle())
                         }
-
-                        Spacer(minLength: 8)
+                        .buttonStyle(.plain)
 
                         Button { confirmRemoval(of: player) } label: {
                             Text("Remove")

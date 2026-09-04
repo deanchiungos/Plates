@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Tags does not track. There is no advertising identifier, no attribution
+	     SDK, and no third-party package of any kind linked into the app. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+
+	<!-- Nothing is collected in Apple's sense of the word. The app has no server
+	     and no analytics: the only network traffic is Apple's own, and it carries
+	     the player's data to the player's own iCloud, or to people they have
+	     personally invited into a book or a party. -->
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+
+	<!-- The one required-reason API in the app. Every @AppStorage, plus the
+	     coach marks, the tour ledger and the fact rotation, read and write
+	     UserDefaults for this app alone and never share it with another. -->
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

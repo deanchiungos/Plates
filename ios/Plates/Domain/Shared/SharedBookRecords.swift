@@ -43,8 +43,12 @@ enum SharedBookRecords {
         static let playerColor = "playerColor"
         static let playerAvatar = "playerAvatar"
         static let rarity = "rarity"
-        static let lat = "lat"
-        static let lon = "lon"
+
+        // No `lat` / `lon`. Where you were standing when you found a plate is the
+        // one thing in a sighting that is about *you* rather than about the plate,
+        // and a book shared with five people would have handed all five a map of
+        // your week. The Trail still draws every pin — it reads them straight out
+        // of the local store, which is where they now stay. See `Sighting`.
     }
 
     // MARK: - Going out
@@ -88,9 +92,6 @@ enum SharedBookRecords {
         record[Field.playerColor] = sighting.player.map { $0.colorIndex as CKRecordValue }
         record[Field.playerAvatar] = sighting.player?.avatar as CKRecordValue?
         record[Field.rarity] = sighting.rarityWhenSpotted.map { $0 as CKRecordValue }
-        record[Field.lat] = sighting.spottedLat.map { $0 as CKRecordValue }
-        record[Field.lon] = sighting.spottedLon.map { $0 as CKRecordValue }
-
         // The parent reference is what makes one `CKShare` on the book cover every
         // plate in it. Without it each sighting would be an unshared island and the
         // invitation would hand over an empty book.
@@ -133,9 +134,10 @@ enum SharedBookRecords {
             playerName: record[Field.playerName] as? String,
             playerColorIndex: record[Field.playerColor] as? Int,
             playerAvatar: record[Field.playerAvatar] as? String,
-            rarityWhenSpotted: record[Field.rarity] as? Int,
-            spottedLat: record[Field.lat] as? Double,
-            spottedLon: record[Field.lon] as? Double)
+            // Deliberately not read, even when present: a book shared from an
+            // older build still carries `lat` / `lon`, and honouring them would
+            // quietly reintroduce exactly what this stopped sending.
+            rarityWhenSpotted: record[Field.rarity] as? Int)
     }
 }
 
@@ -158,6 +160,4 @@ struct SharedSighting: Equatable {
     /// filling one book from different cities each record what the plate was worth
     /// to them, and neither device recomputes the other's.
     var rarityWhenSpotted: Int?
-    var spottedLat: Double?
-    var spottedLon: Double?
 }

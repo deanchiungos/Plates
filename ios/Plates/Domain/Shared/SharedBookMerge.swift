@@ -127,16 +127,27 @@ enum SharedBookMerge {
                     ?? self.book(event.bookID, in: context).map({ books[event.bookID] = $0; return $0 })
             else { continue }
 
+            let who = contributor(event, into: context,
+                                  known: &players, mine: mine, outcome: &outcome)
+
+            // Blocked contributors are turned away at the door as well as hidden at
+            // the reader. `allSightings` would keep their plates off the screen
+            // either way, but a book left open for a year would still be quietly
+            // accumulating rows from somebody this phone has said it wants nothing
+            // from, and "hidden" is not the same promise as "not stored".
+            if who?.blockedAt != nil {
+                known.insert(event.id)
+                continue
+            }
+
             let sighting = Sighting(plateCode: event.plateCode,
                                     in: book,
-                                    player: contributor(event, into: context,
-                                                        known: &players, mine: mine,
-                                                        outcome: &outcome),
+                                    player: who,
                                     spottedAt: event.spottedAt)
             sighting.id = event.id
             sighting.rarityWhenSpotted = event.rarityWhenSpotted
-            sighting.spottedLat = event.spottedLat
-            sighting.spottedLon = event.spottedLon
+            // No coordinates. A contributor's Trail is theirs; what arrives here is
+            // which plate they found and what it was worth to them.
             context.insert(sighting)
 
             known.insert(event.id)

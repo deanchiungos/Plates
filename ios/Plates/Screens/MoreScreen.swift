@@ -58,6 +58,32 @@ struct MoreScreen: View {
                         }
                         .tourStop(.moreHowTo)
 
+                        // Their own group rather than two more rows under App.
+                        // Apple requires both to be reachable, and a reader
+                        // scanning for them is scanning for the word every other
+                        // app puts them under; buried under "App" between Settings
+                        // and the wordmark they read as two more features.
+                        MoreSection(String(localized: "Legal")) {
+                            MoreRow(title: "Privacy Policy") { PrivacyPolicyScreen() }
+
+                            MoreDivider()
+
+                            MoreRow(title: "Terms and Conditions") { TermsScreen() }
+                        }
+
+                        // The agreement, on the record. The date is for the person;
+                        // the version and fingerprint are for anybody who later needs
+                        // to know which exact words were agreed to.
+                        if let at = Consent.acceptedAt {
+                            Text("Agreed \(at.formatted(date: .long, time: .shortened)). Version \(Legal.version), fingerprint \(Legal.shortFingerprint).")
+                                .font(.plates(size: 11.5))
+                                .foregroundStyle(Theme.inkMuted.opacity(0.85))
+                                .fixedSize(horizontal: false, vertical: true)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.horizontal, 3)
+                                .padding(.top, -10)
+                        }
+
                         footer
                     }
                     .padding(Theme.screenPadding)

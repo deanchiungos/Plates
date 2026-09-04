@@ -120,7 +120,10 @@ struct WidgetData: Codable, Equatable {
         #endif
         let trips = (try? context.fetch(FetchDescriptor<Trip>())) ?? []
         let books = (try? context.fetch(FetchDescriptor<Book>())) ?? []
-        let sightings = (try? context.fetch(FetchDescriptor<Sighting>())) ?? []
+        // Fetched flat rather than through a collection, so the block that
+        // `PlateCollection.allSightings` applies has to be applied by hand here.
+        let sightings = ((try? context.fetch(FetchDescriptor<Sighting>())) ?? [])
+            .filter { $0.player?.blockedAt == nil }
         let lifetime = PlateBook(sightings: sightings)
 
         let target = PlaySelection.current(trips: trips, books: books)

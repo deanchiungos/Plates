@@ -169,6 +169,15 @@ struct VoiceModeScreen: View {
                 .padding(.horizontal, 34)
                 .frame(minHeight: 34, alignment: .top)
 
+            // On the screen itself, every time, and not only in a document. The
+            // Terms say never while driving; a warning at the point of use is the
+            // one a court treats as given, and this is the feature most tempting
+            // to a driver.
+            Label("For passengers. The driver keeps their eyes on the road.", systemImage: "car.fill")
+                .font(.plates(size: 12, weight: .semibold))
+                .foregroundStyle(Theme.inkMuted)
+                .padding(.top, 2)
+
             if case .denied(let why) = voice.status {
                 Button("Open Settings") {
                     if let url = URL(string: UIApplication.openSettingsURLString) {

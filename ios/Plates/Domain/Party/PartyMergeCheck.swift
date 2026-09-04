@@ -216,7 +216,7 @@ enum PartyMergeCheck {
         let awkward = Date(timeIntervalSinceReferenceDate: 774_312_345.678_912_3)
         let event = SightingEvent(id: UUID(), plateCode: "OH", spottedAt: awkward,
                                   tripID: UUID(), playerID: nil,
-                                  rarityWhenSpotted: 4, spottedLat: nil, spottedLon: nil)
+                                  rarityWhenSpotted: 4)
 
         let data = try PartyEnvelope(.sighting(event)).encoded()
         guard let decoded = try PartyEnvelope.decoded(from: data),
@@ -694,8 +694,11 @@ enum PartyMergeCheck {
         check("banked rarity travelled", copy.claimedRarity(of: "NY"), 5)
         check("the contributor is named", copy.plateIndex().spotter("NJ")?.name, "Aunt Deb")
         check("an unowned plate stays unowned", copy.plateIndex().spotter("DE")?.name, nil)
-        check("coordinates travelled",
-              copy.allSightings.filter { $0.spottedLat != nil }.count, 3)
+        // The point of the change, asserted from the receiving side: Aunt Deb's
+        // book arrives complete, and carries none of her map. Three sightings
+        // were sent with coordinates; none of them landed with any.
+        check("coordinates stayed on the sender's phone",
+              copy.allSightings.filter { $0.spottedLat != nil }.count, 0)
 
         // The whole batch again — every sync delivers what it already delivered.
         let second = SharedBookMerge.apply(decoded, into: theirs)
@@ -1353,13 +1356,13 @@ enum PartyMergeCheck {
         lines.append("trip route=\(trip.routeLabel ?? "—") "
                      + "origin=\(trip.originLat ?? 0),\(trip.originLon ?? 0)")
 
-        // Coordinates travel too — the Trail is drawn from them.
+        // No `loc=`. Coordinates deliberately do not travel any more, so a
+        // fingerprint that included them would fail the round trip for the one
+        // reason that is now correct — and mask every reason that is not.
         for sighting in trip.allSightings.sorted(by: { SightingOrder($0) < SightingOrder($1) }) {
             lines.append("sighting \(sighting.plateCode) at=\(sighting.spottedAt.timeIntervalSinceReferenceDate) "
                          + "by=\(sighting.player?.name ?? "—") "
-                         + "banked=\(sighting.rarityWhenSpotted.map(String.init) ?? "—") "
-                         + "loc=\(sighting.spottedLat.map { String(format: "%.4f", $0) } ?? "—"),"
-                         + "\(sighting.spottedLon.map { String(format: "%.4f", $0) } ?? "—")")
+                         + "banked=\(sighting.rarityWhenSpotted.map(String.init) ?? "—")")
         }
 
         return lines

@@ -115,8 +115,9 @@ enum ShareablePoster {
         let all = (try? PlatesStore.context.fetch(
             FetchDescriptor<Sighting>(predicate: #Predicate { codes.contains($0.plateCode) })
         )) ?? []
-        guard !all.isEmpty else { return nil }
-        let everything = PlateBook(sightings: all)
+        let visible = all.filter { $0.player?.blockedAt == nil }
+        guard !visible.isEmpty else { return nil }
+        let everything = PlateBook(sightings: visible)
         let count = seen.count { everything.entry(for: $0)?.firstIn == mine }
         guard count > 0 else { return nil }
         return (count, collection is Trip
@@ -247,7 +248,8 @@ enum ShareablePoster {
         // page. The draft is the poster now, so there is one path again.
         let made: UIImage?
         if wantsAllTime {
-            let all = (try? PlatesStore.context.fetch(FetchDescriptor<Sighting>())) ?? []
+            let all = ((try? PlatesStore.context.fetch(FetchDescriptor<Sighting>())) ?? [])
+                .filter { $0.player?.blockedAt == nil }
             made = image(allTime: PlateBook(sightings: all))
         } else {
             guard let target = PlatesStore.currentTarget() else { return "no target" }
