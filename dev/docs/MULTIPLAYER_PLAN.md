@@ -541,7 +541,7 @@ failures it exists to prevent.
 Run it with:
 
 ```bash
-xcrun simctl launch --console-pty <UDID> com.eggeppel.plates -partyMergeCheck -noCloud
+xcrun simctl launch --console-pty <UDID> com.tagsmedia.tags -partyMergeCheck -noCloud
 ```
 
 ---

@@ -14,7 +14,7 @@ import Foundation
 /// numbers rather than to nothing at all.
 struct WidgetSnapshot: Codable {
 
-    static let group = "group.com.eggeppel.plates"
+    static let group = "group.com.tagsmedia.tags"
     private static let filename = "Widget.json"
 
     var tripName: String?

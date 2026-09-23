@@ -23,7 +23,7 @@ final class SharedBookSync {
 
     static let shared = SharedBookSync()
 
-    private let container = CKContainer(identifier: "iCloud.com.eggeppel.plates")
+    private let container = CKContainer(identifier: "iCloud.com.tagsmedia.tags")
     private let ledger = SharedBookLedger.shared
 
     /// Surfaced rather than swallowed: "sharing is not working" with no reason is

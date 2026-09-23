@@ -19,7 +19,7 @@ import SwiftData
 /// app that cannot save.
 struct WidgetData: Codable, Equatable {
 
-    static let group = "group.com.eggeppel.plates"
+    static let group = "group.com.tagsmedia.tags"
     private static let filename = "Widget.json"
 
     /// Whatever is being filled — trip *or* book.

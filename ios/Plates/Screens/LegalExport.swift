@@ -13,7 +13,7 @@ import Foundation
 ///
 /// **How to run it.** `-legalHTML` on the scheme, or:
 ///
-///     xcrun simctl launch --console <device> com.eggeppel.plates -legalHTML
+///     xcrun simctl launch --console <device> com.tagsmedia.tags -legalHTML
 ///
 /// It prints the two paths it wrote. Copy those files to the web host. The page is
 /// entirely self-contained: no stylesheet, no script, no font to fetch, nothing to

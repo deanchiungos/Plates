@@ -26,7 +26,7 @@ enum PlatesStore {
         //
         // Adding a model here, or a property to one of these models, also requires
         // deploying the CloudKit schema to Production — CloudKit Console, container
-        // iCloud.com.eggeppel.plates, Development, "Deploy Schema Changes".
+        // iCloud.com.tagsmedia.tags, Development, "Deploy Schema Changes".
         //
         // Nothing here will tell you that you forgot. Xcode builds run against the
         // *development* CloudKit environment, which creates record types on demand,

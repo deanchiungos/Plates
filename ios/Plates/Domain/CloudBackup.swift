@@ -169,7 +169,7 @@ final class CloudBackup {
         guard case .waiting = state else { return }
 
         let status = try? await CKContainer(
-            identifier: "iCloud.com.eggeppel.plates").accountStatus()
+            identifier: "iCloud.com.tagsmedia.tags").accountStatus()
 
         if let status, status != .available {
             state = .noAccount

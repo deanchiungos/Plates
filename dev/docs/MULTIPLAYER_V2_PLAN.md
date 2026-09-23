@@ -543,7 +543,7 @@ and calling them done would be the least honest thing in this whole project.
 ### What has to happen next, in order
 
 1. **You: deploy the schema.** CloudKit Console → container
-   `iCloud.com.eggeppel.plates` → Development → *Deploy Schema Changes*. The
+   `iCloud.com.tagsmedia.tags` → Development → *Deploy Schema Changes*. The
    record types `SBBook` and `SBSighting` and the zone `SharedBooks` are created
    on demand in Development the first time the app writes one, so this is only
    possible *after* step 2 has run once on a real device. Read the diff before
@@ -671,7 +671,7 @@ real hardware:
 ### 2. The CloudKit production deploy — yours, and now covers two things
 
 Order matters: **run on a device first**, which creates the record types in the
-Development environment, *then* CloudKit Console → `iCloud.com.eggeppel.plates`
+Development environment, *then* CloudKit Console → `iCloud.com.tagsmedia.tags`
 → Deploy Schema Changes. Read the diff; it is permanent and additive-only.
 
 The deploy now carries **both** outstanding schema changes:

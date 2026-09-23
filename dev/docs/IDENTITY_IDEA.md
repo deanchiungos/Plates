@@ -39,7 +39,7 @@ name.
   yours.
 - Lookup is a fetch by record name, not a query. No index, no scan.
 
-Same container (`iCloud.com.eggeppel.plates`), same entitlement already shipped.
+Same container (`iCloud.com.tagsmedia.tags`), same entitlement already shipped.
 No server, no bill, on the order of 150 lines. It sits *on top of* the local
 `Player` rather than replacing it — the handle is a fourth field, and the emoji
 and colour stay exactly as they are.

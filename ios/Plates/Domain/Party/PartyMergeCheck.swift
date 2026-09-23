@@ -86,7 +86,7 @@ enum PartyMergeCheck {
         // So the whole run is pointed at a scratch suite that is thrown away at the
         // end, and each case sets what it needs on the way in rather than restoring
         // on the way out.
-        let suite = "com.eggeppel.plates.mergecheck"
+        let suite = "com.tagsmedia.tags.mergecheck"
         AppDefaults.store = UserDefaults(suiteName: suite) ?? .standard
         // And the two pieces of device state that are not preferences, so the suite
         // above does not cover them: the widget's file, and the notification queue.
