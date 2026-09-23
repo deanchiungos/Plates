@@ -253,8 +253,9 @@ extension PlateCollection {
     /// it is not describing the road out of the window, but a plate whose value
     /// silently dropped after you had already earned it would feel like being robbed.
     ///
-    /// Falls back to the live model for sightings logged before rarity was recorded,
-    /// and for every plate on a book, which has no route.
+    /// Falls back to the live model only for sightings logged before rarity was
+    /// recorded. Books bank rarity the same way trips do; a book's route is the
+    /// single point it was last filled from.
     @MainActor
     func rarity(of code: String) -> Int {
         claimedRarity(of: code) ?? PlateRarity.rarity(code, on: route)

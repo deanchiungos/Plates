@@ -59,10 +59,15 @@ enum Moderation {
     /// Refuses to block the person using the phone. Nothing in the UI offers it, but
     /// a device that blocked itself would empty its own collection, and that is too
     /// expensive a mistake to leave to the call sites.
+    ///
+    /// Resolved through the store, not read from `currentID`. That key is nil on
+    /// any install that has never adopted a profile, and `nil != anyone` is true,
+    /// so the guard was open on exactly the phones with the least idea who they
+    /// are. `DevicePlayer.resolve` answers the same question the grid does.
     @discardableResult
     @MainActor
     static func block(_ player: Player, in context: ModelContext) -> Bool {
-        guard player.id.uuidString != DevicePlayer.currentID else { return false }
+        guard player.id != DevicePlayer.current(in: context)?.id else { return false }
         guard player.blockedAt == nil else { return true }
         player.blockedAt = Date()
         try? context.save()
