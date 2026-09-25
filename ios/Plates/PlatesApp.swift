@@ -103,6 +103,14 @@ struct PlatesApp: App {
         if LaunchFlags.isSet("-remindersTest") {
             Task { @MainActor in await TripReminders.shared.test(in: PlatesStore.context) }
         }
+        // `-warmSchema` writes one of every model with every optional filled in,
+        // waits for CloudKit to acknowledge the export, then deletes them again. It
+        // exists because the development schema only ever contains fields somebody
+        // has actually written, so deploying it straight off a normal run ships a
+        // production schema with holes where the optionals are. See `SchemaWarm`.
+        if SchemaWarm.isRequested {
+            Task { @MainActor in await SchemaWarm.run(in: PlatesStore.context) }
+        }
         // `-legalHTML` writes the Privacy Policy and the Terms out as web pages,
         // generated from the same arrays the app renders, so the website and the
         // app cannot drift apart. See `LegalExport`.
