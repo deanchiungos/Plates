@@ -229,6 +229,9 @@
         }
       }
     },
+    "^[%lld plate](inflect: true) they added" : {
+
+    },
     "^[%lld plate](inflect: true) they spotted" : {
 
     },
@@ -286,6 +289,9 @@
     "ABCD" : {
 
     },
+    "About %@" : {
+
+    },
     "Add" : {
 
     },
@@ -322,6 +328,22 @@
     },
     "Adding a trip to a book" : {
 
+    },
+    "Address copied" : {
+
+    },
+    "Agree and continue" : {
+
+    },
+    "Agreed %@. Version %@, fingerprint %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Agreed %1$@. Version %2$@, fingerprint %3$@."
+          }
+        }
+      }
     },
     "All ^[%lld sighting](inflect: true) carry over. Plates the book already has count again." : {
 
@@ -368,6 +390,9 @@
     "Backup problem" : {
 
     },
+    "Before you play" : {
+
+    },
     "Best find" : {
 
     },
@@ -375,6 +400,21 @@
 
     },
     "BEYOND THE 50" : {
+
+    },
+    "Block" : {
+
+    },
+    "Block %@?" : {
+
+    },
+    "Blocked" : {
+
+    },
+    "Blocking" : {
+
+    },
+    "Blocking hides everything they have added and refuses anything new. Nothing is deleted and you can undo it here." : {
 
     },
     "Bonus" : {
@@ -396,6 +436,9 @@
 
     },
     "Books are plate collections" : {
+
+    },
+    "By tapping Agree and continue, you agree to the Terms and Conditions and acknowledge the Privacy Policy. If you do not agree, do not use TAGS." : {
 
     },
     "Canada" : {
@@ -486,6 +529,9 @@
     "Continue" : {
 
     },
+    "Copy our address" : {
+
+    },
     "Copying now…" : {
 
     },
@@ -562,9 +608,6 @@
     "Done with %@?" : {
 
     },
-    "Driving, or hands full of snacks? Tap this and use your voice to collect into your active Game." : {
-
-    },
     "Each tab walks you round itself the first time you open it, and the smaller tips show up once each when the thing they are about is in front of you. This brings all of it back, along with the opening card. Nothing you have collected is affected." : {
 
     },
@@ -582,6 +625,16 @@
     },
     "Edit trip" : {
 
+    },
+    "Effective %@. Version %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Effective %1$@. Version %2$@."
+          }
+        }
+      }
     },
     "Either way, the trip keeps its own plates. The book is showing them, not taking them, and you can pull them back out whenever you want." : {
 
@@ -661,6 +714,9 @@
     "Facts unlock as you spot this plate. Every sighting reveals a new one." : {
 
     },
+    "Fake or spam plates" : {
+
+    },
     "Feedback" : {
 
     },
@@ -718,6 +774,9 @@
     "Following the drive" : {
 
     },
+    "For passengers. The driver keeps their eyes on the road." : {
+
+    },
     "For the one that went past too fast. Describe it in plain words: colors, a mountain, a bird, half a slogan." : {
 
     },
@@ -736,7 +795,13 @@
     "Hands free" : {
 
     },
+    "Hands full of snacks? Tap this and use your voice to collect into your active Game." : {
+
+    },
     "Haptics" : {
+
+    },
+    "Harassment or threats" : {
 
     },
     "Hide plates you have already found" : {
@@ -845,6 +910,9 @@
     "Leave this book" : {
 
     },
+    "Legal" : {
+
+    },
     "LEGENDARY" : {
 
     },
@@ -929,6 +997,9 @@
     "Need a refresher?" : {
 
     },
+    "Never use TAGS while driving. A passenger plays, or the driver waits until parked. Voice mode is for passengers too." : {
+
+    },
     "New book" : {
 
     },
@@ -962,6 +1033,16 @@
     },
     "No connection. This will catch up later." : {
 
+    },
+    "No mail app is set up on this phone. Write to %@ and mention %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No mail app is set up on this phone. Write to %1$@ and mention %2$@."
+          }
+        }
+      }
     },
     "No photographs yet" : {
 
@@ -1050,6 +1131,9 @@
     "Off" : {
 
     },
+    "Offensive name or avatar" : {
+
+    },
     "On while the app is open" : {
 
     },
@@ -1084,6 +1168,9 @@
 
     },
     "Other people" : {
+
+    },
+    "Our terms have changed" : {
 
     },
     "Party" : {
@@ -1182,7 +1269,13 @@
     "Preparing…" : {
 
     },
+    "Pretending to be someone else" : {
+
+    },
     "Previous step" : {
+
+    },
+    "Privacy Policy" : {
 
     },
     "Protect what people find" : {
@@ -1267,6 +1360,9 @@
     "Replay the tour" : {
 
     },
+    "Report to TAGS" : {
+
+    },
     "ROAD TRIP" : {
 
     },
@@ -1316,6 +1412,9 @@
 
     },
     "See where you were when you collected each plate and look back on where the game has taken you." : {
+
+    },
+    "Send report" : {
 
     },
     "SETS" : {
@@ -1394,6 +1493,9 @@
 
     },
     "Someone tried to join with the wrong code. The code for this party is %@." : {
+
+    },
+    "Something else" : {
 
     },
     "Spot it again for the next one." : {
@@ -1527,6 +1629,9 @@
     "Tapped one by accident? In Classic and Weighted, tap it again and the app asks before it comes off. In Unlimited, press and hold it instead, because a tap there means you saw another one." : {
 
     },
+    "Terms and Conditions" : {
+
+    },
     "Territories" : {
 
     },
@@ -1575,6 +1680,9 @@
     "The Map shows which states you have collected, and it can also color them in by how rare each one is where you are." : {
 
     },
+    "The Terms include an agreement to resolve disputes by individual arbitration and a waiver of class actions, in Section 19. You can opt out within 30 days of agreeing." : {
+
+    },
     "The tour" : {
 
     },
@@ -1591,6 +1699,12 @@
 
     },
     "The widget and the lookup" : {
+
+    },
+    "Their plates are hidden from your grid, your counts and the standings, and nothing new from them is accepted." : {
+
+    },
+    "Their plates come off your grid, your counts and the standings, and nothing new from them arrives. Nothing is deleted, so unblocking puts it all back." : {
 
     },
     "These are what is worth mentioning. You do not need all of them, and you do not need the state." : {
@@ -1668,10 +1782,16 @@
     "Turn your Book into a collection card you can save or share with friends." : {
 
     },
+    "Two documents govern your use of TAGS. Read them here now, or any time later under More, then Legal." : {
+
+    },
     "Type whatever you remember about it. Any of these work:" : {
 
     },
     "Unarchive trip" : {
+
+    },
+    "Unblock" : {
 
     },
     "UNCOMMON" : {
@@ -1704,10 +1824,16 @@
     "Voice sounds robotic? Download a natural one in %@, then tap the ⤓ beside a voice marked Enhanced or Premium." : {
 
     },
+    "We have updated the Terms and Conditions and the Privacy Policy. Please read them and agree again to keep playing." : {
+
+    },
     "Weighted scoring" : {
 
     },
     "What are you filling?" : {
+
+    },
+    "What happened? (optional)" : {
 
     },
     "Where" : {
