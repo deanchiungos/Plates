@@ -1,8 +1,18 @@
 import Foundation
 import MultipeerConnectivity
+import Network
 import Observation
+import os
 import SwiftData
 import UIKit
+
+/// Every transport event a party goes through, for reading off a real phone.
+///
+/// Parties fail on real networks in ways two simulators on one Mac cannot show — a
+/// car hotspot that walls phones off from each other, a phone that drops out of a
+/// session the other one still believes in — and the only witness is the phone. In
+/// Console.app, filter on `subsystem:com.tagsmedia.tags category:party`.
+private let partyLog = Logger(subsystem: "com.tagsmedia.tags", category: "party")
 
 /// A party: the phones in one car, sharing one trip.
 ///
@@ -73,7 +83,11 @@ final class PartySession {
         /// Nil until they have said something. See `PartyEnvelope.from`.
         var playerID: UUID?
 
-        var id: String { peer.displayName }
+        /// The peer itself, not its name. A guest that drops out and comes back does
+        /// so under a new peer id with the same name (see `restartDiscovery`), and
+        /// for the moment both are in the session the two rows shared an id — so the
+        /// `ForEach` drew one of them, and not reliably the live one.
+        var id: MCPeerID { peer }
     }
     private(set) var nearby: [Nearby] = []
     private(set) var isConnected = false
@@ -102,12 +116,56 @@ final class PartySession {
     private let context: ModelContext
     private let tombstones: PartyTombstones
     private let myName: String
-    private let peerID: MCPeerID
+    /// Who this phone is to the others. Fixed for a host; a guest takes a new one
+    /// every time it has to knock again. See `restartDiscovery`.
+    private var peerID: MCPeerID
     private var session: MCSession!
     private var advertiser: MCNearbyServiceAdvertiser?
     private var browser: MCNearbyServiceBrowser?
     private var transport: PartyTransport!
     private var foregroundWatch: NSObjectProtocol?
+
+    /// Whether the host's session has ever held this phone's current `peerID`.
+    ///
+    /// From the moment the host accepts an invitation, its `MCSession` keeps a record
+    /// of that peer id, and nothing on the guest's side can clear it: if the link then
+    /// dies quietly — a locked phone, a frozen app, a radio that gave up — the host
+    /// goes on believing the guest is there until its own keepalive times out. Knock
+    /// again under the same id inside that window and the host accepts an invitation
+    /// from a peer it thinks is already connected, which fails. That was "Dean can't
+    /// get back in, and Anna's phone still shows him". Once spent, an id is never
+    /// used to knock again.
+    private var identitySpent = false
+
+    /// The host a reconnect invitation has gone to and not come back from, so a
+    /// second sighting of the same host does not tear down the attempt in flight.
+    private var rejoinPending: MCPeerID?
+
+    /// The loop that keeps trying to get back in after a drop. See `scheduleReconnect`.
+    private var reconnectWatch: Task<Void, Never>?
+    private var reconnectTries = 0
+
+    /// Seconds before each successive reconnect attempt, then the last one forever.
+    /// Quick at first, because most drops are a phone waking up from the pocket;
+    /// never so slow that a car pulling back into range waits long.
+    private static let reconnectBackoff: [Double] = [1, 2, 4, 8, 15]
+
+    /// A join the host accepted and the radio then lost, waiting for the fresh
+    /// browser to find the host again so it can knock under a new id. See
+    /// `knock(_:)`.
+    private var awaitingRediscovery = false
+
+    /// Whether this phone is joined to a Wi-Fi network, for the failure messages.
+    ///
+    /// The field report was exact: no connection on Wi-Fi, a connection on cellular.
+    /// MultipeerConnectivity prefers the Wi-Fi network when both phones are on one,
+    /// and plenty of networks — car hotspots, hotels, guest Wi-Fi — keep the phones
+    /// on them from reaching each other. Off the network the same two phones talk
+    /// directly over peer-to-peer Wi-Fi and Bluetooth, which is why cellular worked.
+    /// The transport cannot report which of those it tried, so the advice has to be
+    /// conditional on the one thing the phone can see.
+    private var onWiFi = false
+    private var pathWatch: NWPathMonitor?
 
     /// The host this guest joined, so it can find its way back.
     ///
@@ -330,6 +388,16 @@ final class PartySession {
         session = MCSession(peer: peerID, securityIdentity: nil,
                             encryptionPreference: .required)
         session.delegate = transport
+
+        let watch = NWPathMonitor(requiredInterfaceType: .wifi)
+        watch.pathUpdateHandler = { [weak self] path in
+            let joined = path.status == .satisfied
+            Task { @MainActor in self?.onWiFi = joined }
+        }
+        watch.start(queue: .global(qos: .utility))
+        pathWatch = watch
+
+        partyLog.notice("\(role == .host ? "hosting" : "browsing", privacy: .public) as \(self.myName, privacy: .public)")
     }
 
     private func startAdvertising(tripName: String) {
@@ -351,6 +419,88 @@ final class PartySession {
         finder.delegate = transport
         finder.startBrowsingForPeers()
         browser = finder
+    }
+
+    /// Whether a delegate callback came from the browser in use, rather than one
+    /// `restartDiscovery` has already thrown away. Same reason as `isCurrent(_:)` for
+    /// sessions: `invitePeer` on a peer some other browser found fails silently.
+    func isCurrent(_ candidate: MCNearbyServiceBrowser) -> Bool { candidate === browser }
+
+    /// Looks for the party again from scratch, as a peer the host has never seen.
+    ///
+    /// A new `MCPeerID`, a new session and a new browser, all three — they are bound
+    /// to each other, so none can be replaced alone. Two problems are solved at once:
+    ///
+    /// - **The host may still be holding the old id.** See `identitySpent`. A new id
+    ///   is somebody the host's session has no record of, so it cannot collide with
+    ///   the ghost of the connection that just died.
+    /// - **A browser does not repeat itself.** `foundPeer` fires once per peer, and a
+    ///   browser that has already reported the host stays silent about it for as
+    ///   long as it thinks the host never left — which, for a host that only
+    ///   blinked, is the whole time. Reconnecting was driven by that callback alone,
+    ///   so one failed attempt left the guest on "Looking for it again" for the rest
+    ///   of the drive with the party sitting two feet away. A brand new browser
+    ///   reports everything it can see, at once.
+    ///
+    /// The old browser's delegate is cut first, so nothing it was about to say lands
+    /// on the new one. `nearby` is emptied with it: the dead browser will never
+    /// report those rows lost, and the new one refills the list within a second.
+    private func restartDiscovery() {
+        guard role == .guest, !hostLinked else { return }
+        browser?.delegate = nil
+        browser?.stopBrowsingForPeers()
+        session.disconnect()
+
+        peerID = MCPeerID(displayName: myName)
+        identitySpent = false
+        rejoinPending = nil
+        session = MCSession(peer: peerID, securityIdentity: nil,
+                            encryptionPreference: .required)
+        session.delegate = transport
+        handshaking.removeAll()
+        members = []
+        isConnected = false
+        nearby = []
+        startBrowsing()
+        partyLog.notice("rediscovering under a fresh peer id")
+    }
+
+    /// Whether this guest's link to the host is up. Not `isConnected`: in a party of
+    /// three the guests also link to each other, so a guest that has lost the host
+    /// can still be "connected" — to someone who cannot relay the host's word.
+    private var hostLinked: Bool {
+        guard let hostPeer else { return false }
+        return session.connectedPeers.contains(hostPeer)
+    }
+
+    private var needsReconnect: Bool {
+        role == .guest && hasJoined && !hasEnded && !hostLinked
+    }
+
+    /// Keeps trying to get back into the party until it works or the party ends.
+    ///
+    /// Each round starts discovery over under a fresh identity and gives the knock
+    /// that follows as long as an invitation is allowed to take; a round that comes
+    /// to nothing schedules the next. A failed knock ends its round early through
+    /// `disconnected`. Nothing here depends on a callback the framework might not
+    /// send, which is the property the old single-shot `rejoin` lacked.
+    private func scheduleReconnect(immediately: Bool = false) {
+        guard needsReconnect else { return }
+        reconnectWatch?.cancel()
+        let backoff = Self.reconnectBackoff
+        let wait = immediately ? 0 : backoff[min(reconnectTries, backoff.count - 1)]
+        reconnectTries += 1
+        partyLog.notice("reconnect attempt \(self.reconnectTries) in \(wait)s, wifi=\(self.onWiFi)")
+        reconnectWatch = Task { @MainActor [weak self] in
+            try? await Task.sleep(for: .seconds(wait))
+            guard !Task.isCancelled, let self, self.needsReconnect else { return }
+            // Unless a sighting has already started one: `found` knocks the moment
+            // the host reappears, and starting over now would kill that knock.
+            if self.rejoinPending == nil { self.restartDiscovery() }
+            try? await Task.sleep(for: .seconds(Self.inviteTimeout + 2))
+            guard !Task.isCancelled, self.needsReconnect else { return }
+            self.scheduleReconnect()
+        }
     }
 
     /// Invites the host, with the typed code as the invitation's context. The host
@@ -400,7 +550,34 @@ final class PartySession {
         // it becomes a fact.
         rules = PartyLedger.shared.rules(for: party.tripID)
         attemptsLeft = Self.joinAttempts
-        invite(party)
+        knock(party)
+    }
+
+    /// Invites the host — under an identity it has never seen, rediscovering first if
+    /// the one in hand is spent.
+    ///
+    /// Retrying a join used to rebuild the session and knock again under the same
+    /// peer id. The guest's half was clean; the host's was not. An invitation the
+    /// host accepted and the radio then lost leaves that id in the host's session
+    /// until its keepalive gives up, so the second and third attempts landed on a
+    /// connection the host still believed in — and failed the same way, for a
+    /// reason nothing on the guest's side could see. "It didn't connect over
+    /// either" is what three doomed retries look like from the back seat.
+    ///
+    /// A fresh id needs a fresh browser, because `invitePeer` only works on the
+    /// browser that found the peer — so the knock waits for the new browser to
+    /// report the host, in `found`. The watchdog covers the host not turning up.
+    private func knock(_ target: Nearby) {
+        guard identitySpent else { return invite(target) }
+        awaitingRediscovery = true
+        restartDiscovery()
+        joinWatch?.cancel()
+        joinWatch = Task { @MainActor [weak self] in
+            try? await Task.sleep(for: .seconds(Self.inviteTimeout + 1))
+            guard !Task.isCancelled, let self, self.awaitingRediscovery else { return }
+            self.awaitingRediscovery = false
+            self.joinFailed(.silence)
+        }
     }
 
     /// Sends the invitation, on a session that has never failed.
@@ -417,6 +594,7 @@ final class PartySession {
               let payload = code.data(using: .utf8) else { return }
         rebuildSession()
         invitedAt = Date()
+        partyLog.notice("inviting \(target.hostName, privacy: .public), \(self.attemptsLeft) attempt(s) left, wifi=\(self.onWiFi)")
         browser.invitePeer(target.peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)
 
@@ -441,13 +619,17 @@ final class PartySession {
     func isCurrent(_ candidate: MCSession) -> Bool { candidate === session }
 
     private func rebuildSession() {
-        guard role == .guest, !isConnected else { return }
+        guard role == .guest, !hostLinked else { return }
         session.disconnect()
         session = MCSession(peer: peerID, securityIdentity: nil,
                             encryptionPreference: .required)
         session.delegate = transport
         handshaking.removeAll()
         members = []
+        // The discarded session's goodbyes are filtered out as stale, so nothing
+        // else will clear this — and a guest that still had a link to another guest
+        // when it lost the host would go on reading as connected to nobody.
+        isConnected = false
     }
 
     /// The host never let us in, and *why* is the whole of what the guest needs.
@@ -491,13 +673,21 @@ final class PartySession {
             nearby.append(target)
         }
 
+        partyLog.error("join failed: \(String(describing: why), privacy: .public), wifi=\(self.onWiFi)")
         switch why {
         case .refused:
             trouble = String(localized: "\(target.hostName)'s phone turned you away, which almost always means the four characters did not match. Check the code showing on it and tap \(target.tripName) again.")
+        case .silence where onWiFi:
+            trouble = String(localized: "No answer from \(target.hostName)'s phone. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap \(target.tripName) again.")
         case .silence:
             trouble = String(localized: "No answer from \(target.hostName)'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap \(target.tripName) again.")
         case .vanished:
             trouble = String(localized: "\(target.hostName)'s phone stopped advertising \(target.tripName). If the party is still running, wait a moment and tap it again.")
+        case .dropped where onWiFi:
+            // The reported failure exactly: no connection on Wi-Fi, a connection on
+            // cellular. Off the network the phones talk to each other directly, so
+            // the network is the first thing to take out of the way. See `onWiFi`.
+            trouble = String(localized: "Your code was right and \(target.hostName)'s phone accepted it, but the connection would not hold. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap \(target.tripName) again.")
         case .dropped:
             // Names the thing that actually causes this once retrying has failed.
             // Local Network is the one setting that lets two phones see each other
@@ -513,6 +703,7 @@ final class PartySession {
         joinWatch = nil
         joining = nil
         invitedAt = nil
+        awaitingRediscovery = false
     }
 
     /// Back again after a drop.
@@ -522,11 +713,16 @@ final class PartySession {
     /// would be the app blaming them for its own transport. The code is still held
     /// from the first join, so the host's check is satisfied exactly as before.
     private func rejoin(_ peer: MCPeerID) {
-        guard role == .guest, hasJoined, !hasEnded, !isConnected,
+        guard needsReconnect, rejoinPending == nil,
               let browser, let payload = code.data(using: .utf8) else { return }
+        // Never under an id the host has already held. See `identitySpent`. The new
+        // browser reports the host again, and that sighting comes back through here.
+        if identitySpent { return restartDiscovery() }
         // Same reason as `invite`: the session we just dropped out of is the one
         // least likely to let us back in.
         rebuildSession()
+        rejoinPending = peer
+        partyLog.notice("rejoining \(peer.displayName, privacy: .public), wifi=\(self.onWiFi)")
         browser.invitePeer(peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)
     }
@@ -543,12 +739,20 @@ final class PartySession {
     /// where something was logged while this phone was asleep.
     private func wakeUp() {
         guard !hasEnded else { return }
+        partyLog.notice("woke up, \(self.session.connectedPeers.count) peer(s) still attached")
 
         if let advertiser {
             advertiser.stopAdvertisingPeer()
             advertiser.startAdvertisingPeer()
         }
-        if let browser {
+        // A guest that lost the host while asleep goes straight back to knocking,
+        // fresh identity and all, rather than restarting a browser that may have
+        // nothing new to say. Counted from zero: waking is a new start, not the
+        // tenth failure in a row.
+        if needsReconnect {
+            reconnectTries = 0
+            scheduleReconnect(immediately: true)
+        } else if let browser {
             browser.stopBrowsingForPeers()
             browser.startBrowsingForPeers()
         }
@@ -579,6 +783,11 @@ final class PartySession {
         // Before the radios go, or a watchdog left running reports a failed join
         // against a party the user has already walked away from.
         settleJoin()
+        awaitingRediscovery = false
+        reconnectWatch?.cancel()
+        reconnectWatch = nil
+        pathWatch?.cancel()
+        pathWatch = nil
         advertiser?.stopAdvertisingPeer()
         browser?.stopBrowsingForPeers()
         advertiser = nil
@@ -712,6 +921,12 @@ final class PartySession {
            let at = members.firstIndex(where: { $0.peer == peer }),
            members[at].playerID != sender {
             members[at].playerID = sender
+            // The same person under an older peer id: somebody who dropped out and
+            // came back (see `restartDiscovery`) before this phone's session noticed
+            // the old link had died. The session drops the ghost when its keepalive
+            // gives up; the list should not wait for it, or the screen shows two of
+            // them — and, before the new one arrives, one who is not there at all.
+            members.removeAll { $0.peer != peer && $0.playerID == sender }
         }
 
         let knownBefore = knownPlayerIDs
@@ -911,6 +1126,10 @@ final class PartySession {
 
     fileprivate func connecting(_ peer: MCPeerID) {
         handshaking.insert(peer)
+        // The host has accepted, so its session now holds this id whatever happens
+        // next. See `identitySpent`.
+        if role == .guest, peer == hostPeer { identitySpent = true }
+        partyLog.notice("connecting to \(peer.displayName, privacy: .public)")
     }
 
     fileprivate func connected(_ peer: MCPeerID) {
@@ -920,11 +1139,17 @@ final class PartySession {
         }
         isConnected = !session.connectedPeers.isEmpty
         trouble = nil
+        partyLog.notice("connected to \(peer.displayName, privacy: .public), wifi=\(self.onWiFi)")
         // We are in. Only now is this a party worth silently reconnecting to —
         // and only now is "this device was a guest of that trip" true enough to
         // write down. `joining` still holds the advertisement for another line or
         // two, which is where the host's name comes from.
         if role == .guest, peer == hostPeer {
+            identitySpent = true
+            rejoinPending = nil
+            reconnectTries = 0
+            reconnectWatch?.cancel()
+            reconnectWatch = nil
             hasJoined = true
             if let target = joining {
                 PartyLedger.shared.note(trip: tripID, role: "guest", rules: rules,
@@ -938,6 +1163,8 @@ final class PartySession {
     fileprivate func disconnected(_ peer: MCPeerID) {
         members.removeAll { $0.peer == peer }
         isConnected = !session.connectedPeers.isEmpty
+        partyLog.notice("lost \(peer.displayName, privacy: .public), wifi=\(self.onWiFi)")
+        if peer == rejoinPending { rejoinPending = nil }
 
         // A refused invitation arrives here rather than as an error, and it is the
         // one disconnection that is not a dropout: we were never in. Checked first,
@@ -968,7 +1195,7 @@ final class PartySession {
             if reached, attemptsLeft > 1, !hasEnded {
                 attemptsLeft -= 1
                 joinWatch?.cancel()
-                return invite(target)
+                return knock(target)
             }
             if reached { return joinFailed(.dropped) }
             return joinFailed(ranOutTheClock ? .silence : .refused)
@@ -976,10 +1203,12 @@ final class PartySession {
         handshaking.remove(peer)
 
         // Not an error, and deliberately not reported as one. Dropping out is the
-        // normal state of a phone in a pocket; the browser is still running and
-        // `found` puts it straight back the moment the host is in range again.
+        // normal state of a phone in a pocket. Getting back is `scheduleReconnect`'s
+        // job: it used to be left to `found` alone, which a browser that never saw
+        // the host leave does not send again.
         if role == .guest, peer == hostPeer, hasJoined, !hasEnded {
             trouble = String(localized: "Lost the party. Looking for it again\u{2026}")
+            scheduleReconnect()
         }
     }
 
@@ -996,8 +1225,22 @@ final class PartySession {
         // the actual party advertised beside us. The trip id is the party's identity;
         // the peer is just where it happens to be answering from.
         if hasJoined, id == tripID {
+            // Already in, and seeing the host again over a second transport, or
+            // through the browser that stays running for exactly this. Pointing
+            // `hostPeer` at it would make the live link look lost.
+            guard !hostLinked else { return }
             hostPeer = peer
             return rejoin(peer)
+        }
+
+        // A join retry waiting for the fresh browser to see the host. See `knock`.
+        if awaitingRediscovery, !hasJoined, let target = joining, id == target.tripID {
+            awaitingRediscovery = false
+            let again = Nearby(peer: peer, tripID: id,
+                               tripName: target.tripName, hostName: target.hostName)
+            joining = again
+            hostPeer = peer
+            return invite(again)
         }
 
         let fresh = Nearby(peer: peer, tripID: id,
@@ -1265,11 +1508,17 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
 
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID,
                  withDiscoveryInfo info: [String: String]?) {
-        Task { @MainActor [weak owner] in owner?.found(peerID, info: info) }
+        Task { @MainActor [weak owner] in
+            guard let owner, owner.isCurrent(browser) else { return }
+            owner.found(peerID, info: info)
+        }
     }
 
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
-        Task { @MainActor [weak owner] in owner?.lost(peerID) }
+        Task { @MainActor [weak owner] in
+            guard let owner, owner.isCurrent(browser) else { return }
+            owner.lost(peerID)
+        }
     }
 
     func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
