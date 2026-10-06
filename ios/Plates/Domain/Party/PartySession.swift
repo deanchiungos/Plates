@@ -5,6 +5,7 @@ import Observation
 import os
 import SwiftData
 import UIKit
+import dnssd
 
 /// Every transport event a party goes through, for reading off a real phone.
 ///
@@ -279,6 +280,24 @@ final class PartySession {
     /// How this party plays. Host-set, sent to everyone, enforced by everyone.
     private(set) var rules: PartyRules = .standard
 
+    /// iOS is refusing this app the local network, so nothing nearby can be seen.
+    ///
+    /// The one failure that looks exactly like an empty car. With Local Network off
+    /// for the app, MultipeerConnectivity neither finds anybody nor says why: the
+    /// browser starts, the advertiser publishes, and both stay silent. The first field
+    /// logs from real phones were precisely that, seventy seconds of two phones on
+    /// the same seat with nothing in either list. MultipeerConnectivity cannot report
+    /// it, but a Bonjour browser of our own can — iOS parks it in `waiting` with a
+    /// policy-denied error until the permission is granted. See `watchAccess`.
+    private(set) var localNetworkBlocked = false
+    private var accessProbe: NWBrowser?
+
+    /// A guest has been looking for a while and found nothing, with no refusal to
+    /// explain it. Usually Wi-Fi or Bluetooth switched off outright, or the host's
+    /// screen is locked. See `quietWatch`.
+    private(set) var searchingQuietly = false
+    private var quietWatch: Task<Void, Never>?
+
     /// The rules in force for a collection right now.
     ///
     /// Only while a party is actually running on it. Once the party ends, the trip
@@ -398,6 +417,7 @@ final class PartySession {
         }
         watch.start(queue: .global(qos: .utility))
         pathWatch = watch
+        watchAccess()
 
         partyLog.notice("\(role == .host ? "hosting" : "browsing", privacy: .public) as \(self.myName, privacy: .public)")
         diag("session.start", ["name": myName, "trip": tripID.uuidString])
@@ -423,6 +443,7 @@ final class PartySession {
         finder.delegate = transport
         finder.startBrowsingForPeers()
         browser = finder
+        if !hasJoined { watchForQuiet() }
         diag("browse.start")
     }
 
@@ -692,7 +713,7 @@ final class PartySession {
         case .refused:
             trouble = String(localized: "\(target.hostName)'s phone turned you away, which almost always means the four characters did not match. Check the code showing on it and tap \(target.tripName) again.")
         case .silence where onWiFi:
-            trouble = String(localized: "No answer from \(target.hostName)'s phone. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap \(target.tripName) again.")
+            trouble = String(localized: "No answer from \(target.hostName)'s phone. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, tap Wi-Fi in Control Center to disconnect from the network, but leave Wi-Fi on in Settings: the phones use it to reach each other directly. Then tap \(target.tripName) again.")
         case .silence:
             trouble = String(localized: "No answer from \(target.hostName)'s phone. Make sure the party is still open on it, keep the phones in the same car, and tap \(target.tripName) again.")
         case .vanished:
@@ -701,7 +722,7 @@ final class PartySession {
             // The reported failure exactly: no connection on Wi-Fi, a connection on
             // cellular. Off the network the phones talk to each other directly, so
             // the network is the first thing to take out of the way. See `onWiFi`.
-            trouble = String(localized: "Your code was right and \(target.hostName)'s phone accepted it, but the connection would not hold. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap \(target.tripName) again.")
+            trouble = String(localized: "Your code was right and \(target.hostName)'s phone accepted it, but the connection would not hold. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, tap Wi-Fi in Control Center to disconnect from the network, but leave Wi-Fi on in Settings: the phones use it to reach each other directly. Then tap \(target.tripName) again.")
         case .dropped:
             // Names the thing that actually causes this once retrying has failed.
             // Local Network is the one setting that lets two phones see each other
@@ -809,6 +830,10 @@ final class PartySession {
         reconnectWatch = nil
         pathWatch?.cancel()
         pathWatch = nil
+        accessProbe?.cancel()
+        accessProbe = nil
+        quietWatch?.cancel()
+        quietWatch = nil
         advertiser?.stopAdvertisingPeer()
         browser?.stopBrowsingForPeers()
         advertiser = nil
@@ -1293,6 +1318,8 @@ final class PartySession {
             return invite(again)
         }
 
+        searchingQuietly = false
+        quietWatch?.cancel()
         let fresh = Nearby(peer: peer, tripID: id,
                            tripName: info?["trip"] ?? "A trip",
                            hostName: info?["host"] ?? peer.displayName)
@@ -1617,6 +1644,59 @@ extension PartySession {
     fileprivate var mcSession: MCSession { session }
 }
 
+// MARK: - Permission and radios
+
+extension PartySession {
+
+    /// Watches whether iOS will let this app use the local network at all.
+    ///
+    /// A plain Bonjour browser for the party's own service, run beside the real
+    /// transport purely for the state it reports. Denied, it sits in `waiting` with
+    /// `kDNSServiceErr_PolicyDenied`; allowed, it goes `ready`. It also stands in
+    /// `waiting` like that while the permission prompt is still on screen, which is
+    /// harmless — the prompt covers the card, and answering it moves the state on.
+    /// Live rather than checked once, so turning the setting on in Settings and
+    /// coming back clears the warning without leaving the party.
+    fileprivate func watchAccess() {
+        let probe = NWBrowser(for: .bonjour(type: "_\(Self.service)._tcp", domain: nil),
+                              using: NWParameters())
+        probe.stateUpdateHandler = { [weak self] state in
+            let denied: Bool
+            switch state {
+            case .waiting(let error), .failed(let error):
+                if case .dns(let code) = error {
+                    denied = code == DNSServiceErrorType(kDNSServiceErr_PolicyDenied)
+                } else {
+                    denied = false
+                }
+            default:
+                denied = false
+            }
+            Task { @MainActor in
+                guard let self else { return }
+                self.diag("localNetwork", ["state": "\(state)", "blocked": "\(denied)"])
+                self.localNetworkBlocked = denied
+            }
+        }
+        probe.start(queue: .main)
+        accessProbe = probe
+    }
+
+    /// Twenty seconds of an empty list, on a guest that has not joined anything.
+    /// Long enough that a phone bringing up its radios is done, short enough that
+    /// the person is still looking at the screen.
+    fileprivate func watchForQuiet() {
+        searchingQuietly = false
+        quietWatch?.cancel()
+        quietWatch = Task { @MainActor [weak self] in
+            try? await Task.sleep(for: .seconds(20))
+            guard !Task.isCancelled, let self, self.nearby.isEmpty, !self.hasJoined else { return }
+            self.diag("search.quiet")
+            self.searchingQuietly = true
+        }
+    }
+}
+
 // MARK: - TEMPORARY: the party log
 
 /// Everything below exists for one round of field testing. See `PartyDiagnostics`.
@@ -1681,6 +1761,7 @@ extension PartySession {
             "advertising": "\(advertiser != nil)",
             "browsing": "\(browser != nil)",
             "wifi": "\(onWiFi)",
+            "localNetworkBlocked": "\(localNetworkBlocked)",
             "trouble": trouble ?? "-",
         ]
     }

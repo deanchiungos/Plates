@@ -59,6 +59,7 @@ struct PartyScreen: View {
               ScrollViewReader { scroller in
                 VStack(spacing: 18) {
                     if let party {
+                        if party.localNetworkBlocked { localNetworkCard }
                         if let trouble = party.trouble { troubleCard(trouble) }
                         switch party.role {
                         case .host:  hostCard(party)
@@ -471,11 +472,21 @@ struct PartyScreen: View {
             } else {
                 SettingsGroup("Nearby") {
                     if party.nearby.isEmpty {
-                        HStack(spacing: 10) {
-                            ProgressView()
-                            Text("Looking for parties in the car\u{2026}")
-                                .font(.plates(size: 13.5))
-                                .foregroundStyle(Theme.inkMuted)
+                        VStack(alignment: .leading, spacing: 10) {
+                            HStack(spacing: 10) {
+                                ProgressView()
+                                Text("Looking for parties in the car\u{2026}")
+                                    .font(.plates(size: 13.5))
+                                    .foregroundStyle(Theme.inkMuted)
+                            }
+                            // Not while Local Network is the known reason — the card
+                            // above already says the one thing that will fix it.
+                            if party.searchingQuietly, !party.localNetworkBlocked {
+                                Text("Nothing yet. Keep the Party screen open on both phones, and check that Wi-Fi and Bluetooth are on in Settings. Wi-Fi doesn't need to be connected to a network.")
+                                    .font(.plates(size: 13))
+                                    .foregroundStyle(Theme.ink)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(14)
@@ -679,6 +690,27 @@ struct PartyScreen: View {
     private struct SharedLog: Identifiable {
         let url: URL
         var id: URL { url }
+    }
+
+    /// iOS is keeping this app off the local network. Above everything else, because
+    /// until it is fixed nothing else on the screen can work. See
+    /// `PartySession.localNetworkBlocked`.
+    private var localNetworkCard: some View {
+        SettingsGroup("Local Network is off") {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Tags can't see nearby phones because Local Network is turned off for it. Open Settings, tap Tags, and turn on Local Network. Every phone in the party needs it.")
+                    .font(.plates(size: 13))
+                    .foregroundStyle(Theme.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                action(String(localized: "Open Settings"), filled: true) {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(14)
+        }
     }
 
     private func troubleCard(_ message: String) -> some View {
