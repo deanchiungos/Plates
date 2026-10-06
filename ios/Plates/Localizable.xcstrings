@@ -1028,6 +1028,16 @@
         }
       }
     },
+    "No answer from %@'s phone. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap %@ again." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No answer from %1$@'s phone. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap %2$@ again."
+          }
+        }
+      }
+    },
     "No connection to iCloud. Your plates will copy over once you are back online." : {
 
     },
@@ -1941,6 +1951,16 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Your code was right and %1$@'s phone accepted it, but the connection would not hold after three tries. On both phones, open Settings, find Tags, and check that Local Network is on. Then tap %2$@ again."
+          }
+        }
+      }
+    },
+    "Your code was right and %@'s phone accepted it, but the connection would not hold. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap %@ again." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your code was right and %1$@'s phone accepted it, but the connection would not hold. Some Wi-Fi networks, like car and hotel hotspots, stop phones reaching each other. On both phones, turn Wi-Fi off in Control Center (the party works without a network), then tap %2$@ again."
           }
         }
       }

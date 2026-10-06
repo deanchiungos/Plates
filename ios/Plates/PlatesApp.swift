@@ -69,6 +69,8 @@ struct PlatesApp: App {
         container = PlatesStore.container
         PlatesStore.seedIfNeeded()
         Theme.applyToSystemControls()
+        // TEMPORARY — the party flight recorder. See `PartyDiagnostics`.
+        PartyDiagnostics.start()
         #if DEBUG
         // Before `beginSession`, not after it. `-coachReset` clears the launch
         // counter, and `beginSession` reads that counter into a static and keeps it
