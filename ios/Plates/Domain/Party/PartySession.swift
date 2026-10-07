@@ -120,8 +120,6 @@ final class PartySession {
     /// Who this phone is to the others. Fixed for a host; a guest takes a new one
     /// every time it has to knock again. See `restartDiscovery`.
     private var peerID: MCPeerID
-    /// TEMPORARY — counts fresh identities, for the party log. See `PartyDiagnostics`.
-    private var identityGeneration = 0
     private var session: MCSession!
     private var advertiser: MCNearbyServiceAdvertiser?
     private var browser: MCNearbyServiceBrowser?
@@ -420,7 +418,6 @@ final class PartySession {
         watchAccess()
 
         partyLog.notice("\(role == .host ? "hosting" : "browsing", privacy: .public) as \(self.myName, privacy: .public)")
-        diag("session.start", ["name": myName, "trip": tripID.uuidString])
     }
 
     private func startAdvertising(tripName: String) {
@@ -435,7 +432,6 @@ final class PartySession {
         ad.delegate = transport
         ad.startAdvertisingPeer()
         advertiser = ad
-        diag("advertise.start", ["trip": tripName, "code": code])
     }
 
     private func startBrowsing() {
@@ -444,7 +440,6 @@ final class PartySession {
         finder.startBrowsingForPeers()
         browser = finder
         if !hasJoined { watchForQuiet() }
-        diag("browse.start")
     }
 
     /// Whether a delegate callback came from the browser in use, rather than one
@@ -478,8 +473,6 @@ final class PartySession {
         session.disconnect()
 
         peerID = MCPeerID(displayName: myName)
-        identityGeneration += 1
-        diag("identity.new")
         identitySpent = false
         rejoinPending = nil
         session = MCSession(peer: peerID, securityIdentity: nil,
@@ -518,14 +511,12 @@ final class PartySession {
         let backoff = Self.reconnectBackoff
         let wait = immediately ? 0 : backoff[min(reconnectTries, backoff.count - 1)]
         reconnectTries += 1
-        diag("reconnect.schedule", ["try": "\(reconnectTries)", "wait": "\(wait)"])
         partyLog.notice("reconnect attempt \(self.reconnectTries) in \(wait)s, wifi=\(self.onWiFi)")
         reconnectWatch = Task { @MainActor [weak self] in
             try? await Task.sleep(for: .seconds(wait))
             guard !Task.isCancelled, let self, self.needsReconnect else { return }
             // Unless a sighting has already started one: `found` knocks the moment
             // the host reappears, and starting over now would kill that knock.
-            self.diag("reconnect.round", ["rejoinPending": "\(self.rejoinPending != nil)"])
             if self.rejoinPending == nil { self.restartDiscovery() }
             try? await Task.sleep(for: .seconds(Self.inviteTimeout + 2))
             guard !Task.isCancelled, self.needsReconnect else { return }
@@ -580,7 +571,6 @@ final class PartySession {
         // it becomes a fact.
         rules = PartyLedger.shared.rules(for: party.tripID)
         attemptsLeft = Self.joinAttempts
-        diag("join.tap", ["host": Self.tag(party.peer), "trip": party.tripName, "code": code])
         knock(party)
     }
 
@@ -599,7 +589,6 @@ final class PartySession {
     /// browser that found the peer — so the knock waits for the new browser to
     /// report the host, in `found`. The watchdog covers the host not turning up.
     private func knock(_ target: Nearby) {
-        diag("join.knock", ["host": Self.tag(target.peer), "attemptsLeft": "\(attemptsLeft)"])
         guard identitySpent else { return invite(target) }
         awaitingRediscovery = true
         restartDiscovery()
@@ -627,7 +616,6 @@ final class PartySession {
         rebuildSession()
         invitedAt = Date()
         partyLog.notice("inviting \(target.hostName, privacy: .public), \(self.attemptsLeft) attempt(s) left, wifi=\(self.onWiFi)")
-        diag("invite.send", ["host": Self.tag(target.peer), "attemptsLeft": "\(attemptsLeft)"])
         browser.invitePeer(target.peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)
 
@@ -653,7 +641,6 @@ final class PartySession {
 
     private func rebuildSession() {
         guard role == .guest, !hostLinked else { return }
-        diag("session.rebuild")
         session.disconnect()
         session = MCSession(peer: peerID, securityIdentity: nil,
                             encryptionPreference: .required)
@@ -680,7 +667,6 @@ final class PartySession {
     /// trying again.
     private func joinFailed(_ why: JoinFailure) {
         guard let target = joining else { return }
-        diag("join.failed", ["why": "\(why)", "host": Self.tag(target.peer)])
         settleJoin()
         // `hostPeer` deliberately survives. Clearing it here looked like tidying up
         // and was the opposite: `connected` gates every join side effect on
@@ -752,15 +738,11 @@ final class PartySession {
               let browser, let payload = code.data(using: .utf8) else { return }
         // Never under an id the host has already held. See `identitySpent`. The new
         // browser reports the host again, and that sighting comes back through here.
-        if identitySpent {
-            diag("rejoin.needsFreshId", ["host": Self.tag(peer)])
-            return restartDiscovery()
-        }
+        if identitySpent { return restartDiscovery() }
         // Same reason as `invite`: the session we just dropped out of is the one
         // least likely to let us back in.
         rebuildSession()
         rejoinPending = peer
-        diag("rejoin.send", ["host": Self.tag(peer)])
         partyLog.notice("rejoining \(peer.displayName, privacy: .public), wifi=\(self.onWiFi)")
         browser.invitePeer(peer, to: session, withContext: payload,
                            timeout: Self.inviteTimeout)
@@ -777,7 +759,6 @@ final class PartySession {
     /// peer that never went anywhere costs a few kilobytes and closes the window
     /// where something was logged while this phone was asleep.
     private func wakeUp() {
-        diag("wake", ["ended": "\(hasEnded)", "needsReconnect": "\(needsReconnect)"])
         guard !hasEnded else { return }
         partyLog.notice("woke up, \(self.session.connectedPeers.count) peer(s) still attached")
 
@@ -809,7 +790,6 @@ final class PartySession {
         // the Trips tab, where finishing or deleting a party trip calls this while
         // the Party screen is still holding the session.
         hasEnded = true
-        diag("leave")
         send(.bye)
         // The goodbye needs a moment to actually leave the device. `send` hands the
         // data off asynchronously and `disconnect()` tears the connection down, so
@@ -821,7 +801,6 @@ final class PartySession {
     }
 
     private func stop(gracePeriod: TimeInterval = 0) {
-        diag("stop", ["grace": "\(gracePeriod)"])
         // Before the radios go, or a watchdog left running reports a failed join
         // against a party the user has already walked away from.
         settleJoin()
@@ -898,24 +877,9 @@ final class PartySession {
         // Resolved per send rather than cached, because the whole point is that it
         // can change: adopting a profile mid-party is exactly when this moves.
         let me = DevicePlayer.resolve(from: (try? context.fetch(FetchDescriptor<Player>())) ?? [])
-        guard !targets.isEmpty else {
-            diag("send.skip", ["kind": payload.diagnosticSummary, "why": "no peers"])
-            return
-        }
-        guard let data = try? PartyEnvelope(payload, from: me?.id).encoded() else {
-            diag("send.skip", ["kind": payload.diagnosticSummary, "why": "encode failed"])
-            return
-        }
-        // TEMPORARY: was `try?`. A failed send is the most useful line in the log.
-        do {
-            try session.send(data, toPeers: targets, with: .reliable)
-            diag("send", ["kind": payload.diagnosticSummary, "bytes": "\(data.count)",
-                          "to": targets.map(Self.tag).joined(separator: ",")])
-        } catch {
-            diag("send.error", ["kind": payload.diagnosticSummary, "bytes": "\(data.count)",
-                                "to": targets.map(Self.tag).joined(separator: ","),
-                                "error": "\(error)"])
-        }
+        guard !targets.isEmpty,
+              let data = try? PartyEnvelope(payload, from: me?.id).encoded() else { return }
+        try? session.send(data, toPeers: targets, with: .reliable)
     }
 
     /// Everything this device knows about the party trip, or just who is here if it
@@ -964,21 +928,16 @@ final class PartySession {
         do {
             envelope = try PartyEnvelope.decoded(from: data)
         } catch {
-            diag("recv.undecodable", ["from": Self.tag(peer), "bytes": "\(data.count)",
-                                      "error": "\(error)"])
             trouble = String(localized: "Could not read a message from \(peer.displayName).")
             return
         }
         guard let envelope else {
-            diag("recv.wrongVersion", ["from": Self.tag(peer), "bytes": "\(data.count)"])
             trouble = String(localized: "\(peer.displayName) is running a different version of Tags.")
             return
         }
 
         // Handled here rather than in the merge, because it is about the party and
         // not about the data — there is nothing in a goodbye to write down.
-        diag("recv", ["from": Self.tag(peer), "kind": envelope.payload.diagnosticSummary,
-                      "bytes": "\(data.count)", "player": envelope.from?.uuidString ?? "-"])
         if case .bye = envelope.payload { return saidGoodbye(peer) }
 
         // Anything they send tells us who they are, so the list can stop calling
@@ -1059,7 +1018,6 @@ final class PartySession {
             for other in session.connectedPeers where other != peer { greet(other) }
         }
 
-        diag("recv.applied", ["from": Self.tag(peer), "outcome": "\(outcome)"])
         relay(envelope, from: peer, outcome: outcome, removalIsNews: removalIsNews)
     }
 
@@ -1130,7 +1088,6 @@ final class PartySession {
     /// and if the host starts the party again it is the same trip id, so everyone
     /// merges straight back together.
     private func saidGoodbye(_ peer: MCPeerID) {
-        diag("bye.recv", ["from": Self.tag(peer), "isHost": "\(peer == hostPeer)"])
         if role == .guest, peer == hostPeer {
             hasEnded = true
             trouble = String(localized: "The host ended the party. Your plates are all still here.")
@@ -1198,7 +1155,6 @@ final class PartySession {
         // next. See `identitySpent`.
         if role == .guest, peer == hostPeer { identitySpent = true }
         partyLog.notice("connecting to \(peer.displayName, privacy: .public)")
-        diag("connecting", linkFields(peer))
     }
 
     fileprivate func connected(_ peer: MCPeerID) {
@@ -1209,7 +1165,6 @@ final class PartySession {
         isConnected = !session.connectedPeers.isEmpty
         trouble = nil
         partyLog.notice("connected to \(peer.displayName, privacy: .public), wifi=\(self.onWiFi)")
-        diag("connected", linkFields(peer))
         // We are in. Only now is this a party worth silently reconnecting to —
         // and only now is "this device was a guest of that trip" true enough to
         // write down. `joining` still holds the advertisement for another line or
@@ -1234,7 +1189,6 @@ final class PartySession {
         members.removeAll { $0.peer == peer }
         isConnected = !session.connectedPeers.isEmpty
         partyLog.notice("lost \(peer.displayName, privacy: .public), wifi=\(self.onWiFi)")
-        diag("disconnected", linkFields(peer))
         if peer == rejoinPending { rejoinPending = nil }
 
         // A refused invitation arrives here rather than as an error, and it is the
@@ -1286,10 +1240,6 @@ final class PartySession {
     fileprivate func found(_ peer: MCPeerID, info: [String: String]?) {
         guard role == .guest,
               let raw = info?["id"], let id = UUID(uuidString: raw) else { return }
-        diag("found", ["peer": Self.tag(peer), "trip": info?["trip"] ?? "-",
-                       "ours": "\(id == tripID)", "joined": "\(hasJoined)",
-                       "awaitingRediscovery": "\(awaitingRediscovery)",
-                       "hostLinked": "\(hostLinked)"])
 
         // The party we are already in, back in range. Straight back in, no tapping.
         //
@@ -1341,7 +1291,6 @@ final class PartySession {
     }
 
     fileprivate func lost(_ peer: MCPeerID) {
-        diag("lost", ["peer": Self.tag(peer), "joining": "\(joining?.peer == peer)"])
         nearby.removeAll { $0.peer == peer }
         // Waiting on a phone that has just stopped advertising. Said now rather than
         // left to the watchdog, which would sit there for another half a minute and
@@ -1366,8 +1315,6 @@ final class PartySession {
     fileprivate func shouldAdmit(_ peer: MCPeerID, offering context: Data?) -> Bool {
         guard role == .host else { return false }
         let offered = context.flatMap { String(data: $0, encoding: .utf8) } ?? ""
-        diag("invite.recv", ["from": Self.tag(peer), "codeOK": "\(Self.tidy(offered) == code)",
-                             "members": "\(members.count)"])
         guard Self.tidy(offered) == code else {
             // Only worth saying while the car is still trying to get in, and only for
             // a moment. MultipeerConnectivity retries invitations across transports
@@ -1391,10 +1338,7 @@ final class PartySession {
     fileprivate var hasDroppedOne = false
     #endif
 
-    fileprivate func failed(_ what: String) {
-        diag("error", ["what": what])
-        trouble = what
-    }
+    fileprivate func failed(_ what: String) { trouble = what }
 
     /// Says something that stops being true, and takes it back.
     ///
@@ -1508,21 +1452,8 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
     /// and dropped if it is not. The framework hands us the answer in the argument
     /// this used to ignore.
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
-        let name = switch state {
-        case .connected: "connected"
-        case .connecting: "connecting"
-        case .notConnected: "notConnected"
-        @unknown default: "unknown"
-        }
-        PartyDiagnostics.record("mc.state", ["peer": PartySession.tag(peerID), "state": name,
-                                             "session": PartySession.tag(session),
-                                             "connected": "\(session.connectedPeers.count)"])
         Task { @MainActor [weak owner] in
-            guard let owner else { return }
-            guard owner.isCurrent(session) else {
-                return PartyDiagnostics.record("stale.session", ["peer": PartySession.tag(peerID),
-                                                                 "state": name])
-            }
+            guard let owner, owner.isCurrent(session) else { return }
             switch state {
             case .connected:    owner.connected(peerID)
             case .connecting:   owner.connecting(peerID)
@@ -1534,11 +1465,7 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
 
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         Task { @MainActor [weak owner] in
-            guard let owner else { return }
-            guard owner.isCurrent(session) else {
-                return PartyDiagnostics.record("stale.recv", ["peer": PartySession.tag(peerID),
-                                                              "bytes": "\(data.count)"])
-            }
+            guard let owner, owner.isCurrent(session) else { return }
             owner.received(data, from: peerID)
         }
     }
@@ -1557,7 +1484,6 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
                     didReceiveInvitationFromPeer peerID: MCPeerID,
                     withContext context: Data?,
                     invitationHandler: @escaping (Bool, MCSession?) -> Void) {
-        PartyDiagnostics.record("mc.invitation", ["from": PartySession.tag(peerID)])
         Task { @MainActor [weak owner] in
             guard let owner else { return invitationHandler(false, nil) }
             #if DEBUG
@@ -1609,25 +1535,15 @@ private final class PartyTransport: NSObject, MCSessionDelegate,
 
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID,
                  withDiscoveryInfo info: [String: String]?) {
-        PartyDiagnostics.record("mc.found", ["peer": PartySession.tag(peerID),
-                                             "browser": PartySession.tag(browser)])
         Task { @MainActor [weak owner] in
-            guard let owner else { return }
-            guard owner.isCurrent(browser) else {
-                return PartyDiagnostics.record("stale.found", ["peer": PartySession.tag(peerID)])
-            }
+            guard let owner, owner.isCurrent(browser) else { return }
             owner.found(peerID, info: info)
         }
     }
 
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
-        PartyDiagnostics.record("mc.lost", ["peer": PartySession.tag(peerID),
-                                            "browser": PartySession.tag(browser)])
         Task { @MainActor [weak owner] in
-            guard let owner else { return }
-            guard owner.isCurrent(browser) else {
-                return PartyDiagnostics.record("stale.lost", ["peer": PartySession.tag(peerID)])
-            }
+            guard let owner, owner.isCurrent(browser) else { return }
             owner.lost(peerID)
         }
     }
@@ -1674,7 +1590,9 @@ extension PartySession {
             }
             Task { @MainActor in
                 guard let self else { return }
-                self.diag("localNetwork", ["state": "\(state)", "blocked": "\(denied)"])
+                if denied != self.localNetworkBlocked {
+                    partyLog.notice("local network \(denied ? "blocked" : "allowed", privacy: .public)")
+                }
                 self.localNetworkBlocked = denied
             }
         }
@@ -1691,78 +1609,8 @@ extension PartySession {
         quietWatch = Task { @MainActor [weak self] in
             try? await Task.sleep(for: .seconds(20))
             guard !Task.isCancelled, let self, self.nearby.isEmpty, !self.hasJoined else { return }
-            self.diag("search.quiet")
             self.searchingQuietly = true
         }
     }
 }
 
-// MARK: - TEMPORARY: the party log
-
-/// Everything below exists for one round of field testing. See `PartyDiagnostics`.
-extension PartySession {
-
-    /// A peer as the log names it: display name, and a short hash that tells a
-    /// fresh identity apart from the old one under the same name.
-    nonisolated static func tag(_ peer: MCPeerID) -> String {
-        "\(peer.displayName)#\(String(UInt(bitPattern: peer.hash) & 0xFFFF, radix: 16))"
-    }
-
-    nonisolated static func tag(_ object: AnyObject) -> String {
-        String(UInt(bitPattern: ObjectIdentifier(object).hashValue) & 0xFFFF, radix: 16)
-    }
-
-    fileprivate func diag(_ event: String, _ fields: [String: String] = [:]) {
-        var all = fields
-        all["role"] = role == .host ? "host" : "guest"
-        all["me"] = Self.tag(peerID)
-        all["gen"] = "\(identityGeneration)"
-        all["wifi"] = "\(onWiFi)"
-        PartyDiagnostics.record(event, all)
-    }
-
-    /// The state of one link, for connecting, connected and disconnected.
-    private func linkFields(_ peer: MCPeerID) -> [String: String] {
-        [
-            "peer": Self.tag(peer),
-            "isHost": "\(peer == hostPeer)",
-            "sinceInvite": invitedAt.map { String(format: "%.2f", Date().timeIntervalSince($0)) } ?? "-",
-            "handshaking": "\(handshaking.contains(peer))",
-            "connectedPeers": session.connectedPeers.map(Self.tag).joined(separator: ","),
-            "joined": "\(hasJoined)",
-            "attemptsLeft": "\(attemptsLeft)",
-            "rejoinPending": rejoinPending.map(Self.tag) ?? "-",
-        ]
-    }
-
-    /// The whole of the party's state, for a tester's Mark and for the export.
-    var diagnosticState: [String: String] {
-        [
-            "role": role == .host ? "host" : "guest",
-            "me": Self.tag(peerID),
-            "gen": "\(identityGeneration)",
-            "code": code,
-            "trip": tripID.uuidString,
-            "joined": "\(hasJoined)",
-            "ended": "\(hasEnded)",
-            "joining": joining.map { Self.tag($0.peer) } ?? "-",
-            "hostPeer": hostPeer.map(Self.tag) ?? "-",
-            "hostLinked": "\(hostLinked)",
-            "connectedPeers": session.connectedPeers.map(Self.tag).joined(separator: ","),
-            "members": members.map { Self.tag($0.peer) }.joined(separator: ","),
-            "nearby": nearby.map { Self.tag($0.peer) }.joined(separator: ","),
-            "isConnected": "\(isConnected)",
-            "identitySpent": "\(identitySpent)",
-            "rejoinPending": rejoinPending.map(Self.tag) ?? "-",
-            "reconnectTries": "\(reconnectTries)",
-            "awaitingRediscovery": "\(awaitingRediscovery)",
-            "attemptsLeft": "\(attemptsLeft)",
-            "handshaking": handshaking.map(Self.tag).joined(separator: ","),
-            "advertising": "\(advertiser != nil)",
-            "browsing": "\(browser != nil)",
-            "wifi": "\(onWiFi)",
-            "localNetworkBlocked": "\(localNetworkBlocked)",
-            "trouble": trouble ?? "-",
-        ]
-    }
-}

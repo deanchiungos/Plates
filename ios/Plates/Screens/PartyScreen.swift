@@ -41,10 +41,6 @@ struct PartyScreen: View {
     @State private var pendingEntry: Entry?
     /// Whoever's row was tapped in the roster. See `PersonSheet`.
     @State private var person: Player?
-    // TEMPORARY — the party log. See `PartyDiagnostics`.
-    @State private var sharedLog: SharedLog?
-    @State private var markedAt: Date?
-    @State private var exporting = false
 
     private enum Entry: String, Identifiable {
         case host, join
@@ -68,8 +64,6 @@ struct PartyScreen: View {
                     } else {
                         startCard
                     }
-                    // TEMPORARY — see `PartyDiagnostics`.
-                    diagnosticsCard
                 }
                 .padding(Theme.screenPadding)
                 .tourScrolling(scroller)
@@ -78,7 +72,6 @@ struct PartyScreen: View {
         }
         .navigationTitle("Party")
         .sheet(item: $person) { PersonSheet(player: $0) }
-        .sheet(item: $sharedLog) { ShareSheet(items: [$0.url]) }
         .onAppear { tour.offer(.party, stops: tourStops) }
         .onDisappear { tour.left(.party) }
         // A party starting pulls every stop out from under a tour that is mid-walk:
@@ -652,44 +645,6 @@ struct PartyScreen: View {
                 }
             }
         }
-    }
-
-    // MARK: - TEMPORARY: the party log
-
-    /// For the TestFlight round only. Every phone in the car shares its log after a
-    /// failure, and `dev/tools/party_log_merge.py` lines them up on one clock.
-    private var diagnosticsCard: some View {
-        SettingsGroup("Party log (test build)") {
-            VStack(alignment: .leading, spacing: 12) {
-                Text(verbatim: "If the party misbehaves, tap Mark straight away, then Share from every phone in the car before closing the app.")
-                    .font(.plates(size: 13))
-                    .foregroundStyle(Theme.ink)
-                    .fixedSize(horizontal: false, vertical: true)
-                if let markedAt {
-                    Text(verbatim: "Marked at \(markedAt.formatted(date: .omitted, time: .standard)).")
-                        .font(.plates(size: 13, weight: .semibold))
-                        .foregroundStyle(Theme.route)
-                }
-                action("Mark a problem now", filled: false) {
-                    markedAt = PartyDiagnostics.mark()
-                }
-                action(exporting ? "Preparing…" : "Share party log", filled: true) {
-                    guard !exporting else { return }
-                    exporting = true
-                    Task {
-                        if let url = await PartyDiagnostics.export() { sharedLog = SharedLog(url: url) }
-                        exporting = false
-                    }
-                }
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(14)
-        }
-    }
-
-    private struct SharedLog: Identifiable {
-        let url: URL
-        var id: URL { url }
     }
 
     /// iOS is keeping this app off the local network. Above everything else, because
